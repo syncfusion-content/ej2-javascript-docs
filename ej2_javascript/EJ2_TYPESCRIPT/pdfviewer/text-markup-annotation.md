@@ -1,1 +1,0 @@
-ts/documentation/pdfviewer/annotation/text-markup-annotation/

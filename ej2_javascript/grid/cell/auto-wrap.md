@@ -2,6 +2,7 @@
 layout: post
 title: Auto wrap in ##Platform_Name## Grid control | Syncfusion
 description: Learn here all about Auto wrap in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+platform: ej2-javascript
 control: Auto wrap 
 publishingplatform: ##Platform_Name##
 documentation: ug
@@ -48,3 +49,4 @@ In the following example, the [`textWrapSettings.wrapMode`](https://ej2.syncfusi
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/grid/autowrap-cs1" %}
+{% endif %}

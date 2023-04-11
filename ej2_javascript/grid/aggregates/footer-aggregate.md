@@ -2,6 +2,7 @@
 layout: post
 title: Footer aggregate in ##Platform_Name## Grid control | Syncfusion
 description: Learn here all about Footer aggregate in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+platform: ej2-javascript
 control: Footer aggregate 
 publishingplatform: ##Platform_Name##
 documentation: ug
@@ -36,6 +37,7 @@ Footer aggregate value is calculated for all the rows, and it is displayed in th
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/grid/aggregates-cs2" %}
+{% endif %}
 
 > The aggregate values must be accessed inside the template using their corresponding [`type`](https://ej2.syncfusion.com/documentation/api/grid/aggregateColumn/#type) name.
 
@@ -67,6 +69,7 @@ You can format the aggregate value result by using the [`format`](https://ej2.sy
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/grid/aggregates-cs3" %}
+{% endif %}
 
 ## How to place aggregates on top of the Grid
 

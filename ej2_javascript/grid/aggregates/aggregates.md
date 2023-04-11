@@ -2,6 +2,7 @@
 layout: post
 title: Aggregates in ##Platform_Name## Grid control | Syncfusion
 description: Learn here all about Aggregates in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+platform: ej2-javascript
 control: Aggregates 
 publishingplatform: ##Platform_Name##
 documentation: ug

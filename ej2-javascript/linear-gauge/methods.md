@@ -91,19 +91,29 @@ To change the annotation content dynamically, use the [`setAnnotationValue`](../
 
 The [`refresh`](../api/linear-gauge#refresh) method can be used to change the state of the component and render it again.
 
-{% tab template= "linear-gauge/methods", sourceFiles="index.ts,index.html", es5Template="es5Refresh" %}
+{% if page.publishingplatform == "typescript" %}
 
-```ts
-import { LinearGauge } from '@syncfusion/ej2-lineargauge';
-let gauge: LinearGauge = new LinearGauge({
-    axes:[{
-        pointers:[{
-            value: 10
-        }]
-    }]
-}, '#element');
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/linear-gauge/methods-cs3/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/linear-gauge/methods-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/linear-gauge/methods-cs3" %}
 
-document.getElementById('btn').onclick = () => {
-    gauge.refresh();
-};
-```
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/linear-gauge/methods-cs3/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/linear-gauge/methods-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/linear-gauge/methods-cs3" %}
+{% endif %}

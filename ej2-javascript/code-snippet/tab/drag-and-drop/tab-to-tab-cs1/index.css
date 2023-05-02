@@ -1,0 +1,29 @@
+#container {
+    visibility: hidden;
+}
+
+#loader {
+  color: #008cff;
+  height: 40px;
+  width: 30%;
+  position: absolute;
+  font-family: 'Helvetica Neue','calibiri';
+  font-size: 14px;
+  top: 45%;
+  left: 45%;
+}
+
+#firstTab .e-content .e-item,
+#secondTab .e-content .e-item {
+    font-size: 12px;
+    margin: 10px;
+    text-align: justify;
+}
+
+#firstTab {
+    margin-bottom: 40px;
+}
+
+#secondTab {
+    margin-top: 40px;
+}

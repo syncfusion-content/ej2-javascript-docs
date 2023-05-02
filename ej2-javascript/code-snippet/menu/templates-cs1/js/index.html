@@ -1,0 +1,76 @@
+<!DOCTYPE html><html lang="en"><head>
+    <title>Essential JS 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Essential JS 2">
+    <meta name="author" content="Syncfusion">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-popups/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-navigations/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-buttons/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-inputs/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-dropdowns/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-cards/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-notifications/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-layouts/styles/material.css" rel="stylesheet">
+
+    <!--style reference from app-->
+    <link href="styles.css" rel="stylesheet">
+
+    <!--system js reference and configuration-->
+    
+    
+<script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+</head>
+<body>
+    
+    <div id="container">
+        <div class="menu-section">
+            <ul id="menu"></ul>
+        </div>
+    </div>
+        <script id="menuTemplate" type="text/x-template">
+        ${if(category)}
+            ${category}
+        ${else if (value && url)}
+            <div class="e-avatar e-avatar-small image" style="background-image: url(${url}.png);">${value}</div>
+        ${else if (support)}
+            <ul>
+                ${for(val of support)}
+                <li>
+                    ${val.value}
+                    ${if(val.count)}
+                        <span class='e-badge e-badge-success'>${val.count}</span>
+                    ${/if}
+                </li>
+                ${/for}
+            </ul>
+        ${else}        
+        <div tabindex="0" class="e-card">
+            <div class="e-card-header">
+                <div class="e-card-header-caption">
+                    <div class="e-card-header-title">About Us</div>
+                </div>
+            </div>
+            <div class="e-card-content">
+                ${about.value}
+            </div>
+            <div class="e-card-actions">
+                <button class="e-btn e-outline">
+                    Read More
+                </button>
+            </div>
+        </div>
+        ${/if}
+    </script>
+
+
+
+<script>
+var ele = document.getElementById('container');
+if(ele) {
+  ele.style.visibility = "visible";
+}   
+      </script>
+<script src="index.js" type="text/javascript"></script>
+</body></html>

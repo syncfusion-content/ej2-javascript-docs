@@ -1,0 +1,234 @@
+<!DOCTYPE html><html lang="en"><head>
+    <title>Essential JS 2 Sidebar</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Typescript UI Controls">
+    <meta name="author" content="Syncfusion">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-buttons/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-lists/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-navigations/styles/material.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    
+    
+<script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+</head>
+
+<body> 
+    
+    <div id="container">
+         <!-- declaration of sidebar element -->
+         <div id="wrapper">
+            <!-- sidebar element declaration -->
+            <aside id="default-sidebar" style="visibility: hidden">
+                <div class="sidebar-header header-cover" style="background-color:#0378d5">
+                    <div class="image-container">
+                        <div class="sidebar-image">
+                        </div>
+                    </div>
+                    <div style="padding: 0 0 5px 0;">
+                        <a class="sidebar-brand" href="#settings-dropdown">
+                            john.doe@gmail.com
+                        </a>
+                        <span class="sf-icon-down icon"></span>
+                    </div>
+                </div>
+
+                <!-- Sidebar navigation -->
+                <ul class="nav sidebar-nav">
+                    <li>
+                        <a href="#">
+                            <i class="sf-icon-sidebar sf-icon-file"></i>
+                            <span class="e-text"> Inbox</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sf-icon-sidebar sf-icon-starred"></i>
+                            <span class="e-text"> Starred</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sf-icon-sidebar sf-icon-recent"></i>
+                            <span class="e-text">Snoozed</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sf-icon-sidebar sf-icon-important"></i>
+                            <span class="e-text">Important</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sf-icon-sidebar sf-icon-offline"></i>
+                            <span class="e-text"> Sent</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sf-icon-sidebar sf-icon-backup"></i>
+                            <span class="e-text"> Draft</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <!-- end of sidebar element -->
+
+
+            <!-- main content declaration -->
+            <div>
+                <div class="content">
+                    <div id="left">
+                        <span id="hamburger" class="e-icons menu default"></span>
+                    </div>
+                    <div id="center">
+                        <span>Inbox</span>
+                    </div>
+                    <div id="right">
+                        <span class="sf-icon-search"></span>
+                    </div>
+                </div>
+                <div>
+                    <div class="e-control e-listview e-list-template e-touch">
+                        <ul class="e-list-parent e-ul ">
+                            <li class="e-list-group-item e-level-1" role="group" data-uid="group-list-item-Today" aria-level="1">
+                                <div class="e-text-content" role="presentation"><span class="" style="width: 100%; margin-left: 2%; margin-top: -2%;">Today</span></div>
+                            </li>
+                            <li class="e-list-item">
+                                <div class="e-list-wrapper e-list-avatar e-list-multi-line">
+                                    <span class="e-avatar e-icon sf-icon-profile"></span>
+                                    <div>
+                                        <span class="e-list-item-header e-name">Albert Lives</span>
+                                    </div>
+                                    <span class="received e-list-content e-second-heading">Opening for Sales Manager</span>
+                                    <span class="e-list-item-header sf-icon-star">
+                                        <span class="e-list-text">Hello Uta Morgan,</span></span>
+                                </div>
+                            </li>
+                            <li class="e-list-item">
+                                <div class="e-list-wrapper e-list-avatar e-list-multi-line">
+                                    <span class="e-avatar e-icon sf-icon-profile"></span>
+                                    <div>
+                                        <span class="e-list-item-header e-name">
+                                            Ila Russo</span>
+                                    </div>
+                                    <span class="received e-list-content e-second-heading">Business dinner invitation
+                                    </span>
+                                    <span class="e-list-item-header sf-icon-star">
+                                        <span class="e-list-text">Hello Jelani Moreno,</span></span>
+                                </div>
+                            </li>
+                            <li class="e-list-item">
+                                <div class="e-list-wrapper e-list-avatar e-list-multi-line">
+                                    <span class="e-avatar e-icon sf-icon-profile"></span>
+                                    <div>
+                                        <span class="e-list-item-header e-name">
+                                            Garth Owen</span>
+                                    </div>
+                                    <span class="received e-list-content e-second-heading">Application for Job Title</span>
+                                    <span class="e-list-item-header sf-icon-star">
+                                        <span class="e-list-text">Hello Ila Russo,</span></span>
+                                </div>
+                            </li>
+                            <li class="e-list-item">
+                                <div class="e-list-wrapper e-list-avatar e-list-multi-line">
+                                    <span class="e-avatar e-icon sf-icon-profile"></span>
+                                    <div>
+                                        <span class="e-list-item-header e-name">Ursula Patterson</span>
+                                    </div>
+                                    <span class="received e-list-content e-second-heading">Hello Kerry Best,</span>
+                                    <span class="e-list-item-header sf-icon-star">
+                                        <span class="e-list-text">Programmer Position Application</span></span>
+                                </div>
+                            </li>
+                            <li class="e-list-item">
+                                <div class="e-list-wrapper e-list-avatar e-list-multi-line">
+                                    <span class="e-avatar e-icon sf-icon-profile"></span>
+                                    <div>
+                                        <span class="e-list-item-header e-name">
+                                            Nichole Rivas</span>
+                                    </div>
+                                    <span class="received e-list-content e-second-heading">Annual Conference</span>
+                                    <span class="e-list-item-header sf-icon-star">
+                                        <span class="e-list-text">Hi Igor Mccoy,</span></span>
+                                </div>
+                            </li>
+                            <li class="e-list-item">
+                                <div class="e-list-wrapper e-list-avatar e-list-multi-line">
+                                    <span class="e-avatar e-icon sf-icon-profile"></span>
+                                    <div>
+                                        <span class="e-list-item-header e-name">
+                                            Nichole Rivas</span>
+                                    </div>
+                                    <span class="received e-list-content e-second-heading">Annual Conference</span>
+                                    <span class="e-list-item-header sf-icon-star">
+                                        <span class="e-list-text">Hi Igor Mccoy,</span></span>
+                                </div>
+                            </li>
+                            <li class="e-list-item">
+                                <div class="e-list-wrapper e-list-avatar e-list-multi-line">
+                                    <span class="e-avatar e-icon sf-icon-profile"></span>
+                                    <div>
+                                        <span class="e-list-item-header e-name">
+                                            Nichole Rivas</span>
+                                    </div>
+                                    <span class="received e-list-content e-second-heading">Annual Conference</span>
+                                    <span class="e-list-item-header sf-icon-star">
+                                        <span class="e-list-text">Hi Igor Mccoy,</span></span>
+                                </div>
+                            </li>
+                            <li class="e-list-item">
+                                <div class="e-list-wrapper e-list-avatar e-list-multi-line">
+                                    <span class="e-avatar e-icon sf-icon-profile"></span>
+                                    <div>
+                                        <span class="e-list-item-header e-name">
+                                            Nichole Rivas</span>
+                                    </div>
+                                    <span class="received e-list-content e-second-heading">Annual Conference</span>
+                                    <span class="e-list-item-header sf-icon-star">
+                                        <span class="e-list-text">Hi Igor Mccoy,</span></span>
+                                </div>
+                            </li>
+                            <li class="e-list-item">
+                                <div class="e-list-wrapper e-list-avatar e-list-multi-line">
+                                    <span class="e-avatar e-icon sf-icon-profile"></span>
+                                    <div>
+                                        <span class="e-list-item-header e-name">
+                                            Nichole Rivas</span>
+                                    </div>
+                                    <span class="received e-list-content e-second-heading">Annual Conference</span>
+                                    <span class="e-list-item-header sf-icon-star">
+                                        <span class="e-list-text">Hi Igor Mccoy,</span></span>
+                                </div>
+                            </li>
+                            <li class="e-list-item">
+                                <div class="e-list-wrapper e-list-avatar e-list-multi-line">
+                                    <span class="e-avatar e-icon sf-icon-profile"></span>
+                                    <div>
+                                        <span class="e-list-item-header e-name">Ursula Patterson</span>
+                                    </div>
+                                    <span class="received e-list-content e-second-heading">Hello Kerry Best,</span>
+                                    <span class="e-list-item-header sf-icon-star">
+                                        <span class="e-list-text">Programmer Position Application</span></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--end of main content declaration -->
+        </div>    
+    </div> 
+
+
+<script>
+var ele = document.getElementById('container');
+if(ele) {
+  ele.style.visibility = "visible";
+}   
+      </script>
+<script src="index.js" type="text/javascript"></script>
+</body></html>

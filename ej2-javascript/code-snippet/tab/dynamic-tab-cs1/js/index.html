@@ -1,0 +1,55 @@
+<!DOCTYPE html><html lang="en"><head>
+    <title>Essential JS 2 Tab</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Essential JS 2 Tab">
+    <meta name="author" content="Syncfusion">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/material.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    
+    
+<script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    
+    <div id="container">
+        <div id="tab1_content" style="display: none">
+            <ul>
+                <li>Click on the "+" header to add dynamic tab items. </li>
+                <li>It displays input elements to get the new tab information. </li>
+                <li>Add details and click the "Add Tab" button to open the newly added tab.</li>
+            </ul>
+        </div>
+        <div id="form-container" style="display: none">
+            <div class="e-float-input">
+                <input type="text" id="tab-title" required="">
+                <span class="e-float-line"></span>
+                <label class="e-float-text">Enter header title</label>
+            </div>
+            <br>
+            <div class="e-float-input">
+                <textarea rows="5" type="text" id="tab-content" required=""></textarea>
+                <span class="e-float-line"></span>
+                <label class="e-float-text">Enter content</label>
+            </div>
+            <br>
+            <div class="btn-section">
+                <button id="btn-add" class="e-btn">Add Tab</button>
+                <br>
+                <br>
+                <span class="info"> * Title is mandatory to add a new Tab</span>
+            </div>
+        </div>
+        <div id="element"></div>
+    </div>
+
+
+<script>
+var ele = document.getElementById('container');
+if(ele) {
+  ele.style.visibility = "visible";
+}   
+      </script>
+<script src="index.js" type="text/javascript"></script>
+</body></html>

@@ -1,0 +1,30 @@
+#container {
+    visibility: hidden;
+}
+
+#loader {
+    color: #008cff;
+    height: 40px;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 30%;
+}
+
+#container {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    margin-top: 100px;
+    transform: translateX(-50%);
+}
+
+#tooltip {
+    display: inline-block;
+    margin: 0 130px 0 0;
+}
+
+.ddl {
+    display: inline-block;
+    margin: 0 30px;
+}

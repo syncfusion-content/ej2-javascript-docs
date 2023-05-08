@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>EJ2 Form Validator</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Typescript UI Controls" />
+    <meta name="author" content="Syncfusion" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/material.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+</head>
+
+<body>
+    <div id='loader'>LOADING....</div>
+    <div id='container'>
+        <form id="form-element" class="form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-3 control-label" for="user">User Name</label>
+                <div class="col-sm-6">
+                    <input type="text" id="required" name="user" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label" for="password">Password</label>
+                <div class="col-sm-6">
+                    <input type="password" id="number" name="password" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-3 control-label"></div>
+                <div class="col-sm-6">
+                    <div id='error'></div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

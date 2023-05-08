@@ -1,0 +1,19 @@
+#container {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.content {
+  width: 250px;
+  height: 500px;
+}
+
+#editbtn {
+  position: absolute;
+  left: 85%;
+  top: 10%;    
+}
+
+#defaultLayout .e-panel { 
+  transition:none !important;
+}

@@ -1,0 +1,30 @@
+html,
+body,    
+#container {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+#loader {
+    color: #008cff;
+    height: 40px;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 30%;
+}
+
+#target {
+    height: 100%;
+    min-height: 350px;
+}
+/* csslint ignore:start */
+.e-btn-icon.e-icons.e-ok-icon.e-icon-left:before {
+    content: '\e7ff';
+}
+
+.e-btn-icon.e-icons.e-close-icon.e-icon-left:before {
+    content: '\e825';
+}
+/* csslint ignore:end */

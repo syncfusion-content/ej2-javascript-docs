@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>EJ2 Form Validator</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Typescript UI Controls" />
+    <meta name="author" content="Syncfusion" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-inputs/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-buttons/styles/material.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+</head>
+
+<body>
+    <div id='loader'>Loading....</div>
+    <div id='container'>
+        <div class="content-wrapper" style="margin-bottom: 25px">
+            <div class="form-title"><span>HTML5 Validation</span></div>
+            <form id="formId" class="form-horizontal">
+                <div class="form-group">
+                    <div class="e-float-input">
+                        <input type="text" id="required" name="Required" data-required-message="Required field" required data-msg-containerid="requiredError"
+                        />
+                        <span class="e-float-line"></span>
+                        <label class="e-float-text" for="required">Required</label>
+                    </div>
+                    <div id="requiredError"></div>
+                </div>
+                <div class="form-group">
+                    <div class="e-float-input">
+                        <input type="text" id="email" name="Email" data-validation="email" data-email-message="Please enter valid email address."
+                            data-required-message="Required field" required data-msg-containerid="emailError" />
+                        <span class="e-float-line"></span>
+                        <label class="e-float-text" for="email">Email</label>
+                    </div>
+                    <div id="emailError"></div>
+                </div>
+                <div class="form-group">
+                    <div class="e-float-input">
+                        <input type="text" id="url" name="Url" data-validation="url" data-url-message="Please enter valid url." data-required-message="Required field"
+                            required data-msg-containerid="urlError" />
+                        <span class="e-float-line"></span>
+                        <label class="e-float-text" for="url">URL</label>
+                    </div>
+                    <div id="urlError"></div>
+                </div>
+                <div class="form-group">
+                    <div class="e-float-input">
+                        <input type="text" id="date" name="Date" data-validation="date" data-date-message="Please enter valid date." data-required-message="Required field"
+                            required data-msg-containerid="dateError" />
+                        <span class="e-float-line"></span>
+                        <label class="e-float-text" for="date">Date</label>
+                    </div>
+                    <div id="dateError"></div>
+                </div>
+                <div class="form-group">
+                    <div class="e-float-input">
+                        <input type="text" id="dateIso" name="DateISO" dateIso="true" data-dateIso-message="Please enter valid dateISO format(YYYY-MM-DD)."
+                            data-required-message="Required field" required data-msg-containerid="dateisoError" />
+                        <span class="e-float-line"></span>
+                        <label class="e-float-text" for="dateIso">Date ISO (YYYY-MM-DD)</label>
+                    </div>
+                    <div id="dateisoError"></div>
+                </div>
+                <div class="form-group">
+                    <div class="e-float-input">
+                        <input type="text" id="number" name="Number" data-validation="number" data-number-message="Please enter Integer or Decimal only."
+                            data-required-message="Required field" required data-msg-containerid="numberError" />
+                        <span class="e-float-line"></span>
+                        <label class="e-float-text" for="number">Integer or Decimal</label>
+                    </div>
+                    <div id="numberError"></div>
+                </div>
+                <div class="form-group">
+                    <div class="e-float-input">
+                        <input type="text" id="digits" name="Digits" digits="true" data-digits-message="Please enter digits only." data-required-message="Required field"
+                            required data-msg-containerid="digitError" />
+                        <span class="e-float-line"></span>
+                        <label class="e-float-text" for="digits">Positive Integer</label>
+                    </div>
+                    <div id="digitError"></div>
+                </div>
+                <div class="form-group">
+                    <div class="e-float-input">
+                        <input type="text" id="maxlen" name="MaxLength" maxlength="5" data-maxlength-message="Please enter no more than 5 characters."
+                            data-required-message="Required field" required data-msg-containerid="maxlenError" />
+                        <span class="e-float-line"></span>
+                        <label class="e-float-text" for="maxlen">Maximum 5 characters</label>
+                    </div>
+                    <div id="maxlenError"></div>
+                </div>
+                <div class="form-group">
+                    <div class="e-float-input">
+                        <input type="text" id="minlen" name="MinLength" minlength="5" data-minlength-message="Please enter at least 5 characters."
+                            data-required-message="Required field" required data-msg-containerid="minlenError" />
+                        <span class="e-float-line"></span>
+                        <label class="e-float-text" for="minlen">Minimum 5 characters</label>
+                    </div>
+                    <div id="minlenError"></div>
+                </div>
+                <div class="form-group">
+                    <div class="e-float-input">
+                        <input type="text" id="rangelen" name="RangeLength" rangelength="[5, 10]" data-rangelength-message="Please enter a value between 5 and 10 characters long."
+                            data-required-message="Required field" required data-msg-containerid="ranlenError" />
+                        <span class="e-float-line"></span>
+                        <label class="e-float-text" for="rangelen">Characters length between 5 to 10</label>
+                    </div>
+                    <div id="ranlenError"></div>
+                </div>
+                <div class="form-group">
+                    <div class="e-float-input">
+                        <input type="text" id="range" name="Range" range="[5, 10]" data-range-message="Please enter a value between 5 and 10." data-required-message="Required field"
+                            required data-msg-containerid="ranError" />
+                        <span class="e-float-line"></span>
+                        <label class="e-float-text" for="range">Value between 5 to 10</label>
+                    </div>
+                    <div id="ranError"></div>
+                </div>
+                <div class="form-group">
+                    <div class="e-float-input">
+                        <input type="text" id="max" name="Max" max="5" data-max-message="Please enter a value less than or equal to 5." data-required-message="Required field"
+                            required data-msg-containerid="maxError" />
+                        <span class="e-float-line"></span>
+                        <label class="e-float-text" for="max">Max (maximum value 5)</label>
+                    </div>
+                    <div id="maxError"></div>
+                </div>
+                <div class="form-group">
+                    <div class="e-float-input">
+                        <input type="text" id="min" name="Min" min="5" data-min-message="Please enter a value greater than or equal to 5." data-required-message="Required field"
+                            required data-msg-containerid="minError" />
+                        <span class="e-float-line"></span>
+                        <label class="e-float-text" for="min">Min (minimum value 5)</label>
+                    </div>
+                    <div id="minError"></div>
+                </div>
+                <div class="form-group">
+                    <div class="e-float-input">
+                        <input type="text" id="regex" name="Regex" regex="^[a-zA-Z]+$" data-regex-message="accepts alphabets only" data-required-message="Required field"
+                            required data-msg-containerid="regexError" />
+                        <span class="e-float-line"></span>
+                        <label class="e-float-text" for="regex">Regex (accepts alphabets only)</label>
+                    </div>
+                    <div id="regexError"></div>
+                </div>
+                <div class="row">
+                    <div style="float: left;margin: 0 10% 0 30%">
+                        <button id="validateSubmit" class="samplebtn" type="submit" style="height: 35px;">Submit</button>
+                    </div>
+                    <div>
+                        <button id="resetbtn" class="samplebtn" type="reset" style="height: 35px;">Reset</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

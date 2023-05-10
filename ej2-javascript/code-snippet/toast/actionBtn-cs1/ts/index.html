@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Essential JS 2 Toast</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Typescript Toolbar Controls" />
+    <meta name="author" content="Syncfusion" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/material.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+</head>
+<style>
+.e-toast-icon.e-laura.e-icons {
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://ej2.syncfusion.com/vue/demos/src/toast/resource/laura.png);
+    height: 44px !important;
+    margin: 0;
+    width: 60px;
+}
+#elementToastTime .e-toast-message {
+    padding: 10px;
+}
+</style>
+<body>
+    <div id='loader'>LOADING....</div>
+    <div id='container'>
+        <div class='row'> <button class="e-btn" id="show_toast"> Show Toast</button> </div>
+        <div id='element'></div>
+        <div id="elementToastTime"></div>
+        <br/><br/>
+        <div id='result'></div>
+    </div>
+</body>
+
+</html>

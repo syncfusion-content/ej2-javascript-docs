@@ -1,0 +1,31 @@
+#container {
+  margin: 60px auto;
+  width: 600px;
+}
+
+#loader {
+  color: #008cff;
+  font-family: 'Helvetica Neue','calibiri';
+  font-size: 14px;
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+}
+
+.content {
+  padding: 9px;
+}
+
+.default-splitter .e-splitter .e-split-bar .e-resize-handler:before {
+  content: "\e934";
+  font-family: 'e-icons';
+  font-size: 11px;
+  transform: rotate(90deg);
+}
+
+.e-splitter .e-split-bar.e-split-bar-horizontal.e-resizable-split-bar,
+.e-splitter .e-split-bar.e-split-bar-horizontal.e-resizable-split-bar::after {
+  cursor: e-resize;
+}

@@ -1,5 +1,0 @@
-* [Getting Started](badge/es5-getting-started.md)
-* [Types](badge/types.md)
-* [Badge Customization](badge/how-to/badge-customization.md)
-* [Integrate Badge into Listview](badge/how-to/integrate-badge-into-listview.md)
-* [Dynamic Badge Content](badge/how-to/dynamic-badge-content.md)

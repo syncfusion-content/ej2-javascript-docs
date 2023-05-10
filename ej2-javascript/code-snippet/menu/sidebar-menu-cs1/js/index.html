@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="en"><head>
+    <title>Essential JS 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Essential JS 2">
+    <meta name="author" content="Syncfusion">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-navigations/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-buttons/styles/material.css" rel="stylesheet">
+
+    <!--style reference from app-->
+    <link href="styles.css" rel="stylesheet">
+
+    <!--system js reference and configuration-->
+    
+    
+<script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+</head>
+<body>
+    
+    <div id="container">
+         <!-- sidebar element declaration -->
+    <div class="header">
+        <span id="hamburger" class="e-icons menu default"></span>
+            <div class="content">Header content</div>
+        </div>
+        <aside id="default-sidebar">
+            <div class="title-header">
+                <div style="display:inline-block"> Menu </div>
+                <span id="close" class="e-icons"></span>
+            </div>
+            <div class="content-area">
+                <!--Accordion control declaration-->
+                <div id="accordionMenu"></div>
+            </div>
+        </aside>
+        <!-- main content declaration -->
+        <div>
+            <div class="main-content">Main content</div>
+        </div>
+    </div>
+
+
+
+<script>
+var ele = document.getElementById('container');
+if(ele) {
+  ele.style.visibility = "visible";
+}   
+      </script>
+<script src="index.js" type="text/javascript"></script>
+</body></html>

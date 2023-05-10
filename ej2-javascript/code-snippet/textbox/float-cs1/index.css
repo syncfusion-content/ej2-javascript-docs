@@ -1,0 +1,19 @@
+.multiline{
+    margin: 10px auto;
+    width: 30%;
+}
+.custom-input-label {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 35%;
+}
+#loader {
+    color: #008cff;
+    font-family: 'Helvetica Neue','calibiri';
+    font-size: 14px;
+    height: 40px;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 30%;
+  }

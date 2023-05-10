@@ -1,5 +1,0 @@
-* [Getting Started](carousel/es5-getting-started.md)
-* [Populating Items](carousel/populating-items.md)
-* [Navigators and Indicators](carousel/navigators-and-indicators.md)
-* [Animations and Transitions](carousel/animations-and-transitions.md)
-* [Accessibility](carousel/accessibility.md)

@@ -1,0 +1,161 @@
+<!DOCTYPE html><html lang="en"><head>
+    <title>Essential JS 2 Rich Text Editor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Typescript UI Controls">
+    <meta name="author" content="Syncfusion">
+    <link href="index.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-richtexteditor/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-inputs/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-lists/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-navigations/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-popups/styles/material.css" rel="stylesheet">
+     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-buttons/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-splitbuttons/styles/material.css" rel="stylesheet">
+    
+    
+<script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    
+    <div id="container" class="e-rte-custom-tbar-section">
+        <div id="defaultRTE">
+        </div>
+        <div id="customTbarDialog" style="display: none">
+            <div id="rteSpecial_char">
+                <div class="char_block" title="^">^</div>
+                <div class="char_block" title="_">_</div>
+                <div class="char_block" title="`">`</div>
+                <div class="char_block" title="{">{</div>
+                <div class="char_block" title="|">|</div>
+                <div class="char_block" title="}">}</div>
+                <div class="char_block" title="~">~</div>
+                <div class="char_block" title="&nbsp;">&nbsp;</div>
+                <div class="char_block" title="¡">¡</div>
+                <div class="char_block" title="¢">¢</div>
+                <div class="char_block" title="£">£</div>
+                <div class="char_block" title="¤">¤</div>
+                <div class="char_block" title="¥">¥</div>
+                <div class="char_block" title="₹">₹</div>
+                <div class="char_block" title="¦">¦</div>
+                <div class="char_block" title="§">§</div>
+                <div class="char_block" title="¨">¨</div>
+                <div class="char_block" title="©">©</div>
+                <div class="char_block" title="ª">ª</div>
+                <div class="char_block" title="«">«</div>
+                <div class="char_block" title="¬">¬</div>
+                <div class="char_block" title="­">­</div>
+                <div class="char_block" title="®">®</div>
+                <div class="char_block" title="¯">¯</div>
+                <div class="char_block" title="°">°</div>
+                <div class="char_block" title="±">±</div>
+                <div class="char_block" title="²">²</div>
+                <div class="char_block" title="³">³</div>
+                <div class="char_block" title="´">´</div>
+                <div class="char_block" title="µ">µ</div>
+                <div class="char_block" title="¶">¶</div>
+                <div class="char_block" title="·">·</div>
+                <div class="char_block" title="¸">¸</div>
+                <div class="char_block" title="¹">¹</div>
+                <div class="char_block" title="º">º</div>
+                <div class="char_block" title="»">»</div>
+                <div class="char_block" title="¼">¼</div>
+                <div class="char_block" title="½">½</div>
+                <div class="char_block" title="¾">¾</div>
+                <div class="char_block" title="¿">¿</div>
+                <div class="char_block" title="À">À</div>
+                <div class="char_block" title="Á">Á</div>
+                <div class="char_block" title="Â">Â</div>
+                <div class="char_block" title="Ã">Ã</div>
+            </div>
+        </div>
+    </div>
+<style>
+    .e-rte-custom-tbar-section #special_char,
+    .e-rte-custom-tbar-section .char_block {
+        display: inline-block;
+    }
+
+    #custom_tbar,
+    #custom_tbar div{
+        cursor: pointer;
+    }
+
+    #rteSpecial_char {
+        padding: 15px 0 15px 0;
+    }
+    #customTbarDialog {
+        max-height: 250px !important;
+    }
+    .material .e-rte-custom-tbar-section .char_block.e-active {
+        outline: 1px solid #e3165b;
+        border-color: #e3165b;
+    }
+
+    .fabric .e-rte-custom-tbar-section .char_block.e-active {
+        outline: 1px solid #0078d6;
+        border-color: #0078d6;
+    }
+
+    .bootstrap .e-rte-custom-tbar-section .char_block.e-active {
+        outline: 1px solid #317ab9;
+        border-color: #317ab9;
+    }
+
+    .highcontrast .e-rte-custom-tbar-section .char_block.e-active {
+        outline: 1px solid #ffd939;
+        border-color: #ffd939;
+    }
+
+    .fabric.e-bigger .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn.e-btn .e-tbar-btn-text,
+    .highcontrast.e-bigger .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn.e-btn .e-tbar-btn-text {
+        padding-right: 10px;
+    }
+
+    .bootstrap.e-bigger .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn.e-btn .e-tbar-btn-text,
+    .bootstrap .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn.e-btn .e-tbar-btn-text {
+        padding-right: 6px;
+    }
+
+    .fabric .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn.e-btn .e-tbar-btn-text,
+    .highcontrast .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn.e-btn .e-tbar-btn-text {
+        padding-right: 8px;
+    }
+
+    .e-rte-custom-tbar-section .char_block {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 5px 5px 0;
+        text-align: center;
+        vertical-align: middle;
+        border: 1px solid #DDDDDD;
+        font-size: 20px;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    #rteSection {
+        height: 500px;
+    }
+
+    #custom_tbar div{
+        font-size: 16px;
+    }
+
+    .e-bigger #custom_tbar div{
+        font-size: 18px;
+    }
+</style>
+
+
+<script>
+var ele = document.getElementById('container');
+if(ele) {
+  ele.style.visibility = "visible";
+}   
+      </script>
+<script src="index.js" type="text/javascript"></script>
+</body></html>

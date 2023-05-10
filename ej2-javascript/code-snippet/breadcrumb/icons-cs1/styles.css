@@ -1,0 +1,12 @@
+body {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.e-folder:before {
+  content: "\ec04";
+}
+
+.e-file:before {
+  content: "\e240";
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Essential JS 2 Splitter </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Essential JS 2 Uploader Component" />
+    <meta name="author" content="Syncfusion" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-layouts/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-buttons/styles/material.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+</head>
+<style>
+    .default-splitter .e-splitter .e-split-bar .e-resize-handler:before {
+        content: "\e934";
+        font-family: 'e-icons';
+        font-size: 11px;
+        transform: rotate(90deg);
+    }
+
+    .e-splitter .e-split-bar.e-split-bar-horizontal.e-resizable-split-bar,
+    .e-splitter .e-split-bar.e-split-bar-horizontal.e-resizable-split-bar::after {
+    cursor: e-resize;
+    }
+</style>
+<body>
+    <div id='loader'>Loading....</div>
+    <div id='container' class="container default-splitter">
+        <!--element which is going to render the splitter-->
+        <div id="splitter"> 
+            <div>
+                <div class="content">
+                    <h3 class="h3">PARIS </h3>
+                    Paris, the city of lights and love - this short guide is full of ideas for how to make the most of the romanticism...
+                </div>
+            </div>
+            <div>
+                <div class="content">
+                    <h3 class="h3">CAMEMBERT </h3>
+                    The village in the Orne département of Normandy where the famous French cheese is originated from.
+                </div>
+            </div>
+            <div>
+                <div class="content">
+                    <h3 class="h3">GRENOBLE </h3>
+                    The capital city of the French Alps and a major scientific center surrounded by many ski resorts, host of the Winter Olympics in 1968.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

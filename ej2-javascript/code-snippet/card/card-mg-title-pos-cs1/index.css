@@ -1,0 +1,9 @@
+.e-card-image {
+    background: url('./sample.jpg');
+    height: 164px;
+}
+
+.e-card {
+    width: 200px;
+    margin: auto;
+}

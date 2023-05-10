@@ -1,0 +1,105 @@
+<!DOCTYPE html><html lang="en"><head>
+    <title>Essential JS 2 Accordion</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Typescript Toolbar Controls">
+    <meta name="author" content="Syncfusion">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/material.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    
+    
+<script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    
+    <div id="container">
+        <div class="template_title"> Online Shopping Payment Module</div>
+        <div id="element"></div>
+        <div id="result"></div>
+    </div>
+    <div id="Sign_In_Form" style="display: none; padding: 3px 0">
+        <form id="formId">
+            <div class="form-group">
+                <div class="e-float-input">
+                    <input type="text" id="email" name="Email" required="">
+                    <span class="e-float-line"></span>
+                    <label class="e-float-text" for="email">Email</label>
+                </div>
+                <div class="e-float-input">
+                    <input class="e-input" id="password" type="password" name="Password" required="">
+                    <span class="e-float-line"></span>
+                    <label class="e-float-text" for="password">Password</label>
+                </div>
+            </div>
+        </form>
+        <div style="text-align: center">
+            <button class="e-btn" id="Continue_Btn">Continue</button>
+            <div id="err1">* Please fill all fields</div>
+        </div>
+    </div>
+    <div id="Address_Fill" style="display: none; padding: 3px 0">
+        <form id="formId_Address">
+            <div class="form-group">
+                <div class="e-float-input">
+                    <input type="text" id="name" name="Name" required="">
+                    <span class="e-float-line"></span>
+                    <label class="e-float-text" for="name">Name</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="e-float-input">
+                    <input type="text" id="address" name="Address" required="">
+                    <span class="e-float-line"></span>
+                    <label class="e-float-text" for="address">Address</label>
+                </div>
+            </div>
+            <div class="form-group">
+              <input type="text" id="mobile">
+            </div>
+        </form>
+        <div style="text-align: center">
+            <button class="e-btn" id="Continue_BtnAdr">Continue</button>
+            <div id="err2">* Please fill all fields</div>
+        </div>
+    </div>
+    <div id="Card_Fill" style="display: none; padding: 3px 0;">
+        <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6">
+            <div class="form-group">
+                <input type="text" id="cardNo">
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6">
+            <div class="form-group">
+                <div class="e-float-input">
+                    <input type="text" id="cardHolder" name="cardHolder" required="">
+                    <span class="e-float-line"></span>
+                    <label class="e-float-text" for="cardHolder">CardHolder Name</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6">
+            <input id="expiry">
+        </div>
+        <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6">
+            <div class="form-group">
+              <input type="text" id="CVV">
+            </div>
+        </div>
+        <div style="text-align: center">
+            <button class="e-btn" id="Back_Btn">Back</button>
+            <button class="e-btn" id="Save_Btn">Save</button>
+            <div id="err3">* Please fill all fields</div>
+        </div>
+    </div>
+    <div id="alertDialog"></div>
+
+<script>
+var ele = document.getElementById('container');
+if(ele) {
+  ele.style.visibility = "visible";
+}   
+      </script>
+<script src="index.js" type="text/javascript"></script>
+</body></html>

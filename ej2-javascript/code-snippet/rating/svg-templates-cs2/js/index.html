@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="en"><head>
+    <title>EJ2 Rating</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TypeScript Rating Control">
+    <meta name="author" content="Syncfusion">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-buttons/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-popups/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-inputs/styles/material.css" rel="stylesheet">
+    
+    
+
+<script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+</head>
+<body>
+    
+    <div id="container">
+        <div class="wrap">
+            <input id="rating">
+        </div>
+    </div>
+
+    <script type="text/x-jsrender" id="emptyTemplate">
+        <svg width="35" height="25" class="e-rating-svg-icon">
+            <rect width="35" height="25" fill="transparent" style="stroke-width:2;stroke:rgb(173,181,189)" />
+        </svg>
+    </script>
+
+    <script type="text/x-jsrender" id="fullTemplate">
+        <svg width="35" height="25" class="e-rating-svg-icon">
+            <defs>
+                <linearGradient id=grad${index} x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop class="start" offset="0%" />
+                    <stop class="end" offset="100%" />
+                </linearGradient>
+            </defs>
+            <rect width="35" height="25" fill="url(#grad${index})" style="stroke-width:2;stroke:rgb(173,181,189)" />
+        </svg>
+    </script>
+
+<script>
+var ele = document.getElementById('container');
+if(ele) {
+  ele.style.visibility = "visible";
+}   
+      </script>
+<script src="index.js" type="text/javascript"></script>
+</body></html>

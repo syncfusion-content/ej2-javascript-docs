@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Essential JS 2 Rich Text Editor</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Typescript UI Controls" />
+    <meta name="author" content="Syncfusion" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-richtexteditor/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-inputs/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-lists/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-navigations/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-popups/styles/material.css" rel="stylesheet" />
+     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-buttons/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-splitbuttons/styles/material.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+</head>
+
+<body>
+    <div id='loader'>Loading....</div>
+    <div id='container' class='e-rte-custom-tbar-section'>
+        <div id='defaultRTE'>
+        </div>
+        <div id="customTbarDialog" style="display: none">
+            <div id="rteSpecial_char">
+                <div class="char_block" title="^">^</div>
+                <div class="char_block" title="_">_</div>
+                <div class="char_block" title="`">`</div>
+                <div class="char_block" title="{">{</div>
+                <div class="char_block" title="|">|</div>
+                <div class="char_block" title="}">}</div>
+                <div class="char_block" title="~">~</div>
+                <div class="char_block" title="&#xA0;">&#xA0;</div>
+                <div class="char_block" title="&#xA1;">&#xA1;</div>
+                <div class="char_block" title="&#xA2;">&#xA2;</div>
+                <div class="char_block" title="&#xA3;">&#xA3;</div>
+                <div class="char_block" title="&#xA4;">&#xA4;</div>
+                <div class="char_block" title="&#xA5;">&#xA5;</div>
+                <div class="char_block" title="&#x20B9;">&#x20B9;</div>
+                <div class="char_block" title="&#xA6;">&#xA6;</div>
+                <div class="char_block" title="&#xA7;">&#xA7;</div>
+                <div class="char_block" title="&#xA8;">&#xA8;</div>
+                <div class="char_block" title="&#xA9;">&#xA9;</div>
+                <div class="char_block" title="&#xAA;">&#xAA;</div>
+                <div class="char_block" title="&#xAB;">&#xAB;</div>
+                <div class="char_block" title="&#xAC;">&#xAC;</div>
+                <div class="char_block" title="&#xAD;">&#xAD;</div>
+                <div class="char_block" title="&#xAE;">&#xAE;</div>
+                <div class="char_block" title="&#xAF;">&#xAF;</div>
+                <div class="char_block" title="&#xB0;">&#xB0;</div>
+                <div class="char_block" title="&#xB1;">&#xB1;</div>
+                <div class="char_block" title="&#xB2;">&#xB2;</div>
+                <div class="char_block" title="&#xB3;">&#xB3;</div>
+                <div class="char_block" title="&#xB4;">&#xB4;</div>
+                <div class="char_block" title="&#xB5;">&#xB5;</div>
+                <div class="char_block" title="&#xB6;">&#xB6;</div>
+                <div class="char_block" title="&#xB7;">&#xB7;</div>
+                <div class="char_block" title="&#xB8;">&#xB8;</div>
+                <div class="char_block" title="&#xB9;">&#xB9;</div>
+                <div class="char_block" title="&#xBA;">&#xBA;</div>
+                <div class="char_block" title="&#xBB;">&#xBB;</div>
+                <div class="char_block" title="&#xBC;">&#xBC;</div>
+                <div class="char_block" title="&#xBD;">&#xBD;</div>
+                <div class="char_block" title="&#xBE;">&#xBE;</div>
+                <div class="char_block" title="&#xBF;">&#xBF;</div>
+                <div class="char_block" title="&#xC0;">&#xC0;</div>
+                <div class="char_block" title="&#xC1;">&#xC1;</div>
+                <div class="char_block" title="&#xC2;">&#xC2;</div>
+                <div class="char_block" title="&#xC3;">&#xC3;</div>
+            </div>
+        </div>
+    </div>
+<style>
+    .e-rte-custom-tbar-section #special_char,
+    .e-rte-custom-tbar-section .char_block {
+        display: inline-block;
+    }
+
+    #custom_tbar,
+    #custom_tbar div{
+        cursor: pointer;
+    }
+
+    #rteSpecial_char {
+        padding: 15px 0 15px 0;
+    }
+    #customTbarDialog {
+        max-height: 250px !important;
+    }
+    .material .e-rte-custom-tbar-section .char_block.e-active {
+        outline: 1px solid #e3165b;
+        border-color: #e3165b;
+    }
+
+    .fabric .e-rte-custom-tbar-section .char_block.e-active {
+        outline: 1px solid #0078d6;
+        border-color: #0078d6;
+    }
+
+    .bootstrap .e-rte-custom-tbar-section .char_block.e-active {
+        outline: 1px solid #317ab9;
+        border-color: #317ab9;
+    }
+
+    .highcontrast .e-rte-custom-tbar-section .char_block.e-active {
+        outline: 1px solid #ffd939;
+        border-color: #ffd939;
+    }
+
+    .fabric.e-bigger .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn.e-btn .e-tbar-btn-text,
+    .highcontrast.e-bigger .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn.e-btn .e-tbar-btn-text {
+        padding-right: 10px;
+    }
+
+    .bootstrap.e-bigger .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn.e-btn .e-tbar-btn-text,
+    .bootstrap .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn.e-btn .e-tbar-btn-text {
+        padding-right: 6px;
+    }
+
+    .fabric .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn.e-btn .e-tbar-btn-text,
+    .highcontrast .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn.e-btn .e-tbar-btn-text {
+        padding-right: 8px;
+    }
+
+    .e-rte-custom-tbar-section .char_block {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 5px 5px 0;
+        text-align: center;
+        vertical-align: middle;
+        border: 1px solid #DDDDDD;
+        font-size: 20px;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    #rteSection {
+        height: 500px;
+    }
+
+    #custom_tbar div{
+        font-size: 16px;
+    }
+
+    .e-bigger #custom_tbar div{
+        font-size: 18px;
+    }
+</style>
+</body>
+
+</html>

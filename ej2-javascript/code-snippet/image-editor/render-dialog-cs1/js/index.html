@@ -1,0 +1,93 @@
+<!DOCTYPE html><html lang="en"><head>
+    <title>Essential JS 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Essential JS 2">
+    <meta name="author" content="Syncfusion">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-buttons/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-inputs/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-lists/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-navigations/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-popups/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-splitbuttons/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-image-editor/styles/material.css" rel="stylesheet">
+
+
+    <!--style reference from app-->
+    <link href="styles.css" rel="stylesheet">
+
+    <!--system js reference and configuration-->
+    
+    
+<script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+</head>
+<body>
+    
+    <div class="col-lg-12 control-section e-img-editor-sample">
+        <div class="e-profile">
+            <div class="e-custom-wrapper">
+                <canvas id="img-canvas" style="max-width: 200px; max-height: 200px;"></canvas>
+                <img alt="img" id="custom-img" crossorigin="anonymous" src="images/profile.png" style="display: none;">
+                <input type="file" id="img-upload" style="display:none">
+                <span id="custom-edit" class="e-custom-edit" contenteditable="false">
+                    <span class="e-custom-icon sb-icons" contenteditable="false"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id="profile-dialog">
+        <div id="image-editor"></div>
+    </div>
+    
+    
+    <style>
+        .e-img-editor-sample,
+        .e-img-editor-sample .control-wrapper {
+            position: relative;
+        }
+    
+        .e-profile {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 50%;
+            -webkit-transform: translate(-50%, 30%);
+            transform: translate(-50%, 30%);
+            border-radius: 50%;
+        }
+    
+        .e-custom-wrapper {
+            position: relative;
+        }
+    
+        .e-custom-edit {
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: blue;
+            top: calc(100% - 54px);
+            left: calc(100% - 47px);
+        }
+    
+        .e-custom-icon::before {
+            content: '\e911';
+            font-size: 28px;
+            color: white;
+            left: 5px;
+            top: -2px;
+            position: absolute;
+        }
+</style>    
+
+
+
+<script>
+var ele = document.getElementById('container');
+if(ele) {
+  ele.style.visibility = "visible";
+}   
+      </script>
+<script src="index.js" type="text/javascript"></script>
+</body></html>

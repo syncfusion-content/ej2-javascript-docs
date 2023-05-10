@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>EJ2 Tooltip</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Typescript UI Controls" />
+    <meta name="author" content="Syncfusion" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-popups/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-buttons/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-inputs/styles/material.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+</head>
+
+<body>
+    <div id='loader'>LOADING....</div>
+    <div id='container'>
+        <table style="margin: 150px auto 0 auto;transform: translateY(-50%);">
+            <tbody>
+                <tr>
+                    <td style="padding:25px">
+                        <div id="tooltiphover" class="blocks">
+                            <span>Hover Me !(Default)</span>
+                        </div>
+                    </td>
+                    <td style="padding:25px">
+                        <div id="tooltipclick" class="blocks">
+                            <span>Click Me !</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:25px">
+                        <div class="">
+                            <span id="textbox" class="e-float-input">
+                                <input id="tooltipfocus" type="text" placeholder="Focus and blur" />
+                            </span>
+                        </div>
+                    </td>
+                    <td style="padding:25px">
+                        <div id="tooltipcustom">
+                            <div>
+                                <input id="tooltipopen" type="button" value="Click to open tooltip manually" />
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,7 +1,0 @@
-* [Getting Started](signature/es5-getting-started.md)
-* [Customization](signature/customization.md)
-* [Open and Save](signature/open-save.md)
-* [Draw a Signature](signature/draw.md)
-* [User Interactions](signature/user-interaction.md)
-* [Accessibility](signature/accessibility.md)
-* [Integration with Toolbar](signature/how-to/toolbar-integration.md)

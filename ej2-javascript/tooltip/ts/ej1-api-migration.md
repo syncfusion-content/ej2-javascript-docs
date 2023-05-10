@@ -1,0 +1,32 @@
+---
+layout: post
+title: Ej1 api migration in ##Platform_Name## Tooltip control | Syncfusion
+description: Learn here all about Ej1 api migration in Syncfusion ##Platform_Name## Tooltip control of Syncfusion Essential JS 2 and more.
+platform: ej2-javascript
+control: Ej1 api migration 
+publishingplatform: ##Platform_Name##
+documentation: ug
+domainurl: ##DomainURL##
+---
+
+# Ej1 api migration in ##Platform_Name## Tooltip control
+
+This article describes the API migration process of Tooltip component from Essential JS 1 to Essential JS 2
+
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| --- | --- | --- |
+| Position | **Property:** *position* <br /> var tooltip = new ej.Tooltip($("#test"),{ <br /> position: { <br />target: {<br />horizontal: "center",<br />vertical: "top"<br />},<br />stem: {<br />horizontal: "center",<br />vertical: "bottom"<br />}<br />}<br />}); | **Property:** *position* <br />  let tooltip: Tooltip = new Tooltip({ <br />position : 'TopCenter' <br /> }); <br /> tooltip.appendTo('#test); |
+| Animation | **Property:** *animation* <br /> var tooltip =new ej.Tooltip($("#test"),{ <br /> animation :{ effect : "slide", speed : 1000} <br /> }); <br /> | **Property:** *animation* <br />  let tooltip: Tooltip = new Tooltip({<br /> position : 'TopCenter', <br /> animation:{<br /> open: { effect: 'FadeIn', duration: <br /> 150, delay: 0 }, <br /> close: { effect: 'FadeOut', duration: 150, delay: 0 }<br /> }<br /> });<br /> tooltip.appendTo('#test);|
+| Close Time Out | **Property:** *autoCloseTimeout* <br /> var tooltip =new ej.Tooltip($("#test"),{ <br />  autoCloseTimeout : 5000 <br /> }); | **Property:** *closeDelay, openDelay* <br />  let tooltip: Tooltip = new Tooltip({ <br /> position : 'TopCenter', <br /> closeDelay :   500 <br /> }); <br /> tooltip.appendTo('#test); |
+| Sticky Mode |**Property :** *closeMode* <br /> var tooltip =new ej.Tooltip($("#test"),{<br />closeMode : "sticky"<br /> }); |**Property:** *isSticky* <br />  let tooltip: Tooltip = new Tooltip({ <br /> position : 'TopCenter',<br /> isSticky  :   true <br /> });<br /> tooltip.appendTo('#test); |
+| Offset from target |**Property :** *tip.adjust.xValue/ tip.adjust.yValue* <br /> var tooltip =new ej.Tooltip($("#test"),{ <br /> tip :{<br /> size : { width : 25, height : 12},<br /> adjust : {xValue : 5, yValue: 6}<br />}<br /> }); | **Property:** *offsetX/ offsetY* <br /> let tooltip: Tooltip = new Tooltip({<br />position : 'TopCenter',<br /> offsetX  : 10,<br />offsetY  : 10 <br />});<br />tooltip.appendTo('#test); |
+| Mouse trail on target | **Not Applicable** | **Property:**  *mouseTrail* <br />  let tooltip: Tooltip = new Tooltip({ <br />mouseTrail: true, <br />});<br />tooltip.appendTo('#test); |
+| Open mode of tooltip | **Not Applicable** | **Property:**  *opensOn* <br /> let tooltip: Tooltip = new Tooltip({<br />opensOn: 'Click', <br />});<br />tooltip.appendTo('#test); |
+| Enable disable the tip of tooltip | **Not Applicable** | **Property:**  *showTipPointer* <br />  let tooltip: Tooltip = new Tooltip({ <br /> showTipPointer: false, <br />});<br />tooltip.appendTo('#test); |
+| Hide | **Method:** *hide()* <br /> var tooltip = new ej.Tooltip($("#test"),{ <br /> content: "JavaScript is the programming language of HTML and the Web." }).data("ejTooltip"); <br /> tooltip.hide();| **Method:** *close()* <br />  let tooltip: Tooltip = new Tooltip({ <br /> cssClass: 'e-tooltip-css', <br /> opensOn: 'Custom', <br />content: 'Tooltip from custom mode' <br />}); <br />tooltip.appendTo('#test); <br />tooltip.close();|
+| Show | **Method:** *show()* <br /> var tooltip = new ej.Tooltip($("#test"),{ <br /> content: "JavaScript is the programming language of HTML and the Web." }).data("ejTooltip"); <br /> tooltip.show(); | **Method:** *open()* <br />  let tooltip: Tooltip = new Tooltip({ <br /> cssClass: 'e-tooltip-css', <br /> content: 'Tooltip from custom mode' <br />}); <br />tooltip.appendTo('#test); <br />tooltip.open();|
+| Enable | **Method:** *enable()* <br /> var tooltip = new ej.Tooltip($("#test"),{ <br /> content: "JavaScript is the programming language of HTML and the Web." }); <br /> tooltip.enable(); | **Method:** *destroy()* <br /> let tooltip: Tooltip = new Tooltip({ <br />cssClass: 'e-tooltip-css',<br />content: 'Tooltip from custom mode'<br />});<br />tooltip.appendTo('#test);<br />tooltip.destory(); |
+| Close | **Event:** *close* <br /> var tooltip = new ej.Tooltip($("#test"),{  <br /> content: "JavaScript is the programming language of HTML and the Web.", close: function (args) {}  <br /> }); | **Event:** *afterClose*  <br />  let tooltip: Tooltip = new Tooltip({<br />  afterClose: function(e: Event): void { } <br /> }); <br /> tooltip.appendTo('#test); |
+| Open | **Event:** *open* <br /> var tooltip = new ej.Tooltip($("#test"),{ <br /> content: "JavaScript is the programming language of HTML and the Web.", open: function (args) {} <br /> }); | **Event:** *afterOpen* <br />  let tooltip: Tooltip = new Tooltip({ <br /> afterOpen: function(e: Event : void { }  <br /> });  <br /> tooltip.appendTo('#test);
+| Before Collision | **Not Applicable** | **Event:** *beforeCollision* <br />  let tooltip: Tooltip = new Tooltip({  <br /> beforeCollision: function(e: Event): void { } <br />}); <br />tooltip.appendTo('#test); |
+| Tracking| **Event:** *tracking* <br /> var tooltip =new ej.Tooltip($("#test"),{ <br /> content: "JavaScript is the programming language of HTML and the Web.", associate :"mouse", <br /> tracking: function (args) {} <br /> }); | **Method:** *open(),close(),refresh()* <br /> let tooltip: Tooltip = new Tooltip({<br />content: 'Drag me anywhere, to start walking with me !!!',<br />offsetX: -15,<br />target: '#demoSmart',<br />animation: { open: { effect: 'None' }, close: { effect: 'None' } }<br />});<br />tooltip.appendTo('#test');<br />let ele: HTMLElement = document.getElementById('demoSmart');<br />let <br />drag: Draggable = new Draggable(ele, {<br />clone: false,<br />dragArea: '#targetContainer',<br />drag: (args: any) => {<br />if (args.element.getAttribute('data-tooltip-id') === null) {<br />tooltip.open(args.element);<br />} else {<br />tooltip.refresh(args.element);<br />}<br />},<br />dragStart: (args: any) => {<br />if (args.element.getAttribute('data-tooltip-id') !== null) { return; }<br />tooltip.open(args.element);<br />},<br />dragStop: (args: any) => {<br />tooltip.close();<br />}<br />});<br /> |

@@ -1,0 +1,19 @@
+body {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.e-breadcrumb .e-breadcrumb-separator + .e-breadcrumb-separator {
+    padding-left: 0;
+    margin-left: -8px;
+}
+   
+.e-icons.e-arrow {
+    margin-top: -2px;
+}
+
+.e-arrow:before {
+    content: "\e253";
+    font-weight: 800;
+    font-size: 18px;
+}

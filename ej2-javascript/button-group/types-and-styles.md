@@ -27,6 +27,9 @@ The following sample illustrates how to achieve an Outline ButtonGroup.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/types-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/types-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/button-group/types-cs1" %}
@@ -36,6 +39,9 @@ The following sample illustrates how to achieve an Outline ButtonGroup.
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/types-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/types-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -64,6 +70,9 @@ The following example illustrates how to achieve predefined styles in ButtonGrou
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/styles-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/styles-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/button-group/styles-cs1" %}
@@ -73,6 +82,9 @@ The following example illustrates how to achieve predefined styles in ButtonGrou
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/styles-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/styles-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

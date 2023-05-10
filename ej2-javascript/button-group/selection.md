@@ -25,6 +25,9 @@ The following example illustrates the single selection behavior in ButtonGroup.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/radio-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/radio-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/button-group/radio-cs1" %}
@@ -34,6 +37,9 @@ The following example illustrates the single selection behavior in ButtonGroup.
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/radio-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/radio-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -52,6 +58,9 @@ The following example illustrates the multiple selection behavior in ButtonGroup
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/checkbox-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/checkbox-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/button-group/checkbox-cs1" %}
@@ -61,6 +70,9 @@ The following example illustrates the multiple selection behavior in ButtonGroup
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/checkbox-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/checkbox-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -91,6 +103,9 @@ import the DropDownButton in `script` file, and initialize with the `dropdownele
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/drop-down-button-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/drop-down-button-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/button-group/drop-down-button-cs1" %}
@@ -103,6 +118,9 @@ import the DropDownButton in `script` file, and initialize with the `dropdownele
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/drop-down-button-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/drop-down-button-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -125,6 +143,9 @@ import the SplitButton in `app.ts` file, and initialize with the `splitbuttonele
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/split-button-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/split-button-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/button-group/split-button-cs1" %}
@@ -137,6 +158,9 @@ import the SplitButton in `app.ts` file, and initialize with the `splitbuttonele
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/split-button-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/split-button-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

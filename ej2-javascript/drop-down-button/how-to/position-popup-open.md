@@ -24,6 +24,9 @@ In the following example, the `top` position of the popup element is changed in 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/position-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/position-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/drop-down-button/position-cs1" %}
@@ -36,6 +39,9 @@ In the following example, the `top` position of the popup element is changed in 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/position-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/position-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

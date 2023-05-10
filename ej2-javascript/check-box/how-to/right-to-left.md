@@ -24,6 +24,9 @@ The following example illustrates how to enable right-to-left support in CheckBo
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/check-box/getting-started-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/check-box/getting-started-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/check-box/getting-started-cs1" %}
@@ -36,6 +39,9 @@ The following example illustrates how to enable right-to-left support in CheckBo
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/check-box/getting-started-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/check-box/getting-started-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

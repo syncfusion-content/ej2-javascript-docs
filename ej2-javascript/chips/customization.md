@@ -34,6 +34,9 @@ The Chip control has the following predefined styles that can be defined using t
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chips/customization-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/chips/customization-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/chips/customization-cs1" %}
@@ -46,6 +49,9 @@ The Chip control has the following predefined styles that can be defined using t
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chips/customization-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/chips/customization-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -65,6 +71,9 @@ You can add and customize the leading icon of chip using the `leadingIconCss` pr
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chips/customization-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/chips/customization-cs2/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/chips/customization-cs2" %}
@@ -77,6 +86,9 @@ You can add and customize the leading icon of chip using the `leadingIconCss` pr
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chips/customization-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/chips/customization-cs2/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -96,6 +108,9 @@ You can add and customize the avatar of chip using the `avatarIconCss` property.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chips/customization-cs3/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/chips/customization-cs3/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/chips/customization-cs3" %}
@@ -108,6 +123,9 @@ You can add and customize the avatar of chip using the `avatarIconCss` property.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chips/customization-cs3/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/chips/customization-cs3/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -127,6 +145,9 @@ You can add and customize the avatar content of chip using the `avatarText` prop
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chips/customization-cs4/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/chips/customization-cs4/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/chips/customization-cs4" %}
@@ -139,6 +160,9 @@ You can add and customize the avatar content of chip using the `avatarText` prop
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chips/customization-cs4/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/chips/customization-cs4/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -158,6 +182,9 @@ You can add and customize the trailing icon of chip using the `trailingIconCss` 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chips/customization-cs5/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/chips/customization-cs5/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/chips/customization-cs5" %}
@@ -170,6 +197,9 @@ You can add and customize the trailing icon of chip using the `trailingIconCss` 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chips/customization-cs5/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/chips/customization-cs5/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -189,6 +219,9 @@ Outline chip has the border with the background transparent. It can be set using
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chips/customization-cs6/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/chips/customization-cs6/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/chips/customization-cs6" %}
@@ -201,6 +234,9 @@ Outline chip has the border with the background transparent. It can be set using
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chips/customization-cs6/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/chips/customization-cs6/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

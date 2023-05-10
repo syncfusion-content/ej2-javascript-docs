@@ -25,6 +25,9 @@ Now, the value that is in checked state will be sent on form submit.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/radio-button/form-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/radio-button/form-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/radio-button/form-cs1" %}
@@ -37,6 +40,9 @@ Now, the value that is in checked state will be sent on form submit.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/radio-button/form-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/radio-button/form-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

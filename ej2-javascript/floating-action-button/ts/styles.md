@@ -33,6 +33,9 @@ The JavaScript Floating Action Button supports the following predefined styles t
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/floating-action-button/styles-cs3/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/floating-action-button/styles-cs3/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/floating-action-button/styles-cs3" %}
@@ -63,6 +66,9 @@ The content will behave the same , when the `enableHtmlSantiizer` is enabled. Si
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/floating-action-button/styles-cs4/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/floating-action-button/styles-cs4/styles.css %}
 {% endhighlight %}
 {% endtabs %}
           

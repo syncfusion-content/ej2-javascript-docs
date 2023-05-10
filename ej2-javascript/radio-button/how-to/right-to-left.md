@@ -24,6 +24,9 @@ The following example illustrates how to enable right-to-left support in RadioBu
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/radio-button/getting-started-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/radio-button/getting-started-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/radio-button/getting-started-cs1" %}
@@ -36,6 +39,9 @@ The following example illustrates how to enable right-to-left support in RadioBu
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/radio-button/getting-started-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/radio-button/getting-started-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -35,6 +35,9 @@ The Essential JS 2 Button has the following predefined styles that can be define
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/button-style-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button/button-style-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/button/button-style-cs1" %}
@@ -47,6 +50,9 @@ The Essential JS 2 Button has the following predefined styles that can be define
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/button-style-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button/button-style-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -85,6 +91,9 @@ The basic Button types are explained below.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/basic-types-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button/basic-types-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/button/basic-types-cs1" %}
@@ -97,6 +106,9 @@ The basic Button types are explained below.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/basic-types-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button/basic-types-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -124,6 +136,9 @@ A round Button is shaped like a circle. Usually, it contains an icon representin
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/button-type-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button/button-type-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/button/button-type-cs1" %}
@@ -136,6 +151,9 @@ A round Button is shaped like a circle. Usually, it contains an icon representin
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/button-type-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button/button-type-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -155,6 +173,9 @@ A toggle Button allows you to change between the two states. The Button is activ
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/toggle-button-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button/toggle-button-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/button/toggle-button-cs1" %}
@@ -167,6 +188,9 @@ A toggle Button allows you to change between the two states. The Button is activ
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/toggle-button-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button/toggle-button-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -188,6 +212,9 @@ The Button can have an icon to provide the visual representation of the action. 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/icon-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button/icon-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/button/icon-cs1" %}
@@ -200,6 +227,9 @@ The Button can have an icon to provide the visual representation of the action. 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/icon-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button/icon-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -221,6 +251,9 @@ In the following example, SVG image is added using the iconCss class `e-search-i
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/svg-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button/svg-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/button/svg-cs1" %}
@@ -233,6 +266,9 @@ In the following example, SVG image is added using the iconCss class `e-search-i
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/svg-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button/svg-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -254,6 +290,9 @@ The two types of Button sizes are default and small. To change the size of the d
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/size-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button/size-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/button/size-cs1" %}
@@ -266,6 +305,9 @@ The two types of Button sizes are default and small. To change the size of the d
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/size-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button/size-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

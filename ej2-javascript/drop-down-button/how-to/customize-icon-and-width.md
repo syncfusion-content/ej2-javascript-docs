@@ -24,6 +24,9 @@ The following UI can be achieved by setting [`iconPosition`](https://ej2.syncfus
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/custom-width-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/custom-width-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/drop-down-button/custom-width-cs1" %}
@@ -36,6 +39,9 @@ The following UI can be achieved by setting [`iconPosition`](https://ej2.syncfus
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/custom-width-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/custom-width-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

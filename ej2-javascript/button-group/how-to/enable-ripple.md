@@ -26,6 +26,9 @@ The following example illustrates how to enable ripple for ButtonGroup.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/ripple-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/ripple-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/button-group/ripple-cs1" %}
@@ -38,6 +41,9 @@ The following example illustrates how to enable ripple for ButtonGroup.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/ripple-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/ripple-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

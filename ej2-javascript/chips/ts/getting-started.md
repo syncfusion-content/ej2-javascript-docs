@@ -102,6 +102,9 @@ The following example shows a basic Chip control.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chips/getting-started-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/chips/getting-started-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/chips/getting-started-cs1" %}

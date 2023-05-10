@@ -26,6 +26,9 @@ RadioButton caption can be defined by using the [`label`](../api/radio-button#la
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/radio-button/label-and-size-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/radio-button/label-and-size-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/radio-button/label-and-size-cs1" %}
@@ -38,6 +41,9 @@ RadioButton caption can be defined by using the [`label`](../api/radio-button#la
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/radio-button/label-and-size-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/radio-button/label-and-size-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -57,6 +63,9 @@ The different RadioButton sizes available are default and small. To reduce the s
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/radio-button/label-and-size-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/radio-button/label-and-size-cs2/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/radio-button/label-and-size-cs2" %}
@@ -69,6 +78,9 @@ The different RadioButton sizes available are default and small. To reduce the s
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/radio-button/label-and-size-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/radio-button/label-and-size-cs2/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

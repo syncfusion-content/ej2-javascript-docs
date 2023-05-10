@@ -26,6 +26,9 @@ The CheckBox caption can be defined by using the [`label`](../api/check-box#labe
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/check-box/label-and-size-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/check-box/label-and-size-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/check-box/label-and-size-cs1" %}
@@ -38,6 +41,9 @@ The CheckBox caption can be defined by using the [`label`](../api/check-box#labe
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/check-box/label-and-size-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/check-box/label-and-size-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -57,6 +63,9 @@ The different CheckBox sizes available are default and small. To reduce the size
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/check-box/label-and-size-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/check-box/label-and-size-cs2/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/check-box/label-and-size-cs2" %}
@@ -69,6 +78,9 @@ The different CheckBox sizes available are default and small. To reduce the size
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/check-box/label-and-size-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/check-box/label-and-size-cs2/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

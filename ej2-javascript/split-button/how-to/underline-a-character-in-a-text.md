@@ -24,6 +24,9 @@ In the following example, `C` is underlined in the text `Copy`.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/split-button/underline-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/split-button/underline-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/split-button/underline-cs1" %}
@@ -36,6 +39,9 @@ In the following example, `C` is underlined in the text `Copy`.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/split-button/underline-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/split-button/underline-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

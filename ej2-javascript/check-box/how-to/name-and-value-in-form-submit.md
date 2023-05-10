@@ -24,6 +24,9 @@ In the following code snippet, Cricket and Hockey are in the checked state, Tenn
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/check-box/form-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/check-box/form-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/check-box/form-cs1" %}
@@ -36,6 +39,9 @@ In the following code snippet, Cricket and Hockey are in the checked state, Tenn
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/check-box/form-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/check-box/form-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

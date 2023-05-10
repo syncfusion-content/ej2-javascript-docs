@@ -76,6 +76,9 @@ Below example demonstrates a FAB with icon and text.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/floating-action-button/icons-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/floating-action-button/icons-cs2/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/floating-action-button/icons-cs2" %}

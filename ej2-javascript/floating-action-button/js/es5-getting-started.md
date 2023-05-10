@@ -166,6 +166,9 @@ The floating action button control triggers the `onclick` event when you click o
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/floating-action-button/events-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/floating-action-button/events-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/floating-action-button/events-cs1" %}

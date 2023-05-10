@@ -31,6 +31,9 @@ Input Chip holds information in compact form. It converts user input into chips.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chips/types-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/chips/types-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/chips/types-cs1" %}
@@ -43,6 +46,9 @@ Input Chip holds information in compact form. It converts user input into chips.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chips/types-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/chips/types-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -62,6 +68,9 @@ Choice Chip allows you to select a single chip from the set of ChipList/ChipColl
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chips/types-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/chips/types-cs2/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/chips/types-cs2" %}
@@ -74,6 +83,9 @@ Choice Chip allows you to select a single chip from the set of ChipList/ChipColl
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chips/types-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/chips/types-cs2/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -93,6 +105,9 @@ Filter Chip allows you to select a multiple chip from the set of ChipList/ChipCo
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chips/types-cs3/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/chips/types-cs3/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/chips/types-cs3" %}
@@ -105,6 +120,9 @@ Filter Chip allows you to select a multiple chip from the set of ChipList/ChipCo
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chips/types-cs3/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/chips/types-cs3/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -124,6 +142,9 @@ The Action Chip triggers the event like click or delete, which helps doing actio
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chips/types-cs4/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/chips/types-cs4/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/chips/types-cs4" %}
@@ -136,6 +157,9 @@ The Action Chip triggers the event like click or delete, which helps doing actio
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chips/types-cs4/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/chips/types-cs4/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -155,6 +179,9 @@ Deletable Chip allows you to delete a chip from ChipList/ChipCollection. It can 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chips/types-cs5/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/chips/types-cs5/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/chips/types-cs5" %}
@@ -167,6 +194,9 @@ Deletable Chip allows you to delete a chip from ChipList/ChipCollection. It can 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chips/types-cs5/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/chips/types-cs5/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -21,6 +21,9 @@ The following example illustrates how to create ButtonGroup with RTL support.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/rtl-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/rtl-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/button-group/rtl-cs1" %}
@@ -30,6 +33,9 @@ The following example illustrates how to create ButtonGroup with RTL support.
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/rtl-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/rtl-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

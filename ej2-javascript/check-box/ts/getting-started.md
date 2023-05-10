@@ -146,6 +146,9 @@ The following example shows a basic CheckBox component.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/check-box/getting-started-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/check-box/getting-started-cs2/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/check-box/getting-started-cs2" %}
@@ -169,6 +172,9 @@ The CheckBox indeterminate state can be set through [`indeterminate`](../api/che
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/check-box/state-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/check-box/state-cs2/styles.css %}
 {% endhighlight %}
 {% endtabs %}
           

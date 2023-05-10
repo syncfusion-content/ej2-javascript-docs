@@ -14,7 +14,7 @@ System.config({
         "moment": "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.js "
     },
     map: {
-        main: "app.ts",
+        main: "index.ts",
         typescript: "https://unpkg.com/typescript@2.2.2/lib/typescript.js",
         "@syncfusion/ej2-base": "syncfusion:ej2-base/dist/ej2-base.umd.min.js",
         "@syncfusion/ej2-data": "syncfusion:ej2-data/dist/ej2-data.umd.min.js",
@@ -28,7 +28,7 @@ System.config({
     }
 });
 
-System.import('app.ts').catch(console.error.bind(console)).then(function() {
+System.import('index.ts').catch(console.error.bind(console)).then(function() {
     document.getElementById('loader').style.display = "none";
     document.getElementById('container').style.visibility = "visible";
 });

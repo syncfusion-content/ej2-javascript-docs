@@ -29,6 +29,9 @@ The following shortcut keys are used to access the Chip control without any inte
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chips/accessibility-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/chips/accessibility-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/chips/accessibility-cs1" %}
@@ -41,6 +44,9 @@ The following shortcut keys are used to access the Chip control without any inte
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chips/accessibility-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/chips/accessibility-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

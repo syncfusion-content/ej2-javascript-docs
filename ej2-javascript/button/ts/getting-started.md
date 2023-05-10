@@ -147,6 +147,9 @@ The following example shows a basic Button component.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/getting-started-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button/getting-started-cs2/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/button/getting-started-cs2" %}
@@ -161,6 +164,9 @@ To change the default Button to flat Button, set the [`cssClass`](../api/button#
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/getting-started-cs3/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button/getting-started-cs3/styles.css %}
 {% endhighlight %}
 {% endtabs %}
           

@@ -24,6 +24,9 @@ The following example demonstrates Button in `disabled` state.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/howto-cs3/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button/howto-cs3/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/button/howto-cs3" %}
@@ -36,6 +39,9 @@ The following example demonstrates Button in `disabled` state.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/howto-cs3/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button/howto-cs3/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

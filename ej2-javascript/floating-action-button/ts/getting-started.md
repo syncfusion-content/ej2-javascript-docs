@@ -143,6 +143,9 @@ The following example shows a basic Floating Action Button control.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/floating-action-button/getting-started-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/floating-action-button/getting-started-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/floating-action-button/getting-started-cs1" %}
@@ -157,6 +160,9 @@ The floating action button control triggers the `onclick` event when you click o
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/floating-action-button/events-cs4/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/floating-action-button/events-cs4/styles.css %}
 {% endhighlight %}
 {% endtabs %}
           

@@ -20,6 +20,9 @@ You can use the [`modal`](../api/speed-dial#modal) property to set the Speed Dia
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speed-dial/modal-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/speed-dial/modal-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/speed-dial/modal-cs1" %}

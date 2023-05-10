@@ -24,6 +24,9 @@ The following example explains about how to achieve Repeat Button in mouse and t
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/repeat-button-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button/repeat-button-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/button/repeat-button-cs1" %}
@@ -36,6 +39,9 @@ The following example explains about how to achieve Repeat Button in mouse and t
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/repeat-button-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button/repeat-button-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

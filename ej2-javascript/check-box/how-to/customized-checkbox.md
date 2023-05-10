@@ -26,6 +26,9 @@ The background and border color of the CheckBox is customized through the custom
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/check-box/howto-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/check-box/howto-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/check-box/howto-cs1" %}
@@ -38,6 +41,9 @@ The background and border color of the CheckBox is customized through the custom
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/check-box/howto-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/check-box/howto-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -59,6 +65,9 @@ In the following example, to-do list is displayed with round checkbox by changin
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/check-box/customframe-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/check-box/customframe-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/check-box/customframe-cs1" %}
@@ -71,6 +80,9 @@ In the following example, to-do list is displayed with round checkbox by changin
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/check-box/customframe-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/check-box/customframe-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -92,6 +104,9 @@ In the following example, the check icon can be customized by changing check ico
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/check-box/custom-icon-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/check-box/custom-icon-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/check-box/custom-icon-cs1" %}
@@ -104,6 +119,9 @@ In the following example, the check icon can be customized by changing check ico
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/check-box/custom-icon-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/check-box/custom-icon-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

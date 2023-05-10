@@ -146,6 +146,9 @@ The following example shows a basic Switch component.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/switch/getting-started-cs3/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/switch/getting-started-cs3/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/switch/getting-started-cs3" %}
@@ -160,6 +163,9 @@ This section explains how to set [`onLabel`](../api/switch#onlabel) and [`offLab
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/switch/text-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/switch/text-cs2/styles.css %}
 {% endhighlight %}
 {% endtabs %}
           

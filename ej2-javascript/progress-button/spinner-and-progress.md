@@ -35,6 +35,9 @@ The following sample demonstrates the above functionalities of the spinner.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/progress-button/spinner-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/progress-button/spinner-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/progress-button/spinner-cs1" %}
@@ -47,6 +50,9 @@ The following sample demonstrates the above functionalities of the spinner.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/progress-button/spinner-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/progress-button/spinner-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -68,6 +74,9 @@ The [`content`](../api/progress-button#content) of the ProgressButton can be ani
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/progress-button/getting-started-cs4/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/progress-button/getting-started-cs4/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/progress-button/getting-started-cs4" %}
@@ -80,6 +89,9 @@ The [`content`](../api/progress-button#content) of the ProgressButton can be ani
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/progress-button/getting-started-cs4/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/progress-button/getting-started-cs4/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -99,6 +111,9 @@ The progress can be visualized at the specified interval by changing the [`step`
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/progress-button/getting-started-cs5/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/progress-button/getting-started-cs5/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/progress-button/getting-started-cs5" %}
@@ -111,6 +126,9 @@ The progress can be visualized at the specified interval by changing the [`step`
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/progress-button/getting-started-cs5/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/progress-button/getting-started-cs5/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -132,6 +150,9 @@ The progress can be changed dynamically by modifying the [`percent`](../api/prog
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/progress-button/getting-started-cs6/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/progress-button/getting-started-cs6/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/progress-button/getting-started-cs6" %}
@@ -144,6 +165,9 @@ The progress can be changed dynamically by modifying the [`percent`](../api/prog
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/progress-button/getting-started-cs6/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/progress-button/getting-started-cs6/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -165,6 +189,9 @@ You can pause and resume the progress using the [`stop`](../api/progress-button#
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/progress-button/getting-started-cs7/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/progress-button/getting-started-cs7/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/progress-button/getting-started-cs7" %}
@@ -177,6 +204,9 @@ You can pause and resume the progress using the [`stop`](../api/progress-button#
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/progress-button/getting-started-cs7/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/progress-button/getting-started-cs7/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

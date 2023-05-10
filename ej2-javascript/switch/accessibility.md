@@ -44,6 +44,9 @@ When the switch has focus, pressing the Space key changes the state of the switc
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/switch/state-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/switch/state-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/switch/state-cs1" %}
@@ -56,6 +59,9 @@ When the switch has focus, pressing the Space key changes the state of the switc
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/switch/state-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/switch/state-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

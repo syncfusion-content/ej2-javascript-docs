@@ -31,6 +31,9 @@ The position values of Speed Dial are as follows:
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speed-dial/linear-cs4/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/speed-dial/linear-cs4/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/speed-dial/linear-cs4" %}
@@ -75,6 +78,9 @@ Below example demonstrates open/close action items on button click.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speed-dial/positions-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/speed-dial/positions-cs2/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/speed-dial/positions-cs2" %}
@@ -89,6 +95,9 @@ You can refresh the position of the Speed Dial using [`refreshPosition`](../api/
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speed-dial/refresh-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/speed-dial/refresh-cs2/styles.css %}
 {% endhighlight %}
 {% endtabs %}
           

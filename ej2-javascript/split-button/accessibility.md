@@ -69,6 +69,9 @@ Opens the popup.</td></tr>
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/split-button/accessibility-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/split-button/accessibility-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/split-button/accessibility-cs1" %}
@@ -81,6 +84,9 @@ Opens the popup.</td></tr>
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/split-button/accessibility-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/split-button/accessibility-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

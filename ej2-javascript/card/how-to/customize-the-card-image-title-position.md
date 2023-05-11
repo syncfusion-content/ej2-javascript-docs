@@ -19,6 +19,9 @@ Card Image titles are placed as always Bottom-Left Corner only, You can manually
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/card/card-mg-title-pos-cs1/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/card/card-mg-title-pos-cs1/index.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/card/card-mg-title-pos-cs1" %}
@@ -28,6 +31,9 @@ Card Image titles are placed as always Bottom-Left Corner only, You can manually
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/card/card-mg-title-pos-cs1/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/card/card-mg-title-pos-cs1/index.js %}
 {% endhighlight %}
 {% endtabs %}
 

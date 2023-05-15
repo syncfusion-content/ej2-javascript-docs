@@ -26,6 +26,9 @@ In the following example, validated image files using images/*. You are able to 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/validate-image-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/validate-image-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/validate-image-cs1" %}
@@ -38,6 +41,9 @@ In the following example, validated image files using images/*. You are able to 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/validate-image-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/validate-image-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

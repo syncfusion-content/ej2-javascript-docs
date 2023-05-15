@@ -22,6 +22,9 @@ You can make the TextBox as `read-only` by setting the `readonly` attribute to t
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/getting-started-html-cs3/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/getting-started-html-cs3/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/textbox/getting-started-html-cs3" %}
@@ -34,6 +37,9 @@ You can make the TextBox as `read-only` by setting the `readonly` attribute to t
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/getting-started-html-cs3/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/getting-started-html-cs3/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

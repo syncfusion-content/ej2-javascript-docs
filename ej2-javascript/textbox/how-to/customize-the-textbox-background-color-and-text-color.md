@@ -24,6 +24,9 @@ You can customize the textbox styles such as background-color, text-color and bo
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/textbox-customize-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/textbox-customize-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/textbox/textbox-customize-cs1" %}
@@ -36,6 +39,9 @@ You can customize the textbox styles such as background-color, text-color and bo
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/textbox-customize-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/textbox-customize-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -48,6 +48,9 @@ let slider = new Slider({
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/default-limit-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/default-limit-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/slider/default-limit-cs1" %}
@@ -76,6 +79,9 @@ let slider = new Slider({
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/range-limit-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/range-limit-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/slider/range-limit-cs1" %}
@@ -102,6 +108,9 @@ let slider = new Slider({
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/handle-lock-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/handle-lock-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
           

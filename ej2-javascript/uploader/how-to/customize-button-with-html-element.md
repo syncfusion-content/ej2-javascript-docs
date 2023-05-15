@@ -22,6 +22,9 @@ The uploader component allows you to customize the action buttons by using [butt
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/buttons-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/buttons-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/buttons-cs1" %}
@@ -34,6 +37,9 @@ The uploader component allows you to customize the action buttons by using [butt
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/buttons-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/buttons-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

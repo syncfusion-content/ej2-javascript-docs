@@ -22,6 +22,9 @@ The Signature control integrates with the toolbar and the interaction performed 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/signature/toolbar-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/signature/toolbar-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/signature/toolbar-cs1" %}
@@ -34,6 +37,9 @@ The Signature control integrates with the toolbar and the interaction performed 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/signature/toolbar-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/signature/toolbar-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -22,6 +22,9 @@ The Slider displays the tooltip to indicate the current value by clicking the Sl
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/tooltip-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/tooltip-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/slider/tooltip-cs1" %}
@@ -34,6 +37,9 @@ The Slider displays the tooltip to indicate the current value by clicking the Sl
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/tooltip-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/tooltip-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -55,6 +61,9 @@ The Slider value can be changed by using the Increase and Decrease buttons. In R
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/buttons-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/buttons-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/slider/buttons-cs1" %}
@@ -67,6 +76,9 @@ The Slider value can be changed by using the Increase and Decrease buttons. In R
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/buttons-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/buttons-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -26,6 +26,9 @@ Slider appearance can be customized via CSS. By overriding the slider CSS classe
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/limit-customization-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/limit-customization-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/slider/limit-customization-cs1" %}

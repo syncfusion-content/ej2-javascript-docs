@@ -23,6 +23,9 @@ File object contains the file size in bytes only. You can convert the size to st
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/check-file-size-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/check-file-size-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/check-file-size-cs1" %}
@@ -35,6 +38,9 @@ File object contains the file size in bytes only. You can convert the size to st
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/check-file-size-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/check-file-size-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

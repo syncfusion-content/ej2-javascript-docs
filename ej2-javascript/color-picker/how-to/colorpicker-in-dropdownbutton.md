@@ -24,6 +24,9 @@ In the below sample, the color picker is rendered as inline type by setting [`in
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/dropdownbtn-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/dropdownbtn-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/colorpicker/dropdownbtn-cs1" %}
@@ -36,6 +39,9 @@ In the below sample, the color picker is rendered as inline type by setting [`in
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/dropdownbtn-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/dropdownbtn-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

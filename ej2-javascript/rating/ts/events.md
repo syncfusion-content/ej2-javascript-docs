@@ -110,6 +110,9 @@ Below example demonstrates the valueChanged event of the Rating control.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/events-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/events-cs2/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/rating/events-cs2" %}

@@ -26,6 +26,9 @@ The uploader component allows you to upload the files using the select or drop f
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/auto-upload-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/auto-upload-cs2/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/auto-upload-cs2" %}
@@ -38,6 +41,9 @@ The uploader component allows you to upload the files using the select or drop f
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/auto-upload-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/auto-upload-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -85,6 +91,9 @@ The uploader component allows you to upload all files in the folders to server b
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/directory-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/directory-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/directory-cs1" %}
@@ -97,6 +106,9 @@ The uploader component allows you to upload all files in the folders to server b
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/directory-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/directory-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -158,6 +170,9 @@ The uploader component allows you to set external target element as drop area us
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/drop-area-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/drop-area-cs2/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/drop-area-cs2" %}
@@ -170,6 +185,9 @@ The uploader component allows you to set external target element as drop area us
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/drop-area-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/drop-area-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -189,6 +207,9 @@ You can customize the appearance of drop area by overriding the default drop are
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/customize-drop-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/customize-drop-cs2/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/customize-drop-cs2" %}
@@ -201,6 +222,9 @@ You can customize the appearance of drop area by overriding the default drop are
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/customize-drop-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/customize-drop-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

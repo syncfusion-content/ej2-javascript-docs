@@ -48,6 +48,9 @@ The below table shows shortcut keys and its corresponding usage.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/numeric-textbox/getting-started-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/numeric-textbox/getting-started-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/numeric-textbox/getting-started-cs1" %}
@@ -60,6 +63,9 @@ The below table shows shortcut keys and its corresponding usage.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/numeric-textbox/getting-started-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/numeric-textbox/getting-started-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

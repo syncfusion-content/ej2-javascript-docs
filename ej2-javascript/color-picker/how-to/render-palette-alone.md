@@ -24,6 +24,9 @@ In the following sample, the [`showButtons`](../../api/color-picker#showbuttons)
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/palette-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/palette-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/colorpicker/palette-cs1" %}
@@ -36,6 +39,9 @@ In the following sample, the [`showButtons`](../../api/color-picker#showbuttons)
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/palette-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/palette-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

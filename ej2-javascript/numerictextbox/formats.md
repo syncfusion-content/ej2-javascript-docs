@@ -26,6 +26,9 @@ The below example demonstrates percentage and currency formats.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/numeric-textbox/standard-format-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/numeric-textbox/standard-format-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/numeric-textbox/standard-format-cs1" %}
@@ -42,6 +45,9 @@ The below examples demonstrate format the value by using currency format string 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/numeric-textbox/custom-format-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/numeric-textbox/custom-format-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
           

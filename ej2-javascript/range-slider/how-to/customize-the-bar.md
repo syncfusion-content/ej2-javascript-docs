@@ -52,6 +52,9 @@ change: (args: SliderChangeEventArgs) => {
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/bar-customization-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/bar-customization-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/slider/bar-customization-cs1" %}
@@ -64,6 +67,9 @@ change: (args: SliderChangeEventArgs) => {
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/bar-customization-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/bar-customization-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

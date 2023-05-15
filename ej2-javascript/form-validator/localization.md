@@ -47,6 +47,9 @@ The following example demonstrates the FormValidator in `Arabic` culture with er
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/form-validator/form-validator5-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/form-validator/form-validator5-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/form-validator/form-validator5-cs1" %}
@@ -59,6 +62,9 @@ The following example demonstrates the FormValidator in `Arabic` culture with er
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/form-validator/form-validator5-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/form-validator/form-validator5-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

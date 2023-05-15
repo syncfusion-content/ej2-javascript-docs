@@ -22,6 +22,9 @@ You can sort the selected files in uploader component by using the [selected](..
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/sorting-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/sorting-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/sorting-cs1" %}
@@ -34,6 +37,9 @@ You can sort the selected files in uploader component by using the [selected](..
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/sorting-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/sorting-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

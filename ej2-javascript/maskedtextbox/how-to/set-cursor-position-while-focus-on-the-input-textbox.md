@@ -30,6 +30,9 @@ Following is an example that demonstrates the above cases to set cursor position
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/maskedtextbox/cursor-position-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/maskedtextbox/cursor-position-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/maskedtextbox/cursor-position-cs1" %}
@@ -42,6 +45,9 @@ Following is an example that demonstrates the above cases to set cursor position
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/maskedtextbox/cursor-position-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/maskedtextbox/cursor-position-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

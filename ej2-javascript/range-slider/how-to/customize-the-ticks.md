@@ -37,6 +37,9 @@ Here, the color for rendered ticks has been applied through nth-child(`child_num
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/ticks-customization-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/ticks-customization-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/slider/ticks-customization-cs1" %}
@@ -49,6 +52,9 @@ Here, the color for rendered ticks has been applied through nth-child(`child_num
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/ticks-customization-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/ticks-customization-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

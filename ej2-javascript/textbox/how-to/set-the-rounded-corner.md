@@ -24,6 +24,9 @@ Render the TextBox with `rounded corner` by adding the `e-corner` class to the i
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/round-corner-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/round-corner-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/textbox/round-corner-cs1" %}
@@ -36,6 +39,9 @@ Render the TextBox with `rounded corner` by adding the `e-corner` class to the i
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/round-corner-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/round-corner-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

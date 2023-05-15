@@ -37,6 +37,9 @@ The following example demonstrates the Slider in `Deutsch` culture.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/localization-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/localization-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/slider/localization-cs1" %}
@@ -49,6 +52,9 @@ The following example demonstrates the Slider in `Deutsch` culture.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/localization-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/localization-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

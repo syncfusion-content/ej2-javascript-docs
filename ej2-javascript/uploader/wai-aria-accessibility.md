@@ -33,6 +33,9 @@ The following are the standard keys that works on uploader component:
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/keyboard-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/keyboard-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/keyboard-cs1" %}
@@ -45,6 +48,9 @@ The following are the standard keys that works on uploader component:
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/keyboard-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/keyboard-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -63,6 +63,9 @@ For the floating label enabled TextBox add the icon element as first or last ele
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/icon-floating-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/icon-floating-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/textbox/icon-floating-cs1" %}
@@ -75,6 +78,9 @@ For the floating label enabled TextBox add the icon element as first or last ele
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/icon-floating-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/icon-floating-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -98,6 +104,9 @@ You can add the clear button to the TextBox by enabling the [showClearButton](..
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/textbox-component-clearicon-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/textbox-component-clearicon-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/textbox/textbox-component-clearicon-cs1" %}
@@ -110,6 +119,9 @@ You can add the clear button to the TextBox by enabling the [showClearButton](..
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/textbox-component-clearicon-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/textbox-component-clearicon-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -135,6 +147,9 @@ Class Name        | Description
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/floating-label-02-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/floating-label-02-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/textbox/floating-label-02-cs1" %}
@@ -147,6 +162,9 @@ Class Name        | Description
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/floating-label-02-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/floating-label-02-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -168,6 +186,9 @@ Add the floating label support to the `multi-line input` by creating the floatin
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/getting-started-html-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/getting-started-html-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/textbox/getting-started-html-cs1" %}
@@ -180,6 +201,9 @@ Add the floating label support to the `multi-line input` by creating the floatin
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/getting-started-html-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/getting-started-html-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

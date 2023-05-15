@@ -22,6 +22,9 @@ Disable the TextBox by adding the `e-disabled` to the input parent element and s
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/getting-started-html-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/getting-started-html-cs2/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/textbox/getting-started-html-cs2" %}
@@ -34,6 +37,9 @@ Disable the TextBox by adding the `e-disabled` to the input parent element and s
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/getting-started-html-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/getting-started-html-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

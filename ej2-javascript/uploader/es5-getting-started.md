@@ -90,6 +90,9 @@ The Essential JS 2 JavaScript components can be initialized by using either of t
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/es5-getting-started-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/es5-getting-started-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/es5-getting-started-cs1" %}
@@ -99,6 +102,9 @@ The Essential JS 2 JavaScript components can be initialized by using either of t
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/es5-getting-started-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/es5-getting-started-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -149,6 +155,9 @@ Output will be as follows:
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/es5-getting-started-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/es5-getting-started-cs2/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/es5-getting-started-cs2" %}
@@ -158,6 +167,9 @@ Output will be as follows:
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/es5-getting-started-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/es5-getting-started-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -176,6 +188,9 @@ In the following sample, drop target is configured.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/es5-getting-started-cs3/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/es5-getting-started-cs3/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/es5-getting-started-cs3" %}
@@ -185,6 +200,9 @@ In the following sample, drop target is configured.
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/es5-getting-started-cs3/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/es5-getting-started-cs3/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -201,6 +219,9 @@ The Uploader component process the files to upload in Asynchronous mode by defau
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/es5-getting-started-cs4/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/es5-getting-started-cs4/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/es5-getting-started-cs4" %}
@@ -210,6 +231,9 @@ The Uploader component process the files to upload in Asynchronous mode by defau
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/es5-getting-started-cs4/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/es5-getting-started-cs4/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -226,6 +250,9 @@ You can handle the success and failure actions using the **success** and **failu
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/es5-getting-started-cs5/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/es5-getting-started-cs5/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/es5-getting-started-cs5" %}
@@ -235,6 +262,9 @@ You can handle the success and failure actions using the **success** and **failu
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/es5-getting-started-cs5/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/es5-getting-started-cs5/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

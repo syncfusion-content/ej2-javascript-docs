@@ -22,6 +22,9 @@ The Slider can be displayed, either in horizontal or vertical orientation. By de
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/orientation-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/orientation-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/slider/orientation-cs1" %}
@@ -34,6 +37,9 @@ The Slider can be displayed, either in horizontal or vertical orientation. By de
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/orientation-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/orientation-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

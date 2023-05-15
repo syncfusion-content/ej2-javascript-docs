@@ -26,6 +26,9 @@ You can achieve this behavior by overriding the corresponding uploader styles. O
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/hide-drop-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/hide-drop-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/hide-drop-cs1" %}
@@ -38,6 +41,9 @@ You can achieve this behavior by overriding the corresponding uploader styles. O
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/hide-drop-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/hide-drop-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

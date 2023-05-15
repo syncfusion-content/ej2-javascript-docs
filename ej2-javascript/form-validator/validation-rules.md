@@ -50,6 +50,9 @@ The custom validation method need to return the boolean value for validating an 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/form-validator/form-validator2-cs4/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/form-validator/form-validator2-cs4/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/form-validator/form-validator2-cs4" %}
@@ -62,6 +65,9 @@ The custom validation method need to return the boolean value for validating an 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/form-validator/form-validator2-cs4/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/form-validator/form-validator2-cs4/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -102,6 +108,9 @@ You can manually trigger validation by calling the [`validate`](../api/form-vali
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/form-validator/form-validator3-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/form-validator/form-validator3-cs2/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/form-validator/form-validator3-cs2" %}
@@ -114,6 +123,9 @@ You can manually trigger validation by calling the [`validate`](../api/form-vali
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/form-validator/form-validator3-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/form-validator/form-validator3-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -152,6 +164,9 @@ specified rules, it is considered as valid; if not, it is considered as invalid.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/form-validator/html5-validation-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/form-validator/html5-validation-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/form-validator/html5-validation-cs1" %}
@@ -164,6 +179,9 @@ specified rules, it is considered as valid; if not, it is considered as invalid.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/form-validator/html5-validation-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/form-validator/html5-validation-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

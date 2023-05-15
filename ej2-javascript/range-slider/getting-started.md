@@ -37,7 +37,7 @@ cd quickstart
 npm install
 ```
 
-> The [project](https://github.com/syncfusion/ej2-quickstart.git) is preconfigured with the common settings (`src/styles/styles.css`, `system.config.js`) to start with all Essential JS 2 controls.
+> The [project](https://github.com/syncfusion/ej2-quickstart.git) is preconfigured with the common settings (`src/styles/index.css`, `system.config.js`) to start with all Essential JS 2 controls.
 
 ## Adding Slider to the project
 
@@ -59,7 +59,7 @@ Add the div element with the id attribute `#slider` inside the body tag in your 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 
     <!--style reference from app-->
-    <link href="/styles/styles.css" rel="stylesheet" />
+    <link href="/styles/index.css" rel="stylesheet" />
 
     <!--system js reference and configuration-->
     <script src="node_modules/systemjs/dist/system.src.js" type="text/javascript"></script>
@@ -120,6 +120,9 @@ npm start
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/getting-started-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/getting-started-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/slider/getting-started-cs1" %}
@@ -129,6 +132,9 @@ npm start
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/getting-started-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/getting-started-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -156,6 +162,9 @@ The types of Slider are as follows:
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/types-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/types-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/slider/types-cs1" %}
@@ -168,6 +177,9 @@ The types of Slider are as follows:
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/types-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/types-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -186,6 +198,9 @@ The Slider can be displayed, either in horizontal or vertical orientation. By de
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/getting-started-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/getting-started-cs2/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/slider/getting-started-cs2" %}
@@ -195,6 +210,9 @@ The Slider can be displayed, either in horizontal or vertical orientation. By de
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/getting-started-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/getting-started-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -211,6 +229,9 @@ The Slider displays the tooltip to indicate the current value by clicking the Sl
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/getting-started-cs3/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/getting-started-cs3/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/slider/getting-started-cs3" %}
@@ -220,6 +241,9 @@ The Slider displays the tooltip to indicate the current value by clicking the Sl
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/getting-started-cs3/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/getting-started-cs3/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -238,6 +262,9 @@ The Slider value can be changed by using the Increase and Decrease buttons. In R
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/getting-started-cs4/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/getting-started-cs4/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/slider/getting-started-cs4" %}
@@ -247,6 +274,9 @@ The Slider value can be changed by using the Increase and Decrease buttons. In R
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/getting-started-cs4/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/getting-started-cs4/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

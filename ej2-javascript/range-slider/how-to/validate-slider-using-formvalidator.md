@@ -102,6 +102,9 @@ The `FormValidator` has following default validation rules, which are used to va
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/form-validation-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/form-validation-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/slider/form-validation-cs1" %}
@@ -114,6 +117,9 @@ The `FormValidator` has following default validation rules, which are used to va
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/form-validation-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/form-validation-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

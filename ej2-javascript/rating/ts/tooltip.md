@@ -20,6 +20,9 @@ The rating control supports tooltip to show additional information in rating ite
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/tooltip-cs4/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/tooltip-cs4/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/rating/tooltip-cs4" %}
@@ -34,6 +37,9 @@ You can use the [`tooltipTemplate`](../api/rating#tooltiptemplate) tag directive
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/tooltip-cs5/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/tooltip-cs5/styles.css %}
 {% endhighlight %}
 {% endtabs %}
           
@@ -51,6 +57,9 @@ You can customize the appearance of the tooltips using the `cssClass` property o
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/tooltip-cs6/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/tooltip-cs6/styles.css %}
 {% endhighlight %}
 {% endtabs %}
           

@@ -20,6 +20,9 @@ The rating control allows users to rate something using a visual scale, and the 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/selection-cs5/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/selection-cs5/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/rating/selection-cs5" %}
@@ -34,6 +37,9 @@ You can use the [`min`](../api/rating#min) property of the rating control to set
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/selection-cs6/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/selection-cs6/styles.css %}
 {% endhighlight %}
 {% endtabs %}
           
@@ -50,6 +56,9 @@ You can use the [`enableSingleSelection`](../api/rating#enablesingleselection) p
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/selection-cs7/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/selection-cs7/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/rating/selection-cs7" %}
@@ -64,6 +73,9 @@ You can reset the rating value to its default by using the [`allowReset`](../api
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/selection-cs8/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/selection-cs8/styles.css %}
 {% endhighlight %}
 {% endtabs %}
           

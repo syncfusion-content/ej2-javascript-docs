@@ -38,11 +38,11 @@ cd quickstart
 npm install
 ```
 
-> The [project](https://github.com/syncfusion/ej2-quickstart.git) is preconfigured with the common settings (`src/styles/styles.css`, `system.config.js`) to start with all Essential JS 2 controls.
+> The [project](https://github.com/syncfusion/ej2-quickstart.git) is preconfigured with the common settings (`src/styles/index.css`, `system.config.js`) to start with all Essential JS 2 controls.
 
 ## Adding CSS reference
 
-Combined CSS files are available in the Essential JS 2 package root folder. This can be referenced in your `[src/styles/styles.css]` using the following code.
+Combined CSS files are available in the Essential JS 2 package root folder. This can be referenced in your `[src/styles/index.css]` using the following code.
 
 ```
 @import '../../node_modules/@syncfusion/ej2-base/styles/material.css';
@@ -69,7 +69,7 @@ Add the div element with the id attribute `#slider` inside the body tag in your 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 
     <!--style reference from app-->
-    <link href="/styles/styles.css" rel="stylesheet" />
+    <link href="/styles/index.css" rel="stylesheet" />
 
     <!--system js reference and configuration-->
     <script src="node_modules/systemjs/dist/system.src.js" type="text/javascript"></script>
@@ -124,6 +124,9 @@ npm start
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/getting-started-cs5/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/getting-started-cs5/index.css %}
 {% endhighlight %}
 {% endtabs %}
           

@@ -28,6 +28,9 @@ For example, you can display file type icon along with default UI elements.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/custom-template-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/custom-template-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/custom-template-cs1" %}
@@ -40,6 +43,9 @@ For example, you can display file type icon along with default UI elements.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/custom-template-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/custom-template-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -65,6 +71,9 @@ Refer to the following code sample.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/custom-template-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/custom-template-cs2/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/custom-template-cs2" %}
@@ -77,6 +86,9 @@ Refer to the following code sample.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/custom-template-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/custom-template-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

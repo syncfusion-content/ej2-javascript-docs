@@ -40,6 +40,9 @@ You can change the floating label color of the TextBox for both `success` and `w
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/validation-state-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/validation-state-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/textbox/validation-state-cs1" %}
@@ -52,6 +55,9 @@ You can change the floating label color of the TextBox for both `success` and `w
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/validation-state-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/validation-state-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

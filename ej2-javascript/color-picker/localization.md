@@ -38,6 +38,9 @@ The below example demonstrates the ColorPicker in `Deutsch` culture.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/how-to-cs3/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/how-to-cs3/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/colorpicker/how-to-cs3" %}
@@ -50,6 +53,9 @@ The below example demonstrates the ColorPicker in `Deutsch` culture.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/how-to-cs3/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/how-to-cs3/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -71,6 +77,9 @@ The following example illustrates how to enable right-to-left support in ColorPi
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/rtl-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/rtl-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/colorpicker/rtl-cs1" %}
@@ -83,6 +92,9 @@ The following example illustrates how to enable right-to-left support in ColorPi
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/rtl-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/rtl-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

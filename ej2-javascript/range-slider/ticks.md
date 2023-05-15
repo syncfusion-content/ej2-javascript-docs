@@ -22,6 +22,9 @@ The Ticks in Slider supports you to easily identify the current value/values of 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/ticks-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/ticks-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/slider/ticks-cs1" %}
@@ -34,6 +37,9 @@ The Ticks in Slider supports you to easily identify the current value/values of 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/ticks-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/ticks-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -53,6 +59,9 @@ When the Slider is moved, it increases/decreases the value based on the step val
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/step-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/step-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/slider/step-cs1" %}
@@ -65,6 +74,9 @@ When the Slider is moved, it increases/decreases the value based on the step val
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/step-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/step-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -84,6 +96,9 @@ Enables the minimum/starting and maximum/ending value of the Slider, by using th
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/min-max-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/min-max-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/slider/min-max-cs1" %}
@@ -96,6 +111,9 @@ Enables the minimum/starting and maximum/ending value of the Slider, by using th
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/min-max-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/min-max-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

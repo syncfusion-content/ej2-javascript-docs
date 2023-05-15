@@ -138,6 +138,9 @@ Output will be as follows:
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/icon-samples-cs3/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/icon-samples-cs3/index.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/textbox/icon-samples-cs3" %}
@@ -154,6 +157,9 @@ You can create the floating label TextBox by using the [floatLabelType](../api/t
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/textbox-component-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/textbox-component-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
           

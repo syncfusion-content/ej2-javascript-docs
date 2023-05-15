@@ -22,6 +22,9 @@ By default, the value of the NumericTextBox sets to null. In some applications, 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/numeric-textbox/nullable-input-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/numeric-textbox/nullable-input-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/numeric-textbox/nullable-input-cs1" %}
@@ -34,6 +37,9 @@ By default, the value of the NumericTextBox sets to null. In some applications, 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/numeric-textbox/nullable-input-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/numeric-textbox/nullable-input-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

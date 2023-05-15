@@ -26,6 +26,9 @@ In the following sample, it will render the `Palette` at initial load.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/palette-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/palette-cs2/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/colorpicker/palette-cs2" %}
@@ -38,6 +41,9 @@ In the following sample, it will render the `Palette` at initial load.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/palette-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/palette-cs2/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -59,6 +65,9 @@ In the following sample, the color value sets as `four` digit hex code, the last
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/value-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/value-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/colorpicker/value-cs1" %}
@@ -71,6 +80,9 @@ In the following sample, the color value sets as `four` digit hex code, the last
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/value-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/value-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

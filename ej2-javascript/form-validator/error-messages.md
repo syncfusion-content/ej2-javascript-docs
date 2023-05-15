@@ -44,6 +44,9 @@ The default error message for a rule can be customizable by defining it along wi
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/form-validator/form-validator2-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/form-validator/form-validator2-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/form-validator/form-validator2-cs1" %}
@@ -56,6 +59,9 @@ The default error message for a rule can be customizable by defining it along wi
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/form-validator/form-validator2-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/form-validator/form-validator2-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -75,6 +81,9 @@ The `FormValidator` has an event [`customPlacement`](../api/form-validator#custo
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/form-validator/form-validator4-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/form-validator/form-validator4-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/form-validator/form-validator4-cs1" %}
@@ -87,6 +96,9 @@ The `FormValidator` has an event [`customPlacement`](../api/form-validator#custo
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/form-validator/form-validator4-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/form-validator/form-validator4-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -24,6 +24,9 @@ The [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material) for E
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/textbox-cssclass-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/textbox-cssclass-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/textbox/textbox-cssclass-cs1" %}
@@ -36,6 +39,9 @@ The [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material) for E
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/textbox-cssclass-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/textbox-cssclass-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -55,6 +61,9 @@ The Filled and Outline modes can be enabled in the Textbox component by adding t
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/filled-outlined-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/filled-outlined-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/textbox/filled-outlined-cs1" %}
@@ -67,6 +76,9 @@ The Filled and Outline modes can be enabled in the Textbox component by adding t
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/filled-outlined-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/filled-outlined-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

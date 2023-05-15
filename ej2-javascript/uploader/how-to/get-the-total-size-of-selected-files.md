@@ -22,6 +22,9 @@ You can get the total size of selected files before uploading it to the designat
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/file-size-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/file-size-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/file-size-cs1" %}
@@ -34,6 +37,9 @@ You can get the total size of selected files before uploading it to the designat
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/file-size-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/file-size-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

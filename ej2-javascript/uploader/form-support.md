@@ -28,6 +28,9 @@ The selected or dropped files are received as a collection in form action when t
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/form-support-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/form-support-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/form-support-cs1" %}
@@ -40,6 +43,9 @@ The selected or dropped files are received as a collection in form action when t
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/form-support-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/form-support-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

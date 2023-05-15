@@ -151,6 +151,9 @@ The following example shows a default ColorPicker component.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/getting-started/default-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/getting-started/default-cs2/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/colorpicker/getting-started/default-cs2" %}
@@ -167,6 +170,9 @@ The following sample shows the inline type rendering of ColorPicker.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/getting-started/inline-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/getting-started/inline-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
           

@@ -22,6 +22,9 @@ The TextBox supports three types of validation styles namely `error`, `warning`,
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/icon-samples-cs4/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/icon-samples-cs4/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/textbox/icon-samples-cs4" %}
@@ -34,6 +37,9 @@ The TextBox supports three types of validation styles namely `error`, `warning`,
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/icon-samples-cs4/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/icon-samples-cs4/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -53,6 +59,9 @@ You can add a mandatory `asterisk(*)` to placeholder and float label using <b>.e
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/asterisk-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/asterisk-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/textbox/asterisk-cs1" %}
@@ -65,6 +74,9 @@ You can add a mandatory `asterisk(*)` to placeholder and float label using <b>.e
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/asterisk-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/asterisk-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

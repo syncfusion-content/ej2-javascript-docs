@@ -22,6 +22,9 @@ You can customize the uploader component using confirm dialog before removing th
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/confirm-dialog-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/confirm-dialog-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/confirm-dialog-cs1" %}
@@ -34,6 +37,9 @@ You can customize the uploader component using confirm dialog before removing th
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/confirm-dialog-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/confirm-dialog-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

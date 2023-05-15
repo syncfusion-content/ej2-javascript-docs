@@ -20,6 +20,9 @@ You can use the [`showLabel`](../api/rating#showlabel) property to display a lab
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/labels-cs3/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/labels-cs3/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/rating/labels-cs3" %}
@@ -42,6 +45,9 @@ The following label positions are supported:
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/label-positions-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/label-positions-cs2/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/rating/label-positions-cs2" %}
@@ -56,6 +62,9 @@ You can use the [`labelTemplate`](../api/rating#labeltemplate) tag directive to 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/labels-cs4/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/labels-cs4/styles.css %}
 {% endhighlight %}
 {% endtabs %}
           

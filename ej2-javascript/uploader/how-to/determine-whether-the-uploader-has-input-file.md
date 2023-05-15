@@ -22,6 +22,9 @@ By setting the **required** attribute to uploader input element, you can validat
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/required-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/required-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/required-cs1" %}
@@ -34,6 +37,9 @@ By setting the **required** attribute to uploader input element, you can validat
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/required-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/required-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

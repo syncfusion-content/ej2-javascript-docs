@@ -36,6 +36,9 @@ In the following example, explains about multiple file upload settings.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/multiple-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/multiple-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/multiple-cs1" %}
@@ -48,6 +51,9 @@ In the following example, explains about multiple file upload settings.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/multiple-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/multiple-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -69,6 +75,9 @@ The following example explains about single file upload settings.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/single-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/single-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/single-cs1" %}
@@ -81,6 +90,9 @@ The following example explains about single file upload settings.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/single-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/single-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -106,6 +118,9 @@ You can cancel the upload process by setting the upload event argument **eventar
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/save-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/save-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/save-cs1" %}
@@ -118,6 +133,9 @@ You can cancel the upload process by setting the upload event argument **eventar
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/save-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/save-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -197,6 +215,9 @@ You can remove the files which is not uploaded locally by clicking the remove ic
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/remove-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/remove-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/remove-cs1" %}
@@ -209,6 +230,9 @@ You can remove the files which is not uploaded locally by clicking the remove ic
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/remove-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/remove-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -267,6 +291,9 @@ By default, the uploader processes the files to upload once the files are select
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/auto-upload-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/auto-upload-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/auto-upload-cs1" %}
@@ -279,6 +306,9 @@ By default, the uploader processes the files to upload once the files are select
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/auto-upload-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/auto-upload-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -298,6 +328,9 @@ By default, the uploader control process multiple files to upload simultaneously
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/sequential-upload-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/sequential-upload-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/sequential-upload-cs1" %}
@@ -310,6 +343,9 @@ By default, the uploader control process multiple files to upload simultaneously
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/sequential-upload-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/sequential-upload-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -333,6 +369,9 @@ The uploader component allows you to preload the list of files that are uploaded
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/preload-file-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/preload-file-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/preload-file-cs1" %}
@@ -345,6 +384,9 @@ The uploader component allows you to preload the list of files that are uploaded
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/preload-file-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/preload-file-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

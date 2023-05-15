@@ -22,6 +22,9 @@ The spin buttons allow you to increase or decrease the value with the predefined
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/numeric-textbox/getting-started-cs3/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/numeric-textbox/getting-started-cs3/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/numeric-textbox/getting-started-cs3" %}
@@ -34,6 +37,9 @@ The spin buttons allow you to increase or decrease the value with the predefined
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/numeric-textbox/getting-started-cs3/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/numeric-textbox/getting-started-cs3/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

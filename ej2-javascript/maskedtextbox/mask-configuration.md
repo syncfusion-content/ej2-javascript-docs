@@ -49,6 +49,9 @@ The following example demonstrates the usage of standard mask elements.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/maskedtextbox/standard-masks-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/maskedtextbox/standard-masks-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/maskedtextbox/standard-masks-cs1" %}
@@ -61,6 +64,9 @@ The following example demonstrates the usage of standard mask elements.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/maskedtextbox/standard-masks-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/maskedtextbox/standard-masks-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -86,6 +92,9 @@ In the following example, non-mask element `P` accepts the values `P, A, p, a`, 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/maskedtextbox/getting-started-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/maskedtextbox/getting-started-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/maskedtextbox/getting-started-cs1" %}
@@ -98,6 +107,9 @@ In the following example, non-mask element `P` accepts the values `P, A, p, a`, 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/maskedtextbox/getting-started-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/maskedtextbox/getting-started-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -119,6 +131,9 @@ In the following example, regular expression has been set for each input places.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/maskedtextbox/regularExpression-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/maskedtextbox/regularExpression-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/maskedtextbox/regularExpression-cs1" %}
@@ -131,6 +146,9 @@ In the following example, regular expression has been set for each input places.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/maskedtextbox/regularExpression-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/maskedtextbox/regularExpression-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -152,6 +170,9 @@ The following example demonstrates the MaskedTextBox with customized prompt char
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/maskedtextbox/getting-started-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/maskedtextbox/getting-started-cs2/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/maskedtextbox/getting-started-cs2" %}
@@ -164,6 +185,9 @@ The following example demonstrates the MaskedTextBox with customized prompt char
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/maskedtextbox/getting-started-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/maskedtextbox/getting-started-cs2/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

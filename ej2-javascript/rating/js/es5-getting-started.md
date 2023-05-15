@@ -155,6 +155,9 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/es5-getting-started-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/es5-getting-started-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/rating/es5-getting-started-cs1" %}
@@ -171,6 +174,9 @@ You can set the rating value by using the [`value`](../api/rating#value) propert
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/value-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/value-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
         

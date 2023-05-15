@@ -31,6 +31,9 @@ import {Input} from '@syncfusion/ej2-inputs';
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/utility-rendering-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/utility-rendering-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/textbox/utility-rendering-cs1" %}
@@ -43,6 +46,9 @@ import {Input} from '@syncfusion/ej2-inputs';
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/utility-rendering-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/utility-rendering-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

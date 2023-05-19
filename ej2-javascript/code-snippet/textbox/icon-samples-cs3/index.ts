@@ -38,13 +38,3 @@ for (let i = 0; i < inputIcon.length; i++) {
         }, 500);
     });
 }
-
-
-        <input class="e-input" type="text" placeholder="Enter Date" />
-        <div class="e-input-group">
-            <input class="e-input" name='input' type="text" placeholder="Enter Date"/>
-            <span class="e-input-group-icon e-input-popup-date"></span>
-        </div>
-
-
-

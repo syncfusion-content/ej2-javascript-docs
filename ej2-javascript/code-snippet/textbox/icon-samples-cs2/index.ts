@@ -41,39 +41,3 @@ for (let i = 0; i < inputIcon.length; i++) {
 
 
 
-      <h4> Normal Size </h4>
-
-      <div class="e-input-group">
-        <input class="e-input" type="text" placeholder="Enter Name" />
-      </div>
-
-      <div class="e-float-input">
-        <input type='text' required />
-        <span class="e-float-line"></span>
-        <label class="e-float-text">Enter Name</label>
-      </div>
-
-      <div class="e-input-group">
-        <input class="e-input" type="text" placeholder="Enter Date" />
-        <span class="e-input-group-icon e-input-popup-date"></span>
-      </div>
-
-      <h4> Small Size </h4>
-
-      <div class="e-input-group e-small">
-        <input class="e-input" type="text" placeholder="Enter Name" />
-      </div>
-
-      <div class="e-float-input e-small">
-        <input type='text' required />
-        <span class="e-float-line"></span>
-        <label class="e-float-text">Enter Name</label>
-      </div>
-
-      <div class="e-input-group e-small">
-        <input class="e-input" type="text" placeholder="Enter Date" />
-        <span class="e-input-group-icon e-input-popup-date"></span>
-      </div>
-
-
-

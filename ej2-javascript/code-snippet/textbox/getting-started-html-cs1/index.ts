@@ -23,16 +23,3 @@ for (let i = 0; i < inputElement.length; i++) {
         }
     });
 }
-
-
-
-        <textarea class="e-input"> Address </textarea>
-
-        <div class="e-float-input">
-            <textarea required></textarea>
-            <span class="e-float-line"></span>
-            <label class="e-float-text"> Address </label>
-        </div>
-
-
-

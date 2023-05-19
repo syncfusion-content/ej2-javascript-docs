@@ -38,20 +38,3 @@ for (let i = 0; i < inputIcon.length; i++) {
         }, 500);
     });
 }
-
-
-
-        <div class="e-input-group e-corner">
-            <input class="e-input" type="text" placeholder="Enter Date" />
-            <span class="e-input-group-icon e-input-popup-date"></span>
-        </div>
-
-        <div class="e-float-input e-input-group e-corner">
-            <input type='text' required />
-            <span class="e-float-line"> </span>
-            <label class="e-float-text">Enter Date </label>
-            <span class="e-input-group-icon e-input-popup-date"></span>
-        </div>
-
-
-

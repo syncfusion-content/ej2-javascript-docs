@@ -14,18 +14,3 @@ for (let i = 0; i < inputElement.length; i++) {
             this.parentNode.classList.remove('e-input-focus');
     });
 }
-
-
-        <label>Normal Input</label>
-            <div class="e-input-group">
-                <input class="e-input" type="text" placeholder="First Name" />
-            </div>
-        <label> Floating Input </label>
-            <div class="e-float-input">
-                <input type="text" required />
-                <span class="e-float-line"> </span>
-                <label class="e-float-text">Last Name</label>
-            </div>
-
-
-

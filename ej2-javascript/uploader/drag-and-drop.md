@@ -26,6 +26,9 @@ The uploader component allows you to set external target element as drop area us
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/drop-area-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/drop-area-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/drop-area-cs1" %}
@@ -38,6 +41,9 @@ The uploader component allows you to set external target element as drop area us
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/drop-area-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/drop-area-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -57,6 +63,9 @@ You can customize the appearance of drop area by overriding the default drop are
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/customize-drop-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/customize-drop-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/customize-drop-cs1" %}
@@ -69,6 +78,9 @@ You can customize the appearance of drop area by overriding the default drop are
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/customize-drop-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/customize-drop-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

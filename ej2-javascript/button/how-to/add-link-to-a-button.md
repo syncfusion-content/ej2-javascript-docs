@@ -17,12 +17,15 @@ In the following example, link is added in Button click by using `window.open()`
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/button/link-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/link-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button/link-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -36,6 +39,9 @@ In the following example, link is added in Button click by using `window.open()`
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/link-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button/link-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -24,6 +24,9 @@ The following example illustrates how to disable a radio button and the selected
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/radio-button/disabled-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/radio-button/disabled-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/radio-button/disabled-cs1" %}
@@ -36,6 +39,9 @@ The following example illustrates how to disable a radio button and the selected
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/radio-button/disabled-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/radio-button/disabled-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

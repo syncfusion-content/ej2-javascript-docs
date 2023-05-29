@@ -108,6 +108,9 @@ The below example shows the NumericTextBox.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/numeric-textbox/getting-started-cs4/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/numeric-textbox/getting-started-cs4/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/numeric-textbox/getting-started-cs4" %}
@@ -127,6 +130,9 @@ The below example demonstrates range validation.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/numeric-textbox/getting-started-cs5/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/numeric-textbox/getting-started-cs5/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/numeric-textbox/getting-started-cs5" %}
@@ -144,6 +150,9 @@ The below example demonstrates format the value by using currency format value `
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/numeric-textbox/getting-started-cs6/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/numeric-textbox/getting-started-cs6/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/numeric-textbox/getting-started-cs6" %}
@@ -160,6 +169,9 @@ You can restrict the number of decimals to be entered in the NumericTextBox by u
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/numeric-textbox/precision-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/numeric-textbox/precision-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
           

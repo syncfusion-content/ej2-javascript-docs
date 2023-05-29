@@ -25,6 +25,9 @@ The following example illustrates how to enable ripple effect for labels in Swit
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/switch/ripple-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/switch/ripple-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/switch/ripple-cs1" %}
@@ -37,6 +40,9 @@ The following example illustrates how to enable ripple effect for labels in Swit
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/switch/ripple-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/switch/ripple-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -125,6 +125,9 @@ The following example shows the MaskedTextBox with the mask element `0`.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/maskedtextbox/getting-started-cs3/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/maskedtextbox/getting-started-cs3/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/maskedtextbox/getting-started-cs3" %}

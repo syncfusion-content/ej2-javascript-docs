@@ -24,6 +24,9 @@ You can specify the number of rating items using the [`itemsCount`](../api/ratin
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/appearance-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/appearance-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/rating/appearance-cs1" %}
@@ -38,6 +41,9 @@ You can disable the rating control by using the [`disabled`](../api/rating#disab
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/appearance-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/appearance-cs2/styles.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -54,6 +60,9 @@ You can use the [`visible`](../api/rating#visible) property of the rating contro
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/visible-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/visible-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/rating/visible-cs1" %}
@@ -68,6 +77,9 @@ You can use the [`readOnly`](../api/rating#readonly) property of the rating cont
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/appearance-cs3/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/appearance-cs3/styles.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -88,6 +100,9 @@ You can change the rating icon border color in rating control, you can use the `
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/appearance-cs4/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/appearance-cs4/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/rating/appearance-cs4" %}
@@ -102,6 +117,9 @@ You can customize the fill colors of rated and un-rated icons in the rating cont
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/appearance-cs5/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/appearance-cs5/styles.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -120,6 +138,9 @@ You can change the space between the rating items in rating control, by using th
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/appearance-cs6/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/appearance-cs6/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/rating/appearance-cs6" %}
@@ -134,6 +155,9 @@ You can change the rating item icon in rating control, you can use the `cssClass
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/appearance-cs7/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/appearance-cs7/styles.css %}
 {% endhighlight %}
 {% endtabs %}
         

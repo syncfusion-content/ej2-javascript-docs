@@ -22,6 +22,9 @@ By default, trailing zeros disappear when the NumericTextBox gets focus. However
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/numeric-textbox/trailing-zeros-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/numeric-textbox/trailing-zeros-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/numeric-textbox/trailing-zeros-cs1" %}
@@ -34,6 +37,9 @@ By default, trailing zeros disappear when the NumericTextBox gets focus. However
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/numeric-textbox/trailing-zeros-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/numeric-textbox/trailing-zeros-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -27,6 +27,9 @@ You can also show reverse progress by adding custom class to the [`cssClass`](..
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/progress-button/custom-progress-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/progress-button/custom-progress-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/progress-button/custom-progress-cs1" %}
@@ -39,6 +42,9 @@ You can also show reverse progress by adding custom class to the [`cssClass`](..
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/progress-button/custom-progress-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/progress-button/custom-progress-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -22,6 +22,9 @@ This section explains about how to toggle between the switch states using [`togg
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/switch/text-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/switch/text-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/switch/text-cs1" %}
@@ -34,6 +37,9 @@ This section explains about how to toggle between the switch states using [`togg
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/switch/text-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/switch/text-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

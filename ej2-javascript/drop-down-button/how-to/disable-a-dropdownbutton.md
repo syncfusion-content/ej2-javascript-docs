@@ -22,6 +22,9 @@ DropdownButton component can be enabled/disabled by giving [`disabled`](../../ap
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/disabled-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/disabled-cs2/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/drop-down-button/disabled-cs2" %}
@@ -34,6 +37,9 @@ DropdownButton component can be enabled/disabled by giving [`disabled`](../../ap
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/disabled-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/disabled-cs2/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -45,6 +45,9 @@ The following are the list of keys and its values used in the uploader component
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/localization-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/localization-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/localization-cs1" %}
@@ -57,6 +60,9 @@ The following are the list of keys and its values used in the uploader component
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/localization-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/localization-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

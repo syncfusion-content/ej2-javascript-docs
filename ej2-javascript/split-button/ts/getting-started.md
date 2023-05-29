@@ -160,6 +160,9 @@ The following example shows a basic SplitButton component.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/split-button/getting-started-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/split-button/getting-started-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/split-button/getting-started-cs1" %}

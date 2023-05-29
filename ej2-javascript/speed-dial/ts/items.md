@@ -36,6 +36,9 @@ You can show icon only in SpeedDial items by setting [`iconCss`](../api/speed-di
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speed-dial/items-cs6/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/speed-dial/items-cs6/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/speed-dial/items-cs6" %}
@@ -50,6 +53,9 @@ You can show only text in Speed Dial items by setting [`text`](../api/speed-dial
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speed-dial/items-cs7/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/speed-dial/items-cs7/styles.css %}
 {% endhighlight %}
 {% endtabs %}
           
@@ -66,6 +72,9 @@ You can show icon along with text in Speed Dial items by setting [`iconCss`](../
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speed-dial/items-cs8/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/speed-dial/items-cs8/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/speed-dial/items-cs8" %}
@@ -80,6 +89,9 @@ You can disable Speed Dial items by setting [`disabled`](../api/speed-dial/speed
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speed-dial/items-cs9/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/speed-dial/items-cs9/styles.css %}
 {% endhighlight %}
 {% endtabs %}
           
@@ -97,6 +109,9 @@ Below example demonstrates the Speed Dial items with applied Zoom effect.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speed-dial/items-cs10/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/speed-dial/items-cs10/styles.css %}
 {% endhighlight %}
 {% endtabs %}
           

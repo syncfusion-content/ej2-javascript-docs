@@ -24,6 +24,9 @@ The date formatting can be achieved in `ticks` and `tooltip` using `renderingTic
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/date-format-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/date-format-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/slider/date-format-cs1" %}
@@ -36,6 +39,9 @@ The date formatting can be achieved in `ticks` and `tooltip` using `renderingTic
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/date-format-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/date-format-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -55,6 +61,9 @@ The time formatting can be achieved in the same manner as date formatting using 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/time-format-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/time-format-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/slider/time-format-cs1" %}
@@ -67,6 +76,9 @@ The time formatting can be achieved in the same manner as date formatting using 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/time-format-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/time-format-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -86,6 +98,9 @@ The numeric values can be formatted into different decimal digits or fixed numbe
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/how-to-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/how-to-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/slider/how-to-cs1" %}
@@ -98,6 +113,9 @@ The numeric values can be formatted into different decimal digits or fixed numbe
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/how-to-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/how-to-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

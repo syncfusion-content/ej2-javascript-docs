@@ -22,6 +22,9 @@ The [`FormValidator`](../api/form-validator) can be used to validate the form el
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/form-validator/form-validator1-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/form-validator/form-validator1-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/form-validator/form-validator1-cs1" %}
@@ -34,6 +37,9 @@ The [`FormValidator`](../api/form-validator) can be used to validate the form el
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/form-validator/form-validator1-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/form-validator/form-validator1-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -81,6 +87,9 @@ The custom validation method need to return the boolean value for validating an 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/form-validator/form-validator2-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/form-validator/form-validator2-cs2/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/form-validator/form-validator2-cs2" %}
@@ -93,6 +102,9 @@ The custom validation method need to return the boolean value for validating an 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/form-validator/form-validator2-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/form-validator/form-validator2-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -133,6 +145,9 @@ You can manually trigger validation by calling the [`validate`](../api/form-vali
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/form-validator/form-validator3-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/form-validator/form-validator3-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/form-validator/form-validator3-cs1" %}
@@ -145,6 +160,9 @@ You can manually trigger validation by calling the [`validate`](../api/form-vali
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/form-validator/form-validator3-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/form-validator/form-validator3-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -203,6 +221,9 @@ The default error message for a rule can be customizable by defining it along wi
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/form-validator/form-validator2-cs3/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/form-validator/form-validator2-cs3/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/form-validator/form-validator2-cs3" %}
@@ -215,6 +236,9 @@ The default error message for a rule can be customizable by defining it along wi
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/form-validator/form-validator2-cs3/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/form-validator/form-validator2-cs3/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -234,6 +258,9 @@ The `FormValidator` has an event [`customPlacement`](../api/form-validator#custo
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/form-validator/form-validator4-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/form-validator/form-validator4-cs2/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/form-validator/form-validator4-cs2" %}
@@ -246,6 +273,9 @@ The `FormValidator` has an event [`customPlacement`](../api/form-validator#custo
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/form-validator/form-validator4-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/form-validator/form-validator4-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

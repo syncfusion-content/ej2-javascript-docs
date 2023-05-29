@@ -22,6 +22,9 @@ You can hide the dropdown arrow from the DropDownButton by adding class `e-caret
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/hide-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/hide-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/drop-down-button/hide-cs1" %}
@@ -34,6 +37,9 @@ You can hide the dropdown arrow from the DropDownButton by adding class `e-caret
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/hide-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/hide-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

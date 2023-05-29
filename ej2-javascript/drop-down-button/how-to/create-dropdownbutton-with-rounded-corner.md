@@ -24,6 +24,9 @@ In the following example, `e-round-corner` class is defined with `5px` `border-r
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/rounded-drop-down-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/rounded-drop-down-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/drop-down-button/rounded-drop-down-cs1" %}
@@ -36,6 +39,9 @@ In the following example, `e-round-corner` class is defined with `5px` `border-r
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/rounded-drop-down-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/rounded-drop-down-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

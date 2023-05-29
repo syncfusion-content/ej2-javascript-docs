@@ -24,6 +24,9 @@ Refer to the following example to enable numeric keypad in MaskedTextBox.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/maskedtextbox/numeric-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/maskedtextbox/numeric-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/maskedtextbox/numeric-cs1" %}
@@ -36,6 +39,9 @@ Refer to the following example to enable numeric keypad in MaskedTextBox.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/maskedtextbox/numeric-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/maskedtextbox/numeric-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

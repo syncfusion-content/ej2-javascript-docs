@@ -22,6 +22,9 @@ ColorPicker can be rendered without control buttons (Apply/Cancel). In this case
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/how-to-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/how-to-cs2/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/colorpicker/how-to-cs2" %}
@@ -34,6 +37,9 @@ ColorPicker can be rendered without control buttons (Apply/Cancel). In this case
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/how-to-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/how-to-cs2/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

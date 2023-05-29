@@ -24,6 +24,9 @@ The following example illustrates how to set the disable state in SplitButton co
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/split-button/disabled-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/split-button/disabled-cs2/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/split-button/disabled-cs2" %}
@@ -36,6 +39,9 @@ The following example illustrates how to set the disable state in SplitButton co
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/split-button/disabled-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/split-button/disabled-cs2/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

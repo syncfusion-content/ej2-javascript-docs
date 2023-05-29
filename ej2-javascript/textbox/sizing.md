@@ -27,6 +27,9 @@ Property   | Description
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/icon-samples-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/icon-samples-cs2/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/textbox/icon-samples-cs2" %}
@@ -39,6 +42,9 @@ Property   | Description
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/icon-samples-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/icon-samples-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

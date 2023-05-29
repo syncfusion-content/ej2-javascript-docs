@@ -27,6 +27,9 @@ The following example illustrates how to disable the particular and the whole Bu
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/disable-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/disable-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/button-group/disable-cs1" %}
@@ -36,6 +39,9 @@ The following example illustrates how to disable the particular and the whole Bu
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/disable-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/disable-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

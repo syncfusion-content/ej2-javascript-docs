@@ -22,6 +22,9 @@ This section explains how to perform custom validation on the NumericTextBox usi
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/numeric-textbox/custom-validation-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/numeric-textbox/custom-validation-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/numeric-textbox/custom-validation-cs1" %}
@@ -34,6 +37,9 @@ This section explains how to perform custom validation on the NumericTextBox usi
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/numeric-textbox/custom-validation-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/numeric-textbox/custom-validation-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

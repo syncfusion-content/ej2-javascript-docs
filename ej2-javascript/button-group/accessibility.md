@@ -80,6 +80,9 @@ ButtonGroup provides built-in compliance with `WAI-ARIA` specifications. It help
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/accessibility-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/accessibility-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/button-group/accessibility-cs1" %}
@@ -89,6 +92,9 @@ ButtonGroup provides built-in compliance with `WAI-ARIA` specifications. It help
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/accessibility-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/accessibility-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

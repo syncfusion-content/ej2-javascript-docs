@@ -24,6 +24,9 @@ In the following example, Dialog will open while selecting `Update...` item.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/split-button/dialog-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/split-button/dialog-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/split-button/dialog-cs1" %}
@@ -36,6 +39,9 @@ In the following example, Dialog will open while selecting `Update...` item.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/split-button/dialog-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/split-button/dialog-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

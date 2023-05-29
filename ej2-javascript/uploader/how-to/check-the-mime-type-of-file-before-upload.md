@@ -22,6 +22,9 @@ By using the [uploading](../../api/uploader/#uploading) event, you can get the f
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/mime-type-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/mime-type-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/mime-type-cs1" %}
@@ -34,6 +37,9 @@ By using the [uploading](../../api/uploader/#uploading) event, you can get the f
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/mime-type-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/mime-type-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

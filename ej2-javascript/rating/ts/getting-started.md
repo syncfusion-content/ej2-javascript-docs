@@ -145,6 +145,9 @@ The following example shows a basic Rating control.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/getting-started-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/getting-started-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/rating/getting-started-cs1" %}
@@ -159,6 +162,9 @@ You can set the rating value by using the [`value`](../api/rating#value) propert
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/value-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/value-cs2/styles.css %}
 {% endhighlight %}
 {% endtabs %}
           

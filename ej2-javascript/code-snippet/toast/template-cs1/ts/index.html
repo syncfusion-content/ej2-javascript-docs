@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Essential JS 2 Toast</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Typescript Toolbar Controls" />
+    <meta name="author" content="Syncfusion" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/material.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+</head>
+
+<body>
+    <div id='loader'>LOADING....</div>
+    <div id='container'>
+      <div class='row'> <button class="e-btn" id="show_toast"> Show Toast</button> </div>
+      <div id="template_toast"> <div id='element'></div> </div>
+        
+        <br/><br/>
+        <div id='result'></div>
+    </div>
+    <script id="template_toast_ele" type="text/x-template">
+    <div id='template_toast' style="display: none">
+        <div class="horizontal-align">
+            <div class='toast-content'>
+                <div class='toast-title'>
+                    Weekend Alarm
+                </div>
+                <div class='toast-message'> With traffic, its likely to take 45 minutes to get to jenny's 24th Birthday Bash at Hillside Bar, 454 E.
+                    Olive Way by 10:00PM </div>
+            </div>
+        </div>
+        <img src="https://ej2.syncfusion.com/demos/src/toast/resource/map.jpg" width="100%" height="70%">
+    </div>
+</script>
+</body>
+
+</html>

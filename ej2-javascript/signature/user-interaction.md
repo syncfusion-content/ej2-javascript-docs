@@ -49,6 +49,9 @@ The following sample explains about user interactions available in signature.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/signature/user-interaction-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/signature/user-interaction-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/signature/user-interaction-cs1" %}
@@ -61,6 +64,9 @@ The following sample explains about user interactions available in signature.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/signature/user-interaction-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/signature/user-interaction-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

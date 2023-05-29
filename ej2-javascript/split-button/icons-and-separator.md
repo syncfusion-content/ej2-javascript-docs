@@ -26,6 +26,9 @@ In the following example, the SplitButton with default iconPosition and `iconPos
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/split-button/icon-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/split-button/icon-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/split-button/icon-cs1" %}
@@ -38,6 +41,9 @@ In the following example, the SplitButton with default iconPosition and `iconPos
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/split-button/icon-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/split-button/icon-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -62,6 +68,9 @@ The following example illustrates how to provide vertical support in SplitButton
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/split-button/vertical-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/split-button/vertical-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/split-button/vertical-cs1" %}
@@ -74,6 +83,9 @@ The following example illustrates how to provide vertical support in SplitButton
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/split-button/vertical-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/split-button/vertical-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -97,6 +109,9 @@ The following example illustrates how to enable separator support in SplitButton
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/split-button/seperator-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/split-button/seperator-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/split-button/seperator-cs1" %}
@@ -109,6 +124,9 @@ The following example illustrates how to enable separator support in SplitButton
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/split-button/seperator-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/split-button/seperator-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

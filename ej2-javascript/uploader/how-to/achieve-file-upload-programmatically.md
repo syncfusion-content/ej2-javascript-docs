@@ -26,6 +26,9 @@ The upload method behaves differently based on its arguments.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/dynamic-upload-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/dynamic-upload-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/dynamic-upload-cs1" %}
@@ -38,6 +41,9 @@ The upload method behaves differently based on its arguments.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/dynamic-upload-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/dynamic-upload-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

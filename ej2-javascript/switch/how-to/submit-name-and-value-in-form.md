@@ -24,6 +24,9 @@ In the following code snippet, USB and Wi-Fi in the [`checked`](../../api/switch
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/switch/form-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/switch/form-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/switch/form-cs1" %}
@@ -36,6 +39,9 @@ In the following code snippet, USB and Wi-Fi in the [`checked`](../../api/switch
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/switch/form-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/switch/form-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

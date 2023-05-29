@@ -1,0 +1,25 @@
+#loader {
+    color: #008cff;
+    height: 40px;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 30%;
+}
+
+#container {
+  width: 20%;
+}
+#elementToastTime {
+  text-align: center;
+}
+
+#elementToastTime img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+#elementToastTime .e-toast-message {
+  width: inherit;
+}

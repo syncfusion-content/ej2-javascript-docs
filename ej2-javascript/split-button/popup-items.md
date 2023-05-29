@@ -27,6 +27,9 @@ added using the iconCss property.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/split-button/popup-icon-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/split-button/popup-icon-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/split-button/popup-icon-cs1" %}
@@ -39,6 +42,9 @@ added using the iconCss property.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/split-button/popup-icon-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/split-button/popup-icon-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -62,6 +68,9 @@ In the following example, the icons in each [`li`] items is right aligned by app
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/split-button/template-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/split-button/template-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/split-button/template-cs1" %}
@@ -74,6 +83,9 @@ In the following example, the icons in each [`li`] items is right aligned by app
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/split-button/template-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/split-button/template-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -95,6 +107,9 @@ In the following sample, the whole popup item is customized as color palette by 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/split-button/popup-template-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/split-button/popup-template-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/split-button/popup-template-cs1" %}
@@ -107,6 +122,9 @@ In the following sample, the whole popup item is customized as color palette by 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/split-button/popup-template-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/split-button/popup-template-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -59,6 +59,9 @@ Below example demonstrates the click event of the Floating Action Button.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/floating-action-button/events-cs2/index.html %}
+{% endhighlight %}.
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/floating-action-button/events-cs2/styles.css %}
 {% endhighlight %}
 {% endtabs %}
         

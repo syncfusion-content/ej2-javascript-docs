@@ -24,6 +24,9 @@ The following example illustrates how to enable right-to-left support in SplitBu
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/split-button/disabled-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/split-button/disabled-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/split-button/disabled-cs1" %}
@@ -36,6 +39,9 @@ The following example illustrates how to enable right-to-left support in SplitBu
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/split-button/disabled-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/split-button/disabled-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

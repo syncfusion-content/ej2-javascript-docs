@@ -28,6 +28,9 @@ upload and it receives the value in `bytes`.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/chunk-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/chunk-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/chunk-cs1" %}
@@ -40,6 +43,9 @@ upload and it receives the value in `bytes`.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/chunk-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/chunk-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -73,6 +79,9 @@ The following sample specifies the chunk upload delay with 3000 milliseconds and
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/retry-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/retry-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/retry-cs1" %}
@@ -85,6 +94,9 @@ The following sample specifies the chunk upload delay with 3000 milliseconds and
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/retry-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/retry-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -106,6 +118,9 @@ Allows you to resume an upload operation after a network failure or manually int
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/resumable-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/resumable-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/resumable-cs1" %}
@@ -118,6 +133,9 @@ Allows you to resume an upload operation after a network failure or manually int
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/resumable-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/resumable-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -141,6 +159,9 @@ The following example explains about chunk upload with cancel support.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/cancel-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/cancel-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/cancel-cs1" %}
@@ -153,6 +174,9 @@ The following example explains about chunk upload with cancel support.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/cancel-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/cancel-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -142,6 +142,9 @@ The following example shows a basic ButtonGroup component.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/getting-started-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/getting-started-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/button-group/getting-started-cs1" %}
@@ -151,6 +154,9 @@ The following example shows a basic ButtonGroup component.
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/getting-started-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/getting-started-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -173,6 +179,9 @@ The following example illustrates how to achieve vertical orientation in ButtonG
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/vertical-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/vertical-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/button-group/vertical-cs1" %}
@@ -182,6 +191,9 @@ The following example illustrates how to achieve vertical orientation in ButtonG
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/vertical-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/vertical-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

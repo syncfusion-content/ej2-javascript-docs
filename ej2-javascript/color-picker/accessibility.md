@@ -49,6 +49,9 @@ The following list of keys can be used to interact with the ColorPicker after th
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/getting-started/default-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/getting-started/default-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/colorpicker/getting-started/default-cs1" %}
@@ -61,6 +64,9 @@ The following list of keys can be used to interact with the ColorPicker after th
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/getting-started/default-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/getting-started/default-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

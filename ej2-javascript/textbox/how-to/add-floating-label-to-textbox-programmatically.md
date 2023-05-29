@@ -45,6 +45,9 @@ class name `e-input-group-icon` as parameter to the `createInput` method.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/floating-label-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/floating-label-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/textbox/floating-label-cs1" %}
@@ -57,6 +60,9 @@ class name `e-input-group-icon` as parameter to the `createInput` method.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/floating-label-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/floating-label-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

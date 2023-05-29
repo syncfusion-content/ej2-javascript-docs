@@ -35,6 +35,9 @@ You can override the default icons of `e-spin-up` and `e-spin-down` classes usin
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/numeric-textbox/custom-icons-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/numeric-textbox/custom-icons-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/numeric-textbox/custom-icons-cs1" %}
@@ -47,6 +50,9 @@ You can override the default icons of `e-spin-up` and `e-spin-down` classes usin
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/numeric-textbox/custom-icons-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/numeric-textbox/custom-icons-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

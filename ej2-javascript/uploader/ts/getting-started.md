@@ -138,6 +138,9 @@ The following example illustrates the output in your browser.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/getting-started-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/getting-started-cs2/index.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/uploader/getting-started-cs2" %}
@@ -155,6 +158,9 @@ In the following sample, drop target is configured.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/drop-area-cs4/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/drop-area-cs4/index.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/uploader/drop-area-cs4" %}
@@ -170,6 +176,9 @@ The uploader component process the files to upload in Asynchronous mode by defau
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/async-settings-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/async-settings-cs2/index.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/uploader/async-settings-cs2" %}
@@ -184,6 +193,9 @@ You can handle the success and failure actions using the [success](../api/upload
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/success-failed-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/success-failed-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
           

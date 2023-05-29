@@ -22,6 +22,9 @@ Click event of input file from the external button can be triggered using the `c
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/external-click-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/external-click-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/external-click-cs1" %}
@@ -34,6 +37,9 @@ Click event of input file from the external button can be triggered using the `c
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/external-click-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/external-click-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -41,6 +41,9 @@ type behaviors.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/basic-util-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/basic-util-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/button-group/basic-util-cs1" %}
@@ -53,6 +56,9 @@ type behaviors.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/basic-util-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/basic-util-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

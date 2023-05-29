@@ -149,6 +149,9 @@ The following example shows a basic ProgressButton component.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/progress-button/getting-started-cs8/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/progress-button/getting-started-cs8/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/progress-button/getting-started-cs8" %}

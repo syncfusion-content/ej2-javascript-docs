@@ -85,13 +85,13 @@ TreeGrid supports three types of selection mode which can be set by using
 ## Touch interaction
 
 When you tap a treegrid row on touchscreen device, the tapped row is selected.
-It also shows a popup ![Multi Row selection](images/selection.jpg)  for multi-row selection.
-To select multiple rows or cells, tap the popup![Multi Row or Cells](images/mselection.jpg)  and then tap the desired rows or cells.
+It also shows a popup ![Multi Row selection](../images/selection.jpg)  for multi-row selection.
+To select multiple rows or cells, tap the popup ![Multi Row or Cells](../images/mselection.jpg)  and then tap the desired rows or cells.
 
 > Multi-selection requires the selection [`type`](../../api/treegrid/selectionSettings/#type) to be `multiple`.
 
 The following screenshot represents a treegrid touch selection in the device.
 
-<img src="../../images/touch-selection.png" alt="Touch interaction" style="width:320px;height: 620px">
+<img src="../images/touch-selection.png" alt="Touch interaction" style="width:320px;height: 620px">
 
 > You can refer to our [`JavaScript Tree Grid`](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our JavaScript Tree Grid example [`JavaScript Tree Grid example`](https://ej2.syncfusion.com/demos/#/material/tree-grid/treegrid-overview.html) to knows how to present and manipulate data.

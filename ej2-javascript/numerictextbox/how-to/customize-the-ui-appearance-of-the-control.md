@@ -22,6 +22,9 @@ You can change the appearance of the NumericTextBox by adding custom `cssClass` 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/numeric-textbox/custom-css-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/numeric-textbox/custom-css-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/numeric-textbox/custom-css-cs1" %}
@@ -34,6 +37,9 @@ You can change the appearance of the NumericTextBox by adding custom `cssClass` 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/numeric-textbox/custom-css-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/numeric-textbox/custom-css-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

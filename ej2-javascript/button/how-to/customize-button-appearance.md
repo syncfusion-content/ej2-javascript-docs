@@ -22,6 +22,9 @@ You can customize the appearance of the Button by using the Cascading Style Shee
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/howto-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button/howto-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/button/howto-cs1" %}
@@ -34,6 +37,9 @@ You can customize the appearance of the Button by using the Cascading Style Shee
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/howto-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button/howto-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

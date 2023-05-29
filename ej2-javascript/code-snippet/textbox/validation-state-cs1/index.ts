@@ -38,19 +38,3 @@ for (let i = 0; i < inputIcon.length; i++) {
         }, 500);
     });
 }
-
-
-
-       <div class="e-input-group e-float-input e-success">
-        <input type="text" required>
-        <span class="e-float-line"></span>
-        <label class="e-float-text">Success</label>
-       </div>
-       <div class="e-input-group e-float-input e-warning">
-         <input type="text" required>
-         <span class="e-float-line"></span>
-         <label class="e-float-text">Warning</label>
-        </div>
-
-
-

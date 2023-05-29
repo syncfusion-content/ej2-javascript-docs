@@ -204,6 +204,9 @@ Below example demonstrates the clicked event of the Speed Dial control.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speed-dial/action-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/speed-dial/action-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/speed-dial/action-cs1" %}

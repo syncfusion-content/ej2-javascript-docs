@@ -158,6 +158,9 @@ Add the HTML canvas tag with the `id` attribute as `signature` to your `index.ht
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/signature/es5-getting-started-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/signature/es5-getting-started-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/signature/es5-getting-started-cs1" %}

@@ -9,13 +9,6 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-
----
-title: "Paging"
-component: "Pivot Table"
-description: "Paging allows you to load large amounts of data that can be divided and displayed page by page in the pivot table."
----
-
 # Paging in ##Platform_Name## Pivotview control
 
 Paging allows you to load large amounts of data that can be divided and displayed page by page in the pivot table. It can be enabled by setting the [`enablePaging`](https://ej2.syncfusion.com/documentation/api/pivotview#enablepaging) property to **true**. It can be configured at code-behind by using the [`pageSettings`](https://ej2.syncfusion.com/documentation/api/pivotview#pagesettings) property, during initial rendering of the component. The properties required are:

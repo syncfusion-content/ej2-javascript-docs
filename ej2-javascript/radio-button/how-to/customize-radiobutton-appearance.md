@@ -24,6 +24,9 @@ The background and border color of the RadioButton is customized through the cus
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/radio-button/howto-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/radio-button/howto-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/radio-button/howto-cs1" %}
@@ -36,6 +39,9 @@ The background and border color of the RadioButton is customized through the cus
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/radio-button/howto-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/radio-button/howto-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

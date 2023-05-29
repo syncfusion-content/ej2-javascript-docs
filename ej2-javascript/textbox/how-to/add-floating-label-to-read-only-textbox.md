@@ -37,6 +37,9 @@ In this sample, click the update value button to fill the read-only textbox with
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/read-only-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/read-only-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/textbox/read-only-cs1" %}

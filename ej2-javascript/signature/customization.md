@@ -28,6 +28,9 @@ In the following example, minimum stroke width is set as 0.5, maximum stroke wid
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/signature/customization/strokewidth-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/signature/customization/strokewidth-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/signature/customization/strokewidth-cs1" %}
@@ -40,6 +43,9 @@ In the following example, minimum stroke width is set as 0.5, maximum stroke wid
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/signature/customization/strokewidth-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/signature/customization/strokewidth-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -59,6 +65,9 @@ Color of the stroke can be specified by using [`strokeColor`](https://ej2.syncfu
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/signature/customization/strokecolor-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/signature/customization/strokewidth-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/signature/customization/strokecolor-cs1" %}
@@ -71,6 +80,9 @@ Color of the stroke can be specified by using [`strokeColor`](https://ej2.syncfu
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/signature/customization/strokecolor-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/signature/customization/strokewidth-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -90,6 +102,9 @@ Background color of a signature can be specified by using [`backgroundColor`](ht
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/signature/customization/bgcolor-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/signature/customization/bgcolor-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/signature/customization/bgcolor-cs1" %}
@@ -102,6 +117,9 @@ Background color of a signature can be specified by using [`backgroundColor`](ht
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/signature/customization/bgcolor-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/signature/customization/bgcolor-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -121,6 +139,9 @@ Background image of a signature can be specified by using [`backgroundImage`](ht
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/signature/customization/bgimage-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/signature/customization/bgimage-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/signature/customization/bgimage-cs1" %}
@@ -133,6 +154,9 @@ Background image of a signature can be specified by using [`backgroundImage`](ht
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/signature/customization/bgimage-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/signature/customization/bgimage-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

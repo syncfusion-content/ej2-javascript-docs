@@ -235,6 +235,9 @@ Output will be as follows:
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/es5-getting-started-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/es5-getting-started-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/colorpicker/es5-getting-started-cs1" %}
@@ -248,6 +251,9 @@ The following sample shows the inline type rendering of ColorPicker.
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/es5-getting-started-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/es5-getting-started-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
         

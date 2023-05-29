@@ -24,6 +24,9 @@ The following example shows the `disabled` state of ColorPicker component.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/disabled-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/disabled-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/colorpicker/disabled-cs1" %}
@@ -36,6 +39,9 @@ The following example shows the `disabled` state of ColorPicker component.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/disabled-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/disabled-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

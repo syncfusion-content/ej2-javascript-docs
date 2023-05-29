@@ -38,20 +38,3 @@ for (let i = 0; i < inputIcon.length; i++) {
         }, 500);
     });
 }
-
-
-
-   <div class="e-input-group e-warning">
-     <input class="e-input" type="text" placeholder="Input with warning" />
-   </div>
-
-   <div class="e-input-group e-error">
-     <input class="e-input" type="text" placeholder="Input with error" />
-   </div>
-
-   <div class="e-input-group e-success">
-     <input class="e-input" type="text" placeholder="Input with success" />
-   </div>
-
-
-

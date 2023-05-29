@@ -26,6 +26,9 @@ In the following example, the DropdownButton with default iconPosition and iconP
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/icon-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/icon-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/drop-down-button/icon-cs1" %}
@@ -38,6 +41,9 @@ In the following example, the DropdownButton with default iconPosition and iconP
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/icon-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/icon-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -58,6 +64,9 @@ Icon only DropDownButton can be achieved by using [`iconCss`](../api/drop-down-b
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/icon-only-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/icon-only-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/drop-down-button/icon-only-cs1" %}
@@ -70,6 +79,9 @@ Icon only DropDownButton can be achieved by using [`iconCss`](../api/drop-down-b
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/icon-only-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/icon-only-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -94,6 +106,9 @@ In this following example, `e-image` class is added with background url of the s
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/sprite-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/sprite-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/drop-down-button/sprite-cs1" %}
@@ -106,6 +121,9 @@ In this following example, `e-image` class is added with background url of the s
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/sprite-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/sprite-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -127,6 +145,9 @@ The following example illustrates how to provide vertical support in DropDownBut
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/vertical-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/vertical-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/drop-down-button/vertical-cs1" %}
@@ -139,6 +160,9 @@ The following example illustrates how to provide vertical support in DropDownBut
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/vertical-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/vertical-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

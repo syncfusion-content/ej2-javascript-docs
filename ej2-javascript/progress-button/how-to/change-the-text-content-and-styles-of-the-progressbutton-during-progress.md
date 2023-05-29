@@ -22,6 +22,9 @@ You can change the text content and styles of the ProgressButton during progress
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/progress-button/getting-started-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/progress-button/getting-started-cs2/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/progress-button/getting-started-cs2" %}
@@ -34,6 +37,9 @@ You can change the text content and styles of the ProgressButton during progress
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/progress-button/getting-started-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/progress-button/getting-started-cs2/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

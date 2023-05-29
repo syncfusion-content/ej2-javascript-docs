@@ -135,6 +135,9 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/radio-button/es5-getting-started-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/radio-button/es5-getting-started-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/radio-button/es5-getting-started-cs1" %}
@@ -152,6 +155,9 @@ The RadioButton [`checked`](../api/radio-button#checked) property is used to han
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/radio-button/es5-getting-started-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/radio-button/es5-getting-started-cs2/styles.css %}
 {% endhighlight %}
 {% endtabs %}
         

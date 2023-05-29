@@ -21,6 +21,9 @@ The following example illustrates how to show selected state on initial render.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/select-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/select-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/button-group/select-cs1" %}
@@ -30,6 +33,9 @@ The following example illustrates how to show selected state on initial render.
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/select-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/select-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

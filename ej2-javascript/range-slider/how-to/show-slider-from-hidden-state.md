@@ -24,6 +24,9 @@ In the sample, by clicking on the button, we can make the Slider visible from hi
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/hidden-slider-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/hidden-slider-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/slider/hidden-slider-cs1" %}
@@ -36,6 +39,9 @@ In the sample, by clicking on the button, we can make the Slider visible from hi
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/hidden-slider-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/hidden-slider-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

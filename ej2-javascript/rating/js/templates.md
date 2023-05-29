@@ -30,6 +30,9 @@ If the `fullTemplate` is not defined, the `emptyTemplate` will be used as the de
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/empty-templates-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/empty-templates-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/rating/empty-templates-cs1" %}
@@ -47,6 +50,9 @@ To customize the appearance of **rated** items in the rating control, you can us
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/full-templates-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/full-templates-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/rating/full-templates-cs1" %}
@@ -61,6 +67,9 @@ You can use emojis of your choice as rating symbol by specifying them as templat
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/emoji-templates-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/emoji-templates-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -77,6 +86,9 @@ You can use SVG icons of your choice as rating symbol by specifying them as temp
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/svg-templates-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/svg-templates-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/rating/svg-templates-cs1" %}
@@ -91,6 +103,9 @@ You can use PNG images of your choice as rating symbol by specifying them as tem
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/png-templates-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/png-templates-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
         

@@ -27,6 +27,9 @@ You can convert the default textbox into the multiline textbox by setting the [m
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/textarea-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/textarea-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/textbox/textarea-cs1" %}
@@ -39,6 +42,9 @@ You can convert the default textbox into the multiline textbox by setting the [m
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/textarea-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/textarea-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -58,6 +64,9 @@ You can achieve the floating label behavior in the multiline textbox by setting 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/float-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/float-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/textbox/float-cs1" %}
@@ -70,6 +79,9 @@ You can achieve the floating label behavior in the multiline textbox by setting 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/float-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/float-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -89,6 +101,9 @@ By default, you can manually resize the multiline textbox. But you can also crea
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/autoresize-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/autoresize-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/textbox/autoresize-cs1" %}
@@ -101,6 +116,9 @@ By default, you can manually resize the multiline textbox. But you can also crea
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/autoresize-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/autoresize-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -130,6 +148,9 @@ By default, the multiline textbox is rendered with resizable. You can disable th
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/disable-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/disable-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/textbox/disable-cs1" %}
@@ -142,6 +163,9 @@ By default, the multiline textbox is rendered with resizable. You can disable th
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/disable-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/disable-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -161,6 +185,9 @@ By default, the text length of the multiline textbox is unlimited. You can limit
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/maxlength-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/maxlength-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/textbox/maxlength-cs1" %}
@@ -173,6 +200,9 @@ By default, the text length of the multiline textbox is unlimited. You can limit
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/maxlength-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/maxlength-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -192,6 +222,9 @@ You can show the number of characters entered inside the textarea by calculating
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/count-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/count-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/textbox/count-cs1" %}
@@ -204,6 +237,9 @@ You can show the number of characters entered inside the textarea by calculating
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/count-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/count-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

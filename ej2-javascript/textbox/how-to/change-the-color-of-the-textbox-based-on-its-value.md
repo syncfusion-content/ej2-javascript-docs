@@ -20,6 +20,9 @@ You can change the color of the TextBox by validating its value using regular ex
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/textbox/text-color-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/textbox/text-color-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/textbox/text-color-cs1" %}

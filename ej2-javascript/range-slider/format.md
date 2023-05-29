@@ -26,6 +26,9 @@ The `format` feature used to customize the units of Slider values to desired for
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/format-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/format-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/slider/format-cs1" %}
@@ -38,6 +41,9 @@ The `format` feature used to customize the units of Slider values to desired for
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/format-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/format-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -57,6 +63,9 @@ In this method, we have different predefined formatting styles like Numeric (N),
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/format-api-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/format-api-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/slider/format-api-cs1" %}
@@ -69,6 +78,9 @@ In this method, we have different predefined formatting styles like Numeric (N),
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/format-api-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/format-api-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -88,6 +100,9 @@ In this method, we will be retrieving the values from the slider events then pro
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/events-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/events-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/slider/events-cs1" %}
@@ -100,6 +115,9 @@ In this method, we will be retrieving the values from the slider events then pro
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/events-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/events-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

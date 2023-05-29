@@ -1,9 +1,59 @@
-<html><head><script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
-</head><body><script>
-var ele = document.getElementById('container');
-if(ele) {
-  ele.style.visibility = "visible";
-}   
-      </script>
-<script src="index.js" type="text/javascript"></script>
-</body></html>
+<!DOCTYPE html>
+  <html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+                
+        <title>Essential JS 2</title>
+        <!-- Essential JS 2 material theme -->
+        <link href="https://cdn.syncfusion.com/ej2/21.2.3/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
+        <link href="https://cdn.syncfusion.com/ej2/21.2.3/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css"/>
+        <link href="https://cdn.syncfusion.com/ej2/21.2.3/ej2-lists/styles/material.css" rel="stylesheet" type="text/css"/>
+        <link href="https://cdn.syncfusion.com/ej2/21.2.3/ej2-popups/styles/material.css" rel="stylesheet" type="text/css"/>
+        <link href="https://cdn.syncfusion.com/ej2/21.2.3/ej2-inputs/styles/material.css" rel="stylesheet" type="text/css"/>
+        <link href="https://cdn.syncfusion.com/ej2/21.2.3/ej2-navigations/styles/material.css" rel="stylesheet" type="text/css"/>
+        <link href="styles.css" rel="stylesheet" />
+
+        <!-- Essential JS 2 ContextMenu's global script -->
+         <script src="https://cdn.syncfusion.com/ej2/21.2.3/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+         <script src="https://cdn.syncfusion.com/ej2/21.2.3/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
+         <script src="https://cdn.syncfusion.com/ej2/21.2.3/ej2-lists/dist/global/ej2-lists.min.js" type="text/javascript"></script>
+         <script src="https://cdn.syncfusion.com/ej2/21.2.3/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
+         <script src="https://cdn.syncfusion.com/ej2/21.2.3/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
+         <script src="https://cdn.syncfusion.com/ej2/21.2.3/ej2-navigations/dist/global/ej2-navigations.min.js" type="text/javascript"></script>
+   </head>
+   <body>
+       <!--target element-->
+        <div id="target">Right click / Touch hold to open the ContextMenu</div>
+        <!--element which is going to render-->
+        <ul id="contextmenu"></ul>
+        <script>
+            ej.base.enableRipple(true);
+
+            var menuItems = [
+            {
+              text: 'Cut'
+            },
+            {
+              text: 'Copy'
+            },
+            {
+              text: 'Paste'
+            },
+            {
+              separator: true
+            },
+            {
+              text: 'Font'
+            },
+            {
+              text: 'Paragraph'
+            }];
+            var menuOptions = {
+              target: '#target',
+              items: menuItems
+            };
+
+            // Initialize ContextMenu control.
+            var menuObj = new ej.navigations.ContextMenu(menuOptions, '#contextmenu');
+        </script>
+   </body>
+  </html>

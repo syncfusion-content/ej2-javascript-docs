@@ -28,6 +28,9 @@ In the following sample, the first tile of the color palette represents the no c
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/no-color/default-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/no-color/default-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/colorpicker/no-color/default-cs1" %}
@@ -40,6 +43,9 @@ In the following sample, the first tile of the color palette represents the no c
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/no-color/default-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/no-color/default-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -59,6 +65,9 @@ The following sample show the color palette with custom no color option.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/no-color/custom-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/no-color/custom-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/colorpicker/no-color/custom-cs1" %}
@@ -71,6 +80,9 @@ The following sample show the color palette with custom no color option.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/no-color/custom-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/no-color/custom-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

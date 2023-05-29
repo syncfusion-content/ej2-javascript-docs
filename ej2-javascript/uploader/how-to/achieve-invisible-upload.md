@@ -22,6 +22,9 @@ You can achieve the invisible upload feature by using the selected event in uplo
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/invisible-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/invisible-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/invisible-cs1" %}
@@ -34,6 +37,9 @@ You can achieve the invisible upload feature by using the selected event in uplo
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/invisible-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/invisible-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

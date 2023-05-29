@@ -48,6 +48,9 @@ Slider appearance can be customized through CSS. By overriding the slider CSS cl
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/thumb-customization-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/thumb-customization-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/slider/thumb-customization-cs1" %}
@@ -60,6 +63,9 @@ Slider appearance can be customized through CSS. By overriding the slider CSS cl
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/thumb-customization-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/thumb-customization-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

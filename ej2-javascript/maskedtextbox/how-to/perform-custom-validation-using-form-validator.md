@@ -24,6 +24,9 @@ In the following example, the MaskedTextBox is validated for invalid mobile numb
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/maskedtextbox/custom-validation-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/maskedtextbox/custom-validation-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/maskedtextbox/custom-validation-cs1" %}
@@ -36,6 +39,9 @@ In the following example, the MaskedTextBox is validated for invalid mobile numb
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/maskedtextbox/custom-validation-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/maskedtextbox/custom-validation-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

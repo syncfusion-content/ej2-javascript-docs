@@ -24,6 +24,9 @@ You can use the [`itemTemplate`](../api/speed-dial#itemtemplate) property to set
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speed-dial/template-cs3/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/speed-dial/template-cs3/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/speed-dial/template-cs3" %}
@@ -38,6 +41,9 @@ You can use the [`popupTemplate`](../api/speed-dial#popuptemplate) property to s
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speed-dial/template-cs4/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/speed-dial/template-cs4/styles.css %}
 {% endhighlight %}
 {% endtabs %}
           

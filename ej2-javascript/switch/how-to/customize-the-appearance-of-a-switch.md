@@ -26,6 +26,9 @@ Switch bar and handle can be customized as per requirement using CSS rules. Swit
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/switch/customize-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/switch/customize-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/switch/customize-cs1" %}
@@ -38,6 +41,9 @@ Switch bar and handle can be customized as per requirement using CSS rules. Swit
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/switch/customize-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/switch/customize-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -57,6 +63,9 @@ Switch colors can be customized as per the requirement using CSS rules. Switch b
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/switch/customize-color-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/switch/customize-color-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/switch/customize-color-cs1" %}
@@ -69,6 +78,9 @@ Switch colors can be customized as per the requirement using CSS rules. Switch b
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/switch/customize-color-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/switch/customize-color-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

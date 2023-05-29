@@ -26,6 +26,9 @@ The following sample demonstrates the above functionalities.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/custom/palette-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/custom/palette-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/colorpicker/custom/palette-cs1" %}
@@ -38,6 +41,9 @@ The following sample demonstrates the above functionalities.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/custom/palette-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/custom/palette-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -59,6 +65,9 @@ In the following sample, the ColorPicker is rendered without input area.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/how-to-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/how-to-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/colorpicker/how-to-cs1" %}
@@ -71,6 +80,9 @@ In the following sample, the ColorPicker is rendered without input area.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/how-to-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/how-to-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -92,6 +104,9 @@ The following sample show the customized color picker handle.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/custom/handle-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/custom/handle-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/colorpicker/custom/handle-cs1" %}
@@ -104,6 +119,9 @@ The following sample show the customized color picker handle.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/custom/handle-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/custom/handle-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -125,6 +143,9 @@ In the following sample, the `picker` icon is added to primary button and using 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/icon-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/icon-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/colorpicker/icon-cs1" %}
@@ -137,6 +158,9 @@ In the following sample, the `picker` icon is added to primary button and using 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/icon-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/icon-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -160,6 +184,9 @@ The following sample shows the color picker with input.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/input-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/input-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/colorpicker/input-cs1" %}
@@ -172,6 +199,9 @@ The following sample shows the color picker with input.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/input-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/input-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -191,6 +221,9 @@ The color picker UI can be customized in all possible ways. The following sample
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/position-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/position-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/colorpicker/position-cs1" %}
@@ -203,6 +236,9 @@ The color picker UI can be customized in all possible ways. The following sample
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/colorpicker/position-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/colorpicker/position-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

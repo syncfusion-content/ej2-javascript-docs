@@ -24,6 +24,9 @@ The following example illustrates how to enable right-to-left support in Button 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/howto-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button/howto-cs2/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/button/howto-cs2" %}
@@ -36,6 +39,9 @@ The following example illustrates how to enable right-to-left support in Button 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/howto-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button/howto-cs2/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

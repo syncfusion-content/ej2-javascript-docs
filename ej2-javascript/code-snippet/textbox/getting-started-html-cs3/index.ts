@@ -23,16 +23,3 @@ for (let i = 0; i < inputElement.length; i++) {
         }
     });
 }
-
-
-
-        <input class="e-input" type="text" placeholder="Enter Name" value="John" readonly/>
-
-        <div class="e-float-input">
-            <input type='text' required readonly value="John"/>
-            <span class="e-float-line"></span>
-            <label class="e-float-text e-label-top">Enter Name</label>
-        </div>
-
-
-

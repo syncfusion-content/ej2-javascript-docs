@@ -71,6 +71,9 @@ Decreases the Slider by `largeStep` value.</td></tr>
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/accessibility-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/accessibility-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/slider/accessibility-cs1" %}
@@ -83,6 +86,9 @@ Decreases the Slider by `largeStep` value.</td></tr>
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/accessibility-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/accessibility-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

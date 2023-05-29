@@ -27,6 +27,9 @@ The precision types of Rating are as follows:
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rating/precision-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rating/precision-cs2/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/rating/precision-cs2" %}

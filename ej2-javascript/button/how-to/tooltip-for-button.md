@@ -24,6 +24,9 @@ The following snippets illustrates how to show tooltip on Button hover.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/getting-started-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button/getting-started-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/button/getting-started-cs1" %}
@@ -36,6 +39,9 @@ The following snippets illustrates how to show tooltip on Button hover.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/getting-started-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button/getting-started-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

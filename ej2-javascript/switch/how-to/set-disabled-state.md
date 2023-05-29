@@ -24,6 +24,9 @@ The following example illustrates how to disable support in Switch component.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/switch/getting-started-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/switch/getting-started-cs2/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/switch/getting-started-cs2" %}
@@ -36,6 +39,9 @@ The following example illustrates how to disable support in Switch component.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/switch/getting-started-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/switch/getting-started-cs2/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

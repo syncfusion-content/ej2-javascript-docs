@@ -24,6 +24,9 @@ In the following example, the up arrow is updated on popup close and down arrow 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/up-down-arrow-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/up-down-arrow-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/drop-down-button/up-down-arrow-cs1" %}
@@ -36,6 +39,9 @@ In the following example, the up arrow is updated on popup close and down arrow 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/up-down-arrow-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/up-down-arrow-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

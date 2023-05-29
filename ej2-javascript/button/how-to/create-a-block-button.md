@@ -22,6 +22,9 @@ You can customize a Button into a Block Button that will span the entire width o
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/block-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="style.css" %}
+{% include code-snippet/button/block-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/button/block-cs1" %}
@@ -34,6 +37,9 @@ You can customize a Button into a Block Button that will span the entire width o
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/block-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="style.css" %}
+{% include code-snippet/button/block-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

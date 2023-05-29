@@ -36,6 +36,9 @@ The `Linear` directions of Speed Dial are as follows:
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speed-dial/linear-cs3/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/speed-dial/linear-cs3/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/speed-dial/linear-cs3" %}

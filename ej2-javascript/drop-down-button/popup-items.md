@@ -26,6 +26,9 @@ In the following sample, the icons for edit, delete, mark as read  and like mess
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/popup-icon-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/popup-icon-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/drop-down-button/popup-icon-cs1" %}
@@ -38,6 +41,9 @@ In the following sample, the icons for edit, delete, mark as read  and like mess
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/popup-icon-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/popup-icon-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -59,6 +65,9 @@ In the following sample, navigation URL for Flipkart, Amazon, and Snapdeal actio
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/action-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/action-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/drop-down-button/action-cs1" %}
@@ -71,6 +80,9 @@ In the following sample, navigation URL for Flipkart, Amazon, and Snapdeal actio
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/action-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/action-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -94,6 +106,9 @@ The following popup template is customized using `beforeItemRender` event by app
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/template-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/template-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/drop-down-button/template-cs1" %}
@@ -106,6 +121,9 @@ The following popup template is customized using `beforeItemRender` event by app
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/template-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/template-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -128,6 +146,9 @@ using `target` property.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/popup-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/popup-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/drop-down-button/popup-cs1" %}
@@ -140,6 +161,9 @@ using `target` property.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/popup-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/popup-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -161,6 +185,9 @@ In the following sample, cut, copy, and paste popup items are grouped using the 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/accessibility-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/accessibility-cs2/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/drop-down-button/accessibility-cs2" %}
@@ -173,6 +200,9 @@ In the following sample, cut, copy, and paste popup items are grouped using the 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/drop-down-button/accessibility-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/drop-down-button/accessibility-cs2/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -135,6 +135,9 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/check-box/es5-getting-started-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/check-box/es5-getting-started-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/check-box/es5-getting-started-cs1" %}
@@ -157,6 +160,9 @@ The CheckBox indeterminate state can be set through [`indeterminate`](../api/che
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/check-box/es5-getting-started-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/check-box/es5-getting-started-cs2/styles.css %}
 {% endhighlight %}
 {% endtabs %}
         

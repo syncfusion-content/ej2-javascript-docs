@@ -26,6 +26,9 @@ The signature control opens a pre-drawn signature as either base64 or hosted/ on
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/signature/open-save/open-base-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/signature/open-save/open-base-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/signature/open-save/open-base-cs1" %}
@@ -38,6 +41,9 @@ The signature control opens a pre-drawn signature as either base64 or hosted/ on
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/signature/open-save/open-base-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/signature/open-save/open-base-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -61,6 +67,9 @@ The `getSignature` method is used to get the signature as base64 with the PNG, J
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/signature/open-save/save-base-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/signature/open-save/save-base-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/signature/open-save/save-base-cs1" %}
@@ -73,6 +82,9 @@ The `getSignature` method is used to get the signature as base64 with the PNG, J
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/signature/open-save/save-base-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/signature/open-save/save-base-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -96,6 +108,9 @@ The [`save`](https://ej2.syncfusion.com/documentation/api/signature/#save) metho
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/signature/open-save/save-image-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/signature/open-save/save-image-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/signature/open-save/save-image-cs1" %}
@@ -108,6 +123,9 @@ The [`save`](https://ej2.syncfusion.com/documentation/api/signature/#save) metho
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/signature/open-save/save-image-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/signature/open-save/save-image-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -129,6 +147,9 @@ In the following sample, the background color is set as ‘rgb(103 58 183)’ an
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/signature/open-save/save-bg-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/signature/open-save/save-bg-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/signature/open-save/save-bg-cs1" %}
@@ -141,6 +162,9 @@ In the following sample, the background color is set as ‘rgb(103 58 183)’ an
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/signature/open-save/save-bg-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/signature/open-save/save-bg-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

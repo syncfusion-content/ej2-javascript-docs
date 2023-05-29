@@ -30,6 +30,9 @@ The types of Slider are as follows:
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/types-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/types-cs2/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/slider/types-cs2" %}
@@ -42,6 +45,9 @@ The types of Slider are as follows:
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/slider/types-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/slider/types-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -22,6 +22,9 @@ In the following code snippet, the radio type ButtonGroup is explained with male
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/form-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/form-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/button-group/form-cs1" %}
@@ -31,6 +34,9 @@ In the following code snippet, the radio type ButtonGroup is explained with male
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button-group/form-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/button-group/form-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

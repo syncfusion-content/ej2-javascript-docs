@@ -24,6 +24,9 @@ The [`draw`](https://ej2.syncfusion.com/documentation/api/signature/#draw) metho
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/signature/draw-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/signature/draw-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/signature/draw-cs1" %}
@@ -36,6 +39,9 @@ The [`draw`](https://ej2.syncfusion.com/documentation/api/signature/#draw) metho
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/signature/draw-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/signature/draw-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

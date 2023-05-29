@@ -22,6 +22,9 @@ The different Switch sizes available are default and small. To reduce the size o
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/switch/size-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/switch/size-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/switch/size-cs1" %}
@@ -34,6 +37,9 @@ The different Switch sizes available are default and small. To reduce the size o
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/switch/size-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/switch/size-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

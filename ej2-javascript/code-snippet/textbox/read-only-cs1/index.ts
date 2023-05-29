@@ -19,23 +19,3 @@ function checkFloatingLabel(id) {
     (document.getElementsByClassName('myField')[0]).value = '';
     checkFloatingLabel('myText')
   })
-
-
-        <div class="row">
-            <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6">
-                <div class="e-float-input">
-                    <input class="e-input myField" id="myText" name="readonlyAttr"  type="text" readOnly>
-                    <span class="e-float-line"></span>
-                    <label class="e-float-text">Enter value</label>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-10 col-sm-10 col-lg-10 col-md-10">
-                <button class="e-btn update_value" id='valuebtn' >Set value</button>
-                <button class="e-btn remove_value" id='removebtn' >Remove value</button>
-            </div>
-        </div>
-
-
-

@@ -35,6 +35,9 @@ The below example demonstrates the NumericTextBox in `German` culture with the s
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/numeric-textbox/getting-started-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/numeric-textbox/getting-started-cs2/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/numeric-textbox/getting-started-cs2" %}
@@ -47,6 +50,9 @@ The below example demonstrates the NumericTextBox in `German` culture with the s
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/numeric-textbox/getting-started-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/numeric-textbox/getting-started-cs2/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -129,6 +135,9 @@ The below example demonstrates the NumericTextBox in `German` culture with the `
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/numeric-textbox/internationalization-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/numeric-textbox/internationalization-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/numeric-textbox/internationalization-cs1" %}
@@ -141,6 +150,9 @@ The below example demonstrates the NumericTextBox in `German` culture with the `
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/numeric-textbox/internationalization-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/numeric-textbox/internationalization-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -160,6 +172,9 @@ RTL provides an option to switch the text direction and layout of the NumericTex
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/numeric-textbox/rtl-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/numeric-textbox/rtl-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/numeric-textbox/rtl-cs1" %}
@@ -172,6 +187,9 @@ RTL provides an option to switch the text direction and layout of the NumericTex
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/numeric-textbox/rtl-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/numeric-textbox/rtl-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

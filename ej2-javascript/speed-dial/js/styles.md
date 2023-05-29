@@ -28,6 +28,9 @@ You can use the [`openIconCss`](../api/speed-dial#openiconcss) and [`closeIconCs
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speed-dial/styles-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/speed-dial/styles-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/speed-dial/styles-cs1" %}
@@ -43,6 +46,9 @@ You can show only text in Speed Dial button by setting [`content`](../api/speed-
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speed-dial/styles-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/speed-dial/styles-cs2/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/speed-dial/styles-cs2" %}
@@ -57,6 +63,9 @@ You show icon and text in SpeedDial button using [`openIconCss`](../api/speed-di
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speed-dial/styles-cs3/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/speed-dial/styles-cs3/styles.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -98,6 +107,9 @@ The JavaScript(ES5) Speed Dial supports the following predefined styles that can
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speed-dial/styles-cs4/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/speed-dial/styles-cs4/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/speed-dial/styles-cs4" %}
@@ -129,6 +141,9 @@ You can show tooltip on hover to show additional details to end-user by setting 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speed-dial/styles-cs5/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/speed-dial/styles-cs5/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/speed-dial/styles-cs5" %}
@@ -143,6 +158,9 @@ You can use [`opensOnHover`](../api/speed-dial#opensonhover) property to open ac
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speed-dial/styles-cs6/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/speed-dial/styles-cs6/styles.css %}
 {% endhighlight %}
 {% endtabs %}
         

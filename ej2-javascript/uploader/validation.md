@@ -26,6 +26,9 @@ You can allow the specific files alone to upload using the [allowedExtentions](.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/type-validation-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/type-validation-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/type-validation-cs1" %}
@@ -38,6 +41,9 @@ You can allow the specific files alone to upload using the [allowedExtentions](.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/type-validation-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/type-validation-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -57,6 +63,9 @@ The uploader component allows you to validate the files based on its size. The v
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/size-validation-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/size-validation-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/size-validation-cs1" %}
@@ -69,6 +78,9 @@ The uploader component allows you to validate the files based on its size. The v
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/size-validation-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/size-validation-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -88,6 +100,9 @@ You can restrict uploading the maximum number of files using the **selected** ev
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/max-count-validation-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/max-count-validation-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/max-count-validation-cs1" %}
@@ -100,6 +115,9 @@ You can restrict uploading the maximum number of files using the **selected** ev
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/max-count-validation-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/max-count-validation-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -119,6 +137,9 @@ You can validate the duplicate files before uploading to server using the select
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/duplicate-file-validation-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/duplicate-file-validation-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/duplicate-file-validation-cs1" %}
@@ -131,6 +152,9 @@ You can validate the duplicate files before uploading to server using the select
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/duplicate-file-validation-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/duplicate-file-validation-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

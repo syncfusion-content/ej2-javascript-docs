@@ -24,6 +24,9 @@ The following example demonstrates how to set attributes in htmlAttributes prope
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/html-attr-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/html-attr-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/html-attr-cs1" %}
@@ -36,6 +39,9 @@ The following example demonstrates how to set attributes in htmlAttributes prope
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/html-attr-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/html-attr-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

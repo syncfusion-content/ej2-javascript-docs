@@ -22,6 +22,9 @@ You can customize the progress bar’s size, color, and background by overriding
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/progress-customize-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/progress-customize-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/uploader/progress-customize-cs1" %}
@@ -34,6 +37,9 @@ You can customize the progress bar’s size, color, and background by overriding
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/uploader/progress-customize-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/uploader/progress-customize-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

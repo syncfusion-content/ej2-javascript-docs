@@ -53,7 +53,7 @@ Using either of the following way to refer the required script and styles.
 
 **Step 4:** Create a HTML page (index.html) in `myapp` location and add the Essentials JS 2 script and style references.
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
@@ -83,7 +83,7 @@ Using either of the following way to refer the required script and styles.
 
 **Step 5:** Now, add the `div` element and initiate the `Essential JS 2 Calendar` component in the `index.html` by using following code
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
       <head>
@@ -137,7 +137,7 @@ Using either of the following way to refer the required script and styles.
 
 **Step 2:** Have to add `CDN` global script and style for calender and its dependent packages in `myapp/index.html` like below.
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
       <head>

@@ -85,7 +85,7 @@ with all Essential JS 2 components.
 
 Add the HTML div element for Stock Chart into your `index.html`. `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

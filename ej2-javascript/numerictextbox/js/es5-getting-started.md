@@ -40,7 +40,7 @@ Add the HTML input element for the NumericTextBox into your `index.html`.
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

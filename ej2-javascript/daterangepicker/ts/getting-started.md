@@ -94,7 +94,7 @@ Add the HTML input element with an ID attribute as element for DateRangePicker t
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

@@ -78,7 +78,8 @@ The combined CSS files are available in the Essential JS 2 package root folder. 
 
 Now, start adding the Essential JS 2 Message control to the application. To get started, add the HTML `<div>` element to the `index.html` file.
 
-```bash
+```html
+
 <!DOCTYPE html>
 <html lang="en">
 

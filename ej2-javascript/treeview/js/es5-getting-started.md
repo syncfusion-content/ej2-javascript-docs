@@ -86,7 +86,7 @@ Combined CSS files are available in the Essential JS 2 package root folder. This
 
 Now, you can start adding Essential JS 2 TreeView component to the application. To get started, add the TreeView component to `index.html` file using the following code. Then, add the HTML `<div>` element for TreeView component to your `index.html`.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -125,7 +125,7 @@ treeViewInstance.appendTo("#tree");
 
 TreeView can load data either from local data sources or remote data services. This can be done using the `dataSource` property that is a member of the [fields](../api/treeview#fields) property. The dataSource property supports array of JavaScript objects and `DataManager`. Here, an array of JSON values is passed to the TreeView component.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

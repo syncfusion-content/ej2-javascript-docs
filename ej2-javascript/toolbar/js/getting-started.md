@@ -41,7 +41,7 @@ The Essential JS 2 JavaScript components can be initialized by using either of t
 
 **Step 4:** Create a HTML page (index.html) in `myapp` location and add the Essentials JS 2 script and style references.
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
@@ -71,7 +71,7 @@ The Essential JS 2 JavaScript components can be initialized by using either of t
 
 The Toolbar can be rendered by defining an array of [`items`](../api/toolbar#items). An item is rendered with text by defining the default item type as a `Button`. For more information about item configuration, refer to the [Item Configuration](./item-configuration/) section.
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>

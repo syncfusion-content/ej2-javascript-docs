@@ -70,7 +70,7 @@ Add the HTML input tag with ID attribute as the `rating` to your `index.html` fi
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

@@ -66,7 +66,7 @@ The Essential JS2 Linear Gauge component can be added to the application. To get
 
 Add an HTML div element to act as the Linear Gauge element in the **index.html** file using the following code.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

@@ -75,7 +75,7 @@ Add the HTML Canvas tag with the `id` attribute as `signature` to your `index.ht
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

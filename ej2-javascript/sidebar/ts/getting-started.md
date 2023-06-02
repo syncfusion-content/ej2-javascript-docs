@@ -93,7 +93,7 @@ To render the Sidebar, refer to the following structure of the HTML elements:
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

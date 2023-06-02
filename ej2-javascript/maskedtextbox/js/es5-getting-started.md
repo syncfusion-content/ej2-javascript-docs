@@ -40,7 +40,7 @@ Add the HTML input element that needs to be rendered as MaskedTextBox in the `in
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -82,7 +82,7 @@ You can set the mask to the MaskedTextBox to validate the user input by using th
 
 The following example demonstrates the usage of mask element `0` that allows any single digit from `0` to `9`.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

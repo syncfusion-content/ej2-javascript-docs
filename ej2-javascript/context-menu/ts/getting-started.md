@@ -79,7 +79,7 @@ Add the HTML UL tag with the `id` attribute as `#contextmenu` to your `index.htm
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

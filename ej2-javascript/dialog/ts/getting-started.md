@@ -67,7 +67,7 @@ Add the div element with id attribute `#dialog` inside the body tag in your `ind
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

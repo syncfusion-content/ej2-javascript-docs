@@ -78,7 +78,7 @@ Refer the below code to find location pivot table's script and style file.
 
 After copying the files, then you can refer the pivot table and its [dependency](#dependencies) scripts and styles into the **index.html** file.
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
@@ -142,7 +142,7 @@ Refer the pivot table's CDN links as below
 >
 > Styles: [`http://cdn.syncfusion.com/ej2/ej2-pivotview/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-pivotview/styles/material.css)
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
@@ -201,7 +201,7 @@ Pivot Table component can be initialized using the following code. To get starte
 
 To get started, add **div** element for pivot table control in **index.html**. Then refer the **index.js** file into the **index.html** file.
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>

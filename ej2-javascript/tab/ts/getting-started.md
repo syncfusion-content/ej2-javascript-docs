@@ -85,7 +85,7 @@ The Tab can be rendered by defining a JSON array. The item is rendered with [`he
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -207,7 +207,7 @@ You need to follow the below structure of HTML elements to render the Tab,
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

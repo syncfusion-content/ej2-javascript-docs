@@ -122,7 +122,7 @@ Refer to the TreeGrid's CDN links as follows.
 
 The following HTML code example shows the minimal dependency of TreeGrid.
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
@@ -154,7 +154,7 @@ Now, you can start adding TreeGrid control in the application. For getting start
 
 In this document context, the `ej2.min.js` is used, which includes all the Essential JS 2 components and its dependent scripts.
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
@@ -191,7 +191,7 @@ treeGridObj.appendTo('#TreeGrid');
 
 Data for the TreeGrid control is bind by using the `dataSource` property. It accepts either an array of JavaScript object or `DataManager` instance.
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>

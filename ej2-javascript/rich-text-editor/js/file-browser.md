@@ -24,7 +24,7 @@ Following packages style and script (local or CDN) reference additionally requir
 
 Map the above packages style and script reference in sample as like below
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
       <head>

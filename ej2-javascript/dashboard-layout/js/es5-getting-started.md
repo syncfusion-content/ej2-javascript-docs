@@ -43,7 +43,7 @@ To generate the combined component styles, use Syncfusion [`CRG`](https://crg.sy
 
 **Step 4:** Create an HTML page (index.html) in `myapp` location and add the Essentials JS 2 script and style references.
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
@@ -58,7 +58,7 @@ To generate the combined component styles, use Syncfusion [`CRG`](https://crg.sy
 
 **Step 5:** Now, create a dashboard element to apply the `Essential JS 2 DashboardLayout` component in the `index.html` by using following code.
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>

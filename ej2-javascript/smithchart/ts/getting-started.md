@@ -72,7 +72,7 @@ System.config({
 
 Add the HTML div element for Smith Chart into your `index.html`. `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

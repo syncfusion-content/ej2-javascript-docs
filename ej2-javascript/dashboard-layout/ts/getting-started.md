@@ -86,7 +86,7 @@ The following sample demonstrates defining of `panels` by adding child elements 
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

@@ -65,7 +65,7 @@ System.import('app');
 
 Add an HTML div element of heat map to your `index.html`. `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

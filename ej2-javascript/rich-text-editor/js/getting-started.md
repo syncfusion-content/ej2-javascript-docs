@@ -41,7 +41,7 @@ The Essential JS 2 JavaScript components can be initialized by using either of t
 
 **Step 4:** Create a HTML page (index.html) in `myapp` location and add the Essentials JS 2 script and style references.
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
@@ -59,7 +59,7 @@ The Essential JS 2 JavaScript components can be initialized by using either of t
 
 **Step 5:** Now, add the `textarea` element and initiate the `Essential JS 2 Rich Text Editor` component in the `index.html` by using following code
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
@@ -104,7 +104,7 @@ The Essential JS 2 JavaScript components can be initialized by using either of t
 
 **Step 3:** Create a HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `textarea` element and initiate the `Essential JS 2 Rich Text Editor` component in the index.html by using following code.
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
@@ -146,7 +146,7 @@ Now, add an HTML textarea element to act as the Rich Text Editor element in `in
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
       <head>
@@ -203,7 +203,7 @@ Rich Text Editor can be initialized on div element as shown below
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -256,7 +256,7 @@ Initialize the Rich Text Editor on div element and set the `enable` field of [if
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

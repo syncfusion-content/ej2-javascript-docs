@@ -62,7 +62,7 @@ Refer the below code to find location ProgressBar script and style file.
 After copying the files, then you can refer the ProgressBar scripts into the `index.html` file.
 The below html code example shows the minimal dependency of ProgressBar.
 
-```
+```html
 
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
@@ -95,7 +95,7 @@ Refer the ProgressBar's CDN links as below
 
 The below html code example shows the minimal dependency of ProgressBar.
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
@@ -115,7 +115,7 @@ Now, you can start adding Progress Bar control in the application. For getting s
 
 In this document context we are going to use **ej2.min.js** which includes all the Essential JS 2 components and its dependent scripts.
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>

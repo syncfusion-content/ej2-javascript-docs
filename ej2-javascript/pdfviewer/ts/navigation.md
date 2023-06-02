@@ -23,7 +23,7 @@ The default toolbar of PDF Viewer contains the following navigation options
 * [**Show first page**](https://ej2.syncfusion.com/documentation/api/pdfviewer/navigation/#gotofirstpage):-  Navigates to the first page of a PDF document.
 * [**Show last page**](https://ej2.syncfusion.com/documentation/api/pdfviewer/navigation/#gotolastpage):- Navigates to the last page of a PDF document.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -66,11 +66,11 @@ pdfviewer.appendTo('#PdfViewer');
 
 ```
 
-![Alt text](./images/navigation.png)
+![Alt text](../images/navigation.png)
 
 Also, you can programmatically perform page navigation options as follows.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -156,7 +156,7 @@ pdfviewer.appendTo('#PdfViewer');
 
 ```
 
-![Alt text](./images/bookmark.png)
+![Alt text](../images/bookmark.png)
 
 To perform bookmark navigation, you can use the **goToBookmark** method. It's important to note that the **goToBookmark** method will throw an error if the specified bookmark does not exist in the PDF document.
 
@@ -208,13 +208,13 @@ pdfviewer.appendTo('#PdfViewer');
 
 ```
 
-![Alt text](./images/thumbnail.png)
+![Alt text](../images/thumbnail.png)
 
 ## Hyperlink navigation
 
 Hyperlink navigation features enables navigation to the URLs (website links) in a PDF file.
 
-![Alt text](./images/link.png)
+![Alt text](../images/link.png)
 
 ## Table of content navigation
 
@@ -248,7 +248,7 @@ pdfviewer.appendTo('#PdfViewer');
 
 ```
 
-![Alt text](./images/toc.png)
+![Alt text](../images/toc.png)
 
 ## See also
 

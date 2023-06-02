@@ -116,7 +116,7 @@ Place the following barcode-generator  code in the `app.ts`.
 
 Now, add an HTML div element to act as the barcode element in `index.html` using the following code.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

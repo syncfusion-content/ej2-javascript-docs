@@ -64,7 +64,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 **Step 4:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the Essentials JS 2 script and style references.
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
@@ -88,7 +88,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 **Step 5:** Now, add the `Signature` element and initiate the `Syncfusion JavaScript Signature` control in the `index.html` by using following code
 
-```
+```html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 

@@ -45,7 +45,7 @@ Add the div element with the id attribute `#slider` inside the body tag in your 
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

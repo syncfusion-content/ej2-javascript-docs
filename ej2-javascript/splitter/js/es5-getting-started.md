@@ -41,7 +41,7 @@ The Essential JS 2 JavaScript controls can be initialized by using any of the fo
 
 **Step 4:** Create an HTML page (index.html) in `myapp` location and add the Essentials JS 2 script and style references.
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
          <head>
@@ -61,7 +61,7 @@ The Essential JS 2 JavaScript controls can be initialized by using any of the fo
 
 **Step 5:** Now, create a `div` element to apply the `Essential JS 2 splitter` control in the `index.html` by using following code.
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
         <head>
@@ -112,7 +112,7 @@ You can load the pane contents in either HTML element or string types using [con
 
 For detailed information, refer to the [Pane Content](./pane-content/) section.
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>

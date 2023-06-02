@@ -91,7 +91,7 @@ Add the HTML input element for DatePicker into your `index.html` file.
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

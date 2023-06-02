@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The PDF Viewer supports printing the loaded PDF file. You can enable/disable the print using the following code snippet.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,7 +52,7 @@ pdfviewer.appendTo('#PdfViewer');
 
 ```
 
-![Alt text](./images/print.png)
+![Alt text](../images/print.png)
 
 You can invoke print action using the following code snippet.,
 

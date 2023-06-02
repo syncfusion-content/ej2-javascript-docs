@@ -76,7 +76,7 @@ Add the HTML button tag with ID attribute as the `element` to your `index.html` 
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

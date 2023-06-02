@@ -69,7 +69,7 @@ The uploader can be initialized through input tag. Add the HTML input element th
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

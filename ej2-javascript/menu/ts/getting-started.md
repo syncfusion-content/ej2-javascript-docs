@@ -80,7 +80,7 @@ Add the HTML UL tag with the `id` attribute as `menu` to your `index.html` file.
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

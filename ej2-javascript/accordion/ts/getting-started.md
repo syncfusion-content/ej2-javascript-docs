@@ -87,7 +87,7 @@ The Accordion can be rendered by defining an array of [`items`](../api/accordion
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

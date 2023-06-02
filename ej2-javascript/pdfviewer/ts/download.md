@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The PDF Viewer supports downloading the loaded PDF file. You can enable/disable the download using the following code snippet.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,7 +54,7 @@ pdfviewer.appendTo('#PdfViewer');
 pdfviewer.load('PDF_Succinctly.pdf', null);
 ```
 
-![Alt text](./images/download.png)
+![Alt text](../images/download.png)
 
 You can invoke download action using following code snippet.,
 

@@ -117,7 +117,7 @@ Now, add an HTML textarea element to act as the Rich Text Editor element in `in
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -166,7 +166,7 @@ Rich Text Editor can be initialized on div element as shown below
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -230,7 +230,7 @@ Initialize the Rich Text Editor on div element and set the `enable` field of [if
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

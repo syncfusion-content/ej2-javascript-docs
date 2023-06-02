@@ -75,7 +75,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 **Step 4:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the Essentials JS 2 script and style references.
 
-```
+```html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
@@ -111,7 +111,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 **Step 5:** Now, add the `Ribbon` element and initiate the `Syncfusion JavaScript Ribbon` control in the `index.html` by using the following code snippet.
 
-```
+```html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -129,7 +129,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 **Step 6:** In ribbon, the options are arranged in tabs for easy access. Now, add the ribbon tabs using the `tabs` property of ribbon like below.
 
-```
+```html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -151,7 +151,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 **Step 7:** Now, define ribbon groups under each tab, using the `groups` property of ribbon tab like below. The `orientation` property of ribbon group defines whether the collection of items will be rendered column-wise or row-wise.
 
-```
+```html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -176,7 +176,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 **Step 8:** Now, add the ribbon collections using the `collections` property of ribbon group to define each ribbon collection that contains one or more items. Define each ribbon item, using the `items` property of ribbon collection and use the `type` property of ribbon item to specify the type of control to be rendered, like a button, a drop-down button, a combo box, and more.
 
-```
+```html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 

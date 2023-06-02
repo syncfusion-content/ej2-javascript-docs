@@ -77,7 +77,7 @@ The toast message can be rendered by defining an `title` or `content`.
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

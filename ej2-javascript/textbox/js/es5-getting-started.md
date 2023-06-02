@@ -78,7 +78,7 @@ Add the HTML Input element with `e-input` class into your `index.html`.
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

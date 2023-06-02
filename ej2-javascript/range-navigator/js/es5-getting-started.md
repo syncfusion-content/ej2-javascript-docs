@@ -118,7 +118,7 @@ Now, you can start adding range selector control in the application. For getting
 
 In this document context we are going to use **ej2.min.js** which includes all the Essential JS 2 components and its dependent scripts.
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>

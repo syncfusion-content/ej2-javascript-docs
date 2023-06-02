@@ -116,7 +116,7 @@ pivotTableObj.appendTo('#PivotTable');
 
 Now, add an HTML div element which act as the pivot table element in `index.html` using the following code.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -207,7 +207,7 @@ pivotTableObj.appendTo('#PivotTable');
 
 Now, add an HTML div element which act as the pivot table element in `index.html` using the following code.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>

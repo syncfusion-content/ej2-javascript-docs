@@ -82,7 +82,7 @@ Add the HTML div tag with the `id` attribute as `carousel` to your `index.html` 
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>

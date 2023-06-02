@@ -84,7 +84,7 @@ The splitter can be initialized through div tag with child elements. Add the div
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

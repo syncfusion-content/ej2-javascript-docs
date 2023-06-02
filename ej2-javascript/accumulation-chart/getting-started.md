@@ -78,7 +78,7 @@ System.config({
 
 Add HTML div elements in your `index.html`. `[src/index.html]` for accumulation chart.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

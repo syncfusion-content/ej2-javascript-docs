@@ -68,7 +68,7 @@ Add the HTML Button tag with ID attribute as the `fab` to your `index.html` file
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

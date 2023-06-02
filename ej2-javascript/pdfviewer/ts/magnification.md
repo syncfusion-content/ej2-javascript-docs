@@ -15,7 +15,7 @@ The magnification tools of the PDF Viewer contains ZoomIn, ZoomOut, Zoom, FitPag
 
 The following code snippet describes how to enable the magnification in PDF Viewer.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -64,7 +64,7 @@ The following magnification options are available in the default toolbar of PDF 
 * [**FitPage**](https://ej2.syncfusion.com/documentation/api/pdfviewer/magnification/#fittopage):- Fits the page width with in the available view port size.
 * [**FitWidth**](https://ej2.syncfusion.com/documentation/api/pdfviewer/magnification/#fittowidth):- Fits the view port width based on the page content size.
 
-![Alt text ](./images/zoom.png)
+![Alt text ](../images/zoom.png)
 
 >PDF Viewer can support the zoom value ranges from 50 to 400.
 

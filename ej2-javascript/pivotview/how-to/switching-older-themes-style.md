@@ -19,7 +19,7 @@ From Volume 1, 2020 onwards Syncfusion has revised the theming and layout of the
 
 In current theme, the cells can be differentiated by their background colors. To avoid it, you need to override its background colors via simple CSS coding within your application. The below CSS selectors allow to achieve the same for material, fabric, bootstrap and bootstrap v4 themes.
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>       
@@ -43,7 +43,7 @@ In current theme, the cells can be differentiated by their background colors. To
 
 Meanwhile for high contrast theme, we need to set the following CSS.
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>       

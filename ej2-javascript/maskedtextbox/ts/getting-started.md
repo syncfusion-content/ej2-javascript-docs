@@ -40,7 +40,7 @@ Add the HTML input element that needs to be rendered as MaskedTextBox in the `in
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

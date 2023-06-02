@@ -88,7 +88,7 @@ Now, you can start adding Essential JS 2 TreeView component to the application. 
 
 `[src/index.html]`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

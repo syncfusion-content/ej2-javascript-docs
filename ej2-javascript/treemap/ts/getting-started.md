@@ -67,7 +67,7 @@ The Essential JS2 TreeMap control can be added to the application. To get starte
 
 Add an HTML div element to act as the TreeMap element in the **index.html** file using the following code.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

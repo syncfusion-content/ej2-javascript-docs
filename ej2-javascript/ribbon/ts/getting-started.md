@@ -15,7 +15,7 @@ This section explains how to create a simple Ribbon and configure its available 
 
 ## Dependencies
 
-The following list of dependencies are required to use the Ribbon component in your application.
+The following list of dependencies are required to use the Ribbon control in your application.
 
 ```js
 |-- @syncfusion/ej2-ribbon
@@ -32,7 +32,7 @@ The following list of dependencies are required to use the Ribbon component in y
 
 ## Setup your development environment
 
-To get started with the Ribbon component, clone [Essential JS 2 quickstart](https://github.com/syncfusion/ej2-quickstart), and install the npm packages using the following commands.
+To get started with the Ribbon control, clone [Essential JS 2 quickstart](https://github.com/syncfusion/ej2-quickstart), and install the npm packages using the following commands.
 
 ```
 git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
@@ -40,9 +40,9 @@ cd quickstart
 npm install
 ```
 
-> The project is pre-configured with common settings (`src/styles/styles.css`, `system.config.js`) to start all the Essential JS 2 components.
+> The project is pre-configured with common settings (`src/styles/styles.css`, `system.config.js`) to start all the Essential JS 2 controls.
 
-* Refer to the [`Ribbon component dependencies`](./getting-started#dependencies) in `system.config.js` configuration file.
+* Refer to the [`Ribbon control dependencies`](./getting-started#dependencies) in `system.config.js` configuration file.
 
 `[src/system.config.js]`
 
@@ -77,7 +77,7 @@ System.import("app.ts");
 
 ## Adding Style sheet to the Application
 
-To render Ribbon component, need to import navigations and its dependent components styles as given below in `styles.css`.
+To render Ribbon control, need to import navigations and its dependent controls styles as given below in `styles.css`.
 
 ```
 @import "../node_modules/@syncfusion/ej2-base/styles/material.css";
@@ -91,7 +91,7 @@ To render Ribbon component, need to import navigations and its dependent compone
 @import "../node_modules/@syncfusion/ej2-ribbon/styles/material.css";
 ```
 
-## Adding Ribbon component to the application
+## Adding Ribbon control to the application
 
 Add the HTML div tag with the `id` attribute as `ribbon` to your `index.html` file.
 
@@ -123,7 +123,7 @@ Add the HTML div tag with the `id` attribute as `ribbon` to your `index.html` fi
 </html>
 ```
 
-Import the Ribbon component in your `app.ts` file and initialize it with the `#ribbon`.
+Import the Ribbon control in your `app.ts` file and initialize it with the `#ribbon`.
 
 `[src/app/app.ts]`
 

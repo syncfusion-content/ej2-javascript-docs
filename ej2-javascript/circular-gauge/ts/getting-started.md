@@ -65,7 +65,7 @@ The Essential JS2 Circular Gauge control can be added to the application. To get
 
 Add an HTML div element to act as the Circular Gauge element in the **index.html** file using the following code.
 
-```
+```html
 
   <!DOCTYPE html>
   <html lang="en">

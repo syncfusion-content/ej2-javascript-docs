@@ -72,7 +72,7 @@ The combined CSS files are available in the Essential JS 2 package root folder. 
 
 ```
 
-> To add the individual control CSS, refer to the [individual control theme](../appearance/theme/#referring-individual-control-theme) section. To use the combined control styles, make use of Syncfusion [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in the application.
+> To add the individual control CSS, refer to the [individual control theme](../appearance/theme#referring-individual-control-theme) section. To use the combined control styles, make use of Syncfusion [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in the application.
 
 ## Add Message control
 

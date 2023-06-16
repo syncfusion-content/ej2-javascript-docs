@@ -31,7 +31,7 @@ In the below Wizard sample, each Tab is integrated with required components to c
 
 Create the following contents for each tab in the wizard.
 1. **Search tab:**
-   Created with [DropDownList](../../../drop-down-list/data-binding/) to select the source, destination and type of ticket. A [DatePicker](../../../datepicker/getting-started/) for choosing the date of journey.
+   Created with [DropDownList](../../drop-down-list/data-binding/) to select the source, destination and type of ticket. A [DatePicker](../../datepicker/getting-started/) for choosing the date of journey.
 2. **Train tab:**
    Based on the selected start and end point, populated Grid with random list of available seats and train list. Initially define the columns and row selected event for validating, after the source and destination chosen update the [dataSource](../../api/grid#datasource) for the Grid.
 3. **Passenger tab:**

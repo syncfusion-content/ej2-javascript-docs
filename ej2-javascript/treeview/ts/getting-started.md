@@ -80,7 +80,7 @@ Combined CSS files are available in the Essential JS 2 package root folder. This
 @import '../../node_modules/@syncfusion/ej2-buttons/styles/material.css';
 ```
 
-> To refer individual component CSS, please refer to the [Individual Component theme files](../appearance/theme/#referring-individual-control-theme) section. If you want to refer the combined component styles, please make use of our [`CRG`](https://ej2crg.azurewebsites.net/) (Custom Resource Generator) in your application.
+> To refer individual component CSS, please refer to the [Individual Component theme files](../appearance/theme/#referring-individual-control-theme) section. If you want to refer the combined component styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
 ## Adding TreeView component
 

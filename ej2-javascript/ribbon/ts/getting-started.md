@@ -237,6 +237,9 @@ npm start
 The following example illustrates how tabs, groups, collections, and items are used in a ribbon control to form the ribbon layout.
 
 {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/ribbon/getting-started-cs1/index.ts %}
+{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/ribbon/getting-started-cs1/index.html %}
 {% endhighlight %}

@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 The Menu provides a set of [`events`](../../api/menu#events) to enable users to customize it.
 
-The available events are [`beforeOpen`](../../api/menu/#beforeclose), [`beforeClose`](../..api//menu/#beforeopen), [`onClose`](../../api/menu/#onclose), [`onOpen`](../../api/menu/#onopen), and [`select`](../..api//menu/#select).
+The available events are [`beforeOpen`](../../api/menu/#beforeopen), [`beforeClose`](../..api/menu/#beforeclose), [`onClose`](../../api/menu/#onclose), [`onOpen`](../../api/menu/#onopen), and [`select`](../..api//menu/#select).
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

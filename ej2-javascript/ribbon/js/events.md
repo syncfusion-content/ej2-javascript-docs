@@ -33,6 +33,22 @@ var tabs = [{
             }]
         }]
     }]
+},
+{
+    header: "View",
+    groups: [{
+        header: "Views",
+        collections: [
+          {
+            items: [{
+                type: "Button",
+                buttonSettings: {
+                    content: "Print Layout",
+                    iconCss: "e-icons e-print"
+                }
+            }]
+        }]
+    }]
 }];
 
 var ribbon = new ej.ribbon.Ribbon({
@@ -60,6 +76,22 @@ var tabs = [{
                 buttonSettings: {
                     content: "Cut",
                     iconCss: "e-icons e-cut"
+                }
+            }]
+        }]
+    }]
+},
+{
+    header: "View",
+    groups: [{
+        header: "Views",
+        collections: [
+          {
+            items: [{
+                type: "Button",
+                buttonSettings: {
+                    content: "Print Layout",
+                    iconCss: "e-icons e-print"
                 }
             }]
         }]
@@ -146,6 +178,7 @@ var tabs = [{
     header: "Home",
     groups: [{
         header: "Clipboard",
+        showLauncherIcon: true,
         collections: [
           {
             items: [{
@@ -625,6 +658,7 @@ var tabs = [{
                 comboBoxSettings: {
                     dataSource: fontStyle,
                     index: 3,
+                    allowFiltering: true,
                     filtering: function (e) {
                       // Your required action here
                     }
@@ -925,7 +959,7 @@ var tabs = [{
           {
             items: [{
                 type: "SplitButton",
-                dropDownSettings: {
+                splitButtonSettings: {
                     content: "Header",
                     iconCss: "e-icons e-header",
                     items: [{ text: "Insert Header" }, { text: "Edit Header" }, { text: "Remove Header" }],
@@ -955,7 +989,7 @@ var tabs = [{
           {
             items: [{
                 type: "SplitButton",
-                dropDownSettings: {
+                splitButtonSettings: {
                     content: "Header",
                     iconCss: "e-icons e-header",
                     items: [{ text: "Insert Header" }, { text: "Edit Header" }, { text: "Remove Header" }],
@@ -985,7 +1019,7 @@ var tabs = [{
           {
             items: [{
                 type: "SplitButton",
-                dropDownSettings: {
+                splitButtonSettings: {
                     content: "Header",
                     iconCss: "e-icons e-header",
                     items: [{ text: "Insert Header" }, { text: "Edit Header" }, { text: "Remove Header" }],
@@ -1015,7 +1049,7 @@ var tabs = [{
           {
             items: [{
                 type: "SplitButton",
-                dropDownSettings: {
+                splitButtonSettings: {
                     content: "Header",
                     iconCss: "e-icons e-header",
                     items: [{ text: "Insert Header" }, { text: "Edit Header" }, { text: "Remove Header" }],
@@ -1045,7 +1079,7 @@ var tabs = [{
           {
             items: [{
                 type: "SplitButton",
-                dropDownSettings: {
+                splitButtonSettings: {
                     content: "Header",
                     iconCss: "e-icons e-header",
                     items: [{ text: "Insert Header" }, { text: "Edit Header" }, { text: "Remove Header" }],
@@ -1075,7 +1109,7 @@ var tabs = [{
           {
             items: [{
                 type: "SplitButton",
-                dropDownSettings: {
+                splitButtonSettings: {
                     content: "Header",
                     iconCss: "e-icons e-header",
                     items: [{ text: "Insert Header" }, { text: "Edit Header" }, { text: "Remove Header" }],
@@ -1105,7 +1139,7 @@ var tabs = [{
           {
             items: [{
                 type: "SplitButton",
-                dropDownSettings: {
+                splitButtonSettings: {
                     content: "Header",
                     iconCss: "e-icons e-header",
                     items: [{ text: "Insert Header" }, { text: "Edit Header" }, { text: "Remove Header" }],
@@ -1135,7 +1169,7 @@ var tabs = [{
           {
             items: [{
                 type: "SplitButton",
-                dropDownSettings: {
+                splitButtonSettings: {
                     content: "Header",
                     iconCss: "e-icons e-header",
                     items: [{ text: "Insert Header" }, { text: "Edit Header" }, { text: "Remove Header" }],

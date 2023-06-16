@@ -35,6 +35,22 @@ let tabs: RibbonTabModel[] = [{
             }]
         }]
     }]
+},
+{
+    header: "View",
+    groups: [{
+        header: "Views",
+        collections: [
+          {
+            items: [{
+                type: RibbonItemType.Button,
+                buttonSettings: {
+                    content: "Print Layout",
+                    iconCss: "e-icons e-print"
+                }
+            }]
+        }]
+    }]
 }];
 
 let ribbon: Ribbon = new Ribbon({
@@ -64,6 +80,22 @@ let tabs: RibbonTabModel[] = [{
                 buttonSettings: {
                     content: "Cut",
                     iconCss: "e-icons e-cut"
+                }
+            }]
+        }]
+    }]
+},
+{
+    header: "View",
+    groups: [{
+        header: "Views",
+        collections: [
+          {
+            items: [{
+                type: RibbonItemType.Button,
+                buttonSettings: {
+                    content: "Print Layout",
+                    iconCss: "e-icons e-print"
                 }
             }]
         }]
@@ -156,6 +188,7 @@ let tabs: RibbonTabModel[] = [{
     header: "Home",
     groups: [{
         header: "Clipboard",
+        showLauncherIcon: true,
         collections: [
           {
             items: [{
@@ -691,6 +724,7 @@ let tabs: RibbonTabModel[] = [{
                 comboBoxSettings: {
                     dataSource: fontStyle,
                     index: 3,
+                    allowFiltering: true,
                     filtering: function (e: FilteringEventArgs) {
                       // Your required action here
                     }
@@ -1020,7 +1054,7 @@ let tabs: RibbonTabModel[] = [{
           {
             items: [{
                 type: RibbonItemType.SplitButton,
-                dropDownSettings: {
+                splitButtonSettings: {
                     content: "Header",
                     iconCss: "e-icons e-header",
                     items: [{ text: "Insert Header" }, { text: "Edit Header" }, { text: "Remove Header" }],
@@ -1053,7 +1087,7 @@ let tabs: RibbonTabModel[] = [{
           {
             items: [{
                 type: RibbonItemType.SplitButton,
-                dropDownSettings: {
+                splitButtonSettings: {
                     content: "Header",
                     iconCss: "e-icons e-header",
                     items: [{ text: "Insert Header" }, { text: "Edit Header" }, { text: "Remove Header" }],
@@ -1086,7 +1120,7 @@ let tabs: RibbonTabModel[] = [{
           {
             items: [{
                 type: RibbonItemType.SplitButton,
-                dropDownSettings: {
+                splitButtonSettings: {
                     content: "Header",
                     iconCss: "e-icons e-header",
                     items: [{ text: "Insert Header" }, { text: "Edit Header" }, { text: "Remove Header" }],
@@ -1119,7 +1153,7 @@ let tabs: RibbonTabModel[] = [{
           {
             items: [{
                 type: RibbonItemType.SplitButton,
-                dropDownSettings: {
+                splitButtonSettings: {
                     content: "Header",
                     iconCss: "e-icons e-header",
                     items: [{ text: "Insert Header" }, { text: "Edit Header" }, { text: "Remove Header" }],
@@ -1152,7 +1186,7 @@ let tabs: RibbonTabModel[] = [{
           {
             items: [{
                 type: RibbonItemType.SplitButton,
-                dropDownSettings: {
+                splitButtonSettings: {
                     content: "Header",
                     iconCss: "e-icons e-header",
                     items: [{ text: "Insert Header" }, { text: "Edit Header" }, { text: "Remove Header" }],
@@ -1184,7 +1218,7 @@ let tabs: RibbonTabModel[] = [{
           {
             items: [{
                 type: RibbonItemType.SplitButton,
-                dropDownSettings: {
+                splitButtonSettings: {
                     content: "Header",
                     iconCss: "e-icons e-header",
                     items: [{ text: "Insert Header" }, { text: "Edit Header" }, { text: "Remove Header" }],
@@ -1217,7 +1251,7 @@ let tabs: RibbonTabModel[] = [{
           {
             items: [{
                 type: RibbonItemType.SplitButton,
-                dropDownSettings: {
+                splitButtonSettings: {
                     content: "Header",
                     iconCss: "e-icons e-header",
                     items: [{ text: "Insert Header" }, { text: "Edit Header" }, { text: "Remove Header" }],
@@ -1250,7 +1284,7 @@ let tabs: RibbonTabModel[] = [{
           {
             items: [{
                 type: RibbonItemType.SplitButton,
-                dropDownSettings: {
+                splitButtonSettings: {
                     content: "Header",
                     iconCss: "e-icons e-header",
                     items: [{ text: "Insert Header" }, { text: "Edit Header" }, { text: "Remove Header" }],
@@ -1274,7 +1308,9 @@ ribbon.appendTo("#ribbon");
 The [beforeClose](../api/ribbon/fileMenuSettings/#beforeclose) event is triggered before closing the file menu popup.
 
 ```typescript
-import { Ribbon, RibbonTabModel, RibbonItemType, FileMenuBeforeOpenCloseEventArgs } from "@syncfusion/ej2-ribbon";
+import { Ribbon, RibbonTabModel, RibbonItemType, RibbonFileMenu, FileMenuBeforeOpenCloseEventArgs } from "@syncfusion/ej2-ribbon";
+
+Ribbon.Inject(RibbonFileMenu);
 
 let tabs: RibbonTabModel[] = [{
     header: "Home",
@@ -1319,7 +1355,9 @@ ribbon.appendTo("#ribbon");
 The [beforeOpen](../api/ribbon/fileMenuSettings/#beforeopen) event is triggered before opening the file menu popup.
 
 ```typescript
-import { Ribbon, RibbonTabModel, RibbonItemType, FileMenuBeforeOpenCloseEventArgs } from "@syncfusion/ej2-ribbon";
+import { Ribbon, RibbonTabModel, RibbonItemType, RibbonFileMenu, FileMenuBeforeOpenCloseEventArgs } from "@syncfusion/ej2-ribbon";
+
+Ribbon.Inject(RibbonFileMenu);
 
 let tabs: RibbonTabModel[] = [{
     header: "Home",
@@ -1364,7 +1402,9 @@ ribbon.appendTo("#ribbon");
 The [beforeItemRender](../api/ribbon/fileMenuSettings/#beforeitemrender) event is triggered while rendering each ribbon file menu item.
 
 ```typescript
-import { Ribbon, RibbonTabModel, RibbonItemType, FileMenuEventArgs } from "@syncfusion/ej2-ribbon";
+import { Ribbon, RibbonTabModel, RibbonItemType, RibbonFileMenu, FileMenuEventArgs } from "@syncfusion/ej2-ribbon";
+
+Ribbon.Inject(RibbonFileMenu);
 
 let tabs: RibbonTabModel[] = [{
     header: "Home",
@@ -1409,7 +1449,9 @@ ribbon.appendTo("#ribbon");
 The [open](../api/ribbon/fileMenuSettings/#open) event is triggered when file menu popup is opened.
 
 ```typescript
-import { Ribbon, RibbonTabModel, RibbonItemType, FileMenuOpenCloseEventArgs } from "@syncfusion/ej2-ribbon";
+import { Ribbon, RibbonTabModel, RibbonItemType, RibbonFileMenu, FileMenuOpenCloseEventArgs } from "@syncfusion/ej2-ribbon";
+
+Ribbon.Inject(RibbonFileMenu);
 
 let tabs: RibbonTabModel[] = [{
     header: "Home",
@@ -1454,7 +1496,9 @@ ribbon.appendTo("#ribbon");
 The [close](../api/ribbon/fileMenuSettings/#close) event is triggered when file menu popup is closed.
 
 ```typescript
-import { Ribbon, RibbonTabModel, RibbonItemType, FileMenuOpenCloseEventArgs } from "@syncfusion/ej2-ribbon";
+import { Ribbon, RibbonTabModel, RibbonItemType, RibbonFileMenu, FileMenuOpenCloseEventArgs } from "@syncfusion/ej2-ribbon";
+
+Ribbon.Inject(RibbonFileMenu);
 
 let tabs: RibbonTabModel[] = [{
     header: "Home",
@@ -1499,7 +1543,9 @@ ribbon.appendTo("#ribbon");
 The [select](../api/ribbon/fileMenuSettings/#select) event is triggered while selecting an item in ribbon file menu.
 
 ```typescript
-import { Ribbon, RibbonTabModel, RibbonItemType, FileMenuEventArgs } from "@syncfusion/ej2-ribbon";
+import { Ribbon, RibbonTabModel, RibbonItemType, RibbonFileMenu, FileMenuEventArgs } from "@syncfusion/ej2-ribbon";
+
+Ribbon.Inject(RibbonFileMenu);
 
 let tabs: RibbonTabModel[] = [{
     header: "Home",

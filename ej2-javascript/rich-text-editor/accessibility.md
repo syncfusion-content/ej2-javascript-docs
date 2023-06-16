@@ -62,5 +62,5 @@ The Rich Text Editor element is assigned the role of `application`.
 
 ## See Also
 
-* [Globalization](/rich-text-editor/globalization.html)
+* [Globalization](./globalization)
 * [Keyboard Support](./keyboard-support/#html-formation-key-config-list)

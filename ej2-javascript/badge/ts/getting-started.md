@@ -76,4 +76,4 @@ The following example shows a basic badge component.
 
 ## See Also
 
-[Types of Badge](./types/)
+[Types of Badge](../types)

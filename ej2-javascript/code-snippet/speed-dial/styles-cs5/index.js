@@ -11,8 +11,7 @@ var items = [
 var speeddial = new ej.buttons.SpeedDial({
     openIconCss:'e-icons e-edit',
     items: items,
-    target: '#targetElement',
-    title: 'Edit'
+    target: '#targetElement'
 });
 
 // Render initialized SpeedDial

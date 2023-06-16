@@ -46,7 +46,7 @@ var fab = new ej.buttons.Fab({
 fab.appendTo('#fab');
 
 // onclick event handler
-fab.element.onclick = (): void => {
+fab.element.onclick = function() {
     //Your required action here
 };
 ```

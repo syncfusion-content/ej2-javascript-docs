@@ -19,22 +19,22 @@ There are two types of Dialog:
 
 ## Key Features
 
-* **[Modal](./getting-started/#modal-dialog)**: - Prevents the interaction to the parent application.
+* **[Modal](./api-dialogModel.md)**: - Prevents the interaction to the parent application.
 
-* **[Buttons](./getting-started/#enable-footer-with-buttons)**: - Provided the built-in support to render the buttons at Dialog footer.
+* **[Buttons](./api-buttonProps.md)**: - Provided the built-in support to render the buttons at Dialog footer.
 
-* **[Templates](./template/)**: - Customizable Dialog header and footer through the
+* **[Templates](./template)**: - Customizable Dialog header and footer through the
 template.
 
-* **[Draggable](./getting-started/#draggable)**: - Supports to drag the Dialog within the page or container.
+* **[Draggable](../../getting-started#draggable)**: - Supports to drag the Dialog within the page or container.
 
-* **[Positioning](./getting-started/#positioning)**: - Provided support to
+* **[Positioning](../../getting-started#positioning)**: - Provided support to
 position on built-in 9 places or any custom location.
 
-* **[Animation](./animation/)**: - Provided built-in animation support on open & close the Dialog with customization.
+* **[Animation](./animation)**: - Provided built-in animation support on open & close the Dialog with customization.
 
-* **[Localization](./localization/)**: - Supports to localize the default close icon title text to different cultures.
+* **[Localization](./localization)**: - Supports to localize the default close icon title text to different cultures.
 
-* **[Accessibility](./accessibility/)**: - Built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications.
+* **[Accessibility](./accessibility)**: - Built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications.
 
-* **[Keyboard Interaction](./accessibility/#keyboard-interaction)**: - The Dialog can be intractable through keyboard.
+* **[Keyboard Interaction](./accessibility#keyboard-interaction)**: - The Dialog can be intractable through keyboard.

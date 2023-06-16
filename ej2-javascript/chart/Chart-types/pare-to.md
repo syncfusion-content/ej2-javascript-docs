@@ -45,5 +45,5 @@ The initial values are represented by column chart and the cumulative values are
 
 ## See Also
 
-* [Data label](./data-labels/)
-* [Tooltip](./tool-tip/)
+* [Data label](../data-labels/)
+* [Tooltip](../tool-tip/)

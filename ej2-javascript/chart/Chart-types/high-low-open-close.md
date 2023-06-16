@@ -77,5 +77,5 @@ In `hiloOpenClose` series, `bullFillColor` property is used to fill the segment 
 
 ## See Also
 
-* [Data label](./data-labels/)
-* [Tooltip](./tool-tip/)
+* [Data label](../data-labels/)
+* [Tooltip](../tool-tip/)

@@ -86,7 +86,7 @@ This can be referenced in your `[src/styles/styles.css]` using the following cod
   ```
 
 > To know more about individual component CSS, refer to the
-[Individual Component theme files](../../base/theme.html#individual-component-theme-files) section.
+[Individual Component theme files](../appearance/theme/#individual-control-theme-cdn-reference) section.
 
 ## Adding TreeGrid component
 

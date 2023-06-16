@@ -75,5 +75,5 @@ The negative changes of waterfall charts are represented by using `negativeFillC
 
 ## See Also
 
-* [Data label](./data-labels/)
-* [Tooltip](./tool-tip/)
+* [Data label](../data-labels/)
+* [Tooltip](../tool-tip/)

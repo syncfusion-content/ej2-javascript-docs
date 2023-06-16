@@ -30,7 +30,7 @@ var speeddial= new ej.buttons.SpeedDial({
     items: items,
     content: 'Edit',
     target: '#targetElement',
-    clicked: (args:SpeedDialItemEventArgs)=> {
+    clicked: (args)=> {
        //Your required action here
     }
 });
@@ -82,7 +82,7 @@ var speeddial = new ej.buttons.SpeedDial({
     items: items,
     content: 'Edit',
     target: '#targetElement',
-    beforeOpen: (args:BeforeOpenCloseEventArgs)=> {
+    beforeOpen: (args)=> {
        //Your required action here
     }
 });
@@ -108,7 +108,7 @@ var speeddial = new ej.buttons.SpeedDial({
     items: items,
     content: 'Edit',
     target: '#targetElement',
-    onOpen: (args:OpenCloseEventArgs)=> {
+    onOpen: (args)=> {
        //Your required action here
     }
 });
@@ -134,7 +134,7 @@ var speeddial = new ej.buttons.SpeedDial({
     items: items,
     content: 'Edit',
     target: '#targetElement',
-    beforeClose: (args:BeforeOpenCloseEventArgs)=> {
+    beforeClose: (args)=> {
        //Your required action here
     }
 });
@@ -160,7 +160,7 @@ var speeddial = new ej.buttons.SpeedDial({
     items: items,
     content: 'Edit',
     target: '#targetElement',
-    onClose: (args:OpenCloseEventArgs)=> {
+    onClose: (args)=> {
        //Your required action here
     }
 });
@@ -186,7 +186,7 @@ var speeddial = new ej.buttons.SpeedDial({
     items: items,
     content: 'Edit',
     target: '#targetElement',
-    beforeItemRender: (args:SpeedDialItemEventArgs)=> {
+    beforeItemRender: (args)=> {
        //Your required action here
     }
 });

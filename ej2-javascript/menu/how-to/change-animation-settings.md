@@ -20,7 +20,7 @@ To change the animation of the Menu, [`animationSettings`](../../api/menu/menuAn
 | ZoomIn | Specifies the sub menu transform with zoom in effect. |
 | FadeIn | Specifies the sub menu transform with fade in effect. |
 
-The following sample illustrates how to open Menu with `FadeIn` [`effect`](../../api/menu/menuAnimationSettingsModel/#effect) with the [`duration`](../../menu/menuAnimationSettingsModel/#duration) of `800ms`. Also we can set [`easing`](../../api/menuAnimationSettingsModel/#easing) for menu items.
+The following sample illustrates how to open Menu with `FadeIn` [`effect`](../../api/menu/menuAnimationSettingsModel/#effect) with the [`duration`](../../api/menu/menuAnimationSettingsModel/#duration) of `800ms`. Also we can set [`easing`](../../api/menu/menuAnimationSettingsModel/#easing) for menu items.
 
 {% if page.publishingplatform == "typescript" %}
 

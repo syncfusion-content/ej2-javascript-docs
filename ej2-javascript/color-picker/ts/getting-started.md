@@ -37,7 +37,7 @@ npm install
 
 > The project is preconfigured with common settings (`src/styles/styles.css`, `system.config.js`) to start all the Essential JS 2 components.
 
-* Refer to the [`Colorpicker component dependencies`](./getting-started#dependencies) in `system.config.js` configuration file.
+* Refer to the [`Colorpicker component dependencies`](getting-started#dependencies) in `system.config.js` configuration file.
 
 `[src/system.config.js]`
 
@@ -178,9 +178,9 @@ The following sample shows the inline type rendering of ColorPicker.
           
 {% previewsample "page.domainurl/code-snippet/colorpicker/getting-started/inline-cs1" %}
 
->> The `showButtons` property is disabled in this sample because the control buttons are not needed for inline type. To know about the control buttons functionality, refer to the [`showButtons`](./how-to/hide-control-buttons) sample.
+>> The `showButtons` property is disabled in this sample because the control buttons are not needed for inline type. To know about the control buttons functionality, refer to the [`showButtons`](../how-to/hide-control-buttons) sample.
 
 ## See Also
 
-* [Set color value](./mode-and-value?lang=typescript#color-value)
+* [Set color value](./mode-and-value#color-value)
 * [ColorPicker customization](./how-to/customize-colorpicker)

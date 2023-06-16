@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Item configuration in ##Platform_Name## Toolbar control
 
-The Toolbar can be rendered by defining an array of [`items`](../api/toolbar#items).  Items can be constructed with the following built-in command types or item template.
+The Toolbar can be rendered by defining an array of [`items`](../api/toolbar/#items).  Items can be constructed with the following built-in command types or item template.
 
 ## Button
 

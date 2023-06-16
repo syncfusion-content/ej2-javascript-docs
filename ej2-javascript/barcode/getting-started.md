@@ -79,7 +79,7 @@ Combined CSS files are available in the Essential JS 2 package root folder. This
 @import '../../node_modules/@syncfusion/ej2/material.css';
 ```
 
-> To know about individual component CSS, please refer to [Individual Component theme files](../../base/theme.html#individual-component-theme-files) section.
+> To know about individual component CSS, please refer to [Individual Component theme files](https://ej2.syncfusion.com/javascript/documentation/appearance/theme-studio/#filtering-a-specific-list-of-controls) section.
 
 ## Adding Barcode Generator control
 

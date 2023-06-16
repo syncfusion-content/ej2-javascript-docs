@@ -20,7 +20,7 @@ The rating control triggers the [`beforeItemRender`](../api/rating#beforeitemren
 ```js
 // Initialize the Rating control.
 var rating = new ej.inputs.Rating({
-    beforeItemRender: (args: RatingItemEventArgs)=> {
+    beforeItemRender: (args)=> {
        //Your required action here
     }
 });
@@ -54,7 +54,7 @@ The rating control triggers the [`onItemHover`](../api/rating#onitemhover) event
 ```js
 // Initialize the Rating control.
 var rating = new ej.inputs.Rating({
-    onItemHover: (args: RatingHoverEventArgs)=> {
+    onItemHover: (args)=> {
        //Your required action here
     }
 });
@@ -71,7 +71,7 @@ The rating control triggers the [`valueChanged`](../api/rating/#valuechanged) ev
 ```js
 // Initialize the Rating control.
 var rating = new ej.inputs.Rating({
-    valueChanged: (args: RatingChangedEventArgs )=> {
+    valueChanged: (args)=> {
        //Your required action here
     }
 });

@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 The Ribbon control provides a built-in file menu that allows you to add menu items for performing specific actions. The file menu can be enabled by setting the [fileMenu](https://ej2.syncfusion.com/javascript/documentation/api/ribbon#filemenu) property.
 
-## Visibility
+## Visibility state
 
 You can show the file menu by setting the [visible](https://ej2.syncfusion.com/javascript/documentation/api/ribbon/fileMenuSettingsModel/#visible) property to `true`. By default, the file menu is hidden.
 

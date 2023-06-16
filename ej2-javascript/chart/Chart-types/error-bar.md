@@ -199,5 +199,5 @@ To customise the error bar color for individual errors, use the [`errorBarColorM
 
 ## See Also
 
-* [Data label](./data-labels/)
-* [Tooltip](./tool-tip/)
+* [Data label](../data-labels/)
+* [Tooltip](../tool-tip/)

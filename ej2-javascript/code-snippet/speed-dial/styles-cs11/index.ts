@@ -13,8 +13,7 @@ let items: SpeedDialItemModel[] = [
 let speeddial: SpeedDial = new SpeedDial({
     openIconCss: 'e-icons e-edit',
     items: items,
-    target: '#targetElement',
-    title: 'Edit'
+    target: '#targetElement'
 });
 
 // Render initialized SpeedDial

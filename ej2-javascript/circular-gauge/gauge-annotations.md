@@ -113,4 +113,4 @@ As the annotation allows you to place any custom element, we can initialize a ga
 
 ## See also
 
-* [Tooltip for Annotation](https://ej2.syncfusion.com/documentation/circular-gauge/gauge-user-interaction/tooltip-for-ranges-and-annotations/)
+* [Tooltip for Annotation](https://ej2.syncfusion.com/documentation/circular-gauge/gauge-user-interaction/#tooltip-for-annotation)

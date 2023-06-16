@@ -111,5 +111,5 @@ You can customize the radius of the polar series using [`coefficient`](../api/ch
 
 ## See Also
 
-* [Data label](./data-labels/)
-* [Tooltip](./tool-tip/)
+* [Data label](../data-labels/)
+* [Tooltip](../tool-tip/)

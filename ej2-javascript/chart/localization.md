@@ -48,7 +48,7 @@ Localization library allows to localize the default text content of Chart. In Ch
 
 To load translation object in an application use load function of L10n class.
 
-For more information about localization, refer this [`localization`](http://ej2.syncfusion.com/development/react/documentation/base/localization.html).
+For more information about localization, refer this [`localization`](https://ej2.syncfusion.com/documentation/common/localization/).
 
 {% if page.publishingplatform == "typescript" %}
 

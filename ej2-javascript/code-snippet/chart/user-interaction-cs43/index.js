@@ -13,29 +13,38 @@ for (i = 1; i < 500; i++) {
 }
 var chart = new ej.charts.Chart({
 
-        chartArea : {border : {width : 0}},
-        primaryXAxis: {
-            valueType: 'DateTime',
-        },
-        series: [
-            {
-                type: 'Area',
-                dataSource: series1,
-                name: 'Product X',
-                xName: 'x',
-                yName: 'y',
-                border: { width: 0.5, color: '#00bdae' },
-                animation: { enable: false }
-            },
-        ],
-        //Zooming for chart
-        zoomSettings:
+    chartArea: { border: { width: 0 } },
+    primaryXAxis: {
+        valueType: 'DateTime',
+        scrollbarSettings: {
+            enable: true,
+            enableZoom: false,
+            height: 14,
+            trackRadius: 8,
+            scrollbarRadius: 8,
+            gripColor: 'transparent',
+            trackColor: 'yellow',
+            scrollbarColor: 'red'
+        }
+    },
+    series: [
         {
-            enableSelectionZooming: true,
-            enableScrollbar: true,
-            mode:'X'
+            type: 'Area',
+            dataSource: series1,
+            name: 'Product X',
+            xName: 'x',
+            yName: 'y',
+            border: { width: 0.5, color: '#00bdae' },
+            animation: { enable: false }
         },
-        title: 'Sales History of Product X',
-        legendSettings: { visible: false },
+    ],
+    //Zooming for chart
+    zoomSettings:
+    {
+        enableSelectionZooming: true,
+        enableScrollbar: true,
+        mode: 'X'
+    },
+    title: 'Sales History of Product X',
+    legendSettings: { visible: false },
 }, '#element');
-

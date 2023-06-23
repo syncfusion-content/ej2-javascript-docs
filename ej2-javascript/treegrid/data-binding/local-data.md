@@ -55,6 +55,8 @@ The following code example shows you how to bind the hierarchical local data int
 {% previewsample "page.domainurl/code-snippet/treegrid/data-binding-cs2" %}
 {% endif %}
 
+> * Remote data binding is not supported for Hierarchy Data.
+
 ### Self-Referential data binding (Flat data)
 
 TreeGrid is rendered from Self-Referential data structures by providing two fields, ID field and parent ID field.

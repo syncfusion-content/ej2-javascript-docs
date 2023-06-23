@@ -1,9 +1,9 @@
 
 
 
-import { RichTextEditor, Toolbar, HtmlEditor } from '@syncfusion/ej2-richtexteditor';
+import { RichTextEditor, Toolbar, HtmlEditor, Image, QuickToolbar, Link, FormatPainter } from '@syncfusion/ej2-richtexteditor';
 
-RichTextEditor.Inject(Toolbar, HtmlEditor);
+RichTextEditor.Inject(Toolbar, HtmlEditor, Image, QuickToolbar, Link, FormatPainter);
 
 let defaultRTE: RichTextEditor = new RichTextEditor({
     toolbarSettings: {
@@ -12,7 +12,7 @@ let defaultRTE: RichTextEditor = new RichTextEditor({
         'LowerCase', 'UpperCase', '|',
         'Formats', 'Alignments', 'OrderedList', 'UnorderedList',
         'Outdent', 'Indent', '|',
-        'CreateLink', 'Image', '|', 'ClearFormat', 'Print',
+        'CreateLink', 'Image', '|', 'FormatPainter', 'ClearFormat', 'Print',
         'SourceCode', 'FullScreen', '|', 'Undo', 'Redo']
     }});
 defaultRTE.appendTo('#defaultRTE');

@@ -15,7 +15,7 @@ domainurl: ##DomainURL##
 
 StockChart will display details about the points through tooltip, when the mouse is moved over the point.
 
-## Default Tooltip
+## Default tooltip
 
 By default, tooltip is not visible. Enable the tooltip by setting [`enable`](../api/chart/tooltipSettings/#enable) property to true and by injecting [`Tooltip`](../api/stock-chart/stockChartModel/#tooltip) module using `StockChart.Inject(Tooltip)`.
 
@@ -48,7 +48,7 @@ By default, tooltip is not visible. Enable the tooltip by setting [`enable`](../
 
 <!-- markdownlint-disable MD013 -->
 
-## Format the Tooltip
+## Format the tooltip
 
 <!-- markdownlint-disable MD013 -->
 
@@ -81,7 +81,38 @@ By default, tooltip shows information of x and y value in points. In addition to
 {% previewsample "page.domainurl/code-snippet/stock-chart/getting-started-cs29" %}
 {% endif %}
 
-## Customize the Appearance of Tooltip
+## Position the tooltip
+
+By default, the tooltip is positioned at the left side of the stock chart. You can move the tooltip along with the mouse by setting **Nearest** to the [`position`](../api/stock-chart/stockTooltipSettings/#position) property.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/stock-chart/getting-started-cs37/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/stock-chart/getting-started-cs37/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/stock-chart/getting-started-cs37" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/stock-chart/getting-started-cs37/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/stock-chart/getting-started-cs37/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/stock-chart/getting-started-cs37" %}
+{% endif %}
+
+## Customize the appearance of the tooltip
 
 The [`fill`](../api/chart/tooltipSettingsModel/#fill) and [`border`](../api/chart/tooltipSettingsModel/#border) properties are used to customize the background color and border of the tooltip respectively. The [`textStyle`](../api/chart/tooltipSettingsModel/#textStyle) property in the tooltip is used to customize the font of the tooltip text.
 

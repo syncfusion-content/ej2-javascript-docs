@@ -43,7 +43,38 @@ The initial values are represented by column chart and the cumulative values are
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs107" %}
 {% endif %}
 
-## See Also
+## Pareto customization
+
+The pareto line series can be customized by using the [`marker`](../api/chart/paretoOptions/#marker), [`width`](../api/chart/paretoOptions/#width), [`dashArray`](../api/chart/paretoOptions/#dasharray), and [`fill`](../api/chart/paretoOptions/#fill) properties in the [`paretoOptions`](../api/chart/paretoOptions/). The secondary axis for the pareto series can be shown or hidden using the [`showAxis`](../api/chart/paretoOptions/#showaxis) property.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs173/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs173/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs173" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs173/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs173/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs173" %}
+{% endif %}
+
+## See also
 
 * [Data label](../data-labels/)
 * [Tooltip](../tool-tip/)

@@ -19,7 +19,7 @@ Data markers are used to provide information about the data points in the series
 
 <!-- markdownlint-disable MD036 -->
 
-Markers can be added to the points by enabling the [`visible`](../api/chart/markerSettingsModel/#visible-boolean) option of the marker property.
+Markers can be added to points by enabling the [`visible`](../api/chart/markerSettingsModel/#visible-boolean) option of the marker property. By default, distinct markers will be enabled for each series in the chart.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -50,7 +50,7 @@ Markers can be added to the points by enabling the [`visible`](../api/chart/mar
 
 ## Shape
 
-Markers can be assigned with different shapes such as Rectangle, Circle, Diamond etc using the `shape`property.
+Markers can be assigned with different shapes such as Rectangle, Circle, Diamond, etc. using the [`shape`](../api/chart/markerSettings/#shape) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -205,6 +205,6 @@ Marker can be filled with the series color by setting the [`isFilled`](../api/ch
 {% previewsample "page.domainurl/code-snippet/chart/data-markers-cs14" %}
 {% endif %}
 
-## See Also
+## See also
 
 * [Customize the marker with different shape](./how-to/marker-customization#customize-the-marker-with-different-shape)

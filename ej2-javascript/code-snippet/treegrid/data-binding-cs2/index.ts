@@ -22,7 +22,3 @@ let treeGridObj: TreeGrid = new TreeGrid({
 
 treeGridObj.appendTo('#TreeGrid');
 
-
-
-> * Remote data binding is not supported for Hierarchy Data.
-

@@ -15,8 +15,8 @@ export let funnelData: object[] = [{ x: 'Renewed', y: 18.20, text: 'Renewed 18.2
 export let labelData: object[] = [{ x: 'Jan', y: 13, text: 'Jan: 13' }, { x: 'Feb', y: 13, text: 'Feb: 13' },
     { x: 'Mar', y: 17, text: 'Mar: 17' }, { x: 'Apr', y: 13.5, text: 'Apr: 13.5' }];
 
-export let numData: object[] = [{ x: 2005, y: 28 }, { x: 2006, y: 25 },{ x: 2007, y: 26 }, { x: 2008, y: 47 },
-    { x: 2009, y: 32 }, { x: 2010, y: 35 }, { x: 2011, y: 30 }];
+export let numData: object[] = [{ x: 2005, y: 28, y1: 18 }, { x: 2006, y: 25, y1: 10 },{ x: 2007, y: 26, y1: 20 }, { x: 2008, y: 47, y1: 35 },
+    { x: 2009, y: 32, y1: 23 }, { x: 2010, y: 35, y1: 25 }, { x: 2011, y: 30, y1: 15 }];
 
 export let polarCategory: object[] = [{ x: 'Jan', y: -1 }, { x: 'Feb', y: -1 }, { x: 'Mar', y: 2 },{ x: 'Apr', y: 8 }, { x: 'May', y: 13 }, { x: 'Jun', y: 18 }, { x: 'Jul', y: 21 }, 
     { x: 'Aug', y: 20 }, { x: 'Sep', y: 16 }, { x: 'Oct', y: 10 }, { x: 'Nov', y: 4 }, { x: 'Dec', y: 0 }];

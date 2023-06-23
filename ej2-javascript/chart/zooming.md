@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Zooming in ##Platform_Name## Chart control
 
-## Enable Zooming
+## Enable zooming
 
 Chart can be zoomed in three ways.
 
@@ -149,9 +149,9 @@ Using [`enablePan`](../api/chart/zoomSettingsModel/) property you can able to pa
 {% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs42" %}
 {% endif %}
 
-## Enable Scrollbar
+## Enable scrollbar
 
-Using `enableScrollbar` property, you can able to add scrollbar for zoomed chart. Using this scrollbar, you can pan or zoom the chart.
+Using the [`enableScrollbar`](../api/chart/zoomSettingsModel/#enablescrollbar) property, you can add a scrollbar to a zoomed chart. This scrollbar allows you to zoom or pan the chart. The appearance of the scrollbar can be customized using properties in [`scrollbarSettings`](../api/chart/scrollbarSettings/). For example, you can use [`trackColor`](../api/chart/scrollbarSettings/#trackcolor) and [`trackRadius`](../api/chart/scrollbarSettings/#trackradius) properties to customize the track of the scrollbar, and [`scrollbarRadius`](../api/chart/scrollbarSettings/#scrollbarradius) and [`scrollbarColor`](../api/chart/scrollbarSettings/#scrollbarcolor) properties to customize the scroller. The ability to zoom through the scrollbar can be enabled or disabled using the [`enableZoom`](../api/chart/scrollbarSettings/#enablezoom) property in [`scrollbarSettings`](../api/chart/scrollbarSettings/). Additionally, you can change the color of the grip and height of the scrollbar using the [`gripColor`](../api/chart/scrollbarSettings/#gripcolor) and [`height`](../api/chart/scrollbarSettings/#height) properties.
 
 {% if page.publishingplatform == "typescript" %}
 

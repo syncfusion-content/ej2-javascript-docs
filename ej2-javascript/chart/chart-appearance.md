@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Chart appearance in ##Platform_Name## Chart control
 
-## Custom Color Palette
+## Custom color palette
 
 You can customize the default color of series or points by providing a custom color palette of your choice by using the [`palettes`](../api/chart/#palettes-string) property.
 
@@ -42,11 +42,11 @@ You can customize the default color of series or points by providing a custom co
 {% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs6" %}
 {% endif %}
 
-## Data Point Customization
+## Data point customization
 
 The color of individual data point or data points within a range can be customized using the options below.
 
-### Point Color Mapping
+### Point color mapping
 
 You can bind the color for the points from [`dataSource`](../api/chart/series/#datasource) for the series using [`pointColorMapping`](../api/chart/series/#pointcolormapping) property.
 
@@ -77,7 +77,7 @@ You can bind the color for the points from [`dataSource`](../api/chart/series/#d
 {% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs7" %}
 {% endif %}
 
-### Range Color Mapping
+### Range color mapping
 
 You can differentiate data points based on their y values using [`rangeColorSettings`](../api/chart/rangeColorSetting/) in the chart.
 
@@ -108,7 +108,7 @@ You can differentiate data points based on their y values using [`rangeColorSett
 {% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs8" %}
 {% endif %}
 
-## Point Level Customization
+## Point level customization
 
 Marker, data label and fill color of each data point can be customized with [`pointRender`](../api/chart/#pointrender-emittypeipointrendereventargs) and [`textRender`](../api/chart/#textrender-emittypeitextrendereventargs) event.
 
@@ -141,11 +141,11 @@ Marker, data label and fill color of each data point can be customized with [`po
 
 <!-- markdownlint-disable MD036 -->
 
-## Chart Area Customization
+## Chart area customization
 
 <!-- markdownlint-disable MD036 -->
 
-**Customize the Chart Background**
+**Customize the chart background**
 
 Using [`background`](../api/chart/#background-string) and [`border`](../api/chart/#border-bordermodel) properties, you can change the background color and border of the chart.
 
@@ -176,7 +176,7 @@ Using [`background`](../api/chart/#background-string) and [`border`](../api/char
 {% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs10" %}
 {% endif %}
 
-**Chart Margin**
+**Chart margin**
 
 You can set margin for chart from its container through [`margin`](../api/chart/#margin-marginmodel) property.
 
@@ -207,7 +207,7 @@ You can set margin for chart from its container through [`margin`](../api/chart/
 {% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs11" %}
 {% endif %}
 
-**Chart Area Customization**
+**Chart area customization**
 
 Using [`background`](https://ej2.syncfusion.com/documentation/api/chart/chartAreaModel/#background) and [`border`](https://ej2.syncfusion.com/documentation/api/chart/chartAreaModel/#border) properties, you can change the background color and border of the chart area. Width for the chart area can be customized using [`width`](https://ej2.syncfusion.com/documentation/api/chart/chartAreaModel/#width) property.
 
@@ -269,7 +269,7 @@ You can customize animation for a particular series using [`animation`](../api/c
 {% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs13" %}
 {% endif %}
 
-### Fluid Animation
+### Fluid animation
 
 Fluid animation used to animate series with updated dataSource continues animation rather than animation whole series. You can customize animation for a particular series using [`animate`] method.
 
@@ -300,13 +300,13 @@ Fluid animation used to animate series with updated dataSource continues animati
 {% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs14" %}
 {% endif %}
 
-## Chart Title
+## Chart title
 
 Chart can be given a title using [`title`](../api/chart/#title-string) property, to show the information about the data plotted.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-appearance-cs15/index.ts %}
 {% endhighlight %}
@@ -331,7 +331,98 @@ Chart can be given a title using [`title`](../api/chart/#title-string) property,
 {% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs15" %}
 {% endif %}
 
-**Title wrap**
+### Title position
+
+By using the [`position`](../api/chart/titleSettings/#position) property in [`titleStyle`](../api/chart/#titlestyle), you can position the [`title`](../api/chart/#title-string) at left, right, top or bottom of the chart. The title is positioned at the top of the chart, by default.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-appearance-cs21/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-appearance-cs21/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs21" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-appearance-cs21/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-appearance-cs21/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs21" %}
+{% endif %}
+
+The custom option helps you to position the title anywhere in the chart using [`x`](../api/chart/titleSettings/#x) and [`y`](../api/chart/titleSettings/#y) coordinates.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-appearance-cs22/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-appearance-cs22/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs22" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-appearance-cs22/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-appearance-cs22/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs22" %}
+{% endif %}
+
+### Title alignment
+
+You can align the title to the near, far, or center of the chart using the [`textAlignment`](../api/chart/titleSettings/#textalignment) property.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-appearance-cs23/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-appearance-cs23/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs23" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-appearance-cs23/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-appearance-cs23/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs23" %}
+{% endif %}
+
+### Title wrap
 
 The `textStyle` property of chart title provides options to customize the `size`, `color`, `fontFamily`, `fontWeight`, `fontStyle`, `opacity`, `textAlignment` and `textOverflow`.
 
@@ -362,6 +453,6 @@ The `textStyle` property of chart title provides options to customize the `size`
 {% previewsample "page.domainurl/code-snippet/chart/getting-started-cs1" %}
 {% endif %}
 
-## See Also
+## See also
 
 * [Customize the series points using patterns](../chart/how-to/points-customization/#customize-the-series-points-by-using-patterns)

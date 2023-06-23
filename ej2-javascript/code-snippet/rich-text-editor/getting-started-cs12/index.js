@@ -5,7 +5,7 @@ var defaultRTE = new ej.richtexteditor.RichTextEditor({
             'LowerCase', 'UpperCase', '|',
             'Formats', 'Alignments', 'OrderedList', 'UnorderedList',
             'Outdent', 'Indent', '|',
-            'CreateLink', 'Image', '|', 'ClearFormat', 'Print',
+            'CreateLink', 'Image', '|', 'FormatPainter', 'ClearFormat', 'Print',
             'SourceCode', 'FullScreen', '|', 'Undo', 'Redo']
     }
 });

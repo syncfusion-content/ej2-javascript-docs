@@ -1,0 +1,16 @@
+#container {
+  margin: 0 auto;
+  width: 500px;
+}
+
+#dashboard_default .e-panel .e-panel-container .content {
+  vertical-align: middle;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  line-height: 90px;
+}
+
+#dashboard_default .e-panel { 
+  transition:none !important;
+}

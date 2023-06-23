@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>Essential JS 2 Message control</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Essential JS 2 Message control" />
+    <meta name="author" content="Syncfusion" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/material.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+</head>
+
+<body>
+    <div id='loader'>LOADING....</div>
+    <div id='container'>
+        <div class="msg-variant-section">
+            <div class="content-section">
+                <h4>Filled</h4>
+                <div id="msg_default_filled">Editing is restricted</div>
+                <div id="msg_info_filled">Please read the comments carefully</div>
+                <div id="msg_success_filled">Your message has been sent successfully</div>
+                <div id="msg_warning_filled">There was a problem with your network connection</div>
+                <div id="msg_error_filled">A problem occurred while submitting your data</div>
+            </div>
+            <div class="content-section">
+                <h4>Outlined</h4>
+                <div id="msg_default_outlined">Editing is restricted</div>
+                <div id="msg_info_outlined">Please read the comments carefully</div>
+                <div id="msg_success_outlined">Your message has been sent successfully</div>
+                <div id="msg_warning_outlined">There was a problem with your network connection</div>
+                <div id="msg_error_outlined">A problem occurred while submitting your data</div>
+            </div>
+            <div class="content-section">
+                <h4>Text</h4>
+                <div id="msg_default">Editing is restricted</div>
+                <div id="msg_info">Please read the comments carefully</div>
+                <div id="msg_success">Your message has been sent successfully</div>
+                <div id="msg_warning">There was a problem with your network connection</div>
+                <div id="msg_error">A problem occurred while submitting your data</div>
+            </div>
+        </div>
+    </div>
+    <style>
+        /* Sample level styles */
+        .msg-variant-section .content-section {
+            margin: 0 auto;
+            max-width: 520px;
+            padding: 10px;
+        }
+
+        .msg-variant-section .e-message {
+            margin: 10px 0;
+        }
+
+        .msg-variant-section {
+            display: flex;
+        }
+    </style>
+</body>
+
+</html>

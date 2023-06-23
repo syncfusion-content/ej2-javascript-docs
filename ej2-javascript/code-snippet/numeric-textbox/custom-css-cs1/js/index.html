@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="en"><head>
+    <title>EJ2 NumericTextBox</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TypeScript NumericTextBox Component with Custom cssClass">
+    <meta name="author" content="Syncfusion">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-inputs/styles/material.css" rel="stylesheet">
+    
+    
+<script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+</head>
+<body>
+    
+    <div id="container">
+        <div class="wrap">
+          <input id="numeric1" type="text" name="numericValue/">
+        </div>
+    </div>
+    
+<style>
+  .e-numeric.e-style .e-control.e-numerictextbox  {
+    color: royalblue ;
+    font-size: xx-large ;
+    border: 0px ;
+  }
+  .e-input-group.e-control-wrapper:not(.e-success):not(.e-warning):not(.e-error):not(.e-float-icon-left), .e-float-input.e-control-wrapper:hover:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled):not(.e-float-icon-left) {
+    border-color: royalblue;
+  }
+  .e-control-wrapper.e-numeric.e-float-input.e-style .e-spin-down  {
+    color:royalblue;
+  }
+  .e-control-wrapper.e-numeric.e-float-input.e-style .e-float-line::before {
+    background: royalblue ;
+  }
+  .e-control-wrapper.e-numeric.e-float-input.e-style .e-float-line::after {
+    background: royalblue ;
+   }
+  .e-control-wrapper.e-numeric.e-float-input.e-style .e-spin-up {
+    color:royalblue ;
+  }
+  .e-control-wrapper.e-numeric.e-float-input.e-style .e-float-text.e-label-top {
+    color: royalblue ;
+    font-size: medium ;
+  }
+</style>
+
+
+<script>
+var ele = document.getElementById('container');
+if(ele) {
+  ele.style.visibility = "visible";
+}   
+      </script>
+<script src="index.js" type="text/javascript"></script>
+</body></html>

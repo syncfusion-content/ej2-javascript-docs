@@ -1,0 +1,164 @@
+html,
+body,    
+#container {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+#dialog .e-icon-settings::before { /* csslint allow: adjoining-classes */
+    padding: 3px;
+    font-size: 15px;
+}
+
+#loader {
+  color: #008cff;
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+}
+
+#sendButton { 
+    top: 5px;
+    position: relative;
+    right: 7px;
+}
+
+.custom-template.e-dialog .e-dlg-header-content { /* csslint allow: adjoining-classes */
+    border-bottom: none;
+    padding: 11px;
+}
+
+.e-dialog .e-footer-content { /* csslint allow: adjoining-classes */
+    right: 7px;
+}
+
+.e-dialog .e-dlg-header-content { /* csslint allow: adjoining-classes */
+    background-color: #007DD1;
+    padding: 10px;
+}
+
+.e-dialog .e-dlg-header-content .e-btn.e-dlg-closeicon-btn { /* csslint allow: adjoining-classes */
+    top: 5px;
+    left: -11px;
+}
+
+.e-dialog .e-dlg-header { /* csslint allow: adjoining-classes */
+    position: relative;
+}
+
+.e-dialog .e-dlg-content { /* csslint allow: adjoining-classes */
+    padding: 0;
+}
+
+ #sendbtn {
+    margin-right: -17px;
+    margin-top: -2%;
+}
+
+.e-open-icon::before { /* csslint allow: adjoining-classes */
+    content: '\e782';
+}
+
+.e-dialog .e-dlg-header > .img2 { /* csslint allow: adjoining-classes */
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.e-dialog .e-dlg-header .dlg-template { /* csslint allow: adjoining-classes */
+    display: inline-block;
+    padding: 0 10px;
+    vertical-align: middle;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+}
+.e-dialog .e-dlg-header-content .e-btn .e-btn-icon { /* csslint allow: adjoining-classes */
+    margin-top: -3px;
+}
+.custom-template .e-input { /* csslint allow: adjoining-classes */
+    width: 75%;
+    float: left;
+    height: 18px;
+}
+
+.e-icon-settings.e-icons { /* csslint allow: adjoining-classes */
+    float: left;
+    position: relative;
+    left: 16%;
+    top: -33px;
+}
+
+.e-icon-settings.e-icons { /* csslint allow: adjoining-classes */
+    top: -37px;
+}
+
+.e-icon-settings.e-icons { /* csslint allow: adjoining-classes */
+    top: -35px;
+}
+.dialogContent .dialogText { /* csslint allow: adjoining-classes */
+    font-size: 13px;
+    padding: 5%;
+    word-wrap: break-word;
+    border-radius: 6px;
+    text-align: justify;
+    font-style: initial;
+    display: block;
+}
+
+.dialogContent .dialogText { /* csslint allow: adjoining-classes */
+    background-color: #f5f5f5;
+}
+
+.custom-template.e-dialog .e-footer-content { /* csslint allow: adjoining-classes */
+    border-top: 0.5px solid #949494;
+    padding-left: 31px;
+}
+
+.dialogContent {
+    display: block;
+    font-size: 15px;
+    word-wrap: break-word;
+    text-align: center;
+    font-style: italic;
+    border-radius: 6px;
+    padding: 3%;
+    position: relative;
+    top: 25px;
+}
+
+.e-dialog .dialogContent { /* csslint allow: adjoining-classes */
+    top: 20px;
+}
+
+.control-wrapper .e-control.e-dialog { /* csslint allow: adjoining-classes */
+    width: 30%;
+}
+
+.e-dialog .e-dlg-header-content .e-icon-dlg-close { /* csslint allow: adjoining-classes */
+  color: #fff;
+}
+
+.e-dialog .e-btn.e-dlg-closeicon-btn:hover span{ /* csslint allow: adjoining-classes */
+    color: #8ECBFF;
+  }
+/* csslint ignore:start */
+.e-dialog .e-dlg-header-content .e-btn.e-dlg-closeicon-btn:hover {
+    background-color: rgba(255,255,255, 0.10);
+}
+.e-dialog .e-dlg-header-content .e-btn.e-dlg-closeicon-btn:focus {
+      background-color: rgba(255,255,255, 0.10);
+  }
+/* csslint ignore:end */  
+.e-dialog .e-dlg-header-content .e-btn.e-dlg-closeicon-btn:active .e-icon-dlg-close { /* csslint allow: adjoining-classes */
+    color: #fff;
+}
+.e-dialog .e-dlg-header-content .e-btn.e-dlg-closeicon-btn:focus .e-icon-dlg-close { /* csslint allow: adjoining-classes */
+    color: #fff;
+}
+.e-dialog .e-dlg-header-content .e-btn.e-dlg-closeicon-btn:hover .e-icon-dlg-close { /* csslint allow: adjoining-classes */
+      color: #fff;
+  }

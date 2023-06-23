@@ -1,0 +1,30 @@
+#container {
+    visibility: hidden;
+  }
+  
+  #loader {
+    color: #008cff;
+    font-family: 'Helvetica Neue','calibiri';
+    font-size: 14px;
+    height: 40px;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 30%;
+  }
+  
+.update_value, .remove_value {
+    margin-top: 20px;
+}
+
+.remove_value {
+    margin-left: 10px;
+}
+
+.text_value {
+    visibility: visible;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 20px 10px;
+    width: 260px;
+}

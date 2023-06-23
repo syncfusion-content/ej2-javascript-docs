@@ -1,0 +1,34 @@
+
+
+<!DOCTYPE html>
+  <html xmlns="http://www.w3.org/1999/xhtml">
+       <head>
+    <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js"></script>
+            <title>Essential JS 2</title>
+            <!-- Essential JS 2 material theme -->
+            <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css" rel="stylesheet" type="text/css"/>
+
+            <!-- Essential JS 2 all script -->
+            <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
+       </head>
+       <body>
+           <!-- Add the HTML <div> element  -->
+             <div id="element"></div>
+            <script>
+
+    var accordion = new ej.navigations.Accordion({
+    items: [
+        { header: 'ASP.NET', expanded: 'true', content: 'Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services.' },
+        { header: 'ASP.NET MVC', content: 'The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller.' },
+        { header: 'JavaScript', content: 'JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.' },
+    ]
+    });
+
+//Render initialized Accordion component
+    accordion.appendTo('#element');
+</script>
+</body>
+</html>
+
+

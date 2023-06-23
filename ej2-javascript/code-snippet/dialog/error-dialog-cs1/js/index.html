@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang="en"><head>
+    <title>Essential JS 2 Dialog customization</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TypeScript UI Components">
+    <meta name="author" content="Syncfusion">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/bootstrap.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-buttons/styles/bootstrap.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-inputs/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-popups/styles/bootstrap.css" rel="stylesheet">
+    
+    
+<script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    
+    <div id="container">
+        <div id="target">
+            <center><button id="openBtn" class="e-control e-btn">Open</button></center>
+            <div id="dialog"></div>
+            <div id="dlgContent" style="visibility: hidden" class="dialog-content">
+                <div class="msg-wrapper  col-lg-12">
+                    <span class="e-icons close-icon col-lg-2"></span>
+                    <span class="error-msg col-lg-10">
+                        Can not rename 'pictures' because a file or folder with that name already exists 
+                    </span>
+                </div>
+                <div class="error-detail col-lg-8">
+                    <span>Specify a different name</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+var ele = document.getElementById('container');
+if(ele) {
+  ele.style.visibility = "visible";
+}   
+      </script>
+<script src="index.js" type="text/javascript"></script>
+</body></html>

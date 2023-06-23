@@ -1,0 +1,47 @@
+#container {
+    visibility: hidden;
+    padding: 10px;
+}
+
+#loader {
+    color: #008cff;
+    height: 40px;
+    width: 30%;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+
+.e-error,
+.e-float-text {
+    font-weight: 500;
+}
+
+table,
+td,
+th {
+    padding: 5px;
+}
+
+.form-horizontal .form-group {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+form {
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.36);
+    border-radius: 5px;
+    background: #f9f9f9;
+    padding: 23px;
+    padding-bottom: 20px;
+}
+
+.form-title {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.70);
+}

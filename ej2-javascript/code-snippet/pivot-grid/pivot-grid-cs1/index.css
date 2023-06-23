@@ -1,0 +1,22 @@
+#container {
+  visibility: hidden;
+}
+
+#loader {
+  color: #008cff;
+  height: 40px;
+  width: 30%;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+
+.e-custom-class {
+  color: #008cff;
+  text-decoration: underline;
+}
+
+.e-custom-class:hover {
+  color: red;
+  text-decoration: none;
+}

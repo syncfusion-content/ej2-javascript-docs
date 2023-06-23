@@ -1,0 +1,286 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js"></script>
+    <title>Essential JS 2 - Ribbon</title>
+    <!-- Essential JS 2 Ribbon's dependent material theme -->
+    <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/ej2-popups/styles/material.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/ej2-splitbuttons/styles/material.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/ej2-inputs/styles/material.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/ej2-lists/styles/material.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/ej2-dropdowns/styles/material.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css" rel="stylesheet" type="text/css" />
+    <!-- Essential JS 2 Ribbon's material theme -->
+    <link href="https://cdn.syncfusion.com/ej2/ej2-ribbon/styles/material.css" rel="stylesheet" type="text/css" />
+
+    <!-- Essential JS 2 Ribbon's dependent scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/ej2-lists/dist/global/ej2-lists.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/ej2-dropdowns/dist/global/ej2-dropdowns.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js" type="text/javascript"></script>
+
+    <!--style reference from app-->
+    <link href="styles.css" rel="stylesheet" />
+
+    <!-- Essential JS 2 Ribbon's global script -->
+    <script src="https://cdn.syncfusion.com/ej2/ej2-ribbon/dist/global/ej2-ribbon.min.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <!--element which is going to render-->
+    <div id="ribbon"></div>
+
+    <script>
+    var fontSize = ["8", "9", "10", "11", "12", "14", "16", "18", "20", "22", "24", "26", "28", "36", "48", "72", "96"];
+    var fontStyle = ["Algerian", "Arial", "Calibri", "Cambria", "Cambria Math", "Courier New", "Candara", "Georgia", "Impact", "Segoe Print", "Segoe Script", "Segoe UI", "Symbol", "Times New Roman", "Verdana", "Windings"
+    ];
+    var tabs = [{
+        header: "Home",
+        groups: [{
+            header: "Clipboard",
+            showLauncherIcon: true,
+            groupIconCss: "e-icons e-paste",
+            collections: [{
+                items: [{
+                    type: "SplitButton",
+                    simplifiedMode: "Group",
+                    allowedSizes: ej.ribbon.RibbonItemSize.Large,
+                    splitButtonSettings: {
+                        iconCss: "e-icons e-paste",
+                        items: [{ text: "Keep Source Format" }, { text: "Merge format" }, { text: "Keep text only" }],
+                        content: "Paste"
+                    }
+                }]
+            }, {
+                items: [{
+                    type: "Button",
+                    buttonSettings: {
+                        content: "Cut",
+                        iconCss: "e-icons e-cut"
+                    }
+                }, {
+                    type: "Button",
+                    buttonSettings: {
+                        content: "Copy",
+                        iconCss: "e-icons e-copy"
+                    }
+                }, {
+                    type: "Button",
+                    buttonSettings: {
+                        content: "Format Painter",
+                        iconCss: "e-icons e-format-painter"
+                    }
+                }]
+            },]
+        }, {
+            header: "Font",
+            isCollapsible: false,
+            enableGroupOverflow: true,
+            orientation: "Row",
+            groupIconCss: "e-icons e-bold",
+            cssClass: "font-group",
+            collections: [{
+                items: [{
+                    type: "ComboBox",
+                    simplifiedMode:"Group",
+                    comboBoxSettings: {
+                        dataSource: fontStyle,
+                        index: 3,
+                        allowFiltering: true,
+                        width: "150px"
+                    }
+                }, {
+                    type: "ComboBox",
+                    simplifiedMode: "Group",
+                    comboBoxSettings: {
+                        dataSource: fontSize,
+                        allowFiltering: true,
+                        index: 3,
+                        width: "65px"
+                    }
+                }]
+            }, {
+                items: [{
+                        type: "ColorPicker",
+                        displayOptions: ej.ribbon.DisplayMode.Simplified,
+                        allowedSizes: ej.ribbon.RibbonItemSize.Small,
+                        colorPickerSettings: {
+                            value: "#123456",
+                        }
+                    },{
+                        type: "Button",
+                        allowedSizes: ej.ribbon.RibbonItemSize.Small,
+                        buttonSettings: {
+                            iconCss: "e-icons e-bold",
+                            content: "Bold"
+                        }
+                    }, {
+                        type: "Button",
+                        allowedSizes: ej.ribbon.RibbonItemSize.Small,
+                        buttonSettings: {
+                            iconCss: "e-icons e-italic",
+                            content: "Italic"
+                        }
+                    }, {
+                        type: "Button",
+                        allowedSizes: ej.ribbon.RibbonItemSize.Small,
+                        buttonSettings: {
+                            iconCss: "e-icons e-underline",
+                            content: "Underline"
+                        }
+                    },{
+                        allowedSizes: ej.ribbon.RibbonItemSize.Small,
+                        type: "Button",
+                        buttonSettings: {
+                            iconCss: "e-icons e-strikethrough",
+                            content: "Strikethrough"
+                        }
+                    }, {
+                        allowedSizes:ej.ribbon.RibbonItemSize.Small,
+                        type: "Button",
+                        buttonSettings: {
+                            iconCss: "e-icons e-change-case",
+                            content: "Strikethrough"
+                        }
+                    }
+                ]
+            }]
+        }, {
+            header: "Editor",
+            isCollapsible: false,
+            collections: [{
+                items: [{
+                    type: "Button",
+                    allowedSizes: ej.ribbon.RibbonItemSize.Large,
+                    buttonSettings: {
+                        content: "Editor",
+                        iconCss:"e-icons e-edit"
+                    }
+                }]
+            }]
+        }]
+    }, {
+        header: "Insert",
+        groups: [{
+            header: "Tables",
+            isCollapsible: false,
+            collections: [{
+                items: [{
+                    simplifiedMode:"Group",
+                    type: "SplitButton",
+                    allowedSizes: ej.ribbon.RibbonItemSize.Large,
+                    splitButtonSettings: {
+                        iconCss: "e-icons e-table",
+                        content: "Table",
+                        items: [
+                            { text: "Insert Table" }, { text: "Draw Table" },
+                            { text: "Convert Table" }, { text: "Excel SpreadSheet" }
+                        ]
+                    }
+                }]
+            }]
+        }, {
+            header: "Illustrations",
+            orientation: "Row",
+            enableGroupOverflow: true,
+            groupIconCss: "e-icons e-image",
+            collections: [{
+                items: [{
+                    type: "Button",
+                    buttonSettings: {
+                        content: "Chart",
+                        iconCss:"e-icons e-chart"
+                    }
+                }]
+            }]
+        }, {
+            header: "Media",
+            isCollapsible: false,
+            collections: [{
+                items: [{
+                    type: "Template",
+                    itemTemplate: "#itemTemplate"
+                }]
+            }]
+        }]
+    }, {
+        header: "View",
+        groups: [{
+            header: "Views",
+            groupIconCss: "e-icons e-print",
+            orientation: "Row",
+            collections: [{
+                items: [{
+                    type: "Button",
+                    buttonSettings: {
+                        content: "Print Layout",
+                        iconCss: "e-print e-icons"
+                    }
+                }, {
+                    type: "Button",
+                    buttonSettings: {
+                        iconCss: "e-icons e-web-layout",
+                        content: "Web Layout"
+                    }
+                }]
+            }]
+        }, {
+            header: "Show",
+            isCollapsible: false,
+            collections: [{
+                items: [{
+                    type: "CheckBox",
+                    checkBoxSettings: {
+                        label: "Ruler",
+                        checked: false
+                    }
+                }, {
+                    type: "CheckBox",
+                    checkBoxSettings: {
+                        checked: false,
+                        label: "Gridlines"
+                    }
+                }, {
+                    type: "CheckBox",
+                    checkBoxSettings: {
+                        label: "Navigation Pane",
+                        checked: true
+                    }
+                }]
+            }]
+        }]
+    }];
+    var menuItems = [
+        { text: "New", iconCss: "e-icons e-file-new", id: "new" },
+        { text: "Open", iconCss: "e-icons e-folder-open", id: "Open" },
+        { text: "Rename", iconCss: "e-icons e-rename", id: "rename" },
+        { text: "Save as", iconCss: "e-icons e-save", id: "save" }
+    ];
+    var ribbon = new ej.ribbon.Ribbon({
+        tabs: tabs,
+        fileMenu: {
+            menuItems: menuItems,
+            visible: true
+        }
+    });
+    ribbon.appendTo("#ribbon");
+    </script>
+    <script type="text/x-jsrender" id="itemTemplate">
+        <span class="ribbonTemplate ${activeSize}">
+            <span class="e-icons e-video"></span>
+            <span class="text">Video</span>
+          </span>
+    </script>
+  </body>
+</html>
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Essential JS 2 Message control</title>
+
+    <!-- Essential JS 2 Base's material theme (Dependency Styles) -->
+    <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css" />
+
+    <!-- Essential JS 2 Message material theme (Control Styles) -->
+    <link href="https://cdn.syncfusion.com/ej2/ej2-notifications/styles/material.css" rel="stylesheet"
+        type="text/css" />
+
+    <!-- Essential JS 2 Base's global script (Dependency Script) -->
+    <script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+
+    <!-- Essential JS 2 Message global script (Control Script) -->
+    <script src="https://cdn.syncfusion.com/ej2/ej2-notifications/dist/global/ej2-notifications.min.js"
+        type="text/javascript"></script>
+
+</head>
+
+<body>
+    <!--Element which will render as Message-->
+    <div class="msg-default">
+        <div id="msg"></div>
+    </div>
+
+    <script>
+        var msgObj = new ej.notifications.Message({
+            content: "Please read the comments carefully"
+        });
+        msgObj.appendTo("#msg");
+    </script>
+    
+    <style>
+        /* Sample level styles */
+        .msg-default .e-message {
+            margin: 100px;
+        }
+    </style>
+</body>
+</html>

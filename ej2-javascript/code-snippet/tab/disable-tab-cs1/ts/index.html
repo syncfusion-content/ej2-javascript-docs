@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Essential JS 2 Tab</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Essential JS 2 Tab" />
+    <meta name="author" content="Syncfusion" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/material.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="index.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+</head>
+
+<body>
+    <div id="loader">LOADING....</div>
+    <div id="container">
+        <div id="alertDialog"></div>
+        <div id="element"></div>
+    </div>
+    <div id='booking' style='display: none'>
+        <div class="wizard-title">Plan your journey</div>
+        <div class="responsive-align">
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6 search-item">
+                    <input id="startPoint" class="e-input" type="text">
+                </div>
+                <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6 search-item">
+                    <input id="endPoint" class="e-input" type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6 search-item">
+                    <input id="journey_date" class="e-input" type="text">
+                </div>
+                <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6 search-item">
+                    <input id="ticket_type" class="e-input" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="btn-container">
+            <button id="searchNext" class="e-btn">Search Train</button>
+        </div>
+        <span id="err1"></span>
+    </div>
+    <div id="selectTrain" style='display: none'>
+        <div class="wizard-title">Select the train from the list </div>
+        <div id="availableTrain"></div>
+        <br>
+        <div class="btn-container">
+            <button id="goToSearch" class="e-btn">Back</button>
+            <button id="bookTickets" class="e-btn">Continue</button>
+        </div>
+        <span id="err2"></span>
+    </div>
+    <div id="details" style='display: none'>
+        <div class="details-page wizard-title">Enter the passenger details</div>
+        <div id="PassengersList">
+            <table id="passenger-table">
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th class="name-header">Name</th>
+                        <th class="age-header">Age</th>
+                        <th class="gender-header">Gender</th>
+                        <th class="type-header">Berth Preference</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input id="pass_name1" class="e-input" type="text" placeholder="Passenger Name">
+                        </td>
+                        <td>
+                            <input id="pass_age1" class="e-input">
+                        </td>
+                        <td>
+                            <input id="pass_gender1" type="text">
+                        </td>
+                        <td>
+                            <input id="pass_berth1" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="pass_name2" class="e-input" type="text" placeholder="Passenger Name">
+                        </td>
+                        <td>
+                            <input id="pass_age2" class="e-input">
+                        </td>
+                        <td>
+                            <input id="pass_gender2" type="text">
+                        </td>
+                        <td>
+                            <input id="pass_berth2" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="pass_name3" class="e-input" type="text" placeholder="Passenger Name">
+                        </td>
+                        <td>
+                            <input id="pass_age3" class="e-input">
+                        </td>
+                        <td>
+                            <input id="pass_gender3" type="text">
+                        </td>
+                        <td>
+                            <input id="pass_berth3" type="text">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <div class="btn-container">
+            <button id="goBackToBook" class="e-btn">Back</button>
+            <button id="confirmTickets" class="e-btn">Continue</button>
+        </div>
+        <span id="err3"></span>
+    </div>
+    <div id='confirm' style='display: none'>
+        <div class="tab-title1 wizard-title">Confirm the details and proceed</div>
+        <div id="ticketDetailGrid"></div>
+        <div id="amount"></div>
+        <br>
+        <div class="btn-container">
+            <button id="goBackDetails" class="e-btn">Back</button>
+            <button id="makePayment" class="e-btn">Pay</button>
+        </div>
+    </div>
+</body>
+
+</html>

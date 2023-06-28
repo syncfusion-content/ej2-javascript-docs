@@ -21,7 +21,12 @@ var basicShapes = [{
         shape: {
             type: 'Basic',
             shape: 'Hexagon'
-        }
+        },
+        tooltip: {
+            content: 'Hexagon Tooltip',
+        },
+        //customized content of the Tooltip is enabled by Node Tooltip Cosnstraints
+        constraints: NodeConstraints.Default | NodeConstraints.Tooltip
     }
 ];
 //Initializes the symbol palette

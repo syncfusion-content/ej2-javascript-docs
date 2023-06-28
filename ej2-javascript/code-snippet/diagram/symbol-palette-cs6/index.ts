@@ -5,7 +5,7 @@ import {
     Diagram,
     NodeModel,
     SymbolPalette,
-    SymbolInfo
+    SymbolInfo,NodeConstraints
 } from '@syncfusion/ej2-diagrams';
 //Initialize the basicshapes for the symbol palette
 export function getBasicShapes(): NodeModel[] {
@@ -28,7 +28,12 @@ export function getBasicShapes(): NodeModel[] {
             shape: {
                 type: 'Basic',
                 shape: 'Hexagon'
-            }
+            },
+            tooltip: {
+                content: 'Hexagon Tooltip',
+            },
+            //customized content of the Tooltip is enabled by Node Tooltip Cosnstraints
+            constraints: NodeConstraints.Default | NodeConstraints.Tooltip
         },
     ];
     return basicShapes;

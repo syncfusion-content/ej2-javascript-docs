@@ -7,6 +7,9 @@ var basicShapes = [{
         shape: {
             type: 'Basic',
             shape: 'Rectangle'
+        },
+        tooltip:{
+            content:"Rectangle Tooltip",
         }
     },
     {

@@ -200,7 +200,7 @@ An [`Orientation`](../api/diagram/orientation) of a `MindMapTreeLayout` is used 
 </tr>
 </table>
 
-The following code example illustrates how to create an mind layout.
+The following code example illustrates how to create an mindmap layout.
 
 >Note: If you want to use mind map layout in diagram, you need to inject MindMap in the diagram.
 

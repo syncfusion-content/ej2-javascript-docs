@@ -63,7 +63,7 @@ let diagram: Diagram = new Diagram({
     layout: {
         //Sets layout type
         type: 'MindMap',
-        orientation : 'Horizontal'
+        orientation: 'Horizontal'
     },//Configures data source for diagram
     dataSourceSettings: {
         id: 'id',

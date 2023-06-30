@@ -11,6 +11,7 @@ let data: DataManager = new DataManager({
 TreeGrid.Inject(Page);
 let treegrid: TreeGrid = new TreeGrid({
     dataSource: data,
+    hasChildMapping: 'isParent',
     idMapping: 'TaskID',
     parentIdMapping: 'ParentItem',
     height: 260,

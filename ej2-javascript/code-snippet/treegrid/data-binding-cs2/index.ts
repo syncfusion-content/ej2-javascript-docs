@@ -21,4 +21,3 @@ let treeGridObj: TreeGrid = new TreeGrid({
 });
 
 treeGridObj.appendTo('#TreeGrid');
-

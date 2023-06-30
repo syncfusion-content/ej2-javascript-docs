@@ -27,6 +27,7 @@ diagram = new ej.diagrams.Diagram({
             strokeColor: '#6BA5D7',
             fill: '#6BA5D7'
         },
+        //define Ports
         port: [{
             id: 'port1',
             offset: {

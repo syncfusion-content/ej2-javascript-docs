@@ -5,7 +5,8 @@ import {
     Diagram,
     NodeModel,
     SymbolPalette,
-    SymbolInfo,NodeConstraints
+    SymbolInfo,
+    NodeConstraints
 } from '@syncfusion/ej2-diagrams';
 //Initialize the basicshapes for the symbol palette
 export function getBasicShapes(): NodeModel[] {
@@ -14,6 +15,9 @@ export function getBasicShapes(): NodeModel[] {
             shape: {
                 type: 'Basic',
                 shape: 'Rectangle'
+            },
+            tooltip:{
+                content:"Rectangle Tooltip",
             }
         },
         {

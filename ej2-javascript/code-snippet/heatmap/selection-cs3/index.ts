@@ -1,7 +1,8 @@
 
 
 
-import { HeatMap } from '@syncfusion/ej2-heatmap';
+import { HeatMap, Legend, Tooltip } from '@syncfusion/ej2-heatmap';
+HeatMap.Inject(Legend, Tooltip);
 
 let heatmapData: any [] = [
             [73, 39, 26, 39, 94, 0],

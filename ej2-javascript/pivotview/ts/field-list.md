@@ -96,7 +96,7 @@ End user can sort fields in the field list UI to ascending (or) descending (or)
 
 ### Sort fields in a desired order
 
-To display the fields in descending order by default, set the [`defaultFieldListOrder`](https://ej2.syncfusion.com/documentation/api/pivotview/loadEventArgs/#defaultfieldlistorder) property to **Descending** in the [`load`](https://ej2.syncfusion.com/documentation/api/pivotview#load) event.
+To display the fields in descending order by default, set the [defaultFieldListOrder](https://ej2.syncfusion.com/documentation/api/pivotview/loadEventArgs/#defaultfieldlistorder) property to **Descending** in the [load](https://ej2.syncfusion.com/documentation/api/pivotview#load) event.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

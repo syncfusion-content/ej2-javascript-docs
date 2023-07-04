@@ -202,7 +202,6 @@ The following code is an example to change the color of a symbol description for
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/diagram/symbol-palette-cs18" %}
-
 ## Tooltip for symbols in symbol palette
 
 The Symbol palette supports displaying tooltips when mouse hovers over the symbols. You can customize the tooltip for each symbol in the symbol palette.
@@ -262,6 +261,7 @@ function dragEnter(args:IDragEnterEventArgs)
         args.dragItem.tooltip.content='This is Diagram Tooltip';
     }
 ```
+
 
 
 ## Palette interaction

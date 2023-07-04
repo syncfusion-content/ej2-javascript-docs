@@ -22,7 +22,7 @@ var heatmap = new ej.heatmap.HeatMap({
         },
       },
       xAxis: {
-        enableTrim:'Trim',
+        enableTrim: true,
         labelIntersectAction:'Trim',
         opposedPosition: true,
         labels: [
@@ -40,7 +40,7 @@ var heatmap = new ej.heatmap.HeatMap({
         ],
       },
       yAxis: {
-        enableTrim:'Trim',
+        enableTrim: true,
         labelIntersectAction:'Trim',
         labels: [
           'Ace Apparels',

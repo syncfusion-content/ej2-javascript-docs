@@ -46,7 +46,7 @@ When you click on a HeatMap cell, the [cellClick](../api/heatmap/cellclick/) eve
 
 ## cellDoubleClick
 
-When you double click on a HeatMap cell, the [cellDoubleClick](../api/heatmap/celldoubleclick/) event is triggered. To know more about arguments of this event, refer [here](../api/heatmap/iCellDoubleClickEventArgs/).
+When you double click on a HeatMap cell, the [cellDoubleClick](../api/heatmap/celldoubleclick/) event is triggered. To know more about arguments of this event, refer [here](../api/heatmap/iCellClickEventArgs/).
 
 {% if page.publishingplatform == "typescript" %}
 

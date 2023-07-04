@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Microsoft sql server in ##Platform_Name## Pivotview control
+# Microsoft SQL server in ##Platform_Name## Pivotview control
 
 This section describes how to retrieve data from Microsoft SQL Server using [Microsoft SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient?view=dotnet-plat-ext-7.0) and bind it to the Pivot Table via a Web API controller.
 

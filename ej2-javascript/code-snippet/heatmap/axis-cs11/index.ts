@@ -29,7 +29,7 @@ let heatmapData: any [] = [
         },
       },
       xAxis: {
-        enableTrim:'Trim',
+        enableTrim:true,
         labelIntersectAction:'Trim',
         opposedPosition: true,
         labels: [
@@ -47,8 +47,8 @@ let heatmapData: any [] = [
         ],
       },
       yAxis: {
-        enableTrim:'Trim',
-		labelIntersectAction:'Trim',
+        enableTrim:true,
+        labelIntersectAction:'Trim',
         labels: [
           'Ace Apparels',
           'Alpha Apparels',

@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Mongodb in ##Platform_Name## Pivotview control
+# MongoDB in ##Platform_Name## Pivotview control
 
 This section describes how to consume data from MongoDB database using [MongoDB Driver](https://www.nuget.org/packages/MongoDB.Driver) and [MongoDB Bson](https://www.nuget.org/packages/MongoDB.Bson) libraries and bind it to the Pivot Table via a Web API controller.
 
@@ -117,7 +117,7 @@ This section describes how to consume data from MongoDB database using [MongoDB 
 
 **1.** Create a simple Typescript Pivot Table by following the **"Getting Started"** documentation [link](../getting-started).
 
-**2.** Map the hosted Web API's URL link `https://localhost:/pivot` to the Pivot Table component in **app.ts** by using the [url](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings/#url) property under [dataSourceSettings](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings/).
+**2.** Map the hosted Web API's URL link `https://localhost:44346/Pivot` to the Pivot Table component in **app.ts** by using the [url](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings/#url) property under [dataSourceSettings](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings/).
 
 ```ts
 

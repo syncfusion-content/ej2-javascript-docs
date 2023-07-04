@@ -118,7 +118,7 @@ The following code example shows how to add the emoji picker tool in the RichTex
 
 Quickly access the emoji picker by pressing the colon (:) key while typing a word prefix in an editor, allowing instant emoji selection and display. Moreover, continue typing in the editor after the colon (:) to filter and refine your search for the desired emojis.
 
-![JavaScript Rich Text Editor Emoji Picker shortcut](./images/javaScript-richtexteditor-emoji-picker-shorcut.png)
+![JavaScript Rich Text Editor Emoji Picker shortcut](../images/javascript-richtexteditor-emoji-picker-shortcut.png)
 
 ## Navigating and selecting emojis using the keyboard
 

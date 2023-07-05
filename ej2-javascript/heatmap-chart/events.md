@@ -104,6 +104,7 @@ The [cellRender](../api/heatmap/cellrender/) event will be triggered before each
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/heatmap/events-cs3" %}
+{% endif %}
 
 ## cellSelected
 
@@ -134,6 +135,7 @@ When single or multiple cells in the HeatMap are selected, the [cellSelected](..
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/heatmap/events-cs4" %}
+{% endif %}
 
 ## created
 
@@ -164,6 +166,7 @@ Once HeatMap has been completely rendered, the [created](../api/heatmap/#created
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/heatmap/events-cs10" %}
+{% endif %}
 
 ## legendRender
 
@@ -194,6 +197,7 @@ The [legendRender](../api/heatmap/legendrender/) event is triggered before the l
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/heatmap/events-cs5" %}
+{% endif %}
 
 ## load
 
@@ -224,6 +228,7 @@ The [load](../api/heatmap/load/) event is triggered before the HeatMap is render
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/heatmap/events-cs6" %}
+{% endif %}
 
 ## loaded
 
@@ -254,6 +259,7 @@ Once HeatMap is loaded, the [loaded](../api/heatmap/loaded/) event is triggered.
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/heatmap/events-cs7" %}
+{% endif %}
 
 ## resized
 
@@ -284,6 +290,7 @@ When the window is resized, the [resized](../api/heatmap/resized/) event is trig
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/heatmap/events-cs8" %}
+{% endif %}
 
 ## tooltipRender
 

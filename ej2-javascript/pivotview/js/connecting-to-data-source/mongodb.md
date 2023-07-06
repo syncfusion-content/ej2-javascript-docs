@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Mongodb in ##Platform_Name## Pivotview control
+# MongoDB in ##Platform_Name## Pivotview control
 
 This section describes how to consume data from MongoDB database using [MongoDB Driver](https://www.nuget.org/packages/MongoDB.Driver) and [MongoDB Bson](https://www.nuget.org/packages/MongoDB.Bson) libraries and bind it to the Pivot Table via a Web API controller.
 

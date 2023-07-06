@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Postgresql in ##Platform_Name## Pivotview control
+# PostgreSQL in ##Platform_Name## Pivotview control
 
 This section describes how to consume data from PostgreSQL database using [Microsoft Npgsql](https://www.npgsql.org/doc/index.html) and bind it to the Pivot Table via a Web API controller.
 

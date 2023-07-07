@@ -22,7 +22,7 @@ var heatmap = new ej.heatmap.HeatMap({
         },
       },
       xAxis: {
-        labelRotation:45,
+        labelRotation:90,
         opposedPosition: true,
         labels: [
             'Month of Feburary 2023',

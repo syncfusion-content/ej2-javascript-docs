@@ -17,7 +17,7 @@ let pivotTableObj: PivotView = new PivotView({
     cellClick: (args: CellClickEventArgs) => {
         //triggers every time on cell click in pivot
         args.currentCell.setAttribute("style", "background-color: red;")
-    }
+    },
     height: 350
 });
 pivotTableObj.appendTo('#PivotTable');

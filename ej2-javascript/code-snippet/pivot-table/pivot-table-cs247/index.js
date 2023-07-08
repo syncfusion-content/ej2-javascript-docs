@@ -14,7 +14,7 @@ var pivotTableObj = new ej.pivotview.PivotView({
     gridSettings: {
         allowSelection: true,
         selectionSettings: { cellSelectionMode: 'Box', type: 'Multiple', mode: 'Cell' }
-    }
+    },
     cellClick: function(args)
     {
         args.currentCell.setAttribute("style", "background-color: red;")

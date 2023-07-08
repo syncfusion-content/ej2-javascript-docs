@@ -1,10 +1,10 @@
 
 
 import { PivotView, IDataSet } from '@syncfusion/ej2-pivotview';
-import { DataManager, ODataAdaptor, Query, ReturnOption } from '@syncfusion/ej2-data';
+import { DataManager, ODataV4Adaptor, Query, ReturnOption } from '@syncfusion/ej2-data';
 
 let data: DataManager = new DataManager({
-    url: 'https://bi.syncfusion.com/northwindservice/api/orders',
+    url: 'https://services.odata.org/V4/Northwind/Northwind.svc/Orders/',
     adaptor: new ODataV4Adaptor,
     crossDomain: true
 });

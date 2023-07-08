@@ -22,7 +22,7 @@ let pivotTableObj: PivotView = new PivotView({
     hyperlink: function (args: HyperCellClickEventArgs) {
         args.Cancel = false;
         args.CurrentCell.SetAttribute("data-url", "https://ej2.syncfusion.com/");//here we have redirected to EJ2 Syncfusion on hyperlinkcell click
-    }
+    },
     height: 350
 });
 pivotTableObj.appendTo('#PivotTable');

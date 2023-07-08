@@ -4,6 +4,7 @@ import { PivotView, IDataSet } from '@syncfusion/ej2-pivotview';
 import { pivotData } from './datasource.ts';
 
 let pivotTableObj: PivotView = new PivotView({
+    dataSourceSettings: {
         dataSource: pivotData as IDataSet[],
         expandAll: true,
         columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
@@ -12,7 +13,7 @@ let pivotTableObj: PivotView = new PivotView({
         formatSettings: [{ name: 'Amount', format: 'C0' }],
         filters: []
     },
-    dataBound: function(args) {
+    dataBound(): void {
         pivotTableObj.grid.autoFitColumns();
     },
     height: 350,

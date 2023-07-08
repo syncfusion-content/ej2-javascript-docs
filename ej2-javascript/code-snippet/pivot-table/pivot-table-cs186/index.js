@@ -14,7 +14,7 @@ var pivotTableObj = new ej.pivotview.PivotView({
     hyperlinkSettings: {
         showHyperlink: true,
         cssClass: 'e-custom-class'
-    }
+    },
     hyperlink: function (args) {
         args.Cancel = false;
         args.CurrentCell.SetAttribute("data-url", "https://ej2.syncfusion.com/");//here we have redirected to EJ2 Syncfusion on hyperlinkcell click

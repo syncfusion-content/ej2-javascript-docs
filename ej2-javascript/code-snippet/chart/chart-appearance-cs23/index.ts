@@ -57,5 +57,6 @@ let chart: Chart = new Chart({
     ],
     //Title for chart
     title: 'Unemployment Rates 1975-2010',
-    titleStyle: { position: 'Bottom', textAlignment: 'Far' }
+    titleStyle: { position: 'Bottom', textAlignment: 'Far' },
+    legendSettings: {visible: false}
 }, '#element');

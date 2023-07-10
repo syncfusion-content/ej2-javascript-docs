@@ -56,6 +56,7 @@ var chart = new ej.charts.Chart({
     title: 'Unemployment Rates 1975-2010',
     titleStyle: {
         position: 'Custom',
-        location: { x: 200, y: 20 }
+        x: 300, 
+        y: 60
     }
 }, '#element');

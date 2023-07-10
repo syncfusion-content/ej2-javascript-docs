@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## Candle
 
-Candle series is similar to Hilo Open Close series, are used to represent the low, high, open and closing price over time. To render a candle series, use series [`type`](../api/chart/seriesModel/#type-string) as `Candle` and inject `CandleSeries` module using `Chart.Inject(CandleSeries)` method.
+Candle series is similar to Hilo Open Close series, are used to represent the low, high, open and closing price over time. To render a candle series, use series [`type`](../../api/chart/seriesModel/#type-string) as `Candle` and inject `CandleSeries` module using `Chart.Inject(CandleSeries)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -70,10 +70,10 @@ By default, bullFillColor is set as red and bearFillColor is set as green.
 
 ## Solid Candles
 
-[`enableSolidCandles`](../api/chart/seriesModel/#enableSolidCandles-string) is used to enable/disable the solid candles. By default is set to be false. The fill color of the candle will be defined by its opening and closing values.
+[`enableSolidCandles`](../../api/chart/seriesModel/#enableSolidCandles-string) is used to enable/disable the solid candles. By default is set to be false. The fill color of the candle will be defined by its opening and closing values.
 
-[`bearFillColor`](../api/chart/seriesModel/#bearFillColor-string) will be applied when the opening value is less than the closing value.
-[`bullFillColor`](../api/chart/seriesModel/#bullFillColor-string) will be applied when the opening value is greater than closing value.
+[`bearFillColor`](../../api/chart/seriesModel/#bearFillColor-string) will be applied when the opening value is less than the closing value.
+[`bullFillColor`](../../api/chart/seriesModel/#bullFillColor-string) will be applied when the opening value is greater than closing value.
 
 {% if page.publishingplatform == "typescript" %}
 

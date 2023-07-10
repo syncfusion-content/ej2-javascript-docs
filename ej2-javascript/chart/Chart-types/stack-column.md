@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Stacked Column
 
-To render a stacked column series, use series [`type`](../api/chart/seriesModel/#type-string) as `StackingColumn` and inject `StackingColumnSeries` module using `Chart.Inject(StackingColumnSeries)` method.
+To render a stacked column series, use series [`type`](../../api/chart/seriesModel/#type-string) as `StackingColumn` and inject `StackingColumnSeries` module using `Chart.Inject(StackingColumnSeries)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -43,7 +43,7 @@ To render a stacked column series, use series [`type`](../api/chart/seriesModel/
 
 ## Stacking Group
 
-You can use the [`stackingGroup`](../api/chart/series/#stackinggroup-string) property to group the stacked columns and 100% stacked columns.
+You can use the [`stackingGroup`](../../api/chart/series/#stackinggroup-string) property to group the stacked columns and 100% stacked columns.
 Columns with same group name are stacked on top of each other.
 
 {% if page.publishingplatform == "typescript" %}
@@ -77,10 +77,10 @@ Columns with same group name are stacked on top of each other.
 
 The following properties can be used to customize the `column` series.
 
-* [fill](../api/chart/seriesModel/#fill) – Specifies the color of the series.
-* [opacity](../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../api/chart/seriesModel/#fill).
-* [dashArray](../api/chart/seriesModel/#dasharray) – Specifies the dashes of series.
-* [border](../api/chart/borderModel/#properties) – Specifies the [color](../api/chart/borderModel/#color) and [width](../api/chart/borderModel/#width) of series border.
+* [fill](../../api/chart/seriesModel/#fill) – Specifies the color of the series.
+* [opacity](../../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../../api/chart/seriesModel/#fill).
+* [dashArray](../../api/chart/seriesModel/#dasharray) – Specifies the dashes of series.
+* [border](../../api/chart/borderModel/#properties) – Specifies the [color](../../api/chart/borderModel/#color) and [width](../../api/chart/borderModel/#width) of series border.
 
 {% if page.publishingplatform == "typescript" %}
 

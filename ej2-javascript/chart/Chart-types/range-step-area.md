@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## Range Step Area
 
-To render the range step area series, use the series [`type`](../api/chart/seriesModel/#type) as a `RangeStepArea` and inject the `RangeStepAreaSeries` module using the `Chart.Inject(RangeStepAreaSeries)` method.
+To render the range step area series, use the series [`type`](../../api/chart/seriesModel/#type) as a `RangeStepArea` and inject the `RangeStepAreaSeries` module using the `Chart.Inject(RangeStepAreaSeries)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -46,9 +46,9 @@ To render the range step area series, use the series [`type`](../api/chart/serie
 
 The following properties can be used to customize the `area` series.
 
-* [fill](../api/chart/seriesModel/#fill) – Specifies the color of the area series.
-* [opacity](../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../api/chart/seriesModel/#fill).
-* [dashArray](../api/chart/seriesModel/#dasharray) – Specifies the dashes of series.
+* [fill](../../api/chart/seriesModel/#fill) – Specifies the color of the area series.
+* [opacity](../../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../../api/chart/seriesModel/#fill).
+* [dashArray](../../api/chart/seriesModel/#dasharray) – Specifies the dashes of series.
 
 {% if page.publishingplatform == "typescript" %}
 

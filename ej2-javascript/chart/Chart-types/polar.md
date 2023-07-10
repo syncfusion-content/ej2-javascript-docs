@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Polar Chart
 
-To render a polar series, use series [`type`](../api/chart/seriesModel/#type-string) as `Polar` and inject `PolarSeries` module using `Chart.Inject(PolarSeries)` method.
+To render a polar series, use series [`type`](../../api/chart/seriesModel/#type-string) as `Polar` and inject `PolarSeries` module using `Chart.Inject(PolarSeries)` method.
 
 ## Draw Types
 
@@ -20,7 +20,7 @@ Polar drawType property is used to change the series plotting type to line, colu
 
 ### Line
 
-To render a line draw type, use series [`drawType`](../api/chart/seriesModel/#drawtype-string) as `Line` and inject `LineSeries` module using `Chart.Inject(LineSeries)` method.
+To render a line draw type, use series [`drawType`](../../api/chart/seriesModel/#drawtype-string) as `Line` and inject `LineSeries` module using `Chart.Inject(LineSeries)` method.
 
 [`isClosed`](../api/chart/seriesModel/#isclosed-boolean) property specifies whether to join start and end point of a line series used in polar chart to form a closed path. Default value of isClosed is true.
 
@@ -53,7 +53,7 @@ To render a line draw type, use series [`drawType`](../api/chart/seriesModel/#dr
 
 ### Spline
 
-To render a spline draw type, use series [`drawType`](../api/chart/seriesModel/#drawtype-string) as `Spline` and inject `SplineSeries` module using `Chart.Inject(SplineSeries)` method.
+To render a spline draw type, use series [`drawType`](../../api/chart/seriesModel/#drawtype-string) as `Spline` and inject `SplineSeries` module using `Chart.Inject(SplineSeries)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -84,7 +84,7 @@ To render a spline draw type, use series [`drawType`](../api/chart/seriesModel/#
 
 ### Area
 
-To render a area draw type, use series [`drawType`](../api/chart/seriesModel/#drawtype-string) as `Area` and inject `AreaSeries` module using `Chart.Inject(AreaSeries)` method.
+To render a area draw type, use series [`drawType`](../../api/chart/seriesModel/#drawtype-string) as `Area` and inject `AreaSeries` module using `Chart.Inject(AreaSeries)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -115,7 +115,7 @@ To render a area draw type, use series [`drawType`](../api/chart/seriesModel/#dr
 
 ### Stacked Area
 
-To render a stacked area draw type, use series [`drawType`](../api/chart/seriesModel/#drawtype-string) as `StackingArea` and inject `StackingAreaSeries` module using `Chart.Inject(StackingAreaSeries)` method.
+To render a stacked area draw type, use series [`drawType`](../../api/chart/seriesModel/#drawtype-string) as `StackingArea` and inject `StackingAreaSeries` module using `Chart.Inject(StackingAreaSeries)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -146,7 +146,7 @@ To render a stacked area draw type, use series [`drawType`](../api/chart/seriesM
 
 ### Column
 
-To render a column draw type, use series [`drawType`](../api/chart/seriesModel/#drawtype-string) as `Column`.
+To render a column draw type, use series [`drawType`](../../api/chart/seriesModel/#drawtype-string) as `Column`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -177,7 +177,7 @@ To render a column draw type, use series [`drawType`](../api/chart/seriesModel/#
 
 ### Stacked Column
 
-To render a stacked column draw type, use series [`drawType`](../api/chart/seriesModel/#drawtype-string) as `StackingColumn`.
+To render a stacked column draw type, use series [`drawType`](../../api/chart/seriesModel/#drawtype-string) as `StackingColumn`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -208,7 +208,7 @@ To render a stacked column draw type, use series [`drawType`](../api/chart/serie
 
 ### Range Column
 
-To render a range column draw type, use series [`drawType`](../api/chart/seriesModel/#drawtype-string) as `RangeColumn`.
+To render a range column draw type, use series [`drawType`](../../api/chart/seriesModel/#drawtype-string) as `RangeColumn`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -239,7 +239,7 @@ To render a range column draw type, use series [`drawType`](../api/chart/seriesM
 
 ### Scatter
 
-To render a scatter draw type, use series [`DrawType`](../api/chart/seriesModel/#drawtype-string) as `Scatter` and inject `ScatterSeries` module using `Chart.Inject(ScatterSeries)` method.
+To render a scatter draw type, use series [`DrawType`](../../api/chart/seriesModel/#drawtype-string) as `Scatter` and inject `ScatterSeries` module using `Chart.Inject(ScatterSeries)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -272,7 +272,7 @@ To render a scatter draw type, use series [`DrawType`](../api/chart/seriesModel/
 
 ### Start Angle
 
-You can customize the start angle of the polar series using [`startAngle`](../api/chart/axis/#startangle-number) property. By default, `startAngle` is 0 degree.
+You can customize the start angle of the polar series using [`startAngle`](../../api/chart/axis/#startangle-number) property. By default, `startAngle` is 0 degree.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -303,7 +303,7 @@ You can customize the start angle of the polar series using [`startAngle`](../ap
 
 ### Radius
 
-You can customize the radius of the polar series using [`coefficient`](../api/chart/axis/#coefficient-number) property. By default, `coefficient` is 100.
+You can customize the radius of the polar series using [`coefficient`](../../api/chart/axis/#coefficient-number) property. By default, `coefficient` is 100.
 
 {% if page.publishingplatform == "typescript" %}
 

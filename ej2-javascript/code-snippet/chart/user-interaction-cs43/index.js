@@ -16,6 +16,8 @@ var chart = new ej.charts.Chart({
     chartArea: { border: { width: 0 } },
     primaryXAxis: {
         valueType: 'DateTime',
+        zoomFactor: 0.2, 
+        zoomPosition: 0.6,
         scrollbarSettings: {
             enable: true,
             enableZoom: false,

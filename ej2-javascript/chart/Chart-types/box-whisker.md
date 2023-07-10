@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## Box and whisker
 
-To render a box and whisker chart, use series [`type`](../api/chart/seriesModel/#type-string) as `BoxAndWhisker` and inject
+To render a box and whisker chart, use series [`type`](../../api/chart/seriesModel/#type-string) as `BoxAndWhisker` and inject
 `BoxAndWhiskerSeries` module using `Chart.Inject(BoxAndWhiskerSeries)` method. The field y requires n number of data or it should contains minimum of five values to plot a segment.
 
 {% if page.publishingplatform == "typescript" %}

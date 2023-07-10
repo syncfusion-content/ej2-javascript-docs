@@ -15,6 +15,7 @@ var imageEditorObj = new ej.imageeditor.ImageEditor({
   imageEditorObj.appendTo('#imageeditor');
 
 document.getElementById('btnClick').onclick = function() {
-	imageEditorObj.drawLine(621, 469, 1377, 588, 8, "blue");
+  let dimension = imageEditorObj.getImageDimension();
+	imageEditorObj.drawLine(dimension.x, dimension.y);
 }
 

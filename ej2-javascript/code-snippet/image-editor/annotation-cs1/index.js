@@ -15,6 +15,7 @@ var imageEditorObj = new ej.imageeditor.ImageEditor({
   imageEditorObj.appendTo('#imageeditor');
 
 document.getElementById('btnClick').onclick = function() {
-	imageEditorObj.drawText(710, 468, 'Syncfusion', 'Arial', 100, true, true, '#000');
+  let dimension = imageEditorObj.getImageDimension();
+	imageEditorObj.drawText(dimension.x,dimension.y);
 }
 

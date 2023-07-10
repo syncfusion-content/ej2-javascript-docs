@@ -2,7 +2,7 @@ ej.base.enableRipple(true);
 
 var imageEditorObj = new ej.imageeditor.ImageEditor({
     width: '550px',
-	height: '330px',
+    height: '330px',
     toolbar: [],
 	created: function () {
 		if (ej.base.Browser.isDevice) {
@@ -15,6 +15,7 @@ var imageEditorObj = new ej.imageeditor.ImageEditor({
   imageEditorObj.appendTo('#imageeditor');
 
 document.getElementById('btnClick').onclick = function() {
-	imageEditorObj.drawRectangle(810, 290, 400, 400, 16, "#fff", 'blue');
+    let dimension = imageEditorObj.getImageDimension();
+    imageEditorObj.drawRectangle(dimension.x, dimension.y);
 }
 

@@ -15,7 +15,7 @@ var imageEditorObj = new ej.imageeditor.ImageEditor({
   imageEditorObj.appendTo('#imageeditor');
 
 document.getElementById('btnClick').onclick = function() {
-	imageEditorObj.zoom(.1); // Zoom in
+	imageEditorObj.zoom(2); // Zoom in
     imageEditorObj.pan(true);
 }
 

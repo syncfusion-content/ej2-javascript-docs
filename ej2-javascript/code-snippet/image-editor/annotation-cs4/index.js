@@ -15,6 +15,7 @@ var imageEditorObj = new ej.imageeditor.ImageEditor({
   imageEditorObj.appendTo('#imageeditor');
 
 document.getElementById('btnClick').onclick = function() {
-	imageEditorObj.drawEllipse(810, 290, 400, 400, 16, "#fff", 'green');
+  let dimension = imageEditorObj.getImageDimension();
+	imageEditorObj.drawEllipse(dimension.x, dimension.y);
 }
 

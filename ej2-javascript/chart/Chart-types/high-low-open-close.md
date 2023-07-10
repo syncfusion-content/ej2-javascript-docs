@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## High Low Open Close
 
-HiloOpenClose series is used to represent the low, high, open and closing values over time. To render a HiloOpenClose series, use series [`type`](../api/chart/seriesModel/#type-string) as `HiloOpenClose` and inject `HiloOpenCloseSeries` module using `Chart.Inject(HiloOpenCloseSeries)` method.
+HiloOpenClose series is used to represent the low, high, open and closing values over time. To render a HiloOpenClose series, use series [`type`](../../api/chart/seriesModel/#type-string) as `HiloOpenClose` and inject `HiloOpenCloseSeries` module using `Chart.Inject(HiloOpenCloseSeries)` method.
 
 HiloOpenClose series requires 5 fields (x, high, low, open and close) to show the high, low, open and close price values in the stock.
 

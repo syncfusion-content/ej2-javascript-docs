@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Stacked Area
 
-To render a stacked area series, use series [`type`](../api/chart/seriesModel/#type-string) as `StackingArea` and inject `StackingAreaSeries` module using `Chart.Inject(StackingAreaSeries)` method.
+To render a stacked area series, use series [`type`](../../api/chart/seriesModel/#type-string) as `StackingArea` and inject `StackingAreaSeries` module using `Chart.Inject(StackingAreaSeries)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -45,9 +45,9 @@ To render a stacked area series, use series [`type`](../api/chart/seriesModel/#t
 
 The following properties can be used to customize the `stacked step area` series.
 
-* [fill](../api/chart/seriesModel/#fill) – Specifies the color of the area series.
-* [opacity](../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../api/chart/seriesModel/#fill).
-* [dashArray](../api/chart/seriesModel/#dasharray) – Specifies the dashes of series.
+* [fill](../../api/chart/seriesModel/#fill) – Specifies the color of the area series.
+* [opacity](../../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../../api/chart/seriesModel/#fill).
+* [dashArray](../../api/chart/seriesModel/#dasharray) – Specifies the dashes of series.
 
 {% if page.publishingplatform == "typescript" %}
 

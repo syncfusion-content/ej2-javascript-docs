@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Area
 
-To render a [area series](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/area-chart), use series [`type`](../api/chart/seriesModel/#type-string) as `Area` and inject `AreaSeries` module using `Chart.Inject(AreaSeries)` method.
+To render a [area series](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/area-chart), use series [`type`](../../api/chart/seriesModel/#type-string) as `Area` and inject `AreaSeries` module using `Chart.Inject(AreaSeries)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -76,9 +76,9 @@ To render a multicolored area series, use the series type as `MultiColoredArea`,
 
 The following properties can be used to customize the `area` series.
 
-* [fill](../api/chart/seriesModel/#fill) – Specifies the color of the area series.
-* [opacity](../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../api/chart/seriesModel/#fill).
-* [dashArray](../api/chart/seriesModel/#dasharray) – Specifies the dashes of series.
+* [fill](../../api/chart/seriesModel/#fill) – Specifies the color of the area series.
+* [opacity](../../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../../api/chart/seriesModel/#fill).
+* [dashArray](../../api/chart/seriesModel/#dasharray) – Specifies the dashes of series.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -111,9 +111,9 @@ The following properties can be used to customize the `area` series.
 
 The following properties can be used to customize the `area` series.
 
-* [fill](../api/chart/seriesModel/#fill) – Specifies the color of the area series.
-* [opacity](../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../api/chart/seriesModel/#fill).
-* [dashArray](../api/chart/seriesModel/#dasharray) – Specifies the dashes of series.
+* [fill](../../api/chart/seriesModel/#fill) – Specifies the color of the area series.
+* [opacity](../../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../../api/chart/seriesModel/#fill).
+* [dashArray](../../api/chart/seriesModel/#dasharray) – Specifies the dashes of series.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 ## Pareto
 
 Pareto charts are used to find the cumulative values of data in different categories. It is a combination of Column and Line series.
-The initial values are represented by column chart and the cumulative values are represented by Line chart. To render a pareto chart, use series [`type`](../api/chart/seriesModel/#type) as `Pareto` and inject `ParetoSeries` `ColumnSeries` and  `LineSeries` module using `Chart.Inject(ParetoSeries, LineSeries, ColumnSeries)` method.
+The initial values are represented by column chart and the cumulative values are represented by Line chart. To render a pareto chart, use series [`type`](../../api/chart/seriesModel/#type) as `Pareto` and inject `ParetoSeries` `ColumnSeries` and  `LineSeries` module using `Chart.Inject(ParetoSeries, LineSeries, ColumnSeries)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -45,7 +45,7 @@ The initial values are represented by column chart and the cumulative values are
 
 ## Pareto customization
 
-The pareto line series can be customized by using the [`marker`](../api/chart/paretoOptions/#marker), [`width`](../api/chart/paretoOptions/#width), [`dashArray`](../api/chart/paretoOptions/#dasharray), and [`fill`](../api/chart/paretoOptions/#fill) properties in the [`paretoOptions`](../api/chart/paretoOptions/). The secondary axis for the pareto series can be shown or hidden using the [`showAxis`](../api/chart/paretoOptions/#showaxis) property.
+The pareto line series can be customized by using the [`marker`](../../api/chart/paretoOptions/#marker), [`width`](../../api/chart/paretoOptions/#width), [`dashArray`](../../api/chart/paretoOptions/#dasharray), and [`fill`](../../api/chart/paretoOptions/#fill) properties in the [`paretoOptions`](../../api/chart/paretoOptions/). The secondary axis for the pareto series can be shown or hidden using the [`showAxis`](../../api/chart/paretoOptions/#showaxis) property.
 
 {% if page.publishingplatform == "typescript" %}
 

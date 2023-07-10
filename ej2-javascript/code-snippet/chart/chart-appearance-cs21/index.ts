@@ -14,7 +14,6 @@ let chartData: any[] = [
 let chart: Chart = new Chart({
 
     primaryXAxis: {
-        title: 'Years',
         lineStyle: { width: 0 },
         labelFormat: 'y',
         intervalType: 'Years',
@@ -57,5 +56,6 @@ let chart: Chart = new Chart({
     ],
     //Title for chart
     title: 'Unemployment Rates 1975-2010',
-    titleStyle: { position: 'Bottom' }
+    titleStyle: { position: 'Bottom' },
+    legendSettings: {visible: false}
 }, '#element');

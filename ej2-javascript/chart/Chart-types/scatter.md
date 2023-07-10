@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Scatter Charts
 
-To render a scatter series, use series [`type`](../api/chart/seriesModel/#type-string) as `Scatter` and inject `ScatterSeries` module using `Chart.Inject(ScatterSeries)` method.
+To render a scatter series, use series [`type`](../../api/chart/seriesModel/#type-string) as `Scatter` and inject `ScatterSeries` module using `Chart.Inject(ScatterSeries)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -45,9 +45,9 @@ To render a scatter series, use series [`type`](../api/chart/seriesModel/#type-s
 
 The following properties can be used to customize the `scatter` series.
 
-* [fill](../api/chart/seriesModel/#fill) – Specifies the color of the series.
-* [opacity](../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../api/chart/seriesModel/#fill).
-* [shape](../api/chart/chartShape/) - Specifies the shape of the scatter series.
+* [fill](../../api/chart/seriesModel/#fill) – Specifies the color of the series.
+* [opacity](../../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../../api/chart/seriesModel/#fill).
+* [shape](../../api/chart/chartShape/) - Specifies the shape of the scatter series.
 
 {% if page.publishingplatform == "typescript" %}
 

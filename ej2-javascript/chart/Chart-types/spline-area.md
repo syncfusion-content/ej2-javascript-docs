@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## Spline area
 
-To render a spline area series, use series [`type`](../api/chart/seriesModel/#type-string) as `SplineArea` and inject `SplineAreaSeries` module using `Chart.Inject(SplineAreaSeries)` method.
+To render a spline area series, use series [`type`](../../api/chart/seriesModel/#type-string) as `SplineArea` and inject `SplineAreaSeries` module using `Chart.Inject(SplineAreaSeries)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -46,9 +46,9 @@ To render a spline area series, use series [`type`](../api/chart/seriesModel/#ty
 
 The following properties can be used to customize the `spline area` series.
 
-* [fill](../api/chart/seriesModel/#fill) – Specifies the color of the area series.
-* [opacity](../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../api/chart/seriesModel/#fill).
-* [dashArray](../api/chart/seriesModel/#dasharray) – Specifies the dashes of series.
+* [fill](../../api/chart/seriesModel/#fill) – Specifies the color of the area series.
+* [opacity](../../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../../api/chart/seriesModel/#fill).
+* [dashArray](../../api/chart/seriesModel/#dasharray) – Specifies the dashes of series.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Hilo
 
-Hilo Series illustrates the price movements in stock using the high and low values. To render a Hilo series, use series [`type`](../api/chart/seriesModel/#type-string) as `Hilo` and inject `HiloSeries` module using `Chart.Inject(HiloSeries)` method.
+Hilo Series illustrates the price movements in stock using the high and low values. To render a Hilo series, use series [`type`](../../api/chart/seriesModel/#type-string) as `Hilo` and inject `HiloSeries` module using `Chart.Inject(HiloSeries)` method.
 
 Hilo series requires 3 fields (x, high and low) to show the high and low price in the stock.
 
@@ -47,8 +47,8 @@ Hilo series requires 3 fields (x, high and low) to show the high and low price i
 
 The following properties can be used to customize the `hilo` series.
 
-* [fill](../api/chart/seriesModel/#fill) – Specifies the color of the series.
-* [opacity](../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../api/chart/seriesModel/#fill).
+* [fill](../../api/chart/seriesModel/#fill) – Specifies the color of the series.
+* [opacity](../../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../../api/chart/seriesModel/#fill).
 
 {% if page.publishingplatform == "typescript" %}
 

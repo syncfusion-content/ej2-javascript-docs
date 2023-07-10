@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Radar Chart
 
-To render a radar series, use series [`type`](../api/chart/seriesModel/#type-string) as `Radar` and inject `PolarSeries` module using `Chart.Inject(RadarSeries)` method.
+To render a radar series, use series [`type`](../../api/chart/seriesModel/#type-string) as `Radar` and inject `PolarSeries` module using `Chart.Inject(RadarSeries)` method.
 
 ### Draw Type
 
@@ -49,7 +49,7 @@ similar to Polar drawType, Radar draw property is used to change the series plot
 
 ### Start Angle
 
-You can customize the start angle of the polar series using [`startAngle`](../api/chart/axis/#startangle-number) property. By default, `startAngle` is 0 degree.
+You can customize the start angle of the polar series using [`startAngle`](../../api/chart/axis/#startangle-number) property. By default, `startAngle` is 0 degree.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -80,7 +80,7 @@ You can customize the start angle of the polar series using [`startAngle`](../ap
 
 ### Radius
 
-You can customize the radius of the polar series using [`coefficient`](../api/chart/axis/#coefficient-number) property. By default, `coefficient` is 100.
+You can customize the radius of the polar series using [`coefficient`](../../api/chart/axis/#coefficient-number) property. By default, `coefficient` is 100.
 
 {% if page.publishingplatform == "typescript" %}
 

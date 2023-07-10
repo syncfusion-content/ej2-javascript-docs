@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## Histogram
 
-Histogram type charts can provide a visual display of large amounts of data that are difficult to understand in a tabular or spreadsheet form. To render a histogram chart, use series `type` as `Histogram`and inject `HistogramSeries` module using `Chart.Inject(HistogramSeries)` method.
+Histogram type charts can provide a visual display of large amounts of data that are difficult to understand in a tabular or spreadsheet form. To render a histogram chart, use series [`type`](../../api/chart/seriesModel/#type-string) as `Histogram` and inject `HistogramSeries` module using `Chart.Inject(HistogramSeries)` method.
 
 {% if page.publishingplatform == "typescript" %}
 

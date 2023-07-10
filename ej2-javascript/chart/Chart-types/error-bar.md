@@ -12,8 +12,7 @@ domainurl: ##DomainURL##
 
 ## Error Bar
 
-Error bars are graphical representations of the variability of data and used on graphs to indicate the error or uncertainty in a reported
-measurement. To render the error bar for the series, set [`visible`](../api/chart/seriesModel/#type-string) as `true` and inject `ErrorBar` module using `Chart.Inject(ErrorBar)` method.
+Error bars are graphical representations of the variability of data and used on graphs to indicate the error or uncertainty in a reported measurement. To render the error bar for the series, set [`visible`](../../api/chart/seriesModel/#type-string) as `true` and inject `ErrorBar` module using `Chart.Inject(ErrorBar)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,7 +43,7 @@ measurement. To render the error bar for the series, set [`visible`](../api/char
 
 ## Customizing Error Bar
 
-To customize the error bar type, set error bar [`type`](../api/chart/errorBarSettings/#type-string) as `Custom` and then change the horizontal/vertical positive and negative error of error bar.
+To customize the error bar type, set error bar [`type`](../../api/chart/errorBarSettings/#type-string) as `Custom` and then change the horizontal/vertical positive and negative error of error bar.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -75,7 +74,7 @@ To customize the error bar type, set error bar [`type`](../api/chart/errorBarSet
 
 ## Error Bar Mode
 
-Error bar mode is used to define whether the error bar line has to be drawn horizontally, vertically or in both side. To change the error bar mode use [`mode`](../api/chart/errorBarSettings/#mode-string) option.
+Error bar mode is used to define whether the error bar line has to be drawn horizontally, vertically or in both side. To change the error bar mode use [`mode`](../../api/chart/errorBarSettings/#mode-string) option.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -106,7 +105,7 @@ Error bar mode is used to define whether the error bar line has to be drawn hori
 
 ## Error Bar Direction
 
-To change the error bar direction to plus, minus or both side using [`direction`](../api/chart/errorBarSettings/#direction-string) option.
+To change the error bar direction to plus, minus or both side using [`direction`](../../api/chart/errorBarSettings/#direction-string) option.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -137,7 +136,7 @@ To change the error bar direction to plus, minus or both side using [`direction`
 
 ## Customizing Error Bar Cap
 
-To customize the error bar cap length, width and fill color, you can use [`errorBarCap`](../api/chart/errorBarCapSettingsModel/) option.
+To customize the error bar cap length, width and fill color, you can use [`errorBarCap`](../../api/chart/errorBarCapSettingsModel/) option.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -168,7 +167,7 @@ To customize the error bar cap length, width and fill color, you can use [`error
 
 ## Customizing Error Bar Color
 
-To customise the error bar color for individual errors, use the [`errorBarColorMapping`] property. You can also customize the vertical error, horizontal error, horizontal negative and positive error and vertical negative and positive error for an individual point using [`verticalError`](../api/chart/errorBarSettingsModel/#verticalerror), [`horizontalError`](../api/chart/errorBarSettingsModel/#horizontalerror), [`horizontalNegativeError`](../api/chart/errorBarSettingsModel/#horizontalnegativeerror), [`horizontalPositiveError`](../api/chart/errorBarSettingsModel/#horizontalpositiveerror), [`verticalNegativeError`](../api/chart/errorBarSettingsModel/#verticalnegativeerror) and [`verticalPositiveError`](../api/chart/errorBarSettingsModel/#verticalpositiveerror) properties.
+To customise the error bar color for individual errors, use the [`errorBarColorMapping`] property. You can also customize the vertical error, horizontal error, horizontal negative and positive error and vertical negative and positive error for an individual point using [`verticalError`](../../api/chart/errorBarSettingsModel/#verticalerror), [`horizontalError`](../../api/chart/errorBarSettingsModel/#horizontalerror), [`horizontalNegativeError`](../../api/chart/errorBarSettingsModel/#horizontalnegativeerror), [`horizontalPositiveError`](../../api/chart/errorBarSettingsModel/#horizontalpositiveerror), [`verticalNegativeError`](../../api/chart/errorBarSettingsModel/#verticalnegativeerror) and [`verticalPositiveError`](../../api/chart/errorBarSettingsModel/#verticalpositiveerror) properties.
 
 {% if page.publishingplatform == "typescript" %}
 

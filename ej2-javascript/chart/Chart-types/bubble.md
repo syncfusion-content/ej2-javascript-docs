@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Bubble
 
-To render a [bubble series](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/bubble-charts), use series [`type`](../api/chart/seriesModel/#type-string) as `Bubble` and inject `BubbleSeries` module using `Chart.Inject(BubbleSeries)` method.
+To render a [bubble series](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/bubble-charts), use series [`type`](../../api/chart/seriesModel/#type-string) as `Bubble` and inject `BubbleSeries` module using `Chart.Inject(BubbleSeries)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -76,8 +76,8 @@ To render a [bubble series](https://www.syncfusion.com/javascript-ui-controls/js
 
 The following properties can be used to customize the `bubble` series.
 
-* [fill](../api/chart/seriesModel/#fill) – Specifies the color of the series.
-* [opacity](../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../api/chart/seriesModel/#fill).
+* [fill](../../api/chart/seriesModel/#fill) – Specifies the color of the series.
+* [opacity](../../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../../api/chart/seriesModel/#fill).
 
 {% if page.publishingplatform == "typescript" %}
 

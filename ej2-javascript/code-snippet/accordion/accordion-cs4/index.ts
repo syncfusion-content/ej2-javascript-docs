@@ -9,7 +9,7 @@ enableRipple(true);
 
 let itemsData: any = [];
 let mapping =  { header: 'FirstName', content: 'Notes' };
-const SERVICE_URI: string = 'https://js.syncfusion.com/ejServices/Wcf/Northwind.svc/Employees';
+const SERVICE_URI: string = 'https://services.odata.org/V4/Northwind/Northwind.svc/Employees';
 
 new DataManager({ url: SERVICE_URI, adaptor: new ODataAdaptor})
   .executeQuery(new Query().range(1, 4)).then((e: ReturnOption) => {

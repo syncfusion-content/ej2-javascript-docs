@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Stacked Line
 
-To render a stacked line series, use series [`type`](../api/chart/seriesModel/#type-string) as `StackingLine` and inject `StackingLineSeries` module using `Chart.Inject(StackingLineSeries)` method.
+To render a stacked line series, use series [`type`](../../api/chart/seriesModel/#type-string) as `StackingLine` and inject `StackingLineSeries` module using `Chart.Inject(StackingLineSeries)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -45,10 +45,10 @@ To render a stacked line series, use series [`type`](../api/chart/seriesModel/#t
 
 The following properties can be used to customize the `stacked line` series.
 
-* [fill](../api/chart/seriesModel/#fill-string) – Specifies the color of the series.
-* [opacity](../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../api/chart/seriesModel/#fill-string).
-* [dashArray](../api/chart/seriesModel/#dasharray) – Specifies the dashes for series.
-* [width](/api/chart/seriesModel/#width) – Specifies the width for series.
+* [fill](../../api/chart/seriesModel/#fill-string) – Specifies the color of the series.
+* [opacity](../../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../../api/chart/seriesModel/#fill-string).
+* [dashArray](../../api/chart/seriesModel/#dasharray) – Specifies the dashes for series.
+* [width](../../api/chart/seriesModel/#width) – Specifies the width for series.
 
 {% if page.publishingplatform == "typescript" %}
 

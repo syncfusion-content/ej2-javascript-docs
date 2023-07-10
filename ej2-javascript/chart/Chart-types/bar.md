@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Bar
 
-To render a [bar series](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/bar-chart), use series [`type`](../api/chart/seriesModel/#type-string) as `Bar` and inject `BarSeries` module using `Chart.Inject(BarSeries)` method.
+To render a [bar series](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/bar-chart), use series [`type`](../../api/chart/seriesModel/#type-string) as `Bar` and inject `BarSeries` module using `Chart.Inject(BarSeries)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -43,7 +43,7 @@ To render a [bar series](https://www.syncfusion.com/javascript-ui-controls/js-ch
 
 ## Bar space and width
 
-The [`columnSpacing`](../api/chart/seriesModel/#columnspacing) and [`columnWidth`](../api/chart/seriesModel/#columnwidth) properties are used to customize the space between bars.
+The [`columnSpacing`](../../api/chart/seriesModel/#columnspacing) and [`columnWidth`](../../api/chart/seriesModel/#columnwidth) properties are used to customize the space between bars.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -74,7 +74,7 @@ The [`columnSpacing`](../api/chart/seriesModel/#columnspacing) and [`columnWidth
 
 ## Grouped bar
 
-You can use the [`groupName`](../api/chart/seriesModel/#groupname) property to group the data points in the bar type charts. Data points with same group name are grouped together.
+You can use the [`groupName`](../../api/chart/seriesModel/#groupname) property to group the data points in the bar type charts. Data points with same group name are grouped together.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -107,10 +107,10 @@ You can use the [`groupName`](../api/chart/seriesModel/#groupname) property to g
 
 The following properties can be used to customize the `bar` series.
 
-* [fill](../api/chart/seriesModel/#fill) – Specifies the color of the series.
-* [opacity](../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../api/chart/seriesModel/#fill).
-* [dashArray](../api/chart/seriesModel/#dasharray) – Specifies the dashes of series.
-* [border](../api/chart/borderModel/#properties) – Specifies the [color](../api/chart/borderModel/#color) and [width](../api/chart/borderModel/#width) of series border.
+* [fill](../../api/chart/seriesModel/#fill) – Specifies the color of the series.
+* [opacity](../../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../../api/chart/seriesModel/#fill).
+* [dashArray](../../api/chart/seriesModel/#dasharray) – Specifies the dashes of series.
+* [border](../../api/chart/borderModel/#properties) – Specifies the [color](../../api/chart/borderModel/#color) and [width](../../api/chart/borderModel/#width) of series border.
 
 {% if page.publishingplatform == "typescript" %}
 

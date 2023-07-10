@@ -1,3 +1,7 @@
+window.getImage = function (bird) {
+    return `https://ej2.syncfusion.com/products/images/carousel/${bird}.png`;
+};
+
 var productItems = [
     { ID: 1, Name: "Cardinal", imageName: 'cardinal' },
     { ID: 2, Name: "Kingfisher", imageName: 'hunei' },

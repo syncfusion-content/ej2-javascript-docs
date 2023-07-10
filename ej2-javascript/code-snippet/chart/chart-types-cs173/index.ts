@@ -54,7 +54,6 @@ let chart: Chart = new Chart({
             cornerRadius: { topLeft: Browser.isDevice ? 4 : 6, topRight: Browser.isDevice ? 4 : 6 }
         }
     ],
-    width: Browser.isDevice ? '100%' : '75%',
     //Initializing Chart title
     title: 'Defects in Shirts',
     legendSettings: { visible: true, enableHighlight: true },

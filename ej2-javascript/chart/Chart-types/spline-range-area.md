@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 
 The Spline Range Area Chart is used to display continuous data points as a set of splines that vary between high and low values over intervals of time and across different categories.
 
-To render a spline range area series, use series [`type`](../api/chart/seriesModel/#type-string) as `SplineRangeArea` and inject `SplineRangeAreaSeries` module using `Chart.Inject(SplineRangeAreaSeries)` method.
+To render a spline range area series, use series [`type`](../../api/chart/seriesModel/#type-string) as `SplineRangeArea` and inject `SplineRangeAreaSeries` module using `Chart.Inject(SplineRangeAreaSeries)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -47,9 +47,9 @@ To render a spline range area series, use series [`type`](../api/chart/seriesMod
 
 The following properties can be used to customize the `spline range area` series.
 
-* [fill](../api/chart/seriesModel/#fill) – Specifies the color of the area series.
-* [opacity](../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../api/chart/seriesModel/#fill).
-* [dashArray](../api/chart/seriesModel/#dasharray) – Specifies the dashes of series.
+* [fill](../../api/chart/seriesModel/#fill) – Specifies the color of the area series.
+* [opacity](../../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../../api/chart/seriesModel/#fill).
+* [dashArray](../../api/chart/seriesModel/#dasharray) – Specifies the dashes of series.
 
 {% if page.publishingplatform == "typescript" %}
 

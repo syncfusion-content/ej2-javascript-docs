@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## 100% Stacked Column
 
-To render a [100% stacked column](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/100-stacked-column-chart) series, use series [`type`](../api/chart/seriesModel/#type-string) as `StackingColumn100` and inject `StackingColumnSeries` module using `Chart.Inject(StackingColumnSeries)` method.
+To render a [100% stacked column](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/100-stacked-column-chart) series, use series [`type`](../../api/chart/seriesModel/#type-string) as `StackingColumn100` and inject `StackingColumnSeries` module using `Chart.Inject(StackingColumnSeries)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -45,10 +45,10 @@ To render a [100% stacked column](https://www.syncfusion.com/javascript-ui-contr
 
 The following properties can be used to customize the `column` series.
 
-* [fill](../api/chart/seriesModel/#fill) – Specifies the color of the series.
-* [opacity](../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../api/chart/seriesModel/#fill).
-* [dashArray](../api/chart/seriesModel/#dasharray) – Specifies the dashes of series.
-* [border](../api/chart/borderModel/#properties) – Specifies the [color](../api/chart/borderModel/#color) and [width](../api/chart/borderModel/#width) of series border.
+* [fill](../../api/chart/seriesModel/#fill) – Specifies the color of the series.
+* [opacity](../../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../../api/chart/seriesModel/#fill).
+* [dashArray](../../api/chart/seriesModel/#dasharray) – Specifies the dashes of series.
+* [border](../../api/chart/borderModel/#properties) – Specifies the [color](../../api/chart/borderModel/#color) and [width](../../api/chart/borderModel/#width) of series border.
 
 {% if page.publishingplatform == "typescript" %}
 

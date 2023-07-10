@@ -12,8 +12,7 @@ domainurl: ##DomainURL##
 
 ## Waterfall Chart
 
-Waterfall chart helps to understand the cumulative effect of the sequentially introduced positive and negative values. To render a Waterfall series, use series [`type`](../api/chart/seriesModel/#type-string) as `Waterfall` and inject `WaterfallSeries` module using `Chart.Inject(WaterfallSeries)` method. [`intermediateSumIndexes`](../api/chart/seriesModel/#type-string) property of waterfall is used to represent
-the in between sum values and [`sumIndexes`](../api/chart/seriesModel/#type-string) is used to represent the cumulative sum values.
+Waterfall chart helps to understand the cumulative effect of the sequentially introduced positive and negative values. To render a Waterfall series, use series [`type`](../../api/chart/seriesModel/#type-string) as `Waterfall` and inject `WaterfallSeries` module using `Chart.Inject(WaterfallSeries)` method. [`intermediateSumIndexes`](../../api/chart/seriesModel/#type-string) property of waterfall is used to represent the in between sum values and [`sumIndexes`](../../api/chart/seriesModel/#type-string) is used to represent the cumulative sum values.
 
 {% if page.publishingplatform == "typescript" %}
 

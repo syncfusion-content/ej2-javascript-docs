@@ -4,6 +4,8 @@ Chart.Inject(AreaSeries, DateTime, Legend, Zoom, ScrollBar);
 let chart: Chart = new Chart({
     primaryXAxis: {
         valueType: 'DateTime',
+        zoomFactor: 0.2, 
+        zoomPosition: 0.6,
         scrollbarSettings: {
             enable: true,
             enableZoom: false,

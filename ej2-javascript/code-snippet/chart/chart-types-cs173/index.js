@@ -45,7 +45,6 @@ var chart = new ej.charts.Chart({
             cornerRadius: { topLeft: ej.base.Browser.isDevice ? 4 : 6, topRight: ej.base.Browser.isDevice ? 4 : 6 }
         }
     ],
-    width: ej.base.Browser.isDevice ? '100%' : '75%',
     //Initializing Chart Title
     title: 'Defects in Shirts',
     legendSettings: { visible: true, enableHighlight: true },

@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Reversible Range Slider control in ##Platform_Name##
+# Reversible Range Slider in ##Platform_Name##
 
 You can create a Range Slider rendered with values in reverse order by setting the [min](https://ej2.syncfusion.com/documentation/api/slider#min) property to the maximum value and the [max](https://ej2.syncfusion.com/documentation/api/slider#max) property to the minimum value. An example of how to achieve a reversible Range Slider is shown below
 

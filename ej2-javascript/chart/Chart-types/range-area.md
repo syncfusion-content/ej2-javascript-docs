@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Range area
 
-To render a range area series, use series [`type`](../api/chart/seriesModel/#type-string) as `RangeArea` and inject `RangeAreaSeries` module using `Chart.Inject(RangeAreaSeries)` method.
+To render a range area series, use series [`type`](../../api/chart/seriesModel/#type-string) as `RangeArea` and inject `RangeAreaSeries` module using `Chart.Inject(RangeAreaSeries)` method.
 
 Since the RangeArea series requires two y values for a point, you have to add the high and low value. High and Low value specifies the maximum and minimum range of the points.
 
@@ -47,9 +47,9 @@ Since the RangeArea series requires two y values for a point, you have to add th
 
 The following properties can be used to customize the `range area` series.
 
-* [fill](../api/chart/seriesModel/#fill) – Specifies the color of the area series.
-* [opacity](../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../api/chart/seriesModel/#fill).
-* [dashArray](../api/chart/seriesModel/#dasharray) – Specifies the dashes of series.
+* [fill](../../api/chart/seriesModel/#fill) – Specifies the color of the area series.
+* [opacity](../../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../../api/chart/seriesModel/#fill).
+* [dashArray](../../api/chart/seriesModel/#dasharray) – Specifies the dashes of series.
 
 {% if page.publishingplatform == "typescript" %}
 

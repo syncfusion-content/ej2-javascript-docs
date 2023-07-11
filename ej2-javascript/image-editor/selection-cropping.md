@@ -9,60 +9,27 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Selections and Cropping in ##Platform_Name## Image editor control
+# Selection cropping in ##Platform_Name## Image editor component
 
 The cropping feature in the Image Editor allows you to select and crop specific regions of an image. It offers different selection options, including custom shapes, squares, circles, and various aspect ratios such as 3:2, 4:3, 5:4, 7:5, and 16:9. 
 
 To perform a selection, you can use the [`select`](../../api/image-editor/#select) method, which allows you to define the desired selection area within the image. Once the selection is made, you can then use the [`crop`](../../api/image-editor/#crop) method to crop the image based on the selected region. This enables you to extract and focus on specific parts of the image while discarding the rest.
 
+## Insert custom / square / circle region 
+
 The [`select`](../../api/image-editor/#select) method allows to perform selection based on the type of selection. Here, the [`select`](../../api/image-editor/#select) method is used to perform the selection as custom, circle, or square. The selection region can also be customized using the select method based on the parameters below. 
 
-* type - Specify the type of selection 
+type - Specify the type of selection 
 
-* startX - Specify the x-coordinate of the selection region’s starting point 
+startX - Specify the x-coordinate of the selection region’s starting point 
 
-* startY - Specify the y-coordinate of the selection region’s starting point 
+startY - Specify the y-coordinate of the selection region’s starting point 
 
-* width - Specify the width of the selection region
+width - Specify the width of the selection region 
 
-* height - Specify the height of the selection region
+height - Specify the height of the selection region 
 
-Here is an example of square selection using the [`select`](../../api/image-editor/#select) method.
-
-## Insert custom region
-
-In the following example, the [`select`](../../api/image-editor/#select) method is used in the button click to the custom selection.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/custom-selection-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/custom-selection-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/custom-selection-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/custom-selection-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs2" %}
-{% endif %}
-
-## Insert square region
-
-In the following example, the [`select`](../../api/image-editor/#select) method is used in the button click to the square selection.  
+Here is an example of square selection using the [`select`](../../api/image-editor/#select) method. 
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -89,37 +56,6 @@ In the following example, the [`select`](../../api/image-editor/#select) method 
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs3" %}
-{% endif %}
-
-## Insert circle region
-
-In the following example, the [`select`](../../api/image-editor/#select) method is used in the button click to the circle selection.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/custom-selection-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/custom-selection-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/custom-selection-cs4/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/custom-selection-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs4" %}
 {% endif %}
 
 ## Insert selection based on aspect ratio
@@ -161,6 +97,22 @@ In the following example, the [`select`](../../api/image-editor/#select) method 
 
 {% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs5" %}
 {% endif %}
+
+## Resize selections 
+
+The selection region can be changed programmatically by using [`selectionChanging`](../../api/image-editor/#selectionchanging) event. This event is activated during resizing the selection using mouse, and it allows for alterations to the selection region by adjusting the specified properties. 
+
+The [`selectionChanging`](../../api/image-editor/#selectionchanging) is used in these events to customize the selection and it has the following parameters. 
+
+SelectionChangeEventArgs.cction - The type of action such as inserting or resizing 
+
+SelectionChangeEventArgs.cancel - Specifies to cancel the selection. 
+
+SelectionChangeEventArgs.currentSelectionPoint - Represents all the details of the selection including its type, position, width, and height after the current action as CropSelectionSettings. 
+
+SelectionChangeEventArgs.previousSelectionPoint - Represents all the details of the selection including its type, position, width, and height before this current action as CropSelectionSettings 
+
+Here is an example of changing the selection region using the [`SelectionChangeEventArgs`](../../api/image-editor/selectionChangeEventArgs/) event. 
 
 ## Crop an image
 

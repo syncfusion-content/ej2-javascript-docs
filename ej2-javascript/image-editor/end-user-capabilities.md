@@ -1,7 +1,7 @@
 ---
 layout: post
 title: End-user capabilities in ##Platform_Name## Image editor control | Syncfusion
-description: Learn here all about Annotation in Syncfusion ##Platform_Name## Image editor control of Syncfusion Essential JS 2 and more.
+description: Learn here all about End-user capabilities in Syncfusion ##Platform_Name## Image editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: End-user capabilities 
 publishingplatform: ##Platform_Name##

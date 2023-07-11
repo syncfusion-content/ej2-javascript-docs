@@ -167,9 +167,17 @@ By default, the [`minZoomFactor`](../../api/image-editor/#minZoomFactor) value i
 
 Here is an example of specifying [`minZoomFactor`](../../api/image-editor/#minZoomFactor) and [`maxZoomFactor`](../../api/image-editor/#maxZoomFactor) property in [`zoomSettings`](../../api/image-editor/#zoomSettings) options in an image editor. 
 
-## Panning an image
+### Pan event 
 
-The Image Editor allows to pan an image when the image exceeds the canvas size or selection range. When zooming in on an image or applying a selection for cropping, it is common for the image to exceed the size of the canvas or exceed the selection range. So, the panning is used to view the entire image, by clicking on the canvas and dragging it in the direction they want to move.
+The [`panEventArgs`](../../api/image-editor/api/image-editor/panEventArgs/) event is activated when the user begins dragging the image within the canvas, and the OnPanEnd event is triggered once the panning action is completed. These events provide an opportunity to perform specific actions, such as updating the image's position, in response to the panning gesture. And these event uses [`panEventArgs`](../../api/image-editor/panEventArgs/) to handle the action the panning action when the user starts dragging the image. 
+
+The parameter available in the [`panEventArgs`](../../api/image-editor/image-editor/panEventArgs/) events are, 
+
+* PanEventArgs.startPoint - The x and y coordinates as ImageEditorPoint for the start point. 
+
+* PanEventArgs.endpoint - The x and y coordinates as ImageEditorPoint for the end point. 
+
+* PanEventArgs.cancel – Specifies the boolean value to cancel the panning action. 
 
 In the following example, you can use the [`pan`](../../api/image-editor/#pan) method in the button click event.
 

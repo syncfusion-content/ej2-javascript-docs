@@ -14,7 +14,7 @@ The quick access toolbars in the Image Editor play a vital role in facilitating 
 
 ## Add a custom toolbar item
 
-The quick access toolbar that appears when inserting annotations in the Image Editor is customizable using the [`QuickAccessToolbarOpening`](https://ej2.syncfusion.com/vue/documentation/api/image-editor/#quickacesstoolbareventargs) event. This event is triggered when the quick access toolbar is opened, allowing you to modify its contents. To add additional toolbar items to the quick access toolbar, you can access the ToolbarItems property of the [`QuickAccessToolbarEventArgs`](https://ej2.syncfusion.com/vue/documentation/api/image-editor/#quickacesstoolbareventargs) object within the event handler. By adding or removing items from the ToolbarItems property based on the Item property, you can customize the options available in the quick access toolbar according to your needs.
+The quick access toolbar that appears when inserting annotations in the Image Editor is customizable using the [`QuickAccessToolbarOpening`](../../api/image-editor/#quickacesstoolbareventargs) event. This event is triggered when the quick access toolbar is opened, allowing you to modify its contents. To add additional toolbar items to the quick access toolbar, you can access the ToolbarItems property of the [`QuickAccessToolbarEventArgs`](../../api/image-editor/#quickacesstoolbareventargs) object within the event handler. By adding or removing items from the ToolbarItems property based on the Item property, you can customize the options available in the quick access toolbar according to your needs.
 
 Here is an example of adding the custom toolbar item to the quick access toolbar. 
 

@@ -237,7 +237,7 @@ By leveraging the [`shapeChanging`](../../api/image-editor/#shapechanging) event
 
 The [`deleteShape`](../../api/image-editor/#deleteshape) method allows you to remove a freehand annotation from the image editor. To use this method, you need to pass the shapeId of the annotation as a parameter.
 
-The [`shapeId`](../../api/image-editor/#shapeid) is a unique identifier assigned to each freehand annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired annotation. By specifying the [`shapeId`](https://ej2.syncfusion.com/vue/documentation/api/image-editor/#shapeid) associated with the freehand annotation you want to remove, you can effectively delete it from the image editor.
+The [`shapeId`](../../api/image-editor/#shapeid) is a unique identifier assigned to each freehand annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired annotation. By specifying the [`shapeId`](../../api/image-editor/#shapeid) associated with the freehand annotation you want to remove, you can effectively delete it from the image editor.
 
 In the following example, the [`deleteShape`](../../api/image-editor/#deleteshape) method is used in the button click event.
 
@@ -268,33 +268,96 @@ In the following example, the [`deleteShape`](../../api/image-editor/#deleteshap
 {% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs11" %}
 {% endif %}
 
-## Shape annotation
+## Shape Annotation
 
-The Image Editor component provides the ability to add shape annotations to an image. These shape annotations include rectangles, ellipses, arrows, paths, and lines, allowing you to highlight, emphasize, or mark specific areas or elements within the image.
+The Image Editor component provides the ability to add shape annotations to an image. These shape annotations include rectangles, ellipses, arrows, paths, and lines, allowing you to highlight, emphasize, or mark specific areas or elements within the image. 
 
-### Add a rectangle
+### Add a rectangle /ellipse / line / arrow / path
 
-The Rectangle shape can be inserted and customized by changing its border color, fill color, and border width. The Rectangle shape can be made by either using a toolbar or the [`drawRectangle`](../../api/image-editor/#drawrectangle) method.
+The Image Editor component provides two ways to add rectangle annotations to an image: using the toolbar or the [`drawRectangle`](../../api/image-editor/#drawrectangle) method. Rectangle annotations are valuable tools for highlighting, emphasizing, or marking specific areas of an image to draw attention or provide additional context. 
 
-In the [`drawRectangle`](../../api/image-editor/#drawrectangle) method, the rectangle shape can be inserted by specifying fillcolor, stroke color and stroke width. The [`drawRectangle`](../../api/image-editor/#drawrectangle) method has the following parameters.
+The [`drawRectangle`](../../api/image-editor/#drawrectangle) method in the Image Editor component takes seven parameters to define the properties of the rectangle annotation: 
 
-     *  x - Specifies the x-coordinate of the rectangle.
+* x: Specifies the x-coordinate of the top-left corner of the rectangle. 
 
-     *  y - Specifies the y-coordinate of the rectangle.
+* y: Specifies the y-coordinate of the top-left corner of the rectangle. 
 
-     *  width - Specifies the width of the rectangle.
+* width: Specifies the width of the rectangle. 
 
-     *  height - Specifies the height of the rectangle.
+* height: Specifies the height of the rectangle. 
 
-     *  strokeWidth - Specifies the stroke width of the rectangle.
+* strokeWidth: Specifies the stroke width of the rectangle's border. 
 
-     *  strokeColor - Specifies the stroke color of the rectangle.
+* strokeColor: Specifies the stroke color of the rectangle's border. 
 
-     *  fillColor - the fill color of the rectangle.
+* fillColor: Specifies the fill color of the rectangle.
 
-In the toolbar, the Rectangle shape can be inserted by clicking the Annotation dropdown button and picking the Rectangle option from that popup. Once the shape is inserted, the contextual toolbar will be enabled for customizing its fill color, stroke color, and stroke width.
+The Image Editor component offers two methods to add ellipse annotations to an image: utilizing the toolbar or using the [`drawEllipse`](../../api/image-editor/#drawellipse) method. Ellipse annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
 
-In the following example, the [`drawRectangle`](../../api/image-editor/#drawrectangle) method is used to draw the rectangle.
+The [`drawEllipse`](../../api/image-editor/#drawellipse) method in the Image Editor component takes seven parameters to define the properties of the ellipse annotation: 
+
+* x: Specifies the x-coordinate of the center of the ellipse. 
+
+* y: Specifies the y-coordinate of the center of the ellipse. 
+
+* radiusX: Specifies the horizontal radius (radiusX) of the ellipse. 
+
+* radiusY: Specifies the vertical radius (radiusY) of the ellipse. 
+
+* strokeWidth: Specifies the width of the ellipse's stroke (border). 
+
+* strokeColor: Specifies the color of the ellipse's stroke (border). 
+
+* fillColor: Specifies the fill color of the ellipse. 
+
+The Image Editor component offers two methods to add line annotations to an image: utilizing the toolbar or using the [`drawLine`](../../api/image-editor/#drawline) method. Line annotations are valuable for highlighting, emphasizing, or marking specific areas of an image. 
+
+The [`drawLine`](../../api/image-editor/#drawline) method in the Image Editor component takes seven parameters to define the properties of the ellipse annotation: 
+
+* startX - Specifies the x-coordinate of the start point. 
+
+* startY - Specifies the y-coordinate of the start point. 
+
+* endX - Specifies the x-coordinate of the end point. 
+
+* endY - Specifies the y-coordinate of the end point. 
+
+* strokeWidth - Specifies the stroke width of the line. 
+
+* strokeColor - Specifies the stroke color of the line. 
+
+
+The Image Editor component offers two methods to add arrow annotations to an image: utilizing the toolbar or using the ['drawArrow'](../../api/image-editor/#drawarrow) method. Arrow annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
+
+The ['drawArrow'](../../api/image-editor/#drawarrow) method in the Image Editor component takes seven parameters to define the properties of the ellipse annotation: 
+
+* startX - Specifies the x-coordinate of the start point. 
+
+* startY - Specifies the y-coordinate of the start point. 
+
+* endX - Specifies the x-coordinate of the end point. 
+
+* endY - Specifies the y-coordinate of the end point. 
+
+* strokeWidth - Specifies the stroke width of the arrow. 
+
+* strokeColor - Specifies the stroke color of the arrow. 
+
+* arrowStart - Specifies the arrowhead as ImageEditorArrowHeadType at the start of arrow.
+
+* arrowEnd - Specifies the arrowhead as ImageEditorArrowHeadType at the end of the arrow.
+
+The Image Editor component offers two methods to add path annotations to an image: utilizing the toolbar or using the ['drawPath'](../../api/image-editor/#drawpath) method. Line annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
+
+The ['drawPath'](../../api/image-editor/#drawpath) method in the Image Editor component takes three parameters to define the properties of the ellipse annotation: 
+
+* points - Specifies collection of x and y coordinates as ImageEditorPoint to draw a path. 
+
+* strokeWidth - Specifies the stroke width of the path. 
+
+* strokeColor - Specifies the stroke color of the path. 
+
+Here is an example of inserting rectangle, ellipse, arrow, path, and line in a button click event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -320,193 +383,7 @@ In the following example, the [`drawRectangle`](../../api/image-editor/#drawrect
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs3" %}
-{% endif %}
-
-### Add an ellipse
-
-The Ellipse shape can be inserted and customized by changing its border color, fill color, and border width. The Ellipse shape can be made by either using a toolbar or the [`drawEllipse`](../../api/image-editor/#drawellipse) method.
-
-In the [`drawEllipse`](../../api/image-editor/#drawellipse) method, the ellipse shape can be inserted by specifying fillcolor, stroke color and stroke width. The [`drawEllipse`](../../api/image-editor/#drawellipse) method has the following parameters.
-
-     * x - Specifies the x-coordinate of the ellipse.
-
-     * y - Specifies the y-coordinate of the ellipse.
-
-     * radiusX - the radius x point for the ellipse.
-
-     * radiusY - the radius y point for the ellipse.
-
-     * strokeWidth - the stroke width of the ellipse.
-
-     * strokeColor - the stroke color of the ellipse.
-
-     * fillColor - the fill color of the ellipse.
-
-In the toolbar, the Ellipse shape can be inserted by clicking the Annotation dropdown button and picking the Ellipse option from that popup. Once the shape is inserted, the contextual toolbar will be enabled for customizing its fill color, stroke color, and stroke width.
-
-In the following example, the [`drawEllipse`](../../api/image-editor/#drawellipse) method is used to draw the ellipse.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/annotation-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/annotation-cs4/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs4" %}
-{% endif %}
-
-### Add a line
-
-The line shape can be inserted and customized by changing its border color, and border width. The Line shape can be made by either using a toolbar or the [`drawLine`](../../api/image-editor/#drawline) method.
-
-In the [`drawLine`](../../api/image-editor/#drawline) method, the line shape can be inserted by specifying, stroke color and stroke width. The [`drawLine`](../../api/image-editor/#drawline) method has the following parameters:
-
-     *  startX – Specifies start point x-coordinate of line.
-
-     *  startY – Specifies start point y-coordinate of line.
-
-     *  endX - Specifies endpoint x-coordinates of line.
-
-     *  endY - Specifies end point y-coordinates of the line.
-
-     *  strokeWidth - Specifies the stroke width of the line.
-
-     *  strokeColor - Specifies the stroke color of the line.
-
-In the toolbar, the Line shape can be inserted by clicking the Annotation dropdown button and picking the Line option from that popup. Once the line shape is inserted, the contextual toolbar will be enabled for customizing its stroke color, and stroke width.
-
-In the following example, the [`drawLine`](../../api/image-editor/#drawline) method is used to draw the line.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/annotation-cs5/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs5" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/annotation-cs5/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs5" %}
-{% endif %}
-
-## Add an arrow
-
-The arrow shape can be inserted and customized by changing its border color, and border width. The Arrow shape can be made by either using a toolbar or the ['drawArrow'](../../api/image-editor/#drawarrow) method.
-
-In the following example, the [`drawArrow`](../../api/image-editor/#drawarrow) method has the following parameters.
-
-     *  startX – Specifies start point x-coordinate of line.
-
-     *  startY – Specifies start point y-coordinate of line.
-
-     *  endX - Specifies endpoint x-coordinates of line.
-
-     *  endY - Specifies end point y-coordinates of the line.
-
-     *  strokeWidth - Specifies the stroke width of the line.
-
-     *  strokeColor - Specifies the stroke color of the line.
-
-In the toolbar,the arrow shape can be inserted by clicking the Annotation dropdown button and picking the Arrow option from that popup. Once that arrow shape is inserted, the contextual toolbar will be enabled for customizing its stroke color, and stroke width.
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/annotation-cs6/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs6/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs6" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/annotation-cs6/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs6/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs6" %}
-{% endif %}
-
-## Add a path
-
-The path shape can be inserted and customized by changing its border color, and border width. The Path shape can be made by either using a toolbar or the ['drawPath'](../../api/image-editor/#drawpath) method.
-
-In the [`drawPath`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawpath) method, the path shape can be inserted by specifying, stroke color and stroke width. The ['drawPath'](../../api/image-editor/#drawpath) method has the following parameters.
-
-     *  pointColl - specifies collection of start and end x, y-coordinates of path.
-
-     *  strokeWidth - Specifies the stroke width of the line.
-
-     *  strokeColor - Specifies the stroke color of the line.  
-
-In the toolbar,the path can be inserted by clicking the Annotation dropdown button and picking the Path option from that popup. Once that path shape is inserted, the contextual toolbar will be enabled for customizing its stroke color, and stroke width.
-
-In the following example, the [`drawPath`](../../api/image-editor/#drawpath) method has the following parameters.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/annotation-cs7/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs7/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs7" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/annotation-cs7/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs7/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs7" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs11" %}
 {% endif %}
 
 ## Delete a shape

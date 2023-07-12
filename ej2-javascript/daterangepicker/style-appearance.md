@@ -158,7 +158,7 @@ Use the following CSS to customize the selected date cell grid in the DateRangeP
 
 ## Full Screen Mode: Enhancing the DateRangePicker Component (Mobile Support Only)
 
-We have introduced the full screen mode functionality in our DateRangePicker component, enabling users to see the DateRangePicker calendar and presets popup element in full-screen mode for better visibility and an upgraded user experience. It is important to mention that this feature is exclusively available for mobile devices in both landscape and portrait orientations. To activate the full screen mode within the DateRangePicker component, simply set the `fullScreenMode` API value to `true`. This action will extend the calendar and presets popup element to occupy the entire screen on mobile devices.
+We have introduced the full screen mode functionality in our DateRangePicker component, enabling users to see the DateRangePicker calendar and presets popup element in full-screen mode for better visibility and an upgraded user experience. It is important to mention that this feature is exclusively available for mobile devices in both landscape and portrait orientations. To activate the full screen mode within the DateRangePicker component, simply set the [fullScreenMode](../api/daterangepicker#fullScreenMode) API value to `true`. This action will extend the calendar and presets popup element to occupy the entire screen on mobile devices.
 
 ```typescript
 import { DateRangePicker } from '@syncfusion/ej2-calendars';

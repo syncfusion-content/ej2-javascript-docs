@@ -234,3 +234,36 @@ In the following example, the contextual toolbar for rectangle will be rendered 
 
 {% previewsample "page.domainurl/code-snippet/image-editor/toolbar-template-cs2" %}
 {% endif %}
+
+## Add an additional contextual Toolbar item to text shape 
+
+The contextual toolbar that appears when inserting annotations in the Image Editor is customizable using the [`ToolbarUpdating`] event. This event is triggered when the contextual toolbar is rendered, allowing you to modify its contents. To add additional toolbar items to the contextual toolbar, you can access the [`ToolbarItems`] property of the [`ToolbarEventArgs`] object within the event handler. By adding or removing items from the [`ToolbarItems`] property based on the Item property, you can customize the options available in the contextual toolbar according to your needs. This gives you the ability to extend the functionality of the contextual toolbar and provide additional tools and options for working with inserted annotations. 
+
+Here is an example of adding the custom toolbar item to the contextual toolbar. 
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/toolbar-template-cs6/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/toolbar-template-cs6/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/toolbar-template-cs6" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/toolbar-template-cs6/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/toolbar-template-cs6/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/toolbar-template-cs6" %}
+{% endif %}

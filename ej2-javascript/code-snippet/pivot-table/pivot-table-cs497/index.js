@@ -1,3 +1,4 @@
+var headerTooltip;
 var pivotTableObj = new ej.pivotview.PivotView({
     dataSourceSettings: {
         dataSource: pivotData,
@@ -11,7 +12,7 @@ var pivotTableObj = new ej.pivotview.PivotView({
     }, 
     dataBound: function () {
         if (!headerTooltip) {
-            headerTooltip = new ej.tooltip.Tooltip({
+            headerTooltip = new ej.popups.Tooltip({
                 target: 'td.e-rowsheader,th.e-columnsheader', beforeRender: beforeRender
             });
             headerTooltip.appendTo(pivotTableObj.element);

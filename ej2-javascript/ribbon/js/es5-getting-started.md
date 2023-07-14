@@ -3,7 +3,7 @@ layout: post
 title: Es5 getting started with ##Platform_Name## Ribbon control | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Es5 getting started 
+control: Ribbon
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -258,6 +258,9 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/ribbon/es5-getting-started-cs1/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="styles.css" %}
+{% include code-snippet/ribbon/es5-getting-started-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
         

@@ -17,8 +17,7 @@ import { Browser } from '@syncfusion/ej2-base';
                 imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/bridge.png');
             }
         }
-    }
-});
+    });
     imageEditorObj.appendTo('#imageeditor');
 
     //Button click

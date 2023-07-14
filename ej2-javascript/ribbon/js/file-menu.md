@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Ribbon File Menu in  ##Platform_Name## Menu control | Syncfusion
-description:  Checkout and learn about Ribbon File Menu with ##Platform_Name## Menu control of Syncfusion Essential JS 2 and more details.
+title: File Menu in  ##Platform_Name## Ribbon control | Syncfusion
+description:  Checkout and learn about Ribbon File Menu with ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: File
+control: Ribbon
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##

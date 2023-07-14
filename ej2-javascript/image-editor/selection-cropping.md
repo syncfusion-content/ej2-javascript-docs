@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Selection cropping in ##Platform_Name## Image editor component
+# Selection cropping in the ##Platform_Name## Image Editor control
 
 The cropping feature in the Image Editor allows you to select and crop specific regions of an image. It offers different selection options, including custom shapes, squares, circles, and various aspect ratios such as 3:2, 4:3, 5:4, 7:5, and 16:9. 
 
@@ -149,7 +149,7 @@ Here is an example of circle cropping using the [`select`](../../api/image-edito
 
 ## Cropping event
 
-The [`cropping`](../../api/image-editor/#cropping) event is triggered when performing cropping on the image. This event is passed an object that contains information about the cropping event, such as the start and end point of the selection region. 
+The [`cropping`](../../api/image-editor/#cropping) event is triggered when performing cropping on the image. This event is passed an object that contains information about the cropping event, such as the start and end point of the selection region. And this event uses [`CropEventArgs`](../../api/image-editor/cropEventArgs/) to handle the cropping action in the image.
 
 The parameter available in the [`cropping`](../../api/image-editor/#cropping) event is,
 

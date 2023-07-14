@@ -5,10 +5,17 @@ import { Browser } from '@syncfusion/ej2-base';
 
 //Image Editor items definition
 
+ let id: string;
  let imageEditorObj: ImageEditor = new ImageEditor({
     width: '550px',
     height: '330px',
-    toolbar: [],
+    toolbar: ['Annotate', "Line", "Rectangle", "Ellipse", "Circle", "Arrow", "Path"],
+    showQuickAccessToolbar:  false,
+    shapeChanging: (args: shapeChanging) => {
+        if (args.action === 'select') {
+            id = args.currentShapeSettings.id;  
+        }
+    },
     created: () => {
         if (Browser.isDevice) {
             imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/flower.png');
@@ -21,8 +28,7 @@ import { Browser } from '@syncfusion/ej2-base';
 
      //Button click
     document.getElementById('btnClick').onclick = (): void => {
-        let dimension: any = imageEditorObj.getImageDimension();
-        imageEditorObj.drawLine(dimension.x, dimension.y);
+        imageEditorObj.deleteShape(id);
     }
 
 

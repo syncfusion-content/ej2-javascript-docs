@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Transform in ##Platform_Name## Image editor control
+# Transform in the ##Platform_Name## Image Editor control
 
 The Image Editor provides a range of transformation options for manipulating both the image and its annotations. These options include rotation, flipping, zooming, and panning. These transformations offer flexibility in adjusting the image and enhancing its visual appearance.
 
@@ -167,9 +167,9 @@ By default, the [`minZoomFactor`](../../api/image-editor/#minZoomFactor) value i
 
 Here is an example of specifying [`minZoomFactor`](../../api/image-editor/#minZoomFactor) and [`maxZoomFactor`](../../api/image-editor/#maxZoomFactor) property in [`zoomSettings`](../../api/image-editor/#zoomSettings) options in an image editor. 
 
-### Pan event 
+### Panning event 
 
-The [`panEventArgs`](../../api/image-editor/api/image-editor/panEventArgs/) event is activated when the user begins dragging the image within the canvas, and the OnPanEnd event is triggered once the panning action is completed. These events provide an opportunity to perform specific actions, such as updating the image's position, in response to the panning gesture. And these event uses [`panEventArgs`](../../api/image-editor/panEventArgs/) to handle the action the panning action when the user starts dragging the image. 
+The [`panning`](../../api/image-editor#panning) event is activated when the user begins dragging the image within the canvas. This event provide an opportunity to perform specific actions, like adjusting the position of an image, in response to the gesture of panning. And these event uses [`panEventArgs`](../../api/image-editor/panEventArgs/) to handle the panning action when the user starts dragging the image. 
 
 The parameter available in the [`panEventArgs`](../../api/image-editor/image-editor/panEventArgs/) events are, 
 
@@ -211,7 +211,7 @@ In the following example, you can use the [`pan`](../../api/image-editor/#pan) m
 
 ## Zooming event
 
-The [`zooming`](../../api/image-editor/#zooming) event is triggered when performing zooming the image. This event can be used to perform certain actions, such as updating the position of the image. This event is passed an object that contains information about the zooming event, such as the amount of zooming performed. 
+The [`zooming`](../../api/image-editor/#zooming) event is triggered when performing zooming the image. This event can be used to perform certain actions, such as updating the position of the image. This event is passed an object that contains information about the zooming event, such as the amount of zooming performed. And this event uses [`ZoomEventArgs`](../../api/image-editor/zoomEventArgs/) to handle the zooming action in the image.
 
 The parameter available in the [`zooming`](../../api/image-editor/#zooming) event is,
 
@@ -227,7 +227,7 @@ The parameter available in the [`zooming`](../../api/image-editor/#zooming) even
 
 ## Rotating event
 
-The [`rotating`](../../api/image-editor/#rotating) event is triggered when performing rotating the image. This event is passed an object that contains information about the rotating event, such as the amount of rotation performed. 
+The [`rotating`](../../api/image-editor#rotating) event is triggered when performing rotating the image. This event is passed an object that contains information about the rotating event, such as the amount of rotation performed. And this event uses [`RotateEventArgs`](../../api/image-editor/rotateEventArgs/) to handle the rotating action in the image.
 
 The parameter available in the [`rotating`](../../api/image-editor/#rotating) event is,
 
@@ -239,7 +239,7 @@ The parameter available in the [`rotating`](../../api/image-editor/#rotating) ev
 
 ## Flipping event
 
-The [`flipping`](../../api/image-editor/#flipping) event is triggered when performing flipping the image. This event is passed an object that contains information about the flipping event, such as the amount of flip performed. 
+The [`flipping`](../../api/image-editor#flipping) event is triggered when performing flipping the image. This event is passed an object that contains information about the flipping event, such as the amount of flip performed. And this event uses [`FlipEventArgs`](../../api/image-editor/flipEventArgs/) to handle the flipping action in the image.
 
 The parameter available in the [`flipping`](../../api/image-editor/#flipping) event is,
 

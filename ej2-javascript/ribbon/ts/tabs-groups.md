@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Tabs and Groups in  ##Platform_Name## Menu control | Syncfusion
-description:  Checkout and learn about Tabs and Groups with ##Platform_Name## Menu control of Syncfusion Essential JS 2 and more details.
+title: Tabs and Groups in  ##Platform_Name## Ribbon control | Syncfusion
+description:  Checkout and learn about Tabs and Groups with ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Tabs Groups
+control: Ribbon
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -57,3 +57,5 @@ You can add collections of items to each group by using the [collections](https:
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/ribbon/tabs-cs2" %}
+
+> Check out our [`items`](./items) page on adding the built-in and custom items.

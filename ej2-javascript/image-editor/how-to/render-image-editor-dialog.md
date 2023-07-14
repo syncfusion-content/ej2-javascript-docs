@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Render image editor dialog in ##Platform_Name## Image editor control
+# Render image editor dialog in ##Platform_Name## Image Editor control
 
 Image Editor is rendered within a dialog and opens an image by passing its URL path to the [`open`](../../api/image-editor/#open) method of the Image Editor control.
 

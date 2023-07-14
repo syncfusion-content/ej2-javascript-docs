@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Undo and Redo in ##Platform_Name## Image editor control
+# Undo and Redo in the ##Platform_Name## Image Editor control
 
 The undo and redo functionalities provide a way to reverse and repeat editing actions performed on an image. These features are essential for maintaining control and flexibility during the editing process. 
 

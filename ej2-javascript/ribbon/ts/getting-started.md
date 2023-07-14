@@ -3,7 +3,7 @@ layout: post
 title: Getting started with ##Platform_Name## Ribbon control | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: Ribbon
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -242,6 +242,9 @@ The following example illustrates how tabs, groups, collections, and items are u
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/ribbon/getting-started-cs1/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="styles.css" %}
+{% include code-snippet/ribbon/getting-started-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
           

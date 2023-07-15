@@ -16,7 +16,7 @@ let treemap: TreeMap = new TreeMap({
   leafItemSettings: {
     showLabels: false,
     // Add label template here
-    labelTemplate: '#template',
+    labelTemplate: '<div style="background-color: red">{{:Company}}</div>',
     // positioning the label template
     templatePosition: 'Center'
   },

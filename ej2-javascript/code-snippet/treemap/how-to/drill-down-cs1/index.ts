@@ -1,7 +1,7 @@
 
 
 
-import { TreeMap, ILoadedEventArgs, IDrillEndEventArgs, IDrillStartEventArgs } from '@syncfusion/ej2-treemap';
+import { TreeMap, ILoadedEventArgs, IDrillEndEventArgs } from '@syncfusion/ej2-treemap';
 import { DrillDown } from './datasource.ts';
 // Initialize the tree map control
 let treemap: TreeMap = new TreeMap({

@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Print
 
-The rendered pivot table can be printed directly from the browser by invoking the [`print`](https://ej2.syncfusion.com/javascript/documentation/api/grid/#print) method from the grid's instance. The below sample code illustrates the print option being invoked by an external button click.
+The rendered pivot table can be printed directly from the browser by invoking the [print](https://ej2.syncfusion.com/javascript/documentation/api/grid/#print) method from the grid's instance. The below sample code illustrates the print option being invoked by an external button click.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

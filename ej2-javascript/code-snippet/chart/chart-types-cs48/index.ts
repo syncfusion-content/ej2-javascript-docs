@@ -10,7 +10,7 @@ let piechart: AccumulationChart = new AccumulationChart({
             dataSource: dataMapping,
             xName: 'x',
             yName: 'y',
-            border:{color: 'white', width: 1},
+            border: { color: 'white', width: 1 },
         }
     ],
     pointRender: (args: IAccPointRenderEventArgs) => {

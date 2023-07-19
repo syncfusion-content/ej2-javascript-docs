@@ -1,4 +1,4 @@
-var piechart = new ej.cahrts.AccumulationChart({
+var piechart = new ej.charts.AccumulationChart({
     enableSmartLabels: true,
     series: [
         {

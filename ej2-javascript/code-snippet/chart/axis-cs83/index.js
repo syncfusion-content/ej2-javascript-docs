@@ -12,7 +12,7 @@ var chart = new ej.charts.Chart({
         // Numeric axis range
         minimum: 1,
         maximum: 20,
-        interval: 5
+        interval: 5,
         title: 'Overs'
     },
     primaryYAxis: {
@@ -21,7 +21,7 @@ var chart = new ej.charts.Chart({
         maximum: 20,
         interval: 10
     },
-    series:[{
+    series: [{
         dataSource: chartData,
         xName: 'x', yName: 'y',
         name: 'England', type: 'Area'

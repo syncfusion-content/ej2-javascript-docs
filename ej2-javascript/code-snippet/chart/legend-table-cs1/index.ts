@@ -1,7 +1,7 @@
 
 
 
-import {  Chart, ColumnSeries, Category, Legend, DataLabel, Tooltip, ILoadedEventArgs, IMouseEventArgs, MultiLevelLabel, IAxisLabelRenderEventArgs, ChartAnnotation } from '@syncfusion/ej2-charts';
+import { Chart, ColumnSeries, Category, Legend, DataLabel, Tooltip, ILoadedEventArgs, IMouseEventArgs, MultiLevelLabel, IAxisLabelRenderEventArgs, ChartAnnotation } from '@syncfusion/ej2-charts';
 Chart.Inject(ColumnSeries, DataLabel, Category, Legend, Tooltip, MultiLevelLabel, ChartAnnotation);
 
 let columnData: Object[] = [

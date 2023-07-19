@@ -40,4 +40,3 @@ var chart = new ej.charts.Chart();
                 }
               }
         }, '#Grid');
-

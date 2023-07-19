@@ -67,7 +67,7 @@ var click = function (args) {
   }
 };
 var pointClick = function (args) {
-  if ( ej.charts.getElement( pie.element.id + '_Series_' + args.seriesIndex + '_Point_' + args.pointIndex)) {
+  if (ej.charts.getElement(pie.element.id + '_Series_' + args.seriesIndex + '_Point_' + args.pointIndex)) {
     pie.series[0].dataSource = data[args.pointIndex].z;
     pie.title = data[args.pointIndex].z[0].title;
     window.pointIndex = args.pointIndex;
@@ -89,8 +89,6 @@ var pointClick = function (args) {
   }
   grid.dataSource = pie.series[0].dataSource;
   grid.columns[0].headerText = data[args.pointIndex].x;
-  grid.refresh();
-  pie.refresh();
 };
 
 var instance = {
@@ -132,8 +130,6 @@ var instance = {
         pie.pointClick = pointClick;
         grid.dataSource = pie.series[0].dataSource;
         grid.columns[0].headerText = 'Vehicle';
-        grid.refresh();
-        pie.refresh();
       }
     }
     grid.dataSource = pie.series[0].dataSource;
@@ -142,7 +138,7 @@ var instance = {
   title: 'Automobile Sales by Category',
 };
 var pie = new ej.charts.AccumulationChart(instance);
-pie.appendTo('#element');
+pie.appendTo('#container');
 
 var grid = new ej.grids.Grid({
   dataSource: data,
@@ -152,5 +148,3 @@ var grid = new ej.grids.Grid({
   ],
 });
 grid.appendTo('#Grid');
-
-

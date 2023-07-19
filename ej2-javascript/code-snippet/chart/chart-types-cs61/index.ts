@@ -9,7 +9,8 @@ let pyramidchart: AccumulationChart = new AccumulationChart({
         type: 'Pyramid',
         dataSource: pyramidData,
         xName: 'x', yName: 'y',
-        gapRatio: 0.04}],
+        gapRatio: 0.04
+    }],
 
     pointRender: (args: IAccPointRenderEventArgs) => {
         if ((args.point.x as string).indexOf('India') > -1) {

@@ -4,7 +4,7 @@ var range = new ej.charts.RangeNavigator({
     tooltip: { enable: true, displayMode: 'Always' },
     labelFormat: 'MMM-yy',
     series: [{
-                dataSource: datasrc, xName: 'x', yName: 'y', type: 'Area', width: 2,
-            }],
+        dataSource: datasrc, xName: 'x', yName: 'y', type: 'Area', width: 2,
+    }],
 });
 range.appendTo('#element');

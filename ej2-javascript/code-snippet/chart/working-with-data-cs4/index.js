@@ -1,39 +1,39 @@
-var intl = new Internationalization();
+var intl = new ej.base.Internationalization();
 var chart = new ej.charts.Chart({
-      primaryXAxis: {
-            title: 'Day',
-            valueType: 'DateTime',
-            edgeLabelPlacement: 'Shift',
-            skeleton: 'yMMM',
-            skeletonType: 'Date',
-            scrollbarSettings: {
-                range: {
-                    minimum: new Date(2009, 0, 1),
-                    maximum: new Date(2014, 0, 1)
-                },
-                enable: true,
-            }
-        },
-        primaryYAxis: {
-            title: 'Server Load',
-            labelFormat: '{value}MB'
-        },
-        series: [{
-            dataSource: GetDateTimeData(new Date(2009, 0, 1), new Date(2009, 8, 1)),
-            xName: 'x', yName: 'y',
-            type: 'Line', animation: { enable: false },
-        }],
-        height: '450',
-        title: 'Network Load',
-        crosshair: { enable: true, lineType: 'Vertical' },
-        tooltip: { enable: true, shared: true },
-        legendSettings: { visible: true },
-        scrollEnd: (args: IScrollEventArgs) => {
-            if (lazymode.value === 'Range') {
-                chart.series[0].dataSource = GetDateTimeData(args.currentRange.minimum as Date, args.currentRange.maximum as Date);
-            } 
-            chart.dataBind();
-        },
+    primaryXAxis: {
+        title: 'Day',
+        valueType: 'DateTime',
+        edgeLabelPlacement: 'Shift',
+        skeleton: 'yMMM',
+        skeletonType: 'Date',
+        scrollbarSettings: {
+            range: {
+                minimum: new Date(2009, 0, 1),
+                maximum: new Date(2014, 0, 1)
+            },
+            enable: true,
+        }
+    },
+    primaryYAxis: {
+        title: 'Server Load',
+        labelFormat: '{value}MB'
+    },
+    series: [{
+        dataSource: GetDateTimeData(new Date(2009, 0, 1), new Date(2009, 8, 1)),
+        xName: 'x', yName: 'y',
+        type: 'Line', animation: { enable: false },
+    }],
+    height: '450',
+    title: 'Network Load',
+    crosshair: { enable: true, lineType: 'Vertical' },
+    tooltip: { enable: true, shared: true },
+    legendSettings: { visible: true },
+    scrollEnd: function (args) {
+        if (lazymode.value === 'Range') {
+            chart.series[0].dataSource = GetDateTimeData(args.currentRange.minimum, args.currentRange.maximum);
+        }
+        chart.dataBind();
+    },
 }, '#element');
 
 function GetDateTimeData(start, end) {

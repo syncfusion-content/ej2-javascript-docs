@@ -13,7 +13,7 @@ let piechart: AccumulationChart = new AccumulationChart({
                 { x: 'Jul', y: 26, text: 'Jul: 26' }, { x: 'Aug', y: 25, text: 'Aug: 25' },
                 { x: 'Sep', y: 21, text: 'Sep: 21' }, { x: 'Oct', y: 15, text: 'Oct: 15' },
                 { x: 'Nov', y: 9, text: 'Nov: 9' }, { x: 'Dec', y: 3.5, text: 'Dec: 3.5' }],
-            dataLabel: { visible: true, name: 'text', position: 'Outside'  },
+            dataLabel: { visible: true, name: 'text', position: 'Outside' },
             groupTo: '11',
             xName: 'x',
             yName: 'y'

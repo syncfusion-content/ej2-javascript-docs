@@ -1,7 +1,7 @@
 
 
 
-import { RangeNavigator, StepLineSeries, Logarithmic}  from "@syncfusion/ej2-charts";
+import { RangeNavigator, StepLineSeries, Logarithmic } from "@syncfusion/ej2-charts";
 RangeNavigator.Inject(StepLineSeries, Logarithmic);
 
 let data: object[] = [];
@@ -14,11 +14,11 @@ for (let i: number = 0; i < 100; i++) {
 }
 let range: RangeNavigator = new RangeNavigator({
     valueType: 'Logarithmic',
-    value: [4,6],
+    value: [4, 6],
     interval: 1,
     series: [{
-                dataSource: data, xName: 'x', yName: 'y', type: 'StepLine', width: 2,
-            }],
+        dataSource: data, xName: 'x', yName: 'y', type: 'StepLine', width: 2,
+    }],
 }, '#element');
 
 

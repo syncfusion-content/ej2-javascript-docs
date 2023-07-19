@@ -9,17 +9,17 @@ let chart: Chart = new Chart({
     primaryXAxis: {
         valueType: 'Category',
     },
-     primaryYAxis: {
-      title: '(m2/min)'
+    primaryYAxis: {
+        title: '(m2/min)'
     },
-    annotations:[{
+    annotations: [{
         content: '<div id="text" style="transform: rotate(-90deg);">Speed Rate</div>',
         x: 6,
         y: 180,
         coordinateUnits: 'Pixel',
         Region: 'Chart'
     }],
-    series:[{
+    series: [{
         dataSource: columnData,
         xName: 'country', yName: 'gold',
         type: 'Column'

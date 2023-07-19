@@ -177,7 +177,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 **Step 4:** Now, run the `index.html` in web browser, it will render the `Syncfusion JavaScript Image Editor` control.
 
-## Adding Image Editor component to the application
+## Adding Image Editor control to the application
 
 Add the HTML DIV tag with the `id` attribute as `imageeditor` to your `index.html` file.
 

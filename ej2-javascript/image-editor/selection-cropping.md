@@ -102,7 +102,7 @@ In the following example, the [`select`](../../api/image-editor/#select) method 
 
 The selection region can be changed programmatically by using [`selectionChanging`](../../api/image-editor/#selectionchanging) event. This event is activated during resizing the selection using mouse, and it allows for alterations to the selection region by adjusting the specified properties. 
 
-The [`selectionChanging`](../../api/image-editor/#selectionchanging) is used in these events to customize the selection and it has the following parameters. 
+The [`SelectionChangeEventArgs`](../../api/image-editor/selectionChangeEventArgs/#selectionchangeeventargs) is used in this event to customize the selection and it has the following parameters. 
 
 SelectionChangeEventArgs.cction - The type of action such as inserting or resizing 
 

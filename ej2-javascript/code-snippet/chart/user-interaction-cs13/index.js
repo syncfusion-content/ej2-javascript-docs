@@ -3,7 +3,7 @@ var series2 = [];
 var point1;
 var value = 80;
 var value1 = 70;
-var i: number;
+var i;
 for (i = 1; i < 120; i++) {
     if (Math.random() > 0.5) {
         value += Math.random();
@@ -43,12 +43,12 @@ var chart = new ej.charts.Chart({
         {
             type: 'Scatter',
             dataSource: series1, xName: 'x', yName: 'y',
-            name: 'Male', opacity : 0.7,
+            name: 'Male', opacity: 0.7,
             marker: { width: 10, height: 10 }
         }, {
             type: 'Scatter',
             dataSource: series2, xName: 'x', yName: 'y',
-            name: 'Female', opacity : 0.7,
+            name: 'Female', opacity: 0.7,
             marker: { width: 10, height: 10 }
         }
     ],

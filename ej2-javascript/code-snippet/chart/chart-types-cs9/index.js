@@ -1,14 +1,27 @@
-var piechart = new ej.cahrts.AccumulationChart({
+var piechart = new ej.charts.AccumulationChart({
     enableSmartLabels: true,
     series: [
         {
             dataSource: [
-                { x: 'Jan', y: 3, text: 'Jan: 3' }, { x: 'Feb', y: 3.5, text: 'Feb: 3.5' },
-                { x: 'Mar', y: 7, text: 'Mar: 7' }, { x: 'Apr', y: 13.5, text: 'Apr: 13.5' },
-                { x: 'May', y: 19, text: 'May: 19' }, { x: 'Jun', y: 23.5, text: 'Jun: 23.5' },
-                { x: 'Jul', y: 26, text: 'Jul: 26' }, { x: 'Aug', y: 25, text: 'Aug: 25' },
-                { x: 'Sep', y: 21, text: 'Sep: 21' }, { x: 'Oct', y: 15, text: 'Oct: 15' }],
-            dataLabel: { visible: true, name: 'text', position: 'Outside' },
+                { x: 'Jan', y: 13, text: 'Jan: 13' },
+                { x: 'Feb', y: 13, text: 'Feb: 13' },
+                { x: 'Mar', y: 17, text: 'Mar: 17' },
+                { x: 'Apr', y: 13.5, text: 'Apr: 13.5' }],
+            dataLabel: {
+                visible: true, name: 'text', position: 'Outside',
+                connectorStyle: {
+                    //Length of the connector line in pixels
+                    length: '50px',
+                    //Width of the connector line in pixels
+                    width: 2,
+                    //dashArray of the connector line
+                    dashArray: '5,3',
+                    //Color of the connector line
+                    color: '#f4429e',
+                    //Specifies the type of the connector line either Line or Curve
+                    type: 'Curve'
+                }
+            },
             xName: 'x',
             yName: 'y'
         }

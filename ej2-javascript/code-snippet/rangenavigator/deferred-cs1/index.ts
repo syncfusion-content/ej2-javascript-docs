@@ -1,7 +1,7 @@
 
 
 
-import { RangeNavigator, Chart, AreaSeries,  DateTime, RangeTooltip}  from "@syncfusion/ej2-charts";
+import { RangeNavigator, Chart, AreaSeries, DateTime, RangeTooltip, IChangedEventArgs } from "@syncfusion/ej2-charts";
 Chart.Inject(DateTime, AreaSeries);
 RangeNavigator.Inject(AreaSeries, DateTime, RangeTooltip);
 import { datasrc } from "./datasource.ts";
@@ -26,13 +26,13 @@ let range: RangeNavigator = new RangeNavigator({
     tooltip: { enable: true },
     enableDeferredUpdate: true,
     series: [{
-                dataSource: datasrc, xName: 'x', yName: 'y', type: 'Area', width: 2,
-            }],
+        dataSource: datasrc, xName: 'x', yName: 'y', type: 'Area', width: 2,
+    }],
     changed: (args: IChangedEventArgs) => {
-            chart.primaryXAxis.zoomFactor = args.zoomFactor;
-            chart.primaryXAxis.zoomPosition = args.zoomPosition;
-            chart.dataBind();
-        },
+        chart.primaryXAxis.zoomFactor = args.zoomFactor;
+        chart.primaryXAxis.zoomPosition = args.zoomPosition;
+        chart.dataBind();
+    },
 }, '#element');
 
 

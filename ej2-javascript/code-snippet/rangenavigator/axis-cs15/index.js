@@ -1,10 +1,11 @@
 var range = new ej.charts.RangeNavigator({
-    valueType: 'DateTime', 
-    value: [new Date('2017-09-01'), new Date('2018-02-01')],
-    labelFormat: 'MMM-yy',
+    valueType: 'DateTime',
+    labelIntersectAction: 'Hide',
+    labelFormat: 'y/M/d',
+    value: [new Date("2017-08-13"), new Date("2017-12-28")],
     series: [{
-                dataSource: datasrc, xName: 'x', yName: 'y', type: 'Area', width: 2,
-            }],
+        dataSource: datasrc, xName: 'x', yName: 'y', type: 'StepLine', width: 2,
+    }],
 });
 range.appendTo('#element');
 

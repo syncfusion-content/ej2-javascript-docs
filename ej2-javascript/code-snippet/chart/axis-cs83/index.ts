@@ -13,7 +13,7 @@ let chart: Chart = new Chart({
         maximum: 20,
         interval: 5
     },
-    series:[{
+    series: [{
         dataSource: numericData,
         xName: 'x', yName: 'y',
         type: 'Line'

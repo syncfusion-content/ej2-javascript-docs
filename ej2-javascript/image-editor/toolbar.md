@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 The toolbars in the Image Editor are a key component for interacting with and editing images. They provide a range of tools and options that can be customized to suit the needs and preferences. Add or remove items from the toolbar to create a personalized set of tools, or they can even create their own custom toolbar from scratch. This flexibility and customization allow them to create a unique image editing experience that is tailored to their specific needs and workflow. 
 
-In the Image Editor, the toolbar property provides the ability to customize the toolbar by adding or removing items, as well as defining a completely custom toolbar. This feature is valuable for creating a personalized image editing experience that aligns with specific requirements and workflows.
+In the Image Editor, the [`toolbar`](../../api/image-editor/#toolbar) provides the ability to customize the toolbar by adding or removing items, as well as defining a completely custom toolbar. This feature is valuable for creating a personalized image editing experience that aligns with specific requirements and workflows.
 
 ## Built-in toolbar items
 
@@ -64,9 +64,9 @@ Here is an example of adding custom toolbar items to rotate and flip transformat
 
 ## Show or hide a toolbar
 
-The [`toolbar`](../../api/image-editor/#toolbar) property controls the visibility of the toolbar in the Image Editor. When the Toolbar property is set to an empty list, the toolbar is hidden. Conversely, if the Toolbar property contains a list of items, the toolbar is shown, displaying the specified items. This feature provides flexibility for users to personalize their image editing experience. 
+The [`toolbar`](../../api/image-editor/#toolbar) property controls the visibility of the toolbar in the Image Editor. When the [`toolbar`](../../api/image-editor/#toolbar) is set to an empty list, the toolbar is hidden. Conversely, if the [`toolbar`](../../api/image-editor/#toolbar) contains a list of items, the toolbar is shown, displaying the specified items. This feature provides flexibility for users to personalize their image editing experience. 
 
-Here is an example of hiding the toolbar of the image editor using Toolbar property. 
+Here is an example of hiding the toolbar of the image editor using [`toolbar`](../../api/image-editor/#toolbar). 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -95,7 +95,7 @@ Here is an example of hiding the toolbar of the image editor using Toolbar prope
 
 ## Show or hide a toolbar Item
 
-The [`toolbar`](../../api/image-editor/#toolbar) property is utilized to control the visibility of toolbar items in the Image Editor. By default, the toolbar property includes the default toolbar items. So, if you wish to hide the default toolbar items then you need to explicitly define the required items using [`toolbar`](../../api/image-editor/#toolbar) property. This allows you to customize the toolbar by displaying only the specific items you require, tailoring the editing experience to your preferences.
+The [`toolbar`](../../api/image-editor/#toolbar) property is utilized to control the visibility of toolbar items in the Image Editor. By default, the [`toolbar`](../../api/image-editor/#toolbar) includes the default toolbar items. So, if you wish to hide the default toolbar items then you need to explicitly define the required items using [`toolbar`](../../api/image-editor/#toolbar) property. This allows you to customize the toolbar by displaying only the specific items you require, tailoring the editing experience to your preferences.
 
 Here is an example of hiding the cropping and selection toolbar items using [`toolbar`](../../api/image-editor/#toolbar) property. 
 
@@ -204,7 +204,7 @@ Here is an example of using [`toolbarTemplate`](../../api/image-editor/#toolbart
 
 ## Customize Contextual Toolbar
 
-The [`toolbarUpdating`](../../api/image-editor/#toolbarupdating) event is triggered when inserting or selecting annotations, which opens the contextual toolbar in the Image Editor. Within this event, the [`toolbarItems`](../../api/image-editor/toolbarEventArgs/#toolbaritems) property in the [`ToolbarEventArgs`](../../api/image-editor/toolbarEventArgs/) is utilized to add or remove contextual toolbar items.
+The [`toolbarUpdating`](https://ej2.syncfusion.com/documentation/api/image-editor/#toolbarupdating)(../../api/image-editor/#toolbarupdating) event is triggered when inserting or selecting annotations, which opens the contextual toolbar in the Image Editor. Within this event, the [`toolbarItems`](../../api/image-editor/toolbarEventArgs/#toolbaritems) property in the [`ToolbarEventArgs`](../../api/image-editor/toolbarEventArgs/) is utilized to add or remove contextual toolbar items.
 
 In the following example, the contextual toolbar for rectangle will be rendered with only stroke color by excluding fill color and stroke width using toolbarUpdating event.
 
@@ -237,7 +237,7 @@ In the following example, the contextual toolbar for rectangle will be rendered 
 
 ## Add an additional contextual Toolbar item to text shape 
 
-The contextual toolbar that appears when inserting annotations in the Image Editor is customizable using the [`ToolbarUpdating`] event. This event is triggered when the contextual toolbar is rendered, allowing you to modify its contents. To add additional toolbar items to the contextual toolbar, you can access the [`ToolbarItems`] property of the [`ToolbarEventArgs`] object within the event handler. By adding or removing items from the [`ToolbarItems`] property based on the Item property, you can customize the options available in the contextual toolbar according to your needs. This gives you the ability to extend the functionality of the contextual toolbar and provide additional tools and options for working with inserted annotations. 
+The contextual toolbar that appears when inserting annotations in the Image Editor is customizable using the [`toolbarUpdating`](https://ej2.syncfusion.com/documentation/api/image-editor/#toolbarupdating) event. This event is triggered when the contextual toolbar is rendered, allowing you to modify its contents. To add additional toolbar items to the contextual toolbar, you can access the [`toolbarItems`](https://helpej2.syncfusion.com/documentation/api/image-editor/toolbarEventArgs/#toolbaritems) property of the object within the event handler. By adding or removing items from the [`toolbarItems`](https://helpej2.syncfusion.com/documentation/api/image-editor/toolbarEventArgs/#toolbaritems) property based on the Item property, you can customize the options available in the contextual toolbar according to your needs. This gives you the ability to extend the functionality of the contextual toolbar and provide additional tools and options for working with inserted annotations.  
 
 Here is an example of adding the custom toolbar item to the contextual toolbar. 
 

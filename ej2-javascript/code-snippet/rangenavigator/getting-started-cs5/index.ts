@@ -1,7 +1,7 @@
 
 
 
-import { RangeNavigator, AreaSeries,  DateTime, RangeTooltip}  from "@syncfusion/ej2-charts";
+import { RangeNavigator, AreaSeries, DateTime, RangeTooltip } from "@syncfusion/ej2-charts";
 RangeNavigator.Inject(AreaSeries, DateTime, RangeTooltip);
 import { datasrc } from "./datasource.ts";
 
@@ -12,8 +12,8 @@ let range: RangeNavigator = new RangeNavigator({
     labelFormat: 'MMM-yy',
     animationDuration: 2000,
     series: [{
-                dataSource: datasrc, xName: 'x', yName: 'y', type: 'Area', width: 2,
-            }],
+        dataSource: datasrc, xName: 'x', yName: 'y', type: 'Area', width: 2,
+    }],
 }, '#element');
 
 

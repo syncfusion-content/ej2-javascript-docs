@@ -331,9 +331,9 @@ The [`drawLine`](../../api/image-editor/#drawline) method in the Image Editor co
 * strokeColor - Specifies the stroke color of the line. 
 
 
-The ['drawArrow'](../../api/image-editor/#drawarrow) method is used to insert a arrow to the Image Editor control. Arrow annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
+The [`drawArrow`](../../api/image-editor/#drawarrow) method is used to insert a arrow to the Image Editor control. Arrow annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
 
-The ['drawArrow'](../../api/image-editor/#drawarrow) method in the Image Editor control takes seven parameters to define the properties of the ellipse annotation: 
+The [`drawArrow`](../../api/image-editor/#drawarrow) method in the Image Editor control takes seven parameters to define the properties of the ellipse annotation: 
 
 * startX - Specifies the x-coordinate of the start point. 
 
@@ -351,8 +351,8 @@ The ['drawArrow'](../../api/image-editor/#drawarrow) method in the Image Editor 
 
 * arrowEnd - Specifies the arrowhead as ImageEditorArrowHeadType at the end of the arrow.
 
-The ['drawPath'](../../api/image-editor/#drawpath) method is used to insert a path to the Image Editor control. Path annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
-The ['drawPath'](../../api/image-editor/#drawpath) method in the Image Editor control takes three parameters to define the properties of the ellipse annotation: 
+The [`drawPath`](../../api/image-editor/#drawpath) method is used to insert a path to the Image Editor control. Path annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
+The [`drawPath`](../../api/image-editor/#drawpath) method in the Image Editor control takes three parameters to define the properties of the ellipse annotation: 
 
 * points - Specifies collection of x and y coordinates as ImageEditorPoint to draw a path. 
 

@@ -5,7 +5,7 @@ import { AccumulationChart, FunnelSeries, IAccTextRenderEventArgs, AccumulationD
 import { labelData } from './datasource.ts';
 AccumulationChart.Inject(FunnelSeries, AccumulationDataLabel);
 let accChart: AccumulationChart = new AccumulationChart({
-   series: [
+    series: [
         {
             dataSource: labelData,
             dataLabel: { visible: true, name: 'text', position: 'Outside' },
@@ -14,7 +14,7 @@ let accChart: AccumulationChart = new AccumulationChart({
         }
     ],
 
-     textRender: (args: IAccTextRenderEventArgs) => {
+    textRender: (args: IAccTextRenderEventArgs) => {
         if (args.text.indexOf('Mar') > -1) {
             args.color = 'red';
             args.border.width = 1;

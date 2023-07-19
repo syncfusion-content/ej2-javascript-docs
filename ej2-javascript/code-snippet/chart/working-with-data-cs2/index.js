@@ -1,25 +1,22 @@
 var dataManager = new ej.data.DataManager({
-    url: 'http://mvc.syncfusion.com/Services/Northwnd.svc/Tasks/'
+    url: 'https://services.syncfusion.com/js/production/api/orders'
 });
 var query = new ej.data.Query().take(5).where('Estimate', 'lessThan', 3, false);
 var chart = new ej.charts.Chart({
-        primaryXAxis: {
-            valueType: 'Category',
-            title: 'Assignee'
-        },
-        primaryYAxis:
+    primaryXAxis: {
+        valueType: 'Category'
+    },
+    primaryYAxis:
+    {
+        title: 'Freight rate in U.S. dollars'
+    },
+    series: [
         {
-            title: 'Estimate',
-            minimum: 0, maximum: 3, interval: 1
-        },
-        series: [
-            {
-                type: 'Column',
-                dataSource: dataManager,
-                xName: 'Assignee', yName: 'Estimate', query: query,
-                name: 'In progress'
-            }
-        ],
-        title: 'Sprint Task Analysis'
+            type: 'Column',
+            dataSource: dataManager,
+            xName: 'CustomerID', yName: 'Freight', query: query
+        }
+    ],
+    title: 'Container freight rate'
 }, '#element');
 

@@ -1,17 +1,17 @@
 
 
 
-import { RangeNavigator, StepLineSeries, DateTime}  from "@syncfusion/ej2-charts";
+import { RangeNavigator, StepLineSeries, DateTime } from "@syncfusion/ej2-charts";
 RangeNavigator.Inject(StepLineSeries, DateTime);
 import { datasrc } from "./datasource.ts";
 
 let range: RangeNavigator = new RangeNavigator({
     valueType: 'DateTime',
     labelPosition: 'Inside',
-    value:[new Date("2017-08-13"), new Date("2017-12-28")],
+    value: [new Date("2017-08-13"), new Date("2017-12-28")],
     series: [{
-                dataSource: datasrc, xName: 'x', yName: 'y', type: 'StepLine', width: 2,
-            }],
+        dataSource: datasrc, xName: 'x', yName: 'y', type: 'StepLine', width: 2,
+    }],
 }, '#element');
 
 

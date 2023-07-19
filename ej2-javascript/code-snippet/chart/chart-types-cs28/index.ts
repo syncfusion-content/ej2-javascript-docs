@@ -1,11 +1,11 @@
 
 
 
-import { AccumulationChart, AccumulationDataLabel, IAccTextRenderEventArgs } from '@syncfusion/ej2-charts';
+import { AccumulationChart, AccumulationDataLabel, IAccTextRenderEventArgs, IAccPointRenderEventArgs } from '@syncfusion/ej2-charts';
 import { data } from './datasource.ts';
 AccumulationChart.Inject(AccumulationDataLabel);
 let accChart: AccumulationChart = new AccumulationChart({
-   series: [
+    series: [
         {
             dataSource: data,
             dataLabel: { visible: true, position: 'Outside' },
@@ -15,7 +15,7 @@ let accChart: AccumulationChart = new AccumulationChart({
         }
     ],
 
-     textRender: (args: IAccTextRenderEventArgs) => {
+    textRender: (args: IAccTextRenderEventArgs) => {
         if (args.text.indexOf('Others') > -1) {
             args.text = 'Grouped Slices';
             args.color = 'red';

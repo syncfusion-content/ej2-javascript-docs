@@ -9,8 +9,9 @@ let piechart: AccumulationChart = new AccumulationChart({
     series: [
         {
             dataSource: labelData,
-            dataLabel: { visible: true, name: 'text', position: 'Outside',
-                connectorStyle:{
+            dataLabel: {
+                visible: true, name: 'text', position: 'Outside',
+                connectorStyle: {
                     //Length of the connector line in pixels
                     length: '50px',
                     //Width of the connector line in pixels
@@ -22,7 +23,8 @@ let piechart: AccumulationChart = new AccumulationChart({
                     //Specifies the type of the connector line either Line or Curve
                     type: 'Curve'
                 }
-            }, xName: 'x', yName: 'y'}
+            }, xName: 'x', yName: 'y'
+        }
     ]
 }, '#element');
 

@@ -9,11 +9,11 @@ let chart: Chart = new Chart({
     primaryXAxis: {
         valueType: 'Category'
     },
-    series:[{
+    series: [{
         dataSource: polarCategory,
         xName: 'x', yName: 'y',
         // Series type as Polar series
-        type: 'Polar'
+        type: 'Polar',
         // Series draw type as scatter
         drawType: 'Scatter'
     }],

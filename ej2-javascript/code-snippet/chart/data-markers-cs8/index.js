@@ -7,41 +7,41 @@ var chartData = [
     { x: 'Nov', y: -3.8 }, { x: 'Dec', y: -6.8 }
 ];
 var chart = new ej.charts.Chart({
-        primaryXAxis: {
-            title: 'Months',
-            valueType: 'Category'
-        },
-        primaryYAxis:
+    primaryXAxis: {
+        title: 'Months',
+        valueType: 'Category'
+    },
+    primaryYAxis:
+    {
+        title: 'Temperature (Celsius)',
+        minimum: -20, maximum: 25, interval: 5,
+        edgeLabelPlacement: 'Shift',
+        labelFormat: '{value}°C'
+    },
+    series: [
         {
-            title: 'Temperature (Celsius)',
-            minimum: -20, maximum: 25, interval: 5,
-            edgeLabelPlacement: 'Shift',
-            labelFormat: '{value}°C'
-        },
-        series: [
-            {
-                type: 'Line', name: 'Warmest', width: 2,
-                dataSource: chartData, xName: 'x', yName: 'y',
-                marker: {
-                    visible: true,
-                    height: 10, width: 10,
-                    shape: 'Pentagon',
-                    dataLabel: { visible: true }
-                }
-            }
-        ],
-        title: 'Alaska Weather Statistics - 2016',
-        // pointRender event for chart
-        pointRender: (args: IPointRenderEventArgs) => {
-            if(args.point.index === 6){
-                args.fill = 'red'
-            }
-        },
-        textRender: (args: ITextRenderEventArgs) => {
-            if(args.point.index === 6){
-                args.text = 'Maximum Temperature';
-                args.color = 'red';
+            type: 'Line', name: 'Warmest', width: 2,
+            dataSource: chartData, xName: 'x', yName: 'y',
+            marker: {
+                visible: true,
+                height: 10, width: 10,
+                shape: 'Pentagon',
+                dataLabel: { visible: true }
             }
         }
+    ],
+    title: 'Alaska Weather Statistics - 2016',
+    // pointRender event for chart
+    pointRender: (args) => {
+        if (args.point.index === 6) {
+            args.fill = 'red'
+        }
+    },
+    textRender: (args) => {
+        if (args.point.index === 6) {
+            args.text = 'Maximum Temperature';
+            args.color = 'red';
+        }
+    }
 }, '#element');
 

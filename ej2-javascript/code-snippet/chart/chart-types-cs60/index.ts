@@ -19,9 +19,9 @@ let pyramidchart: AccumulationChart = new AccumulationChart({
         explodeAll: false,
 
         //Specifies index of the point, to be exploded on load
-        explodeIndex:2
+        explodeIndex: 2
 
-        }]
+    }]
 });
 pyramidchart.appendTo('#element')
 

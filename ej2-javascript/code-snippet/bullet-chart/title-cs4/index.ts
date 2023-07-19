@@ -8,14 +8,14 @@ let chart: BulletChart = new BulletChart({
         title: 'Sales Rate',
         subtitle: '(in dollars $)',
         dataSource: [
-        { value: 55, target: 45, category: 'Year 1'  },
+                { value: 55, target: 45, category: 'Year 1' },
         ],
         animation: { enable: false },
         targetField: 'target',
         valueField: 'value',
         titlePosition: 'Right',
         labelFormat: '${value}',
-        ranges: [ { end: 35 },
+        ranges: [{ end: 35 },
         { end: 50 },
         { end: 100 }
         ],

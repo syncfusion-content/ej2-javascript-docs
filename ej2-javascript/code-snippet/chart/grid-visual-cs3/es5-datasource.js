@@ -13069,7 +13069,7 @@ var data = orderData.map((item) => {
     var name = (customerData).filter((cItem) => {
         return cItem.CustomerID === item.CustomerID;
     })[0];
-    item.CustomerName = ContactName;
+    item.CustomerName = name.ContactName;
     return item;
 });
 

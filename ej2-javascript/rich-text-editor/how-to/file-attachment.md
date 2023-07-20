@@ -20,43 +20,6 @@ In the below sample, configure the saveUrl and path properties to achieve file a
 
 The following sample illustrates how to attach a file in the Rich Text Editor.
 
-``` HTML
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>Essential JS 2 Rich Text Editor</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript UI Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-    <link href="{{:CDN_LINK}}ej2-base/styles/material.css" rel="stylesheet" />
-    <link href="{{:CDN_LINK}}ej2-richtexteditor/styles/material.css" rel="stylesheet" />
-    <link href="{{:CDN_LINK}}ej2-inputs/styles/material.css" rel="stylesheet" />
-    <link href="{{:CDN_LINK}}ej2-lists/styles/material.css" rel="stylesheet" />
-    <link href="{{:CDN_LINK}}ej2-navigations/styles/material.css" rel="stylesheet" />
-    <link href="{{:CDN_LINK}}ej2-popups/styles/material.css" rel="stylesheet" />
-    <link href="{{:CDN_LINK}}ej2-buttons/styles/material.css" rel="stylesheet" />
-    <link href="{{:CDN_LINK}}ej2-splitbuttons/styles/material.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-    <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='defaultRTE'>
-            <p>The sample is configured with inline mode of editor. Initially, the editor is rendered without a <a href="https://ej2.syncfusion.com/home/" target="_blank">toolbar</a>. The toolbar becomes visible only when the content is selected/clicked.</p>
-        </div>
-        <div id="fileUpload">
-        </div>
-    </div>
-</body>
-
-</html>
-```
-
 ```ts
 
 import { RichTextEditor, Toolbar, Link, Image, Count, HtmlEditor, QuickToolbar, NodeSelection } from '@syncfusion/ej2-richtexteditor';

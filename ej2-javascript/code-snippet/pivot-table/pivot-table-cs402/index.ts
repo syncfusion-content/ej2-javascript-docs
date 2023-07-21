@@ -1,6 +1,6 @@
 
 
-import { PivotView, IDataSet } from '@syncfusion/ej2-pivotview';
+import { PivotView, IDataSet, HyperCellClickEventArgs } from '@syncfusion/ej2-pivotview';
 import { pivotData } from './datasource.ts';
 
 let pivotTableObj: PivotView = new PivotView({
@@ -16,13 +16,13 @@ let pivotTableObj: PivotView = new PivotView({
         filters: []
     },
     hyperlinkSettings: {
-        showHyperlink: true
+        showHyperlink: true,
         cssClass: 'e-custom-class'
     },
-    hyperlink: function (args: HyperCellClickEventArgs) {
-        args.Cancel = false;
-        args.CurrentCell.SetAttribute("data-url", "https://ej2.syncfusion.com/");//here we have redirected to EJ2 Syncfusion on hyperlinkcell click
-    }
+    hyperlinkCellClick: function (args: HyperCellClickEventArgs) {
+        args.cancel = false;
+        args.currentCell.setAttribute("data-url", "https://ej2.syncfusion.com/");//here we have redirected to EJ2 Syncfusion on hyperlinkcell click
+    },
     height: 350
 });
 pivotTableObj.appendTo('#PivotTable');

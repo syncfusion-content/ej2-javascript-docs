@@ -21,7 +21,7 @@ var pivotTableObj = new ej.pivotview.PivotView({
         columnWidth: 140
     },
     height: 350,
-    cellTemplate: '<span class="tempwrap sb-icon-neutral e-icons"></span>',
+    cellTemplate: '<span class="tempwrap sb-icon-neutral pv-icons"></span>',
     dataBound: function (args) {
         var cTable = document.getElementsByClassName("e-table");
         var colLen = pivotTableObj.pivotValues[3].length;

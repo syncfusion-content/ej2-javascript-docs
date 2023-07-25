@@ -19,7 +19,7 @@ let treegrid: TreeGrid = new TreeGrid(
     });
 treegrid.appendTo('#TreeGrid');
 
-function totalPrice(field: string, data: { units: number, Fat: number, unitprice: number }, column: Object): number {
+function totalPrice(field: string, data: { units: number, Fat: number, unitPrice: number }, column: Object): number {
     return data.units * data.unitPrice;
 };
 

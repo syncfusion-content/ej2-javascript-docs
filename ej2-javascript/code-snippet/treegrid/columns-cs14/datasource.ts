@@ -798,16 +798,16 @@ export let formatData: Object[] = [
         orderDate: new Date('03/10/2017'),
         shippedDate: new Date('03/20/2018'),
         units: '1120',
-        unitPrice: '33',
+        unitPrice: 33,
         price: '108.80',
         Category: 'seafood',
         subtasks: [
             { orderID: '3.1', orderName: 'Lead glassware', Category: 'Solid crystals',
-            orderDate: new Date('08/03/2017'), shippedDate: new Date('03/18/2018'), units: '542', unitPrice: '6', price: '32.52' },
+            orderDate: new Date('08/03/2017'), shippedDate: new Date('03/18/2018'), units: '542', unitPrice: 6, price: '32.52' },
             { orderID: '3.2', orderName: 'Pharmaceutical Glassware', Category: 'Solid crystals',
-            orderDate: new Date('03/10/2017'), shippedDate: new Date('03/20/2018'), units: '324', unitPrice: '11', price: '35.64' },
+            orderDate: new Date('03/10/2017'), shippedDate: new Date('03/20/2018'), units: '324', unitPrice: 11, price: '35.64' },
             { orderID: '3.3', orderName: 'Glass beads', Category: 'Solid crystals', units: '254',
-            orderDate: new Date('03/02/2017'), shippedDate: new Date('03/22/2018'), unitPrice: '16', price: '40.64' }
+            orderDate: new Date('03/02/2017'), shippedDate: new Date('03/22/2018'), unitPrice: 16, price: '40.64' }
         ]
     }
 

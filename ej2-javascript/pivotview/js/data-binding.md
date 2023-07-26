@@ -372,7 +372,7 @@ User can show custom string in empty value cells using the [`emptyCellsTextConte
 
 ### Load
 
-The event [`load`]((https://ej2.syncfusion.com/javascript/documentation/api/pivotview#load)) fires before initiate rendering of pivot table. It holds following parameters like `dataSourceSettings`, `fieldsType` and `pivotView`. In this event user can customize data source settings before initiating pivot table render module.
+The event [`load`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#load) fires before initiate rendering of pivot table. It holds following parameters like `dataSourceSettings`, `fieldsType` and `pivotView`. In this event user can customize data source settings before initiating pivot table render module.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

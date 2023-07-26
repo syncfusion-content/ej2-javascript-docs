@@ -49,7 +49,7 @@ The following sample demonstrates how to enable and disable the resizing of pane
 {% previewsample "page.domainurl/code-snippet/dashboard-layout/resizing-cs1" %}
 {% endif %}
 
-# Resizing panels programatically
+## Resizing panels programatically
 
 The Dashboard Layout panels can also be resized programatically by using [resizePanel](../../api/dashboard-layout/#resizepanel) method. The method is invoked as follows,
 

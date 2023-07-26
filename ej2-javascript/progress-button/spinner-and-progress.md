@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD002 MD022 -->
-## Spinner and progress in ##Platform_Name## Progress button control
+# Spinner and progress in ##Platform_Name## Progress button control
 
 ### Change spinner position
 

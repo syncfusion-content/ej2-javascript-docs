@@ -49,7 +49,7 @@ The following sample demonstrates dragging and pushing of panels. Here, for e.g.
 {% previewsample "page.domainurl/code-snippet/dashboard-layout/sizing-of-cells-cs1" %}
 {% endif %}
 
-# Customizing the dragging handler
+## Customizing the dragging handler
 
 Initially, the complete panel will act as the handler for dragging the panel such that the dragging action occurs on clicking anywhere over a panel. However, this dragging handler for the panels can be customized using the [`draggableHandle`](../../api/dashboard-layout/#draggablehandle) property to restrict the dragging action within a particular element in the panel.
 
@@ -82,7 +82,7 @@ The following sample demonstrates customizing the dragging handler of the panels
 {% previewsample "page.domainurl/code-snippet/dashboard-layout/drag-handler-cs1" %}
 {% endif %}
 
-# Disable dragging of panels
+## Disable dragging of panels
 
 By default, the dragging of panels is enabled in Dashboard Layout. It can also be disabled with the help of [allowDragging](../../api/dashboard-layout/#allowdragging) API. Setting [allowDragging](../../api/dashboard-layout/#allowdragging) to false disables the dragging functionality in Dashboard Layout.
 

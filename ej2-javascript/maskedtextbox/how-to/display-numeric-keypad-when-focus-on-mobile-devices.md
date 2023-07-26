@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Display numeric keypad when focus on mobile devices in ##Platform_Name## Maskedtextbox control | Syncfusion
-description: Learn here all about Display numeric keypad when focus on mobile devices in Syncfusion ##Platform_Name## Maskedtextbox control of Syncfusion Essential JS 2 and more.
+description: Learn about numeric keypad display on mobile devices in Syncfusion ##Platform_Name## Maskedtextbox control of Essential JS 2 and more.
 platform: ej2-javascript
 control: Display numeric keypad when focus on mobile devices 
 publishingplatform: ##Platform_Name##

@@ -42,7 +42,7 @@ The following sample demonstrates how to add content for each panel using the he
 {% previewsample "page.domainurl/code-snippet/dashboard-layout/header-cs1" %}
 {% endif %}
 
-# Placing components as content of panels
+## Placing components as content of panels
 
 In a dashboard, components like the chart, grids, maps, gauge etc. can be used to present a complex data. Any such components can be placed as the panel content by assigning the corresponding component element as the `content` of the panel.
 

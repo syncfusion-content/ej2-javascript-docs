@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set cursor position while focus on the input textbox in ##Platform_Name## Maskedtextbox control | Syncfusion
-description: Learn here all about Set cursor position while focus on the input textbox in Syncfusion ##Platform_Name## Maskedtextbox control of Syncfusion Essential JS 2 and more.
+description: Learn to set cursor position on input textbox in Syncfusion ##Platform_Name## Maskedtextbox of Essential JS 2 & more.
 platform: ej2-javascript
 control: Set cursor position while focus on the input textbox 
 publishingplatform: ##Platform_Name##

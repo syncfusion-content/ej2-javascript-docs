@@ -12,9 +12,9 @@ import { Browser } from '@syncfusion/ej2-base';
     toolbar: [],
     created: () => {
         if (Browser.isDevice) {
-            imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/flower.png');
+            imageEditorObj.open('https://ej2.syncfusion.com/products/images/carousel/bee-eater.png');
         } else {
-            imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/bridge.png');
+            imageEditorObj.open('https://ej2.syncfusion.com/products/images/carousel/bee-eater.png');
             }
         }
     });
@@ -23,7 +23,7 @@ import { Browser } from '@syncfusion/ej2-base';
      //Button click
     let button: Button = new Button({cssClass: `e-primary`, content:'Click'}, '#btnClick');
     document.getElementById('btnClick').onclick = (): void => {
-        imageEditorObj.zoom(.1); // Zoom in
+        imageEditorObj.zoom(2); // Zoom in
         imageEditorObj.pan(true);
     }
 

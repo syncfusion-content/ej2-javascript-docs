@@ -70,5 +70,3 @@ let ribbon: Ribbon = new Ribbon({
     activeLayout: "Classic"
 });
 ribbon.appendTo("#ribbon");
-
-

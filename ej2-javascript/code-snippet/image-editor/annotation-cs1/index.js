@@ -6,15 +6,16 @@ var imageEditorObj = new ej.imageeditor.ImageEditor({
     toolbar: [],
 	created: function () {
 		if (ej.base.Browser.isDevice) {
-			imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/flower.png');
+			imageEditorObj.open('https://ej2.syncfusion.com/products/images/carousel/bee-eater.png');
         } else {
-            imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/bridge.png');
+            imageEditorObj.open('https://ej2.syncfusion.com/products/images/carousel/bee-eater.png');
         }
 	}
   });
   imageEditorObj.appendTo('#imageeditor');
 
 document.getElementById('btnClick').onclick = function() {
-	imageEditorObj.drawText(710, 468, 'Syncfusion', 'Arial', 100, true, true, '#000');
+  let dimension = imageEditorObj.getImageDimension();
+	imageEditorObj.drawText(dimension.x,dimension.y);
 }
 

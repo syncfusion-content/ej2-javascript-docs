@@ -1,29 +1,34 @@
 
 
 import { ImageEditor } from '@syncfusion/ej2-image-editor';
-import { Button } from '@syncfusion/ej2-buttons';
 import { Browser } from '@syncfusion/ej2-base';
 
 //Image Editor items definition
 
+ let id: string;
  let imageEditorObj: ImageEditor = new ImageEditor({
     width: '550px',
     height: '330px',
-    toolbar: [],
+    toolbar: ['Annotate', "Line", "Rectangle", "Ellipse", "Circle", "Arrow", "Path"],
+    showQuickAccessToolbar:  false,
+    shapeChanging: (args: shapeChanging) => {
+        if (args.action === 'select') {
+            id = args.currentShapeSettings.id;  
+        }
+    },
     created: () => {
         if (Browser.isDevice) {
-            imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/flower.png');
+            imageEditorObj.open('https://ej2.syncfusion.com/products/images/carousel/bee-eater.png');
         } else {
-            imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/bridge.png');
+            imageEditorObj.open('https://ej2.syncfusion.com/products/images/carousel/bee-eater.png');
             }
         }
     });
     imageEditorObj.appendTo('#imageeditor');
 
      //Button click
-    let button: Button = new Button({cssClass: `e-primary`, content:'Click'}, '#btnClick');
     document.getElementById('btnClick').onclick = (): void => {
-        imageEditorObj.drawLine(621, 469, 1377, 588, 8, "blue");
+        imageEditorObj.deleteShape(id);
     }
 
 

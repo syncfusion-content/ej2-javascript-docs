@@ -15,7 +15,7 @@ This section explains how to create a simple Image Editor, and configure its ava
 
 ## Dependencies
 
-The following list of dependencies are required to use the Image Editor component in your application.
+The following list of dependencies are required to use the Image Editor control in your application.
 
 ```js
 |-- @syncfusion/ej2-image-editor
@@ -29,7 +29,7 @@ The following list of dependencies are required to use the Image Editor componen
 
 ## Setup your development environment
 
-To get started with the Image Editor component, clone [Essential JS 2 quickstart](https://github.com/syncfusion/ej2-quickstart), and install the npm packages using the following commands.
+To get started with the Image Editor control, clone [Essential JS 2 quickstart](https://github.com/syncfusion/ej2-quickstart), and install the npm packages using the following commands.
 
 ```
 git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
@@ -39,7 +39,7 @@ npm install
 
 > The project is preconfigured with common settings (`src/styles/styles.css`, `system.config.js`) to start all the Essential JS 2 components.
 
-* Refer to the [`Image Editor component dependencies`](./getting-started#dependencies) in `system.config.js` configuration file.
+* Refer to the [`Image Editor control dependencies`](./getting-started#dependencies) in `system.config.js` configuration file.
 
 `[src/system.config.js]`
 
@@ -76,7 +76,7 @@ System.import('app.ts').catch(console.error.bind(console)).then(function () {
 
 ## Adding Style sheet to the Application
 
-To render Image Editor component, need to import image-editor and its dependent components styles as given below in `styles.css`.
+To render Image Editor control, need to import image-editor and its dependent components styles as given below in `styles.css`.
 
 ```
 @import "../node_modules/@syncfusion/ej2-base/styles/material.css";
@@ -89,7 +89,7 @@ To render Image Editor component, need to import image-editor and its dependent 
 @import "../node_modules/@syncfusion/ej2-image-editor/styles/material.css";
 ```
 
-## Adding Image Editor component to the application
+## Adding Image Editor control to the application
 
 Add the HTML DIV tag with the `id` attribute as `imageeditor` to your `index.html` file.
 
@@ -122,7 +122,7 @@ Add the HTML DIV tag with the `id` attribute as `imageeditor` to your `index.htm
 </html>
 ```
 
-Import the Image Editor component in your `app.ts` file and initialize it with the `#imageeditor`.
+Import the Image Editor control in your `app.ts` file and initialize it with the `#imageeditor`.
 
 `[src/app/app.ts]`
 
@@ -143,7 +143,7 @@ Run the application in the browser using the following command:
 npm start
 ```
 
-The following example shows a basic Image Editor component.
+The following example shows a basic Image Editor control.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

@@ -12,9 +12,9 @@ import { Browser } from '@syncfusion/ej2-base';
     toolbar: [],
     created: () => {
         if (Browser.isDevice) {
-            imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/flower.png');
+            imageEditorObj.open('https://ej2.syncfusion.com/products/images/carousel/bee-eater.png');
         } else {
-            imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/bridge.png');
+            imageEditorObj.open('https://ej2.syncfusion.com/products/images/carousel/bee-eater.png');
             }
         }
     });
@@ -22,8 +22,25 @@ import { Browser } from '@syncfusion/ej2-base';
 
      //Button click
     let button: Button = new Button({cssClass: `e-primary`, content:'Click'}, '#btnClick');
-    document.getElementById('btnClick').onclick = (): void => {
-        imageEditorObj.drawRectangle(810, 290, 400, 400, 16, "#fff", 'blue');
+    document.getElementById('rectangleClick').onclick = (): void => {
+        let dimension: any = imageEditorObj.getImageDimension();
+        imageEditorObj.drawRectangle(dimension.x, dimension.y);
+    }
+    document.getElementById('ellipseClick').onclick = (): void => {
+        let dimension: any = imageEditorObj.getImageDimension();
+        imageEditorObj.drawEllipse(dimension.x, dimension.y);
+    }
+    document.getElementById('lineClick').onclick = (): void => {
+        let dimension: any = imageEditorObj.getImageDimension();
+        imageEditorObj.drawLine(dimension.x, dimension.y);
+    }
+    document.getElementById('arrowClick').onclick = (): void => {
+        let dimension: any = imageEditorObj.getImageDimension();
+        imageEditorObj.drawArrow(dimension.x, dimension.y+10, dimension.x+50, dimension.y+10, 10);
+    }
+    document.getElementById('pathClick').onclick = (): void => {
+        let dimension: any = imageEditorObj.getImageDimension();
+        imageEditorObj.drawPath([{x: dimension.x, y: dimension.y}, {x: dimension.x+50, y: dimension.y+50}, {x: dimension.x+20, y: dimension.y+50}], 8);
     }
 
 

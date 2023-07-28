@@ -112,7 +112,7 @@ You can add any custom format directly to the [`format`](https://ej2.syncfusion.
 
 ## Toolbar
 
-You can enable formatting dialog option in the toolbar by adding `NumberFormatting` in the [`toolbar`](../../api/pivotview/#toolbar). After that, you can see the option to invoke the formatting dialog in the toolbar.
+You can enable formatting dialog option in the toolbar by adding `NumberFormatting` in the [`toolbar`](https://ej2.syncfusion.com/documentation/api/pivotview/#toolbar). After that, you can see the option to invoke the formatting dialog in the toolbar.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -216,5 +216,5 @@ In the below sample, the customization done in number formatting dialog for the 
 ## See Also
 
 * [Customize number, date, and time values](./how-to/customize-number-date-and-time-values)
-* [NumberFormatOptions](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-numbers)
+* [NumberFormatOptions](https://ej2.syncfusion.com/documentation/common/internationalization#number-formatting)
 * [Toolbar](./tool-bar)

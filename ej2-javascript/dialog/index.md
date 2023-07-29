@@ -19,9 +19,9 @@ There are two types of Dialog:
 
 ## Key Features
 
-* **[Modal](./api-dialogModel.md)**: - Prevents the interaction to the parent application.
+* **[Modal](./api-dialogModel)**: - Prevents the interaction to the parent application.
 
-* **[Buttons](./api-buttonProps.md)**: - Provided the built-in support to render the buttons at Dialog footer.
+* **[Buttons](./api-buttonProps)**: - Provided the built-in support to render the buttons at Dialog footer.
 
 * **[Templates](./template)**: - Customizable Dialog header and footer through the
 template.

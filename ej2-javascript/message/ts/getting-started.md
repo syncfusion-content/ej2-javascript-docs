@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Message control
 
-This section explains the steps required to create a simple JavaScript Message control and configure its available functionalities in the TypeScript using the Essential JS 2 [quickstart](https://github.com/syncfusion/ej2-quickstart) seed repository. This seed repository is pre-configured with all the Essential JS 2 packages.
+This section explains the steps required to create a simple [JavaScript Message](https://www.syncfusion.com/javascript-ui-controls/js-message) control and configure its available functionalities in the TypeScript using the Essential JS 2 [quickstart](https://github.com/syncfusion/ej2-quickstart) seed repository. This seed repository is pre-configured with all the Essential JS 2 packages.
 
 ## Dependencies
 
@@ -130,3 +130,5 @@ The following example shows a basic Message control.
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/message/getting-started-cs1" %}
+
+N> You can also explore our [JavaScript Message example](https://ej2.syncfusion.com/demos/#/bootstrap5/message/default.html) that shows you how to render the Message in JavaScript.

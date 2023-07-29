@@ -17,7 +17,7 @@ The web accessibility makes web content and web applications more accessible for
 
 ColorPicker provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA supports is achieved through the attributes like `aria-label`and `aria-selected` applied to the color palette tiles.
 
-To know about the accessibility of SplitButton, refer to the SplitButton [`Accessibility`](../../split-button/accessibility#accessibility) section.
+To know about the accessibility of SplitButton, refer to the SplitButton [`Accessibility`](../../../split-button/accessibility#accessibility) section.
 
 | Properties | Functionality |
 | ------------ | ----------------------- |
@@ -27,7 +27,7 @@ To know about the accessibility of SplitButton, refer to the SplitButton [`Acces
 
 ## Keyboard interaction
 
-To know about the keyboard interaction of SplitButton, refer to the SplitButton [`Keyboard interaction`](../../split-button/accessibility#keyboard-interaction) section.
+To know about the keyboard interaction of SplitButton, refer to the SplitButton [`Keyboard interaction`](../../../split-button/accessibility#keyboard-interaction) section.
 
 The following list of keys can be used to interact with the ColorPicker after the popup has opened.
 

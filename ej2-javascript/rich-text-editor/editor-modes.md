@@ -87,7 +87,7 @@ The third-party library such as `Marked` or any other library is used to convert
 {% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs3" %}
 {% endif %}
 
-> To create Rich Text Editor with Markdown editing feature, inject the [`MarkdownEditor`](../../api/rich-text-editor/markdownEditor/#markdowneditor) module to the Rich Text Editor using the `RichTextEditor.Inject(MarkdownEditor)` method.
+> To create Rich Text Editor with Markdown editing feature, inject the [`MarkdownEditor`](../api/rich-text-editor/#markdowneditor) module to the Rich Text Editor using the `RichTextEditor.Inject(MarkdownEditor)` method.
 
 For further details on Markdown editing, refer to the [`Markdown`](./markdown/) section.
 

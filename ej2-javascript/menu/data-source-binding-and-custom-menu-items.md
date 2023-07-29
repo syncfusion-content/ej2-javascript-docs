@@ -87,7 +87,7 @@ The following example displays five employees' **FirstName** from **Employees** 
 
 Menu can be populated from self-referential data structure that contains array of JSON objects with `parentId` mapping.
 
-In the following example, the **id**, **pId**, and **text** columns from self-referential data have been mapped to the [`itemId`](../../api/menu/fieldSettingsModel/#itemid), [`parentId`](../../api/menu/fieldSettingsModel/#parentid), and [`text`](../../api/menu/fieldSettingsModel/#text) fields, respectively.
+In the following example, the **id**, **pId**, and **text** columns from self-referential data have been mapped to the [`itemId`](../api/menu/fieldSettingsModel/#itemid), [`parentId`](../api/menu/fieldSettingsModel/#parentid), and [`text`](../api/menu/fieldSettingsModel/#text) fields, respectively.
 
 {% if page.publishingplatform == "typescript" %}
 

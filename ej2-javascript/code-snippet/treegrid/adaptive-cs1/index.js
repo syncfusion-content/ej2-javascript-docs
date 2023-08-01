@@ -13,7 +13,7 @@ var treegrid = new ej.treegrid.TreeGrid({
   editSettings: { allowAdding: true, allowEditing: true, allowDeleting: true, mode: 'Dialog' },
   height: '100%',
   load: () => {
-      treegrid.grid.adaptiveDlgTarget = document.getElementsByClassName('e-mobile-content')[0] as HTMLElement;
+      treegrid.grid.adaptiveDlgTarget = document.getElementsByClassName('e-mobile-content')[0];
   },
   columns: [
       { field: 'taskID', headerText: 'Task ID', isPrimaryKey: true, width: 135, validationRules: { required: true, number: true } },

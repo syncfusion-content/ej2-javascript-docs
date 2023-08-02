@@ -21,6 +21,8 @@ The [`applyImageFilter`](../../api/image-editor/#applyimagefilter) method is uti
 
 In the following example, you can using the applyImageFilter method in the button click event.
 
+{% if page.publishingplatform == "typescript" %}
+
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/filter-cs1/index.ts %}

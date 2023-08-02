@@ -68,6 +68,8 @@ The [`toolbar`](../../api/image-editor/#toolbar) property controls the visibilit
 
 Here is an example of hiding the toolbar of the image editor using [`toolbar`](../../api/image-editor/#toolbar). 
 
+{% if page.publishingplatform == "typescript" %}
+
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/toolbar-template-cs3/index.ts %}
@@ -98,6 +100,8 @@ Here is an example of hiding the toolbar of the image editor using [`toolbar`](.
 The [`toolbar`](../../api/image-editor/#toolbar) property is utilized to control the visibility of toolbar items in the Image Editor. By default, the [`toolbar`](../../api/image-editor/#toolbar) includes the default toolbar items. So, if you wish to hide the default toolbar items then you need to explicitly define the required items using [`toolbar`](../../api/image-editor/#toolbar) property. This allows you to customize the toolbar by displaying only the specific items you require, tailoring the editing experience to your preferences.
 
 Here is an example of hiding the cropping and selection toolbar items using [`toolbar`](../../api/image-editor/#toolbar) property. 
+
+{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -143,6 +147,8 @@ The [`toolbarCreated`](../../api/image-editor/#toolbarCreated) event is triggere
 The [`toolbarItemClicked`](../../api/image-editor/#toolbaritemclicked) event is triggered when a toolbar item is clicked in the Image Editor. This event is particularly useful when you have added custom options to both the main toolbar and contextual toolbar, as it allows you to capture the user's interaction with those custom options. By subscribing to the [`toolbarItemClicked`](../../api/image-editor/#toolbaritemclicked) event, you can execute specific actions or handle logic based on the toolbar item that was clicked.
 
 Here is an example of toolbar item clicking event using [`toolbarItemClicked`](../../api/image-editor/#toolbaritemclicked) property. 
+
+{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

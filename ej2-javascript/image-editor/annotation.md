@@ -78,6 +78,8 @@ The [`drawText`](../../api/image-editor/#drawtext) method in the Image Editor co
 
 In the following example, you can using the drawText method in the button click event.
 
+{% if page.publishingplatform == "typescript" %}
+
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/annotation-cs8/index.ts %}
@@ -113,6 +115,8 @@ To retrieve the inserted text annotations, you can utilize the [`getShapeSetting
 
 In the following example, the [`deleteShape`](../../api/image-editor/#deleteshape) method is used in the button click event.
 
+{% if page.publishingplatform == "typescript" %}
+
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/annotation-cs9/index.ts %}
@@ -143,6 +147,8 @@ In the following example, the [`deleteShape`](../../api/image-editor/#deleteshap
 The [`shapeChanging`](../../api/image-editor/#shapechanging) event in the Image Editor control is triggered when a text annotation is being modified or changed through the toolbar interaction. This event provides an opportunity to make alterations to the text's color and font family by adjusting the relevant properties. 
 
 By leveraging the [`shapeChanging`](../../api/image-editor/#shapechanging) event, you can enhance the customization options for text annotations and provide a more tailored and interactive experience within the Image Editor control. 
+
+{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -209,6 +215,8 @@ Here is an example of using the [`freeHandDraw`](../../api/image-editor/#freehan
 The [`shapeChanging`](../../api/image-editor/#shapechanging) event in the Image Editor control is triggered when a freehand annotation is being modified or changed through the toolbar interaction. This event provides an opportunity to make alterations to the freehand annotation's color and stroke width by adjusting the relevant properties.
 
 By leveraging the [`shapeChanging`](../../api/image-editor/#shapechanging) event, you can enhance the customization options for freehand annotations and provide a more tailored and interactive experience within the Image Editor control.
+
+{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

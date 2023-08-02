@@ -24,6 +24,8 @@ The Redo action in an image editor allows users to reapply previously undone act
 
 In the following example, the [`undo`](../../api/image-editor/#undo) and [`redo`](../../api/image-editor/#redo) method is used in the button click event.
 
+{% if page.publishingplatform == "typescript" %}
+
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/undo-redo-cs1/index.ts %}

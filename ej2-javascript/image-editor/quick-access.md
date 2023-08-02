@@ -16,7 +16,9 @@ The quick access toolbars in the Image Editor play a vital role in facilitating 
 
 The quick access toolbar that appears when inserting annotations in the Image Editor is customizable using the [`quickAccessToolbarOpen`](https://ej2.syncfusion.com/documentation/api/image-editor/#quickaccesstoolbaropen) event. This event is triggered when the quick access toolbar is opened, allowing you to modify its contents. To add additional toolbar items to the quick access toolbar, you can access the toolbarItems property of the QuickAccessToolbarEventArgs within the event handler. By adding or removing items from the toolbarItems property based on the item property, you can customize the options available in the quick access toolbar according to your needs. This gives you the ability to extend the functionality of the quick access toolbar and provide additional tools and options for working with inserted annotations. 
 
-Here is an example of adding the custom toolbar item to the quick access toolbar. 
+Here is an example of adding the custom toolbar item to the quick access toolbar.
+
+{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

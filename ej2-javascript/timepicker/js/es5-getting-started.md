@@ -194,7 +194,7 @@ Time formats is a way of representing the time value in different string format 
 list. By default, the TimePicker's format is based on the culture. You can also customize the format by using the
 [`format`](../api/timepicker#format)
 property. To know more about the time format standards, refer to the
-[Date and Time Format](../../common/internationalization#custom-formats) section.
+[Date and Time Format](https://ej2.syncfusion.com/javascript/documentation/common/internationalization#custom-formats) section.
 
 The following example demonstrates the TimePicker component in 24 hours format with 60 minutes
 interval. The time interval is set to

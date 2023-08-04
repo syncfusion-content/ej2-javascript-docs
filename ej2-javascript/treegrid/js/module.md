@@ -18,9 +18,9 @@ The following feature modules should be injected to extend the TreeGrid's functi
 | [`PageService`](../../treegrid/paging)| Inject this module to use paging feature.|
 | [`SortService`](../../treegrid/sorting)| Inject this module to use sorting feature.|
 | [`FilterService`](../../treegrid/filtering)| Inject this module to use filtering feature.|
-| [`EditService`](../../treegrid/edit)| Inject this module to use editing feature.|
+| [`EditService`](../../treegrid/editing)| Inject this module to use editing feature.|
 | [`AggregateService`](../../treegrid/aggregates)| Inject this module to use aggregate feature.|
-| [`ColumnChooserService`](../api/treegrid/columnChooser)| Inject this module to use column chooser feature.|
+| [`ColumnChooserService`](../../treegrid/columns/#column-chooser)| Inject this module to use column chooser feature.|
 | [`ColumnMenuService`](../../treegrid/columns/#column-menu)| Inject this module to use column menu feature.|
 | [`CommandColumnService`](../../treegrid/edit/#command-column)| Inject this module to use command column feature.|
 | [`ContextMenuService`](../../treegrid/context-menu)| Inject this module to use context menu feature.

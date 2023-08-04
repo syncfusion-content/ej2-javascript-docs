@@ -13,9 +13,9 @@ let imageEditorObj: ImageEditor = new ImageEditor({
     toolbar: [{text: 'Custom'}],
     created: () => {
         if (Browser.isDevice) {
-            imageEditorObj.open('https://ej2.syncfusion.com/products/images/carousel/bee-eater.png');
+            imageEditorObj.open('bee-eater.png');
         } else {
-            imageEditorObj.open('https://ej2.syncfusion.com/products/images/carousel/bee-eater.png');
+            imageEditorObj.open('bee-eater.png');
         }
     },
     toolbarItemClicked: (args: ClickEventArgs) => {

@@ -6,9 +6,9 @@ var imageEditorObj = new ej.imageeditor.ImageEditor({
     toolbar: ['Annotation' , 'Finetune' , 'Filter' , 'Confirm' , 'Reset' , 'Save', 'ZoomIn', 'ZoomOut'],
      created: function () {
         if (ej.base.Browser.isDevice) {
-          imageEditorObj.open('https://ej2.syncfusion.com/products/images/carousel/bee-eater.png');
+          imageEditorObj.open('bee-eater.png');
         } else {
-            imageEditorObj.open('https://ej2.syncfusion.com/products/images/carousel/bee-eater.png');
+            imageEditorObj.open('bee-eater.png');
         }
       }
   });

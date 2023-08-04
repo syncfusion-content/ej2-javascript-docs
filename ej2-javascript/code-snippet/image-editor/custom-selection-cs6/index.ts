@@ -12,9 +12,9 @@ import { Browser } from '@syncfusion/ej2-base';
     toolbar: [],
     created: () => {
          if (Browser.isDevice) {
-            imageEditorObj.open('https://ej2.syncfusion.com/products/images/carousel/bee-eater.png');
+            imageEditorObj.open('bee-eater.png');
             } else {
-                imageEditorObj.open('https://ej2.syncfusion.com/products/images/carousel/bee-eater.png');
+                imageEditorObj.open('bee-eater.png');
             }
         }
     });

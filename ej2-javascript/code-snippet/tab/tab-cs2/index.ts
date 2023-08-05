@@ -2,16 +2,13 @@
 
 
 import { Tab } from '@syncfusion/ej2-navigations';
-import { enableRipple } from '@syncfusion/ej2-base';
-import { DataManager, Query, ODataAdaptor, ReturnOption } from '@syncfusion/ej2-data';
-
-enableRipple(true);
+import { DataManager, Query, ODataV4Adaptor, ReturnOption } from '@syncfusion/ej2-data';
 
 let itemsData: any = [];
 let mapping =  { header: 'FirstName', content: 'Notes' };
 const SERVICE_URI: string = 'https://services.odata.org/V4/Northwind/Northwind.svc/Employees';
 
-new DataManager({ url: SERVICE_URI, adaptor: new ODataAdaptor, crossDomain: true})
+new DataManager({ url: SERVICE_URI, adaptor: new ODataV4Adaptor, crossDomain: true})
   .executeQuery(new Query().range(1, 4)).then((e: ReturnOption) => {
     let result: any = e.result;
 

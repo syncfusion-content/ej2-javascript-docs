@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in Ribbon control
+# Events
 
 This section describes the ribbon events that will be triggered when appropriate actions are performed. The following events are available in the ribbon control.
 
-## Tab selected
+## tabSelected
 
 The [tabSelected](../api/ribbon/ribbonModel/#tabselected) event is triggered after selecting the tab item.
 
@@ -60,7 +60,7 @@ var ribbon = new ej.ribbon.Ribbon({
 ribbon.appendTo("#ribbon");
 ```
 
-## Tab selecting
+## tabSelecting
 
 The [`tabSelecting`](../api/ribbon/ribbonModel/#tabselecting) event is triggered before selecting the tab item.
 
@@ -107,7 +107,7 @@ var ribbon = new ej.ribbon.Ribbon({
 ribbon.appendTo("#ribbon");
 ```
 
-## Ribbon collapsing
+## ribbonCollapsing
 
 The [ribbonCollapsing](../api/ribbon/ribbonModel/#ribboncollapsing) event is triggered before collapsing the ribbon.
 
@@ -138,7 +138,7 @@ var ribbon = new ej.ribbon.Ribbon({
 ribbon.appendTo("#ribbon");
 ```
 
-## Ribbon expanding
+## ribbonExpanding
 
 The [ribbonExpanding](../api/ribbon/ribbonModel/#ribbonexpanding) event is triggered before expanding the ribbon.
 
@@ -169,7 +169,7 @@ var ribbon = new ej.ribbon.Ribbon({
 ribbon.appendTo("#ribbon");
 ```
 
-## Group launcher click
+## launcherIconClick
 
 The [launcherIconClick](../api/ribbon/ribbonModel/#launchericonclick) event is triggered when the launcher icon of the group is clicked.
 
@@ -203,9 +203,9 @@ ribbon.appendTo("#ribbon");
 
 ## Button item events
 
-### Click
+### clicked
 
-The [clicked](../api/ribbon/ribbonButtonSettings/#clicked) event is triggered when the button is clicked.
+The [clicked](../api/ribbon/ribbonButtonSettings/#clicked) event is triggered when the Button is clicked.
 
 ```js
 var tabs = [{
@@ -232,9 +232,9 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-### Created
+### created
 
-The [created](../api/ribbon/ribbonButtonSettings/#created) event is triggered when the button is created.
+The [created](../api/ribbon/ribbonButtonSettings/#created) event is triggered when the Button is created.
 
 ```js
 var tabs = [{
@@ -261,11 +261,11 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-## Checkbox item events
+## CheckBox item events
 
-### Change
+### change
 
-The [change](../api/ribbon/ribbonCheckBoxSettings/#change) event is triggered when the the Checkbox state is changed.
+The [change](../api/ribbon/ribbonCheckBoxSettings/#change) event is triggered when the Checkbox state is changed.
 
 ```js
 var tabs = [{
@@ -292,7 +292,7 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-### Created
+### created
 
 The [created](../api/ribbon/ribbonCheckBoxSettings/#created) event is triggered once the Checkbox is created.
 
@@ -321,9 +321,9 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-## Colorpicker item events
+## ColorPicker item events
 
-### Change
+### change
 
 The [change](../api/ribbon/ribbonColorPickerSettings/#change) event is triggered while changing the colors.
 
@@ -351,9 +351,9 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-### Created
+### created
 
-The [created](../api/ribbon/ribbonColorPickerSettings/#created) event is triggered once the Colorpicker is created.
+The [created](../api/ribbon/ribbonColorPickerSettings/#created) event is triggered once the ColorPicker is created.
 
 ```js
 var tabs = [{
@@ -379,9 +379,9 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-### Open
+### open
 
-The [open](../api/ribbon/ribbonColorPickerSettings/#open) event is triggered while opening the Colorpicker popup.
+The [open](../api/ribbon/ribbonColorPickerSettings/#open) event is triggered while opening the ColorPicker popup.
 
 ```js
 var tabs = [{
@@ -407,9 +407,9 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-### Select
+### select
 
-The [select](../api/ribbon/ribbonColorPickerSettings/#select) event is triggered while selecting the color in picker / palette, when showButtons property is enabled.
+The [select](../api/ribbon/ribbonColorPickerSettings/#select) event is triggered while selecting the color in picker/palette, when showButtons property is enabled.
 
 ```js
 var tabs = [{
@@ -435,9 +435,9 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-### Before close
+### beforeClose
 
-The [beforeClose](../api/ribbon/ribbonColorPickerSettings/#beforeclose) event is triggered before closing the Colorpicker popup.
+The [beforeClose](../api/ribbon/ribbonColorPickerSettings/#beforeclose) event is triggered before closing the ColorPicker popup.
 
 ```js
 var tabs = [{
@@ -463,9 +463,9 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-### Before open
+### beforeOpen
 
-The [beforeOpen](../api/ribbon/ribbonColorPickerSettings/#beforeopen) event is triggered before opening the Colorpicker popup.
+The [beforeOpen](../api/ribbon/ribbonColorPickerSettings/#beforeopen) event is triggered before opening the ColorPicker popup.
 
 ```js
 var tabs = [{
@@ -491,7 +491,7 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-### Before tile render
+### beforeTileRender
 
 The [beforeTileRender](../api/ribbon/ribbonColorPickerSettingsModel/#beforetilerender) event is triggered while rendering each palette tile.
 
@@ -519,11 +519,11 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-## Combobox item events
+## ComboBox item events
 
-### Change
+### change
 
-The [change](../api/ribbon/ribbonComboBoxSettings/#change) event is triggered when an item in a popup is selected or when the model value is changed by user.
+The [change](../api/ribbon/ribbonComboBoxSettings/#change) event is triggered when an item in a popup is selected or when the model value is changed by the user.
 
 ```js
 var fontStyle = ["Algerian", "Arial", "Calibri", "Cambria", "Cambria Math", "Courier New", "Candara", "Georgia"];
@@ -551,7 +551,7 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-### Close
+### close
 
 The [close](../api/ribbon/ribbonComboBoxSettings/#close) event is triggered when the popup is closed.
 
@@ -581,7 +581,7 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-### Open
+### open
 
 The [open](../api/ribbon/ribbonComboBoxSettings/#open) event is triggered when the popup is opened.
 
@@ -611,7 +611,7 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-### Created
+### created
 
 The [created](../api/ribbon/ribbonComboBoxSettings/#created) event is triggered once the Combobox is created.
 
@@ -641,7 +641,7 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-### Filtering
+### filtering
 
 The [filtering](../api/ribbon/ribbonComboBoxSettings/#filtering) event triggers on typing a character in the Combobox.
 
@@ -672,7 +672,7 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-### Select
+### select
 
 The [select](../api/ribbon/ribbonComboBoxSettings/#select) event is triggered when an item in the popup is selected.
 
@@ -702,7 +702,7 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-### Before open
+### beforeOpen
 
 The [beforeOpen](../api/ribbon/ribbonComboBoxSettings/#beforeOpen) event triggers before opening the popup.
 
@@ -732,9 +732,9 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-## Dropdown item events
+## DropDown item events
 
-### Before close
+### beforeClose
 
 The [beforeClose](../api/ribbon/ribbonDropDownSettings/#beforeclose) event is triggered before closing the DropdownButton popup.
 
@@ -764,7 +764,7 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-### Before open
+### beforeOpen
 
 The [beforeOpen](../api/ribbon/ribbonDropDownSettings/#beforeopen) event is triggered before opening the Dropdown button popup.
 
@@ -794,9 +794,9 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-### Before item render
+### beforeItemRender
 
-The [beforeItemRender](../api/ribbon/ribbonDropDownSettings/#beforeitemrender) event is triggered while rendering each Popup item of Dropdown button.
+The [beforeItemRender](../api/ribbon/ribbonDropDownSettings/#beforeitemrender) event is triggered while rendering each popup item of the Dropdown button.
 
 ```js
 var tabs = [{
@@ -824,7 +824,7 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-### Open
+### open
 
 The [open](../api/ribbon/ribbonDropDownSettings/#open) event is triggered while opening the Dropdown button popup.
 
@@ -854,7 +854,7 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-### Close
+### close
 
 The [close](../api/ribbon/ribbonDropDownSettings/#close) event is triggered while closing the Dropdown button popup.
 
@@ -884,9 +884,9 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-### Created
+### created
 
-The [created](../api/ribbon/ribbonDropDownSettings/#created) event is triggered while selecting an action item in Dropdown button popup.
+The [created](../api/ribbon/ribbonDropDownSettings/#created) event is triggered when the DropDown is created.
 
 ```js
 var tabs = [{
@@ -914,9 +914,9 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-### Select
+### select
 
-The [select](../api/ribbon/ribbonDropDownSettings/#select) event is triggered while selecting an action item in Dropdown button popup.
+The [select](../api/ribbon/ribbonDropDownSettings/#select) event is triggered while selecting an action item in the Dropdown button popup.
 
 ```js
 var tabs = [{
@@ -944,11 +944,11 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-## Split button item events
+## SplitButton item events
 
-### Before close
+### beforeClose
 
-The [beforeClose](../api/ribbon/ribbonSplitButtonSettings/#beforeclose) event is triggered before closing the Split button popup.
+The [beforeClose](../api/ribbon/ribbonSplitButtonSettings/#beforeclose) event is triggered before closing the SplitButton popup.
 
 ```js
 var tabs = [{
@@ -976,9 +976,9 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-### Before open
+### beforeOpen
 
-The [beforeOpen](../api/ribbon/ribbonSplitButtonSettings/#beforeopen) event is triggered before opening the Split button popup.
+The [beforeOpen](../api/ribbon/ribbonSplitButtonSettings/#beforeopen) event is triggered before opening the SplitButton popup.
 
 ```js
 var tabs = [{
@@ -1006,9 +1006,9 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-### Before item render
+### beforeItemRender
 
-The [beforeItemRender](../api/ribbon/ribbonSplitButtonSettings/#beforeitemrender) event is triggered while rendering each Popup item of Split button.
+The [beforeItemRender](../api/ribbon/ribbonSplitButtonSettings/#beforeitemrender) event is triggered while rendering each popup item of SplitButton
 
 ```js
 var tabs = [{
@@ -1036,9 +1036,9 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-### Open
+### open
 
-The [open](../api/ribbon/ribbonSplitButtonSettings/#open) event is triggered while opening the Split button popup.
+The [open](../api/ribbon/ribbonSplitButtonSettings/#open) event is triggered while opening the SplitButton popup.
 
 ```js
 var tabs = [{
@@ -1066,9 +1066,9 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-### Close
+### close
 
-The [close](../api/ribbon/ribbonSplitButtonSettings/#close) event is triggered while closing the Split button popup.
+The [close](../api/ribbon/ribbonSplitButtonSettings/#close) event is triggered while closing the SplitButton popup.
 
 ```js
 var tabs = [{
@@ -1096,9 +1096,9 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-### Created
+### created
 
-The [created](../api/ribbon/ribbonSplitButtonSettings/#created) event is triggered while selecting an action item in Split button popup.
+The [created](../api/ribbon/ribbonSplitButtonSettings/#created) event is triggered when the SplitButton is created.
 
 ```js
 var tabs = [{
@@ -1126,9 +1126,9 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-### Select
+### select
 
-The [select](../api/ribbon/ribbonSplitButtonSettings/#select) event is triggered while selecting an action item in Split button popup.
+The [select](../api/ribbon/ribbonSplitButtonSettings/#select) event is triggered while selecting an action item in the SplitButton popup.
 
 ```js
 var tabs = [{
@@ -1156,9 +1156,9 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-### Click
+### click
 
-The [click](../api/ribbon/ribbonSplitButtonSettings/#click) event is triggered while clicking the primary button in Split button.
+The [click](../api/ribbon/ribbonSplitButtonSettings/#click) event is triggered while clicking the primary button in the SplitButton.
 
 ```js
 var tabs = [{
@@ -1186,11 +1186,11 @@ var ribbon = new ej.ribbon.Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
-## File menu events
+## FileMenu events
 
-### Before close
+### beforeClose
 
-The [beforeClose](../api/ribbon/fileMenuSettings/#beforeclose) event is triggered before closing the file menu popup.
+The [beforeClose](../api/ribbon/fileMenuSettings/#beforeclose) event is triggered before closing the fileMenu popup.
 
 ```js
 var tabs = [{
@@ -1230,9 +1230,9 @@ var ribbon = new ej.ribbon.Ribbon({
 ribbon.appendTo("#ribbon");
 ```
 
-### Before open
+### beforeOpen
 
-The [beforeOpen](../api/ribbon/fileMenuSettings/#beforeopen) event is triggered before opening the file menu popup.
+The [beforeOpen](../api/ribbon/fileMenuSettings/#beforeopen) event is triggered before opening the fileMenu popup.
 
 ```js
 var tabs = [{
@@ -1272,9 +1272,9 @@ var ribbon = new ej.ribbon.Ribbon({
 ribbon.appendTo("#ribbon");
 ```
 
-### Before item render
+### beforeItemRender
 
-The [beforeItemRender](../api/ribbon/fileMenuSettings/#beforeitemrender) event is triggered while rendering each ribbon file menu item.
+The [beforeItemRender](../api/ribbon/fileMenuSettings/#beforeitemrender) event is triggered while rendering each ribbon fileMenu item.
 
 ```js
 var tabs = [{
@@ -1314,9 +1314,9 @@ var ribbon = new ej.ribbon.Ribbon({
 ribbon.appendTo("#ribbon");
 ```
 
-### Open
+### open
 
-The [open](../api/ribbon/fileMenuSettings/#open) event is triggered when file menu popup is opened.
+The [open](../api/ribbon/fileMenuSettings/#open) event is triggered when the fileMenu popup is opened.
 
 ```js
 var tabs = [{
@@ -1356,9 +1356,9 @@ var ribbon = new ej.ribbon.Ribbon({
 ribbon.appendTo("#ribbon");
 ```
 
-### Close
+### close
 
-The [close](../api/ribbon/fileMenuSettings/#close) event is triggered when file menu popup is closed.
+The [close](../api/ribbon/fileMenuSettings/#close) event is triggered when the fileMenu popup is closed.
 
 ```js
 var tabs = [{
@@ -1398,9 +1398,9 @@ var ribbon = new ej.ribbon.Ribbon({
 ribbon.appendTo("#ribbon");
 ```
 
-### Select
+### select
 
-The [select](../api/ribbon/fileMenuSettings/#select) event is triggered while selecting an item in ribbon file menu.
+The [select](../api/ribbon/fileMenuSettings/#select) event is triggered while selecting an item in the ribbon fileMenu.
 
 ```js
 var tabs = [{

@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Tooltip
 
-The Ribbon supports tooltips, which give users more information when they hover over items and improving the user experience.
+The Ribbon component supports tooltip to show additional information in the Ribbon items. The tooltip appears when the user hovers over a Ribbon item.
 
 ## Adding Title
 
-The [title](https://ej2.syncfusion.com/javascript/documentation/api/ribbon/ribbonTooltipModel/#title) property is used to set the tooltip title for each Ribbon item.
+You can use the [title](https://ej2.syncfusion.com/javascript/documentation/api/ribbon/ribbonTooltip/#title) property to set the tooltip title for each Ribbon item.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -30,7 +30,7 @@ The [title](https://ej2.syncfusion.com/javascript/documentation/api/ribbon/ribbo
 
 ## Adding Content
 
-The [content](https://ej2.syncfusion.com/javascript/documentation/api/ribbon/ribbonTooltipModel/#content) property can be used to set the tooltip content for each Ribbon item.
+You can use the [content](https://ej2.syncfusion.com/javascript/documentation/api/ribbon/ribbonTooltip/#content) property to set the tooltip content for each Ribbon item.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -45,7 +45,7 @@ The [content](https://ej2.syncfusion.com/javascript/documentation/api/ribbon/rib
 
 ## Adding Icon
 
-In addition to the text and content, by using [iconCss](https://ej2.syncfusion.com/javascript/documentation/api/ribbon/ribbonTooltipModel/#iconcss) property you can define the custom style for the icons.
+You can use the [iconCss](https://ej2.syncfusion.com/javascript/documentation/api/ribbon/ribbonTooltip/#iconcss) property to specify the icons to be displayed in the tooltip.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -57,3 +57,21 @@ In addition to the text and content, by using [iconCss](https://ej2.syncfusion.c
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/ribbon/tooltip-icon-cs1" %}
+
+## Customization
+
+You can use the [cssClass](https://ej2.syncfusion.com/javascript/documentation/api/ribbon/ribbonTooltip/#cssclass) property to customize the appearance of the tooltip with your own custom styles.
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/ribbon/custom-tooltip-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/ribbon/custom-tooltip-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/ribbon/custom-tooltip-cs1/styles.css %}
+{% endhighlight %}
+{% endtabs %}
+       
+{% previewsample "page.domainurl/code-snippet/ribbon/custom-tooltip-cs1" %}

@@ -259,7 +259,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/ribbon/es5-getting-started-cs1/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
+{% highlight css tabtitle="styles.css" %}
 {% include code-snippet/ribbon/es5-getting-started-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}

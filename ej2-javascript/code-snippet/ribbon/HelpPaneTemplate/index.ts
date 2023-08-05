@@ -25,7 +25,7 @@ let tabs: RibbonTabModel[] = [
 
 let ribbon: Ribbon = new Ribbon({
     tabs: tabs,
-    helpPaneTemplate: `<button class="action_btn"> <span id="undo" class="e-icons e-undo">Undo</span> </button>
-    <button class="action_btn"> <span id="redo" class="e-icons e-redo">Redo</span> </button>`
+    helpPaneTemplate: `<button class="action_btn"><label><span id="undo" class="e-icons e-undo"></span> Undo </label></button>
+    <button class="action_btn"><label><span id="redo" class="e-icons e-redo"></span> Redo </label></button>`
 });
 ribbon.appendTo("#ribbon");

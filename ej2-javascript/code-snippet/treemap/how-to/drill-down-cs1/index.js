@@ -3,7 +3,7 @@ var treemap = new ej.treemap.TreeeMap({
     enableDrillDown: true,
     format: 'n',
     useGroupingSeparator: true,
-    dataSource: DrillDown,
+    dataSource: drillDown,
     weightValuePath: 'Population',
     tooltipSettings: {
         visible: true,

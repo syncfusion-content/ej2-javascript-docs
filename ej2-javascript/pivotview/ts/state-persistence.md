@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # State persistence in ##Platform_Name## Pivotview control
 
-State persistence allows user to maintain the current state of the component along with its report bounded in the browser local storage (cookie). Even if the browser is refreshed or if you move to the next page within the browser, components state will be persisted. State persistence stores the Pivot Table object in the local storage when [`enablePersistence`](https://ej2.syncfusion.com/documentation/api/pivotview#enablepersistence) property in pivot table is set to **true**.
+State persistence allows user to maintain the current state of the component along with its report bounded in the browser local storage (cookie). Even if the browser is refreshed or if you move to the next page within the browser, components state will be persisted. State persistence stores the Pivot Table object in the local storage when [`enablePersistence`](https://ej2.syncfusion.com/documentation/api/pivotview/#enablepersistence) property in pivot table is set to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

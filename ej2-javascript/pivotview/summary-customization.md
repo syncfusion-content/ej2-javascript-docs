@@ -113,7 +113,7 @@ Allows to show or hide sub-totals for specific fields in rows and columns using 
 
 ## Show or hide totals using toolbar
 
-It can also be achieved using built-in toolbar options by setting the [`showToolbar`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#showtoolbar) property in pivot table to **true**. Also, include the items **GrandTotal** and **SubTotal** within the [`toolbar`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#toolbar) property in pivot table. End user can now see "Show/Hide Grand totals" and "Show/Hide Sub totals" icons in toolbar UI automatically.
+It can also be achieved using built-in toolbar options by setting the [`showToolbar`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#showtoolbar) property in pivot table to **true**. Also, include the items **GrandTotal** and **SubTotal** within the [`toolbar`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#toolbar) property in pivot table. End user can now see "Show/Hide Grand totals" and "Show/Hide Sub totals" icons in toolbar UI automatically.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 <!-- markdownlint-disable MD009 -->
 # Load desired report from the report list as default in ##Platform_Name## Pivotview control
 
-By default, the pivot table is displayed with the report bound at the code-behind. To load a desired report from the previously saved report collection during initial rendering, set the desired report name in the [dataBound](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#databound) event, along with the additional report-based customization code shown below.
+By default, the pivot table is displayed with the report bound at the code-behind. To load a desired report from the previously saved report collection during initial rendering, set the desired report name in the [dataBound](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#databound) event, along with the additional report-based customization code shown below.
 
 {% if page.publishingplatform == "typescript" %}
 

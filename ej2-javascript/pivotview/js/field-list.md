@@ -94,7 +94,7 @@ End user can sort fields in the field list UI to ascending (or) descending (or)
 
 ### Sort fields in a desired order
 
-To display the fields in descending order by default, set the [defaultFieldListOrder](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/loadEventArgs/#defaultfieldlistorder) property to **Descending** in the [load](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#load) event.
+To display the fields in descending order by default, set the [defaultFieldListOrder](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/loadEventArgs/#defaultfieldlistorder) property to **Descending** in the [load](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#load) event.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -198,7 +198,7 @@ Defer layout update support to update the pivot table only on demand and not dur
 
 ## Show built-in Field List (Popup) over specific target
 
-By passing the target element to the built-in field list dialog module in the [`dataBound`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#databound) event, the field list dialog will be displayed over the appropriate target element on a web page. By default, the Pivot Table's parent element is used as the target element to display the built-in field list dialog.
+By passing the target element to the built-in field list dialog module in the [`dataBound`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#databound) event, the field list dialog will be displayed over the appropriate target element on a web page. By default, the Pivot Table's parent element is used as the target element to display the built-in field list dialog.
 
 The sample code below shows the built-in field list dialog using `document.body` as the target element.
 

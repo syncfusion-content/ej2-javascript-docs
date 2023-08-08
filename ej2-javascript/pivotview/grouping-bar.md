@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Grouping bar in ##Platform_Name## Pivotview control
 
-The Grouping Bar option in pivot table automatically populates fields from the bound data source and allows end users to drag fields between different axes such as columns, rows, values, and filters, and create pivot table at runtime. It can be enabled by setting the [`showGroupingBar`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#showgroupingbar) property in pivot to **true**.
+The Grouping Bar option in pivot table automatically populates fields from the bound data source and allows end users to drag fields between different axes such as columns, rows, values, and filters, and create pivot table at runtime. It can be enabled by setting the [`showGroupingBar`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#showgroupingbar) property in pivot to **true**.
 
 Similar to Field List, Grouping Bar UI also comes with basic interactions like,
 

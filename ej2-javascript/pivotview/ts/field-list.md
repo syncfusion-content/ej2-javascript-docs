@@ -96,7 +96,7 @@ End user can sort fields in the field list UI to ascending (or) descending (or)
 
 ### Sort fields in a desired order
 
-To display the fields in descending order by default, set the [defaultFieldListOrder](https://ej2.syncfusion.com/documentation/api/pivotview/loadEventArgs/#defaultfieldlistorder) property to **Descending** in the [load](https://ej2.syncfusion.com/documentation/api/pivotview#load) event.
+To display the fields in descending order by default, set the [defaultFieldListOrder](https://ej2.syncfusion.com/documentation/api/pivotview/loadEventArgs/#defaultfieldlistorder) property to **Descending** in the [load](https://ej2.syncfusion.com/documentation/api/pivotview/#load) event.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -288,13 +288,13 @@ During runtime, the **Values** button in the field list can be moved to a differ
 
 ### EnginePopulated
 
-The [`enginePopulated`](https://ej2.syncfusion.com/documentation/api/pivotfieldlist#enginepopulated) event is available in both Pivot Table and Field List.
+The [`enginePopulated`](https://ej2.syncfusion.com/documentation/api/pivotfieldlist/#enginepopulated) event is available in both Pivot Table and Field List.
 
-* The event [`enginePopulated`](https://ej2.syncfusion.com/documentation/api/pivotfieldlist#enginepopulated) is triggered in field list whenever the report gets modified. The updated report is passed to the pivot table via [`updateView`](https://ej2.syncfusion.com/documentation/api/pivotfieldlist#updateview) method written within this event to refresh the same.
+* The event [`enginePopulated`](https://ej2.syncfusion.com/documentation/api/pivotfieldlist/#enginepopulated) is triggered in field list whenever the report gets modified. The updated report is passed to the pivot table via [`updateView`](https://ej2.syncfusion.com/documentation/api/pivotfieldlist/#updateview) method written within this event to refresh the same.
 
-* Likewise, [`enginePopulated`](https://ej2.syncfusion.com/documentation/api/pivotview#enginepopulated) event is triggered in pivot table whenever the report gets modified. The updated report is passed to the field list via [`update`](https://ej2.syncfusion.com/documentation/api/pivotfieldlist#update) method written within this event to refresh the same.
+* Likewise, [`enginePopulated`](https://ej2.syncfusion.com/documentation/api/pivotview/#enginepopulated) event is triggered in pivot table whenever the report gets modified. The updated report is passed to the field list via [`update`](https://ej2.syncfusion.com/documentation/api/pivotfieldlist/#update) method written within this event to refresh the same.
 
-The event [`enginePopulated`](https://ej2.syncfusion.com/documentation/api/pivotview#enginepopulated) is triggered after engine is populated. It has following parameters - `dataSourceSettings`, `pivotFieldList` and `pivotValues`.
+The event [`enginePopulated`](https://ej2.syncfusion.com/documentation/api/pivotview/#enginepopulated) is triggered after engine is populated. It has following parameters - `dataSourceSettings`, `pivotFieldList` and `pivotValues`.
 
 >Note: This event is not required for Popup field list since it is a in built one.
 
@@ -328,7 +328,7 @@ For example, if we perform a sort operation within the field list, the field lis
 
 ### FieldDropped
 
-The event [`onFieldDropped`](https://ej2.syncfusion.com/documentation/api/pivotfieldlist#onfielddropped) fires whenever a field is dropped in an axis. It has following parameters - `droppedAxis`, `droppedField` and `dataSourceSettings`. In this illustration, we have modified the `droppedField` caption through this event at runtime.
+The event [`onFieldDropped`](https://ej2.syncfusion.com/documentation/api/pivotfieldlist/#onfielddropped) fires whenever a field is dropped in an axis. It has following parameters - `droppedAxis`, `droppedField` and `dataSourceSettings`. In this illustration, we have modified the `droppedField` caption through this event at runtime.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

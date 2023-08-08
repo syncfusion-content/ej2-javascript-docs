@@ -233,7 +233,7 @@ In the following sample, the `Popup` mode of field list is enabled in the pivot 
 
 ## Grouping Bar
 
-User can enable the grouping bar by setting the property [`showGroupingBar`](https://ej2.syncfusion.com/documentation/api/pivotview#showgroupingbar) in pivot table to **true**. The grouping bar in pivot chart shows a dropdown list in value axis instead of buttons. The dropdown list holds list of value fields bounded in the [`dataSourceSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettingsModel/) and it can be switched to draw the pivot chart with the selected value field. This has been defined as the default behavior in the pivot chart component. For more information regarding the grouping bar, refer the [grouping bar](./grouping-bar) topic.
+User can enable the grouping bar by setting the property [`showGroupingBar`](https://ej2.syncfusion.com/documentation/api/pivotview/#showgroupingbar) in pivot table to **true**. The grouping bar in pivot chart shows a dropdown list in value axis instead of buttons. The dropdown list holds list of value fields bounded in the [`dataSourceSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettingsModel/) and it can be switched to draw the pivot chart with the selected value field. This has been defined as the default behavior in the pivot chart component. For more information regarding the grouping bar, refer the [grouping bar](./grouping-bar) topic.
 
 > For multiple axis support, buttons will be placed in value axis instead of dropdown list.
 

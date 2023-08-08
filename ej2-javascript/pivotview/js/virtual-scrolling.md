@@ -15,7 +15,7 @@ domainurl: ##DomainURL##
 
 ## Virtual scrolling
 
-Allows to load the large amounts of data without any performance degradation by rendering rows and columns only in the current content viewport. Rest of the aggregated data will be brought into viewport dynamically based on vertical or horizontal scroll position. This feature can be enabled by setting the [`enableVirtualization`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#enablevirtualization) property in pivot table to **true**..
+Allows to load the large amounts of data without any performance degradation by rendering rows and columns only in the current content viewport. Rest of the aggregated data will be brought into viewport dynamically based on vertical or horizontal scroll position. This feature can be enabled by setting the [`enableVirtualization`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#enablevirtualization) property in pivot table to **true**..
 
 To use the virtual scrolling feature, inject the `VirtualScroll` module in to the pivot table.
 
@@ -72,7 +72,7 @@ When we bind one million raw data, the pivot table will process all raw data to 
 
 ## Virtual scrolling for static field list
 
-Virtual scrolling automatically works with "Popup" field list on setting the [`enableVirtualization`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#enablevirtualization) property in the Pivot Table to **true**. Incase of static field list, which act as a separate component, user need to enable [`enableVirtualization`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#enablevirtualization) property in the Pivot Table and also pass the report information to pivot table instance via the [`load`]((https://ej2.syncfusion.com/javascript/documentation/api/pivotview#load)) event of the field list.
+Virtual scrolling automatically works with "Popup" field list on setting the [`enableVirtualization`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#enablevirtualization) property in the Pivot Table to **true**. Incase of static field list, which act as a separate component, user need to enable [`enableVirtualization`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#enablevirtualization) property in the Pivot Table and also pass the report information to pivot table instance via the [`load`]((https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#load)) event of the field list.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

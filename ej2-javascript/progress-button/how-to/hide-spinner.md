@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Hide spinner in ##Platform_Name## Progress button control
 
-You can hide spinner in the ProgressButton by setting the `e-hide-spinner` property to [`cssClass`](../../api/progress-button#cssClass).
+You can hide spinner in the ProgressButton by setting the `e-hide-spinner` property to [`cssClass`](../../api/progress-button/#cssClass).
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -243,7 +243,7 @@ The below sample code illustrates the field list dialog invoked on an external b
 
 ## Set caption to fields which isn’t bound to the report
 
-One can set the caption to all fields from the data source even if it is not bound to the actual report. It can be achieved using the [`enginePopulated`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist#enginepopulated) event. On doing so, caption of the respective field will be displayed in both grouping bar and field list.
+One can set the caption to all fields from the data source even if it is not bound to the actual report. It can be achieved using the [`enginePopulated`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/#enginepopulated) event. On doing so, caption of the respective field will be displayed in both grouping bar and field list.
 
 In the sample, we have set caption to the fields `Year` and `Quarter` dynamically.
 
@@ -278,11 +278,11 @@ In the sample, we have set caption to the fields `Year` and `Quarter` dynamicall
 
 ### EnginePopulated
 
-The [`EnginePopulated`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist#enginepopulated) event is available in both Pivot Table and Field List.
+The [`EnginePopulated`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/#enginepopulated) event is available in both Pivot Table and Field List.
 
-* The event [`EnginePopulated`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist#enginepopulated) is triggered in field list whenever the report gets modified. The updated report is passed to the pivot table via [`UpdateView`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist#updateview) method written within this event to refresh the same.
+* The event [`EnginePopulated`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/#enginepopulated) is triggered in field list whenever the report gets modified. The updated report is passed to the pivot table via [`UpdateView`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/#updateview) method written within this event to refresh the same.
 
-* Likewise, [`EnginePopulated`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#enginepopulated) event is triggered in pivot table whenever the report gets modified. The updated report is passed to the field list via [`Update`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist#update) method written within this event to refresh the same.
+* Likewise, [`EnginePopulated`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#enginepopulated) event is triggered in pivot table whenever the report gets modified. The updated report is passed to the field list via [`Update`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/#update) method written within this event to refresh the same.
 
 The event [`EnginePopulated`](https://help.syncfusion.com/cr/cref_files/blazor/Syncfusion.EJ2.Blazor~Syncfusion.EJ2.Blazor.PivotView.PivotFieldListEvents%601~EnginePopulated.html) is triggered after engine is populated. It has following parameters - `dataSourceSettings`, `pivotFieldList` and `pivotValues`.
 
@@ -350,7 +350,7 @@ For example, if we perform a sort operation within the field list, the field lis
 
 ### FieldDropped
 
-The event [`onFieldDropped`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist#onfielddropped) fires whenever a field is dropped in an axis. It has following parameters - `droppedAxis`, `DroppedField` and `DataSourceSettings`. In this illustration, we have modified the `DroppedField` caption through this event at runtime.
+The event [`onFieldDropped`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/#onfielddropped) fires whenever a field is dropped in an axis. It has following parameters - `droppedAxis`, `DroppedField` and `DataSourceSettings`. In this illustration, we have modified the `DroppedField` caption through this event at runtime.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -142,7 +142,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 ## Set text on Switch
 
-This section explains how to set [`onLabel`](../api/switch#onlabel) and [`offLabel`](../api/switch#offlabel) texts on Switch. In the following example, `onLabel` is set as `ON` and `offLabel` is set as `OFF`.
+This section explains how to set [`onLabel`](../api/switch/#onlabel) and [`offLabel`](../api/switch/#offlabel) texts on Switch. In the following example, `onLabel` is set as `ON` and `offLabel` is set as `OFF`.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}

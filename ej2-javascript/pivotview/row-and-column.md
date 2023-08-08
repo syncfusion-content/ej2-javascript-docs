@@ -15,11 +15,11 @@ domainurl: ##DomainURL##
 
 ## Width and Height
 
-Allows end user to set the pivot table's height and width by using [`height`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#height) and [`width`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#width) properties in pivot table respectively. The supported formats to set [`Height`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#height) and [`Width`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#width) properties are,
+Allows end user to set the pivot table's height and width by using [`height`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#height) and [`width`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#width) properties in pivot table respectively. The supported formats to set [`Height`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#height) and [`Width`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#width) properties are,
 
 * Pixel: For example - 100, 200, "100px", "200px".
 * Percentage: For example - "100%", "200%".
-* Auto: It is applicable for [`Height`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#height) property alone in-order to render the pivot table beyond its parent container height without vertical scrollbar. The parent container here would show its vertical scrollbar as soon as the component reaches beyond its dimension.
+* Auto: It is applicable for [`Height`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#height) property alone in-order to render the pivot table beyond its parent container height without vertical scrollbar. The parent container here would show its vertical scrollbar as soon as the component reaches beyond its dimension.
 
 > The pivot table will not be displayed less than **400px**, since it's the minimum width of the component.
 

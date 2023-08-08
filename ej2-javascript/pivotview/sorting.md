@@ -55,7 +55,7 @@ Member sorting can also be configured using the [`sortSettings`](https://ej2.syn
 
 ## Value sorting
 
-Allows to sort individual value field and its aggregated values either in row or column axis in both ascending and descending order. It can been enabled by setting the [`enableValueSorting`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#enablevaluesorting) property in pivot table to **true**. On enabling, end user can sort the values by directly clicking the value field header positioned either in row or column axis of the pivot table component.
+Allows to sort individual value field and its aggregated values either in row or column axis in both ascending and descending order. It can been enabled by setting the [`enableValueSorting`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#enablevaluesorting) property in pivot table to **true**. On enabling, end user can sort the values by directly clicking the value field header positioned either in row or column axis of the pivot table component.
 
 The value sorting can also be configured using the [`valueSortSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/valueSortSettings/) option through code behind. The settings required to sort value fields are:
 

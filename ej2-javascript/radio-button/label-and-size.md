@@ -15,7 +15,7 @@ This section explains the different sizes and labels.
 
 ## Label
 
-RadioButton caption can be defined by using the [`label`](../api/radio-button#label) property. This reduces the manual addition of label for RadioButton. You can customize the label position before or after the RadioButton through the [`labelPosition`](../api/radio-button#labelposition) property.
+RadioButton caption can be defined by using the [`label`](../api/radio-button/#label) property. This reduces the manual addition of label for RadioButton. You can customize the label position before or after the RadioButton through the [`labelPosition`](../api/radio-button/#labelposition) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -52,7 +52,7 @@ RadioButton caption can be defined by using the [`label`](../api/radio-button#la
 
 ## Size
 
-The different RadioButton sizes available are default and small. To reduce the size of the default RadioButton to small, set the [`cssClass`](../api/radio-button#cssclass) property to `e-small`.
+The different RadioButton sizes available are default and small. To reduce the size of the default RadioButton to small, set the [`cssClass`](../api/radio-button/#cssclass) property to `e-small`.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Paging in ##Platform_Name## Pivotview control
 
-Paging allows you to load large amounts of data that can be divided and displayed page by page in the pivot table. It can be enabled by setting the [`enablePaging`](https://ej2.syncfusion.com/documentation/api/pivotview#enablepaging) property to **true**. It can be configured at code-behind by using the [`pageSettings`](https://ej2.syncfusion.com/documentation/api/pivotview#pagesettings) property, during initial rendering of the component. The properties required are:
+Paging allows you to load large amounts of data that can be divided and displayed page by page in the pivot table. It can be enabled by setting the [`enablePaging`](https://ej2.syncfusion.com/documentation/api/pivotview/#enablepaging) property to **true**. It can be configured at code-behind by using the [`pageSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/#pagesettings) property, during initial rendering of the component. The properties required are:
 
 * [`currentRowPage`](https://ej2.syncfusion.com/documentation/api/pivotview/pageSettings/#currentrowpage): Allows user to set the current row page number to be displayed in the pivot table.
 * [`currentColumnPage`](https://ej2.syncfusion.com/documentation/api/pivotview/pageSettings/#currentcolumnpage): Allows user to set the current column page number to be displayed in the pivot table.
@@ -22,7 +22,7 @@ Paging allows you to load large amounts of data that can be divided and displaye
 
 When paging is enabled, a built-in pager UI appears at the bottom of the pivot table, allowing you to change the current page in the row and column axes by navigating to a desired page using the navigation buttons or an input text box, as well as change the page size via dropdown at runtime.
 
-You can also change the position, visibility, compact view, and template of the row and column pagers by using the [`pagerSettings`](https://ej2.syncfusion.com/documentation/api/pivotview#pagersettings).
+You can also change the position, visibility, compact view, and template of the row and column pagers by using the [`pagerSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/#pagersettings).
 
 > In order to see and use the pager UI, insert the `Pager` module into the pivot table.
 
@@ -39,7 +39,7 @@ You can also change the position, visibility, compact view, and template of the 
 
 ### Show pager UI at top or bottom
 
-You can display the pager UI at top or bottom of the pivot table by using the [`position`](https://ej2.syncfusion.com/documentation/api/pivotview/pagerSettings/#position) property. To show the pager UI at top of the pivot table, set the [`position`](https://ej2.syncfusion.com/documentation/api/pivotview/pagerSettings/#position) property in [`pagerSettings`](https://ej2.syncfusion.com/documentation/api/pivotview#pagersettings) to **Top**.
+You can display the pager UI at top or bottom of the pivot table by using the [`position`](https://ej2.syncfusion.com/documentation/api/pivotview/pagerSettings/#position) property. To show the pager UI at top of the pivot table, set the [`position`](https://ej2.syncfusion.com/documentation/api/pivotview/pagerSettings/#position) property in [`pagerSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/#pagersettings) to **Top**.
 
 > By default, the pager UI appears at the bottom of the pivot table.
 
@@ -73,7 +73,7 @@ Toggles and displays row and column pager. To show the column pager on the left 
 
 ### Compact view
 
-By hiding all except the previous and next navigation buttons, the pager UI can be displayed with the absolute minimum of paging options. The compact view can be enabled by setting the [`enableCompactView`](https://ej2.syncfusion.com/documentation/api/pivotview/pagerSettings/#enablecompactview) property in [`pagerSettings`](https://ej2.syncfusion.com/documentation/api/pivotview#pagersettings) to **true**.
+By hiding all except the previous and next navigation buttons, the pager UI can be displayed with the absolute minimum of paging options. The compact view can be enabled by setting the [`enableCompactView`](https://ej2.syncfusion.com/documentation/api/pivotview/pagerSettings/#enablecompactview) property in [`pagerSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/#pagersettings) to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -88,9 +88,9 @@ By hiding all except the previous and next navigation buttons, the pager UI can 
 
 ### Show or hide paging option
 
-By using the [`showRowPager`](https://ej2.syncfusion.com/documentation/api/pivotview/pagerSettings/#showrowpager) and [`showColumnPager`](https://ej2.syncfusion.com/documentation/api/pivotview/pagerSettings/#showcolumnpager) properties in [`pagerSettings`](https://ej2.syncfusion.com/documentation/api/pivotview#pagersettings), you can show or hide row and column pager separately in the pager UI.
+By using the [`showRowPager`](https://ej2.syncfusion.com/documentation/api/pivotview/pagerSettings/#showrowpager) and [`showColumnPager`](https://ej2.syncfusion.com/documentation/api/pivotview/pagerSettings/#showcolumnpager) properties in [`pagerSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/#pagersettings), you can show or hide row and column pager separately in the pager UI.
 
-In the following example, row pager has been disabled by setting the [`showRowPager`](https://ej2.syncfusion.com/documentation/api/pivotview/pagerSettings/#showrowpager) property in [`pagerSettings`](https://ej2.syncfusion.com/documentation/api/pivotview#pagersettings) to **false**.
+In the following example, row pager has been disabled by setting the [`showRowPager`](https://ej2.syncfusion.com/documentation/api/pivotview/pagerSettings/#showrowpager) property in [`pagerSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/#pagersettings) to **false**.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -105,7 +105,7 @@ In the following example, row pager has been disabled by setting the [`showRowPa
 
 ### Show or hide page size
 
-By using the [`showRowPageSize`](https://ej2.syncfusion.com/documentation/api/pivotview/pagerSettings/#showrowpagesize) and [`showColumnPageSize`](https://ej2.syncfusion.com/documentation/api/pivotview/pagerSettings/#showcolumnpagesize) properties in [`pagerSettings`](https://ej2.syncfusion.com/documentation/api/pivotview#pagersettings), you can show or hide "Rows per page" and "Columns per page" dropdown menu. The dropdown menu contains a list of pre-defined or user-defined page sizes, which will be displayed in the "Rows per page" and "Columns per page" dropdowns, allowing you to change the page size for the row and column axes at runtime.
+By using the [`showRowPageSize`](https://ej2.syncfusion.com/documentation/api/pivotview/pagerSettings/#showrowpagesize) and [`showColumnPageSize`](https://ej2.syncfusion.com/documentation/api/pivotview/pagerSettings/#showcolumnpagesize) properties in [`pagerSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/#pagersettings), you can show or hide "Rows per page" and "Columns per page" dropdown menu. The dropdown menu contains a list of pre-defined or user-defined page sizes, which will be displayed in the "Rows per page" and "Columns per page" dropdowns, allowing you to change the page size for the row and column axes at runtime.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -120,7 +120,7 @@ By using the [`showRowPageSize`](https://ej2.syncfusion.com/documentation/api/pi
 
 ### Customize page size
 
-By using the [`rowPageSizes`](https://ej2.syncfusion.com/documentation/api/pivotview/pagerSettings/#rowpagesizes) and [`columnPageSizes`](https://ej2.syncfusion.com/documentation/api/pivotview/pagerSettings/#columnpagesizes) properties in [`pagerSettings`](https://ej2.syncfusion.com/documentation/api/pivotview#pagersettings), you can specify a set of desired page sizes, which will be displayed in the "Rows per page" and "Columns per page" dropdowns, allowing you to change the page size for the row and column axes at runtime.
+By using the [`rowPageSizes`](https://ej2.syncfusion.com/documentation/api/pivotview/pagerSettings/#rowpagesizes) and [`columnPageSizes`](https://ej2.syncfusion.com/documentation/api/pivotview/pagerSettings/#columnpagesizes) properties in [`pagerSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/#pagersettings), you can specify a set of desired page sizes, which will be displayed in the "Rows per page" and "Columns per page" dropdowns, allowing you to change the page size for the row and column axes at runtime.
 
 > By default, the "Rows per page" dropdown have pre-defined page sizes of **10, 50, 100, and 200**, while the "Columns per page" dropdown have pre-defined page sizes of **5, 10, 20, 50, and 100**.
 

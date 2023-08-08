@@ -220,7 +220,7 @@ Exploding can be enabled by setting the `explode` property in [`chartSeries`](ht
 
 ## Field List
 
-User can enable the field list by setting the property [`showFieldList`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#showfieldlist) in pivot table as **true**. By using this, user can customize the report dynamically and view the result in pivot chart. For more information regarding the field list, refer the [field list](./field-list) topic.
+User can enable the field list by setting the property [`showFieldList`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#showfieldlist) in pivot table as **true**. By using this, user can customize the report dynamically and view the result in pivot chart. For more information regarding the field list, refer the [field list](./field-list) topic.
 
 In the following sample, the `Popup` mode of field list is enabled in the pivot chart integration.
 
@@ -237,7 +237,7 @@ In the following sample, the `Popup` mode of field list is enabled in the pivot 
 
 ## Grouping Bar
 
-User can enable the grouping bar by setting the property [`showGroupingBar`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#showgroupingbar) in pivot table to **true**. The grouping bar in pivot chart shows a dropdown list in value axis instead of buttons. The dropdown list holds list of value fields bounded in the [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettingsModel/) and it can be switched to draw the pivot chart with the selected value field. This has been defined as the default behavior in the pivot chart component. For more information regarding the grouping bar, refer the [grouping bar](./grouping-bar) topic.
+User can enable the grouping bar by setting the property [`showGroupingBar`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#showgroupingbar) in pivot table to **true**. The grouping bar in pivot chart shows a dropdown list in value axis instead of buttons. The dropdown list holds list of value fields bounded in the [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettingsModel/) and it can be switched to draw the pivot chart with the selected value field. This has been defined as the default behavior in the pivot chart component. For more information regarding the grouping bar, refer the [grouping bar](./grouping-bar) topic.
 
 > For multiple axis support, buttons will be placed in value axis instead of dropdown list.
 

@@ -161,7 +161,7 @@ The below code illustrates the PDF export customization options.
 
 ### Changing the file name while exporting
 
-The PDF export provides an option to change file name of the document before exporting. In-order to change the file name, define **fileName** property in **pdfExportProperties** object and pass it as a parameter to the [`pdfExport`](https://ej2.syncfusion.com/documentation/api/pivotview#pdfexport) method.
+The PDF export provides an option to change file name of the document before exporting. In-order to change the file name, define **fileName** property in **pdfExportProperties** object and pass it as a parameter to the [`pdfExport`](https://ej2.syncfusion.com/documentation/api/pivotview/#pdfexport) method.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -176,7 +176,7 @@ The PDF export provides an option to change file name of the document before exp
 
 ### Changing page orientation while exporting
 
-The PDF export provides an option to change page orientation of the document before exporting. In-order to change the page orientation, define **pageOrientation** property in **pdfExportProperties** object and pass it as a parameter to the [`pdfExport`](https://ej2.syncfusion.com/documentation/api/pivotview#pdfexport) method. By default, the page orientation will be in **Portrait** and it can be changed to **Landscape** based on user requirement.
+The PDF export provides an option to change page orientation of the document before exporting. In-order to change the page orientation, define **pageOrientation** property in **pdfExportProperties** object and pass it as a parameter to the [`pdfExport`](https://ej2.syncfusion.com/documentation/api/pivotview/#pdfexport) method. By default, the page orientation will be in **Portrait** and it can be changed to **Landscape** based on user requirement.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -191,7 +191,7 @@ The PDF export provides an option to change page orientation of the document bef
 
 ### Changing page size while exporting
 
-The PDF export provides an option to change page size of the document before exporting. In-order to change the page size, define **pageSize** property in **pdfExportProperties** object and pass it as a parameter to the [`pdfExport`](https://ej2.syncfusion.com/documentation/api/pivotview#pdfexport) method.
+The PDF export provides an option to change page size of the document before exporting. In-order to change the page size, define **pageSize** property in **pdfExportProperties** object and pass it as a parameter to the [`pdfExport`](https://ej2.syncfusion.com/documentation/api/pivotview/#pdfexport) method.
 
 **Supported page sizes are:** Letter, Note, Legal, A0, A1, A2, A3, A5, A6, A7, A8, A9, B0, B1, B2, B3, B4, B5, Archa, Archb, Archc, Archd, Arche, Flsa, HalfLetter, Letter11x17, Ledger.
 
@@ -242,7 +242,7 @@ Before exporting, you can split and export the pivot table columns on each page 
 
 ## Changing the pivot table style while exporting
 
-The PDF export provides an option to change colors for headers, caption and records in pivot table before exporting. In-order to apply colors, define **theme** settings in **pdfExportProperties** object and pass it as a parameter to the [`pdfExport`](https://ej2.syncfusion.com/documentation/api/pivotview#pdfexport) method.
+The PDF export provides an option to change colors for headers, caption and records in pivot table before exporting. In-order to apply colors, define **theme** settings in **pdfExportProperties** object and pass it as a parameter to the [`pdfExport`](https://ej2.syncfusion.com/documentation/api/pivotview/#pdfexport) method.
 
 > By default, material theme is applied to exported PDF document.
 

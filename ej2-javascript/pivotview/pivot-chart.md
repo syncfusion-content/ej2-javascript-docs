@@ -109,7 +109,7 @@ In the below code sample, the pivot chart type is set as **Bar**.
 
 ## Field List
 
-User can enable the field list by setting the property [`showFieldList`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#showfieldlist) in pivot table as **true**.By using this, user can customize the report dynamically and view the result in pivot chart. For more information regarding the field list, refer the [field list](./field-list) topic.
+User can enable the field list by setting the property [`showFieldList`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#showfieldlist) in pivot table as **true**.By using this, user can customize the report dynamically and view the result in pivot chart. For more information regarding the field list, refer the [field list](./field-list) topic.
 
 In the following sample, the `Popup` mode of field list is enabled in the pivot chart integration.
 

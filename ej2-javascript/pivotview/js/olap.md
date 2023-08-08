@@ -320,7 +320,7 @@ Formatting defines a way in which values should be displayed in pivot table. For
 
 ### Enable grouping bar
 
-The Grouping Bar feature automatically populates [OLAP cube elements](#olap-cube-elements) from the bound data source and allows end users to drag [OLAP cube elements](#olap-cube-elements) between different axes such as [`rows`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#rows), [`columns`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#columns), [`values`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#values) and [`filters`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#filters), and change pivot view at runtime. Sorting, filtering and removing of elements is also possible. It can be enabled by setting the [`showGroupingBar`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/pivotViewModel/?no-cache=1#showgroupingbar) property to **true** as follows.
+The Grouping Bar feature automatically populates [OLAP cube elements](#olap-cube-elements) from the bound data source and allows end users to drag [OLAP cube elements](#olap-cube-elements) between different axes such as [`rows`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#rows), [`columns`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#columns), [`values`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#values) and [`filters`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#filters), and change pivot view at runtime. Sorting, filtering and removing of elements is also possible. It can be enabled by setting the [`showGroupingBar`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/pivotViewModel/#showgroupingbar) property to **true** as follows.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -335,7 +335,7 @@ The Grouping Bar feature automatically populates [OLAP cube elements](#olap-cube
 
 ### Enable pivot field list
 
-The component provides a built-in Field List similar to Microsoft Excel. It allows you to add or remove [OLAP cube elements](#olap-cube-elements) and also rearrange the [OLAP cube elements](#olap-cube-elements) between different axes, including [`rows`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#rows), [`columns`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#columns), [`values`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#values) and [`filters`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#filters) along with filter and sort options dynamically at runtime. It can be enabled by setting the [`showFieldList`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/pivotViewModel/?no-cache=1#showfieldlist) property to **true** as follows.
+The component provides a built-in Field List similar to Microsoft Excel. It allows you to add or remove [OLAP cube elements](#olap-cube-elements) and also rearrange the [OLAP cube elements](#olap-cube-elements) between different axes, including [`rows`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#rows), [`columns`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#columns), [`values`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#values) and [`filters`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#filters) along with filter and sort options dynamically at runtime. It can be enabled by setting the [`showFieldList`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/pivotViewModel/#showfieldlist) property to **true** as follows.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -380,7 +380,7 @@ It can be customized using the [`calculatedFieldsSettings`](https://ej2.syncfusi
 
 You need to set [`isCalculatedField`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/fieldOptions/#iscalculatedfield) property to true, while adding calculated fields to respective axis through code behind.
 
-Also calculated fields can be added at run time through the built-in dialog. The dialog can be enabled by setting the [`allowCalculatedField`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/pivotViewModel/?no-cache=1#allowcalculatedfield) property to **true** as follows. You will see a button enabled in the Field List UI automatically to invoke the calculated field dialog and perform necessary operation.
+Also calculated fields can be added at run time through the built-in dialog. The dialog can be enabled by setting the [`allowCalculatedField`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/pivotViewModel/#allowcalculatedfield) property to **true** as follows. You will see a button enabled in the Field List UI automatically to invoke the calculated field dialog and perform necessary operation.
 
 > Calculated measure can be added only in value axis.
 
@@ -495,7 +495,7 @@ Previous changes can be cleared by using the "Clear" option while performing ope
 
 #### Virtual Scrolling
 
-Allows large amounts of data to be loaded without any performance degradation by rendering rows and columns in relation to the current viewport. Rest of the data will be brought into the viewport dynamically based on vertical or horizontal scroll position. This feature can be enabled by setting the [`enableVirtualization`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#enablevirtualization) property to **true**.
+Allows large amounts of data to be loaded without any performance degradation by rendering rows and columns in relation to the current viewport. Rest of the data will be brought into the viewport dynamically based on vertical or horizontal scroll position. This feature can be enabled by setting the [`enableVirtualization`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#enablevirtualization) property to **true**.
 
 To use the virtual scrolling feature, inject the `VirtualScroll` module into the pivot table.
 

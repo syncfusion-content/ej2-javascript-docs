@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Tool bar in ##Platform_Name## Pivotview control
 
-Toolbar option allows to access the frequently used features like switching between pivot table and pivot chart, changing chart types, conditional formatting, exporting, etc... with ease at runtime. This option can be enabled by setting the [`showToolbar`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#showtoolbar) property in pivot table to **true**. The [`toolbar`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#toolbar) property in pivot table accepts the collection of built-in toolbar options.
+Toolbar option allows to access the frequently used features like switching between pivot table and pivot chart, changing chart types, conditional formatting, exporting, etc... with ease at runtime. This option can be enabled by setting the [`showToolbar`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#showtoolbar) property in pivot table to **true**. The [`toolbar`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#toolbar) property in pivot table accepts the collection of built-in toolbar options.
 
 The following table shows built-in toolbar options and its actions.
 
@@ -65,37 +65,37 @@ The following table shows built-in toolbar options and its actions.
 
 ### FetchReport
 
-The event [`fetchReport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#fetchreport) is triggered when dropdown list is clicked in the toolbar in-order to retrieve and populate saved reports. It has following parameter - `ReportName`. This event allows user to fetch the report names from local storage and populate the dropdown list.
+The event [`fetchReport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#fetchreport) is triggered when dropdown list is clicked in the toolbar in-order to retrieve and populate saved reports. It has following parameter - `ReportName`. This event allows user to fetch the report names from local storage and populate the dropdown list.
 
 ### LoadReport
 
-The event [`loadReport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#loadreport) is triggered when a report is selected from the dropdown list in the toolbar. It has following parameters - `Report` and `ReportName`. This event allows user to load the selected report to the pivot table.
+The event [`loadReport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#loadreport) is triggered when a report is selected from the dropdown list in the toolbar. It has following parameters - `Report` and `ReportName`. This event allows user to load the selected report to the pivot table.
 
 ### NewReport
 
-The event [`newReport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#newreport) is triggered when the new report icon is clicked in the toolbar. It has following parameter - `Report`. This event allows user to create new report and add to the report list.
+The event [`newReport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#newreport) is triggered when the new report icon is clicked in the toolbar. It has following parameter - `Report`. This event allows user to create new report and add to the report list.
 
 ### RenameReport
 
-The event [`renameReport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#renamereport) is triggered when rename report icon is clicked in the toolbar. It has following parameters  - `rename`, `report` and `reportName`. This event allows user to rename the selected report from the report list.
+The event [`renameReport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#renamereport) is triggered when rename report icon is clicked in the toolbar. It has following parameters  - `rename`, `report` and `reportName`. This event allows user to rename the selected report from the report list.
 
 ### RemoveReport
 
-The event [`removeReport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#removereport) is triggered when remove report icon is clicked in the toolbar. It has following parameters  - `Report` and `ReportName`. This event allows user to remove the selected report from the report list.
+The event [`removeReport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#removereport) is triggered when remove report icon is clicked in the toolbar. It has following parameters  - `Report` and `ReportName`. This event allows user to remove the selected report from the report list.
 
 ### SaveReport
 
-The event [`saveReport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#savereport) is triggered when save report icon is clicked in the toolbar. It has following parameters  - `Report` and `ReportName`. This event allows user to save the altered report to the report list.
+The event [`saveReport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#savereport) is triggered when save report icon is clicked in the toolbar. It has following parameters  - `Report` and `ReportName`. This event allows user to save the altered report to the report list.
 
 ### ToolbarClick
 
-The event [`toolbarClick`](https://ej2.syncfusion.com/documentation/api/pivotview#toolbarclick) is triggered whenever toolbar item is clicked, user can modify the click function based on their requirement. It has following parameters  - `item` which holds the toolbar clicked item information.
+The event [`toolbarClick`](https://ej2.syncfusion.com/documentation/api/pivotview/#toolbarclick) is triggered whenever toolbar item is clicked, user can modify the click function based on their requirement. It has following parameters  - `item` which holds the toolbar clicked item information.
 
 <!-- markdownlint-disable MD028 -->
 
 ### ToolbarRender
 
-You can customize the toolbar items in the [`toolbarRender`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#toolbarrender) event. Actions for the customized toolbar items are defined inside the customized toolbar item.
+You can customize the toolbar items in the [`toolbarRender`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#toolbarrender) event. Actions for the customized toolbar items are defined inside the customized toolbar item.
 
 > By default, the custom toolbar items are positioned at left. You can change the position of the toolbar items by using the `align` property. In the following sample, the expand/collapse toolbar item is positioned at right.
 
@@ -128,9 +128,9 @@ You can customize the toolbar items in the [`toolbarRender`](https://ej2.syncfus
 
 ### BeforeExport
 
-The pivot table (or) pivot chart can be exported as a pdf, excel, csv etc.,  document using the toolbar options. And, you can customize the export settings for exporting document by using the [`beforeExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#beforeexport) event in the toolbar.
+The pivot table (or) pivot chart can be exported as a pdf, excel, csv etc.,  document using the toolbar options. And, you can customize the export settings for exporting document by using the [`beforeExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#beforeexport) event in the toolbar.
 
-For example, you can add the header and footer for the pdf document by setting the `header` and `footer` properties for the `pdfExportProperties` in the [`beforeExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#beforeexport) event.
+For example, you can add the header and footer for the pdf document by setting the `header` and `footer` properties for the `pdfExportProperties` in the [`beforeExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#beforeexport) event.
 
 {% if page.publishingplatform == "typescript" %}
 

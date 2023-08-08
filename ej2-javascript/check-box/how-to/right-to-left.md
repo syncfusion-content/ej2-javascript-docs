@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Right to left in ##Platform_Name## Check box control
 
-CheckBox component has RTL support. This can be achieved by setting [`enableRtl`](../../api/check-box#enablertl) as `true`.
+CheckBox component has RTL support. This can be achieved by setting [`enableRtl`](../../api/check-box/#enablertl) as `true`.
 
 The following example illustrates how to enable right-to-left support in CheckBox component.
 

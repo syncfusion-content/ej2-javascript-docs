@@ -35,7 +35,7 @@ npm install
 > The project is preconfigured with common settings (`src/styles/styles.css`, `system.config.js`)
 to start all the Essential JS 2 components.
 
-* Refer to the [Button component dependencies](./getting-started#dependencies) in `system.config.js` configuration file.
+* Refer to the [Button component dependencies](https://ej2.syncfusion.com/documentation/button/getting-started#dependencies) in `system.config.js` configuration file.
 
 `[src/system.config.js]`
 
@@ -156,7 +156,7 @@ The following example shows a basic Button component.
 
 ## Change Button type
 
-To change the default Button to flat Button, set the [`cssClass`](../api/button#cssclass) property to `e-flat` and text content of the Button is set using [`content`](../api/button#content) property.
+To change the default Button to flat Button, set the [`cssClass`](https://ej2.syncfusion.com/documentation/api/button/#cssclass) property to `e-flat` and text content of the Button is set using [`content`](https://ej2.syncfusion.com/documentation/api/button/#content) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -174,4 +174,4 @@ To change the default Button to flat Button, set the [`cssClass`](../api/button#
 
 ## See Also
 
-* [Types of Button](./types-and-styles#button-types)
+* [Types of Button](https://ej2.syncfusion.com/documentation/button/types-and-styles#button-types)

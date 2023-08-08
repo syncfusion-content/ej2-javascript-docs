@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Grouping bar in ##Platform_Name## Pivotview control
 
-The Grouping Bar option in pivot table automatically populates fields from the bound data source and allows end users to drag fields between different axes such as columns, rows, values, and filters, and create pivot table at runtime. It can be enabled by setting the [`showGroupingBar`](https://ej2.syncfusion.com/documentation/api/pivotview#showgroupingbar) property in pivot to **true**.
+The Grouping Bar option in pivot table automatically populates fields from the bound data source and allows end users to drag fields between different axes such as columns, rows, values, and filters, and create pivot table at runtime. It can be enabled by setting the [`showGroupingBar`](https://ej2.syncfusion.com/documentation/api/pivotview/#showgroupingbar) property in pivot to **true**.
 
 Similar to Field List, Grouping Bar UI also comes with basic interactions like,
 
@@ -272,7 +272,7 @@ The event `onFieldDropped` fires on whenever a field is dropped over an axis. It
 
 ### FieldDragStart
 
-The event [`fieldDragStart`](https://ej2.syncfusion.com/documentation/api/pivotview#fielddragstart) fires whenever a field drag starts from its axis. It allows the user to restrict the drag operation based on its parameters. It has the following parameters  
+The event [`fieldDragStart`](https://ej2.syncfusion.com/documentation/api/pivotview/#fielddragstart) fires whenever a field drag starts from its axis. It allows the user to restrict the drag operation based on its parameters. It has the following parameters  
 
 * `fieldName`: It holds the name of the appropriate field.
 
@@ -297,7 +297,7 @@ In the below sample, the drag operation for the fields in row axis alone is rest
 
 ### FieldDrop
 
-The event  [`fieldDrop`](https://ej2.syncfusion.com/documentation/api/pivotview#fielddrop) fires whenever a field is dropped into an axis. It allows the user to restrict the drop operation based on its parameters. It has the following parameters  
+The event  [`fieldDrop`](https://ej2.syncfusion.com/documentation/api/pivotview/#fielddrop) fires whenever a field is dropped into an axis. It allows the user to restrict the drop operation based on its parameters. It has the following parameters  
 
 * `fieldName`: It holds the name of the appropriate field.
 
@@ -328,7 +328,7 @@ In the below sample, dropping of any fields in value axis alone is restricted.
 
 ### FieldRemove
 
-The event [`fieldRemove`](https://ej2.syncfusion.com/documentation/api/pivotview#fieldremove) fires when removing any field from their axis. It helps the user to limit the elimination of a field based on its parameters. It has the following parameters  
+The event [`fieldRemove`](https://ej2.syncfusion.com/documentation/api/pivotview/#fieldremove) fires when removing any field from their axis. It helps the user to limit the elimination of a field based on its parameters. It has the following parameters  
 
 * `fieldName`: It holds the name of the field to be removed.
 
@@ -355,7 +355,7 @@ In the below sample, the field "Country" could not be removed from report by any
 
 ### AggregateMenuOpen
 
-The event [`aggregateMenuOpen`](https://ej2.syncfusion.com/documentation/api/pivotview#aggregatemenuopen) fires while clicking dropdown icon of the value field button UI. It allows to customize the aggregate types to be displayed in the dropdown menu. It has the following parameters
+The event [`aggregateMenuOpen`](https://ej2.syncfusion.com/documentation/api/pivotview/#aggregatemenuopen) fires while clicking dropdown icon of the value field button UI. It allows to customize the aggregate types to be displayed in the dropdown menu. It has the following parameters
 
 * `fieldName`: It holds the name of the field that opens the aggregate menu.
 
@@ -378,7 +378,7 @@ In the below sample, the aggregate types of the field "Amount" has been customiz
           
 {% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs394" %}
 
- >The events [`aggregateMenuOpen`](https://ej2.syncfusion.com/documentation/api/pivotview#aggregatemenuopen), [`fieldRemove`](https://ej2.syncfusion.com/documentation/api/pivotview#fieldremove), [`fieldDrop`](https://ej2.syncfusion.com/documentation/api/pivotview#fielddrop), [`fieldDragStart`](https://ej2.syncfusion.com/documentation/api/pivotview#fielddragstart) and [`onFieldDropped`](https://ej2.syncfusion.com/documentation/api/pivotview#onfielddropped) are applicable for both grouping bar and field list.
+ >The events [`aggregateMenuOpen`](https://ej2.syncfusion.com/documentation/api/pivotview/#aggregatemenuopen), [`fieldRemove`](https://ej2.syncfusion.com/documentation/api/pivotview/#fieldremove), [`fieldDrop`](https://ej2.syncfusion.com/documentation/api/pivotview/#fielddrop), [`fieldDragStart`](https://ej2.syncfusion.com/documentation/api/pivotview/#fielddragstart) and [`onFieldDropped`](https://ej2.syncfusion.com/documentation/api/pivotview/#onfielddropped) are applicable for both grouping bar and field list.
 
 ### ActionBegin
 

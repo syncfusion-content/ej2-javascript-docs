@@ -143,7 +143,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 ## Change Button type
 
-To change the default Button to flat Button, set the [`cssClass`](../api/button#cssclass) property to `e-flat`.
+To change the default Button to flat Button, set the [`cssClass`](https://ej2.syncfusion.com/javascript/documentation/api/button/#cssclass) property to `e-flat`.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -155,4 +155,4 @@ To change the default Button to flat Button, set the [`cssClass`](../api/button#
 
 ## See Also
 
-* [Types of Button](./types-and-styles#button-types)
+* [Types of Button](https://ej2.syncfusion.com/javascript/documentation/button/types-and-styles#button-types)

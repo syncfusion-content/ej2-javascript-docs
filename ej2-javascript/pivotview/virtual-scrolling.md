@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 # Virtual scrolling in ##Platform_Name## Pivotview control
 
-Allows to load the large amounts of data without any performance degradation by rendering rows and columns only in the current content viewport. Rest of the aggregated data will be brought into viewport dynamically based on vertical or horizontal scroll position. This feature can be enabled by setting the [`enableVirtualization`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#enablevirtualization) property in pivot table to **true**..
+Allows to load the large amounts of data without any performance degradation by rendering rows and columns only in the current content viewport. Rest of the aggregated data will be brought into viewport dynamically based on vertical or horizontal scroll position. This feature can be enabled by setting the [`enableVirtualization`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#enablevirtualization) property in pivot table to **true**..
 
 To use the virtual scrolling feature, inject the `VirtualScroll` module in to the pivot table.
 

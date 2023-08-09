@@ -370,7 +370,7 @@ User can show custom string in empty value cells using the [`emptyCellsTextConte
 
 ### Load
 
-The event [`load`](https://ej2.syncfusion.com/documentation/api/pivotview#load) fires before initiate rendering of pivot table. In this event user can customize data source settings before initiating pivot table render module. It holds following parameters like `dataSourceSettings`, `fieldsType` and `pivotView`.
+The event [`load`](https://ej2.syncfusion.com/documentation/api/pivotview/#load) fires before initiate rendering of pivot table. In this event user can customize data source settings before initiating pivot table render module. It holds following parameters like `dataSourceSettings`, `fieldsType` and `pivotView`.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -385,7 +385,7 @@ The event [`load`](https://ej2.syncfusion.com/documentation/api/pivotview#load) 
 
 ### EnginePopulated
 
-The event [`enginePopulated`](https://ej2.syncfusion.com/documentation/api/pivotview#enginepopulated) is triggered after engine is populated. It has following parameters - `dataSourceSettings`, `pivotFieldList` and `pivotValues`.
+The event [`enginePopulated`](https://ej2.syncfusion.com/documentation/api/pivotview/#enginepopulated) is triggered after engine is populated. It has following parameters - `dataSourceSettings`, `pivotFieldList` and `pivotValues`.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -400,7 +400,7 @@ The event [`enginePopulated`](https://ej2.syncfusion.com/documentation/api/pivot
 
 ### EnginePopulating
 
-The event [`enginePopulating`](https://ej2.syncfusion.com/documentation/api/pivotview#enginepopulating) triggers  before the pivot engine starts to populate and allows to customize the pivot datasource settings. It has following parameter `dataSourceSettings`.
+The event [`enginePopulating`](https://ej2.syncfusion.com/documentation/api/pivotview/#enginepopulating) triggers  before the pivot engine starts to populate and allows to customize the pivot datasource settings. It has following parameter `dataSourceSettings`.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

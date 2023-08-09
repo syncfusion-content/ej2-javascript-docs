@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Show tooltip for row and column headers
 
-You can create and display the tooltip for each row and column header(s) in the pivot table by using an external tooltip component via the [dataBound](https://ej2.syncfusion.com/documentation/api/pivotview#databound) event.
+You can create and display the tooltip for each row and column header(s) in the pivot table by using an external tooltip component via the [dataBound](https://ej2.syncfusion.com/documentation/api/pivotview/#databound) event.
 
 {% if page.publishingplatform == "typescript" %}
 

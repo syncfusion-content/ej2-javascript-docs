@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Drill through grid cell edit type in ##Platform_Name## Pivotview control
 
-Using the [`drillThrough`](https://ej2.syncfusion.com/documentation/api/pivotview#drillthrough) event in the pivot table, you can define the edit type of a particular column in the grid present inside the drill-through dialog. To do so, check the column name in the [`drillThrough`](https://ej2.syncfusion.com/documentation/api/pivotview#drillthrough) event and then specify the edit type of that column using the [`gridColumns.editType`](https://ej2.syncfusion.com/documentation/api/grid/column/#edittype) event argument.
+Using the [`drillThrough`](https://ej2.syncfusion.com/documentation/api/pivotview/#drillthrough) event in the pivot table, you can define the edit type of a particular column in the grid present inside the drill-through dialog. To do so, check the column name in the [`drillThrough`](https://ej2.syncfusion.com/documentation/api/pivotview/#drillthrough) event and then specify the edit type of that column using the [`gridColumns.editType`](https://ej2.syncfusion.com/documentation/api/grid/column/#edittype) event argument.
 
 > The [`gridColumns.editType`](https://ej2.syncfusion.com/documentation/api/grid/column/#edittype) property must be set based on the column's data type. For example, the string data type will not be applicable for the numeric text box edit type.
 

@@ -1,4 +1,4 @@
-var defaultRTE = new rich_text_editor_1.RichTextEditor({
+var defaultRTE = new ej.richtexteditor.RichTextEditor({
         height: 400,
         toolbarSettings: {
             items: ['Undo', 'Redo', '|',

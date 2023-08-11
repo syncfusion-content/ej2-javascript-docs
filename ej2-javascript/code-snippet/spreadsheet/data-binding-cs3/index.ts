@@ -1,4 +1,3 @@
-
 import { Spreadsheet } from '@syncfusion/ej2-spreadsheet';
 import { DataManager, ODataAdaptor } from '@syncfusion/ej2-data';
 

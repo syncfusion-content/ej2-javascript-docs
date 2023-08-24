@@ -19,7 +19,7 @@ It supports two kinds of data binding method:
 
 ## Binding with ajax
 
-You can use TreeGrid [`dataSource`](../../api/treegrid#datasource) property to bind the data source to TreeGrid from external Ajax request. In the below code we have fetched the data source from the server with the help of Ajax request and provided that to [`dataSource`](../../api/treegrid#datasource) property by using `onSuccess` event of the Ajax.
+You can use TreeGrid [`dataSource`](../../api/treegrid#datasource) property to bind the data source to TreeGrid from external Fetch request. In the below code we have fetched the data source from the server with the help of Fetch request and provided that to [`dataSource`](../../api/treegrid#datasource) property by using `onSuccess` event of the Fetch.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -266,7 +266,7 @@ data.executeQuery(new Query().where('ParentId', 'equal', null).take(3).skip(0).r
 
 ### Handling Tree Grid actions
 
-For TreeGrid actions such as paging, sorting, etc dataStateChange event will be invoked. You have to query and resolve data using Ajax in this event based on the state arguments.
+For TreeGrid actions such as paging, sorting, etc dataStateChange event will be invoked. You have to query and resolve data using Fetch in this event based on the state arguments.
 
 ```ts
 

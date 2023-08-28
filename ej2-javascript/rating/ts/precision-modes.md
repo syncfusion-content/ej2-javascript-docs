@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Precision modes in ##Platform_Name## Rating control
 
-You can use the [`precision`](../api/rating#precision) property of the rating control to provide ratings with varying levels of precision.
+You can use the [`precision`](../api/rating/#precision) property of the rating control to provide ratings with varying levels of precision.
 
 The precision types of Rating are as follows:
 

@@ -117,7 +117,7 @@ When rendering the predefined dialogs through utility methods, You can close the
 * By pressing the escape key if the [closeOnEscape](https://ej2.syncfusion.com/documentation/api/dialog/#closeonescape) property is enabled.
 * By clicking the close button if the [showCloseIcon](https://ej2.syncfusion.com/documentation/api/dialog/#showcloseicon) property is enabled.
 
-You can also manually close the Dialogs by creating an instance to the dialog and call the [hide](https://ej2.syncfusion.com/angular/documentation/api/dialog#hide) method.
+You can also manually close the Dialogs by creating an instance to the dialog and call the [hide](https://ej2.syncfusion.com/angular/documentation/api/dialog/#hide) method.
 
 Use the following code for **alert**, **confirm** and **prompt** to demonstrates the different ways of hiding the utility dialog.
 

@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 The `format` feature used to customize the units of Slider values to desired format. The formatted values will also be applied to the ARIA attributes of the slider. There are two ways of achieving formatting in slider.
 
-* Use the [format](../api/slider/tooltipData#format) API of slider which utilizes our [Internationalization](../common/internationalization/) to format values.
+* Use the [format](../api/slider/tooltipData/#format) API of slider which utilizes our [Internationalization](../common/internationalization/) to format values.
 
 * Customize using the events namely `renderingTicks` and `tooltipChange`.
 

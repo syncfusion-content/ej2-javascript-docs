@@ -166,7 +166,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 ## Value
 
-You can set the rating value by using the [`value`](../api/rating#value) property.
+You can set the rating value by using the [`value`](../api/rating/#value) property.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

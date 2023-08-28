@@ -15,7 +15,7 @@ You can customize skeleton control in the below ways.
 
 ## cssClass
 
-You can customize the style of a Skeleton control by using [`cssClass`](../api/skeleton#cssclass). The appearance of JavaScript Skeleton can be customized by changing the wave color, background color, width, and height. For detailed information, refer `styles.css` file below.
+You can customize the style of a Skeleton control by using [`cssClass`](../api/skeleton/#cssclass). The appearance of JavaScript Skeleton can be customized by changing the wave color, background color, width, and height. For detailed information, refer `styles.css` file below.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -30,7 +30,7 @@ You can customize the style of a Skeleton control by using [`cssClass`](../api/s
 
 ## Visible
 
-You can use the [`visible`](../api/skeleton#visible) property which defines the visible state of Skeleton.
+You can use the [`visible`](../api/skeleton/#visible) property which defines the visible state of Skeleton.
 
 ```ts
 import { Skeleton } from '@syncfusion/ej2-notifications';

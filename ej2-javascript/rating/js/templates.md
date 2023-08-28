@@ -15,8 +15,8 @@ The rating control allows you to customize the appearance of the rating items us
 
 The rating control supports below templates for item customization.
 
-* [`emptyTemplate`](../api/rating#emptytemplate)
-* [`fullTemplate`](../api/rating#fulltemplate)
+* [`emptyTemplate`](../api/rating/#emptytemplate)
+* [`fullTemplate`](../api/rating/#fulltemplate)
 
 ## Empty (unrated) symbol template
 

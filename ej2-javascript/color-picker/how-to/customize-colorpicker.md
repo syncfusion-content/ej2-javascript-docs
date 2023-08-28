@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## Custom palette
 
-By default, the Palette will be rendered with default colors. To load custom colors in the palette, specify the colors in the [`presetColors`](../../api/color-picker#presetcolors) property. To customize the color palette, add a custom class to palette tiles using [`beforeTileRender`](../../api/color-picker#beforetilerender) event.
+By default, the Palette will be rendered with default colors. To load custom colors in the palette, specify the colors in the [`presetColors`](../../api/color-picker/#presetcolors) property. To customize the color palette, add a custom class to palette tiles using [`beforeTileRender`](../../api/color-picker/#beforetilerender) event.
 
 The following sample demonstrates the above functionalities.
 
@@ -52,7 +52,7 @@ The following sample demonstrates the above functionalities.
 
 ## Hide input area from picker
 
-By default, the input area will be rendered in ColorPicker. To hide the input area from it, add `e-hide-value` class to ColorPicker using the [`cssClass`](../../api/color-picker#cssclass) property.
+By default, the input area will be rendered in ColorPicker. To hide the input area from it, add `e-hide-value` class to ColorPicker using the [`cssClass`](../../api/color-picker/#cssclass) property.
 
 In the following sample, the ColorPicker is rendered without input area.
 
@@ -132,7 +132,7 @@ The following sample show the customized color picker handle.
 
 By default, the applied color will be updated in primary button of the color picker. You can customize that as `icon`.
 
-In the following sample, the `picker` icon is added to primary button and using [`change`](../../api/color-picker#change) event the selected color will be updated in bottom portion of the icon.
+In the following sample, the `picker` icon is added to primary button and using [`change`](../../api/color-picker/#change) event the selected color will be updated in bottom portion of the icon.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 # Gauge pointers in ##Platform_Name## Circular gauge control
 
-Pointers are used to indicate values on the axis. Value of the pointer can be modified using the [`value`](../api/circular-gauge/pointer#value-number) property.
+Pointers are used to indicate values on the axis. Value of the pointer can be modified using the [`value`](../api/circular-gauge/pointer/#value-number) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -41,12 +41,12 @@ Pointers are used to indicate values on the axis. Value of the pointer can be mo
 {% previewsample "page.domainurl/code-snippet/circular-gauge/gauge-pointers-cs1" %}
 {% endif %}
 
-Gauge supports 3 types of pointers such as `Needle`, `RangeBar` and `Marker`. You can choose any one of the pointer by using [`type`](../api/circular-gauge/pointer#type-string) property.
+Gauge supports 3 types of pointers such as `Needle`, `RangeBar` and `Marker`. You can choose any one of the pointer by using [`type`](../api/circular-gauge/pointer/#type-string) property.
 
 ## Needle Pointers
 
-A needle pointer contains three parts, a needle, a cap / knob and a tail. The length of the needle can be customized by using [`radius`](../api/circular-gauge/pointer#radius-string) property. The length of the tail can be
-customized by using [`length`](../api/circular-gauge/needleTailModel#length-string) property. The radius of the cap can be customized by using [`radius`](../api/circular-gauge/capModel#radius-number) in cap object. The needle and tail
+A needle pointer contains three parts, a needle, a cap / knob and a tail. The length of the needle can be customized by using [`radius`](../api/circular-gauge/pointer/#radius-string) property. The length of the tail can be
+customized by using [`length`](../api/circular-gauge/needleTailModel/#length-string) property. The radius of the cap can be customized by using [`radius`](../api/circular-gauge/capModel/#radius-number) in cap object. The needle and tail
 length takes value either in `percentage` or `pixel`.
 
 {% if page.publishingplatform == "typescript" %}
@@ -79,8 +79,8 @@ length takes value either in `percentage` or `pixel`.
 
 **Customization**
 
-Needle color and width can be customized by using [`color`](../api/circular-gauge/pointer#color-string) and [`pointerWidth`](../api/circular-gauge/pointer#pointerwidth-number) property.
-Cap and tails can be customized by using [`cap`](../api/circular-gauge/pointer#cap-capmodel) and [`needleTail`](../api/circular-gauge/pointer#needletail-needletailmodel) object.
+Needle color and width can be customized by using [`color`](../api/circular-gauge/pointer/#color-string) and [`pointerWidth`](../api/circular-gauge/pointer/#pointerwidth-number) property.
+Cap and tails can be customized by using [`cap`](../api/circular-gauge/pointer/#cap-capmodel) and [`needleTail`](../api/circular-gauge/pointer/#needletail-needletailmodel) object.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -173,7 +173,7 @@ RangeBar starts from the beginning of the gauge and ends at the pointer value.
 **Customization**
 
 RangeBar can be customized in terms of color, border and thickness by using
-[`color`](../api/circular-gauge/pointer#color-string), [`border`](../api/circular-gauge/pointer#border-bordermodel) and [`pointerWidth`](../api/circular-gauge/pointer#pointerwidth-number) property.
+[`color`](../api/circular-gauge/pointer/#color-string), [`border`](../api/circular-gauge/pointer/#border-bordermodel) and [`pointerWidth`](../api/circular-gauge/pointer/#pointerwidth-number) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -235,14 +235,14 @@ The start and end pointers of range bar in the circular gauge are rounded to for
 
 ## Marker Pointer
 
-Different type of marker shape can be used to mark the pointer value in axis.  You can change the marker shape using [`markerShape`](../api/circular-gauge/pointer#markershape-string) property in pointer. Gauge supports the below marker shape.
+Different type of marker shape can be used to mark the pointer value in axis.  You can change the marker shape using [`markerShape`](../api/circular-gauge/pointer/#markershape-string) property in pointer. Gauge supports the below marker shape.
 * Circle
 * Rectangle
 * Triangle
 * InvertedTriangle
 * Diamond
 
-We can use image instead of rendering marker shape to denote the pointer value. It can be achieved by setting [`markerShape`](../api/circular-gauge/pointer#markershape-string) to Image and assigning  image path to [`imageUrl`](../api/circular-gauge/pointer#imageurl-string) in pointer.
+We can use image instead of rendering marker shape to denote the pointer value. It can be achieved by setting [`markerShape`](../api/circular-gauge/pointer/#markershape-string) to Image and assigning  image path to [`imageUrl`](../api/circular-gauge/pointer/#imageurl-string) in pointer.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -274,10 +274,10 @@ We can use image instead of rendering marker shape to denote the pointer value. 
 **Customization**
 
 The marker can be customized in terms of color, border, width and height by using
-[`color`](../api/circular-gauge/pointer#color-string),
-[`border`](../api/circular-gauge/pointer#border-bordermodel),
-[`markerWidth`](../api/circular-gauge/pointer#markerwidth-number) and
-[`markerHeight`](../api/circular-gauge/pointer#markerheight-number) property in
+[`color`](../api/circular-gauge/pointer/#color-string),
+[`border`](../api/circular-gauge/pointer/#border-bordermodel),
+[`markerWidth`](../api/circular-gauge/pointer/#markerwidth-number) and
+[`markerHeight`](../api/circular-gauge/pointer/#markerheight-number) property in
 [`pointer`](../api/circular-gauge/pointer).
 
 {% if page.publishingplatform == "typescript" %}
@@ -372,9 +372,9 @@ In addition to the default pointer, you can add n number of pointer to an axis b
 ## Animation
 
 Pointer will get animate on loading the gauge, this can be handled by using
-[`animation`](../api/circular-gauge/pointer#animation-animationmodel) property in pointer.
-The [`enable`](../api/circular-gauge/animationModel#enable-boolean) property in animation allows you to enable or disable the animation.
-The [`duration`](../api/circular-gauge/animationModel#duration-number) property specify the duration of the animation in milliseconds.
+[`animation`](../api/circular-gauge/pointer/#animation-animationmodel) property in pointer.
+The [`enable`](../api/circular-gauge/animationModel/#enable-boolean) property in animation allows you to enable or disable the animation.
+The [`duration`](../api/circular-gauge/animationModel/#duration-number) property specify the duration of the animation in milliseconds.
 
 {% if page.publishingplatform == "typescript" %}
 

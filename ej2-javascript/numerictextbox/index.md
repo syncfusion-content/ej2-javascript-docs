@@ -15,13 +15,13 @@ The **NumericTextBox** is used to get the number inputs from the user. The input
 
 ## Key features
 
-* **[Range Validation](./getting-started#range-validation)**: - allows to set the minimum and maximum range of values in
+* **[Range Validation](./getting-started/#range-validation)**: - allows to set the minimum and maximum range of values in
 the NumericTextBox.
 
 * **[Number Formats](./formats)**: - supports the number display formatting with MSDN standard
 and custom number formats.
 
-* **[Precision Of Numbers](./getting-started#precision-of-numbers)**: - allows to restrict the number precision
+* **[Precision Of Numbers](./getting-started/#precision-of-numbers)**: - allows to restrict the number precision
 when enters the value.
 
 * **[Keyboard Interaction](./accessibility/#keyboard-interaction)**: - allows users to interact with the NumericTextBox

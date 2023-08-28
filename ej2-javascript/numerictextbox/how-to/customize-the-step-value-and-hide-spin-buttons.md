@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Customize the step value and hide spin buttons in ##Platform_Name## Numerictextbox control
 
-The spin buttons allow you to increase or decrease the value with the predefined [`step`](../../api/numerictextbox#step) value. The visibility of spin buttons can be set using the[`showSpinButton`](../../api/numerictextbox#showspinbutton) property.
+The spin buttons allow you to increase or decrease the value with the predefined [`step`](../../api/numerictextbox/#step) value. The visibility of spin buttons can be set using the[`showSpinButton`](../../api/numerictextbox/#showspinbutton) property.
 
 {% if page.publishingplatform == "typescript" %}
 

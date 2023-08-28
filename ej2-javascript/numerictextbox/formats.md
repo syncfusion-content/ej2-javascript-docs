@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Formats in ##Platform_Name## Numerictextbox control
 
-You can format the value of NumericTextBox using [`format`](../api/numerictextbox#format) property. The value will be displayed in the specified format when the component is in focused out state. The format string supports both the [standard numeric format string](../common/internationalization#supported-format-string/) and [custom numeric format string](../common/internationalization#custom-number-formatting-and-parsing/).
+You can format the value of NumericTextBox using [`format`](../api/numerictextbox/#format) property. The value will be displayed in the specified format when the component is in focused out state. The format string supports both the [standard numeric format string](../common/internationalization#supported-format-string/) and [custom numeric format string](../common/internationalization#custom-number-formatting-and-parsing/).
 
 ## Standard formats
 

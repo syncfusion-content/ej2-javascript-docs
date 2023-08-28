@@ -117,9 +117,9 @@ The below example shows the NumericTextBox.
 
 ## Range validation
 
-You can set the minimum and maximum range of values in the NumericTextBox using the [`min`](../api/numerictextbox#min) and [`max`](../api/numerictextbox#max) properties, so the numeric value should be in the min and max range.
+You can set the minimum and maximum range of values in the NumericTextBox using the [`min`](../api/numerictextbox/#min) and [`max`](../api/numerictextbox/#max) properties, so the numeric value should be in the min and max range.
 
-The validation behavior depends on the [`strictMode`](../api/numerictextbox#strictmode) property.
+The validation behavior depends on the [`strictMode`](../api/numerictextbox/#strictmode) property.
 
 The below example demonstrates range validation.
 
@@ -139,7 +139,7 @@ The below example demonstrates range validation.
 
 ## Formatting the value
 
-User can set the format of the NumericTextBox component using [`format`](../api/numerictextbox#format) property. The value will be displayed in the specified format, when the component is in focused out state. For more information about formatting the value, refer to this [link](./formats/).
+User can set the format of the NumericTextBox component using [`format`](../api/numerictextbox/#format) property. The value will be displayed in the specified format, when the component is in focused out state. For more information about formatting the value, refer to this [link](./formats/).
 
 The below example demonstrates format the value by using currency format value `c2`.
 
@@ -159,7 +159,7 @@ The below example demonstrates format the value by using currency format value `
 
 ## Precision of numbers
 
-You can restrict the number of decimals to be entered in the NumericTextBox by using the [`decimals`](../api/numerictextbox#decimals) and [`validateDecimalOnType`](../api/numerictextbox#validatedecimalontype) properties. So, you can't enter the number whose precision is greater than the mentioned decimals.
+You can restrict the number of decimals to be entered in the NumericTextBox by using the [`decimals`](../api/numerictextbox/#decimals) and [`validateDecimalOnType`](../api/numerictextbox/#validatedecimalontype) properties. So, you can't enter the number whose precision is greater than the mentioned decimals.
 
 * If `validateDecimalOnType` is false, number of decimals will not be restricted. Else, number of decimals will be restricted while typing in the NumericTextBox.
 

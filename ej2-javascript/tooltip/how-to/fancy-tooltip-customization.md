@@ -73,7 +73,7 @@ bubble.appendTo('#bubbletip');
 
 These tip arrow customizations have been achieved through CSS changes in the sample level. The tooltip position can be changed by using the radio button click event.
 
-The arrow tip pointer can also be disabled by using the [`showTipPointer`](../../api/tooltip#showtippointer) property in a tooltip.
+The arrow tip pointer can also be disabled by using the [`showTipPointer`](../../api/tooltip/#showtippointer) property in a tooltip.
 
 {% if page.publishingplatform == "typescript" %}
 

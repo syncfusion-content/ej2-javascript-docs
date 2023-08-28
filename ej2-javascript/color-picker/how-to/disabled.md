@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Disabled in ##Platform_Name## Color picker control
 
-To achieve disabled state in ColorPicker, set the [`disabled`](../../api/color-picker#disabled) property to `true`. The ColorPicker pop-up cannot be accessed in disabled state.
+To achieve disabled state in ColorPicker, set the [`disabled`](../../api/color-picker/#disabled) property to `true`. The ColorPicker pop-up cannot be accessed in disabled state.
 
 The following example shows the `disabled` state of ColorPicker component.
 

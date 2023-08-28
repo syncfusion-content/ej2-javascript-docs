@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Custom tooltip with dynamic html in ##Platform_Name## Tooltip control
 
-Tooltip loads HTML pages via HTML tags such as iframe, video, and map using the [`content`](../../api/tooltip#content) property, which supports both string and HTML tags.
+Tooltip loads HTML pages via HTML tags such as iframe, video, and map using the [`content`](../../api/tooltip/#content) property, which supports both string and HTML tags.
 
 To load an `iframe` element in tooltip, set the required iframe in the `content` of tooltip while initializing the tooltip component. Refer to the following code.
 

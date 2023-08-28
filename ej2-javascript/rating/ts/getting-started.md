@@ -154,7 +154,7 @@ The following example shows a basic Rating control.
 
 ## Value
 
-You can set the rating value by using the [`value`](../api/rating#value) property.
+You can set the rating value by using the [`value`](../api/rating/#value) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

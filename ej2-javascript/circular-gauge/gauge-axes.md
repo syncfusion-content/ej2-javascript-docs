@@ -16,7 +16,7 @@ By default, gauge will be displayed with an axis. Each axis contains its own ran
 ## Axis Customization
 
 You can customize the width and color of an axis line by using [`lineStyle`](../api/circular-gauge/line) property.
-Background for an axis can be customized by using [`background`](../api/circular-gauge/axis#background-string)
+Background for an axis can be customized by using [`background`](../api/circular-gauge/axis/#background-string)
 property.
 
 {% if page.publishingplatform == "typescript" %}
@@ -48,7 +48,7 @@ property.
 
 ## Angles and Direction
 
-Circular gauge axis can sweep from 0 to 360 degrees. By default start angle of an axis is 200 degree and end angle is 160 degree and you can customize this option by using [`startAngle`](../api/circular-gauge/axis#startangle-number) and [`endAngle`](../api/circular-gauge/axis#endangle-number)
+Circular gauge axis can sweep from 0 to 360 degrees. By default start angle of an axis is 200 degree and end angle is 160 degree and you can customize this option by using [`startAngle`](../api/circular-gauge/axis/#startangle-number) and [`endAngle`](../api/circular-gauge/axis/#endangle-number)
 property.
 
 {% if page.publishingplatform == "typescript" %}
@@ -78,7 +78,7 @@ property.
 {% previewsample "page.domainurl/code-snippet/circular-gauge/gauge-axes-cs2" %}
 {% endif %}
 
-The [`direction`](../api/circular-gauge/axis#direction-string) property enables you to render the gauge axis either in `ClockWise` or in `AntiClockWise` direction.
+The [`direction`](../api/circular-gauge/axis/#direction-string) property enables you to render the gauge axis either in `ClockWise` or in `AntiClockWise` direction.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -110,7 +110,7 @@ The [`direction`](../api/circular-gauge/axis#direction-string) property enables
 ## Axis Radius
 
 By default, radius of an axis is calculated based on the available size.
-You can customize this, by using [`radius`](../api/circular-gauge/axis#radius-string) property.
+You can customize this, by using [`radius`](../api/circular-gauge/axis/#radius-string) property.
 It takes value either in `percentage` or in `pixel`.
 
 **In Pixel**
@@ -178,9 +178,9 @@ For example, when the radius is ‘50%’, gauge renders to half of the availabl
 
 ## Ticks
 
-You can customize the [`height`](../api/circular-gauge/tickModel#color-string),
-[`color`](../api/circular-gauge/tickModel#color-string) and [`width`](../api/circular-gauge/tickModel#width-number) of major ticks and minor ticks by using [`majorTicks`](../api/circular-gauge/axis#majorticks-tickmodel) and [`minorTicks`](../api/circular-gauge/axis#minorticks-tickmodel) property.
-By default, [`interval`](../api/circular-gauge/tickModel#interval-number) for
+You can customize the [`height`](../api/circular-gauge/tickModel/#color-string),
+[`color`](../api/circular-gauge/tickModel/#color-string) and [`width`](../api/circular-gauge/tickModel/#width-number) of major ticks and minor ticks by using [`majorTicks`](../api/circular-gauge/axis/#majorticks-tickmodel) and [`minorTicks`](../api/circular-gauge/axis/#minorticks-tickmodel) property.
+By default, [`interval`](../api/circular-gauge/tickModel/#interval-number) for
 `majorTicks` will be calculated automatically and also you can customize the interval for major and minor ticks using `interval` property.
 
 {% if page.publishingplatform == "typescript" %}
@@ -212,8 +212,8 @@ By default, [`interval`](../api/circular-gauge/tickModel#interval-number) for
 
 **Tick Position**
 
-Both minor and major ticks can be moved by using [`offset`](../api/circular-gauge/tickModel#offset-number) and [`position`](../api/circular-gauge/tickModel#position-string) property. The [`offset`](../api/circular-gauge/tickModel#offset-number) defines the distance between the axis and ticks.
-By default, offset value is 0. The [`position`](../api/circular-gauge/tickModel#position-string) will place the ticks either inside or outside of the axis.
+Both minor and major ticks can be moved by using [`offset`](../api/circular-gauge/tickModel/#offset-number) and [`position`](../api/circular-gauge/tickModel/#position-string) property. The [`offset`](../api/circular-gauge/tickModel/#offset-number) defines the distance between the axis and ticks.
+By default, offset value is 0. The [`position`](../api/circular-gauge/tickModel/#position-string) will place the ticks either inside or outside of the axis.
 By default, ticks will be placed `inside` the axis.
 
 {% if page.publishingplatform == "typescript" %}
@@ -245,7 +245,7 @@ By default, ticks will be placed `inside` the axis.
 
 ## Labels
 
-Labels of an axis can be customized by using [`font`](../api/circular-gauge/labelModel#font-fontmodel) property in [`labelStyle`](../api/circular-gauge/axis#labelstyle-labelmodel) options.
+Labels of an axis can be customized by using [`font`](../api/circular-gauge/labelModel/#font-fontmodel) property in [`labelStyle`](../api/circular-gauge/axis/#labelstyle-labelmodel) options.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -276,10 +276,10 @@ Labels of an axis can be customized by using [`font`](../api/circular-gauge/labe
 
 **Label Position**
 
-Labels can be moved by using [`offset`](../api/circular-gauge/labelModel#offset-number) or [`position`](../api/circular-gauge/labelModel#position-string) property.
-The [`offset`](../api/circular-gauge/labelModel#offset-number) defines the distance between the labels and ticks.
+Labels can be moved by using [`offset`](../api/circular-gauge/labelModel/#offset-number) or [`position`](../api/circular-gauge/labelModel/#position-string) property.
+The [`offset`](../api/circular-gauge/labelModel/#offset-number) defines the distance between the labels and ticks.
 By default, offset value is 0.
-The [`position`](../api/circular-gauge/labelModel#position-string) will place the labels either inside or outside of the axis.
+The [`position`](../api/circular-gauge/labelModel/#position-string) will place the labels either inside or outside of the axis.
 By default, labels will be placed `inside` the axis.
 
 {% if page.publishingplatform == "typescript" %}
@@ -342,7 +342,7 @@ If the last label is not in the visible range, it will be hidden by default. If 
 
 **Auto Angle**
 
-Labels can be swept along the axis angle by enabling [`autoAngle`](../api/circular-gauge/labelModel#autoangle-boolean) property.
+Labels can be swept along the axis angle by enabling [`autoAngle`](../api/circular-gauge/labelModel/#autoangle-boolean) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -374,7 +374,7 @@ Labels can be swept along the axis angle by enabling [`autoAngle`](../api/circul
 **Smart Labels**
 
 When an axis makes a complete circle, then the first and last label of the axis will get overlap with each other.
-In this scenario, you can either hide 1st or last label using [`hiddenLabel`](../api/circular-gauge/labelModel#hiddenlabel-string) property.
+In this scenario, you can either hide 1st or last label using [`hiddenLabel`](../api/circular-gauge/labelModel/#hiddenlabel-string) property.
 When `hiddenLabel` value is `First`,then the 1st label will be hidden and when the
 `hiddenLabel` value is 'Last', then the last label will be hidden.
 
@@ -407,7 +407,7 @@ When `hiddenLabel` value is `First`,then the 1st label will be hidden and when t
 
 **Label Format**
 
-Axis labels can be formatted by using [`format`](../api/circular-gauge/labelModel#format-string) property in [`labelStyle`](../api/circular-gauge/label) and its supports all globalize format.
+Axis labels can be formatted by using [`format`](../api/circular-gauge/labelModel/#format-string) property in [`labelStyle`](../api/circular-gauge/label) and its supports all globalize format.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -559,7 +559,7 @@ When the axis labels overlap with each other, you can hide the intersected lab
 
 ## Minimum and Maximum
 
-The [`minimum`](../api/circular-gauge/axis#minimum-number) and [`maximum`](../api/circular-gauge/axis#maximum-number) properties
+The [`minimum`](../api/circular-gauge/axis/#minimum-number) and [`maximum`](../api/circular-gauge/axis/#maximum-number) properties
 enables you to customize the start and end values of an axis.
 
 {% if page.publishingplatform == "typescript" %}

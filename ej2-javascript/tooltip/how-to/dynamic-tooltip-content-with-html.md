@@ -17,7 +17,7 @@ The HTML tags such as `<div>`, `<span>`, `bold`, `italic`, `underline`, etc., ca
 
 Here, Bold, Italic, Underline, and Anchor tags are used.
 
-When using HTML elements as content to `Tooltip` make the content element `display: none`, then from the [`beforeRender`](../../api/tooltip#beforerender) event we can make the element visible again using below code.
+When using HTML elements as content to `Tooltip` make the content element `display: none`, then from the [`beforeRender`](../../api/tooltip/#beforerender) event we can make the element visible again using below code.
 
 ```ts
     document.getElementById('content').style.display = 'block';

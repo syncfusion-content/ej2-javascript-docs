@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Shapes in ##Platform_Name## Skeleton control
 
-The Skeleton control support various built-in shape variants to design layout of the page. You can use the [`shape`](../api/skeleton#shape) property to create a preview of any layout.
+The Skeleton control support various built-in shape variants to design layout of the page. You can use the [`shape`](../api/skeleton/#shape) property to create a preview of any layout.
 
 The Skeleton control supports the following content shapes:
 

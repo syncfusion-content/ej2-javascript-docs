@@ -36,4 +36,4 @@ There are three types of Slider:
 
 * **[Accessibility](./accessibility/)**: Built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications.
 
-* **[Keyboard Interaction](./accessibility#keyboard-interaction)**: The Slider can be intractable through the keyboard.
+* **[Keyboard Interaction](./accessibility/#keyboard-interaction)**: The Slider can be intractable through the keyboard.

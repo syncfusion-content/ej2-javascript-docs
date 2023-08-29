@@ -12,11 +12,11 @@ domainurl: ##DomainURL##
 
 # Gauge ranges in ##Platform_Name## Circular gauge control
 
-You can categories certain interval on gauge axis using [`ranges`](../api/circular-gauge/range#properties) property.
+You can categories certain interval on gauge axis using [`ranges`](../api/circular-gauge/range/#properties) property.
 
 ## Start and End
 
-Start and end value of a range in an axis can be customized by using [`start`](../api/circular-gauge/range#start-number) and [`end`](../api/circular-gauge/range#end-number) properties.
+Start and end value of a range in an axis can be customized by using [`start`](../api/circular-gauge/range/#start-number) and [`end`](../api/circular-gauge/range/#end-number) properties.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -47,7 +47,7 @@ Start and end value of a range in an axis can be customized by using [`start`](.
 
 ## Customization
 
-Color and thickness of the range can be customized by using [`color`](../api/circular-gauge/range#color-string),[`startWidth`](../api/circular-gauge/range#startwidth-number) and [`endWidth`](../api/circular-gauge/range#endwidth-number) property.
+Color and thickness of the range can be customized by using [`color`](../api/circular-gauge/range/#color-string),[`startWidth`](../api/circular-gauge/range/#startwidth-number) and [`endWidth`](../api/circular-gauge/range/#endwidth-number) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -78,7 +78,7 @@ Color and thickness of the range can be customized by using [`color`](../api/cir
 
 ## Radius
 
-You can place the range inside or outside of the axis by using [`radius`](../api/circular-gauge/range#radius-string) property. The radius of the range can takes value either in percentage or in pixels. By default, ranges
+You can place the range inside or outside of the axis by using [`radius`](../api/circular-gauge/range/#radius-string) property. The radius of the range can takes value either in percentage or in pixels. By default, ranges
 take 100% of the axis radius.
 
 **In Pixel**

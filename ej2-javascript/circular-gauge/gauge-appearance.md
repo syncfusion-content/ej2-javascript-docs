@@ -13,8 +13,8 @@ domainurl: ##DomainURL##
 
 ## Gauge Title
 
-Circular gauge can be given a title by using [`title`](../api/circular-gauge#title-string) property, to show the information about the gauge.
-Title can be customized by using [`titleStyle`](../api/circular-gauge#titlestyle-fontmodel) property in gauge.
+Circular gauge can be given a title by using [`title`](../api/circular-gauge/#title-string) property, to show the information about the gauge.
+Title can be customized by using [`titleStyle`](../api/circular-gauge/#titlestyle-fontmodel) property in gauge.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -45,9 +45,9 @@ Title can be customized by using [`titleStyle`](../api/circular-gauge#titlestyle
 
 ## Gauge Position
 
-Gauge can be positioned anywhere in the container with the help of [`centerX`](../api/circular-gauge#centerx-string) and [`centerY`](../api/circular-gauge#centery-string) property and it accepts values either in percentage or in pixels.
-The default value of the [`centerX`](../api/circular-gauge#centerx-string) and
-[`centerY`](../api/circular-gauge#centery-string) property is 50%, which means gauge will get rendered to the centre of the container.
+Gauge can be positioned anywhere in the container with the help of [`centerX`](../api/circular-gauge/#centerx-string) and [`centerY`](../api/circular-gauge/#centery-string) property and it accepts values either in percentage or in pixels.
+The default value of the [`centerX`](../api/circular-gauge/#centerx-string) and
+[`centerY`](../api/circular-gauge/#centery-string) property is 50%, which means gauge will get rendered to the centre of the container.
 
 **In Pixel**
 
@@ -83,7 +83,7 @@ You can set the mid point of the gauge in pixel as demonstrated below,
 **In Percentage**
 
 By setting the value in percentage, gauge gets its mid point with respect to its plot area.
-For example, when the [`centerX`](../api/circular-gauge#centerx-string) value as '0%' and [`centerY`](../api/circular-gauge#centery-string) value is ‘50%’, gauge will get positioned at the top left corner of the plot area.
+For example, when the [`centerX`](../api/circular-gauge/#centerx-string) value as '0%' and [`centerY`](../api/circular-gauge/#centery-string) value is ‘50%’, gauge will get positioned at the top left corner of the plot area.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -116,7 +116,7 @@ For example, when the [`centerX`](../api/circular-gauge#centerx-string) value as
 
 **Customize the gauge background**
 
-Using [`background`](../api/circular-gauge#background-string) and [`border`](../api/circular-gauge#border-bordermodel) properties, you can change the background color and border of the circular gauge.
+Using [`background`](../api/circular-gauge/#background-string) and [`border`](../api/circular-gauge/#border-bordermodel) properties, you can change the background color and border of the circular gauge.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -147,7 +147,7 @@ Using [`background`](../api/circular-gauge#background-string) and [`border`](../
 
 **Gauge Margin**
 
-You can set margin for gauge from its container through [`margin`](../api/circular-gauge#margin-marginmodel) property.
+You can set margin for gauge from its container through [`margin`](../api/circular-gauge/#margin-marginmodel) property.
 
 {% if page.publishingplatform == "typescript" %}
 

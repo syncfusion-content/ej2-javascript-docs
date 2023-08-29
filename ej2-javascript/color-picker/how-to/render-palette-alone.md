@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Render palette alone in ##Platform_Name## Color picker control
 
-To render the `Palette` alone in ColorPicker, specify the [`mode`](../../api/color-picker#mode) property as `Palette`, and set the [`modeSwitcher`](../../api/color-picker#modeswitcher) property to `false`.
+To render the `Palette` alone in ColorPicker, specify the [`mode`](../../api/color-picker/#mode) property as `Palette`, and set the [`modeSwitcher`](../../api/color-picker/#modeswitcher) property to `false`.
 
-In the following sample, the [`showButtons`](../../api/color-picker#showbuttons) property is disabled to hide the control buttons and it renders only the `Palette` area.
+In the following sample, the [`showButtons`](../../api/color-picker/#showbuttons) property is disabled to hide the control buttons and it renders only the `Palette` area.
 
 {% if page.publishingplatform == "typescript" %}
 

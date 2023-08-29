@@ -90,7 +90,7 @@ mask.appendTo('#mask');
 
 ## Set the mask
 
-You can set the mask to the MaskedTextBox to validate the user input by using the [`mask`](../api/maskedtextbox#mask) property. To know more about the usage of mask and configuration, refer to this [link](./mask-configuration/).
+You can set the mask to the MaskedTextBox to validate the user input by using the [`mask`](../api/maskedtextbox/#mask) property. To know more about the usage of mask and configuration, refer to this [link](./mask-configuration/).
 
 The following example demonstrates the usage of mask element `0` that allows any single digit from `0` to `9`.
 

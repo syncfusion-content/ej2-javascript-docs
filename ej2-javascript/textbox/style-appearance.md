@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 The [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material) for Essential JS 2 can be used to customize a new theme from an existing theme. It allows modification and preview for primary font and color as well as secondary font and color of the chosen theme. This section covers the instructions and techniques to customize the appearance and styling of the TextBox component beyond the basic requirement provided by the theme studio.
 
->Note: The styling and customization provided in this section will be applied globally for all the Textbox in the page when used as such. To apply the customization only to a specific textbox component, the [cssClass](https://ej2.syncfusion.com/documentation/api/textbox#cssclass) property can be used. [cssClass](https://ej2.syncfusion.com/documentation/api/textbox#cssclass) API adds the custom class attribute to the textbox component, using which the styling can be restricted to the specific component.
+>Note: The styling and customization provided in this section will be applied globally for all the Textbox in the page when used as such. To apply the customization only to a specific textbox component, the [cssClass](https://ej2.syncfusion.com/documentation/api/textbox/#cssclass) property can be used. [cssClass](https://ej2.syncfusion.com/documentation/api/textbox/#cssclass) API adds the custom class attribute to the textbox component, using which the styling can be restricted to the specific component.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -50,7 +50,7 @@ The [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material) for E
 
 ## Filled and Outline mode
 
-The Filled and Outline modes can be enabled in the Textbox component by adding the `e-outline` or `e-filled` class to the [cssClass](https://ej2.syncfusion.com/documentation/api/textbox#cssclass) API.
+The Filled and Outline modes can be enabled in the Textbox component by adding the `e-outline` or `e-filled` class to the [cssClass](https://ej2.syncfusion.com/documentation/api/textbox/#cssclass) API.
 
 {% if page.publishingplatform == "typescript" %}
 

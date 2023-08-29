@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## Localization
 
-The [`Localization`](../api/base/l10n) library allows you to localize default text content of the Slider. The slider control has static text on some features (like increase and decrease button) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](../api/slider#locale) value and translation object.
+The [`Localization`](../api/base/l10n) library allows you to localize default text content of the Slider. The slider control has static text on some features (like increase and decrease button) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](../api/slider/#locale) value and translation object.
 
 The following list of properties and its values are used in the slider.
 
@@ -24,7 +24,7 @@ Decrease | Decrease
 
 ### Loading translations
 
-To load translation object in an application, use [`load`](../api/base/l10n#load) function of the [`L10n`](../api/base/l10n) class.
+To load translation object in an application, use [`load`](../api/base/l10n/#load) function of the [`L10n`](../api/base/l10n) class.
 
 The following example demonstrates the Slider in `Deutsch` culture.
 

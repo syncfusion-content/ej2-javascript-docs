@@ -15,7 +15,7 @@ The **MaskedTextBox** allows the user to enter the valid input based on the prov
 
 ## Key features
 
-* **[Custom Characters](./mask-configuration#custom-characters)**: Allows to use your own characters as the mask elements.
+* **[Custom Characters](./mask-configuration/#custom-characters)**: Allows to use your own characters as the mask elements.
 
 * **[Regular Expression](./mask-configuration/#regular-expression)**: Uses as a mask element for each character of the MaskedTextBox.
 

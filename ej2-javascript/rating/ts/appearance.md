@@ -15,7 +15,7 @@ You can also customize the appearance of rating control.
 
 ## Items count
 
-You can specify the number of rating items using the [`itemsCount`](../api/rating#itemscount) property.
+You can specify the number of rating items using the [`itemsCount`](../api/rating/#itemscount) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -33,7 +33,7 @@ You can specify the number of rating items using the [`itemsCount`](../api/ratin
 
 ## Disabled
 
-You can disable the rating control by using the [`disabled`](../api/rating#disabled) property. When the `disabled` property is set to `true`, the rating control will be disabled and the user will not be able to interact with it and a disabled rating control may have a different visual appearance than an enabled one.
+You can disable the rating control by using the [`disabled`](../api/rating/#disabled) property. When the `disabled` property is set to `true`, the rating control will be disabled and the user will not be able to interact with it and a disabled rating control may have a different visual appearance than an enabled one.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -51,7 +51,7 @@ You can disable the rating control by using the [`disabled`](../api/rating#disab
 
 ## Visible
 
-You can use the [`visible`](../api/rating#visible) property of the rating control to control the visibility of the control. When the `visible` property is set to `true`, the rating control will be visible on the page. When it is set to `false`, the control will be hidden.
+You can use the [`visible`](../api/rating/#visible) property of the rating control to control the visibility of the control. When the `visible` property is set to `true`, the rating control will be visible on the page. When it is set to `false`, the control will be hidden.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -69,7 +69,7 @@ You can use the [`visible`](../api/rating#visible) property of the rating contro
 
 ## Read only
 
-You can use the [`readOnly`](../api/rating#readonly) property of the rating control to make the control non-interactive and prevent the user from changing the rating value.
+You can use the [`readOnly`](../api/rating/#readonly) property of the rating control to make the control non-interactive and prevent the user from changing the rating value.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -87,7 +87,7 @@ You can use the [`readOnly`](../api/rating#readonly) property of the rating cont
 
 ## CssClass
 
-You can customize the appearance of the rating control, such as by changing its colors, fonts, sizes, or other visual aspects by using the [`cssClass`](../api/rating#cssclass) property.
+You can customize the appearance of the rating control, such as by changing its colors, fonts, sizes, or other visual aspects by using the [`cssClass`](../api/rating/#cssclass) property.
 
 ### Changing rating symbol border color
 

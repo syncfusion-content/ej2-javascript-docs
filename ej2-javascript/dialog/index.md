@@ -26,9 +26,9 @@ There are two types of Dialog:
 * **[Templates](./template)**: - Customizable Dialog header and footer through the
 template.
 
-* **[Draggable](../../getting-started#draggable)**: - Supports to drag the Dialog within the page or container.
+* **[Draggable](../../getting-started/#draggable)**: - Supports to drag the Dialog within the page or container.
 
-* **[Positioning](../../getting-started#positioning)**: - Provided support to
+* **[Positioning](../../getting-started/#positioning)**: - Provided support to
 position on built-in 9 places or any custom location.
 
 * **[Animation](./animation)**: - Provided built-in animation support on open & close the Dialog with customization.
@@ -37,4 +37,4 @@ position on built-in 9 places or any custom location.
 
 * **[Accessibility](./accessibility)**: - Built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications.
 
-* **[Keyboard Interaction](./accessibility#keyboard-interaction)**: - The Dialog can be intractable through keyboard.
+* **[Keyboard Interaction](./accessibility/#keyboard-interaction)**: - The Dialog can be intractable through keyboard.

@@ -91,7 +91,7 @@ Combined CSS files are available in the Essential JS 2 package root folder. This
 
 ```
 
-> To know about individual component CSS, refer to the [Individual Component theme files](https://helpej2.syncfusion.com/staging/documentation/appearance/theme#referring-individual-control-theme) section.
+> To know about individual component CSS, refer to the [Individual Component theme files](https://ej2.syncfusion.com/documentation/appearance/theme#referring-individual-control-theme) section.
 
 ## Adding Rich Text Editor component
 

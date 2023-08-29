@@ -37,7 +37,7 @@ The `FormValidator` has following default validation rules, which are used to va
 
 ## Defining Custom Rules
 
-You can also define custom rules in the [`rules`](../api/form-validator#rules) property and validate the form with custom logics.
+You can also define custom rules in the [`rules`](../api/form-validator/#rules) property and validate the form with custom logics.
 
 The custom validation method need to return the boolean value for validating an input.
 
@@ -76,8 +76,8 @@ The custom validation method need to return the boolean value for validating an 
 
 ## Adding or Removing Rules
 
-After creating `FormValidator` object, you can add more rules to an input element by using [`addRules`](../api/form-validator#addrules)
-method and you can also remove an existing rule from the input element by using [`removeRules`](../api/form-validator#removerules) method.
+After creating `FormValidator` object, you can add more rules to an input element by using [`addRules`](../api/form-validator/#addrules)
+method and you can also remove an existing rule from the input element by using [`removeRules`](../api/form-validator/#removerules) method.
 
 ```ts
 import {FormValidator, FormValidatorModel} from '@syncfusion/ej2-inputs';
@@ -97,7 +97,7 @@ formObject.removeRules('age', ['number']);
 
 ## Validating a Form
 
-You can manually trigger validation by calling the [`validate`](../api/form-validator#validate) method of [`FormValidator`](../api/form-validator).
+You can manually trigger validation by calling the [`validate`](../api/form-validator/#validate) method of [`FormValidator`](../api/form-validator).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -134,7 +134,7 @@ You can manually trigger validation by calling the [`validate`](../api/form-vali
 
 ## Validating a Single Element
 
-The [`validate`](../api/form-validator#validate) method have an optional argument, where you can pass an input element's name attribute to validate its value against the defined rule.
+The [`validate`](../api/form-validator/#validate) method have an optional argument, where you can pass an input element's name attribute to validate its value against the defined rule.
 
 ```ts
 import {FormValidator, FormValidatorModel} from '@syncfusion/ej2-inputs';

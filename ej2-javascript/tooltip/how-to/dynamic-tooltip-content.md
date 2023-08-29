@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 The tooltip content can be changed dynamically using the [AJAX](../../api/base/ajax/) request.
 
-The AJAX request should be made within the [`beforeRender`](../../api/tooltip#beforerender) event of the tooltip. On every success, the corresponding retrieved data will be set to the [content](../../api/tooltip#content) property of the tooltip.
+The AJAX request should be made within the [`beforeRender`](../../api/tooltip/#beforerender) event of the tooltip. On every success, the corresponding retrieved data will be set to the [content](../../api/tooltip/#content) property of the tooltip.
 
 When you hover over the icons, its respective data will be retrieved dynamically and then assigned to the tooltip’s content.
 

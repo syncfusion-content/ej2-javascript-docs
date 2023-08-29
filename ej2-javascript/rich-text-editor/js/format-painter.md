@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Format Painter in ##Platform_Name## Rich Text Editor Control | Syncfusion
 
-A format painter is a tool that allows you to copy the formatting from a piece of text and apply it to another one. Format Painter can be accessed via the toolbar or the keyboard shortcuts. The format painter can copy the formatting of a single word or a whole paragraph. The format painter can be customized using the [formatPainterSettings](../api/rich-text-editor/formatPainterSettings/) property.
+A format painter is a tool that allows you to copy the formatting from a piece of text and apply it to another one. Format Painter can be accessed via the toolbar or the keyboard shortcuts. The format painter can copy the formatting of a single word or a whole paragraph. The format painter can be customized using the [formatPainterSettings](../api/rich-text-editor/#formatPainterSettings/) property.
 
 ## Enabling the toolbar option for Format Painter
 

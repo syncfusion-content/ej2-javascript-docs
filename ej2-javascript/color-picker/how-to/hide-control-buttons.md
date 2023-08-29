@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Hide control buttons in ##Platform_Name## Color picker control
 
-ColorPicker can be rendered without control buttons (Apply/Cancel). In this case, while selecting a color, the ColorPicker pop-up is closed and selected colors can be applied directly. To hide control buttons, set the [`showButtons`](../../api/color-picker#showbuttons) property to `false`.
+ColorPicker can be rendered without control buttons (Apply/Cancel). In this case, while selecting a color, the ColorPicker pop-up is closed and selected colors can be applied directly. To hide control buttons, set the [`showButtons`](../../api/color-picker/#showbuttons) property to `false`.
 
 {% if page.publishingplatform == "typescript" %}
 

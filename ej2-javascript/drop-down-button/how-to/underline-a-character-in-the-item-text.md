@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Underline a character in the item text in ##Platform_Name## Drop down button control
 
-Underline a particular character in a text can be handled in [`beforeItemRender`](../../api/drop-down-button#beforeitemrender)event by adding `<u>` tag in between the text and given as innerHTML in `li` rendering.
+Underline a particular character in a text can be handled in [`beforeItemRender`](../../api/drop-down-button/#beforeitemrender)event by adding `<u>` tag in between the text and given as innerHTML in `li` rendering.
 
 In the following example, `C` is underlined in the text `Copy`.
 

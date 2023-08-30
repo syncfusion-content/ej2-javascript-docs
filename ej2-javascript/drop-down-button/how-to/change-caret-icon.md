@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Change caret icon in ##Platform_Name## Drop down button control
 
-Dropdown arrow can be customized on popup open and close. It can be handled in [`beforeOpen`](../../api/drop-down-button#beforeopen) and [`beforeClose`](../../api/drop-down-button#beforeclose) event.
+Dropdown arrow can be customized on popup open and close. It can be handled in [`beforeOpen`](../../api/drop-down-button/#beforeopen) and [`beforeClose`](../../api/drop-down-button/#beforeclose) event.
 
 In the following example, the up arrow is updated on popup close and down arrow is updated on popup open using `beforeOpen` and `beforeClose` event by adding and removing `e-caret-up` class.
 

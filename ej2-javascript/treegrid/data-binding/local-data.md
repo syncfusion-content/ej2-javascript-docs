@@ -18,13 +18,13 @@ Two types of Data binding are possible with the TreeGrid control.
 * Hierarchical Datasource binding
 * Self-Referential Data binding (Flat Data)
 
-To bind local data to the treegrid, you can assign a JavaScript object array to the [`dataSource`](../../api/treegrid#datasource) property. The local data source can also be provided as an instance of the `DataManager`.
+To bind local data to the treegrid, you can assign a JavaScript object array to the [`dataSource`](../../api/treegrid/#datasource) property. The local data source can also be provided as an instance of the `DataManager`.
 
 > By default, `DataManager` uses `JsonAdaptor` for local data-binding.
 
 ## Hierarchy data source binding
 
-The [`childMapping`](../../api/treegrid#childMapping) property is used to map the child records in hierarchy data source.
+The [`childMapping`](../../api/treegrid/#childMapping) property is used to map the child records in hierarchy data source.
 
 The following code example shows you how to bind the hierarchical local data into the TreeGrid control.
 
@@ -61,8 +61,8 @@ The following code example shows you how to bind the hierarchical local data int
 
 TreeGrid is rendered from Self-Referential data structures by providing two fields, ID field and parent ID field.
 
-* **ID Field**: This field contains unique values used to identify nodes. Its name is assigned to the [`idMapping`](../../api/treegrid#idMapping) property.
-* **Parent ID Field**: This field contains values that indicate parent nodes. Its name is assigned to the [`parentIdMapping`](../../api/treegrid#parentIdMapping) property.
+* **ID Field**: This field contains unique values used to identify nodes. Its name is assigned to the [`idMapping`](../../api/treegrid/#idMapping) property.
+* **Parent ID Field**: This field contains values that indicate parent nodes. Its name is assigned to the [`parentIdMapping`](../../api/treegrid/#parentIdMapping) property.
 
 {% if page.publishingplatform == "typescript" %}
 

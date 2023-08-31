@@ -48,8 +48,8 @@ The following properties are used to customize the annotation.
 * [`zIndex`](../api/linear-gauge/annotation/#zindex) - Bring the annotation to the front or back, when annotation overlaps with another element.
 * [`axisValue`](../api/linear-gauge/annotation/#axisvalue) - To place the annotation in the specified axis value with respect to the provided axis index.
 * [`axisIndex`](api/linear-gauge/annotation/#axisindex) - To place the annotation in the specified axis with respect to the provided axis value.
-* [`horizontalAlignment`](../api/linear-gauge/annotation#horizontalalignment) - To place the annotation horizontally.
-* [`verticalAlignment`](../api/linear-gauge/annotation#verticalalignment) - To place the annotation vertically.
+* [`horizontalAlignment`](../api/linear-gauge/annotation/#horizontalalignment) - To place the annotation horizontally.
+* [`verticalAlignment`](../api/linear-gauge/annotation/#verticalalignment) - To place the annotation vertically.
 * [`x`](../api/linear-gauge/annotation/#x), [`y`](../api/linear-gauge/annotation/#y) - To place the annotation in the specified location.
 
 ### Changing the z-index
@@ -117,7 +117,7 @@ The annotation can be placed anywhere in the Linear Gauge by setting the pixel v
 
 ### Alignment of annotation
 
-The annotation can be aligned horizontally and vertically by using [`horizontalAlignment`](../api/linear-gauge/annotation#horizontalalignment) and [`verticalAlignment`](../api/linear-gauge/annotation#verticalalignment) properties respectively. The possible values can be **Center**, **Far**, **Near**, and **None**. The [`horizontalAlignment`](../api/linear-gauge/annotation#horizontalalignment) and [`verticalAlignment`](../api/linear-gauge/annotation#verticalalignment) properties are not applicable when the [`x`](../api/linear-gauge/annotation/#x) and [`y`](../api/linear-gauge/annotation/#y) properties are set in the [`annotations`](../api/linear-gauge/annotation).
+The annotation can be aligned horizontally and vertically by using [`horizontalAlignment`](../api/linear-gauge/annotation/#horizontalalignment) and [`verticalAlignment`](../api/linear-gauge/annotation/#verticalalignment) properties respectively. The possible values can be **Center**, **Far**, **Near**, and **None**. The [`horizontalAlignment`](../api/linear-gauge/annotation/#horizontalalignment) and [`verticalAlignment`](../api/linear-gauge/annotation/#verticalalignment) properties are not applicable when the [`x`](../api/linear-gauge/annotation/#x) and [`y`](../api/linear-gauge/annotation/#y) properties are set in the [`annotations`](../api/linear-gauge/annotation).
 
 {% if page.publishingplatform == "typescript" %}
 

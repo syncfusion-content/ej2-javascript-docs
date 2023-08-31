@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Create right to left dropdownbutton in ##Platform_Name## Drop down button control
 
-DropDownButton component has RTL support. This can be achieved by setting [`enableRtl`](../../api/drop-down-button#enablertl) as true.
+DropDownButton component has RTL support. This can be achieved by setting [`enableRtl`](../../api/drop-down-button/#enablertl) as true.
 
 The following example illustrates how to enable right-to-left support in DropDownButton component.
 

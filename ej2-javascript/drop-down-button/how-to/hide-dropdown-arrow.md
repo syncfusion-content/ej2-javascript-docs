@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Hide dropdown arrow in ##Platform_Name## Drop down button control
 
-You can hide the dropdown arrow from the DropDownButton by adding class `e-caret-hide` to DropDownButton element using [`cssClass`](../../api/drop-down-button#cssclass) property.
+You can hide the dropdown arrow from the DropDownButton by adding class `e-caret-hide` to DropDownButton element using [`cssClass`](../../api/drop-down-button/#cssclass) property.
 
 {% if page.publishingplatform == "typescript" %}
 

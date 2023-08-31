@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Position popup open in ##Platform_Name## Drop down button control
 
-Popup open position can be changed according to the requirement. Popup open position can be changed in [`open`](../../api/drop-down-button#open) event by setting `top` and `left` for the popup element.
+Popup open position can be changed according to the requirement. Popup open position can be changed in [`open`](../../api/drop-down-button/#open) event by setting `top` and `left` for the popup element.
 
 In the following example, the `top` position of the popup element is changed in `open` event.
 

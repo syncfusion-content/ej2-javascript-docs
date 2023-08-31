@@ -48,7 +48,7 @@ To sort, inject the [`Sort`](../api/treegrid/#sortmodule) module in the treegrid
 {% endif %}
 
 > * TreeGrid columns are sorted in the `Ascending` order. If you click the already sorted column, the sort direction toggles.
-> * You can apply and clear sorting by invoking [`sortByColumn`](../api/treegrid#sortbycolumn) and [`clearSorting`](../api/treegrid/#clearsorting) methods.
+> * You can apply and clear sorting by invoking [`sortByColumn`](../api/treegrid/#sortbycolumn) and [`clearSorting`](../api/treegrid/#clearsorting) methods.
 > * To disable sorting for a particular column, set the [`columns.allowSorting`](../api/treegrid/column/#allowSorting) to false.
 
 ## Initial sort

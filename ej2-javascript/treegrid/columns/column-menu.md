@@ -91,7 +91,7 @@ In the below example, clear sorting action was performed through `columnMenuItem
 
 ## Customize menu items for particular columns
 
-It is possible to customize specific items from the column menu for particular [`columns`](../../api/treegrid#column) using [`columnMenuOpen`](https://ej2.syncfusion.com/documentation/api/treegrid/#columnmenuopen) event. `columnMenuOpen` event can be utilized to determine which items to customize in column menu.
+It is possible to customize specific items from the column menu for particular [`columns`](../../api/treegrid/#column) using [`columnMenuOpen`](https://ej2.syncfusion.com/documentation/api/treegrid/#columnmenuopen) event. `columnMenuOpen` event can be utilized to determine which items to customize in column menu.
 
 The following example shows how to hide the built-in **Filter** menu item when the column menu is opened for the **taskName** column, while allowing it to remain visible for all other columns.
 

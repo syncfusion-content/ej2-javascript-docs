@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## Icons
 
-The popup action item have an icon or image to provide visual representation of the action. To place the icon on a popup item, set the [`iconCss`](../api/drop-down-button#iconcss) property to `e-icons` with the required icon CSS. By default, the icon is positioned to the left side of the popup action item.
+The popup action item have an icon or image to provide visual representation of the action. To place the icon on a popup item, set the [`iconCss`](../api/drop-down-button/#iconcss) property to `e-icons` with the required icon CSS. By default, the icon is positioned to the left side of the popup action item.
 
 In the following sample, the icons for edit, delete, mark as read  and like message menu items are added using the iconCss property.
 
@@ -93,7 +93,7 @@ In the following sample, navigation URL for Flipkart, Amazon, and Snapdeal actio
 
 ### Item templating
 
-Popup items can be customized using the [`beforeItemRender`](../api/drop-down-button#beforeitemrender) event. The item render event triggers while rendering each popup action item. The event argument will be used to identify the action item and customize based on the requirement.
+Popup items can be customized using the [`beforeItemRender`](../api/drop-down-button/#beforeitemrender) event. The item render event triggers while rendering each popup action item. The event argument will be used to identify the action item and customize based on the requirement.
 
 The following popup template is customized using `beforeItemRender` event by appending `span` and `div` element on each `li` rendering:
 
@@ -132,7 +132,7 @@ The following popup template is customized using `beforeItemRender` event by app
 
 ### Popup templating
 
-The whole popup can be customized as per the requirement and it can be customized by handling it in [`target`](../api/drop-down-button#target) property.
+The whole popup can be customized as per the requirement and it can be customized by handling it in [`target`](../api/drop-down-button/#target) property.
 
 In the following sample, the whole popup item is customized as table template by giving `div` as target and it can be achieved
 using `target` property.

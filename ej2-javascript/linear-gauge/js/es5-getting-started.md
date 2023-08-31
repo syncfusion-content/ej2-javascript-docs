@@ -124,7 +124,7 @@ The below example shows a basic linear gauge component.
 
 ## Adding the Linear Gauge Title
 
-The title can be added to the Linear Gauge component using the [`title`](../api/linear-gauge/linearGaugeModel#title) property in the Linear Gauge.
+The title can be added to the Linear Gauge component using the [`title`](../api/linear-gauge/linearGaugeModel/#title) property in the Linear Gauge.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -139,7 +139,7 @@ The title can be added to the Linear Gauge component using the [`title`](../api/
 
 ## Setting the start and end of the axis line
 
-The range of the axis can be set using the [`minimum`](../api/linear-gauge/axis#minimum) and [`maximum`](../api/linear-gauge/axis#maximum) properties in the Linear Gauge.
+The range of the axis can be set using the [`minimum`](../api/linear-gauge/axis/#minimum) and [`maximum`](../api/linear-gauge/axis/#maximum) properties in the Linear Gauge.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -152,7 +152,7 @@ The range of the axis can be set using the [`minimum`](../api/linear-gauge/axis#
         
 {% previewsample "page.domainurl/code-snippet/linear-gauge/es5-getting-started-cs3" %}
 
-To denote the axis values with temperature units, add the °C as suffix to each label. This can be achieved by setting the **{value}°C** to the [`format`](../api/linear-gauge/labelModel/#format) property in the [`labelStyle`](../api/linear-gauge/axis#labelstyle) object of the axis. Here, **{value}** acts as a placeholder for each axis label.
+To denote the axis values with temperature units, add the °C as suffix to each label. This can be achieved by setting the **{value}°C** to the [`format`](../api/linear-gauge/labelModel/#format) property in the [`labelStyle`](../api/linear-gauge/axis/#labelstyle) object of the axis. Here, **{value}** acts as a placeholder for each axis label.
 
 To change the pointer value from the default value of the gauge, set the [`value`](../api/linear-gauge/pointer/#value) property in [`pointers`](../api/linear-gauge/pointerModel/) object of the axis.
 

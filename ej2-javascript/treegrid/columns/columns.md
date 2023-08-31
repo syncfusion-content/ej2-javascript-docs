@@ -11,14 +11,14 @@ domainurl: ##DomainURL##
 
 # Columns in ##Platform_Name## Treegrid control
 
-The column definitions are used as the [`dataSource`](../../api/treegrid#dataSource) schema in the TreeGrid. This plays a vital role in rendering column values in the required format.
-The treegrid operations such as sorting, filtering and searching etc. are performed based on column definitions. The [`field`](../../api/treegrid/column/#field) property of the [`columns`](../../api/treegrid#column)
+The column definitions are used as the [`dataSource`](../../api/treegrid/#dataSource) schema in the TreeGrid. This plays a vital role in rendering column values in the required format.
+The treegrid operations such as sorting, filtering and searching etc. are performed based on column definitions. The [`field`](../../api/treegrid/column/#field) property of the [`columns`](../../api/treegrid/#column)
 is necessary to map the data source values in TreeGrid columns.
 
 > 1. If the column [`field`](../../api/treegrid/column/#field) is not specified in the dataSource, the column values will be empty.
 > 2. If the [`field`](../../api/treegrid/column/#field) name contains “dot” operator, it is considered as complex binding.
 
-[`treeColumnIndex`](../../api/treegrid#treecolumnindex) property denotes the column that is used to expand and collapse child rows.
+[`treeColumnIndex`](../../api/treegrid/#treecolumnindex) property denotes the column that is used to expand and collapse child rows.
 
 ## Format
 

@@ -15,7 +15,7 @@ The following methods are available in the Linear Gauge component.
 
 ## setPointerValue
 
-To change the pointer value dynamically, use the [`setPointerValue`](../api/linear-gauge#setpointervalue) method in the Linear Gauge component. The following are the arguments for this method.
+To change the pointer value dynamically, use the [`setPointerValue`](../api/linear-gauge/#setpointervalue) method in the Linear Gauge component. The following are the arguments for this method.
 
 |   Argument name      |   Description                            |
 |----------------------| -----------------------------------------|

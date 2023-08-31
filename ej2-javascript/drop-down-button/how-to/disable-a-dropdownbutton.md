@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Disable a dropdownbutton in ##Platform_Name## Drop down button control
 
-DropdownButton component can be enabled/disabled by giving [`disabled`](../../api/drop-down-button#disabled) property. It can be disabled by setting disabled property as `true`.
+DropdownButton component can be enabled/disabled by giving [`disabled`](../../api/drop-down-button/#disabled) property. It can be disabled by setting disabled property as `true`.
 
 {% if page.publishingplatform == "typescript" %}
 

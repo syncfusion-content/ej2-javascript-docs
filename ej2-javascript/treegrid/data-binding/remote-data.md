@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Remote data in ##Platform_Name## Treegrid control
 
-To bind remote data to TreeGrid component, assign service data as an instance of `DataManager` to the [`dataSource`](../../api/treegrid#datasource) property. To interact with remote data source,  provide the endpoint `url` and define the [`hasChildMapping`](../../api/treegrid#hasChildMapping) property of treegrid.
+To bind remote data to TreeGrid component, assign service data as an instance of `DataManager` to the [`dataSource`](../../api/treegrid/#datasource) property. To interact with remote data source,  provide the endpoint `url` and define the [`hasChildMapping`](../../api/treegrid/#hasChildMapping) property of treegrid.
 
 The [`hasChildMapping`](../../api/treegrid/#haschildmapping) property maps the field name in data source, that denotes whether current record holds any child records. This is useful internally to show expand icon while binding child data on demand.
 
@@ -239,7 +239,7 @@ You can create your own adaptor by extending the built-in adaptors. The followin
 
 ## Sending additional parameters to the server
 
-To add a custom parameter to the data request, use the `addParams` method of `Query` class. Assign the `Query` object with additional parameters to the treegrid [`query`](../../api/treegrid#query) property.
+To add a custom parameter to the data request, use the `addParams` method of `Query` class. Assign the `Query` object with additional parameters to the treegrid [`query`](../../api/treegrid/#query) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -271,9 +271,9 @@ To add a custom parameter to the data request, use the `addParams` method of `Qu
 ## Handling HTTP error
 
 During server interaction from the treegrid, some server-side exceptions may occur, and you can acquire those error messages or exception details
-in client-side using the [`actionFailure`](../../api/treegrid#actionfailure) event.
+in client-side using the [`actionFailure`](../../api/treegrid/#actionfailure) event.
 
-The argument passed to the [`actionFailure`](../../api/treegrid#actionfailure) event contains the error details returned from the server.
+The argument passed to the [`actionFailure`](../../api/treegrid/#actionfailure) event contains the error details returned from the server.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -302,7 +302,7 @@ The argument passed to the [`actionFailure`](../../api/treegrid#actionfailure) e
 {% previewsample "page.domainurl/code-snippet/treegrid/data-binding-cs8" %}
 {% endif %}
 
-> The [`actionFailure`](../../api/treegrid#actionfailure) event will be triggered not only for the server errors, but
+> The [`actionFailure`](../../api/treegrid/#actionfailure) event will be triggered not only for the server errors, but
 also when there is an exception while processing the treegrid actions.
 
 ## Load on demand with virtualization

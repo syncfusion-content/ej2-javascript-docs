@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Data binding in ##Platform_Name## Treegrid control
 
-The TreeGrid uses `DataManager`, which supports both RESTful JSON data services binding and local JavaScript object array binding. The [`dataSource`](../../api/treegrid#dataSource) property can be assigned either with the instance of `DataManager` or JavaScript object array collection.
+The TreeGrid uses `DataManager`, which supports both RESTful JSON data services binding and local JavaScript object array binding. The [`dataSource`](../../api/treegrid/#dataSource) property can be assigned either with the instance of `DataManager` or JavaScript object array collection.
 It supports two kinds of data binding method:
 
 * Local data
@@ -19,7 +19,7 @@ It supports two kinds of data binding method:
 
 ## Binding with ajax
 
-You can use TreeGrid [`dataSource`](../../api/treegrid#datasource) property to bind the data source to TreeGrid from external Fetch request. In the below code we have fetched the data source from the server with the help of Fetch request and provided that to [`dataSource`](../../api/treegrid#datasource) property by using `onSuccess` event of the Fetch.
+You can use TreeGrid [`dataSource`](../../api/treegrid/#datasource) property to bind the data source to TreeGrid from external Fetch request. In the below code we have fetched the data source from the server with the help of Ajax request and provided that to [`dataSource`](../../api/treegrid/#datasource) property by using `onSuccess` event of the Fetch.
 
 {% if page.publishingplatform == "typescript" %}
 

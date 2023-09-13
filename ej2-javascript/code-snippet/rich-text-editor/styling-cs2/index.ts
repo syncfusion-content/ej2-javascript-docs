@@ -15,6 +15,7 @@ let defaultRTE: RichTextEditor = new RichTextEditor({
         items: [ 'FontName', 'FontSize']
     },
     fontSize: {
+        default: '10 pt',
         width: '40px',
         items: [{ text: '8 pt', value: '8pt' },
         { text: '10 pt', value: '10pt' },
@@ -23,6 +24,7 @@ let defaultRTE: RichTextEditor = new RichTextEditor({
         { text: '42 pt', value: '42pt' }]
     },
     fontFamily: {
+        default: 'Segoe UI',
         width: '60px',
         items: [
         { text: 'Segoe UI', value: 'Segoe UI' },

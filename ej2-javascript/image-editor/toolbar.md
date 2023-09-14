@@ -37,7 +37,7 @@ Here is an example of adding custom toolbar items to rotate and flip transformat
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/toolbar-cs1/index.ts %}
 {% endhighlight %}
@@ -183,7 +183,7 @@ Here is an example of using [`toolbarTemplate`](https://ej2.syncfusion.com/javas
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/toolbar-template-cs1/index.ts %}
 {% endhighlight %}
@@ -216,7 +216,7 @@ In the following example, the contextual toolbar for rectangle will be rendered 
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/toolbar-template-cs2/index.ts %}
 {% endhighlight %}
@@ -249,7 +249,7 @@ Here is an example of adding the custom toolbar item to the contextual toolbar.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/toolbar-template-cs6/index.ts %}
 {% endhighlight %}

@@ -21,7 +21,7 @@ The [`open`](https://ej2.syncfusion.com/javascript/documentation/api/image-edito
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/getting-started-cs2/index.ts %}
 {% endhighlight %}
@@ -60,7 +60,7 @@ In the following example, the [`export`](https://ej2.syncfusion.com/javascript/d
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/custom-selection-cs1/index.ts %}
 {% endhighlight %}
@@ -115,7 +115,7 @@ In the following example, the [`created`](https://ej2.syncfusion.com/javascript/
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/getting-started-cs2/index.ts %}
 {% endhighlight %}

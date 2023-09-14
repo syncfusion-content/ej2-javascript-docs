@@ -33,7 +33,7 @@ Here is an example of square selection using the [`select`](https://ej2.syncfusi
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/custom-selection-cs3/index.ts %}
 {% endhighlight %}
@@ -73,7 +73,7 @@ In the following example, the [`select`](https://ej2.syncfusion.com/javascript/d
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/custom-selection-cs5/index.ts %}
 {% endhighlight %}
@@ -122,7 +122,7 @@ Here is an example of circle cropping using the [`select`](https://ej2.syncfusio
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/custom-selection-cs6/index.ts %}
 {% endhighlight %}

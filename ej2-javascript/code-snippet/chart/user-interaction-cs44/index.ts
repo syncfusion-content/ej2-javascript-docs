@@ -7,6 +7,7 @@ Chart.Inject(AreaSeries, DateTime, Legend, Zoom);
 let chart: Chart = new Chart({
         primaryXAxis: {
             valueType: 'DateTime',
+            enableAutoIntervalOnZooming: true
         },
         series: [
             {
@@ -23,7 +24,6 @@ let chart: Chart = new Chart({
         {
             enableSelectionZooming: true,
         },
-        enableAutoIntervalOnZooming: true,
         title: 'Sales History of Product X',
         legendSettings: { visible: false },
 }, '#element');

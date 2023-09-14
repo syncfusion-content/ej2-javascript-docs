@@ -43,11 +43,11 @@ By utilizing the [`drawText`](https://ej2.syncfusion.com/javascript/documentatio
 
 Here is an example of adding a text in a button click using [`drawText`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawtext) method. 
 
-In the following example, you can using the drawText method in the button click event.
+In the following example, you can using the [`drawText`](../../api/image-editor/#drawtext) method in the button click event.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/annotation-cs1/index.ts %}
 {% endhighlight %}
@@ -76,7 +76,9 @@ In the following example, you can using the drawText method in the button click 
 
 The [`drawText`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawtext) method in the Image Editor control is commonly used to insert text annotations into an image. If the provided text parameter contains a newline character (\n), the text will be automatically split into multiple lines, with each line appearing on a separate line in the annotation.
 
-In the following example, you can using the drawText method in the button click event.
+In the following example, you can using the [`drawText`](../../api/image-editor/#drawtext) method in the button click event.
+
+{% if page.publishingplatform == "typescript" %}
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -185,7 +187,7 @@ Here is an example of using the [`freeHandDraw`](https://ej2.syncfusion.com/java
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/annotation-cs2/index.ts %}
 {% endhighlight %}
@@ -255,7 +257,7 @@ In the following example, the [`deleteShape`](https://ej2.syncfusion.com/javascr
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/annotation-cs11/index.ts %}
 {% endhighlight %}
@@ -372,7 +374,7 @@ Here is an example of inserting rectangle, ellipse, arrow, path, and line in a b
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/annotation-cs3/index.ts %}
 {% endhighlight %}
@@ -409,7 +411,7 @@ Here is an example of deleting rectangle, ellipse, arrow, path, and line in a bu
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/annotation-cs5/index.ts %}
 {% endhighlight %}

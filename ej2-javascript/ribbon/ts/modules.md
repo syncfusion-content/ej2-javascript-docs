@@ -20,8 +20,10 @@ The following modules are available in Ribbon. If the module injection type is *
 | `RibbonDropDown` | To use the built-in dropdown button as a ribbon item.| default |
 | `RibbonSplitButton` | To use the built-in split button as a ribbon item.| default |
 | `RibbonComboBox` | To use the built-in combobox as a ribbon item. | default |
+| `RibbonGroupButton` | To use the built-in groupbutton as a ribbon item. | default |
 | `RibbonColorPicker` | Inject this module to use the built-in colorpicker as a ribbon item.| selective |
 | `RibbonFileMenu` | Inject this module to use the file menu feature.| selective |
+| `RibbonBackstage` | Inject this module to use the backstage view feature.| selective |
 
 These selective modules should be injected into the Ribbon using the `Ribbon.Inject` method.
 

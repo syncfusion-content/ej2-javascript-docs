@@ -27,6 +27,7 @@ The following table explains the built-in items and their actions.
 | SplitButton | Renders splitbutton as ribbon item.|
 | ComboBox | Renders combobox as ribbon item.|
 | ColorPicker | Renders color picker as ribbon item.|
+| GroupButton | Renders groupbutton as ribbon item.|
 
 ### Button items
 
@@ -274,6 +275,135 @@ You can use the [value](https://ej2.syncfusion.com/documentation/api/ribbon/ribb
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/ribbon/colorPickerValue" %}
+
+### Groupbutton items
+
+You can render the built-in groupbutton Ribbon item by setting the [type](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonItem/#type) property to `GroupButton`. You can also customize the groupbutton item using the [RibbonGroupButtonSettingsModel](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonGroupButtonSettingsModel/), which provides options such as `selection` and `items`.
+
+#### Items
+
+You can render the groupbutton items by using [items](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonGroupButtonSettingsModel/#items) property. You can also customize the groupbutton items through [RibbonGroupButtonItemModel](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonGroupButtonItemModel/), which provides options such as `content`, `iconCss`, `selected` and more.
+
+#### Item content
+
+You can use the [content](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonGroupButtonItemModel/#content) property to define the text content for the groupbutton.
+
+```typescript
+
+import { Ribbon, RibbonTabModel, RibbonItemType, RibbonItemSize } from "@syncfusion/ej2-ribbon";
+
+let tabs: RibbonTabModel[] = [{
+    header: "Home",
+    groups: [{
+        header: "Paragraph",
+        collections: [
+          {
+            items: [{
+                type: RibbonItemType.GroupButton,
+                allowedSizes: RibbonItemSize.Small,
+                groupButtonSettings: {
+                    items: [{
+                        iconCss: 'e-icons e-align-left',
+                        content: 'Align Left'
+                    },
+                    {
+                        iconCss: 'e-icons e-align-center',
+                        content: 'Align Center'
+                    },
+                    {
+                        iconCss: 'e-icons e-align-right',
+                        content: 'Align Right'
+                    },
+                    {
+                        iconCss: 'e-icons e-justify',
+                        content: 'Justify'
+                    }]
+                }
+            }]
+        }]
+    }]
+}];
+
+let ribbon: Ribbon = new Ribbon({ tabs: tabs });
+ribbon.appendTo("#ribbon");
+
+
+```
+
+#### Icon only
+
+You can use the [iconCss](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonGroupButtonItemModel/#iconcss) property to customize the groupbutton icon. If the `iconCss` property is not defined, the groupbutton will not be rendered.
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/ribbon/groupButtonIcon/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/ribbon/groupButtonIcon/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/ribbon/groupButtonIcon" %}
+
+#### Selection
+
+You can use the [selected](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonGroupButtonItemModel/#selected) property to select the groupbutton item initally. When set to `true`, the button will be selected. By default the `selected` property is false.
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/ribbon/groupButtonSelected/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/ribbon/groupButtonSelected/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/ribbon/groupButtonSelected" %}
+
+#### Single selection
+
+You can set the [selection](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonGroupButtonSettingsModel/#selection) property value as `RibbonGroupButtonSelection.Single` to make one selection at a time. It automatically deselects the previous choice when a different item is clicked.
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/ribbon/singleSelection/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/ribbon/singleSelection/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/ribbon/singleSelection" %}
+
+#### Multiple selection
+
+You can set the [selection](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonGroupButtonSettingsModel/#selection) property value as `RibbonGroupButtonSelection.Multiple` to select more than one button at a time. Users can select a button one by one to select multiple buttons.
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/ribbon/multipleSelection/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/ribbon/multipleSelection/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/ribbon/multipleSelection" %}
+
+#### Groupbutton in simplified mode layout
+
+In simplified mode, the groupbutton will be rendered as a dropdownbutton. The dropdownbutton icon will be updated based on the button item selected. The initial button icon will be the set, if none of the buttons are selected.
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/ribbon/simplifiedModeGroupButton/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/ribbon/simplifiedModeGroupButton/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/ribbon/simplifiedModeGroupButton" %}
 
 ## Custom items
 

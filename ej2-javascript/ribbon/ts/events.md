@@ -1301,6 +1301,123 @@ let ribbon: Ribbon = new Ribbon({ tabs: tabs });
 ribbon.appendTo("#ribbon");
 ```
 
+## GroupButton item events
+
+### beforeClick
+
+The [beforeClick](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonGroupButtonItemModel/#beforeclick) event is triggered before selecting a button from the groupbutton items.
+
+```typescript
+import { Ribbon, RibbonTabModel, RibbonItemType, BeforeClickGroupButtonEventArgs } from "@syncfusion/ej2-ribbon";
+
+let tabs: RibbonTabModel[] = [{
+    header: "Home",
+    groups: [{
+        header: "Header & Footer",
+        collections: [
+          {
+            items: [{
+                type: RibbonItemType.GroupButton,
+                allowedSizes: RibbonItemSize.Small,
+                groupButtonSettings: {
+                    selection: RibbonGroupButtonSelection.Multiple,
+                    items: [{
+                        iconCss: 'e-icons e-bold',
+                        content: 'Bold',
+                        beforeClick:(args: BeforeClickGroupButtonEventArgs) => {
+                            // Your required action here
+                        }
+                    },
+                    {
+                        iconCss: 'e-icons e-italic',
+                        content: 'Italic',
+                        selected: true,
+                        beforeClick:(args: BeforeClickGroupButtonEventArgs) => {
+                            // Your required action here
+                        }                        
+                    },
+                    {
+                        iconCss: 'e-icons e-underline',
+                        content: 'Underline',
+                        beforeClick:(args: BeforeClickGroupButtonEventArgs) => {
+                            // Your required action here
+                        }
+                    },
+                    {
+                        iconCss: 'e-icons e-strikethrough',
+                        content: 'Strikethrough',
+                        beforeClick:(args: BeforeClickGroupButtonEventArgs) => {
+                            // Your required action here
+                        }
+                    }]
+                }
+            }]
+        }]
+    }]
+}];
+
+let ribbon: Ribbon = new Ribbon({ tabs: tabs });
+ribbon.appendTo("#ribbon");
+```
+
+### click
+
+The [click](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonGroupButtonItemModel/#click) event is triggered when selecting a button from the groupbutton items.
+
+```typescript
+import { Ribbon, RibbonTabModel, RibbonItemType, ClickGroupButtonEventArgs } from "@syncfusion/ej2-ribbon";
+
+let tabs: RibbonTabModel[] = [{
+    header: "Home",
+    groups: [{
+        header: "Header & Footer",
+        collections: [
+          {
+            items: [{
+                type: RibbonItemType.GroupButton,
+                allowedSizes: RibbonItemSize.Small,
+                groupButtonSettings: {
+                    selection: RibbonGroupButtonSelection.Single,
+                    items: [{
+                        iconCss: 'e-icons e-align-left',
+                        content: 'Align Left',
+                        click:(args: ClickGroupButtonEventArgs) => {
+                            // Your required action here
+                        }
+                    },
+                    {
+                        iconCss: 'e-icons e-align-center',
+                        content: 'Align Center',
+                        selected: true,
+                        click:(args: ClickGroupButtonEventArgs) => {
+                            // Your required action here
+                        }                        
+                    },
+                    {
+                        iconCss: 'e-icons e-align-right',
+                        content: 'Align Right',
+                        click:(args: ClickGroupButtonEventArgs) => {
+                            // Your required action here
+                        }
+                    },
+                    {
+                        iconCss: 'e-icons e-justify',
+                        content: 'Justify',
+                        click:(args: ClickGroupButtonEventArgs) => {
+                            // Your required action here
+                        }
+                    }]
+                }
+            }]
+        }]
+    }]
+}];
+
+let ribbon: Ribbon = new Ribbon({ tabs: tabs });
+ribbon.appendTo("#ribbon");
+```
+
+
 ## FileMenu events
 
 ### beforeClose
@@ -1581,6 +1698,56 @@ let ribbon: Ribbon = new Ribbon({
         // Your required action here
       }
   }  
+});
+ribbon.appendTo("#ribbon");
+```
+
+## Backstage menu events
+
+### backStageItemClick
+
+The `backStageItemClick` event is triggered when backstage item is clicked.
+
+```typescript
+import { Ribbon, RibbonTabModel, RibbonItemType, RibbonBackstage, FileMenuBeforeOpenCloseEventArgs } from "@syncfusion/ej2-ribbon";
+
+Ribbon.Inject(RibbonBackstage);
+
+let tabs: RibbonTabModel[] = [{
+    header: "Home",
+    groups: [{
+        header: "Clipboard",
+        collections: [
+          {
+            items: [{
+                type: RibbonItemType.Button,
+                allowedSizes: RibbonItemSize.Large,
+                buttonSettings: {
+                  content: "Cut",
+                  iconCss: "e-icons e-cut"
+                }
+            }]
+        }]
+    }]
+}];
+
+let ribbon: Ribbon = new Ribbon({
+  tabs: tabs,
+  backStageMenu: {
+      items: [
+        { 
+            id: 'home', 
+            text: 'Home', 
+            iconCss: 'e-icons e-home', 
+            content: '#homeContent',
+            backStageItemClick: (args: BackstageItemClickArgs) => {
+                // Your required action here
+            } 
+        }
+      ],
+      visible: true,
+      backButton: { text: 'Close' }
+    }
 });
 ribbon.appendTo("#ribbon");
 ```

@@ -111,7 +111,7 @@ The [`deleteShape`](https://ej2.syncfusion.com/javascript/documentation/api/imag
 
 The [`shapeId`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapeid) is a unique identifier assigned to each text annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired text element. By specifying the [`shapeId`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapeid) associated with the text annotation you want to remove, you can effectively delete it from the image editor.
 
-To retrieve the inserted text annotations, you can utilize the [`getShapeSetting`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getshapesetting) method, which provides a collection of annotations represented by [`ShapeSettings`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/shapeSettings/). This method allows you to access and work with the annotations that have been inserted into the image.
+To retrieve the inserted text annotations, you can utilize the [`getShapeSetting`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getshapesetting) method, which provides a collection of annotations represented by [`ShapeSettings`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/shapeSettings). This method allows you to access and work with the annotations that have been inserted into the image.
 
 In the following example, the [`deleteShape`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#deleteshape) method is used in the button click event.
 
@@ -249,7 +249,7 @@ The [`deleteShape`](https://ej2.syncfusion.com/javascript/documentation/api/imag
 
 The [`shapeId`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapeid) is a unique identifier assigned to each freehand annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired annotation. By specifying the [`shapeId`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapeid) associated with the freehand annotation you want to remove, you can effectively delete it from the image editor.
 
-To retrieve the inserted freehand annotations, you can utilize the [`getShapeSetting`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getshapesetting) method, which provides a collection of annotations represented by [`ShapeSettings`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/shapeSettings/). This method allows you to access and work with the annotations that have been inserted into the image.
+To retrieve the inserted freehand annotations, you can utilize the [`getShapeSetting`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getshapesetting) method, which provides a collection of annotations represented by [`ShapeSettings`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/shapeSettings). This method allows you to access and work with the annotations that have been inserted into the image.
 
 In the following example, the [`deleteShape`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#deleteshape) method is used in the button click event.
 
@@ -403,7 +403,7 @@ The [`deleteShape`](https://ej2.syncfusion.com/javascript/documentation/api/imag
 
 The [`shapeId`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapeid) is a unique identifier assigned to each shape annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired annotation. By specifying the [`shapeId`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapeid) associated with the shape annotation you want to remove, you can effectively delete it from the image editor.
 
-To retrieve the inserted shape annotations, you can utilize the [`getShapeSetting`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getshapesetting) method, which provides a collection of annotations represented by [`ShapeSettings`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/shapeSettings/). This method allows you to access and work with the annotations that have been inserted into the image.
+To retrieve the inserted shape annotations, you can utilize the [`getShapeSetting`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getshapesetting) method, which provides a collection of annotations represented by [`ShapeSettings`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/shapeSettings). This method allows you to access and work with the annotations that have been inserted into the image.
 
 Here is an example of deleting rectangle, ellipse, arrow, path, and line in a button click event.
 

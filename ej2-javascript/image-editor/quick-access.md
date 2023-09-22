@@ -20,8 +20,6 @@ Here is an example of adding the custom toolbar item to the quick access toolbar
 
 {% if page.publishingplatform == "typescript" %}
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/quick-access-cs1/index.ts %}

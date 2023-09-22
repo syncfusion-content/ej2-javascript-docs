@@ -80,8 +80,6 @@ In the following example, you can using the [`drawText`](../../api/image-editor/
 
 {% if page.publishingplatform == "typescript" %}
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/annotation-cs8/index.ts %}

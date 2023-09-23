@@ -214,6 +214,37 @@ The text style of the axis labels can be customized using the following options 
 {% previewsample "page.domainurl/code-snippet/heatmap/axis-cs13" %}
 {% endif %}
 
+### Providing line breaks
+
+Axis labels with line breaks improve the readability of the HeatMap by splitting the text on an axis into multiple lines. The **"\<br>"** character is used to add line breaks to the axis labels.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/heatmap/axis-cs14/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/heatmap/axis-cs14/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/heatmap/axis-cs14" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/heatmap/axis-cs14/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/heatmap/axis-cs14/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/heatmap/axis-cs14" %}
+{% endif %}
+
 ### Customizing labels when intersecting with other labels
 
 When the axis labels intersect, [labelIntersectAction](../api/heatmap/axisModel/#labelintersectaction) property is used to handle the intersection. The `labelIntersectAction` property can take the following values.
@@ -458,3 +489,4 @@ The multilevel labels can be customized by using the following properties.
 
 {% previewsample "page.domainurl/code-snippet/heatmap/axis-cs10" %}
 {% endif %}
+

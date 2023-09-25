@@ -16,7 +16,7 @@ To render a [column series](https://www.syncfusion.com/javascript-ui-controls/js
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs89/index.ts %}
 {% endhighlight %}
@@ -47,7 +47,7 @@ The [`columnSpacing`](../../api/chart/seriesModel/#columnspacing) and [`columnWi
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs90/index.ts %}
 {% endhighlight %}
@@ -78,7 +78,7 @@ You can use the [`groupName`](../../api/chart/seriesModel/#groupname) property t
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs91/index.ts %}
 {% endhighlight %}
@@ -103,6 +103,37 @@ You can use the [`groupName`](../../api/chart/seriesModel/#groupname) property t
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs91" %}
 {% endif %}
 
+## Cylindrical column chart
+
+To render a cylindrical column chart, set the `columnFacet` property to `Cylinder` in the chart series.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs174/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs174/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs174" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs174/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs174/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs174" %}
+{% endif %}
+
 ## Series customization
 
 The following properties can be used to customize the `column` series.
@@ -114,7 +145,7 @@ The following properties can be used to customize the `column` series.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs92/index.ts %}
 {% endhighlight %}
@@ -139,7 +170,7 @@ The following properties can be used to customize the `column` series.
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs92" %}
 {% endif %}
 
-## See Also
+## See also
 
 * [Data label](../data-labels/)
 * [Tooltip](../tool-tip/)

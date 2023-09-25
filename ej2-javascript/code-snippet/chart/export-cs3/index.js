@@ -1,4 +1,4 @@
-var chart = new Chart({
+var chart = new ej.charts.Chart({
     //Initializing Primary X Axis
     primaryXAxis: {
         title: 'Manager',
@@ -25,7 +25,7 @@ var chart = new Chart({
     //Initializing Chart title
     title: 'Sales Comparision',
 }, '#element');
-var chart1 = new Chart({
+var chart1 = new ej.charts.Chart({
     //Initializing Primary X Axis
     primaryXAxis: {
         title: 'Manager',

@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 ---
 # Stacked column in ##Platform_Name## Chart control
 
-## 100% Stacked Column
+## 100% Stacked column
 
 To render a [100% stacked column](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/100-stacked-column-chart) series, use series [`type`](../../api/chart/seriesModel/#type-string) as `StackingColumn100` and inject `StackingColumnSeries` module using `Chart.Inject(StackingColumnSeries)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs149/index.ts %}
 {% endhighlight %}
@@ -41,6 +41,37 @@ To render a [100% stacked column](https://www.syncfusion.com/javascript-ui-contr
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs149" %}
 {% endif %}
 
+## 100% Cylindrical stacked column chart
+
+To render a 100% cylindrical stacked column chart, set the `columnFacet` property to `Cylinder` in the chart series.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs178/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs178/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs178" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs178/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs178/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs178" %}
+{% endif %}
+
 ## Series customization
 
 The following properties can be used to customize the `column` series.
@@ -52,7 +83,7 @@ The following properties can be used to customize the `column` series.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs150/index.ts %}
 {% endhighlight %}
@@ -77,7 +108,7 @@ The following properties can be used to customize the `column` series.
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs150" %}
 {% endif %}
 
-## See Also
+## See also
 
 * [Data label](../data-labels/)
 * [Tooltip](../tool-tip/)

@@ -779,7 +779,7 @@ Not Applicable
 </br>
 <code>
 let range: RangeNavigator = new RangeNavigator({
-    series: [{{border:{ color: 'pink', width: 2}}}]
+    series: [{border:{ color: 'pink', width: 2}}]
 });
 range.appendTo('#element');
 </code></td>

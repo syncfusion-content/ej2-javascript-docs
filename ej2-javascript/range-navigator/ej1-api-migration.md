@@ -778,10 +778,12 @@ Not Applicable
 </br>
 </br>
 <code>
+{% raw %}
 let range: RangeNavigator = new RangeNavigator({
     series: [{border:{ color: 'pink', width: 2}}]
 });
 range.appendTo('#element');
+{% endraw %}
 </code></td>
 </tr>
 

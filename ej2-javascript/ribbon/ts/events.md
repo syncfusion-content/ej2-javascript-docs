@@ -1706,7 +1706,7 @@ ribbon.appendTo("#ribbon");
 
 ### backStageItemClick
 
-The `backStageItemClick` event is triggered when backstage item is clicked.
+The [backStageItemClick](../api/ribbon/backstageItem/#backstageitemclick) event is triggered when backstage item is clicked.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType, RibbonBackstage, FileMenuBeforeOpenCloseEventArgs } from "@syncfusion/ej2-ribbon";

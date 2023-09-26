@@ -1558,7 +1558,7 @@ ribbon.appendTo("#ribbon");
 
 ### backStageItemClick
 
-The `backStageItemClick` event is triggered when backstage item is selected.
+The [backStageItemClick](../api/ribbon/backstageItem/#backstageitemclick) event is triggered when backstage item is selected.
 
 ```js
 var tabs = [{

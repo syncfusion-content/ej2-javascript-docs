@@ -10,7 +10,8 @@ var chart = new ej.charts.Chart({
         majorGridLines: { width: 0 },
         edgeLabelPlacement: ej.base.Browser.isDevice ? 'None' : 'Shift',
         labelRotation: ej.base.Browser.isDevice ? -45 : 0,
-        interval: ej.base.Browser.isDevice ? 2 : 1
+        interval: ej.base.Browser.isDevice ? 2 : 1,
+        crosshairTooltip: { enable: true }
     },
 
     primaryYAxis: {
@@ -59,7 +60,8 @@ var chart1 = new ej.charts.Chart({
         majorGridLines: { width: 0 },
         edgeLabelPlacement: ej.base.Browser.isDevice ? 'None' : 'Shift',
         labelRotation: ej.base.Browser.isDevice ? -45 : 0,
-        interval: ej.base.Browser.isDevice ? 2 : 1
+        interval: ej.base.Browser.isDevice ? 2 : 1,
+        crosshairTooltip: { enable: true }
     },
     primaryYAxis: {
         labelFormat: 'n1',

@@ -1,6 +1,6 @@
-import { Chart, StackingBarSeries, Category } from '@syncfusion/ej2-charts';
+import { Chart, StackingColumnSeries, Category } from '@syncfusion/ej2-charts';
 import { cylindricalData } from './datasource.ts';
-Chart.Inject(StackingBarSeries, Category);
+Chart.Inject(StackingColumnSeries, Category);
 
 let chart: Chart = new Chart({
     primaryXAxis: {

@@ -76,7 +76,7 @@ var chart1 = new ej.charts.Chart({
     chartArea: { border: { width: 0 } },
     series: [
         {
-            type: 'Spline', dataSource: synchronizedData, xName: 'USD', width: 2, yName: 'INR', opacity: 0.6, border: { width: 2 }
+            type: 'Spline', dataSource: synchronizedData, xName: 'USD', width: 2, yName: 'INR', border: { width: 2 }
         }
     ],
     zoomSettings: {

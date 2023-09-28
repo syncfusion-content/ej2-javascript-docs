@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Waterfall in ##Platform_Name## Chart control
+# Waterfall Chart in ##Platform_Name## control
 
 ## Waterfall Chart
 

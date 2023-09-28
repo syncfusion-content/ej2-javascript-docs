@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Stacked step area in ##Platform_Name## Chart control
+# Stacked step area Chart in ##Platform_Name## control
 
 ## Stacked Area
 

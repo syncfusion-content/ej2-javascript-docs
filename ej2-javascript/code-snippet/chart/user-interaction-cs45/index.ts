@@ -1,5 +1,5 @@
-import { Chart, AreaSeries, LineSeries, DateTime, DataLabel, Tooltip, Legend, IMouseEventArgs, ITooltipRenderEventArgs, ILegendClickEventArgs } from '@syncfusion/ej2-charts';
-Chart.Inject(AreaSeries, LineSeries, DataLabel, DateTime, Tooltip, Legend);
+import { Chart, AreaSeries, LineSeries, DateTime, Tooltip, IMouseEventArgs, ITooltipRenderEventArgs, ILegendClickEventArgs } from '@syncfusion/ej2-charts';
+Chart.Inject(AreaSeries, LineSeries, DateTime, Tooltip);
 import { Browser } from '@syncfusion/ej2-base';
 import { synchronizedData } from './datasource.ts';
 

@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Scatter in ##Platform_Name## Chart control
+# Scatter Chart in ##Platform_Name## control
 
 ## Scatter Charts
 

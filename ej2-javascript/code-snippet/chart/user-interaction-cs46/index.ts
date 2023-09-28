@@ -1,8 +1,7 @@
-import { Chart, AreaSeries, SplineSeries, DateTime, DataLabel, Crosshair, Legend, IMouseEventArgs, ITooltipRenderEventArgs, ILegendClickEventArgs } from '@syncfusion/ej2-charts';
-Chart.Inject(AreaSeries, SplineSeries, DataLabel, DateTime, Legend, Crosshair);
+import { Chart, AreaSeries, SplineSeries, DateTime, Crosshair, IMouseEventArgs } from '@syncfusion/ej2-charts';
+Chart.Inject(AreaSeries, SplineSeries, DateTime, Crosshair);
 import { Browser } from '@syncfusion/ej2-base';
 import { synchronizedData } from './datasource.ts';
-import { Axis } from '@syncfusion/ej2/charts';
 
 let charts: Chart[] = [];
 
@@ -16,7 +15,8 @@ let chart: Chart = new Chart({
         majorGridLines: { width: 0 },
         edgeLabelPlacement: Browser.isDevice ? 'None' : 'Shift',
         labelRotation: Browser.isDevice ? -45 : 0,
-        interval: Browser.isDevice ? 2 : 1
+        interval: Browser.isDevice ? 2 : 1,
+        crosshairTooltip: { enable: true },
     },
 
     primaryYAxis: {
@@ -65,7 +65,8 @@ let chart1: Chart = new Chart({
         majorGridLines: { width: 0 },
         edgeLabelPlacement: Browser.isDevice ? 'None' : 'Shift',
         labelRotation: Browser.isDevice ? -45 : 0,
-        interval: Browser.isDevice ? 2 : 1
+        interval: Browser.isDevice ? 2 : 1,
+        crosshairTooltip: { enable: true }
     },
     primaryYAxis: {
         labelFormat: 'n1',

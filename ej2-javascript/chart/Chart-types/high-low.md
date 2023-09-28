@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# High low in ##Platform_Name## Chart control
+# High low Chart in ##Platform_Name## control
 
 ## Hilo
 

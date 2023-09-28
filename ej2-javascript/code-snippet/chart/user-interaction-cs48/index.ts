@@ -1,5 +1,5 @@
-import { Chart, SplineSeries, LineSeries, DateTime, DataLabel, Highlight, Zoom, ZoomSettings, IZoomCompleteEventArgs, Legend, Selection, ISelectionCompleteEventArgs, IMouseEventArgs, ITooltipRenderEventArgs, ILegendClickEventArgs } from '@syncfusion/ej2-charts';
-Chart.Inject(SplineSeries, LineSeries, DataLabel, DateTime, Zoom, Highlight, Legend, Selection);
+import { Chart, SplineSeries, LineSeries, DateTime, Highlight, Zoom, ZoomSettings, IZoomCompleteEventArgs, Selection, ISelectionCompleteEventArgs, IMouseEventArgs, ITooltipRenderEventArgs, ILegendClickEventArgs } from '@syncfusion/ej2-charts';
+Chart.Inject(SplineSeries, LineSeries, DateTime, Zoom, Highlight, Selection);
 import { Browser } from '@syncfusion/ej2-base';
 import { synchronizedData } from './datasource.ts';
 import { Axis } from '@syncfusion/ej2/charts';
@@ -82,7 +82,7 @@ let chart1: Chart = new Chart({
     chartArea: { border: { width: 0 } },
     series: [
         {
-            type: 'Spline', dataSource: synchronizedData, xName: 'USD', width: 2, yName: 'INR', opacity: 0.6, border: { width: 2 }
+            type: 'Spline', dataSource: synchronizedData, xName: 'USD', width: 2, yName: 'INR', border: { width: 2 }
         }
     ],
     zoomSettings: {

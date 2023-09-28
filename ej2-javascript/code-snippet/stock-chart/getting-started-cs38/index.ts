@@ -1,7 +1,6 @@
 
 
 import { StockChart } from '@syncfusion/ej2-charts';
-import { series2 } from './datasource.ts';
 import { DateTimeCategory, DateTime, AreaSeries, CandleSeries, HiloOpenCloseSeries, HiloSeries, LineSeries, SplineSeries } from '@syncfusion/ej2-charts';
 import { AccumulationDistributionIndicator, AtrIndicator, BollingerBands, EmaIndicator, MomentumIndicator } from '@syncfusion/ej2-charts';
 import { MacdIndicator, RsiIndicator, Trendlines, SmaIndicator, StochasticIndicator, Export } from '@syncfusion/ej2-charts';
@@ -12,7 +11,11 @@ StockChart.Inject(AccumulationDistributionIndicator, AtrIndicator, BollingerBand
 StockChart.Inject(MacdIndicator, RsiIndicator, SmaIndicator, StochasticIndicator);
 StockChart.Inject(Trendlines, TmaIndicator, RangeTooltip, Tooltip, Crosshair, Export);
 
-let datetimeCategoryData: Object[] = [
+interface DataPoint {
+  x: Date;
+}
+
+let datetimeCategoryData: DataPoint[] = [
   { x: new Date(2021, 1, 11) }, { x: new Date(2021, 1, 12) }, { x: new Date(2021, 1, 13) }, { x: new Date(2021, 1, 14) }, { x: new Date(2021, 1, 15) },
   { x: new Date(2021, 1, 19) }, { x: new Date(2021, 1, 20) }, { x: new Date(2021, 1, 21) }, { x: new Date(2021, 1, 22) }, { x: new Date(2021, 3, 1) },
   { x: new Date(2021, 3, 2) }, { x: new Date(2021, 4, 1) }, { x: new Date(2021, 4, 5) }, { x: new Date(2021, 4, 6) }, { x: new Date(2021, 4, 7) },
@@ -27,17 +30,22 @@ let datetimeCategoryData: Object[] = [
 
 let series2: Object[] = [];
 let point2: Object;
-for (var i = 1; i < 46; i++) {
+for (var i = 0; i < 46; i++) {
   point2 = {
-    x: datetimeCategoryData[i],
-    y: parseInt((Math.floor(Math.random() * (130 - 120 + 1)) + 120).toString(), 10),
-    High: parseInt((Math.floor(Math.random() * (92 - 88 + 1)) + 88).toString(), 10),
-    Low: parseInt((Math.floor(Math.random() * (86 - 76 + 1)) + 76).toString(), 10),
-    Open: parseInt((Math.floor(Math.random() * (85 - 75 + 1)) + 75).toString(), 10),
-    Close: parseInt((Math.floor(Math.random() * (90 - 85 + 1)) + 85).toString(), 10),
-    Volume: parseInt((Math.floor(Math.random() * (965935749 - 660187068 + 1)) + 660187068).toString(), 10)
+      x: datetimeCategoryData[i].x,
+      y: getRandomInRange(120, 130),
+      high: getRandomInRange(88, 92),
+      low: getRandomInRange(76, 86),
+      open: getRandomInRange(75, 85),
+      close: getRandomInRange(85, 90),
+      volume: getRandomInRange(660187068, 965935749)
   };
   series2.push(point2);
+}
+function getRandomInRange(min: number, max: number): number {
+  const randomDecimal = Math.random();
+  const randomValue = randomDecimal * (max - min) + min;
+  return randomValue;
 }
 
 let stockChart: StockChart = new StockChart({

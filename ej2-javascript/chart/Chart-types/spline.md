@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Spline in ##Platform_Name## Chart control
+# Spline Chart in ##Platform_Name## control
 
 ## Spline
 

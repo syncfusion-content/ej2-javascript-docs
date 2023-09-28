@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Stack column in ##Platform_Name## Chart control
+# Stack column Chart in ##Platform_Name## control
 
 ## Stacked column
 
@@ -75,7 +75,7 @@ Columns with same group name are stacked on top of each other.
 
 ## Cylindrical stacked column chart
 
-To render a cylindrical stacked column chart, set the `columnFacet` property to `Cylinder` in the chart series.
+To render a cylindrical stacked column chart, set the [`columnFacet`](../../api/chart/series/#columnfacet) property to `Cylinder` in the chart series.
 
 {% if page.publishingplatform == "typescript" %}
 

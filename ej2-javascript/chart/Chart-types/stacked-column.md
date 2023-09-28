@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Stacked column in ##Platform_Name## Chart control
+# Stacked column Chart in ##Platform_Name## control
 
 ## 100% Stacked column
 
@@ -43,7 +43,7 @@ To render a [100% stacked column](https://www.syncfusion.com/javascript-ui-contr
 
 ## 100% Cylindrical stacked column chart
 
-To render a 100% cylindrical stacked column chart, set the `columnFacet` property to `Cylinder` in the chart series.
+To render a 100% cylindrical stacked column chart, set the [`columnFacet`](../../api/chart/series/#columnfacet) property to `Cylinder` in the chart series.
 
 {% if page.publishingplatform == "typescript" %}
 

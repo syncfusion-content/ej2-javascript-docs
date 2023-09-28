@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Histogram in ##Platform_Name## Chart control
+# Histogram Chart in ##Platform_Name## control
 
 ## Histogram
 

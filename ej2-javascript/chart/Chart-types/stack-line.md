@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Stack line in ##Platform_Name## Chart control
+# Stack line Chart in ##Platform_Name## control
 
 ## Stacked Line
 

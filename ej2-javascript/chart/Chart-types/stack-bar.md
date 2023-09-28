@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Stack bar in ##Platform_Name## Chart control
+# Stack bar Chart in ##Platform_Name## control
 
 ## Stacked bar
 
@@ -74,7 +74,7 @@ You can use the [`stackingGroup`](../../api/chart/series/#stackinggroup-string) 
 
 ## Cylindrical stacked bar chart
 
-To render a cylindrical stacked bar chart, set the `columnFacet` property to `Cylinder` in the chart series.
+To render a cylindrical stacked bar chart, set the [`columnFacet`](../../api/chart/series/#columnfacet) property to `Cylinder` in the chart series.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Range step area in ##Platform_Name## Chart control
+# Range step area Chart in ##Platform_Name## control
 
 ## Range Step Area
 

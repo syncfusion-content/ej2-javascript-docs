@@ -1,5 +1,5 @@
-import { Chart, SplineAreaSeries, LineSeries, DateTime, DataLabel, Zoom, ZoomSettings, IZoomCompleteEventArgs, Legend, IMouseEventArgs, ITooltipRenderEventArgs, ILegendClickEventArgs } from '@syncfusion/ej2-charts';
-Chart.Inject(SplineAreaSeries, LineSeries, DataLabel, DateTime, Zoom, Legend);
+import { Chart, SplineAreaSeries, LineSeries, DateTime, Zoom, ZoomSettings, IZoomCompleteEventArgs, IMouseEventArgs, ITooltipRenderEventArgs, ILegendClickEventArgs } from '@syncfusion/ej2-charts';
+Chart.Inject(SplineAreaSeries, LineSeries, DateTime, Zoom);
 import { Browser } from '@syncfusion/ej2-base';
 import { synchronizedData } from './datasource.ts';
 import { Axis } from '@syncfusion/ej2/charts';

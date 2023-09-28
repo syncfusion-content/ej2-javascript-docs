@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Column in ##Platform_Name## Chart control
+# Column Chart in ##Platform_Name## control
 
 ## Column
 
@@ -105,7 +105,7 @@ You can use the [`groupName`](../../api/chart/seriesModel/#groupname) property t
 
 ## Cylindrical column chart
 
-To render a cylindrical column chart, set the `columnFacet` property to `Cylinder` in the chart series.
+To render a cylindrical column chart, set the [`columnFacet`](../../api/chart/series/#columnfacet) property to `Cylinder` in the chart series.
 
 {% if page.publishingplatform == "typescript" %}
 

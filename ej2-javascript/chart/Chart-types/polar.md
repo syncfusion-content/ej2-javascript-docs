@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Polar in ##Platform_Name## Chart control
+# Polar Chart in ##Platform_Name## control
 
 ## Polar Chart
 

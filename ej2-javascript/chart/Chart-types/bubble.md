@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Bubble in ##Platform_Name## Chart control
+# Bubble Chart in ##Platform_Name## control
 
 ## Bubble
 

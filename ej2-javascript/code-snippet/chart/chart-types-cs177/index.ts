@@ -1,9 +1,9 @@
 
 
 
-import { Chart, StackingBarSeries, Category, Tooltip } from '@syncfusion/ej2-charts';
+import { Chart, StackingBarSeries, Category } from '@syncfusion/ej2-charts';
 import { stackedData } from './datasource.ts';
-Chart.Inject(StackingBarSeries, Category, Tooltip);
+Chart.Inject(StackingBarSeries, Category);
 
 let chart: Chart = new Chart({
     series: [

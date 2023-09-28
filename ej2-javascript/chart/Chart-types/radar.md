@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Radar in ##Platform_Name## Chart control
+# Radar Chart in ##Platform_Name## control
 
 ## Radar Chart
 

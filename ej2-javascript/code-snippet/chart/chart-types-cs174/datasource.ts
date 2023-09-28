@@ -30,8 +30,8 @@ export let columnData: object[] = [{ country: "USA", gold: 50, silver: 25 }, { c
     { country: "Australia", gold: 60, silver: 50 }, { country: "France", gold: 50, silver: 45 }, { country: "Germany", gold: 40, silver: 45 },
     { country: "Italy", gold: 40, silver: 45 },{ country: "Sweden", gold: 30, silver: 25 }];
 
-export let cylindricalData: object[] = [{ country: "USA", gold: 50 }, { country: "Japan", gold: 70 }, { country: "Australia", gold: 60 }, { country: "France", gold: 50 },
-    { country: "Italy", gold: 40 }, { country: "Sweden", gold: 55 }];
+export let cylindricalData: object[] = [{ country: "USA", gold: 50, tooltipMappingName:'USA' }, { country: "Japan", gold: 70, tooltipMappingName:'Japan' }, { country: "Australia", gold: 60, tooltipMappingName:'Australia' },
+    { country: "France", gold: 50, tooltipMappingName:'France' }, { country: "Italy", gold: 40, tooltipMappingName:'Italy' }, { country: "Sweden", gold: 55, tooltipMappingName:'Sweden' }];
 
 export let hocData: object[] = [ { x: 'Jan', open: 120, high: 160, low: 100, close: 140 }, { x: 'Feb', open: 150, high: 190, low: 130, close: 170 },
     { x: 'Mar', open: 130, high: 170, low: 110, close: 150 },{ x: 'Apr', open: 160, high: 180, low: 120, close: 140 },

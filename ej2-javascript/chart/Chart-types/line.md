@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Line in ##Platform_Name## Chart control
+# Line Chart in ##Platform_Name## control
 
 ## Line
 

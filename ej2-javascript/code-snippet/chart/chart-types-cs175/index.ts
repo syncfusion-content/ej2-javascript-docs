@@ -4,18 +4,15 @@ Chart.Inject(BarSeries, Category);
 
 let chart: Chart = new Chart({
     primaryXAxis: {
-        minimum: 2006, maximum: 2011, interval: 1,
-        title: 'Year'
+        minimum: 2005, maximum: 2012, interval: 1
     },
     primaryYAxis: {
         minimum: 3, maximum: 12,
-        interval: 1, title: 'Percentage',
-        labelFormat: '{value}%'
+        interval: 1, title: 'Percentage'
     },
     series: [{
         dataSource: cylindricalData,
         xName: 'x', yName: 'y',
-        name: 'India',
         // Series type as bar series with cylinder shape
         type: 'Bar', columnFacet: 'Cylinder'
     }],

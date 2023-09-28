@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Stacked bar in ##Platform_Name## Chart control
+# Stacked bar Chart in ##Platform_Name## control
 
 ## 100% Stacked bar
 
@@ -43,7 +43,7 @@ To render a [100% stacked bar](https://www.syncfusion.com/javascript-ui-controls
 
 ## 100% Cylindrical stacked bar chart
 
-To render a 100% cylindrical stacked bar chart, set the `columnFacet` property to `Cylinder` in the chart series.
+To render a 100% cylindrical stacked bar chart, set the [`columnFacet`](../../api/chart/series/#columnfacet) property to `Cylinder` in the chart series.
 
 {% if page.publishingplatform == "typescript" %}
 

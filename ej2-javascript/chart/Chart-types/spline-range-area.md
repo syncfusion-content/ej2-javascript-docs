@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Spline range area in ##Platform_Name## Chart control
+# Spline range area Chart in ##Platform_Name## control
 
 ## Spline Range Area
 

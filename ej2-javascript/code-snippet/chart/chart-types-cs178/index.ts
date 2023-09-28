@@ -1,9 +1,9 @@
 
 
 
-import { Chart, StackingColumnSeries, Category, Tooltip } from '@syncfusion/ej2-charts';
+import { Chart, StackingColumnSeries, DateTime } from '@syncfusion/ej2-charts';
 import { cylindricalData } from './datasource.ts';
-Chart.Inject(StackingColumnSeries, Category, Tooltip);
+Chart.Inject(StackingColumnSeries, DateTime);
 
 let chart: Chart = new Chart({
     primaryXAxis: {

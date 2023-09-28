@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Vertical chart in ##Platform_Name## Chart control
+# Vertical Chart in ##Platform_Name## control
 
 ## Vertical chart
 

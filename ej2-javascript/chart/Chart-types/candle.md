@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Candle in ##Platform_Name## Chart control
+# Candle Chart in ##Platform_Name## control
 
 ## Candle
 

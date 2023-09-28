@@ -13,7 +13,7 @@ let chart: Chart = new Chart({
     },
     series: [{
         dataSource: cylindricalData,
-        xName: 'country', yName: 'gold',
+        xName: 'country', yName: 'gold', tooltipMappingName:'tooltipMappingName',
         // Series type as column series with cylinder shape
         type: 'Column', columnFacet: 'Cylinder'
     }],

@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Box whisker in ##Platform_Name## Chart control
+# Box whisker Chart in ##Platform_Name## control
 
 ## Box and whisker
 

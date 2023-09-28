@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Error bar in ##Platform_Name## Chart control
+# Error bar Chart in ##Platform_Name## control
 
 ## Error Bar
 

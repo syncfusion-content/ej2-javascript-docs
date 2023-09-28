@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Range column in ##Platform_Name## Chart control
+# Range column Chart in ##Platform_Name## control
 
 ## Range Column
 

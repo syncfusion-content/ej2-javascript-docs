@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# High low open close in ##Platform_Name## Chart control
+# High low open close Chart in ##Platform_Name## control
 
 ## High Low Open Close
 

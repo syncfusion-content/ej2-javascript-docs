@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Pare to in ##Platform_Name## Chart control
+# Pare to Chart in ##Platform_Name## control
 
 ## Pareto
 

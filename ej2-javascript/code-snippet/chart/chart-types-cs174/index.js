@@ -1,10 +1,10 @@
 var cylindricalData = [
-    { country: "USA", gold: 50 },
-    { country: "Japan", gold: 70 },
-    { country: "Australia", gold: 60 },
-    { country: "France", gold: 50 },
-    { country: "Italy", gold: 40 },
-    { country: "Sweden", gold: 55 }
+    { country: "USA", gold: 50, tooltipMappingName:'USA' }, 
+    { country: "Japan", gold: 70, tooltipMappingName:'Japan' }, 
+    { country: "Australia", gold: 60, tooltipMappingName:'Australia' },
+    { country: "France", gold: 50, tooltipMappingName:'France' }, 
+    { country: "Italy", gold: 40, tooltipMappingName:'Italy' }, 
+    { country: "Sweden", gold: 55, tooltipMappingName:'Sweden' }
 ];
 var chart = new ej.charts.Chart({
     primaryXAxis: {
@@ -17,7 +17,7 @@ var chart = new ej.charts.Chart({
     },
     series: [{
         dataSource: cylindricalData,
-        xName: 'country', yName: 'gold',
+        xName: 'country', yName: 'gold', tooltipMappingName:'tooltipMappingName',
         // Series type as column series with cylinder shape
         type: 'Column', columnFacet: 'Cylinder'
     }],

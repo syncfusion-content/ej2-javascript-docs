@@ -5,7 +5,7 @@ var cylindricalData = [
 ];
 var chart = new ej.charts.Chart({
     primaryXAxis: {
-        minimum: 2006, maximum: 2011, interval: 1
+        minimum: 2005, maximum: 2012, interval: 1
     },
     primaryYAxis: {
         minimum: 3, maximum: 12,
@@ -14,7 +14,6 @@ var chart = new ej.charts.Chart({
     series: [{
         dataSource: cylindricalData,
         xName: 'x', yName: 'y',
-        name: 'India',
         // Series type as bar series with cylinder shape
         type: 'Bar', columnFacet: 'Cylinder'
     }],

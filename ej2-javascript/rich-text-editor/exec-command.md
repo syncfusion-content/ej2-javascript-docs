@@ -28,6 +28,7 @@ The execCommand will perform the following commands.
 | fontColor | Apply the specified font color for the selected text. |`rteObj.executeCommand('fontColor', 'yellow');`|
 | fontName | Apply the specified font name for the selected text. |`rteObj.executeCommand('fontName', 'Arial');`|
 | fontSize | Apply the specified font size for the selected text. |`rteObj.executeCommand('fontSize', '10pt');`|
+| formatBlock | Apply the specified format styles for the selected text. |`rteObj.executeCommand('formatBlock', 'H1');`|
 | backColor | Apply the specified background color the selected text. | `rteObj.executeCommand('backColor', 'red');`|
 | justifyCenter | Align the content with center margin. | `rteObj.executeCommand('justifyCenter');`|
 | justifyFull | Align the content with justify margin. |`rteObj.executeCommand('justifyFull');`|
@@ -43,8 +44,9 @@ The execCommand will perform the following commands.
 | redo | Allows to redo the actions | `rteObj.executeCommand('redo');`|
 | removeFormat | remove all formatting styles (such as bold, italic, underline, color, superscript, subscript, and more) from currently selected text. |`rteObj.executeCommand('removeFormat');`|
 | insertText | Insert text to the current cursor position. | `rteObj.executeCommand('insertText', 'inserted a text');` |
-| insertImage | Insert an image to the current cursor position. | `rteObj.executeCommand('insertImage', { url: 'https://ej2.syncfusion.com/javascript/demos/src/rich-text-editor/images/RTEImage-Feather.png', cssClass: 'rte-img'});`
+| insertImage | Insert an image to the current cursor position. | `rteObj.executeCommand('insertImage', { url: 'https://ej2.syncfusion.com/javascript/demos/src/rich-text-editor/images/RTEImage-Feather.png', cssClass: 'rte-img'});` |
 | copyFormatPainter | Copy the format of selected text and apply it to another text. | `rteObj.executeCommand('copyFormatPainter', formatPainterSettings);`|
 | applyFormatPainter | Apply the copied format to the selected text. | `rteObj.executeCommand('applyFormatPainter');`|
 | escapeFormatPainter | Remove the previously copied format and disable the sticky mode | `rteObj.executeCommand('escapeFormatPainter');`|
+
 >Note: The ‘ExecuteCommand’ public method is not supported in Syncfusion Markdown Editor

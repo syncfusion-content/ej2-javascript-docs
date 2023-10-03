@@ -3,7 +3,8 @@ layout: post
 title: Display string value to pivot table values in ##Platform_Name## Pivotview control | Syncfusion
 description: Learn here all about how to display string value to pivot table values in Syncfusion ##Platform_Name## Pivotview control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Display string value to pivot table values 
+control: Display string value to pivot table values
+publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -12,9 +13,9 @@ domainurl: ##DomainURL##
 
 # Display string value to pivot table values in ##Platform_Name## Pivotview control
 
-End user can display string value to the pivot table's value cell by using the [`aggregateCellInfo`](https://ej2.syncfusion.com/documentation/api/pivotview/#aggregatecellinfo) event.
+End user can display string value to the pivot table's value cell by using the [aggregateCellInfo](https://ej2.syncfusion.com/documentation/api/pivotview/#aggregatecellinfo) event.
 
-In the following example, each cell value of the **Sold** field's actual value has been assigned from its combination data sets obtained from the [`args.cellSets`](https://helpej2.syncfusion.com/documentation/api/pivotview/aggregateEventArgs/#cellsets) in the [`aggregateCellInfo`](https://ej2.syncfusion.com/documentation/api/pivotview/#aggregatecellinfo) event.
+In the following example, each cell value of the **Sold** field's actual value has been assigned from its combination data sets obtained from the [args.cellSets](https://helpej2.syncfusion.com/documentation/api/pivotview/aggregateEventArgs/#cellsets) in the [aggregateCellInfo](https://ej2.syncfusion.com/documentation/api/pivotview/#aggregatecellinfo) event.
 
 {% if page.publishingplatform == "typescript" %}
 

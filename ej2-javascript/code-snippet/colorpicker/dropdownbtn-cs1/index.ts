@@ -25,12 +25,19 @@ let ddb: DropDownButton = new DropDownButton(
         },
         open: (args: OpenCloseMenuEventArgs): void => {
             args.element.parentElement.querySelector('.e-cancel').addEventListener('click', closePopup);
+            tooltip();
         }
     },
     '#dropdownbtn');
 
 function closePopup(): void {
     ddb.toggle();
+}
+
+function tooltip(): void {
+    let zindex = (document.getElementsByClassName('e-color-picker-tooltip')[0] as HTMLElement).style.zIndex;
+    let zindexIntValue = parseInt(zindex) + 2;
+    (document.getElementsByClassName('e-color-picker-tooltip')[0] as HTMLElement).style.zIndex = zindexIntValue.toString();
 }
 
 

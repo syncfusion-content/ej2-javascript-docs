@@ -272,7 +272,7 @@ As shown in the code example below, the **"Mountain Bikes"** row under **"France
           
 {% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs40" %}
 
-> This option is only available if [`enableVirtualization`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#enablevirtualization)is set to **true**. In addition, the `VirtualScroll` and `PDFExport` modules must be injected into the pivot table.
+> This option is only available if [enableVirtualization](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#enablevirtualization)is set to **true**. In addition, the `VirtualScroll` and `PDFExport` modules must be injected into the pivot table.
 
 ## Changing the pivot table style while exporting
 

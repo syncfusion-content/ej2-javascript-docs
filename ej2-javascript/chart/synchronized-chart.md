@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## Tooltip synchronization
 
-The tooltip can be synchronized across multiple charts using the `showTooltip` and `hideTooltip` methods. When we hover over a data point in one chart, we call the `showTooltip` method for the other charts to display related information in other connected charts simultaneously.
+The tooltip can be synchronized across multiple charts using the [`showTooltip`](../api/chart/#showtooltip) and [`hideTooltip`](../api/chart/#hidetooltip) methods. When we hover over a data point in one chart, we call the `showTooltip` method for the other charts to display related information in other connected charts simultaneously.
 
 In the `showTooltip` method, specify the following parameters programmatically to enable tooltip for a particular chart:
 
@@ -49,7 +49,7 @@ In the `showTooltip` method, specify the following parameters programmatically t
 
 ## Crosshair synchronization
 
-The crosshair can be synchronized across multiple charts using the `showCrosshair` and `hideCrosshair` methods. When we hover over one chart, we call the `showCrosshair` method for the other charts to align with data points in other connected charts, simplifying data comparison and analysis.
+The crosshair can be synchronized across multiple charts using the [`showCrosshair`](../api/chart/#showcrosshair) and [`hideCrosshair`](../api/chart/#hidecrosshair) methods. When we hover over one chart, we call the `showCrosshair` method for the other charts to align with data points in other connected charts, simplifying data comparison and analysis.
 
 In the `showCrosshair` method, specify the following parameters programmatically to enable crosshair for a particular chart:
 

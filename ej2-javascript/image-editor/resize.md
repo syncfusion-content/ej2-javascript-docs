@@ -50,6 +50,7 @@ Here is an example of resizing the image using the [`resize`](https://ej2.syncfu
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/image-editor/resize-cs1" %}
+{% endif %}
 
 ## Resizing event
 

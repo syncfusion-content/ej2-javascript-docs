@@ -60,5 +60,20 @@ function onSelect(args: SelectedEventArgs) {
     height = parseInt(height) + (length * 55) + 'px';
     document.getElementById('dropArea').style.height = height;
 }
-
+document.getElementById('dropArea')!.onclick = (e: any) => {
+    let target: HTMLElement = <HTMLElement>e.target;
+    if (target.classList.contains('e-file-delete-btn')) {
+      for (let i: number = 0; i < uploadObj.getFilesData().length; i++) {
+        if (
+          (target.closest('li') as HTMLLIElement).getAttribute(
+            'data-file-name'
+          ) === uploadObj.getFilesData()[i].name
+        ) {
+          uploadObj.remove(uploadObj.getFilesData()[i]);
+        }
+      }
+    } else if (target.classList.contains('e-file-remove-btn')) {
+      detach(target.closest('li') as HTMLLIElement);
+    }
+  };
 

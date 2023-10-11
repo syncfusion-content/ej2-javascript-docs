@@ -51,5 +51,7 @@ ribbon.appendTo("#ribbon");
 
 var ribbonEle = document.getElementById('ribbon');
 document.getElementById('ribbon_backstage').onclick = function () {
-  ribbonEle.querySelector('#ribbon_backstagepopup').style.display = 'block'
+  if(ribbonEle) {
+    ribbonEle.querySelector('#ribbon_backstagepopup').style.display = 'block'
+  }
 }

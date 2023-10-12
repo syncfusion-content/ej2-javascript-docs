@@ -9,4 +9,4 @@ let emojiPickerRTE: RichTextEditor = new RichTextEditor({
     },
 });
 
-emojiPickerRTE.appendTo('#emojipickerRTE');
+emojiPickerRTE.appendTo('#emojiPickerRTE');

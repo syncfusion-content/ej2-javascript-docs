@@ -11,19 +11,19 @@ var imageEditorObj = new ej.imageeditor.ImageEditor({
   imageEditorObj.appendTo('#imageeditor');
 
   document.getElementById('matClick').onclick = function() {
-    imageEditorObj.drawFrame(FrameType.Mat, 'red', 'blue', 20, 20, 20, 20, FrameLineStyle.Solid, 1);
+    imageEditorObj.drawFrame('Mat', 'red', 'blue', 20, 20, 20, 20, 'Solid', 1);
   }
   document.getElementById('bevelClick').onclick = function() {
-    imageEditorObj.drawFrame(FrameType.Bevel, 'red', 'blue', 20, 20, 20, 20, FrameLineStyle.Solid, 1);
+    imageEditorObj.drawFrame('Bevel', 'red', 'blue', 20, 20, 20, 20, 'Solid', 1);
   }
   document.getElementById('lineClick').onclick = function() {
-    imageEditorObj.drawFrame(FrameType.Line, 'red', 'blue', 20, 20, 20, 20, FrameLineStyle.Solid, 1);
+    imageEditorObj.drawFrame('Line', 'red', 'blue', 20, 20, 20, 20, 'Solid', 1);
   }
   document.getElementById('insetClick').onclick = function() {
-    imageEditorObj.drawFrame(FrameType.Inset, 'red', 'blue', 20, 20, 20, 20, FrameLineStyle.Solid, 1);
+    imageEditorObj.drawFrame('Inset', 'red', 'blue', 20, 20, 20, 20, 'Solid', 1);
   }
   document.getElementById('hookClick').onclick = function() {
-    imageEditorObj.drawFrame(FrameType.Hook, 'red', 'blue', 20, 20, 20, 20, FrameLineStyle.Solid, 1);
+    imageEditorObj.drawFrame('Hook', 'red', 'blue', 20, 20, 20, 20, 'Solid', 1);
   }
 
 

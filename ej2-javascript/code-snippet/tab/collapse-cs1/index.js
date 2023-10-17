@@ -42,7 +42,7 @@ tabObj.appendTo('#element');
 function tabCreated() {
     // After tab created first tab content and active line are hidden by adding custom class to make it collapse state
     actLine = document.querySelector('.e-indicator');
-    document.getElementById("e-content_0").classList.add('collapse');
+    document.getElementById('e-content-element_0').classList.add('collapse');
     actLine.classList.add('collapse');
 }
 function tabSelected(e) {
@@ -62,7 +62,7 @@ function tabSelected(e) {
 }
 function updateCollapseClass(index) {
     // Custom classes are added/removed from tab content and active line element, when the same tab item again clicked
-    var cntEle = document.getElementById("e-content_" + index);
+    var cntEle = document.getElementById('e-content-' + 'element_' + index);
     if (cntEle.classList.contains('collapse')) {
         cntEle.classList.remove('collapse');
         actLine.classList.remove('collapse');

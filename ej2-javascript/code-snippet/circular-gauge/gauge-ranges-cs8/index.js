@@ -55,37 +55,37 @@ var circulargauge = new ej.circulargauge.CircularGauge({
         }],
         pointers: [{
             type: 'Marker', value: 12, markerShape: 'Image',
-            imageUrl: 'templates/circular-gauge/images/football.png',
+            imageUrl: 'https://ej2.syncfusion.com/javascript/demos/src/circular-gauge/images/football.png',
             radius: '108%', markerWidth: 28, markerHeight: 28,
             animation: { duration: 1500 }
         }, {
             type: 'Marker', value: 11, markerShape: 'Image',
-            imageUrl: 'templates/circular-gauge/images/basketball.png',
+            imageUrl: 'https://ej2.syncfusion.com/javascript/demos/src/circular-gauge/images/basketball.png',
             radius: '78%', markerWidth: 28, markerHeight: 28,
             animation: { duration: 1200 }
         }, {
             type: 'Marker', value: 10, markerShape: 'Image',
-            imageUrl: 'templates/circular-gauge/images/golfball.png',
+            imageUrl: 'https://ej2.syncfusion.com/javascript/demos/src/circular-gauge/images/golfball.png',
             radius: '48%', markerWidth: 28, markerHeight: 28,
             animation: { duration: 900 }
         }, {
             type: 'Marker', value: 12, markerShape: 'Image',
-            imageUrl: 'templates/circular-gauge/images/athletics.png',
+            imageUrl: 'https://ej2.syncfusion.com/javascript/demos/src/circular-gauge/images/athletic.png',
             radius: '0%', markerWidth: 90, markerHeight: 90,
             animation: { duration: 0 }
         }, {
             type: 'Marker', value: 0.1, markerShape: 'Image',
-            imageUrl: 'templates/circular-gauge/images/girl1.png',
+            imageUrl: 'https://ej2.syncfusion.com/javascript/demos/src/circular-gauge/images/girl-1.png',
             radius: '108%', markerWidth: 28, markerHeight: 28,
             animation: { duration: 1500 }
         }, {
             type: 'Marker', value: 0.1, markerShape: 'Image',
-            imageUrl: 'templates/circular-gauge/images/man1.png',
+            imageUrl: 'https://ej2.syncfusion.com/javascript/demos/src/circular-gauge/images/man-1.png',
             radius: '78%', markerWidth: 28, markerHeight: 28,
             animation: { duration: 1500 }
          }, {
             type: 'Marker', value: 0.1, markerShape: 'Image',
-            imageUrl: 'templates/circular-gauge/images/man2.png',
+            imageUrl: 'https://ej2.syncfusion.com/javascript/demos/src/circular-gauge/images/man-2.png',
             radius: '48%', markerWidth: 28, markerHeight: 28,
             animation: { duration: 1500 }
         }]

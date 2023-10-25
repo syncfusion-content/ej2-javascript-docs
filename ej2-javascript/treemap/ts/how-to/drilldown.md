@@ -75,11 +75,11 @@ Customize the population for drilled countries or states in the header element w
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/treemap/how-to/drill-down-cs3/index.ts %}
+{% include code-snippet/treemap/how-to/drill-down-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treemap/how-to/drill-down-cs3/index.html %}
+{% include code-snippet/treemap/how-to/drill-down-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/treemap/how-to/drill-down-cs3" %}
+{% previewsample "page.domainurl/code-snippet/treemap/how-to/drill-down-cs1" %}

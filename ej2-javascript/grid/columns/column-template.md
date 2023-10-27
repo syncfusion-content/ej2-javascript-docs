@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column template in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Column template in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: Column template in JavaScript Column Component | Syncfusion
+description: Learn here all about Column template support in Syncfusion Essential JavaScript Column Component, it's elements and more.
 platform: ej2-javascript
 control: Column template 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column template in ##Platform_Name## Grid control
+# Column template in JavaScript Column Component
 
 ## Render image in a column
 

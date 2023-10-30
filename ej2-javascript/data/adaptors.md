@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Adaptors in ##Platform_Name## Data control | Syncfusion
-description: Learn here all about Adaptors in Syncfusion ##Platform_Name## Data control of Syncfusion Essential JS 2 and more.
+title: Adaptors in TypeScript Data Control | Syncfusion
+description: Learn here all about adaptors support in Syncfusion Essential TypeScript Data control, it's elements and more.
 platform: ej2-javascript
 control: Adaptors 
-publishingplatform: ##Platform_Name##
+publishingplatform: TypeScript
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adaptors in ##Platform_Name## Data control
+# Adaptors in TypeScript Data Control
 
 Each data source or remote service uses different way in accepting request and sending back the response. **DataManager** cannot anticipate every way a data source works. To tackle this problem the **DataManager** uses the adaptor concept to communicate with particular data source.
 
@@ -82,7 +82,7 @@ The sample response object should be as follows,
 
 ## OData adaptor
 
-[OData](http://www.odata.org/documentation/odata-version-3-0/) is standardized protocol for creating and consuming data. You can retrieve data from OData service using **DataManager**. The `ODataAdaptor` helps you to interact with OData service. You can refer to the following code example of remote Data binding using OData service.
+[OData](https://www.odata.org/documentation/odata-version-3-0/) is standardized protocol for creating and consuming data. You can retrieve data from OData service using **DataManager**. The `ODataAdaptor` helps you to interact with OData service. You can refer to the following code example of remote Data binding using OData service.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -115,7 +115,7 @@ The sample response object should be as follows,
 
 ## ODataV4 adaptor
 
-The ODataV4 is an improved version of OData protocols and the **DataManager** can also retrieve and consume OData v4 services. For more details on OData v4 Services, refer the [odata documentation](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). You can use the `ODataV4Adaptor` to interact with ODataV4 service.
+The ODataV4 is an improved version of OData protocols and the **DataManager** can also retrieve and consume OData v4 services. For more details on OData v4 Services, refer the [odata documentation](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). You can use the `ODataV4Adaptor` to interact with ODataV4 service.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -148,7 +148,7 @@ The ODataV4 is an improved version of OData protocols and the **DataManager** ca
 
 You can use the `WepApiAdaptor` to interact with Web API created with OData endpoint. The `WebApiAdaptor` is extended from the `ODataAdaptor`. Hence to use `WebApiAdaptor`, the endpoint should understand the OData formatted queries send along with request.
 
-To enable OData query option for Web API, please refer to the [documentation](https://docs.microsoft.com/en-us/aspnet/web-api/overview/odata-support-in-aspnet-web-api/supporting-odata-query-options)
+To enable OData query option for Web API, please refer to the [documentation](https://learn.microsoft.com/en-us/aspnet/web-api/overview/odata-support-in-aspnet-web-api/supporting-odata-query-options)
 
 ```ts
 import { DataManager, Query, WebApiAdaptor } from '@syncfusion/ej2-data';

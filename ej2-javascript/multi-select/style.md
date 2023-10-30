@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Multi select control | Syncfusion
-description: Learn here all about Style in Syncfusion ##Platform_Name## Multi select control of Syncfusion Essential JS 2 and more.
+title: Style in TypeScript MultiSelect Control | Syncfusion
+description: Learn here all about style support in Syncfusion Essential TypeScript Multiselect control, it's elements and more.
 platform: ej2-javascript
 control: Style 
-publishingplatform: ##Platform_Name##
+publishingplatform: TypeScript
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in ##Platform_Name## Multi select control
+# Style in TypeScript MultiSelect Control
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

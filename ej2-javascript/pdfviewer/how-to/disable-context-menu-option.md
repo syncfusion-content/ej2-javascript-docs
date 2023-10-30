@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Disable context menu option in ##Platform_Name## Pdfviewer control | Syncfusion
-description: Learn here all about Disable context menu option in Syncfusion ##Platform_Name## Pdfviewer control of Syncfusion Essential JS 2 and more.
+title: Disable context menu in JavaScript PDF Viewer Control | Syncfusion
+description: Learn here all about disable context menu option in Syncfusion Essential JavaScript PDF Viewer control, it's elements and more.
 platform: ej2-javascript
 control: Disable context menu option 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Disable context menu option in ##Platform_Name## Pdfviewer control
+# Disable context menu in JavaScript PDF Viewer Control
 
 To disable the context menu in the Syncfusion PDF viewer control, you can use the **ContextMenuOption** property as `'None'` to hide all context menu options. Default value of the **ContextMenuOption** is `'RightClick'`.
 

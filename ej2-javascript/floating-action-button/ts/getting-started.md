@@ -11,7 +11,9 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Floating action button control
 
-This section explains how to create a simple application with Floating Action Button control and to configure it.
+This section explains how to create a simple Floating action button, and configure its available functionalities in TypeScript, using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
@@ -22,45 +24,54 @@ The list of dependencies required to use the Floating Action Button control in y
     |-- @syncfusion/ej2-base
 ```
 
-## Setup your development environment
+## Set up development environment
 
-To get started with the Floating Action Button control, you can clone the [Essential JS 2 quickstart](https://github.com/syncfusion/ej2-quickstart) project using the following commands:
+Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
-```
-git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
-cd quickstart
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
+
+After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+cd ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
+
+## Add Syncfusion JavaScript packages
+
+Syncfusion JavaScript (Essential JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion JavaScript (Essential JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+
+The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
+
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
 npm install
-```
 
-> The project is preconfigured with common settings (`src/styles/styles.css`, `system.config.js`) to start all the Essential JS 2 components.
+{% endhighlight %}
+{% endtabs %}
 
-* Refer to the [Floating Action Button control dependencies](./getting-started#dependencies) in `system.config.js` configuration file.
+## Import the Syncfusion CSS styles
 
-`[src/system.config.js]`
+To render Floating Action Button control, need to import Button and its dependent components styles as given below in the `~/src/styles/styles.css` file, as shown below: 
 
-```js
-System.config({
-    paths: {
-        'npm:': './node_modules/',
-        'syncfusion:': 'npm:@syncfusion/'
-    },
-    map: {
-        app: 'app',
+{% tabs %}
+{% highlight css tabtitle="style.css" %}
 
-        //Syncfusion packages mapping
-        "@syncfusion/ej2-base": "syncfusion:ej2-base/dist/ej2-base.umd.min.js",
-        "@syncfusion/ej2-buttons": "syncfusion:ej2-buttons/dist/ej2-buttons.umd.min.js",
-    },
-    packages: {
-        'app': { main: 'app', defaultExtension: 'js' }
-    }
-});
+@import "../../node_modules/@syncfusion/ej2-base/styles/material.css";
+@import "../../node_modules/@syncfusion/ej2-buttons/styles/material.css";
 
-System.import('app.ts').catch(console.error.bind(console)).then(function () {
-    document.getElementById('loader').style.display = "none";
-    document.getElementById('container').style.visibility = "visible";
-});
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Adding Floating Action Button to the Application
 
@@ -68,7 +79,9 @@ Add the HTML Button tag with ID attribute as the `fab` to your `index.html` file
 
 `[src/index.html]`
 
-```html
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -80,13 +93,6 @@ Add the HTML Button tag with ID attribute as the `fab` to your `index.html` file
     <meta name="author" content="Syncfusion" />
     <link rel="shortcut icon" href="resources/favicon.ico" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!--Style reference from app-->
-    <link href="/styles/styles.css" rel="stylesheet" />
-
-    <!--System js reference and configuration-->
-    <script src="node_modules/systemjs/dist/system.src.js" type="text/javascript"></script>
-    <script src="system.config.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -98,13 +104,17 @@ Add the HTML Button tag with ID attribute as the `fab` to your `index.html` file
 </body>
 
 </html>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 Then, import the Floating Action Button control in your `app.ts` file, and initialize it with the `#fab`.
 
 `[src/app/app.ts]`
 
-```ts
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
 import { Fab } from '@syncfusion/ej2-buttons';
 import { enableRipple } from '@syncfusion/ej2-base';
 
@@ -115,24 +125,21 @@ let fab: Fab = new Fab({ content: 'Add' });
 
 // Render initialized Floating Action Button.
 fab.appendTo('#fab');
-```
 
-## Adding style sheet to the application
-
-To render Floating Action Button control, need to import Button and its dependent components styles as given below in `style.css`.
-
-```
-@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-buttons/styles/material.css";
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Run the application
 
 Run the application in the browser using the following command:
 
-```
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
 npm start
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 The following example shows a basic Floating Action Button control.
 

@@ -23,6 +23,9 @@ Refer to the sample to customize expand/collapse icons.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/treeview/how-to/custom-icon-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/treeview/how-to/custom-icon-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/treeview/how-to/custom-icon-cs1" %}
@@ -35,6 +38,9 @@ Refer to the sample to customize expand/collapse icons.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/treeview/how-to/custom-icon-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/treeview/how-to/custom-icon-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

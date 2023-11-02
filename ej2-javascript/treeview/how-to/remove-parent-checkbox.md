@@ -22,8 +22,11 @@ By enabling the `showCheckBox` property, you can render check box before each no
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/treeview/how-to/remove-parent-checkbox-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/treeview/how-to/remove-parent-checkbox-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/treeview/how-to/remove-parent-checkbox-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -34,6 +37,9 @@ By enabling the `showCheckBox` property, you can render check box before each no
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/treeview/how-to/remove-parent-checkbox-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/treeview/how-to/remove-parent-checkbox-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

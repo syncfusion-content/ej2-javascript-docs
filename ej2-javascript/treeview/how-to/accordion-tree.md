@@ -22,6 +22,9 @@ Accordion is an interface where a list of items can be collapsed or expanded, bu
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/treeview/how-to/accordion-tree-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/treeview/how-to/accordion-tree-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/treeview/how-to/accordion-tree-cs1" %}
@@ -34,6 +37,9 @@ Accordion is an interface where a list of items can be collapsed or expanded, bu
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/treeview/how-to/accordion-tree-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/treeview/how-to/accordion-tree-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

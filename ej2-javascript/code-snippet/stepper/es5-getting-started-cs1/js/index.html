@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+                
+<title>Essential JS 2 - Stepper</title>
+<!-- Essential JS 2 Stepper's dependent material theme -->
+<link href="https://cdn.syncfusion.com/ej2/21.2.3/ej2-base/styles/material.css" rel="stylesheet" type="text/css" />
+<link href="https://cdn.syncfusion.com/ej2/21.2.3/ej2-popups/styles/material.css" rel="stylesheet" type="text/css" />
+<link href="https://cdn.syncfusion.com/ej2/21.2.3/ej2-navigations/styles/material.css" rel="stylesheet" type="text/css" />
+
+<!-- Essential JS 2 Stepper's dependent scripts -->
+<script src="https://cdn.syncfusion.com/ej2/21.2.3/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+<script src="https://cdn.syncfusion.com/ej2/21.2.3/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
+<script src="https://cdn.syncfusion.com/ej2/21.2.3/ej2-navigations/dist/global/ej2-navigations.min.js" type="text/javascript"></script>
+
+<!--style reference from app-->
+<link href="styles.css" rel="stylesheet" />
+
+  </head>
+
+  <body>
+    <!--Element to render the Stepper control-->
+    <nav id="stepper"></nav>
+
+    <script>
+        // Initialize Stepper control
+        var stepper = new ej.stepper.Stepper({
+            steps: [{}, {}, {}, {}, {}],
+        });
+        // Render initialized Stepper.
+        stepper.appendTo("#stepper");
+    </script>
+  </body>
+</html>

@@ -13,6 +13,17 @@ domainurl: ##DomainURL##
 
 The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
+## Dependencies
+
+The following list of minimum dependencies are required to use the sparkline:
+
+```javascript
+|-- @syncfusion/ej2-charts
+    |-- @syncfusion/ej2-base
+    |-- @syncfusion/ej2-data
+    |-- @syncfusion/ej2-svg-base
+```
+
 ## Control Initialization
 
 The Essential JS 2 JavaScript controls can be initialized by using either of the following ways.
@@ -53,7 +64,13 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
         <title>Essential JS 2</title>
 
         <!-- Essential JS 2 Base's global script (Dependency Script) -->
-        <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
+        <script src="resources/base/ej2-base.min.js" 
+        type="text/javascript"></script>
+        <script src="resources/data/ej2-data.min.js" 
+        type="text/javascript"></script>
+        <script src="resources/svg-base/ej2-svg-base.min.js" 
+        type="text/javascript"></script>
+        
         <!-- Essential JS 2 charts's global script (Control Script) -->
         <script src="resources/charts/ej2-charts.min.js" type="text/javascript"></script>
     </head>

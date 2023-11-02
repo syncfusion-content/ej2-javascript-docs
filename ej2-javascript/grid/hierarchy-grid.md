@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 The Grid allows display of table data in a hierarchical structure to visualize relations between parent and child records. This feature is enabled by defining the [`childGrid`](../api/grid/#childgrid) and [`childGrid.queryString`](../api/grid/#querystring). The [`childGrid`](../api/grid/#childgrid) describes the options of grid and the [`childGrid.queryString`](../api/grid/#querystring) describes the relation between parent and child grids.
 
-To use hierarchical binding, inject the [`DetailRow`](../api/grid/detailRow) module in the grid.
+To use hierarchical binding, inject the [`DetailRow`](../api/grid/detailRow/) module in the grid.
 
 {% if page.publishingplatform == "typescript" %}
 

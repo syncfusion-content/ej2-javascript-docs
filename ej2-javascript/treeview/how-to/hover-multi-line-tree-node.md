@@ -22,6 +22,9 @@ This section demonstrates how to hover and select a multi-line tree node. Here, 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/treeview/how-to/multi-line-tree-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/treeview/how-to/multi-line-tree-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/treeview/how-to/multi-line-tree-cs1" %}
@@ -34,6 +37,9 @@ This section demonstrates how to hover and select a multi-line tree node. Here, 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/treeview/how-to/multi-line-tree-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/treeview/how-to/multi-line-tree-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

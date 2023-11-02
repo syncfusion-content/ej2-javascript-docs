@@ -22,6 +22,9 @@ In TreeView component, you can get the original bound data using the `getTreeDat
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/treeview/how-to/icon-css-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/treeview/how-to/icon-css-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/treeview/how-to/icon-css-cs1" %}
@@ -34,6 +37,9 @@ In TreeView component, you can get the original bound data using the `getTreeDat
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/treeview/how-to/icon-css-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/treeview/how-to/icon-css-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

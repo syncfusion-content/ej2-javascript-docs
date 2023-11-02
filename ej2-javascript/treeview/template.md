@@ -26,6 +26,9 @@ The template expression should be provided inside the `${...}` interpolation syn
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/treeview/templates-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/treeview/templates-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/treeview/templates-cs1" %}
@@ -38,6 +41,9 @@ The template expression should be provided inside the `${...}` interpolation syn
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/treeview/templates-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/treeview/templates-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -22,6 +22,9 @@ You can customize the tree nodes level wise by adding custom cssClass to the com
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/treeview/how-to/customize-tree-nodes-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/treeview/how-to/customize-tree-nodes-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/treeview/how-to/customize-tree-nodes-cs1" %}
@@ -34,6 +37,9 @@ You can customize the tree nodes level wise by adding custom cssClass to the com
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/treeview/how-to/customize-tree-nodes-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/treeview/how-to/customize-tree-nodes-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

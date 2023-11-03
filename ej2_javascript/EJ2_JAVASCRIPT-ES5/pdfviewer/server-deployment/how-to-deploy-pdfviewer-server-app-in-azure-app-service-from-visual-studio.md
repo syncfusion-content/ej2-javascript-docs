@@ -10,7 +10,7 @@ description: "Learn about deploy the Web API controller in Azure App Service fro
 
 * Visual Studio 2017 or Visual Studio 2019.
 * An [`Azure subscription`](https://azure.microsoft.com/en-gb/).
-* Create the [`PDF Viewer Web API application`](https://www.syncfusion.com/kb/10346/how-to-create-pdf-viewer-web-service-application-in-asp-net-core).
+* Create the [`PDF Viewer Web API application`](https://support.syncfusion.com/kb/article/8997/how-to-create-pdf-viewer-web-service-application-in-aspnet-core).
 * Make sure you’ve built the project using the Build > Build Solution menu command before following the deployment steps.
 
 ## Publish to Azure App Service
@@ -33,6 +33,6 @@ description: "Learn about deploy the Web API controller in Azure App Service fro
 
 **Step 6:** Navigate to the PDF Viewer Web API control `http://ej2-pdfviewer-server20200513053326.azurewebsites.net/api/pdfviewer`. It returns the default get method response.
 
-Append the app service running the URL `http://ej2-pdfviewer-server20200513053326.azurewebsites.net./api/pdfviewer` to the service URL in the client-side PDF Viewer control. For more information about how to get started with the PDF Viewer control, refer to this [`getting started page`](https://ej2.syncfusion.com/javascript/documentation/pdfviewer/getting-started/?).
+Append the app service running the URL `http://ej2-pdfviewer-server20200513053326.azurewebsites.net./api/pdfviewer` to the service URL in the client-side PDF Viewer control. For more information about how to get started with the PDF Viewer control, refer to this [`getting started page`](https://ej2.syncfusion.com/javascript/documentation/pdfviewer/getting-started).
 
-For more information about the app container service, please look deeper into the [`Microsoft Azure App Service`](https://docs.microsoft.com/en-us/visualstudio/deployment/) for a production-ready setup.
+For more information about the app container service, please look deeper into the [`Microsoft Azure App Service`](https://learn.microsoft.com/en-us/visualstudio/deployment/?view=vs-2022) for a production-ready setup.

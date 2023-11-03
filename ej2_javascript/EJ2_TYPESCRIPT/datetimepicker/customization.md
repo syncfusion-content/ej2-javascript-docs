@@ -11,7 +11,7 @@ The DateTimePicker is available for UI customization that can be achieved by usi
 ## Day and Time Cell format
 
 The DateTimePicker is available for UI customization based on your application requirements.
-It can be achieved by using [`renderDayCell`](../api/datetimepicker/renderDayCellEventArgs#renderdaycelleventargs)
+It can be achieved by using [`renderDayCell`](../api/datetimepicker/renderDayCellEventArgs/#renderdaycelleventargs)
  event that provides an option to customize each day cell on rendering.
 
 The following example disables the weekends of every month by using `renderDayCell` event.

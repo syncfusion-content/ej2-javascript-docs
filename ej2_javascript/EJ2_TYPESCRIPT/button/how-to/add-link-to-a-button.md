@@ -6,7 +6,7 @@ description: "TypeScript Button how to section, block button, repeat button, too
 
 # Add link to a Button
 
-The appearance of the Button can be changed like a link by `e-link` class using [`cssClass`](../../api/button#cssclass)
+The appearance of the Button can be changed like a link by `e-link` class using [`cssClass`](../../api/button/#cssclass)
 property and link navigation can be handled in Button click.
 
 In the following example, link is added in Button click by using `window.open()` method.

@@ -11,8 +11,9 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Dialog control
 
-The following section explains the required steps to build the Dialog component with its basic
-usage in step by step procedure.
+This section explains how to create a simple Dialog component and configure its available functionalities in TypeScript, using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
@@ -24,42 +25,56 @@ The following list of dependencies are required to use Dialog component in your 
     |-- @syncfusion/ej2-buttons
 ```
 
-## Set up your development environment
+## Set up development environment
 
-To get you started with Dialog component, you can clone the [Essential JS 2 quickstart](https://github.com/syncfusion/ej2-quickstart.git) project and install the packages by using the following commands.
+Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
-```
-git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
-cd quickstart
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
+
+After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+cd ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
+
+## Add Syncfusion JavaScript packages
+
+Syncfusion JavaScript (Essential JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion JavaScript (Essential JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+
+The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
+
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
 npm install
-```
 
-> The [project](https://github.com/syncfusion/ej2-quickstart.git) is preconfigured with common settings (`src/styles/styles.css`, `system.config.js` ) to start with all Essential JS 2 components.
+{% endhighlight %}
+{% endtabs %}
 
-## Configuring system JS
+## Import the Syncfusion CSS styles
 
-[Syncfusion Dialog packages](#dependencies) have to be mapped in the `system.config.js` configuration file.
+To render Dialog component, need to import Popups and its dependent components styles as given below in in the `~/src/styles/styles.css` file, as shown below: 
 
-```javascript
-System.config({
-    paths: {
-        'syncfusion:': './node_modules/@syncfusion/',
-    },
-    map: {
-        app: 'app',
-        //Syncfusion packages mapping
-        typescript: "https://unpkg.com/typescript@2.2.2/lib/typescript.js",
-        "@syncfusion/ej2-base": "syncfusion:ej2-base/dist/ej2-base.umd.min.js",
-        "@syncfusion/ej2-buttons": "syncfusion:ej2-buttons/dist/ej2-buttons.umd.min.js",
-        "@syncfusion/ej2-popups": "syncfusion:ej2-popups/dist/ej2-popups.umd.min.js"
-    },
-    packages: {
-        'app': { main: 'app', defaultExtension: 'js' }
-    }
-});
+{% tabs %}
+{% highlight css tabtitle="style.css" %}
 
-System.import('app');
-```
+@import '../../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../../node_modules/@syncfusion/ej2-icons/styles/material.css';
+@import '../../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../../node_modules/@syncfusion/ej2-popups/styles/material.css';
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Adding Dialog to the project
 
@@ -67,7 +82,9 @@ Add the div element with id attribute `#dialog` inside the body tag in your `ind
 
 `[src/index.html]`
 
-```html
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -79,13 +96,6 @@ Add the div element with id attribute `#dialog` inside the body tag in your `ind
     <meta name="author" content="Syncfusion" />
     <link rel="shortcut icon" href="resources/favicon.ico" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!--style reference from app-->
-    <link href="/styles/styles.css" rel="stylesheet" />
-
-    <!--system js reference and configuration-->
-    <script src="node_modules/systemjs/dist/system.src.js" type="text/javascript"></script>
-    <script src="system.config.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -98,7 +108,8 @@ Add the div element with id attribute `#dialog` inside the body tag in your `ind
 
 </html>
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 > The [Custom Resource Generator (CRG)](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script and styles for a set of specific components.
 > This web tool is useful to combine the required component scripts and styles in a single file.
@@ -106,7 +117,8 @@ Add the div element with id attribute `#dialog` inside the body tag in your `ind
 Now import the  Dialog component into your `app.ts` and append it to `#dialog`
 `[src/app/app.ts]`
 
-```ts
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
 
 import { Dialog } from '@syncfusion/ej2-popups';
 
@@ -123,7 +135,8 @@ let dialog: Dialog = new Dialog({
 // Render initialized Dialog
 dialog.appendTo('#dialog');
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 > In the dialog control, max-height is calculated based on the dialog target element height. If the target property is not configured, the document.body is considered as a target. Therefore, to show a dialog in proper height, you need to add min-height to the target element.
 
@@ -132,9 +145,13 @@ dialog.appendTo('#dialog');
 The `Essential JS 2 quickstart` application project is configured to compile and run the application in browser.
 Use the following command to run the application.
 
-```
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
 npm start
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

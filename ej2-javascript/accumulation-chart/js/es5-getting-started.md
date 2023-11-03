@@ -55,11 +55,15 @@ Refer the below code to find location accumulation chart's script and style file
 
 **Syntax:**
 
+> Dependency script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{DEPENDENCY_PACKAGE_NAME}/dist/global/{DEPENDENCY_PACKAGE_NAME}.min.js`
+>
 > Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
 
 **Example:**
 
+> Dependency script: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-base/dist/global/ej2-base.min.js`
+>
 > Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-charts/dist/global/ej2-charts.min.js`
 >
 
@@ -71,6 +75,12 @@ After copying the files, then you can refer the accumulation chart's scripts int
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2 Accumulation Chart</title>
+
+            <!-- Essential JS 2 Accumulation Chart's dependent scripts -->
+            <script src="resources/scripts/ej2-base.min.js" type="text/javascript"></script>
+            <script src="resources/scripts/ej2-data.min.js" type="text/javascript"></script>
+            <script src="resources/scripts/ej2-svg-base.min.js" type="text/javascript"></script>
+
             <!-- Essential JS 2 Accumulation Chart's global script -->
             <script src="resources/scripts/ej2-charts.min.js" type="text/javascript"></script>
        </head>

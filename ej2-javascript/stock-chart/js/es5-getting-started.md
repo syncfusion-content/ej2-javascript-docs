@@ -62,12 +62,16 @@ Refer the below code to find location stock chart's script and style file.
 
 **Syntax:**
 
+> Dependency script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{DEPENDENCY_PACKAGE_NAME}/dist/global/{DEPENDENCY_PACKAGE_NAME}.min.js`
+>
 > Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
 > Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/material.css`
 
 **Example:**
 
+> Dependency script: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-base/dist/global/ej2-base.min.js`
+>
 > Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-charts/dist/global/ej2-charts.min.js`
 >
 > Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-charts/styles/material.css`
@@ -80,9 +84,30 @@ After copying the files, then you can refer the stock chart's scripts and style 
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2 Stock Chart</title>
+
+            <!-- Essential JS 2 Stock Chart's dependent material themes -->  
+            <link href="resources/base/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/buttons/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/calendars/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/navigations/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/splitbuttons/styles/material.css" rel="stylesheet" type="text/css"/>
+
+            <!-- Essential JS 2 Stock Chart's dependent scripts -->
+            <script src="resources/scripts/ej2-base.min.js" type="text/javascript"></script>
+            <script src="resources/scripts/ej2-buttons.min.js" type="text/javascript"></script>
+            <script src="resources/scripts/ej2-data.min.js" type="text/javascript"></script>
+            <script src="resources/scripts/ej2-pdf-export.min.js" type="text/javascript"></script>
+            <script src="resources/scripts/ej2-file-utils.min.js" type="text/javascript"></script>
+            <script src="resources/scripts/ej2-compression.min.js" type="text/javascript"></script>
+            <script src="resources/scripts/ej2-navigations.min.js" type="text/javascript"></script>
+            <script src="resources/scripts/ej2-popups.min.js" type="text/javascript"></script>
+            <script src="resources/scripts/ej2-splitbuttons.min.js" type="text/javascript"></script>
+             <script src="resources/scripts/ej2-inputs.min.js" type="text/javascript"></script>
+            <script src="resources/scripts/ej2-calendars.min.js" type="text/javascript"></script>
+            <script src="resources/scripts/ej2-svg-base.min.js" type="text/javascript"></script>
+
             <!-- Essential JS 2 Stock Chart's global script -->
             <script src="resources/scripts/ej2-charts.min.js" type="text/javascript"></script>
-            <link href="resources/styles/material.css" rel="stylesheet" type="text/css"/>
        </head>
        <body>
        </body>
@@ -199,8 +224,8 @@ var stockchart = new ej.charts.StockChart({
     series:[{
         // dataSource for stockchart series
         dataSource: stockchartData,
-        xName: 'month',
-        yName: 'sales',
+        xName: 'x',
+        yName: 'open',
         type: 'Candle'
     }]
 }, '#element');

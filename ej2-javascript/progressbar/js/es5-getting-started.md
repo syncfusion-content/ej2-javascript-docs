@@ -51,11 +51,15 @@ Refer the below code to find location ProgressBar script and style file.
 
 **Syntax:**
 
+> Dependency script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{DEPENDENCY_PACKAGE_NAME}/dist/global/{DEPENDENCY_PACKAGE_NAME}.min.js`
+>
 > Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
 
 **Example:**
 
+> Dependency script: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-svg-base/dist/global/ej2-svg-base.min.js`
+>
 > Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-progressbar/dist/global/ej2-progressbar.min.js`
 >
 
@@ -70,6 +74,10 @@ The below html code example shows the minimal dependency of ProgressBar.
 
        <head>
             <title>Essential JS 2 ProgressBar</title>
+
+             <!-- Essential JS 2 ProgressBar's dependent scripts -->
+            <script src="resources/scripts/ej2-svg-base.min.js" type="text/javascript"></script>
+
             <!-- Essential JS 2 ProgressBar's global script -->
             <script src="resources/scripts/ej2.min.js" type="text/javascript"></script>
        </head>
@@ -137,7 +145,8 @@ Place the following Progress Bar code in the **index.js**
 ```javascript
 
   var percentageProgress = new ej.progressbar.ProgressBar({
-      value: 40
-  percentageProgress.appendTo('#percentage');
+      value: 40});
+  percentageProgress.appendTo('#element');
 
 ```
+{% previewsample "page.domainurl/code-snippet/progressbar/progressbar-cs14" %}

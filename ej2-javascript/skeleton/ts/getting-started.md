@@ -11,7 +11,9 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Skeleton control
 
-This section explains how to create a simple Skeleton and to configure it.
+This section explains the steps required to create the Skeleton control using TypeScript and configure its properties using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
@@ -22,56 +24,64 @@ The list of dependencies required to use the Skeleton component in your applicat
     |-- @syncfusion/ej2-base
 ```
 
-## Setup your development environment
+## Set up development environment
 
-To get started with the Skeleton component, you can clone the [Essential JS 2 quickstart](https://github.com/syncfusion/ej2-quickstart)
-project using the following commands:
+Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
-```
-git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
 
-cd quickstart
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
+
+After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+cd ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
+
+## Add Syncfusion JavaScript packages
+
+Syncfusion JavaScript (Essential JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion JavaScript (Essential JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+
+The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
+
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
 
 npm install
-```
 
-> The project is preconfigured with common settings (`src/styles/styles.css`, `system.config.js`) to start all the Essential JS 2 components.
+{% endhighlight %}
+{% endtabs %}
 
-* Refer to the [Skeleton component dependencies](./getting-started#dependencies) in `system.config.js` configuration file.
+## Import the Syncfusion CSS styles
 
-`[src/system.config.js]`
+To render Skeleton component, need to import notifications and its dependent components styles as given below in the `~/src/styles/styles.css` file,
 
-```js
-System.config({
-    paths: {
-        'npm:': './node_modules/',
-        'syncfusion:': 'npm:@syncfusion/'
-    },
-    map: {
-        app: 'app',
+{% tabs %}
+{% highlight css tabtitle="style.css" %}
 
-        //Syncfusion packages mapping
-        "@syncfusion/ej2-base": "syncfusion:ej2-base/dist/ej2-base.umd.min.js",
-        "@syncfusion/ej2-notifications": "syncfusion:ej2-notifications/dist/ej2-notifications.umd.min.js",
-    },
-    packages: {
-        'app': { main: 'app', defaultExtension: 'js' }
-    }
-});
+@import "../../node_modules/@syncfusion/ej2-base/styles/material.css";
+@import "../../node_modules/@syncfusion/ej2-notifications/styles/material.css";
 
-System.import('app.ts').catch(console.error.bind(console)).then(function () {
-    document.getElementById('loader').style.display = "none";
-    document.getElementById('container').style.visibility = "visible";
-});
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Adding Skeleton to the Application
 
-Add the HTML div tag with ID attribute as the `skeleton` to your `index.html` file.
+Add the HTML div tag with `ID` attribute as the `skeleton` to your `index.html` file.
 
 `[src/index.html]`
 
-```html
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -83,13 +93,6 @@ Add the HTML div tag with ID attribute as the `skeleton` to your `index.html` fi
     <meta name="author" content="Syncfusion" />
     <link rel="shortcut icon" href="resources/favicon.ico" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!--Style reference from app-->
-    <link href="/styles/styles.css" rel="stylesheet" />
-
-    <!--System js reference and configuration-->
-    <script src="node_modules/systemjs/dist/system.src.js" type="text/javascript"></script>
-    <script src="system.config.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -100,13 +103,17 @@ Add the HTML div tag with ID attribute as the `skeleton` to your `index.html` fi
 </body>
 
 </html>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 Then, import the Skeleton component in your `app.ts` file, and initialize it with the `#skeleton`.
 
 `[src/app/app.ts]`
 
-```ts
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
 import { Skeleton } from '@syncfusion/ej2-notifications';
 
 // Initialize the Skeleton component.
@@ -114,24 +121,21 @@ let skeleton: Skeleton = new Skeleton({height:'15px'});
 
 // Render initialized Skeleton.
 skeleton.appendTo('#skeleton');
-```
 
-## Adding Style sheet to the Application
-
-To render Skeleton component, need to import notifications and its dependent components styles as given below in `style.css`.
-
-```
-@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-notifications/styles/material.css";
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Run the application
 
 Run the application in the browser using the following command:
 
-```
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
 npm start
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 The following example shows a basic Skeleton component.
 

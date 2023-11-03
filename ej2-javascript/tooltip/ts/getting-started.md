@@ -11,8 +11,9 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Tooltip control
 
-This section briefly explains how to create a simple **Tooltip** component and configure its available functionalities in TypeScript,
-using Essential JS 2 [quickstart](https://github.com/syncfusion/ej2-quickstart) seed repository.
+This section briefly explains how to create a simple **Tooltip** component and configure its available functionalities in TypeScript, using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 Tooltips can be initialized on,
 
@@ -29,54 +30,54 @@ The following list of dependencies are required to use the Tooltip component in 
     |-- @syncfusion/ej2-buttons
 ```
 
-## Installation and configuration
+## Set up development environment
 
-* Clone the Essential JS 2 quickstart application project from [GitHub](https://github.com/syncfusion/ej2-quickstart), and install the necessary npm packages using the following command line scripts.
+Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
-```
-git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
-cd quickstart
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
+
+After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+cd ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
+
+## Add Syncfusion JavaScript packages
+
+Syncfusion JavaScript (Essential JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion JavaScript (Essential JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+
+The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
+
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
 npm install
-```
 
-> By default, the project is configured with all the EJ2 dependencies. For better understanding, remove all the dependencies from
-`src/system.config.js` to get started with the Tooltip component.
+{% endhighlight %}
+{% endtabs %}
 
-* Refer to the [Tooltip component dependencies](#dependencies) in `system.config.js` configuration file.
+## Import the Syncfusion CSS styles
 
-`[src/system.config.js]`
+To render Tootip component, need to import Popups and its dependent components styles as given below in in the `~/src/styles/styles.css` file, as shown below: 
 
-```js
-System.config({
-    paths: {
-        'syncfusion:': './node_modules/@syncfusion/',
-    },
-    map: {
-        app: 'app',
+{% tabs %}
+{% highlight css tabtitle="style.css" %}
 
-        //Syncfusion packages mapping
-        "@syncfusion/ej2-base": "syncfusion:ej2-base/dist/ej2-base.umd.min.js",
-        "@syncfusion/ej2-buttons": "syncfusion:ej2-buttons/dist/ej2-buttons.umd.min.js",
-        "@syncfusion/ej2-popups": "syncfusion:ej2-popups/dist/ej2-popups.umd.min.js",
-    },
-    packages: {
-        'app': { main: 'app', defaultExtension: 'js' }
-    }
-});
-
-System.import('app');
-```
-
-* Tooltip CSS files are available in the `ej2-popups` package folder. This can be referenced in your application using the following code.
-
-`[src/styles/styles.css]`
-
-```
 @import '../../node_modules/@syncfusion/ej2-base/styles/material.css';
 @import '../../node_modules/@syncfusion/ej2-popups/styles/material.css';
-```
 
-> We can also use [CRG](https://crg.syncfusion.com/) to generate combined component styles.
+{% endhighlight %}
+{% endtabs %}
 
 ## Initialize the Tooltip on a single element
 
@@ -84,7 +85,9 @@ System.import('app');
 
 `[src/index.html]`
 
-```html
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -96,13 +99,6 @@ System.import('app');
     <meta name="author" content="Syncfusion" />
     <link rel="shortcut icon" href="resources/favicon.ico" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!--style reference from app-->
-    <link href="/styles/styles.css" rel="stylesheet" />
-
-    <!--system js reference and configuration-->
-    <script src="node_modules/systemjs/dist/system.src.js" type="text/javascript"></script>
-    <script src="system.config.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -114,13 +110,16 @@ System.import('app');
 </body>
 
 </html>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 * Import the Tooltip component to your `app.ts` file, and initialize it to the element `#target` as shown below.
 
 `[src/app/app.ts]`
 
-```ts
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
 
 import { Tooltip } from '@syncfusion/ej2-popups';
 
@@ -132,13 +131,18 @@ let tooltip: Tooltip = new Tooltip({
 // render initialized tooltip
 tooltip.appendTo('#target');
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 * Now, run the application in the browser using the following command.
 
-```
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
 npm start
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 The output will be as follows:
 
@@ -157,9 +161,7 @@ The output will be as follows:
 
 ## Initialize Tooltip within a container
 
-You can create Tooltips on multiple targets within a container. To do so, you have to define specific target elements to the `target`
-property so that the Tooltip is initialized only on matched targets within a container. In this case, the Tooltip content is assigned
-from the `title` attribute of the target element.
+You can create Tooltips on multiple targets within a container. To do so, you have to define specific target elements to the `target` property so that the Tooltip is initialized only on matched targets within a container. In this case, the Tooltip content is assigned from the `title` attribute of the target element.
 
 Refer to the following code example to create a Tooltip on multiple targets within a container.
 
@@ -174,8 +176,7 @@ Refer to the following code example to create a Tooltip on multiple targets with
           
 {% previewsample "page.domainurl/code-snippet/tooltip/getting-started-2-cs2" %}
 
-> In the above sample, `#details` refers to the container's id, and the target `.e-info` refers to the target elements available
-> within that container.
+> In the above sample, `#details` refers to the container's id, and the target `.e-info` refers to the target elements available within that container.
 
 ## See Also
 

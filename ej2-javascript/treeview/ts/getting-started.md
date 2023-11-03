@@ -11,7 +11,9 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Treeview control
 
-This section explains the steps required to create a simple [JavaScript TreeView](https://www.syncfusion.com/javascript-ui-controls/js-treeview) component, and configure its available functionalities in TypeScript using the Essential JS 2 [quickstart](https://github.com/syncfusion/ej2-quickstart) seed repository. This seed repository is preconfigured with all the Essential JS 2 packages.
+This section explains the steps required to create a simple [JavaScript TreeView](https://www.syncfusion.com/javascript-ui-controls/js-treeview) component, and configure its available functionalities in TypeScript using the Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is preconfigured with all the Essential JS 2 packages.
+
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
@@ -27,101 +29,101 @@ The following list of dependencies are required to use the TreeView component in
         |-- @syncfusion/ej2-buttons
 ```
 
-## Setup for local development
+## Set up development environment
 
-Clone the Essential JS 2 quickstart application project from [GitHub](https://github.com/syncfusion/ej2-quickstart), and install the necessary npm packages using the following command line scripts.
+Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
-```
-git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
-cd quickstart
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
+
+After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+cd ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
+
+## Add Syncfusion JavaScript packages
+
+Syncfusion JavaScript (Essential JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion JavaScript (Essential JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+
+The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
+
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
 npm install
-```
 
-## Configuring system JS
+{% endhighlight %}
+{% endtabs %}
 
-The [Syncfusion TreeView packages](#dependencies) should be mapped in the `system.config.js` configuration file.
+## Import the Syncfusion CSS styles
 
-```javascript
-System.config({
-    paths: {
-        'npm:': './node_modules/',
-        'syncfusion:': 'npm:@syncfusion/'
-    },
-    map: {
-        app: 'app',
+Combined CSS files are available in the Essential JS 2 package root folder. This can be referenced in the `~/src/styles/styles.css` file of your application using the following code.
 
-        //Syncfusion packages mapping
-        "@syncfusion/ej2-base": "syncfusion:ej2-base/dist/ej2-base.umd.min.js",
-        "@syncfusion/ej2-data": "syncfusion:ej2-data/dist/ej2-data.umd.min.js",
-        "@syncfusion/ej2-lists": "syncfusion:ej2-lists/dist/ej2-lists.umd.min.js",
-        "@syncfusion/ej2-inputs": "syncfusion:ej2-inputs/dist/ej2-inputs.umd.min.js",
-        "@syncfusion/ej2-buttons": "syncfusion:ej2-buttons/dist/ej2-buttons.umd.min.js",
-        "@syncfusion/ej2-splitbuttons": "syncfusion:ej2-splitbuttons/dist/ej2-splitbuttons.umd.min.js",
-        "@syncfusion/ej2-popups": "syncfusion:ej2-popups/dist/ej2-popups.umd.min.js",
-        "@syncfusion/ej2-navigations": "syncfusion:ej2-navigations/dist/ej2-navigations.umd.min.js",
-    },
-    packages: {
-        'app': { main: 'app', defaultExtension: 'js' }
-    }
-});
+{% tabs %}
+{% highlight css tabtitle="style.css" %}
 
-System.import('app');
-
-```
-
-## Adding CSS reference
-
-Combined CSS files are available in the Essential JS 2 package root folder. This can be referenced in your `[src/styles/styles.css]` using the following code.
-
-```
 @import '../../node_modules/@syncfusion/ej2-base/styles/material.css';
 @import '../../node_modules/@syncfusion/ej2-navigations/styles/material.css';
 @import '../../node_modules/@syncfusion/ej2-inputs/styles/material.css';
 @import '../../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 > To refer individual component CSS, please refer to the [Individual Component theme files](../appearance/theme/#referring-individual-control-theme) section. If you want to refer the combined component styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
 ## Adding TreeView component
 
-Now, you can start adding Essential JS 2 TreeView component to the application. To get started, add the TreeView component to `app.ts` and `index.html` files using the following code. Then, add the HTML `<div>` element for TreeView component to your `index.html`.
+Now, you can start adding Essential JS 2 TreeView component to the application. To get started, add the TreeView component to `app.ts` and `index.html` files using the following code. Then, add the HTML `<div>` element with its `id` attribute set to `tree` for TreeView component to your `index.html`.
 
 `[src/index.html]`
 
-```html
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <title>Essential JS 2 for TreeView</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <meta name="description" content="Essential JS 2 TreeView" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Essential JS 2 for TreeView UI Control" />
     <meta name="author" content="Syncfusion" />
     <link rel="shortcut icon" href="resources/favicon.ico" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!--style reference from node_modules/@syncfusion/ej2/-->
-    <link href="/styles/styles.css" rel="stylesheet" />
-
-    <script src="node_modules/systemjs/dist/system.src.js" type="text/javascript"></script>
-    <script src="system.config.js" type="text/javascript"></script>
-
 </head>
 
 <body>
-    <!--Element which will render as TreeView-->
-    <div id="tree"></div>
+    <div id='loader'>Loading....</div>
+    <div id='container'>
+        <div id='treeparent'>
+            <div id="tree"></div>
+        </div>
+    </div>
 </body>
 
 </html>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 Place the following TreeView code in `app.ts`.
 
 `[src/app/app.ts]`
 
-```ts
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
 
 import { enableRipple } from '@syncfusion/ej2-base';
 enableRipple(true);
@@ -132,7 +134,9 @@ let treeViewInstance: TreeView = new TreeView();
 
 //Render initialized TreeView
 treeViewInstance.appendTo("#tree");
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Binding data source
 
@@ -140,7 +144,8 @@ TreeView can load data either from local data sources or remote data services. T
 
 `[src/app/app.ts]`
 
-```ts
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
 
 import { enableRipple } from '@syncfusion/ej2-base';
 enableRipple(true);
@@ -179,15 +184,21 @@ let treeViewInstance: TreeView = new TreeView({
 
 //Render initialized TreeView
 treeViewInstance.appendTo("#tree");
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Run the application
 
 You have to use the `npm start` command to run the application in the browser.
 
-```
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
 npm start
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

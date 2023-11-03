@@ -11,8 +11,9 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Pivotview control
 
-This section explains the steps to create a simple **Pivot Table** and demonstrates the basic usage of the pivot table component using the Essential JS 2 [quickstart](https://github.com/syncfusion/ej2-quickstart.git) seed repository.
-This seed repository is pre-configured with the Essential JS 2 package.
+This section explains the steps to create a simple **Pivot Table** and demonstrates the basic usage of the pivot table component using the Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential JS 2 package.
+
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
@@ -37,63 +38,57 @@ The following list of dependencies are required to use the pivot table component
     |-- @syncfusion/ej2-navigations
 ```
 
-## Setup for local development
+## Set up development environment
 
-* Clone the Essential JS 2 quickstart application project from [GitHub](https://github.com/syncfusion/ej2-quickstart.git) using the command prompt, and install the necessary npm packages using the following command line scripts.
+Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
-```
-git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
-cd quickstart
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
+
+After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+cd ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
+
+## Add Syncfusion JavaScript packages
+
+Syncfusion JavaScript (Essential JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion JavaScript (Essential JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+
+The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
+
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
 npm install
-```
 
-## Configuring system JS
+{% endhighlight %}
+{% endtabs %}
 
-[Syncfusion PivotView packages](#dependencies) have to be mapped in the `system.config.js` configuration file.
+## Import the Syncfusion CSS styles
 
-```ts
-System.config({
-    paths: {
-        'syncfusion:': './node_modules/@syncfusion/'
-    },
-    map: {
-        app: 'app',
+Syncfusion JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme/), which are available in the installed packages. It's easy to adapt the Syncfusion JavaScript controls to match the style of your application by referring to one of the built-in themes.
 
-        //Syncfusion packages mapping
-        "@syncfusion/ej2-base": "syncfusion:ej2-base/dist/ej2-base.umd.min.js",
-        "@syncfusion/ej2-data": "syncfusion:ej2-data/dist/ej2-data.umd.min.js",
-        "@syncfusion/ej2-inputs": "syncfusion:ej2-inputs/dist/ej2-inputs.umd.min.js",
-        "@syncfusion/ej2-buttons": "syncfusion:ej2-buttons/dist/ej2-buttons.umd.min.js",
-        "@syncfusion/ej2-splitbuttons": "syncfusion:ej2-splitbuttons/dist/ej2-splitbuttons.umd.min.js",
-        "@syncfusion/ej2-popups": "syncfusion:ej2-popups/dist/ej2-popups.umd.min.js",
-        "@syncfusion/ej2-navigations": "syncfusion:ej2-navigations/dist/ej2-navigations.umd.min.js",
-        "@syncfusion/ej2-grids": "syncfusion:ej2-grids/dist/ej2-grids.umd.min.js",
-        "@syncfusion/ej2-dropdowns": "syncfusion:ej2-dropdowns/dist/ej2-dropdowns.umd.min.js",
-        "@syncfusion/ej2-calendars": "syncfusion:ej2-calendars/dist/ej2-calendars.umd.min.js",
-        "@syncfusion/ej2-lists": "syncfusion:ej2-lists/dist/ej2-lists.umd.min.js",
-        "@syncfusion/ej2-excel-export": "syncfusion:ej2-excel-export/dist/ej2-excel-export.umd.min.js",
-        "@syncfusion/ej2-pdf-export": "syncfusion:ej2-pdf-export/dist/ej2-pdf-export.umd.min.js",
-        "@syncfusion/ej2-file-utils": "syncfusion:ej2-file-utils/dist/ej2-file-utils.umd.min.js",
-        "@syncfusion/ej2-compression": "syncfusion:ej2-compression/dist/ej2-compression.umd.min.js",
-        "@syncfusion/ej2-charts": "syncfusion:ej2-charts/dist/ej2-charts.umd.min.js",
-        "@syncfusion/ej2-svg-base": "syncfusion:ej2-svg-base/dist/ej2-svg-base.umd.min.js",
-        "@syncfusion/ej2-pivotview": "syncfusion:ej2-pivotview/dist/ej2-pivotview.umd.min.js"
-    },
-    packages: {
-        'app': { main: 'app', defaultExtension: 'js' }
-    }
-});
+The quickstart application is preconfigured to use the `Material` theme in the `~/src/styles/styles.css` file, as shown below: 
 
-System.import('app');
-```
+{% tabs %}
+{% highlight css tabtitle="style.css" %}
 
-## Adding CSS reference
+@import "../../node_modules/@syncfusion/ej2/material.css";
 
-Combined CSS files are available in the Essential JS 2 package root folder. This can be referenced in your `[src/styles/styles.css]` using the following code.
+{% endhighlight %}
+{% endtabs %}
 
-```
-@import '../../node_modules/@syncfusion/ej2/material.css';
-```
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme/) section to know more about built-in themes and CSS reference for individual controls.
 
 ## Browser compatibility
 
@@ -105,18 +100,23 @@ Pivot Table component can be initialized using the following code. To get starte
 
 Place the following pivot table code in the `app.ts`.
 
-```ts
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
 import { PivotView, IDataSet } from '@syncfusion/ej2-pivotview';
 
 
 let pivotTableObj: PivotView = new PivotView();
 pivotTableObj.appendTo('#PivotTable');
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 Now, add an HTML div element which act as the pivot table element in `index.html` using the following code.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -126,18 +126,15 @@ Now, add an HTML div element which act as the pivot table element in `index.html
     <meta name="description" content="Essential JS 2" />
     <meta name="author" content="Syncfusion" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css " />
-     <!--style reference from app-->
-    <link href="/styles/styles.css" rel="stylesheet" />
-    <!--system js reference and configuration-->
-    <script src="node_modules/systemjs/dist/system.src.js" type="text/javascript"></script>
-    <script src="system.config.js" type="text/javascript"></script>
 </head>
 <body>
     <!--Element where the pivot table will be rendered-->
     <div id="PivotTable"></div>
 </body>
 </html>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Assigning sample data to pivot table component
 
@@ -145,7 +142,9 @@ The sample data is assigned to the pivot table component through dataSource prop
 
 Place the following pivot table code in the `app.ts`.
 
-```ts
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
 import { PivotView, IDataSet } from '@syncfusion/ej2-pivotview';
 
 let pivotData: IDataSet[] = [
@@ -162,7 +161,8 @@ let pivotTableObj: PivotView = new PivotView({
 });
 pivotTableObj.appendTo('#PivotTable');
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Adding fields to row, column, values and filters axes
 
@@ -181,7 +181,9 @@ In-order to define each field in the respective axis, the following basic proper
 
 Place the following pivot table code in the `app.ts`.
 
-```ts
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
 import { PivotView, IDataSet } from '@syncfusion/ej2-pivotview';
 
 let pivotData: IDataSet[] = [
@@ -203,11 +205,14 @@ let pivotTableObj: PivotView = new PivotView({
 });
 pivotTableObj.appendTo('#PivotTable');
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 Now, add an HTML div element which act as the pivot table element in `index.html` using the following code.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -217,18 +222,15 @@ Now, add an HTML div element which act as the pivot table element in `index.html
     <meta name="description" content="Essential JS 2" />
     <meta name="author" content="Syncfusion" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css " />
-     <!--style reference from app-->
-    <link href="/styles/styles.css" rel="stylesheet" />
-    <!--system js reference and configuration-->
-    <script src="node_modules/systemjs/dist/system.src.js" type="text/javascript"></script>
-    <script src="system.config.js" type="text/javascript"></script>
 </head>
 <body>
     <!--Element where the pivot table will be rendered-->
     <div id="pivotTable"></div>
 </body>
 </html>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Apply formatting to value fields
 
@@ -238,7 +240,9 @@ Formatting defines a way in which values should be displayed. For example, forma
 
 Place the following pivot table code in the `app.ts`.
 
-```ts
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
 import { PivotView, IDataSet } from '@syncfusion/ej2-pivotview';
 
 let pivotData: IDataSet[] = [
@@ -261,7 +265,8 @@ let pivotTableObj: PivotView = new PivotView({
 });
 pivotTableObj.appendTo('#PivotTable');
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Module injection
 
@@ -275,9 +280,13 @@ These modules should be injected into the pivot table using the `Inject` method 
 
 `[src/app/app.ts]`
 
-```ts
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
 PivotView.Inject(GroupingBar);
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Enable Grouping Bar
 
@@ -355,9 +364,13 @@ Place the following pivot table code in the `app.ts`.
 
 The quickstart project is configured to compile and run the application in the browser. Use the following command to run the application.
 
-```
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
 npm start
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 Output will be displayed as follows.
 

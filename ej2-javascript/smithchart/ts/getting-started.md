@@ -11,7 +11,9 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Smithchart control
 
-This section explains you the steps required to create a Smith Chart and demonstrate the basic usage of the Smith Chart control.
+This section explains how to create a Smith Chart and configure its available functionalities in TypeScript using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
@@ -27,53 +29,49 @@ Below is the list of minimum dependencies required to use the Smith Chart.
     |-- @syncfusion/ej2-file-utils
 ```
 
-## Installation and Configuration
+## Set up development environment
 
-* To get you started with Smith Chart component, you can clone the
-[`Essential JS 2 quickstart`](https://github.com/syncfusion/ej2-quickstart.git) project
-and install necessary packages by using the following commands.
+Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
-```
-git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
-cd quickstart
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
+
+After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+cd ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
+
+## Add Syncfusion JavaScript packages
+
+Syncfusion JavaScript (Essential JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion JavaScript (Essential JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+
+The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
+
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
 npm install
-```
 
-* `Smith Chart packages` need to be mapped in `system.config.js` configuration file.
-
-```javascript
-System.config({
-    paths: {
-        'syncfusion:': './node_modules/@syncfusion/',
-    },
-    map: {
-        app: 'app',
-
-        //Syncfusion packages mapping
-        "@syncfusion/ej2-base": "syncfusion:ej2-base/dist/ej2-base.umd.min.js",
-        "@syncfusion/ej2-data": "syncfusion:ej2-data/dist/ej2-data.umd.min.js",
-        "@syncfusion/ej2-svg-base": "syncfusion:ej2-svg-base/dist/ej2-svg-base.umd.min.js",
-        "@syncfusion/ej2-pdf-export": "syncfusion:ej2-pdf-export/dist/ej2-pdf-export.umd.min.js",
-        "@syncfusion/ej2-compression": "syncfusion:ej2-compression/dist/ej2-compression.umd.min.js",
-        "@syncfusion/ej2-file-utils": "syncfusion:ej2-file-utils/dist/ej2-file-utils.umd.min.js",
-        "@syncfusion/ej2-popups": "syncfusion:ej2-popups/dist/ej2-popups.umd.min.js",
-        "@syncfusion/ej2-buttons": "syncfusion:ej2-buttons/dist/ej2-buttons.umd.min.js",
-        "@syncfusion/ej2-charts": "syncfusion:ej2-charts/dist/ej2-charts.umd.min.js",
-        "@syncfusion/ej2-excel-export": "syncfusion:ej2-excel-export/dist/ej2-excel-export.umd.min.js"
-    },
-    packages: {
-        'app': { main: 'app', defaultExtension: 'js' }
-    }
-});
-```
-
->The [project](https://github.com/syncfusion/ej2-quickstart.git) is preconfigured with common settings (`system.config.js` ) to start with all Essential JS 2 components.
+{% endhighlight %}
+{% endtabs %}
 
 ## Add Smith Chart to the Project
 
 Add the HTML div element for Smith Chart into your `index.html`. `[src/index.html]`
 
-```html
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -83,23 +81,24 @@ Add the HTML div element for Smith Chart into your `index.html`. `[src/index.htm
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Typescript UI Controls" />
     <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
 </head>
 
 <body>
-     <!--container which is going to render the Smith Chart-->
-     <div id='container'>
-     </div>
+    <!--container which is going to render the Smith Chart-->
+    <div id='container'>
+    </div>
 </body>
 
 </html>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 Now import the Smithchart component into your `index.ts` to instantiate a smithchart and append the smithchart instance to the `#container`
 
-```javascript
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
 import { Smithchart } from '@syncfusion/ej2-charts';
 
 // initialize Smithchart component
@@ -107,13 +106,19 @@ let smithchart: Smithchart = new Smithchart();
 
 // render initialized Smithchart
 smithchart.appendTo('#container');
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 Now use the `npm run start` command to run the application in the browser.
 
-```
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
 npm run start
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 The below example shows a basic Smithchart.
 
@@ -141,10 +146,14 @@ feature module name and description as follows.
 Now import the above mentioned modules from smithchart package and inject it into the Smithchart component using
 `Smithchart.Inject`  method.
 
-```javascript
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
 import { Smithchart, SmithchartLegend, TooltipRender } from '@syncfusion/ej2-charts';
 Smithchart.Inject(SmithchartLegend, TooltipRender);
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Add Series to Smithchart
 

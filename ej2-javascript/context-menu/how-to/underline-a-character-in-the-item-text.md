@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Underline a character in the item text in ##Platform_Name## Context menu control
 
-Underline a particular character in a text can be handled in [`beforeItemRender`](../api/context-menu#beforeitemrender) event by
+Underline a particular character in a text can be handled in [`beforeItemRender`](../api/context-menu/#beforeitemrender) event by
 adding `<u>` tag in between the text and given as innerHTML in `li` rendering.
 
 {% if page.publishingplatform == "typescript" %}

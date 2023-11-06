@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 The web accessibility makes web applications and its content more accessible to people with disabilities without any barriers. It especially
 it tracks the dynamic value changes and DOM changes.
 
-The TimePicker component has covered the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications with the following list of WAI-ARIA
+The TimePicker component has covered the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/) specifications with the following list of WAI-ARIA
 attributes: `aria-haspopup`, `aria-selected`, `aria-disabled`, `aria-activedescendant`, `aria-expanded`, `aria-owns`, and `aria-autocomplete`.
 
 Here in TimePicker, the `combobox` plays the role of input element, and the `listbox` plays the role of popup element.
@@ -39,7 +39,7 @@ Here in TimePicker, the `combobox` plays the role of input element, and the `lis
 
 Keyboard accessibility is one of the most important aspects of web accessibility. Disabled people like blind and those who have motor disabilities or birth defects use keyboard shortcuts more than the mouse.
 
-The TimePicker component has built-in keyboard accessibility support by following the [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
+The TimePicker component has built-in keyboard accessibility support by following the [WAI-ARIA practices](https://www.w3.org/WAI/ARIA/apg/).
 
 > It supports the following list of shortcut keys to interact with the TimePicker control.
 

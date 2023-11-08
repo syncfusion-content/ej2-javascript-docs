@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Adding header and footer in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Adding header and footer in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: Adding header and footer in JavaScript Grid Control | Syncfusion
+description: Learn here all about adding header and footer in Syncfusion Essential JavaScript Grid control, it's elements and more details.
 platform: ej2-javascript
 control: Adding header and footer 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adding header and footer in ##Platform_Name## Grid control
+# Adding header and footer in JavaScript Grid Control
 
 You can customize text, page number, line, page size and changing orientation in header and footer.
 

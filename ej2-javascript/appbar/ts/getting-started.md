@@ -115,7 +115,7 @@ Import the AppBar component in your `app.ts` file and initialize it with the `#a
 
 import { AppBar } from "@syncfusion/ej2-navigations";
 
-const apparObj = new AppBar({
+const appbarObj = new AppBar({
   colorMode: 'Primary'
 });
 appbarObj.appendTo("#appbar");

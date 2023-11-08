@@ -24,7 +24,7 @@ Using either of the following way to refer the required script and styles.
 
 ### Using local script and style references in a HTML page
 
-**Step 1:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+**Step 1:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/account/manage-trials/downloads) build installed location.
 
 **Step 2:** To render DateRangePicker component, need to add DateRangePicker and its dependent packages from below installed location.
 

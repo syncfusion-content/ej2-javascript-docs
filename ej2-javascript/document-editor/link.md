@@ -200,5 +200,5 @@ You can use the following keyboard shortcut to open the hyperlink dialog if the 
 
 ## See Also
 
-* [Feature modules](../document-editor/feature-module/)
+* [Feature modules](../document-editor/feature-module)
 * [Hyperlink dialog](../document-editor/dialog#hyperlink-dialog)

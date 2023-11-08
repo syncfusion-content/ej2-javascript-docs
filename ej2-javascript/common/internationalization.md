@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Internationalization
 
-The `Internationalization` library provides support for formatting and parsing date and number objects using the official [Unicode CLDR](http://cldr.unicode.org/) JSON data. The `en-US` locale is set as default _culture_ and `USD` is set as default `_currencyCode_` for all Syncfusion JavaScript UI controls.
+The `Internationalization` library provides support for formatting and parsing date and number objects using the official [Unicode CLDR](https://cldr.unicode.org/) JSON data. The `en-US` locale is set as default _culture_ and `USD` is set as default `_currencyCode_` for all Syncfusion JavaScript UI controls.
 
 ## Loading culture data
 

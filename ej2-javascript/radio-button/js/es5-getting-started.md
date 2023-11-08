@@ -24,7 +24,7 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 
 **Step 1:** Create an app folder `quickstart` for getting started.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+**Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/account/manage-trials/downloads) build installed location.
 
 **Syntax:**
 > Dependency Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\dist\global\{DEPENDENCY_PACKAGE_NAME}.min.js`
@@ -165,4 +165,4 @@ The RadioButton [`checked`](../api/radio-button#checked) property is used to han
 
 ## See Also
 
-* [How to programmatically select a JavaScript RadioButton](https://www.syncfusion.com/forums/168711)
+* [How to programmatically select a JavaScript RadioButton](https://www.syncfusion.com/forums/168711/how-to-programmatically-select-a-javascript-radiobutton)

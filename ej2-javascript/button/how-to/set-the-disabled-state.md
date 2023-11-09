@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Set the disabled state in ##Platform_Name## Button control
 
-Button component can be enabled/disabled by giving [`disabled`](../../api/button#disabled) property. To disable Button component, the `disabled` property can be set as `true`.
+Button component can be enabled/disabled by giving [`disabled`](../../api/button/#disabled) property. To disable Button component, the `disabled` property can be set as `true`.
 
 The following example demonstrates Button in `disabled` state.
 

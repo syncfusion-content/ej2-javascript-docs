@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Accumulation chart control
 
-This article provides a step-by-step guide to configuring the Syncfusion JavaScript (Essential JS 2) library and building a simple JavaScript web application using the GitHub [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This article provides a step-by-step guide to configuring the Syncfusion JavaScript (Essential JS 2) library and building a simple JavaScript web application using the GitHub [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
@@ -32,12 +32,12 @@ The list of minimum dependencies required to use an accumulation chart are follo
 
 ## Set up development environment
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
+Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack).
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
 
-git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quickstart
 
 {% endhighlight %}
 {% endtabs %}

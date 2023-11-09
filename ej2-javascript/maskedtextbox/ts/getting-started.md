@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Maskedtextbox control
 
-This section explains how to create a simple MaskedTextBox component and configure its available functionalities in TypeScript, using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section explains how to create a simple MaskedTextBox component and configure its available functionalities in TypeScript, using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
@@ -27,12 +27,12 @@ The following list of dependencies are required to use the MaskedTextBox compone
 
 ## Set up development environment
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
+Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack).
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
 
-git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quickstart
 
 {% endhighlight %}
 {% endtabs %}
@@ -181,7 +181,7 @@ The following example shows the MaskedTextBox with the mask element `0`.
 
 ## See Also
 
-* [How to perform custom validation using FormValidator](./how-to/perform-custom-validation-using-form-validator/)
-* [How to customize the UI appearance of the control](./how-to/customize-the-ui-appearance-of-the-control/)
-* [How to set cursor position while focus on the input textbox](./how-to/set-cursor-position-while-focus-on-the-input-textbox/)
-* [How to display numeric keypad when focus on mobile devices](./how-to/display-numeric-keypad-when-focus-on-mobile-devices/)
+* [How to perform custom validation using FormValidator](./how-to/perform-custom-validation-using-form-validator)
+* [How to customize the UI appearance of the control](./how-to/customize-the-ui-appearance-of-the-control)
+* [How to set cursor position while focus on the input textbox](./how-to/set-cursor-position-while-focus-on-the-input-textbox)
+* [How to display numeric keypad when focus on mobile devices](./how-to/display-numeric-keypad-when-focus-on-mobile-devices)

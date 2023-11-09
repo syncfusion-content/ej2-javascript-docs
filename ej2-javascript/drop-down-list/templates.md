@@ -250,5 +250,5 @@ In the following sample, when the data fetch request fails, the DropDownList dis
 
 * [How to acheive filtering](./filtering)
 * [How to group the data using header](./grouping)
-* [How to show the list items with icon](./how-to/icons-support/)
-* [How to render tooltip for the options](./how-to/tooltip/)
+* [How to show the list items with icon](./how-to/icons-support)
+* [How to render tooltip for the options](./how-to/tooltip)

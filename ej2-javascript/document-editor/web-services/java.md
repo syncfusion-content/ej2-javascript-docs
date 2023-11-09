@@ -35,7 +35,7 @@ The following jar files are required to be referenced in your Java application.
 
 ## Download JAR file
 
-The JAR file is available in both [Syncfusion Essential-JS2](https://www.syncfusion.com/downloads/essential-js2) build and maven repository.
+The JAR file is available in both [Syncfusion Essential-JS2](https://www.syncfusion.com/account/manage-trials/downloads) build and maven repository.
 
 ### Get JAR file from Syncfusion build
 

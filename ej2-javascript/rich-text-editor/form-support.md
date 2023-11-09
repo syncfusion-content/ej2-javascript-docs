@@ -65,5 +65,5 @@ Upon submitting the form, the `getValue` method will be triggered. Through the `
 
 ## See Also
 
-* [How to integrate the third party library](./third-party-integration/)
-* [How to validate the value](./validation/)
+* [How to integrate the third party library](./third-party-integration)
+* [How to validate the value](./validation)

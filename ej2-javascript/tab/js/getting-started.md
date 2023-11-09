@@ -94,7 +94,7 @@ The Tab can be rendered by defining a JSON array. The item is rendered with [`he
                           header: { 'text': 'Facebook' },
                           content: 'Facebook is an online social networking service headquartered in Menlo Park, California. Its website was ' +
                           'launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo ' +
-                          'Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website\'\s ' +
+                          'Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the websites' +
                           'membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford ' +
                           'University. It gradually added support for students at various other universities and later to high-school students.'
                       },

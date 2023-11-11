@@ -101,15 +101,15 @@ npm install
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 
-import { ProgressBar } from '@syncfusion/ej2-progressbar ';
+import { ProgressBar } from '@syncfusion/ej2-progressbar';
 
 // Initialize ProgressBar component
-let ProgressBar: ProgressBar = new ProgressBar({
+let progressBar: ProgressBar = new ProgressBar({
       value: 40
 });
 
 // Render initialized ProgressBar
-ProgressBar.appendTo('#percentage');
+progressBar.appendTo('#element');
 
 {% endhighlight %}
 {% endtabs %}

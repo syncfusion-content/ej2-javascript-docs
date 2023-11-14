@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Create right to left splitbutton in ##Platform_Name## Split button control
 
-SplitButton component has RTL support. This can be achieved by setting [`enableRtl`](../../api/split-button#enablertl) as `true`.
+SplitButton component has RTL support. This can be achieved by setting [`enableRtl`](../../api/split-button/#enablertl) as `true`.
 
 The following example illustrates how to enable right-to-left support in SplitButton component.
 

@@ -192,5 +192,5 @@ For example, apply `+` to Unordered list, apply `1., 2., 3.` to Ordered list, fo
 
 ## See Also
 
-* [How to integrate the third party library](./third-party-integration/)
-* [How to change the editor mode](./editor-modes/#markdown-editor)
+* [How to integrate the third party library](./third-party-integration)
+* [How to change the editor mode](./editor-modes#markdown-editor)

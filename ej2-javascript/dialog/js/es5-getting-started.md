@@ -239,4 +239,4 @@ The below example demonstrates the different Dialog positions.
 * [How to position the dialog on center of the page on scrolling](./how-to/position-the-dialog-on-center-of-the-page-on-scrolling)
 * [Prevent closing of modal dialog](./how-to/prevent-closing-of-modal-dialog)
 * [Close dialog while click on outside of dialog](./how-to/close-dialog-while-click-on-outside-of-dialog)
-* [How to make a reusable alert and confirm dialog](./dialog-utility/)
+* [How to make a reusable alert and confirm dialog](./dialog-utility)

@@ -13,8 +13,7 @@ let pivotTableObj: PivotView = new PivotView({
         values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
         rows: [{ name: 'Products' }],
         filters:[{ name: 'Country' }],
-        formatSettings: [{ name: 'Amount', format: 'C0' }],
-        filters: []
+        formatSettings: [{ name: 'Amount', format: 'C0' }]
     },
     showFieldList: true,
     showGroupingBar:true,

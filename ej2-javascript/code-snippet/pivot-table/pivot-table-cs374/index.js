@@ -9,7 +9,7 @@ var pivotTableObj = new ej.pivotview.PivotView({
         filters:[{ name: 'Country' }],
         formatSettings: [{ name: 'Amount', format: 'C0' }]
     },
-     height: 350,
+    height: 350,
     showFieldList: true,
     showGroupingBar:true
 });

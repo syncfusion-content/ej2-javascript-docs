@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Disable the daterangepicker component in ##Platform_Name## Daterangepicker control
 
-DateRangePicker can be inactivated on a page, by setting [`enabled`](../../api/daterangepicker#enabled) value as false that will disable the component completely from all the user interactions including in form post. The following example demonstrates the disabled component.
+DateRangePicker can be inactivated on a page, by setting [`enabled`](../../api/daterangepicker/#enabled) value as false that will disable the component completely from all the user interactions including in form post. The following example demonstrates the disabled component.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -46,7 +46,7 @@ The Essential JS 2 Chart control can be initialized by using either of the follo
 
 ### Using local script
 
-You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/account/manage-trials/downloads) build installed location.
 
 After installing the Essential JS 2 product build, you can copy the chart and its dependencies scripts and style file into the **resources/scripts** and **resources/styles** folder.
 
@@ -71,7 +71,7 @@ After copying the files, then you can refer the chart's scripts into the `index.
 ```
 
 <!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
+  <html xmlns="https://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2 Chart</title>
 
@@ -97,11 +97,11 @@ Refer the chart's CDN links as below
 
 **Syntax:**
 
-> Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+> Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 
 **Example:**
 
-> Script: [`http://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js`](https://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js)
+> Script: [`https://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js`](https://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js)
 
 The below html code example shows the minimal dependency of chart.
 

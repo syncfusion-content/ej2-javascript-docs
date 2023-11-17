@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Create a block button in ##Platform_Name## Button control | Syncfusion
-description: Learn here all about Create a block button in Syncfusion ##Platform_Name## Button control of Syncfusion Essential JS 2 and more.
+title: Create a block button in JavaScript Button Control | Syncfusion
+description: Learn here all about Create a block button support in Syncfusion Essential JavaScript Button control, it's elements and more.
 platform: ej2-javascript
 control: Create a block button 
-publishingplatform: ##Platform_Name##
+publishingplatform: JavaScript
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create a block button in ##Platform_Name## Button control
+# Create a block button in JavaScript Button Control
 
-You can customize a Button into a Block Button that will span the entire width of its parent element. To create a Block Button, set the [`cssClass`](../../api/button#cssclass) property to `e-block`.
+You can customize a Button into a Block Button that will span the entire width of its parent element. To create a Block Button, set the [`cssClass`](../../api/button/#cssclass) property to `e-block`.
 
 {% if page.publishingplatform == "typescript" %}
 

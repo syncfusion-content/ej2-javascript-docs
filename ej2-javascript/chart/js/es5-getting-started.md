@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Chart control | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more details.
+title: Es5 Getting Started with JavaScript Chart control | Syncfusion
+description:  Checkout and learn about Es5 getting started with JavaScript Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
-publishingplatform: ##Platform_Name##
+publishingplatform: JavaScript
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Chart control
+# Es5 Getting Started in JavaScript Chart Control
 
 This section explains you the steps required to create a simple chart and demonstrate the basic usage of the chart control.
 
@@ -101,7 +101,7 @@ Refer the chart's CDN links as below
 
 **Example:**
 
-> Script: [`http://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js`](http://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js)
+> Script: [`http://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js`](https://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js)
 
 The below html code example shows the minimal dependency of chart.
 

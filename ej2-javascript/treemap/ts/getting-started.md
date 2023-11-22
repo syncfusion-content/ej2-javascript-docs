@@ -95,15 +95,69 @@ Add an HTML div element to act as the TreeMap element in the **index.html** file
 {% endhighlight %}
 {% endtabs %}
 
-Import the TreeMap control in the `app.ts` to initialize the TreeMap and append the TreeMap instance to the `#container`.
+Import the TreeMap control in the `app.ts` to initialize the TreeMap.
+`dataSource`: The data source for the TreeMap is set to the data array.
+`weightValuePath`: It specifies the data property ("Sales") that determines the size of the TreeMap items.
+`leafItemSettings`: This section defines the appearance and label settings for the leaf items (car companies), including the label path, border, and label style.
+`levels`: The TreeMap is configured with grouping levels. In this case, it groups data by "Continent" and specifies the border settings.
+`palette`: A custom color palette is defined to colorize the TreeMap items.
+The TreeMap is rendered using treemap.appendTo('#container'). The TreeMap is displayed within an HTML element with the ID "container.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 
 import { TreeMap } from '@syncfusion/ej2-treemap';
 
+const data: Object[] = [
+    { Continent: "China", Company: "Volkswagen", Sales: 3005994 },
+    { Continent: "China", Company: "General Motors", Sales: 1230044 },
+    { Continent: "China", Company: "Honda", Sales: 1197023 },
+    { Continent: "United States", Company: "General Motors", Sales:3042775  },
+    { Continent: "United States", Company: "Ford", Sales:2599193  },
+    { Continent: "United States", Company: "Toyota", Sales:2449587  },
+    { Continent: "Japan",Company: "Toyota", Sales:1527977  },
+    { Continent: "Japan", Company: "Honda", Sales:706982 },
+    { Continent: "Japan", Company: "Suzuki", Sales:623041  },
+    { Continent: "Germany",Company: "Volkswagen", Sales:655977  },
+    { Continent: "Germany", Company: "Mercedes", Sales:310845  },
+    { Continent: "Germany", Company: "BMW", Sales:261931  },
+    { Continent: "United Kingdom", Company: "Ford ", Sales:319442  },
+    { Continent: "United Kingdom", Company: "Vauxhall", Sales: 251146 },
+    { Continent: "United Kingdom", Company: "Volkswagen", Sales:206994  },
+    { Continent: "India", Company: "Maruti Suzuki", Sales:1443654  },
+    { Continent: "India", Company: "Hyundai", Sales:476241  },
+    { Continent: "India", Company: "Mahindra", Sales:205041  },
+    { Continent: "France", Company: "Renault", Sales:408183 },
+    { Continent: "France", Company: "Peugeot", Sales:336242 },
+    { Continent: "France", Company: "Citroen", Sales:194986  },
+    { Continent: "Brazil", Company: "Flat Chrysler", Sales:368842  },
+    { Continent: "Brazil", Company: "General Motors", Sales: 348351 },
+    { Continent: "Brazil", Company: "Volkswagen", Sales: 245895 },
+    { Continent: "Italy", Company: "Flat Chrysler", Sales:386260  },
+    { Continent: "Italy", Company: "Volkswagen", Sales: 138984 },
+    { Continent: "Italy", Company: "Ford", Sales: 125144 },
+    { Continent: "Canada", Company: "Ford", Sales:305086},
+    { Continent: "Canada", Company: "FCA", Sales:278011 },
+    { Continent: "Canada", Company: "GM", Sales: 266884 }
+];
 // Initialize the tree map control
-let treemap: TreeMap = new TreeMap();
+let treemap: TreeMap = new TreeMap({
+    dataSource: data,
+    weightValuePath: 'Sales',
+    leafItemSettings: {
+        labelPath: 'Company',
+        border: { color: 'white', width: 0.5 },
+        labelStyle: {
+            fontFamily: 'Segoe UI'
+        }
+    },
+    levels: [
+        {
+            groupPath: 'Continent', border: { color: 'white', width: 0.5 },
+        }
+    ],
+    palette: ['#C33764', '#AB3566', '#993367', '#853169', '#742F6A', '#632D6C', '#532C6D', '#412A6F', '#312870', '#1D2671'],
+});
 
 // Render the initialized tree map
 treemap.appendTo('#container');

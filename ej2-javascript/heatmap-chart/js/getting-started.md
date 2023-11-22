@@ -52,7 +52,7 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
   </html>
 ```
 
-**Step 5:** Now, add the `div` element and initiate the `Essential JS 2 Heatmap` control in the `index.html` by using following code
+**Step 5:** Now, add the `div` element and initiate the `Essential JS 2 Heatmap` control in the **index.html** by using following code
 
 ```html
 <!DOCTYPE html>
@@ -78,21 +78,40 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
   </html>
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential JS 2 heatmap** control.
+**Step 6:** Now, run the **index.html** in web browser, it will render the **Essential JS 2 HeatMap** control.
 
 ### Using CDN link for script and style reference
 
-**Step 1:** Create an app folder `myapp` for the Essential JS 2 JavaScript controls.
+**Step 1:** Create an app folder `quickstart` for the Essential JS 2 JavaScript controls.
 
-**Step 2:** The Essential JS 2 control's global scripts and styles are already hosted in the below CDN link formats.
+**Step 2:** The Essential JS 2 controls' global scripts are already hosted in the below CDN link formats.
 
-**Syntax:**
-> Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+**Common Control Script:**
+> Syntax: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/dist/ej2.min.js`
 
 **Example:**
-> Script: [`http://cdn.syncfusion.com/ej2/ej2-heatmap/dist/global/ej2-heatmap.min.js`](http://cdn.syncfusion.com/ej2/ej2-heatmap/dist/global/ej2-heatmap.min.js)
+> Script: [`https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js)
+>
 
-**Step 3:** Create a HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `div` element and initiate the `Essential JS 2 Heatmap` control in the index.html by using following code.
+**or**
+
+**Individual Control Scripts:**
+
+**Syntax**
+>`http://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+
+**Example:**
+> HeatMap Script: [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-heatmap/dist/global/ej2-heatmap.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-heatmap/dist/global/ej2-heatmap.min.js)
+>
+>Dependency Scripts
+>
+> [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/dist/global/ej2-base.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/dist/global/ej2-base.min.js)
+>
+> [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-data/dist/global/ej2-data.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-data/dist/global/ej2-data.min.js)
+>
+> [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-svg-base/dist/global/ej2-svg-base.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-svg-base/dist/global/ej2-svg-base.min.js)
+
+**Step 3:** Create a HTML page (index.html) in `quickstart` location and add the CDN link references. Now, add the `div` element and initiate the `Essential JS 2 Heatmap` control in the index.html by using following code.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -102,11 +121,11 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
         
 {% previewsample "page.domainurl/code-snippet/heatmap/es5-getting-started-cs1" %}
 
-**Step 4:** Now, run the `index.html` in web browser, it will render the `Essential JS 2 Heatmap` control.
+**Step 4:** Now, run the **index.html** in web browser, it will render the `Essential JS 2 HeatMap` control.
 
-## Populate heat map with data
+## Populate HeatMap with data
 
-This section explains how to populate the following two-dimensional array data to the heat map.
+This section explains how to populate the following two-dimensional array data to the HeatMap.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -121,7 +140,7 @@ This section explains how to populate the following two-dimensional array data t
 
 ## Enable axis labels
 
-You can add axis labels to the heat map and format those labels using the [xAxis](../api/heatmap/#xaxis) and [yAxis](../api/heatmap/#yaxis) properties. Axis labels provide additional information about the data points populated in the heat map.
+You can add axis labels to the HeatMap and format those labels using the [xAxis](../api/heatmap/#xaxis) and [yAxis](../api/heatmap/#yaxis) properties. Axis labels provide additional information about the data points populated in the HeatMap.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -134,9 +153,9 @@ You can add axis labels to the heat map and format those labels using the [xAxis
         
 {% previewsample "page.domainurl/code-snippet/heatmap/getting-started-cs2" %}
 
-## Add heat map title
+## Add HeatMap title
 
-Add a title using the [titleSettings](../api/heatmap/#titlesettings) property to the heat map to provide quick information to the user about the data populated in the heat map.
+Add a title using the [titleSettings](../api/heatmap/#titlesettings) property to the HeatMap to provide quick information to the user about the data populated in the HeatMap.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -151,7 +170,7 @@ Add a title using the [titleSettings](../api/heatmap/#titlesettings) property to
 
 ## Enable legend
 
-Use a legend for the heat map in the [legendSettings](../api/heatmap/#legendsettings) object by setting the [visible](../api/heatmap/legendSettings/#visible) property to **true** and injecting the `Legend` module using the `HeatMap.Inject(Legend)` method.
+Use a legend for the HeatMap in the [legendSettings](../api/heatmap/#legendsettings) object by setting the [visible](../api/heatmap/legendSettings/#visible) property to **true** and injecting the `Legend` module using the `HeatMap.Inject(Legend)` method.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -166,7 +185,7 @@ Use a legend for the heat map in the [legendSettings](../api/heatmap/#legendsett
 
 ## Add data label
 
-Add data labels to improve the readability of the heat map. This can be achieved by setting the  [showLabel](../api/heatmap/cellSettings/#showlabel) property to **true** in the [cellSettings](../api/heatmap/#cellsettings) object.
+Add data labels to improve the readability of the HeatMap. This can be achieved by setting the  [showLabel](../api/heatmap/cellSettings/#showlabel) property to **true** in the [cellSettings](../api/heatmap/#cellsettings) object.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -181,7 +200,7 @@ Add data labels to improve the readability of the heat map. This can be achieved
 
 ## Add custom cell palette
 
-The default palette settings of the heat map cells can be customized by using the [paletteSettings](../api/heatmap/#palettesettings) property.
+The default palette settings of the HeatMap cells can be customized by using the [paletteSettings](../api/heatmap/#palettesettings) property.
 Using the [palette](../api/heatmap/paletteSettings/#palette) property in `paletteSettings` object, you can change the color set for the cells.
 You can change the color mode of the cells to fixed or gradient mode using the [type](../api/heatmap/paletteSettings/#type) property.
 

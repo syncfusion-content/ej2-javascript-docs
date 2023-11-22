@@ -107,12 +107,12 @@ heatmap.appendTo('#element');
 {% endhighlight %}
 {% endtabs %}
 
-Use the `npm run start` command to run the application in the browser.
+Use the `npm start` command to run the application in the browser.
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
 
-npm run start
+npm start
 
 {% endhighlight %}
 {% endtabs %}

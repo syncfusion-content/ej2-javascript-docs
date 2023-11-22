@@ -62,7 +62,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 </html>
 ```
 
-**Step 5:** Add the `LinearGauge` element and initiate the **Syncfusion JavaScript (ES5) LinearGauge** component in the **~/quickstart/index.html** by using the following code.
+**Step 5:** Initiate the **Syncfusion JavaScript (ES5) LinearGauge** component in the **~/quickstart/index.html** by using the following code.
 
 ```html
 <!DOCTYPE html>
@@ -77,10 +77,10 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
     </head>
     <body>
         <!-- Add the HTML <lineargauge> element  -->
-        <lineargauge id="element">Linear Gauge</lineargauge>
+        <div id="element" style="display: block;">Linear Gauge</div>
         <script>
             // initialize lineargauge control
-            var lineargauge = new ej.lineargauge.LinearGauge();
+            var lineargauge = new ej.lineargauge.LinearGauge({ height: '400px' });
             // Render initialized lineargauge.
             lineargauge.appendTo('#element');
         </script>
@@ -88,24 +88,40 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 </html>
 ```
 
-**Step 6:** Run the `index.html` in web browser, it will render the **Syncfusion JavaScript Lineargauge** control.
+**Step 6:** Run the **index.html** in web browser, it will render the **Syncfusion JavaScript Lineargauge** control.
 
 ### Using CDN link for script reference
 
 **Step 1:** Create an app folder **quickstart** for getting started.
 
-**Step 2:** The Essential JS 2 controls' global scripts is already hosted in the below CDN link formats.
+**Step 2:** The Essential JS 2 controls' global scripts are already hosted in the below CDN link formats.
 
-**Syntax:**
-
-> Dependency Script: `https://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
-> Control Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+**Common Control Script:**
+> Syntax: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/dist/ej2.min.js`
 
 **Example:**
+> Script: [`https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js)
+>
 
-> Script: [`https://cdn.syncfusion.com/ej2/ej2-lineargauge/dist/global/ej2-lineargauge.min.js`](https://cdn.syncfusion.com/ej2/ej2-lineargauge/dist/global/ej2-lineargauge.min.js)
+**or**
 
-**Step 3:** Create a HTML page (index.html) in **~/quickstart/index.html** location and add the CDN link references. Now, add the `LinearGauge` element and initiate the **Syncfusion JavaScript (ES5) Linear Gauge** control in the **index.html** by using following code.
+**Individual Control Scripts:**
+
+**Syntax**
+>`http://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+
+**Example:**
+> Linear Gauge Script: [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-lineargauge/dist/global/ej2-lineargauge.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-lineargauge/dist/global/ej2-lineargauge.min.js)
+>
+>Dependency Scripts
+>
+> [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/dist/global/ej2-base.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/dist/global/ej2-base.min.js)
+>
+> [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-svg-base/dist/global/ej2-svg-base.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-svg-base/dist/global/ej2-svg-base.min.js)
+>
+> [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-pdf-export/dist/global/ej2-pdf-export.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-pdf-export/dist/global/ej2-pdf-export.min.js)
+
+**Step 3:** Create a HTML page (index.html) in **~/quickstart/index.html** location and add the CDN link references. Now, initiate the **Syncfusion JavaScript (ES5) Linear Gauge** control in the **index.html** by using following code.
 
 The below example shows a basic linear gauge component.
 

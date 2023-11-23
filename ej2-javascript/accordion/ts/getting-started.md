@@ -142,7 +142,7 @@ accordion.appendTo('#element');
 npm start
 
 {% endhighlight %}
-{% highlight bash tabtitle="YARN" %}
+{% endtabs %}
 
 Output will be as follows:
 

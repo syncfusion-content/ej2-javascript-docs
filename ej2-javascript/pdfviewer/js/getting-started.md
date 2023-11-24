@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with JavaScript PDF Viewer Control | Syncfusion
-description: Learn here all about getting started with Syncfusion Essential JavaScript PDF Viewer control, its elements, and more.
+description: Checkout and learn about getting started with JavaScript PDF Viewer control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: PDF Viewer 
 publishingplatform: ##Platform_Name##

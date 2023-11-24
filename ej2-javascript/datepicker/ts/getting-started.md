@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with JavaScript Datepicker Control | Syncfusion
+title: Getting Started with JavaScript Datepicker Control | Syncfusion
 description: Learn here all about getting started with Syncfusion Essential JavaScript Datepicker control, it's elements and more.
 platform: ej2-javascript
 control: Getting started 

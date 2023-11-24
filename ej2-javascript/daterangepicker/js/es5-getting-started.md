@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Es5 getting started with JavaScript Date Range Picker | Syncfusion
-description: Learn here all about es5 getting started with Syncfusion Essential JavaScript Date Range Picker control, its elements and more.
+description: Checkout and learn about Es5 getting started with JavaScript Date Range Picker control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
 publishingplatform: ##Platform_Name##

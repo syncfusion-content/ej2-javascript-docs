@@ -145,5 +145,5 @@ The [`fill`](https://ej2.syncfusion.com/documentation/api/chart/tooltipSettingsM
 
 ## See Also
 
-* [Format the tooltip value](./how-to/tool-tip-format.md)
-* [Create a table in tooltip](./how-to/tool-tip-table#create-a-table-in-tooltip.md)
+* [Format the tooltip value](./how-to/tool-tip-format)
+* [Create a table in tooltip](./how-to/tool-tip-table#create-a-table-in-tooltip)

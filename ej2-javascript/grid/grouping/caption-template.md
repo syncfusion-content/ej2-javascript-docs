@@ -75,7 +75,7 @@ You can customize the group caption text by using the [`groupSettings.captionTem
 
 We can render custom components in the group caption by using the [`groupSettings.captionTemplate`](../../api/grid/column/#captionTemplate) property.
 
-In the below demo, we have rendered the EJ2 [`ButtonComponent`](../../button/getting-started/) in the group caption.
+In the below demo, we have rendered the EJ2 [`ButtonComponent`](../../button/es5-getting-started) in the group caption.
 
 {% if page.publishingplatform == "typescript" %}
 

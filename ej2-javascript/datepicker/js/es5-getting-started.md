@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Es5 getting started with ##Platform_Name## Datepicker control | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Datepicker control of Syncfusion Essential JS 2 and more details.
+description: Learn here all about Es5 getting started with ##Platform_Name## Datepicker control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
 publishingplatform: ##Platform_Name##

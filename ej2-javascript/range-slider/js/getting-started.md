@@ -27,15 +27,21 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 **Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
 **Syntax:**
-> Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+> Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
 >
-> Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/material.css`
+> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\material.css`
 
 **Example:**
 
-> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.17/Essential JS 2/ej2-inputs/dist/global/ej2-inputs.min.js`
+> Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-inputs\dist\global\ej2-inputs.min.js`
 >
-> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.17/Essential JS 2/ej2-inputs/styles/material.css`
+> Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-inputs\styles\material.css`
+
+The below located script and style file contains all Syncfusion JavaScript (ES5) UI control resources in a single file.
+
+> Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
+>
+> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\material.css`
 
 **Step 3:** Create a folder `myapp/resources` and copy/paste the global scripts and styles from the above installed location to `myapp/resources` location.
 
@@ -49,7 +55,8 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
             <!-- Essential JS 2 material theme -->
             <link href="resources/material.css" rel="stylesheet" type="text/css"/>
 
-            <!-- Essential JS 2 Inputs global script -->
+            <!-- Essential JS 2 Inputs's global and dependent script -->
+            <script src="resources/ej2-base.min.js" type="text/javascript"></script>
             <script src="resources/ej2-inputs.min.js" type="text/javascript"></script>
        </head>
        <body>
@@ -67,17 +74,18 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
             <!-- Essential JS 2 material theme -->
             <link href="resources/material.css" rel="stylesheet" type="text/css"/>
 
-            <!-- Essential JS 2 Inputs's global script -->
+            <!-- Essential JS 2 Inputs's global and dependent script -->
+            <script src="resources/ej2-base.min.js" type="text/javascript"></script>
             <script src="resources/ej2-inputs.min.js" type="text/javascript"></script>
        </head>
        <body>
             <!-- Add the HTML <div> element  -->
             <div id='element'></div>
             <script>
-                // Initialize Essential JS 2 JavaScript Slider control
-                var sliderInstance = new ej.inputs.Slider();
-                //Render initialized Slider
-                sliderInstance.appendTo("#element");
+               // Initialize Essential JS 2 JavaScript Slider control
+               var sliderInstance = new ej.inputs.Slider({ value: 30 });
+               //Render initialized Slider
+               sliderInstance.appendTo("#element");
             </script>
        </body>
   </html>

@@ -2,6 +2,7 @@
 
 import { PivotView, IDataSet, PivotChart } from '@syncfusion/ej2-pivotview';
 import { pivotData } from './datasource.ts';
+import { Button } from '@syncfusion/ej2-buttons';
 
 PivotView.Inject(PivotChart);
 let pivotTableObj: PivotView = new PivotView({

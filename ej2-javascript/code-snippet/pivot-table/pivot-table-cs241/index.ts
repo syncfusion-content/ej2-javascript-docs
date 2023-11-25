@@ -20,7 +20,7 @@ let pivotTableObj: PivotView = new PivotView({
     },
     cellSelecting: (args: PivotCellSelectedEventArgs) => {
         //args.currentCell -> get current selected cell information
-    }
+    },
     height: 350
 });
 pivotTableObj.appendTo('#PivotTable');

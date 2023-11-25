@@ -2,6 +2,7 @@
 
 import { PivotView, IDataSet, PivotChart } from '@syncfusion/ej2-pivotview';
 import { pivotData } from './datasource.ts';
+import { Button } from '@syncfusion/ej2-buttons';
 
 PivotView.Inject(PivotChart);
 let pivotTableObj: PivotView = new PivotView({
@@ -25,13 +26,9 @@ let pivotTableObj: PivotView = new PivotView({
 pivotTableObj.appendTo('#PivotTable');
 
 let exportBtn: Button = new Button({ isPrimary: true }, '#chartexport');
-let printBtn: Button = new Button({ isPrimary: true }, '#chartprint');
 
 document.getElementById('chartexport').addEventListener('click', () => {
     pivotTableObj.chartExport('PNG', 'result');
-});
-document.getElementById('chartprint').addEventListener('click', () => {
-    pivotTableObj.printChart();
 });
 
 

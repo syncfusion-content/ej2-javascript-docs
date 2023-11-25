@@ -101,9 +101,6 @@ npm start
 The following example shows a basic avatar component.
 
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/avatar/getting-started-cs1/index.ts %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/avatar/getting-started-cs1/index.html %}
 {% endhighlight %}

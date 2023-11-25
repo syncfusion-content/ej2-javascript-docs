@@ -16,13 +16,13 @@ let pivotTableObj: PivotView = new PivotView({
         filters: []
     },
     hyperlinkSettings: {
-        showHyperlink: true
+        showHyperlink: true,
         cssClass: 'e-custom-class'
     },
-    hyperlink: function (args: HyperCellClickEventArgs) {
+    hyperlinkCellClick: function (args: HyperCellClickEventArgs) {
         args.Cancel = false;
         args.CurrentCell.SetAttribute("data-url", "https://ej2.syncfusion.com/");//here we have redirected to EJ2 Syncfusion on hyperlinkcell click
-    }
+    },
     height: 350
 });
 pivotTableObj.appendTo('#PivotTable');

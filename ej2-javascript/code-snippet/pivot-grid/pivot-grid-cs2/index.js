@@ -46,5 +46,5 @@
         showGroupingBar: true,
         maxNodeLimitInEditor: 100
     });
-    pivotGridObj.appendTo('#PivotView');
+    pivotGridObj.appendTo('#PivotGrid');
 

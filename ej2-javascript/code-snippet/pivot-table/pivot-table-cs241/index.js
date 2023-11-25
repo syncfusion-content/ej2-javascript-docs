@@ -14,7 +14,7 @@ var pivotTableObj = new ej.pivotview.PivotView({
     gridSettings: {
         allowSelection: true,
         selectionSettings: { cellSelectionMode: 'Box', type: 'Multiple', mode: 'Cell' }
-    }
+    },
     cellSelecting: function(args)
     {
          //args.currentCell -> get current selected cells information

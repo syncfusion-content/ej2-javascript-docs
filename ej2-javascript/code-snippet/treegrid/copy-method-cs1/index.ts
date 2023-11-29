@@ -1,6 +1,5 @@
-
-
 import { TreeGrid, Page, Selection } from '@syncfusion/ej2-treegrid';
+import { Button } from '@syncfusion/ej2-buttons';
 import { sampleData } from './datasource.ts';
 
 TreeGrid.Inject(Page, Selection);

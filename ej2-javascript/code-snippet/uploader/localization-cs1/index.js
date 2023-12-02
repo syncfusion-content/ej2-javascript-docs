@@ -17,7 +17,9 @@ ej.base.enableRipple(true);
                 "readyToUploadMessage": "Prêt à télécharger",
                 "remove": "Retirer",
                 "cancel": "Annuler",
-                "delete": "Supprimer le fichier"
+                "delete": "Supprimer le fichier",
+                "totalFiles": "Total des fichiers",
+                "size": "taille"
             }
         }
     });

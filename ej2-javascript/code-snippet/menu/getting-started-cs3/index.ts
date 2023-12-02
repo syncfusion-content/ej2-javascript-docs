@@ -6,7 +6,7 @@ import { enableRipple } from '@syncfusion/ej2-base';
 
 enableRipple(true);
 
-const SERVICE_URI: string = 'https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/';
+const SERVICE_URI: string = 'https://services.odata.org/V4/Northwind/Northwind.svc/';
 
 // Menu fields definition.
 let menuFields: FieldSettingsModel = {

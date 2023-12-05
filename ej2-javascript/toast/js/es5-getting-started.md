@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Es5 getting started with ##Platform_Name## Toast control | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Toast control of Syncfusion Essential JS 2 and more details.
+description: Learn here all about Es5 getting started with ##Platform_Name## Toast control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Toast control
+# Es5 getting started with ##Platform_Name## Toast control
 
 The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
@@ -197,6 +197,6 @@ Output will be as follows:
 
 ## See Also
 
-* [How to close the toast with click/tap](./how-to/close-the-toast-with-click-tap/)
-* [How to prevent duplicate toast display](./how-to/prevent-duplicate-toast-display/)
-* [How to show different types of toast](./how-to/show-different-types-of-toast/)
+* [How to close the toast with click/tap](./how-to/close-the-toast-with-click-tap)
+* [How to prevent duplicate toast display](./how-to/prevent-duplicate-toast-display)
+* [How to show different types of toast](./how-to/show-different-types-of-toast)

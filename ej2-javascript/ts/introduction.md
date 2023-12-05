@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Introduction in ##Platform_Name## Introduction md control | Syncfusion
-description: Learn here all about Introduction in Syncfusion ##Platform_Name## Introduction md control of Syncfusion Essential JS 2 and more.
+title: Introduction in JavaScript Introduction md control | Syncfusion
+description: Learn here all about Introduction in Syncfusion JavaScript Introduction md control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Introduction 
-publishingplatform: ##Platform_Name##
+publishingplatform: JavaScript
 documentation: ug
 domainurl: ##DomainURL##
 ---

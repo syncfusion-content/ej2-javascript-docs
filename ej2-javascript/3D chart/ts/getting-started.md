@@ -106,7 +106,7 @@ Now import the 3D Chart component into your `app.ts` to instantiate a 3D Chart a
 import { Chart3D } from '@syncfusion/ej2-charts';
 
 // initialize 3D Chart component
-let chart: Chart3D = new Chart3D ();
+let chart: Chart3D = new Chart3D();
 
 // render initialized 3D Chart
 chart.appendTo('#element');

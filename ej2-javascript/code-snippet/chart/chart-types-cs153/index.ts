@@ -1,7 +1,7 @@
 
 
 
-import { Chart, StackingAreaSeries, DateTime } from '@syncfusion/ej2-charts';
+import { Chart, StackingStepAreaSeries, DateTime } from '@syncfusion/ej2-charts';
 import { stackedData } from './datasource.ts';
 Chart.Inject(StackingStepAreaSeries, DateTime);
 
@@ -17,7 +17,6 @@ let chart: Chart = new Chart({
                 type: 'StackingStepArea',
             }
         ],
-
 }, '#element');
 
 

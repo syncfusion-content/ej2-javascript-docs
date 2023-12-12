@@ -5,7 +5,7 @@ import { Chart, ColumnSeries, Category } from '@syncfusion/ej2-charts';
 import { DataManager, Query, ODataAdaptor } from '@syncfusion/ej2-data';
 Chart.Inject(ColumnSeries, Category);
 let dataManager: DataManager = new DataManager({
-    url: 'https://js.syncfusion.com/ejServices/Wcf/Northwind.svc/Orders/?$top=7',
+    url: 'https://services.syncfusion.com/js/production/api/orders',
     adaptor: new ODataAdaptor()
 });
 let query: Query = new Query();

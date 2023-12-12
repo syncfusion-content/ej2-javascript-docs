@@ -2,7 +2,6 @@
 
 
 import { Chart, LineSeries, DateTime, Legend, Tooltip, ILoadedEventArgs, ChartTheme } from '@syncfusion/ej2-charts';
-import { Browser } from '@syncfusion/ej2-base';
 Chart.Inject(LineSeries, DateTime, Legend, Tooltip);
 
 

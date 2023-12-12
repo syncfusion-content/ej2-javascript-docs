@@ -27,7 +27,7 @@ By using the grid’s `databound` event, you can update the current page records
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/grid-visual-cs2/index.ts %}
 {% endhighlight %}

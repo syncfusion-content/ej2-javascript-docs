@@ -2,8 +2,7 @@
 
 
 import { Tab } from '@syncfusion/ej2-navigations';
-import { Chart, ColumnSeries, DateTime, Legend, Tooltip, ILoadedEventArgs, ChartTheme } from '@syncfusion  ej2-charts';
-import { Browser } from '@syncfusion/ej2-base';
+import { Chart, ColumnSeries, DateTime, Legend, Tooltip, ILoadedEventArgs, ChartTheme } from '@syncfusion/ej2-charts';
 Chart.Inject(ColumnSeries, DateTime, Legend, Tooltip);
 
   let chart: Chart = new Chart({

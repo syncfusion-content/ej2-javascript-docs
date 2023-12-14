@@ -79,34 +79,4 @@ In the below example, `ExpandAll`, `CollapseAll` are built-in toolbar items and 
 {% previewsample "page.domainurl/code-snippet/treegrid/toolbar-cs2" %}
 {% endif %}
 
-<!-- Custom toolbar
-
-Custom toolbar is used to customize the whole toolbar. It can be added by defining `toolbarTemplate` as an HTML element ID.
-Actions for this toolbar template items are defined in the [`toolbarClick`](../../api/treegrid/#toolbarclick) event.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/treegrid/toolbar-template-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/toolbar-template-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/treegrid/toolbar-template-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/treegrid/toolbar-template-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/toolbar-template-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/treegrid/toolbar-template-cs1" %}
-{% endif %} -->
+    

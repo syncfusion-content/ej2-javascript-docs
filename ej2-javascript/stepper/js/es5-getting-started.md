@@ -15,7 +15,7 @@ The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaS
 
 ## Dependencies
 
-The following are the list of dependencies, that are required to use the Stepper control in your application.
+The following list of dependencies is required to use the Stepper control in your application.
 
 ```js
 |-- @syncfusion/ej2-navigations
@@ -98,18 +98,21 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
     <nav id="stepper"></nav>
 
     <script>
+
       // Initialize Stepper control
       var stepper = new ej.stepper.Stepper({
         steps: [{}, {}, {}, {}, {}],
       });
+
       // Render initialized Stepper.
       stepper.appendTo("#stepper");
+
     </script>
   </body>
 </html>
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Syncfusion JavaScript Stepper** control.
+**Step 6:** Now, run the `index.html` in web browser, it will render the **Syncfusion JavaScript (ES5) Stepper** control.
 
 ### Using CDN link for script and style reference
 
@@ -119,21 +122,21 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 **Syntax:**
 
-> Dependency Script: `https://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+> Dependency Script: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{DEPENDENCY_PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Control Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+> Control Script: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Dependency Styles: `https://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/styles/material.css`
+> Dependency Styles: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{DEPENDENCY_PACKAGE_NAME}/styles/material.css`
 >
-> Control Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material.css`
+> Control Styles: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/styles/material.css`
 
 **Example:**
 
-> Script: [`https://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js`](https://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js)
+> Script: [`https://cdn.syncfusion.com/ej2/22.1.34/ej2-navigations/dist/global/ej2-navigations.min.js`](https://cdn.syncfusion.com/ej2/22.1.34/ej2-navigations/dist/global/ej2-navigations.min.js)
 >
-> Styles: [`https://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css`](https://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css)
+> Styles: [`https://cdn.syncfusion.com/ej2/22.1.34/ej2-navigations/styles/material.css`](https://cdn.syncfusion.com/ej2/22.1.34/ej2-navigations/styles/material.css)
 
-**Step 3:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the CDN link references. Now, add the `Stepper` element, define the steps using `steps` property and initiate the `Syncfusion JavaScript Stepper` control in the `index.html` by using following code.
+**Step 3:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the CDN link references. Now, add the `Stepper` element, define the steps using `steps` property and initiate the `Syncfusion JavaScript (ES5) Stepper` control in the `index.html` by using following code.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -143,4 +146,19 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
         
 {% previewsample "page.domainurl/code-snippet/stepper/es5-getting-started-cs1" %}
 
-**Step 4:** Now, run the `index.html` in web browser, it will render the `Syncfusion JavaScript Stepper` control.
+**Step 4:** Now, run the `index.html` in web browser, it will render the `Syncfusion JavaScript (ES5) Stepper` control.
+
+## Configure icon and label
+
+You can define the step icon and label by setting the `iconCss` and `label` properties.
+
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/stepper/es5-iconWithLabel-cs1/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="styles.css" %}
+{% include code-snippet/stepper/es5-iconWithLabel-cs1/styles.css %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/stepper/es5-iconWithLabel-cs1" %}

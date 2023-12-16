@@ -52,6 +52,8 @@ In the following sample, the first tile of the color palette represents the no c
 {% previewsample "page.domainurl/code-snippet/colorpicker/no-color/default-cs1" %}
 {% endif %}
 
+>If the [`noColor`](../../api/color-picker/#nocolor) property is enabled, make sure to disable the [`modeswitcher`](../../api/color-picker/#modeswitcher) property.
+
 ## Custom no color
 
 The following sample show the color palette with custom no color option.

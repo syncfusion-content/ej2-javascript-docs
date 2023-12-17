@@ -46,4 +46,3 @@ var diagram = new ej.diagrams.Diagram({
     },
     created: function () { diagram.fitToPage(); }
     }, '#element');
-

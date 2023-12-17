@@ -45,9 +45,11 @@ let chart: AccumulationChart = new AccumulationChart({
         selectedTheme = selectedTheme ? selectedTheme : 'Material';
         args.accumulation.theme = <AccumulationTheme>(selectedTheme.charAt(0).toUpperCase() +
             selectedTheme.slice(1)).replace(/-dark/i, 'Dark');
-        if (args.accumulation.availableSize.width < args.accumulation.availableSize.height) {
-            args.accumulation.series[0].width = '80%';
-            args.accumulation.series[0].height = '70%';
+        if (args.accumulation.availableSize) {
+            if (args.accumulation.availableSize.width < args.accumulation.availableSize.height) {
+                args.accumulation.series[0].width = '80%';
+                args.accumulation.series[0].height = '70%';
+            }
         }
     },
     resized: (args: IAccResizeEventArgs) => {

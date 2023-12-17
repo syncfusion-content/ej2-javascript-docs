@@ -50,6 +50,7 @@ function onCreate() {
         isModal: true,
         height: 'auto',
         width: '500px',
+        cssClass: 'e-rte-elements',
         overlayClick: dialogOverlay,
         buttons: [{ buttonModel: { content: "Insert", isPrimary: true }, click: onInsert }, { buttonModel: { content: 'Cancel' }, click: dialogOverlay }]
     });

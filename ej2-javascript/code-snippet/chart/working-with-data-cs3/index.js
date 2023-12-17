@@ -1,7 +1,7 @@
 var query = new ej.data.Query();
 
 var data = new ej.data.DataManager({
-    url: 'https://js.syncfusion.com/ejServices/Wcf/Northwind.svc/Orders/?$top=7',
+    url: 'https://services.syncfusion.com/js/production/api/orders',
     adaptor: new ej.data.ODataAdaptor()
 });
 

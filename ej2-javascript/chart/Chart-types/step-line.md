@@ -16,7 +16,7 @@ To render a step line series, use series [`type`](../../api/chart/seriesModel/#t
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs157/index.ts %}
 {% endhighlight %}
@@ -49,10 +49,11 @@ The following properties can be used to customize the `step line` series.
 * [opacity](../../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../../api/chart/seriesModel/#fill-string).
 * [dashArray](../../api/chart/seriesModel/#dasharray) – Specifies the dashes for series.
 * [width](../../api/chart/seriesModel/#width) – Specifies the width for series.
+* `step` – Specifies the position of the step for the series.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs158/index.ts %}
 {% endhighlight %}
@@ -77,7 +78,7 @@ The following properties can be used to customize the `step line` series.
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs158" %}
 {% endif %}
 
-## See Also
+## See also
 
 * [Data label](../data-labels/)
 * [Tooltip](../tool-tip/)

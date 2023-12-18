@@ -12,11 +12,11 @@ domainurl: ##DomainURL##
 
 # Value bar in ##Platform_Name## Bullet chart control
 
-To display the primary data or the current value of the data being measured known as the **Feature Measure** that should be encoded as a bar. This is called as the **Actual Bar** or the **Feature Bar** in the Bullet Chart, and to display the actual bar the `valueField` should be mapped to the appropriate field from the data source.
+To display the primary data or the current value of the data being measured known as the **Feature Measure** that should be encoded as a bar. This is called as the **Actual Bar** or the **Feature Bar** in the Bullet Chart, and to display the actual bar the [`valueField`](../../api/bullet-chart/#valuefield) should be mapped to the appropriate field from the data source.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/bullet-chart/featurebar-cs1/index.ts %}
 {% endhighlight %}
@@ -41,13 +41,13 @@ To display the primary data or the current value of the data being measured know
 {% previewsample "page.domainurl/code-snippet/bullet-chart/featurebar-cs1" %}
 {% endif %}
 
-## Types of Actual Bar
+## Types of actual bar
 
-The shape of the actual bar can be customized using the `type` property of the Bullet Chart. The actual bar contains `Rect` and `Dot` shapes. By default, the actual bar shape is Rect.
+The shape of the actual bar can be customized using the [`type`](../../api/bullet-chart/#type) property of the Bullet Chart. The actual bar contains `Rect` and `Dot` shapes. By default, the actual bar shape is Rect.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/bullet-chart/featurebar-cs2/index.ts %}
 {% endhighlight %}
@@ -72,15 +72,15 @@ The shape of the actual bar can be customized using the `type` property of the B
 {% previewsample "page.domainurl/code-snippet/bullet-chart/featurebar-cs2" %}
 {% endif %}
 
-## Actual Bar Customization
+## Actual bar customization
 
-### Border Customization
+### Border customization
 
-Using the `valueBorder` property of the bullet chart, you can customize the border `color` and `width` of the actual bar.
+Using the [`valueBorder`](../../api/bullet-chart/#valueborder) property of the bullet chart, you can customize the border [`color`](../../api/bullet-chart/border/#color) and [`width`](../../api/bullet-chart/border/#width) of the actual bar.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/bullet-chart/featurebar-cs3/index.ts %}
 {% endhighlight %}
@@ -105,13 +105,13 @@ Using the `valueBorder` property of the bullet chart, you can customize the bord
 {% previewsample "page.domainurl/code-snippet/bullet-chart/featurebar-cs3" %}
 {% endif %}
 
-### Fill color and height Customization
+### Fill color and height customization
 
-Customize the fill color and height of the actual bar using the `valueFill` and `valueHeight` properties of the bullet chart.
+Customize the fill color and height of the actual bar using the [`valueFill`](../../api/bullet-chart/#valuefill) and [`valueHeight`](../../api/bullet-chart/#valueheight) properties of the bullet chart. Also, you can bind the color for the actual bar from [`dataSource`](../../api/bullet-chart/#datasource) for the bullet chart using [`valueFill`](../../api/bullet-chart/#valuefill) property.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/bullet-chart/featurebar-cs4/index.ts %}
 {% endhighlight %}

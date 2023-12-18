@@ -1,9 +1,9 @@
 
 
 
-import { Chart, SteplineSeries } from '@syncfusion/ej2-charts';
+import { Chart, StepLineSeries } from '@syncfusion/ej2-charts';
 import { numData } from './datasource.ts';
-Chart.Inject(SteplineSeries);
+Chart.Inject(StepLineSeries);
 
 let chart: Chart = new Chart({
     series:[{
@@ -15,7 +15,9 @@ let chart: Chart = new Chart({
         //dash array value as 5,5
         dashArray: '5,5',
         xName: 'x', yName: 'y',
-        type: 'Stepline'
+        type: 'StepLine',
+        opacity: 0.5,
+        step: 'Left'
     }],
 }, '#element');
 

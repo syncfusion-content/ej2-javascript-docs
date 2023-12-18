@@ -21,7 +21,9 @@ var chart = new ej.charts.Chart({
         //dash array value as 5,5
         dashArray: '5,5',
         xName: 'x', yName: 'y',
-        type: 'StepLine'
+        type: 'StepLine',
+        opacity: 0.5,
+        step: 'Left'
     }],
     title: 'Efficiency of oil-fired power production'
 }, '#element');

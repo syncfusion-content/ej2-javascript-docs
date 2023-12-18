@@ -39,15 +39,17 @@ var chart = new ej.charts.Chart({
                 //Series type as stacked area series
                 type: 'StackingStepArea',
                 name: 'Organic',border: { width:2, color: 'black'},
-                dashArray: '5.5', fill:'red'
+                dashArray: '5,5', fill:'red', opacity: 0.5, step: 'Center'
             }, {
                 dataSource: chartData, xName: 'x', yName: 'y1',
-                type: 'StackingStepArea', name: 'Fair-trade',
-                border: { width:2, color: 'black'}, dashArray: '5.5',fill:'green'
+                type: 'StackingStepArea', name: 'Fair-trade', opacity: 0.5,
+                border: { width:2, color: 'black'}, dashArray: '5,5', 
+                fill:'green', step: 'Center'
             }, {
                 dataSource: chartData, xName: 'x', yName: 'y3',
                 type: 'StackingStepArea', name: 'Others',
-                border: { width:2, color: 'black'}, dashArray: '5.5',fill:'blue'
+                border: { width:2, color: 'black'}, dashArray: '5,5', fill:'blue',
+                opacity: 0.5, step: 'Center'
             }
         ],
         title: 'Trend in Sales of Ethical Produce'

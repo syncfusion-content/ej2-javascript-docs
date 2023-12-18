@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 ---
 # Step area Chart in ##Platform_Name## control
 
-## Step Area
+## Step area
 
 To render a step area series, use series [`type`](../../api/chart/seriesModel/#type-string) as `StepArea` and inject `StepAreaSeries` module using `Chart.Inject(StepAreaSeries)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs155/index.ts %}
 {% endhighlight %}
@@ -48,10 +48,11 @@ The following properties can be used to customize the `step area` series.
 * [fill](../../api/chart/seriesModel/#fill) – Specifies the color of the area series.
 * [opacity](../../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../../api/chart/seriesModel/#fill).
 * [dashArray](../../api/chart/seriesModel/#dasharray) – Specifies the dashes of series.
+* `step` – Specifies the position of the step for the series.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs156/index.ts %}
 {% endhighlight %}
@@ -76,7 +77,7 @@ The following properties can be used to customize the `step area` series.
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs156" %}
 {% endif %}
 
-## See Also
+## See also
 
 * [Data label](../data-labels/)
 * [Tooltip](../tool-tip/)

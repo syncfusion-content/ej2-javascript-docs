@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 ---
 # Stacked step area Chart in ##Platform_Name## control
 
-## Stacked Area
+## Stacked area
 
 To render a stacked area series, use series [`type`](../../api/chart/seriesModel/#type-string) as `StackingArea` and inject `StackingAreaSeries` module using `Chart.Inject(StackingAreaSeries)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs153/index.ts %}
 {% endhighlight %}
@@ -48,10 +48,11 @@ The following properties can be used to customize the `stacked step area` series
 * [fill](../../api/chart/seriesModel/#fill) – Specifies the color of the area series.
 * [opacity](../../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../../api/chart/seriesModel/#fill).
 * [dashArray](../../api/chart/seriesModel/#dasharray) – Specifies the dashes of series.
+* `step` – Specifies the position of the step for the series.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs154/index.ts %}
 {% endhighlight %}
@@ -76,7 +77,7 @@ The following properties can be used to customize the `stacked step area` series
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs154" %}
 {% endif %}
 
-## See Also
+## See also
 
 * [Data label](../data-labels/)
 * [Tooltip](../tool-tip/)

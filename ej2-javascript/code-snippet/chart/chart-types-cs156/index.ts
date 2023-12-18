@@ -1,9 +1,7 @@
 
 
 
-import {
-  Chart, DateTime, StepAreaSeries,
-} from '@syncfusion/ej2-charts';
+import { Chart, DateTime, StepAreaSeries } from '@syncfusion/ej2-charts';
 Chart.Inject(StepAreaSeries, DateTime);
 
 let chart: Chart = new Chart(
@@ -17,7 +15,8 @@ let chart: Chart = new Chart(
           { x: 2006, y: 437 }, { x: 2007, y: 458 }, { x: 2008, y: 500 },
           { x: 2009, y: 473 }, { x: 2010, y: 520 }, { x: 2011, y: 520 }
         ],
-        fill: 'blue', xName: 'x', yName: 'y', border: { width:2, color: 'red'}
+        fill: 'blue', xName: 'x', yName: 'y', border: { width:2, color: 'red'},
+        opacity: 0.4, step: 'Right', dashArray: '5,5'
       },
     ],
   },

@@ -31,8 +31,9 @@ var chart = new ej.charts.Chart({
             type: 'RangeStepArea',
             name: 'India',
             dataSource: splinedata,
-            xName: 'x', high: 'high1', low: 'low1',
-            opacity: 0.4, fill: 'red', border: { width: 2, color: 'blue'}
+            xName: 'x', high: 'high1', low: 'low1', dashArray: '5,5',
+            opacity: 0.4, fill: 'red', border: { width: 2, color: 'blue'},
+            step: 'Center'
         }],
     title: 'Monthly Temperature Range',
 }, '#element');

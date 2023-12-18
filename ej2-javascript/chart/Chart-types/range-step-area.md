@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # Range step area Chart in ##Platform_Name## control
 
-## Range Step Area
+## Range step area
 
 To render the range step area series, use the series [`type`](../../api/chart/seriesModel/#type) as a `RangeStepArea` and inject the `RangeStepAreaSeries` module using the `Chart.Inject(RangeStepAreaSeries)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs125/index.ts %}
 {% endhighlight %}
@@ -49,10 +49,11 @@ The following properties can be used to customize the `area` series.
 * [fill](../../api/chart/seriesModel/#fill) – Specifies the color of the area series.
 * [opacity](../../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../../api/chart/seriesModel/#fill).
 * [dashArray](../../api/chart/seriesModel/#dasharray) – Specifies the dashes of series.
+* `step` – Specifies the position of the step for the series.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs126/index.ts %}
 {% endhighlight %}
@@ -77,7 +78,7 @@ The following properties can be used to customize the `area` series.
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs126" %}
 {% endif %}
 
-## See Also
+## See also
 
 * [Data label](../data-labels/)
 * [Tooltip](../tool-tip/)

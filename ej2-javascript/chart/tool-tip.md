@@ -50,7 +50,7 @@ By default, tooltip is not visible. You can enable the tooltip by setting [`enab
 
 ## Fixed tooltip
 
-By default, tooltip track the mouse movement, but you can set a fixed position for the tooltip by using the `location` property.
+By default, tooltip track the mouse movement, but you can set a fixed position for the tooltip by using the [`location`](../../api/chart/tooltipSettings/#location) property.
 
 {% if page.publishingplatform == "typescript" %}
 

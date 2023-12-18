@@ -137,7 +137,7 @@ Any HTML element can be displayed in the tooltip by using the [`template`](../..
 
 ## Fixed tooltip
 
-By default, tooltip track the mouse movement, but you can set a fixed position for the tooltip by using the `location` property.
+By default, tooltip track the mouse movement, but you can set a fixed position for the tooltip by using the [`location`](../../api/accumulation-chart/tooltipSettingsModel/#location) property.
 
 {% if page.publishingplatform == "typescript" %}
 

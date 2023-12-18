@@ -48,7 +48,7 @@ The following properties can be used to customize the `step area` series.
 * [fill](../../api/chart/seriesModel/#fill) – Specifies the color of the area series.
 * [opacity](../../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../../api/chart/seriesModel/#fill).
 * [dashArray](../../api/chart/seriesModel/#dasharray) – Specifies the dashes of series.
-* `step` – Specifies the position of the step for the series.
+* [step](../../api/chart/seriesModel/#step) – Specifies the position of the step for the series.
 
 {% if page.publishingplatform == "typescript" %}
 

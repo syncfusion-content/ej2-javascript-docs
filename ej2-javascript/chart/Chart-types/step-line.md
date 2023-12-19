@@ -49,7 +49,7 @@ The following properties can be used to customize the `step line` series.
 * [opacity](../../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../../api/chart/seriesModel/#fill-string).
 * [dashArray](../../api/chart/seriesModel/#dasharray) – Specifies the dashes for series.
 * [width](../../api/chart/seriesModel/#width) – Specifies the width for series.
-* `step` – Specifies the position of the step for the series.
+* [step](../../api/chart/seriesModel/#step) – Specifies the position of the step for the series.
 
 {% if page.publishingplatform == "typescript" %}
 

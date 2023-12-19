@@ -58,11 +58,11 @@ When the [`displayOption`](https://ej2.syncfusion.com/documentation/api/pivotvie
 
 PDF export provides option to customize mapping of pivot table to the exported PDF document.
 
-### To add header and footer
+### To add header and footer while exporting
 
-You can customize text, page number, line, page size and changing orientation in header and footer.
+You can customize text, page number, line, page size and changing orientation in header and footer of the exported document.
 
-#### How to write a text in header/footer
+#### To add a text in header/footer
 
 You can add text either in header or footer of the exported PDF document like in the below code example.
 
@@ -86,7 +86,7 @@ let pdfExportProperties: PdfExportProperties = {
 
 ```
 
-#### How to draw a line in header/footer
+#### To draw a line in header/footer
 
 You can add line either in header or footer of the exported PDF document like in the below code example.
 
@@ -158,6 +158,42 @@ The below code illustrates the PDF export customization options.
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs27" %}
+
+#### Add an image in header/footer
+
+You can add image (Base64 string) either in header or footer of the exported PDF document like in the below code example.
+
+```ts
+
+let pdfExportProperties: PdfExportProperties = {
+    header: {
+        fromTop: 0,
+        height: 130,
+        contents: [
+            {
+                type: 'Image',
+                src: image,
+                position: { x: 40, y: 10 },
+                size: { height: 100, width: 250 },
+            }
+        ]
+    }
+}
+
+```
+
+The below code illustrates the PDF export customization options.
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/pivot-table/pdf-export-cs41/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/pivot-table/pdf-export-cs41/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs41" %}
 
 ### Changing the file name while exporting
 

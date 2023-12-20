@@ -91,7 +91,7 @@ The straightening feature in an Image Editor allows users to adjust an image by 
 
 * degree: Specifies the amount of rotation for straightening the image. Positive values indicate clockwise rotation, while negative values indicate counterclockwise rotation.
 
-Here is an example of straightening the image.
+Here is an example of straightening the image. 
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -8,4 +8,3 @@ var imageEditorObj = new ej.imageeditor.ImageEditor({
 	}
   });
   imageEditorObj.appendTo('#imageeditor');
-

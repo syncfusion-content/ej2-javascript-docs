@@ -11,6 +11,11 @@
     <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
     <script src="resources/popups/ej2-popups.min.js" type="text/javascript"></script>
     <script src="resources/navigations/ej2-navigations.min.js" type="text/javascript"></script>
+    <script src="resources/lists/ej2-lists.min.js" type="text/javascript"></script>
+    <script src="resources/buttons/ej2-buttons.min.js" type="text/javascript"></script>
+    <script src="resources/data/ej2-data.min.js" type="text/javascript"></script>
+    <script src="resources/inputs/ej2-inputs.min.js" type="text/javascript"></script>
+    <script src="resources/splitbuttons/ej2-splitbuttons.min.js" type="text/javascript"></script>
   </head>
   <body>
     <!--Element to render the Stepper control-->

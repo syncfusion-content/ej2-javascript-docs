@@ -2,6 +2,8 @@ import {
      PivotView, FieldList, CalculatedField, Toolbar, RemoveReportArgs, ToolbarArgs,
      ConditionalFormatting, IDataSet, RenameReportArgs, SaveReportArgs, FetchReportArgs, LoadReportArgs, NumberFormatting
 } from '@syncfusion/ej2-pivotview';
+import{ getInstance, select} from '@syncfusion/ej2-base';
+import {DropDownList} from '@syncfusion/ej2-dropdowns';
 import { pivotData } from './datasource.ts';
 
 PivotView.Inject(FieldList, CalculatedField, Toolbar, ConditionalFormatting, NumberFormatting);
@@ -87,9 +89,33 @@ let pivotObj: PivotView = new PivotView({
           if (pivotObj && isInitial) {
                isInitial = false;
                pivotObj.toolbarModule.action = 'Load';
-               (pivotObj.toolbarModule as any).reportList.value = 'Default report';
+               let reportList = getInstance(select('#' + this.pivotGridObj.element.id + '_reportlist', this.pivotGridObj.element), DropDownList);
+               (reportList as DropDownList).value = 'Default report';
                loadReport({ reportName: 'Default report' });
           }
+     },
+     load: function (args: any): void {
+          // Save the desired report that needs to be loaded at initial rendering here.
+        let dataSourceSettings = {
+          dataSource: pivotData as IDataSet[],
+          columns: [{ name: 'Year' }],
+          enableSorting: true,
+          allowLabelFilter: true,
+          values: [{ name: 'Sold', caption: 'Units Sold' }],
+          allowValueFilter: true,
+          formatSettings: [{ name: 'Sold', format: 'C0' }],
+          rows: [{ name: 'Country' }],
+        };
+        let displayOption = { view: 'Both' };
+        let gridSettings = {columnWidth: 100};
+        let report = { dataSourceSettings: dataSourceSettings, displayOption: displayOption, gridSettings: gridSettings };
+        let reports = [
+          {
+            report: JSON.stringify(report),
+            reportName: 'Default report',
+          },
+        ];
+      localStorage['pivotviewReports'] = JSON.stringify(reports);
      },
      newReport: function (): void {
           pivotObj.setProperties({

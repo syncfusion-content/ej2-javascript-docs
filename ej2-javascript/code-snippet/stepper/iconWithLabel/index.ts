@@ -15,5 +15,3 @@ let iconLabelStepper: Stepper = new Stepper({
 });
 
 iconLabelStepper.appendTo('#stepper');
-
-

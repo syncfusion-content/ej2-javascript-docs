@@ -76,13 +76,43 @@ var pivotObj = new ej.pivotview.PivotView({
         }
     },
     dataBound: function () {
+        // Set the default report name to load it in the pivot table during initial rendering.
         if (pivotObj && isInitial) {
-            isInitial = false;
-            pivotObj.toolbarModule.action = 'Load';
-            pivotObj.toolbarModule.reportList.value = 'Default report';
-            loadReport({ reportName: 'Default report' });
+          isInitial = false;
+          pivotObj.toolbarModule.action = 'Load';
+          var reportList = ej.base.getInstance(
+            ej.base.select(
+              '#' + pivotObj.element.id + '_reportlist',
+              pivotObj.element
+            ),
+            ej.dropdowns.DropDownList
+          );
+          reportList.value = 'Default report';
+          loadReport({ reportName: 'Default report' });
         }
-    },
+      },
+      load: function (args) {
+        var dataSourceSettings = {
+          dataSource: pivotData,
+          columns: [{ name: 'Year' }],
+          enableSorting: true,
+          allowLabelFilter: true,
+          values: [{ name: 'Sold', caption: 'Units Sold' }],
+          allowValueFilter: true,
+          formatSettings: [{ name: 'Sold', format: 'C0' }],
+          rows: [{ name: 'Country' }],
+        };
+        var displayOption = { view: 'Both' };
+        var gridSettings = {columnWidth: 100};
+        var report = { dataSourceSettings: dataSourceSettings, displayOption: displayOption, gridSettings: gridSettings };
+        var reports = [
+          {
+            report: JSON.stringify(report),
+            reportName: 'Default report',
+          },
+        ];
+        localStorage.pivotviewReports = JSON.stringify(reports);
+      },
     newReport: function () {
         pivotObj.setProperties({
             dataSourceSettings: { columns: [], rows: [], values: [], filters: [] }

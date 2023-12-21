@@ -1,5 +1,5 @@
 
-
+import { createSpinner, showSpinner, hideSpinner } from '@syncfusion/ej2-popups';
 
 //createSpinner() method is used to create spinner
 
@@ -13,13 +13,13 @@ createSpinner({
 
 //showSpinner() will make the spinner visible
 
-ej.popups.showSpinner(document.getElementById('container'));
+showSpinner(document.getElementById('container'));
 
 setInterval(function () {
 
   //hideSpinner() method used hide spinner
 
-  ej.popups.hideSpinner(document.getElementById('container'))
+  hideSpinner(document.getElementById('container'))
 
 }, 100000);
 

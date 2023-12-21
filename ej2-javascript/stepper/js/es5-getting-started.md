@@ -100,7 +100,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
     <script>
 
       // Initialize Stepper control
-      var stepper = new ej.stepper.Stepper({
+      var stepper = new ej.navigations.Stepper({
         steps: [{}, {}, {}, {}, {}],
       });
 

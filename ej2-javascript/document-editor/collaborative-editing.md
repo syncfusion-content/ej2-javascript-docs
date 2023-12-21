@@ -1,8 +1,12 @@
 ---
-title: "Collaborative Editing (preview)"
-component: "DocumentEditor"
-description: "Learn how to enable collaborative editing"
+layout: post
+title: Collaborative Editing (preview) in ##Platform_Name## Document editor control | Syncfusion
+description: Learn how to enable collaborative editing in Syncfusion ##Platform_Name## Document editor control of Syncfusion Essential JS 2 and more.
+platform: ej2-javascript
+control: Collaborative Editing (preview)
 publishingplatform: ##Platform_Name##
+documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Collaborative Editing (preview)
@@ -10,9 +14,10 @@ publishingplatform: ##Platform_Name##
 Allows multiple users to work on the same document simultaneously. This can be done in real-time, so that collaborators can see the changes as they are made. Collaborative editing can be a great way to improve efficiency, as it allows team members to work together on a document without having to wait for others to finish their changes.
 
 > Note: Collaborative editing support is currently in preview mode only and is not yet ready for production environments.
+
 ## Prerequisites
 
-Following things are needed to enable collaborative editing in Document Editor
+The following are needed to enable collaborative editing in Document Editor.
 
 * `SignalR`
 * `Microsoft SQL Server`
@@ -40,7 +45,7 @@ To enable collaborative editing, inject `CollaborativeEditingHandler` and set th
 
 {% endif %}
 
-## Step 2: Configure SignalR to send and receive changes
+### Step 2: Configure SignalR to send and receive changes
 
 To broadcast the changes made and receive changes from remote users, configure SignalR like below.
 
@@ -82,7 +87,7 @@ When opening a document, we need to generate a unique ID for each document. Thes
 
 {% endif %}
 
-### Step 5: Broadcast current editing changes to remote users
+### Step 4: Broadcast current editing changes to remote users
 
 Changes made on the client-side need to be sent to the server-side to broadcast them to other connected users. To send the changes made to the server, use the method shown below from the document editor using the `contentChange` event.
 

@@ -1,6 +1,6 @@
 //createSpinner() method is used to create spinner
 
-createSpinner({
+ej.popups.createSpinner({
 
   // Specify the target for the spinner to show
 

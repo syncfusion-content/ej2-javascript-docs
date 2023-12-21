@@ -173,8 +173,8 @@ var pdfExportProperties = {
             {
                 type: 'Image',
                 src: image,
-                position: { x: 40, y: 10 },
-                size: { height: 100, width: 250 },
+                position: { x: 20, y: 10 },
+                size: { height: 100, width: 100 },
             }
         ]
     }

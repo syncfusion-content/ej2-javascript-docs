@@ -21,7 +21,7 @@ Get the selected data point values and display the values through grid component
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/how-to-cs16/index.ts %}
 {% endhighlight %}

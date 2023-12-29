@@ -17,7 +17,7 @@ Chart will display details about the points through tooltip, when the mouse is m
 
 ## Default tooltip
 
-By default, tooltip is not visible. You can enable the tooltip by setting [`enable`](../../api/chart/tooltipSettings/#enable) property to **true** and by injecting `Tooltip` module using `Chart.Inject(Tooltip)`.
+By default, tooltip is not visible. You can enable the tooltip by setting [`enable`](../api/chart/tooltipSettings/#enable) property to **true** and by injecting `Tooltip` module using `Chart.Inject(Tooltip)`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -50,7 +50,7 @@ By default, tooltip is not visible. You can enable the tooltip by setting [`enab
 
 ## Fixed tooltip
 
-By default, tooltip track the mouse movement, but you can set a fixed position for the tooltip by using the [`location`](../../api/chart/tooltipSettings/#location) property.
+By default, tooltip track the mouse movement, but you can set a fixed position for the tooltip by using the [`location`](../api/chart/tooltipSettings/#location) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -114,7 +114,7 @@ By default, tooltip shows information of x and y value in points. In addition to
 
 ## Tooltip template
 
-Any HTML elements can be displayed in the tooltip by using the [`template`](../../api/chart/tooltipSettings/#template) property of the tooltip. You can use the ${x} and ${y} as place holders in the HTML element to display the x and y values of the corresponding data point.
+Any HTML elements can be displayed in the tooltip by using the [`template`](../api/chart/tooltipSettings/#template) property of the tooltip. You can use the ${x} and ${y} as place holders in the HTML element to display the x and y values of the corresponding data point.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -145,7 +145,7 @@ Any HTML elements can be displayed in the tooltip by using the [`template`](../.
 
 ## Customize the appearance of tooltip
 
-The [`fill`](../../api/chart/tooltipSettings/#fill) and [`border`](../../api/chart/tooltipSettings/#border) properties are used to customize the background color and border of the tooltip respectively. The [`textStyle`](../../api/chart/tooltipSettings/#textstyle) property in the tooltip is used to customize the font of the tooltip text. The [`highlightColor`](../../api/chart#highlightcolor) property is used to customize the point color while hovering for tooltip.
+The [`fill`](../api/chart/tooltipSettings/#fill) and [`border`](../api/chart/tooltipSettings/#border) properties are used to customize the background color and border of the tooltip respectively. The [`textStyle`](../api/chart/tooltipSettings/#textstyle) property in the tooltip is used to customize the font of the tooltip text. The [`highlightColor`](../api/chart#highlightcolor) property is used to customize the point color while hovering for tooltip.
 
 {% if page.publishingplatform == "typescript" %}
 

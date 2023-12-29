@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Tooltip in ##Platform_Name## Accumulation chart control
 
-Tooltip for the accumulation chart can be enabled by using the [`enable`](../../api/accumulation-chart/tooltipSettingsModel/#enable) property.
+Tooltip for the accumulation chart can be enabled by using the [`enable`](../api/accumulation-chart/tooltipSettingsModel/#enable) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,7 +44,7 @@ Tooltip for the accumulation chart can be enabled by using the [`enable`](../..
 
 ## Header
 
-We can specify header for the tooltip using [`header`](../../api/accumulation-chart/tooltipSettingsModel/#header) property.
+We can specify header for the tooltip using [`header`](../api/accumulation-chart/tooltipSettingsModel/#header) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -106,7 +106,7 @@ By default, tooltip shows information of x and y value in points. In addition to
 
 ## Tooltip format
 
-Any HTML element can be displayed in the tooltip by using the [`template`](../../api/accumulation-chart/tooltipSettingsModel/#template) property.
+Any HTML element can be displayed in the tooltip by using the [`template`](../api/accumulation-chart/tooltipSettingsModel/#template) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -137,7 +137,7 @@ Any HTML element can be displayed in the tooltip by using the [`template`](../..
 
 ## Fixed tooltip
 
-By default, tooltip track the mouse movement, but you can set a fixed position for the tooltip by using the [`location`](../../api/accumulation-chart/tooltipSettingsModel/#location) property.
+By default, tooltip track the mouse movement, but you can set a fixed position for the tooltip by using the [`location`](../api/accumulation-chart/tooltipSettingsModel/#location) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -168,7 +168,7 @@ By default, tooltip track the mouse movement, but you can set a fixed position f
 
 ## Customization
 
-The [`fill`](../../api/accumulation-chart/tooltipSettingsModel/#fill) and [`border`](../../api/accumulation-chart/tooltipSettingsModel/#border) properties are used to customize the background color and border of the tooltip respectively. The [`textStyle`](../../api/accumulation-chart/tooltipSettingsModel/#textstyle) property in the tooltip is used to customize the font of the tooltip text. The [`highlightColor`](../../api/accumulation-chart/accumulationChartModel/#highlightcolor) property can be used to change the color of the data point when hovering.
+The [`fill`](../api/accumulation-chart/tooltipSettingsModel/#fill) and [`border`](../api/accumulation-chart/tooltipSettingsModel/#border) properties are used to customize the background color and border of the tooltip respectively. The [`textStyle`](../api/accumulation-chart/tooltipSettingsModel/#textstyle) property in the tooltip is used to customize the font of the tooltip text. The [`highlightColor`](../api/accumulation-chart/accumulationChartModel/#highlightcolor) property can be used to change the color of the data point when hovering.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -199,7 +199,7 @@ The [`fill`](../../api/accumulation-chart/tooltipSettingsModel/#fill) and [`bord
 
 ## To customize individual tooltip
 
-Using [`tooltipRender`](../../api/accumulation-chart/iAccTooltipRenderEventArgs/) event, you can customize a tooltip for particular point. event, you can customize a tooltip for particular point.
+Using [`tooltipRender`](../api/accumulation-chart/iAccTooltipRenderEventArgs/) event, you can customize a tooltip for particular point. event, you can customize a tooltip for particular point.
 
 {% if page.publishingplatform == "typescript" %}
 

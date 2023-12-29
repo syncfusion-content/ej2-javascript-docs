@@ -1,5 +1,5 @@
-import { CircularGauge, Annotations } from '@syncfusion/ej2-circulargauge';
-CircularGauge.Inject(Annotations);
+import { CircularGauge, Annotations, Gradient } from '@syncfusion/ej2-circulargauge';
+CircularGauge.Inject(Annotations, Gradient);
 let circulargauge: CircularGauge = new CircularGauge({
     animationDuration: 2000,
     axes: [

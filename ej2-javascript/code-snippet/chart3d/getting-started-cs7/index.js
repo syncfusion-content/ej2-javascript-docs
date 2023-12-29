@@ -23,11 +23,8 @@ var chart3D = new ej.charts.Chart3D({
         xName: 'month',
         yName: 'sales',
         type: 'Column',
-        marker: {
-            // Data label for 3d chart series
-            dataLabel: {
-                visible: true
-            }
+        dataLabel: {
+            visible: true
         }
     }],
     legendSettings: { visible: true },

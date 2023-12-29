@@ -13,9 +13,10 @@ let chart: BulletChart = new BulletChart({
         targetField: 'target',
         targetColor: 'color',
         targetWidth: 15,
-        ranges: [{ end: 35 },
-        { end: 50 },
-        { end: 100 }
+        ranges: [
+           { end: 35 },
+           { end: 50 },
+           { end: 100 }
         ],
         minimum: 0, maximum: 100, interval: 20
 }, '#element');

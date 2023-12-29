@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 # Comparative bar in ##Platform_Name## Bullet chart control
 
-The line marker that runs perpendicular to the orientation of the graph is known as the **Comparative Measure** and it is used as a target marker to compare against the feature measure value. This is also called as the **Target Bar** in the Bullet Chart. To display the target bar, the [`targetField`](../../api/bullet-chart#targetfield) should be mapped to the appropriate field from the datasource.
+The line marker that runs perpendicular to the orientation of the graph is known as the **Comparative Measure** and it is used as a target marker to compare against the feature measure value. This is also called as the **Target Bar** in the Bullet Chart. To display the target bar, the [`targetField`](../api/bullet-chart#targetfield) should be mapped to the appropriate field from the datasource.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -43,7 +43,7 @@ The line marker that runs perpendicular to the orientation of the graph is known
 
 ## Types of target bar
 
-The shape of the target bar can be customized using the [`targetTypes`](../../api/bullet-chart#targettypes) property and it supports **Circle**, **Cross**, and **Rect** shapes. The default type of the target bar is **Rect**.
+The shape of the target bar can be customized using the [`targetTypes`](../api/bullet-chart#targettypes) property and it supports **Circle**, **Cross**, and **Rect** shapes. The default type of the target bar is **Rect**.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -74,10 +74,10 @@ The shape of the target bar can be customized using the [`targetTypes`](../../ap
 
 ## Target bar customization
 
-The following properties can be used to customize the target bar. Also, you can bind the color for the target bar from [`dataSource`](../../api/bullet-chart/#datasource) for the bullet chart.
+The following properties can be used to customize the target bar. Also, you can bind the color for the target bar from [`dataSource`](../api/bullet-chart/#datasource) for the bullet chart.
 
-* [`targetColor`](../../api/bullet-chart#targetcolor) - Specifies the fill color of target bar.
-* [`targetWidth`](../../api/bullet-chart#targetwidth) - Specifies the width of target bar.
+* [`targetColor`](../api/bullet-chart#targetcolor) - Specifies the fill color of target bar.
+* [`targetWidth`](../api/bullet-chart#targetwidth) - Specifies the width of target bar.
 
 {% if page.publishingplatform == "typescript" %}
 

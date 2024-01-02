@@ -136,3 +136,4 @@ In the EJ2 Gantt control, it is possible to customize multiple [`eventMarkers`](
 
 {% previewsample "page.domainurl/code-snippet/gantt/eventmarkeroverlap-cs1" %}
 {% endif %}
+

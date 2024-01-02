@@ -27,43 +27,29 @@ You can map The CRUD operation in treegrid can be mapped to server-side Controll
 
 The following code example describes the above behavior.
 
-```ts
+{% if page.publishingplatform == "typescript" %}
 
-import { TreeGrid, Edit, Toolbar } from '@syncfusion/ej2-treegrid';
-import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/treegrid/edit-cs17/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/treegrid/edit-cs17/index.html %}
+{% endhighlight %}
+{% endtabs %}
 
-TreeGrid.Inject(Edit, Toolbar);
+{% elsif page.publishingplatform == "javascript" %}
 
-let data: DataManager = new DataManager({
-    url: "Home/DataSource",
-    updateUrl: "Home/Update",
-    insertUrl: "Home/Insert",
-    removeUrl: "Home/Delete",
-    batchUrl: "Home/Remove",
-    adaptor: new UrlAdaptor
-});
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/treegrid/edit-cs17/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/treegrid/edit-cs17/index.html %}
+{% endhighlight %}
+{% endtabs %}
 
-let treeGridObj: TreeGrid = new TreeGrid({
-    dataSource: data,
-    idMapping: 'TaskID',
-    parentIdMapping: 'parentItem',
-    hasChildMapping: 'isParent',
-    toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
-    editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Row', newRowPosition: 'Below' },
-    treeColumnIndex: 1,
-    columns: [
-        { field: 'TaskID', headerText: 'Task ID', isPrimaryKey: true, width: 90, textAlign: 'Right'},
-        { field: 'TaskName', headerText: 'Task Name', width: 180 },
-        {
-            field: 'StartDate', headerText: 'Start Date', width: 90, textAlign: 'Right', editType: 'datepickeredit', type: 'date', format: 'yMd'
-        },
-        { field: 'Priority', headerText: 'Priority', width: 80, validationRules: { required: true } }
-    ],
-    height: 270
-});
-treeGridObj.appendTo('#TreeGrid');
-
-```
+{% endif %}
 
 Also, when using the `UrlAdaptor`, you need to return the data as JSON from the controller action and the JSON object must contain a property as `result` with dataSource as its value and one more property `count` with the dataSource total records count as its value.
 
@@ -133,7 +119,7 @@ public int FindChildRecords(int id)
 
 The newly added record details are bound to the `value` parameter and `relationalKey` contains primaryKey value of an selected record helps to find out the position of newly added record. Please refer to the following screenshot.
 
-![Insert](images/insert.PNG)
+![Insert](../images/insert.PNG)
 
 ## Update record
 
@@ -158,7 +144,7 @@ public ActionResult Update(TreeGridData value)
 
 The updated record details are bound to the `value` parameter. Please refer to the following screenshot.
 
-![Update](images/update.PNG)
+![Update](../images/update.PNG)
 
 ## Delete record
 
@@ -187,11 +173,11 @@ public ActionResult Remove(List<TreeGridData> changed, List<TreeGridData> added,
 
 The deleted record primary key value is bound to the `key` parameter. Please refer to the following screenshot.
 
-![Delete](images/remove.PNG)
+![Delete](../images/remove.PNG)
 
 While delete parent record, the parent and child records is bound to the `deleted` parameter. Please refer to the following screenshot.
 
-![Remove](images/delete.PNG)
+![Remove](../images/delete.PNG)
 
 ## Remote save adaptor
 
@@ -201,43 +187,29 @@ Datasource must be set to **json** property and set **RemoteSaveAdaptor** to the
 
 You can use the following code example to use **RemoteSaveAdaptor** in TreeGrid.
 
-```ts
+{% if page.publishingplatform == "typescript" %}
 
-import { TreeGrid, Edit, Toolbar } from '@syncfusion/ej2-treegrid';
-import { DataManager, RemoteSaveAdaptor } from '@syncfusion/ej2-data';
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/treegrid/edit-cs18/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/treegrid/edit-cs18/index.html %}
+{% endhighlight %}
+{% endtabs %}
 
-TreeGrid.Inject(Edit, Toolbar);
+{% elsif page.publishingplatform == "javascript" %}
 
-let dataSource: DataManager = new DataManager({
-    json: window.griddata,
-    updateUrl: "Home/Update",
-    insertUrl: "Home/Insert",
-    removeUrl: "Home/Delete",
-    batchUrl: "Home/Remove",
-    adaptor: new RemoteSaveAdaptor
-});
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/treegrid/edit-cs18/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/treegrid/edit-cs18/index.html %}
+{% endhighlight %}
+{% endtabs %}
 
-let treeGridObj: TreeGrid = new TreeGrid({
-    dataSource: dataSource,
-    idMapping: 'TaskID',
-    parentIdMapping: 'parentItem',
-    hasChildMapping: 'isParent',
-    toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
-    editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Row' },
-    treeColumnIndex: 1,
-    columns: [
-        { field: 'TaskID', headerText: 'Task ID', isPrimaryKey: true, width: 90, textAlign: 'Right'},
-        { field: 'TaskName', headerText: 'Task Name', width: 180 },
-        {
-            field: 'StartDate', headerText: 'Start Date', width: 90, textAlign: 'Right', editType: 'datepickeredit', type: 'date', format: 'yMd'
-        },
-        { field: 'Priority', headerText: 'Priority', width: 80, validationRules: { required: true } }
-    ],
-    height: 270
-});
-treeGridObj.appendTo('#TreeGrid');
-
-```
+{% endif %}
 
 The following code example describes how to fetch the data from `ViewBag` in angular.
 

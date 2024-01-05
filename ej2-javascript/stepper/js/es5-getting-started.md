@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Es5 getting started with ##Platform_Name## Stepper control | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more details.
+description:  Checkout and learn about Es5 getting started with ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Stepper
 publishingplatform: ##Platform_Name##
@@ -136,7 +136,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 >
 > Styles: [`https://cdn.syncfusion.com/ej2/22.1.34/ej2-navigations/styles/material.css`](https://cdn.syncfusion.com/ej2/22.1.34/ej2-navigations/styles/material.css)
 
-**Step 3:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the CDN link references. Now, add the `Stepper` element, define the steps using `steps` property and initiate the `Syncfusion JavaScript (ES5) Stepper` control in the `index.html` by using following code.
+**Step 3:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the CDN link references. Now, add the `Stepper` element, define the steps using [steps](https://ej2.syncfusion.com/javascript/documentation/api/stepper/#steps) property and initiate the `Syncfusion JavaScript (ES5) Stepper` control in the `index.html` by using following code.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}

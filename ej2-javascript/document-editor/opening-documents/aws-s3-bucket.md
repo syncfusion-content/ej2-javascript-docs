@@ -17,13 +17,13 @@ To load a document from AWS S3 in a Document Editor, you can follow the steps be
 
 **Step 1:** Create a Simple Document Editor Sample in TypeScript
 
-Start by following the steps provided in this [link](../ts/getting-started.md) to create a simple Document Editor sample in Typescript. This will give you a basic setup of the Document Editor component. 
+Start by following the steps provided in this [link](../../document-editor/getting-started) to create a simple Document Editor sample in Typescript. This will give you a basic setup of the Document Editor component. 
 
 {% elsif page.publishingplatform == "javascript" %}
 
 **Step 1:** Create a Simple Document Editor Sample in Javascript
 
-Start by following the steps provided in this [link](../js/getting-started.md) to create a simple Document Editor sample in Javascript. This will give you a basic setup of the Document Editor component. 
+Start by following the steps provided in this [link](../../document-editor/getting-started) to create a simple Document Editor sample in Javascript. This will give you a basic setup of the Document Editor component. 
 
 {% endif %}
 
@@ -31,17 +31,17 @@ Start by following the steps provided in this [link](../js/getting-started.md) t
 
 {% if page.publishingplatform == "typescript" %}
 
-1. Create a web service project in .NET Core 3.0 or above. You can refer to this [link](../ts/web-services-overview.md) for instructions on how to create a web service project.
+* Create a web service project in .NET Core 3.0 or above. You can refer to this [link](../../document-editor/web-services-overview) for instructions on how to create a web service project.
 
 {% elsif page.publishingplatform == "javascript" %}
 
-1. Create a web service project in .NET Core 3.0 or above. You can refer to this [link](../js/web-services-overview.md) for instructions on how to create a web service project.
+* Create a web service project in .NET Core 3.0 or above. You can refer to this [link](../../document-editor/web-services-overview) for instructions on how to create a web service project.
 
 {% endif %}
 
-2. Open the `DocumentEditorController.cs` file in your web service project.
+* Open the `DocumentEditorController.cs` file in your web service project.
 
-3. Import the required namespaces at the top of the file:
+* Import the required namespaces at the top of the file:
 
 ```csharp
 using System.IO;
@@ -50,7 +50,7 @@ using Amazon.S3;
 using Amazon.S3.Model;
 ```
 
-4. Add the following private fields and constructor parameters to the `DocumentEditorController` class, In the constructor, assign the values from the configuration to the corresponding fields
+* Add the following private fields and constructor parameters to the `DocumentEditorController` class, In the constructor, assign the values from the configuration to the corresponding fields
 
 ```csharp
 private IConfiguration _configuration;
@@ -69,7 +69,7 @@ public DocumentEditorController(IWebHostEnvironment hostingEnvironment, IMemoryC
 }
 ```
 
-5. Create the `LoadFromS3()` method to load the document from AWS S3.
+* Create the `LoadFromS3()` method to load the document from AWS S3.
 
 ```csharp
 
@@ -79,7 +79,7 @@ public DocumentEditorController(IWebHostEnvironment hostingEnvironment, IMemoryC
 [Route("LoadFromS3")]
 //Post action for Loading the documents
 
-public async Task<string> LoadFromS3([FromBody] Dictionary<string, string> jsonObject)
+public async Task<string> LoadFromS3([FromBody] Dictionary<string, string> onObject)
 {
   MemoryStream stream = new MemoryStream();
 
@@ -108,7 +108,7 @@ public async Task<string> LoadFromS3([FromBody] Dictionary<string, string> jsonO
 }
 ```
 
-6. Open the `appsettings.json` file in your web service project, Add the following lines below the existing `"AllowedHosts"` configuration
+* Open the `appsettings.json` file in your web service project, Add the following lines below the existing `"AllowedHosts"` configuration
 
 ```json
 {

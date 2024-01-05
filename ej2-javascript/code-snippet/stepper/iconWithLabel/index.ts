@@ -1,5 +1,3 @@
-
-
 import { Stepper, StepModel } from '@syncfusion/ej2-navigations';
 
 let iconWithLabel: StepModel[] = [

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with ##Platform_Name## Stepper control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more details.
+description:  Checkout and learn about Getting started with ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Stepper
 publishingplatform: ##Platform_Name##
@@ -109,7 +109,7 @@ Add the HTML nav tag with the `id` attribute as `stepper` to your `index.html` f
 {% endhighlight %}
 {% endtabs %}
 
-Import the Stepper control in your `app.ts` file, define the steps using `steps` property, and initialize it with `#stepper`.
+Import the Stepper control in your `app.ts` file, define the steps using [steps](https://ej2.syncfusion.com/documentation/api/stepper#steps) property, and initialize it with `#stepper`.
 
 `[src/app/app.ts]`
 

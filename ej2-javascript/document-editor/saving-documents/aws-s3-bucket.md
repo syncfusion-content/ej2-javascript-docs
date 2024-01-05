@@ -17,13 +17,13 @@ To save a document to AWS S3, you can follow the steps below
 
 **Step 1:** Create a Simple Document Editor sample in TypeScript
 
-Follow the instructions provided in this [link](../ts/getting-started.md) to create a simple Document Editor sample in Typescript. This will give you a basic setup of the Document Editor component.
+Follow the instructions provided in this [link](../../document-editor/getting-started) to create a simple Document Editor sample in Typescript. This will give you a basic setup of the Document Editor component.
 
 {% elsif page.publishingplatform == "javascript" %}
 
 **Step 1:** Create a Simple Document Editor sample in JavaScript
 
-Follow the instructions provided in this [link](../ts/getting-started.md) to create a simple Document Editor sample in Javascript. This will give you a basic setup of the Document Editor component.
+Follow the instructions provided in this [link](../../document-editor/getting-started) to create a simple Document Editor sample in Javascript. This will give you a basic setup of the Document Editor component.
 
 {% endif %}
 
@@ -31,17 +31,17 @@ Follow the instructions provided in this [link](../ts/getting-started.md) to cre
 
 {% if page.publishingplatform == "typescript" %}
 
-1. Create a web service project in .NET Core 3.0 or above. You can refer to this [link](../ts/web-services-overview.md) for instructions on how to create a web service project.
+* Create a web service project in .NET Core 3.0 or above. You can refer to this [link](../../document-editor/web-services-overview) for instructions on how to create a web service project.
 
 {% elsif page.publishingplatform == "javascript" %}
 
-1. Create a web service project in .NET Core 3.0 or above. You can refer to this [link](../js/web-services-overview.md) for instructions on how to create a web service project.
+* Create a web service project in .NET Core 3.0 or above. You can refer to this [link](../../document-editor/web-services-overview) for instructions on how to create a web service project.
 
 {% endif %}
 
-2. Open the `DocumentEditorController.cs` file in your web service project.
+* Open the `DocumentEditorController.cs` file in your web service project.
 
-3. Import the required namespaces at the top of the file:
+* Import the required namespaces at the top of the file:
 
 ```csharp
 using System.IO;
@@ -50,7 +50,7 @@ using Amazon.S3;
 using Amazon.S3.Model;
 ```
 
-4. Add the following private fields and constructor parameters to the `DocumentEditorController` class, In the constructor, assign the values from the configuration to the corresponding fields
+* Add the following private fields and constructor parameters to the `DocumentEditorController` class, In the constructor, assign the values from the configuration to the corresponding fields
 
 ```csharp
 private IConfiguration _configuration;
@@ -69,7 +69,7 @@ public DocumentEditorController(IWebHostEnvironment hostingEnvironment, IMemoryC
 }
 ```
 
-5. Create the `SaveToS3()` method to save the document to AWS S3 bucket
+* Create the `SaveToS3()` method to save the document to AWS S3 bucket
 
 ```csharp
 
@@ -87,7 +87,7 @@ public void SaveToS3(IFormCollection data)
   // Configure the AWS SDK with your access credentials and other settings
   var s3Client = new AmazonS3Client(_accessKey, _secretKey, bucketRegion);
   string bucketName = _bucketName;
-  IFormFile file = HttpContext.Request.Form.Files[0];
+  IFormFile file = data.Files[0];
   string documentName = this.GetValue(data, "documentName");
   string result = Path.GetFileNameWithoutExtension(documentName);
   Stream stream = new MemoryStream();
@@ -116,7 +116,7 @@ private string GetValue(IFormCollection data, string key)
 }
 ```
 
-6. Open the `appsettings.json` file in your web service project, Add the following lines below the existing `"AllowedHosts"` configuration
+* Open the `appsettings.json` file in your web service project, Add the following lines below the existing `"AllowedHosts"` configuration
 
 ```json
 {

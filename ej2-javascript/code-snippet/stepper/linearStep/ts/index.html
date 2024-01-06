@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Essential JS 2 - Stepper</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Essential JS 2" />
+    <meta name="author" content="Syncfusion" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-popups/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-navigations/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-buttons/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-splitbuttons/styles/material.css" rel="stylesheet" />
+
+    <!--style reference from app-->
+    <link href="styles.css" rel="stylesheet" />
+
+    <!--system js reference and configuration-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+</head>
+<body>
+    <div id='loader'>LOADING....</div>
+    <div id='container'>
+        <div class="e-btn-group">
+            <input type="radio" id="linear" name="Linear" value="true" onclick="updateLinear(this)" checked/>
+            <label class="e-btn" for="linear">Linear</label>
+            <input type="radio" id="nonLinear" name="Linear" value="false" onclick="updateLinear(this)" />
+            <label class="e-btn" for="nonLinear">Non-Linear</label>
+          </div>
+          <div class="stepper-section"> 
+            <nav id="stepper"></nav>
+          </div>
+    </div>
+</body>
+<style>
+    #container {
+        visibility: hidden;
+    }
+
+    #loader {
+        color: #008cff;
+        height: 40px;
+        left: 45%;
+        position: absolute;
+        top: 45%;
+        width: 30%;
+    }
+</style>
+</html>

@@ -7,7 +7,7 @@ var menuFields = {
     children: ['Orders']
 };
 
-new ej.data.DataManager({ url: SERVICE_URI, adaptor: new ej.data.ODataAdaptor, crossDomain: true })
+new ej.data.DataManager({ url: SERVICE_URI, adaptor: new ej.data.ODataV4Adaptor(), crossDomain: true })
 .executeQuery(
 new ej.data.Query().from('Employees').take(5).hierarchy(
     new ej.data.Query()

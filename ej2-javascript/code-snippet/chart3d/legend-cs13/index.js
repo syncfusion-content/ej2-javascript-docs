@@ -36,6 +36,7 @@ var chart3D = new ej.charts.Chart3D({
     title: 'FB Penetration of Internet Audience',
     legendSettings: {
         width: '180',
+        height: "20",
         enablePages: false
     },
     wallColor: 'transparent',

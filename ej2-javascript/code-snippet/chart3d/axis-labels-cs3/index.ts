@@ -19,7 +19,7 @@ let chartData: any[] = [
 let chart: Chart3D = new Chart3D({
     primaryXAxis: {
         valueType: 'Category',
-        labelIntersectAction: 'Rotate45'
+        labelIntersectAction: 'Rotate90'
     },
     series: [
         {

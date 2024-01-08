@@ -267,7 +267,7 @@ The `stroke` and `border` of data label can be customized using [`fill`](../api/
 {% include code-snippet/chart3d/data-label-cs7/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart3d/data-label-cs7index.html %}
+{% include code-snippet/chart3d/data-label-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
         

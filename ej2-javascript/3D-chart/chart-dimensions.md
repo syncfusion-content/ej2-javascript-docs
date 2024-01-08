@@ -97,7 +97,7 @@ By setting the value in percentage, chart gets its dimension with respect to its
 {% include code-snippet/chart3d/chart-dimension-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/chart3d/chart-dimension-cs3/index.html %}
+{% include code-snippet/chart3d/chart-dimension-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
         

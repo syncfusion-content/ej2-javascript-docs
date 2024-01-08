@@ -290,10 +290,10 @@ By using the [`position`](../api/chart3d/titleSettingsModel/#position) propert
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/chart3d/appearance-cs8 %}
+{% include code-snippet/chart3d/appearance-cs8/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart3d/appearance-cs8 %}
+{% include code-snippet/chart3d/appearance-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -319,7 +319,7 @@ The custom option is used to position the title anywhere in the chart using [`x`
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/chart3d/appearance-cs9index.js %}
+{% include code-snippet/chart3d/appearance-cs9/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chart3d/appearance-cs9/index.html %}

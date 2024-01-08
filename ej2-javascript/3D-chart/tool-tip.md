@@ -89,7 +89,7 @@ By default, tooltip shows information of x and y value in points. In addition to
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/chart3d/tooltip-cs3index.ts %}
+{% include code-snippet/chart3d/tooltip-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chart3d/tooltip-cs3/index.html %}

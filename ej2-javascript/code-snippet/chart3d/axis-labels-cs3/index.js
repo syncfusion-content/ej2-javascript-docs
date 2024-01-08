@@ -15,7 +15,7 @@ var chartData = [
 var chart3D = new ej.charts.Chart3D({
     primaryXAxis: {
         valueType: 'Category',
-        labelIntersectAction: 'Rotate45'
+        labelIntersectAction: 'Rotate90'
     },
     series: [
         {

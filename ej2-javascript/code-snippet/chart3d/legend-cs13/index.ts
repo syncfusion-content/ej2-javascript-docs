@@ -41,6 +41,7 @@ let chart: Chart3D = new Chart3D({
     title: 'FB Penetration of Internet Audience',
     legendSettings: {
         width: '180',
+        height: '20',
         enablePages: false
     },
     wallColor: 'transparent',

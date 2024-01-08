@@ -54,7 +54,19 @@ Date-time category axis is used to display the date-time values with non-linear 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/date-time-cs2/index.ts %}
-{% endhighlight %} 
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart3d/date-time-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart3d/date-time-cs2" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart3d/date-time-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chart3d/date-time-cs2/index.html %}

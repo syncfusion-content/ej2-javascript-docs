@@ -65,7 +65,7 @@ To group the stacked bar, the [`stackingGroup`](../../api/chart3d/series3DModel/
 {% include code-snippet/chart3d/stack-bar-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/chart3d/stack-bar-cs2/index.html %}
+{% include code-snippet/chart3d/stack-bar-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 

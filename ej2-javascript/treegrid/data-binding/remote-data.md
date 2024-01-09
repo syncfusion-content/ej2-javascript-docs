@@ -76,7 +76,7 @@ The following code example describes the behavior of the loadChildOnDemand featu
 {% include code-snippet/treegrid/data-binding-cs9/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/edata-binding-cs9/index.html %}
+{% include code-snippet/treegrid/data-binding-cs9/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -308,7 +308,7 @@ When using virtualization with remote data binding, it helps you to improve the 
 {% include code-snippet/treegrid/data-binding-cs10/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/edata-binding-cs10/index.html %}
+{% include code-snippet/treegrid/data-binding-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -631,7 +631,7 @@ When using virtualization with `loadChildOnDemand` , it helps you to improve the
 {% include code-snippet/treegrid/data-binding-cs11/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/edata-binding-cs11/index.html %}
+{% include code-snippet/treegrid/data-binding-cs11/index.html %}
 {% endhighlight %}
 {% endtabs %}
 

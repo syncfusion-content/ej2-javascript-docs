@@ -139,7 +139,7 @@ To render a cylindrical bar chart, set the [`columnFacet`](../../api/chart3d/ser
 The following properties can be used to customize the `bar` series.
 
 * [fill](../../api/chart3d/series3DModel/#fill) – Specifies the color of the series.
-* [opacity](../../api/chart3d/series3DModel/#opacity) – Specifies the opacity of [fill](../../api/chart3d/series3DModel/#fill).
+* [opacity](../../api/chart3d/series3DModel/#opacity) – Specifies the opacity of the [fill](../../api/chart3d/series3DModel/#fill) color.
 
 {% if page.publishingplatform == "typescript" %}
 

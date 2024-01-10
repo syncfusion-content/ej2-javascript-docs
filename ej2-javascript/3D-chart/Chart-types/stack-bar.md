@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Stacked Bar Chart  in ##Platform_Name## 3D Chart control | Syncfusion
-description: Learn here all about Stacked bar chart in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
+title: Stacked Bar Chart in ##Platform_Name## 3D Chart control | Syncfusion
+description: Learn here all about stacked bar chart in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: 3D Chart 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Stack bar chart in ##Platform_Name## 3D Chart control
+# Stacked bar chart in ##Platform_Name## 3D Chart control
 
 ## Stacked bar chart
 
@@ -43,7 +43,7 @@ To render a stacked bar series, use series [`type`](../../api/chart3d/series3DMo
 
 ## Stacking group
 
-To group the stacked bar, the [`stackingGroup`](../../api/chart3d/series3DModel/#stackinggroup) property can be used. Columns with same group name are stacked on top of each other.
+To group the stacked bar, the [`stackingGroup`](../../api/chart3d/series3DModel/#stackinggroup) property can be used. The columns with same group name are stacked on top of each other.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -108,7 +108,7 @@ To render a cylindrical stacked bar chart, set the [`columnFacet`](../../api/cha
 The following properties can be used to customize the `stacked bar` series.
 
 * [fill](../../api/chart3d/series3DModel/#fill) – Specifies the color of the series.
-* [opacity](../../api/chart3d/series3DModel/#opacity) – Specifies the opacity of [fill](../../api/chart3d/series3DModel/#fill).
+* [opacity](../../api/chart3d/series3DModel/#opacity) – Specifies the opacity of the [fill](../../api/chart3d/series3DModel/#fill) color.
 
 {% if page.publishingplatform == "typescript" %}
 

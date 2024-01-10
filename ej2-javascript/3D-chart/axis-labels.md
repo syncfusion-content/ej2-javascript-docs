@@ -17,11 +17,11 @@ Axis labels are the labels that are positioned adjacent to the y-axis and beneat
 
 When the axis labels overlap with each other, [`labelIntersectAction`](../api/chart3d/axis3D/#labelintersectaction) property in the axis can be used to place them smartly.
 
-When setting `labelIntersectAction` as `Hide`
+**Case 1**: When setting `labelIntersectAction` as `Hide`.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/axis-labels-cs1/index.ts %}
 {% endhighlight %}
@@ -46,11 +46,11 @@ When setting `labelIntersectAction` as `Hide`
 {% previewsample "page.domainurl/code-snippet/chart3d/axis-labels-cs1" %}
 {% endif %}
 
-When setting `labelIntersectAction` as `Rotate45`
+**Case 2**: When setting `labelIntersectAction` as `Rotate45`.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/axis-labels-cs2/index.ts %}
 {% endhighlight %}
@@ -75,11 +75,11 @@ When setting `labelIntersectAction` as `Rotate45`
 {% previewsample "page.domainurl/code-snippet/chart3d/axis-labels-cs2" %}
 {% endif %}
 
-When setting `labelIntersectAction` as `Rotate90`
+**Case 3**: When setting `labelIntersectAction` as `Rotate90`.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/axis-labels-cs3/index.ts %}
 {% endhighlight %}
@@ -106,12 +106,12 @@ When setting `labelIntersectAction` as `Rotate90`
 
 ## Edge label placement
 
-Labels with long text at the edges of an axis may appear partially in the chart. To avoid this,
-use [`edgeLabelPlacement`](../api/chart3d/axis3D/#edgelabelplacement) property in axis, which moves the label inside the chart area for better appearance or hides it.
+Labels with long text at the edges of an axis may appear partially in the 3D chart. To avoid this,
+use the [`edgeLabelPlacement`](../api/chart3d/axis3D/#edgelabelplacement) property in axis, which moves the label inside the chart area for better appearance or hides it.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/axis-labels-cs4/index.ts %}
 {% endhighlight %}
@@ -138,11 +138,11 @@ use [`edgeLabelPlacement`](../api/chart3d/axis3D/#edgelabelplacement) property
 
 ## Maximum labels
 
-The labels will be rendered based on the count in the [`maximumLabels`](../api/chart3d/axis3D/#maximumlabels) property per 100 pixel. If the range (minimum, maximum, interval) and maximumLabels are set, then the priority goes to range. If the range is not set, then it gives priority to maximumLabels property.
+The labels will be rendered based on the count in the [`maximumLabels`](../api/chart3d/axis3D/#maximumlabels) property per 100 pixel. If the range (minimum, maximum, interval) and `maximumLabels` are set, then the priority goes to range. If the range is not set, then the priority goes to `maximumLabels` property.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/axis-labels-cs5/index.ts %}
 {% endhighlight %}

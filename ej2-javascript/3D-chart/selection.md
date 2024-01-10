@@ -12,9 +12,9 @@ domainurl: ##DomainURL##
 
 # Selection in ##Platform_Name## 3D Chart control
 
-Chart provides selection support for the series and its data points on mouse click.
+The 3D chart provides selection support for the series and its data points on mouse click.
 
->When Mouse is clicked on the data points, the corresponding series legend also will be selected.
+>When mouse is clicked on the data points, the corresponding series legend will also be selected.
 
 We have different types of selection mode for selecting a data.
 
@@ -29,7 +29,7 @@ To select a point, set the [`selectionMode`](../api/chart3d/chart3DModel/#select
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/selection-cs1/index.ts %}
 {% endhighlight %}
@@ -91,7 +91,7 @@ To select the points that corresponds to the same index in all the series, set t
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/selection-cs3/index.ts %}
 {% endhighlight %}
@@ -122,7 +122,7 @@ To select multiple points or series, enable the [`isMultiSelect`](../api/chart3d
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/selection-cs4/index.ts %}
 {% endhighlight %}
@@ -147,13 +147,13 @@ To select multiple points or series, enable the [`isMultiSelect`](../api/chart3d
 {% previewsample "page.domainurl/code-snippet/chart3d/selection-cs4" %}
 {% endif %}
 
-## Selection on load
+## Selection during initial loading
 
-To select a point or series programmatically on a chart use [`selectedDataIndexes`](../api/chart3d/chart3DModel/#selecteddataindexes) property.
+In a 3D chart, selecting a point or series during initial loading can only be done programmatically. The [`selectedDataIndexes`](../api/chart3d/chart3DModel/#selecteddataindexes) property can be used for this.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/selection-cs5/index.ts %}
 {% endhighlight %}
@@ -178,9 +178,9 @@ To select a point or series programmatically on a chart use [`selectedDataIndexe
 {% previewsample "page.domainurl/code-snippet/chart3d/selection-cs5" %}
 {% endif %}
 
-## Selection through on legend
+## Selection through legend
 
-To select a point or series through on legend use [`toggleVisibility`](../api/chart3d/legendSettingsModel/#togglevisibility) property. Also, use [`enableHighlight`](../api/chart3d/legendSettingsModel/#enablehighlight) property for highlighting the series through legend.
+To select a point or series through legend use the [`toggleVisibility`](../api/chart3d/legendSettingsModel/#togglevisibility) property. Also, use [`enableHighlight`](../api/chart3d/legendSettingsModel/#enablehighlight) property for highlighting the series through legend.
 
 {% if page.publishingplatform == "typescript" %}
 

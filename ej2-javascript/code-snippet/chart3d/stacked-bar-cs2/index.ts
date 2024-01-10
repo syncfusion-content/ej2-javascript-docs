@@ -1,5 +1,5 @@
-import {Chart3D, Category3D, Legend3D, StackingColumnSeries3D, Tooltip3D, Highlight3D, Chart3DLoadedEventArgs } from '@syncfusion/ej2-charts';
-Chart3D.Inject(StackingColumnSeries3D, Category3D, Legend3D, Tooltip3D, Highlight3D);
+import {Chart3D, Category3D, Legend3D, StackingBarSeries3D, Tooltip3D, Highlight3D, Chart3DLoadedEventArgs } from '@syncfusion/ej2-charts';
+Chart3D.Inject(StackingBarSeries3D, Category3D, Legend3D, Tooltip3D, Highlight3D);
 
 let chartData: any[] = [
     { x: '2013', y: 9628912, y1: 4298390, y2: 2842133, y3: 2006366 },

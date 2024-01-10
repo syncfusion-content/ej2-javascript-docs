@@ -3,7 +3,7 @@ layout: post
 title: Tooltip in ##Platform_Name## 3D Chart control | Syncfusion
 description: Learn here all about tooltip in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Tooltip 
+control: 3D Chart 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -13,11 +13,11 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD036 -->
 
-3D Chart will display details about the points through tooltip, when the mouse is moved over the specific point.
+The 3D Chart will display details about the points through tooltip, when the mouse is moved over the specific point.
 
 ## Default tooltip
 
-By default, tooltip is not visible. The tooltip can be enabled by setting [`enable`](../../api/chart3d/tooltipSettings/#enable) property to **true** and by injecting `Tooltip3D` module using `Chart3D.Inject(Tooltip3D)`.
+By default, tooltip is not visible. The tooltip can be enabled by setting the [`enable`](../../api/chart3d/tooltipSettings/#enable) property in `tooltipSettings` to **true** and by injecting `Tooltip3D` module using `Chart3D.Inject(Tooltip3D)`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -83,7 +83,7 @@ By default, tooltip track the mouse movement, but the tooltip can be set in fixe
 
 <!-- markdownlint-disable MD013 -->
 
-By default, tooltip shows information of x and y value in points. In addition to that, more information can be shown in tooltip by using the [`format`](../../api/chart3d/tooltipSettings/#format) property. For example the format `${series.name} : ${point.y}` shows series name and point x value.
+By default, tooltip shows information of x and y value in points. In addition to that, more information can be shown in tooltip by using the [`format`](../../api/chart3d/tooltipSettings/#format) property. For example the format `${series.name} : ${point.y}` shows series name and point y value.
 
 {% if page.publishingplatform == "typescript" %}
 

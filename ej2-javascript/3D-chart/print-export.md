@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Print in ##Platform_Name## 3D Chart control | Syncfusion
-description: Learn here all about chart print in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
+title: Print and Export in ##Platform_Name## 3D Chart control | Syncfusion
+description: Learn here all about print and export in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: 3D Chart 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Chart print in ##Platform_Name## 3D Chart control
+# Print and Export in ##Platform_Name## 3D Chart control
 
 ## Print
 
-The rendered chart can be printed directly from the browser by calling the public method print. ID of the chart div element must be passed as argument to that method.
+The rendered 3D chart can be printed directly from the browser by calling the public method [`print`](../api/chart3d/printUtils/#print). The ID of the 3D chart's div element must be passed as the input parameter to that method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,7 +44,7 @@ The rendered chart can be printed directly from the browser by calling the publi
 
 ## Export
 
-The rendered chart can be exported to `JPEG`, `PNG`, `SVG`, or `PDF` format using the export method in chart. The input parameters for this method are `type` for format and `fileName` for result.
+The rendered 3D chart can be exported to `JPEG`, `PNG`, `SVG`, or `PDF` format using the [`export`](../api/chart3d/exportUtils/#export) method. The input parameters for this method are: `type` for format and `fileName` for result.
 
 {% if page.publishingplatform == "typescript" %}
 

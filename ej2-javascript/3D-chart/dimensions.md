@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chart dimensions in ##Platform_Name## 3D Chart control | Syncfusion
-description: Learn here all about chart dimensions in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
+title: Dimensions in ##Platform_Name## 3D Chart control | Syncfusion
+description: Learn here all about dimensions in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: 3D Chart
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Chart dimensions in ##Platform_Name## 3D Chart control
+# Dimensions in ##Platform_Name## 3D Chart control
 
-## Size for Container
+## Size for container
 
-Chart can be rendered to its container size and it can be set via inline or CSS as demonstrated below.
+The 3D chart can be rendered to its container size and it can be set via inline or CSS as demonstrated below.
 
 ```javascript
     <div id='container'>
@@ -49,19 +49,19 @@ Chart can be rendered to its container size and it can be set via inline or CSS 
 {% endif %}
 <!-- markdownlint-disable MD036 -->
 
-## Size for Chart
+## Size for chart
 
 <!-- markdownlint-disable MD036 -->
 
-The size of the chart can be set directly through [`width`](../api/chart3d/chart3DModel/#width) and [`height`](../api/chart3d/chart3DModel/#height) properties.
+The size of the 3D chart can be set directly through [`width`](../api/chart3d/chart3DModel/#width) and [`height`](../api/chart3d/chart3DModel/#height) properties.
 
 **In Pixel**
 
-The size of the chart can be set in pixel as demonstrated below.
+The size of the 3D chart can be set in pixel as demonstrated below.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/chart-dimension-cs2/index.ts %}
 {% endhighlight %}
@@ -88,11 +88,11 @@ The size of the chart can be set in pixel as demonstrated below.
 
 **In Percentage**
 
-By setting the value in percentage, chart gets its dimension with respect to its container. For example, when the height is ‘50%’, chart renders to half of the container height.
+By setting the value in percentage, 3D chart gets its dimension with respect to its container. For example, when the height is **50%**, chart renders to half of the container height.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/chart-dimension-cs3/index.ts %}
 {% endhighlight %}

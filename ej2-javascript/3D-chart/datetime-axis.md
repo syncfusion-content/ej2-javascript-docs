@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Date Time axis in ##Platform_Name## 3D Chart control | Syncfusion
-description: Learn here all about date time axis in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
+title: DateTime axis in ##Platform_Name## 3D Chart control | Syncfusion
+description: Learn here all about DateTime axis in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: 3D Chart 
 publishingplatform: ##Platform_Name##
@@ -10,15 +10,15 @@ domainurl: ##DomainURL##
 ---
 <!-- markdownlint-disable MD036 -->
 
-# Date time axis in ##Platform_Name## 3D Chart control
+# DateTime axis in ##Platform_Name## 3D Chart control
 
 ## DateTime axis
 
-Date time axis uses date time scale and displays the date time values as axis labels in the specified format.
+DateTime axis uses date time scale and displays the date time values as axis labels in the specified format.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/date-time-cs1/index.ts %}
 {% endhighlight %}
@@ -43,15 +43,15 @@ Date time axis uses date time scale and displays the date time values as axis la
 {% previewsample "page.domainurl/code-snippet/chart3d/date-time-cs1" %}
 {% endif %}
 
->Note: To use datetime axis, we need to inject DateTime using `Chart3D.Inject(DateTime3D)` method and set the [`valueType`](../api/chart3d/axis3D/#valuetype) of axis to DateTime.
+>Note: To use datetime axis, we need to inject `DateTime3D` module using `Chart3D.Inject(DateTime3D)` method and set the [`valueType`](../api/chart3d/axis3D/#valuetype) of axis to **DateTime**.
 
-## DateTimeCategory axis
+## DateTime category axis
 
-Date-time category axis is used to display the date-time values with non-linear intervals. For example, the business days alone have been depicted in a week here.
+DateTime category axis is used to display the date time values with non-linear intervals. For example, the business days alone have been depicted in a week here.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/date-time-cs2/index.ts %}
 {% endhighlight %}
@@ -76,16 +76,15 @@ Date-time category axis is used to display the date-time values with non-linear 
 {% previewsample "page.domainurl/code-snippet/chart3d/date-time-cs2" %}
 {% endif %}
 
->Note: To use dateTimeCategory axis, we need to inject DateTimeCategory using `Chart3D.Inject(DateTimeCategory3D)` method and set the [`valueType`](../api/chart3d/axis3D/#valuetype) of axis to DateTimeCategory.
+>Note: To use datetime category axis, we need to inject `DateTimeCategory3D` module using the `Chart3D.Inject(DateTimeCategory3D)` method and set the [`valueType`](../api/chart3d/axis3D/#valuetype) of axis to **DateTimeCategory**.
 
 ### Range
 
-Range of an axis will be calculated automatically based on the provided data, you can also customize the range of the axis using [`minimum`](../api/chart3d/axis3D/#minimum), [`maximum`](../api/chart3d/axis3D/#maximum) and [`interval`](../api/chart3d/axis3D/#interval) property
-of the axis.
+Range of an axis will be calculated automatically based on the provided data. You can also customize the range of an axis using [`minimum`](../api/chart3d/axis3D/#minimum), [`maximum`](../api/chart3d/axis3D/#maximum) and [`interval`](../api/chart3d/axis3D/#interval) properties.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/date-time-cs3/index.ts %}
 {% endhighlight %}
@@ -112,7 +111,7 @@ of the axis.
 
 ### Interval customization
 
-Date time intervals can be customized by using the [`interval`](../api/chart3d/axis3D/#interval) and [`intervalType`](../api/chart3d/axis3D/#intervaltype) properties of the axis. For example, when you set interval as 2 and intervalType as years, it considers 2 years as interval. Datetime axis supports following interval types,
+Date time intervals can be customized by using the [`interval`](../api/chart3d/axis3D/#interval) and [`intervalType`](../api/chart3d/axis3D/#intervaltype) properties of the axis. For example, when you set `interval` as **2** and `intervalType` as **Years**, it considers 2 years as interval. DateTime axis supports following interval types,
 
 * Auto
 * Years
@@ -124,7 +123,7 @@ Date time intervals can be customized by using the [`interval`](../api/chart3d/a
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/date-time-cs4/index.ts %}
 {% endhighlight %}
@@ -151,19 +150,19 @@ Date time intervals can be customized by using the [`interval`](../api/chart3d/a
 
 **Applying padding to the range**
 
-Padding can be applied to the minimum and maximum extremes of the range by using the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) property. Date time axis supports the following types of padding,
+Padding can be applied to the minimum and maximum extremes of the range by using the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) property. DateTime axis supports the following types of padding,
 
 * None
 * Round
 * Additional
 
-**Datetime - None**
+**DateTime - None**
 
 When the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) is set to `None`, minimum and maximum of an axis is based on the data.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/date-time-cs5/index.ts %}
 {% endhighlight %}
@@ -188,13 +187,13 @@ When the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) is set to `None`,
 {% previewsample "page.domainurl/code-snippet/chart3d/date-time-cs5" %}
 {% endif %}
 
-**Datetime - Round**
+**DateTime - Round**
 
-When the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) is set to `Round`, minimum and maximum will be rounded to the nearest possible value, which is divisible by interval. For example, when the minimum is 15th Jan, interval is 1 and the interval type is ‘month’, then the axis minimum will be Jan 1st.
+When the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) is set to `Round`, minimum and maximum will be rounded to the nearest possible value, which is divisible by interval. For example, when the minimum is **15th Jan**, interval is **1** and interval type is **Month**, then the axis minimum will be **Jan 1st**.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/date-time-cs6/index.ts %}
 {% endhighlight %}
@@ -219,13 +218,13 @@ When the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) is set to `Round`
 {% previewsample "page.domainurl/code-snippet/chart3d/date-time-cs6" %}
 {% endif %}
 
-**Datetime - Additional**
+**DateTime - Additional**
 
 When the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) is set to `Additional`, interval of an axis will be padded to the minimum and maximum of the axis.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/date-time-cs7/index.ts %}
 {% endhighlight %}
@@ -250,13 +249,13 @@ When the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) is set to `Additi
 {% previewsample "page.domainurl/code-snippet/chart3d/date-time-cs7" %}
 {% endif %}
 
-## Label Format
+## Label format
 
-The date can be formatted and parsed to all globalize format using [`labelFormat`](../api/chart3d/axis3D/#labelformat) property in an axis.
+The date can be formatted and parsed to all globalize format using the [`labelFormat`](../api/chart3d/axis3D/#labelformat) property in an axis.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/date-time-cs8/index.ts %}
 {% endhighlight %}
@@ -281,7 +280,7 @@ The date can be formatted and parsed to all globalize format using [`labelForma
 {% previewsample "page.domainurl/code-snippet/chart3d/date-time-cs8" %}
 {% endif %}
 
-The following table describes the result of applying some common date time formats to the `labelFormat` property
+The following table describes the result of applying some common date time formats to the `labelFormat` property.
 
 <!-- markdownlint-disable MD033 -->
 <table>
@@ -323,13 +322,13 @@ The following table describes the result of applying some common date time forma
 </tr>
 </table>
 
-## Custom Label Format
+## Custom label format
 
 Axis also supports custom label format using placeholder like {value}°C, in which the value represent the axis label e.g 20°C.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/date-time-cs9/index.ts %}
 {% endhighlight %}

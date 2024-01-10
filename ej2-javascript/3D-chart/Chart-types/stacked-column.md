@@ -10,6 +10,8 @@ domainurl: ##DomainURL##
 ---
 # 100% Stacked column chart in ##Platform_Name## 3D Chart control
 
+## 100% Stacked column chart
+
 To render a [100% stacked column](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/100-stacked-column-chart) series, use series [`type`](../../api/chart3d/series3DModel/#type) as `StackingColumn100` and inject `StackingColumnSeries3D` module using `Chart3D.Inject(StackingColumnSeries3D)` method.
 
 {% if page.publishingplatform == "typescript" %}
@@ -72,10 +74,10 @@ To render a 100% cylindrical stacked column chart, set the [`columnFacet`](../..
 
 ## Series customization
 
-The following properties can be used to customize the `100% Stacked Column` series.
+The following properties can be used to customize the `100% stacked column` series.
 
 * [fill](../../api/chart3d/series3DModel/#fill) – Specifies the color of the series.
-* [opacity](../../api/chart3d/series3DModel/#opacity) – Specifies the opacity of [fill](../../api/chart3d/series3DModel/#fill).
+* [opacity](../../api/chart3d/series3DModel/#opacity) – Specifies the opacity of the [fill](../../api/chart3d/series3DModel/#fill) color.
 
 {% if page.publishingplatform == "typescript" %}
 

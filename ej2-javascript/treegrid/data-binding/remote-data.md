@@ -71,25 +71,74 @@ The following code example describes the behavior of the loadChildOnDemand featu
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/treegrid/data-binding-cs9/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/data-binding-cs9/index.html %}
-{% endhighlight %}
-{% endtabs %}
+```ts
+import { TreeGrid, Page }from '@syncfusion/ej2-treegrid';
+import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
+
+TreeGrid.Inject(Page);
+
+let data: DataManager = new DataManager({
+    url: "Home/DataSource",
+    updateUrl: "Home/Update",
+    insertUrl: "Home/Insert",
+    removeUrl: "Home/Delete",
+    batchUrl: "Home/Remove",
+    adaptor: new UrlAdaptor
+});
+
+let treegrid: TreeGrid = new TreeGrid({
+    dataSource: data,
+    idMapping: 'TaskID',
+    parentIdMapping: 'ParentItem',
+    hasChildMapping: 'isParent',
+    loadChildOnDemand: true,
+    height: 260,
+    allowPaging: true,
+    treeColumnIndex: 1,
+        columns: [
+        { field: 'TaskID', headerText: 'Task ID', textAlign: 'Right', width: 90 },
+        { field: 'TaskName', headerText: 'Task Name', width: 180 },
+        { field: 'StartDate', headerText: 'Start Date', textAlign: 'Right', width: 90, format: { skeleton: 'yMd', type: 'date' } },
+        { field: 'Duration', headerText: 'Duration', width: 80, textAlign: 'Right' }
+    ]
+});
+
+treegrid.appendTo('#TreeGrid');
+```
 
 {% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/treegrid/data-binding-cs9/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/data-binding-cs9/index.html %}
-{% endhighlight %}
-{% endtabs %}
+```js
+ej.treegrid.TreeGrid.Inject(ej.treegrid.Page);
+
+var data = new ej.data.DataManager({
+    url: "Home/DataSource",
+    updateUrl: "Home/Update",
+    insertUrl: "Home/Insert",
+    removeUrl: "Home/Delete",
+    batchUrl: "Home/Remove",
+    adaptor: new ej.data.UrlAdaptor
+    });
+
+var treeGridObj = new ej.treegrid.TreeGrid({
+    dataSource: data,
+    idMapping: 'TaskID',
+    parentIdMapping: 'ParentItem',
+    hasChildMapping: 'isParent',
+    loadChildOnDemand: true,
+    height: 260,
+    allowPaging: true,
+    treeColumnIndex: 1,
+        columns: [
+        { field: 'TaskID', headerText: 'Task ID', textAlign: 'Right', width: 90 },
+        { field: 'TaskName', headerText: 'Task Name', width: 180 },
+        { field: 'StartDate', headerText: 'Start Date', textAlign: 'Right', width: 90, format: { skeleton: 'yMd', type: 'date' } },
+        { field: 'Duration', headerText: 'Duration', width: 80, textAlign: 'Right' }
+    ]
+});
+
+treeGridObj.appendTo('#TreeGrid');
+```
 
 {% endif %}
 
@@ -303,25 +352,85 @@ When using virtualization with remote data binding, it helps you to improve the 
 
 {% if page.publishingplatform == "typescript" %}
 
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/treegrid/data-binding-cs10/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/data-binding-cs10/index.html %}
-{% endhighlight %}
-{% endtabs %}
+```ts
+import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
+import { TreeGridComponent, VirtualScroll, Sort, Filter, Edit, Toolbar } from '@syncfusion/ej2-treegrid';
+import './App.css';
+
+TreeGrid.Inject(Edit, VirtualScroll, Sort, Filter, Toolbar);
+
+let dataManager: DataManager = new DataManager({
+    adaptor: new UrlAdaptor,
+    insertUrl: "Home/Insert",
+    removeUrl: "Home/Delete",
+    updateUrl: "Home/Update",
+    url: "Home/DataSource",
+});
+
+let treegrid: TreeGrid = new TreeGrid({
+    dataSource: dataManager,
+    idMapping: 'TaskID',
+    parentIdMapping: 'ParentValue',
+    hasChildMapping: 'isParent',
+    loadChildOnDemand: true,
+    expandStateMapping: 'IsExpanded',
+    enableVirtualization: true,
+    height: 400,
+    editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Row', newRowPosition: 'Below' },
+    toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
+    pageSettings: {pageSize: 30},
+    allowPaging: true,
+    allowFiltering: true,
+    allowSorting: true,
+    treeColumnIndex: 1,
+        columns: [
+        { field: 'TaskID', headerText: 'Task ID', textAlign: 'Right', width: 90 },
+        { field: 'TaskName', headerText: 'Task Name', width: 180 },
+        { field: 'Duration', headerText: 'Duration', width: 80, textAlign: 'Right' }
+    ]
+});
+
+treegrid.appendTo('#TreeGrid');
+```
 
 {% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/treegrid/data-binding-cs10/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/data-binding-cs10/index.html %}
-{% endhighlight %}
-{% endtabs %}
+```js
+ej.treegrid.TreeGrid.Inject(ej.treegrid.Edit, ej.treegrid.VirtualScroll, ej.treegrid.Sort, ej.treegrid.Filter, ej.treegrid.Toolbar);
+
+var data = new ej.data.DataManager({
+    adaptor: new ej.data.UrlAdaptor,
+    insertUrl: "Home/Insert",
+    removeUrl: "Home/Delete",
+    updateUrl: "Home/Update",
+    url: "Home/DataSource",
+    });
+
+var treeGridObj = new ej.treegrid.TreeGrid({
+    dataSource: data,
+    idMapping: 'TaskID',
+    parentIdMapping: 'ParentValue',
+    hasChildMapping: 'isParent',
+    loadChildOnDemand: true,
+    expandStateMapping: 'IsExpanded',
+    enableVirtualization: true,
+    height: 400,
+    editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Row', newRowPosition: 'Below' },
+    toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
+    pageSettings: {pageSize: 30},
+    allowPaging: true,
+    allowFiltering: true,
+    allowSorting: true,
+    treeColumnIndex: 1,
+        columns: [
+        { field: 'TaskID', headerText: 'Task ID', textAlign: 'Right', width: 90 },
+        { field: 'TaskName', headerText: 'Task Name', width: 180 },
+        { field: 'Duration', headerText: 'Duration', width: 80, textAlign: 'Right' }
+    ]
+});
+
+treeGridObj.appendTo('#TreeGrid');
+```
 
 {% endif %}
 
@@ -626,25 +735,85 @@ When using virtualization with `loadChildOnDemand` , it helps you to improve the
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/treegrid/data-binding-cs11/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/data-binding-cs11/index.html %}
-{% endhighlight %}
-{% endtabs %}
+```ts
+import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
+import { TreeGridComponent, VirtualScroll, Sort, Filter, Edit, Toolbar } from '@syncfusion/ej2-treegrid';
+import './App.css';
+
+TreeGrid.Inject(Edit, VirtualScroll, Sort, Filter, Toolbar);
+
+let dataManager: DataManager = new DataManager({
+    adaptor: new UrlAdaptor,
+    insertUrl: "Home/Insert",
+    removeUrl: "Home/Delete",
+    updateUrl: "Home/Update",
+    url: "Home/DataSource",
+});
+
+let treegrid: TreeGrid = new TreeGrid({
+    dataSource: dataManager,
+    idMapping: 'TaskID',
+    parentIdMapping: 'ParentValue',
+    hasChildMapping: 'isParent',
+    loadChildOnDemand: true,
+    expandStateMapping: 'IsExpanded',
+    enableVirtualization: true,
+    height: 400,
+    editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Row', newRowPosition: 'Below' },
+    toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
+    pageSettings: {pageSize: 30},
+    allowPaging: true,
+    allowFiltering: true,
+    allowSorting: true,
+    treeColumnIndex: 1,
+        columns: [
+        { field: 'TaskID', headerText: 'Task ID', textAlign: 'Right', width: 90 },
+        { field: 'TaskName', headerText: 'Task Name', width: 180 },
+        { field: 'Duration', headerText: 'Duration', width: 80, textAlign: 'Right' }
+    ]
+});
+
+treegrid.appendTo('#TreeGrid');
+```
 
 {% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/treegrid/data-binding-cs11/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/data-binding-cs11/index.html %}
-{% endhighlight %}
-{% endtabs %}
+```js
+ej.treegrid.TreeGrid.Inject(ej.treegrid.Edit, ej.treegrid.VirtualScroll, ej.treegrid.Sort, ej.treegrid.Filter, ej.treegrid.Toolbar);
+
+var data = new ej.data.DataManager({
+    adaptor: new ej.data.UrlAdaptor,
+    insertUrl: "Home/Insert",
+    removeUrl: "Home/Delete",
+    updateUrl: "Home/Update",
+    url: "Home/DataSource",
+    });
+
+var treeGridObj = new ej.treegrid.TreeGrid({
+    dataSource: data,
+    idMapping: 'TaskID',
+    parentIdMapping: 'ParentValue',
+    hasChildMapping: 'isParent',
+    loadChildOnDemand: true,
+    expandStateMapping: 'IsExpanded',
+    enableVirtualization: true,
+    height: 400,
+    editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Row', newRowPosition: 'Below' },
+    toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
+    pageSettings: {pageSize: 30},
+    allowPaging: true,
+    allowFiltering: true,
+    allowSorting: true,
+    treeColumnIndex: 1,
+        columns: [
+        { field: 'TaskID', headerText: 'Task ID', textAlign: 'Right', width: 90 },
+        { field: 'TaskName', headerText: 'Task Name', width: 180 },
+        { field: 'Duration', headerText: 'Duration', width: 80, textAlign: 'Right' }
+    ]
+});
+
+treegrid.appendTo('#TreeGrid');
+```
 
 {% endif %}
 

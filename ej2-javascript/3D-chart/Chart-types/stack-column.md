@@ -43,7 +43,7 @@ To render a stacked column series, use series [`type`](../../api/chart3d/series3
 
 ## Stacking group
 
-To group the stacked columns, the [`stackingGroup`](../../api/chart3d/series3DModel/#stackinggroup) property can be used. Columns with same group name are stacked on top of each other.
+To group the stacked column, the [`stackingGroup`](../../api/chart3d/series3DModel/#stackinggroup) property can be used. The columns with same group name are stacked on top of each other.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -108,7 +108,7 @@ To render a cylindrical stacked column chart, set the [`columnFacet`](../../api/
 The following properties can be used to customize the `stacked column` series.
 
 * [fill](../../api/chart3d/series3DModel/#fill) – Specifies the color of the series.
-* [opacity](../../api/chart3d/series3DModel/#opacity) – Specifies the opacity of [fill](../../api/chart3d/series3DModel/#fill).
+* [opacity](../../api/chart3d/series3DModel/#opacity) – Specifies the opacity of the [fill](../../api/chart3d/series3DModel/#fill) color.
 
 
 {% if page.publishingplatform == "typescript" %}

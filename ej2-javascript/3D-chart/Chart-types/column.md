@@ -43,7 +43,7 @@ To render a [column series](https://www.syncfusion.com/javascript-ui-controls/js
 
 ## Column space and width
 
-The [`columnSpacing`](../../api/chart3d/series3DModel/#columnspacing) and [`columnWidth`](../../api/chart3d/series3DModel/#columnwidth) properties are used to customize the space between bars.
+The [`columnSpacing`](../../api/chart3d/series3DModel/#columnspacing) and [`columnWidth`](../../api/chart3d/series3DModel/#columnwidth) properties are used to customize the space between columns.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -139,7 +139,7 @@ To render a cylindrical column chart, set the [`columnFacet`](../../api/chart3d/
 The following properties can be used to customize the `column` series.
 
 * [fill](../../api/chart3d/series3DModel/#fill) – Specifies the color of the series.
-* [opacity](../../api/chart3d/series3DModel/#opacity) – Specifies the opacity of [fill](../../api/chart3d/series3DModel/#fill).
+* [opacity](../../api/chart3d/series3DModel/#opacity) – Specifies the opacity of the [fill](../../api/chart3d/series3DModel/#fill) color.
 
 {% if page.publishingplatform == "typescript" %}
 

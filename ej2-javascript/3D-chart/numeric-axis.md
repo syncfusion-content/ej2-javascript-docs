@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Numeric Axis in ##Platform_Name## 3D Chart control | Syncfusion
+title: Numeric axis in ##Platform_Name## 3D Chart control | Syncfusion
 description: Learn here all about numeric axis in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: 3D Chart
@@ -12,11 +12,11 @@ domainurl: ##DomainURL##
 
 # Numeric axis in ##Platform_Name## 3D Chart control
 
-The [numeric axis](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-axis) can be used to represent numeric values of data in chart. By default, the `valueType` of an axis is `Double`.
+The [numeric axis](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-axis) can be used to represent the numeric values of data in 3D chart. By default, the `valueType` of an axis is **Double**.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/numeric-axis-cs1/index.ts %}
 {% endhighlight %}
@@ -43,11 +43,11 @@ The [numeric axis](https://www.syncfusion.com/javascript-ui-controls/js-charts/c
 
 ## Range
 
-Range of an axis, will be calculated automatically based on the provided data, the range of the axis can also be customized using [`minimum`](../api/chart3d/axis3D/#maximum), [`maximum`](../api/chart3d/axis3D/#maximum) and [`interval`](../api/chart3d/axis3D/#interval) property of the axis.
+The range of an axis will be calculated automatically based on the provided data, and it can also be customized by using the [`minimum`](../api/chart3d/axis3D/#maximum), [`maximum`](../api/chart3d/axis3D/#maximum) and [`interval`](../api/chart3d/axis3D/#interval) properties of the axis.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/numeric-axis-cs2/index.ts %}
 {% endhighlight %}
@@ -88,7 +88,7 @@ When the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) is set to `None`,
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/numeric-axis-cs3/index.ts %}
 {% endhighlight %}
@@ -115,11 +115,11 @@ When the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) is set to `None`,
 
 **Numeric - Round**
 
-When the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) is set to `Round`, minimum and maximum will be rounded to the nearest possible value, which is divisible by interval. For example, when the minimum is 3.5 and the interval is 1, then the minimum will be rounded to 3.
+When the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) is set to **Round**, minimum and maximum will be rounded to the nearest possible value, which is divisible by interval. For example, when the [`minimum`](../api/chart3d/axis3D/#maximum) is **3.5** and the [`interval`](../api/chart3d/axis3D/#interval) is **1**, then the minimum will be rounded to **3**.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/numeric-axis-cs4/index.ts %}
 {% endhighlight %}
@@ -146,11 +146,11 @@ When the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) is set to `Round`
 
 **Numeric - Additional**
 
-When the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) is set to `Additional`, interval of an axis will be added to the minimum and maximum of the axis.
+When the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) is set to **Additional**, interval of an axis will be added to the minimum and maximum of the axis.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/numeric-axis-cs5/index.ts %}
 {% endhighlight %}
@@ -177,11 +177,11 @@ When the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) is set to `Additi
 
 **Numeric - Normal**
 
-When the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) is set to `Normal`, padding is applied to the axis based on default range calculation.
+When the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) is set to **Normal**, padding is applied to the axis based on default range calculation.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/numeric-axis-cs6/index.ts %}
 {% endhighlight %}
@@ -208,11 +208,11 @@ When the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) is set to `Normal
 
 **Numeric - Auto**
 
-When the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) is set to `Auto`, horizontal numeric axis takes None as padding calculation, while the vertical numeric axis takes Normal as padding calculation.
+When the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) is set to **Auto**, horizontal numeric axis takes **None** as padding calculation, while the vertical numeric axis takes **Normal** as padding calculation.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/numeric-axis-cs7/index.ts %}
 {% endhighlight %}
@@ -239,13 +239,13 @@ When the [`rangePadding`](../api/chart3d/axis3D/#rangepadding) is set to `Auto`,
 
 ## Label format
 
-**Numeric label lormat**
+**Numeric label format**
 
-Numeric labels can be formatted by using the [`labelFormat`](../api/chart3d/axis3D/#labelformat)property. Numeric labels supports all globalize format.
+Numeric labels can be formatted by using the [`labelFormat`](../api/chart3d/axis3D/#labelformat) property. Also, it supports all globalize format.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/numeric-axis-cs8/index.ts %}
 {% endhighlight %}
@@ -276,7 +276,7 @@ The following table describes the result of applying some commonly used label fo
 <table>
 <tr>
 <td><b>Label Value</b></td>
-<td><b>Label Format property value</b></td>
+<td><b>Label Format: Property Value</b></td>
 <td><b>Result </b></td>
 <td><b>Description </b></td>
 </tr>
@@ -332,11 +332,11 @@ The following table describes the result of applying some commonly used label fo
 
 ## Grouping separator
 
-To separate groups of thousands, use [`useGroupingSeparator`](../api/chart3d/chart3DModel/#usegroupingseparator) property in chart.
+To separate the y-axis labels to groups of thousands, set the [`useGroupingSeparator`](../api/chart3d/chart3DModel/#usegroupingseparator) property to **true** in the 3D chart.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/numeric-axis-cs9/index.ts %}
 {% endhighlight %}
@@ -363,11 +363,11 @@ To separate groups of thousands, use [`useGroupingSeparator`](../api/chart3d/cha
 
 ## Custom label format
 
-Axis also supports custom label format using placeholder like {value}°C, in which the value represent the axis label e.g 20°C.
+The axis supports custom label format using placeholder like **{value}°C**, in which the value represent the axis label e.g 20°C.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart3d/numeric-axis-cs10/index.ts %}
 {% endhighlight %}

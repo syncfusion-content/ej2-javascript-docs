@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Stacked bar chart in ##Platform_Name## 3D Chart control
+# 100% Stacked bar chart in ##Platform_Name## 3D Chart control
 
 ## 100% Stacked bar chart
 
@@ -77,7 +77,7 @@ To render a cylindrical 100% stacked bar chart, set the [`columnFacet`](../../ap
 The following properties can be used to customize the `100% stacked bar` series.
 
 * [fill](../../api/chart3d/series3DModel/#fill) – Specifies the color of the series.
-* [opacity](../../api/chart3d/series3DModel/#opacity) – Specifies the opacity of [fill](../../api/chart3d/series3DModel/#fill).
+* [opacity](../../api/chart3d/series3DModel/#opacity) – Specifies the opacity of the [fill](../../api/chart3d/series3DModel/#fill) color.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Create a block button in ##Platform_Name## Button control
 
-You can customize a Button into a Block Button that will span the entire width of its parent element. To create a Block Button, set the [`cssClass`](../../api/button#cssclass) property to `e-block`.
+You can customize a Button into a Block Button that will span the entire width of its parent element. To create a Block Button, set the [`cssClass`](../../api/button/#cssclass) property to `e-block`.
 
 {% if page.publishingplatform == "typescript" %}
 

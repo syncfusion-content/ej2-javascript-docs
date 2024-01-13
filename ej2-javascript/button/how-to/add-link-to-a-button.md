@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Add link to a button in ##Platform_Name## Button control
 
-The appearance of the Button can be changed like a link by `e-link` class using [`cssClass`](../../api/button#cssclass) property and link navigation can be handled in Button click.
+The appearance of the Button can be changed like a link by `e-link` class using [`cssClass`](../../api/button/#cssclass) property and link navigation can be handled in Button click.
 
 In the following example, link is added in Button click by using `window.open()` method.
 

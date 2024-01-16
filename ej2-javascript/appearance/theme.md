@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Theme in ##Platform_Name## Appearance control | Syncfusion
-description: Learn here all about Theme in Syncfusion ##Platform_Name## Appearance control of Syncfusion Essential JS 2 and more.
+title: Theme in TypeScript Appearance control | Syncfusion
+description: Learn here all about Theme in Syncfusion TypeScript Appearance control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Theme 
-publishingplatform: ##Platform_Name##
+publishingplatform: TypeScript
 documentation: ug
 domainurl: ##DomainURL##
 ---

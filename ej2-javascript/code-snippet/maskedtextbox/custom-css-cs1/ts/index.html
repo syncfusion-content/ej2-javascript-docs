@@ -13,4 +13,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
+
+<body>
+    <div id='loader'>Loading....</div>
+    <div id='container'>
+        <div class='wrap'>
+              <br/><input id="mask1" name="mask_value" class="form-control" />
+        </div>
+    </div>
+
+    <script>
+        var ele = document.getElementById('container');
+        if(ele) {
+          ele.style.visibility = "visible";
+        }   
+    </script>
+        <script src="index.js" type="text/javascript"></script>
+    
+
+</body>
+
 </html>

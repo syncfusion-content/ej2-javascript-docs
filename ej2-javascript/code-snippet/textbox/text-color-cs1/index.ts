@@ -36,18 +36,3 @@ function onKeyup(e) {
       e.parentElement.classList.remove('e-error');
     }
 }
-
-
-           <label>Normal Input</label>
-                <div class="e-input-group">
-                    <input class="e-input" type="text" placeholder="Enter numeric values" onkeyup="onKeyup(this)" />
-                </div>
-          <label> Floating Input </label>
-                <div class="e-float-input">
-                    <input type="text" onkeyup="onKeyup(this)" required />
-                    <span class="e-float-line"> </span>
-                    <label class="e-float-text">Enter numeric values</label>
-                </div>
-
-
-

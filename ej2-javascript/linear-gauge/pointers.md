@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pointers in ##Platform_Name## Linear gauge control | Syncfusion
-description: Learn here all about Pointers in Syncfusion ##Platform_Name## Linear gauge control of Syncfusion Essential JS 2 and more.
+title: Pointers in ##Platform_Name## Linear Gauge Control | Syncfusion
+description: Learn here all about Pointers in Syncfusion Essential ##Platform_Name## Linear Gauge control, its elements and more.
 platform: ej2-javascript
 control: Pointers 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Pointers in ##Platform_Name## Linear gauge control
+# Pointers in ##Platform_Name## Linear Gauge Control
 
 Pointers are used to indicate values on an axis. The value of the pointer can be modified using the [value](../api/linear-gauge/pointerModel/#value) property in [pointers](../api/linear-gauge/axisModel/#pointers).
 

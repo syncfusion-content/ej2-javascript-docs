@@ -197,6 +197,6 @@ Output will be as follows:
 
 ## See Also
 
-* [How to close the toast with click/tap](./how-to/close-the-toast-with-click-tap/)
-* [How to prevent duplicate toast display](./how-to/prevent-duplicate-toast-display/)
-* [How to show different types of toast](./how-to/show-different-types-of-toast/)
+* [How to close the toast with click/tap](./how-to/close-the-toast-with-click-tap)
+* [How to prevent duplicate toast display](./how-to/prevent-duplicate-toast-display)
+* [How to show different types of toast](./how-to/show-different-types-of-toast)

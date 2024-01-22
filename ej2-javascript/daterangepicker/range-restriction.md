@@ -15,7 +15,7 @@ Range selection in a date range picker can be made-to-order with desire restrict
 
 ## Restrict the range within a range
 
-You can restrict the minimum and maximum date that can be allowed as start and end date in a range selection with the help of [`min`](../api/daterangepicker#min), [`max`](../api/daterangepicker#max) properties.
+You can restrict the minimum and maximum date that can be allowed as start and end date in a range selection with the help of [`min`](../api/daterangepicker/#min), [`max`](../api/daterangepicker/#max) properties.
 * `min` – sets the minimum date that can be selected as startDate.
 * `max` – sets the maximum date that can be selected as endDate.
 
@@ -52,7 +52,7 @@ In the following sample, you can select a range from 15th day of this month to 1
 
 ## Range span
 
-Days span between ranges can be limited in order to avoid excess or less days selection towards the required days in a range. In this, minimum and maximum span allowed within the date range can be customized by [`minDays`](../api/daterangepicker#mindays) and [`maxDays`](../api/daterangepicker#maxdays) properties.
+Days span between ranges can be limited in order to avoid excess or less days selection towards the required days in a range. In this, minimum and maximum span allowed within the date range can be customized by [`minDays`](../api/daterangepicker/#mindays) and [`maxDays`](../api/daterangepicker/#maxdays) properties.
 * minDays- Sets the minimum number of days between start and end date.
 * maxDays- Sets the maximum number of days between start and end date.
 In the following sample, the range selection should be greater than 3 days and less than 8 days else it will not set.
@@ -86,7 +86,7 @@ In the following sample, the range selection should be greater than 3 days and l
 
 ## Strict mode
 
-DateRangePicker provides an option to limit the user towards entering the valid date.  With strict mode, you can set only the valid date. If any invalid range is specified, the date range value resets to previous value. This restriction can be availed by enabling [`strictMode`](../api/daterangepicker#strictmode) property as true.
+DateRangePicker provides an option to limit the user towards entering the valid date.  With strict mode, you can set only the valid date. If any invalid range is specified, the date range value resets to previous value. This restriction can be availed by enabling [`strictMode`](../api/daterangepicker/#strictmode) property as true.
 
 {% if page.publishingplatform == "typescript" %}
 

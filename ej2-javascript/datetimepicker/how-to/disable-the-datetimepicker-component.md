@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Disable the datetimepicker component in ##Platform_Name## Datetimepicker control
 
-To disable the DateTimePicker, use its [`enable`](../../api/datetimepicker#enabled) property to `false`.
+To disable the DateTimePicker, use its [`enable`](../../api/datetimepicker/#enabled) property to `false`.
 
 {% if page.publishingplatform == "typescript" %}
 

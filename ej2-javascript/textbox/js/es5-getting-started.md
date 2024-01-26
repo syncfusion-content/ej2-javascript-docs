@@ -112,7 +112,7 @@ Add the HTML Input element with `e-input` class into your `index.html`.
 
 ## Adding icons to the TextBox
 
-You can create a TextBox with icon as a group by creating the parent div element with the class `e-input-group` and add the icon element as span with the class `e-input-group-icon`. For detailed information, refer to the [Groups](./groups/) section.
+You can create a TextBox with icon as a group by creating the parent div element with the class `e-input-group` and add the icon element as span with the class `e-input-group-icon`. For detailed information, refer to the [Groups](./groups) section.
 
 ```
       <!--element which is going to render the TextBox with date icon-->

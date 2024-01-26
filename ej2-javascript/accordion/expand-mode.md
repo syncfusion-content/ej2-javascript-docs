@@ -20,7 +20,7 @@ domainurl: ##DomainURL##
 
 The property enables to expand only one Accordion item at a time. If you expand any new item, the previously expanded one is collapsed and new item changed to expanded state.
 
-You can also choose which accordion pane is expanded state at initial rendering by enabling the [`expanded`](../api/accordion/accordionItemModel#expanded) property on accordion items.
+You can also choose which accordion pane is expanded state at initial rendering by enabling the [`expanded`](../api/accordion/accordionItemModel/#expanded) property on accordion items.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -51,7 +51,7 @@ You can also choose which accordion pane is expanded state at initial rendering 
 
 ## Multiple
 
-Default [`expandMode`](../api/accordion#expandmode) of the Accordion is `Multiple`. It enables you to expand more than one Accordion item at a time. Expand/collapse action can also be toggled by clicking on it again. For example, expanded item is collapsed when you click on it again.
+Default [`expandMode`](../api/accordion/#expandmode) of the Accordion is `Multiple`. It enables you to expand more than one Accordion item at a time. Expand/collapse action can also be toggled by clicking on it again. For example, expanded item is collapsed when you click on it again.
 
 {% if page.publishingplatform == "typescript" %}
 

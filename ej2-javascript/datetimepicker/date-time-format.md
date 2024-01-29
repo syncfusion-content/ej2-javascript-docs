@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Date time format in ##Platform_Name## Datetimepicker control | Syncfusion
-description: Learn here all about Date time format in Syncfusion ##Platform_Name## Datetimepicker control of Syncfusion Essential JS 2 and more.
+title: Date time format in JavaScript DateTime Picker Control | Syncfusion
+description: Learn here all about Date time format support in Syncfusion Essential JavaScript Datetimepicker control, it's elements and more.
 platform: ej2-javascript
 control: Date time format 
-publishingplatform: ##Platform_Name##
+publishingplatform: JavaScript
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Date time format in ##Platform_Name## Datetimepicker control
+# Date time format in JavaScript DateTime Picker Control
 
 DateTime format is a way of representing the date and time value in different string format in the textbox.
 
-By default, the DateTimePicker's format is based on the culture. You can also set the own custom format by using the [`format`](../api/datetimepicker#format) property.
+By default, the DateTimePicker's format is based on the culture. You can also set the own custom format by using the [`format`](../api/datetimepicker/#format) property.
 
 > Once the format property has been defined it will be common to all the cultures.
 
-To know more about the date format standards, refer to the [Internationalization Date Time Format](http://ej2.syncfusion.com/documentation/base/internationalization/) section.
+To know more about the date format standards, refer to the [Internationalization Date Time Format](https://ej2.syncfusion.com/javascript/documentation/datetimepicker/date-time-format) section.
 
 The following example demonstrates the DateTimePicker with the custom format (`yyyy-MM-dd hh:mm`).
 

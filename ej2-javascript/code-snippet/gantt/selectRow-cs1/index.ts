@@ -34,4 +34,3 @@ document.getElementById('selectRow').addEventListener('click', () => {
 document.getElementById('selectRows').addEventListener('click', () => {
     gantt.selectionModule.selectRows([1, 2, 3]); // passing the record index as array collection
 });
-

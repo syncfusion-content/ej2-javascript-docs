@@ -19,3 +19,4 @@ ej.base.enableRipple(true);
     //Render initialized In-place Editor control
     editObj.appendTo('#element');
 
+

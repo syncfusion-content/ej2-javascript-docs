@@ -19,3 +19,4 @@ import { InPlaceEditor } from '@syncfusion/ej2-inplace-editor';
     editObj.appendTo('#element');
 
 
+

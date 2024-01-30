@@ -1,3 +1,16 @@
+---
+layout: post
+title: Taskbar in ##Platform_Name## Gantt control | Syncfusion
+description: Learn here all about Taskbar in Syncfusion ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more.
+platform: ej2-javascript
+control: Taskbar 
+publishingplatform: ##Platform_Name##
+documentation: ug
+domainurl: ##DomainURL##
+---
+
+# Taskbar in ##Platform_Name## Gantt control
+
 ## Taskbar template
 
 You can design your own taskbars to view the tasks in Gantt by using [`taskbarTemplate`](../api/gantt/#taskbartemplate) property. And it is possible to map the template script element’s ID value to this property. It is also possible to customize the parent taskbars and milestones with custom templates by using [`parentTaskbarTemplate`](../api/gantt/#parenttaskbartemplate) and [`milestoneTemplate`](../api/gantt/#milestonetemplate) properties.

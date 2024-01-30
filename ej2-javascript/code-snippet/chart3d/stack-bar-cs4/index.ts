@@ -58,7 +58,6 @@ let chart: Chart3D = new Chart3D({
     legendSettings: {
         enableHighlight: true
     },
-    },
 }, '#element');
 
 

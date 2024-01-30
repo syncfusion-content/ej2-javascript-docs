@@ -191,7 +191,7 @@ The chart can be exported as an image in the form of a base64 string by utilizin
 {% include code-snippet/chart/export-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/chart/export-cs6" %}
 
 {% elsif page.publishingplatform == "javascript" %}

@@ -5,7 +5,7 @@ var chartData = [
     { country: "Australia", gold: 60, silver: 56, bronze: 40 }
 ];
 var chart3D = new ej.charts.Chart3D({
-    textRender: (args) => {
+    textRender: function(args) {
         if (args.point.index === 2) {
             args.text = 'Label';
         }
@@ -17,7 +17,7 @@ var chart3D = new ej.charts.Chart3D({
         valueType: 'Category',
     },
     series:[{
-        dataSource: [{ x: 'USA', y: 46 }, { x: 'GBR', y: 27 }, { x: 'CHN', y: 26 }],
+        dataSource: chartData,
         xName: 'country', yName: 'gold',
         type: 'Column',
         dataLabel: {

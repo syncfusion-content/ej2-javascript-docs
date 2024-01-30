@@ -89,13 +89,13 @@ let pivotObj: PivotView = new PivotView({
           if (pivotObj && isInitial) {
                isInitial = false;
                pivotObj.toolbarModule.action = 'Load';
-               let reportList = getInstance(select('#' + this.pivotGridObj.element.id + '_reportlist', this.pivotGridObj.element), DropDownList);
+               let reportList = getInstance(select('#' + pivotObj.element.id + '_reportlist', pivotObj.element), DropDownList);
                (reportList as DropDownList).value = 'Default report';
                loadReport({ reportName: 'Default report' });
           }
      },
      load: function (args: any): void {
-          // Save the desired report that needs to be loaded at initial rendering here.
+        // Save the desired report that needs to be loaded at initial rendering here.
         let dataSourceSettings = {
           dataSource: pivotData as IDataSet[],
           columns: [{ name: 'Year' }],

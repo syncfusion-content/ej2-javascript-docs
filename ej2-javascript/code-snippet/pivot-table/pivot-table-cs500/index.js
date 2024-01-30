@@ -92,6 +92,7 @@ var pivotObj = new ej.pivotview.PivotView({
         }
       },
       load: function (args) {
+        // Save the desired report that needs to be loaded at initial rendering here.
         var dataSourceSettings = {
           dataSource: pivotData,
           columns: [{ name: 'Year' }],

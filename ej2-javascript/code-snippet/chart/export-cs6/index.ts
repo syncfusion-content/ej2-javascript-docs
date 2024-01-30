@@ -44,14 +44,14 @@ let chart: Chart = new Chart({
     }, '#element');
 
     document.getElementById('export').onclick = () => {
-        var svg = document.querySelector("#element_svg");
+        let svg: any = document.querySelector("#element_svg");
         var svgData = new XMLSerializer().serializeToString(svg);
         var canvas = document.createElement("canvas");
         document.body.appendChild(canvas);
         var svgSize = svg.getBoundingClientRect();
         canvas.width = svgSize.width;
         canvas.height = svgSize.height;
-        var ctx = canvas.getContext("2d");
+        let ctx: any = canvas.getContext("2d");
         var img = document.createElement("img");
         img.setAttribute("src", "data:image/svg+xml;base64," + btoa(svgData));
         img.onload = function() {

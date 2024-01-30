@@ -27,5 +27,5 @@ var chart3D = new ej.charts.Chart3D({
 }, '#element');
 
 document.getElementById('export').onclick = () => {
-    chart.export('PNG', 'result');
+    chart3D.export('PNG', 'result');
 };

@@ -385,6 +385,21 @@ In the following sample, the even series are hidden in the pivot chart.
           
 {% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs437" %}
 
+### Display chart series points in desired color palettes
+
+By default, the pivot chart displays each data point in the chart series with a pre-defined color combination. And, depending on the number of data points drawn in each chart series, this color combination will change automatically. You can, however, design your own color scheme by using the [palettes](https://ej2.syncfusion.com/documentation/api/pivotview/chartSettingsModel/#palettes) property in the [chartSettings](https://ej2.syncfusion.com/documentation/api/pivotview/#chartsettings).
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/pivot-table/pivot-table-cs502/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/pivot-table/pivot-table-cs502/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs502" %}
+
 ## Axis Customization
 
 User can customize axis of the pivot chart using [`primaryXAxis`](https://ej2.syncfusion.com/documentation/api/pivotview/pivotAxisModel/) and [`primaryYAxis`](https://ej2.syncfusion.com/documentation/api/pivotview/pivotAxisModel/) properties in [`chartSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/chartSettingsModel/).

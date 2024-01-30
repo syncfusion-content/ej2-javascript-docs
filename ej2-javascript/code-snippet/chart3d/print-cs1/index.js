@@ -28,5 +28,5 @@ var chart3D = new ej.charts.Chart3D({
 
 
 document.getElementById('print').onclick = () => {
-    chart.print();
+    chart3D.print();
 };

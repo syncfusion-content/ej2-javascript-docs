@@ -32,7 +32,7 @@ The `FormValidator` has following default validation rules, which are used to va
 | `min` | Input value must have greater than or equal to `min` number | if `min: 4`, **5** is valid and **2** is invalid |
 | `regex` | Input value must have valid `regex` format | if `regex: '^[A-z]+$'`, **a** is valid and **1** is invalid |
 
-> The [`rules`](../api/form-validator#rules) option should map the input element's `name` attribute.
+> The [`rules`](../api/form-validator/#rules) option should map the input element's `name` attribute.
 > The `FormValidator` library only validates the mapped input elements.
 
 ## Defining Custom Rules
@@ -97,7 +97,7 @@ formObject.removeRules('age', ['number']);
 
 ## Validating a Form
 
-You can manually trigger validation by calling the [`validate`](../api/form-validator/#validate) method of [`FormValidator`](../api/form-validator).
+You can manually trigger validation by calling the [`validate`](../api/form-validator/#validate) method of [`FormValidator`](../api/form-validator/).
 
 {% if page.publishingplatform == "typescript" %}
 

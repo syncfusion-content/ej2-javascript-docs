@@ -168,7 +168,7 @@ In the following sample, customize the cut, copy, and paste toolbar action with 
 
 ## See Also
 
-* [Globalization](./globalization/)
-* [Accessibility](./accessibility/)
-* [How to customize the toolbar items shortcut key](./how-to/shortcut-key/)
-* [How to customize the saving operation](./how-to/save/)
+* [Globalization](./globalization)
+* [Accessibility](./accessibility)
+* [How to customize the toolbar items shortcut key](./how-to/shortcut-key)
+* [How to customize the saving operation](./how-to/save)

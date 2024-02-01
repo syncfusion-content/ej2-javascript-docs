@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Enable or disable context menu items in ##Platform_Name## Context menu control
 
-You can enable and disable the menu items using the [`enableItems`](../../api/menu#enableitems) method in ContextMenu. To enable menuItems, set the `enable` property in argument to `true` and vice-versa.
+You can enable and disable the menu items using the [`enableItems`](../../api/menu/#enableitems) method in ContextMenu. To enable menuItems, set the `enable` property in argument to `true` and vice-versa.
 
 In the following example, the **Display Settings** in parent items and **Medium icons** in sub menu items are disabled.
 
@@ -36,4 +36,4 @@ In the following example, the **Display Settings** in parent items and **Medium 
 {% previewsample "page.domainurl/code-snippet/context-menu/getting-started-cs3" %}
 {% endif %}
 
-> To disable sub menu items, use the [`beforeOpen`](../../api/menu#beforeopen) event.
+> To disable sub menu items, use the [`beforeOpen`](../../api/menu/#beforeopen) event.

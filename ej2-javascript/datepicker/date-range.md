@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Date range in ##Platform_Name## Datepicker control
 
-DatePicker provides an option to select a date value within a specified range by using the [`min`](../api/datepicker#min) and [`max`](../api/datepicker#max) properties. Always the min value has to be lesser than the max value.
+DatePicker provides an option to select a date value within a specified range by using the [`min`](../api/datepicker/#min) and [`max`](../api/datepicker/#max) properties. Always the min value has to be lesser than the max value.
 
 When the min and max properties are configured and the selected date value is out-of-range or invalid, then the model value will be set to `out of range` date value or `null` respectively with highlighted `error` class to indicates the date is out of range or invalid.
 

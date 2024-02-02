@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Menu item click in ##Platform_Name## Menu control
 
-You can open menu items and sub menu on menu item click by setting [`showItemOnClick`](../../api/menushowitemonclick) property of the Menu. To open sub menu items only on item click, should be set as `true`.
+You can open menu items and sub menu on menu item click by setting [`showItemOnClick`](../../api/menu/#showitemonclick) property of the Menu. To open sub menu items only on item click, should be set as `true`.
 
 {% if page.publishingplatform == "typescript" %}
 

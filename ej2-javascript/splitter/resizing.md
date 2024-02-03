@@ -119,4 +119,4 @@ You can customize the resize gripper icon and cursor in css level.
 
 ## See Also
 
-* [Collapsible panes](./expand-and-collapse/)
+* [Collapsible panes](./expand-and-collapse)

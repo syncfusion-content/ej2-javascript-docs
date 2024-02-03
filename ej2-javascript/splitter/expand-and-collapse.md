@@ -108,4 +108,4 @@ You can render specific panes with collapsed state on page load. Specify a Boole
 
 ## See Also
 
-* [Resizable split panes](./resizing/)
+* [Resizable split panes](./resizing)

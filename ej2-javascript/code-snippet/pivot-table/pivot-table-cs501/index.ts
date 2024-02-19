@@ -20,7 +20,7 @@ let pivotGridObj: PivotView = new PivotView({
           }
      }
 });
-pivotGridObj.appendTo('#PivotTable');
+pivotGridObj.appendTo('#PivotView');
 
 function secondsToHms(d: number) {
      d = Number(d);

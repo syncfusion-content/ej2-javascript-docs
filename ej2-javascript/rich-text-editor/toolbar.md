@@ -290,5 +290,5 @@ The following sample demonstrates the option to insert the image to the Rich Tex
 
 ## See Also
 
-* [How to render the toolbar in inline mode](./inline-mode/)
+* [How to render the toolbar in inline mode](./inline-mode)
 * [How to customize the toolbar items shortcut key](./how-to/shortcut-key)

@@ -22,10 +22,11 @@ let emailData: { [key: string]: Object }[] = [
         { Name: "William", Status: "away", EmployeeImage: "https://ej2.syncfusion.com/demos/src/rich-text-editor/images/8.png", EmailId: "william@gmail.com" }
     ];
 
+    let emailObj: Mention;
     let defaultRTE: RichTextEditor = new RichTextEditor({
         placeholder: 'Type @ and tag the name',
         actionBegin: (args) => {
-            if (args.requestType === 'EnterAction') {
+            if (args.requestType === 'EnterAction' && emailObj.element.classList.contains('e-popup-open')) {
                 args.cancel = true;
             }
         }
@@ -33,7 +34,7 @@ let emailData: { [key: string]: Object }[] = [
     defaultRTE.appendTo('#mention_integration');
 
     // Initialize Mention control.
-    let emailObj: Mention = new Mention({
+        emailObj = new Mention({
         dataSource: emailData,
         fields: { text: 'Name' },
         suggestionCount: 8,

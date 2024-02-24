@@ -19,10 +19,11 @@ window.emailData = [
   { Name: "William", Status: "away", EmployeeImage: "https://ej2.syncfusion.com/demos/src/rich-text-editor/images/8.png", EmailId: "william@gmail.com" }
 ];
 
+var emailObj;
 var defaultRTE = new ej.richtexteditor.RichTextEditor({
    placeholder: 'Type @ and tag the name',
    actionBegin: function (args) {
-       if (args.requestType === 'EnterAction') {
+       if (args.requestType === 'EnterAction' && emailObj.element.classList.contains('e-popup-open')) {
            args.cancel = true;
        }
    }
@@ -30,7 +31,7 @@ var defaultRTE = new ej.richtexteditor.RichTextEditor({
 defaultRTE.appendTo('#mention_integration');
 
 // Initialize Mention control.
-var emailObj = new ej.dropdowns.Mention({
+   emailObj = new ej.dropdowns.Mention({
    dataSource: emailData,
    fields: { text: 'Name' },
    suggestionCount: 8,

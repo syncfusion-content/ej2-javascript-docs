@@ -1,155 +1,76 @@
-var inventoryData = [
+var data = [
     {
-        'Inventor': 'Kia Silverbrook',
-        'NumberofPatentFamilies': 4737,
-        'Country': 'Australia',
-        'Number of INPADOC patents': 9839,
-        'Active': '1994-2016',
-        'Mainfieldsofinvention': 'Printing, Digital paper, Internet, Electronics,Lab-on-a-chip, MEMS, Mechanical, VLSI',
-
+        OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5, OrderDate: new Date(8364186e5),
+        ShipName: 'Vins et alcools Chevalier', ShipCity: 'Reims', ShipAddress: '59 rue de l Abbaye',
+        ShipRegion: 'CJ', ShipPostalCode: '51100', ShipCountry: 'France', Freight: 32.38, Verified: !0
     },
     {
-        'Inventor': 'Shunpei Yamazaki',
-        'NumberofPatentFamilies': 4677,
-        'Country': 'Japan',
-        'Number of INPADOC patents': '10000+',
-        'Active': '1976-2016',
-        'Mainfieldsofinvention': 'Thin film transistors, Liquid crystal displays, Solar cells, Flash memory, OLED',
-
+        OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6, OrderDate: new Date(836505e6),
+        ShipName: 'Toms Spezialitäten', ShipCity: 'Münster', ShipAddress: 'Luisenstr. 48',
+        ShipRegion: 'CJ', ShipPostalCode: '44087', ShipCountry: 'Germany', Freight: 11.61, Verified: !1
     },
     {
-        'Inventor': 'Lowell L. Wood, Jr.',
-        'NumberofPatentFamilies': 1419,
-        'Country': 'USA',
-        'Number of INPADOC patents': 1332,
-        'Active': '1977-2016',
-        'Mainfieldsofinvention': 'Mosquito laser, Nuclear weapons',
-
+        OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4, OrderDate: new Date(8367642e5),
+        ShipName: 'Hanari Carnes', ShipCity: 'Rio de Janeiro', ShipAddress: 'Rua do Paço, 67',
+        ShipRegion: 'RJ', ShipPostalCode: '05454-876', ShipCountry: 'Brazil', Freight: 65.83, Verified: !0
     },
     {
-        'Inventor': 'Paul Lapstun',
-        'NumberofPatentFamilies': 1281,
-        'Country': 'Australia',
-        'Number of INPADOC patents': 3099,
-        'Active': '2000-2016',
-        'Mainfieldsofinvention': 'Printing, Digital paper, Internet, Electronics, CGI, VLSI',
-
+        OrderID: 10251, CustomerID: 'VICTE', EmployeeID: 3, OrderDate: new Date(8367642e5),
+        ShipName: 'Victuailles en stock', ShipCity: 'Lyon', ShipAddress: '2, rue du Commerce',
+        ShipRegion: 'CJ', ShipPostalCode: '69004', ShipCountry: 'France', Freight: 41.34, Verified: !0
     },
     {
-        'Inventor': 'Gurtej Sandhu',
-        'NumberofPatentFamilies': 1255,
-        'Country': 'India',
-        'Number of INPADOC patents': 2038,
-        'Active': '1991-2016',
-        'Mainfieldsofinvention': 'Thin film processes and materials, VLSI, Semiconductor device fabrication',
-
+        OrderID: 10252, CustomerID: 'SUPRD', EmployeeID: 4, OrderDate: new Date(8368506e5),
+        ShipName: 'Suprêmes délices', ShipCity: 'Charleroi', ShipAddress: 'Boulevard Tirou, 255',
+        ShipRegion: 'CJ', ShipPostalCode: 'B-6000', ShipCountry: 'Belgium', Freight: 51.3, Verified: !0
     },
     {
-        'Inventor': 'Jun Koyama',
-        'NumberofPatentFamilies': 1240,
-        'Country': 'Japan',
-        'Number of INPADOC patents': 4126,
-        'Active': '1991-2016',
-        'Mainfieldsofinvention': 'Thin film transistors, Liquid crystal displays, OLED',
-
+        OrderID: 10253, CustomerID: 'HANAR', EmployeeID: 3, OrderDate: new Date(836937e6),
+        ShipName: 'Hanari Carnes', ShipCity: 'Rio de Janeiro', ShipAddress: 'Rua do Paço, 67',
+        ShipRegion: 'RJ', ShipPostalCode: '05454-876', ShipCountry: 'Brazil', Freight: 58.17, Verified: !0
     },
     {
-        'Inventor': 'Roderick A. Hyde',
-        'NumberofPatentFamilies': 1240,
-        'Country': 'USA',
-        'Number of INPADOC patents': 3360,
-        'Active': '2001-2016',
-        'Mainfieldsofinvention': 'Various',
-
+        OrderID: 10254, CustomerID: 'CHOPS', EmployeeID: 5, OrderDate: new Date(8370234e5),
+        ShipName: 'Chop-suey Chinese', ShipCity: 'Bern', ShipAddress: 'Hauptstr. 31',
+        ShipRegion: 'CJ', ShipPostalCode: '3012', ShipCountry: 'Switzerland', Freight: 22.98, Verified: !1
     },
     {
-        'Inventor': 'Leonard Forbes',
-        'NumberofPatentFamilies': 1093,
-        'Country': 'Canada',
-        'Number of INPADOC patents': 1398,
-        'Active': '1991-2016',
-        'Mainfieldsofinvention': 'Semiconductor Memories, CCDs, Thin film processes and materials, VLSI',
-
+        OrderID: 10255, CustomerID: 'RICSU', EmployeeID: 9, OrderDate: new Date(8371098e5),
+        ShipName: 'Richter Supermarkt', ShipCity: 'Genève', ShipAddress: 'Starenweg 5',
+        ShipRegion: 'CJ', ShipPostalCode: '1204', ShipCountry: 'Switzerland', Freight: 148.33, Verified: !0
     },
     {
-        'Inventor': 'Thomas Edison',
-        'NumberofPatentFamilies': 1084,
-        'Country': 'USA',
-        'Number of INPADOC patents': 2332,
-        'Active': '1847(b)-1931(d)',
-        'Mainfieldsofinvention': 'Electric power, Lighting, Batteries, Phonograph, Cement, Telegraphy, Mining',
-
+        OrderID: 10256, CustomerID: 'WELLI', EmployeeID: 3, OrderDate: new Date(837369e6),
+        ShipName: 'Wellington Importadora', ShipCity: 'Resende', ShipAddress: 'Rua do Mercado, 12',
+        ShipRegion: 'SP', ShipPostalCode: '08737-363', ShipCountry: 'Brazil', Freight: 13.97, Verified: !1
     },
     {
-        'Inventor': 'Donald E. Weder',
-        'NumberofPatentFamilies': 999,
-        'Country': 'USA',
-        'Number of INPADOC patents': 1993,
-        'Active': '1976-2015',
-        'Mainfieldsofinvention': 'Florist supplies',
-
+        OrderID: 10257, CustomerID: 'HILAA', EmployeeID: 4, OrderDate: new Date(8374554e5),
+        ShipName: 'HILARION-Abastos', ShipCity: 'San Cristóbal', ShipAddress: 'Carrera 22 con Ave. Carlos Soublette #8-35',
+        ShipRegion: 'Táchira', ShipPostalCode: '5022', ShipCountry: 'Venezuela', Freight: 81.91, Verified: !0
     },
     {
-        'Inventor': 'George Albert Lyon',
-        'NumberofPatentFamilies': 993,
-        'Country': 'Canada',
-        'Number of INPADOC patents': 'NA',
-        'Active': '1882(b)-1961(d)',
-        'Mainfieldsofinvention': 'Automotive, Stainless steel products',
-
+        OrderID: 10258, CustomerID: 'ERNSH', EmployeeID: 1, OrderDate: new Date(8375418e5),
+        ShipName: 'Ernst Handel', ShipCity: 'Graz', ShipAddress: 'Kirchgasse 6',
+        ShipRegion: 'CJ', ShipPostalCode: '8010', ShipCountry: 'Austria', Freight: 140.51, Verified: !0
     },
     {
-        'Inventor': 'John F. O\'Connor',
-        'NumberofPatentFamilies': 949,
-        'Country': 'USA',
-        'Number of INPADOC patents': 'NA',
-        'Active': '1864(b)-1938(d)',
-        'Mainfieldsofinvention': 'Railway draft gearing',
-
+        OrderID: 10259, CustomerID: 'CENTC', EmployeeID: 4, OrderDate: new Date(8376282e5),
+        ShipName: 'Centro comercial Moctezuma', ShipCity: 'México D.F.', ShipAddress: 'Sierras de Granada 9993',
+        ShipRegion: 'CJ', ShipPostalCode: '05022', ShipCountry: 'Mexico', Freight: 3.25, Verified: !1
     },
     {
-        'Inventor': 'Melvin De Groote',
-        'NumberofPatentFamilies': 925,
-        'Country': 'USA',
-        'Number of INPADOC patents': 'NA',
-        'Active': '1895(b)-1963(d)',
-        'Mainfieldsofinvention': 'Chemical de-emulsifiers',
-
+        OrderID: 10260, CustomerID: 'OTTIK', EmployeeID: 4, OrderDate: new Date(8377146e5),
+        ShipName: 'Ottilies Käseladen', ShipCity: 'Köln', ShipAddress: 'Mehrheimerstr. 369',
+        ShipRegion: 'CJ', ShipPostalCode: '50739', ShipCountry: 'Germany', Freight: 55.09, Verified: !0
     },
     {
-        'Inventor': 'Jay S. Walker',
-        'NumberofPatentFamilies': 918,
-        'Country': 'USA',
-        'Number of INPADOC patents': 2206,
-        'Active': '1998-2016',
-        'Mainfieldsofinvention': 'Gaming machines',
-
+        OrderID: 10261, CustomerID: 'QUEDE', EmployeeID: 4, OrderDate: new Date(8377146e5),
+        ShipName: 'Que Delícia', ShipCity: 'Rio de Janeiro', ShipAddress: 'Rua da Panificadora, 12',
+        ShipRegion: 'RJ', ShipPostalCode: '02389-673', ShipCountry: 'Brazil', Freight: 3.05, Verified: !1
     },
     {
-        'Inventor': 'Edward K. Y. Jung',
-        'NumberofPatentFamilies': 911,
-        'Country': 'USA',
-        'Number of INPADOC patents': 2254,
-        'Active': '1996-2016',
-        'Mainfieldsofinvention': 'Various',
-
-    },
-    {
-        'Inventor': 'Francis H. Richards',
-        'NumberofPatentFamilies': 894,
-        'Country': 'USA',
-        'Number of INPADOC patents': 'NA',
-        'Active': '1850(b)-19??(d)',
-        'Mainfieldsofinvention': 'Mechanical, automation',
-
-    },
-    {
-        'Inventor': 'Kangguo Cheng',
-        'NumberofPatentFamilies': 884,
-        'Country': 'USA',
-        'Number of INPADOC patents': 1314,
-        'Active': '2004-2016',
-        'Mainfieldsofinvention': 'Semiconductor device fabrication, Semiconductor memory, Semiconductor device',
-
-    }
-];
+        OrderID: 10262, CustomerID: 'RATTC', EmployeeID: 8, OrderDate: new Date(8379738e5),
+        ShipName: 'Rattlesnake Canyon Grocery', ShipCity: 'Albuquerque', ShipAddress: '2817 Milton Dr.',
+        ShipRegion: 'NM', ShipPostalCode: '87110', ShipCountry: 'USA', Freight: 48.29, Verified: !0
+    }];

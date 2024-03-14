@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Essential JS 2 - Timeline</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Essential JS 2" />
+    <meta name="author" content="Syncfusion" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-layouts/styles/material.css" rel="stylesheet" />
+
+    <!--style reference from app-->
+    <link href="styles.css" rel="stylesheet" />
+
+    <!--system js reference and configuration-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+</head>
+<body>
+    <div id='loader'>LOADING....</div>
+    <div id='container' style="height: 250px;">
+        <div id="timeline"></div>
+    </div>
+    <style>
+        .e-timeline-item.state-completed .e-dot {
+            background: #ff9900 ;
+            outline: 1px dashed #ff9900;
+            border-color: #ff9900;
+        }
+        .e-timeline-item.state-progress .e-dot {
+            background: #33cc33;
+            outline: 1px dashed #33cc33;
+            border-color: #33cc33;
+        }
+    </style>
+</body>
+</html>

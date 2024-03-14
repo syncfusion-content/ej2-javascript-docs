@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Essential JS 2 - Timeline</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Essential JS 2" />
+    <meta name="author" content="Syncfusion" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-layouts/styles/material.css" rel="stylesheet" />
+
+    <!--style reference from app-->
+    <link href="styles.css" rel="stylesheet" />
+
+    <!--system js reference and configuration-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+</head>
+<body>
+    <div id='loader'>LOADING....</div>
+    <div id='container' style="height: 250px;">
+        <div id="timeline"></div>
+    </div>
+    <style>
+        .e-timeline-item.dot-filled .e-dot::before { content: 'A'; color: #fff;}
+        .e-timeline-item.dot-flat .e-dot::before { content: 'B'; color: #fff;}
+        .e-timeline-item.dot-outlined .e-dot::before { content: 'C';}
+        
+        .e-timeline-item.dot-filled .e-dot {
+            background: #33cc33;
+            --dot-outer-space: 3px;
+            outline-color: #81ff05;
+            --dot-size: 25px;
+        }
+        .e-timeline-item.dot-flat .e-dot {
+            background: #33cc33;
+            --dot-size: 25px;
+            --dot-radius: 10%;
+        }
+        .e-timeline-item.dot-outlined .e-dot {
+            outline-color: #33cc33;
+            --dot-outer-space: 3px;
+            background-color: unset;
+            --dot-size: 25px;
+        }
+    </style>
+</body>
+</html>

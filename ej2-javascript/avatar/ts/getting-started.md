@@ -110,4 +110,4 @@ The following example shows a basic avatar component.
 
 ## See Also
 
-[Types of Avatar](./types/)
+[Types of Avatar](./types)

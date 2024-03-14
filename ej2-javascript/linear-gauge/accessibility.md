@@ -20,7 +20,7 @@ The Linear Gauge control followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg
 | Attributes | Purpose |
 | --- | --- |
 | `role=region` | It is specified in the pointer where the interactive drag and drop function is supported to update the pointer value. |
-| `aria-label` | Provides an accessible name for the axis labels, text pointer and annotation. |
+| `aria-label` | Provides an accessible name for the title, axis labels and text pointer. |
 
 ## Screen reading in Linear Gauge
 
@@ -28,6 +28,7 @@ Accessibility in the Linear Gauge control ensures that all users, regardless of 
 
 | Elements | Description |
 | --- | --- |
+| Title | Reads the title of the Linear Gauge.|
 | Axis labels | Reads the axis labels of the Linear Gauge.|
 | Text pointer | Reads the text content shown as a pointer in Linear Gauge. |
 | Annotation | Reads the content specified in the annotation. |

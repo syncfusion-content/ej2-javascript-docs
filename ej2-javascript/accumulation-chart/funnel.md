@@ -228,5 +228,5 @@ Individual points can be customized using the `pointRender` event.
 
 ## See Also
 
-* [Data label](./data-label/)
-* [Grouping](./grouping/)
+* [Data label](./data-label)
+* [Grouping](./grouping)

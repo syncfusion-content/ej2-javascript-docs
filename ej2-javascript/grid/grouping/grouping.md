@@ -557,6 +557,11 @@ The following example demonstrates how the `actionBegin` and `actionComplete` ev
 
 > The [args.requestType](../../api/grid/sortEventArgs/#requesttype) property represents the name of the current action being performed. For instance, during grouping, the `args.requestType` value will be **grouping**.
 
+## Limitations
+
+* Grouping is not compatible with the following features:
+    1. Autofill
+
 ## See Also
 
 * [Exporting grouped records](../excel-export/excel-export-options/#exporting-grouped-records)

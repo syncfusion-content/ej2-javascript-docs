@@ -9,6 +9,7 @@ const dotVariants: TimelineItemModel[] = [
 // Initializes the Timeline control
 let timeline: Timeline = new Timeline({
   items: dotVariants,
+  cssClass: 'dot-variant'
 });
 
 // Render initialized Timeline.

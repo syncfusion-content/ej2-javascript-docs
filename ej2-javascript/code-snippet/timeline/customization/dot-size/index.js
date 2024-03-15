@@ -9,6 +9,7 @@ var dotSizes = [
 // Initializes the Timeline control
 var timeline = new ej.layouts.Timeline({
   items: dotSizes,
+  cssClass: 'dot-size'
 });
 
 // Render initialized Timeline.

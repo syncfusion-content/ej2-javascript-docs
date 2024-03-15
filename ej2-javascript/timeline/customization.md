@@ -54,7 +54,7 @@ You can define the styles applicable to the all the Timeline item connectors.
 
 ### Individual styling
 
-You can also apply unique styles to individual connectors, to differentiate specific items within the timeline.
+You can also apply unique styles to individual connectors, to differentiate specific items within the Timeline.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -243,7 +243,7 @@ You can achieve the desired dot variant by customizing the border, outline and b
 
 ### Dot outline
 
-By adding the `e-outline` class to the timeline cssClass property it enables the dots to have an outline state.
+By adding the `e-outline` class to the Timeline `cssClass` property, it enables the dots to have an outline state.
 
 {% if page.publishingplatform == "typescript" %}
 

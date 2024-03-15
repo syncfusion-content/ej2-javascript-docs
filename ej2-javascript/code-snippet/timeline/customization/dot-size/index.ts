@@ -10,6 +10,7 @@ const dotSizes: TimelineItemModel[] = [
 // Initializes the Timeline control
 let timeline: Timeline = new Timeline({
   items: dotSizes,
+  cssClass: 'dot-size'
 });
 
 // Render initialized Timeline.

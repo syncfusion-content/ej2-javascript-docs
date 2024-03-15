@@ -9,6 +9,7 @@ const orderStatus: TimelineItemModel[] = [
 // Initializes the Timeline control
 let timeline: Timeline = new Timeline({
   items: orderStatus,
+  cssClass: 'dot-shadow'
 });
 
 // Render initialized Timeline.

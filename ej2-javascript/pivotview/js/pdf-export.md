@@ -185,8 +185,8 @@ var pdfExportProperties = {
 The below code illustrates the PDF export customization options.
 
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pdf-export-cs41/index.ts %}
+{% highlight ts tabtitle="index.js" %}
+{% include code-snippet/pivot-table/pdf-export-cs41/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/pivot-table/pdf-export-cs41/index.html %}

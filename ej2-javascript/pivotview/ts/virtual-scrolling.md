@@ -15,7 +15,7 @@ domainurl: ##DomainURL##
 
 ## Virtual Scrolling
 
-Allows to load the large amounts of data without any performance degradation by rendering rows and columns only in the current content viewport. Rest of the aggregated data will be brought into viewport dynamically based on vertical or horizontal scroll position. This feature can be enabled by setting the [`enableVirtualization`](https://ej2.syncfusion.com/documentation/api/pivotview/#enablevirtualization) property in pivot table to **true**..
+Allows to load the large amounts of data without any performance degradation by rendering rows and columns only in the current content viewport. Rest of the aggregated data will be brought into viewport dynamically based on vertical or horizontal scroll position. This feature can be enabled by setting the [`enableVirtualization`](https://ej2.syncfusion.com/documentation/api/pivotview/#enablevirtualization) property in pivot table to **true**.
 
 To use the virtual scrolling feature, inject the `VirtualScroll` module in to the pivot table.
 
@@ -30,9 +30,26 @@ To use the virtual scrolling feature, inject the `VirtualScroll` module in to th
           
 {% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs485" %}
 
+## Single Page Mode
+
+When virtual scrolling is enabled, the pivot table renders not only the current view page, but also the previous and next pages by default. This default behavior, however, can cause performance delays when dealing with a large number of rows and columns. This is because the same number of rows and columns from adjacent pages are also processed, resulting in additional computational load. This performance constraint can be avoided by setting the [allowSinglePage](https://ej2.syncfusion.com/documentation/api/pivotview/virtualScrollSettings/#allowSinglePage) property to **true** within the [virtualScrollSettings](https://ej2.syncfusion.com/documentation/api/pivotview/virtualScrollSettings/).
+
+Enabling this property causes the pivot table to render only the rows and columns that are relevant to the current view page during virtual scrolling. This optimization significantly improves the performance of the pivot table, particularly in Blazor WASM applications, during initial rendering and when performing UI actions such as drill up/down, sorting, filtering, and more.
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/pivot-table/single-page-mode/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/pivot-table/single-page-mode/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/pivot-table/single-page-mode" %}
+
 **Limitations for virtual scrolling**
 
-* In virtual scrolling, the `columnWidth` property in `gridSettings` should be in pixel and percentage values are not accepted.
+* In virtual scrolling, the [`columnWidth`](https://ej2.syncfusion.com/documentation/api/pivotview/gridSettings/#columnwidth) property in [`gridSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/gridSettings/) should be in pixel and percentage values are not accepted.
 * Resizing columns, setting width to individual columns which affects the calculation used to pick the correct page on scrolling.
 * Grouping, which takes additional time to splitting the raw items into the provided format.
 * Date Formatting, which takes additional time to convert date format.
@@ -40,36 +57,13 @@ To use the virtual scrolling feature, inject the `VirtualScroll` module in to th
 * When using OLAP data, subtotals and grandtotals are only displayed when measures are bound at the last position in the [`rows`](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings/#rows) or [`columns`](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings/#columns) axis. Otherwise, the data from the pivot table will be shown without summary totals.
 * Even if virtual scrolling is enabled, not only is the current view port data retrieved, but also the data for the immediate previous page and the immediate next page. As a result, when the end user scrolls slightly ahead or behind, the next or previous page data is displayed immediately without requiring a refresh. **Note:** If the pivot table's width and height are large, the loading data count in the current, previous, and next view ports (pages) will also increase, affecting performance.
 
-## Data Compression
+**Overcoming the browser's height limitation**
 
-> This property is applicable only for relational data source.
+You can load millions of records in the Pivot Table by using virtual scrolling, where the pivot table loads and renders rows on-demand while scrolling vertically. As a result, Pivot Table lightens the browser’s load by minimizing the DOM elements and rendering elements visible in the viewport. The height of the table is calculated using the Total Records Count * [`rowHeight`](https://ej2.syncfusion.com/documentation/api/pivotview/gridSettings/#rowheight) property.
 
-When we bind one million raw data, the pivot table will process all raw data to generate aggregated data during initial rendering and report manipulation. But in data compression, the data will be compressed based on the uniqueness of the raw data, and unique records will be provided as input for the Pivot Table. The compressed data will be used for further operations at all times, reducing the looping complexity and improving the performance of the pivot table. For example, if the pivot table  is connected to one million raw data aggregated to 1,000 unique data means, it will be rendered within 3 seconds rather than 10 seconds. You can enable this option by using the [`allowDataCompression`](https://ej2.syncfusion.com/documentation/api/pivotview/#allowdatacompression) property along with [`enableVirtualization`](https://ej2.syncfusion.com/documentation/api/pivotview/#enablevirtualization) property.
+The browser has some maximum pixel height limitations for the scroll bar element. The content placed above the maximum height can’t be scrolled if the element height is greater than the browser’s maximum height limit. The browser height limit affects the virtual scrolling of the pivot table. Even when a large number of records are bound to the pivot table, it can only display the records until the maximum height limit of the browser. Once the browser’s height limit is reached while scrolling, you won’t be able to scroll further to view the remaining records.
 
-> This options will only function when the virtual scrolling is enabled.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs486/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs486/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs486" %}
-
-**Limitations during data compression**
-
-* The following aggregation types will not be supported.
-    * Average
-    * Populationstdev
-    * Samplestdev
-    * Populationvar
-    * Samplevar
-* If you use any of the aggregations above, it will result in an aggregation type **"Sum"**.
-* Distinctcount will act as **"Count"** aggregation type.
-* In the calculated field, an existing field can be inserted without altering its default aggregation type Even if we change it, it would use the default aggregation type back for calculation.
+This maximum pixel height limitation differs between browsers and is entirely dependent on the browser's default behavior. So, it is best to set the [`rowHeight`](https://ej2.syncfusion.com/documentation/api/pivotview/gridSettings/#rowheight) to keep the virtual scroll bar element's height in the pivot table within the browser's maximum height limit.
 
 ## Virtual scrolling for static field list
 
@@ -87,3 +81,8 @@ Virtual scrolling automatically works with "Popup" field list on setting the [`e
 {% previewsample "page.domainurl/code-snippet/pivot-table/field-list-cs15" %}
 
 > You can also explore our [Virtual Scrolling in Typescript PivotTable](https://ej2.syncfusion.com/demos/#/material/pivot-table/virtual-scrolling.html) that showing a large number of records.
+
+## See also
+
+* [Paging in Syncfusion EJ2 Typescript components](./paging)
+* [Data Compression in Syncfusion EJ2 Typescript components](./data-compression)

@@ -2,7 +2,7 @@
 layout: post
 title: Finetune in ##Platform_Name## Image editor control | Syncfusion
 description: Learn here all about Finetune in Syncfusion ##Platform_Name## Image editor control of Syncfusion Essential JS 2 and more.
-platform: ej2-javaScript
+platform: ej2-javascript
 control: Finetune 
 publishingplatform: ##Platform_Name##
 documentation: ug
@@ -104,3 +104,5 @@ FinetuneEventArgs.finetune - The type of fine-tuning as [`ImageFinetuneOption`](
 FinetuneEventArgs.value - The fine-tuning value to be applied in the image editor. 
 
 FinetuneEventArgs.cancel – Specifies a boolean value to cancel the fine-tuning action.
+
+> Please note that the Filter and Finetune features were unavailable on iOS due to the non-functioning CanvasContext.filter property on this platform.

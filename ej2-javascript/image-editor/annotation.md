@@ -39,6 +39,8 @@ The [`drawText`](https://ej2.syncfusion.com/javascript/documentation/api/image-e
 
 * color - Specifies the font color of the text, allowing you to define the desired color using appropriate color values or names.
 
+* isSelected: Specifies to show the text in the selected state.
+
 By utilizing the [`drawText`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawtext) method with these parameters, you can precisely position and customize text annotations within the image. This provides the flexibility to add labels, captions, or other text elements with specific font styles, sizes, and colors, enhancing the visual presentation and clarity of the image. 
 
 Here is an example of adding a text in a button click using [`drawText`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawtext) method. 
@@ -337,6 +339,10 @@ The [`drawRectangle`](https://ej2.syncfusion.com/javascript/documentation/api/im
 
 * fillColor: Specifies the fill color of the rectangle.
 
+* degree: Specifies the degree to rotate the rectangle.
+
+* isSelected: Specifies to show the rectangle in the selected state.
+
 The [`drawEllipse`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawellipse) method is used to insert a ellipse to the Image Editor control. Ellipse annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
 
 The [`drawEllipse`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawellipse) method in the Image Editor control takes seven parameters to define the properties of the ellipse annotation: 
@@ -353,7 +359,11 @@ The [`drawEllipse`](https://ej2.syncfusion.com/javascript/documentation/api/imag
 
 * strokeColor: Specifies the color of the ellipse's stroke (border). 
 
-* fillColor: Specifies the fill color of the ellipse. 
+* fillColor: Specifies the fill color of the ellipse.
+
+* degree: Specifies the degree to rotate the ellipse.
+
+* isSelected: Specifies to show the ellipse in the selected state.
 
 The [`drawLine`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawline) method is used to insert a line to the Image Editor control. Line annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
 
@@ -369,7 +379,9 @@ The [`drawLine`](https://ej2.syncfusion.com/javascript/documentation/api/image-e
 
 * strokeWidth - Specifies the stroke width of the line. 
 
-* strokeColor - Specifies the stroke color of the line. 
+* strokeColor - Specifies the stroke color of the line.
+
+* isSelected: Specifies to show the line in the selected state.
 
 
 The [`drawArrow`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawarrow) method is used to insert a arrow to the Image Editor control. Arrow annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
@@ -392,6 +404,8 @@ The [`drawArrow`](https://ej2.syncfusion.com/javascript/documentation/api/image-
 
 * arrowEnd - Specifies the arrowhead as ImageEditorArrowHeadType at the end of the arrow.
 
+* isSelected: Specifies to show the arrow in the selected state.
+
 The [`drawPath`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawpath) method is used to insert a path to the Image Editor control. Path annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
 The [`drawPath`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawpath) method in the Image Editor control takes three parameters to define the properties of the ellipse annotation: 
 
@@ -399,7 +413,9 @@ The [`drawPath`](https://ej2.syncfusion.com/javascript/documentation/api/image-e
 
 * strokeWidth - Specifies the stroke width of the path. 
 
-* strokeColor - Specifies the stroke color of the path. 
+* strokeColor - Specifies the stroke color of the path.
+
+* isSelected: Specifies to show the path in the selected state.
 
 Here is an example of inserting rectangle, ellipse, arrow, path, and line in a button click event.
 
@@ -488,6 +504,12 @@ The [`drawImage`](https://ej2.syncfusion.com/documentation/api/image-editor/#dra
 * height: Specifies the height of the image.
 
 * isAspectRatio: Specifies whether the image is rendered with aspect ratio or not.
+
+* degree: Specifies the degree to rotate the image.
+
+* opacity: Specifies the value for the image.
+
+* isSelected: Specifies to show the image in the selected state.
 
 In the following example, you can use the [`drawImage`](https://ej2.syncfusion.com/documentation/api/image-editor/#drawimage) method in the button click event.
 

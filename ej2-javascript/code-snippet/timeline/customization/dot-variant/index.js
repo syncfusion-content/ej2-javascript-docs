@@ -8,6 +8,7 @@ var dotVariants = [
 // Initializes the Timeline control
 var timeline = new ej.layouts.Timeline({
   items: dotVariants,
+  cssClass: 'dot-variant'
 });
 
 // Render initialized Timeline.

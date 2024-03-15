@@ -8,6 +8,7 @@ var orderStatus = [
 // Initializes the Timeline control
 var timeline = new ej.layouts.Timeline({
   items: orderStatus,
+  cssClass: 'dot-color'
 });
 
 // Render initialized Timeline.

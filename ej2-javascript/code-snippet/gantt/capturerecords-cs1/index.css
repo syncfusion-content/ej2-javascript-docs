@@ -17,3 +17,7 @@
     display: block;
     height: 350px;
 }
+
+#container #Gantt{
+	height:450px;
+}

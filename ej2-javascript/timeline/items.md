@@ -216,4 +216,4 @@ You can use the [disabled](../api/timeline#items#disabled) property to disable a
 
 ## cssClass
 
-You can customize the appearance of the Timeline item by specifying a custom cssClass using the [cssClass](../api/timeline#items#cssClass) property.
+You can customize the appearance of the Timeline item by specifying a custom CSS class using the [cssClass](../api/timeline#items#cssClass) property.

@@ -2,7 +2,7 @@
 layout: post
 title: Filter in ##Platform_Name## Image editor control | Syncfusion
 description: Learn here all about Open save in Syncfusion ##Platform_Name## Image editor control of Syncfusion Essential JS 2 and more.
-platform: ej2-javaScript
+platform: ej2-javascript
 control: Filter 
 publishingplatform: ##Platform_Name##
 documentation: ug
@@ -48,7 +48,7 @@ In the following example, you can using the applyImageFilter method in the butto
 {% previewsample "page.domainurl/code-snippet/image-editor/filter-cs1" %}
 {% endif %}
 
-## Apply filter effect
+## Image Filtering Event
 
 The [`imageFiltering`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#imageFiltering) event is triggered when applying filtering on the image. This event is passed an object that contains information about the filtering event, such as the type of filtering. 
 
@@ -57,3 +57,6 @@ The parameter available in the [`ImageFilterEventArgs`](https://ej2.syncfusion.c
 ImageFilterEventArgs.filter - The type of filtering as [`ImageFilterOption`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#ImageFilterOption) to be applied in the image editor. 
 
 ImageFilterEventArgs.cancel – Specifies to cancel the filtering action. 
+
+
+> Please note that the Filter and Finetune features were unavailable on iOS due to the non-functioning CanvasContext.filter property on this platform.

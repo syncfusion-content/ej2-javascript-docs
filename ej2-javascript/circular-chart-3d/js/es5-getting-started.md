@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Circular Chart 3D control | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Circular Chart 3D control of Syncfusion Essential JS 2 and more details.
+title: Es5 getting started with ##Platform_Name## 3D Circular Chart control | Syncfusion
+description:  Checkout and learn about Es5 getting started with ##Platform_Name## 3D Circular Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
 publishingplatform: ##Platform_Name##
@@ -9,13 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Circular Chart 3D control
+# Es5 getting started in ##Platform_Name## 3D Circular Chart control
 
-This section explains you the steps required to create a simple Circular Chart 3D and demonstrate the basic usage of the Circular Chart 3D control.
+This section explains you the steps required to create a simple 3D Circular Chart and demonstrate the basic usage of the 3D Circular Chart control.
 
 ## Dependencies
 
-Below is the list of minimum dependencies required to use the Circular Chart 3D.
+Below is the list of minimum dependencies required to use the 3D Circular Chart.
 
 ```javascript
 |-- @syncfusion/ej2-charts
@@ -35,11 +35,11 @@ Refer the following steps for setup your local environment.
 
 **Step 2:** Create **myapp/resources** folder to store local scripts and styles files.
 
-**Step 3:** Create **myapp/index.js** and **myapp/index.html** files for initializing Essential JS 2 Circular Chart 3D control.
+**Step 3:** Create **myapp/index.js** and **myapp/index.html** files for initializing Essential JS 2 3D Circular Chart control.
 
 ## Adding Syncfusion resources
 
-The Essential JS 2 Circular Chart 3D control can be initialized by using either of the following ways.
+The Essential JS 2 3D Circular Chart control can be initialized by using either of the following ways.
 
 * Using local script.
 * Using CDN link for script.
@@ -50,7 +50,7 @@ You can get the global scripts and styles from the [Essential Studio JavaScript 
 
 After installing the Essential JS 2 product build, you can copy the chart and its dependencies scripts and style file into the **resources/scripts** and **resources/styles** folder.
 
-Refer the below code to find location Circular Chart 3D script and style file.
+Refer the below code to find location 3D Circular Chart script and style file.
 
 **Syntax:**
 
@@ -66,21 +66,21 @@ Refer the below code to find location Circular Chart 3D script and style file.
 > Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-charts/dist/global/ej2-charts.min.js`
 >
 
-After copying the files, then you can refer the Circular Chart 3D scripts into the `index.html` file.The below html code example shows the minimal dependency of chart.
+After copying the files, then you can refer the 3D Circular Chart scripts into the `index.html` file.The below html code example shows the minimal dependency of chart.
 
 ```
 
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
-            <title>Essential JS 2 Circular Chart 3D</title>
+            <title>Essential JS 2 3D Circular Chart</title>
 
-            <!-- Essential JS 2 Circular Chart 3D dependent scripts -->
+            <!-- Essential JS 2 3D Circular Chart dependent scripts -->
             <script src="resources/scripts/ej2-base.min.js" type="text/javascript"></script>
             <script src="resources/scripts/ej2-data.min.js" type="text/javascript"></script>
             <script src="resources/scripts/ej2-svg-base.min.js" type="text/javascript"></script>
 
-            <!-- Essential JS 2 Circular Chart 3D global script -->
+            <!-- Essential JS 2 3D Circular Chart global script -->
             <script src="resources/scripts/ej2-charts.min.js" type="text/javascript"></script>
        </head>
        <body>
@@ -109,7 +109,7 @@ The below html code example shows the minimal dependency of chart.
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
-            <title>Essential JS 2 Circular Chart 3D</title>
+            <title>Essential JS 2 3D Circular Chart</title>
             <!-- Essential JS 2 Chart's global script -->
             <script src="http://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js" type="text/javascript"></script>
        </head>
@@ -119,9 +119,9 @@ The below html code example shows the minimal dependency of chart.
 
 ```
 
-## Adding Circular Chart 3D control
+## Adding 3D Circular Chart control
 
-Now, you can start adding Circular Chart 3D control in the application. For getting started, add a **div** element for Circular Chart 3D control in **index.html**. Then refer the **index.js** file into the **index.html** file.
+Now, you can start adding 3D Circular Chart control in the application. For getting started, add a **div** element for 3D Circular Chart control in **index.html**. Then refer the **index.js** file into the **index.html** file.
 
 In this document context we are going to use **ej2.min.js** which includes all the Essential JS 2 components and its dependent scripts.
 
@@ -129,12 +129,12 @@ In this document context we are going to use **ej2.min.js** which includes all t
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
-            <title>Essential JS 2 Circular Chart 3D</title>
+            <title>Essential JS 2 3D Circular Chart</title>
             <!-- Essential JS 2 all script -->
             <script src="http://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
        </head>
        <body>
-           <!-- Add the HTML <div> element for Circular Chart 3D  -->
+           <!-- Add the HTML <div> element for 3D Circular Chart  -->
              <div id="element"></div>
              <script src="index.js" type="text/javascript"></script>
        </body>
@@ -142,7 +142,7 @@ In this document context we are going to use **ej2.min.js** which includes all t
 
 ```
 
-Place the following Circular Chart 3D code in the **index.js**.
+Place the following 3D Circular Chart code in the **index.js**.
 
 ```javascript
 

@@ -1,0 +1,198 @@
+---
+layout: post
+title: Pie and donut in ##Platform_Name## 3D Circular Chart control | Syncfusion
+description: Learn here all about Pie and donut in Syncfusion ##Platform_Name## 3D Circular Chart control of Syncfusion Essential JS 2 and more.
+platform: ej2-javascript
+control: Pie and donut 
+publishingplatform: ##Platform_Name##
+documentation: ug
+domainurl: ##DomainURL##
+---
+
+# Pie and donut in ##Platform_Name## 3D Circular Chart control
+
+## Pie chart
+
+To render a pie series, inject the `PieSeries3D` module using `CircularChart3D.Inject(PieSeries3D)` method.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/circular-chart/pie-donut/pie/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/circular-chart/pie-donut/pie/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/circular-chart/pie-donut/pie" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/circular-chart/pie-donut/pie/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/circular-chart/pie-donut/pie/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/circular-chart/pie-donut/pie" %}
+{% endif %}
+
+## Radius customization
+
+By default, the radius of the pie series will be 80% of the size (minimum of the circular chart width and height). You can customize this using the `radius` property of the series.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/circular-chart/pie-donut/radius/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/circular-chart/pie-donut/radius/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/circular-chart/pie-donut/radius" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/circular-chart/pie-donut/radius/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/circular-chart/pie-donut/radius/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/circular-chart/pie-donut/radius" %}
+{% endif %}
+
+## Various radius pie chart
+
+You can assign different radii to each slice of the pie by fetching the radius from the data source and using it with the `radius` property in the `series`.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/circular-chart/pie-donut/various-radius/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/circular-chart/pie-donut/various-radius/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/circular-chart/pie-donut/various-radius" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/circular-chart/pie-donut/various-radius/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/circular-chart/pie-donut/various-radius/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/circular-chart/pie-donut/various-radius" %}
+{% endif %}
+
+## Donut chart
+
+To achieve a donut in the pie series, customize the `innerRadius` property of the series. By setting a value greater than 0%, a donut will appear. The `innerRadius` property takes value from 0% to 100% of the pie radius.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/circular-chart/pie-donut/donut/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/circular-chart/pie-donut/donut/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/circular-chart/pie-donut/donut" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/circular-chart/pie-donut/donut/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/circular-chart/pie-donut/donut/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/circular-chart/pie-donut/donut" %}
+{% endif %}
+
+## Color & text mapping
+
+The fill color and the text in the data source can be mapped to the 3D Circular Chart using `pointColorMapping` in the series and `name` in the datalabel, respectively.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/circular-chart/pie-donut/color/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/circular-chart/pie-donut/color/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/circular-chart/pie-donut/color" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/circular-chart/pie-donut/color/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/circular-chart/pie-donut/color/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/circular-chart/pie-donut/color" %}
+{% endif %}
+
+## Customization
+
+Individual points in pie chart can be customized using the `pointRender` event.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/circular-chart/pie-donut/customization/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/circular-chart/pie-donut/customization/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/circular-chart/pie-donut/customization" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/circular-chart/pie-donut/customization/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/circular-chart/pie-donut/customization/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/circular-chart/pie-donut/customization" %}
+{% endif %}

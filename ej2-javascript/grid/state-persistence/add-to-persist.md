@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add to persist in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Add to persist in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: Add to persist in JavaScript Grid control | Syncfusion
+description: Learn here all about Add to persist in JavaScript Grid control of Syncfusion Essential and more
 platform: ej2-javascript
 control: Add to persist 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add to persist in ##Platform_Name## Grid control
+# Add to persist in JavaScript Grid control
 
 ## Persist the column template, header template and header Text
 

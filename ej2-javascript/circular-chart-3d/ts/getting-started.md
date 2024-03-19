@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Circular Chart 3D control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Circular Chart 3D control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## 3D Circular Chart control | Syncfusion
+description:  Checkout and learn about Getting started with ##Platform_Name## 3D Circular Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,15 +9,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Circular Chart 3D control
+# Getting started in ##Platform_Name## 3D Circular Chart control
 
-This section explains how to create a simple Circular Chart 3D and configure its available functionalities in TypeScript using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
+This section explains how to create a simple 3D Circular Chart and configure its available functionalities in TypeScript using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
-Below is the list of minimum dependencies required to use the Circular Chart 3D.
+Below is the list of minimum dependencies required to use the 3D Circular Chart.
 
 ```javascript
 |-- @syncfusion/ej2-charts
@@ -65,11 +65,11 @@ npm install
 {% endhighlight %}
 {% endtabs %}
 
-## Add Circular Chart 3D to the project
+## Add 3D Circular Chart to the project
 
 Open the application in Visual Studio Code and add the Syncfusion JavaScript UI controls.
 
-Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.html` file to initialize the Circular Chart 3D.
+Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.html` file to initialize the 3D Circular Chart.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -88,7 +88,7 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 </head>
 
 <body>
-     <!--container which is going to render the Circular Chart 3D-->
+     <!--container which is going to render the 3D Circular Chart-->
      <div id='element'>
      </div>
 </body>
@@ -98,17 +98,17 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 {% endhighlight %}
 {% endtabs %}
 
-Now, import an Circular Chart 3D component in your `app.ts` to instantiate the Circular Chart 3D, and append the Circular Chart 3D instance to the `#element` `[src/app/app.ts]`
+Now, import an 3D Circular Chart component in your `app.ts` to instantiate the 3D Circular Chart, and append the 3D Circular Chart instance to the `#element` `[src/app/app.ts]`
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 
 import { CircularChart3D } from '@syncfusion/ej2-charts';
 
-// initialize Circular Chart 3D component
+// initialize 3D Circular Chart component
 let circularchart: CircularChart3D = new CircularChart3D();
 
-// render initialized Circular Chart 3D
+// render initialized 3D Circular Chart
 circularchart.appendTo('#element');
 
 {% endhighlight %}

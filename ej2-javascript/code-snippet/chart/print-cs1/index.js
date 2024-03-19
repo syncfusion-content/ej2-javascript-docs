@@ -13,7 +13,7 @@ var piechart = new ej.charts.AccumulationChart({
 
 
     document.getElementById('print').onclick = () => {
-        chart.print();
+        piechart.print();
     };
 
 

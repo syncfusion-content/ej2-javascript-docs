@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Excel export in ##Platform_Name## Pivotview control | Syncfusion
-description: Learn here all about Excel export in Syncfusion ##Platform_Name## Pivotview control of Syncfusion Essential JS 2 and more.
+title: Excel export in ##Platform_Name## Pivot Table component | Syncfusion
+description: Learn here all about Excel export in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Excel export 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Excel export in ##Platform_Name## Pivotview control
+# Excel export in ##Platform_Name## Pivot Table component
 
 The Excel export allows pivot table data to export as Excel document. To enable Excel export in the pivot table, set the `allowExcelExport` as **true**. You need to use the `excelExport` method for Excel exporting.
 
@@ -62,7 +62,7 @@ Excel export provides support to export multiple pivot tables into new sheets. T
 
 ## Changing the pivot table style while exporting
 
-The Excel export provides an option to change colors for headers, caption and records in pivot table before exporting. In-order to apply colors, define **theme** settings in **excelExportProperties** object and pass it as a parameter to the [`excelExport`](https://ej2.syncfusion.com/documentation/api/pivotview/#excelexport) method.
+The Excel export provides an option to change colors for headers, caption and records in pivot table before exporting. In-order to apply colors, define **theme** settings in **excelExportProperties** object and pass it as a parameter to the [`excelExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#excelexport) method.
 
 >By default, material theme is applied to exported Excel document.
 
@@ -79,7 +79,7 @@ The Excel export provides an option to change colors for headers, caption and re
 
 ## Add header and footer while exporting
 
-The Excel export provides an option to include header and footer content for the excel document before exporting. In-order to add header and footer, define **header** and **footer** properties in **excelExportProperties** object and pass it as a parameter to the [`excelExport`](https://ej2.syncfusion.com/documentation/api/pivotview/#excelexport) method.
+The Excel export provides an option to include header and footer content for the excel document before exporting. In-order to add header and footer, define **header** and **footer** properties in **excelExportProperties** object and pass it as a parameter to the [`excelExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#excelexport) method.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -94,7 +94,7 @@ The Excel export provides an option to include header and footer content for the
 
 ## Changing the file name while exporting
 
-The Excel export provides an option to change file name of the document before exporting. In-order to change the file name, define **fileName** property in **excelExportProperties** object and pass it as a parameter to the [`excelExport`](https://ej2.syncfusion.com/documentation/api/pivotview/#excelexport) method.
+The Excel export provides an option to change file name of the document before exporting. In-order to change the file name, define **fileName** property in **excelExportProperties** object and pass it as a parameter to the [`excelExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#excelexport) method.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -109,7 +109,7 @@ The Excel export provides an option to change file name of the document before e
 
 ## Limitation when exporting millions of records to Excel format
 
-By default, Microsoft Excel supports only 1,048,576 records in an excel sheet. Hence it is not possible to export millions of records to excel. You can refer the [documentation](https://support.microsoft.com/en-gb/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) link for more details on Microsoft excel specifications and limits. So suggest to export the data in CSV (Comma-Separated Values) or other formats that can handle large datasets more efficiently than Excel.
+By default, Microsoft Excel supports only 1,048,576 records in an Excel sheet. Hence, it is not possible to export millions of records to Excel. You can refer to the [documentation link](https://support.microsoft.com/en-gb/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) for more details on Microsoft Excel specifications and limits. Therefore, it is suggested to export the data in CSV (Comma-Separated Values) or other formats that can handle large datasets more efficiently than Excel.
 
 ## CSV Export
 
@@ -161,7 +161,7 @@ You can export the pivot table virtual scroll data as Excel/CSV document by usin
 
 ### Export all pages
 
-The pivot engine exports the entire virtual data of the pivot table (i.e. the data that contains all of the records used to render the complete pivot table) as an Excel/CSV document. To export just the current viewport of the pivot table, set the [`exportAllPages`](https://ej2.syncfusion.com/documentation/api/pivotview/#exportallpages) property to **false**. To use the pivot engine export, add the `ExcelExport` module into the pivot table.
+The pivot engine exports the entire virtual data of the pivot table (i.e. the data that contains all of the records used to render the complete pivot table) as an Excel/CSV document. To export just the current viewport of the pivot table, set the [`exportAllPages`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#exportallpages) property to **false**. To use the pivot engine export, add the `ExcelExport` module into the pivot table.
 
 > By default, the pivot engine export will be performed while virtual scrolling is enabled.
 

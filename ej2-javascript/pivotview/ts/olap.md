@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Olap in ##Platform_Name## Pivotview control | Syncfusion
-description: Learn here all about Olap in Syncfusion ##Platform_Name## Pivotview control of Syncfusion Essential JS 2 and more.
+title: Olap in ##Platform_Name## Pivot Table component | Syncfusion
+description: Learn here all about Olap in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Olap 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Olap in ##Platform_Name## Pivotview control
+# Olap in ##Platform_Name## Pivot Table component
 
 ## Getting Started
 
@@ -417,10 +417,10 @@ To use the virtual scrolling feature, inject the `VirtualScroll` module into the
 
 #### Limitations for virtual scrolling
 
-* In virtual scrolling, the [`columnWidth`](https://ej2.syncfusion.com/documentation/api/pivotview/gridSettings/#columnwidth) property in [`gridSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/gridSettings/) should be in pixel and percentage values are not accepted.
-* Resizing columns, setting width to individual columns which affects the calculation used to pick the correct page on scrolling.
-* When using OLAP data, subtotals and grandtotals are only displayed when measures are bound at the last position in the [`rows`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#rows) or [`columns`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#columns) axis. Otherwise, the data from the pivot table will be shown without summary totals.
-* When the pivot table's width and height are large, the loading data count in the current, previous, and next view ports (pages) will also increase, affecting performance.
+* In virtual scrolling, the [`columnWidth`](https://ej2.syncfusion.com/documentation/api/pivotview/gridSettings/#columnwidth) property in [`gridSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/gridSettings/) should be in pixels, and percentage values are not accepted.
+* Resizing columns or setting width to individual columns affects the calculation used to pick the correct page on scrolling.
+* When using OLAP data, subtotals and grand totals are only displayed when measures are bound at the last position in the [`rows`](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings/#rows) or [`columns`](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings/#columns) axis. Otherwise, the data from the pivot table will be shown without summary totals.
+* When the pivot table's width and height are large, the loading data count in the current, previous, and next viewports (pages) will also increase, affecting performance.
 
 ### Run the application
 

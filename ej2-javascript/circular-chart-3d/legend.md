@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Legend in ##Platform_Name## 3D Circular Chart control | Syncfusion
-description: Learn here all about Legend in Syncfusion ##Platform_Name## 3D Circular Chart control of Syncfusion Essential JS 2 and more.
+description: Learn here all about legend in Syncfusion ##Platform_Name## 3D Circular Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Legend 
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Legend in ##Platform_Name## 3D Circular Chart control
 
-Legend provides information about the data points rendered in the 3D Circular Chart. It can be added by enabling the `visible` option in the `legendSettings` property.
+The legend provides information about the data points rendered in the 3D Circular Chart. It can be added by enabling the `visible` option in the `legendSettings` property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -40,11 +40,11 @@ Legend provides information about the data points rendered in the 3D Circular Ch
 {% previewsample "page.domainurl/code-snippet/circular-chart/user-interaction/legend" %}
 {% endif %}
 
->Note: To use the legends feature, inject the `CircularChartLegend3D` using the `CircularChart3D.Inject(CircularChartLegend3D)` method.
+>To use the legends feature, inject the `CircularChartLegend3D` using the `CircularChart3D.Inject(CircularChartLegend3D)` method.
 
 ## Position and alignment
 
-By using the `position` property, the legend can be positioned at the `left`, `right`, `top` or `bottom` of the 3D Circular Chart. By default, the legend will be positioned to the right of the 3D Circular Chart. Additionally, you can align the legend to the `center`,`far` or `near` of the chart using the `alignment` property. 
+By using the `position` property, the legend can be positioned at the `left`, `right`, `top` or `bottom` of the 3D Circular Chart. By default, the legend will be positioned to the right of the 3D Circular Chart. Additionally, you can align the legend to the `center`, `far` or `near` of the chart using the `alignment` property.
  
 {% if page.publishingplatform == "typescript" %}
 
@@ -106,7 +106,7 @@ You can reverse the order of the legend items by using the `reverse` property in
 
 ## Legend shape
 
-To change the legend icon shape, use the `legendShape` property in the `series`. By default, the legend icon shape is set to `seriesType`.
+To change the legend shape, use the `legendShape` property in the `series`. By default, the legend shape is set to `seriesType`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -168,7 +168,7 @@ The legend size can be changed by using the `width` and `height` properties in `
 
 ## Legend item size
 
-The size of the legend items can be customised by using the `shapeHeight` and `shapeWidth` properties in `legendSettings`.
+The size of the legend items can be customized by using the `shapeHeight` and `shapeWidth` properties in `legendSettings`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -197,7 +197,7 @@ The size of the legend items can be customised by using the `shapeHeight` and `s
 {% previewsample "page.domainurl/code-snippet/circular-chart/user-interaction/item-size" %}
 {% endif %}
 
-## Paging for legend
+## Legend paging
 
 Paging will be enabled by default when the legend items exceed the legend bounds. Each legend item can be viewed by navigating between the pages using navigation buttons.
 
@@ -261,7 +261,7 @@ When the legend text exceeds the container, the text can be wrapped using the `t
 
 ## Legend title
 
-You can set a title for the legend using the `title` property in `legendSettings`. The `size`, `color`, `opacity`, `fontStyle`, `fontWeight`, `fontFamily`, `textAlignment`, and `textOverflow` of the legend title can be customized using the `titleStyle` property in `legendSettings`. The `titlePosition` is used to set the legend position at the `top`, `left` and `right`. The `maximumTitleWidth` is used to set the width of the legend title, which defaults to `100px`.
+You can set a title for the legend using the `title` property in `legendSettings`. The `size`, `color`, `opacity`, `fontStyle`, `fontWeight`, `fontFamily`, `textAlignment`, and `textOverflow` of the legend title can be customized using the `titleStyle` property in `legendSettings`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -292,7 +292,7 @@ You can set a title for the legend using the `title` property in `legendSettings
 
 ## Arrow page navigation
 
-The page number will always be visible when using legend paging. Now, it is possible to disable the page number and enable page navigation with the left and right arrows. To render the arrow page navigation, set the `enablePages` property to **false**.
+The page number will always be visible when using legend paging. However, it is now possible to disable the page number and enable page navigation with the left and right arrows. To render the arrow page navigation, set the `enablePages` property to **false**.
 
 {% if page.publishingplatform == "typescript" %}
 

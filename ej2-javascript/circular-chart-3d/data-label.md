@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Data labels in ##Platform_Name## 3D Circular Chart control | Syncfusion
-description: Learn here all about Data labels in Syncfusion ##Platform_Name## 3D Circular Chart control of Syncfusion Essential JS 2 and more.
+title: Data Label in ##Platform_Name## 3D Circular Chart control | Syncfusion
+description: Learn here all about data label in Syncfusion ##Platform_Name## 3D Circular Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Data labels 
+control: Data Label
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data labels in ##Platform_Name## 3D Circular Chart control
+# Data Label in ##Platform_Name## 3D Circular Chart control
 
-Data label refers to a label associated with specific data points. It can be added to a 3D Circular Chart series by enabling the `visible` option in the `dataLabel` property. By default, the labels will arrange smartly without overlapping.
+A data label refers to a label associated with specific data points. It can be added to a 3D Circular Chart series by enabling the `visible` option in the `dataLabel` property. By default, the labels will arrange themselves smartly to avoid overlapping.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -40,11 +40,11 @@ Data label refers to a label associated with specific data points. It can be add
 {% previewsample "page.domainurl/code-snippet/circular-chart/datalabel/datalabel" %}
 {% endif %}
 
->Note: To use the data label feature, inject the `CircularChartDataLabel3D` using the `CircularChart3D.Inject(CircularChartDataLabel3D)` method.
+>To use the data label feature, inject the `CircularChartDataLabel3D` using the `CircularChart3D.Inject(CircularChartDataLabel3D` method.
 
 ## Positioning
 
-Using `position` property, we can place the data label either on `inside` or `outside` the 3D Circular Chart.
+Using the `position` property, we can place the data label either `inside` or `outside` the 3D Circular Chart.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -75,7 +75,7 @@ Using `position` property, we can place the data label either on `inside` or `ou
 
 ## Data label template
 
-The label content can be formatted using the template option. Inside the template, placeholder text `${point.x}` and `${point.y}` can be added to display the corresponding data points x & y value. The data label template can be set using the `template` property.
+The label content can be formatted using the template option. Inside the template, placeholder text `${point.x}` and `${point.y` can be added to display the corresponding data point's x & y value. The data label template can be set using the `template` property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -106,7 +106,7 @@ The label content can be formatted using the template option. Inside the templat
 
 ## Connector line
 
-Connector line will be visible when the data label is placed `outside` the chart. The connector line can be customized using the `color`, `width`, `length` and `dashArray` properties in the `connectorStyle`.
+The connector line will be visible when the data label is placed `outside` the chart. It can be customized using properties such as `color`, `width`, `length`, and `dashArray` within the `connectorStyle` property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -137,7 +137,7 @@ Connector line will be visible when the data label is placed `outside` the chart
 
 ## Text mapping
 
-Text from the data source can be mapped using the `name` property in the data label.
+Text from the data source can be mapped using the `name` property within the data label.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -168,7 +168,7 @@ Text from the data source can be mapped using the `name` property in the data 
 
 ## Format
 
-The data label for the 3D Circular Chart can be formatted using the `format` property. You can utilize global formatting options, such as 'n', 'p', and 'c'.
+The data label for the 3D Circular Chart can be formatted using the `format` property. You can utilize global formatting options such as 'n', 'p', and 'c'.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -285,13 +285,9 @@ Individual text for the data points in the 3D Circular Chart can be customized u
 {% previewsample "page.domainurl/code-snippet/circular-chart/datalabel/custom" %}
 {% endif %}
 
-## Show percentages in data labels of pie chart
+## Using textRender event
 
-You can display percentages in data labels of a pie chart using the `textRender` event and the `template` option.
-
-### Using textRender event
-
-You can customize the data label of a pie chart using `textRender` event as follows to show percentage.
+You can customize the data label of a pie chart using the `textRender` event as follows to show the percentage.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -320,9 +316,9 @@ You can customize the data label of a pie chart using `textRender` event as foll
 {% previewsample "page.domainurl/code-snippet/circular-chart/datalabel/text-render" %}
 {% endif %}
 
-### Using template
+## Using template
 
-You can display the percentage values in data label of pie chart using `template` option.
+You can display the percentage values in the data label of a pie chart using the `template` option.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -61,8 +61,8 @@ The uploader component process the files to upload in Asynchronous mode by defau
                 // initialize Uploader component
               var uploadObj = new Uploader({
               asyncSettings: {
-                  saveUrl:'https://aspnetmvc.syncfusion.com/services/api/uploadbox/Save',
-                  removeUrl:'https://aspnetmvc.syncfusion.com/services/api/uploadbox/Remove'
+                saveUrl: 'https://services.syncfusion.com/js/production/api/FileUploader/Save',
+                removeUrl: 'https://services.syncfusion.com/js/production/api/FileUploader/Remove'
                   }
               });
             // Render initialized Uploader component.

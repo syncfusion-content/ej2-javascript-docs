@@ -6,8 +6,8 @@ import { Event, detach } from '@syncfusion/ej2-base';
 
 let uploadObj: Uploader = new Uploader({
     asyncSettings: {
-        saveUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Save',
-        removeUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Remove'
+      saveUrl: 'https://services.syncfusion.com/js/production/api/FileUploader/Save',
+      removeUrl: 'https://services.syncfusion.com/js/production/api/FileUploader/Remove'
     },
     template: "<span class='wrapper'><span class='icon sf-icon-${type}'></span><span class='name file-name'>${name}</span></span>" +
     "<span class='file-size-td file-size'>${size} bytes</span> <span class='e-icons e-file-remove-btn' title='Remove'></span> <br/> " +

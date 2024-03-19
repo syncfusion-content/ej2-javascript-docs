@@ -163,7 +163,7 @@ In-order to bind remote CSV data, mention the endpoint [`URL`](https://ej2.syncf
 
 ## Remote Data Binding
 
-To interact with remote data source, provide the endpoint [`URL`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#url) within [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) along with appropriate [`adaptor`](https://ej2.syncfusion.com/documentation/data/adaptors.html?lang=typescript). By default, [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) uses [`ODataAdaptor`](https://ej2.syncfusion.com/documentation/data/adaptors/#odata-adaptor) for remote data-binding.
+To interact with remote data source, provide the endpoint [`URL`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#url) within [`DataManager`](https://ej2.syncfusion.com/javascript/documentation/api/data/dataManager/) along with appropriate [`adaptor`](https://ej2.syncfusion.com/javascript/documentation/data/adaptors.html?lang=typescript). By default, [`DataManager`](https://ej2.syncfusion.com/javascript/documentation/api/data/dataManager/) uses [`ODataAdaptor`](https://ej2.syncfusion.com/javascript/documentation/data/adaptors/#odata-adaptor) for remote data-binding.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -178,7 +178,7 @@ To interact with remote data source, provide the endpoint [`URL`](https://ej2.sy
 
 ### Binding with OData services
 
-OData is a standardized protocol for creating and consuming data. User can retrieve data from OData service using the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/). Refer to the following code example for remote data binding using OData service.
+OData is a standardized protocol for creating and consuming data. User can retrieve data from OData service using the [`DataManager`](https://ej2.syncfusion.com/javascript/documentation/api/data/dataManager/). Refer to the following code example for remote data binding using OData service.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -193,7 +193,7 @@ OData is a standardized protocol for creating and consuming data. User can retri
 
 ### Binding with OData V4 services
 
-The OData V4 is an improved version of OData protocols, and the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) can be used to retrieve and consume OData V4 services. For more details on OData V4 services, refer to the [OData documentation](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData V4 service, use the [`ODataV4Adaptor`](https://ej2.syncfusion.com/documentation/data/adaptors/#odatav4-adaptor).
+The OData V4 is an improved version of OData protocols, and the [`DataManager`](https://ej2.syncfusion.com/javascript/documentation/api/data/dataManager/) can be used to retrieve and consume OData V4 services. For more details on OData V4 services, refer to the [OData documentation](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData V4 service, use the [`ODataV4Adaptor`](https://ej2.syncfusion.com/javascript/documentation/data/adaptors/#odatav4-adaptor).
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -208,7 +208,7 @@ The OData V4 is an improved version of OData protocols, and the [`DataManager`](
 
 ### Web API
 
-User can use [`WebApiAdaptor`](https://ej2.syncfusion.com/documentation/data/adaptors/#web-api-adaptor) to bind pivot table with Web API created using OData endpoint.
+User can use [`WebApiAdaptor`](https://ej2.syncfusion.com/javascript/documentation/data/adaptors/#web-api-adaptor) to bind pivot table with Web API created using OData endpoint.
 
 ```ts
 import { PivotView, IDataSet } from '@syncfusion/ej2-pivotview';

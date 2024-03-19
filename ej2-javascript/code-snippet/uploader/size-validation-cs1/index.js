@@ -1,8 +1,8 @@
 // Initialize the uploader component
 var uploadObj = new ej.inputs.Uploader({
     asyncSettings: {
-        saveUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Save',
-        removeUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Remove'
+        saveUrl: 'https://services.syncfusion.com/js/production/api/FileUploader/Save',
+        removeUrl: 'https://services.syncfusion.com/js/production/api/FileUploader/Remove'
     },
     minFileSize: 10000,
     maxFileSize: 1500000

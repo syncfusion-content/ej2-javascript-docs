@@ -58,7 +58,7 @@ End user can search for desired field in the field list UI by typing the field n
 
 > By default, field search option is disabled in the field list UI.
 
-To enable search box in the static field list UI, set the [`enableFieldSearching`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/#enablefieldsearching) property  to **true** in [`PivotFieldList`](https://ej2.syncfusion.com/documentation/api/pivotfieldlist/).
+To enable search box in the static field list UI, set the [`enableFieldSearching`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/#enablefieldsearching) property  to **true** in [`PivotFieldList`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/).
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -313,7 +313,7 @@ The event [`enginePopulated`](https://ej2.syncfusion.com/javascript/documentatio
 
 The event [`FieldListRefreshed`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#fieldlistrefreshed) is triggered whenever there is any change done in the field list UI. It has following parameter - `dataSourceSettings` and `pivotValues`. It allows user to identify each field list update. This event is applicable only for static field list.
 
-For example, if we perform a sort operation within the field list, the field list will be refreshed. The [`fieldListRefreshed`](https://ej2.syncfusion.com/documentation/api/pivotview/#fieldlistrefreshed) event will be triggered at that time and the user can perform custom operation inside that event.
+For example, if we perform a sort operation within the field list, the field list will be refreshed. The [`fieldListRefreshed`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#fieldlistrefreshed) event will be triggered at that time and the user can perform custom operation inside that event.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

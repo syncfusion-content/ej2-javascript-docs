@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add to persist in JavaScript Grid control | Syncfusion
-description: Learn here all about Add to persist in JavaScript Grid control of Syncfusion Essential and more
+description: Learn here all about how to Add to persist in JavaScript Grid control of Syncfusion Essential and more
 platform: ej2-javascript
 control: Add to persist 
 publishingplatform: ##Platform_Name##

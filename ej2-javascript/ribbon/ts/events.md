@@ -1751,3 +1751,329 @@ let ribbon: Ribbon = new Ribbon({
 });
 ribbon.appendTo("#ribbon");
 ```
+
+## Gallery events
+
+### popupOpen
+
+The [popupOpen](../api/ribbon/ribbonGallerySettings/#popupopen) event is triggered when the gallery popup opens.
+
+```typescript
+import { Ribbon, RibbonTabModel, RibbonItemType, RibbonGallery, GalleryPopupEventArgs } from "@syncfusion/ej2-ribbon";
+
+Ribbon.Inject(RibbonGallery);
+
+let tabs: RibbonTabModel[] = [
+  {
+    header: "Home",
+    groups: [
+      {
+        header: "Gallery",
+        collections: [
+          {
+            items: [
+              {
+                type: RibbonItemType.Gallery,
+                gallerySettings: {
+                  groups: [{
+                    header: 'Styles',
+                    items: [
+                        {
+                            content: 'Normal'
+                        }, {
+                            content: 'No Spacing'
+                        }, {
+                            content: 'Heading 1'
+                        }, {
+                            content: 'Heading 2'
+                        }
+                      ]
+                  }],
+                  popupOpen: (args: GalleryPopupEventArgs) => {
+                    // Your required action here
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+];
+
+let ribbon: Ribbon = new Ribbon({
+    tabs: tabs
+});
+ribbon.appendTo("#ribbon");
+```
+
+### popupClose
+
+The [popupClose](../api/ribbon/ribbonGallerySettings/#popupclose) event is triggered when the gallery popup closes.
+
+```typescript
+import { Ribbon, RibbonTabModel, RibbonItemType, RibbonGallery, GalleryPopupEventArgs } from "@syncfusion/ej2-ribbon";
+
+Ribbon.Inject(RibbonGallery);
+
+let tabs: RibbonTabModel[] = [
+  {
+    header: "Home",
+    groups: [
+      {
+        header: "Gallery",
+        collections: [
+          {
+            items: [
+              {
+                type: RibbonItemType.Gallery,
+                gallerySettings: {
+                  groups: [{
+                    header: 'Styles',
+                    items: [
+                        {
+                            content: 'Normal'
+                        }, {
+                            content: 'No Spacing'
+                        }, {
+                            content: 'Heading 1'
+                        }, {
+                            content: 'Heading 2'
+                        }
+                      ]
+                  }],
+                  popupClose: (args: GalleryPopupEventArgs) => {
+                    // Your required action here
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+];
+
+let ribbon: Ribbon = new Ribbon({
+    tabs: tabs
+});
+ribbon.appendTo("#ribbon");
+```
+
+### itemHover
+
+The [itemHover](../api/ribbon/ribbonGallerySettings/#itemhover) event is triggered when hover over the gallery item.
+
+```typescript
+import { Ribbon, RibbonTabModel, RibbonItemType, RibbonGallery, GalleryHoverEventArgs } from "@syncfusion/ej2-ribbon";
+
+Ribbon.Inject(RibbonGallery);
+
+let tabs: RibbonTabModel[] = [
+  {
+    header: "Home",
+    groups: [
+      {
+        header: "Gallery",
+        collections: [
+          {
+            items: [
+              {
+                type: RibbonItemType.Gallery,
+                gallerySettings: {
+                  groups: [{
+                    header: 'Styles',
+                    items: [
+                        {
+                            content: 'Normal'
+                        }, {
+                            content: 'No Spacing'
+                        }, {
+                            content: 'Heading 1'
+                        }, {
+                            content: 'Heading 2'
+                        }
+                      ]
+                  }],
+                  itemHover: (args: GalleryHoverEventArgs) => {
+                    // Your required action here
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+];
+
+let ribbon: Ribbon = new Ribbon({
+    tabs: tabs
+});
+ribbon.appendTo("#ribbon");
+```
+
+### beforeItemRender
+
+The [beforeItemRender](../api/ribbon/ribbonGallerySettings/#beforeitemrender) event is triggered while rendering each gallery item.
+
+```typescript
+import { Ribbon, RibbonTabModel, RibbonItemType, RibbonGallery, GalleryItemEventArgs } from "@syncfusion/ej2-ribbon";
+
+Ribbon.Inject(RibbonGallery);
+
+let tabs: RibbonTabModel[] = [
+  {
+    header: "Home",
+    groups: [
+      {
+        header: "Gallery",
+        collections: [
+          {
+            items: [
+              {
+                type: RibbonItemType.Gallery,
+                gallerySettings: {
+                  groups: [{
+                    header: 'Styles',
+                    items: [
+                        {
+                            content: 'Normal'
+                        }, {
+                            content: 'No Spacing'
+                        }, {
+                            content: 'Heading 1'
+                        }, {
+                            content: 'Heading 2'
+                        }
+                      ]
+                  }],
+                  beforeItemRender: (args: GalleryItemEventArgs) => {
+                    // Your required action here
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+];
+
+let ribbon: Ribbon = new Ribbon({
+    tabs: tabs
+});
+ribbon.appendTo("#ribbon");
+```
+
+### beforeSelect
+
+The [beforeSelect](../api/ribbon/ribbonGallerySettings/#beforeselect) event is triggered before selecting an item in the Ribbon gallery.
+
+```typescript
+import { Ribbon, RibbonTabModel, RibbonItemType, RibbonGallery, GalleryBeforeSelectEventArgs } from "@syncfusion/ej2-ribbon";
+
+Ribbon.Inject(RibbonGallery);
+
+let tabs: RibbonTabModel[] = [
+  {
+    header: "Home",
+    groups: [
+      {
+        header: "Gallery",
+        collections: [
+          {
+            items: [
+              {
+                type: RibbonItemType.Gallery,
+                gallerySettings: {
+                  groups: [{
+                    header: 'Styles',
+                    items: [
+                        {
+                            content: 'Normal'
+                        }, {
+                            content: 'No Spacing'
+                        }, {
+                            content: 'Heading 1'
+                        }, {
+                            content: 'Heading 2'
+                        }
+                      ]
+                  }],
+                  beforeSelect: (args: GalleryBeforeSelectEventArgs) => {
+                    // Your required action here
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+];
+
+let ribbon: Ribbon = new Ribbon({
+    tabs: tabs
+});
+ribbon.appendTo("#ribbon");
+```
+
+### select
+
+The [select](../api/ribbon/gallerySelectEventArgs/) event is triggered while selecting an item in the Ribbon Gallery.
+
+```typescript
+import { Ribbon, RibbonTabModel, RibbonItemType, RibbonGallery, GallerySelectEventArgs } from "@syncfusion/ej2-ribbon";
+
+Ribbon.Inject(RibbonGallery);
+
+let tabs: RibbonTabModel[] = [
+  {
+    header: "Home",
+    groups: [
+      {
+        header: "Gallery",
+        collections: [
+          {
+            items: [
+              {
+                type: RibbonItemType.Gallery,
+                gallerySettings: {
+                  groups: [{
+                    header: 'Styles',
+                    items: [
+                        {
+                            content: 'Normal'
+                        }, {
+                            content: 'No Spacing'
+                        }, {
+                            content: 'Heading 1'
+                        }, {
+                            content: 'Heading 2'
+                        }
+                      ]
+                  }],
+                  select: (args: GallerySelectEventArgs) => {
+                    // Your required action here
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+];
+
+let ribbon: Ribbon = new Ribbon({
+    tabs: tabs
+});
+ribbon.appendTo("#ribbon");
+```

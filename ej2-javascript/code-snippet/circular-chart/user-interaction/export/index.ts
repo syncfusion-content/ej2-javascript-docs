@@ -19,11 +19,12 @@ let circularchart: CircularChart3D = new CircularChart3D({
         }
     ],
     tilt: -45,
-    legendSettings: { visible: false }
+    legendSettings: { visible: false },
+    enableExport: true
 }, '#element');
 
 document.getElementById('export').onclick = () => {
-    circularchart.exportModule.export('PNG', 'result');
+    circularchart.circularChartExport3DModule.export('PNG', 'result');
 };
 
 

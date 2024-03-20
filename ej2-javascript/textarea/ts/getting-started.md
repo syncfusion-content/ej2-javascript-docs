@@ -162,7 +162,7 @@ The following example shows a basic TextArea control.
 
 ## Getting and setting values
 
-To set the initial value of the TextArea component, you can utilize the [`value`](../api/textarea/#value) property. Here's how you can achieve it:
+To set the initial value of the TextArea component, you can utilize the [value](../api/textarea/#value) property. Here's how you can achieve it:
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -241,7 +241,7 @@ document.getElementById('valuebtn').onclick = function () {
 {% endhighlight %}
 {% endtabs %}
 
-* You can retrieve the value of the TextArea by accessing it as an argument from the [`change`](../api/textarea/#change) event.
+* You can retrieve the value of the TextArea by accessing it as an argument from the [change](../api/textarea/#change) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

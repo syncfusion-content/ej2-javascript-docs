@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Orientations in ##Platform_Name## Timeline control
 
-The Timeline control supports the display of items in both horizontal and vertical direction by using the [orientation](../api/timeline#orientation).
+The Timeline control supports the display of items in both horizontal and vertical direction by using the [orientation](../api/timeline#orientation) property.
 
 ## Vertical
 

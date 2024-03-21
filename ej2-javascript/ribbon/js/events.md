@@ -1598,3 +1598,311 @@ var ribbon = new ej.ribbon.Ribbon({
 });
 ribbon.appendTo("#ribbon");
 ```
+
+## Gallery events
+
+### popupOpen
+
+The [popupOpen](../api/ribbon/ribbonGallerySettings/#popupopen) event is triggered when the gallery popup opens.
+
+```js
+var tabs = [
+  {
+    header: "Home",
+    groups: [
+      {
+        header: "Gallery",
+        collections: [
+          {
+            items: [
+              {
+                type: "Gallery",
+                gallerySettings: {
+                  groups: [{
+                    header: 'Styles',
+                    items: [
+                        {
+                            content: 'Normal'
+                        }, {
+                            content: 'No Spacing'
+                        }, {
+                            content: 'Heading 1'
+                        }, {
+                            content: 'Heading 2'
+                        }
+                      ]
+                  }],
+                  popupOpen: (args) => {
+                    // Your required action here
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+];
+
+var ribbon = new ej.ribbon.Ribbon({
+    tabs: tabs
+  });
+ribbon.appendTo("#ribbon");
+
+```
+
+### popupClose
+
+The [popupClose](../api/ribbon/ribbonGallerySettings/#popupclose) event is triggered when the gallery popup closes.
+
+```js
+var tabs = [
+  {
+    header: "Home",
+    groups: [
+      {
+        header: "Gallery",
+        collections: [
+          {
+            items: [
+              {
+                type: "Gallery",
+                gallerySettings: {
+                  groups: [{
+                    header: 'Styles',
+                    items: [
+                        {
+                            content: 'Normal'
+                        }, {
+                            content: 'No Spacing'
+                        }, {
+                            content: 'Heading 1'
+                        }, {
+                            content: 'Heading 2'
+                        }
+                      ]
+                  }],
+                  popupClose: (args) => {
+                    // Your required action here
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+];
+
+var ribbon = new ej.ribbon.Ribbon({
+    tabs: tabs
+  });
+ribbon.appendTo("#ribbon");
+
+```
+
+### itemHover
+
+The [itemHover](../api/ribbon/ribbonGallerySettings/#itemhover) event is triggered when hover over the gallery item.
+
+```js
+var tabs = [
+  {
+    header: "Home",
+    groups: [
+      {
+        header: "Gallery",
+        collections: [
+          {
+            items: [
+              {
+                type: "Gallery",
+                gallerySettings: {
+                  groups: [{
+                    header: 'Styles',
+                    items: [
+                        {
+                            content: 'Normal'
+                        }, {
+                            content: 'No Spacing'
+                        }, {
+                            content: 'Heading 1'
+                        }, {
+                            content: 'Heading 2'
+                        }
+                      ]
+                  }],
+                  itemHover: (args) => {
+                    // Your required action here
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+];
+
+var ribbon = new ej.ribbon.Ribbon({
+    tabs: tabs
+  });
+ribbon.appendTo("#ribbon");
+
+```
+
+### beforeItemRender
+
+The [beforeItemRender](../api/ribbon/ribbonGallerySettings/#beforeitemrender) event is triggered while rendering each gallery item.
+
+```js
+var tabs = [
+  {
+    header: "Home",
+    groups: [
+      {
+        header: "Gallery",
+        collections: [
+          {
+            items: [
+              {
+                type: "Gallery",
+                gallerySettings: {
+                  groups: [{
+                    header: 'Styles',
+                    items: [
+                        {
+                            content: 'Normal'
+                        }, {
+                            content: 'No Spacing'
+                        }, {
+                            content: 'Heading 1'
+                        }, {
+                            content: 'Heading 2'
+                        }
+                      ]
+                  }],
+                  beforeItemRender: (args) => {
+                    // Your required action here
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+];
+
+var ribbon = new ej.ribbon.Ribbon({
+    tabs: tabs
+  });
+ribbon.appendTo("#ribbon");
+
+```
+
+### beforeSelect
+
+The [beforeSelect](../api/ribbon/ribbonGallerySettings/#beforeselect) event is triggered before selecting an item in the Ribbon gallery.
+
+```js
+var tabs = [
+  {
+    header: "Home",
+    groups: [
+      {
+        header: "Gallery",
+        collections: [
+          {
+            items: [
+              {
+                type: "Gallery",
+                gallerySettings: {
+                  groups: [{
+                    header: 'Styles',
+                    items: [
+                        {
+                            content: 'Normal'
+                        }, {
+                            content: 'No Spacing'
+                        }, {
+                            content: 'Heading 1'
+                        }, {
+                            content: 'Heading 2'
+                        }
+                      ]
+                  }],
+                  beforeSelect: (args) => {
+                    // Your required action here
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+];
+
+var ribbon = new ej.ribbon.Ribbon({
+    tabs: tabs
+  });
+ribbon.appendTo("#ribbon");
+
+```
+
+### select
+
+The [select](../api/ribbon/gallerySelectEventArgs/) event is triggered while selecting an item in the Ribbon Gallery.
+
+```js
+var tabs = [
+  {
+    header: "Home",
+    groups: [
+      {
+        header: "Gallery",
+        collections: [
+          {
+            items: [
+              {
+                type: "Gallery",
+                gallerySettings: {
+                  groups: [{
+                    header: 'Styles',
+                    items: [
+                        {
+                            content: 'Normal'
+                        }, {
+                            content: 'No Spacing'
+                        }, {
+                            content: 'Heading 1'
+                        }, {
+                            content: 'Heading 2'
+                        }
+                      ]
+                  }],
+                  select: (args) => {
+                    // Your required action here
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+];
+
+var ribbon = new ej.ribbon.Ribbon({
+    tabs: tabs
+  });
+ribbon.appendTo("#ribbon");
+
+```

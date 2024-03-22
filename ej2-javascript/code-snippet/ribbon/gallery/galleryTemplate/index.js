@@ -49,7 +49,6 @@ var tabs = [
                   itemCount: 7,
                   groups: [{
                     header: 'Plain Tables',
-                    itemHeight: "79",
                     items: [
                       {
                         cssClass: "plainTables_item_1"
@@ -75,7 +74,6 @@ var tabs = [
                     ]
                   }, {
                     header: 'List Tables',
-                    itemHeight: "79",
                     items: [
                       {
                         cssClass: "listTables_item_1"

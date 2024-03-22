@@ -53,7 +53,6 @@ let tabs: RibbonTabModel[] = [
                   itemCount: 7,
                   groups: [{
                     header: 'Plain Tables',
-                    itemHeight: "79",
                     items: [
                       {
                         cssClass: "plainTables_item_1"
@@ -79,7 +78,6 @@ let tabs: RibbonTabModel[] = [
                     ]
                   }, {
                     header: 'List Tables',
-                    itemHeight: "79",
                     items: [
                       {
                         cssClass: "listTables_item_1"

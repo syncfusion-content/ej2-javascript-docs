@@ -90,5 +90,3 @@ You can easily customize the width of the TextArea using the [width](../api/text
           
 {% previewsample "page.domainurl/code-snippet/textarea/resize-cs2" %}
 {% endif %}
-
-{% endif %}

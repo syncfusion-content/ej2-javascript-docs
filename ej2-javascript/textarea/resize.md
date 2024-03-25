@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Resize in ##Platform_Name## TextArea control
+# Resize in ##Platform_Name## TextArea Control
 
 The TextArea allows users to input and edit large amounts of text. Resizing this control effectively can enhance the user experience and accommodate varying content needs. This resizing behavior can be enabled and configured using the [resizeMode](../api/textarea/#resizeMode) API, which offers several options for resizing the TextArea:
 

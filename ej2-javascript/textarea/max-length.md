@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Maximum Length in ##Platform_Name## TextArea control
+# Maximum Length in ##Platform_Name## TextArea Control
 
 You can enforce a maximum length limit for the text input in the TextArea using the [maxLength](../api/textarea/#maxLength) property. This property allows to define the maximum number of characters that users can input into the TextArea.
 

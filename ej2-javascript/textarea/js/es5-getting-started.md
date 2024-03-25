@@ -9,13 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## TextArea control
+# Es5 Getting Started in ##Platform_Name## TextArea Control
 
-This section explains how to create a simple TextArea component and configure its available functionalities, using Essential JS 2 quickstart seed repository.
+This section explains how to create a simple TextArea Control and configure its available functionalities, using Essential JS 2 quickstart seed repository.
 
 ## Dependencies
 
-The following list of dependencies are required to use the TextArea component in your application.
+The following list of dependencies are required to use the TextArea Control in your application.
 
 ```js
 |-- @syncfusion/ej2-inputs
@@ -34,7 +34,7 @@ npm install
 ```
 
 > By default, the project is configured with all the Essential JS 2 dependencies. For better understanding, remove all the dependencies from
-`src/system.config.js` to get started with the TextArea component.
+`src/system.config.js` to get started with the TextArea Control.
 
 * Refer to the [TextArea component dependencies](#dependencies) in `system.config.js` configuration file.
 
@@ -138,10 +138,10 @@ The following example shows a basic TextArea control.
 
 ## Getting and setting values
 
-To set the initial value of the TextArea component, you can utilize the [value](../api/textarea/#value) property. Here's how you can achieve it:
+To set the initial value of the TextArea Control, you can utilize the [value](../api/textarea/#value) property. Here's how you can achieve it:
 
 ```js
-// initializes the TextArea component
+// initializes the TextArea Control
 var textareaObj = new ej.inputs.TextArea({
     // set value to the TextArea
     value: 'Comments'
@@ -154,7 +154,7 @@ textareaObj.appendTo('#default');
 * You can also set the value by enclosing the desired text within the opening and closing tags of the textarea element.
 
 ```html
-<!--initializes the TextArea component-->
+<!--initializes the TextArea Control-->
 <textarea id="default">Comments</textarea>
 
 ```
@@ -162,20 +162,20 @@ textareaObj.appendTo('#default');
 * Alternatively, you can set the value to the textarea element by assigning text to the `value` property using the textarea instance.
 
 ```js
-// initializes the TextArea component
+// initializes the TextArea Control
 var textareaObj = new ej.inputs.TextArea();
 textareaObj.appendTo('#default');
-// Set value to the TextArea component
+// Set value to the TextArea Control
 textareaObj.value = 'comments';
 
 ```
 
-* You can dynamically retrieve the value of the TextArea component using the `value` property from the TextArea component instance.
+* You can dynamically retrieve the value of the TextArea Control using the `value` property from the TextArea component instance.
 
 `[src/index.html]`
 
 ```html
-<!--initializes the TextArea component-->
+<!--initializes the TextArea Control-->
 <div>
     <textarea id="default"></textarea>
     <button id="valuebtn">Get Value</button>
@@ -186,10 +186,10 @@ textareaObj.value = 'comments';
 `[src/index.js]`
 
 ```js
-// initializes the TextArea component
+// initializes the TextArea Control
 let textareaObj: TextArea = new TextArea();
 textareaObj.appendTo('#default');
-// gets value from TextArea component instance
+// gets value from TextArea Control instance
 document.getElementById('valuebtn').onclick = function () {
     let textareaValue = textareaObj.value;
 }
@@ -199,7 +199,7 @@ document.getElementById('valuebtn').onclick = function () {
 * You can retrieve the value of the TextArea by accessing it as an argument from the [change](../api/textarea/#change) event.
 
 ```js
-// initializes the TextArea component
+// initializes the TextArea Control
 let textareaObj: TextArea = new TextArea({
     change: (args: ChangedEventArgs )=> {
        // Get the value of the TextArea from the arguments
@@ -207,7 +207,7 @@ let textareaObj: TextArea = new TextArea({
     }
 });
 textareaObj.appendTo('#default');
-// Set value to the TextArea component
+// Set value to the TextArea Control
 textareaObj.value = 'comments';
 
 ```

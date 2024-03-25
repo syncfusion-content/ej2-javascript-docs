@@ -9,16 +9,16 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## TextArea control
+# Getting Started in ##Platform_Name## TextArea Control
 
-This section explains how to create a simple TextArea component and configure its available functionalities in TypeScript, using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section explains how to create a simple TextArea Control and configure its available functionalities in TypeScript, using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 
 ## Dependencies
 
-The following list of dependencies are required to use the TextArea component in your application.
+The following list of dependencies are required to use the TextArea Control in your application.
 
 ```js
 
@@ -65,7 +65,7 @@ npm install
 
 ## Import the Syncfusion CSS styles
 
-To render TextArea component, need to import inputs and its dependent components styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+To render TextArea Control, need to import inputs and its dependent components styles as given below in the `~/src/styles/styles.css` file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -92,7 +92,7 @@ Add the HTML Textarea tag with the `id` attribute as `default` to your `index.ht
     <title>Essential JS 2 TextArea</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Essential JS 2 TextArea Components" />
+    <meta name="description" content="Essential JS 2 TextArea Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/material.css" rel="stylesheet" />
@@ -113,7 +113,7 @@ Add the HTML Textarea tag with the `id` attribute as `default` to your `index.ht
 {% endhighlight %}
 {% endtabs %}
 
-Then, import the TextArea component in your `app.ts` file and initialize it with the `#default`.
+Then, import the TextArea Control in your `app.ts` file and initialize it with the `#default`.
 
 `[src/app/app.ts]`
 
@@ -162,14 +162,14 @@ The following example shows a basic TextArea control.
 
 ## Getting and setting values
 
-To set the initial value of the TextArea component, you can utilize the [value](../api/textarea/#value) property. Here's how you can achieve it:
+To set the initial value of the TextArea Control, you can utilize the [value](../api/textarea/#value) property. Here's how you can achieve it:
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 
 import { TextArea } from '@syncfusion/ej2-inputs';
 
-// initializes the TextArea component
+// initializes the TextArea Control
 let textareaObj: TextArea = new TextArea({
         // sets value to the TextArea
         value: 'Comments'
@@ -185,7 +185,7 @@ textareaObj.appendTo('#default');
 {% tabs %}
 {% highlight ts tabtitle="app.html" %}
 
-// initializes the TextArea component
+// initializes the TextArea Control
 <textarea id="default">Comments</textarea>
 
 {% endhighlight %}
@@ -198,23 +198,23 @@ textareaObj.appendTo('#default');
 
 import { TextArea } from '@syncfusion/ej2-inputs';
 
-// initializes the TextArea component
+// initializes the TextArea Control
 let textareaObj: TextArea = new TextArea();
 textareaObj.appendTo('#default');
-// Set value to the TextArea component
+// Set value to the TextArea Control
 textareaObj.value = 'comments';
 
 {% endhighlight %}
 {% endtabs %}
 
-* You can dynamically retrieve the value of the TextArea component using the `value` property from the TextArea component instance.
+* You can dynamically retrieve the value of the TextArea Control using the `value` property from the TextArea Control instance.
 
 `[src/index.html]`
 
 {% tabs %}
 {% highlight ts tabtitle="app.html" %}
 
-// initializes the TextArea component
+// initializes the TextArea Control
 <div>
     <textarea id="default"></textarea>
     <button id="valuebtn">Get Value</button>
@@ -230,10 +230,10 @@ textareaObj.value = 'comments';
 
 import { TextArea } from '@syncfusion/ej2-inputs';
 
-// initializes the TextArea component
+// initializes the TextArea Control
 let textareaObj: TextArea = new TextArea();
 textareaObj.appendTo('#default');
-// gets value from TextArea component instance
+// gets value from TextArea Control instance
 document.getElementById('valuebtn').onclick = function () {
     let textareaValue = textareaObj.value;
 }
@@ -248,7 +248,7 @@ document.getElementById('valuebtn').onclick = function () {
 
 import { TextArea, ChangedEventArgs } from '@syncfusion/ej2-inputs';
 
-// initializes the TextArea component
+// initializes the TextArea Control
 let textareaObj: TextArea = new TextArea({
     change: (args: ChangedEventArgs )=> {
        // Get the value of the TextArea from the arguments
@@ -256,7 +256,7 @@ let textareaObj: TextArea = new TextArea({
     }
 });
 textareaObj.appendTo('#default');
-// Set value to the TextArea component
+// Set value to the TextArea Control
 textareaObj.value = 'comments';
 
 {% endhighlight %}

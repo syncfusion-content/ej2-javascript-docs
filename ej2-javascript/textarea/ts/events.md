@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in ##Platform_Name## TextArea control
+# Events in ##Platform_Name## TextArea Control
 
 This section describes the TextArea events that will be triggered when appropriate actions are performed. The following events are available in the TextArea control.
 
-## created
+## Created event
 
 The TextArea control triggers the [created](../api/textarea/#created) event when the TextArea component is created. This event provides users with an opportunity to perform actions immediately after the TextArea has been created and initialized.
 
@@ -32,7 +32,7 @@ textareaObj.appendTo('#default');
 
 ```
 
-## input
+## Input event
 
 The TextArea control triggers the [input](../api/textarea/#input) each time when the value of TextArea has changed. This event provides users with an opportunity to perform actions in response to real-time changes in the TextArea's content.
 The [InputEventArgs](../api/textbox/InputEventArgs/) passed as an event argument provides the details about the input event in the TextArea.
@@ -52,7 +52,7 @@ textareaObj.appendTo('#default');
 
 ```
 
-## change
+## Change event
 
 The TextArea control triggers the [change](../api/textarea/#change) event when the content of TextArea has changed and gets focus-out. This event provides users with an opportunity to execute specific actions in response to changes made by the user.
 The [ChangedEventArgs](../api/textbox/ChangedEventArgs/) passed as an event argument provides the details about the changes in the TextArea's value.
@@ -72,7 +72,7 @@ textareaObj.appendTo('#default');
 
 ```
 
-## focus 
+## Focus event
 
 The TextArea control triggers the [focus](../api/textarea/#focus ) when the TextArea gains focus. This event allows developers to execute specific actions when the user interacts with the TextArea by focusing on it.
 The [FocusInEventArgs](../api/textbox/FocusInEventArgs/) passed as an argument provides details about the focus event in the TextArea.
@@ -92,7 +92,7 @@ textareaObj.appendTo('#default');
 
 ```
 
-## blur 
+## Blur event
 
 The TextArea control triggers the [blur](../api/textarea/#blur) when the TextArea loses focus. This event allows users to execute specific actions when the user interacts with the TextArea by moving focus away from it.
 The [FocusOutEventArgs](../api/textbox/FocusOutEventArgs/) passed as an argument provides details about the blur event in the TextArea.
@@ -112,7 +112,7 @@ textareaObj.appendTo('#default');
 
 ```
 
-## destroyed 
+## Destroyed event
 
 The TextArea control triggers the [destroyed](../api/textarea/#destroyed) when the TextArea component is destroyed.
 

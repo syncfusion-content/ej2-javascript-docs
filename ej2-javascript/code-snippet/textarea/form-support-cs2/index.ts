@@ -3,7 +3,7 @@ import { TextArea, FormValidator, FormValidatorModel } from "@syncfusion/ej2-inp
 let textareaObj: TextArea = new TextArea({
   placeholder: "Enter your comments",
 });
-textareaObj.appendTo("#default");
+textareaObj.appendTo("#comments");
 
 // Initialize Custom placement
 let options: FormValidatorModel = {

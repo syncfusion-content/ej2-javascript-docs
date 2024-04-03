@@ -3,7 +3,8 @@ layout: post
 title: Undo Redo in ##Platform_Name## Gantt control | Syncfusion
 description: Learn here all about Undo Redo in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Undo Redo 
+control: Undo Redo
+publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

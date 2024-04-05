@@ -1,13 +1,13 @@
 import { PdfViewer, Toolbar, Magnification, Navigation, LinkAnnotation,ThumbnailView, BookmarkView,
          TextSelection, Annotation, FormDesigner, FormFields, TextFieldSettings, RadioButtonFieldSettings, 
-         CheckBoxFieldSettings, InitialFieldSettings, SignatureFieldSettings } from '@syncfusion/ej2-pdfviewer';
+         CheckBoxFieldSettings, InitialFieldSettings, SignatureFieldSettings, PageOrganizer } from '@syncfusion/ej2-pdfviewer';
 
 PdfViewer.Inject( Toolbar,Magnification, Navigation, LinkAnnotation,ThumbnailView,
-                  BookmarkView, TextSelection, Annotation, FormDesigner, FormFields );
+                  BookmarkView, TextSelection, Annotation, FormDesigner, FormFields, PageOrganizer );
 
 let pdfviewer: PdfViewer = new PdfViewer({ 
     documentPath:'https://cdn.syncfusion.com/content/pdf/form-designer.pdf',
-    resourceUrl:'https://cdn.syncfusion.com/ej2/23.1.43/dist/ej2-pdfviewer-lib'
+    resourceUrl:'https://cdn.syncfusion.com/ej2/25.1.35/dist/ej2-pdfviewer-lib'
 });
 pdfviewer.appendTo('#PdfViewer');
 

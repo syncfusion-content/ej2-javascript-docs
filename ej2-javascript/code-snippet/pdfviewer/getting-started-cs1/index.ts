@@ -1,10 +1,10 @@
 
 
 import { PdfViewer, Toolbar, Magnification, Navigation, Annotation, LinkAnnotation, ThumbnailView, 
-         BookmarkView, TextSelection, TextSearch, FormFields, FormDesigner} from '@syncfusion/ej2-pdfviewer';
+         BookmarkView, TextSelection, TextSearch, FormFields, FormDesigner, PageOrganizer} from '@syncfusion/ej2-pdfviewer';
 
 PdfViewer.Inject( Toolbar, Magnification, Navigation, Annotation, LinkAnnotation, ThumbnailView, 
-                  BookmarkView, TextSelection, TextSearch, FormFields, FormDesigner );
+                  BookmarkView, TextSelection, TextSearch, FormFields, FormDesigner, PageOrganizer );
 
 let pdfviewer: PdfViewer = new PdfViewer();
 pdfviewer.serviceUrl = 'https://services.syncfusion.com/js/production/api/pdfviewer';

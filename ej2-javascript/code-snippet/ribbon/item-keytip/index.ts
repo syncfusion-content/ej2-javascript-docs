@@ -1,8 +1,8 @@
 
 
-import { Ribbon, RibbonItemSize, RibbonItemType, RibbonTabModel, RibbonGroupButtonSelection, RibbonKeyTip, RibbonGallery } from '@syncfusion/ej2-ribbon';
+import { Ribbon, RibbonItemSize, RibbonItemType, RibbonTabModel, RibbonGroupButtonSelection, RibbonKeyTip, RibbonGallery, RibbonColorPicker } from '@syncfusion/ej2-ribbon';
 
-Ribbon.Inject(RibbonKeyTip, RibbonGallery);
+Ribbon.Inject(RibbonKeyTip, RibbonGallery, RibbonColorPicker);
 
 let fontStyle: string[] = ['Algerian', 'Arial', 'Calibri', 'Cambria', 'Cambria Math', 'Candara', 'Courier New', 'Georgia', 'Impact', 'Segoe Print', 'Segoe Script', 'Segoe UI', 'Symbol', 'Times New Roman', 'Verdana', 'Windings'
 ];

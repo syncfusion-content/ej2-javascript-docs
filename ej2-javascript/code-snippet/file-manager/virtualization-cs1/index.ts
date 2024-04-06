@@ -1,8 +1,8 @@
 
 
-import { FileManager, Toolbar, NavigationPane, DetailsView, enableVirtualization} from '@syncfusion/ej2-filemanager';
+import { FileManager, Toolbar, NavigationPane, DetailsView, Virtualization} from '@syncfusion/ej2-filemanager';
 
-FileManager.Inject(Toolbar, NavigationPane, DetailsView, enableVirtualization)
+FileManager.Inject(Toolbar, NavigationPane, DetailsView, Virtualization)
 
 let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
 // initialize file manager component and add custom item to contextmenu

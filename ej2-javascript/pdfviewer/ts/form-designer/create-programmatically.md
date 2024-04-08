@@ -280,7 +280,7 @@ Add the below `serviceUrl` in the `index.ts` file
 
 When the download icon is selected on the toolbar, the Form Fields will be saved in the PDF document and this action will not affect the original document. Refer the below GIF for further reference.
 
-![Alt text](../.././images/saveformfield.gif)
+![Alt text](../../images/saveformfield.gif)
 
 You can invoke download action using following code snippet.
 
@@ -317,7 +317,7 @@ pdfviewer.download();
 
 When the print icon is selected on the toolbar, the PDF document will be printed along with the Form Fields added to the pages and this action will not affect the original document. Refer the below GIF for further reference.
 
-![Alt text](../.././images/printformfield.gif)
+![Alt text](../../images/printformfield.gif)
 
 You can invoke print action using the following code snippet.,
 
@@ -408,7 +408,7 @@ document.getElementById('addPasswordField').addEventListener('click', function (
 
 We can open the already saved PDF document contains Form Fields in it by clicking the open icon in the toolbar. Refer the below GIF for further reference.
 
-![Alt text](../.././images/openexistingpdf.gif)
+![Alt text](../../images/openexistingpdf.gif)
 
 ## Validate form fields
 
@@ -659,7 +659,7 @@ viewer.signatureFieldSettings = {
 
 ```
 
-![Signature Field Settings](../.././images/SignatureField.png)
+![Signature Field Settings](../../images/SignatureField.png)
 
 The following code example explains how to update the properties of the initial field added to the document from the form designer toolbar.
 
@@ -699,7 +699,7 @@ viewer.initialFieldSettings = {
 
 ```
 
-![Initial Field Settings](../.././images/InitialField.png)
+![Initial Field Settings](../../images/InitialField.png)
 
 ### Textbox field settings
 
@@ -785,7 +785,7 @@ viewer.textFieldSettings = {
 
 ```
 
-![Textbox Field Settings](../.././images/Textbox.png)
+![Textbox Field Settings](../../images/Textbox.png)
 
 ### Password field settings
 
@@ -868,7 +868,7 @@ viewer.passwordFieldSettings = {
 
 ```
 
-![Password Field Settings](../.././images/Password.png)
+![Password Field Settings](../../images/Password.png)
 
 ### CheckBox field settings
 
@@ -934,7 +934,7 @@ viewer.checkBoxFieldSettings = {
 
 ```
 
-![Checkbox Settings](../.././images/Checkbox.png)
+![Checkbox Settings](../../images/Checkbox.png)
 
 ### RadioButton field settings
 
@@ -1001,7 +1001,7 @@ viewer.radioButtonFieldSettings = {
 
 ```
 
-![Radiobutton Settings](../.././images/Radiobutton.png)
+![Radiobutton Settings](../../images/Radiobutton.png)
 
 ### ListBox field settings
 
@@ -1084,7 +1084,7 @@ viewer.listBoxFieldSettings = {
 
 ```
 
-![Listbox Settings](../.././images/Listbox.png)
+![Listbox Settings](../../images/Listbox.png)
 
 ### DropDown field settings
 
@@ -1167,4 +1167,4 @@ viewer.listBoxFieldSettings = {
 
 ```
 
-![Dropdown Settings](../.././images/Dropdown.png)
+![Dropdown Settings](../../images/Dropdown.png)

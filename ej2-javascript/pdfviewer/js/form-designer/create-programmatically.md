@@ -83,7 +83,7 @@ Add the below `serviceUrl` in the `index.html` file
 
 When the download icon is selected on the toolbar, the Form Fields will be saved in the PDF document and this action will not affect the original document. Refer the below GIF for further reference.
 
-![Alt text](../../images/saveformfield.gif)
+![Alt text](../../pdfviewer/images/saveformfield.gif)
 
 You can invoke download action using following code snippet.
 
@@ -129,7 +129,7 @@ document.getElementById('download').addEventListener('click', function () {
 
 When the print icon is selected on the toolbar, the PDF document will be printed along with the Form Fields added to the pages and this action will not affect the original document. Refer the below GIF for further reference.
 
-![Alt text](../../images/printformfield.gif)
+![Alt text](../../pdfviewer/images/printformfield.gif)
 
 You can invoke print action using the following code snippet.,
 
@@ -213,7 +213,7 @@ document.getElementById('addPasswordField').addEventListener('click', function (
 
 We can open the already saved PDF document contains Form Fields in it by clicking the open icon in the toolbar. Refer the below GIF for further reference.
 
-![Alt text](../../images/openexistingpdf.gif)
+![Alt text](../../pdfviewer/images/openexistingpdf.gif)
 
 ## Validate form fields
 
@@ -512,7 +512,7 @@ pdfviewer.signatureFieldSettings = {
 {% endhighlight %}
 {% endtabs %}
 
-![Signature Field Settings](../../images/SignatureField.png)
+![Signature Field Settings](../../pdfviewer/images/SignatureField.png)
 
 The following code example explains how to update the properties of the initial field added to the document from the form designer toolbar.
 
@@ -601,7 +601,7 @@ pdfviewer.initialFieldSettings = {
 {% endhighlight %}
 {% endtabs %}
 
-![Initial Field Settings](../../images/InitialField.png)
+![Initial Field Settings](../../pdfviewer/images/InitialField.png)
 
 ### Textbox field settings
 
@@ -743,7 +743,7 @@ pdfviewer.textFieldSettings = {
 {% endhighlight %}
 {% endtabs %}
 
-![Textbox Field Settings](../../images/Textbox.png)
+![Textbox Field Settings](../../pdfviewer/images/Textbox.png)
 
 ### Password field settings
 
@@ -881,7 +881,7 @@ pdfviewer.passwordFieldSettings = {
 {% endhighlight %}
 {% endtabs %}
 
-![Password Field Settings](../../images/Password.png)
+![Password Field Settings](../../pdfviewer/images/Password.png)
 
 ### CheckBox field settings
 
@@ -990,7 +990,7 @@ pdfviewer.checkBoxFieldSettings = {
 {% endhighlight %}
 {% endtabs %}
 
-![Checkbox Settings](../../images/Checkbox.png)
+![Checkbox Settings](../../pdfviewer/images/Checkbox.png)
 
 ### RadioButton field settings
 
@@ -1101,7 +1101,7 @@ pdfviewer.radioButtonFieldSettings = {
 {% endhighlight %}
 {% endtabs %}
 
-![Radiobutton Settings](../../images/Radiobutton.png)
+![Radiobutton Settings](../../pdfviewer/images/Radiobutton.png)
 
 ### ListBox field settings
 
@@ -1239,7 +1239,7 @@ pdfviewer.listBoxFieldSettings = {
 {% endhighlight %}
 {% endtabs %}
 
-![Listbox Settings](../../images/Listbox.png)
+![Listbox Settings](../../pdfviewer/images/Listbox.png)
 
 ### DropDown field settings
 
@@ -1378,4 +1378,4 @@ pdfviewer.DropdownFieldSettings  = {
 {% endhighlight %}
 {% endtabs %}
 
-![Dropdown Settings](../../images/Dropdown.png)
+![Dropdown Settings](../../pdfviewer/images/Dropdown.png)

@@ -2,8 +2,22 @@ import { Ribbon, RibbonTabModel, RibbonItemType } from "@syncfusion/ej2-ribbon";
 
 let tabs: RibbonTabModel[] = [{
     header: "Home",
-    groups: [{
-        header: "Font",
+    groups: [
+        {
+            header: 'Templates',
+            isCollapsible: false,
+            collections: [
+              {
+                items: [
+                  {
+                    type: RibbonItemType.Template,
+                    itemTemplate: '#customItem'
+                }
+                ],
+              },
+            ],
+        }, {
+        header: "Multimedia",
         collections: [
           {
             items: [{

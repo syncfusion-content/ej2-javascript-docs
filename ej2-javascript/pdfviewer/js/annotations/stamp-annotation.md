@@ -210,7 +210,6 @@ var pdfviewer = new ej.pdfviewer.PdfViewer({
 ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch, ej.pdfviewer.Print, ej.pdfviewer.Navigation, ej.pdfviewer.Toolbar,
                               ej.pdfviewer.Magnification, ej.pdfviewer.Annotation, ej.pdfviewer.FormDesigner, ej.pdfviewer.FormFields, ej.pdfviewer.PageOrganizer);
 pdfviewer.appendTo('#PdfViewer');
-pdfviewer.appendTo('#PdfViewer');
 
 {% endhighlight %}
 {% highlight ts tabtitle="Server-Backed" %}
@@ -227,43 +226,3 @@ pdfviewer.appendTo('#PdfViewer');
 {% endhighlight %}
 {% endtabs %}
 
-{% tabs %}
-{% highlight ts tabtitle="Standalone" %}
-
-var pdfviewer = new ej.pdfviewer.PdfViewer({
-                    documentPath: "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf",
-                    resourceUrl : "https://cdn.syncfusion.com/ej2/25.1.35/dist/ej2-pdfviewer-lib",
-                });
-ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch, ej.pdfviewer.Print, ej.pdfviewer.Navigation, ej.pdfviewer.Toolbar,
-                              ej.pdfviewer.Magnification, ej.pdfviewer.Annotation, ej.pdfviewer.FormDesigner, ej.pdfviewer.FormFields, ej.pdfviewer.PageOrganizer);
-pdfviewer.appendTo('#PdfViewer');
-let addInkAnnotation = document.getElementById('addInkAnnotation');
-if (addInkAnnotation) {
-    addInkAnnotation.addEventListener('click', function () {
-        if (pdfviewer) {
-            pdfviewer.annotationModule.setAnnotationMode("Ink");
-        }
-    });
-}
-
-{% endhighlight %}
-{% highlight ts tabtitle="Server-Backed" %}
-
-var pdfviewer = new ej.pdfviewer.PdfViewer({
-                    documentPath: "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf",
-                    serviceUrl: 'https://services.syncfusion.com/js/production/api/pdfviewer',
-                });
-ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch, ej.pdfviewer.Print, ej.pdfviewer.Navigation, ej.pdfviewer.Toolbar,
-                              ej.pdfviewer.Magnification, ej.pdfviewer.Annotation, ej.pdfviewer.FormDesigner, ej.pdfviewer.FormFields, ej.pdfviewer.PageOrganizer);
-pdfviewer.appendTo('#PdfViewer');
-let addInkAnnotation = document.getElementById('addInkAnnotation');
-if (addInkAnnotation) {
-    addInkAnnotation.addEventListener('click', function () {
-        if (pdfviewer) {
-            pdfviewer.annotationModule.setAnnotationMode("Ink");
-        }
-    });
-}
-
-{% endhighlight %}
-{% endtabs %}

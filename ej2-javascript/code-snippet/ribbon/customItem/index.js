@@ -1,14 +1,28 @@
 var tabs = [{
   header: "Home",
-  groups: [{
-      header: "Font",
-      collections: [
-        {
-          items: [{
-              type: "Template",
-              itemTemplate: "#itemTemplate"
-          }]
-      }]
+  groups: [ {
+    header: 'Templates',
+    isCollapsible: false,
+    collections: [
+      {
+        items: [
+          {
+            type: 'Template',
+            itemTemplate: '#customItem'
+        }
+        ],
+      },
+    ],
+  },
+  {
+    header: "Multimedia",
+    collections: [
+      {
+        items: [{
+            type: "Template",
+            itemTemplate: "#itemTemplate"
+        }]
+    }]
   }]
 }];
 

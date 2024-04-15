@@ -11,7 +11,7 @@ import { Browser } from '@syncfusion/ej2-base';
     height: '330px',
     shapeChanging: (args: shapeChanging) => {
         if (args.currentShapeSettings.type === 'FreehandDraw') {
-            args.currentShapeSettings.color = 'red',
+            args.currentShapeSettings.strokeColor = 'red',
             args.currentShapeSettings.strokeWidth = 10
         }
     },

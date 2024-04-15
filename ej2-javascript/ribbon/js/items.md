@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ribbon Items
+# Items in ##Platform_Name## Ribbon control
 
 Ribbon renders various built-in items based on the item [type](https://ej2.syncfusion.com/javascript/documentation/api/ribbon/ribbonItemType/) property. By default, the type property is set as `Button` which renders the Button.
 
@@ -137,7 +137,7 @@ The [target](https://ej2.syncfusion.com/javascript/documentation/api/ribbon/ribb
           
 {% previewsample "page.domainurl/code-snippet/ribbon/dropdownTarget" %}
 
-#### Customize Dropdown button item
+#### Customize dropdown button item
 
 You can customize the dropdown button item by specifying a custom cssClass using the [beforeItemRender](https://ej2.syncfusion.com/javascript/documentation/api/ribbon/ribbonDropDownSettings/#beforeitemrender) event.
 

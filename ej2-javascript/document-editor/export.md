@@ -11,14 +11,14 @@ domainurl: ##DomainURL##
 
 # Export in ##Platform_Name## Document editor control
 
-Document Editor exports the document into various known file formats in client-side such as Microsoft Word document (.docx), text document (.txt), and its own format called **Syncfusion Document Text (.sfdt)**.
+Document Editor exports the document into various known file formats in client-side such as Microsoft Word document (.docx), Word template (.dotx), text document (.txt), and its own format called **Syncfusion Document Text (.sfdt)**.
 
-We are providing two types of save APIs  as mentioned below.
+We are providing two types of save APIs as mentioned below.
 
-|API name|Purpose|
-|--------|---------|
-|save(filename,FormatType):void<br>FormatType: Sfdt or Docx or Txt|Creates the document with specified file name and format type. Then, the created file is downloaded in the client browser by default.|
-|saveAsBlob(FormatType):Blob|Creates the document in specified format type and returns the created document as Blob.<br>This blob can be uploaded to your required server, database, or file path.|
+|API name|Purpose|Code Snippet for Document Editor|Code Snippet for Document Editor Container|
+|--------|---------|----------|----------|
+|save(filename,FormatType):void<br>FormatType: Sfdt or Docx or Txt|Creates the document with specified file name and format type. Then, the created file is downloaded in the client browser by default.|documenteditor.save('sample', 'Docx')|container.documenteditor.save('sample', 'Docx')|
+|saveAsBlob(FormatType):Blob|Creates the document in specified format type and returns the created document as Blob.<br>This blob can be uploaded to your required server, database, or file path.|documenteditor.saveAsBlob('Docx')|container.documenteditor.saveAsBlob('Docx')|
 
 ## SFDT export
 
@@ -26,7 +26,7 @@ The following example shows how to export documents in Document Editor as Syncfu
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/document-editor/export-cs1/index.ts %}
 {% endhighlight %}
@@ -36,6 +36,17 @@ The following example shows how to export documents in Document Editor as Syncfu
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/document-editor/export-cs1" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/document-editor/export-container-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/document-editor/export-container-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/document-editor/export-container-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -49,6 +60,17 @@ The following example shows how to export documents in Document Editor as Syncfu
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/document-editor/export-cs1" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/document-editor/export-container-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/document-editor/export-container-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/document-editor/export-container-cs1" %}
 {% endif %}
 
 ## Word export
@@ -59,7 +81,7 @@ The following example shows how to export the document as Word document (.docx).
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/document-editor/export-cs2/index.ts %}
 {% endhighlight %}
@@ -69,6 +91,17 @@ The following example shows how to export the document as Word document (.docx).
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/document-editor/export-cs2" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/document-editor/export-container-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/document-editor/export-container-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/document-editor/export-container-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -82,6 +115,17 @@ The following example shows how to export the document as Word document (.docx).
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/document-editor/export-cs2" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/document-editor/export-container-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/document-editor/export-container-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/document-editor/export-container-cs2" %}
 {% endif %}
 
 ## Word Template Export 
@@ -92,7 +136,7 @@ The following example shows how to export the document as Word Template (.dotx).
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/document-editor/export-cs4/index.ts %}
 {% endhighlight %}
@@ -102,6 +146,17 @@ The following example shows how to export the document as Word Template (.dotx).
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/document-editor/export-cs4" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/document-editor/export-container-cs4/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/document-editor/export-container-cs4/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/document-editor/export-container-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -115,6 +170,17 @@ The following example shows how to export the document as Word Template (.dotx).
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/document-editor/export-cs4" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/document-editor/export-container-cs4/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/document-editor/export-container-cs4/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/document-editor/export-container-cs4" %}
 {% endif %}
 
 ## Text export
@@ -123,7 +189,7 @@ The following example shows how to export document as text document (.txt).
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/document-editor/export-cs3/index.ts %}
 {% endhighlight %}
@@ -133,6 +199,17 @@ The following example shows how to export document as text document (.txt).
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/document-editor/export-cs3" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/document-editor/export-container-cs3/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/document-editor/export-container-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/document-editor/export-container-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -146,6 +223,17 @@ The following example shows how to export document as text document (.txt).
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/document-editor/export-cs3" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/document-editor/export-container-cs3/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/document-editor/export-container-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/document-editor/export-container-cs3" %}
 {% endif %}
 
 ## Export as blob

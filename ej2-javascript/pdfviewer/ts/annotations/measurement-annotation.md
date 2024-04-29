@@ -84,6 +84,397 @@ if (distanceMode) {
 {% endhighlight %}
 {% endtabs %}
 
+## Adding a measurement annotation to the PDF document Programmatically
+
+With the PDF Viewer library, you can add a measurement annotation to the PDF Viewer control programmatically using the [**addAnnotation()**](https://helpej2.syncfusion.com/documentation/api/pdfviewer/annotation/#annotation) method.
+
+Here's a example of how you can utilize the **addAnnotation()** method to include a measurement annotation programmatically:
+
+```html
+<button id="addDistanceAnnotation">Add Distance annotation Programmatically</button>
+<button id="addPerimeterAnnotation">Add Perimeter annotation Programmatically</button>
+<button id="addAreaAnnotation">Add Area annotation Programmatically</button>
+<button id="addRadiusAnnotation">Add Radius annotation Programmatically</button>
+<button id="addVolumeAnnotation">Add Volume annotation Programmatically</button>
+```
+
+{% tabs %}
+{% highlight ts tabtitle="Standalone" %}
+
+import {PdfViewer, Toolbar, Magnification, Navigation, Annotation, LinkAnnotation, ThumbnailView, BookmarkView, TextSelection, TextSearch, FormFields, FormDesigner, PageOrganizer, DistanceSettings, PerimeterSettings,
+    AreaSettings, RadiusSettings, VolumeSettings
+} from '@syncfusion/ej2-pdfviewer';
+
+PdfViewer.Inject(Toolbar, Magnification, Navigation, Annotation, LinkAnnotation, ThumbnailView, BookmarkView, TextSelection, TextSearch, FormFields, FormDesigner, PageOrganizer);
+
+let pdfviewer: PdfViewer = new PdfViewer();
+pdfviewer.documentPath = "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf";
+pdfviewer.resourceUrl = "https://cdn.syncfusion.com/ej2/25.1.35/dist/ej2-pdfviewer-lib";
+
+pdfviewer.appendTo('#PdfViewer');
+
+let addDistanceAnnotation = document.getElementById('addDistanceAnnotation');
+if (addDistanceAnnotation) {
+    addDistanceAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            pdfviewer.annotation.addAnnotation("Distance", {
+                offset: { x: 200, y: 230 },
+                pageNumber: 1,
+                vertexPoints: [{ x: 200, y: 230 }, { x: 350, y: 230 }]
+            } as DistanceSettings);
+        }
+    });
+}
+
+let addPerimeterAnnotation = document.getElementById('addPerimeterAnnotation');
+if (addPerimeterAnnotation) {
+    addPerimeterAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            pdfviewer.annotation.addAnnotation("Perimeter", {
+                offset: { x: 200, y: 350 },
+                pageNumber: 1,
+                vertexPoints: [{ x: 200, y: 350 }, { x: 285, y: 350 }, { x: 286, y: 412 }]
+            } as PerimeterSettings);
+        }
+    });
+}
+
+let addAreaAnnotation = document.getElementById('addAreaAnnotation');
+if (addAreaAnnotation) {
+    addAreaAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            pdfviewer.annotation.addAnnotation("Area", {
+                offset: { x: 200, y: 500 },
+                pageNumber: 1,
+                vertexPoints: [{ x: 200, y: 500 }, { x: 288, y: 499 }, { x: 289, y: 553 }, { x: 200, y: 500 }]
+            } as AreaSettings);
+        }
+    });
+}
+
+let addRadiusAnnotation = document.getElementById('addRadiusAnnotation');
+if (addRadiusAnnotation) {
+    addRadiusAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            pdfviewer.annotation.addAnnotation("Radius", {
+                offset: { x: 200, y: 630 },
+                pageNumber: 1,
+                width: 90,
+                height: 90
+            } as RadiusSettings);
+        }
+    });
+}
+
+let addVolumeAnnotation = document.getElementById('addVolumeAnnotation');
+if (addVolumeAnnotation) {
+    addVolumeAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            pdfviewer.annotation.addAnnotation("Volume", {
+                offset: { x: 200, y: 810 },
+                pageNumber: 1,
+                vertexPoints: [{ x: 200, y: 810 }, { x: 200, y: 919 }, { x: 320, y: 919 }, { x: 320, y: 809 }, { x: 200, y: 810 }]
+            } as VolumeSettings);
+        }
+    });
+}
+
+{% endhighlight %}
+{% highlight ts tabtitle="Server-Backed" %}
+
+import {
+    PdfViewer, Toolbar, Magnification, Navigation, Annotation, LinkAnnotation, ThumbnailView, BookmarkView, TextSelection, TextSearch, FormFields, FormDesigner, PageOrganizer, DistanceSettings, PerimeterSettings,
+    AreaSettings, RadiusSettings, VolumeSettings
+} from '@syncfusion/ej2-pdfviewer';
+
+PdfViewer.Inject(Toolbar, Magnification, Navigation, Annotation, LinkAnnotation, ThumbnailView, BookmarkView, TextSelection, TextSearch, FormFields, FormDesigner, PageOrganizer);
+
+let pdfviewer: PdfViewer = new PdfViewer();
+pdfviewer.documentPath = "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf";
+pdfviewer.serviceUrl = 'https://services.syncfusion.com/js/production/api/pdfviewer';
+
+pdfviewer.appendTo('#PdfViewer');
+
+let addDistanceAnnotation = document.getElementById('addDistanceAnnotation');
+if (addDistanceAnnotation) {
+    addDistanceAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            pdfviewer.annotation.addAnnotation("Distance", {
+                offset: { x: 200, y: 230 },
+                pageNumber: 1,
+                vertexPoints: [{ x: 200, y: 230 }, { x: 350, y: 230 }]
+            } as DistanceSettings);
+        }
+    });
+}
+
+let addPerimeterAnnotation = document.getElementById('addPerimeterAnnotation');
+if (addPerimeterAnnotation) {
+    addPerimeterAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            pdfviewer.annotation.addAnnotation("Perimeter", {
+                offset: { x: 200, y: 350 },
+                pageNumber: 1,
+                vertexPoints: [{ x: 200, y: 350 }, { x: 285, y: 350 }, { x: 286, y: 412 }]
+            } as PerimeterSettings);
+        }
+    });
+}
+
+let addAreaAnnotation = document.getElementById('addAreaAnnotation');
+if (addAreaAnnotation) {
+    addAreaAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            pdfviewer.annotation.addAnnotation("Area", {
+                offset: { x: 200, y: 500 },
+                pageNumber: 1,
+                vertexPoints: [{ x: 200, y: 500 }, { x: 288, y: 499 }, { x: 289, y: 553 }, { x: 200, y: 500 }]
+            } as AreaSettings);
+        }
+    });
+}
+
+let addRadiusAnnotation = document.getElementById('addRadiusAnnotation');
+if (addRadiusAnnotation) {
+    addRadiusAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            pdfviewer.annotation.addAnnotation("Radius", {
+                offset: { x: 200, y: 630 },
+                pageNumber: 1,
+                width: 90,
+                height: 90
+            } as RadiusSettings);
+        }
+    });
+}
+
+let addVolumeAnnotation = document.getElementById('addVolumeAnnotation');
+if (addVolumeAnnotation) {
+    addVolumeAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            pdfviewer.annotation.addAnnotation("Volume", {
+                offset: { x: 200, y: 810 },
+                pageNumber: 1,
+                vertexPoints: [{ x: 200, y: 810 }, { x: 200, y: 919 }, { x: 320, y: 919 }, { x: 320, y: 809 }, { x: 200, y: 810 }]
+            } as VolumeSettings);
+        }
+    });
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Edit the existing measurement annotation programmatically
+
+To modify existing measurement annotation in the Syncfusion PDF viewer programmatically, you can use the **editAnnotation()** method.
+
+Here is an example of how you can use the **editAnnotation()** method:
+
+```html
+<button id="editDistanceAnnotation">Edit Distance annotation Programmatically</button>
+<button id="editPerimeterAnnotation">Edit Perimeter annotation Programmatically</button>
+<button id="editAreaAnnotation">Edit Area annotation Programmatically</button>
+<button id="editRadiusAnnotation">Edit Radius annotation Programmatically</button>
+<button id="editVolumeAnnotation">Edit Volume annotation Programmatically</button>
+```
+
+{% tabs %}
+{% highlight ts tabtitle="Standalone" %}
+
+import { PdfViewer, Toolbar, Magnification, Navigation, Annotation, LinkAnnotation, ThumbnailView, BookmarkView, TextSelection, TextSearch, FormFields, FormDesigner, PageOrganizer} from '@syncfusion/ej2-pdfviewer';
+
+PdfViewer.Inject(Toolbar, Magnification, Navigation, Annotation, LinkAnnotation, ThumbnailView, BookmarkView, TextSelection, TextSearch, FormFields, FormDesigner, PageOrganizer);
+
+let pdfviewer: PdfViewer = new PdfViewer();
+pdfviewer.documentPath = "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf";
+pdfviewer.resourceUrl = "https://cdn.syncfusion.com/ej2/25.1.35/dist/ej2-pdfviewer-lib";
+pdfviewer.appendTo('#PdfViewer');
+
+let editDistanceAnnotation = document.getElementById('editDistanceAnnotation');
+if (editDistanceAnnotation) {
+    editDistanceAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            for (let i = 0; i < pdfviewer.annotationCollection.length; i++) {
+                if (pdfviewer.annotationCollection[i].subject === "Distance calculation") {
+                    pdfviewer.annotationCollection[i].annotationSelectorSettings.resizerShape = "Circle"
+                    pdfviewer.annotationCollection[i].strokeColor = "#0000FF";
+                    pdfviewer.annotationCollection[i].thickness = 2;
+                    pdfviewer.annotationCollection[i].fillColor = "#FFFF00";
+                    pdfviewer.annotation.editAnnotation(pdfviewer.annotationCollection[i]);
+                }
+            }
+        }
+    });
+}
+
+let editPerimeterAnnotation = document.getElementById('editPerimeterAnnotation');
+if (editPerimeterAnnotation) {
+    editPerimeterAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            for (let i = 0; i < pdfviewer.annotationCollection.length; i++) {
+                if (pdfviewer.annotationCollection[i].subject === "Perimeter calculation") {
+                    pdfviewer.annotationCollection[i].annotationSelectorSettings.resizerShape = "Circle"
+                    pdfviewer.annotationCollection[i].strokeColor = "#0000FF";
+                    pdfviewer.annotationCollection[i].thickness = 2;
+                    pdfviewer.annotationCollection[i].fillColor = "#FFFF00";
+                    pdfviewer.annotation.editAnnotation(pdfviewer.annotationCollection[i]);
+                }
+            }
+        }
+    });
+}
+
+let editAreaAnnotation = document.getElementById('editAreaAnnotation');
+if (editAreaAnnotation) {
+    editAreaAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            for (let i = 0; i < pdfviewer.annotationCollection.length; i++) {
+                if (pdfviewer.annotationCollection[i].subject === "Area calculation") {
+                    pdfviewer.annotationCollection[i].annotationSelectorSettings.resizerShape = "Circle"
+                    pdfviewer.annotationCollection[i].strokeColor = "#0000FF";
+                    pdfviewer.annotationCollection[i].thickness = 2;
+                    pdfviewer.annotationCollection[i].fillColor = "#FFFF00";
+                    pdfviewer.annotation.editAnnotation(pdfviewer.annotationCollection[i]);
+                }
+            }
+        }
+    });
+}
+
+let editRadiusAnnotation = document.getElementById('editRadiusAnnotation');
+if (editRadiusAnnotation) {
+    editRadiusAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            for (let i = 0; i < pdfviewer.annotationCollection.length; i++) {
+                if (pdfviewer.annotationCollection[i].subject === "Radius calculation") {
+                    pdfviewer.annotationCollection[i].annotationSelectorSettings.resizerShape = "Circle"
+                    pdfviewer.annotationCollection[i].strokeColor = "#0000FF";
+                    pdfviewer.annotationCollection[i].thickness = 2;
+                    pdfviewer.annotationCollection[i].fillColor = "#FFFF00";
+                    pdfviewer.annotation.editAnnotation(pdfviewer.annotationCollection[i]);
+                }
+            }
+        }
+    });
+}
+
+let editVolumeAnnotation = document.getElementById('editVolumeAnnotation');
+if (editVolumeAnnotation) {
+    editVolumeAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            for (let i = 0; i < pdfviewer.annotationCollection.length; i++) {
+                if (pdfviewer.annotationCollection[i].subject === "Volume calculation") {
+                    pdfviewer.annotationCollection[i].annotationSelectorSettings.resizerShape = "Circle"
+                    pdfviewer.annotationCollection[i].strokeColor = "#0000FF";
+                    pdfviewer.annotationCollection[i].thickness = 2;
+                    pdfviewer.annotationCollection[i].fillColor = "#FFFF00";
+                    pdfviewer.annotation.editAnnotation(pdfviewer.annotationCollection[i]);
+                }
+            }
+        }
+    });
+}
+
+{% endhighlight %}
+{% highlight ts tabtitle="Server-Backed" %}
+
+import { PdfViewer, Toolbar, Magnification, Navigation, Annotation, LinkAnnotation, ThumbnailView, BookmarkView, TextSelection, TextSearch, FormFields, FormDesigner, PageOrganizer} from '@syncfusion/ej2-pdfviewer';
+
+PdfViewer.Inject(Toolbar, Magnification, Navigation, Annotation, LinkAnnotation, ThumbnailView, BookmarkView, TextSelection, TextSearch, FormFields, FormDesigner, PageOrganizer);
+
+let pdfviewer: PdfViewer = new PdfViewer();
+pdfviewer.serviceUrl = 'https://services.syncfusion.com/js/production/api/pdfviewer';
+pdfviewer.documentPath = "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf";
+pdfviewer.appendTo('#PdfViewer');
+
+let editDistanceAnnotation = document.getElementById('editDistanceAnnotation');
+if (editDistanceAnnotation) {
+    editDistanceAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            for (let i = 0; i < pdfviewer.annotationCollection.length; i++) {
+                if (pdfviewer.annotationCollection[i].subject === "Distance calculation") {
+                    pdfviewer.annotationCollection[i].annotationSelectorSettings.resizerShape = "Circle"
+                    pdfviewer.annotationCollection[i].strokeColor = "#0000FF";
+                    pdfviewer.annotationCollection[i].thickness = 2;
+                    pdfviewer.annotationCollection[i].fillColor = "#FFFF00";
+                    pdfviewer.annotation.editAnnotation(pdfviewer.annotationCollection[i]);
+                }
+            }
+        }
+    });
+}
+
+let editPerimeterAnnotation = document.getElementById('editPerimeterAnnotation');
+if (editPerimeterAnnotation) {
+    editPerimeterAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            for (let i = 0; i < pdfviewer.annotationCollection.length; i++) {
+                if (pdfviewer.annotationCollection[i].subject === "Perimeter calculation") {
+                    pdfviewer.annotationCollection[i].annotationSelectorSettings.resizerShape = "Circle"
+                    pdfviewer.annotationCollection[i].strokeColor = "#0000FF";
+                    pdfviewer.annotationCollection[i].thickness = 2;
+                    pdfviewer.annotationCollection[i].fillColor = "#FFFF00";
+                    pdfviewer.annotation.editAnnotation(pdfviewer.annotationCollection[i]);
+                }
+            }
+        }
+    });
+}
+
+let editAreaAnnotation = document.getElementById('editAreaAnnotation');
+if (editAreaAnnotation) {
+    editAreaAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            for (let i = 0; i < pdfviewer.annotationCollection.length; i++) {
+                if (pdfviewer.annotationCollection[i].subject === "Area calculation") {
+                    pdfviewer.annotationCollection[i].annotationSelectorSettings.resizerShape = "Circle"
+                    pdfviewer.annotationCollection[i].strokeColor = "#0000FF";
+                    pdfviewer.annotationCollection[i].thickness = 2;
+                    pdfviewer.annotationCollection[i].fillColor = "#FFFF00";
+                    pdfviewer.annotation.editAnnotation(pdfviewer.annotationCollection[i]);
+                }
+            }
+        }
+    });
+}
+
+let editRadiusAnnotation = document.getElementById('editRadiusAnnotation');
+if (editRadiusAnnotation) {
+    editRadiusAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            for (let i = 0; i < pdfviewer.annotationCollection.length; i++) {
+                if (pdfviewer.annotationCollection[i].subject === "Radius calculation") {
+                    pdfviewer.annotationCollection[i].annotationSelectorSettings.resizerShape = "Circle"
+                    pdfviewer.annotationCollection[i].strokeColor = "#0000FF";
+                    pdfviewer.annotationCollection[i].thickness = 2;
+                    pdfviewer.annotationCollection[i].fillColor = "#FFFF00";
+                    pdfviewer.annotation.editAnnotation(pdfviewer.annotationCollection[i]);
+                }
+            }
+        }
+    });
+}
+
+let editVolumeAnnotation = document.getElementById('editVolumeAnnotation');
+if (editVolumeAnnotation) {
+    editVolumeAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            for (let i = 0; i < pdfviewer.annotationCollection.length; i++) {
+                if (pdfviewer.annotationCollection[i].subject === "Volume calculation") {
+                    pdfviewer.annotationCollection[i].annotationSelectorSettings.resizerShape = "Circle"
+                    pdfviewer.annotationCollection[i].strokeColor = "#0000FF";
+                    pdfviewer.annotationCollection[i].thickness = 2;
+                    pdfviewer.annotationCollection[i].fillColor = "#FFFF00";
+                    pdfviewer.annotation.editAnnotation(pdfviewer.annotationCollection[i]);
+                }
+            }
+        }
+    });
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Editing the properties of measurement annotation
 
 The fill color, stroke color, thickness, and opacity of the measurement annotation can be edited using the Edit Color tool, Edit Stroke Color tool, Edit Thickness tool, and Edit Opacity tool in the annotation toolbar.

@@ -83,6 +83,382 @@ if (circleAnnotationButton) {
 {% endhighlight %}
 {% endtabs %}
 
+## Adding a Shape annotation to the PDF document Programmatically
+
+With the PDF Viewer library, you can add a Shape annotation to the PDF Viewer control programmatically using the [**addAnnotation()**](https://helpej2.syncfusion.com/documentation/api/pdfviewer/annotation/#addannotation) method.
+
+Here's a example of how you can utilize the **addAnnotation()** method to include a Shape annotation programmatically:
+
+```html
+<button id="addLineAnnotation">Add Line annotation Programmatically</button>
+<button id="addArrowAnnotation">Add Arrow annotation Programmatically</button>
+<button id="addRectangleAnnotation">Add Rectangle annotation Programmatically</button>
+<button id="addCircleAnnotation">Add Circle annotation Programmatically</button>
+<button id="addPolygonAnnotation">Add Polygon annotation Programmatically</button>
+```
+{% tabs %}
+{% highlight ts tabtitle="Standalone" %}
+
+var pdfviewer = new ej.pdfviewer.PdfViewer({
+                    documentPath: "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf",
+                    resourceUrl : "https://cdn.syncfusion.com/ej2/25.1.35/dist/ej2-pdfviewer-lib",
+                });
+ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch, ej.pdfviewer.Print, ej.pdfviewer.Navigation, ej.pdfviewer.Toolbar,
+                              ej.pdfviewer.Magnification, ej.pdfviewer.Annotation, ej.pdfviewer.FormDesigner, ej.pdfviewer.FormFields, ej.pdfviewer.PageOrganizer);
+pdfviewer.appendTo('#PdfViewer');
+
+let addLineAnnotation = document.getElementById('addLineAnnotation');
+if (addLineAnnotation) {
+    addLineAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            pdfviewer.annotation.addAnnotation("Line", {
+                offset: { x: 200, y: 230 },
+                pageNumber: 1,
+                vertexPoints: [{ x: 200, y: 230 }, { x: 350, y: 230 }]
+            });
+        }
+    });
+}
+
+let addArrowAnnotation = document.getElementById('addArrowAnnotation');
+if (addArrowAnnotation) {
+    addArrowAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            pdfviewer.annotation.addAnnotation("Arrow", {
+                offset: { x: 200, y: 370 },
+                pageNumber: 1,
+                vertexPoints: [{ x: 200, y: 370 }, { x: 350, y: 370 }]
+            });
+        }
+    });
+}
+
+let addRectangleAnnotation = document.getElementById('addRectangleAnnotation');
+if (addRectangleAnnotation) {
+    addRectangleAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            pdfviewer.annotation.addAnnotation("Rectangle", {
+                offset: { x: 200, y: 480 },
+                pageNumber: 1,
+                width: 150,
+                height: 75
+            });
+        }
+    });
+}
+
+let addCircleAnnotation = document.getElementById('addCircleAnnotation');
+if (addCircleAnnotation) {
+    addCircleAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            pdfviewer.annotation.addAnnotation("Circle", {
+                offset: { x: 200, y: 620 },
+                pageNumber: 1,
+                width: 90,
+                height: 90
+            });
+        }
+    });
+}
+
+let addPolygonAnnotation = document.getElementById('addPolygonAnnotation');
+if (addPolygonAnnotation) {
+    addPolygonAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            pdfviewer.annotation.addAnnotation("Polygon", {
+                offset: { x: 200, y: 800 },
+                pageNumber: 1,
+                vertexPoints: [{ x: 200, y: 800 }, { x: 242, y: 771 }, { x: 289, y: 799 }, { x: 278, y: 842 }, { x: 211, y: 842 }, { x: 200, y: 800 }]
+            });
+        }
+    });
+}
+
+{% endhighlight %}
+{% highlight ts tabtitle="Server-Backed" %}
+
+var pdfviewer = new ej.pdfviewer.PdfViewer({
+                    documentPath: "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf",
+                    serviceUrl : "https://services.syncfusion.com/js/production/api/pdfviewer",
+                });
+ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch, ej.pdfviewer.Print, ej.pdfviewer.Navigation, ej.pdfviewer.Toolbar,
+                              ej.pdfviewer.Magnification, ej.pdfviewer.Annotation, ej.pdfviewer.FormDesigner, ej.pdfviewer.FormFields, ej.pdfviewer.PageOrganizer);
+pdfviewer.appendTo('#PdfViewer');
+
+let addLineAnnotation = document.getElementById('addLineAnnotation');
+if (addLineAnnotation) {
+    addLineAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            pdfviewer.annotation.addAnnotation("Line", {
+                offset: { x: 200, y: 230 },
+                pageNumber: 1,
+                vertexPoints: [{ x: 200, y: 230 }, { x: 350, y: 230 }]
+            });
+        }
+    });
+}
+
+let addArrowAnnotation = document.getElementById('addArrowAnnotation');
+if (addArrowAnnotation) {
+    addArrowAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            pdfviewer.annotation.addAnnotation("Arrow", {
+                offset: { x: 200, y: 370 },
+                pageNumber: 1,
+                vertexPoints: [{ x: 200, y: 370 }, { x: 350, y: 370 }]
+            });
+        }
+    });
+}
+
+let addRectangleAnnotation = document.getElementById('addRectangleAnnotation');
+if (addRectangleAnnotation) {
+    addRectangleAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            pdfviewer.annotation.addAnnotation("Rectangle", {
+                offset: { x: 200, y: 480 },
+                pageNumber: 1,
+                width: 150,
+                height: 75
+            });
+        }
+    });
+}
+
+let addCircleAnnotation = document.getElementById('addCircleAnnotation');
+if (addCircleAnnotation) {
+    addCircleAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            pdfviewer.annotation.addAnnotation("Circle", {
+                offset: { x: 200, y: 620 },
+                pageNumber: 1,
+                width: 90,
+                height: 90
+            });
+        }
+    });
+}
+
+let addPolygonAnnotation = document.getElementById('addPolygonAnnotation');
+if (addPolygonAnnotation) {
+    addPolygonAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            pdfviewer.annotation.addAnnotation("Polygon", {
+                offset: { x: 200, y: 800 },
+                pageNumber: 1,
+                vertexPoints: [{ x: 200, y: 800 }, { x: 242, y: 771 }, { x: 289, y: 799 }, { x: 278, y: 842 }, { x: 211, y: 842 }, { x: 200, y: 800 }]
+            });
+        }
+    });
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Edit the existing shape annotation programmatically
+
+To modify existing shape annotation in the Syncfusion PDF viewer programmatically, you can use the **editAnnotation()** method.
+
+Here is an example of how you can use the **editAnnotation()** method:
+
+```html
+<button id="editLineAnnotation">Edit Line annotation Programmatically</button>
+<button id="editArrowAnnotation">Edit Arrow annotation Programmatically</button>
+<button id="editRectangleAnnotation">Edit Rectangle annotation Programmatically</button>
+<button id="editCircleAnnotation">Edit Circle annotation Programmatically</button>
+<button id="editPolygonAnnotation">Edit Polygon annotation Programmatically</button>
+```
+{% tabs %}
+{% highlight ts tabtitle="Standalone" %}
+
+var pdfviewer = new ej.pdfviewer.PdfViewer({
+                    documentPath: "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf",
+                    resourceUrl : "https://cdn.syncfusion.com/ej2/25.1.35/dist/ej2-pdfviewer-lib",
+                });
+ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch, ej.pdfviewer.Print, ej.pdfviewer.Navigation, ej.pdfviewer.Toolbar,
+                              ej.pdfviewer.Magnification, ej.pdfviewer.Annotation, ej.pdfviewer.FormDesigner, ej.pdfviewer.FormFields, ej.pdfviewer.PageOrganizer);
+pdfviewer.appendTo('#PdfViewer');
+let editLineAnnotation = document.getElementById('editLineAnnotation');
+if (editLineAnnotation) {
+    editLineAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            for (let i = 0; i < pdfviewer.annotationCollection.length; i++) {
+                if (pdfviewer.annotationCollection[i].subject === "Line") {
+                    pdfviewer.annotationCollection[i].strokeColor = "#0000FF";
+                    pdfviewer.annotationCollection[i].thickness = 2;
+                    pdfviewer.annotationCollection[i].annotationSelectorSettings.resizerShape = "Circle"
+                    pdfviewer.annotation.editAnnotation(pdfviewer.annotationCollection[i]);
+                }
+            }
+        }
+    });
+}
+
+let editArrowAnnotation = document.getElementById('editArrowAnnotation');
+if (editArrowAnnotation) {
+    editArrowAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            for (let i = 0; i < pdfviewer.annotationCollection.length; i++) {
+                if (pdfviewer.annotationCollection[i].subject === "Arrow") {
+                    pdfviewer.annotationCollection[i].strokeColor = "#0000FF";
+                    pdfviewer.annotationCollection[i].thickness = 2;
+                    pdfviewer.annotationCollection[i].fillColor = "#FFFF00";
+                    pdfviewer.annotationCollection[i].annotationSelectorSettings.resizerShape = "Circle"
+                    pdfviewer.annotation.editAnnotation(pdfviewer.annotationCollection[i]);
+                }
+            }
+        }
+    });
+}
+
+let editRectangleAnnotation = document.getElementById('editRectangleAnnotation');
+if (editRectangleAnnotation) {
+    editRectangleAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            for (let i = 0; i < pdfviewer.annotationCollection.length; i++) {
+                if (pdfviewer.annotationCollection[i].subject === "Rectangle") {
+                    pdfviewer.annotationCollection[i].strokeColor = "#0000FF";
+                    pdfviewer.annotationCollection[i].thickness = 2;
+                    pdfviewer.annotationCollection[i].fillColor = "#FFFF00";
+                    pdfviewer.annotationCollection[i].annotationSelectorSettings.resizerShape = "Circle"
+                    pdfviewer.annotation.editAnnotation(pdfviewer.annotationCollection[i]);
+                }
+            }
+        }
+    });
+}
+
+let editCircleAnnotation = document.getElementById('editCircleAnnotation');
+if (editCircleAnnotation) {
+    editCircleAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            for (let i = 0; i < pdfviewer.annotationCollection.length; i++) {
+                if (pdfviewer.annotationCollection[i].subject === "Circle") {
+                    pdfviewer.annotationCollection[i].strokeColor = "#0000FF";
+                    pdfviewer.annotationCollection[i].thickness = 2;
+                    pdfviewer.annotationCollection[i].fillColor = "#FFFF00";
+                    pdfviewer.annotationCollection[i].annotationSelectorSettings.resizerShape = "Circle"
+                    pdfviewer.annotation.editAnnotation(pdfviewer.annotationCollection[i]);
+                }
+            }
+        }
+    });
+}
+
+let editPolygonAnnotation = document.getElementById('editPolygonAnnotation');
+if (editPolygonAnnotation) {
+    editPolygonAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            for (let i = 0; i < pdfviewer.annotationCollection.length; i++) {
+                if (pdfviewer.annotationCollection[i].subject === "Polygon") {
+                    pdfviewer.annotationCollection[i].strokeColor = "#0000FF";
+                    pdfviewer.annotationCollection[i].thickness = 2;
+                    pdfviewer.annotationCollection[i].fillColor = "#FFFF00";
+                    pdfviewer.annotationCollection[i].annotationSelectorSettings.resizerShape = "Circle"
+                    pdfviewer.annotation.editAnnotation(pdfviewer.annotationCollection[i]);
+                }
+            }
+        }
+    });
+}
+
+{% endhighlight %}
+{% highlight ts tabtitle="Server-Backed" %}
+
+var pdfviewer = new ej.pdfviewer.PdfViewer({
+                    documentPath: "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf",
+                    serviceUrl : "https://services.syncfusion.com/js/production/api/pdfviewer",
+                });
+ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch, ej.pdfviewer.Print, ej.pdfviewer.Navigation, ej.pdfviewer.Toolbar,
+                              ej.pdfviewer.Magnification, ej.pdfviewer.Annotation, ej.pdfviewer.FormDesigner, ej.pdfviewer.FormFields, ej.pdfviewer.PageOrganizer);
+pdfviewer.appendTo('#PdfViewer');
+let editLineAnnotation = document.getElementById('editLineAnnotation');
+if (editLineAnnotation) {
+    editLineAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            for (let i = 0; i < pdfviewer.annotationCollection.length; i++) {
+                if (pdfviewer.annotationCollection[i].subject === "Line") {
+                    pdfviewer.annotationCollection[i].strokeColor = "#0000FF";
+                    pdfviewer.annotationCollection[i].thickness = 2;
+                    pdfviewer.annotationCollection[i].annotationSelectorSettings.resizerShape = "Circle"
+                    pdfviewer.annotation.editAnnotation(pdfviewer.annotationCollection[i]);
+                }
+            }
+        }
+    });
+}
+
+let editArrowAnnotation = document.getElementById('editArrowAnnotation');
+if (editArrowAnnotation) {
+    editArrowAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            for (let i = 0; i < pdfviewer.annotationCollection.length; i++) {
+                if (pdfviewer.annotationCollection[i].subject === "Arrow") {
+                    pdfviewer.annotationCollection[i].strokeColor = "#0000FF";
+                    pdfviewer.annotationCollection[i].thickness = 2;
+                    pdfviewer.annotationCollection[i].fillColor = "#FFFF00";
+                    pdfviewer.annotationCollection[i].annotationSelectorSettings.resizerShape = "Circle"
+                    pdfviewer.annotation.editAnnotation(pdfviewer.annotationCollection[i]);
+                }
+            }
+        }
+    });
+}
+
+let editRectangleAnnotation = document.getElementById('editRectangleAnnotation');
+if (editRectangleAnnotation) {
+    editRectangleAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            for (let i = 0; i < pdfviewer.annotationCollection.length; i++) {
+                if (pdfviewer.annotationCollection[i].subject === "Rectangle") {
+                    pdfviewer.annotationCollection[i].strokeColor = "#0000FF";
+                    pdfviewer.annotationCollection[i].thickness = 2;
+                    pdfviewer.annotationCollection[i].fillColor = "#FFFF00";
+                    pdfviewer.annotationCollection[i].annotationSelectorSettings.resizerShape = "Circle"
+                    pdfviewer.annotation.editAnnotation(pdfviewer.annotationCollection[i]);
+                }
+            }
+        }
+    });
+}
+
+let editCircleAnnotation = document.getElementById('editCircleAnnotation');
+if (editCircleAnnotation) {
+    editCircleAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            for (let i = 0; i < pdfviewer.annotationCollection.length; i++) {
+                if (pdfviewer.annotationCollection[i].subject === "Circle") {
+                    pdfviewer.annotationCollection[i].strokeColor = "#0000FF";
+                    pdfviewer.annotationCollection[i].thickness = 2;
+                    pdfviewer.annotationCollection[i].fillColor = "#FFFF00";
+                    pdfviewer.annotationCollection[i].annotationSelectorSettings.resizerShape = "Circle"
+                    pdfviewer.annotation.editAnnotation(pdfviewer.annotationCollection[i]);
+                }
+            }
+        }
+    });
+}
+
+let editPolygonAnnotation = document.getElementById('editPolygonAnnotation');
+if (editPolygonAnnotation) {
+    editPolygonAnnotation.addEventListener('click', function () {
+        if (pdfviewer) {
+            for (let i = 0; i < pdfviewer.annotationCollection.length; i++) {
+                if (pdfviewer.annotationCollection[i].subject === "Polygon") {
+                    pdfviewer.annotationCollection[i].strokeColor = "#0000FF";
+                    pdfviewer.annotationCollection[i].thickness = 2;
+                    pdfviewer.annotationCollection[i].fillColor = "#FFFF00";
+                    pdfviewer.annotationCollection[i].annotationSelectorSettings.resizerShape = "Circle"
+                    pdfviewer.annotation.editAnnotation(pdfviewer.annotationCollection[i]);
+                }
+            }
+        }
+    });
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Editing the properties of the shape annotation
 
 The fill color, stroke color, thickness, and opacity of the shape annotation can be edited using the Edit color tool, Edit stroke color tool, Edit thickness tool, and Edit opacity tool in the annotation toolbar.

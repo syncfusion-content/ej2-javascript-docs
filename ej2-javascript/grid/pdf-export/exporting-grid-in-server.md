@@ -9,25 +9,30 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Exporting grid in server in ##Platform_Name## Grid control
+# Exporting Grid in Server in ##Platform_Name## Grid control
 
-The Grid have an option to export the data to PDF in server side using Grid server export library.
+The Grid control provides an option to export grid data to a PDF document on the server side using the Grid server export library. This allows you to perform PDF export operations on the server, providing additional security and flexibility. To enable server-side PDF exporting, you need to configure the server dependencies and implement the necessary server configuration.
 
 ## Server dependencies
 
-The Server side export functionality is shipped in the Syncfusion.EJ2.GridExport package, which is available in Essential Studio and [nuget.org](https://www.nuget.org/).The following list of dependencies is required for Grid server side PDF exporting action.
+To enable server-side PDF exporting in the Syncfusion ##Platform_Name## Grid control, you need to include the following dependencies:
 
 * Syncfusion.EJ2
 * Syncfusion.EJ2.GridExport
-* Syncfusion.Compression.Base
-* Syncfusion.Pdf.Base
+
+These dependencies are available in the Essential Studio package and can also be obtained from [nuget.org](https://www.nuget.org/).
 
 ## Server configuration
 
-The following code snippets shows server configuration using ASP.NET MVC Controller Action.
+To export the grid data to a PDF document on the server side, you need to perform the following server configuration using an ASP.NET Core Controller Action:
 
-To Export the Grid in server side, You need to call the
- [`serverPdfExport`](../../api/grid/#serverpdfexport) method for passing the Grid properties to server exporting action.
+1. Set up the necessary dependencies and imports in your server-side code.
+
+2. Define a controller action that handles the server-side PDF export. This action should receive the Grid properties from the client-side and initiate the PDF export operation on the server.
+
+3. Use the [serverPdfExport](../../api/grid/#serverpdfexport) method to pass the Grid properties to the server exporting action. This method allows you to specify the server action URL and other export options.
+
+The following code snippet shows server configuration using ASP.NET Core Controller Action.
 
 ```ts
 public ActionResult PdfExport(string gridModel)
@@ -48,13 +53,12 @@ public class GridColumnModel
 {
     public List<GridColumn> columns { get; set; }
 }
-public ActionResult DataSource(DataManager dm)
+public IActionResult UrlDatasource([FromBody]DataManagerRequest dm)
 {
-    var DataSource = OrderRepository.GetAllRecords();
-    DataResult result = new DataResult();
-    result.result = DataSource.Skip(dm.Skip).Take(dm.Take).ToList();
-    result.count = result.result.Count;
-    return Json(result, JsonRequestBehavior.AllowGet);
+    IEnumerable DataSource = OrdersDetails.GetAllRecords();
+    DataOperations operation = new DataOperations();
+    int count = DataSource.Cast<OrdersDetails>().Count();
+    return dm.RequiresCounts ? Json(new { result = DataSource, count = count }) : Json(DataSource);
 }
 
 ```
@@ -62,6 +66,7 @@ public ActionResult DataSource(DataManager dm)
 ```ts
 import { Grid, Toolbar } from '@syncfusion/ej2-grids';
 import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
+import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 Grid.Inject(Toolbar);
 
 let data: DataManager = new DataManager({
@@ -73,17 +78,17 @@ let grid: Grid = new Grid({
     dataSource: data,
     toolbar: ['PdfExport'],
     columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100 },
-        { field: 'CustomerID', headerText: 'Customer ID', width: 120 },
-        { field: 'Freight', headerText: 'Freight', textAlign: 'Right', width: 120, format: 'C2' },
-        { field: 'ShipCountry', headerText: 'Ship Country', width: 150 }
+        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
+        { field: 'CustomerID', headerText: 'Customer ID', width: 150 },
+        { field: 'ShipCity', headerText: 'Ship City', width: 150 },
+        { field: 'ShipName', headerText: 'Ship Name', width: 150 }
     ],
-    height: 265
+    height: 273
 });
 grid.appendTo('#Grid');
 
-grid.toolbarClick = (args: Object) => {
-    if (args['item'].id === 'Grid_pdfexport') {
+grid.toolbarClick = (args: ClickEventArgs) => {
+    if (args['item'].id === 'Grid_pdfexport') {  // 'Grid_pdfexport' -> Grid control id + _ + toolbar item name
         grid.serverPdfExport("Home/PdfExport");
     }
 }
@@ -235,11 +240,13 @@ public ActionResult PdfExport(string gridModel)
 
 ```
 
-## Rotate a header text to a certain degree in the exported grid on the server side
+## Rotate a header text in the exported grid
 
-The Grid has support to customize the column header styles such as changing text orientation, the font color, and so on in the exported PDF file. To achieve this requirement, define the `BeginCellLayout` event of the `PdfExportProperties` with an event handler to perform the required action.
+Grid control provides support for customizing column header styles, including rotating the header text to a certain degree in the exported PDF file on the server side. To achieve this requirement, you can use the `BeginCellLayout` event of the `PdfExportProperties` class along with a custom event handler.
 
-The `PdfHeaderQueryCellInfoEvent` will be triggered when creating a column header for the pdf document to be exported. Collect the column header details in this event and handle the custom in the BeginCellLayout event handler.
+1. The [PdfHeaderQueryCellInfo](../../api/grid#pdfheaderquerycellinfo) event is triggered when creating a column header for the PDF document to be exported. In this event, you can collect the column header details and handle customizations.
+
+2. In the `BeginCellLayout` event handler, you can use the `Graphics.DrawString` method to rotate the header text to the desired degree, will be triggered when creating a column header for the PDF document to be exported. Collect the column header details in this event and handle the custom in the `BeginCellLayout` event handler.
 
 In the following demo, the `DrawString` method from the `Graphics` is used to rotate the header text of the column header inside the `BeginCellLayout` event handler.
 
@@ -290,7 +297,42 @@ private void PdfHeaderQueryCellInfo(object pdf)
 
 ```
 
+## Passing additional parameters to the server while exporting
+
+Passing additional parameters to the server when exporting data in the Syncfusion ##Platform_Name## Grid involves providing flexibility to include extra information or customize the export process based on specific requirements.
+
+You can achieve this by utilizing the [query](../../api/grid/#query) property and the [toolbarClick](../../api/grid/#toolbarclick) event. Within the `query` property, you can invoke the `addParams` method to add parameters to the request.
+
+The following example demonstrates how to pass additional parameters to the server when PDF exporting within the `toolbarClick` event. Within the event, the additional parameters, specifically **recordcount** as **15**, are passed using the addParams method and displayed as a message.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/pdf-server-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/pdf-server-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/pdf-server-cs2" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/pdf-server-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/pdf-server-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/pdf-server-cs2" %}
+{% endif %}
+
 ## Limitations
 
-* The export feature for detail templates is not supported in server-side exporting.
+* The export feature for detail and caption templates is not supported in server-side exporting.
 * Multiple grids exporting feature is not supported with server side exporting.

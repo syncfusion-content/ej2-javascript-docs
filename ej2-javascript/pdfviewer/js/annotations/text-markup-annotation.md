@@ -64,6 +64,62 @@ Add the below `serviceUrl` in the `index.html` file
 
 {% previewsample "page.domainurl/code-snippet/pdfviewer/es5-text-markup-annotation/highlight-normal-mode-cs1" %}
 
+## Highlight a text programmatically
+
+The PDF Viewer library enables you to programmatically highlight text within the PDF Viewer control using the [**addAnnotation()**](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/annotation/#addannotation) method.
+
+Here's an example of how you can use the **addAnnotation()** method to apply highlighting programmatically:
+
+```html
+<button id="highlight">Add TextMarkup annotation programmatically</button>
+```
+{% tabs %}
+{% highlight ts tabtitle="Standalone" %}
+
+var pdfviewer = new ej.pdfviewer.PdfViewer({
+                    documentPath: "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf",
+                    resourceUrl : "https://cdn.syncfusion.com/ej2/25.1.35/dist/ej2-pdfviewer-lib",
+                });
+ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch, ej.pdfviewer.Print, ej.pdfviewer.Navigation, ej.pdfviewer.Toolbar,
+                              ej.pdfviewer.Magnification, ej.pdfviewer.Annotation, ej.pdfviewer.FormDesigner, ej.pdfviewer.FormFields, ej.pdfviewer.PageOrganizer);
+pdfviewer.appendTo('#PdfViewer');
+
+let highlight = document.getElementById('highlight');
+if (highlight) {
+    highlight.addEventListener('click', function () {
+        if (pdfviewer) {
+            pdfviewer.annotation.addAnnotation("Highlight", {
+                bounds: [{ x: 97, y: 110, width: 350, height: 14 }],
+                pageNumber: 1
+            });
+        }
+    });
+}
+
+{% endhighlight %}
+{% highlight ts tabtitle="Server-Backed" %}
+
+var pdfviewer = new ej.pdfviewer.PdfViewer({
+                    documentPath: "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf",
+                    serviceUrl : "https://services.syncfusion.com/js/production/api/pdfviewer",
+                });
+ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch, ej.pdfviewer.Print, ej.pdfviewer.Navigation, ej.pdfviewer.Toolbar,
+                              ej.pdfviewer.Magnification, ej.pdfviewer.Annotation, ej.pdfviewer.FormDesigner, ej.pdfviewer.FormFields, ej.pdfviewer.PageOrganizer);
+pdfviewer.appendTo('#PdfViewer');
+let highlight = document.getElementById('highlight');
+if (highlight) {
+    highlight.addEventListener('click', function () {
+        if (pdfviewer) {
+            pdfviewer.annotation.addAnnotation("Highlight", {
+                bounds: [{ x: 97, y: 110, width: 350, height: 14 }],
+                pageNumber: 1
+            });
+        }
+    });
+}
+{% endhighlight %}
+{% endtabs %}
+
 ## Underline a text
 
 There are two ways to underline a text in the PDF document:
@@ -113,6 +169,63 @@ Add the below `serviceUrl` in the `index.html` file
 
 {% previewsample "page.domainurl/code-snippet/pdfviewer/es5-text-markup-annotation/underline-normal-mode-cs1" %}
 
+## Underline a text programmatically
+
+The PDF Viewer library enables you to programmatically Underline text within the PDF Viewer control using the [**addAnnotation()**](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/annotation/#addannotation) method.
+
+Here's an example of how you can use the **addAnnotation()** method to apply Underline programmatically:
+
+```html
+<button id="underline">Add TextMarkup annotation programmatically</button>
+```
+{% tabs %}
+{% highlight ts tabtitle="Standalone" %}
+
+var pdfviewer = new ej.pdfviewer.PdfViewer({
+                    documentPath: "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf",
+                    resourceUrl : "https://cdn.syncfusion.com/ej2/25.1.35/dist/ej2-pdfviewer-lib",
+                });
+ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch, ej.pdfviewer.Print, ej.pdfviewer.Navigation, ej.pdfviewer.Toolbar,
+                              ej.pdfviewer.Magnification, ej.pdfviewer.Annotation, ej.pdfviewer.FormDesigner, ej.pdfviewer.FormFields, ej.pdfviewer.PageOrganizer);
+pdfviewer.appendTo('#PdfViewer');
+
+let underline = document.getElementById('underline');
+if (underline) {
+    underline.addEventListener('click', function () {
+        if (pdfviewer) {
+            pdfviewer.annotation.addAnnotation("Underline", {
+                bounds: [{ x: 97, y: 110, width: 350, height: 14 }],
+                pageNumber: 1
+            });
+        }
+    });
+}
+
+{% endhighlight %}
+{% highlight ts tabtitle="Server-Backed" %}
+
+var pdfviewer = new ej.pdfviewer.PdfViewer({
+                    documentPath: "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf",
+                    serviceUrl : "https://services.syncfusion.com/js/production/api/pdfviewer",
+                });
+ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch, ej.pdfviewer.Print, ej.pdfviewer.Navigation, ej.pdfviewer.Toolbar,
+                              ej.pdfviewer.Magnification, ej.pdfviewer.Annotation, ej.pdfviewer.FormDesigner, ej.pdfviewer.FormFields, ej.pdfviewer.PageOrganizer);
+pdfviewer.appendTo('#PdfViewer');
+let underline = document.getElementById('underline');
+if (underline) {
+    underline.addEventListener('click', function () {
+        if (pdfviewer) {
+            pdfviewer.annotation.addAnnotation("Underline", {
+                bounds: [{ x: 97, y: 110, width: 350, height: 14 }],
+                pageNumber: 1
+            });
+        }
+    });
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Strikethrough a text
 
 There are two ways to strikethrough a text in the PDF document:
@@ -161,6 +274,61 @@ Add the below `serviceUrl` in the `index.html` file
 
 {% previewsample "page.domainurl/code-snippet/pdfviewer/es5-text-markup-annotation/strikethrough-normal-mode-cs1" %}
 
+## Strikethrough a text programmatically
+
+The PDF Viewer library enables you to programmatically Strikethrough text within the PDF Viewer control using the [**addAnnotation()**](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/annotation/#addannotation) method.
+
+Here's an example of how you can use the **addAnnotation()** method to apply Strikethrough programmatically:
+
+```html
+<button id="strikethrough">Add TextMarkup annotation programmatically</button>
+```
+{% tabs %}
+{% highlight ts tabtitle="Standalone" %}
+
+var pdfviewer = new ej.pdfviewer.PdfViewer({
+                    documentPath: "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf",
+                    resourceUrl : "https://cdn.syncfusion.com/ej2/25.1.35/dist/ej2-pdfviewer-lib",
+                });
+ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch, ej.pdfviewer.Print, ej.pdfviewer.Navigation, ej.pdfviewer.Toolbar,
+                              ej.pdfviewer.Magnification, ej.pdfviewer.Annotation, ej.pdfviewer.FormDesigner, ej.pdfviewer.FormFields, ej.pdfviewer.PageOrganizer);
+pdfviewer.appendTo('#PdfViewer');
+
+let strikethrough = document.getElementById('strikethrough');
+if (strikethrough) {
+    strikethrough.addEventListener('click', function () {
+        if (pdfviewer) {
+            pdfviewer.annotation.addAnnotation("Strikethrough", {
+                bounds: [{ x: 97, y: 110, width: 350, height: 14 }],
+                pageNumber: 1
+            });
+        }
+    });
+}
+
+{% endhighlight %}
+{% highlight ts tabtitle="Server-Backed" %}
+
+var pdfviewer = new ej.pdfviewer.PdfViewer({
+                    documentPath: "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf",
+                    serviceUrl : "https://services.syncfusion.com/js/production/api/pdfviewer",
+                });
+ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch, ej.pdfviewer.Print, ej.pdfviewer.Navigation, ej.pdfviewer.Toolbar,
+                              ej.pdfviewer.Magnification, ej.pdfviewer.Annotation, ej.pdfviewer.FormDesigner, ej.pdfviewer.FormFields, ej.pdfviewer.PageOrganizer);
+pdfviewer.appendTo('#PdfViewer');
+let strikethrough = document.getElementById('strikethrough');
+if (strikethrough) {
+    strikethrough.addEventListener('click', function () {
+        if (pdfviewer) {
+            pdfviewer.annotation.addAnnotation("Strikethrough", {
+                bounds: [{ x: 97, y: 110, width: 350, height: 14 }],
+                pageNumber: 1
+            });
+        }
+    });
+}
+{% endhighlight %}
+{% endtabs %}
 
 ## Deleting a text markup annotation
 

@@ -34,6 +34,134 @@ Sticky note annotations can be added to the PDF document using the annotation to
 
 ![StickyNotesComment](../../pdfviewer/images/stickynotes_comment.png)
 
+## Adding a sticky note annotation to the PDF document Programmatically
+
+With the PDF Viewer library, you can add a sticky note annotation to the PDF Viewer control programmatically using the [**addAnnotation()**](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/annotation/#addannotation) method.
+
+Here's a example of how you can utilize the **addAnnotation()** method to include a sticky note annotation programmatically:
+
+```html
+<button id="stickyNote">Add sticky note annotation programmatically</button>
+```
+
+{% tabs %}
+{% highlight ts tabtitle="Standalone" %}
+
+var pdfviewer = new ej.pdfviewer.PdfViewer({
+                    documentPath: "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf",
+                    resourceUrl : "https://cdn.syncfusion.com/ej2/25.1.35/dist/ej2-pdfviewer-lib",
+                });
+ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch, ej.pdfviewer.Print, ej.pdfviewer.Navigation, ej.pdfviewer.Toolbar,
+                              ej.pdfviewer.Magnification, ej.pdfviewer.Annotation, ej.pdfviewer.FormDesigner, ej.pdfviewer.FormFields, ej.pdfviewer.PageOrganizer);
+pdfviewer.appendTo('#PdfViewer');
+
+let stickyNote = document.getElementById('stickyNote');
+if (stickyNote) {
+  stickyNote.addEventListener('click', function () {
+    if (pdfviewer) {
+      pdfviewer.annotation.addAnnotation("StickyNotes", {
+        offset: { x: 100, y: 200 },
+        pageNumber: 1,
+        isLock: false
+      });
+    }
+  });
+}
+
+{% endhighlight %}
+{% highlight ts tabtitle="Server-Backed" %}
+
+var pdfviewer = new ej.pdfviewer.PdfViewer({
+                    documentPath: "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf",
+                    serviceUrl : "https://services.syncfusion.com/js/production/api/pdfviewer",
+                });
+ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch, ej.pdfviewer.Print, ej.pdfviewer.Navigation, ej.pdfviewer.Toolbar,
+                              ej.pdfviewer.Magnification, ej.pdfviewer.Annotation, ej.pdfviewer.FormDesigner, ej.pdfviewer.FormFields, ej.pdfviewer.PageOrganizer);
+pdfviewer.appendTo('#PdfViewer');
+
+let stickyNote = document.getElementById('stickyNote');
+if (stickyNote) {
+  stickyNote.addEventListener('click', function () {
+    if (pdfviewer) {
+      pdfviewer.annotation.addAnnotation("StickyNotes", {
+        offset: { x: 100, y: 200 },
+        pageNumber: 1,
+        isLock: false
+      });
+    }
+  });
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Edit the existing sticky note annotation programmatically
+
+To modify existing sticky note annotation in the Syncfusion PDF viewer programmatically, you can use the **editAnnotation()** method.
+
+Here is an example of how you can use the **editAnnotation()** method:
+
+```html
+<button id="stickyNote">Edit sticky note annotation programmatically</button>
+```
+
+{% tabs %}
+{% highlight ts tabtitle="Standalone" %}
+
+var pdfviewer = new ej.pdfviewer.PdfViewer({
+                    documentPath: "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf",
+                    resourceUrl : "https://cdn.syncfusion.com/ej2/25.1.35/dist/ej2-pdfviewer-lib",
+                });
+ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch, ej.pdfviewer.Print, ej.pdfviewer.Navigation, ej.pdfviewer.Toolbar,
+                              ej.pdfviewer.Magnification, ej.pdfviewer.Annotation, ej.pdfviewer.FormDesigner, ej.pdfviewer.FormFields, ej.pdfviewer.PageOrganizer);
+pdfviewer.appendTo('#PdfViewer');
+
+let stickyNote = document.getElementById('stickyNote');
+if (stickyNote) {
+  stickyNote.addEventListener('click', function () {
+    if (pdfviewer) {
+      for (let i = 0; i < pdfviewer.annotationCollection.length; i++) {
+        if (pdfviewer.annotationCollection[i].shapeAnnotationType === "sticky") {
+          var width = pdfviewer.annotationCollection[i].bounds.width;
+          var height = pdfviewer.annotationCollection[i].bounds.height;
+          pdfviewer.annotationCollection[i].bounds = { x: 100, y: 100, width: width, height: height };
+          pdfviewer.annotation.editAnnotation(pdfviewer.annotationCollection[i]);
+        }
+      }
+    }
+  });
+}
+
+{% endhighlight %}
+{% highlight ts tabtitle="Server-Backed" %}
+
+var pdfviewer = new ej.pdfviewer.PdfViewer({
+                    documentPath: "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf",
+                    serviceUrl : "https://services.syncfusion.com/js/production/api/pdfviewer",
+                });
+ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch, ej.pdfviewer.Print, ej.pdfviewer.Navigation, ej.pdfviewer.Toolbar,
+                              ej.pdfviewer.Magnification, ej.pdfviewer.Annotation, ej.pdfviewer.FormDesigner, ej.pdfviewer.FormFields, ej.pdfviewer.PageOrganizer);
+pdfviewer.appendTo('#PdfViewer');
+
+let stickyNote = document.getElementById('stickyNote');
+if (stickyNote) {
+  stickyNote.addEventListener('click', function () {
+    if (pdfviewer) {
+      for (let i = 0; i < pdfviewer.annotationCollection.length; i++) {
+        if (pdfviewer.annotationCollection[i].shapeAnnotationType === "sticky") {
+          var width = pdfviewer.annotationCollection[i].bounds.width;
+          var height = pdfviewer.annotationCollection[i].bounds.height;
+          pdfviewer.annotationCollection[i].bounds = { x: 100, y: 100, width: width, height: height };
+          pdfviewer.annotation.editAnnotation(pdfviewer.annotationCollection[i]);
+        }
+      }
+    }
+  });
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Editing the properties of the sticky note annotation
 
 ### Editing opacity

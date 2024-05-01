@@ -1,14 +1,13 @@
 ej.grids.Grid.Inject(ej.grids.Page, ej.grids.PdfExport, ej.grids.Toolbar);
 var grid = new ej.grids.Grid({
     dataSource: purchaseData,
-    allowPaging: true,
     allowPdfExport: true,
     toolbar: ['PdfExport'],
     columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120},
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID'},
-        { field: 'Freight', headerText: 'Freight', textAlign: 'Right', width: 120, format: 'C' },
-        { field: 'ShipName', headerText: 'ShipName', textAlign: 'Right', width: 140 }
+        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 90 },
+        { field: 'CustomerID', headerText: 'Customer ID', width: 100 },
+        { field: 'Freight', headerText: 'Freight', width: 80 },
+        { field: 'ShipName', headerText: 'Ship Name', width: 120 }
     ],
     height: 260
 });
@@ -21,6 +20,7 @@ grid.toolbarClick = function(args) {
 }
 
 grid.pdfHeaderQueryCellInfo = function(args){
-    args.cell.row.pdfGrid.repeatHeader = true;
+    if (args.cell && args.cell.row && args.cell.row.pdfGrid) {
+        args.cell.row.pdfGrid.repeatHeader = true;
+    }
 }
-

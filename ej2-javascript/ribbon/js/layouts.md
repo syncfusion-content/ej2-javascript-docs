@@ -196,3 +196,18 @@ You can use the [isMinimized](https://ej2.syncfusion.com/javascript/documentatio
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/ribbon/minimize-cs1" %}
+
+## Show or hide the layout switcher
+
+You can use the [hideLayoutSwitcher](https://ej2.syncfusion.com/javascript/documentation/api/ribbon/#hidelayoutswitcher) property to show/hide the Ribbon layout switcher button. By default, the value is `false`.
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/ribbon/hidelayoutswitcher-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/ribbon/hidelayoutswitcher-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/ribbon/hidelayoutswitcher-cs1" %}

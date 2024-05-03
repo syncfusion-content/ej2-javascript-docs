@@ -15,7 +15,7 @@ The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaS
 
 ## Component Initialization with CDN link for script and style reference
 
-**Step 1:** Create an app folder `myapp` for the Essential JS 2 JavaScript components.
+**Step 1:** Create an app folder `my-app` for the Essential JS 2 JavaScript components.
 
 **Step 2:** The Essential JS 2 component's global scripts and styles are already hosted in the below CDN link formats.
 
@@ -31,7 +31,7 @@ The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaS
 
 N> While referring the scripts from the downloaded resources in your application, make sure to place the 'ej2-pdfviewer-lib' assets in the same directory as the 'ej2.min.js' script.
 
-**Step 3:** Create a HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `Div` element and initiate the `Essential JS 2 PDF Viewer` component in the index.html by using following code.
+**Step 3:** Create a HTML page (index.html) in `my-app` location and add the CDN link references. Now, add the `Div` element and initiate the `Essential JS 2 PDF Viewer` component in the index.html by using following code.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -45,11 +45,7 @@ N> While referring the scripts from the downloaded resources in your application
 
 ## Limitation over Server-Backed PDF Viewer to Standalone PDF Viewer control
 
-When comparing a Standalone PDF Viewer to a Server-Backed PDF Viewer control, it's crucial to understand the limitations that the Standalone PDF Viewer may have in comparison. These limitations are important to consider
-
-### PNG Image Support
-
-The Standalone PDF Viewer does not have the capability to utilize PNG format for adding images to handwritten annotations ,custom stamp ,signature and initial form fields. It's important to be aware that only certain image formats, such as JPEG, are compatible for these purposes.
+When comparing a Standalone PDF Viewer to a Server-Backed PDF Viewer control, it's crucial to understand the limitations that the Standalone PDF Viewer may have in comparison. These limitations are important to consider.
 
 ### Local File Access
 

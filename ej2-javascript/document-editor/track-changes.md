@@ -33,6 +33,8 @@ var container = new ej.documenteditor.DocumentEditorContainer({ enableTrackChang
 container.appendTo('#container');
 ```
 
+{% endif %}
+
 ## Show/Hide Revisions Pane
  
 The Show/Hide Revisions Pane feature in the Document Editor allows users to toggle the visibility of the revisions pane, providing flexibility in managing tracked changes within the document.
@@ -68,6 +70,8 @@ container.documentEditor.showRevisions = false; // To hide revisions pane
 
 ```
 
+{% endif %}
+
 ## Get all tracked revisions
 
 The following example demonstrate how to get all tracked revision from current document.
@@ -96,6 +100,8 @@ container.appendTo('#container');
  */
 var revisions = container.documentEditor.revisions;
 ```
+
+{% endif %}
 
 ## Accept or Reject all changes programmatically
 
@@ -145,6 +151,8 @@ revisions.acceptAll();
 revisions.rejectAll();
 ```
 
+{% endif %}
+
 ## Accept or reject a specific revision
 
 The following example demonstrates how to accept/reject specific revision in the Document Editor.
@@ -182,6 +190,8 @@ revisions.get(0).accept();
  */
 revisions.get(1).reject();
 ```
+
+{% endif %}
 
 ## Navigate between the tracked changes
 
@@ -223,6 +233,8 @@ container.documentEditor.selection.navigateNextRevision();
  */
 container.documentEditor.selection.navigatePreviousRevision();
 ```
+
+{% endif %}
 
 ## Filtering changes based on user
 
@@ -276,6 +288,8 @@ container.documentEditor.editor.enforceProtection('123', 'RevisionsOnly');
 //stop the document protection
 container.documentEditor.editor.stopProtection('123');
 ```
+
+{% endif %}
 
 Tracked changes only protection can be enabled in UI by using [Restrict Editing pane](../document-editor/document-management#restrict-editing-pane)
 
@@ -336,3 +350,5 @@ function beforeAcceptRejectChanges(args) {
   }
 }
 ```
+
+{% endif %}

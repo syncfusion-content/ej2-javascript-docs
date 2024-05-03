@@ -19,7 +19,7 @@ The following steps are used to open the Bookmark.
 
 **Step 2:** Insert the following code snippet to implement the functionality for opening the Bookmark pane:
 
-```
+```html
 <button id="openBookmark">Open Bookmark Pane</button>
 ```
 
@@ -32,7 +32,7 @@ document.getElementById('openBookmark').addEventListener('click', () => {
 
 Similarly, to close the Bookmark pane programmatically, employ the following code snippet:
 
-```
+```html
 <button id="closeBookmark">Close Bookmark Pane</button>
 ```
 
@@ -42,4 +42,4 @@ document.getElementById('closeBookmark').addEventListener('click', () => {
   viewer.bookmarkViewModule.closeBookmarkPane();
 });
 
-[View sample in GitHub]()
+[View sample in GitHub](https://github.com/SyncfusionExamples/javascript-pdf-viewer-examples/tree/master/How%20to/Open%20and%20Close%20bookmark%20pane)

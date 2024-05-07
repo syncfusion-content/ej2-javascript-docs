@@ -44,6 +44,8 @@ let pdfQueryTaskbarInfo: EmitType<Object> = (args: Object) => {
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
     height: '450px',
+    rowHeight: 55,
+    taskbarHeight: 45,
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editor template in ##Platform_Name## Schedule control | Syncfusion
-description: Learn here all about Editor template in Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
+description: Learn here all about editor template in Syncfusion ##Platform_Name## Schedule control its elements and more.
 platform: ej2-javascript
 control: Editor template 
 publishingplatform: ##Platform_Name##

@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Restrict editing in ##Platform_Name## Document editor control
+# Restrict Editing in ##Platform_Name## Document Editor Control
 
 Document Editor provides support to restrict editing. When the protected document includes range permission, then unique user or user group only authorized to edit separate text area.
 
-# Set current user
+## Set current user
 
 You can use the [`currentUser`](../api/document-editor#currentuser) property to authorize the current document user by name, email, or user group name.
 
@@ -23,7 +23,7 @@ The following code shows how to set currentUser
 documentEditor.currentUser = 'engineer@mycompany.com';
 ```
 
-# Highlighting the text area
+## Highlighting the text area
 
 You can highlight the editable region of the current user using the [`userColor`](../api/document-editor#usercolor) property.
 
@@ -33,7 +33,7 @@ The following code shows how to set userColor.
 documentEditor.userColor = '#fff000';
 ```
 
-# Restrict Editing Pane
+## Restrict Editing Pane
 
 Restrict Editing Pane provides the following options to manage the document:
 * To apply formatting restrictions to the current document, select the allow formatting check box.
@@ -72,7 +72,7 @@ The following code shows Restrict Editing Pane. To unprotect the document, use p
 {% previewsample "page.domainurl/code-snippet/document-editor/data-protection-cs2" %}
 {% endif %}
 
-## See Also
+### See Also
 
 * [How to protect the document in form filling mode](../document-editor/form-fields/#protect-the-document-in-form-filling-mode)
 * [How to protect the document in comments only mode](../document-editor/comments/#protect-the-document-in-comments-only-mode)

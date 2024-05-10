@@ -142,6 +142,8 @@ The Essential JS 2 JavaScript components can be initialized by using either of t
   </html>
 ```
 
+> The Web API hosted link `https://services.syncfusion.com/js/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
+
 **Step 6:** Now, run the `index.html` in web browser, it will render the **Essential JS 2 DocumentEditor** component.
 
 **Step 7:** To render DocumentEditorContainer component, add the `Div` element and initiate the `Essential JS 2 DocumentEditorContainer` component in the `index.html` by using following code
@@ -194,13 +196,15 @@ The Essential JS 2 JavaScript components can be initialized by using either of t
 
           //Inject require modules.
           ej.documenteditor.DocumentEditorContainer.Inject(ej.documenteditor.Toolbar);
-          documenteditorContainer.serviceUrl = 'https://services.syncfusion.com/js/production/api/documenteditor/import';
+          documenteditorContainer.serviceUrl = 'https://services.syncfusion.com/js/production/api/documenteditor/';
           //DocumentEditorContainer control rendering starts
           documenteditorContainer.appendTo('#DocumentEditor');
       </script>
     </body>
   </html>
 ```
+
+> The Web API hosted link `https://services.syncfusion.com/js/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
 
 Now, run the `index.html` in web browser, it will render the **Essential JS 2 DocumentEditorContainer** component.
 
@@ -281,6 +285,8 @@ Now, run the `index.html` in web browser, it will render the **Essential JS 2 Do
   </html>
 ```
 
+> The Web API hosted link `https://services.syncfusion.com/js/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
+
 {% previewsample "page.domainurl/code-snippet/document-editor/es5-getting-started-cs1" %}
 
 **Step 4:** Now, run the `index.html` in web browser, it will render the `Essential JS 2 DocumentEditor` component.
@@ -343,7 +349,9 @@ Now, run the `index.html` in web browser, it will render the **Essential JS 2 Do
 
 </html>
 ```
-        
+
+> The Web API hosted link `https://services.syncfusion.com/js/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
+
 {% previewsample "page.domainurl/code-snippet/document-editor/es5-getting-started-cs2" %}
 
 Now, run the `index.html` in web browser, it will render the `Essential JS 2 DocumentEditorContainer` component.
@@ -355,7 +363,7 @@ The Document Editor component requires server-side interactions for the followin
 * [Open file formats other than SFDT](../document-editor/import#convert-word-documents-into-sfdt)
 * [Paste with formatting](../document-editor/clipboard#paste-with-formatting)
 * [Restrict editing](../document-editor/document-management)
-* [Spellcheck](../document-editor/spell-check)
+* [Spell check](../document-editor/spell-check)
 * [Save as file formats other than SFDT and DOCX](../document-editor/server-side-export)
 
 >Note: If you don't require the above functionalities then you can deploy as pure client-side component without any server-side interactions.

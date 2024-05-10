@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Move selection to specific position in ##Platform_Name## Document editor control | Syncfusion
+title: Move to specific position in ##Platform_Name## Document editor | Syncfusion
 description: Learn here all about Move selection to specific position in Syncfusion ##Platform_Name## Document editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Move selection to specific position 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Move selection to specific position in ##Platform_Name## Document editor control
+# Move selection to specific position in ##Platform_Name## Document editor
 
 Using [`select`](../../api/document-editor/selection/#select) API in selection module, You can set cursor position to anywhere in the document.
 
@@ -46,7 +46,7 @@ The following code snippet illustrate how to get the selection start and end off
 ```ts
 import { DocumentEditorContainer, Toolbar } from '@syncfusion/ej2-documenteditor';
 
-let hostUrl: string = 'https://ej2services.syncfusion.com/production/web-services/';
+let hostUrl: string = 'https://services.syncfusion.com/js/production/';
 
 let container: DocumentEditorContainer = new DocumentEditorContainer({ enableToolbar: true, height: '590px' });
 DocumentEditorContainer.Inject(Toolbar);

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Insert text in current position in ##Platform_Name## Document editor control | Syncfusion
+title: How to insert text in ##Platform_Name## Document editor | Syncfusion
 description: Learn here all about Insert text in current position in Syncfusion ##Platform_Name## Document editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Insert text in current position 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Insert text in current position in ##Platform_Name## Document editor control
+# Insert text in current position in ##Platform_Name## Document editor
 
 You can insert the text, paragraph and rich-text content in JavaScript Document Editor component.
 
@@ -20,7 +20,7 @@ You can use [`insertText`](../../api/document-editor/editor/#inserttext) API in 
 The following example illustrates how to add the text in current selection.
 
 ```ts
-    let hostUrl: string = 'https://ej2services.syncfusion.com/production/web-services/';
+    let hostUrl: string = 'https://services.syncfusion.com/js/production/';
     let container: DocumentEditorContainer = new DocumentEditorContainer({ enableToolbar: true, height: '590px' });
     DocumentEditorContainer.Inject(Toolbar);
     container.serviceUrl = hostUrl + 'api/documenteditor/';
@@ -51,7 +51,7 @@ container.documentEditor.editor.insertText('\n');
 
 To insert the HTML content, you have to convert the HTML content to SFDT Format using [`web service`](../../document-editor/web-services-overview). Then use [`paste`](../../api/document-editor/editor/#paste) API to insert the sfdt at current cursor position.
 
->Note: Html string should be welformatted html. [`DocIO`](https://help.syncfusion.com/file-formats/docio/html) support only welformatted XHTML.  
+>Note: HTML string should be well formatted. [`DocIO`](https://help.syncfusion.com/file-formats/docio/html) support only well formatted XHTML.  
 
 The following example illustrates how to insert the HTML content at current cursor position.
 
@@ -64,7 +64,7 @@ import {
 } from '@syncfusion/ej2-documenteditor';
 
 let hostUrl: string =
-  'https://ej2services.syncfusion.com/production/web-services/';
+  'https://services.syncfusion.com/js/production/';
 
 let container: DocumentEditorContainer = new DocumentEditorContainer({
   enableToolbar: true,
@@ -73,7 +73,7 @@ let container: DocumentEditorContainer = new DocumentEditorContainer({
 DocumentEditorContainer.Inject(Toolbar);
 container.serviceUrl = hostUrl + 'api/documenteditor/';
 container.appendTo('#container');
-
+ 
 let htmltags: string =
   "<?xml version='1.0' encoding='utf - 8'?><!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN''http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'><html xmlns ='http://www.w3.org/1999/xhtml' xml:lang='en' lang ='en'><body><h1>The img element</h1><img src='https://www.w3schools.com/images/lamp.jpg' alt ='Lamp Image' width='500' height='600'/></body></html>";
 document.getElementById('export').addEventListener('click', () => {

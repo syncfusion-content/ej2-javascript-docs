@@ -44,6 +44,9 @@ setSpinner({ template: '<div style="width:100%;height:100%" class="custom-rollin
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/spinner/custom-cs1/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="styles.css" %}
+{% include code-snippet/spinner/custom-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/spinner/custom-cs1" %}
@@ -56,6 +59,9 @@ setSpinner({ template: '<div style="width:100%;height:100%" class="custom-rollin
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/spinner/custom-cs1/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="styles.css" %}
+{% include code-snippet/spinner/custom-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

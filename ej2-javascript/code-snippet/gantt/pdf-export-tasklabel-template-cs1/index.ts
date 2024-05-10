@@ -29,7 +29,7 @@ let pdfQueryTaskbarInfo: EmitType<Object> = (args: Object) => {
 (<{ getResourceElements?: Function }>window).getResourceElements = (value: any) => {
     let out: string = '';
     let img: HTMLImageElement = document.createElement('img');
-    img.height = 40;
+    img.height = 20;
     let span: HTMLElement = document.createElement('span');
     span.style.marginLeft = '5px';
     span.style.marginRight = '5px';

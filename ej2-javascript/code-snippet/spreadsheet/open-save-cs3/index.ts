@@ -9,7 +9,8 @@ import { BeforeOpenEventArgs, Spreadsheet } from '@syncfusion/ej2-spreadsheet';
         saveUrl: 'https://services.syncfusion.com/js/production/api/spreadsheet/save',
         beforeOpen: (args: BeforeOpenEventArgs) => {
             args.requestData['headers'] = {
-            Authorization: 'YOUR TEXT',
+                ...args.requestData,
+                headers: { Authorization: 'YOUR TEXT' },
             }
         }
     });

@@ -739,9 +739,6 @@ There are scenarios where you need to restrict the CRUD action on specific appoi
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/event-cs33/index.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/schedule/event-cs33/datasource.ts %}
-{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/schedule/event-cs33" %}
@@ -751,8 +748,6 @@ There are scenarios where you need to restrict the CRUD action on specific appoi
 ## Restricting event creation on specific time slots
 
 You can restrict the users to create and update more than one appointment on specific time slots. Also, you can disable the CRUD action on those time slots if it is already occupied, which can be achieved using Scheduler's public method `isSlotAvailable`.
-
->Note: The **isSlotAvailable** is centered around verifying appointments within the present view's date range. Yet, it does not encompass an evaluation of availability for recurrence occurrences that fall beyond this particular date range.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -796,42 +791,6 @@ We can show more indicator if more than one appointment is available in a same c
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/schedule/event-cs35" %}
-
-## How to limit maximum number of events to display
-
-In the Scheduler, the default behavior is to display concurrent events based on cell height, with each new event represented as 
-`+n more` characters. However, you may want to improve the quality of the presentation by limiting the number of concurrent events. This can be accomplished by using the [maxEventsPerRow](https://ej2.syncfusion.com/documentation/api/schedule/views/#maxeventsperrow) property, which is defaulted to the [views](https://ej2.syncfusion.com/documentation/api/schedule/views/) property.
-
-The [maxEventsPerRow](https://ej2.syncfusion.com/documentation/api/schedule/views/#maxeventsperrow) property is specific to the month, timeline month, and timeline year views, allowing you to view events visually in these rows. Below is a code example that demonstrates how to use this constraint and the events displayed in a cell have been created:
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/schedule/view-cs19/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/view-cs19/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/schedule/view-cs19" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/schedule/view-cs19/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/view-cs19/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/schedule/view-cs19" %}
-{% endif %}
-
-> The property [maxEventsPerRow](https://ej2.syncfusion.com/documentation/api/schedule/views/#maxeventsperrow) will be applicable only when [rowAutoHeight](https://ej2.syncfusion.com/documentation/api/schedule#rowautoheight) feature is disabled in the Scheduler.
 
 ## Display tooltip for appointments
 

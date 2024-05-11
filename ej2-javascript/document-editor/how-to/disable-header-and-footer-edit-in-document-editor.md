@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Disable header and footer edit in document editor in ##Platform_Name## Document editor control | Syncfusion
-description: Learn here all about Disable header and footer edit in document editor in Syncfusion ##Platform_Name## Document editor control of Syncfusion Essential JS 2 and more.
+title: Disable header and footer edit in ##Platform_Name## Document editor | Syncfusion
+description: Learn here all about disabling editing in header and footer ##Platform_Name## Document editor control.
 platform: ej2-javascript
 control: Disable header and footer edit in document editor 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Disable header and footer edit in document editor in ##Platform_Name## Document editor control
+# Disable header and footer edit in ##Platform_Name## Document editor
 
 ## Disable header and footer edit in DocumentEditorContainer instance
 
@@ -22,7 +22,7 @@ The following example code illustrates how to header and footer edit in `Documen
 ```ts
 import { DocumentEditorContainer, Toolbar } from '@syncfusion/ej2-documenteditor';
 
-let hostUrl: string = 'https://ej2services.syncfusion.com/production/web-services/';
+let hostUrl: string = 'https://services.syncfusion.com/js/production/';
 
 let container: DocumentEditorContainer = new DocumentEditorContainer({ enableToolbar: true, height: '590px' });
 DocumentEditorContainer.Inject(Toolbar);
@@ -49,7 +49,7 @@ The following example code illustrates how to close header and footer when selec
 ```ts
 import { DocumentEditorContainer, Toolbar } from '@syncfusion/ej2-documenteditor';
 
-let hostUrl: string = 'https://ej2services.syncfusion.com/production/web-services/';
+let hostUrl: string = 'https://services.syncfusion.com/js/production/';
 
 let container: DocumentEditorContainer = new DocumentEditorContainer({ enableToolbar: true, height: '590px' });
 DocumentEditorContainer.Inject(Toolbar);

@@ -56,7 +56,7 @@ The following example illustrates how to add requestNavigate event for DocumentE
 import { DocumentEditor, SfdtExport, Selection, RequestNavigateEventArgs } from '@syncfusion/ej2-documenteditor';
 
 let hostUrl: string =
-  'https://ej2services.syncfusion.com/production/web-services/';
+  'https://services.syncfusion.com/js/production/';
 
 let container: DocumentEditorContainer = new DocumentEditorContainer({
   enableToolbar: true,

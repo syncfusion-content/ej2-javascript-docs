@@ -72,6 +72,7 @@ var spreadsheet = new ej.spreadsheet.Spreadsheet({
         );
         formData.append('fileName', 'Sample');
         formData.append('saveType', 'Xlsx');
+        formData.append('pdfLayoutSettings', JSON.stringify({ fitSheetOnOnePage: false, orientation: 'Portrait' })),
         fetch(
           'https://services.syncfusion.com/js/production/api/spreadsheet/save',
           {

@@ -43,7 +43,7 @@ The Document Editor component requires server-side interactions for the followin
 * [Open file formats other than SFDT](../document-editor/import#convert-word-documents-into-sfdt)
 * [Paste with formatting](../document-editor/clipboard#paste-with-formatting)
 * [Restrict editing](../document-editor/document-management)
-* [Spellcheck](../document-editor/spell-check)
+* [Spell check](../document-editor/spell-check)
 * [Save as file formats other than SFDT and DOCX](../document-editor/server-side-export)
 
 >Note: If you don't require the above functionalities then you can deploy as pure client-side component without any server-side interactions.
@@ -135,6 +135,8 @@ documenteditor.appendTo('#DocumentEditor');
 {% endhighlight %}
 {% endtabs %}
 
+> The Web API hosted link `https://services.syncfusion.com/js/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
+
 Now, add an HTML div element to act as the DocumentEditor element in `index.html` using the following code.
 
 {% tabs %}
@@ -211,6 +213,8 @@ documenteditor.appendTo('#DocumentEditor');
 
 {% endhighlight %}
 {% endtabs %}
+
+> The Web API hosted link `https://services.syncfusion.com/js/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
 
 Now, add an HTML div element to act as the DocumentEditorContainer element in `index.html` using the following code.
 

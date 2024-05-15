@@ -9,6 +9,8 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
+# Salesforce integration in ##Platform_Name## Schedule control
+
 This topic provides you with a detailed step-by-step guide on how to seamlessly integrate the [**JavaScript Scheduler**](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) component into Salesforce. By integrating it into Salesforce, you can enhance your productivity and streamline your scheduling processes.
 
 ## Prerequisites
@@ -176,7 +178,7 @@ sfdx lightning:generate:component --type lwc -n scheduler -d force-app/main/defa
 
 2. Open the `scheduler.js-meta.xml` file located in `force-app/main/default/lwc/scheduler` and modify the component definition to expose it in the Lightning App Builder. Here's an example of the modified file. 
 
-```force-app/main/default/lwc/scheduler/scheduler.js-meta.xml
+```
 <?xml version="1.0" encoding="UTF-8"?> 
 <LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata"> 
     <apiVersion>57.0</apiVersion> 
@@ -194,7 +196,7 @@ sfdx lightning:generate:component --type lwc -n scheduler -d force-app/main/defa
 
 3. Open the `scheduler.html` file located in `force-app/main/default/lwc/scheduler` and add an element with a class name to append the Syncfusion scheduler. Here's an example of the modified file.
  
-```force-app/main/default/lwc/scheduler/scheduler.html
+```
 <template> 
     <div class="syncfusionscheduler" lwc:dom="manual" style='width: 100%;'></div> 
 </template> 
@@ -202,7 +204,7 @@ sfdx lightning:generate:component --type lwc -n scheduler -d force-app/main/defa
 
 4. Open the `scheduler.js` file located in `force-app/main/default/lwc/scheduler` and implement the scheduler code in renderedCallback function. The static scripts and styles are loaded using the `loadScript` and `loadStyle` imports. Here's an example of the modified file.
 
-```force-app/main/default/lwc/scheduler/scheduler.js
+```
 import { LightningElement, api } from 'lwc'; 
 import { ShowToastEvent } from "lightning/platformShowToastEvent"; 
 import { loadStyle, loadScript } from "lightning/platformResourceLoader"; 
@@ -334,7 +336,7 @@ sfdx apex:generate:class -n SchedulerData -d force-app/main/default/classes
 Open the **SchedulerData.cls** file located in `force-app/main/default/classes/SchedulerData.cls`. 
 This will fetch the event data from salesforce backend. Here's an example of the modified file. 
 
-```force-app/main/default/classes/SchedulerData.cls
+```
 public with sharing class SchedulerData { 
     @RemoteAction 
     @AuraEnabled(cacheable=true) 

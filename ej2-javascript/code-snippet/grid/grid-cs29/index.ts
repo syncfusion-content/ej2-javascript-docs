@@ -1,54 +1,50 @@
 
+import { Grid, Edit, Toolbar, EditEventArgs, Column } from '@syncfusion/ej2-grids';
+import { data } from './datasource.ts';
 
-import { Grid, Edit, Toolbar, Page, Column } from '@syncfusion/ej2-grids';
-import { purchaseData } from './datasource.ts';
-import { TimePicker } from '@syncfusion/ej2-calendars';
-import { enableRipple } from '@syncfusion/ej2-base';
+Grid.Inject(Edit, Toolbar);
 
-Grid.Inject(Edit, Toolbar, Page);
-
-let ddElem: HTMLElement;
-let timeObject: TimePicker;
-
-let grid: Grid = new Grid({
-  dataSource: purchaseData,
-  allowPaging: true,
-  toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
-  editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
-  columns: [
-    { field: 'OrderID', headerText: 'Order ID', type: 'number', isPrimaryKey: true, validationRules: { required: true }, textAlign: 'Right', width: 100 },
-    { field: 'CustomerID', headerText: 'Customer ID', type: 'string', width: 140 },
-    { field: 'Freight', headerText: 'Freight', type: 'number', editType: 'numericedit', format: 'C2',textAlign: 'Right', width: 120 },
-    { field: 'OrderDate', headerText: 'Order Date', type: 'date', format: 'hh:mm', width: 150, edit: {
-        create: createOrderDateFn,
-        destroy: destroyOrderDateFn,
-        read: readOrderDateFn,
-        write: writeOrderDateFn }
-    }
-  ],
-  pageSettings: { pageSize: 7 },
-  height: 255,
-});
+let grid: Grid = new Grid(
+  {
+    dataSource: data,
+    editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' },
+    toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
+    allowPaging: true,
+    load: load,
+    actionComplete: onActionComplete,
+    columns: [
+      { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100, isPrimaryKey: true },
+      { field: 'CustomerID', headerText: 'Customer ID', width: 120 },
+      { field: 'Freight', headerText: 'Freight', textAlign: 'Right', width: 120, format: 'C2' },
+      { field: 'ShipCountry', headerText: 'Ship Country', editType: 'dropdownedit', width: 150 }
+    ],
+    height: 273
+  });
 grid.appendTo('#Grid');
 
-function createOrderDateFn() {
-  ddElem = document.createElement('input');
-  return ddElem;
-}
-function destroyOrderDateFn() {
-  timeObject.destroy();
-}
-function readOrderDateFn() {
-  return timeObject.value;
-}
-function writeOrderDateFn(args) {
-  enableRipple(true);
-  timeObject = new TimePicker({
-    value: args.rowData[args.column.field],
-    step: 60
+let isDropdown = false;
+
+function load() {
+  grid.element.addEventListener('mouseup', (e) => {
+    if ((e.target as HTMLElement).classList.contains('e-rowcell')) {
+      if (grid.isEdit) {
+        grid.endEdit();
+      }
+      let rowInfo = grid.getRowInfo(e.target);
+      if (rowInfo && rowInfo.column && (rowInfo.column as Column).field === 'ShipCountry') {
+        isDropdown = true;
+        grid.selectRow(rowInfo.rowIndex as number);
+        grid.startEdit();
+      }
+    }
   });
-  timeObject.appendTo(ddElem);
 }
 
-
-
+function onActionComplete(args: EditEventArgs) {
+  if (args.requestType === 'beginEdit' && isDropdown) {
+    isDropdown = false;
+    let dropdownObj = ((args.form as HTMLFormElement).querySelector('.e-dropdownlist') as HTMLFormElement)['ej2_instances'][0];
+    dropdownObj.element.focus();
+    dropdownObj.showPopup();
+  }
+}

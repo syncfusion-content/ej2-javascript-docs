@@ -1,27 +1,28 @@
-var country = [
-    { ShipCountry: 'United States', countryId: '1' },
-    { ShipCountry: 'Australia', countryId: '2' },
-    { ShipCountry: 'India', countryId: '2' }
-];
 ej.grids.Grid.Inject(ej.grids.Edit, ej.grids.Toolbar);
+
+var country =  [
+    { countryName: 'United States', countryId: '1' },
+    { countryName: 'Australia', countryId: '2' },
+    { countryName: 'India', countryId: '3' }
+];
+
 var grid = new ej.grids.Grid({
-    dataSource: cascadeData,
+    dataSource: data,
     toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
-    editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' },
+    editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
     columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100, isPrimaryKey: true, validationRules: { required: true } },
-        { field: 'CustomerID', headerText: 'Customer ID', width: 120, validationRules: { required: true, minLength: 3 } },
-        { field: 'ShipCountry', headerText: 'Ship Country', width: 120, editType: 'dropdownedit', edit: { 
-                params: { 
-                    query: new ej.data.Query(),
-                    dataSource: country, 
-                    fields: { value: 'ShipCountry', text: 'ShipCountry' }, 
-                    allowFiltering: true 
-                } 
+        { field: 'OrderID', headerText: 'Order ID', validationRules: { required: true, number: true }, textAlign: 'Right', isPrimaryKey: true, width: 100 },
+        { field: 'CustomerID', headerText: 'Customer ID', validationRules: { required: true }, width: 120},
+        { field: 'ShipCountry', headerText: 'Ship Country', editType: 'dropdownedit',validationRules: { required: true }, width: 150, edit: { 
+                params: {
+                    dataSource: new ej.data.DataManager(country),
+                    fields: { text: 'countryName', value: 'countryName' },
+                    query:  new ej.data.Query(),
+                    actionComplete: () => false
+                }
             }
         }
     ],
     height: 273
 });
 grid.appendTo('#Grid');
-

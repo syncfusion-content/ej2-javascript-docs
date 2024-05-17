@@ -1,36 +1,99 @@
-
-
-import { Grid, Edit, Toolbar, EditEventArgs, EJ2Intance } from '@syncfusion/ej2-grids';
+import { Grid, Edit, Page, Toolbar } from '@syncfusion/ej2-grids';
+import { DropDownList } from '@syncfusion/ej2-dropdowns';
+import { DataManager, Query } from '@syncfusion/ej2-data';
 import { data } from './datasource.ts';
 
-Grid.Inject(Edit, Toolbar);
+Grid.Inject(Edit, Toolbar, Page);
+
+let countryElement;
+let countryObj;
+let stateElement;
+let stateObj;
 
 let grid: Grid = new Grid({
     dataSource: data,
-    actionComplete: (args: EditEventArgs) => {
-        if (args.requestType === 'beginEdit' || args.requestType === 'add') {
-            let tr: Element = args.row;
-            let numericTextBox: Element = tr.querySelector('.e-numerictextbox'); // numeric TextBox component element
-            if (numericTextBox) {
-                console.log('NumericTextBox instance: ', (<EJ2Intance>numericTextBox).ej2_instances[0]); // numeric TextBox instance
-            }
-            let dropDownList: Element = tr.querySelector('.e-dropdownlist'); // dropDownList component element
-            if (dropDownList) {
-                console.log('DropDownList instance: ', (<EJ2Intance>dropDownList).ej2_instances[0]); // dropDownList instance
-            }
-        }
-    },
-    toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
     editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
+    toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
     columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100, isPrimaryKey: true },
+        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', isPrimaryKey: true, width: 100 },
         { field: 'CustomerID', headerText: 'Customer ID', width: 120 },
-        { field: 'Freight', headerText: 'Freight', textAlign: 'Right', editType: 'numericedit', width: 120, format: 'C2' },
-        { field: 'ShipCountry', headerText: 'Ship Country', editType: 'dropdownedit', width: 150 }
+        {
+            field: 'ShipCountry', headerText: 'Ship Country', editType: 'dropdownedit',
+            edit:
+            {
+                create: function () {
+                    countryElement = document.createElement('input');
+                    return countryElement;
+                },
+                destroy: function () {
+                    countryObj.destroy();
+                },
+                read: function () {
+                    return countryObj.text;
+                },
+                write: function () {
+                    countryObj = new DropDownList({
+                        dataSource: new DataManager(country),
+                        fields: { value: 'countryId', text: 'countryName' },
+                        change: () => {
+                            stateObj.enabled = true;
+                            let tempQuery = new Query().where('countryId', 'equal', countryObj.value);
+                            stateObj.query = tempQuery;
+                            stateObj.text = '';
+                            stateObj.dataBind();
+                        },
+                        placeholder: 'Select a country',
+                        floatLabelType: 'Never'
+                    });
+                    countryObj.appendTo(countryElement);
+                }
+            },
+            width: 150
+        },
+        {
+            field: 'ShipState', headerText: 'Ship State', editType: 'dropdownedit',
+            edit:
+            {
+                create: function () {
+                    stateElement = document.createElement('input');
+                    return stateElement;
+                },
+                destroy: function () {
+                    stateObj.destroy();
+                },
+                read: function () {
+                    return stateObj.text;
+                },
+                write: function () {
+                    stateObj = new DropDownList({
+                        dataSource: new DataManager(state),
+                        fields: { value: 'stateId', text: 'stateName' },
+                        enabled: false,
+                        placeholder: 'Select a state',
+                        floatLabelType: 'Never'
+                    });
+                    stateObj.appendTo(stateElement);
+                }
+            },
+            width: 120
+        },
+        { field: 'OrderDate', headerText: 'OrderDate', type: 'date', format: 'yMd', editType: 'datepickeredit', width: 150 }
     ],
-    height: 265
+    pageSettings: { pageSize: 7 },
+    height: 273
 });
 grid.appendTo('#Grid');
 
+let state = [
+    { stateName: 'New York', countryId: '1', stateId: '101' },
+    { stateName: 'Virginia ', countryId: '1', stateId: '102' },
+    { stateName: 'Washington', countryId: '1', stateId: '103' },
+    { stateName: 'Queensland', countryId: '2', stateId: '104' },
+    { stateName: 'Tasmania ', countryId: '2', stateId: '105' },
+    { stateName: 'Victoria', countryId: '2', stateId: '106' }
+];
 
-
+let country = [
+    { countryName: 'United States', countryId: '1' },
+    { countryName: 'Australia', countryId: '2' }
+];

@@ -1,45 +1,49 @@
 
+import { Grid, Edit, Toolbar, SaveEventArgs } from '@syncfusion/ej2-grids';
+import { data } from './datasource.ts';
+import { AutoComplete, ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 
-import { Grid, Edit, Toolbar, Page, Column } from '@syncfusion/ej2-grids';
-import { purchaseData } from './datasource.ts';
-import { AutoComplete } from '@syncfusion/ej2-dropdowns';
+Grid.Inject(Edit, Toolbar);
 
-Grid.Inject(Edit, Toolbar, Page);
-
-let inpuEle: HTMLElement;
-let autoCompleteIns: AutoComplete;
-let autoCompleteData: { [key: string]: Object }[] = [
-  { CustomerID: 'VINET', Id: '1' },
-  { CustomerID: 'TOMSP', Id: '2' },
-  { CustomerID: 'HANAR', Id: '3' },
-  { CustomerID: 'VICTE', Id: '4' },
-  { CustomerID: 'SUPRD', Id: '5' }
-];
+let autoCompleteElement;
+let autoCompleteIns;
+let orderData;
 
 let grid: Grid = new Grid({
-  dataSource: purchaseData,
-  allowPaging: true,
-  toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
+  dataSource: data,
   editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
+  toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
+  actionBegin: actionBegin,
   columns: [
-    { field: 'OrderID', headerText: 'Order ID', type: 'number', isPrimaryKey: true, validationRules: { required: true }, textAlign: 'Right', width: 100 },
-    { field: 'CustomerID', headerText: 'Customer ID', type: 'string', width: 140, edit: {
+    { field: 'OrderID', headerText: 'Order ID', width: 120, textAlign: 'Right', isPrimaryKey: true, validationRules: { required: true } },
+    {
+      field: 'CustomerID', headerText: 'Customer Name', width: 120
+      , edit: {
         create: createCustomerIDFn,
         destroy: destroyCustomerIDFn,
         read: readCustomerIDFn,
-        write: writeCustomerIDFn }
+        write: writeCustomerIDFn
+      }
     },
-    { field: 'Freight', headerText: 'Freight', type: 'number', editType: 'numericedit', format: 'C2',textAlign: 'Right', width: 120 },
-    { field: 'OrderDate', headerText: 'Order Date', type: 'date', format: 'yMd', editType: 'datepickeredit', width: 150 }
+    { field: 'Freight', headerText: 'Freight', width: 120, format: 'C2', textAlign: 'Right', editType: 'numericedit', validationRules: { required: true, min: 1, max: 1000 } },
+    { field: 'OrderDate', headerText: 'Order Date', width: 130, editType: 'datepickeredit', format: 'yMd', textAlign: 'Right' },
+    { field: 'ShipCountry', headerText: 'Ship Country', width: 150 }
   ],
-  pageSettings: { pageSize: 7 },
-  height: 255,
+  height: 273
 });
 grid.appendTo('#Grid');
 
+let autoCompleteData = [
+  { value: 'VINET', text: 'VINET' },
+  { value: 'TOMSP', text: 'TOMSP' },
+  { value: 'HANAR', text: 'HANAR' },
+  { value: 'VICTE', text: 'VICTE' },
+  { value: 'SUPRD', text: 'SUPRD' },
+];
+
 function createCustomerIDFn() {
-  inpuEle = document.createElement('input');
-  return inpuEle;
+  autoCompleteElement = document.createElement('input');
+  return autoCompleteElement;
 }
 function destroyCustomerIDFn() {
   autoCompleteIns.destroy();
@@ -47,15 +51,22 @@ function destroyCustomerIDFn() {
 function readCustomerIDFn() {
   return autoCompleteIns.value;
 }
-function writeCustomerIDFn(args) {
+function writeCustomerIDFn() {
   autoCompleteIns = new AutoComplete({
-    allowCustom: true,
-    value: args.rowData[args.column.field],
     dataSource: autoCompleteData,
-    fields: { value: 'CustomerID', text: 'CustomerID' }
+    value: orderData.CustomerID,
+    change: function (args: ChangeEventArgs) {
+      orderData.CustomerID = args.value;
+    }
   });
-  autoCompleteIns.appendTo(inpuEle);
+  autoCompleteIns.appendTo(autoCompleteElement);
 }
 
-
-
+function actionBegin(args: SaveEventArgs) {
+  if (args.requestType === 'beginEdit' || args.requestType === 'add') {
+    orderData = Object.assign({}, args.rowData);
+  }
+  if (args.requestType === 'save') {
+    (args.data)['CustomerID'] = orderData['CustomerID'];
+  }
+}

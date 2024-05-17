@@ -1,61 +1,65 @@
-
-
-import { Grid, Edit, Page, Column, Toolbar } from '@syncfusion/ej2-grids';
-import {  RichTextEditor, Link, Toolbar as RTEToolbar, Image, HtmlEditor, QuickToolbar } from '@syncfusion/ej2-richtexteditor';
-import { purchaseData } from './datasource.ts';
-RichTextEditor.Inject(Link, RTEToolbar , Image, HtmlEditor, QuickToolbar);
+import { Grid, Edit, Page, Toolbar } from '@syncfusion/ej2-grids';
+import { RichTextEditor, Link, Toolbar as RTEToolbar, Image, HtmlEditor, QuickToolbar } from '@syncfusion/ej2-richtexteditor';
+import { data } from './datasource.ts';
+import { FocusInEventArgs } from '@syncfusion/ej2-inputs';
+RichTextEditor.Inject(Link, RTEToolbar, Image, HtmlEditor, QuickToolbar);
 Grid.Inject(Edit, Toolbar, Page);
 
-let rteElement: HTMLElement;
-let richtextEditor: RichTextEditor;
+let richtexteditorElem;
+let richtexteditorObj;
+
 let grid: Grid = new Grid({
-  dataSource: purchaseData,
+  dataSource: data,
   allowPaging: true,
   allowTextWrap: true,
+  pageSettings: { pageSize: 7 },
   toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
   editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
-  created: function (args) {
-    this.keyConfigs.enter = '';
-  },
   columns: [
-    { field: 'OrderID', headerText: 'Order ID', type: 'number', isPrimaryKey: true, validationRules: { required: true }, textAlign: 'Right', width: 100 },
-    { field: 'CustomerID', headerText: 'Customer ID', type: 'string', width: 140 },
-    { field: 'Freight', headerText: 'Freight', type: 'number', editType: 'numericedit', format: 'C2', textAlign: 'Right', width: 120 },
-    { field: 'ShipAddress', headerText: 'Ship Address', type: 'string', valueAccessor: valueAccessor, disableHtmlEncode: false, width: 180, edit: {
-        create: createShipAddressFn,
-        read: readShipAddressFn,
-        write: writeShipAddressFn,
-        destroy: destroyShipAddressFn }
+    { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100, isPrimaryKey: true, validationRules: { required: true } },
+    { field: 'CustomerID', headerText: 'Customer ID', validationRules: { required: true }, width: 100 },
+    { field: 'Freight', headerText: 'Freight', width: 100, format: 'C2', textAlign: 'Right', editType: 'numericedit', validationRules: { required: true } },
+    { field: 'OrderDate', headerText: 'Order Date', width: 100, editType: 'datepickeredit', format: { type: 'dateTime', format: 'M/d/y hh:mm a' }, textAlign: 'Right' },
+    {
+      field: 'ShipAddress', headerText: 'Ship Address', width: 150, editType: 'textarea', disableHtmlEncode: false,
+       edit: {
+        create: function () {
+          richtexteditorElem = document.createElement('textarea');
+          return richtexteditorElem;
+        },
+        destroy: function () {
+          richtexteditorObj.destroy();
+        },
+        read: function () {
+          return richtexteditorObj.value;
+        },
+        write: function (args) {
+            var rowData = args.rowData
+            richtexteditorObj = new RichTextEditor({
+            value: rowData.ShipAddress,
+            focus: onFocus,
+            change: function (e) {
+                rowData.ShipAddress = e.value;
+            }
+            });
+            richtexteditorObj.appendTo(richtexteditorElem);
+        }
+      }
     }
   ],
-  pageSettings: { pageSize: 7 },
   height: 255,
 });
 grid.appendTo('#Grid');
-function createShipAddressFn() {
-  rteElement = document.createElement('textarea');
-  return rteElement;
-}
-function readShipAddressFn() {
-  return richtextEditor.value;
-}
-function writeShipAddressFn(args) {
-    richtextEditor = new RichTextEditor({
-      value: args.rowData[args.column.field],
+
+function onFocus(args: FocusInEventArgs)
+{
+    ((args.event).target).addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            e.stopPropagation();
+        }
     });
-    richtextEditor.appendTo(rteElement);
-}
-function destroyShipAddressFn() {
-  richtextEditor.destroy();
-}
-function valueAccessor(field, data, column) {
-  var value = data[field];
-  if (value != undefined) {
-    return value.split('\n').join('<br>');
-  } else {
-    return '';
-  }
 }
 
-
-
+export interface columnDataType {
+  ShipCity: string[];
+}

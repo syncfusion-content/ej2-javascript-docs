@@ -1,44 +1,44 @@
-var ddElem;
-var timeObject;
-ej.base.enableRipple(true);
-
-ej.grids.Grid.Inject(ej.grids.Edit, ej.grids.Toolbar, ej.grids.Page);
+ej.grids.Grid.Inject(ej.grids.Edit, ej.grids.Toolbar);
 var grid = new ej.grids.Grid({
-  dataSource: purchaseData,
-  allowPaging: true,
+  dataSource: data,
+  editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' },
   toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
-  editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
+  allowPaging: true,
+  load: load,
+  actionComplete: onActionComplete,
   columns: [
-    { field: 'OrderID', headerText: 'Order ID', type: 'number', isPrimaryKey: true, validationRules: { required: true }, textAlign: 'Right', width: 100 },
-    { field: 'CustomerID', headerText: 'Customer ID', type: 'string', width: 140 },
-    { field: 'Freight', headerText: 'Freight', type: 'number', editType: 'numericedit', format: 'C2',textAlign: 'Right', width: 120 },
-    { field: 'OrderDate', headerText: 'Order Date', type: 'date', format: 'hh:mm', width: 150, edit: {
-        create: createOrderDateFn,
-        destroy: destroyOrderDateFn,
-        read: readOrderDateFn,
-        write: writeOrderDateFn }
-    }
+    { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100, isPrimaryKey: true },
+    { field: 'CustomerID', headerText: 'Customer ID', width: 120 },
+    { field: 'Freight', headerText: 'Freight', textAlign: 'Right', width: 120, format: 'C2' },
+    { field: 'ShipCountry', headerText: 'Ship Country', editType: 'dropdownedit', width: 150 }
   ],
-  pageSettings: { pageSize: 7 },
-  height: 255,
+  height: 273
 });
 grid.appendTo('#Grid');
 
-function createOrderDateFn() {
-  ddElem = document.createElement('input');
-  return ddElem;
-}
-function destroyOrderDateFn() {
-  timeObject.destroy();
-}
-function readOrderDateFn() {
-  return timeObject.value;
-}
-function writeOrderDateFn(args) {
-  timeObject = new ej.calendars.TimePicker({
-    value: args.rowData[args.column.field],
-    step: 60
+var isDropdown = false;
+
+function load() {
+  grid.element.addEventListener('mouseup', (e) => {
+    if (e.target.classList.contains('e-rowcell')) {
+      if (grid.isEdit) {
+        grid.endEdit();
+      }
+      var rowInfo = grid.getRowInfo(e.target);
+      if (rowInfo && rowInfo.column && (rowInfo.column).field === 'ShipCountry') {
+        isDropdown = true;
+        grid.selectRow(rowInfo.rowIndex);
+        grid.startEdit();
+      }
+    }
   });
-  timeObject.appendTo(ddElem);
 }
 
+function onActionComplete(args) {
+  if (args.requestType === 'beginEdit' && isDropdown) {
+    isDropdown = false;
+    var dropdownObj = (args.form.querySelector('.e-dropdownlist'))['ej2_instances'][0];
+    dropdownObj.element.focus();
+    dropdownObj.showPopup();
+  }
+}

@@ -1,27 +1,24 @@
-
-
-import { Grid, Edit, Toolbar, EJ2Intance } from '@syncfusion/ej2-grids';
+import { Grid, Edit, Toolbar } from '@syncfusion/ej2-grids';
 import { data } from './datasource.ts';
 
 Grid.Inject(Edit, Toolbar);
 
-let grid: Grid = new Grid({
+let grid: Grid = new Grid(
+  {
     dataSource: data,
-    toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
     editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
+    toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
     columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100, isPrimaryKey: true },
-        { field: 'CustomerID', headerText: 'Customer ID', width: 120 },
-        { field: 'Freight', headerText: 'Freight', textAlign: 'Right', editType: 'numericedit', width: 120, format: 'C2' },
-        { field: 'ShipCountry', headerText: 'Ship Country',  edit: { params: { focus: ddFocus } }, editType: 'dropdownedit', width: 150 }
+      { field: 'OrderID', headerText: 'Order ID', validationRules: { required: true, number: true }, textAlign: 'Right', isPrimaryKey: true, width: 100 },
+      { field: 'CustomerID', headerText: 'Customer ID', validationRules: { required: true }, width: 120 },
+      {
+        field: 'ShipCountry', headerText: 'Ship Country', editType: 'dropdownedit', validationRules: { required: true }, edit: {
+          params: {
+            allowFiltering: true,
+          }
+        }, width: 150
+      }
     ],
-    height: 265
-});
+    height: 273
+  });
 grid.appendTo('#Grid');
-
-function ddFocus(e: {event: MouseEvent | KeyboardEvent | TouchEvent}): void {
-  ((e.event.target as HTMLElement).querySelector('.e-dropdownlist') as EJ2Intance).ej2_instances[0].showPopup();
-}
-
-
-

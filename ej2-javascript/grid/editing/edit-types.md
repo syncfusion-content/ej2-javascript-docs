@@ -11,33 +11,45 @@ domainurl: ##DomainURL##
 
 # Edit types in ##Platform_Name## Grid control
 
-## Customize editors using params
+The ##Platform_Name## Grid control in Syncfusion provides various edit types that allow you to customize the editing behavior for different types of columns. These edit types enhance the editing experience and provide flexibility in handling different data types. 
 
-The [`columns.editType`](../../api/grid/column/#edittype) is used to define the editor component for any particular column. You can set the [`columns.editType`](../../api/grid/column/#edittype) based on data type of the column.
+## Default cell edit type editor
 
-* [`NumericTextBox`](../../numerictextbox) component for integers, double, and decimal data types.
+The Syncfusion Grid provides pre-built default editors that enhance data editing and input handling within the grid. These default editors are designed to simplify the process of defining the editor control for specific columns based on the data type of the column within the grid. To configure default editors for grid columns, leverage the [editType](../../api/grid/editType/) property.
 
-* [`TextBox`](../../textbox) component for string data type.
+The available default edit types are as follows:
 
-* [`DropDownList`](../../drop-down-list) component to show all unique values related to that field.
+Control|Edit Type value |Description
+----|-----|-----
+[TextBox](../../textbox)|stringedit	|  The  `stringedit` type renders a TextBox control for string data type columns. 
+[NumericTextBox](../../numerictextbox)|numericedit	| The `numericedit` type renders a NumericTextBox control for integers,double,float ,short ,byte ,long ,long double and decimal data types columns.
+[DropDownList](../../drop-down-list)|dropdownedit	| The `dropdownedit` type renders a DropdownList control for string data type columns.
+[Checkbox](../../check-box)|booleanedit	| The `booleanedit` type renders a CheckBox control for boolean data type columns.
+[DatePicker](../../datepicker)|datepickeredit	|The `datepickeredit` type renders a DatePicker control for date data type columns.
+[DateTimePicker](../../datetimepicker)|datetimepickeredit	| The `datetimepickeredit` type renders a DateTimePicker control for date time data type columns.
 
-* [`CheckBox`](../../check-box) component for boolean data type.
+The following example demonstrates how to define the `editType` for grid columns:
 
-* [`DatePicker`](../../datepicker) component for date data type.
+```ts    
+    {field: 'CustomerName', headerText: 'Customer Name', editType: 'stringedit'},
+    {field: 'Frieght', headerText: 'Frieght', editType: 'numericedit'},
+    {field: 'ShipCountry', headerText: 'Ship Country', editType: 'dropdownedit'},
+    {field: 'OrderDate', headerText: 'Order Date', editType: 'datepickeredit'},
+    {field: 'OrderTime', headerText: 'Order Time', editType: 'datetimepickeredit'},
+    {field: 'Verified', headerText: 'Verified', editType: 'booleanedit'}
+```
 
-* [`DateTimePicker`](../../datetimepicker) component for date time data type.
+> If edit type is not defined in the column, then it will be considered as the **stringedit** type (TextBox control) .
 
-Also, you can customize the behavior of the editor component through the [`columns.edit.params`](../../api/grid/column/#edit).
+## Customize TextBox control of stringedit type 
 
-The following table describes editor component and their example edit params of the column.
+You can customize the default TextBox control in Grid edit form using its property. This customization allows you to configure various properties of the TexBox, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor control can be fine-tuned through the [columns->edit->params](../../api/grid/column/#edit) property.
 
-Component |Example
------|-----
-[`NumericTextBox`](../../numerictextbox) | params: { decimals: 2, value: 5 }
-[`DropDownList`](../../drop-down-list) | params: { value: 'Germany' }
-[`Checkbox`](../../check-box) | params: { checked: true}
-[`DatePicker`](../../datepicker) | params: { format:'dd.MM.yyyy' }
-[`DateTimePicker`](../../datetimepicker) | params: { value: new Date() }
+control|Edit Type |Description|Example Customized edit params
+-----|---|-----|-----|
+[TextBox](../../textbox) |stringedit| The `stringedit` type renders a TextBox control for string data type columns. To customize the `TextBox` control, refer to the [TextBox API documentation](../../documentation/api/textbox) for detailed information on available properties | params: { showClearButton : true}
+
+The following sample code demonstrates the customization applied to TextBox control of **CustomerID** Grid column:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -66,13 +78,52 @@ Component |Example
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs26" %}
 {% endif %}
 
-> If edit type is not defined in the column, then it will be considered as the `stringedit` type (Textbox component) .
+## Customize NumericTextBox control of numericedit type 
+
+You can customize the `NumericTextBox` control in Grid edit form using its property. This customization allows you to configure various properties of the NumericTextBox, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor control can be fine-tuned through the [columns->edit->params](../../api/grid/column/#edit) property.
+
+control| Edit Type |Description |Example Customized edit params
+-----|-----|-----|----|
+[NumericTextBox](../../numerictextbox)|numericedit| The `numericedit` type renders a NumericTextBox control for integers, double, float, short, byte, long, long double and decimal data types columns. To customize the **NumericTextBox** control, refer to the [NumericTextBox API documentation](../../api/numerictextbox/) for detailed information on available properties. | params: { decimals: 2, value: 5 }
+
+The following sample code demonstrates the customization applied to NumericTextBox control of **Freight** Grid column:
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/edit-customize-numerictextbox/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/edit-customize-numerictextbox/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/edit-customize-numerictextbox" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/edit-customize-numerictextbox/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/edit-customize-numerictextbox/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/edit-customize-numerictextbox" %}
+{% endif %}
 
 ### Restrict to type decimal points in a NumericTextBox while editing the numeric column
 
-By default, the number of decimal places will be restricted to two in the NumericTextBox while editing the numeric column. We can restrict to type the decimal points in a NumericTextBox by using the `validateDecimalOnType` and `decimals` properties of NumericTextBox.
+By default, the `NumericTextBox` control allows entering decimal values with up to two decimal places when editing a numeric column. However, there might be cases where you want to restrict input to whole numbers only, without any decimal points. In such scenarios, you can make use of the [validateDecimalOnType](../../api/numerictextbox/#validatedecimalontype) and [decimals](../../api/numerictextbox/#decimals) properties provided by Syncfusion's `NumericTextBox` control.
 
-In the below demo, while editing the row we have restricted to type the decimal point value in the NumericTextBox of `Freight` column.
+The `validateDecimalOnType` property is used to control whether decimal points are allowed during input in the NumericTextBox. By default, it is set to **false**, allowing decimal points to be entered. However, when set to **true**, decimal points will be restricted, and only whole numbers can be entered.
+
+The `decimals` property specifies the number of decimal places to be displayed in the NumericTextBox. By default, it is set to 2, meaning that two decimal places will be displayed. However, you can modify this value to customize the decimal places according to your requirements.
+
+In the below demo, while editing the row the decimal point value is restricted to type in the NumericTextBox of **Freight** column.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -101,26 +152,52 @@ In the below demo, while editing the row we have restricted to type the decimal 
 {% previewsample "page.domainurl/code-snippet/grid/prevent-decimal-points-cs1" %}
 {% endif %}
 
-### Provide custom data source and enabling filtering to DropDownList
+## Customize DropDownList control of DropDownEdit type 
 
-You can provide data source to the DropDownList by using the [`columns.edit.params`](../../api/grid/column/#edit) property.
+You can customize the `DropDownList` control in Grid edit form using its property. This customization allows you to configure various properties of the DropDownList, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor control can be fine-tuned through the [columns->edit->params](../../api/grid/column/#edit) property. 
 
-While setting new data source using edit params, you must specify a new `query` property too for the dropdownlist as follows,
+Control|Edit Type |Description| Example Customized edit params
+-----|-----|-----|----|
+[DropDownList](../../api/drop-down-list/)|DropDownEdit|  The `dropdownedit` type renders a DropDownList control for string data type columns. To customize the DropDownList control, refer to the [DropDownList API documentation](../../api/drop-down-list) for detailed information on available properties.  | params: { value: ‘Germany’ }
 
-```ts
-{
-    params: {
-        query: new Query(),
-        dataSource: country,
-        fields: { value: 'ShipCountry', text: 'ShipCountry' },
-        allowFiltering: true
-        }
-}
-```
+The following sample code demonstrates the customization applied to DropDownList control  of **ShipCity** Grid column:
 
-You can also enable filtering for the dropdownlist by passing the `allowFiltering` as `true` to the edit params.
+{% if page.publishingplatform == "typescript" %}
 
-In the below demo, DropDownList is rendered with custom Datasource for the `ShipCountry` column and enabled filtering to search dropdownlist items.
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/edit-numeric-column/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/edit-numeric-column/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/edit-numeric-column" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/edit-numeric-column/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/edit-numeric-column/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/edit-numeric-column" %}
+{% endif %}
+
+### Provide custom data source for DropDownList control
+
+In Syncfusion's Grid control, you have an option to provide a custom data source for the `DropDownList` control in the edit form. This feature allows you to define a specific set of values for the DropDownList.
+
+To achieve this, you can utilize the [columns->edit->params](../../api/grid/column/#edit) property. This property allows you to define the edit params for the column within the grid.
+
+When setting a new data source using the edit params, you need to specify a new [query](../../api/drop-down-list#query)  property for the DropDownList. The `query` property allows you to define custom queries for data retrieval and filtering.
+
+In the below demo, DropDownList is rendered with custom data source for the **ShipCountry** column.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -149,11 +226,13 @@ In the below demo, DropDownList is rendered with custom Datasource for the `Ship
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs27" %}
 {% endif %}
 
-### Open popup while focusing the edit dropdown list
+### Apply filtering for DropDownList control
 
-You can open the DropDownList popup while focusing the cell by invoking the [`showPopup`](../../api/drop-down-list/#showpopup) method inside the ['focus'](../../api/drop-down-list/#focus) event of DropDownList component.
+The Syncfusion Grid control provides filtering for the DropDownList within the edit form. This feature allows to select options from a predefined list and easily search for specific items using the built-in filtering feature.  
 
-In the below demo, we have bound the focus event for the edit DropDownList using the [`columns.edit.params`](../api/grid/column/#edit) property.
+To enable filtering, set the [allowFiltering](../../api/drop-down-list#allowfiltering) property to **true** within the edit params. This will enable the filtering feature in the DropDownList.
+
+In the following demo, filtering is enabled for the **ShipCountry** column.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -182,21 +261,15 @@ In the below demo, we have bound the focus event for the edit DropDownList using
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs28" %}
 {% endif %}
 
-## Custom editors using template
+### Open popup while focusing in the edit cell
 
-The cell edit template is used to add a custom component for a particular column by invoking the following functions:
+You can open the dropdown edit popup with a single click by focusing the dropdown element. This feature allows you to quickly access and interact with the dropdown options without the need for an additional click.
 
-* `create` - It is used to create the element at the time of initialization.
+To achieve this, you can utilize the [showPopup](../../api/drop-down-list/#showpopup) method provided by the EJ2 DropDownList control. This method can be invoked within the [actionComplete](../../api/grid/#actioncomplete) event of the Grid, which triggers when an action, such as editing, is completed. By calling the `showPopup` method in this event, you can open the popup for the dropdown edit.
 
-* `write` - It is used to create the custom component or assign default value at the time of editing.
+To ensure that the dropdown column is the clicked edit target, you need to set a global flag variable in the **mouseup** event along with `load` event. This flag variable will be used to determine if the clicked element corresponds to the dropdown column.
 
-* `read` - It is used to read the value from the component at the time of save.
-
-* `destroy` - It is used to destroy the component.
-
-### Render TimePicker component while editing
-
-Use the cell edit template feature of the Grid to render the TimePicker component in the Grid edit form. In the below sample, we have rendered TimePicker component in the **OrderDate** column.
+The following sample demonstrates how to open the popup when focusing on the edit cell using the `actionComplete` and `load` events:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -225,40 +298,459 @@ Use the cell edit template feature of the Grid to render the TimePicker componen
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs29" %}
 {% endif %}
 
-### Render AutoComplete component while editing
+## Customize CheckBox control of booleanedit type 
 
-Use the cell edit template feature of the Grid to render the AutoComplete component in the Grid edit form. In the below sample, we have rendered AutoComplete component in the **CustomerID** column.
+You can customize the CheckBox control in Grid edit form using its property. This customization allows you to configure various properties of the CheckBox, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor control can be fine-tuned through the [columns->edit->params](../../api/grid/column/#edit) property.
+
+Control| Edit Type |Description |Example Customized edit params
+-----|-----|-----|----|
+[CheckBox](../../check-box)| booleanedit | The `booleanedit` type renders a **CheckBox** control for boolean data type. To customize the CheckBox control, refer to the [CheckBox API documentation](../../api/check-box/) for detailed information on available properties. | params: { checked: true}
+
+The following sample code demonstrates the customization applied to CheckBox control of **Verified** Grid column:
 
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid/grid-cs30/index.ts %}
+{% include code-snippet/grid/edit-checkbox-boolean/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid/grid-cs30/index.html %}
+{% include code-snippet/grid/edit-checkbox-boolean/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs30" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-checkbox-boolean" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid/grid-cs30/index.js %}
+{% include code-snippet/grid/edit-checkbox-boolean/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid/grid-cs30/index.html %}
+{% include code-snippet/grid/edit-checkbox-boolean/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs30" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-checkbox-boolean" %}
 {% endif %}
 
-### Render MultiSelect DropDown component while editing
+## Customize DatePicker control of datepickeredit type 
 
-Use the cell edit template feature of the Grid to render the MultiSelect DropDown component in the Grid edit form. In the below sample, we have rendered MultiSelect DropDown component in the **ShipCity** column.
+You can customize the DatePicker control in Grid edit form using its property. This customization allows you to configure various properties of the DatePicker, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor control can be fine-tuned through the [columns->edit->params](../../api/grid/column/#edit) property.
+
+control| Edit Type |Description|Example Customized edit params
+-----|-----|-----|----|
+[DatePicker](../../datepicker)| datepickeredit | The `datepickeredit` type renders a **DatePicker** control for date data type columns. To customize the DatePicker control, refer to the [DatePicker API documentation](../../api/datepicker/) for detailed information on available properties. | params: { format:'dd.MM.yyyy' }
+ 
+The following sample code demonstrates the customization applied to DatePicker control of **OrderDate** Grid column:
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/edit-datepicker-control/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/edit-datepicker-control/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/edit-datepicker-control" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/edit-datepicker-control/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/edit-datepicker-control/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/edit-datepicker-control" %}
+{% endif %}
+
+## Customize DateTimePicker control of datetimepickeredit type 
+
+You can customize the DateTimePicker control in Grid edit form using its property. This customization allows you to configure various properties of the DateTimePicker, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor control can be fine-tuned through the [columns->edit->params](../../api/grid/column/#edit) property.
+
+control|Edit Type |Description |Example Customized edit params
+-----|-----|-----|----|
+[DateTimePicker](../../datetimepicker)| datetimepickeredit | The `datetimepickeredit` type renders a **DateTimePicker** control for date time data type columns. You can customize the DateTimePicker control, refer to the [DateTimePicker API documentation](../../api/datetimepicker) for detailed information on available properties. | params: { value: new Date() }
+ 
+The following sample code demonstrates the customization applied to DateTimePicker control of **OrderDate** Grid column:
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/edit-datetimepicker-control/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/edit-datetimepicker-control/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/edit-datetimepicker-control" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/edit-datetimepicker-control/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/edit-datetimepicker-control/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/edit-datetimepicker-control" %}
+{% endif %}
+
+## Access editor controls using instance
+
+Accessing editor controls in the Syncfusion Grid allows you to interact with the editor instances associated with cells during editing or adding actions. This feature is especially useful when you need to perform custom actions, retrieve data from the Editor, or manipulate its properties during editing or adding operations in the Grid.
+
+To access the control instance from the control element, you can use the **ej2_instances** property. This property provides access to the instance of the editor control associated with a cell.
+
+In the below demo, you can access the editor control instance while adding or editing actions in the `actionComplete` event.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/edit-access-control/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/edit-access-control/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/edit-access-control" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/edit-access-control/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/edit-access-control/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/edit-access-control" %}
+{% endif %}
+
+## Render custom cell editors using external function 
+
+The Syncfusion Grid provides the ability to render custom cell editors, allowing you to add custom controls to specific columns in your grid using the cell edit template feature. This feature is useful when you need to edit cell values using custom input elements or controls.
+
+To utilize the custom cell editor template feature, you need to implement the following functions:
+
+* **create** - It is used to create the element at the time of initialization.
+
+* **write** - It is used to create custom control or assign default value at the time of editing.
+
+* **read** - It is used to read the value from the control at the time of save.
+          
+* **destroy** - It is used to destroy the control.
+
+### Render textArea in edit form 
+
+The Syncfusion Grid allows you to render a textArea within the Grid's edit form for a specific column. This feature is especially valuable when you need to edit and display multi-line text content, providing an efficient way to manage extensive text data within the Grid's columns.
+
+To render a textArea in the edit form, you need to define a cell edit template for the column using [edit](../../api/grid/column/#edit) property. The **edit** property specifies the cell edit template that used  as an editor for a particular column.
+
+> When using a text area, please use **Shift+Enter** to move to the next line. By default, pressing **Enter** will trigger a record update while you are in edit mode.
+
+The following example demonstrates how to render a textArea control in the **ShipAddress** column of the Syncfusion Grid. The [valueAccessor](../../api/grid/valueAccessor/) property is utilized to split the text into multiple lines within the grid column:
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/edit-textarea-control/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/edit-textarea-control/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/edit-textarea-control" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/edit-textarea-control/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/edit-textarea-control/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/edit-textarea-control" %}
+{% endif %}
+
+**Prevent the enter key functionality in multiline textbox while editing** 
+
+While editing a particular row in normal or dialog edit mode, pressing the **ENTER** key will save the changes made in the specific cell or edit form. Similarly, pressing the **ENTER** key while performing editing with the multiline textbox will save the changes.  However, in a multiline textbox, it is often desired that pressing the **ENTER** key adds a new line break in the text content, rather than triggering the save action.
+
+To achieve this behavior, you can utilize the `stopPropagation` method along with the [focus](../../api/textbox/textBoxModel/#focus) event of the textBox control. This prevents the default behavior of the **ENTER** key, allowing you to manually handle the newline behavior.
+
+The following example demonstrates how to prevent the enter key functionality in multiline textbox during editing by utilizing the `focus` event:
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/edit-textbox-control/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/edit-textbox-control/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/edit-textbox-control" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/edit-textbox-control/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/edit-textbox-control/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/edit-textbox-control" %}
+{% endif %}
+
+### Render MaskedTextBox control in edit form 
+
+The Syncfusion Grid allows you to render a MaskedTextBox control within the Grid's edit form for a specific column. This feature is especially useful when you need to provide masked input fields that require a specific format, such as phone numbers or postal codes.
+
+To render a MaskedTextBox control in the edit form, you need to define a cell edit template for the column using [edit](../../api/grid/column/#edit) property. The **edit** property specifies the cell edit template that used  as an editor for a particular column.
+
+Here's an example of how to render a MaskedTextBox control in the **CustomerNumber** column of the Syncfusion Grid.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/edit-maskedtextbox-control/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/edit-maskedtextbox-control/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/edit-maskedtextbox-control" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/edit-maskedtextbox-control/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/edit-maskedtextbox-control/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/edit-maskedtextbox-control" %}
+{% endif %}
+
+### Render DropDownList control in edit form 
+
+The Syncfusion Grid allows you to render a DropDownList control within the Grid's edit form for a specific column. This feature is valuable when you need to provide a convenient way to select options from a predefined list while editing data in the Grid's edit form.
+
+To render a DropDownList control in the edit form,  you need to define a cell edit template for the column using [edit](../../api/grid/column/#edit) property. The **edit** property specifies the cell edit template that used  as an editor for a particular column.
+
+The following example demonstrates how to render a DropDownList control in the **ShipCountry** column of the Syncfusion Grid.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/edit-dropdownlist-control/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/edit-dropdownlist-control/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/edit-dropdownlist-control" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/edit-dropdownlist-control/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/edit-dropdownlist-control/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/edit-dropdownlist-control" %}
+{% endif %}
+
+### Render images in the DropDownList editor control using the item template 
+
+The Syncfusion Grid allows you to render images in the DropDownList editor conttol. This feature is valuable when you want to display images for each item in the dropdown list of a particular column, enhancing the visual representation of your data.
+
+To render a DropDownList in the edit form, you need to define a cell edit template for the column using [edit](../../api/grid/column/#edit) property. The **edit** property specifies the cell edit template that used  as an editor for a particular column.
+
+To display an image in the DropDownList editor control, you can utilize the [itemTemplate](../../api/drop-down-list/#itemtemplate) property. This property allows you to customize the content of each item in the dropdown list.
+
+The following example demonstrates how to render images in the DropDownList editor control using the `itemTemplate` within the **EmployeeName** column of the Syncfusion Grid. 
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/edit-images-dropdownlist/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/edit-images-dropdownlist/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/edit-images-dropdownlist" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/edit-images-dropdownlist/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/edit-images-dropdownlist/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/edit-images-dropdownlist" %}
+{% endif %}
+
+### Render Multiple columns in DropDownList control  
+
+The Syncfusion Grid allows you to render a DropDownList control within the Grid's edit form for a specific column. This feature is particularly useful when you want to display more detailed information for each item in the dropdown list during editing a specific column.
+
+To render a DropDownList in the edit form, you need to define a cell edit template for the column using [edit](../../api/grid/column/#edit) property. The **edit** property specifies the cell edit template that used  as an editor for a particular column.
+
+The DropDownList has been provided with several options to customize each list item, group title, selected value, header, and footer element. By default, list items can be rendered as a single column in the DropDownList control. Instead of this, multiple columns can be rendered. This can be achieved by using the [headerTemplate](../../api/drop-down-list/#headertemplate) and [itemTemplate](../../api/drop-down-list/#itemtemplate) properties of the DropDownList control.
+
+The following example demonstrates how to render a DropDownList control with multiple columns within in the **ShipCountry** column.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/edit-columns-dropdownlist/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/edit-columns-dropdownlist/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/edit-columns-dropdownlist" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/edit-columns-dropdownlist/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/edit-columns-dropdownlist/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/edit-columns-dropdownlist" %}
+{% endif %}
+
+### Render ComboBox control in edit form 
+
+The Syncfusion Grid allows you to render a ComboBox control within the Grid's edit form for a specific column. This feature is especially valuable when you need to provide a drop-down selection with auto-suggestions for data entry.
+
+To render a comboBox control in the edit form, you need to define a cell edit template for the column using [edit](../../api/grid/column/#edit) property. The **edit** property specifies the cell edit template that used  as an editor for a particular column.
+
+The following example demonstrates how to render a ComboBox control in the **ShipCountry** column of the Syncfusion Grid. 
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/edit-comboBox-control/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/edit-comboBox-control/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/edit-comboBox-control" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/edit-comboBox-control/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/edit-comboBox-control/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/edit-comboBox-control" %}
+{% endif %}
+
+### Render TimePicker control in edit form 
+
+The Syncfusion Grid allows you to render a TimePicker control within the Grid's edit form for a specific column. This feature is especially valuable when you need to provide a time input, such as appointment times, event schedules, or any other time-related data for editing in the Grid.
+
+To render a TimePicker control in the edit form, you need to define a cell edit template for the column using [edit](../../api/grid/column/#edit) property. The **edit** property specifies the cell edit template that used  as an editor for a particular column.
+
+The following example demonstrates how to render a TimePicker control in the **OrderDate** column of the Syncfusion Grid.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/edit-timepicker-control/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/edit-timepicker-control/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/edit-timepicker-control" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/edit-timepicker-control/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/edit-timepicker-control/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/edit-timepicker-control" %}
+{% endif %}
+
+### Render MultiSelect control in edit form
+
+The Syncfusion Grid allows you to render a MultiSelect control within the Grid's edit form, enabling you to select multiple values from a dropdown list when editing a specific column. This feature is particularly useful when you need to handle situations where multiple selections are required for a column.
+
+To render a MultiSelect control in the edit form, you need to define a cell edit template for the column using [edit](../../api/grid/column/#edit) property. The **edit** property specifies the cell edit template that used  as an editor for a particular column.
+
+The following example demonstrates how to render a MultiSelect control in the **ShipCity** column of the Syncfusion Grid. The `actionBegin` event is handled to update the edited value in the grid when the save button is clicked:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -287,40 +779,15 @@ Use the cell edit template feature of the Grid to render the MultiSelect DropDow
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs31" %}
 {% endif %}
 
-### Render MaskedTextBox component while editing
+### Render RichTextEditor control in edit form
 
-Use the cell edit template feature of the Grid to render the MaskedTextBox component in the Grid edit form. In the following sample, the MaskedTextBox component is rendered in the Mask column.
+The Syncfusion Grid allows you to render the RichTextEditor control within the edit form. This feature is valuable when you need to format and style text content using various formatting options such as bold, italic, underline, bullet lists, numbered lists, and more during editing a specific column.
 
-{% if page.publishingplatform == "typescript" %}
+To render RichTextEditor control in edit form,you need to define a cell edit template for the column using [edit](../../api/grid/column/#edit) property. The **edit** property specifies the cell edit template that used  as an editor for a particular column.
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid/grid-cs32/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid/grid-cs32/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs32" %}
+Additionally, you need set the [allowTextWrap](../../api/grid/#allowtextwrap) property of the corresponding grid column to **true**. By enabling this property, the rich text editor control will automatically adjust its width and wrap the text content to fit within the boundaries of the column.
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid/grid-cs32/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid/grid-cs32/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs32" %}
-{% endif %}
-
-### Render RichTextEditor component while editing
-
-Use the cell edit template feature of the Grid to render the RichTextEditor component in the Grid edit form. In the below sample, we have rendered RichTextEditor component in the **ShipAddress** column, so we use [allowTextWrap](../../api/grid/#allowtextwrap) property to true.
+The following example demonstrates how to render a RichTextEditor control in the **ShipAddress** column of the Syncfusion Grid.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -349,46 +816,83 @@ Use the cell edit template feature of the Grid to render the RichTextEditor comp
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs33" %}
 {% endif %}
 
-### Render multiple columns in DropDownList component while editing
+### Render Upload control in edit form  
 
-Use the cell edit template feature of the Grid to render the DropDownList component in the Grid edit form.
+The Syncfusion Grid allows you to render an Upload control within the Grid's edit form. This feature is especially valuable when you need to upload and manage files or images in a specific column during data editing.
 
-The DropDownList has been provided with several options to customize each list item, group title, selected value, header, and footer element. By default, list items can be rendered as a single column in the DropDownList component. Instead of this, multiple columns can be rendered. This can be achieved by using the [headerTemplate](../../api/drop-down-list/#headertemplate) and [itemTemplate](../../api/drop-down-list/#itemtemplate) properties of the DropDownList component.
+To render Upload control in edit form, you need to define a cell edit template for the column using [edit](../../api/grid/column/#edit) property. The **edit** property specifies the cell edit template that used  as an editor for a particular column.
 
-This is demonstrated in the following sample.
+The following example demonstrates how to render a Upload control in the **Employee Image** column of the Syncfusion Grid. The `actionBegin` event is handled to update the edited value in the grid when the save button is clicked:
 
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid/multicolumn-dropdown-cs1/index.ts %}
+{% include code-snippet/grid/grid-cs32/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid/multicolumn-dropdown-cs1/index.html %}
+{% include code-snippet/grid/grid-cs32/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/grid/multicolumn-dropdown-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/grid-cs32" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid/multicolumn-dropdown-cs1/index.js %}
+{% include code-snippet/grid/grid-cs32/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid/multicolumn-dropdown-cs1/index.html %}
+{% include code-snippet/grid/grid-cs32/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/grid/multicolumn-dropdown-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/grid-cs32" %}
 {% endif %}
 
-## Access editor components
+### Render AutoComplete control in edit form 
 
-You can access the component instance from the component element using the `ej2_instances` property.
+The Syncfusion Grid allows you to render the AutoComplete control within the edit form by using the cell edit template feature.This feature enables you to select values from a predefined list during the editing of a specific column. It is especially valuable when you need to provide a dropdown-like auto-suggestion and input assistance for data entry in the Grid's columns.
 
-In the below demo, you can access the Editor component instance while adding or editing actions on the [`actionComplete`](../../api/grid/#actioncomplete) event.
+To achieve this, you need to utilize the [columns->edit->params](../../api/grid/column/#edit) property along with a defined object that specifies the necessary functions for creating, reading, and writing the auto complete control.
+
+The following example demonstrates how to render a Autocomplete control in the **CustomerID** column:
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/grid-cs30/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/grid-cs30/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/grid-cs30" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/grid-cs30/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/grid-cs30/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/grid-cs30" %}
+{% endif %}
+
+### Render cascading DropDownList control in edit form 
+
+The Syncfusion Grid allows you to render the cascading DropDownList within the edit form by using the cell edit template feature.This feature is especially useful when you need to establish a hierarchy of options, such as choosing a country and then selecting a state based on the chosen country.
+
+To achieve this, you need to utilize the [columns->edit->params](../../api/grid/column/#edit) property along with a defined object that specifies the necessary functions for creating, reading, and writing the auto complete control.
+
+In the below demo, cascading DropDownList rendered for **ShipCountry** and **ShipState** column.
 
 {% if page.publishingplatform == "typescript" %}
 

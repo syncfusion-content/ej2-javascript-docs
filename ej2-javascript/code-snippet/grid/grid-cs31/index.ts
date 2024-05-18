@@ -1,67 +1,82 @@
-
-
-import { Grid, Edit, Toolbar, Page, Column } from '@syncfusion/ej2-grids';
-import { purchaseData } from './datasource.ts';
+import { Grid, Edit, Toolbar, SaveEventArgs } from '@syncfusion/ej2-grids';
 import { MultiSelect } from '@syncfusion/ej2-dropdowns';
+import { data } from './datasource.ts';
 
-Grid.Inject(Edit, Toolbar, Page);
+let multiselectElem;
+let multiselectObj;
+let orderData;
 
-let ddElem: HTMLElement;
-let multiSelectObj: MultiSelect;
-let multiselectDatasource = [
-  { ShipCity: 'Reims', Id: '1' },
-  { ShipCity: 'Münster', Id: '2' },
-  { ShipCity: 'Rio de Janeiro', Id: '3' },
-  { ShipCity: 'Lyon', Id: '4' },
-  { ShipCity: 'Charleroi', Id: '5' }
-];
+Grid.Inject(Edit, Toolbar);
 
 let grid: Grid = new Grid({
-  dataSource: purchaseData,
-  allowPaging: true,
-  toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
-  editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
-  columns: [
-    { field: 'OrderID', headerText: 'Order ID', type: 'number', isPrimaryKey: true, validationRules: { required: true }, textAlign: 'Right', width: 100 },
-    { field: 'CustomerID', headerText: 'Customer ID', type: 'string', width: 140 },
-    { field: 'Freight', headerText: 'Freight', type: 'number', editType: 'numericedit', format: 'C2', textAlign: 'Right', width: 120 },
-    { field: 'ShipCity', headerText: 'Ship City', type: 'string', width: 180, edit: {
-        create: createShipCityFn,
-        read: readShipCityFn,
-        destroy: destroyShipCityFn,
-        write: writeShipCityFn }
-    }
-  ],
-  pageSettings: { pageSize: 7 },
-  height: 255,
+    dataSource: data,
+    editSettings: {  allowEditing: true, allowAdding: true, allowDeleting: true },
+    toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
+    actionBegin: actionBegin,
+    columns: [
+        { field: 'OrderID', headerText: 'Order ID', width: 120, textAlign: 'Right', isPrimaryKey: true, validationRules: { required: true } },
+        { field: 'CustomerID', headerText: 'Customer Name', width: 120},
+        { field: 'Freight', headerText: 'Freight', width: 120, format: 'C2', textAlign: 'Right', editType: 'numericedit',validationRules: { required: true, min: 1, max: 1000 }},
+        { field: 'OrderDate', headerText: 'Order Date', width: 130, editType: 'datepickeredit', format: 'yMd', textAlign: 'Right'},
+        { field: 'ShipCity', headerText: 'Ship City', width: 150, format: 'hh :mm a', textAlign: 'Right',
+         edit: {
+            create: function(){
+                multiselectElem = document.createElement('input');
+                return multiselectElem;
+            },
+            read: function() {
+                return multiselectObj.value;
+            },
+            destroy: function() {
+                multiselectObj.destroy();
+            },
+            write: function(args){
+                multiselectObj = new MultiSelect({
+                    dataSource: multiselectDatasource,
+                    value: orderData.ShipCity,
+                    fields: { value: 'value', text: 'text' },
+                    change: function(e) {
+                        orderData.ShipCity = e.value; // Update orderData.ShipCity on change
+                    }
+                });
+                multiselectObj.appendTo(args.element);
+            }
+        } }
+    ],
+    height: 273
 });
 grid.appendTo('#Grid');
 
-function createShipCityFn() {
-  ddElem = document.createElement('input');
-  return ddElem;
+let multiselectDatasource = [
+    { value: 'Reims', text: 'Reims' },
+    { value: 'Münster', text: 'Münster' },
+    { value: 'Rio de Janeiro', text: 'Rio de Janeiro' },
+    { value: 'Lyon', text: 'Lyon' },
+    { value: 'Charleroi', text: 'Charleroi' }
+];
+
+function actionBegin(args: SaveEventArgs) {
+    if (args.requestType === 'beginEdit' || args.requestType === 'add') {
+        (orderData as Object) = Object.assign({}, args.rowData);
+
+        (orderData as columnDataType)['ShipCity'] = (orderData  as columnDataType)['ShipCity'] ? ((orderData  as columnDataType)['ShipCity'] as any).split(',') : [];
+
+    }
+    if (args.requestType === 'save') {
+        (args.data  as columnType)['ShipCity'] = (orderData  as columnDataType)['ShipCity'].join(',');
+    }
 }
-function readShipCityFn() {
-  return multiSelectObj.value.join(',');
-}
-function destroyShipCityFn() {
-  multiSelectObj.destroy();
-}
-function writeShipCityFn(args) {
-  {
-    let multiSelectVal = args.rowData[args.column.field]
-      ? args.rowData[args.column.field].split(',')
-      : [];
-    multiSelectObj = new MultiSelect({
-      value: multiSelectVal,
-      dataSource: multiselectDatasource,
-      fields: { value: 'ShipCity', text: 'ShipCity' },
-      floatLabelType: 'Never',
-      mode: 'Box'
-    });
-    multiSelectObj.appendTo(ddElem);
+
+export interface columnDataType{
+    ShipCity: string[];
   }
-}
 
-
-
+  export interface columnType{
+    OrderID:number,
+    Freight:number,
+    ShipCity:string,
+    EmployeeID:number,
+    ShipCountry:string,
+    ShipAddress:string,
+    OrderDate:Date
+ }

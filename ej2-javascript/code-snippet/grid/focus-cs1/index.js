@@ -9,9 +9,9 @@ var grid = new ej.grids.Grid({
     recordDoubleClick: recordDoubleClick,
     actionComplete: actionComplete,
     columns: [
-        { field: 'OrderID', isPrimaryKey: true, headerText: 'Order ID', textAlign: 'Right', width: 120, type: 'number' },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-        { field: 'Freight', headerText: 'Freight', editType: "numericedit", textAlign: 'Right', width: 120, format: 'C2' },
+        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', isPrimaryKey: true, width: 120, type: 'number' },
+        { field: 'CustomerID', headerText: 'Customer ID', validationRules: { required: true, minLength: 5 }, width: 140, type: 'string' },
+        { field: 'Freight', headerText: 'Freight', editType: "numericedit", textAlign: 'Right', width: 120, format: 'C2', validationRules: {required: true, min: 1, max:1000 } },
         { field: 'OrderDate', headerText: 'Order Date', textAlign: 'Right', width: 140, editType: "datetimepickeredit",
         format: { type: "dateTime", format: "M/d/y hh:mm a" }, },
         { field: "ShipCountry", headerText: "Ship Country", editType: "dropdownedit",  width: 150, edit: { params: { popupHeight: "300px" } }
@@ -22,6 +22,7 @@ var grid = new ej.grids.Grid({
 grid.appendTo('#Grid');
 
 var fieldName;
+
 function recordDoubleClick(e) {
   var clickedColumnIndex = e.cell.getAttribute("data-colindex");
   fieldName = this.columnModel[parseInt(clickedColumnIndex)].field;
@@ -33,4 +34,3 @@ function actionComplete(e) {
     e.form.elements[grid.element.getAttribute("id") + fieldName].focus();
   }
 }
-

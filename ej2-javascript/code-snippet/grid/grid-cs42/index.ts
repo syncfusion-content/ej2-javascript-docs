@@ -1,52 +1,42 @@
-
-
-import { Grid, Edit, Toolbar } from '@syncfusion/ej2-grids';
+import { Grid, Edit, Toolbar, EditEventArgs } from '@syncfusion/ej2-grids';
+import { Button } from '@syncfusion/ej2-buttons';
 import { data } from './datasource.ts';
 
 Grid.Inject(Edit, Toolbar);
 
-let isAddable: boolean = true;
+let isAddable = true;
 let grid: Grid = new Grid({
-    dataSource: data,
-    toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
-    editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' },
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100, isPrimaryKey: true },
-        { field: 'Role', headerText: 'Role', width: 120, },
-        { field: 'Freight', headerText: 'Freight', textAlign: 'Right', editType: 'numericedit', width: 120, format: 'C2' },
-        { field: 'ShipCountry', headerText: 'Ship Country', editType: 'dropdownedit', width: 150 }
-    ],
-    actionBegin: actionBegin,
-    height: 240
+  dataSource: data,
+  editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' },
+  toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
+  actionBegin: actionBegin,
+  columns: [
+    { field: 'EmployeeID', headerText: 'Employee ID', textAlign: 'Right', isPrimaryKey: true, validationRules: { required: true }, width: 100 },
+    { field: 'EmployeeName', headerText: 'Employee Name', validationRules: { required: true }, width: 120 },
+    { field: 'Role', headerText: 'Role', validationRules: { required: true }, width: 120 },
+    { field: 'EmployeeCountry', headerText: 'Employee Country', editType: 'dropdownedit', width: 150 }
+  ]
 });
 grid.appendTo('#Grid');
 
-function actionBegin(args) {
-  if (args.requestType == 'beginEdit') {
-    if (args.rowData['Role'].toLowerCase() == 'employee') {
-      args.cancel = true;
-    }
+function actionBegin(args: EditEventArgs) {
+  if ((args.requestType == 'beginEdit') && (args.rowData as { Role: string}['Role'] == 'Admin')) {
+    args.cancel = true;
   }
-  if (args.requestType == 'delete') {
-    if (args.data[0]['Role'].toLowerCase() == 'employee') {
-      args.cancel = true;
-    }
+  else if ((args.requestType == 'delete') && ((args as any).data[0]['Role'] == 'Admin')) {
+    args.cancel = true;
   }
-  if (args.requestType == 'add') {
-    if (!isAddable) {
-      args.cancel = true;
-    }
+  else if ((args.requestType == 'add') && (!isAddable)) {
+    args.cancel = true;
   }
 }
 
-var button = document.createElement('button');
-button.innerText = 'Grid is Addable';
-document.body.insertBefore(button, document.body.children[0])
-button.addEventListener('click', btnClick.bind(this));
+let button: Button = new Button(
+  { content: 'Grid is Addable', }
+);
+button.appendTo('#Add');
 
-function btnClick(args) {
-  args.target.innerText == 'Grid is Addable' ? (args.target.innerText = 'Grid is Not Addable') : (args.target.innerText = 'Grid is Addable');
+(<HTMLElement>document.getElementById('Add')).onclick = () => {
+  button.content == 'Grid is Addable' ? (button.content = 'Grid is Not Addable') : (button.content = 'Grid is Addable');
   isAddable = !isAddable;
-}
-
-
+};

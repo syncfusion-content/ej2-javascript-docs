@@ -8,10 +8,10 @@ let grid: Grid = new Grid({
     toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
     editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, newRowPosition: 'Top', showAddNewRow: true },
     columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100, isPrimaryKey: true, validationRules: { required: true, number: true } },
-        { field: 'CustomerID', headerText: 'Customer ID', width: 120, validationRules: { required: true, minLength: 5 } },
-        { field: 'Freight', headerText: 'Freight', textAlign: 'Right', width: 120, format: 'C2', editType:'numericedit', validationRules: { required: true, min: 1 } },
-        { field: 'ShipCountry', headerText: 'Ship Country', width: 150, editType:'dropdownedit' }
+        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', isPrimaryKey: true, validationRules: { required: true, number: true }, width: 100 },
+        { field: 'CustomerID', headerText: 'Customer ID', validationRules: { required: true, minLength: 5 }, width: 120 },
+        { field: 'Freight', headerText: 'Freight', textAlign: 'Right', editType:'numericedit', validationRules: { required: true, min: 1 }, width: 120, format: 'C2' },
+        { field: 'ShipCountry', headerText: 'Ship Country', editType:'dropdownedit', width: 150 }
     ],
     height: 315
 });

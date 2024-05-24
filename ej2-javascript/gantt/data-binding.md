@@ -194,7 +194,7 @@ import './App.css';
 Gantt.Inject(Selection, VirtualScroll);
 
 let dataSource: DataManager = new DataManager({
-    url: 'https://ej2services.syncfusion.com/js/development/api/GanttLoadOnDemand',
+    url: 'https://services.syncfusion.com/js/production/api/GanttLoadOnDemand',
     adaptor: new WebApiAdaptor,
     crossDomain: true
 });

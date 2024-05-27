@@ -256,7 +256,7 @@ grid.appendTo('#Grid');
 
 let button = document.getElementById('btn');
 button.addEventListener("click", function(e){
-    let ajax = new ej.base.Ajax("https://ej2services.syncfusion.com/production/web-services/api/Orders", "GET");
+    let ajax = new ej.base.Ajax("https://services.syncfusion.com/js/production/api/Orders", "GET");
     ajax.send();
     ajax.onSuccess = function (data) {
         grid.dataSource = JSON.parse(data);

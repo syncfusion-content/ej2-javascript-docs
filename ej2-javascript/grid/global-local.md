@@ -15,9 +15,9 @@ The Syncfusion ##Platform_Name## Grid control provides a feature known as Global
 
 ## Localization
 
-The Syncfusion ##Platform_Name## Grid provides a built-in [Localization](../../common/globalization/localization) library, enabling you to customize the text used in the grid to suit different languages or cultural preferences. With this library, you can change static text on various elements, such as **group drop area text** and **pager information text**, to different cultures, such as **Arabic**, **Deutsch**, **French**, and more.
+The Syncfusion ##Platform_Name## Grid provides a built-in [Localization](../common/globalization/localization) library, enabling you to customize the text used in the grid to suit different languages or cultural preferences. With this library, you can change static text on various elements, such as **group drop area text** and **pager information text**, to different cultures, such as **Arabic**, **Deutsch**, **French**, and more.
 
-This can be achieved by defining the [locale](../../api/grid/#locale) property and translation object.
+This can be achieved by defining the [locale](../api/grid/#locale) property and translation object.
 
 The following list of properties and its values are used in the grid.
 
@@ -244,7 +244,7 @@ To work with **JSON** files in your application, you can enable JSON module reso
 }
 ```
 
-The following example demonstrates how to load a translation object for **Deutsch (de)** culture, by using the **load** function of **L10n** class from the **ej2-base** module and by defining the [locale](../../api/grid/#locale) to **de-DE**.
+The following example demonstrates how to load a translation object for **Deutsch (de)** culture, by using the **load** function of **L10n** class from the **ej2-base** module and by defining the [locale](../api/grid/#locale) to **de-DE**.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -288,7 +288,7 @@ To work with **JSON** files in your application, you can enable JSON module reso
 }
 ```
 
-The following example demonstrates how to load a translation object for **French (fr)** culture, by defining the [locale](../../api/grid/#locale) to **fr-FR** and by using the **load** function of **L10n** class from the **ej2-base** module.
+The following example demonstrates how to load a translation object for **French (fr)** culture, by defining the [locale](../api/grid/#locale) to **fr-FR** and by using the **load** function of **L10n** class from the **ej2-base** module.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -380,7 +380,7 @@ To switch to the **French** culture and set the currency code as **EUR**, you ca
 
 The Internationalization library in the Syncfusion ##Platform_Name## Grid provides a localized display of number, date, and time values in the Grid control based on the preferred language and region.
 
-[Internationalization](../../common/globalization/internationalization) library allows you to globalize number, date, and time values using format strings defined in the [columns.format](../../api/grid/column/#format) property.
+[Internationalization](../common/globalization/internationalization) library allows you to globalize number, date, and time values using format strings defined in the [columns.format](../api/grid/column/#format) property.
 
 To work with **JSON** files in your application, you can enable JSON module resolution in TypeScript by adding the **resolveJsonModule** to true to your tsconfig.json file. Additionally, you can enhance module interoperation by setting esModuleInterop to true as shown below:
 
@@ -422,14 +422,14 @@ You need to load the culture format files corresponding to the desired locale. T
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs78" %}
 {% endif %}
 
-> * In the above sample, **Freight** column is formatted using the [NumberFormatOptions](../../common/globalization/internationalization#manipulating-numbers).
-> * By default, [locale](../../api/grid/#locale) value is **en-US**. If you wish to change the culture to something other than **en-US**, you can simply set the `locale` property accordingly.
+> * In the above sample, **Freight** column is formatted using the [NumberFormatOptions](../common/globalization/internationalization#manipulating-numbers).
+> * By default, [locale](../api/grid/#locale) value is **en-US**. If you wish to change the culture to something other than **en-US**, you can simply set the `locale` property accordingly.
 
 ## Right to Left - RTL
 
 The Right to Left (RTL) feature in the Syncfusion ##Platform_Name## Grid allows you to switch the text direction and layout from left-to-right to right-to-left. This feature is especially beneficial for interacting with the grid in languages that are written and read from right to left, such as **Arabic**, **Farsi,** **Urdu**, and others. Enabling RTL significantly improves the experience and accessibility for such languages.
 
-To enable RTL in the Grid, you need to set the [enableRtl](../../api/grid/#enablertl) property to **true**. By setting `enableRtl`, the grid control's text direction and layout will be adjusted to support right-to-left languages.
+To enable RTL in the Grid, you need to set the [enableRtl](../api/grid/#enablertl) property to **true**. By setting `enableRtl`, the grid control's text direction and layout will be adjusted to support right-to-left languages.
 
 To work with **JSON** files in your application, you can enable JSON module resolution in TypeScript by adding the **resolveJsonModule** to true to your tsconfig.json file. Additionally, you can enhance module interoperation by setting **esModuleInterop** to true as shown below:
 
@@ -442,7 +442,7 @@ To work with **JSON** files in your application, you can enable JSON module reso
 }
 ```
 
-In the following example, the [EJ2 Toggle Switch Button](../../switch/getting-started) control is added to enable or diable the Right to Left (RTL) feature for the **Arabic (ar-AE)** locale. When the switch is toggled, the [change](../../api/switch/#change) event is triggered and the `enableRtl` property of the grid is updated accordingly. 
+In the following example, the [EJ2 Toggle Switch Button](../switch/getting-started) control is added to enable or diable the Right to Left (RTL) feature for the **Arabic (ar-AE)** locale. When the switch is toggled, the [change](../api/switch/#change) event is triggered and the `enableRtl` property of the grid is updated accordingly. 
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -15,7 +15,7 @@ The Syncfusion ##Platform_Name## Grid control comes equipped with a context menu
 
 In essence, the context menu provides a convenient and efficient way for users to interact with and manipulate the grid's content, enabling them to perform tasks such as sorting, filtering, editing, or any other relevant actions without the need for navigating through the grid's interface. This user-friendly feature streamlines the overall usability of the ##Platform_Name## Grid, making it a powerful tool for data management and manipulation.
 
-To activate the context menu within the grid, you have an option to configure the grid's [contextMenuItems](../../api/grid/#contextmenuitems) property. You can set this property to either include the default context menu items or define your own custom context menu items, tailoring the menu options to suit your specific needs. This customization allows you to enhance the grid's functionality by providing context-sensitive actions for interacting with your data.
+To activate the context menu within the grid, you have an option to configure the grid's [contextMenuItems](../api/grid/#contextmenuitems) property. You can set this property to either include the default context menu items or define your own custom context menu items, tailoring the menu options to suit your specific needs. This customization allows you to enhance the grid's functionality by providing context-sensitive actions for interacting with your data.
    
 To use the context menu, inject the `ContextMenu` module in the grid.
 
@@ -94,7 +94,7 @@ The Syncfusion ##Platform_Name## Grid empowers you to enhance your user experien
 
 By adding custom context menu items, you can introduce additional actions or operations that are directly relevant to your specific use case. This flexibility allows you to create a highly personalized and efficient interaction with your grid, making it a powerful tool for data management and manipulation.
 
-To add custom context menu items by defining the [contextMenuItems](../../api/grid/#contextmenuitems) property as a collection of [contextMenuItemModel](../../api/grid/contextMenuItemModel). You can also define actions for these customized items using the [contextMenuClick](../../api/grid/#contextmenuclick) event.
+To add custom context menu items by defining the [contextMenuItems](../api/grid/#contextmenuitems) property as a collection of [contextMenuItemModel](../api/grid/contextMenuItemModel). You can also define actions for these customized items using the [contextMenuClick](../api/grid/#contextmenuclick) event.
 
 To incorporate custom context menu items in the Syncfusion ##Platform_Name## Grid, you can achieve this by specifying the `contextMenuItems` property as a collection of `contextMenuItemModel`. This allows you to define and customize the appearance and behavior of these additional context menu items according to your requirements.
 
@@ -133,7 +133,7 @@ The following example demonstrates how to add custom context menu items in the G
 
 The Syncfusion ##Platform_Name## Grid provides the ability to show the context menu items on a left mouse click instead of the default right mouse click action. 
 
-This can be achieved by using the [created](../../api/grid/#created) event and the context menu's `beforeOpen` event of the Grid.
+This can be achieved by using the [created](../api/grid/#created) event and the context menu's `beforeOpen` event of the Grid.
 
 By using the `onclick` event listener of the Grid, you can obtain the clicked position values. The obtained positions are then sent to the `open` method of the context menu within the `onclick` event of the Grid. Additionally, the default action of right-clicking to open the context menu items items is prevented by utilizing the `created` event of the Grid.
 
@@ -166,7 +166,7 @@ The following example demonstrates how to show context menu on left click using 
 {% previewsample "page.domainurl/code-snippet/grid/row-template-cs16" %}
 {% endif %}
 
-> You can hide or show an item in context menu for specific area inside of grid by defining the [target](../../api/grid/contextMenuItemModel/#target) property.
+> You can hide or show an item in context menu for specific area inside of grid by defining the [target](../api/grid/contextMenuItemModel/#target) property.
 
 ## Enable or disable context menu items
 
@@ -174,9 +174,9 @@ With the Syncfusion ##Platform_Name## Grid, you have the ability to manage the a
 
 By enabling or disabling context menu items, you can ensure that certain options are available or restricted based on the context of the data or the needs of your users. This level of control allows you to create a more dynamic and user-centric experience with the grid, aligning it with your application's requirements and enhancing usability.
 
-This can be achieved using the [enableItems](../../api/context-menu/#enableitems) method of the context menu. By setting the enable parameter in the enableItems method to **true**, you can enable context menu items, and by setting it to **false**, you can disable them. Based on your specific condition or requirements, you can enable or disable the context menu item using the `enableItems` method.
+This can be achieved using the [enableItems](../api/context-menu/#enableitems) method of the context menu. By setting the enable parameter in the enableItems method to **true**, you can enable context menu items, and by setting it to **false**, you can disable them. Based on your specific condition or requirements, you can enable or disable the context menu item using the `enableItems` method.
 
-In the following example, the [EJ2 Toggle Switch Button](../../switch/getting-started) control is added to enable and disable the context menu items using `enableItems` method. When the switch is toggled, the [change](../../api/switch/#change) event is triggered, and the **Copy** items is updated accordingly. 
+In the following example, the [EJ2 Toggle Switch Button](../switch/getting-started) control is added to enable and disable the context menu items using `enableItems` method. When the switch is toggled, the [change](../api/switch/#change) event is triggered, and the **Copy** items is updated accordingly. 
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -209,9 +209,9 @@ In the following example, the [EJ2 Toggle Switch Button](../../switch/getting-st
 
 The Syncfusion ##Platform_Name## Grid provides the flexibility to show or hide both default and custom context menu items. This feature allows you to customize the context menu items based on various conditions or individuals interactions.
 
-This can be achieved using the [showItems](../../api/context-menu/#showitems) and [hideItems](../../api/context-menu/#hideitems) methods of the context menu by specifying the item you want to show or hide as an argument. 
+This can be achieved using the [showItems](../api/context-menu/#showitems) and [hideItems](../api/context-menu/#hideitems) methods of the context menu by specifying the item you want to show or hide as an argument. 
 
-In the following example, the [EJ2 Toggle Switch Button](../../switch/getting-started) control is added to show or hide the context menu items using `showItems` and `hideItems` methods. When the switch is toggled, the [change](../../api/switch/#change) event is triggered, and the **Copy** items is updated accordingly. 
+In the following example, the [EJ2 Toggle Switch Button](../switch/getting-started) control is added to show or hide the context menu items using `showItems` and `hideItems` methods. When the switch is toggled, the [change](../api/switch/#change) event is triggered, and the **Copy** items is updated accordingly. 
 
 {% if page.publishingplatform == "typescript" %}
 

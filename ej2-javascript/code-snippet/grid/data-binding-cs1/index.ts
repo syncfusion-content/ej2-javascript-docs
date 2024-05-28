@@ -5,7 +5,7 @@ import { DropDownList, ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 Grid.Inject(Page,Sort,Filter);
 
 let data: DataManager = new DataManager({
-  url: 'https://ej2services.syncfusion.com/js/development/api/UrlDataSource',
+  url: 'https://services.syncfusion.com/js/production/api/Orders',
   adaptor: new UrlAdaptor
 });
 

@@ -1,5 +1,5 @@
 var data = new ej.data.DataManager({
-  url: 'https://ej2services.syncfusion.com/js/development/api/UrlDataSource',
+  url: 'https://services.syncfusion.com/js/production/api/Orders',
   adaptor: new ej.data.UrlAdaptor
 });
 

@@ -53,7 +53,7 @@ To enable the clipboard feature, you can use the grid control with your data sou
 
 Copying data to the clipboard by using external buttons in the Syncfusion ##Platform_Name## Grid allows you to programmatically trigger the copy operation, making it more friendly, especially for those who may not be familiar with keyboard shortcuts or manual copying.
 
-To copy selected rows or cells data into the clipboard with the help of external buttons, you can utilize the [copy](../../api/grid/clipboard/#copy) method available in the grid control. This is demonstrated in the following example,
+To copy selected rows or cells data into the clipboard with the help of external buttons, you can utilize the [copy](../api/grid/clipboard/#copy) method available in the grid control. This is demonstrated in the following example,
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -96,7 +96,7 @@ The AutoFill feature in the Syncfusion ##Platform_Name## Grid allows you to copy
 
 4. Release the mouse to complete the autofill action, and the data from the source cells will be copied and pasted into the target cells.
 
-This feature is enabled by defining [enableAutoFill](../../api/grid/#enableautofill) property as **true**. 
+This feature is enabled by defining [enableAutoFill](../api/grid/#enableautofill) property as **true**. 
 
 The following example demonstrates, how to enable autofill feature in the grid.
 
@@ -127,7 +127,7 @@ The following example demonstrates, how to enable autofill feature in the grid.
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs2" %}
 {% endif %}
 
-> * If [enableAutoFill](../../api/grid/#enableautofill) is set to **true**, then the autofill icon will be displayed on cell selection to copy cells.
+> * If [enableAutoFill](../api/grid/#enableautofill) is set to **true**, then the autofill icon will be displayed on cell selection to copy cells.
 > * It requires the selection `mode` to be **Cell**,  `cellSelectionMode` to be **Box** and also `editMode` to be **Batch** .
 
 ### Limitations

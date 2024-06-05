@@ -373,7 +373,7 @@ The Grid control allows you to retrieve the selected records even when navigatin
 
 To persist the selection across pages, you need to enable the [persistSelection](../../api/grid/selectionSettings/#persistselection) property. By default, this property is set to **false**. To enable it, set the value to **true** in the `selectionSettings` property of the Grid control.
 
-To retrieve the selected records from different pages, you can use the  [getSelectedRecords](../../documentation/api-grid.html#getSelectedRecords) method. This method returns an array of the selected records.
+To retrieve the selected records from different pages, you can use the  [getSelectedRecords](../../api/grid/#getselectedrecords) method. This method returns an array of the selected records.
 
 The following example demonstrates how to retrieve selected records from various pages using the `getSelectedRecords` method and display **OrderID** in a dialog when a button is clicked:
 
@@ -447,7 +447,7 @@ Clearing row selection programmatically in the Grid control is a useful feature 
 
 >The `clearRowSelection` method is applicable when the selection [type](../../api/grid/selectionSettings/#type) is set to **Multiple** or **Single**.
 
-The following example demonstrates how to clear row selection by calling the [clearRowSelection](../../api-grid.html#clearSelection) method in the button click event.
+The following example demonstrates how to clear row selection by calling the [clearRowSelection](../../api/grid/#clearrowselection) method in the button click event.
 
  {% if page.publishingplatform == "typescript" %}
 

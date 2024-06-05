@@ -9,7 +9,7 @@ class TaskIdAdaptor extends ej.data.ODataAdaptor {
     }
 }
 var data = new ej.data.DataManager({
-    url: 'https://ej2services.syncfusion.com/production/web-services/api/Kanban',
+    url: 'https://services.syncfusion.com/js/production/api/Kanban',
     adaptor: new ej.data.ODataAdaptor
 });
 var kanbanObj = new ej.kanban.Kanban({

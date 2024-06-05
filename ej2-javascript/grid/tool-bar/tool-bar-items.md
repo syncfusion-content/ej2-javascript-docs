@@ -148,7 +148,7 @@ By default, custom toolbar items are positioned on the **left** side of the tool
 
 Built-in and custom items in a toolbar within the Syncfusion ##Platform_Name## Grid provides the flexibility to create a customized toolbar with a combination of standard actions and custom actions.
 
-To use both types of toolbar items, you can define the [toolbar](../../api/grid/#toolbar) property of the Grid as an array that includes both built-in and custom items. The built-in items are specified as strings, while the custom items are defined as objects with properties such as [text](../../api/toolbar/itemDirective/#text), [prefixIcon](../../api/toolbar/itemDirective/#prefixicon), and [id](../../api/toolbar/itemDirective/#id) within the toolbar control.
+To use both types of toolbar items, you can define the [toolbar](../../api/grid/#toolbar) property of the Grid as an array that includes both built-in and custom items. The built-in items are specified as strings, while the custom items are defined as objects with properties such as [text](../../api/toolbar/item/#text), [prefixIcon](../../api/toolbar/item/#prefixicon), and [id](../../api/toolbar/item/#id) within the toolbar control.
 
 The following example demonstrates, how to use both built-in and custom toolbar items in the grid. The built-in toolbar items includes **Add**, **Edit**, **Delete**, **Update**, and **Cancel**, while the custom toolbar item is **Click**.
 
@@ -183,7 +183,7 @@ The following example demonstrates, how to use both built-in and custom toolbar 
 
 Customizing the position of a custom toolbar within the Syncfusion ##Platform_Name## Grid involves modifying the default placement of the custom toolbar items. This enables you to precisely control the positioning of each custom toolbar item according to your specific requirements and desired layout within the Grid.
 
-By default, custom toolbar items in Grid control are aligned on the left side of the toolbar. However, you have the ability to modify the position of the custom toolbar items by utilizing the [align](../../api/toolbar/itemModel) property of the [ItemModel](../../api/toolbar/itemModel).
+By default, custom toolbar items in Grid control are aligned on the left side of the toolbar. However, you have the ability to modify the position of the custom toolbar items by utilizing the [align](../../api/toolbar/itemModel#align) property of the [ItemModel](../../api/toolbar/itemModel).
 
 In the following sample, the **Collapse All** toolbar item is positioned on the **Right**, the **Expand All** toolbar item is positioned on the **Left**, and the **Search** toolbar item is positioned at the **Center**.
 

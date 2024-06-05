@@ -50,7 +50,7 @@ The following example demonstrates how to perform a PDF export action in the gri
 
 Showing a spinner while exporting in the Syncfusion ##Platform_Name## Grid enhances the experience by displaying a spinner during the export process. This feature provides a visual indication of the export progress, improving the understanding of the exporting process.
 
-To show or hide a spinner while exporting the grid, you can utilize the [showSpinner](../../documentation/api/grid/#showspinner) and [hideSpinner](../../documentation/api/grid/#hidespinner) methods provided by the Grid within the [toolbarClick](../../documentation/api/grid/#toolbarclick) event.
+To show or hide a spinner while exporting the grid, you can utilize the [showSpinner](../../api/grid/#showspinner) and [hideSpinner](../../api/grid/#hidespinner) methods provided by the Grid within the [toolbarClick](../../api/grid/#toolbarclick) event.
 
 The `toolbarClick` event is triggered when a toolbar item in the Grid is clicked. Within the event handler, the code checks if the clicked **item** is related with PDF export, specifically the **Grid_pdfexport** item. If a match is found, the `showSpinner` method is used on the Grid instance to display the spinner. 
 
@@ -88,9 +88,9 @@ The following example demonstrates how to show and hide the spinner during PDF e
 
 The Syncfusion ##Platform_Name## Grid control provides a convenient way to export data to a PDF format. With the PDF export feature, you can define a custom data source while exporting. This allows you to export data that is not necessarily bind to the grid, which can be generated or retrieved based on your application logic.
 
-To export data, you need to define the [dataSource](../../api/grid/pdfExportProperties/#datasource) property within the [pdfExportProperties](../../documentation/api/grid/pdfExportProperties/) object. This property represents the data source that will be used for the PDF export.
+To export data, you need to define the [dataSource](../../api/grid/pdfExportProperties/#datasource) property within the [pdfExportProperties](../../api/grid/pdfExportProperties/) object. This property represents the data source that will be used for the PDF export.
 
-The following example demonstrates how to render custom data source during PDF export. By utilizing the [pdfExport](../../documentation/api/grid/#pdfexport) method and passing the `pdfExportProperties` object through the grid instance, the grid data will be exported to a PDF using the dynamically defined data source.
+The following example demonstrates how to render custom data source during PDF export. By utilizing the [pdfExport](../../api/grid/#pdfexport) method and passing the `pdfExportProperties` object through the grid instance, the grid data will be exported to a PDF using the dynamically defined data source.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -125,7 +125,7 @@ The following example demonstrates how to render custom data source during PDF e
 
 Custom aggregates in the Syncfusion ##Platform_Name## Grid involves exporting grid data that includes additional calculated values based on specific requirements. This feature enables you to show the comprehensive view of the data in the exported file by incorporating the specific aggregated information you need for analysis or reporting purposes.
 
-In order to utilize custom aggregation, you need to specify the [type](../../api/grid/aggregateColumnDirective/#type) property as **Custom** and provide the custom aggregate function in the [customAggregate](../../documentation/api/grid/aggregateColumnDirective/#customaggregate) property. 
+In order to utilize custom aggregation, you need to specify the [type](../../api/grid/aggregateColumn/#type) property as **Custom** and provide the custom aggregate function in the [customAggregate](../../api/grid/aggregateColumn/#customaggregate) property. 
 
 Within the **customAggregateFn** function, it takes an input data that contains a result property. The function calculates the count of objects in this data where the **ShipCountry** field value is equal to **Brazil** and returns the count with a descriptive label.
 

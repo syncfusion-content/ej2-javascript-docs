@@ -136,7 +136,15 @@ To add the current page detail to the URL as a query string in the Syncfusion Gr
 
 > By enabling the `enableQueryString` property, you can easily copy the URL of the current page and share it with others. When the shared URL is opened, it will load the grid with the exact page that was originally shared.
 
+{% if page.publishingplatform == "typescript" %}
+ 
 In the following example, the [EJ2 Toggle Switch Button](../switch/getting-started) control is added to enable or disable the addition of the current page to the URL as a query string. When the switch is toggled, the [change](../api/switch/#change) event is triggered and the `enableQueryString` property of the grid is updated accordingly.
+
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+In the following example, the [EJ2 Toggle Switch Button](../switch/es5-getting-started) control is added to enable or disable the addition of the current page to the URL as a query string. When the switch is toggled, the [change](../api/switch/#change) event is triggered and the `enableQueryString` property of the grid is updated accordingly.
+
+{% endif %}
 
 {% if page.publishingplatform == "typescript" %}
 

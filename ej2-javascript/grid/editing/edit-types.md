@@ -47,7 +47,7 @@ You can customize the default TextBox control in Grid edit form using its proper
 
 control|Edit Type |Description|Example Customized edit params
 -----|---|-----|-----|
-[TextBox](../../textbox) |stringedit| The `stringedit` type renders a TextBox control for string data type columns. To customize the `TextBox` control, refer to the [TextBox API documentation](../../documentation/api/textbox) for detailed information on available properties | params: { showClearButton : true}
+[TextBox](../../textbox) |stringedit| The `stringedit` type renders a TextBox control for string data type columns. To customize the `TextBox` control, refer to the [TextBox API documentation](../../api/textbox) for detailed information on available properties | params: { showClearButton : true}
 
 The following sample code demonstrates the customization applied to TextBox control of **CustomerID** Grid column:
 
@@ -158,7 +158,7 @@ You can customize the `DropDownList` control in Grid edit form using its propert
 
 Control|Edit Type |Description| Example Customized edit params
 -----|-----|-----|----|
-[DropDownList](../../api/drop-down-list/)|DropDownEdit|  The `dropdownedit` type renders a DropDownList control for string data type columns. To customize the DropDownList control, refer to the [DropDownList API documentation](../../api/drop-down-list) for detailed information on available properties.  | params: { value: ‘Germany’ }
+[DropDownList](../../drop-down-list/)|DropDownEdit|  The `dropdownedit` type renders a DropDownList control for string data type columns. To customize the DropDownList control, refer to the [DropDownList API documentation](../../api/drop-down-list) for detailed information on available properties.  | params: { value: ‘Germany’ }
 
 The following sample code demonstrates the customization applied to DropDownList control  of **ShipCity** Grid column:
 

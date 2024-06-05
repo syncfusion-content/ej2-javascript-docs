@@ -363,20 +363,40 @@ To hide the expand/collapse icon in parent row when no records in child grid, fo
 
 2. **Implement the rowDataBound Event Handler:** This event is triggered for each row in the grid when data is bound, allowing you to customize the row's appearance and behavior. In the provided code, the handler checks if the current row has any child records associated with it. If not, it hides the content of the first element, which contains the expand/collapse icon, and applies a custom CSS class (e-customizedexpandcell) to modify its appearance.
 
-```typescript
-    public rowDataBound(args: RowDataBoundEventArgs) {
-        const parentData: number = (args.data as Employee)['EmployeeID'];
-        const childrecord: object[] = new DataManager(childData as JSON[]).
+{% if page.publishingplatform == "typescript" %}
+ 
+```ts
+    function rowDataBound(args: RowDataBoundEventArgs) {
+        let parentData: number = (args.data as Employee)['EmployeeID'];
+        let childrecord: object[] = new DataManager(childData as JSON[]).
             executeLocal(new Query().where('EmployeeID', 'equal', parentData, true));
         if (childrecord.length === 0) {
             // Here hide which parent row has no child records
-            const rowElement = args.row as HTMLTableRowElement;
-            const cellElement= rowElement.querySelector('td') as HTMLTableCellElement
+            let rowElement = args.row as HTMLTableRowElement;
+            let cellElement= rowElement.querySelector('td') as HTMLTableCellElement
             cellElement.innerHTML = ' '; 
             cellElement.className = 'e-customizedexpandcell';
         }
     }
 ```
+
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+```js
+function rowDataBound(args){
+   var parentData = (args.data)['EmployeeID'];
+   var childrecord = new ej.data.DataManager(childData).executeLocal(new ej.data.Query().where('EmployeeID', 'equal', parentData, true));
+    if (childrecord.length === 0) {
+        // Here hide which parent row has no child records
+       var rowElement = args.row;
+       var cellElement= rowElement.querySelector('td')
+        cellElement.innerHTML = ' '; 
+        cellElement.className = 'e-customizedexpandcell';
+    }
+}
+```
+
+{% endif %}
 
 The following example demonstrates how to hide the expand/collapse icon in the row with **EmployeeID** as **1**, which does not have record in child Grid.
 

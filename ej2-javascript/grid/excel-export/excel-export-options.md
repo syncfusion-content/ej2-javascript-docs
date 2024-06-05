@@ -139,7 +139,15 @@ Exporting hidden columns in the Syncfusion ##Platform_Name## Grid allows you to 
 
 To export hidden columns of the grid to a Excel or CSV file, you need to set the [includeHiddenColumn](../../api/grid/excelExportProperties/#includehiddencolumn) property as **true** in the [excelExportProperties](../../api/grid/excelExportProperties/) property.
 
+{% if page.publishingplatform == "typescript" %}
+ 
 The following example demonstrates how to export hidden columns to a Excel file. In this example, the **ShipCity** column, which is not visible in the UI, is exported to the Excel document. You can also export the grid by changing the `excelExportProperties.includeHiddenColumn` property based on the switch toggle using the [checked](../../api/switch/#checked) property of the [EJ2 Toggle Switch Button](../../switch/getting-started) control.
+
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+The following example demonstrates how to export hidden columns to a Excel file. In this example, the **ShipCity** column, which is not visible in the UI, is exported to the Excel document. You can also export the grid by changing the `excelExportProperties.includeHiddenColumn` property based on the switch toggle using the [checked](../../api/switch/#checked) property of the [EJ2 Toggle Switch Button](../../switch/es5-getting-started) control.
+
+{% endif %}
 
 {% if page.publishingplatform == "typescript" %}
 

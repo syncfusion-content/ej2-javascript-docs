@@ -3,7 +3,7 @@
 import { RichTextEditor, HtmlEditor, Toolbar, QuickToolbar, Image, FileManager } from '@syncfusion/ej2-richtexteditor';
 RichTextEditor.Inject(HtmlEditor, Toolbar, QuickToolbar, Image, FileManager);
 
-let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
+let hostUrl: string = 'https://services.syncfusion.com/js/production/';
 
 let defaultRTE: RichTextEditor = new RichTextEditor({
     fileManagerSettings: {

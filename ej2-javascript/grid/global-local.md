@@ -15,7 +15,7 @@ The Syncfusion ##Platform_Name## Grid control provides a feature known as Global
 
 ## Localization
 
-The Syncfusion ##Platform_Name## Grid provides a built-in [Localization](../common/globalization/localization) library, enabling you to customize the text used in the grid to suit different languages or cultural preferences. With this library, you can change static text on various elements, such as **group drop area text** and **pager information text**, to different cultures, such as **Arabic**, **Deutsch**, **French**, and more.
+The Syncfusion ##Platform_Name## Grid provides a built-in [Localization](../common/localization) library, enabling you to customize the text used in the grid to suit different languages or cultural preferences. With this library, you can change static text on various elements, such as **group drop area text** and **pager information text**, to different cultures, such as **Arabic**, **Deutsch**, **French**, and more.
 
 This can be achieved by defining the [locale](../api/grid/#locale) property and translation object.
 
@@ -233,17 +233,6 @@ The Syncfusion ##Platform_Name## Grid control provides a built-in Localization l
 
 This feature allows you to specify translation objects for specific cultures, such as **Deutsch** (German), and display the Grid's content in the desired language.
 
-To work with **JSON** files in your application, you can enable JSON module resolution in TypeScript by adding the **resolveJsonModule** to true to your tsconfig.json file. Additionally, you can enhance module interoperation by setting **esModuleInterop** to true as shown below:
-
-```ts
-{
-  compilerOptions: {
-    resolveJsonModule: true,
-    esModuleInterop: true,
-  }
-}
-```
-
 The following example demonstrates how to load a translation object for **Deutsch (de)** culture, by using the **load** function of **L10n** class from the **ej2-base** module and by defining the [locale](../api/grid/#locale) to **de-DE**.
 
 {% if page.publishingplatform == "typescript" %}
@@ -276,17 +265,6 @@ The following example demonstrates how to load a translation object for **Deutsc
 ### Loading translations for fr culture 
 
 The Loading translations feature allows you to specify translation objects for different cultures, such as **Deutsch**, **Arabic**, **French** and display the Grid's content in the desired language.
-
-To work with **JSON** files in your application, you can enable JSON module resolution in TypeScript by adding the **resolveJsonModule** to true to your tsconfig.json file. Additionally, you can enhance module interoperation by setting **esModuleInterop** to true as shown below:
-
-```ts
-{
-  compilerOptions: {
-    resolveJsonModule: true,
-    esModuleInterop: true,
-  }
-}
-```
 
 The following example demonstrates how to load a translation object for **French (fr)** culture, by defining the [locale](../api/grid/#locale) to **fr-FR** and by using the **load** function of **L10n** class from the **ej2-base** module.
 
@@ -334,18 +312,8 @@ loadCldr(
     numberingSystems
 );
 ```
-**Step 2:** To import **json** files in your application, you can enable JSON module resolution in TypeScript by adding the **resolveJsonModule** to true to your tsconfig.json file. Additionally, you can enhance module interoperation by setting **esModuleInterop** to true as shown below:
 
-```ts
-{
-  compilerOptions: {
-    resolveJsonModule: true,
-    esModuleInterop: true,
-  }
-}
-```
-
-**Step 3:** To change the default culture and the currency code, you can use the methods `setCulture` for setting the locale and `setCurrencyCode` for setting the currency code.
+**Step 2:** To change the default culture and the currency code, you can use the methods `setCulture` for setting the locale and `setCurrencyCode` for setting the currency code.
 
 To switch to the **French** culture and set the currency code as **EUR**, you can use the `setCulture` method and the `setCurrencyCode` method of the Grid on external button click. This is demonstrated below: 
 
@@ -380,18 +348,7 @@ To switch to the **French** culture and set the currency code as **EUR**, you ca
 
 The Internationalization library in the Syncfusion ##Platform_Name## Grid provides a localized display of number, date, and time values in the Grid control based on the preferred language and region.
 
-[Internationalization](../common/globalization/internationalization) library allows you to globalize number, date, and time values using format strings defined in the [columns.format](../api/grid/column/#format) property.
-
-To work with **JSON** files in your application, you can enable JSON module resolution in TypeScript by adding the **resolveJsonModule** to true to your tsconfig.json file. Additionally, you can enhance module interoperation by setting esModuleInterop to true as shown below:
-
-```ts
-{
-  compilerOptions: {
-    resolveJsonModule: true,
-    esModuleInterop: true,
-  }
-}
-```
+[Internationalization](../common/internationalization) library allows you to globalize number, date, and time values using format strings defined in the [columns.format](../api/grid/column/#format) property.
 
 You need to load the culture format files corresponding to the desired locale. This ensures that the Grid control uses the correct format strings for number, date, and time values based on the selected culture. This can be demonstrated in the below example,
 
@@ -422,7 +379,7 @@ You need to load the culture format files corresponding to the desired locale. T
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs78" %}
 {% endif %}
 
-> * In the above sample, **Freight** column is formatted using the [NumberFormatOptions](../common/globalization/internationalization#manipulating-numbers).
+> * In the above sample, **Freight** column is formatted using the [NumberFormatOptions](../common/internationalization#manipulating-numbers).
 > * By default, [locale](../api/grid/#locale) value is **en-US**. If you wish to change the culture to something other than **en-US**, you can simply set the `locale` property accordingly.
 
 ## Right to Left - RTL
@@ -431,18 +388,15 @@ The Right to Left (RTL) feature in the Syncfusion ##Platform_Name## Grid allows 
 
 To enable RTL in the Grid, you need to set the [enableRtl](../api/grid/#enablertl) property to **true**. By setting `enableRtl`, the grid control's text direction and layout will be adjusted to support right-to-left languages.
 
-To work with **JSON** files in your application, you can enable JSON module resolution in TypeScript by adding the **resolveJsonModule** to true to your tsconfig.json file. Additionally, you can enhance module interoperation by setting **esModuleInterop** to true as shown below:
-
-```ts
-{
-  compilerOptions: {
-    resolveJsonModule: true,
-    esModuleInterop: true,
-  }
-}
-```
-
+{% if page.publishingplatform == "typescript" %}
+ 
 In the following example, the [EJ2 Toggle Switch Button](../switch/getting-started) control is added to enable or diable the Right to Left (RTL) feature for the **Arabic (ar-AE)** locale. When the switch is toggled, the [change](../api/switch/#change) event is triggered and the `enableRtl` property of the grid is updated accordingly. 
+
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+In the following example, the [EJ2 Toggle Switch Button](../switch/es5-getting-started) control is added to enable or diable the Right to Left (RTL) feature for the **Arabic (ar-AE)** locale. When the switch is toggled, the [change](../api/switch/#change) event is triggered and the `enableRtl` property of the grid is updated accordingly. 
+
+{% endif %}
 
 {% if page.publishingplatform == "typescript" %}
 

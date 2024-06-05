@@ -17,9 +17,20 @@ To enable and integrate the foreign key column in the ##Platform_Name## Grid con
 
  1.Inject the ForeignKeyService in the Grid
 
+ {% if page.publishingplatform == "typescript" %}
+  
  ```typescript
- ej.grids.Grid.Inject(ej.grids.ForeignKey);
+ import { ForeignKey } from '@syncfusion/ej2-grids';
+
+ Grid.Inject(ForeignKey);
 ```
+
+{% elsif page.publishingplatform == "javascript" %}
+  
+```js
+ ej.grids.Grid.Inject(ej.grids.ForeignKey);
+```  
+ {% endif %}
 
 2.Define the foreign key column in the grid using the following properties:
 
@@ -110,7 +121,14 @@ This example demonstrates how to use the foreign key column with remote data bin
 
 The Syncfusion Grid provides support for using an edit template in a foreign key column. By default, a dropdown control is used for editing foreign key column. However, you can render a different control for editing by using the [column.edit](../../api/grid/column/#edit) property. Here's an example that demonstrates how to use an edit template in a foreign key column:
 
-In this example, an [AutoComplete](../../auto-complete/default) control is rendered as the edit template for the **"EmployeeID"** foreign key column. The [dataSource](../../api/auto-complete/#datasource) property of the `AutoComplete` control is set to the employees data, and the fields property is configured to display the **"FirstName"** field as the value.
+{% if page.publishingplatform == "typescript" %}
+ 
+In this example, an [AutoComplete](https://ej2.syncfusion.com/demos/#/bootstrap5/auto-complete/default.html) control is rendered as the edit template for the **"EmployeeID"** foreign key column. The [dataSource](../../api/auto-complete/#datasource) property of the `AutoComplete` control is set to the employees data, and the fields property is configured to display the **"FirstName"** field as the value.
+
+{% elsif page.publishingplatform == "javascript" %}
+ 
+In this example, an [AutoComplete](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/auto-complete/default.html) control is rendered as the edit template for the **"EmployeeID"** foreign key column. The [dataSource](../../api/auto-complete/#datasource) property of the `AutoComplete` control is set to the employees data, and the fields property is configured to display the **"FirstName"** field as the value.  
+{% endif %}
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -143,7 +161,15 @@ In this example, an [AutoComplete](../../auto-complete/default) control is rende
 
 The Syncfusion Grid allows you to customize the filtering user interface (UI) for foreign key columns by using the [column.filter](../../api/grid/column/#filter) property. By default, a dropdown control is used for filtering foreign key columns. However, you can create your own custom filtering UI by specifying a template function for the `column.filter` property. Here's an example that demonstrates how to create a custom filtering UI in a foreign key column:
 
-In this example, a [DropDownList](../../drop-down-list/default.html) control is rendered as the filter UI for the **"EmployeeID"** foreign key column. The [dataSource](../../api/drop-down-list#datasource) property of the DropDownList control is set to the employees data, and the fields property is configured to display the **FirstName** field as the [text](../../api/drop-down-list#text) and **EmployeeID** field as the [value](../../api/drop-down-list#value). The `value` property is set to the current filter value of the column.
+{% if page.publishingplatform == "typescript" %}
+ 
+In this example, a [DropDownList](https://ej2.syncfusion.com/demos/#/bootstrap5/drop-down-list/default.html) control is rendered as the filter UI for the **"EmployeeID"** foreign key column. The [dataSource](../../api/drop-down-list#datasource) property of the DropDownList control is set to the employees data, and the fields property is configured to display the **FirstName** field as the [text](../../api/drop-down-list#text) and **EmployeeID** field as the [value](../../api/drop-down-list#value). The `value` property is set to the current filter value of the column.
+
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+In this example, a [DropDownList](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/drop-down-list/default.html) control is rendered as the filter UI for the **"EmployeeID"** foreign key column. The [dataSource](../../api/drop-down-list#datasource) property of the DropDownList control is set to the employees data, and the fields property is configured to display the **FirstName** field as the [text](../../api/drop-down-list#text) and **EmployeeID** field as the [value](../../api/drop-down-list#value). The `value` property is set to the current filter value of the column.
+
+{% endif %}
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -207,13 +233,13 @@ In this example, the **"EmployeeID"** column is a foreign key column, and the **
 
 ## Perform aggregation in foreignkey column
 
-By default, aggregations are not supported in a foreign key column in the Syncfusion Grid. However, you can achieve aggregation for a foreign key column by using [customAggregate](../../api/grid/aggregateColumnDirective/#customaggregate).
+By default, aggregations are not supported in a foreign key column in the Syncfusion Grid. However, you can achieve aggregation for a foreign key column by using [customAggregate](../../api/grid/aggregateColumn/#customaggregate).
 
 To perform aggregation in a foreign key column, follow these steps:
 
 1.Define a foreign key column in the Grid.
 2.Implement a custom aggregate function to calculate the aggregation for the foreign key column.
-3.Set the [customAggregate](../../api/grid/aggregateColumnDirective/#customaggregate) property of the column to the custom aggregate function.
+3.Set the [customAggregate](../../api/grid/aggregateColumn/#customaggregate) property of the column to the custom aggregate function.
 
 Here's an example that demonstrates how to perform aggregation in a foreign key column:
 

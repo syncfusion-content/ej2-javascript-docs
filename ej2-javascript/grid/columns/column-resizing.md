@@ -44,7 +44,7 @@ To use the column resize, inject **Resize** module in the grid.
 {% previewsample "page.domainurl/code-snippet/grid/row-template-cs10" %}
 {% endif %}
 
->* You can disable Resizing for a particular column, by specifying [columns->allowResizing](../../api/grid/columnDirective/#allowresizing) to **false**.
+>* You can disable Resizing for a particular column, by specifying [columns->allowResizing](../../api/grid/column/#allowresizing) to **false**.
 >* In RTL mode, you can click and drag the left edge of header cell to resize the column.
 >* The `width` property of the column can be set initially to define the default width of the column. However, when column resizing is enabled, you can override the default width by manually resizing the columns.
 
@@ -52,7 +52,7 @@ To use the column resize, inject **Resize** module in the grid.
 
 The Grid control allows you to restrict the column width resizing between a minimum and maximum width. This can be useful when you want to ensure that your grid's columns stay within a certain range of sizes.
 
-To enable this feature, you can define the [columns->minWidth](../../api/grid/columnDirective/#minwidth) and [columns->maxWidth](../../api/grid/columnDirective/#maxwidth) properties of the columns directive for the respective column.
+To enable this feature, you can define the [columns->minWidth](../../api/grid/column/#minwidth) and [columns->maxWidth](../../api/grid/column/#maxwidth) properties of the columns directive for the respective column.
 
 In the below code, **OrderID**, **Ship Name** and **Ship Country** columns are defined with minimum and maximum width. The **OrderID** column is set to have a minimum width of 100 pixels and a maximum width of 200 pixels. Similarly, the **ShipName** column is set to have a minimum width of 150 pixels and a maximum width of 300 pixels. The **ShipCountry** column is set to have a minimum width of 120 pixels and a maximum width of 280 pixels.
 
@@ -83,7 +83,7 @@ In the below code, **OrderID**, **Ship Name** and **Ship Country** columns are d
 {% previewsample "page.domainurl/code-snippet/grid/row-template-cs11" %}
 {% endif %}
 
->* The [columns->minWidth](../../api/grid/columnDirective/#minwidth) and [columns->maxWidth](../../api/grid/columnDirective/#maxwidth) properties will be considered only when the user resizes the column. When resizing the window, these properties will not be considered. This is because columns cannot be re-rendered when resizing the window.
+>* The [columns->minWidth](../../api/grid/column/#minwidth) and [columns->maxWidth](../../api/grid/column/#maxwidth) properties will be considered only when the user resizes the column. When resizing the window, these properties will not be considered. This is because columns cannot be re-rendered when resizing the window.
 >* When setting the `minWidth` and `maxWidth` properties, ensure that the values are appropriate for your data and layout requirements.
 >* The specified `minWidth` and `maxWidth` values take precedence over any user-initiated resizing attempts that fall outside the defined range.
 
@@ -91,7 +91,7 @@ In the below code, **OrderID**, **Ship Name** and **Ship Country** columns are d
 
 The Grid control provides the ability to prevent resizing for a particular column. This can be useful if you want to maintain a consistent column width or prevent users from changing the width of a column.
 
-You can disable resizing for a particular column by setting the [allowResizing](../../api/grid/columnDirective/#allowresizing) property of the column to **false**. The following example demonstrates, how to disable resizing for the **Customer ID** column.
+You can disable resizing for a particular column by setting the [allowResizing](../../api/grid/column/#allowresizing) property of the column to **false**. The following example demonstrates, how to disable resizing for the **Customer ID** column.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -124,7 +124,7 @@ You can disable resizing for a particular column by setting the [allowResizing](
 
 ## Resize stacked header column
 
-Grid control allows to resize stacked columns by clicking and dragging the right edge of the stacked column header. During the resizing action, the width of the child columns is resized at the same time. You can disable resize for any particular stacked column by setting [allowResizing](../../api/grid/columnDirective/#allowresizing) as **false** to its columns.
+Grid control allows to resize stacked columns by clicking and dragging the right edge of the stacked column header. During the resizing action, the width of the child columns is resized at the same time. You can disable resize for any particular stacked column by setting [allowResizing](../../api/grid/column/#allowresizing) as **false** to its columns.
 
 In this below code, we have disabled resize for **Ship City** column.
 
@@ -163,7 +163,7 @@ The Syncfusion Grid control provides a [ResizeSettingsModel](../../api/grid/resi
 
 2. `Auto Mode`: This mode automatically resizes the columns to fill the remaining space. When the sum of column width is less than the grid's width, the columns will be automatically expanded to fill the empty space. Conversely, when the sum of column width is greater than the grid's width, the columns will be automatically contracted to fit within the available space.
 
-The following example demonstrates how to set the [resizeSettings->mode](/../../api/grid/resizeSettings/#mode) property to **Normal** and **Auto** on changing the dropdown value using the [change](../../api/drop-down-list/#change) event of the DropDownList control.
+The following example demonstrates how to set the [resizeSettings->mode](../../api/grid/resizeSettingsModel/#mode) property to **Normal** and **Auto** on changing the dropdown value using the [change](../../api/drop-down-list/#change) event of the DropDownList control.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -214,9 +214,9 @@ The following screenshot represents the column resizing on the touch device.
 
 ## Resizing column externally
 
-Grid provides the ability to resize columns using an external button click. This can be achieved by changing the [width](../../api/grid/columnDirective/#width) property of the column and refreshing the grid using the [refreshColumns](../../api/grid#refreshcolumns) method in the external button click function.
+Grid provides the ability to resize columns using an external button click. This can be achieved by changing the [width](../../api/grid/column/#width) property of the column and refreshing the grid using the [refreshColumns](../../api/grid#refreshcolumns) method in the external button click function.
 
-The following example demonstrates how to resize the columns in a grid. This is done by using the [change](../../api/drop-down-list/#change) event of the DropDownList control by changing the [width](../../api/grid/columnDirective/#width) property of the selected column. This is accomplished using the  [getColumnByField](../../api/grid/#getcolumnbyfield) on external button click. Then, the [refreshColumns](../..api/grid#refreshcolumns) method is called on the grid control to update the displayed columns based on user interaction.
+The following example demonstrates how to resize the columns in a grid. This is done by using the [change](../../api/drop-down-list/#change) event of the DropDownList control by changing the [width](../../api/grid/column/#width) property of the selected column. This is accomplished using the  [getColumnByField](../../api/grid/#getcolumnbyfield) on external button click. Then, the [refreshColumns](../..api/grid#refreshcolumns) method is called on the grid control to update the displayed columns based on user interaction.
 
 {% if page.publishingplatform == "typescript" %}
 

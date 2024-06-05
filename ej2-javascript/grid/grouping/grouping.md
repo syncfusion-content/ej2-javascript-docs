@@ -117,7 +117,15 @@ By default, the Grid provides a drop area for grouping columns. This drop area a
 
 To hide the drop area in the Syncfusion ##Platform_Name## Grid, you can set the [groupSettings->showDropArea](../../api/grid/groupSettings#showdroparea) property to **false**. 
 
+{% if page.publishingplatform == "typescript" %}
+ 
 In the following example, the [EJ2 Toggle Switch Button](../../switch/getting-started) control is added to hide or show the drop area. When the switch is toggled, the [change](../../api/switch/#change) event is triggered and the `groupSettings.showDropArea` property of the grid is updated accordingly. 
+
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-getting-started) control is added to hide or show the drop area. When the switch is toggled, the [change](../../api/switch/#change) event is triggered and the `groupSettings.showDropArea` property of the grid is updated accordingly. 
+
+{% endif %}
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -152,7 +160,15 @@ In the following example, the [EJ2 Toggle Switch Button](../../switch/getting-st
 
 The Syncfusion ##Platform_Name## Grid has a default behavior where the grouped column is hidden, to provide a cleaner and more focused view of your data. However, if you prefer to show the grouped column in the grid, you can achieve this by setting the [groupSettings->showGroupedColumn](../../api/grid/groupSettings/#showgroupedcolumn) property to **true**.
 
+{% if page.publishingplatform == "typescript" %}
+ 
 In the following example, the [EJ2 Toggle Switch Button](../../switch/getting-started) control is added to hide or show the grouped columns. When the switch is toggled, the [change](../../documentation/api/switch/#change) event is triggered and the `groupSettings.showGroupedColumn` property of the grid is updated accordingly.
+
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-getting-started) control is added to hide or show the grouped columns. When the switch is toggled, the [change](../../documentation/api/switch/#change) event is triggered and the `groupSettings.showGroupedColumn` property of the grid is updated accordingly.
+
+{% endif %}
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -368,13 +384,21 @@ The following example demonstrates how to collapse all grouped rows at the initi
         }
     }
 ```
-> The collapse all approach is suggested for a limited number of records since collapsing every grouped record takes some time. If you have a large dataset, it is recommended to use [lazy-load grouping](../../grid/grouping/lazy-load-grouping). This approach is also applicable for the [groupExpandAll](../../documentation/api/grid/#groupexpandall) method.
+> The collapse all approach is suggested for a limited number of records since collapsing every grouped record takes some time. If you have a large dataset, it is recommended to use [lazy-load grouping](../../grid/grouping/lazy-load-grouping). This approach is also applicable for the [groupExpandAll](../../api/grid/#groupexpandall) method.
 
 ## Group or ungroup column externally
 
 By default, the Syncfusion Grid supports interaction-oriented column grouping, where users manually group columns by dragging and dropping them into the grouping area of the grid. Grid provides an ability to group and ungroup a column using [groupColumn](../../api/grid/#groupcolumn) and [ungroupColumn](../../api/grid/#ungroupcolumn) methods. These methods provide a programmatic approach to perform column grouping and ungrouping.
 
+{% if page.publishingplatform == "typescript" %}
+ 
 The following example demonstrates how to group and upgroup the columns in a grid. It utilizes the [DropDownList](../../drop-down-list/getting-started) control to select the column. When an external button is clicked, the `groupColumn` and `ungroupColumn` methods are called to group or ungroup the selected column.
+
+{% elsif page.publishingplatform == "javascript" %}
+ 
+The following example demonstrates how to group and upgroup the columns in a grid. It utilizes the [DropDownList](../../drop-down-list/es5-getting-started) control to select the column. When an external button is clicked, the `groupColumn` and `ungroupColumn` methods are called to group or ungroup the selected column.
+
+{% endif %}
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -411,7 +435,15 @@ The Syncfusion ##Platform_Name## Grid offers a convenient feature to expand or c
 
 Grid provides an ability to expand or collapse grouped rows using [groupExpandAll](../../api/grid/#groupexpandall) and [groupCollapseAll](../../api/grid/#groupcollapseall) methods respectively.
 
+{% if page.publishingplatform == "typescript" %}
+ 
 In the following example, the [EJ2 Toggle Switch Button](../../switch/getting-started) control is added to expand or collapse grouped rows. When the switch is toggled, the [change](../../api/switch/#change) event is triggered and the `groupExpandAll` and `groupCollapseAll` methods are called to expand or collapse grouped rows.
+
+{% elsif page.publishingplatform == "javascript" %}
+ 
+In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-getting-started) control is added to expand or collapse grouped rows. When the switch is toggled, the [change](../../api/switch/#change) event is triggered and the `groupExpandAll` and `groupCollapseAll` methods are called to expand or collapse grouped rows.
+
+{% endif %}
 
 {% if page.publishingplatform == "typescript" %}
 

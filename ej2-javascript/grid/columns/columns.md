@@ -167,8 +167,8 @@ You can use the [columns->format](../../api/grid/column/#format) property to spe
 {% previewsample "page.domainurl/code-snippet/grid/column-formatting-cs1" %}
 {% endif %}
 
->* The grid uses the [Internalization](../../common/globalization/internationalization) library to format values based on the specified format and culture.
->* By default, the [number](../../common/globalization/internationalization#number-formatting) and [date](../../common/globalization/internationalization#date-formatting) values are formatted in **en-US** locale. You can localize the currency and date in different locale as explained [here](../../common/globalization/localization).
+>* The grid uses the [Internalization](../../common/internationalization) library to format values based on the specified format and culture.
+>* By default, the [number](../../common/internationalization#number-formatting) and [date](../../common/internationalization#date-formatting) values are formatted in **en-US** locale. You can localize the currency and date in different locale as explained [here](../../common/localization).
 >* The available format codes may vary depending on the data type of the column.
 >* You can also customize the formatting further by providing a custom function to the `format` property, instead of a format string.
 >* Make sure that the format string is valid and compatible with the data type of the column, to avoid unexpected results.
@@ -212,7 +212,7 @@ The following example code demonstrates the formatting of data for **Mark 1** an
 {% previewsample "page.domainurl/code-snippet/grid/column-numberformat-cs1" %}
 {% endif %}
 
->To learn more about number formatting, you can refer to the [number](../../common/globalization/internationalization#number-formatting) section.
+>To learn more about number formatting, you can refer to the [number](../../common/internationalization#number-formatting) section.
 
 ### Date formatting
 
@@ -255,7 +255,7 @@ Format | Formatted value
 {% previewsample "page.domainurl/code-snippet/grid/pagerdropdown-cs1" %}
 {% endif %}
 
->To learn more about date formatting, you can refer to [Date formatting](../../common/globalization/internationalization#date-formatting). 
+>To learn more about date formatting, you can refer to [Date formatting](../../common/internationalization#date-formatting). 
 
 ### Format the date column based on localization 
 
@@ -934,7 +934,7 @@ grid.refreshColumns();
 
 ## Responsive columns
 
-The Syncfusion ##Platform_Name## Grid provides a built-in feature to toggle the visibility of columns based on media queries using the [hideAtMedia](../..api/grid/column/#hideatmedia) property of the column object. The `hideAtMedia` accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html). 
+The Syncfusion ##Platform_Name## Grid provides a built-in feature to toggle the visibility of columns based on media queries using the [hideAtMedia](../../api/grid/column/#hideatmedia) property of the column object. The `hideAtMedia` accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html). 
 
 In this example, we have a Grid that displays data with three columns: **Order ID, Customer ID, and Freight**. We have set the `hideAtMedia` property of the **OrderID** column to (min-width: 700px) which means that this column will be hidden when the browser screen width is less than or equal to 700px.
 

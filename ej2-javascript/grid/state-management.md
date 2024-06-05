@@ -15,6 +15,8 @@ State management in the ##Platform_Name## Grid control allows you to maintain th
 
 To enable state persistence in the Grid, you can utilize the [enablePersistence](../api/grid/#enablepersistence) property. When this property is set to **true**, the grid will automatically save its state in the browser's [localStorage](https://www.w3schools.com/html/html5_webstorage.asp#), ensuring that the state is preserved across page reloads.
 
+{% if page.publishingplatform == "typescript" %}
+ 
 ```ts
 let grid: Grid = new Grid({
     dataSource: data,
@@ -22,6 +24,18 @@ let grid: Grid = new Grid({
 });     
 grid.appendTo('#Grid');
 ```
+
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+```js
+var grid = new ej.grids.Grid({
+    dataSource: data,
+    enablePersistence: true,
+});     
+grid.appendTo('#Grid');
+```
+
+{% endif %}
 
 > The grid will store the state using the combination of the control name and control ID in the storage. For example, if the control name is **grid** and the ID is **OrderDetails**, the state will be stored as **gridOrderDetails**.
 
@@ -216,12 +230,23 @@ If the [enablePersistence](../api/grid/#enablepersistence) property is set to **
 
 To retrieve the Grid model from Local Storage, follow these steps:
 
-```typescript
+{% if page.publishingplatform == "typescript" %}
+ 
+```ts
 //get the Grid model.
 let value: string = window.localStorage.getItem('gridOrders'); //"gridOrders" is control name + control id.
 let model: Object = JSON.parse(value);
 
 ```
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+```js
+//get the Grid model.
+var value = window.localStorage.getItem('gridOrders'); //"gridOrders" is control name + control id.
+var model = JSON.parse(value);
+
+```
+{% endif %}
 
 ```typescript
 //set the Grid model.

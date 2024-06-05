@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column Rendering
+# Column Rendering in ##Platform_Name## Grid control
 
 In Syncfusion ##Platform_Name## Grid, column rendering provides you with the ability to finely control how data is presented. This allows you to manually define columns, automatically generate them, and dynamically customize data presentation. With column rendering, you can ensure that your data is displayed exactly as needed, offering a wide range of possibilities for organizing and showcasing information within the grid.
 
@@ -125,12 +125,24 @@ Here is an example code snippet that shows how to set a primary key for an auto-
 
 If the column [field](../../api/grid/column/#field) name is known, the [getColumnByField](../../api/grid/#getcolumnbyfield) method can be used to retrieve the column object. Then, the `isPrimaryKey` property can be set to **true** for that column, as demonstrated in the code snippet below:
 
-```typescript
+{% if page.publishingplatform == "typescript" %}
+ 
+```ts
 grid.dataBound = () => {
     let column: ColumnModel = grid.getColumnByField('OrderID');
     column.isPrimaryKey = 'true';
 }
 ```
+
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+```js
+grid.dataBound = () => {
+    var column = grid.getColumnByField('OrderID');
+    column.isPrimaryKey = 'true';
+}
+```
+{% endif %}
 
 ### Set column options to auto generated columns
 

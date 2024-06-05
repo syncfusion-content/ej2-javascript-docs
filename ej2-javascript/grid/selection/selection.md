@@ -162,9 +162,9 @@ The following example demonstrates how to enable the toggle selection for both c
 
 The clear selection programmatically feature is particularly useful when you need to remove the selected rows or cells or columns from the Grid control.
 
-To clear the selection in the control programmatically, you can use the [clearSelection](../../api-grid.html#clearSelection)  method. 
+To clear the selection in the control programmatically, you can use the [clearSelection](../../api/grid/#clearselection)  method. 
 
-In the following example, it demonstrates how to clear all selection by calling the [clearSelection](../../api-grid.html#clearSelection) method in the button click event.
+In the following example, it demonstrates how to clear all selection by calling the [clearSelection](../../api/grid/#clearselection) method in the button click event.
 
 {% if page.publishingplatform == "typescript" %}
 

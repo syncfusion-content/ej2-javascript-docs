@@ -19,7 +19,15 @@ The Grid control allows you to customize the appearance and behavior of cells us
 
 Displaying HTML content in a Grid can be useful in scenarios where you want to display formatted content, such as images, links, or tables, in a tabular format. Grid control allows you to display HTML tags in the Grid header and content. By default, the HTML content is encoded to prevent potential security vulnerabilities. However, you can enable the [disableHtmlEncode](../api/grid/column/#disablehtmlencode) property by setting the value as false to display HTML tags without encoding. This feature is useful when you want to display HTML content in a grid cell.
 
+{% if page.publishingplatform == "typescript" %}
+ 
 In the following example, the [EJ2 Toggle Switch Button](../switch/getting-started) control is added  to enable and disable the [disableHtmlEncode](../api/grid/column/#disablehtmlencode) property. When the switch is toggled, the [change](../api/switch/#change) event is triggered and the `disableHtmlEncode` property of the column is updated accordingly. The [refreshColumns](../api/grid/#refreshcolumns) method is called to refresh the grid and display the updated content.
+
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+In the following example, the [EJ2 Toggle Switch Button](../switch/es5-getting-started) control is added  to enable and disable the [disableHtmlEncode](../api/grid/column/#disablehtmlencode) property. When the switch is toggled, the [change](../api/switch/#change) event is triggered and the `disableHtmlEncode` property of the column is updated accordingly. The [refreshColumns](../api/grid/#refreshcolumns) method is called to refresh the grid and display the updated content.
+
+{% endif %}
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -352,9 +360,14 @@ $(document).ready(function(){
 
 Step 2: The following code demonstrates how to render Bootstrap tooltip for the **CustomerID** field with `template` on grid cells.
 
-```typescript
+{% if page.publishingplatform == "typescript" %}
+ 
+```ts
+import { Grid, Page } from '@syncfusion/ej2-grids';
 
-var grid = new ej.grids.Grid({
+Grid.Inject(Page);
+
+let grid: Grid = new Grid({
   dataSource: data,
   allowPaging: true,
   columns: [
@@ -368,6 +381,26 @@ grid.appendTo('#Grid');
 
 ```
 
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+```js
+
+var grid = new ej.grids.Grid({
+  dataSource: data,
+  allowPaging: true,
+  columns: [
+      { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 90 },
+      { field: 'CustomerID', headerText: 'Customer ID', template: '#template', width: 120 },
+      { field: 'Freight', headerText: 'Freight', format: 'C2', textAlign: 'Right', width: 90 },
+      { field: 'OrderDate', headerText: 'Order Date', textAlign: 'Right', format: 'yMd', width: 120 }
+  ]
+});
+grid.appendTo('#Grid');
+
+``` 
+
+{% endif %}
+
 The following screenshot represents the Bootstrap tooltip for the **CustomerID** field,
 
 ![Bootstrap tooltip](./images/bootstrap-tooltip.gif)
@@ -376,21 +409,42 @@ The following screenshot represents the Bootstrap tooltip for the **CustomerID**
 
 ### Display custom tooltip for columns
 
+{% if page.publishingplatform == "typescript" %}
+ 
 The Grid provides a feature to display custom tooltips for its columns using the [EJ2 Tooltip](../tooltip/getting-started) control. This allows you to provide additional information about the columns when the user hovers over them.
+
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+The Grid provides a feature to display custom tooltips for its columns using the [EJ2 Tooltip](../tooltip/es5-getting-started) control. This allows you to provide additional information about the columns when the user hovers over them.
+
+{% endif %}
 
 To enable custom tooltips for columns in the Grid, you can render the Grid control inside the Tooltip control and set the target as `.e-rowcell`. This will display the tooltip when hovering over the grid cells.
 
 Change the tooltip content for the grid cells by using the following code in the [beforeRender](../api/tooltip/#beforerender) event.
 
-```typescript
+{% if page.publishingplatform == "typescript" %}
+
+```ts
+function beforeRender(args: TooltipEventArgs) {
+    if (args.target.classList.contains('e-rowcell')) {
+        tooltip.content = 'The value is "' + args.target.innerText + '" ';
+    }
+}
+```
+
+{% elsif page.publishingplatform == "javascript" %}
+
+```js
   function beforeRender(args) {
     if (args.target.classList.contains('e-rowcell')) {
       // event triggered before render the tooltip on target element.
       tooltip.content = 'The value is "' + args.target.innerText + '" ';
     }
-  }
-
+}
 ```
+
+{% endif %}
 
 The following example demonstrates how to customize the tooltip content for the grid cells by using the [beforeRender](../api/tooltip/#beforerender) event of the EJ2 Tooltip control.
 

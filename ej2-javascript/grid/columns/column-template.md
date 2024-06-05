@@ -90,9 +90,15 @@ The following example demonstrates, how to render hyperlink column in the Grid u
 The column template has options to render a custom control in a grid column instead of a field value.
 
 ### Render LineChart control in a column
+{% if page.publishingplatform == "typescript" %}
 
-The [LineChart](../../sparkline/getting-started) control of Syncfusion provides an elegant way to represent and compare data over time. It displays data points connected by straight line segments to visualize trends in data.
+The [LineChart](../../sparkline/getting-started) control of Syncfusion provides an elegant way to represent and compare data over time. It displays data points connected by straight line segments to visualize trends in data. 
+ 
+{% elsif page.publishingplatform == "javascript" %}
+ 
+The [LineChart](../../sparkline/es5-getting-started) control of Syncfusion provides an elegant way to represent and compare data over time. It displays data points connected by straight line segments to visualize trends in data.
 
+{% endif %}
 In the following example, we have rendered the Sparkline Chart control in the Grid column by defining the [template](../../api/grid/column/#template) property.
 
 {% if page.publishingplatform == "typescript" %}
@@ -124,10 +130,19 @@ In the following example, we have rendered the Sparkline Chart control in the Gr
 
 ### Render ColorPicker control in a column
 
-The [ColorPicker](../../color-picker/getting-started) control of Syncfusion provides a user-friendly way to select colors from a pre-defined color palette or custom colors. It can be used in a variety of scenarios such as picking a theme color or changing the color of an element on a page.
-
+{% if page.publishingplatform == "typescript" %}
+ 
+The [ColorPicker](../../color-picker/getting-started) control of Syncfusion provides a user-friendly way to select colors from a pre-defined color palette or custom colors. It can be used in a variety of scenarios such as picking a theme color or changing the color of an element on a page.  
+ 
+{% elsif page.publishingplatform == "javascript" %}
+ 
+The [ColorPicker](../../color-picker/es5-getting-started) control of Syncfusion provides a user-friendly way to select colors from a pre-defined color palette or custom colors. It can be used in a variety of scenarios such as picking a theme color or changing the color of an element on a page.  
+ 
+{% endif %}
 In the following code, we rendered the ColorPicker control in the Grid column by defining the [template](../../api/grid/column/#template) property.
 
+{% if page.publishingplatform == "typescript" %}
+ 
 ```ts
 function colorPicker(args: QueryCellInfoEventArgs) {
   let inputElement: HTMLSelectElement  = args.cell.querySelector('input')
@@ -139,6 +154,20 @@ function colorPicker(args: QueryCellInfoEventArgs) {
     colorPickerObject.appendTo(inputElement);
 }
 ```
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+```js
+function colorPicker(args) {
+  var inputElement = args.cell.querySelector('input')
+    var colorPickerObject = new ej.inputs.ColorPicker({
+      type: 'color',
+      mode: 'Palette',
+      change: change,
+    });
+    colorPickerObject.appendTo(inputElement);
+  }
+``` 
+{% endif %}
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -169,16 +198,37 @@ function colorPicker(args: QueryCellInfoEventArgs) {
 
 ### Render DropDownList control in a column
 
+{% if page.publishingplatform == "typescript" %}
+
 To render a custom control in a grid column, you need to define a [template](../../api/grid/column/#template) for the column using the `template` property. In the following code, we rendered the [DropDownList](../../drop-down-list/getting-started) control in the **Order Status** column by defining the `template` property.
 
+{% elsif page.publishingplatform == "javascript" %}
+ 
+To render a custom control in a grid column, you need to define a [template](../../api/grid/column/#template) for the column using the `template` property. In the following code, we rendered the [DropDownList](../../drop-down-list/es5-getting-started) control in the **Order Status** column by defining the `template` property.
+
+{% endif %}
+
+{% if page.publishingplatform == "typescript" %}
+ 
 ```ts
-    function dropdown(args: QueryCellInfoEventArgs) {
-        let element=args.cell.querySelector('select');
-        let dropdownObject = new DropDownList({popupHeight: 150, popupWidth: 150});
-        dropdownObject.appendTo(element);
-    }
+function dropdown(args: QueryCellInfoEventArgs) {
+    let element=args.cell.querySelector('select');
+    let dropdownObject = new DropDownList({popupHeight: 150, popupWidth: 150});
+    dropdownObject.appendTo(element);
+}
 
 ```
+{% elsif page.publishingplatform == "javascript" %}
+ 
+```js
+function dropdown(args) {
+    var element = args.cell.querySelector('select');
+    var dropdownObject = new ej.dropdowns.DropDownList({ popupHeight: 150, popupWidth: 150 });
+    dropdownObject.appendTo(element);
+}
+
+```
+{% endif %}
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -213,6 +263,8 @@ The Grid control provides support for rendering [Chips](../../chips/getting-star
 
 In the following code, we rendered the Chips control in the Grid **First Name** column by defining the [template](../../api/grid/column/#template) property.
 
+{% if page.publishingplatform == "typescript" %}
+ 
 ```ts
   function queryCellInfo(args: QueryCellInfoEventArgs ) {
       if (args.column.field === 'FirstName') {
@@ -223,6 +275,19 @@ In the following code, we rendered the Chips control in the Grid **First Name** 
     }
   }
 ```
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+```js
+function queryCellInfo(args) {
+  if (args.column.field === 'FirstName') {
+    var chip = new ej.buttons.ChipList({
+      text: args.data[args.column.field],
+    });
+    chip.appendTo(args.cell.querySelector('#chipElement'));
+  }
+}
+``` 
+{% endif %}
 
 {% if page.publishingplatform == "typescript" %}
 

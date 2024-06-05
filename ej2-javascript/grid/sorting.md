@@ -248,6 +248,8 @@ The following example demonstrates how to perform sorting by enabling a foreign 
 
 In the case of remote data in the grid, the sorting operation will be performed based on the [foreignKeyField](../api/grid/column/#foreignkeyfield) property of the column. The `foreignKeyField` property should be defined in the column definition with the corresponding foreign key field name for each row. The grid will send a request to the server-side with the `foreignKeyField` name, and the server-side should handle the sorting operation and return the sorted data to the grid.
 
+{% if page.publishingplatform == "typescript" %}
+ 
 ```ts
 import { Grid, ForeignKey, Sort } from '@syncfusion/ej2-grids';
 import { DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
@@ -276,6 +278,34 @@ let grid: Grid = new Grid(
 grid.appendTo('#Grid');
 
 ```
+
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+```js
+ej.grids.Grid.Inject(ej.grids.ForeignKey);
+
+var dataSource = new ej.data.DataManager({
+    json: '/OData/Items',
+    adaptor: new ej.data.ODataV4Adaptor
+});
+var employeeData = new ej.data.DataManager({
+    url: '/OData/Brands',
+    adaptor: new ej.data.ODataV4Adaptor
+});
+var grid = new ej.grids.Grid({
+        dataSource: data,
+        columns: [
+            { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100 },
+            { field: 'EmployeeID', headerText: 'Employee Name', width: 150, foreignKeyValue: 'FirstName', dataSource: employeeData },
+            { field: 'Freight', headerText: 'Freight', width: 100, textAlign: 'Right'},
+            { field: 'ShipName', headerText: 'Ship Name', width: 180 }
+        ],
+        height: 315
+    });
+grid.appendTo('#Grid');
+
+```
+{% endif %}
 
 The following code example describes the handling of sorting operation at the server side.
 

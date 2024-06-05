@@ -4,9 +4,10 @@ var grid = new ej.grids.Grid({
     toolbar: ['Add', 'Edit', 'Delete'],
     editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Dialog', template: '#dialogtemplate' },
     columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100, isPrimaryKey: true, validationRules: { required: true } },
+        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, isPrimaryKey: true, validationRules: { required: true } },
         { field: 'CustomerID', headerText: 'Customer ID', width: 120, validationRules: { required: true } },
-        { field: 'ShipCountry', headerText: 'Ship Country', width: 150 }
+        { field: 'ShipCountry', headerText: 'Ship Country', width: 150 },
+        { field: 'Verified', headerText: 'Verified', width: '100', type: 'boolean', displayAsCheckBox: true }
     ],
     height: 265,
     actionComplete: (args) => {

@@ -92,7 +92,15 @@ To enable cache mode, you need to define [enableCache](../../api/grid/infiniteSc
 
 To enable maximum blocks, you need to define `maxBlocks` count of [infiniteScrollSettings](../../api/grid/infiniteScrollSettings), By default this property value is 3.
 
+{% if page.publishingplatform == "typescript" %}
+ 
 The following example that demonstrates how to enable/disable cache mode in infinite scrolling of the grid based on a [Switch](../../switch/getting-started) control [change](../../api/switch#change) event :
+
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+The following example that demonstrates how to enable/disable cache mode in infinite scrolling of the grid based on a [Switch](../../switch/es5-getting-started) control [change](../../api/switch#change) event :
+
+{% endif %}
 
 {% if page.publishingplatform == "typescript" %}
 

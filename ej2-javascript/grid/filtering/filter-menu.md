@@ -244,7 +244,15 @@ In the example provided below, the **OrderID** and **Freight** columns are numer
 
 ### Prevent autofill option in autocomplete of menu filter
 
+{% if page.publishingplatform == "typescript" %}
+ 
 By default, the [AutoComplete](../../auto-complete/getting-started) control in the filter menu dialog is set to automatically fill suggestions as you type. However, there might be scenarios where you want to prevent this autofill behavior to provide a more customized and controlled user experience.
+
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+By default, the [AutoComplete](../../auto-complete/es5-getting-started) control in the filter menu dialog is set to automatically fill suggestions as you type. However, there might be scenarios where you want to prevent this autofill behavior to provide a more customized and controlled user experience.
+
+{% endif %}
 
 You can prevent autofill feature by setting the [autofill](../../api/auto-complete#autofill) parameter to **false** using the `params` property within the column definition of the [filter](../../api/grid/column/#filter). 
 
@@ -318,6 +326,8 @@ When using the filter menu, the UI displays operators for all columns based on t
 
 **Explicitly Define Data Type:** When defining columns in your ##Platform_Name## Grid control, make sure to explicitly specify the data type for each column. You can do this using the type property within the columns configuration. For example:
 
+{% if page.publishingplatform == "typescript" %}
+ 
 ```ts
 let grid: Grid = new Grid({
     dataSource: data,
@@ -329,6 +339,22 @@ let grid: Grid = new Grid({
 });     
 grid.appendTo('#Grid');
 ```
+
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+```js
+var grid = new ej.grids.Grid({
+    dataSource: data,
+    columns: [
+        { field: 'OrderID', headerText: 'Order ID', type: 'number', width: 120 },
+        { field: 'CustomerName', headerText: 'CustomerName', type: 'string', width: 150 },
+                    <!-- Define data types for other columns as needed -->
+    ],
+});     
+grid.appendTo('#Grid');
+```
+
+{% endif %}
 
 **Handle Null or Empty Data:** If your data source contains null or empty values, make sure that these values are appropriately handled within your data source or by preprocessing your data to ensure consistency.
 

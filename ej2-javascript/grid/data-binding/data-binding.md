@@ -62,7 +62,7 @@ The following example demonstrates how to set the `loadingIndicator.indicatorTyp
 
 Refreshing the data source in a Syncfusion Grid involves updating the data that the grid displays dynamically. This operation is essential when you need to reflect changes in the underlying data without reloading the entire page or control.
 
-To achieve this, you can make use of the [datasource](../../api/grid/#datasource) property in conjunction with the [setProperties](../../api/grid/#refresh) method. This ensures that the grid reflects the changes in the data source without requiring a complete page or control reload.
+To achieve this, you can make use of the [datasource](../../api/grid/#datasource) property in conjunction with the `setProperties` method. This ensures that the grid reflects the changes in the data source without requiring a complete page or control reload.
 
 For example, if you add or delete data source records, follow these steps:
 
@@ -75,10 +75,22 @@ grid.dataSource.splice(selectedRow, 1); // Delete a record.
 
 **Step 2**:  Refresh the datasource after changes by invoking the `setProperties` method.
 
-```typescript
+{% if page.publishingplatform == "typescript" %}
+ 
+```ts
 (grid as Grid).setProperties({ dataSource:  (grid as Grid).dataSource as object[] });
 
 ```
+
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+```js
+grid.setProperties({dataSource: grid.dataSource});
+
+```
+
+{% endif %}
+
 The following example demonstrates adding a new record to the data source through an external button:
 
 {% if page.publishingplatform == "typescript" %}
@@ -221,8 +233,15 @@ The following code demonstrates, how to use the `changeDataSource` method to bin
 {% previewsample "page.domainurl/code-snippet/grid/data-binding-cs3" %}
 {% endif %}
 
->* The Grid state persistence feature does not support the  `changeDataSource` method.
->* In this document, the above sample uses the local data for `changeDataSource` method. For those using a remote data source, refer to the [FlexibleData](https://ej2.syncfusion.com/demos/#/bootstrap5/grid/flexible-data.html) resource.
+{% if page.publishingplatform == "typescript" %}
+>* The Grid state persistence feature does not support the  `changeDataSource` method. 
+>* In this document, the above sample uses the local data for `changeDataSource` method. For those using a remote data source, refer to the [FlexibleData](https://ej2.syncfusion.com/demos/#/bootstrap5/grid/flexible-data.html) resource. 
+ 
+{% elsif page.publishingplatform == "javascript" %}
+ >* The Grid state persistence feature does not support the  `changeDataSource` method.
+>* In this document, the above sample uses the local data for `changeDataSource` method. For those using a remote data source, refer to the [FlexibleData](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/grid/flexible-data.html) resource. 
+ 
+{% endif %}
 
 ## See Also
 

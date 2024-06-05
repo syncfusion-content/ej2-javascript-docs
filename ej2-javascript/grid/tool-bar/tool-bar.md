@@ -50,7 +50,15 @@ Enabling or disabling toolbar items dynamically in Syncfusion ##Platform_Name## 
 
 You can enable or disable toolbar items dynamically by using the [enableToolbarItems](../../api/grid/#enabletoolbaritems) method. This method allows you to control the availability of specific toolbar items based on your application logic.
 
+{% if page.publishingplatform == "typescript" %}
+ 
 In the following example, the [EJ2 Toggle Switch Button control](../../switch/getting-started) is added to enable and disable the toolbar items using `enableToolbarItems` method. When the switch is toggled, the [change](../../api/switch/#change) event is triggered and the toolbar items are updated accordingly.
+
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+In the following example, the [EJ2 Toggle Switch Button control](../../switch/es5-getting-started) is added to enable and disable the toolbar items using `enableToolbarItems` method. When the switch is toggled, the [change](../../api/switch/#change) event is triggered and the toolbar items are updated accordingly.
+
+{% endif %}
 
 {% if page.publishingplatform == "typescript" %}
 

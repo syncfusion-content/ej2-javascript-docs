@@ -50,7 +50,7 @@ Here's an example that demonstrates how to use group footer aggregates in the Sy
 {% endif %}
 
 > * Use the template reference variable name as **groupFooterTemplate** to specify the group footer template and as **groupCaptionTemplate** to specify the group caption template.
-> * The aggregate values must be accessed inside the template using their corresponding [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn/#type) name.
+> * The aggregate values must be accessed inside the template using their corresponding [type](../../api/grid/aggregateColumn/#type) name.
 
 ## Group caption aggregates
 

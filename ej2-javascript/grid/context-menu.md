@@ -91,15 +91,11 @@ The following example demonstrates how to enable context menu feature in the gri
 ## Custom context menu items
 
 The Syncfusion ##Platform_Name## Grid empowers you to enhance your user experience by incorporating custom context menu items into the default context menu. These customized options enable you to tailor the context menu to meet the unique requirements of your application.
-
-By adding custom context menu items, you can introduce additional actions or operations that are directly relevant to your specific use case. This flexibility allows you to create a highly personalized and efficient interaction with your grid, making it a powerful tool for data management and manipulation.
-
-To add custom context menu items by defining the [contextMenuItems](../api/grid/#contextmenuitems) property as a collection of [contextMenuItemModel](../api/grid/contextMenuItemModel). You can also define actions for these customized items using the [contextMenuClick](../api/grid/#contextmenuclick) event.
-
-To incorporate custom context menu items in the Syncfusion ##Platform_Name## Grid, you can achieve this by specifying the `contextMenuItems` property as a collection of `contextMenuItemModel`. This allows you to define and customize the appearance and behavior of these additional context menu items according to your requirements.
-
-Furthermore, you can assign actions to these custom items by utilizing the `contextMenuClick` event. This event provides you with the means to handle user interactions with the custom context menu items, enabling you to execute specific actions or operations when these items are clicked. 
-
+ 
+To incorporate custom context menu items in the Syncfusion Vue Grid, you can achieve this by specifying the [contextMenuItems](../api/grid/#contextmenuitems) property as a collection of [contextMenuItemModel](../api/grid/contextMenuItemModel). This allows you to define and customize the appearance and behavior of these additional context menu items according to your requirements.
+ 
+Furthermore, you can assign actions to these custom items by utilizing the [contextMenuClick](../api/grid/#contextmenuclick) event. This event provides you with the means to handle user interactions with the custom context menu items, enabling you to execute specific actions or operations when these items are clicked.
+ 
 The following example demonstrates how to add custom context menu items in the Grid control.
 
 {% if page.publishingplatform == "typescript" %}
@@ -176,7 +172,15 @@ By enabling or disabling context menu items, you can ensure that certain options
 
 This can be achieved using the [enableItems](../api/context-menu/#enableitems) method of the context menu. By setting the enable parameter in the enableItems method to **true**, you can enable context menu items, and by setting it to **false**, you can disable them. Based on your specific condition or requirements, you can enable or disable the context menu item using the `enableItems` method.
 
+{% if page.publishingplatform == "typescript" %}
+ 
 In the following example, the [EJ2 Toggle Switch Button](../switch/getting-started) control is added to enable and disable the context menu items using `enableItems` method. When the switch is toggled, the [change](../api/switch/#change) event is triggered, and the **Copy** items is updated accordingly. 
+
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+In the following example, the [EJ2 Toggle Switch Button](../switch/es5-getting-started) control is added to enable and disable the context menu items using `enableItems` method. When the switch is toggled, the [change](../api/switch/#change) event is triggered, and the **Copy** items is updated accordingly. 
+
+{% endif %}
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -211,7 +215,15 @@ The Syncfusion ##Platform_Name## Grid provides the flexibility to show or hide b
 
 This can be achieved using the [showItems](../api/context-menu/#showitems) and [hideItems](../api/context-menu/#hideitems) methods of the context menu by specifying the item you want to show or hide as an argument. 
 
+{% if page.publishingplatform == "typescript" %}
+ 
 In the following example, the [EJ2 Toggle Switch Button](../switch/getting-started) control is added to show or hide the context menu items using `showItems` and `hideItems` methods. When the switch is toggled, the [change](../api/switch/#change) event is triggered, and the **Copy** items is updated accordingly. 
+
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+In the following example, the [EJ2 Toggle Switch Button](../switch/es5-getting-started) control is added to show or hide the context menu items using `showItems` and `hideItems` methods. When the switch is toggled, the [change](../api/switch/#change) event is triggered, and the **Copy** items is updated accordingly. 
+
+{% endif %}
 
 {% if page.publishingplatform == "typescript" %}
 

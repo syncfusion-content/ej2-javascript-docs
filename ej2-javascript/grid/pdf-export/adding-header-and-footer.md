@@ -29,7 +29,9 @@ To add text in the header or footer of the exported PDF document, follow these s
 
 The following code example demostrates how to add the header in the exported PDF document. 
 
-```typescript
+{% if page.publishingplatform == "typescript" %}
+ 
+```ts
 
 let exportProperties: PdfExportProperties = {
     header: {
@@ -48,6 +50,28 @@ let exportProperties: PdfExportProperties = {
 
 ```
 
+ {% elsif page.publishingplatform == "javascript" %}
+
+ ```js
+
+var exportProperties = {
+    header: {
+        fromTop: 0,
+        height: 130,
+        contents: [
+            {
+              type: 'Text',
+              value: 'Exported Document Of Customers',
+              position: { x:200, y: 50 },
+              style: { textBrushColor: '#000000', fontSize: 20 },
+            },
+        ]
+    }
+}
+
+```
+{% endif %}
+
 ## Draw a line in header and footer
 
 When exporting data from the Syncfusion ##Platform_Name## Grid to a PDF document, you have an option to add a line in the header and footer section. This feature allows you to enhance the visual appearance of the exported PDF document and create a clear separation between the header and the content.
@@ -64,6 +88,8 @@ To add a line in the header or footer of the exported PDF document, you can acce
 
 The following code example demostrates how to draw a line in the header of the exported PDF document. 
 
+{% if page.publishingplatform == "typescript" %}
+ 
 ```typescript
 
 let exportProperties: PdfExportProperties = {
@@ -93,6 +119,39 @@ let exportProperties: PdfExportProperties = {
 
 ```
 
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+```js
+
+var exportProperties = {
+    header: {
+        fromTop: 0,
+        height: 130,
+        contents: [
+            {
+                type: 'Line',
+                style: { penColor: '#000080', penSize: 2, dashStyle: 'Solid' },
+                points: { x1: 0, y1: 4, x2: 685, y2: 4 },
+            }
+        ]
+    }
+    footer: {
+        fromBottom: 10,
+        height: 60,
+        contents: [
+            {
+                type: 'Line',
+                style: { penColor: '#000080', penSize: 2, dashStyle: 'Dot' },
+                points: { x1: 0, y1: 4, x2: 685, y2: 4 },
+            },
+        ],
+    },
+}
+
+```
+
+{% endif %}
+
 ## Add page number in header and footer
 
 When exporting data from the Syncfusion ##Platform_Name## Grid to a PDF document, you have an option to include page numbers in the header and footer section. This feature allows you to provide a reference to the page number for better document navigation.
@@ -110,6 +169,8 @@ To add a page number in the header or footer of the exported PDF document, you c
 
 The following code example demostrates how to add a page number in the footer of the exported PDF document.
 
+{% if page.publishingplatform == "typescript" %}
+ 
 ```typescript
 
  let exportProperties: PdfExportProperties = {
@@ -130,6 +191,30 @@ The following code example demostrates how to add a page number in the footer of
 
 ```
 
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+```js
+
+ var exportProperties = {
+    footer: {
+        fromBottom: 10,
+        height: 60,
+        contents: [
+            {
+                type: 'PageNumber',
+                pageNumberType: 'Arabic',
+                format: 'Page {$current} of {$total}', //optional
+                position: { x: 0, y: 25 },
+                style: { textBrushColor: '#4169e1', fontSize: 15, hAlign: 'Center' }
+            }
+        ]
+    }
+}
+
+```
+
+{% endif %}
+
 ## Insert an image in header and footer
 
 The Syncfusion ##Platform_Name## Grid have an option to include an image in the header and footer section when exporting data from the Grid to PDF document. This feature allows you to add a custom logo, branding, or any other relevant image to the exported document.
@@ -146,6 +231,8 @@ To insert an image in the header or footer of the exported PDF document, follow 
 
 4. Trigger the PDF export operation.
 
+{% if page.publishingplatform == "typescript" %}
+ 
 ```typescript
 let exportProperties: PdfExportProperties = {
     header: {
@@ -163,6 +250,28 @@ let exportProperties: PdfExportProperties = {
 }
 
 ```
+
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+```js
+var exportProperties = {
+    header: {
+        fromTop: 0,
+        height: 130,
+        contents: [
+            {
+              type: 'Image',
+              src: image,
+              position: { x: 40, y: 10 },
+              size: { height: 100, width: 150 },
+            },
+        ]
+    }
+}
+
+```
+
+{% endif %}
 
 The following example demonstrates how to add a header and footer to the exported grid. In the given example, we added lines in the header and footer, inserted an image in the header, and also added page number in the footer.
 

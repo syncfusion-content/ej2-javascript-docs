@@ -1,5 +1,3 @@
-
-
 import { Grid, Edit, Toolbar, DialogEditEventArgs } from '@syncfusion/ej2-grids';
 import { data } from './datasource.ts';
 import { DropDownList } from '@syncfusion/ej2-dropdowns';
@@ -16,9 +14,10 @@ let grid: Grid = new Grid({
     toolbar: ['Add', 'Edit', 'Delete'],
     editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Dialog', template: '#dialogtemplate' },
     columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100, isPrimaryKey: true, validationRules: { required: true } },
+        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, isPrimaryKey: true, validationRules: { required: true } },
         { field: 'CustomerID', headerText: 'Customer ID', width: 120, validationRules: { required: true } },
-        { field: 'ShipCountry', headerText: 'Ship Country', width: 150 }
+        { field: 'ShipCountry', headerText: 'Ship Country', width: 150 },
+        { field: 'Verified', headerText: 'Verified', width: '100', type: 'boolean', displayAsCheckBox: true }
     ],
     height: 265,
     actionComplete: (args: DialogEditEventArgs) => {
@@ -75,6 +74,3 @@ let grid: Grid = new Grid({
     }
 });
 grid.appendTo('#Grid');
-
-
-

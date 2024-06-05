@@ -1,8 +1,5 @@
-
-
 import { Grid, Edit, Toolbar, DialogEditEventArgs } from '@syncfusion/ej2-grids';
 import { data } from './datasource.ts';
-import { DataUtil } from '@syncfusion/ej2-data';
 import { DataUtil } from '@syncfusion/ej2-data';
 import { DropDownList } from '@syncfusion/ej2-dropdowns';
 import { CheckBox } from '@syncfusion/ej2-buttons';

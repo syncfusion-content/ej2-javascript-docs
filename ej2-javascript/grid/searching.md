@@ -115,7 +115,15 @@ notequal |Checks whether a value not equal to the specified value.
 
 These operators provide flexibility in defining the search behavior and allow you to perform different types of comparisons based on your requirements.
 
+{% if page.publishingplatform == "typescript" %}
+ 
 The following example demonstrates how to set the `searchSettings->operator` property based on changing the dropdown value using the [change](../api/drop-down-list/#change) event of the [DropDownList](../drop-down-list/getting-started) control.
+
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+The following example demonstrates how to set the `searchSettings->operator` property based on changing the dropdown value using the [change](../api/drop-down-list/#change) event of the [DropDownList](../drop-down-list/es5-getting-started) control.
+
+{% endif %}
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -326,7 +334,15 @@ On the other hand, the [actionComplete](../api/grid/#actioncomplete) event is us
 
 By default, the searching operation in the Grid control does not ignore diacritic characters or accents. However, there are cases where ignoring diacritic characters becomes necessary. This feature enhances the search experience by enabling data searching without considering accents, ensuring a more comprehensive and accurate search  and it can be achieved by utilizing the [searchSettings->ignoreAccent](../api/grid/searchSettings/#ignoreaccent) property of the Grid control as **true**.
 
+{% if page.publishingplatform == "typescript" %}
+ 
 The following example demonstrates how to define the `ignoreAccent` property within the [searchSettings](../api/grid/#searchsettings) property of the grid. Additionally, the [EJ2 Toggle Switch Button](../switch/getting-started) control is included to modify the value of the `searchSettings->ignoreAccent` property. When the switch is toggled, the [change](../api/switch/#change) event is triggered, and the `searchSettings->ignoreAccent` property is updated accordingly. This functionality helps to visualize the impact of the `searchSettings->ignoreAccent` setting when performing search operations.
+
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+The following example demonstrates how to define the `ignoreAccent` property within the [searchSettings](../api/grid/#searchsettings) property of the grid. Additionally, the [EJ2 Toggle Switch Button](../switch/es5-getting-started) control is included to modify the value of the `searchSettings->ignoreAccent` property. When the switch is toggled, the [change](../api/switch/#change) event is triggered, and the `searchSettings->ignoreAccent` property is updated accordingly. This functionality helps to visualize the impact of the `searchSettings->ignoreAccent` setting when performing search operations.
+
+{% endif %}
 
 {% if page.publishingplatform == "typescript" %}
 

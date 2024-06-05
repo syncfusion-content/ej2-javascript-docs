@@ -493,7 +493,7 @@ Here's an example of how to use the `beforeRender` event to add a custom tooltip
 {% previewsample "page.domainurl/code-snippet/grid/column-header-tooltip" %}
 {% endif %}
 
-> * The [headerCellInfo](../../api/grid/#querycellinfo) event can also be used to customize the header tooltip. This event is triggered for each header cell after it is rendered.
+> * The [headerCellInfo](../../api/grid/#headercellinfo) event can also be used to customize the header tooltip. This event is triggered for each header cell after it is rendered.
 
 ## Customize header text styles 
 
@@ -635,7 +635,7 @@ Here's an example of how to use these methods to change the style of a specific 
 
 ### Using event
 
-To customize the appearance of the grid header, you can handle the [headerCellInfo](../../api/grid/#querycellinfo) event of the grid. This event is triggered when each header cell is rendered in the grid, and provides an object that contains information about the header cell. You can use this object to modify the styles of the header column.
+To customize the appearance of the grid header, you can handle the [headerCellInfo](../../api/grid/#headercellinfo) event of the grid. This event is triggered when each header cell is rendered in the grid, and provides an object that contains information about the header cell. You can use this object to modify the styles of the header column.
 
 The following example demonstrates how to add a `headerCellInfo` event handler to the grid. In the event handler, checked whether the current header column is **Order Date** field and then applied the appropriate CSS class to the cell based on its value.
 

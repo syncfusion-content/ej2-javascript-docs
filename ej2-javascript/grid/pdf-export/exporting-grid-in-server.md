@@ -62,7 +62,8 @@ public IActionResult UrlDatasource([FromBody]DataManagerRequest dm)
 }
 
 ```
-
+{% if page.publishingplatform == "typescript" %}
+ 
 ```ts
 import { Grid, Toolbar } from '@syncfusion/ej2-grids';
 import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
@@ -94,6 +95,38 @@ grid.toolbarClick = (args: ClickEventArgs) => {
 }
 
 ```
+
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+```js
+ej.grids.Grid.Inject(ej.grids.Toolbar);
+
+var data = new ej.data.DataManager({
+    url: "Home/DataSource",
+    adaptor: new ej.data.UrlAdaptor
+});
+
+var grid = new ej.grids.Grid({
+    dataSource: data,
+    toolbar: ['PdfExport'],
+    columns: [
+        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
+        { field: 'CustomerID', headerText: 'Customer ID', width: 150 },
+        { field: 'ShipCity', headerText: 'Ship City', width: 150 },
+        { field: 'ShipName', headerText: 'Ship Name', width: 150 }
+    ],
+    height: 273
+});
+grid.appendTo('#Grid');
+
+grid.toolbarClick = (args) => {
+    if (args['item'].id === 'Grid_pdfexport') {  // 'Grid_pdfexport' -> Grid control id + _ + toolbar item name
+        grid.serverPdfExport("Home/PdfExport");
+    }
+}
+
+```
+{% endif %}
 
 >Note: Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/TypeScript-EJ2-Grid-server-side-exporting).
 

@@ -64,10 +64,10 @@ sfdx org:login:web -d
 Open the `sfdx-project.json` file located in `salesforceApp/scheduler-salesforce-app` and update the `sfdcLoginUrl` with the domain URL of your Salesforce account as shown in image (fig 2). You can obtain the domain URL from the `My Domain` setup tab in Salesforce as shown in image (fig 1). 
 
 fig 1
-![Salesforce project (fig 1)](../images/Salesforce-project-fig1.png)
+![Salesforce project fig 1](../images/Salesforce-project-fig1.png)
 
 fig 2
-![Salesforce project (fig 2)](../images/Salesforce-project-fig2.png)
+![Salesforce project fig 2](../images/Salesforce-project-fig2.png)
 
 ## Create scratch organization 
 
@@ -88,7 +88,7 @@ To integrate the Syncfusion scripts and styles as static resource files within S
 Use the following command to open the scratch project in the browser
 
 ```
-sfdx org:open -o <stratch org user name> 
+sfdx org:open -o <scratch org user name> 
 ```
 
 Replace <scratch org username> with the username of your scratch organization, which was generated during the scratch organization creation process.  
@@ -204,122 +204,23 @@ sfdx lightning:generate:component --type lwc -n scheduler -d force-app/main/defa
 
 4. Open the `scheduler.js` file located in `force-app/main/default/lwc/scheduler` and implement the scheduler code in renderedCallback function. The static scripts and styles are loaded using the `loadScript` and `loadStyle` imports. Here's an example of the modified file.
 
-```
-import { LightningElement, api } from 'lwc'; 
-import { ShowToastEvent } from "lightning/platformShowToastEvent"; 
-import { loadStyle, loadScript } from "lightning/platformResourceLoader"; 
-import { createRecord, updateRecord, deleteRecord } from "lightning/uiRecordApi"; 
-// Static resources 
-import schedulerFiles from "@salesforce/resourceUrl/syncfusionscheduler"; 
+{% if page.publishingplatform == "typescript" %}
 
-// Controllers 
-import getEvents from "@salesforce/apex/SchedulerData.getEvents";
-function getEventsData(eventData) { 
-    const data = eventData.events.map((a) => ({ 
-        Id: a.Id, 
-        Subject: a.Name, 
-        Location: a.Location__c, 
-        StartTime: a.Start_Time__c, 
-        EndTime: a.End_Time__c, 
-        IsAllDay: a.IsAllDay__c, 
-        RecurrenceRule: a.RecurrenceRule__c, 
-        RecurrenceID: a.Recurrence_Id__c, 
-        RecurrenceException: a.RecurrenceException__c 
-    })); 
-    return data; 
-} 
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/schedule/salesforce-integration/index.ts %}
+{% endhighlight %}
+{% endtabs %}
+    
+{% elsif page.publishingplatform == "javascript" %}
 
-export default class Scheduler extends LightningElement { 
-    static delegatesFocus = true;   
-    @api height; 
-    schedulerInitialized = false;  
-    renderedCallback() { 
-        if (this.schedulerInitialized) { 
-            return; 
-        } 
-        this.schedulerInitialized = true;  
-        Promise.all([ 
-            loadScript(this, schedulerFiles + "/syncscheduler.js"), 
-            loadStyle(this, schedulerFiles + "/syncscheduler.css") 
-        ]) 
-            .then(() => { 
-                this.initializeUI(); 
-            }) 
-            .catch((error) => { 
-                this.dispatchEvent( 
-                    new ShowToastEvent({ 
-                        title: "Error loading scheduler", 
-                        message: error.message, 
-                        variant: "error" 
-                    }) 
-                ); 
-            }); 
-    } 
-    initializeUI() { 
-        const root = this.template.querySelector(".syncfusionscheduler"); 
-        root.style.height = this.height + "px"; 
-        const scheduleOptions = { 
-            height: this.height + "px", 
-            selectedDate: new Date(), 
-            actionComplete: function (args) { 
-                //To perform CRUD in salesforce backend 
-                if (args.addedRecords && args.addedRecords.length > 0) { 
-                    var data = args.addedRecords[0]; 
-                    var insert = { 
-                        apiName: "SchedulerEvent__c", 
-                        fields: { 
-                            Name: data.Subject, 
-                            Location__c: data.Location, 
-                            Start_Time__c: data.StartTime, 
-                            End_Time__c: data.EndTime, 
-                            IsAllDay__c: data.IsAllDay, 
-                            RecurrenceRule__c: data.RecurrenceRule, 
-                            Recurrence_Id__c: data.RecurrenceID, 
-                            RecurrenceException__c: data.RecurrenceException 
-                        } 
-                    }; 
-                    createRecord(insert).then((res) => { 
-                        if (scheduleObj) 
-                        { 
-                            scheduleObj.eventSettings.dataSource[scheduleObj.eventSettings.dataSource.length - 1].Id = res.id; 
-                            scheduleObj.refreshEvents(); 
-                        } 
-                        return { tid: res.id, ...res }; 
-                    }); 
-                } 
-                if (args.changedRecords && args.changedRecords.length > 0) { 
-                    var data = args.changedRecords[0]; 
-                    var update = { 
-                        fields: { 
-                            Id: data.Id, 
-                            Name: data.Subject, 
-                            Location__c: data.Location, 
-                            Start_Time__c: data.StartTime, 
-                            End_Time__c: data.EndTime, 
-                            IsAllDay__c: data.IsAllDay, 
-                            RecurrenceRule__c: data.RecurrenceRule, 
-                            RecurrenceException__c: data.RecurrenceException, 
-                            Recurrence_Id__c: data.RecurrenceID 
-                        } 
-                    }; 
-                    updateRecord(update).then(() => ({})); 
-                } 
-                if (args.deletedRecords && args.deletedRecords.length > 0) { 
-                    args.deletedRecords.forEach(event => { 
-                        deleteRecord(event.Id).then(() => ({})); 
-                    }); 
-                } 
-            } 
-        }; 
-        const scheduleObj = new ej.schedule.Schedule(scheduleOptions, root); 
-        getEvents().then((data) => { 
-            const eventData = getEventsData(data); 
-            scheduleObj.eventSettings.dataSource = eventData; 
-            scheduleObj.dataBind(); 
-        }); 
-    } 
-} 
-```
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/schedule/salesforce-integration/index.js %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
 
 ## Creating apex class 
 
@@ -418,4 +319,4 @@ Click on the `SyncfusionScheduler` app, and the scheduler will load on the home 
 
 ![Click Scheduler page](../images/Salesforce-click-scheduler.png)
 
-N> You can also explore our [**JavaScript Scheduler**](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) example to knows about the Salesforce integration.
+N> You can also explore our [**JavaScript Scheduler Salesforce integration**](https://github.com/SyncfusionExamples/salesforce-integration-in-ej2-javascript-scheduler) example to knows about the Salesforce integration.

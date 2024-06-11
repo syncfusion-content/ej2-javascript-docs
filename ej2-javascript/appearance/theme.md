@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Theme in ##Platform_Name## Appearance control | Syncfusion
-description: Learn here all about Theme in Syncfusion ##Platform_Name## Appearance control of Syncfusion Essential JS 2 and more.
+description: Learn here all about theme in Syncfusion ##Platform_Name## Appearance control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Theme 
 publishingplatform: ##Platform_Name##
@@ -32,7 +32,7 @@ The Syncfusion JavaScript library has provided the below list of in-built themes
 |Microsoft Office Fabric Dark | fabric-dark.css |
 |High Contrast | highcontrast.css |
 
-> The Syncfusion Bootstrap theme is designed based on `Bootstrap v3`, but it can be compatible with `Bootstrap v4` applications. In addition to these four built-in themes, [ThemeStudio](https://ej2.syncfusion.com/documentation/appearance/theme-studio/) also provides support for the Fusion theme, which can only be downloaded from [ThemeStudio](https://ej2.syncfusion.com/themestudio/?theme=fusion).
+> The Syncfusion Bootstrap theme is designed based on `Bootstrap v3`, but it can be compatible with `Bootstrap v4` applications. In addition to these four built-in themes, [ThemeStudio](https://ej2.syncfusion.com/documentation/appearance/theme-studio) also provides support for the Fusion theme, which can only be downloaded from [ThemeStudio](https://ej2.syncfusion.com/themestudio/?theme=fusion).
 
 ## Reference themes in the application
 
@@ -40,7 +40,7 @@ Syncfusion JavaScript controls themes that can be used in the application by ref
 
 * [NPM Packages](#npm-packages) - Used to customize the existing themes and bundle stylesheet’s in an application.
 * [Content Delivery Network (CDN)](#cdn-reference) - Used to reference complete css via static web assets.
-* [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio/) - Used to customize and generate themes only for the selected (used) components.
+* [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio) - Used to customize and generate themes only for the selected (used) components.
 
 ## NPM packages
 

@@ -48,6 +48,8 @@ The height and width of the Scheduler cells can be customized either to increase
 
 You can check whether the given time range slots are available for event creation or already occupied by other events using the `isSlotAvailable` method. In the following code example, if a specific time slot already contains an appointment, then no more appointments can be added to that cell.
 
+>Note: The **isSlotAvailable** is centered around verifying appointments within the present view's date range. Yet, it does not encompass an evaluation of availability for recurrence occurrences that fall beyond this particular date range.
+
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
@@ -220,6 +222,65 @@ Providing the `minDate` and `maxDate` property with some date values, allows the
 {% endif %}
 
 >By default, the `minDate` property value is set to new Date(1900, 0, 1) and `maxDate` property value is set to new Date(2099, 11, 31). The user can also set the customized `minDate` and `maxDate` property values.
+
+## Customizing the weekend cells background color
+
+You can customize the background color of weekend cells by utilizing the [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell) event and checking the [`elementType`](https://ej2.syncfusion.com/documentation/api/schedule/renderCellEventArgs/#elementtype) option within the event.
+
+```ts
+
+renderCell: function (args) {
+    if (args.elementType == "workCells") {
+        // To change the color of weekend columns in week view
+        if (args.date) {
+            if (args.date.getDay() === 6) {
+                (args.element).style.background = '#ffdea2';
+            }
+            if (args.date.getDay() === 0) {
+                (args.element).style.background = '#ffdea2';
+            }
+        }
+    }
+}
+
+```
+
+And, the background color for weekend cells in the Month view through the [`cssClass`](https://ej2.syncfusion.com/documentation/api/schedule#cssclass) property, which overrides the default CSS applied on cells.
+
+```css
+
+.schedule-cell-customization.e-schedule .e-month-view .e-work-cells:not(.e-work-days) {
+    background-color: #f08080;
+}
+
+```
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/schedule/weekend-cell-color/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/schedule/weekend-cell-color/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/schedule/weekend-cell-color" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/schedule/weekend-cell-color/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/schedule/weekend-cell-color/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/schedule/weekend-cell-color" %}
+{% endif %}
 
 ## How to disable multiple cell and row selection in Schedule
 

@@ -1,23 +1,21 @@
-
-
-
 import {
     Diagram, ConnectorModel, Node, DataBinding, HierarchicalTree, TreeInfo, SnapConstraints,
 } from '@syncfusion/ej2-diagrams';
 Diagram.Inject(DataBinding, HierarchicalTree);
 import { DataManager, Query } from '@syncfusion/ej2-data';
+import { Connector, NodeModel } from '@syncfusion/ej2/diagrams';
 export interface EmployeeInfo {
   Name: string;
   Role: string;
 }
 //To represent the roles
-let codes: object[]  = {
+let codes: { [key in EmployeeInfo["Role"]]: string }   = {
     Director: "rgb(0, 139,139)",
     Manager: "rgb(30, 30,113)",
     Lead: "rgb(0, 100,0)"
 }
 // Bind custom data with node
-function getNodeTemplate(node) {
+function getNodeTemplate(node:Node) {
     node.annotations[0].content = (node.data as EmployeeInfo).Name;
     node.style.fill = codes[(node.data as EmployeeInfo).Role];
 }
@@ -65,15 +63,12 @@ let diagram: Diagram = new Diagram({
             return obj;
     },
     getConnectorDefaults: (connector: ConnectorModel, diagram: Diagram) => {
-        connector.targetDecorator.shape = 'Arrow';
+        (connector as Connector).targetDecorator.shape = 'Arrow';
         connector.type = 'Orthogonal';
         return connector;
     },
     setNodeTemplate: (node: NodeModel) => {
-        return getNodeTemplate(node);
+        return getNodeTemplate(node as Node);
         }
 });
 diagram.appendTo('#element');
-
-
-

@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+  <html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+        <title>Essential JS 2</title>
+        <!-- Essential JS 2 material theme -->
+        <link href="//cdn.syncfusion.com/ej2/21.2.3/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
+        <link href="//cdn.syncfusion.com/ej2/21.2.3/ej2-inputs/styles/material.css" rel="stylesheet" type="text/css"/>
+        <link href="//cdn.syncfusion.com/ej2/21.2.3/multicolumn-combobox/styles/material.css" rel="stylesheet" type="text/css"/>
+        <!-- Essential JS 2 all script -->
+        <!-- <script src="https://cdn.syncfusion.com/ej2/21.2.3/dist/ej2.min.js" type="text/javascript"></script> -->
+
+        <!-- Essential JS 2 ComboBox's dependent scripts -->
+        <script src="//cdn.syncfusion.com/ej2/21.2.3/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+        <script src="//cdn.syncfusion.com/ej2/21.2.3/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
+        <script src="//cdn.syncfusion.com/ej2/21.2.3/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
+        <script src="//cdn.syncfusion.com/ej2/21.2.3/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
+        <script src="//cdn.syncfusion.com/ej2/21.2.3/ej2-lists/dist/global/ej2-lists.min.js" type="text/javascript"></script>
+        <script src="//cdn.syncfusion.com/ej2/21.2.3/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
+        <script src="//cdn.syncfusion.com/ej2/21.2.3/ej2-grids/dist/global/ej2-grids.min.js" type="text/javascript"></script>
+        <script src="//cdn.syncfusion.com/ej2/21.2.3/ej2-multicolumn-combobox/dist/global/ej2-multicolumn-combobox.min.js" type="text/javascript"></script>
+
+        <!--style reference from app-->
+        <link href="../styles.css" rel="stylesheet">
+   </head>
+   <body>
+       <div id='container' style="margin:50px auto 0; width:350px;">
+           <!-- Input element to render the MultiColumn combobox control-->
+            <input type="text" id='multicolumn' />
+        </div>
+        <script>
+        var empData = [ 
+            { "EmpID": 1001, "Name": "Andrew Fuller", "Designation": "Team Lead", "Country": "England" },
+            { "EmpID": 1002, "Name": "Robert", "Designation": "Developer", "Country": "USA" },
+            { "EmpID": 1003, "Name": "Michael", "Designation": "HR", "Country": "Russia" },
+            { "EmpID": 1004, "Name": "Steven Buchanan", "Designation": "Product Manager", "Country": "Ukraine" },
+            { "EmpID": 1005, "Name": "Margaret Peacock", "Designation": "Developer", "Country": "Egypt" },
+            { "EmpID": 1006, "Name": "Janet Leverling", "Designation": "Team Lead", "Country": "Africa" },
+            { "EmpID": 1007, "Name": "Alice", "Designation": "Product Manager", "Country": "Australia" },
+            { "EmpID": 1008, "Name": "Bob", "Designation": "Developer", "Country": "India" },
+            { "EmpID": 1009, "Name": "John", "Designation": "Product Manager", "Country": "Ireland"},
+            { "EmpID": 1010, "Name": "Mario Pontes", "Designation": "Team Lead", "Country": "South Africa" },
+            { "EmpID": 1011, "Name": "Yang Wang", "Designation": "Developer", "Country": "Russia" },
+            { "EmpID": 1012, "Name": "David", "Designation": "Product Manager", "Country": "Egypt" },
+            { "EmpID": 1013, "Name": "Antonio Bianchi", "Designation": "Team Lead", "Country": "USA" },
+            { "EmpID": 1014, "Name": "Laura", "Designation": "Developer", "Country": "England" },
+            { "EmpID": 1015, "Name": "Carlos Hernandez", "Designation": "Developer", "Country": "Canada" },
+            { "EmpID": 1016, "Name": "Lily", "Designation": "Product Manager", "Country": "France" },
+            { "EmpID": 1017, "Name": "Tom Williams", "Designation": "Developer", "Country": "Ukraine" },
+            { "EmpID": 1018, "Name": "Grace", "Designation": "Developer", "Country": "Australia" },
+            { "EmpID": 1019, "Name": "Olivia", "Designation": "Team Lead", "Country": "Ireland" },
+            { "EmpID": 1020, "Name": "James", "Designation": "Developer", "Country": "China" },
+        ];
+        var columnsData = [
+            { field: 'EmpID', header: 'Employee ID', width: 70 },
+            { field: 'Name', width: 80, header: 'Name' },
+            { field: 'Designation', header: 'Designation', width: 60 },
+            { field: 'Country', header: 'Country', width: 80 }
+        ];
+        // initialize MultiColumn Combobox component
+        var multiComboBoxObject = new ej.multicolumncombobox.MultiColumnComboBox({
+            //set the data to dataSource property
+            dataSource: empData,
+            //set the column of the multicolumn combobox
+            columns: columnsData,
+            //set the fields of the multicolumn combobox
+            fields: { text: 'Name', value: 'EmpID' },
+            // set placeholder to ComboBox input element
+            placeholder: "Select a employee",
+            // set the height of the popup element
+            popupHeight: '200px',
+            // set the width of the popup element
+            popupWidth: '480px',
+        });
+        // render initialized MultiColumn ComboBox
+        multiComboBoxObject.appendTo('#multicolumn');
+        </script>
+   </body>
+  </html>

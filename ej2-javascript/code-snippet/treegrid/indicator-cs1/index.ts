@@ -4,7 +4,7 @@ import { TreeGrid, Page, Sort } from '@syncfusion/ej2-treegrid';
 import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
 TreeGrid.Inject(Page, Sort);
     let data = new DataManager({
-        url: 'https://ej2services.syncfusion.com/production/web-services/api/SelfReferenceData',
+        url: 'https://services.syncfusion.com/js/production/api/SelfReferenceData',
         adaptor: new WebApiAdaptor(),
         crossDomain: true
     });

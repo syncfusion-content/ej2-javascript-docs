@@ -20,7 +20,7 @@ let button = document.createElement('button');
 button.textContent = 'Bind Data';
 gantt.element.parentNode.insertBefore(button, gantt.element);
 button.addEventListener("click", function(e){
-    let ajax = new ej.base.Ajax("https://ej2services.syncfusion.com/production/web-services/api/GanttData","GET");
+    let ajax = new ej.base.Ajax("https://services.syncfusion.com/js/production/api/GanttData","GET");
     gantt.showSpinner();
     ajax.send();
     ajax.onSuccess = function (data) {

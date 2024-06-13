@@ -1,3 +1,6 @@
+
+var restoreModel;
+
 // initialize dashboardlayout component
 var dashboard = new ej.layouts.DashboardLayout({
     cellSpacing: [20, 20],
@@ -14,8 +17,6 @@ var dashboard = new ej.layouts.DashboardLayout({
 });
 // render initialized dashboardlayout
 dashboard.appendTo('#dashboard_default');
-
-var restoreModel;
 
 var saveBtn = new ej.buttons.Button({
   cssClass: "e-primary",

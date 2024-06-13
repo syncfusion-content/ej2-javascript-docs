@@ -122,3 +122,20 @@ The offset property of port is used to align the port based on fractions. 0 repr
 ## Constraints
 
 The constraints property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [`Port Constraints`](../api/diagram/port#constraints-portconstraints).
+
+## Specify connection direction to port
+
+The [connectionDirection] property of a port allows users to specify the direction in which a connector should establish a connection. This can be either to the port (incoming) or from the port (outgoing).
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/ports-cs6/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/ports-cs6/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/diagram/ports-cs6" %}
+
+![maxSegmentThumb](images\connectionDirection1.png)

@@ -104,6 +104,147 @@ The ODataV4 is an improved version of OData protocols, and the [`DataManager`](.
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs14" %}
 {% endif %}
 
+## Odata with custom url
+
+The Syncfusion ODataV4 adaptor extends support for calling customized URLs to accommodate data retrieval and CRUD actions as per your application's requirements. However, when utilizing a custom URL with the ODataV4 adaptor, it's essential to modify the routing configurations in your application's route configuration file to align with your custom URL. You can invoke the custom URL by the following methods in the Datamanager
+
+**Configuring Custom URLs**
+
+To work with custom URLs for CRUD operations in the Syncfusion Grid, you can use the following properties:
+
+* insertUrl: Specifies the custom URL for inserting new records.
+* removeUrl: Specifies the custom URL for deleting records.
+* updateUrl: Specifies the custom URL for updating records.
+* batchUrl: Specifies the custom URL for batch editing operations.
+
+> Ensure that the routing configurations on the server-side are properly updated to handle these custom URLs.
+
+The following code example describes the above behavior.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+import { Grid, Edit, Toolbar } from '@syncfusion/ej2-grids';
+import { DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
+
+var data = new ej.data.DataManager({
+    url: 'https://services.odata.org/V4/Northwind/Northwind.svc/Orders/?$top=7',
+    updateUrl: 'https://localhost:xxxx/odata/Orders/Update', // custom URL to update the record
+    insertUrl: 'https://localhost:xxxx/odata/Orders/Insert', // custom URL to insert new record
+    removeUrl: 'https://localhost:xxxx/odata/Orders/Delete', // custom URL to delete the record
+    adaptor: new ODataV4Adaptor
+});
+
+Grid.Inject(Edit, Toolbar);
+
+let grid: Grid = new Grid({
+    dataSource: data,
+    toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
+    editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' },
+    columns: [
+        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', isPrimaryKey: true, validationRules: { required: true }, width: 100 },
+        { field: 'CustomerID', headerText: 'Customer ID', validationRules: { required: true, minLength: 5 }, width: 120, },
+        { field: 'Freight', headerText: 'Freight', textAlign: 'Right', editType: 'numericedit', validationRules: { required: true, min: 1, max: 1000 }, width: 120, format: 'C2' },
+        { field: 'ShipCountry', headerText: 'Ship Country', editType: 'dropdownedit', width: 150 }
+    ],
+    height: 273
+});
+grid.appendTo('#Grid');
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+var data = new ej.data.DataManager({
+    url: 'https://services.odata.org/V4/Northwind/Northwind.svc/Orders/?$top=7',
+    updateUrl: 'https://localhost:xxxx/odata/Orders/Update', // custom URL to update the record
+    insertUrl: 'https://localhost:xxxx/odata/Orders/Insert', // custom URL to insert new record
+    removeUrl: 'https://localhost:xxxx/odata/Orders/Delete', // custom URL to delete the record
+    adaptor: new ej.data.ODataV4Adaptor()
+});
+
+ej.grids.Grid.Inject(ej.grids.Edit, ej.grids.Toolbar);
+var grid = new ej.grids.Grid({
+    dataSource: data,
+    toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
+    editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' },
+    columns: [
+        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, type: 'number' isPrimaryKey: true, validationRules: { required: true } },
+        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' validationRules: { required: true, minLength: 3 } },
+        { field: 'Freight', headerText: 'Freight', textAlign: 'Right', width: 120, format: 'C' },
+        { field: 'OrderDate', headerText: 'Order Date', width: 140, format: 'yMd' }
+    ]
+});
+grid.appendTo('#Grid');
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
+
+For batch editing, you can specify a custom batch URL as follows:
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+import { Grid, Edit, Toolbar } from '@syncfusion/ej2-grids';
+import { DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
+
+var data = new ej.data.DataManager({
+    url: 'https://services.odata.org/V4/Northwind/Northwind.svc/Orders/?$top=7',
+    BatchUrl: 'https://localhost:xxxx/odata/Orders/BatchUpdate', // custom URL for batch update
+    adaptor: new ODataV4Adaptor
+});
+
+Grid.Inject(Edit, Toolbar);
+
+let grid: Grid = new Grid({
+    dataSource: data,
+    toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
+    editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Batch' },
+    columns: [
+        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', isPrimaryKey: true, validationRules: { required: true }, width: 100 },
+        { field: 'CustomerID', headerText: 'Customer ID', validationRules: { required: true, minLength: 5 }, width: 120, },
+        { field: 'Freight', headerText: 'Freight', textAlign: 'Right', editType: 'numericedit', validationRules: { required: true, min: 1, max: 1000 }, width: 120, format: 'C2' },
+        { field: 'ShipCountry', headerText: 'Ship Country', editType: 'dropdownedit', width: 150 }
+    ],
+    height: 273
+});
+grid.appendTo('#Grid');
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+var data = new ej.data.DataManager({
+    url: 'https://services.odata.org/V4/Northwind/Northwind.svc/Orders/?$top=7',
+    BatchUrl: 'https://localhost:xxxx/odata/Orders/BatchUpdate', // custom URL for batch update
+    adaptor: new ej.data.ODataV4Adaptor()
+});
+
+ej.grids.Grid.Inject(ej.grids.Edit, ej.grids.Toolbar);
+var grid = new ej.grids.Grid({
+    dataSource: data,
+    toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
+    editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Batch' },
+    columns: [
+        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, type: 'number' isPrimaryKey: true, validationRules: { required: true } },
+        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' validationRules: { required: true, minLength: 3 } },
+        { field: 'Freight', headerText: 'Freight', textAlign: 'Right', width: 120, format: 'C' },
+        { field: 'OrderDate', headerText: 'Order Date', width: 140, format: 'yMd' }
+    ]
+});
+grid.appendTo('#Grid');
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
+
 ## Web API adaptor
 
 You can use **WebApiAdaptor** to bind grid with Web API created using OData endpoint.

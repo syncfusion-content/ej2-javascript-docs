@@ -1,0 +1,9 @@
+
+// Initializes the OTP Input control
+var otpInput = new ej.inputs.OtpInput({
+    value: 1234,
+    ariaLabels: ['First digit', 'Second digit', 'Third digit', 'Fourth digit']
+});
+
+// Render initialized OTP Input.
+otpInput.appendTo('#otp_input');

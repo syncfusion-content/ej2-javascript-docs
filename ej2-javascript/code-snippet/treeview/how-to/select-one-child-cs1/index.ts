@@ -22,7 +22,7 @@ import { TreeView } from '@syncfusion/ej2-navigations';
 let tree1: TreeView = new TreeView({
     fields: { dataSource: localData, id: 'id', text: 'name', parentID: 'pid', hasChildren: 'hasChild' },
     loadOnDemand: false,
-    allowMultiSelection: true
+    allowMultiSelection: true,
     nodeSelecting: onNodeSelecting
 });
 tree1.appendTo('#tree');

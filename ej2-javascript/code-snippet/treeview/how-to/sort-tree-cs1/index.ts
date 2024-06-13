@@ -37,6 +37,7 @@ enableRipple(true);
     { id: 24, pid: 21, name: 'Beijing' },
     { id: 25, pid: 21, name: 'Shantou' }
 ];
+let newData;
 
 let tree1: TreeView = new TreeView({
     fields: { dataSource: countries, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild' },
@@ -51,11 +52,10 @@ function changeDataSource(data) {
     }
 }
 
-let newData;
 function onCreate(){
     newData = this.fields.dataSource;
     // Selects the first level nodes alone
-    let resultData = new DataManager(this.getTreeData()).executeLocal(new Query().where(this.fields.parentID, 'equal', undefined, false));
+    let resultData = new DataManager(this.getTreeData()).executeLocal(new Query().where(this.fields.parentID, 'equal', null, false));
     let name = [];
     for (let i = 0; i < resultData.length; i++){
         name.push(resultData[i][this.fields.text]);

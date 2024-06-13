@@ -60,7 +60,7 @@ The Dashboard Layout component's accessibility levels are ensured through an [ac
 
 The accessibility compliance of the Dashboard Layout component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/dashboard-layout.html) in a new window to evaluate the accessibility of the Dashboard Layout component with accessibility tools.
 
-{% previewsample "https://ej2.syncfusion.com/accessibility/dashboard-layout.html" %}
+{% previewsample "page.domainurl/code-snippet/dashboard-layout/accessibility-cs1" %}
 
 ## See also     
 

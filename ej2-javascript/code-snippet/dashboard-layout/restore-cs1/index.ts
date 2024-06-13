@@ -3,6 +3,8 @@
 import { DashboardLayout } from '@syncfusion/ej2-layouts';
 import { Button } from '@syncfusion/ej2-buttons';
 
+let restoreModel: any;
+
 // initialize dashboardlayout component
 let dashboard: DashboardLayout = new DashboardLayout({
     cellSpacing: [20, 20],
@@ -20,7 +22,6 @@ let dashboard: DashboardLayout = new DashboardLayout({
 // render initialized dashboardlayout
 dashboard.appendTo('#dashboard_default');
 
-let restoreModel: any;
 let saveBtn: Button = new Button({
     cssClass: "e-primary",
     content: "Save",

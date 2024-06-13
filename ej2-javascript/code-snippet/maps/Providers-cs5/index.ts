@@ -5,7 +5,11 @@ Maps.Inject(Zoom);
 let map: Maps = new Maps({
     zoomSettings: {
         enable: true,
-        toolbars: ["Zoom", "ZoomIn", "ZoomOut", "Pan", "Reset"]
+        toolbarSettings: {
+            buttonSettings: {
+                toolbarItems: ['Zoom', 'ZoomIn', 'ZoomOut', 'Pan', 'Reset']
+            }
+        }
     },
     layers: [
         {

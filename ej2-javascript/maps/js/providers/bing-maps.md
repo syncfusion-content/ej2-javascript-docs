@@ -76,7 +76,11 @@ var map = new ej.maps.Maps({
     },
     zoomSettings: {
         enable: true,
-        toolBars: [{ "Zoom", "ZoomIn", "ZoomOut", "Pan", "Reset" }]
+        toolbarSettings: {
+            buttonSettings: {
+                toolbarItems: ['Zoom', 'ZoomIn', 'ZoomOut', 'Pan', 'Reset']
+            }
+        }
     },
     layers: [{
     }]

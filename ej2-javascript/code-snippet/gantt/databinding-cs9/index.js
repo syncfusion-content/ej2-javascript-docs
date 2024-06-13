@@ -1,4 +1,4 @@
-var hostUrl = 'https://ej2services.syncfusion.com/production/web-services/';
+var hostUrl = 'https://services.syncfusion.com/js/production/';
     var GanttData = new ej.data.DataManager({
         url: hostUrl + 'api/GanttData',
         adaptor: new ej.data.WebApiAdaptor(),

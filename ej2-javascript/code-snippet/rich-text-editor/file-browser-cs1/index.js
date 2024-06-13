@@ -2,7 +2,7 @@
  * Rich Text Editor - File browser sample
  */
 
-var hostUrl = 'https://services.syncfusion.com/js/production/';
+var hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
 
 var defaultRTE = new ej.richtexteditor.RichTextEditor({
 	fileManagerSettings: {

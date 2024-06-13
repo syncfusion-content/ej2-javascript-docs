@@ -18,13 +18,13 @@ tipbutton.appendTo('#tooltip');
 let bubblebutton: Button = new Button();
 bubblebutton.appendTo('#bubbletip');
 
-let radiobutton: RadioButton = new RadioButton({ label: 'TopCenter', name: 'default', value: 'TopCenter', checked: true, change: onChange});
+let curveRadio: RadioButton = new RadioButton({ label: 'TopCenter', name: 'default', value: 'TopCenter', checked: true, change: onChange});
 
 // Render initialized radio button
-radiobutton.appendTo('#element1');
+curveRadio.appendTo('#element1');
 
-let radiobutton = new RadioButton({ label: 'BottomLeft', name: 'default', value: 'BottomLeft',  change: onChange});
-radiobutton.appendTo('#element2');
+let curveRadioLeft = new RadioButton({ label: 'BottomLeft', name: 'default', value: 'BottomLeft',  change: onChange});
+curveRadioLeft.appendTo('#element2');
 
 let tippointer: Tooltip = new Tooltip({
     cssClass: 'pointertip e-tooltip-css',
@@ -41,10 +41,10 @@ let bubble: Tooltip = new Tooltip({
 });
 bubble.appendTo('#bubbletip');
 
-let radiobutton: RadioButton = new RadioButton({ label: 'BottomLeft', name: 'position', value: 'BottomLeft', change: onChanged});
+let bubbleRadio: RadioButton = new RadioButton({ label: 'BottomLeft', name: 'position', value: 'BottomLeft', change: onChanged});
 
 // Render initialized radio button
-radiobutton.appendTo('#radio1');
+bubbleRadio.appendTo('#radio1');
 
 let radiobutton = new RadioButton({ label: 'TopRight', name: 'position', value: 'TopRight',  checked: true, change: onChanged});
 radiobutton.appendTo('#radio2');

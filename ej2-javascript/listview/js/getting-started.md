@@ -121,12 +121,15 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
 **Step 3:** Create a HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `ListView` element and initiate the `Essential JS 2 List` control in the index.html by using following code.
 
 {% tabs %}
+{% highlight ts tabtitle="index.js" %}
+{% include code-snippet/listview/getting-started-cs1/index.js %}
+{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/listview/es5-getting-started-cs2/index.html %}
+{% include code-snippet/listview/getting-started-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/listview/es5-getting-started-cs2" %}
+{% previewsample "page.domainurl/code-snippet/listview/getting-started-cs1" %}
 
 **Step 4:** Now, run the `index.html` in web browser, it will render the `Essential JS 2 ListView` control.
 

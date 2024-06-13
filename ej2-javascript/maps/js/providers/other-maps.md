@@ -44,7 +44,11 @@ Tile Maps layer can be zoomed and panned. Zooming helps to get a closer look at 
 var maps = new ej.maps.Maps({
     zoomSettings: {
         enable: true,
-        toolbars: ["Zoom", "ZoomIn", "ZoomOut", "Pan", "Reset"]
+        toolbarSettings: {
+            buttonSettings: {
+                toolbarItems: ['Zoom', 'ZoomIn', 'ZoomOut', 'Pan', 'Reset']
+            }
+        }
     },
     layers: [
         {

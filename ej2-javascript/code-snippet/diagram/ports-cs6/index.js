@@ -1,40 +1,45 @@
-var port1 = {
+// Define ports
+let port1 = {
     style: {
         strokeColor: '#000000',
         fill: ' #FFFF00'
     },
-}
-port1.shape = 'Square';
-port1.visibility = ej.diagrams.PortVisibility.Visible;
-port1.id = 'port1';
-connectionDirection:'Right';
-port1.offset = {
-    x: 0.5,
-    y: 0.5
+    // Define port connection direction
+    connectionDirection: 'Right',
+    shape: 'Square',
+    id: 'port1',
+    visibility: ej2_diagrams_1.PortVisibility.Visible,
+    offset: {
+        x: 0.5,
+        y: 0.5
+    }
 };
-var port2 = {
-    style: {
-        strokeColor: '#000000',
-        fill: ' #FFFF00'
-    },
-};
-port2.offset = {
-    x: 0,
-    y: 0
-};
-port2.id = 'port2';
-connectionDirection:'Left';
-port2.visibility = ej.diagrams.PortVisibility.Visible;
-port2.shape = 'Square';
 
-var nodes = [{
+let port2 = {
+    style: {
+        strokeColor: '#000000',
+        fill: ' #FFFF00'
+    },
+    offset: {
+        x: 0,
+        y: 0
+    },
+    id: 'port2',
+    visibility: ej2_diagrams_1.PortVisibility.Visible,
+    shape: 'Square',
+    // Define port connection direction
+    connectionDirection: 'Left'
+};
+
+// Define nodes
+let nodes = [{
         id: 'node',
         width: 100,
         height: 100,
         offsetX: 600,
         offsetY: 300,
-        ports: [port1,port2],
-        fill:'#87CEEB',
+        ports: [port1],
+        fill: '#87CEEB'
     },
     {
         id: 'node1',
@@ -42,12 +47,13 @@ var nodes = [{
         height: 100,
         offsetX: 800,
         offsetY: 200,
-        ports: [port1, port2],
-        fill:'#87CEEB',
-    },
+        ports: [port2],
+        fill: 'red'
+    }
 ];
 
-var connectors = {
+// Define a connector between the nodes
+let connectors = {
     id: "connector1",
     sourcePoint: {
         x: 100,
@@ -62,18 +68,24 @@ var connectors = {
     targetID: 'node1',
     sourcePortID: 'port1',
     targetPortID: 'port2'
-}
+};
 
-var diagram = new ej.diagrams.Diagram({
-    width: 900,
-    height: 900,
+// Initialize diagram component
+let diagram = new ej2.diagrams.Diagram({
+    width: '100%',
+    height: '600px',
+    // Add nodes and connectors
     nodes: nodes,
     connectors: [connectors],
     getNodeDefaults: (node) => {
+        // Customize default node appearance
         node.height = 100;
         node.width = 100;
         node.style.fill = '#6BA5D7';
         node.style.strokeColor = 'white';
         return node;
-    },
-}, '#element');
+    }
+});
+
+// Render initialized diagram
+diagram.appendTo('#element');

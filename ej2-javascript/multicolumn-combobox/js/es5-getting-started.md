@@ -159,7 +159,7 @@ The Essential JS 2 JavaScript components can be initialized by using either of t
 
 ## Binding data source with fields and columns
 
-After initializing, populate the MultiColumn ComboBox with data by using the `dataSource` property, to map the data for each specified columns use the `columns` property and the `fields` property to map the data fields from the dataSource.
+After initializing, populate the MultiColumn ComboBox with data by using the [dataSource](../api/multicolumn-combobox#datasource) property, to map the data for each specified columns use the [columns](../api/multicolumn-combobox#columns) property and the [fields](../api/multicolumn-combobox#fields) property to map the data fields from the dataSource.
 
 Here an array of object values is passed to the MultiColumn ComboBox control.
 
@@ -227,7 +227,7 @@ Here an array of object values is passed to the MultiColumn ComboBox control.
 
 By default, the width of the popup list automatically adjusts according to the MultiColumn ComboBox input element's width, and the height of the popup list has `300px`.
 
-The height and width of the popup list can also be customized using the `popupHeight` and `popupWidth` properties respectively.
+The height and width of the popup list can also be customized using the [popupHeight](../api/multicolumn-combobox#popupheight) and [popupWidth](../api/multicolumn-combobox#popupwidth) properties respectively.
 
 In the following sample, popup list's width and height are configured.
 

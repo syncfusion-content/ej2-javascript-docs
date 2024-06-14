@@ -125,7 +125,7 @@ The constraints property allows to enable/disable certain behaviors of ports. Fo
 
 ## Specify connection direction to port
 
-The [connectionDirection] property of a port allows users to specify the direction in which a connector should establish a connection. This can be either to the port (incoming) or from the port (outgoing).
+The [`connectionDirection`](../api/diagram/port#connectionDirection) property of a port allows users to specify the direction in which a connector should establish a connection. This can be either to the port (incoming) or from the port (outgoing).
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

@@ -71,7 +71,7 @@ The OTP Input control's accessibility levels are ensured through an [accessibili
 
 HtmlAttributes allow you to specify additional HTML attributes to be applied to the OTP input control.
 
-You can pass HTML attributes as key-value pairs to the `htmlAttributes` property.
+You can pass HTML attributes as key-value pairs to the [htmlAttributes](../api/otp-input#htmlattributes) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -110,7 +110,7 @@ You can pass HTML attributes as key-value pairs to the `htmlAttributes` property
 
 AriaLabels define the ARIA-label attribute for each input field in the OTP input control. ARIA-labels enhance accessibility by providing descriptive labels for screen reader users, improving the user experience for individuals with disabilities.
 
-You can provide an array of strings as ARIA-labels to the `ariaLabels` property. Each string corresponds to the ARIA-label attribute for the respective input field in the OTP input control.
+You can provide an array of strings as ARIA-labels to the [ariaLabels](../api/otp-input#arialabels) property. Each string corresponds to the ARIA-label attribute for the respective input field in the OTP input control.
 
 {% if page.publishingplatform == "typescript" %}
 

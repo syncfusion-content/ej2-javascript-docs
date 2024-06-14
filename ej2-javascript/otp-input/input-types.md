@@ -17,7 +17,7 @@ This section explains the the various types of OTP (One-Time Password) input con
 
 ### Number type
 
-You can set the `type` property to `number` to use this input type as number. This is ideal for OTP input scenarios with numeric-only codes. By default `type` property is `number`.
+You can set the [type](../api/otp-input#type) property to [number](../api/otp-input/otpInputType/) to use this input type as number. This is ideal for OTP input scenarios with numeric-only codes. By default `type` property is `number`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -54,7 +54,7 @@ You can set the `type` property to `number` to use this input type as number. Th
 
 ### Text type
 
-You can set the `type` property to `text` to use this input type as text. This is suitable when the OTP input need to include both letters and numbers.
+You can set the [type](../api/otp-input#type) property to [text](../api/otp-input/otpInputType/) to use this input type as text. This is suitable when the OTP input need to include both letters and numbers.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -92,7 +92,7 @@ You can set the `type` property to `text` to use this input type as text. This i
 
 ### Password type
 
-You can set the `type` property to `password` to use this input type as password in the otp Input.
+You can set the [type](../api/otp-input#type) property to [password](../api/otp-input/otpInputType/) to use this input type as password in the OTP Input.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -129,7 +129,7 @@ You can set the `type` property to `password` to use this input type as password
 
 ## Value
 
-You can specify the value of OTP Input by using the `value` property.
+You can specify the value of OTP Input by using the [value](../api/otp-input#value) property.
 
 {% if page.publishingplatform == "typescript" %}
 

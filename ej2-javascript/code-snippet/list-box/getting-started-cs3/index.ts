@@ -1,7 +1,5 @@
-
-
-
 import { ListBox } from '@syncfusion/ej2-dropdowns';
+ListBox.Inject(CheckBoxSelection);
 
 // define the array of object
 let data: { [key: string]: Object }[] = [
@@ -22,6 +20,7 @@ let listObj: ListBox = new ListBox({
     //set the data to dataSource property
     dataSource: data,
     selectionSettings: {
+        showCheckbox: true,
         mode: 'Single'
     }
 });

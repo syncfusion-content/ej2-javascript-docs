@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart in ##Platform_Name## Document editor control | Syncfusion
+title: Chart in ##Platform_Name## Document Editor Control | Syncfusion
 description: Learn here all about Chart in Syncfusion ##Platform_Name## Document editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Chart 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Chart in ##Platform_Name## Document editor control
+# Chart in ##Platform_Name## Document Editor Control
 
 Document Editor provides chart preservation support. Using Document Editor, you can see the chart reports from your Word document.
 
@@ -42,7 +42,7 @@ The following example shows chart preservation in Document Editor.
 {% previewsample "page.domainurl/code-snippet/document-editor/chart-cs1" %}
 {% endif %}
 
-# Supported Chart Types
+## Supported Chart Types
 
 The following chart types are supported in Document Editor
 * Scatter_Markers

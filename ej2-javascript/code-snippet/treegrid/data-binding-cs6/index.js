@@ -12,7 +12,7 @@ class SerialNoAdaptor extends ej.data.WebApiAdaptor {
 }
 
 var data = new ej.data.DataManager({
-        url: 'https://ej2services.syncfusion.com/production/web-services/api/SelfReferenceData',
+        url: 'https://services.syncfusion.com/js/production/api/SelfReferenceData',
         adaptor: new SerialNoAdaptor,
         crossDomain: true,
         offline: true

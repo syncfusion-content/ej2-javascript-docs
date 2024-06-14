@@ -20,7 +20,7 @@ let button = document.createElement('button');
 button.textContent = 'Bind Data';
 treeGridObj.element.parentNode.insertBefore(button, treeGridObj.element);
 button.addEventListener("click", function(e){
-    let fetch = new ej.base.Fetch("https://ej2services.syncfusion.com/production/web-services/api/SelfReferenceData","GET");
+    let fetch = new ej.base.Fetch("https://services.syncfusion.com/js/production/api/SelfReferenceData","GET");
     treeGridObj.showSpinner();
     fetch.send();
     fetch.onSuccess = function (data) {

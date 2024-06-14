@@ -306,8 +306,11 @@ In root-level paging mode, paging is based on the root-level rows only, i.e., it
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/treegrid/tree-grid-cs1/index.js %}
 {% endhighlight %}
+{% highlight js tabtitle="datasource.js" %}
+{% include code-snippet/treegrid/tree-grid-cs1/es5-datasource.js %}
+{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/tree-grid-cs1/index.html %}
+{% include code-snippet/treegrid/tree-grid-cs1/js/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -322,8 +325,11 @@ The sorting feature enables you to order the records. It can be enabled by setti
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/treegrid/tree-grid-cs2/index.js %}
 {% endhighlight %}
+{% highlight js tabtitle="datasource.js" %}
+{% include code-snippet/treegrid/tree-grid-cs2/es5-datasource.js %}
+{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/tree-grid-cs2/index.html %}
+{% include code-snippet/treegrid/tree-grid-cs2/js/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -340,8 +346,11 @@ By default, filtered records are shown along with its parent records. This behav
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/treegrid/tree-grid-cs3/index.js %}
 {% endhighlight %}
+{% highlight js tabtitle="datasource.js" %}
+{% include code-snippet/treegrid/tree-grid-cs3/es5-datasource.js %}
+{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/tree-grid-cs3/index.html %}
+{% include code-snippet/treegrid/tree-grid-cs3/js/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -357,8 +366,11 @@ Output will be displayed as follows.
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/treegrid/tree-grid-cs4/index.js %}
 {% endhighlight %}
+{% highlight js tabtitle="datasource.js" %}
+{% include code-snippet/treegrid/tree-grid-cs4/es5-datasource.js %}
+{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/tree-grid-cs4/index.html %}
+{% include code-snippet/treegrid/tree-grid-cs4/js/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -369,3 +381,13 @@ Output will be displayed as follows.
 The Essential JS 2 TreeGrid control features are segregated into individual feature-wise modules. The [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build and `CDN` scripts contains code for all features used in the TreeGrid. So, do not to use the `CDN` scripts in production. It is strongly recommended to generate script files to use in production using our **Custom Resource Generator**[`(CRG)`](https://crg.syncfusion.com/) for Essential JS 2. CRG allows you to generate the bundled script for the currently enabled features in TreeGrid.
 
 > You can refer to our [`JavaScript Tree Grid`](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our JavaScript Tree Grid example [`JavaScript Tree Grid example`](https://ej2.syncfusion.com/demos/#/material/tree-grid/treegrid-overview.html) to knows how to present and manipulate data.
+
+## See Also
+
+* [Getting Started with Syncfusion JavaScript documentation](https://ej2.syncfusion.com/documentation/treegrid/getting-started)
+* [Getting Started with Syncfusion Angular documentation](https://ej2.syncfusion.com/angular/documentation/treegrid/getting-started)
+* [Getting Started with Syncfusion React documentation](https://ej2.syncfusion.com/react/documentation/treegrid/getting-started)
+* [Getting Started with Syncfusion Vue documentation](https://ej2.syncfusion.com/vue/documentation/treegrid/getting-started)
+* [Getting Started with Syncfusion ASP.NET Core documentation](https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/getting-started-core)
+* [Getting Started with Syncfusion ASP.NET MVC documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/tree-grid/getting-started-mvc)
+* [Getting Started with Syncfusion Blazor documentation](https://blazor.syncfusion.com/documentation/treegrid/getting-started-webapp)

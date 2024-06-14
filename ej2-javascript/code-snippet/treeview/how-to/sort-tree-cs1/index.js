@@ -30,6 +30,8 @@
     { id: 25, pid: 21, name: 'Shantou' }
     
 ];
+var newData;
+
 var tree1 = new ej.navigations.TreeView({
     fields: { dataSource: countries, id: 'id', text: 'name', parentID: 'pid', hasChildren: 'hasChild' },
     created: onCreate,
@@ -43,11 +45,10 @@ function changeDataSource(data) {
     }
 }
 
-var newData;
 function onCreate(){
     newData = this.fields.dataSource;
      // Selects the first level nodes alone
-    var resultData= new ej.data.DataManager(this.getTreeData()).executeLocal(new ej.data.Query().where(this.fields.parentID, 'equal', undefined, false));
+    var resultData= new ej.data.DataManager(this.getTreeData()).executeLocal(new ej.data.Query().where(this.fields.parentID, 'equal', null, false));
     var name= [];
     for (var i = 0; i < resultData.length; i++){
         name.push(resultData[i][this.fields.text]);

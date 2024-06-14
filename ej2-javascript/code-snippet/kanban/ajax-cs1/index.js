@@ -14,7 +14,7 @@ var kanbanObj = new ej.kanban.Kanban({
 kanbanObj.appendTo('#Kanban');
 var button = document.getElementById('btn');
 button.addEventListener("click", function (e) {
-    var ajax = new ej.base.Ajax("https://ej2services.syncfusion.com/production/web-services/api/Orders", "GET");
+    var ajax = new ej.base.Ajax("https://services.syncfusion.com/js/production/api/Orders", "GET");
     ajax.send();
     ajax.onSuccess = function (data) {
         kanbanObj.dataSource = JSON.parse(data);

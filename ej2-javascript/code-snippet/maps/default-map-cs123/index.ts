@@ -21,7 +21,11 @@ L10n.load({
 let map: Maps = new Maps({
     zoomSettings: {
         enable: true,
-        toolbars: ['ZoomIn', 'ZoomOut', 'Zoom', 'Pan', 'Reset' ]
+        toolbarSettings: {
+            buttonSettings: {
+                toolbarItems: ['Zoom', 'ZoomIn', 'ZoomOut', 'Pan', 'Reset']
+            }
+        }
     },
     locale: 'ar-AR',
     layers: [

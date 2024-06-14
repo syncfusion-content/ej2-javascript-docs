@@ -32,7 +32,7 @@ let data: { [key: string]: Object }[] = [
 // initialize Dropdown Tree control
 let DropDownTreeObject: DropDownTree = new DropDownTree({
     //binding data source through fields property
-    fields: { dataSource: data, value: 'nodeId', text: 'nodeText', child: 'nodeChild' }
+    fields: { dataSource: data, value: 'nodeId', text: 'nodeText', child: 'nodeChild' },
     // set placeholder to Dropdown Tree input element
     placeholder: "Select a Item"
 });

@@ -88,7 +88,7 @@ The Dropdown Tree component's accessibility levels are ensured through an [acces
 
 The accessibility compliance of the Dropdown Tree component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/drop-down-tree.html) in a new window to evaluate the accessibility of the Dropdown Tree component with accessibility tools.
 
-{% previewsample "https://ej2.syncfusion.com/accessibility/drop-down-tree.html" %}
+{% previewsample "page.domainurl/code-snippet/dropdowntree/accessibility-cs1" %}
 
 ## See also
 

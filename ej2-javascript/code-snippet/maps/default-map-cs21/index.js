@@ -7,7 +7,6 @@ var map = new ej.maps.Maps({
         }
     },
     layers: [{
-        layerType: 'Geometry',
         shapeData: world_map,
         shapeSettings: {
             autofill: true,

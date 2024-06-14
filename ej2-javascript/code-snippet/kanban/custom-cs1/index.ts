@@ -14,7 +14,7 @@ class TaskIdAdaptor extends ODataAdaptor {
     }
 }
 let data: DataManager = new DataManager({
-    url: 'https://ej2services.syncfusion.com/production/web-services/api/Kanban',
+    url: 'https://services.syncfusion.com/js/production/api/Kanban',
     adaptor: new TaskIdAdaptor
 });
 let kanbanObj: Kanban = new Kanban({

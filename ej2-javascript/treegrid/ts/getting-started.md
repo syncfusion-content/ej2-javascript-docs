@@ -213,8 +213,11 @@ The paging feature enables users to view the treegrid record in a paged view. It
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/treegrid/tree-grid-cs5/index.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/tree-grid-cs5/datasource.ts %}
+{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/tree-grid-cs5/index.html %}
+{% include code-snippet/treegrid/tree-grid-cs5/ts/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
@@ -229,8 +232,11 @@ The sorting feature enables you to order the records. It can be enabled by setti
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/treegrid/tree-grid-cs6/index.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/tree-grid-cs6/datasource.ts %}
+{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/tree-grid-cs6/index.html %}
+{% include code-snippet/treegrid/tree-grid-cs6/ts/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
@@ -247,8 +253,11 @@ By default, filtered records are shown along with its parent records. This behav
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/treegrid/tree-grid-cs7/index.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/tree-grid-cs7/datasource.ts %}
+{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/tree-grid-cs7/index.html %}
+{% include code-snippet/treegrid/tree-grid-cs7/ts/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
@@ -272,11 +281,24 @@ Output will be displayed as follows.
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/treegrid/tree-grid-cs8/index.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/tree-grid-cs8/datasource.ts %}
+{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/tree-grid-cs8/index.html %}
+{% include code-snippet/treegrid/tree-grid-cs8/ts/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/treegrid/tree-grid-cs8" %}
 
 > You can refer to our [`JavaScript Tree Grid`](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our JavaScript Tree Grid example [`JavaScript Tree Grid example`](https://ej2.syncfusion.com/demos/#/material/tree-grid/treegrid-overview.html) to knows how to present and manipulate data.
+
+## See Also
+
+* [Getting Started with Syncfusion JavaScript (ES5) documentation](https://ej2.syncfusion.com/javascript/documentation/treegrid/getting-started)
+* [Getting Started with Syncfusion Angular documentation](https://ej2.syncfusion.com/angular/documentation/treegrid/getting-started)
+* [Getting Started with Syncfusion React documentation](https://ej2.syncfusion.com/react/documentation/treegrid/getting-started)
+* [Getting Started with Syncfusion Vue documentation](https://ej2.syncfusion.com/vue/documentation/treegrid/getting-started)
+* [Getting Started with Syncfusion ASP.NET Core documentation](https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/getting-started-core)
+* [Getting Started with Syncfusion ASP.NET MVC documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/tree-grid/getting-started-mvc)
+* [Getting Started with Syncfusion Blazor documentation](https://blazor.syncfusion.com/documentation/treegrid/getting-started-webapp)

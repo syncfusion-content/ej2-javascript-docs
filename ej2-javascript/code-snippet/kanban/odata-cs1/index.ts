@@ -4,7 +4,7 @@ import { Kanban } from '@syncfusion/ej2-kanban';
 import { DataManager, ODataAdaptor } from '@syncfusion/ej2-data';
 
 let data: DataManager = new DataManager({
-    url: 'https://ej2services.syncfusion.com/production/web-services/api/Kanban',
+    url: 'https://services.syncfusion.com/js/production/api/Kanban',
     adaptor: new ODataAdaptor,
     crossDomain: true
 });

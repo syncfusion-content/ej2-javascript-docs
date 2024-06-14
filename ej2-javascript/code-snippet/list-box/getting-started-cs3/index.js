@@ -17,6 +17,7 @@ var listObj = new ej.dropdowns.ListBox({
     //set the data to dataSource property
     dataSource: data,
     selectionSettings: {
+        showCheckbox: true,
         mode: 'Single'
     }
 });

@@ -7,7 +7,7 @@ var node = {
     height: 100,
     sstyle: { fill: '#6BA5D7', strokeColor: 'white' },
     annotations: [{ content: 'Annotation', rotationReference: "Page"}]
-        };
+    };
 
 // initialize Diagram component
 

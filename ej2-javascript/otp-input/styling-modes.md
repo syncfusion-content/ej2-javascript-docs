@@ -15,7 +15,7 @@ Styling modes specify the style variants for the input fields in the OTP Input c
 
 ## Outline mode
 
-You can use the outline style by setting the `stylingMode` property to `outlined`. The default styling mode is `outlined`.
+You can use the outline style by setting the [stylingMode](../api/otp-input#stylingmode) property to [outlined](../api/otp-input/otpInputStyle/). The default styling mode is `outlined`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -52,7 +52,7 @@ You can use the outline style by setting the `stylingMode` property to `outlined
 
 ## Filled mode
 
-You can use the filled style by setting the `stylingMode` property to `filled`.
+You can use the filled style by setting the [stylingMode](../api/otp-input#stylingmode) property to [filled](../api/otp-input/otpInputStyle/).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -89,7 +89,7 @@ You can use the filled style by setting the `stylingMode` property to `filled`.
 
 ## Underline mode
 
-You can use the underline style by setting the `stylingMode` property to `underlined`.
+You can use the underline style by setting the [stylingMode](../api/otp-input#stylingmode) property to [underlined](../api/otp-input/otpInputStyle/).
 
 {% if page.publishingplatform == "typescript" %}
 

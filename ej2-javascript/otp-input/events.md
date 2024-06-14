@@ -15,7 +15,7 @@ This section describes the OTP Input events that will be triggered when appropri
 
 ## created
 
-The OTP Input control triggers the `created` event when the control rendering is completed.
+The OTP Input control triggers the [created](../api/otp-input#created) event when the control rendering is completed.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -43,7 +43,7 @@ The OTP Input control triggers the `created` event when the control rendering is
 
 ## focus 
 
-The OTP Input control triggers the `focus ` event when the OTP Input is focused. The `OtpFocusEventArgs ` passed as an event argument provides the details of the focus event.
+The OTP Input control triggers the [focus](../api/otp-input#focus) event when the OTP Input is focused. The [OtpFocusEventArgs](../api/otp-input/otpFocusEventArgs/) passed as an event argument provides the details of the focus event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -71,7 +71,7 @@ The OTP Input control triggers the `focus ` event when the OTP Input is focused.
 
 ## blur
 
-The OTP Input control triggers the `blur` event when the OTP Input is focused out. The `OtpFocusEventArgs ` passed as an event argument provides the details of the blur event.
+The OTP Input control triggers the [blur](../api/otp-input#blur) event when the OTP Input is focused out. The [OtpFocusEventArgs](../api/otp-input/otpFocusEventArgs/) passed as an event argument provides the details of the blur event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -99,7 +99,7 @@ The OTP Input control triggers the `blur` event when the OTP Input is focused ou
 
 ## input
 
-The OTP Input control triggers the `input` event when the value of each OTP Input is changed. The `OtpInputEventArgs` passed as an event argument provides the details of the each value is changed.
+The OTP Input control triggers the [input](../api/otp-input#input) event when the value of each OTP Input is changed. The [OtpInputEventArgs](../api/otp-input/otpInputEventArgs/) passed as an event argument provides the details of the each value is changed.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -127,7 +127,7 @@ The OTP Input control triggers the `input` event when the value of each OTP Inpu
 
 ## valueChanged
 
-The OTP Input control triggers the `valueChanged` event when the value of the OTP Input is changed and matching the Otp input length. The `OtpChangedEventArgs` passed as an event argument provides the details when value is changed.
+The OTP Input control triggers the [valueChanged](../api/otp-input#valuechanged) event when the value of the OTP Input is changed and matching the OTP Input length. The [OtpChangedEventArgs](../api/otp-input/otpChangedEventArgs/) passed as an event argument provides the details when value is changed.
 
 {% if page.publishingplatform == "typescript" %}
 

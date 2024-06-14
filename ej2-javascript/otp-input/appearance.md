@@ -15,7 +15,7 @@ You can also customize the appearance of OTP Input control.
 
 ## Setting input length
 
-You can specify the length of OTP by using the `length` property. The default value is `4`.
+You can specify the length of OTP by using the [length](../api/otp-input#length) property. The default value is `4`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -52,7 +52,7 @@ You can specify the length of OTP by using the `length` property. The default va
 
 ## Disable inputs
 
-You can disable the OTP Input control by using the `disabled` property. By default the value is `false`.
+You can disable the OTP Input control by using the [disabled](../api/otp-input#disabled) property. By default the value is `false`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -89,7 +89,7 @@ You can disable the OTP Input control by using the `disabled` property. By defau
 
 ## CssClass
 
-You can customize the appearance of the OTP Input control, such as by changing its colors, fonts, sizes or other visual aspects by using the `cssClass` property.
+You can customize the appearance of the OTP Input control, such as by changing its colors, fonts, sizes or other visual aspects by using the [cssClass](../api/otp-input#cssclass) property.
 
 The OTP input control supports the following predefined styles that can be defined using the `cssClass` property. You can customize by replacing the `cssClass` property with the below defined class names.
 

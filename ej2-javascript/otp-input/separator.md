@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Separator in ##Platform_Name## OTP Input control
 
-The separator in OTP Input specifies the character or symbol used to separate each input field in the OTP Input control. This separator is displayed between each input field to visually distinguish between each inputs. You can set the separator character by using the `separator` property.
+The separator in OTP Input specifies the character or symbol used to separate each input field in the OTP Input control. This separator is displayed between each input field to visually distinguish between each inputs. You can set the separator character by using the [separator](../api/otp-input#separator) property.
 
 {% if page.publishingplatform == "typescript" %}
 

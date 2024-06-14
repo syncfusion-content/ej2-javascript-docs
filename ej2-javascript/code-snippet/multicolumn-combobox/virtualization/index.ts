@@ -36,7 +36,6 @@ let virtualComboboxObj: MultiColumnComboBox = new MultiColumnComboBox({
     fields: { text: 'Engineer', value: 'TaskID'},
     popupHeight: '230px',
     placeholder: 'Select an engineer',
-    width: '500px',
     gridSettings: { rowHeight: 40 }
 });
 virtualComboboxObj.appendTo('#multicolumn');

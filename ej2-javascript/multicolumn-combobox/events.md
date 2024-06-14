@@ -15,7 +15,7 @@ This section describes the multicolumn combobox events that will be triggered wh
 
 ## actionBegin
 
-The `actionBegin` event is triggered when actions such as sorting, filtering, grouping starts.
+The [actionBegin](../api/multicolumn-combobox#actionbegin) event is triggered when actions such as sorting, filtering, grouping starts.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -43,7 +43,7 @@ The `actionBegin` event is triggered when actions such as sorting, filtering, gr
 
 ## actionFailure
 
-The `actionFailure` event is triggered when the data fetch request from the remote server fails.
+The [actionFailure](../api/multicolumn-combobox#actionfailure) event is triggered when the data fetch request from the remote server fails.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -71,7 +71,7 @@ The `actionFailure` event is triggered when the data fetch request from the remo
 
 ## actionComplete
 
-The `actionComplete` event is triggered when actions such as sorting, filtering, grouping are completed.
+The [actionComplete](../api/multicolumn-combobox#actioncomplete) event is triggered when actions such as sorting, filtering, grouping are completed.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -99,7 +99,7 @@ The `actionComplete` event is triggered when actions such as sorting, filtering,
 
 ## select
 
-The `select` event is triggered when the popup item is selected.
+The [select](../api/multicolumn-combobox#select) event is triggered when the popup item is selected.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -127,7 +127,7 @@ The `select` event is triggered when the popup item is selected.
 
 ## change
 
-The `change` event is triggered when the popup item is selected or when the model value is changed.
+The [change](../api/multicolumn-combobox#change) event is triggered when the popup item is selected or when the model value is changed.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -155,7 +155,7 @@ The `change` event is triggered when the popup item is selected or when the mode
 
 ## filtering
 
-The `filtering` event is triggered when typing a character in the component.
+The [filtering](../api/multicolumn-combobox#filtering) event is triggered when typing a character in the component.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -183,7 +183,7 @@ The `filtering` event is triggered when typing a character in the component.
 
 ## open
 
-The `open` event is triggered when the popup is opened.
+The [open](../api/multicolumn-combobox#open) event is triggered when the popup is opened.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -211,4 +211,28 @@ The `open` event is triggered when the popup is opened.
 
 ## close
 
-The `close` event is triggered when the popup is closed.
+The [close](../api/multicolumn-combobox#close) event is triggered when the popup is closed.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/multicolumn-combobox/close-event/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/multicolumn-combobox/close-event/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/multicolumn-combobox/close-event/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/multicolumn-combobox/close-event/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}

@@ -37,7 +37,6 @@ let columnsData: ColumnModel[] = [
 let multiComboBoxObject: MultiColumnComboBox = new MultiColumnComboBox({
     dataSource: empData,
     columns: columnsData,
-    width: '500px',
     fields: { text: 'Name', value: 'EmpID' },
     query: new Query().select(['Name', 'EmpID', 'Designation', 'Country']).take(7),
 });

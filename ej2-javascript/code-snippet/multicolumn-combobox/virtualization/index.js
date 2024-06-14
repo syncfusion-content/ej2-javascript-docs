@@ -31,7 +31,6 @@ var virtualComboboxObj = new ej.multicolumncombobox.MultiColumnComboBox({
   fields: { text: 'Engineer', value: 'TaskID'},
   placeholder: 'Select an engineer',
   popupHeight: '230px',
-  width: '500px',
   gridSettings: { rowHeight: 40 }
 });
 virtualComboboxObj.appendTo('#multicolumn');

@@ -31,7 +31,6 @@ var columnsData = [
 var multiComboBoxObject = new ej.multicolumncombobox.MultiColumnComboBox({
   dataSource: empData,
   columns: columnsData,
-  width: '500px',
   fields: { text: 'Name', value: 'EmpID' },
   allowFiltering: true,
   filterType: 'EndsWith'

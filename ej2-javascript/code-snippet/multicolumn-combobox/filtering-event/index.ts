@@ -38,7 +38,6 @@ let multiComboBoxObject: MultiColumnComboBox = new MultiColumnComboBox({
     columns: columnsData,
     fields: { text: 'Name', value: 'EmpID' },
     text: 'Michael',
-    width: '500px',
     filtering: (args: FilteringEventArgs) => {
         // Your required action here
     }

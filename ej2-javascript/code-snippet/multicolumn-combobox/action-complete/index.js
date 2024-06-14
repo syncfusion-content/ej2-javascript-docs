@@ -33,7 +33,6 @@ var multiComboBoxObject = new ej.multicolumncombobox.MultiColumnComboBox({
   columns: columnsData,
   fields: { text: 'Name', value: 'EmpID' },
   text: 'Michael',
-  width: '500px',
   actionComplete: () => {
     // Your required action here
   }

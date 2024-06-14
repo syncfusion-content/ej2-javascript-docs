@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Filtering in ##Platform_Name## MultiColumn ComboBox control
 
-The MultiColumn ComboBox has built-in support to filter the data items, which allows users to filter the list of items based on their input. The filter operation starts as soon as you start typing characters in the component. The filtering can be disabled by setting the `allowFiltering` to `false`. By default the value is `true`.
+The MultiColumn ComboBox has built-in support to filter the data items, which allows users to filter the list of items based on their input. The filter operation starts as soon as you start typing characters in the component. The filtering can be disabled by setting the [allowFiltering](../api/multicolumn-combobox#allowfiltering) to `false`. By default the value is `true`.
 
 ## Change the filter type
 
-You can change the filter type by using the `filterType` property. The `filterType` supports filtering options such as`StartsWith`, `EndsWith` and `Contains`.
+You can change the filter type by using the [filterType](../api/multicolumn-combobox#filtertype) property. The `filterType` supports filtering options such as`StartsWith`, `EndsWith` and `Contains`.
 
 In the following example, data filtering is done with `EndsWith` type.
 

@@ -32,7 +32,6 @@ var multiComboBoxObject = new ej.multicolumncombobox.MultiColumnComboBox({
   dataSource: empData,
   columns: columnsData,
   fields: { text: 'Name', value: 'EmpID' },
-  width: '500px',
   allowSorting: true,
   sortOrder: 'Descending',
   sortType: 'MultipleColumns'

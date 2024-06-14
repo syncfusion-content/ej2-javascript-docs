@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## Setting text
 
-You can use `text` property to set the display text of the selected item.
+You can use [text](../api/multicolumn-combobox#text) property to set the display text of the selected item.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,7 +44,7 @@ You can use `text` property to set the display text of the selected item.
 
 ## Setting value
 
-You can use `value` property to set the value of the selected item.
+You can use [value](../api/multicolumn-combobox#value) property to set the value of the selected item.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -75,7 +75,7 @@ You can use `value` property to set the value of the selected item.
 
 ## Setting index
 
-You can use `index` property to set the index of the selected item.
+You can use [index](../api/multicolumn-combobox#index) property to set the index of the selected item.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -106,7 +106,7 @@ You can use `index` property to set the index of the selected item.
 
 ## Adding query
 
-The `query` property is used to accept the external query, which will execute along with the data processing.
+The [query](../api/multicolumn-combobox#query) property is used to accept the external query, which will execute along with the data processing.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -137,7 +137,7 @@ The `query` property is used to accept the external query, which will execute al
 
 ## Adding placeholder
 
-You can use the `placeholder ` property to set a short hint that describes the expected value in the multicolumn combobox control.
+You can use the [placeholder](../api/multicolumn-combobox#placeholder) property to set a short hint that describes the expected value in the multicolumn combobox control.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -168,7 +168,7 @@ You can use the `placeholder ` property to set a short hint that describes the e
 
 ## Setting the floatlabel type
 
-You can use the `floatLabelType` property to display a floating label above the input element. This will work when a placeholder is used.
+You can use the [floatLabelType](../api/multicolumn-combobox#floatlabeltype) property to display a floating label above the input element. This will work when a placeholder is used.
 
 You can change the `floatLabelType` type to `Never`, `Always`, `Auto`.
 
@@ -207,7 +207,7 @@ The following example shows the `floatLabelType` with `Auto`
 
 ## Adding html attributes
 
-You can use the `htmlAttributes` property to add HTML attributes to the multicolumn combobox.
+You can use the [htmlAttributes](../api/multicolumn-combobox#htmlattributes) property to add HTML attributes to the multicolumn combobox.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -238,7 +238,7 @@ You can use the `htmlAttributes` property to add HTML attributes to the multicol
 
 ## Setting width
 
-You can use the `width` property to set the width of the control. By default, the width is determined by the width of its parent container.
+You can use the [width](../api/multicolumn-combobox#width) property to set the width of the control. By default, the width is determined by the width of its parent container.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -269,7 +269,7 @@ You can use the `width` property to set the width of the control. By default, th
 
 ## Setting popup width
 
-You can use the `popupWidth` property to set the width of the popup list. By default, the popup width is determined by the width of the control.
+You can use the [popupWidth](../api/multicolumn-combobox#popupwidth) property to set the width of the popup list. By default, the popup width is determined by the width of the control.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -300,7 +300,7 @@ You can use the `popupWidth` property to set the width of the popup list. By def
 
 ## Setting popup height
 
-You can use the `popupHeight` property to set the height of the popup list. By default, the value is `300px`.
+You can use the [popupHeight](../api/multicolumn-combobox#popupheight) property to set the height of the popup list. By default, the value is `300px`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -331,7 +331,7 @@ You can use the `popupHeight` property to set the height of the popup list. By d
 
 ## Adding clear button
 
-The `showClearButton` property is used to specify whether to show or hide the clear button. By default, its value is `false`. When the clear button is clicked, the value, text and index properties are reset to null.
+The [showClearButton](../api/multicolumn-combobox#showclearbutton) property is used to specify whether to show or hide the clear button. By default, its value is `false`. When the clear button is clicked, the value, text and index properties are reset to null.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -362,11 +362,38 @@ The `showClearButton` property is used to specify whether to show or hide the cl
 
 ## CssClass
 
-You can use the `cssClass` property to customize the multicolumn combobox control.
+You can use the [cssClass](../api/multicolumn-combobox#cssclass) property to customize the multicolumn combobox control.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/multicolumn-combobox/cssclass/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/multicolumn-combobox/cssclass/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/multicolumn-combobox/cssclass" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/multicolumn-combobox/cssclass/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/multicolumn-combobox/cssclass/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/multicolumn-combobox/cssclass" %}
+{% endif %}
 
 ## Disabled
 
-The `disabled` property is used to disable the multicolumn combobox. By default, its value is `false`.
+The [disabled](../api/multicolumn-combobox#disabled) property is used to disable the multicolumn combobox. By default, its value is `false`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -397,7 +424,7 @@ The `disabled` property is used to disable the multicolumn combobox. By default,
 
 ## Setting read only
 
-You can use `readonly` property to disable the user interactions in the multicolumn combobox control.
+You can use [readonly](../api/multicolumn-combobox#readonly) property to disable the user interactions in the multicolumn combobox control.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -428,11 +455,11 @@ You can use `readonly` property to disable the user interactions in the multicol
 
 ## Configure grid settings
 
-You can use the `gridSettings` property to configure the columns in the popup content. You can customize the gridSettings by using `gridSettingsModel`, which provides options such as `gridLines`, `rowHeight` and `enableAltRow`.
+You can use the [gridSettings](../api/multicolumn-combobox#gridsettings) property to configure the columns in the popup content. You can customize the gridSettings by using [gridSettingsModel](../api/multicolumn-combobox/gridSettingsModel/), which provides options such as `gridLines`, `rowHeight` and `enableAltRow`.
 
 ### Setting grid lines
 
-You can use `gridLines` property to set the mode of the gridlines. You can set `Horizontal`, `Vertical`, `Default`, `None` and `Both`.
+You can use [gridLines](../api/multicolumn-combobox/gridSettingsModel/#gridlines) property to set the mode of the gridlines. You can set `Horizontal`, `Vertical`, `Default`, `None` and `Both`.
 
 * Both: Displays both horizontal and vertical grid lines.
 * None: No grid lines are displayed.
@@ -472,7 +499,7 @@ In the following examples, gridLines is set with `Horizontal`.
 
 ### Setting row height
 
-You can use `rowHeight` property to set the height of the rows in the popup content.
+You can use [rowHeight](../api/multicolumn-combobox/gridSettingsModel/#rowheight) property to set the height of the rows in the popup content.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -504,7 +531,7 @@ You can use `rowHeight` property to set the height of the rows in the popup cont
 
 ### Setting alternate rows
 
-You can use the `enableAltRow` property to enable the alternate row styles in the multicolumn combobox. If enabled, it will add the `e-altrow` CSS class to the list of items in the popup.
+You can use the [enableAltRow](../api/multicolumn-combobox/gridSettingsModel/#enablealtrow) property to enable the alternate row styles in the multicolumn combobox. If enabled, it will add the `e-altrow` CSS class to the list of items in the popup.
 
 {% if page.publishingplatform == "typescript" %}
 

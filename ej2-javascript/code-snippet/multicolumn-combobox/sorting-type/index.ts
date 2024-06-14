@@ -37,7 +37,6 @@ let multiComboBoxObject: MultiColumnComboBox = new MultiColumnComboBox({
     dataSource: empData,
     columns: columnsData,
     fields: { text: 'Name', value: 'EmpID' },
-    width: '500px',
     allowSorting: true,
     sortOrder: SortOrder.Descending,
     sortType: 'MultipleColumns'

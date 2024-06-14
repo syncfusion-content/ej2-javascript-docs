@@ -11,14 +11,41 @@ domainurl: ##DomainURL##
 
 # Localization in ##Platform_Name## MultiColumn ComboBox control
 
-The Localization library allows you to localize static text content of the `noRecordsTemplate` and `actionFailureTemplate` properties according to the culture currently assigned to the MultiColumn ComboBox.
+The Localization library allows you to localize static text content of the [noRecordsTemplate](../api/multicolumn-combobox#norecordstemplate) property according to the culture currently assigned to the MultiColumn ComboBox.
 
 | Locale key | en-US (default)  |
 |------|------|
 | noRecordsTemplate |  No records found |
-| actionFailureTemplate | The request failed |
 
 ## Loading translations
 
 To load translation object to your application, use `load` function of **L10n** class.
 
+In the following sample, French culture is set to the MultiColumn ComboBox and no data is loaded. Hence, the noRecordsTemplate property displays its text in French culture.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/multicolumn-combobox/localization/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/multicolumn-combobox/localization/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/multicolumn-combobox/localization" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/multicolumn-combobox/localization/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/multicolumn-combobox/localization/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/multicolumn-combobox/localization" %}
+{% endif %}

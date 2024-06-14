@@ -37,8 +37,7 @@ let multiComboBoxObject: MultiColumnComboBox = new MultiColumnComboBox({
     dataSource: empData,
     columns: columnsData,
     fields: { text: 'Name', value: 'EmpID' },
-    text: 'Michael',
-    width: '500px'
+    text: 'Michael'
 });
 
 // render initialized MultiColumn ComboBox

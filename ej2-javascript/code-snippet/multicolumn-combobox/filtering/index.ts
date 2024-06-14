@@ -36,7 +36,6 @@ let columnsData: ColumnModel[] = [
 let multiComboBoxObject: MultiColumnComboBox = new MultiColumnComboBox({
     dataSource: empData,
     columns: columnsData,
-    width: '500px',
     fields: { text: 'Name', value: 'EmpID' },
     allowFiltering: true,
     filterType: 'EndsWith'

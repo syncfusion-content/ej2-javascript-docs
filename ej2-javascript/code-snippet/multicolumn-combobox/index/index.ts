@@ -35,7 +35,6 @@ let columnsData: ColumnModel[] = [
 
 let multiComboBoxObject: MultiColumnComboBox = new MultiColumnComboBox({
     dataSource: empData,
-    width: '500px',
     columns: columnsData,
     fields: { text: 'Name', value: 'EmpID' },
     index: '1',

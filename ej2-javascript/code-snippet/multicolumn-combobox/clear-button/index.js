@@ -30,10 +30,10 @@ var columnsData = [
 
 var multiComboBoxObject = new ej.multicolumncombobox.MultiColumnComboBox({
   dataSource: empData,
-  width: '500px',
   columns: columnsData,
   fields: { text: 'Name', value: 'EmpID' },
-  showClearButton: true
+  showClearButton: true,
+  text: 'Michael'
 });
 
 multiComboBoxObject.appendTo('#multicolumn');

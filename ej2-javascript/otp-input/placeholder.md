@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 The placeholder in OTP Input specifies the text that is shown as a hint or placeholder until the user enters a value in the input field. It acts as a guidance for the users regarding the expected input format or purpose of the input field.
 
-You can set the placeholder text by using the `placeholder` property. Additionally, when providing a single character as the placeholder value all input fields within the OTP Input control will display the same character.
+You can set the placeholder text by using the [placeholder](../api/otp-input#placeholder) property. Additionally, when providing a single character as the placeholder value all input fields within the OTP Input control will display the same character.
 
 {% if page.publishingplatform == "typescript" %}
 

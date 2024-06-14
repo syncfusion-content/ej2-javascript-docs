@@ -35,10 +35,10 @@ let columnsData: ColumnModel[] = [
 
 let multiComboBoxObject: MultiColumnComboBox = new MultiColumnComboBox({
     dataSource: empData,
-    width: '500px',
     columns: columnsData,
     fields: { text: 'Name', value: 'EmpID' },
-    showClearButton: true
+    showClearButton: true,
+    text: 'Michael'
 });
 
 // render initialized MultiColumn ComboBox

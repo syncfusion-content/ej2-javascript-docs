@@ -30,7 +30,6 @@ var columnsData = [
 
 var multiComboBoxObject = new ej.multicolumncombobox.MultiColumnComboBox({
   dataSource: empData,
-  width: '500px',
   columns: columnsData,
   fields: { text: 'Name', value: 'EmpID', groupBy: 'Country' },
   text: 'Michael'

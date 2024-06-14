@@ -10,7 +10,6 @@ let defaultSidebar: Sidebar = new Sidebar({
 });
 defaultSidebar.appendTo('#default');
     //end of sidebar initialization
-}
 
 
 

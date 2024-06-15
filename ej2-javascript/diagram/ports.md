@@ -138,4 +138,4 @@ The [`connectionDirection`](../api/diagram/port#connectionDirection) property of
           
 {% previewsample "page.domainurl/code-snippet/diagram/ports-cs6" %}
 
-![maxSegmentThumb](images\connectionDirection1.png)
+![maxSegmentThumb](images/connectionDirection1.png)

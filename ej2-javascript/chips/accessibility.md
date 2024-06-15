@@ -68,7 +68,7 @@ The Chips component's accessibility levels are ensured through an [accessibility
 
 The accessibility compliance of the Chips component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/chips.html) in a new window to evaluate the accessibility of the Chips component with accessibility tools.
 
-{% previewsample "https://ej2.syncfusion.com/accessibility/chips.html" %}
+{% previewsample "page.domainurl/code-snippet/chips/accessibility-cs1" %}
 
 ## See also
 

@@ -27,7 +27,7 @@ BlockContentControl: Among paragraphs and tables, as a child of a Body, HeaderFo
 * Drop-Down List and Combo Box
 * Picture
 
-## Insert form field
+## Insert content control
 
 Content control can be inserted using [`insertContentControl`](../api/document-editor/editor/#insertContentControl) method in editor module.
 

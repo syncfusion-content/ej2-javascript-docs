@@ -370,7 +370,7 @@ The constraints property of annotation allows you to enable/disable certain anno
 
 ## Annotation rotation
 
-The [rotationReference](../api/diagram/shapeAnnotationModel/#rotationreference)  property of an annotation allows you to control whether the text should rotate relative to its parent node or the Page. The following code examples illustrate how to configure rotationReference for an annotation.
+The [rotationReference](https://ej2.syncfusion.com/documentation/api/diagram/shapeAnnotationModel/#rotationreference)  property of an annotation allows you to control whether the text should rotate relative to its parent node or the Page. The following code examples illustrate how to configure rotationReference for an annotation.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -385,6 +385,6 @@ The [rotationReference](../api/diagram/shapeAnnotationModel/#rotationreference) 
 
 | Value | Description | Image |
 | -------- | -------- | -------- |
-| Page | When this option is set, the annotation remains fixed in its original orientation even if its parent node is rotated. | ![No_Rotation](images\page_rotationreference.gif) |
-| Parent | In this case, the annotation rotates along with its parent node. | ![Rotation](images\parent_rotationreference.gif)|
+| Page | When this option is set, the annotation remains fixed in its original orientation even if its parent node is rotated. | ![No_Rotation](images/page_rotationreference.gif) |
+| Parent | In this case, the annotation rotates along with its parent node. | ![Rotation](images/parent_rotationreference.gif)|
 

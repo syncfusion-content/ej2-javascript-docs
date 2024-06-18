@@ -178,6 +178,35 @@ spreadsheet.openFromJson({ file: file }, { ignoreStyle: true });
 | ignoreImage | If **true**, images will be excluded when loading the JSON data. |
 | ignoreNote | If **true**, notes will be excluded when loading the JSON data. |
 
+The following code snippet demonstrates how to configure the deserialization options and pass them as arguments to the openFromJson method:
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/spreadsheet/open-from-json/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/spreadsheet/open-from-json/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/spreadsheet/open-from-json" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/spreadsheet/open-from-json/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/spreadsheet/open-from-json/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/spreadsheet/open-from-json" %}
+{% endif %}
+
 ### External workbook confirmation dialog
 
 When you open an excel file that contains external workbook references, you will see a confirmation dialog. This dialog allows you to either continue with the file opening or cancel the operation. This confirmation dialog will appear only if you set the `AllowExternalWorkbook` property value to **false** during the open request, as shown below. This prevents the spreadsheet from displaying inconsistent data.
@@ -391,6 +420,35 @@ spreadsheet.saveAsJson({ onlyValues: true });
 | ignoreChart | If **true**, excludes charts from the JSON output. |
 | ignoreImage | If **true**, excludes images from the JSON output. |
 | ignoreNote | If **true**, excludes notes from the JSON output. |
+
+The following code snippet demonstrates how to configure the serialization options and pass them as arguments to the saveAsJson method:
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/spreadsheet/save-as-json/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/spreadsheet/save-as-json/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/spreadsheet/save-as-json" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/spreadsheet/save-as-json/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/spreadsheet/save-as-json/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/spreadsheet/save-as-json" %}
+{% endif %}
 
 ### Supported file formats
 

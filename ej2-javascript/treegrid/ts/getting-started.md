@@ -236,7 +236,7 @@ The sorting feature enables you to order the records. It can be enabled by setti
 {% include code-snippet/treegrid/tree-grid-cs6/datasource.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/tree-grid-cs6/ts/index.html %}
+{% include code-snippet/treegrid/tree-grid-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
           

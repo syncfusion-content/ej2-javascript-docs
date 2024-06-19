@@ -31,7 +31,7 @@ You can use TreeGrid [`dataSource`](../../api/treegrid/#datasource) property to 
 {% include code-snippet/treegrid/data-binding-cs1/datasource.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/data-binding-cs1/ts/index.html %}
+{% include code-snippet/treegrid/data-binding-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -47,7 +47,7 @@ You can use TreeGrid [`dataSource`](../../api/treegrid/#datasource) property to 
 {% include code-snippet/treegrid/data-binding-cs1/es5-datasource.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/data-binding-cs1/js/index.html %}
+{% include code-snippet/treegrid/data-binding-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -55,7 +55,7 @@ The following code example illustrates how to add connector at runtime.
 
 * The collection of connectors can be dynamically added using 'addElements' method. Each time an element is added to the diagram canvas, the 'collectionChange' event will be triggered.
 
-The following code illustrates how to add a connectors collection at runtime.
+The following code illustrates how to add connectors collection at runtime.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

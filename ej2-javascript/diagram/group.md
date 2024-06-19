@@ -122,7 +122,7 @@ The following code illustrates how a group node is added at runtime.
 
 * The collection of group nodes can be dynamically added using 'addElements' method.Each time an element is added to the diagram canvas, the 'collectionChange' event will be triggered.
 
-The following code illustrates how to add a group nodes collection at runtime.
+The following code illustrates how to add group nodes collection at runtime.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -38,7 +38,7 @@ The following code example shows you how to bind the hierarchical local data int
 {% include code-snippet/treegrid/data-binding-cs2/datasource.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/data-binding-cs2/ts/index.html %}
+{% include code-snippet/treegrid/data-binding-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -54,7 +54,7 @@ The following code example shows you how to bind the hierarchical local data int
 {% include code-snippet/treegrid/data-binding-cs2/es5-datasource.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/data-binding-cs2/js/index.html %}
+{% include code-snippet/treegrid/data-binding-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -80,7 +80,7 @@ TreeGrid is rendered from Self-Referential data structures by providing two fiel
 {% include code-snippet/treegrid/data-binding-cs3/datasource.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/data-binding-cs3/ts/index.html %}
+{% include code-snippet/treegrid/data-binding-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -96,7 +96,7 @@ TreeGrid is rendered from Self-Referential data structures by providing two fiel
 {% include code-snippet/treegrid/data-binding-cs3/es5-datasource.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/data-binding-cs3/js/index.html %}
+{% include code-snippet/treegrid/data-binding-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 

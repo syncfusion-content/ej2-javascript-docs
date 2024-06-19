@@ -310,7 +310,7 @@ In root-level paging mode, paging is based on the root-level rows only, i.e., it
 {% include code-snippet/treegrid/tree-grid-cs1/es5-datasource.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/tree-grid-cs1/js/index.html %}
+{% include code-snippet/treegrid/tree-grid-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -350,7 +350,7 @@ By default, filtered records are shown along with its parent records. This behav
 {% include code-snippet/treegrid/tree-grid-cs3/es5-datasource.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/tree-grid-cs3/js/index.html %}
+{% include code-snippet/treegrid/tree-grid-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
         

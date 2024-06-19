@@ -56,4 +56,4 @@ The [disableItem](../api/multi-select/#disableItem) method can be used to handle
 
 If you want to disabled the overall component to set the [enabled](../api/multi-select/#enabled) property to false.
 
-{% [Disabled MultiSelect Component](././images/multiselect-disable.png)" %}
+![Disabled MultiSelect Component](../images/multiselect-disable.png)

@@ -217,7 +217,7 @@ The paging feature enables users to view the treegrid record in a paged view. It
 {% include code-snippet/treegrid/tree-grid-cs5/datasource.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/tree-grid-cs5/ts/index.html %}
+{% include code-snippet/treegrid/tree-grid-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
@@ -257,7 +257,7 @@ By default, filtered records are shown along with its parent records. This behav
 {% include code-snippet/treegrid/tree-grid-cs7/datasource.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/tree-grid-cs7/ts/index.html %}
+{% include code-snippet/treegrid/tree-grid-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
@@ -285,7 +285,7 @@ Output will be displayed as follows.
 {% include code-snippet/treegrid/tree-grid-cs8/datasource.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/tree-grid-cs8/ts/index.html %}
+{% include code-snippet/treegrid/tree-grid-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
@@ -322,7 +322,7 @@ The following code example shows how to use the [actionFailure](https://ej2.sync
 {% include code-snippet/treegrid/error-handling/datasource.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/error-handling/ts/index.html %}
+{% include code-snippet/treegrid/error-handling/index.html %}
 {% endhighlight %}
 {% endtabs %}
           

@@ -56,4 +56,4 @@ The [disableItem](../api/combo-box/#disableItem) method can be used to handle dy
 
 If you want to disabled the overall component to set the [enabled](../api/combo-box/#enabled) property to false.
 
-{% [Disabled ComboBox Component](././images/combobox-disable.png)" %}
+![Disabled ComboBox Component](../images/combobox-disable.png)

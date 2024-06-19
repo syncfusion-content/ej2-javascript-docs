@@ -61,7 +61,7 @@ The following code illustrates how to add a node.
 
 * The collection of nodes can be dynamically added using 'addElements' method.Each time an element is added to the diagram canvas, the 'collectionChange' event will be triggered.
 
-The following code illustrates how to add a nodes collection at runtime.
+The following code illustrates how to add nodes collection at runtime.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

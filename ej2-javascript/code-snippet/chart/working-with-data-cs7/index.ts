@@ -1,10 +1,9 @@
 import { Chart, ColumnSeries, Category } from '@syncfusion/ej2-charts';
-import { DataManager, Query, ODataAdaptor } from '@syncfusion/ej2-data';
+import { DataManager, Query, ODataV4Adaptor } from '@syncfusion/ej2-data';
 Chart.Inject(ColumnSeries, Category);
 let dataManager: DataManager = new DataManager({
-    url: 'https://services.odata.org/V3/Northwind/Northwind.svc/Orders/',
-    adaptor: new ODataAdaptor(),
-    crossDomain: true
+    url: 'https://services.odata.org/V4/Northwind/Northwind.svc/Orders',
+    adaptor: new ODataV4Adaptor()
 });
 let query: Query = new Query();
 

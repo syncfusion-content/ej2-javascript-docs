@@ -1,9 +1,9 @@
 var query = new ej.data.Query();
 
 var data = new ej.data.DataManager({
-    url: 'https://services.odata.org/V3/Northwind/Northwind.svc/Orders/',
+    url: 'https://services.syncfusion.com/js/production/api/orders',
     adaptor: new ej.data.ODataAdaptor(),
-    crossDomain: true
+    offline: true
 });
 
 

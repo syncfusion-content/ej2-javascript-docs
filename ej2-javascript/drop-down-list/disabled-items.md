@@ -56,4 +56,4 @@ The [disableItem](../api/drop-down-list/#disableItem) method can be used to hand
 
 If you want to disabled the overall component to set the [enabled](../api/drop-down-list/#enabled) property to false.
 
-{% [Disabled DropDownList Component](././images/dropdownlist-disable.png)" %}
+![Disabled DropDownList Component](../images/dropdownlist-disable.png)

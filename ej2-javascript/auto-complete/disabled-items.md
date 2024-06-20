@@ -56,4 +56,4 @@ The [disableItem](../api/auto-complete/#disableItem) method can be used to handl
 
 If you want to disabled the overall component to set the [enabled](../api/auto-complete/#enabled) property to false.
 
-{% [Disabled AutoComplete Component](././images/autocomplete-disable.png)" %}
+![Disabled AutoComplete Component](../images/autocomplete-disable.png)

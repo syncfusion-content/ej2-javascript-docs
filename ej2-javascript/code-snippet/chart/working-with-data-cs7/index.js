@@ -1,9 +1,8 @@
 var query = new ej.data.Query();
 
 var data = new ej.data.DataManager({
-    url: 'https://services.odata.org/V3/Northwind/Northwind.svc/Orders/',
-    adaptor: new ej.data.ODataAdaptor(),
-    crossDomain: true
+    url: 'https://services.odata.org/V4/Northwind/Northwind.svc/Orders',
+    adaptor: new ej.data.ODataV4Adaptor()
 });
 
 

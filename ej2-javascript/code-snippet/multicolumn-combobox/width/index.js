@@ -18,7 +18,7 @@ var empData = [
   { "EmpID": 1017, "Name": "Tom Williams", "Designation": "Developer", "Country": "Ukraine" },
   { "EmpID": 1018, "Name": "Grace", "Designation": "Developer", "Country": "Australia" },
   { "EmpID": 1019, "Name": "Olivia", "Designation": "Team Lead", "Country": "Ireland" },
-  { "EmpID": 1020, "Name": "James", "Designation": "Developer", "Country": "China" },
+  { "EmpID": 1020, "Name": "James", "Designation": "Developer", "Country": "China" }
 ];
 
 var columnsData = [

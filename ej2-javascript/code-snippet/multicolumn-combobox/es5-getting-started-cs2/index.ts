@@ -4,13 +4,11 @@
    <head>
         <title>Essential JS 2</title>
         <!-- Essential JS 2 material theme -->
-        <link href="//cdn.syncfusion.com/ej2/21.2.3/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
-        <link href="//cdn.syncfusion.com/ej2/21.2.3/ej2-inputs/styles/material.css" rel="stylesheet" type="text/css"/>
-        <link href="//cdn.syncfusion.com/ej2/21.2.3/multicolumn-combobox/styles/material.css" rel="stylesheet" type="text/css"/>
+        <link href="https://cdn.syncfusion.com/ej2/20.3.56/material.css" rel="stylesheet" />
         <!-- Essential JS 2 all script -->
         <!-- <script src="https://cdn.syncfusion.com/ej2/21.2.3/dist/ej2.min.js" type="text/javascript"></script> -->
 
-        <!-- Essential JS 2 ComboBox's dependent scripts -->
+        <!-- Essential JS 2 MultiColumn ComboBox's dependent scripts -->
         <script src="//cdn.syncfusion.com/ej2/21.2.3/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
         <script src="//cdn.syncfusion.com/ej2/21.2.3/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
         <script src="//cdn.syncfusion.com/ej2/21.2.3/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
@@ -19,6 +17,11 @@
         <script src="//cdn.syncfusion.com/ej2/21.2.3/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
         <script src="//cdn.syncfusion.com/ej2/21.2.3/ej2-grids/dist/global/ej2-grids.min.js" type="text/javascript"></script>
         <script src="//cdn.syncfusion.com/ej2/21.2.3/ej2-multicolumn-combobox/dist/global/ej2-multicolumn-combobox.min.js" type="text/javascript"></script>
+        <script src="//cdn.syncfusion.com/ej2/21.2.3/ej2-calendars/dist/global/ej2-calendars.min.js" type="text/javascript"></script>
+        <script src="//cdn.syncfusion.com/ej2/21.2.3/ej2-excel-export/dist/global/ej2-excel-export.min.js" type="text/javascript"></script>
+        <script src="//cdn.syncfusion.com/ej2/21.2.3/ej2-pdf-export/dist/global/ej2-pdf-export.min.js" type="text/javascript"></script>
+        <script src="//cdn.syncfusion.com/ej2/21.2.3/ej2-compression/dist/global/ej2-compression.min.js" type="text/javascript"></script>
+        <script src="//cdn.syncfusion.com/ej2/21.2.3/ej2-file-utils/dist/global/ej2-file-utils.min.js" type="text/javascript"></script>
 
         <!--style reference from app-->
         <link href="../styles.css" rel="stylesheet">
@@ -52,10 +55,10 @@
             { "EmpID": 1020, "Name": "James", "Designation": "Developer", "Country": "China" },
         ];
         var columnsData = [
-            { field: 'EmpID', header: 'Employee ID', width: 90 },
-            { field: 'Name', width: 90, header: 'Name' },
-            { field: 'Designation', header: 'Designation', width: 90 },
-            { field: 'Country', header: 'Country', width: 70 }
+            { field: 'EmpID', header: 'Employee ID', width: 70 },
+            { field: 'Name', width: 80, header: 'Name' },
+            { field: 'Designation', header: 'Designation', width: 60 },
+            { field: 'Country', header: 'Country', width: 80 }
         ];
         // initialize MultiColumn Combobox component
         var multiComboBoxObject = new ej.multicolumncombobox.MultiColumnComboBox({
@@ -68,9 +71,9 @@
             // set placeholder to ComboBox input element
             placeholder: "Select a employee",
             // set the height of the popup element
-            popupHeight: '250px',
+            popupHeight: '200px',
             // set the width of the popup element
-            popupWidth: '550px',
+            popupWidth: '480px',
         });
         // render initialized MultiColumn ComboBox
         multiComboBoxObject.appendTo('#multicolumn');

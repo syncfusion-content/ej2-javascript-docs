@@ -61,7 +61,7 @@ In the following example, the [EJ2 Toggle Switch Button](../switch/es5-getting-s
 > * If the property is set to **false**, the HTML tags will be removed and displayed as plain text.
 > * Disabling HTML encoding can potentially introduce security vulnerabilities, so use caution when enabling this feature.
 > * If [enableHtmlSanitizer](../api/grid/#enablehtmlsanitizer) property of grid is set to true, then the content is sanitized to prevent any potential security vulnerabilities.
-> * You can also disable the `disableHtmlEncode` property of the column using [getColumns](../api/grid#getcolumns) method on [change](../api/switch/#change) event of Switch control.This is demonstrated in the below code snippet, 
+> * You can also disable the `disableHtmlEncode` property of the column using [getColumns](../api/grid/#getcolumns) method on [change](../api/switch/#change) event of Switch control.This is demonstrated in the below code snippet, 
 
 ```typescript
 change(args) {

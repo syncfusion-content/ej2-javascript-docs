@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 The DropDownList has built-in support to filter data items when [`allowFiltering`](../api/drop-down-list/#allowfiltering) is enabled. The filter
 operation starts as soon as you start typing characters in the search box.
 
-To display filtered items in the popup, filter the required data and return it to the DropDownList via [updateData](../api/drop-down-list/filteringEventArgs/#updatedata) method by using the [filtering](../api/drop-down-list/filteringEventArgs) event.
+To display filtered items in the popup, filter the required data and return it to the DropDownList via [updateData](../api/drop-down-list/filteringEventArgs/#updatedata) method by using the [filtering](../api/drop-down-list/filteringEventArgs/) event.
 
 The following sample illustrates how to query the data source and pass the data to the DropDownList through the `updateData` method in `filtering` event.
 

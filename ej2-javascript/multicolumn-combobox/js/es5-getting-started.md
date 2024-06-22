@@ -111,6 +111,11 @@ The Essential JS 2 JavaScript components can be initialized by using either of t
             <script src="resources/ej2-popups.min.js" type="text/javascript"></script>
             <script src="resources/ej2-buttons.min.js" type="text/javascript"></script>
             <script src="resources/ej2-grids.min.js" type="text/javascript"></script>
+            <script src="resources/ej2-calendars.min.js" type="text/javascript"></script>
+            <script src="resources/ej2-excel-export.min.js" type="text/javascript"></script>
+            <script src="resources/ej2-pdf-export.min.js" type="text/javascript"></script>
+            <script src="resources/ej2-compression.min.js" type="text/javascript"></script>
+            <script src="resources/ej2-file-utils.min.js" type="text/javascript"></script>
             <!-- Essential JS 2 MultiColumn ComboBox's global script -->
             <script src="resources/ej2-multicolumn-combobox.min.js" type="text/javascript"></script>
        </head>

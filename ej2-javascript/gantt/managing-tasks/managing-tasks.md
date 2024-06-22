@@ -242,9 +242,11 @@ In Gantt Chart, the controls such as form elements, grid and RTE in add and edit
 
 ### Customize general tab of dialog 
 
-In the general tab of add/edit dialog, the custom input [fields](https://ej2.syncfusion.com/documentation/api/gantt/addDialogFieldSettings/#fields) can be included into fields by defining the field names either from the data source or template in [addDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettings/) and [editDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/editDialogFieldSettings/) respectively.
+The form element in the `General` tab of the add/edit dialog can be added or removed by using the [fields](https://ej2.syncfusion.com/documentation/api/gantt/addDialogFieldSettings/#fields) property within the [addDialogFields](https://ej2.syncfusion.com/documentation/api/gantt/addDialogFieldSettings/) and [editDialogFields](https://ej2.syncfusion.com/documentation/api/gantt/editDialogFieldSettings/) settings respectively.
 
-In the below sample, added field from the template to general tab.
+The controls of the `fields` can be customized by using the [edit](https://ej2.syncfusion.com/documentation/gantt/managing-tasks/managing-tasks#cell-edit-template) template feature.
+
+In the below sample, `General` tab is customized using the `fields` property. The fields **TaskID**, **TaskName** and **newInput** are added in both `addDialogFields` and `editDialogFields` settings.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -272,16 +274,20 @@ In the below sample, added field from the template to general tab.
 
 {% previewsample "page.domainurl/code-snippet/gantt/rows-cs14" %}
 {% endif %}
-        
+
 ### Customize dependency, segments and resources tab of dialog 
 
-[Grid](https://ej2.syncfusion.com/documentation/api/grid/) component in the dependency, segment and resource tab of add/edit dialog can be customized, by defining grid module properties in the [additionalParams](https://ej2.syncfusion.com/documentation/api/gantt/addDialogFieldSettingsModel/#additionalParams) property of [addDialogFields](https://ej2.syncfusion.com/documentation/api/gantt/addDialogFieldSettings/) and [editDialogFields](https://ej2.syncfusion.com/documentation/api/editDialogFieldSettings/).
+You can customize the dependency, segments, and resource tabs of the dialog box using the [additionalParams](https://ej2.syncfusion.com/documentation/api/gantt/addDialogFieldSettingsModel/#additionalParams) property within the [addDialogFields](https://ej2.syncfusion.com/documentation/api/gantt/addDialogFieldSettings/) and [editDialogFields](https://ej2.syncfusion.com/documentation/api/editDialogFieldSettings/) settings respectively. This customization involves defining properties from the [Grid](https://ej2.syncfusion.com/documentation/api/grid/) within the `additionalParams` property.
 
-In the below code show cases, how to add additional features to dependency, segments and resources tab.
+In the example below: 
+* The `dependency` tab enables [sorting](https://ej2.syncfusion.com/documentation/api/grid/#allowsorting) and [toolbar](https://ej2.syncfusion.com/documentation/api/grid/#toolbar) options. 
+* The `segments` tab enables `sorting` and `toolbar` options and includes a new column `newData` defined with a specified [field](https://ej2.syncfusion.com/documentation/api/grid/columnModel/#field).
+* The `resources` tab defines a new column `Segment Task`  with specific properties such as `field`, [width](https://ej2.syncfusion.com/documentation/api/grid/columnmodel/#width) and [headerText](https://ej2.syncfusion.com/documentation/api/grid/columnModel/#headertext).
+These customizations are applied to both `addDialogFields` and `editDialogFields` settings.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/rows-cs15/index.ts %}
 {% endhighlight %}
@@ -308,13 +314,13 @@ In the below code show cases, how to add additional features to dependency, segm
 
 ### Customize note dialog tab
 
- [RTE](https://ej2.syncfusion.com/documentation/api/rich-text-editor/) component in notes tab of add and edit dialog can be customized, by defining RTE module properties in the [additionalParams](https://ej2.syncfusion.com/documentation/api/gantt/addDialogFieldSettingsModel/#additionalParams) property of [addDialogFields](https://ej2.syncfusion.com/documentation/api/gantt/addDialogFieldSettings/) and [editDialogFields](https://ej2.syncfusion.com/documentation/api/gantt/editDialogFieldSettings/).
- 
- The below code shows how to enable inline mode to RTE in notes tab.
+You can customize the note dialog tab using the [additionalParams](https://ej2.syncfusion.com/documentation/api/gantt/addDialogFieldSettingsModel/#additionalParams) property within the [addDialogFields](https://ej2.syncfusion.com/documentation/api/gantt/addDialogFieldSettings/) and [editDialogFields](https://ej2.syncfusion.com/documentation/api/gantt/editDialogFieldSettings/) settings respectively. This customization involves defining properties from the [RTE](https://ej2.syncfusion.com/documentation/api/rich-text-editor/) module within the `additionalParams` property.
+
+In the following example, the `notes` tab is customized with the [inlinemode](https://ej2.syncfusion.com/documentation/api/rich-text-editor/#inlinemode) property enabled, allowing for in-place editing. Additionally, the `OnSelection` property is enabled, which opens the toolbar inline upon selecting text.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/rows-cs16/index.ts %}
 {% endhighlight %}
@@ -349,7 +355,9 @@ Action |Description
 -----|-----
 [`Cell editing`](managing-tasks/#cell-editing) | To perform `double tap` on a specific cell, initiate the cell to be in edit state.
 [`Dialog editing`](managing-tasks/#dialog-editing) | To perform `double tap` on a specific row, initiate the edit dialog to be opened.
-[`Taskbar editing`](managing-tasks/#taskbar-editing) | Taskbar editing action is initiated using the `tap` action on the taskbar. <br> **Parent taskbar** : Once you tap on the parent taskbar, it will be changed to editing state. Perform only dragging action on parent taskbar editing. <br> ![Alt text](images/editing-parent.PNG) <br> **Child taskbar** : Once you tap the child taskbar, it will be changed to editing state. <br> ![Alt text](images/editing-state.PNG) <br> **Dragging taskbar** : To drag a taskbar to the left or right in editing state. <br> <br> **Resizing taskbar** : To resize a taskbar, drag the left/right resize icon. <br> <br> **Progress resizing** : To change the progress, drag the progress resize icon to the left or right direction.
+[`Taskbar editing`](managing-tasks/#taskbar-editing) | Taskbar editing action is initiated using the `tap` action on the taskbar. <br> **Parent taskbar** : Once you tap on the parent taskbar, it will be changed to editing state. Perform only dragging action on parent taskbar editing. <br> 
+![Alt text](../images/editing-parent.PNG) <br> **Child taskbar** : Once you tap the child taskbar, it will be changed to editing state. <br>
+![Alt text](../images/editing-state.PNG) <br> **Dragging taskbar** : To drag a taskbar to the left or right in editing state. <br> <br> **Resizing taskbar** : To resize a taskbar, drag the left/right resize icon. <br> <br> **Progress resizing** : To change the progress, drag the progress resize icon to the left or right direction.
 
 ### Task dependency editing
 

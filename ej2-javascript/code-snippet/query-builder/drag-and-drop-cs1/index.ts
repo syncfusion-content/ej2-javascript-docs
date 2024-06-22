@@ -55,14 +55,14 @@ let columns: ColumnsModel[] = [
   { field: "Country", label: "Country", type: "string" }
 ]
 let importRules: RuleModel = {
-  condition: "",
+  condition: "and",
   rules: [
-    { label: "First Name", field: "FirstName", type: "string", operator: "startswith", value: "Andre", condition: "and" },
-    { label: "Last Name", field: "LastName", type: "string", operator: "in", value: ['Davolio', 'Buchanan'], condition: "or" },
-    { label: "Age", field: "Age", type: "number", operator: "greaterthan", value: 29, condition: "and" },
+    { label: "First Name", field: "FirstName", type: "string", operator: "startswith", value: "Andre" },
+    { label: "Last Name", field: "LastName", type: "string", operator: "in", value: ['Davolio', 'Buchanan'] },
+    { label: "Age", field: "Age", type: "number", operator: "greaterthan", value: 29 },
     {
       condition: "or", rules: [
-        { label: "Is Developer", field: "IsDeveloper", type: "boolean", operator: "equal", value: true, condition: "and" },
+        { label: "Is Developer", field: "IsDeveloper", type: "boolean", operator: "equal", value: true },
         { label: "Primary Framework", field: "PrimaryFramework", type: "string", operator: "equal", value: "React" }
       ]
     },

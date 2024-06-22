@@ -115,3 +115,38 @@ By using cell/ dialog edit option, we can add/remove the multiple resources for 
 ![Cell Edit](images/cellEdit-resource.png)
 
 ![Dialog Edit](images/dialogedit-resource.png)
+
+## Custom background colors for resource column and taskbar
+
+In Gantt Component, you can customize the background colors of the resource column and taskbars based on the resources assigned to each task. This customization enhances the readability and usability of the Gantt chart.
+
+To achieve this, utilize the [template](https://ej2.syncfusion.com/documentation/api/gantt/column/#template) property for the resource column and the [queryTaskbarInfo](https://ej2.syncfusion.com/documentation/api/gantt/#querytaskbarinfo) event. The `template` property allows you to define a custom template for the resource column, while the `queryTaskbarInfo` event to modify the taskbar properties, including background colors.
+
+The following code snippet demonstrates how to customize the background colors of the taskbar and resource column according to the assigned resources:
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/resource-customization-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/resource-customization-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/resource-customization-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/resource-customization-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/resource-customization-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/resource-customization-cs1" %}
+{% endif %}

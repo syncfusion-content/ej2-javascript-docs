@@ -219,7 +219,7 @@ You can use CSS to override the default height of the **.e-grid .e-headercell** 
 
 **Using methods**
 
-To change the height of the header dynamically, you can use the [getHeaderContent](../../api/grid#getheadercontent) method to get the header content element of the Syncfusion Grid. Then, you can use the **querySelectorAll** method to get all the header cell elements with the class **e-headercell**. Finally, you can loop through each header cell element and set its style property to adjust the height.
+To change the height of the header dynamically, you can use the [getHeaderContent](../../api/grid/#getheadercontent) method to get the header content element of the Syncfusion Grid. Then, you can use the **querySelectorAll** method to get all the header cell elements with the class **e-headercell**. Finally, you can loop through each header cell element and set its style property to adjust the height.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -264,7 +264,7 @@ When the `headerCellInfo` event is triggered, it provides a **HeaderCellInfoEven
 * **cell**: Defines the header cell that is being modified.
 * **node**: Defines the DOM element of the header cell that is being modified.
 
-You can use these properties to access and modify the header text of the corresponding column. Once the header text is modified, you can refresh the Grid to reflect the changes by calling the [refreshHeader](../../api/grid#refreshheader) method of the Grid.
+You can use these properties to access and modify the header text of the corresponding column. Once the header text is modified, you can refresh the Grid to reflect the changes by calling the [refreshHeader](../../api/grid/#refreshheader) method of the Grid.
 
 **Using method**
 
@@ -411,7 +411,7 @@ To `rotate` the header text, you can create a CSS class with the `transform` pro
 
 Once you have created the CSS class, you can add it to the particular column by using the `customAttributes` property. This property allows you to add any custom  attribute to the grid column.
 
-For example, to add the orientationcss class to the Freight column, you can use the following code:
+For example, to add the orientation css class to the Freight column, you can use the following code:
 
 ```typescript
  { field: 'Freight', headerText: 'Freight', textAlign: 'Center', format: 'C2', customAttributes: {class: 'orientationcss'}, width: 80}
@@ -554,7 +554,7 @@ Step 1: Define a CSS class that specifies the styles you want to apply to the he
     }
   ```
 
-Step 2: Set the `customAttributes` property of the desired column to an object that contains the CSS class **customcss**. This CSS class will be applied to the header cell of the specified column in the Grid.
+Step 2: Set the `customAttributes` property of the desired column to an object that contains the CSS class **custom css**. This CSS class will be applied to the header cell of the specified column in the Grid.
 
   ```ts
   {field: "Freight" headerText: "Freight" customAttributes: {class: '.customcss'}}

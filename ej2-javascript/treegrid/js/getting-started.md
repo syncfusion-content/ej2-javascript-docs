@@ -329,7 +329,7 @@ The sorting feature enables you to order the records. It can be enabled by setti
 {% include code-snippet/treegrid/tree-grid-cs2/es5-datasource.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/tree-grid-cs2/js/index.html %}
+{% include code-snippet/treegrid/tree-grid-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -370,7 +370,7 @@ Output will be displayed as follows.
 {% include code-snippet/treegrid/tree-grid-cs4/es5-datasource.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/tree-grid-cs4/js/index.html %}
+{% include code-snippet/treegrid/tree-grid-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -411,7 +411,7 @@ The following code example shows how to use the [actionFailure](https://ej2.sync
 {% include code-snippet/treegrid/error-handling/es5-datasource.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/error-handling/js/index.html %}
+{% include code-snippet/treegrid/error-handling/index.html %}
 {% endhighlight %}
 {% endtabs %}
         

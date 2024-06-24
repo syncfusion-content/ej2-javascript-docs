@@ -34,7 +34,7 @@ The Essential JS 2 Button has the following predefined styles that can be define
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/button/button-style-cs1/index.html %}
-{% endhighlight %}
+
 {% highlight css tabtitle="styles.css" %}
 {% include code-snippet/button/button-style-cs1/styles.css %}
 {% endhighlight %}

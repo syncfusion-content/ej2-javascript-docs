@@ -21,7 +21,7 @@ let grid: Grid = new Grid({
 grid.appendTo('#Grid');
 
 function actionComplete(args: ActionEventArgs) {
-    if (args.requestType === 'filterafteropen') {
+    if (args.requestType === 'filterAfterOpen') {
         let columnObj = grid.getColumnByField(args.columnName);
         if (columnObj.type === 'datetime') {
             let dateObj = (document.getElementById('dateui-' + columnObj.uid)as Element)['ej2_instances'][0];

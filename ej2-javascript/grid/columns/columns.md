@@ -646,11 +646,21 @@ Here's an example of how you can use the `lockColumn` property to lock a column 
 
 The Syncfusion Grid control allows you to show or hide columns dynamically by using property or methods available in the grid. This feature can be useful when you want to customize the visibility of columns in the Grid based on the requirements.
 
+> To work with showing and hiding columns, it is necessary to have at least one column of the grid in a visible state
+
 ### Using property
 
 You can show or hide columns in the ##Platform_Name## Grid using the [visible](../../api/grid/column/#visible) property of each column. By setting the `visible` property to **true** or **false**, you can control whether the column should be visible or hidden in the grid. Here's an example of how to show or hide a column in the ##Platform_Name## Grid using the visible property:
 
-In the below example, the **ShipCity** column is defined with `visible` property set to **false**, which will hide the column in the rendered grid.
+{% if page.publishingplatform == "typescript" %}
+
+In the following example, the [EJ2 Toggle Switch Button](../../switch/getting-started) component is added to enable and disable the `visible` property. When the switch is toggled, the [change](../../api/switch/#change) event is triggered and the `visible` property of the **ShipCity** column is updated accordingly. The [refreshColumns](../../api/grid/#refreshcolumns) method is called to refresh the grid and display the updated content. 
+ 
+{% elsif page.publishingplatform == "javascript" %}
+ 
+In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-getting-started) component is added to enable and disable the `visible` property. When the switch is toggled, the [change](../../api/switch/#change) event is triggered and the `visible` property of the **ShipCity** column is updated accordingly. The [refreshColumns](../../api/grid/#refreshcolumns) method is called to refresh the grid and display the updated content.
+
+{% endif %}
 
 {% if page.publishingplatform == "typescript" %}
 

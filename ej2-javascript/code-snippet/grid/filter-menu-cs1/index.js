@@ -17,7 +17,7 @@ var grid = new ej.grids.Grid({
 grid.appendTo('#Grid');
 
 function actionComplete(args) {
-    if (args.requestType === 'filterafteropen') {
+    if (args.requestType === 'filterAfterOpen') {
         var columnObj = grid.getColumnByField(args.columnName);
         if (columnObj.type === 'datetime') {
             var dateObj = document.getElementById('dateui-' + columnObj.uid)['ej2_instances'][0];

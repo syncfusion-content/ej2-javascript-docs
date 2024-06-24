@@ -11,17 +11,18 @@ domainurl: ##DomainURL##
 
 # Exporting grid in cordova application in ##Platform_Name## Grid control
 
-Cordova application does not support direct file download. So we have to use the Blob stream to export the Grid.
-You can use corresponding exporting methods and exportComplete events to get the Blob stream.
+Exporting the Syncfusion ##Platform_Name## Grid in a Cordova application can be beneficial in various scenarios where users need to generate and download reports, share data in Excel or PDF formats, or archive information for offline use. A Cordova application does not support direct file download. To export the Syncfusion ##Platform_Name## Grid component in a Cordova application, you need to utilize Blob streams. This can be achieved by using the appropriate exporting methods and export complete events to obtain the Blob stream.
+
+The following example illustrates how to export a Syncfusion ##Platform_Name## Grid in a Cordova application. It utilizes the [excelExportComplete](../../api/grid/#excelexportcomplete) and [pdfExportComplete](../../api/grid/#pdfexportcomplete) events to manage the export process for Excel and PDF formats and obtain the Blob stream. The `exportBlob` function is responsible for creating a downloadable link for the exported file.
 
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid/exporting-blob-data-cs1/index.ts %}
+{% include code-snippet/grid/exporting-blob-data-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid/exporting-blob-data-cs1/index.html %}
+{% include code-snippet/grid/exporting-blob-data-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -31,10 +32,10 @@ You can use corresponding exporting methods and exportComplete events to get the
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid/exporting-blob-data-cs1/index.js %}
+{% include code-snippet/grid/exporting-blob-data-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid/exporting-blob-data-cs1/index.html %}
+{% include code-snippet/grid/exporting-blob-data-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 

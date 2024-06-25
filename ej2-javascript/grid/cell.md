@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cell in ##Platform_Name## Grid control | Syncfusion
-description: Learn here all about Cell in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
+title: Cell in ##Platform_Name## Grid Control | Syncfusion
+description: Learn here all about cell support in Syncfusion ##Platform_Name## Grid control, it's elements, and more.
 platform: ej2-javascript
 control: Cell 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Cell in ##Platform_Name## Grid control
+# Cell in ##Platform_Name## Grid Control
 
 In the Syncfusion ##Platform_Name## Grid, a **cell** refers to an individual data point or a unit within a grid column that displays data. It represents the intersection of a row and a column, and it contains specific information associated with that row and column. Each cell can display text, numbers, or other content related to the data it represents. 
 
@@ -403,7 +403,7 @@ grid.appendTo('#Grid');
 
 The following screenshot represents the Bootstrap tooltip for the **CustomerID** field,
 
-![Bootstrap tooltip](./images/bootstrap-tooltip.gif)
+![Bootstrap tooltip in JavaScript Grid.](./images/javascript-grid-bootstrap-tooltip.gif)
 
 > * The Bootstrap CDN link must be added to the HTML file.
 

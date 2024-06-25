@@ -95,7 +95,7 @@ Here is a sample code demonstrating how to render a dropdownlist control for the
 
 ## Show 24 hours time format in filter dialog
 
-The Syncfusion ##Platform_Name## Grid provides a feature to display the time in a 24-hour format in the date or datetime column filter dialog. By default, the filter dialog displays the time in a 12-hour format (AM/PM) for the date or datetime column. However, you can customize the default format by setting the type as **dateTime** and the format as **M/d/y HH:mm**. To enable the 24-hour time format in the filter dialog, you need to handle the [actionComplete](../../api/grid/#actioncomplete) event with [requestType](../../api/grid/filterEventArgs/#requesttype) as [filterafteropen](../../api/grid/action/) and set the `timeFormat` of the `DateTimepicker` to **HH:mm**.
+The Syncfusion ##Platform_Name## Grid provides a feature to display the time in a 24-hour format in the date or datetime column filter dialog. By default, the filter dialog displays the time in a 12-hour format (AM/PM) for the date or datetime column. However, you can customize the default format by setting the type as **dateTime** and the format as **M/d/y HH:mm**. To enable the 24-hour time format in the filter dialog, you need to handle the [actionComplete](../../api/grid/#actioncomplete) event with [requestType](../../api/grid/filterEventArgs/#requesttype) as [filterAfterOpen](../../api/grid/action/) and set the `timeFormat` of the `DateTimepicker` to **HH:mm**.
 
 Here is an example that demonstrates how to show 24 hours time format in filter dialog:
 
@@ -203,6 +203,8 @@ Here is an example that demonstrates how to perform filtering by multiple keywor
 
 You have the flexibility to customize the default settings of input controls within the menu filter by utilizing the `params` property within the column definition of [filter](../../api/grid/column/#filter). This allows you to modify the behavior of specific filter controls to better suit your needs.
 
+{% if page.publishingplatform == "typescript" %}
+ 
 | Column Type | Default control                                                                                 | Customization                            | API Reference                                                                                             |
 | ----------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------- |
 | String      | [AutoComplete](../../auto-complete/getting-started)    | Eg: { params: { autofill: false }}       | [AutoComplete API](../../api/auto-complete/autoCompleteModel/) |
@@ -210,6 +212,20 @@ You have the flexibility to customize the default settings of input controls wit
 | Boolean     | [DropDownList](../../drop-down-list/getting-started)   | Eg: { params: { sortOrder:'Ascending'}}  | [DropDownList API](../../api/drop-down-list)                   |
 | Date        | [DatePicker](../../datepicker/getting-started)         | Eg: { params: { weekNumber: true }}      | [DatePicker API](../../api/datepicker)                         |
 | DateTime    | [DateTimePicker](../../datetimepicker/getting-started) | Eg: { params: { showClearButton: true }} | [DateTimePicker API](../../api/datetimepicker)                 |
+
+{% elsif page.publishingplatform == "javascript" %}
+ 
+| Column Type | Default control                                                                                 | Customization                            | API Reference                                                                                             |
+| ----------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| String      | [AutoComplete](../../auto-complete/es5-getting-started)    | Eg: { params: { autofill: false }}       | [AutoComplete API](../../api/auto-complete/autoCompleteModel/) |
+| Number      | [NumericTextBox](../../numerictextbox/es5-getting-started) | Eg: { params: { showSpinButton: false }} | [NumericTextBox API](../../api/numerictextbox)                 |
+| Boolean     | [DropDownList](../../drop-down-list/es5-getting-started)   | Eg: { params: { sortOrder:'Ascending'}}  | [DropDownList API](../../api/drop-down-list)                   |
+| Date        | [DatePicker](../../datepicker/es5-getting-started)         | Eg: { params: { weekNumber: true }}      | [DatePicker API](../../api/datepicker)                         |
+| DateTime    | [DateTimePicker](../../datetimepicker/es5-getting-started) | Eg: { params: { showClearButton: true }} | [DateTimePicker API](../../api/datetimepicker)                 |
+
+{% endif %}
+
+
 
 > To know more about the feature, refer to the Getting Started documentation and API Reference
 
@@ -285,11 +301,11 @@ You can prevent autofill feature by setting the [autofill](../../api/auto-comple
 
 ## Filter menu events
 
-The Syncfusion ##Platform_Name## Grid offers the [actionBegin](../../api/grid#actionbegin) and [actionComplete](../../api/grid#actioncomplete) events, which provide information about the actions being performed. Within the event handlers, you receive an argument named `requestType`. This argument specifies the [action](../../api/grid/action/) that is being executed, such as `filterbeforeopen`, `filterafteropen`, or `filtering`. By analyzing this action type, you can implement custom logic or showcase messages.
+The Syncfusion ##Platform_Name## Grid offers the [actionBegin](../../api/grid#actionbegin) and [actionComplete](../../api/grid#actioncomplete) events, which provide information about the actions being performed. Within the event handlers, you receive an argument named `requestType`. This argument specifies the [action](../../api/grid/action/) that is being executed, such as `filterBeforeOpen`, `filterAfterOpen`, or `filtering`. By analyzing this action type, you can implement custom logic or showcase messages.
 
 **filtering** - Defines current action as filtering.
-**filterbeforeopen** - Defines current action as filter dialog before open.
-**filterafteropen** - Defines current action as filter dialog after open.
+**filterBeforeOpen** - Defines current action as filter dialog before open.
+**filterAfterOpen** - Defines current action as filter dialog after open.
 
 Here's an example of how to use these events to handle filter menu action in the Syncfusion ##Platform_Name## Grid:
 

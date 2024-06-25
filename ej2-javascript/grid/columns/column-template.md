@@ -212,9 +212,15 @@ To render a custom control in a grid column, you need to define a [template](../
  
 ```ts
 function dropdown(args: QueryCellInfoEventArgs) {
-    let element=args.cell.querySelector('select');
-    let dropdownObject = new DropDownList({popupHeight: 150, popupWidth: 150});
-    dropdownObject.appendTo(element);
+   if (args.column.field === 'OrderStatus') {
+      let drop = new DropDownList({
+          dataSource: dropData,
+          value: args.data['OrderStatus'],
+          popupHeight: 150,
+          popupWidth: 150,
+      });
+      drop.appendTo(args.cell.querySelector('#dropElement'));
+  }
 }
 
 ```
@@ -222,9 +228,15 @@ function dropdown(args: QueryCellInfoEventArgs) {
  
 ```js
 function dropdown(args) {
-    var element = args.cell.querySelector('select');
-    var dropdownObject = new ej.dropdowns.DropDownList({ popupHeight: 150, popupWidth: 150 });
-    dropdownObject.appendTo(element);
+    if (args.column.field === 'OrderStatus') {
+      var drop = new DropDownList({
+          dataSource: dropData,
+          value: args.data['OrderStatus'],
+          popupHeight: 150,
+          popupWidth: 150,
+      });
+      drop.appendTo(args.cell.querySelector('#dropElement'));
+  }
 }
 
 ```
@@ -314,6 +326,81 @@ function queryCellInfo(args) {
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/grid/column-template-cs6" %}
+{% endif %}
+
+### Render ProgressBar control in a column
+
+{% if page.publishingplatform == "typescript" %}
+ 
+The Syncfusion Grid control supports rendering the [Progress Bar](../../progressbar/getting-started) control within a column using the [template](../../api/grid/column/#template) property. Displaying the `Progress Bar` control in a grid column allows users to visually track the progress of tasks or operations associated with specific records. This feature is particularly useful for applications involving processes such as data loading, task completion, or other progressive activities.
+
+{% elsif page.publishingplatform == "javascript" %}
+ 
+The Syncfusion Grid control supports rendering the [Progress Bar](../../progressbar/es5-getting-started) control within a column using the [template](../../api/grid/column/#template) property. Displaying the `Progress Bar` control in a grid column allows users to visually track the progress of tasks or operations associated with specific records. This feature is particularly useful for applications involving processes such as data loading, task completion, or other progressive activities.
+
+{% endif %}
+
+In the following code, the `Progress Bar` control render in the Grid **Freight** column by defining the [template](../../api/grid/column/#template) property.
+
+{% if page.publishingplatform == "typescript" %}
+
+```ts
+function queryCellInfo(args: QueryCellInfoEventArgs ) {
+  if (args.column.field === 'Freight') {
+    let percentageProgress = new ProgressBar({
+      type: 'Linear',
+      height: '60',
+      value: args.data['Freight'],
+      trackThickness:24,
+      progressThickness:20
+    });
+    percentageProgress.appendTo(args.cell.querySelector('#progressBarElement'));
+  }
+}
+```
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+```js
+function queryCellInfo(args) {
+  if (args.column.field === 'Freight') {
+    var percentageProgress = new ej.progressbar.ProgressBar({
+      type: 'Linear',
+      height: '60',
+      value: args.data['Freight'],
+      trackThickness:24,
+      progressThickness:20
+    });
+    percentageProgress.appendTo(args.cell.querySelector('#progressBarElement'));
+  }
+}
+``` 
+{% endif %}
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/column-template-cs9/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/column-template-cs9/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/column-template-cs9" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/column-template-cs9/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/column-template-cs9/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/column-template-cs9" %}
 {% endif %}
 
 ## Using condition template
@@ -430,3 +517,46 @@ The following example demonstrates how to use a custom helper function inside th
 {% endif %}
 
 > Custom helpers can only be used inside the template property of a column. 
+
+## Dynamically adding template column
+
+The Syncfusion Grid control allows you to dynamically add template columns at runtime. This capability is particularly useful when the structure of the grid needs to be modified based on individual interactions or other dynamic conditions.
+
+Dynamically adding template columns involves creating and inserting columns with custom templates after the grid has been initialized. This approach provides flexibility in presenting data in a highly customizable manner.
+
+{% if page.publishingplatform == "typescript" %}
+
+The following example demonstrates how to add template column using external button click. In this example, the **ShipCountry** column with a [Dropdownlist](../../drop-down-list/getting-started) is added in column [template](../../api/grid/column/#template), and an icon is displayed using the [headerTemplate](../../api/grid/column/#headertemplate) for the **ShipCountry** column. 
+ 
+{% elsif page.publishingplatform == "javascript" %}
+ 
+The following example demonstrates how to add template column using external button click. In this example, the **ShipCountry** column with a [Dropdownlist](../../drop-down-list/es5-getting-started) is added in column [template](../../api/grid/column/#template), and an icon is displayed using the [headerTemplate](../../api/grid/column/#headertemplate) for the **ShipCountry** column. 
+
+{% endif %}
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/column-template-cs10/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/column-template-cs10/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/column-template-cs10" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/column-template-cs10/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/column-template-cs10/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/column-template-cs10" %}
+{% endif %}

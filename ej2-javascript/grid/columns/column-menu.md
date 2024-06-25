@@ -55,9 +55,43 @@ The default column menu items are displayed in following table.
 {% previewsample "page.domainurl/code-snippet/grid/row-template-cs4" %}
 {% endif %}
 
-> You can disable column menu for a particular column by defining the [columns->showColumnMenu](../../api/grid/column/#showcolumnmenu) as false.
+> * You can disable column menu for a particular column by defining the [columns.showColumnMenu](../../api/grid/column/#showcolumnmenu) as false.
+> *  You can customize the default items by defining the [columnMenuItems](../../api/grid/#columnmenuitems) with required items.
 
-> You can customize the default items by defining the [columnMenuItems](../../api/grid/#columnmenuitems) with required items.
+## Prevent column menu for particular column
+
+The Syncfusion ##Platform_Name## Grid control provides the ability to prevent the appearance of the column menu for specific columns. This feature is useful when you want to restrict certain columns from being customizable through the column menu.
+
+To prevent the column menu for a particular column, you can set the [showColumnMenu](../../api/grid/column/#showcolumnmenu) property to **false** for that specific column configuration. This will disable the column menu options specifically for the designated column, while other columns will have the column menu enabled.
+
+The following example demonstrates how to prevent the column menu for a specific column. In this example, the column menu is disabled for the **OrderID** column by setting the `showColumnMenu` property to **false**.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/column-columnmenu-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/column-columnmenu-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/column-columnmenu-cs2" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/column-columnmenu-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/column-columnmenu-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/column-columnmenu-cs2" %}
+{% endif %}
 
 ## Add custom column menu item
 

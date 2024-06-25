@@ -10,3 +10,17 @@ var grid = new ej.grids.Grid({
     height: 315
 });
 grid.appendTo('#Grid');
+
+var toggle = new ej.buttons.Switch({
+    change: Change,
+});
+toggle.appendTo('#switch');
+
+function Change(args) {
+    if (args.checked) {
+        grid.getColumnByField('ShipCity').visible = true;
+    } else {
+        grid.getColumnByField('ShipCity').visible = false;
+    }
+    grid.refreshColumns();
+}

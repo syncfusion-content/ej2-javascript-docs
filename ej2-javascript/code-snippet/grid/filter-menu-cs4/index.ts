@@ -25,11 +25,11 @@ grid.appendTo('#Grid');
 function actionBegin(args: ActionEventArgs)
 {
   var message=document.getElementById('message')as HTMLElement;
-    if (args.requestType == 'filterbeforeopen' && args.columnType === "number") {
+    if (args.requestType == 'filterBeforeOpen' && args.columnType === "number") {
         args.filterModel.customFilterOperators.numberOperator = [
         { value: "equal", text: "Equal" },
         { value: "notequal", text: "Not Equal" }];
-        message.innerText ='Filter operators for number column were customized using the filterbeforeopen action in the actionBegin event';
+        message.innerText ='Filter operators for number column were customized using the filterBeforeOpen action in the actionBegin event';
     }
     else{
         message.innerText= args.requestType + ' action is triggered in actionBegin event'
@@ -42,8 +42,8 @@ function actionBegin(args: ActionEventArgs)
 function actionComplete(args: ActionEventArgs)
 {
   var message=document.getElementById('message')as HTMLElement;
-    if(args.requestType === 'filterafteropen') {
-        message.innerText ='Applied CSS for filter dialog during filterafteropen action';
+    if(args.requestType === 'filterAfterOpen') {
+        message.innerText ='Applied CSS for filter dialog during filterAfterOpen action';
         args.filterModel.dlgDiv.querySelector('.e-dlg-content').style.background = '#eeeaea';
         args.filterModel.dlgDiv.querySelector('.e-footer-content').style.background = '#30b0ce';
       }

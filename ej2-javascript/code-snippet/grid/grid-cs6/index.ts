@@ -1,5 +1,6 @@
 import { Grid } from '@syncfusion/ej2-grids';
 import { data } from './datasource.ts';
+import { Switch, ChangeEventArgs } from '@syncfusion/ej2-buttons';
 
 let grid: Grid = new Grid({
     dataSource: data,
@@ -12,5 +13,18 @@ let grid: Grid = new Grid({
     ],
     height: 315
 });
-
 grid.appendTo('#Grid');
+
+let toggle: Switch = new Switch({
+    change: Change,
+});
+toggle.appendTo('#switch');
+
+function Change(args: ChangeEventArgs) {
+    if (args.checked) {
+        grid.getColumnByField('ShipCity').visible = true;
+    } else {
+        grid.getColumnByField('ShipCity').visible = false;
+    }
+    grid.refreshColumns();
+}

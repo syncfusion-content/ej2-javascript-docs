@@ -8,24 +8,23 @@ let grid: Grid = new Grid({
         { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 90 },
         { field: 'CustomerID', headerText: 'Customer ID', width: 100 },
         { field: 'Freight', headerText: 'Freight', width: 90, format: 'C2' },
-        { headerText: 'Order Status',
-          template:
-            `<div>
-                <select class="e-control e-dropdownlist">
-                    <option value="1" selected="selected">Order Placed</option>
-                    <option value="2">Processing</option>
-                    <option value="3">Delivered</option>
-                </select>
-            </div>`, width: 200
-        },
+        { field: 'OrderStatus', headerText: 'Order Status', template: '#columnTemplate', width: 200 },
     ],
     height: 315,
     queryCellInfo: dropdown
 });
 grid.appendTo('#Grid');
 
-function dropdown(args: QueryCellInfoEventArgs): void {
-    let element: HTMLSelectElement = args.cell.querySelector('select');
-    let dropdownObject: DropDownList = new DropDownList({ popupHeight: 150, popupWidth: 150 });
-    dropdownObject.appendTo(element);
+let dropData = ['Order Placed', 'Processing', 'Delivered'];
+
+function dropdown(args: QueryCellInfoEventArgs){
+    if (args.column.field === 'OrderStatus') {
+        let drop = new DropDownList({
+            dataSource: dropData,
+            value: args.data['OrderStatus'],
+            popupHeight: 150,
+            popupWidth: 150,
+        });
+        drop.appendTo(args.cell.querySelector('#dropElement'));
+    }
 }

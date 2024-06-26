@@ -20,7 +20,7 @@ Gantt.Inject(Selection, Toolbar, DayMarkers, Edit, Filter);
 };
 (<{ imagedate?: Function }>window).imagedate = () => {
     const getImage = Math.floor(Math.random() * 5) + 1;
-    return "./images/" + getImage + ".svg";
+    return  getImage + ".svg";
 
 }
 (<{ holidayValue?: Function }>window).holidayValue = (value: string, date: string): string => {
@@ -36,7 +36,7 @@ Gantt.Inject(Selection, Toolbar, DayMarkers, Edit, Filter);
         }
     }
     return value
-}z
+}
 
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,

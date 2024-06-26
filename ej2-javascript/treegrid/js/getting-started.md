@@ -415,7 +415,7 @@ The following code example shows how to use the [actionFailure](https://ej2.sync
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "http://127.0.0.1:4000/ej2-javascript/code-snippet/treegrid/error-handling" %}
+{% previewsample "page.domainurl/ej2-javascript/code-snippet/treegrid/error-handling" %}
 
 ## See Also
 

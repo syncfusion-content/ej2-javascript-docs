@@ -62,13 +62,13 @@ var ganttChart = new ej.gantt.Gantt({
 });
 ganttChart.appendTo('#Gantt');
 
-window.bgColor = (value, date) => {
+function bgColor (value, date){
     if (value === "S") {
         return "#7BD3EA"
     }
     const parsedDate = new Date(date);
-    for (let i = 0; i < gantt.holidays.length; i++) {
-        const holiday = gantt.holidays[i];
+    for (let i = 0; i < ganttChart.holidays.length; i++) {
+        const holiday = ganttChart.holidays[i];
         const fromDate = new Date(holiday.from);
         const toDate = new Date(holiday.to)
         if (parsedDate >= fromDate && parsedDate <= toDate) {
@@ -77,20 +77,20 @@ window.bgColor = (value, date) => {
     }
     return "#E0FBE2"
 };
-window.imagedate = () => {
+function imagedate () {
     const getImage = Math.floor(Math.random() * 5) + 1;
-    return "./images/" + getImage + ".svg";
+    return  getImage + ".svg";
 
 }
-window.holidayValue = (value, date) => {
+function holidayValue  (value, date) {
 
     const parsedDate = new Date(date);
-    for (let i = 0; i < gantt.holidays.length; i++) {
-        const holiday = gantt.holidays[i];
+    for (let i = 0; i < ganttChart.holidays.length; i++) {
+        const holiday = ganttChart.holidays[i];
         const fromDate = new Date(holiday.from);
         const toDate = new Date(holiday.to)
         if (parsedDate >= fromDate && parsedDate <= toDate) {
-            const options: any = { weekday: 'short' };
+            const options = { weekday: 'short' };
             return parsedDate.toLocaleDateString('en-US', options).toLocaleUpperCase();
         }
     }

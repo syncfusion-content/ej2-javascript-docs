@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Security Advisory in  ##Platform_Name## Common control | Syncfusion
-description: Learn here all about Security Advisory in Syncfusion  ##Platform_Name##  Common control of Syncfusion Essential JS 2 and more.
+title: Security Advisories in  ##Platform_Name## Common control | Syncfusion
+description: Learn here all about Security Advisories in Syncfusion  ##Platform_Name##  Common control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: common
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Security Advisory in Syncfusion Essential JS2 Controls
+# Security Advisories in Syncfusion EJ2 Controls
 
 Syncfusion places the utmost priority on the security of our controls. Users can rest assured about the security of our controls, as we have implemented all necessary measures to mitigate security vulnerabilities such as cross-site scripting and insecure dependencies. To meet security standards, Syncfusion utilizes the [ESLint](https://eslint.org/) and [ESLint plugin security](https://github.com/eslint-community/eslint-plugin-security#rules) tools for static code analysis. Additionally, Syncfusion packages undergo software composition analysis using the [SOOS](https://soos.io/) security tool.
 

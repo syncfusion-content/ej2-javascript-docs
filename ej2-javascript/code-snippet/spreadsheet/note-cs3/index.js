@@ -81,6 +81,9 @@ var spreadsheet = new ej.spreadsheet.Spreadsheet({
   allowOpen: true,
   openUrl: 'https://services.syncfusion.com/js/production/api/spreadsheet/open',
   allowSave: true,
-  saveUrl: 'https://services.syncfusion.com/js/production/api/spreadsheet/save'
+  saveUrl: 'https://services.syncfusion.com/js/production/api/spreadsheet/save',
+  created: function () {
+    spreadsheet.cellFormat({ fontWeight: 'bold' }, 'A1:C1');
+  }
 });
 spreadsheet.appendTo('#spreadsheet');

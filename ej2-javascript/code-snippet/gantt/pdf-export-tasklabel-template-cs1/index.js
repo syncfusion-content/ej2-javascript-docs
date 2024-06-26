@@ -7,30 +7,14 @@ var clickHandler = function (args) {
     }
 };
 var pdfQueryTaskbarInfo =  function(args){
-    if (!args.data.hasChildRecords) {
-        if (args.data.ganttProperties.resourceNames) {
-            args.taskbarTemplate.image = [{
-                width: 20, base64: (args).data.taskData.resourcesImage, height: 20
-            }]
-        }
-        args.taskbarTemplate.value = args.data.TaskName;
+    args.labelSettings.leftLabel.value = args.data.ganttProperties.taskName + '[' + args.data.ganttProperties.progress + ']';
+    if (args.data.ganttProperties.resourceNames) {
+        args.labelSettings.rightLabel.value = args.data.ganttProperties.resourceNames;
+        args.labelSettings.rightLabel.image = [{
+            base64: args.data.taskData.resourcesImage, width: 20, height: 20
+        }];
     }
-    if (args.data.hasChildRecords) {
-        if (args.data.ganttProperties.resourceNames) {
-            args.taskbarTemplate.image = [{
-                width: 20, base64: (args).data.taskData.resourcesImage, height: 20
-            }]
-        }
-        args.taskbarTemplate.value = args.data.TaskName;
-    }
-    if (args.data.ganttProperties.duration === 0) {
-        if (args.data.ganttProperties.resourceNames) {
-            args.taskbarTemplate.image = [{
-                width: 20, base64: (args).data.taskData.resourcesImage, height: 20,
-            }]
-        }
-        args.taskbarTemplate.value = args.data.TaskName
-    }
+    args.labelSettings.taskLabel.value = args.data.ganttProperties.progress + '%';
 }
 window.getResourceElements = function (value) {
     var out = "";

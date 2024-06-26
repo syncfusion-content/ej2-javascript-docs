@@ -1,7 +1,7 @@
 
 
 
-import { Gantt, Toolbar, PdfExport, Selection, PdfExportProperties,pdfQueryTaskbarInfo,PdfQueryCellInfoEventArgs } from '@syncfusion/ej2-gantt';
+import { Gantt, Toolbar, PdfExport, Selection, PdfExportProperties } from '@syncfusion/ej2-gantt';
 import { GanttData,editingResources } from 'datasource.ts';
 import { PdfColor } from '@syncfusion/ej2-pdf-export';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';

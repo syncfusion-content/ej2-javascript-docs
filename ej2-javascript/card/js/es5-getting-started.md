@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Card control | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Card control of Syncfusion Essential JS 2 and more details.
+title: Es5 Getting Started with ##Platform_Name## Card Control | Syncfusion
+description: Checkout and learn about Es5 getting started with ##Platform_Name## Card control, it's elements, and more.
 platform: ej2-javascript
 control: Es5 getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Card control
+# Es5 Getting Started in ##Platform_Name## Card Control
 
 The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework that can be directly used in latest web browsers.
 
@@ -114,7 +114,7 @@ The Essential JS 2 JavaScript components can be initialized by using any of the 
 
 You can create Card with a header in a specific structure. For adding header you need to create a `div` element with `e-card-header` class added.
 
-* You can include heading inside the Card header by adding a `div` element with `e-card-header-caption` class, and also content will be added by adding element with `e-card-content`. For detailed information, refer to the [Header and Content](./header-content/).
+* You can include heading inside the Card header by adding a `div` element with `e-card-header-caption` class, and also content will be added by adding element with `e-card-content`. For detailed information, refer to the [Header and Content](./header-content).
 
 ```
     <div class = "e-card">                    --> Root Element

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Restrict editing in ##Platform_Name## Document editor control | Syncfusion
-description: Learn here all about Restrict editing in Syncfusion ##Platform_Name## Document editor control of Syncfusion Essential JS 2 and more.
+title: Restrict editing in ##Platform_Name## Document Editor Control | Syncfusion
+description: Learn here all about Restrict editing in Syncfusion ##Platform_Name## Document Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Restrict editing 
 publishingplatform: ##Platform_Name##

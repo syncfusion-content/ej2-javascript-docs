@@ -61,7 +61,7 @@ Refer to the following steps to download the custom resources in CRG.
 
 ## Import previously generated settings into the CRG
 
-To add more controls or upgrade the latest Syncfusion ASP.NET Core library resources, it is not necessary to generate it from the scratch in the CRG. Just import the old **import.json** file and make the changes, then download it again from the CRG application.
+To add more controls or upgrade the latest Syncfusion scripts, it is not necessary to generate it from the scratch in the CRG. Just import the old **import.json** file and make the changes, then download it again from the CRG application.
 
 Refer to the following steps to import previous **import.json** file in the CRG.
 
@@ -70,11 +70,11 @@ Refer to the following steps to import previous **import.json** file in the CRG.
 2. Upload the **import.json** file so that the previously stored data will be restored in the CRG application. Now, add more controls and export the resources again.
 ![ej2 Previous changes restored](images/previous-changes-restored.png)
 
-## To dowload a Licensed script
+## To download a licensed script
 
-If you prefer to utilize a licensed script, As a licensed user, you can download a licensed script from the Custom Resource Generator (CRG) by logging into your CRG account. Kindly refer to the attached image below.
+If you prefer to utilize a licensed script, As a licensed user, you can download a licensed script from the Custom Resource Generator (CRG) by logging into your CRG account, as illustrated below.
 
-![image](../js/licensing/images/crg-licensed-profile.png)
+![image](images/licensed-profile.png)
 
 Licensed scripts generated through the Custom Resource Generator (CRG) do not require additional license registration when downloaded by authenticated users. But if you are not downloading a licensed script, you need to register the license key in your application. For more information, refer to the [Licensing section](../js/licensing/license-key-registration.md).
 

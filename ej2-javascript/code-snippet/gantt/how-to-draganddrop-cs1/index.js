@@ -4,6 +4,7 @@ var treeObj = new ej.navigations.TreeView({
     allowDragAndDrop: true,
     height: "200px",
     nodeDragStop: function (args) {
+        args.cancel = true;
         var chartEle = ej.base.closest(args.target, '.e-chart-row');
         var gridEle = ej.base.closest(args.target, '.e-row');
         if(gridEle) {
@@ -11,8 +12,8 @@ var treeObj = new ej.navigations.TreeView({
           ganttChart.selectRow(index);
         }
         if (chartEle) {
-            var index = chartEle.ariaRowIndex;
-            ganttChart.selectRow(Number(index));
+            var index = chartEle.rowIndex;
+            ganttChart.selectRow(index);
         }
         var record= args.draggedNodeData;
         var selectedData = ganttChart.flatData[ganttChart.selectedRowIndex];
@@ -29,11 +30,7 @@ var treeObj = new ej.navigations.TreeView({
                 TaskID: selectedData.taskData.TaskID,
                 resources: resources
             };
-            ganttChart.updateRecordByID(data);
-            var elements = document.querySelectorAll('.e-drag-item');
-            while (elements.length > 0 && elements[0].parentNode) {
-                elements[0].parentNode.removeChild(elements[0]);
-            }         
+            ganttChart.updateRecordByID(data);    
         }
     }
 });

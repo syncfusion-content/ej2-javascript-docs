@@ -172,6 +172,31 @@ pager.appendTo('#Pager');
         
 {% previewsample "page.domainurl/code-snippet/pager/pager-cs1" %}
 
+## Page sizes
+
+The [pageSizes](https://ej2.syncfusion.com/javascript/documentation/api/pager#pagesizes) property in the Syncfusion Pager control allows you to control the number of records displayed per page through a `DropDownList` integrated into the pager. This feature enhances the experience by providing flexibility in data viewing.
+
+**Enabling Page Sizes**
+
+To enable the `pageSizes` property, follow these steps:
+
+1. Inject the `PagerDropDown` into the `Pager` module to enable the `DropDownList` in the pager.
+
+2. Configure the `pageSizes` property by setting it to either **true** or providing an array of custom values to define the available page size options.
+
+The following example demonstrates how to include the `pageSizes` property in the pager control.
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/pager/pager-dropdown-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/pager/pager-dropdown-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/pager/pager-dropdown-cs1" %}
+
 ## Page Count
 
 `pageCount` value defines the number of pages to be displayed in the pager component for navigation. The default value for `pageCount` is 10 and value will be updated based on `totalRecordsCount` and [`pageSize`](#pagesize) values.

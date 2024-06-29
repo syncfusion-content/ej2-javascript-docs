@@ -13,6 +13,7 @@ let treeObj: TreeView = new TreeView({
     allowDragAndDrop: true,
     height: "200px",
     nodeDragStop: function (args: DragAndDropEventArgs): void {
+        args.cancel= true;
         let ganttObj: any = document.getElementById('Gantt').ej2_instances[0];
         let chartEle: any = closest(args.target, '.e-chart-row');
         let gridEle: any = closest(args.target, '.e-row');
@@ -21,8 +22,8 @@ let treeObj: TreeView = new TreeView({
           ganttObj.selectRow(index);
         }
         if (chartEle) {
-            var index = chartEle.ariaRowIndex;
-            ganttChart.selectRow(Number(index));
+            var index = chartEle.rowIndex;
+            ganttObj.selectRow(index);
         }
         let record: any = args.draggedNodeData;
         let selectedData = ganttObj.flatData[ganttObj.selectedRowIndex];
@@ -40,10 +41,6 @@ let treeObj: TreeView = new TreeView({
                 resources: resources
             };
             gantt.updateRecordByID(data);
-            var elements = document.querySelectorAll('.e-drag-item');
-            while (elements.length > 0 && elements[0].parentNode) {
-                elements[0].parentNode.removeChild(elements[0]);
-            }
         }
     }
 });

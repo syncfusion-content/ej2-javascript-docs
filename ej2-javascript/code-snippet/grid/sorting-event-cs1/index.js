@@ -17,6 +17,7 @@ grid.appendTo('#Grid');
 function actionBegin(args) {
     if (args.requestType === 'sorting' && args.columnName === 'OrderID') {
         args.cancel = true;
+        document.getElementById('message').innerText = args.requestType + ' action cancelled for ' +args.columnName + ' column';
     }
 }
 function actionComplete(args) {

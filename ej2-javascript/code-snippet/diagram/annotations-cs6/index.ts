@@ -19,8 +19,8 @@ let node: NodeModel = {
         content: 'Annotation',
         // Sets the horizontal alignment as left
         horizontalAlignment: 'Left',
-        // Sets the vertical alignment as Center
-        verticalAlignment: 'Center'
+        // Sets the vertical alignment as Top
+        verticalAlignment: 'Top'
     }]
 };
 // initialize diagram component

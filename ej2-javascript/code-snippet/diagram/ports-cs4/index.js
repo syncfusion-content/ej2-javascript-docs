@@ -19,8 +19,10 @@ var diagram = new ej.diagrams.Diagram({
     }, '#element');
 
 diagram.add(node);
-var ports = [
-        {id: 'port1',},{id: 'port2',},{id: 'port3',},{id: 'port4',}
-    ]
-diagram.removePorts(diagram.nodes[0], ports);
 
+
+document.getElementById('updatePortOffset').onclick = () =>{
+    let port1 = diagram.nodes[0].ports[0];
+    port1.offset = {x:1,y:1};
+    diagram.dataBind();
+}

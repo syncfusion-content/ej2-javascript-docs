@@ -44,7 +44,6 @@ let node2: NodeModel = {
                 collapsed: true,
                 compensation: true
             }
-            as BpmnSubProcessModel
         },
     },
 };

@@ -256,7 +256,7 @@ var nodes = [
 
 ```
 
->Note: The `annotations` property is an array, which indicates that more than one label can be added to a node.
+N> The `annotations` property is an array, which indicates that more than one label can be added to a node.
 
 ### Add other flowchart nodes to the diagram
 

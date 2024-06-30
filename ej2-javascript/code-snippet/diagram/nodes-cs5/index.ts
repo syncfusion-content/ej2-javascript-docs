@@ -10,9 +10,11 @@ let node: NodeModel = {
     // Size of the node
     width: 100,
     height: 100,
+    visible:true,
     style: {
         fill: '#6BA5D7',
-        strokeDashArray: '5,5'
+        strokeDashArray: '5,5',
+        opacity: 0.5
     },
     borderWidth: 2,
     borderColor: 'red',

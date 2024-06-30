@@ -1,56 +1,60 @@
 var node = {
-     shape: {
-                type: 'SwimLane',
-                orientation: 'Horizontal',
-                //Intialize header to swimlane
-                header: {
-                    annotation: { content: 'ONLINE PURCHASE STATUS', style: { fill: '#111111' } },
-                    height: 50, style: { fontSize: 11 },
-                },
-                lanes: [
-                    {
-                        id: 'stackCanvas1',
-                        height: 100,
-                        header: {
-                            annotation: { content: 'CUSTOMER' }, width: 50,
-                            style: { fontSize: 11 }
-                        },
-                          children: [
-                            {
-                                id: 'Order',
-                                margin: { left: 60, top: 20 },
-                                height: 40, width: 100
-                            }
-                        ],
-                    },
-
-                ],
-                phases: [
-                 {
-                     id: 'phase1', offset: 120,
-                     addInfo:{name:'phase1'},
-                     header: { annotation: { content: 'Phase' } }
-                 },{
-                    id: 'phase2', offset: 200,
-                    header: { annotation: { content: 'Phase' } }
-                },
-                 ],
-                phaseSize: 20,
+    shape: {
+      type: 'SwimLane',
+      orientation: 'Horizontal',
+      //Intialize header to swimlane
+      header: {
+        annotation: {
+          content: 'ONLINE PURCHASE STATUS',
+          style: { fill: '#111111' },
+        },
+        height: 50,
+        style: { fontSize: 11 },
+      },
+      lanes: [
+        {
+          id: 'stackCanvas1',
+          height: 100,
+          header: {
+            annotation: { content: 'CUSTOMER' },
+            width: 50,
+            style: { fontSize: 11 },
+          },
+        },
+      ],
+      phases: [
+        {
+          id: 'phase1',
+          offset: 150,
+          addInfo: { name: 'phase1' },
+          header: {
+            annotation: {
+              content: 'First phase',
+              style: { fill: 'yellow', color: 'red' },
             },
-            offsetX: 300, offsetY: 200,
-         height: 200,
-         width: 350
-        };
-
-// initialize Diagram component
-
-var diagram = new ej.diagrams.Diagram({
-    width: '100%', height: '600px', nodes: [node]
-    });
-    diagram.appendTo('#element');
-    var phase = [{
-       id: 'phase3', offset: 220,
-       header: { annotation: { content: 'Phase' } }
-         }]
-diagram.addPhases(diagram.nodes[0],phase);
-
+          },
+        },
+        {
+          id: 'phase2',
+          offset: 200,
+          header: { annotation: { content: 'Second phase' } },
+          style: { fill: 'violet' },
+        },
+      ],
+      phaseSize: 40,
+    },
+    offsetX: 300,
+    offsetY: 200,
+    height: 200,
+    width: 350,
+  };
+  
+  // initialize Diagram component
+  
+  var diagram = new ej.diagrams.Diagram({
+    width: '100%',
+    height: '600px',
+    nodes: [node],
+  });
+  diagram.appendTo('#element');
+  

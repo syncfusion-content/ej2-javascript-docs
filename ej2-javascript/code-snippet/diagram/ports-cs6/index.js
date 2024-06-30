@@ -1,77 +1,44 @@
-let port1 = {
-    style: {
-        strokeColor: 'black',
-        fill: 'yellow'
-    }
-}
-port1.shape = 'Square';
-port1.visibility =ej.diagrams.PortVisibility.Visible;
-//specify the direction of the port
-port1.connectionDirection="Right"
-port1.id = 'port';
-port1.offset = {
-    x: 0.5,
-    y: 0.5
-};
-let port2 = {
-    style: {
-        strokeColor: 'black',
-        fill: 'yellow'
-    }
-};
-port2.offset = {
-    x: 0,
-    y: 0
-};
-port2.id = 'port1';
-port2.visibility = ej.diagrams.PortVisibility.Visible;
-//specify the direction of the port
-port2.connectionDirection="Left"
-port2.shape = 'Square';
- 
-let nodes = [{
-        id: 'node',
-        width: 100,
-        height: 100,
-        offsetX: 100,
-        offsetY: 200,
-        ports: [port1]
-    },
+var node = {
+  // Position of the node
+  offsetX: 250,
+  offsetY: 250,
+  // Size of the node
+  width: 100,
+  height: 100,
+  style: { fill: '#6BA5D7', strokeColor: 'white' },
+  ports: [
     {
-        id: 'node1',
-        width: 100,
-        height: 100,
-        offsetX: 300,
-        offsetY: 100,
-        ports: [port2]
+      offset: { x: 1, y: 0.5 },
+      visibility: ej.diagrams.PortVisibility.Visible,
+      style: {
+        fill: 'red',
+        strokeWidth: 2,
+        strokeColor: 'black',
+        opacity: 0.7,
+        strokeDashArray: '2 2',
+      },
+      width: 12,
+      height: 12,
+      shape: 'Circle',
     },
-];
-let connectors = {
-    id: "connector1",
-    sourcePoint: {
-        x: 100,
-        y: 100
-    },
-    type: 'Orthogonal',
-    targetPoint: {
-        x: 200,
-        y: 200
-    },
-    sourceID: 'node',
-    targetID: 'node1',
-    sourcePortID: 'port',
-    targetPortID: 'port1'
-}
-let diagram = new  ej.diagrams.Diagram({
-    width: 900,
-    height: 900,
-    nodes: nodes,
-    connectors: [connectors],
-    getNodeDefaults: (node) => {
-        node.height = 100;
-        node.width = 100;
-        node.style.fill = '#6BA5D7';
-        node.style.strokeColor = 'white';
-        return node;
-    },
-}, '#element' );
+  ],
+};
+
+// initialize Diagram component
+
+var diagram = new ej.diagrams.Diagram(
+  {
+    width: '100%',
+    height: '600px',
+    nodes: [node],
+  },
+  '#element'
+);
+document.getElementById('changeAppearance').onclick = () => {
+  let port = diagram.nodes[0].ports[0];
+  port.style.fill = 'yellow';
+  port.style.opacity = 1;
+  port.width = 25;
+  port.height = 25;
+  diagram.dataBind();
+};

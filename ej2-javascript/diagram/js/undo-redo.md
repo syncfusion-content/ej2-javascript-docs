@@ -17,15 +17,15 @@ Diagram tracks the history of actions that are performed after initializing the 
 
 Diagram provides built-in support to track the changes that are made through interaction and through public APIs. The changes can be reverted or restored either through shortcut keys or through commands.
 
->Note: If you want to use Undo-Redo in diagram, you need to inject UndoRedo in the diagram.
+N> If you want to use Undo-Redo in diagram, you need to inject UndoRedo in the diagram.
 
 ## Undo/redo through shortcut keys
 
-Undo/redo commands can be executed through shortcut keys. Shortcut key for undo is Ctrl+z and shortcut key for redo is Ctrl+y.
+Undo/redo commands can be executed through shortcut keys. Shortcut key for undo is **`Ctrl+z`** and shortcut key for redo is **`Ctrl+y`**.
 
 ## Undo/redo through public APIs
 
-The client-side methods [`undo`](../api/diagram) and [`redo`](../api/diagram) help you to revert/restore the changes. The following code example illustrates how to undo/redo the changes through script.
+The client-side methods [`undo`](../api/diagram/#undo) and [`redo`](../api/diagram/#redo) help you to revert/restore the changes. The following code example illustrates how to undo/redo the changes through script.
 
 ```javascript
 
@@ -41,14 +41,15 @@ diagram.undo();
 // Restores the last undone action
 diagram.redo();
 ```
+Undo/Redo for diagram can be enabled/disabled with the [`constraints`](../api/diagram/diagramconstraints/) property of diagram.
 
-When a change in the diagram is reverted or restored (undo/redo), the historyChange event gets triggered.
+When a change in the diagram is reverted or restored (undo/redo), the [`historyChange`](../api/diagram/#historychange) event gets triggered.
 
-### Group multiple changes
+## Group multiple changes
 
 History list allows to revert or restore multiple changes through a single undo/redo command. For example, revert/restore the fill color change of multiple elements at a time.
 
-The client-side method [`startGroupAction`](../api/diagram) is used to notify the diagram to start grouping the changes. The client-side method [`endGroupAction`](../api/diagram) is used to notify to stop grouping the changes. The following code illustrates how to undo/redo fillColor change of multiple elements at a time.
+The diagram method [`startGroupAction`](../api/diagram/#startgroupaction) allows you to log multiple actions at a time in the history manager stack. It is easier to undo or revert the changes made in the diagram in a single undo/redo process instead of reverting every actions one by one.The diagram method [`endGroupAction`](../api/diagram/#endgroupaction) allows you to end the group actions that are stored in the stack history. The following code illustrates how to undo/redo multiple fillColor change of a node at a time.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -60,81 +61,6 @@ The client-side method [`startGroupAction`](../api/diagram) is used to notify th
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/diagram/undoredo-cs1" %}
-
-### Track custom changes
-
-Diagram provides options to track the changes that are made to custom properties. For example, in case of an employee relationship diagram, track the changes in the employee information. The historyList of the diagram enables you to track such changes. The following example illustrates how to track such custom property changes.
-
-Before changing the employee information, save the existing information to historyList by using the client-side method push of historyList.
-The historyList canLog method can be used which takes a history entry as argument and returns whether the specific entry can be added or not.
-
-The following code example illustrates how to save the existing property values.
-
-```javascript
-
-var diagram = new ej.diagrams.Diagram({
-    width: '100%',
-    height: '600px',
-},'#element');
-//Creates a custom entry
-var entry = {
-    undoObject: diagram.nodes[0];
-};
-// adds that to history list
-diagram.historyList.push(entry);
-
-```
-
-## canLog
-
-canLog in the history list, which takes a history entry as argument and returns whether the specific entry can be added or not.
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/diagram/undoredo-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/diagram/undoredo-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/diagram/undoredo-cs2" %}
-
-### Track undo/redo actions
-
-The historyList undoStack property is used to get the collection of undo actions which should be performed in the diagram. The undoStack/redoStack is the read-only property.
-
-```javascript
-
-var diagram = new ej.diagrams.Diagram({
-    width: '100%',
-    height: '600px',
-    nodes: nodes,
-    },'#element');
-//get the collection of undoStack objects
-let undoStack = diagram.historyList.undoStack;
-//get the collection of redoStack objects
-let redoStack = diagram.historyList.redoStack;
-```
-
-## History change event
-
-The [`historyChange`](../api/diagram) event triggers, whenever the interaction of the node and connector is take place.
-
-```javascript
-
-var diagram = new ej.diagrams.Diagram({
-    width: '100%',
-    height: '600px',
-    nodes: nodes,
-    },'#element');
-// history change event
-diagram.historyChange = (arg) => {
-    //causes of history change
-    let cause: string = arg.cause;
-}
-
-```
 
 ## Stack Limit
 
@@ -151,21 +77,96 @@ The [`stackLimit`](../api/diagram) property of history manager is used to limits
         
 {% previewsample "page.domainurl/code-snippet/diagram/undoredo-cs3" %}
 
-## Retain Selection
+## Restrict Undo/Redo
 
-You can retain a selection at undo/redo operation by using the client-side API Method called `updateSelection`.  Using this method, we can select a diagram objects.
+Undo, Redo process can be avoided for particular element by using [`canLog`](../api/diagram/history/#canlog) property in the history manager. The following example illstrates how to prevent history entry using `canLog` function.
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/undoredo-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/undoredo-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/undoredo-cs2" %}
+
+
+## undo/redo stack
+
+The [`undoStack`](../api/diagram/history/#undostack) property is used to get the collection of undo actions which should be performed in the diagram. The [`redoStack`](../api/diagram/history/#redostack) property is used to get the collection of redo actions which should be performed in the diagram. The undoStack/redoStack is the read-only property.
 
 ```javascript
 
 var diagram = new ej.diagrams.Diagram({
     width: '100%',
     height: '600px',
-    updateSelection: (object: NodeModel, diagram: Diagram) => {
-                    let selArr = [];
-                    selArr.push(object)
-                    diagram.select(selArr);
-                },
     nodes: nodes,
     },'#element');
+//get the collection of undoStack objects
+let undoStack = diagram.historyManager.undoStack;
+//get the collection of redoStack objects
+let redoStack = diagram.historyManager.redoStack;
+```
+## Current entry
+
+While performing interactions with a node or connector, the current history entry is added to the [`currentEntry`](../api/diagram/history/#currententry) property of the [`historyManager`](../api/diagram/#historymanager)..
+
+The following code shows how to get the current entry from the diagram history:
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/undoredo-currentEntry/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/undoredo-currentEntry/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/undoredo-currentEntry" %}
+
+## Track custom changes
+
+Diagram provides options to track the changes that are made to custom properties. For example, in case of an employee relationship diagram, track the changes in the employee information. The historyManager of the diagram enables you to track such changes. The following example illustrates how to track such custom property changes.
+
+Before changing the employee information, save the existing information to historyManager by using the client-side method push of historyManager.
+
+The following code example illustrates how to save the existing property values.
+
+```javascript
+
+var diagram = new ej.diagrams.Diagram({
+    width: '100%',
+    height: '600px',
+},'#element');
+//Creates a custom entry
+var entry = {
+    undoObject: diagram.nodes[0];
+};
+// adds that to history list
+diagram.historyManager.push(entry);
 
 ```
+
+## History change event
+
+The [`historyChange`](../api/diagram) event triggers, whenever the interaction of the node and connector is take place. When interacting, the entries get added to the history manager to trigger this event.
+
+
+```javascript
+
+let diagram = new ej.diagrams.Diagram({
+    width: '100%',
+    height: '600px',
+    nodes: nodes,
+    },'#element');
+// history change event
+diagram.historyChange = (arg) => {
+    //causes of history change
+    let cause: string = arg.cause;
+}
+
+```
+
+While interacting with diagram, this event can be used to do the customization.

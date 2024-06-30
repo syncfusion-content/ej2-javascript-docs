@@ -7,7 +7,8 @@ var node = {
     height: 100,
  style: { fill: '#6BA5D7', strokeColor: 'white' },
     constraints: ej.diagrams.NodeConstraints.Default | ej.diagrams.NodeConstraints.Shadow,
-    shadow: {angle: 50, opacity: 0.8, distance: 9}
+    //shadow added to the node
+    shadow:{color:'skyblue',angle:90,distance:10,opacity:0.8},
         };
 
 // initialize Diagram component

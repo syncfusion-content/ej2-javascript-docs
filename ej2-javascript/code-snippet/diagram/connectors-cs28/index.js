@@ -1,6 +1,5 @@
 var connectors = {
         id: 'connector1',
-        addInfo: 'connec',
         zIndex: 2,
         type: 'Straight',
         sourcePoint: {

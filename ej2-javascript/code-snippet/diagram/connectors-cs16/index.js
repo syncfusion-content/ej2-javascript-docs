@@ -7,7 +7,7 @@ var nodes = [{
 },
 {
     id: 'End',
-    offsetX: 450,
+    offsetX: 350,
     offsetY: 200,
     annotations: [{ content: 'End' }]
 }];

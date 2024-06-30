@@ -1,50 +1,66 @@
-
-
-
 import { Diagram, NodeModel } from '@syncfusion/ej2-diagrams';
-let node: NodeModel = {  
-   shape: {
-                type: 'SwimLane',
-                orientation: 'Horizontal',
-                //Intialize header to swimlane
-                header: {
-                    annotation: { content: 'ONLINE PURCHASE STATUS', style: { fill: '#111111' } },
-                    height: 50, style: { fontSize: 11 },
-                },
-               lanes: [
-                   {
-                    id: 'stackCanvas1',
-                    height: 100,
-                    // customization of lane header
-                    header: {
-                        annotation: { content: 'Online Consumer' }, width: 30,
-                        style: { fontSize: 11 },style: { fill: 'red' }
-                    },
-                },
-                ],
-                phases: [
-                    {
-                        id: 'phase1', offset: 170,
-                        header: { annotation: { content: 'Phase' } }
-                    },
-                    ],
-                phaseSize: 20,
-            },
-            offsetX: 300, offsetY: 200,
-         height: 200,
-         width: 350  
+let node: NodeModel = {
+  shape: {
+    type: 'SwimLane',
+    orientation: 'Horizontal',
+    //Intialize header to swimlane
+    header: {
+      annotation: {
+        content: 'ONLINE PURCHASE STATUS',
+        style: { fill: '#111111' },
+      },
+      height: 50,
+      style: { fontSize: 11 },
+    },
+    lanes: [
+      {
+        id: 'stackCanvas1',
+        height: 100,
+        // customization of lane header
+        header: {
+          annotation: { content: 'Online Consumer' },
+          style: { fontSize: 11 },
+          style: { fill: 'red' },
+        },
+      },
+    ],
+    phases: [
+      {
+        id: 'phase1',
+        offset: 170,
+        header: { annotation: { content: 'Phase' } },
+      },
+    ],
+    phaseSize: 20,
+  },
+  offsetX: 300,
+  offsetY: 200,
+  height: 200,
+  width: 350,
 };
 // initialize Diagram component
 let diagram: Diagram = new Diagram({
-    width: '100%',
-    height: '600px',
-    // Add node
-    nodes: [node]
+  width: '100%',
+  height: '600px',
+  // Add node
+  nodes: [node],
 });
 // render initialized Diagram
 diagram.appendTo('#element');
-let lane = [{id:"lane1",height:100,}];
-diagram.addLanes(diagram.nodes[0],lane,1);
-
-
-
+(document.getElementById('addLane') as HTMLInputElement).onclick = () => {
+  let lane = [
+    {
+      id: 'lane1',
+      height: 100,
+      style: { fill: 'green' },
+      header: {
+        annotation: {
+          content: 'New LANE',
+          style: { fill: 'brown', color: 'white', fontSize: 15 },
+        },
+        style: { fill: 'pink' },
+      },
+    },
+  ];
+  diagram.addLanes(diagram.nodes[0], lane, 1);
+};

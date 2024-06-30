@@ -1,3 +1,4 @@
+ej.diagrams.Diagram.Inject(ej.diagrams.HierarchicalTree);
 var nodes = [
     {
         id: 'Start', width: 140, height: 50, offsetX: 300, offsetY: 50,
@@ -5,8 +6,10 @@ var nodes = [
             content: 'Node1'
         }],
  style: { fill: '#6BA5D7', strokeColor: 'white' },
-        expandIcon: {shape: 'ArrowDown', width: 10, height: 10},
-        collapseIcon: {shape: 'ArrowUp', width: 10, height: 10}
+        expandIcon: {shape: 'ArrowDown',   width: 20,
+        height: 15},
+        collapseIcon: {shape: 'ArrowUp',  width: 20,
+        height: 15}
     },
     {
         id: 'Init', width: 140, height: 50, offsetX: 300, offsetY: 140,
@@ -29,7 +32,8 @@ var connectors = [{
 // initialize Diagram component
 
 var diagram = new ej.diagrams.Diagram({
-    width: '100%', height: '600px', nodes: nodes, connectors: connectors
+    width: '100%', height: '600px', nodes: nodes, connectors: connectors,
+    layout:{type:'HierarchicalTree'}
     }, '#element');
 
 

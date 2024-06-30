@@ -24,6 +24,7 @@ let diagram: Diagram = new Diagram({
     width: '100%',
     height: '600px',
     nodes: nodes,
+    //Sets the stackLimit as 3
     historyManager: { stackLimit: 3 },
     getNodeDefaults: (node: NodeModel) => {
         node.height =  100;

@@ -1,49 +1,69 @@
-ej.diagrams.Diagram.Inject(ej.diagrams.DataBinding, ej.diagrams.HierarchicalTree);
+ej.diagrams.Diagram.Inject(ej.diagrams.ComplexHierarchicalTree);
 var nodes = [];
 var connectors = [];
 
-function ConnectNodes(parentNode, childNode) {
-    var connector = {
-        id: parentNode.id + childNode.id,
-        sourceID: parentNode.id,
-        targetID: childNode.id,
-        targetDecorator: { shape: 'None' }
-    }
-    return connector;
-}
-
-function GetRectangle(name) {
-    var shape = { type: 'Basic', shape: 'Ellipse' };
-    var node = { id: name, height: 25, width: 25, borderColor: '#5e5e5e', borderWidth: 1, style: { fill: '#ff6329' }, shape: shape };
-    return node;
-}
-
-function populateNodes() {
-    var parentRect = GetRectangle("p");
-    nodes.push(parentRect);
-    for (var i = 0; i < 2; i++) {
-        var childRect_i = GetRectangle("c" + i);
-        nodes.push(childRect_i);
-        for (var j = 0; j < 2; j++) {
-            var childRect_j = GetRectangle("c" + i + j);
-            nodes.push(childRect_j);
-            for (var k = 0; k < 6; k++) {
-                var childRect_k = GetRectangle("c" + i + j + k);
-                nodes.push(childRect_k);
-                connectors.push(ConnectNodes(childRect_j, childRect_k));
-            }
-            connectors.push(ConnectNodes(childRect_i, childRect_j));
-        }
-        connectors.push(ConnectNodes(parentRect, childRect_i));
-    }
-    return nodes;
-}
-
-populateNodes();
+//Initializes nodes
+var nodes = [
+  { id: 'node1' },
+  { id: 'node2' },
+  { id: 'node3' },
+  { id: 'node4' },
+  { id: 'node5' },
+  { id: 'node6' },
+  { id: 'node7' },
+];
+//Initialize connectors
+var connectors = [
+  { id: 'node1-node4', sourceID: 'node1', targetID: 'node4' },
+  { id: 'node2-node4', sourceID: 'node2', targetID: 'node4' },
+  { id: 'node3-node4', sourceID: 'node3', targetID: 'node4' },
+  { id: 'node4-node5', sourceID: 'node4', targetID: 'node5' },
+  { id: 'node4-node6', sourceID: 'node4', targetID: 'node6' },
+  { id: 'node5-node6', sourceID: 'node6', targetID: 'node7' },
+];
 var diagram = new ej.diagrams.Diagram({
-    width: '100%', height: '550px',
-    layout: { type: 'SymmetricalLayout', springLength: 80, springFactor: 0.8, maxIteration: 500, margin: { left: 20, top: 20 } },
-    nodes: nodes, connectors: connectors,
+  width: '100%',
+  height: 1000,
+  nodes: nodes,
+  connectors: connectors,
+  //Uses layout to auto-arrange nodes on the diagram page
+  layout: {
+    //Sets layout type
+    type: 'ComplexHierarchicalTree',
+    orientation: 'TopToBottom',
+    horizontalAlignment: 'Center',
+    verticalAlignment: 'Top',
+  },
+  //Sets the default properties for nodes and connectors
+  getNodeDefaults: (obj) => {
+    (obj.width = 70),
+      (obj.height = 70),
+      (obj.annotations = [{ content: obj.id }]);
+    obj.style = {
+      fill: '#6BA5D7',
+      strokeColor: 'none',
+      strokeWidth: 2,
+    };
+    obj.borderColor = 'white';
+    obj.backgroundColor = '#6BA5D7';
+    obj.borderWidth = 1;
+    obj.shape.margin = {
+      left: 5,
+      right: 5,
+      top: 5,
+      bottom: 5,
+    };
+    return obj;
+  },
+  getConnectorDefaults: (connector) => {
+    connector.style = {
+      strokeColor: '#6BA5D7',
+      strokeWidth: 2,
+    };
+    connector.targetDecorator.style.fill = '#6BA5D7';
+    connector.targetDecorator.style.strokeColor = '#6BA5D7';
+    connector.type = 'Orthogonal';
+    return connector;
+  },
 });
 diagram.appendTo('#element');
-

@@ -15,5 +15,11 @@ var diagram = new ej.diagrams.Diagram({
     width: '100%', height: '600px'
     }, '#element');
 
-diagram.add(node);
+document.getElementById('addNode').onclick = function() {
+    diagram.add(node);
+};
+document.getElementById('deleteNode').onclick = function() {
+    diagram.remove();
+};
+
 

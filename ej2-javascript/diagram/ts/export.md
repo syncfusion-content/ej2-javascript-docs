@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 Diagram provides support to export its content as image/svg files. The client-side method [`exportDiagram`](../api/diagram#exportDiagram) helps to export the diagram. The following code illustrates how to export the diagram as image.
 
->Note: To use Print and Export, you need to inject `PrintAndExport` in the diagram.
+N> To use Print and Export, you need to inject `PrintAndExport` in the diagram.
 
 <!-- markdownlint-disable MD033 -->
 

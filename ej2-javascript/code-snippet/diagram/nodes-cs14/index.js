@@ -5,8 +5,15 @@ var node = {
     // Size of the node
     width: 100,
     height: 100,
- style: { fill: '#6BA5D7', strokeColor: 'white' },
-    pivot: {x: 0, y: 0}
+    flip:"Horizontal",
+    shape: {
+      type: 'Basic',
+      shape: 'RightTriangle',
+  },
+  style: {
+      fill: '#6BA5D7',
+      strokeDashArray: '5,5'
+  }
         };
 
 // initialize Diagram component

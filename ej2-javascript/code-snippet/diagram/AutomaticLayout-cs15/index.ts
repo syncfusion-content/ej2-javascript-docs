@@ -75,13 +75,7 @@ let diagram: Diagram = new Diagram({
             type: 'OrganizationalChart',
             margin: {
                 top: 20
-            },// define the getLayoutInfo
-            getLayoutInfo: (node: Node, tree: TreeInfo) => {
-                if (!tree.hasSubTree) {
-                    tree.orientation = 'vertical';
-                    tree.type = 'alternate';
-                }
-            }
+            },
         },// define the dataSourceSettings
         dataSourceSettings: {
             id: 'Id',

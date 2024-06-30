@@ -14,7 +14,14 @@ var diagram = new ej.diagrams.Diagram({
     width: '100%', height: '600px', nodes: [node]
     });
 diagram.appendTo('#element');
-var annotation =  [{ id: 'label1', content: 'Annotation' }]
+
+
+
+document.getElementById('addAnnotation').onclick = () => {
+    var annotation =  [{ id: 'label1', content: 'Annotation' }]
+    //Parameters of addLabels method
+    //1. Node - Node to add the annotation
+    //2. Annotation - Annotation to be added to the node
     diagram.addLabels(diagram.nodes[0], annotation);
     diagram.dataBind();
-
+};

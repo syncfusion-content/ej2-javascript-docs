@@ -23,7 +23,6 @@ let node: NodeModel = {
                 collapsed: true,
                 adhoc: true
             }
-            as BpmnSubProcessModel
         },
     },
 };

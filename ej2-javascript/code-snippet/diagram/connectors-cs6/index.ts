@@ -9,9 +9,8 @@ let port1: PointPortModel = {
     }
 }
 port1.shape = 'Circle';
-port1.id = 'nodeportnew'
 port1.visibility = PortVisibility.Visible
-port1.id = 'port';
+port1.id = 'port1';
 port1.offset = {
     x: 1,
     y: 1
@@ -26,7 +25,7 @@ port2.offset = {
     x: 1,
     y: 0.5
 };
-port2.id = 'port1';
+port2.id = 'port2';
 port2.visibility = PortVisibility.Visible
 port2.shape = 'Circle';
 let port3: PointPortModel = {
@@ -35,11 +34,11 @@ let port3: PointPortModel = {
         fill: '#366F8C'
     }
 };
+port3.id = 'port3';
 port3.offset = {
     x: 0,
     y: 1
 };
-port3.id = 'newnodeport1';
 port3.visibility = PortVisibility.Visible
 port3.shape = 'Circle';
 let nodes: NodeModel[] = [{
@@ -48,7 +47,7 @@ let nodes: NodeModel[] = [{
         height: 100,
         offsetX: 100,
         offsetY: 100,
-        ports: [port1]
+        ports: [port1,port2]
     },
     {
         id: 'node1',
@@ -72,8 +71,8 @@ let connectors: ConnectorModel = {
     },
     sourceID: 'node',
     targetID: 'node1',
-    sourcePortID: 'port',
-    targetPortID: 'port1'
+    sourcePortID: 'port1',
+    targetPortID: 'port2'
 }
 let diagram: Diagram = new Diagram({
     width: 900,
@@ -89,8 +88,11 @@ let diagram: Diagram = new Diagram({
     },
 });
 diagram.appendTo('#element');
-// Update the target portID at the run time
-diagram.connectors[0].targetPortID = 'newnodeport1'
+(document.getElementById('updatePort') as HTMLInputElement).onclick = () =>{
+    connectors.sourcePortID = 'port2';
+    connectors.targetPortID = 'port3';
+    diagram.dataBind();
+}
 
 
 

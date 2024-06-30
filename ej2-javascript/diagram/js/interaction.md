@@ -67,7 +67,7 @@ The client-side method [`selectAll`](../api/diagram#selectAll) used to select al
 
 ![Resize](images/resize.gif)
 
->Note:  While dragging and resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to `Snapping`.
+N>  While dragging and resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to `Snapping`.
 
 ## Customize the resize-thumb
 
@@ -98,7 +98,7 @@ You can change the size of the node resize thumb and the connector end point han
 
 * Each segment of a selected connector is editable with some specific handles/thumbs.
 
->Note: For connector editing, you have to inject the [`ConnectorEditing`](../api/diagram/connectorEditing) module.
+N> For connector editing, you have to inject the [`ConnectorEditing`](../api/diagram/connectorEditing) module.
 
 ## End point handles
 

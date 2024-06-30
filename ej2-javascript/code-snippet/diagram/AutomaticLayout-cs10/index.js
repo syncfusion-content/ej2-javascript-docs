@@ -30,7 +30,7 @@ var diagram = new ej.diagrams.Diagram({
         type: 'ComplexHierarchicalTree',
         connectionPointOrigin: ej.diagrams.ConnectionPointOrigin.DifferentPoint,
         horizontalSpacing: 40, verticalSpacing: 40, horizontalAlignment: "Left", verticalAlignment: "Top",
-        margin: { left: 0, right: 0, top: 0, bottom: 0 },
+        margin: { left: 10, right: 10, top: 20, bottom: 10 },
         orientation: 'TopToBottom'
     },//Configures data source for diagram
     dataSourceSettings: {

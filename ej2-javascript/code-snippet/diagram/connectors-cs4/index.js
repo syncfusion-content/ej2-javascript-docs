@@ -21,7 +21,7 @@ var nodes = [{
         offsetY: 140,
         shape: {
             type: 'Flow',
-            shape: 'process'
+            shape: 'Process'
         },
         annotations: [{
             content: 'var i = 0;'
@@ -30,7 +30,6 @@ var nodes = [{
 ];
 
 var connector = {
-    id: "connector1",
     id: "connector1",
     style: {
         strokeColor: '#6BA5D7',
@@ -57,7 +56,6 @@ var diagram = new ej.diagrams.Diagram({
         node.height = 100;
         node.width = 100;
         node.style.fill = '#6BA5D7';
-        node.style.strokeColor = 'white';
         return node;
     },
     nodes: nodes,

@@ -1,9 +1,10 @@
-
-
-
-import { Diagram, NodeModel, ShapeAnnotationModel } from '@syncfusion/ej2-diagrams';
-// A node is created and stored in nodes array.
-let node: NodeModel = {
+import {
+    Diagram,
+    NodeModel,
+    ShapeAnnotationModel,
+  } from '@syncfusion/ej2-diagrams';
+  // A node is created and stored in nodes array.
+  let node: NodeModel = {
     // Position of the node
     offsetX: 250,
     offsetY: 250,
@@ -11,26 +12,28 @@ let node: NodeModel = {
     width: 100,
     height: 100,
     style: {
-        fill: '#6BA5D7',
-        strokeColor: 'white'
+      fill: '#6BA5D7',
+      strokeColor: 'white',
     },
     // Sets the annotation for the node
-    annotations: [{
+    annotations: [
+      {
         // Sets the content for the annotation
-        content: 'Annotation',
+        content: 'Annotation long annotation content',
         //Sets the offset for the content
-        offset: { x: 0, y: 1}
-    }]
-};
-// initialize diagram component
-let diagram: Diagram = new Diagram({
+        offset: { x: 0, y: 1 },
+        height: 100,
+        width: 100,
+      },
+    ],
+  };
+  // initialize diagram component
+  let diagram: Diagram = new Diagram({
     width: '100%',
     height: '600px',
     // Add node
-    nodes: [node]
-});
-// render initialized diagram
-diagram.appendTo('#element');
-
-
-
+    nodes: [node],
+  });
+  // render initialized diagram
+  diagram.appendTo('#element');
+  

@@ -22,8 +22,13 @@ let diagram: Diagram = new Diagram({
 });
 // render initialized diagram
 diagram.appendTo('#element');
-//Add Node
-diagram.add(node);
+
+(document.getElementById('addNode') as HTMLInputElement).onclick = function() {
+    diagram.add(node);
+};
+(document.getElementById('deleteNode') as HTMLInputElement).onclick = function() {
+    diagram.remove();
+};
 
 
 

@@ -24,13 +24,15 @@ let diagram: Diagram = new Diagram({
 });
 // render initialized diagram
 diagram.appendTo('#element');
-let annotation: ShapeAnnotationModel[] = [{
-    id: 'label1',
-    content: 'Annotation'
-}]
-//Method to add labels at runtime
+
+
+(document.getElementById('addAnnotation') as HTMLInputElement).onclick =
+  () => {
+    let annotation: ShapeAnnotationModel[] = [{
+      id: 'label1',
+      content: 'Annotation'
+  }]
+ //Method to add labels at runtime
 diagram.addLabels(diagram.nodes[0], annotation);
 diagram.dataBind();
-
-
-
+  };

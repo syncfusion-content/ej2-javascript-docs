@@ -8,11 +8,11 @@ let connector: ConnectorModel = {
     // Position of the node
     sourcePoint: {
         x: 100,
-        y: 200
+        y: 100
     },
     targetPoint: {
         x: 300,
-        y: 200
+        y: 100
     },
     //Sets type of the connector as Orthogonal
     type: 'Orthogonal',
@@ -23,12 +23,50 @@ let connector: ConnectorModel = {
         association: 'BiDirectional'
     },
 };
+let connector2: ConnectorModel = {
+    // Position of the node
+    sourcePoint: {
+        x: 100,
+        y: 200
+    },
+    targetPoint: {
+        x: 300,
+        y: 200
+    },
+    //Sets type of the connector as Orthogonal
+    type: 'Orthogonal',
+    //Sets type as Bpmn, shflowape as Association and association as Directional
+    shape: {
+        type: 'Bpmn',
+        flow: 'Association',
+        association: 'Directional'
+    },
+};
+let connector3: ConnectorModel = {
+    // Position of the node
+    sourcePoint: {
+        x: 100,
+        y: 300
+    },
+    targetPoint: {
+        x: 300,
+        y: 300
+    },
+    //Sets type of the connector as Orthogonal
+    type: 'Orthogonal',
+    //Sets type as Bpmn, shflowape as Association and association as Default
+    shape: {
+        type: 'Bpmn',
+        flow: 'Association',
+        association: 'Default'
+    },
+};
 // initialize diagram component
 let diagram: Diagram = new Diagram({
     width: '100%',
     height: '600px',
     // Add Connectors
-    connectors: [connector]
+    connectors: [connector,connector2,connector3]
 });
 // render initialized diagram
 diagram.appendTo('#element');

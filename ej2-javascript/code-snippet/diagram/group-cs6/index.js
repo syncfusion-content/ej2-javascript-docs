@@ -21,9 +21,11 @@ diagram = new ej.diagrams.Diagram({
 }, '#element');
 
 //To Add child to specifc group at Runtime
-diagram.addChildToGroup(group, 'node3');
+document.getElementById('addChildToGroup').onclick = () =>{
+  diagram.addChildToGroup(group, 'node3');
+}
 
 //To remove the specific children from group at runtime
-diagram.removeChildFromGroup(group, 'node3');
-
-
+document.getElementById('removeChildFromGroup').onclick = () =>{
+  diagram.removeChildFromGroup(group, 'node3');
+}

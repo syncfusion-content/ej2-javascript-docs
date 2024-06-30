@@ -25,7 +25,7 @@ Diagram provides support to add different kind of nodes. They are as follows:
 
 ## Text
 
-Texts can be added to the diagram as [`text`](../api/diagram/node#shape-shapemodel) nodes. The shape property of the node allows you to set the type of node and for text nodes, it should be set as **text**. In addition, define the content object that is used to define the text to be added and style is used to customize the appearance of that text. The following code illustrates how to create a text node.
+Texts can be added to the diagram as [`text`](../api/diagram/node#shape-shapemodel) node. The shape property of the node allows you to set the type of node and for text nodes, it should be set as **text**. In addition, define the content object that is used to define the text to be added and style is used to customize the appearance of that text. The following code illustrates how to create a text node.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -87,9 +87,9 @@ The following code illustrates how an image node is created.
 {% previewsample "page.domainurl/code-snippet/diagram/shapes-cs2" %}
 {% endif %}
 
-**Base64 Encoded Image Into The Image Node:**
+### Base64 Encoded Image Into The Image Node:
 
-The following code illustrates how add Base64 image into image node.
+The following code illustrates how to add Base64 image into image node.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -118,13 +118,13 @@ The following code illustrates how add Base64 image into image node.
 {% previewsample "page.domainurl/code-snippet/diagram/shapes-cs3" %}
 {% endif %}
 
->Note: Deploy your HTML file in the web application and export the diagram (image node) or else the image node will not be exported in the Chrome and Firefox due to security issues. Refer to the following link.
+N> Deploy your HTML file in the web application and export the diagram (image node) or else the image node will not be exported in the Chrome and Firefox due to security issues. Refer to the following link.
 
 Link 1: `http://asked.online/draw-images-on-canvas-locally-using-chrome/2546077/`
 
 Link 2: `http://stackoverflow.com/questions/4761711/local-image-in-canvas-in-chrome`
 
-## Image alignment
+### Image alignment
 
 Stretch and align the image content anywhere but within the node boundary.
 
@@ -170,7 +170,13 @@ The following table illustrates all the possible scale options for the image nod
 
 ## HTML
 
-Html elements can be embedded in the diagram through [`Html`](../api/diagram/node#shape-shapemodel) type node. The shape property of node allows you to set the type of node and to create a HTML node it should be set as `HTML`. The following code illustrates how an Html node is created.
+Html elements can be embedded in the diagram through [`Html`](../api/diagram/node#shape-shapemodel) type node. The shape property of node allows you to set the type of node and to create a HTML node it should be set as `HTML`.
+
+N> HTML node cannot be exported to image format, like JPEG, PNG, and BMP. It is by design, while exporting the diagram is drawn in a canvas. Further, this canvas is exported into image formats. Currently, drawing in a canvas equivalent from all possible HTML is not feasible. Hence, this limitation. To overcome this limiatation we can use Blink rendering engine. Refer to - [`Html node export`](https://support.syncfusion.com/kb/article/14031/how-to-export-html-node-using-blink-rendering-in-javascript-diagram)
+
+### HTML Node with contentTemplate.
+
+To render an HTML node with a content template, we need to define the desired template string within the [`content`](../api/diagram/htmlModel/#content) property. The following code illustrates how to create an HTML node with a content template:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -199,11 +205,42 @@ Html elements can be embedded in the diagram through [`Html`](../api/diagram/nod
 {% previewsample "page.domainurl/code-snippet/diagram/shapes-cs5" %}
 {% endif %}
 
->Note: HTML node cannot be exported to image format, like JPEG, PNG, and BMP. It is by design, while exporting the diagram is drawn in a canvas. Further, this canvas is exported into image formats. Currently, drawing in a canvas equivalent from all possible HTML is not feasible. Hence, this limitation.
+#### Functional content template.
 
-## HTML Node With Template
+To render an HTML node using a functional template, we define a function that returns the template string. Within this function, modifications can be made based on the node's ID.
 
-Html elements can be embedded in the diagram using [`Html`](../api/diagram/node#shape-shapemodel) type node. The shape property of the node allows you to set the type of node. The following code shows how an Html node is created with a template.
+The following code illustrates how to render an HTML node using the function and manipulate its content dynamically.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/shapes-contentFnTemplate/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/shapes-contentFnTemplate/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/shapes-contentFnTemplate" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/shapes-contentFnTemplate/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/shapes-contentFnTemplate/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/diagram/shapes-contentFnTemplate" %}
+{% endif %}
+
+### HTML Node With nodeTemplate
+
+To render html node with nodeTemplate we need to define the nodeTemplate in the html file and assign it to the [`nodeTemplate`](../api/diagram/#nodetemplate) property of the diagram. The following code illustrates how to render html node with nodeTemplate.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -230,6 +267,39 @@ Html elements can be embedded in the diagram using [`Html`](../api/diagram/node#
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/diagram/shapes-cs6" %}
+{% endif %}
+
+#### Functional nodeTemplate
+
+We can define a function which returns a template string and assign it directly to the `nodeTemplate` property of diagram.
+
+Refer the code example below.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/shapes-fnNodeTemplate/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/shapes-fnNodeTemplate/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/shapes-fnNodeTemplate" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/shapes-fnNodeTemplate/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/shapes-fnNodeTemplate/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/diagram/shapes-fnNodeTemplate" %}
 {% endif %}
 
 ## Native
@@ -263,15 +333,13 @@ Diagram provides support to embed SVG element into a node. The shape property of
 {% previewsample "page.domainurl/code-snippet/diagram/shapes-cs7" %}
 {% endif %}
 
->Note: Like HTML node, the native node also cannot be exported to image format. Fill color of native node can be overridden by the inline style or fill of the SVG element specified in the template.
+N> Like HTML node, the native node also cannot be exported to image format. Fill color of native node can be overridden by the inline style or fill of the SVG element specified in the template.
 
-## SVG content alignment
+### SVG content alignment
 
 Stretch and align the svg content anywhere but within the node boundary.
 
-The scale property of the node allows to stretch the svg content as you desired (either to maintain proportion or to stretch). By default, the `scale` property of node is set as **meet**.
-
-The following code illustrates how to scale or stretch the content of the node.
+The scale property of the node allows to stretch the svg content as you desired (either to maintain proportion or to stretch). By default, the [`scale`](../api/diagram/nativeModel/#scale) property of native shape is set as **meet**.
 
 The following tables illustrates all the possible scale options for the node.
 
@@ -317,11 +385,11 @@ The following code example illustrates how to create a basic shape.
 {% previewsample "page.domainurl/code-snippet/diagram/shapes-cs8" %}
 {% endif %}
 
->Note: By default, the `shape` property of the node is set as **basic**.
+N> By default, the `shape` property of the node is set as **basic**.
 
 Default property for shape is Rectangle.
 
->Note: When the `shape` is not set for a basic shape, it is considered as a **rectangle**.
+N> When the `shape` is not set for a basic shape, it is considered as a **rectangle**.
 
 The list of basic shapes are as follows.
 
@@ -329,7 +397,9 @@ The list of basic shapes are as follows.
 
 ## Path
 
-The [`Path`](../api/diagram/node#shape-shapemodel) node is a commonly used basic shape that allows visually to represent the geometrical information. To create a path node, specify the shape as **path**. The path property of node allows you to define the path to be drawn. The following code illustrates how a path node is created.
+The [`Path`](../api/diagram/node#shape-shapemodel) shape is a commonly used basic shape that allows visually to represent the geometrical information. As node path data, any geometrical data can be provided. You can create your own Geometry and assign it to data if you want anything different from the standard figures. A geometry does not require any dimension specifications, such as width or height, because it specifies its own size. If the node’s size is set, the geometry is extended to fit the node’s dimensions.
+
+To create a path node, specify the shape as Path. The [`data`](../api/diagram/pathModel/#data) property of node allows you to define the path to be drawn. The following code illustrates how a path node is created.
 
 {% if page.publishingplatform == "typescript" %}
 

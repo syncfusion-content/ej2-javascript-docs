@@ -28,5 +28,12 @@ var diagram = new ej.diagrams.Diagram({
 }, '#element');
 
 diagram.appendTo('#element');
-diagram.add(connectors)
+
+document.getElementById('add').onclick = function () {
+    diagram.add(connectors)
+};
+
+document.getElementById('remove').onclick = function () {
+    diagram.remove()
+};
 

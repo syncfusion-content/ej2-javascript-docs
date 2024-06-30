@@ -57,6 +57,12 @@ let diagram: Diagram = new Diagram({
 // render initialized diagram
 diagram.appendTo('#element');
 // Method to add ports through run time
-diagram.addPorts(diagram.nodes[0], port);
 
 
+(document.getElementById('addPorts') as HTMLInputElement).onclick = () =>{
+    // Method to add ports to a node at runtime
+    // Parameters:
+    // - node: The node to which the port will be added.
+    // - port: The port collection to be added to the node.
+    diagram.addPorts(diagram.nodes[0], port);
+}

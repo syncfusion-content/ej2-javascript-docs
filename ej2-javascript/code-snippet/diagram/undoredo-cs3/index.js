@@ -19,6 +19,7 @@ var diagram= new ej.diagrams.Diagram({
     width: '100%',
     height: '600px',
     nodes: nodes,
+    //Sets the stackLimit as 3
     historyManager: { stackLimit: 3 },
     getNodeDefaults: (node) => {
         node.height =  100;

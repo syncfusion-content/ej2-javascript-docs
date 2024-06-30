@@ -63,7 +63,6 @@ let diagram: Diagram = new Diagram({
         node.height = 100;
         node.width = 100;
         node.style.fill = '#6BA5D7';
-        node.style.strokeColor = 'white';
         return node;
     },
 });

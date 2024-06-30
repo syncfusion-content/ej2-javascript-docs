@@ -21,5 +21,11 @@ var diagram = new ej.diagrams.Diagram({
     width: '100%', height: '600px', nodes: [node]
     }, '#element');
 
-diagram.addPorts(diagram.nodes[0], port);
+document.getElementById('addPorts').onclick = () =>{
+    // Method to add ports to a node at runtime
+    // Parameters:
+    // - node: The node to which the port will be added.
+    // - port: The port collection to be added to the node.
+    diagram.addPorts(diagram.nodes[0], port);
+}
 

@@ -15,11 +15,8 @@ let node: NodeModel = {
         strokeColor: 'white'
     },
     constraints: NodeConstraints.Default | NodeConstraints.Shadow,
-    shadow: {
-        angle: 50,
-        opacity: 0.8,
-        distance: 9
-    }
+    //shadow added to the node
+    shadow:{color:'skyblue',angle:90,distance:10,opacity:0.8},
     // Text(label) added to the node
 };
 // initialize diagram component

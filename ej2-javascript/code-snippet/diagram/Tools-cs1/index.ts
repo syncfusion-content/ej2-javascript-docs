@@ -16,8 +16,6 @@ let diagram: Diagram = new Diagram({
         diagram.dataBind();
     },//customize the appearance of the shape
         getNodeDefaults: (obj: Node, diagram: Diagram) => {
-        obj.height = 15;
-        obj.width = 15;
         obj.borderWidth = 1;
         obj.style = {
             fill: '#6BA5D7',

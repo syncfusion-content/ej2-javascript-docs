@@ -29,10 +29,11 @@ let diagram: Diagram = new Diagram({
     height: '600px',
 });
 diagram.appendTo('#element');
-// Adds to the diagram
-diagram.add(connectors)
-// Remove from the diagram
-diagram.remove(connectors)
-
+(document.getElementById('add') as HTMLInputElement).onclick = function () {
+    diagram.add(connectors)
+};
+(document.getElementById('remove') as HTMLInputElement).onclick = function () {
+    diagram.remove()
+}
 
 

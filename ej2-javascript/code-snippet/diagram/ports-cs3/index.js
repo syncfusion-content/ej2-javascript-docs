@@ -15,12 +15,16 @@ var node = {
 // initialize Diagram component
 
 var diagram = new ej.diagrams.Diagram({
-    width: '100%', height: '600px'
+    width: '100%', height: '600px',
+    nodes: [node],
     }, '#element');
 
-diagram.add(node);
-var ports = [
-        {id: 'port1',},{id: 'port2',},{id: 'port3',},{id: 'port4',}
-    ]
-diagram.removePorts(diagram.nodes[0], ports);
+
+document.getElementById('removePorts').onclick = () =>{
+    // Method to remove ports from a node at runtime
+    // Parameters:
+    // - node: The node from which the ports will be removed.
+    // - ports: The collection of ports to be removed from the node.
+    diagram.removePorts(diagram.nodes[0], diagram.nodes[0].ports);
+}
 

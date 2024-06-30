@@ -279,7 +279,7 @@ Palette interaction notifies the element enter, leave, and dragging of the symbo
 
 [`DragOver`] [`IDragOverEventArgs`](../api/diagram/iDragOverEventArgs/) notifies, when an element drag over another diagram element.
 
->Note: The diagram provides support to cancel the drag and drop operation from the symbol palette to the diagram when the ESC key is pressed
+N> The diagram provides support to cancel the drag and drop operation from the symbol palette to the diagram when the ESC key is pressed
 
 ## See Also
 

@@ -5,7 +5,7 @@ var node = {
     // Size of the node
     width: 100,
     height: 100,
- style: { fill: '#6BA5D7', strokeColor: 'white' },
+    style: { fill: '#6BA5D7', strokeColor: 'white' },
     constraints: ej.diagrams.NodeConstraints.Default | ej.diagrams.NodeConstraints.Shadow,
     // Text(label) added to the node
         };

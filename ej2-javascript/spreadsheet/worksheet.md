@@ -50,6 +50,39 @@ The following code example shows the insert sheet operation in spreadsheet.
 {% previewsample "page.domainurl/code-snippet/spreadsheet/insert/sheet-cs1" %}
 {% endif %}
 
+### Insert a sheet programmatically and make it active sheet
+
+A sheet is a collection of cells organized in the form of rows and columns that allows you to store, format, and manipulate the data. Using [insertSheet](https://helpej2.syncfusion.com/documentation/api/spreadsheet/#insertsheet) method, you can insert one or more sheets at the desired index. Then, you can make the inserted sheet as active sheet by focusing the start cell of that sheet using the [goTo](https://ej2.syncfusion.com/documentation/api/spreadsheet/#goto) method.
+
+The following code example shows how to insert a sheet programmatically and make it the active sheet.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/spreadsheet/insert-sheet-change-active-sheet-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/spreadsheet/insert-sheet-change-active-sheet-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/spreadsheet/insert-sheet-change-active-sheet-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/spreadsheet/insert-sheet-change-active-sheet-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/spreadsheet/insert-sheet-change-active-sheet-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/spreadsheet/insert-sheet-change-active-sheet-cs1" %}
+{% endif %}
+
 ## Delete sheet
 
 The Spreadsheet has support for removing an existing worksheet. You can dynamically delete the existing sheet by the following way,

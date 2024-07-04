@@ -11,7 +11,16 @@ domainurl: ##DomainURL##
 
 # Selection in ##Platform_Name## Spreadsheet control
 
-Selection provides interactive support to highlight the cell, row, or column that you select. Selection can be done through Mouse, Touch, or Keyboard interaction. To enable selection, set `mode` as `Single` | `Multiple` in [`selectionSettings`](../api/spreadsheet/#selectionsettings). If you set `mode` to `None`, it disables the UI selection.
+{% if page.publishingplatform == "typescript" %}
+
+Selection provides interactive support to highlight the cell, row, or column that you select. Selection can be done through Mouse, Touch, or Keyboard interaction. To enable selection, set `mode` as `Single` | `Multiple` in [`selectionSettings`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#selectionsettings). If you set `mode` to `None`, it disables the UI selection.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+Selection provides interactive support to highlight the cell, row, or column that you select. Selection can be done through Mouse, Touch, or Keyboard interaction. To enable selection, set `mode` as `Single` | `Multiple` in [`selectionSettings`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#selectionsettings). If you set `mode` to `None`, it disables the UI selection.
+
+{% endif %}
+
 
 > * The default value for `mode` in  `selectionSettings` is `Multiple`.
 
@@ -23,7 +32,15 @@ You have the following options in Selection,
 
 ## Cell selection
 
-Cell selection is used to select a single or multiple cells. It can be performed using the [`selectRange`](../api/spreadsheet/#selectrange) method.
+{% if page.publishingplatform == "typescript" %}
+
+Cell selection is used to select a single or multiple cells. It can be performed using the [`selectRange`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#selectrange) method.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+Cell selection is used to select a single or multiple cells. It can be performed using the [`selectRange`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#selectrange) method.
+
+{% endif %}
 
 **User Interface**:
 
@@ -119,7 +136,15 @@ The following sample shows the column selection in the spreadsheet, here selecti
 
 ## How to remove selection in the spreadsheet
 
-The following sample shows, how to remove the selection in the spreadsheet. Here changing the `mode` as `None` in [`selectionSettings`](../api/spreadsheet/#selectionsettings) to disable's the UI selection.
+{% if page.publishingplatform == "typescript" %}
+
+The following sample shows, how to remove the selection in the spreadsheet. Here changing the `mode` as `None` in [`selectionSettings`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#selectionsettings) to disable's the UI selection.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+The following sample shows, how to remove the selection in the spreadsheet. Here changing the `mode` as `None` in [`selectionSettings`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#selectionsettings) to disable's the UI selection.
+
+{% endif %}
 
 {% if page.publishingplatform == "typescript" %}
 

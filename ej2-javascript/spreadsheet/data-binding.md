@@ -11,7 +11,15 @@ domainurl: ##DomainURL##
 
 # Data binding in ##Platform_Name## Spreadsheet control
 
-The Spreadsheet uses [`DataManager`](../data), which supports both RESTful JSON data services and local JavaScript object array binding to a range. The `dataSource` property can be assigned either with the instance of [`DataManager`](../data) or JavaScript object array collection.
+{% if page.publishingplatform == "typescript" %}
+
+The Spreadsheet uses [`DataManager`](https://helpej2.syncfusion.com/documentation/data/), which supports both RESTful JSON data services and local JavaScript object array binding to a range. The `dataSource` property can be assigned either with the instance of [`DataManager`](https://helpej2.syncfusion.com/documentation/data/) or JavaScript object array collection.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+The Spreadsheet uses [`DataManager`](https://helpej2.syncfusion.com/javascript/documentation/data/), which supports both RESTful JSON data services and local JavaScript object array binding to a range. The `dataSource` property can be assigned either with the instance of [`DataManager`](https://helpej2.syncfusion.com/javascript/documentation/data/) or JavaScript object array collection.
+
+{% endif %}
 
 > To bind data to a cell, use `cell data binding` support.
 
@@ -48,11 +56,27 @@ Refer to the following code example for local data binding.
 {% previewsample "page.domainurl/code-snippet/spreadsheet/data-binding-cs1" %}
 {% endif %}
 
-> The local data source can also be provided as an instance of the [`DataManager`](../data). By default, [`DataManager`](../data) uses [`JsonAdaptor`](../data/adaptors/#json-adaptor) for local data-binding.
+{% if page.publishingplatform == "typescript" %}
+
+> The local data source can also be provided as an instance of the [`DataManager`](https://helpej2.syncfusion.com/documentation/data/). By default, [`DataManager`](https://helpej2.syncfusion.com/documentation/data/) uses [`JsonAdaptor`](https://ej2.syncfusion.com/documentation/data/adaptors#json-adaptor) for local data-binding.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+> The local data source can also be provided as an instance of the [`DataManager`](https://helpej2.syncfusion.com/javascript/documentation/data/). By default, [`DataManager`](https://helpej2.syncfusion.com/javascript/documentation/data/) uses [`JsonAdaptor`](https://ej2.syncfusion.com/javascript/documentation/data/adaptors#json-adaptor) for local data-binding.
+
+{% endif %}
 
 ### Customizing column data mapping
 
+{% if page.publishingplatform == "typescript" %}
+
 By default, when a data source is bound to a sheet, columns are auto-assigned from the data source fields sequentially. This means that the first field in the data source is assigned to Column A, the second to Column B, and so on, sequentially. However, now you can customize the column assignments by specifying the appropriate field names in the desired order using the [fieldsOrder](https://ej2.syncfusion.com/documentation/api/spreadsheet/rangeModel/#fieldsorder) property.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+By default, when a data source is bound to a sheet, columns are auto-assigned from the data source fields sequentially. This means that the first field in the data source is assigned to Column A, the second to Column B, and so on, sequentially. However, now you can customize the column assignments by specifying the appropriate field names in the desired order using the [fieldsOrder](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/rangeModel/#fieldsorder) property.
+
+{% endif %}
 
 > You can customize the mapping of column data only in the local data binding support.
 
@@ -88,8 +112,16 @@ The following code example demonstrates how to customize the mapping of column d
 
 ## Remote data
 
-To bind remote data to the Spreadsheet control, assign service data as an instance of [`DataManager`](../data) to the `dataSource` property. To interact with remote data source, provide the service endpoint `url`.
+{% if page.publishingplatform == "typescript" %}
 
+To bind remote data to the Spreadsheet control, assign service data as an instance of [`DataManager`](https://helpej2.syncfusion.com/documentation/data/) to the `dataSource` property. To interact with remote data source, provide the service endpoint `url`.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+To bind remote data to the Spreadsheet control, assign service data as an instance of [`DataManager`](https://helpej2.syncfusion.com/javascript/documentation/data/) to the `dataSource` property. To interact with remote data source, provide the service endpoint `url`.
+
+{% endif %}
+ 
 Refer to the following code example for remote data binding.
 
 {% if page.publishingplatform == "typescript" %}

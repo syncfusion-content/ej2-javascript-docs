@@ -15,13 +15,29 @@ A group of cells in a sheet is known as cell range.
 
 ## Wrap text
 
-Wrap text allows you to display large content as multiple lines in a single cell. By default, the wrap text support is enabled. Use the [`allowWrap`](../api/spreadsheet/#allowwrap) property to enable or disable the wrap text support in spreadsheet.
+{% if page.publishingplatform == "typescript" %}
+
+Wrap text allows you to display large content as multiple lines in a single cell. By default, the wrap text support is enabled. Use the [`allowWrap`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#allowwrap) property to enable or disable the wrap text support in spreadsheet.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+Wrap text allows you to display large content as multiple lines in a single cell. By default, the wrap text support is enabled. Use the [`allowWrap`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#allowwrap) property to enable or disable the wrap text support in spreadsheet.
+
+{% endif %}
 
 Wrap text can be applied or removed to a cell or range of cells in the following ways,
 
 * Using the `wrap` property in `cell`, you can enable or disable wrap text to a cell at initial load.
 * Select or deselect wrap button from ribbon toolbar to apply or remove the wrap text to the selected range.
-* Using the [`wrap`](../api/spreadsheet/#wrap) method, you can apply or remove the wrap text once the component is loaded.
+{% if page.publishingplatform == "typescript" %}
+
+* Using the [`wrap`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#wrap) method, you can apply or remove the wrap text once the component is loaded.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+* Using the [`wrap`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#wrap) method, you can apply or remove the wrap text once the component is loaded.
+
+{% endif %}
 
 The following code example shows the wrap text functionality in spreadsheet.
 
@@ -61,13 +77,30 @@ The following features have some limitations in wrap text:
 
 ## Merge cells
 
-Merge cells allows users to span two or more cells in the same row or column into a single cell. When cells with multiple values are merged, top-left most cell data will be the data for the merged cell. By default, the merge cells option is enabled. Use [`allowMerge`](../api/spreadsheet/#allowmerge) property to enable or disable the merge cells option in spreadsheet.
+{% if page.publishingplatform == "typescript" %}
+
+Merge cells allows users to span two or more cells in the same row or column into a single cell. When cells with multiple values are merged, top-left most cell data will be the data for the merged cell. By default, the merge cells option is enabled. Use [`allowMerge`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#allowmerge) property to enable or disable the merge cells option in spreadsheet.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+Merge cells allows users to span two or more cells in the same row or column into a single cell. When cells with multiple values are merged, top-left most cell data will be the data for the merged cell. By default, the merge cells option is enabled. Use [`allowMerge`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#allowmerge) property to enable or disable the merge cells option in spreadsheet.
+
+{% endif %}
 
 You can merge the range of cells in the following ways,
 
 * Set the `rowSpan` and `colSpan` property in `cell` to merge the number of cells at initial load.
 * Select the range of cells and apply merge by selecting the desired option from ribbon toolbar.
-* Use [`merge`](../api/spreadsheet/#merge) method to merge the range of cells, once the component is loaded.
+
+{% if page.publishingplatform == "typescript" %}
+
+* Use [`merge`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#merge) method to merge the range of cells, once the component is loaded.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+* Use [`merge`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#merge) method to merge the range of cells, once the component is loaded.
+
+{% endif %}
 
 The available merge options in spreadsheet are,
 
@@ -116,8 +149,16 @@ The following features have some limitations in Merge:
 
 ## Data Validation
 
-Data Validation is used to restrict the user from entering the invalid data. You can use the [`allowDataValidation`](../api/spreadsheet/#allowdatavalidation) property to enable or disable data validation.
+{% if page.publishingplatform == "typescript" %}
 
+Data Validation is used to restrict the user from entering the invalid data. You can use the [`allowDataValidation`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#allowdatavalidation) property to enable or disable data validation.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+Data Validation is used to restrict the user from entering the invalid data. You can use the [`allowDataValidation`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#allowdatavalidation) property to enable or disable data validation.
+
+{% endif %}
+ 
 > * The default value for `allowDataValidation` property is `true`.
 
 ### Apply Validation
@@ -127,7 +168,15 @@ You can apply data validation to restrict the type of data or the values that us
 You can apply data validation by using one of the following ways,
 
 * Select the Data tab in the Ribbon toolbar, and then choose the Data Validation item.
-* Use the [`addDataValidation()`](../api/spreadsheet/#adddatavalidation) method programmatically.
+{% if page.publishingplatform == "typescript" %}
+
+* Use the [`addDataValidation()`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#adddatavalidation) method programmatically.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+* Use the [`addDataValidation()`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#adddatavalidation) method programmatically.
+
+{% endif %}
 
 ### Clear Validation
 
@@ -136,7 +185,15 @@ Clear validation feature is used to remove data validations from the specified r
 You can clear data validation rule by one of the following ways,
 
 * Select the Data tab in the Ribbon toolbar, and then choose the Clear Validation item.
-* Use the [`removeDataValidation()`](../api/spreadsheet/#removedatavalidation) method programmatically.
+{% if page.publishingplatform == "typescript" %}
+
+* Use the [`removeDataValidation()`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#removedatavalidation) method programmatically.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+* Use the [`removeDataValidation()`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#removedatavalidation) method programmatically.
+
+{% endif %}
 
 ### Highlight Invalid Data
 
@@ -145,7 +202,15 @@ Highlight invalid data feature is used to highlight the previously entered inval
 You can highlight an invalid data by using one of the following ways,
 
 * Select the Data tab in the Ribbon toolbar, and then choose the Highlight Invalid Data item.
-* Use the [`addInvalidHighlight()`](../api/spreadsheet/#addinvalidhighlight) method programmatically.
+{% if page.publishingplatform == "typescript" %}
+
+* Use the [`addInvalidHighlight()`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#addinvalidhighlight) method programmatically.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+* Use the [`addInvalidHighlight()`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#addinvalidhighlight) method programmatically.
+
+{% endif %}
 
 ### Clear Highlighted Invalid Data
 
@@ -154,7 +219,15 @@ Clear highlight feature is used to remove the highlight from invalid cells.
 You can clear the highlighted invalid data by using the following ways,
 
 * Select the Data tab in the Ribbon toolbar, and then choose the Clear Highlight item.
-* Use the [`removeInvalidHighlight()`](../api/spreadsheet/#removeinvalidhighlight) method programmatically.
+{% if page.publishingplatform == "typescript" %}
+
+* Use the [`removeInvalidHighlight()`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#removeinvalidhighlight) method programmatically.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+* Use the [`removeInvalidHighlight()`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#removeinvalidhighlight) method programmatically.
+
+{% endif %} 
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -298,8 +371,16 @@ Clear feature helps you to clear the cell contents (formulas and data), formats 
 You can apply clear feature by using one of the following ways,
 
 * Select the clear icon in the Ribbon toolbar under the Home Tab.
-* Using the [`clear()`](../api/spreadsheet/#clear) method to clear the values.
+{% if page.publishingplatform == "typescript" %}
 
+* Using the [`clear()`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#clear) method to clear the values.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+* Using the [`clear()`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#clear) method to clear the values.
+
+{% endif %}
+ 
 Clear has the following types in the spreadsheet,
 
 | Options | Uses |
@@ -311,8 +392,16 @@ Clear has the following types in the spreadsheet,
 
 ### Methods
 
-Clear the cell contents and formats in the Spreadsheet document by using the [clear](../api/spreadsheet/#clear) method. The [clear](../api/spreadsheet/#clear) method has `type` and `range` as parameters. The following code example shows how to clear the cell contents and formats in the button click event.
+{% if page.publishingplatform == "typescript" %}
 
+Clear the cell contents and formats in the Spreadsheet document by using the [clear](https://ej2.syncfusion.com/documentation/api/spreadsheet/#clear) method. The [clear](https://ej2.syncfusion.com/documentation/api/spreadsheet/#clear) method has `type` and `range` as parameters. The following code example shows how to clear the cell contents and formats in the button click event.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+Clear the cell contents and formats in the Spreadsheet document by using the [clear](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#clear) method. The [clear](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#clear) method has `type` and `range` as parameters. The following code example shows how to clear the cell contents and formats in the button click event.
+
+{% endif %}
+ 
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}

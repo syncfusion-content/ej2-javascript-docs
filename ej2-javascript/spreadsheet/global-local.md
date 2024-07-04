@@ -13,8 +13,17 @@ domainurl: ##DomainURL##
 
 ## Localization
 
-The [`Localization`](../common/localization) library allows you to localize the default text content of the Spreadsheet. The Spreadsheet has static text on some features (cell formatting, Merge, Data validation, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the
-[`locale`](../api/spreadsheet/#locale) value and translation object.
+{% if page.publishingplatform == "typescript" %}
+
+The [`Localization`](https://ej2.syncfusion.com/documentation/common/localization) library allows you to localize the default text content of the Spreadsheet. The Spreadsheet has static text on some features (cell formatting, Merge, Data validation, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the
+[`locale`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#locale) value and translation object.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+The [`Localization`](https://ej2.syncfusion.com/javascript/documentation/common/localization) library allows you to localize the default text content of the Spreadsheet. The Spreadsheet has static text on some features (cell formatting, Merge, Data validation, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the
+[`locale`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#locale) value and translation object.
+
+{% endif %}
 
 The following list of properties and their values are used in the Spreadsheet.
 
@@ -379,7 +388,15 @@ IsProtected | is protected
 
 ### Loading translations
 
-To load translation object in an application, use [`load`](../common/internationalization/#load) function of the [`L10n`](../common/internationalization) class.
+{% if page.publishingplatform == "typescript" %}
+
+To load translation object in an application, use [`load`](https://ej2.syncfusion.com/documentation/common/internationalization#loading-culture-data) function of the [`L10n`](https://ej2.syncfusion.com/documentation/common/internationalization) class.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+To load translation object in an application, use [`load`](https://ej2.syncfusion.com/javascript/documentation/common/internationalization#loading-culture-data) function of the [`L10n`](https://ej2.syncfusion.com/javascript/documentation/common/internationalization) class.
+
+{% endif %}
 
 The following example demonstrates the Spreadsheet in `French` culture. In the below sample we have translated the ribbon tab names and Home tab content (clipboard, cell style).
 
@@ -445,7 +462,15 @@ The following example demonstrates the Spreadsheet in French [`fr-CH`] culture. 
 
 ## Right to left (RTL)
 
-RTL provides an option to switch the text direction and layout of the Spreadsheet component from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable RTL Spreadsheet, set the [`enableRtl`](../api/spreadsheet/#enablertl) to true.
+{% if page.publishingplatform == "typescript" %}
+
+RTL provides an option to switch the text direction and layout of the Spreadsheet component from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable RTL Spreadsheet, set the [`enableRtl`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#enablertl) to true.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+RTL provides an option to switch the text direction and layout of the Spreadsheet component from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable RTL Spreadsheet, set the [`enableRtl`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#enablertl) to true.
+
+{% endif %}
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -476,4 +501,12 @@ RTL provides an option to switch the text direction and layout of the Spreadshee
 
 ## See Also
 
-* [Localization](../common/localization)
+{% if page.publishingplatform == "typescript" %}
+
+* [Localization](https://ej2.syncfusion.com/documentation/common/localization)
+
+{% elsif page.publishingplatform == "javascript" %}
+
+* [Localization](https://ej2.syncfusion.com/javascript/documentation/common/localization)
+
+{% endif %}

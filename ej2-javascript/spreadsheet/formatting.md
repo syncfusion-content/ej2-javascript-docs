@@ -18,7 +18,15 @@ Formatting options make your data easier to view and understand. The different t
 
 ## Number Formatting
 
-Number formatting provides a type for your data in the Spreadsheet. Use the [`allowNumberFormatting`](../api/spreadsheet/#allownumberformatting) property to enable or disable the number formatting option in the Spreadsheet. The different types of number formatting supported in Spreadsheet are,
+{% if page.publishingplatform == "typescript" %}
+
+Number formatting provides a type for your data in the Spreadsheet. Use the [`allowNumberFormatting`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#allownumberformatting) property to enable or disable the number formatting option in the Spreadsheet. The different types of number formatting supported in Spreadsheet are,
+
+{% elsif page.publishingplatform == "javascript" %}
+
+Number formatting provides a type for your data in the Spreadsheet. Use the [`allowNumberFormatting`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#allownumberformatting) property to enable or disable the number formatting option in the Spreadsheet. The different types of number formatting supported in Spreadsheet are,
+
+{% endif %}
 
 | Types | Format |
 |-------|---------|
@@ -36,7 +44,16 @@ Number formatting provides a type for your data in the Spreadsheet. Use the [`al
 
 Number formatting can be applied in following ways,
 * Using the `format` property in `cell`, you can set the desired format to each cell at initial load.
-* Using the [`numberFormat`](../api/spreadsheet/#numberformat) method, you can set the number format to a cell or range of cells.
+
+{% if page.publishingplatform == "typescript" %}
+
+* Using the [`numberFormat`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#numberformat) method, you can set the number format to a cell or range of cells.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+* Using the [`numberFormat`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#numberformat) method, you can set the number format to a cell or range of cells.
+
+{% endif %}
 * Selecting the number format option from ribbon toolbar.
 
 ### Custom Number Formatting
@@ -85,7 +102,17 @@ The different types of custom number formatting supported in Spreadsheet are,
 | Accounting | `_(* #,##0.00_);_(* (#,##0.00);_(* "-"??_);_(@_)` |
 
 Custom Number formatting can be applied in following ways,
-* Using the [`numberFormat`](../api/spreadsheet/#numberformat) method, you can set your own custom number format to a cell or range of cells.
+
+{% if page.publishingplatform == "typescript" %}
+
+* Using the [`numberFormat`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#numberformat) method, you can set your own custom number format to a cell or range of cells.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+* Using the [`numberFormat`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#numberformat) method, you can set your own custom number format to a cell or range of cells.
+
+{% endif %}
+
 * Selecting the custom number format option from custom number formats dialog or type your own format in dialog input and then click apply button. It will apply the custom format for selected cells.
 
 The following code example shows the number formatting in cell data.
@@ -119,10 +146,21 @@ The following code example shows the number formatting in cell data.
 
 ## Text and cell formatting
 
-Text and cell formatting enhances the look and feel of your cell. It helps to highlight a particular cell or range of cells from a whole workbook. You can apply formats like font size, font family, font color, text alignment, border etc. to a cell or range of cells. Use the [`allowCellFormatting`](../api/spreadsheet/#allowcellformatting) property to enable or disable the text and cell formatting option in Spreadsheet. You can set the formats in following ways,
+{% if page.publishingplatform == "typescript" %}
+
+Text and cell formatting enhances the look and feel of your cell. It helps to highlight a particular cell or range of cells from a whole workbook. You can apply formats like font size, font family, font color, text alignment, border etc. to a cell or range of cells. Use the [`allowCellFormatting`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#allowcellformatting) property to enable or disable the text and cell formatting option in Spreadsheet. You can set the formats in following ways,
 * Using the `style` property, you can set formats to each cell at initial load.
-* Using the [`cellFormat`](../api/spreadsheet/#cellformat) method, you can set formats to a cell or range of cells.
+* Using the [`cellFormat`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#cellformat) method, you can set formats to a cell or range of cells.
 * You can also apply by clicking the desired format option from the ribbon toolbar.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+Text and cell formatting enhances the look and feel of your cell. It helps to highlight a particular cell or range of cells from a whole workbook. You can apply formats like font size, font family, font color, text alignment, border etc. to a cell or range of cells. Use the [`allowCellFormatting`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#allowcellformatting) property to enable or disable the text and cell formatting option in Spreadsheet. You can set the formats in following ways,
+* Using the `style` property, you can set formats to each cell at initial load.
+* Using the [`cellFormat`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#cellformat) method, you can set formats to a cell or range of cells.
+* You can also apply by clicking the desired format option from the ribbon toolbar.
+
+{% endif %}
 
 ### Fonts
 
@@ -212,7 +250,15 @@ The following features are not supported in Formatting:
 
 ## Conditional Formatting
 
-Conditional formatting helps you to format a cell or range of cells based on the conditions applied. You can enable or disable conditional formats by using the [`allowConditionalFormat`](../api/spreadsheet/#allowConditionalFormat) property.
+{% if page.publishingplatform == "typescript" %}
+
+Conditional formatting helps you to format a cell or range of cells based on the conditions applied. You can enable or disable conditional formats by using the [`allowConditionalFormat`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#allowConditionalFormat) property.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+Conditional formatting helps you to format a cell or range of cells based on the conditions applied. You can enable or disable conditional formats by using the [`allowConditionalFormat`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#allowConditionalFormat) property.
+
+{% endif %}
 
 > The default value for the `allowConditionalFormat` property is `true`.
 
@@ -221,7 +267,17 @@ Conditional formatting helps you to format a cell or range of cells based on the
 You can apply conditional formatting by using one of the following ways,
 
 * Select the conditional formatting icon in the Ribbon toolbar under the Home Tab.
-* Using the [`conditionalFormat()`](../api/spreadsheet/#conditionalFormat) method to define the condition.
+
+{% if page.publishingplatform == "typescript" %}
+
+* Using the [`conditionalFormat()`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#conditionalFormat) method to define the condition.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+* Using the [`conditionalFormat()`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#conditionalFormat) method to define the condition.
+
+{% endif %}
+
 * Using the `conditionalFormats` in sheets model.
 
 Conditional formatting has the following types in the spreadsheet,
@@ -287,7 +343,16 @@ In the MAY and JUN columns, we have applied conditional formatting custom format
 You can clear the defined rules by using one of the following ways,
 
 * Using the “Clear Rules” option in the Conditional Formatting button of HOME Tab in the ribbon to clear the rule from selected cells.
-* Using the [`clearConditionalFormat()`](../api/spreadsheet/#clearConditionalFormat) method to clear the defined rules.
+
+{% if page.publishingplatform == "typescript" %}
+
+* Using the [`clearConditionalFormat()`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#clearConditionalFormat) method to clear the defined rules.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+* Using the [`clearConditionalFormat()`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#clearConditionalFormat) method to clear the defined rules.
+
+{% endif %}
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -10,3 +10,8 @@
   top: 45%;
   left: 45%;
 }
+
+span.e-input-group.e-custom-multi-column {
+  color: #ab3243;
+  background: #32a5ab;
+}

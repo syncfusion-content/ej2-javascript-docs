@@ -11,8 +11,16 @@ domainurl: ##DomainURL##
 
 # Searching in ##Platform_Name## Spreadsheet control
 
-Find and Replace helps you to search for the target text and replace the found text with alternative text within the sheet or workbook. You can use the [`allowFindAndReplace`](../api/spreadsheet/#allowfindandreplace) property to enable or disable the Find and Replace functionality.
+{% if page.publishingplatform == "typescript" %}
 
+Find and Replace helps you to search for the target text and replace the found text with alternative text within the sheet or workbook. You can use the [`allowFindAndReplace`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#allowfindandreplace) property to enable or disable the Find and Replace functionality.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+Find and Replace helps you to search for the target text and replace the found text with alternative text within the sheet or workbook. You can use the [`allowFindAndReplace`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#allowfindandreplace) property to enable or disable the Find and Replace functionality.
+
+{% endif %}
+ 
 > * The default value for `allowFindAndReplace` property is `true`.
 
 ## Find
@@ -32,7 +40,11 @@ Find can be done by any of the following ways:
 > * `Match case`: To find the matched value with case sensitive.
 > * `Match exact cell contents`: To find the exact matched cell value with entire match cases.
 
-* Using [`find()`](../api/spreadsheet/#find) method to perform find operation.
+{% if page.publishingplatform == "typescript" %}
+* Using [`find()`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#find) method to perform find operation.
+{% elsif page.publishingplatform == "javascript" %}
+* Using [`find()`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#find) method to perform find operation.
+{% endif %}
 
 ## Replace
 
@@ -45,8 +57,13 @@ Replace can be done by any of the following ways:
 * Use `Ctrl + H` key to open the Find and Replace dialog.
 * Use Replace button to change the found value in sheet or workbook.
 * Using Replace All button, all the matched criteria can be replaced with find value based on sheet or workbook.
-* Using [`replace()`](../api/spreadsheet/#replace) method to perform replace operation by passing the argument `args.replaceby` as `replace`.
-* Using [`replace()`](../api/spreadsheet/#replace) method to perform replace all operation by passing the argument `args.replaceby` as `replaceall`.
+{% if page.publishingplatform == "typescript" %}
+* Using [`replace()`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#replace) method to perform replace operation by passing the argument `args.replaceby` as `replace`.
+* Using [`replace()`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#replace) method to perform replace all operation by passing the argument `args.replaceby` as `replaceall`.
+{% elsif page.publishingplatform == "javascript" %}
+* Using [`replace()`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#replace) method to perform replace operation by passing the argument `args.replaceby` as `replace`.
+* Using [`replace()`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#replace) method to perform replace all operation by passing the argument `args.replaceby` as `replaceall`.
+{% endif %}
 
 ## Go to
 
@@ -54,8 +71,13 @@ Go to feature is used to navigate to a specific cell address in the sheet or wor
 
 **User Interface**:
 
+{% if page.publishingplatform == "typescript" %}
 * Use `Ctrl + G` key to open the Go To dialog.
-* Use [`goTo()`](../api/spreadsheet/#goto) method to perform Go To operation.
+* Use [`goTo()`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#goto) method to perform Go To operation.
+{% elsif page.publishingplatform == "javascript" %}
+* Use `Ctrl + G` key to open the Go To dialog.
+* Use [`goTo()`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#goto) method to perform Go To operation.
+{% endif %}
 
 In the following sample, searching can be done by following ways:
 

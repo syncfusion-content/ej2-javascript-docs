@@ -11,8 +11,15 @@ domainurl: ##DomainURL##
 
 # Clipboard in ##Platform_Name## Spreadsheet control
 
-The Spreadsheet provides support for the clipboard operations (cut, copy, and paste). Clipboard operations can be enabled or disabled by setting the [`enableClipboard`](../api/spreadsheet/#enableclipboard) property in Spreadsheet.
+{% if page.publishingplatform == "typescript" %}
 
+The Spreadsheet provides support for the clipboard operations (cut, copy, and paste). Clipboard operations can be enabled or disabled by setting the [`enableClipboard`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#enableclipboard) property in Spreadsheet.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+The Spreadsheet provides support for the clipboard operations (cut, copy, and paste). Clipboard operations can be enabled or disabled by setting the [`enableClipboard`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#enableclipboard) property in Spreadsheet.
+{% endif %}
+ 
 > By default, the `enableClipboard` property is true.
 
 ## Cut
@@ -26,8 +33,16 @@ Cut can be done in one of the following ways.
 * Using Cut button in the Ribbon’s HOME tab to perform cut operation.
 * Using Cut option in the Context Menu.
 * Using `Ctrl + X` | `Command + X` keyboard shortcut.
-* Using the [`cut`](../api/spreadsheet/#cut) method.
+{% if page.publishingplatform == "typescript" %}
 
+* Using the [`cut`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#cut) method.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+* Using the [`cut`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#cut) method.
+
+{% endif %}
+ 
 ## Copy
 
 It is used to copy the data from selected range of cells, rows or columns in a spreadsheet and make it available in the clipboard.
@@ -39,7 +54,15 @@ Copy can be done in one of the following ways.
 * Using Copy button in the Ribbon’s HOME tab to perform copy operation.
 * Using Copy option in the Context Menu.
 * Using `Ctrl + C` | `Command + C` keyboard shortcut.
-* Using the [`copy`](../api/spreadsheet/#copy) method.
+{% if page.publishingplatform == "typescript" %}
+
+* Using the [`copy`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#copy) method.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+* Using the [`copy`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#copy) method.
+
+{% endif %}
 
 ## Paste
 
@@ -57,7 +80,15 @@ Paste can be done in one of the following ways.
 * Using Paste button in the Ribbon’s HOME tab to perform paste operation.
 * Using Paste option in the Context Menu.
 * Using `Ctrl + V` | `Command + V` keyboard shortcut.
-* Using the [`paste`](../api/spreadsheet/#paste) method.
+{% if page.publishingplatform == "typescript" %}
+
+* Using the [`paste`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#paste) method.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+* Using the [`paste`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#paste) method.
+
+{% endif %}
 
 > If you use the Keyboard shortcut key for cut (`Ctrl + X`) | copy (`Ctrl + C`) from other sources, you should use `Ctrl + V` shortcut while pasting into the spreadsheet.
 
@@ -90,7 +121,15 @@ Paste can be done in one of the following ways.
 
 ## Prevent the paste functionality
 
-The following example shows, how to prevent the paste action in spreadsheet. In [`actionBegin`](../api/spreadsheet/#actionbegin) event, you can set `cancel` argument as false in paste request type.
+{% if page.publishingplatform == "typescript" %}
+
+The following example shows, how to prevent the paste action in spreadsheet. In [`actionBegin`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#actionbegin) event, you can set `cancel` argument as false in paste request type.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+The following example shows, how to prevent the paste action in spreadsheet. In [`actionBegin`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#actionbegin) event, you can set `cancel` argument as false in paste request type.
+
+{% endif %}
 
 {% if page.publishingplatform == "typescript" %}
 

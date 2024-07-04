@@ -3,6 +3,18 @@ ej.gantt.Gantt.Inject(ej.gantt.Toolbar);
 var ganttChart = new ej.gantt.Gantt({
     dataSource: GanttData,
     resources: resourceCollection,
+    addDialogFields: [
+        { type: 'General', headerText: 'General add'},
+        { type: 'Dependency', additionalParams: {allowPaging: true, allowSorting: true, toolbar: ["Search", "Print",]}},
+        { type: 'Resources', additionalParams: { allowSorting: true, allowPaging: true, toolbar: ["Search", "Print"], columns: [{ field: "newData" }]}},
+        {type:"Segments", additionalParams:{columns:[{field:"segmenttask",width:"170px" ,headerText:"Segment Task"}],}}
+    ],
+    editDialogFields: [
+        { type: 'General', headerText: 'General edit', fields: ["TaskID", "TaskName", "newinput"] },
+        {type: 'Dependency', additionalParams: {allowPaging: true, allowSorting: true, toolbar: ["Search", "Print",]}},
+        { type: 'Resources', additionalParams: { allowSorting: true, allowPaging: true, toolbar: ["Search", "Print"], columns: [{ field: "newdata" }]}},
+        {type: "Segments", additionalParams: {columns: [{ field: "segmenttask", width: "170px", headerText: "Segment Task" }],}}
+    ],
     height: '450px',
     taskFields: {
         id: 'TaskID',
@@ -26,18 +38,6 @@ var ganttChart = new ej.gantt.Gantt({
         showDeleteConfirmDialog: true
     },
     toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-    addDialogFields: [
-        { type: 'General', headerText: 'General add'},
-        { type: 'Dependency', additionalParams: {allowPaging: true, allowSorting: true, toolbar: ["Search", "Print",]}},
-        { type: 'Resources', additionalParams: { allowSorting: true, allowPaging: true, toolbar: ["Search", "Print"], columns: [{ field: "newData" }]}},
-        {type:"Segments", additionalParams:{columns:[{field:"segmenttask",width:"170px" ,headerText:"Segment Task"}],}}
-    ],
-    editDialogFields: [
-        { type: 'General', headerText: 'General edit', fields: ["TaskID", "TaskName", "newinput"] },
-        {type: 'Dependency', additionalParams: {allowPaging: true, allowSorting: true, toolbar: ["Search", "Print",]}},
-        { type: 'Resources', additionalParams: { allowSorting: true, allowPaging: true, toolbar: ["Search", "Print"], columns: [{ field: "newdata" }]}},
-        {type: "Segments", additionalParams: {columns: [{ field: "segmenttask", width: "170px", headerText: "Segment Task" }],}}
-    ],
 		
 });
 ganttChart.appendTo('#Gantt');

@@ -31,22 +31,22 @@ Modern themes like Material 3 and Fluent 2 incorporate support for CSS variables
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
-{% highlight ts tabtitle="material3.css" %}
-{% include code-snippet/common/css-value-cs1/ts/material3.css %}
+{% highlight css tabtitle="material3.css" %}
+{% include code-snippet/common/css-value-cs1/material3.css %}
 {% endhighlight %}
-{% highlight ts tabtitle="fluent2.css" %}
-{% include code-snippet/common/css-value-cs1/ts/fluent2.css %}
+{% highlight css tabtitle="fluent2.css" %}
+{% include code-snippet/common/css-value-cs1/fluent2.css %}
 {% endhighlight %}
 {% endtabs %}
         
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
-{% highlight js tabtitle="material3.css" %}
-{% include code-snippet/common/css-value-cs1/js/material3.css %}
+{% highlight css tabtitle="material3.css" %}
+{% include code-snippet/common/css-value-cs1/material3.css %}
 {% endhighlight %}
-{% highlight ts tabtitle="fluent2.css" %}
-{% include code-snippet/common/css-value-cs1/js/fluent2.css %}
+{% highlight css tabtitle="fluent2.css" %}
+{% include code-snippet/common/css-value-cs1/fluent2.css %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -32,8 +32,7 @@ var multiComboBoxObject = new ej.multicolumncombobox.MultiColumnComboBox({
   dataSource: empData,
   columns: columnsData,
   fields: { text: 'Name', value: 'EmpID' },
-  text: 'Michael',
-  disabled: true
+  text: 'Michael'
 });
 
 multiComboBoxObject.appendTo('#multicolumn');

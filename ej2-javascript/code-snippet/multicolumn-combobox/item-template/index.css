@@ -11,7 +11,7 @@
   left: 45%;
 }
 
-.e-input-group.e-custom-multi-column {
-  color: #ab3243;
-  background: #32a5ab;
+.name, .emp-id, .city {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 6px 6px 4px 20px;
 }

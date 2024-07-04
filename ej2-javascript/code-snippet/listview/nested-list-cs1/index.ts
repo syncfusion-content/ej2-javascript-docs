@@ -241,7 +241,8 @@ let listviewInstance: ListView = new ListView({
     fields: { tooltip: 'text' },
 
     headerTitle: 'Continent',
-    showHeader: true
+    showHeader: true,
+    animation: { duration:0 }
 });
 
 //Render initialized ListView

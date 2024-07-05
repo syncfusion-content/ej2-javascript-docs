@@ -19,14 +19,6 @@ To know more about Bitwise operators, refer to [`Bitwise Operations`](#bitwise-o
 
 [`Diagram constraints`](../api/diagram/diagramconstraints/) allows you to enable or disable the following behaviors:
 
-* Page editing
-* Bridging
-* Zoom and pan
-* Undo/redo
-* Tooltip
-* Line routing
-* Virtualization
-
 The following table displays the list of all diagram constraints.
 
 | Constraints | Description |
@@ -92,16 +84,6 @@ N> By default, the following constraints are enabled in the diagram,
 ## Node constraints
 
 Node constraints allows to enable or disable the following behaviors of node. They are as follows:
-
-* Select
-* Drag
-* Resize
-* Rotate
-* Delete
-* InConnect
-* OutConnect
-* Shadow
-* Tooltip
 
 | Constraints | Description |
 | -------- | -------- |
@@ -206,15 +188,6 @@ N>By default, the following constraints are enabled for the node,
 ## Connector constraints
 
 Connector constraints allows you to enable or disable certain behaviors of connectors.
-
-* Select
-* Drag
-* DragSourceEnd
-* DragTargetEnd
-* Delete
-* InheritBridging
-* PointerEvents
-* Tooltip
 
 | Constraints | Description |
 | -------- | -------- |
@@ -331,9 +304,6 @@ N>By default, the following constraints are enabled for the connector,
 ## Port constraints
 
 The constraints property of the Port allows you to enable or disable the following behaviors of port.
-
-* InConnect
-* OutConnect
 
 | Constraints | Description |
 | -------- | -------- |
@@ -476,10 +446,6 @@ For more details about annotation constraints, refer to [`AnnotationConstraints`
 
 Selector visually represents the selected elements with certain editable thumbs. The visibility of the thumbs can be controlled with selector constraints. The part of selector is categorized as follows:
 
-* Resizer
-* Rotator
-* User handles
-
 | Constraints | Description |
 | -------- | -------- |
 |None|Hides all the selector elements.|
@@ -550,12 +516,7 @@ N> By default, the following constraints are enabled for the selected items,
 
 ## Snap constraints
 
-Snap constraints control the visibility of gridlines and enable/disable snapping. Snap constraints allow to set the following behaviors.
-
-* Show only horizontal or vertical gridlines.
-* Show both horizontal and vertical gridlines.
-* Snap to either horizontal or vertical gridlines.
-* Snap to both horizontal and vertical gridlines.
+Snap constraints control the visibility of gridlines and enable/disable snapping.
 
 The following list of snapping constraints are used to enable or disable certain features of snapping.
 
@@ -617,11 +578,7 @@ N> By default, the following constraints are enabled for the snap functionality 
 
 ## Boundary constraints
 
-Boundary constraints defines a boundary for the diagram inside which the interaction should be done. Boundary constraints allow to set the following behaviors.
-
-* Infinite
-* Diagram
-* Page
+Boundary constraints defines a boundary for the diagram inside which the interaction should be done.
 
 The following list of constraints are used to enable or disable certain features of boundary interactions of the diagram.
 

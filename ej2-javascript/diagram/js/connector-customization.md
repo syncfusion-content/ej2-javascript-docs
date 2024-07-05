@@ -59,7 +59,7 @@ The following code example illustrates how to customize the appearance of the de
 
 The gradient property is used to set the gradient color for the decorator. There are two types of gradient.
  * Linear
- * Raial
+ * Radial
 
 The following code example illustrates how to apply gradient for the decorator.
 
@@ -273,5 +273,5 @@ The following code illustrates how to split the connector and create a connectio
         
 {% previewsample "page.domainurl/code-snippet/diagram/connectors-cs29" %}
 
-![Enable Connector Split](../images/EnableSplit.gif)
+![Enable Connector Split](images/EnableSplit.gif)
 

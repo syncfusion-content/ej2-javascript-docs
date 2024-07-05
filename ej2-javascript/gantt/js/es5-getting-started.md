@@ -72,9 +72,9 @@ Refer to the following code to find the location of Gantt script and style file.
 
 **Example:**
 
-> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/16.4.40/Essential JS 2/ej2-gantt/dist/global/ej2-gantt.min.js`
+> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/26.1.35/Essential JS 2/ej2-gantt/dist/global/ej2-gantt.min.js`
 >
-> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/16.4.40/Essential JS 2/ej2-gantt/styles/material.css`
+> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/26.1.35/Essential JS 2/ej2-gantt/styles/material.css`
 
 After copying the files, then you can refer the gantt's scripts and styles into the `index.html` file.
 The below html code example shows the minimal dependency for Gantt.
@@ -138,9 +138,9 @@ Refer to the Gantt's CDN links as follows.
 
 **Syntax:**
 
-> Script: `http://cdn.syncfusion.com/ej2/26.1.35/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+> Script: `http://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Styles: `http://cdn.syncfusion.com/ej2/26.1.35/{PACKAGE_NAME}/styles/material.css`
+> Styles: `http://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/styles/material.css`
 
 **Example:**
 

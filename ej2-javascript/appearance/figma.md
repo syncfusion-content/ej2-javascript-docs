@@ -8,46 +8,25 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Figma UI Kits for Syncfusion Components
+# Figma UI Kits for Syncfusion Controls
 
-Figma is a versatile design tool revolutionizing collaboration on web and mobile app interfaces. As an all-in-one platform for design and prototyping, it allows designers to create, share, and collaborate on projects in real time, making it indispensable for both designers and developers.
+Syncfusion offers [Figma UI kits](https://www.figma.com/@syncfusion) to facilitate effective collaboration between designers and developers. The Figma UI kits are available in four themes: [Material 3](https://www.figma.com/community/file/1385969023252455137/syncfusion-ui-kit-material-3-theme), [Fluent](https://www.figma.com/community/file/1385969120047188707/syncfusion-ui-kit-fluent-theme), [Tailwind](https://www.figma.com/community/file/1385969065626384098/syncfusion-ui-kit-tailwind-theme), and [Bootstrap 5](https://www.figma.com/community/file/1385968977953858272/syncfusion-ui-kit-bootstrap-5-theme). These kits match the themes used in Syncfusion controls.
 
-[Syncfusion Figma UI kits](https://www.figma.com/@syncfusion_inc) are comprehensive collections of user interface components designed to streamline website development. These kits include a wide range of pre-designed components, such as Buttons, Charts, Grids, and more, all meticulously crafted to ensure consistency and usability across web applications. By integrating Syncfusion's UI kits into your website design process, you can accelerate development, maintain design coherence, and create visually appealing and user-friendly interfaces with ease. It includes:
-
-- 80+ visual components
-- 300+ icons
+The kits contain reusable design controls with various possible states and variants, along with detailed figures, measurements, and icons, representing the Syncfusion controls.
 
 ![Material 3](./images/material3.png)
 
-## Usage of UI kits
-
-The Syncfusion Figma UI kit contains a collection of assets, including icons, UI components, fonts, and other elements, that are used by designers to build user interfaces and prototypes. Instead of designing from scratch, designers can drag and drop elements from the UI kit to create the desired interface. Figma UI kits seamlessly design Syncfusion components within applications, facilitating quick prototyping, real-time collaboration, and efficient design system management.
-
-The benefits of utilizing UI kits include:
-
-- Speed up the design process.
-- View all UI component appearances in a single file.
-- Ensure design consistency.
-- Streamlined design workflow.
-
 ## Advantages of UI kits
 
-UI kits offer numerous benefits for both designers and developers, streamlining the design and development process for web and mobile applications. Here’s a detailed look at the key advantages of utilizing Syncfusion’s Figma UI Kits:
-
-- **Wide Range of Components:** Supports over 80 components, providing a diverse selection for designing interfaces.
-- **Themes:** Choose from various themes such as Material 3, Fluent, Tailwind, and Bootstrap 5 for different design needs.
-- **Icon Libraries:** Access to over 300 icons enhances design capabilities by providing a wide variety of visual symbols for use in applications.
-- **Customization:** Syncfusion offers extensive customization options for fonts, colors, shapes, shadows, and more, allowing tailored designs.
-- **Ease of Use:** Simple interface with drag-and-drop functionality.
-- **Preview Designs:** Instant visualization of design changes allows designers to see the impact of their adjustments in real time.
-- **Collaboration-Friendly:** Facilitate real-time collaboration with team members, enabling seamless communication and efficient design iterations.
-- **Global Changes:** Effortlessly apply global changes to multiple components simultaneously, ensuring consistency across your entire design system.
-- **Export Options:** Export your designs as image files or in the Figma (.fig) format, allowing for easy integration into other projects or workflows.
-- **Support:** Benefit from Syncfusion's dedicated support team, ensuring timely assistance and guidance throughout your design journey.
+The Syncfusion Figma UI kit offers the following key advantages:
+- The UI kit includes detailed information about Syncfusion controls, such as available control lists, their states, and variants. This facilitates a quick understanding of Syncfusion controls.
+- Design controls are developed using the [atomic design methodology](https://atomicdesign.bradfrost.com/chapter-2/), making customization straightforward and efficient.
+- Developers can seamlessly match Syncfusion controls with your design requirements, ensuring alignment and accuracy.
+- By using standardized controls and themes, the UI kit ensures consistency in your designs, maintaining a uniform look and feel across projects.
 
 ## Downloading the UI kits
 
-Syncfusion provides various theme UI kits tailored to different needs. You can download them from the following links:
+Syncfusion Figma UI kits are available in the [Figma community](https://www.figma.com/@syncfusion). You can download the Syncfusion theme-specific Figma UI kits from the following links:
 
 - [Material 3](https://www.figma.com/community/file/1385969023252455137/syncfusion-ui-kit-material-3-theme)
 - [Fluent](https://www.figma.com/community/file/1385969120047188707/syncfusion-ui-kit-fluent-theme)
@@ -56,79 +35,43 @@ Syncfusion provides various theme UI kits tailored to different needs. You can d
 
 ## Structure of the UI kits
 
-The structure of Syncfusion’s Figma UI kit is organized to provide a comprehensive and user-friendly layout, making it easy to navigate and explore the various components. Here’s an in-depth look at each section within the UI kits:
+Syncfusion’s Figma UI kit is structured to offer a comprehensive and user-friendly layout, facilitating easy navigation and exploration of various controls. It includes the following pages:
 
-**Index**
+- **Thumbnail**: This page serves as the cover page for the UI kit.
+- **Index**: Here, users can find a detailed list of all control names, making it simple to identify and locate specific controls within the UI kit.
+- **Icons**: Contains a collection of all icons used in the design controls.
+- **UI Controls**: At the core of the UI kit, this section features a wide range of essential UI controls. Each control is meticulously designed with detailed figures, measurements, and icons, showcasing various states and variants.
 
-This page includes a comprehensive list of all component names, allowing users to easily identify and locate the components available in the Syncfusion kit.
-
-**Icons**
-
-The Icons section provides a comprehensive library of over 300 icons, organized into categories for easy navigation. Key categories include:
-
-* Action: Icons for actions like delete, edit, save, filter, etc.
-* Navigation: Icons for navigation elements like arrows, home, menu, etc.
-* Media: Icons for media control such as play, pause, volume, etc.
-
-**UI Components**
-
-This section is the core of the UI kit, containing a variety of essential UI components. Each component is categorized and includes multiple variants and states to suit different use cases, like below:
-
-* Buttons: Variants include primary, secondary, and different states such as hover and disabled.
-* Inputs: Includes text fields, dropdowns, radio buttons, checkboxes, and sliders.
-* Grids: Ready-to-use grid layouts and table structures for data representation.
-
-<div align="center">
-  <img src="./images/layout.png" alt="Layout">
-</div>
-
-## How do we use UI kits?
-
-You can use the Syncfusion Figma UI kit in a friendly manner. Follow the below simple steps to utilize it.
-
-1. Visit our [UI kits](#downloading-the-ui-kits) and choose your preferred theme and download it.
-2. Open the Figma desktop or web app.
-3. Click the **Import** button in the top-right corner of the page.
-4. Select the downloaded Syncfusion fig file you want to import and click the **Open** button.
-5. Customize components by changing colors, sizes, etc.
-6. Click the **Local variables** option, which contains the design token for the color variables.
-7. By changing the desired colors, it will reflect the components simultaneously.
-8. Preview the design to ensure appearance and functionality align with expectations.
-
-![Drag](./images/tokens.png)
+![Layout](./images/layout.png)
 
 ## Customizing the UI kits
 
-The Syncfusion Kits for Figma are highly flexible and fully customizable to suit your vision and needs. Let's see how to customize the button colors within your layout:
+The Syncfusion Figma UI kits are easily customizable to meet your specific needs, allowing you to create unique designs and adjust colors to match your brand guidelines. The [atomic design methodology](https://atomicdesign.bradfrost.com/chapter-2/) used in developing these controls, your customizations will be seamlessly reflected across multiple controls and their variants.
 
-1. Identify the buttons you wish to customize within your layout.
+Here's how to customize the primary button color of the Material 3 theme within your layout:
 
-2. On the right side of the Figma interface, find the color variable options listed. For example, the variable for a particular button color might be labeled as `$primary-bg-color`. It was derived from the primary color variable.
-
-3. To customize this primary button component color, click outside the button to see the **Local variables** option on the right side of the Figma interface. It contains the design token for the color variables. Click the **Local variables** option.
-
-4. It will show the design token list in the popup. You can change the primary color using a color palette.
-
-5. Once you've selected the new color (pink) of the primary variable, the button's color pattern will be updated accordingly. You'll see the changes reflected in real-time within your design.
+1. Visit our [UI kits](#downloading-the-ui-kits) and choose your preferred theme, such as the Material 3 theme.
+2. Open the selected theme in the Figma web application by clicking the **Open in Figma** button.
+3. For the desktop application, click the **Import** button in the top-right corner of the page. Select the downloaded Syncfusion fig file you want to import and click the **Open** button.
+4. Identify the button you wish to customize within your layout.
+5. On the right side of the Figma interface, find the color variable options listed. For example, the variable for a particular button color might be labeled as `$primary-bg-color`, derived from the primary color variable.
+6. To customize this primary button control color, click outside the button to see the **Local variables** option on the right side of the Figma interface. It contains the design token for the color variables. Click the **Local variables** option.
+7. A popup will show the design token list. You can change the primary color using a color palette.
+8. Once you've selected the new color (e.g., pink) for the primary variable, the button's color pattern will be updated accordingly. You'll see the changes reflected in real-time within your design.
 
 ![Customization](./images/customize.png)
 
-In addition to changing the button colors, you can also customize other aspects of the UI components:
-
-- **Font**: Adjust the font style and size to align with your design preferences.
-- **Shape**: Modify the shape of components such as buttons, containers, or icons.
-- **Spacing**: Fine-tune the spacing between elements to achieve the desired layout.
-- **Shadow**: Add or adjust shadow effects to enhance the visual depth of UI elements.
+In addition to changing the button color, you can also customize other aspects like font, spacing, shadows, etc., of the UI controls:
 
 Feel free to experiment with these customization options to create a design that perfectly matches your requirements.
 
 ## Upgrading the UI kits
 
-To upgrade UI kits, download the latest version from the provided links. Follow these guidelines for a seamless upgrade process:
+To upgrade your UI kits, download the latest version from the provided links. Follow these guidelines for a seamless upgrade process:
 
-- Stay informed about updates or new versions of UI kits from Syncfusion.
-- Prior to upgrading, back up ongoing projects to prevent data loss or compatibility issues.
-- Provide feedback to Syncfusion regarding your experience with the upgraded UI kits, including any issues encountered or improvement suggestions.
+- Keep track of updates or new versions of UI kits from Syncfusion.
+- Before upgrading, back up your ongoing projects to prevent data loss or compatibility issues.
+- Share your experience with Syncfusion regarding the upgraded UI kits, including any issues encountered or suggestions for improvement.
 
 ## See also
 

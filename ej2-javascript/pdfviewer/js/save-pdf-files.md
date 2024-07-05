@@ -27,7 +27,7 @@ Start by following the steps provided in this [link](https://ej2.syncfusion.com/
 
 2. Open the `PdfViewerController.cs` file in your web service project.
 
-3. Modify the `Download()` method to open it in the viewer using URL
+3. Modify the [Download()](https://ej2.syncfusion.com/documentation/api/pdfviewer/#download) method to open it in the viewer using URL
 
 ```csharp
 public IActionResult Download([FromBody] Dictionary<string, string> jsonObject)
@@ -132,7 +132,7 @@ public PdfViewerController(IWebHostEnvironment hostingEnvironment, IMemoryCache 
 }
 ```
 
-5. Modify the `Download()` method to open it in the viewer using URL
+5. Modify the [Download()](https://ej2.syncfusion.com/documentation/api/pdfviewer/#download) method to open it in the viewer using URL
 
 ```csharp
 

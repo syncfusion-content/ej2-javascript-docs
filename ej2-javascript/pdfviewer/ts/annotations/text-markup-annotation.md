@@ -98,7 +98,7 @@ document.getElementById('set').addEventListener('click', ()=> {
 {% endtabs %}
 
 N> To set up the **server-backed PDF Viewer**,
-Add the below `serviceUrl` in the `index.ts` file
+Add the below [serviceUrl](https://ej2.syncfusion.com/documentation/api/pdfviewer/#serviceurl) in the `index.ts` file
 `pdfviewer.serviceUrl = 'https://services.syncfusion.com/js/production/api/pdfviewer';`
 
 {% previewsample "page.domainurl/code-snippet/pdfviewer/text-markup-annotation/highlight-mode-cs1" %}
@@ -316,7 +316,7 @@ document.getElementById('set').addEventListener('click', ()=> {
 {% endtabs %}
 
 N> To set up the **server-backed PDF Viewer**,
-Add the below `serviceUrl` in the `index.ts` file
+Add the below [serviceUrl](https://ej2.syncfusion.com/documentation/api/pdfviewer/#serviceurl) in the `index.ts` file
 `pdfviewer.serviceUrl = 'https://services.syncfusion.com/js/production/api/pdfviewer';`          
 
 {% previewsample "page.domainurl/code-snippet/pdfviewer/text-markup-annotation/underline-mode-cs1" %}

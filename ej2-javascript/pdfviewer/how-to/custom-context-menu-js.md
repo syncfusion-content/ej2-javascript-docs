@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Customize context menu in ##Platform_Name## Pdfviewer control
 
-PDF Viewer allows you to add custom option in context menu. It can be achieved by using the `addCustomMenu()` method and custom action is defined using the `customContextMenuSelect()`method.
+PDF Viewer allows you to add custom option in context menu. It can be achieved by using the [addCustomMenu()](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/#addcustommenu) method and custom action is defined using the [customContextMenuSelect()](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/#customcontextmenuselectmethod.
 
 ### Add Custom Option
 

@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Import annotations in ##Platform_Name## Pdfviewer control
 
-To import annotations into a Syncfusion PDF Viewer when loading a PDF document, you can use the **importAnnotations()** method of the PDF Viewer. This method allows you to import annotations from a file or a string in the PDF Viewer.
+To import annotations into a Syncfusion PDF Viewer when loading a PDF document, you can use the [**importAnnotations()**](https://ej2.syncfusion.com/documentation/api/pdfviewer/#importannotation) method of the PDF Viewer. This method allows you to import annotations from a file or a string in the PDF Viewer.
 
 Here is an example of how you can use the **importAnnotations()** method to import annotations when loading a PDF document:
 

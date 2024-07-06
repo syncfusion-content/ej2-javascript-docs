@@ -37,7 +37,7 @@ The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaS
 {% endhighlight %}
 {% endtabs %}
 
-N> We have provided the support to dynamically change the `serviceURL`. So, after changing the `serviceURL` dynamically, you need invoke the `pdfViewer.dataBind()` method to update the `serviceURL` quickly. This will effectively change the `serviceURL` dynamically. Ensure that this step is performed after version 23.1.36.
+N> We have provided the support to dynamically change the [serviceURL](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#serviceurl). So, after changing the `serviceURL` dynamically, you need invoke the `pdfViewer.dataBind()` method to update the `serviceURL` quickly. This will effectively change the `serviceURL` dynamically. Ensure that this step is performed after version 23.1.36.
 document.getElementById('load').addEventListener('click', function () {
    pdfViewer.serviceUrl = "https://services.syncfusion.com/angular/production/api/pdfviewer";
    pdfViewer.documentPath = "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf";

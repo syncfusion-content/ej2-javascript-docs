@@ -106,7 +106,7 @@ pdfviewer.download();
 
 ## How to get the base64 string while downloading the PDF document
 
-The `downloadEnd` event of the PDF viewer allows you to get the downloaded document as a base64 string.
+The [downloadEnd](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#downloadend) event of the PDF viewer allows you to get the downloaded document as a base64 string.
 
 The following code illustrates how to get the downloaded document as a base64 string.
 

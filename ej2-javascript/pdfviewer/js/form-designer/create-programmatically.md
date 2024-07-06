@@ -1243,7 +1243,7 @@ pdfviewer.listBoxFieldSettings = {
 
 ### DropDown field settings
 
-Using the `updateFormField` method, the form fields can be updated programmatically.
+Using the [updateFormField](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#updateformfields) method, the form fields can be updated programmatically.
 
 The following code example explains how to update the DropDown field properties on a button click.
 

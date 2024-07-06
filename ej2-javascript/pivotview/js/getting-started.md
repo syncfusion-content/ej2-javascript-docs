@@ -43,11 +43,11 @@ The following list of dependencies are required to use the pivot table component
 
 Refer the following steps for setup your local environment.
 
-**Step 1:** Create a root folder `myapp` for your application.
+**Step 1:** Create a root folder `my-app` for your application.
 
-**Step 2:** Create `myapp/resources` folder to store local scripts and styles files.
+**Step 2:** Create `my-app/resources` folder to store local scripts and styles files.
 
-**Step 3:** Create `myapp/index.js` and `myapp/index.html` files for initializing Essential JS 2 pivot table control.
+**Step 3:** Open Visual Studio Code and create `my-app/index.js` and `my-app/index.html` files for initializing Essential JS 2 pivot table control.
 
 ## Adding Syncfusion resources
 
@@ -58,11 +58,15 @@ The Essential JS 2 pivot table control can be initialized by using either of the
 
 ### Using local script and style
 
-You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+**1. Download Essential Studio JavaScript (Essential JS 2):** Obtain the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
-After installing the Essential JS 2 product build, you can copy the pivot table scripts and style file into the `resources/scripts` and `resources/styles` folder.
+**2. Copy Files to Resources Folder:** After installing the Essential JS 2 product build, you can copy the pivot table scripts and style file into the designated folders:
 
-Refer the below code to find location pivot table's script and style file.
+Scripts: Copy the scripts to the `resources/scripts` folder.
+
+Styles: Copy the styles to the `resources/styles` folder.
+
+**3. Locate Script and Style Files:** Refer the below code to find location pivot table's script and style file.
 
 **Syntax:**
 
@@ -286,7 +290,7 @@ Pivot Table component initialized and sample data assigned. Now add the fields t
 
 * `rows`: Collection of fields that needs to be displayed in row axis of pivot table.
 * `columns`: Collection of fields that needs to be displayed in column axis of pivot table.
-* `values`: Collection of fields that needs to be displayed as aggregrated numeric values in pivot table.
+* `values`: Collection of fields that needs to be displayed as aggregated numeric values in pivot table.
 * `filters`: Filter the values in other axis based on the collection of filter fields in pivot table.
 
 In-order to define each field in the respective axis, the following basic properties should be set.
@@ -360,6 +364,9 @@ The Grouping Bar feature automatically populates fields from the bound data sour
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/pivot-table/pivot-table-cs157/index.html %}
 {% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/pivot-table/pivot-table-cs157/es5-datasource.js %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs157" %}
@@ -374,6 +381,9 @@ The component provides a built-in Field List similar to Microsoft Excel. It allo
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/pivot-table/pivot-table-cs158/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/pivot-table/pivot-table-cs158/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -396,6 +406,9 @@ Also calculated fields can be added at run time through the built-in dialog. The
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/pivot-table/calculatedfield-cs3/index.html %}
 {% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/pivot-table/calculatedfield-cs3/es5-datasource.js %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/pivot-table/calculatedfield-cs3" %}
@@ -412,6 +425,9 @@ Place the following pivot table code in the `index.js`.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/pivot-table/pivot-table-cs159/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/pivot-table/pivot-table-cs159/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -430,6 +446,9 @@ Output will be displayed as follows.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/pivot-table/pivot-table-cs160/index.html %}
 {% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/pivot-table/pivot-table-cs160/es5-datasource.js %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs160" %}
@@ -437,5 +456,7 @@ Output will be displayed as follows.
 ## Deploy the Application
 
 The Essential JS 2 pivot table control features are segregated into individual feature-wise modules. The [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build and `CDN` scripts contains code for all features used in pivot table and hence we suggest to not to use them in production. We strongly recommend you to generate script files to use in production using our **Custom Resource Generator**[`(CRG)`](https://crg.syncfusion.com/) for Essential JS 2. CRG will allow you to generate the bundled script for the currently enabled features in pivot table.
+
+For more information and to access the quick start project, visit: [GitHub Repository](https://github.com/SyncfusionExamples/getting-started-with-the-javascript-pivot-table-component)
 
 > You can also explore our [JavaScript Pivot Table example](https://ej2.syncfusion.com/demos/#/material/pivot-table/default) that shows how to rendering of the pivot table with drill-up and drill-down functionality bound to a relational report.

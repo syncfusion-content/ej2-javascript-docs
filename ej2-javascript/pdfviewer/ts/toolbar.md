@@ -178,7 +178,7 @@ document.getElementById('set').addEventListener('click', ()=> {
 {% endtabs %}
 
 N> To set up the **server-backed PDF Viewer**,
-Add the below `serviceUrl` in the `index.ts` file
+Add the below [serviceUrl](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#serviceurl) in the `index.ts` file
 `pdfviewer.serviceUrl = 'https://services.syncfusion.com/js/production/api/pdfviewer';`               
 
 {% previewsample "page.domainurl/code-snippet/pdfviewer/toolbar/toolbar-method-cs1" %}
@@ -1528,7 +1528,7 @@ Sample :
 
 ## How to customize the default toolbar with desired tools
 
-Customize the default toolbar with the required tools by using the `toolbarSettings` class of the PDF viewer.
+Customize the default toolbar with the required tools by using the [toolbarSettings](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#toolbarsettings) class of the PDF viewer.
 
 The following code illustrates how to render the default toolbar with specific tools.
 

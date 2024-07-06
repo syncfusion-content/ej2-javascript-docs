@@ -45,7 +45,7 @@ Refer to the following code snippet to switch to highlight mode.
 {% endtabs %}
 
 N> To set up the **server-backed PDF Viewer**,
-Add the below `serviceUrl` in the `index.html` file
+Add the below [serviceUrl](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#serviceurl) in the `index.html` file
 `serviceUrl: 'https://services.syncfusion.com/js/production/api/pdfviewer'`       
 
 {% previewsample "page.domainurl/code-snippet/pdfviewer/es5-text-markup-annotation/highlight-mode-cs1" %}

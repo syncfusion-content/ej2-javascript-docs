@@ -77,7 +77,7 @@ if (addFreeTextAnnotationButton) {
 
 The PDF Viewer library allows you to add the free text annotation in the PDF Viewer control programmatically using the [**addAnnotation()**](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/annotation/#addannotation) method.
 
-Here is an example of how you can use the **addAnnotation()** method to move the free text annotation programmatically:
+Here is an example of how you can use the [**addAnnotation()**](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#addannotation) method to move the free text annotation programmatically:
 
 ```html
 <button id="addFreeTextAnnotation"> Add FreeText Programmatically</button>

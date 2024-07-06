@@ -1,13 +1,13 @@
 var pivotTableObj = new ej.pivotview.PivotView({
     dataSourceSettings: {
+        columns: [{ name: 'Date', caption: 'Date' }, { name: 'Product' }],
         dataSource: pivotData,
         expandAll: false,
         enableSorting: true,
-        columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
-        values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
-        rows: [{ name: 'Products' }],        
-        filters:[{ name: 'Country' }],
-        formatSettings: [{ name: 'Amount', format: 'C0' }]
+        filters: [{ name: 'Quarter' }],
+        formatSettings: [{ name: 'Amount', format: 'C0' }],
+        rows: [{ name: 'Country' }, { name: 'State' }],
+        values: [{ name: 'Amount', caption: 'Sold Amount' }, { name: 'Quantity', caption: 'Quantity' }]
     },
      height: 350,
     showFieldList: true,

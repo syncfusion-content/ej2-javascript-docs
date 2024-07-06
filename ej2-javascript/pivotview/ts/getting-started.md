@@ -170,7 +170,7 @@ Pivot Table component initialized and sample data assigned. Now add the fields t
 
 * `rows`: Collection of fields that needs to be displayed in row axis of pivot table.
 * `columns`: Collection of fields that needs to be displayed in column axis of pivot table.
-* `values`: Collection of fields that needs to be displayed as aggregrated numeric values in pivot table.
+* `values`: Collection of fields that needs to be displayed as aggregated numeric values in pivot table.
 * `filters`: Filter the values in other axis based on the collection of filter fields in pivot table.
 
 In-order to define each field in the respective axis, the following basic properties should be set.
@@ -301,6 +301,9 @@ The Grouping Bar feature automatically populates fields from the bound data sour
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/pivot-table/pivot-table-cs372/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/pivot-table/pivot-table-cs372/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs372" %}
@@ -317,6 +320,9 @@ The component provides a built-in Field List similar to Microsoft Excel. It allo
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/pivot-table/pivot-table-cs373/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/pivot-table/pivot-table-cs373/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
           
@@ -339,6 +345,9 @@ Also calculated fields can be added at run time through the built-in dialog. The
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/pivot-table/calculatedfield-cs6/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/pivot-table/calculatedfield-cs6/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/pivot-table/calculatedfield-cs6" %}
@@ -355,6 +364,9 @@ Place the following pivot table code in the `app.ts`.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/pivot-table/pivot-table-cs374/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/pivot-table/pivot-table-cs374/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
           
@@ -381,6 +393,11 @@ Output will be displayed as follows.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/pivot-table/pivot-table-cs375/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/pivot-table/pivot-table-cs375/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
+
+For more information and to access the quick start project, visit: [GitHub Repository](https://github.com/SyncfusionExamples/getting-started-with-the-typescript-pivot-table-component)
           
 {% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs375" %}

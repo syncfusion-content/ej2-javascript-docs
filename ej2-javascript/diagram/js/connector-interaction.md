@@ -17,8 +17,6 @@ Connectors can be selected, dragged, and routed over the diagram page.
 
 A connector can be selected, simply just by clicking on it.
 
-![Connector select unSelect GIF](../images/connector-SelectionGif.gif)
-
 A connector can be selected at runtime by using the Select method and clear the selection in the diagram using the ClearSelection. The following code explains how to select and clear selection in the diagram.
 
 {% tabs %}
@@ -36,7 +34,7 @@ A connector can be selected at runtime by using the Select method and clear the 
 
 Connector can be dragged by just clicking on the connector and dragging.
 
-![Connector Drag Gif](../images/connector-dragGif.gif)
+![Connector Drag Gif](images/connector-dragGif.gif)
 
 A connector can be dragged at runtime by using the Drag method. The following code explains how to drag the connector by using the drag method.
 
@@ -55,7 +53,7 @@ A connector can be dragged at runtime by using the Drag method. The following co
 
 The connector can be selected by clicking it. When the connector is selected, circles will be added on the starting and ending of the connector that is represented by Thumbs. Clicking and dragging those handles helps you to adjust the source and target points.
 
-![End Point drag GIF](../images/EndPointDragGif.gif)
+![End Point drag GIF](images/EndPointDragGif.gif)
 
 The following code example shows how to drag connector end point at runtime.
 

@@ -69,9 +69,9 @@ Refer to the following code to find location TreeGrid's script and style file.
 
 **Example:**
 
-> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/16.4.40/Essential JS 2/ej2-treegrid/dist/global/ej2-treegrid.min.js`
+> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/26.1.35/Essential JS 2/ej2-treegrid/dist/global/ej2-treegrid.min.js`
 >
-> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/16.4.40/Essential JS 2/ej2-treegrid/styles/material.css`
+> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/26.1.35/Essential JS 2/ej2-treegrid/styles/material.css`
 
 After copying the files, refer the TreeGrid's scripts and styles into the `index.html` file.
 The following HTML code example shows the minimal dependency of TreeGrid.
@@ -110,15 +110,15 @@ Refer to the TreeGrid's CDN links as follows.
 
 **Syntax:**
 
-> Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+> Script: `http://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Styles: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material.css`
+> Styles: `http://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/styles/material.css`
 
 **Example:**
 
-> Script: [`http://cdn.syncfusion.com/ej2/ej2-treegrid/dist/global/ej2-treegrid.min.js`](http://cdn.syncfusion.com/ej2/ej2-treegrid/dist/global/ej2-treegrid.min.js)
+> Script: [`http://cdn.syncfusion.com/ej2/26.1.35/ej2-treegrid/dist/global/ej2-treegrid.min.js`](http://cdn.syncfusion.com/ej2/ej2-treegrid/dist/global/ej2-treegrid.min.js)
 >
-> Styles: [`http://cdn.syncfusion.com/ej2/ej2-treegrid/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-treegrid/styles/material.css)
+> Styles: [`http://cdn.syncfusion.com/ej2/26.1.35/ej2-treegrid/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-treegrid/styles/material.css)
 
 The following HTML code example shows the minimal dependency of TreeGrid.
 
@@ -128,19 +128,19 @@ The following HTML code example shows the minimal dependency of TreeGrid.
        <head>
             <title>Essential JS 2 TreeGrid</title>
             <!-- Essential JS 2 TreeGrid's dependent material theme -->
-            <link href="http://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-popups/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-grids/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-popups/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-grids/styles/material.css" rel="stylesheet" type="text/css"/>
             <!-- Essential JS 2 material theme -->
-            <link href="http://cdn.syncfusion.com/ej2/ej2-treegrid/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-treegrid/styles/material.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential JS 2 TreeGrid's dependent script -->
-            <script src="http://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-grids/dist/global/ej2-grids.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-grids/dist/global/ej2-grids.min.js" type="text/javascript"></script>
             <!-- Essential JS 2 TreeGrid's global script -->
-            <script src="http://cdn.syncfusion.com/ej2/ej2-treegrid/dist/global/ej2-treegrid.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-treegrid/dist/global/ej2-treegrid.min.js" type="text/javascript"></script>
        </head>
        <body>
        </body>
@@ -160,14 +160,14 @@ In this document context, the `ej2.min.js` is used, which includes all the Essen
        <head>
             <title>Essential JS 2 TreeGrid</title>
             <!-- Essential JS 2 TreeGrid's dependent material theme -->
-            <link href="http://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-popups/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-grids/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-popups/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-grids/styles/material.css" rel="stylesheet" type="text/css"/>
             <!-- Essential JS 2 material theme -->
-            <link href="http://cdn.syncfusion.com/ej2/ej2-treegrid/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-treegrid/styles/material.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential JS 2 all script -->
-            <script src="http://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/26.1.35/dist/ej2.min.js" type="text/javascript"></script>
        </head>
        <body>
            <!-- Add the HTML <div> element for TreeGrid  -->
@@ -197,14 +197,14 @@ Data for the TreeGrid control is bind by using the `dataSource` property. It acc
        <head>
             <title>Essential JS 2 TreeGrid</title>
             <!-- Essential JS 2 TreeGrid's dependent material theme -->
-            <link href="http://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-popups/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-grids/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-popups/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-grids/styles/material.css" rel="stylesheet" type="text/css"/>
             <!-- Essential JS 2 material theme -->
-            <link href="http://cdn.syncfusion.com/ej2/ej2-treegrid/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-treegrid/styles/material.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential JS 2 all script -->
-            <script src="http://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/26.1.35/dist/ej2.min.js" type="text/javascript"></script>
        </head>
        <body>
            <!-- Add the HTML <div> element for TreeGrid  -->

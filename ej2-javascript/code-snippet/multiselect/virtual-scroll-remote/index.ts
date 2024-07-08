@@ -2,7 +2,7 @@
 
 
 import { DropDownList, VirtualScroll } from '@syncfusion/ej2-dropdowns';
-import { DataManager, WebApiAdaptor  } from '@syncfusion/ej2-data';
+import { DataManager, UrlAdaptor  } from '@syncfusion/ej2-data';
 
 DropDownList.Inject(VirtualScroll);
 
@@ -10,8 +10,8 @@ DropDownList.Inject(VirtualScroll);
 let MultiSelectObject: DropDownList = new DropDownList({
     //bind the dataSorce property
     dataSource: new DataManager({
-        url: 'https://services.syncfusion.com/js/production/api/Orders',
-        adaptor: new WebApiAdaptor ,
+        url: 'https://services.syncfusion.com/js/production/api/VirtualDropdownData',
+        adaptor: new UrlAdaptor ,
         crossDomain: true
     }),
     //map the appropriate columns to fields property

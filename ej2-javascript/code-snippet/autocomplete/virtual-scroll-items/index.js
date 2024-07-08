@@ -8,25 +8,23 @@ for (var i = 1; i <= 150; i++) {
 }
 
 //initiates the component
-var multiObject = new ej.dropdowns.MultiSelect({
+var autoObject = new ej.dropdowns.AutoComplete({
     //bind the dataSorce property
     dataSource: records,
     //map the appropriate columns to fields property
-    fields: { value: 'id', text: 'text' },
+    fields: { value: 'text' },
     query: new ej.data.Query().take(40),
     actionBegin: (args) => {
         args.query = new ej.data.Query().take(45);
     },
-    //set the placeholder to MultiSelect input
+    //set the placeholder to AutoComplete input
     placeholder:"Select an Item ",
-    allowCustomValue: true,
     //set enableVirtualization property to true
     enableVirtualization: true,
-    mode: 'Default',
     //set the height of the popup element
     popupHeight: '200px'
 });
 
 //render the component
-multiObject.appendTo('#multielement');
+autoObject.appendTo('#atcelement');
 

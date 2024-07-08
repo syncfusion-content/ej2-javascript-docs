@@ -398,6 +398,7 @@ Output will be displayed as follows.
 {% endhighlight %}
 {% endtabs %}
 
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs375" %}
+
 For more information and to access the quick start project, visit: [GitHub Repository](https://github.com/SyncfusionExamples/getting-started-with-the-typescript-pivot-table-component)
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs375" %}

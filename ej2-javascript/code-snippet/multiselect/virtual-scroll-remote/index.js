@@ -3,8 +3,8 @@
 var multiObject = new ej.dropdowns.MultiSelect({
     //bind the dataSorce property
     dataSource: new ej.data.DataManager({
-        url: 'https://services.syncfusion.com/js/production/api/Orders',
-        adaptor: new ej.data.WebApiAdaptor(),
+        url: 'https://services.syncfusion.com/js/production/api/VirtualDropdownData',
+        adaptor: new ej.data.UrlAdaptor(),
         crossDomain: true
     }),
     //map the appropriate columns to fields property

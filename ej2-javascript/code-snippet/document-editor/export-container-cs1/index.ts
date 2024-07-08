@@ -1,4 +1,4 @@
-import { DocumentEditorContainer, Toolbar } from '@syncfusion/ej2-documenteditor';
+import { DocumentEditorContainer, Toolbar,Editor, SfdtExport } from '@syncfusion/ej2-documenteditor';
 
 DocumentEditorContainer.Inject(Toolbar);
 

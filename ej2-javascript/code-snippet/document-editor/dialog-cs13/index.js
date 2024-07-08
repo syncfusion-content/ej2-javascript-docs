@@ -6,6 +6,7 @@ var documenteditor = new ej.documenteditor.DocumentEditor({
   enableTablePropertiesDialog:true,
   enableBordersAndShadingDialog:true,
   enableSfdtExport: true,
+  enableEditorHistory: true
 });
 var button = document.getElementById('dialog');
 button.addEventListener('click', function() {

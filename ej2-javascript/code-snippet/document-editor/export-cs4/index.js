@@ -1,4 +1,4 @@
-var documenteditor = new ej.documenteditor.DocumentEditor({ enableTextExport: true, enableSelection: true, enableEditor: true, isReadOnly: false });
+var documenteditor = new ej.documenteditor.DocumentEditor({ enableWordExport: true, enableTextExport: true, enableSelection: true, enableEditor: true, isReadOnly: false });
 
 documenteditor.appendTo('#DocumentEditor');
 

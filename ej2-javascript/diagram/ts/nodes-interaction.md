@@ -97,3 +97,52 @@ A node can be rotated at runtime by using the [`rotate`](../api/diagram/#rotate)
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/diagram/nodes-rotate" %}
+
+## Flip
+
+The diagram Provides support to flip the node. [`flip`](../api/diagram/node#flip) is performed to give the mirrored image of the original element.
+
+The flip types are as follows:
+
+| Flip direction | Description |
+| -------- | ----------- |
+|HorizontalFlip |[`Horizontal`](../api/diagram/flipDirection) is used to flip the node to be mirrored across the horizontal axis.|
+|VerticalFlip|[`Vertical`](../api/diagram/flipDirection) is used to flip the node to be mirrored across the vertical axis.|
+|Both|[`Both`](../api/diagram/flipDirection) is used to flip the node to be mirrored across the horizontal and vertical axes.|
+|None|It is used to disable all the flip behavior.|
+
+The following code illustrates how to provide the mirror image of the original element.
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/nodes-cs4/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/nodes-cs4/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/nodes-cs4" %}
+
+### Flip modes
+
+The [`flipMode`](../api/diagram/flipMode/) is used to control the behavior of the flip object whether to flip the object along with the port and label.
+
+| FlipMode | Description | 
+| -------- | -------- |
+|Label| It enables or disables the flip for an object’s label.|
+|Port| It enables or disables the flip for an object’s port.|
+|All| It enables or disables the flip for both the object’s label and port.|
+|None| It is used to disable all the flip mode behavior.|
+
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/nodes-flipMode/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/nodes-flipMode/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/nodes-flipMode" %}

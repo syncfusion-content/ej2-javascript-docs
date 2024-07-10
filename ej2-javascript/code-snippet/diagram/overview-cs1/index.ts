@@ -1,173 +1,155 @@
-
-
+/**
+ * hierarchical-model
+ */
 
 import {
     Diagram,
+    NodeModel,
     ConnectorModel,
-    Overview,
-    OverviewModel
-} from '@syncfusion/ej2-diagrams';
-import {
-    DataManager,
-    Query
-} from '@syncfusion/ej2-data';
-import {
-    TreeInfo,
-    Node,
-    StackPanel,
-    ImageElement,
-    Container,
-    TextElement,
+    LayoutAnimation,
     DataBinding,
-    HierarchicalTree
-} from '@syncfusion/ej2-diagrams';
-/**
- * Overview
- */
-let diagram: Diagram;
-let overview: Overview;
-Diagram.Inject(DataBinding, HierarchicalTree);
-let data: object[] = [{
-        'Id': 'parent',
-        'Name': 'Maria Anders',
-        'Designation': 'Managing Director',
-        'IsExpand': 'true',
-        'RatingColor': '#C34444'
+    HierarchicalTree,
+    SnapConstraints,
+    DiagramTools,
+    Overview,
+  } from '@syncfusion/ej2-diagrams';
+  import { DataManager } from '@syncfusion/ej2-data';
+  Diagram.Inject(DataBinding, HierarchicalTree, LayoutAnimation);
+  
+  export interface EmployeeInfo {
+    Name: string;
+  }
+  let hierarchicalTree: object = [
+    {
+      Name: 'Diagram',
+      fillColor: '#916DAF',
     },
     {
-        'Id': 1,
-        'Name': 'Ana Trujillo',
-        'Designation': 'Project Manager',
-        'IsExpand': 'false',
-        'RatingColor': '#68C2DE',
-        'ReportingPerson': 'parent'
+      Name: 'Layout',
+      Category: 'Diagram',
     },
     {
-        'Id': 2,
-        'Name': 'Anto Moreno',
-        'Designation': 'Project Lead',
-        'IsExpand': 'false',
-        'RatingColor': '#93B85A',
-        'ReportingPerson': 'parent'
+      Name: 'Tree Layout',
+      Category: 'Layout',
     },
     {
-        'Id': 3,
-        'Name': 'Thomas Hardy',
-        'Designation': 'Senior S/w Engg',
-        'IsExpand': 'false',
-        'RatingColor': '#68C2DE',
-        'ReportingPerson': 1
+      Name: 'Organizational Chart',
+      Category: 'Layout',
     },
     {
-        'Id': 4,
-        'Name': 'Christina kaff',
-        'Designation': 'S/w Engg',
-        'IsExpand': 'false',
-        'RatingColor': '#93B85A',
-        'ReportingPerson': 2
+      Name: 'Hierarchical Tree',
+      Category: 'Tree Layout',
     },
     {
-        'Id': 5,
-        'Name': 'Hanna Moos',
-        'Designation': 'Project Trainee',
-        'IsExpand': 'true',
-        'RatingColor': '#D46E89',
-        'ReportingPerson': 2
+      Name: 'Radial Tree',
+      Category: 'Tree Layout',
     },
-];
-let items: DataManager = new DataManager(data as JSON[], new Query().take(7));
-// Initializes the diagram control
-diagram = new Diagram({
-    snapSettings: {
-        constraints: 0
+    {
+      Name: 'Mind Map',
+      Category: 'Hierarchical Tree',
     },
-    layout: {
-        type: 'OrganizationalChart',
-        margin: {
-            top: 20
-        },
-        getLayoutInfo: (node: Node, tree: TreeInfo) => {
-            if (!tree.hasSubTree) {
-                tree.orientation = 'Vertical';
-                tree.type = 'Alternate';
-            }
-        }
+    {
+      Name: 'Family Tree',
+      Category: 'Hierarchical Tree',
     },
+    {
+      Name: 'Management',
+      Category: 'Organizational Chart',
+    },
+    {
+      Name: 'Human Resources',
+      Category: 'Management',
+    },
+    {
+      Name: 'University',
+      Category: 'Management',
+    },
+    {
+      Name: 'Business',
+      Category: 'Management',
+    },
+  ];
+  //sets node default value
+  function nodeDefaults(obj: NodeModel): NodeModel {
+    obj.style = {
+      fill: '#659be5',
+      strokeColor: 'none',
+      color: 'white',
+      strokeWidth: 2,
+    };
+    obj.width = 150;
+    obj.height = 50;
+    obj.borderColor = '#3a6eb5';
+    obj.backgroundColor = '#659be5';
+    obj.expandIcon = {
+      height: 10,
+      width: 10,
+      shape: 'None',
+      fill: 'lightgray',
+      offset: { x: 0.5, y: 1 },
+    };
+    obj.expandIcon.verticalAlignment = 'Auto';
+    obj.expandIcon.margin = { left: 0, right: 0, top: 0, bottom: 0 };
+    obj.collapseIcon.offset = { x: 0.5, y: 1 };
+    obj.collapseIcon.verticalAlignment = 'Auto';
+    obj.collapseIcon.margin = { left: 0, right: 0, top: 0, bottom: 0 };
+    obj.collapseIcon.height = 10;
+    obj.collapseIcon.width = 10;
+    obj.collapseIcon.padding.top = 5;
+    obj.collapseIcon.shape = 'None';
+    obj.collapseIcon.fill = 'lightgray';
+    return obj;
+  }
+  
+  function connectorDefaults(
+    connector: ConnectorModel,
+    diagram: Diagram
+  ): ConnectorModel {
+    connector.targetDecorator.shape = 'None';
+    connector.type = 'Orthogonal';
+    connector.style.strokeColor = '#6d6d6d';
+    connector.cornerRadius = 5;
+    return connector;
+  }
+  
+  // tslint:disable-next-line:max-func-body-length
+  
+  //Initializes the nodes for the diagram
+  let diagram: Diagram = new Diagram({
+    width: '100%',
+    height: '499px',
+    snapSettings: { constraints: SnapConstraints.None },
+    //configures data source settings
     dataSourceSettings: {
-        id: 'Id',
-        parentId: 'ReportingPerson',
-        dataManager: items
+      //sets the fields to bind
+      id: 'Name',
+      parentId: 'Category',
+      dataSource: new DataManager(hierarchicalTree),
+      //binds the data with the nodes
+      doBinding: (nodeModel: NodeModel, data: object, diagram: Diagram) => {
+        nodeModel.shape = { type: 'Text', content: (data as EmployeeInfo).Name };
+      },
     },
-      getNodeDefaults: (node: NodeModel) => {
-        node.height = 50;
-        node.style.fill =  '#6BA5D7';
-        node.style.borderColor = 'white';
-        node.style.strokeColor =  'white';
-        return  node;
+    //Disables all interactions except zoom/pan
+    tool: DiagramTools.ZoomPan,
+    //Configures automatic layout
+    layout: {
+      type: 'HierarchicalTree',
+      verticalSpacing: 30,
+      horizontalSpacing: 40,
+      enableAnimation: true,
     },
-        getConnectorDefaults: (obj: ConnectorModel): ConnectorModel => {
-        obj.style.strokeColor =  '#6BA5D7';
-        obj.style.fill =  '#6BA5D7';
-        obj.style.strokeWidth =  2;
-        obj.targetDecorator.style.fill =  '#6BA5D7';
-        obj.targetDecorator.style.strokeColor =  '#6BA5D7';
-        obj.targetDecorator.shape = 'None';
-        obj.type = 'Orthogonal';
-        return  obj;
-    },
-    setNodeTemplate: (obj: Node, diagram: Diagram): Container => {
-        let content: StackPanel = new StackPanel();
-        content.id = obj.id + '_outerstack';
-        content.style.strokeColor = 'darkgreen';
-        content.style.fill = '#6BA5D7';
-        content.orientation = 'Horizontal';
-        content.padding = {
-            left: 5,
-            right: 10,
-            top: 5,
-            bottom: 5
-        };
-        let innerStack: StackPanel = new StackPanel();
-        innerStack.style.strokeColor = 'none';
-        innerStack.style.fill = '#6BA5D7';
-        innerStack.margin = {
-            left: 5,
-            right: 0,
-            top: 0,
-            bottom: 0
-        };
-        innerStack.id = obj.id + '_innerstack';
-        let text: TextElement = new TextElement();
-        text.content = obj.data['Name'];
-        text.style.color = 'white';
-        text.style.strokeColor = 'none';
-        text.style.fill = 'none';
-        text.id = obj.id + '_text1';
-        let desigText: TextElement = new TextElement();
-        desigText.margin = {
-            left: 0,
-            right: 0,
-            top: 5,
-            bottom: 0
-        };
-        desigText.content = obj.data['Designation'];
-        desigText.style.color = 'white';
-        desigText.style.strokeColor = 'none';
-        desigText.style.fill = 'none';
-        desigText.style.textWrapping = 'Wrap';
-        desigText.id = obj.id + '_desig';
-        innerStack.children = [text, desigText];
-        content.children = [innerStack];
-        return content;
-    }
-});
-diagram.appendTo('#element');
-// Initializes the overview control
-let options: OverviewModel = {};
-// Relates diagram with overview
-options.sourceID = 'element';
-overview = new Overview(options);
-overview.appendTo('#overview');
-
-
-
+    //Defines the default node and connector properties
+    getNodeDefaults: nodeDefaults,
+    getConnectorDefaults: connectorDefaults,
+  });
+  diagram.appendTo('#element');
+  
+  // Initializtion of the Overview.
+  let overview: Overview = new Overview({
+    width: '100%',
+    height: '250px',
+    sourceID: 'element',
+  });
+  overview.appendTo('#overview');
+  

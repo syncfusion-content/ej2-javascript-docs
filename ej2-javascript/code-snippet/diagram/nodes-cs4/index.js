@@ -5,15 +5,26 @@ var node = {
     // Size of the node
     width: 100,
     height: 100,
- style: { fill: '#6BA5D7', strokeColor: 'white' },
-    pivot: {x: 0, y: 0}
-        };
-
-// initialize Diagram component
-
-var diagram = new ej.diagrams.Diagram({
-    width: '100%', height: '600px', nodes: [node]
-    }, '#element');
-
-diagram.select([diagram.nodes[0]]);
-
+    // Flip the node in Horizontal Direction
+    flip: 'Horizontal',
+    shape: {
+      type: 'Basic',
+      shape: 'RightTriangle',
+    },
+    style: {
+      fill: '#6BA5D7',
+      strokeDashArray: '5,5',
+    },
+  };
+  
+  // initialize Diagram component
+  
+  var diagram = new ej.diagrams.Diagram(
+    {
+      width: '100%',
+      height: '600px',
+      nodes: [node],
+    },
+    '#element'
+  );
+  

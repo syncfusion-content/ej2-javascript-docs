@@ -174,6 +174,17 @@ Use the following CSS to ruler overlap properties.
   }
 
 ```
+## Customizing the ruler marker color
+
+Use the following CSS to customize the marker color
+
+```scss
+
+.e-diagram .e-d-ruler-marker {
+        stroke: yellow;
+      }
+
+```
 
 ## Customizing the text edit
 

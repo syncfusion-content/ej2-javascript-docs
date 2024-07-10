@@ -1,7 +1,7 @@
 
 
 import { PivotView, IDataSet, CalculatedField, FieldList } from '@syncfusion/ej2-pivotview';
-import { pivotData } from './datasource';
+import { pivotData } from './datasource.ts';
 
 PivotView.Inject(CalculatedField, FieldList);
 let pivotTableObj: PivotView = new PivotView({

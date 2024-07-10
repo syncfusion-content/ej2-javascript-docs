@@ -13,19 +13,82 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD010 -->
 
-In Graphical User Interface (GUI), the tooltip is a message that is displayed when mouse hovers over an element. The diagram provides tooltip support while dragging, resizing, rotating a node, and when the mouse hovers any diagram element.
+In a Graphical User Interface (GUI), a tooltip is a message that appears when the mouse hovers over an element. The diagram control provides tooltip support while dragging, resizing, rotating a node, and when the mouse hovers over any diagram element.
 
 ## Default tooltip
 
-By default, diagram displays a tooltip to provide the size, position, and angle related information while dragging, resizing, and rotating. The following images illustrate how the diagram displays the node information during an interaction.
+By default, the diagram displays a tooltip showing size, position, and angle information while dragging, resizing, or rotating a node. The following images illustrate how the diagram displays node information during these interactions.
 
 | Drag | Resize | Rotate |
 |---|---|---|
 | ![ToolTip During Drag](images/Tooltip_img1.png) | ![ToolTip During Resize](images/Tooltip_img2.png) | ![ToolTip During Rotate](images/Tooltip_img3.png) |
 
-## Common tooltip for all nodes and connectors
+### Disable default tooltip
 
-The diagram provides support to show tooltip when the mouse hovers over any node/connector. To show tooltip on mouse over, the [`tooltip`](../api/diagram#tooltip) property of diagram model needs to be set with the tooltip [`content`](../api/diagram/diagramTooltip/#content) and [`position`](../api/diagram/diagramTooltip/#position) as shown in the following example.
+The default tooltip that appears while interacting with nodes can be disabled by removing the tooltip constraints from the [`selectorConstraints`](../api/diagram/selectorconstraints/) of the [`selectedItems`](../api/diagram/selectormodel/) property of the diagram.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/tooltip-disDefTooltip/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/tooltip-disDefTooltip/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/tooltip-disDefTooltip" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/tooltip-disDefTooltip/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/tooltip-disDefTooltip/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/diagram/tooltip-disDefTooltip" %}
+{% endif %}
+
+
+## Tooltip for a specific node/connector
+
+The tooltip can be customized for each node and connector. To show different tooltips for different diagram elements on mouse over, set the [`tooltip`](../api/diagram/diagramTooltipModel/) property of the node or connector with the tooltip [`content`](../aapi/diagram/diagramTooltipModel/#content) and [`position`](../api/diagram/diagramTooltipModel/#position). The following code example illustrates how to customize the tooltip for individual elements.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/tooltip-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/tooltip-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/tooltip-cs2" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/tooltip-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/tooltip-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/diagram/tooltip-cs2" %}
+{% endif %}
+
+## Inherit diagram tooltip
+
+The diagram supports inheriting the diagram tooltip when the mouse hovers over any node or connector. To show a tooltip on mouse over, set the diagram's [`tooltip`](../api/diagram#tooltip) property with the tooltip [`content`](../api/diagram/diagramTooltip/#content) and [`position`](../api/diagram/diagramTooltip/#position). Ensure that the nodes and connectors have their constraints set to **InheritTooltip**, as shown in the following example.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -56,7 +119,9 @@ The diagram provides support to show tooltip when the mouse hovers over any node
 
 ### Disable tooltip at runtime
 
-The tooltip on mouse over can be disabled by assigning the [`tooltip`](../api/diagram#tooltip) property as `null`. The following code example illustrates how to disable the mouse over tooltip at runtime.
+The tooltip on mouse over can be disabled by setting the diagram's [`tooltip`](../api/diagram#tooltip) property to `null`. The following code example illustrates how to disable the mouse over tooltip at runtime.
+
+{% if page.publishingplatform == "typescript" %}
 
 ```ts
 
@@ -69,35 +134,19 @@ let diagram: Diagram = new Diagram({
 
 ```
 
-## Tooltip for a specific node/connector
-
-The tooltip can be customized for each node and connector. Remove the **InheritTooltip** option from the [`constraints`](../api/diagram#constraints) of that node/connector. The following code example illustrates how to customize the tooltip for individual elements.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/diagram/tooltip-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/diagram/tooltip-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/diagram/tooltip-cs2" %}
-
 {% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/diagram/tooltip-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/diagram/tooltip-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
+```ts
 
-{% previewsample "page.domainurl/code-snippet/diagram/tooltip-cs2" %}
+//Initializes the diagram component
+let diagram = new ej.diagrams.Diagram({
+    width: '100%', height: '350px',
+	//Disables mouse over tooltip at runtime
+	tooltip: null
+}, '#element');
+
+```
+
 {% endif %}
 
 ## Tooltip for Ports
@@ -108,9 +157,9 @@ To display tooltips on mouseover, set the desired tooltip [`content`](../api/dia
 
 Tooltips for Ports can be enabled or disabled using the [`PortConstraints`](../api/diagram/port#constraints-portconstraints) Tooltip property.
 
-
+{% if page.publishingplatform == "typescript" %}
 ```ts
-let ports: [{
+let ports =  [{
         offset: {x: 1,y: 0.5},
         tooltip: {content: 'Port Tootip'},
         
@@ -121,6 +170,22 @@ let ports: [{
         constraints: PortConstraints.Default ~& PortConstraints.ToolTip
     }]
 ```
+{% elsif page.publishingplatform == "javascript" %}
+
+```javascript
+let ports = [{
+        offset: {x: 1,y: 0.5},
+        tooltip: {content: 'Port Tootip'},
+        
+        //enable Port Tooltip Constraints
+        constraints: ej.diagrams.PortConstraints.Default | ej.diagrams.PortConstraints.ToolTip,
+        
+        //disable Port Tooltip Constraints
+        constraints: ej.diagrams.PortConstraints.Default ~& ej.diagrams.PortConstraints.ToolTip
+    }]
+```
+
+{% endif %}
 
 Dynamic modification of tooltip content is supported, allowing you to change the displayed tooltip content during runtime.
 
@@ -132,9 +197,6 @@ Dynamic modification of tooltip content is supported, allowing you to change the
 }
 ```
 
-The following image illustrates how the diagram displays tooltips during an interaction with ports:
-
-![Tooltip](images/PortTooltip.gif)
 
 Here, the code provided below demonstrates the port tooltip Interaction.
 
@@ -165,9 +227,14 @@ Here, the code provided below demonstrates the port tooltip Interaction.
 {% previewsample "page.domainurl/code-snippet/diagram/tooltip-cs7" %}
 {% endif %}
 
+
+The following image illustrates how the diagram displays tooltips during an interaction with ports:
+
+![Tooltip](images/PortTooltip.gif)
+
 ## Tooltip template content
 
-Any text or image can be added to the tooltip, by default. To customize the tooltip layout or to create your own visualized element on the tooltip, template can be used.
+The tooltip template content allows you to customize the tooltip by using HTML templates. This means you can define the structure and style of the tooltip using HTML, providing greater flexibility and control over its appearance. By leveraging HTML templates, you can include rich content such as formatted text, images, and other HTML elements within the tooltip, enhancing the user experience with more informative and visually appealing tooltips.
 
 The following code example illustrates how to add formatted HTML content to the tooltip.
 
@@ -202,7 +269,7 @@ The following code example illustrates how to add formatted HTML content to the 
 
 ### Tooltip relative to object
 
-The diagram provides support to show tooltip around the node/connector that is hovered by the mouse. The tooltip can be aligned by using the [`position`](../api/diagram/diagramTooltip#position) property of the tooltip. The [`relativeMode`](../api/diagram/diagramTooltip#relativemode) property of the tooltip defines whether the tooltip has to be displayed around the object or at the mouse position.
+The diagram supports displaying a tooltip around the node or connector that is hovered over by the mouse. The tooltip's alignment can be adjusted using the [`position`](../api/diagram/diagramTooltip#position) property.  The [`relativeMode`](../api/diagram/diagramTooltip#relativemode) property specifies whether the tooltip should be displayed around the object or at the mouse position.
 
 The following code example illustrates how to position the tooltip around object.
 
@@ -235,7 +302,7 @@ The following code example illustrates how to position the tooltip around object
 
 ### Tooltip relative to mouse position
 
-To display the tooltip at mouse position, need to set **mouse** option to the [`relativeMode`](../api/diagram/diagramTooltip#relativemode) property of the tooltip.
+To display the tooltip at the mouse position, set the **mouse** option in the [`relativeMode`](../api/diagram/diagramTooltip#relativemode) property of the tooltip.
 
 The following code example illustrates how to show tooltip at mouse position.
 
@@ -268,7 +335,9 @@ The following code example illustrates how to show tooltip at mouse position.
 
 ## Tooltip animation
 
-To animate the tooltip, a set of specific animation effects are available, and it can be controlled by using the [`animation`](../api/diagram/diagramTooltip#animation) property. The animation property also allows you to set delay, duration, and various other effects of your choice.
+To animate the tooltip, you can use a range of animation effects controlled by the [`animation`](../api/diagram/diagramTooltip#animation) property. This property allows you to customize the delay, duration, and various other effects according to your preferences.
+
+Refer the following sample where we used zoomIn animation for tooltip open and zoomOut animation for tooltip close with delay and duration. 
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -296,3 +365,102 @@ To animate the tooltip, a set of specific animation effects are available, and i
 
 {% previewsample "page.domainurl/code-snippet/diagram/tooltip-cs6" %}
 {% endif %}
+
+## Sticky tooltip
+
+A sticky tooltip will remain visible even after you move the mouse away from the node or connector. You can activate this feature by setting the [`isSticky`](../api/diagram/diagramTooltipModel/#issticky) property of the tooltip. 
+
+The following example shows how to render sticky tooltip. 
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/tooltip-isSticky/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/tooltip-isSticky/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/tooltip-isSticky" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/tooltip-isSticky/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/tooltip-isSticky/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/diagram/tooltip-isSticky" %}
+{% endif %}
+
+## Hide tooltip pointer
+
+The [`showTipPointer`](../api/diagram/diagramTooltipModel/#showtippointer) property allows to control the visibility of tooltip pointer. By default, the `showTipPointer` is set as true.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/tooltip-tipPointer/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/tooltip-tipPointer/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/tooltip-tipPointer" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/tooltip-tipPointer/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/tooltip-tipPointer/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/diagram/tooltip-tipPointer" %}
+{% endif %}
+
+## Tooltip size
+
+By default, the size of the tooltip is calculated based on its content. If you want to customize the size, you can use the  [`width`](../api/diagram/diagramTooltipModel/#width) and [`height`](../api/diagram/diagramTooltipModel/#height) properties of the tooltip.
+
+The following code example shows how to set the size for the tooltip:
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/tooltip-size/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/tooltip-size/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/tooltip-size" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/tooltip-size/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/tooltip-size/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/diagram/tooltip-size" %}
+{% endif %}
+
+

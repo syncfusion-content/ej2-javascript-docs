@@ -336,7 +336,7 @@ The calculated field feature allows user to insert or add a new calculated field
 
 Also calculated fields can be added at run time through the built-in dialog. The dialog can be enabled by setting the `allowCalculatedField` property to **true** and by injecting the `CalculatedField` module as follows.
 
-> If the `CalculatedField` module is not injected, the calculated field dialog will not be rendered with the pivot table component. Moreover calculated field is applicable only for value fields.
+> If the `CalculatedField` module is not injected, the calculated field dialog will not appear within the pivot table component. By default, the calculated fields created through code-behind are only added to the field list and calculated field dialog UI. To display the calculated field in the pivot table UI, it must be added to the [`values`](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings/#values) property, as shown in the code below. Additionally, calculated fields can only be added to the value axis.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

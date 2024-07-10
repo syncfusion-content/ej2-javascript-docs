@@ -30,7 +30,8 @@ let node: NodeModel = {
         tooltip: {
             content: 'Port Tooltip',
         },
-        constraints: PortConstraints.Default | PortConstraints.Tooltip
+        //To enable port tooltip
+        constraints: PortConstraints.Default | PortConstraints.ToolTip
     }]
 };
 // initialize diagram component

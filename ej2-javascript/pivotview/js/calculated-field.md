@@ -18,7 +18,7 @@ Calculated field can also be included in the pivot table through code behind usi
 * [`formula`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/calculatedFieldSettings/#formula): It allows to set the formula.
 * [`formatSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/formatSettings/): It helps to set the number format for the resultant value.
 
-> The calculated field is applicable only for value fields.
+> The calculated field is applicable only for value fields. By default, the calculated fields created through code-behind are only added to the field list and calculated field dialog UI. To display the calculated field in the pivot table UI, it must be added to the [`values`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#values) property, as shown in the code below.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

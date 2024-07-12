@@ -15,11 +15,11 @@ The Syncfusion PDF Viewer provides the ability to control zoom levels for viewin
 
 ### minZoom
 
-The [minZoom](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#minzoom) property specifies the minimum zoom percentage allowed in the PDF Viewer. This ensures that users cannot zoom out beyond a certain limit, which helps maintain readability and performance. Developers can set the `minZoom` property programmatically, defining the minimum zoom level based on the application's requirements. This is particularly useful for preventing users from zooming out too much, which could make the content difficult to read.
+The [minZoom](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#minzoom) property specifies the minimum zoom percentage allowed in the PDF Viewer. This ensures that users cannot zoom out beyond a certain limit, which helps maintain readability and performance. Developers can set the [minZoom](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#minzoom) property programmatically, defining the minimum zoom level based on the application's requirements. This is particularly useful for preventing users from zooming out too much, which could make the content difficult to read.
 
 ### maxZoom
 
-The [maxZoom](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#maxzoom) property defines the maximum zoom percentage allowed in the PDF Viewer. By setting this property, developers can prevent users from zooming in too much, helping to avoid performance issues and maintain a smooth viewing experience. The `maxZoom` property can be set programmatically to control the upper limit of the zoom level. This is useful for applications where extremely high zoom levels might degrade performance or user experience.
+The [maxZoom](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#maxzoom) property defines the maximum zoom percentage allowed in the PDF Viewer. By setting this property, developers can prevent users from zooming in too much, helping to avoid performance issues and maintain a smooth viewing experience. The [maxZoom](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#maxzoom) property can be set programmatically to control the upper limit of the zoom level. This is useful for applications where extremely high zoom levels might degrade performance or user experience.
 
 {% tabs %}
 {% highlight ts tabtitle="Standalone" %}

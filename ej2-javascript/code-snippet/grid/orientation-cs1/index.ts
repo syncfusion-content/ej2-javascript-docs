@@ -17,10 +17,10 @@ customAttributes = { class: 'orientationcss' };
 grid.appendTo('#Grid');
 
 function setHeaderHeight() {
-  let textWidth = (<HTMLElement>document.querySelector('.orientationcss > div')).scrollWidth;
+  let textWidth: number = (<HTMLElement>document.querySelector('.orientationcss > div')).scrollWidth;
   //Obtain the width of the headerText content.
-  let headerCell = document.querySelectorAll('.e-headercell');
-  for (let i = 0; i < headerCell.length; i++) {
+  let headerCell: NodeList = document.querySelectorAll('.e-headercell');
+  for (let i:number = 0; i < headerCell.length; i++) {
     (<HTMLElement>headerCell.item(i)).style.height = textWidth + 'px'; //Assign the obtained textWidth as the height of the headerCell.
   }
 }

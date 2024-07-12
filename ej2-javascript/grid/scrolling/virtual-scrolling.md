@@ -199,6 +199,8 @@ Let's see the step by step procedure for how we can overcome the limitation in t
 
 2. Render the grid by define the following features.
 
+{% if page.publishingplatform == "typescript" %}
+ 
     ```ts
         let grid: Grid = new Grid({
             dataSource: data,
@@ -213,6 +215,24 @@ Let's see the step by step procedure for how we can overcome the limitation in t
             ]
         });
     ```
+{% elsif page.publishingplatform == "javascript" %}
+ 
+```js
+        var grid = new ej.grids.Grid({
+            dataSource: data,
+            enableVirtualization: true,
+            pageSettings: {pageSize: 50},
+            height: 360,
+            beforeDataBound: beforeDataBound,
+            columns: [
+                { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100 }
+                ......
+                ......
+            ]
+        });
+
+```
+{% endif %}
 
 3. In the beforeDataBound event, we set the args.count as 0.5 million to perform scrolling with 0.5 million records and all the data operations are performed with whole records which is handled using the custom adaptor. And also particular segment records count is less than 0.5 million means it will directly assigned the original segmented count instead of 0.5 million.
 
@@ -228,6 +248,8 @@ Let's see the step by step procedure for how we can overcome the limitation in t
 
 4. Render “Load Next Set” button and “Load Previous Set” button at bottom and top of the grid control.
 
+{% if page.publishingplatform == "typescript" %}
+ 
     ```ts
     let button: Button = new Button({
         cssClass: 'e-info prevbtn',
@@ -254,6 +276,36 @@ Let's see the step by step procedure for how we can overcome the limitation in t
         content: 'Load Next Set...'
     });
     ```
+{% elsif page.publishingplatform == "javascript" %}
+ 
+```js
+    var button = new ej.buttons.Button({
+        cssClass: 'e-info prevbtn',
+        onClick: prevBtnClick,
+        content: 'Load Previous Set...'
+    });
+
+    var grid = new ej.grids.Grid({
+        dataSource: data,
+        enableVirtualization: true,
+        pageSettings: {pageSize: 50},
+        height: 360,
+        beforeDataBound: beforeDataBound,
+        columns: [
+            { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100 }
+            ......
+            ......
+        ]
+    });
+
+   var button = new ej.buttons.Button({
+        cssClass: 'e-info nxtbtn',
+        onClick: nxtBtnClick,
+        content: 'Load Next Set...'
+    });
+
+```
+{% endif %}
 
 5. While click on the `Load Next Set` / `Load Previous Set` button corresponding page data set is loaded to view remaining records of total 2 millions records after doing some simple calculation.
 

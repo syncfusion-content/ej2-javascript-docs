@@ -277,6 +277,8 @@ The following example demonstrate how to customize the default values of the pag
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs202" %}
 {% endif %}
 
+> The pageSizes property can be configured with either an array of strings or a boolean value.
+
 ## How to navigate to particular page 
 
 Navigating to a particular page in the Syncfusion Grid is particularly useful when dealing with large datasets. It provides a quick and efficient way to jump to a specific page within the grid.

@@ -51,6 +51,7 @@ In the following demo, **Davolio** cell is spanned to two rows in the **Employee
 
 ## Limitations
 
+* The [updateCell](../../api/grid/#updatecell) method does not support row spanning.
 * Row spanning is not compatible with the following features:
     1. Virtual scrolling
     2. Infinite scrolling

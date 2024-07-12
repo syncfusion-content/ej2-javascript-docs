@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open PDF files from Box cloud file storage in ##Platform_Name## Pdfviewer control | Syncfusion
+title: Open PDF from BoxCloud in #Platform_Name# Pdfviewer  | Syncfusion
 description: Learn about how to Open PDF files from Box cloud file storage in ##Platform_Name## Pdfviewer control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Open PDF files from Box cloud file storage
@@ -151,6 +151,6 @@ viewer.load('PDF_Succinctly.pdf', null);
 
 N> The **Box.V2.Core** NuGet package must be installed in your application to use the previous code example.
 
-N> Replace `PDF_Succinctly.pdf` with the actual document name that you want to load from Box cloud file storage. Make sure to pass the document name from the box folder to the `documentPath` property of the PDF viewer component
+N> Replace `PDF_Succinctly.pdf` with the actual document name that you want to load from Box cloud file storage. Make sure to pass the document name from the box folder to the [documentPath](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/#documentpath) property of the PDF viewer component
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/open-save-pdf-documents-in-box-cloud-file-storage)

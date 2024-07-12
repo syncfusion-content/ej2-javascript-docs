@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 To extract text in Syncfusion PDF viewer, you can use the [**isExtractText**](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#isextracttext) property and [**extractTextCompleted**](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#extracttextcompleted) event.This allows you to extract the text from a page along with the bounds.
 
-Here is an example of how you can use the **isExtractText** property and **extractTextCompleted** event:
+Here is an example of how you can use the [**isExtractText**](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#isextracttext) property and [**extractTextCompleted**](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#extracttextcompleted) event:
 
 ```ts
 

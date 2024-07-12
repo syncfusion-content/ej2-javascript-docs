@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add save button in Toolbar in ##Platform_Name## Pdfviewer control | Syncfusion
-description: Learn here all about How to add Save button in toolbar in Syncfusion ##Platform_Name## Pdfviewer control of Syncfusion Essential JS 2 and more.
+title: Add Save button in ##Platform_Name## Pdfviewer control | Syncfusion
+description: Learn here all about How to add save button in Toolbar in Syncfusion ##Platform_Name## Pdfviewer control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Toolbar 
 publishingplatform: ##Platform_Name##
@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # Add Save button in Built-In Toolbar
 
-PDF Viewer allows you to customize(add, show, hide, enable, and disable) existing items in a toolbar.
+PDF Viewer allows you to customize (add, show, hide, enable, and disable) existing items in a toolbar.
 
-* Save button - New 'save' button-item can defined by [**CustomToolbarItemModel**](https://ej2.syncfusion.com/javascript/documentation/api/pdfviewer/customToolbarItem/) and with existing items in [**ToolbarSettings**](https://ej2.syncfusion.com/javascript/documentation/api/pdfviewer/toolbarSettings/) property. Newly added save button-item click action can be defined in [`toolbarclick`](https://ej2.syncfusion.com/javascript/documentation/api/toolbar/clickEventArgs/).
+* Save button - `Save` button-item can defined by [**CustomToolbarItemModel**](https://ej2.syncfusion.com/javascript/documentation/api/pdfviewer/customToolbarItem/) and with existing items in [**ToolbarSettings**](https://ej2.syncfusion.com/javascript/documentation/api/pdfviewer/toolbarSettings/) property. Newly added save button-item click action can be defined in [`toolbarclick`](https://ej2.syncfusion.com/javascript/documentation/api/toolbar/clickEventArgs/).
 
-* Show, Hide - save button-item can be shown or hidden using the [`ToolbarSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pdfviewer/toolbarSettings/) property. Pre-defined toolbar items are available with [`ToolbarItem`](https://ej2.syncfusion.com/javascript/documentation/api/pdfviewer/toolbarItem/).
+* Show, Hide - `Save` button-item can be shown or hidden using the [`ToolbarSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pdfviewer/toolbarSettings/) property. Pre-defined toolbar items are available with [`ToolbarItem`](https://ej2.syncfusion.com/javascript/documentation/api/pdfviewer/toolbarItem/).
 
-* Enable, Disable -  Toolbar items can be enabled or disable using [`enabletoolbaritem`](https://ej2.syncfusion.com/javascript/documentation/api/pdfviewer/toolbar/#enabletoolbaritem)
+* Enable, Disable -  `Save` button-item can be enabled or disable using [`enabletoolbaritem`](https://ej2.syncfusion.com/javascript/documentation/api/pdfviewer/toolbar/#enabletoolbaritem)
 
 {% tabs %}
 {% highlight js tabtitle="Standalone" %}
@@ -28,6 +28,7 @@ PDF Viewer allows you to customize(add, show, hide, enable, and disable) existin
     tooltipText: 'Save button',
     align: 'Left'
 };
+
 var pdfviewer = new ej.pdfviewer.PdfViewer({
                     documentPath:'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf',
                     resourceUrl:'https://cdn.syncfusion.com/ej2/24.1.41/dist/ej2-pdfviewer-lib',
@@ -56,6 +57,7 @@ var toolItem1 = {
     tooltipText: 'Save button',
     align: 'Left'
 };
+
 var pdfviewer = new ej.pdfviewer.PdfViewer({
                     documentPath:'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf',
                     serviceUrl: 'https://services.syncfusion.com/js/production/api/pdfviewer',
@@ -106,6 +108,6 @@ The id property within a CustomToolbarItemModel is a compulsory attribute that p
 When defining or customizing toolbar items, it is mandatory to assign a specific and descriptive id to each item. 
 These properties are commonly used when defining custom toolbar items with the `CustomToolbarItemModel`` in the context of Syncfusion PDF Viewer. When configuring the toolbar using the `ToolbarSettings`` property, you can include these properties to customize the appearance and behavior of each toolbar item.
 
-N> When customizing save button-item, you have the flexibility to include either icons or text based on your design preference.
+N> When customizing `save` button-item, you have the flexibility to include either icons or text based on your design preference.
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/javascript-pdf-viewer-examples/tree/master/How%20to)

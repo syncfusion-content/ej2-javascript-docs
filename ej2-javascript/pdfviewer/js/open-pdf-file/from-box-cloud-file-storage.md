@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open PDF files from Box cloud file storage in ##Platform_Name## Pdfviewer control | Syncfusion
+title: Open PDF from BoxCloud in #Platform_Name# Pdfviewer  | Syncfusion
 description: Learn about how to Open PDF files from Box cloud file storage in ##Platform_Name## Pdfviewer control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Open PDF files from Box cloud file storage

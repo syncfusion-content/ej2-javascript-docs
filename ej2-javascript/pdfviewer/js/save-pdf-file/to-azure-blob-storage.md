@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Save PDF files to Azure Blob Storage in ##Platform_Name## Pdfviewer control | Syncfusion
+title: Save PDF to AzureBlob #Platform_Name# Pdfviewer control | Syncfusion
 description:  Learn about how to Save PDF files to Azure Blob Storage in ##Platform_Name## Pdfviewer control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Save PDF files to Azure Blob Storage

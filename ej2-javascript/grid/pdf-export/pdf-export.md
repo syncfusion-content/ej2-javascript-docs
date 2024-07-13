@@ -193,6 +193,8 @@ The following example demonstrates how to perform export with cell and row spann
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs207" %}
 {% endif %}
 
+> * The [updateCell](../../api/grid/#updatecell) method does not support row and column spanning.
+
 ## Exporting with custom date format
 
 The exporting functionality in the Syncfusion ##Platform_Name## Grid allows you to export grid data, including custom date format. This feature is useful when you need to export grid data with customized date values. 

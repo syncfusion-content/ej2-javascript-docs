@@ -93,7 +93,7 @@ By adding the toolbar at the bottom of the Syncfusion ##Platform_Name## Grid, im
 
 To add the toolbar at the bottom of the Grid, you can utilize the [created](../../api/grid/#created) event. By handling this event, you can dynamically insert the toolbar items at the desired position in the grid layout.
 
-The following example shows how to add the toolbar items at the bootom using `created` event of the grid.
+The following example shows how to add the toolbar items at the bottom using `created` event of the grid.
 
 {% if page.publishingplatform == "typescript" %}
 

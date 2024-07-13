@@ -221,7 +221,7 @@ Customizing the row height for a particular row can be useful when you want to d
 
 The `rowHeight` property of the Grid control allows you to set the height of all rows in the grid to a specific value. However, if you want to customize the row height for a specific row based on the row data, you can use the `rowDataBound` event. This event is triggered every time a request is made to access row information, element, or data, and before the row element is appended to the Grid element.
 
-In the below example, the row height for the row with OrderID as '10249' is set as '90px' using the `rowDataBound` event.
+In the below example, the row height for the row with **OrderID** as '10249' is set as '90px' using the `rowDataBound` event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -260,7 +260,7 @@ The Row Hover feature in Grid provides a visual effect when the mouse pointer ho
 
 By default, the `enableHover` property is set to **true**, which means that the row hovering effect is enabled. To disable the row hover effect, set the `enableHover` property to **false**.
 
-Here is an example that demonstrates how to enable/disable the Row Hover feature:
+Here is an example that demonstrates how to enable/disable row hover based on the Switch Control:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -420,6 +420,11 @@ Previous | Current | Explanation
 
 > When a validation message is displayed in the frozen part (Left, Right, Fixed) of the table, scrolling is prevented until the validation message is cleared.
 
+### Limitations
+
+* Frozen row is not compatible with the following features:
+    1. Autofill
+
 ## Adding a new row programmatically
 
 The Syncfusion Grid provides a way to add a new row to the grid programmatically. This feature is useful when you want to add a new record to the grid without having the manually enter data in the grid.This can be done using the [addRecord](../../api/grid/#addrecord) method of the Grid.
@@ -545,5 +550,3 @@ Grid provides several methods to retrieve row data and elements. This feature is
 * [How to get Data table row value on onclick event using JavaScript?](https://support.syncfusion.com/kb/article/10275/how-to-get-data-table-row-value-on-onclick-event-using-javascript)
 * [How to maintain selected rows after adding new record](https://support.syncfusion.com/kb/article/10245/how-to-maintain-selected-rows-after-adding-new-record)
 * [How to select the specific record in the grid using its primary key value](https://support.syncfusion.com/kb/article/10061/how-to-select-the-specific-record-in-the-grid-using-its-primary-key-value)
-* [How to achieve drag and drop the rows in Grid with custom data binding](https://support.syncfusion.com/kb/11325/how-to-achieve-drag-and-drop-the-rows-in-grid-with-custom-data-binding)
-* [How to get selected records on custom toolbar click](https://support.syncfusion.com/kb/11296/how-to-get-selected-records-on-custom-toolbar-click)

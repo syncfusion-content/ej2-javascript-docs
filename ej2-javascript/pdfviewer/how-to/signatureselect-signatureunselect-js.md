@@ -33,6 +33,6 @@ pdfviewer.signatureUnselect = (args: any) => {
 };
 ```
 
-The [signatureSelect](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#signatureselect) and [signatureUnselect](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#signatureunselect) events in Syncfusion PDF Viewer offer robust options for managing the state of handwritten signatures within your application. By handling these events, developers can create a more interactive and dynamic user experience, responding programmatically to signature selection and unselection.
+The `signatureSelect` and `signatureUnselect` events in Syncfusion PDF Viewer offer robust options for managing the state of handwritten signatures within your application. By handling these events, developers can create a more interactive and dynamic user experience, responding programmatically to signature selection and unselection.
 
 [View sample in GitHub]()

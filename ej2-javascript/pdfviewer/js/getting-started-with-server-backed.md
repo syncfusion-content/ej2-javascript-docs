@@ -37,7 +37,7 @@ The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaS
 {% endhighlight %}
 {% endtabs %}
 
-N> We have provided the support to dynamically change the [serviceURL](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#serviceurl). So, after changing the `serviceURL` dynamically, you need invoke the `pdfViewer.dataBind()` method to update the [serviceURL](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#serviceurl) quickly. This will effectively change the [serviceURL](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#serviceurl) dynamically. Ensure that this step is performed after version 23.1.36.
+N> We have provided the support to dynamically change the [serviceURL](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#serviceurl). So, after changing the `serviceURL` dynamically, you need invoke the `pdfViewer.dataBind()` method to update the `serviceURL` quickly. This will effectively change the `serviceURL` dynamically. Ensure that this step is performed after version 23.1.36.
 document.getElementById('load').addEventListener('click', function () {
    pdfViewer.serviceUrl = "https://services.syncfusion.com/angular/production/api/pdfviewer";
    pdfViewer.documentPath = "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf";
@@ -67,7 +67,7 @@ document.getElementById('load').addEventListener('click', function () {
    dotnet run
    ```
 
-5.You can see that the PDF Viewer server instance runs in the local host with the port number `localhost:5001` and navigate to the PDF Viewer Web control `localhost:5001/pdfviewer` which returns the default get response method. We can bind the link to the [serviceUrl](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#serviceurl) property of PDF Viewer as below.
+5.You can see that the PDF Viewer server instance runs in the local host with the port number `localhost:5001` and navigate to the PDF Viewer Web control `localhost:5001/pdfviewer` which returns the default get response method. We can bind the link to the `serviceUrl` property of PDF Viewer as below.
 
 ```javascript
 var pdfviewer = new ej.pdfviewer.PdfViewer({

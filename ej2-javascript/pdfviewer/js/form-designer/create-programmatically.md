@@ -36,7 +36,7 @@ Using addFormField method, the form fields can be added to the PDF document prog
 {% endtabs %}
 
 N> To set up the **server-backed PDF Viewer**,
-Add the below [serviceUrl](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#serviceurl) in the `index.html` file
+Add the below `serviceUrl` in the `index.html` file
 `serviceUrl: 'https://services.syncfusion.com/js/production/api/pdfviewer'`    
 
 {% previewsample "page.domainurl/code-snippet/pdfviewer/addformfield-cs1" %}
@@ -55,7 +55,7 @@ Using updateFormField method, Form Field can be updated programmatically. We sho
 {% endtabs %}
 
 N> To set up the **server-backed PDF Viewer**,
-Add the below [serviceUrl](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#serviceurl) in the `index.html` file
+Add the below `serviceUrl` in the `index.html` file
 `serviceUrl: 'https://services.syncfusion.com/js/production/api/pdfviewer'`
 
 {% previewsample "page.domainurl/code-snippet/pdfviewer/updateformfield-cs1" %}
@@ -217,7 +217,7 @@ We can open the already saved PDF document contains Form Fields in it by clickin
 
 ## Validate form fields
 
-The form fields in the PDF Document will be validated when the [enableFormFieldsValidation](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/#enableformfieldsvalidation) is set to true and hook the validateFormFields. The validateFormFields will be triggered when the PDF document is downloaded or printed with the non-filled form fields. The non-filled fields will be obtained in the `nonFillableFields` property of the event arguments of validateFormFields.
+The form fields in the PDF Document will be validated when the `enableFormFieldsValidation` is set to true and hook the validateFormFields. The validateFormFields will be triggered when the PDF document is downloaded or printed with the non-filled form fields. The non-filled fields will be obtained in the `nonFillableFields` property of the event arguments of validateFormFields.
 
 Add the following code snippet to validate the form fields,
 
@@ -255,7 +255,7 @@ viewer.validateFormFields = function (args) {
 
 ## Export and import form fields
 
-The PDF Viewer control provides the support to export and import the form field data in the following formats using the [importFormFields](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/#importformfields), [exportFormFields](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/#exportformfields), and [exportFormFieldsAsObject](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/#exportformfieldsasobject) methods.
+The PDF Viewer control provides the support to export and import the form field data in the following formats using the `importFormFields`, `exportFormFields`, and `exportFormFieldsAsObject` methods.
 
 * FDF
 * XFDF
@@ -263,7 +263,7 @@ The PDF Viewer control provides the support to export and import the form field 
 
 ### Export and import as FDF
 
-Using the [exportFormFields](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/#exportformfields) method, the form field data can be exported in the specified data format. This method accepts two parameters:
+Using the `exportFormFields` method, the form field data can be exported in the specified data format. This method accepts two parameters:
 
 * The first one must be the destination path for the exported data. If the path is not specified, it will ask for the location while exporting.
 * The second parameter should be the format type of the form data.
@@ -398,7 +398,7 @@ Form field properties in Syncfusion PDF Viewer allow you to customize and intera
 
 ### Signature and initial fields settings
 
-Using the [updateFormField](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/#updateformfields) method, the form fields can be updated programmatically.
+Using the `updateFormField` method, the form fields can be updated programmatically.
 
 The following code example explains how to update the signature field properties on a button click.
 
@@ -605,7 +605,7 @@ pdfviewer.initialFieldSettings = {
 
 ### Textbox field settings
 
-Using the [updateFormField](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/#updateformfields) method, the form fields can be updated programmatically.
+Using the `updateFormField` method, the form fields can be updated programmatically.
 
 The following code example explains how to update the Textbox field properties on a button click.
 
@@ -747,7 +747,7 @@ pdfviewer.textFieldSettings = {
 
 ### Password field settings
 
-Using the [updateFormField](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/#updateformfields) method, the form fields can be updated programmatically.
+Using the `updateFormField` method, the form fields can be updated programmatically.
 
 The following code example explains how to update the Password field properties on a button click.
 
@@ -885,7 +885,7 @@ pdfviewer.passwordFieldSettings = {
 
 ### CheckBox field settings
 
-Using the [updateFormField](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/#updateformfields) method, the form fields can be updated programmatically.
+Using the `updateFormField` method, the form fields can be updated programmatically.
 
 The following code example explains how to update the CheckBox field properties on a button click.
 
@@ -994,7 +994,7 @@ pdfviewer.checkBoxFieldSettings = {
 
 ### RadioButton field settings
 
-Using the [updateFormField](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/#updateformfields) method, the form fields can be updated programmatically.
+Using the `updateFormField` method, the form fields can be updated programmatically.
 
 The following code example explains how to update the RadioButton field properties on a button click.
 
@@ -1105,7 +1105,7 @@ pdfviewer.radioButtonFieldSettings = {
 
 ### ListBox field settings
 
-Using the [updateFormField](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/#updateformfields) method, the form fields can be updated programmatically.
+Using the `updateFormField` method, the form fields can be updated programmatically.
 
 The following code example explains how to update the ListBox field properties on a button click.
 

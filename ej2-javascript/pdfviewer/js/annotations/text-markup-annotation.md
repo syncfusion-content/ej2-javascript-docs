@@ -59,7 +59,7 @@ Refer to the following code snippet to switch back to normal mode from highlight
 {% endtabs %}
 
 N> To set up the **server-backed PDF Viewer**,
-Add the below [serviceUrl](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#serviceurl) in the `index.html` file
+Add the below `serviceUrl` in the `index.html` file
 `serviceUrl: 'https://services.syncfusion.com/js/production/api/pdfviewer'`
 
 {% previewsample "page.domainurl/code-snippet/pdfviewer/es5-text-markup-annotation/highlight-normal-mode-cs1" %}
@@ -149,7 +149,7 @@ Refer to the following code snippet to switch to underline mode.
 {% endtabs %}
 
 N> To set up the **server-backed PDF Viewer**,
-Add the below [serviceUrl](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#serviceurl) in the `index.html` file
+Add the below `serviceUrl` in the `index.html` file
 `serviceUrl: 'https://services.syncfusion.com/js/production/api/pdfviewer'`
 
 {% previewsample "page.domainurl/code-snippet/pdfviewer/es5-text-markup-annotation/underline-mode-cs1" %}

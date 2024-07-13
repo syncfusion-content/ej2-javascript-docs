@@ -84,6 +84,7 @@ For example, to render grid inside the detail row, place an HTML div element as 
 The Grid provides a feature that allows users to expand the detail row of a grid using an external button. By default, detail rows render in a collapsed state, but this feature enables users to view additional details associated with a particular row. 
 
 To achieve expanding the detail row of a grid using an external button, you need to invoke the [expand](../../api/grid/detailRow/#expand) method provided by the **detailRowModule** object of the Syncfusion Grid library. This method will expand the detail row of a specific grid row.
+
 Here is an example of how to use the `expand` method to expand a detail row:
 
 {% if page.publishingplatform == "typescript" %}
@@ -120,11 +121,11 @@ The detail template icon in the Syncfusion Grid is used to expand or collapse th
 ```css
 
 .e-grid .e-icon-grightarrow::before {
-          content: '\e300';
+    content: '\e7a9';
 }
 
 .e-grid .e-icon-gdownarrow::before {
-          content: '\e304';
+    content: '\e7fe';
 }
 
 ```

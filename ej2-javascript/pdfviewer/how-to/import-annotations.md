@@ -115,7 +115,7 @@ viewer.importAnnotation({
 
 ```
 
-In this example, the PDF Viewer is first used to load the PDF document from a file. The [**importAnnotations()**](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#importannotation) method is then used to import annotations from a string. The imported annotations will be added to the PDF Viewer and displayed along with the document.
+In this example, the PDF Viewer is first used to load the PDF document from a file. The **importAnnotations()** method is then used to import annotations from a string. The imported annotations will be added to the PDF Viewer and displayed along with the document.
 
 Alternatively, we can import annotations from a file in JSON or XFDF format.
 

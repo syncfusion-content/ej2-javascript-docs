@@ -15,11 +15,11 @@ In Syncfusion PDF Viewer, [pageRenderInitiate](https://helpej2.syncfusion.com/do
 
 **PageRenderInitiate** 
 
-The [pageRenderInitiate](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#pagerenderinitiate) event is triggered when the rendering of a page in the PDF document begins. This event provides developers with an opportunity to perform any necessary initialization or setup before the rendering of the page content commences. It can be utilized to prepare resources, set up rendering parameters, or execute any other actions required before the page rendering process starts.
+The `pageRenderInitiate` event is triggered when the rendering of a page in the PDF document begins. This event provides developers with an opportunity to perform any necessary initialization or setup before the rendering of the page content commences. It can be utilized to prepare resources, set up rendering parameters, or execute any other actions required before the page rendering process starts.
 
 **PageRenderComplete**
 
-The [pageRenderComplete](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#pagerendercomplete) event is triggered when the rendering of a page in the PDF document is completed. This event allows developers to perform cleanup tasks or finalize rendering-related processes after the rendering of the page content finishes. It can be used to release resources, finalize rendering settings, or handle any post-rendering tasks necessary for the application.
+The `pageRenderComplete` event is triggered when the rendering of a page in the PDF document is completed. This event allows developers to perform cleanup tasks or finalize rendering-related processes after the rendering of the page content finishes. It can be used to release resources, finalize rendering settings, or handle any post-rendering tasks necessary for the application.
 
 
 ```ts

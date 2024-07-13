@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 The filter menu in the ##Platform_Name## Grid control allows you to enable filtering and provides a user-friendly interface for filtering data based on column types and operators.
 
-To enable the filter menu, you need to set the [filterSettings.type](../../api/grid/filterSettings) property to **Menu**. This property determines the type of filter UI that will be rendered. The filter menu UI allows you to apply filters using different operators.
+To enable the filter menu, you need to set the [filterSettings->type](../../api/grid/filterSettings) property to **Menu**. This property determines the type of filter UI that will be rendered. The filter menu UI allows you to apply filters using different operators.
 
 Here is an example that demonstrates the usage of the filter menu in the Syncfusion ##Platform_Name## Grid:
 
@@ -45,7 +45,7 @@ Here is an example that demonstrates the usage of the filter menu in the Syncfus
 {% endif %}
 
 > * [allowFiltering](../../api/grid/#allowfiltering) must be set as true to enable filter menu.
-> * By setting [columns.allowFiltering](../../api/grid/column/#allowfiltering) as false will prevent filter menu rendering for a particular column.
+> * By setting [columns->allowFiltering](../../api/grid/column/#allowfiltering) as false will prevent filter menu rendering for a particular column.
 
 ## Custom control in filter menu
 
@@ -128,7 +128,7 @@ Here is an example that demonstrates how to show 24 hours time format in filter 
 
 ## Customizing filter menu operators list
 
-The Syncfusion ##Platform_Name## Grid enables you to customize the default filter operator list by utilizing the [filterSettings.operators](../../api/grid/filterSettings/#operators) property. This feature allows you to define your own set of operators that will be available in the filter menu. You can customize operators for string, number, date, and boolean data types.
+The Syncfusion ##Platform_Name## Grid enables you to customize the default filter operator list by utilizing the [filterSettings->operators](../../api/grid/filterSettings/#operators) property. This feature allows you to define your own set of operators that will be available in the filter menu. You can customize operators for string, number, date, and boolean data types.
 
 The available options for customization are:
 
@@ -168,7 +168,7 @@ Here is an example of how to customize the filter operators list in Syncfusion #
 
 ## Filter by multiple keywords using filter menu
 
-The Syncfusion ##Platform_Name## Grid allows you to perform filtering actions based on multiple keywords, rather than a single keyword, using the filter menu dialog. To enable this feature, you can set [filterSettings.type](../../api/grid/filterSettings/#type) as **Menu** and render the `MultiSelect` control as a custom control in the filter menu dialog.
+The Syncfusion ##Platform_Name## Grid allows you to perform filtering actions based on multiple keywords, rather than a single keyword, using the filter menu dialog. To enable this feature, you can set [filterSettings->type](../../api/grid/filterSettings/#type) as **Menu** and render the `MultiSelect` control as a custom control in the filter menu dialog.
 
 Here is an example that demonstrates how to perform filtering by multiple keywords using the filter menu in the Syncfusion ##Platform_Name## Grid:
 

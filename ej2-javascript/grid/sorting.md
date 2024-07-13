@@ -466,9 +466,9 @@ The following example demonstrates how to add sort columns to a grid. It utilize
 
 ### Remove sort columns
 
-To remove a sort column externally, you can use the `removeSortColumn` method provided by the Grid component. This method allows you to remove the sorting applied to a specific column.
+To remove a sort column externally, you can use the `removeSortColumn` method provided by the Grid control. This method allows you to remove the sorting applied to a specific column.
 
-The following example demonstrates how to remove sort columns. It utilizes the **DropDownList** component to select the column. When an external button is clicked, the `removeSortColumn` method is called to remove the selected sort column.
+The following example demonstrates how to remove sort columns. It utilizes the **DropDownList** control to select the column. When an external button is clicked, the `removeSortColumn` method is called to remove the selected sort column.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -499,7 +499,7 @@ The following example demonstrates how to remove sort columns. It utilizes the *
 
 ### Clear sorting 
 
-To clear the sorting on an external button click, you can use the [clearSorting](../api/grid/#clearsorting) method provided by the Grid component. This method clears the sorting applied to all columns in the grid. 
+To clear the sorting on an external button click, you can use the [clearSorting](../api/grid/#clearsorting) method provided by the Grid control. This method clears the sorting applied to all columns in the grid. 
 
 The following example demonstrates how to clear the sorting using `clearSorting` method in the external button click.
 
@@ -532,7 +532,7 @@ The following example demonstrates how to clear the sorting using `clearSorting`
 
 ## Sorting Events
 
-The Grid component provides two events that are triggered during the sorting action such as [actionBegin](../api/grid/#actionbegin) and [actionComplete](../api/grid/#actioncomplete). These events can be used to perform any custom actions before and after the sorting action is completed.
+The Grid control provides two events that are triggered during the sorting action such as [actionBegin](../api/grid/#actionbegin) and [actionComplete](../api/grid/#actioncomplete). These events can be used to perform any custom actions before and after the sorting action is completed.
 
 1. **actionBegin**: [actionBegin](../api/grid/#actionbegin) event is triggered before the sorting action begins. It provides a way to perform any necessary operations before the sorting action takes place. This event provides a parameter that contains the current grid state, including the current sorting column, direction, and data.
 

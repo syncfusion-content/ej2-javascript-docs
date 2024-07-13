@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Prevent date navigation in ##Platform_Name## Schedule control
 
-We can prevent navigation while clicking on the date header by simply removing `e-navigate` class from header cells which can be achieved in the `renderCell` event as shown in the following code example.
+We can prevent navigation while clicking on the date header by simply removing `e-navigate` class from header cells which can be achieved in the [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell) event as shown in the following code example.
 
 {% if page.publishingplatform == "typescript" %}
 

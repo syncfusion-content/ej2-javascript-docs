@@ -13,8 +13,6 @@ domainurl: ##DomainURL##
 
 The Syncfusion ##Platform_Name## Grid control comes equipped with a context menu feature, which is triggered when a user right-clicks anywhere within the grid. This feature serves to enrich the user experience by offering immediate access to a variety of supplementary actions and operations that can be executed on the data displayed in the grid.
 
-In essence, the context menu provides a convenient and efficient way for users to interact with and manipulate the grid's content, enabling them to perform tasks such as sorting, filtering, editing, or any other relevant actions without the need for navigating through the grid's interface. This user-friendly feature streamlines the overall usability of the ##Platform_Name## Grid, making it a powerful tool for data management and manipulation.
-
 To activate the context menu within the grid, you have an option to configure the grid's [contextMenuItems](../api/grid/#contextmenuitems) property. You can set this property to either include the default context menu items or define your own custom context menu items, tailoring the menu options to suit your specific needs. This customization allows you to enhance the grid's functionality by providing context-sensitive actions for interacting with your data.
    
 To use the context menu, inject the `ContextMenu` module in the grid.
@@ -23,8 +21,6 @@ The context menu is triggered when you right-click on different areas of the gri
 * Header: When you right-click on the grid's header section.
 * Content: When you right-click on the grid's main content area.
 * Pager: When you right-click on the pager section.
-
-The context menu items that appear vary depending on the area you have clicked. For instance, the items available in the context menu when clicking on the header area differ from those in the content area or pager.
 
 The default context menu items in the header area of the grid are as follows:
 
@@ -167,8 +163,6 @@ The following example demonstrates how to show context menu on left click using 
 ## Enable or disable context menu items
 
 With the Syncfusion ##Platform_Name## Grid, you have the ability to manage the activation or deactivation of both default and custom context menu items. This feature provides you with the flexibility to tailor the behavior of context menu items to suit specific conditions or individual interactions within your application.
-
-By enabling or disabling context menu items, you can ensure that certain options are available or restricted based on the context of the data or the needs of your users. This level of control allows you to create a more dynamic and user-centric experience with the grid, aligning it with your application's requirements and enhancing usability.
 
 This can be achieved using the [enableItems](../api/context-menu/#enableitems) method of the context menu. By setting the enable parameter in the enableItems method to **true**, you can enable context menu items, and by setting it to **false**, you can disable them. Based on your specific condition or requirements, you can enable or disable the context menu item using the `enableItems` method.
 

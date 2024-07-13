@@ -47,11 +47,11 @@ Here is an example that demonstrates the default filtering feature of the grid:
 {% endif %}
 
 > * You can apply and clear filtering, by using [filterByColumn](../../api/grid/filter/#filterbycolumn) and [clearFiltering](../../api/grid/filter/#clearfiltering) methods.
-> * To disable Filtering for a particular column, by specifying [columns.allowFiltering](../../api/grid/column/#allowfiltering) to false.
+> * To disable Filtering for a particular column, by specifying [columns->allowFiltering](../../api/grid/column/#allowfiltering) to false.
 
 ## Initial filter
 
-To apply an initial filter, you need to specify the filter criteria using the [predicate](../../api/grid/predicate) object in [filterSettings.columns](../../api/grid/filterSettingsModel/#columns). The `predicate` object represents the filtering condition and contains properties such as field, operator, and value.
+To apply an initial filter, you need to specify the filter criteria using the [predicate](../../api/grid/predicate) object in [filterSettings->columns](../../api/grid/filterSettingsModel/#columns). The `predicate` object represents the filtering condition and contains properties such as field, operator, and value.
 
 Here is an example of how to configure the initial filter using the `predicate` object:
 
@@ -86,7 +86,7 @@ Here is an example of how to configure the initial filter using the `predicate` 
 
 In the Syncfusion ##Platform_Name## Grid, you can establish an initial filter containing multiple values for a particular column, which helps you to preset filter conditions for a specific column using multiple values. This functionality allows you to display a filtered records in the grid right after the grid is initially loaded.
 
-To apply the filter with multiple values for same column at initial rendering, set the filter [predicate](../../api/grid/predicate) object in [filterSettings.columns](../../api/grid/filterSettingsModel/#columns).
+To apply the filter with multiple values for same column at initial rendering, set the filter [predicate](../../api/grid/predicate) object in [filterSettings->columns](../../api/grid/filterSettingsModel/#columns).
 
 The following example demonstrates, how to perform an initial filter with multiple values for same **CustomerID** column using `filterSettings.columns` and `predicate`.
 
@@ -121,7 +121,7 @@ The following example demonstrates, how to perform an initial filter with multip
 
 By applying an initial filter with multiple values for different columns in the Syncfusion ##Platform_Name## Grid, you have the flexibility to set predefined filter settings for each column. This results in a filtered records of the grid right after the grid is initially loaded.
 
-To apply the filter with multiple values for different column at initial rendering, set the filter [predicate](../../api/grid/predicate) object in [filterSettings.columns](../../api/grid/filterSettingsModel/#columns).
+To apply the filter with multiple values for different column at initial rendering, set the filter [predicate](../../api/grid/predicate) object in [filterSettings->columns](../../api/grid/filterSettingsModel/#columns).
 
 The following example demonstrates how to perform an initial filter with multiple values for different **Order ID** and **Customer ID** columns using `filterSettings.columns` and `predicate`.
 
@@ -154,7 +154,7 @@ The following example demonstrates how to perform an initial filter with multipl
 
 ## Filter operators
 
-The Syncfusion Grid control provides various filter operators that can be used to define filter conditions for columns. The filter operator for a column can be defined using the [operator](../../api/grid/predicateModel/#operator) property in the [filterSettings.columns](../../api/grid/filterSettings/#columns) object.
+The Syncfusion Grid control provides various filter operators that can be used to define filter conditions for columns. The filter operator for a column can be defined using the [operator](../../api/grid/predicateModel/#operator) property in the [filterSettings->columns](../../api/grid/filterSettings/#columns) object.
 
 The available operators and its supported data types are,
 
@@ -205,7 +205,7 @@ a* |Everything that starts with "a".
 The **LIKE** filter can process single search patterns using the "%" symbol, retrieving values matching the specified patterns. The following Grid features support LIKE filtering on string-type columns:
 
 * Filter Menu
-* Filter Bar with the [filterSettings.showFilterBarOperator](../../api/grid/filter/#showFilterBarOperator) property enabled on the Grid [filterSettings](../../api/grid/filterSettings).
+* Filter Bar with the [filterSettings->showFilterBarOperator](../../api/grid/filter/#showFilterBarOperator) property enabled on the Grid [filterSettings](../../api/grid/filterSettings).
 * Custom Filter of Excel filter type.
 
 **For example:**
@@ -290,7 +290,7 @@ Below is an example code demonstrating how to enable or disable case sensitivity
 
 The Syncfusion ##Platform_Name## Grid offers the flexibility to customize filtering behavior for different columns by enabling various types of filters such as **Menu**, **Excel**, **Checkbox**. This feature allows you to tailor the filtering experience to suit the specific needs of each column in your grid. For example, you might prefer a menu-based filter for a category column, an Excel-like filter for a date column, and a checkbox filter for a status column. 
 
-It can be achieved by adjusting the [column.filter.type](../../api/grid/column/#filter) property based on your requirements.
+It can be achieved by adjusting the [column->filter->type](../../api/grid/column/#filter) property based on your requirements.
 
 Here's an example where the menu filter is enabled by default for all columns, but you can dynamically modify the filter types through a dropdown:
 

@@ -60,17 +60,17 @@ The following example demonstrates how to activate default filtering in the grid
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs64" %}
 {% endif %}
 
-> To enable or dynamically switch the filter type, you must set the [filterSettings.type](../../api/grid/filtersettings/#type) as **FilterBar**.
+> To enable or dynamically switch the filter type, you must set the [filterSettings->type](../../api/grid/filtersettings/#type) as **FilterBar**.
 
 ## Filter bar modes
 
 The Syncfusion ##Platform_Name##  Grid control refers to two different ways in which the grid's filter bar can operate when filtering criteria are applied. These modes, "OnEnter Mode" and "Immediate Mode," offer users different experiences and behaviors when interacting with the filter bar.
 
 **OnEnter Mode:**
-By settings [filterSettings.mode](../../api/grid/filterSettings/#mode) as **OnEnter**, the filter bar captures the filter criteria entered but doesn't initiate filtering until the **Enter** key is pressed. This allows multiple criteria modifications without triggering immediate filtering actions.
+By settings [filterSettings->mode](../../api/grid/filterSettings/#mode) as **OnEnter**, the filter bar captures the filter criteria entered but doesn't initiate filtering until the **Enter** key is pressed. This allows multiple criteria modifications without triggering immediate filtering actions.
 
 **Immediate Mode:**
-By settings [filterSettings.mode](../../api/grid/filterSettings/#mode) as **Immediate**, the filter bar instantly applies filtering as filter criteria are entered. Filtering actions take place as soon as criteria are input or modified, providing real-time previews of filtering results.
+By settings [filterSettings->mode](../../api/grid/filterSettings/#mode) as **Immediate**, the filter bar instantly applies filtering as filter criteria are entered. Filtering actions take place as soon as criteria are input or modified, providing real-time previews of filtering results.
 
 {% if page.publishingplatform == "typescript" %}
 

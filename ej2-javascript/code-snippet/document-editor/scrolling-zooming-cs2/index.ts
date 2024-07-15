@@ -8,7 +8,7 @@ let documenteditor: DocumentEditor = new DocumentEditor({
 documenteditor.enableAllModules();
 documenteditor.appendTo('#DocumentEditor');
 onLoadDefaultDocument();
-documenteditor.viewer.selection.goToPage(3);
+documenteditor.selection.goToPage(3);
 
 function onLoadDefaultDocument(): void {
     let defaultDocument: object = {

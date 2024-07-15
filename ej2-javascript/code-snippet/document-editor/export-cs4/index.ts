@@ -1,11 +1,11 @@
 
 
-import { DocumentEditor, FormatType, Selection, Editor, SfdtExport, TextExport} from '@syncfusion/ej2-documenteditor';
+import { DocumentEditor, FormatType, Selection, Editor, SfdtExport, WordExport} from '@syncfusion/ej2-documenteditor';
 
 //Inject require modules for Export.
-DocumentEditor.Inject(SfdtExport, TextExport, Selection, Editor);
+DocumentEditor.Inject(SfdtExport, WordExport, Selection, Editor);
 
-let documenteditor: DocumentEditor = new DocumentEditor({ height: '370px', enableTextExport: true, enableSelection: true, enableEditor: true, isReadOnly: false });
+let documenteditor: DocumentEditor = new DocumentEditor({ height: '370px', enableWordExport: true, enableSelection: true, enableEditor: true, isReadOnly: false });
 
 documenteditor.appendTo('#DocumentEditor');
 

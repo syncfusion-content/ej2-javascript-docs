@@ -10,7 +10,7 @@ ej.documenteditor.DocumentEditorContainer.Inject(
 
 document.getElementById('container_ruler_button').addEventListener('click',
   function () {
-    container.documentEditorSettings.showRuler = !container.documentEditorSettings.showRuler;
+    documenteditorcontainer.documentEditorSettings.showRuler = !documenteditorcontainer.documentEditorSettings.showRuler;
   });
 
 //Render Document Editor Container component.

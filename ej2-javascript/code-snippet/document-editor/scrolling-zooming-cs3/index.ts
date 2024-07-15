@@ -26,9 +26,9 @@ let label1: HTMLElement = createElement('label', { id: 'documenteditor_pagecount
 label1.textContent = 'of';
 statusBarDiv.appendChild(label1);
 let pageCount = createElement('label', { id: 'documenteditor_pagecount', styles: 'margin-left:6px;letter-spacing: 1.05px;' });
-updatePageCount();
 statusBarDiv.appendChild(pageCount);
 let editorPageCount = undefined;
+updatePageCount();
 let zoom: DropDownButton;
 let zoomBtn: HTMLButtonElement = createElement('button', {
     id: 'documenteditor-zoom',

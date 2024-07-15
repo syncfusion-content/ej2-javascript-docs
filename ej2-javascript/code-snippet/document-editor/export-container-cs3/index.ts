@@ -7,5 +7,5 @@ let container: DocumentEditorContainer = new DocumentEditorContainer({ enableToo
 container.appendTo('#DocumentEditor');
 
 document.getElementById('export').addEventListener('click', () => {
-    container.documenteditor.save('sample', 'Txt');
+    container.documentEditor.save('sample', 'Txt');
 });

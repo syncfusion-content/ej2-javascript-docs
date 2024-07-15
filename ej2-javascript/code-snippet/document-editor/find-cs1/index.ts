@@ -1,8 +1,8 @@
 
 
-import { DocumentEditor, Selection, Editor, Search, OptionsPane } from '@syncfusion/ej2-documenteditor';
-DocumentEditor.Inject(Selection, Search, Editor, OptionsPane);
-let documenteditor: DocumentEditor = new DocumentEditor({ height: '370px', enableSelection: true, enableSearch: true, enableEditor: true, isReadOnly: false, enableOptionsPane: true });
+import { DocumentEditor, Selection, Editor, Search, OptionsPane, EditorHistory } from '@syncfusion/ej2-documenteditor';
+DocumentEditor.Inject(Selection, Search, Editor, OptionsPane, EditorHistory);
+let documenteditor: DocumentEditor = new DocumentEditor({ height: '370px', enableSelection: true, enableSearch: true, enableEditor: true, isReadOnly: false, enableOptionsPane: true, enableEditorHistory : true });
 documenteditor.appendTo('#DocumentEditor');
 let sfdt: string = `{
     "sections": [

@@ -1,11 +1,11 @@
 
 
-import { DocumentEditor, SfdtExport, Selection, RequestNavigateEventArgs } from '@syncfusion/ej2-documenteditor';
+import { DocumentEditor, SfdtExport, Selection, RequestNavigateEventArgs, Editor } from '@syncfusion/ej2-documenteditor';
 
 //Inject require modules.
-DocumentEditor.Inject(Selection, SfdtExport);
+DocumentEditor.Inject(Selection, SfdtExport, Editor);
 //Initilize the Document Editor component.
-let documenteditor: DocumentEditor = new DocumentEditor({ enableSelection: true, height: '370px' });
+let documenteditor: DocumentEditor = new DocumentEditor({ enableSelection: true, height: '370px', enableEditor: true, isReadOnly: false });
 documenteditor.appendTo('#DocumentEditor');
 
 // Add event listener for requestNavigate event to customize hyperlink navigation functionality

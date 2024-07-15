@@ -3,7 +3,7 @@
 import { DocumentEditor } from '@syncfusion/ej2-documenteditor';
 
 let documenteditor: DocumentEditor = new DocumentEditor({
-    isReadOnly: false, height: '370px'
+    isReadOnly: false, height: '370px', enableEditor: true
 });
 documenteditor.appendTo('#DocumentEditor');
 //Open default document in DocumentEditor

@@ -5,5 +5,5 @@ container.serviceUrl = 'https://services.syncfusion.com/js/production/api/docume
 container.appendTo('#DocumentEditor');
 
 document.getElementById('export').addEventListener('click', function () {
-    container.documenteditor.save('sample', 'Txt');
+    container.documentEditor.save('sample', 'Txt');
 });

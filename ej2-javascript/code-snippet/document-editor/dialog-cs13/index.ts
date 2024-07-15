@@ -1,8 +1,8 @@
 
 
 
-import { DocumentEditor, Editor, Selection, TableOptionsDialog, TablePropertiesDialog, BordersAndShadingDialog, SfdtExport, } from '@syncfusion/ej2-documenteditor';
-DocumentEditor.Inject(Editor, Selection, SfdtExport, TablePropertiesDialog, BordersAndShadingDialog, TableOptionsDialog);
+import { DocumentEditor, Editor, Selection, TableOptionsDialog, TablePropertiesDialog, BordersAndShadingDialog, SfdtExport, EditorHistory } from '@syncfusion/ej2-documenteditor';
+DocumentEditor.Inject(Editor, Selection, SfdtExport, TablePropertiesDialog, BordersAndShadingDialog, TableOptionsDialog, EditorHistory);
 let documenteditor: DocumentEditor = new DocumentEditor({
       isReadOnly: false,
       enableSelection: true,
@@ -11,7 +11,8 @@ let documenteditor: DocumentEditor = new DocumentEditor({
       enableTablePropertiesDialog: true,
       enableBordersAndShadingDialog: true,
       enableSfdtExport: true,
-      height: '370px'
+      height: '370px',
+      enableEditorHistory: true
 });
 let button: HTMLElement = document.getElementById('dialog');
 button.addEventListener('click', function () {

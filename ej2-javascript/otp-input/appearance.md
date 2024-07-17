@@ -26,8 +26,8 @@ You can specify the length of OTP by using the [length](../api/otp-input#length)
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/appearance/length/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/appearance/length/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/appearance/length/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -42,8 +42,8 @@ You can specify the length of OTP by using the [length](../api/otp-input#length)
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/appearance/length/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/appearance/length/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/appearance/length/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -63,8 +63,8 @@ You can disable the OTP Input control by using the [disabled](../api/otp-input#d
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/appearance/disabled/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/appearance/disabled/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/appearance/disabled/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -79,8 +79,8 @@ You can disable the OTP Input control by using the [disabled](../api/otp-input#d
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/appearance/disabled/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/appearance/disabled/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/appearance/disabled/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -108,8 +108,8 @@ The OTP input control supports the following predefined styles that can be defin
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/appearance/cssClass/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/appearance/cssClass/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/appearance/cssClass/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -124,8 +124,8 @@ The OTP input control supports the following predefined styles that can be defin
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/appearance/cssClass/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/appearance/cssClass/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/appearance/cssClass/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -24,8 +24,8 @@ You can set the placeholder text by using the [placeholder](../api/otp-input#pla
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/placeholder/placeholder_char/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/placeholder/placeholder_char/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/placeholder/placeholder_char/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -40,8 +40,8 @@ You can set the placeholder text by using the [placeholder](../api/otp-input#pla
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/placeholder/placeholder_char/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/placeholder/placeholder_char/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/placeholder/placeholder_char/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -59,8 +59,8 @@ When a placeholder with multiple placeholder characters is provided each input f
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/placeholder/placeholder_string/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/placeholder/placeholder_string/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/placeholder/placeholder_string/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -75,8 +75,8 @@ When a placeholder with multiple placeholder characters is provided each input f
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/placeholder/placeholder_string/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/placeholder/placeholder_string/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/placeholder/placeholder_string/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

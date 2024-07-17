@@ -75,7 +75,7 @@ To render OTP Input control, need to import inputs and its dependent controls st
 
 ## Adding OTP Input to the Application
 
-Add the HTML input tag with ID attribute as the `otp_default` to your `index.html` file.
+Add the HTML input tag with ID attribute as the `element` to your `index.html` file.
 
 `[src/index.html]`
 
@@ -97,7 +97,7 @@ Add the HTML input tag with ID attribute as the `otp_default` to your `index.htm
 
 <body>
     <div class="otp-container" style="width: 350px;">
-        <div id="otp_default"></div>
+        <div id="element"></div>
     </div>
 </body>
 
@@ -106,7 +106,7 @@ Add the HTML input tag with ID attribute as the `otp_default` to your `index.htm
 {% endhighlight %}
 {% endtabs %}
 
-Then, import the OTP Input control in your `app.ts` file, and initialize it with the `#otp_default`.
+Then, import the OTP Input control in your `app.ts` file, and initialize it with the `#element`.
 
 `[src/app/app.ts]`
 
@@ -119,7 +119,7 @@ import { OtpInput } from "@syncfusion/ej2-inputs";
 let otpInput: OtpInput = new OtpInput({});
 
 // Render initialized OTP Input.
-otpInput.appendTo('#otp_default');
+otpInput.appendTo('#element');
 
 {% endhighlight %}
 {% endtabs %}
@@ -145,8 +145,8 @@ The following example shows a basic OTP Input control.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/getting-started-cs1/index.html %}
 {% endhighlight %}
-{% highlight css tabtitle="styles.css" %}
-{% include code-snippet/otp-input/getting-started-cs1/styles.css %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/otp-input/getting-started-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -26,8 +26,8 @@ You can use the outline style by setting the [stylingMode](../api/otp-input#styl
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/styling-modes/outlined/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/styling-modes/outlined/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/styling-modes/outlined/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -42,8 +42,8 @@ You can use the outline style by setting the [stylingMode](../api/otp-input#styl
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/styling-modes/outlined/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/styling-modes/outlined/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/styling-modes/outlined/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -63,8 +63,8 @@ You can use the filled style by setting the [stylingMode](../api/otp-input#styli
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/styling-modes/filled/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/styling-modes/filled/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/styling-modes/filled/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -79,8 +79,8 @@ You can use the filled style by setting the [stylingMode](../api/otp-input#styli
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/styling-modes/filled/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/styling-modes/filled/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/styling-modes/filled/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -100,8 +100,8 @@ You can use the underline style by setting the [stylingMode](../api/otp-input#st
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/styling-modes/underlined/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/styling-modes/underlined/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/styling-modes/underlined/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -116,8 +116,8 @@ You can use the underline style by setting the [stylingMode](../api/otp-input#st
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/styling-modes/underlined/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/styling-modes/underlined/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/styling-modes/underlined/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

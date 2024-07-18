@@ -28,8 +28,8 @@ You can set the [type](../api/otp-input#type) property to [number](../api/otp-in
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/inputTypes/number/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/inputTypes/number/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/inputTypes/number/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -44,8 +44,8 @@ You can set the [type](../api/otp-input#type) property to [number](../api/otp-in
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/inputTypes/number/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/inputTypes/number/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/inputTypes/number/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -65,8 +65,8 @@ You can set the [type](../api/otp-input#type) property to [text](../api/otp-inpu
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/inputTypes/text/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/inputTypes/text/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/inputTypes/text/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -81,8 +81,8 @@ You can set the [type](../api/otp-input#type) property to [text](../api/otp-inpu
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/inputTypes/text/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/inputTypes/text/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/inputTypes/text/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -103,8 +103,8 @@ You can set the [type](../api/otp-input#type) property to [password](../api/otp-
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/inputTypes/password/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/inputTypes/password/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/inputTypes/password/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -119,8 +119,8 @@ You can set the [type](../api/otp-input#type) property to [password](../api/otp-
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/inputTypes/password/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/inputTypes/password/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/inputTypes/password/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -140,8 +140,8 @@ You can specify the value of OTP Input by using the [value](../api/otp-input#val
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/inputTypes/value/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/inputTypes/value/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/inputTypes/value/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -156,8 +156,8 @@ You can specify the value of OTP Input by using the [value](../api/otp-input#val
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/inputTypes/value/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/inputTypes/value/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/inputTypes/value/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

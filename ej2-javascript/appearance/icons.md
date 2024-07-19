@@ -168,6 +168,10 @@ The complete package of Essential JS 2 icons is listed below. The corresponding 
 
 <!-- markdownlint-disable MD033 -->
 
+### Material 3
+
+<iframe class="doc-sample-frame" src="https://ej2.syncfusion.com/products/icons/material3/demo.html" style="height:1000px;width:100%;"></iframe>
+
 ### Material
 
 <iframe class="doc-sample-frame" src="https://ej2.syncfusion.com/products/icons/material/demo.html" style="height:1000px;width:100%;"></iframe>

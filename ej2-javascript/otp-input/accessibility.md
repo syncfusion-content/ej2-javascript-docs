@@ -82,8 +82,8 @@ You can pass HTML attributes as key-value pairs to the [htmlAttributes](../api/o
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/accessibility/htmlAttributes/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/accessibility/htmlAttributes/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/accessibility/htmlAttributes/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -98,8 +98,8 @@ You can pass HTML attributes as key-value pairs to the [htmlAttributes](../api/o
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/accessibility/htmlAttributes/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/accessibility/htmlAttributes/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/accessibility/htmlAttributes/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -121,8 +121,8 @@ You can provide an array of strings as ARIA-labels to the [ariaLabels](../api/ot
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/accessibility/ariaLabels/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/accessibility/ariaLabels/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/accessibility/ariaLabels/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -137,8 +137,8 @@ You can provide an array of strings as ARIA-labels to the [ariaLabels](../api/ot
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/accessibility/ariaLabels/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/accessibility/ariaLabels/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/accessibility/ariaLabels/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

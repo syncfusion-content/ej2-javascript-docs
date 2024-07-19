@@ -22,8 +22,8 @@ The separator in OTP Input specifies the character or symbol used to separate ea
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/separator/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/separator/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/separator/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -38,8 +38,8 @@ The separator in OTP Input specifies the character or symbol used to separate ea
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/otp-input/separator/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/otp-input/separator/styles.css %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/otp-input/separator/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

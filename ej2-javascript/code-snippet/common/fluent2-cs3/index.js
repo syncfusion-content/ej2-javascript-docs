@@ -4,5 +4,5 @@ var button = new ej.buttons.Button({
 button.appendTo('#element');
 
 var root = document.documentElement;
-var colorSFPprimary = '#8d969e';
+var colorSFPrimary = '#8d969e';
 root.style.setProperty('--color-sf-primary', colorSFPrimary);

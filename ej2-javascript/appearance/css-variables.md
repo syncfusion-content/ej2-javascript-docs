@@ -78,33 +78,27 @@ Here you can find the example for `Material 3` customization using CSS class.
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/common/material3-cs2/index.ts %}
+{% include code-snippet/common/material3-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/common/material3-cs2/index.html %}
-{% endhighlight %}
-{% highlight css tabtitle="index.css" %}
-{% include code-snippet/common/material3-cs2/index.css %}
+{% include code-snippet/common/material3-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/common/material3-cs2" %}
+{% previewsample "page.domainurl/code-snippet/common/material3-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/common/material3-cs2/index.js %}
+{% include code-snippet/common/material3-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/common/material3-cs2/index.html %}
-{% endhighlight %}
-{% highlight css tabtitle="index.css" %}
-{% include code-snippet/common/material3-cs2/index.css %}
+{% include code-snippet/common/material3-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/common/material3-cs2" %}
+{% previewsample "page.domainurl/code-snippet/common/material3-cs1" %}
 {% endif %}
 
 Example for `Fluent 2` customization using Css class.
@@ -113,13 +107,10 @@ Example for `Fluent 2` customization using Css class.
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/common/fluent2-cs2/index.ts %}
+{% include code-snippet/common/fluent2-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/common/fluent2-cs2/index.html %}
-{% endhighlight %}
-{% highlight css tabtitle="index.css" %}
-{% include code-snippet/common/fluent2-cs2/index.css %}
+{% include code-snippet/common/fluent2-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -129,17 +120,14 @@ Example for `Fluent 2` customization using Css class.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/common/fluent2-cs2/index.js %}
+{% include code-snippet/common/fluent2-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/common/fluent2-cs2/index.html %}
-{% endhighlight %}
-{% highlight css tabtitle="index.css" %}
-{% include code-snippet/common/fluent2-cs2/index.css %}
+{% include code-snippet/common/fluent2-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/common/fluent2-cs2" %}
+{% previewsample "page.domainurl/code-snippet/common/fluent2-cs1" %}
 {% endif %}
 
 #### Customization using JavaScript

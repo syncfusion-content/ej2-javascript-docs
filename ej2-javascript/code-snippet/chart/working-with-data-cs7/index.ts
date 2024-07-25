@@ -19,7 +19,7 @@ let chart: Chart = new Chart({
             xName: 'CustomerID', yName: 'Freight', query: query
         }
     ],
-    title: 'Order Details'
+    title: 'Sprint Task Analysis'
 }, '#element');
 
 

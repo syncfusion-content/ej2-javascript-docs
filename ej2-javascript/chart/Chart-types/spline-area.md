@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Spline Area in ##Platform_Name## Chart Control | Syncfusion
-description: Learn here all about spline area in Syncfusion ##Platform_Name## Chart control, it's elements, and more.
+title: Spline area in ##Platform_Name## Chart control | Syncfusion
+description: Learn here all about Spline area in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Spline area 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Spline area Chart in ##Platform_Name## Control
+# Spline area Chart in ##Platform_Name## control
 
 ## Spline area
 
@@ -79,5 +79,5 @@ The following properties can be used to customize the `spline area` series.
 
 ## See Also
 
-* [Data label](../data-labels)
-* [Tooltip](../tool-tip)
+* [Data label](../data-labels/)
+* [Tooltip](../tool-tip/)

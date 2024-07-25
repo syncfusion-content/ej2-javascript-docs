@@ -8,30 +8,30 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Figma UI Kits for Syncfusion Controls
+# Figma UI Kits for Syncfusion ##Platform_Name## Controls
 
-Syncfusion offers [Figma UI kits](https://www.figma.com/@syncfusion) to facilitate effective collaboration between designers and developers. The Figma UI kits are available in four themes: [Material 3](https://www.figma.com/community/file/1385969023252455137/syncfusion-ui-kit-material-3-theme), [Fluent](https://www.figma.com/community/file/1385969120047188707/syncfusion-ui-kit-fluent-theme), [Tailwind](https://www.figma.com/community/file/1385969065626384098/syncfusion-ui-kit-tailwind-theme), and [Bootstrap 5](https://www.figma.com/community/file/1385968977953858272/syncfusion-ui-kit-bootstrap-5-theme). These kits match the themes used in Syncfusion controls.
+Syncfusion offers [Figma UI kits](https://www.figma.com/@syncfusion) to facilitate effective collaboration between designers and developers. The Figma UI kits are available in four themes: [Material 3](https://www.figma.com/community/file/1385969023252455137), [Fluent](https://www.figma.com/community/file/1385969120047188707), [Tailwind](https://www.figma.com/community/file/1385969065626384098), and [Bootstrap 5](https://www.figma.com/community/file/1385968977953858272). These kits match the themes used in Syncfusion ##Platform_Name## controls.
 
-The kits contain reusable design controls with various possible states and variants, along with detailed figures, measurements, and icons, representing the Syncfusion controls.
+The kits contain reusable design controls with various possible states and variants, along with detailed figures, measurements, and icons, representing the Syncfusion ##Platform_Name## controls.
 
 ![Material 3](./images/material3.png)
 
 ## Advantages of UI kits
 
 The Syncfusion Figma UI kit offers the following key advantages:
-- The UI kit includes detailed information about Syncfusion controls, such as available control lists, their states, and variants. This facilitates a quick understanding of Syncfusion controls.
+- The UI kit includes detailed information about Syncfusion ##Platform_Name## controls, such as available control lists, their states, and variants. This facilitates a quick understanding of Syncfusion ##Platform_Name## controls.
 - Design controls are developed using the [atomic design methodology](https://atomicdesign.bradfrost.com/chapter-2/), making customization straightforward and efficient.
-- Developers can seamlessly match Syncfusion controls with your design requirements, ensuring alignment and accuracy.
+- Developers can seamlessly match Syncfusion ##Platform_Name## controls with your design requirements, ensuring alignment and accuracy.
 - By using standardized controls and themes, the UI kit ensures consistency in your designs, maintaining a uniform look and feel across projects.
 
 ## Downloading the UI kits
 
 Syncfusion Figma UI kits are available in the [Figma community](https://www.figma.com/@syncfusion). You can download the Syncfusion theme-specific Figma UI kits from the following links:
 
-- [Material 3](https://www.figma.com/community/file/1385969023252455137/syncfusion-ui-kit-material-3-theme)
-- [Fluent](https://www.figma.com/community/file/1385969120047188707/syncfusion-ui-kit-fluent-theme)
-- [Tailwind](https://www.figma.com/community/file/1385969065626384098/syncfusion-ui-kit-tailwind-theme)
-- [Bootstrap 5](https://www.figma.com/community/file/1385968977953858272/syncfusion-ui-kit-bootstrap-5-theme)
+- [Material 3](https://www.figma.com/community/file/1385969023252455137)
+- [Fluent](https://www.figma.com/community/file/1385969120047188707)
+- [Tailwind](https://www.figma.com/community/file/1385969065626384098)
+- [Bootstrap 5](https://www.figma.com/community/file/1385968977953858272)
 
 ## Structure of the UI kits
 

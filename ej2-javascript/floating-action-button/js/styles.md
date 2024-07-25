@@ -58,7 +58,7 @@ To modify the Floating Action Button appearance, you need to override the defaul
 
 By using [`cssClass`](../api/floating-action-button/fab/#cssclass), you can customize the Floating Action Button to show text on hover with applied transition effect. For detailed information, refer `styles.css` file below.
 
-The content will behave the same , when the `enableHtmlSantiizer` is enabled. Since we are adding only the valid tags in content, sanitizing the content will not affect it.
+The content will behave the same , when the `enableHtmlSanitizer` is enabled. Since we are adding only the valid tags in content, sanitizing the content will not affect it.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -73,3 +73,21 @@ The content will behave the same , when the `enableHtmlSantiizer` is enabled. Si
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/floating-action-button/styles-cs2" %}
+
+## Outline customization
+
+By using the [`cssClass`](../api/floating-action-button/fab/#cssclass) property, you can customize the outline color of the Floating Action Button. Refer the `styles.css` file below.
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/floating-action-button/styles-cs5/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/floating-action-button/styles-cs5/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/floating-action-button/styles-cs5/styles.css %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/floating-action-button/styles-cs5" %}

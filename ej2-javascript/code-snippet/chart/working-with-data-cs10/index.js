@@ -1,4 +1,4 @@
-class SerialNoAdaptor extends ej.data.ODataAdaptor {
+class SerialNoAdaptor extends ej.data.ODataV4Adaptor {
     processResponse() {
         var i= 0;
         // calling base class processResponse function
@@ -30,6 +30,6 @@ var chart = new ej.charts.Chart({
             xName: 'CustomerID', yName: 'Sno', query: query
         }
     ],
-    title: 'Order Details'
+    title: 'Sprint Task Analysis'
 }, '#element');
 

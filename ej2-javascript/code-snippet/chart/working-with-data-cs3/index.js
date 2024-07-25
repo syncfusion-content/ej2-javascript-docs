@@ -20,6 +20,6 @@ var chart = new ej.charts.Chart({
             xName: 'CustomerID', yName: 'Freight', query: query
         }
     ],
-    title: 'Order Details'
+    title: 'Sprint Task Analysis'
 }, '#element');
 

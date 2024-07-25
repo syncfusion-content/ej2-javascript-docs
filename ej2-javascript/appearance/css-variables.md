@@ -123,7 +123,7 @@ Example for `Fluent 2` customization using Css class.
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/common/fluent2-cs1" %}
+{% previewsample "page.domainurl/code-snippet/common/fluent2-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 

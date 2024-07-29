@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Qrcodegenerator in ##Platform_Name## Barcode control
+# QrCodeGenerator in ##Platform_Name## Barcode control
 
 ## QR Code
 
@@ -133,4 +133,53 @@ In barcode generators You can customize the barcode text by using display text p
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/barcode/QrGenerator-cs4" %}
+{% endif %}
+
+## Enhancing QR Codes with Icons
+
+
+The EJ2 Barcode Generator now lets you add a [`logo`](https://ej2.syncfusion.com/javascript/documentation/api/barcode/qRCodeLogo/) or icon to your QR codes, boosting their visual appeal, clarity, and even security. Adding a recognizable icon can make it easier for users to identify the source and can help prevent tampering .
+
+### Supported Image Sources
+ 
+The [`imageSource`](https://ej2.syncfusion.com/javascript/documentation/api/barcode/qRCodeLogo/#imagesource) property of the `QRCodeLogo` class supports the following image sources:
+ 
+- **Local image path**: Specify the path to the image file relative to your project's root directory (e.g., `images/syncfusion.png`) or as an absolute path (e.g., `/assets/icons/logo.svg`).
+- **Remote image URL**: Provide the web address of the image file (e.g., `https://example.com/image.jpg`).
+- **Base64 encoded image data**: Embed the image data directly in the code using a Base64-encoded string (e.g., `data:image/png;base64,iVBORw0KGgoAAAANSUhEUg...`).
+
+### Logo Dimensions
+ 
+The [`width`](https://ej2.syncfusion.com/javascript/documentation/api/barcode/qRCodeLogo/#width) and [`height`](https://ej2.syncfusion.com/javascript/documentation/api/barcode/qRCodeLogo/#height) properties of the `QRCodeLogo` class define the dimensions of the logo in pixels. If not specified, both default to 30% of the QR code’s size. The maximum allowed size is 30% of the QR code’s dimensions to ensure optimal readability.
+
+**Note:** Always test the readability of your QR code after adding a logo. Depending on the logo size and QR code content, you might need to adjust the [`errorCorrectionLevel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BarcodeGenerator.ErrorCorrectionLevel.html) property of the `QRCodeGenerator` to `"Medium"` or `"High"` for better reliability.
+
+The following image illustrates QR code with logo:
+
+![logo](images/logo.png)
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/barcode/QrGenerator-cs5/index.ts %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/barcode/QrGenerator-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/barcode/QrGenerator-cs5" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/barcode/QrGenerator-cs5/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/barcode/QrGenerator-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/barcode/QrGenerator-cs5" %}
 {% endif %}

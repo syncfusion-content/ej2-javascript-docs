@@ -163,6 +163,7 @@ The following image illustrates QR code with logo:
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/barcode/QrGenerator-cs5/index.ts %}
+{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/barcode/QrGenerator-cs5/index.html %}
 {% endhighlight %}

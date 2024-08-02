@@ -1,6 +1,4 @@
-/**
- * Tooltip sample
- */
+
 var diagram;
 
 var connector = {

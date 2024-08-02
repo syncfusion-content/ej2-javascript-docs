@@ -1,52 +1,39 @@
-
-
-
-import {
-    Diagram, NodeModel, ConnectorModel
-} from '@syncfusion/ej2-diagrams';
-let nodes: NodeModel[] = [{
+import { Diagram, NodeModel } from '@syncfusion/ej2-diagrams';
+let nodes: NodeModel[] = [
+  {
     id: 'Start',
     width: 140,
     height: 50,
     offsetX: 300,
     offsetY: 50,
-    annotations: [{
+    style: { fill: '#6BA5D7', strokeColor: 'white' },
+    annotations: [
+      {
         id: 'label1',
-        content: 'Start'
-    }],
+        content: 'Start',
+      },
+    ],
     shape: {
-        type: 'Flow',
-        shape: 'Terminator'
-    }
-}];
+      type: 'Flow',
+      shape: 'Terminator',
+    },
+  },
+];
 
 let diagram: Diagram = new Diagram({
-    width: '100%',
-    height: '600px',
-    nodes: nodes,
-    scrollSettings:{
-    canAutoScroll: true,
-    //Sets the scroll limit
-    scrollLimit: 'infinity',
-    //Sets the scrollable Area
-    scrollableArea: {
-            x: 0,
-            y: 0,
-            width: 500,
-            height: 500
-        }
-
-    },
-    getNodeDefaults: (node: NodeModel) => {
-        node.height =  100;
-        node.width =  100;
-        node.style.fill =  '#6BA5D7';
-        node.style.strokeColor =  'white';
-        return  node;
-    }
+  width: '100%',
+  height: '600px',
+  nodes: nodes,
 });
 
 diagram.appendTo('#element');
 
+(document.getElementById('updateViewPortWidth') as HTMLInputElement).onclick = () => {
+  diagram.width = 400;
+  diagram.updateViewPort();
+};
 
-
+(document.getElementById('updateViewPortHeight') as HTMLInputElement).onclick = () => {
+  diagram.height = 500;
+  diagram.updateViewPort();
+};

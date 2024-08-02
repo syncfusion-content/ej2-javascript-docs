@@ -19,7 +19,8 @@ There are some events which will trigger while interacting with annotation.
 
 ## KeyDown event
 
-Triggers when we press any key while editing the annotation text. The following example shows how to get [`keyDown`](../api/diagram/iKeyEventArgs/) event.
+
+The [`keyDown`](../api/diagram/iKeyEventArgs/) event is triggered whenever any key is pressed. The following example shows how to capture the keyDown event and modify the fill color of a node on each key press:
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -34,7 +35,7 @@ Triggers when we press any key while editing the annotation text. The following 
 
 ## KeyUp event
 
-Triggers when we press and release any key while editing the annotation text. The following example shows how to get [`keyUp`](../api/diagram/iKeyEventArgs/)event
+The [`keyUp`](../api/diagram/iKeyEventArgs/) event is triggered whenever we press and release any key. The following example shows how to capture the keyUp event and modify the fill color of a node on each key press:
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -49,7 +50,7 @@ Triggers when we press and release any key while editing the annotation text. Th
 
 ## Double click event
 
-Triggers when we double click on the node or connector. while double click on diagram element, the annotation editing mode will be activated. The following code example shows how to get [`doubleClick`](../api/diagram/idoubleclickeventargs/) event
+The [`doubleClick`](../api/diagram/idoubleclickeventargs/) event is triggered when you double-click on a node, connector, or the diagram surface. Double-clicking on a diagram element activates the annotation editing mode. The following code example shows how to capture the [`doubleClick`](../api/diagram/idoubleclickeventargs/) event:
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -64,7 +65,7 @@ Triggers when we double click on the node or connector. while double click on di
 
 ## TextEdit event
 
-Triggers when you finish editing the annotation text and the focus is removed from the annotation text.
+The [`textEdit`](../api/diagram/iTextEditEventArgs/) event triggers when you finish editing the annotation text and the focus is removed from the annotation text.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -77,5 +78,12 @@ Triggers when you finish editing the annotation text and the focus is removed fr
         
 {% previewsample "page.domainurl/code-snippet/diagram/annotations-textEdit" %}
 
+You can prevent adding new text to the annotation by setting the `cancel` property of [`textEdit`](../api/diagram/iTextEditEventArgs/) to true.
 
+``` javascript
+textEdit: function (args) {
+    // Prevents any new content from being added to the annotation
+    args.cancel = true;
+  },
 
+```

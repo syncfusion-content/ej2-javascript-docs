@@ -153,12 +153,42 @@ The following code explains how to enable port tooltip.
 
 There are several events that can be triggered while interacting with ports. These events are listed in the table below.
 
-| Event            | Description                                      |
+| Event| Description|
 |----|----|
-| Click            | Triggers when the port is clicked.              |
-| Element Draw     | Triggers when drawing a connector from the port. |
-| Position Change  | Triggers when the port is dragged.              |
-| Connection Change| Triggers when a connector is connected or disconnected from the port|.                     |
+| [`Click`](../api/diagram/iClickEventArgs/)   | Triggers when the port is clicked. |
+| [`Element Draw`](../api/diagram/iElementDrawEventArgs/)  | Triggers when drawing a connector from the port. |
+| [`Position Change`](../api/diagram/iDraggingEventArgs/)  | Triggers when the port is dragged. |
+| [`Connection Change`](../api/diagram/iConnectionChangeEventArgs/) | Triggers when a connector is connected or disconnected from the port|
+
+The following example shows how to get these events in diagram.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/ports-interact5/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/ports-interact5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/diagram/ports-interact5" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/ports-interact5/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/ports-interact5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/diagram/ports-interact5" %}
+
+{% endif %}
 
 
 

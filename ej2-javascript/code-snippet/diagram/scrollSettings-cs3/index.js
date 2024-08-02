@@ -1,34 +1,69 @@
-var nodes = [{
-    id: 'node1', width: 100, height: 100, offsetX: 100, offsetY: 100, annotations: [{ content: 'Start' }]
-}];
-
-var connectors = [{
-    id: 'connector1', sourcePoint: { x: 300, y: 100 }, targetPoint: { x: 500, y: 200 },
-    style: {
-        strokeColor: '#6BA5D7',
-        strokeWidth: 2
+var diagram = new ej.diagrams.Diagram(
+    {
+      width: '100%',
+      height: '700px',
+      connectors: [
+        {
+          id: 'con1',
+          type: 'Bezier',
+          segments: [{ type: 'Bezier', point: { x: 150, y: 100 } }],
+          sourcePoint: { x: 100, y: 100 },
+          targetPoint: { x: 300, y: 100 },
+          annotations: [
+            {
+              content: 'Adjust control point or end point to autoScroll',
+              alignment: 'After',
+            },
+          ],
+          constraints:
+            ej.diagrams.ConnectorConstraints.Default |
+            ej.diagrams.ConnectorConstraints.DragSegmentThumb,
+        },
+      ],
+      nodes: [
+        {
+          id: 'node1',
+          width: 100,
+          height: 60,
+          offsetX: 200,
+          offsetY: 300,
+          annotations: [
+            { content: 'Drag or resize the node to activate autoscroll' },
+          ],
+        },
+      ],
+      //Enables ruler to see the scroll offset
+      rulerSettings: { showRulers: true },
+      scrollSettings: {
+        scrollLimit: 'Infinity',
+        //Enable autoScroll
+        canAutoScroll: true,
+        //Defines the autoScroll border of all the sides of diargam
+        autoScrollBorder: { left: 100, right: 100, top: 100, bottom: 100 },
+      },
     },
-    targetDecorator: {
-        style: {
-            fill: '#6BA5D7',
-            strokeColor: '#6BA5D7'
-        }
-    },
-}];
-
-var diagram = new ej.diagrams.Diagram({
-        width: '100%',
-    height: '600px',
-    nodes: nodes,
-    connectors: connectors,
-    // set the scroll settings
-    scrollSettings:{canAutoScroll: true, scrollLimit: 'Infinity'},
-    getNodeDefaults: (node) => {
-        node.height =  100;
-        node.width =  100;
-        node.style.fill =  '#6BA5D7';
-        node.style.strokeColor =  'white';
-        return  node;
-    }
-},'#element');
-
+    '#element'
+  );
+  
+  document.getElementById('zoomIn').onclick = () => {
+    // Zoom options to zoom-in
+    let zoomOptions = {
+      type: 'ZoomIn',
+      zoomFactor: 0.2,
+      focusPoint: { x: 0.5, y: 0.5 },
+    };
+    diagram.zoomTo(zoomOptions);
+    diagram.dataBind();
+  };
+  
+  document.getElementById('zoomOut').onclick = () => {
+    // Zoom options to zoom-out
+    let zoomOptions = {
+      type: 'ZoomOut',
+      zoomFactor: 0.2,
+      focusPoint: { x: 0.5, y: 0.5 },
+    };
+    diagram.zoomTo(zoomOptions);
+    diagram.dataBind();
+  };
+  

@@ -1,17 +1,16 @@
-
-
-import {
-    Diagram,BasicShapeModel,NodeModel,DiagramTools
-} from '@syncfusion/ej2-diagrams';
+import { Diagram } from '@syncfusion/ej2-diagrams';
 let diagram: Diagram = new Diagram({
-    width: '100%', height: 700
+  width: '100%',
+  height: 700,
+  nodes: [{ offsetX: 300, offsetY: 300 }],
+  rulerSettings: { showRulers: true },
+  scrollSettings: { scrollLimit: 'Infinity' },
 });
 diagram.appendTo('#element');
 
-//Updates scroll settings
-diagram.scrollSettings.horizontalOffset=200;
-diagram.scrollSettings.verticalOffset=30
-diagram.dataBind();
-
-
-
+(document.getElementById('updateScrollerOffset') as HTMLInputElement).onclick = () => {
+  // Updates scroll settings
+  diagram.scrollSettings.horizontalOffset = 200;
+  diagram.scrollSettings.verticalOffset = 100;
+  diagram.dataBind();
+};

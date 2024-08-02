@@ -1,32 +1,34 @@
-
-
-
-import {
-    Diagram, NodeModel, ConnectorModel
-} from '@syncfusion/ej2-diagrams';
-let nodes: NodeModel[] = [{
+import { Diagram, NodeModel } from '@syncfusion/ej2-diagrams';
+let nodes: NodeModel[] = [
+  {
     id: 'Start',
-    width: 100, height: 100,
-    offsetX: 350, offsetY: 350,
+    width: 140,
+    height: 50,
+    offsetX: 300,
+    offsetY: 50,
+    style: { fill: '#6BA5D7', strokeColor: 'white' },
+    annotations: [
+      {
+        id: 'label1',
+        content: 'Start',
+      },
+    ],
     shape: {
-        type: 'Flow',
-        shape: 'Terminator'
-    }
-}];
+      type: 'Flow',
+      shape: 'Terminator',
+    },
+  },
+];
 
 let diagram: Diagram = new Diagram({
-    width: '100%',
-    height: '600px',
-    nodes: nodes,
-    scrollSettings: {
-        canAutoScroll: true,
-      //Sets the scroll padding
-        padding: { right: 50, bottom: 50 }
-        }
-    },
+  width: '100%',
+  height: '600px',
+  nodes: nodes,
+  rulerSettings: { showRulers: true },
+  scrollSettings: {
+    // sets the scroll padding
+    padding: { left: 100, top: 100 },
+  },
 });
 
 diagram.appendTo('#element');
-
-
-

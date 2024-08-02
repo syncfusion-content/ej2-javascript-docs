@@ -71,7 +71,7 @@ Orthogonal segments are automatically re-routed, in order to avoid overlapping w
 
 ## How to customize Orthogonal Segment Thumb Shape
 
-The orthogonal connector can have any number of segments in between the source and the target point. Segments are rendered with the rhombus shape by default. The [`segmentThumbShape`](../api/diagram#segmentThumbShape-SegmentThumbShapes) property allows you to change the default shape of the segment thumb. The following predefined shapes are provided:
+The orthogonal connector can have any number of segments in between the source and the target point. Segments are rendered with the circle shape by default. The [`segmentThumbShape`](../api/diagram#segmentThumbShape-SegmentThumbShapes) property allows you to change the default shape of the segment thumb. The following predefined shapes are provided:
 
 | Shape name | Shape |
 |-------- | -------- |

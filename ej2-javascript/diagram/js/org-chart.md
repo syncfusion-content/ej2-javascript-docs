@@ -132,3 +132,5 @@ The following code example illustrates how to add assistants to layout.
 
 ![Assistant](images/assistant.png)
 
+N> An Assistant node cannot have any child nodes
+

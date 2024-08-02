@@ -150,9 +150,9 @@ The following code example illustrates how to customize the lane header.
 {% previewsample "page.domainurl/code-snippet/diagram/swimlane-cs8" %}
 {% endif %}
 
-### Add lane at runtime
+### Add/remove lane at runtime
 
- You can add the a lane at runtime by using the client side API method called [`addLanes`](../api/diagram/#addlanes). The following code illustrates how to dynamically add lane to swimlane.
+ You can add the a lanes at runtime by using the [`addLanes`](../api/diagram/#addlanes) method and remove lane at runtime using the [`removeLane`](../api/diagram/#removelane) method. The following code illustrates how to dynamically add and remove lane in swimlane.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -251,6 +251,41 @@ The child node can be inserted into the lane at runtime by using the [`addNodeto
 We can also drag nodes from palette or diagram and drop it inside the lane. 
 
 ![Add child into lane](images/addChildToSwimlane.gif)
+
+### Prevent child movement outside lane
+
+To prevent child nodes from moving outside their designated lanes, you can use specific constraints. By default, nodes are allowed to move freely. To restrict their movement, you need to set the constraints accordingly.
+
+Here is an example of how to apply these constraints:
+
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/swimlane-cs5-prevNodeDrag/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/swimlane-cs5-prevNodeDrag/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/swimlane-cs5-prevNodeDrag" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/swimlane-cs5-prevNodeDrag/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/swimlane-cs5-prevNodeDrag/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/diagram/swimlane-cs5-prevNodeDrag" %}
+{% endif %}
+
 
 ### AddInfo
 

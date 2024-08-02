@@ -1,17 +1,13 @@
 import { Diagram, NodeModel, Snapping } from '@syncfusion/ej2-diagrams';
 let diagram: Diagram;
 Diagram.Inject(Snapping);
-function getNodeDefaults(obj: NodeModel): NodeModel {
-  obj.width = 100;
-  obj.height = 100;
-  return obj;
-}
-
 let nodes: NodeModel[] = [
   {
     id: 'Node1',
     offsetX: 200,
     offsetY: 200,
+    width:100,
+    height:100,
     annotations: [{ content: 'Node interactions restricted within page' }],
   },
 ];
@@ -20,7 +16,6 @@ diagram = new Diagram({
   width: '100%',
   height: '645px',
   nodes: nodes,
-  getNodeDefaults: getNodeDefaults,
   pageSettings: {
     // Boundary set as page
     boundaryConstraints: 'Page',

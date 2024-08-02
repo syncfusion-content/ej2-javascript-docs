@@ -242,6 +242,8 @@ The following code illustrates how to change the `pivot` value.
 
 ## Get connected connector from node
 
+The getEdges method
+
 Node has the InEdges and OutEdges read-only property. In this property, you can find what are all the connectors that are connected to the node, and then you can fetch these connectors by using the [`getObject`](../api/diagram#getObject) method in the diagram.
 
 ```javascript

@@ -1,19 +1,14 @@
 var diagram = new ej.diagrams.Diagram({
-    width: 700, height: 700, created: () => {
-        var connectors = {
-            id: 'connector1',
-            type: 'Straight',
-           segments: [{ type: "Straight" }]
-        }
-        diagram.drawingObject = connectors;
-        diagram.tool = ej.diagrams.DiagramTools.ContinuousDraw;
-        elementDraw : elementDraw;
-        diagram.dataBind();
-
-    }
-});
-diagram.appendTo('#element');
-function elementDraw(args){
-    alert("Event triggered");
-}
-
+    width: 700,
+    height: 700,
+    drawingObject: { shape: { type: 'Basic', shape: 'Rectangle' } },
+    tool: ej.diagrams.DiagramTools.DrawOnce,
+    elementDraw: function elementDraw(args) {
+      if (args.state === 'Completed') {
+        // Example of alerting when a rectangle is drawn
+        alert('Element draw - Rectangle');
+      }
+    },
+  });
+  diagram.appendTo('#element');
+  

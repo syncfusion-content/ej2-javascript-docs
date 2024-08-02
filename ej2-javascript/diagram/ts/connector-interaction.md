@@ -55,7 +55,9 @@ The connector can be selected by clicking it. When the connector is selected, ci
 
 ![End Point drag GIF](images/EndPointDragGif.gif)
 
-The following code example shows how to drag connector end point at runtime.
+You can also update the endPoints of diagram by using [`dragSourceEnd`](../api/diagram/#dragsourceend) and [`dragTargetEnd`](../api/diagram/#dragtargetend) methods of diagram. 
+
+The following code example shows the ways to drag connector end point at runtime.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

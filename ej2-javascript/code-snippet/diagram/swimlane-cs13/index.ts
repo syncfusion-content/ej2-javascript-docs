@@ -1,5 +1,6 @@
-import { Diagram, NodeModel } from '@syncfusion/ej2-diagrams';
+import { Diagram, NodeModel, SwimlaneModel } from '@syncfusion/ej2-diagrams';
 let node: NodeModel = {
+  id: 'swim1',
   shape: {
     type: 'SwimLane',
     orientation: 'Horizontal',
@@ -51,7 +52,8 @@ let diagram: Diagram = new Diagram({
 });
 // render initialized Diagram
 diagram.appendTo('#element');
-document.getElementById('addPhase').onclick = () => {
+(document.getElementById('addPhase') as HTMLInputElement).onclick = () => {
+  let swimlane = diagram.getObject('swim1');
   var phase = [
     {
       id: 'phase3',
@@ -59,5 +61,23 @@ document.getElementById('addPhase').onclick = () => {
       header: { annotation: { content: 'New Phase' } },
     },
   ];
-  diagram.addPhases(diagram.nodes[0], phase);
+  /**
+   * To add phases
+   * parameter 1 - object representing the swimlane to which phases will be added.
+   * parameter 2 - objects representing the phases to be added.
+   */
+  diagram.addPhases(swimlane, phase);
+};
+
+(document.getElementById('removePhase') as HTMLInputElement).onclick = () => {
+  let swimlane = diagram.getObject('swim1');
+  let phase = (swimlane.shape as SwimlaneModel).phases[
+    (swimlane.shape as SwimlaneModel).phases.length - 1
+  ];
+  /**
+   * To remove phase
+   * parameter 1 - representing the swimlane to remove the phase from.
+   * paramter 2 - representing the phase to be removed.
+   */
+  diagram.removePhase(swimlane, phase);
 };

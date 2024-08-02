@@ -19,11 +19,13 @@ Nodes are graphical objects used to visually represent the geometrical informati
 
 ## Create node
 
-A node can be created and added to the diagram, either programmatically or interactively. Nodes are stacked on the diagram area from bottom to top in the order they are added.
+A node can be created and added to the diagram either programmatically or interactively. The [`id`](../api/diagram/nodeModel/#id) property of a node is used to define its unique identifier and can later be used to find the node at runtime for customization. Nodes are stacked on the diagram area from bottom to top in the order they are added.
+
+N> Note: There should not be any white-spaces in the ID string while setting the ID.
 
 ### Add node through nodes collection
 
-To create a node, define the [`node`](../api/diagram/node) object and add that to nodes collection of the diagram model. The following code example illustrates how to add a node to the diagram.
+To create a node, define the [`node`](../api/diagram/node) object and add that to [`nodes`](../api/diagram/nodeModel/) collection of the [`diagram model`](../api/diagram/). The following code example illustrates how to add a node to the diagram.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -36,11 +38,11 @@ To create a node, define the [`node`](../api/diagram/node) object and add that t
         
 {% previewsample "page.domainurl/code-snippet/diagram/nodes-cs1" %}
 
-N> Node id should not begin with numbers(should begin with a letter).Node Id should be unique for all the shapes and connectors.
+N> Node id should not begin with numbers(should begin with a letter). Node Id should be unique for all the shapes and connectors.
 
 ### Add/Remove node at runtime
 
-Nodes can be added at runtime by using public method, [`add`](../api/diagram/#add) and can be removed at runtime by using public method, [`remove`](../api/diagram/#remove). On adding node at runtime, the nodes collection is changed and the [`collectionChange`](../api/diagram/iCollectionChangeEventArgs/) event will trigger.
+Nodes can be added at runtime by using public method, [`add`](../api/diagram/#add) and can be removed at runtime by using public method, [`remove`](../api/diagram/#remove). On adding/removing node at runtime, the nodes collection is changed and the [`collectionChange`](../api/diagram/iCollectionChangeEventArgs/) event will trigger.
 
 
 The following code illustrates how to add a node and remove a selected node.
@@ -56,9 +58,9 @@ The following code illustrates how to add a node and remove a selected node.
         
 {% previewsample "page.domainurl/code-snippet/diagram/nodes-cs2" %}
 
-## Add collection of nodes at runtime
+### Add collection of nodes at runtime
 
-The collection of nodes can be dynamically added using [`addElements`](../api/diagram/#addelements) method.Each time an element is added to the diagram canvas, the 'collectionChange' event will be triggered.
+The collection of nodes can be dynamically added using [`addElements`](../api/diagram/#addelements) method. Each time an element is added to the diagram canvas, the [`collectionChange`](../api/diagram/iCollectionChangeEventArgs/) event will be triggered.
 
 The following code illustrates how to add a nodes collection at runtime.
 
@@ -91,7 +93,7 @@ Nodes can be predefined and added to the palette, and can be dropped into the di
 
 ### Create node through data source
 
-Nodes can be generated automatically with the information provided through data source. The default properties for these nodes are fetched from default settings. For more information about data source, refer to [`DataBinding`](./data-binding.md).
+Nodes can be generated automatically with the information provided through dataSource property. The default properties for these nodes are fetched from default settings ([`getNodeDefaults`](../api/diagram/#getnodedefaults)). For more information about data source, refer to  [`DataBinding`](./data-binding.md).
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -140,7 +142,10 @@ N> Once the property is updated, you should call the [`dataBind`](../api/diagram
 
 ## Clone node at runtime
 
-Cloning a node creates a new node instance with identical properties and attributes.
+Cloning a node creates a new node instance with identical properties and attributes. You can clone a node using the [`copy`](../api/diagram/#copy) and [`paste`](../api/diagram/#paste) public methods of the diagram model.
+
+ 
+The following code example illustrates how to clone node at runtime
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -155,7 +160,9 @@ Cloning a node creates a new node instance with identical properties and attribu
 
 ## Add nodes from tree view
 
-By customizing the [`dragEnter`](../api/diagram/iDragEnterEventArgs/) functionality, we can allow elements from other components, such as the tree view, to be converted into nodes based on the data of the dragged element.
+By customizing the [`dragEnter`](../api/diagram/iDragEnterEventArgs/) functionality, you can allow elements from other components, such as the tree view, to be converted into nodes based on the data of the dragged element.
+
+The following code example demonstrates how to convert a tree view element into a node while dragging it onto the diagram canvas 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

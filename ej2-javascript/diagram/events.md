@@ -1,0 +1,94 @@
+---
+layout: post
+title: Events in ##Platform_Name## Diagram control | Syncfusion
+description: Learn here all about Group in Syncfusion ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more.
+platform: ej2-javascript
+control: Events 
+publishingplatform: ##Platform_Name##
+documentation: ug
+domainurl: ##DomainURL##
+---
+
+# Events in ##Platform_Name## Diagram control
+
+Events in diagrams are triggered during interactions with diagram elements, allowing for extensive customization and enhancing the overall user experience. These events can be used to dynamically update the diagram, apply specific styles, validate user actions, and more. By leveraging these events, you can create interactive and responsive diagramming applications tailored to specific needs.
+
+## Load event
+
+The [`load`](../api/diagram/iLoadEventArgs/) event triggers before the diagram load.
+
+## Data loaded event
+
+The [`dataLoaded`](../api/diagram/iDataLoadedEventArgs/) event is triggered when the data source is loaded in diagram.
+
+## Created event
+
+The [`created`](../api/diagram/#created) event is triggered when the diagram component is rendered. You can perform any action in the created event such as selecting any object in the diagram or customizing the nodes/connector.
+
+The following example shows the order of these event triggers and how to handle these events in a diagram.
+
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/events-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/events-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/events-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/events-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/events-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/diagram/events-cs1" %}
+{% endif %}
+
+## Mouse wheel event
+
+The [`mouseWheel`](../api/diagram/iMouseWheelEventArgs/) event triggers when the mouse is scrolled over the diagram area. You can use this event to prevent zooming and scrolling with the mouse wheel. The following example demonstrates how to handle this event and customize it to prevent zooming and scrolling using the mouse wheel.
+
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/events-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/events-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/events-cs2" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/events-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/events-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/diagram/events-cs2" %}
+{% endif %}
+
+
+There are several other events that will be triggered while interacting with diagram elements. To learn more about these events, refer to the sections on [`node-events`](./nodes-events.md) , [`connector-events`](./connector-events.md) , [`port-events`](./ports-interaction.md/#events) , [`annotation-events`](./label-events.md) , [`scroll-events`](./scroll-settings.md/#scroll-change-event) , [`history-events`](./undo-redo.md/#history-change-event) , [`layout-events`](./layout-event.md), [`user-handle-events`](./user-handle.md/#user-handle-events) , [`fixed-user-handle-events`](./user-handle.md/#fixed-user-handle-events) , [`Symbol-palette-events`](./palette-events.md).
+
+
+

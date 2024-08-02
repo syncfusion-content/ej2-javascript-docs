@@ -11,19 +11,15 @@ domainurl: ##DomainURL##
 
 # Page settings in ##Platform_Name## Diagram control
 
-Page settings enable to customize the appearance, width, and height of the diagram page.
+Page settings allow customization of the appearance, size, and orientation of the diagram page.
 
 ## Page size and appearance
 
-* The size and appearance of the diagram pages can be customized with the page settings property.
+The [`width`](../api/diagram/pageSettingsModel/#width) and [`height`](../api/diagram/pageSettingsModel/#height) properties in page settings determine the size of the page. Additionally, the [`background`](../api/diagram/backgroundModel/) property allows customization of the page's appearance. The [`color`](../api/diagram/backgroundModel/#color) property of background is used to define the color of the page. The [`margin`](../api/diagram/marginModel/) property defines the page margins.
 
-* The [`width`](../api/diagram/pageSettings/#width-number) and [`height`](../api/diagram/pageSettings/#height-number) properties of page settings define the size of the page and based on the size, the [`orientation`](../api/diagram/pageSettings/#orientation-PageOrientation) will be set for the page. In addition to that, the appearance of the page can be customized with [`source`](../api/diagram/background/#source-string) and set of appearance specific properties.
+To explore those properties, refer to [`Page Settings`](../api/diagram/pageSettingsModel/).
 
-* The [`color`](../api/diagram/background/#color-string) property is used to customize the background color and border color of the page.
-
-* The [`margin`](../api/diagram/pageSettings/#margin-MarginModel) property is used to define the page margin.
-
-* To explore those properties, refer to [`Page Settings`](../api/diagram/pageSettings/).
+The following example shows the customization of page settings.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -54,9 +50,10 @@ Page settings enable to customize the appearance, width, and height of the diagr
 
 ## Set background image
 
-Stretch and align the background image anywhere over the diagram area. The [`source`](../api/diagram/background/#source-string) property of [`background`](../api/diagram/pageSettings/#background-BackgroundModel) allows you to set the path of the image. The [`scale`](../api/diagram/background/#scale-string) and the [`align`](../api/diagram/background/#align-ImageAlignment) properties help to stretch/align the background images.
+A background image can be attached to the page by using the [`source`](../api/diagram/backgroundModel/#source) property of [`background`](../api/diagram/backgroundModel/). The [`scale`](../api/diagram/backgroundModel/#scale) property adjusts how the background image stretches, while the [`align`](../api/diagram/backgroundModel/#align) property aligns the image within the diagram page.
 
-The following code illustrates how to stretch and align the background image.
+
+The following code illustrates how to set background image to the diagram page.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -85,13 +82,49 @@ The following code illustrates how to stretch and align the background image.
 {% previewsample "page.domainurl/code-snippet/diagram/pagesettings-cs2" %}
 {% endif %}
 
+## Page orientation
+
+There are two types of page orientations:
+
+- Landscape
+- Portrait
+
+Depending on the orientation selected, the width and height properties are adjusted accordingly. By default, the orientation is set to 'Landscape'. In the following example, the height and width properties of pageSettings are swapped when setting the orientation to 'Portrait'.
+
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/pagesettings-cs5/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/pagesettings-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/pagesettings-cs5" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/pagesettings-cs5/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/pagesettings-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/diagram/pagesettings-cs5" %}
+{% endif %}
+
+
 ## Multiple page and page breaks
 
-When multiple page is enabled, the size of the page dynamically increases or decreases in multiples of page width and height and completely fits diagram within the page boundaries. Page breaks is used as a visual guide to see how pages are split into multiple pages.
+When multiple pages are enabled, the page size dynamically adjusts in multiples of the specified width and height, ensuring the entire diagram fits within the page boundaries. Page breaks serve as visual guides indicating how pages are split.
 
-The [`multiplePage`](../api/diagram/pageSettings/#multiplepage-boolean) and [`showPageBreak`](../api/diagram/pageSettings/#showpagebreaks-boolean) properties of page settings allow you to enable/disable multiple pages and page breaks respectively.
-
-The following code illustrates how to enable multiple page and page break lines.
+The [`multiplePage`](../api/diagram/pageSettingsModel/#multiplepage) and [`showPageBreak`](../api/diagram/pageSettingsModel/#showpagebreaks) properties in page settings control the ability to enable multiple pages and display page break lines, respectively.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -120,11 +153,19 @@ The following code illustrates how to enable multiple page and page break lines.
 {% previewsample "page.domainurl/code-snippet/diagram/pagesettings-cs3" %}
 {% endif %}
 
+The color of the page break lines can be customized by overriding the styles of the .e-diagram-page-break class. For more details refer to [`CSS customization`](./style.md/#customizing-the-page-breaks)
+
 ## Boundary constraints
 
-The diagram provides support to restrict/customize the interactive region, out of which the elements cannot be dragged, resized, or rotated. The [`boundaryConstraints`](../api/diagram/pageSettings/#boundaryconstraints-BoundaryConstraints) property of page settings allows you to customize the interactive region. To explore the boundary constraints, refer to [`Boundary Constraints`](../api/diagram/boundaryConstraints/).
+The diagram supports restricting or customizing the interactive region where elements cannot be dragged, resized, or rotated. You can achieve this using the [`boundaryConstraints`](../api/diagram/boundaryConstraints/) property in page settings. 
 
-The following code example illustrates how to define boundary constraints with respect to the page.
+There are three types of boundary constraints. They are:
+- Infinity
+- Diagram
+- Page
+To explore these constraints further, refer to [`Boundary Constraints`](./constraints.md/#boundary-constraints).
+
+Below is an example illustrating how to define boundary constraints within the diagram:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -151,4 +192,37 @@ The following code example illustrates how to define boundary constraints with r
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/diagram/pagesettings-cs4" %}
+{% endif %}
+
+## Fit options
+
+The [`fitOptions`](api/diagram/fitOptionsModel/) in page settings control how diagram content is fitted within the diagram page. The [`canFit`](../api/diagram/fitOptionsModel/#canfit) property within fitOptions centers the content within the viewport during diagram rendering. Additionally, the [`region`](../api/diagram/diagramRegions/) property specifies whether to fit the page or the content to the center of the viewport. Choosing CustomBounds for the [`region`](../api/diagram/diagramRegions/) allows fitting custom bounds within the diagram by defining them in the [`customBounds`](../api/diagram/fitOptionsModel/#custombounds) property of fitOptions. The [`canZoomIn`](../api/diagram/fitOptionsModel/#canzoomin) property enables zooming in to fit smaller content within the viewport. Additionally, the [`margin`](../api/diagram/marginModel/) property defines the space around the fitted content within the viewport, while the [`mode`](../api/diagram/fitModes/) property sets the fitting mode, typically defaulting to 'Page' but also offering options like 'Width' and 'Height' for specific dimension constraints.
+
+The following example demonstrates how fitOptions are utilized in diagram page settings.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/pagesettings-cs6/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/pagesettings-cs6/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/pagesettings-cs6" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/pagesettings-cs6/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/pagesettings-cs6/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/diagram/pagesettings-cs6" %}
 {% endif %}

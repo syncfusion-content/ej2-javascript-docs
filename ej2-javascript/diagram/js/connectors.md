@@ -15,7 +15,7 @@ Connectors are objects used to create link between two points, nodes or ports to
 
 ## Create connector
 
-Connector can be created by defining the source and target point of the connector. The path to be drawn can be defined with a collection of segments. To explore the properties of a [`connector`](../api/diagram/connector), refer to [`Connector Properties`](../api/diagram/connector).
+Connector can be created by defining the source and target point of the connector. The path to be drawn can be defined with a collection of segments. To explore the properties of a [`connector`](../api/diagram/connector), refer to [`Connector Properties`](../api/diagram/connector). The [`id`](../api/diagram/connectorModel/#id) property of a connector is used to define its unique identifier and can later be used to find the connector at runtime for customization. 
 
 ``` javascript
 var connector = { id: "connector1",
@@ -25,6 +25,8 @@ var connector = { id: "connector1",
                   }
 
 ```
+N> Note: There should not be any white-spaces in the ID string while setting the ID.
+
 ## Add connectors through connectors collection
 
 The [`sourcePoint`](../api/diagram/connector#sourcepoint-PointModel) and [`targetPoint`](../api/diagram/connector#targetpoint-PointModel) properties of connector allow you to define the end points of a connector.
@@ -146,6 +148,23 @@ The following code example illustrates how to clone a connector
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/diagram/connectors-clone" %}
+
+## Get Connector defaults
+
+Get Connector defaults helps to define default properties of the connector. It is triggered when the diagram is initialized. In this event, you can customize the connector properties.
+
+The following code example explains how to customize the connector using [`getConnectorDefaults`](..api/diagram/#getconnectordefaults).
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/connectors-getConDef/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/connectors-getConDef/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/connectors-getConDef" %}
 
 ## Connections
 

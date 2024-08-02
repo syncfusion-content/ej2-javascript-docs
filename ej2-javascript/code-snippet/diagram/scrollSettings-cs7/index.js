@@ -1,43 +1,40 @@
-var nodes = [{
-    id: 'Start',
-    width: 140,
-    height: 50,
-    offsetX: 300,
-    offsetY: 50,
-    annotations: [{
-        id: 'label1',
-        content: 'Start'
-    }],
-    shape: {
+var nodes = [
+    {
+      id: 'Start',
+      width: 140,
+      height: 50,
+      offsetX: 300,
+      offsetY: 50,
+      style: { fill: '#6BA5D7', strokeColor: 'white' },
+      annotations: [
+        {
+          id: 'label1',
+          content: 'Start',
+        },
+      ],
+      shape: {
         type: 'Flow',
-        shape: 'Terminator'
-    }
-}];
-
-var diagram = new ej.diagrams.Diagram({
-    width: '100%',
-    height: '600px',
-    nodes: nodes,
-    scrollSettings:{
-        canAutoScroll: true,
-    //Sets the scroll limit
-    scrollLimit: 'infinity',
-    //Sets the scrollable Area
-    scrollableArea: {
-            x: 0,
-            y: 0,
-            width: 500,
-            height: 500
-        }
-
+        shape: 'Terminator',
+      },
     },
-    getNodeDefaults: (node) => {
-        node.height =  100;
-        node.width =  100;
-        node.style.fill =  '#6BA5D7';
-        node.style.strokeColor =  'white';
-        return  node;
-    }
-},'#element');
-
-
+  ];
+  //ScrollableArea from 0 to 1500 in horizontal axis and 0 to 1500 in vertical axis
+  var area = new ej.diagrams.Rect(0, 0, 1500, 1500);
+  var diagram = new ej.diagrams.Diagram(
+    {
+      width: '100%',
+      height: '600px',
+      nodes: nodes,
+    },
+    '#element'
+  );
+  
+  document.getElementById('updateViewPortWidth').onclick = () => {
+    diagram.width = 400;
+    diagram.updateViewPort();
+  };
+  
+  document.getElementById('updateViewPortHeight').onclick = () => {
+    diagram.height = 500;
+    diagram.updateViewPort();
+  };

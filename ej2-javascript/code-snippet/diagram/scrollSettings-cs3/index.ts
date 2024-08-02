@@ -1,47 +1,50 @@
-
-
 import {
-    Diagram, NodeModel, ConnectorModel
-} from '@syncfusion/ej2-diagrams';
-let nodes: NodeModel[] = [{
-    id: 'Start',
-    width: 100,
-    height: 100,
-    offsetX: 100,
-    offsetY: 100,
-    annotations: [{
-        content: 'Start'
-    }],
-}];
-let connectors: ConnectorModel[] = [{
-    id: 'connector1', sourcePoint: { x: 300, y: 100 }, targetPoint: { x: 450, y: 200 },
-    style: {
-        strokeColor: '#6BA5D7',
-        strokeWidth: 2
-    },
-    targetDecorator: {
-        style: {
-            fill: '#6BA5D7',
-            strokeColor: '#6BA5D7'
-        }
-    }
-}];
-let diagram: Diagram = new Diagram({
+    Diagram,
+    ConnectorEditing,
+    ConnectorConstraints,
+  } from '@syncfusion/ej2-diagrams';
+  Diagram.Inject(ConnectorEditing);
+  let diagram: Diagram = new Diagram({
     width: '100%',
-    height: '600px',
-    nodes: nodes,
-    connectors: connectors,
-    // set the autoScroll
-    scrollSettings:{canAutoScroll: true, scrollLimit: 'Infinity'},
-    getNodeDefaults: (node: NodeModel) => {
-        node.height =  100;
-        node.width =  100;
-        node.style.fill =  '#6BA5D7';
-        node.style.strokeColor =  'white';
-        return  node;
-    }
-});
-diagram.appendTo('#element');
-
-
-
+    height: 700,
+    connectors: [
+      {
+        id: 'con1',
+        type: 'Bezier',
+        segments: [{ type: 'Bezier', point: { x: 150, y: 100 } }],
+        sourcePoint: { x: 100, y: 100 },
+        targetPoint: { x: 300, y: 100 },
+        annotations: [
+          {
+            content: 'Adjust control point or end point to autoScroll',
+            alignment: 'After',
+          },
+        ],
+        constraints:
+          ConnectorConstraints.Default | ConnectorConstraints.DragSegmentThumb,
+      },
+    ],
+    nodes: [
+      {
+        id: 'node1',
+        width: 100,
+        height: 60,
+        offsetX: 200,
+        offsetY: 300,
+        annotations: [
+          { content: 'Drag or resize the node to activate autoscroll' },
+        ],
+      },
+    ],
+    //Enables ruler to see the scroll offset
+    rulerSettings: { showRulers: true },
+    scrollSettings: {
+      scrollLimit: 'Infinity',
+      //Enable autoScroll
+      canAutoScroll: true,
+      //Defines the autoScroll border of all the sides of diargam
+      autoScrollBorder: { left: 100, right: 100, top: 100, bottom: 100 },
+    },
+  });
+  diagram.appendTo('#element');
+  

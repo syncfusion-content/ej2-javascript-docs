@@ -11,67 +11,152 @@ domainurl: ##DomainURL##
 
 # Interaction in ##Platform_Name## Diagram control
 
+## Selector
+
+The selector visually represents selected elements, acting as a container to modify their size, position, and rotation angle interactively or programmatically. It supports selecting both single and multiple elements simultaneously.
+
 ## Selection
-
-Selector provides a visual representation of selected elements. It behaves like a container and allows to update the size, position, and rotation angle of the selected elements through interaction and by using program. Single or multiple elements can be selected at a time.
-
-## Single selection
 
 An element can be selected by clicking that element. During single click, all previously selected items are cleared. The following image shows how the selected elements are visually represented.
 
 ![Single Selection](images/single-select.gif)
 
-* While selecting the diagram elements, the following events can be used to do your customization.
-* When selecting/unselecting the diagram elements, the [`selectionChange`](../api/diagram#selectionChange--emittypeiselectionchangeeventargs) event gets triggered.
+When selecting/unselecting the diagram elements, the [`selectionChange`](../api/diagram/iSelectionChangeEventArgs/) event and [`click`](../api/diagram/iclickeventargs/) gets triggered. 
+These events enable you to customize the selected elements as needed.
 
-## Selecting a group
+### Selecting a group
 
 When a child element of any group is clicked, its contained group is selected instead of the child element. With consecutive clicks on the selected element, selection is changed from top to bottom in the hierarchy of parent group to its children.
 
-## Multiple selection
+### Multiple selection
 
 Multiple elements can be selected with the following ways:
 
-* Ctrl+Click
+#### Ctrl+Click
 
-During single click, any existing item in the selection list be cleared, and only the item clicked recently is there in the selection list. To avoid cleaning the old selected item, Ctrl key must be on hold when clicking.
+During a single click, any existing item in the selection list will be cleared, leaving only the most recently clicked item in the selection list. To avoid clearing the previously selected items, hold down the Ctrl key while clicking.
 
-* Selection rectangle/rubber band selection
+#### Rubber band selection
 
-Clicking and dragging the diagram area allows to create a rectangular region. The elements that are covered under the rectangular region are selected at the end.
+Clicking and dragging in the diagram area allows you to create a rectangular region. The elements covered within this rectangular region will be selected when you release the mouse button.
+
+In rubber band selection, you can set the selection of items by region using the following modes:
+
+- CompleteIntersect: Selects items that are fully covered within the rectangular selection region.
+- PartialIntersect: Selects items that are partially covered within the rectangular selection region.
+
+This can be configured with the [`rubberBandSelectionMode`](../api/diagram/rubberBandSelectionMode/).
 
 ![Multiple Selection](images/multiselect_Highlight.gif)
 
-## Select/Unselect elements using program
+### Select/Unselect elements using API
 
-The client-side methods [`select`](../api/diagram#select) and [`clearSelection`](../api/diagram#clearselection) help to select or clear the selection of the elements at runtime. The following code example illustrates how to select or clear the selection of an item using program.
 
-Get the current selected items from the [`nodes`](../api/diagram/selectorModel#nodes-nodemodel[]) and [`connectors`](../api/diagram/selectorModel#connectors-connectormodel[]) collection of the [`selectedItems`](../api/diagram#selectAll#selecteditems-selectormodel) property of the diagram model.
+The [`select`](../api/diagram#select) and [`clearSelection`](../api/diagram#clearselection) methods are used to dynamically select or clear the selection of elements at runtime. The following code example demonstrates how these methods can be utilized to select or clear the selection of elements.
 
-## Select entire elements in diagram programmatically
+```javascript
+var diagram = ej.diagrams.Diagram({
+    width: '100%', height: 900,
+    nodes:[{
+    id: 'node1',
+    width: 90,
+    height: 60,
+    offsetX: 100,
+    offsetY: 100,
+    style: {
+        fill:   '#6BA5D7',
+        strokeColor: 'white',
+        strokeWidth: 1
+    },
+    }]
+});
+diagram.appendTo('#diagram');
+//Select a specified collection of nodes and connectors in the diagram
+diagram.select([diagram.nodes[0]]);
+//Removes all elements from the selection list, clearing the current selection.
+diargam.clearSelection();
+```
+### Get selected items
 
-The client-side method [`selectAll`](../api/diagram#selectAll) used to select all the elements such as nodes/connectors in the diagram. Refer to the following link which shows how to use [`selectAll`](../api/diagram#selectAll) method on the diagram.
+You can get the currently selected [`nodes`](../api/diagram/selectorModel/#connectors) and [`connectors`](../api/diagram/selectorModel/#nodes) using [`selectedItems`](../api/diagram/selectorModel/) property of the diargam.
+
+```javascript
+
+var selectedNodes = diagram.selectedItems.nodes;
+var selectedConnectors = diagram.selectedItems.connectors;
+
+```
+
+You can also get the currently selected objects, both nodes and connectors, in a single array called [`selectedObjects`](../api/diagram/selectorModel/#selectedobjects) within the [`selectedItems`](../api/diagram/selectorModel/) property of the diagram.
+
+```javascript
+
+var selectedObjects = diagram.selectedItems.selectedObjects;
+
+```
+
+### Toggle selection
+
+The [`canToggleSelection`](../api/diagram/selectorModel#canToggleSelection) property determines whether the selection state of a diagram element should toggle with a mouse click at runtime. By default, this property is set to false. In the following example, the node can be selected with the first click and unselected with the second click.
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/interaction-toggle/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/interaction-toggle/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/interaction-toggle" %}
+
+### Select entire elements in diagram programmatically
+
+The [`selectAll`](../api/diagram#selectAll) method of diagram is used to select all the elements such as nodes/connectors in the diagram. Refer to the following code snippet.
+
+```javascript
+//Selects all the nodes and connectors in diagram
+diagram.selectAll();
+
+```
+
+You can also use the CTRL+A keys to select all nodes and connectors in the diagram.
 
 ## Drag
 
-* An object can be dragged by clicking and dragging it. When multiple elements are selected, dragging any one of the selected elements move every selected element.
-* When you drag the elements in the diagram, the [`positionChange`](../api/diagram#positionChange--emittypeidraggingeventargs) event gets triggered and to do customization in this event.
+You can drag an object by clicking and dragging it. When multiple elements are selected, dragging any one of them moves all selected elements together.
+As you drag elements within the diagram, the [`positionChange`](../api/diagram/idraggingeventargs/) event is triggered, providing opportunities to customize the dragged elements.
 
 ![Drag](images/drag.gif)
 
 ## Resize
 
-* Selector is surrounded by eight thumbs. When dragging these thumbs, selected items can be resized.
-* When one corner of the selector is dragged, opposite corner is in a static position.
-* When a node is resized, the [`sizeChange`](../api/diagram#sizeChange--emittypeisizechangeeventargs) event gets triggered.
+The selector in the diagram is designed with eight resizing handles, commonly referred to as thumbs. These handles allow users to adjust the size of selected items by clicking and dragging them. When resizing, dragging any handle modifies the dimensions of the selected elements accordingly. Notably, when dragging one corner handle, the opposite corner remains fixed to specific alignment of the selected item.
+
+During the resizing process, the diagram triggers the [`sizeChange`](../api/diagram/isizechangeeventargs/) event, allowing customization based on the size of the element.
 
 ![Resize](images/resize.gif)
 
-N>  While dragging and resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to `Snapping`.
+N>  While dragging and resizing, the objects are snapped towards the nearest objects to make better alignments.
 
-## Customize the resize-thumb
+### Aspect ratio
 
-You can change the size of the node resize thumb and the connector end point handle by using the `handleSize` property. The appearance such as fill, stroke, and stroke width of the node resize thumb and connector end point handle can be customized by overriding the e-diagram-resize-handle and e-diagram-endpoint-handle classes respectively.
+Maintaining aspect ratio in diagram means that when you resize a node, by dragging its corner, both its width and height adjust proportionally. This ensures that the node retains its original shape and proportions. Aspect ratio constraints can be applied by configuring the [`NodeConstraints`](../api/diagram/nodeconstraints/) property.
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/interaction-aspect/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/interaction-aspect/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/interaction-aspect" %}
+
+### Customing resize-thumb size
+
+You can change the size of the node resize thumb and the connector end point handle by using the [`handleSize`](../api/diagram/selectorModel/#handlesize) property. The following example shows the resize handle size customization.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -86,87 +171,111 @@ You can change the size of the node resize thumb and the connector end point han
 
 ![handleSize](images/handleSize.gif)
 
+The appearance such as fill, stroke, and stroke width of the node resize thumb and connector end point handle can be customized by overriding the e-diagram-resize-handle and e-diagram-endpoint-handle classes respectively.
+
 ## Rotate
 
-* A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction lead to rotate the node.
-* The node is rotated with reference to the static pivot point.
-* Pivot thumb (thumb at the middle of the node) appears while rotating the node to represent the static point.
+A rotation handler is positioned above the selector. Clicking and dragging this handler in a circular motion rotates the node. The node rotates around a fixed pivot point. A pivot thumb, located at the center of the node, appears during rotation to indicate the fixed point.
+Rotating a node triggers the [`rotateChange`](../api/diagram/iRotationEventArgs/) event.
 
 ![rotate](images/rotate.gif)
 
-## Connection editing
+### Customize rotate handle position
 
-* Each segment of a selected connector is editable with some specific handles/thumbs.
+The position of the rotate handle can be adjusted by modifying the pivot point of the node using the [`pivot`](../api/diagram/nodeModel/#pivot) property. By default, the pivot point is set to (0.5, 0.5). The following example shows how to render the rotate handle at the left top corner of the node.
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/interaction-pivot/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/interaction-pivot/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/interaction-pivot" %}
+
+## Connector editing
+
+Each segment of a selected connector is editable with some specific handles/thumbs.
 
 N> For connector editing, you have to inject the [`ConnectorEditing`](../api/diagram/connectorEditing) module.
 
-## End point handles
+### Drag connector end points
 
-Source and target points of the selected connectors are represented with two handles. Clicking and dragging those handles help you to adjust the source and target points.
+Source and target points of selected connectors are represented by two handles. Clicking and dragging these handles allows you to adjust the source and target points.
 
 ![Drag End Point Handles](images/connector-end-point.gif)
 
-* If you drag the connector end points, then the following events can be used to do your customization.
-* When the connector source point is changed, the [`sourcePointChange`](../api/diagram#sourcePointChange--emittypeiendchangeeventargs) event gets triggered.
-* When the connector target point is changed, the [`targetPointChange`](../api/diagram#targetPointChange--emittypeiendchangeeventargs) event gets triggered.
-* When you connect connector with ports/node or disconnect from it, the [`connectionChange`](../api/diagram#connectionChange--emittypeiconnectionchangeeventargs) event gets triggered.
+Dragging the connector end points triggers the following events for customization:
 
-## Straight segment editing
+When the connector's source point is changed, the [`sourcePointChange`](../api/diagram/iEndChangeEventArgs/) event is triggered.
+When the connector's target point is changed, the [`targetPointChange`](../api/diagram/iEndChangeEventArgs/) event is triggered.
+Connecting a connector to port/node or disconnecting from them triggers the [`connectionChange`](../api/diagram/iConnectionChangeEventArgs/) event.
 
-* End point of each straight segment is represented by a thumb that enables to edit the segment.
-* Any number of new segments can be inserted into a straight line by clicking, when Shift and Ctrl keys are pressed (Ctrl+Shift+Click).
+### Straight segment editing
+
+The end point of each straight segment is represented by a thumb that allows you to edit the segment. You can insert any number of new segments into a straight line by clicking while holding the Shift and Ctrl keys (Ctrl+Shift+Click).
 
 ![Straight Segment Editing Addition](images/straight-segment-add.gif)
 
-* Straight segments can be removed by clicking the segment end point, when Ctrl and Shift keys are pressed (Ctrl+Shift+Click).
+Straight segments can be removed by clicking the segment end point while holding the Ctrl and Shift keys (Ctrl+Shift+Click).
 
 ![Straight Segment Editing Remove](images/straight-segment-remove.gif)
 
-## Orthogonal thumbs
+### Orthogonal segment editing
 
-* Orthogonal thumbs allow you to adjust the length of adjacent segments by clicking and dragging it.
-* When necessary, some segments are added or removed automatically, when dragging the segment. This is to maintain proper routing of orthogonality between segments.
+Orthogonal thumbs allow you to adjust the length of adjacent segments by clicking and dragging them. When necessary, segments are automatically added or removed during dragging to maintain proper orthogonal routing.
+
+When editing a segment, the [`segmentChange`](../api/diagram/iSegmentChangeEventArgs/) event is triggered. When new segments are added to the collection of connector segments, the [`segmentCollectionChange`](../api/diagram/iSegmentCollectionChangeEventArgs/) event is triggered.
 
 ![orthogonal Segment Edit](images/orthogonal-segment-edit.gif)
 
-## Bezier thumbs
 
-* Bezier segments are annotated with two thumbs to represent the control points. Control points of the curve can be configured by clicking and dragging the control thumbs.
+### Bezier segment editing
 
-![Bezier Segement Thumb](images/bezier-segement-thumb.gif)
+Bezier segment thumbs allow you to adjust the segments by clicking and dragging them.
 
-## Drag and drop nodes over other elements
+![Bezier Segment Thumbs](images/bezierSegmentThumbControl.gif)
 
-Diagram provides support to drop a node/connector over another node/connector. The [`drop`](../api/diagram#drop--emittypeidropeventargs) event is raised to notify that an element is dropped over another one and it is disabled, by default. It can enabled with the constraints property.
+#### Bezier Control Points
+
+Bezier segments are annotated with two thumbs representing the control points. These control points can be adjusted by clicking and dragging the control thumbs. Dragging the control point changes the angle and distance of the points from the segment point, modifying the curve.
+
+![Bezier Control Points](images/bezier-segement-thumb.gif)
 
 ## User handles
 
-* User handles are used to add some frequently used commands around the selector. To create user handles, define and add them to the [`userHandles`](../api/diagram/selectorModel#userHandles-userhandlemodel[]) collection of the [`selectedItems`](../api/diagram#selectAll#selecteditems-selectormodel) property.
-* The name property of user handle is used to define the name of the user handle and its further used to find the user handle at runtime and do any customization.
+User handles are used to add frequently used commands around the selector. To create user handles, define and add them to the [`userHandles`](../api/diagram/userHandleModel/) collection of the [`selectedItems`](../api/diagram/selectorModel/) property. The [`name`](../api/diagram/userHandleModel/#name) property of userHandles is used to define the name of the user handle, which can then be used at runtime for identification and customization.
 
-## Alignment
+The following events are triggered when interacting with a user handle:
 
-User handles can be aligned relative to the node boundaries. It has [`margin`](../api/diagram/userHandle#margin-marginmodel), [`offset`](../api/diagram/userHandle#offset-number), [`side`](../api/diagram/userHandle#side-side), [`horizontalAlignment`](../api/diagram/userHandle#horizontalalignment-horizontalalignment), and [`verticalAlignment`](../api/diagram/userHandle#verticalalignment-verticalalignment) settings. It is quite tricky when all four alignments are used together but gives more control over alignment.
+* [`click`](../api/diagram/iclickeventargs/) - Triggered when the user handle is clicked.
+* [`onUserHandleMouseEnter`](../api/diagram/#onuserhandlemouseenter) - Triggered when the mouse enters the user handle region.
+* [`onUserHandleMouseDown`](../api/diagram/#onuserhandlemousedown) - Triggered when the mouse is pressed down on the user handle.
+* [`onUserHandleMouseUp`](../api/diagram/#onuserhandlemouseup) - Triggered when the mouse is released on the user handle.
+* [`onUserHandleMouseLeave`](../api/diagram/#onuserhandlemouseleave) - Triggered when the mouse leaves the user handle region.
 
-## Offset
+For more information, refer to the [`user handle events`](./user-handle.md/#user-handle-events).
 
-The [`offset`](../api/diagram/userHandle#offset-number) property of [`userHandles`](../api/diagram/selectorModel#userHandles-userhandlemodel[]) is used to align the user handle based on fractions. 0 represents top/left corner, 1 represents bottom/right corner, and 0.5 represents half of width/height.
+## Fixed user handle
 
-## Side
+Fixed user handles are used to perform specific actions when interacted with. Unlike regular user handles, [`fixedUserHandles`](../api/diagram/nodeFixedUserHandleModel/) are defined within the node/connector object, allowing different fixed user handles to be added to different nodes.
 
-The [`side`](../api/diagram/userHandle#side-side) property of [`userHandles`](../api/diagram/selectorModel#userHandles-userhandlemodel[]) is used to align the user handle by using the [`Top`](../api/diagram/side#top), [`Bottom`](../api/diagram/side#bottom), [`Left`](../api/diagram/side#left), and [`Right`](../api/diagram/side#right) options.
+The following events are triggered when interacting with a fixed user handle:
 
-## Horizontal and vertical alignments
+* [`click`](../api/diagram/iclickeventargs/) - Triggered when the fixed user handle is clicked.
+* [`onFixedUserHandleMouseEnter`](../api/diagram/#onfixeduserhandlemouseenter) - Triggered when the mouse enters the fixed user handle region.
+* [`onFixedUserHandleMouseDown`](../api/diagram/#onfixeduserhandlemousedown) - Triggered when the mouse is pressed down on the fixed user handle.
+* [`onFixedUserHandleMouseUp`](../api/diagram/#onfixeduserhandlemouseup) - Triggered when the mouse is released on the fixed user handle.
+* [`onFixedUserHandleMouseLeave`](../api/diagram/#onfixeduserhandlemouseleave) - Triggered when the mouse leaves the fixed user handle region.
+* [`fixedUserHandleClick`](../api/diagram/fixedUserHandleClickEventArgs/) - Triggered when the fixed user handle is clicked.
 
-The [`horizontalAlignment`](../api/diagram/userHandle#horizontalalignment-horizontalalignment) property of [`userHandles`](../api/diagram/selectorModel#userHandles-userhandlemodel[]) is used to set how the user handle is horizontally aligned at the position based on the [`offset`](../api/diagram/userHandle#offset-number). The [`verticalAlignment`](../api/diagram/userHandle#verticalalignment-verticalalignment) property is used to set how user handle is vertically aligned at the position.
+For more information, refer to the [`fixed user handle events`](./user-handle.md/#fixed-user-handle-events).
 
-## Margin
+## Determining Mouse Button Clicks
 
-Margin is an absolute value used to add some blank space in any one of its four sides. The [`userHandles`](../api/diagram/selectorModel#userHandles-userhandlemodel[]) can be displaced with the [`margin`](../api/diagram/userHandle#margin-marginmodel) property.
-
-## Notification for the mouse button clicked
-
-The diagram component notifies the mouse button clicked. For example, when the right mouse button is clicked, the clicked button is notified as right. The mouse click is notified with,
+The diagram component can determine which mouse button was clicked. For example, when the right mouse button is clicked, the click event will specify that the right button was clicked. This is handled through the mouse [`click`](../api/diagram/iclickeventargs/) event, which provides details about whether the left or right button was clicked.
 
 | Notification | Description |
 |----------------|--------------|
@@ -178,38 +287,20 @@ The diagram component notifies the mouse button clicked. For example, when the r
 var diagram = new ej.diagrams.Diagram({
     width: '100%', height: 900
 },'#diagram');
-diagram.click = function (args: IClickEventArgs) {
+diagram.click = function (args) {
 // Obtains the mouse button clicked
    let clickedButtons = args.button
 };
 ```
 
-## Appearance
+## Allow drop
 
-The appearance of the user handle can be customized by using the [`size`](../api/diagram/userHandle#size-number), [`borderColor`](../api/diagram/userHandle#bordercolor-string), [`backgroundColor`](../api/diagram/userHandle#backgroundcolor-string), [`visible`](../api/diagram/userHandle#visible-boolean), [`pathData`](../api/diagram/userHandle#pathdata-string), and [`pathColor`](../api/diagram/userHandle#pathcolor-string) properties of the [`userHandles`](../api/diagram/selectorModel#userHandles-userhandlemodel[]).
+The diagram supports dropping a node or connector onto another node or connector. To determine the target where the node or connector is dropped, you need to enable the [`allowDrop`](../api/diagram/nodeConstraints/) constraint in the node's or connector's constraints property. This setting enables a highlighter to indicate potential drop targets when dragging any node or connector over another one. Upon dropping the node or connector, the [`drop`](../api/diagram/iDropEventArgs/) event is triggered to indicate which element was dropped over which other element.
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/diagram/interaction-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/diagram/interaction-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/diagram/interaction-cs2" %}
 
 ## Zoom pan
 
-* When a large diagram is loaded, only certain portion of the diagram is visible. The remaining portions are clipped. Clipped portions can be explored by scrolling the scrollbars or panning the diagram.
-* Diagram can be zoomed in or out by using Ctrl + mouse wheel.
-* When the diagram is zoomed or panned, the [`scrollChange`](../api/diagram#scrollChange--emittypeiscrollchangeeventargs) event gets triggered.
-
-![Zoom Pan](images/Zoom-pan.gif)
-
-## Zoom pan status
-
-Diagram provides the support to notify the pan status of the zoom pan tool. Whenever the diagram is panning [`scrollChange`](../api/diagram#scrollChange--emittypeiscrollchangeeventargs) event is triggered and hence the pan status can be obtained. The pan status is notified with Start, Progress, and Completed.
+When loading a large diagram, only a certain portion of the diagram is initially visible, the remaining parts are clipped. You can explore these clipped portions by scrolling the scrollbars or panning the diagram. You can zoom in or out on the diagram by using Ctrl + mouse wheel. When the diagram is zoomed or panned, the [`scrollChange`](../api/diagram/iScrollChangeEventArgs/) event is triggered.
 
 |  Pan Status  | Description|
 |--------------|---------|
@@ -217,18 +308,7 @@ Diagram provides the support to notify the pan status of the zoom pan tool. When
 | Progress | When the mouse is in motion the status is notified as progress.|
 | Completed | When panning is stopped the status is notified with completed.|
 
-```ts
-
-let diagram: Diagram = new Diagram({
-    width: '100%', height: 900
-    tool: DiagramTools.ZoomPan, scrollChange:function (args:IScrollChangeEventArgs | IBlazorScrollChangeEventArgs) {
-    // Obtains the zoom pan status
-    let mouseButton = args.panState
-    }
-});
-diagram.appendTo('#element');
-
-```
+![Zoom Pan](images/Zoom-pan.gif)
 
 ## Keyboard
 
@@ -245,7 +325,7 @@ The following table illustrates those commands with the associated key values.
 | Ctrl + Z | undo | Reverses the last editing action performed on the diagram.|
 | Ctrl + Y | redo | Restores the last editing action when no other actions have occurred since the last undo on the diagram.|
 | Delete | delete | Deletes the selected elements.|
-| Ctrl/Shift + Click on object |  | Multiple selection (Selector binds all selected nodes/connectors).|
+| Ctrl/Shift + Click on object | Multiple selection | Selector binds all selected nodes/connectors.|
 | Up Arrow | nudge(“up”) | `nudgeUp`: Moves the selected elements towards up by one pixel.|
 | Down Arrow | nudge(“down”) | `nudgeDown`: Moves the selected elements towards down by one pixel.|
 | Left Arrow | nudge(“left”) | `nudgeLeft`: Moves the selected elements towards left by one pixel.|
@@ -287,6 +367,8 @@ The following table illustrates those commands with the associated key values.
 | Control + Shift + F | Bring To Front | Bring the selected shape forward in the stacking order, making it appear in front of other shapes.|
 | Control + [ | Send Backward | Move the selected shape one step backward in the layer order. |
 | Control + ] | Bring Forward | Move the selected shape one step forward in the layer order.|
+
+N> Please note that the positionChange event is triggered for dragging nodes/connectors using mouse interactions only and not supported for Keyboard  interactions
 
 ## See Also
 

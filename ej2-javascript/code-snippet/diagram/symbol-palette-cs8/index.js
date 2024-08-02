@@ -1,31 +1,59 @@
-//Initialize the basicshapes for the symbol palette
-    function getBasicShapes() {
-        var basicShapes = [
-            { id: 'Rectangle', shape: { type: 'Basic', shape: 'Rectangle' }, style: { strokeWidth: 2 } },
-            { id: 'Ellipse', shape: { type: 'Basic', shape: 'Ellipse' }, style: { strokeWidth: 2 } },
-            { id: 'Hexagon', shape: { type: 'Basic', shape: 'Hexagon' }, style: { strokeWidth: 2 } },
-        ];
-        return basicShapes;
-    }
-//Initialize the flowshapes for the symbol palette
-    function getFlowShapes() {
-        var flowShapes = [
-            { id: 'Process', shape: { type: 'Flow', shape: 'Process' }, style: { strokeWidth: 2 }  },
-            { id: 'Document', shape: { type: 'Flow', shape: 'Document' }, style: { strokeWidth: 2 } },
-        ];
-        return flowShapes;
-    }
-    var palette = new ej.diagrams.SymbolPalette({
-        expandMode: 'Multiple',
-        palettes: [
-            { id: 'flow', expanded: true, symbols: getFlowShapes(), title: 'Flow Shapes' },
-            { id: 'basic', expanded: true, symbols: getBasicShapes(), title: 'Basic Shapes' },
-        ],
-        width: '100%', height: '100%', symbolHeight: 80, symbolWidth: 80,
-//Defines the symbol description for the symbols in the palette
-        getSymbolInfo: function (symbol) {
-            return { width: 75, height: 40, description: { text: symbol.shape['shape'] } };
-        }
-    });
-    palette.appendTo('#element');
+/**
+ * Symbol palette tooltip
+ */
 
+//Initialize the basic shapes for the symbol palette
+function getBasicShapes() {
+    let nodes = [
+      {
+        id: 'rectangle',
+        shape: {
+          type: 'Basic',
+          shape: 'Rectangle',
+        },
+        // Defines the tooltip for the shape
+        tooltip: { content: 'Rectangle Basic shape', relativeMode: 'Object' },
+        constraints:
+          ej.diagrams.NodeConstraints.Default |
+          ej.diagrams.NodeConstraints.Tooltip,
+      },
+      {
+        id: 'plus',
+        shape: {
+          type: 'Basic',
+          shape: 'Plus',
+        },
+        // Defines the tooltip for the shape
+        tooltip: { content: 'Plus Basic shape', relativeMode: 'Object' },
+        constraints:
+          ej.diagrams.NodeConstraints.Default |
+          ej.diagrams.NodeConstraints.Tooltip,
+      },
+      {
+        id: 'triangle',
+        shape: {
+          type: 'Basic',
+          shape: 'RightTriangle',
+        },
+        // Defines the tooltip for the shape
+        tooltip: { content: 'RightTriangle Basic shape', relativeMode: 'Object' },
+        constraints:
+          ej.diagrams.NodeConstraints.Default |
+          ej.diagrams.NodeConstraints.Tooltip,
+      },
+    ];
+    return nodes;
+  }
+  
+  var palette = new ej.diagrams.SymbolPalette({
+    palettes: [
+      {
+        id: 'basic',
+        symbols: getBasicShapes(),
+        title: 'Basic Shapes',
+      },
+    ],
+  });
+  
+  palette.appendTo('#element');
+  

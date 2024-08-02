@@ -1,16 +1,12 @@
-
 var diagram = new ej.diagrams.Diagram({
-    width: 700, height: 700, created: () => {
-        var drawingshape = { type: 'Basic', shape: 'Rectangle' };
-        var node = {
-            shape: drawingshape
-        };
-        diagram.drawingObject = node;
-        diagram.tool = ej.diagrams.DiagramTools.DrawOnce;
-        diagram.dataBind();
-    }
-});
-diagram.appendTo('#element');
-
-
-
+    width: '100%',
+    height: 700,
+    //Drawing object to draw Text node
+    drawingObject: {
+      shape: { type: 'Text' },
+    },
+    //To maintain the drawing tool continuously
+    tool: ej.diagrams.DiagramTools.ContinuousDraw,
+  });
+  diagram.appendTo('#element');
+  

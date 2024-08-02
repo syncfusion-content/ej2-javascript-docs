@@ -1,60 +1,54 @@
 /**
- * Default symbol palette sample
+ * Symbol description
  */
 //Initialize the basicshapes for the symbol palatte
-var basicShapes = [{
+function getBasicShapes() {
+    var basicShapes = [
+      {
         id: 'Rectangle',
         shape: {
-            type: 'Basic',
-            shape: 'Rectangle'
-        }
-    },
-    {
+          type: 'Basic',
+          shape: 'Rectangle',
+        },
+      },
+      {
         id: 'Ellipse',
         shape: {
-            type: 'Basic',
-            shape: 'Ellipse'
-        }
-    },
-    {
+          type: 'Basic',
+          shape: 'Ellipse',
+        },
+      },
+      {
         id: 'Hexagon',
         shape: {
-            type: 'Basic',
-            shape: 'Hexagon'
-        }
-    }
-];
-//Initializes the symbol palette
-var palette = new ej.diagrams.SymbolPalette({
+          type: 'Basic',
+          shape: 'Hexagon',
+        },
+      },
+    ];
+    return basicShapes;
+  }
+  //Initializes the symbol palette
+  var palette = new ej.diagrams.SymbolPalette({
     expandMode: 'Multiple',
-    palettes: [{
+    palettes: [
+      {
         id: 'basic',
-        expanded: true,
-        symbols: basicShapes,
+        symbols: getBasicShapes(),
         title: 'Basic Shapes',
-        iconCss: 'e-ddb-icons e-basic'
-    }],
-    symbolHeight: 80,
-    symbolWidth: 80,
+      },
+    ],
+    //Sets the description of a symbol
     getSymbolInfo: (symbol) => {
-        if (symbol['text'] !== undefined) {
-            return {
-                width: 75,
-                height: 40,
-                description: {
-                    text: symbol['text'],
-                    overflow: 'Wrap'
-                }
-            };
-        }
-        return {
-            width: 75,
-            height: 40,
-            description: {
-                text: symbol.shape['shape']
-            }
-        };
-    }
-});
-palette.appendTo('#element');
-
+      return {
+        width: 50,
+        height: 50,
+        description: {
+          //Defines the description text for the symbol
+          text: symbol.id,
+        },
+      };
+    },
+  });
+  palette.appendTo('#element');
+  

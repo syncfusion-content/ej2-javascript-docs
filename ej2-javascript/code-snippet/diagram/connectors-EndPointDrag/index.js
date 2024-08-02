@@ -43,3 +43,20 @@ var connectors = [
     diagram.dataBind();
   };
   
+  document.getElementById('dragSourceEnd').onclick = () => {
+    /**
+     * parameter 1 - connector whose source point needs to be moved.
+     * parameter 2 - A number representing the horizontal distance by which the source point should be moved.
+     * parameter 3 - A number representing the vertical distance by which the source point should be moved.
+     */
+    diagram.dragSourceEnd(diagram.connectors[0], 50, 50);
+  };
+  
+  document.getElementById('dragTargetEnd').onclick = () => {
+    /**
+     * parameter 1 - connector whose target point needs to be moved.
+     * parameter 2 - A number representing the horizontal distance by which the target point should be moved.
+     * parameter 3 - A number representing the vertical distance by which the target point should be moved.
+     */
+    diagram.dragTargetEnd(diagram.connectors[0], 50, 50);
+  };

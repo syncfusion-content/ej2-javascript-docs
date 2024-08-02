@@ -12,12 +12,13 @@ domainurl: ##DomainURL##
 # Context menu in ##Platform_Name## Diagram control
 
 <!-- markdownlint-disable MD010 -->
+In a graphical user interface (GUI), a context menu is a type of menu that appears when you perform a right-click operation. It offers users a set of actions relevant to the current context. In diagrams, context menus can be customized extensively. The Diagram control provides built-in context menu items while also allowing users to define custom menu items through the [`contextMenuSettings`](../api/diagram/contextmenusettingsmodel/) property. This flexibility enables tailoring menus to specific application needs, including creating nested levels of menu items for more intricate user interactions.
 
-In graphical user interface (GUI), a context menu is a type of menu that appears when you perform right-click operation. Nested level of context menu items can be created. Diagram provides some in-built context menu items and allows to define custom menu items through the [`contextMenuSettings`](../api/diagram#contextMenuSettings) property.
+N> If you want to use contextMenu in diagram, you need to inject `DiagramContextMenu` Module in the diagram.
 
-## Customize context menu
+## Default context menu
 
-The [`show`](../api/diagram/contextMenuSettings#show-boolean) property helps you to enable/disable the context menu. Diagram provides some default context menu items to ease the execution of some frequently used commands. The following code illustrates how to enable the default context menu items.
+Diagram provides some default context menu items to ease the execution of some frequently used commands. The [`show`](../api/diagram/contextMenuSettingsModel/#show) property helps you to enable/disable the context menu. The following code illustrates how to enable the default context menu items.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -46,21 +47,20 @@ The [`show`](../api/diagram/contextMenuSettings#show-boolean) property helps you
 {% previewsample "page.domainurl/code-snippet/diagram/contextmenu-cs1" %}
 {% endif %}
 
-Context menu can be defined for individual node with the desired context menu items.
+## Custom context menu
 
-* Apart from the default context menu items, define some additional context menu items. Those additional items have to be defined and added to the [`items`](../api/diagram/contextMenuSettingsModel#items) property of the context menu.
+Context menus can be customized for individual nodes by defining specific menu items beyond the default options. To add additional context menu items, you need to define and incorporate them into the [`items`](../api/diagram/contextMenuItemModel/) property of the context menu.
 
-* Set text and ID for context menu item using the context menu [`text`](../api/diagram/contextMenuItemModel#text-string) and [`ID`](../api/diagram/contextMenuItemModel#id-string) properties respectively.
+Each custom item can be defined with specific text and ID using the [`text`](../api/diagram/contextMenuItemModel/#text) and [`ID`](../api/diagram/contextMenuItemModel/#id) properties, respectively. Additionally, you can enhance visual cues by associating icons through the [`iconCss`](../api/diagram/contextMenuItemModel/#iconcss) for enabling the use of font icons. The [`target`](../api/diagram/contextMenuItemModel/#target) property specifies where each menu item should appear, and separators can be included using the [`separator`](..api/diagram/contextMenuItemModel/#separator) property to visually group menu items. This flexibility allows for a tailored user interface that meets specific application needs efficiently. Nested menu items are defined within the [`items`](../api/diagram/contextMenuItemModel/#items) property of a parent menu item.
 
-* Set an image for the context menu item using the context menu [url](../api/diagram/contextMenuItemModel#url) property.
+### To Display custom menu alone
 
-* The [`iconCss`](../api/diagram/contextMenuItemModel#iconCss-string) property defines the class/multiple classes separated by a space for the menu item that is used to include an icon. Menu item can include font icon and sprite image.
+To display the custom context menu items alone, set the [`showCustomMenuOnly`](../api/diagram/contextMenuSettingsModel/#showcustommenuonly) property to true.
 
-* The [`target`](../api/diagram/contextMenuItemModel#target-string) property used to set the target to show the menu item.
+### Context menu click
 
-* The [`separator`](../api/diagram/contextMenuItemModel#separator-boolean) property defines the horizontal lines that are used to separate the menu items. You cannot select the separators. You can enable separators to group the menu items using the separator property.
+Upon clicking custom menu items, actions are handled using the [`contextMenuClick`](../api/diagram/#contextmenuclick) event in the diagram. This event allows you to define actions based on which menu item is clicked. For instance, in the example below, the cloning of nodes and the change of fill color for nodes and annotations are efficiently managed and implemented through this event.
 
-The following code example illustrates how to add custom context menu items.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -89,13 +89,73 @@ The following code example illustrates how to add custom context menu items.
 {% previewsample "page.domainurl/code-snippet/diagram/contextmenu-cs2" %}
 {% endif %}
 
-To display the custom context menu items alone, set  the [`showCustomMenuOnly`](../api/diagram/contextMenuSettingsModel#showCustomMenuOnly) property to true.
+### Context menu open
+
+In certain situations, you may want to hide specific menu items based on the selected elements in the diagram. This can be achieved using the [`contextMenuOpen`](../api/diagram/diagramBeforeMenuOpenEventArgs/) event. When the context menu is opened via right-click, the `contextMenuOpen` event is triggered. Within this event, you can create an array of menu items to hide for the selected element and pass it to the [`hiddenItems`](../api/diagram/diagramBeforeMenuOpenEventArgs/#hiddenitems) property of the contextMenuOpen event argument. The following example demonstrates how to display different custom menu items for nodes, connectors, and the diagram based on the selection.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/contextmenu-cs6/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/contextmenu-cs6/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/contextmenu-cs6" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/contextmenu-cs6/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/contextmenu-cs6/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/diagram/contextmenu-cs6" %}
+{% endif %}
+
+### Context menu with Url
+
+[`url`](../api/diagram/contextMenuItemModel/#url) property of the menu item is used to set the url of any website which will be opened upon clicking on them. The follwoing example shows the context menu with ulr for three websites.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/contextmenu-cs5/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/contextmenu-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/contextmenu-cs5" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/contextmenu-cs5/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/contextmenu-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/diagram/contextmenu-cs5" %}
+{% endif %}
 
 ## Template Support for Context menu
 
-* Diagram provides template support for context menu. The context menu items can be customized by using the `contextMenuBeforeItemRender` event. The contextMenuBeforeItemRender event triggers while rendering each menu item.
+Diagram provides template support for the context menu. The template for the context menu items can be customized before rendering by using the [`contextMenuBeforeItemRender`](../api/diagram/#contextmenubeforeitemrender) event, which triggers while rendering each menu item.
 
-* In the following sample, the menu item is rendered with key code for specified action in ContextMenu using the template. Here, the key code is specified for the cut and copy at right corner of the menu items by adding a span element in the `contextMenuBeforeItemRender` event.
+In the following example, menu items are rendered with shortcut key codes for specific actions in the context menu using a template. The key codes for cut, copy, and paste actions are displayed at the right corner of the menu items by adding a span element in the `contextMenuBeforeItemRender` event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -124,33 +184,45 @@ To display the custom context menu items alone, set  the [`showCustomMenuOnly`](
 {% previewsample "page.domainurl/code-snippet/diagram/contextmenu-cs3" %}
 {% endif %}
 
+
 ## Context menu events
 
-You would be notified with events, when you try to open the context menu items [`contextMenuOpen`](../api/diagram/diagramBeforeMenuOpenEventArgs#DiagramBeforeMenuOpenEventArgs) and when you click the menu items `contextMenuClick`.The following code example illustrates how to define those events.
+|Event|Description|
+|----|----|
+|[`contextMenuBeforeItemRender`](../api/diagram/#contextmenubeforeitemrender)|Triggers while initializing each menu item.|
+|[`contextMenuOpen`](../api/diagram/diagramBeforeMenuOpenEventArgs/)|Triggers upon right-click before opening the context menu.|
+|[`contextMenuClick`](../api/diagram/#contextmenuclick)|Triggers when a menu item is clicked.|
+
+The following example shows how to get these events.
 
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/diagram/contextmenu-cs4/index.ts %}
+{% include code-snippet/diagram/contextmenu-events/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/diagram/contextmenu-cs4/index.html %}
+{% include code-snippet/diagram/contextmenu-events/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/diagram/contextmenu-cs4" %}
+{% previewsample "page.domainurl/code-snippet/diagram/contextmenu-events" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/diagram/contextmenu-cs4/index.js %}
+{% include code-snippet/diagram/contextmenu-events/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/diagram/contextmenu-cs4/index.html %}
+{% include code-snippet/diagram/contextmenu-events/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/diagram/contextmenu-cs4" %}
+{% previewsample "page.domainurl/code-snippet/diagram/contextmenu-events" %}
 {% endif %}
+
+
+## See Also
+
+* [How to open context menu on left click](https://support.syncfusion.com/kb/article/15100/how-to-perform-clipboard-operation-with-custom-context-menu-on-left-click-using-javascript-diagram)

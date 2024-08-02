@@ -463,4 +463,36 @@ The following code example shows how to set the size for the tooltip:
 {% previewsample "page.domainurl/code-snippet/diagram/tooltip-size" %}
 {% endif %}
 
+## Show/Hide tooltip at runtime
+
+You can show or hide the tooltip dynamically using a button click with the [`showTooltip`](../api/diagram/#showtooltip) and [`hideTooltip`](../api/diagram/#hidetooltip) methods of the diagram. This allows you to control the tooltip visibility programmatically rather than relying on user hover actions. In some cases, you may want to display the tooltip without requiring the user to hover over the object.
+
+The following example demonstrates how to show or hide the tooltip at runtime:
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/tooltip-runtime/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/tooltip-runtime/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/tooltip-runtime" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/tooltip-runtime/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/tooltip-runtime/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/diagram/tooltip-runtime" %}
+{% endif %}
 

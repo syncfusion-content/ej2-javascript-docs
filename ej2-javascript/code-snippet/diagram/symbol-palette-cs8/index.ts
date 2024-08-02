@@ -1,46 +1,54 @@
-
-
-
 import {
-    Diagram,
+    NodeConstraints,
     NodeModel,
     SymbolPalette,
-    SymbolInfo
-} from '@syncfusion/ej2-diagrams';
-
-let diagram: Diagram = new Diagram({
-    width: '100%', height: '500px'
-});
-diagram.appendTo('#diagram');
-//Initialize the basicshapes for the symbol palette
-export function getBasicShapes(): NodeModel[] {
-    let basicShapes: NodeModel[] = [
-        { id: 'Rectangle', shape: { type: 'Basic', shape: 'Rectangle' }, style: { strokeWidth: 2 } },
-        { id: 'Ellipse', shape: { type: 'Basic', shape: 'Ellipse' }, style: { strokeWidth: 2 }},
-        { id: 'Hexagon', shape: { type: 'Basic', shape: 'Hexagon' }, style: { strokeWidth: 2 }},
+  } from '@syncfusion/ej2-diagrams';
+  
+  //Initialize the basic shapes for the symbol palette
+  function getBasicShapes(): NodeModel[] {
+    let nodes: NodeModel[] = [
+      {
+        id: 'rectangle',
+        shape: {
+          type: 'Basic',
+          shape: 'Rectangle',
+        },
+        // Defines the tooltip for the shape
+        tooltip: { content: 'Rectangle Basic shape', relativeMode: 'Object' },
+        constraints: NodeConstraints.Default | NodeConstraints.Tooltip,
+      },
+      {
+        id: 'plus',
+        shape: {
+          type: 'Basic',
+          shape: 'Plus',
+        },
+        // Defines the tooltip for the shape
+        tooltip: { content: 'Plus Basic shape', relativeMode: 'Object' },
+        constraints: NodeConstraints.Default | NodeConstraints.Tooltip,
+      },
+      {
+        id: 'triangle',
+        shape: {
+          type: 'Basic',
+          shape: 'RightTriangle',
+        },
+        // Defines the tooltip for the shape
+        tooltip: { content: 'RightTriangle Basic shape', relativeMode: 'Object' },
+        constraints: NodeConstraints.Default | NodeConstraints.Tooltip,
+      },
     ];
-    return basicShapes;
-}
-//Initialize the flowshapes for the symbol palette
-export function getFlowShapes(): NodeModel[] {
-    let flowShapes: NodeModel[] = [
-        { id: 'Process', shape: { type: 'Flow', shape: 'Process' }, style: { strokeWidth: 2 }},
-        { id: 'Document', shape: { type: 'Flow', shape: 'Document' }, style: { strokeWidth: 2 }},
-    ];
-    return flowShapes;
-}
-let palette: SymbolPalette = new SymbolPalette({
-    expandMode: 'Multiple',
+    return nodes;
+  }
+  //Initializes the symbol palette
+  let palette: SymbolPalette = new SymbolPalette({
     palettes: [
-        { id: 'flow', expanded: true, symbols: getFlowShapes(), title: 'Flow Shapes' },
-        { id: 'basic', expanded: true, symbols: getBasicShapes(), title: 'Basic Shapes' },
+      {
+        id: 'basic',
+        symbols: getBasicShapes(),
+        title: 'Basic Shapes',
+      },
     ],
-    width: '100%', height: '100%', symbolHeight: 80, symbolWidth: 80,
-    //Defines the symbol description for the symbols in the palette
-    getSymbolInfo: (symbol: NodeModel): SymbolInfo => {
-        return { width: 75, height: 40, description: { text: symbol.shape['shape'] } };
-    }
-});
-palette.appendTo('#element');
-
-
+  });
+  palette.appendTo('#element');
+  

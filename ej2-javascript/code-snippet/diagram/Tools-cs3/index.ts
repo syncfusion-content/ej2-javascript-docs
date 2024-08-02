@@ -1,24 +1,24 @@
-
-
 import {
-    Diagram, ConnectorModel, NodeModel, DiagramTools
-} from '@syncfusion/ej2-diagrams';
-let diagram: Diagram = new Diagram({
-        width: '100%', height: 700, created: () => {
-            //JSON to create a Connector
-            let connectors: ConnectorModel = {
-                id: 'connector1',
-                type: 'Straight',
-            segments: [{ type: "polyline" }]
-            }
-            diagram.drawingObject = connectors;
-            //To draw an object once, activate draw once
-            diagram.tool = DiagramTools.DrawOnce;
-            diagram.dataBind();
-        }
-});
-
-diagram.appendTo('#element');
-
-
-
+    Diagram,
+    DiagramTools,
+    ConnectorModel,
+  } from '@syncfusion/ej2-diagrams';
+  let diagram: Diagram = new Diagram({
+    width: '100%',
+    height: 700,
+    //Drawing object to draw connector
+    drawingObject: {
+      id: 'connector1',
+      type: 'Straight',
+    },
+    //To maintain the drawing tool continuously
+    tool: DiagramTools.ContinuousDraw,
+  });
+  diagram.appendTo('#element');
+  //To choose different connector type to draw
+  (document.getElementById('connectorType') as HTMLInputElement).onchange = (args: any) => {
+    let type = args.target.value;
+    (diagram.drawingObject as ConnectorModel).type = type;
+    diagram.dataBind();
+  };
+  

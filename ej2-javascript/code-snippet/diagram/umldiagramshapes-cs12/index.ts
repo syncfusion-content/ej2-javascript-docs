@@ -11,7 +11,7 @@ let diagram: Diagram = new Diagram({
   width: '100%', height: '500px'
 });
 diagram.appendTo('#diagram');
-//Initialize the basicshapes for the symbol palette
+//Initialize the uml shapes for the symbol palette
 export function getUmlShapes(): NodeModel[] {
   let umlShapes: NodeModel[] = [
       {

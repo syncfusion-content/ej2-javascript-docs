@@ -107,3 +107,34 @@ There are several types of Text annotation directions as follows:
 | Right | ![BPMN text annotation direction right](images/bpmn-textannotation-right.png) |
 | Top | ![BPMN text annotation direction top](images/bpmn-textannotation-top.png) |
 | Bottom | ![BPMN text annotation direction bottom](images/bpmn-textannotation-bottom.png) |
+
+### Add text annotation at runtime
+
+Text annotations can be added dynamically using either the [`addTextAnnotation`](../api/diagram/#addtextannotation) method or the [`add`](../api/diagram/#add) method of the diagram. The following example shows how to use these methods to add a text annotation node.
+ 
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/bpmnShapes-textAnnotationPalette-runtime/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/bpmnShapes-textAnnotationPalette-runtime/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/bpmnShapes-textAnnotationPalette-runtime" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/bpmnShapes-textAnnotationPalette-runtime/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/bpmnShapes-textAnnotationPalette-runtime/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/diagram/bpmnShapes-textAnnotationPalette-runtime" %}
+{% endif %}

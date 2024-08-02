@@ -1,65 +1,66 @@
-
-
-
-import {
-    Diagram,
-    ConnectorModel,
-    NodeModel
-} from '@syncfusion/ej2-diagrams';
-//Initializes the connector
-let connector: ConnectorModel = {
-    id: 'connector1',
-    sourceID: 'node1',
-    targetID: 'node2',
-    style: {
-        strokeColor : '#6BA5D7',
-        fill: '#6BA5D7',
-        strokeWidth :  2,
-    },
-    targetDecorator: {
-        style: {
-            fill : '#6BA5D7',
-            strokeColor :   '#6BA5D7'
-        }
-    }
-};
-//Initializes the nodes
-let node: NodeModel = {
+import { Diagram, NodeModel } from '@syncfusion/ej2-diagrams';
+let nodes: NodeModel[] = [
+  {
     id: 'node1',
-    width: 90,
-    height: 60,
-    offsetX: 100,
+    width: 100,
+    height: 80,
+    offsetX: 140,
     offsetY: 100,
-    style: {
-        fill:   '#6BA5D7',
-        strokeColor: 'white',
-        strokeWidth: 1
-    },
-};
-let node2: NodeModel = {
+    style: { fill: '#6BA5D7', strokeColor: 'white', strokeWidth: 1 },
+    annotations: [{ content: 'Node1' }],
+  },
+  {
     id: 'node2',
-    width: 90,
+    width: 100,
     height: 60,
-    offsetX: 240,
-    offsetY: 100,
-    style: {
-        fill:   '#6BA5D7',
-        strokeColor: 'white',
-        strokeWidth: 1
-    },
-};
-//Initializes the Diagram component
+    offsetX: 140,
+    offsetY: 200,
+    style: { fill: '#6BA5D7', strokeColor: 'white', strokeWidth: 1 },
+    annotations: [{ content: 'Node2' }],
+  },
+  {
+    id: 'node3',
+    width: 200,
+    height: 30,
+    offsetX: 140,
+    offsetY: 300,
+    style: { fill: '#6BA5D7', strokeColor: 'white', strokeWidth: 1 },
+    annotations: [{ content: 'Node3' }],
+  },
+];
 let diagram: Diagram = new Diagram({
-    width: '100%',
-    height: '350px',
-    nodes: [node, node2],
-    connectors: [connector]
+  width: '100%',
+  height: '600px',
+  nodes: nodes,
 });
+
 diagram.appendTo('#element');
-diagram.select([diagram.nodes[0], diagram.nodes[1], diagram.connectors[0]]);
-//copies the selected nodes
-diagram.copy();
-//pastes the copied objects
-diagram.paste(diagram.copy() as(NodeModel | ConnectorModel)[]);
 
-
+(document.getElementById('cut') as HTMLInputElement).onclick = () => {
+  diagram.cut();
+};
+(document.getElementById('copy') as HTMLInputElement).onclick = () => {
+  diagram.copy();
+};
+(document.getElementById('paste') as HTMLInputElement).onclick = () => {
+  diagram.paste();
+};
+(document.getElementById('pasteObjects') as HTMLInputElement).onclick = () => {
+  let nodes = [
+    {
+      id: 'n1',
+      offsetX: 400,
+      offsetY: 100,
+      width: 100,
+      style: { fill: '#6BA5D7' },
+    },
+    {
+      id: 'n2',
+      offsetX: 400,
+      offsetY: 200,
+      width: 100,
+      style: { fill: '#6BA5D7' },
+    },
+  ];
+  diagram.paste(nodes);
+};

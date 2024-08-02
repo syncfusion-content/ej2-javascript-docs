@@ -11,21 +11,25 @@ domainurl: ##DomainURL##
 
 # Virtualization in ##Platform_Name## Diagram control
 
+Virtualization is a technique to optimize the performance of diagrams, especially when working with larger diagrams
+
 ## Virtualization in Diagram
 
-Virtualization is the process of loading the diagramming objects available in the visible area of the Diagram control, that is, only the diagramming objects that lie within the ViewPort of the Scroll Viewer are loaded (remaining objects are loaded only when they come into view).
+Virtualization optimizes the diagram performance by loading only the diagramming objects within the visible area, or ViewPort, of the Scroll Viewer. This means that only the nodes and connectors that are currently in view are loaded, while the remaining objects are loaded dynamically as they come into view.
 
-This feature gives an optimized performance while loading and dragging items to the Diagram that consists of many Nodes and Connectors.
+This feature significantly enhances performance, especially when working with diagrams containing a large number of nodes and connectors. By reducing the number of objects that need to be processed at any given time, virtualization ensures smoother interactions, such as loading and dragging items within the diagram.
 
-The following code illustrates how to enable Virtualization mode in the diagram.
+To enable virtualization in a diagram, you need to include the virtualization constraint in the diagram's constraints. For more information, refer to the  [`diagram constraints`](./constraints.md/#diagram-constraints).
 
-```ts
+The following code example demonstrates how to enable Virtualization mode in the diagram:
 
-//Initialize diagram
-var diagram = new ej.diagrams.Diagram({
-    width: '800px', height: '500px',
-    //Enable virtualization in diagram
-    constraints: DiagramConstraints.Default | DiagramConstraints.Virtualization,
-},'#diagram');
-
-```
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/virtualization-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/virtualization-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/diagram/virtualization-cs1" %}

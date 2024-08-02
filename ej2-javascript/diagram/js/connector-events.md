@@ -13,11 +13,25 @@ domainurl: ##DomainURL##
 
 Diagram provides some events support for connectors that triggers when interacting with the connector.
 
-## Selection change event.
+## Click event
 
-When selecting/unselecting the connector, the selection chang event will be triggered.
+Triggers when the connector is clicked. The following code example explains how to get the [`click`](../api/diagram/iClickEventArgs/) event in the diagram.
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/nodes-clickEvent/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/nodes-clickEvent/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/nodes-clickEvent" %}
+
+## Selection change event
+
+When selecting/unselecting the connector, the selection change event will be triggered.
 The following code example explains how to get the [`selection change`](../api/diagram/iselectionchangeeventargs/) event in the diagram.
-
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -30,7 +44,19 @@ The following code example explains how to get the [`selection change`](../api/d
         
 {% previewsample "page.domainurl/code-snippet/diagram/connectors-SelectEvent" %}
 
-## Position change event.
+ You can prevent selection by setting the `cancel` property of [`SelectionChangeEventArgs`](../api/diagram/iSelectionChangeEventArgs/) to true, as shown in the code snippet below.
+
+```ts
+  selectionChange: function (args) {
+    if (args.state == 'Changing') {
+      //Prevents selection
+      args.cancel = true;
+    }
+  },
+
+```
+
+## Position change event
 
 Triggers when the connector's position is changed in diagram.
 The following code example explains how to get the [`position change`](../api/diagram/iDraggingEventArgs/) event in the diagram.
@@ -47,7 +73,19 @@ The following code example explains how to get the [`position change`](../api/di
         
 {% previewsample "page.domainurl/code-snippet/diagram/connectors-PositionEvent" %}
 
-## Connection change event.
+ You can prevent dragging by setting the `cancel` property of [`DraggingEventArgs`](../api/diagram/iDraggingEventArgs/) to true, as shown in the code snippet below.
+
+ ```ts
+   positionChange: function (args) {
+    if (args.state == 'Progress') {
+      //Prevents dragging
+      args.cancel = true;
+    }
+  },
+
+```
+
+## Connection change event
 
 Triggers when the connector’s source or target point is connected or disconnected from the source or target.
 The following code example explains how to get the [`connection change`](../api/diagram/iConnectionChangeEventArgs/) event in the diagram.
@@ -63,7 +101,7 @@ The following code example explains how to get the [`connection change`](../api/
         
 {% previewsample "page.domainurl/code-snippet/diagram/connectors-ConnectionEvent" %}
 
-## Source Point change event.
+## Source Point change event
 
 Triggers when the connector's source point is changed.
 The following code example explains how to get the [`source Point change`](../api/diagram/iendchangeeventargs/) event in the diagram.
@@ -79,7 +117,21 @@ The following code example explains how to get the [`source Point change`](../ap
         
 {% previewsample "page.domainurl/code-snippet/diagram/connectors-SourcePointEvent" %}
 
-## Target Point change event.
+ You can prevent source point dragging by setting the `cancel` property of [`EndChangeEventArgs`](../api/diagram/iEndChangeEventArgs/) to true, as shown in the code snippet below.
+
+```javascript
+
+ sourcePointChange: function (args) {
+    if (args.state === 'Progress') {
+      //Prevents source point dragging
+      args.cancel = true;
+      //Customize
+    }
+  },
+
+```
+
+## Target Point change event
 
 Triggers when the connector's target point is changed.
 The following code example explains how to get the [`target Point change`](../api/diagram/iEndChangeEventArgs/) event in the diagram.
@@ -95,11 +147,26 @@ The following code example explains how to get the [`target Point change`](../ap
         
 {% previewsample "page.domainurl/code-snippet/diagram/connectors-TargetPointEvent" %}
 
-## Segment Collection Change event.
+ You can prevent target point dragging by setting the `cancel` property of [`EndChangeEventArgs`](../api/diagram/iEndChangeEventArgs/) to true, as shown in the code snippet below.
+
+```javascript
+
+targetPointChange: function (args) {
+    if (args.state === 'Progress') {
+      //Prevents target point dragging
+      args.cancel = true;
+      //Customize
+    }
+  },
+
+```
+
+## Segment Collection Change event
 
 Triggers when the connector's segments added or removed at runtime.
-The following code example explains how to get the [`segment collection change`](../api/diagram/isegmentcollectionchangeeventargs/) event in the diagram.
+The following code example explains how to get the [`segment collection change`](../api/diagram/isegmentcollectionchangeeventargs/) event in the diagram. 
 
+Use `CTRL+Shift+Click` on connector to add/remove segments.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -112,7 +179,7 @@ The following code example explains how to get the [`segment collection change`]
         
 {% previewsample "page.domainurl/code-snippet/diagram/connectors-SegmentEvent" %}
 
-## Segment Change event.
+## Segment Change event
 
 Triggers when the connector's segments were adjusted or edited.
 The following code example explains how to get the [`segment change`](../api/diagram/isegmentchangeeventargs/) event in the diagram.
@@ -128,6 +195,18 @@ The following code example explains how to get the [`segment change`](../api/dia
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/diagram/connectors-SegmentEditEvent" %}
+
+ You can prevent segment editing by setting the `cancel` property of [`SegmentChangeEventArgs`](../api/diagram/iEndChangeEventArgs/) to true, as shown in the code snippet below.
+
+``` javascript
+ segmentChange: function (args) {
+    if (args.state === 'Start') {
+      //Prevents the segment editing
+      args.cancel = true;
+    }
+  },
+
+```
 
 ## Collection change event
 
@@ -145,19 +224,14 @@ The following code example explains how to get the [`collection change`](../api/
         
 {% previewsample "page.domainurl/code-snippet/diagram/connectors-CollectionEvent" %}
 
-## Get Connector defaults
+You can prevent changes to the diagram collection, such as adding or deleting connectors, by setting the `cancel` property of [`CollectionChangeEventArgs`](../api/diagram/iCollectionChangeEventArgs/) to true, as shown in the code snippet below.
 
-Get Connector defaults helps to define default properties of the connector. It is triggered when the diagram is initialized. In this event, you can customize the connector properties.
+``` javascript
+collectionChange: function (args) {
+    if (args.state === 'Changing') {
+      //Prevents collection change - Prevents Adding or deleting connectors
+      args.cancel = true;
+    }
+  },
 
-The following code example explains how to customize the connector using [`getConnectorDefaults`](../api/diagram/#getconnectorobject).
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/diagram/connectors-getConDef/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/diagram/connectors-getConDef/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/diagram/connectors-getConDef" %}
+````

@@ -257,6 +257,21 @@ The property [`maxSegmentThumb`](../api/diagram/connector#maxSegmentThumb) is us
 
 ![maxSegmentThumb](images/maxSegmentThumb.png)
 
+## Reset segments
+
+The [`resetSegments`](../api/diagram/#resetsegments) method resets the segments of connectors to their default state based on their connection points. This operation removes any custom segments and restores the connectors to their original configuration. The following example demonstrates how to reset connector segments at runtime.
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/connectors-resetSeg/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/connectors-resetSeg/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/diagram/connectors-resetSeg" %}
+
 ## Enable Connector Splitting
 
 The connectors are used to create a link between two points, ports, or nodes to represent the relationship between them. Split the connector between two nodes when dropping a new node onto an existing connector and create a connection between the new node and existing nodes by setting the [`enableConnectorSplit`](../api/diagram/enableConnectorSplit) as true. The default value of the [`enableConnectorSplit`](../api/diagram/enableConnectorSplit) is false
@@ -275,4 +290,21 @@ The following code illustrates how to split the connector and create a connectio
 {% previewsample "page.domainurl/code-snippet/diagram/connectors-cs29" %}
 
 ![Enable Connector Split](images/EnableSplit.gif)
+
+### Preserve connector style while connector splitting
+
+When splitting a connector using [`enableConnectorSplit`](../api/diagram/enableConnectorSplit), the new connector created will be a normal connector without any specific styles. To ensure the new connector has the same style as the original connector, you can use the collectionChange event to apply the styles.
+
+The following example demonstrates how to apply the same style of the original connector to the newly added connector:
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/connectors-split/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/connectors-split/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/connectors-split" %}
 

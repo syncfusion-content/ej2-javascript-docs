@@ -133,7 +133,7 @@ The following code illustrates how to define a template in annotation.
         
 {% previewsample "page.domainurl/code-snippet/diagram/annotations-cs11" %}
 
-N> We need to mention width and height for the annotation while using template
+N> For the proper alignment of template, we need to mention width and height for the annotation while using template.
 
 ### Annotation template
 

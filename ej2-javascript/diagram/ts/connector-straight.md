@@ -38,11 +38,11 @@ The [`point`](../api/diagram/straightSegment#point-PointModel) property of strai
 
 ### Straight segment editing
 
-* End point of each straight segment is represented by a thumb that enables to edit the segment.
-* Any number of new segments can be inserted into a straight line by clicking when Shift and Ctrl keys are pressed (Ctrl+Shift+Click).
-* Straight segments can be removed by clicking the segment end point when Ctrl and Shift keys are pressed (Ctrl+Shift+Click).
+End point of each straight segment is represented by a thumb that enables to edit the segment.
+Any number of new segments can be inserted into a straight line by clicking when Shift and Ctrl keys are pressed (Ctrl+Shift+Click).
+Straight segments can be removed by clicking the segment end point when Ctrl and Shift keys are pressed (Ctrl+Shift+Click). You can also add/remove segments by using the [`editSegment`](../api/diagram/#editsegment) method of diagram.
 
-Refer the sample below
+The following example shows how to add segments at runtime for the straight connector.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

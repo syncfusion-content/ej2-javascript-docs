@@ -149,24 +149,42 @@ diagram.historyManager.push(entry);
 
 ```
 
+## Clear history
+
+The [`clearHistory`](../api/diagram/#clearhistory) method of diagram is used to remove all the recorded actions from the undo and redo history.
+
+```javascript
+//Clears all the histories
+diagram.clearHistory();
+
+```
+
+## Get history stack
+
+The [`getHistoryStack`](../api/diagram/#gethistorystack) method of the diagram retrieves the [`undoStack`](../api/diagram/history/#undostack) or [`redoStack`](../api/diagram/history/#redostack) from the historyManager. This method takes a single parameter, isUndoStack. Pass true to get the undoStack or false to get the redoStack.
+
+```javascript
+// Fetch undoStack from history manager
+diagram.getHistoryStack(true)
+
+// Fetch redoStack from history manager
+diagram.getHistoryStack(false)
+
+```
+
 ## History change event
 
 The [`historyChange`](../api/diagram) event triggers, whenever the interaction of the node and connector is take place. When interacting, the entries get added to the history manager to trigger this event.
 
-
-```javascript
-
-let diagram = new Diagram({
-    width: '100%',
-    height: '600px',
-    nodes: nodes,
-    },'#element');
-// history change event
-diagram.historyChange = (arg) => {
-    //causes of history change
-    let cause: string = arg.cause;
-}
-
-```
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/undoredo-historyEvent/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/undoredo-historyEvent/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/undoredo-historyEvent" %}
 
 While interacting with diagram, this event can be used to do the customization.

@@ -1,60 +1,58 @@
 /**
- * Default symbol palette sample
+ * Symbol palette AllowDrag
  */
-//Initialize the basicshapes for the symbol palatte
-var basicShapes = [{
-        id: 'Rectangle',
-        shape: {
-            type: 'Basic',
-            shape: 'Rectangle'
-        }
-    },
-    {
-        id: 'Ellipse',
-        shape: {
-            type: 'Basic',
-            shape: 'Ellipse'
-        }
-    },
-    {
-        id: 'Hexagon',
-        shape: {
-            type: 'Basic',
-            shape: 'Hexagon'
-        }
-    }
-];
-//Initializes the symbol palette
-var palette = new ej.diagrams.SymbolPalette({
-    expandMode: 'Multiple',
-    palettes: [{
-        id: 'basic',
-        expanded: true,
-        symbols: basicShapes,
-        title: 'Basic Shapes',
-        iconCss: 'e-ddb-icons e-basic'
-    }],
-    symbolHeight: 80,
-    symbolWidth: 80,
-    getSymbolInfo: (symbol) => {
-        if (symbol['text'] !== undefined) {
-            return {
-                width: 75,
-                height: 40,
-                description: {
-                    text: symbol['text'],
-                    overflow: 'Wrap'
-                }
-            };
-        }
-        return {
-            width: 75,
-            height: 40,
-            description: {
-                text: symbol.shape['shape']
-            }
-        };
-    }
-});
-palette.appendTo('#element');
 
+//Initialize the basic shapes for the symbol palette
+function getBasicShapes() {
+    let nodes = [
+      {
+        id: 'rectangle',
+        shape: {
+          type: 'Basic',
+          shape: 'Rectangle',
+        },
+      },
+      {
+        id: 'plus',
+        shape: {
+          type: 'Basic',
+          shape: 'Plus',
+        },
+      },
+      {
+        id: 'triangle',
+        shape: {
+          type: 'Basic',
+          shape: 'RightTriangle',
+        },
+      },
+    ];
+    return nodes;
+  }
+  
+  var palette = new ej.diagrams.SymbolPalette({
+    palettes: [
+      {
+        id: 'basic',
+        symbols: getBasicShapes(),
+        title: 'Basic Shapes',
+      },
+    ],
+    //Prevents dragging symbol from palette
+    allowDrag: false,
+  });
+  
+  palette.appendTo('#element');
+  var diagram = new ej.diagrams.Diagram(
+    {
+      width: 1000,
+      height: 500,
+      dragEnter: function (args) {
+        let node = args.element;
+        node.tooltip.content = 'New ' + node.id + ' tooltip';
+        diagram.dataBind();
+      },
+    },
+    '#diagram'
+  );
+  

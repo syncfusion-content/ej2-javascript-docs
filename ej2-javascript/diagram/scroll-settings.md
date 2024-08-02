@@ -11,17 +11,19 @@ domainurl: ##DomainURL##
 
 # Scroll settings in ##Platform_Name## Diagram control
 
-The diagram can be scrolled by using the vertical and horizontal scrollbars. In addition to the scrollbars,mousewheel can be used to scroll the diagram. Diagram’s [`scrollSettings`](../api/diagram) enable you to read the current scroll status, view port size, current zoom, and zoom factor. It also allows you to scroll the diagram programmatically.
+The diagram can be scrolled using both the vertical and horizontal scrollbars. Additionally, the mouse wheel can be used to scroll the diagram. The diagram's [`scrollSettings`](../api/diagram/scrollSettingsModel/) allow you to read the current scroll status, view port size, current zoom level, and zoom factor. These settings also provide the capability to programmatically control the scrolling of the diagram.
 
-## Get current scroll status
+## Access and Customize Scroll Settings
 
-Scroll settings allow you to read the scroll status, [`viewPortWidth`](../api/diagram/scrollSettings), [`viewPortHeight`](../api/diagram/scrollSettings), and [`currentZoom`](../api/diagram/scrollSettings) with a set of properties. To explore those properties, see [`Scroll Settings`](../api/diagram/scrollSettings).
+Scroll settings in a diagram allow you to access and customize various properties such as [`horizontalOffset`](../api/diagram/scrollSettingsModel/#horizontaloffset), [`verticalOffset`](../api/diagram/scrollSettingsModel/#verticaloffset), [`viewPortWidth`](../api/diagram/scrollSettingsModel/#viewportwidth), [`viewPortHeight`](../api/diagram/scrollSettingsModel/#viewportheight), [`currentZoom`](../api/diagram/scrollSettingsModel/#currentzoom), [`zoomFactor`](../api/diagram/scrollSettingsModel/#zoomfactor), [`maxZoom`](../api/diagram/scrollSettingsModel/#maxzoom), [`minZoom`](../api/diagram/scrollSettingsModel/#minzoom), [`scrollLimit`](../api/diagram/scrollSettingsModel/#scrolllimit) , [`canAutoScroll`](../scrollSettingsModel/#canautoscroll) , [`autoScrollBorder`](../api/diagram/marginmodel/), [`padding`](../api/diagram/marginmodel/) , [`scrollableArea`](../api/diagram/rect/). 
 
-## Define scroll status
+These properties enable you to read and adjust the scroll status, scroll offset, zoom levels, and more. For a comprehensive overview of these properties, refer to the [`Scroll Settings`](../api/diagram/scrollSettingsModel/)
 
-Diagram allows you to pan the diagram before loading, so that any desired region of a large diagram is made to view. You can programmatically pan the diagram with the [`horizontalOffset`](../api/diagram/scrollSettings) and [`verticalOffset`](../api/diagram/scrollSettings) properties of scroll settings. The following code illustrates how to set pan the diagram programmatically.
+## Define scroll offset
 
-In the following example, the vertical scroll bar is scrolled down by 50 px and horizontal scroll bar is scrolled to right by 100 px.
+The diagram allows you to pan before loading, ensuring that any desired region of a large diagram is visible. You can programmatically pan the diagram using the [`horizontalOffset`](../api/diagram/scrollSettingsModel/#horizontaloffset) and [`verticalOffset`](../api/diagram/scrollSettingsModel/#verticaloffset) properties of the scroll settings. The following code illustrates how to programmatically pan the diagram upon initialization also defined scrollLimit as 'Infinity' to scroll infinitely in diagram. To learn more about scrollLimit refer to [`scrollLimit`](#scroll-limit)
+
+In the example below, the vertical scrollbar is scrolled down by 100 px, and the horizontal scrollbar is scrolled to the right by 100 px.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -50,9 +52,18 @@ In the following example, the vertical scroll bar is scrolled down by 50 px and 
 {% previewsample "page.domainurl/code-snippet/diagram/scrollSettings-cs1" %}
 {% endif %}
 
-## Update scroll status
+## Update scroll offset at runtime
 
-You can programmatically change the scroll offsets at runtime by using the client-side method update. The following code illustrates how to change the scroll offsets and zoom factor at runtime.
+There are several ways to update the scroll offset at runtime:
+
+* `Scrollbar`: Use the horizontal and vertical scrollbars of the diagram.
+* `Mousewheel`: Scroll vertically with the mouse wheel. Hold the Shift key while scrolling to scroll horizontally.
+* `Pan Tool`: Activate the ZoomPan [`tool`](../api/diagram/diagramTools/) in the diagram to scroll by panning.
+* `Touch`: Use touchpad gestures for scrolling.
+
+### Programmatically update Scroll Offset
+
+You can programmatically change the scroll offsets of diagram by customizing the [`horizontalOffset`](../api/diagram/scrollSettingsModel/#horizontaloffset) and [`verticalOffset`](../api/diagram/scrollSettingsModel/#verticaloffset)  of [`Scroll Settings`](../api/diagram/scrollSettingsModel/) at runtime. The following code illustrates how to change the scroll offsets at runtime.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -81,18 +92,82 @@ You can programmatically change the scroll offsets at runtime by using the clien
 {% previewsample "page.domainurl/code-snippet/diagram/scrollSettings-cs2" %}
 {% endif %}
 
+## Update zoom at runtime
+
+### Zoom using mouse wheel
+
+Another way to zoom in and out the diagram is by using the mouse wheel. This method is a quick and convenient way to zoom in and out without having to use any additional tools or gestures.
+
+- Zoom in: Press Ctrl+mouse wheel, then scroll upward.
+
+- Zoom out: Press Ctrl+mouse wheel, then scroll downward.
+
+### Zoom using Keyboard Shortcuts
+
+Using keyboard shortcuts is a quick and easy way to zoom the diagram without having to use the mouse or touchpad.
+
+- Zoom in: Press Ctrl and the plus(+) key.
+
+- Zoom out: Press Ctrl and the minus(-) key.
+
+### Programmatically update zoom
+
+You can programmatically change the current zoom of diagram by utilizing the [`zoomTo`](../api/diagram/#zoomto) public method.
+
+#### ZoomOptions
+
+The [`zoomTo`](../api/diagram/#zoomto) method takes one parameter [`zoomOptions`](../api/diagram/zoomOptions/). In that zoomOptions we can specify the [`focusPoint`](../api/diagram/pointModel/), [`type`](../api/diagram/zoomTypes/) and [`zoomFactor`](../api/diagram/zoomOptions/#zoomfactor)
+
+ The following example shows how to zoom-in and zoom-out the diagram using zoomTo method
+
+ {% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/scrollSettings-cs8/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/scrollSettings-cs8/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/scrollSettings-cs8" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/scrollSettings-cs8/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/scrollSettings-cs8/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/diagram/scrollSettings-cs8" %}
+{% endif %}
+
+For more information on various ways to zoom and pan the diagram, refer to [`zoomPan with various ways`](https://support.syncfusion.com/kb/article/15147/how-to-zoom-and-pan-in-javascript-diagram-with-various-ways)
+
 ## AutoScroll
 
-Autoscroll feature automatically scrolls the diagram, whenever the node or connector is moved beyond the boundary of the diagram. So that, it is always visible during dragging, resizing, and multiple selection operations. Autoscroll is automatically triggered when any one of the following is done towards the edges of the diagram.
+The autoscroll feature automatically scrolls the diagram when a node or connector is moved beyond its boundary. This ensures that the element remains visible during operations like dragging, resizing, and selection.
 
-* Node dragging, resizing
-* Connection editing
-* Rubber band selection
-* Label dragging
+The autoscroll behavior triggers automatically when any of the following actions occur towards the edges of the diagram:
 
-The diagram client-side event [`ScrollChange`](../api/diagram) gets triggered when the autoscroll (scrollbars) is changed and you can do your own customization in this event.
+- Node dragging or resizing
+- Connector control point editing
+- Rubber band selection
 
-The autoscroll behavior in your diagram can be enabled/disabled by using the [`canAutoScroll`](../api/diagram/scrollSettings) property of the diagram. The following code example illustrates how to set autoscroll.
+The client-side event [`ScrollChange`](../api/diagram/iScrollChangeEventArgs/) is triggered when autoscroll occurs, allowing for customizations. Refer [`scollChange-event`](#scroll-change-event) for more information.
+
+Autoscroll behavior can be enabled or disabled using the  [`canAutoScroll`](../scrollSettingsModel/#canautoscroll) property of the diagram.
+
+### Autoscroll border
+
+The autoscroll border defines the maximum distance from the mouse pointer to the diagram edge that triggers autoscroll. By default, this distance is set to 15 pixels for all sides (left, right, top, and bottom). You can adjust this using the [`autoScrollBorder`](../api/diagram/marginmodel/) property of the scroll settings.
+
+The following example demonstrates how to configure autoscroll:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -121,48 +196,24 @@ The autoscroll behavior in your diagram can be enabled/disabled by using the [`c
 {% previewsample "page.domainurl/code-snippet/diagram/scrollSettings-cs3" %}
 {% endif %}
 
-## Autoscroll border
+N> To use auto scroll the scrollLimit should be set as 'Infinity'
 
-The autoscroll border is used to specify the maximum distance between the object and diagram edge to trigger autoscroll. The default value is set as 15 for all sides (left, right, top, and bottom) and it can be changed by using the [`autoScrollBorder`](../api/diagram/scrollSettings) property of page settings. The following code example illustrates how to set autoscroll border.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/diagram/scrollSettings-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/diagram/scrollSettings-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/diagram/scrollSettings-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/diagram/scrollSettings-cs4/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/diagram/scrollSettings-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/diagram/scrollSettings-cs4" %}
-{% endif %}
 
 ## Scroll limit
 
-The scroll limit allows you to define the scrollable region of the diagram. It includes the following options:
+The [`scrollLimit`](../api/diagram/scrollSettingsModel/#scrolllimit) allows you to define the scrollable region of the diagram. It includes the following options:
 
-* Allows to scroll in all directions without any restriction.
-* Allows to scroll within the diagram content.
-* Allows to scroll within the specified scrollable area.
-* The [`scrollLimit`](../api/diagram/scrollSettings) property of scroll settings helps to limit the scrolling.
+* `Infinity`: Allows scrolling in all directions without any restriction.
+* `Diagram`: Allows scrolling within the diagram region.
+* `Limited`: Allows scrolling within a specified scrollable area.
 
-The scrollSettings [`scrollableArea`](../api/diagram/scrollSettings) allow to extend the scrollable region that is based on the scroll limit.
-The following code example illustrates how to specify the scroll limit.
+The `scrollLimit` property in scroll settings helps to define these limits.
+
+### Scrollable Area
+
+Scrolling beyond a particular rectangular area can be restricted by using the [`scrollableArea`](../api/diagram/rect/) property in [`scrollSettings`](../api/diagram/scrollSettingsModel/). To restrict scrolling beyond a custom region, set the scrollLimit to "limited" and define the desired bounds in `scrollableArea` property.
+
+The following code example illustrates how to specify the scroll limit and customize the scrollable area.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -193,9 +244,9 @@ The following code example illustrates how to specify the scroll limit.
 
 ## Scroll Padding
 
-The [`padding`](../api/diagram/scrollSettings) property of scroll settings allows you to extend the scrollable region that is based on the scroll limit.
+The [`padding`](../api/diagram/marginmodel/) property of the scroll settings allows you to extend the scrollable region based on the scroll limit. This property is useful for adding extra space around the diagram content, making it easier to navigate and interact with elements near the edges.
 
-The following code example illustrates how to set scroll padding to diagram region.
+The following code example illustrates how to set scroll padding for the diagram region:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -224,37 +275,55 @@ The following code example illustrates how to set scroll padding to diagram regi
 {% previewsample "page.domainurl/code-snippet/diagram/scrollSettings-cs6" %}
 {% endif %}
 
-## Scrollable Area
+## Reset scroll
 
-Scrolling beyond any particular rectangular area can be restricted by using the [`scrollableArea`](../api/diagram/scrollSettings) property of scroll settings. To restrict scrolling beyond any custom region, set the [`scrollLimit`](../api/diagram/scrollSettings) as “limited”. The following code example illustrates how to customize scrollable area.
+The [`reset`](../api/diagram/#reset) method resets the zoom and scroller offsets to their default values.
+
+``` javascript
+//Resets the scroll and zoom to default values
+ diagram.reset();
+
+```
+
+## UpdateViewport
+
+The [`updateViewPort`](../api/diagram) method is used to update the dimensions of the diagram viewport.
+
+```javascript
+//Updates diagram viewport
+diagram.updateViewPort();
+
+```
+
+## Events
+
+### Scroll change event
+
+The [`scrollChange`](../api/diagram/iScrollChangeEventArgs/) event is triggered whenever the scrollbar is updated. This can occur during actions such as zooming in, zooming out, using the mouse wheel, or panning. The following example shows how to capture the `scrollChange` event.
 
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/diagram/scrollSettings-cs7/index.ts %}
+{% include code-snippet/diagram/scrollSettings-cs9/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/diagram/scrollSettings-cs7/index.html %}
+{% include code-snippet/diagram/scrollSettings-cs9/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/diagram/scrollSettings-cs7" %}
+{% previewsample "page.domainurl/code-snippet/diagram/scrollSettings-cs9" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/diagram/scrollSettings-cs7/index.js %}
+{% include code-snippet/diagram/scrollSettings-cs9/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/diagram/scrollSettings-cs7/index.html %}
+{% include code-snippet/diagram/scrollSettings-cs9/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/diagram/scrollSettings-cs7" %}
+{% previewsample "page.domainurl/code-snippet/diagram/scrollSettings-cs9" %}
 {% endif %}
-
-## UpdateViewport
-
-The [`updateViewPort`](../api/diagram) method is used to update the diagram page and view size at runtime.

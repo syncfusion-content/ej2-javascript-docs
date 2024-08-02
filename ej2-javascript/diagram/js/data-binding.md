@@ -11,19 +11,21 @@ domainurl: ##DomainURL##
 
 # Data binding in ##Platform_Name## Diagram control
 
-* Diagram can be populated with the `nodes` and `connectors` based on the information provided from an external data source.
+Its essential for binding external data to the diagram, enabling dynamic creation of nodes and connectors based on the provided data. Here's a detailed explanation of the key properties and their usage:
 
-* Diagram exposes its specific data-related properties allowing you to specify the data source fields from where the node information has to be retrieved from.
+## DataSource settings
 
-* The [`dataManager`](../api/diagram/dataSourceModel/#datamanager-datamanager) property is used to define the data source either as a collection of objects or as an instance of `DataManager` that needs to be populated in the diagram.
+The [`dataSourceSettings`](../api/diagram/dataSourceModel/) property of diagram configures the external data source that binds to the diagram, making it possible to populate the diagram with nodes and connectors dynamically.
 
-* The [`ID`](../api/diagram/dataSourceModel/#id-string) property is used to define the unique field of each JSON data.
+* [`Data Manager`](../api/diagram/dataSourceModel/#datamanager) - Defines the data source as a collection of objects or an instance of DataManager to populate the diagram.
 
-* The [`parentId`](../api/diagram/dataSourceModel/#parentid-string) property is used to defines the parent field which builds the relationship between ID and parent field.
+* [`ID`](../api/diagram/dataSourceModel/#id) - The unique identifier for each data in the data source.
 
-* The [`root`](../api/diagram/dataSourceModel/#root-string) property is used to define the root node for the diagram populated from the data source.
+* [`parentId`](../api/diagram/dataSourceModel/#parentid) - Establishes the hierarchical relationship between nodes by linking each node to its parent node. This property is vital for creating tree structures within the diagram.
 
-* To explore those properties, see [`DataSourceSettings`](../api/diagram/dataSourceModel/).
+* [`root`](../api/diagram/dataSourceModel/#root) - Specifies the root node of the diagram when data is loaded. This root node serves as the starting point for the diagram's structure.
+
+* The [`doBinding`](../api/diagram/dataSourceModel/#dobinding) function is used to customize a node based on the data source. It is triggered during the initialization of each node, allowing you to apply specific configurations or data-driven customizations to the node.
 
 * Diagram supports two types of data binding. They are:
 
@@ -32,9 +34,9 @@ domainurl: ##DomainURL##
 
 ## Local data
 
-Diagram can be populated based on the user defined JSON data (Local Data) by mapping the relevant data source fields.
+Diagram can be populated based on user-defined JSON data (Local Data) by mapping the relevant data source fields.
 
-To map the user defined JSON data with diagram, configure the fields of [`dataSourceSettings`](../api/diagram/dataSourceModel/). The following code example illustrates how to bind local data with the diagram.
+To map user-defined JSON data to the diagram, configure the fields in [`dataSourceSettings`](../api/diagram/dataSourceModel/). The following code example illustrates how to bind local data with the diagram.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -47,15 +49,17 @@ To map the user defined JSON data with diagram, configure the fields of [`dataSo
         
 {% previewsample "page.domainurl/code-snippet/diagram/dataBinding-cs1" %}
 
+N> To convert the data source into nodes and connectors, `DataBinding` should be injected into the diagram.
+
 ## Remote data
 
-You can bind the diagram with remote data by using [`dataManager`].
+You can bind the diagram with remote data by using [`dataManager`](../api/diagram/dataSourceModel/#datamanager). 
 
-It uses two different classes: `DataManager` for processing and `Query` for serving data. `DataManager` communicates with data source and `Query` generates data queries that are read by the [`dataManager`](../api/diagram/dataSourceModel/).
+[`DataManager`](https://ej2.syncfusion.com/documentation/data) can be bound to remote data source by assigning service end point URL to the `url` property. With the provided url, the DataManager handles all communication with the data server with help of queries.
 
-To learn more about data manager, refer to [`Data Manager`](../api/diagram/dataSourceModel/).
+When querying data, the **DataManager** will convert the query object(Query) into server request after calling [`executeQuery`](../api/data/dataManager/#executequery) and waits for the server response(`JSON` format).
 
-To bind remote data to the diagram,configure the fields of [`dataSourceSettings`](../api/diagram/dataSourceModel/). The following code illustrates how to bind remote data to the diagram.
+ The following code illustrates how to bind remote data to the diagram.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

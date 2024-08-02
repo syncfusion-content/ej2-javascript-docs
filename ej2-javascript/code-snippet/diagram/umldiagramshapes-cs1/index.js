@@ -1,38 +1,39 @@
-/**
- * Tooltip sample
- */
+
 var diagram;
 
 var nodes = [
-    {
-      id: "Patient",
-      style: {
-        fill: '#26A0DA',
+  {
+    id: 'Patient',
+    style: {
+      fill: '#26A0DA',
+    },
+    shape: {
+      type: 'UmlClassifier',
+      //Define class object
+      classShape: {
+        name: 'Patient',
+        //Define class attributes
+        attributes: [{ name: 'accepted', type: 'Date' }],
+        //Define class methods
+        methods: [{ name: 'getHistory', type: 'getHistory' }],
       },
-      shape: {
-        type: "UmlClassifier",
-        classShape: {
-          name: "Patient",
-          attributes: [          
-            createProperty("allergies", "String[*]")
-          ],
-          methods: [createMethods("getHistory", "History")]
-        },
-        classifier: "Class"
-      },
-      offsetX: 200,
-      offsetY: 250
-    }    
-  ];
+      classifier: 'Class',
+    },
+    offsetX: 200,
+    offsetY: 250,
+  },
+];
 function createProperty(name, type) {
   return { name: name, type: type };
 }
 function createMethods(name, type) {
   return { name: name, type: type };
 }
-diagram = new ej.diagrams.Diagram({
-  width: '100%',
-  height: '600px',
-  nodes: nodes,
-}, '#element');
-
+diagram = new ej.diagrams.Diagram(
+  {
+    width: '100%',
+    height: '600px',
+    nodes: nodes,
+  },
+  '#element'
+);

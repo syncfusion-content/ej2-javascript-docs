@@ -1,5 +1,6 @@
-import { Diagram, NodeModel } from '@syncfusion/ej2-diagrams';
+import { Diagram, NodeModel, SwimLaneModel } from '@syncfusion/ej2-diagrams';
 let node: NodeModel = {
+  id: 'swim1',
   shape: {
     type: 'SwimLane',
     orientation: 'Horizontal',
@@ -19,8 +20,7 @@ let node: NodeModel = {
         // customization of lane header
         header: {
           annotation: { content: 'Online Consumer' },
-          style: { fontSize: 11 },
-          style: { fill: 'red' },
+          style: { fontSize: 11, fill: 'red' },
         },
       },
     ],
@@ -48,11 +48,11 @@ let diagram: Diagram = new Diagram({
 // render initialized Diagram
 diagram.appendTo('#element');
 (document.getElementById('addLane') as HTMLInputElement).onclick = () => {
+  let swimlane = diagram.getObject('swim1');
   let lane = [
     {
-      id: 'lane1',
       height: 100,
-      style: { fill: 'green' },
+      style: { fill: 'lightgrey' },
       header: {
         annotation: {
           content: 'New LANE',
@@ -62,5 +62,25 @@ diagram.appendTo('#element');
       },
     },
   ];
-  diagram.addLanes(diagram.nodes[0], lane, 1);
+  /**
+   * To add lanes
+   * parameter 1 - The swimlane to which lanes will be added.
+   * parameter 2 - An array of LaneModel objects representing the lanes to be added.
+   * paramter 3 - The index at which the lanes should be inserted (optional).
+   */
+  diagram.addLanes(swimlane, lane, 1);
+};
+
+(document.getElementById('removelane') as HTMLInputElement).onclick = () => {
+  let swimlane: NodeModel = diagram.getObject('swim1');
+  //To get last lane in lane collection
+  let lane = (swimlane.shape as SwimLaneModel).lanes[
+    (swimlane.shape as SwimLaneModel).lanes.length - 1
+  ];
+  /**
+   * To remove lane
+   * parameter 1 - The swimlane to remove the lane from.
+   * parameter 2 - The lane to be removed
+   */
+  diagram.removeLane(swimlane, lane);
 };

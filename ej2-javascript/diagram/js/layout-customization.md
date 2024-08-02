@@ -115,6 +115,23 @@ The following code demonstrates how to set the initial orientation for the layou
         
 {% previewsample "page.domainurl/code-snippet/diagram/AutomaticLayout-cs13" %}
 
+## Exclude from layout
+
+In some cases, you may need one or two nodes not to be arranged based on the layout algorithm but instead positioned manually. You can exclude these nodes from the layout algorithm by setting the [`excludeFromLayout`](../api/diagram/nodeModel/#excludefromlayout) property to true.
+
+The following code example demonstrates how to exclude a node from the layout and position it manually:
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/AutomaticLayout-exclude/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/AutomaticLayout-exclude/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/AutomaticLayout-exclude" %}
+
 ## Fixed node
 
 Layout provides support to arrange the nodes with reference to the position of a fixed node and set it to the [`fixedNode`](../api/diagram/layoutModel/#fixednode) of the layout property. This is helpful when you try to expand/collapse a node. It might be expected that the position of the double-clicked node should not be changed.

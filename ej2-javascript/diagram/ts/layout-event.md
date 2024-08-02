@@ -47,36 +47,29 @@ The [`expandStateChange`](../api/diagram/iExpandStateChangeEventArgs/) will be t
 
 The following code example explains the `expandStateChange` event in the diagram.
 
-```javascript
-// Initializes the diagram
-let diagram: Diagram = new Diagram({
-  width: '100%',
-  height: '550px',
-  layout: {
-    type: 'HierarchicalTree',
-    horizontalSpacing: 25,
-    verticalSpacing: 30,
-    horizontalAlignment: 'Left',
-    verticalAlignment: 'Top',
-  },
-  dataSourceSettings: {
-    id: 'Name',
-    parentId: 'ReportingPerson',
-    dataManager: items,
-  },
-  getNodeDefaults: (obj: NodeModel) => {
-    obj.width = 200;
-    obj.height = 60;
-    obj.expandIcon.shape = 'Minus';
-    obj.collapseIcon.shape = 'Plus';
-    return obj;
-  },
-  expandStateChange: function (args) {
-    //We can get the expanded or collapsed node in args
-    console.log(args);
-  },
-});
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/AutomaticLayout-expState/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/AutomaticLayout-expState/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/AutomaticLayout-expState" %}
 
-diagram.appendTo('#element');
+## Animation complete event
 
-```
+The [`animationComplete`](../api/diagram/#animationcomplete) event is triggered after the animation of the diagram elements is completed. The following example demonstrates how to handle the animation complete event and customize based on the expand state of the root node.
+
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/AutomaticLayout-animComplete/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/AutomaticLayout-animComplete/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/AutomaticLayout-animComplete" %}

@@ -1,77 +1,50 @@
+import { Diagram, NodeModel, SymbolPalette } from '@syncfusion/ej2-diagrams';
 
-
-
-import {
-    Diagram,
-    NodeModel,
-    SymbolPalette,
-    SymbolInfo,
-    Node
-} from '@syncfusion/ej2-diagrams';
-//Initialize the basicshapes for the symbol palette
-export function getBasicShapes(): NodeModel[] {
-
-    let basicShapes: NodeModel[] = [{
-            id: 'Rectangle',
-            shape: {
-                type: 'Basic',
-                shape: 'Rectangle'
-            }
-        },
-        {
-            id: 'Ellipse',
-            shape: {
-                type: 'Basic',
-                shape: 'Ellipse'
-            }
-        },
-        {
-            id: 'Hexagon',
-            shape: {
-                type: 'Basic',
-                shape: 'Hexagon'
-            }
-        }
-    ];
-    return basicShapes;
+//Initialize the basic shapes for the symbol palette
+function getBasicShapes(): NodeModel[] {
+  let nodes: NodeModel[] = [
+    {
+      id: 'rectangle',
+      shape: {
+        type: 'Basic',
+        shape: 'Rectangle',
+      },
+    },
+    {
+      id: 'plus',
+      shape: {
+        type: 'Basic',
+        shape: 'Plus',
+      },
+    },
+    {
+      id: 'triangle',
+      shape: {
+        type: 'Basic',
+        shape: 'RightTriangle',
+      },
+    },
+  ];
+  return nodes;
 }
 //Initializes the symbol palette
 let palette: SymbolPalette = new SymbolPalette({
-    expandMode: 'Multiple',
-    palettes: [{
-        id: 'basic',
-        expanded: true,
-        symbols: getBasicShapes(),
-        title: 'Basic Shapes',
-        iconCss: 'e-ddb-icons e-basic'
-    }],
-    symbolHeight: 80,
-    symbolWidth: 80,
-    enableAnimation: false,
-    //Sets the size, appearance and description of a symbol
-    getSymbolInfo: (symbol: Node | Connector): SymbolInfo => {
-        if (symbol['text'] !== undefined) {
-            return {
-                width: 75,
-                height: 40,
-                //Add or remove the text for symbol palette item.
-                description: {
-                    //Defines the symbol description
-                    text: symbol['text'],
-                    //Defines how to handle the text when its size exceeds the given symbol size
-                    overflow: 'Wrap'
-                }
-            };
-        }
-        return {
-            width: 75,
-            height: 40,
-            description: {
-                text: symbol.shape['shape']
-            }
-        };
-    }
+  palettes: [
+    {
+      id: 'basic',
+      symbols: getBasicShapes(),
+      title: 'Basic Shapes',
+    },
+  ],
+   //Prevents dragging symbol from palette
+  allowDrag: false,
 });
 palette.appendTo('#element');
 
-
+let diagram = new Diagram(
+  {
+    width: 1000,
+    height: 500,
+  },
+  '#diagram'
+);

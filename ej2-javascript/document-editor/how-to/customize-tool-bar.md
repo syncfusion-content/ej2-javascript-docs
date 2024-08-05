@@ -25,7 +25,7 @@ DocumentEditorContainer allows you to customize(add, show, hide, enable, and dis
 let toolItem: CustomToolbarItemModel = {
     prefixIcon: "e-de-ctnr-lock",
     tooltipText: "Disable Image",
-    text: "Disable Image",
+    text: onWrapText("Disable Image"),
     id: "Custom"
 };
 
@@ -43,6 +43,19 @@ container.toolbarClick = (args: ClickEventArgs): void => {
             break;
     }
 };
+
+function onWrapText(text: string): string {
+  let content: string = '';
+    const index: number = text.lastIndexOf(' ');
+
+    if (index !== -1) {
+        content = text.slice(0, index) + "<div class='e-de-text-wrap'>" + text.slice(index + 1) + "</div>";
+    } else {
+        content = text;
+    }
+
+    return content;
+}
 ```
 
 >Note: Default value of `toolbarItems` is `['New', 'Open', 'Separator', 'Undo', 'Redo', 'Separator', 'Image', 'Table', 'Hyperlink', 'Bookmark', 'TableOfContents', 'Separator', 'Header', 'Footer', 'PageSetup', 'PageNumber', 'Break', 'InsertFootnote', 'InsertEndnote', 'Separator', 'Find', 'Separator', 'Comments', 'TrackChanges', 'Separator', 'LocalClipboard', 'RestrictEditing', 'Separator', 'FormFields', 'UpdateFields','ContentControl']`.

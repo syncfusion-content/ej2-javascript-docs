@@ -11,6 +11,81 @@ domainurl: ##DomainURL##
 
 # Save PDF file to Dropbox cloud file storage
 
+PDF Viewer allows to load PDF file from Drop Box using either the Standalone or Server-backed PDF Viewer. Below are the steps and a sample to demonstrate how to open a PDF from Drop Box.
+
+## Using Standalone PDF Viewer
+
+To load a PDF file from Dropbox cloud file storage in a PDF Viewer, you can follow the steps below
+
+**Step 1** Create a Dropbox API
+
+To create a Dropbox API App, you should follow the official documentation provided by Dropbox [link](https://www.dropbox.com/developers/documentation/dotnet#tutorial). The process involves visiting the Dropbox Developer website and using their App Console to set up your API app. This app will allow you to interact with Dropbox programmatically, enabling secure access to files and data.
+
+**Step 2:** Create a Simple PDF Viewer Sample in Typescript
+
+Start by following the steps provided in this [link](https://ej2.syncfusion.com/documentation/pdfviewer/getting-started) to create a simple PDF viewer sample in Typescript. This will give you a basic setup of the PDF viewer component.
+
+**Step 3:** Modify the `src/app/app.ts` File in the Angular Project
+
+1. Import the required namespaces at the top of the file:
+
+```typescript
+import { Dropbox } from 'dropbox';
+```
+
+2. Configure a custom toolbar item for the download function to save a PDF file in Azure Blob Storage.
+
+```typescript
+let toolItem1: CustomToolbarItemModel = {
+    prefixIcon: 'e-icons e-pv-download-document-icon',
+    id: 'download_pdf',
+    tooltipText: 'Download file',
+    align: 'right'
+};
+
+pdfviewer.toolbarSettings = { toolbarItems: [ 'OpenOption', 'PageNavigationTool', 'MagnificationTool', 'PanTool', 'SelectionTool', 'SearchOption', 'PrintOption', toolItem1, 'UndoRedoTool', 'AnnotationEditTool', 'FormDesignerEditTool', 'CommentTool', 'SubmitForm']}
+
+pdfviewer.toolbarClick = function (args) {
+    if (args.item && args.item.id === 'download_pdf') {
+        saveDocument();
+    }
+};
+```
+
+3. Retrieve the PDF viewer instance and save the current PDF as a Blob. Then, read the Blob using a FileReader to convert it into an ArrayBuffer, and upload the ArrayBuffer to Drop Box using the filesUpload method of the Drop Box instance.
+
+N> Replace **Your Access Token** with the actual Access Token of your Drop Box account.
+
+```typescript
+function saveDocument() {
+  pdfviewer.saveAsBlob().then(function (value) {
+    var reader = new FileReader();
+    reader.onload = async () => {
+      if (reader.result) {
+        const dbx = new Dropbox({ accessToken: 'Your Access Token' });
+        if(reader && reader.result){
+            const uint8Array = new Uint8Array(reader.result as ArrayBuffer);
+            dbx.filesUpload({ path: '/' + pdfviewer.fileName, contents: uint8Array })
+            .then(response => {
+                console.log(response);
+            })
+            .catch(error => {
+                console.error(error);
+            });
+        }
+      }
+    };
+    reader.readAsArrayBuffer(value);
+  });
+}
+```
+
+N> The **npm install dropbox** package must be installed in your application to use the previous code example.
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/open-save-pdf-documents-in-dropbox-cloud-file-storage/tree/master/Open%20and%20Save%20PDF%20in%20Drop%20Box%20using%20Standalone)
+
+## Using Server-Backed PDF Viewer
+
 To save a PDF file to Dropbox cloud file storage, you can follow the steps below:
 
 **Step 1** Create a Dropbox API
@@ -129,4 +204,4 @@ viewer.load('PDF_Succinctly.pdf', null);
 
 N> The **Dropbox.Api** NuGet package must be installed in your application to use the previous code example.
 
-[View sample in GitHub](https://github.com/SyncfusionExamples/open-save-pdf-documents-in-dropbox-cloud-file-storage)
+[View sample in GitHub](https://github.com/SyncfusionExamples/open-save-pdf-documents-in-dropbox-cloud-file-storage/tree/master/Open%20and%20Save%20PDF%20in%20Drop%20Box%20using%20Server-Backed)

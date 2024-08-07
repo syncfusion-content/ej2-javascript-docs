@@ -38,7 +38,7 @@ The following example demonstrates how to customize the palette properties.
 
 ## Animation
 
-The expand and collpase operation of symbol palette can be animated by utilizing the [`enableAnimation`](../api/diagram/symbolPaletteModel/#enableanimation) property of symbol palette. The following example demonstrates, how to enable and disable animation for symbol palette.
+The expand and collapse operation of symbol palette can be animated by utilizing the [`enableAnimation`](../api/diagram/symbolPaletteModel/#enableanimation) property of symbol palette. The following example demonstrates, how to enable and disable animation for symbol palette.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -154,6 +154,7 @@ The [`symbolDragSize`](../api/diagram/symbolPaletteModel/#symboldragsize) proper
         
 {% previewsample "page.domainurl/code-snippet/diagram/symbol-palette-dragSize" %}
 
+N> If the size of the symbol is not defined, the default size will be determined based on its shape.
 
 ## Expand Mode
 
@@ -201,7 +202,7 @@ When hovering over symbols in the symbol palette, the default tooltip displays t
 Refer to the image below for an illustration of the tooltip behavior in the symbol palette.
 
 
-![SymmbolPaletteTooltip](../diagram/images/SymbolPalatteTooltip.gif)
+![SymmbolPaletteTooltip](./images/symbol-palatte-tooltip.gif)
 
 ### Custom tooltip for symbols
 
@@ -239,11 +240,11 @@ The following code example demonstrates how to define different tooltips for the
 
 The following image illustrates the differentiation of tooltips displayed in the Symbol Palette and the Diagram.
 
-![SymmbolPaletteCustomTooltip](../diagram/images/SymbolCustomTooltip.gif)
+![SymmbolPaletteTooltip](./images/different-tooltip.gif)
 
 The following code snippet will demonstrate how to define two different tooltip for symbol in the symbol palette and dropped node in the diagram canvas.
 
-## Lacalization
+## Localization
 
 To localize the symbol palette search box, we need to define the [`locale`](../api/diagram/symbolPaletteModel/#locale) property of the symbol palette with our preferred culture. In the example below, we use **'de-DE**', which is the locale code for German as used in Germany.
 
@@ -315,7 +316,7 @@ You can filter the search results based on your specific requirements. To achiev
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/diagram/symbol-palette-cs13/index.to %}
+{% include code-snippet/diagram/symbol-palette-cs13/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/diagram/symbol-palette-cs13/index.html %}

@@ -38,7 +38,7 @@ var diagram = new ej.diagrams.Diagram(
         scrollLimit: 'Infinity',
         //Enable autoScroll
         canAutoScroll: true,
-        //Defines the autoScroll border of all the sides of diargam
+        //Defines the autoScroll border of all the sides of diagram
         autoScrollBorder: { left: 100, right: 100, top: 100, bottom: 100 },
       },
     },

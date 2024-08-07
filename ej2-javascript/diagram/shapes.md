@@ -128,9 +128,9 @@ Link 2: `http://stackoverflow.com/questions/4761711/local-image-in-canvas-in-chr
 
 Stretch and align the image content anywhere but within the node boundary.
 
-The scale property of the node allows to stretch the image as you desired (either to maintain proportion or to stretch). By default, the [`scale`](../api/diagram/image#scale-scale) property of the node is set as **meet**.
+The scale property of the node allows to stretch the image as you desired (either to maintain proportion or to stretch). By default, the [`scale`](../api/diagram/image/#scale) property of the node is set as **meet**. The [`align`](../api/diagram/imageAlignment/) property is used to set the alignment of the image.
 
-The following code illustrates how to scale or stretch the content of the image node.
+The following code illustrates how to use scale and align properties to stretch the image.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -167,6 +167,8 @@ The following table illustrates all the possible scale options for the image nod
 | Meet |![Meet Alignment](images/Image2.png) |
 | Slice |![Slice Alignment](images/Image3.png) |
 | Stretch |![Stretch Alignment](images/Image4.png) |
+
+N> To visualize the changes in image scaling, it is essential to use the align property along with scale.
 
 ## HTML
 

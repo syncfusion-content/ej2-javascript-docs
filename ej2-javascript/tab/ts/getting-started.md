@@ -79,7 +79,7 @@ The Tab CSS files are available in the `ej2-navigations` package folder. This ca
 
 ## Initialize the Tab using JSON items collection
 
-The Tab can be rendered by defining a JSON array. The item is rendered with [`header`](../api/tab/tabItem/#header) text and [`content`](../api/tab/tabItem/#content) for each Tab using [`items`](../api/tab#items) property.
+The Tab can be rendered by defining a JSON array. The item is rendered with [`header`](../api/tab/tabItem/#header) text and [`content`](../api/tab/tabItem/#content) for each Tab using [`items`](../api/tab/#items) property.
 
 * Add the HTML div tag with its id attribute as `element` in your `index.html` file to initialize the Tab.
 
@@ -284,6 +284,6 @@ tab.appendTo('#tab_html_markup');
 
 ## See Also
 
-* [How to load tab with DataSource](./how-to/load-tab-with-data-source/)
+* [How to load tab with DataSource](./how-to/load-tab-with-data-source)
 
 N> You can also explore our [JavaScript Tabs example](https://ej2.syncfusion.com/demos/#/material/tab/default.html) that shows you how to configure the Tabs in JavaScript.

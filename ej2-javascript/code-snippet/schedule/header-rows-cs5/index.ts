@@ -33,7 +33,7 @@ let scheduleObj: Schedule = new Schedule({
     ],
     views: [{ option: 'TimelineMonth' }],
     eventSettings: { dataSource: eventData }
-};
+});
 scheduleObj.appendTo('#Schedule');
 
 

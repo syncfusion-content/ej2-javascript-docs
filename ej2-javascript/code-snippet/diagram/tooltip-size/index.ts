@@ -34,7 +34,7 @@ let diagram: Diagram = new Diagram(
         //Defines mouse over tooltip for a node
         tooltip: {
           content:
-            'Syncfusion diargam nodes, connectors look and feel can also be customized any way you want. The JavaScript Diagram control provides a rich set of properties through which you can customize connector color, thickness, dash and dot appearance, corners, and even decorators',
+            'Syncfusion diagram nodes, connectors look and feel can also be customized any way you want. The JavaScript Diagram control provides a rich set of properties through which you can customize connector color, thickness, dash and dot appearance, corners, and even decorators',
           position: 'BottomCenter',
           relativeMode: 'Object',
           //Set size for tooltip

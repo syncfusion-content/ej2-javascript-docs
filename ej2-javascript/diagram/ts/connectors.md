@@ -322,8 +322,8 @@ The following image illustrates how the connector automatically re-routes the se
 
 ## See Also
 
-* [How to add annotations to the connector](./labels)
-* [How to enable/disable the behavior of the node](./constraints)
+* [How to add annotations to the connector](./connector-labels)
+* [How to enable/disable the behavior of the connector](./constraints#connector-constraints)
 * [How to add connectors to the symbol palette](./symbol-palette)
-* [How to perform the interaction on the connector](./interaction#connection-editing)
-* [How to create diagram connectors using drawing tools](./tools)
+* [How to perform the interaction on the connector](./interaction#connector-editing)
+* [How to create diagram connectors using drawing tools](./tools#draw-connectors)

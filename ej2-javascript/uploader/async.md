@@ -147,52 +147,23 @@ You can cancel the upload process by setting the upload event argument **eventar
 Here’s how to handle the server-side action for saving the file in server.
 
 ```c#
-[AcceptVerbs("Post")]
-public void Save()
+public async Task<IActionResult> Save(IFormFile UploadFiles)
 {
-    try
+    if (UploadFiles.Length > 0)
     {
-        if (HttpContext.Current.Request.Files.AllKeys.Length > 0)
+        if (!Directory.Exists(uploads)) // Create the directory if not exists
         {
-            var httpPostedFile = HttpContext.Current.Request.Files["UploadFiles"];
-
-            if (httpPostedFile != null)
-            {
-                var fileSave = HttpContext.Current.Server.MapPath("UploadedFiles");
-                var fileSavePath = Path.Combine(fileSave, httpPostedFile.FileName);
-                if (!File.Exists(fileSavePath))
-                {
-                    httpPostedFile.SaveAs(fileSavePath);
-                    HttpResponse Response = HttpContext.Current.Response;
-                    Response.Clear();
-                    Response.ContentType = "application/json; charset=utf-8";
-                    Response.StatusDescription = "File uploaded succesfully";
-                    Response.End();
-                }
-                else
-                {
-                    HttpResponse Response = HttpContext.Current.Response;
-                    Response.Clear();
-                    Response.Status = "400 File already exists";
-                    Response.StatusCode = 400;
-                    Response.StatusDescription = "File already exists";
-                    Response.End();
-                }
-            }
+            Directory.CreateDirectory(uploads);
         }
-    }
-    catch (Exception e)
-    {
-        HttpResponse Response = System.Web.HttpContext.Current.Response;
-        Response.Clear();
-        Response.ContentType = "application/json; charset=utf-8";
-        Response.StatusCode = 400;
-        Response.Status = "400 No Content";
-        Response.StatusDescription = e.Message;
-        Response.End();
-    }
-}
 
+        var filePath = Path.Combine(uploads, UploadFiles.FileName); // Get the file path
+        using (var fileStream = new FileStream(filePath, FileMode.Create)) // Create the file
+            {
+            await UploadFiles.CopyToAsync(fileStream); // Save the file
+                }
+                }
+    return Ok();
+            }
 ```
 
 ### Server-side configuration for saving and returning responses
@@ -345,38 +316,17 @@ You can remove the files which is not uploaded locally by clicking the remove ic
 Here’s how to handle the server-side action for removing the file from server.
 
 ```c#
-[AcceptVerbs("Post")]
-public void Remove()
+public void Remove(string UploadFiles)
 {
-    try
+    if (UploadFiles != null)
     {
-        var fileSave = "";
-        if (HttpContext.Current.Request.Form["cancel-uploading"] != null)
+        var filePath = Path.Combine(uploads, UploadFiles);
+        if (System.IO.File.Exists(filePath))
         {
-            fileSave = HttpContext.Current.Server.MapPath("UploadingFiles");
+            System.IO.File.Delete(filePath); // Delete the file
         }
-        else
-        {
-            fileSave = HttpContext.Current.Server.MapPath("UploadedFiles");
         }
-        var fileName = HttpContext.Current.Request.Files["UploadFiles"].FileName;
-        var fileSavePath = Path.Combine(fileSave, fileName);
-        if (File.Exists(fileSavePath))
-        {
-            File.Delete(fileSavePath);
         }
-    }
-    catch (Exception e)
-    {
-        HttpResponse Response = HttpContext.Current.Response;
-        Response.Clear();
-        Response.Status = "404 File not found";
-        Response.StatusCode = 404;
-        Response.StatusDescription = "File not found";
-        Response.End();
-    }
-}
-
 ```
 
 ## Auto Upload

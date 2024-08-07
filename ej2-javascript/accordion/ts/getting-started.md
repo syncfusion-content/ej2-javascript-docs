@@ -78,7 +78,7 @@ The Accordion CSS files are available in the `ej2-navigations` package folder. T
 
 Open the application in Visual Studio Code and add the Syncfusion JavaScript UI controls.
 
-The Accordion can be rendered by defining an array of [`items`](../api/accordion#items).
+The Accordion can be rendered by defining an array of [`items`](../api/accordion/#items).
 
 * Add the HTML div tag with its `id` attribute as `element` in your `index.html` file to initialize the Accordion.
 
@@ -196,6 +196,6 @@ You need to follow the below structure of HTML elements to render the Accordion.
 
 ## See Also
 
-* [How to load accordion items dynamically](./how-to/load-accordion-items-dynamically/)
+* [How to load accordion items dynamically](./how-to/load-accordion-items-dynamically)
 
 N> You can refer to our [JavaScript Accordion](https://www.syncfusion.com/javascript-ui-controls/js-accordion) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Accordion example](https://ej2.syncfusion.com/demos/#/fabric/accordion/default.html) that shows you how to render the Accordion in JavaScript.

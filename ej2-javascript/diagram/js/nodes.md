@@ -77,7 +77,7 @@ The following code illustrates how to add a nodes collection at runtime.
 
 ### Add node from palette
 
-Nodes can be predefined and added to the palette, and can be dropped into the diagram when needed. For more information about adding nodes from symbol palette, refer to [`Symbol Palette`](./symbol-palette.md).
+Nodes can be predefined and added to the palette, and can be dropped into the diagram when needed. For more information about adding nodes from symbol palette, refer to [`Symbol Palette`](./symbol-palette).
 
 
 {% tabs %}
@@ -93,7 +93,7 @@ Nodes can be predefined and added to the palette, and can be dropped into the di
 
 ### Create node through data source
 
-Nodes can be generated automatically with the information provided through dataSource property. The default properties for these nodes are fetched from default settings ([`getNodeDefaults`](../api/diagram/#getnodedefaults)). For more information about data source, refer to  [`DataBinding`](./data-binding.md).
+Nodes can be generated automatically with the information provided through dataSource property. The default properties for these nodes are fetched from default settings ([`getNodeDefaults`](../api/diagram/#getnodedefaults)). For more information about data source, refer to  [`DataBinding`](./data-binding).
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -177,9 +177,9 @@ The following code example demonstrates how to convert a tree view element into 
 
 ## See Also
 
-* [How to add annotations to the node](./labels)
+* [How to add annotations to the node](./node-labels.md)
 * [How to add ports to the node](./ports)
-* [How to enable/disable the behavior of the node](./constraints)
+* [How to enable/disable the behavior of the node](./constraints#node-constraints)
 * [How to add nodes to the symbol palette](./symbol-palette)
 * [How to edit the node visual interface](./interaction#selection)
-* [How to create diagram nodes using drawing tools](./tools)
+* [How to create diagram nodes using drawing tools](./tools#draw-nodes)

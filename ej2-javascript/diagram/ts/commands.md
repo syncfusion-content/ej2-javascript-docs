@@ -285,7 +285,7 @@ The [`sendBackward`](../api/diagram/#sendbackward) command moves the selected el
 {% previewsample "page.domainurl/code-snippet/diagram/commands-cs6" %}
 
 
-The Z-order commands can also be performed using keyboard shortcuts. For more information, refer to the [`keyboard commands`](./interaction.md/#keyboard).
+The Z-order commands can also be performed using keyboard shortcuts. For more information, refer to the [`keyboard commands`](./interaction/#keyboard).
 
 ## Zoom
 
@@ -312,7 +312,7 @@ diagram.zoom(1.2, {
 });
 ```
 
-For more information about zoom refer to the [zoom](./scroll-settings.md/#update-zoom-at-runtime)
+For more information about zoom refer to the [zoom](./scroll-settings/#update-zoom-at-runtime)
 
 ## Nudge command
 
@@ -352,6 +352,8 @@ The arrow keys can be used to move the selected elements up, down, left, or righ
 ![Nudge Command](images/Commands_img4.png)
 
 Nudge commands are particularly useful for accurate placement of elements.
+
+N> The position change event will not trigger when using keyboard keys to move a node or connector.
 
 ## BringIntoView
 
@@ -471,7 +473,7 @@ The following code example illustrates how to disable the default cut and delete
 
 ## Undo-redo
 
-Undo/redo commands can be executed through shortcut keys. Shortcut key for undo is **`Ctrl+z`** and shortcut key for redo is **`Ctrl+y`**. For more information refer to the [`undo-redo`](./undo-redo.md)
+Undo/redo commands can be executed through shortcut keys. Shortcut key for undo is **`Ctrl+z`** and shortcut key for redo is **`Ctrl+y`**. For more information refer to the [`undo-redo`](./undo-redo)
 
 ## See Also
 

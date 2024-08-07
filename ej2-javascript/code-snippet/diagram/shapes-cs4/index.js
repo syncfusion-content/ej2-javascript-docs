@@ -3,16 +3,27 @@ var node = {
     offsetX: 250,
     offsetY: 250,
     // Size of the node
-    width: 100,
+    width: 300,
     height: 100,
-    shape: { type: 'Image', source: 'https://ej2.syncfusion.com/demos/src/diagram/employees/image16.png',  scale: 'None' },
+    shape: {
+      type: 'Image',
+      source:
+        'https://ej2.syncfusion.com/demos/src/diagram/employees/image16.png',
+      scale: 'Stretch',
+      align: 'None',
+    },
     //Customizes the appearances such as text, font, fill, and stroke.
-    style: { fill: 'none' }
-        };
-
-// initialize Diagram component
-
-var diagram = new ej.diagrams.Diagram({
-    width: '100%', height: '600px', nodes: [node]
-    }, '#element');
-
+    style: { fill: 'none' },
+  };
+  
+  // initialize Diagram component
+  
+  var diagram = new ej.diagrams.Diagram(
+    {
+      width: '100%',
+      height: '600px',
+      nodes: [node],
+    },
+    '#element'
+  );
+  

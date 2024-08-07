@@ -38,7 +38,7 @@ savedData = localStorage.getItem('fileName');
 
 ```
 
-The diagram can also be saved as raster or vector image files. For more information about saving the diagram as images, refer to the [`Print`](./print.md) and [`Export`](./export.md) section.
+The diagram can also be saved as raster or vector image files. For more information about saving the diagram as images, refer to the [`Print`](./print) and [`Export`](./export) section.
 
 ## Load
 

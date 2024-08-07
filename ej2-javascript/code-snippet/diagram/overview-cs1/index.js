@@ -9,6 +9,58 @@ ej.diagrams.Diagram.Inject(
   //Click event for Appearance of the Property Panel.
   
   //sets node default value
+
+  var hierarchicalTree = [
+    {
+      Name: 'Diagram',
+      fillColor: '#916DAF',
+    },
+    {
+      Name: 'Layout',
+      Category: 'Diagram',
+    },
+    {
+      Name: 'Tree Layout',
+      Category: 'Layout',
+    },
+    {
+      Name: 'Organizational Chart',
+      Category: 'Layout',
+    },
+    {
+      Name: 'Hierarchical Tree',
+      Category: 'Tree Layout',
+    },
+    {
+      Name: 'Radial Tree',
+      Category: 'Tree Layout',
+    },
+    {
+      Name: 'Mind Map',
+      Category: 'Hierarchical Tree',
+    },
+    {
+      Name: 'Family Tree',
+      Category: 'Hierarchical Tree',
+    },
+    {
+      Name: 'Management',
+      Category: 'Organizational Chart',
+    },
+    {
+      Name: 'Human Resources',
+      Category: 'Management',
+    },
+    {
+      Name: 'University',
+      Category: 'Management',
+    },
+    {
+      Name: 'Business',
+      Category: 'Management',
+    },
+  ];
+
   function nodeDefaults(obj, diagram) {
     obj.style = {
       fill: '#659be5',
@@ -60,7 +112,7 @@ ej.diagrams.Diagram.Inject(
     dataSourceSettings: {
       id: 'Name',
       parentId: 'Category',
-      dataSource: new ej.data.DataManager(window.hierarchicalTree),
+      dataSource: new ej.data.DataManager(hierarchicalTree),
       doBinding: function (nodeModel, data, diagram) {
         nodeModel.shape = { type: 'Text', content: data.Name };
       },

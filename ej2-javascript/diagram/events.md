@@ -87,8 +87,9 @@ The [`mouseWheel`](../api/diagram/iMouseWheelEventArgs/) event triggers when the
 {% previewsample "page.domainurl/code-snippet/diagram/events-cs2" %}
 {% endif %}
 
+## Other events
 
-There are several other events that will be triggered while interacting with diagram elements. To learn more about these events, refer to the sections on [`node-events`](./nodes-events.md) , [`connector-events`](./connector-events.md) , [`port-events`](./ports-interaction.md/#events) , [`annotation-events`](./label-events.md) , [`scroll-events`](./scroll-settings.md/#scroll-change-event) , [`history-events`](./undo-redo.md/#history-change-event) , [`layout-events`](./layout-event.md), [`user-handle-events`](./user-handle.md/#user-handle-events) , [`fixed-user-handle-events`](./user-handle.md/#fixed-user-handle-events) , [`Symbol-palette-events`](./palette-events.md).
+There are several other events that will be triggered while interacting with diagram elements. To learn more about these events, refer to the sections on [`node-events`](./nodes-events) , [`connector-events`](./connector-events) , [`port-events`](./ports-interaction/#events) , [`annotation-events`](./label-events) , [`scroll-events`](./scroll-settings/#scroll-change-event) , [`history-events`](./undo-redo/#history-change-event) , [`layout-events`](./layout-event), [`user-handle-events`](./user-handle/#user-handle-events) , [`fixed-user-handle-events`](./user-handle/#fixed-user-handle-events) , [`Symbol-palette-events`](./palette-events).
 
 
 

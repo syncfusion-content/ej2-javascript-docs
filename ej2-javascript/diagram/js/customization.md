@@ -172,7 +172,7 @@ The [`angle`](../api/diagram/shadowModel/#angle), [`distance`](../api/diagram/sh
 
 ## Provide additional information to the node
 
-The [`addInfo`](../api/diagram/nodeModel/#addinfo) property of the node allows you to maintain additional information to the node. You can sepecify either object or string value.
+The [`addInfo`](../api/diagram/nodeModel/#addinfo) property of the node allows you to maintain additional information to the node. You can specify either object or string value.
 
 The following code shows how to set the AddInfo value.
 
@@ -196,7 +196,7 @@ var nodes = [
 
 ## Constraints
 
-The [`constraints`](../api/diagram/node#constraints-nodeconstraints) property of the node allows you to enable/disable certain behaviours of the node. For more information about node constraints refer to the [`Node Constraints`](./constraints.md)
+The [`constraints`](../api/diagram/node#constraints-nodeconstraints) property of the node allows you to enable/disable certain behaviors of the node. For more information about node constraints refer to the [`Node Constraints`](./constraints)
 
 ## Stack order
 

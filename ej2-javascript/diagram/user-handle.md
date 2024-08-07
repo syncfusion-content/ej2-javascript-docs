@@ -172,7 +172,7 @@ The diagram provides support to show a tooltip when the mouse hovers over any us
 {% previewsample "page.domainurl/code-snippet/diagram/userhandle-cs4" %}
 {% endif %}
 
-You can also customize other properties of the tooltip, such as [`position`](../api/diagram/diagramTooltipModel/#position), [`width`](../api/diagram/diagramTooltipModel/#width), [`height`](../api/diagram/diagramTooltipModel/#height), etc. For more information refer to the [`tooltip`](./tool-tip.md) section.
+You can also customize other properties of the tooltip, such as [`position`](../api/diagram/diagramTooltipModel/#position), [`width`](../api/diagram/diagramTooltipModel/#width), [`height`](../api/diagram/diagramTooltipModel/#height), etc. For more information refer to the [`tooltip`](./tool-tip) section.
 
 ## Appearance
 
@@ -535,7 +535,7 @@ The diagram provides support to show a tooltip when the mouse hovers over any fi
 {% previewsample "page.domainurl/code-snippet/diagram/fixeduserhandle-cs3" %}
 {% endif %}
 
-You can also customize other properties of the tooltip, such as [`position`](../api/diagram/diagramTooltipModel/#position), [`width`](../api/diagram/diagramTooltipModel/#width), [`height`](../api/diagram/diagramTooltipModel/#height), etc. For more information refer to the [`tooltip`](./tool-tip.md) section.
+You can also customize other properties of the tooltip, such as [`position`](../api/diagram/diagramTooltipModel/#position), [`width`](../api/diagram/diagramTooltipModel/#width), [`height`](../api/diagram/diagramTooltipModel/#height), etc. For more information refer to the [`tooltip`](./tool-tip) section.
 
 ### Appearance
 

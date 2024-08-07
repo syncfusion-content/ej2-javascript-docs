@@ -11,7 +11,7 @@ var connectors: ConnectorModel[] = [
         content: 'annotation',
         offset: 0.2,
         alignment: 'After',
-        displacement: { x: 50, y: 10 },
+        displacement: { x: 50, y: 50 },
       },
     ],
   },

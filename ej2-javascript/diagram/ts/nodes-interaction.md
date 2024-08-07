@@ -38,7 +38,7 @@ A node can be selected at runtime by using the [`select`](../api/diagram/#select
 |Method | Parameter | Description|
 |----|----|----|
 |[`unSelect`](../api/diagram/#unselect)| NodeModel/ConnectorModel | The object to remove from the selection.|
-|[`clearSelection`](../api/diagram/#clearSelection)| - | Clears all the selection in the diargam.|
+|[`clearSelection`](../api/diagram/#clearSelection)| - | Clears all the selection in the diagram.|
 
 ## Drag
 

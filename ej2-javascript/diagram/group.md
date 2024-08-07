@@ -458,7 +458,7 @@ The following code illustrates how to add a stack panel.
 
 ## Interaction
 
-Group node interactions can be performed similarly to normal nodes. Fundamental diagram interactions like selecting, dragging, resizing, and rotating apply equally to group nodes. For more informatation refer to the [`nodes interactions`](./nodes-interaction.md)
+Group node interactions can be performed similarly to normal nodes. Fundamental diagram interactions like selecting, dragging, resizing, and rotating apply equally to group nodes. For more informatation refer to the [`nodes interactions`](./nodes-interaction)
 
 ### Selecting a Node Group
 
@@ -468,13 +468,13 @@ When a child element within a node group is clicked, the entire contained node g
 
 ## Events
 
-The events triggered when interacting with group nodes are similar to those for individual nodes. For more information, refer to the [`nodes events`](./nodes-events.md)
+The events triggered when interacting with group nodes are similar to those for individual nodes. For more information, refer to the [`nodes events`](./nodes-events)
 
 ## See Also
 
-* [How to add annotations to the node](./labels)
+* [How to add annotations to the node](./node-labels)
 * [How to add ports to the node](./ports)
 * [How to enable/disable the behavior of the node](./constraints)
 * [How to add nodes to the symbol palette](./symbol-palette)
 * [How to create diagram nodes using drawing tools](./tools)
-* [How to perform the interaction on the group](./interaction#selection)
+* [How to perform the interaction on the group](./interaction#selecting-a-group)

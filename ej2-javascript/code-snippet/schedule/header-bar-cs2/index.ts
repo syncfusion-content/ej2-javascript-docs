@@ -34,7 +34,7 @@ let scheduleObj: Schedule = new Schedule({
                 }
             };
         }
-    }
+    },
     eventSettings: { dataSource: scheduleData }
 });
 scheduleObj.appendTo('#Schedule');

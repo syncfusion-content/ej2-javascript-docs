@@ -53,7 +53,7 @@ The following code example illustrates how to draw a path shape.
 
 ### Text Nodes
 
-Similarly, you can draw a text node by setting the type of shape as 'Text' in the [`drawingObject`](../api/diagram/#drawingobject) property. The [`text`](../api/diagram/textmodel/) type node contains a property called content, which specifies the text within the node. You can add thae content to the text node once you finish drawing the node. Here is how you can draw a text node at runtime:
+Similarly, you can draw a text node by setting the type of shape as 'Text' in the [`drawingObject`](../api/diagram/#drawingobject) property. The [`text`](../api/diagram/textmodel/) type node contains a property called content, which specifies the text within the node. You can add the content to the text node once you finish drawing the node. Here is how you can draw a text node at runtime:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -184,6 +184,8 @@ To activate panning mode set the [`tool`](../api/diagram#tool) property of the d
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/diagram/Tools-cs7" %}
+
+N> Please note that panning the diagram is not possible when 'multiplePage' is set to false if any diagram object (node or connector) is outside the defined page break area.
 
 ## Events
 

@@ -2,7 +2,7 @@
 
 
 import { Accordion, TreeView } from '@syncfusion/ej2-navigations';
-import { DocDB, DownloadDB, PicDB} from 'datasource.ts'
+import { DocDB, DownloadDB, PicDB} from './datasource.ts'
 
   //Initialize Accordion component
     let acrdnObj: Accordion = new Accordion({

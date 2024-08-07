@@ -201,4 +201,4 @@ diagram.removeData();
 
 ## See Also
 
-* [How to arrange the diagram nodes and connectors using varies layout](./automatic-layout)
+* [How to arrange the diagram nodes and connectors using various layout](./automatic-layout)

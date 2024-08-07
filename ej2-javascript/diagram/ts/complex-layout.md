@@ -46,6 +46,7 @@ The following code example illustrates how to create a complex hierarchical tree
 
 ![Complex hierarchical tree layout](images/complex-2.png)
 
+N> In Diagram Layouts, all root nodes will always render at the same level. This default behavior cannot be changed to render different trees at distinct levels.
 
 ## Line Distribution
 

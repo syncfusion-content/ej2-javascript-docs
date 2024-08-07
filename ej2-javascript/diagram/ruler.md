@@ -58,7 +58,7 @@ The HorizontalRuler’s [`interval`](../api/diagram/diagramRuler/#interval) prop
 
 The HorizontalRuler’s  [`tickAlignment`](../api/diagram/diagramRuler/#tickalignment) property aligns the ruler ticks to the left or right side, while the VerticalRuler’s  [`tickAlignment`](../api/diagram/diagramRuler/#tickalignment) aligns them to the top or bottom.
 
-The HorizontalRuler’s [`thichness`](../api/diagram/diagramRuler/#thickness) property sets the thickness of the horizontal ruler, and the VerticalRuler’s [`thichness`](../api/diagram/diagramRuler/#thickness) property sets the thickness of the vertical ruler.
+The HorizontalRuler’s [`thickness`](../api/diagram/diagramRuler/#thickness) property sets the thickness of the horizontal ruler, and the VerticalRuler’s [`thickness`](../api/diagram/diagramRuler/#thickness) property sets the thickness of the vertical ruler.
 
 The following code shows how the diagram ruler can be customized.
 
@@ -126,4 +126,4 @@ The following code demonstrates how to use the `arrangeTick` function to customi
 
 The HorizontalRuler’s [`markerColor`](../api/diagram/diagramRuler/#markercolor) and VerticalRuler’s [`markerColor`](../api/diagram/diagramRuler/#markercolor) properties are used to define the ruler marker color and marker will be shown while hovering mouse over the diagram canvas.
 
-N> : The MarkerColor property can be customized using the [`marker`](./style/#customizing-the-ruler-marker-color) CSS style.
+N> The MarkerColor property can be customized using the [`marker`](./style/#customizing-the-ruler-marker-color) CSS style.

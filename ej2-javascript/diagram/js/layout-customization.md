@@ -162,7 +162,7 @@ Diagram allows to expand/collapse the subtrees of a layout. The node’s isExpan
         
 {% previewsample "page.domainurl/code-snippet/diagram/AutomaticLayout-cs15" %}
 
-For more details about customizing the expand and collapse icon refer [`expand Collapse`](./expandAndCollapse.md)
+For more details about customizing the expand and collapse icon refer [`expand Collapse`](./expandAndCollapse)
 
 ## Layout animation
 

@@ -61,20 +61,20 @@ The following code example illustrates how to align connector annotations.
 
 ## Displacement of annotation
 
-[`Displacement`](../api/diagram/pointmodel/) refers dispalcement of an annotation from its actual position. A connector annotation can be displaced to a particular distance by using a displacement property of the pathAnnotation. The following example shows how to set displacement for the connector annotation.
+[`Displacement`](../api/diagram/pointmodel/) refers displacement of an annotation from its actual position. A connector annotation can be displaced to a particular distance by using a displacement property of the pathAnnotation. The following example shows how to set displacement for the connector annotation.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/diagram/annotations-cs7/index.js %}
+{% include code-snippet/diagram/annotations-conDisp/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/diagram/annotations-cs7/index.html %}
+{% include code-snippet/diagram/annotations-conDisp/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/diagram/annotations-cs7" %}
+{% previewsample "page.domainurl/code-snippet/diagram/annotations-conDisp" %}
 
-N> Displacement is only applicatble when we use alignment as `After` or `Before`.
+N> Displacement is only applicable when we use alignment as `After` or `Before`.
 
 ## Segment angle for annotation
 

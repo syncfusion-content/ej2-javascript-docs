@@ -7,7 +7,7 @@ let nodes = [
     offsetY: 50,
     annotations: [
       {
-        content: 'Click node',
+        content: 'Node 1',
       },
     ],
     style: {
@@ -27,6 +27,3 @@ var diagram = new ej.diagrams.Diagram({
 });
 diagram.appendTo('#element');
 
-document.getElementById('resetSegments').onclick = () => {
-  diagram.resetSegments();
-};

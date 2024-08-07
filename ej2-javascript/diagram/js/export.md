@@ -19,7 +19,7 @@ N> To Export diagram, you need to inject `PrintAndExport` in the diagram.
 
 ```JavaScript
 
-var diagram = new ej.diargams.Diagram({
+var diagram = new ej.diagrams.Diagram({
     width: 1500, height: 1500
 });
 diagram.appendTo('#element');
@@ -101,7 +101,7 @@ The following code example demonstrates how to export the diagram as raw data.
 
 ```JavaScript
 
-var diagram = new ej.diargams.Diagram({
+var diagram = new ej.diagrams.Diagram({
     width: 1500, height: 1500
 });
 diagram.appendTo('#element');
@@ -190,7 +190,7 @@ Diagram provides support to export the diagram as image for [`stretch`](../api/d
 The following code example illustrates how to export the region occupied by the diagram elements.
 
 ```JavaScript
-var diagram = new ej.diargams.Diagram({
+var diagram = new ej.diagrams.Diagram({
     width: 1500, height: 1500
 });
 diagram.appendTo('#element');

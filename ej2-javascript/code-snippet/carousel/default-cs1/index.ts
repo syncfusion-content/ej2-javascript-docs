@@ -11,7 +11,6 @@ const carouselObj: Carousel = new Carousel({
     { template: '<figure class="img-container"><img src="https://ej2.syncfusion.com/products/images/carousel/bee-eater.png" alt="bee-eater" style="height:100%;width:100%;" /><figcaption class="img-caption">Bee-eater</figcaption></figure>' }
   ],
   animationEffect: "Fade",
-  },
 });
 carouselObj.appendTo("#carousel");
 

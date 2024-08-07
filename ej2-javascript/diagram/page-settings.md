@@ -153,7 +153,7 @@ The [`multiplePage`](../api/diagram/pageSettingsModel/#multiplepage) and [`showP
 {% previewsample "page.domainurl/code-snippet/diagram/pagesettings-cs3" %}
 {% endif %}
 
-The color of the page break lines can be customized by overriding the styles of the .e-diagram-page-break class. For more details refer to [`CSS customization`](./style.md/#customizing-the-page-breaks)
+The color of the page break lines can be customized by overriding the styles of the .e-diagram-page-break class. For more details refer to [`CSS customization`](./style/#customizing-the-page-breaks)
 
 ## Boundary constraints
 
@@ -163,7 +163,7 @@ There are three types of boundary constraints. They are:
 - Infinity
 - Diagram
 - Page
-To explore these constraints further, refer to [`Boundary Constraints`](./constraints.md/#boundary-constraints).
+To explore these constraints further, refer to [`Boundary Constraints`](./constraints/#boundary-constraints).
 
 Below is an example illustrating how to define boundary constraints within the diagram:
 

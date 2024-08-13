@@ -8,12 +8,15 @@ let chart: Chart = new Chart({
         interval: 1
     },
     primaryYAxis: {
-        minimum: 0, maximum: 80,
-        interval: 10, title: 'Medal Count'
+        minimum: 0, 
+        maximum: 80,
+        interval: 10, 
+        title: 'Medal Count'
     },
     series: [{
         dataSource: cylindricalData,
-        xName: 'country', yName: 'gold', tooltipMappingName:'tooltipMappingName',
+        xName: 'country', yName: 'gold', 
+        tooltipMappingName: 'tooltipMappingName',
         // Series type as column series with cylinder shape
         type: 'Column', columnFacet: 'Cylinder'
     }],

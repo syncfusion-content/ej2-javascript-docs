@@ -1,4 +1,4 @@
-var chartData = [
+var stackedData = [
     { x: new Date(2006, 0, 1), y: 34, y1: 51, y2: 14, y3: 37 },
     { x: new Date(2007, 0, 1), y: 20, y1: 26, y2: 34, y3: 15 },
     { x: new Date(2008, 0, 1), y: 40, y1: 37, y2: 73, y3: 53 },
@@ -10,36 +10,37 @@ var chartData = [
     { x: new Date(2014, 0, 1), y: 48, y1: 55, y2: 34, y3: 23 }
 ];
 var chart = new ej.charts.Chart({
-        primaryXAxis: {
-            title: 'Years',
-            valueType: 'DateTime',
-            intervalType: 'Years',
-            labelFormat: 'y',
-            edgeLabelPlacement: 'Shift'
-        },
-        primaryYAxis:
+    primaryXAxis: {
+        valueType: 'DateTime',
+        title: 'Years',
+        intervalType: 'Years',
+        labelFormat: 'y',
+        edgeLabelPlacement: 'Shift'
+    },
+    primaryYAxis: {
+        title: 'Temperature (%)',
+        labelFormat: '{value}%',
+        rangePadding: 'None'
+    },
+    series: [
         {
-            title: 'Temperature (%)',
-            labelFormat: '{value}%',
-            rangePadding: 'None'
+            dataSource: stackedData, xName: 'x', yName: 'y',
+            //Series type as 100% stacked area series
+            type: 'StackingArea100', name: 'USA'
+        }, 
+        {
+            dataSource: stackedData, xName: 'x', yName: 'y1',
+            type: 'StackingArea100', name: 'UK'
+        }, 
+        {
+            dataSource: stackedData, xName: 'x', yName: 'y2',
+            type: 'StackingArea100', name: 'Canada'
         },
-        series: [
-            {
-                dataSource: chartData, xName: 'x', yName: 'y',
-                //Series type as 100% stacked area series
-                type: 'StackingArea100',
-                name: 'USA',
-            }, {
-                dataSource: chartData, xName: 'x', yName: 'y1',
-                type: 'StackingArea100', name: 'UK',
-            }, {
-                dataSource: chartData, xName: 'x', yName: 'y2',
-                type: 'StackingArea100', name: 'Canada',
-            }, {
-                dataSource: chartData, xName: 'x', yName: 'y3',
-                type: 'StackingArea100', name: 'China',
-            }
-        ],
-        title: 'Annual Temperature Comparison'
+        {
+            dataSource: stackedData, xName: 'x', yName: 'y3',
+            type: 'StackingArea100', name: 'China'
+        }
+    ],
+    title: 'Annual Temperature Comparison'
 }, '#element');
 

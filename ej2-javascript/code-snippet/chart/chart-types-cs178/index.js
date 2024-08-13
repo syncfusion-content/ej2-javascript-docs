@@ -18,7 +18,7 @@ var chart = new ej.charts.Chart({
     {
         title: 'GDP (%) Per Annum',
         rangePadding: 'None',
-        labelFormat: '{value}%',
+        labelFormat: '{value}%'
     },
     //Series type as 100% stacked column series with cylinderical shape
     series: [

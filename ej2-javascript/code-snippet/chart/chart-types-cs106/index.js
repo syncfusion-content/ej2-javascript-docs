@@ -1,28 +1,31 @@
-var chartData = [
-    { x: 2005, y: 28 }, { x: 2006, y: 25 },{ x: 2007, y: 26 }, { x: 2008, y: 27 },
-    { x: 2009, y: 32 }, { x: 2010, y: 35 }, { x: 2011, y: 30 }
+var lineData = [
+    { month: 'Jan', sales: 35 },
+    { month: 'Feb', sales: 28 },
+    { month: 'Mar', sales: 34 },
+    { month: 'Apr', sales: 32 },
+    { month: 'May', sales: 40 },
+    { month: 'Jun', sales: 32 },
+    { month: 'Jul', sales: 35 },
+    { month: 'Aug', sales: 55 },
+    { month: 'Sep', sales: 38 },
+    { month: 'Oct', sales: 30 },
+    { month: 'Nov', sales: 25 },
+    { month: 'Dec', sales: 32 }
 ];
 var chart = new ej.charts.Chart({
     primaryXAxis: {
-        title: 'Year',
-        minimum: 2004, maximum: 2012, interval: 1
+        valueType: 'Category',
+        title: 'Month'
     },
     primaryYAxis: {
-        minimum: 20, maximum: 40, interval: 5,
-        title: 'Efficiency',
-        labelFormat: '{value}%'
+        title: 'Sales count'
     },
-    series:[{
-        dataSource: chartData,
-        //fill for chart series
-        fill: 'red',
-        //line width as 4 for chart series
-        width:4,
-        //dash array value as 5,5
-        dashArray: '5,5',
-        xName: 'x', yName: 'y',
-        name: 'India', type: 'Line'
+    series: [{
+        dataSource: lineData,
+        xName: 'month', yName: 'sales',
+        type: 'Line',
+        fill: 'red'
     }],
-    title: 'Efficiency of oil-fired power production'
+    title: 'Monthly Sales Comparison'
 }, '#element');
 

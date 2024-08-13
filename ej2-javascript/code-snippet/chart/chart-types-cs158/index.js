@@ -1,30 +1,28 @@
-var chartData = [
-    { x: 2005, y: 28 }, { x: 2006, y: 25 },{ x: 2007, y: 26 }, { x: 2008, y: 27 },
-    { x: 2009, y: 32 }, { x: 2010, y: 35 }, { x: 2011, y: 30 }
+var stepData = [
+    { x: 2005, y: 370 }, { x: 2006, y: 378 },
+    { x: 2007, y: 416 }, { x: 2008, y: 404 },
+    { x: 2009, y: 390 }, { x: 2010, y: 376 },
+    { x: 2011, y: 365 }, { x: 2012, y: 350 }
 ];
 var chart = new ej.charts.Chart({
     primaryXAxis: {
-        title: 'Year',
-        minimum: 2004, maximum: 2012, interval: 1
+        minimum: 2004, 
+        maximum: 2013, 
+        interval: 1,
+        title: 'Year'
     },
     primaryYAxis: {
-        minimum: 20, maximum: 40, interval: 5,
-        title: 'Efficiency',
-        labelFormat: '{value}%'
+        minimum: 330, 
+        maximum: 450, 
+        interval: 30,
+        title: 'Intensity (g/kWh)'
     },
     series:[{
-        dataSource: chartData,
-        //fill for chart series
-        fill: 'red',
-        //line width as 4 for chart series
-        width:4,
-        //dash array value as 5,5
-        dashArray: '5,5',
+        dataSource: stepData,
         xName: 'x', yName: 'y',
         type: 'StepLine',
-        opacity: 0.5,
-        step: 'Left'
+        fill: 'green'
     }],
-    title: 'Efficiency of oil-fired power production'
+    title: 'CO2 - Intensity Analysis'
 }, '#element');
 

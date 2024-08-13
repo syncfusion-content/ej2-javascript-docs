@@ -1,27 +1,36 @@
-
-
-
 import { Chart, LineSeries, ErrorBar } from '@syncfusion/ej2-charts';
-import { numData } from './datasource.ts';
+import { chartData } from './datasource.ts';
 Chart.Inject(LineSeries, ErrorBar);
 
 let chart: Chart = new Chart({
-   series: [{
-        dataSource: numData,
+    primaryXAxis: {
+        minimum: 2005, 
+        maximum: 2012, 
+        interval: 1,
+        title: 'Year'
+    },
+    primaryYAxis: {
+        minimum: 3, maximum: 12,
+        interval: 1, title: 'Percentage',
+        labelFormat: '{value}%'
+    },
+    series: [{
+        dataSource: chartData,
         xName: 'x', yName: 'y',
         errorBar: {
             visible: true,
             type: 'Custom',
-            mode:'Both'
-            verticalPostiveError:3,
-            horizontalPositiveError:2,
-            verticalNegativeError:3,
-            horizontalNegativeError:2
-        },
+            mode: 'Both',
+            verticalPositiveError: 2,
+            horizontalPositiveError: 1,
+            verticalNegativeError: 2,
+            horizontalNegativeError: 1
+        }, 
+        marker: {
+            visible: true
+        }, 
+        animation: { enable: false },
         type: 'Line'
     }],
-
+    title: 'Unemployment rate (%)'
 }, '#element');
-
-
-

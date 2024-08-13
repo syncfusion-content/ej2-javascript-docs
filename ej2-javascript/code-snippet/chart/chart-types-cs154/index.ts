@@ -1,25 +1,36 @@
-
-
-
-import { Chart, StackingStepAreaSeries, DateTime } from '@syncfusion/ej2-charts';
+import { Chart, StackingStepAreaSeries, Legend } from '@syncfusion/ej2-charts';
 import { stackedData } from './datasource.ts';
-Chart.Inject(StackingStepAreaSeries, DateTime);
+Chart.Inject(StackingStepAreaSeries, Legend);
 
 let chart: Chart = new Chart({
-        series: [
-            {
-                dataSource: stackedData, xName: 'x', yName: 'y',
-                //Series type as stacked area series
-                type: 'StackingStepArea', fill: 'red', opacity: 0.5,
-                border: {width: 2, color: 'yellow'}, dashArray: '5,5', step: 'Center'
-            }, {
-                dataSource: stackedData, xName: 'x', yName: 'y2', opacity: 0.5,
-                type: 'StackingStepArea', fill: 'green', border: {width: 2, color: 'yellow'}, 
-                dashArray: '5,5', step: 'Center'
-            }
-        ],
-
+    primaryXAxis: {
+        title: 'Years',
+        edgeLabelPlacement: 'Shift',
+        majorTickLines: { width: 0 }
+    },
+    primaryYAxis:
+    {
+        title: 'Spend in Billions',
+        minimum: 0,
+        maximum: 4,
+        interval: 1,
+        labelFormat: '{value}B',
+        majorTickLines: { width: 0 }
+    },
+    series: [
+        {
+            dataSource: stackedData, xName: 'x', yName: 'y',
+            //Series type as stacked area series
+            type: 'StackingStepArea', name: 'Organic', fill: '#ff4251'
+        },
+        {
+            dataSource: stackedData, xName: 'x', yName: 'y1',
+            type: 'StackingStepArea', name: 'Fair-trade', fill: '#4C4C4C'
+        },
+        {
+            dataSource: stackedData, xName: 'x', yName: 'y2',
+            type: 'StackingStepArea', name: 'Others', fill: '#794F1B'
+        }
+    ],
+    title: 'Trend in Sales of Ethical Produce'
 }, '#element');
-
-
-

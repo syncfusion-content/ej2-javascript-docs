@@ -1,34 +1,37 @@
-
-
-
-import { Chart, SplineRangeAreaSeries, DateTime } from '@syncfusion/ej2-charts';
-Chart.Inject(SplineRangeAreaSeries, DateTime);
-
-let series: Object[] = [];
-let value: number = 70;
-let point: Object;
-
-for (let i: number = 1; i < 70; i++) {
-    if (Math.random() > .5) {
-        value += Math.random();
-    } else {
-        value -= Math.random();
-    }
-    point = { x: new Date(1930 + i, 5, i), high: value, low: value - 25 };
-    series.push(point);
-}
+import { Chart, SplineRangeAreaSeries, Category, Legend } from '@syncfusion/ej2-charts';
+import { splinedata } from './datasource.ts';
+Chart.Inject(SplineRangeAreaSeries, Category, Legend);
 
 let chart: Chart = new Chart({
     primaryXAxis: {
-        valueType: 'DateTime',
+        valueType: 'Category',
+        title: 'Month',
+        edgeLabelPlacement: 'Shift',
+        majorGridLines: { width: 0 }
+    },
+    primaryYAxis: {
+        title: 'Temperature',
+        labelFormat: '{value}˚C',
+        lineStyle: { width: 0 },
+        minimum: 0,
+        maximum: 40,
+        majorTickLines: { width: 0 }
     },
     series: [
         {
-            type: 'SplineRangeArea', opacity: 0.7,
-            dataSource: series, fill: 'blue',
-            xName: 'x', high: 'high', low: 'low',
-        }],
+            type: 'SplineRangeArea',
+            dataSource: splinedata,
+            xName: 'x', high: 'high', 
+            low: 'low', name: 'England',
+            fill: 'blue'
+        },
+        {
+            type: 'SplineRangeArea',
+            dataSource: splinedata,
+            xName: 'x', high: 'high1', 
+            low: 'low1', name: 'India',
+            fill: 'violet'
+        }
+    ],
+    title: 'Monthly Temperature Range'
 }, '#element');
-
-
-

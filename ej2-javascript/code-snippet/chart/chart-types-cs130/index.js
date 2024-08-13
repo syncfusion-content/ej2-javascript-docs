@@ -1,28 +1,26 @@
 var chartData = [
-    { x: 1, y: 7 }, { x: 2, y: 5 }, { x: 3, y: 1 },
-    { x: 4, y: 14 }, { x: 5, y: 1 }, { x: 6, y: 10 },
-    { x: 7, y: 8 }, { x: 8, y: 6 }, { x: 9, y: 10 },
-    { x: 10, y: 10 }, { x: 11, y: 16 }, { x: 12, y: 6 },
-    { x: 13, y: 14 }, { x: 14, y: 7 }, { x: 15, y: 5 },
-    { x: 16, y: 2 }, { x: 17, y: 14 }, { x: 18, y: 7 },
-    { x: 19, y: 7 }, { x: 20, y: 10 }];
+    { x: 'Jan', y: -1 }, { x: 'Feb', y: -1 }, { x: 'Mar', y: 2 },
+    { x: 'Apr', y: 8 },  { x: 'May', y: 13 }, { x: 'Jun', y: 18 },
+    { x: 'Jul', y: 21 }, { x: 'Aug', y: 20 }, { x: 'Sep', y: 16 },
+    { x: 'Oct', y: 10 }, { x: 'Nov', y: 4 },  { x: 'Dec', y: 0 }
+];
 var chart = new ej.charts.Chart({
     primaryXAxis: {
-        valueType: 'Double',
-        title: 'Overs'
+        valueType: 'Category',
+        title: 'Month'
     },
     primaryYAxis: {
-        title: 'Runs'
+        minimum: -5, maximum: 30, interval: 5,
+        title: 'Temperature in Celsius',
+        labelFormat: '{value}°C'
     },
     series:[{
         dataSource: chartData,
         xName: 'x', yName: 'y',
-        name: 'England', type: 'SplineArea',  border: { width:2, color: 'red'}
+        // Series type as spline area series
+        type: 'SplineArea',
+        fill: 'blue'
     }],
-    title: 'England - Run Rate',
-    tooltip:{
-        enable:true
-    }
-
+    title: 'Climate Graph-2012'
 }, '#element');
 

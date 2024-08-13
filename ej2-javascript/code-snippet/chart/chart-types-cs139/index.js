@@ -10,20 +10,20 @@ var chartData = [
   { x: 'Sep', y: 33, y1: 34, y2: -5 },
   { x: 'Oct', y: 35, y1: 34, y2: -5.5 },
   { x: 'Nov', y: 40, y1: 41, y2: -6 },
-  { x: 'Dec', y: 42, y1: 42, y2: -6.5 },
+  { x: 'Dec', y: 42, y1: 42, y2: -6.5 }
 ];
 var chart = new ej.charts.Chart(
   {
     primaryXAxis: {
       valueType: 'Category',
-      title: 'Months',
+      title: 'Months'
     },
     primaryYAxis: {
       title: 'Percentage (%)',
       minimum: -20,
       maximum: 100,
       labelFormat: '{value}%',
-      edgeLabelPlacement: 'Shift',
+      edgeLabelPlacement: 'Shift'
     },
     series: [
       {
@@ -33,7 +33,7 @@ var chart = new ej.charts.Chart(
         dataSource: chartData,
         xName: 'x',
         yName: 'y',
-        border: { width: 2, color: 'red' },
+        fill: '#483D8B'
       },
       {
         type: 'StackingBar',
@@ -41,7 +41,7 @@ var chart = new ej.charts.Chart(
         dataSource: chartData,
         xName: 'x',
         yName: 'y1',
-        border: { width: 2, color: 'grey' },
+        fill: '#556B2F'
       },
       {
         type: 'StackingBar',
@@ -49,10 +49,10 @@ var chart = new ej.charts.Chart(
         dataSource: chartData,
         xName: 'x',
         yName: 'y2',
-        border: { width: 2, color: 'lime' },
-      },
+        fill: '#8B0000'
+      }
     ],
-    title: 'Sales Comparison',
+    title: 'Sales Comparison'
   },
   '#element'
 );

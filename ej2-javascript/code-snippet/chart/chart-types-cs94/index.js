@@ -5,7 +5,9 @@ var chartData = [
 ];
 var chart = new ej.charts.Chart({
     primaryXAxis: {
-        minimum: 2005, maximum: 2012, interval: 1,
+        minimum: 2005, 
+        maximum: 2012, 
+        interval: 1,
         title: 'Year'
     },
     primaryYAxis: {
@@ -19,18 +21,18 @@ var chart = new ej.charts.Chart({
         errorBar: {
             visible: true,
             type: 'Custom',
-            mode:'Both',
-            verticalPostiveError:3,
-            horizontalPositiveError:2,
-            verticalNegativeError:3,
-            horizontalNegativeError:2
-        }, marker: {
-            visible: true,
-        }, animation: { enable: false },
-        name: 'India',
+            mode: 'Both',
+            verticalPositiveError: 2,
+            horizontalPositiveError: 1,
+            verticalNegativeError: 2,
+            horizontalNegativeError: 1
+        }, 
+        marker: {
+            visible: true
+        }, 
+        animation: { enable: false },
         type: 'Line'
     }],
-    title: 'Unemployment rate (%)',
-
+    title: 'Unemployment rate (%)'
 }, '#element');
 

@@ -1,4 +1,4 @@
-var chartData = [
+var stackedData = [
     { x: '2014', y: 111.1, y1: 76.9, y2: 66.1, y3: 34.1 },
     { x: '2015', y: 127.3, y1: 99.5, y2: 79.3, y3: 38.2 },
     { x: '2016', y: 143.4, y1: 121.7, y2: 91.3, y3: 44.0 },
@@ -8,33 +8,37 @@ var chartData = [
     { x: '2020', y: 202.7, y1: 197.3, y2: 120.9, y3: 82.0 }
 ];
 var chart = new ej.charts.Chart({
-        primaryXAxis: {
-            title: 'Years',
-            interval: 1,
-            valueType: 'Category'
-        },
-        primaryYAxis:
+    primaryXAxis: {
+        title: 'Years',
+        interval: 1,
+        valueType: 'Category'
+    },
+    primaryYAxis:
+    {
+        title: 'Sales in Billions',
+        minimum: 0,
+        maximum: 700,
+        interval: 100,
+        labelFormat: '{value}B'
+    },
+    series: [
         {
-            title: 'Sales in Billions',
-            minimum: 0,
-            maximum: 400,
-            interval: 100,
-            labelFormat: '{value}B',
-        },
-        series: [
-            {
-                dataSource: chartData, xName: 'x', yName: 'y1', border: { width: 1.5, color: 'blue'},
-                 type: 'StackingColumn', stackingGroup: 'UKAndGermany'
-            }, {
-                dataSource: chartData, xName: 'x', yName: 'y2',
-                 type: 'StackingColumn',  stackingGroup: 'FranceAndItaly',border: { width: 1.5, color: 'yellow'}
-
-            }, {
-               dataSource: chartData, xName: 'x', yName: 'y3',
-                 type: 'StackingColumn',  stackingGroup: 'FranceAndItaly',border: { width: 1.5, color: 'red'}
-
-            }
-        ],
-        title: 'Mobile Game Market by Country'
+            dataSource: stackedData, xName: 'x', yName: 'y',
+            //Series type as stacked column
+            type: 'StackingColumn', name: 'UK', fill: '#2F4F4F'
+        }, 
+        {
+            dataSource: stackedData, xName: 'x', yName: 'y1',
+            type: 'StackingColumn', name: 'Germany', fill: '#556B2F'
+        }, 
+        {
+            dataSource: stackedData, xName: 'x', yName: 'y2',
+            type: 'StackingColumn', name: 'France', fill: '#8B0000'
+        }, 
+        {
+            dataSource: stackedData, xName: 'x', yName: 'y3',
+            type: 'StackingColumn', name: 'Italy', fill: '#00008B'
+        }
+    ],
+    title: 'Mobile Game Market by Country'
 }, '#element');
-

@@ -13,16 +13,27 @@ domainurl: ##DomainURL##
 
 ## Candle
 
-Candle series is similar to Hilo Open Close series, are used to represent the low, high, open and closing price over time. To render a candle series, use series [`type`](../../api/chart/seriesModel/#type-string) as `Candle` and inject `CandleSeries` module using `Chart.Inject(CandleSeries)` method.
+The Candle series, similar to the Hilo Open Close series, is used to represent the low, high, open, and closing prices over time. It is commonly used in financial charts to visualize stock price movements.
+
+To render a [`candle`](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/stock-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
+ 
+1. **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `Candle` in your chart configuration. This indicates that the data should be represented as a candle chart, providing a detailed view of stock price fluctuations by displaying the high, low, open, and close values for each time period.
+ 
+2. **Inject the CandleSeries module**: Use the `Chart.Inject(CandleSeries)` method to inject the `CandleSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering candle series are available in your chart.
+
+3. **Provide high, low, open, and close values**: The `Candle` series requires five fields (x, high, low, open, and close) to accurately display the stock's high, low, open, and close prices. Ensure that your data source includes these fields to create a detailed representation of stock price movements over time.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs87/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chart/chart-types-cs87/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/chart-types-cs87/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -42,11 +53,43 @@ Candle series is similar to Hilo Open Close series, are used to represent the lo
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs87" %}
 {% endif %}
 
-## Hollow Candles
+## Binding data with series
 
-Candle charts allow to visually compare the current price with previous price by coloring them.
+You can bind data to the chart using the [`dataSource`](../../api/chart/series/#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](../../api/chart/series/#xname), [`high`](../../api/chart/series/#high), [`low`](../../api/chart/series/#low), [`open`](../../api/chart/series/#open) and [`close`](../../api/chart/series/#close) properties.
 
-Candles are filled/left as hollow based on the following criteria.
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs381/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs381/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/chart-types-cs381/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs381" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs381/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs381/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs381" %}
+{% endif %}
+
+## Hollow candles
+
+Hollow candles in candle charts allow you to visually compare the current price with the previous price by coloring them differently. The candles are filled or left hollow based on the following criteria:
 
 <!-- markdownlint-disable MD033 -->
 <table>
@@ -56,33 +99,36 @@ Candles are filled/left as hollow based on the following criteria.
 </tr>
 <tr>
 <td>Filled</td>
-<td>candle sticks are filled when the close value is lesser than the open value</td>
+<td>Candlesticks are filled when the close value is less than the open value.</td>
 </tr>
 <tr>
 <td>Unfilled</td>
-<td>candle sticks are unfilled when the close value is greater than the open value</td>
+<td>Candlesticks are unfilled when the close value is greater than the open value.</td>
 </tr>
 </table>
 
-The color of the candle will be defined by comparing with previous values. Bear color will be applied when the current closing value is greater than the previous closing value. Bull color will be applied when the current closing value is less than the previous closing value.
+The color of the candle will be defined by comparing it with previous values. The bear color will be applied when the current closing value is greater than the previous closing value. The bull color will be applied when the current closing value is less than the previous closing value.
 
-By default, bullFillColor is set as red and bearFillColor is set as green.
+By default, the `bullFillColor` is set to **red** and the `bearFillColor` is set to **green**.
 
-## Solid Candles
+## Solid candles
 
-[`enableSolidCandles`](../../api/chart/seriesModel/#enableSolidCandles-string) is used to enable/disable the solid candles. By default is set to be false. The fill color of the candle will be defined by its opening and closing values.
+The [`enableSolidCandles`](../../api/chart/series/#enablesolidcandles) property is used to enable or disable solid candles. By default, it is set to **false**. The fill color of the candle will be determined by its opening and closing values.
 
-[`bearFillColor`](../../api/chart/seriesModel/#bearFillColor-string) will be applied when the opening value is less than the closing value.
-[`bullFillColor`](../../api/chart/seriesModel/#bullFillColor-string) will be applied when the opening value is greater than closing value.
+* The [`bearFillColor`](../../api/chart/series/#bearfillcolor) will be applied when the opening value is less than the closing value.
+* The [`bullFillColor`](../../api/chart/series/#bullfillcolor) will be applied when the opening value is greater than the closing value.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs88/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chart/chart-types-cs88/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/chart-types-cs88/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -102,7 +148,145 @@ By default, bullFillColor is set as red and bearFillColor is set as green.
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs88" %}
 {% endif %}
 
-## See Also
+## Empty points
+
+Data points with `null` or `undefined` values are considered empty. Empty data points are ignored and not plotted on the chart.
+
+**Mode**
+
+Use the [`mode`](../../api/chart/emptyPointSettings/#mode) property to define how empty or missing data points are handled in the series. The default mode for empty points is `Gap`.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs379/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs379/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/chart-types-cs379/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs379" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs379/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs379/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs379" %}
+{% endif %}
+
+**Fill**
+
+Use the [`fill`](../../api/chart/emptyPointSettings/#fill) property to customize the fill color of empty points in the series.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs380/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs380/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/chart-types-cs380/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs380" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs380/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs380/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs380" %}
+{% endif %}
+
+## Events
+
+### Series render
+
+The [`seriesRender`](../../api/chart#seriesrender) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs453/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs453/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/chart-types-cs453/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs453" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs453/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs453/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs453" %}
+{% endif %}
+
+### Point render
+
+The [`pointRender`](../../api/chart#pointrender) event allows you to customize each data point before it is rendered on the chart.
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs454/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs454/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/chart-types-cs454/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs454" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs454/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs454/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs454" %}
+{% endif %}
+
+## See also
 
 * [Data label](../data-labels/)
 * [Tooltip](../tool-tip/)

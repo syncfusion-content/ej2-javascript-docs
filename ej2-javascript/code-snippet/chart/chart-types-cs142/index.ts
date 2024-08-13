@@ -1,27 +1,39 @@
-
-
-
-import { Chart, StackingColumnSeries, Category } from '@syncfusion/ej2-charts';
+import { Chart, StackingColumnSeries, Category, Legend } from '@syncfusion/ej2-charts';
 import { stackedData } from './datasource.ts';
-Chart.Inject(StackingColumnSeries, Category);
+Chart.Inject(StackingColumnSeries, Category, Legend);
 
 let chart: Chart = new Chart({
-        series: [
-            {
-                dataSource: stackedData, xName: 'x', yName: 'y',
-                //Series type as stacked column
-                type: 'StackingColumn', border: { width: 1.5, color: 'blue'}
-            }, {
-                dataSource: stackedData, xName: 'x', yName: 'y1',
-                 type: 'StackingColumn',border: { width: 1.5, color: 'yellow'}
-            }, {
-                dataSource: stackedData, xName: 'x', yName: 'y2',
-                 type: 'StackingColumn',border: { width: 1.5, color: 'red'}
-
-            }
-        ],
-
+    primaryXAxis: {
+        title: 'Years',
+        interval: 1,
+        valueType: 'Category'
+    },
+    primaryYAxis:
+    {
+        title: 'Sales in Billions',
+        minimum: 0,
+        maximum: 700,
+        interval: 100,
+        labelFormat: '{value}B'
+    },
+    series: [
+        {
+            dataSource: stackedData, xName: 'x', yName: 'y',
+            //Series type as stacked column
+            type: 'StackingColumn', name: 'UK', fill: '#2F4F4F'
+        }, 
+        {
+            dataSource: stackedData, xName: 'x', yName: 'y1',
+            type: 'StackingColumn', name: 'Germany', fill: '#556B2F'
+        }, 
+        {
+            dataSource: stackedData, xName: 'x', yName: 'y2',
+            type: 'StackingColumn', name: 'France', fill: '#8B0000'
+        }, 
+        {
+            dataSource: stackedData, xName: 'x', yName: 'y3',
+            type: 'StackingColumn', name: 'Italy', fill: '#00008B'
+        }
+    ],
+    title: 'Mobile Game Market by Country'
 }, '#element');
-
-
-

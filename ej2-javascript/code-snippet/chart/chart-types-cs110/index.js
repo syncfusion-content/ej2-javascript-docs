@@ -5,8 +5,9 @@ var chartData = [
 var chart = new ej.charts.Chart({
     primaryXAxis: {
         title: 'Year',
-        minimum: 1900, maximum: 2000, interval: 10,
-        edgeLabelPlacement: 'Shift'
+        minimum: 1900, 
+        maximum: 2000, 
+        interval: 10
     },
     primaryYAxis: {
         minimum: 2, maximum: 5, interval: 0.5,
@@ -15,8 +16,7 @@ var chart = new ej.charts.Chart({
     series:[{
         dataSource: chartData,
         xName: 'x', yName: 'y',
-        opacity: 0.5, fill:'#69D2E7',
-        name: 'Product A',
+        fill:'#69D2E7',
         // Series type as polar series
         type: 'Polar',
         // Series draw type as area

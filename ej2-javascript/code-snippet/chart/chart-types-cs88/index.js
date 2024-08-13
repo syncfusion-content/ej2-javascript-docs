@@ -7,22 +7,25 @@ var chartData = [
 ];
 var chart = new ej.charts.Chart({
     primaryXAxis: {
-        title: 'Date',
         valueType: 'Category',
-        majorGridLines: { width: 0 },
+        title: 'Date',
+        majorGridLines: { width: 0 }
     },
     primaryYAxis:
     {
         title: 'Price',
-        minimum: 100,
+        minimum: 80,
         maximum: 200,
-        interval: 20,
+        interval: 20
     },
     series:[
         {
-            dataSource: chartData, width:2,
-            xName: 'x', open: 'open', close: 'close', high: 'high', low: 'low',
-            name: 'SHIRPUR-G',
+            dataSource: chartData,
+            xName: 'x', 
+            open: 'open', 
+            close: 'close', 
+            high: 'high', 
+            low: 'low',
             bearFillColor: '#e56590',
             bullFillColor: '#f8b883',
             // Series type as candle series

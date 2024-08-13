@@ -110,4 +110,4 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
 
 ## See Also
 
-[Types of Badge](https://ej2.syncfusion.com/javascript/documentation/badge/types)
+[Types of Badge](./types)

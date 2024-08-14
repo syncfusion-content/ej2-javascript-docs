@@ -43,6 +43,8 @@ The [`drawText`](https://ej2.syncfusion.com/javascript/documentation/api/image-e
 
 By utilizing the [`drawText`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawtext) method with these parameters, you can precisely position and customize text annotations within the image. This provides the flexibility to add labels, captions, or other text elements with specific font styles, sizes, and colors, enhancing the visual presentation and clarity of the image. 
 
+We have used the [`getImageDimension`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getimagedimension) method to obtain the current dimensions of an image, including its `clientX`, `clientY`, width, and height. Based on the `clientX` and `clientY` values, the user can precisely define the position for drawing annotations such as rectangles, ellipses, and more. 
+
 Here is an example of adding a text in a button click using [`drawText`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawtext) method. 
 
 In the following example, you can using the [`drawText`](../../api/image-editor/#drawtext) method in the button click event.
@@ -77,6 +79,8 @@ In the following example, you can using the [`drawText`](../../api/image-editor/
 ### Multiline text
 
 The [`drawText`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawtext) method in the Image Editor control is commonly used to insert text annotations into an image. If the provided text parameter contains a newline character (\n), the text will be automatically split into multiple lines, with each line appearing on a separate line in the annotation.
+
+We have used the [`getImageDimension`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getimagedimension) method to obtain the current dimensions of an image, including its `clientX`, `clientY`, width, and height. Based on the `clientX` and `clientY` values, the user can precisely define the position for drawing annotations such as rectangles, ellipses, and more. 
 
 In the following example, you can using the [`drawText`](../../api/image-editor/#drawtext) method in the button click event.
 
@@ -114,6 +118,8 @@ The [`deleteShape`](https://ej2.syncfusion.com/javascript/documentation/api/imag
 The [`shapeId`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapeid) is a unique identifier assigned to each text annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired text element. By specifying the [`shapeId`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapeid) associated with the text annotation you want to remove, you can effectively delete it from the image editor.
 
 To retrieve the inserted text annotations, you can utilize the [`getShapeSetting`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getshapesetting) method, which provides a collection of annotations represented by [`ShapeSettings`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/shapeSettings/). This method allows you to access and work with the annotations that have been inserted into the image.
+
+We have used the [`getImageDimension`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getimagedimension) method to obtain the current dimensions of an image, including its `clientX`, `clientY`, width, and height. Based on the `clientX` and `clientY` values, the user can precisely define the position for drawing annotations such as rectangles, ellipses, and more. 
 
 In the following example, the [`deleteShape`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#deleteshape) method is used in the button click event.
 
@@ -167,14 +173,14 @@ By leveraging the [`shapeChanging`](https://ej2.syncfusion.com/javascript/docume
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/annotation-cs9/index.js %}
+{% include code-snippet/image-editor/annotation-cs10/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs9/index.html %}
+{% include code-snippet/image-editor/annotation-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs9" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs10" %}
 {% endif %}
 
 ### Add Additional font family
@@ -417,6 +423,8 @@ The [`drawPath`](https://ej2.syncfusion.com/javascript/documentation/api/image-e
 
 * isSelected: Specifies to show the path in the selected state.
 
+We have used the [`getImageDimension`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getimagedimension) method to obtain the current dimensions of an image, including its `clientX`, `clientY`, width, and height. Based on the `clientX` and `clientY` values, the user can precisely define the position for drawing annotations such as rectangles, ellipses, and more.
+
 Here is an example of inserting rectangle, ellipse, arrow, path, and line in a button click event.
 
 {% if page.publishingplatform == "typescript" %}
@@ -511,6 +519,8 @@ The [`drawImage`](https://ej2.syncfusion.com/documentation/api/image-editor/#dra
 
 * isSelected: Specifies to show the image in the selected state.
 
+We have used the [`getImageDimension`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getimagedimension) method to obtain the current dimensions of an image, including its `clientX`, `clientY`, width, and height. Based on the `clientX` and `clientY` values, the user can precisely define the position for drawing annotations such as rectangles, ellipses, and more. 
+
 In the following example, you can use the [`drawImage`](https://ej2.syncfusion.com/documentation/api/image-editor/#drawimage) method in the button click event.
 
 {% if page.publishingplatform == "typescript" %}
@@ -540,4 +550,33 @@ In the following example, you can use the [`drawImage`](https://ej2.syncfusion.c
 {% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs13" %}
 {% endif %}
 
+### Customize Default Stroke Color for Shapes 
 
+We provide default settings for stroke color, stroke width, fill color, and other customizations. If users wish to modify only the default options while preserving their previously selected customizations, they can do so by utilizing the [`shapeChanging`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapechanging) event. Within this event, users can update the values in the `currentShapeSettings` object to apply their own preferences instead of the defaults. This approach allows conditional updates to the `currentShapeSettings`, ensuring that only the desired defaults are changed while maintaining the other settings. 
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/annotation-cs15/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs15/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs15" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/annotation-cs15/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs15/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs15" %}
+{% endif %}

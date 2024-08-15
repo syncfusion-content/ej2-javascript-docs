@@ -333,6 +333,8 @@ Use the [`border`](../../api/chart/emptyPointSettings/#border) property to custo
 
 The [`seriesRender`](../../api/chart#seriesrender) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
 
+{% if page.publishingplatform == "typescript" %}
+
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs425/index.ts %}
@@ -364,6 +366,8 @@ The [`seriesRender`](../../api/chart#seriesrender) event allows you to customize
 ### Point render
 
 The [`pointRender`](../../api/chart#pointrender) event allows you to customize each data point before it is rendered on the chart.
+
+{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

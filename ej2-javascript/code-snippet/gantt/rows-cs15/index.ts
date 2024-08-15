@@ -15,7 +15,7 @@ let gantt: Gantt = new Gantt({
     editDialogFields: [
         { type: 'General', headerText: 'General edit', fields: ["TaskID", "TaskName", "newinput"] },
         {type: 'Dependency', additionalParams: {allowPaging: true, allowSorting: true, toolbar: ["Search", "Print",]}},
-        { type: 'Resources', additionalParams: { allowSorting: true, allowPaging: true, toolbar: ["Search", "Print"], columns: [{ field: "newdata" }]}},
+        { type: 'Resources', additionalParams: { allowSorting: true, allowPaging: true, toolbar: ["Search", "Print"], columns: [{ field: "newData" }]}},
         {type: "Segments", additionalParams: {columns: [{ field: "segmenttask", width: "170px", headerText: "Segment Task" }],}}
     ],
     height: '450px',
@@ -32,6 +32,11 @@ let gantt: Gantt = new Gantt({
         child: 'subtasks',
         segments: 'Segments',
         notes:"note",
+    },
+    resourceFields: {
+        id: 'resourceId',
+        name: 'resourceName',
+        unit: 'resourceUnit'
     },
     editSettings: {
         allowAdding: true,

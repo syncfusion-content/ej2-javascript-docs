@@ -20,7 +20,7 @@ The Syncfusion JavaScript (global script) is an ES5 formatted pure JavaScript fr
 The Syncfusion JavaScript (ES5) UI controls are listed below.
 
 <style>
-# table
+## table
 {
 border:0 !important;
 line-height: 2!important;

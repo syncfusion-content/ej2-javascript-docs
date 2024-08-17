@@ -10,7 +10,7 @@ import { Browser } from '@syncfusion/ej2-base';
     width: '550px',
     height: '330px',
     shapeChanging: (args: shapeChanging) => {
-        if (args.currentShapeSettings.type === 'Text') {
+        if (args.action == "insert" && args.currentShapeSettings?.type === 'FreehandDraw') {
             args.currentShapeSettings.strokeColor = 'red';
         }
     },

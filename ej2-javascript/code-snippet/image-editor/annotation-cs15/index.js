@@ -5,7 +5,7 @@ var imageEditorObj = new ej.imageeditor.ImageEditor({
     height: '330px',
     toolbar: [],
     shapeChanging: (args) => {
-      if (args.currentShapeSettings.type === 'Text') {
+      if (args.action == "insert" && args.currentShapeSettings?.type === 'FreehandDraw') {
           args.currentShapeSettings.strokeColor = 'red';
       }
   },

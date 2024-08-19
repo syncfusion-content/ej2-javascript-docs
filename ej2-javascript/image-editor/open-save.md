@@ -307,13 +307,44 @@ To save an image as a base64 format, use the [`getImageData`](https://ej2.syncfu
 {% previewsample "page.domainurl/code-snippet/image-editor/open-save-cs7" %}
 {% endif %} 
 
-### Save the image aa byte[] 
+### Save the image as byte[]
 
-To save an image as a byte array (byte[]), use the [`getImageData`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getimagedata) method of the editor to retrieve the image data and convert it into a byte array. You can then invoke the open method on the Syncfusion Image Editor instance to load this byte array into the editor. The resulting byte array can be stored in a database for data management and maintenance. 
+To save an image as a byte array, use the [`getImageData`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getimagedata) method of the editor to retrieve the image data and convert it into a byte array. You can then invoke the open method on the Syncfusion Image Editor instance to load this byte array into the editor. The resulting byte array can be stored in a database for data management and maintenance. 
 
-### Save the image aa blob 
+### Save the image as blob
 
 To save an image as a blob, use the [`getImageData`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getimagedata) method of the editor to retrieve the image data and convert it into a blob. You can then invoke the open method on the Syncfusion Image Editor instance to load this byte array into the editor. The resulting byte array can be stored in a database for data management and maintenance. 
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/open-save-cs8/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/open-save-cs8/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/open-save-cs8" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/open-save-cs8/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/open-save-cs8/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/open-save-cs8" %}
+{% endif %}
+
+### Add Watermarks while saving the image 
+
+User can utilize the ‘[`beforeSave`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#beforesave)’ event, which triggers just before the image is downloaded, to apply a text annotation as a watermark. After the image is downloaded, the ‘[`saved`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#saved)’ event is triggered, allowing you to remove the watermark using the ‘[`deleteShape`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#deleteshape)’ method. This ensures that the watermark is only visible in the downloaded image and not in the editor. 
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -340,69 +371,11 @@ To save an image as a blob, use the [`getImageData`](https://ej2.syncfusion.com/
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/image-editor/open-save-cs9" %}
-{% endif %}
-
-### Add Watermarks while saving the image 
-
-User can utilize the ‘[`beforeSave`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#beforesave)’ event, which triggers just before the image is downloaded, to apply a text annotation as a watermark. After the image is downloaded, the ‘[`saved`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#saved)’ event is triggered, allowing you to remove the watermark using the ‘[`deleteShape`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#deleteshape)’ method. This ensures that the watermark is only visible in the downloaded image and not in the editor. 
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/open-save-cs10/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/open-save-cs10/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/image-editor/open-save-cs10" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/open-save-cs10/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/open-save-cs10/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/image-editor/open-save-cs10" %}
 {% endif %} 
 
 ### Remove default Save button and add custom button to save the image to server 
 
-User can leverage the ‘[`toolbar`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#toolbar)’ property to replace the default save button with a custom one. By doing so, you can use the '[`getImageData`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getimagedata)' method to retrieve the image data, convert it to base64 format, and then save it to the server. This approach gives you more control over the image-saving process.  
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/open-save-cs11/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/open-save-cs11/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/image-editor/open-save-cs11" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/open-save-cs11/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/open-save-cs11/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/image-editor/open-save-cs11" %}
-{% endif %} 
+User can leverage the ‘[`toolbar`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#toolbar)’ property to replace the default save button with a custom one. By doing so, you can use the '[`getImageData`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getimagedata)' method to retrieve the image data, convert it to base64 format, and then save it to the server. This approach gives you more control over the image-saving process. 
 
 ### Prevent default save option and save the image to specific location 
 

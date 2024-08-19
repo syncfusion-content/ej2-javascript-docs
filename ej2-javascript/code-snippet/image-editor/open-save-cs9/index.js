@@ -9,19 +9,23 @@ var imageEditorObj = new ej.imageeditor.ImageEditor({
         } else {
             imageEditorObj.open('bee-eater.png');
         }
-	}
+	},
+  beforeSave: () => {
+    var dimension = imageEditorObj.getImageDimension();
+    imageEditorObj.drawText(
+      dimension.x + 100,
+      dimension.y,
+      'Syncfusion',
+      'Arial',
+      40,
+      false,
+      false,
+      '#80330075'
+    );
+  },
+  saved: () => {
+    var shapes = imageEditorObj.getShapeSettings();
+    imageEditorObj.deleteShape(shapes[shapes.length - 1].id);
+  },
 });
 imageEditorObj.appendTo('#imageeditor');
-var blobUrl;
-document.getElementById('saveImage').onclick = function() {
-    var imageData = imageEditorObj.getImageData();
-    var canvas = document.createElement('canvas');
-    var ctx = canvas.getContext('2d');
-    canvas.width = imageData.width;
-    canvas.height = imageData.height;
-    ctx.putImageData(imageData, 0, 0);
-    var base64Url = canvas.toDataURL();
-    canvas.toBlob(function(blob){
-        blobUrl = URL.createObjectURL(blob);
-    });
-}

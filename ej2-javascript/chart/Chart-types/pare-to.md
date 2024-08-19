@@ -85,7 +85,7 @@ You can bind data to the chart using the [`dataSource`](../../api/chart/series/#
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs386" %}
 {% endif %}
 
-## Pareto line customization
+## Pareto customization
 
 ### Fill
 

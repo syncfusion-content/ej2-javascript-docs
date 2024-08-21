@@ -15,11 +15,11 @@ domainurl: ##DomainURL##
 
 To render a [spline](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/spline-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  
-1. **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `Spline` in your chart configuration. This indicates that the series should be represented as a smooth curve, connecting data points with a spline rather than straight lines.
- 
-2. **Inject the SplineSeries module**: Use the `Chart.Inject(SplineSeries)` method to inject the `SplineSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering spline series are available in your chart.
+* **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `Spline` in your chart configuration. This indicates that the series should be represented as a smooth curve, connecting data points with a spline rather than straight lines.
 
 {% if page.publishingplatform == "typescript" %}
+
+* **Inject the SplineSeries module**: Use the `Chart.Inject(SplineSeries)` method to inject the `SplineSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering spline series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

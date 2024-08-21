@@ -15,11 +15,11 @@ domainurl: ##DomainURL##
 
 To render a [stacked area](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/stacked-area-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  
-1. **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `StackingArea` in your chart configuration. This indicates that the data should be represented as a stacked area chart, which is ideal for showing the contribution of each part to a total over time or across other categorical data.
- 
-2. **Inject the StackingAreaSeries module**: Use the `Chart.Inject(StackingAreaSeries)` method to inject the `StackingAreaSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering stacked area series are available in your chart.
+* **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `StackingArea` in your chart configuration. This indicates that the data should be represented as a stacked area chart, which is ideal for showing the contribution of each part to a total over time or across other categorical data.
 
 {% if page.publishingplatform == "typescript" %}
+
+* **Inject the StackingAreaSeries module**: Use the `Chart.Inject(StackingAreaSeries)` method to inject the `StackingAreaSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering stacked area series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

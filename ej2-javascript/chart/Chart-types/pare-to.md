@@ -17,11 +17,11 @@ Pareto charts are used to find the cumulative values of data in different catego
 
 To render a `pareto` series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  
-1. **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `Pareto` in your chart configuration. This indicates that the data should be represented as a pareto chart, will use a combination of column and line series.
- 
-2. **Inject the necessary modules**: Use the `Chart.Inject(ParetoSeries, ColumnSeries, LineSeries)` method to inject the `ParetoSeries`, `ColumnSeries`, `LineSeries` modules into your chart. This step is essential, as it ensures that the necessary functionalities for rendering pareto series are available in your chart.
+* **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `Pareto` in your chart configuration. This indicates that the data should be represented as a pareto chart, will use a combination of column and line series.
 
 {% if page.publishingplatform == "typescript" %}
+
+* **Inject the necessary modules**: Use the `Chart.Inject(ParetoSeries, ColumnSeries, LineSeries)` method to inject the `ParetoSeries`, `ColumnSeries`, `LineSeries` modules into your chart. This step is essential, as it ensures that the necessary functionalities for rendering pareto series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

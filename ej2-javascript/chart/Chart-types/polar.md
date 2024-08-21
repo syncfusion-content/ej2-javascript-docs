@@ -14,11 +14,11 @@ domainurl: ##DomainURL##
 
 To render a [polar](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/polar-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  
-1. **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `Polar` in your chart configuration. This indicates that the data should be represented as a polar chart, which is ideal for plotting data points on a circular graph.
- 
-2. **Inject the PolarSeries module**: Use the `Chart.Inject(PolarSeries)` method to inject the `PolarSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar series are available in your chart.
+* **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `Polar` in your chart configuration. This indicates that the data should be represented as a polar chart, which is ideal for plotting data points on a circular graph.
 
 {% if page.publishingplatform == "typescript" %}
+
+* **Inject the PolarSeries module**: Use the `Chart.Inject(PolarSeries)` method to inject the `PolarSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -90,13 +90,13 @@ Use the [`drawType`](../../api/chart/series/#drawtype) property to change the se
 
 To render a line draw type, you need to follow a few steps to configure it correctly.
 
-1. **Set the Series Type**: Define the series [`drawType`](../../api/chart/series/#drawtype) as `Line` in your chart configuration. This indicates that the data should be represented as a polar line chart, with lines connecting each data point.
- 
-2. **Inject the LineSeries Module**: Use the `Chart.Inject(LineSeries)` method to inject the `LineSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar line series are available in your chart.
-
-The [`isClosed`](../../api/chart/series/#isclosed) property specifies whether to join the start and end points of a line series used in a polar chart to form a closed path. The default value of `isClosed` is **true**.
+* **Set the series type**: Define the series [`drawType`](../../api/chart/series/#drawtype) as `Line` in your chart configuration. This indicates that the data should be represented as a polar line chart, with lines connecting each data point.
 
 {% if page.publishingplatform == "typescript" %}
+
+* **Inject the LineSeries module**: Use the `Chart.Inject(LineSeries)` method to inject the `LineSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar line series are available in your chart.
+
+The [`isClosed`](../../api/chart/series/#isclosed) property specifies whether to join the start and end points of a line series used in a polar chart to form a closed path. The default value of `isClosed` is **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -114,6 +114,8 @@ The [`isClosed`](../../api/chart/series/#isclosed) property specifies whether to
 
 {% elsif page.publishingplatform == "javascript" %}
 
+The [`isClosed`](../../api/chart/series/#isclosed) property specifies whether to join the start and end points of a line series used in a polar chart to form a closed path. The default value of `isClosed` is **true**.
+
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/chart/chart-types-cs108/index.js %}
@@ -130,11 +132,11 @@ The [`isClosed`](../../api/chart/series/#isclosed) property specifies whether to
 
 To render a spline draw type, you need to follow a few steps to configure it correctly.
 
-1. **Set the Series Type**: Define the series [`drawType`](../../api/chart/series/#drawtype) as `Spline` in your chart configuration. This indicates that the data should be represented as a polar spline chart, with smooth, curved lines connecting each data point.
- 
-2. **Inject the SplineSeries Module**: Use the `Chart.Inject(SplineSeries)` method to inject the `SplineSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar spline series are available in your chart.
+* **Set the series type**: Define the series [`drawType`](../../api/chart/series/#drawtype) as `Spline` in your chart configuration. This indicates that the data should be represented as a polar spline chart, with smooth, curved lines connecting each data point.
 
 {% if page.publishingplatform == "typescript" %}
+
+* **Inject the SplineSeries module**: Use the `Chart.Inject(SplineSeries)` method to inject the `SplineSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar spline series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -168,11 +170,11 @@ To render a spline draw type, you need to follow a few steps to configure it cor
 
 To render an area draw type, you need to follow a few steps to configure it correctly.
 
-1. **Set the Series Type**: Define the series [`drawType`](../../api/chart/series/#drawtype) as `Area` in your chart configuration. This indicates that the data should be represented as a polar area chart, with filled areas below the lines connecting each data point.
- 
-2. **Inject the AreaSeries Module**: Use the `Chart.Inject(AreaSeries)` method to inject the `AreaSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar area series are available in your chart.
+* **Set the series type**: Define the series [`drawType`](../../api/chart/series/#drawtype) as `Area` in your chart configuration. This indicates that the data should be represented as a polar area chart, with filled areas below the lines connecting each data point.
 
 {% if page.publishingplatform == "typescript" %}
+
+* **Inject the AreaSeries module**: Use the `Chart.Inject(AreaSeries)` method to inject the `AreaSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar area series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -206,11 +208,11 @@ To render an area draw type, you need to follow a few steps to configure it corr
 
 To render a stacked area draw type, you need to follow a few steps to configure it correctly.
 
-1. **Set the Series Type**: Define the series [`drawType`](../../api/chart/series/#drawtype) as `StackingArea` in your chart configuration. This indicates that the data should be represented as a polar stacked area chart, with areas stacked on top of each other, displaying the cumulative value of multiple series.
- 
-2. **Inject the StackingAreaSeries Module**: Use the `Chart.Inject(StackingAreaSeries)` method to inject the `StackingAreaSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar stacked area series are available in your chart.
+* **Set the series type**: Define the series [`drawType`](../../api/chart/series/#drawtype) as `StackingArea` in your chart configuration. This indicates that the data should be represented as a polar stacked area chart, with areas stacked on top of each other, displaying the cumulative value of multiple series.
 
 {% if page.publishingplatform == "typescript" %}
+
+* **Inject the StackingAreaSeries module**: Use the `Chart.Inject(StackingAreaSeries)` method to inject the `StackingAreaSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar stacked area series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -244,11 +246,11 @@ To render a stacked area draw type, you need to follow a few steps to configure 
 
 To render a column draw type, you need to follow a few steps to configure it correctly.
 
-1. **Set the Series Type**: Define the series [`drawType`](../../api/chart/series/#drawtype) as `Column` in your chart configuration. This indicates that the data should be represented as a polar column chart, allowing for the comparison of values across categories.
- 
-2. **Inject the ColumnSeries Module**: Use the `Chart.Inject(ColumnSeries)` method to inject the `ColumnSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar column series are available in your chart.
+* **Set the series type**: Define the series [`drawType`](../../api/chart/series/#drawtype) as `Column` in your chart configuration. This indicates that the data should be represented as a polar column chart, allowing for the comparison of values across categories.
 
 {% if page.publishingplatform == "typescript" %}
+
+* **Inject the ColumnSeries module**: Use the `Chart.Inject(ColumnSeries)` method to inject the `ColumnSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar column series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -282,11 +284,11 @@ To render a column draw type, you need to follow a few steps to configure it cor
 
 To render a stacked column draw type, you need to follow a few steps to configure it correctly.
 
-1. **Set the Series Type**: Define the series [`drawType`](../../api/chart/series/#drawtype) as `StackingColumn` in your chart configuration. This indicates that the data should be represented as a polar stacked column chart, with each column consisting of multiple segments stacked on top of each other.
- 
-2. **Inject the StackingColumnSeries Module**: Use the `Chart.Inject(StackingColumnSeries)` method to inject the `StackingColumnSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar stacked column series are available in your chart.
+* **Set the series type**: Define the series [`drawType`](../../api/chart/series/#drawtype) as `StackingColumn` in your chart configuration. This indicates that the data should be represented as a polar stacked column chart, with each column consisting of multiple segments stacked on top of each other.
 
 {% if page.publishingplatform == "typescript" %}
+
+* **Inject the StackingColumnSeries module**: Use the `Chart.Inject(StackingColumnSeries)` method to inject the `StackingColumnSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar stacked column series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -320,11 +322,11 @@ To render a stacked column draw type, you need to follow a few steps to configur
 
 To render a range column draw type, you need to follow a few steps to configure it correctly.
 
-1. **Set the Series Type**: Define the series [`drawType`](../../api/chart/series/#drawtype) as `RangeColumn` in your chart configuration. This indicates that the data should be represented as a polar range column chart, where each column spans a range of values.
- 
-2. **Inject the RangeColumnSeries Module**: Use the `Chart.Inject(RangeColumnSeries)` method to inject the `RangeColumnSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar range column series are available in your chart.
+* **Set the series type**: Define the series [`drawType`](../../api/chart/series/#drawtype) as `RangeColumn` in your chart configuration. This indicates that the data should be represented as a polar range column chart, where each column spans a range of values.
 
 {% if page.publishingplatform == "typescript" %}
+
+* **Inject the RangeColumnSeries module**: Use the `Chart.Inject(RangeColumnSeries)` method to inject the `RangeColumnSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar range column series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -358,11 +360,11 @@ To render a range column draw type, you need to follow a few steps to configure 
 
 To render a scatter draw type, you need to follow a few steps to configure it correctly.
 
-1. **Set the Series Type**: Define the series [`drawType`](../../api/chart/series/#drawtype) as `Scatter` in your chart configuration. This indicates that the data should be represented as a polar scatter chart.
- 
-2. **Inject the ScatterSeries Module**: Use the `Chart.Inject(ScatterSeries)` method to inject the `ScatterSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar scatter series are available in your chart.
+* **Set the series type**: Define the series [`drawType`](../../api/chart/series/#drawtype) as `Scatter` in your chart configuration. This indicates that the data should be represented as a polar scatter chart.
 
 {% if page.publishingplatform == "typescript" %}
+
+* **Inject the ScatterSeries module**: Use the `Chart.Inject(ScatterSeries)` method to inject the `ScatterSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar scatter series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -396,11 +398,11 @@ To render a scatter draw type, you need to follow a few steps to configure it co
 
 To render an spline area draw type, you need to follow a few steps to configure it correctly.
 
-1. **Set the Series Type**: Define the series [`drawType`](../../api/chart/series/#drawtype) as `SplineArea` in your chart configuration. This indicates that the data should be represented as a polar spline area chart, where the series is drawn with smooth, curved lines connecting each data point, and the area beneath the line is filled with color.
- 
-2. **Inject the SplineAreaSeries Module**: Use the `Chart.Inject(SplineAreaSeries)` method to inject the `SplineAreaSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar spline area series are available in your chart.
+* **Set the series type**: Define the series [`drawType`](../../api/chart/series/#drawtype) as `SplineArea` in your chart configuration. This indicates that the data should be represented as a polar spline area chart, where the series is drawn with smooth, curved lines connecting each data point, and the area beneath the line is filled with color.
 
 {% if page.publishingplatform == "typescript" %}
+
+* **Inject the SplineAreaSeries module**: Use the `Chart.Inject(SplineAreaSeries)` method to inject the `SplineAreaSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar spline area series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

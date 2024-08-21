@@ -14,11 +14,11 @@ domainurl: ##DomainURL##
 
 To render a [bubble](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/bubble-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  
-1. **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `Bubble` in your chart configuration. This indicates that the data should be displayed as a bubble series in the chart.
- 
-2. **Inject the BubbleSeries module**: Use the `Chart.Inject(BubbleSeries)` method to inject the `BubbleSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering the bubble series are available in your chart.
+* **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `Bubble` in your chart configuration. This indicates that the data should be displayed as a bubble series in the chart.
 
 {% if page.publishingplatform == "typescript" %}
+
+* **Inject the BubbleSeries module**: Use the `Chart.Inject(BubbleSeries)` method to inject the `BubbleSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering the bubble series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -154,6 +154,40 @@ The [opacity](../../api/chart/series/#opacity) property specifies the transparen
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs356" %}
 {% endif %}
 
+## Bubble size mapping
+
+Use the [`size`](../../api/chart/series/#size) property to map the size of each bubble to the value specified in the data source.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs85/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs85/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/chart-types-cs85/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs85" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs85/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs85/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs85" %}
+{% endif %}
+
 ## Empty points
 
 Data points with `null` or `undefined` values are considered empty. Empty data points are ignored and not plotted on the chart.
@@ -258,40 +292,6 @@ Use the [`border`](../../api/chart/emptyPointSettings/#border) property to custo
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs359" %}
-{% endif %}
-
-## Bubble size mapping
-
-Use the [`size`](../../api/chart/series/#size) property to map the size of each bubble to the value specified in the data source.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/chart/chart-types-cs85/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/chart-types-cs85/index.html %}
-{% endhighlight %}
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/chart/chart-types-cs85/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs85" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/chart/chart-types-cs85/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/chart-types-cs85/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs85" %}
 {% endif %}
 
 ## Events

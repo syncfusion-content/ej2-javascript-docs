@@ -15,11 +15,11 @@ domainurl: ##DomainURL##
 
 To render a [spline area](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/spline-area-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  
-1. **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `SplineArea` in your chart configuration. This indicates that the data should be represented as a spline area chart, where data points are connected by smooth, curved lines (splines) instead of straight lines.
- 
-2. **Inject the SplineAreaSeries module**: Use the `Chart.Inject(SplineAreaSeries)` method to inject the `SplineAreaSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering spline area series are available in your chart.
+* **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `SplineArea` in your chart configuration. This indicates that the data should be represented as a spline area chart, where data points are connected by smooth, curved lines (splines) instead of straight lines.
 
 {% if page.publishingplatform == "typescript" %}
+
+* **Inject the SplineAreaSeries module**: Use the `Chart.Inject(SplineAreaSeries)` method to inject the `SplineAreaSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering spline area series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

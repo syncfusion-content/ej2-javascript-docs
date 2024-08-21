@@ -14,11 +14,11 @@ domainurl: ##DomainURL##
 
 To render an [area](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/area-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  
-1. **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `Area` in your chart configuration. This indicates that the data should be represented as an area chart, which is ideal for showing trends over time or across categories, with filled areas beneath the lines representing data points.
- 
-2. **Inject the AreaSeries module**: Use the `Chart.Inject(AreaSeries)` method to inject the `AreaSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering area series are available in your chart.
+* **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `Area` in your chart configuration. This indicates that the data should be represented as an area chart, which is ideal for showing trends over time or across categories, with filled areas beneath the lines representing data points.
 
 {% if page.publishingplatform == "typescript" %}
+
+* **Inject the AreaSeries module**: Use the `Chart.Inject(AreaSeries)` method to inject the `AreaSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering area series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -254,6 +254,54 @@ Use the [`border`](../../api/chart/series/#border) property to customize the wid
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs76" %}
 {% endif %}
 
+## Multicolored area
+
+To render a multicolored area series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
+
+* **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `MultiColoredArea` in your chart configuration. This specifies that the series should be rendered as a multicolored area chart, with different segments of the area having distinct colors.
+
+{% if page.publishingplatform == "typescript" %}
+
+* **Inject the MultiColoredAreaSeries module**: Use the `Chart.Inject(MultiColoredAreaSeries)` method to inject the `MultiColoredAreaSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering area series are available.
+
+* **Customize the Segments**: Define the segments of the series using the [`segments`](../../api/chart/series/#segments) property. Each segment can be customized with properties such as `value`, `color`, and `dashArray`.
+   * [value](../../api/chart/chartSegmentModel/#value) - Specifies the endpoint of the segment.
+   * [color](../../api/chart/chartSegmentModel/#color) - Defines the color of the segment.
+   * [dashArray](../../api/chart/chartSegmentModel/#dasharray) - Defines the dashes or gaps in the segment.
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs74/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs74/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/chart-types-cs74/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs74" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+* **Customize the Segments**: Define the segments of the series using the [`segments`](../../api/chart/series/#segments) property. Each segment can be customized with properties such as `value`, `color`, and `dashArray`.
+   * [value](../../api/chart/chartSegmentModel/#value) - Specifies the endpoint of the segment.
+   * [color](../../api/chart/chartSegmentModel/#color) - Defines the color of the segment.
+   * [dashArray](../../api/chart/chartSegmentModel/#dasharray) - Defines the dashes or gaps in the segment.
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs74/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs74/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs74" %}
+{% endif %}
+
 ## Empty points
 
 Data points with `null` or `undefined` values are considered empty. Empty data points are ignored and not plotted on the chart.
@@ -358,49 +406,6 @@ Use the [`border`](../../api/chart/emptyPointSettings/#border) property to custo
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs229" %}
-{% endif %}
-
-## Multicolored area
-
-To render a multicolored area series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
-
-1. **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `MultiColoredArea` in your chart configuration. This specifies that the series should be rendered as a multicolored area chart, with different segments of the area having distinct colors.
-
-2. **Inject the MultiColoredAreaSeries module**: Use the `Chart.Inject(MultiColoredAreaSeries)` method to inject the `MultiColoredAreaSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering area series are available.
-
-3. **Customize the Segments**: Define the segments of the series using the [`segments`](../../api/chart/series/#segments) property. Each segment can be customized with properties such as `value`, `color`, and `dashArray`.
-   * [value](../../api/chart/chartSegmentModel/#value) - Specifies the endpoint of the segment.
-   * [color](../../api/chart/chartSegmentModel/#color) - Defines the color of the segment.
-   * [dashArray](../../api/chart/chartSegmentModel/#dasharray) - Defines the dashes or gaps in the segment.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/chart/chart-types-cs74/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/chart-types-cs74/index.html %}
-{% endhighlight %}
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/chart/chart-types-cs74/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs74" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/chart/chart-types-cs74/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/chart-types-cs74/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs74" %}
 {% endif %}
 
 ## Events

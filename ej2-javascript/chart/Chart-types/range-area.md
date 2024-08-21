@@ -15,13 +15,13 @@ domainurl: ##DomainURL##
 
 To render a [range area](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/range-area-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  
-1. **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `RangeArea` in your chart configuration. This indicates that the data should be represented as a range area chart, which is ideal for visualizing a range of values for each data point. This type of chart is particularly useful for displaying data that has a range between a minimum and maximum value, such as temperature ranges, stock price ranges, or any other type of data that varies within a specific interval.
- 
-2. **Inject the RangeAreaSeries module**: Use the `Chart.Inject(RangeAreaSeries)` method to inject the `RangeAreaSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering range area series are available in your chart.
-
-3. **Provide high and low values**: The `RangeArea` series requires two y-values for each data point, you need to specify both the high and low values. The high value represents the maximum range, while the low value represents the minimum range for each data point. These values define the upper and lower boundaries of the area for each point on the chart.
+* **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `RangeArea` in your chart configuration. This indicates that the data should be represented as a range area chart, which is ideal for visualizing a range of values for each data point. This type of chart is particularly useful for displaying data that has a range between a minimum and maximum value, such as temperature ranges, stock price ranges, or any other type of data that varies within a specific interval.
 
 {% if page.publishingplatform == "typescript" %}
+
+* **Inject the RangeAreaSeries module**: Use the `Chart.Inject(RangeAreaSeries)` method to inject the `RangeAreaSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering range area series are available in your chart.
+
+* **Provide high and low values**: The `RangeArea` series requires two y-values for each data point, you need to specify both the high and low values. The high value represents the maximum range, while the low value represents the minimum range for each data point. These values define the upper and lower boundaries of the area for each point on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -38,6 +38,8 @@ To render a [range area](https://www.syncfusion.com/javascript-ui-controls/js-ch
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs121" %}
 
 {% elsif page.publishingplatform == "javascript" %}
+
+* **Provide high and low values**: The `RangeArea` series requires two y-values for each data point, you need to specify both the high and low values. The high value represents the maximum range, while the low value represents the minimum range for each data point. These values define the upper and lower boundaries of the area for each point on the chart.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

@@ -17,13 +17,13 @@ The Candle series, similar to the Hilo Open Close series, is used to represent t
 
 To render a [`candle`](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/stock-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  
-1. **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `Candle` in your chart configuration. This indicates that the data should be represented as a candle chart, providing a detailed view of stock price fluctuations by displaying the high, low, open, and close values for each time period.
- 
-2. **Inject the CandleSeries module**: Use the `Chart.Inject(CandleSeries)` method to inject the `CandleSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering candle series are available in your chart.
-
-3. **Provide high, low, open, and close values**: The `Candle` series requires five fields (x, high, low, open, and close) to accurately display the stock's high, low, open, and close prices. Ensure that your data source includes these fields to create a detailed representation of stock price movements over time.
+* **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `Candle` in your chart configuration. This indicates that the data should be represented as a candle chart, providing a detailed view of stock price fluctuations by displaying the high, low, open, and close values for each time period.
 
 {% if page.publishingplatform == "typescript" %}
+
+* **Inject the CandleSeries module**: Use the `Chart.Inject(CandleSeries)` method to inject the `CandleSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering candle series are available in your chart.
+
+* **Provide high, low, open, and close values**: The `Candle` series requires five fields (x, high, low, open, and close) to accurately display the stock's high, low, open, and close prices. Ensure that your data source includes these fields to create a detailed representation of stock price movements over time.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -40,6 +40,8 @@ To render a [`candle`](https://www.syncfusion.com/javascript-ui-controls/js-char
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs87" %}
 
 {% elsif page.publishingplatform == "javascript" %}
+
+* **Provide high, low, open, and close values**: The `Candle` series requires five fields (x, high, low, open, and close) to accurately display the stock's high, low, open, and close prices. Ensure that your data source includes these fields to create a detailed representation of stock price movements over time.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

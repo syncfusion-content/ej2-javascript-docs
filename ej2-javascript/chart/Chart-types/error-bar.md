@@ -16,11 +16,11 @@ Error bars are graphical representations of the variability of data and are used
 
 To render error bars for the series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  
-1. **Set visibility**: Set the [`visible`](../../api/chart/errorBarSettings/#visible) property to **true** for the error bars to be displayed.
- 
-2. **Inject the ErrorBar module**: Use the `Chart.Inject(ErrorBar)` method to inject the `ErrorBar` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering error bar series are available in your chart.
+* **Set visibility**: Set the [`visible`](../../api/chart/errorBarSettings/#visible) property to **true** for the error bars to be displayed.
 
 {% if page.publishingplatform == "typescript" %}
+
+* **Inject the ErrorBar module**: Use the `Chart.Inject(ErrorBar)` method to inject the `ErrorBar` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering error bar series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

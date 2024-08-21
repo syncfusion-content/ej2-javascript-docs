@@ -15,13 +15,13 @@ domainurl: ##DomainURL##
 
 To render a `box and whisker` series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  
-1. **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `BoxAndWhisker` in your chart configuration. This indicates that the data should be represented as a box and whisker chart, which will plot segments to illustrate the statistical distribution of the data.
- 
-2. **Inject the BoxAndWhiskerSeries module**: Use the `Chart.Inject(BoxAndWhiskerSeries)` method to inject the `BoxAndWhiskerSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering box and whisker series are available in your chart.
-
-3. **Data requirements**: The y field of the Box and Whisker series requires a specific number of data points, with a minimum of five values needed to plot a segment.
+* **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `BoxAndWhisker` in your chart configuration. This indicates that the data should be represented as a box and whisker chart, which will plot segments to illustrate the statistical distribution of the data.
 
 {% if page.publishingplatform == "typescript" %}
+
+* **Inject the BoxAndWhiskerSeries module**: Use the `Chart.Inject(BoxAndWhiskerSeries)` method to inject the `BoxAndWhiskerSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering box and whisker series are available in your chart.
+
+* **Data requirements**: The y field of the Box and Whisker series requires a specific number of data points, with a minimum of five values needed to plot a segment.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -38,6 +38,8 @@ To render a `box and whisker` series in your chart, you need to follow a few ste
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs81" %}
 
 {% elsif page.publishingplatform == "javascript" %}
+
+* **Data requirements**: The y field of the Box and Whisker series requires a specific number of data points, with a minimum of five values needed to plot a segment.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

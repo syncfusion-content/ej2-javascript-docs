@@ -14,13 +14,13 @@ domainurl: ##DomainURL##
 
 To render a `waterfall` series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  
-1. **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `Waterfall` in your chart configuration. This indicates that the data should be represented as a waterfall chart, which helps illustrate the cumulative effect of sequentially introduced positive and negative values.
- 
-2. **Inject the WaterfallSeries module**: Use the `Chart.Inject(WaterfallSeries)` method to inject the `WaterfallSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering waterfall series are available in your chart.
-
-3. **Configure intermediate and cumulative sums**: Use the [`intermediateSumIndexes`](../../api/chart/series/#intermediatesumindexes) property property to represent intermediate sum values, and the [`sumIndexes`](../../api/chart/series/#sumindexes) property to represent cumulative sum values.
+* **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `Waterfall` in your chart configuration. This indicates that the data should be represented as a waterfall chart, which helps illustrate the cumulative effect of sequentially introduced positive and negative values.
 
 {% if page.publishingplatform == "typescript" %}
+
+* **Inject the WaterfallSeries module**: Use the `Chart.Inject(WaterfallSeries)` method to inject the `WaterfallSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering waterfall series are available in your chart.
+
+* **Configure intermediate and cumulative sums**: Use the [`intermediateSumIndexes`](../../api/chart/series/#intermediatesumindexes) property property to represent intermediate sum values, and the [`sumIndexes`](../../api/chart/series/#sumindexes) property to represent cumulative sum values.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -37,6 +37,8 @@ To render a `waterfall` series in your chart, you need to follow a few steps to 
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs160" %}
 
 {% elsif page.publishingplatform == "javascript" %}
+
+* **Configure intermediate and cumulative sums**: Use the [`intermediateSumIndexes`](../../api/chart/series/#intermediatesumindexes) property property to represent intermediate sum values, and the [`sumIndexes`](../../api/chart/series/#sumindexes) property to represent cumulative sum values.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

@@ -14,11 +14,11 @@ domainurl: ##DomainURL##
 
 To render a [scatter](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/scatter-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  
-1. **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `Scatter` in your chart configuration. This indicates that the data should be displayed as individual points scattered across the chart.
- 
-2. **Inject the ScatterSeries module**: Use the `Chart.Inject(ScatterSeries)` method to inject the `ScatterSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering the scatter series are available in your chart.
+* **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `Scatter` in your chart configuration. This indicates that the data should be displayed as individual points scattered across the chart.
 
 {% if page.publishingplatform == "typescript" %}
+
+* **Inject the ScatterSeries module**: Use the `Chart.Inject(ScatterSeries)` method to inject the `ScatterSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering the scatter series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

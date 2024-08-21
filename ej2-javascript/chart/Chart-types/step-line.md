@@ -14,11 +14,11 @@ domainurl: ##DomainURL##
 
 To render a [step line](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/stepline-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  
-1. **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `StepLine` in your chart configuration. This indicates that the data should be represented as a step line chart, which connects data points with horizontal and vertical lines, creating a staircase effect. This type is ideal for displaying data that changes at distinct points.
- 
-2. **Inject the StepLineSeries module**: Use the `Chart.Inject(StepLineSeries)` method to inject the `StepLineSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering step line series are available in your chart.
+* **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `StepLine` in your chart configuration. This indicates that the data should be represented as a step line chart, which connects data points with horizontal and vertical lines, creating a staircase effect. This type is ideal for displaying data that changes at distinct points.
 
 {% if page.publishingplatform == "typescript" %}
+
+* **Inject the StepLineSeries module**: Use the `Chart.Inject(StepLineSeries)` method to inject the `StepLineSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering step line series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

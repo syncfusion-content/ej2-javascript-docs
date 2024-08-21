@@ -14,13 +14,13 @@ domainurl: ##DomainURL##
 
 To render a `hilo` series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  
-1. **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `Hilo` in your chart configuration. This indicates that the data should be represented as a hilo chart, which shows the high and low values for each data point, illustrating price movements in stocks and providing a clear visualization of price ranges.
- 
-2. **Inject the HiloSeries module**: Use the `Chart.Inject(HiloSeries)` method to inject the `HiloSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering hilo series are available in your chart.
-
-3. **Provide high and low values**: The `Hilo` series requires two y-values for each data point, you need to specify both the high and low values. The high value represents the maximum price, while the low value represents the minimum price of the stock.
+* **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `Hilo` in your chart configuration. This indicates that the data should be represented as a hilo chart, which shows the high and low values for each data point, illustrating price movements in stocks and providing a clear visualization of price ranges.
 
 {% if page.publishingplatform == "typescript" %}
+
+* **Inject the HiloSeries module**: Use the `Chart.Inject(HiloSeries)` method to inject the `HiloSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering hilo series are available in your chart.
+
+* **Provide high and low values**: The `Hilo` series requires two y-values for each data point, you need to specify both the high and low values. The high value represents the maximum price, while the low value represents the minimum price of the stock.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -37,6 +37,8 @@ To render a `hilo` series in your chart, you need to follow a few steps to confi
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs101" %}
 
 {% elsif page.publishingplatform == "javascript" %}
+
+* **Provide high and low values**: The `Hilo` series requires two y-values for each data point, you need to specify both the high and low values. The high value represents the maximum price, while the low value represents the minimum price of the stock.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

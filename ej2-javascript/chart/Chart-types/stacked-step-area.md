@@ -14,11 +14,11 @@ domainurl: ##DomainURL##
 
 To render a stacked step area series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  
-1. **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `StackingStepArea` in your chart configuration. This indicates that the data should be represented as a stacked step area chart, which is a combination of a stacked area chart and a step area chart. It connects the data points with vertical and horizontal lines, creating a step like appearance.
- 
-2. **Inject the StackingStepAreaSeries module**: Use the `Chart.Inject(StackingStepAreaSeries)` method to inject the `StackingStepAreaSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering stacked step area series are available in your chart.
+* **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `StackingStepArea` in your chart configuration. This indicates that the data should be represented as a stacked step area chart, which is a combination of a stacked area chart and a step area chart. It connects the data points with vertical and horizontal lines, creating a step like appearance.
 
 {% if page.publishingplatform == "typescript" %}
+
+* **Inject the StackingStepAreaSeries module**: Use the `Chart.Inject(StackingStepAreaSeries)` method to inject the `StackingStepAreaSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering stacked step area series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

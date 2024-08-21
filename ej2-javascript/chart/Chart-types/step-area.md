@@ -14,11 +14,11 @@ domainurl: ##DomainURL##
 
 To render a [step area](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/step-area-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  
-1. **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `StepArea` in your chart configuration. This indicates that the data should be represented as a step area chart, which connects data points with vertical and horizontal lines, creating a step like appearance.
- 
-2. **Inject the StepAreaSeries module**: Use the `Chart.Inject(StepAreaSeries)` method to inject the `StepAreaSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering step area series are available in your chart.
+* **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `StepArea` in your chart configuration. This indicates that the data should be represented as a step area chart, which connects data points with vertical and horizontal lines, creating a step like appearance.
 
 {% if page.publishingplatform == "typescript" %}
+
+* **Inject the StepAreaSeries module**: Use the `Chart.Inject(StepAreaSeries)` method to inject the `StepAreaSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering step area series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

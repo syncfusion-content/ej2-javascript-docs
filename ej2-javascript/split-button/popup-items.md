@@ -135,3 +135,4 @@ In the following sample, the whole popup item is customized as color palette by 
 
 * [Popup items grouping](./how-to/group-items-in-popup)
 * [SplitButton popup with separator](./icons-and-separator#separator)
+

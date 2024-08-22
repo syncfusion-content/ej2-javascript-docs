@@ -353,5 +353,5 @@ You can calculate the percentage value based on the sum for each series using th
 
 ## See Also
 
-* [Show total stacking values in data label](../chart/how-to/stacking-total/)
-* [Prevent the data label when the data value is 0](../chart/how-to/prevent-data-label/#prevent-the-data-label-when-the-data-value-is-0)
+* [Show total stacking values in data label](../chart/how-to/stacking-total)
+* [Prevent the data label when the data value is 0](../chart/how-to/prevent-data-label#prevent-the-data-label-when-the-data-value-is-0)

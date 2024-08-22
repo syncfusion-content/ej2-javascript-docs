@@ -36,9 +36,9 @@ let chart: Chart = new Chart({
     ],
     title: 'Gross Domestic Product Growth',
     pointRender: (args: IPointRenderEventArgs) => {
-        if (args.point.y <= 250) {
+        if (args.point.series.index % 2 !== 0) {
             args.fill = '#ff6347';
-        }
+        } 
         else {
             args.fill = '#009cb8';
         }

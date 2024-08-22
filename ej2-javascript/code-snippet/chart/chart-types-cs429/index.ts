@@ -30,6 +30,11 @@ let chart: Chart = new Chart({
     ],
     title: 'Maximum and Minimum Temperature',
     seriesRender: (args: ISeriesRenderEventArgs) => {
-        args.fill = '#ff6347';
+        if (args.series.index === 0) {
+            args.fill = '#ff4251';
+        }
+        else if (args.series.index === 1) {
+            args.fill = '#4C4C4C';
+        }
     }
 }, '#element');

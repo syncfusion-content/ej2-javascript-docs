@@ -42,7 +42,7 @@ var chart = new ej.charts.Chart({
     ],
     title: 'Mobile Game Market by Country',
     pointRender: function (args) {
-        if (args.point.y < 100) {
+        if (args.point.series.index % 2 !== 0) {
             args.fill = '#ff6347';
         }
         else {

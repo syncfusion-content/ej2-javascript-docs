@@ -23,6 +23,7 @@ var chart = new ej.charts.Chart({
     seriesRender: function (args) {
         args.fill = '#ff6347';
         args.series.negativeFillColor = '#ff6347';
+        args.series.summaryFillColor = '#ff6347';
     }
 }, '#element');
 

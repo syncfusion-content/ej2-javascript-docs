@@ -37,9 +37,9 @@ let chart: Chart = new Chart({
     ],
     title: 'Sales Comparison',
     pointRender: (args: IPointRenderEventArgs) => {
-        if (args.point.index % 2 !==0 ) {
+        if (args.point.series.index % 2 !== 0) {
             args.fill = '#ff6347';
-        }
+        } 
         else {
             args.fill = '#009cb8';
         }

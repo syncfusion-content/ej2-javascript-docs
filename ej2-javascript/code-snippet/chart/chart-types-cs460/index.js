@@ -33,8 +33,7 @@ var chart = new ej.charts.Chart({
             yName: 'y',
             binInterval: 20,
             showNormalDistribution: true,
-            columnWidth: 0.99,
-            marker: { visible: true }
+            columnWidth: 0.99
         }
     ],
     pointRender: function (args) {

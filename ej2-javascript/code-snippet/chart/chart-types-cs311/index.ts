@@ -26,7 +26,7 @@ let chart: Chart = new Chart({
         {
             dataSource: stackedData, xName: 'x', yName: 'y1',
             type: 'StackingColumn', name: 'Germany',
-            border: { width: 2, color: '#4C4C4C'}
+            border: { width: 2, color: '#66BDB7'}
         }, 
         {
             dataSource: stackedData, xName: 'x', yName: 'y2',

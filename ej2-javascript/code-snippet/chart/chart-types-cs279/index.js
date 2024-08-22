@@ -21,6 +21,7 @@ var chart = new ej.charts.Chart({
         dataSource: chartData,
         xName: 'x', yName: 'y',
         type: 'StepArea',
+        border: { width: 2, color: 'green' },
         emptyPointSettings: {
             mode: 'Zero'
         }

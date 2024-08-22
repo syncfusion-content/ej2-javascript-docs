@@ -43,7 +43,6 @@ let chart: Chart = new Chart({
             }
         }
     ],
-    width: '75%',
     //Initializing Chart title
     title: 'Pareto chart - Defects in Shirts',
     legendSettings: { visible: true },
@@ -53,10 +52,12 @@ let chart: Chart = new Chart({
         shared: true
     },
     pointRender: (args: IPointRenderEventArgs) => {
-        args.fill = 'green';
+        if (args.point.index % 2 !== 0) {
+            args.fill = '#ff6347';
+        }
+        else {
+            args.fill = '#009cb8';
+        }
     }
 });
 chart.appendTo('#element');
-
-
-

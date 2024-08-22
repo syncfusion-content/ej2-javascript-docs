@@ -48,7 +48,6 @@ var chart = new ej.charts.Chart({
             }
         }
     ],
-    width: '75%',
     //Initializing Chart title
     title: 'Pareto chart - Defects in Shirts',
     legendSettings: { visible: true },
@@ -58,9 +57,12 @@ var chart = new ej.charts.Chart({
         shared: true
     },
     pointRender: function (args) {
-        args.fill = 'green';
+        if (args.point.index % 2 !== 0) {
+            args.fill = '#ff6347';
+        }
+        else {
+            args.fill = '#009cb8';
+        }
     }
 });
 chart.appendTo('#element');
-
-

@@ -43,7 +43,6 @@ let chart: Chart = new Chart({
             }
         }
     ],
-    width: '75%',
     //Initializing Chart title
     title: 'Pareto chart - Defects in Shirts',
     legendSettings: { visible: true },

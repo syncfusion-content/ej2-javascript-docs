@@ -37,7 +37,7 @@ let chart: Chart = new Chart({
     ],
     title: 'Mobile Game Market by Country',
     pointRender: (args: IPointRenderEventArgs) => {
-        if (args.point.y < 100) {
+        if (args.point.series.index % 2 !== 0) {
             args.fill = '#ff6347';
         }
         else {

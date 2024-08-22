@@ -27,7 +27,12 @@ var chart = new ej.charts.Chart({
     }],
     title: 'Climate Graph-2012',
     pointRender: function (args) {
-        args.fill = '#ff6347';
+        if (args.point.index % 2 !== 0) {
+            args.fill = '#ff6347';
+        }
+        else {
+            args.fill = '#009cb8';
+        }
     }
 }, '#element');
 

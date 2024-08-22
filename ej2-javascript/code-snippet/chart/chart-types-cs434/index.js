@@ -41,9 +41,9 @@ var chart = new ej.charts.Chart({
     ],
     title: 'Gross Domestic Product Growth',
     pointRender: function (args) {
-        if (args.point.y <= 250) {
+        if (args.point.series.index % 2 !== 0) {
             args.fill = '#ff6347';
-        }
+        } 
         else {
             args.fill = '#009cb8';
         }

@@ -19,5 +19,6 @@ let chart: Chart = new Chart({
     seriesRender: (args: ISeriesRenderEventArgs) => {
         args.fill = '#ff6347';
         args.series.negativeFillColor = '#ff6347';
+        args.series.summaryFillColor = '#ff6347';
     }
 }, '#element');

@@ -45,9 +45,9 @@ var chart = new ej.charts.Chart({
     ],
     title: 'Sales Comparison',
     pointRender: function (args) {
-        if (args.point.index % 2 !==0 ) {
+        if (args.point.series.index % 2 !== 0) {
             args.fill = '#ff6347';
-        }
+        } 
         else {
             args.fill = '#009cb8';
         }

@@ -13,6 +13,7 @@ let chart: Chart = new Chart({
         dataSource: chartData,
         xName: 'x', yName: 'y',
         type: 'StepArea',
+        border: { width: 2, color: 'green' },
         emptyPointSettings: {
             mode: 'Zero'
         }

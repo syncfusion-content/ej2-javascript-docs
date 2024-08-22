@@ -47,7 +47,7 @@ var chart = new ej.charts.Chart({
             paretoOptions: {
                 fill: '#F7523F'
             },
-            cornerRadius: { topLeft: Browser.isDevice ? 4 : 6, topRight: Browser.isDevice ? 4 : 6 }
+            cornerRadius: { topLeft: ej.base.Browser.isDevice ? 4 : 6, topRight: ej.base.Browser.isDevice ? 4 : 6 }
         }
     ],
     //Initializing Chart title

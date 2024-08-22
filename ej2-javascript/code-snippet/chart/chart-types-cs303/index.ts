@@ -27,7 +27,7 @@ let chart: Chart = new Chart({
             xName: 'x', 
             high: 'high', 
             low: 'low',
-            border: { width: 2, color: '#4C4C4C' }
+            border: { width: 2, color: '#DCDCDC' }
         }
     ],
     title: 'Maximum and Minimum Temperature'

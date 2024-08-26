@@ -107,4 +107,4 @@ The following example shows how to activate enableRouting in the layout:
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/diagram/ AutomaticLayout-complex3" %}
+{% previewsample "page.domainurl/code-snippet/diagram/AutomaticLayout-complex3" %}

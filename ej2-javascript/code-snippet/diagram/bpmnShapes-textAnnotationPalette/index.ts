@@ -22,7 +22,6 @@ import {
   BpmnFlowModel,
 } from '@syncfusion/ej2-diagrams';
 import { MenuEventArgs } from '@syncfusion/ej2-navigations';
-import { addEvents } from './script/diagram-common';
 
 // tslint:disable
 Diagram.Inject(BpmnDiagrams, UndoRedo, DiagramContextMenu);
@@ -137,4 +136,3 @@ let palette: SymbolPalette = new SymbolPalette({
   getNodeDefaults: getSymbolDefaults,
 });
 palette.appendTo('#palette');
-addEvents();

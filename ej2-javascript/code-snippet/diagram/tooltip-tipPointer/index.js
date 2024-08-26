@@ -15,7 +15,7 @@ diagram = new ej.diagrams.Diagram(
         annotations: [
           {
             id: 'label',
-            content: 'Rectangle',
+            content: 'Tooltip pointer hidden',
             offset: {
               x: 0.5,
               y: 0.5,
@@ -25,22 +25,57 @@ diagram = new ej.diagrams.Diagram(
             },
           },
         ],
-        offsetX: 200,
-        offsetY: 200,
+        offsetX: 100,
+        offsetY: 100,
         style: {
           strokeColor: '#6BA5D7',
           fill: '#6BA5D7',
         },
         constraints:
-          ej.diagrams.NodeConstraints.Default |
-          ej.diagrams.NodeConstraints.Tooltip,
+        ej.diagrams. NodeConstraints.Default |
+        ej.diagrams. NodeConstraints.Tooltip,
         //Defines mouse over tooltip for a node
         tooltip: {
-          content: 'Node1',
+          content: 'Tooltip pointer hidden',
           position: 'BottomCenter',
           relativeMode: 'Object',
-          //Activate sticky mode for tooltip
-          isSticky: true,
+          //Hide tip pointer
+          showTipPointer: false,
+        },
+      },
+      {
+        id: 'node2',
+        width: 100,
+        height: 100,
+        annotations: [
+          {
+            id: 'label',
+            content: 'Tooltip pointer visible',
+            offset: {
+              x: 0.5,
+              y: 0.5,
+            },
+            style: {
+              color: 'white',
+            },
+          },
+        ],
+        offsetX: 300,
+        offsetY: 100,
+        style: {
+          strokeColor: '#6BA5D7',
+          fill: '#6BA5D7',
+        },
+        constraints:
+        ej.diagrams. NodeConstraints.Default |
+        ej.diagrams. NodeConstraints.Tooltip,
+        //Defines mouse over tooltip for a node
+        tooltip: {
+          content: 'Tooltip pointer visible',
+          position: 'BottomCenter',
+          relativeMode: 'Object',
+          //Show tip pointer
+          showTipPointer: true,
         },
       },
     ],

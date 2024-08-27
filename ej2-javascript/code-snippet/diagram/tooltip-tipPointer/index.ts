@@ -1,8 +1,10 @@
 /**
  * Tooltip sample
  */
+import { Diagram, NodeConstraints } from '@syncfusion/ej2-diagrams';
+
 var diagram;
-diagram = new ej.diagrams.Diagram(
+diagram = new Diagram(
   {
     width: '650px',
     height: '350px',
@@ -31,9 +33,7 @@ diagram = new ej.diagrams.Diagram(
           strokeColor: '#6BA5D7',
           fill: '#6BA5D7',
         },
-        constraints:
-          ej.diagrams.NodeConstraints.Default |
-          ej.diagrams.NodeConstraints.Tooltip,
+        constraints:NodeConstraints.Default |NodeConstraints.Tooltip,
         //Defines mouse over tooltip for a node
         tooltip: {
           content: 'Tooltip pointer hidden',
@@ -66,9 +66,7 @@ diagram = new ej.diagrams.Diagram(
           strokeColor: '#6BA5D7',
           fill: '#6BA5D7',
         },
-        constraints:
-          ej.diagrams.NodeConstraints.Default |
-          ej.diagrams.NodeConstraints.Tooltip,
+        constraints:NodeConstraints.Default |NodeConstraints.Tooltip,
         //Defines mouse over tooltip for a node
         tooltip: {
           content: 'Tooltip pointer visible',

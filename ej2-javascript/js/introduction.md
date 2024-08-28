@@ -82,11 +82,12 @@ letter-spacing: 0.7px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/dialog/es5-getting-started">Dialog</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/listview/getting-started">ListView</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/predefined-dialogs/es5-getting-started">Predefined Dialogs</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/tooltip/getting-started">Tooltip</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/splitter/es5-getting-started">Splitter</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/dashboard-layout/es5-getting-started">Dashboard</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/card/getting-started">Card</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/avatar/es5-getting-started">Avatar</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/tooltip/getting-started/">Tooltip</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/splitter/es5-getting-started/">Splitter</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/dashboard-layout/es5-getting-started/">Dashboard</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/card/getting-started/">Card</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/avatar/es5-getting-started/">Avatar</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/timeline/es5-getting-started">Timeline</a></div>
     </td>
     <td>
         <div><p class="controlcategory">DATA VISUALIZATION</p></div>

@@ -43,7 +43,7 @@ diagram.appendTo('#element');
     diagram.dataBind();
   };
 
-  (document.getElementById('dragSourceEnd') as HTMLInputElement)..onclick = () => {
+  (document.getElementById('dragSourceEnd') as HTMLInputElement).onclick = () => {
     /**
      * parameter 1 - connector whose source point needs to be moved.
      * parameter 2 - A number representing the horizontal distance by which the source point should be moved.
@@ -52,7 +52,7 @@ diagram.appendTo('#element');
     diagram.dragSourceEnd(diagram.connectors[0], 50, 50);
   };
   
-  (document.getElementById('dragTargetEnd') as HTMLInputElement)..onclick = () => {
+  (document.getElementById('dragTargetEnd') as HTMLInputElement).onclick = () => {
     /**
      * parameter 1 - connector whose target point needs to be moved.
      * parameter 2 - A number representing the horizontal distance by which the target point should be moved.

@@ -37,7 +37,7 @@ var node =  {
         visibility: false,
       },
     ],
-  },
+  };
   
   // initialize Diagram component
   

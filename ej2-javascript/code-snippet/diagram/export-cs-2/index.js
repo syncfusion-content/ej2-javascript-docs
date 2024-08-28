@@ -4,7 +4,7 @@
 ej.diagrams.Diagram.Inject(ej.diagrams.PrintAndExport);
 var diagram;
 //click event to export the diagram objects.
-document.getElementById('export').onclick = () => {
+document.getElementById('print').onclick = () => {
   let exportOptions = {};
   //Sets the margin for the exported image
   exportOptions.margin = { left: 100, top: 100, bottom: 100, right: 100 };

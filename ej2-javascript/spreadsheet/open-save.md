@@ -246,7 +246,7 @@ By default, the Spreadsheet control provides an option to browse files from the 
 ```js
 
     // Fetch call to server to load the Excel file.
-    fetch('https://localhost:{{Your port number}}/Home/Open', {
+    fetch('https://localhost:{Your port number}/Home/Open', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -271,6 +271,8 @@ fetch('https://localhost:{port number}/Home/Open')
 ### Open an excel file using a hosted web service in AWS Lambda
 
 Before proceeding with the opening process, you should deploy the spreadsheet open/save web API service in AWS Lambda. To host the open/save web service in the AWS Lambda environment, please refer to the following KB documentation.
+
+[How to deploy a spreadsheet open and save web API service to AWS Lambda](https://support.syncfusion.com/kb/article/17184/how-to-deploy-a-spreadsheet-open-and-save-web-api-service-to-aws-lambda)
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -767,7 +769,7 @@ By default, the Spreadsheet control saves the Excel file and downloads it to the
         formData.append('JSONData', JSON.stringify(json.jsonObject.Workbook));
         formData.append('PdfLayoutSettings', JSON.stringify({ FitSheetOnOnePage: false }));
         // Using fetch to invoke the save process.
-        fetch('https://localhost:{{Your port number}}/Home/Save', {
+        fetch('https://localhost:{Your port number}/Home/Save', {
             method: 'POST',
             body: formData
         }).then((response) => {
@@ -820,6 +822,8 @@ fetch('https://localhost:{port number}/Home/Save')
 ### Save an excel file using a hosted web service in AWS Lambda
 
 Before proceeding with the save process, you should deploy the spreadsheet open/save web API service in AWS Lambda. To host the open/save web service in the AWS Lambda environment, please refer to the following KB documentation.
+
+[How to deploy a spreadsheet open and save web API service to AWS Lambda](https://support.syncfusion.com/kb/article/17184/how-to-deploy-a-spreadsheet-open-and-save-web-api-service-to-aws-lambda)
 
 {% if page.publishingplatform == "typescript" %}
 

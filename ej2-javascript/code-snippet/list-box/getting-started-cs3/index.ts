@@ -20,7 +20,6 @@ let listObj: ListBox = new ListBox({
     //set the data to dataSource property
     dataSource: data,
     selectionSettings: {
-        showCheckbox: true,
         mode: 'Single'
     }
 });

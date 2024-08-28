@@ -15,7 +15,7 @@ Diagram.Inject(PrintAndExport);
 let diagram: Diagram;
 
 //click event to export the diagram objects.
-(document.getElementById('export') as HTMLInputElement).onclick = () => {
+(document.getElementById('print') as HTMLInputElement).onclick = () => {
   let exportOptions: IExportOptions = {};
   //Sets the margin for the exported image
   exportOptions.margin = { left: 100, top: 100, bottom: 100, right: 100 };

@@ -13,8 +13,9 @@ var imageEditorObj = new ej.imageeditor.ImageEditor({
   selectionChanging: selectionChanging
 });
 imageEditorObj.appendTo('#imageeditor');
+
 function selectionChanging (args) {
-  if (args.action == "resize") {
+  if (args.action === "resize") {
     args.currentSelectionSettings = args.previousSelectionSettings;
   }
 }

@@ -14,23 +14,24 @@ let imageEditorObj: ImageEditor = new ImageEditor({
             imageEditorObj.open('bee-eater.png');
         } else {
             imageEditorObj.open('bee-eater.png');
-            }
         }
+    }
 });
 imageEditorObj.appendTo('#imageeditor');
+
 var blobUrl: any;
-document.getElementById('saveImage').onclick = function() {
+document.getElementById('saveImage').onclick = function () {
     var imageData = imageEditorObj.getImageData();
     var canvas = document.createElement('canvas');
     var ctx = canvas.getContext('2d');
     canvas.width = imageData.width;
     canvas.height = imageData.height;
     ctx.putImageData(imageData, 0, 0);
-    var base64Url = canvas.toDataURL();
-    canvas.toBlob(function(blob){
+    canvas.toBlob(function (blob) {
         blobUrl = URL.createObjectURL(blob as any);
     });
 }
-document.getElementById('setImage').onclick = function() {
+
+document.getElementById('setImage').onclick = function () {
     imageEditorObj.open(blobUrl);
 };

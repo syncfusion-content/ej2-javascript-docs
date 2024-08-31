@@ -1,6 +1,6 @@
 ej.base.enableRipple(true);
 
-var dialog = new ej.dialog.Dialog({
+var dialog = new ej.popups.Dialog({
   isModal: true,
   content: document.getElementById("imageeditor"),
   width: '340px',
@@ -8,17 +8,12 @@ var dialog = new ej.dialog.Dialog({
   closeOnEscape: true,
   visible: false,
 });
-
 dialog.appendTo('#profile-dialog');
+
+var imageEditorObj = new ej.imageeditor.ImageEditor();
+imageEditorObj.appendTo('#imageeditor');
 
 document.getElementById('dialog-btn').onclick = function () {
   dialog.show();
-  imageEditorObj.open('./images/flower.png');
+  imageEditorObj.open('flower.png');
 };
-
-var imageEditorObj = new ej.imageeditor.ImageEditor({
-  theme: 'Material',
-  zoomSettings: { minZoomFactor: 0.1, maxZoomFactor: 50 },
-});
-
-imageEditorObj.appendTo('#imageeditor');

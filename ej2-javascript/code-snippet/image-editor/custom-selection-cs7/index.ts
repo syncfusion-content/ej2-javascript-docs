@@ -1,7 +1,6 @@
 
 
 import { ImageEditor } from '@syncfusion/ej2-image-editor';
-import { Button } from '@syncfusion/ej2-buttons';
 import { Browser } from '@syncfusion/ej2-base';
 
 //Image Editor items definition
@@ -14,12 +13,12 @@ let imageEditorObj: ImageEditor = new ImageEditor({
             imageEditorObj.open('bee-eater.png');
         } else {
             imageEditorObj.open('bee-eater.png');
-            }
+        }
     },
     cropping: cropping
 });
 imageEditorObj.appendTo('#imageeditor');
+
 function cropping(args: any) {
-    args.preventScaling = true;        
+    args.preventScaling = true;
 }
-  

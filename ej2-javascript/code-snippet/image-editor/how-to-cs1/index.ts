@@ -14,10 +14,11 @@ let imageEditorObj: ImageEditor = new ImageEditor({
             imageEditorObj.open('bee-eater.png');
         } else {
             imageEditorObj.open('bee-eater.png');
-            }
         }
+    }
 });
 imageEditorObj.appendTo('#imageeditor');
-document.getElementById('click').onclick = function() {
+
+document.getElementById('click').onclick = function () {
     imageEditorObj.clearImage();
 }

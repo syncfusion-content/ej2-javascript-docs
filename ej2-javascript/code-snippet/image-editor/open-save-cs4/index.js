@@ -1,39 +1,29 @@
 ej.base.enableRipple(true);
 
-let hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
-
-let fileManagerObj = new ej.filemanager.FileManager({
+var hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
+var fileManagerObj = new ej.filemanager.FileManager({
   ajaxSettings: {
-      url: hostUrl + 'api/FileManager/FileOperations',
-      getImageUrl: hostUrl + 'api/FileManager/GetImage',
-      uploadUrl: hostUrl + 'api/FileManager/Upload',
-      downloadUrl: hostUrl + 'api/FileManager/Download'
+    url: hostUrl + 'api/FileManager/FileOperations',
+    getImageUrl: hostUrl + 'api/FileManager/GetImage',
+    uploadUrl: hostUrl + 'api/FileManager/Upload',
+    downloadUrl: hostUrl + 'api/FileManager/Download'
   },
-  allowMultiSelection:true,
-  fileOpen: fileOpen
+  fileOpen: fileOpen,
+  width: '550px',
+  height: '150px'
 });
-
 fileManagerObj.appendTo('#filemanager');
 
 function fileOpen(args) {
   let file = args.fileDetails;
+  let fileName = file.name;
+  let filePath = file.filterPath.replace(/\\/g, '/') + fileName;
+  let basePath = document.getElementById('filemanager')?.ej2_instances[0];
+  let imagePath = `${basePath.ajaxSettings.getImageUrl}?path=${filePath}`;
   if (file.isFile) {
-      args.cancel = true;
-      if (file.size <= 0 ) { file.size = 10000; }
-      let imagePath = args.fileDetails._fm_imageUrl;
-      imageEditorObj.open(imagePath);
+    args.cancel = true;
+    imageEditorObj.open(imagePath);
   }
 }
 
-var imageEditorObj = new ej.imageeditor.ImageEditor({
-  width: '550px',
-  height: '330px',
-	created: function () {
-		if (ej.base.Browser.isDevice) {
-			imageEditorObj.open('bee-eater.png');
-    } else {
-        imageEditorObj.open('bee-eater.png');
-    }
-	}
-});
-imageEditorObj.appendTo('#imageeditor');
+var imageEditorObj = new ej.imageeditor.ImageEditor({ width: '550px', height: '350px' }, '#imageeditor');

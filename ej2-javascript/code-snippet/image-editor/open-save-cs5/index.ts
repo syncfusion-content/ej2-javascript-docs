@@ -1,9 +1,8 @@
 
 
 import { ImageEditor } from '@syncfusion/ej2-image-editor';
-import { Button } from '@syncfusion/ej2-buttons';
 import { Browser } from '@syncfusion/ej2-base';
-import { TreeView, NodeClickEventArgs  } from '@syncfusion/ej2-navigations';
+import { TreeView, NodeClickEventArgs } from '@syncfusion/ej2-navigations';
 
 var data: { [key: string]: Object }[] = [
     {
@@ -23,17 +22,18 @@ var data: { [key: string]: Object }[] = [
             { "nodeId": "02-05", "nodeText": "Youth Empowerment.pdf", "icon": "pdf" }
         ]
     },
-    { 
+    {
         "nodeId": "03", "nodeText": "Pictures", "icon": "folder", "expanded": true,
         "nodeChild": [
-        {
-            "nodeId": "03-01", "nodeText": "Camera Roll", "icon": "folder", "expanded": true,
-            "nodeChild": [
-                { "nodeId": "03-01-01", "nodeText": "WIN_20160726_094117.JPG", "image": "https://cdn.syncfusion.com/content/images/Contact-us/primary_logo.svg" },
-                { "nodeId": "03-01-02", "nodeText": "WIN_20160726_094118.JPG", "image": "https://cdn.syncfusion.com/content/images/home-v1/what-we-need/1800-components-onhover.svg" }
-            ]
-        },
-    ]}
+            {
+                "nodeId": "03-01", "nodeText": "Camera Roll", "icon": "folder", "expanded": true,
+                "nodeChild": [
+                    { "nodeId": "03-01-01", "nodeText": "WIN_20160726_094117.JPG", "image": "https://ej2.syncfusion.com/react/demos/src/image-editor/images/flower.png" },
+                    { "nodeId": "03-01-02", "nodeText": "WIN_20160726_094118.JPG", "image": "https://ej2.syncfusion.com/react/demos/src/image-editor/images/bridge.png" }
+                ]
+            },
+        ]
+    }
 ];
 
 let imageEditorObj: ImageEditor = new ImageEditor({
@@ -44,7 +44,7 @@ let imageEditorObj: ImageEditor = new ImageEditor({
             imageEditorObj.open('bee-eater.png');
         } else {
             imageEditorObj.open('bee-eater.png');
-            }
+        }
     }
 });
 imageEditorObj.appendTo('#imageeditor');

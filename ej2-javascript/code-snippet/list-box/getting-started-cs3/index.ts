@@ -1,5 +1,4 @@
 import { ListBox } from '@syncfusion/ej2-dropdowns';
-ListBox.Inject(CheckBoxSelection);
 
 // define the array of object
 let data: { [key: string]: Object }[] = [

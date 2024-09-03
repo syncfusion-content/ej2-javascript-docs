@@ -199,27 +199,27 @@ public async Task<IActionResult> Save(IFormFile UploadFiles) // Save the uploade
         if (!Directory.Exists(uploads)) //Create directory if not exists
         {
             Directory.CreateDirectory(uploads);
-        }
+                }
 
         if (UploadFiles.ContentType == "application/octet-stream") //Handle chunk upload
-        {
+            {
             var filePath = Path.Combine(uploads, UploadFiles.FileName);
             using (var fileStream = new FileStream(filePath, FileMode.Append))
-            {
+                {
                 await UploadFiles.CopyToAsync(fileStream);
-            }
-        }
+                }
+                }
         else //Handle normal upload
-        {
+    {
             var filePath = Path.Combine(uploads, UploadFiles.FileName);
             using (var fileStream = new FileStream(filePath, FileMode.Create))
-            {
+{
                 await UploadFiles.CopyToAsync(fileStream);
-            }
+        }
         }
     }
     return Ok();
-}
+    }
 public void Remove(string UploadFiles) // Delete the uploaded file
 {
     if (UploadFiles != null)
@@ -229,9 +229,9 @@ public void Remove(string UploadFiles) // Delete the uploaded file
         {
             //Delete the file from server
             System.IO.File.Delete(filePath);
+            }
         }
     }
-}
 ```
 
 > You can also explore [JavaScript File Upload](https://www.syncfusion.com/javascript-ui-controls/js-file-upload) feature tour page for its groundbreaking features. You can also explore our [JavaScript File Upload example](https://ej2.syncfusion.com/demos/#/material/uploader/default.html) to understand how to browse the files which you want to upload to the server.

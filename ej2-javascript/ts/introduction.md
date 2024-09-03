@@ -192,7 +192,7 @@ If you are still not able to find the information that you are looking for in th
 ## See also
 
 * [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/)
-* [Getting Started with Syncfusion Javascript UI controls](https://ej2.syncfusion.com/documentation/getting-started/quick-start/)
-* [Getting Started with Syncfusion Javascript and Ionic Frameworks](https://ej2.syncfusion.com/documentation/getting-started/ionic/)
-* [Getting started with Syncfusion Javascript and Cordova CLI](https://ej2.syncfusion.com/documentation/getting-started/cordova/)
-* [Getting Started with Syncfusion Javascript and Meteor Framework](https://ej2.syncfusion.com/documentation/getting-started/meteor/)
+* [Getting Started with Syncfusion JavaScript UI controls](https://ej2.syncfusion.com/documentation/getting-started/quick-start/)
+* [Getting Started with Syncfusion JavaScript and Ionic Frameworks](https://ej2.syncfusion.com/documentation/getting-started/ionic/)
+* [Getting started with Syncfusion JavaScript and Cordova CLI](https://ej2.syncfusion.com/documentation/getting-started/cordova/)
+* [Getting Started with Syncfusion JavaScript and Meteor Framework](https://ej2.syncfusion.com/documentation/getting-started/meteor/)

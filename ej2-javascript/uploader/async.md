@@ -158,12 +158,12 @@ public async Task<IActionResult> Save(IFormFile UploadFiles)
 
         var filePath = Path.Combine(uploads, UploadFiles.FileName); // Get the file path
         using (var fileStream = new FileStream(filePath, FileMode.Create)) // Create the file
-        {
+            {
             await UploadFiles.CopyToAsync(fileStream); // Save the file
-        }
-    }
+                }
+                }
     return Ok();
-}
+            }
 ```
 
 ### Server-side configuration for saving and returning responses
@@ -325,8 +325,8 @@ public void Remove(string UploadFiles)
         {
             System.IO.File.Delete(filePath); // Delete the file
         }
-    }
-}
+        }
+        }
 ```
 
 ## Auto Upload

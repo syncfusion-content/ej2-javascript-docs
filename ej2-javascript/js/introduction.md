@@ -148,7 +148,7 @@ letter-spacing: 0.7px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/multi-select/es5-getting-started/">Multiselect DropDown</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/drop-down-tree/es5-getting-started/">DropDown Tree</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/mention/es5-getting-started/">Mention</a></div>
-         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/multicolumn-combobox/es5-getting-started">MultiColumn ComboBox</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/multicolumn-combobox/es5-getting-started">MultiColumn ComboBox</a></div>
         <div><p class="controlcategory">NAVIGATION</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/accordion/getting-started/">Accordion</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/carousel/es5-getting-started/">Carousel</a></div>

@@ -1,6 +1,6 @@
-import { Chart, WaterfallSeries, Category, DataLabel } from '@syncfusion/ej2-charts';
+import { Chart, WaterfallSeries, Category } from '@syncfusion/ej2-charts';
 import { chartData } from './datasource.ts';
-Chart.Inject(WaterfallSeries, Category, DataLabel);
+Chart.Inject(WaterfallSeries, Category);
 
 let chart: Chart = new Chart({
     primaryXAxis: {

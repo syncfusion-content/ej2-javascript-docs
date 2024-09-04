@@ -211,4 +211,4 @@ npm start
           
 {% previewsample "page.domainurl/code-snippet/treeview/getting-started-cs1" %}
 
-> You can also explore our [JavaScript TreeView example](https://ej2.syncfusion.com/demos/#/material/treeview/default.html) to knows how to present and manipulate data.
+> You can also explore our [JavaScript TreeView example](https://ej2.syncfusion.com/demos/#/bootstrap5/treeview/default.html) to knows how to present and manipulate data.

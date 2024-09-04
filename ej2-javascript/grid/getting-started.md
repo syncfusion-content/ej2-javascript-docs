@@ -328,7 +328,9 @@ Output will be displayed as follows.
 
 * [Overview of Grid](https://www.syncfusion.com/blogs/post/overview-of-grid-in-essential-js-2-part-1.aspx)
 * [Introduction to the Grid control](https://www.syncfusion.com/blogs/post/introduction-to-the-grid-control-for-javascript.aspx)
-* [How to display a table data after clicking Submit button in Javascript?](https://support.syncfusion.com/kb/article/10145/how-to-display-a-table-data-after-clicking-submit-button)
-* [How to display table in popup window using Javascript?](https://support.syncfusion.com/kb/article/10339/how-to-display-table-in-popup-window-using-javascript)
+* [How to display a table data after clicking Submit button in JavaScript?](https://support.syncfusion.com/kb/article/10145/how-to-display-a-table-data-after-clicking-submit-button)
+* [How to display table in popup window using JavaScript?](https://support.syncfusion.com/kb/article/10339/how-to-display-table-in-popup-window-using-javascript)
 * [How to open pdf document on button click inside a Grid](https://support.syncfusion.com/kb/article/10246/how-to-open-pdf-document-on-button-click-inside-a-grid)
 * [How to disable the default keyboard actions in Grid](https://support.syncfusion.com/kb/article/9578/how-to-disable-the-default-keyboard-actions-in-js-grid)
+
+N> You can refer to our [JavaScript DataGrid](https://www.syncfusion.com/javascript-ui-controls/js-data-grid) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript DataGrid example](https://ej2.syncfusion.com/demos/#/bootstrap5/grid/default.html) that shows you how to present and manipulate data.

@@ -223,10 +223,10 @@ Create and add a `node` (JSON data) with specific position, size.
 
 ### Apply shape and style to node
 
-Syncfusion diagram control provides support to render many build-in shapes in diagram.
+Syncfusion diagram control provides support to render many built-in shapes in diagram.
 Please refer to [`Shapes`](../api/diagram/shapes/) to know about built-in Shapes.
 
-* The appearance of a node can be customized by changing its [`fill`](../api/diagram/shapeStyleModel#fill-string) color, [`strokeColor`](../api/diagram/shapeStyleModel#strokecolor-string), [`strokeWidth`](../api/diagram/shapeStyleModel#strokewidth-number), [`borderColor`](../api/diagram/node#borderColor-string), [`borderWidth`](../api/diagram/node#borderWidth-number), [`strokeDashArray`](../api/diagram/shapeStyleModel#strokeDashArray-number),  [`opacity`](../api/diagram/shapeStyleModel#opacity-number), and [`shadow`](../api/diagram/shapeStyleModel#shadow-number).
+* The appearance of a node can be customized by changing its [`fill`](../api/diagram/shapeStyleModel/#fill-string) color, [`strokeColor`](../api/diagram/shapeStyleModel/#strokecolor-string), [`strokeWidth`](../api/diagram/shapeStyleModel/#strokewidth-number), [`borderColor`](../api/diagram/node/#borderColor-string), [`borderWidth`](../api/diagram/node/#borderWidth-number), [`strokeDashArray`](../api/diagram/shapeStyleModel/#strokeDashArray-number),  [`opacity`](../api/diagram/shapeStyleModel/#opacity-number), and [`shadow`](../api/diagram/shapeStyleModel/#shadow-number).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -377,7 +377,7 @@ let diagram: Diagram = new Diagram({
 
 ### Rendering layout with Datasource
 
-To create an organizational chart, the [`type`](../api/diagram/layout) of layout should be set as an `OrganizationalChart`. The following code example shows how DataManager is used to generate Layout based on the DataSourceSettings of the Diagram.
+To create an organizational chart, the [`type`](../api/diagram/layout/) of layout should be set as an `OrganizationalChart`. The following code example shows how DataManager is used to generate Layout based on the DataSourceSettings of the Diagram.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -436,3 +436,5 @@ The following code examples indicate how to define the default appearance of nod
 
 {% previewsample "page.domainurl/code-snippet/diagram/getting-started-cs5" %}
 {% endif %}
+
+N> You can refer to our [JavaScript Diagram](https://www.syncfusion.com/javascript-ui-controls/js-diagram) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Diagram example](https://ej2.syncfusion.com/demos/#/bootstrap5/diagram/default-functionalities.html) to knows how to present and manipulate data.

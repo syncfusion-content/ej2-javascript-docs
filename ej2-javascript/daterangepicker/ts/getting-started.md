@@ -177,3 +177,5 @@ The start and end date in a range can be defined with the help of startDate and 
 
 * [Render DateRangePicker with pre-defined ranges](./customization#preset-ranges)
 * [Render DateRangePicker with specific culture](./globalization)
+
+> You can also explore [JavaScript DateRangePicker](https://www.syncfusion.com/javascript-ui-controls/js-daterangepicker) feature tour page for its groundbreaking features. You can also explore our [JavaScript DateRangePicker](https://ej2.syncfusion.com/demos/#/bootstrap5/daterangepicker/default.html) that shows how to render the DateRangePicker in JavaScript

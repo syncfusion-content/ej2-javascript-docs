@@ -2,7 +2,7 @@
  * TreeGrid DataSource
  */
 
-window.summaryRowData = [{
+export var summaryRowData = [{
     'FreightID': 'CX2389NK',
     'FreightName': 'Maersk Edibles Co.',
     'TotalUnits': 598,
@@ -111,7 +111,7 @@ window.summaryRowData = [{
         }
 ];
 
-window.summaryData = [
+export var summaryData = [
     {
         ID: '1',
         Name: 'Order 1',
@@ -154,7 +154,7 @@ window.summaryData = [
     }
 
 ];
-window.sampleData =  [
+export var sampleData =  [
     {
         taskID: 1,
         taskName: 'Planning',
@@ -316,7 +316,7 @@ window.sampleData =  [
     }
 ];
 
-window.textWrapData = [
+export var textWrapData = [
 {
   taskID: 1,
   taskName: 'Design',
@@ -437,11 +437,12 @@ window.textWrapData = [
 }
 ];
 
-window.textdata = [{
+export var textdata = [{
     'Name': 'Robert King',
     'FullName': 'RobertKing',
     'Designation': 'Chief Executive Officer',
     'EmployeeID': '1',
+    'EmpID': 'EMP001',
     'Address': '507 - 20th Ave. E.Apt. 2A, Seattle',
     'Contact': '(206) 555-9857',
     'Country': 'USA',
@@ -452,6 +453,7 @@ window.textdata = [{
         'FullName': 'DavidWilliam',
         'Designation': 'Vice President',
         'EmployeeID': '2',
+        'EmpID': 'EMP004',
         'Address': '722 Moss Bay Blvd., Kirkland',
         'Country': 'USA',
         'Contact': '(206) 555-3412',
@@ -463,6 +465,7 @@ window.textdata = [{
             'FullName': 'NancyDavolio',
             'Designation': 'Marketing Executive',
             'EmployeeID': '3',
+            'EmpID': 'EMP035',
             'Address': '4110 Old Redmond Rd., Redmond',
             'Country': 'USA',
             'Contact': '(206) 555-8122',
@@ -473,6 +476,7 @@ window.textdata = [{
                     'FullName': 'AndrewFuller',
                     'Designation': 'Sales Representative',
                     'EmployeeID': '4',
+                    'EmpID': 'EMP045',
                     'Address': '14 Garrett Hill, London',
                     'Country': 'UK',
                     'Contact': '(71) 555-4848',
@@ -483,6 +487,7 @@ window.textdata = [{
                 'FullName': 'AnneDodsworth',
                 'Designation': 'Sales Representative',
                 'EmployeeID': '5',
+                'EmpID': 'EMP091',
                 'Address': '4726 - 11th Ave. N.E., Seattle',
                 'Country': 'USA',
                 'Contact': '(206) 555-1189',
@@ -493,6 +498,7 @@ window.textdata = [{
                 'FullName': 'MichaelSuyama',
                 'Designation': 'Sales Representative',
                 'EmployeeID': '6',
+                'EmpID': 'EMP110',
                 'Address': 'Coventry House Miner Rd., London',
                 'Country': 'UK',
                 'Contact': '(71) 555-3636',
@@ -503,6 +509,7 @@ window.textdata = [{
                 'FullName': 'JanetLeverling',
                 'Designation': 'Sales Coordinator',
                 'EmployeeID': '7',
+                'EmpID': 'EMP131',
                 'Address': 'Edgeham Hollow Winchester Way, London',
                 'Country': 'UK',
                 'Contact': '(71) 555-3636',
@@ -516,6 +523,7 @@ window.textdata = [{
             'FullName': 'RomeyWilson',
             'Designation': 'Sales Executive',
             'EmployeeID': '8',
+            'EmpID': 'EMP039',
             'Address': '7 Houndstooth Rd., London',
             'Country': 'UK',
             'Contact': '(71) 555-3690',
@@ -526,6 +534,7 @@ window.textdata = [{
                 'FullName': 'MargaretPeacock',
                 'Designation': 'Sales Representative',
                 'EmployeeID': '9',
+                'EmpID': 'EMP213',
                 'Address': '4726 - 11th Ave. N.E., California',
                 'Country': 'USA',
                 'Contact': '(206) 555-1989',
@@ -536,6 +545,7 @@ window.textdata = [{
                 'FullName': 'LauraCallahan',
                 'Designation': 'Sales Coordinator',
                 'EmployeeID': '10',
+                'EmpID': 'EMP201',
                 'Address': 'Coventry House Miner Rd., London',
                 'Country': 'UK',
                 'Contact': '(71) 555-2222',
@@ -546,6 +556,7 @@ window.textdata = [{
                 'FullName': 'StevenBuchanan',
                 'Designation': 'Sales Representative',
                 'EmployeeID': '11',
+                'EmpID': 'EMP197',
                 'Address': '200 Lincoln Ave, Salinas, CA 93901',
                 'Country': 'USA',
                 'Contact': '(831) 758-7408',
@@ -556,6 +567,7 @@ window.textdata = [{
                 'FullName': 'TeddLawson',
                 'Designation': 'Sales Representative',
                 'EmployeeID': '12',
+                'EmpID': 'EMP167',
                 'Address': '200 Lincoln Ave, Salinas, CA 93901',
                 'Country': 'USA',
                 'Contact': '(831) 758-7368 ',
@@ -566,7 +578,7 @@ window.textdata = [{
     }]
 }];
 
-window.headerData = [
+export var headerData = [
     {
         taskID: 1,
         taskName: 'Planning',
@@ -635,7 +647,7 @@ window.headerData = [
      }
 ];
 
-window.stackedData = [
+export var stackedData = [
     {
         orderID: '1',
         orderName: 'Order 1',
@@ -701,7 +713,7 @@ window.stackedData = [
 
 ];
 
-window.formatData = [
+export var formatData = [
     {
         orderID: '1',
         orderName: 'Order 1',
@@ -767,11 +779,11 @@ window.formatData = [
 
 ];
 
-window.lockRowDropDownData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+export var lockRowDropDownData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
 31, 32, 33, 34, 35, 36];
 
-window.projectData = [
+export var projectData = [
     { 'TaskID': 1, 'TaskName': 'Parent Task 1', 'StartDate': new Date('02/23/2017'), 'Duration': 3, 'Priority' : 'Normal',
     'EndDate': new Date('02/27/2017'), 'Progress': '40' },
     { 'TaskID': 2, 'TaskName': 'Child Task 1', 'StartDate': new Date('02/23/2017'), 'Duration': 4, 'Priority' : 'Low',
@@ -804,7 +816,7 @@ window.projectData = [
     'EndDate': new Date('03/13/2017'), 'Progress': '40', 'parentID': 10 }
 ];
 
-window.lineData = [
+export var lineData = [
     [0, 6, 4, 1, 3, 2, 5],
     [5, 4, 6, 3, 1, 2, 0],
     [6, 4, 0, 3, 2, 5, 1],
@@ -827,7 +839,7 @@ window.lineData = [
     [3, 5, 6, 4, 0, 1, 2],
     [1, 3, 4, 2, 5, 0, 6]
 ];
-window.columnData = [
+export var columnData = [
     [0, 6, -4, 1, -3, 2, 5],
     [5, -4, 6, 3, -1, 2, 0],
     [6, 4, 0, 3, -2, 5, 1],
@@ -850,7 +862,19 @@ window.columnData = [
     [3, 5, 6, -4, 0, 1, 2],
     [1, 3, -4, 2, -5, 0, 6]
 ];
-window.sortData = [
+
+
+export var getSparkData =(type, count) =>{
+    if (type === 'line') {
+        return lineData[count];
+    }
+    else {
+        return columnData[count];
+    }
+}
+
+
+export var sortData = [
     {
         orderID: '1',
         orderName: 'Order 1',
@@ -916,7 +940,7 @@ window.sortData = [
 
 ];
 
-window.complexData =  [
+export var complexData =  [
     {
         taskID: 1,
         taskName: 'Planning',
@@ -963,7 +987,7 @@ window.complexData =  [
     }
 ];
 
-window.stringData =  [
+export var stringData =  [
     {
         taskID: 1,
         taskName: 'Planning',

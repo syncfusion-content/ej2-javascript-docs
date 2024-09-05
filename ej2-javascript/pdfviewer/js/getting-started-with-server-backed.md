@@ -25,9 +25,9 @@ The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaS
 > Styles: `https://cdn.syncfusion.com/ej2/{Version}/{PACKAGE_NAME}/styles/material.css`
 
 **Example:**
-> Script: [`https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js)
+> Script: [`https://cdn.syncfusion.com/ej2/26.2.11/dist/ej2.min.js`](https://cdn.syncfusion.com/ej2/26.2.11/dist/ej2.min.js)
 >
-> Styles: [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/styles/material.css`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/styles/material.css)
+> Styles: [`https://cdn.syncfusion.com/ej2/26.2.11/ej2-base/styles/material.css`](https://cdn.syncfusion.com/ej2/26.2.11/ej2-base/styles/material.css)
 
 **Step 3:** Create a HTML page (index.html) in `my_app` location and add the CDN link references. Now, add the `Div` element and initiate the `Essential JS 2 PDF Viewer` component in the index.html by using following code.
 

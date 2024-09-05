@@ -7,15 +7,15 @@ import {
 import { Ajax, loadCldr, setCulture, L10n } from '@syncfusion/ej2-base';
 import { Calendar, Islamic } from '@syncfusion/ej2-calendars';
 import { scheduleData } from './datasource.ts';
-import * as numberingSystems from './numberingSystems.json';
-import * as gregorian from './ca-gregorian.json';
-import * as numbers from './numbers.json';
-import * as detimeZoneNames from './timeZoneNames.json';
-import * as islamic from './ca-islamic.json';
+import arNumberData from '@syncfusion/ej2-cldr-data/main/ar/numbers.json';
+import artimeZoneData from '@syncfusion/ej2-cldr-data/main/ar/timeZoneNames.json';
+import arGregorian from '@syncfusion/ej2-cldr-data/main/ar/ca-gregorian.json';
+import arIslamic from '@syncfusion/ej2-cldr-data/main/ar/ca-islamic.json';
+import arNumberingSystem from '@syncfusion/ej2-cldr-data/supplemental/numberingSystems.json';
 
 Schedule.Inject(Day, Week, WorkWeek, Month, TimelineViews, TimelineMonth, Agenda, MonthAgenda, Resize, DragAndDrop);
 Calendar.Inject(Islamic);
-loadCldr(numberingSystems, gregorian, numbers, detimeZoneNames, islamic);
+loadCldr(arNumberData, artimeZoneData, arGregorian, arIslamic, arNumberingSystem);
 let localeTexts: string;
 let ajax: Ajax = new Ajax('./locale.json', 'GET', false);
 ajax.onSuccess = (value: string) => {

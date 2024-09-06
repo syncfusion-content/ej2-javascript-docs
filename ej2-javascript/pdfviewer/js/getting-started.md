@@ -25,9 +25,9 @@ The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaS
 > Styles: `https://cdn.syncfusion.com/ej2/{Version}/{PACKAGE_NAME}/styles/material.css`
 
 **Example:**
-> Script: [`https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js)
+> Script: [`https://cdn.syncfusion.com/ej2/26.2.11/dist/ej2.min.js`](https://cdn.syncfusion.com/ej2/26.2.11/dist/ej2.min.js)
 >
-> Styles: [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/styles/material.css`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/styles/material.css)
+> Styles: [`https://cdn.syncfusion.com/ej2/26.2.11/ej2-base/styles/material.css`](https://cdn.syncfusion.com/ej2/26.2.11/ej2-base/styles/material.css)
 
 N> While referring the scripts from the downloaded resources in your application, make sure to place the 'ej2-pdfviewer-lib' assets in the same directory as the 'ej2.min.js' script.
 

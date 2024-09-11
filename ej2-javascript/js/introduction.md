@@ -21,8 +21,6 @@ The Syncfusion JavaScript (ES5) UI controls are listed below.
 
 <style>
 <table>
-border:0 !important;
-line-height: 2!important;
 
 tr
 {

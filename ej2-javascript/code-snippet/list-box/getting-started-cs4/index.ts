@@ -1,6 +1,7 @@
 
 
-import { ListBox } from '@syncfusion/ej2-dropdowns';
+
+import { ListBox, CheckBoxSelection } from '@syncfusion/ej2-dropdowns';
 
 // define the array of object
 let data: { [key: string]: Object }[] = [

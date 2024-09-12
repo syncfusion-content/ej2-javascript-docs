@@ -21,7 +21,7 @@ To get started, ensure the following software to be installed in the machine.
 
 * [Visual Studio Code](https://code.visualstudio.com/)
 
-> Check out the [download and installation](https://ej2.syncfusion.com/javascript/documentation/installation-and-upgrade/download/) section of `Essential Studio JavaScript`. If you are using Syncfusion CDN resources to build your web application, you can skip the Essential Studio JavaScript prerequisite.
+> Check out the [download and installation](https://ej2.syncfusion.com/javascript/documentation/installation-and-upgrade/download) section of `Essential Studio JavaScript`. If you are using Syncfusion CDN resources to build your web application, you can skip the Essential Studio JavaScript prerequisite.
 
 ## Set up development environment
 
@@ -37,7 +37,7 @@ You can access Syncfusion control resources using either of the following method
 
 * [Using CDN link for scripts and styles](#using-cdn-link-for-scripts-and-styles)
 
-> Syncfusion JavaScript controls have dependencies on other Syncfusion controls, so you must add these dependent control resources to use all their functionality. These dependencies are listed in the corresponding control's getting started documentation. For example, you can find the dependencies for the Grid control [here](https://ej2.syncfusion.com/javascript/documentation/grid/getting-started/#dependencies).
+> Syncfusion JavaScript controls have dependencies on other Syncfusion controls, so you must add these dependent control resources to use all their functionality. These dependencies are listed in the corresponding control's getting started documentation. For example, you can find the dependencies for the Grid control [here](https://ej2.syncfusion.com/javascript/documentation/grid/getting-started#dependencies).
 
 ### Using local scripts and styles
 
@@ -96,7 +96,7 @@ You can access Syncfusion control resources using either of the following method
     >
     > Style reference for all controls: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\material.css`
 
-    > Since this file includes all Syncfusion controls, it may impact the website's loading time. To reduce the size of the single file, you can generate custom scripts and styles for a set of specific Syncfusion JavaScript controls using the [Custom Resource Generator (CRG)](https://crg.syncfusion.com/) tool. This tool is useful for combining the required control scripts and styles into a single file. To know more about the CRG, refer to this [documentation](https://ej2.syncfusion.com/javascript/documentation/common/custom-resource-generator/).
+    > Since this file includes all Syncfusion controls, it may impact the website's loading time. To reduce the size of the single file, you can generate custom scripts and styles for a set of specific Syncfusion JavaScript controls using the [Custom Resource Generator (CRG)](https://crg.syncfusion.com/) tool. This tool is useful for combining the required control scripts and styles into a single file. To know more about the CRG, refer to this [documentation](https://ej2.syncfusion.com/javascript/documentation/common/custom-resource-generator).
 
 * Once copy/paste the individual scripts and styles to the `~/quickstart/resources/` location. Add the required Grid control resources to the `~/quickstart/index.html` file in the following order.
 
@@ -277,7 +277,7 @@ Open the `~/quickstart/index.html` file in the web browser and it will render th
 
 {% previewsample "page.domainurl/code-snippet/common/getting-started-cs2" %}
 
-To learn more about the functionality of the Grid control, refer to the [Grid control](https://ej2.syncfusion.com/javascript/documentation/grid/getting-started/) section.
+To learn more about the functionality of the Grid control, refer to the [Grid control](https://ej2.syncfusion.com/javascript/documentation/grid/getting-started) section.
 
 > [View CDN link reference sample in github](https://github.com/SyncfusionExamples/ej2-quickstart/tree/master/CDN/quickstart)
 
@@ -285,4 +285,4 @@ To learn more about the functionality of the Grid control, refer to the [Grid co
 
 ## See also
 
-* [How to register Syncfusion license key in JavaScript(ES5) application](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration/)
+* [How to register Syncfusion license key in JavaScript(ES5) application](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration)

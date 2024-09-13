@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Syncfusion JavaScript (ES5) UI control in a quickstart application
+# Getting Started with Quickstart Application in JavaScript UI control
 
 This section provides a step-by-step guide to configuring the Syncfusion JavaScript (ES5) UI control (Essential JS 2) and building a simple HTML web application.
 

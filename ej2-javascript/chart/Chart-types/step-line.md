@@ -288,6 +288,40 @@ Use the [`step`](../../api/chart/series/#step) property to change the position o
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs203" %}
 {% endif %}
 
+**No risers**
+
+The [`noRisers`] feature allows the range step area series to appear as a continuous flow, eliminating the vertical lines between points. This approach is useful for highlighting trends without the distraction of risers.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/steplineraiser-cs/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/steplineraiser-cs/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/steplineraiser-cs/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/steplineraiser-cs" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/steplineraiser-cs/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/steplineraiser-cs/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/steplineraiser-cs" %}
+{% endif %}
+
 ## Empty points
 
 Data points with `null` or `undefined` values are considered empty. Empty data points are ignored and not plotted on the chart.

@@ -180,6 +180,37 @@ Using the [`enableScrollbar`](../api/chart/zoomSettingsModel/#enablescrollbar) p
 {% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs43" %}
 {% endif %}
 
+## Enable animation
+
+Enable the [enableAnimation] property to experience smooth transitions when zooming in on the chart.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/user-interaction-cs42/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/user-interaction-cs42/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs42" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/user-interaction-cs42/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/user-interaction-cs42/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs42" %}
+{% endif %}
+
 ## Auto interval on zooming
 
 By using [`enableAutoIntervalOnZooming`](../api/chart/axis/#enableautointervalonzooming) property, the axis interval will get calculated automatically with respect to the zoomed range.

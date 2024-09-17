@@ -14,14 +14,19 @@ let imageEditorObj: ImageEditor = new ImageEditor({
         } else {
             imageEditorObj.open('bee-eater.png');
         }
-    },
-    beforeSave: () => {
-        var dimension = imageEditorObj.getImageDimension();
-        imageEditorObj.drawText(dimension.x + 100, dimension.y, 'Syncfusion', 'Arial', 40, false, false, '#80330075');
-    },
-    saved: () => {
-        var shapes = imageEditorObj.getShapeSettings();
-        imageEditorObj.deleteShape(shapes[shapes.length - 1].id);
-    },
+    }
 });
 imageEditorObj.appendTo('#imageeditor');
+
+let base64String: string;
+(document.getElementById('saveImage') as HTMLElement).onclick = function () {
+    const imageData = imageEditorObj.getImageData();
+    const canvas = document.createElement('canvas');
+    canvas.width = imageData.width;
+    canvas.height = imageData.height;
+    const context = canvas.getContext('2d');
+    if (context) {
+        context.putImageData(imageData, 0, 0);
+        base64String = canvas.toDataURL();
+    }
+};

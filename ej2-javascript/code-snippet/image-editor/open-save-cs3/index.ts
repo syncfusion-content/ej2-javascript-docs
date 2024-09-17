@@ -1,8 +1,8 @@
 
 
 import { ImageEditor } from '@syncfusion/ej2-image-editor';
-import { Browser } from '@syncfusion/ej2-base';
-import { Uploader, SelectedEventArgs } from '@syncfusion/ej2-inputs';
+import { Button } from '@syncfusion/ej2-buttons';
+import { Browser, getComponent } from '@syncfusion/ej2-base';
 
 //Image Editor items definition
 
@@ -19,16 +19,19 @@ let imageEditorObj: ImageEditor = new ImageEditor({
 });
 imageEditorObj.appendTo('#imageeditor');
 
-let uploadObject: Uploader = new Uploader({
-    selected: (args: SelectedEventArgs) => {
-        if (args.filesData.length > 0) {
-            const reader = new FileReader();
-            reader.onload = () => {
-                imageEditorObj.open(reader.result as string);
-            };
-            reader.readAsDataURL(args.filesData[0].rawFile as Blob);
-        }
-    },
-    showFileList: false
-});
-uploadObject.appendTo('#fileupload');
+var blobUrl: any;
+(document.getElementById('saveImage') as HTMLElement).onclick = function () {
+    var imageData = imageEditorObj.getImageData();
+    var canvas = document.createElement('canvas');
+    var ctx = canvas.getContext('2d');
+    canvas.width = imageData.width;
+    canvas.height = imageData.height;
+    ctx.putImageData(imageData, 0, 0);
+    canvas.toBlob(function (blob) {
+        blobUrl = URL.createObjectURL(blob as any);
+    });
+};
+
+(document.getElementById('openImage') as HTMLElement).onclick = function () {
+    imageEditorObj.open(blobUrl);
+};

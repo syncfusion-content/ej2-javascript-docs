@@ -8,6 +8,7 @@ import { Browser } from '@syncfusion/ej2-base';
 let imageEditorObj: ImageEditor = new ImageEditor({
     width: '550px',
     height: '330px',
+    toolbar: [],
     created: () => {
         if (Browser.isDevice) {
             imageEditorObj.open('bee-eater.png');
@@ -18,15 +19,6 @@ let imageEditorObj: ImageEditor = new ImageEditor({
 });
 imageEditorObj.appendTo('#imageeditor');
 
-var blobUrl: any;
-document.getElementById('saveImage').onclick = function () {
-    var imageData = imageEditorObj.getImageData();
-    var canvas = document.createElement('canvas');
-    var ctx = canvas.getContext('2d');
-    canvas.width = imageData.width;
-    canvas.height = imageData.height;
-    ctx.putImageData(imageData, 0, 0);
-    canvas.toBlob(function (blob) {
-        blobUrl = URL.createObjectURL(blob as any);
-    });
-}
+(document.getElementById('save') as HTMLElement).onclick = function () {
+    imageEditorObj.export("PNG", "Syncfusion"); // File type, file name
+};

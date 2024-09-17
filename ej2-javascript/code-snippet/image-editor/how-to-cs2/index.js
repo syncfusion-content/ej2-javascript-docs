@@ -13,7 +13,7 @@ dialog.appendTo('#profile-dialog');
 var imageEditorObj = new ej.imageeditor.ImageEditor();
 imageEditorObj.appendTo('#imageeditor');
 
-document.getElementById('dialog-btn').onclick = function () {
+document.getElementById('openDialog').onclick = function () {
   dialog.show();
   imageEditorObj.open('flower.png');
 };

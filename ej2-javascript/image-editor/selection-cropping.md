@@ -35,27 +35,27 @@ Here is an example of square selection using the [`select`](https://ej2.syncfusi
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/custom-selection-cs3/index.ts %}
+{% include code-snippet/image-editor/custom-selection-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/custom-selection-cs3/index.html %}
+{% include code-snippet/image-editor/custom-selection-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs3" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/custom-selection-cs3/index.js %}
+{% include code-snippet/image-editor/custom-selection-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/custom-selection-cs3/index.html %}
+{% include code-snippet/image-editor/custom-selection-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs3" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs1" %}
 {% endif %}
 
 ## Insert selection based on aspect ratio
@@ -75,27 +75,27 @@ In the following example, the [`select`](https://ej2.syncfusion.com/javascript/d
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/custom-selection-cs5/index.ts %}
+{% include code-snippet/image-editor/custom-selection-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/custom-selection-cs5/index.html %}
+{% include code-snippet/image-editor/custom-selection-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs5" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/custom-selection-cs5/index.js %}
+{% include code-snippet/image-editor/custom-selection-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/custom-selection-cs5/index.html %}
+{% include code-snippet/image-editor/custom-selection-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs5" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs2" %}
 {% endif %}
 
 ## Resize selections 
@@ -124,27 +124,27 @@ Here is an example of circle cropping using the [`select`](https://ej2.syncfusio
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/custom-selection-cs6/index.ts %}
+{% include code-snippet/image-editor/custom-selection-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/custom-selection-cs6/index.html %}
+{% include code-snippet/image-editor/custom-selection-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs6" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/custom-selection-cs6/index.js %}
+{% include code-snippet/image-editor/custom-selection-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/custom-selection-cs6/index.html %}
+{% include code-snippet/image-editor/custom-selection-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs6" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs3" %}
 {% endif %}
 
 ## Cropping event
@@ -167,27 +167,27 @@ In the image editor, when an image is cropped, it is usually enlarged or scaled 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/custom-selection-cs7/index.ts %}
+{% include code-snippet/image-editor/custom-selection-cs4/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/custom-selection-cs7/index.html %}
+{% include code-snippet/image-editor/custom-selection-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs7" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/custom-selection-cs7/index.js %}
+{% include code-snippet/image-editor/custom-selection-cs4/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/custom-selection-cs7/index.html %}
+{% include code-snippet/image-editor/custom-selection-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs7" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs4" %}
 {% endif %}
 
 ### Locking Selection Area During Cropping 
@@ -198,27 +198,27 @@ When selecting an area for cropping, users can typically resize the selection fr
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/custom-selection-cs8/index.ts %}
+{% include code-snippet/image-editor/custom-selection-cs5/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/custom-selection-cs8/index.html %}
+{% include code-snippet/image-editor/custom-selection-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs8" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs5" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/custom-selection-cs8/index.js %}
+{% include code-snippet/image-editor/custom-selection-cs5/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/custom-selection-cs8/index.html %}
+{% include code-snippet/image-editor/custom-selection-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs8" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs5" %}
 {% endif %}
 
 ### Cropping with Custom Ratio Selection 
@@ -229,25 +229,25 @@ Users can perform cropping either through the toolbar or by using our public met
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/custom-selection-cs9/index.ts %}
+{% include code-snippet/image-editor/custom-selection-cs6/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/custom-selection-cs9/index.html %}
+{% include code-snippet/image-editor/custom-selection-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs9" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs6" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/custom-selection-cs9/index.js %}
+{% include code-snippet/image-editor/custom-selection-cs6/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/custom-selection-cs9/index.html %}
+{% include code-snippet/image-editor/custom-selection-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs9" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs6" %}
 {% endif %}

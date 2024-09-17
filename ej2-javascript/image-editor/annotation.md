@@ -17,7 +17,7 @@ The Image Editor allows adding annotations to the image, including text, freehan
 
 The text annotation feature in the Image Editor provides the capability to add and customize labels, captions, and other text elements directly onto the image. With this feature, you can easily insert text at specific locations within the image and customize various aspects of the text to meet your requirements.
 
-You have control over the customization options including text content, font family, font style and font size for the text annotation.
+You have control over the customization options including text content, font family, font style, font color, fill color, stroke color, stroke width and font size for the text annotation.
 
 ### Add a text
 
@@ -40,6 +40,14 @@ The [`drawText`](https://ej2.syncfusion.com/javascript/documentation/api/image-e
 * color - Specifies the font color of the text, allowing you to define the desired color using appropriate color values or names.
 
 * isSelected: Specifies to show the text in the selected state.
+
+* degree: Specifies the degree to rotate the text.
+
+* fillColor: Specifies the background color of the text.
+
+* strokeColor: Specifies the outline color of the text annotation.
+
+* strokeWidth: Specifies the outline stroke width of the text annotation.
 
 By utilizing the [`drawText`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawtext) method with these parameters, you can precisely position and customize text annotations within the image. This provides the flexibility to add labels, captions, or other text elements with specific font styles, sizes, and colors, enhancing the visual presentation and clarity of the image. 
 
@@ -88,146 +96,6 @@ In the following example, you can using the [`drawText`](../../api/image-editor/
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/annotation-cs8/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs8/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs8" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/annotation-cs8/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs8/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs8" %}
-{% endif %}
-
-### Delete a text
-
-The [`deleteShape`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#deleteshape) method in the Image Editor allows you to remove a text annotation from the image editor. To use this method, you need to pass the [`shapeId`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapeid) of the annotation as a parameter.
-
-The [`shapeId`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapeid) is a unique identifier assigned to each text annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired text element. By specifying the [`shapeId`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapeid) associated with the text annotation you want to remove, you can effectively delete it from the image editor.
-
-To retrieve the inserted text annotations, you can utilize the [`getShapeSetting`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getshapesetting) method, which provides a collection of annotations represented by [`ShapeSettings`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/shapeSettings/). This method allows you to access and work with the annotations that have been inserted into the image.
-
-We have used the [`getImageDimension`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getimagedimension) method to obtain the current dimensions of an image, including its `clientX`, `clientY`, width, and height. Based on the `clientX` and `clientY` values, the user can precisely define the position for drawing annotations such as rectangles, ellipses, and more. 
-
-In the following example, the [`deleteShape`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#deleteshape) method is used in the button click event.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/annotation-cs9/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs9/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs9" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/annotation-cs9/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs9/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs9" %}
-{% endif %}
-
-### Customize font family and text color
-
-The [`shapeChanging`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapechanging) event in the Image Editor control is triggered when a text annotation is being modified or changed through the toolbar interaction. This event provides an opportunity to make alterations to the text's color and font family by adjusting the relevant properties. 
-
-By leveraging the [`shapeChanging`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapechanging) event, you can enhance the customization options for text annotations and provide a more tailored and interactive experience within the Image Editor control. 
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/annotation-cs10/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs10/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs10" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/annotation-cs10/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs10/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs10" %}
-{% endif %}
-
-### Add Additional font family
-
-The [`fontFamily`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#fontFamily) property in the Image Editor control provides the flexibility to incorporate supplementary font families, expanding your options for text styling and ensuring a broader range of fonts can be utilized within your design or content. The font value will be determined by the 'id' property.
-
-By leveraging the [`fontFamily`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#fontFamily) property, you can elevate the scope of customization for text annotations, enriching the user experience within the Image Editor control. This enhancement offers a more personalized and dynamic interaction, empowering users to tailor their text styles for a truly engaging editing experience.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/annotation-cs14/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs14/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs14" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/annotation-cs14/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs14/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs14" %}
-{% endif %}
-
-## Freehand drawing
-
-The Freehand Draw annotation tool in the Image Editor control is a versatile feature that allows users to draw and sketch directly on the image using mouse or touch input. This tool provides a flexible and creative way to add freehand drawings or annotations to the image. 
-
-The [`freehandDraw`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#freehanddraw)method is used to enable or disable the freehand drawing option in the Image Editor control. 
-
-Here is an example of using the [`freeHandDraw`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#freehanddraw) method in a button click event.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/annotation-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
@@ -251,6 +119,146 @@ Here is an example of using the [`freeHandDraw`](https://ej2.syncfusion.com/java
 {% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs2" %}
 {% endif %}
 
+### Delete a text
+
+The [`deleteShape`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#deleteshape) method in the Image Editor allows you to remove a text annotation from the image editor. To use this method, you need to pass the [`shapeId`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapeid) of the annotation as a parameter.
+
+The [`shapeId`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapeid) is a unique identifier assigned to each text annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired text element. By specifying the [`shapeId`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapeid) associated with the text annotation you want to remove, you can effectively delete it from the image editor.
+
+To retrieve the inserted text annotations, you can utilize the [`getShapeSetting`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getshapesetting) method, which provides a collection of annotations represented by [`ShapeSettings`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/shapeSettings/). This method allows you to access and work with the annotations that have been inserted into the image.
+
+We have used the [`getImageDimension`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getimagedimension) method to obtain the current dimensions of an image, including its `clientX`, `clientY`, width, and height. Based on the `clientX` and `clientY` values, the user can precisely define the position for drawing annotations such as rectangles, ellipses, and more. 
+
+In the following example, the [`deleteShape`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#deleteshape) method is used in the button click event.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/annotation-cs3/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs3" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/annotation-cs3/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs3" %}
+{% endif %}
+
+### Customize font family and text color
+
+The [`shapeChanging`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapechanging) event in the Image Editor control is triggered when a text annotation is being modified or changed through the toolbar interaction. This event provides an opportunity to make alterations to the text's color and font family by adjusting the relevant properties. 
+
+By leveraging the [`shapeChanging`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapechanging) event, you can enhance the customization options for text annotations and provide a more tailored and interactive experience within the Image Editor control. 
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/annotation-cs4/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs4/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs4" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/annotation-cs4/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs4/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs4" %}
+{% endif %}
+
+### Add Additional font family
+
+The [`fontFamily`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#fontFamily) property in the Image Editor control provides the flexibility to incorporate supplementary font families, expanding your options for text styling and ensuring a broader range of fonts can be utilized within your design or content. The font value will be determined by the 'id' property.
+
+By leveraging the [`fontFamily`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#fontFamily) property, you can elevate the scope of customization for text annotations, enriching the user experience within the Image Editor control. This enhancement offers a more personalized and dynamic interaction, empowering users to tailor their text styles for a truly engaging editing experience.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/annotation-cs5/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs5" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/annotation-cs5/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs5" %}
+{% endif %}
+
+## Freehand drawing
+
+The Freehand Draw annotation tool in the Image Editor control is a versatile feature that allows users to draw and sketch directly on the image using mouse or touch input. This tool provides a flexible and creative way to add freehand drawings or annotations to the image. 
+
+The [`freehandDraw`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#freehanddraw)method is used to enable or disable the freehand drawing option in the Image Editor control. 
+
+Here is an example of using the [`freeHandDraw`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#freehanddraw) method in a button click event.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/annotation-cs6/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs6/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs6" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/annotation-cs6/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs6/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs6" %}
+{% endif %}
+
 ### Adjust the stroke width and color
 
 The [`shapeChanging`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapechanging) event in the Image Editor control is triggered when a freehand annotation is being modified or changed through the toolbar interaction. This event provides an opportunity to make alterations to the freehand annotation's color and stroke width by adjusting the relevant properties.
@@ -261,27 +269,27 @@ By leveraging the [`shapeChanging`](https://ej2.syncfusion.com/javascript/docume
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/annotation-cs12/index.ts %}
+{% include code-snippet/image-editor/annotation-cs7/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs12/index.html %}
+{% include code-snippet/image-editor/annotation-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs12" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs7" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/annotation-cs12/index.js %}
+{% include code-snippet/image-editor/annotation-cs7/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs12/index.html %}
+{% include code-snippet/image-editor/annotation-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs12" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs7" %}
 {% endif %}
 
 ### Delete a freehand drawing
@@ -298,27 +306,27 @@ In the following example, the [`deleteShape`](https://ej2.syncfusion.com/javascr
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/annotation-cs11/index.ts %}
+{% include code-snippet/image-editor/annotation-cs8/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs11/index.html %}
+{% include code-snippet/image-editor/annotation-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs11" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs8" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/annotation-cs11/index.js %}
+{% include code-snippet/image-editor/annotation-cs8/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs11/index.html %}
+{% include code-snippet/image-editor/annotation-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs11" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs8" %}
 {% endif %}
 
 ## Shape annotation
@@ -329,7 +337,7 @@ The Image Editor control provides the ability to add shape annotations to an ima
 
 The [`drawRectangle`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawrectangle) method is used to insert a rectangle to the Image Editor control. Rectangle annotations are valuable tools for highlighting, emphasizing, or marking specific areas of an image to draw attention or provide additional context.
 
-The [`drawRectangle`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawrectangle) method in the Image Editor control takes seven parameters to define the properties of the rectangle annotation:
+The [`drawRectangle`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawrectangle) method in the Image Editor control takes ten parameters to define the properties of the rectangle annotation:
 
 * x: Specifies the x-coordinate of the top-left corner of the rectangle. 
 
@@ -348,6 +356,8 @@ The [`drawRectangle`](https://ej2.syncfusion.com/javascript/documentation/api/im
 * degree: Specifies the degree to rotate the rectangle.
 
 * isSelected: Specifies to show the rectangle in the selected state.
+
+* borderRadius: Specifies the radius to apply border radius to rectangle.
 
 The [`drawEllipse`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawellipse) method is used to insert a ellipse to the Image Editor control. Ellipse annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
 
@@ -431,27 +441,27 @@ Here is an example of inserting rectangle, ellipse, arrow, path, and line in a b
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/annotation-cs3/index.ts %}
+{% include code-snippet/image-editor/annotation-cs9/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs3/index.html %}
+{% include code-snippet/image-editor/annotation-cs9/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs3" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs9" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/annotation-cs3/index.js %}
+{% include code-snippet/image-editor/annotation-cs9/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs3/index.html %}
+{% include code-snippet/image-editor/annotation-cs9/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs3" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs9" %}
 {% endif %}
 
 ## Delete a shape
@@ -468,27 +478,27 @@ Here is an example of deleting rectangle, ellipse, arrow, path, and line in a bu
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/annotation-cs5/index.ts %}
+{% include code-snippet/image-editor/annotation-cs10/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs5/index.html %}
+{% include code-snippet/image-editor/annotation-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs5" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs10" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/annotation-cs5/index.js %}
+{% include code-snippet/image-editor/annotation-cs10/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs5/index.html %}
+{% include code-snippet/image-editor/annotation-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs5" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs10" %}
 {% endif %}
 
 ## Image annotation
@@ -527,27 +537,27 @@ In the following example, you can use the [`drawImage`](https://ej2.syncfusion.c
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/annotation-cs13/index.ts %}
+{% include code-snippet/image-editor/annotation-cs11/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs13/index.html %}
+{% include code-snippet/image-editor/annotation-cs11/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs13" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs11" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/annotation-cs13/index.js %}
+{% include code-snippet/image-editor/annotation-cs11/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs13/index.html %}
+{% include code-snippet/image-editor/annotation-cs11/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs13" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs11" %}
 {% endif %}
 
 ### Customize Default Stroke Color for Shapes 
@@ -558,25 +568,25 @@ We provide default settings for stroke color, stroke width, fill color, and othe
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/annotation-cs15/index.ts %}
+{% include code-snippet/image-editor/annotation-cs12/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs15/index.html %}
+{% include code-snippet/image-editor/annotation-cs12/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs15" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs12" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/annotation-cs15/index.js %}
+{% include code-snippet/image-editor/annotation-cs12/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs15/index.html %}
+{% include code-snippet/image-editor/annotation-cs12/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs15" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs12" %}
 {% endif %}

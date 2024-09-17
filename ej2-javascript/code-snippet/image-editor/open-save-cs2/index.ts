@@ -1,8 +1,7 @@
 
 
 import { ImageEditor } from '@syncfusion/ej2-image-editor';
-import { Button } from '@syncfusion/ej2-buttons';
-import { Browser, getComponent } from '@syncfusion/ej2-base';
+import { Browser } from '@syncfusion/ej2-base';
 
 //Image Editor items definition
 
@@ -19,19 +18,21 @@ let imageEditorObj: ImageEditor = new ImageEditor({
 });
 imageEditorObj.appendTo('#imageeditor');
 
-var blobUrl: any;
-document.getElementById('saveImage').onclick = function () {
-    var imageData = imageEditorObj.getImageData();
-    var canvas = document.createElement('canvas');
-    var ctx = canvas.getContext('2d');
+let base64String: string;
+(document.getElementById('saveImage') as HTMLElement).onclick = function () {
+    const imageData = imageEditorObj.getImageData();
+    const canvas = document.createElement('canvas');
     canvas.width = imageData.width;
     canvas.height = imageData.height;
-    ctx.putImageData(imageData, 0, 0);
-    canvas.toBlob(function (blob) {
-        blobUrl = URL.createObjectURL(blob as any);
-    });
-}
+    const context = canvas.getContext('2d');
+    if (context) {
+        context.putImageData(imageData, 0, 0);
+        base64String = canvas.toDataURL();
+    }
+};
 
-document.getElementById('setImage').onclick = function () {
-    imageEditorObj.open(blobUrl);
+(document.getElementById('openImage') as HTMLElement).onclick = function () {
+    if (base64String) {
+        imageEditorObj.open(base64String);
+    }
 };

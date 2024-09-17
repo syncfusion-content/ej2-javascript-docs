@@ -1,29 +1,28 @@
 ej.base.enableRipple(true);
 
-var hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
-var fileManagerObj = new ej.filemanager.FileManager({
-  ajaxSettings: {
-    url: hostUrl + 'api/FileManager/FileOperations',
-    getImageUrl: hostUrl + 'api/FileManager/GetImage',
-    uploadUrl: hostUrl + 'api/FileManager/Upload',
-    downloadUrl: hostUrl + 'api/FileManager/Download'
-  },
-  fileOpen: fileOpen,
+var imageEditorObj = new ej.imageeditor.ImageEditor({
   width: '550px',
-  height: '150px'
-});
-fileManagerObj.appendTo('#filemanager');
-
-function fileOpen(args) {
-  let file = args.fileDetails;
-  let fileName = file.name;
-  let filePath = file.filterPath.replace(/\\/g, '/') + fileName;
-  let basePath = document.getElementById('filemanager')?.ej2_instances[0];
-  let imagePath = `${basePath.ajaxSettings.getImageUrl}?path=${filePath}`;
-  if (file.isFile) {
-    args.cancel = true;
-    imageEditorObj.open(imagePath);
+  height: '330px',
+  created: function () {
+    if (ej.base.Browser.isDevice) {
+      imageEditorObj.open('bee-eater.png');
+    } else {
+      imageEditorObj.open('bee-eater.png');
+    }
   }
-}
+});
+imageEditorObj.appendTo('#imageeditor');
 
-var imageEditorObj = new ej.imageeditor.ImageEditor({ width: '550px', height: '350px' }, '#imageeditor');
+var uploadObject = new ej.inputs.Uploader({
+  selected: function (args) {
+    if (args.filesData.length > 0) {
+      var reader = new FileReader();
+      reader.onload = function () {
+        imageEditorObj.open(reader.result);
+      };
+      reader.readAsDataURL(args.filesData[0].rawFile);
+    }
+  },
+  showFileList: false
+});
+uploadObject.appendTo('#fileupload');

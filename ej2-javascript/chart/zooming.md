@@ -188,27 +188,27 @@ Enable the [enableAnimation] property to experience smooth transitions when zoom
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/chart/user-interaction-cs42/index.ts %}
+{% include code-snippet/chart/animation-cs/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/user-interaction-cs42/index.html %}
+{% include code-snippet/chart/animation-cs/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs42" %}
+{% previewsample "page.domainurl/code-snippet/chart/animation-cs" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/chart/user-interaction-cs42/index.js %}
+{% include code-snippet/chart/animation-cs/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/user-interaction-cs42/index.html %}
+{% include code-snippet/chart/animation-cs/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs42" %}
+{% previewsample "page.domainurl/code-snippet/chart/animation-cs" %}
 {% endif %}
 
 ## Auto interval on zooming

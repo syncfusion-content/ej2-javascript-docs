@@ -13,6 +13,6 @@ var imageEditorObj = new ej.imageeditor.ImageEditor({
 });
 imageEditorObj.appendTo('#imageeditor');
 
-document.getElementById('click').onclick = function () {
+document.getElementById('clearImage').onclick = function () {
   imageEditorObj.clearImage();
-}
+};

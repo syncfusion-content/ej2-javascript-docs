@@ -19,6 +19,6 @@ let imageEditorObj: ImageEditor = new ImageEditor({
 });
 imageEditorObj.appendTo('#imageeditor');
 
-document.getElementById('click').onclick = function () {
+(document.getElementById('clearImage') as HTMLElement).onclick = function () {
     imageEditorObj.clearImage();
-}
+};

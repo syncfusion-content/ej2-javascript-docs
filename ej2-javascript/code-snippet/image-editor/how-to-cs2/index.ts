@@ -17,7 +17,7 @@ dialog.appendTo('#profile-dialog');
 let imageEditorObj: ImageEditor = new ImageEditor();
 imageEditorObj.appendTo('#imageeditor');
 
-document.getElementById('dialog-btn').onclick = function () {
+(document.getElementById('openDialog') as HTMLElement).onclick = function () {
     dialog.show();
     imageEditorObj.open('flower.png');
 };

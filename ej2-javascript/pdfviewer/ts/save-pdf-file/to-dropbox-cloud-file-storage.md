@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Save PDF files to Dropbox cloud file storage ##Platform_Name## Pdfviewer control | Syncfusion
-description: Learn here all about how to Save PDF files to Dropbox cloud file storage in Syncfusion ##Platform_Name## Pdfviewer control of Syncfusion Essential JS 2 and more.
+title: Save PDF to Dropbox cloud storage ##Platform_Name## Pdfviewer | Syncfusion
+description: Learn here all about how to Save PDF to Dropbox cloud file storage in Syncfusion ##Platform_Name## Pdfviewer control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Save PDF files to Dropbox cloud file storage
 publishingplatform: ##Platform_Name##

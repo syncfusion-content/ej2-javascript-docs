@@ -56,7 +56,7 @@ The below example allows selecting a date within the range from 7th to 27th day 
 DateTimePicker provides an option to select time value within a specified range by using the [`minTime`](../api/datetimepicker#minTime)
 and [`maxTime`](../api/datetimepicker#maxTime) properties. Always the minTime value has to be lesser than the maxTime value.
 
-When the minTime and maxTime properties are configured and the selected time value is out-of-range or invalid, then the model value will be set to `out of range` time value or `null` respectively with highlighted `error` class to indicates the time is out of range or invalid.
+When minTime and maxTime are set, the component will prioritize min if minTime is less than the current min time, and max if maxTime is greater than the current max time. Conversely, it will prioritize minTime if it is greater than the current min time, and maxTime if it is less than the current max time. These behaviors apply only when min and max Dates are selected or pre-bounded, with minTime and maxTime values set for all other dates apart from min and max dates.
 
 The value property depends on the minTime/maxTime with respect to [`strictMode`](./strict-mode) property.
 

@@ -1,0 +1,20 @@
+#container {
+    visibility: hidden;
+    margin: 20px auto;
+    width: 350px;
+}
+
+#loader {
+    color: #008cff;
+    height: 40px;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 30%;
+}
+
+.e-template {
+    font-size: 14px;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgb(87 83 83 / 50%);
+}

@@ -26,15 +26,15 @@ The following are the dependencies required to use the uploader component in you
 
 ## Set up of the development environment
 
-To get started with the uploader component, you have to clone the Essential JS 2 [`quickstart`](https://github.com/syncfusion/ej2-quickstart.git) project and install the npm packages by using the following commands.
+To get started with the uploader component, you have to clone the Essential JS 2 [`quickstart`](https://github.com/syncfusion/ej2-quickstart) project and install the npm packages by using the following commands.
 
 ```
-git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
+git clone https://github.com/syncfusion/ej2-quickstart quickstart
 cd quickstart
 npm install
 ```
 
->The [project](https://github.com/syncfusion/ej2-quickstart.git) is preconfigured with common settings (`src/styles/styles.css`, `system.config.js` ) to start all the Essential JS 2 components.
+>The [project](https://github.com/syncfusion/ej2-quickstart) is preconfigured with common settings (`src/styles/styles.css`, `system.config.js` ) to start all the Essential JS 2 components.
 
 ## Initialize the uploader
 

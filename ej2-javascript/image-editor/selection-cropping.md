@@ -35,27 +35,27 @@ Here is an example of square selection using the [`select`](https://ej2.syncfusi
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/custom-selection-cs3/index.ts %}
+{% include code-snippet/image-editor/custom-selection-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/custom-selection-cs3/index.html %}
+{% include code-snippet/image-editor/custom-selection-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs3" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/custom-selection-cs3/index.js %}
+{% include code-snippet/image-editor/custom-selection-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/custom-selection-cs3/index.html %}
+{% include code-snippet/image-editor/custom-selection-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs3" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs1" %}
 {% endif %}
 
 ## Insert selection based on aspect ratio
@@ -75,27 +75,27 @@ In the following example, the [`select`](https://ej2.syncfusion.com/javascript/d
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/custom-selection-cs5/index.ts %}
+{% include code-snippet/image-editor/custom-selection-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/custom-selection-cs5/index.html %}
+{% include code-snippet/image-editor/custom-selection-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs5" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/custom-selection-cs5/index.js %}
+{% include code-snippet/image-editor/custom-selection-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/custom-selection-cs5/index.html %}
+{% include code-snippet/image-editor/custom-selection-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs5" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs2" %}
 {% endif %}
 
 ## Resize selections 
@@ -124,6 +124,111 @@ Here is an example of circle cropping using the [`select`](https://ej2.syncfusio
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/custom-selection-cs3/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/custom-selection-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs3" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/custom-selection-cs3/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/custom-selection-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs3" %}
+{% endif %}
+
+## Cropping event
+
+The [`cropping`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#cropping) event is triggered when performing cropping on the image. This event is passed an object that contains information about the cropping event, such as the start and end point of the selection region. And this event uses [`CropEventArgs`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/cropEventArgs/) to handle the cropping action in the image.
+
+The parameter available in the [`cropping`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#cropping) event is,
+
+* CropEventArgs.startPoint – The x and y coordinates of a start point as [`Point`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#Point) of the selection region. 
+
+* CropEventArgs.endPoint - The x and y coordinates of an end point as [`Point`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#Point) of the selection region. 
+
+* CropEventArgs.cancel - To cancel the cropping action.
+
+### Maintaining Original Image Size During Cropping 
+
+In the image editor, when an image is cropped, it is usually enlarged or scaled to improve visibility within the user interface. If you want to prevent this scaling and maintain the original cropping size, you can bind to the ‘[`cropping`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#cropping)’ event and set the `preventScaling` value to true. This not only keeps the image size consistent during cropping but also ensures that the saved image retains its original cropping size without being enlarged. 
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/custom-selection-cs4/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/custom-selection-cs4/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs4" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/custom-selection-cs4/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/custom-selection-cs4/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs4" %}
+{% endif %}
+
+### Locking Selection Area During Cropping 
+
+When selecting an area for cropping, users can typically resize the selection from all corners and edges. If you want to prevent the resizing of the selection area, you can bind to the [`resizing`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#resizing) event and set `cancel` to true. This will lock the selection area, preventing any adjustments to its size. 
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/custom-selection-cs5/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/custom-selection-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs5" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/custom-selection-cs5/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/custom-selection-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs5" %}
+{% endif %}
+
+### Cropping with Custom Ratio Selection 
+
+Users can perform cropping either through the toolbar or by using our public methods. While predefined ratio selections are available in the toolbar, users can also crop with custom ratios using our public method, [`select`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#select). Regardless of the ratio type used, the selection will adhere to the specified ratio, even when resizing the selection area. 
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/custom-selection-cs6/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
@@ -146,15 +251,3 @@ Here is an example of circle cropping using the [`select`](https://ej2.syncfusio
 
 {% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs6" %}
 {% endif %}
-
-## Cropping event
-
-The [`cropping`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#cropping) event is triggered when performing cropping on the image. This event is passed an object that contains information about the cropping event, such as the start and end point of the selection region. And this event uses [`CropEventArgs`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/cropEventArgs/) to handle the cropping action in the image.
-
-The parameter available in the [`cropping`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#cropping) event is,
-
-* CropEventArgs.startPoint – The x and y coordinates of a start point as [`Point`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#Point) of the selection region. 
-
-* CropEventArgs.endPoint - The x and y coordinates of an end point as [`Point`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#Point) of the selection region. 
-
-* CropEventArgs.cancel - To cancel the cropping action.

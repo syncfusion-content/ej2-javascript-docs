@@ -4,21 +4,33 @@ var imageEditorObj = new ej.imageeditor.ImageEditor({
     width: '550px',
     height: '330px',
     toolbar: [],
-	created: function () {
-		if (ej.base.Browser.isDevice) {
-			imageEditorObj.open('bee-eater.png');
+    created: function () {
+        if (ej.base.Browser.isDevice) {
+            imageEditorObj.open('bee-eater.png');
         } else {
             imageEditorObj.open('bee-eater.png');
         }
-	}
-  });
-  imageEditorObj.appendTo('#imageeditor');
+    }
+});
+imageEditorObj.appendTo('#imageeditor');
 
-document.getElementById('btnClick').onclick = function() {
-  let dimension = imageEditorObj.getImageDimension();
-  imageEditorObj.drawText(dimension.x, dimension.y,'Enter\nText');
-}
-document.getElementById('delClick').onclick = function() {
-  imageEditorObj.deleteShape('shape_1');
-}
-
+document.getElementById('rectangle').onclick = function () {
+    let dimension = imageEditorObj.getImageDimension();
+    imageEditorObj.drawRectangle(dimension.x, dimension.y, 300, 200, null, '', '', null, null, 8);
+};
+document.getElementById('ellipse').onclick = function () {
+    let dimension = imageEditorObj.getImageDimension();
+    imageEditorObj.drawEllipse(dimension.x, dimension.y);
+};
+document.getElementById('line').onclick = function () {
+    let dimension = imageEditorObj.getImageDimension();
+    imageEditorObj.drawLine(dimension.x, dimension.y);
+};
+document.getElementById('arrow').onclick = function () {
+    let dimension = imageEditorObj.getImageDimension();
+    imageEditorObj.drawArrow(dimension.x, dimension.y + 10, dimension.x + 50, dimension.y + 10, 10);
+};
+document.getElementById('path').onclick = function () {
+    let dimension = imageEditorObj.getImageDimension();
+    imageEditorObj.drawPath([{ x: dimension.x, y: dimension.y }, { x: dimension.x + 50, y: dimension.y + 50 }, { x: dimension.x + 20, y: dimension.y + 50 }], 8);
+};

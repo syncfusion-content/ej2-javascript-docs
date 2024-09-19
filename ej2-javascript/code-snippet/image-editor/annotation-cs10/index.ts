@@ -1,17 +1,19 @@
 
 
 import { ImageEditor } from '@syncfusion/ej2-image-editor';
-import { Button } from '@syncfusion/ej2-buttons';
 import { Browser } from '@syncfusion/ej2-base';
 
 //Image Editor items definition
 
- let imageEditorObj: ImageEditor = new ImageEditor({
+let id: string;
+let imageEditorObj: ImageEditor = new ImageEditor({
     width: '550px',
     height: '330px',
+    toolbar: ['Annotate', "Line", "Rectangle", "Ellipse", "Circle", "Arrow", "Path"],
+    showQuickAccessToolbar: false,
     shapeChanging: (args: shapeChanging) => {
-        if (args.currentShapeSettings.type === 'Text') {
-            args.currentShapeSettings.color = 'red';
+        if (args.action === 'select') {
+            id = args.currentShapeSettings.id;
         }
     },
     created: () => {
@@ -19,10 +21,11 @@ import { Browser } from '@syncfusion/ej2-base';
             imageEditorObj.open('bee-eater.png');
         } else {
             imageEditorObj.open('bee-eater.png');
-            }
         }
-    });
-    imageEditorObj.appendTo('#imageeditor');
-    
+    }
+});
+imageEditorObj.appendTo('#imageeditor');
 
-
+(document.getElementById('deleteShape') as HTMLElement).onclick = function () {
+    imageEditorObj.deleteShape(id);
+};

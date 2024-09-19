@@ -126,27 +126,27 @@ The following example illustrates how types, name, and iconCss are used in a AI 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/views/type/index.ts %}
+{% include code-snippet/ai-assistview/views/type/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/views/type/index.html %}
+{% include code-snippet/ai-assistview/views/type/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/views/type" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/views/type" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/views/type/index.js %}
+{% include code-snippet/ai-assistview/views/type/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/views/type/index.html %}
+{% include code-snippet/ai-assistview/views/type/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/views/type" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/views/type" %}
 {% endif %}
 
 ### Setting view template 
@@ -157,27 +157,27 @@ You can use the `viewTemplate` property to add the view content of the multiple 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/views/view-template/index.ts %}
+{% include code-snippet/ai-assistview/views/view-template/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/views/view-template/index.html %}
+{% include code-snippet/ai-assistview/views/view-template/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/views/view-template" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/views/view-template" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/views/view-template/index.js %}
+{% include code-snippet/ai-assistview/views/view-template/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/views/view-template/index.html %}
+{% include code-snippet/ai-assistview/views/view-template/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/views/view-template" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/views/view-template" %}
 {% endif %}
 
 ## Setting active view
@@ -188,25 +188,25 @@ You can use the `activeView` property to set the active view in the AI AssistVie
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/views/active-view/index.ts %}
+{% include code-snippet/ai-assistview/views/active-view/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/views/active-view/index.html %}
+{% include code-snippet/ai-assistview/views/active-view/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/views/active-view" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/views/active-view" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/views/active-view/index.js %}
+{% include code-snippet/ai-assistview/views/active-view/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/views/active-view/index.html %}
+{% include code-snippet/ai-assistview/views/active-view/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/views/active-view" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/views/active-view" %}
 {% endif %}

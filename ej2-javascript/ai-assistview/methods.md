@@ -23,27 +23,27 @@ You can add string response, by passing it as argument for the `addPromptRespons
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/methods/response-string/index.ts %}
+{% include code-snippet/ai-assistview/methods/response-string/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/methods/response-string/index.html %}
+{% include code-snippet/ai-assistview/methods/response-string/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/methods/response-string" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/methods/response-string" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/methods/response-string/index.js %}
+{% include code-snippet/ai-assistview/methods/response-string/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/methods/response-string/index.html %}
+{% include code-snippet/ai-assistview/methods/response-string/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/methods/response-string" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/methods/response-string" %}
 {% endif %}
 
 ### Adding responses as object.
@@ -54,27 +54,27 @@ You can add object response, by passing the prompt and response as a collection 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/methods/response-object/index.ts %}
+{% include code-snippet/ai-assistview/methods/response-object/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/methods/response-object/index.html %}
+{% include code-snippet/ai-assistview/methods/response-object/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/methods/response-object" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/methods/response-object" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/methods/response-object/index.js %}
+{% include code-snippet/ai-assistview/methods/response-object/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/methods/response-object/index.html %}
+{% include code-snippet/ai-assistview/methods/response-object/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/methods/response-object" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/methods/response-object" %}
 {% endif %}
 
 ## Executing prompt
@@ -85,25 +85,25 @@ You can use the `executePrompt` method to execute the prompts dynamically in the
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/methods/execute-prompt/index.ts %}
+{% include code-snippet/ai-assistview/methods/execute-prompt/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/methods/execute-prompt/index.html %}
+{% include code-snippet/ai-assistview/methods/execute-prompt/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/methods/execute-prompt" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/methods/execute-prompt" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/methods/execute-prompt/index.js %}
+{% include code-snippet/ai-assistview/methods/execute-prompt/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/methods/execute-prompt/index.html %}
+{% include code-snippet/ai-assistview/methods/execute-prompt/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/methods/execute-prompt" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/methods/execute-prompt" %}
 {% endif %}

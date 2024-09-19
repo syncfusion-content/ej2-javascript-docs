@@ -1,25 +1,25 @@
-
-
-
 import { Chart, StepLineSeries } from '@syncfusion/ej2-charts';
-import { numData } from './datasource.ts';
+import { stepData } from './datasource.ts';
 Chart.Inject(StepLineSeries);
 
 let chart: Chart = new Chart({
+    primaryXAxis: {
+        minimum: 2004, 
+        maximum: 2013, 
+        interval: 1,
+        title: 'Year'
+    },
+    primaryYAxis: {
+        minimum: 330, 
+        maximum: 450, 
+        interval: 30,
+        title: 'Intensity (g/kWh)'
+    },
     series:[{
-        dataSource: numData,
-        //fill for chart series
-        fill: 'red',
-        //line width as 4 for chart series
-        width:4,
-        //dash array value as 5,5
-        dashArray: '5,5',
+        dataSource: stepData,
         xName: 'x', yName: 'y',
         type: 'StepLine',
-        opacity: 0.5,
-        step: 'Left'
+        fill: 'green'
     }],
+    title: 'CO2 - Intensity Analysis'
 }, '#element');
-
-
-

@@ -100,6 +100,44 @@ document.getElementById('print').addEventListener('click', function () {
 {% endhighlight %}
 {% endtabs %}
 
+## Customization Print Quality using PrintScaleFactor API 
+
+The PDF Viewer allows you to adjust the print quality using the [PrintScaleFactor](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/#printScaleFactor) API. The quality of the print improves as the print quality value increases from 0.5 to 5.
+
+When the value is less than 0.5, the PDF is printed at a standard quality. When the value exceeds 5, the PDF is still printed at the standard quality. In standard quality, printScaleFactor value is set to 1 as default value.
+The effective range for print quality is between 0.5 and 5. Higher values within this range will result in better print quality, but also increase the print time. 
+
+By default, the printScaleFactor is set to 1.
+
+* **The following code snippet demonstrates how to customize print quality using the PrintScaleFactor API in the PDF Viewer.**
+{% tabs %}
+{% highlight js tabtitle="Standalone" %}
+
+var pdfviewer = new ej.pdfviewer.PdfViewer({
+                    enablePrint: true,
+                    documentPath: "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf",
+                    printScaleFactor: 0.5,
+                });
+ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.Toolbar, ej.pdfviewer.Magnification, ej.pdfviewer.LinkAnnotation,ej.pdfviewer.ThumbnailView, ej.pdfviewer.BookmarkView, ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch, ej.pdfviewer.Navigation, ej.pdfviewer.Print);
+//pdf with low quality. By changing values you can change the quality of the pdf.
+pdfviewer.appendTo('#PdfViewer');
+
+{% endhighlight %}
+{% highlight js tabtitle="Server-Backed" %}
+
+var pdfviewer = new ej.pdfviewer.PdfViewer({
+                    enablePrint: true,
+                    documentPath: "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf",
+                    serviceUrl: 'https://services.syncfusion.com/js/production/api/pdfviewer',
+                    printScaleFactor: 0.5,
+                });
+ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.Toolbar, ej.pdfviewer.Magnification, ej.pdfviewer.LinkAnnotation,ej.pdfviewer.ThumbnailView, ej.pdfviewer.BookmarkView, ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch, ej.pdfviewer.Navigation, ej.pdfviewer.Print);
+//pdf with low quality. By changing values you can change the quality of the pdf.
+pdfviewer.appendTo('#PdfViewer');
+
+{% endhighlight %}
+{% endtabs %}
+
 ## See also
 
 * [Toolbar items](./toolbar)

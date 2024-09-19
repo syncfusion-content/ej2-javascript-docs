@@ -10,16 +10,15 @@ var chart = new ej.charts.Chart({
         valueType: 'Category'
     },
     primaryYAxis: {
-        minimum: -5, maximum: 35, interval: 10,
+        minimum: -5, maximum: 25, interval: 5,
         title: 'Temperature in Celsius',
-        labelFormat: '{value}C'
+        labelFormat: '{value}°C'
     },
     series:[{
-        dataSource: chartData, width:2,
+        dataSource: chartData,
         xName: 'x', yName: 'y',
-        name: 'London',
         // Series type as Polar series
-        type: 'Polar',
+        type: 'Polar', width: 2,
         // Series draw type as spline
         drawType: 'Spline'
     }],

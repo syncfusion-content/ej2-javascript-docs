@@ -1,12 +1,12 @@
-import { ChartTheme, Chart, ColumnSeries, Legend, Tooltip, ILoadedEventArgs } from '@syncfusion/ej2-charts';
+import { Chart, ColumnSeries, Legend, Tooltip } from '@syncfusion/ej2-charts';
 import { ParetoSeries, Category, LineSeries, Highlight } from '@syncfusion/ej2-charts';
+import { paretoData } from './datasource.ts';
 import { Browser } from '@syncfusion/ej2-base';
 Chart.Inject(ColumnSeries, Category, ParetoSeries, LineSeries, Legend, Tooltip, Highlight);
 
 /**
  * Sample for Pareto chart
  */
-
 
 let chart: Chart = new Chart({
     //Initializing Primary X Axis
@@ -28,27 +28,18 @@ let chart: Chart = new Chart({
         majorTickLines: { width: 0 }, majorGridLines: { width: 1 },
         minorGridLines: { width: 1 }, minorTickLines: { width: 0 }
     },
-
     chartArea: {
         border: {
             width: 0
         }
     },
-
     //Initializing Chart Series
     series: [
         {
             type: 'Pareto',
-            dataSource: [
-                { x: 'Button Defect', y: 23 }, { x: 'Pocket Defect', y: 16 },
-                { x: 'Collar Defect', y: 10 }, { x: 'Cuff Defect', y: 7 },
-                { x: 'Sleeve Defect', y: 6 }, { x: 'Other Defect', y: 2 }
-            ],
+            dataSource: paretoData,
             xName: 'x', yName: 'y', name: 'Defect', width: 2, opacity: 0.75, columnWidth: 0.4,
             paretoOptions: {
-                marker: { visible: true, isFilled: true, width: 7, height: 7 },
-                dashArray: '3,2',
-                width: 2,
                 fill: '#F7523F'
             },
             cornerRadius: { topLeft: Browser.isDevice ? 4 : 6, topRight: Browser.isDevice ? 4 : 6 }
@@ -63,6 +54,5 @@ let chart: Chart = new Chart({
         shared: true,
         format: '${series.name} : <b>${point.y}</b>'
     }
-
 });
 chart.appendTo('#element');

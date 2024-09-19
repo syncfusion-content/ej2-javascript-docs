@@ -1,30 +1,29 @@
-
-
 import { Chart, RangeStepAreaSeries, Category } from '@syncfusion/ej2-charts';
-import { splinedata } from './datasource.ts';
+import { chartData } from './datasource.ts';
 Chart.Inject(RangeStepAreaSeries, Category);
+
 let chart: Chart = new Chart({
     primaryXAxis: {
         valueType: 'Category',
+        title: 'Month',
         edgeLabelPlacement: 'Shift',
-        majorGridLines: { width: 0 },
+        majorGridLines: { width: 0 }
     },
     primaryYAxis: {
-            labelFormat: '{value}˚C',
-            lineStyle: { width: 0 },
-            minimum: 0,
-            maximum: 40,
-            majorTickLines: { width: 0 }
+        labelFormat: '{value}˚C',
+        title: 'Temperature',
+        lineStyle: { width: 0 },
+        minimum: 10,
+        maximum: 40,
+        majorTickLines: { width: 0 }
     },
     series: [
         {
             type: 'RangeStepArea',
-            name: 'India',
-            dataSource: splinedata,
-            xName: 'x', high: 'high1', low: 'low1', dashArray: '5,5',
-            opacity: 0.4, fill: 'red', border: { width: 2, color: 'blue' },
-            step: 'Center'
-        }],
+            dataSource: chartData,
+            xName: 'x', high: 'high', 
+            low: 'low', fill: 'blue'
+        }
+    ],
+    title: 'Monthly Temperature Range'
 }, '#element');
-
-

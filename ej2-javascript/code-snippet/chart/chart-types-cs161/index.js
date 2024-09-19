@@ -8,29 +8,30 @@ var chartData = [
 ];
 var chart = new ej.charts.Chart({
     primaryXAxis: {
-        valueType: 'Category',
-        majorGridLines: {width: 0},
+        valueType: 'Category'
     },
     primaryYAxis:
     {
-        labelFormat: '${value}M',
-        minimum: 0, maximum: 5500, interval: 500,
-        majorGridLines: {width: 0},
-        lineStyle: { width: 0},
-        majorTickLines: { width: 0}
+        labelFormat: '${value}M'
     },
-    series:[
+    series: [
         {
-            dataSource: chartData, width:2,
-            xName: 'x', yName:'y', intermediateSumIndexes: [4], sumIndexes: [8],
-            name: 'USA',columnWidth: 0.6,
+            dataSource: chartData,
+            xName: 'x', yName: 'y', 
+            intermediateSumIndexes: [4], 
+            sumIndexes: [8],
             //Series type as Waterfall
-            type: 'Waterfall', animation: { enable: true },
-             marker: {
-                dataLabel: { visible: true, position: 'Outer' }
-            }, summaryFillColor: 'red',
-            negativeFillColor: 'green',
+            type: 'Waterfall', 
+            summaryFillColor: "black", 
+            negativeFillColor:'green',
             connector: { color: 'blue', width: 1.5 },
+            marker: {
+                dataLabel: {
+                    visible: true,
+                    position: 'Outer',
+                    font: { size: '11px' }
+                }
+            }
         }
     ],
     title: 'Company Revenue and Profit'

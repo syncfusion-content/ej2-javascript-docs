@@ -1,20 +1,19 @@
 ej.base.enableRipple(true);
 
 var imageEditorObj = new ej.imageeditor.ImageEditor({
-	width: '550px',
-	height: '330px',
+    width: '550px',
+    height: '330px',
     toolbar: [],
-	created: function () {
-		if (ej.base.Browser.isDevice) {
-			imageEditorObj.open('bee-eater.png');
+    created: function () {
+        if (ej.base.Browser.isDevice) {
+            imageEditorObj.open('bee-eater.png');
         } else {
             imageEditorObj.open('bee-eater.png');
         }
-	}
-  });
-  imageEditorObj.appendTo('#imageeditor');
+    }
+});
+imageEditorObj.appendTo('#imageeditor');
 
-document.getElementById('btnClick').onclick = function() {
-	imageEditorObj.export("PNG", "Syncfusion"); // format type, file name
-}
-
+document.getElementById('customSelection').onclick = function () {
+    imageEditorObj.select("Square");
+};

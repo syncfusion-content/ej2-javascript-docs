@@ -5,7 +5,8 @@ var cylindricalData = [
     { x: '2017', y: 159.9, y1: 142.5, y2: 102.4, y3: 51.6 },
     { x: '2018', y: 175.4, y1: 166.7, y2: 112.9, y3: 61.9 },
     { x: '2019', y: 189.0, y1: 182.9, y2: 122.4, y3: 71.5 },
-    { x: '2020', y: 202.7, y1: 197.3, y2: 120.9, y3: 82.0 }];
+    { x: '2020', y: 202.7, y1: 197.3, y2: 120.9, y3: 82.0 }
+];
 
 var chart = new ej.charts.Chart({
     primaryXAxis: {
@@ -19,7 +20,7 @@ var chart = new ej.charts.Chart({
         minimum: 0,
         maximum: 700,
         interval: 100,
-        labelFormat: '{value}B',
+        labelFormat: '{value}B'
     },
     //Series type as stacked column with cylinder shape
     series: [

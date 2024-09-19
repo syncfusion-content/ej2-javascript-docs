@@ -10,18 +10,27 @@ domainurl: ##DomainURL##
 ---
 # Error bar Chart in ##Platform_Name## control
 
-## Error Bar
+## Error bar
 
-Error bars are graphical representations of the variability of data and used on graphs to indicate the error or uncertainty in a reported measurement. To render the error bar for the series, set [`visible`](../../api/chart/seriesModel/#type-string) as `true` and inject `ErrorBar` module using `Chart.Inject(ErrorBar)` method.
+Error bars are graphical representations of the variability of data and are used on graphs to indicate the error or uncertainty in a reported measurement.
+
+To render error bars for the series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
+ 
+* **Set visibility**: Set the [`visible`](../../api/chart/errorBarSettings/#visible) property to **true** for the error bars to be displayed.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+* **Inject the ErrorBar module**: Use the `Chart.Inject(ErrorBar)` method to inject the `ErrorBar` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering error bar series are available in your chart.
+
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs93/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chart/chart-types-cs93/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/chart-types-cs93/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -41,18 +50,21 @@ Error bars are graphical representations of the variability of data and used on 
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs93" %}
 {% endif %}
 
-## Customizing Error Bar
+## Customizing error bar
 
-To customize the error bar type, set error bar [`type`](../../api/chart/errorBarSettings/#type-string) as `Custom` and then change the horizontal/vertical positive and negative error of error bar.
+To customize the error bar type, set the error bar [`type`](../../api/chart/errorBarSettings/#type) to `Custom`, and then change the horizontal or vertical positive and negative error values for the error bar.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs94/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chart/chart-types-cs94/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/chart-types-cs94/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -72,18 +84,21 @@ To customize the error bar type, set error bar [`type`](../../api/chart/errorBar
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs94" %}
 {% endif %}
 
-## Error Bar Mode
+## Error bar mode
 
-Error bar mode is used to define whether the error bar line has to be drawn horizontally, vertically or in both side. To change the error bar mode use [`mode`](../../api/chart/errorBarSettings/#mode-string) option.
+The error bar mode is used to define whether the error bar line is drawn horizontally, vertically or on both sides. To change the error bar mode, use the [`mode`](../../api/chart/errorBarSettings/#mode) option.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs95/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chart/chart-types-cs95/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/chart-types-cs95/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -103,18 +118,21 @@ Error bar mode is used to define whether the error bar line has to be drawn hori
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs95" %}
 {% endif %}
 
-## Error Bar Direction
+## Error bar direction
 
-To change the error bar direction to plus, minus or both side using [`direction`](../../api/chart/errorBarSettings/#direction-string) option.
+To change the direction of the error bars to plus, minus, or both sides, use the [`direction`](../../api/chart/errorBarSettings/#direction) property.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs96/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chart/chart-types-cs96/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/chart-types-cs96/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -134,18 +152,21 @@ To change the error bar direction to plus, minus or both side using [`direction`
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs96" %}
 {% endif %}
 
-## Customizing Error Bar Cap
+## Customizing error bar cap
 
-To customize the error bar cap length, width and fill color, you can use [`errorBarCap`](../../api/chart/errorBarCapSettingsModel/) option.
+To customize the length, width, opacity, and fill color of the error bar caps, you can use the [`errorBarCap`](../../api/chart/errorBarSettings/#errorbarcap) property.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs97/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chart/chart-types-cs97/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/chart-types-cs97/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -165,18 +186,21 @@ To customize the error bar cap length, width and fill color, you can use [`error
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs97" %}
 {% endif %}
 
-## Customizing Error Bar Color
+## Customizing error bar color
 
-To customise the error bar color for individual errors, use the [`errorBarColorMapping`] property. You can also customize the vertical error, horizontal error, horizontal negative and positive error and vertical negative and positive error for an individual point using [`verticalError`](../../api/chart/errorBarSettingsModel/#verticalerror), [`horizontalError`](../../api/chart/errorBarSettingsModel/#horizontalerror), [`horizontalNegativeError`](../../api/chart/errorBarSettingsModel/#horizontalnegativeerror), [`horizontalPositiveError`](../../api/chart/errorBarSettingsModel/#horizontalpositiveerror), [`verticalNegativeError`](../../api/chart/errorBarSettingsModel/#verticalnegativeerror) and [`verticalPositiveError`](../../api/chart/errorBarSettingsModel/#verticalpositiveerror) properties.
+To customise the error bar color for individual errors, use the [`errorBarColorMapping`](../../api/chart/errorBarSettings/#errorbarcolormapping) property. You can also customize the vertical error, horizontal error, horizontal negative and positive error, and vertical negative and positive error for an individual point using the [`verticalError`](../../api/chart/errorBarSettings/#verticalerror), [`horizontalError`](../../api/chart/errorBarSettings/#horizontalerror), [`horizontalNegativeError`](../../api/chart/errorBarSettings/#horizontalnegativeerror), [`horizontalPositiveError`](../../api/chart/errorBarSettings/#horizontalpositiveerror), [`verticalNegativeError`](../../api/chart/errorBarSettings/#verticalnegativeerror), and [`verticalPositiveError`](../../api/chart/errorBarSettings/#verticalpositiveerror) properties.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs98/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chart/chart-types-cs98/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/chart-types-cs98/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -196,7 +220,77 @@ To customise the error bar color for individual errors, use the [`errorBarColorM
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs98" %}
 {% endif %}
 
-## See Also
+## Events
+
+### Series render
+
+The [`seriesRender`](../../api/chart#seriesrender) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs461/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs461/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/chart-types-cs461/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs461" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs461/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs461/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs461" %}
+{% endif %}
+
+### Point render
+
+The [`pointRender`](../../api/chart#pointrender) event allows you to customize each data point before it is rendered on the chart.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs462/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs462/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/chart-types-cs462/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs462" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs462/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs462/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs462" %}
+{% endif %}
+
+## See also
 
 * [Data label](../data-labels/)
 * [Tooltip](../tool-tip/)

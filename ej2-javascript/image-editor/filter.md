@@ -31,7 +31,7 @@ In the following example, you can using the applyImageFilter method in the butto
 {% include code-snippet/image-editor/filter-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+    
 {% previewsample "page.domainurl/code-snippet/image-editor/filter-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}

@@ -1,12 +1,11 @@
 
 
 import { ImageEditor } from '@syncfusion/ej2-image-editor';
-import { Button } from '@syncfusion/ej2-buttons';
 import { Browser } from '@syncfusion/ej2-base';
 
 //Image Editor items definition
 
- let imageEditorObj: ImageEditor = new ImageEditor({
+let imageEditorObj: ImageEditor = new ImageEditor({
     width: '550px',
     height: '330px',
     toolbar: [],
@@ -15,19 +14,28 @@ import { Browser } from '@syncfusion/ej2-base';
             imageEditorObj.open('bee-eater.png');
         } else {
             imageEditorObj.open('bee-eater.png');
-            }
         }
-    });
-    imageEditorObj.appendTo('#imageeditor');
-
-     //Button click
-    document.getElementById('btnClick').onclick = (): void => {
-        let dimension: any = imageEditorObj.getImageDimension();
-        imageEditorObj.drawText(dimension.x, dimension.y,'Enter\nText');
     }
-    let delbutton: Button = new Button({cssClass: `e-primary`, content:'Delete Text'}, '#delClick');
-    document.getElementById('delClick').onclick = (): void => {
-        imageEditorObj.deleteShape('shape_1');
-    }
+});
+imageEditorObj.appendTo('#imageeditor');
 
-
+(document.getElementById('rectangle') as HTMLElement).onclick = function () {
+    let dimension: any = imageEditorObj.getImageDimension();
+    imageEditorObj.drawRectangle(dimension.x, dimension.y, 300, 200, null, '', '', null, null, 8);
+};
+(document.getElementById('ellipse') as HTMLElement).onclick = function () {
+    let dimension: any = imageEditorObj.getImageDimension();
+    imageEditorObj.drawEllipse(dimension.x, dimension.y);
+};
+(document.getElementById('line') as HTMLElement).onclick = function () {
+    let dimension: any = imageEditorObj.getImageDimension();
+    imageEditorObj.drawLine(dimension.x, dimension.y);
+};
+(document.getElementById('arrow') as HTMLElement).onclick = function () {
+    let dimension: any = imageEditorObj.getImageDimension();
+    imageEditorObj.drawArrow(dimension.x, dimension.y + 10, dimension.x + 50, dimension.y + 10, 10);
+};
+(document.getElementById('path') as HTMLElement).onclick = function () {
+    let dimension: any = imageEditorObj.getImageDimension();
+    imageEditorObj.drawPath([{ x: dimension.x, y: dimension.y }, { x: dimension.x + 50, y: dimension.y + 50 }, { x: dimension.x + 20, y: dimension.y + 50 }], 8);
+};

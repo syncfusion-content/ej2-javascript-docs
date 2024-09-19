@@ -1,31 +1,27 @@
-
-
 import { Chart, BarSeries, Category } from '@syncfusion/ej2-charts';
-
+import { chartData } from './datasource.ts';
 Chart.Inject(BarSeries, Category);
 
-export let numData: object[] = [
-  { x: 2005, y: 28 }, { x: 2006, y: 25 },
-  { x: 2007, y: 26 }, { x: 2008, y: 27 },
-  { x: 2009, y: 32 }, { x: 2010, y: 35 }, { x: 2011, y: 30 }];
-
-let chart: Chart = new Chart(
-  {
-    series: [
-      {
-        dataSource: numData,
-        xName: 'x',
-        yName: 'y',
-        opacity: 0.5,
-        border: { width: 4, color: 'red' },
-        dashArray: '2',
-        fill: 'blue',
+let chart: Chart = new Chart({
+    primaryXAxis: {
+        minimum: 2005, 
+        maximum: 2012, 
+        interval: 1,
+        title: 'Year'
+    },
+    primaryYAxis: {
+        minimum: 3, 
+        maximum: 12,
+        interval: 1, 
+        title: 'Percentage',
+        labelFormat: '{value}%'
+    },
+   series:[{
+        dataSource: chartData,
+        xName: 'x', yName: 'y',
         // Series type as bar series
         type: 'Bar',
-      },
-    ],
-  },
-  '#element'
-);
-
-
+        fill: 'blue'
+    }],
+    title: 'Unemployment rate (%)'
+}, '#element');

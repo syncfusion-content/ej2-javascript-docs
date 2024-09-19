@@ -1,6 +1,3 @@
-
-
-
 import { Chart, Category, PolarSeries } from '@syncfusion/ej2-charts';
 import { columnData } from './datasource.ts';
 Chart.Inject(Category, PolarSeries);
@@ -18,7 +15,5 @@ let chart: Chart = new Chart({
         // Series draw type as column series
         drawType: 'Column'
     }],
+    title: 'Olympic Medals'
 }, '#element');
-
-
-

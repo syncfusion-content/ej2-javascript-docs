@@ -1,22 +1,19 @@
-
-
-
-import { Chart, StackingColumnSeries, DateTime } from '@syncfusion/ej2-charts';
+import { Chart, StackingColumnSeries, DateTime, Legend } from '@syncfusion/ej2-charts';
 import { cylindricalData } from './datasource.ts';
-Chart.Inject(StackingColumnSeries, DateTime);
+Chart.Inject(StackingColumnSeries, DateTime, Legend);
 
 let chart: Chart = new Chart({
     primaryXAxis: {
+        valueType: 'DateTime',
         title: 'Years',
         interval: 1,
-        valueType: 'DateTime',
         labelFormat: 'y'
     },
     primaryYAxis:
     {
         title: 'GDP (%) Per Annum',
         rangePadding: 'None',
-        labelFormat: '{value}%',
+        labelFormat: '{value}%'
     },
     //Series type as 100% stacked column series with cylinderical shape
     series: [
@@ -39,6 +36,3 @@ let chart: Chart = new Chart({
     ],
     title: 'Gross Domestic Product Growth'
 }, '#element');
-
-
-

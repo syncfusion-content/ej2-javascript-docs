@@ -1,4 +1,4 @@
-var data = [
+var chartData = [
     { country: "USA", gold: 50 },
     { country: "China", gold: 40 },
     { country: "Japan", gold: 70 },
@@ -12,17 +12,15 @@ var chart = new ej.charts.Chart({
     primaryXAxis: {
         valueType: 'Category',
         title: 'Countries',
-        startAngle: 90,
+        startAngle: 120
     },
     primaryYAxis: {
-        minimum: 0, maximum: 80,
-        interval: 20, title: 'Medals'
+        title: 'Medals'
     },
     series: [{
-        dataSource: data,
+        dataSource: chartData,
         xName: 'country', yName: 'gold',
-        name: 'Gold',
-        // Series type as radar series
+        // Series type as polar series
         type: 'Radar',
         // Series draw type as column series
         drawType: 'Column'

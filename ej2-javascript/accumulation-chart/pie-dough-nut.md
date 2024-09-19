@@ -228,6 +228,37 @@ The fill color and the text in the data source can be mapped to the chart using 
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs47" %}
 {% endif %}
 
+## Border Radius
+
+You can create rounded corners for each slice by using the [borderRadius] option, which gives the chart a modern and polished appearance.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/border-radius/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/border-radius/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/border-radius" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/border-radius/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/border-radius/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/border-radius" %}
+{% endif %}
+
 ## Customization
 
 Individual points can be customized using the `pointRender` event.
@@ -258,6 +289,36 @@ Individual points can be customized using the `pointRender` event.
 
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs48" %}
 {% endif %}
+
+## Patterns
+
+You can apply different patterns to the pie slices using the [`applyPattern`] property in the series and the [`pointRender`] event.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/patterns/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/patterns/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/patterns" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/patterns/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/patterns/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/patterns" %}
 
 ## Hide pie or doughnut border
 

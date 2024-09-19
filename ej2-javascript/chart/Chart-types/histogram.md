@@ -13,16 +13,23 @@ domainurl: ##DomainURL##
 
 ## Histogram
 
-Histogram type charts can provide a visual display of large amounts of data that are difficult to understand in a tabular or spreadsheet form. To render a histogram chart, use series [`type`](../../api/chart/seriesModel/#type-string) as `Histogram` and inject `HistogramSeries` module using `Chart.Inject(HistogramSeries)` method.
+To render a [histogram](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/histogram-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
+ 
+* **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `Histogram` in your chart configuration. This indicates that the data should be represented as a histogram chart, providing a visual display of large amounts of data that are difficult to understand in a tabular or spreadsheet format.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+* **Inject the HistogramSeries module**: Use the `Chart.Inject(HistogramSeries)` method to inject the `HistogramSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering histogram series are available in your chart.
+
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs103/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chart/chart-types-cs103/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/chart-types-cs103/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -42,7 +49,77 @@ Histogram type charts can provide a visual display of large amounts of data that
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs103" %}
 {% endif %}
 
-## See Also
+## Events
+
+### Series render
+
+The [`seriesRender`](../../api/chart#seriesrender) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs459/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs459/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/chart-types-cs459/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs459" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs459/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs459/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs459" %}
+{% endif %}
+
+### Point render
+
+The [`pointRender`](../../api/chart#pointrender) event allows you to customize each data point before it is rendered on the chart.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs460/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs460/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/chart-types-cs460/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs460" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs460/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs460/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs460" %}
+{% endif %}
+
+## See also
 
 * [Data label](../data-labels/)
 * [Tooltip](../tool-tip/)

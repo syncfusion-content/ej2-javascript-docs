@@ -1,29 +1,54 @@
 var chartData = [
-    { x: 2005, y: 28 }, { x: 2006, y: 25 },{ x: 2007, y: 26 }, { x: 2008, y: 27 },
-    { x: 2009, y: 32 }, { x: 2010, y: 35 }, { x: 2011, y: 30 }
+    { x: 'Food', y: 90, y1: 40, y2: 70, y3: 120 },
+    { x: 'Transport', y: 80, y1: 90, y2: 110, y3: 70 },
+    { x: 'Medical', y: 50, y1: 80, y2: 120, y3: 50 },
+    { x: 'Clothes', y: 70, y1: 30, y2: 60, y3: 180 },
+    { x: 'Personal Care', y: 30, y1: 80, y2: 80, y3: 30 },
+    { x: 'Books', y: 10, y1: 40, y2: 30, y3: 270 },
+    { x: 'Fitness', y: 100, y1: 30, y2: 70, y3: 40 },
+    { x: 'Electricity', y: 55, y1: 95, y2: 55, y3: 75 },
+    { x: 'Tax', y: 20, y1: 50, y2: 40, y3: 65 },
+    { x: 'Pet Care', y: 40, y1: 20, y2: 80, y3: 95 },
+    { x: 'Education', y: 45, y1: 15, y2: 45, y3: 195 },
+    { x: 'Entertainment', y: 75, y1: 45, y2: 65, y3: 115 }
 ];
-var chart = new ej.charts.Chart({
-    primaryXAxis: {
-        title: 'Year',
-        minimum: 2004, maximum: 2012, interval: 1
-    },
-    primaryYAxis: {
-        minimum: 20, maximum: 40, interval: 5,
-        title: 'Efficiency',
-        labelFormat: '{value}%'
-    },
-    series:[{
-        dataSource: chartData,
-        //fill for chart series
-        fill: 'red',
-        //line width as 4 for chart series
-        width:4,
-        //dash array value as 5,5
-        dashArray: '5,5',
-        xName: 'x', yName: 'y',
-        marker:{ visible: true, isFilled: true, height: 10, width:10},
-        name: 'India', type: 'StackingLine'
-    }],
-    title: 'Efficiency of oil-fired power production'
-}, '#element');
 
+var chart = new ej.charts.Chart({
+    //Initializing Primary X Axis
+    primaryXAxis: {
+        interval: 1, 
+        valueType: 'Category'
+    },
+    //Initializing Primary Y Axis
+    primaryYAxis:
+    {
+        title: 'Expense',
+        interval: 100,
+        labelFormat: '${value}'
+    },
+    chartArea: { border: { width: 0 } },
+    //Initializing Chart Series
+    series: [
+        {
+            type: 'StackingLine', dataSource: chartData, marker: { visible: true },
+            xName: 'x', yName: 'y', name: 'John', fill: '#ff4251'
+        },
+        {
+            type: 'StackingLine', dataSource: chartData, marker: { visible: true },
+            xName: 'x', yName: 'y1', name: 'Peter', fill: '#4C4C4C'
+        },
+        {
+            type: 'StackingLine', dataSource: chartData, marker: { visible: true },
+            xName: 'x', yName: 'y2', name: 'Steve', fill: '#794F1B'
+        },
+        {
+            type: 'StackingLine', dataSource: chartData, marker: { visible: true },
+            xName: 'x', yName: 'y3', name: 'Charle', fill: '#1a9a6f'
+        }
+    ],
+    //Initializing User Interaction Tooltip
+    tooltip: {
+        enable: true
+    }
+});
+chart.appendTo('#element');

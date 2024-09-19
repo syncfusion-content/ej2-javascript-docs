@@ -1,20 +1,20 @@
+import { Chart, Category, LineSeries } from '@syncfusion/ej2-charts';
+import { lineData } from './datasource.ts';
+Chart.Inject(Category, LineSeries);
 
-
-
-import { Chart, LineSeries } from '@syncfusion/ej2-charts';
-Chart.Inject(LineSeries);
-let chartData: any[] = [
-    { x: 2005, y: 28 }, { x: 2006, y: 25 },{ x: 2007, y: 26 }, { x: 2008, y: 27 },
-    { x: 2009, y: 32 }, { x: 2010, y: 35 }, { x: 2011, y: 30 }
-];
 let chart: Chart = new Chart({
-    series:[{
-        dataSource: chartData,
-        xName: 'x', yName: 'y',
+    primaryXAxis: {
+        valueType: 'Category',
+        title: 'Month'
+    },
+    primaryYAxis: {
+        title: 'Sales count'
+    },
+    series: [{
+        dataSource: lineData,
+        xName: 'month', yName: 'sales',
         //Series type as line
         type: 'Line'
     }],
+    title: 'Monthly Sales Comparison'
 }, '#element');
-
-
-

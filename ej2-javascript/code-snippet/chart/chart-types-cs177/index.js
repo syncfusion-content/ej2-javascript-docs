@@ -20,6 +20,6 @@ var chart = new ej.charts.Chart({
             type: 'StackingBar', columnFacet: 'Cylinder',
             dataSource: cylindricalData, xName: 'x', yName: 'y2'
         }
-    ],
+    ]
 }, '#element');
 

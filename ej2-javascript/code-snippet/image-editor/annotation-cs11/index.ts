@@ -1,12 +1,11 @@
 
 
 import { ImageEditor } from '@syncfusion/ej2-image-editor';
-import { Button } from '@syncfusion/ej2-buttons';
 import { Browser } from '@syncfusion/ej2-base';
 
 //Image Editor items definition
 
- let imageEditorObj: ImageEditor = new ImageEditor({
+let imageEditorObj: ImageEditor = new ImageEditor({
     width: '550px',
     height: '330px',
     toolbar: [],
@@ -15,17 +14,12 @@ import { Browser } from '@syncfusion/ej2-base';
             imageEditorObj.open('bee-eater.png');
         } else {
             imageEditorObj.open('bee-eater.png');
-            }
         }
-    });
-    imageEditorObj.appendTo('#imageeditor');
-
-    //Button click
-    document.getElementById('btnClick').onclick = (): void => {
-       imageEditorObj.freeHandDraw(true);
     }
-    document.getElementById('delClick').onclick = (): void => {
-       imageEditorObj.deleteShape('pen_1');
-    }
+});
+imageEditorObj.appendTo('#imageeditor');
 
-
+(document.getElementById('addImage') as HTMLElement).onclick = function () {
+    let dimension: any = imageEditorObj.getImageDimension();
+    imageEditorObj.drawImage('flower.png', dimension.x, dimension.y, 100, 80, true, 0);
+};

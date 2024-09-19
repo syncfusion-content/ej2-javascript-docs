@@ -1,23 +1,24 @@
-
-
-
-import { Chart, SplineSeries } from '@syncfusion/ej2-charts';
-import { numData } from './datasource.ts';
-Chart.Inject(SplineSeries);
+import { Chart, SplineSeries, Category } from '@syncfusion/ej2-charts';
+import { splineData } from './datasource.ts';
+Chart.Inject(SplineSeries, Category);
 
 let chart: Chart = new Chart({
+    primaryXAxis: {
+        valueType: 'Category',
+        title: 'Month'
+    },
+    primaryYAxis: {
+        minimum: -5, 
+        maximum: 30, 
+        interval: 5,
+        title: 'Temperature in Celsius',
+        labelFormat: '{value}°C'
+    },
     series:[{
-        dataSource: numData,
-        //fill for chart series
-        fill: 'blue',
-        //line width as 4 for chart series
-        width:4,
-        //dash array value as 5,5
-        dashArray: '2',
+        dataSource: splineData,
         xName: 'x', yName: 'y',
-        type: 'Spline'
+        type: 'Spline',
+        fill: 'blue'
     }],
+    title: 'Climate Graph-2012'
 }, '#element');
-
-
-

@@ -7,22 +7,25 @@ var chartData = [
 ];
 var chart = new ej.charts.Chart({
     primaryXAxis: {
-        title: 'Date',
-        valueType: 'Category',
+        title: 'Month',
+        valueType: 'Category'
     },
     primaryYAxis:
     {
-        title: 'Price in Dollar', minimum: 100, maximum: 200, interval: 20,
+        title: 'Price in Dollar', 
+        minimum: 60, 
+        maximum: 200, 
+        interval: 20,
+        labelFormat: '${value}'
     },
-    series: [
+    series:[
         {
+            dataSource: chartData,
+            xName: 'x', open: 'open', 
+            close: 'close', high: 'high', low: 'low',
+            // Series type as HiloOpenClose
             type: 'HiloOpenClose',
-            // sets the bullFill and bearFill color of hiloopenclose chart
-            bearFillColor: 'red',
-            bullFillColor: 'green',
-            dataSource: chartData, width:2,
-            xName: 'x', open: 'open', close: 'close', high: 'high', low: 'low',
-            name: 'SHIRPUR-G'
+            bearFillColor: 'red', bullFillColor:'green'
         }
     ],
     title: 'Financial Analysis'

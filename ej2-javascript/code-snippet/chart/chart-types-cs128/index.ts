@@ -1,6 +1,3 @@
-
-
-
 import { Chart, ScatterSeries, Legend } from '@syncfusion/ej2-charts';
 Chart.Inject(ScatterSeries, Legend);
 
@@ -10,7 +7,7 @@ let point1: Object;
 let value: number = 80;
 let value1: number = 70;
 let i: number;
-for (i = 1; i < 50; i++) {
+for (i = 1; i < 120; i++) {
     if (Math.random() > 0.5) {
         value += Math.random();
     } else {
@@ -20,7 +17,7 @@ for (i = 1; i < 50; i++) {
     point1 = { x: 120 + (i / 2), y: value.toFixed(1) };
     series1.push(point1);
 }
-for (i = 1; i < 50; i++) {
+for (i = 1; i < 120; i++) {
     if (Math.random() > 0.5) {
         value1 += Math.random();
     } else {
@@ -32,21 +29,38 @@ for (i = 1; i < 50; i++) {
 }
 
 let chart: Chart = new Chart({
-   series: [
+    primaryXAxis: {
+        title: 'Height (cm)',
+        minimum: 120,
+        maximum: 180,
+        edgeLabelPlacement: 'Shift',
+        labelFormat: '{value}cm'
+      },
+      primaryYAxis: {
+        title: 'Weight (kg)',
+        minimum: 60,
+        maximum: 90,
+        labelFormat: '{value}kg',
+        rangePadding: 'None'
+      },
+      series: [
         {
-            //Series type as scatter
-            type: 'Scatter',  fill: 'black',
-            marker: { visible: true, shape: 'Diamond', height: 10, width: 10 },
-            dataSource: series1, xName: 'x', yName: 'y',
-
-        }, {
-            type: 'Scatter', fill: 'red',
-            marker: { visible: true, shape: 'Triangle', height: 10, width: 10 },
-            dataSource: series2, xName: 'x', yName: 'y',
+          type: 'Scatter',
+          dataSource: series1,
+          xName: 'x',
+          yName: 'y',
+          name: 'Male',
+          marker: { width: 5, height: 5 }
+        },
+        {
+          type: 'Scatter',
+          dataSource: series2,
+          xName: 'x',
+          yName: 'y',
+          name: 'Female',
+          fill: 'red',
+          marker: { width: 3, height: 3 }
         }
-    ],
-
+      ],
+      title: 'Height Vs Weight'
 }, '#element');
-
-
-

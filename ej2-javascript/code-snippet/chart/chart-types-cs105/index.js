@@ -1,24 +1,33 @@
-var chartData = [
-    { x: 2005, y: 28 }, { x: 2006, y: 25 },{ x: 2007, y: 26 }, { x: 2008, y: 27 },
-    { x: 2009, y: 32 }, { x: 2010, y: 35 }, { x: 2011, y: 30 }
+var multiColorData = [
+    { month: 'Jan', sales: 35, color: '#1f77b4' },
+    { month: 'Feb', sales: 28, color: '#ff7f0e' },
+    { month: 'Mar', sales: 34, color: '#2ca02c' },
+    { month: 'Apr', sales: 32, color: '#d62728' },
+    { month: 'May', sales: 40, color: '#9467bd' },
+    { month: 'Jun', sales: 32, color: '#8c564b' },
+    { month: 'Jul', sales: 35, color: '#e377c2' },
+    { month: 'Aug', sales: 55, color: '#7f7f7f' },
+    { month: 'Sep', sales: 38, color: '#bcbd22' },
+    { month: 'Oct', sales: 30, color: '#17becf' },
+    { month: 'Nov', sales: 25, color: '#ff69b4' },
+    { month: 'Dec', sales: 32, color: '#ff6347' }
 ];
 var chart = new ej.charts.Chart({
     primaryXAxis: {
-        title: 'Year',
-        minimum: 2004, maximum: 2012, interval: 1
+        valueType: 'Category',
+        title: 'Month'
     },
     primaryYAxis: {
-        minimum: 20, maximum: 40, interval: 5,
-        title: 'Efficiency',
-        labelFormat: '{value}%'
+        title: 'Sales count'
     },
-    series:[{
-        dataSource: chartData, width:2,
-        xName: 'x', yName: 'y',
-        name: 'India',
-        //Series type as line
-        type: 'Line'
+    series: [{
+        dataSource: multiColorData,
+        xName: 'month', yName: 'sales',
+        pointColorMapping: 'color',
+        //Series type as multi-colored line
+        type: 'MultiColoredLine',
+        width: 3
     }],
-    title: 'Efficiency of oil-fired power production'
+    title: 'Monthly Sales Comparison'
 }, '#element');
 

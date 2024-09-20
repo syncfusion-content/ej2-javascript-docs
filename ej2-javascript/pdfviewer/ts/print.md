@@ -98,6 +98,44 @@ pdfviewer.print.print();
 {% endhighlight %}
 {% endtabs %}
 
+## Customizing Print Quality using printScaleFactor API
+
+The PDF Viewer allows you to adjust the print quality using the [printScaleFactor](https://helpej2.syncfusion.com/typescript/documentation/api/pdfviewer/#printScaleFactor) API. The quality of the print improves as the print quality value increases from 0.5 to 5.
+
+When the value is less than 0.5, the PDF is printed at a standard quality. When the value exceeds 5, the PDF is still printed at the standard quality. In standard quality, printScaleFactor value is set to 1 as default value.
+The effective range for print quality is between 0.5 and 5. Higher values within this range will result in better print quality, but also increase the print time. 
+
+By default, the printScaleFactor is set to 1.
+
+* **The following code snippet demonstrates how to customize print quality using the printScaleFactor API in the PDF Viewer.**
+{% tabs %}
+{% highlight ts tabtitle="Standalone" %}
+
+import { PdfViewer, Toolbar, Magnification, Navigation, Annotation, LinkAnnotation,ThumbnailView,BookmarkView, TextSelection} from '@syncfusion/ej2-pdfviewer';
+
+PdfViewer.Inject(Toolbar,Magnification,Navigation, Annotation, LinkAnnotation,ThumbnailView,BookmarkView, TextSelection);
+
+let pdfviewer: PdfViewer = new PdfViewer({enablePrint: true, documentPath:'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf'});
+//pdf with low quality. By changing values you can change the quality of the pdf.
+pdfviewer.printScaleFactor = 0.5;
+pdfviewer.appendTo('#PdfViewer');
+
+{% endhighlight %}
+{% highlight ts tabtitle="Server-Backed" %}
+
+import { PdfViewer, Toolbar, Magnification, Navigation, Annotation, LinkAnnotation,ThumbnailView,BookmarkView, TextSelection} from '@syncfusion/ej2-pdfviewer';
+
+PdfViewer.Inject(Toolbar,Magnification,Navigation, Annotation, LinkAnnotation,ThumbnailView,BookmarkView, TextSelection);
+
+let pdfviewer: PdfViewer = new PdfViewer({enablePrint: true, documentPath:'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf'});
+pdfviewer.serviceUrl = 'https://services.syncfusion.com/js/production/api/pdfviewer';
+//pdf with low quality. By changing values you can change the quality of the pdf.
+pdfviewer.printScaleFactor = 0.5;
+pdfviewer.appendTo('#PdfViewer');
+
+{% endhighlight %}
+{% endtabs %}
+
 ## See also
 
 * [Toolbar items](./toolbar)

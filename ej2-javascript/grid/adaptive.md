@@ -103,3 +103,36 @@ A snapshot of the adaptive grid displaying enabled paging along with a pager dro
 ![AdaptivePagerDropdown](./images/PagerDropdown_Adaptive.gif)
 
 > The Column Menu feature, which includes grouping, sorting, autofit, filter, and column chooser, is exclusively supported for the Grid in **Horizontal** [rowRenderingMode](../api/grid#rowrenderingmode).
+
+## Rendering an adaptive layout for smaller screens alone
+
+By default, adaptive UI layout is rendered in both mobile devices and desktop mode too while setting the [enableAdaptiveUI](../api/grid/#enableadaptiveui) property as **true**. Now the DataGrid component has an option to render an adaptive layout only for mobile screen sizes. This can be achieved by specifying the `AdaptiveUIMode` property value as `Mobile`. The default value of the `AdaptiveUIMode` property is "Both".
+
+> The [rowRenderingMode](../api/grid#rowrenderingmode) property is rendered on the adaptive layout based on the `AdaptiveUIMode` property.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/adaptive-cs3/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/adaptive-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/adaptive-cs3" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/adaptive-cs3/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/adaptive-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/adaptive-cs3" %}
+{% endif %}

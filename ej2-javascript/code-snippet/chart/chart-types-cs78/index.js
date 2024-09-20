@@ -10,29 +10,31 @@ var chartData = [
 
 var chart = new ej.charts.Chart({
     primaryXAxis: {
-        minimum: 2005, maximum: 2012, interval: 1,
+        minimum: 2004,
+        maximum: 2012,
+        interval: 1,
         title: 'Year'
     },
     primaryYAxis: {
-        minimum: 3, maximum: 12,
-        interval: 1, title: 'Percentage',
+        minimum: 3,
+        maximum: 12,
+        interval: 1,
+        title: 'Percentage',
         labelFormat: '{value}%'
     },
     series: [{
         dataSource: chartData,
         xName: 'x', yName: 'y',
-        name: 'India',
         // Series type as bar series
         type: 'Bar'
     },
     {
         dataSource: chartData,
-        xName: 'x', yName: 'y1',
-        name: 'India',
+        xName: 'x',
+        yName: 'y1',
         columnSpacing: 0.5,
-        columnWidth: 0.75,
         // Series type as bar series
-        type: 'Bar'
+        type: 'Bar',
     }],
     title: 'Unemployment rate (%)'
 }, '#element');

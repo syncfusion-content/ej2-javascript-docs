@@ -1,6 +1,6 @@
-import { Chart, StackingColumnSeries, Category } from '@syncfusion/ej2-charts';
+import { Chart, StackingColumnSeries, Category, Legend } from '@syncfusion/ej2-charts';
 import { cylindricalData } from './datasource.ts';
-Chart.Inject(StackingColumnSeries, Category);
+Chart.Inject(StackingColumnSeries, Category, Legend);
 
 let chart: Chart = new Chart({
     primaryXAxis: {
@@ -14,7 +14,7 @@ let chart: Chart = new Chart({
         minimum: 0,
         maximum: 700,
         interval: 100,
-        labelFormat: '{value}B',
+        labelFormat: '{value}B'
     },
     //Series type as stacked column with cylinder shape
     series: [

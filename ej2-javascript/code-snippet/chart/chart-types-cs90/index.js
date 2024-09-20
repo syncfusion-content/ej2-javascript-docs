@@ -1,4 +1,4 @@
-var chartData = [
+var columnData = [
     { country: 'USA', gold: 50, silver: 40 },
     { country: 'China', gold: 40, silver: 35 },
     { country: 'Japan', gold: 70, silver: 65 },
@@ -14,26 +14,26 @@ var chart = new ej.charts.Chart({
         title: 'Countries'
     },
     primaryYAxis: {
-        minimum: 0, maximum: 80,
-        interval: 20, title: 'Medals'
+        minimum: 0, 
+        maximum: 80,
+        interval: 20, 
+        title: 'Medals'
     },
     series:[{
-        dataSource: chartData,
+        dataSource: columnData,
         xName: 'country', yName: 'gold',
-        name: 'Gold',
         // Series type as column series
-        type: 'Column'
+        type: 'Column', name: 'Gold'
     },
     {
-        dataSource: chartData,
+        dataSource: columnData,
         xName: 'country',
         yName: 'silver',
         name: 'Silver',
-        columnWidth: 0.75,
-        columnSpacing: 1.5,
+        columnSpacing: 0.5,
         // Series type as column series
-        type: 'Column',
+        type: 'Column'
       }],
-    title: 'Olympic Medals'
+      title: 'Olympic Medals'
 }, '#element');
 

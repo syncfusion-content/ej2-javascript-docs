@@ -584,6 +584,38 @@ The following example demonstrates, how to use these properties to customize the
 {% previewsample "page.domainurl/code-snippet/diagram/fixeduserhandle-cs4" %}
 {% endif %}
 
+### Customizing Fixed User Handles with HTML Templates
+
+Fixed user handles are interactive elements added to nodes and connectors. Their appearance can be customized using HTML templates. To render fixed user handle with HTML templates, we need to create an HTML element inside a `<script>` tag then add the template reference using the [`fixedUserHandleTemplate`](../api/diagram/userHandle#fixeduserhandletemplate) property in the diagram model.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/fixeduserhandle-cs6/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/fixeduserhandle-cs6/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/fixeduserhandle-cs6" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/fixeduserhandle-cs6/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/fixeduserhandle-cs6/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/diagram/fixeduserhandle-cs6" %}
+{% endif %}
+
+
 ### Fixed user handle events
 
 When interacting with fixed user handles, certain events are triggered that can be used to customize the appearance and functionality of the handles. The fixed user handle events are explained below.

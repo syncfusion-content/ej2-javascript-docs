@@ -496,3 +496,36 @@ The following example demonstrates how to show or hide the tooltip at runtime:
 {% previewsample "page.domainurl/code-snippet/diagram/tooltip-runtime" %}
 {% endif %}
 
+## Tooltip for Annotation
+
+Tooltips can be added to annotations to display additional information on mouseover. 
+To display tooltips on mouseover, set the desired tooltip text to the [`tooltip`](../api/diagram/#tooltip) property of the annotation.
+Tooltips for Annotations can be enabled or disabled by setting the [`AnnotationConstraints`](../api/diagram/annotationConstraints) property as [`Tooltip`](../api/diagram/annotationConstraints). 
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/tooltip-cs8/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/tooltip-cs8/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/tooltip-cs8" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/tooltip-cs8/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/tooltip-cs8/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/diagram/tooltip-cs8" %}
+{% endif %}
+

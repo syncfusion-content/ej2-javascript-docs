@@ -1,23 +1,25 @@
-
-
-
-import { Chart, Category, RadarSeries, LineSeries } from '@syncfusion/ej2-charts';
-import { columnData } from './datasource.ts';
-Chart.Inject(Category, RadarSeries, LineSeries);
+import { Chart, Category, RadarSeries, ColumnSeries } from '@syncfusion/ej2-charts';
+import { chartData } from './datasource.ts';
+Chart.Inject(Category, RadarSeries, ColumnSeries);
 
 let chart: Chart = new Chart({
     primaryXAxis: {
         valueType: 'Category',
+        title: 'Countries',
         startAngle: 120
     },
+    primaryYAxis: {
+        title: 'Medals'
+    },
     series: [{
-        dataSource: columnData,
+        dataSource: chartData,
         xName: 'country', yName: 'gold',
         // Series type as polar series
         type: 'Radar',
         // Series draw type as column series
-        drawType: 'Line'
+        drawType: 'Column'
     }],
+    title: 'Olympic Medals'
 }, '#element');
 
 

@@ -1,27 +1,20 @@
-
-
-import {
-    Chart, Category, ILoadedEventArgs,
-    IPointRenderEventArgs, BoxAndWhiskerSeries, Tooltip, getElement, BoxPlotMode
-} from '@syncfusion/ej2-charts';
-import { boxPlot } from './datasource.ts';
-Chart.Inject(Category, BoxAndWhiskerSeries, Tooltip);
+import { Chart, Category, BoxAndWhiskerSeries } from '@syncfusion/ej2-charts';
+import { chartData } from './datasource.ts';
+Chart.Inject(Category, BoxAndWhiskerSeries);
 
 let chart: Chart = new Chart({
-    //Initializing Primary X Axis
     primaryXAxis: {
-        valueType: 'Category',
+        valueType: 'Category'
     },
-    //Initializing Chart Series
     series: [
         {
             type: 'BoxAndWhisker',
-            dataSource: boxPlot,
+            dataSource: chartData,
             showMean: false,
             xName: 'x',
-            yName: 'y',
+            yName: 'y'
         }
-    ],
+    ]
 }, '#element');
 
 

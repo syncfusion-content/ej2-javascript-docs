@@ -32,25 +32,23 @@ var chart = new ej.charts.Chart(
       minimum: 120,
       maximum: 180,
       edgeLabelPlacement: 'Shift',
-      labelFormat: '{value}cm',
+      labelFormat: '{value}cm'
     },
     primaryYAxis: {
       title: 'Weight (kg)',
       minimum: 60,
       maximum: 90,
       labelFormat: '{value}kg',
-      rangePadding: 'None',
+      rangePadding: 'None'
     },
     series: [
       {
-        //Series type as scatter
         type: 'Scatter',
         dataSource: series1,
         xName: 'x',
         yName: 'y',
         name: 'Male',
-        opacity: 0.7,
-        marker: { width: 5, height: 5, shape: 'Triangle' },
+        marker: { width: 5, height: 5 }
       },
       {
         type: 'Scatter',
@@ -58,12 +56,11 @@ var chart = new ej.charts.Chart(
         xName: 'x',
         yName: 'y',
         name: 'Female',
-        opacity: 0.7,
         fill: 'red',
-        marker: { width: 3, height: 3, shape: 'Square' },
-      },
+        marker: { width: 3, height: 3 }
+      }
     ],
-    title: 'Height Vs Weight',
+    title: 'Height Vs Weight'
   },
   '#element'
 );

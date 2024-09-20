@@ -1,46 +1,40 @@
-
-
-
-import { Chart, StackingLineSeries } from '@syncfusion/ej2-charts';
-import { numData } from './datasource.ts';
-Chart.Inject(StackingLineSeries);
-
-let chartData: Object[] = [
-  { x: 2005, y: 90, y1: 40, y2: 70, y3: 120 },
-  { x: 2006, y: 80, y1: 90, y2: 110, y3: 70 },
-  { x: 2007, y: 50, y1: 80, y2: 120, y3: 50 },
-  { x: 2008, y: 70, y1: 30, y2: 60, y3: 180 },
-  { x: 2009, y: 30, y1: 80, y2: 80, y3: 30 },
-  { x: 2010, y: 10, y1: 40, y2: 30, y3: 270 },
-  { x: 2011, y: 100, y1: 30, y2: 70, y3: 40 }];
+import { Chart, Category, Legend, Tooltip, StackingLineSeries } from '@syncfusion/ej2-charts';
+import { chartData } from './datasource.ts';
+Chart.Inject(StackingLineSeries, Category, Legend, Tooltip);
 
 let chart: Chart = new Chart({
-    series:[ {
-        dataSource: chartData,
-        fill: 'green',width: 2,
-        dashArray: '2',xName: 'x',marker: {visible: true},
-        yName: 'y',type: 'StackingLine100',
-      },
-      {
-        dataSource: chartData,
-        fill: 'pink',width: 2,
-        dashArray: '2',xName: 'x',marker: {visible: true},
-        yName: 'y1',type: 'StackingLine100',
-        type: 'StackingLine100',
-      },
-      {
-        dataSource: chartData,
-        fill: 'yellow',width: 2,
-        dashArray: '2',xName: 'x',marker: {visible: true},
-        yName: 'y2',type: 'StackingLine100',
-      },
-      {
-        dataSource: chartData,
-        fill: 'red',width: 2,
-        dashArray: '2',xName: 'x',marker: {visible: true},
-        yName: 'y3',type: 'StackingLine100',
-      }],
+    //Initializing Primary X Axis
+    primaryXAxis: {
+        interval: 1, 
+        valueType: 'Category'
+    },
+    //Initializing Primary Y Axis
+    primaryYAxis:
+    {
+        interval: 20
+    },
+    chartArea: { border: { width: 0 } },
+    //Initializing Chart Series
+    series: [
+        {
+            type: 'StackingLine100', dataSource: chartData, marker: { visible: true },
+            xName: 'x', yName: 'y', name: 'John', fill: '#ff4251'
+        },
+        {
+            type: 'StackingLine100', dataSource: chartData, marker: { visible: true },
+            xName: 'x', yName: 'y1', name: 'Peter', fill: '#4C4C4C'
+        },
+        {
+            type: 'StackingLine100', dataSource: chartData, marker: { visible: true },
+            xName: 'x', yName: 'y2', name: 'Steve', fill: '#794F1B'
+        },
+        {
+            type: 'StackingLine100', dataSource: chartData, marker: { visible: true },
+            xName: 'x', yName: 'y3', name: 'Charle', fill: '#1a9a6f'
+        }
+    ],
+    //Initializing User Interaction Tooltip
+    tooltip: {
+        enable: true
+    }
 }, '#element');
-
-
-

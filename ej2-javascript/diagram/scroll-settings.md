@@ -59,7 +59,7 @@ There are several ways to update the scroll offset at runtime:
 * `Scrollbar`: Use the horizontal and vertical scrollbars of the diagram.
 * `Mousewheel`: Scroll vertically with the mouse wheel. Hold the Shift key while scrolling to scroll horizontally.
 * `Pan Tool`: Activate the ZoomPan [`tool`](../api/diagram/diagramTools/) in the diagram to scroll by panning.
-* `Touch`: Use touchpad gestures for scrolling.
+* `Touch`: Use touch pad gestures for scrolling.
 
 ### Programmatically update Scroll Offset
 
@@ -104,7 +104,7 @@ Another way to zoom in and out the diagram is by using the mouse wheel. This met
 
 ### Zoom using Keyboard Shortcuts
 
-Using keyboard shortcuts is a quick and easy way to zoom the diagram without having to use the mouse or touchpad.
+Using keyboard shortcuts is a quick and easy way to zoom the diagram without having to use the mouse or touch pad.
 
 - Zoom in: Press Ctrl and the plus(+) key.
 
@@ -159,7 +159,7 @@ The autoscroll behavior triggers automatically when any of the following actions
 - Connector control point editing
 - Rubber band selection
 
-The client-side event [`ScrollChange`](../api/diagram/iScrollChangeEventArgs/) is triggered when autoscroll occurs, allowing for customizations. Refer [`scollChange-event`](#scroll-change-event) for more information.
+The client-side event [`ScrollChange`](../api/diagram/iScrollChangeEventArgs/) is triggered when autoscroll occurs, allowing for customizations. Refer [`scrollChange-event`](#scroll-change-event) for more information.
 
 Autoscroll behavior can be enabled or disabled using the  [`canAutoScroll`](../scrollSettingsModel/#canautoscroll) property of the diagram.
 
@@ -197,6 +197,12 @@ The following example demonstrates how to configure autoscroll:
 {% endif %}
 
 N> To use auto scroll the scrollLimit should be set as 'Infinity'
+
+## Controlling Autoscroll Speed
+
+You can control how often the scrolling needs to be performed automatically in the Diagram component during the auto-scrolling behavior. You can now adjust the frequency, ranging from slow and smooth to quick and rapid, to suit their preferences. To configure, set the value in milliseconds to the [`autoScrollFrequency`](../api/diagram/scrollSettingsModel/#autoScrollFrequency) property within the scrollSettings class, allowing precise control over how often auto-scrolling occurs. 
+
+![AutoscrollFrequency GIF](images/AutoscrollFrequency.gif)
 
 
 ## Scroll limit

@@ -48,6 +48,39 @@ The template expression should be provided inside the ${...} interpolation synta
 {% previewsample "page.domainurl/code-snippet/dropdowntree/item-template-cs1" %}
 {% endif %}
 
+## Value template
+
+The currently selected value that is displayed by default on the Dropdown Tree input element can be customized using the [valueTemplate](https://ej2.syncfusion.com/documentation/api/drop-down-tree/#valuetemplate) property.
+
+In the following sample, the selected value is displayed as a combined text of both `Name` and `Job` in the Dropdown Tree input, which is separated by a hyphen.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/dropdowntree/value-template-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/dropdowntree/value-template-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/dropdowntree/value-template-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/dropdowntree/value-template-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/dropdowntree/value-template-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/dropdowntree/value-template-cs1" %}
+{% endif %}
+
 ## Header template
 
 The header element is shown statically at the top of the popup list items within the Dropdown Tree. A custom element can be placed as a header element using the [headerTemplate](../api/drop-down-tree/#headertemplate) property.

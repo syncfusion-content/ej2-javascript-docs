@@ -17,6 +17,34 @@ Events in diagrams are triggered during interactions with diagram elements, allo
 
 The [`load`](../api/diagram/iLoadEventArgs/) event triggers before the diagram load.
 
+## Loaded Event
+The [`loaded`](../api/diagram/#loaded) event triggers when all diagram elements are loaded using [`loadDiagram`](../api/diagram#loadDiagram) method. You can use this event to customize diagram elements during the loading process.
+
+```javascript
+var diagram = new ej.diagrams.Diagram({
+    loaded:(args) {
+      // You can use this event to customize diagram elements during the loading process.
+      }
+});
+
+```
+
+The event has two arguments such as name, diagram
+
+**name** 
+
+Type: String
+
+Description: Returns the event name.
+
+**diagram**
+
+Type: Diagram
+
+Description: Returns the diagram model properties.
+
+Users can perform customizations or modifications to the diagram elements once the loading process is complete.
+
 ## Data loaded event
 
 The [`dataLoaded`](../api/diagram/iDataLoadedEventArgs/) event is triggered when the data source is loaded in diagram.

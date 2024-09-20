@@ -118,3 +118,20 @@ Use the following CSS to customize the segment thumb shape.
             }
 
 ```
+
+## How to customize Orthogonal Segment Thumb Size
+
+Orthogonal segment thumbs default to size 10. This can be adjusted globally or for individual connectors using the [`segmentThumbSize`](../api/diagram#segmentThumbSize-SegmentThumbSize) property.
+To change the thumb size for all Orthogonal connectors, set the [`segmentThumbSize`](../api/diagram#segmentThumbSize-SegmentThumbSize) property in the diagram’s model.
+To customize the thumb size for a specific connector, disable the [`InheritSegmentThumbSize`](../api/diagram/connectorConstraints) constraint, then set the desired [`segmentThumbSize`](../api/diagram#segmentThumbSize-SegmentThumbSize).
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/connectors-cs62/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/connectors-cs62/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/connectors-cs62" %}

@@ -116,3 +116,20 @@ This feature allows users to choose whether to reset the control points of bezie
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/diagram/connectors-allowSegReset" %}
+
+### How to customize Bezier Segment Thumb Size
+
+Bezier segment thumbs default to size 10. This can be adjusted globally or for individual connectors using the [`segmentThumbSize`](../api/diagram#segmentThumbSize-SegmentThumbSize) property.
+To change the thumb size for all Bezier connectors, set the [`segmentThumbSize`](../api/diagram#segmentThumbSize-SegmentThumbSize) property in the diagram’s model.
+To customize the thumb size for a specific connector, disable the [`InheritSegmentThumbSize`](../api/diagram/connectorConstraints) constraint, then set the desired [`segmentThumbSize`]([`segmentThumbSize`](../api/diagram#segmentThumbSize-SegmentThumbSize)).
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/connectors-cs63/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/connectors-cs63/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/connectors-cs63" %}\

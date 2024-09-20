@@ -1,34 +1,168 @@
-<!DOCTYPE html><html lang="en"><head>
-    <title>Essential JS 2 for ListView </title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Essential JS 2 for ListView UI Control">
-    <meta name="author" content="Syncfusion">
-    <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/material.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-lists/styles/material.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-buttons/styles/material.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-layouts/styles/material.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-inputs/styles/material.css" rel="stylesheet">
-    
-    
+<!DOCTYPE html>
+<html lang="en">
+
+<head></head>
+<title>Essential JS 2 for ListView </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Essential JS 2 for ListView UI Control">
+<meta name="author" content="Syncfusion">
+<link href="index.css" rel="stylesheet">
+<link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/material.css" rel="stylesheet">
+<link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-lists/styles/material.css" rel="stylesheet">
+<link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-buttons/styles/material.css" rel="stylesheet">
+<link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-layouts/styles/material.css" rel="stylesheet">
+<link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-inputs/styles/material.css" rel="stylesheet">
+
+
 <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 
 <body>
-    
+
     <div id="container">
         <div id="List" tabindex="1"></div>
-        <div style="width: 350px;margin: 0 auto;"><input id="name" style="width: 275px" class="e-input" type="text" placeholder="Type your message">
-        <button id="btn" style="float:right">Send</button></div>
+        <div style="width: 350px;margin: 0 auto;"><input id="name" style="width: 275px" class="e-input" type="text"
+                placeholder="Type your message">
+            <button id="btn" style="float:right">Send</button>
+        </div>
     </div>
+    <style>
+        <style>#loader {
+            color: #008cff;
+            height: 40px;
+            width: 30%;
+            position: absolute;
+            font-family: 'Helvetica Neue', 'calibiri';
+            font-size: 14px;
+            top: 45%;
+            left: 45%;
+        }
 
+        #List {
+            margin: 0 auto;
+            border: 1px solid #ccc;
+        }
 
-<script>
-var ele = document.getElementById('container');
-if(ele) {
-  ele.style.visibility = "visible";
-}   
-      </script>
-<script src="index.js" type="text/javascript"></script>
-</body></html>
+        #List .e-list-item {
+            height: auto;
+            cursor: pointer;
+        }
+
+        #List .e-list-header .e-text {
+            font-family: sans-serif;
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        #List #info,
+        #List .name,
+        #List #info1,
+        #List .name1 {
+            font-size: 11px;
+            line-height: 20px;
+        }
+
+        #List .name {
+            padding-left: 150px;
+        }
+
+        #List #info1,
+        #List .name1 {
+            margin-left: 10px;
+        }
+
+        #List .name1,
+        #List .name {
+            padding-top: 3px;
+            font-weight: 500;
+        }
+
+        #List #info {
+            float: right;
+            margin-right: 10px;
+        }
+
+        .pic01 {
+            background-image: url('https://ej2.syncfusion.com/demos/src/grid/images/1.png');
+        }
+
+        .pic02 {
+            background-image: url('https://ej2.syncfusion.com/demos/src/grid/images/3.png');
+        }
+
+        .pic03 {
+            background-image: url('https://ej2.syncfusion.com/demos/src/grid/images/5.png');
+        }
+
+        .pic04 {
+            background-image: url('https://ej2.syncfusion.com/demos/src/grid/images/2.png');
+        }
+
+        /* csslint ignore:start */
+        .img2 {
+            margin-left: 10px;
+            margin-top: 2px !important;
+            font-size: 13px;
+        }
+
+        #List #content1 {
+            width: 200px;
+            background-color: aliceblue;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        #List #content {
+            margin: 5px;
+            width: 200px;
+            margin-left: 87px;
+            background-color: aliceblue;
+            display: inline-block;
+        }
+
+        #image {
+            float: right;
+            display: inline-block;
+        }
+
+        #image2 {
+            float: left;
+            display: inline-block;
+        }
+
+        .img1 {
+            margin-right: 10px;
+            margin: 5px;
+            font-size: 13px;
+        }
+
+        .e-listview .e-list-item {
+            padding: 0 !important;
+        }
+
+        .e-listview .e-list-header {
+            color: white !important;
+        }
+
+        .e-listview .e-list-header {
+            background: rgb(2, 120, 215) !important;
+        }
+
+        #List.e-listview .e-hover {
+            background-color: transparent;
+        }
+
+        /* csslint ignore:end */
+    </style>
+
+    <script>
+        var ele = document.getElementById('container');
+        if (ele) {
+            ele.style.visibility = "visible";
+        }   
+    </script>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>

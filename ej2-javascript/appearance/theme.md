@@ -36,6 +36,24 @@ The Syncfusion JavaScript library has provided the below list of in-built themes
 
 > The Syncfusion Bootstrap theme is designed based on `Bootstrap v3`, but it can be compatible with `Bootstrap v4` applications. In addition to these four built-in themes, [ThemeStudio](https://ej2.syncfusion.com/documentation/appearance/theme-studio/) also provides support for the Fusion theme, which can only be downloaded from [ThemeStudio](https://ej2.syncfusion.com/themestudio/?theme=fusion).
 
+## Optimized CSS Files
+
+Syncfusion controls provide two size modes for each theme: **normal** and **bigger**. By default, the **normal size mode** is applied, offering a standard appearance that is suitable for all devices. The **bigger size mode** provides an enlarged interface for enhanced interactions, visibility, and an overall improved user experience by increasing the size of the UI controls.
+
+The bigger size mode is ideal when an enlarged appearance is needed, while the normal size mode works best for maintaining the default appearance of controls.
+
+Below is a comparison of the Button control in normal and bigger size modes:
+
+![bigger-sized-button](./images/bigger-theme-button.png)
+
+Each theme includes both normal and bigger size modes, which increases the overall file size. To optimize performance, Syncfusion offers additional theme files (e.g., `fluent2-lite.css`), which only include the normal size mode styles. This results in a significant reduction in file size, improving load times and overall application performance, especially when the bigger size mode is unnecessary.
+
+Refer to the comparison below for the default and optimized theme file sizes:
+
+| Theme Name | Default Theme Size | Optimized Theme Size |
+| -- | -- | -- |
+| Fluent 2 | 3.97 MB | 2.96 MB |
+
 ## Reference themes in the application
 
 Syncfusion JavaScript controls themes that can be used in the application by referencing the style sheet. Using the following approaches, themes can be referenced in the application.
@@ -96,6 +114,42 @@ Referring individual control SCSS theme from ej2 package
 @import "ej2/button/material.scss";
 ```
 
+### Referring all controls optimized CSS file
+
+To refer to all control's optimized CSS files from the `@syncfusion/ej2` package, follow the below syntax:
+
+```css
+@import "@syncfusion/ej2/<theme_name>-lite.css";
+/* or */
+@import "@syncfusion/ej2/<theme_name>-lite.scss";
+```
+
+**Example:**
+
+```css
+@import "@syncfusion/ej2/fluent2-lite.css";
+/* or */
+@import "@syncfusion/ej2/fluent2-lite.scss";
+```
+
+### Referring individual control optimized CSS file
+
+To refer to individual control's optimized CSS files from an individual packages, follow the below syntax:
+
+```css
+@import "<dependent-package>/styles/<theme_name>-lite.css";
+/* or */
+@import "<dependent-package>/styles/<theme_name>-lite.scss";
+```
+
+**Example:**
+
+```css
+@import "@syncfusion/ej2-buttons/styles/fluent2-lite.css";
+/* or */
+@import "@syncfusion/ej2-buttons/styles/fluent2-lite.scss";
+```
+
 ## CDN reference
 
 Syncfusion hosts every Syncfusion JavaScript control as a separate package on the CDN. This allows you to load the scripts and styles for each individual package. Syncfusion also provides a single package that includes all Syncfusion JavaScript controls, allowing you to load the scripts and styles for all controls as a single script and style file.
@@ -106,6 +160,12 @@ Refer to a single CDN link that contains all Syncfusion JavaScript control style
 
 ```
 https://cdn.syncfusion.com/ej2/<version>/<theme_name>.css
+```
+
+To refer to optimized CSS files, use the following syntax:
+
+```
+https://cdn.syncfusion.com/ej2/<version>/<theme_name>-lite.css
 ```
 
 

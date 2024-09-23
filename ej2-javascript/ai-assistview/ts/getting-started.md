@@ -153,11 +153,11 @@ The following example shows a basic AI AssistView control.
 
 ## Configure suggestions and responses
 
-You can use the `promptSuggestions` property to add prompt suggestions and the `promptRequest` event to add responses when the prompt matches the specified prompts data otherwise, the default response will be displayed.
+You can use the [promptSuggestions](../api/ai-assist-view#promptsuggestions) property to add prompt suggestions and the [promptRequest](../api/ai-assist-view#promptrequest) event to add responses when the prompt matches the specified prompts data otherwise, the default response will be displayed.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/ai-assistview/defaultprompts/index.js %}
+{% include code-snippet/ai-assistview/defaultprompts/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/ai-assistview/defaultprompts/index.html %}

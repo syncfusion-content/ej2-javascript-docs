@@ -13,95 +13,93 @@ domainurl: ##DomainURL##
 
 ## Setting width
 
-You can use the `width` property to set the width of the AI AssistView.
+You can use the [width](../api/ai-assist-view#width) property to set the width of the AI AssistView. The default value is `100%`.
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/appearance/width/index.ts %}
+{% include code-snippet/ai-assistview/appearance/width/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/appearance/width/index.html %}
+{% include code-snippet/ai-assistview/appearance/width/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/appearance/width" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/appearance/width" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/appearance/width/index.js %}
+{% include code-snippet/ai-assistview/appearance/width/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/appearance/width/index.html %}
+{% include code-snippet/ai-assistview/appearance/width/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/appearance/width" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/appearance/width" %}
 {% endif %}
 
 ## Setting height
 
-You can use the `height` property to set the height of the AI AssistView.
-
-> By default, the control `width` & `height` will be inherited based on the parent dimensions.
+You can use the [height](../api/ai-assist-view#height) property to set the height of the AI AssistView. The default value is `100%`.
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/appearance/height/index.ts %}
+{% include code-snippet/ai-assistview/appearance/height/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/appearance/height/index.html %}
+{% include code-snippet/ai-assistview/appearance/height/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/appearance/height" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/appearance/height" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/appearance/height/index.js %}
+{% include code-snippet/ai-assistview/appearance/height/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/appearance/height/index.html %}
+{% include code-snippet/ai-assistview/appearance/height/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/appearance/height" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/appearance/height" %}
 {% endif %}
 
-## CssClass
+## cssClass
 
-You can customize the appearance of the AI AssistView control by using the `cssClass` property.
+You can customize the appearance of the AI AssistView control by using the [cssClass](../api/ai-assist-view#cssclass) property.
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/appearance/cssclass/index.ts %}
+{% include code-snippet/ai-assistview/appearance/cssclass/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/appearance/cssclass/index.html %}
+{% include code-snippet/ai-assistview/appearance/cssclass/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/appearance/cssclass" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/appearance/cssclass" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/appearance/cssclass/index.js %}
+{% include code-snippet/ai-assistview/appearance/cssclass/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/appearance/cssclass/index.html %}
+{% include code-snippet/ai-assistview/appearance/cssclass/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/appearance/cssclass" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/appearance/cssclass" %}
 {% endif %}

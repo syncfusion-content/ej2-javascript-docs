@@ -319,6 +319,7 @@ You can apply different patterns to the pie slices using the [`applyPattern`] pr
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/chart/patterns" %}
+{% endif %}
 
 ## Hide pie or doughnut border
 

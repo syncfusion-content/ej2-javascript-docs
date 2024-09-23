@@ -17,7 +17,7 @@ By using the `views` property you can define the collection of different assist 
 
 ### Setting view type
 
-You can set the type of view by using the `type` property. It accepts two values such as `Assist`, and `Custom`.
+You can set the type of view by using the [type](../api/ai-assist-view/assistViewType/) property. It accepts two values such as `Assist`, and `Custom`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -52,7 +52,7 @@ aiAssistView.appendTo('#aiAssistView');
 
 ### Setting name
 
-You can use the `name` property to specifies the header name of the `Assist` or `Custom` views in the AI AssistView.
+You can use the [name](../api/ai-assist-view/assistViewModel/#name) property to specifies the header name of the `Assist` or `Custom` views in the AI AssistView.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -61,8 +61,8 @@ You can use the `name` property to specifies the header name of the `Assist` or 
 import { AIAssistView } from "@syncfusion/ej2-interactive-chat";
 let aiAssistView: AIAssistView = new AIAssistView({
     views: [
-        { name: "Prompt" },
-        { name: 'Response' }
+        { type: 'Assist', name: "Prompt" },
+        { type: 'Custom', name: 'Response' }
     ],
 });
 aiAssistView.appendTo('#aiAssistView');
@@ -75,8 +75,8 @@ aiAssistView.appendTo('#aiAssistView');
 {% highlight js tabtitle="index.js" %}
 var aiAssistView = new ej.interactivechat.AIAssistView({
     views: [
-        { name: "Prompt" },
-        { name: 'Response' }
+        { type: 'Assist', name: "Prompt" },
+        { type: 'Custom', name: 'Response' }
     ],
 });
 aiAssistView.appendTo('#aiAssistView');
@@ -85,9 +85,9 @@ aiAssistView.appendTo('#aiAssistView');
 
 {% endif %}
 
-### Setting iconCSS
+### Setting iconCss
 
-You can customize the view icons by using the `iconCss` property. By default the `e-assistview-icon` class is added as built-in header icon for the AI AssistView.
+You can customize the view icons by using the [iconCss](../api/ai-assist-view/assistViewModel/#iconcss) property. By default the `e-assistview-icon` class is added as built-in header icon for the AI AssistView.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -96,8 +96,8 @@ You can customize the view icons by using the `iconCss` property. By default the
 import { AIAssistView } from "@syncfusion/ej2-interactive-chat";
 let aiAssistView: AIAssistView = new AIAssistView({
     views: [
-        { iconCss: 'e-icons e-assistview-icon' },
-        { iconCss: 'e-icons e-comment-show', type: 'Custom' }
+        { type: 'Assist', name: "Prompt", iconCss: 'e-icons e-assistview-icon' },
+        { type: 'Custom', name: 'Response', iconCss: 'e-icons e-comment-show' }
     ],
 });
 aiAssistView.appendTo('#aiAssistView');
@@ -110,8 +110,8 @@ aiAssistView.appendTo('#aiAssistView');
 {% highlight js tabtitle="index.js" %}
 var aiAssistView = new ej.interactivechat.AIAssistView({
     views: [
-        { iconCss: 'e-icons e-assistview-icon' },
-        { iconCss: 'e-icons e-comment-show', type: 'Custom' }
+        { type: 'Assist', name: "Prompt", iconCss: 'e-icons e-assistview-icon' },
+        { type: 'Custom', name: 'Response', iconCss: 'e-icons e-comment-show' }
     ],
 });
 aiAssistView.appendTo('#aiAssistView');
@@ -126,87 +126,87 @@ The following example illustrates how types, name, and iconCss are used in a AI 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/views/type/index.ts %}
+{% include code-snippet/ai-assistview/views/type/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/views/type/index.html %}
+{% include code-snippet/ai-assistview/views/type/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/views/type" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/views/type" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/views/type/index.js %}
+{% include code-snippet/ai-assistview/views/type/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/views/type/index.html %}
+{% include code-snippet/ai-assistview/views/type/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/views/type" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/views/type" %}
 {% endif %}
 
 ### Setting view template 
 
-You can use the `viewTemplate` property to add the view content of the multiple views added in the AI AssistView.
+You can use the [viewTemplate](../api/ai-assist-view/assistViewModel/#viewtemplate) property to add the view content of the multiple views added in the AI AssistView.
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/views/view-template/index.ts %}
+{% include code-snippet/ai-assistview/views/view-template/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/views/view-template/index.html %}
+{% include code-snippet/ai-assistview/views/view-template/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/views/view-template" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/views/view-template" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/views/view-template/index.js %}
+{% include code-snippet/ai-assistview/views/view-template/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/views/view-template/index.html %}
+{% include code-snippet/ai-assistview/views/view-template/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/views/view-template" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/views/view-template" %}
 {% endif %}
 
 ## Setting active view
 
-You can use the `activeView` property to set the active view in the AI AssistView. By default, the value is `0`.
+You can use the [activeView](../api/ai-assist-view#activeview) property to set the active view in the AI AssistView. By default, the value is `0`.
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/views/active-view/index.ts %}
+{% include code-snippet/ai-assistview/views/active-view/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/views/active-view/index.html %}
+{% include code-snippet/ai-assistview/views/active-view/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/views/active-view" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/views/active-view" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/views/active-view/index.js %}
+{% include code-snippet/ai-assistview/views/active-view/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/views/active-view/index.html %}
+{% include code-snippet/ai-assistview/views/active-view/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/views/active-view" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/views/active-view" %}
 {% endif %}

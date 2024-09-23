@@ -13,69 +13,69 @@ domainurl: ##DomainURL##
 
 ## Setting prompt text
 
-You can use the `prompt` property to define the prompt text for the AI AssistView control.
+You can use the [prompt](../api/ai-assist-view#prompt) property to define the prompt text for the AI AssistView control.
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/ai-assistview/prompt-text/index.ts %}
+{% include code-snippet/ai-assistview/assist-view/prompt-text/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/ai-assistview/prompt-text/index.html %}
+{% include code-snippet/ai-assistview/assist-view/prompt-text/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/ai-assistview/prompt-text" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/assist-view/prompt-text" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/ai-assistview/prompt-text/index.js %}
+{% include code-snippet/ai-assistview/assist-view/prompt-text/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/ai-assistview/prompt-text/index.html %}
+{% include code-snippet/ai-assistview/assist-view/prompt-text/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/ai-assistview/prompt-text" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/assist-view/prompt-text" %}
 {% endif %}
 
 ## Setting prompt placeholder
 
-You can use the `promptPlaceholder` property to set the placeholder text for the prompt textarea. The default value is `Type prompt for assistance...`.
+You can use the [promptPlaceholder](../api/ai-assist-view#promptplaceholder) property to set the placeholder text for the prompt textarea. The default value is `Type prompt for assistance...`.
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/ai-assistview/placeholder/index.ts %}
+{% include code-snippet/ai-assistview/assist-view/placeholder/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/ai-assistview/placeholder/index.html %}
+{% include code-snippet/ai-assistview/assist-view/placeholder/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/ai-assistview/placeholder" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/assist-view/placeholder" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/ai-assistview/placeholder/index.js %}
+{% include code-snippet/ai-assistview/assist-view/placeholder/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/ai-assistview/placeholder/index.html %}
+{% include code-snippet/ai-assistview/assist-view/placeholder/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/ai-assistview/placeholder" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/assist-view/placeholder" %}
 {% endif %}
 
 ## Prompt-response collection
 
-By using the `prompts` property, you can specify the collection of prompts and responses, allowing you to load pre-defined pairs or individual entries ensuring the AI AssistView control is initialized with the configured data.
+You can use the [prompts](../api/ai-assist-view#prompts) property to initialize the control with the configured data as a collection of prompts and responses or individual entries.
 
 > The `prompts` collection stores all the prompts and responses generated.
 
@@ -83,180 +83,180 @@ By using the `prompts` property, you can specify the collection of prompts and r
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/ai-assistview/prompts/index.ts %}
+{% include code-snippet/ai-assistview/assist-view/prompts/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/ai-assistview/prompts/index.html %}
+{% include code-snippet/ai-assistview/assist-view/prompts/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/ai-assistview/prompts" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/assist-view/prompts" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/ai-assistview/prompts/index.js %}
+{% include code-snippet/ai-assistview/assist-view/prompts/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/ai-assistview/prompts/index.html %}
+{% include code-snippet/ai-assistview/assist-view/prompts/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/ai-assistview/prompts" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/assist-view/prompts" %}
 {% endif %}
 
 ## Adding prompt suggestions
 
-By using the `promptSuggestions` property, you can configure the list of suggested prompts in the AI AssistView. Users can choose from these suggestions to use as their prompts.
+You can use the [promptSuggestions](../api/ai-assist-view#promptsuggestions) property, to add the suggestions in both initial and on-demand which help users to refine their prompts. Additionally, custom header can be set for suggestions further enhancing the user experience.
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/ai-assistview/suggestions/index.ts %}
+{% include code-snippet/ai-assistview/assist-view/suggestions/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/ai-assistview/suggestions/index.html %}
+{% include code-snippet/ai-assistview/assist-view/suggestions/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/ai-assistview/suggestions" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/assist-view/suggestions" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/ai-assistview/suggestions/index.js %}
+{% include code-snippet/ai-assistview/assist-view/suggestions/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/ai-assistview/suggestions/index.html %}
+{% include code-snippet/ai-assistview/assist-view/suggestions/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/ai-assistview/suggestions" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/assist-view/suggestions" %}
 {% endif %}
 
 ### Adding suggestion headers
 
-You can use the `promptSuggestionsHeader` property to set the header text for the prompt suggestions in the AI AssistView.
+You can use the [promptSuggestionsHeader](../api/ai-assist-view#promptsuggestionsheader) property to set the header text for the prompt suggestions in the AI AssistView.
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/ai-assistview/suggestions-header/index.ts %}
+{% include code-snippet/ai-assistview/assist-view/suggestions-header/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/ai-assistview/suggestions-header/index.html %}
+{% include code-snippet/ai-assistview/assist-view/suggestions-header/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/ai-assistview/suggestions-header" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/assist-view/suggestions-header" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/ai-assistview/suggestions-header/index.js %}
+{% include code-snippet/ai-assistview/assist-view/suggestions-header/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/ai-assistview/suggestions-header/index.html %}
+{% include code-snippet/ai-assistview/assist-view/suggestions-header/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/ai-assistview/suggestions-header" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/assist-view/suggestions-header" %}
 {% endif %}
 
-## Adding prompt iconCSS
+## Adding prompt iconCss
 
-You can customize the appearance of the prompter avatar by using the `promptIconCss` property.
+You can customize the appearance of the prompter avatar by using the [promptIconCss](../api/ai-assist-view#prompticoncss) property.
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/ai-assistview/prompt-icon/index.ts %}
+{% include code-snippet/ai-assistview/assist-view/prompt-icon/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/ai-assistview/prompt-icon/index.html %}
+{% include code-snippet/ai-assistview/assist-view/prompt-icon/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/ai-assistview/prompt-icon" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/assist-view/prompt-icon" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/ai-assistview/prompt-icon/index.js %}
+{% include code-snippet/ai-assistview/assist-view/prompt-icon/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/ai-assistview/prompt-icon/index.html %}
+{% include code-snippet/ai-assistview/assist-view/prompt-icon/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/ai-assistview/prompt-icon" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/assist-view/prompt-icon" %}
 {% endif %}
 
-## Adding response iconCSS
+## Adding response iconCss
 
-You can use the `responseIconCss` property to customize the appearance of the responder avatar. By default, the `e-assistview-icon` class is added as the built-in AI AssistView response icon.
+You can use the [responseIconCss](../api/ai-assist-view#responseiconcss) property to customize the appearance of the responder avatar. By default, the `e-assistview-icon` class is added as the built-in AI AssistView response icon.
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/ai-assistview/response-icon/index.ts %}
+{% include code-snippet/ai-assistview/assist-view/response-icon/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/ai-assistview/response-icon/index.html %}
+{% include code-snippet/ai-assistview/assist-view/response-icon/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/ai-assistview/response-icon" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/assist-view/response-icon" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/ai-assistview/response-icon/index.js %}
+{% include code-snippet/ai-assistview/assist-view/response-icon/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/ai-assistview/response-icon/index.html %}
+{% include code-snippet/ai-assistview/assist-view/response-icon/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/ai-assistview/response-icon" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/assist-view/response-icon" %}
 {% endif %}
 
 ## Show or hide clear button
 
-You can use the `showClearButton` property to show or hide the clear button. By default, its value is `false`, when the clear button is clicked, the prompt text entered will be cleared.
+You can use the [showClearButton](../api/ai-assist-view#showclearbutton) property to show or hide the clear button. By default, its value is `false`, when the clear button is clicked, the prompt text entered will be cleared.
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/ai-assistview/clearbutton/index.ts %}
+{% include code-snippet/ai-assistview/assist-view/clearbutton/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/ai-assistview/clearbutton/index.html %}
+{% include code-snippet/ai-assistview/assist-view/clearbutton/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/ai-assistview/clearbutton" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/assist-view/clearbutton" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/ai-assistview/clearbutton/index.js %}
+{% include code-snippet/ai-assistview/assist-view/clearbutton/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/ai-assistview/clearbutton/index.html %}
+{% include code-snippet/ai-assistview/assist-view/clearbutton/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/ai-assistview/clearbutton" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/assist-view/clearbutton" %}
 {% endif %}

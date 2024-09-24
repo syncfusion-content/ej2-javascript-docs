@@ -19,7 +19,8 @@ var chart = new ej.charts.Chart({
     },
     series:[{
         dataSource: chartData,
-        xName: 'x', yName: 'y',
+        xName: 'x', yName: 'y', 
+        opacity: 0.1, border: {width: 1.5},
         type: 'StepArea', noRisers: true
     }],
     title: 'England - Run Rate',

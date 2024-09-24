@@ -182,7 +182,7 @@ Using the [`enableScrollbar`](../api/chart/zoomSettingsModel/#enablescrollbar) p
 
 ## Enable animation
 
-Enable the [enableAnimation] property to experience smooth transitions when zooming in on the chart.
+Enable the [enableAnimation](../api/chart/zoomSettingsModel/#enableanimation) property to experience smooth transitions when zooming in on the chart.
 
 {% if page.publishingplatform == "typescript" %}
 

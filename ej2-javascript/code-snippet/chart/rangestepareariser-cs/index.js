@@ -33,6 +33,7 @@ var chart = new ej.charts.Chart({
             type: 'RangeStepArea',
             dataSource: chartData,
             xName: 'x', high: 'high',
+            opacity: 0.1, border: {width:1.5},
             low: 'low', noRisers: true
         }
     ],

@@ -230,7 +230,7 @@ The fill color and the text in the data source can be mapped to the chart using 
 
 ## Border Radius
 
-You can create rounded corners for each slice by using the [borderRadius] option, which gives the chart a modern and polished appearance.
+You can create rounded corners for each slice by using the [borderRadius](../api/accumulation-chart/accumulationSeriesModel/#borderradius) option, which gives the chart a modern and polished appearance.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -292,7 +292,7 @@ Individual points can be customized using the `pointRender` event.
 
 ## Patterns
 
-You can apply different patterns to the pie slices using the [`applyPattern`] property in the series and the [`pointRender`] event.
+You can apply different patterns to the pie slices using the [`applyPattern`](../api/accumulation-chart/accumulationSeriesModel/#applypattern) property in the series and the [`pointRender`] event.
 
 {% if page.publishingplatform == "typescript" %}
 

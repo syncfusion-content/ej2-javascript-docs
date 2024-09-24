@@ -2,8 +2,9 @@
 layout: post
 title: Dynamic data update in ##Platform_Name## Accumulation chart control | Syncfusion
 description: Learn here all about dynamic data update in Syncfusion ##Platform_Name## Accumulation chart control of Syncfusion Essential JS 2 and more.
-platform: ej2-angular
+platform: ej2-javascript
 control: Dynamic Data Update
+publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

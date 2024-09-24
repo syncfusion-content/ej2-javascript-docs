@@ -27,16 +27,12 @@ var chart = new ej.charts.Chart({
     },
     series: [
         {
-            dataSource: stackedData, xName: 'x', yName: 'y',
+            dataSource: stackedData, xName: 'x', yName: 'y', opacity: 0.1, border: {width:1.5},
             //Series type as stacked area series
             type: 'StackingStepArea', name: 'Organic',  noRisers: true
         },
         {
-            dataSource: stackedData, xName: 'x', yName: 'y1',
-            type: 'StackingStepArea', name: 'Fair-trade',  noRisers: true
-        },
-        {
-            dataSource: stackedData, xName: 'x', yName: 'y2',
+            dataSource: stackedData, xName: 'x', yName: 'y2',opacity: 0.1, border: {width:1.5},
             type: 'StackingStepArea', name: 'Others',  noRisers: true
         }
     ],

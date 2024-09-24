@@ -21,7 +21,7 @@ let piechart: AccumulationChart = new AccumulationChart(
         xName: 'x',
         yName: 'y',
       },
-    ],
+    ], legendSettings: {visible: false}
   },
   '#element'
 );

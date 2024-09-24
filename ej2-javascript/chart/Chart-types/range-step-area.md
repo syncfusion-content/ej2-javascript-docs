@@ -261,7 +261,7 @@ Use the [`step`](../../api/chart/series/#step) property to change the position o
 
 **No risers**
 
-The [`noRisers`] feature allows the range step area series to appear as a continuous flow, eliminating the vertical lines between points. This approach is useful for highlighting trends without the distraction of risers.
+You can eliminate the vertical lines between points by using the [`noRisers`](../api/chart/seriesModel/#norisers) property in a series. This approach is useful for highlighting trends without the distraction of risers.
 
 {% if page.publishingplatform == "typescript" %}
 

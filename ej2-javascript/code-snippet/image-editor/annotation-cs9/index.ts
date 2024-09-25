@@ -21,7 +21,8 @@ imageEditorObj.appendTo('#imageeditor');
 
 (document.getElementById('rectangle') as HTMLElement).onclick = function () {
     let dimension: any = imageEditorObj.getImageDimension();
-    imageEditorObj.drawRectangle(dimension.x, dimension.y, 300, 200, null, '', '', null, null, 8);
+    imageEditorObj.drawRectangle(dimension.x, dimension.y, 200, 100);
+    imageEditorObj.drawRectangle(dimension.x + 300, dimension.y, 200, 100, null, '', '', null, null, 8);
 };
 (document.getElementById('ellipse') as HTMLElement).onclick = function () {
     let dimension: any = imageEditorObj.getImageDimension();

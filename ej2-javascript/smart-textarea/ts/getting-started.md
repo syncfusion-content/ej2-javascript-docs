@@ -88,8 +88,6 @@ To render Smart TextArea Control, need to import inputs and its dependent contro
 
 Add the HTML Smart TextArea tag with the `id` attribute as `default` to your `index.html` file.
 
-`[src/index.html]`
-
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 
@@ -121,9 +119,7 @@ Add the HTML Smart TextArea tag with the `id` attribute as `default` to your `in
 {% endhighlight %}
 {% endtabs %}
 
-Then, import the Smart TextArea Control in your `app.ts` file and initialize it with the `#default`. In **Smart TextArea**, the [aiSuggestionHandler](https://ej2.syncfusion.com/documentation/api/smart-textarea#aisuggestionhandler) property, which sends prompts to the `AI` model and receives context-aware suggestions. These suggestions appear inline for non-touch devices and as an overlay popup for touch devices by default, helping users type faster and more accurately.
-
-`[src/app/app.ts]`
+Then, import the Smart TextArea Control in your `src/app/app.ts` file and initialize it with the `#default`. In **Smart TextArea**, the [aiSuggestionHandler](https://ej2.syncfusion.com/documentation/api/smart-textarea#aisuggestionhandler) property, which sends prompts to the `AI` model and receives context-aware suggestions. These suggestions appear inline for non-touch devices and as an overlay popup for touch devices by default, helping users type faster and more accurately.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

@@ -15,7 +15,9 @@ The [ShowSuggestionOnPopup](https://ej2.syncfusion.com/documentation/api/smart-t
 
 * If `ShowSuggestionOnPopup` is `Enable`, suggestions displayed in the pop-up window
 
-```ts
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
 let textareaObj: SmartTextArea = new SmartTextArea({
     placeholder: 'Enter your queries here',
     rows: 3,
@@ -25,13 +27,17 @@ let textareaObj: SmartTextArea = new SmartTextArea({
     ShowSuggestionOnPopup: 'Enable'
 });
 textareaObj.appendTo('#smart-textarea');
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ![SUggestion on popup](../images/smart-textarea-popup.gif)
 
 * If `ShowSuggestionOnPopup` is `false`, suggestions displayed inline.
 
-```cshtml
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
 let textareaObj: SmartTextArea = new SmartTextArea({
     placeholder: 'Enter your queries here',
     rows: 3,
@@ -41,7 +47,9 @@ let textareaObj: SmartTextArea = new SmartTextArea({
     ShowSuggestionOnPopup: 'Disable'
 });
 textareaObj.appendTo('#smart-textarea');
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ![SUggestion inline](../images/smart-textarea-inline.gif)
 

@@ -1,13 +1,19 @@
-ej.base.enableRipple(true);
+import { SmartTextArea } from '@syncfusion/ej2-inputs';
+import { DropDownList } from '@syncfusion/ej2-dropdowns';
+import { CheckBox } from '@syncfusion/ej2-buttons';
+import { NumericTextBox, TextBox, ChangedEventArgs } from '@syncfusion/ej2-inputs';
+import { enableRipple } from '@syncfusion/ej2-base';
+
+enableRipple(true);
 
 /**
  * Smart TextArea sample
  */
-const serverAIRequest = async (settings) => {
+const serverAIRequest = async (settings: any) => {
     let output = '';
     try {
         console.log(settings);
-        const response = await (window).AzureAIRequest(settings);
+        const response = await (window as any).AzureAIRequest(settings) as string;
         console.log("Success:", response);
         output = response;
     } catch (error) {
@@ -16,7 +22,7 @@ const serverAIRequest = async (settings) => {
     return output;
 };
 
-let textareaObj = new ej.inputs.SmartTextArea({
+let textareaObj: SmartTextArea = new SmartTextArea({
     placeholder: 'Enter your queries here',
     floatLabelType: 'Auto',
     resizeMode: 'Both',
@@ -34,14 +40,80 @@ let textareaObj = new ej.inputs.SmartTextArea({
 });
 textareaObj.appendTo('#smart-textarea');
 
-const rolesData = [
-    "Maintainer of an open-source project replying to GitHub issues",
-    "Employee communicating with internal team",
-    "Customer support representative responding to customer queries",
-    "Sales representative responding to client inquiries"
+
+let enabledCheckBox: CheckBox = new CheckBox({
+    checked: true,
+    cssClass: 'api',
+    change: (args: any) => {
+        textareaObj.enabled = args.checked;
+    }
+});
+enabledCheckBox.appendTo('#enabled');
+let readonlyCheckBox: CheckBox = new CheckBox({
+    checked: false,
+    cssClass: 'api',
+    change: (args: any) => {
+        textareaObj.readonly = args.checked;
+    }
+});
+readonlyCheckBox.appendTo('#readonly');
+let showClearIcon: CheckBox = new CheckBox({
+    checked: false,
+    cssClass: 'api',
+    change: (args: any) => {
+        textareaObj.showClearButton = args.checked;
+    }
+});
+showClearIcon.appendTo('#clearicon');
+
+let rows: NumericTextBox = new NumericTextBox({
+    format: '##',
+    min: 1,
+    max: 10,
+    value: 3,
+    change: (args: any) => {
+        textareaObj.rows = args.value;
+    }
+});
+rows.appendTo('#rows');
+let cols: NumericTextBox = new NumericTextBox({
+    format: '##',
+    min: 5,
+    max: 40,
+    value: 35,
+    change: (args: any) => {
+        textareaObj.cols = args.value;
+    }
+});
+cols.appendTo('#cols');
+let maxLength: NumericTextBox = new NumericTextBox({
+    format: '##',
+    value: -1,
+    change: (args: any) => {
+        textareaObj.maxLength = args.value;
+    }
+});
+maxLength.appendTo('#maxlength');
+
+let value: TextBox = new TextBox({
+    value: '',
+    placeholder: 'Enter a value',
+    change: (args: ChangedEventArgs) => {
+        textareaObj.value = args.value as string;
+    }
+});
+value.appendTo('#value');
+
+
+
+const rolesData: string[] = [
+        "Maintainer of an open-source project replying to GitHub issues",
+        "Employee communicating with internal team",
+        "Customer support representative responding to customer queries",
+        "Sales representative responding to client inquiries"
 ];
 
-let presets = [
+let presets: any = [
     {
         userRole: "Maintainer of an open-source project replying to GitHub issues",
         userPhrases: [
@@ -84,14 +156,14 @@ let presets = [
     }
 ];
 
-let dropDownPresets = new ej.dropdowns.DropDownList({
+let dropDownPresets: DropDownList = new DropDownList({
     dataSource: rolesData,
     placeholder: "Select a role",
     value: "Maintainer of an open-source project replying to GitHub issues",
     popupHeight: "200px",
-    change: (e) => {
-        let selectedRole = e.value;
-        let selectedPreset = presets.find((preset) => preset.userRole === selectedRole);
+    change: (e: any) => {
+        let selectedRole: string = e.value;
+        let selectedPreset: any = presets.find((preset: any) => preset.userRole === selectedRole);
         textareaObj.userRole = selectedRole;
         textareaObj.UserPhrases = selectedPreset.userPhrases;
     }

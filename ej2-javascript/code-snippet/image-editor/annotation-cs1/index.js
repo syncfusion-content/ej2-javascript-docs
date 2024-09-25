@@ -20,9 +20,9 @@ document.getElementById('addText').onclick = function () {
 };
 document.getElementById('outline').onclick = function () {
   let dimension = imageEditorObj.getImageDimension();
-  imageEditorObj.drawText(dimension.x + 100, dimension.y + 100, 'Syncfusion', 'Arial', 70, false, false, '', false, null, '', 'green', 8);
+  imageEditorObj.drawText(dimension.x + 50, dimension.y + 50, 'Syncfusion', 'Arial', 30, false, false, '', false, null, '', 'green', 8);
 };
 document.getElementById('background').onclick = function () {
   let dimension = imageEditorObj.getImageDimension();
-  imageEditorObj.drawText(dimension.x + 200, dimension.y + 200, 'Syncfusion', 'Arial', 70, false, false, '', false, null, 'red', '', null);
+  imageEditorObj.drawText(dimension.x + 100, dimension.y + 100, 'Syncfusion', 'Arial', 30, false, false, '', false, null, 'red', '', null);
 };

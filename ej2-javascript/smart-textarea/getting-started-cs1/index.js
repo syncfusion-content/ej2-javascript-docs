@@ -34,6 +34,73 @@ let textareaObj = new ej.inputs.SmartTextArea({
 });
 textareaObj.appendTo('#smart-textarea');
 
+let enabledCheckBox = new ej.buttons.CheckBox({
+    checked: true,
+    cssClass: 'api',
+    change: (args) => {
+        textareaObj.enabled = args.checked;
+    }
+});
+enabledCheckBox.appendTo('#enabled');
+
+let readonlyCheckBox = new ej.buttons.CheckBox({
+    checked: false,
+    cssClass: 'api',
+    change: (args) => {
+        textareaObj.readonly = args.checked;
+    }
+});
+readonlyCheckBox.appendTo('#readonly');
+
+let showClearIcon = new ej.buttons.CheckBox({
+    checked: false,
+    cssClass: 'api',
+    change: (args) => {
+        textareaObj.showClearButton = args.checked;
+    }
+});
+showClearIcon.appendTo('#clearicon');
+
+let rows = new ej.inputs.NumericTextBox({
+    format: '##',
+    min: 1,
+    max: 10,
+    value: 3,
+    change: (args) => {
+        textareaObj.rows = args.value;
+    }
+});
+rows.appendTo('#rows');
+
+let cols = new ej.inputs.NumericTextBox({
+    format: '##',
+    min: 5,
+    max: 40,
+    value: 35,
+    change: (args) => {
+        textareaObj.cols = args.value;
+    }
+});
+cols.appendTo('#cols');
+
+let maxLength = new ej.inputs.NumericTextBox({
+    format: '##',
+    value: -1,
+    change: (args) => {
+        textareaObj.maxLength = args.value;
+    }
+});
+maxLength.appendTo('#maxlength');
+
+let value = new ej.inputs.TextBox({
+    value: '',
+    placeholder: 'Enter a value',
+    change: (args) => {
+        textareaObj.value = args.value;
+    }
+});
+value.appendTo('#value');
+
 const rolesData = [
     "Maintainer of an open-source project replying to GitHub issues",
     "Employee communicating with internal team",

@@ -22,7 +22,7 @@ function fileOpen(args: FileOpenEventArgs): void {
     let file: any = (args as any).fileDetails;
     let fileName: string = file.name;
     let filePath: string = file.filterPath.replace(/\\/g, '/') + fileName;
-    let basePath = (document.getElementById('filemanager') as any)?.ej2_instances[0];
+    let basePath = (document.getElementById('filemanager') as any).ej2_instances[0];
     let imagePath = `${basePath.ajaxSettings.getImageUrl}?path=${filePath}`;
     if (file.isFile) {
         args.cancel = true;

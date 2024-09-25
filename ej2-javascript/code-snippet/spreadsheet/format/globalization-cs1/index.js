@@ -5,7 +5,7 @@ const loadCultureFiles = (locales) => {
     const files = ['ca-gregorian', 'numbers', 'timeZoneNames', 'currencies', 'numberingSystems'];
     locales.forEach((locale) => {
         for (const fileName of files) {
-            const url = '/cldr-data/' + (fileName === 'numberingSystems' ? '' : (locale + '/')) + fileName + '.json';
+            const url = './cldr-data/' + (fileName === 'numberingSystems' ? '' : (locale + '/')) + fileName + '.json';
             const ajax = new ej.base.Ajax(url, 'GET', false);
             ajax.onSuccess = (value) => loadCldr(JSON.parse(value));
             ajax.send();

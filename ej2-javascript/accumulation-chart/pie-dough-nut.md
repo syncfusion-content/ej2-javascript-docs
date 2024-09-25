@@ -292,7 +292,7 @@ Individual points can be customized using the `pointRender` event.
 
 ## Patterns
 
-You can apply different patterns to the pie slices using the [`applyPattern`](../api/accumulation-chart/accumulationSeriesModel/#applypattern) property in the series and the [`pointRender`] event.
+You can apply different patterns to the pie slices using the [`applyPattern`](../api/accumulation-chart/accumulationSeriesModel/#applypattern) property in the series and the [`pointRender`](../api/accumulation-chart/iAccPointRenderEventArgs/) event.
 
 {% if page.publishingplatform == "typescript" %}
 

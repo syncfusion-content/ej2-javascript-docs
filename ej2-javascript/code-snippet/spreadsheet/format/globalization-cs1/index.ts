@@ -10,7 +10,7 @@ const loadCultureFiles: (locales: string[]) => void = (locales: string[]): void 
     const files: string[] = ['ca-gregorian', 'numbers', 'timeZoneNames', 'currencies', 'numberingSystems'];
     locales.forEach((locale: string) => {
         for (const fileName of files) {
-            const url: string = `/cldr-data/${fileName === 'numberingSystems' ? '' : `${locale}/`}${fileName}.json`;
+            const url: string = `./cldr-data/${fileName === 'numberingSystems' ? '' : `${locale}/`}${fileName}.json`;
             const ajax: Ajax = new Ajax(url, 'GET', false);
             ajax.onSuccess = (value: string) => loadCldr(JSON.parse(value));
             ajax.send();

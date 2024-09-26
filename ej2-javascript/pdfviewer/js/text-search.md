@@ -251,6 +251,8 @@ pdfviewer.appendTo('#PdfViewer');
 {% endhighlight %}
 {% endtabs %}
 
+[View sample in GitHub](https://github.com/SyncfusionExamples/javascript-pdf-viewer-examples/tree/master/How%20to/TextSearch)
+
 ## See also
 
 * [Toolbar items](./toolbar)

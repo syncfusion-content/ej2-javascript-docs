@@ -276,6 +276,8 @@ import { PdfViewer, Toolbar, Magnification, Navigation, LinkAnnotation,Thumbnail
 {% endhighlight %}
 {% endtabs %}
 
+[View sample in GitHub](https://github.com/SyncfusionExamples/typescript-pdf-viewer-examples/tree/master/How%20to/TextSearch)
+
 ## See also
 
 * [Toolbar items](./toolbar)

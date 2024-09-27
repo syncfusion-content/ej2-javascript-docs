@@ -79,7 +79,7 @@ The [`stackLimit`](../api/diagram) property of history manager is used to limits
 
 ## Restrict Undo/Redo
 
-Undo, Redo process can be avoided for particular element by using [`canLog`](../api/diagram/history/#canlog) property in the history manager. The following example illstrates how to prevent history entry using `canLog` function.
+Undo, Redo process can be avoided for particular element by using [`canLog`](../api/diagram/history/#canlog) property in the history manager. The following example illustrates how to prevent history entry using `canLog` function.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -126,28 +126,6 @@ The following code shows how to get the current entry from the diagram history:
         
 {% previewsample "page.domainurl/code-snippet/diagram/undoredo-currentEntry" %}
 
-## Track custom changes
-
-Diagram provides options to track the changes that are made to custom properties. For example, in case of an employee relationship diagram, track the changes in the employee information. The historyManager of the diagram enables you to track such changes. The following example illustrates how to track such custom property changes.
-
-Before changing the employee information, save the existing information to historyManager by using the client-side method push of historyManager.
-
-The following code example illustrates how to save the existing property values.
-
-```javascript
-
-var diagram = new ej.diagrams.Diagram({
-    width: '100%',
-    height: '600px',
-},'#element');
-//Creates a custom entry
-var entry = {
-    undoObject: diagram.nodes[0];
-};
-// adds that to history list
-diagram.historyManager.push(entry);
-
-```
 
 ## Clear history
 

@@ -33,7 +33,7 @@ The [`length`](../api/diagram/orthogonalSegment) and [`direction`](../api/diagra
 
 N> You need to mention the segment type as same as what you mentioned in connector type. There should be no contradiction between connector type and segment type.
 
-### Orthogonal segment editing
+## Orthogonal segment editing
 
 * Orthogonal thumbs allow you to adjust the length of adjacent segments by clicking and dragging them.
 * When necessary, some segments are added or removed automatically, while dragging the segment. 

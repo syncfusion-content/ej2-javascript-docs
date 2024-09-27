@@ -19,6 +19,20 @@
 </head>
 
 <body>
+    <script id="fixeduserhandletemplate" type="text/x-template">
+        ${if(id=='usercon1')}
+        <div style="width:100%;height:100%">
+            <input id="colorPicker" type="color"  value="#008000"
+            style="width:${width}"/>
+        </div>
+        ${else if(id=='usercon2')}
+        <div style="width:100%;height:100%">
+            <input type="button" value="FixedUserHandleTemplate" 
+        style="width:${width};color:red; "/>
+        </div>
+        ${/if}
+        
+    </script>
     <div id='loader'>Loading....</div>
     <div id='container'>
         <div id='element'></div>

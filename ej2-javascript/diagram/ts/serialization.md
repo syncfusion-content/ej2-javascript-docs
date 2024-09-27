@@ -90,3 +90,55 @@ When a JSON file is uploaded, it undergoes parsing to extract its JSON data. Thi
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/diagram/serialisation-cs1" %}
+
+
+## Importing and Exporting Mind Map and Flowchart Diagrams using Mermaid Syntax
+
+The [`Diagram`](../api/diagram/) supports saving diagrams in Mermaid syntax format. Mermaid is a Markdown-inspired syntax that automatically generates diagrams. With this functionality, you can easily create mind maps and flowcharts from Mermaid syntax data, simplifying the visualization of complex ideas and processes without manual drawing. Additionally, you can export your mind maps and flowcharts to Mermaid syntax, allowing for easy sharing, editing, and use across different platforms.
+
+### Save diagram as Mermaid syntax
+
+ The `saveDiagramAsMermaid` method serializes the diagram into a Mermaid-compatible string format. This method is specifically designed for diagrams that utilize Flowchart and Mind map layouts. The following code illustrates how to save the diagram in Mermaid string format.
+
+ ```javascript
+//returns the serialized Mermaid string of the Diagram
+let data = diagram.saveDiagramAsMermaid();
+
+```
+
+### Load diagram from Mermaid syntax
+
+You can load a [diagram](../api/diagram/) from the serialized Mermaid syntax data using the `loadDiagramFromMermaid` method. The following code illustrates how to load a diagram from a Mermaid string data.
+
+#### Load flowchart layout
+
+The following example shows how to load flowchart diagram from mermaid syntax.
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/serialisation-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/serialisation-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/diagram/serialisation-cs2" %}
+
+#### Load mindmap layout
+
+The following example shows how to load mind map diagram from mermaid syntax.
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/serialisation-cs3/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/serialisation-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/diagram/serialisation-cs3" %}
+
+
+N> Mermaid syntax data serialization and deserialization are only supported for Flowchart and Mind map layouts. Please ensure that your diagram uses one of these layouts to successfully load the data.

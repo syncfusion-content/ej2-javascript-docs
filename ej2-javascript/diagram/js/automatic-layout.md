@@ -16,11 +16,12 @@ Diagram provides support to auto-arrange the nodes in the diagram area that is r
 ## Layout modes
 
 * Hierarchical layout
+* Complex hierarchical tree layout
 * Organization chart
+* Flowchart layout
+* Mind Map layout
 * Radial tree
 * Symmetric layout
-* Mind Map layout
-* Complex hierarchical tree layout
 
 ## See also
 

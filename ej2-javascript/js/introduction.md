@@ -62,6 +62,9 @@ letter-spacing: 0.7px;
 </tbody>
 <tr>
     <td>
+        <div><p class="controlcategory">SMART CONTROLS</p></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/smart-paste-button/es5-getting-started/">Smart Paste</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/smart-textarea/es5-getting-started/">Smart TextArea</a></div>
         <div><p class="controlcategory">GRIDS</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/grid/getting-started/">DataGrid</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/pivotview/getting-started/">Pivot Table</a></div>

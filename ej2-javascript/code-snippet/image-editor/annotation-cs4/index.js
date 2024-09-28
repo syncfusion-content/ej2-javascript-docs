@@ -3,7 +3,6 @@ ej.base.enableRipple(true);
 var imageEditorObj = new ej.imageeditor.ImageEditor({
   width: '550px',
   height: '330px',
-  toolbar: [],
   shapeChanging: (args) => {
     if (args.currentShapeSettings.type === 'Text') {
       args.currentShapeSettings.color = 'red';

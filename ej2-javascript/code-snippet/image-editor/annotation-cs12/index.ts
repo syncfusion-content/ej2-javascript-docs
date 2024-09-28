@@ -9,7 +9,7 @@ let imageEditorObj: ImageEditor = new ImageEditor({
     width: '550px',
     height: '330px',
     shapeChanging: (args: shapeChanging) => {
-        if (args.action === "insert" && args.currentShapeSettings?.type === 'FreehandDraw') {
+        if (args.action === "insert" && args.currentShapeSettings.type === 'FreehandDraw') {
             args.currentShapeSettings.strokeColor = 'red';
         }
     },

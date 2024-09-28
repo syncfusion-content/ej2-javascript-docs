@@ -98,7 +98,7 @@ The layout orientation can used to arrange the layout based on the direction. th
 |BottomToTop|Aligns the layout from bottom to top. All the roots are placed at bottom of the diagram.|
 |RightToLeft|Aligns the layout from right to left. All the roots are placed at right of the diagram.|
 
-Diagram provides support to customize the  [`orientation`](../api/diagram/layout) of layout. You can set the desired orientation using layout.orientation.
+Diagram provides support to customize the  [`orientation`](../api/diagram/layoutOrientation/) of layout. You can set the desired orientation using layout.orientation.
 
 N> In the diagram the default orientation is `TopToBottom`.
 

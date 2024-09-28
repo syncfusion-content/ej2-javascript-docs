@@ -37,7 +37,7 @@ The Essential JS 2 JavaScript components can be initialized by using either of t
 
 ### Using local script and style references in a HTML page
 
-**Step 1:** Create an app folder `myapp` for Essential JS 2 JavaScript components.
+**Step 1:** Create an app folder `my app` for Essential JS 2 JavaScript components.
 
 **Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
@@ -52,9 +52,9 @@ The Essential JS 2 JavaScript components can be initialized by using either of t
 >
 > Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-dropdowns/styles/material.css`
 
-**Step 3:** Create a folder `myapp/resources` and copy/paste the global scripts and styles from the above installed location to `myapp/resources` location.
+**Step 3:** Create a folder `my app/resources` and copy/paste the global scripts and styles from the above installed location to `my app/resources` location.
 
-**Step 4:** Create a HTML page (index.html) in `myapp` location and add the Essentials JS 2 script and style references.
+**Step 4:** Create a HTML page (index.html) in `my app` location and add the Essentials JS 2 script and style references.
 
 ```html
 <!DOCTYPE html>
@@ -126,7 +126,7 @@ The Essential JS 2 JavaScript components can be initialized by using either of t
 
 ### Using CDN link for script and style reference
 
-**Step 1:** Create an app folder `myapp` for the Essential JS 2 JavaScript components.
+**Step 1:** Create an app folder `my app` for the Essential JS 2 JavaScript components.
 
 **Step 2:** The Essential JS 2 component's global scripts and styles are already hosted in the below CDN link formats.
 
@@ -140,7 +140,7 @@ The Essential JS 2 JavaScript components can be initialized by using either of t
 >
 > Styles: [`http://cdn.syncfusion.com/ej2/ej2-dropdowns/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-dropdowns/styles/material.css)
 
-**Step 3:** Create a HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `input` element and initiate the `Essential JS 2 DropDownList` component in the index.html by using following code.
+**Step 3:** Create a HTML page (index.html) in `my app` location and add the CDN link references. Now, add the `input` element and initiate the `Essential JS 2 DropDownList` component in the index.html by using following code.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}

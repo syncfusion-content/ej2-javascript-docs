@@ -449,15 +449,15 @@ The following table shows all the possible offset and alignment combinations of 
 
 | Offset | Alignment | Output |
 | -------- | -------- | -------- |
-| 0 | Before |![fixed user handle align before offset 0](images/0before.png)|
-| 0.5 | Before |![fixed user handle align before offset 0.5](images/0.5before.png)|
-| 1 | Before |![fixed user handle align before offset 1](images/1before.png)|
-| 0 | Center |![fixed user handle align center offset 0](images/0center.png)|
-| 0.5 | Center |![fixed user handle align center offset 0.5](images/0.5center.png)|
-| 1 | Center |![fixed user handle align center offset 1](images/1center.png)|
-| 0 | After |![fixed user handle align after offset 0](images/0after.png)|
-| 0.5 | After |![fixed user handle align after offset 0.5](images/0.5after.png)|
-| 1 | After |![fixed user handle for align after offset 1](images/1after.png)|
+| 0 | Before |![fixed user handle align before offset 0](images/before0.png)|
+| 0.5 | Before |![fixed user handle align before offset 0.5](images/before0.5.png)|
+| 1 | Before |![fixed user handle align before offset 1](images/before1.png)|
+| 0 | Center |![fixed user handle align center offset 0](images/center0.png)|
+| 0.5 | Center |![fixed user handle align center offset 0.5](images/center0.5.png)|
+| 1 | Center |![fixed user handle align center offset 1](images/center1.png)|
+| 0 | After |![fixed user handle align after offset 0](images/after0.png)|
+| 0.5 | After |![fixed user handle align after offset 0.5](images/after0.5.png)|
+| 1 | After |![fixed user handle for align after offset 1](images/after1.png)|
 
 ##### Displacement
 
@@ -584,7 +584,7 @@ The following example demonstrates, how to use these properties to customize the
 {% previewsample "page.domainurl/code-snippet/diagram/fixeduserhandle-cs4" %}
 {% endif %}
 
-### Customizing Fixed User Handles with HTML Templates
+#### Customizing Fixed User Handles with HTML Templates
 
 Fixed user handles are interactive elements added to nodes and connectors. Their appearance can be customized using HTML templates. To render fixed user handle with HTML templates, we need to create an HTML element inside a `<script>` tag then add the template reference using the [`fixedUserHandleTemplate`](../api/diagram/userHandle#fixeduserhandletemplate) property in the diagram model.
 

@@ -27,8 +27,6 @@ The AI AssistView control triggers the [created](../api/ai-assist-view#created) 
 {% include code-snippet/ai-assistview/events/created/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/ai-assistview/events/created" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -41,7 +39,6 @@ The AI AssistView control triggers the [created](../api/ai-assist-view#created) 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/ai-assistview/events/created" %}
 {% endif %}
 
 ## promptRequest
@@ -58,8 +55,6 @@ The [promptRequest](../api/ai-assist-view#promptrequest) event is triggered when
 {% include code-snippet/ai-assistview/events/prompt-request/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/ai-assistview/events/prompt-request" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -72,7 +67,6 @@ The [promptRequest](../api/ai-assist-view#promptrequest) event is triggered when
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/ai-assistview/events/prompt-request" %}
 {% endif %}
 
 ## promptChanged
@@ -89,8 +83,6 @@ The [promptChanged](../api/ai-assist-view#promptchanged) event is triggered when
 {% include code-snippet/ai-assistview/events/prompt-changed/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/ai-assistview/events/prompt-changed" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -103,5 +95,4 @@ The [promptChanged](../api/ai-assist-view#promptchanged) event is triggered when
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/ai-assistview/events/prompt-changed" %}
 {% endif %}

@@ -16,7 +16,7 @@ imageEditorObj.appendTo('#imageeditor');
 
 document.getElementById('addText').onclick = function () {
   let dimension = imageEditorObj.getImageDimension();
-  imageEditorObj.drawText(dimension.x, dimension.y);
+  imageEditorObj.drawText(dimension.x, dimension.y, 'Syncfusion');
 };
 document.getElementById('outline').onclick = function () {
   let dimension = imageEditorObj.getImageDimension();

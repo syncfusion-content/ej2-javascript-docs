@@ -21,20 +21,20 @@ imageEditorObj.appendTo('#imageeditor');
 
 (document.getElementById('rectangle') as HTMLElement).onclick = function () {
     let dimension: any = imageEditorObj.getImageDimension();
-    imageEditorObj.drawRectangle(dimension.x, dimension.y, 200, 100);
-    imageEditorObj.drawRectangle(dimension.x + 300, dimension.y, 200, 100, null, '', '', null, null, 8);
+    imageEditorObj.drawRectangle(dimension.x + 10, dimension.y + 60, 150, 70);
+    imageEditorObj.drawRectangle(dimension.x + 250, dimension.y + 60, 150, 70, null, '', '', null, null, 8);
 };
 (document.getElementById('ellipse') as HTMLElement).onclick = function () {
     let dimension: any = imageEditorObj.getImageDimension();
-    imageEditorObj.drawEllipse(dimension.x, dimension.y);
+    imageEditorObj.drawEllipse(dimension.x, dimension.y + 200);
 };
 (document.getElementById('line') as HTMLElement).onclick = function () {
     let dimension: any = imageEditorObj.getImageDimension();
-    imageEditorObj.drawLine(dimension.x, dimension.y);
+    imageEditorObj.drawLine(dimension.x + 300, dimension.y + 30);
 };
 (document.getElementById('arrow') as HTMLElement).onclick = function () {
     let dimension: any = imageEditorObj.getImageDimension();
-    imageEditorObj.drawArrow(dimension.x, dimension.y + 10, dimension.x + 50, dimension.y + 10, 10);
+    imageEditorObj.drawArrow(dimension.x + 100, dimension.y + 30, dimension.x + 100, dimension.y + 10, 10);
 };
 (document.getElementById('path') as HTMLElement).onclick = function () {
     let dimension: any = imageEditorObj.getImageDimension();

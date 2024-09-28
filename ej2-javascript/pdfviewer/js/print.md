@@ -138,6 +138,8 @@ pdfviewer.appendTo('#PdfViewer');
 {% endhighlight %}
 {% endtabs %}
 
+[View sample in GitHub](https://github.com/SyncfusionExamples/javascript-pdf-viewer-examples/tree/master/How%20to/Customize%20Print%20Quality)
+
 ## See also
 
 * [Toolbar items](./toolbar)

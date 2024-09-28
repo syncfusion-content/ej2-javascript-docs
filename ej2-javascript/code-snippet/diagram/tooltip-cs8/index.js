@@ -3,10 +3,10 @@
  */
 var diagram;
 
-var node = {
+var nodes = [{
   id: 'node1',
   offsetX: 250,
-  offsetY: 250,
+  offsetY: 150,
   width: 100,
   height: 100,
   style: {
@@ -23,14 +23,14 @@ var node = {
           },
           constraints: ej.diagrams.AnnotationConstraints.Tooltip,
       }],
-}
+}]
 
 diagram = new ej.diagrams.Diagram(
   {
     width: '650px',
     height: '350px',
     nodes: nodes,
-    snapSettings: { constraints: SnapConstraints.None },
+   
   },
 
   '#element'

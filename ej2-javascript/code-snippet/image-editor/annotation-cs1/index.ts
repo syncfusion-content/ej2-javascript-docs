@@ -25,9 +25,9 @@ imageEditorObj.appendTo('#imageeditor');
 };
 (document.getElementById('outline') as HTMLElement).onclick = function () {
     let dimension = imageEditorObj.getImageDimension();
-    imageEditorObj.drawText(dimension.x, dimension.y, 'Syncfusion', 'Arial', 70, false, false, '', false, null, '', 'green', 8);
+    imageEditorObj.drawText(dimension.x + 50, dimension.y + 50, 'Syncfusion', 'Arial', 30, false, false, '', false, null, '', 'green', 8);
 };
 (document.getElementById('background') as HTMLElement).onclick = function () {
     let dimension = imageEditorObj.getImageDimension();
-    imageEditorObj.drawText(dimension.x, dimension.y, 'Syncfusion', 'Arial', 70, false, false, '', false, null, 'red', '', null);
+    imageEditorObj.drawText(dimension.x + 100, dimension.y + 100, 'Syncfusion', 'Arial', 30, false, false, '', false, null, 'red', '', null);
 };

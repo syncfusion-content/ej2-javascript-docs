@@ -18,7 +18,7 @@ function fileOpen(args) {
   let file = args.fileDetails;
   let fileName = file.name;
   let filePath = file.filterPath.replace(/\\/g, '/') + fileName;
-  let basePath = document.getElementById('filemanager')?.ej2_instances[0];
+  let basePath = document.getElementById('filemanager').ej2_instances[0];
   let imagePath = `${basePath.ajaxSettings.getImageUrl}?path=${filePath}`;
   if (file.isFile) {
     args.cancel = true;

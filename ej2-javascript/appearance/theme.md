@@ -38,7 +38,7 @@ The Syncfusion JavaScript library has provided the below list of in-built themes
 
 > The Syncfusion Bootstrap theme is designed based on `Bootstrap v3`, but it can be compatible with `Bootstrap v4` applications. In addition to these four built-in themes, [ThemeStudio](https://ej2.syncfusion.com/documentation/appearance/theme-studio/) also provides support for the Fusion theme, which can only be downloaded from [ThemeStudio](https://ej2.syncfusion.com/themestudio/?theme=fusion).
 
-## Optimized CSS Files
+## Optimized CSS files
 
 Syncfusion controls provide two size modes for each theme: **normal** and **bigger**. By default, the **normal size mode** is applied, offering a standard appearance that is suitable for all devices. The **bigger size mode** provides an enlarged interface for enhanced interactions, visibility, and an overall improved user experience by increasing the size of the UI controls.
 

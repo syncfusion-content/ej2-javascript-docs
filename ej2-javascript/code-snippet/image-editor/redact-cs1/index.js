@@ -16,7 +16,7 @@ imageEditorObj.appendTo('#imageeditor');
 
 document.getElementById('add-redact').onclick = function () {
   let dimension = imageEditorObj.getImageDimension();
-  imageEditorObj.drawRedact(RedactType.Blur, dimension.x, dimension.y, 200, 300);
+  imageEditorObj.drawRedact('blur', dimension.x + 180, dimension.y + 240, 200, 300);
 }
 
 document.getElementById('update-redact').onclick = function () {

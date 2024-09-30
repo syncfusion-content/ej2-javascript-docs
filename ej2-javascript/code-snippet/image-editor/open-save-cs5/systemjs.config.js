@@ -23,7 +23,8 @@ System.config({
         "@syncfusion/ej2-inputs": "syncfusion:ej2-inputs/dist/ej2-inputs.umd.min.js",
         "@syncfusion/ej2-splitbuttons": "syncfusion:ej2-splitbuttons/dist/ej2-splitbuttons.umd.min.js",
         "@syncfusion/ej2-navigations": "syncfusion:ej2-navigations/dist/ej2-navigations.umd.min.js",
-        "@syncfusion/ej2-image-editor": "syncfusion:ej2-image-editor/dist/ej2-image-editor.umd.min.js"
+        "@syncfusion/ej2-image-editor": "syncfusion:ej2-image-editor/dist/ej2-image-editor.umd.min.js",
+        "@syncfusion/ej2-filemanager": "syncfusion:ej2-filemanager/dist/ej2-filemanager.umd.min.js"
     }
 });
 

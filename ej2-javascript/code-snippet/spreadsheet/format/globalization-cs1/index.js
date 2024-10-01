@@ -7,7 +7,7 @@ const loadCultureFiles = (locales) => {
         for (const fileName of files) {
             const url = './cldr-data/' + (fileName === 'numberingSystems' ? '' : (locale + '/')) + fileName + '.json';
             const ajax = new ej.base.Ajax(url, 'GET', false);
-            ajax.onSuccess = (value) => loadCldr(JSON.parse(value));
+            ajax.onSuccess = (value) => ej.base.loadCldr(JSON.parse(value));
             ajax.send();
         }
     });

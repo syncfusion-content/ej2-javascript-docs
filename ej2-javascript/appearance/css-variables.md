@@ -21,7 +21,7 @@ Syncfusion currently offers two modern and highly customizable themes using CSS 
 
 ## CSS themes - Syncfusion ##Platform_Name## Controls
 
-[Material 3](https://m3.material.io/), [Fluent 2](https://fluent2.microsoft.design/get-started/whatisnew) and Bootstrap 5.3 themes have been introduced across all EJ2 Controls, featuring both `light` and `dark` variants. This themes utilizes `CSS variables` to allow easy customization of control colors in CSS format. With this implementation, users can seamlessly switch between light and dark color schemes, providing a flexible solution to meet their preferences and application needs.
+[Material 3](https://m3.material.io/), [Fluent 2](https://fluent2.microsoft.design/get-started/whatisnew) and [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/) themes have been introduced across all EJ2 Controls, featuring both `light` and `dark` variants. This themes utilizes `CSS variables` to allow easy customization of control colors in CSS format. With this implementation, users can seamlessly switch between light and dark color schemes, providing a flexible solution to meet their preferences and application needs.
 
 > Kindly note that in the Material 3 theme, CSS variables with rgb() values are used for color variables. The use of hex values in this context may lead to improper functionality. For example, in previous versions of the Material theme or other themes, the primary color variable was defined as follows: $primary: #6200ee;. However, in the Material 3 theme, the primary color variable is defined as follows: --color-sf-primary: 98, 0, 238;.
 
@@ -258,7 +258,7 @@ Example for `Fluent 2` customization using JavaScript.
 
 ![default primary value](images/fluent2-default.png)
 
-**Customized Fluent 2  primary value**
+**Customized Fluent 2 primary value**
 
 ![customized primary value](images/fluent2-customize.png)
 
@@ -303,7 +303,7 @@ With this CSS variable support, you can effortlessly customize the color variabl
 
 ### Switching Light and Dark mode with CSS variables
 
-Switching between modes has become easier with the updated modern themes, which offer Light and Dark variants. In both the `Material 3`, `Fluent 2` and `Bootstrap 5.3` light themes, there are distinct class variables for light and dark modes in a `single file`, providing flexibility for seamless switching between the two modes within your application.
+Switching between modes has become easier with the updated modern themes, which offer Light and Dark variants. In both the `Material 3` and `Fluent 2` light themes, there are distinct class variables for light and dark modes in a `single file`, providing flexibility for seamless switching between the two modes within your application.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -412,6 +412,6 @@ To activate dark mode, just append the `e-dark-mode` class to the body section o
 
 ### ThemeStudio Application
 
-The ThemeStudio application now includes seamless integration with the Material 3 and Fluent 2 themes, offering a comprehensive solution for customization requirements. This enhancement enables users to effortlessly customize and personalize their themes.
+The ThemeStudio application now includes seamless integration with the Material 3, Fluent 2 and Bootstrap 5.3 themes, offering a comprehensive solution for customization requirements. This enhancement enables users to effortlessly customize and personalize their themes.
 
 Access the Syncfusion ThemeStudio application, featuring our themes, via the following link: [Link to Syncfusion ThemeStudio](https://ej2.syncfusion.com/themestudio/?theme=material3)

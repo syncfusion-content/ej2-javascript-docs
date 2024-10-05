@@ -21,7 +21,7 @@ Syncfusion currently offers two modern and highly customizable themes using CSS 
 
 ## CSS themes - Syncfusion ##Platform_Name## Controls
 
-[Material 3](https://m3.material.io/), [Fluent 2](https://fluent2.microsoft.design/get-started/whatisnew) and Bootstrap 5.3 themes have been introduced across all EJ2 Controls, featuring both `light` and `dark` variants. This themes utilizes `CSS variables` to allow easy customization of control colors in CSS format. With this implementation, users can seamlessly switch between light and dark color schemes, providing a flexible solution to meet their preferences and application needs.
+[Material 3](https://m3.material.io/), [Fluent 2](https://fluent2.microsoft.design/get-started/whatisnew) and [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/) themes have been introduced across all EJ2 Controls, featuring both `light` and `dark` variants. This themes utilizes `CSS variables` to allow easy customization of control colors in CSS format. With this implementation, users can seamlessly switch between light and dark color schemes, providing a flexible solution to meet their preferences and application needs.
 
 > Kindly note that in the Material 3 theme, CSS variables with rgb() values are used for color variables. The use of hex values in this context may lead to improper functionality. For example, in previous versions of the Material theme or other themes, the primary color variable was defined as follows: $primary: #6200ee;. However, in the Material 3 theme, the primary color variable is defined as follows: --color-sf-primary: 98, 0, 238;.
 
@@ -71,8 +71,8 @@ To access themes provided by Syncfusion, you have two primary options,
 |Package  | [Material 3 Light](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme) | [Material 3 Dark](https://www.npmjs.com/package/@syncfusion/ej2-material3-dark-theme) |
 |  | [Fluent 2 Light](https://www.npmjs.com/package/@syncfusion/ej2-fluent2-theme) | [Fluent 2 Dark](https://www.npmjs.com/package/@syncfusion/ej2-fluent2-dark-theme) |
 |  | [Bootstrap 5.3 Light](https://www.npmjs.com/package/@syncfusion/ej2-bootstrap5.3-theme) | [Bootstrap 5.3 Dark](https://www.npmjs.com/package/@syncfusion/ej2-bootstrap5.3-dark-theme) |
-| CDN  | [Material 3 Light](https://cdn.syncfusion.com/ej2/24.2.8/material3.css)  |  [Material 3 Dark](https://cdn.syncfusion.com/ej2/24.2.8/material3-dark.css)  |
-|  |  [Fluent 2 light](https://cdn.syncfusion.com/ej2/26.1.35/fluent2.css)  |  [Fluent 2 Dark](https://cdn.syncfusion.com/ej2/26.1.35/fluent2-dark.css)  |
+| CDN  | [Material 3 Light](https://cdn.syncfusion.com/ej2/27.1.48/material3.css)  |  [Material 3 Dark](https://cdn.syncfusion.com/ej2/27.1.48/material3-dark.css)  |
+|  |  [Fluent 2 light](https://cdn.syncfusion.com/ej2/27.1.48/fluent2.css)  |  [Fluent 2 Dark](https://cdn.syncfusion.com/ej2/27.1.48/fluent2-dark.css)  |
 |  |  [Bootstrap5.3 light](https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.3.css)  |  [Bootstrap 5.3 Dark](https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.3-dark.css)  |
 
 ### Color Customization in themes
@@ -85,7 +85,7 @@ Here you can find the example for `Material 3` customization using CSS class.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/common/material3-cs2/index.ts %}
 {% endhighlight %}
@@ -192,7 +192,7 @@ Here you can find the example for `Material 3` customization using JavaScript.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/common/material3-cs3/index.ts %}
 {% endhighlight %}
@@ -258,7 +258,7 @@ Example for `Fluent 2` customization using JavaScript.
 
 ![default primary value](images/fluent2-default.png)
 
-**Customized Fluent 2  primary value**
+**Customized Fluent 2 primary value**
 
 ![customized primary value](images/fluent2-customize.png)
 
@@ -303,7 +303,7 @@ With this CSS variable support, you can effortlessly customize the color variabl
 
 ### Switching Light and Dark mode with CSS variables
 
-Switching between modes has become easier with the updated modern themes, which offer Light and Dark variants. In both the `Material 3`, `Fluent 2` and `Bootstrap 5.3` light themes, there are distinct class variables for light and dark modes in a `single file`, providing flexibility for seamless switching between the two modes within your application.
+Switching between modes has become easier with the updated modern themes, which offer Light and Dark variants. In both the `Material 3` and `Fluent 2` light themes, there are distinct class variables for light and dark modes in a `single file`, providing flexibility for seamless switching between the two modes within your application.
 
 {% if page.publishingplatform == "typescript" %}
 

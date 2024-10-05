@@ -851,6 +851,8 @@ The following example demonstrates how to render a Upload control in the **Emplo
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs32" %}
 {% endif %}
 
+> By default, the grid saves the cell when clicking outside the editor component. If your components, like multiple popups, are dynamically rendered, the grid may not recognize them, causing the editor to close when the popup is clicked. To prevent this, apply the `edit-custom-template` class to both your main component and sub-components. If you are using Syncfusion components, set their `cssClass` property to include the `edit-custom-template` class.
+
 ### Render AutoComplete control in edit form 
 
 The Syncfusion Grid allows you to render the AutoComplete control within the edit form by using the cell edit template feature.This feature enables you to select values from a predefined list during the editing of a specific column. It is especially valuable when you need to provide a dropdown-like auto-suggestion and input assistance for data entry in the Grid's columns.

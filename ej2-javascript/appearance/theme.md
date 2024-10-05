@@ -15,14 +15,14 @@ The Syncfusion JavaScript library has provided the below list of in-built themes
 
 |Theme | Style Sheet Name |
 |--------|--------|
+|Bootstrap 5.3 | bootstrap5.3.css |
+|Bootstrap 5.3 Dark | bootstrap5.3-dark.css |
 |Fluent 2 | fluent2.css |
 |Fluent 2 Dark | fluent2-dark.css |
 |Material 3 | material3.css |
 |Material 3 Dark | material3-dark.css |
 |Fluent | fluent.css |
 |Fluent Dark | fluent-dark.css |
-|Bootstrap 5.3 | bootstrap5.3.css |
-|Bootstrap 5.3 Dark | bootstrap5.3-dark.css |
 |Bootstrap 5 | bootstrap5.css |
 |Bootstrap 5 Dark | bootstrap5-dark.css |
 |Bootstrap 4 | bootstrap4.css |

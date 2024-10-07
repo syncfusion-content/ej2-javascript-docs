@@ -186,6 +186,6 @@ The following example shows a basic Smart Paste Button control.
 {% endhighlight %}
 {% endtabs %}
 
-![smart-paste-button](../images/smart-paste-button.gif)
+![smart-paste-button](./images/smart-paste-button.gif)
 
 > [Javascript Smart Paste Button Sample in github](https://github.com/syncfusion/smart-ai-samples/tree/master/typescript/src/app/smartpaste)

@@ -192,7 +192,7 @@ The control utilizes the [aiAssistHandler](https://ej2.syncfusion.com/javascript
 {% endhighlight %}
 {% endtabs %}
 
-![smart-paste-button](../images/smart-paste-button.gif)
+![smart-paste-button](./images/smart-paste-button.gif)
 
 **Step 4:** Now, run the `index.html` in web browser, it will render the `Syncfusion JavaScript Smart Paste Button` control.
 

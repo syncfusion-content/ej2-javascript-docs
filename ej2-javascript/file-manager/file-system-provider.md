@@ -21,6 +21,7 @@ The following file providers are added in Syncfusion EJ2 File Manager component.
 * [ASP.NET MVC 5 Azure cloud file system Provider](#aspnet-mvc-azure-cloud-file-system-provider)
 * [ASP.NET Core Amazon S3 cloud file provider](#aspnet-core-amazon-s3-cloud-file-provider)
 * [ASP.NET MVC Amazon S3 cloud file provider](#aspnet-mvc-amazon-s3-cloud-file-provider)
+* [ASP.NET Core SharePoint file provider](#aspnet-core-SharePoint-file-provider)
 * [File Transfer Protocol file system provider](#file-transfer-protocol-file-system-provider)
 * [SQL database file system provider](#sql-database-file-system-provider)
 * [NodeJS file system provider](#nodejs-file-system-provider)
@@ -300,6 +301,79 @@ filemanagerInstance.appendTo('#filemanager');
 
 > **Note:** To learn more about the file actions that can be performed with ASP.NET MVC Amazon S3 Cloud File Provider, refer to this [link](https://github.com/SyncfusionExamples/ej2-amazon-s3-aspmvc-file-provider#key-features)
 
+## ASP.NET Core SharePoint file provider
+
+The ASP.NET Core SharePoint file provider allows users to access and manage files within Microsoft SharePoint. To get started, clone the [SharePoint-aspcore-file-provider](https://github.com/SyncfusionExamples/sharepoint-aspcore-file-provider) using the following command.
+
+```ts
+
+git clone https://github.com/SyncfusionExamples/sharepoint-aspcore-file-provider  sharepoint-aspcore-file-provider
+
+cd sharepoint-aspcore-file-provider
+
+```
+
+### Prerequisites
+
+To set up the SharePoint service provider, follow these steps:
+
+1. **Create an App Registration in Azure Active Directory (AAD):** 
+   - Navigate to the Azure portal and create a new app registration under Azure Active Directory.
+   - Note down the **Tenant ID**, **Client ID**, and **Client Secret** from the app registration.
+
+2. **Use Microsoft Graph Instance:** 
+   - With the obtained Tenant ID, Client ID, and Client Secret, you can create a Microsoft Graph instance.
+   - This instance will be used to interact with the SharePoint document library.
+
+3. **Use Details from `appsettings.json`:**
+   - The `SharePointController` is already configured to use the credentials provided in the `appsettings.json` file.
+   - You only need to provide your `Tenant ID`, `Client ID`, `Client Secret`, `User Site Name`, and `User Drive ID` in the `appsettings.json` file, and the application will automatically initialize the SharePoint service.
+
+   ### Example `appsettings.json` Configuration
+
+```json
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Warning"
+    }
+  },
+  "SharePointSettings": {
+    "TenantId": "<--Tenant Id-->",
+    "ClientId": "<--Client Id-->",
+    "ClientSecret": "<--Client Secret-->",
+    "UserSiteName": "<--User Site Name-->",
+    "UserDriveId": "<--User Drive ID-->"
+  },
+  "AllowedHosts": "*"
+}
+```
+
+Replace "<--User Site Name-->", "<--User Drive ID-->", "tenantId", "clientId", and "clientSecret" with your actual values.
+
+After configuring the SharePoint file provider, build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager component to the appropriate controller methods allows to manage the files in the Microsoft SharePoint.
+
+```typescript
+
+let hostUrl = 'http://localhost:{port}/';
+
+// Initializing File Manager ASP.NET Core service.
+let filemanagerInstance: FileManager = new FileManager({
+    ajaxSettings: {
+        // Replace the hosted port number in the place of "{port}"
+        url: hostUrl + 'api/SharePointProvider/SharePointFileOperations',
+        downloadUrl: hostUrl + 'api/SharePointProvider/SharePointDownload',
+        uploadUrl: hostUrl + 'api/SharePointProvider/SharePointUpload',
+        getImageUrl: hostUrl + 'api/SharePointProvider/SharePointGetImage'
+    }
+});
+
+filemanagerInstance.appendTo('#filemanager');
+
+```
+
+> **Note:** To learn more about the file actions that can be performed with ASP.NET Core SharePoint file provider, refer to this [link](https://github.com/SyncfusionExamples/sharepoint-aspcore-file-provider)
+
 ## File Transfer Protocol file system provider
 
 In ASP.NET Core, File Transfer Protocol file system provider allows the users to access to the hosted file system as collection of objects stored in the file storage using File Transfer Protocol. To get started, clone the [ftp-aspcore-file-provider](https://github.com/SyncfusionExamples/ftp-aspcore-file-provider) using the following command
@@ -402,9 +476,9 @@ filemanagerInstance.appendTo('#filemanager');
 
 > **Note:** To learn more about the file actions that can be performed with SQL database file system provider, refer to this [link](https://github.com/SyncfusionExamples/sql-server-database-aspcore-file-provider#key-features)
 
-## NodeJS file system provider
+## Node file system provider
 
-The NodeJS file system provider allows the users to manage the files and folders in a physical file system. It provides methods for performing all basic file operations like creating a folder, copy, move, delete, and download files and folders in the file system. We can use of the NodeJS file system provider either by installing the [ej2-filemanager-node-filesystem](https://www.npmjs.com/package/@syncfusion/ej2-filemanager-node-filesystem) package or by cloning the [file system provider](https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem) from the GitHub.
+The Node file system provider allows the users to manage the files and folders in a physical file system. It provides methods for performing all basic file operations like creating a folder, copy, move, delete, and download files and folders in the file system. We can use of the Node file system provider either by installing the [ej2-filemanager-node-filesystem](https://www.npmjs.com/package/@syncfusion/ej2-filemanager-node-filesystem) package or by cloning the [file system provider](https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem) from the GitHub.
 
 ### Using ej2-filemanager-node-filesystem package
 
@@ -452,7 +526,7 @@ set PORT=3000 && node filesystem-server.js -d D:/Projects
 
 > **Note:** By default, the service will run `8090` port.
 
-Now, just mapping the **ajaxSettings** property of the FileManager component to the appropriate file operation methods in the filesystem-server.js file will allows to manage the physical file system with NodeJS file system provider.
+Now, just mapping the **ajaxSettings** property of the FileManager component to the appropriate file operation methods in the filesystem-server.js file will allows to manage the physical file system with Node file system provider.
 
 ```ts
 
@@ -473,7 +547,7 @@ filemanagerInstance.appendTo('#filemanager');
 
 ```
 
-> **Note:** To learn more about the file actions that can be performed with NodeJS file system provider, refer to this [link](https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem#key-features)
+> **Note:** To learn more about the file actions that can be performed with Node file system provider, refer to this [link](https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem#key-features)
 
 ## Google Drive file system provider
 
@@ -607,7 +681,7 @@ Here, the `Files` denotes the `rootNode` and the subsequent object refers to the
 
 ![generate_key](images/generate_key.png)
 
-* Next, you will need to clone the [`firebase-realtime-database-apscore-file-provider`](https://github.com/SyncfusionExamples/firebase-realtime-database-aspcore-file-provider) repository. Once cloned, simply open the project in Visual Studio and restore the NuGet package.
+* Next, you will need to clone the [`firebase-realtime-database-aspcore-file-provider`](https://github.com/SyncfusionExamples/firebase-realtime-database-aspcore-file-provider) repository. Once cloned, simply open the project in Visual Studio and restore the NuGet package.
 
 * Once you have generated the secret key, you will need to replace the JSON in the `access_key.json` file in the Firebase Realtime Database provider project with the newly generated key. This will enable authentication and allow you to perform read and write operations.
 

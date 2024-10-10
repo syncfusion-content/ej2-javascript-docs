@@ -19,6 +19,7 @@ The following list of properties and its values are used in the Query Builder.
 | ------------ | ----------------------- |
 | AddGroup  | Add Group |
 | AddCondition  | Add Condition |
+| AddButton | Add Group/Condition |
 | DeleteRule | Remove this condition |
 | DeleteGroup | Delete group |
 | Edit | EDIT |
@@ -28,6 +29,10 @@ The following list of properties and its values are used in the Query Builder.
 | EndsWith | Ends With |
 | DoesNotStartWith | Does Not Start With |
 | DoesNotEndWith | Does Not End With |
+| IsEmpty | Is Empty |
+| IsNotEmpty | Is Not Empty |
+| IsNull | Is Null |
+| IsNotNull | Is Not Null |
 | Contains | Contains |
 | DoesNotContain | Does Not Contain |
 | Equal | Equal |

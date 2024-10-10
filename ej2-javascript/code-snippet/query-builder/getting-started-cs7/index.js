@@ -6,6 +6,7 @@
         'querybuilder': {
             'AddGroup': 'Gruppe hinzufügen',
             'AddCondition': 'Bedingung hinzufügen',
+            'AddButton': 'Gruppe/Bedingung hinzufügen',
             'DeleteRule': 'Entfernen Sie diesen Zustand',
             'DeleteGroup': 'Gruppe löschen',
             'Edit': 'BEARBEITEN',
@@ -17,6 +18,10 @@
             'EndsWith': 'Endet mit',
             'DoesNotStartWith': 'Beginnt nicht mit',
             'DoesNotEndWith': 'Endet nicht mit',
+            'IsEmpty': 'Ist leer',
+            'IsNotEmpty': 'Ist nicht leer',
+            'IsNull': 'Ist Null',
+            'IsNotNull': 'Ist nicht Null',
             'DoesNotContain': 'Beinhaltet nicht',
             'Contains': 'Enthält',
             'Equal': 'Gleich',

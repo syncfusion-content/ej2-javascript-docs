@@ -1,14 +1,14 @@
 
 
 import { PivotView } from '@syncfusion/ej2-pivotview';
-import { DataManager, ODataAdaptor, Query } from '@syncfusion/ej2-data';
+import { DataManager, ODataV4Adaptor, Query } from '@syncfusion/ej2-data';
 
 let remoteData: DataManager = new DataManager({
-  url: 'https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders',
-  adaptor: new ODataAdaptor(),
+  url: 'https://services.odata.org/V4/Northwind/Northwind.svc/Orders',
+  adaptor: new ODataV4Adaptor(),
   crossDomain: true
 });
-remoteData.defaultQuery = new Query().take(2);
+remoteData.defaultQuery = new Query().take(10);
 
 let pivotTableObj: PivotView = new PivotView({
     dataSourceSettings: {

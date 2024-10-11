@@ -313,7 +313,7 @@ cd sharepoint-aspcore-file-provider
 
 ```
 
-### Prerequisites
+**Prerequisites**
 
 To set up the SharePoint service provider, follow these steps:
 
@@ -329,7 +329,7 @@ To set up the SharePoint service provider, follow these steps:
    - The `SharePointController` is already configured to use the credentials provided in the `appsettings.json` file.
    - You only need to provide your `Tenant ID`, `Client ID`, `Client Secret`, `User Site Name`, and `User Drive ID` in the `appsettings.json` file, and the application will automatically initialize the SharePoint service.
 
-   ### Example `appsettings.json` Configuration
+**Example `appsettings.json` Configuration**
 
 ```json
 {
@@ -372,7 +372,7 @@ filemanagerInstance.appendTo('#filemanager');
 
 ```
 
-> **Note:** To learn more about the file actions that can be performed with ASP.NET Core SharePoint file provider, refer to this [link](https://github.com/SyncfusionExamples/sharepoint-aspcore-file-provider)
+> **Note:** To learn more about the file actions that can be performed with ASP.NET Core SharePoint file provider, refer to this [link](https://github.com/SyncfusionExamples/sharepoint-aspcore-file-provider#key-features)
 
 ## File Transfer Protocol file system provider
 

@@ -15,7 +15,7 @@ let pivotTableObj: PivotView = new PivotView({
     },
     editSettings: { allowAdding: true, allowDeleting: true, allowEditing: true, mode: 'Normal' },
     height: 350,
-    editCompleted:(args:EditCompletedEventArgs){
+    editCompleted:(args:EditCompletedEventArgs) => {
         //triggers when a value cell is editted.
     }
 });

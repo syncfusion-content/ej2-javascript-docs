@@ -25,5 +25,10 @@ let pivotTableObj: PivotView = new PivotView({
 
 pivotTableObj.appendTo('#PivotTable');
 
+let btn: Button = new Button({ isPrimary: true });
+btn.appendTo('#Formatting');
 
+document.getElementById('Formatting').addEventListener('click', () => {
+    pivotTableObj.conditionalFormattingModule.showConditionalFormattingDialog();
+});
 

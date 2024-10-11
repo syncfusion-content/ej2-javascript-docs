@@ -18,7 +18,7 @@ let pivotTableObj: PivotView = new PivotView({
     },
     allowDrillThrough: true,
     height: 350,
-    drillThrough: (args: DrillThroughEventArgs){
+    drillThrough: (args: DrillThroughEventArgs) => {
         //triggers when a value cell is double clicked
     }
 });

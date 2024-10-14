@@ -134,6 +134,47 @@ The following sample shows the column selection in the spreadsheet, here selecti
 {% previewsample "page.domainurl/code-snippet/spreadsheet/selection-cs2" %}
 {% endif %}
 
+## Get selected cell values
+
+{% if page.publishingplatform == "typescript" %}
+
+You can select single or multiple cells, rows, or columns using mouse and keyboard interactions. You can also programmatically perform selections using the [selectRange](https://helpej2.syncfusion.com/documentation/api/spreadsheet/#selectrange) method. This selection behavior is controlled by the [selectionSettings](https://helpej2.syncfusion.com/documentation/api/spreadsheet/#selectionsettings) property. Finally, you can retrieve the selected cell values as a collection using the [getData](https://helpej2.syncfusion.com/documentation/api/spreadsheet/#getdata) method.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+You can select single or multiple cells, rows, or columns using mouse and keyboard interactions. You can also programmatically perform selections using the [selectRange](https://helpej2.syncfusion.com/javascript/documentation/api/spreadsheet/#selectrange) method. This selection behavior is controlled by the [selectionSettings](https://helpej2.syncfusion.com/javascript/documentation/api/spreadsheet/#selectionsettings) property. Finally, you can retrieve the selected cell values as a collection using the [getData](https://helpej2.syncfusion.com/javascript/documentation/api/spreadsheet/#getdata) method.
+
+{% endif %}
+
+Below is a code example demonstrating how to retrieve the selected cell values as a collection programmatically:
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/spreadsheet/selected-cell-values/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/spreadsheet/selected-cell-values/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/spreadsheet/selected-cell-values" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/spreadsheet/selected-cell-values/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/spreadsheet/selected-cell-values/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/spreadsheet/selected-cell-values" %}
+{% endif %}
+
 ## How to remove selection in the spreadsheet
 
 {% if page.publishingplatform == "typescript" %}

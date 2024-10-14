@@ -294,6 +294,53 @@ The following table defines the arguments of the `dataSourceChanged` event.
 {% previewsample "page.domainurl/code-snippet/spreadsheet/dynamic-data-binding-cs1" %}
 {% endif %}
 
+## Dynamic data binding using updateRange method
+
+{% if page.publishingplatform == "typescript" %}
+
+The [updateRange](https://ej2.syncfusion.com/documentation/api/spreadsheet/#updaterange) method allows you to dynamically update the [dataSource](https://ej2.syncfusion.com/documentation/api/spreadsheet/rangeModel/#datasource) in a spreadsheet without manually iterating through each cell. This method is especially useful for efficiently applying bulk updates to a specific range within the spreadsheet.
+
+To use the [updateRange](https://ej2.syncfusion.com/documentation/api/spreadsheet/#updaterange) method, provide the new [dataSource](https://ej2.syncfusion.com/documentation/api/spreadsheet/rangeModel/#datasource) and specify the starting cell for the update using the [startCell](https://ej2.syncfusion.com/documentation/api/spreadsheet/rangeModel/#startcell) property of the `RangeModel`. Additionally, set the `sheetIndex` to target the appropriate sheet for the update.
+
+The following code example demonstrates how to dynamically update data using the [updateRange](https://ej2.syncfusion.com/documentation/api/spreadsheet/#updaterange) method.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+The [updateRange](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#updaterange) method allows you to dynamically update the [dataSource](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/rangeModel/#datasource) in a spreadsheet without manually iterating through each cell. This method is especially useful for efficiently applying bulk updates to a specific range within the spreadsheet.
+
+To use the [updateRange](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#updaterange) method, provide the new [dataSource](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/rangeModel/#datasource) and specify the starting cell for the update using the [startCell](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/rangeModel/#startcell) property of the `RangeModel`. Additionally, set the `sheetIndex` to target the appropriate sheet for the update.
+
+The following code example demonstrates how to dynamically update data using the [updateRange](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#updaterange) method.
+
+{% endif %}
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/spreadsheet/dynamic-data-binding-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/spreadsheet/dynamic-data-binding-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/spreadsheet/dynamic-data-binding-cs2" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/spreadsheet/dynamic-data-binding-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/spreadsheet/dynamic-data-binding-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/spreadsheet/dynamic-data-binding-cs2" %}
+{% endif %}
+
 ## See Also
 
 * [Filtering](./filter)

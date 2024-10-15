@@ -159,11 +159,11 @@ public async Task<IActionResult> Save(IFormFile UploadFiles)
         var filePath = Path.Combine(uploads, UploadFiles.FileName); // Get the file path
         using (var fileStream = new FileStream(filePath, FileMode.Create)) // Create the file
             {
-            await UploadFiles.CopyToAsync(fileStream); // Save the file
-                }
-                }
-    return Ok();
+                await UploadFiles.CopyToAsync(fileStream); // Save the file
             }
+        }
+    return Ok();
+}
 ```
 
 ### Server-side configuration for saving and returning responses
@@ -313,6 +313,22 @@ You can remove the files which is not uploaded locally by clicking the remove ic
 
 ### Server-side configuration for remove action
 
+To remove an uploaded file from the server, it is sufficient to send only the file name. You can achieve this by setting the [`postRawFile`](https://ej2.syncfusion.com/documentation/api/uploader/removingEventArgs/#postrawfile) property of the `RemovingEventArgs` to `false` during the [`removing`](https://ej2.syncfusion.com/documentation/api/uploader#removing) event. This ensures that only the file name is sent to the server in the Remove action.
+
+Here is an example:
+
+```typescript
+let uploadObject: Uploader = new Uploader({
+  asyncSettings: {
+    saveUrl: 'https://services.syncfusion.com/js/production/api/FileUploader/Save',
+    removeUrl: 'https://services.syncfusion.com/js/production/api/FileUploader/Remove',
+  },
+  removing: function (args) {
+    args.postRawFile = false;
+  }
+});
+```
+
 Here’s how to handle the server-side action for removing the file from server.
 
 ```c#
@@ -325,8 +341,32 @@ public void Remove(string UploadFiles)
         {
             System.IO.File.Delete(filePath); // Delete the file
         }
-        }
-        }
+    }
+}
+```
+When `postRawFile` is enabled, the complete file data will be sent to the server-side `Remove` action. The `postRawFile` option is enabled by default.
+
+Here is an example:
+
+```typescript
+let uploadObject: Uploader = new Uploader({
+  asyncSettings: {
+    saveUrl: 'https://services.syncfusion.com/js/production/api/FileUploader/Save',
+    removeUrl: 'https://services.syncfusion.com/js/production/api/FileUploader/Remove',
+  },
+  removing: function (args) {
+    // The `postRawFile` option is enabled by default.
+  }
+});
+```
+
+Here’s how to receive the file data in the server-side `Remove` action:
+
+```csharp
+public void Remove(IFormFile UploadFiles)
+{
+    // Your file removal logic goes here!
+}
 ```
 
 ## Auto Upload

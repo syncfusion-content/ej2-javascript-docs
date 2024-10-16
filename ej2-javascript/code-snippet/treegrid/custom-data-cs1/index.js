@@ -8,7 +8,7 @@ var priorityData = [
   { priorityName: "Breaker", priorityId: "5" }
 ];
 var treegrid = new ej.treegrid.TreeGrid({
-  dataSource: window.projectData,
+  dataSource: var projectData,
   idMapping: "TaskID",
   parentIdMapping: "parentID",
   treeColumnIndex: 1,

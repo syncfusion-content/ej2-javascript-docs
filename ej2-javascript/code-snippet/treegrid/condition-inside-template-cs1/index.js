@@ -1,4 +1,3 @@
-import { sampleData } from './es5-datasource.js';
 var treeGridObj = new ej.treegrid.TreeGrid({
     dataSource: sampleData,
     childMapping: 'subtasks',

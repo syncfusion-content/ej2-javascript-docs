@@ -2,7 +2,7 @@
  * TreeGrid DataSource
  */
 
-window.sampleData =  [
+var sampleData =  [
     {
         taskID: 1,
         taskName: 'Planning',
@@ -164,7 +164,7 @@ window.sampleData =  [
     }
 ];
 
-window.sortData = [
+var sortData = [
     {
         orderID: '1',
         orderName: 'Order 1',

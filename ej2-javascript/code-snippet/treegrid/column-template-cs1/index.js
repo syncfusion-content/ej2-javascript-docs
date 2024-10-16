@@ -1,4 +1,3 @@
-import { textdata, getSparkData } from './es5-datasource.js';
 var treegridObj = new ej.treegrid.TreeGrid({
         dataSource: textdata,
         childMapping: 'Children',

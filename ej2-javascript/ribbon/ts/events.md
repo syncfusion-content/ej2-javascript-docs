@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events
+# Events in ##Platform_Name## Ribbon control
 
 This section describes the ribbon events that will be triggered when appropriate actions are performed. The following events are available in the ribbon control.
 
@@ -209,6 +209,49 @@ let ribbon: Ribbon = new Ribbon({
   }
 });
 ribbon.appendTo("#ribbon");
+```
+
+## overflowPopupOpen
+
+The [overflowPopupOpen](../api/ribbon/ribbonModel/#overflowpopupopen) event is triggered while opening the overflow popup.
+
+## overflowPopupClose
+
+The [overflowPopupClose](../api/ribbon/ribbonModel/#overflowpopupclose) event is triggered while closing the overflow popup.
+
+The following code example demonstrates the ribbon rendered with `overflowPopupOpen` and `overflowPopupClose` events.
+
+```typescript
+import { Ribbon, RibbonTabModel, RibbonItemType, OverflowPopupEventArgs, RibbonLayout } from "@syncfusion/ej2-ribbon";
+
+let tabs: RibbonTabModel[] = [{
+    header: "Home",
+    groups: [{
+        header: "Clipboard",
+        collections: [
+          {
+            items: [{
+                type: RibbonItemType.Button,
+                buttonSettings: {
+                    content: "Cut",
+                    iconCss: "e-icons e-cut"
+                }
+            }]
+        }]
+    }]
+}];
+
+let ribbon: Ribbon = new Ribbon({
+  activeLayout: RibbonLayout.Simplified,
+  tabs: tabs,
+  overflowPopupOpen: (args: OverflowPopupEventArgs) => {
+    // Your required action here
+  },
+  overflowPopupClose: (args: OverflowPopupEventArgs) => {
+    // Your required action here
+  },
+});
+ribbon.appendTo('#ribbon');
 ```
 
 ## Button item events
@@ -1305,7 +1348,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeClick
 
-The [beforeClick](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonGroupButtonItemModel/#beforeclick) event is triggered before selecting a button from the groupbutton items.
+The [beforeClick](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonGroupButtonItemModel/#beforeclick) event is triggered before selecting a button from the GroupButton items.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType, BeforeClickGroupButtonEventArgs } from "@syncfusion/ej2-ribbon";
@@ -1362,7 +1405,7 @@ ribbon.appendTo("#ribbon");
 
 ### click
 
-The [click](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonGroupButtonItemModel/#click) event is triggered when selecting a button from the groupbutton items.
+The [click](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonGroupButtonItemModel/#click) event is triggered when selecting a button from the GroupButton items.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType, ClickGroupButtonEventArgs } from "@syncfusion/ej2-ribbon";

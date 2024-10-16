@@ -2,7 +2,7 @@
  * TreeGrid DataSource
  */
 
-window.sampleData =  [
+var sampleData =  [
     {
         taskID: 1,
         taskName: 'Planning',

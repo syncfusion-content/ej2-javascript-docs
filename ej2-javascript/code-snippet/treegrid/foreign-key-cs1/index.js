@@ -1,7 +1,7 @@
 ej.treegrid.TreeGrid.Inject(ej.treegrid.Edit,ej.treegrid.Toolbar);
 
 var treegrid = new ej.treegrid.TreeGrid({
-  dataSource: window.textdata,
+  dataSource: var textdata,
   childMapping: "Children",
   treeColumnIndex: 1,
   height: 269,
@@ -22,7 +22,7 @@ var treegrid = new ej.treegrid.TreeGrid({
     { field: "EmployeeID", headerText: "EmployeeID", textAlign: "Right", editType: "dropdownedit",
       edit: {
         params: {
-          dataSource: new ej.data.DataManager(window.dropData),
+          dataSource: new ej.data.DataManager(var dropData),
           fields: { text: "EmployeeName", value: "EmployeeID" },
           query: new ej.data.Query()
         }

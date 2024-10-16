@@ -54,7 +54,7 @@ let fieldListObj: PivotFieldList = new PivotFieldList({
     },
     renderMode: 'Fixed',
     load: (): void => {
-        this.pivotGridModule = pivotObj;
+        fieldListObj.pivotGridModule = pivotObj;
         //Assigning report to pivot table component.
         pivotObj.dataSourceSettings = fieldListObj.dataSourceSettings;
         //Generating page settings based on pivot table component’s size.

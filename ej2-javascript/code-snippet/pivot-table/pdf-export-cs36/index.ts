@@ -30,7 +30,7 @@ let exportBtn: Button = new Button({ isPrimary: true });
 exportBtn.appendTo('#pdf');
 
 document.getElementById('pdf').onclick = function () {
-    pivotTableObj.pdfExportModule.exportToPDF();
+    pivotTableObj.pdfExport();
 };
 
 

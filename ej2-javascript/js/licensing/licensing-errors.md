@@ -25,7 +25,7 @@ The following error message will be shown if a Syncfusion license key has not be
 
 **Solution:**
 
-* If you use JavaScript(ES5) components through syncfusion installer, you can choose from the options listed below
+* If you use JavaScript(ES5) controls through syncfusion installer, you can choose from the options listed below
 
 1. If you **have a valid Syncfusion license**, you can **generate a license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
 
@@ -51,7 +51,7 @@ If the application is registered with an invalid key, another version of license
 
 **Solution:**
 
-* If you use JavaScript(ES5) components through syncfusion installer, you can choose from the options listed below
+* If you use JavaScript(ES5) controls through syncfusion installer, you can choose from the options listed below
 
 1. If you have a valid Syncfusion license, you can **generate a license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
 
@@ -79,7 +79,7 @@ The following error message will be shown if a Syncfusion license key has not be
 
 **Solution:**
 
-* If you use JavaScript (ES5) components through syncfusion installer, you can choose from the options listed below
+* If you use JavaScript (ES5) controls through syncfusion installer, you can choose from the options listed below
 
 1. If you **have a valid Syncfusion license**, you can **generate a license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
 
@@ -103,7 +103,7 @@ If the application is registered with an invalid key, another version of license
 
 **Solution:**
 
-* If you use JavaScript (ES5) components through syncfusion installer, you can choose from the options listed below
+* If you use JavaScript (ES5) controls through syncfusion installer, you can choose from the options listed below
 
 1. If you have a valid Syncfusion license, you can **generate a license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
 
@@ -115,7 +115,7 @@ If the application is registered with an invalid key, another version of license
 
 4. If you **do not already have a Syncfusion account**, you can create one here and [purchase a license](https://www.syncfusion.com/sales/products) or [start your 30-day free trial](https://www.syncfusion.com/account/manage-trials/start-trials). Then you can **generate the trial license key for a specific version and product** from [this page](https://www.syncfusion.com/account/manage-trials/downloads).
 
-* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/javascript/javascript/documentation/licensing/license-key-registration/) for information on registering the license key.
+* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration) for information on registering the license key.
 
 ### Trial expired
 
@@ -137,7 +137,7 @@ If the application is registered with another platform’s license key, the foll
 
 **Solution:**
 
-* License keys are version and product specific. So, if you use JavaScript (ES5) components through syncfusion installer, you can choose from the options listed below
+* License keys are version and product specific. So, if you use JavaScript (ES5) controls through syncfusion installer, you can choose from the options listed below
 
 1. If you have a valid Syncfusion license, you can **generate a license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
 
@@ -147,7 +147,7 @@ If the application is registered with another platform’s license key, the foll
 
 3. If you **have a Syncfusion account but no active trials**, [purchase a license](https://www.syncfusion.com/sales/products) or [start your 30-day free trial](https://www.syncfusion.com/account/manage-trials/start-trials). Then you can **generate the trial license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
 
-* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/javascript/javascript/documentation/licensing/license-key-registration/) for information on registering the license key.
+* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration) for information on registering the license key.
 
 ### Version mismatch
 
@@ -159,7 +159,7 @@ If the application is registered with another version’s license key, the follo
 
 **Solution:**
 
-* License keys are version and product specific. So, if you use JavaScript (ES5) components through syncfusion installer, you can choose from the options listed below
+* License keys are version and product specific. So, if you use JavaScript (ES5) controls through syncfusion installer, you can choose from the options listed below
 
 1. If you have a valid Syncfusion license, you can **generate a license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
 
@@ -170,3 +170,76 @@ If the application is registered with another version’s license key, the follo
 3. If you **have a Syncfusion account but no active trials**, [purchase a license](https://www.syncfusion.com/sales/products) or [start your 30-day free trial](https://www.syncfusion.com/account/manage-trials/start-trials). Then you can **generate the trial license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
 
 * In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration/) for information on registering the license key.
+
+## License key validation errors using the npx command
+
+### Invalid key
+
+If you are using `npx syncfusion-license activate` command with an invalid license key structure, the following console error message will appear in the CI or terminal.
+
+**Error message:** <br /> (Error) License key is not valid.
+
+**Solution:**
+
+* If you use EJ2-Javascript controls through syncfusion installer, you can choose from the options listed below
+
+1. If you have a valid Syncfusion license, you can **generate a license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
+
+   ![Get Community License Key](images/get-community-license-key.png)
+
+2. If you have a Syncfusion account and an active trial, you can **generate the trial license key for a specific version and product** from [this page](https://www.syncfusion.com/account/manage-trials/downloads).
+
+3. If you **have a Syncfusion account but no active trials**, [purchase a license](https://www.syncfusion.com/sales/products) or [start your 30-day free trial](https://www.syncfusion.com/account/manage-trials/start-trials). Then you can **generate the trial license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
+
+4. If you **do not already have a Syncfusion account**, you can create one here and [purchase a license](https://www.syncfusion.com/sales/products) or [start your 30-day free trial](https://www.syncfusion.com/account/manage-trials/start-trials). Then you can **generate the trial license key for a specific version and product** from [this page](https://www.syncfusion.com/account/manage-trials/downloads).
+
+* In your application, register the generated license key using the npx command. Please refer to this [help topic](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration/) for information on registering the license key.
+
+
+### Version Mismatch
+
+If the application is activated with a license key from another version, the following error message will be shown in the terminal while using the npx command in the CI or terminal.
+
+**Error message:** <br /> The key entered is for `23.*.*` version, please enter the key for `27.*.*` version.
+
+**Solution:**
+
+* License keys are version, platform and product specific. So, if you use EJ2 Javascript controls through syncfusion installer, you can choose from the options listed below
+
+1. If you have a valid Syncfusion license, you can **generate a license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
+
+   ![Get Community License Key](images/get-community-license-key.png)
+
+2. If you have a Syncfusion account and an active trial, you can **generate the trial license key for a specific version and product** from [this page](https://www.syncfusion.com/account/manage-trials/downloads).
+
+3. If you **have a Syncfusion account but no active trials**, [purchase a license](https://www.syncfusion.com/sales/products) or [start your 30-day free trial](https://www.syncfusion.com/account/manage-trials/start-trials). Then you can **generate the trial license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
+
+* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration/) for information on registering the license key.
+
+### Platform Mismatch
+
+If the application is activated with another platform’s license key, the following error message will be shown in the terminal while using the npx command in the CI or terminal.
+
+**Error message:** <br /> (Error) License key is not valid.
+
+**Solution:**
+
+* License keys are version, platform and product specific. So, if you use EJ2 Javascript controls through syncfusion installer, you can choose from the options listed below
+
+1. If you have a valid Syncfusion license, you can **generate a license key for a specific version and platform** from [this page](https://www.syncfusion.com/account/downloads).
+
+   ![Get Community License Key](images/get-community-license-key.png)
+
+2. If you have a Syncfusion account and an active trial, you can **generate the trial license key for a specific version and platform** from [this page](https://www.syncfusion.com/account/manage-trials/downloads).
+
+3. If you **have a Syncfusion account but no active trials**, [purchase a license](https://www.syncfusion.com/sales/products) or [start your 30-day free trial](https://www.syncfusion.com/account/manage-trials/start-trials). Then you can **generate the trial license key for a specific version and platform** from [this page](https://www.syncfusion.com/account/downloads).
+
+* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration/) for information on registering the license key.
+
+### Trial Expired
+
+If the trial key has expired after 30 days, the following error message will be shown in the terminal while using the npx command in the CI or terminal.
+
+**Error message:** <br /> The included Syncfusion license key has expired.
+
+**Solution:** <br /> Purchase from [here](https://www.syncfusion.com/sales/products) to get a valid Syncfusion license.

@@ -2,7 +2,7 @@
  * TreeGrid DataSource
  */
 
-export var summaryRowData = [{
+ var summaryRowData = [{
     'FreightID': 'CX2389NK',
     'FreightName': 'Maersk Edibles Co.',
     'TotalUnits': 598,
@@ -111,7 +111,7 @@ export var summaryRowData = [{
         }
 ];
 
-export var summaryData = [
+ var summaryData = [
     {
         ID: '1',
         Name: 'Order 1',
@@ -154,7 +154,7 @@ export var summaryData = [
     }
 
 ];
-export var sampleData =  [
+ var sampleData =  [
     {
         taskID: 1,
         taskName: 'Planning',
@@ -316,7 +316,7 @@ export var sampleData =  [
     }
 ];
 
-export var textWrapData = [
+ var textWrapData = [
 {
   taskID: 1,
   taskName: 'Design',
@@ -437,7 +437,7 @@ export var textWrapData = [
 }
 ];
 
-export var textdata = [{
+ var textdata = [{
     'Name': 'Robert King',
     'FullName': 'RobertKing',
     'Designation': 'Chief Executive Officer',
@@ -578,7 +578,7 @@ export var textdata = [{
     }]
 }];
 
-export var headerData = [
+ var headerData = [
     {
         taskID: 1,
         taskName: 'Planning',
@@ -647,7 +647,7 @@ export var headerData = [
      }
 ];
 
-export var stackedData = [
+ var stackedData = [
     {
         orderID: '1',
         orderName: 'Order 1',
@@ -713,7 +713,7 @@ export var stackedData = [
 
 ];
 
-export var formatData = [
+ var formatData = [
     {
         orderID: '1',
         orderName: 'Order 1',
@@ -779,11 +779,11 @@ export var formatData = [
 
 ];
 
-export var lockRowDropDownData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+ var lockRowDropDownData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
 31, 32, 33, 34, 35, 36];
 
-export var projectData = [
+ var projectData = [
     { 'TaskID': 1, 'TaskName': 'Parent Task 1', 'StartDate': new Date('02/23/2017'), 'Duration': 3, 'Priority' : 'Normal',
     'EndDate': new Date('02/27/2017'), 'Progress': '40' },
     { 'TaskID': 2, 'TaskName': 'Child Task 1', 'StartDate': new Date('02/23/2017'), 'Duration': 4, 'Priority' : 'Low',
@@ -816,7 +816,7 @@ export var projectData = [
     'EndDate': new Date('03/13/2017'), 'Progress': '40', 'parentID': 10 }
 ];
 
-export var lineData = [
+ var lineData = [
     [0, 6, 4, 1, 3, 2, 5],
     [5, 4, 6, 3, 1, 2, 0],
     [6, 4, 0, 3, 2, 5, 1],
@@ -839,7 +839,7 @@ export var lineData = [
     [3, 5, 6, 4, 0, 1, 2],
     [1, 3, 4, 2, 5, 0, 6]
 ];
-export var columnData = [
+ var columnData = [
     [0, 6, -4, 1, -3, 2, 5],
     [5, -4, 6, 3, -1, 2, 0],
     [6, 4, 0, 3, -2, 5, 1],
@@ -864,7 +864,7 @@ export var columnData = [
 ];
 
 
-export var getSparkData =(type, count) =>{
+ var getSparkData =(type, count) =>{
     if (type === 'line') {
         return lineData[count];
     }
@@ -874,7 +874,7 @@ export var getSparkData =(type, count) =>{
 }
 
 
-export var sortData = [
+ var sortData = [
     {
         orderID: '1',
         orderName: 'Order 1',
@@ -940,7 +940,7 @@ export var sortData = [
 
 ];
 
-export var complexData =  [
+ var complexData =  [
     {
         taskID: 1,
         taskName: 'Planning',
@@ -987,7 +987,7 @@ export var complexData =  [
     }
 ];
 
-export var stringData =  [
+ var stringData =  [
     {
         taskID: 1,
         taskName: 'Planning',

@@ -2,7 +2,7 @@
  * TreeGrid DataSource
  */
 
-window.summaryRowData = [{
+var summaryRowData = [{
     'FreightID': 'CX2389NK',
     'FreightName': 'Maersk Edibles Co.',
     'TotalUnits': 598,
@@ -111,7 +111,7 @@ window.summaryRowData = [{
         }
 ];
 
-window.summaryData = [
+var summaryData = [
     {
         ID: '1',
         Name: 'Order 1',
@@ -154,7 +154,7 @@ window.summaryData = [
     }
 
 ];
-window.sampleData =  [
+var sampleData =  [
     {
         taskID: 1,
         taskName: 'Planning',
@@ -316,7 +316,7 @@ window.sampleData =  [
     }
 ];
 
-window.textWrapData = [
+var textWrapData = [
 {
   taskID: 1,
   taskName: 'Design',
@@ -437,7 +437,7 @@ window.textWrapData = [
 }
 ];
 
-window.textdata = [{
+var textdata = [{
     'Name': 'Robert King',
     'FullName': 'RobertKing',
     'Designation': 'Chief Executive Officer',
@@ -566,7 +566,7 @@ window.textdata = [{
     }]
 }];
 
-window.headerData = [
+var headerData = [
     {
         taskID: 1,
         taskName: 'Planning',
@@ -635,7 +635,7 @@ window.headerData = [
      }
 ];
 
-window.stackedData = [
+var stackedData = [
     {
         orderID: '1',
         orderName: 'Order 1',
@@ -701,7 +701,7 @@ window.stackedData = [
 
 ];
 
-window.formatData = [
+var formatData = [
     {
         orderID: '1',
         orderName: 'Order 1',
@@ -767,11 +767,11 @@ window.formatData = [
 
 ];
 
-window.lockRowDropDownData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+var lockRowDropDownData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
 31, 32, 33, 34, 35, 36];
 
-window.projectData = [
+var projectData = [
     { 'TaskID': 1, 'TaskName': 'Parent Task 1', 'StartDate': new Date('02/23/2017'), 'Duration': 3, 'Priority' : 'Normal',
     'EndDate': new Date('02/27/2017'), 'Progress': '40' },
     { 'TaskID': 2, 'TaskName': 'Child Task 1', 'StartDate': new Date('02/23/2017'), 'Duration': 4, 'Priority' : 'Low',
@@ -804,7 +804,7 @@ window.projectData = [
     'EndDate': new Date('03/13/2017'), 'Progress': '40', 'parentID': 10 }
 ];
 
-window.lineData = [
+var lineData = [
     [0, 6, 4, 1, 3, 2, 5],
     [5, 4, 6, 3, 1, 2, 0],
     [6, 4, 0, 3, 2, 5, 1],
@@ -827,7 +827,7 @@ window.lineData = [
     [3, 5, 6, 4, 0, 1, 2],
     [1, 3, 4, 2, 5, 0, 6]
 ];
-window.columnData = [
+var columnData = [
     [0, 6, -4, 1, -3, 2, 5],
     [5, -4, 6, 3, -1, 2, 0],
     [6, 4, 0, 3, -2, 5, 1],
@@ -850,7 +850,7 @@ window.columnData = [
     [3, 5, 6, -4, 0, 1, 2],
     [1, 3, -4, 2, -5, 0, 6]
 ];
-window.sortData = [
+var sortData = [
     {
         orderID: '1',
         orderName: 'Order 1',
@@ -916,7 +916,7 @@ window.sortData = [
 
 ];
 
-window.complexData =  [
+var complexData =  [
     {
         taskID: 1,
         taskName: 'Planning',
@@ -963,7 +963,7 @@ window.complexData =  [
     }
 ];
 
-window.stringData =  [
+var stringData =  [
     {
         taskID: 1,
         taskName: 'Planning',

@@ -21,7 +21,8 @@ let pivotTableObj: PivotView = new PivotView({
          type: 'Column'
         }
     },
-    height: 320
+    height: 320,
+    allowPdfExport: true,
 });
 pivotTableObj.appendTo('#PivotTable');
 
@@ -31,7 +32,3 @@ exportBtn.appendTo('#chartexport');
 document.getElementById('chartexport').addEventListener('click', () => {
     pivotTableObj.chartExport('PNG', 'result');
 });
-
-
-
-

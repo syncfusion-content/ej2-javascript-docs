@@ -3,7 +3,7 @@ ej.treegrid.TreeGrid.Inject(ej.treegrid.Edit,ej.treegrid.Toolbar);
 var PriorityData = ej.data.DataUtil.distinct(projectData, "Priority", true);
 
 var treegrid = new ej.treegrid.TreeGrid({
-  dataSource: window.projectData,
+  dataSource: var projectData,
   idMapping: "TaskID",
   idMapping: "TaskID",
   parentIdMapping: "parentID",

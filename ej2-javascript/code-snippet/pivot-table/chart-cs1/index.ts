@@ -22,7 +22,7 @@ let pivotObj: PivotView = new PivotView({
   width: '100%',
   height: 290,
   dataBound: () => {
-        if (onInit) {
+        if (onInit && pivotObj.grid.getRows().length > 1) {
             for (let value of pivotObj.dataSourceSettings.values) {
                 measureList[value.name] = value.caption || value.name;
             }

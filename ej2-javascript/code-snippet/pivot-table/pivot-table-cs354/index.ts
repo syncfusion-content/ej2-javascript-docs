@@ -1,8 +1,8 @@
-
-
-import { PivotView, IDataSet } from '@syncfusion/ej2-pivotview';
+import { PivotView, IDataSet, ExcelExport } from '@syncfusion/ej2-pivotview';
 import { pivotData } from './datasource.ts';
-
+import { Button } from '@syncfusion/ej2-buttons';
+import { ExcelHeaderQueryCellInfoEventArgs, ExcelQueryCellInfoEventArgs } from '@syncfusion/ej2-grids';
+PivotView.Inject(ExcelExport);
 let pivotTableObj: PivotView = new PivotView({
     dataSourceSettings: {
         dataSource: pivotData as IDataSet[],
@@ -19,8 +19,14 @@ let pivotTableObj: PivotView = new PivotView({
             //triggers every time for header cell while exporting
         }
     },
+    allowExcelExport: true,
     height: 350
 });
 pivotTableObj.appendTo('#PivotTable');
 
+let exportBtn: Button = new Button({ isPrimary: true });
+exportBtn.appendTo('#excel');
 
+document.getElementById('excel').onclick = function () {
+    pivotTableObj.excelExport();
+};

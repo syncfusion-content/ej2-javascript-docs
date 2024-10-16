@@ -1,7 +1,7 @@
 ej.treegrid.TreeGrid.Inject(ej.treegrid.DetailRow);
 
 var instance = new ej.base.Internationalization();
-    window.format = function (value) {
+    var format = function (value) {
         return instance.formatDate(value, { skeleton: 'yMd', type: 'date' });
     };
 

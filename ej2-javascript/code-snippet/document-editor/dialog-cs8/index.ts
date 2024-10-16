@@ -1,9 +1,9 @@
 
 
 
-import { DocumentEditor, Editor, Selection, StyleDialog, StylesDialog, SfdtExport, } from '@syncfusion/ej2-documenteditor';
+import { DocumentEditor, Editor, Selection, StyleDialog, StylesDialog, SfdtExport, EditorHistory } from '@syncfusion/ej2-documenteditor';
 
-DocumentEditor.Inject(Editor, Selection, SfdtExport, StyleDialog, StylesDialog);
+DocumentEditor.Inject(Editor, Selection, SfdtExport, StyleDialog, StylesDialog, EditorHistory);
 
 let documenteditor: DocumentEditor = new DocumentEditor({
     isReadOnly: false,
@@ -12,6 +12,7 @@ let documenteditor: DocumentEditor = new DocumentEditor({
     enableStyleDialog: true,
     enableSfdtExport: true,
     enableStylesDialog: true,
+    enableEditorHistory: true,
     height: '370px'
 });
 

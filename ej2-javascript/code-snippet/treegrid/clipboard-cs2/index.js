@@ -1,6 +1,6 @@
 ej.treegrid.TreeGrid.Inject(ej.treegrid.Toolbar, ej.treegrid.Edit, ej.treegrid.Selection);
 var treeGridObj = new ej.treegrid.TreeGrid({
-    dataSource: window.sampleData,
+    dataSource: var sampleData,
     childMapping: 'subtasks',
     allowSelection: true,
     enableAutoFill: true,

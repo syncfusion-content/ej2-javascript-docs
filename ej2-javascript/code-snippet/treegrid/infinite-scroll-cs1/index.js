@@ -1,7 +1,7 @@
 ej.treegrid.TreeGrid.Inject(ej.treegrid.InfiniteScroll);
-window.dataSource();
+var dataSource();
 var treegrid = new ej.treegrid.TreeGrid({
-        dataSource: window.virtualData,
+        dataSource: var virtualData,
         enableInfiniteScrolling: true,
         pageSettings: { pageSize: 50 },
         height: 317,

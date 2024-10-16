@@ -1,7 +1,7 @@
 ej.treegrid.TreeGrid.Inject(ej.treegrid.CommandColumn);
 
 var treeGrid = new ej.treegrid.TreeGrid({
-  dataSource: window.sampleData,
+  dataSource: var sampleData,
   childMapping: "subtasks",
   treeColumnIndex: 1,
   height: 280,

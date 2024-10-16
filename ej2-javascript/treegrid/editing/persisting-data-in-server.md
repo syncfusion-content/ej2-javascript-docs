@@ -248,7 +248,7 @@ import { DataManager, RemoteSaveAdaptor } from '@syncfusion/ej2-data';
 TreeGrid.Inject(Edit, Toolbar);
 
 let dataSource: DataManager = new DataManager({
-    json: window.griddata,
+    json:window.griddata,
     updateUrl: "Home/Update",
     insertUrl: "Home/Insert",
     removeUrl: "Home/Delete",

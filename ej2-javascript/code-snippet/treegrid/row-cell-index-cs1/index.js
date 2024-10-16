@@ -1,5 +1,5 @@
 var treeGrid = new ej.treegrid.TreeGrid({
-  dataSource: window.projectData,
+  dataSource: var projectData,
   idMapping: "TaskID",
   parentIdMapping: "parentID",
   treeColumnIndex: 1,

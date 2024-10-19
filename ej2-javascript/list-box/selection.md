@@ -123,4 +123,4 @@ To select all the items in the list box, [`showSelectAll`](../api/list-box/selec
 
 ## See Also
 
-* [How to select items in list box](./icons-and-templates/#Select-items-to-the-list-box)
+* [How to select items in list box](./icons-and-templates#Select-items-to-the-list-box)

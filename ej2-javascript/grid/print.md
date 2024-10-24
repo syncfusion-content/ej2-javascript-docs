@@ -333,6 +333,39 @@ Here is an example of how to print grid along with chart control:
 {% previewsample "page.domainurl/code-snippet/grid/print-component-cs1" %}
 {% endif %}
 
+## Add a title when using Grid print function
+
+You can add a title to the header when printing the Syncfusion Grid by utilizing the [beforePrint](../api/grid/#beforeprint) event. This event allows you to customize the print layout, including the addition of a title element, ensuring that the printed document is informative and visually appealing.
+
+Here’s an example of how to add a title to your Grid when using the print function:
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/titleprint-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/titleprint-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/titleprint-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/titleprint-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/titleprint-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/titleprint-cs1" %}
+{% endif %}
+
 ## See Also
 
 * [How to Print the expanded state grid from all pages](./how-to#print-the-expanded-state-from-other-pages)

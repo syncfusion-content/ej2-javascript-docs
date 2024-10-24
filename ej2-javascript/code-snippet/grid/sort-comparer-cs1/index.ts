@@ -1,5 +1,3 @@
-
-
 import { Grid, Sort, Page, SortEventArgs  } from '@syncfusion/ej2-grids';
 import { OrderData } from './datasource.ts';
 

@@ -355,6 +355,39 @@ The following example demonstrates how to export hierarchical grid to PDF docume
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs211" %}
 {% endif %}
 
+## Merge duplicate cells in specific column and export in Grid
+
+You can merge duplicate cells (based on their values) in a specific column of the Syncfusion Grid. This can be achieved by utilizing the [dataBound](../../api/grid/#databound) event. Additionally, you can merge duplicate cells in the specified column during export by using the [pdfQueryCellInfo](../../api/grid/#pdfquerycellinfo) event for PDF format. This functionality is useful for improving the readability of your data and providing a clearer visual representation.
+
+Here’s an example demonstrating how to merge duplicate cells in the **OrderID** column in both Grid view and export:
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/custom-cellmerge-export-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/custom-cellmerge-export-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/custom-cellmerge-export-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/custom-cellmerge-export-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/custom-cellmerge-export-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/custom-cellmerge-export-cs1" %}
+{% endif %}
+
 ## Remove header row while exporting
 
 When exporting data from the Syncfusion ##Platform_Name## Grid, you have an option to remove the header row from the exported file. This can be useful when you want to export grid data without including the header values in the exported document.

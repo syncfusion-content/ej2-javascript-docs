@@ -1,6 +1,6 @@
 
 
-import { Grid, Edit, Toolbar, EditEventArgs, EJ2Intance } from '@syncfusion/ej2-grids';
+import { Grid, Edit, Toolbar } from '@syncfusion/ej2-grids';
 import { Button } from '@syncfusion/ej2-buttons';
 import { data } from './datasource.ts';
 

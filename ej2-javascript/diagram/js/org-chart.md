@@ -15,7 +15,7 @@ An organizational chart is a diagram that displays the structure of an organizat
 
 ## Organizational chart with DataSource
 
-The following code example illustrates how to create an organizational chart with DataScource.
+The following code example illustrates how to create an organizational chart with DataSource.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

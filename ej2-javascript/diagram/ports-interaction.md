@@ -9,6 +9,8 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
+# Ports interaction in ##Platform_Name## Diagram control | Syncfusion
+
 ## Draw connector from port
 
 The port can be used to create connector by enabling `Draw` constraints to the [`constraints`](../api/diagram/portconstraints/) property. By default, the connector segment type is set to **Orthogonal**.
@@ -45,11 +47,11 @@ The following code explains how to draw the connector by using the port constrai
 
 ### Draw different connector types from port
 
-You can change the default connector type while drawing the connector from the port by setting the specific connector type in connector defauults. This enables the drawing of various connector types from the port, including:
+You can change the default connector type while drawing the connector from the port by setting the specific connector type in connector defaults. This enables the drawing of various connector types from the port, including:
 
-* Staright
+* Straight
 * Bezier
-* Orthagonal
+* Orthogonal
 
 The following code explains how to draw different connectors by using the port constraints.
 

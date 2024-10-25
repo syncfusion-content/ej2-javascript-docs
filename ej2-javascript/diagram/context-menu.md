@@ -122,7 +122,7 @@ In certain situations, you may want to hide specific menu items based on the sel
 
 ### Context menu with Url
 
-[`url`](../api/diagram/contextMenuItemModel/#url) property of the menu item is used to set the url of any website which will be opened upon clicking on them. The follwoing example shows the context menu with ulr for three websites.
+[`url`](../api/diagram/contextMenuItemModel/#url) property of the menu item is used to set the url of any website which will be opened upon clicking on them. The following example shows the context menu with url for three websites.
 
 {% if page.publishingplatform == "typescript" %}
 

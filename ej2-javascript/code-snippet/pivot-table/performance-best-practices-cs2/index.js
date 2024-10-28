@@ -1,6 +1,6 @@
 var pivotTableObj = new ej.pivotview.PivotView({
     dataSourceSettings: {
-        dataSource: Group_Data,
+        dataSource: gData,
     expandAll: false,
     enableSorting: true,
     columns: [{ name: 'Product_ID', caption: 'Product ID' }],

@@ -1,76 +1,137 @@
 var gData = [
-        {
-            'Date': '1/1/2015 20:18:15 GMT+0530 (India Standard Time)',
-            'Product_Categories': 'Accessories',
-            'Product_ID': 1001,
-            'Sold': 2
-        },
-        {
-            'Date': '1/1/2015 20:18:15 GMT+0530 (India Standard Time)',
-            'Product_Categories': 'Accessories',
-            'Product_ID': 1002,
-            'Sold': 3
-        },
-        {
-            'Date': '1/1/2015 20:18:15 GMT+0530 (India Standard Time)',
-            'Product_Categories': 'Accessories',
-            'Product_ID': 1003,
-            'Sold': 5
-        },
-        {
-            'Date': '1/1/2015 20:18:15 GMT+0530 (India Standard Time)',
-            'Product_Categories': 'Bikes',
-            'Product_ID': 1004,
-            'Sold': 1
-        },
-        {
-            'Date': '1/1/2015 20:18:15 GMT+0530 (India Standard Time)',
-            'Product_Categories': 'Bikes',
-            'Product_ID': 1005,
-            'Sold': 1
-        },
-        {
-            'Date': '1/1/2015 20:18:15 GMT+0530 (India Standard Time)',
-            'Product_Categories': 'Clothings',
-            'Product_ID': 1007,
-            'Sold': 2
-        },
-        {
-            'Date': '1/1/2015 20:18:15 GMT+0530 (India Standard Time)',
-            'Product_Categories': 'Clothings',
-            'Product_ID': 1008,
-            'Sold': 1
-        },
-        {
-            'Date': '1/1/2015 20:18:15 GMT+0530 (India Standard Time)',
-            'Product_Categories': 'Clothings',
-            'Product_ID': 1009,
-            'Sold': 3
-        },
-        {
-            'Date': '1/5/2015 20:19:15 GMT+0530 (India Standard Time)',
-            'Product_Categories': 'Accessories',
-            'Product_ID': 1003,
-            'Sold': 3
-        },
-        {
-            'Date': '2/2/2015 10:22:07 GMT+0530 (India Standard Time)',
-            'Product_Categories': 'Accessories',
-            'Product_ID': 1002,
-            'Sold': 4
-        },
-        {
-            'Date': '2/10/2015 10:23:07 GMT+0530 (India Standard Time)',
-            'Product_Categories': 'Accessories',
-            'Product_ID': 1002,
-            'Sold': 1
-        },
-        {
-            'Date': '12/2/2018 16:05:33 GMT+0530 (India Standard Time)',
-            'Product_Categories': 'Accessories',
-            'Product_ID': 1003,
-            'Sold': 3
-        }
+    {
+        'Date': '1/1/2015 20:18:15 GMT+0530 (India Standard Time)',
+        'Product_Categories': 'Accessories',
+        'Product_ID': 1001,
+        'Sold': 2
+
+    },
+    {
+        'Date': '1/1/2015 20:18:15 GMT+0530 (India Standard Time)',
+        'Product_Categories': 'Accessories',
+        'Product_ID': 1002,
+        'Sold': 3
+
+    },
+    {
+        'Date': '1/1/2015 20:18:15 GMT+0530 (India Standard Time)',
+        'Product_Categories': 'Accessories',
+        'Product_ID': 1003,
+        'Sold': 5
+
+    },
+    {
+        'Date': '1/1/2015 20:18:15 GMT+0530 (India Standard Time)',
+        'Product_Categories': 'Bikes',
+        'Product_ID': 1004,
+        'Sold': 1
+
+    },
+    {
+        'Date': '1/1/2016 20:18:15 GMT+0530 (India Standard Time)',
+        'Product_Categories': 'Bikes',
+        'Product_ID': 1005,
+        'Sold': 1
+
+    },
+    {
+        'Date': '1/1/2016 20:18:15 GMT+0530 (India Standard Time)',
+        'Product_Categories': 'Clothings',
+        'Product_ID': 1001,
+        'Sold': 2
+
+    },
+    {
+        'Date': '1/1/2016 20:18:15 GMT+0530 (India Standard Time)',
+        'Product_Categories': 'Clothings',
+        'Product_ID': 1002,
+        'Sold': 1
+
+    },
+    {
+        'Date': '1/1/2016 20:18:15 GMT+0530 (India Standard Time)',
+        'Product_Categories': 'Clothings',
+        'Product_ID': 1003,
+        'Sold': 3
+    },
+    {
+        'Date': '2/2/2016 10:22:07 GMT+0530 (India Standard Time)',
+        'Product_Categories': 'Bikes',
+        'Product_ID': 1004,
+        'Sold': 2
+
+    },
+    {
+        'Date': '2/10/2016 10:23:07 GMT+0530 (India Standard Time)',
+        'Product_Categories': 'Bikes',
+        'Product_ID': 1005,
+        'Sold': 4
+    },
+    {
+        'Date': '9/1/2017 04:14:43 GMT+0530 (India Standard Time)',
+        'Product_Categories': 'Bikes',
+        'Product_ID': 1001,
+        'Sold': 1
+    },
+    
+    {
+        'Date': '9/29/2017 05:14:43 GMT+0530 (India Standard Time)',
+        'Product_Categories': 'Clothings',
+        'Product_ID': 1002,
+        'Sold': 3
+    },
+    {
+        'Date': '9/05/2017 05:14:43 GMT+0530 (India Standard Time)',
+        'Product_Categories': 'Bikes',
+        'Product_ID': 1003,
+        'Sold': 2
+    },
+    {
+        'Date': '9/12/2017 04:14:43 GMT+0530 (India Standard Time)',
+        'Product_Categories': 'Accessories',
+        'Product_ID': 1004,
+        'Sold': 3
+    },
+    {
+        'Date': '9/25/2017 04:15:43 GMT+0530 (India Standard Time)',
+        'Product_Categories': 'Accessories',
+        'Product_ID': 1005,
+        'Sold': 2
+    },
+    {
+        'Date': '9/29/2017 05:14:43 GMT+0530 (India Standard Time)',
+        'Product_Categories': 'Clothings',
+        'Product_ID': 1006,
+        'Sold': 7
+    },
+    {
+        'Date': '1/3/2018 17:26:11 GMT+0530 (India Standard Time)',
+        'Product_Categories': 'Accessories',
+        'Product_ID': 1004,
+        'Sold': 5
+
+    },
+    {
+        'Date': '1/4/2018 15:26:11 GMT+0530 (India Standard Time)',
+        'Product_Categories': 'Accessories',
+        'Product_ID': 1001,
+        'Sold': 4
+
+    },
+    {
+        'Date': '1/5/2018 17:30:11 GMT+0530 (India Standard Time)',
+        'Product_Categories': 'Accessories',
+        'Product_ID': 1002,
+        'Sold': 3
+
+    },
+    {
+        'Date': '1/8/2018 07:26:11 GMT+0530 (India Standard Time)',
+        'Product_Categories': 'Accessories',
+        'Product_ID': 1003,
+        'Sold': 2
+
+    },
     ];
 
     var Group_Data = getGroupData(gData);

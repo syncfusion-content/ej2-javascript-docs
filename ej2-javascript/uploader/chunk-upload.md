@@ -192,46 +192,87 @@ The following example explains about chunk upload with cancel support.
 The server-side implementation entirely depends on the application requirements and logic. The following code snippet provides the server-side logic to handle the chunk upload using the uploader components.
 
 ```c#
-public async Task<IActionResult> Save(IFormFile UploadFiles) // Save the uploaded file
-{
-    if (UploadFiles.Length > 0)
-    {
-        if (!Directory.Exists(uploads)) //Create directory if not exists
-        {
-            Directory.CreateDirectory(uploads);
-                }
+public string uploads = Path.Combine(Directory.GetCurrentDirectory(), "Uploaded Files"); // Set your desired upload directory path
 
-        if (UploadFiles.ContentType == "application/octet-stream") //Handle chunk upload
-            {
-            var filePath = Path.Combine(uploads, UploadFiles.FileName);
-            using (var fileStream = new FileStream(filePath, FileMode.Append))
-                {
-                await UploadFiles.CopyToAsync(fileStream);
-                }
-                }
-        else //Handle normal upload
+public async Task<IActionResult> Save(IFormFile UploadFiles)
+{
+    try
     {
-            var filePath = Path.Combine(uploads, UploadFiles.FileName);
-            using (var fileStream = new FileStream(filePath, FileMode.Create))
-{
-                await UploadFiles.CopyToAsync(fileStream);
+        if (UploadFiles.Length > 0)
+        {
+            // Fetch chunk-index and total-chunk from form data
+            var chunkIndex = Request.Form["chunk-index"];
+            var totalChunk = Request.Form["total-chunk"];
+            var fileName = UploadFiles.FileName;
+
+            // Create upload directory if it doesn't exist
+            if (!Directory.Exists(uploads))
+            {
+                Directory.CreateDirectory(uploads);
+            }
+
+            // Path to save the chunk files with .part extension
+            var tempFilePath = Path.Combine(uploads, fileName + ".part");
+
+            if (chunkIndex == "0")
+            {
+                // If it's the first chunk, create a new file or overwrite existing one
+                using (var fileStream = new FileStream(tempFilePath, FileMode.Create))
+                {
+                    await UploadFiles.CopyToAsync(fileStream);
+                }
+            }
+            else
+            {
+                // Append subsequent chunks to the file
+                using (var fileStream = new FileStream(tempFilePath, FileMode.Append))
+                {
+                    await UploadFiles.CopyToAsync(fileStream);
+                }
+            }
+
+            // If all chunks are uploaded, move the file to the final destination
+            if (Convert.ToInt32(chunkIndex) == Convert.ToInt32(totalChunk) - 1)
+            {
+                var finalFilePath = Path.Combine(uploads, fileName);
+
+                // Move the .part file to the final destination without the .part extension
+                System.IO.File.Move(tempFilePath, finalFilePath);
+            }
+
+            return Ok(new { status = "Chunk uploaded successfully" });
         }
-        }
+
+        return BadRequest(new { status = "No file to upload" });
     }
-    return Ok();
+    catch (Exception ex)
+    {
+        return StatusCode(500, new { status = "Error", message = ex.Message });
     }
-public void Remove(string UploadFiles) // Delete the uploaded file
+}
+
+// Method to handle file removal (optional if needed)
+public async Task<IActionResult> Remove(string UploadFiles)
 {
-    if (UploadFiles != null)
+    try
     {
         var filePath = Path.Combine(uploads, UploadFiles);
+
         if (System.IO.File.Exists(filePath))
         {
-            //Delete the file from server
             System.IO.File.Delete(filePath);
-            }
+            return Ok(new { status = "File deleted successfully" });
+        }
+        else
+        {
+            return NotFound(new { status = "File not found" });
         }
     }
+    catch (Exception ex)
+    {
+        return StatusCode(500, new { status = "Error", message = ex.Message });
+    }
+}
 ```
 
 > You can also explore [JavaScript File Upload](https://www.syncfusion.com/javascript-ui-controls/js-file-upload) feature tour page for its groundbreaking features. You can also explore our [JavaScript File Upload example](https://ej2.syncfusion.com/demos/#/material/uploader/default.html) to understand how to browse the files which you want to upload to the server.

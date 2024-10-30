@@ -13,7 +13,7 @@ var pivotTableObj = new ej.pivotview.PivotView({
     },
     height: 350,
     showFieldList: true,
-    enginePopulated: function (args) {
+    enginePopulating: function (args) {
         args.dataSourceSettings.columns[0].caption = 'Total Population';
         args.dataSourceSettings.emptyCellsTextContent = '###'        
     },

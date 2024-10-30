@@ -1,3 +1,4 @@
+import { pivotData } from './es5-datasource.js';
 var pivotTableObj = new ej.pivotview.PivotView({
     dataSourceSettings: {
         dataSource: pivotData,
@@ -11,6 +12,7 @@ var pivotTableObj = new ej.pivotview.PivotView({
         filters: []
     },
     height: 350,
+    allowPdfExport: true,
     gridSettings: {
         columnWidth: 120,
         pdfHeaderQueryCellInfo: function (args)  {
@@ -20,3 +22,9 @@ var pivotTableObj = new ej.pivotview.PivotView({
 });
 pivotTableObj.appendTo('#PivotTable');
 
+var exportBtn = new ej.buttons.Button({ isPrimary: true });
+exportBtn.appendTo('#pdf');
+
+document.getElementById('pdf').onclick = function () {
+    pivotTableObj.pdfExport();
+};

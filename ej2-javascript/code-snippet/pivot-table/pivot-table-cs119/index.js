@@ -14,8 +14,7 @@ var pivotTableObj = new ej.pivotview.PivotView({
     height: 350,
     showFieldList: true,
     enginePopulated: function (args) {
-        args.dataSourceSettings.columns[0].caption = 'Total Population';
-        args.dataSourceSettings.emptyCellsTextContent = '###' 
+         //triggers after engine is populated
     },
 });
 pivotTableObj.appendTo('#PivotTable');

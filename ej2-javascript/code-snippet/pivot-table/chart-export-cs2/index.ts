@@ -17,10 +17,11 @@ let pivotTableObj: PivotView = new PivotView({
     displayOption: { view: 'Chart' },
     chartSettings: {
         chartSeries: {
-         type: 'Column'
+            type: 'Column'
         }
     },
-    height: 320
+    height: 320,
+    allowPdfExport: true,
 });
 pivotTableObj.appendTo('#PivotTable');
 

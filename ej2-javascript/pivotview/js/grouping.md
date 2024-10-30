@@ -55,16 +55,16 @@ Number grouping allows users to organize data, which is in number format into di
 
 The "**Starting at**" and "**Ending at**" options are used to set the number range depending on which the headers will be grouped. For example, if the "Product_ID" field holds the number from "1001" to "1010" and the user chooses to group the number range by setting "**1004**" to "**Starting at**" and "**1008**" to "**Ending at**" options on their own. Then the specified number range will be used for number grouping and the rest will be grouped as "**Out of Range**".
 
-![output](/images/number-group-settings-range-applied.png "Range options applied for number grouping")
+![output](images/number-group-settings-range-applied.png "Range options applied for number grouping")
 
 ### Range interval
 
 The "**Interval by**" option is used to separate the selected number data type field into range-wise such as 1-5, 6-10, etc.
 For example, if the user wants to display the "Product_ID" data field with a group interval of "**2**" by setting the "**Interval by**" option on their own. The "Product_ID" field will then be grouped by the specified range of intervals, such as "**1004-1005**", "**1006-1007**",etc.
 
-![output](/images/number-group-settings-applied.png "Grouping settings options applied for number grouping")
+![output](images/number-group-settings-applied.png "Grouping settings options applied for number grouping")
 <br/>
-![output](/images/number-group-updated.png "Applied grouping settings updated in pivot table for number grouping")
+![output](images/number-group-updated.png "Applied grouping settings updated in pivot table for number grouping")
 
 Number grouping can also be configured using the [`groupSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/groupSettings/#groupsettings) property through code-behind. The properties required are:
 
@@ -91,7 +91,7 @@ Number grouping can also be configured using the [`groupSettings`](https://ej2.s
 
 By right-clicking the appropriate header and selecting "**Ungroup**" from the context menu in the pivot table component, users can ungroup the applied number grouping.
 
-![output](/images/number-ungroup.png)
+![output](images/number-ungroup.png)
 
 ## Date Grouping
 
@@ -112,7 +112,7 @@ Date grouping allows users to organize data, which is in date format into differ
 
 The "**Starting at**" and "**Ending at**" options are used to set the date range depending on which the headers will be grouped. For example, if the "Date" field holds the date from "01/01/2015" to "02/12/2018" and the user chooses to group the date range by setting "**01/07/2015**" to "**Starting at**" and "**31/07/2017**" to "**Ending at**" options on their own. Then the specified date range will be used for date grouping and the rest will be considered as "**Out of Range**".
 
-![output](/images/date-group-settings-range-applied.png "Range options applied for date grouping")
+![output](images/date-group-settings-range-applied.png "Range options applied for date grouping")
 
 ### Group interval
 
@@ -120,11 +120,11 @@ The "**Interval by**" option is used to separate the selected date fields into y
 
 > When none of the **Interval by** options are chosen, the **OK** button in the dialog will be disabled, meaning that at least one interval option should be selected in order to apply the date grouping.
 
-![output](/images/date-group-settings-interval-applied.png "Group interval option applied for date grouping")
+![output](images/date-group-settings-interval-applied.png "Group interval option applied for date grouping")
 <br/>
-![output](/images/date-group-settings-applied.png "Grouping settings options applied for date grouping")
+![output](images/date-group-settings-applied.png "Grouping settings options applied for date grouping")
 <br/>
-![output](/images/date-group-updated.png "Applied grouping settings updated in pivot table for date grouping")
+![output](images/date-group-updated.png "Applied grouping settings updated in pivot table for date grouping")
 
 Date grouping can also be configured using the [`groupSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/groupSettings/#groupsettings) property through code-behind. The properties required are:
 
@@ -155,7 +155,7 @@ Furthermore, in the field list UI, these date group fields **Years (Date)**, **Q
 
 By right-clicking the appropriate header and selecting "**Ungroup**" from the context menu in the pivot table component, users can ungroup the applied date grouping.
 
-![output](/images/date-ungroup.png)
+![output](images/date-ungroup.png)
 
 ## Custom Grouping
 
@@ -174,25 +174,25 @@ Custom grouping can group any data type, such as date, time, number and string, 
 
 In order to create custom grouping in the pivot table, a minimum of two headers belonging to a specific field should be chosen. To select more than one header, press and hold the CTRL key or hold the SHIFT key and click the appropriate row or column headers. Once selection is done, right-click and select "**Group**".
 
-![output](/images/custom-group-option.png "Context-menu options for custom grouping")
+![output](images/custom-group-option.png "Context-menu options for custom grouping")
 
 In the dialog, the "**Field caption**" is the alias name of the new custom field that will be used to shown up in the pivot table component.
 
-![output](/images/custom-group-settings-caption-applied.png "Caption applied for custom grouping")
+![output](images/custom-group-settings-caption-applied.png "Caption applied for custom grouping")
 
 The "**Group Name**" option helps to set the name of the header to hold the other selected headers. For example, if the user wants to group headers such as "**Gloves**", "**Jerseys**" and "**Shorts**" in the "Products" field by setting the top level name as "**Clothings**" to "**Group Name**" on their own. The selected headers are then grouped under the name "**Clothings**" in the pivot table.
 
-![output](/images/custom-group-settings-applied.png "Grouping settings applied for custom grouping")
+![output](images/custom-group-settings-applied.png "Grouping settings applied for custom grouping")
 <br/>
-![output](/images/custom-group-updated.png "Applied grouping settings updated in pivot table for custom grouping")
+![output](images/custom-group-updated.png "Applied grouping settings updated in pivot table for custom grouping")
 
 User can also apply new custom grouping options to an existing custom field by right-clicking on the custom group header in the pivot table. For example, if the user wants to create a new custom group for the current custom group headers such as "**Bottles and Cages**", "**Cleaners**" and "**Fenders**" by setting the top level name as "**Accessories**" to "**Group Name**" on their own. The selected headers will then be grouped in the pivot table under the name "**Accessories**" with a new custom field called "**Product category 1**".
 
-![output](/images/nested-custom-group-option.png "Context-menu options for nested custom grouping")
+![output](images/nested-custom-group-option.png "Context-menu options for nested custom grouping")
 <br/>
-![output](/images/nested-custom-group-settings-applied.png "Grouping settings applied for nested custom grouping")
+![output](images/nested-custom-group-settings-applied.png "Grouping settings applied for nested custom grouping")
 <br/>
-![output](/images/nested-custom-group-updated.png "Applied grouping settings updated in pivot table for custom grouping")
+![output](images/nested-custom-group-updated.png "Applied grouping settings updated in pivot table for custom grouping")
 
 Custom grouping can also be configured using the [`groupSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/groupSettings/#groupsettings) property through code-behind. The properties required are:
 
@@ -225,4 +225,4 @@ By right-clicking the appropriate header and selecting "**Ungroup**" from the co
 
 > When a specific field is removed from the report after ungrouping, its custom group fields will also be removed from the pivot table.
 
-![output](/images/custom-ungroup.png)
+![output](images/custom-ungroup.png)

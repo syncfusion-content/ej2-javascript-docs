@@ -9,10 +9,11 @@ var pivotTableObj = new ej.pivotview.PivotView({
         filters: []
     },
     height: 320,
+    allowPdfExport: true,
     displayOption: { view: 'Chart' },
     chartSettings: {
         chartSeries: {
-         type: 'Column'
+            type: 'Column'
         }
     }
 });

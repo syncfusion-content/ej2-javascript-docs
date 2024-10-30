@@ -17,8 +17,7 @@ let pivotTableObj: PivotView = new PivotView({
     },
     showGroupingBar: true,
     enginePopulated(args: EnginePopulatedEventArgs): void {
-        args.dataSourceSettings.columns[0].caption = 'Total Population';
-        args.dataSourceSettings.emptyCellsTextContent = '###'
+         //triggers after engine is populated
     },
 });
 pivotTableObj.appendTo('#PivotTable');

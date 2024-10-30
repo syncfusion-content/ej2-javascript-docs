@@ -1,10 +1,6 @@
-
-
-
 import { PivotView, IDataSet, PDFExport } from '@syncfusion/ej2-pivotview';
 import { Button } from '@syncfusion/ej2-buttons';
 import { pivotData } from './datasource.ts';
-
 PivotView.Inject(PDFExport);
 
 let pivotTableObj: PivotView = new PivotView({
@@ -27,8 +23,5 @@ let exportBtn: Button = new Button({ isPrimary: true });
 exportBtn.appendTo('#pdf');
 
 document.getElementById('pdf').onclick = function () {
-    pivotTableObj.pdfExportModule.exportToPDF();
+    pivotTableObj.pdfExport();
 };
-
-
-

@@ -175,7 +175,7 @@ Below is a code example demonstrating how to retrieve the selected cell values a
 {% previewsample "page.domainurl/code-snippet/spreadsheet/selected-cell-values" %}
 {% endif %}
 
-## How to remove selection in the spreadsheet
+## Remove Selection
 
 {% if page.publishingplatform == "typescript" %}
 

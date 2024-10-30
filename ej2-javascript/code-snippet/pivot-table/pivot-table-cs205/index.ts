@@ -1,7 +1,8 @@
-
-
-import { PivotView, IDataSet } from '@syncfusion/ej2-pivotview';
+import { PivotView, IDataSet, PDFExport } from '@syncfusion/ej2-pivotview';
 import { pivotData } from './datasource.ts';
+import { Button } from '@syncfusion/ej2-buttons';
+import { PdfQueryCellInfoEventArgs } from '@syncfusion/ej2-grids';
+PivotView.Inject(PDFExport);
 
 let pivotTableObj: PivotView = new PivotView({
     dataSourceSettings: {
@@ -19,8 +20,14 @@ let pivotTableObj: PivotView = new PivotView({
             //args.SelectedCellsInfo -> get selected cells information
         }
     },
-    height: 350
+    height: 350,
+    allowPdfExport: true,
 });
 pivotTableObj.appendTo('#PivotTable');
 
+let exportBtn: Button = new Button({ isPrimary: true });
+exportBtn.appendTo('#pdf');
 
+document.getElementById('pdf').onclick = function () {
+    pivotTableObj.pdfExport();
+};

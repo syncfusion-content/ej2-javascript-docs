@@ -11,8 +11,8 @@ let pivotTableObj: PivotView = new PivotView({
         expandAll: true,
         drilledMembers: [{ name: 'Country', items: ['France'] }],
         columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
-        rows: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
-        values: [{ name: 'Country' }, { name: 'Products' }],
+        values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
+        rows: [{ name: 'Country' }, { name: 'Products' }],
         formatSettings: [{ name: 'Amount', format: 'C0' }],
         filters: []
     },

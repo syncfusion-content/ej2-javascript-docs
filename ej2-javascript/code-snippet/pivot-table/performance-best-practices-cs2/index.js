@@ -5,8 +5,8 @@ var pivotTableObj = new ej.pivotview.PivotView({
     enableSorting: true,
     columns: [{ name: 'Product_ID', caption: 'Product ID' }],
     rows: [
-      { name: 'Date_Year', caption: 'Date' },
-      { name: 'Date_Month', caption: 'Date' },
+      { name: 'Date_Year', caption: 'Year' },
+      { name: 'Date_Month', caption: 'Month' },
     ],
     values: [
       { name: 'Sold', caption: 'Unit Sold' },

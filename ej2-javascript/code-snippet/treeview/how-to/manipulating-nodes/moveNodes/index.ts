@@ -1,4 +1,4 @@
-// Description: This snippet demonstrates how to move the nodes from one parent node to another parent node in the TreeView component.
+// Description: This snippet demonstrates how to move the nodes from one parent node to another parent node in the TreeView control.
 import { TreeView } from '@syncfusion/ej2-navigations';
 
 let countries: { [key: string]: Object }[] = [
@@ -34,6 +34,6 @@ let treeObj: TreeView = new TreeView({
 treeObj.appendTo('#tree');
 
 document.getElementById('button1')!.onclick = (): void => {
-    // Move the nodes to the new parent node
+    // The node with id 2 is moved to the parent node with id 3 to the index of 1.
     treeObj.moveNodes(['2'], '3', 1);
 };

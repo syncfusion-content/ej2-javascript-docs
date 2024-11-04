@@ -1,5 +1,7 @@
-// Description: This snippet demonstrates how to remove the nodes from the TreeView component.
-var countries = [
+// Add nodes to the TreeView control using the addNodes method in the TreeView control.
+import { TreeView } from '@syncfusion/ej2-navigations';
+
+let countries: { [key: string]: Object }[] = [
     { id: 1, name: 'Australia', hasChild: true, expanded: true },
     { id: 2, pid: 1, name: 'New South Wales', isSelected: true },
     { id: 3, pid: 1, name: 'Victoria' },
@@ -26,18 +28,20 @@ var countries = [
     { id: 25, pid: 21, name: 'Punjab' }
 ];
 
-var treeObj = new ej.navigations.TreeView({
-    fields: { dataSource: countries, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild', selected: 'isSelected' },
-    
+let treeObj: TreeView = new TreeView({
+    fields: { dataSource: countries, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild' },
 });
-treeObj.appendTo('#tree');
+treeObj.appendTo('#addtree');
 
-document.getElementById('button1').onclick = function () {
-  // The node with id 21 is removed from the TreeView component.
-    treeObj.removeNodes(['21']);
+document.getElementById('button1')!.onclick = (): void => {
+  // Add a new parent node 
+  treeObj.addNodes([
+    { id: 26, name: 'New Parent' },
+    { id: 27, pid: 26, name: 'New Child1' },
+  ]);
 };
   
-document.getElementById('button2').onclick = function () {
-  // The nodes with id 3 and 4 are removed from the TreeView component.
-  treeObj.removeNodes(['3','4']);
+document.getElementById('button2')!.onclick = (): void => {
+  // Add a new child node to the existing parent node
+  treeObj.addNodes([{ id: 28, name: 'New Child2', pid: 21 }], '21', null);
 };

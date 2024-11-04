@@ -1,7 +1,5 @@
-// Description: This code snippet demonstrates how to remove the nodes from the TreeView component using the removeNodes method.
-import { TreeView } from '@syncfusion/ej2-navigations';
-
-let countries: { [key: string]: Object }[] = [
+// Description: This snippet demonstrates how to move the nodes in the TreeView control.
+var countries = [
     { id: 1, name: 'Australia', hasChild: true, expanded: true },
     { id: 2, pid: 1, name: 'New South Wales', isSelected: true },
     { id: 3, pid: 1, name: 'Victoria' },
@@ -28,17 +26,12 @@ let countries: { [key: string]: Object }[] = [
     { id: 25, pid: 21, name: 'Punjab' }
 ];
 
-let treeObj: TreeView = new TreeView({
+var treeObj = new ej.navigations.TreeView({
     fields: { dataSource: countries, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild', selected: 'isSelected' },
 });
 treeObj.appendTo('#tree');
 
-document.getElementById('button1')!.onclick = (): void => {
-  // Remove the nodes from the TreeView control
-  treeObj.removeNodes(['21']);
-};
-  
-document.getElementById('button2')!.onclick = (): void => {
-  // Remove the nodes from the TreeView control
-  treeObj.removeNodes(['3','4']);
+document.getElementById('button1').onclick = function () {
+    // The node with id 2 is moved to the parent node with id 3 to the index of 1.
+    treeObj.moveNodes(['2'], '3', 1);
 };

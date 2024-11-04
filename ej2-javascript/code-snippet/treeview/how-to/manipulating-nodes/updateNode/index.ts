@@ -20,6 +20,6 @@ let treeObj: TreeView = new TreeView({
 treeObj.appendTo('#tree');
 
 document.getElementById('button1')!.onclick = (): void => {
-    // Update the node text in the TreeView control
+    // Update the new node text for the node having id 4.
     treeObj.updateNode('4', 'Node updated');
 };

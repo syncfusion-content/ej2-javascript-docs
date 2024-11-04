@@ -1,4 +1,4 @@
-// Description: This snippet demonstrates how to move the nodes in the TreeView component.
+// Description: This snippet demonstrates how to add nodes to the TreeView component.
 var countries = [
     { id: 1, name: 'Australia', hasChild: true, expanded: true },
     { id: 2, pid: 1, name: 'New South Wales', isSelected: true },
@@ -27,11 +27,19 @@ var countries = [
 ];
 
 var treeObj = new ej.navigations.TreeView({
-    fields: { dataSource: countries, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild', selected: 'isSelected' },
+    fields: { dataSource: countries, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild' },
 });
-treeObj.appendTo('#tree');
+treeObj.appendTo('#addtree');
 
 document.getElementById('button1').onclick = function () {
-    // The node with id 2 is moved to the parent node with id 3 to the index of 1.
-    treeObj.moveNodes(['2'], '3', 1);
+  // add nodes to the root level
+  treeObj.addNodes([
+    { id: 26, name: 'New Parent' },
+    { id: 27, pid: 26, name: 'New Child' },
+  ]);
+};
+  
+document.getElementById('button2').onclick = function () {
+  // Add a new child node to the existing parent node
+  treeObj.addNodes([{ id: 29, pid: 21, name: 'New Child1' }], 21);
 };

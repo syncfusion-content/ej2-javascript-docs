@@ -71,8 +71,8 @@ To access themes provided by Syncfusion, you have two primary options,
 |Package  | [Material 3 Light](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme) | [Material 3 Dark](https://www.npmjs.com/package/@syncfusion/ej2-material3-dark-theme) |
 |  | [Fluent 2 Light](https://www.npmjs.com/package/@syncfusion/ej2-fluent2-theme) | [Fluent 2 Dark](https://www.npmjs.com/package/@syncfusion/ej2-fluent2-dark-theme) |
 |  | [Bootstrap 5.3 Light](https://www.npmjs.com/package/@syncfusion/ej2-bootstrap5.3-theme) | [Bootstrap 5.3 Dark](https://www.npmjs.com/package/@syncfusion/ej2-bootstrap5.3-dark-theme) |
-| CDN  | [Material 3 Light](https://cdn.syncfusion.com/ej2/24.2.8/material3.css)  |  [Material 3 Dark](https://cdn.syncfusion.com/ej2/24.2.8/material3-dark.css)  |
-|  |  [Fluent 2 light](https://cdn.syncfusion.com/ej2/26.1.35/fluent2.css)  |  [Fluent 2 Dark](https://cdn.syncfusion.com/ej2/26.1.35/fluent2-dark.css)  |
+| CDN  | [Material 3 Light](https://cdn.syncfusion.com/ej2/27.1.48/material3.css)  |  [Material 3 Dark](https://cdn.syncfusion.com/ej2/27.1.48/material3-dark.css)  |
+|  |  [Fluent 2 light](https://cdn.syncfusion.com/ej2/27.1.48/fluent2.css)  |  [Fluent 2 Dark](https://cdn.syncfusion.com/ej2/27.1.48/fluent2-dark.css)  |
 |  |  [Bootstrap5.3 light](https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.3.css)  |  [Bootstrap 5.3 Dark](https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.3-dark.css)  |
 
 ### Color Customization in themes
@@ -132,7 +132,7 @@ Example for `Fluent 2` customization using Css class.
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/common/fluent2-cs1" %}
+{% previewsample "page.domainurl/code-snippet/common/fluent2-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -396,7 +396,7 @@ Similar to `Material 3`, we offer both Light and Dark variants with `Bootstrap 5
 
 ### How to switch dark mode?
 
-To activate dark mode, just append the `e-dark-mode` class to the body section of your application for both `Material 3`, `Fluent 2` and `Bootstrap 5.3` themes. Once applied, the theme seamlessly switches to dark mode. Please refer to the example image below for visual guidance.
+To activate dark mode, just append the `e-dark-mode` class to the body section of your application for `Material 3`, `Fluent 2` and `Bootstrap 5.3` themes. Once applied, the theme seamlessly switches to dark mode. Please refer to the example image below for visual guidance.
 
 `Material 3` dark mode
 

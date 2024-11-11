@@ -25,7 +25,7 @@ let listObj: ListBox = new ListBox({
 listObj.appendTo('#listbox');
 
 document.getElementById('filterTextBox').addEventListener('input', function(e) {
-    listObj.filter((data as any).info, new Query().where('text', 'contains', e.target.value,true));
+    listObj.filter((data as any).info, new Query().where('text', 'contains', e.target.value, true));
 });
 
 

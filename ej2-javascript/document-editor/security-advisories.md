@@ -3,7 +3,7 @@ layout: post
 title: Security Advisories in  ##Platform_Name## Document editor control | Syncfusion
 description: Learn here all about Security Advisories in Syncfusion  ##Platform_Name##  Document editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: common
+control: Security advisories
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##

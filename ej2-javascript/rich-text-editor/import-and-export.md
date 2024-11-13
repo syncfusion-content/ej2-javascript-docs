@@ -80,7 +80,6 @@ The following code block provides a detailed explanation of the API endpoint use
 The `ImportWord` functionality is integrated within the `actionBegin` and `actionComplete` events. If the cancel property is set to true in the `actionBegin` event argument, the execution of the `ImportWord` functionality can be prevented.
 
 > Rich Text Editor features are segregated into individual feature-wise modules. To use use Import/Export feature, inject import/export module using the `RichTextEditor.Inject(ImportExport)`.
-
 The following example illustrates how to set up the `ImportWord` in the Rich Text Editor to facilitate content importation from Word documents:
 
 {% if page.publishingplatform == "typescript" %}
@@ -93,7 +92,7 @@ The following example illustrates how to set up the `ImportWord` in the Rich Tex
 {% include code-snippet/rich-text-editor/import-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/rich-text-editor/import-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -207,7 +206,7 @@ The following example demonstrates how to configure the `ExportWord` and `Export
 {% include code-snippet/rich-text-editor/export-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/rich-text-editor/export-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}

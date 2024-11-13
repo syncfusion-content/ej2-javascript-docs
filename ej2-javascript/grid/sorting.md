@@ -226,6 +226,7 @@ The example below demonstrates how to display null values at the bottom of the g
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/grid/sort-comparer-cs1" %}
+{% endif %}
 
 ## Touch interaction
 

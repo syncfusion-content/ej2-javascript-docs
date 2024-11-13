@@ -240,6 +240,7 @@ let tabs: RibbonTabModel[] = [{
         }]
     }]
 }];
+
 let ribbon: Ribbon = new Ribbon({
   activeLayout: RibbonLayout.Simplified,
   tabs: tabs,

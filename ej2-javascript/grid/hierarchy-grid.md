@@ -304,6 +304,42 @@ The following example demonstrates how to obtain parent details in a child grid 
 {% previewsample "page.domainurl/code-snippet/grid/hierarchygrid-parentdetails-cs1" %}
 {% endif %}
 
+## Render aggregates in child grid
+
+The Aggregates feature in the Syncfusion ##Platform_Name## Grid component allows you to display aggregate values in the footer, group footer, and group caption of the child grid. With this feature, you can easily perform calculations on specific columns and show summary information. 
+
+Rendering aggregates in a child grid involves displaying summary data at the footer or group caption of the grid. This can be particularly useful in hierarchical grids where each child grid represents detailed data that needs to be summarized.
+
+The following example demonstrates how to render aggregates in a child grid to display the sum and maximum values of the **Freight** column.
+
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/grid-hierarchygrid-render/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/grid-hierarchygrid-render/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/grid-hierarchygrid-render" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/grid-hierarchygrid-render/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/grid-hierarchygrid-render/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/grid-hierarchygrid-render" %}
+{% endif %}
+
 ## Expand all by external button
 
 The Hierarchy Grid in the Syncfusion ##Platform_Name## Grid control allows you to expand all child grid rows using an external button. This feature provides you with a convenient overview of all the hierarchical data within the grid, eliminating the need to manually expand each row individually.
@@ -425,6 +461,51 @@ The following example demonstrates how to hide the expand/collapse icon in the r
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/grid/hierarchy-grid-cs1" %}
+{% endif %}
+
+## Change hierarchy grid icon in Grid
+
+You can customize the default expand/collapse icons in the Hierarchy Grid of Syncfusion Grid component using custom CSS, allowing you to modify their visual representation. To achieve this, add the following CSS to your index.html file:
+
+```
+    .e-grid .e-icon-grightarrow::before,
+        .e-grid-menu .e-icon-grightarrow::before {
+            content: '\e7f9';
+        }
+    .e-grid .e-icon-gdownarrow::before,
+        .e-grid-menu .e-icon-gdownarrow::before {
+            content: '\e934';
+        }
+
+```
+
+In the demo below, the expand/collapse icons have been changed to arrow-down and arrow-right icons.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/changeicon-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/changeicon-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/changeicon-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/changeicon-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/changeicon-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/changeicon-cs1" %}
 {% endif %}
 
 ## Customize the child grid

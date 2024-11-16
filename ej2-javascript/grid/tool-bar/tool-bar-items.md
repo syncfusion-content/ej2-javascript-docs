@@ -106,6 +106,41 @@ This is demonstrated in the following sample:
 {% previewsample "page.domainurl/code-snippet/grid/toolbar-icon-cs1" %}
 {% endif %}
 
+### Customize the built-in toolbar items
+
+The Syncfusion ##Platform_Name## Grid component allows you to customize the built-in toolbar items to meet your specific requirements. This can include adding, removing, or modifying toolbar items, as well as handling custom actions when toolbar buttons are clicked.
+
+To customize the built-in toolbar items, you can use the [toolbarClick](../../api/grid/#toolbarclick) event of the grid.
+
+The following example demonstrate how to customize the toolbar by disabling and canceling the **Add** button functionlity and showing a custom message when the **Add** button of toolbar is clicked.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/toolbar-customize/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/toolbar-customize/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/toolbar-customize" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/toolbar-customize/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/toolbar-customize/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/toolbar-customize" %}
+{% endif %}
+
 ## Custom toolbar items
 
 Adding custom toolbar items to the Syncfusion ##Platform_Name## Grid involves incorporating personalized functionality into the toolbar.

@@ -165,3 +165,21 @@ You can use [`opensOnHover`](../api/speed-dial#opensonhover) property to open ac
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/speed-dial/styles-cs6" %}
+
+## Customized icon
+
+You can use the [`cssClass`](../api/speed-dial#cssclass) property to customize the appearance of the speedDial control in its default primary state. Below example demonstrates the `cssClass` property usage in speedDial.
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/speed-dial/styles-cs13/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/speed-dial/styles-cs13/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/speed-dial/styles-cs13/styles.css %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/speed-dial/styles-cs13" %}

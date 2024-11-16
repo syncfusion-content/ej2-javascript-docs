@@ -299,6 +299,47 @@ You can prevent autofill feature by setting the [autofill](../../api/auto-comple
 {% previewsample "page.domainurl/code-snippet/grid/filter-menu-cs3" %}
 {% endif %}
 
+## Hide default filter icons while perform filtering through method
+
+When performing filtering programmatically using methods in the Syncfusion ##Platform_Name##  Grid component, you may want to hide the default filter icons to provide a simpler interface.
+
+To customize the filter icon in the Grid, use the **display** property of the **filtermenu** as mentioned below
+
+```css
+.e-filtermenudiv.e-icons.e-icon-filter {
+    display: none;
+}
+```
+
+The following example demonstrate how to hide the default filter icons while filtering the **CustomerID** column programmatically using a method.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/filter-menu-hide/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/filter-menu-hide/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/filter-menu-hide" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/filter-menu-hide/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/filter-menu-hide/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/filter-menu-hide" %}
+{% endif %}
+
 ## Filter menu events
 
 The Syncfusion ##Platform_Name## Grid offers the [actionBegin](../../api/grid#actionbegin) and [actionComplete](../../api/grid#actioncomplete) events, which provide information about the actions being performed. Within the event handlers, you receive an argument named `requestType`. This argument specifies the [action](../../api/grid/action/) that is being executed, such as `filterBeforeOpen`, `filterAfterOpen`, or `filtering`. By analyzing this action type, you can implement custom logic or showcase messages.
@@ -378,4 +419,4 @@ grid.appendTo('#Grid');
 
 ## See also
 
-* [How to perform filter by using Wildcard and LIKE operator filter](./filtering#wildcard-and-like-operator-filter)
+* [How to perform filter by using Wildcard and LIKE operator filter](./filtering/#wildcard-and-like-operator-filter)

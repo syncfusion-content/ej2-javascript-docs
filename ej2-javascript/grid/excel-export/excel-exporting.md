@@ -434,6 +434,39 @@ In the following example, the [toolbarClick](../../api/grid/#toolbarclick) funct
 {% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs4" %}
 {% endif %}
 
+## Merge duplicate cells in specific column and export in Grid
+
+You can merge duplicate cells (based on their values) in a specific column of the Syncfusion Grid. This can be achieved by utilizing the [dataBound](../../api/grid/#databound) event. Additionally, you can merge duplicate cells in the specified column during export by using the [excelQueryCellInfo](../../api/grid/#excelquerycellinfo) event for Excel and CSV formats. This functionality is useful for improving the readability of your data and providing a clearer visual representation.
+
+Here’s an example demonstrating how to merge duplicate cells in the OrderID column in both Grid view and export:
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/custom-cellmerge-export-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/custom-cellmerge-export-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/custom-cellmerge-export-cs2" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/custom-cellmerge-export-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/custom-cellmerge-export-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/custom-cellmerge-export-cs2" %}
+{% endif %}
+
 ## Limitations
 
 * A CSV is a plain text format that does not support features such as cell rotation, font and color customization, column and row spanning, or adding formulas. CSV files store raw data without any formatting or styling.

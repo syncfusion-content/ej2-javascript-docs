@@ -116,9 +116,9 @@ Refer to the TreeGrid's CDN links as follows.
 
 **Example:**
 
-> Script: [`http://cdn.syncfusion.com/ej2/26.1.35/ej2-treegrid/dist/global/ej2-treegrid.min.js`](http://cdn.syncfusion.com/ej2/ej2-treegrid/dist/global/ej2-treegrid.min.js)
+> Script: [`https://cdn.syncfusion.com/ej2/26.1.35/ej2-treegrid/dist/global/ej2-treegrid.min.js`](https://cdn.syncfusion.com/ej2/ej2-treegrid/dist/global/ej2-treegrid.min.js)
 >
-> Styles: [`http://cdn.syncfusion.com/ej2/26.1.35/ej2-treegrid/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-treegrid/styles/material.css)
+> Styles: [`https://cdn.syncfusion.com/ej2/26.1.35/ej2-treegrid/styles/material.css`](https://cdn.syncfusion.com/ej2/ej2-treegrid/styles/material.css)
 
 The following HTML code example shows the minimal dependency of TreeGrid.
 

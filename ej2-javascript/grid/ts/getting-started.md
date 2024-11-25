@@ -71,7 +71,7 @@ npm install
 
 ## Import the Syncfusion CSS styles
 
-Syncfusion JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme/), which are available in the installed packages. It's easy to adapt the Syncfusion JavaScript controls to match the style of your application by referring to one of the built-in themes.
+Syncfusion JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion JavaScript controls to match the style of your application by referring to one of the built-in themes.
 
 The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 

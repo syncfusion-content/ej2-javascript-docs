@@ -193,9 +193,9 @@ Refer the grid's CDN links as below
 
 **Example:**
 
-> Script: [http://cdn.syncfusion.com/ej2/ej2-grids/dist/global/ej2-grids.min.js](http://cdn.syncfusion.com/ej2/ej2-grids/dist/global/ej2-grids.min.js)
+> Script: [https://cdn.syncfusion.com/ej2/ej2-grids/dist/global/ej2-grids.min.js](http://cdn.syncfusion.com/ej2/ej2-grids/dist/global/ej2-grids.min.js)
 >
-> Styles: [http://cdn.syncfusion.com/ej2/ej2-grids/styles/material.css](http://cdn.syncfusion.com/ej2/ej2-grids/styles/material.css)
+> Styles: [https://cdn.syncfusion.com/ej2/ej2-grids/styles/material.css](http://cdn.syncfusion.com/ej2/ej2-grids/styles/material.css)
 
 Here's an example of referencing the grid's scripts and styles in an HTML file using CDN links:
 

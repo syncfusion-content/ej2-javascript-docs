@@ -304,41 +304,6 @@ The following example demonstrates how to perform a group action using the `enab
 
 > Numeric columns can be grouped based on formats such as currency or percentage, while datetime columns can be grouped based on specific date or time formats.
 
-## Show grouped rows based on page size
-
-Showing grouped column rows based on the page size in Syncfusion ##Platform_Name## Grid is useful when you have grouped data and want to control the number of grouped rows displayed per page. 
-
-The Grid control allows you to display the number of records based on the [pageSize](../../api/grid/pageSettings/#pagesize). However, by default, the `pageSize` applies to individual grid rows, not to grouped rows. If you want to show grouped column rows based on the `pageSize`, you can achieve it by using a custom implementation.
-
-Customizing the `generateQuery` method of the **Data prototype** allows you to modify the query used for data retrieval. By doing so, you can achieve the display of grouped rows based on the page size according to your specific requirements. This can be achieved in the below example.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid/grid-grouping-paging/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid/grid-grouping-paging/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/grid/grid-grouping-paging" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid/grid-grouping-paging/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid/grid-grouping-paging/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/grid/grid-grouping-paging" %}
-{% endif %}
-
 ## Collapse all grouped rows at initial rendering
 
 The Syncfusion ##Platform_Name## Grid offers a convenient feature to expand or collapse grouped rows, allowing you to control the visibility of grouped data. The option is useful when dealing with a large dataset that contains many groups, and there is a need to provide a summarized view by initially hiding the details.

@@ -16,7 +16,7 @@ The uploader component allows you to upload the files asynchronously. The upload
     *   The save action is necessary to handle the upload operation
     *   The remove action is optional, can handle the removed files from server
 
->The name attribute must match the name of a parameter in the POST method. For more information, refer [hear](https://docs.microsoft.com/en-us/aspnet/core/mvc/models/file-uploads?view=aspnetcore-3.1#match-name-attribute-value-to-parameter-name-of-post-method). The name attribute is automatically generated from the control’s ID property. If the name attribute to be different from the ID property, then you can use the htmlAttributes property to set the name attribute directly
+>The name attribute must match the name of a parameter in the POST method. For more information, refer [hear](https://learn.microsoft.com/en-us/aspnet/core/mvc/models/file-uploads?view=aspnetcore-3.1#match-name-attribute-value-to-parameter-name-of-post-method). The name attribute is automatically generated from the control’s ID property. If the name attribute to be different from the ID property, then you can use the htmlAttributes property to set the name attribute directly
 to the input element. For more information refer [hear](./how-to/add-html-attributes).
 
 The File can be uploaded automatically or manually. For more information, you can refer to the [Auto Upload](../api/uploader/#autoupload) section from the documentation.
@@ -313,7 +313,7 @@ You can remove the files which is not uploaded locally by clicking the remove ic
 
 ### Server-side configuration for remove action
 
-To remove an uploaded file from the server, it is sufficient to send only the file name. You can achieve this by setting the [`postRawFile`](https://ej2.syncfusion.com/documentation/api/uploader/removingEventArgs/#postrawfile) property of the `RemovingEventArgs` to `false` during the [`removing`](https://ej2.syncfusion.com/documentation/api/uploader#removing) event. This ensures that only the file name is sent to the server in the Remove action.
+To remove an uploaded file from the server, it is sufficient to send only the file name. You can achieve this by setting the [`postRawFile`](https://ej2.syncfusion.com/documentation/api/uploader/removingEventArgs/#postrawfile) property of the `RemovingEventArgs` to `false` during the [`removing`](https://ej2.syncfusion.com/documentation/api/uploader/#removing) event. This ensures that only the file name is sent to the server in the Remove action.
 
 Here is an example:
 
@@ -516,7 +516,7 @@ function addHeaders(args: any) {
 
 ```
 
-> You can also explore [JavaScript File Upload](https://www.syncfusion.com/javascript-ui-controls/js-file-upload) feature tour page for its groundbreaking features. You can also explore our [JavaScript File Upload example](https://ej2.syncfusion.com/demos/#/material/uploader/default.html) to understand how to browse the files which you want to upload to the server.
+> You can also explore [JavaScript File Upload](https://www.syncfusion.com/javascript-ui-controls/js-file-upload) feature tour page for its groundbreaking features. You can also explore our [JavaScript File Upload example](https://ej2.syncfusion.com/demos/#/bootstrap5/uploader/default.html) to understand how to browse the files which you want to upload to the server.
 
 ## See Also
 

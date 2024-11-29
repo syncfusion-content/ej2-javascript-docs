@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Syncfusion JavaScript (Essential JS 2) library from a seed application
+# Getting Started with JavaScript library from a seed application
 
-This article provides a step-by-step guide to configuring the Syncfusion JavaScript (Essential JS 2) library and building a simple JavaScript web application using the GitHub [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This article provides a step-by-step guide to configuring the Syncfusion JavaScript (Essential JS 2) library and building a simple JavaScript web application using the GitHub [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
@@ -25,7 +25,7 @@ To get started with application, ensure the following software to be installed i
 
 ## Set up development environment
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
+Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack).
 
 ```
     git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
@@ -48,11 +48,11 @@ The quickstart application is preconfigured with the dependent [@syncfusion/ej2]
 ```
 ![ej2 typescript seed local setup](images/local-setup.png)
 
-> To learn more about the individual packages and different ways to install them, refer [here](https://ej2.syncfusion.com/documentation/installation-and-upgrade/installation/).
+> To learn more about the individual packages and different ways to install them, refer [here](https://ej2.syncfusion.com/documentation/installation-and-upgrade/installation).
 
 ## Import the Syncfusion CSS styles
 
-Syncfusion JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme/), which are available in the installed packages. It's easy to adapt the Syncfusion JavaScript controls to match the style of your application by referring to one of the built-in themes.
+Syncfusion JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion JavaScript controls to match the style of your application by referring to one of the built-in themes.
 
 The quickstart application is preconfigured to use the `Material` theme in the `~/src/styles/styles.css` file, as shown below: 
 
@@ -60,7 +60,7 @@ The quickstart application is preconfigured to use the `Material` theme in the `
   @import "../../node_modules/@syncfusion/ej2/material.css";
 ```
 
-> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme/) section to know more about built-in themes and CSS reference for individual controls.
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
 
 ## Add Syncfusion control to the application
 
@@ -149,8 +149,8 @@ Now, run the application in the browser using the following command.
         
 {% previewsample "page.domainurl/code-snippet/common/getting-started-cs1" %}
 
-To learn more about the functionality of the Grid control, refer to the [documentation](https://ej2.syncfusion.com/documentation/grid/getting-started/).
+To learn more about the functionality of the Grid control, refer to the [documentation](https://ej2.syncfusion.com/documentation/grid/getting-started).
 
 ## See also
 
-* [How to register Syncfusion license key in JavaScript(ES6) application](https://ej2.syncfusion.com/documentation/licensing/license-key-registration/)
+* [How to register Syncfusion license key in JavaScript(ES6) application](https://ej2.syncfusion.com/documentation/licensing/license-key-registration)

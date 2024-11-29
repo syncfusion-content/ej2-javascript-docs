@@ -97,6 +97,27 @@ Add the HTML div tag with the `id` attribute as `carousel` to your `index.html` 
     <meta name="author" content="Syncfusion" />
     <link rel="shortcut icon" href="resources/favicon.ico" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .control-container {
+            height: 360px;
+            margin: 0 auto;
+            width: 600px;
+        }
+    
+        .img-container {
+            height: 100%;
+            margin: 0;
+        }
+    
+        .img-caption {
+            color: #fff;
+            font-size: 1rem;
+            position: absolute;
+            bottom: 3rem;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body class="h-100 w-100 d-flex justify-content-center align-items-center">

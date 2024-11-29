@@ -106,11 +106,34 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
     <script src="resources/buttons/ej2-buttons.min.js" type="text/javascript"></script>
     <!-- Essential JS 2 Carousel's control global script -->
     <script src="resources/navigations/ej2-navigations.min.js" type="text/javascript"></script>
+    <style>
+      .control-container {
+        height: 360px;
+        margin: 0 auto;
+        width: 600px;
+      }
+
+      .img-container {
+        height: 100%;
+        margin: 0;
+      }
+
+      .img-caption {
+        color: #fff;
+        font-size: 1rem;
+        position: absolute;
+        bottom: 3rem;
+        width: 100%;
+        text-align: center;
+      }
+    </style>
   </head>
 
   <body>
     <!--element which is going to render-->
-    <div id="carousel"></div>
+    <div class="control-container">
+      <div id="carousel"></div>
+    </div>
 
     <script>
       //Carousel items definition

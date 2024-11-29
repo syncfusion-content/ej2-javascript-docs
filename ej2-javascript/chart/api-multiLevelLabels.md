@@ -24,7 +24,7 @@ Defines the position of the multi level labels. They are,
 
 Defaults to *'Center'*
 
-### border [`LabelBorderModel`](./api-labelBorderModel.html)
+### border [`LabelBorderModel`](./api-labelbordermodel)
 
 Border of the multi level labels.
 
@@ -41,6 +41,6 @@ Defines the textOverFlow for multi level labels. They are,
 
 Defaults to *'Wrap'*
 
-### textStyle [`FontModel`](./api-fontModel.html)
+### textStyle [`FontModel`](./api-fontmodel)
 
 Options to customize the multi level labels.

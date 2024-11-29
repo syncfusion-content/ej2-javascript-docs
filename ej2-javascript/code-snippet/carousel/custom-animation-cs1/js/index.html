@@ -9,8 +9,64 @@
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-buttons/styles/material.css" rel="stylesheet">
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-navigations/styles/material.css" rel="stylesheet">
 
-    <!--style reference from app-->
-    <link href="styles.css" rel="stylesheet">
+    <style>
+        .control-container {
+            height: 360px;
+            margin: 0 auto;
+            width: 600px;
+        }
+    
+        .img-container {
+            height: 100%;
+            margin: 0;
+        }
+    
+        .img-caption {
+            color: #fff;
+            font-size: 1rem;
+            position: absolute;
+            bottom: 3rem;
+            width: 100%;
+            text-align: center;
+        }
+    
+        /* Parallax animation */
+        .parallax .e-carousel-item {
+            transition: transform 1s ease-in-out;
+        }
+    
+        .parallax .e-carousel-item.e-next {
+            animation: ParallaxIn 1s ease-in-out;
+        }
+    
+        .parallax .e-carousel-item.e-prev {
+            animation: ParallaxOut 1s ease-in-out;
+        }
+    
+        @keyframes ParallaxIn {
+            from {
+                opacity: 0;
+                transform: scale(0) translateY(100%);
+            }
+    
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+    
+        @keyframes ParallaxOut {
+            from {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+    
+            to {
+                opacity: 0;
+                transform: scale(0) translateY(-100%);
+            }
+        }
+    </style>
 
     <!--system js reference and configuration-->
     

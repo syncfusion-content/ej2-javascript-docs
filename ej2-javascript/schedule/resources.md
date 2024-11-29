@@ -47,63 +47,108 @@ The data for resources can bind with Scheduler either as a local JSON collection
 
 The following code example depicts how to bind the local JSON data to the [`dataSource`](https://ej2.syncfusion.com/documentation/api/schedule/resources/#datasource) of  [`resources`](https://ej2.syncfusion.com/documentation/api/schedule/resources/) collection.
 
-```ts
-import { Schedule, Week, Month, Agenda, TimelineViews, TimelineMonth } from '@syncfusion/ej2-schedule';
-import { resourceData } from './datasource.ts';
+{% if page.publishingplatform == "typescript" %}
 
-Schedule.Inject( Week, Month, TimelineViews, TimelineMonth, Agenda);
-let scheduleObj: Schedule = new Schedule({
-    width: '100%',
-    height: '550px',
-    currentView: 'Week',
-    views: ['Week', 'Month', 'TimelineWeek','TimelineMonth', 'Agenda'],
-    selectedDate: new Date(2018, 3, 1),
-    resources: [{
-        field: 'OwnerId', title: 'Owner',
-        name: 'Owners', allowMultiple: true,
-        dataSource: [
-            { OwnerText: 'Nancy', Id: 1, OwnerColor: '#ffaa00' },
-            { OwnerText: 'Steven', Id: 2, OwnerColor: '#f8a398' },
-            { OwnerText: 'Michael', Id: 3, OwnerColor: '#7499e1' }
-        ],
-        textField: 'OwnerText', idField: 'Id', colorField: 'OwnerColor'
-    }],
-    eventSettings: { dataSource: resourceData }
-});
-scheduleObj.appendTo('#Schedule');
-```
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/schedule/resource-grouping-local-data/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/schedule/resource-grouping-local-data/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/resource-grouping-local-data/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/schedule/resource-grouping-local-data" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/schedule/resource-grouping-local-data/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/schedule/resource-grouping-local-data/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/resource-grouping-local-data/es5-datasource.js %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/schedule/resource-grouping-local-data" %}
+{% endif %}
 
 ### Using remote service URL
 
 The following code example depicts how to bind the remote data for resources [`dataSource`](https://ej2.syncfusion.com/documentation/api/schedule/resources/#datasource).
 
-```ts
-import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
-import { Schedule, Week, Month, Agenda, TimelineViews, TimelineMonth } from '@syncfusion/ej2-schedule';
-import { resourceData } from './datasource.ts';
+{% if page.publishingplatform == "typescript" %}
 
-let resource: DataManager = new DataManager({
-    url: 'Home/GetResourceData',
-    adaptor: new UrlAdaptor,
-    crossDomain: true
-});
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/schedule/resource-grouping-remote-data/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/schedule/resource-grouping-remote-data/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/resource-grouping-remote-data/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/schedule/resource-grouping-remote-data" %}
 
-Schedule.Inject( Week, Month, TimelineViews, TimelineMonth, Agenda);
-let scheduleObj: Schedule = new Schedule({
-    width: '100%',
-    height: '550px',
-    currentView: 'Week',
-    views: ['Week', 'Month', 'TimelineWeek','TimelineMonth', 'Agenda'],
-    selectedDate: new Date(2018, 3, 1),
-    resources: [{
-        field: 'OwnerId', title: 'Owner',
-        name: 'Owners', allowMultiple: true,
-        dataSource: resource,
-        textField: 'OwnerText', idField: 'Id', colorField: 'OwnerColor'
-    }],
-    eventSettings: { dataSource: resourceData }
-});
-scheduleObj.appendTo('#Schedule');
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/schedule/resource-grouping-remote-data/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/schedule/resource-grouping-remote-data/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/resource-grouping-remote-data/es5-datasource.js %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/schedule/resource-grouping-remote-data" %}
+{% endif %}
+
+The server-side controller code to handle the resource datasource are as follows.
+
+```c#
+using Microsoft.AspNetCore.Mvc;
+
+namespace Core_DotNet9.Controllers
+{
+    public class HomeController : Controller
+    {
+        public IActionResult Index()
+        {
+            return View();
+        }
+        public List<Resource> GetResourceData()
+        {
+            var resources = new List<Resource>
+            {
+                new Resource { Id = 1, OwnerText = "Alice", OwnerColor = "#1aaa55" },
+                new Resource { Id = 2, OwnerText = "Bob", OwnerColor = "#357cd2" },
+                new Resource { Id = 3, OwnerText = "Charlie", OwnerColor = "#7fa900" }
+            };
+            return resources;
+        }
+        public class Resource
+        {
+            public int Id { get; set; }
+            public string OwnerText { get; set; }
+            public string OwnerColor { get; set; }
+        }
+    }
+}
+
 ```
 
 ## Scheduler with multiple resources
@@ -347,7 +392,7 @@ It groups the number of resources under each date and is applicable only on the 
 
 ## Customizing parent resource cells
 
-In timeline view work cells of parent resource can be customized by checking the [`elementType`](https://ej2.syncfusion.com/documentation/api/schedule/renderCellEventArgs/#elementtype) as `resourceGroupCells` in the event [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell). In the following code example, background color of the work hours has been changed.
+In timeline view work cells of parent resource can be customized by checking the [`elementType`](https://ej2.syncfusion.com/documentation/api/schedule/renderCellEventArgs/#elementtype) as `resourceGroupCells` in the event [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule/#rendercell). In the following code example, background color of the work hours has been changed.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -609,9 +654,9 @@ By default, the appearance of events is the same for all resource events. In cas
 
 ## Dynamically add and remove resources
 
-It is possible to add or remove the resources dynamically to and from the Scheduler respectively. In the following example, when the checkboxes are checked and unchecked, the respective resources gets added up or removed from the Scheduler layout. To add new resource dynamically, [`addResource`](https://ej2.syncfusion.com/documentation/api/schedule#addresource) method is used which accepts the arguments such as resource object, resource name (within which level, the resource object to be added) and index (position where the resource needs to be added).
+It is possible to add or remove the resources dynamically to and from the Scheduler respectively. In the following example, when the checkboxes are checked and unchecked, the respective resources gets added up or removed from the Scheduler layout. To add new resource dynamically, [`addResource`](https://ej2.syncfusion.com/documentation/api/schedule/#addresource) method is used which accepts the arguments such as resource object, resource name (within which level, the resource object to be added) and index (position where the resource needs to be added).
 
-To remove the resources dynamically, [`removeResource`](https://ej2.syncfusion.com/documentation/api/schedule#removeresource) method is used which accepts the index (position from where the resource to be removed) and resource name (within which level, the resource object presents) as parameters.
+To remove the resources dynamically, [`removeResource`](https://ej2.syncfusion.com/documentation/api/schedule/#removeresource) method is used which accepts the index (position from where the resource to be removed) and resource name (within which level, the resource object presents) as parameters.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -755,7 +800,7 @@ To use the [`hideNonWorkingDays`](../api/schedule/group/#hidenonworkingdays) pro
 
 ## Scroll to specific resource
 
-You can manually scroll to a specific resource on Scheduler by making use of the [`scrollToResource`](https://ej2.syncfusion.com/documentation/api/schedule#scrolltoresource) method as depicted in the following code example.
+You can manually scroll to a specific resource on Scheduler by making use of the [`scrollToResource`](https://ej2.syncfusion.com/documentation/api/schedule/#scrolltoresource) method as depicted in the following code example.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -798,7 +843,7 @@ Clicking on the menu icon before the resource text will show the resources avail
 
 ## Adaptive UI in desktop
 
-By default, the Scheduler layout adapts automatically in the desktop and mobile devices with appropriate UI changes. In case, if the user wants to display the Adaptive scheduler in desktop mode with adaptive enhancements, then the property [`enableAdaptiveUI`](https://ej2.syncfusion.com/documentation/api/schedule#enableadaptiveui) can be set to true. Enabling this option will display the exact mobile mode of Scheduler view on desktop devices.
+By default, the Scheduler layout adapts automatically in the desktop and mobile devices with appropriate UI changes. In case, if the user wants to display the Adaptive scheduler in desktop mode with adaptive enhancements, then the property [`enableAdaptiveUI`](https://ej2.syncfusion.com/documentation/api/schedule/#enableadaptiveui) can be set to true. Enabling this option will display the exact mobile mode of Scheduler view on desktop devices.
 
 Some of the default changes made for compact Scheduler to render in desktop devices are as follows,
 * View options displayed in the Navigation drawer.
@@ -833,4 +878,4 @@ Some of the default changes made for compact Scheduler to render in desktop devi
 {% previewsample "page.domainurl/code-snippet/schedule/resource-grouping-cs6" %}
 {% endif %}
 
-> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to knows how to present and manipulate data.
+> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/bootstrap5/schedule/overview.html) to knows how to present and manipulate data.

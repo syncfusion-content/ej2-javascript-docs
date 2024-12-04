@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearence of a nodes in ##Platform_Name## Diagram control | Syncfusion
-description: Learn here all about Nodes in Syncfusion ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more.
+title: Appearence of a nodes in ##Platform_Name## Diagram control | Syncfusion®
+description: Learn here all about Nodes in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Appearence of nodes 
 publishingplatform: ##Platform_Name##

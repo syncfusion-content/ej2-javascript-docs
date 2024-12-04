@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Diagram control | Syncfusion
-description: Learn here all about Localization in Syncfusion ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## Diagram control | Syncfusion®
+description: Learn here all about Localization in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Localization 
 publishingplatform: ##Platform_Name##

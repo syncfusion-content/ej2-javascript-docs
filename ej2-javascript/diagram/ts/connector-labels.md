@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Connector Labels in ##Platform_Name## Diagram control | Syncfusion
-description: Learn here all about Labels in Syncfusion ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more.
+title: Connector Labels in ##Platform_Name## Diagram control | Syncfusion®
+description: Learn here all about Labels in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Connector Labels
 publishingplatform: ##Platform_Name##
@@ -94,7 +94,7 @@ The [`segmentAngle`](../api/diagram/pathAnnotationModel/#segmentangle) property 
 
 |Segment angle|Output|
 |-----|-----|
-|True|![Segment angle true](../images/diagram-annotation-segmentAngle-true.png)|
-|False|![Segment angle false](../images/diagram-annotation-segmentAngle-false.png)|
+|True|![Segment angle true](images/diagram-annotation-segmentAngle-true.png)|
+|False|![Segment angle false](images/diagram-annotation-segmentAngle-false.png)|
 
 

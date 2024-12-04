@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data binding in ##Platform_Name## Diagram control | Syncfusion
-description: Learn here all about Data binding in Syncfusion ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more.
+title: Data binding in ##Platform_Name## Diagram control | Syncfusion®
+description: Learn here all about Data binding in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Data binding 
 publishingplatform: ##Platform_Name##

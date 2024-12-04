@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Orthogonal connector in ##Platform_Name## Diagram control | Syncfusion
-description: Learn here all about Connectors in Syncfusion ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more.
+title: Orthogonal connector in ##Platform_Name## Diagram control | Syncfusion®
+description: Learn here all about Connectors in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Orthogonal 
 publishingplatform: ##Platform_Name##

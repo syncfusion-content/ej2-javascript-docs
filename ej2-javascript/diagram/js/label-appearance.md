@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Label Appearance in ##Platform_Name## Diagram control | Syncfusion
-description: Learn here all about Labels in Syncfusion ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more.
+title: Label Appearance in ##Platform_Name## Diagram control | Syncfusion®
+description: Learn here all about Labels in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Label Appearance 
 publishingplatform: ##Platform_Name##

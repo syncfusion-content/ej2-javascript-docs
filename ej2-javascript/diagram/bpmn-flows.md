@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bpmn Flows in ##Platform_Name## Diagram control | Syncfusion
-description: Learn here all about Bpmn shapes in Syncfusion ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more.
+title: Bpmn Flows in ##Platform_Name## Diagram control | Syncfusion®
+description: Learn here all about Bpmn shapes in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Bpmn Flows
 publishingplatform: ##Platform_Name##

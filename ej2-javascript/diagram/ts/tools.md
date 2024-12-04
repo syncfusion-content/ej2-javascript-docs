@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tools in ##Platform_Name## Diagram control | Syncfusion
-description: Learn here all about Tools in Syncfusion ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more.
+title: Tools in ##Platform_Name## Diagram control | Syncfusion®
+description: Learn here all about Tools in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Tools 
 publishingplatform: ##Platform_Name##

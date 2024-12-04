@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Positioning of a nodes in ##Platform_Name## Diagram control | Syncfusion
-description: Learn here all about Nodes in Syncfusion ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more.
+title: Positioning of a nodes in ##Platform_Name## Diagram control | Syncfusion®
+description: Learn here all about Nodes in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Positioning of nodes 
 publishingplatform: ##Platform_Name##
@@ -32,7 +32,7 @@ The following code illustrates how to change the `pivot` value.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/diagram/nodes-cs3/index.js %}
+{% include code-snippet/diagram/nodes-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/diagram/nodes-cs3/index.html %}

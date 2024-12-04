@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tool tip in ##Platform_Name## Diagram control | Syncfusion
-description: Learn here all about Tool tip in Syncfusion ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more.
+title: Tool tip in ##Platform_Name## Diagram control | Syncfusion®
+description: Learn here all about Tool tip in Syncfusion® ##Platform_Name## Diagram control of Syncfusion® Essential JS 2 and more.
 platform: ej2-javascript
 control: Tool tip 
 publishingplatform: ##Platform_Name##

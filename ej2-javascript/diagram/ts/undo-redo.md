@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Undo redo in ##Platform_Name## Diagram control | Syncfusion
-description: Learn here all about Undo redo in Syncfusion ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more.
+title: Undo redo in ##Platform_Name## Diagram control | Syncfusion®
+description: Learn here all about Undo redo in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Undo redo 
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Export in ##Platform_Name## Diagram control | Syncfusion
-description: Learn here all about Export in Syncfusion ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more.
+title: Export in ##Platform_Name## Diagram control | Syncfusion®
+description: Learn here all about Export in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Export 
 publishingplatform: ##Platform_Name##
@@ -206,4 +206,4 @@ diagram.exportDiagram(options);
 
 ## Limitations
 
-Currently, exporting diagram into image format with native and HTML nodes is not supported. To overcome this limitation, we make use of the Syncfusion Essential PDF library. This library incorporates the Syncfusion Essential HTML converter, which employs the advanced Blink rendering engine. This converter seamlessly transforms HTML content into images. Refer to [`export Html-and-Native node`](https://support.syncfusion.com/kb/article/14031/how-to-export-html-node-using-blink-rendering-in-javascript-diagram) kb for more information.
+Currently, exporting diagram into image format with native and HTML nodes is not supported. To overcome this limitation, we make use of the Syncfusion Essential® PDF library. This library incorporates the Syncfusion Essential® HTML converter, which employs the advanced Blink rendering engine. This converter seamlessly transforms HTML content into images. Refer to [`export Html-and-Native node`](https://support.syncfusion.com/kb/article/14031/how-to-export-html-node-using-blink-rendering-in-javascript-diagram) kb for more information.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ej1 api migration in ##Platform_Name## Diagram control | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more.
+title: Ej1 api migration in ##Platform_Name## Diagram control | Syncfusion®
+description: Learn here all about Ej1 api migration in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Ej1 api migration 
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Diagram control
 
-This article describes the API migration process of Diagram component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Diagram component from Essential® JS 1 to Essential® JS 2.
 
 ## Background
 
@@ -19,8 +19,8 @@ This article describes the API migration process of Diagram component from Essen
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential® JS 1</b></td>
+<td><b>API in Essential® JS 2</b></td>
 </tr>
 
 <tr>
@@ -132,8 +132,8 @@ diagram.appendTo('#diagram');
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential® JS 1</b></td>
+<td><b>API in Essential® JS 2</b></td>
 </tr>
 
 <tr>
@@ -164,8 +164,8 @@ diagram.appendTo('#diagram');
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential® JS 1</b></td>
+<td><b>API in Essential® JS 2</b></td>
 </tr>
 
 <tr>
@@ -622,8 +622,8 @@ diagram.appendTo('#diagram');
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential® JS 1</b></td>
+<td><b>API in Essential® JS 2</b></td>
 </tr>
 
 <tr>
@@ -3385,8 +3385,8 @@ diagram.appendTo('#diagram');
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential® JS 1</b></td>
+<td><b>API in Essential® JS 2</b></td>
 </tr>
 
 <tr>
@@ -3666,8 +3666,8 @@ diagram.appendTo('#diagram');
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential® JS 1</b></td>
+<td><b>API in Essential® JS 2</b></td>
 </tr>
 
 <tr>
@@ -4415,8 +4415,8 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential® JS 1</b></td>
+<td><b>API in Essential® JS 2</b></td>
 </tr>
 <tr>
 <td><b>Initializes the default values for nodes and connectors</b></td>
@@ -4498,8 +4498,8 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), {
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential® JS 1</b></td>
+<td><b>API in Essential® JS 2</b></td>
 </tr>
 <tr>
 <td><b>Sets the type of JSON object to be drawn through drawing tool</b></td>
@@ -4532,8 +4532,8 @@ diagram.appendTo('#diagram');
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential® JS 1</b></td>
+<td><b>API in Essential® JS 2</b></td>
 </tr>
 <tr>
 <td><b>Enables or disables auto scroll in diagram</b></td>
@@ -4566,8 +4566,8 @@ diagram.appendTo('#diagram');
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential® JS 1</b></td>
+<td><b>API in Essential® JS 2</b></td>
 </tr>
 <tr>
 <td><b>Enables or disables diagram context menu</b></td>
@@ -4602,8 +4602,8 @@ diagram.appendTo('#diagram');
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential® JS 1</b></td>
+<td><b>API in Essential® JS 2</b></td>
 </tr>
 
 <tr>
@@ -4630,8 +4630,8 @@ diagram.appendTo('#diagram');
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential® JS 1</b></td>
+<td><b>API in Essential® JS 2</b></td>
 </tr>
 
 <tr>
@@ -4658,8 +4658,8 @@ diagram.appendTo('#diagram');
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential® JS 1</b></td>
+<td><b>API in Essential® JS 2</b></td>
 </tr>
 
 <tr>
@@ -4703,8 +4703,8 @@ diagram.appendTo('#diagram');
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential® JS 1</b></td>
+<td><b>API in Essential® JS 2</b></td>
 </tr>
 
 <tr>
@@ -4744,8 +4744,8 @@ diagram.appendTo('#diagram');
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential® JS 1</b></td>
+<td><b>API in Essential® JS 2</b></td>
 </tr>
 
 <tr>
@@ -4789,8 +4789,8 @@ diagram.appendTo('#diagram');
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential® JS 1</b></td>
+<td><b>API in Essential® JS 2</b></td>
 </tr>
 
 <tr>
@@ -4839,8 +4839,8 @@ diagram.appendTo('#diagram');
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential® JS 1</b></td>
+<td><b>API in Essential® JS 2</b></td>
 </tr>
 <tr>
 <td><b>Specifies the height of the diagram</b></td>
@@ -4874,8 +4874,8 @@ diagram.appendTo('#diagram');
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential® JS 1</b></td>
+<td><b>API in Essential® JS 2</b></td>
 </tr>
 
 <tr>
@@ -5383,8 +5383,8 @@ diagram.historyList.canLog = function (entry: HistoryEntry) {
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential® JS 1</b></td>
+<td><b>API in Essential® JS 2</b></td>
 </tr>
 <tr>
 <td><b>Defines the type of the rendering mode of label</b></td>
@@ -5406,8 +5406,8 @@ let diagram = new ej.datavisualization.Diagram($("#diagram"), { labelRenderingMo
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential® JS 1</b></td>
+<td><b>API in Essential® JS 2</b></td>
 </tr>
 
 <tr>
@@ -5980,8 +5980,8 @@ diagram.dataBind();
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential® JS 1</b></td>
+<td><b>API in Essential® JS 2</b></td>
 </tr>
 
 <tr>
@@ -6015,8 +6015,8 @@ diagram.appendTo('#diagram');
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential® JS 1</b></td>
+<td><b>API in Essential® JS 2</b></td>
 </tr>
 
 <tr>
@@ -10206,8 +10206,8 @@ diagram.appendTo('#diagram');
 <table>
 <tr>
 <td style="width: 20%;"><b>behavior</b></td>
-<td style="width: 40%;"><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td style="width: 40%;"><b>API in Essential® JS 1</b></td>
+<td><b>API in Essential® JS 2</b></td>
 </tr>
 
 <tr>
@@ -10505,8 +10505,8 @@ palette.appendTo('#symbolpalette');
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential® JS 1</b></td>
+<td><b>API in Essential® JS 2</b></td>
 </tr>
 
 <tr>
@@ -10833,8 +10833,8 @@ diagram.appendTo('#diagram');
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential® JS 1</b></td>
+<td><b>API in Essential® JS 2</b></td>
 </tr>
 
 <tr>
@@ -10882,8 +10882,8 @@ diagram.loadDiagram(ej1Data, true);
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential® JS 1</b></td>
+<td><b>API in Essential® JS 2</b></td>
 </tr>
 
 <tr>

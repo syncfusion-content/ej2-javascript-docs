@@ -13,7 +13,7 @@ let node: NodeModel = {
     pivot: {
         x: 0,
         y: 0
-    }
+    },
     style: {
         fill: '#6BA5D7',
         strokeColor: 'white'

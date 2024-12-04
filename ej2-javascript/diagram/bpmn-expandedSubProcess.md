@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bpmn Expanded subProcess in ##Platform_Name## Diagram control | Syncfusion
-description: Learn here all about Bpmn shapes in Syncfusion ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more.
+title: Bpmn Expanded subProcess in ##Platform_Name## Diagram control | Syncfusion®
+description: Learn here all about Bpmn shapes in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Bpmn Expanded subProcess 
 publishingplatform: ##Platform_Name##
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 ---
 
 
-## Expanded SubProcess
+# Expanded SubProcess in TypeScript Diagram control
 An expanded subProcess can contain certain child processess within it.
 
 ### Create BPMN Expanded subProcess

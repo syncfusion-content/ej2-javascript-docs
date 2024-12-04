@@ -15,6 +15,7 @@ System.config({
     map: {
         main: "index.ts",
         typescript: "https://unpkg.com/typescript@2.2.2/lib/typescript.js",
+        "@syncfusion/ej2-diagrams": "syncfusion:ej2-diagrams/dist/ej2-diagrams.umd.min.js",
         "@syncfusion/ej2-base": "syncfusion:ej2-base/dist/ej2-base.umd.min.js",
 <<<<<<<< HEAD:ej2-javascript/code-snippet/ai-assistview/appearance/cssclass/systemjs.config.js
         "@syncfusion/ej2-interactive-chat": "syncfusion:ej2-interactive-chat/dist/ej2-interactive-chat.umd.min.js",

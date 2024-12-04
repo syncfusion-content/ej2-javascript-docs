@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Interaction of nodes in ##Platform_Name## Diagram control | Syncfusion
-description: Learn here all about Nodes in Syncfusion ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more.
+title: Interaction of nodes in ##Platform_Name## Diagram control | Syncfusion®
+description: Learn here all about Nodes in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Nodes interaction 
 publishingplatform: ##Platform_Name##

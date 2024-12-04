@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Lane in ##Platform_Name## Diagram control | Syncfusion
-description: Learn here all about Swim lane in Syncfusion ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more.
+title: Lane in ##Platform_Name## Diagram control | Syncfusion®
+description: Learn here all about Swim lane in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Lane 
 publishingplatform: ##Platform_Name##

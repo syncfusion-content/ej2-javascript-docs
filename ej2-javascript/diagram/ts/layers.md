@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Layers in ##Platform_Name## Diagram control | Syncfusion
-description: Learn here all about Layers in Syncfusion ##Platform_Name## Diagram control of Syncfusion Essential  2 and more.
+title: Layers in ##Platform_Name## Diagram control | Syncfusion®
+description: Learn here all about Layers in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential®  2 and more.
 platform: ej2-javascript
 control: Layers 
 publishingplatform: ##Platform_Name##

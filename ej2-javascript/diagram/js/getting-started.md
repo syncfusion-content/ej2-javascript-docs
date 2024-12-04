@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Diagram control | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more details.
+title: Es5 getting started with ##Platform_Name## Diagram control | Syncfusion®
+description:  Checkout and learn about Es5 getting started with ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
 publishingplatform: ##Platform_Name##
@@ -11,20 +11,20 @@ domainurl: ##DomainURL##
 
 # Es5 getting started in ##Platform_Name## Diagram control
 
-The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+The Essential® JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
 ## Component Initialization
 
-The Essential JS 2 JavaScript components can be initialized by using either of the following ways.
+The Essential® JS 2 JavaScript components can be initialized by using either of the following ways.
 
 * Using local script and style references in a HTML page.
 * Using CDN link for script and style reference.
 
 ### Using local script and style references in a HTML page
 
-**Step 1:** Create an app folder `my-diagram-app` for Essential JS 2 JavaScript components.
+**Step 1:** Create an app folder `my-diagram-app` for Essential® JS 2 JavaScript components.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+**Step 2:** You can get the global scripts and styles from the [Essential Studio® JavaScript (Essential® JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
 **Syntax:**
 > Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -39,17 +39,17 @@ The Essential JS 2 JavaScript components can be initialized by using either of t
 
 **Step 3:** Create a folder `my-diagram-app/resources` and copy/paste the global scripts and styles from the above installed location to `my-diagram-app/resources` location.
 
-**Step 4:** Create a HTML page (index.html) in `my-diagram-app` location and add the Essentials JS 2 script and style references.
+**Step 4:** Create a HTML page (index.html) in `my-diagram-app` location and add the Essentials® JS 2 script and style references.
 
 ```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
-            <title>Essential JS 2</title>
-            <!-- Essential JS 2 material theme -->
+            <title>Essential® JS 2</title>
+            <!-- Essential® JS 2 material theme -->
             <link href="resources/material.css" rel="stylesheet" type="text/css"/>
 
-            <!-- Essential JS 2 Diagram's global script -->
+            <!-- Essential® JS 2 Diagram's global script -->
             <script src="resources/ej2-diagrams.min.js" type="text/javascript"></script>
        </head>
        <body>
@@ -57,17 +57,17 @@ The Essential JS 2 JavaScript components can be initialized by using either of t
   </html>
 ```
 
-**Step 5:** Now, add the `Diagram` element and initiate the `Essential JS 2 Diagram` component in the `index.html` by using following code
+**Step 5:** Now, add the `Diagram` element and initiate the `Essential® JS 2 Diagram` component in the `index.html` by using following code
 
 ```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
-            <title>Essential JS 2</title>
-            <!-- Essential JS 2 material theme -->
+            <title>Essential® JS 2</title>
+            <!-- Essential® JS 2 material theme -->
             <link href="resources/material.css" rel="stylesheet" type="text/css"/>
 
-            <!-- Essential JS 2 Diagram's global script -->
+            <!-- Essential® JS 2 Diagram's global script -->
             <script src="resources/ej2-diagrams.min.js" type="text/javascript"></script>
        </head>
        <body>
@@ -84,13 +84,13 @@ The Essential JS 2 JavaScript components can be initialized by using either of t
   </html>
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential JS 2 Diagram** component.
+**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential® JS 2 Diagram** component.
 
 ### Using CDN link for script and style reference
 
-**Step 1:** Create an app folder `my-diagram-app` for the Essential JS 2 JavaScript components.
+**Step 1:** Create an app folder `my-diagram-app` for the Essential® JS 2 JavaScript components.
 
-**Step 2:** The Essential JS 2 component's global scripts and styles are already hosted in the below CDN link formats.
+**Step 2:** The Essential® JS 2 component's global scripts and styles are already hosted in the below CDN link formats.
 
 **Syntax:**
 > Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -102,7 +102,7 @@ The Essential JS 2 JavaScript components can be initialized by using either of t
 >
 > Styles: [`http://cdn.syncfusion.com/ej2/ej2-diagrams/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-diagrams/styles/material.css)
 
-**Step 3:** Create a HTML page (index.html) in `my-diagram-app` location and add the CDN link references. Now, add the `Diagram` element and initiate the `Essential JS 2 Diagram` component in the index.html by using following code.
+**Step 3:** Create a HTML page (index.html) in `my-diagram-app` location and add the CDN link references. Now, add the `Diagram` element and initiate the `Essential® JS 2 Diagram` component in the index.html by using following code.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -115,7 +115,7 @@ The Essential JS 2 JavaScript components can be initialized by using either of t
         
 {% previewsample "page.domainurl/code-snippet/diagram/getting-started-cs6" %}
 
-**Step 4:** Now, run the `index.html` in web browser, it will render the `Essential JS 2 Diagram` component.
+**Step 4:** Now, run the `index.html` in web browser, it will render the `Essential® JS 2 Diagram` component.
 
 
 ## Module Injection
@@ -203,7 +203,7 @@ Create and add a `node` (JSON data) with specific position, size.
 
 ### Apply shape and style to node
 
-Syncfusion diagram control provides support to render many build-in shapes in diagram.
+Syncfusion® diagram control provides support to render many build-in shapes in diagram.
 Please refer to [`Shapes`](../api/diagram/shapes/) to know about built-in Shapes.
 
 * The appearance of a node can be customized by changing its [`fill`](../api/diagram/shapeStyleModel#fill-string) color, [`strokeColor`](../api/diagram/shapeStyleModel#strokecolor-string), [`strokeWidth`](../api/diagram/shapeStyleModel#strokewidth-number), [`borderColor`](../api/diagram/node#borderColor-string), [`borderWidth`](../api/diagram/node#borderWidth-number), [`strokeDashArray`](../api/diagram/shapeStyleModel#strokeDashArray-number),  [`opacity`](../api/diagram/shapeStyleModel#opacity-number), and [`shadow`](../api/diagram/shapeStyleModel#shadow-number).

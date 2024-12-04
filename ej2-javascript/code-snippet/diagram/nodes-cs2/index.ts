@@ -1,6 +1,3 @@
-
-
-
 import { Diagram, NodeModel } from '@syncfusion/ej2-diagrams';
 // A node is created and stored in nodes array.
 let node: NodeModel = {
@@ -27,7 +24,7 @@ diagram.appendTo('#element');
     diagram.add(node);
 };
 (document.getElementById('deleteNode') as HTMLInputElement).onclick = function() {
-    diagram.remove();
+    diagram.remove(diagram.nodes[0]);
 };
 
 

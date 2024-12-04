@@ -1,4 +1,5 @@
-import { Diagram, ConnectorModel } from '@syncfusion/ej2-diagrams';
+import {Diagram,ConnectorModel, ConnectorEditing} from '@syncfusion/ej2-diagrams';
+Diagram.Inject(ConnectorEditing)
 
 let connectors: ConnectorModel[] = [
   {

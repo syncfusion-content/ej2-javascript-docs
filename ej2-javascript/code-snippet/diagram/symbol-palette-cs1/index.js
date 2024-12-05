@@ -92,7 +92,7 @@ var connectorSymbols = [{
     }
 },
 {
-    id: 'link3',
+    id: 'Link2',
     type: 'Orthogonal',
     sourcePoint: {
         x: 0,
@@ -110,7 +110,7 @@ var connectorSymbols = [{
     }
 },
 {
-    id: 'Link21',
+    id: 'Link3',
     type: 'Straight',
     sourcePoint: {
         x: 0,
@@ -125,7 +125,7 @@ var connectorSymbols = [{
     }
 },
 {
-    id: 'link23',
+    id: 'Link4',
     type: 'Straight',
     sourcePoint: {
         x: 0,
@@ -143,7 +143,7 @@ var connectorSymbols = [{
     }
 },
 {
-    id: 'link33',
+    id: 'Link5',
     type: 'Bezier',
     sourcePoint: {
         x: 0,
@@ -165,7 +165,7 @@ var connectorSymbols = [{
 var svgShapes = [
 
 {
-    id: 'node2',
+    id: 'native',
     style: {
         fill: 'none'
     },

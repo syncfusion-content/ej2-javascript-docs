@@ -26,16 +26,13 @@ var diagram = new ej.diagrams.Diagram({
     diagram.dataBind();
   },
   mouseOver: function (args) {
-    //Customize
+    console.log(args.name);
   },
   mouseLeave: function (args) {
     //Customize
-    args.element.style.fill = '#6BA5D7';
+    args.element.style.fill = 'green';
     diagram.dataBind();
   },
 });
 diagram.appendTo('#element');
 
-document.getElementById('resetSegments').onclick = () => {
-  diagram.resetSegments();
-};

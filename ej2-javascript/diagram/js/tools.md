@@ -49,7 +49,7 @@ The following code example illustrates how to draw a path shape.
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/diagram/Tools-cs1" %}
+{% previewsample "page.domainurl/code-snippet/diagram/Tools-cs2" %}
 
 ### Text Nodes
 

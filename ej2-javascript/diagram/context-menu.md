@@ -126,29 +126,95 @@ In certain situations, you may want to hide specific menu items based on the sel
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/diagram/contextmenu-cs5/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/diagram/contextmenu-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/diagram/contextmenu-cs5" %}
+```javascript
+
+import { Diagram, DiagramContextMenu, NodeModel } from '@syncfusion/ej2-diagrams';
+
+Diagram.Inject(DiagramContextMenu);
+
+const nodes: NodeModel[] = [
+  {
+    id: 'node1', width: 100, height: 100, offsetX: 100, offsetY: 100,
+    style: { fill: '#6BA5D7', strokeColor: 'white', strokeWidth: 1 },
+    annotations: [{
+      id: 'label1', content: 'Rectangle1', offset: { x: 0.5, y: 0.5 },
+      style: { color: 'white' }
+    }]
+  },
+  {
+    id: 'node2', width: 100, height: 100, offsetX: 300, offsetY: 100,
+    style: { fill: '#6BA5D7', strokeColor: 'white', strokeWidth: 1 },
+    annotations: [{
+      id: 'label2', content: 'Rectangle2',
+      offset: { x: 0.5, y: 0.5 },
+      style: { color: 'white' }
+    }]
+  },
+];
+
+const menuItems = [
+  { text: 'Google.com', id: 'google', url: 'https://www.google.co.in/' },
+  { text: 'w3schools.com', id: 'W3Schools', url: 'https://www.w3schools.com/' },
+  { text: 'stackoverflow.com', id: 'stackoverflow', url: 'https://stackoverflow.com/' },
+];
+
+new Diagram({
+  width: '100%',
+  height: '350px',
+  nodes,
+  contextMenuSettings: {
+    show: true,
+    items: menuItems.map(item => ({ ...item, target: '.e-diagramcontent' })),
+    showCustomMenuOnly: true,
+  },
+}, '#element');
+
+
+```
 
 {% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/diagram/contextmenu-cs5/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/diagram/contextmenu-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
+```javascript
 
-{% previewsample "page.domainurl/code-snippet/diagram/contextmenu-cs5" %}
+var nodes = [
+  {
+    id: 'node1', width: 100, height: 100, offsetX: 100, offsetY: 100,
+    style: { fill: '#6BA5D7', strokeColor: 'white', strokeWidth: 1 },
+    annotations: [{
+      id: 'label1', content: 'Rectangle1',
+      offset: { x: 0.5, y: 0.5 },
+      style: { color: 'white' }
+    }]
+  },
+  {
+    id: 'node2', width: 100, height: 100, offsetX: 300, offsetY: 100,
+    style: { fill: '#6BA5D7', strokeColor: 'white', strokeWidth: 1 },
+    annotations: [{
+      id: 'label2', content: 'Rectangle2', offset: { x: 0.5, y: 0.5 },
+      style: { color: 'white' }
+    }]
+  }
+];
+
+var menuItems = [
+  { text: 'Google.com', id: 'google', url: 'https://www.google.co.in/' },
+  { text: 'w3schools.com', id: 'W3Schools', url: 'https://www.w3schools.com/' },
+  { text: 'stackoverflow.com', id: 'stackoverflow', url: 'https://stackoverflow.com/' }
+];
+
+new ej.diagrams.Diagram({
+  width: '100%',
+  height: '350px',
+  nodes,
+  contextMenuSettings: {
+    show: true,
+    items: menuItems.map(item => ({ ...item, target: '.e-diagramcontent' })),
+    showCustomMenuOnly: true
+  }
+}, '#element');
+
+```
+
 {% endif %}
 
 ## Template Support for Context menu

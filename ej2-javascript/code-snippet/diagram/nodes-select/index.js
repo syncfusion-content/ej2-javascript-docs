@@ -36,6 +36,6 @@ document.getElementById('select').onclick = () => {
   diagram.select([diagram.nodes[0]]);
 };
 
-document.getElementById('unselect').onclick = () => {
+document.getElementById('unSelect').onclick = () => {
   diagram.clearSelection();
 };

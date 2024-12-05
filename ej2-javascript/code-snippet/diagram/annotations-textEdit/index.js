@@ -15,7 +15,7 @@ var diagram = new ej.diagrams.Diagram(
     height: '600px',
     nodes: [node],
     textEdit: function (args) {
-      //customize
+      console.log(args.name);
     },
   },
   '#element'

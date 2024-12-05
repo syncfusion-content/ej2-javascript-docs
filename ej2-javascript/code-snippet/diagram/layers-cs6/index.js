@@ -52,7 +52,7 @@ var diagram = new ej.diagrams.Diagram(
   '#element'
 );
 
-document.getElementById('removeLayer').onclick = () => {
+document.getElementById('moveObjects').onclick = () => {
   /**
    * Move objects from one layer to another layern
    * Parameter 1 - An array of object IDs represented as strings to be moved

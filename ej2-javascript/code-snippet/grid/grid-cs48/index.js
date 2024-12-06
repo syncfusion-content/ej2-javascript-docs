@@ -29,7 +29,7 @@ var grid = new ej.grids.Grid({
         };
     },
     actionBegin: (args) =>{
-        window.role = args.rowData['Role'];
+        window.role = args.rowData.Role;
     },
     columns: [
         { field: 'EmployeeID', headerText: 'Employee ID', isPrimaryKey: true, textAlign: 'Right', width: 120 },
@@ -51,6 +51,7 @@ var grid = new ej.grids.Grid({
                     dataSource: salaryDetails,
                     fields: { value: 'salary', text: 'salary' },
                     allowFiltering: true,
+                    change: customFn
                 }
             }
         },
@@ -63,9 +64,11 @@ window.role = '';
 
 function customFn(args) {
     var formObj = grid.editModule.formObj.element['ej2_instances'][0];
+    let salary = parseInt(args.value)
+
     switch (window['role']) {
         case 'Sales':
-            if ((args.value >= 5000) && (args.value < 15000))
+            if ((salary >= 5000) && (salary < 15000))
                 return true;
             else
                 formObj.rules['Salary']['required'][1] = 'Please enter valid Sales Salary >=5000 and< 15000';
@@ -73,7 +76,7 @@ function customFn(args) {
             break;
 
         case 'Support':
-            if ((args.value >= 15000 && args.value < 19000))
+            if ((salary >= 15000 && salary < 19000))
                 return true;
             else
                 formObj.rules['Salary']['required'][1] = 'Please enter valid Support Salary >=15000 and < 19000';
@@ -81,7 +84,7 @@ function customFn(args) {
             break;
 
         case 'Engineer':
-            if ((args.value >= 25000 && args.value < 30000))
+            if ((salary >= 25000 && salary < 30000))
                 return true;
             else
                 formObj.rules['Salary']['required'][1] = 'Please enter valid Engineer Salary between >=25000 and < 30000';
@@ -89,7 +92,7 @@ function customFn(args) {
             break;
 
         case 'TeamLead':
-            if ((args.value >= 30000) && (args.value < 50000))
+            if ((salary >= 30000) && (salary < 50000))
                 return true;
             else
                 formObj.rules['Salary']['required'][1] = 'Please enter valid TeamLead Salary >= 30000 and < 50000';
@@ -97,7 +100,7 @@ function customFn(args) {
             break;
 
         case 'Manager':
-            if ((args.value >= 50000) && (args.value < 70000))
+            if ((salary >= 50000) && (salary < 70000))
                 return true;
             else
                 formObj.rules['Salary']['required'][1] = 'Please enter valid Manager Salary >=50000 and < 70000';

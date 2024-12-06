@@ -35,7 +35,7 @@ let grid: Grid = new Grid({
         };
     },
     actionBegin: (args: EditEventArgs) => {
-        window['role'] = args.rowData as { Role: string }['Role'];
+        window['role'] = args.rowData.Role as columnDataType ;
     },
     columns: [
         { field: 'EmployeeID', headerText: 'Employee ID', isPrimaryKey: true, textAlign: 'Right', width: 120 },
@@ -56,7 +56,9 @@ let grid: Grid = new Grid({
                     query: new Query(),
                     dataSource: salaryDetails,
                     fields: { value: 'salary', text: 'salary' },
-                    allowFiltering: true
+                    allowFiltering: true,
+                    change: customFn
+
                 }
             }
         },
@@ -67,12 +69,14 @@ grid.appendTo('#Grid');
 
 window.role = '';
 
-function customFn(args) {
+function customFn(args: { value: string }) {
     let formObj = grid.editModule.formObj.element['ej2_instances'][0];
+    let salary = parseInt(args.value)
+  debugger;
     switch (window['role']) {
 
         case 'Sales':
-            if ((args.value >= 5000) && (args.value < 15000))
+            if ((salary >= 5000) && (salary < 15000))
                 return true;
             else
                 formObj.rules['Salary']['required'][1] = 'Please enter valid Sales Salary >=5000 and< 15000';
@@ -80,7 +84,7 @@ function customFn(args) {
             break;
 
         case 'Support':
-            if ((args.value >= 15000 && args.value < 19000))
+            if ((salary >= 15000 && salary < 19000))
                 return true;
             else
                 formObj.rules['Salary']['required'][1] = 'Please enter valid Support Salary >=15000 and < 19000';
@@ -88,7 +92,7 @@ function customFn(args) {
             break;
 
         case 'Engineer':
-            if ((args.value >= 25000 && args.value < 30000))
+            if ((salary >= 25000 && salary < 30000))
                 return true;
             else
                 formObj.rules['Salary']['required'][1] = 'Please enter valid Engineer Salary between >=25000 and < 30000';
@@ -96,7 +100,7 @@ function customFn(args) {
             break;
 
         case 'TeamLead':
-            if ((args.value >= 30000) && (args.value < 50000))
+            if ((salary >= 30000) && (salary < 50000))
                 return true;
             else
                 formObj.rules['Salary']['required'][1] = 'Please enter valid TeamLead Salary >= 30000 and < 50000';
@@ -104,7 +108,7 @@ function customFn(args) {
             break;
 
         case 'Manager':
-            if ((args.value >= 50000) && (args.value < 70000))
+            if ((salary >= 50000) && (salary < 70000))
                 return true;
             else
                 formObj.rules['Salary']['required'][1] = 'Please enter valid Manager Salary >=50000 and < 70000';
@@ -118,7 +122,7 @@ function customFn(args) {
 function valChange(args: ChangeEventArgs) {
     window['role'] = args.value.toString(); // Explicitly cast args.value to string
     let formObj = grid.editModule.formObj.element['ej2_instances'][0];
-
+    
     switch ( window['role']) {
 
         case 'Sales':
@@ -148,8 +152,9 @@ function valChange(args: ChangeEventArgs) {
     }
 }
 
-declare global {
-    interface Window {
-        role: string;
-    }
+export interface columnDataType
+{
+ EmployeeID:string,
+ Role:string,
+ Address:string
 }

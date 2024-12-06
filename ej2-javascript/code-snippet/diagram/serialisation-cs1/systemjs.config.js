@@ -15,6 +15,7 @@ System.config({
     map: {
         main: "index.ts",
         typescript: "https://unpkg.com/typescript@2.2.2/lib/typescript.js",
+        "@syncfusion/ej2-diagrams": "syncfusion:ej2-diagrams/dist/ej2-diagrams.umd.min.js",
         "@syncfusion/ej2-base": "syncfusion:ej2-base/dist/ej2-base.umd.min.js",
         "@syncfusion/ej2-base/dom": "syncfusion:ej2-base/dist/ej2-base.umd.min.js",
         "@syncfusion/ej2-inputs": "syncfusion:ej2-inputs/dist/ej2-inputs.umd.min.js",

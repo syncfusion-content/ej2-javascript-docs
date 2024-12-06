@@ -43,7 +43,7 @@ function getFlowShapes() {
         },
       },
       {
-        id: 'link3',
+        id: 'Link2',
         type: 'Orthogonal',
         sourcePoint: { x: 0, y: 0 },
         targetPoint: { x: 60, y: 60 },
@@ -51,7 +51,7 @@ function getFlowShapes() {
         style: { strokeWidth: 1, strokeColor: '#757575' },
       },
       {
-        id: 'Link21',
+        id: 'Link3',
         type: 'Straight',
         sourcePoint: { x: 0, y: 0 },
         targetPoint: { x: 60, y: 60 },
@@ -62,7 +62,7 @@ function getFlowShapes() {
         },
       },
       {
-        id: 'link23',
+        id: 'Link4',
         type: 'Straight',
         sourcePoint: { x: 0, y: 0 },
         targetPoint: { x: 60, y: 60 },
@@ -70,7 +70,7 @@ function getFlowShapes() {
         style: { strokeWidth: 1, strokeColor: '#757575' },
       },
       {
-        id: 'link33',
+        id: 'Link5',
         type: 'Bezier',
         sourcePoint: { x: 0, y: 0 },
         targetPoint: { x: 60, y: 60 },

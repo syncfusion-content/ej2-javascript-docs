@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Load JSON Data ##Platform_Name## Diagram control | Syncfusion
-description: Learn here about Ej1 api migration in Syncfusion ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more.
+title: Load JSON Data ##Platform_Name## Diagram control | Syncfusion®
+description: Learn here about Ej1 api migration in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: EJ1 Migration
 publishingplatform: ##Platform_Name##

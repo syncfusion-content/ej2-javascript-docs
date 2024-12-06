@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Connector customization in ##Platform_Name## Diagram control | Syncfusion
-description: Learn here all about Connectors in Syncfusion ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more.
+title: Connector customization in ##Platform_Name## Diagram control | Syncfusion®
+description: Learn here all about Connectors in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Connector customization
 publishingplatform: ##Platform_Name##

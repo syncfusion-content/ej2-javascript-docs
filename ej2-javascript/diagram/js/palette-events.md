@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Symbol Palette Events in ##Platform_Name## Diagram control | Syncfusion
-description: Learn here all about Symbol palette in Syncfusion ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more.
+title: Symbol Palette Events in ##Platform_Name## Diagram control | Syncfusion®
+description: Learn here all about Symbol palette in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Symbol palette 
 publishingplatform: ##Platform_Name##

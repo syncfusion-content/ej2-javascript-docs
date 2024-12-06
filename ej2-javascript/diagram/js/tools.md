@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tools in ##Platform_Name## Diagram control | Syncfusion
-description: Learn here all about Tools in Syncfusion ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more.
+title: Tools in ##Platform_Name## Diagram control | Syncfusion®
+description: Learn here all about Tools in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Tools 
 publishingplatform: ##Platform_Name##
@@ -49,7 +49,7 @@ The following code example illustrates how to draw a path shape.
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/diagram/Tools-cs1" %}
+{% previewsample "page.domainurl/code-snippet/diagram/Tools-cs2" %}
 
 ### Text Nodes
 

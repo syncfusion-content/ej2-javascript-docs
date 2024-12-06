@@ -32,7 +32,7 @@ var node3: NodeModel = {
 let diagram: Diagram = new Diagram({
   width: '100%',
   height: 900,
-  nodes: [node, node2, node3, group],
+  nodes: [node, node2, group, node3],
 });
 diagram.appendTo('#element');
 

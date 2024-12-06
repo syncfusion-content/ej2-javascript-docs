@@ -34,6 +34,9 @@ document.getElementById('add').onclick = function () {
 };
 
 document.getElementById('remove').onclick = function () {
-    diagram.remove()
+    if (diagram.connectors.length > 0) {
+        diagram.select([diagram.connectors[0]]);
+        diagram.remove()
+    }
 };
 

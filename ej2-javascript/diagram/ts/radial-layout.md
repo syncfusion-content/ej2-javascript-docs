@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Radial tree layout in ##Platform_Name## Diagram control | Syncfusion
-description: Learn here all about Automatic layout in Syncfusion ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more.
+title: Radial tree layout in ##Platform_Name## Diagram control | Syncfusion®
+description: Learn here all about Automatic layout in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Radial tree 
 publishingplatform: ##Platform_Name##

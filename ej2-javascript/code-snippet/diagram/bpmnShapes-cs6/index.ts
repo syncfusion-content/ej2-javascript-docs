@@ -21,7 +21,6 @@ let node: NodeModel = {
             subProcess: {
                 collapsed: true
             }
-            as BpmnSubProcessModel
         }
     },
 };

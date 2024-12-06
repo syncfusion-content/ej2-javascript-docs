@@ -44,7 +44,7 @@ function created(): void {
   diagram.select([diagram.nodes[0]]);
 };
 
-(document.getElementById('unselect') as HTMLInputElement).onclick = () => {
+(document.getElementById('unSelect') as HTMLInputElement).onclick = () => {
   diagram.clearSelection();
 };
 

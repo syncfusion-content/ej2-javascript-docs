@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Serialization in ##Platform_Name## Diagram control | Syncfusion
-description: Learn here all about Serialization in Syncfusion ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more.
+title: Serialization in ##Platform_Name## Diagram control | Syncfusion®
+description: Learn here all about Serialization in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Serialization 
 publishingplatform: ##Platform_Name##

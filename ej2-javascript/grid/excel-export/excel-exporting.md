@@ -434,7 +434,7 @@ In the following example, the [toolbarClick](../../api/grid/#toolbarclick) funct
 {% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs4" %}
 {% endif %}
 
-## Merge duplicate cells in specific column and export in Grid
+## Merge duplicate cells in a specific column before exporting
 
 You can merge duplicate cells (based on their values) in a specific column of the Syncfusion Grid. This can be achieved by utilizing the [dataBound](../../api/grid/#databound) event. Additionally, you can merge duplicate cells in the specified column during export by using the [excelQueryCellInfo](../../api/grid/#excelquerycellinfo) event for Excel and CSV formats. This functionality is useful for improving the readability of your data and providing a clearer visual representation.
 

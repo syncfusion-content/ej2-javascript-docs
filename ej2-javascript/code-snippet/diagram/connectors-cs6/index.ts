@@ -89,8 +89,8 @@ let diagram: Diagram = new Diagram({
 });
 diagram.appendTo('#element');
 (document.getElementById('updatePort') as HTMLInputElement).onclick = () =>{
-    connectors.sourcePortID = 'port2';
-    connectors.targetPortID = 'port3';
+    diagram.connectors[0].sourcePortID = 'port2';
+    diagram.connectors[0].targetPortID = 'port3';
     diagram.dataBind();
 }
 

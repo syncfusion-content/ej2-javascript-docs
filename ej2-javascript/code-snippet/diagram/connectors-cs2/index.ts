@@ -33,7 +33,7 @@ diagram.appendTo('#element');
     diagram.add(connectors)
 };
 (document.getElementById('remove') as HTMLInputElement).onclick = function () {
-    diagram.remove()
+    diagram.remove(diagram.connectors[0])
 }
 
 

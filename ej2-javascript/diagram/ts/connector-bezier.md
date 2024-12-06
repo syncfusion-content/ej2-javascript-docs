@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bezier connector in ##Platform_Name## Diagram control | Syncfusion
-description: Learn here all about Connectors in Syncfusion ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more.
+title: Bezier connector in ##Platform_Name## Diagram control | Syncfusion®
+description: Learn here all about Connectors in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Connectors 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-## Bezier
+# Bezier connector
 
 Bezier segments are used to create curve segments and the curves are configurable either with the control points or with vectors.
 
@@ -132,4 +132,4 @@ To customize the thumb size for a specific connector, disable the [`InheritSegme
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/diagram/connectors-cs63" %}\
+{% previewsample "page.domainurl/code-snippet/diagram/connectors-cs63" %}

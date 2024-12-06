@@ -16,7 +16,7 @@ var diagram = new ej.diagrams.Diagram(
     height: '600px',
     nodes: [node],
     doubleClick: function (args) {
-    //customize
+      console.log(args.name);
     },
   },
   '#element'

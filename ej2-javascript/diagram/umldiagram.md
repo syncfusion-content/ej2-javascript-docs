@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Umldiagram in ##Platform_Name## Diagram control | Syncfusion
-description: Learn here all about Umldiagram in Syncfusion ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more.
+title: Umldiagram in ##Platform_Name## Diagram control | Syncfusion®
+description: Learn here all about Umldiagram in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Umldiagram 
 publishingplatform: ##Platform_Name##

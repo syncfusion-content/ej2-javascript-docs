@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grid lines in ##Platform_Name## Diagram control | Syncfusion
-description: Learn here all about Grid lines in Syncfusion ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more.
+title: Grid lines in ##Platform_Name## Diagram control | Syncfusion®
+description: Learn here all about Grid lines in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Grid lines 
 publishingplatform: ##Platform_Name##
@@ -241,7 +241,7 @@ The [`snapObjectDistance`](../api/diagram/snapSettings/#snapobjectdistance) prop
 
 The [`snapAngle`](../api/diagram/snapSettings/#snapangle) property defines the increments by which an object can be rotated within a diagram. 
 
-For example, if the snapAngle is set to 15 degrees, an object can only be rotated to angles that are multiples of 15 degrees, such as 15°, 30°, 45°, and so on. This ensures precise angule alignment and consistent object positioning, enhancing the overall design accuracy. By default, the snap angle is set to 5"
+For example, if the snapAngle is set to 15 degrees, an object can only be rotated to angles that are multiples of 15 degrees, such as 15°, 30°, 45°, and so on. This ensures precise angle alignment and consistent object positioning, enhancing the overall design accuracy. By default, the snap angle is set to 5"
 
 The following code example demonstrates how to set the `snapAngle` property and update it dynamically.
 

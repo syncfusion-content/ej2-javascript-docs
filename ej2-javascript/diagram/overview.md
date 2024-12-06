@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Diagram control | Syncfusion
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more.
+title: Overview in ##Platform_Name## Diagram control | Syncfusion®
+description: Learn here all about Overview in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Overview 
 publishingplatform: ##Platform_Name##

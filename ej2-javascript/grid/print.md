@@ -333,7 +333,7 @@ Here is an example of how to print grid along with chart control:
 {% previewsample "page.domainurl/code-snippet/grid/print-component-cs1" %}
 {% endif %}
 
-## Add a title when using Grid print function
+## Add a title to the header while printing
 
 You can add a title to the header when printing the Syncfusion Grid by utilizing the [beforePrint](../api/grid/#beforeprint) event. This event allows you to customize the print layout, including the addition of a title element, ensuring that the printed document is informative and visually appealing.
 

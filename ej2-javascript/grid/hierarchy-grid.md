@@ -463,7 +463,7 @@ The following example demonstrates how to hide the expand/collapse icon in the r
 {% previewsample "page.domainurl/code-snippet/grid/hierarchy-grid-cs1" %}
 {% endif %}
 
-## Change hierarchy grid icon in Grid
+## Customize hierarchy grid icons
 
 You can customize the default expand/collapse icons in the Hierarchy Grid of Syncfusion Grid component using custom CSS, allowing you to modify their visual representation. To achieve this, add the following CSS to your index.html file:
 

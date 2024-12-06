@@ -355,7 +355,7 @@ The following example demonstrates how to export hierarchical grid to PDF docume
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs211" %}
 {% endif %}
 
-## Merge duplicate cells in specific column and export in Grid
+## Merge duplicate cells in a specific column before exporting
 
 You can merge duplicate cells (based on their values) in a specific column of the Syncfusion Grid. This can be achieved by utilizing the [dataBound](../../api/grid/#databound) event. Additionally, you can merge duplicate cells in the specified column during export by using the [pdfQueryCellInfo](../../api/grid/#pdfquerycellinfo) event for PDF format. This functionality is useful for improving the readability of your data and providing a clearer visual representation.
 

@@ -276,6 +276,6 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 * Type 'To investigate' to experience instant sentence autocompletion.
 
-![Syncfusion Smart TextArea - Output](../images/smart-textarea-userphrases.gif)
+![Syncfusion Smart TextArea - Output](./images/smart-textarea-userphrases.gif)
 
 > [View Sample in GitHub](https://github.com/syncfusion/smart-ai-samples/tree/master/typescript/src/app/smarttextarea).

@@ -31,7 +31,7 @@ textareaObj.appendTo('#smart-textarea');
 {% endhighlight %}
 {% endtabs %}
 
-![SUggestion on popup](../images/smart-textarea-popup.gif)
+![Suggestion on popup](./images/smart-textarea-popup.gif)
 
 * If `ShowSuggestionOnPopup` is `false`, suggestions displayed inline.
 
@@ -51,7 +51,7 @@ textareaObj.appendTo('#smart-textarea');
 {% endhighlight %}
 {% endtabs %}
 
-![SUggestion inline](../images/smart-textarea-inline.gif)
+![Suggestion inline](./images/smart-textarea-inline.gif)
 
 By default `showSuggestionOnPopup` is `None`.
 

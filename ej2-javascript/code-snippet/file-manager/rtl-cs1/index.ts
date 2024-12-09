@@ -19,4 +19,11 @@ let filemanagerInstance: FileManager = new FileManager({
 // render initialized FileManager
 filemanagerInstance.appendTo('#filemanager');
 
-
+let loader = document.getElementById('loader');
+let container = document.getElementById('container');
+if (loader) {
+    loader.style.display = "none";
+}
+if (container) {
+    container.style.visibility = "visible";
+}

@@ -33,4 +33,11 @@ function onAjaxFailure(args: FailureEventArgs){
     console.log("Ajax request has failed");
 }
 
-
+let loader = document.getElementById('loader');
+let container = document.getElementById('container');
+if (loader) {
+    loader.style.display = "none";
+}
+if (container) {
+    container.style.visibility = "visible";
+}

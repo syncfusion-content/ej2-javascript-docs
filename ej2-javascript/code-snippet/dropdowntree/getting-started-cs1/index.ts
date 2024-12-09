@@ -40,4 +40,11 @@ let DropDownTreeObject: DropDownTree = new DropDownTree({
 // render initialized Dropdown Tree
 DropDownTreeObject.appendTo('#ddltreeelement');
 
-
+let loader = document.getElementById('loader');
+let container = document.getElementById('container');
+if (loader) {
+    loader.style.display = "none";
+}
+if (container) {
+    container.style.visibility = "visible";
+}

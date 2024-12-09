@@ -27,4 +27,11 @@ function onCreate(args: Object){
     console.log("File Manager has been created successfully");
 }
 
-
+let loader = document.getElementById('loader');
+let container = document.getElementById('container');
+if (loader) {
+    loader.style.display = "none";
+}
+if (container) {
+    container.style.visibility = "visible";
+}

@@ -179,6 +179,9 @@ The following example shows a basic ListView.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/getting-started-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/getting-started-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/listview/getting-started-cs1" %}

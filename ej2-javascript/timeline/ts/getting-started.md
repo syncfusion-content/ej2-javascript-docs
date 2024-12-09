@@ -98,7 +98,7 @@ Add the HTML div tag with the `id` attribute as `timeline` to your `index.html` 
   </head>
 
   <body>
-    <div class="control-container">
+    <div class="control-container" style="height: 300px;">
       <div id="timeline"></div>
     </div>
   </body>

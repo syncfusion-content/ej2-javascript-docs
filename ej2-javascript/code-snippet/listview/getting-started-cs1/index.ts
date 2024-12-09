@@ -21,5 +21,12 @@ let listviewInstance: ListView = new ListView({
 //Render initialized ListView
 listviewInstance.appendTo("#element");
 
-
+let loader = document.getElementById('loader');
+let container = document.getElementById('container');
+if (loader) {
+    loader.style.display = "none";
+}
+if (container) {
+    container.style.visibility = "visible";
+}
 

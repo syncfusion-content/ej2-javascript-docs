@@ -161,6 +161,9 @@ The following example shows the basic File Manager component.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/getting-started-cs1/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/file-manager/getting-started-cs1/index.ts %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/file-manager/getting-started-cs1" %}

@@ -157,7 +157,7 @@ npm start
 {% include code-snippet/slider/getting-started-cs5/index.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/slider/getting-started-cs5/app.ts %}
+{% include code-snippet/slider/getting-started-cs5/index.ts %}
 {% endhighlight %}
 {% highlight css tabtitle="index.css" %}
 {% include code-snippet/slider/getting-started-cs5/index.css %}

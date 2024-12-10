@@ -153,6 +153,9 @@ The output will be as follows:
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/tooltip/getting-started-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/tooltip/getting-started-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/tooltip/getting-started-cs1" %}
@@ -171,6 +174,9 @@ Refer to the following code example to create a Tooltip on multiple targets with
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/tooltip/getting-started-2-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/tooltip/getting-started-2-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
           

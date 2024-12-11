@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Appearance
 
-The appearance of ports can be customized by using [`strokeColor`](../api/diagram/shapeStyleModel/#strokecolor), [`strokeWidth`](../api/diagram/port#strokeWidth-string),[`fill`](../api/diagram/shapeStyleModel/#fill) and [`opacity`](../api/diagram/shapeStyleModel/#opacity) properties of the port. Customize the port size by using the [`width`](../api/diagram/pointPortModel/#width) and [`height`](../api/diagram/pointPortModel/#height) properties of port. The ports [`visibility`](../api/diagram/portvisibility/) property allows you to define, when the port should be visible. 
+The appearance of ports can be customized by using [`strokeColor`](../api/diagram/shapeStyleModel/#strokecolor), [`strokeWidth`](../api/diagram/shapeStyleModel/#strokewidth),[`fill`](../api/diagram/shapeStyleModel/#fill) and [`opacity`](../api/diagram/shapeStyleModel/#opacity) properties of the port. Customize the port size by using the [`width`](../api/diagram/pointPortModel/#width) and [`height`](../api/diagram/pointPortModel/#height) properties of port. The ports [`visibility`](../api/diagram/portvisibility/) property allows you to define, when the port should be visible. 
 
 For more information about port visibility refer [`Port Visibility`](#port-visibility)
 

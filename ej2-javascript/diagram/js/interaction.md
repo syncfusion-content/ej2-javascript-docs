@@ -74,7 +74,7 @@ diagram.clearSelection();
 ```
 ### Get selected items
 
-You can get the currently selected [`nodes`](../api/diagram/selectorModel/#connectors) and [`connectors`](../api/diagram/selectorModel/#nodes) using [`selectedItems`](../api/diagram/selectorModel/) property of the diagram.
+You can get the currently selected [`nodes`](../api/diagram/selectorModel/#nodes) and [`connectors`](../api/diagram/selectorModel/#connectors ) using [`selectedItems`](../api/diagram/selectorModel/) property of the diagram.
 
 ```javascript
 

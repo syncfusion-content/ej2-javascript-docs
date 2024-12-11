@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 ---
 ## Straight
 
-To create a straight line, specify the [`type`](../api/diagram/segments) of the segment as **straight** and add a straight segment to [`segments`](../api/diagram/connector#segments) collection and need to specify [`type`](../api/diagram/connector#type-Segments) for the connector. The following code example illustrates how to create a default straight segment.
+To create a straight line, specify the [`type`](../api/diagram/segments) of the segment as **straight** and add a straight segment to [`segments`](../api/diagram/connector#segments) collection and need to specify [`type`](../api/diagram/connector/#type) for the connector. The following code example illustrates how to create a default straight segment.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

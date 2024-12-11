@@ -68,7 +68,7 @@ Diagram allows to create read-only annotations. You have to set the read-only co
 Diagram provides support to edit an annotation at runtime, either programmatically or interactively. By default, annotation is in view mode. But it can be brought to edit mode in two ways;
 
 ### Programmatically
-By using [`startTextEdit`](../api/diagram/#startTextEdit) method, edit the text through programmatically.
+By using [`startTextEdit`](../api/diagram/#starttextedit) method, edit the text through programmatically.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -85,11 +85,11 @@ By using [`startTextEdit`](../api/diagram/#startTextEdit) method, edit the text 
     1. By double-clicking the annotation.
     2. By selecting the item and pressing the F2 key.
 
-Double-clicking any annotation will enables editing mode. When the focus of editor is lost, the annotation for the node is updated. When you double-click on the node/connector/diagram model, the [`doubleClick`](../api/diagram/#doubleClick--emittypeidoubleClickeventargs) event gets triggered.
+Double-clicking any annotation will enables editing mode. When the focus of editor is lost, the annotation for the node is updated. When you double-click on the node/connector/diagram model, the [`doubleClick`](../api/diagram/#doubleclick) event gets triggered.
 
 ## Drag Limit
 
-* The diagram control now supports defining the [`dragLimit`](../api/diagram/annotationModel/#dragLimit) to the label while dragging from the connector and also update the position to the nearest segment offset.
+* The diagram control now supports defining the [`dragLimit`](../api/diagram/annotationModel/#draglimit) to the label while dragging from the connector and also update the position to the nearest segment offset.
 
 * You can set the value to dragLimit [`left`](../api/diagram/marginModel/#left), [`right`](../api/diagram/marginModel/#right), [`top`](../api/diagram/marginModel/#top), and [`bottom`](../api/diagram/marginModel/#bottom) properties which allow the dragging of connector labels to a certain limit based on the user defined values.
 

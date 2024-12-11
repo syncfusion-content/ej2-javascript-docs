@@ -19,7 +19,7 @@ You can add annotations to the chart by using the <code>annotations</code> optio
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-appearance-cs1/index.ts %}
 {% endhighlight %}
@@ -52,7 +52,7 @@ Annotations can be placed either with respect to `Series` or `Chart`. by default
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-appearance-cs2/index.ts %}
 {% endhighlight %}
@@ -77,13 +77,13 @@ Annotations can be placed either with respect to `Series` or `Chart`. by default
 {% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs2" %}
 {% endif %}
 
-## Co-ordinate Units
+## Co-ordinate units
 
 Specified the coordinates units of the annotation either `Pixel` or `Point`.
 
- {% if page.publishingplatform == "typescript" %}
+{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-appearance-cs3/index.ts %}
 {% endhighlight %}
@@ -114,7 +114,7 @@ Annotation provides `verticalAlignment` and `horizontalAlignment`. The `vertical
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-appearance-cs4/index.ts %}
 {% endhighlight %}
@@ -145,7 +145,7 @@ By setting text div in the `content` option of annotation object you can add sub
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-appearance-cs5/index.ts %}
 {% endhighlight %}
@@ -170,7 +170,38 @@ By setting text div in the `content` option of annotation object you can add sub
 {% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs5" %}
 {% endif %}
 
-## See Also
+## Accessibility
+
+You can use the `accessibility` property in the annotation to customize the accessibility description, role, focusability, and tabindex. This allows you to define how the annotation is described and interpreted, ensuring that users with disabilities can interact with and understand the chart more effectively.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-appearance-cs25/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-appearance-cs25/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs25" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-appearance-cs25/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-appearance-cs25/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs25" %}
+{% endif %}
+
+## See also
 
 * [Show total stacking values in data label](../chart/how-to/stacking-total/#show-the-total-value-for-stacking-series-in-data-label)
 * [Create footer and watermark for chart](../chart/how-to/footer/#create-footer-and-watermark-for-chart)

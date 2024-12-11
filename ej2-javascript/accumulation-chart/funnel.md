@@ -15,7 +15,7 @@ To render a funnel series, use the series [`type`](../api/accumulation-chart/acc
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs18/index.ts %}
 {% endhighlight %}
@@ -46,7 +46,7 @@ The size of the funnel chart can be customized by using the  `width` and `height
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs19/index.ts %}
 {% endhighlight %}
@@ -71,13 +71,13 @@ The size of the funnel chart can be customized by using the  `width` and `height
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs19" %}
 {% endif %}
 
-## Neck Size
+## Neck size
 
 The funnel's neck size can be customized by using the `neckWidth` and `neckHeight` properties.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs20/index.ts %}
 {% endhighlight %}
@@ -102,13 +102,13 @@ The funnel's neck size can be customized by using the `neckWidth` and `neckHeigh
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs20" %}
 {% endif %}
 
-## Gap Between the Segments
+## Gap between the segments
 
 Funnel chart provides options to customize the space between the segments by using the `gapRatio` property of the series. It ranges from 0 to 1.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs21/index.ts %}
 {% endhighlight %}
@@ -139,7 +139,7 @@ Points can be exploded on mouse click by setting the `explode` property to true.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs22/index.ts %}
 {% endhighlight %}
@@ -164,13 +164,13 @@ Points can be exploded on mouse click by setting the `explode` property to true.
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs22" %}
 {% endif %}
 
-## Smart Data Label
+## Smart data label
 
 It provides the data label smart arrangement of the funnel and pyramid series. The overlap data label will be placed on left side of the funnel/pyramid series.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs23/index.ts %}
 {% endhighlight %}
@@ -201,7 +201,7 @@ Individual points can be customized using the `pointRender` event.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs24/index.ts %}
 {% endhighlight %}
@@ -226,7 +226,38 @@ Individual points can be customized using the `pointRender` event.
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs24" %}
 {% endif %}
 
-## See Also
+## Accessibility
+
+You can use the `accessibility` property in the series to customize the accessibility description, role, focusability, and tabindex. This allows you to define how the series is described and interpreted, ensuring that users with disabilities can interact with and understand the chart more effectively.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs495/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs495/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs495" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs495/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs495/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs495" %}
+{% endif %}
+
+## See also
 
 * [Data label](./data-label)
 * [Grouping](./grouping)

@@ -17,7 +17,7 @@ Crosshair lines can be enabled by using [`enable`](../api/chart/crosshairToolti
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/user-interaction-cs5/index.ts %}
 {% endhighlight %}
@@ -48,7 +48,7 @@ Tooltip label for an axis can be enabled by using [`enable`](../api/chart/cross
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/user-interaction-cs6/index.ts %}
 {% endhighlight %}
@@ -79,7 +79,7 @@ The [`fill`](../api/chart/crosshairTooltip/#fill-string) and [`textStyle`](../ap
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/user-interaction-cs7/index.ts %}
 {% endhighlight %}
@@ -106,17 +106,46 @@ The [`fill`](../api/chart/crosshairTooltip/#fill-string) and [`textStyle`](../ap
 
 >Note: To use crosshair feature, we need to inject `Crosshair` module `Chart.Inject(Crosshair)` method.
 
-## Trackball
+**Snap to data**
 
-Trackball is used to track a data point closest to the mouse or touch position. Trackball marker indicates the closest point and trackball tooltip displays the information about the point. To use trackball feature, we need to inject `Crosshair` module and `Tooltip` module using
-`Chart.Inject(Crosshair, Tooltip)`.
-
-Trackball can be enabled by setting the [`enable`](../api/chart/crosshairSettings/#enable-boolean) property of the crosshair to true and
-[`shared`](../api/chart/tooltipSettings/#shared-boolean) property in `tooltip` to true in chart.
+Enabling the `snapToData` property in the crosshair aligns it with the nearest data point instead of following the exact mouse position.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/user-interaction-cs50/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/user-interaction-cs50/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs50" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/user-interaction-cs50/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/user-interaction-cs50/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs50" %}
+{% endif %}
+
+## Trackball
+
+Trackball is used to track a data point closest to the mouse or touch position. Trackball marker indicates the closest point and trackball tooltip displays the information about the point. To use trackball feature, we need to inject `Crosshair` module and `Tooltip` module using `Chart.Inject(Crosshair, Tooltip)`.
+
+Trackball can be enabled by setting the [`enable`](../api/chart/crosshairSettings/#enable-boolean) property of the crosshair to true and [`shared`](../api/chart/tooltipSettings/#shared-boolean) property in `tooltip` to true in chart.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/user-interaction-cs8/index.ts %}
 {% endhighlight %}

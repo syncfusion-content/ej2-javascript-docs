@@ -15,7 +15,7 @@ As like a chart, the legend is also available for accumulation charts, which giv
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs30/index.ts %}
 {% endhighlight %}
@@ -42,13 +42,13 @@ As like a chart, the legend is also available for accumulation charts, which giv
 
 >Note: To use the legends feature, inject the `AccumulationLegend` using the `Chart.Inject(AccumulationLegend)` method.
 
-## Position and Alignment
+## Position and alignment
 
 By using the position property, you can position the legend at the `left`, `right`, `top` or `bottom` of the chart. You can also align the legend to `center`, `far` or `near` of the chart using the alignment property.
  
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs31/index.ts %}
 {% endhighlight %}
@@ -73,13 +73,13 @@ By using the position property, you can position the legend at the `left`, `
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs31" %}
 {% endif %}
 
-## Legend Reverse
+## Legend reverse
 
 You can reverse the order of the legend items by using the [`reverse`](https://ej2.syncfusion.com/documentation/api/accumulation-chart/legendSettingsModel/#reverse) property. By default, legend for the first series in the collection will be placed first.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs32/index.ts %}
 {% endhighlight %}
@@ -104,13 +104,13 @@ You can reverse the order of the legend items by using the [`reverse`](https://e
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs32" %}
 {% endif %}
 
-## Legend Shape
+## Legend shape
 
 To change the legend icon shape, use the `legendShape` property in the `series`. By default, legend icon shape is `seriesType`.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs33/index.ts %}
 {% endhighlight %}
@@ -135,13 +135,13 @@ To change the legend icon shape, use the `legendShape` property in the `series
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs33" %}
 {% endif %}
 
-## Legend Size
+## Legend size
 
 The legend size can be changed by using the `width` and `height` properties of the `legendSettings`.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs34/index.ts %}
 {% endhighlight %}
@@ -166,13 +166,13 @@ The legend size can be changed by using the `width` and `height` properties of t
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs34" %}
 {% endif %}
 
-## Legend Item Size
+## Legend item size
 
 You can customize the size of the legend items by using the `shapeHeight` and `shapeWidth` properties.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs35/index.ts %}
 {% endhighlight %}
@@ -197,13 +197,13 @@ You can customize the size of the legend items by using the `shapeHeight` and `s
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs35" %}
 {% endif %}
 
-## Paging for Legend
+## Paging for legend
 
 Paging will be enabled by default, when the legend items exceeds the legend bounds. You can view the each legend item by navigating between the pages using the navigation buttons.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs36/index.ts %}
 {% endhighlight %}
@@ -228,13 +228,13 @@ Paging will be enabled by default, when the legend items exceeds the legend boun
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs36" %}
 {% endif %}
 
-## Legend Text Wrap
+## Legend text wrap
 
 When the legend text exceeds the container, the text can be wrapped by using `textWrap` Property. End user can also wrap the legend text based on the `maximumLabelWidth` property.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs37/index.ts %}
 {% endhighlight %}
@@ -259,14 +259,13 @@ When the legend text exceeds the container, the text can be wrapped by using `te
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs37" %}
 {% endif %}
 
-## Legend Title
+## Legend title
 
-You can set title for legend using `title` property in `legendSettings`. You can also customize the `fontStyle`, `size`, `fontWeight`,
-`color`, `textAlignment`, `fontFamily`, `opacity` and `textOverflow` of legend title. `titlePosition` is used to set the legend position in `Top`, `Left` and `Right` position. `maximumTitleWidth` is used to set the width of the legend title. By default, it will be `100px`.
+You can set title for legend using `title` property in `legendSettings`. You can also customize the `fontStyle`, `size`, `fontWeight`, `color`, `textAlignment`, `fontFamily`, `opacity` and `textOverflow` of legend title. `titlePosition` is used to set the legend position in `Top`, `Left` and `Right` position. `maximumTitleWidth` is used to set the width of the legend title. By default, it will be `100px`.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs38/index.ts %}
 {% endhighlight %}
@@ -291,13 +290,13 @@ You can set title for legend using `title` property in `legendSettings`. You can
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs38" %}
 {% endif %}
 
-## Arrow Page Navigation
+## Arrow page navigation
 
 By default, the page number will be enabled while legend paging. Now, you can disable that page number and also you can get left and right arrows for page navigation. You have to set `false` value to `enablePages` to get this support.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs39/index.ts %}
 {% endhighlight %}
@@ -322,13 +321,13 @@ By default, the page number will be enabled while legend paging. Now, you can di
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs39" %}
 {% endif %}
 
-## Legend Item Padding
+## Legend item padding
 
 The [`itemPadding`](../api/accumulation-chart/legendSettings/#itempadding) property can be used to adjust the space between the legend items.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs40/index.ts %}
 {% endhighlight %}
@@ -351,4 +350,66 @@ The [`itemPadding`](../api/accumulation-chart/legendSettings/#itempadding) prope
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs40" %}
+{% endif %}
+
+## Legend layout
+
+The `layout` property in `legendSettings` allows you to display the legend either horizontally or vertically. By default, the `layout` is set to **Auto**. The `maximumColumns` property in `legendSettings` defines the maximum number of columns that can be displayed within the available space when using the auto layout. Additionally, enabling the `fixedWidth` property in `legendSettings` ensures that all legend items are displayed with equal widths. The width of each item is determined by the maximum width among the legend items.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs473/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs473/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs473" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs473/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs473/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs473" %}
+{% endif %}
+
+## Accessibility
+
+You can use the `accessibility` property in `legendSettings` to customize the accessibility description, role, focusability, and tabindex. This allows you to define how the legend is described and interpreted, ensuring that users with disabilities can interact with and understand the chart more effectively.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs477/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs477/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs477" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs477/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs477/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs477" %}
 {% endif %}

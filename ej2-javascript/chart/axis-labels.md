@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Axis labels in ##Platform_Name## Chart control
 
-## Smart Axis Labels
+## Smart axis labels
 
 When the axis labels overlap with each other, you can use [`labelIntersectAction`](../api/chart/axis/) property in the axis, to place them smartly.
 
@@ -19,7 +19,7 @@ When setting `labelIntersectAction` as `Hide`
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/axis-cs1/index.ts %}
 {% endhighlight %}
@@ -48,7 +48,7 @@ When setting `labelIntersectAction` as `Rotate45`
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/axis-cs2/index.ts %}
 {% endhighlight %}
@@ -77,7 +77,7 @@ When setting `labelIntersectAction` as `Rotate90`
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/axis-cs3/index.ts %}
 {% endhighlight %}
@@ -102,13 +102,13 @@ When setting `labelIntersectAction` as `Rotate90`
 {% previewsample "page.domainurl/code-snippet/chart/axis-cs3" %}
 {% endif %}
 
-## Axis Labels Positioning
+## Axis labels positioning
 
 By default, the axis labels can be placed at `outside` the axis line and this also can be placed at `inside` the axis line using the `labelPosition` property.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/axis-cs4/index.ts %}
 {% endhighlight %}
@@ -133,7 +133,7 @@ By default, the axis labels can be placed at `outside` the axis line and this al
 {% previewsample "page.domainurl/code-snippet/chart/axis-cs4" %}
 {% endif %}
 
-## Multilevel Labels
+## Multilevel labels
 
 Any number of levels of labels can be added to an axis using the `multiLevelLabels` property. This property can be configured using the following properties:
 • Categories
@@ -150,7 +150,7 @@ Using the categories property, you can configure the `start`, `end`, `text`, and
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/axis-cs5/index.ts %}
 {% endhighlight %}
@@ -181,7 +181,7 @@ Using the `overflow` property, you can `trim` or `wrap` the multilevel labels.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/axis-cs6/index.ts %}
 {% endhighlight %}
@@ -212,7 +212,7 @@ The `alignment` property provides option to position the multilevel labels at `f
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/axis-cs7/index.ts %}
 {% endhighlight %}
@@ -243,7 +243,7 @@ The `textStyle` property of multilevel labels provides options to customize the 
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/axis-cs8/index.ts %}
 {% endhighlight %}
@@ -274,7 +274,7 @@ Using the `border` property, you can customize the `width`, `color`, and `type`.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/axis-cs9/index.ts %}
 {% endhighlight %}
@@ -299,15 +299,14 @@ Using the `border` property, you can customize the `width`, `color`, and `type`.
 {% previewsample "page.domainurl/code-snippet/chart/axis-cs9" %}
 {% endif %}
 
-## Edge Label Placement
+## Edge label placement
 
 Labels with long text at the edges of an axis may appear partially in the chart. To avoid this,
-use [`edgeLabelPlacement`](../api/chart/axis/) property in axis, which
-moves the label inside the chart area for better appearance or hides it.
+use [`edgeLabelPlacement`](../api/chart/axis/) property in axis, which moves the label inside the chart area for better appearance or hides it. By default, the [`edgeLabelPlacement`](../api/chart/axis/) property is set to Shift to ensure that labels are shifted inside the chart area, avoiding any overlap or coincidence.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/axis-cs10/index.ts %}
 {% endhighlight %}
@@ -338,7 +337,7 @@ The chart’s data source can be sorted using the `sort` method of chart. The ar
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/axis-cs11/index.ts %}
 {% endhighlight %}
@@ -363,13 +362,13 @@ The chart’s data source can be sorted using the `sort` method of chart. The ar
 {% previewsample "page.domainurl/code-snippet/chart/axis-cs11" %}
 {% endif %}
 
-## Labels Customization
+## Labels customization
 
-Border of the axis labels can be customized using `width`, `color` and `typr` property of the axis.
+Border of the axis labels can be customized using `width`, `color` and `type` property of the axis.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/axis-cs12/index.ts %}
 {% endhighlight %}
@@ -394,13 +393,13 @@ Border of the axis labels can be customized using `width`, `color` and `typr` pr
 {% previewsample "page.domainurl/code-snippet/chart/axis-cs12" %}
 {% endif %}
 
-## Customizing Specific Point
+## Customizing specific point
 
 You can customize the specific text in the axis labels using `axisLabelRender` event.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/axis-cs13/index.ts %}
 {% endhighlight %}
@@ -431,7 +430,7 @@ Line break feature used to customize the long axis label text into multiple line
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/axis-cs14/index.ts %}
 {% endhighlight %}
@@ -456,13 +455,13 @@ Line break feature used to customize the long axis label text into multiple line
 {% previewsample "page.domainurl/code-snippet/chart/axis-cs14" %}
 {% endif %}
 
-## Maximum Labels
+## Maximum labels
 
 `MaximumLabels` property is set, then the labels will be rendered based on the count in the property per 100 pixel. If you have set range (minimum, maximum, interval) and maximumLabels, then the priority goes to range only. If you haven’t set the range, then we have considered priority to maximumLabels property.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/axis-cs15/index.ts %}
 {% endhighlight %}

@@ -143,6 +143,37 @@ Any HTML elements can be displayed in the tooltip by using the [`template`](../a
 {% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs20" %}
 {% endif %}
 
+## Enable highlight
+
+By setting the `enableHighlight` property to **true**, you can highlight all points in the hovered series while dimming points in other series, enhancing focus and clarity.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/user-interaction-cs52/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/user-interaction-cs52/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs52" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/user-interaction-cs52/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/user-interaction-cs52/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs52" %}
+{% endif %}
+
 ## Customize the appearance of tooltip
 
 The [`fill`](../api/chart/tooltipSettings/#fill) and [`border`](../api/chart/tooltipSettings/#border) properties are used to customize the background color and border of the tooltip respectively. The [`textStyle`](../api/chart/tooltipSettings/#textstyle) property in the tooltip is used to customize the font of the tooltip text. The [`highlightColor`](../api/chart#highlightcolor) property is used to customize the point color while hovering for tooltip.

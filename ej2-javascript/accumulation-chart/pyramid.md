@@ -15,7 +15,7 @@ To render a pyramid series, use the series [`type`](../api/accumulation-chart/ac
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs56/index.ts %}
 {% endhighlight %}
@@ -46,7 +46,7 @@ The Pyramid chart supports linear and surface modes of rendering. The default ty
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs57/index.ts %}
 {% endhighlight %}
@@ -77,7 +77,7 @@ The size of the pyramid chart can be customized by using the  `width` and `heigh
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs58/index.ts %}
 {% endhighlight %}
@@ -102,13 +102,13 @@ The size of the pyramid chart can be customized by using the  `width` and `heigh
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs58" %}
 {% endif %}
 
-## Gap Between the Segments
+## Gap between the segments
 
 Pyramid chart provides options to customize the space between the segments by using the `gapRatio` property of the series. It ranges from 0 to 1.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs59/index.ts %}
 {% endhighlight %}
@@ -139,7 +139,7 @@ Points can be exploded on mouse click by setting the `explode` property to true.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs60/index.ts %}
 {% endhighlight %}
@@ -170,7 +170,7 @@ Individual points can be customized using the `pointRender` event.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs61/index.ts %}
 {% endhighlight %}
@@ -195,7 +195,38 @@ Individual points can be customized using the `pointRender` event.
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs61" %}
 {% endif %}
 
-## See Also
+## Accessibility
+
+You can use the `accessibility` property in the series to customize the accessibility description, role, focusability, and tabindex. This allows you to define how the series is described and interpreted, ensuring that users with disabilities can interact with and understand the chart more effectively.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs494/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs494/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs494" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs494/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs494/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs494" %}
+{% endif %}
+
+## See also
 
 * [Data label](./data-label/)
 * [Grouping](./grouping/)

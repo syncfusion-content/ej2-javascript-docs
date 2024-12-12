@@ -104,4 +104,35 @@ The [`fill`](../api/chart/crosshairTooltipModel/#fill) and [`textStyle`](../api/
 {% previewsample "page.domainurl/code-snippet/stock-chart/getting-started-cs14" %}
 {% endif %}
 
+**Snap to data**
+
+Enabling the `snapToData` property in the crosshair aligns it with the nearest data point instead of following the exact mouse position.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/stock-chart/getting-started-cs39/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/stock-chart/getting-started-cs39/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/stock-chart/getting-started-cs39" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/stock-chart/getting-started-cs39/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/stock-chart/getting-started-cs39/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/stock-chart/getting-started-cs39" %}
+{% endif %}
+
 >Note: To use crosshair feature, we need to inject `Crosshair` module `StockChart.Inject(Crosshair)` method.

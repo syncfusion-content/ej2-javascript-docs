@@ -23,7 +23,7 @@ Chart can be zoomed in three ways.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/user-interaction-cs39/index.ts %}
 {% endhighlight %}
@@ -62,7 +62,7 @@ There are three types of mode.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/user-interaction-cs40/index.ts %}
 {% endhighlight %}
@@ -93,7 +93,7 @@ By default, zoomin, zoomout, pan and reset buttons will be displayed for zo
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/user-interaction-cs41/index.ts %}
 {% endhighlight %}
@@ -118,13 +118,45 @@ By default, zoomin, zoomout, pan and reset buttons will be displayed for zo
 {% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs41" %}
 {% endif %}
 
+### Toolbar customization
+
+The zoom toolbar in the chart can be repositioned using the `toolbarPosition` property, allowing flexible alignment and placement. It supports horizontal alignments (**Near**, **Center**, and **Far**) and vertical alignments (**Top**, **Middle**, and **Bottom**), with default values set to **Far** and **Top**, respectively. For precise placement, the `x` and `y` properties can be used to adjust the toolbar's position within the chart area. Additionally, enabling the `draggable` property allows users to freely move the toolbar within the chart area, ensuring optimal usability.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/user-interaction-cs51/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/user-interaction-cs51/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs51" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/user-interaction-cs51/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/user-interaction-cs51/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs51" %}
+{% endif %}
+
+
 ## Enable pan
 
 Using [`enablePan`](../api/chart/zoomSettingsModel/) property you can able to pan the zoomed chart without help of toolbar items.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/user-interaction-cs42/index.ts %}
 {% endhighlight %}
@@ -155,7 +187,7 @@ Using the [`enableScrollbar`](../api/chart/zoomSettingsModel/#enablescrollbar) p
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/user-interaction-cs43/index.ts %}
 {% endhighlight %}
@@ -186,7 +218,7 @@ Enable the [enableAnimation](../api/chart/zoomSettingsModel/#enableanimation) pr
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/animation-cs/index.ts %}
 {% endhighlight %}
@@ -217,7 +249,7 @@ By using [`enableAutoIntervalOnZooming`](../api/chart/axis/#enableautointervalon
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/user-interaction-cs44/index.ts %}
 {% endhighlight %}
@@ -240,6 +272,37 @@ By using [`enableAutoIntervalOnZooming`](../api/chart/axis/#enableautointervalon
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs44" %}
+{% endif %}
+
+## Accessibility
+
+You can use the `accessibility` property in the `zoomSettings` to customize the accessibility description, role, focusability, and tabindex. This allows you to define how the `zoomSettings` are described and interpreted, ensuring that users with disabilities can interact with and understand the chart more effectively.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/user-interaction-cs53/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/user-interaction-cs53/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs53" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/user-interaction-cs53/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/user-interaction-cs53/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs53" %}
 {% endif %}
 
 >Note: To use zooming feature, we need to inject `Zoom` module `Chart.Inject(Zoom)` method.

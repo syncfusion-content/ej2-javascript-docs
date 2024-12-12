@@ -17,7 +17,7 @@ You can customize the default color of series or points by providing a custom co
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-appearance-cs6/index.ts %}
 {% endhighlight %}
@@ -52,7 +52,7 @@ You can bind the color for the points from [`dataSource`](../api/chart/series/#d
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-appearance-cs7/index.ts %}
 {% endhighlight %}
@@ -83,7 +83,7 @@ You can differentiate data points based on their y values using [`rangeColorSett
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-appearance-cs8/index.ts %}
 {% endhighlight %}
@@ -114,7 +114,7 @@ Marker, data label and fill color of each data point can be customized with [`po
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-appearance-cs9/index.ts %}
 {% endhighlight %}
@@ -151,7 +151,7 @@ Using [`background`](../api/chart/#background-string) and [`border`](../api/char
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-appearance-cs10/index.ts %}
 {% endhighlight %}
@@ -182,7 +182,7 @@ You can set margin for chart from its container through [`margin`](../api/chart/
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-appearance-cs11/index.ts %}
 {% endhighlight %}
@@ -213,7 +213,7 @@ Using [`background`](https://ej2.syncfusion.com/documentation/api/chart/chartAre
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-appearance-cs12/index.ts %}
 {% endhighlight %}
@@ -238,13 +238,44 @@ Using [`background`](https://ej2.syncfusion.com/documentation/api/chart/chartAre
 {% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs12" %}
 {% endif %}
 
+**Chart area margin**
+
+You can customize the space between the chart area from its chart container through `margin` property.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-appearance-cs24/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-appearance-cs24/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs24" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-appearance-cs24/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-appearance-cs24/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs24" %}
+{% endif %}
+
 ## Animation
 
 You can customize animation for a particular series using [`animation`](../api/chart//animationModel/) property. You can enable or disable animation of the series using `enable` property, `duration` specifies the duration of an animation and `delay` allows us to start the animation at desire time.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-appearance-cs13/index.ts %}
 {% endhighlight %}
@@ -275,7 +306,7 @@ Fluid animation used to animate series with updated dataSource continues animati
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-appearance-cs14/index.ts %}
 {% endhighlight %}
@@ -428,7 +459,7 @@ The `textStyle` property of chart title provides options to customize the `size`
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/getting-started-cs1/index.ts %}
 {% endhighlight %}
@@ -451,6 +482,37 @@ The `textStyle` property of chart title provides options to customize the `size`
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/chart/getting-started-cs1" %}
+{% endif %}
+
+### Accessibility
+
+You can use the `accessibility` property in the `titleStyle` to customize the accessibility description, role, focusability, and tabindex. This allows you to define how the `titleStyle` is described and interpreted, ensuring that users with disabilities can interact with and understand the chart more effectively.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-appearance-cs26/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-appearance-cs26/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs26" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-appearance-cs26/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-appearance-cs26/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs26" %}
 {% endif %}
 
 ## See also

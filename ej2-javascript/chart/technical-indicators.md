@@ -16,14 +16,13 @@ A technical indicator is a mathematical calculation based on historic price, vol
 
 Chart supports 10 types of technical indicators.
 
-## Accumulation Distribution
+## Accumulation distribution
 
-Accumulation Distribution combines price and volume to show how money may be flowing into or out of stock. To render a Accumulation Distribution Indicator, use indicator [`type`](../api/chart/technicalIndicatorModel/) as `AccumulationDistribution` and inject
-`AccumulationDistributionIndicator` module using `Chart.Inject(AccumulationDistributionIndicator)`. To calculate the signal line [`volume`](../api/chart/technicalIndicatorModel/) field is additionally added with `dataSource`.
+Accumulation Distribution combines price and volume to show how money may be flowing into or out of stock. To render a Accumulation Distribution Indicator, use indicator [`type`](../api/chart/technicalIndicatorModel/) as `AccumulationDistribution` and inject `AccumulationDistributionIndicator` module using `Chart.Inject(AccumulationDistributionIndicator)`. To calculate the signal line [`volume`](../api/chart/technicalIndicatorModel/) field is additionally added with `dataSource`.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/technical-indicators-cs1/index.ts %}
 {% endhighlight %}
@@ -48,14 +47,13 @@ Accumulation Distribution combines price and volume to show how money may be flo
 {% previewsample "page.domainurl/code-snippet/chart/technical-indicators-cs1" %}
 {% endif %}
 
-## Average True Range (ATR)
+## Average true range (ATR)
 
-ATR measures the stock volatility by comparing the current value with the previous value. To render a Average True Range (ATR) Indicator,
-use indicator [`type`](../api/chart/technicalIndicatorModel/) as `Atr` and inject `AtrIndicator` module using `Chart.Inject(AtrIndicator)`.
+ATR measures the stock volatility by comparing the current value with the previous value. To render a Average True Range (ATR) Indicator, use indicator [`type`](../api/chart/technicalIndicatorModel/) as `Atr` and inject `AtrIndicator` module using `Chart.Inject(AtrIndicator)`.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/technical-indicators-cs2/index.ts %}
 {% endhighlight %}
@@ -80,13 +78,13 @@ use indicator [`type`](../api/chart/technicalIndicatorModel/) as `Atr` and injec
 {% previewsample "page.domainurl/code-snippet/chart/technical-indicators-cs2" %}
 {% endif %}
 
-## Bollinger Band
+## Bollinger band
 
 A chart overlay that shows the upper and lower limits of normal price movements based on the standard deviation of prices. To render a Bollinger Band, use indicator [`type`](../api/chart/technicalIndicatorModel/) as `BollingerBand` and inject `BollingerBands` module using `Chart.Inject(BollingerBands)` method. Bollinger band will be represented by three lines (upperLine, lowerLine, signalLine). The default values of the Bollinger Band [`period`](../api/chart/technicalIndicatorModel/) is 14 and [`standardDeviations`](../api/chart/technicalIndicatorModel/) is 2.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/technical-indicators-cs3/index.ts %}
 {% endhighlight %}
@@ -113,12 +111,11 @@ A chart overlay that shows the upper and lower limits of normal price movements 
 
 **Customization of BollingerBand**
 
-`stroke`, `stroke-width`, and `color` of upperLine can be customized by using,[`upperLine`](../api/chart/technicalIndicatorModel/),
-and the lowerLine can be customized by using [`lowerLine`](../api/chart/technicalIndicatorModel/) properties of indicator.
+`stroke`, `stroke-width`, and `color` of upperLine can be customized by using,[`upperLine`](../api/chart/technicalIndicatorModel/), and the lowerLine can be customized by using [`lowerLine`](../api/chart/technicalIndicatorModel/) properties of indicator.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/technical-indicators-cs4/index.ts %}
 {% endhighlight %}
@@ -143,13 +140,13 @@ and the lowerLine can be customized by using [`lowerLine`](../api/chart/technica
 {% previewsample "page.domainurl/code-snippet/chart/technical-indicators-cs4" %}
 {% endif %}
 
-## Exponential Moving Average (EMA)
+## Exponential moving average (EMA)
 
 Moving average Indicators are used to define the direction of the trend. To render a EMA Indicator, use indicator [`type`](../api/chart/technicalIndicatorModel/) as `Ema` and inject `EmaIndicator` module using `Chart.Inject(EmaIndicator)`.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/technical-indicators-cs5/index.ts %}
 {% endhighlight %}
@@ -180,7 +177,7 @@ Momentum shows the speed at which the price of the stock is changing. To render 
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/technical-indicators-cs6/index.ts %}
 {% endhighlight %}
@@ -211,7 +208,7 @@ Momentum shows the speed at which the price of the stock is changing. To render 
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/technical-indicators-cs7/index.ts %}
 {% endhighlight %}
@@ -236,14 +233,13 @@ Momentum shows the speed at which the price of the stock is changing. To render 
 {% previewsample "page.domainurl/code-snippet/chart/technical-indicators-cs7" %}
 {% endif %}
 
-## Moving Average Convergence Divergence (MACD)
+## Moving average convergence divergence (MACD)
 
-MACD is based on the difference between two EMA's. To render a MACD Indicator, use indicator [`type`](../api/chart/technicalIndicatorModel/) as
-`Macd` and inject `MacdIndicator` module using `Chart.Inject(MacdIndicator)`.MACD indicator will be represented by MACD line,signal line, MACD histogram. MACD histogram is used to differentiate MACD line and signal line.
+MACD is based on the difference between two EMA's. To render a MACD Indicator, use indicator [`type`](../api/chart/technicalIndicatorModel/) as `Macd` and inject `MacdIndicator` module using `Chart.Inject(MacdIndicator)`.MACD indicator will be represented by MACD line,signal line, MACD histogram. MACD histogram is used to differentiate MACD line and signal line.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/technical-indicators-cs8/index.ts %}
 {% endhighlight %}
@@ -277,7 +273,7 @@ By default `macdType` as 'Both'.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/technical-indicators-cs9/index.ts %}
 {% endhighlight %}
@@ -302,14 +298,13 @@ By default `macdType` as 'Both'.
 {% previewsample "page.domainurl/code-snippet/chart/technical-indicators-cs9" %}
 {% endif %}
 
-## Relative Strength Index (RSI)
+## Relative strength index (RSI)
 
-RSI shows how strongly a stock is moving in its current direction. To render a RSI Indicator, use indicator [`type`](../api/chart/technicalIndicatorModel/) as `Rsi` and inject `RsiIndicator` module using `Chart.Inject(Rsindicator)`.RSI indicator will be represented
-by three lines (upperBand, lowerBand, signalLine). The upperBand and lowerBand values are customized by [`overBought`](../api/chart/technicalIndicatorModel/) and [`overSold`](../api/chart/technicalIndicatorModel/) properties of indicator and the signalLine is calculated by RSI formula.
+RSI shows how strongly a stock is moving in its current direction. To render a RSI Indicator, use indicator [`type`](../api/chart/technicalIndicatorModel/) as `Rsi` and inject `RsiIndicator` module using `Chart.Inject(Rsindicator)`.RSI indicator will be represented by three lines (upperBand, lowerBand, signalLine). The upperBand and lowerBand values are customized by [`overBought`](../api/chart/technicalIndicatorModel/) and [`overSold`](../api/chart/technicalIndicatorModel/) properties of indicator and the signalLine is calculated by RSI formula.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/technical-indicators-cs10/index.ts %}
 {% endhighlight %}
@@ -334,13 +329,13 @@ by three lines (upperBand, lowerBand, signalLine). The upperBand and lowerBand v
 {% previewsample "page.domainurl/code-snippet/chart/technical-indicators-cs10" %}
 {% endif %}
 
-## Simple Moving Average (SMA)
+## Simple moving average (SMA)
 
 Moving average Indicators are used to define the direction of the trend. To render a SMA Indicator, use indicator [`type`](../api/chart/technicalIndicatorModel/) as `Sma` and inject `SmaIndicator` module using `Chart.Inject(SmaIndicator)`.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/technical-indicators-cs11/index.ts %}
 {% endhighlight %}
@@ -367,12 +362,11 @@ Moving average Indicators are used to define the direction of the trend. To rend
 
 ## Stochastic
 
-It shows how a stock is, when compared to previous state. To render a Stochastic indicator, use indicator [`type`](../api/chart/technicalIndicatorModel/) as `Stochastic` and inject `StochasticIndicator` module using `Chart.Inject(StochasticIndicator)` method.
-stochastic indicator will be represented by four lines (upperLine, lowerLine, periodLine, signalLine). In stochastic indicator the upperBand value and lowerBand value is customized by [`overBought`](../api/chart/technicalIndicatorModel/) and [`overSold`](../api/chart/technicalIndicatorModel/) properties of indicators and the periodLine and signalLine is render based on stochastic formula.
+It shows how a stock is, when compared to previous state. To render a Stochastic indicator, use indicator [`type`](../api/chart/technicalIndicatorModel/) as `Stochastic` and inject `StochasticIndicator` module using `Chart.Inject(StochasticIndicator)` method. Stochastic indicator will be represented by four lines (upperLine, lowerLine, periodLine, signalLine). In stochastic indicator the upperBand value and lowerBand value is customized by [`overBought`](../api/chart/technicalIndicatorModel/) and [`overSold`](../api/chart/technicalIndicatorModel/) properties of indicators and the periodLine and signalLine is render based on stochastic formula.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/technical-indicators-cs12/index.ts %}
 {% endhighlight %}
@@ -399,13 +393,12 @@ stochastic indicator will be represented by four lines (upperLine, lowerLine, pe
 
 **Customization of StochasticIndicator**
 
-`stroke`, `stroke-width`, and `color` of upperLine can be customized by using,[`upperLine`](../api/chart/technicalIndicatorModel/),
-the lowerLine can be customized by using [`lowerLine`](../api/chart/technicalIndicatorModel/) and the periodLine can be customized by using [`periodLine`](../api/chart/technicalIndicatorModel/) properties of indicator. To customize the period to find the average price using [`kPeriod`](../api/chart/technicalIndicatorModel/) and [`dPeriod`](../api/chart/technicalIndicatorModel/)
+`stroke`, `stroke-width`, and `color` of upperLine can be customized by using,[`upperLine`](../api/chart/technicalIndicatorModel/), the lowerLine can be customized by using [`lowerLine`](../api/chart/technicalIndicatorModel/) and the periodLine can be customized by using [`periodLine`](../api/chart/technicalIndicatorModel/) properties of indicator. To customize the period to find the average price using [`kPeriod`](../api/chart/technicalIndicatorModel/) and [`dPeriod`](../api/chart/technicalIndicatorModel/)
 properties.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/technical-indicators-cs13/index.ts %}
 {% endhighlight %}
@@ -430,13 +423,13 @@ properties.
 {% previewsample "page.domainurl/code-snippet/chart/technical-indicators-cs13" %}
 {% endif %}
 
-## Triangular Moving Average (TMA)
+## Triangular moving average (TMA)
 
 Moving average Indicators are used to define the direction of the trend. To render a TMA Indicator, use indicator [`type`](../api/chart/technicalIndicatorModel/) as `Tma` and inject `TmaIndicator` module using `Chart.Inject(TmaIndicator)`.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/technical-indicators-cs14/index.ts %}
 {% endhighlight %}
@@ -467,7 +460,7 @@ Moving average Indicators are used to define the direction of the trend. To rend
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/technical-indicators-cs15/index.ts %}
 {% endhighlight %}
@@ -492,7 +485,7 @@ Moving average Indicators are used to define the direction of the trend. To rend
 {% previewsample "page.domainurl/code-snippet/chart/technical-indicators-cs15" %}
 {% endif %}
 
-**Data Source**
+**Data source**
 
 Usually technical indicators are added along with a financial series. The [`seriesName`](../api/chart/technicalIndicatorModel/) represents the series, the data of which has to be analysed through indicators.
 
@@ -500,7 +493,7 @@ Technical indicators can also be added without series using [`dataSource`](../ap
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/technical-indicators-cs16/index.ts %}
 {% endhighlight %}
@@ -523,4 +516,35 @@ Technical indicators can also be added without series using [`dataSource`](../ap
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/chart/technical-indicators-cs16" %}
+{% endif %}
+
+## Accessibility
+
+You can use the `accessibility` property in the technical indicator to customize the accessibility description, role, focusability, and tabindex. This allows you to define how the technical indicator is described and interpreted, ensuring that users with disabilities can interact with and understand the chart more effectively.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/technical-indicators-cs17/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/technical-indicators-cs17/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/technical-indicators-cs17" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/technical-indicators-cs17/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/technical-indicators-cs17/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/technical-indicators-cs17" %}
 {% endif %}

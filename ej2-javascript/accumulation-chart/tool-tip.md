@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Tooltip in ##Platform_Name## Accumulation chart control
 
-Tooltip for the accumulation chart can be enabled by using the [`enable`](../api/accumulation-chart/tooltipSettingsModel/#enable) property.
+Tooltip for the accumulation chart can be enabled by using the [`enable`](../api/accumulation-chart/tooltipSettingsModel/#enable) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -226,4 +226,35 @@ Using [`tooltipRender`](../api/accumulation-chart/iAccTooltipRenderEventArgs/) 
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs71" %}
+{% endif %}
+
+## Enable highlight
+
+By setting the `enableHighlight` property to **true**, the hovered pie slice is highlighted, while the remaining slices are dimmed, enhancing focus and clarity.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs476/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs476/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs476" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs476/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs476/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs476" %}
 {% endif %}

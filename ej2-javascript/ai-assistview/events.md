@@ -15,7 +15,7 @@ This section describes the AI AssistView events that will be triggered when appr
 
 ## created
 
-The AI AssistView control triggers the [created](../api/ai-assist-view#created) event when the control rendering is completed.
+The AI AssistView control triggers the [created](../api/ai-assistview#created) event when the control rendering is completed.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -43,7 +43,7 @@ The AI AssistView control triggers the [created](../api/ai-assist-view#created) 
 
 ## promptRequest
 
-The [promptRequest](../api/ai-assist-view#promptrequest) event is triggered when the prompt request is made in the AI AssistView control.
+The [promptRequest](../api/ai-assistview#promptrequest) event is triggered when the prompt request is made in the AI AssistView control.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -71,7 +71,7 @@ The [promptRequest](../api/ai-assist-view#promptrequest) event is triggered when
 
 ## promptChanged
 
-The [promptChanged](../api/ai-assist-view#promptchanged) event is triggered when the prompt text is changed in the AI AssistView control.
+The [promptChanged](../api/ai-assistview#promptchanged) event is triggered when the prompt text is changed in the AI AssistView control.
 
 {% if page.publishingplatform == "typescript" %}
 

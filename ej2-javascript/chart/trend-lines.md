@@ -24,7 +24,7 @@ A linear trendline is a best fit straight line that is used with simpler data se
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/trendlines-cs1/index.ts %}
 {% endhighlight %}
@@ -57,7 +57,7 @@ To render a exponential trendline, use trendline [`type`](../api/chart/trendline
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/trendlines-cs2/index.ts %}
 {% endhighlight %}
@@ -90,7 +90,7 @@ To render a logarithmic trendline, use trendline [`type`](../api/chart/trendline
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/trendlines-cs3/index.ts %}
 {% endhighlight %}
@@ -125,7 +125,7 @@ To render a polynomial trendline, use trendline [`type`](../api/chart/trendlineM
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/trendlines-cs4/index.ts %}
 {% endhighlight %}
@@ -158,7 +158,7 @@ To render a power trendline, use trendline [`type`](../api/chart/trendlineModel/
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/trendlines-cs5/index.ts %}
 {% endhighlight %}
@@ -183,7 +183,7 @@ To render a power trendline, use trendline [`type`](../api/chart/trendlineModel/
 {% previewsample "page.domainurl/code-snippet/chart/trendlines-cs5" %}
 {% endif %}
 
-## Moving Average
+## Moving average
 
 A moving average trendline smoothen out fluctuations in data to show a pattern or trend more clearly.
 
@@ -193,7 +193,7 @@ To render a moving average trendline, use trendline [`type`](../api/chart/trendl
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/trendlines-cs6/index.ts %}
 {% endhighlight %}
@@ -218,13 +218,13 @@ To render a moving average trendline, use trendline [`type`](../api/chart/trendl
 {% previewsample "page.domainurl/code-snippet/chart/trendlines-cs6" %}
 {% endif %}
 
-**Customization of Trendline**
+**Customization of trendline**
 
 The [`fill`](../api/chart/trendlineModel/#fill-string) and [`width`](../api/chart/trendlineModel/#width-number) properties are used to customize the appearance of the trendline.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/trendlines-cs7/index.ts %}
 {% endhighlight %}
@@ -255,13 +255,13 @@ Trendline forecasting is the prediction of future/past situations.
 
 Forward Forecasting and Backward Forecasting are the two types of forecasting.
 
-**Forward Forecasting**
+**Forward forecasting**
 
 The value set for forwardForecast is used to determine the distance moving towards the future trend.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/trendlines-cs8/index.ts %}
 {% endhighlight %}
@@ -286,13 +286,13 @@ The value set for forwardForecast is used to determine the distance moving towar
 {% previewsample "page.domainurl/code-snippet/chart/trendlines-cs8" %}
 {% endif %}
 
-**Backward Forecasting**
+**Backward forecasting**
 
 The value set for the backwardForecast is used to determine the past trends.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/trendlines-cs9/index.ts %}
 {% endhighlight %}
@@ -323,7 +323,7 @@ You can show or hide the trendline by setting trendline `visible` property.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/trendlines-cs10/index.ts %}
 {% endhighlight %}
@@ -346,4 +346,36 @@ You can show or hide the trendline by setting trendline `visible` property.
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/chart/trendlines-cs10" %}
+{% endif %}
+
+
+## Accessibility
+
+You can use the `accessibility` property in the trendline to customize the accessibility description, role, focusability, and tabindex. This allows you to define how the trendline is described and interpreted, ensuring that users with disabilities can interact with and understand the chart more effectively.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/trendlines-cs11/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/trendlines-cs11/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/trendlines-cs11" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/trendlines-cs11/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/trendlines-cs11/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/trendlines-cs11" %}
 {% endif %}

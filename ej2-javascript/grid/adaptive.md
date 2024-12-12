@@ -17,6 +17,8 @@ The Grid user interface (UI) was redesigned to provide an optimal viewing experi
 
 The Syncfusion ##Platform_Name## Grid offers a valuable feature for rendering adaptive dialogs, specifically designed to enhance the user experience on smaller screens. This feature proves especially useful for optimizing the interface on devices with limited screen real estate. The functionality is achieved by enabling the [enableAdaptiveUI](../api/grid/#enableadaptiveui) property, allowing the grid to render filter, sort, and edit dialogs in full-screen mode.
 
+Additionally, apply the `e-bigger` class to the grid's parent element to enable the adaptive view.
+
 The following sample demonstrates how to enable and utilize adaptive dialogs in the Syncfusion ##Platform_Name## Grid:
 
 {% if page.publishingplatform == "typescript" %}

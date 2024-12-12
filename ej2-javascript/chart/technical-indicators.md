@@ -517,34 +517,3 @@ Technical indicators can also be added without series using [`dataSource`](../ap
 
 {% previewsample "page.domainurl/code-snippet/chart/technical-indicators-cs16" %}
 {% endif %}
-
-## Accessibility
-
-You can use the `accessibility` property in the technical indicator to customize the accessibility description, role, focusability, and tabindex. This allows you to define how the technical indicator is described and interpreted, ensuring that users with disabilities can interact with and understand the chart more effectively.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/chart/technical-indicators-cs17/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/technical-indicators-cs17/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/chart/technical-indicators-cs17" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/chart/technical-indicators-cs17/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/technical-indicators-cs17/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/chart/technical-indicators-cs17" %}
-{% endif %}

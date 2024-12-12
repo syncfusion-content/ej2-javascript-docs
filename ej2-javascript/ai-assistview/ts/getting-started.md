@@ -3,7 +3,7 @@ layout: post
 title: Getting started with ##Platform_Name## AI AssistView control | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: AI AssistView 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##

@@ -14,17 +14,17 @@ let chatMessages = [
     {
         id: "msg1",
         author: currentUserModel,
-        text: "Hi there! How's it going?"
+        text: "Want to get coffee tomorrow?"
     },
     {
         id: "msg2",
         author: michaleUserModel,
-        text: "Hey! I'm doing well, thanks. How about you?"
+        text: "Sure! What time?"
     },
     {
         id: "msg3",
         author: currentUserModel,
-        text: "Mostly the usual stuff. I did start a new hobby - painting!"
+        text: "How about 10 AM?"
     }
 ];
 

@@ -3,7 +3,7 @@ layout: post
 title: Assist view in ##Platform_Name## AI AssistView control | Syncfusion
 description: Checkout and learn about Assist view with ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Assist view
+control: AI AssistView 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##

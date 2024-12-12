@@ -14,7 +14,7 @@ var aiAssistView = new ej.interactivechat.AIAssistView({
 aiAssistView.appendTo('#execute-prompt');
 
 document.addEventListener('click', function (event) {
-    if (event.target && event.target.id === 'addStringResponse') {
+    if (event.target && event.target.id === 'executePrompt') {
         aiAssistView.executePrompt('What is the current temperature?');
     }
 });

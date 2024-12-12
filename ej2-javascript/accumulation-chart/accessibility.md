@@ -51,8 +51,6 @@ The Accumulation chart control followed the [WAI-ARIA](https://www.w3.org/WAI/AR
 * aria-hidden (attribute)
 * aria-pressed (attribute)
 
-You can use the `accessibility` property in the Accumulation chart to customize the accessibility description, role, focusability, and tabindex. This allows you to define how the Accumulation chart is described and interpreted, ensuring that users with disabilities can interact with and understand the chart more effectively.
-
 ## Keyboard interaction
 
 The Accumulation chart control followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Accumulation chart control.

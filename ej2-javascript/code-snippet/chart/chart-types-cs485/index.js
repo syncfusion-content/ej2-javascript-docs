@@ -1,75 +1,41 @@
-var stackedData = [
-    { x: new Date(2000, 0, 1), y: 0.61, y1: 0.03, y2: 0.48, y3: 0.23 },
-    { x: new Date(2001, 0, 1), y: 0.81, y1: 0.05, y2: 0.53, y3: 0.17 },
-    { x: new Date(2002, 0, 1), y: 0.91, y1: 0.06, y2: 0.57, y3: 0.17 },
-    { x: new Date(2003, 0, 1), y: 1,    y1: 0.09, y2: 0.61, y3: 0.20 },
-    { x: new Date(2004, 0, 1), y: 1.19, y1: 0.14, y2: 0.63, y3: 0.23 },
-    { x: new Date(2005, 0, 1), y: 1.47, y1: 0.20, y2: 0.64, y3: 0.36 },
-    { x: new Date(2006, 0, 1), y: 1.74, y1: 0.29, y2: 0.66, y3: 0.43 },
-    { x: new Date(2007, 0, 1), y: 1.98, y1: 0.46, y2: 0.76, y3: 0.52 },
-    { x: new Date(2008, 0, 1), y: 1.99, y1: 0.64, y2: 0.77, y3: 0.72 },
-    { x: new Date(2009, 0, 1), y: 1.70, y1: 0.75, y2: 0.55, y3: 1.29 },
-    { x: new Date(2010, 0, 1), y: 1.48, y1: 1.06, y2: 0.54, y3: 1.38 },
-    { x: new Date(2011, 0, 1), y: 1.38, y1: 1.25, y2: 0.57, y3: 1.82 },
-    { x: new Date(2012, 0, 1), y: 1.66, y1: 1.55, y2: 0.61, y3: 2.16 },
-    { x: new Date(2013, 0, 1), y: 1.66, y1: 1.55, y2: 0.67, y3: 2.51 },
-    { x: new Date(2014, 0, 1), y: 1.67, y1: 1.65, y2: 0.67, y3: 2.61 }
-];
+var series1 = [];
+var point1;
+var value = 80;
+var i;
+for (i = 1; i < 500; i++) {
+    if (Math.random() > .5) {
+        value += Math.random();
+    } else {
+        value -= Math.random();
+    }
+    point1 = { x: new Date(1950, i + 2, i), y: value.toFixed(1) };
+    series1.push(point1);
+}
+
 var chart = new ej.charts.Chart({
     primaryXAxis: {
-        title: 'Years',
-        valueType: 'DateTime',
-        intervalType: 'Years',
-        labelFormat: 'y',
-        edgeLabelPlacement: 'Shift',
-        majorTickLines: { width: 0 }
-    },
-    primaryYAxis:
-    {
-        title: 'Spend in Billions',
-        minimum: 0,
-        maximum: 7,
-        interval: 1,
-        labelFormat: '{value}B',
-        majorTickLines: { width: 0 }
+        valueType: 'DateTime'
     },
     series: [
         {
-            dataSource: stackedData, xName: 'x', yName: 'y',
-            type: 'StackingArea', name: 'Organic', marker: { visible: true },
-            accessibility: {
-                accessibilityDescription: 'This series shows the sales trend for organic products from 2000 to 2014.',
-                accessibilityRole: 'series',
-                accessibilityDescriptionFormat: 'In ${point.x}, the sales for Organic were ${point.y} billion.'
-            }
-        }, 
-        {
-            dataSource: stackedData, xName: 'x', yName: 'y1',
-            type: 'StackingArea', name: 'Fair-trade', marker: { visible: true },
-            accessibility: {
-                accessibilityDescription: 'This series shows the sales trend for fair-trade products from 2000 to 2014.',
-                accessibilityRole: 'series',
-                accessibilityDescriptionFormat: 'In ${point.x}, the sales for Fair-trade were ${point.y} billion.'
-            }
-        }, 
-        {
-            dataSource: stackedData, xName: 'x', yName: 'y2',
-            type: 'StackingArea', name: 'Veg Alternatives', marker: { visible: true },
-            accessibility: {
-                accessibilityDescription: 'This series shows the sales trend for vegetarian alternatives from 2000 to 2014.',
-                accessibilityRole: 'series',
-                accessibilityDescriptionFormat: 'In ${point.x}, the sales for Veg Alternatives were ${point.y} billion.'
-            }
-        }, 
-        {
-            dataSource: stackedData, xName: 'x', yName: 'y3',
-            type: 'StackingArea', name: 'Others', marker: { visible: true },
-            accessibility: {
-                accessibilityDescription: 'This series shows the sales trend for other ethical produce categories from 2000 to 2014.',
-                accessibilityRole: 'series',
-                accessibilityDescriptionFormat: 'In ${point.x}, the sales for Others were ${point.y} billion.'
-            }
+            type: 'Area',
+            dataSource: series1,
+            name: 'Product X',
+            xName: 'x',
+            yName: 'y',
+            border: { width: 0.5, color: '#00bdae' },
+            animation: { enable: false }
         }
     ],
-    title: 'Trend in Sales of Ethical Produce'
+    zoomSettings: {
+        enableMouseWheelZooming: true,
+        enablePinchZooming: true,
+        enableSelectionZooming: true,
+        accessibility: {
+            accessibilityDescription: 'This allows users to zoom in and out of the chart using mouse wheel, pinch gestures, or selection box.',
+            accessibilityRole: 'zoom'
+        }
+    },
+    title: 'Sales History of Product X',
+    legendSettings: { visible: false }
 }, '#element');

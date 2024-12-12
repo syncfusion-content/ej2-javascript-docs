@@ -484,37 +484,6 @@ The `textStyle` property of chart title provides options to customize the `size`
 {% previewsample "page.domainurl/code-snippet/chart/getting-started-cs1" %}
 {% endif %}
 
-### Accessibility
-
-You can use the `accessibility` property in the `titleStyle` to customize the accessibility description, role, focusability, and tabindex. This allows you to define how the `titleStyle` is described and interpreted, ensuring that users with disabilities can interact with and understand the chart more effectively.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/chart/chart-appearance-cs26/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/chart-appearance-cs26/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs26" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/chart/chart-appearance-cs26/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/chart-appearance-cs26/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs26" %}
-{% endif %}
-
 ## See also
 
 * [Customize the series points using patterns](../chart/how-to/points-customization/#customize-the-series-points-by-using-patterns)

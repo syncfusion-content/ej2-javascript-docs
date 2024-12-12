@@ -274,35 +274,4 @@ By using [`enableAutoIntervalOnZooming`](../api/chart/axis/#enableautointervalon
 {% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs44" %}
 {% endif %}
 
-## Accessibility
-
-You can use the `accessibility` property in the `zoomSettings` to customize the accessibility description, role, focusability, and tabindex. This allows you to define how the `zoomSettings` are described and interpreted, ensuring that users with disabilities can interact with and understand the chart more effectively.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/chart/user-interaction-cs53/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/user-interaction-cs53/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs53" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/chart/user-interaction-cs53/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/user-interaction-cs53/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs53" %}
-{% endif %}
-
 >Note: To use zooming feature, we need to inject `Zoom` module `Chart.Inject(Zoom)` method.

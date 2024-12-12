@@ -3,7 +3,7 @@ layout: post
 title: Es5 getting started with ##Platform_Name## AI AssistView control | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Es5 getting started 
+control: AI AssistView
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -75,13 +75,23 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
             <title>JavaScript (ES5)</title>
             <!-- JavaScript (ES5) AI AssistView's dependency style -->
             <link href="resources/base/material.css" rel="stylesheet" type="text/css"/>
-
+            <link href="resources/buttons/material.css" rel="stylesheet" type="text/css" />
+            <link href="resources/notifications/material.css" rel="stylesheet" type="text/css" />
+            <link href="resources/inputs/material.css" rel="stylesheet" type="text/css" />
+            <link href="resources/navigations/material.css" rel="stylesheet" type="text/css" />
             <!-- JavaScript (ES5) AI AssistView's control style -->
             <link href="resources/interactive-chat/material.css" rel="stylesheet" type="text/css"/>
 
             <!-- JavaScript (ES5) AI AssistView's dependency global script -->
             <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
-
+            <script src="resources/data/ej2-data.min.js" type="text/javascript"></script>
+            <script src="resources/buttons/ej2-buttons.min.js" type="text/javascript"></script>
+            <script src="resources/popups/ej2-popups.min.js" type="text/javascript"></script>
+            <script src="resources/splitbuttons/ej2-splitbuttons.min.js" type="text/javascript"></script>
+            <script src="resources/inputs/ej2-inputs.min.js" type="text/javascript"></script>
+            <script src="resources/lists/ej2-lists.min.js" type="text/javascript"></script>
+            <script src="resources/dropdowns/ej2-dropdowns.min.js" type="text/javascript"></script>
+            <script src="resources/navigations/ej2-navigations.min.js" type="text/javascript"></script>
             <!-- JavaScript (ES5) AI AssistView's control global script -->
             <script src="resources/interactive-chat/ej2-interactive-chat.min.js" type="text/javascript"></script>
        </head>
@@ -100,13 +110,25 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
        <head>
           <title>JavaScript (ES5)</title>
           <!-- JavaScript (ES5) AI AssistView's dependency style -->
-          <link href="resources/base/material.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/base/material.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/buttons/material.css" rel="stylesheet" type="text/css" />
+            <link href="resources/notifications/material.css" rel="stylesheet" type="text/css" />
+            <link href="resources/inputs/material.css" rel="stylesheet" type="text/css" />
+            <link href="resources/navigations/material.css" rel="stylesheet" type="text/css" />
 
           <!-- JavaScript (ES5) AI AssistView's control style -->
           <link href="resources/interactive-chat/material.css" rel="stylesheet" type="text/css"/>
 
           <!-- JavaScript (ES5) AI AssistView's dependency global script -->
-          <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
+            <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
+            <script src="resources/data/ej2-data.min.js" type="text/javascript"></script>
+            <script src="resources/buttons/ej2-buttons.min.js" type="text/javascript"></script>
+            <script src="resources/popups/ej2-popups.min.js" type="text/javascript"></script>
+            <script src="resources/splitbuttons/ej2-splitbuttons.min.js" type="text/javascript"></script>
+            <script src="resources/inputs/ej2-inputs.min.js" type="text/javascript"></script>
+            <script src="resources/lists/ej2-lists.min.js" type="text/javascript"></script>
+            <script src="resources/dropdowns/ej2-dropdowns.min.js" type="text/javascript"></script>
+            <script src="resources/navigations/ej2-navigations.min.js" type="text/javascript"></script>
 
           <!-- JavaScript (ES5) AI AssistView's control global script -->
           <script src="resources/interactive-chat/ej2-interactive-chat.min.js" type="text/javascript"></script>

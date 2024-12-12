@@ -51,8 +51,6 @@ The Chart control followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patter
 * aria-hidden (attribute)
 * aria-pressed (attribute)
 
-You can use the `accessibility` property in the chart to customize the accessibility description, role, focusability, and tabindex. This allows you to define how the chart is described and interpreted, ensuring that users with disabilities can interact with and understand the chart more effectively.
-
 ## Keyboard interaction
 
 The Chart control followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Chart control.

@@ -582,22 +582,6 @@ The HTML element can be rendered in the tooltip of the Maps using the [`template
           
 {% previewsample "page.domainurl/code-snippet/maps/tooltip-template-cs2" %}
 
-### Changing duration in mobile devices
-
-To change the duration of the tooltips and tooltip templates in mobile devices, you can use the `duration` property in [tooltipSettings](../api/maps/tooltipSettingsModel/). By default, this property is set to **2000** milliseconds. Setting the value to **0** will keep the tooltip visible indefinitely. If it is greater than **0**, the tooltip will be removed after the specified time.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/maps/default-map-cs235/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/maps/default-map-cs235/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/maps/default-map-cs235" %}
-
-
 ## See Also
 
 * [Center position zooming](../maps/how-to/zooming)

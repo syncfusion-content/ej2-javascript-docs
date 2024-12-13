@@ -11,15 +11,7 @@ domainurl: ##DomainURL##
 
 # Create a object structure in ##Platform_Name## Spreadsheet control
 
-{% if page.publishingplatform == "typescript" %}
-
-This topic guides you to construct a JSON structure that can be passed to the [`openFromJson`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#openfromjson) method to render the spreadsheet. The JSON structure is an object with the key as `Workbook` and the [`properties`](https://helpej2.syncfusion.com/documentation/api/spreadsheet/#properties) of the spreadsheet as value.
-
-{% elsif page.publishingplatform == "javascript" %}
-
-This topic guides you to construct a JSON structure that can be passed to the [`openFromJson`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#openfromjson) method to render the spreadsheet. The JSON structure is an object with the key as `Workbook` and the [`properties`](https://helpej2.syncfusion.com/javascript/documentation/api/spreadsheet/#properties) of the spreadsheet as value.
-
-{% endif %}
+This topic guides you to construct a JSON structure that can be passed to the [`openFromJson`](../api/spreadsheet/#openfromjson) method to render the spreadsheet. The JSON structure is an object with the key as `Workbook` and the [`properties`](../api/spreadsheet#properties) of the spreadsheet as value.
 
 ```js
 { Workbook: {} }

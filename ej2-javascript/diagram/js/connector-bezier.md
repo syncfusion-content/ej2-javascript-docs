@@ -38,7 +38,7 @@ To create a bezier segment, the [`segment.type`](../api/diagram/segments) is set
 * Bezier control points can be positioned in two ways.
 
 * When setting control point positions using the The [`point1`](../api/diagram/bezierSegment#point1-PointModel) and [`point2`](../api/diagram/bezierSegment#point2-PointModel)  properties, the control point remains fixed in its set position while dragging connector end points.
-* When setting control point positions using the [`vector1`](../api/diagram/bezierSegment/#vector1) and [`vector2`](/api/diagram/bezierSegment/#vector2) properties, the control point dynamically adjusts to maintain the angle and distance originally set while moving the connector end points.
+* When setting control point positions using the [`vector1`](../api/diagram/bezierSegment#vector1-VectorModel) and [`vector2`](../api/diagram/bezierSegment#vector2-VectorModel) properties, the control point dynamically adjusts to maintain the angle and distance originally set while moving the connector end points.
 
 #### Point
 
@@ -59,7 +59,7 @@ The [`point1`](../api/diagram/bezierSegment#point1-PointModel) and [`point2`](..
 
 #### Vector
 
-The [`vector1`](../api/diagram/bezierSegment/#vector1) and [`vector2`](../api/diagram/bezierSegment/#vector2) properties of bezier segment enable you to define the vectors. The following code illustrates how to configure a bezier curve with vectors.
+The [`vector1`](../api/diagram/bezierSegment#vector1-VectorModel) and [`vector2`](../api/diagram/bezierSegment#vector2-VectorModel) properties of bezier segment enable you to define the vectors. The following code illustrates how to configure a bezier curve with vectors.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -118,9 +118,9 @@ This feature allows users to choose whether to reset the control points of bezie
 
 ### How to customize Bezier Segment Thumb Size
 
-Bezier segment thumbs default to size 10. This can be adjusted globally or for individual connectors using the [`segmentThumbSize`](../api/diagram/#segmentthumbsize) property.
-To change the thumb size for all Bezier connectors, set the [`segmentThumbSize`](../api/diagram/#segmentthumbsize) property in the diagram’s model.
-To customize the thumb size for a specific connector, disable the [`InheritSegmentThumbSize`](../api/diagram/connectorConstraints) constraint, then set the desired [`segmentThumbSize`](../api/diagram/#segmentthumbsize).
+Bezier segment thumbs default to size 10. This can be adjusted globally or for individual connectors using the [`segmentThumbSize`](../api/diagram#segmentThumbSize-SegmentThumbSize) property.
+To change the thumb size for all Bezier connectors, set the [`segmentThumbSize`](../api/diagram#segmentThumbSize-SegmentThumbSize) property in the diagram’s model.
+To customize the thumb size for a specific connector, disable the [`InheritSegmentThumbSize`](../api/diagram/connectorConstraints) constraint, then set the desired [`segmentThumbSize`](../api/diagram#segmentThumbSize-SegmentThumbSize).
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

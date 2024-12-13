@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with JavaScript Schedule Control | Syncfusion
-description:  Checkout and learn about Getting started with JavaScript Schedule Control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Schedule control | Syncfusion
+description:  Checkout and learn about Getting started with ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with JavaScript Schedule Control
+# Getting started in ##Platform_Name## Schedule control
 
 This section briefly explains how to create the [**JavaScript Scheduler**](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) component and configure its available functionalities in a JavaScript application.
 
@@ -242,7 +242,7 @@ var scheduleObj = new ej.schedule.Schedule({
             subject: 'Meeting',
             startTime: new Date(2018, 1, 15, 10, 0),
             endTime: new Date(2018, 1, 15, 12, 30)
-        }]
+        }];
     }
 });
 scheduleObj.appendTo('#Schedule');
@@ -287,6 +287,7 @@ Scheduler usually displays the system date as its current date. To change the cu
 var scheduleObj = new ej.schedule.Schedule({
     height: '550px',
     selectedDate: new Date(2018, 1, 15)
+    }
 });
 scheduleObj.appendTo('#Schedule');
 ```

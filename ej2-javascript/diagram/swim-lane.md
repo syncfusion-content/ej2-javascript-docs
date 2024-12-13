@@ -86,7 +86,7 @@ The following code example illustrates how to define a swimlane header.
 
 ### Customization of headers
 
-The height and width of swimlane header can be customized with [`width`](../api/diagram/headerModel/#width) and [`height`](../api/diagram/headerModel#height) properties of swimlane header. set fill color of header by using the [`style`](../api/diagram/headerModel#style) property. The orientation of swimlane can be customized with the [`orientation`](../api/diagram/swimLaneModel/#orientation) property of the header.
+The height and width of swimlane header can be customized with [`weight`](../api/diagram/headerModel#width) and [`height`](../api/diagram/headerModel#height) properties of swimlane header. set fill color of header by using the [`style`](../api/diagram/headerModel#style) property. The orientation of swimlane can be customized with the [`orientation`](../api/diagram/swimLaneModel#header) property of the header.
 
 N> By default the swimlane orientation has Horizontal.
 

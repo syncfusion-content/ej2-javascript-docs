@@ -32,7 +32,7 @@ let scheduleObj: Schedule = new Schedule({
         textField: 'OwnerText', idField: 'Id', groupIDField: 'OwnerGroupId', colorField: 'OwnerColor'
     }],
     eventSettings: { dataSource: resourceData },
-    renderCell: (args: RenderCellEventArgs) => {
+    renderCell: (args: RenderCellEventArgs) {
       if (args.elementType == 'resourceGroupCells' &&
        args.element.className.indexOf('e-work-hours') > 0) {
           args.element.style.background = "#FAFAE3";

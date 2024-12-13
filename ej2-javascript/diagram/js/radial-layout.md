@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Radial tree layout in ##Platform_Name## Diagram control
 
-A Radial tree layout is a diagram that presents information in a hierarchical structure, with a central node at the core of the diagram. The central node represents the main concept or topic, and branches extend outward in a radial fashion, creating a tree-like structure. The layout [`root`](../api/diagram/layout/#root) property can be used to define the root node of the layout. When no root node is set, the algorithm automatically considers the node without any incoming edges (InEdges connector count of 0) as the root node. To create radial tree, the [`type`](../api/diagram/layout/#type) of the layout as `RadialTree`.
+A Radial tree layout is a diagram that presents information in a hierarchical structure, with a central node at the core of the diagram. The central node represents the main concept or topic, and branches extend outward in a radial fashion, creating a tree-like structure. The layout [`root`](../api/diagram/layout) property can be used to define the root node of the layout. When no root node is set, the algorithm automatically considers the node without any incoming edges (InEdges connector count of 0) as the root node. To create radial tree, the [`type`](../api/diagram/layout) of the layout as `RadialTree`.
 
 The RadialTree layout provides support for adding space between the nodes. The [`HorizontalSpacing`](../api/diagram/layoutModel/#horizontalspacing )and [`VerticalSpacing`](../api/diagram/layoutModel/#verticalspacing) properties of the layout allow you to set the space between the nodes. The arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy.
 

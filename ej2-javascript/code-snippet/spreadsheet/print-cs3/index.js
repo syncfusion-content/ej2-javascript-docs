@@ -111,10 +111,7 @@ var spreadsheet = new ej.spreadsheet.Spreadsheet({
     { name: 'Budget', ranges: [{ dataSource: budgetData }], columns: columns },
     { name: 'Salary', ranges: [{ dataSource: salaryData }], columns: columns },
   ],
-  allowPrint: false,
-  created: function () {
-    spreadsheet.cellFormat({ fontWeight: 'bold' }, 'A1:D1');
-  }
+  allowPrint: false
 });
 
 spreadsheet.appendTo('#spreadsheet');

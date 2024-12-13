@@ -6,10 +6,8 @@ Maps.Inject(Marker, Zoom);
 let map: Maps = new Maps({
     zoomSettings: {
         enable: true,
-        shouldZoomInitially: true,
-        toolbarSettings: {
-            horizontalAlignment: 'Near'
-        }
+        horizontalAlignment:'Near',
+        shouldZoomInitially: true
     },
     layers: [{
         shapeData: world_map,

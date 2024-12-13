@@ -1,10 +1,8 @@
 var map = new ej.maps.Maps({
     zoomSettings: {
         enable: true,
-        shouldZoomInitially: true,
-        toolbarSettings: {
-            horizontalAlignment: 'Near'
-        }
+        horizontalAlignment:'Near',
+        shouldZoomInitially: true
     },
     layers: [{
         shapeData: world_map,

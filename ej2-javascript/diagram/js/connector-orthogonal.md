@@ -71,7 +71,7 @@ Orthogonal segments are automatically re-routed, in order to avoid overlapping w
 
 ## How to customize Orthogonal Segment Thumb Shape
 
-The orthogonal connector can have any number of segments in between the source and the target point. Segments are rendered with the circle shape by default. The [`segmentThumbShape`](../api/diagram/#segmentthumbshape) property allows you to change the default shape of the segment thumb. The following predefined shapes are provided:
+The orthogonal connector can have any number of segments in between the source and the target point. Segments are rendered with the circle shape by default. The [`segmentThumbShape`](../api/diagram#segmentThumbShape-SegmentThumbShapes) property allows you to change the default shape of the segment thumb. The following predefined shapes are provided:
 
 | Shape name | Shape |
 |-------- | -------- |
@@ -121,9 +121,9 @@ Use the following CSS to customize the segment thumb shape.
 
 ## How to customize Orthogonal Segment Thumb Size
 
-Orthogonal segment thumbs default to size 10. This can be adjusted globally or for individual connectors using the [`segmentThumbSize`](../api/diagram/#segmentthumbsize) property.
-To change the thumb size for all Orthogonal connectors, set the [`segmentThumbSize`](../api/diagram/#segmentthumbsize) property in the diagram’s model.
-To customize the thumb size for a specific connector, disable the [`InheritSegmentThumbSize`](../api/diagram/connectorConstraints) constraint, then set the desired [`segmentThumbSize`](../api/diagram/#segmentthumbsize). 
+Orthogonal segment thumbs default to size 10. This can be adjusted globally or for individual connectors using the [`segmentThumbSize`](../api/diagram#segmentThumbSize-SegmentThumbSize) property.
+To change the thumb size for all Orthogonal connectors, set the [`segmentThumbSize`](../api/diagram#segmentThumbSize-SegmentThumbSize) property in the diagram’s model.
+To customize the thumb size for a specific connector, disable the [`InheritSegmentThumbSize`](../api/diagram/connectorConstraints) constraint, then set the desired [`segmentThumbSize`](../api/diagram#segmentThumbSize-SegmentThumbSize). 
 
 
 {% tabs %}

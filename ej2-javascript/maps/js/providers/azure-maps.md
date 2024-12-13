@@ -36,11 +36,7 @@ The Azure Maps layer can be zoomed and panned. Zooming helps to get a closer loo
 var map = new ej.maps.Maps({
     zoomSettings: {
         enable: true,
-        toolbarSettings: {
-            buttonSettings: {
-                toolbarItems: ['Zoom', 'ZoomIn', 'ZoomOut', 'Pan', 'Reset']
-            }
-        }
+        toolbars: ["Zoom", "ZoomIn", "ZoomOut", "Pan", "Reset"]
     },
     layers: [{
         urlTemplate: "https://atlas.microsoft.com/map/imagery/png?subscription-key=Your-Key &api-version=1.0&style=satellite&zoom=level&x=tileX&y=tileY"

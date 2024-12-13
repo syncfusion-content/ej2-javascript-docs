@@ -8,6 +8,7 @@ var map = new ej.maps.Maps({
     },
         layers: [
         {
+            layerType: 'Geometry',
             shapeData: world_map,
             shapePropertyPath: 'continent',
             shapeDataPath: 'continent',
@@ -27,6 +28,7 @@ var map = new ej.maps.Maps({
         ]
         },
         {
+            layerType: 'Geometry',
             shapeData: africa,
             shapeSettings: {
                 fill: '#80306A'

@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Export in ##Platform_Name## Diagram control
 
-Diagram provides support to export its content as image/svg files. The [`exportDiagram`](../api/diagram/#exportdiagram) method of diagram helps to export the diagram. The following code illustrates how to export the diagram as image.
+Diagram provides support to export its content as image/svg files. The [`exportDiagram`](../api/diagram#exportDiagram) method of diagram helps to export the diagram. The following code illustrates how to export the diagram as image.
 
 N> To Export diagram, you need to inject `PrintAndExport` in the diagram.
 
@@ -185,7 +185,7 @@ To get the html diagram content, the [`getDiagramContent`](../api/diagram/#getdi
 
 ### Export diagram with stretch option
 
-Diagram provides support to export the diagram as image for [`stretch`](../api/diagram/iExportOptions/#stretch) option. The exported images will be clearer but larger in file size.
+Diagram provides support to export the diagram as image for [`stretch`](../api/diagram/iExportOptions#stretch-stretch) option. The exported images will be clearer but larger in file size.
 
 The following code example illustrates how to export the region occupied by the diagram elements.
 

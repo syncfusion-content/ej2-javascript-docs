@@ -11,15 +11,7 @@ domainurl: ##DomainURL##
 
 # Link in ##Platform_Name## Spreadsheet control
 
-{% if page.publishingplatform == "typescript" %}
-
-Hyperlink is used to navigate to web links or cell reference within the sheet or to other sheets in Spreadsheet. You can use the [`allowHyperlink`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#allowhyperlink) property to enable or disable hyperlink functionality.
-
-{% elsif page.publishingplatform == "javascript" %}
-
-Hyperlink is used to navigate to web links or cell reference within the sheet or to other sheets in Spreadsheet. You can use the [`allowHyperlink`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#allowhyperlink) property to enable or disable hyperlink functionality.
-
-{% endif %}
+Hyperlink is used to navigate to web links or cell reference within the sheet or to other sheets in Spreadsheet. You can use the [`allowHyperlink`](../api/spreadsheet/#allowhyperlink) property to enable or disable hyperlink functionality.
 
 > * The default value for `allowHyperlink` property is `true`.
 
@@ -34,13 +26,8 @@ In the active spreadsheet, click the cell where you want to create a hyperlink. 
 * Select the INSERT tab in the Ribbon toolbar and choose the `Link` item.
 * Right-click the cell and then click Hyperlink item in the context menu.
 * Use `Ctrl + K` keyboard shortcut to apply the hyperlink.
+* Use the [`addHyperlink`](../api/spreadsheet/#hyperlink) method programmatically.
 
-{% if page.publishingplatform == "typescript" %}
-* Use the [`addHyperlink`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#addhyperlink) method programmatically.
-{% elsif page.publishingplatform == "javascript" %}
-* Use the [`addHyperlink`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#addhyperlink) method programmatically.
-{% endif %}
- 
 ## Edit Hyperlink
 
 You can change an existing hyperlink in your workbook by changing its destination or the text that is used to represent it.
@@ -61,18 +48,8 @@ Performing this operation remove a single hyperlink without losing the display t
 **User Interface**:
 
 In the active spreadsheet, click the cell where you want to remove a hyperlink. remove hyperlink can be done by any of the following ways:
-
-{% if page.publishingplatform == "typescript" %}
-
 * Right-click the cell and then click Remove Hyperlink item in the context menu.
-* Use the [`removeHyperlink()`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#removehyperlink) method programmatically.
-
-{% elsif page.publishingplatform == "javascript" %}
-
-* Right-click the cell and then click Remove Hyperlink item in the context menu.
-* Use the [`removeHyperlink()`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#removehyperlink) method programmatically.
-
-{% endif %}
+* Use the [`removeHyperlink()`](../api/spreadsheet/#hyperlink) method programmatically.
 
 ## How to change target attribute
 

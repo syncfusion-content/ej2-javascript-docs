@@ -25,7 +25,7 @@ By default, there are 5 types of repeat options available in recurrence editor s
 * Monthly
 * Yearly
 
-It is possible to customize the recurrence editor to display only the specific repeat options such as `Daily` and `Weekly` options alone by setting the appropriate [`frequencies`](https://ej2.syncfusion.com/documentation/api/recurrence-editor#frequencies) option.
+It is possible to customize the recurrence editor to display only the specific repeat options such as `Daily` and `Weekly` options alone by setting the appropriate `frequencies` option.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -110,7 +110,7 @@ It is possible to customize the recurrence editor to display only the specific e
 
 The recurrence rule is usually generated based on the options selected from the recurrence editor and also it follows the [`iCalendar`](https://tools.ietf.org/html/rfc5545#section-3.3.10) specifications. The generated recurrence rule string is a valid one to be used with the Scheduler event’s recurrence rule field.
 
-There is a [`change`](https://ej2.syncfusion.com/documentation/api/recurrence-editor#change) event available in recurrence editor, that triggers on every time the fields of recurrence editor tends to change. Within this event argument, you can access the generated recurrence value through the `value` option as shown in the following code example.
+There is a `change` event available in recurrence editor, that triggers on every time the fields of recurrence editor tends to change. Within this event argument, you can access the generated recurrence value through the `value` option as shown in the following code example.
 
 {% if page.publishingplatform == "typescript" %}
 

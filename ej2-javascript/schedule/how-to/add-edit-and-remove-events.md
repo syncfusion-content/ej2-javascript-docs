@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Add edit and remove events in ##Platform_Name## Schedule control
 
-CRUD actions can be manually performed on appointments using[ `addEvent`](https://ej2.syncfusion.com/documentation/api/schedule#addevent), [`saveEvent`](https://ej2.syncfusion.com/documentation/api/schedule#saveevent) and [`deleteEvent`](https://ej2.syncfusion.com/documentation/api/schedule#deleteevent) methods as shown below.
+CRUD actions can be manually performed on appointments using `addEvent`, `saveEvent` and `deleteEvent` methods as shown below.
 
 ## Normal event
 

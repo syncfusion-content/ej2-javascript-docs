@@ -1,6 +1,6 @@
 
 
-import { Schedule, Day, Week, WorkWeek, Month, Agenda, View, EventRenderedArgs } from '@syncfusion/ej2-schedule';
+import { Schedule, Day, Week, WorkWeek, Month, Agenda View, EventRenderedArgs } from '@syncfusion/ej2-schedule';
 import { scheduleData } from './datasource.ts';
 
 Schedule.Inject(Day, Week, WorkWeek, Month, Agenda);

@@ -11,15 +11,7 @@ domainurl: ##DomainURL##
 
 # Notes in ##Platform_Name## Spreadsheet control
 
-{% if page.publishingplatform == "typescript" %}
-
-The **Notes** feature is used to insert comments, provide feedback, suggest changes, or leave remarks on specific cells while reviewing documents in the Spreadsheet. You can enable or disable the notes functionality using the [`enableNotes`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#enablenotes) property, which defaults to **true**.
-
-{% elsif page.publishingplatform == "javascript" %}
-
-The **Notes** feature is used to insert comments, provide feedback, suggest changes, or leave remarks on specific cells while reviewing documents in the Spreadsheet. You can enable or disable the notes functionality using the [`enableNotes`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#enablenotes) property, which defaults to **true**.
-
-{% endif %}
+The **Notes** feature is used to insert comments, provide feedback, suggest changes, or leave remarks on specific cells while reviewing documents in the Spreadsheet. You can enable or disable the notes functionality using the [`enableNotes`](../api/spreadsheet/#enablenotes) property, which defaults to **true**.
 
 When opening the Excel document with notes in the Spreadsheet, they will be displayed in the control. The cells containing notes will be indicated with a red colored triangle at the top-right corner. Hovering the mouse over these cells will display the content of the notes.
 
@@ -89,15 +81,7 @@ The Spreadsheet data, including notes, can be saved and exported as an Excel doc
 
 ## Disabling notes
 
-{% if page.publishingplatform == "typescript" %}
-
-To disable the note functionality, you need to set the [`enableNotes`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#enablenotes) property to **false**. After disabling, the notes in the document will not be shown when opened in the Spreadsheet. The **"Add Note"** option will not be shown in the context menu. The keyboard shortcuts for the note functionality will not work.
-
-{% elsif page.publishingplatform == "javascript" %}
-
-To disable the note functionality, you need to set the [`enableNotes`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#enablenotes) property to **false**. After disabling, the notes in the document will not be shown when opened in the Spreadsheet. The **"Add Note"** option will not be shown in the context menu. The keyboard shortcuts for the note functionality will not work.
-
-{% endif %}
+To disable the note functionality, you need to set the [`enableNotes`](../api/spreadsheet/#enablenotes) property to **false**. After disabling, the notes in the document will not be shown when opened in the Spreadsheet. The **"Add Note"** option will not be shown in the context menu. The keyboard shortcuts for the note functionality will not work.
 
 ![Spreadsheet with notes feature disabled](./images/spreadsheet_notes_disable.png)
 
@@ -166,4 +150,3 @@ The notes can be added initially when the Spreadsheet loads using cell data bind
 * When importing the document with notes, the formatting of the content in the notes will not be available. Similarly, while adding notes, we cannot apply formatting to them.
 * The style and appearance of the dialog box for the notes, including size, color, border, and other elements, cannot be directly changed.
 * Exporting the workbook along with notes is not supported in file formats such as Comma Separated Values (.csv), Excel Macro-Enabled Workbook (.xlsm), Excel Binary Workbook (.xlsb), and PDF Document (.pdf).
-* Notes added outside the used ranges of the worksheet will not be included in the exported document.

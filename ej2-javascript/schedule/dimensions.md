@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dimensions in ##Platform_Name## Schedule Control | Syncfusion
-description: Learn here all about dimensions in Syncfusion ##Platform_Name## Schedule control, its elements and more.
+title: Dimensions in ##Platform_Name## Schedule control | Syncfusion
+description: Learn here all about Dimensions in Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Dimensions 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dimensions in ##Platform_Name## Schedule Control
+# Dimensions in ##Platform_Name## Schedule control
 
 The Scheduler dimensions refers to both height and width of the entire layout and it accepts 3 types of values.
 
@@ -19,7 +19,7 @@ The Scheduler dimensions refers to both height and width of the entire layout an
 
 ## Auto Height and Width
 
-When [height](https://ej2.syncfusion.com/documentation/api/schedule#height) and [width](https://ej2.syncfusion.com/documentation/api/schedule#width) of the Scheduler are set to `auto`, it will try as hard as possible to keep an element the same width as its parent container. In other words, the parent container that holds Scheduler, it's width/height will be the sum of its children. By default, Scheduler is assigned with `auto` values for both height and width properties.
+When height and width of the Scheduler are set to `auto`, it will try as hard as possible to keep an element the same width as its parent container. In other words, the parent container that holds Scheduler, it's width/height will be the sum of its children. By default, Scheduler is assigned with `auto` values for both height and width properties.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -114,4 +114,4 @@ When height and width of the Scheduler are given as percentage, it will make the
 
 ## See Also
 
-* [How to Change Scheduler Cell Dimensions](./cell-customization#setting-cell-dimensions-in-all-views)
+* [How to Change Scheduler Cell Dimensions](./cell-customization/#setting-cell-dimensions-in-all-views)

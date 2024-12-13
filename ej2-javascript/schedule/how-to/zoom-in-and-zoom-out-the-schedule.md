@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Zoom in and zoom out the schedule in ##Platform_Name## Schedule control
 
-By default Scheduler component doesn’t have the Zoom in/out support. Using the [`timeScale`](https://ej2.syncfusion.com/documentation/api/schedule#timescale) and [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule#headerrows) properties of our scheduler, we can achieve this.
+By default Scheduler component doesn’t have the Zoom in/out support. Using the `timeScale` and `headerRows` properties of our scheduler, we can achieve this.
 
 Refer to the following code example.
 

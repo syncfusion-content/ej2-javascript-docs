@@ -1,37 +1,25 @@
-import { Chart, RangeAreaSeries, Category } from '@syncfusion/ej2-charts';
-import { chartData } from './datasource.ts';
-Chart.Inject(RangeAreaSeries, Category);
-
-let chart: Chart = new Chart({
-    primaryXAxis: {
-        valueType: 'Category',
-        title: 'Month',
-        edgeLabelPlacement: 'Shift',
-        majorGridLines: { width: 0 }
-    },
-    primaryYAxis:
-    {
-        title: 'Temperature',
-        labelFormat: '{value}˚C',
-        lineStyle: { width: 0 },
-        minimum: 0,
-        maximum: 30,
-        majorTickLines: { width: 0 }
-    },
+import { AccumulationChart, PieSeries, AccumulationLegend } from '@syncfusion/ej2-charts';
+AccumulationChart.Inject(PieSeries, AccumulationLegend);
+let piechart: AccumulationChart = new AccumulationChart({
     series: [
         {
-            type: 'RangeArea',
-            dataSource: chartData,
+            dataSource: [
+                { x: 'Jan', y: 3 },  { x: 'Feb', y: 3.5 }, 
+                { x: 'Mar', y: 7 },  { x: 'Apr', y: 13.5 }, 
+                { x: 'May', y: 19 }, { x: 'Jun', y: 23.5 }, 
+                { x: 'Jul', y: 26 }, { x: 'Aug', y: 25 },
+                { x: 'Sep', y: 21 }, { x: 'Oct', y: 15 },
+                { x: 'Nov', y: 15 }, { x: 'Dec', y: 15 }
+            ],
             xName: 'x',
-            high: 'high',
-            low: 'low',
-            marker: { visible: true },
-            accessibility: {
-                accessibilityDescription: 'Monthly temperature range from high to low for each month.',
-                accessibilityRole: 'series',
-                accessibilityDescriptionFormat: 'Temperature range in ${point.x}: High of ${point.high}˚C, Low of ${point.low}˚C'
-            }
+            yName: 'y'
         }
     ],
-    title: 'Monthly Temperature Range'
+    legendSettings: {
+        visible: true,
+        accessibility: {
+            accessibilityDescription: 'The legend identifies the data categories represented in the chart and associates them with their corresponding labels.',
+            accessibilityRole: 'group'
+        }
+    }
 }, '#element');

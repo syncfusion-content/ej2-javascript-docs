@@ -150,7 +150,7 @@ The following code illustrates how to add a new layer with new connectors stored
 
 ## Remove layer at runtime
 
-Layers can be removed at runtime by using the [`removeLayer`](../api/diagram/#removelayer) public method.
+Layers can be removed at runtime by using the [`removeLayer`](../api/diagram#removeLayer) public method.
 
 To remove a layer, pass the ID of the layer you want to remove as a parameter to the `removeLayer` method.
 
@@ -171,7 +171,7 @@ The following code illustrates how to remove a layer.
 
 ## moveObjects
 
-You can move objects from one layer to another dynamically using the [`moveObjects`](../api/diagram/#moveobjects) public method of the diagram control. This can be useful for managing complex diagrams with multiple layers where you need to update the categorization of elements based on user interaction or other dynamic conditions..
+You can move objects from one layer to another dynamically using the [`moveObjects`](../api/diagram#moveObjects) public method of the diagram control. This can be useful for managing complex diagrams with multiple layers where you need to update the categorization of elements based on user interaction or other dynamic conditions..
 
 The following code illustrates how to move objects from one layer to another layer.
 
@@ -192,7 +192,7 @@ The following code illustrates how to move objects from one layer to another lay
 
 ### Bring Layer Forward
 
-Layers can be moved forward at runtime by using the [`bringLayerForward`](../api/diagram/#bringlayerforward) public method.
+Layers can be moved forward at runtime by using the [`bringLayerForward`](../api/diagram#bringLayerForward) public method.
 
 ```javascript
 // move the layer forward
@@ -202,7 +202,7 @@ diagram.bringLayerForward('layer1');
 
 ### Send Layer Backward
 
-Layers can be moved backward at runtime by using the [`sendLayerBackward`](../api/diagram/#sendlayerbackward) public method.
+Layers can be moved backward at runtime by using the [`sendLayerBackward`](../api/diagram#sendLayerBackward) public method.
 
 ```javascript
 // move the layer backward
@@ -225,13 +225,13 @@ The following code illustrates how to send the layer forward/backward to another
 
 ### Layer and objects rendering order
 
-The rendering of diagram elements with layer properties involves grouping them within a `diagram_diagramLayer` for basic shape nodes and `diagram_nativeLayer_svg` for SVG-native elements. Even if different types of nodes are added within the same layer, the rendering at the DOM level occurs in separate layers. Therefore, when executing layering commands like [`bringLayerForward`](../api/diagram/#bringlayerforward) and [`sendLayerBackward`](../api/diagram/#sendlayerbackward), the native SVG elements will always render above the basic shape elements. 
+The rendering of diagram elements with layer properties involves grouping them within a `diagram_diagramLayer` for basic shape nodes and `diagram_nativeLayer_svg` for SVG-native elements. Even if different types of nodes are added within the same layer, the rendering at the DOM level occurs in separate layers. Therefore, when executing layering commands like [`bringLayerForward`](../api/diagram#bringLayerForward) and [`sendLayerBackward`](../api/diagram#sendLayerBackward), the native SVG elements will always render above the basic shape elements. 
 
 The order of rendering is as follows: HTML shapes -> SVG shapes -> Path data shapes & Basic shapes.
 
 ## Clone Layer
 
-Layers can be cloned with its object by using the [`cloneLayer`](../api/diagram/#clonelayer) public method.
+Layers can be cloned with its object by using the [`cloneLayer`](../api/diagram#cloneLayer) public method.
 
 The following code illustrates how to clone the layer.
 
@@ -256,7 +256,7 @@ Public methods are available to get and set the active layer, which are explaine
 
 ### Get ActiveLayer
 
-Active layer of the diagram can be retrieved by using the [`getActiveLayer`](..api/diagram/#getactivelayer) public method.
+Active layer of the diagram can be retrieved by using the [`getActiveLayer`](../api/diagram#getActiveLayer) public method.
 
 The following code illustrates how fetch active layer from the diagram
 
@@ -269,7 +269,7 @@ let activeLayer = diagram.getActiveLayer();
 
 ### Set ActiveLayer
 
-You can set any layer to be the active layer of the diagram by using the [`setActiveLayer`](../api/diagram/#setactivelayer) public method.
+You can set any layer to be the active layer of the diagram by using the [`setActiveLayer`](../api/diagram#setActiveLayer) public method.
 
 The following code illustrates how to set active layer for diagram
 

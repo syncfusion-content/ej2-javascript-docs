@@ -57,7 +57,7 @@ The default tooltip that appears while interacting with nodes can be disabled by
 
 ## Tooltip for a specific node/connector
 
-The tooltip can be customized for each node and connector. To show different tooltips for different diagram elements on mouse over, set the [`tooltip`](../api/diagram/diagramTooltipModel/) property of the node or connector with the tooltip [`content`](../api/diagram/diagramTooltipModel/#content) and [`position`](../api/diagram/diagramTooltipModel/#position). The following code example illustrates how to customize the tooltip for individual elements.
+The tooltip can be customized for each node and connector. To show different tooltips for different diagram elements on mouse over, set the [`tooltip`](../api/diagram/diagramTooltipModel/) property of the node or connector with the tooltip [`content`](../aapi/diagram/diagramTooltipModel/#content) and [`position`](../api/diagram/diagramTooltipModel/#position). The following code example illustrates how to customize the tooltip for individual elements.
 
 {% if page.publishingplatform == "typescript" %}
 

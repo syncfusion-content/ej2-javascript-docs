@@ -1,58 +1,40 @@
-var splinedata = [
-    { x: 'Jan', high: 14, low: 4,  high1: 29, low1: 19 },
-    { x: 'Feb', high: 17, low: 7,  high1: 32, low1: 22 },
-    { x: 'Mar', high: 20, low: 10, high1: 35, low1: 25 },
-    { x: 'Apr', high: 22, low: 12, high1: 37, low1: 27 },
-    { x: 'May', high: 20, low: 10, high1: 35, low1: 25 },
-    { x: 'Jun', high: 17, low: 7,  high1: 32, low1: 22 },
-    { x: 'Jul', high: 15, low: 5,  high1: 30, low1: 20 },
-    { x: 'Aug', high: 17, low: 7,  high1: 32, low1: 22 },
-    { x: 'Sep', high: 20, low: 10, high1: 35, low1: 25 },
-    { x: 'Oct', high: 22, low: 12, high1: 37, low1: 27 },
-    { x: 'Nov', high: 20, low: 10, high1: 35, low1: 25 },
-    { x: 'Dec', high: 17, low: 7,  high1: 32, low1: 22 }
+var columnData = [
+    { country: "USA",       gold: 50 }, 
+    { country: "China",     gold: 40 }, 
+    { country: "Japan",     gold: 70 },
+    { country: "Australia", gold: 60 }, 
+    { country: "France",    gold: 50 }, 
+    { country: "Germany",   gold: 40 },
+    { country: "Italy",     gold: 40 }, 
+    { country: "Sweden",    gold: 30 }
 ];
 var chart = new ej.charts.Chart({
     primaryXAxis: {
         valueType: 'Category',
-        title: 'Month',
-        edgeLabelPlacement: 'Shift',
-        majorGridLines: { width: 0 }
+        title: 'Countries'
     },
     primaryYAxis: {
-        title: 'Temperature',
-        labelFormat: '{value}˚C',
-        lineStyle: { width: 0 },
-        minimum: 0,
-        maximum: 40,
-        majorTickLines: { width: 0 }
+        title: 'Medals'
     },
+    annotations: [{
+        content: '<div style="border: 1px solid #000; background-color: #f8f8f8; padding: 5px; border-radius: 4px; font-size: 12px; font-weight: bold;">70 Gold Medals</div>',
+        coordinateUnits: 'Point',
+        x: 'France',
+        y: 55,
+        accessibility: {
+            accessibilityDescription: 'Annotation indicating that France has won 70 Gold Medals.',
+            accessibilityRole: 'note',
+            focusable: true
+        }
+    }],
     series: [
         {
-            type: 'SplineRangeArea',
-            dataSource: splinedata,
-            xName: 'x', high: 'high', 
-            low: 'low', name: 'England',
-            marker: { visible: true },
-            accessibility: {
-                accessibilityDescription: 'Temperature range in England for each month',
-                accessibilityRole: 'series',
-                accessibilityDescriptionFormat: 'In ${point.x}, the temperature range in England was from ${point.low}°C to ${point.high}°C.'
-            }
-        },
-        {
-            type: 'SplineRangeArea',
-            dataSource: splinedata,
-            xName: 'x', high: 'high1', 
-            low: 'low1', name: 'India',
-            marker: { visible: true },
-            accessibility: {
-                accessibilityDescription: 'Temperature range in India for each month',
-                accessibilityRole: 'series',
-                accessibilityDescriptionFormat: 'In ${point.x}, the temperature range in India was from ${point.low}°C to ${point.high}°C.'
-            }
+            dataSource: columnData,
+            xName: 'country', 
+            yName: 'gold',
+            type: 'Column'
         }
     ],
-    title: 'Monthly Temperature Range'
+    title: 'Olympic Medals'
 }, '#element');
 

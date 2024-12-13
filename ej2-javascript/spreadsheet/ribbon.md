@@ -17,35 +17,17 @@ It helps to organize a spreadsheet’s features into a series of tabs. By clicki
 
 You can customize the ribbon using the following methods,
 
-{% if page.publishingplatform == "typescript" %}
-
 | Method | Action |
 |-------|---------|
-| [`hideRibbonTabs`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#hideribbontabs) | Used to show or hide the existing ribbon tabs. |
-| [`enableRibbonTabs`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#enableribbontabs) | Used to enable or disable the existing ribbon tabs. |
-| [`addRibbonTabs`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#addribbontabs) | Used to add custom ribbon tabs. |
-| [`hideToolbarItems`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#hidetoolbaritems) | Used to show or hide the existing ribbon toolbar items. |
-| [`enableToolbarItems`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#enabletoolbaritems) | Used to enable or disable the specified toolbar items. |
-| [`addToolbarItems`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#addtoolbaritems) | Used to add the custom items in ribbon toolbar. |
-| [`hideFileMenuItems`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#hidefilemenuitems) | Used to show or hide the ribbon file menu items. |
-| [`enableFileMenuItems`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#enablefilemenuitems) | Used to enable or disable file menu items. |
-| [`addFileMenuItems`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#addfilemenuitems) | Used to add custom file menu items. |
-
-{% elsif page.publishingplatform == "javascript" %}
-
-| Method | Action |
-|-------|---------|
-| [`hideRibbonTabs`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#hideribbontabs) | Used to show or hide the existing ribbon tabs. |
-| [`enableRibbonTabs`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#enableribbontabs) | Used to enable or disable the existing ribbon tabs. |
-| [`addRibbonTabs`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#addribbontabs) | Used to add custom ribbon tabs. |
-| [`hideToolbarItems`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#hidetoolbaritems) | Used to show or hide the existing ribbon toolbar items. |
-| [`enableToolbarItems`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#enabletoolbaritems) | Used to enable or disable the specified toolbar items. |
-| [`addToolbarItems`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#addtoolbaritems) | Used to add the custom items in ribbon toolbar. |
-| [`hideFileMenuItems`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#hidefilemenuitems) | Used to show or hide the ribbon file menu items. |
-| [`enableFileMenuItems`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#enablefilemenuitems) | Used to enable or disable file menu items. |
-| [`addFileMenuItems`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#addfilemenuitems) | Used to add custom file menu items. |
-
-{% endif %}
+| [`hideRibbonTabs`](../api/spreadsheet/#hideribbontabs) | Used to show or hide the existing ribbon tabs. |
+| [`enableRibbonTabs`](../api/spreadsheet/#enableribbontabs) | Used to enable or disable the existing ribbon tabs. |
+| [`addRibbonTabs`](../api/spreadsheet/#addribbontabs) | Used to add custom ribbon tabs. |
+| [`hideToolbarItems`](../api/spreadsheet/#hidetoolbaritems) | Used to show or hide the existing ribbon toolbar items. |
+| [`enableToolbarItems`](../api/spreadsheet/#enabletoolbaritems) | Used to enable or disable the specified toolbar items. |
+| [`addToolbarItems`](../api/spreadsheet/#addtoolbaritems) | Used to add the custom items in ribbon toolbar. |
+| [`hideFileMenuItems`](../api/spreadsheet/#hidefilemenuitems) | Used to show or hide the ribbon file menu items. |
+| [`enableFileMenuItems`](../api/spreadsheet/#enablefilemenuitems) | Used to enable or disable file menu items. |
+| [`addFileMenuItems`](../api/spreadsheet/#addfilemenuitems) | Used to add custom file menu items. |
 
 The following code example shows the usage of ribbon customization.
 

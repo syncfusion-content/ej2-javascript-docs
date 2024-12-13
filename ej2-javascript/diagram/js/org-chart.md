@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Organizational Chart layout in ##Platform_Name## Diagram control
 
-An organizational chart is a diagram that displays the structure of an organization and relationships. To create an organizational chart, the [`type`](../api/diagram/layout/#type) of layout should be set as an `OrganizationalChart`.
+An organizational chart is a diagram that displays the structure of an organization and relationships. To create an organizational chart, the [`type`](../api/diagram/layout) of layout should be set as an `OrganizationalChart`.
 
 ## Organizational chart with DataSource
 

@@ -2,13 +2,12 @@
 
 
 import { MultiSelect } from '@syncfusion/ej2-dropdowns';
-import { Query, DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
+import { Query, DataManager, ODataAdaptor } from '@syncfusion/ej2-data';
 
 
 
  let data: DataManager = new DataManager({
-    url: 'https://services.odata.org/V4/Northwind/Northwind.svc/Customers',
-    adaptor: new ODataV4Adaptor,
+    url: 'https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/',
     crossDomain: true
 });
     // initialize MultiSelect component
@@ -16,7 +15,7 @@ import { Query, DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
         // bind the DataManager instance to dataSource property
         dataSource: data,
         // bind the Query instance to query property
-        query: new Query().select(['ContactName', 'CustomerID']),
+        query: new Query().from('Customers').select('ContactName').take(7),
         // map the appropriate columns to fields property
         fields: { text: 'ContactName', value: 'ContactName' },
          // set the placeholder to MultiSelect input element

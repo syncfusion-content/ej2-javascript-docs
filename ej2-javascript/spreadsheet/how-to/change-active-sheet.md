@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Change active sheet in ##Platform_Name## Spreadsheet control | Syncfusion
-description: Learn here all about changing active sheet index when import a file in Syncfusion ##Platform_Name## Spreadsheet control of Syncfusion Essential JS 2 and more.
+title: Changing the active sheet while importing a file in ##Platform_Name## Spreadsheet control | Syncfusion
+description: Learn here all about changing the active sheet index while importing a file in Syncfusion ##Platform_Name## Spreadsheet control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Spreadsheet 
 publishingplatform: ##Platform_Name##
@@ -9,17 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Changing the active sheet in ##Platform_Name## Spreadsheet control
-
-{% if page.publishingplatform == "typescript" %}
+## Changing the active sheet while importing a file in ##Platform_Name## Spreadsheet control
 
 You can change the active sheet of imported file by updating [`activeSheetIndex`](https://helpej2.syncfusion.com/documentation/api/spreadsheet/#activesheetindex) property on the [`openComplete`](https://helpej2.syncfusion.com/documentation/api/spreadsheet/#opencomplete) event.
-
-{% elsif page.publishingplatform == "javascript" %}
-
-You can change the active sheet of imported file by updating [`activeSheetIndex`](https://helpej2.syncfusion.com/javascript/documentation/api/spreadsheet/#activesheetindex) property on the [`openComplete`](https://helpej2.syncfusion.com/javascript/documentation/api/spreadsheet/#opencomplete) event.
-
-{% endif %}
 
 The following code example shows how to set the active sheet when importing an Excel file.
 

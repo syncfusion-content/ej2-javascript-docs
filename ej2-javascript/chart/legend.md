@@ -510,37 +510,6 @@ The `layout` property in `legendSettings` allows you to display the legend eithe
 {% previewsample "page.domainurl/code-snippet/chart/legend-cs18" %}
 {% endif %}
 
-## Accessibility
-
-You can use the `accessibility` property in `legendSettings` to customize the accessibility description, role, focusability, and tabindex. This allows you to define how the legend is described and interpreted, ensuring that users with disabilities can interact with and understand the chart more effectively.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/chart/legend-cs19/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/legend-cs19/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/chart/legend-cs19" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/chart/legend-cs19/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/legend-cs19/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/chart/legend-cs19" %}
-{% endif %}
-
 >Note: To use legend feature, we need to inject `Legend` using `Chart.Inject(Legend)`.
 
 ## See also

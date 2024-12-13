@@ -34,6 +34,6 @@ The required modules should be injected into the Scheduler using the `Inject` me
 Schedule.Inject(Day, Week, WorkWeek, Month, Agenda, MonthAgenda);
 ```
 
-**Note:** If a Scheduler [`currentView`](https://ej2.syncfusion.com/documentation/api/schedule#currentview) is set to any one of the available views without injecting that respective view module, then a script error will occur and the Scheduler will not render.
+**Note:** If a Scheduler `currentView` is set to any one of the available views without injecting that respective view module, then a script error will occur and the Scheduler will not render.
 
 > You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to knows how to present and manipulate data.

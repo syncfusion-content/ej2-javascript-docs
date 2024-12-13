@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Enable scroll option on all day section in ##Platform_Name## Schedule control
 
-When you have larger number of appointments in all-day row, it is difficult to view all the appointments properly. In that case you can enable scroller option for all-day row by setting true to [`enableAllDayScroll`](https://ej2.syncfusion.com/documentation/api/schedule#enablealldayscroll) whereas its default value is false. When setting this property to true, individual scroller for all-day row is enabled when it reaches its maximum height on expanding.
+When you have larger number of appointments in all-day row, it is difficult to view all the appointments properly. In that case you can enable scroller option for all-day row by setting true to `enableAllDayScroll` whereas its default value is false. When setting this property to true, individual scroller for all-day row is enabled when it reaches its maximum height on expanding.
 
 >Note: This property is not applicable for Scheduler with height `auto`.
 

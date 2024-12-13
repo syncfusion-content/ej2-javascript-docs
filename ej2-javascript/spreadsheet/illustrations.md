@@ -106,19 +106,9 @@ The following features have some limitations in Image:
 
 ## Chart
 
-{% if page.publishingplatform == "typescript" %}
+A chart is a graphical representation of data, that organizes and represents a set of numerical or qualitative data. It mostly displays the selected range of data in terms of `x`-axis and `y`-axis. You can use the [`allowChart`](../api/spreadsheet/#allowchart) property to enable or disable the chart functionality.
 
-A chart is a graphical representation of data, that organizes and represents a set of numerical or qualitative data. It mostly displays the selected range of data in terms of `x`-axis and `y`-axis. You can use the [`allowChart`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#allowchart) property to enable or disable the chart functionality.
-
-> The default value for the [`allowChart`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#allowchart) property is `true`.
-
-{% elsif page.publishingplatform == "javascript" %}
-
-A chart is a graphical representation of data, that organizes and represents a set of numerical or qualitative data. It mostly displays the selected range of data in terms of `x`-axis and `y`-axis. You can use the [`allowChart`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#allowchart) property to enable or disable the chart functionality.
-
-> The default value for the [`allowChart`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#allowchart) property is `true`.
-
-{% endif %}
+> The default value for the [`allowChart`](../api/spreadsheet/#allowchart) property is `true`.
 
 ### Types of chart
 
@@ -136,19 +126,9 @@ The following types of charts are available in the Spreadsheet.
 You can insert the chart by using one of the following ways,
 
 * Select the chart icon in the Ribbon toolbar under the Insert Tab.
-{% if page.publishingplatform == "typescript" %}
+* Use the [`insertChart()`](../api/spreadsheet/#insertchart) method programmatically.
 
-* Use the [`insertChart()`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#insertchart) method programmatically.
-
-The available parameter in the [`insertChart()`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#insertchart) method is,
-
-{% elsif page.publishingplatform == "javascript" %}
-
-* Use the [`insertChart()`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#insertchart) method programmatically.
-
-The available parameter in the [`insertChart()`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#insertchart) method is,
-
-{% endif %}
+The available parameter in the [`insertChart()`](../api/spreadsheet/#insertchart) method is,
 
 | Parameter | Type | Description |
 |-----|------|----|
@@ -193,19 +173,9 @@ The available arguments in the `ChartModel` are:
 ### Delete Chart
 
 * If you want to delete the chart, just select the chart, and then press the Delete key.
-{% if page.publishingplatform == "typescript" %}
+* Use the [`deleteChart()`](../api/spreadsheet/#deletechart) method programmatically.
 
-* Use the [`deleteChart()`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#deletechart) method programmatically.
-
-The available parameter in the [`deleteChart()`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#deletechart) method is,
-
-{% elsif page.publishingplatform == "javascript" %}
-
-* Use the [`deleteChart()`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#deletechart) method programmatically.
-
-The available parameter in the [`deleteChart()`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#deletechart) method is,
-
-{% endif %}
+The available parameter in the [`deleteChart()`](../api/spreadsheet/#deletechart) method is,
 
 | Parameter | Type | Description |
 |-----|------|----|
@@ -248,15 +218,7 @@ Chart feature allows you to view and insert a chart in a spreadsheet, and you ca
 
 #### Customization of line chart markers
 
-{% if page.publishingplatform == "typescript" %}
-
-Using the [`actionBegin`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#actionbegin) event, you can change the shape, size, fill color, and border of the line chart marker. In the following example, you can see the modified marker appearance, such as shape and size, while creating the line chart with UI interaction.
-
-{% elsif page.publishingplatform == "javascript" %}
-
-Using the [`actionBegin`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#actionbegin) event, you can change the shape, size, fill color, and border of the line chart marker. In the following example, you can see the modified marker appearance, such as shape and size, while creating the line chart with UI interaction.
-
-{% endif %}
+Using the [`actionBegin`](../api/spreadsheet/#actionbegin) event, you can change the shape, size, fill color, and border of the line chart marker. In the following example, you can see the modified marker appearance, such as shape and size, while creating the line chart with UI interaction.
 
 {% if page.publishingplatform == "typescript" %}
 

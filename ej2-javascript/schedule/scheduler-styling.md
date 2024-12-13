@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Scheduler styling in ##Platform_Name## Schedule Control | Syncfusion
-description: Learn here all about scheduler styling in Syncfusion ##Platform_Name## Schedule control, its elements and more.
+title: Scheduler styling in ##Platform_Name## Schedule control | Syncfusion
+description: Learn here all about Scheduler styling in Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Scheduler styling 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Scheduler styling in ##Platform_Name## Schedule Control
+# Scheduler styling in ##Platform_Name## Schedule control
 
 To modify the Scheduler appearance, you need to override the default CSS of Scheduler. Also, you have an option to create your own custom theme using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material). Please find the list of CSS classes in Scheduler.
 
-| CSS class | Purpose |
+| Css class | Purpose |
 |-------|---------|
 | .e-schedule .e-vertical-view .e-work-cells | Work cells in vertical views of scheduler |
 | .e-schedule .e-month-view .e-work-cells | Work cells in month view of scheduler |

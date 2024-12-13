@@ -198,6 +198,10 @@ The complete package of Essential JS 2 icons is listed below. The corresponding 
 
 <iframe class="doc-sample-frame" src="https://ej2.syncfusion.com/products/icons/highcontrast/demo.html" style="height:1000px;width:100%;"></iframe>
 
+### Tailwind 3.4
+
+<iframe class="doc-sample-frame" src="https://ej2.syncfusion.com/products/icons/tailwind3/demo.html" style="height:1000px;width:100%;"></iframe>
+
 ### Tailwind CSS
 
 <iframe class="doc-sample-frame" src="https://ej2.syncfusion.com/products/icons/tailwind/demo.html" style="height:1000px;width:100%;"></iframe>

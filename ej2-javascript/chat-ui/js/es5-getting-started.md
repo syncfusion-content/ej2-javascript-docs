@@ -77,12 +77,24 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
             <title>JavaScript (ES5)</title>
             <!-- JavaScript (ES5) Chat UI dependency style -->
             <link href="resources/base/material.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/buttons/material.css" rel="stylesheet" type="text/css" />
+            <link href="resources/popups/material.css" rel="stylesheet" type="text/css" />
+            <link href="resources/inputs/material.css" rel="stylesheet" type="text/css" />
+            <link href="resources/navigations/material.css" rel="stylesheet" type="text/css" />
 
             <!-- JavaScript (ES5) Chat UI control style -->
             <link href="resources/interactive-chat/material.css" rel="stylesheet" type="text/css"/>
 
             <!-- JavaScript (ES5) Chat UI dependency global script -->
             <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
+            <script src="resources/data/ej2-data.min.js" type="text/javascript"></script>
+            <script src="resources/buttons/ej2-buttons.min.js" type="text/javascript"></script>
+            <script src="resources/popups/ej2-popups.min.js" type="text/javascript"></script>
+            <script src="resources/splitbuttons/ej2-splitbuttons.min.js" type="text/javascript"></script>
+            <script src="resources/inputs/ej2-inputs.min.js" type="text/javascript"></script>
+            <script src="resources/lists/ej2-lists.min.js" type="text/javascript"></script>
+            <script src="resources/dropdowns/ej2-dropdowns.min.js" type="text/javascript"></script>
+            <script src="resources/navigations/ej2-navigations.min.js" type="text/javascript"></script>
 
             <!-- JavaScript (ES5) Chat UI control global script -->
             <script src="resources/interactive-chat/ej2-interactive-chat.min.js" type="text/javascript"></script>
@@ -103,13 +115,23 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
           <title>JavaScript (ES5)</title>
           <!-- JavaScript (ES5) Chat UI dependency style -->
           <link href="resources/base/material.css" rel="stylesheet" type="text/css"/>
-
+          <link href="resources/buttons/material.css" rel="stylesheet" type="text/css" />
+          <link href="resources/popups/material.css" rel="stylesheet" type="text/css" />
+          <link href="resources/inputs/material.css" rel="stylesheet" type="text/css" />
+          <link href="resources/navigations/material.css" rel="stylesheet" type="text/css" />
           <!-- JavaScript (ES5) Chat UI control style -->
           <link href="resources/interactive-chat/material.css" rel="stylesheet" type="text/css"/>
 
           <!-- JavaScript (ES5) Chat UI dependency global script -->
           <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
-
+          <script src="resources/data/ej2-data.min.js" type="text/javascript"></script>
+          <script src="resources/buttons/ej2-buttons.min.js" type="text/javascript"></script>
+          <script src="resources/popups/ej2-popups.min.js" type="text/javascript"></script>
+          <script src="resources/splitbuttons/ej2-splitbuttons.min.js" type="text/javascript"></script>
+          <script src="resources/inputs/ej2-inputs.min.js" type="text/javascript"></script>
+          <script src="resources/lists/ej2-lists.min.js" type="text/javascript"></script>
+          <script src="resources/dropdowns/ej2-dropdowns.min.js" type="text/javascript"></script>
+          <script src="resources/navigations/ej2-navigations.min.js" type="text/javascript"></script>
           <!-- JavaScript (ES5) Chat UI control global script -->
           <script src="resources/interactive-chat/ej2-interactive-chat.min.js" type="text/javascript"></script>
        </head>

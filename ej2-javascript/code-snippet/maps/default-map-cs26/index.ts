@@ -21,6 +21,7 @@ let map: Maps = new Maps({
     },
     layers: [
         {
+            layerType: 'Geometry',
             shapeData: world_map,
             shapePropertyPath: 'continent',
             shapeDataPath: 'continent',
@@ -39,6 +40,7 @@ let map: Maps = new Maps({
             }]
         },
         {
+            layerType: 'Geometry',
             shapeData: Africa_Continent,
             shapeSettings: {
                 fill: '#80306A'

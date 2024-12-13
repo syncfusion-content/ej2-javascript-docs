@@ -21,7 +21,7 @@ The following properties of the Node are used to represent the state of the node
 
 N> Icon can be created only when the node has outEdges.
 
-To explore the properties of expand and collapse icon, refer to [`expandIcon`](../api/diagram/node/#expandicon) and [`collapseIcon`](../api/diagram/node/#collapseicon).
+To explore the properties of expand and collapse icon, refer to [`expandIcon`](../api/diagram/node#expandIcon-iconshapemodel) and [`collapseIcon`](../api/diagram/node#collapseIcon-iconshapemodel).
 
 
 ## Customizing expand and collapse icon
@@ -53,7 +53,7 @@ The corner radius can be set using the [`cornerRadius`](../api/diagram/iconShape
 
 The icon can be aligned relative to the node boundaries. It has margin, offset, horizontalAlignment, and verticalAlignment settings. It is quite tricky, when all four alignments are used together but gives you more control over alignment.
 
-The [`iconColor`](../api/diagram/iconShapeModel/#iconcolor) property can be used to set the strokeColor of the Icon.
+The [`iconColor`](../api/diagram/iconShapeModel#iconColor-string) property can be used to set the strokeColor of the Icon.
 
 The following code example illustrates the customization of icons.
 

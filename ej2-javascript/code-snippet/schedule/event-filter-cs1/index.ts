@@ -25,7 +25,7 @@ let scheduleObj: Schedule = new Schedule({
             break;
     }
 }
-});
+};
 scheduleObj.appendTo('#Schedule');
 
 function onChange(): void {

@@ -9,8 +9,6 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Salesforce integration in ##Platform_Name## Schedule control
-
 This topic provides you with a detailed step-by-step guide on how to seamlessly integrate the [**JavaScript Scheduler**](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) component into Salesforce. By integrating it into Salesforce, you can enhance your productivity and streamline your scheduling processes.
 
 ## Prerequisites
@@ -64,10 +62,10 @@ sfdx org:login:web -d
 Open the `sfdx-project.json` file located in `salesforceApp/scheduler-salesforce-app` and update the `sfdcLoginUrl` with the domain URL of your Salesforce account as shown in image (fig 2). You can obtain the domain URL from the `My Domain` setup tab in Salesforce as shown in image (fig 1). 
 
 fig 1
-![Salesforce project fig 1](../images/Salesforce-project-fig1.png)
+![Salesforce project (fig 1)](../images/Salesforce-project-fig1.png)
 
 fig 2
-![Salesforce project fig 2](../images/Salesforce-project-fig2.png)
+![Salesforce project (fig 2)](../images/Salesforce-project-fig2.png)
 
 ## Create scratch organization 
 
@@ -88,7 +86,7 @@ To integrate the Syncfusion scripts and styles as static resource files within S
 Use the following command to open the scratch project in the browser
 
 ```
-sfdx org:open -o <scratch org user name> 
+sfdx org:open -o <stratch org user name> 
 ```
 
 Replace <scratch org username> with the username of your scratch organization, which was generated during the scratch organization creation process.  
@@ -178,7 +176,7 @@ sfdx lightning:generate:component --type lwc -n scheduler -d force-app/main/defa
 
 2. Open the `scheduler.js-meta.xml` file located in `force-app/main/default/lwc/scheduler` and modify the component definition to expose it in the Lightning App Builder. Here's an example of the modified file. 
 
-```
+```force-app/main/default/lwc/scheduler/scheduler.js-meta.xml
 <?xml version="1.0" encoding="UTF-8"?> 
 <LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata"> 
     <apiVersion>57.0</apiVersion> 
@@ -196,7 +194,7 @@ sfdx lightning:generate:component --type lwc -n scheduler -d force-app/main/defa
 
 3. Open the `scheduler.html` file located in `force-app/main/default/lwc/scheduler` and add an element with a class name to append the Syncfusion scheduler. Here's an example of the modified file.
  
-```
+```force-app/main/default/lwc/scheduler/scheduler.html
 <template> 
     <div class="syncfusionscheduler" lwc:dom="manual" style='width: 100%;'></div> 
 </template> 
@@ -204,7 +202,7 @@ sfdx lightning:generate:component --type lwc -n scheduler -d force-app/main/defa
 
 4. Open the `scheduler.js` file located in `force-app/main/default/lwc/scheduler` and implement the scheduler code in renderedCallback function. The static scripts and styles are loaded using the `loadScript` and `loadStyle` imports. Here's an example of the modified file.
 
-```ts
+```force-app/main/default/lwc/scheduler/scheduler.js
 import { LightningElement, api } from 'lwc'; 
 import { ShowToastEvent } from "lightning/platformShowToastEvent"; 
 import { loadStyle, loadScript } from "lightning/platformResourceLoader"; 
@@ -248,7 +246,9 @@ export default class Scheduler extends LightningElement {
             .catch((error) => { 
                 this.dispatchEvent( 
                     new ShowToastEvent({ 
-                        message: error.message, variant: "error"
+                        title: "Error loading scheduler", 
+                        message: error.message, 
+                        variant: "error" 
                     }) 
                 ); 
             }); 
@@ -334,7 +334,7 @@ sfdx apex:generate:class -n SchedulerData -d force-app/main/default/classes
 Open the **SchedulerData.cls** file located in `force-app/main/default/classes/SchedulerData.cls`. 
 This will fetch the event data from salesforce backend. Here's an example of the modified file. 
 
-```
+```force-app/main/default/classes/SchedulerData.cls
 public with sharing class SchedulerData { 
     @RemoteAction 
     @AuraEnabled(cacheable=true) 
@@ -416,4 +416,4 @@ Click on the `SyncfusionScheduler` app, and the scheduler will load on the home 
 
 ![Click Scheduler page](../images/Salesforce-click-scheduler.png)
 
-N> You can also explore our [**JavaScript Scheduler Salesforce integration**](https://github.com/SyncfusionExamples/salesforce-integration-in-ej2-javascript-scheduler) example to knows about the Salesforce integration.
+N> You can also explore our [**JavaScript Scheduler**](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) example to knows about the Salesforce integration.

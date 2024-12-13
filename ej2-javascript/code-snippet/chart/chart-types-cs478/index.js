@@ -1,20 +1,22 @@
-var piechart = new ej.charts.AccumulationChart({
+var pyramidchart = new ej.charts.AccumulationChart({
     series: [
         {
+            type: 'Pyramid',
             dataSource: [
-                { x: 'Jan', y: 3 }, { x: 'Feb', y: 3.5 }, 
-                { x: 'Mar', y: 7 }, { x: 'Apr', y: 13.5 }, 
-                { x: 'May', y: 19 }, { x: 'Jun', y: 23.5 }, 
-                { x: 'Jul', y: 26 }, { x: 'Aug', y: 25 },
-                { x: 'Sep', y: 21 }, { x: 'Oct', y: 15 }
+                { x: 'Australia', y: 20, text: 'Australia 20%' },
+                { x: 'France',    y: 22, text: 'France 22%' },
+                { x: 'China',     y: 23, text: 'China 23%' },
+                { x: 'India',     y: 24, text: 'India 24%' },
+                { x: 'Japan',     y: 25, text: 'Japan 25%' },
+                { x: 'Germany',   y: 27, text: 'Germany 27%' }
             ],
-            type: 'Pie',
-            xName: 'x',
-            yName: 'y',
+            xName: 'x', yName: 'y',
+            dataLabel: { name: 'text', visible: true, position: 'Inside' },
             accessibility: {
-                accessibilityDescription: 'This pie chart represents the distribution of data for each month from January to October. The size of each slice indicates the value for that month.',
+                accessibilityDescription: 'This pyramid chart represents the sales distribution of cars by region, with each section representing a different region and its respective sales percentage.',
                 accessibilityRole: 'presentation'
             }
         }
-    ]
+    ],
+    title: 'Sales Distribution of Car by Region'
 }, '#element');

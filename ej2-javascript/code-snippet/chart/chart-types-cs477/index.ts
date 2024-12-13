@@ -1,23 +1,28 @@
-import { AccumulationChart, AccumulationLegend, PieSeries } from '@syncfusion/ej2-charts';
-AccumulationChart.Inject(AccumulationLegend, PieSeries);
+import { AccumulationChart, PieSeries, AccumulationLegend } from '@syncfusion/ej2-charts';
+AccumulationChart.Inject(PieSeries, AccumulationLegend);
 let piechart: AccumulationChart = new AccumulationChart({
     series: [
         {
             dataSource: [
-                { x: 'Jan', y: 13 }, 
-                { x: 'Feb', y: 13 },
-                { x: 'Mar', y: 17 }, 
-                { x: 'Apr', y: 13.5 }
+                { x: 'Jan', y: 3 },  { x: 'Feb', y: 3.5 }, 
+                { x: 'Mar', y: 7 },  { x: 'Apr', y: 13.5 }, 
+                { x: 'May', y: 19 }, { x: 'Jun', y: 23.5 }, 
+                { x: 'Jul', y: 26 }, { x: 'Aug', y: 25 },
+                { x: 'Sep', y: 21 }, { x: 'Oct', y: 15 },
+                { x: 'Nov', y: 15 }, { x: 'Dec', y: 15 }
             ],
             xName: 'x',
             yName: 'y'
         }
     ],
     legendSettings: {
-        visible: true,
-        accessibility: {
-            accessibilityDescription: 'This legend identifies the series displayed in the chart, showing the monthly data points for January to April.',
-            accessibilityRole: 'list'
-        }
-    }
+        visible: true
+    },
+    accessibility: {
+        accessibilityDescription: 'Pie chart representing the distribution of data across months.',
+        accessibilityRole: 'chart'
+    },
+    focusBorderColor: '#FF0000',
+    focusBorderWidth: 3,
+    focusBorderMargin: 5
 }, '#element');

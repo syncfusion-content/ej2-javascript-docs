@@ -1,34 +1,37 @@
-import { Chart, RangeStepAreaSeries, Category } from '@syncfusion/ej2-charts';
-import { chartData } from './datasource.ts';
-Chart.Inject(RangeStepAreaSeries, Category);
+import { Chart, ColumnSeries, Category } from '@syncfusion/ej2-charts';
+Chart.Inject(ColumnSeries, Category);
+
+let columnData: Object[] = [
+    { country: "USA",       gold: 50 },
+    { country: "China",     gold: 40 },
+    { country: "Japan",     gold: 70 },
+    { country: "Australia", gold: 60 },
+    { country: "France",    gold: 50 },
+    { country: "Germany",   gold: 40 },
+    { country: "Italy",     gold: 40 },
+    { country: "Sweden",    gold: 30 }
+];
 
 let chart: Chart = new Chart({
     primaryXAxis: {
         valueType: 'Category',
-        title: 'Month',
-        edgeLabelPlacement: 'Shift',
-        majorGridLines: { width: 0 }
+        title: 'Countries'
     },
     primaryYAxis: {
-        labelFormat: '{value}˚C',
-        title: 'Temperature',
-        lineStyle: { width: 0 },
-        minimum: 10,
-        maximum: 40,
-        majorTickLines: { width: 0 }
+        minimum: 0, 
+        maximum: 80,
+        interval: 20, 
+        title: 'Medals'
     },
-    series: [
-        {
-            type: 'RangeStepArea',
-            dataSource: chartData,
-            xName: 'x', high: 'high', low: 'low',
-            marker: { visible: true },
-            accessibility: {
-                accessibilityDescription: 'The chart shows the temperature range from the lowest to highest for each month.',
-                accessibilityRole: 'series',
-                accessibilityDescriptionFormat: 'For ${point.x}, the highest temperature is ${point.high}°C and the lowest is ${point.low}°C.'
-            }
+    series:[{
+        dataSource: columnData,
+        xName: 'country', yName: 'gold',
+        type: 'Column',
+        accessibility: {
+            accessibilityDescription: 'This series displays the number of gold medals won by each country in the Olympics.',
+            accessibilityRole: 'series',
+            accessibilityDescriptionFormat: 'The country ${point.x} won ${point.y} gold medals.'
         }
-    ],
-    title: 'Monthly Temperature Range'
+    }],
+    title: 'Olympic Medals'
 }, '#element');

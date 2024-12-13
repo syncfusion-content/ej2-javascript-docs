@@ -18,7 +18,7 @@ Group is used to cluster multiple nodes and connectors into a single element. It
 
 ## Add group when initializing diagram
 
-A group can be added to the diagram model through [`nodes`](../api/diagram/#nodes) collection. To define an object as group, add the child objects to the [`children`](../api/diagram/node/#children) collection of the group. The following code illustrates how to create a group node.
+A group can be added to the diagram model through [`nodes`](../api/diagram#nodes-NodeModel) collection. To define an object as group, add the child objects to the [`children`](../api/diagram/node#children-string) collection of the group. The following code illustrates how to create a group node.
 
 * While creating group, its child node need to be declared before the group declaration.
 
@@ -85,7 +85,7 @@ The following code illustrates how a group  at runtime.
 
 ## UnGroup nodes at runtime
 
-Group node can be unGrouped dynamically, by using the [`diagram.unGroup`](../api/diagram/#ungroup) method. The following code example shows how to unGroup group node at runtime.
+Group node can be unGrouped dynamically, by using the [`diagram.unGroup`](../api/diagram/#unGroup) method. The following code example shows how to unGroup group node at runtime.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -198,7 +198,7 @@ diagram.addChildToGroup(groupNode, childNode);
 
 ### Remove children from group at runtime
 
-A specific child from a group node can be removed at runtime by utilizing the diagram method [`removeChildFromGroup`](../api/diagram/#removechildfromgroup).
+A specific child from a group node can be removed at runtime by utilizing the diagram method [`removeChildFromGroup`](../api/diagram/#removeChildFromGroup).
 
 This functionality is achieved by passing the group and its children as arguments to the method.
 
@@ -417,7 +417,7 @@ The following code illustrates how to add canvas panel.
 
 * Stack panel is used to arrange its children in a single line or stack order, either vertically or horizontally.
 
-* It controls spacing by setting margin properties of child and padding properties of group. By default, a stack panel’s [`orientation`](../api/diagram/stackPanel/#orientation) is vertical.
+* It controls spacing by setting margin properties of child and padding properties of group. By default, a stack panel’s [`orientation`](../api/diagram/stackPanel#orientation-Orientation) is vertical.
 
 The following code illustrates how to add a stack panel.
 

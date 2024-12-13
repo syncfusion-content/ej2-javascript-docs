@@ -59,7 +59,7 @@ In the following example, the chunkSize is set to 5 MB (5,242,880 bytes), and th
 
 With chunk upload, the pause and resume options gives users enhanced control over the file upload process.
 
-![File Manager with chunkUpload](./images/filemanager-chunkupload.png "File Manager chunkUpload")
+![##Platform_Name## File Manager with chunkUpload](./images/filemanager-chunkupload.png "File Manager chunkUpload")
 
 >Note: 
 >1. Chunk upload will work when the selected file size is greater than the specified chunk size. Otherwise, it upload the files normally. 

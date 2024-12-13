@@ -19,31 +19,14 @@ Spreadsheet is a tabular format consisting of rows and columns. The intersection
 
 ## Insert
 
-{% if page.publishingplatform == "typescript" %}
+You can insert rows or columns anywhere in a spreadsheet. Use the [`allowInsert`](../api/spreadsheet/#allowinsert) property to enable or disable the insert option in Spreadsheet.
 
-You can insert rows or columns anywhere in a spreadsheet. Use the [`allowInsert`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#allowinsert) property to enable or disable the insert option in Spreadsheet.
-
-{% elsif page.publishingplatform == "javascript" %}
-
-You can insert rows or columns anywhere in a spreadsheet. Use the [`allowInsert`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#allowinsert) property to enable or disable the insert option in Spreadsheet.
-
-{% endif %}
- 
 ### Row
 
 The rows can be inserted in the following ways,
 
-{% if page.publishingplatform == "typescript" %}
-
-* Using [`insertRow`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#insertrow) method, you can insert the rows once the component is loaded.
+* Using [`insertRow`](../api/spreadsheet/#insertrow) method, you can insert the rows once the component is loaded.
 * Using context menu, insert the empty rows in the desired position.
-
-{% elsif page.publishingplatform == "javascript" %}
-
-* Using [`insertRow`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#insertrow) method, you can insert the rows once the component is loaded.
-* Using context menu, insert the empty rows in the desired position.
-
-{% endif %}
 
 The following code example shows the options for inserting rows in the spreadsheet.
 
@@ -78,18 +61,9 @@ The following code example shows the options for inserting rows in the spreadshe
 
 The columns can be inserted in the following ways,
 
-{% if page.publishingplatform == "typescript" %}
-
-* Using [`insertColumn`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#insertcolumn) method, you can insert the columns once the component is loaded.
+* Using [`insertColumn`](../api/spreadsheet/#insertcolumn) method, you can insert the columns once the component is loaded.
 * Using context menu, insert the empty columns in the desired position.
 
-{% elsif page.publishingplatform == "javascript" %}
-
-* Using [`insertColumn`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#insertcolumn) method, you can insert the columns once the component is loaded.
-* Using context menu, insert the empty columns in the desired position.
-
-{% endif %}
- 
 The following code example shows the options for inserting columns in the spreadsheet.
 
 {% if page.publishingplatform == "typescript" %}
@@ -121,29 +95,12 @@ The following code example shows the options for inserting columns in the spread
 
 ## Delete
 
-{% if page.publishingplatform == "typescript" %}
-
-Delete support provides an option for deleting the rows and columns in the spreadsheet. Use [`allowDelete`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#allowdelete) property to enable or disable the delete option in Spreadsheet.
-
-{% elsif page.publishingplatform == "javascript" %}
-
-Delete support provides an option for deleting the rows and columns in the spreadsheet. Use [`allowDelete`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#allowdelete) property to enable or disable the delete option in Spreadsheet.
-
-{% endif %}
+Delete support provides an option for deleting the rows and columns in the spreadsheet. Use [`allowDelete`](../api/spreadsheet/#allowdelete) property to enable or disable the delete option in Spreadsheet.
 
 The rows and columns can be deleted dynamically in the following ways,
 
-{% if page.publishingplatform == "typescript" %}
-
-* Using [`delete`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#delete) method, you can delete the loaded rows and columns.
+* Using [`delete`](../api/spreadsheet/#delete) method, you can delete the loaded rows and columns.
 * Using context menu, you can delete the selected rows and columns.
-
-{% elsif page.publishingplatform == "javascript" %}
-
-* Using [`delete`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#delete) method, you can delete the loaded rows and columns.
-* Using context menu, you can delete the selected rows and columns.
-
-{% endif %}
 
 The following code example shows the delete operation of rows and columns in the spreadsheet.
 
@@ -234,27 +191,11 @@ The following code example shows the hide/show rows and columns operation in the
 
 ## Size
 
-{% if page.publishingplatform == "typescript" %}
-
-You can change the size of rows and columns in the spreadsheet by using [setRowsHeight](https://ej2.syncfusion.com/documentation/api/spreadsheet/#setrowsheight) and [setColumnsWidth](https://ej2.syncfusion.com/documentation/api/spreadsheet/#setcolumnswidth) methods.
-
-{% elsif page.publishingplatform == "javascript" %}
-
-You can change the size of rows and columns in the spreadsheet by using [setRowsHeight](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#setrowsheight) and [setColumnsWidth](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#setcolumnswidth) methods.
-
-{% endif %}
+You can change the size of rows and columns in the spreadsheet by using [setRowsHeight](../api/spreadsheet/#setrowsheight) and [setColumnsWidth](../api/spreadsheet/#setcolumnswidth) methods.
 
 ### Row
 
-{% if page.publishingplatform == "typescript" %}
-
-You can change the height of single or multiple rows by using the [setRowsHeight](https://ej2.syncfusion.com/documentation/api/spreadsheet/#setrowsheight) method.
-
-{% elsif page.publishingplatform == "javascript" %}
-
-You can change the height of single or multiple rows by using the [setRowsHeight](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#setrowsheight) method.
-
-{% endif %}
+You can change the height of single or multiple rows by using the [setRowsHeight](../api/spreadsheet/#setrowsheight) method.
 
 You can provide the following type of ranges to the method:
 
@@ -294,15 +235,7 @@ The following code example shows how to change the height for single/multiple ro
 
 ### Column
 
-{% if page.publishingplatform == "typescript" %}
-
-You can change the width of single or multiple columns by using the [setColumnsWidth](.https://ej2.syncfusion.com/documentation/api/spreadsheet/#setcolumnswidth) method.
-
-{% elsif page.publishingplatform == "javascript" %}
-
-You can change the width of single or multiple columns by using the [setColumnsWidth](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#setcolumnswidth) method.
-
-{% endif %}
+You can change the width of single or multiple columns by using the [setColumnsWidth](../api/spreadsheet/#setcolumnswidth) method.
 
 You can provide the following type of ranges to the method:
 
@@ -342,15 +275,7 @@ The following code example shows how to change the width for single/multiple col
 
 ## Changing text in column headers
 
-{% if page.publishingplatform == "typescript" %}
-
-Using the [`beforeCellRender`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#beforecellrender) event, you can change the text in the column headers. In that event, you can use the `e-header-cell` class to identify the header cell element and update its text value.
-
-{% elsif page.publishingplatform == "javascript" %}
-
-Using the [`beforeCellRender`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#beforecellrender) event, you can change the text in the column headers. In that event, you can use the `e-header-cell` class to identify the header cell element and update its text value.
-
-{% endif %}
+Using the [`beforeCellRender`](../api/spreadsheet/#beforecellrender) event, you can change the text in the column headers. In that event, you can use the `e-header-cell` class to identify the header cell element and update its text value.
 
 The following code example shows how to change the text in the column headers.
 

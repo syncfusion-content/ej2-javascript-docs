@@ -18,7 +18,7 @@ var ddlObject = new ej.dropdowns.DropDownList({
     //set enableVirtualization property to true
     enableVirtualization: true,
     //set allowFiltering property to true
-    allowFiltering: false,
+    allowFiltering: true,
     //set the height of the popup element
     popupHeight: '200px'
 });

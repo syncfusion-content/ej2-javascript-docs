@@ -170,37 +170,6 @@ By setting text div in the `content` option of annotation object you can add sub
 {% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs5" %}
 {% endif %}
 
-## Accessibility
-
-You can use the `accessibility` property in the annotation to customize the accessibility description, role, focusability, and tabindex. This allows you to define how the annotation is described and interpreted, ensuring that users with disabilities can interact with and understand the chart more effectively.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/chart/chart-appearance-cs25/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/chart-appearance-cs25/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs25" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/chart/chart-appearance-cs25/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/chart-appearance-cs25/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs25" %}
-{% endif %}
-
 ## See also
 
 * [Show total stacking values in data label](../chart/how-to/stacking-total/#show-the-total-value-for-stacking-series-in-data-label)

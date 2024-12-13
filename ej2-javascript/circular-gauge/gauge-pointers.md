@@ -309,7 +309,7 @@ The marker can be customized in terms of color, border, width and height by usin
 
 ## Dragging pointer
 
-The pointers can be dragged over the axis line by clicking and dragging the same. To enable or disable the pointer drag, use the [`enablePointerDrag`](../api/circular-gauge/circularGaugeModel/#enablepointerdrag) property.
+The pointers can be dragged along the axis line by clicking and dragging them. To enable or disable the drag functionality for all pointers across all axes, use the [enablePointerDrag](../api/circular-gauge/circularGaugeModel/#enablepointerdrag) property. When this property is set to **true**, all pointers can be dynamically adjusted by dragging. Setting it to **false** keeps all pointers fixed in their specified positions.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -323,6 +323,41 @@ The pointers can be dragged over the axis line by clicking and dragging the same
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/circular-gauge/gauge-pointers-cs10" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/circular-gauge/gauge-pointers-cs10/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/circular-gauge/gauge-pointers-cs10/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/circular-gauge/gauge-pointers-cs10" %}
+{% endif %}
+
+### Enabling drag functionality for a specific pointer
+
+To enable or disable the drag functionality for specific pointers along the axis line, use the `enableDrag` property in the required pointer model.
+
+>When the `enableDrag` property is enabled for any individual pointer model, the `enablePointerDrag` property becomes ineffective.
+
+The following example demonstrates how to enable the drag functionality for multiple pointers individually.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/circular-gauge/gauge-pointers-drag-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/circular-gauge/gauge-pointers-drag-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/circular-gauge/gauge-pointers-drag-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 

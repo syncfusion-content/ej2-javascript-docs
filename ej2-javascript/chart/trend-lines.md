@@ -347,35 +347,3 @@ You can show or hide the trendline by setting trendline `visible` property.
 
 {% previewsample "page.domainurl/code-snippet/chart/trendlines-cs10" %}
 {% endif %}
-
-
-## Accessibility
-
-You can use the `accessibility` property in the trendline to customize the accessibility description, role, focusability, and tabindex. This allows you to define how the trendline is described and interpreted, ensuring that users with disabilities can interact with and understand the chart more effectively.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/chart/trendlines-cs11/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/trendlines-cs11/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/chart/trendlines-cs11" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/chart/trendlines-cs11/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/trendlines-cs11/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/chart/trendlines-cs11" %}
-{% endif %}

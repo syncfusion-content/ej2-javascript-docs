@@ -9,19 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Identify the context menu opened in ##Platform_Name## Spreadsheet control
+## Identify the context menu opened in ##Platform_Name## Spreadsheet control
 
 The Spreadsheet includes several context menus that will open and display depending on the action. When you right-click on a cell, for example, a context menu with options related to the cell element appears.
 
-{% if page.publishingplatform == "typescript" %}
-
-The class name returned by the [contextMenuBeforeOpen](https://ej2.syncfusion.com/documentation/api/spreadsheet/#contextmenubeforeopen) event can be used to identify the context menu that is opened. The context menus and their class names are tabulated below.
-
-{% elsif page.publishingplatform == "javascript" %}
-
-The class name returned by the [contextMenuBeforeOpen](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#contextmenubeforeopen) event can be used to identify the context menu that is opened. The context menus and their class names are tabulated below.
-
-{% endif %}
+The class name returned by the [contextMenuBeforeOpen](../api/spreadsheet/#contextmenubeforeopen) event can be used to identify the context menu that is opened. The context menus and their class names are tabulated below.
 
 | Class name | Context menu name |
 |-------|---------|

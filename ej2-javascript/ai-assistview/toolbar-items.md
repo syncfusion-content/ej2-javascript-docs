@@ -3,7 +3,7 @@ layout: post
 title: Toolbar items in ##Platform_Name## AI AssistView control | Syncfusion
 description: Checkout and learn about Toolbar items with ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Toolbar items
+control: AI AssistView 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##

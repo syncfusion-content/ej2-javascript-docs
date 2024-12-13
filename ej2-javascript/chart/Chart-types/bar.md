@@ -532,40 +532,6 @@ Use the [`border`](../../api/chart/emptyPointSettings/#border) property to custo
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs330" %}
 {% endif %}
 
-## Accessibility
-
-You can use the `accessibility` property in the series to customize the accessibility description, role, focusability, description format, and tabindex. This allows you to define how the series is described and interpreted, ensuring that users with disabilities can interact with and understand the chart more effectively.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/chart/chart-types-cs497/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/chart-types-cs497/index.html %}
-{% endhighlight %}
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/chart/chart-types-cs497/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs497" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/chart/chart-types-cs497/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/chart-types-cs497/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs497" %}
-{% endif %}
-
 ## Events
 
 ### Series render

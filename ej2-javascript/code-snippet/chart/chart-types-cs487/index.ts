@@ -1,69 +1,49 @@
-import { Chart, Category, Legend, Tooltip, StackingLineSeries } from '@syncfusion/ej2-charts';
-import { chartData } from './datasource.ts';
-Chart.Inject(StackingLineSeries, Category, Legend, Tooltip);
-
-/**
- * Sample for StackedLine Series
- */
-
+import { Chart, ColumnSeries, Category, Legend } from '@syncfusion/ej2-charts';
+Chart.Inject(ColumnSeries, Category, Legend);
+let chartData: Object[] = [
+    { country: "USA",       gold: 50, silver: 70, bronze: 45 },
+    { country: "China",     gold: 40, silver: 60, bronze: 55 },
+    { country: "Japan",     gold: 70, silver: 60, bronze: 50 },
+    { country: "Australia", gold: 60, silver: 56, bronze: 40 },
+    { country: "France",    gold: 50, silver: 45, bronze: 35 },
+    { country: "Germany",   gold: 40, silver: 30, bronze: 22 },
+    { country: "Italy",     gold: 40, silver: 35, bronze: 37 },
+    { country: "Sweden",    gold: 30, silver: 25, bronze: 27 }
+];
 let chart: Chart = new Chart({
-    //Initializing Primary X Axis
     primaryXAxis: {
-        interval: 1, 
-        valueType: 'Category'
+        valueType: 'Category',
+        title: 'Countries'
     },
-    //Initializing Primary Y Axis
-    primaryYAxis:
-    {
-        title: 'Expense',
-        interval: 100,
-        labelFormat: '${value}'
+    primaryYAxis: {
+        minimum: 0, 
+        maximum: 80,
+        interval: 20, 
+        title: 'Medals'
     },
-    chartArea: { border: { width: 0 } },
-    //Initializing Chart Series
     series: [
         {
-            type: 'StackingLine', dataSource: chartData, marker: { visible: true },
-            xName: 'x', yName: 'y', name: 'John',
-            accessibility: {
-                accessibilityDescription: 'This series shows the monthly spending habits of John across various categories.',
-                accessibilityRole: 'series',
-                accessibilityDescriptionFormat: 'Category: ${point.x}, John Expense: ${point.y}'
-            }
-        },
+            dataSource: chartData,
+            xName: 'country', yName: 'gold',
+            name: 'Gold', type: 'Column'
+        }, 
         {
-            type: 'StackingLine', dataSource: chartData, marker: { visible: true },
-            xName: 'x', yName: 'y1', name: 'Peter',
-            accessibility: {
-                accessibilityDescription: 'This series shows the monthly spending habits of Peter across various categories.',
-                accessibilityRole: 'series',
-                accessibilityDescriptionFormat: 'Category: ${point.x}, Peter Expense: ${point.y}'
-            }
-        },
+            dataSource: chartData,
+            xName: 'country', yName: 'silver',
+            name: 'Silver', type: 'Column'
+        }, 
         {
-            type: 'StackingLine', dataSource: chartData, marker: { visible: true },
-            xName: 'x', yName: 'y2', name: 'Steve',
-            accessibility: {
-                accessibilityDescription: 'This series shows the monthly spending habits of Steve across various categories.',
-                accessibilityRole: 'series',
-                accessibilityDescriptionFormat: 'Category: ${point.x}, Steve Expense: ${point.y}'
-            }
-        },
-        {
-            type: 'StackingLine', dataSource: chartData, marker: { visible: true },
-            xName: 'x', yName: 'y3', name: 'Charle',
-            accessibility: {
-                accessibilityDescription: 'This series shows the monthly spending habits of Charle across various categories.',
-                accessibilityRole: 'series',
-                accessibilityDescriptionFormat: 'Category: ${point.x}, Charle Expense: ${point.y}'
-            }
+            dataSource: chartData,
+            xName: 'country', yName: 'bronze',
+            name: 'Bronze', type: 'Column'
         }
     ],
-    //Initializing User Interaction Tooltip
-    tooltip: {
-        enable: true
+    title: 'Olympic Medals',
+    legendSettings: {
+        visible: true,
+        accessibility: {
+            accessibilityDescription: 'Legend displaying medal counts by country for Gold, Silver, and Bronze.',
+            accessibilityRole: 'presentation'
+        }
     }
 }, '#element');
-
-
-

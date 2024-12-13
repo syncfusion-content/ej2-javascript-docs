@@ -1,0 +1,21 @@
+#container {
+    visibility: hidden;
+    margin: 20px auto;
+}
+
+#loader {
+    color: #008cff;
+    height: 40px;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 30%;
+}
+
+.custom-btn .e-user::before {
+    color: white;
+    font-size: 15px;
+}
+.custom-btn.e-toolbar-item button.e-tbar-btn {
+    border: 2px solid white;
+}

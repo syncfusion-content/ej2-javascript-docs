@@ -72,15 +72,11 @@ Maps.Inject(Zoom);
 let map: Maps = new Maps({
     zoomSettings: {
         enable: true,
-        toolbarSettings: {
-            horizontalAlignment: 'Center',
-            buttonSettings: {
-                color: 'green',
-                highlightColor: 'blue',
-                selectionColor: 'orange',
-                toolbarItems: [ 'ZoomIn', 'ZoomOut', 'Pan', 'Reset']
-            }
-        }
+        color: 'green',
+        highlightColor: 'blue',
+        selectionColor: 'orange',
+        horizontalAlignment: 'Center',
+        toolbars: ['ZoomIn', 'ZoomOut', 'Pan', 'Reset']
     },
     layers: [{
         shapeData: usmap,
@@ -639,37 +635,6 @@ The HTML element can be rendered in the tooltip of the Maps using the [`template
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/maps/tooltip-template-cs3" %}
-{% endif %}
-
-### Changing duration in mobile devices
-
-To change the duration of the tooltips and tooltip templates in mobile devices, you can use the `duration` property in [tooltipSettings](../api/maps/tooltipSettingsModel/). By default, this property is set to **2000** milliseconds. Setting the value to **0** will keep the tooltip visible indefinitely. If it is greater than **0**, the tooltip will be removed after the specified time.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/maps/default-map-cs235/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/maps/default-map-cs235/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/maps/default-map-cs235" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/maps/default-map-cs235/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/maps/default-map-cs235/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/maps/default-map-cs235" %}
 {% endif %}
 
 ## See Also

@@ -1,52 +1,40 @@
-var data1 = [
-    { x: 'Jan', low: 0.7, high: 6.1 }, { x: 'Feb', low: 1.3, high: 6.3 }, { x: 'Mar', low: 1.9, high: 8.5 },
-    { x: 'Apr', low: 3.1, high: 10.8 }, { x: 'May', low: 5.7, high: 14.40 }, { x: 'Jun', low: 8.4, high: 16.90 },
-    { x: 'Jul', low: 10.6,high: 19.20 }, { x: 'Aug', low: 10.5,high: 18.9 }, { x: 'Sep', low: 8.5, high: 16.1 },
-    { x: 'Oct', low: 6.0, high: 12.5 }, { x: 'Nov', low: 1.5, high: 6.9  }, { x: 'Dec', low: 5.1, high: 12.1 }
+var chartData = [
+    { month: 'Jan', sales: 35 }, { month: 'Feb', sales: 28 },
+    { month: 'Mar', sales: 34 }, { month: 'Apr', sales: 32 },
+    { month: 'May', sales: 40 }, { month: 'Jun', sales: 32 },
+    { month: 'Jul', sales: 35 }, { month: 'Aug', sales: 55 },
+    { month: 'Sep', sales: 38 }, { month: 'Oct', sales: 30 },
+    { month: 'Nov', sales: 25 }, { month: 'Dec', sales: 32 }
 ];
-
-var data2 = [
-    { x: 'Jan', low: 1.7, high: 7.1 }, { x: 'Feb', low: 1.9, high: 7.7 }, { x: 'Mar', low: 1.2, high: 7.5 },
-    { x: 'Apr', low: 2.5, high: 9.8 }, { x: 'May', low: 4.7, high: 11.4 }, { x: 'Jun', low: 6.4, high: 14.4 },
-    { x: 'Jul', low: 9.6, high: 17.2 }, { x: 'Aug', low: 10.7, high: 17.9 }, { x: 'Sep', low: 7.5, high: 15.1 },
-    { x: 'Oct', low: 3.0, high: 10.5 }, { x: 'Nov', low: 1.2, high: 7.9 }, { x: 'Dec', low: 4.1, high: 9.1 }
-];
-
 var chart = new ej.charts.Chart({
     primaryXAxis: {
         valueType: 'Category',
-        title: 'Month'
     },
     primaryYAxis: {
-        title: 'Temperature(Celsius)',
-        labelFormat: '{value}°C'
+        labelFormat: '${value}K'
     },
     series: [
         {
-            type: 'RangeColumn',
-            dataSource: data1, 
-            xName: 'x', 
-            high: 'high', 
-            low: 'low',
-            accessibility: {
-                accessibilityDescription: 'Range column representing the temperature range for City A per month.',
-                accessibilityRole: 'series',
-                accessibilityDescriptionFormat: 'City A: High ${point.high}°C, Low ${point.low}°C'
-            }
-        }, 
-        {
-            type: 'RangeColumn',
-            dataSource: data2, 
-            xName: 'x', 
-            high: 'high', 
-            low: 'low',
-            accessibility: {
-                accessibilityDescription: 'Range column representing the temperature range for City B per month.',
-                accessibilityRole: 'series',
-                accessibilityDescriptionFormat: 'City B: High ${point.high}°C, Low ${point.low}°C'
+            dataSource: chartData,
+            name: 'Sales',
+            xName: 'month',
+            yName: 'sales',
+            type: 'Line',
+            marker: {
+                dataLabel: {
+                    visible: true
+                }
             }
         }
     ],
-    title: 'Maximum and Minimum Temperature'
+    tooltip: { enable: true },
+    legendSettings: { visible: true },
+    title: 'Sales Analysis',
+    accessibility: {
+        accessibilityDescription: 'A line chart displaying the sales analysis for each month.',
+        accessibilityRole: 'chart'
+    },
+    focusBorderColor: '#FF0000',
+    focusBorderWidth: 3,
+    focusBorderMargin: 5
 }, '#element');
-

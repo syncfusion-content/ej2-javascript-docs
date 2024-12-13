@@ -64,7 +64,7 @@ The diagram method [`startGroupAction`](../api/diagram/#startgroupaction) allows
 
 ## Stack Limit
 
-The [`stackLimit`](../api/diagram/#setstacklimit) property of history manager is used to limits the number of actions to be stored on the history manager.
+The [`stackLimit`](../api/diagram) property of history manager is used to limits the number of actions to be stored on the history manager.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

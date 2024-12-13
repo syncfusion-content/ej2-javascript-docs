@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 Gridlines are crisscross lines drawn in diagram page like the lines on traditional graph paper. It helps to position the diagram elements on the diagram page.
 
-The [`snapSettings`](../api/diagram/#snapsettings) property is used to customize the gridlines and control the snapping behavior in the diagram.
+The [`snapSettings`](../api/diagram#snapsettings-SnapSettingsModel) property is used to customize the gridlines and control the snapping behavior in the diagram.
 
 ## Customize the gridlines visibility
 
@@ -55,7 +55,7 @@ To show only horizontal/vertical gridlines or to hide gridlines, refer to [`Cons
 
 The appearance of the gridlines can be customized by using a set of predefined properties.
 
-* The [`horizontalGridLines`](../api/diagram/snapSettings/#horizontalgridlines) and the [`verticalGridLines`](../api/diagram/snapSettings/#verticalgridlines) properties allow you to customize the appearance of the horizontal and vertical gridlines respectively.
+* The [`horizontalGridLines`](../api/diagram/snapSettings#horizontalgridlines-GridlinesModel) and the [`verticalGridLines`](../api/diagram/snapSettings#verticalgridlines-GridlinesModel) properties allow you to customize the appearance of the horizontal and vertical gridlines respectively.
 
 * The horizontal gridlines [`lineColor`](../api/diagram/gridlines#linecolor-string) and [`lineDashArray`](../api/diagram/gridlines#linedasharray-string) properties are used to customizes the line color and line style of the horizontal gridlines.
 
@@ -312,7 +312,7 @@ The following code example demonstrates how to set the `snapLineColor` property 
 
 ## Customization of snap intervals
 
-By default, the objects are snapped towards the nearest gridline. The gridline or position towards where the diagram object snaps can be customized with the horizontal gridlines’s [`snapInterval`](../api/diagram/gridlines/#snapintervals) and the vertical gridlines’s [`snapInterval`](../api/diagram/gridlines/#snapintervals) properties.
+By default, the objects are snapped towards the nearest gridline. The gridline or position towards where the diagram object snaps can be customized with the horizontal gridlines’s [`snapInterval`](../api/diagram/gridlines#snapintervals-number) and the vertical gridlines’s [`snapInterval`](../api/diagram/gridlines#snapintervals-number) properties.
 
 {% if page.publishingplatform == "typescript" %}
 

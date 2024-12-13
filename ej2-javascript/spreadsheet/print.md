@@ -60,15 +60,7 @@ The `printOptions` contain three properties, as described below.
 
 ## Disable printing
 
-{% if page.publishingplatform == "typescript" %}
-
-The printing functionality in the Spreadsheet can be disabled by setting the [`allowPrint`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#allowprint) property to **false**. After disabling, the **"Print"** option will not be available in the **"File"** menu of the ribbon and as a keyboard shortcut.
-
-{% elsif page.publishingplatform == "javascript" %}
-
-The printing functionality in the Spreadsheet can be disabled by setting the [`allowPrint`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#allowprint) property to **false**. After disabling, the **"Print"** option will not be available in the **"File"** menu of the ribbon and as a keyboard shortcut.
-
-{% endif %}
+The printing functionality in the Spreadsheet can be disabled by setting the [`allowPrint`](../api/spreadsheet/#allowprint) property to **false**. After disabling, the **"Print"** option will not be available in the **"File"** menu of the ribbon and as a keyboard shortcut.
 
 ![Spreadsheet with print option disabled](./images/spreadsheet_print_disable.png)
 

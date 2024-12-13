@@ -18,10 +18,11 @@ aiAssistView.appendTo('#template');
 
 new ej.splitbuttons.DropDownButton({
     items: [
-        { text: 'Settings', iconCss: 'e-icons e-settings' },
-        { separator: true },
-        { text: 'Log out' }
-    ],
-    iconCss: 'e-icons e-user',
-    cssClass: 'e-caret-hide',
+        { text: 'हिंदी' },
+        { text: 'தமிழ்' },
+        { text: 'తెలుగు' }
+      ],
+      content: 'English',
+      iconCss: 'e-icons e-translate',
+      cssClass: 'custom-dropdown'
 }, '#ddMenu');

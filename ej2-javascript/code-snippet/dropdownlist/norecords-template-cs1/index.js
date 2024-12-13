@@ -1,8 +1,8 @@
 //initiates the component
-var ddlObject = new ej.dropdowns.DropDownList({
+var ddlObject = new ej.dropdowns.ComboBox({
     //bind the data manager instance to dataSource property
     dataSource: [],
-    //set the placeholder to DropDownList input
+    //set the placeholder to ComboBox input
     placeholder:"Select an item",
     //set the value to noRecords template
     noRecordsTemplate:"<span class='norecord'> NO DATA AVAILABLE</span>"

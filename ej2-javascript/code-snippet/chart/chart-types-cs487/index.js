@@ -1,75 +1,47 @@
 var chartData = [
-    { x: 'Food', y: 90, y1: 40, y2: 70, y3: 120 },
-    { x: 'Transport', y: 80, y1: 90, y2: 110, y3: 70 },
-    { x: 'Medical', y: 50, y1: 80, y2: 120, y3: 50 },
-    { x: 'Clothes', y: 70, y1: 30, y2: 60, y3: 180 },
-    { x: 'Personal Care', y: 30, y1: 80, y2: 80, y3: 30 },
-    { x: 'Books', y: 10, y1: 40, y2: 30, y3: 270 },
-    { x: 'Fitness', y: 100, y1: 30, y2: 70, y3: 40 },
-    { x: 'Electricity', y: 55, y1: 95, y2: 55, y3: 75 },
-    { x: 'Tax', y: 20, y1: 50, y2: 40, y3: 65 },
-    { x: 'Pet Care', y: 40, y1: 20, y2: 80, y3: 95 },
-    { x: 'Education', y: 45, y1: 15, y2: 45, y3: 195 },
-    { x: 'Entertainment', y: 75, y1: 45, y2: 65, y3: 115 }
+    { country: "USA",       gold: 50, silver: 70, bronze: 45 },
+    { country: "China",     gold: 40, silver: 60, bronze: 55 },
+    { country: "Japan",     gold: 70, silver: 60, bronze: 50 },
+    { country: "Australia", gold: 60, silver: 56, bronze: 40 },
+    { country: "France",    gold: 50, silver: 45, bronze: 35 },
+    { country: "Germany",   gold: 40, silver: 30, bronze: 22 },
+    { country: "Italy",     gold: 40, silver: 35, bronze: 37 },
+    { country: "Sweden",    gold: 30, silver: 25, bronze: 27 }
 ];
-
 var chart = new ej.charts.Chart({
-    //Initializing Primary X Axis
     primaryXAxis: {
-        interval: 1, 
-        valueType: 'Category'
+        valueType: 'Category',
+        title: 'Countries'
     },
-    //Initializing Primary Y Axis
-    primaryYAxis:
-    {
-        title: 'Expense',
-        interval: 100,
-        labelFormat: '${value}'
+    primaryYAxis: {
+        minimum: 0, 
+        maximum: 80,
+        interval: 20, 
+        title: 'Medals'
     },
-    chartArea: { border: { width: 0 } },
-    //Initializing Chart Series
     series: [
         {
-            type: 'StackingLine', dataSource: chartData, marker: { visible: true },
-            xName: 'x', yName: 'y', name: 'John',
-            accessibility: {
-                accessibilityDescription: 'This series shows the monthly spending habits of John across various categories.',
-                accessibilityRole: 'series',
-                accessibilityDescriptionFormat: 'Category: ${point.x}, John Expense: ${point.y}'
-            }
-        },
+            dataSource: chartData,
+            xName: 'country', yName: 'gold',
+            name: 'Gold', type: 'Column'
+        }, 
         {
-            type: 'StackingLine', dataSource: chartData, marker: { visible: true },
-            xName: 'x', yName: 'y1', name: 'Peter',
-            accessibility: {
-                accessibilityDescription: 'This series shows the monthly spending habits of Peter across various categories.',
-                accessibilityRole: 'series',
-                accessibilityDescriptionFormat: 'Category: ${point.x}, Peter Expense: ${point.y}'
-            }
-        },
+            dataSource: chartData,
+            xName: 'country', yName: 'silver',
+            name: 'Silver', type: 'Column'
+        }, 
         {
-            type: 'StackingLine', dataSource: chartData, marker: { visible: true },
-            xName: 'x', yName: 'y2', name: 'Steve',
-            accessibility: {
-                accessibilityDescription: 'This series shows the monthly spending habits of Steve across various categories.',
-                accessibilityRole: 'series',
-                accessibilityDescriptionFormat: 'Category: ${point.x}, Steve Expense: ${point.y}'
-            }
-        },
-        {
-            type: 'StackingLine', dataSource: chartData, marker: { visible: true },
-            xName: 'x', yName: 'y3', name: 'Charle',
-            accessibility: {
-                accessibilityDescription: 'This series shows the monthly spending habits of Charle across various categories.',
-                accessibilityRole: 'series',
-                accessibilityDescriptionFormat: 'Category: ${point.x}, Charle Expense: ${point.y}'
-            }
+            dataSource: chartData,
+            xName: 'country', yName: 'bronze',
+            name: 'Bronze', type: 'Column'
         }
     ],
-    //Initializing User Interaction Tooltip
-    tooltip: {
-        enable: true
+    title: 'Olympic Medals',
+    legendSettings: {
+        visible: true,
+        accessibility: {
+            accessibilityDescription: 'Legend displaying medal counts by country for Gold, Silver, and Bronze.',
+            accessibilityRole: 'presentation'
+        }
     }
-});
-chart.appendTo('#element');
-
+}, '#element');

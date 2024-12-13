@@ -3,7 +3,7 @@ layout: post
 title: Methods in ##Platform_Name## AI AssistView control | Syncfusion
 description: Checkout and learn about methods with ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Methods
+control: AI AssistView 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##

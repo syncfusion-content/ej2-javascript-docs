@@ -69,7 +69,7 @@ To add a connection port, define the port object and add it to node’s [`ports`
 
 ## Add ports at runtime
 
-You can add ports to the nodes  at runtime by using the diagram method [`addPorts`](../api/diagram/#addports). The following code illustrates how to add ports to node at runtime.
+You can add ports to the nodes  at runtime by using the diagram method [`addPorts`](../api/diagram#addPorts). The following code illustrates how to add ports to node at runtime.
 
 The port’s ID property is used to define the unique ID for the port and its further used to find the port at runtime.
 If ID is not set, then default ID is automatically set.
@@ -104,7 +104,7 @@ If ID is not set, then default ID is automatically set.
 
 ## Remove ports at runtime
 
-You can remove ports at runtime by using diagram method [`removePorts`](../api/diagram/#removeports). Refer to the following example which shows how to remove ports at runtime.
+You can remove ports at runtime by using diagram method [`removePorts`](../api/diagram#removePorts). Refer to the following example which shows how to remove ports at runtime.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -1,8 +1,7 @@
 
 
 
-import { MultiSelect, CheckBoxSelection, FilteringEventArgs } from '@syncfusion/ej2-dropdowns';
-import { Query } from '@syncfusion/ej2-data';
+import { MultiSelect, CheckBoxSelection } from '@syncfusion/ej2-dropdowns';
 
 MultiSelect.Inject(CheckBoxSelection);
 
@@ -33,9 +32,9 @@ let msObject: MultiSelect = new MultiSelect({
     filtering: function (e: FilteringEventArgs) {
         let query = new Query();
         //frame the query based on search string with filter type.
-        query = (e.text != "") ? query.where("sports", "startswith", e.text, true) : query;
+        query = (e.text != "") ? query.where("country", "startswith", e.text, true) : query;
         //pass the filter data source, filter query to updateData method.
-        e.updateData(sportsData, query);
+        e.updateData(searchData, query);
     }
 });
 //render the component

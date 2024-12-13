@@ -3,8 +3,8 @@ var data = [{
     Subject: 'Paris',
     StartTime: new Date(2018, 1, 15, 10, 0),
     EndTime: new Date(2018, 1, 15, 12, 30),
-    StartTimezone: 'Europe/Moscow',
-    EndTimezone: 'Europe/Moscow'
+    startTimezone: 'Europe/Moscow',
+    endTimezone: 'Europe/Moscow'
 }];
 var scheduleObj = new ej.schedule.Schedule({
     height: '550px',

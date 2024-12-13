@@ -51,7 +51,7 @@ Diagram provides some default context menu items to ease the execution of some f
 
 Context menus can be customized for individual nodes by defining specific menu items beyond the default options. To add additional context menu items, you need to define and incorporate them into the [`items`](../api/diagram/contextMenuItemModel/) property of the context menu.
 
-Each custom item can be defined with specific text and ID using the [`text`](../api/diagram/contextMenuItemModel/#text) and [`ID`](../api/diagram/contextMenuItemModel/#id) properties, respectively. Additionally, you can enhance visual cues by associating icons through the [`iconCss`](../api/diagram/contextMenuItemModel/#iconcss) for enabling the use of font icons. The [`target`](../api/diagram/contextMenuItemModel/#target) property specifies where each menu item should appear, and separators can be included using the [`separator`](../api/diagram/contextMenuItemModel/#separator) property to visually group menu items. This flexibility allows for a tailored user interface that meets specific application needs efficiently. Nested menu items are defined within the [`items`](../api/diagram/contextMenuItemModel/#items) property of a parent menu item.
+Each custom item can be defined with specific text and ID using the [`text`](../api/diagram/contextMenuItemModel/#text) and [`ID`](../api/diagram/contextMenuItemModel/#id) properties, respectively. Additionally, you can enhance visual cues by associating icons through the [`iconCss`](../api/diagram/contextMenuItemModel/#iconcss) for enabling the use of font icons. The [`target`](../api/diagram/contextMenuItemModel/#target) property specifies where each menu item should appear, and separators can be included using the [`separator`](..api/diagram/contextMenuItemModel/#separator) property to visually group menu items. This flexibility allows for a tailored user interface that meets specific application needs efficiently. Nested menu items are defined within the [`items`](../api/diagram/contextMenuItemModel/#items) property of a parent menu item.
 
 ### To Display custom menu alone
 
@@ -256,7 +256,7 @@ In the following example, menu items are rendered with shortcut key codes for sp
 |Event|Description|
 |----|----|
 |[`contextMenuBeforeItemRender`](../api/diagram/#contextmenubeforeitemrender)|Triggers while initializing each menu item.|
-|[`contextMenuOpen`](../api/diagram/#contextmenuopen)|Triggers upon right-click before opening the context menu.|
+|[`contextMenuOpen`](../api/diagram/diagramBeforeMenuOpenEventArgs/)|Triggers upon right-click before opening the context menu.|
 |[`contextMenuClick`](../api/diagram/#contextmenuclick)|Triggers when a menu item is clicked.|
 
 The following example shows how to get these events.

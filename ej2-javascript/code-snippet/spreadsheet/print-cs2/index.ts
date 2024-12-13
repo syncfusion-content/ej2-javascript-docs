@@ -64,9 +64,6 @@ let spreadsheet: Spreadsheet = new Spreadsheet({
     { name: 'Budget', ranges: [{ dataSource: budgetData }], columns: columns },
     { name: 'Salary', ranges: [{ dataSource: salaryData }], columns: columns },
   ],
-  created: function (): void {
-    spreadsheet.cellFormat({ fontWeight: 'bold' }, 'A1:D1');
-  }
 });
 
 spreadsheet.appendTo('#spreadsheet');

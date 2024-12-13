@@ -21,8 +21,8 @@ var ganttChart = new ej.gantt.Gantt({
     toolbar: ['PdfExport'],
 
     toolbarClick: (args) => {
-        if (args.item.id === 'ganttContainer_pdfexport') {
-            gantt.pdfExport();
+        if (args.item.id === 'GanttExport_pdfexport') {
+            ganttChart.pdfExport();
         }
     },
     columns: [
@@ -47,9 +47,9 @@ var ganttChart = new ej.gantt.Gantt({
     height: "450px",
     pdfQueryTaskbarInfo: (args) => {
         if (args.taskbar.taskSegmentStyles) {
-            args.taskbar.taskSegmentStyles[1].taskColor = new PdfColor(255, 0, 0);
-            args.taskbar.taskSegmentStyles[1].progressColor = new PdfColor(0, 128, 0);
-            args.taskbar.taskSegmentStyles[1].taskBorderColor = new PdfColor(0, 0, 0);
+            args.taskbar.taskSegmentStyles[1].taskColor = new ej.pdfexport.PdfColor(255, 0, 0);
+            args.taskbar.taskSegmentStyles[1].progressColor = new ej.pdfexport.PdfColor(0, 128, 0);
+            args.taskbar.taskSegmentStyles[1].taskBorderColor = new ej.pdfexport.PdfColor(0, 0, 0);
         }
     },
 });

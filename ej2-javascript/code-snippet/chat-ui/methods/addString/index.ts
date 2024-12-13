@@ -14,19 +14,16 @@ let michaleUserModel: UserModel = {
 };
 let chatMessages: MessageModel = [
     {
-        id: "msg1",
         author: currentUserModel,
-        text: "Hi, thinking of painting this weekend"
+        text: "Hi Michale, are we on track for the deadline?"
     },
     {
-        id: "msg2",
         author: michaleUserModel,
-        text: "That’s fun! What will you paint?"
+        text: "Yes, the design phase is complete."
     },
     {
-        id: "msg3",
         author: currentUserModel,
-        text: "Maybe landscapes."
+        text: "I’ll review it and send feedback by today."
     }
 ];
 // Initializes the Chat UI control
@@ -41,6 +38,6 @@ chatUI.appendTo('#message');
 
 document.addEventListener('click', (event) => {
     if (event.target && (event.target as HTMLElement).id === 'addString') {
-        chatUI.addMessage('Do you have a specific place in mind?');
+        chatUI.addMessage('Also, let me know if there are any blockers we should address before the next phase.');
     }
 });

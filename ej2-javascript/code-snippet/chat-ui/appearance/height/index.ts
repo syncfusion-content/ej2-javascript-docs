@@ -14,26 +14,23 @@ let michaleUserModel: UserModel = {
 };
 let chatMessages: MessageModel = [
     {
-        id: "msg1",
         author: currentUserModel,
-        text: "Hi, thinking of painting this weekend"
+        text: "Hi Michale, are we on track for the deadline?"
     },
     {
-        id: "msg2",
         author: michaleUserModel,
-        text: "That’s fun! What will you paint?"
+        text: "Yes, the design phase is complete."
     },
     {
-        id: "msg3",
         author: currentUserModel,
-        text: "Maybe landscapes."
+        text: "I’ll review it and send feedback by today."
     }
 ];
 // Initializes the Chat UI control
 let chatUI: ChatUI = new ChatUI({
     messages: chatMessages,
     user: currentUserModel,
-    height: '400px'
+    height: '380px'
 });
 
 // Render initialized Chat UI.

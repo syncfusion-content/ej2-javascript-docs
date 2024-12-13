@@ -15,6 +15,33 @@ domainurl: ##DomainURL##
 
 You can use `showFooter` property to enable or disable the chat footer.
 
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chat-ui/footer/showFooter/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chat-ui/footer/showFooter/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chat-ui/footer/showFooter" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chat-ui/footer/showFooter/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chat-ui/footer/showFooter/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chat-ui/footer/showFooter" %}
+{% endif %}
+
 ## Footer template
 
 > Refer to the [Templates](./templates#footer-template) section for more details about the footer template.

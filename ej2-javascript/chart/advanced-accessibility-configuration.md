@@ -125,7 +125,7 @@ In the ##Platform_Name## chart control, the [`titleStyle`](../../api/chart/#titl
 
 ## Annotations
 
-The [`annotations`](../../api/chart/#annotations) property allows you to add annotations to the chart in specific regions. The following characteristics allow for the customization of the annotations accessibility:
+The [`annotations`](../../api/chart/#annotations) property allows you to add annotations to the chart in specific regions. The following `accessibility` properties in [`annotations`](../../api/chart/#annotations) can be customized for accessibility:
 
 * `accessibilityDescription` - Provides a text description for the annotation, enhancing support for screen readers.
 * `accessibilityRole` - Specifies the role of the annotation, helping screen readers to identify the element appropriately.
@@ -161,7 +161,7 @@ The [`annotations`](../../api/chart/#annotations) property allows you to add ann
 
 ## Trendline
 
-Customizable properties within the [`trendlines`](../../api/chart/#trendlinemodule) allow you to control the accessibility of the trendlines on the chart, including:
+The [`trendlines`](../../api/chart/#trendlinemodule) property allows you to display trends in the data. The following `accessibility` properties in [`trendlines`](../../api/chart/#trendlinemodule) can be customized for accessibility:
 
 * `accessibilityDescription` - Provides a text description for the trendline, enhancing support for screen readers.
 * `accessibilityRole` - Specifies the role of the trendline, helping screen readers to identify the element appropriately.
@@ -233,7 +233,7 @@ The [`zoomSettings`](../../api/chart/#zoomsettings) attributes allow you to adju
 
 ## Technical indicators
 
-Customizable properties within the [`indicators`](../../api/chart/#indicators) allow you to control the accessibility of the technical indicators on the chart, including:
+The [`indicators`](../../api/chart/#indicators) property allows you to analyze the trends and patterns in the data. The following `accessibility` properties in [`indicators`](../../api/chart/#indicators) can be customized for accessibility:
 
 * `accessibilityDescription` - Provides a text description for the indicators, enhancing support for screen readers.
 * `accessibilityRole` - Specifies the role of the indicators, helping screen readers to identify the element appropriately.

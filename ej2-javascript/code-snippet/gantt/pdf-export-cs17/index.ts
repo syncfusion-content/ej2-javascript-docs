@@ -27,7 +27,7 @@ let gantt: Gantt = new Gantt({
     toolbar: ['PdfExport'],
 
     toolbarClick: (args?: any) => {
-        if (args.item.id === 'ganttContainer_pdfexport') {
+        if (args.item.id === 'GanttExport_pdfexport') {
             gantt.pdfExport();
         }
     },

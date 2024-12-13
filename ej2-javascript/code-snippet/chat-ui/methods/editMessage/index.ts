@@ -16,17 +16,17 @@ let chatMessages: MessageModel = [
     {
         id: "msg1",
         author: currentUserModel,
-        text: "Hi, thinking of painting this weekend"
+        text: "Hi Michale, are we on track for the deadline?"
     },
     {
         id: "msg2",
         author: michaleUserModel,
-        text: "That’s fun! What will you paint?"
+        text: "Yes, the design phase is complete."
     },
     {
         id: "msg3",
         author: currentUserModel,
-        text: "Maybe landscapes."
+        text: "I’ll review it and send feedback by today."
     }
 ];
 // Initializes the Chat UI control
@@ -41,6 +41,6 @@ chatUI.appendTo('#edit-message');
 
 document.addEventListener('click', (event) => {
     if (event.target && (event.target as HTMLElement).id === 'updateMessage') {
-        chatUI.updateMessage({text: "Hi Michale, thinking of painting today.", author: currentUserModel},'msg1');
+        chatUI.updateMessage({text: "Hi Michael, are we still on schedule to meet the deadline?", author: currentUserModel},'msg1');
     }
 });

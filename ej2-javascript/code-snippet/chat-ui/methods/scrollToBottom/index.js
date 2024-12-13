@@ -12,17 +12,14 @@ let michaleUserModel = {
 
 let chatMessages = [
     {
-        id: "msg1",
         author: currentUserModel,
         text: "Want to get coffee tomorrow?"
     },
     {
-        id: "msg2",
         author: michaleUserModel,
         text: "Sure! What time?"
     },
     {
-        id: "msg3",
         author: currentUserModel,
         text: "How about 10 AM?"
     },

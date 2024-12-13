@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Resizing ##Platform_Name## DropDownList control
 
-You can dynamically adjust the size of the popup in the Autocomplete component by using the [AllowResize](https://ej2.syncfusion.com/javascript/documentation/api/drop-down-list/#allowresizee) property. When enabled, users can resize the popup, improving visibility and control, with the resized dimensions being retained across sessions for a consistent user experience.
+You can dynamically adjust the size of the popup in the DropDownList component by using the [AllowResize](https://ej2.syncfusion.com/javascript/documentation/api/drop-down-list/#allowresizee) property. When enabled, users can resize the popup, improving visibility and control, with the resized dimensions being retained across sessions for a consistent user experience.
 
 {% if page.publishingplatform == "typescript" %}
 

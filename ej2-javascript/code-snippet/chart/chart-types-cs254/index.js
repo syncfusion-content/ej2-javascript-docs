@@ -33,16 +33,14 @@ var chart = new ej.charts.Chart({
             dataSource: splinedata,
             xName: 'x', high: 'high', 
             low: 'low', name: 'England',
-            dashArray: '5,5',
-            border: { width: 2, color: '#ff4251' }
+            border: { width: 2, color: '#ff4251', dashArray: '5,5' }
         },
         {
             type: 'SplineRangeArea',
             dataSource: splinedata,
             xName: 'x', high: 'high1', 
             low: 'low1', name: 'India',
-            dashArray: '5,5',
-            border: { width: 2, color: '#4C4C4C' }
+            border: { width: 2, color: '#4C4C4C', dashArray: '5,5' }
         }
     ],
     title: 'Monthly Temperature Range'

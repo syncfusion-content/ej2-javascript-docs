@@ -12,7 +12,7 @@ let michaleUserModel: UserModel = {
     id: "user2",
     user: "Michale Suyama"
 };
-let chatMessages: MessageModel = [
+let chatMessages: MessageModel[] = [
     {
         id: "msg1",
         author: currentUserModel,

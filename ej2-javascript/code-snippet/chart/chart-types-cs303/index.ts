@@ -19,7 +19,7 @@ let chart: Chart = new Chart({
             xName: 'x', 
             high: 'high', 
             low: 'low',
-            border: { width: 2, color: '#ff4251' }
+            border: { width: 2, color: '#ff4251', dashArray: '5,5' }
         }, 
         {
             type: 'RangeColumn',
@@ -27,7 +27,7 @@ let chart: Chart = new Chart({
             xName: 'x', 
             high: 'high', 
             low: 'low',
-            border: { width: 2, color: '#DCDCDC' }
+            border: { width: 2, color: '#DCDCDC', dashArray: '5,5' }
         }
     ],
     title: 'Maximum and Minimum Temperature'

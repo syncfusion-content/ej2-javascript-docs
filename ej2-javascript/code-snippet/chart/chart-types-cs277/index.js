@@ -20,8 +20,8 @@ var chart = new ej.charts.Chart({
     series:[{
         dataSource: chartData,
         xName: 'x', yName: 'y',
-        type: 'StepArea', dashArray: '5,5',
-        border: { width: 2, color: '#FFA500' }
+        type: 'StepArea',
+        border: { width: 2, color: '#FFA500', dashArray: '5,5' }
     }],
     title: 'England - Run Rate',
     tooltip:{

@@ -12,7 +12,7 @@ let michaleUserModel: UserModel = {
     id: "user2",
     user: "Michale Suyama"
 };
-let chatMessages: MessageModel = [
+let chatMessages: MessageModel[] = [
     {
         author: currentUserModel,
         text: "Hi Michale, are we on track for the deadline?"
@@ -47,7 +47,7 @@ function footerTemplate(): string {
 document.addEventListener('click', (event) => {
     if (event.target && (event.target as HTMLElement).id === 'sendMessage') {
         const textArea = document.getElementById('chatTextArea') as HTMLTextAreaElement;
-        if (textArea) {
+        if (textArea && textArea.value.length > 0) {
             let value: string = textArea.value;
             textArea.value = '';
             chatUI.addMessage(

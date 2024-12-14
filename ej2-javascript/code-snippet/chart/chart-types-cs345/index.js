@@ -28,7 +28,7 @@ var chart = new ej.charts.Chart(
         xName: 'x',
         yName: 'y',
         name: 'Apple',
-        border: { width: 2, color: '#ff4251' }
+        border: { width: 2, color: '#ff4251', dashArray: '5,5' }
       },
       {
         type: 'StackingBar100',
@@ -36,7 +36,7 @@ var chart = new ej.charts.Chart(
         xName: 'x',
         yName: 'y1',
         name: 'Orange',
-        border: { width: 2, color: '#66BDB7' }
+        border: { width: 2, color: '#66BDB7', dashArray: '5,5' }
       },
       {
         type: 'StackingBar100',
@@ -44,7 +44,7 @@ var chart = new ej.charts.Chart(
         xName: 'x',
         yName: 'y2',
         name: 'Wastage',
-        border: { width: 2, color: '#794F1B' }
+        border: { width: 2, color: '#794F1B', dashArray: '5,5' }
       }
     ],
     title: 'Sales Comparison'

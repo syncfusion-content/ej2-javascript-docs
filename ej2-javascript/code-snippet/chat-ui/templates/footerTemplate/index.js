@@ -44,7 +44,7 @@ function footerTemplate() {
 document.addEventListener('click', function (event) {
     if (event.target && event.target.id === 'sendMessage') {
         const textArea = document.getElementById('chatTextArea');
-        if (textArea) {
+        if (textArea && textArea.value.length > 0) {
             let value = textArea.value;
             textArea.value = '';
             chatUI.addMessage(

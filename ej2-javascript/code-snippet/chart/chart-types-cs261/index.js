@@ -33,8 +33,8 @@ var chart = new ej.charts.Chart({
             type: 'RangeStepArea',
             dataSource: chartData,
             xName: 'x', high: 'high',
-            low: 'low', dashArray: '5,5',
-            border: { width: 2, color: '#ff4251' }
+            low: 'low',
+            border: { width: 2, color: '#ff4251', dashArray: '5,5' }
         }
     ],
     title: 'Monthly Temperature Range'

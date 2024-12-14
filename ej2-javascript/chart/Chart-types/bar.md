@@ -186,43 +186,9 @@ The [opacity](../../api/chart/series/#opacity) property specifies the transparen
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs325" %}
 {% endif %}
 
-**Dash array**
-
-The [dashArray](../../api/chart/series/#dasharray) property determines the pattern of dashes and gaps in the series.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/chart/chart-types-cs326/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/chart-types-cs326/index.html %}
-{% endhighlight %}
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/chart/chart-types-cs326/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs326" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/chart/chart-types-cs326/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/chart-types-cs326/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs326" %}
-{% endif %}
-
 **Border**
 
-Use the [border](../../api/chart/series/#border) property to customize the width and color of the series border.
+Use the [border](../../api/chart/series/#border) property to customize the width, color and dasharray of the series border.
 
 {% if page.publishingplatform == "typescript" %}
 

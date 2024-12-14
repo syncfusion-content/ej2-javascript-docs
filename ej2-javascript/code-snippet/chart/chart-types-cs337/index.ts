@@ -22,7 +22,7 @@ let chart: Chart = new Chart({
             dataSource: stackedData,
             xName: 'x',
             yName: 'y',
-            border: { width: 2, color: '#ff4251' }
+            border: { width: 2, color: '#ff4251', dashArray: '5,5' }
         },
         {
             type: 'StackingBar',
@@ -30,7 +30,7 @@ let chart: Chart = new Chart({
             dataSource: stackedData,
             xName: 'x',
             yName: 'y1',
-            border: { width: 2, color: '#66BDB7' }
+            border: { width: 2, color: '#66BDB7', dashArray: '5,5' }
         },
         {
             type: 'StackingBar',
@@ -38,7 +38,7 @@ let chart: Chart = new Chart({
             dataSource: stackedData,
             xName: 'x',
             yName: 'y2',
-            border: { width: 2, color: '#794F1B' }
+            border: { width: 2, color: '#794F1B', dashArray: '5,5' }
         }
     ],
     title: 'Sales Comparison'

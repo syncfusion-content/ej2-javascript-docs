@@ -24,7 +24,7 @@ var chart = new ej.charts.Chart({
         xName: 'country', yName: 'gold',
         // Series type as column series
         type: 'Column',
-        border: { width: 2, color: '#FFA500' }
+        border: { width: 2, color: '#FFA500', dashArray: '5,5' }
     }],
     title: 'Olympic Medals'
 }, '#element');

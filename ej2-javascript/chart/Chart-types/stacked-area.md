@@ -186,9 +186,9 @@ The [opacity](../../api/chart/series/#opacity) property specifies the transparen
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs246" %}
 {% endif %}
 
-**Dash array**
+**Border**
 
-The [dashArray](../../api/chart/series/#dasharray) property determines the pattern of dashes and gaps in the series.
+Use the [border](../../api/chart/series/#border) property to customize the width, color and dasharray of the series border.
 
 {% if page.publishingplatform == "typescript" %}
 

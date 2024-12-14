@@ -13,7 +13,7 @@ let michaleUserModel: UserModel = {
     user: "Michale Suyama",
     avatarUrl: 'https://ej2.syncfusion.com/demos/src/avatar/images/pic03.png'
 };
-let chatMessages: MessageModel = [
+let chatMessages: MessageModel[] = [
     {
         author: currentUserModel,
         text: "Hi Michale, are we on track for the deadline?"

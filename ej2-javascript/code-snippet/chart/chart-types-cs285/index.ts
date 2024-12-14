@@ -17,8 +17,7 @@ let chart: Chart = new Chart({
         xName: 'x', yName: 'y',
         // Series type as spline area series
         type: 'SplineArea',
-        dashArray: '5,5',
-        border: { width: 2, color: '#FFA500' }
+        border: { width: 2, color: '#FFA500', dashArray: '5,5' }
     }],
     title: 'Climate Graph-2012'
 }, '#element');

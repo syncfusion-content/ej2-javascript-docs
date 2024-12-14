@@ -22,7 +22,7 @@ var chart = new ej.charts.Chart({
         xName: 'x', yName: 'y',
         // Series type as bar series
         type: 'Bar',
-        border: { width: 2, color: '#ff4251' }
+        border: { width: 2, color: '#ff4251', dashArray: '5,5' }
     }],
     title: 'Unemployment rate (%)'
 }, '#element');

@@ -17,7 +17,7 @@ let reenaUserModel: UserModel = {
     user: "Reena"
 };
 let typingUsers : UserModel[] = [michaleUserModel, reenaUserModel];
-let chatMessages: MessageModel = [
+let chatMessages: MessageModel[] = [
     {
         author: currentUserModel,
         text: "Hi Michale, are we on track for the deadline?"

@@ -36,8 +36,7 @@ var chart = new ej.charts.Chart({
             xName: 'x',
             high: 'high',
             low: 'low',
-            dashArray: '5,5',
-            border: { width: 2, color: 'red' }
+            border: { width: 2, color: 'red', dashArray: '5,5' }
         }
     ],
     title: 'Monthly Temperature Range'

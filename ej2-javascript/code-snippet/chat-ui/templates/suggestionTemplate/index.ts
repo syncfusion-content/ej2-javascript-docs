@@ -13,7 +13,7 @@ let michaleUserModel: UserModel = {
     user: "Michale Suyama"
 };
 let suggestions : string[] = [ "Okay will check it", "Sounds good!"];
-let chatMessages: MessageModel = [
+let chatMessages: MessageModel[] = [
     {
         author: currentUserModel,
         text: "Hi Michale, are we on track for the deadline?"

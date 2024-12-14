@@ -21,7 +21,7 @@ let chart: Chart = new Chart({
         xName: 'x', yName: 'y',
         type: 'Area',
         fill: '#69D2E7',
-        border: { width: 2, color: '#962D18' }
+        border: { width: 2, color: '#962D18', dashArray: '5,5' }
     }],
     title: 'Average Sales Comparison'
 }, '#element');

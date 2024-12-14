@@ -26,7 +26,7 @@ var chart = new ej.charts.Chart({
                 width: 10,
                 height: 10
             },
-            border: { width: 2, color: '#bd0032' }
+            border: { width: 2, color: '#bd0032', dashArray: '2,2' }
         }
     ]
 }, '#element');

@@ -13,7 +13,7 @@ let michaleUserModel: UserModel = {
     user: "Michale Suyama",
     cssClass: 'custom-user'
 };
-let chatMessages: MessageModel = [
+let chatMessages: MessageModel[] = [
     {
         author: currentUserModel,
         text: "Hi Michale, are we on track for the deadline?"

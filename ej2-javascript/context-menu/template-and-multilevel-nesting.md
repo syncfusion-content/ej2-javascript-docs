@@ -11,7 +11,32 @@ domainurl: ##DomainURL##
 
 # Template and multilevel nesting in ##Platform_Name## Context menu control
 
-## Template
+## Item template
+
+The [itemTemplate](../../api/context-menu/#itemtemplate) property in the ContextMenu component allows you to define custom templates for displaying menu items within the context menu. This feature is particularly useful when you want to customize the appearance or layout of the menu items beyond the default text-based list.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/context-menu/template-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/context-menu/template-cs2" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/context-menu/template-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/context-menu/template-cs2" %}
+{% endif %}
+
+## Customize the specific menu items
 
 The ContextMenu items can be customized by using the [`beforeItemRender`](../api/context-menu#beforeitemrender) event. The item render event
 triggers while rendering each menu item. The event argument will be used to identify the menu item and customize it based on the requirement. In the following sample, the menu item is rendered with keycode for specified action in ContextMenu using the template. Here, the keycode is specified for Save as, View page source, and Inspect in the right side corner of the menu items by adding span element in the [`beforeItemRender`](../api/context-menu#beforeitemrender) event.

@@ -21,22 +21,22 @@ let chart: Chart = new Chart({
             dataSource: stackedData, xName: 'x', yName: 'y',
             //Series type as stacked column
             type: 'StackingColumn', name: 'UK',
-            border: { width: 2, color: '#ff4251'}
+            border: { width: 2, color: '#ff4251', dashArray: '5,5' }
         }, 
         {
             dataSource: stackedData, xName: 'x', yName: 'y1',
             type: 'StackingColumn', name: 'Germany',
-            border: { width: 2, color: '#66BDB7'}
+            border: { width: 2, color: '#66BDB7', dashArray: '5,5' }
         }, 
         {
             dataSource: stackedData, xName: 'x', yName: 'y2',
             type: 'StackingColumn', name: 'France',
-            border: { width: 2, color: '#794F1B'}
+            border: { width: 2, color: '#794F1B', dashArray: '5,5' }
         }, 
         {
             dataSource: stackedData, xName: 'x', yName: 'y3',
             type: 'StackingColumn', name: 'Italy',
-            border: { width: 2, color: '#1a9a6f'}
+            border: { width: 2, color: '#1a9a6f', dashArray: '5,5' }
         }
     ],
     title: 'Mobile Game Market by Country'

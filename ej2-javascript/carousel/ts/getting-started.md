@@ -172,6 +172,9 @@ The following example shows a basic Carousel component.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/carousel/getting-started-cs1/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="index.ts" %}
+{% include code-snippet/carousel/getting-started-cs1/index.ts %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/carousel/getting-started-cs1" %}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Essential JS 2 Tab</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Essential JS 2 Tab" />
+    <meta name="author" content="Syncfusion" />
+    <link href="https://cdn.syncfusion.com/ej2/28.1.33/material.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+</head>
+</head>
+
+<body>
+    <div id='loader'>LOADING....</div>
+    <div id='container'>
+        <div class="login-form" style="display:none">
+            <div class='wrap'>
+                <div id="input-container">
+                    <input id="username" />
+                    <br><br>
+                    <input id="password" />
+                </div>
+            </div>
+            <br>
+            <div class="button-contain" style="display: flex; justify-content: center; align-items: center; gap:10px;">
+                <button id="sign-btn"></button>
+                <button id="skip-btn"></button>
+            </div>
+        </div>
+        <div class="over-view" style="display: none;">
+            <p>
+                You can check out our Syncfusion Ej2 demo
+                <a href="https://ej2.syncfusion.com/demos/" target="_blank">here</a>.
+            </p>
+            <br />
+            <p>
+                The user guide is available
+                <a href="https://ej2.syncfusion.com/documentation/introduction" target="_blank">here</a>.
+            </p>
+        </div>
+        <div class="feed-back" style="display:none">
+            <div class='wrap'>
+                <div id="input-container">
+                    <input id="sign-in-name" />
+                    <br><br>
+                    <input id="mail" />
+                    <br><br>
+                    <input id="comments" />
+                </div>
+            </div>
+            <br>
+            <div class="button-contain" style="display: flex; justify-content: center; align-items: center; gap:10px;">
+                <button id="submit"></button>
+            </div>
+        </div>
+        <div id='element'></div>
+    </div>
+</body>
+
+</html>

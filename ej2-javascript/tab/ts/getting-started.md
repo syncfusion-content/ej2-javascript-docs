@@ -103,7 +103,7 @@ The Tab can be rendered by defining a JSON array. The item is rendered with [`he
 
 <body>
     <div style="margin: 50px;">
-        <div id="tab"></div>
+        <div id="element"></div>
     </div>
 </body>
 
@@ -174,6 +174,9 @@ Output will be as follows:
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/tab/tab-cs4/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/tab/tab-cs4/index.css %}
 {% endhighlight %}
 {% endtabs %}
           
@@ -277,6 +280,9 @@ tab.appendTo('#tab_html_markup');
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/tab/tab-template-cs1/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/tab/tab-template-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
           

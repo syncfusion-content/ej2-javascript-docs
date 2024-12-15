@@ -15,7 +15,7 @@ The diagram can be scrolled using both the vertical and horizontal scrollbars. A
 
 ## Access and Customize Scroll Settings
 
-Scroll settings in a diagram allow you to access and customize various properties such as [`horizontalOffset`](../api/diagram/scrollSettingsModel/#horizontaloffset), [`verticalOffset`](../api/diagram/scrollSettingsModel/#verticaloffset), [`viewPortWidth`](../api/diagram/scrollSettingsModel/#viewportwidth), [`viewPortHeight`](../api/diagram/scrollSettingsModel/#viewportheight), [`currentZoom`](../api/diagram/scrollSettingsModel/#currentzoom), [`zoomFactor`](../api/diagram/scrollSettingsModel/#zoomfactor), [`maxZoom`](../api/diagram/scrollSettingsModel/#maxzoom), [`minZoom`](../api/diagram/scrollSettingsModel/#minzoom), [`scrollLimit`](../api/diagram/scrollSettingsModel/#scrolllimit) , [`canAutoScroll`](../scrollSettingsModel/#canautoscroll) , [`autoScrollBorder`](../api/diagram/marginmodel/), [`padding`](../api/diagram/marginmodel/) , [`scrollableArea`](../api/diagram/rect/). 
+Scroll settings in a diagram allow you to access and customize various properties such as [`horizontalOffset`](../api/diagram/scrollSettingsModel/#horizontaloffset), [`verticalOffset`](../api/diagram/scrollSettingsModel/#verticaloffset), [`viewPortWidth`](../api/diagram/scrollSettingsModel/#viewportwidth), [`viewPortHeight`](../api/diagram/scrollSettingsModel/#viewportheight), [`currentZoom`](../api/diagram/scrollSettingsModel/#currentzoom), [`zoomFactor`](../api/diagram/scrollSettingsModel/#zoomfactor), [`maxZoom`](../api/diagram/scrollSettingsModel/#maxzoom), [`minZoom`](../api/diagram/scrollSettingsModel/#minzoom), [`scrollLimit`](../api/diagram/scrollSettingsModel/#scrolllimit) , [`canAutoScroll`](../api/diagram/scrollSettingsModel/#canautoscroll) , [`autoScrollBorder`](../api/diagram/scrollSettingsModel/#autoscrollborder), [`padding`](../api/diagram/scrollSettingsModel/#padding) , [`scrollableArea`](../api/diagram/scrollSettingsModel/#scrollablearea). 
 
 These properties enable you to read and adjust the scroll status, scroll offset, zoom levels, and more. For a comprehensive overview of these properties, refer to the [`Scroll Settings`](../api/diagram/scrollSettingsModel/)
 
@@ -116,7 +116,7 @@ You can programmatically change the current zoom of diagram by utilizing the [`z
 
 #### ZoomOptions
 
-The [`zoomTo`](../api/diagram/#zoomto) method takes one parameter [`zoomOptions`](../api/diagram/zoomOptions/). In that zoomOptions we can specify the [`focusPoint`](../api/diagram/pointModel/), [`type`](../api/diagram/zoomTypes/) and [`zoomFactor`](../api/diagram/zoomOptions/#zoomfactor)
+The [`zoomTo`](../api/diagram/#zoomto) method takes one parameter [`zoomOptions`](../api/diagram/zoomOptions/). In that zoomOptions we can specify the [`focusPoint`](../api/diagram/zoomOptions/#focuspoint), [`type`](../api/diagram/zoomTypes/) and [`zoomFactor`](../api/diagram/zoomOptions/#zoomfactor)
 
  The following example shows how to zoom-in and zoom-out the diagram using zoomTo method
 
@@ -161,11 +161,11 @@ The autoscroll behavior triggers automatically when any of the following actions
 
 The client-side event [`ScrollChange`](../api/diagram/iScrollChangeEventArgs/) is triggered when autoscroll occurs, allowing for customizations. Refer [`scrollChange-event`](#scroll-change-event) for more information.
 
-Autoscroll behavior can be enabled or disabled using the  [`canAutoScroll`](../scrollSettingsModel/#canautoscroll) property of the diagram.
+Autoscroll behavior can be enabled or disabled using the  [`canAutoScroll`](../api/diagram/scrollSettingsModel/#canautoscroll) property of the diagram.
 
 ### Autoscroll border
 
-The autoscroll border defines the maximum distance from the mouse pointer to the diagram edge that triggers autoscroll. By default, this distance is set to 15 pixels for all sides (left, right, top, and bottom). You can adjust this using the [`autoScrollBorder`](../api/diagram/marginmodel/) property of the scroll settings.
+The autoscroll border defines the maximum distance from the mouse pointer to the diagram edge that triggers autoscroll. By default, this distance is set to 15 pixels for all sides (left, right, top, and bottom). You can adjust this using the [`autoScrollBorder`](../api/diagram/scrollSettingsModel/#autoscrollborder) property of the scroll settings.
 
 The following example demonstrates how to configure autoscroll:
 
@@ -293,7 +293,7 @@ The [`reset`](../api/diagram/#reset) method resets the zoom and scroller offsets
 
 ## UpdateViewport
 
-The [`updateViewPort`](../api/diagram) method is used to update the dimensions of the diagram viewport.
+The [`updateViewPort`](../api/diagram/#updateviewport) method is used to update the dimensions of the diagram viewport.
 
 ```javascript
 //Updates diagram viewport

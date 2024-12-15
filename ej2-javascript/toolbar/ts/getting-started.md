@@ -159,6 +159,9 @@ Output will look like this:
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/toolbar/toolbar-cs3/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/toolbar/toolbar-cs3/index.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/toolbar/toolbar-cs3" %}

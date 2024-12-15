@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Complex hierarchical tree layout in ##Platform_Name## Diagram control
 
-Complex hierarchical tree layout arranges nodes in a tree-like structure, where the child node can have more than one parent. This layout is an extended version of the hierarchical tree layout. To create a complex hierarchical tree, the [`type`](../api/diagram/layout) property of layout should be set as `ComplexHierarchicalTree`.
+Complex hierarchical tree layout arranges nodes in a tree-like structure, where the child node can have more than one parent. This layout is an extended version of the hierarchical tree layout. To create a complex hierarchical tree, the [`type`](../api/diagram/layout/#type) property of layout should be set as `ComplexHierarchicalTree`.
 
 ## Complex hierarchical tree layout with nodes and connectors
 
@@ -50,7 +50,7 @@ N> In Diagram Layouts, all root nodes will always render at the same level. This
 
 ## Line Distribution
 
-Line distribution is used to arrange the connectors without overlapping in automatic layout. In some cases, the automatic layout connectors connecting to the nodes will be overlapped with one another. So user can decide whether the segment of each connector from a single parent node should be same point or different point. The [`connectionPointOrigin`](../api/diagram/layout) property of layout is used to enable or disable the line distribution in layout. By default ConnectionPointOrigin will be `SamePoint`.
+Line distribution is used to arrange the connectors without overlapping in automatic layout. In some cases, the automatic layout connectors connecting to the nodes will be overlapped with one another. So user can decide whether the segment of each connector from a single parent node should be same point or different point. The [`connectionPointOrigin`](../api/diagram/layout/#connectionpointorigin) property of layout is used to enable or disable the line distribution in layout. By default ConnectionPointOrigin will be `SamePoint`.
 
 The following code example illustrates how to create a complex hierarchical tree with line distribution.
 

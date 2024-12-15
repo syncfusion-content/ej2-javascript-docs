@@ -167,6 +167,21 @@ The latitude and longitude values are used to determine the location of each mar
         
 {% previewsample "page.domainurl/code-snippet/maps/default-map-cs82" %}
 
+### Setting different sizes for markers individually
+
+The size of the markers in a marker group can be customized using the [widthValuePath](../api/maps/markerSettingsModel/#widthvaluepath) and [heightValuePath](../api/maps/markerSettingsModel/#heightvaluepath) properties, which allow the user to change the width and height of the markers based on values from the given data source. Bind the data source to the [dataSource](../api/maps/markerSettingsModel/#datasource) property of the [markerSettings](../api/maps/markerSettingsModel/), and specify the field names containing the width and height values in the data source for the `widthValuePath` and `heightValuePath` properties.
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/maps/marker-size-customization-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/maps/marker-size-customization-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/maps/default-map-cs82marker-size-customization-cs1" %}
+
 ## Repositioning the marker using drag and drop
 
 The markers on the map can be dragged and dropped to change their position. To enable marker drag and drop, set the [enableDrag](../api/maps/markerSettingsModel/#enabledrag) property to **true** in the [markerSettings](../api/maps/markerSettingsModel/) property.
@@ -225,9 +240,9 @@ The Maps is initially scaled to the center value based on the marker distance. T
 
 ## Marker clustering
 
-Maps provide support to hide and cluster markers when they overlap each other. The number on a cluster indicates how many overlapped markers it contains. If zooming any of the cluster locations in Maps, the number on the cluster will decrease and begin to see the individual markers on the map. When zooming out, the overlapping marker will increase so that it can cluster again and increase the count over the cluster.
+Maps support hiding and clustering markers when they overlap. The number on a cluster indicates how many overlapping markers it contains. When zooming into any cluster location on the map, the number on the cluster decreases, and individual markers become visible. When zooming out, the overlapping markers increase, causing them to cluster again, which increases the count on the cluster.
 
-To enable clustering in markers, set the [`allowClustering`](../api/maps/markerClusterSettingsModel/#allowclustering) property of [`markerClusterSettings`](../api/maps/markerClusterSettingsModel) as **true** and customization of clustering can be done with the [`markerClusterSettings`](../api/maps/markerClusterSettingsModel).
+To enable clustering for markers within a layer, set the [allowClustering](../api/maps/markerClusterSettingsModel/#allowclustering) property of [markerClusterSettings](../api/maps/markerClusterSettingsModel) in the [layers](../api/maps/#layers) to **true**. Customization of clustering can be done using the `markerClusterSettings` property. 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -240,7 +255,7 @@ To enable clustering in markers, set the [`allowClustering`](../api/maps/markerC
         
 {% previewsample "page.domainurl/code-snippet/maps/default-map-cs86" %}
 
-## Customization of marker cluster
+### Customization of marker cluster
 
 The following properties are available to customize the marker clustering in the Maps component.
 
@@ -267,7 +282,7 @@ The following properties are available to customize the marker clustering in the
         
 {% previewsample "page.domainurl/code-snippet/maps/default-map-cs87" %}
 
-## Marker cluster expand
+### Marker cluster expand
 
 The cluster is formed by grouping an identical and non-identical marker from the surrounding area. By clicking on the cluster and setting the [`allowClusterExpand`](../api/maps/markerClusterSettingsModel/#allowclusterexpand) property in [`markerClusterSettings`](../api/maps/markerClusterSettingsModel) as **true** to expand the identical markers. If zoom in any of the locations of the cluster, the number on the cluster will decrease and the overlapping marker will be split into an individual marker on the map. When performing zoom out, it will increase the marker count and then cluster it again.
 
@@ -281,6 +296,23 @@ The cluster is formed by grouping an identical and non-identical marker from the
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/maps/default-map-cs88" %}
+
+### Clustering markers within each marker group
+
+Marker clustering can be enabled for each marker group in the map by using the [clusterSettings](../api/maps/markerSettingsModel/#clustersettings) property within the [markerSettings](../api/maps/markerSettingsModel/) property in the [layers](../api/maps/#layers). This allows for individual customization of clusters for each marker group which group markers that are located near each other to reduce clutter and improve readability. When the [allowClustering](../api/maps/markerClusterSettingsModel/#allowclustering) property is set to **true**, the markers within each group are clustered and visually represented as separate clusters. As users zoom in, the clusters expand to reveal individual markers, enabling more detailed exploration. Clusters can also be expanded manually by setting the [allowClusterExpand](../api/maps/markerClusterSettingsModel/#allowclusterexpand) property to **true**. The appearance of the clusters and their expansion behavior can be customized using the `clusterSettings` property, similar to the [markerClusterSettings](../api/maps/layerSettingsModel/#markerclustersettings) property, as explained in the sections above.
+
+>When the `clusterSettings` property is enabled for an individual marker group, the `markerClusterSettings` property within the layers becomes ineffective.
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/maps/marker-clusters-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/maps/marker-clusters-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/maps/marker-clusters-cs1" %}
 
 ## Tooltip for marker
 

@@ -208,7 +208,7 @@ Here is an example of using [`toolbarTemplate`](https://ej2.syncfusion.com/javas
 {% previewsample "page.domainurl/code-snippet/image-editor/toolbar-template-cs1" %}
 {% endif %}
 
-## Customize Contextual Toolbar
+## Customize contextual toolbar
 
 The [`toolbarUpdating`](https://ej2.syncfusion.com/documentation/api/image-editor/#toolbarupdating) event is triggered when inserting or selecting annotations, which opens the contextual toolbar in the Image Editor. Within this event, the [`toolbarItems`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/toolbarEventArgs/#toolbaritems) property in the [`ToolbarEventArgs`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/toolbarEventArgs/) is utilized to add or remove contextual toolbar items.
 

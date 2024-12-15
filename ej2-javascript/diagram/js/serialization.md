@@ -42,7 +42,7 @@ The diagram can also be saved as raster or vector image files. For more informat
 
 ## Load
 
-The diagram can be loaded from serialized string data using the [`loadDiagram`](../api/diagram#loadDiagram) method. The saved string should be passed as the parameter of the loadDiagram method. The following code illustrates how to load the diagram from serialized string data:
+The diagram can be loaded from serialized string data using the [`loadDiagram`](../api/diagram/#loaddiagram) method. The saved string should be passed as the parameter of the loadDiagram method. The following code illustrates how to load the diagram from serialized string data:
 
 ```javascript
 /*
@@ -78,7 +78,7 @@ var diagram = new ej.diagrams.Diagram({
 
 The JSON files can be uploaded using the uploader component, where they are parsed to extract the JSON data they contain. To achieve this, configure the uploader component with the saveUrl property to receive uploaded files and store them on the server. Similarly, use the removeUrl property to handle file removal operations on the server.
 
-When a JSON file is uploaded, it undergoes parsing to extract its JSON data. This data is then loaded into the diagram using the [`loadDiagram`](../api/diagram#loadDiagram) method.
+When a JSON file is uploaded, it undergoes parsing to extract its JSON data. This data is then loaded into the diagram using the [`loadDiagram`](../api/diagram/#loaddiagram) method.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

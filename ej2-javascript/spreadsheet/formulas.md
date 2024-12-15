@@ -167,6 +167,104 @@ The following code example shows the usage of named ranges support.
 {% previewsample "page.domainurl/code-snippet/spreadsheet/defined-name-cs1" %}
 {% endif %}
 
+## Calculation Mode
+
+The Spreadsheet provides a `Calculation Mode` feature like the calculation options in online Excel. This feature allows you to control when and how formulas are recalculated in the spreadsheet. The available modes are:
+
+* `Automatic`: Formulas are recalculated instantly whenever a change occurs in the dependent cells.
+* `Manual`: Formulas are recalculated only when triggered explicitly by the user using options like `Calculate Sheet` or `Calculate Workbook`.
+
+{% if page.publishingplatform == "typescript" %}
+
+You can configure the calculate mode using the [`calculationMode`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#calculationmode) property of the Spreadsheet. These modes offer flexibility to balance real-time updates and performance optimization.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+You can configure the calculate mode using the [`calculationMode`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#calculationmode) property of the Spreadsheet. These modes offer flexibility to balance real-time updates and performance optimization.
+
+{% endif %}
+
+### Automatic Mode
+
+In Automatic Mode, formulas are recalculated instantly whenever a dependent cell is modified. This mode is perfect for scenarios where real-time updates are essential, ensuring that users see the latest results without additional actions.
+
+{% if page.publishingplatform == "typescript" %}
+
+For example, consider a spreadsheet where cell `C1` contains the formula `=A1+B1`. When the value in `A1` or `B1` changes, `C1` updates immediately without requiring any user intervention. You can enable this mode by setting the [`calculationMode`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#calculationmode) property to `Automatic`.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+For example, consider a spreadsheet where cell `C1` contains the formula `=A1+B1`. When the value in `A1` or `B1` changes, `C1` updates immediately without requiring any user intervention. You can enable this mode by setting the [`calculationMode`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#calculationmode) property to `Automatic`.
+
+{% endif %}
+
+The following code example demonstrates how to set the Automatic calculation mode in a Spreadsheet.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/spreadsheet/calculation-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/spreadsheet/calculation-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/spreadsheet/calculation-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/spreadsheet/calculation-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/spreadsheet/calculation-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/spreadsheet/calculation-cs1" %}
+{% endif %}
+
+### Manual Mode
+
+In Manual Mode, formulas are not recalculated automatically when cell values are modified. Instead, recalculations must be triggered explicitly. This mode is ideal for scenarios where performance optimization is a priority, such as working with large datasets or computationally intensive formulas.
+
+For example, imagine a spreadsheet where cell `C1` contains the formula `=A1+B1`. When the value in `A1` or `B1` changes, the value in `C1` will not update automatically. Instead, the recalculation must be initiated manually using either the `Calculate Sheet` or `Calculate Workbook` option. To manually initiate recalculation, the Spreadsheet provides two options:
+
+* `Calculate Sheet`: Recalculates formulas for the active sheet only.
+* `Calculate Workbook`: Recalculates formulas across all sheets in the workbook.
+
+The following code example demonstrates how to set the Manual calculation mode in a Spreadsheet.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/spreadsheet/calculation-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/spreadsheet/calculation-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/spreadsheet/calculation-cs2" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/spreadsheet/calculation-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/spreadsheet/calculation-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/spreadsheet/calculation-cs2" %}
+{% endif %}
+
 ## Supported Formulas
 
 The following are the list of formulas supported in spreadsheet,

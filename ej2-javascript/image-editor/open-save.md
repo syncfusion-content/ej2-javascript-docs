@@ -17,9 +17,9 @@ The getImageData method is used to get the image as ImageData and this can be lo
 
 ## Supported image formats
 
-The Image Editor control supports three common image formats: PNG, JPEG, and SVG. These formats allow you to work with a wide range of image files within the Image Editor.
+The Image Editor control supports four common image formats: PNG, JPEG, SVG and WEBP. These formats allow you to work with a wide range of image files within the Image Editor.
 
-When it comes to saving the edited image, the default file type is set as PNG. This means that when you save the edited image without specifying a different file type, it will be saved as a PNG file. However, it's important to note that the Image Editor typically provides options or methods to specify a different file type if desired. This allows you to save the edited image in formats other than the default PNG, such as JPEG or SVG, based on your specific requirements or preferences. 
+When it comes to saving the edited image, the default file type is set as PNG. This means that when you save the edited image without specifying a different file type, it will be saved as a PNG file. However, it's important to note that the Image Editor typically provides options or methods to specify a different file type if desired. This allows you to save the edited image in formats other than the default PNG, such as JPEG, SVG or WEBP, based on your specific requirements or preferences. 
 
 ## Open an image
 
@@ -216,7 +216,7 @@ Users can easily open images in the Syncfusion Image Editor by dragging and drop
 {% endif %} 
 
 
-### Add Watermarks while opening an image 
+### Add watermarks while opening an image 
 
 You can utilize the ‘[`fileOpened`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#fileopened)’ event, which triggers once the image is loaded into the image editor. After this event, you can use the ‘[`drawText`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawtext)’ method to add a watermark. This approach allows the watermark to be automatically drawn on the canvas every time an image is opened in the editor, making it useful for handling copyright-related content. 
 
@@ -249,7 +249,7 @@ You can utilize the ‘[`fileOpened`](https://ej2.syncfusion.com/javascript/docu
  
 ## Save as image
 
-The [`export`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#export) method is used to save the modified image as an image, and it accepts a file name and file type as parameters. The file type parameter supports PNG, JPEG, and SVG and the default file type is PNG. It also saves an image by clicking the save button from the toolbar and the supported file types are PNG, JPEG, and SVG. Users are allowed to save an image with a specified file name, file type, and image quality. This enhancement provides more control over the output, ensuring that users can save their work exactly as they need it.
+The [`export`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#export) method is used to save the modified image as an image, and it accepts a file name and file type as parameters. The file type parameter supports PNG, JPEG, SVG, WEBP and the default file type is PNG. It also saves an image by clicking the save button from the toolbar and the supported file types are PNG, JPEG, SVG and WEBP. Users are allowed to save an image with a specified file name, file type, and image quality. This enhancement provides more control over the output, ensuring that users can save their work exactly as they need it.
 
 In the following example, the [`export`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#export) method is used in the button click event.
 
@@ -346,7 +346,7 @@ To save an image as a blob, use the [`getImageData`](https://ej2.syncfusion.com/
 {% previewsample "page.domainurl/code-snippet/image-editor/open-save-cs10" %}
 {% endif %}
 
-### Add Watermarks while saving the image 
+### Add watermarks while saving the image 
 
 User can utilize the ‘[`beforeSave`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#beforesave)’ event, which triggers just before the image is downloaded, to apply a text annotation as a watermark. After the image is downloaded, the ‘[`saved`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#saved)’ event is triggered, allowing you to remove the watermark using the ‘[`deleteShape`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#deleteshape)’ method. This ensures that the watermark is only visible in the downloaded image and not in the editor. 
 
@@ -385,7 +385,7 @@ User can leverage the ‘[`toolbar`](https://ej2.syncfusion.com/javascript/docum
 
 User can make use of the ‘[`beforeSave`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#beforesave)’ event, which triggers just before the image is downloaded, to override the default save option by setting `args.cancel` to true. Afterward, you can utilize the [`getImageData`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getimagedata) method to retrieve the current image data and convert it into a format like `byte[]`, `blob`, or `base64` for further processing. This gives you greater flexibility in handling the image data. 
 
-## Events to handle Save Actions 
+## Events to handle save actions 
 
 The Image Editor provides several events related to opening and saving images. These events offer detailed control over the image handling process. For comprehensive information about these events, including their triggers and usage, please refer to the dedicated section on open and save support. This section will provide you with the specifics needed to effectively utilize these events in your application. 
 

@@ -72,7 +72,7 @@ The following code illustrates how to set the initial horizontal and vertical sp
 
 ## Layout margin
 
-Layout provides support to add some blank space between the layout bounds/viewport and the layout. The [`margin`](../api/diagram/layout) property of the layout allows you to set the blank space.
+Layout provides support to add some blank space between the layout bounds/viewport and the layout. The [`margin`](../api/diagram/layout/#margin) property of the layout allows you to set the blank space.
 
 The following code demonstrates how to set the initial layout margin and how to modify the layout margin dynamically at runtime.
 

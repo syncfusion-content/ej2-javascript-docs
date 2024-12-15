@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Appbar control
+# Getting started in ##Platform_Name## AppBar control
 
 This section explains how to create a simple AppBar and configure its available functionalities in TypeScript using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
@@ -77,7 +77,7 @@ To render AppBar component, need to import navigations and its dependent compone
 
 Open the application in Visual Studio Code and add the Syncfusion JavaScript UI controls.
 
-Add the HTML div tag with its `id` attribute as `appbar` in your `index.html` file to initialize the Appbar.
+Add the HTML div tag with its `id` attribute as `AppBar` in your `index.html` file to initialize the AppBar.
 
 `[src/index.html]`
 
@@ -106,7 +106,7 @@ Add the HTML div tag with its `id` attribute as `appbar` in your `index.html` fi
 {% endhighlight %}
 {% endtabs %}
 
-Import the AppBar component in your `app.ts` file and initialize it with the `#appbar`.
+Import the AppBar component in your `app.ts` file and initialize it with the `#AppBar`.
 
 `[src/app/app.ts]`
 
@@ -140,6 +140,9 @@ The following example shows a basic AppBar component.
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/appbar/getting-started-cs1/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="index.ts" %}
+{% include code-snippet/appbar/getting-started-cs1/index.ts %}
 {% endhighlight %}
 {% endtabs %}
           

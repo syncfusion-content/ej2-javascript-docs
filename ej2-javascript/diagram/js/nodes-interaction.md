@@ -22,7 +22,7 @@ You can simply click on the node to select it and click on diagram canvas to uns
 
 ### To select node programatically
 
-A node can be selected at runtime by using the [`select`](../api/diagram/#select) method and the selection can be cleared in the diagram by using the [`clearSelection`](../api/diagram/#clearSelection) or [`unSelect`](../api/diagram/#unselect) method. The following code explains how to select and clear selection in the diagram.
+A node can be selected at runtime by using the [`select`](../api/diagram/#select) method and the selection can be cleared in the diagram by using the [`clearSelection`](../api/diagram/#clearselection) or [`unSelect`](../api/diagram/#unselect) method. The following code explains how to select and clear selection in the diagram.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -38,7 +38,7 @@ A node can be selected at runtime by using the [`select`](../api/diagram/#select
 |Method | Parameter | Description|
 |----|----|----|
 |[`unSelect`](../api/diagram/#unselect)| NodeModel/ConnectorModel | The object to remove from the selection.|
-|[`clearSelection`](../api/diagram/#clearSelection)| - | Clears all the selection in the diagram.|
+|[`clearSelection`](../api/diagram/#clearselection)| - | Clears all the selection in the diagram.|
 
 ## Drag
 

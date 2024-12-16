@@ -22,7 +22,7 @@ The following properties of the Node are used to represent the state of the node
 
 N> Icon can be created only when the node has outEdges.
 
-To explore the properties of expand and collapse icon, refer to [`expandIcon`](../api/diagram/node#expandIcon-iconshapemodel) and [`collapseIcon`](../api/diagram/node#collapseIcon-iconshapemodel).
+To explore the properties of expand and collapse icon, refer to [`expandIcon`](../api/diagram/node#expandicon) and [`collapseIcon`](../api/diagram/node#collapseicon).
 
 
 ## Customizing expand and collapse icon
@@ -48,13 +48,13 @@ The following code example illustrates how to create an icon of various shapes.
 
 ### Appearance and alignment of icon
 
-Set the borderColor, borderWidth, and background color for an icon using [`borderColor`](../api/diagram/iconShapeModel#borderColor-string), [`borderWidth`](../api/diagram/iconShapeModel#borderWidth-number), and [`fill`](../api/diagram/iconShapeModel#fill-string) properties.
+Set the borderColor, borderWidth, and background color for an icon using [`borderColor`](../api/diagram/iconShapeModel#bordercolor), [`borderWidth`](../api/diagram/iconShapeModel#borderwidth), and [`fill`](../api/diagram/iconShapeModel#fill) properties.
 
-The corner radius can be set using the [`cornerRadius`](../api/diagram/iconShapeModel#cornerRadius-number) property of the icon.
+The corner radius can be set using the [`cornerRadius`](../api/diagram/iconShapeModel#cornerradius) property of the icon.
 
 The icon can be aligned relative to the node boundaries. It has margin, offset, horizontalAlignment, and verticalAlignment settings. It is quite tricky, when all four alignments are used together but gives you more control over alignment.
 
-The [`iconColor`](../api/diagram/iconShapeModel#iconColor-string) property can be used to set the strokeColor of the Icon.
+The [`iconColor`](../api/diagram/iconShapeModel#iconcolor) property can be used to set the strokeColor of the Icon.
 
 The following code example illustrates the customization of icons.
 

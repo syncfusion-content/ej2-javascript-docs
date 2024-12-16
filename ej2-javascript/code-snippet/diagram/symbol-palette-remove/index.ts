@@ -62,13 +62,13 @@ symbolPalette.appendTo('#element');
      * parameter 1 - The ID of the palette where the shape to be removed.
      * parameter 2 - ID of the shape to be removed
      */
-    let id = symbolPalette.palettes[0].symbols[0]?.id;
+    let id = symbolPalette.palettes[0].symbols[0].id;
     symbolPalette.removePaletteItem('basic', id);
   };
 
 (document.getElementById('removeFlowShape') as HTMLInputElement).onclick =
   () => {
-    let id = symbolPalette.palettes[1].symbols[0]?.id;
+    let id = symbolPalette.palettes[1].symbols[0].id;
     /**
      * parameter 1 - The ID of the palette where the shape to be removed.
      * parameter 2 - ID of the shape to be removed

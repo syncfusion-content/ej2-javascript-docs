@@ -30,7 +30,7 @@ N> Note: There should not be any white-spaces in the ID string while setting the
 
 ## Add connectors through connectors collection
 
-The [`sourcePoint`](../api/diagram/connector#sourcepoint-PointModel) and [`targetPoint`](../api/diagram/connector#targetpoint-PointModel) properties of connector allow you to define the end points of a connector.
+The [`sourcePoint`](../api/diagram/connector#sourcepoint) and [`targetPoint`](../api/diagram/connector#targetpoint) properties of connector allow you to define the end points of a connector.
 
 The following code example illustrates how to add a connector through connector collection.
 
@@ -114,7 +114,7 @@ To draw a shape, you have to activate the drawing tool by setting `DrawOnce` or 
         
 {% previewsample "page.domainurl/code-snippet/diagram/connectors-draw" %}
 
-For more information about drawing connectors, refer to [`Draw Connectors`](../api/diagram#drawingObject-ConnectorModel).
+For more information about drawing connectors, refer to [`Draw Connectors`](../api/diagram#drawingobject).
 
 ## Update connector at runtime
 
@@ -154,7 +154,7 @@ The following code example illustrates how to clone a connector
 
 Get Connector defaults helps to define default properties of the connector. It is triggered when the diagram is initialized. In this event, you can customize the connector properties.
 
-The following code example explains how to customize the connector using [`getConnectorDefaults`](..api/diagram/#getconnectordefaults).
+The following code example explains how to customize the connector using [`getConnectorDefaults`](../api/diagram/#getconnectordefaults).
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -171,7 +171,7 @@ The following code example explains how to customize the connector using [`getCo
 
 ### Connection with nodes
 
-* The [`sourceID`](../api/diagram/connector#sourceid-string) and [`targetID`](../api/diagram/connector#targetid-string) properties allow to define the nodes to be connected.
+* The [`sourceID`](../api/diagram/connector#sourceid) and [`targetID`](../api/diagram/connector#targetid) properties allow to define the nodes to be connected.
 
 * The following code example illustrates how to connect two nodes.
 
@@ -208,7 +208,7 @@ var diagram = new Diagram({
 
 ## Connection with ports
 
-The [`sourcePortID`](../api/diagram/connector#sourceportid-string) and [`targetPortID`](../api/diagram/connector#targetportid-string) properties allow to create connections between some specific points of source/target nodes.
+The [`sourcePortID`](../api/diagram/connector#sourceportid) and [`targetPortID`](../api/diagram/connector#targetportid) properties allow to create connections between some specific points of source/target nodes.
 
 The following code example illustrates how to create port to port connections.
 
@@ -223,7 +223,7 @@ The following code example illustrates how to create port to port connections.
         
 {% previewsample "page.domainurl/code-snippet/diagram/connectors-cs5" %}
 
-Similarly, the `sourcePortID` or `targetPortID` can be changed at the runtime by changing the port [`sourcePortID`](../api/diagram/connector#sourceportid-string) or [`targetPortID`](../api/diagram/connector#targetportid-string).
+Similarly, the `sourcePortID` or `targetPortID` can be changed at the runtime by changing the port [`sourcePortID`](../api/diagram/connector#sourceportid) or [`targetPortID`](../api/diagram/connector#targetportid).
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -304,7 +304,7 @@ The following image illustrates how the connector automatically re-routes the se
 
 ![LineRouting GIF](images/lineRouting.GIF.gif)
 
-* In some situations, automatic line routing enabled diagram needs to ignore a specific connector from automatic line routing. So, in this case, auto routing feature can be disabled to the specific connector using the [`constraints`](../api/diagram/connector#constraints-ConnectorConstraints) property of the connector like the following code snippet.
+* In some situations, automatic line routing enabled diagram needs to ignore a specific connector from automatic line routing. So, in this case, auto routing feature can be disabled to the specific connector using the [`constraints`](../api/diagram/connector#constraints) property of the connector like the following code snippet.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

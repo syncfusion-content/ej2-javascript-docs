@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 Orientation, spacings, and alignment of the layout can be customized with a set of properties.
 
-To explore layout properties, refer to [`Layout Properties`](../api/diagram/layout).
+To explore layout properties, refer to [`Layout Properties`](../api/diagram/ayoutModel/#properties).
 
 ## Layout bounds
 
@@ -38,7 +38,7 @@ For more information about bounds, refer to [`bounds`](../api/diagram/layoutMode
 
 ## Layout alignment
 
-The layout can be aligned anywhere over the layout bounds/viewport using the [`horizontalAlignment`](../api/diagram/horizontalAlignment/) and [`verticalAlignment`](../api/diagram/verticalalignment/) properties of the layout.
+The layout can be aligned anywhere over the layout bounds/viewport using the [`horizontalAlignment`](../api/diagram/layoutModel/#horizontalalignment/) and [`verticalAlignment`](../api/diagram/layoutModel/#verticalalignment/) properties of the layout.
 
 The following code illustrates how to align the layout and how to change layout horizontal and vertical alignment at runtime.
 
@@ -73,7 +73,7 @@ The following code illustrates how to set the initial horizontal and vertical sp
 
 ## Layout margin
 
-Layout provides support to add some blank space between the layout bounds/viewport and the layout. The [`margin`](../api/diagram/layout) property of the layout allows you to set the blank space.
+Layout provides support to add some blank space between the layout bounds/viewport and the layout. The [`margin`](../api/diagram/layoutModel/#margin) property of the layout allows you to set the blank space.
 
 The following code demonstrates how to set the initial layout margin and how to modify the layout margin dynamically at runtime.
 

@@ -47,13 +47,15 @@
         }
     </style>
 
+    <script type="text/x-template" id="indicatorTemplate">
+        <div class="indicator" indicator-index="${index}"></div>
+    </script>
+    
     <!--system js reference and configuration-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
-<script type="text/x-template" id="indicatorTemplate">
-    <div class="indicator" indicator-index="${index}"></div>
-  </script>
+
 <body>
     <div id='loader'>LOADING....</div>
     <div id='container'>

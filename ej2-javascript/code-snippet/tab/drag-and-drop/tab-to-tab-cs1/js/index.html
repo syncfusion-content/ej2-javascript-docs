@@ -1,34 +1,48 @@
-<html lang="en"><head><script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
-</head><body>﻿
+<html lang="en">
 
+<head>
+  <title>Essential JS 2 for Tab </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Essential JS 2 for Tab UI Control">
+  <meta name="author" content="Syncfusion">
+  <link href="https://cdn.syncfusion.com/ej2/20.3.56/material.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+  <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+  <style>
+    #firstTab .e-content .e-item,
+    #secondTab .e-content .e-item {
+        font-size: 12px;
+        margin: 10px;
+        text-align: justify;
+    }
 
+    #firstTab {
+        margin-bottom: 40px;
+    }
 
-    <title>Essential JS 2 for Tab </title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Essential JS 2 for Tab UI Control">
-    <meta name="author" content="Syncfusion">
-    <link href="https://cdn.syncfusion.com/ej2/20.3.56/material.css" rel="stylesheet">
-    <link href="index.css" rel="stylesheet">
-    
-    
+    #secondTab {
+        margin-top: 40px;
+    }
+</style>
+</head>
 
-
-
-    
-    <div id="container" style="height: auto">
-        <div id="firstTab" style="height:auto">
-        </div>
-        <div id="secondTab" style="height:auto">
-        </div>
+<body>
+  <div id="container" style="height: auto">
+    <div id="firstTab" style="height:auto">
     </div>
+    <div id="secondTab" style="height:auto">
+    </div>
+  </div>
 
+  <script>
+    var ele = document.getElementById('container');
+    if (ele) {
+      ele.style.visibility = "visible";
+    }   
+  </script>
+  <script src="index.js" type="text/javascript"></script>
 
-<script>
-var ele = document.getElementById('container');
-if(ele) {
-  ele.style.visibility = "visible";
-}   
-      </script>
-<script src="index.js" type="text/javascript"></script>
-</body></html>
+</body>
+
+</html>

@@ -23,7 +23,7 @@ To set up row virtualization, you need to define the [enableVirtualization](../.
 
 The number of records displayed in the Grid is implicitly determined by the height of the content area. Additionally, you have an option to explicitly define the visible number of records using the [pageSettings->pageSize](../../api/grid/pageSettingsModel/#pagesize) property. The loaded data will be cached and reused when needed in the future.
 
-The following example enable row virutalization using `enableVirtualization` property.
+The following example enable row virtualization using `enableVirtualization` property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -118,7 +118,8 @@ The following example enable using `enableColumnVirtualization` property.
 
 * While using column virtual scrolling, column width should be in pixel. Percentage values are not accepted.
 * Selected column details are only retained within the viewport. When the next set of columns is loaded, the selection for previously visible columns is lost.
-* The cell selection is not supported for column virtual scrolling
+* The cell selection is not supported for column virtual scrolling.
+* The **Ctrl + Home** and **Ctrl + End** keys are not supported when using column virtual scrolling.
 * The following features are compatible with column virtualization and work within the viewport:
    1. Column resizing
    2. Column reordering

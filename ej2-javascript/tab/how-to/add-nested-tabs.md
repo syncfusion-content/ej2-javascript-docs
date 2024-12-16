@@ -22,6 +22,9 @@ Tab supports to render the nested level of Tabs by using `content` property. You
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/tab/tab-cs1/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/tab/tab-cs1/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/tab/tab-cs1" %}

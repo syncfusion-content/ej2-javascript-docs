@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Export in ##Platform_Name## Diagram control
 
-Diagram provides support to export its content as image/svg files. The [`exportDiagram`](../api/diagram#exportDiagram) method of diagram helps to export the diagram. The following code illustrates how to export the diagram as image.
+Diagram provides support to export its content as image/svg files. The [`exportDiagram`](../api/diagram#exportdiagram) method of diagram helps to export the diagram. The following code illustrates how to export the diagram as image.
 
 N> To Export diagram, you need to inject `PrintAndExport` in the diagram.
 
@@ -48,11 +48,11 @@ The diagram provides support to export the desired region of the diagram to vari
 
 ### File Name
 
-[`FileName`](../api/diagram/iExportOptions#fileName-string) is the name of the file to be downloaded. By default, the file name is set to **Diagram**.
+[`FileName`](../api/diagram/iExportOptions#filename) is the name of the file to be downloaded. By default, the file name is set to **Diagram**.
 
 ### Format
 
-[`Format`](../api/diagram/iExportOptions#format-fileformat) specifies the type/format of the exported file. By default, the diagram is exported in .jpg format. You can export the diagram to the following formats:
+[`Format`](../api/diagram/iExportOptions#format) specifies the type/format of the exported file. By default, the diagram is exported in .jpg format. You can export the diagram to the following formats:
 
 * JPG
 * PNG
@@ -73,7 +73,7 @@ The diagram provides support to export the desired region of the diagram to vari
 
 ### Margin
 
-The [`margin`](../api/diagram/iExportOptions#margin-marginmodel) specifies the amount of space that has to be left around the diagram while exporting.
+The [`margin`](../api/diagram/iExportOptions#margin) specifies the amount of space that has to be left around the diagram while exporting.
 
 The following code example demonstrates how to set margin for the exported image.
 
@@ -90,7 +90,7 @@ The following code example demonstrates how to set margin for the exported image
 
 ### Mode
 
-The [`mode`](../api/diagram/iExportOptions#mode-exportmodes) option specifies whether to export the diagram as an image or to return the base64 data of the diagram. The available export modes are:
+The [`mode`](../api/diagram/iExportOptions#mode) option specifies whether to export the diagram as an image or to return the base64 data of the diagram. The available export modes are:
 
 * Download: Exports and downloads the diagram as an image or SVG file.
 * Data: Returns a base64 string representation of the diagram.
@@ -185,7 +185,7 @@ To get the html diagram content, the [`getDiagramContent`](../api/diagram/#getdi
 
 ### Export diagram with stretch option
 
-Diagram provides support to export the diagram as image for [`stretch`](../api/diagram/iExportOptions#stretch-stretch) option. The exported images will be clearer but larger in file size.
+Diagram provides support to export the diagram as image for [`stretch`](../api/diagram/iExportOptions#stretch) option. The exported images will be clearer but larger in file size.
 
 The following code example illustrates how to export the region occupied by the diagram elements.
 

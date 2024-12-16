@@ -94,7 +94,7 @@ let selectedObjects = diagram.selectedItems.selectedObjects;
 
 ### Toggle selection
 
-The [`canToggleSelection`](../api/diagram/selectorModel#canToggleSelection) property determines whether the selection state of a diagram element should toggle with a mouse click at runtime. By default, this property is set to false. In the following example, the node can be selected with the first click and unselected with the second click.
+The [`canToggleSelection`](../api/diagram/selectorModel#cantoggleselection) property determines whether the selection state of a diagram element should toggle with a mouse click at runtime. By default, this property is set to false. In the following example, the node can be selected with the first click and unselected with the second click.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -109,7 +109,7 @@ The [`canToggleSelection`](../api/diagram/selectorModel#canToggleSelection) prop
 
 ### Select entire elements in diagram programmatically
 
-The [`selectAll`](../api/diagram#selectAll) method of diagram is used to select all the elements such as nodes/connectors in the diagram. Refer to the following code snippet.
+The [`selectAll`](../api/diagram#selectall) method of diagram is used to select all the elements such as nodes/connectors in the diagram. Refer to the following code snippet.
 
 ```ts
 //Selects all the nodes and connectors in diagram
@@ -122,14 +122,14 @@ You can also use the CTRL+A keys to select all nodes and connectors in the diagr
 ## Drag
 
 You can drag an object by clicking and dragging it. When multiple elements are selected, dragging any one of them moves all selected elements together.
-As you drag elements within the diagram, the [`positionChange`](../api/diagram/idraggingeventargs/) event is triggered, providing opportunities to customize the dragged elements.
+As you drag elements within the diagram, the [`positionChange`](../api/diagram/iDraggingEventArgs/) event is triggered, providing opportunities to customize the dragged elements.
 
 
 ## Resize
 
 The selector in the diagram is designed with eight resizing handles, commonly referred to as thumbs. These handles allow users to adjust the size of selected items by clicking and dragging them. When resizing, dragging any handle modifies the dimensions of the selected elements accordingly. Notably, when dragging one corner handle, the opposite corner remains fixed to specific alignment of the selected item.
 
-During the resizing process, the diagram triggers the [`sizeChange`](../api/diagram/isizechangeeventargs/) event, allowing customization based on the size of the element.
+During the resizing process, the diagram triggers the [`sizeChange`](../api/diagram/iSizeChangeEventArgs/) event, allowing customization based on the size of the element.
 
 N>  While dragging and resizing, the objects are snapped towards the nearest objects to make better alignments.
 

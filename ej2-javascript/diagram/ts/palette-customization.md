@@ -15,13 +15,13 @@ domainurl: ##DomainURL##
 
 Palettes can be annotated with its header texts.
 
-The [`title`](../api/diagram/palette/#title-string) property is displayed as the header text of the palette.
+The [`title`](../api/diagram/palette/#title) property is displayed as the header text of the palette.
 
-The [`expanded`](../api/diagram/palette/#expanded-boolean) property allows the palette items to be expanded or collapsed.
+The [`expanded`](../api/diagram/palette/#expanded) property allows the palette items to be expanded or collapsed.
 
-The [`height`](../api/diagram/palette/#height-number) property sets the height of the symbol group / palette.
+The [`height`](../api/diagram/palette/#height) property sets the height of the symbol group / palette.
 
-The [`iconCss`](../api/diagram/palette/#iconCss-string) property sets the icon to be rendered with the title.
+The [`iconCss`](../api/diagram/palette/#iconCss) property sets the icon to be rendered with the title.
 
 The following example demonstrates how to customize the palette properties.
 

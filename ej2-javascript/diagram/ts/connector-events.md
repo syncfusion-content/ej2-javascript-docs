@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-## Events
+# Events in ##Platform_Name## Diagram control
 
 Diagram provides some events support for connectors that triggers when interacting with the connector.
 
@@ -31,7 +31,7 @@ Triggers when the connector is clicked. The following code example explains how 
 ## Selection change event
 
 When selecting/unselecting the connector, the selection change event will be triggered.
-The following code example explains how to get the [`selection change`](../api/diagram/iselectionchangeeventargs/) event in the diagram.
+The following code example explains how to get the [`selection change`](../api/diagram/iSelectionChangeEventArgs/) event in the diagram.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -104,7 +104,7 @@ The following code example explains how to get the [`connection change`](../api/
 ## Source Point change event
 
 Triggers when the connector's source point is changed.
-The following code example explains how to get the [`source Point change`](../api/diagram/iendchangeeventargs/) event in the diagram.
+The following code example explains how to get the [`source Point change`](../api/diagram/iEndChangeEventArgs/) event in the diagram.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -164,7 +164,7 @@ targetPointChange: function (args: IEndChangeEventArgs) {
 ## Segment Collection Change event
 
 Triggers when the connector's segments added or removed at runtime.
-The following code example explains how to get the [`segment collection change`](../api/diagram/isegmentcollectionchangeeventargs/) event in the diagram. 
+The following code example explains how to get the [`segment collection change`](../api/diagram/iSegmentCollectionChangeEventArgs/) event in the diagram. 
 
 Use `CTRL+Shift+Click` on connector to add/remove segments.
 
@@ -182,7 +182,7 @@ Use `CTRL+Shift+Click` on connector to add/remove segments.
 ## Segment Change event
 
 Triggers when the connector's segments were adjusted or edited.
-The following code example explains how to get the [`segment change`](../api/diagram/isegmentchangeeventargs/) event in the diagram.
+The following code example explains how to get the [`segment change`](../api/diagram/iSegmentChangeEventArgs/) event in the diagram.
 
 
 {% tabs %}

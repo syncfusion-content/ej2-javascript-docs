@@ -4,6 +4,7 @@
 import { Tab } from '@syncfusion/ej2-navigations';
 
     let tabObj: Tab = new Tab({
+        width: 500,
         scrollStep: 50,
         items: [
             {

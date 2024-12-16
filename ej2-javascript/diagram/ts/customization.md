@@ -34,7 +34,7 @@ N> The value we set in the getNodeDefaults has the higher priority in rendering.
 
 ### Apply style to the node
 
-The appearance of a node can be customized by changing its [`fill`](../api/diagram/shapeStyleModel#fill-string) color, [`strokeDashArray`](../api/diagram/shapeStyleModel#strokeDashArray-string), ['strokeWidth'](../api/diagram/shapeStyleModel#strokeWidth-number), ['strokeColor'](../api/diagram/shapeStyleModel#strokeColor-string) and [`opacity`](../api/diagram/shapeStyleModel#strokeColor-string). The [`visible`](../api/diagram/node#visible-boolean) property of the node enables or disables the visibility of the node.
+The appearance of a node can be customized by changing its [`fill`](../api/diagram/shapeStyleModel#fill) color, [`strokeDashArray`](../api/diagram/shapeStyleModel#strokedasharray), [`strokeWidth`](../api/diagram/shapeStyleModel#strokewidth), [`strokeColor`](../api/diagram/shapeStyleModel#strokecolor) and [`opacity`](../api/diagram/shapeStyleModel#strokecolor). The [`visible`](../api/diagram/node#visible) property of the node enables or disables the visibility of the node.
 
 The following code illustrates how to customize the appearance of the shape.
 
@@ -51,7 +51,7 @@ The following code illustrates how to customize the appearance of the shape.
 
 ### Apply gradient style to node
 
-The [`gradient`](../api/diagram/shapeStyleModel#gradient-gradientmodel) property of the node allows you to define and apply the gradient effect to that node.
+The [`gradient`](../api/diagram/shapeStyleModel#gradient) property of the node allows you to define and apply the gradient effect to that node.
 
 The gradient stop property defines the color and a position, where the previous color transition ends and a new color transition starts.
 
@@ -65,7 +65,7 @@ There are two types of gradients as follows:
 
 #### Linear gradient
 
-* [`LinearGradient`](../api/diagram/shapeStyleModel#linearGradient-lineargradientmodel) defines a smooth transition between a set of colors (so-called stops) on a line.
+* [`LinearGradient`](../api/diagram/shapeStyleModel#gradient-lineargradientmodel) defines a smooth transition between a set of colors (so-called stops) on a line.
 
 * A linear gradient’s x1, y1, x2, y2 properties are used to define the position (relative to the node) of the rectangular region that needs to be painted.
 
@@ -82,7 +82,7 @@ There are two types of gradients as follows:
 
 #### Radial gradient
 
-* [`RadialGradient`](../api/diagram/shapeStyleModel#radialGradient-radialgradientmodel) defines a smooth transition between stops on a circle.
+* [`RadialGradient`](../api/diagram/shapeStyleModel#gradient-radialgradientmodel) defines a smooth transition between stops on a circle.
 
 * A radial gradient’s cx, cy, fx, fy properties are used to define the position (relative to the node) of the outermost or the innermost circle of the radial gradient.
 
@@ -120,7 +120,7 @@ Use the following CSS to customize the style of main node on multiple selection.
 
 ## Apply rotate angle and corner radius to the node
 
-- `Rotate angle`: The [`rotateAngle`](../api/diagram/node#rotateAngle-number) property allows you to rotate nodes within the diagram. It's particularly useful when you want to represent nodes from different perspectives or angles.
+- `Rotate angle`: The [`rotateAngle`](../api/diagram/node#rotateangle) property allows you to rotate nodes within the diagram. It's particularly useful when you want to represent nodes from different perspectives or angles.
 
 - `Corner radius`: The [`cornerRadius`](../api/diagram/basicShapeModel/#cornerradius) property allows you to round the corners of nodes in the diagram.
 It adds a visual styling effect to the nodes, making them appear softer or more polished.
@@ -141,7 +141,7 @@ The following code shows how to set the rotate angle and corner radius for the n
 
 ## Apply shadow effect to node
 
-Diagram provides support to add [`shadow`](../api/diagram/node#shadow-shadowmodel) effect to a node that is disabled, by default. It can be enabled with the constraints property of the node. The following code illustrates how to drop shadow.
+Diagram provides support to add [`shadow`](../api/diagram/node#shadow) effect to a node that is disabled, by default. It can be enabled with the constraints property of the node. The following code illustrates how to drop shadow.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -196,7 +196,7 @@ var nodes = [
 
 ## Constraints
 
-The [`constraints`](../api/diagram/node#constraints-nodeconstraints) property of the node allows you to enable/disable certain behaviors of the node. For more information about node constraints refer to the [`Node Constraints`](./constraints)
+The [`constraints`](../api/diagram/node#constraints) property of the node allows you to enable/disable certain behaviors of the node. For more information about node constraints refer to the [`Node Constraints`](./constraints)
 
 ## Stack order
 

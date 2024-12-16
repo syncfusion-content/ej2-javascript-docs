@@ -17,7 +17,7 @@ To know more about Bitwise operators, refer to [`Bitwise Operations`](#bitwise-o
 
 ## Diagram constraints
 
-[`Diagram constraints`](../api/diagram/diagramconstraints/) allows you to enable or disable the following behaviors:
+[`Diagram constraints`](../api/diagram/diagramConstraints/) allows you to enable or disable the following behaviors:
 
 The following table displays the list of all diagram constraints.
 

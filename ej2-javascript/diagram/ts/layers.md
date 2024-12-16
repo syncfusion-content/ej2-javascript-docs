@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 **Layer** organizes related shapes within a diagram control as named categories. Assigning shapes to different layers enables selective viewing, removal, and locking of distinct shape categories.
 
-In a diagram, [Layers](../api/diagram/layermodel/) facilitate the modification of properties for all shapes assigned to a specific layer. Key properties that can be configured include:
+In a diagram, [Layers](../api/diagram/layer/) facilitate the modification of properties for all shapes assigned to a specific layer. Key properties that can be configured include:
 
 * Objects
 * Visible

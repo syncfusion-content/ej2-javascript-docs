@@ -226,7 +226,7 @@ Create and add a `node` (JSON data) with specific position, size.
 Syncfusion® diagram control provides support to render many built-in shapes in diagram.
 Please refer to [`Shapes`](../api/diagram/shapes/) to know about built-in Shapes.
 
-* The appearance of a node can be customized by changing its [`fill`](../api/diagram/shapeStyleModel/#fill-string) color, [`strokeColor`](../api/diagram/shapeStyleModel/#strokecolor-string), [`strokeWidth`](../api/diagram/shapeStyleModel/#strokewidth-number), [`borderColor`](../api/diagram/node/#borderColor-string), [`borderWidth`](../api/diagram/node/#borderWidth-number), [`strokeDashArray`](../api/diagram/shapeStyleModel/#strokeDashArray-number),  [`opacity`](../api/diagram/shapeStyleModel/#opacity-number), and [`shadow`](../api/diagram/shapeStyleModel/#shadow-number).
+* The appearance of a node can be customized by changing its [`fill`](../api/diagram/shapeStyleModel/#fill) color, [`strokeColor`](../api/diagram/shapeStyleModel/#strokecolor), [`strokeWidth`](../api/diagram/shapeStyleModel/#strokewidth), [`borderColor`](../api/diagram/node/#bordercolor), [`borderWidth`](../api/diagram/node/#borderwidth), [`strokeDashArray`](../api/diagram/shapeStyleModel/#strokedasharray),  [`opacity`](../api/diagram/shapeStyleModel/#opacity), and [`shadow`](../api/diagram/shapeStyleModel/#shadow).
 
 {% if page.publishingplatform == "typescript" %}
 

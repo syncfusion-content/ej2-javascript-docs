@@ -2,6 +2,7 @@ ej.base.enableRipple(true);
 
 //Initialize Tab component
 var tabObj = new ej.navigations.Tab({
+    width: 500,
     scrollStep: 50,
     items: [
             {

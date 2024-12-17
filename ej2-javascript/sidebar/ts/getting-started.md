@@ -74,8 +74,8 @@ To render the Sidebar component, need to import sidebar and its dependent compon
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
 
-@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-navigations/styles/material.css";
+@import "../../node_modules/@syncfusion/ej2-base/styles/material.css";
+@import "../../node_modules/@syncfusion/ej2-navigations/styles/material.css";
   
 {% endhighlight %}
 {% endtabs %}
@@ -207,7 +207,7 @@ In the following sample, the position of the Sidebar can be changed using the ra
 
 ## Animate
 
-Animation transitions can be set while expanding or collapsing the Sidebar using the `animate` property. By default , `animate` property is set to true. `enableRTL` will display the sidebar in the right-to-left direction.
+Animation transitions can be set while expanding or collapsing the Sidebar using the `animate` property. By default , `animate` property is set to true.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

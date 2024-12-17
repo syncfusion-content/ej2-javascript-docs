@@ -25,7 +25,7 @@ let chart: Chart = new Chart({
     },
     series: [
         {
-            dataSource: chartData, name: 'John', xName: 'x',
+            dataSource: trackData, name: 'John', xName: 'x',
             marker: { visible: true },
             type: 'Line', width: 2,
             yName: 'y'

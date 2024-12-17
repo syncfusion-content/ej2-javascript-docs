@@ -58,17 +58,17 @@ Use following CSS to customize the accordion items header icons.
 
 .e-accordion .e-acrdn-item .e-acrdn-header .e-acrdn-header-icon {
          display: inline-block;
-         padding: 0 10px 0 0 !important;
+         padding: 0 10px 0 0;
 }
 
 ```
 
-Use following CSS to customize the selected accordion item content icons.
+Use following CSS to customize the selected accordion item header icons.
 
 ```css
 
-.e-accordion .e-acrdn-item.e-select .e-acrdn-panel .e-acrdn-content .e-content-icon {
-    color: rgba(0, 0, 0, 0.54) !important;
+.e-accordion .e-acrdn-item.e-select.e-selected.e-expand-state>.e-acrdn-header .e-acrdn-header-icon {
+    color: #008000;
 }
 
 ```

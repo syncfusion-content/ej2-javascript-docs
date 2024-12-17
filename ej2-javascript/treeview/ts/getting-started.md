@@ -207,6 +207,9 @@ npm start
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/treeview/getting-started-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/treeview/getting-started-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/treeview/getting-started-cs1" %}

@@ -163,6 +163,7 @@ Import the Scheduler component to your `app.ts` file as shown below, and initial
 import { Schedule, Day, Week, WorkWeek, Month, Agenda } from '@syncfusion/ej2-schedule';
 
 Schedule.Inject(Day, Week, WorkWeek, Month, Agenda);
+
 let scheduleObj: Schedule = new Schedule();
 scheduleObj.appendTo('#Schedule');
 ```
@@ -241,7 +242,6 @@ Schedule.Inject(Day, Week, WorkWeek, Month, Agenda);
 let scheduleObj: Schedule = new Schedule({
     height: '550px',
     selectedDate: new Date(2018, 1, 15)
-    }
 });
 scheduleObj.appendTo('#Schedule');
 ```
@@ -271,7 +271,6 @@ let scheduleObj: Schedule = new Schedule({
     height: '550px',
     selectedDate: new Date(2018, 1, 15),
     currentView: 'Month'
-    }
 });
 scheduleObj.appendTo('#Schedule');
 ```
@@ -281,12 +280,6 @@ scheduleObj.appendTo('#Schedule');
 Each individual Scheduler views can be customized with its own options such as setting different start and end hour on Week and Work Week views, whereas hiding the weekend days on Month view alone.
 This can be achieved by defining views property to accept the array of object type, where each object depicts the individual view customization.
 
-Now, run the application in the browser using the following command.
-
-```
-npm start
-```
-
 The output will display the Scheduler with the specified view configuration.
 
 {% tabs %}
@@ -295,6 +288,9 @@ The output will display the Scheduler with the specified view configuration.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/views-model-cs2/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/views-model-cs2/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
           

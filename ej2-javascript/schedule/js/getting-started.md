@@ -287,7 +287,6 @@ Scheduler usually displays the system date as its current date. To change the cu
 var scheduleObj = new ej.schedule.Schedule({
     height: '550px',
     selectedDate: new Date(2018, 1, 15)
-    }
 });
 scheduleObj.appendTo('#Schedule');
 ```
@@ -337,6 +336,9 @@ The output will display the Scheduler with the specified view configuration.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/views-model-cs1/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="datasource.js" %}
+{% include code-snippet/schedule/views-model-cs1/datasource.js %}
 {% endhighlight %}
 {% endtabs %}
         

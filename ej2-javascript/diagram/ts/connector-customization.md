@@ -15,11 +15,11 @@ Diagram allows you to customize the connector appearances. The following topics 
 
 ## Decorator
 
-* Starting and ending points of a connector can be decorated with some customizable shapes like arrows, circles, diamond, or path. The connection end points can be decorated with the [`sourceDecorator`](../api/diagram/connector#sourcedecorator-DecoratorModel) and [`targetDecorator`](../api/diagram/connector#targetdecorator-DecoratorModel) properties of the connector.
+* Starting and ending points of a connector can be decorated with some customizable shapes like arrows, circles, diamond, or path. The connection end points can be decorated with the [`sourceDecorator`](../api/diagram/connector#sourcedecorator) and [`targetDecorator`](../api/diagram/connector#targetdecorator) properties of the connector.
 
 * The [`shape`](../api/diagram/decoratorShapes) property of `sourceDecorator` allows to define the shape of the decorators. Similarly, the [shape](../api/diagram/decoratorShapes) property of `targetDecorator` allows to define the shape of the decorators.
 
-* To create custom shape for source decorator, use [`pathData`](../api/diagram/decorator#pathdata-string) property. Similarly, to create custom shape for target decorator, use [`pathData`](../api/diagram/decorator#pathData-string) property.
+* To create custom shape for source decorator, use [`pathData`](../api/diagram/decorator#pathdata) property. Similarly, to create custom shape for target decorator, use [`pathData`](../api/diagram/decorator#pathdata) property.
 
 * The following code example illustrates how to create decorators of various shapes.
 
@@ -36,9 +36,9 @@ Diagram allows you to customize the connector appearances. The following topics 
 
 ### Customize the decorator appearance
 
-* The source decorator’s [`strokeColor`](../api/diagram/strokeStyle#strokecolor-string), [`strokeWidth`](../api/diagram/strokeStyle#strokewidth-number), and [`strokeDashArray`](../api/diagram/strokeStyle#strokedasharray-string) properties are used to customize the color, width, and appearance of the decorator.
+* The source decorator’s [`strokeColor`](../api/diagram/strokeStyle#strokecolor), [`strokeWidth`](../api/diagram/strokeStyle#strokewidth), and [`strokeDashArray`](../api/diagram/strokeStyle#strokedasharray) properties are used to customize the color, width, and appearance of the decorator.
 
-* To set the border stroke color, stroke width, and stroke dash array for the target decorator, use [`strokeColor`](../api/diagram/strokeStyle#strokecolor-string), [`strokeWidth`](../api/diagram/strokeStyle#strokewidth-number), and [`strokeDashArray`](../api/diagram/strokeStyle#strokedasharray-string).
+* To set the border stroke color, stroke width, and stroke dash array for the target decorator, use [`strokeColor`](../api/diagram/strokeStyle#strokecolor), [`strokeWidth`](../api/diagram/strokeStyle#strokewidth), and [`strokeDashArray`](../api/diagram/strokeStyle#strokedasharray).
 
 * To set the size for source and target decorator, use width and height property.
 
@@ -97,7 +97,7 @@ Padding is used to leave the space between the Connector's end point and the obj
 
 ## Bridging
 
-Line bridging creates a bridge for lines to smartly cross over the other lines, at points of intersection. By default, [`bridgeDirection`](../api/diagram#bridgeDirection-BridgeDirection) is set to top. Depending upon the direction given bridging direction appears.
+Line bridging creates a bridge for lines to smartly cross over the other lines, at points of intersection. By default, [`bridgeDirection`](../api/diagram#bridgedirection) is set to top. Depending upon the direction given bridging direction appears.
 Bridging can be enabled/disabled either with the `connector.constraints` or `diagram.constraints`. The following code example illustrates how to enable line bridging.
 
 {% tabs %}
@@ -112,7 +112,7 @@ Bridging can be enabled/disabled either with the `connector.constraints` or `dia
 {% previewsample "page.domainurl/code-snippet/diagram/connectors-cs21" %}
 N> You need to inject connector bridging module into the diagram.
 
-The [`bridgeSpace`](../api/diagram/connector#bridgespace-number) property of connectors can be used to define the width for line bridging.
+The [`bridgeSpace`](../api/diagram/connector#bridgespace) property of connectors can be used to define the width for line bridging.
 
 Limitation: Bezier segments do not support bridging.
 
@@ -136,7 +136,7 @@ Limitation: Bezier segments do not support bridging.
 
 ## Corner radius
 
-Corner radius allows to create connectors with rounded corners. The radius of the rounded corner is set with the [`cornerRadius`](../api/diagram/connector#cornerradius-number) property.
+Corner radius allows to create connectors with rounded corners. The radius of the rounded corner is set with the [`cornerRadius`](../api/diagram/connector#cornerradius) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -151,9 +151,9 @@ Corner radius allows to create connectors with rounded corners. The radius of th
 
 ## Connector Appearance
 
-* The connector’s [`strokeWidth`](../api/diagram/strokeStyle#strokewidth-number), [`strokeColor`](../api/diagram/strokeStyle#strokecolor-string), [`strokeDashArray`](../api/diagram/strokeStyle#strokedasharray-string), and [`opacity`](../api/diagram/strokeStyle#opacity-number) properties are used to customize the appearance of the connector segments.
+* The connector’s [`strokeWidth`](../api/diagram/strokeStyle#strokewidth), [`strokeColor`](../api/diagram/strokeStyle#strokecolor), [`strokeDashArray`](../api/diagram/strokeStyle#strokedasharray), and [`opacity`](../api/diagram/strokeStyle#opacity) properties are used to customize the appearance of the connector segments.
 
-* The [`visible`](../api/diagram/connector#visible-boolean) property of the connector enables or disables the visibility of connector.
+* The [`visible`](../api/diagram/connector#visible) property of the connector enables or disables the visibility of connector.
 
 * Default values for all the `connectors` can be set using the `getConnectorDefaults` properties. For example, if all connectors have the same type or having the same property then such properties can be moved into `getConnectorDefaults`.
 
@@ -174,7 +174,7 @@ The following code example illustrates how to customize the segment appearance.
 
 ## Connector constraints
 
-* The [`constraints`](../api/diagram/connector#constraints-ConnectorConstraints) property of connector allows to enable/disable certain features of connectors.
+* The [`constraints`](../api/diagram/connector#constraints) property of connector allows to enable/disable certain features of connectors.
 
 * To enable or disable the constraints, refer [`constraints`](../api/diagram/connectorConstraints).
 
@@ -193,7 +193,7 @@ The following code illustrates how to disable selection.
 
 ## Add info for connector
 
-The [`addInfo`](../api/diagram/connector#addinfo-Object) property of connectors allow you to maintain additional information to the connectors.
+The [`addInfo`](../api/diagram/connector#addinfo) property of connectors allow you to maintain additional information to the connectors.
 
 ``` Javascript
 
@@ -210,7 +210,7 @@ var connectors = {
 
 ## ZIndex for connector
 
-The connectors [`zIndex`](../api/diagram/connector#zindex-number) property specifies the stack order of the connector. A connector with greater stack order is always in front of a connector with a lower stack order.
+The connectors [`zIndex`](../api/diagram/connector#zindex) property specifies the stack order of the connector. A connector with greater stack order is always in front of a connector with a lower stack order.
 
 The following code illustrates how to render connector based on the stack order.
 
@@ -227,7 +227,7 @@ The following code illustrates how to render connector based on the stack order.
 
 ## Connector spacing
 
-* The [`connectorSpacing`](../api/diagram/connector#connectorSpacing-number) property allows you to define the distance between the source node and the connector. It is the minimum distance the connector will re-rout or the new segment will create.
+* The [`connectorSpacing`](../api/diagram/connector#connectorspacing) property allows you to define the distance between the source node and the connector. It is the minimum distance the connector will re-rout or the new segment will create.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -242,7 +242,7 @@ The following code illustrates how to render connector based on the stack order.
 
 ## MaxSegment thumb
 
-The property [`maxSegmentThumb`](../api/diagram/connector#maxSegmentThumb) is used to limit the  number of segment thumb in the connector.
+The property [`maxSegmentThumb`](../api/diagram/connector#maxsegmentthumb) is used to limit the  number of segment thumb in the connector.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -274,7 +274,7 @@ The [`resetSegments`](../api/diagram/#resetsegments) method resets the segments 
 
 ## Enable Connector Splitting
 
-The connectors are used to create a link between two points, ports, or nodes to represent the relationship between them. Split the connector between two nodes when dropping a new node onto an existing connector and create a connection between the new node and existing nodes by setting the [`enableConnectorSplit`](../api/diagram/enableConnectorSplit) as true. The default value of the [`enableConnectorSplit`](../api/diagram/enableConnectorSplit) is false
+The connectors are used to create a link between two points, ports, or nodes to represent the relationship between them. Split the connector between two nodes when dropping a new node onto an existing connector and create a connection between the new node and existing nodes by setting the [`enableConnectorSplit`](../api/diagram/#enableconnectorsplit) as true. The default value of the [`enableConnectorSplit`](../api/diagram/#enableconnectorsplit) is false
 
 The following code illustrates how to split the connector and create a connection with new node.
 
@@ -293,7 +293,7 @@ The following code illustrates how to split the connector and create a connectio
 
 ### Preserve connector style while connector splitting
 
-When splitting a connector using [`enableConnectorSplit`](../api/diagram/enableConnectorSplit), the new connector created will be a normal connector without any specific styles. To ensure the new connector has the same style as the original connector, you can use the collectionChange event to apply the styles.
+When splitting a connector using [`enableConnectorSplit`](../api/diagram/#enableconnectorsplit), the new connector created will be a normal connector without any specific styles. To ensure the new connector has the same style as the original connector, you can use the collectionChange event to apply the styles.
 
 The following example demonstrates how to apply the same style of the original connector to the newly added connector:
 

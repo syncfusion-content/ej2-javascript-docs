@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integrate treeview inside the accordion in ##Platform_Name## Accordion control | Syncfusion
+title: Integrate treeview in ##Platform_Name## Accordion control | Syncfusion
 description: Learn here all about Integrate treeview inside the accordion in Syncfusion ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Integrate treeview inside the accordion 
@@ -33,6 +33,9 @@ The following procedure is to render a TreeView within the Accordion,
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/accordion/accordion-treeview-cs1/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/accordion/accordion-treeview-cs1/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
         

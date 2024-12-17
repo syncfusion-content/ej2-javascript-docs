@@ -11,6 +11,33 @@
     <link href="index.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
+    <style>
+        .e-content .e-item {
+            font-size: 12px;
+            margin: 10px;
+            text-align: justify;
+        }
+
+        .container {
+            min-width: 350px;
+            margin: 0 10px;
+        }
+
+        .info {
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        .e-tab .e-content>.e-item.e-active.collapse {
+            /* csslint allow: adjoining-classes */
+            display: none;
+        }
+
+        .e-tab .e-tab-header .e-indicator.collapse {
+            /* csslint allow: adjoining-classes */
+            display: none;
+        }
+    </style>
 </head>
 
 <body>

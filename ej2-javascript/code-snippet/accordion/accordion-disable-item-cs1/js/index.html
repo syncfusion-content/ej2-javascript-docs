@@ -6,7 +6,60 @@
     <meta name="author" content="Syncfusion">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/material.css" rel="stylesheet">
-    <link href="index.css" rel="stylesheet">
+    <style>
+        #container {
+            max-width: 450px;
+            margin: 0 auto;
+        }
+    
+        #loader {
+            color: #008cff;
+            height: 40px;
+            left: 45%;
+            position: absolute;
+            top: 45%;
+            width: 30%;
+        }
+    
+        .accordion-control-section {
+            margin: 0 10% 0 10%;
+        }
+    
+        @media screen and (max-width: 768px) {
+            .accordion-control-section {
+                margin: 0;
+            }
+        }
+    
+        #err1,
+        #err2,
+        #err3 {
+            display: none;
+            color: red;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+    
+        #err1.show,
+        #err2.show,
+        #err3.show {
+            display: block;
+        }
+    
+        .e-dialog {
+            max-height: 300px !important;
+            /* csslint allow: important */
+        }
+    
+        .template_title {
+            text-align: center;
+            padding: 10px 0;
+            margin: 20px 0;
+            text-overflow: ellipsis;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    </style>
     
     
 <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>

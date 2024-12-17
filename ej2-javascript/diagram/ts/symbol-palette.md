@@ -91,7 +91,7 @@ To drag and drop symbols from the palette to the diagram canvas, mousedown on th
 
 ## Add symbols to palette at runtime
 
-Symbols can be added to palette at runtime by using public method, [`addPaletteItem`](../api/diagram/palette/#addPaletteItem-number). The following example shows how to add shapes to the palette at runtime.
+Symbols can be added to palette at runtime by using public method, [`addPaletteItem`](../api/diagram/palette). The following example shows how to add shapes to the palette at runtime.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -106,7 +106,7 @@ Symbols can be added to palette at runtime by using public method, [`addPaletteI
 
 ## Remove symbols from palette at runtime
 
-Symbols can be removed from palette at runtime by using public method, [`removePaletteItem`](../api/diagram/palette/#removePaletteItem-number). The following example shows how to remove shapes from the palette at runtime.
+Symbols can be removed from palette at runtime by using public method, [`removePaletteItem`](../api/diagram/palette). The following example shows how to remove shapes from the palette at runtime.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -177,7 +177,7 @@ Follow the example below to see how to remove palettes at runtime.
 
 ## Stretch the symbols into the palette
 
-The [`fit`](../api/diagram/symbolInfo/#fit-boolean) property defines whether the symbol has to be fit inside the size, that is defined by the symbol palette. For example, when you resize the rectangle in the symbol, ratio of the rectangle size has to be maintained rather changing into square shape. The following code example illustrates how to customize the symbol size.
+The [`fit`](../api/diagram/symbolInfo/#fit) property defines whether the symbol has to be fit inside the size, that is defined by the symbol palette. For example, when you resize the rectangle in the symbol, ratio of the rectangle size has to be maintained rather changing into square shape. The following code example illustrates how to customize the symbol size.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

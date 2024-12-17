@@ -395,7 +395,7 @@ The following code illustrates how to execute the bringToCenter command.
 
 ## FitToPage
 
-The [`fitToPage`](../api/diagram/#fittopage) command adjusts the diagram content to fit within the viewport, considering either width, height, or the entire content. The fitToPage method takes one parameter, [`fitOptions`](api/diagram/iFitOptions/), which specifies the options for fitting the diagram to the page.
+The [`fitToPage`](../api/diagram/#fittopage) command adjusts the diagram content to fit within the viewport, considering either width, height, or the entire content. The fitToPage method takes one parameter, [`fitOptions`](../api/diagram/fitOptions/), which specifies the options for fitting the diagram to the page.
 
 ### FitOptions
 

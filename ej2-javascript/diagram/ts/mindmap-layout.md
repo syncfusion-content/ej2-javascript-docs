@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Mind Map layout in ##Platform_Name## Diagram control
 
-A mind map is a diagram that displays the nodes as a spider diagram organizes information around a central concept. To create mind map, the [`type`](../api/diagram/layout) of layout should be set as `MindMap`.
+A mind map is a diagram that displays the nodes as a spider diagram organizes information around a central concept. To create mind map, the [`type`](../api/diagram/layoutModel/#type) of layout should be set as `MindMap`.
 
 ## Mind Map Orientation
 

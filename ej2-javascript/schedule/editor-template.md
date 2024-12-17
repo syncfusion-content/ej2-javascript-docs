@@ -160,6 +160,12 @@ In default event editor window, start and end time duration are processed based 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/editor-window-cs5/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/editor-window-cs5/datasource.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/schedule/editor-window-cs5/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/editor-window-cs5" %}
@@ -172,6 +178,12 @@ In default event editor window, start and end time duration are processed based 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/editor-window-cs5/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/editor-window-cs5/es5-datasource.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/schedule/editor-window-cs5/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -191,6 +203,12 @@ It is possible to prevent the display of editor and quick popup windows by passi
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/editor-window-cs6/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/editor-window-cs6/datasource.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/schedule/editor-window-cs6/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/editor-window-cs6" %}
@@ -203,6 +221,12 @@ It is possible to prevent the display of editor and quick popup windows by passi
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/editor-window-cs6/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/editor-window-cs6/es5-datasource.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/schedule/editor-window-cs6/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -21,7 +21,7 @@ The AI AssistView toolbar's can be rendered by defining an array of items. Items
 
 #### Adding iconCss
 
-You can customize the toolbar icons by using the [iconCss](../api/ai-assistview/toolbarItemModel/#cssclass) property.
+You can customize the toolbar icons by using the `iconCss` property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -52,7 +52,7 @@ You can customize the toolbar icons by using the [iconCss](../api/ai-assistview/
 
 #### Setting item type
 
-You can change the toolbar item type by using the [`type`](../api/ai-assistview/toolbarItemModel/#type) property. The `type` supports three types of items such as `Button`, `Separator` and `Input`. By default, the type is `Button`.
+You can change the toolbar item type by using the `type` property. The `type` supports three types of items such as `Button`, `Separator` and `Input`. By default, the type is `Button`.
 
 In the following example, toolbar item type is set as `Button`.
 
@@ -85,7 +85,7 @@ In the following example, toolbar item type is set as `Button`.
 
 #### Setting text
 
-You can use the [text](../api/ai-assistview/toolbarItemModel/#text) property to set the text for toolbar item.
+You can use the `text` property to set the text for toolbar item.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -116,7 +116,7 @@ You can use the [text](../api/ai-assistview/toolbarItemModel/#text) property to 
 
 #### Show or hide toolbar item
 
-You can use the [visible](../api/ai-assistview/toolbarItemModel/#visible) property to specify whether to show or hide the toolbar item. By default, its value is `true`.
+You can use the `visible` property to specify whether to show or hide the toolbar item. By default, its value is `true`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -147,7 +147,7 @@ You can use the [visible](../api/ai-assistview/toolbarItemModel/#visible) proper
 
 #### Setting disabled
 
-You can use the [disabled](../api/ai-assistview/toolbarItemModel/#disabled) property to disable the toolbar item. By default, its value is `false`.
+You can use the `disabled` property to disable the toolbar item. By default, its value is `false`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -178,7 +178,7 @@ You can use the [disabled](../api/ai-assistview/toolbarItemModel/#disabled) prop
 
 #### Setting tooltip text
 
-You can use the [tooltip](../api/ai-assistview/toolbarItemModel/#tooltip) property to specify the tooltip text to be displayed on hovering the toolbar item.
+You can use the `tooltip` property to specify the tooltip text to be displayed on hovering the toolbar item.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -209,7 +209,7 @@ You can use the [tooltip](../api/ai-assistview/toolbarItemModel/#tooltip) proper
 
 #### Setting cssClass
 
-You can use the [cssClass](../api/ai-assistview/toolbarItemModel/#cssclass) property to customize the toolbar item.
+You can use the `cssClass` property to customize the toolbar item.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -240,7 +240,7 @@ You can use the [cssClass](../api/ai-assistview/toolbarItemModel/#cssclass) prop
 
 #### Setting alignment
 
-You can change the alignment of toolbar item by using the [`align`](../api/ai-assistview/toolbarItemModel/#align) property. It supports three types of alignments such as `Left`, `Center` and `Right`. By default, the value is `Left`.
+You can change the alignment of toolbar item by using the `align` property. It supports three types of alignments such as `Left`, `Center` and `Right`. By default, the value is `Left`.
 
 In the following example, toolbar item type is set with `Right`.
 
@@ -273,7 +273,7 @@ In the following example, toolbar item type is set with `Right`.
 
 #### Enabling tab key navigation in toolbar
 
-You can use the [`tabIndex`](../api/ai-assistview/toolbarItemModel/#tabindex) property of a Toolbar item to enable tab key navigation for the item. By default, the user can switch between items using the arrow keys, but the `tabIndex` property allows you to switch between items using the `Tab` and `Shift+Tab` keys as well.
+You can use the `tabIndex` property of a Toolbar item to enable tab key navigation for the item. By default, the user can switch between items using the arrow keys, but the `tabIndex` property allows you to switch between items using the `Tab` and `Shift+Tab` keys as well.
 
 To use the `tabIndex` property, set it for each Toolbar item which you want to enable tab key navigation. The `tabIndex` property should be set to a positive integer value. A value of `0` or a negative value will disable tab key navigation for the item.
 
@@ -313,7 +313,7 @@ In this case, the user can switch between the two Toolbar items using the Tab an
 
 #### Setting template
 
-You can use the [template](../api/ai-assistview/toolbarItemModel/#template) property to add custom toolbar item in the AI AssistView.
+You can use the `template` property to add custom toolbar item in the AI AssistView.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -344,7 +344,7 @@ You can use the [template](../api/ai-assistview/toolbarItemModel/#template) prop
 
 ### Item clicked
 
-The [itemClicked](../api/ai-assistview/toolbarSettings/#itemclicked) event is triggered when the header toolbar item is clicked.
+The `itemClicked` event is triggered when the header toolbar item is clicked.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -519,7 +519,7 @@ You can also add custom toolbar items in the AI AssistView by using the [toolbar
 
 You can use the [promptToolbarSettings](../api/ai-assistview#prompttoolbarsettings) property to add custom items for the prompt toolbar in the AI AssistView.
 
-> To know more about the items, please refer to the [items](../api/ai-assistview/toolbarItemModel/) section.
+> To know more about the items, please refer to the `items` section.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -552,7 +552,7 @@ You can use the [promptToolbarSettings](../api/ai-assistview#prompttoolbarsettin
 
 You can use the [responseToolbarSettings](../api/ai-assistview#responsetoolbarsettings) property to add custom response toolbar in the AI AssistView.
 
-> To know more about the items, please refer to the [items](../api/ai-assistview/toolbarItemModel/) section.
+> To know more about the items, please refer to the `items` section.
 
 {% if page.publishingplatform == "typescript" %}
 

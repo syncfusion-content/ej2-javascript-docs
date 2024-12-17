@@ -53,7 +53,7 @@ The below example shows adding the German culture locale(`de-DE`)
 
 ## RTL
 
-RTL provides an option to switch the text direction and layout of the Chat UI control from right to left by setting the `enableRtl` property to `true`.
+RTL provides an option to switch the text direction and layout of the Chat UI control from right to left by setting the [enableRtl](../api/chat-ui#enablertl) property to `true`.
 
 {% if page.publishingplatform == "typescript" %}
 

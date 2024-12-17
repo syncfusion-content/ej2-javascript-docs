@@ -1,7 +1,7 @@
 
 
-import { Chart, LineSeries, Category, Legend } from '@syncfusion/ej2-charts';
-Chart.Inject(LineSeries, Category, Legend);
+import { Chart, ColumnSeries, Category, Legend } from '@syncfusion/ej2-charts';
+Chart.Inject(ColumnSeries, Category, Legend);
 let chartData: any[] = [
     { country: "USA", gold: 50, silver: 70, bronze: 45 },
     { country: "China", gold: 40, silver: 60, bronze: 55 },

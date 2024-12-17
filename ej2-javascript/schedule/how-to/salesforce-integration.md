@@ -35,13 +35,13 @@ Now you have have Salesforce configured, let's create a [Salesforce project](htt
 
 In your preferred location, create a base directory for your Salesforce project. For example, you can create a directory named `salesforceApp` using the following command:
 
-```
+```bash
 mkdir salesforceApp 
 ```
 
 Navigate to the base directory you created in the previous step and generate a Salesforce DX project using the following CLI command.
 
-```
+```bash
 sfdx project:generate -n scheduler-salesforce-app 
 ```
 
@@ -53,7 +53,7 @@ Before proceeding further, you need to authorize your Salesforce project by foll
 
 Run the following command to authorize your Salesforce project with your Salesforce account in the browser.
 
-```
+```bash
 sfdx org:login:web -d 
 ```
 
@@ -73,7 +73,7 @@ To facilitate development and testing, the creation of a scratch organization wi
 
 Run the following command to create a new scratch organization, which will provide a fresh Salesforce environment for development and testing with organization id and username as link below image.
 
-```
+```bash
 sfdx org:create:scratch -f config/project-scratch-def.json 
 ```
 
@@ -85,7 +85,7 @@ To integrate the Syncfusion scripts and styles as static resource files within S
  
 Use the following command to open the scratch project in the browser
 
-```
+```bash
 sfdx org:open -o <stratch org user name> 
 ```
 
@@ -168,7 +168,7 @@ To integrate the **JavaScript Scheduler** into your Salesforce project, we will 
 
 1. In your Salesforce project, run the following command to generate a Lightning web component named scheduler.
 
-```
+```bash
 sfdx lightning:generate:component --type lwc -n scheduler -d force-app/main/default/lwc 
 ```
 
@@ -176,7 +176,7 @@ sfdx lightning:generate:component --type lwc -n scheduler -d force-app/main/defa
 
 2. Open the `scheduler.js-meta.xml` file located in `force-app/main/default/lwc/scheduler` and modify the component definition to expose it in the Lightning App Builder. Here's an example of the modified file. 
 
-```force-app/main/default/lwc/scheduler/scheduler.js-meta.xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?> 
 <LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata"> 
     <apiVersion>57.0</apiVersion> 
@@ -193,8 +193,8 @@ sfdx lightning:generate:component --type lwc -n scheduler -d force-app/main/defa
 ```
 
 3. Open the `scheduler.html` file located in `force-app/main/default/lwc/scheduler` and add an element with a class name to append the Syncfusion scheduler. Here's an example of the modified file.
- 
-```force-app/main/default/lwc/scheduler/scheduler.html
+
+```html
 <template> 
     <div class="syncfusionscheduler" lwc:dom="manual" style='width: 100%;'></div> 
 </template> 
@@ -202,7 +202,7 @@ sfdx lightning:generate:component --type lwc -n scheduler -d force-app/main/defa
 
 4. Open the `scheduler.js` file located in `force-app/main/default/lwc/scheduler` and implement the scheduler code in renderedCallback function. The static scripts and styles are loaded using the `loadScript` and `loadStyle` imports. Here's an example of the modified file.
 
-```force-app/main/default/lwc/scheduler/scheduler.js
+```js
 import { LightningElement, api } from 'lwc'; 
 import { ShowToastEvent } from "lightning/platformShowToastEvent"; 
 import { loadStyle, loadScript } from "lightning/platformResourceLoader"; 
@@ -325,7 +325,7 @@ Apex class that facilitates smooth interactions between your Lightning component
 
 Use the following command to create Apex class with the name `SchedulerData`. 
 
-```
+```bash
 sfdx apex:generate:class -n SchedulerData -d force-app/main/default/classes	 
 ```
 
@@ -334,7 +334,7 @@ sfdx apex:generate:class -n SchedulerData -d force-app/main/default/classes
 Open the **SchedulerData.cls** file located in `force-app/main/default/classes/SchedulerData.cls`. 
 This will fetch the event data from salesforce backend. Here's an example of the modified file. 
 
-```force-app/main/default/classes/SchedulerData.cls
+```c#
 public with sharing class SchedulerData { 
     @RemoteAction 
     @AuraEnabled(cacheable=true) 
@@ -353,7 +353,7 @@ public with sharing class SchedulerData {
 
 To retrieve the changes made in the scratch organization and sync them with your local Salesforce project, use the following command. 
 
-```
+```bash
 sfdx project:retrieve:start -o <scratch org use name> 
 ```
 
@@ -365,7 +365,7 @@ Replace <scratch org username> with the username of your scratch organization.
 
 To push the changes made in your local Salesforce project to the scratch organization, use the following command. 
 
-```
+```bash
 sfdx project:deploy:start -o <scratch org use name> 
 ```
 

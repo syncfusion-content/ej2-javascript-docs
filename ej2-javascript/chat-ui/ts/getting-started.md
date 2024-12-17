@@ -155,7 +155,7 @@ The following example shows a basic Chat UI control.
 
 ## Configure messages and user
 
-You can use the `messages` property to add messages and the `user` property to configure the current user for the chat.
+You can use the [messages](../api/chat-ui#messages) property to add messages and the [user](../api/chat-ui#user) property to configure the current user for the chat.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

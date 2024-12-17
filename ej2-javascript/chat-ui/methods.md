@@ -13,11 +13,11 @@ domainurl: ##DomainURL##
 
 ## Adding message
 
-You can use the `addMessage` public method to add the messages in the Chat UI. You can add it either as a `string` or `MessageModel` collection. It programmatically adds a new message to the chat.
+You can use the [addMessage](../api/chat-ui#addmessage) public method to add the messages in the Chat UI. You can add it either as a `string` or `MessageModel` collection. It programmatically adds a new message to the chat.
 
 The below sample demonstrates adding a new message as string and as a `MessageModel` object.
 
-Here is an example of how to use the `addMessage` method:
+Here is an example of how to use the [addMessage](../api/chat-ui#addmessage) method:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -75,7 +75,7 @@ Here is an example of how to use the `addMessage` method:
 
 ## Edit messages
 
-You can use the `updateMessage` public method to update the messages in the ChatUI to modify an existing message within the chat, useful for editing or correcting sent messages.
+You can use the [updateMessage](../api/chat-ui#updatemessage) public method to update the messages in the ChatUI to modify an existing message within the chat, useful for editing or correcting sent messages.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -106,7 +106,7 @@ You can use the `updateMessage` public method to update the messages in the Ch
 
 ## Scroll to Bottom
 
-You can use the `scrollToBottom` public method to scroll the chat view to the latest message, ensuring users see the new content updated.
+You can use the [scrollToBottom](../api/chat-ui#scrolltobottom) public method to scroll the chat view to the latest message, ensuring users see the new content updated.
 
 {% if page.publishingplatform == "typescript" %}
 

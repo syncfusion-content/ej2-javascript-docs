@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Customize HTML Attributes for Menu Items in ##Platform_Name## Menu control
 
-To customize the HTML attributes of the Menu, use the [htmlAttributes](../../api/menu/#htmlattributes) property to add custom HTML attributes to the root element of the menu. This feature is particularly useful for enhancing accessibility, adding custom data attributes, or including additional properties that can be utilized for styling or functionality.
+To customize the HTML attributes of the Menu, use the [htmlAttributes](../../api/menu/menuItemModel/#htmlattributes) property to add custom HTML attributes to the root element of the menu. This feature is particularly useful for enhancing accessibility, adding custom data attributes, or including additional properties that can be utilized for styling or functionality.
 
 {% if page.publishingplatform == "typescript" %}
 

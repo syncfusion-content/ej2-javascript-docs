@@ -17,7 +17,10 @@ To achieve this functionality, set the `enableScrolling` property to `true`. Add
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/context-menu/scroller-cs1/index.ts %}
+{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/context-menu/scroller-cs1/index.html %}
 {% endhighlight %}
@@ -28,6 +31,9 @@ To achieve this functionality, set the `enableScrolling` property to `true`. Add
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/context-menu/scroller-cs1/index.js %}
+{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/context-menu/scroller-cs1/index.html %}
 {% endhighlight %}

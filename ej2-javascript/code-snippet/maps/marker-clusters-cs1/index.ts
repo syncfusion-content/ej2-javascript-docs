@@ -1,6 +1,6 @@
-import { Maps, Markers, Zoom, MapsTooltip } from '@syncfusion/ej2-maps';
+import { Maps, Marker, Zoom, MapsTooltip } from '@syncfusion/ej2-maps';
 import { world_map } from './world-map.ts';
-Maps.Inject(Markers, Zoom, MapsTooltip);
+Maps.Inject(Marker, Zoom, MapsTooltip);
 let map: Maps = new Maps({
     zoomSettings: {
         enable: true

@@ -5,7 +5,7 @@ import { FileManager, Toolbar, NavigationPane, DetailsView } from '@syncfusion/e
 FileManager.Inject(Toolbar, NavigationPane, DetailsView)
 
 let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-// initialize file manager component and add custom item to contextmenu
+// initialize file manager component
 let filemanagerInstance: FileManager = new FileManager({
     ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations',

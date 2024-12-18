@@ -59,7 +59,7 @@ In the following example, the chunkSize is set to 5 MB (5,242,880 bytes), and th
 
 With chunk upload, the pause and resume options gives users enhanced control over the file upload process.
 
-![##Platform_Name## File Manager with chunkUpload](./images/filemanager-chunkupload.png "File Manager chunkUpload")
+![File Manager with chunkUpload](./images/filemanager-chunkupload.png)
 
 >Note: 
 >1. Chunk upload will work when the selected file size is greater than the specified chunk size. Otherwise, it upload the files normally. 
@@ -116,7 +116,7 @@ The default value is set to `false`, the upload dialog remains open even after t
             downloadUrl: hostUrl + 'api/FileManager/Download'
         },
         // Upload settings customization
-        uploadSettings: { autoClose: true }
+        uploadSettings: { autoClose: false }
     });
     fileObject.appendTo('#file');
 ```
@@ -173,7 +173,6 @@ The following example demonstrates how to prevent the external drag and drop upl
             uploadUrl: hostUrl + 'api/FileManager/Upload',
             downloadUrl: hostUrl + 'api/FileManager/Download'
         },
-        allowDragAndDrop: true,
         created: function (args) {
             filemanagerInstance.uploadObj.dropArea = null;
         },

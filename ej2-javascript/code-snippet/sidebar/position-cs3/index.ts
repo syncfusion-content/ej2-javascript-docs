@@ -19,8 +19,10 @@ enableRipple(true);
 let togglebtn: Button = new Button({iconCss: 'e-icons burg-icon', isToggle: true, content:'Open'}, '#toggle');
 
 //Click Event.
-document.getElementById('toggle').onclick = (): void => {
-        if (document.getElementById('toggle').classList.contains('e-active')) {
+const toggleButton = document.getElementById('toggle');
+if(toggleButton){
+    toggleButton.onclick = (): void => {
+        if (toggleButton.classList.contains('e-active')) {
             togglebtn.content = 'Close';
             defaultSidebar.show();
         } else {
@@ -28,13 +30,20 @@ document.getElementById('toggle').onclick = (): void => {
             defaultSidebar.hide();
         }
     };
+}
 
-    // Close the Sidebar
-    document.getElementById('close').onclick = (): void => {
+// Close the Sidebar
+const closeButton = document.getElementById('close');
+if (closeButton) {
+    closeButton.onclick = (): void => {
         defaultSidebar.hide();
-        document.getElementById('toggle').classList.remove('e-active');
-        togglebtn.content = 'Open'
+
+        const toggleButton = document.getElementById('toggle');
+        if (toggleButton) {
+            toggleButton.classList.remove('e-active');
+        }
     };
+}
 
 let positionLeft: RadioButton = new RadioButton({ label: 'Left', name: 'state', checked: true,change:Change });
 positionLeft.appendTo('#left');
@@ -44,7 +53,7 @@ let positionRight: RadioButton = new RadioButton({ label: 'Right', name: 'state'
 positionRight.appendTo('#right');
 
 function Change(args: ChangeArgs) {
-  defaultSidebar.position = ((<HTMLInputElement>args.event.target).id == "left") ? "Left" : "Right";
+  defaultSidebar.position = ((<HTMLInputElement>args.event?.target).id == "left") ? "Left" : "Right";
 }
 
 

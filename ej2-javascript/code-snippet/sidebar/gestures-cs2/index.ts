@@ -12,14 +12,20 @@ defaultSidebar.appendTo('#default-sidebar');
 //end of Sidebar initialization
 
 // Toggle(Open/Close) the Sidebar
-document.getElementById('toggle').onclick = (): void => {
-    defaultSidebar.toggle();
-};
+const toggleButton = document.getElementById('toggle');
+if (toggleButton) {
+    toggleButton.onclick = (): void => {
+        defaultSidebar.toggle();
+    };
+}
 
 // Close the Sidebar
-document.getElementById('close').onclick = (): void => {
-    defaultSidebar.hide();
-};
+const closeButton = document.getElementById('close');
+if (closeButton) {
+    closeButton.onclick = (): void => {
+        defaultSidebar.hide();
+    };
+}
 
 
 

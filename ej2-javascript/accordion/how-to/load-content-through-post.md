@@ -26,6 +26,9 @@ Accordion supports to load external contents through `AJAX` library. Refer the b
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/accordion/accordion-ajax-cs1/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="ajax.html" %}
+{% include code-snippet/accordion/accordion-ajax-cs1/ajax.html %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/accordion/accordion-ajax-cs1" %}
@@ -38,6 +41,9 @@ Accordion supports to load external contents through `AJAX` library. Refer the b
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/accordion/accordion-ajax-cs1/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="ajax.html" %}
+{% include code-snippet/accordion/accordion-ajax-cs1/ajax.html %}
 {% endhighlight %}
 {% endtabs %}
 

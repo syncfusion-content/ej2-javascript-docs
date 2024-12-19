@@ -44,8 +44,15 @@ var columns = [
 ];
 
 var spreadsheet = new ej.spreadsheet.Spreadsheet({
-    sheets: [{ ranges: [{ dataSource: defaultData }], columns: columns }],
-    enableClipboard: true
+  sheets: [{ ranges: [{ dataSource: defaultData }], columns: columns }],
+  enableClipboard: true,
+  // Triggers before the action begins.
+  actionBegin: (pasteArgs) => {
+    // To cancel the paste action.
+    if (pasteArgs.action === 'clipboard' && pasteArgs.args.eventArgs.requestType === 'paste') {
+      pasteArgs.args.eventArgs.cancel = true;
+    }
+  }
 });
 
 

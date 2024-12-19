@@ -1,5 +1,5 @@
-import { Chart, LineSeries, DateTime, CandleSeries, AccumulationDistributionIndicator, Tooltip, Crosshair, IAxisLabelRenderEventArgs } from '@syncfusion/ej2-charts';
-Chart.Inject(LineSeries, DateTime, CandleSeries, AccumulationDistributionIndicator, Tooltip, Crosshair);
+import { Chart, LineSeries, DateTime, CandleSeries, AccumulationDistributionIndicator, Tooltip, Crosshair, Legend, IAxisLabelRenderEventArgs } from '@syncfusion/ej2-charts';
+Chart.Inject(LineSeries, DateTime, CandleSeries, AccumulationDistributionIndicator, Tooltip, Crosshair, Legend);
 let chartData: any[] = [
     { x: new Date('2012-10-15'), open: 90.3357, high: 93.2557, low: 87.0885, close: 87.12, volume: 646996264 },
     { x: new Date('2012-10-22'), open: 87.4885, high: 90.7685, low: 84.4285, close: 86.2857, volume: 866040680 },
@@ -105,5 +105,6 @@ let chart: Chart = new Chart({
         }
     },
     crosshair: { enable: true, lineType: 'Vertical' },
-    title: 'AAPL - 2016/2017'
+    title: 'AAPL - 2016/2017',
+    legendSettings: { visible: false }
 }, '#element');

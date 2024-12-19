@@ -1,5 +1,5 @@
-import { AccumulationChart, AccumulationTooltip } from '@syncfusion/ej2-charts';
-AccumulationChart.Inject(AccumulationTooltip);
+import { AccumulationChart, AccumulationTooltip, PieSeries, AccumulationLegend } from '@syncfusion/ej2-charts';
+AccumulationChart.Inject(AccumulationTooltip, PieSeries, AccumulationLegend);
 let accChart: AccumulationChart = new AccumulationChart({
     series: [
         {
@@ -13,5 +13,6 @@ let accChart: AccumulationChart = new AccumulationChart({
             yName: 'y'
         }
     ],
-    tooltip: { enable: true, enableHighlight: true }
+    tooltip: { enable: true, enableHighlight: true },
+    legendSettings: { visible: false }
 }, '#element');

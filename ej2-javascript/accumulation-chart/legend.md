@@ -354,7 +354,7 @@ The [`itemPadding`](../api/accumulation-chart/legendSettings/#itempadding) prope
 
 ## Legend layout
 
-The `layout` property in `legendSettings` allows you to display the legend either horizontally or vertically. By default, the `layout` is set to **Auto**. The `maximumColumns` property in `legendSettings` defines the maximum number of columns that can be displayed within the available space when using the auto layout. Additionally, enabling the `fixedWidth` property in `legendSettings` ensures that all legend items are displayed with equal widths. The width of each item is determined by the maximum width among the legend items.
+The [`layout`](../api/accumulation-chart/legendSettingsModel/#layout) property in [`legendSettings`](../api/accumulation-chart/#legendsettings) allows you to display the legend either horizontally or vertically. By default, the [`layout`](../api/accumulation-chart/legendSettingsModel/#layout) is set to **Auto**. The [`maximumColumns`](../api/accumulation-chart/legendSettingsModel/#maximumcolumns) property in [`legendSettings`](../api/accumulation-chart/#legendsettings) defines the maximum number of columns that can be displayed within the available space when using the auto layout. Additionally, enabling the [`fixedWidth`](../api/accumulation-chart/legendSettingsModel/#fixedwidth) property in [`legendSettings`](../api/accumulation-chart/#legendsettings) ensures that all legend items are displayed with equal widths. The width of each item is determined by the maximum width among the legend items.
 
 {% if page.publishingplatform == "typescript" %}
 

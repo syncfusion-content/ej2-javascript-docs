@@ -14,14 +14,8 @@ var columns = [
 
 var spreadsheet = new ej.spreadsheet.Spreadsheet({
     sheets: [{ name: 'Budget', ranges: [{ dataSource: budgetData }], columns: columns }],
-    selectionSettings: { mode: 'Multiple' },
-    created: () => {
-        spreadsheet.selectRange('B2:E6');
-    }
+    selectionSettings: { mode: 'None' }
 });
-
- 
 
 // Render initialized Spreadsheet.
 spreadsheet.appendTo('#spreadsheet');
-

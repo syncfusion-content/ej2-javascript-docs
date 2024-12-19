@@ -1,5 +1,5 @@
-import { Chart, ColumnSeries, Category } from '@syncfusion/ej2-charts';
-Chart.Inject(ColumnSeries, Category);
+import { Chart, ColumnSeries, Category, Legend } from '@syncfusion/ej2-charts';
+Chart.Inject(ColumnSeries, Category, Legend);
 
 let columnData: Object[] = [
     { country: "USA",       gold: 50, silver: 70, bronze: 45 },

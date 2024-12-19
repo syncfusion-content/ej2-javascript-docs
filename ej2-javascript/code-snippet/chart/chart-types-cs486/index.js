@@ -103,6 +103,7 @@ var chart = new ej.charts.Chart({
         }
     },
     crosshair: { enable: true, lineType: 'Vertical' },
-    title: 'AAPL - 2016/2017'
+    title: 'AAPL - 2016/2017',
+    legendSettings: { visible: false }
 }, '#element');
 

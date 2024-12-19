@@ -17,7 +17,7 @@ var dialogObj = new ej.popups.Dialog({
         target: document.getElementById('spreadsheet'),
         content: '"A1:F3" range of cells has been unlocked.',
         showCloseIcon: true,
-        isModel: true,
+        isModal: true,
         visible: false,
         width: '500px',
         buttons: [{

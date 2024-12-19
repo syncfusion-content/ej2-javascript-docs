@@ -42,13 +42,14 @@ var data= [{
   }];
 
 var sheet = [{
-                ranges: [{ dataSource: data }],
-                columns: [{ width: 80 }, { width: 80 },{ width: 80},
-                          { width: 160 }, { width: 100 }, {width: 150}]
-            }]
+  ranges: [{ dataSource: data }],
+  columns: [{ width: 80 }, { width: 80 }, { width: 80 },
+  { width: 160 }, { width: 100 }, { width: 150 }]
+}];
+
 var spreadsheet = new ej.spreadsheet.Spreadsheet({
-    sheets: sheet
-    });
+  sheets: sheet
+});
 
 // Render initialized Spreadsheet.
 spreadsheet.appendTo('#spreadsheet');

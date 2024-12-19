@@ -1,11 +1,8 @@
-
-
-
-import { Spreadsheet } from '@syncfusion/ej2-spreadsheet';
+import { Spreadsheet, SheetModel, BeforeHyperlinkArgs } from '@syncfusion/ej2-spreadsheet';
 
 let sheet: SheetModel[] = [
     {
-        name: 'PriceDetails'
+        name: 'PriceDetails',
         rows: [
             {
                 cells: [
@@ -24,21 +21,21 @@ let sheet: SheetModel[] = [
             {
                 cells: [
                     { value: 'Sports Shoes' },
-                    { value: 'IN STOCK', hyperlink: 'Stock!A2:B2'},
+                    { value: 'IN STOCK', hyperlink: 'Stock!A2:B2' },
                     { value: 'Overstack', hyperlink: 'https://www.overstock.com/' }
                 ]
             },
             {
                 cells: [
                     { value: 'Formal Shoes' },
-                    { value: 'IN STOCK', hyperlink: 'Stock!A3:B3'},
+                    { value: 'IN STOCK', hyperlink: 'Stock!A3:B3' },
                     { value: 'AliExpress', hyperlink: 'https://www.aliexpress.com/' }
                 ]
             },
             {
                 cells: [
                     { value: 'Sandals & Floaters' },
-                    { value: 'OUT OF STOCK'},
+                    { value: 'OUT OF STOCK' },
                     { value: 'AliBaba', hyperlink: 'http://www.alibaba.com/' }
                 ]
             },
@@ -54,9 +51,9 @@ let sheet: SheetModel[] = [
             { width: 160 }, { width: 160 }, { width: 120 }
         ]
     },
-{
-    name: 'Stock',
-    rows: [
+    {
+        name: 'Stock',
+        rows: [
             {
                 cells: [
                     { value: 'Item Name' },
@@ -91,16 +88,14 @@ let sheet: SheetModel[] = [
         columns: [
             { width: 160 }, { width: 120 }
         ]
-}
+    }
 ];
 
 //Initialize the SpreadSheet control
 let spreadsheet: Spreadsheet = new Spreadsheet({
-  sheets: sheet,
-  beforeHyperlinkClick: (args: BeforeHyperlinkArgs) => {
+    sheets: sheet,
+    beforeHyperlinkClick: (args: BeforeHyperlinkArgs) => {
         args.target = '_self'; //change target attribute
     }
 });
 spreadsheet.appendTo('#spreadsheet');
-
-

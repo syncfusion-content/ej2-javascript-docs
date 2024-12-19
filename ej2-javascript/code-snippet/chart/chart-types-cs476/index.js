@@ -11,6 +11,7 @@ var piechart = new ej.charts.AccumulationChart({
             yName: 'y'
         }
     ],
-    tooltip: { enable: true, enableHighlight: true }
+    tooltip: { enable: true, enableHighlight: true },
+    legendSettings: { visible: false }
 }, '#element');
 

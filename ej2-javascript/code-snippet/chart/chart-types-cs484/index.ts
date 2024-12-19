@@ -1,5 +1,5 @@
-import { Chart, Trendlines, ScatterSeries, Tooltip } from '@syncfusion/ej2-charts';
-Chart.Inject(Trendlines, ScatterSeries, Tooltip);
+import { Chart, Trendlines, ScatterSeries, LineSeries, Tooltip, Legend } from '@syncfusion/ej2-charts';
+Chart.Inject(Trendlines, ScatterSeries, LineSeries, Tooltip, Legend);
 
 let data: Object[] = [];
 let yValue: number[] = [7.66, 8.03, 8.41, 8.97, 8.77, 8.20, 8.16, 7.89, 8.68, 9.48, 10.11, 11.36, 12.34, 12.60, 12.95, 13.91, 16.21, 17.50, 22.72, 28.14, 31.26, 31.39, 32.43, 35.52, 36.36,
@@ -40,5 +40,6 @@ let chart: Chart = new Chart({
     ],
     tooltip: { enable: true },
     chartArea: { border: { width: 0 } },
-    title: 'Historical Indian Rupee Rate (INR USD)'
+    title: 'Historical Indian Rupee Rate (INR USD)',
+    legendSettings: { visible: false }
 }, '#element');

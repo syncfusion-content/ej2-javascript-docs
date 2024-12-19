@@ -3,7 +3,7 @@
 
 import { Spreadsheet, ColumnModel } from '@syncfusion/ej2-spreadsheet';
 import { defaultData } from './datasource.ts';
-import { DropDownButton, ItemModel } from "@syncfusion/ej2-splitbuttons";
+import { DropDownButton, ItemModel, MenuEventArgs } from "@syncfusion/ej2-splitbuttons";
 
 //Initialize action items.
 let items: ItemModel[] = [
@@ -48,20 +48,18 @@ let columns: ColumnModel[] = [
 ];
 
 let spreadsheet: Spreadsheet = new Spreadsheet({
-    sheets: [{ name: 'Price Details', ranges: [{ dataSource: defaultData }], columns: columns }],
-    enableClipboard: true,
-    created: (): void => {
-            spreadsheet.cellFormat({ fontWeight: 'bold', textAlign: 'center', verticalAlign: 'middle' }, 'A1:F1');
-        },
-    // Triggers before the action begins.
-    actionBegin: (pasteArgs: any) => {
-        const args: { action: string, eventArgs: BeforePasteEventArgs } = { action: pasteArgs.args.eventArgs.requestType,
-            eventArgs: pasteArgs.args.eventArgs };
-            // To cancel the paste action.
-        if (args.action === 'paste') {
-            args.eventArgs.cancel = true;
-        }
+  sheets: [{ name: 'Price Details', ranges: [{ dataSource: defaultData }], columns: columns }],
+  enableClipboard: true,
+  created: (): void => {
+    spreadsheet.cellFormat({ fontWeight: 'bold', textAlign: 'center', verticalAlign: 'middle' }, 'A1:F1');
+  },
+  // Triggers before the action begins.
+  actionBegin: (pasteArgs: any) => {
+    // To cancel the paste action.
+    if (pasteArgs.action === 'clipboard' && pasteArgs.args.eventArgs.requestType === 'paste') {
+      pasteArgs.args.eventArgs.cancel = true;
     }
+  }
 });
 
 //Render the initialized Spreadsheet

@@ -42,6 +42,7 @@ var chart = new ej.charts.Chart({
     // trackball for chart
     tooltip: { enable: true, shared: true, format: '${series.name} : ${point.x} : ${point.y}' },
     crosshair: { enable: true, lineType: 'Horizontal', snapToData: true },
-    title: 'Average Sales per Person'
+    title: 'Average Sales per Person',
+    legendSettings: { visible: false }
 }, '#element');
 

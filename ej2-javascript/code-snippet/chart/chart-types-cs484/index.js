@@ -37,6 +37,7 @@ var chart = new ej.charts.Chart({
     ],
     tooltip: { enable: true },
     chartArea: { border: { width: 0 } },
-    title: 'Historical Indian Rupee Rate (INR USD)'
+    title: 'Historical Indian Rupee Rate (INR USD)',
+    legendSettings: { visible: false }
 }, '#element');
 

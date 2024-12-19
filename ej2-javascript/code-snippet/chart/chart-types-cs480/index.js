@@ -21,6 +21,7 @@ var chart = new ej.charts.Chart({
             yName: 'sales',
             type: 'Line',
             marker: {
+                visible: true,
                 dataLabel: {
                     visible: true
                 }

@@ -17,7 +17,7 @@ Crosshair lines can be enabled by using [`enable`](../api/chart/crosshairSettin
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/stock-chart/getting-started-cs12/index.ts %}
 {% endhighlight %}
@@ -48,7 +48,7 @@ Tooltip label for an axis can be enabled by using [`enable`](../api/chart/cross
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/stock-chart/getting-started-cs13/index.ts %}
 {% endhighlight %}
@@ -79,7 +79,7 @@ The [`fill`](../api/chart/crosshairTooltipModel/#fill) and [`textStyle`](../api/
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/stock-chart/getting-started-cs14/index.ts %}
 {% endhighlight %}
@@ -106,11 +106,11 @@ The [`fill`](../api/chart/crosshairTooltipModel/#fill) and [`textStyle`](../api/
 
 **Snap to data**
 
-Enabling the `snapToData` property in the crosshair aligns it with the nearest data point instead of following the exact mouse position.
+Enabling the [`snapToData`](../api/chart/crosshairSettingsModel/#snaptodata) property in the crosshair aligns it with the nearest data point instead of following the exact mouse position.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/stock-chart/getting-started-cs39/index.ts %}
 {% endhighlight %}

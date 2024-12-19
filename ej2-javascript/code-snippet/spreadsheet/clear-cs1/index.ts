@@ -43,15 +43,14 @@ drpDownBtn.appendTo("#element");
 //Initialize the SpreadSheet control
 let spreadsheet: Spreadsheet = new Spreadsheet({
   sheets: [{
-                ranges: [{ dataSource: orderData }],
-                columns: [{ width: 80 }, { width: 80 },{ width: 80},
-                          { width: 160 }, { width: 100 }, {width: 150}]
-            }],
-    created: (): void => {
-        spreadsheet.cellFormat({ fontWeight: 'bold', fontSize: '12pt'}, 'A1:E1');
-        spreadsheet.cellFormat({ color: '#10c469' }, 'B1:B10');
-    },
-  }
+    ranges: [{ dataSource: orderData }],
+    columns: [{ width: 80 }, { width: 80 }, { width: 80 },
+    { width: 160 }, { width: 100 }, { width: 150 }]
+  }],
+  created: (): void => {
+    spreadsheet.cellFormat({ fontWeight: 'bold', fontSize: '12pt' }, 'A1:E1');
+    spreadsheet.cellFormat({ color: '#10c469' }, 'B1:B10');
+  },
 });
 spreadsheet.appendTo('#spreadsheet');
 

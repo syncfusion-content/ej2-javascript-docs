@@ -145,7 +145,7 @@ Any HTML elements can be displayed in the tooltip by using the [`template`](../a
 
 ## Enable highlight
 
-By setting the `enableHighlight` property to **true**, you can highlight all points in the hovered series while dimming points in other series, enhancing focus and clarity.
+By setting the [`enableHighlight`](../api/chart/tooltipSettingsModel/#enablehighlight) property to **true**, you can highlight all points in the hovered series while dimming points in other series, enhancing focus and clarity.
 
 {% if page.publishingplatform == "typescript" %}
 

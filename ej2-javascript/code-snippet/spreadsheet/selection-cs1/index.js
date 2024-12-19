@@ -16,12 +16,10 @@ var spreadsheet = new ej.spreadsheet.Spreadsheet({
     sheets: [{ name: 'Budget', ranges: [{ dataSource: budgetData }], columns: columns }],
     selectionSettings: { mode: 'Multiple' },
     created: () => {
-        spreadsheet.selectRange('B2:E6');
+        var colCount = spreadsheet.getActiveSheet().colCount;
+        spreadsheet.selectRange(ej.spreadsheet.getRangeAddress([4, 0, 4, colCount]));
     }
 });
 
- 
-
 // Render initialized Spreadsheet.
 spreadsheet.appendTo('#spreadsheet');
-

@@ -230,7 +230,7 @@ Using [`tooltipRender`](../api/accumulation-chart/iAccTooltipRenderEventArgs/) 
 
 ## Enable highlight
 
-By setting the `enableHighlight` property to **true**, the hovered pie slice is highlighted, while the remaining slices are dimmed, enhancing focus and clarity.
+By setting the [`enableHighlight`](../api/accumulation-chart/tooltipSettingsModel/#enablehighlight) property to **true**, the hovered pie slice is highlighted, while the remaining slices are dimmed, enhancing focus and clarity.
 
 {% if page.publishingplatform == "typescript" %}
 

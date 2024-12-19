@@ -1,8 +1,8 @@
 
 
 
-import { AccumulationChart, AccumulationLegend } from '@syncfusion/ej2-charts';
-AccumulationChart.Inject(AccumulationLegend);
+import { AccumulationChart, AccumulationLegend, PieSeries } from '@syncfusion/ej2-charts';
+AccumulationChart.Inject(AccumulationLegend, PieSeries);
 import { data } from './datasource.ts';
 let piechart: AccumulationChart = new AccumulationChart({
     series: [

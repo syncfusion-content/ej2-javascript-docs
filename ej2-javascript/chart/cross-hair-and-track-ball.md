@@ -108,7 +108,7 @@ The [`fill`](../api/chart/crosshairTooltip/#fill-string) and [`textStyle`](../ap
 
 **Snap to data**
 
-Enabling the `snapToData` property in the crosshair aligns it with the nearest data point instead of following the exact mouse position.
+Enabling the [`snapToData`](../api/chart/crosshairSettingsModel/#snaptodata) property in the crosshair aligns it with the nearest data point instead of following the exact mouse position.
 
 {% if page.publishingplatform == "typescript" %}
 

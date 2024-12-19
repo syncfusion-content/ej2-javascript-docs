@@ -301,8 +301,7 @@ Using the `border` property, you can customize the `width`, `color`, and `type`.
 
 ## Edge label placement
 
-Labels with long text at the edges of an axis may appear partially in the chart. To avoid this,
-use [`edgeLabelPlacement`](../api/chart/axis/) property in axis, which moves the label inside the chart area for better appearance or hides it. By default, the [`edgeLabelPlacement`](../api/chart/axis/) property is set to Shift to ensure that labels are shifted inside the chart area, avoiding any overlap or coincidence.
+Labels with long text at the edges of an axis may appear partially in the chart. To avoid this, use [`edgeLabelPlacement`](../api/chart/axisModel/#edgelabelplacement) property in axis, which moves the label inside the chart area for better appearance or hides it. By default, the [`edgeLabelPlacement`](../api/chart/axisModel/#edgelabelplacement) property is set to Shift to ensure that labels are shifted inside the chart area, avoiding any overlap or coincidence.
 
 {% if page.publishingplatform == "typescript" %}
 

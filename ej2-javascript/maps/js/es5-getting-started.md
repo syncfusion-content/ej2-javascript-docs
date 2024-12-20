@@ -175,14 +175,22 @@ map.appendTo('#element');
 > [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-pdf-export/dist/global/ej2-pdf-export.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-pdf-export/dist/global/ej2-pdf-export.min.js)
 >
 
-**Step 3:** Create a HTML page **index.html** in the **quickstart** folder and add the following CDN link references.
-```
-<script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
-<script src="https://cdn.syncfusion.com/ej2/ej2-svg-base/dist/global/ej2-svg-base.min.js" type="text/javascript"></script>
-<script src="https://cdn.syncfusion.com/ej2/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
-<script src="https://cdn.syncfusion.com/ej2/ej2-maps/dist/global/ej2-maps.min.js"></script>
+**Step 3:** Create an HTML page called **index.html** in the **quickstart** folder and add the following CDN link references for the common control script.
 
 ```
+<script src="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/dist/ej2.min.js" type="text/javascript"></script>
+
+```
+Alternatively, you can also refer the following CDN links for individual control scripts.
+
+```
+<script src="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+<script src="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-svg-base/dist/global/ej2-svg-base.min.js" type="text/javascript"></script>
+<script src="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
+<script src="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-maps/dist/global/ej2-maps.min.js"></script>
+
+```
+> Please replace **{RELEASE_VERSION}** with the latest version number of the script file referenced in the sample.
 
 **Step 4:** Now, add the div element for initiating the `Syncfusion JavaScript (ES5) Maps` control in the **index.html** by using following code.
 
@@ -190,10 +198,10 @@ map.appendTo('#element');
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
-        <script src="https://cdn.syncfusion.com/ej2/ej2-svg-base/dist/global/ej2-svg-base.min.js" type="text/javascript"></script>
-        <script src="https://cdn.syncfusion.com/ej2/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
-        <script src="https://cdn.syncfusion.com/ej2/ej2-maps/dist/global/ej2-maps.min.js"></script>
+        <script src="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+        <script src="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-svg-base/dist/global/ej2-svg-base.min.js" type="text/javascript"></script>
+        <script src="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
+        <script src="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-maps/dist/global/ej2-maps.min.js"></script>
     </head>
     <body>
         <div id='container'>
@@ -203,7 +211,21 @@ map.appendTo('#element');
 </html>
 ```
 
-**Step 5:** Add the Maps control to the div element with `id` attribute as "**element**" using the below code. The below code can be added as separate script file (index.js) in `~/quickstart/index.js` and refer it in the **script** tag within the **body** tag.
+**Step 5:** Add the data **world_map.js** as a script file within the **head** tag of the HTML code.
+
+```html
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <!-- Add the worldmap -->
+        <script src="world_map.js"></script>
+    </head>
+</html>
+```
+
+> Note: Refer the data values for **world_map** [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/world_map1557035892).
+
+**Step 6:** Add the Maps control to the div element with `id` attribute as "**element**" using the below code. The below code can be added as separate script file (index.js) in `~/quickstart/index.js` and refer it in the **script** tag within the **body** tag. The JSON object in the **world_map.js** must be added to the `shapeData` property of the `layers` property in the Maps control to render the world map.
 
 ```
 var map = new ej.maps.Maps({
@@ -231,21 +253,9 @@ map.appendTo('#element');
 </html>
 ```
 
-**Step 6:** Add the data **world_map.js** as a script file within the **head** tag of the HTML code.
-
-```html
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <!-- Add the worldmap -->
-        <script src="world_map.js"></script>
-    </head>
-</html>
-```
-
-> Note: Refer the data values for [`world_map`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/world_map1557035892) here. These data must be referred as script file in the HTML code.
-
 **Step 7:** Now, run the **index.html** in web browser, it will render the **Syncfusion JavaScript maps** control.
+
+The following example shows a basic Maps control.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -258,7 +268,6 @@ map.appendTo('#element');
         
 {% previewsample "page.domainurl/code-snippet/maps/default-map-cs54" %}
 
-> Note: Refer the data values for [`world_map`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/world_map1557035892) here.
 
 <!-- markdownlint-disable MD009 -->
 

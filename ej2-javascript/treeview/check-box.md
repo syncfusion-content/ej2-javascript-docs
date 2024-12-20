@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # Check box in ##Platform_Name## Treeview control
 
-The TreeView component allows you to check more than one node in TreeView without affecting the UI's appearance by enabling the [showCheckBox](../api/treeview#showcheckbox) property. When this property is enabled, checkbox appears before each TreeView node text.
+The TreeView component allows you to check more than one node in TreeView without affecting the UI's appearance by enabling the [showCheckBox](../api/treeview#showcheckbox) property. When this property is enabled, a checkbox appears before each TreeView node text.
 
-* If one of the child nodes is not in a checked state, then the parent node will be in an intermediate state.
+* If any child node is unchecked, then the parent node will be in an intermediate state.
 
-* If all the child nodes are in checked state, then the parent node's state will also be checked.
+* If all child nodes are checked, then the parent node will also be checked.
 
-* If a parent node is checked, then all the child nodes' state will also be checked.
+* If a parent node is checked, all child nodes will be checked as well.
 
 By default, the checkbox state of parent and child nodes are dependent on each other. If you need independent checked state, you can achieve it using the [`autoCheck`](../api/treeview#autocheck) property.
 

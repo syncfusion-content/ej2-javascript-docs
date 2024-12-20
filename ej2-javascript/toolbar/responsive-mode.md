@@ -160,3 +160,76 @@ In the following code sample, text is only visible in the popup container and no
 
 {% previewsample "page.domainurl/code-snippet/toolbar/toolbar-popup-pop-priority-cs1" %}
 {% endif %}
+
+## MultiRow
+
+The `MultiRow` display mode allows the Toolbar to wrap the toolbar items to the next line when the available space is exhausted. This mode is ideal for scenarios where space is limited, but all commands need to be visible at once.
+
+* The Toolbar automatically arranges the items into multiple lines without the need for scrolling.
+* This ensures that users have immediate access to all toolbar items without additional interaction such as scrolling or clicking a popup.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/toolbar/toolbar-multirow/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/toolbar/toolbar-multirow/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/toolbar/toolbar-multirow" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/toolbar/toolbar-multirow/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/toolbar/toolbar-multirow/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/toolbar/toolbar-multirow" %}
+{% endif %}
+
+![Toolbar multirow](./images/toolbar-multirow.png)
+
+## Extended
+
+`Extended` mode hides the overflowing toolbar items in a subsequent row. Users can access these items by clicking on expand icons provided at the end of the Toolbar.
+
+* In this mode, the Toolbar maintains a clean top row and allows extra items to be rendered into additional rows.
+* Clicking the expand icons will dynamically adjust the Toolbar to reveal hidden toolbar items.
+* If the popup content overflows the height of the page, remaining elements will be hidden.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/toolbar/toolbar-extended/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/toolbar/toolbar-extended/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/toolbar/toolbar-extended" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/toolbar/toolbar-extended/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/toolbar/toolbar-extended/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/toolbar/toolbar-extended" %}
+{% endif %}
+
+![Toolbar extended](./images/toolbar-extended.gif)

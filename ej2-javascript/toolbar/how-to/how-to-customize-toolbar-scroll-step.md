@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # How to customize toolbar scroll step in ##Platform_Name## Toolbar control
 
-Toolbar supports to customize the scrolling distance when you click the left and right side navigation icons. we can customize `ScrollStep` property for scrolling distance. Refer to the following code example.
+The Toolbar supports customizing the scrolling distance when you click the left and right navigation icons. You can customize the [`scrollStep`](../../api/toolbar/item#scrollStep) property for scrolling distance. Refer to the following code example.
 
-* By using Toolbar scrollStep property, pass a required value to customize toolbar scrollStep.
+* By using the Toolbar's [`scrollStep`](../../api/toolbar/item#scrollStep) property, pass a required value to customize the toolbar scroll step.
 
 {% if page.publishingplatform == "typescript" %}
 

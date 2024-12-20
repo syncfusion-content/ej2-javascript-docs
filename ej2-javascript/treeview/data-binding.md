@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Data binding in ##Platform_Name## Treeview control
 
-The TreeView component provides the option to load data either from local data sources or from remote data services. This can be done through `dataSource` property that is a member of the [fields](../api/treeview#fields) property. The `dataSource` property supports array of JavaScript objects and [DataManager](../api/data/dataManager/). It also supports different kinds of data services such as OData, OData V4, Web API, URL, and JSON with the help of `DataManager` adaptors.
+The TreeView component provides the option to load data either from local data sources or from remote data services. This can be done through the `dataSource` property, which is a member of the [fields](../api/treeview#fields) property. The `dataSource` property supports array of JavaScript objects and [DataManager](../api/data/dataManager/). It also supports different kinds of data services such as OData, OData V4, Web API, URL, and JSON with the help of `DataManager` adaptors.
 
-TreeView has `load on demand` (Lazy load), by default. It reduces the bandwidth size when consuming huge data. It loads first level nodes initially, and when parent node is expanded,  loads the child nodes based on the `parentID/child` member.
+TreeView has `load on demand` (Lazy load), by default. It reduces the bandwidth size when consuming huge data. It initially loads first-level nodes, and when a parent node is expanded, it loads child nodes based on the `parentID/child` member.
 
 By default, the `loadOnDemand` is set to true. By disabling this property, all the tree nodes are rendered at the beginning itself.
 
@@ -21,7 +21,7 @@ You can use the [`dataBound`](../api/treeview#databound) event to perform action
 
 ## Local data
 
-To bind local data to the TreeView, you can assign a JavaScript object array to the [dataSource](../api/treeview/fieldsSettingsModel#datasource) property. The TreeView component requires three  fields (ID, text, and parentID) to render local data source. When mapper fields are not specified, it takes the default values as the mapping fields. Local data source can also be provided as an instance of the `DataManager`. It supports two kinds of local data binding methods.
+To bind local data to the TreeView, you can assign a JavaScript object array to the [dataSource](../api/treeview/fieldsSettingsModel#datasource) property. The TreeView component requires three  fields (ID, text, and parentID) to render the local data source. When mapper fields are not specified, it takes the default values as the mapping fields. The local data source can also be provided as an instance of the `DataManager`. It supports two kinds of local data binding methods.
 
 * Hierarchical data
 
@@ -42,6 +42,9 @@ In the following example, **code**, **name**, and **countries** columns from hie
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/treeview/data-binding/hierarchical-data-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/treeview/data-binding/hierarchical-data-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/treeview/data-binding/hierarchical-data-cs1" %}
@@ -54,6 +57,9 @@ In the following example, **code**, **name**, and **countries** columns from hie
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/treeview/data-binding/hierarchical-data-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/treeview/data-binding/hierarchical-data-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -79,6 +85,9 @@ In the following example, **id**, **pid**, **hasChild**, and **name** columns fr
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/treeview/data-binding/self-referential-data-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/treeview/data-binding/self-referential-data-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/treeview/data-binding/self-referential-data-cs1" %}
@@ -91,6 +100,9 @@ In the following example, **id**, **pid**, **hasChild**, and **name** columns fr
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/treeview/data-binding/self-referential-data-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/treeview/data-binding/self-referential-data-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -137,6 +149,9 @@ The **OrderID**, **EmployeeID**, and **ShipName** columns from orders table have
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/treeview/data-binding/remote-data-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/treeview/data-binding/remote-data-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/treeview/data-binding/remote-data-cs1" %}
@@ -149,6 +164,9 @@ The **OrderID**, **EmployeeID**, and **ShipName** columns from orders table have
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/treeview/data-binding/remote-data-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/treeview/data-binding/remote-data-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

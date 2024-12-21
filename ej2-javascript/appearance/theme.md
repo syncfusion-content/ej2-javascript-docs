@@ -15,8 +15,8 @@ The Syncfusion JavaScript library has provided the below list of in-built themes
 
 |Theme | Style Sheet Name |
 |--------|--------|
-|Tailwind 3.4 | tailwind3.4.css |
-|Tailwind 3.4 Dark | tailwind3.4-dark.css |
+|Tailwind 3.4 | tailwind3.css |
+|Tailwind 3.4 Dark | tailwind3-dark.css |
 |Bootstrap 5.3 | bootstrap5.3.css |
 |Bootstrap 5.3 Dark | bootstrap5.3-dark.css |
 |Fluent 2 | fluent2.css |
@@ -175,8 +175,8 @@ https://cdn.syncfusion.com/ej2/<version>/<theme_name>-lite.css
 
 | Theme Name | CDN Reference |
 |--- | --- |
-| Tailwind 3.4 | [https://cdn.syncfusion.com/ej2/27.1.48/tailwind3.4.css](https://cdn.syncfusion.com/ej2/27.1.48/tailwind3.4.css) |
-| Tailwind 3.4 Dark | [https://cdn.syncfusion.com/ej2/27.1.48/tailwind3.4-dark.css](https://cdn.syncfusion.com/ej2/27.1.48/tailwind3.4-dark.css) |
+| Tailwind 3.4 | [https://cdn.syncfusion.com/ej2/28.1.33/tailwind3.css](https://cdn.syncfusion.com/ej2/28.1.33/tailwind3.css) |
+| Tailwind 3.4 Dark | [https://cdn.syncfusion.com/ej2/28.1.33/tailwind3-dark.css](https://cdn.syncfusion.com/ej2/28.1.33/tailwind3-dark.css) |
 | Bootstrap 5.3 | [https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.3.css](https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.3.css) |
 | Bootstrap 5.3 Dark | [https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.3-dark.css](https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.3-dark.css) |
 | Fluent 2 | [https://cdn.syncfusion.com/ej2/27.1.48/fluent2.css](https://cdn.syncfusion.com/ej2/27.1.48/fluent2.css) |

@@ -44,6 +44,9 @@ Below are examples of how CSS variables can be defined for these themes:
 {% highlight css tabtitle="bootstrap5.3.css" %}
 {% include code-snippet/common/css-value-cs1/bootstrap5.3.css %}
 {% endhighlight %}
+{% highlight css tabtitle="tailwind3.4.css" %}
+{% include code-snippet/common/css-value-cs1/tailwind3.css %}
+{% endhighlight %}
 {% endtabs %}
         
 {% elsif page.publishingplatform == "javascript" %}
@@ -77,11 +80,11 @@ To access themes provided by Syncfusion, you have two primary options,
 |Package  | [Material 3 Light](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme) | [Material 3 Dark](https://www.npmjs.com/package/@syncfusion/ej2-material3-dark-theme) |
 |  | [Fluent 2 Light](https://www.npmjs.com/package/@syncfusion/ej2-fluent2-theme) | [Fluent 2 Dark](https://www.npmjs.com/package/@syncfusion/ej2-fluent2-dark-theme) |
 |  | [Bootstrap 5.3 Light](https://www.npmjs.com/package/@syncfusion/ej2-bootstrap5.3-theme) | [Bootstrap 5.3 Dark](https://www.npmjs.com/package/@syncfusion/ej2-bootstrap5.3-dark-theme) |
-|  | Tailwind 3.4 Light | Tailwind 3.4 Dark |
+|  | [Tailwind 3.4 Light](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme) | [Tailwind 3.4 Dark](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-dark-theme) |
 | CDN  | [Material 3 Light](https://cdn.syncfusion.com/ej2/27.1.48/material3.css)  |  [Material 3 Dark](https://cdn.syncfusion.com/ej2/27.1.48/material3-dark.css)  |
 |  |  [Fluent 2 light](https://cdn.syncfusion.com/ej2/27.1.48/fluent2.css)  |  [Fluent 2 Dark](https://cdn.syncfusion.com/ej2/27.1.48/fluent2-dark.css)  |
 |  |  [Bootstrap5.3 light](https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.3.css)  |  [Bootstrap 5.3 Dark](https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.3-dark.css)  |
-|  | Tailwind 3.4 Light | Tailwind 3.4 Dark |
+|  | [Tailwind 3.4 Light](https://cdn.syncfusion.com/ej2/28.1.33/tailwind3.css) | [Tailwind 3.4 Dark](https://cdn.syncfusion.com/ej2/28.1.33/tailwind3-dark.css) |
 
 ### Color Customization in themes
 

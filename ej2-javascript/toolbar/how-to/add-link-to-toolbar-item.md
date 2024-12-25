@@ -15,6 +15,8 @@ Toolbar supports to add link by using the template configuration. The Toolbar ca
 
 The template property also allows getting template content through query `selector`. Here, anchor element 'ID' attribute is specified in the template.
 
+The Toolbar supports adding links using the [`template`](../../api/toolbar/item#template) configuration. It can be rendered by either item-based collections or HTML elements.The template property can be specified as an `HTML element`, either as a `string` or a `query selector`. The template property also allows obtaining template content through a query `selector`. Here, the anchor element's 'ID' attribute is specified in the template.
+
 ```ts
 template: "#AnchorTemplate"
 

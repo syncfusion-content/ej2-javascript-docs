@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Enable or disable toolbar item in ##Platform_Name## Toolbar control
 
-The [`disabled`](../../api/toolbar/itemModel/#disabled) property of the Toolbar item is used to enable/disable the item by setting false/true value to the property. In the following code example initially paste action will be disabled. On clicking the cut or copy button, the paste button will be enabled.
+The [`disabled`](../../api/toolbar/itemModel/#disabled) property of the Toolbar item is used to enable or disable the item by setting the value to false or true. In the following code example, the paste action is initially disabled. On clicking the cut or copy button, the paste button will be enabled.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/toolbar/scrollstep-cs1/index.ts %}
 {% endhighlight %}

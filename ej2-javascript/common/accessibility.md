@@ -27,8 +27,6 @@ The accessibility of the controls consists of the following standards and aspect
 
 * [Section 508](https://www.section508.gov/) - It is a set of guidelines for making electronic and information technology (EIT) accessible to people with disabilities. These standards apply to federal agencies in the United States, and they are based on the Web Content Accessibility Guidelines (WCAG).
 
-    * [Voluntary Product Accessibility Template](https://www.itic.org/policy/accessibility/vpat) - It offers a structured format for detailing how accessible information and communication technology (ICT) products and services are, allowing organizations to communicate their conformance with accessibility standards clearly and effectively. You can download the latest version of the Syncfusion VPAT document [here](https://ej2.syncfusion.com/accessibility/Syncfusion-VPAT2.5.docx).
-
 * [WAI-ARIA](https://www.w3.org/WAI/ARIA/) - WAI-ARIA stands for "Web Accessibility Initiative - Accessible Rich Internet Applications." It is a set of technical specifications and guidelines developed by the World Wide Web Consortium (W3C) as part of the Web Accessibility Initiative (WAI). WAI-ARIA is designed to enhance the accessibility of dynamic web content, particularly web applications and rich internet applications (RIAs), for people with disabilities. WAI-ARIA provides a set of roles, states, and properties that can be added to HTML elements to provide additional context and information about the purpose and behavior of those elements. This can help assistive technologies better understand and interpret web content and interact with web applications.
 
 * [Keyboard navigation](https://www.w3.org/TR/WCAG22/#keyboard-accessible) - It refers to the ability to use a keyboard to interact with and navigate through a user interface. It is an important aspect of web accessibility, as it allows people who cannot use a mouse or other pointing device to access and use web content and applications.
@@ -79,34 +77,14 @@ Ensuring the accessibility of Syncfusion ##Platform_Name## controls is crucial f
 
 Syncfusion ##Platform_Name## controls will keep improving when there is anything required. It also involves client feedback to make the control more accessible.
 
+## Voluntary Product Accessibility Template
+
+[Voluntary Product Accessibility Template](https://www.itic.org/policy/accessibility/vpat) - It offers a structured format for detailing how accessible information and communication technology (ICT) products and services are, allowing organizations to communicate their conformance with accessibility standards clearly and effectively. You can download the latest version of the Syncfusion VPAT document [here](https://ej2.syncfusion.com/accessibility/Syncfusion-VPAT2.5.docx).
+
 ## Accessibility support for specific controls
 
 Consult the control-specific documents below for detailed information about how Syncfusion ##Platform_Name## controls ensure compliance with accessibility standards, encompassing Section 508, WAI-ARIA, WCAG 2.2, keyboard navigation, and more.
 
-<style>
-#table
-{
-width: 100%;
-line-height: 2 !important;
-}
-
-#table th {
-    border-bottom:1px solid #dedede !important;
-    font-weight: bold;
-}
-
-#table tr
-{
-border:1px solid #dedede !important;
-}
-
-#table td
-{
-border:0 !important;
-vertical-align: top;
-}
-
-</style>
 <table id="table">
     <thead>
         <tr>

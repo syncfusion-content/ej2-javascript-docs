@@ -11,11 +11,12 @@ domainurl: ##DomainURL##
 
 # Item configuration in ##Platform_Name## Toolbar control
 
-The Toolbar can be rendered by defining an array of [`items`](../api/toolbar/#items).  Items can be constructed with the following built-in command types or item template.
+The Toolbar can be rendered by defining an array of [`items`](../api/toolbar/#items). Items can be constructed using the following built-in command types or item templates.
 
 ## Button
 
-`Button` is the default command [`type`](../api/toolbar/item#type), and it can be rendered by using the [`text`](../api/toolbar/item#text) property.
+`Button` is the default command [`type`](../api/toolbar/item#type), and it can be rendered using the [`text`](../api/toolbar/item#text) property.
+
 Properties of the button command type:
 
   Property   | Description
@@ -25,7 +26,7 @@ Properties of the button command type:
   [`prefixIcon`](../api/toolbar/item#prefixicon) | Defines the class used to specify an icon for the button. The icon is `positioned before` the text if text is available or the icon alone button is rendered.
 [`suffixIcon`](../api/toolbar/item#suffixicon) | Defines the class used to specify an icon for the button. The icon is `positioned after` the text if text is available. If both [`prefixIcon`](../api/toolbar/item#prefixicon) and [`suffixIcon`](../api/toolbar/item#suffixicon) are specified, only `prefixIcon` is considered.
   [`width`](../api/toolbar/item#width)   | Used to set the [`width`](../api/toolbar/item#width) of the button.
-  [`align`](../api/toolbar/item#align)  | Specifies the location for aligning Toolbar items.
+  [`align`](../api/toolbar/item#align)  | Specifies the position for aligning Toolbar items.
 
 ## Separator
 

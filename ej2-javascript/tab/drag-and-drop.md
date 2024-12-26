@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # Drag and drop in ##Platform_Name## Tab control
 
-The Tab component allows you to drag and drop any item by setting [allowDragAndDrop](../api/tab#allowdraganddrop)&nbsp;to **true**. Items can be reordered to any place by dragging and dropping them onto the desired location.
+The Tab component allows you to drag and drop any item by setting [allowDragAndDrop](../api/tab#allowdraganddrop) to **true**. Items can be reordered to any place by dragging and dropping them onto the desired location.
 
-* If you need to prevent dragging action for a particular item, the [`onDragStart`](../api/tab#ondragstart) event can be used which will trigger when the item drag is started. If you need to prevent dropping action for a particular item, the [`dragged`](../api/tab#dragged) event can be used which will trigger when the drag action is stopped.
+* To prevent dragging action for a particular item, use the [`onDragStart`](../api/tab#ondragstart) event, which triggers when the item drag is started. To prevent dropping action for a particular item, use the [`dragged`](../api/tab#dragged) event, which triggers when the drag action is stopped.
 
-* The [`dragArea`](../api/tab#dragArea) defines the area in which the draggable element movement will be occurring. Outside that area will be restricted for the draggable element movement.
+* The [`dragArea`](../api/tab#dragArea) defines the area in which the draggable element movement will occur. Movement outside that area will be restricted for the draggable element.
 
-* The [`onDragStart`](../api/tab#ondragstart) event will be triggered before dragging the item from Tab.
+* The [`onDragStart`](../api/tab#ondragstart) event will be triggered before dragging the item from the Tab.
 
 * The [`dragging`](../api/tab#dragging) event will be triggered when the Tab item is being dragged.
 
@@ -27,7 +27,7 @@ In the following sample, the [allowDragAndDrop](../api/tab#allowdraganddrop) pro
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/tab/drag-and-drop/default-cs1/index.ts %}
 {% endhighlight %}
@@ -54,13 +54,13 @@ In the following sample, the [allowDragAndDrop](../api/tab#allowdraganddrop) pro
 
 ## Drag and drop item between tabs
 
-It is possible to drag and drop the tab items between two tabs, by manually saving those dropped items as new tab item data through the `addTab` method of Tab and removing the dragged item through the `removeTab` method of Tab.
+It is possible to drag and drop tab items between two tabs by manually saving the dropped items as new tab item data through the [`addTab`](../api/tab#addtab) method and removing the dragged item through the [`removeTab`](../api/tab#removetab) method of the Tab component.
 
-In this example, we have used the tab control as an external source, and the item from the tab component is dragged and dropped onto another Tab. Therefore, it is necessary to use the `onDragStart` and `dragged` event of the Tab component, where we can form an event object and save it using the `addTab` method of the Tab and remove the dragged item through `removeTab` method of Tab using the dragged item index.
+In this example, we have used one tab control as an external source, and items from this tab component can be dragged and dropped onto another Tab. We use the [`onDragStart`](../api/tab#ondragstart) and [`dragged`](../api/tab#dragged) events of the Tab component to form an event object, save it using the [`addTab`](../api/tab#addtab) method, and remove the dragged item through the [`removeTab`](../api/tab#removetab) method using the dragged item index.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/tab/drag-and-drop/tab-to-tab-cs1/index.ts %}
 {% endhighlight %}
@@ -87,13 +87,13 @@ In this example, we have used the tab control as an external source, and the ite
 
 ## Drag and drop items to external source
 
-It is possible to drag and drop the items to any of the external sources from the Tab, by manually saving those dropped items as new node data through the `addNodes` method of Treeview and removing the dragged item through the `removeTab` method of Tab.
+It is possible to drag and drop items from the Tab to any external source by manually saving the dropped items as new node data through the [`addNodes`](../api/treeview#addnodes) method of the external component and removing the dragged item through the [`removeTab`](../api/tab#removetab) method of the Tab component.
 
-In this example, we have used the tree view control as an external source, and the item from the tab component is dragged and dropped onto the child nodes of the tree view component. Therefore, it is necessary to use  the `dragged` event of the Tab component, where we can form an event object and save it using the `addNodes` method of the Treeview and remove the dragged item through the `removeTab` method of Tab using the dragged item index.
+In this example, we have used the TreeView control as an external source. Items from the Tab component can be dragged and dropped onto the child nodes of the TreeView component. We use the `dragged` event of the Tab component to form an event object, save it using the [`addNodes`](../api/treeview#addnodes) method of the TreeView, and remove the dragged item through the [`removeTab`](../api/tab#removetab) method of the Tab using the dragged item index.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/tab/drag-and-drop/tab-to-treeview-cs1/index.ts %}
 {% endhighlight %}
@@ -120,13 +120,14 @@ In this example, we have used the tree view control as an external source, and t
 
 ## Drag and drop items from external source
 
-It is possible to drag and drop the items from any of the external sources into the Tab, by manually saving those dropped items as new item data through the `addTab` method of Tab and removing the dragged node through the `removeNodes` method of Treeview.
+It is possible to drag and drop items from any external source into the Tab by manually saving the dropped items as new item data through the [`addTab`](../api/tab#addtab) method of the Tab component and removing the dragged node through the [`removeNodes`](../api/treeview#removenodes) method of the external component.
 
-In this example, we have used the tree view control as an external source, and the child nodes from the tree view component are dragged and dropped onto the Tab. Therefore, it is necessary to use the `nodeDragStop` event of the Treeview component, where we can form an event object and save it using the `addTab` method of the Tab and remove the dragged node through the `removeNodes` method of Treeview.
+In this example, we have used the TreeView control as an external source. Child nodes from the TreeView component can be dragged and dropped onto the Tab. We use the [`nodeDragStop`](../api/treeview#nodedragstop) event of the TreeView component to form an event object, save it using the [`addTab`](../api/tab#addtab) method of the Tab, and remove the dragged node through the [`removeNodes`](../api/treeview#removenodes) method of the TreeView.
+
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/tab/drag-and-drop/treeview-to-tab-cs1/index.ts %}
 {% endhighlight %}

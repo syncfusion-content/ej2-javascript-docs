@@ -11,19 +11,21 @@ domainurl: ##DomainURL##
 
 # Adaptive in ##Platform_Name## Tab control
 
-The following section explains about rendering Tab when its width exceeds the viewable area or particularly in a given [`width`](../api/tab#width). The available modes are as follows:
+The following section explains how to render the Tab when its width exceeds the viewable area, or for a specified [`width`](../api/tab#width). The available modes are as follows:
 
 * Scrollable
 * Popup
+* MultiRow
+* Extended
 
 ## Scrollable
 
-The default overflow mode is Scrollable. Scrollable display mode supports displaying the Tab header items in a single line with horizontal scrolling enabled, when the item overflows to the available space.
+The default [`overflowMode`](../api/tab#overflowmode) is Scrollable. The Scrollable display mode supports displaying the Tab header items in a single line with horizontal scrolling enabled when the items overflow the available space.
 
-* The right and left navigation arrow is added at the start and end of the Tab header through which user can navigate towards overflowed items of the Tab header.
-* You can also see the overflowed items using touch and swipe action on the header and content section.
-* By default, navigation icon in the left direction is disabled, you can see the overflowed items by moving in the right direction.
-* By clicking the arrow or by holding the arrow continuously, you can see the overflowed items.
+* The right and left navigation arrows are added at the start and end of the Tab header, allowing the user to navigate towards overflowed items in the Tab header.
+* You can also view the overflowed items using touch and swipe actions on the header and content section.
+* By default, the navigation icon in the left direction is disabled, but you can view the overflowed items by moving in the right direction.
+* By clicking or holding the arrow continuously, you can view the overflowed items.
 
 ![Scrollable tab](./images/tabscroll.gif)
 
@@ -60,11 +62,10 @@ The default overflow mode is Scrollable. Scrollable display mode supports displa
 
 ## Popup
 
-The Popup is the another type of [`overflowMode`](../api/tab#overflowmode) in which the Tab container holds the items that can be placed within the available space. The rest of the overflowing items for which there is no space to fit within the viewing area are moved to overflow popup container.
+The Popup is another type of [`overflowMode`](../api/tab#overflowmode) in which the Tab container holds items that can be accommodated within the available space. The rest of the overflowing items, for which there is no space to fit within the viewing area, are moved to an overflow popup container.
 
-* The items placed in popup can be viewed by opening the popup with the help of drop-down icon given at the end of the Tab header.
-
-* If the popup height exceeds the height of the visible area, you can scroll through the popup items and select one.
+* The items placed in the popup can be viewed by opening the popup using the drop-down icon at the end of the Tab header.
+* If the popup height exceeds the visible area height, you can scroll through the popup items and select one.
 
 ![Tab with popup](./images/popup.gif)
 

@@ -11,13 +11,17 @@ domainurl: ##DomainURL##
 
 # Customize selected tab styles in ##Platform_Name## Tab control
 
-You can customize the Tab style by overriding its header and active tab CSS classes. Define HTML string for adding animation and customizing the Tab header and pass it to [`text`](../../api/tab/header#text) property. Now you can override the style using custom CSS classes added to the Tab elements.
+You can customize the Tab style by overriding its header and active tab CSS classes. To do this, follow these steps:
 
-> You can add the custom class into Tab component using [`cssClass`](../../api/toolbar/item#cssclass) property which is used to customize the Tab component.
+1. Define an HTML string to add animation and customize the Tab header.
+2. Pass this HTML string to the [`text`](../../api/tab/header#text) property.
+3. Override the style using custom CSS classes added to the Tab elements.
+
+> You can add a custom class to the Tab component using the [`cssClass`](../../api/toolbar/item#cssclass) property, which is used to customize the Tab component along with the respective CSS selectors.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/tab/active-tab-style-cs1/index.ts %}
 {% endhighlight %}

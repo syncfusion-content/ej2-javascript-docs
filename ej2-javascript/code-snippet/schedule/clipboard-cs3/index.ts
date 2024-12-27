@@ -1,9 +1,9 @@
 
 
 import {
-    Schedule, Day, Week, WorkWeek, Month, Agenda, CellClickEventArgs, BeforePasteEventArgs
+    Schedule, Day, Week, WorkWeek, Month, Agenda, BeforePasteEventArgs
 } from '@syncfusion/ej2-schedule';
-import {  Grid } from '@syncfusion/ej2-grids';
+import { Grid } from '@syncfusion/ej2-grids';
 
 import { scheduleData } from './datasource.ts';
 
@@ -36,7 +36,7 @@ let scheduleObj: Schedule = new Schedule({
                 Description: dataArray[3]
             };
             args.data = [result];
-        }    
+        }
     }
 });
 scheduleObj.appendTo('#Schedule');
@@ -91,7 +91,7 @@ const gridObj: Grid = new Grid({
     allowSelection: true,
     height: 400,
     cssClass: 'drag-grid',
-    width: '550px',
+    width: '40%',
     columns: [
         { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 90 },
         { field: 'CustomerID', headerText: 'Customer ID', width: 100 },

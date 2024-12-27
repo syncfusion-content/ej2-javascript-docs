@@ -10,6 +10,7 @@
   top: 45%;
   left: 45%;
 }
+
 .schedule-context-menu .e-menu-item .new::before {
   content: '\e7f9';
 }

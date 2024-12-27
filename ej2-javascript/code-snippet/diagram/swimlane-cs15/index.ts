@@ -6,7 +6,7 @@ import {
   } from '@syncfusion/ej2-diagrams';
   // initialize Diagram component
   let diagram: Diagram = new Diagram({
-    width: '100%',
+    width: '80%',
     height: '600px',
   });
   // render initialized Diagram
@@ -118,6 +118,7 @@ import {
   //Initializes the symbol palette
   let palette: SymbolPalette = new SymbolPalette({
     expandMode: 'Multiple',
+    width:'20%',
     palettes: [
       {
         id: 'swimlane',

@@ -3,7 +3,7 @@ var scheduleObj = new ej.schedule.Schedule({
     height: '550px',
     selectedDate: new Date(2024, 1, 15),
     eventSettings: {
-    dataSource: scheduleData
+        dataSource: scheduleData
     },
     allowClipboard: true,
     showQuickInfo: false,
@@ -19,7 +19,7 @@ var scheduleObj = new ej.schedule.Schedule({
                 Description: dataArray[3]
             };
             args.data = [result];
-        }    
+        }
     }
 });
 scheduleObj.appendTo('#Schedule');
@@ -74,7 +74,7 @@ const gridObj = new Grid({
     allowSelection: true,
     height: 400,
     cssClass: 'drag-grid',
-    width: '550px',
+    width: '40%',
     columns: [
         { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 90 },
         { field: 'CustomerID', headerText: 'Customer ID', width: 100 },

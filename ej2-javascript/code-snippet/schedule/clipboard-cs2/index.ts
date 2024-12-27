@@ -1,35 +1,34 @@
 
 
-import { closest, isNullOrUndefined, removeClass, remove, extend } from '@syncfusion/ej2-base';
-import { Query, DataManager } from '@syncfusion/ej2-data';
-import { Schedule, Day, Week, WorkWeek, Month, Resize, DragAndDrop, DragEventArgs, TimelineViews, TimelineMonth } from '@syncfusion/ej2-schedule';
+import { closest, isNullOrUndefined, remove } from '@syncfusion/ej2-base';
+import { Schedule, Day, Week, WorkWeek, Month, Resize, DragAndDrop, TimelineViews, TimelineMonth } from '@syncfusion/ej2-schedule';
 import {
     ContextMenu, MenuItemModel, BeforeOpenCloseMenuEventArgs, MenuEventArgs
 } from '@syncfusion/ej2-navigations';
 import { scheduleData } from './datasource.ts';
 
-Schedule.Inject(Week, DragAndDrop, Resize, WorkWeek, Day, Month,TimelineViews, TimelineMonth);
+Schedule.Inject(Week, DragAndDrop, Resize, WorkWeek, Day, Month, TimelineViews, TimelineMonth);
 
 let scheduleObj: Schedule = new Schedule({
-        width: '100%',
-        height: '550px',
-        views: [
-            { option: 'Week' },
-            { option: 'Day' },
-            { option: 'Month' },
-            { option: 'TimelineDay' },
-            { option: 'TimelineWeek' },
-            { option: 'TimelineWorkWeek' },
-            { option: 'TimelineMonth' },
-        ],
-        currentView: 'Week',
-        selectedDate: new Date(2024, 1, 15),
-        allowClipboard: true,
-        showQuickInfo: false,
-        eventSettings: { dataSource: scheduleData },
-        destroyed: () => {
-            menuObj.destroy();
-        }
+    width: '100%',
+    height: '550px',
+    views: [
+        { option: 'Week' },
+        { option: 'Day' },
+        { option: 'Month' },
+        { option: 'TimelineDay' },
+        { option: 'TimelineWeek' },
+        { option: 'TimelineWorkWeek' },
+        { option: 'TimelineMonth' },
+    ],
+    currentView: 'Week',
+    selectedDate: new Date(2024, 1, 15),
+    allowClipboard: true,
+    showQuickInfo: false,
+    eventSettings: { dataSource: scheduleData },
+    destroyed: () => {
+        menuObj.destroy();
+    }
 });
 scheduleObj.appendTo('#Schedule');
 

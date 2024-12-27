@@ -102,6 +102,7 @@ var swimlaneShapes = [
   }
   var palette = new ej.diagrams.SymbolPalette({
     expandMode: 'Multiple',
+    width:'20%',
     palettes: [
       {
         id: 'swimlane',
@@ -137,7 +138,7 @@ var swimlaneShapes = [
   
   let diagram = new ej.diagrams.Diagram(
     {
-      width: 900,
+      width: '80%',
       height: 900,
     },
     '#element'

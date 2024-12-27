@@ -42,4 +42,4 @@ You can include action buttons to the toast control by adding the [buttons](../a
 
 ## See Also
 
-* [How to add dynamic template](./how-to/add-dynamic-template/)
+* [How to add dynamic template](./how-to/add-dynamic-template)

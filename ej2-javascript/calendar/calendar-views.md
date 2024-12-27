@@ -19,7 +19,7 @@ The Calendar has the following predefined views that provide a flexible way to n
 | year | Displays the months in a year. |
 | decade | Displays the years in a decade. |
 
-When view is defined to the [`start`](../api/calendar#start) property of the Calendar, it allows you to set the initial view on rendering.
+When view is defined to the [`start`](../api/calendar/#start) property of the Calendar, it allows you to set the initial view on rendering.
  
 The following example demonstrates how to set the `year` as the start view of the Calendar.
 
@@ -52,7 +52,7 @@ The following example demonstrates how to set the `year` as the start view of th
 
 ## View restriction
 
-Calendar view navigation can be restricted by defining the  [`start`](../api/calendar#start) and [`depth`](../api/calendar#depth) property that allows you to select the date from that view.
+Calendar view navigation can be restricted by defining the  [`start`](../api/calendar/#start) and [`depth`](../api/calendar/#depth) property that allows you to select the date from that view.
 
 By defining the start and depth property with the different view, drill-down and drill-up views navigation can be limited to the user. Calendar views will be drill-down up to the view which is set in `depth` property and drill-up up to the view which is set in `start` property.
 

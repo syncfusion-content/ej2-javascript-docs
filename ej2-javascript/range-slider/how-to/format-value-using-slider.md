@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Format value using slider in ##Platform_Name## Range slider control | Syncfusion
+title: Format value using Slider in ##Platform_Name## Range Slider | Syncfusion
 description: Learn here all about Format value using slider in Syncfusion ##Platform_Name## Range slider control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Format value using slider 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Format value using slider in ##Platform_Name## Range slider control
+# Format Value using Slider in ##Platform_Name## Range Slider Control
 
 ## Achieve date format
 

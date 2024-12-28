@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Add nested tabs in ##Platform_Name## Tab control
 
-Tab supports to render the nested level of Tabs by using `content` property. You can add the nested Tab element inside the parent Tab `content` property. To render the nested Tab, initialize the component using the id of Tab from a [`selected`](../../api/tab#selected) event handler.
+Tab supports to render the nested level of Tabs by using `content` property. You can add the nested Tab element inside the parent Tab `content` property. To render the nested Tab, initialize the component using the id of Tab from a [`selected`](../../api/tab/#selected) event handler.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Load webp format image in ##Platform_Name## Carousel control | Syncfusion
+title: Load webp format image in ##Platform_Name## Carousel | Syncfusion
 description: Learn here all about how to load webp format image in Syncfusion ##Platform_Name## Carousel control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Load images in webp format 

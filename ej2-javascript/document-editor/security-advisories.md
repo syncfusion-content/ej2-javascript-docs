@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Security Advisories in  ##Platform_Name## Document editor control | Syncfusion
+title: Security Advisories in  ##Platform_Name## Document Editor control | Syncfusion
 description: Learn here all about Security Advisories in Syncfusion  ##Platform_Name##  Document editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Security advisories
@@ -39,7 +39,15 @@ This release resolves critical and moderate security vulnerabilities affecting t
 
 ## Common Security Updates
 
-For details on common security updates related to Syncfusion products, please refer to [this link](https://ej2.syncfusion.com/documentation/security-advisories). This resource provides information on the latest advisories and best practices to help ensure the security and integrity of your applications.
+{% if page.publishingplatform == "typescript" %}
+
+For details on common security updates related to Syncfusion products, please refer to [this link](https://ej2.syncfusion.com/documentation/common/security). This resource provides information on the latest advisories and best practices to help ensure the security and integrity of your applications.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+For details on common security updates related to Syncfusion products, please refer to [this link](https://ej2.syncfusion.com/javascript/documentation/common/security). This resource provides information on the latest advisories and best practices to help ensure the security and integrity of your applications.
+
+{% endif %}
 
 ## Security Issue
 

@@ -188,8 +188,8 @@ The following example explains the output in your browser.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/dropdowntree/getting-started-cs1/index.html %}
 {% endhighlight %}
-{% highlight css tabtitle="index.css" %}
-{% include code-snippet/dropdowntree/getting-started-cs1/index.css %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/dropdowntree/getting-started-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
           

@@ -13,9 +13,7 @@ let filemanagerInstance: FileManager = new FileManager({
         uploadUrl: hostUrl + 'api/FileManager/Upload',
         downloadUrl: hostUrl + 'api/FileManager/Download'
     },
-    created: function () {
-        filemanagerInstance.uploadObj.dropArea = null;  // Restrict file uploads by dragging them from the local file system to the File Manager.
-    },
+    uploadSettings: { autoClose: false }
 });
 
 // render initialized FileManager

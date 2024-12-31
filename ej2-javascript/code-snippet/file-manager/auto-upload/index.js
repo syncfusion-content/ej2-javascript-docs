@@ -9,8 +9,6 @@ var filemanagerInstance = new ej.filemanager.FileManager({
         uploadUrl: hostUrl + 'api/FileManager/Upload',
         downloadUrl: hostUrl + 'api/FileManager/Download'
     },
-    created: function () {
-        filemanagerInstance.uploadObj.dropArea = null;  // Restrict file uploads by dragging them from the local file system to the File Manager.
-    },
+    uploadSettings: { autoUpload: false }
 });
 filemanagerInstance.appendTo('#filemanager');

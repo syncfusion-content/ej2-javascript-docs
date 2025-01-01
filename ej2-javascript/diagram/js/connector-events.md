@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-## Events
+# Connector Events in ##Platform_Name## Diagram control
 
 Diagram provides some events support for connectors that triggers when interacting with the connector.
 

@@ -25,7 +25,7 @@ var node = {
         {
           hyperlink: {
             link: 'https://google.com',
-            hyperlinkOpenState: 'CurrentTab',
+            hyperlinkOpenState: 'NewWindow',
             content: 'Google',
             color: 'orange',
             textDecoration: 'Underline',

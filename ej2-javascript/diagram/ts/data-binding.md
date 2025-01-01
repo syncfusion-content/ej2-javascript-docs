@@ -76,7 +76,7 @@ This feature allows you to read the data source and perform add or edit or delet
 
 * This feature allows you to define the nodes and connectors collection in the data source and connectionDataSource respectively.
 
-* You can set the data collection in the model’s dataSourceSettings [`dataManager`](../api/diagram/dataSourceModel#datamanager) property. The nodes will be generated based on the data specified in the data source.
+* You can set the data collection in the model’s dataSourceSettings [`dataSource`](../api/diagram/dataSourceModel#datasource) property. The nodes will be generated based on the data specified in the data source.
 
 * You can set the connector collection in the model’s dataSourceSettings [`connectionDataSource`](../api/diagram/dataSourceModel#connectiondatasource) property.
 
@@ -97,6 +97,17 @@ This feature allows you to read the data source and perform add or edit or delet
 * The dataSourceSettings crudAction’s [`customFields`](../api/diagram/crudActionModel#customfields) property is used to maintain the additional information for nodes.
 
 * Similarly, connectionDataSource’s crudAction’s [`customFields`](../api/diagram/crudActionModel#customfields) is used to maintain the additional information for connectors.
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/dataBinding-cs6/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/dataBinding-cs6/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/diagram/dataBinding-cs6" %}
 
 ## How to perform Editing at runtime
 

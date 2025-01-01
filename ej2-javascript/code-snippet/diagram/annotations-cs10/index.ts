@@ -33,7 +33,7 @@ let connectors: ConnectorModel[] = [
       {
         hyperlink: {
           link: 'https://google.com',
-          hyperlinkOpenState: 'CurrentTab',
+          hyperlinkOpenState: 'NewWindow',
           content: 'Google',
           color: 'orange',
           textDecoration: 'Underline',

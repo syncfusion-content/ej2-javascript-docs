@@ -980,7 +980,6 @@ let diagram: Diagram = new Diagram({
 diagram.appendTo('#diagram');
 </code></td>
 </tr>
-</tr>
 
 <tr>
 <td><b>Sets the pattern of dashes and gaps used to stroke the path of the connector</b></td>
@@ -4607,7 +4606,7 @@ diagram.appendTo('#diagram');
 </tr>
 
 <tr>
-<td><b>Enable or disable persisting component's state between page reloads/b></td>
+<td><b>Enable or disable persisting component's state between page reloads</b></td>
 <td><b>Not applicable</b>
 </td>
 <td>
@@ -4901,28 +4900,6 @@ if(diagram.model.historyManager.canPop(entry)){
 </tr>
 
 <tr>
-<td><b>A method that takes a history entry as argument and returns whether the specific entry can be popped or not</b></td>
-<td>
-<b>Property</b>:<i>`historyManager.canPop`</i>
-</br>
-</br>
-<code>
-let diagram = $("#diagramcontent").ejDiagram("instance");
-let entry = { object: node, prevState: node.employeeData };
-diagram.model.historyManager.push(entry);
-let value = { role: "New role" };
-node.employeeData = value;
-
-if(diagram.model.historyManager.canPop(entry)){
-    diagram.model.historyManager.pop();
-}
-</code>
-</td>
-<td>
-<b>Not applicable</b></td>
-</tr>
-
-<tr>
 <td><b>A method that ends grouping the changes</b></td>
 <td>
 <b>Property</b>:<i>`historyManager.closeGroupAction`</i>
@@ -4944,7 +4921,7 @@ diagram.model.historyManager.closeGroupAction();
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyList.endGroupAction`</i>
+<b>Property</b>:<i>`historyManager.endGroupAction`</i>
 </br>
 </br>
 <code>
@@ -4972,11 +4949,11 @@ let diagram: Diagram = new Diagram({
 diagram.appendTo('#diagram');
 let objects: (NodeModel | ConnectorModel)[] = [];
             objects.push(diagram.nodes[0], diagram.nodes[1], diagram.connectors[0]);
-            diagram.historyList.startGroupAction();
+            diagram.historyManager.startGroupAction();
             diagram.distribute('Top', objects);
             diagram.distribute('Bottom', objects);
             diagram.distribute('BottomToTop', objects);
-            diagram.historyList.endGroupAction();
+            diagram.historyManager.endGroupAction();
 </code></td>
 </tr>
 
@@ -5012,7 +4989,7 @@ node.employeeData = value;
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyList.push`</i>
+<b>Property</b>:<i>`historyManager.push`</i>
 </br>
 </br>
 <code>
@@ -5028,7 +5005,7 @@ diagram.appendTo('#diagram');
 let object = diagram.nodes[0];
     object['description'] = (document.getElementById('custom') as HTMLSelectElement).value;
     let entry: HistoryEntry = { undoObject: object };
-    diagram.historyList.push(entry);
+    diagram.historyManager.push(entry);
     diagram.dataBind();
 </code></td>
 </tr>
@@ -5059,7 +5036,7 @@ function customUndoRedo(args) {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyList.redo`</i>
+<b>Property</b>:<i>`historyManager.redo`</i>
 </br>
 </br>
 <code>
@@ -5077,12 +5054,12 @@ node1['customName'] = 'customNode';
 entry = {
     undoObject: node1
 };
-diagram.historyList.push(entry);
-diagram.historyList.undo = function(args: HistoryEntry) {
+diagram.historyManager.push(entry);
+diagram.historyManager.undo = function(args: HistoryEntry) {
     args.redoObject = cloneObject(args.undoObject) as NodeModel;
     args.undoObject['customName'] = 'customNodeChange';
 }
-diagram.historyList.redo = function(args: HistoryEntry) {
+diagram.historyManager.redo = function(args: HistoryEntry) {
     let current: NodeModel = cloneObject(args.undoObject) as NodeModel;
     args.undoObject['customName'] = args.redoObject['customName'];
     args.redoObject = current;
@@ -5102,7 +5079,7 @@ diagram.model.historyManager.redoStack();
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyList.redoStack`</i>
+<b>Property</b>:<i>`historyManager.redoStack`</i>
 </br>
 </br>
 <code>
@@ -5115,7 +5092,7 @@ let diagram: Diagram = new Diagram({
     }]
 });
 diagram.appendTo('#diagram');
-diagram.historyList.redoStack();
+diagram.historyManager.redoStack();
 </code></td>
 </tr>
 
@@ -5131,7 +5108,21 @@ diagram.model.historyManager.stackLimit();
 </code>
 </td>
 <td>
-<b>Not applicable</b></td>
+<b>Property</b>:<i>`historyManager.stackLimit`</i>
+</br>
+</br>
+<code>
+let diagram: Diagram = new Diagram({
+    nodes: [{
+        offsetX: 100,
+        offsetY: 100,
+        width: 100,
+        height: 100,
+    }]
+});
+diagram.appendTo('#diagram');
+diagram.historyManager.stackLimit();
+</code></td>
 </tr>
 
 <tr>
@@ -5156,7 +5147,7 @@ diagram.model.historyManager.closeGroupAction();
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyList.startGroupAction`</i>
+<b>Property</b>:<i>`historyManager.startGroupAction`</i>
 </br>
 </br>
 <code>
@@ -5183,11 +5174,11 @@ let diagram: Diagram = new Diagram({
 diagram.appendTo('#diagram');
 let objects: (NodeModel | ConnectorModel)[] = [];
             objects.push(diagram.nodes[0], diagram.nodes[1], diagram.connectors[0]);
-            diagram.historyList.startGroupAction();
+            diagram.historyManager.startGroupAction();
             diagram.distribute('Top', objects);
             diagram.distribute('Bottom', objects);
             diagram.distribute('BottomToTop', objects);
-            diagram.historyList.endGroupAction();
+            diagram.historyManager.endGroupAction();
 </code></td>
 </tr>
 
@@ -5217,7 +5208,7 @@ function customUndoRedo(args) {
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyList.undo`</i>
+<b>Property</b>:<i>`historyManager.undo`</i>
 </br>
 </br>
 <code>
@@ -5235,12 +5226,12 @@ node1['customName'] = 'customNode';
 entry = {
     undoObject: node1
 };
-diagram.historyList.push(entry);
-diagram.historyList.undo = function(args: HistoryEntry) {
+diagram.historyManager.push(entry);
+diagram.historyManager.undo = function(args: HistoryEntry) {
     args.redoObject = cloneObject(args.undoObject) as NodeModel;
     args.undoObject['customName'] = 'customNodeChange';
 }
-diagram.historyList.redo = function(args: HistoryEntry) {
+diagram.historyManager.redo = function(args: HistoryEntry) {
     let current: NodeModel = cloneObject(args.undoObject) as NodeModel;
     args.undoObject['customName'] = args.redoObject['customName'];
     args.redoObject = current;
@@ -5260,7 +5251,7 @@ diagram.model.historyManager.undoStack();
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyList.undoStack`</i>
+<b>Property</b>:<i>`historyManager.undoStack`</i>
 </br>
 </br>
 <code>
@@ -5273,17 +5264,23 @@ let diagram: Diagram = new Diagram({
     }]
 });
 diagram.appendTo('#diagram');
-diagram.historyList.undoStack();
+diagram.historyManager.undoStack();
 </code></td>
 </tr>
 
 <tr>
 <td><b>Set the current entry object</b></td>
 <td>
-<b>Not applicable</b>
+<b>Property</b>:<i>`historyList.currentEntry`</i>
+</br>
+</br>
+<code>
+var diagram = $("#diagramcontent").ejDiagram("instance");
+diagram.historyList.currentEntry();
+</code>
 </td>
 <td>
-<b>Property</b>:<i>`historyList.currentEntry`</i>
+<b>Property</b>:<i>`historyManager.currentEntry`</i>
 </br>
 </br>
 <code>
@@ -5296,39 +5293,23 @@ let diagram: Diagram = new Diagram({
     }]
 });
 diagram.appendTo('#diagram');
-diagram.historyList.currentEntry();
+diagram.historyManager.currentEntry();
 </code></td>
 </tr>
 
 <tr>
 <td><b>set the history entry can be undo</b></td>
 <td>
-<b>Not applicable</b>
-</td>
-<td>
 <b>Property</b>:<i>`historyList.canUndo`</i>
 </br>
 </br>
 <code>
-let diagram: Diagram = new Diagram({
-    nodes: [{
-        offsetX: 100,
-        offsetY: 100,
-        width: 100,
-        height: 100,
-    }]
-});
-diagram.appendTo('#diagram');
-diagram.historyList.canUndo = true;
-</code></td>
-</tr>
-<tr>
-<td><b>Set the history entry can be redo</b></td>
-<td>
-<b>Not applicable</b>
+var diagram = $("#diagramcontent").ejDiagram("instance");
+diagram.historyList.canUndo();
+</code>
 </td>
 <td>
-<b>Property</b>:<i>`historyList.canRedo`</i>
+<b>Property</b>:<i>`historyManager.canUndo`</i>
 </br>
 </br>
 <code>
@@ -5341,7 +5322,34 @@ let diagram: Diagram = new Diagram({
     }]
 });
 diagram.appendTo('#diagram');
-diagram.historyList.canRedo = true;
+diagram.historyManager.canUndo = true;
+</code></td>
+</tr>
+<tr>
+<td><b>Set the history entry can be redo</b></td>
+<b>Property</b>:<i>`historyList.canRedo`</i>
+</br>
+</br>
+<code>
+var diagram = $("#diagramcontent").ejDiagram("instance");
+diagram.historyList.canRedo();
+</code>
+</td>
+<td>
+<b>Property</b>:<i>`historyManager.canRedo`</i>
+</br>
+</br>
+<code>
+let diagram: Diagram = new Diagram({
+    nodes: [{
+        offsetX: 100,
+        offsetY: 100,
+        width: 100,
+        height: 100,
+    }]
+});
+diagram.appendTo('#diagram');
+diagram.historyManager.canRedo = true;
 </code></td>
 </tr>
 <tr>
@@ -5356,7 +5364,7 @@ diagram.model.historyManager.canLog();
 </code>
 </td></td>
 <td>
-<b>Property</b>:<i>`historyList.canLog`</i>
+<b>Property</b>:<i>`historyManager.canLog`</i>
 </br>
 </br>
 <code>
@@ -5369,7 +5377,7 @@ let diagram: Diagram = new Diagram({
     }]
 });
 diagram.appendTo('#diagram');
-diagram.historyList.canLog = function (entry: HistoryEntry) {
+diagram.historyManager.canLog = function (entry: HistoryEntry) {
         entry.cancel = true;
         return entry;
     }
@@ -10278,7 +10286,6 @@ let palette: SymbolPalette = new SymbolPalette({
         id: 'flow',
         expanded: true,
         symbols: getFlowShapes(),
-        title: 'Flow Shapes'
     }, ],
     width: '100%',
     height: '100%',
@@ -10374,7 +10381,6 @@ let palette: SymbolPalette = new SymbolPalette({
         id: 'flow',
         expanded: true,
         symbols: getFlowShapes(),
-        title: 'Flow Shapes'
     }, ],
     width: '100%',
     height: '100%',
@@ -10471,7 +10477,6 @@ let palette: SymbolPalette = new SymbolPalette({
         id: 'flow',
         expanded: true,
         symbols: getFlowShapes(),
-        title: 'Flow Shapes'
     }, ],
     width: '100%',
     height: '100%',
@@ -11183,5 +11188,43 @@ let diagram: Diagram = new Diagram({
 });
 diagram.appendTo('#diagram');
 </code></td>
+</tr>
+</table>
+
+
+## setConstraints
+
+<!-- markdownlint-disable MD033 -->
+<table>
+<tr>
+<td style="width: 20%;"><b>behavior</b></td>
+<td style="width: 40%;"><b>API in Essential® JS 1</b></td>
+<td><b>API in Essential® JS 2</b></td>
+</tr>
+<tr>
+<td><b>Set constraints to node</b> </br>
+<b>The diagram.setConstraints(node) property is not available in the EJ2 Diagram </b></td>
+<td><b>Property</b>:<i>`setConstraints`</i>
+<code>
+    for (var i = 0; i < diagram.nodes.length; i++) {
+        var node = diagram.nodes[i];
+        diagram.setConstraints(node);
+    }
+</code>
+</td>
+<td><b>Property</b>:<i>`setConstraints`</i>
+<b>Not applicable</b></br>
+<b>In EJ2, constraints are set directly on each node</b>
+<code>
+let nodes = [{
+    id: 'node',
+    offsetX: 100, offsetY: 100,
+    constraints: NodeConstraints.Default & ~NodeConstraints.Rotate 
+    }];
+let diagram:Diagram = new Diagram({
+    width: '100%, height: 600, nodes: nodes,
+},'#element');
+</code>
+</td>
 </tr>
 </table>

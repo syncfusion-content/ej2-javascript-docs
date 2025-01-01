@@ -21,7 +21,53 @@ To enable directory upload, set the `directoryUpload` property to `true` in the 
 
 When set to `true`, this property enables directory upload in the File Manager, allowing users to upload entire folders. If set to `false`, only individual files can be uploaded. 
 
->Note: When `directoryUpload` is set to `true`, only folders can be uploaded. When it is set to `false`, only individual files can be uploaded. Simultaneous uploading of files and folders is not supported.
+```ts
+    import { FileManager, Toolbar, NavigationPane, DetailsView, ContextMenu } from '@syncfusion/ej2-filemanager';
+    import { DropDownButton, ItemModel } from '@syncfusion/ej2-splitbuttons';
+    FileManager.Inject(Toolbar, NavigationPane, DetailsView, ContextMenu);
+
+    let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
+    let fileObject: FileManager = new FileManager({
+        ajaxSettings: {
+            url: hostUrl + 'api/FileManager/FileOperations',
+            getImageUrl: hostUrl + 'api/FileManager/GetImage',
+            uploadUrl: hostUrl + 'api/FileManager/Upload',
+            downloadUrl: hostUrl + 'api/FileManager/Download'
+        },
+        // Upload settings customization
+        uploadSettings: { directoryUpload: true }
+    });
+    fileObject.appendTo('#file');
+```
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/file-manager/directory-upload/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/file-manager/directory-upload/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/file-manager/directory-upload" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/file-manager/directory-upload/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/file-manager/directory-upload/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/file-manager/directory-upload" %}
+{% endif %}
+
+>**Note:** When `directoryUpload` is set to `true`, only folders can be uploaded. When it is set to `false`, only individual files can be uploaded. Simultaneous uploading of files and folders is not supported.
 
 To learn more about the folder upload actions, refer to this [link](https://ej2.syncfusion.com/documentation/file-manager/file-operations#folder-upload-support)
 
@@ -57,11 +103,38 @@ In the following example, the chunkSize is set to 5 MB (5,242,880 bytes), and th
     fileObject.appendTo('#file');
 ```
 
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/file-manager/chunk-upload/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/file-manager/chunk-upload/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/file-manager/chunk-upload" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/file-manager/chunk-upload/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/file-manager/chunk-upload/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/file-manager/chunk-upload" %}
+{% endif %}
+
 With chunk upload, the pause and resume options gives users enhanced control over the file upload process.
 
 ![File Manager with chunkUpload](./images/filemanager-chunkupload.png)
 
->Note: 
+>**Note:**
 >1. Chunk upload will work when the selected file size is greater than the specified chunk size. Otherwise, it upload the files normally. 
 >2. The pause and resume features available only when the chunk upload is enabled.
 
@@ -93,6 +166,33 @@ The default value is `true`, the File Manager will automatically upload files as
     fileObject.appendTo('#file');
 ```
 
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/file-manager/auto-upload/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/file-manager/auto-upload/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/file-manager/auto-upload" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/file-manager/auto-upload/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/file-manager/auto-upload/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/file-manager/auto-upload" %}
+{% endif %}
+
 ## Auto Close
 
 The [autoClose](https://ej2.syncfusion.com/documentation/api/file-manager/uploadSettingsModel/#autoclose) property controls whether the upload dialog automatically closes after all the files have been uploaded.
@@ -120,6 +220,33 @@ The default value is set to `false`, the upload dialog remains open even after t
     });
     fileObject.appendTo('#file');
 ```
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/file-manager/auto-close/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/file-manager/auto-close/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/file-manager/auto-close" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/file-manager/auto-close/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/file-manager/auto-close/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/file-manager/auto-close" %}
+{% endif %}
 
 ## Prevent upload based on file extensions
 
@@ -149,6 +276,33 @@ If you want to allow only image files like .jpg and .png, you would set the prop
     });
     fileObject.appendTo('#file');
 ```
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/file-manager/file-extention/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/file-manager/file-extention/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/file-manager/file-extention" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/file-manager/file-extention/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/file-manager/file-extention/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/file-manager/file-extention" %}
+{% endif %}
 
 ## Restrict drag and drop upload
 

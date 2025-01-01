@@ -109,6 +109,22 @@ let undoStack = diagram.historyManager.undoStack;
 //get the collection of redoStack objects
 let redoStack = diagram.historyManager.redoStack;
 ```
+
+## canUndo and canRedo 
+
+The [`canUndo`](../api/diagram/history/#canundo) property returns true if there are actions in the undo history stack; otherwise, it returns false. This property helps identify whether any actions are present in the undo stack.The [`canRedo`](../api/diagram/history/#canredo) property returns true if there are actions in the redo history stack; otherwise, it returns false. This property helps identify whether any actions are present in the redo stack.
+
+The following code demonstrates how to use these properties:
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/undoredo-canUndo/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/undoredo-canUndo/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
 ## Current entry
 
 While performing interactions with a node or connector, the current history entry is added to the [`currentEntry`](../api/diagram/history/#currententry) property of the [`historyManager`](../api/diagram/#historymanager)..

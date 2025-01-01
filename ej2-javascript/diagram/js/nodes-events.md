@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-## Events
+# Node events in ##Platform_Name## Diagram control
 
 Diagram provides some events support for node that triggers when interacting with the node.
 

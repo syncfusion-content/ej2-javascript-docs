@@ -101,7 +101,6 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 **Example:**
 > Script: [`https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js)
->
 
 **or**
 
@@ -121,9 +120,36 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 >
 > [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-pdf-export/dist/global/ej2-pdf-export.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-pdf-export/dist/global/ej2-pdf-export.min.js)
 
-**Step 3:** Create a HTML page (index.html) in **~/quickstart/index.html** location and add the CDN link references. Now, initiate the **Syncfusion JavaScript (ES5) Linear Gauge** control in the **index.html** by using following code.
+Create a HTML page *(**index.html**) in **~/quickstart** location and add the CDN link references. Now, initiate the **Syncfusion JavaScript (ES5) Linear Gauge** control in the **index.html** by using following code.
 
-The below example shows a basic linear gauge component.
+```html
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Essential JS 2</title>
+        <script src="https://cdn.syncfusion.com/ej2/{Release_Version}/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+        <script src="https://cdn.syncfusion.com/ej2/{Release_Version}/ej2-svg-base/dist/global/ej2-svg-base.min.js" type="text/javascript"></script>
+        <script src="https://cdn.syncfusion.com/ej2/{Release_Version}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js" type="text/javascript"></script>
+        <script src="https://cdn.syncfusion.com/ej2/{Release_Version}/ej2-lineargauge/dist/global/ej2-lineargauge.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <!-- Add the HTML <lineargauge> element  -->
+        <div id="element" style="display: block;">Linear Gauge</div>
+        <script>
+            // initialize lineargauge control
+            var lineargauge = new ej.lineargauge.LinearGauge({ height: '400px' });
+            // Render initialized lineargauge.
+            lineargauge.appendTo('#element');
+        </script>
+    </body>
+</html>
+```
+
+> Please replace {RELEASE_VERSION} with the latest version number in the script file referred to in the sample.
+
+**Step 3:** Now, run the **index.html** in web browser, it will render the **Syncfusion JavaScript Linear Gauge** control.
+
+The below example shows a basic Linear Gauge control.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -135,8 +161,6 @@ The below example shows a basic linear gauge component.
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/linear-gauge/es5-getting-started-cs1" %}
-
-**Step 4:** Now, run the **index.html** in web browser, it will render the **Syncfusion JavaScript Linear Gauge** control.
 
 ## Adding the Linear Gauge Title
 

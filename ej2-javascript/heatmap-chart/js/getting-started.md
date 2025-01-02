@@ -22,7 +22,7 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 
 ### Using local script and style references in a HTML page
 
-**Step 1:** Create an app folder `myapp` for Essential JS 2 JavaScript controls.
+**Step 1:** Create an app folder `quickstart` for Essential JS 2 JavaScript controls.
 
 **Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
@@ -33,9 +33,9 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 
 > Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/16.2.45/Essential JS 2/ej2-heatmap/dist/global/ej2-heatmap.min.js`
 
-**Step 3:** Create a folder `myapp/resources` and copy/paste the dependent scripts and styles from the above installed location to `myapp/resources` location.
+**Step 3:** Create a folder `quickstart/resources` and copy/paste the dependent scripts and styles from the above installed location to `quickstart/resources` location.
 
-**Step 4:** Create a HTML page (index.html) in `myapp` location and add the Essentials JS 2 script and style references.
+**Step 4:** Create a HTML page (index.html) in `quickstart` location and add the Essentials JS 2 script and style references.
 
 ```html
 <!DOCTYPE html>
@@ -91,7 +91,6 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 
 **Example:**
 > Script: [`https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js)
->
 
 **or**
 
@@ -111,7 +110,37 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 >
 > [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-svg-base/dist/global/ej2-svg-base.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-svg-base/dist/global/ej2-svg-base.min.js)
 
-**Step 3:** Create a HTML page (index.html) in `quickstart` location and add the CDN link references. Now, add the `div` element and initiate the `Essential JS 2 Heatmap` control in the index.html by using following code.
+Create a HTML page (**index.html**) in **~/quickstart** location and add the CDN link references. Now, add the **div** element and initiate the `Essential JS 2 Heatmap` control in the **index.html** by using following code.
+
+```
+<!DOCTYPE html>
+  <html xmlns="http://www.w3.org/1999/xhtml">
+       <head>
+            <title>Essential JS 2</title>
+            <script src="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-svg-base/dist/global/ej2-svg-base.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-heatmap/dist/global/ej2-heatmap.min.js" type="text/javascript"></script>
+       </head>
+       <body>
+            <!-- Add the HTML <div> element  -->
+             <div id="container"></div>
+            <script>
+                // initialize heatmap control
+                var heatmap = new ej.heatmap.HeatMap();
+
+                // Render initialized heatmap.
+                heatmap.appendTo('#container')
+            </script>
+       </body>
+  </html>
+```
+
+> Please replace {RELEASE_VERSION} with the latest version number in the script file referred to in the sample.
+
+**Step 3:** Now, run the **index.html** in web browser, it will render the `Essential JS 2 HeatMap` control.
+
+The below example shows a basic HeatMap control.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -120,8 +149,6 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/heatmap/es5-getting-started-cs1" %}
-
-**Step 4:** Now, run the **index.html** in web browser, it will render the `Essential JS 2 HeatMap` control.
 
 ## Populate HeatMap with data
 

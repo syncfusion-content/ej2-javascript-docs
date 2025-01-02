@@ -126,7 +126,6 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 **Example:**
 > Script: [`https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js)
->
 
 **or**
 
@@ -147,17 +146,54 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 > [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-svg-base/dist/global/ej2-svg-base.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-svg-base/dist/global/ej2-svg-base.min.js)
 >
 > [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-pdf-export/dist/global/ej2-pdf-export.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-pdf-export/dist/global/ej2-pdf-export.min.js)
->
 
-**Step 3:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the following CDN link references.
-```
-<script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
-    <script src="https://cdn.syncfusion.com/ej2/ej2-svg-base/dist/global/ej2-svg-base.min.js" type="text/javascript"></script>
-    <script src="https://cdn.syncfusion.com/ej2/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
-	<script src="https://cdn.syncfusion.com/ej2/ej2-treemap/dist/global/ej2-treemap.min.js"></script>
+Create a HTML page (**index.html**) in **~/quickstart** location and add the following CDN link references. Now, initiate the `Syncfusion JavaScript (ES5) TreeMap` control in the **index.html** by using following code.
 
+```html
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Essential JS 2</title>
+         <script src="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+         <script src="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-svg-base/dist/global/ej2-svg-base.min.js" type="text/javascript"></script>
+         <script src="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
+         <script src="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-treemap/dist/global/ej2-treemap.min.js"></script>
+    </head>
+    <body>
+        <div id='element' style="display: block;"></div>
+        <script>
+            var treemap = new ej.treemap.TreeMap({
+                dataSource: [
+                    { Title: 'State wise International Airport count in South America', State: "Brazil", Count: 25 },
+                    { Title: 'State wise International Airport count in South America', State: "Colombia", Count: 12 },
+                    { Title: 'State wise International Airport count in South America', State: "Argentina", Count: 9 },
+                    { Title: 'State wise International Airport count in South America', State: "Ecuador", Count: 7 },
+                    { Title: 'State wise International Airport count in South America', State: "Chile", Count: 6 },
+                    { Title: 'State wise International Airport count in South America', State: "Peru", Count: 3 },
+                    { Title: 'State wise International Airport count in South America', State: "Venezuela", Count: 3 },
+                    { Title: 'State wise International Airport count in South America', State: "Bolivia", Count: 2 },
+                    { Title: 'State wise International Airport count in South America', State: "Paraguay", Count: 2 },
+                    { Title: 'State wise International Airport count in South America', State: "Uruguay", Count: 2 },
+                    { Title: 'State wise International Airport count in South America', State: "Falkland Islands",Count: 1 },
+                    { Title: 'State wise International Airport count in South America', State: "French Guiana", Count:1 },
+                    { Title: 'State wise International Airport count in South America', State: "Guyana", Count: 1 },
+                    { Title: 'State wise International Airport count in South America', State: "Suriname", Count: 1 },
+                ],
+                weightValuePath: 'Count',
+                leafItemSettings: {
+                    labelPath: 'State',
+                }
+            });
+            treemap.appendTo('#element');
+        </script>
+    </body>
+</html>
 ```
- Now, initiate the `Syncfusion JavaScript (ES5) TreeMap` control in the **index.html** by using following code.
+> Please replace {RELEASE_VERSION} with the latest version number in the script file referred to in the sample.
+
+**Step 3:**  Now, run the index.html in web browser, it will render the Essential JS 2 TreeMap control.
+
+The below example shows a basic TreeMap control.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

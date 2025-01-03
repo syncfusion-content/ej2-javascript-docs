@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Animation in ##Platform_Name## Drop down button control
 
-The [`animationSettings`](../../api/drop-down-button/#animationsettings) property is used to customize the animation of the DropDownButton popup. The supported effects for DropDownButton are,
+The [`animationSettings`](../api/drop-down-button/#animationsettings) property is used to customize the animation of the DropDownButton popup. The supported effects for DropDownButton are,
 
 | Effect | Functionality |
 | ------------ | ----------------------- |

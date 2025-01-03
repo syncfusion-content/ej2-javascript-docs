@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## Item template
 
-The [itemTemplate](../../api/context-menu/#itemtemplate) property in the ContextMenu component allows you to define custom templates for displaying menu items within the context menu. This feature is particularly useful when you want to customize the appearance or layout of the menu items beyond the default text-based list.
+The [itemTemplate](../api/context-menu/#itemtemplate) property in the ContextMenu component allows you to define custom templates for displaying menu items within the context menu. This feature is particularly useful when you want to customize the appearance or layout of the menu items beyond the default text-based list.
 
 {% if page.publishingplatform == "typescript" %}
 

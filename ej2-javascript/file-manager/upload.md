@@ -21,25 +21,6 @@ To enable directory upload, set the `directoryUpload` property to `true` in the 
 
 When set to `true`, this property enables directory upload in the File Manager, allowing users to upload entire folders. If set to `false`, only individual files can be uploaded. 
 
-```ts
-    import { FileManager, Toolbar, NavigationPane, DetailsView, ContextMenu } from '@syncfusion/ej2-filemanager';
-    import { DropDownButton, ItemModel } from '@syncfusion/ej2-splitbuttons';
-    FileManager.Inject(Toolbar, NavigationPane, DetailsView, ContextMenu);
-
-    let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-    let fileObject: FileManager = new FileManager({
-        ajaxSettings: {
-            url: hostUrl + 'api/FileManager/FileOperations',
-            getImageUrl: hostUrl + 'api/FileManager/GetImage',
-            uploadUrl: hostUrl + 'api/FileManager/Upload',
-            downloadUrl: hostUrl + 'api/FileManager/Download'
-        },
-        // Upload settings customization
-        uploadSettings: { directoryUpload: true }
-    });
-    fileObject.appendTo('#file');
-```
-
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
@@ -80,28 +61,6 @@ This property allows you to enable chunked uploads for large files by specifying
 By specifying a `chunkSize`, the large file is divided into smaller parts, reducing the load on the network and making the upload process more efficient.
 
 In the following example, the chunkSize is set to 5 MB (5,242,880 bytes), and the maxFileSize is set to 70 MB (73,728,000 bytes). This means files that are up to 70 MB will be uploaded in 5 MB chunks.
-
-```ts
-    import { FileManager, Toolbar, NavigationPane, DetailsView, ContextMenu } from '@syncfusion/ej2-filemanager';
-    import { DropDownButton, ItemModel } from '@syncfusion/ej2-splitbuttons';
-    FileManager.Inject(Toolbar, NavigationPane, DetailsView, ContextMenu);
-
-    /**
-     * File Manager chunk upload sample
-     */
-    let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-    let fileObject: FileManager = new FileManager({
-        ajaxSettings: {
-            url: hostUrl + 'api/FileManager/FileOperations',
-            getImageUrl: hostUrl + 'api/FileManager/GetImage',
-            uploadUrl: hostUrl + 'api/FileManager/Upload',
-            downloadUrl: hostUrl + 'api/FileManager/Download'
-        },
-        // Upload settings customization
-        uploadSettings: { autoUpload: true, chunkSize: "5242880", maxFileSize: "73728000" }
-    });
-    fileObject.appendTo('#file');
-```
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -144,28 +103,6 @@ The [autoUpload](https://ej2.syncfusion.com/documentation/api/file-manager/uploa
 
 The default value is `true`, the File Manager will automatically upload files as soon as they are added to the upload queue. If set to `false`, the files will not be uploaded automatically, giving you the chance to manipulate the files before uploading them to the server.
 
-```ts
-    import { FileManager, Toolbar, NavigationPane, DetailsView, ContextMenu } from '@syncfusion/ej2-filemanager';
-    import { DropDownButton, ItemModel } from '@syncfusion/ej2-splitbuttons';
-    FileManager.Inject(Toolbar, NavigationPane, DetailsView, ContextMenu);
-
-    /**
-     * File Manager autoUpload sample
-     */
-    let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-    let fileObject: FileManager = new FileManager({
-        ajaxSettings: {
-            url: hostUrl + 'api/FileManager/FileOperations',
-            getImageUrl: hostUrl + 'api/FileManager/GetImage',
-            uploadUrl: hostUrl + 'api/FileManager/Upload',
-            downloadUrl: hostUrl + 'api/FileManager/Download'
-        },
-        // Upload settings customization
-        uploadSettings: { autoUpload: false }
-    });
-    fileObject.appendTo('#file');
-```
-
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
@@ -198,28 +135,6 @@ The default value is `true`, the File Manager will automatically upload files as
 The [autoClose](https://ej2.syncfusion.com/documentation/api/file-manager/uploadSettingsModel/#autoclose) property controls whether the upload dialog automatically closes after all the files have been uploaded.
 
 The default value is set to `false`, the upload dialog remains open even after the upload process is complete. If `autoClose` set to `true`, the upload dialog will automatically close after all the files in the upload queue are uploaded.
-
-```ts
-    import { FileManager, Toolbar, NavigationPane, DetailsView, ContextMenu } from '@syncfusion/ej2-filemanager';
-    import { DropDownButton, ItemModel } from '@syncfusion/ej2-splitbuttons';
-    FileManager.Inject(Toolbar, NavigationPane, DetailsView, ContextMenu);
-
-    /**
-     * File Manager autoClose customization in uploadSettings
-     */
-    let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-    let fileObject: FileManager = new FileManager({
-        ajaxSettings: {
-            url: hostUrl + 'api/FileManager/FileOperations',
-            getImageUrl: hostUrl + 'api/FileManager/GetImage',
-            uploadUrl: hostUrl + 'api/FileManager/Upload',
-            downloadUrl: hostUrl + 'api/FileManager/Download'
-        },
-        // Upload settings customization
-        uploadSettings: { autoClose: false }
-    });
-    fileObject.appendTo('#file');
-```
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -258,25 +173,6 @@ By setting the `allowedExtensions` property, you restrict the file types that ca
 
 If you want to allow only image files like .jpg and .png, you would set the property as follows:
 
-```ts
-    import { FileManager, Toolbar, NavigationPane, DetailsView, ContextMenu } from '@syncfusion/ej2-filemanager';
-    import { DropDownButton, ItemModel } from '@syncfusion/ej2-splitbuttons';
-    FileManager.Inject(Toolbar, NavigationPane, DetailsView, ContextMenu);
-
-    let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-    let fileObject: FileManager = new FileManager({
-        ajaxSettings: {
-            url: hostUrl + 'api/FileManager/FileOperations',
-            getImageUrl: hostUrl + 'api/FileManager/GetImage',
-            uploadUrl: hostUrl + 'api/FileManager/Upload',
-            downloadUrl: hostUrl + 'api/FileManager/Download'
-        },
-        // Upload settings customization
-        uploadSettings: { allowedExtensions: ".jpg,.png" }
-    });
-    fileObject.appendTo('#file');
-```
-
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
@@ -313,27 +209,6 @@ Setting [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/
 To completely prevent the external drag-and-drop upload functionality (i.e., disallowing users from dragging and dropping files from outside into the File Manager), you can set the [dropArea](https://ej2.syncfusion.com/documentation/api/uploader#droparea) property to null. This can be done by accessing the File Manager instance via its class methods.
 
 The following example demonstrates how to prevent the external drag and drop upload actions for all types of files in the File Manager component.
-
-```ts
-    import { FileManager, Toolbar, NavigationPane, DetailsView, ContextMenu } from '@syncfusion/ej2-filemanager';
-    import { DropDownButton, ItemModel } from '@syncfusion/ej2-splitbuttons';
-    FileManager.Inject(Toolbar, NavigationPane, DetailsView, ContextMenu);
-
-    let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-    let filemanagerInstance: FileManager = new FileManager({
-        ajaxSettings: {
-            url: hostUrl + 'api/FileManager/FileOperations',
-            getImageUrl: hostUrl + 'api/FileManager/GetImage',
-            uploadUrl: hostUrl + 'api/FileManager/Upload',
-            downloadUrl: hostUrl + 'api/FileManager/Download'
-        },
-        created: function (args) {
-            filemanagerInstance.uploadObj.dropArea = null;
-        },
-    });
-    filemanagerInstance.appendTo('#file');
-```
-
 
 {% if page.publishingplatform == "typescript" %}
 

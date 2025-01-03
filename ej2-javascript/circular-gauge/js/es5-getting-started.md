@@ -101,7 +101,6 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 **Example:**
 > Script: [`https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js)
->
 
 **or**
 
@@ -121,7 +120,38 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 >
 > [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-pdf-export/dist/global/ej2-pdf-export.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-pdf-export/dist/global/ej2-pdf-export.min.js)
 
-**Step 3:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the CDN link references. Now, initiate the `Syncfusion JavaScript (ES5) Circular Gauge` control in the **index.html** by using following code.
+Create a HTML page (**index.html**) in **~/quickstart** location and add the CDN link references. Now, initiate the `Syncfusion JavaScript (ES5) Circular Gauge` control in the **index.html** by using following code.
+
+```
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Essential JS 2</title>
+        <!-- Essential JS 2 Base's global script (Dependency Script) -->
+        <script src="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+        <script src="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-svg-base/dist/global/ej2-svg-base.min.js" type="text/javascript"></script>
+        <script src="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js" type="text/javascript"></script>
+        <script src="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-circulargauge/dist/global/ej2-circulargauge.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <!-- Add the HTML <circulargauge> element  -->
+        <div id="element" style="display: block;">Circular Gauge</div>
+        <script>
+            // initialize circulargauge control
+            var circulargauge = new ej.circulargauge.CircularGauge({
+                height: '400px'
+            });
+            // Render initialized circulargauge.
+            circulargauge.appendTo('#element');
+        </script>
+    </body>
+</html>
+```
+> Please replace {RELEASE_VERSION} with the latest version number in the script file referred to in the sample.
+ 
+**Step 3:** Now, run the `index.html` in web browser, it will render the `Syncfusion JavaScript Circular Gauge` control.
+
+The below example shows a basic Circular Gauge control.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -131,10 +161,8 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 {% include code-snippet/circular-gauge/es5-getting-started-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/circular-gauge/es5-getting-started-cs1" %}
 
-**Step 4:** Now, run the `index.html` in web browser, it will render the `Syncfusion JavaScript Circular Gauge` control.
+{% previewsample "page.domainurl/code-snippet/circular-gauge/es5-getting-started-cs1" %}
 
 ## Set Pointer Value
 

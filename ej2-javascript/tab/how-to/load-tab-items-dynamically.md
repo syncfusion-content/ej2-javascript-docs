@@ -11,25 +11,33 @@ domainurl: ##DomainURL##
 
 # Load tab items dynamically in ##Platform_Name## Tab control
 
-Tabs can be added dynamically by passing array of items and index value to the [`addTab`](../../api/tab#addtab) method.
+You can add tabs dynamically to the Tab control by passing an array of items and an index value to the [`addTab`](../../api/tab#addtab) method. Here's how you can do it:
 
 ```ts
-    // New tab title and content inputs are fetched and stored in local variable
-    let title: string = document.getElementById('tab-title').value;
-    let content: string = document.getElementById('tab-content').value;
+// Fetch new tab title and content from input elements
+let tabTitle: string = document.getElementById('tab-title').value;
+let content: string = document.getElementById('tab-content').value;
 
-    // Required tab item object formed by using textbox inputs
-    let item: Object =  { header: { text: title }, content: createElement('pre', { innerHTML: content.replace(/\n/g, '<br>\n') }).outerHTML };
+// Create a tab item object using the input values
+let item: Object = { 
+    header: { text: tabTitle }, 
+    content: createElement('pre', { innerHTML: content.replace(/\n/g, '<br>\n') }).outerHTML 
+};
 
-    // Item object and the index argument passed into the addTab method to add a new tab
-    tabObj.addTab([item], index);
+// Add the new tab at the specified index
+tabObj.addTab([item], index);
 ```
 
-In the following demo, you can add the tab content by clicking the **+**.  This **+** icon is added on the tab header using [`iconCss`](../../api/tab/header#iconcss) property.  Enter the new Tab heading and content details in the available text boxes, click 'Add Tab' button to pass the details as an array and here last index is calculated to append the new tab at the end.
+In the following example, we'll demonstrate how to add tabs dynamically:
+
+1. A "+" icon is added to the tab header using the [`iconCss`](../../api/tab/header#iconcss) property.
+2. When you click the "+" icon, you can enter the new tab's heading and content in the provided text boxes.
+3. Clicking the 'Add Tab' button will create a new tab with the entered details.
+4. The new tab is appended at the end of the existing tabs.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/tab/dynamic-tab-cs1/index.ts %}
 {% endhighlight %}

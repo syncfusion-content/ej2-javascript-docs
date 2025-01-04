@@ -1,41 +1,58 @@
+import { TextBox } from '@syncfusion/ej2-inputs';
 
-// To get the all input fields and its container.
+// First TextBox without an icon
+let textIconAppend: TextBox = new TextBox({
+  placeholder: 'Enter Date',
+  created: () => {
+    textIconAppend.addIcon('append', 'e-date-icon');
+  },
+});
+textIconAppend.appendTo('#textIconAppend');
 
-let inputElement = document.querySelectorAll('.e-input-group .e-input,.e-float-input.e-input-group input');
+// Second TextBox with an icon
+let textIconPrepend: TextBox = new TextBox({
+  placeholder: 'Enter Date',
+  created: () => {
+    textIconPrepend.addIcon('prepend', 'e-date-icon');
+  },
+});
+textIconPrepend.appendTo('#textIconPrepend');
 
-// Add 'e-input-focus' class to the input for achive ripple effect when focus on the input field.
+let textIconAppendPrepend: TextBox = new TextBox({
+  placeholder: 'Enter Date',
+  created: () => {
+    textIconAppendPrepend.addIcon('prepend', 'e-date-icon');
+    textIconAppendPrepend.addIcon('append', 'e-chevron-down-fill');
+  },
+});
+textIconAppendPrepend.appendTo('#textIconAppendPrepend');
 
-for (let i = 0; i < inputElement.length; i++) {
-    inputElement[i].addEventListener("focus", function () {
-        let parentElement = this.parentNode;
-        if (parentElement.classList.contains('e-input-in-wrap')) {
-            parentElement.parentNode.classList.add('e-input-focus');
-        } else {
-            this.parentNode.classList.add('e-input-focus');
-        }
-    });
-    inputElement[i].addEventListener("blur", function () {
-        let parentElement = this.parentNode;
-        if (parentElement.classList.contains('e-input-in-wrap')) {
-            parentElement.parentNode.classList.remove('e-input-focus');
-        } else {
-            this.parentNode.classList.remove('e-input-focus');
-        }
-    });
-}
+// First TextBox without an icon
+let textFloatIconAppend: TextBox = new TextBox({
+  placeholder: 'Enter Date',
+  floatLabelType: 'Auto',
+  created: () => {
+    textFloatIconAppend.addIcon('append', 'e-date-icon');
+  },
+});
+textFloatIconAppend.appendTo('#textFloatIconAppend');
 
-// Add 'e-input-btn-ripple' class to the icon element for achive ripple effect when click on the icon.
+// Second TextBox with an icon
+let textFloatIconPrepend: TextBox = new TextBox({
+  placeholder: 'Enter Date',
+  floatLabelType: 'Auto',
+  created: () => {
+    textFloatIconPrepend.addIcon('prepend', 'e-date-icon');
+  },
+});
+textFloatIconPrepend.appendTo('#textFloatIconPrepend');
 
-var inputIcon = document.querySelectorAll('.e-input-group-icon');
-for (let i = 0; i < inputIcon.length; i++) {
-    inputIcon[i].addEventListener('mousedown', function () {
-        this.classList.add('e-input-btn-ripple');
-    });
-    inputIcon[i].addEventListener('mouseup', function () {
-        let element = this;
-        setTimeout(function () {
-            element.classList.remove('e-input-btn-ripple');
-        }, 500);
-    });
-}
-
+let textFloatIconAppendPrepend: TextBox = new TextBox({
+  placeholder: 'Enter Date',
+  floatLabelType: 'Auto',
+  created: () => {
+    textFloatIconAppendPrepend.addIcon('prepend', 'e-date-icon');
+    textFloatIconAppendPrepend.addIcon('append', 'e-chevron-down-fill');
+  },
+});
+textFloatIconAppendPrepend.appendTo('#textFloatIconAppendPrepend');

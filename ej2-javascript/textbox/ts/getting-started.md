@@ -101,11 +101,25 @@ Add the HTML Input element with `e-input` class into your `index.html`.
 <body>
     <div>
       <!--element which is going to render the TextBox-->
-      <input class="e-input" type="text" placeholder="Enter Date" />
+      <input id="firstName"/>
     </div>
 </body>
 
 </html>
+
+{% endhighlight %}
+
+{% highlight html tabtitle="index.ts" %}
+
+```
+    import { TextBox } from '@syncfusion/ej2-inputs'
+
+    let inputobj: TextBox = new TextBox({
+        placeholder: 'Enter Date',
+    });
+
+inputobj.appendTo('#firstName');
+```
 
 {% endhighlight %}
 {% endtabs %}
@@ -118,11 +132,27 @@ You can create a TextBox with icon as a group by creating the parent div element
 {% highlight html tabtitle="index.html" %}
 
       <!--element which is going to render the TextBox with date icon-->
-      <div class="e-input-group">
-            <input class="e-input" name='input' type="text" placeholder="Enter Date"/>
-            <span class="e-input-group-icon e-input-popup-date"></span>
+      <div>
+            <input id="textbox" />
       </div>
 
+{% endhighlight %}
+{% highlight html tabtitle="index.ts" %}
+```
+    import { TextBox } from '@syncfusion/ej2-inputs';
+
+
+    let iconTextBox: TextBox = new TextBox({
+    placeholder: 'Enter Date',
+    created: createHandler,
+    });
+    iconTextBox.appendTo('#textbox');
+
+    function createHandler() {
+       iconTextBox.addIcon('append', 'e-date-icon');
+    }
+
+```
 {% endhighlight %}
 {% endtabs %}
 

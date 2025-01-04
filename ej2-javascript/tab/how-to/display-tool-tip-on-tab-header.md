@@ -9,9 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Display tool tip on tab header in ##Platform_Name## Tab control
+# Display tooltip on tab header in ##Platform_Name## Tab control
 
-You can display tooltip for the tab component header using [`beforeRender`](../../api/tooltip#beforerender) event of Essential JS 2 Tooltip component which can be viewed as hint texts on mouse hovers over tab.
+You can enhance the user experience of your Tab control by displaying tooltips for the tab headers. This feature provides hint text when users hover their mouse over a tab header. To implement this, you'll use the [`beforeRender`](../../api/tooltip#beforerender) event of the Essential JS 2 Tooltip control.
+
+Here's an example of how to add tooltips to your tab headers:
 
 {% if page.publishingplatform == "typescript" %}
 

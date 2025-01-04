@@ -16,7 +16,8 @@ You can render the TextBox in two different sizes.
 Property   | Description
 ------------ | -------------
   Normal     | By default, the TextBox is rendered with normal size.
-  Small      | You need to add `e-small` class to the input element, or else add to the input container.
+  Small      | You need to add `e-small` class to the [cssClass](../api/textbox/#cssClass) property to render the TextBox in smaller size.
+  Bigger     | You need to add e-bigger class to the [cssClass](../api/textbox/#cssClass) property to render the TextBox in bigger size
 
 {% if page.publishingplatform == "typescript" %}
 

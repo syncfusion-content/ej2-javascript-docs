@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Set the disabled state in ##Platform_Name## Textbox control
 
-Disable the TextBox by adding the `e-disabled` to the input parent element and set `disabled` attribute to the input element.
+Disable the TextBox by set [enabled](../api/textbox/#cssClass) property as false to the TextBoxComponent.
 
 {% if page.publishingplatform == "typescript" %}
 

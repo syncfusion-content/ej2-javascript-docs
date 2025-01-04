@@ -207,7 +207,7 @@ The `MultiRow` display mode allows the Toolbar to wrap the toolbar items to the 
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/toolbar/toolbar-extended/index.ts %}
 {% endhighlight %}

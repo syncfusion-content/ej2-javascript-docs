@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Set the rounded corner in ##Platform_Name## Textbox control
 
-Render the TextBox with `rounded corner` by adding the `e-corner` class to the input parent element.
+Render the TextBox with `rounded corner` by adding the `e-corner` to the [cssClass](../api/textbox/#cssClass) property of the TextBoxComponent.
 
 >This rounded corner visible only in box model input component
 

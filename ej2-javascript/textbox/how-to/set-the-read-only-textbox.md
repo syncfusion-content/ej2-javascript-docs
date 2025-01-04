@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Set the read only textbox in ##Platform_Name## Textbox control
 
-You can make the TextBox as `read-only` by setting the `readonly` attribute to the input element.
+You can make the TextBox as `read-only` by setting the [readonly](../api/textbox/#readonly) property to the TextBoxComponent.
 
 {% if page.publishingplatform == "typescript" %}
 

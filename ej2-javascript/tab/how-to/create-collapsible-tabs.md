@@ -11,14 +11,22 @@ domainurl: ##DomainURL##
 
 # Create collapsible tabs in ##Platform_Name## Tab control
 
-You can achieve collapse and expand functionality in Tab by adding/removing a custom CSS class in the click event handler for each tab.
-* Define a CSS class to set the style property display as none. Here 'collapse' class is added to the content element for hiding it using [`created`](../../api/tab#created) event.
-* Bind the [`selected`](../../api/tab#selected) event for Tab to collapse the initially selected Tab item and bind custom click handler for the Tab headers.
-* In the event handler, add and remove 'collapse' class to hide and show the corresponding Tab content.
+You can implement collapse and expand functionality in the Tab control by adding and removing a custom CSS class in the click event handler for each tab. Here's how to achieve this:
+
+1. **Define a CSS class to hide the content:** Create a `collapse` class that sets the `display` property to `none`. Add this class to the content element in the [`created`](../../api/tab#created) event to initially hide it.
+
+2. **Set up event handlers:**
+
+   - Bind the [`selected`](../../api/tab#selected) event for the Tab to collapse the initially selected Tab item.
+   - Bind a custom click handler for the Tab headers.
+
+3. **Implement the collapse/expand functionality:** In the event handler, add and remove the `collapse` class to hide and show the corresponding Tab content.
+
+Here's an example of how to create collapsible tabs:
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/tab/collapse-cs1/index.ts %}
 {% endhighlight %}

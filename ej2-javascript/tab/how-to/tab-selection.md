@@ -11,11 +11,13 @@ domainurl: ##DomainURL##
 
 # Tab selection in ##Platform_Name## Tab control
 
-We can able to find the tab selection whether it is selected by user interaction or programmatically way in the [`selecting`](../../api/tab#selecting) and [`selected`](../../api/tab#selected) event argument with the field of `isInteracted`. When the user changes the tab through click actions it will return `true` otherwise, it will return false. The following code example depicts to find the tab selecting the state in selecting and selected events.
+You can determine whether a tab was selected through user interaction or programmatically by using the [`selecting`](../../api/tab#selecting) and [`selected`](../../api/tab#selected) event arguments. These arguments contain an `isInteracted` field that returns `true` when the user changes the tab through click actions, and `false` when the change occurs programmatically.
+
+The following code example demonstrates how to identify the tab selection state in the selecting and selected events:
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/tab/tab-selection-cs2/index.ts %}
 {% endhighlight %}

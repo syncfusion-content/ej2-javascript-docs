@@ -11,11 +11,15 @@ domainurl: ##DomainURL##
 
 # Reorder active tab in ##Platform_Name## Tab control
 
-We can able to prevent the changing of the active tab item on resizing the browser when overflow mode is popup by using the [`reorderActiveTab`](../../api/tab#reorderActiveTab) property. By default, the active Tab should be reordered when we click the tab items from the popup. If we set `false` to [`reorderActiveTab`](../../api/tab#reorderActiveTab) property the active tab item from the popup will not be reordered and an active item is highlighted inside the popup. The following code example depicts to prevent the reorder active tab item inside the popup.
+You can prevent the active tab item from changing when resizing the browser in popup overflow mode by using the [`reorderActiveTab`](../../api/tab#reorderActiveTab) property. 
+
+By default, the active tab is reordered when you click on tab items in the popup. If you set the [`reorderActiveTab`](../../api/tab#reorderActiveTab) property to `false`, the active tab item from the popup will not be reordered, and the active item will remain highlighted inside the popup.
+
+The following example demonstrates how to prevent the reordering of the active tab item inside the popup:
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/tab/reorder-active-tab-cs1/index.ts %}
 {% endhighlight %}

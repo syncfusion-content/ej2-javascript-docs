@@ -19,11 +19,31 @@ TextBox:
 
 * Place input element with the class `e-input` inside the parent div element.
 
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+
+    <div>
+      <!--element which is going to render the TextBox-->
+      <input id="firstName"/>
+    </div>
+
+
+{% endhighlight %}
+
+{% highlight html tabtitle="index.ts" %}
+
 ```
-      <div class="e-input-group">
-            <input class="e-input" name='input' type="text" placeholder="Enter Date"/>
-      </div>
+    import { TextBox } from '@syncfusion/ej2-inputs'
+
+    let inputobj: TextBox = new TextBox({
+        placeholder: 'Enter Date',
+    });
+
+inputobj.appendTo('#firstName');
 ```
+
+{% endhighlight %}
+{% endtabs %}
 
 Floating label:
 
@@ -38,13 +58,32 @@ Floating label:
 > Creating the Floating label TextBox, you have to set the `required` attribute to the Input element to achieve the floating label functionality which is used for validating the value existence in TextBox. If you want to render the Floating label TextBox without
 `required` attribute then refer to the [Floating label without required attribute](#floating-label-without-required-attribute) section.
 
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+
+    <div>
+      <!--element which is going to render the TextBox-->
+      <input id="firstName"/>
+    </div>
+
+
+{% endhighlight %}
+
+{% highlight html tabtitle="index.ts" %}
+
 ```
-        <div class="e-float-input e-input-group">
-            <input type="text" required/>
-            <span class="e-float-line"></span>
-            <label class="e-float-text">Enter Name </label>
-        </div>
+    import { TextBox } from '@syncfusion/ej2-inputs'
+
+    let inputobj: TextBox = new TextBox({
+        placeholder: 'Enter the name',
+        floatLabelType: 'Auto'
+    });
+
+inputobj.appendTo('#firstName');
 ```
+
+{% endhighlight %}
+{% endtabs %}
 
 And refer to the following sections to add the icons to the TextBox.
 

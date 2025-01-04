@@ -11,23 +11,23 @@ domainurl: ##DomainURL##
 
 # Set custom animation in ##Platform_Name## Tab control
 
-Tab supports custom animations for both previous and next actions from the provided animation option of `Animation` library. The [`animation`](../../api/tab#animation) property also allows you to set [`easing`](../../api/tab/tabActionSettings#easing), [`duration`](../../api/tab/tabActionSettings#duration), and various other [`effect`](../../api/tab/tabActionSettings#effect).
+The Tab control supports custom animations for both previous and next actions using the `Animation` library. You can customize the animation using the [`animation`](../../api/tab#animation) property, which allows you to set [`easing`](../../api/tab/tabActionSettings#easing), [`duration`](../../api/tab/tabActionSettings#duration), and various other [`effects`](../../api/tab/tabActionSettings#effect).
 
-Default animation is given as `SlideLeftIn` for [`previous`](../../api/tab/tabAnimationSettings#previous) tab animation and `SlideRightIn` for [`next`](../../api/tab/tabAnimationSettings#next) tab animation. You can also disable the animation by setting the animation effect as `None`. Also, please use the following CSS to disable indicator animation for animation effect as `None`.
+By default, the Tab uses the `SlideLeftIn` animation for the [`previous`](../../api/tab/tabAnimationSettings#previous) tab and `SlideRightIn` for the [`next`](../../api/tab/tabAnimationSettings#next) tab. You can disable the animation by setting the animation effect to `None`.
+
+To disable the indicator animation when the effect is set to `None`, use the following CSS:
 
 ```css
-
 .e-tab .e-tab-header:not(.e-vertical) .e-indicator, .e-tab .e-tab-header.e-vertical .e-indicator {
     transition: none;
 }
-
 ```
 
-The sample demonstrates some types of animation that suits Tab. You can check all the animation effects here.
+The following example demonstrates some animation types suitable for the Tab control.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/tab/tab-animation-cs1/index.ts %}
 {% endhighlight %}

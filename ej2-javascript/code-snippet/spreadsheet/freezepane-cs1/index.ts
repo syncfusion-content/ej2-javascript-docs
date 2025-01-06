@@ -6,7 +6,7 @@ enableRipple(true);
 
 let columns: ColumnModel[] = [{ width: 180 }, { width: 180 }, { width: 180 },
 { width: 180 }, { width: 180 }, { width: 180 },
-{ width: 180 }, { width: 180 }, { width: 180 }, { width: 180 }, { width: 180 }, { width: 180 }]
+{ width: 180 }, { width: 180 }, { width: 180 }, { width: 180 }, { width: 180 }, { width: 180 }];
 
 let spreadsheet: Spreadsheet = new Spreadsheet({
     sheets: [{

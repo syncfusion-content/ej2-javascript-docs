@@ -11,7 +11,11 @@ domainurl: ##DomainURL##
 
 # Sort in ##Platform_Name## Spreadsheet control
 
-Sorting helps arranging the data to a specific order in a selected range of cells. You can use the [`allowSorting`](../api/spreadsheet/#allowsorting) property to enable or disable sorting functionality.
+{% if page.publishingplatform == "typescript" %}
+Sorting helps arranging the data to a specific order in a selected range of cells. You can use the [`allowSorting`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#allowsorting) property to enable or disable sorting functionality.
+{% elsif page.publishingplatform == "javascript" %}
+Sorting helps arranging the data to a specific order in a selected range of cells. You can use the [`allowSorting`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#allowsorting) property to enable or disable sorting functionality.
+{% endif %}
 
 > * The default value for `allowSorting` property is `true`.
 
@@ -22,7 +26,11 @@ By default, the `sort` module is injected internally into Spreadsheet to perform
 In the active Spreadsheet, select a range of cells to sort by cell value. The range sort can be done by any of the following ways:
 * Select the sort item in the Ribbon toolbar and choose the ascending or descending item.
 * Right-click the sheet, select the sort item in the context menu and choose the ascending/descending item.
-* Use the [`sort()`](../api/spreadsheet/#sort) method programmatically.
+{% if page.publishingplatform == "typescript" %}
+* Use the [`sort()`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#sort) method programmatically.
+{% elsif page.publishingplatform == "javascript" %}
+* Use the [`sort()`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#sort) method programmatically.
+{% endif %}
 
 The cell values can be sorted in the following orders:
 * Ascending
@@ -30,11 +38,22 @@ The cell values can be sorted in the following orders:
 
 > * Ascending is the default order for sorting.
 
+{% if page.publishingplatform == "typescript" %}
+
 The `sort()` method with empty arguments will sort the selected range by active cell’s column as sort column in ascending order.
 
-> * The [`beforeSort`](../api/spreadsheet/#beforesort) event will be triggered before sorting the specified range.
-> * The [`sortComplete`](../api/spreadsheet/#sortcomplete) event will be triggered after the sort action is completed successfully.
+> * The [`beforeSort`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#beforesort) event will be triggered before sorting the specified range.
+> * The [`sortComplete`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#sortcomplete) event will be triggered after the sort action is completed successfully.
 
+{% elsif page.publishingplatform == "javascript" %}
+
+The `sort()` method with empty arguments will sort the selected range by active cell’s column as sort column in ascending order.
+
+> * The [`beforeSort`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#beforesort) event will be triggered before sorting the specified range.
+> * The [`sortComplete`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#sortcomplete) event will be triggered after the sort action is completed successfully.
+
+{% endif %}
+ 
 The following code example shows `Sort` functionality in the Spreadsheet control.
 
 {% if page.publishingplatform == "typescript" %}
@@ -66,7 +85,15 @@ The following code example shows `Sort` functionality in the Spreadsheet control
 
 ## Data contains header
 
-You can specify whether the selected range of cells contains header. To specify, you need to set the [`containsHeader`](../api/spreadsheet/#containsheader) property to `true` and pass it as `sortOption` arguments of the sort() method.
+{% if page.publishingplatform == "typescript" %}
+
+You can specify whether the selected range of cells contains header. To specify, you need to set the [`containsHeader`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#containsheader) property to `true` and pass it as `sortOption` arguments of the sort() method.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+You can specify whether the selected range of cells contains header. To specify, you need to set the [`containsHeader`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#containsheader) property to `true` and pass it as `sortOption` arguments of the sort() method.
+
+{% endif %}
 
 > * If the `containsHeader` property is not set and active cell column’s first cell value type is differed from the second cell value type, the first row data in the range are marked as column headers.
 
@@ -87,8 +114,16 @@ In the custom sort dialog, the `Data contains header` checkbox is checked on loa
 
 ## Case sensitive sort
 
-The default sort functionality of Spreadsheet is a case insensitive sorting. When you want to perform sorting with case sensitive, you need to set the [`caseSensitive`](../api/spreadsheet/#caseSensitive) property to `true` and pass it as `sortOption` arguments of the sort() method.
+{% if page.publishingplatform == "typescript" %}
 
+The default sort functionality of Spreadsheet is a case insensitive sorting. When you want to perform sorting with case sensitive, you need to set the [`caseSensitive`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#caseSensitive) property to `true` and pass it as `sortOption` arguments of the sort() method.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+The default sort functionality of Spreadsheet is a case insensitive sorting. When you want to perform sorting with case sensitive, you need to set the [`caseSensitive`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#caseSensitive) property to `true` and pass it as `sortOption` arguments of the sort() method.
+
+{% endif %}
+ 
 Case sensitive sorting is applicable only for cells with alphabets. In ascending order sorting with case sensitive enabled, the cells with lower case text will be placed above the cells with upper case text.
 
 > * The default value for the `caseSensitive` property is `false`.
@@ -127,7 +162,16 @@ You can refer to the [`Data contains header`](./sort/#data-contains-header) topi
 ### Passing sort criteria manually
 
 The multi-column sorting can also be performed manually by passing sort options to the `sort()` method programmatically. The `sortOption` have the following arguments:
-* [`sortDescriptors`](../api/spreadsheet/#sortdescriptors) – Sort criteria collection that holds the collection of field name, sort order, and [`sortComparer`](../api/spreadsheet/#sortcomparer).
+
+{% if page.publishingplatform == "typescript" %}
+
+* [`sortDescriptors`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#sortdescriptors) – Sort criteria collection that holds the collection of field name, sort order, and [`sortComparer`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#sortcomparer).
+
+{% elsif page.publishingplatform == "javascript" %}
+
+* [`sortDescriptors`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#sortdescriptors) – Sort criteria collection that holds the collection of field name, sort order, and [`sortComparer`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#sortcomparer).
+
+{% endif %}
 * `containsHeader` – Boolean argument that specifies whether the range has headers in it.
 * `caseSensitive` – Boolean argument that specifies whether the range needs to consider case.
 
@@ -163,13 +207,54 @@ The multi-column sorting can also be performed manually by passing sort options 
 
 ## Custom sort comparer
 
-The [`sortDescriptor`](../api/spreadsheet/#sortdescriptor) holds the [`sortComparer`](../api/spreadsheet/#sortcomparer) property, which is a function and it is used to customize the sort comparer for specific sort criteria. Each `sortDescriptor` can be customized using the custom sort comparer function.
+{% if page.publishingplatform == "typescript" %}
 
+The [`sortDescriptor`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#sortdescriptors) holds the [`sortComparer`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#sortcomparer) property, which is a function and it is used to customize the sort comparer for specific sort criteria. Each `sortDescriptor` can be customized using the custom sort comparer function.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+The [`sortDescriptor`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#sortdescriptors) holds the [`sortComparer`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#sortcomparer) property, which is a function and it is used to customize the sort comparer for specific sort criteria. Each `sortDescriptor` can be customized using the custom sort comparer function.
+
+{% endif %}
+ 
 By customizing sort comparer, you can define the sort action as desired.
 
 > * The `sortComparer` is an optional property of `sortDescriptor`.
 
-For custom sort comparer example, refer to the [`Sort a range by custom list`](./how-to/sort-a-range-by-custom-list) in the `how-to` section.
+For custom sort comparer example, refer to the [`Sort a range by custom list`] below.
+
+### Sort a range by custom list
+
+You can also define the sorting of cell values based on your own customized personal list. In this article, custom list is achieved using `custom sort comparer`.
+
+In the following demo, the `Trustworthiness` column is sorted based on the custom lists `Perfect`, `Sufficient`, and `Insufficient`.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/spreadsheet/sort-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/spreadsheet/sort-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/spreadsheet/sort-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/spreadsheet/sort-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/spreadsheet/sort-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/spreadsheet/sort-cs1" %}
+{% endif %}
 
 ## Known error validations
 
@@ -186,7 +271,6 @@ The following errors have been handled for sorting,
 
 ## See Also
 
-* [Sort a range by custom list](./how-to/sort-a-range-by-custom-list)
 * [Hyperlink](./link)
 * [Filtering](./filter)
 * [Undo Redo](./undo-redo)

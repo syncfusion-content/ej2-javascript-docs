@@ -117,4 +117,12 @@ The accessibility compliance of the Spreadsheet control is shown in the followin
 
 ## See also
 
-* [Accessibility in Syncfusion EJ2 controls](../common/accessibility)
+{% if page.publishingplatform == "typescript" %}
+
+* [Accessibility in Syncfusion EJ2 controls](https://ej2.syncfusion.com/documentation/common/accessibility)
+
+{% elsif page.publishingplatform == "javascript" %}
+
+* [Accessibility in Syncfusion EJ2 controls](https://ej2.syncfusion.com/javascript/documentation/common/accessibility)
+
+{% endif %}

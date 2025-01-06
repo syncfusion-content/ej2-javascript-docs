@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Spreadsheet control
 
-This section explains the steps to create a simple Spreadsheet control using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section explains the steps to create a simple Spreadsheet component using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
-The following list of dependencies are required to use the Spreadsheet control in your application:
+The following list of dependencies are required to use the Spreadsheet component in your application:
 
 ```js
 |-- @syncfusion/ej2-spreadsheet
@@ -80,7 +80,7 @@ The quickstart application is preconfigured to use the `Material` theme in the `
 
 > You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme/) section to know more about built-in themes and CSS reference for individual controls.
 
-## Add Spreadsheet control
+## Add Spreadsheet component
 
 Add the HTML `div` element with ID attribute as `element` in your `index.html` file.
 
@@ -109,7 +109,7 @@ Add the HTML `div` element with ID attribute as `element` in your `index.html` f
 {% endhighlight %}
 {% endtabs %}
 
-Now, import the Spreadsheet control into your `app.ts` to instantiate a spreadsheet and append the spreadsheet instance to the `#element`.
+Now, import the Spreadsheet component into your `app.ts` to instantiate a spreadsheet and append the spreadsheet instance to the `#element`.
 
 `[src/app/app.ts]`
 
@@ -118,7 +118,7 @@ Now, import the Spreadsheet control into your `app.ts` to instantiate a spreadsh
 
 import { Spreadsheet } from '@syncfusion/ej2-spreadsheet';
 
-// Initialize Spreadsheet control
+// Initialize Spreadsheet component
 let spreadsheet: Spreadsheet = new Spreadsheet();
 
 // Render initialized Spreadsheet
@@ -139,7 +139,7 @@ npm start
 {% endhighlight %}
 {% endtabs %}
 
-The following example shows a basic Spreadsheet control.
+The following example shows a basic Spreadsheet component.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

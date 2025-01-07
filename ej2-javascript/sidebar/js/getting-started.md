@@ -4,7 +4,7 @@ title: Getting started with JavaScript Sidebar control | Syncfusion
 description: Checkout and learn about Getting started with JavaScript Sidebar control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
-publishingplatform: JavaScript
+publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -13,9 +13,9 @@ domainurl: ##DomainURL##
 
 The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
-## Component Initialization
+## Control Initialization
 
-Create an app folder `myapp` in local machine to initialize Essential JS 2 JavaScript components.
+Create an app folder `myapp` in local machine to initialize Essential JS 2 JavaScript controls.
 
 Using either of the following way to refer the required script and styles.
 
@@ -24,9 +24,9 @@ Using either of the following way to refer the required script and styles.
 
 ### Using local script and style references in a HTML page
 
-**Step 1:** Create an app folder `myapp` for Essential JS 2 JavaScript components.
+**Step 1:** Create an app folder `myapp` for Essential JS 2 JavaScript controls.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2/confirm) build installed location.
+**Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
 **Syntax:**
 > Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
@@ -66,7 +66,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
   </html>
 ```
 
-**Step 5:** Now, add the `div` element and initiate the `Essential JS 2 Sidebar` component in the `index.html` by using following code
+**Step 5:** Now, add the `div` element and initiate the `Essential JS 2 Sidebar` control in the `index.html` by using following code
 
 ```html
 <!DOCTYPE html>
@@ -96,7 +96,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
         </div>
     </div>
     <script>
-        // initialize Sidebar component
+        // initialize Sidebar control
         var defaultSidebar = new ej.navigations.Sidebar();
 
         // Render initialized sidebar.
@@ -107,11 +107,11 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
 </html>
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential JS 2 Sidebar** component.
+**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential JS 2 Sidebar** control.
 
 ### Using CDN link for script and style reference
 
-**Step 1:** The Essential JS 2 components scripts and styles are already hosted in the below CDN link formats.
+**Step 1:** The Essential JS 2 controls scripts and styles are already hosted in the below CDN link formats.
 
 **Syntax:**
 > Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -135,8 +135,8 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
     <!-- Sidebar and its dependent theme -->
     <link href="http://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css" />
     <link href="http://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css" rel="stylesheet" type="text/css" />
-    <!-- Essential JS 2 Sidebar's global script -->
-    <script src="http://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js" type="text/javascript"></script>
+    <!-- Essential JS 2 all script -->
+    <script src="http://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript">
 </head>
 
 <body>
@@ -153,7 +153,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
         </div>
     </div>
     <script>
-        // initialize Sidebar component
+        // initialize Sidebar control
         var defaultSidebar  = new ej.navigations.Sidebar();
 
         // Render initialized sidebar.
@@ -168,7 +168,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
 
 ## Enable backdrop
 
-Enabling the `showBackdrop` in the Sidebar component will prevent the main content from user interactions, when it is in expanded state.
+Enabling the `showBackdrop` in the Sidebar control will prevent the main content from user interactions, when it is in expanded state.
 Here, the DOM elements will not get changed. It only closes the main content by covering with a black backdrop overlay and focuses the Sidebar in the screen. Sidebar can be rendered with specific width by setting `width` property.
 
 N> To achieve a proper **backdrop**, we suggest that you create a wrapper parent container for the div block in which you intend to enable the backdrop. Set the class name of this parent container as the **target** for the Sidebar. Alternatively, you can place an empty div container after the target container.
@@ -186,7 +186,7 @@ N> To achieve a proper **backdrop**, we suggest that you create a wrapper parent
 
 ## Position
 
-Positioning the Sidebar to the right or left of the main content can be achieved by using the `position` property. If the position is not set, the Sidebar will expand from the left to the body element. `enablePersistence` will persist the component's state between page reloads. `change` event will be triggered when the state(expand/collapse) of the component is changed.
+Positioning the Sidebar to the right or left of the main content can be achieved by using the `position` property. If the position is not set, the Sidebar will expand from the left to the body element. `enablePersistence` will persist the control's state between page reloads. `change` event will be triggered when the state(expand/collapse) of the control is changed.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

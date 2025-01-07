@@ -6,7 +6,6 @@ ej.base.enableRipple(true);
 		enableGestures:false
     });
     defaultSidebar.appendTo('#default-sidebar');
-    //end of Sidebar initialization
 
    // Toggle(Open/Close) the sidebar
     document.getElementById('toggle').onclick = function() {
@@ -17,9 +16,6 @@ ej.base.enableRipple(true);
     document.getElementById('close').onclick = function() {
         defaultSidebar.hide();
     };
-    //end of sidebar initialization
-
-    // Toggle(Open/Close) the sidebar
 
 
 

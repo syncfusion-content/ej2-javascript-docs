@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Treeview control
 
-This section explains the steps required to create a simple [JavaScript TreeView](https://www.syncfusion.com/javascript-ui-controls/js-treeview) component, and configure its available functionalities in TypeScript using the Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is preconfigured with all the Essential JS 2 packages.
+This section explains the steps required to create a simple [JavaScript TreeView](https://www.syncfusion.com/javascript-ui-controls/js-treeview) control, and configure its available functionalities in TypeScript using the Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is preconfigured with all the Essential JS 2 packages.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
-The following list of dependencies are required to use the TreeView component in your application.
+The following list of dependencies are required to use the TreeView control in your application.
 
 ```javascript
 |-- @syncfusion/ej2-navigations
@@ -80,11 +80,11 @@ Combined CSS files are available in the Essential JS 2 package root folder. This
 {% endhighlight %}
 {% endtabs %}
 
-> To refer individual component CSS, please refer to the [Individual Component theme files](../appearance/theme/#referring-individual-control-theme) section. If you want to refer the combined component styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
+> To refer individual control CSS, please refer to the [Individual Control theme files](../appearance/theme/#referring-individual-control-theme) section. If you want to refer the combined control styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
-## Adding TreeView component
+## Adding TreeView control
 
-Now, you can start adding Essential JS 2 TreeView component to the application. To get started, add the TreeView component to `app.ts` and `index.html` files using the following code. Then, add the HTML `<div>` element with its `id` attribute set to `tree` for TreeView component to your `index.html`.
+Now, you can start adding Essential JS 2 TreeView control to the application. To get started, add the TreeView control to `app.ts` and `index.html` files using the following code. Then, add the HTML `<div>` element with its `id` attribute set to `tree` for TreeView control to your `index.html`.
 
 `[src/index.html]`
 
@@ -129,7 +129,7 @@ import { enableRipple } from '@syncfusion/ej2-base';
 enableRipple(true);
 import { TreeView } from '@syncfusion/ej2-navigations'
 
-//Initialize TreeView component
+//Initialize TreeView control
 let treeViewInstance: TreeView = new TreeView();
 
 //Render initialized TreeView
@@ -140,7 +140,7 @@ treeViewInstance.appendTo("#tree");
 
 ## Binding data source
 
-TreeView can load data either from local data sources or remote data services. This can be done using the `dataSource` property that is a member of the [fields](../api/treeview#fields) property. The dataSource property supports array of JavaScript objects and `DataManager`. Here, an array of JSON values is passed to the TreeView component.
+TreeView can load data either from local data sources or remote data services. This can be done using the `dataSource` property that is a member of the [fields](../api/treeview#fields) property. The dataSource property supports array of JavaScript objects and `DataManager`. Here, an array of JSON values is passed to the TreeView control.
 
 `[src/app/app.ts]`
 
@@ -177,7 +177,7 @@ let data: { [key: string]: Object }[] = [
         ]
     },
 ];
-//Initialize TreeView component
+//Initialize TreeView control
 let treeViewInstance: TreeView = new TreeView({
     fields: { dataSource: data, id: 'nodeId', text: 'nodeText', child: 'nodeChild' }
 });

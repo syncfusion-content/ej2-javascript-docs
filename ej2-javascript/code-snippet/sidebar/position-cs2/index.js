@@ -10,7 +10,6 @@ ej.base.enableRipple(true);
     //end of Sidebar initialization
 
     //toggle button initialization
-
     var togglebtn = new ej.buttons.Button({iconCss: 'e-icons burg-icon', isToggle: true, content:'Open'}, '#toggle');
 
     //Click Event for toggle button to triger show/hide methods of Sidebar

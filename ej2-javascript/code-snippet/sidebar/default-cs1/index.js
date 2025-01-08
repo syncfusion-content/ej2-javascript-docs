@@ -1,4 +1,3 @@
-ej.base.enableRipple(true);
 
 //sidebar initialization
 var defaultSidebar= new ej.navigations.Sidebar({

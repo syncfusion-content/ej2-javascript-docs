@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Sidebar control
 
-This section briefly explains how to create a simple **Sidebar** component, and configure it in TypeScript using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section briefly explains how to create a simple **Sidebar** control, and configure it in TypeScript using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
-The following list of dependencies are required to use the Sidebar component in your application.
+The following list of dependencies are required to use the Sidebar control in your application.
 
 ```js
 |-- @syncfusion/ej2-navigations
@@ -69,7 +69,7 @@ npm install
 
 ## Import the Syncfusion CSS styles
 
-To render the Sidebar component, need to import sidebar and its dependent component’s styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+To render the Sidebar control, need to import sidebar and its dependent control’s styles as given below in the `~/src/styles/styles.css` file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -80,7 +80,7 @@ To render the Sidebar component, need to import sidebar and its dependent compon
 {% endhighlight %}
 {% endtabs %}
 
->Note: If you want to refer the combined component styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
+>Note: If you want to refer the combined control styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
 ## Initialize Sidebar using HTML elements
 
@@ -111,8 +111,6 @@ To render the Sidebar, refer to the following structure of the HTML elements:
         <aside id="default">
             <div class="title"> Sidebar </div>
         </aside>
-        <!-- end of sidebar element -->
-        <!-- main content declaration -->
         <div>
             <div class="title">Main content</div>
             <div class="sub-title"> Content goes here</div>
@@ -125,7 +123,7 @@ To render the Sidebar, refer to the following structure of the HTML elements:
 {% endhighlight %}
 {% endtabs %}
 
-* Import the Sidebar component to your `app.ts` file, and initialize it to the `#default` as follows:
+* Import the Sidebar control to your `app.ts` file, and initialize it to the `#default` as follows:
 
 `[src/app/app.ts]`
 
@@ -133,12 +131,9 @@ To render the Sidebar, refer to the following structure of the HTML elements:
 {% highlight ts tabtitle="app.ts" %}
 
 import { Sidebar } from '@syncfusion/ej2-navigations';
-import { enableRipple } from '@syncfusion/ej2-base';
-enableRipple(true);
 
 let defaultSidebar: Sidebar = new Sidebar();
 defaultSidebar.appendTo('#default');
-    //end of sidebar initialization
 
 {% endhighlight %}
 {% endtabs %}
@@ -171,11 +166,11 @@ npm start
 
 ## Enable backdrop
 
-Enabling the [`showBackdrop`](../api/sidebar/#showbackdrop) in the Sidebar component will prevent the main content from user interactions, when it is in expanded state. Here, the DOM elements will not get changed. It only closes the main content by covering with a black backdrop overlay and focuses the Sidebar in the screen. Sidebar can be rendered with specific width by setting `width` property.
+Enabling the [`showBackdrop`](../api/sidebar/#showbackdrop) in the Sidebar control will prevent the main content from user interactions, when it is in expanded state. Here, the DOM elements will not get changed. It only closes the main content by covering with a black backdrop overlay and focuses the Sidebar in the screen. Sidebar can be rendered with specific width by setting `width` property.
 
 N> To achieve a proper **backdrop**, we suggest that you create a wrapper parent container for the div block in which you intend to enable the backdrop. Set the class name of this parent container as the **target** for the Sidebar. Alternatively, you can place an empty div container after the target container.
 
-The following example shows a Sidebar component with enabled backdrop.
+The following example shows a Sidebar control with enabled backdrop.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -190,7 +185,7 @@ The following example shows a Sidebar component with enabled backdrop.
 
 ## Position
 
-Positioning the Sidebar to the right or left of the main content can be achieved by using the [`position`](../api/sidebar/#position) property. If the position is not set, the Sidebar will expand from the left to the body element. `enablePersistence` will persist the component's state between page reloads. `change` event will be triggered when the state(expand/collapse) of the component is changed.
+Positioning the Sidebar to the right or left of the main content can be achieved by using the [`position`](../api/sidebar/#position) property. If the position is not set, the Sidebar will expand from the left to the body element. `enablePersistence` will persist the control's state between page reloads. `change` event will be triggered when the state(expand/collapse) of the control is changed.
 
 In the following sample, the position of the Sidebar can be changed using the radio buttons in the main content.
 

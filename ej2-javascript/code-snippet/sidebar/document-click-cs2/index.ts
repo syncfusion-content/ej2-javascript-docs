@@ -9,7 +9,6 @@ let defaultSidebar: Sidebar = new Sidebar({
     type: "Push",width: '280px',closeOnDocumentClick: true,isOpen: true
 });
 defaultSidebar.appendTo('#default-sidebar');
-//end of Sidebar initialization
 
 // Toggle(Open/Close) the Sidebar
 const toggleButton = document.getElementById('toggle');

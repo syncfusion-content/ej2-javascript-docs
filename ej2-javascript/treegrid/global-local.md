@@ -210,7 +210,6 @@ When localizing TreeGrid, it's important to include dependent components like Da
     });
     ```
 
-
 ## Internationalization
 
 The [`Internationalization`](../common/internationalization/) library is used to globalize number, date, and time values in treegrid component using format strings in the [`columns.format`](../api/treegrid/column/#format).

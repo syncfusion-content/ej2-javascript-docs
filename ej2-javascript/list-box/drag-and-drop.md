@@ -87,6 +87,37 @@ In the following sample, the `allowDragAndDrop` property is set as `true` and `s
 {% previewsample "page.domainurl/code-snippet/list-box/multiple-list-box-cs1" %}
 {% endif %}
 
+## Dual ListBox with drag and drop
+
+The toolbar and drag and drop actions between two listboxes can be enabled by setting a listbox unique id and the same [`scope`](../api/list-box/#scope) property value.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/list-box/dual-drag-list-box-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/list-box/dual-drag-list-box-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/list-box/dual-drag-list-box-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/list-box/dual-drag-list-box-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/list-box/dual-drag-list-box-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/list-box/dual-drag-list-box-cs1" %}
+{% endif %}
+
 ## See Also
 
 * [How to reorder the items in the list box](./dual-list-box#dual-list-box)

@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Scheduler interactions in ##Platform_Name## Schedule control
 
-The following table describes the Scheduler actions and also illustrates how those actions are carried out through mouse and touch interactions on Scheduler.
+The following table describes the Scheduler actions and illustrates how these actions are carried out through mouse and touch interactions on the Scheduler.
 
 | Actions | Mouse interaction | Touch interaction |
 |-------|---------| --------------- |

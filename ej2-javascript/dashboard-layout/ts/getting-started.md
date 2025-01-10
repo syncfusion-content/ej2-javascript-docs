@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 ---
 # Getting started in ##Platform_Name## Dashboard layout control
 
-This section explains how to create a simple **DashboardLayout** component and configure its available functionalities, using the Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section explains how to create a simple **DashboardLayout** control and configure its available functionalities, using the Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
-The following list of dependencies is required to use the DashboardLayout component in your application.
+The following list of dependencies is required to use the DashboardLayout control in your application.
 
 ```js
 |-- @syncfusion/ej2-layouts
@@ -62,7 +62,7 @@ npm install
 
 ## Import the Syncfusion CSS styles
 
-To render the DashboardLayout component, import the DashboardLayout and its dependent component’s styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+To render the DashboardLayout control, import the DashboardLayout and its dependent control’s styles as given below in the `~/src/styles/styles.css` file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -73,18 +73,18 @@ To render the DashboardLayout component, import the DashboardLayout and its depe
 {% endhighlight %}
 {% endtabs %}
 
-> Note: To refer the combined component styles, use Syncfusion [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
+> Note: To refer the combined control styles, use Syncfusion [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
 ## Add DashboardLayout to the application
 
-You can render the DashboardLayout component in the following two ways.
+You can render the DashboardLayout control in the following two ways.
 
 * Adding dashboard element and defining `panels` property as attributes in the HTML elements directly.
 * Adding the dashboard element and defining the `panels` property through script.
 
 ## Defining panels property through HTML attributes
 
-The `panels` of the Dashboard layout component can defined through HTML attributes by using the predefined class `.e-panel` to the component child elements and data attributes for defining the `sizeX`, `sizeY`, `row` and `column` properties for each panel.
+The `panels` of the Dashboard layout control can defined through HTML attributes by using the predefined class `.e-panel` to the control child elements and data attributes for defining the `sizeX`, `sizeY`, `row` and `column` properties for each panel.
 
 The following sample demonstrates defining of `panels` by adding child elements within the root element.
 
@@ -97,7 +97,7 @@ The following sample demonstrates defining of `panels` by adding child elements 
 <html lang="en">
 
 <head>
-    <title>Essential JS 2 DashboardLayout component</title>
+    <title>Essential JS 2 DashboardLayout control</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <meta name="description" content="Essential JS 2" />
@@ -153,7 +153,7 @@ The following sample demonstrates defining of `panels` by adding child elements 
 {% endhighlight %}
 {% endtabs %}
 
-Now, import the DashboardLayout component into your `app.ts` and append it to `#dashboard_inline`.
+Now, import the DashboardLayout control into your `app.ts` and append it to `#dashboard_inline`.
 
 `[src/app/app.ts]`
 
@@ -162,7 +162,7 @@ Now, import the DashboardLayout component into your `app.ts` and append it to `#
 
 import { DashboardLayout } from '@syncfusion/ej2-layouts';
 
-// initialize dashboardlayout component
+// initialize dashboardlayout control
 let dashboard: DashboardLayout  = new DashboardLayout ({
     columns: 5
 });
@@ -202,7 +202,7 @@ The below output can be achieved by following the steps mentioned above.
 
 ## Defining panels properties through script
 
-The panels can be defined simply during component initialization at the script section using the `panels` property of the component.
+The panels can be defined simply during control initialization at the script section using the `panels` property of the control.
 
 The following sample demonstrates defining panels property through script section. Here, the panels settings is defined using panels property with same settings as in HTML definition in the previous section.
 
@@ -213,7 +213,7 @@ The following sample demonstrates defining panels property through script sectio
 
 import { DashboardLayout } from '@syncfusion/ej2-layouts';
 
-// initialize dashboardlayout component
+// initialize dashboardlayout control
 let dashboard: DashboardLayout  = new DashboardLayout ({
     cellSpacing: [10, 10],
     columns: 5,

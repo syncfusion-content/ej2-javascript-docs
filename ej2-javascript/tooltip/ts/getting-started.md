@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Tooltip control
 
-This section briefly explains how to create a simple **Tooltip** component and configure its available functionalities in TypeScript, using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section briefly explains how to create a simple **Tooltip** control and configure its available functionalities in TypeScript, using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
@@ -22,7 +22,7 @@ Tooltips can be initialized on,
 
 ## Dependencies
 
-The following list of dependencies are required to use the Tooltip component in your application.
+The following list of dependencies are required to use the Tooltip control in your application.
 
 ```js
 |-- @syncfusion/ej2-popups
@@ -68,7 +68,7 @@ npm install
 
 ## Import the Syncfusion CSS styles
 
-To render Tootip component, need to import Popups and its dependent components styles as given below in in the `~/src/styles/styles.css` file, as shown below: 
+To render Tootip control, need to import Popups and its dependent controls styles as given below in in the `~/src/styles/styles.css` file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -114,7 +114,7 @@ To render Tootip component, need to import Popups and its dependent components s
 {% endhighlight %}
 {% endtabs %}
 
-* Import the Tooltip component to your `app.ts` file, and initialize it to the element `#target` as shown below.
+* Import the Tooltip control to your `app.ts` file, and initialize it to the element `#target` as shown below.
 
 `[src/app/app.ts]`
 
@@ -123,7 +123,7 @@ To render Tootip component, need to import Popups and its dependent components s
 
 import { Tooltip } from '@syncfusion/ej2-popups';
 
-// initialize tooltip component
+// initialize tooltip control
 let tooltip: Tooltip = new Tooltip({
     content: 'Tooltip content'
 });

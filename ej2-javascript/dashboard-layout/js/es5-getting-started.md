@@ -13,16 +13,16 @@ domainurl: ##DomainURL##
 
 The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework that can be directly used in latest web browsers.
 
-## Component initialization
+## Control initialization
 
-The Essential JS 2 JavaScript components can be initialized by using any of the following two ways:
+The Essential JS 2 JavaScript controls can be initialized by using any of the following two ways:
 
   * Using local script and style references in an HTML page.
   * Using CDN link for script and style reference.
 
 ### Using local script and style references in an HTML page
 
-**Step 1:** Create an app folder `myapp` for Essential JS 2 JavaScript components.
+**Step 1:** Create an app folder `myapp` for Essential JS 2 JavaScript controls.
 
 **Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
@@ -63,7 +63,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
   </html>
 ```
 
-**Step 5:** Now, create a dashboard element to apply the `Essential JS 2 DashboardLayout` component in the `index.html` by using following code.
+**Step 5:** Now, create a dashboard element to apply the `Essential JS 2 DashboardLayout` control in the `index.html` by using following code.
 
 ```html
     <!DOCTYPE html>
@@ -124,12 +124,12 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
             </div>
         </div>
         <script>
-            //Initialize DashboardLayout component
+            //Initialize DashboardLayout control
             var dashboard = new ej.layouts.DashboardLayout({
                 cellSpacing: [10, 10],
                 columns: 5
             });
-            //Render initialized DashboardLayout component
+            //Render initialized DashboardLayout control
             dashboard.appendTo('#element');
         </script>
         <style>
@@ -149,20 +149,20 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
     </html>
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential JS 2 DashboardLayout** component.
+**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential JS 2 DashboardLayout** control.
 
 ### Using CDN link for script and style reference
 
-The below example shows the rendering of DashboardLayout component using CDN link for script and style reference
+The below example shows the rendering of DashboardLayout control using CDN link for script and style reference
 
 * Setting the `panels` property using HTML attribute
 * Setting the `panels` property using script
 
 #### Setting the `panels` property using HTML attributes
 
-**Step 1:** Create an app folder `myapp` for the Essential JS 2 JavaScript components.
+**Step 1:** Create an app folder `myapp` for the Essential JS 2 JavaScript controls.
 
-**Step 2:** The Essential JS 2 component's global scripts and styles are already hosted in the following CDN link formats.
+**Step 2:** The Essential JS 2 control's global scripts and styles are already hosted in the following CDN link formats.
 
 **Syntax:**
 > Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -172,7 +172,7 @@ The below example shows the rendering of DashboardLayout component using CDN lin
 **Example:**
 > Styles: [`https://cdn.syncfusion.com/ej2/ej2-layouts/styles/material.css`](https://cdn.syncfusion.com/ej2/ej2-layouts/styles/material.css)
 
-**Step 3:** Create an HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `dashboardlayout` element and initiate the `Essential JS 2 DashboardLayout` component in the index.html by using the following code.
+**Step 3:** Create an HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `dashboardlayout` element and initiate the `Essential JS 2 DashboardLayout` control in the index.html by using the following code.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -182,11 +182,11 @@ The below example shows the rendering of DashboardLayout component using CDN lin
         
 {% previewsample "page.domainurl/code-snippet/dashboard-layout/es5-getting-started-cs1" %}
 
-**Step 4:** Now, run the `index.html` in the web browser, it will render the `Essential JS 2 DashboardLayout` component.
+**Step 4:** Now, run the `index.html` in the web browser, it will render the `Essential JS 2 DashboardLayout` control.
 
 #### Setting the `panels` property using script
 
-You can render the DashboardLayout component by using the **panels** property through script. Add the HTML div element for DashboardLayout into your `index.html` file.
+You can render the DashboardLayout control by using the **panels** property through script. Add the HTML div element for DashboardLayout into your `index.html` file.
 
 `[src/index.html]`
 
@@ -204,7 +204,7 @@ Now, render the panel property inside the `<script>` tag
 
 ```javascript
 
-// initialize dashboardlayout component
+// initialize dashboardlayout control
 var dashboard  = new ej.layouts.DashboardLayout ({
     cellSpacing: [10, 10],
     columns: 5,

@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Timeline control
+# Getting Started with Syncfusion JavaScript (ES5) Timeline control
 
 The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework that can be directly used in latest web browsers.
 
@@ -24,7 +24,7 @@ The Essential JS 2 JavaScript controls can be initialized by using any of the fo
 
 **Step 1:** Create an app folder `myapp` for Essential JS 2 JavaScript controls.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2/confirm) build installed location.
+**Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
 **Syntax:**
 > Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`

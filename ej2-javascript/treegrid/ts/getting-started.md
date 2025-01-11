@@ -81,12 +81,12 @@ The quickstart application is preconfigured to use the `Material` theme in the `
 
 ## Adding TreeGrid component
 
-You can start adding Essential JS 2 TreeGrid component to the application. To get started, add the TreeGrid component in the `app.ts` and `index.html` files using the following code.
+You can start adding Essential JS 2 TreeGrid component to the application. To get started, add the TreeGrid component in the `index.ts` and `index.html` files using the following code.
 
-Place the following grid code in the `app.ts`.
+Place the following grid code in the `index.ts`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.ts" %}
+{% highlight ts tabtitle="index.ts" %}
 
 import { TreeGrid } from '@syncfusion/ej2-treegrid';
 

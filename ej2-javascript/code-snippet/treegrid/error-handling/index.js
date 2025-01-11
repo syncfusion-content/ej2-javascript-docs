@@ -1,7 +1,7 @@
 ej.treegrid.TreeGrid.Inject(ej.treegrid.Edit);
 
 var treeGridObj = new ej.treegrid.TreeGrid({
-    dataSource: sampleData,
+    dataSource: window.sampleData,
     childMapping: 'subtasks',
     editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true},
     treeColumnIndex: 1,

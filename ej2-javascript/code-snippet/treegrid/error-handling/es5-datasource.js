@@ -154,7 +154,7 @@ var summaryData = [
     }
 
 ];
-var sampleData =  [
+window.sampleData =  [
     {
         taskID: 1,
         taskName: 'Planning',

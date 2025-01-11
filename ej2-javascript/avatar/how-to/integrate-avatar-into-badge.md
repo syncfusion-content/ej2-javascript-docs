@@ -9,19 +9,19 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate avatar into badge in ##Platform_Name## Avatar control
+# Integrate the Avatar control into the Badge control.
 
-The badge is dependent and supportive component, and it can be used with avatar to create a notification avatar.
-The default avatar (.`e-avatar`) and circle avatar (.`e-avatar-circle`) have been used with notification badges (.`e-badge-notification`) in the following sample.
+The badge is a dependent and supportive control, and it can be used with an avatar to create a notification avatar.
+The default avatar (`.e-avatar`) and circle avatar (`.e-avatar-circle`) have been used with notification badges (`.e-badge-notification`) in the following example.
 
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/avatar/badge-cs1/index.ts %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/avatar/badge-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/avatar/badge-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -30,11 +30,11 @@ The default avatar (.`e-avatar`) and circle avatar (.`e-avatar-circle`) have bee
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/avatar/badge-cs1/index.js %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/avatar/badge-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/avatar/badge-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

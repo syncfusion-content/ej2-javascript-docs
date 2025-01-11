@@ -1,6 +1,6 @@
 ej.treegrid.TreeGrid.Inject(ej.treegrid.Page, ej.treegrid.Sort);
 var treeGridObj = new ej.treegrid.TreeGrid({
-    dataSource: sortData,
+    dataSource: window.sortData,
     childMapping: 'subtasks',
     treeColumnIndex: 1,
     allowSorting: true,

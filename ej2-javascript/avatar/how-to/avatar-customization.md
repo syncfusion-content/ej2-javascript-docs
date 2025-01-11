@@ -9,20 +9,20 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Avatar customization in ##Platform_Name## Avatar control
+# Customization in ##Platform_Name## Avatar control
 
 ## Color customization
 
-The avatar comes with default background color (grey). This can be easily customized to desired color by adding custom class or directly selecting the avatar class from the CSS.
+The avatar control comes with a default background color (Grey). This can be easily customized to a desired color by adding a custom class or directly selecting the avatar class from the CSS.
 
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/avatar/color-cs1/index.ts %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/avatar/color-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/avatar/color-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -31,11 +31,11 @@ The avatar comes with default background color (grey). This can be easily custom
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/avatar/color-cs1/index.js %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/avatar/color-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/avatar/color-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -44,16 +44,16 @@ The avatar comes with default background color (grey). This can be easily custom
 
 ## Customize avatar sizes
 
-Even though the avatar comes with five predefined sizes, sometimes it's not enough. So, the avatar is designed in such a way that the width and height will be relative to font-size. By changing the `font-size` of the avatar element, you can change the width and height automatically.
+Even though the avatar control comes with five predefined sizes, sometimes it's not enough. The avatar is designed such that its width and height are relative to its font-size. By changing the `font-size` of the avatar element, you can automatically change the width and height.
 
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/avatar/custom-size-cs1/index.ts %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/avatar/custom-size-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/avatar/custom-size-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -62,11 +62,11 @@ Even though the avatar comes with five predefined sizes, sometimes it's not enou
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/avatar/custom-size-cs1/index.js %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/avatar/custom-size-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/avatar/custom-size-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -75,16 +75,16 @@ Even though the avatar comes with five predefined sizes, sometimes it's not enou
 
 ## Use various media in avatar
 
-Avatars can be used with a wide variety of media formats like SVG, font-icons, images, letters, words, etc. Some of them are given below.
+Avatars can be used with a wide variety of media formats like SVG, font icons, images, letters, words, etc. Some examples are given below.
 
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/avatar/media-formats-cs1/index.ts %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/avatar/media-formats-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/avatar/media-formats-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -93,11 +93,11 @@ Avatars can be used with a wide variety of media formats like SVG, font-icons, i
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/avatar/media-formats-cs1/index.js %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/avatar/media-formats-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/avatar/media-formats-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

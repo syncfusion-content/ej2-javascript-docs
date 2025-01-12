@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## File manager control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## File manager control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## File Manager control | Syncfusion
+description:  Checkout and learn about Getting started with ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,15 +9,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## File manager control
+# Getting started in ##Platform_Name## File Manager control
 
-This section briefly explains how to create File Manager component and configure its available functionalities in TypeScript, using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section briefly explains how to create File Manager control and configure its available functionalities in TypeScript, using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
-The following are the dependencies required to use the File Manager component in your application:
+The following are the dependencies required to use the File Manager control in your application:
 
 ```javascript
 |-- @syncfusion/ej2-filemanager
@@ -71,7 +71,7 @@ npm install
 
 ## Import the Syncfusion CSS styles
 
-Import the File Manager and its dependent component styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+Import the File Manager and its dependent control styles as given below in the `~/src/styles/styles.css` file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -92,7 +92,7 @@ Import the File Manager and its dependent component styles as given below in the
 
 ## Initialize the File Manager
 
-Now, you can start initializing the Essential JS 2 File Manager component in your application. To get started, add a HTML `<div>` element with id attribute value `filemanager` to your `index.html`.
+Now, you can start initializing the Essential JS 2 File Manager control in your application. To get started, add a HTML `<div>` element with id attribute value `filemanager` to your `index.html`.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -101,7 +101,7 @@ Now, you can start initializing the Essential JS 2 File Manager component in you
 <html lang="en">
 
 <head>
-    <title>Essential JS 2 File Manager component</title>
+    <title>Essential JS 2 File Manager control</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <meta name="description" content="Essential JS 2" />
@@ -119,7 +119,7 @@ Now, you can start initializing the Essential JS 2 File Manager component in you
 {% endhighlight %}
 {% endtabs %}
 
-Now, import the File Manager component to your `app.ts` and append to `#filemanager` as follows.
+Now, import the File Manager control to your `app.ts` and append to `#filemanager` as follows.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -127,7 +127,7 @@ Now, import the File Manager component to your `app.ts` and append to `#filemana
 import { FileManager } from '@syncfusion/ej2-filemanager';
 
 let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-// initialize File Manager component
+// initialize File Manager control
 let filemanagerInstance: FileManager = new FileManager({
     ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations'
@@ -140,7 +140,7 @@ filemanagerInstance.appendTo('#filemanager');
 {% endhighlight %}
 {% endtabs %}
 
->**Note:** The [ajaxSettings](../api/file-manager/#ajaxsettings) must be defined while initializing the file manager. File manager utilizes the URL's mentioned in ajaxSettings to send [file operation](./file-operations) request to the server.
+>**Note:** The [ajaxSettings](../api/file-manager/#ajaxsettings) must be defined while initializing the File Manager. File Manager utilizes the URL's mentioned in ajaxSettings to send [file operation](./file-operations) request to the server.
 >The File Manager service link is given in `hostUrl`.
 
 ## Run the application
@@ -155,7 +155,7 @@ npm run start
 {% endhighlight %}
 {% endtabs %}
 
-The following example shows the basic File Manager component.
+The following example shows the basic File Manager control.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -170,7 +170,7 @@ The following example shows the basic File Manager component.
 
 ## File Download support
 
-To perform the download operation, initialize the `downloadUrl` property in a [ajaxSettings](../api/file-manager/#ajaxsettings) of File Manager component.
+To perform the download operation, initialize the `downloadUrl` property in a [ajaxSettings](../api/file-manager/#ajaxsettings) of File Manager control.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -178,7 +178,7 @@ To perform the download operation, initialize the `downloadUrl` property in a [a
 import { FileManager } from '@syncfusion/ej2-filemanager';
 
 let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-// initialize File Manager component
+// initialize File Manager control
 let filemanagerInstance: FileManager = new FileManager({
     ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations',
@@ -194,7 +194,7 @@ filemanagerInstance.appendTo('#filemanager');
 
 ## File Upload support
 
-To perform the upload operation, initialize the `uploadUrl` property in a [ajaxSettings](../api/file-manager/#ajaxsettings) of File Manager Component.
+To perform the upload operation, initialize the `uploadUrl` property in a [ajaxSettings](../api/file-manager/#ajaxsettings) of File Manager Control.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -202,7 +202,7 @@ To perform the upload operation, initialize the `uploadUrl` property in a [ajaxS
 import { FileManager } from '@syncfusion/ej2-filemanager';
 
 let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-// initialize File Manager component
+// initialize File Manager control
 let filemanagerInstance: FileManager = new FileManager({
     ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations',
@@ -218,7 +218,7 @@ filemanagerInstance.appendTo('#filemanager');
 
 ## Image Preview support
 
-To perform the image preview support in the File Manager component, need to initialize the `getImageUrl` property in a [ajaxSettings](../api/file-manager/#ajaxsettings) of File Manager component.
+To perform the image preview support in the File Manager control, need to initialize the `getImageUrl` property in a [ajaxSettings](../api/file-manager/#ajaxsettings) of File Manager control.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -233,7 +233,7 @@ To perform the image preview support in the File Manager component, need to init
 
 ## Injecting feature modules
 
-Basically, the file manager component contains a context menu for performing file operations, large-icons view for displaying the files and folders, and a breadcrumb for navigation. However, these basic functionalities can be extended by using the additional feature modules like toolbar, navigation pane, and details view to simplify the navigation and file operations within the file system. The above modules can be injected using the `FileManager.Inject()` method.
+Basically, the File Manager control contains a context menu for performing file operations, large-icons view for displaying the files and folders, and a breadcrumb for navigation. However, these basic functionalities can be extended by using the additional feature modules like toolbar, navigation pane, and details view to simplify the navigation and file operations within the file system. The above modules can be injected using the `FileManager.Inject()` method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -243,7 +243,7 @@ import { FileManager, Toolbar, NavigationPane, DetailsView } from '@syncfusion/e
 FileManager.Inject(Toolbar, NavigationPane, DetailsView)
 
 let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-// initialize File Manager component
+// initialize File Manager control
 let filemanagerInstance: FileManager = new FileManager({
     ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations',
@@ -252,7 +252,7 @@ let filemanagerInstance: FileManager = new FileManager({
         downloadUrl: hostUrl + 'api/FileManager/Download'
     }
 });
-// render initialized FileManager
+// render initialized File Manager
 filemanagerInstance.appendTo('#filemanager');
 
 {% endhighlight %}
@@ -276,7 +276,6 @@ The following example shows you the File Manager with all feature modules.
 ## Switching initial view of the File Manager
 
 The initial view of the File Manager can be changed to details or largeicons view with the help of [view](../api/file-manager/#view) property. By default, the File Manager will be rendered in large icons view.
-When the File Manager is initially rendered, [created](../api/file-manager/#created) will be triggered. This event can be utilized for performing operations once the File Manager has been successfully created.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -289,14 +288,12 @@ When the File Manager is initially rendered, [created](../api/file-manager/#crea
           
 {% previewsample "page.domainurl/code-snippet/file-manager/view-cs1" %}
 
-## Maintaining component state on page reload
+## Maintaining control state on page reload
 
-The File Manager supports maintaining the component state on page reload. This can be achieved by enabling [enablePersistence](../api/file-manager/#enablepersistence) property which maintains the following,
+The File Manager supports maintaining the control state on page reload. This can be achieved by enabling [enablePersistence](../api/file-manager/#enablepersistence) property which maintains the following,
 * Previous view of the File Manager - [View](../api/file-manager/#view)
 * Previous path of the File Manager - [Path](../api/file-manager/#path)
 * Previous selected items of the File Manager - [SelectedItems](../api/file-manager/#selecteditems)
-
-For every operation in File Manager, ajax request will be sent to the server which then processes the request and sends back the response. When the ajax request is success, [success](../api/file-manager/#success) event will be triggered and [failure](../api/file-manager/#failure) event will be triggered if the request gets failed.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -309,9 +306,9 @@ For every operation in File Manager, ajax request will be sent to the server whi
           
 {% previewsample "page.domainurl/code-snippet/file-manager/persistence-cs1" %}
 
->**Note:** The files of the current folder opened in the File manager can be refreshed programatically by calling [refreshFiles](../api/file-manager/#refreshfiles) method.
+>**Note:** The files of the current folder opened in the File Manager can be refreshed programatically by calling [refreshFiles](../api/file-manager/#refreshfiles) method.
 
-## Rendering component in right-to-left direction
+## Rendering control in right-to-left direction
 
 It is possible to render the File Manager in right-to-left direction by setting the [enableRtl](../api/file-manager/#enablertl) API to true.
 
@@ -340,7 +337,7 @@ import { FileManager, Toolbar, NavigationPane, DetailsView } from '@syncfusion/e
 FileManager.Inject(Toolbar, NavigationPane, DetailsView)
 
 let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-// initialize File Manager component
+// initialize File Manager control
 let filemanagerInstance: FileManager = new FileManager({
     ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations',

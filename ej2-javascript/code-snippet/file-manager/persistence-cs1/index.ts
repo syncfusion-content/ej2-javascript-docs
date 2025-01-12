@@ -5,7 +5,7 @@ import { FileManager, Toolbar, NavigationPane, DetailsView, SuccessEventArgs, Fa
 FileManager.Inject(Toolbar, NavigationPane, DetailsView)
 
 let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-// initialize File Manager component
+// initialize File Manager control
 let filemanagerInstance: FileManager = new FileManager({
     ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations',
@@ -14,24 +14,11 @@ let filemanagerInstance: FileManager = new FileManager({
         downloadUrl: hostUrl + 'api/FileManager/Download'
     },
     enablePersistence: true,
-    // File Manager's success event
-    success: onAjaxSuccess,
-    // File Manager's failure event
-    failure: onAjaxFailure
+    height: '380px'
 });
 
-// render initialized FileManager
+// render initialized File Manager
 filemanagerInstance.appendTo('#filemanager');
-
-// File Manager's file success function
-function onAjaxSuccess(args: SuccessEventArgs){
-    console.log("Ajax request successful");
-}
-
-// File Manager's file failure function
-function onAjaxFailure(args: FailureEventArgs){
-    console.log("Ajax request has failed");
-}
 
 let loader = document.getElementById('loader');
 let container = document.getElementById('container');

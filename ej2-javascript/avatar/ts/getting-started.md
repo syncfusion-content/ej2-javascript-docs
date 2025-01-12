@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with ##Platform_Name## Avatar control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Avatar control of Syncfusion Essential JS 2 and more details.
+description: Checkout and learn about Getting started with ##Platform_Name## Avatar control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,15 +9,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Avatar control
+# Getting started with ##Platform_Name## Avatar control
 
-This section explains how to create a simple Avatar component and configure its available functionalities in TypeScript using the Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section explains how to create a simple Avatar control and configure its available functionalities in TypeScript using the Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
-Install the following required dependent packages to render the avatar component.
+Install the following required dependent packages to render the avatar control.
 
 ```javascript
 |-- @syncfusion/ej2-layouts
@@ -108,7 +108,7 @@ The following example shows a basic avatar component.
 {% include code-snippet/avatar/getting-started-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
-          
+
 {% previewsample "page.domainurl/code-snippet/avatar/getting-started-cs1" %}
 
 ## See Also

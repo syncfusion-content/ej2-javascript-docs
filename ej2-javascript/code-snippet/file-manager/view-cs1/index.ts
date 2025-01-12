@@ -5,7 +5,7 @@ import { FileManager, Toolbar, NavigationPane, DetailsView } from '@syncfusion/e
 FileManager.Inject(Toolbar, NavigationPane, DetailsView)
 
 let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-// initialize File Manager component
+// initialize File Manager control
 let filemanagerInstance: FileManager = new FileManager({
     ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations',
@@ -15,17 +15,11 @@ let filemanagerInstance: FileManager = new FileManager({
     },
     // Initial view of File Manager is set to details view
     view: "Details",
-    // File Manager's created event
-    created: onCreate
+    height: '380px'
 });
 
-// render initialized FileManager
+// render initialized File Manager
 filemanagerInstance.appendTo('#filemanager');
-
-// File Manager's created event function
-function onCreate(args: Object){
-    console.log("File Manager has been created successfully");
-}
 
 let loader = document.getElementById('loader');
 let container = document.getElementById('container');

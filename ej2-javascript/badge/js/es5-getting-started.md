@@ -3,7 +3,7 @@ layout: post
 title: Es5 getting started with ##Platform_Name## Badge control | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## Badge control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Es5 getting started 
+control: Es5 getting started
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,20 +11,20 @@ domainurl: ##DomainURL##
 
 # Es5 getting started in ##Platform_Name## Badge control
 
-The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework that can be directly used in latest web browsers.
+The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework that can be directly used in the latest web browsers.
 
-## Component initialization
+## Control Initialization
 
-The Essential JS 2 JavaScript components can be initialized by using any of the following two ways:
+The Essential JS 2 JavaScript controls can be initialized by using any of the following two methods:
 
 * Using local script and style references in an HTML page.
 * Using CDN link for script and style reference.
 
 ### Using local script and style references in an HTML page
 
-**Step 1:** Create an app folder `myapp` for Essential JS 2 JavaScript components.
+**Step 1:** Create an app folder `myapp` for Essential JS 2 JavaScript controls.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2/confirm) build installed location.
+**Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
 **Syntax:**
 > Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
@@ -60,7 +60,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
   </html>
 ```
 
-**Step 5:** Now, create a `span` element to apply the `Essential JS 2 Badge` component in the `index.html` by using following code.
+**Step 5:** Now, create a `span` element to apply the `Essential JS 2 Badge` control in the `index.html` by using following code.
 
 ```html
 <!DOCTYPE html>
@@ -73,18 +73,18 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
        </head>
        <body>
             <!-- Add the HTML <span> element  -->
-            <h1>Badge Component <span class="e-badge e-badge-primary">New</span></h1>
+            <h1>Badge control <span class="e-badge e-badge-primary">New</span></h1>
        </body>
   </html>
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential JS 2 Badge** component.
+**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential JS 2 Badge** control.
 
 ### Using CDN link for script and style reference
 
-**Step 1:** Create an app folder `myapp` for the Essential JS 2 JavaScript components.
+**Step 1:** Create an app folder `myapp` for the Essential JS 2 JavaScript controls.
 
-**Step 2:** The Essential JS 2 component's global scripts and styles are already hosted in the following CDN link formats.
+**Step 2:** The Essential JS 2 control's global scripts and styles are already hosted in the following CDN link formats.
 
 **Syntax:**
 > Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -96,17 +96,17 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
 >
 >[`https://cdn.syncfusion.com/ej2/ej2-notifications/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-notifications/styles/material.css)
 
-**Step 3:** Create an HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `span` element and initiate the `Essential JS 2 Badge` component in the index.html by using the following code.
+**Step 3:** Create an HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `span` element and initiate the `Essential JS 2 Badge` control in the index.html by using the following code.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/badge/es5-getting-started-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/badge/es5-getting-started-cs1" %}
 
-**Step 4:** Now, run the `index.html` in the web browser, it will render the `Essential JS 2 Badge` component.
+**Step 4:** Now, run the `index.html` in the web browser, it will render the `Essential JS 2 Badge` control.
 
 ## See Also
 

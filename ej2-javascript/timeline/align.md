@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Alignment in ##Platform_Name## Timeline control
 
-You can display the Timeline content `Before`, `After`, `Alternate` and `AlternateReverse` by using the [align](../api/timeline/#align) property. The oppositeContent will be displayed parallel to the content when configured in the [TimelineItemModel](../api/timeline/timelineItemModel/).
+You can display the Timeline content as `Before`, `After`, `Alternate`, and `AlternateReverse` using the [align](../api/timeline/#align) property. The `oppositeContent` will be displayed parallel to the content when configured in the [TimelineItemModel](../api/timeline/timelineItemModel/).
 
 ## Before
 
-In [Before](../api/timeline/timelineAlign/) alignment, for `horizontal` orientation the item content is placed at the top and oppositeContent at the bottom whereas in `vertical`, the content to the left and oppositeContent to the right.
+In [Before](../api/timeline/timelineAlign/) alignment, for `horizontal` orientation, the item content is placed at the top and `oppositeContent` at the bottom. For `vertical` orientation, the content is on the left and `oppositeContent` on the right.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -25,6 +25,9 @@ In [Before](../api/timeline/timelineAlign/) alignment, for `horizontal` orientat
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/timeline/align/before/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="styles.css" %}
+{% include code-snippet/timeline/align/before/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -39,6 +42,9 @@ In [Before](../api/timeline/timelineAlign/) alignment, for `horizontal` orientat
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/timeline/align/before/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="styles.css" %}
+{% include code-snippet/timeline/align/before/styles.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/timeline/align/before" %}
@@ -46,7 +52,7 @@ In [Before](../api/timeline/timelineAlign/) alignment, for `horizontal` orientat
 
 ## After
 
-In [After](../api/timeline/timelineAlign/) alignment, for `horizontal` orientation the item content is placed at the bottom and oppositeContent at the top whereas in `vertical`, the content to the right and oppositeContent to the left.
+In [After](../api/timeline/timelineAlign/) alignment, for `horizontal` orientation, the item content is placed at the bottom and `oppositeContent` at the top. For `vertical` orientation, the content is on the right and `oppositeContent` on the left.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -56,6 +62,9 @@ In [After](../api/timeline/timelineAlign/) alignment, for `horizontal` orientati
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/timeline/align/after/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="styles.css" %}
+{% include code-snippet/timeline/align/after/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -70,6 +79,9 @@ In [After](../api/timeline/timelineAlign/) alignment, for `horizontal` orientati
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/timeline/align/after/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="styles.css" %}
+{% include code-snippet/timeline/align/after/styles.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/timeline/align/after" %}
@@ -77,16 +89,19 @@ In [After](../api/timeline/timelineAlign/) alignment, for `horizontal` orientati
 
 ## Alternate
 
-In [Alternate](../api/timeline/timelineAlign/) alignment, the item content are arranged alternatively regardless of the Timeline orientation.
+In [Alternate](../api/timeline/timelineAlign/) alignment, the item content is arranged alternately, regardless of the Timeline orientation.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/timeline/align/alternate/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/timeline/align/alternate/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="styles.css" %}
+{% include code-snippet/timeline/align/alternate/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -101,6 +116,9 @@ In [Alternate](../api/timeline/timelineAlign/) alignment, the item content are a
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/timeline/align/alternate/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="styles.css" %}
+{% include code-snippet/timeline/align/alternate/styles.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/timeline/align/alternate" %}
@@ -108,16 +126,19 @@ In [Alternate](../api/timeline/timelineAlign/) alignment, the item content are a
 
 ## Alternate reverse
 
-In [AlternateReverse](../api/timeline/timelineAlign/) alignment, the item content are arranged in reverse alternate regardless of the Timeline orientation.
+In [AlternateReverse](../api/timeline/timelineAlign/) alignment, the item content is arranged in reverse order of alternate alignment, regardless of the Timeline orientation.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/timeline/align/alternate-reverse/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/timeline/align/alternate-reverse/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="styles.css" %}
+{% include code-snippet/timeline/align/alternate-reverse/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -131,6 +152,9 @@ In [AlternateReverse](../api/timeline/timelineAlign/) alignment, the item conten
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/timeline/align/alternate-reverse/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="styles.css" %}
+{% include code-snippet/timeline/align/alternate-reverse/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

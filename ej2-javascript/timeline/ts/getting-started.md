@@ -9,15 +9,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Timeline control
+# Getting started with ##Platform_Name## Timeline control
 
-This section explains how to create a simple Timeline and configure its available functionalities in TypeScript using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section explains how to create a simple Timeline control and configure its available functionalities in TypeScript using the Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
-The following list of dependencies is required to use the Timeline control in your application.
+The following dependencies are required to use the Timeline control in your application:
 
 ```js
 |-- @syncfusion/ej2-layouts
@@ -62,7 +62,7 @@ npm install
 
 ## Import the Syncfusion CSS styles
 
-To render Timeline control, need to import layouts and its dependent control styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+To render Timeline control, need to import layouts and its dependent control styles as given below in the `~/src/styles/styles.css` file, as shown below:
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -75,7 +75,7 @@ To render Timeline control, need to import layouts and its dependent control sty
 
 ## Adding Timeline control to the application
 
-Open the application in Visual Studio Code and add the Syncfusion JavaScript UI controls. 
+Open the application in Visual Studio Code and add the Syncfusion JavaScript UI controls.
 
 Add the HTML div tag with the `id` attribute as `timeline` to your `index.html` file.
 

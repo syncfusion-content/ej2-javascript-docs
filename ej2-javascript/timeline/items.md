@@ -56,7 +56,7 @@ You can define string content for the Timeline items.
 
 ### Templated content
 
-You can specify the template content for the items, by using the selector for an element in HTML.
+You can specify template content for the items by using a selector for an element in HTML.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -93,7 +93,7 @@ You can specify the template content for the items, by using the selector for an
 
 ## Adding opposite content
 
-You can add additional information to each Timeline item, by using the [oppositeContent](../api/timeline#items#oppositeContent) property which is positioned opposite to the item content. Similar to the `content` property you can define `string` or `function` as contents to the oppositeContent.
+You can add additional information to each Timeline item using the [oppositeContent](../api/timeline#items#oppositeContent) property, which is positioned opposite the item content. Similar to the `content` property, you can define `string` or `function` as contents for `oppositeContent`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -130,15 +130,15 @@ You can add additional information to each Timeline item, by using the [opposite
 
 ## Dot item
 
-You can define CSS class to set icons, background colors, or images to personalize the appearance of dots associated with each Timeline item by using the [dotCss](../api/timeline#items#dotCss) property.
+Define a CSS class to set icons, background colors, or images to personalize the appearance of dots associated with each Timeline item using the [dotCss](../api/timeline#items#dotCss) property.
 
 ### Adding icons
 
-You can define the CSS class to show the icon for each item using the `dotCss` property.
+You can define a CSS class to display an icon for each item using the `dotCss` property.
 
 ### Adding images
 
-You can include images for the Timeline items using the `dotCss` property, by setting the CSS `background-image` property.
+Include images for the Timeline items using the `dotCss` property by setting the CSS `background-image` property.
 
 ### Adding text
 

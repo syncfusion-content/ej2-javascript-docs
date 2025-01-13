@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Drop down tree control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Drop down tree control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Dropdown Tree control | Syncfusion
+description:  Checkout and learn about Getting started with ##Platform_Name## Dropdown Tree control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: Getting started
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Drop down tree control
+# Getting started with ##Platform_Name## Dropdown Tree control
 
 This section explains you about how to create a simple **Dropdown Tree** control and configure its available functionalities in TypeScript using the Essential JS 2 [quickstart](https://github.com/syncfusion/ej2-quickstart).
 
@@ -80,7 +80,7 @@ Combined CSS files are available in the Essential JS 2 package root folder. This
 {% endhighlight %}
 {% endtabs %}
 
-> To refer individual component CSS, please refer to the [Individual Component theme files](../appearance/theme/#referring-individual-control-theme) section. If you want to refer the combined component styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
+> To refer individual control CSS, please refer to the [Individual control theme files](../appearance/theme/#referring-individual-control-theme) section. If you want to refer the combined control styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
 ## Initialize the Dropdown Tree
 
@@ -192,5 +192,5 @@ The following example explains the output in your browser.
 {% include code-snippet/dropdowntree/getting-started-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
-          
+
 {% previewsample "page.domainurl/code-snippet/dropdowntree/getting-started-cs1" %}

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Drop down tree control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Drop down tree control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Dropdown Tree control | Syncfusion
+description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Dropdown Tree control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Accessibility 
 publishingplatform: ##Platform_Name##
@@ -9,13 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## Drop down tree control
+# Accessibility in ##Platform_Name## Dropdown Tree control
 
-The Dropdown Tree control has been designed keeping in mind the `WAI-ARIA` specifications, and applies WAI-ARIA roles, states, and properties along with `keyboard support`. This control is characterized by complete keyboard interaction support and ARIA accessibility support that makes it easy for users who use assistive technologies (AT) and those who completely rely on keyboard navigation.
+The Dropdown Tree control is designed with `WAI-ARIA` specifications in mind, implementing WAI-ARIA roles, states, and properties along with `keyboard support`. This control features full keyboard interaction support and ARIA accessibility that enhances usability for users of assistive technologies (AT) and those who rely entirely on keyboard navigation.
 
 ## ARIA attributes
 
-The Dropdown Tree control uses the `listbox` role. Each tree parent item in the popup has `group` role and each item in the popup has `treeitem` role. The following ARIA attributes are used in the Dropdown Tree control:
+The Dropdown Tree control uses the `listbox` role. Each parent tree item in the popup has the `group` role, and each item in the popup uses the `treeitem` role. The following ARIA attributes are utilized in the Dropdown Tree control:
 
 | **Properties** | **Functionalities** |
 | --- | --- |
@@ -31,7 +31,7 @@ The Dropdown Tree control uses the `listbox` role. Each tree parent item in the 
 
 The Dropdown Tree functionalities can be interactive when keyboard shortcuts are used.
 
-Dropdown Tree supports the following keyboard shortcuts.
+The Dropdown Tree supports the following keyboard shortcuts:
 
 | Interaction Keys | Description |
 |------|---------|

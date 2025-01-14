@@ -143,4 +143,4 @@ Horizontal and Vertical alignment of stripline text can be changed by `horizonta
 
 ## See Also
 
-* [Mark the threshold in chart](./how-to/#mark-a-threshold-in-chart)
+* [Mark the threshold in chart](./how-to/threshold)

@@ -9,15 +9,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Badge control
+# Getting started with ##Platform_Name## Badge control
 
-This section explains how to create a simple Badge and configure its available functionalities in TypeScript using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section explains how to create a simple Badge control and configure its available functionalities in TypeScript using the Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
-Install the following required dependent package to render the `Badge` component.
+Install the following required dependent package to render the `Badge` control.
 
 ```javascript
 |-- @syncfusion/ej2-notifications
@@ -72,11 +72,11 @@ The badge CSS files are available in the `ej2-notifications` package folder. Thi
 {% endhighlight %}
 {% endtabs %}
 
-> We can also use [CRG](https://crg.syncfusion.com/) to generate combined component styles.
+> We can also use [CRG](https://crg.syncfusion.com/) to generate combined control styles.
 
 ## Add badge into application
 
-Open the application in Visual Studio Code and add the Syncfusion JavaScript UI controls. 
+Open the application in Visual Studio Code and add the Syncfusion JavaScript UI controls.
 
 Add an HTML span element with `e-badge` class inside any wrapper element (h1) into your `index.html`.
 
@@ -85,7 +85,7 @@ Add an HTML span element with `e-badge` class inside any wrapper element (h1) in
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 
-<h1>Badge Component <span class="e-badge">New</span></h1>
+<h1>Badge Control <span class="e-badge">New</span></h1>
 
 {% endhighlight %}
 {% endtabs %}
@@ -102,7 +102,7 @@ npm start
 {% endhighlight %}
 {% endtabs %}
 
-The following example shows a basic badge component.
+The following example shows a basic badge control.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -112,7 +112,7 @@ The following example shows a basic badge component.
 {% include code-snippet/badge/getting-started-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
-          
+
 {% previewsample "page.domainurl/code-snippet/badge/getting-started-cs1" %}
 
 ## See Also

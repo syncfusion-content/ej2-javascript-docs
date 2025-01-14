@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 This section describes the Timeline events that will be triggered when an appropriate actions are performed. The following events are available in the Timeline control.
 
-## created
+## Created
 
 The Timeline control triggers the [created](../api/timeline#created) event when the control rendering is completed.
 
@@ -25,6 +25,9 @@ The Timeline control triggers the [created](../api/timeline#created) event when 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/timeline/events/created/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/timeline/events/created/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -39,12 +42,15 @@ The Timeline control triggers the [created](../api/timeline#created) event when 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/timeline/events/created/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/timeline/events/created/index.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/timeline/events/created" %}
 {% endif %}
 
-## beforeItemRender
+## BeforeItemRender
 
 The Timeline control triggers the [beforeItemRender](../api/timeline#beforeItemRender) event before rendering each item.
 
@@ -56,6 +62,9 @@ The Timeline control triggers the [beforeItemRender](../api/timeline#beforeItemR
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/timeline/events/beforeItemRender/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/timeline/events/beforeItemRender/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -69,6 +78,9 @@ The Timeline control triggers the [beforeItemRender](../api/timeline#beforeItemR
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/timeline/events/beforeItemRender/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/timeline/events/beforeItemRender/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

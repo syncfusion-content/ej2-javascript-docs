@@ -77,9 +77,10 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
             <script src="resources/ej2-layouts.min.js" type="text/javascript"></script>
        </head>
        <body>
-            <!-- Add the div element  -->
-            <div id="timeline"></div>
-
+          <div style="height: 300px;">
+               <!-- Add the div element  -->
+               <div id="timeline"></div>
+          </div>
             <script>
             //Initialize Timeline control
             var timeline = new ej.layouts.Timeline({

@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Types in ##Platform_Name## Badge control
 
-This section explains different styles and types of the badges.
+This section explains the different styles and types of badges.
 
 ## Badge styles
 
-The Essential JS 2 Badge has the following predefined styles that can be used with `.e-badge` class to change the appearance of a badge.
+The Essential JS 2 Badge control has the following predefined styles that can be used with the `.e-badge` class to change the appearance of a badge.
 
 | Class Name        | Description
 | :-------------   |:-------------
@@ -23,19 +23,19 @@ The Essential JS 2 Badge has the following predefined styles that can be used wi
 | e-badge-secondary | Represents a secondary notification.
 | e-badge-success   | Represents a positive notification.
 | e-badge-danger    | Represents a negative notification.
-| e-badge-warning   | Represents notification with caution.
+| e-badge-warning   | Represents a notification with caution.
 | e-badge-info      | Represents an informative notification.
-| e-badge-light     | Represents notification in light variant.
-| e-badge-dark      | Represents notification in dark variant.
+| e-badge-light     | Represents a notification in a light variant.
+| e-badge-dark      | Represents a notification in a dark variant.
 
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/badge/types-cs1/index.ts %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/badge/types-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/badge/types-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -44,11 +44,11 @@ The Essential JS 2 Badge has the following predefined styles that can be used wi
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/badge/types-cs1/index.js %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/badge/types-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/badge/types-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -74,11 +74,11 @@ The circle badge style can be applied by adding the modifier class `.e-badge-cir
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/badge/circle-cs1/index.ts %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/badge/circle-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/badge/circle-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -87,11 +87,11 @@ The circle badge style can be applied by adding the modifier class `.e-badge-cir
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/badge/circle-cs1/index.js %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/badge/circle-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/badge/circle-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -105,11 +105,11 @@ The pill badge style can be applied by adding the modifier class `.e-badge-pill`
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/badge/pill-cs1/index.ts %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/badge/pill-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/badge/pill-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -118,11 +118,11 @@ The pill badge style can be applied by adding the modifier class `.e-badge-pill`
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/badge/pill-cs1/index.js %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/badge/pill-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/badge/pill-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -136,11 +136,11 @@ When badge modifier classes are applied to the anchor tag, the badge’s appeara
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/badge/link-cs1/index.ts %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/badge/link-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/badge/link-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -149,11 +149,11 @@ When badge modifier classes are applied to the anchor tag, the badge’s appeara
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/badge/link-cs1/index.js %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/badge/link-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/badge/link-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -167,11 +167,11 @@ The notification badge style can be applied by adding the modifier class `.e-bad
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/badge/notification-cs1/index.ts %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/badge/notification-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/badge/notification-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -180,11 +180,11 @@ The notification badge style can be applied by adding the modifier class `.e-bad
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/badge/notification-cs1/index.js %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/badge/notification-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/badge/notification-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -193,16 +193,16 @@ The notification badge style can be applied by adding the modifier class `.e-bad
 
 ### Dot
 
-Dot can be applied by adding the modifier class `.e-badge-dot` to the target element. Dot badges are similar to notification badges, but in a minimalistic way. While using the dot badge, set the parent element to `position: relative` .
+The dot can be applied by adding the modifier class `.e-badge-dot` to the target element. Dot badges are similar to notification badges, but in a minimalistic way. While using the dot badge, set the parent element to `position: relative`.
 
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/badge/dot-cs1/index.ts %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/badge/dot-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/badge/dot-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -211,11 +211,11 @@ Dot can be applied by adding the modifier class `.e-badge-dot` to the target ele
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/badge/dot-cs1/index.js %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/badge/dot-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/badge/dot-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -224,16 +224,16 @@ Dot can be applied by adding the modifier class `.e-badge-dot` to the target ele
 
 ### Overlap
 
-The overlap badge can be used with `notification` or `dot` badge, which overlaps with the target element by adding the modifier class`.e-badge-overlap`. While using the overlap badge, set the parent element to `position: relative`.
+The overlap badge can be used with a `notification` or `dot` badge, which overlaps with the target element by adding the modifier class `.e-badge-overlap`. While using the overlap badge, set the parent element to `position: relative`.
 
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/badge/overlap-cs1/index.ts %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/badge/overlap-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/badge/overlap-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -242,11 +242,11 @@ The overlap badge can be used with `notification` or `dot` badge, which overlaps
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/badge/overlap-cs1/index.js %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/badge/overlap-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/badge/overlap-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -255,16 +255,16 @@ The overlap badge can be used with `notification` or `dot` badge, which overlaps
 
 ### Position
 
-The default position of the `notification` or `dot` badge is top. But, the position can be changed to `bottom` using the modifier class `.e-badge-bottom`. For example, the bottom class modifier is used with dot badge to display the status in the avatar as shown in the following sample.
+The default position of the `notification` or `dot` badge is top. However, the position can be changed to the `bottom` using the modifier class `.e-badge-bottom`. For example, the bottom class modifier is used with a dot badge to display the status in an avatar, as shown in the following sample.
 
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/badge/position-cs1/index.ts %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/badge/position-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/badge/position-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -273,11 +273,11 @@ The default position of the `notification` or `dot` badge is top. But, the posit
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/badge/position-cs1/index.js %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/badge/position-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/badge/position-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

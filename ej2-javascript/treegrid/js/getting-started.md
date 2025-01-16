@@ -34,6 +34,7 @@ Following is the list of dependencies to use the TreeGrid with all features.
           |-- @syncfusion/ej2-pdf-export
           |-- @syncfusion/ej2-file-utils
           |-- @syncfusion/ej2-compression
+          |-- @syncfusion/ej2-grids
 ```
 
 ## Setup for local environment

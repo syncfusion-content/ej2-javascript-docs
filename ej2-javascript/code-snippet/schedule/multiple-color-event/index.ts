@@ -1,5 +1,3 @@
-
-
 import { Schedule, Day, Week, WorkWeek, Month, Resize, DragAndDrop, Agenda } from '@syncfusion/ej2-schedule';
 
 Schedule.Inject(Day, Week, WorkWeek, Month, Agenda, Resize, DragAndDrop);

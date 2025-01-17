@@ -3,7 +3,7 @@ layout: post
 title: Types in ##Platform_Name## Chips control | Syncfusion
 description: Learn here all about Types in Syncfusion ##Platform_Name## Chips control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Types 
+control: Types
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Types in ##Platform_Name## Chips control
 
-The ChipList control has the following types.
+The Chips control has the following types:
 
 * Input Chip
 * Choice Chip
@@ -20,7 +20,7 @@ The ChipList control has the following types.
 
 ## Input Chip
 
-Input Chip holds information in compact form. It converts user input into chips.
+An Input Chip holds information in a compact form and converts user input into chips.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -57,7 +57,7 @@ Input Chip holds information in compact form. It converts user input into chips.
 
 ## Choice Chip
 
-Choice Chip allows you to select a single chip from the set of ChipList/ChipCollection. It can be enabled by setting the `selection` property to `Single`.
+A Choice Chip allows selecting a single chip from the set of ChipList/ChipCollection. It can be enabled by setting the `selection` property to `Single`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -94,7 +94,7 @@ Choice Chip allows you to select a single chip from the set of ChipList/ChipColl
 
 ## Filter Chip
 
-Filter Chip allows you to select a multiple chip from the set of ChipList/ChipCollection. It can be enabled by setting the `selection` property to `Multiple`.
+A Filter Chip allows selecting multiple chips from the set of ChipList/ChipCollection. It can be enabled by setting the `selection` property to `Multiple`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -131,7 +131,7 @@ Filter Chip allows you to select a multiple chip from the set of ChipList/ChipCo
 
 ## Action Chip
 
-The Action Chip triggers the event like click or delete, which helps doing action based on the event.
+An Action Chip triggers events such as click or delete, aiding in action execution based on the event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -166,9 +166,9 @@ The Action Chip triggers the event like click or delete, which helps doing actio
 {% previewsample "page.domainurl/code-snippet/chips/types-cs4" %}
 {% endif %}
 
-### Deletable Chip
+## Deletable Chip
 
-Deletable Chip allows you to delete a chip from ChipList/ChipCollection. It can be enabled by setting the `enableDelete` property to `true`.
+A Deletable Chip allows the deletion of a chip from the ChipList/ChipCollection. It can be enabled by setting the `enableDelete` property to `true`.
 
 {% if page.publishingplatform == "typescript" %}
 

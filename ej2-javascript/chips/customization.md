@@ -3,7 +3,7 @@ layout: post
 title: Customization in ##Platform_Name## Chips control | Syncfusion
 description: Learn here all about Customization in Syncfusion ##Platform_Name## Chips control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Customization 
+control: Customization
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Customization in ##Platform_Name## Chips control
 
-This section explains the customization of styles, leading icons, avatar, and trailing icons in Chip control.
+This section explains the customization of styles, leading icons, avatars, and trailing icons in the Chip control.
 
 ## Styles
 
-The Chip control has the following predefined styles that can be defined using the `cssClass` property.
+The Chip control has the following predefined styles, which can be defined using the `cssClass` property:
 
 | Class | Description |
 | -------- | -------- |
@@ -60,7 +60,7 @@ The Chip control has the following predefined styles that can be defined using t
 
 ## Leading Icon
 
-You can add and customize the leading icon of chip using the `leadingIconCss` property.
+You can add and customize the leading icon of a chip using the `leadingIconCss` property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -97,7 +97,7 @@ You can add and customize the leading icon of chip using the `leadingIconCss` pr
 
 ## Avatar
 
-You can add and customize the avatar of chip using the `avatarIconCss` property.
+You can add and customize the avatar of a chip using the `avatarIconCss` property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -134,7 +134,7 @@ You can add and customize the avatar of chip using the `avatarIconCss` property.
 
 ## Avatar Content
 
-You can add and customize the avatar content of chip using the `avatarText` property.
+You can add and customize the avatar content of a chip using the `avatarText` property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -171,7 +171,7 @@ You can add and customize the avatar content of chip using the `avatarText` prop
 
 ## Trailing Icon
 
-You can add and customize the trailing icon of chip using the `trailingIconCss` property.
+You can add and customize the trailing icon of a chip using the `trailingIconCss` property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -208,7 +208,7 @@ You can add and customize the trailing icon of chip using the `trailingIconCss` 
 
 ## Outline Chip
 
-Outline chip has the border with the background transparent. It can be set using the `cssClass` property.
+An outline chip has a border with a transparent background. It can be set using the `cssClass` property.
 
 {% if page.publishingplatform == "typescript" %}
 

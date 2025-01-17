@@ -3,7 +3,7 @@ layout: post
 title: Style in ##Platform_Name## Chips control | Syncfusion
 description: Learn here all about Style in Syncfusion ##Platform_Name## Chips control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Style 
+control: Style
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Style in ##Platform_Name## Chips control
 
-The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
+The following content provides the exact CSS structure that can be used to modify the control's appearance based on user preference.
 
 ## Customizing the chip text
 
-Use the following CSS to customize the chip text properties.
+Use the following CSS to customize the text properties of the chip:
 
 ```
 .e-chip .e-chip-text {
@@ -38,7 +38,7 @@ Use the following CSS to customize the chip icon properties.
 
 ## Customizing the chip delete button
 
-Use the following CSS to customize the chip delete button.
+Use the following CSS to customize the chip's delete button.
 
 ```
 .e-chip-list .e-chip .e-chip-delete.e-dlt-btn {
@@ -60,7 +60,7 @@ Use the following CSS to customize the chip outline.
 
 ## Customizing the chip on selection
 
-Use the following CSS to customize the chip on selection.
+Use the following CSS to customize the styling of chips when selected:
 
 ```
 /* To customize single chip on selection */

@@ -3,19 +3,19 @@ layout: post
 title: Getting started with ##Platform_Name## Chips control | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Chips control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: Getting started
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Chips control
+# Getting Started with ##Platform_Name## Chips control
 
 The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
-## control Initialization
+## Control Initialization
 
-The Essential JS 2 JavaScript controls can be initialized by using either of the following ways.
+The Essential JS 2 JavaScript controls can be initialized by using either of the following methods:
 
 * Using local script and style references in a HTML page.
 * Using CDN link for script and style reference.
@@ -117,7 +117,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
 {% include code-snippet/chips/es5-getting-started-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/chips/es5-getting-started-cs1" %}
 
 **Step 4:** Now, run the `index.html` in web browser, it will render the `Essential JS 2 Chip` control.

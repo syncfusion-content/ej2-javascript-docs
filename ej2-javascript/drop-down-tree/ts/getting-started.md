@@ -1,19 +1,17 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Drop down tree control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Drop down tree control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Dropdown Tree control | Syncfusion
+description:  Checkout and learn about Getting started with ##Platform_Name## Dropdown Tree control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: Getting started
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Drop down tree control
+# Getting started with ##Platform_Name## Dropdown Tree control
 
-This section explains you about how to create a simple **Dropdown Tree** control and configure its available functionalities in TypeScript using the Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
-
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+This section explains you about how to create a simple **Dropdown Tree** control and configure its available functionalities in TypeScript using the Essential JS 2 [quickstart](https://github.com/syncfusion/ej2-quickstart).
 
 ## Dependencies
 
@@ -68,21 +66,21 @@ npm install
 
 ## Import the Syncfusion CSS styles
 
-To render DropDownTree component, need to import dropdowns and its dependent components styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+Combined CSS files are available in the Essential JS 2 package root folder. This can be referenced in the `~/src/styles/styles.css` file of your application using the following code.
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
 
 @import '../../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-buttons/styles/material.css';
 @import '../../node_modules/@syncfusion/ej2-navigations/styles/material.css';
 @import '../../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-lists/styles/material.css';
+@import '../../node_modules/@syncfusion/ej2-buttons/styles/material.css';
 @import '../../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
 
 {% endhighlight %}
 {% endtabs %}
+
+> To refer individual control CSS, please refer to the [Individual control theme files](../appearance/theme/#referring-individual-control-theme) section. If you want to refer the combined control styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
 ## Initialize the Dropdown Tree
 
@@ -90,40 +88,34 @@ Add the HTML input element that needs to be initialized as a Dropdown Tree in `i
 
 `[src/index.html]`
 
-{% tabs %}
-{% highlight html tabtitle="index.html" %}
-
+```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Essential JS 2 Dropdown Tree control</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <meta name="description" content="Essential JS 2" />
     <meta name="author" content="Syncfusion" />
+    <link rel="shortcut icon" href="resources/favicon.ico" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 
 <body>
     <div id='container' style="margin:0 auto; width:300px;">
         <!--element which is going to render the Dropdown Tree-->
-        <input type="text" tabindex="1" id='ddltreeelement' />
+        <input type="text" tabindex="1" id='ddTreeElement' />
     </div>
-
 </body>
 
 </html>
+```
 
-{% endhighlight %}
-{% endtabs %}
-
-Now, import the  Dropdown Tree control to your `app.ts` and initialize it to the element `#ddltreeelement` as shown below.
+Now, import the  Dropdown Tree control to your `app.ts` and initialize it to the element `#ddTreeElement` as shown below.
 
 `[src/app/app.ts]`
 
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
+```ts
 
 import { DropDownTree } from '@syncfusion/ej2-dropdowns';
 
@@ -131,18 +123,15 @@ import { DropDownTree } from '@syncfusion/ej2-dropdowns';
 let DropDownTreeObject: DropDownTree = new DropDownTree();
 
 // render initialized Dropdown Tree
-DropDownTreeObject.appendTo('#ddltreeelement');
+DropDownTreeObject.appendTo('#ddTreeElement');
 
-{% endhighlight %}
-{% endtabs %}
+```
 
 ## Binding data source
 
 The Dropdown Tree control can load the data either from local data sources or remote data services. This can be done using the `dataSource` property that is a member of the `fields` property. The dataSource property supports array of JavaScript objects and DataManager. Here, an array of JSON values is passed to the Dropdown Tree control.
 
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
-
+```ts
 import { DropDownTree } from '@syncfusion/ej2-dropdowns';
 
 //define the array of JSON
@@ -179,22 +168,16 @@ let DropDownTreeObject: DropDownTree = new DropDownTree({
 });
 
 // render initialized Dropdown Tree
-DropDownTreeObject.appendTo('#ddltreeelement');
-
-{% endhighlight %}
-{% endtabs %}
+DropDownTreeObject.appendTo('#ddTreeElement');
+```
 
 ## Run the application
 
 After completing the configuration required to render a basic Dropdown Tree, run the following command to display the output in your default browser.
 
-{% tabs %}
-{% highlight bash tabtitle="NPM" %}
-
+```
 npm run start
-
-{% endhighlight %}
-{% endtabs %}
+```
 
 The following example explains the output in your browser.
 
@@ -205,6 +188,9 @@ The following example explains the output in your browser.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/dropdowntree/getting-started-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/dropdowntree/getting-started-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
-          
+
 {% previewsample "page.domainurl/code-snippet/dropdowntree/getting-started-cs1" %}

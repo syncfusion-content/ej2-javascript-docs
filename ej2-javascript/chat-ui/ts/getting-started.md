@@ -72,6 +72,10 @@ To render Chat UI control, need to import interactive-chat and its dependent con
 {% highlight css tabtitle="style.css" %}
 
 @import "../../node_modules/@syncfusion/ej2-base/styles/material.css";
+@import "../../node_modules/@syncfusion/ej2-inputs/styles/material.css";
+@import "../../node_modules/@syncfusion/ej2-buttons/styles/material.css";
+@import "../../node_modules/@syncfusion/ej2-navigations/styles/material.css";
+@import "../../node_modules/@syncfusion/ej2-popups/styles/material.css";
 @import "../../node_modules/@syncfusion/ej2-interactive-chat/styles/material.css";
 
 {% endhighlight %}
@@ -79,7 +83,7 @@ To render Chat UI control, need to import interactive-chat and its dependent con
 
 ## Adding Chat UI to the Application
 
-Add the HTML div tag with ID attribute as the `chatui` to your `index.html` file.
+Add the HTML div tag with ID attribute as the `chatUI` to your `index.html` file.
 
 `[src/index.html]`
 
@@ -101,7 +105,7 @@ Add the HTML div tag with ID attribute as the `chatui` to your `index.html` file
 
 <body>
     <div class="chatui-container" style="height: 350px; width: 350px;">
-        <div id="chatui"></div>
+        <div id="chatUI"></div>
     </div>
 </body>
 

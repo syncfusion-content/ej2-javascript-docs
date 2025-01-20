@@ -1,3 +1,7 @@
+import { usa_map} from './usa.js';
+import { texas } from './texas.js';
+import { california } from './california.js';
+
 var map = new ej.maps.Maps({
     layers: [
         {

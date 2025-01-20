@@ -104,14 +104,14 @@ Add the HTML input element that needs to be initialized as a Dropdown Tree in `i
 <body>
     <div id='container' style="margin:0 auto; width:300px;">
         <!--element which is going to render the Dropdown Tree-->
-        <input type="text" tabindex="1" id='ddltreeelement' />
+        <input type="text" tabindex="1" id='ddTreeElement' />
     </div>
 </body>
 
 </html>
 ```
 
-Now, import the  Dropdown Tree control to your `app.ts` and initialize it to the element `#ddltreeelement` as shown below.
+Now, import the  Dropdown Tree control to your `app.ts` and initialize it to the element `#ddTreeElement` as shown below.
 
 `[src/app/app.ts]`
 
@@ -123,7 +123,7 @@ import { DropDownTree } from '@syncfusion/ej2-dropdowns';
 let DropDownTreeObject: DropDownTree = new DropDownTree();
 
 // render initialized Dropdown Tree
-DropDownTreeObject.appendTo('#ddltreeelement');
+DropDownTreeObject.appendTo('#ddTreeElement');
 
 ```
 
@@ -168,7 +168,7 @@ let DropDownTreeObject: DropDownTree = new DropDownTree({
 });
 
 // render initialized Dropdown Tree
-DropDownTreeObject.appendTo('#ddltreeelement');
+DropDownTreeObject.appendTo('#ddTreeElement');
 ```
 
 ## Run the application

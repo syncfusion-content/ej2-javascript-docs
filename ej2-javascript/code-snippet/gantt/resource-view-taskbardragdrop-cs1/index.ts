@@ -1,10 +1,7 @@
-
-
-
-import { Gantt, Toolbar, Edit, Selection } from '@syncfusion/ej2-gantt';
+import { Gantt, Toolbar, Edit, Selection, RowDD } from '@syncfusion/ej2-gantt';
 import { overAllocationData, resources } from 'datasource.ts';
 
-Gantt.Inject(Toolbar, Edit, Selection);
+Gantt.Inject(Toolbar, Edit, Selection, RowDD);
 
 let gantt: Gantt = new Gantt({
     dataSource: overAllocationData,

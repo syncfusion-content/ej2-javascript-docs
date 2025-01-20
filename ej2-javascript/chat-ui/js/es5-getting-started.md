@@ -136,16 +136,16 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
           <script src="resources/interactive-chat/ej2-interactive-chat.min.js" type="text/javascript"></script>
        </head>
        <body>
-            <!-- Add the HTML <div> chatui  -->
+            <!-- Add the HTML <div> chatUI  -->
           <div class="chatui-container" style="height: 350px; width: 350px;">
-            <div id="chatui"></div>
+            <div id="chatUI"></div>
           </div>
           <script>
                 // Initializes the Chat UI control
                 let chatUI = new ej.interactivechat.ChatUI({});
 
                     // Render initialized Chat UI.
-                chatUI.appendTo('#chatui');
+                chatUI.appendTo('#chatUI');
           </script>
        </body>
   </html>

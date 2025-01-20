@@ -3,21 +3,21 @@ layout: post
 title: Getting started with ##Platform_Name## Chips control | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Chips control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: Getting started
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Chips control
+# Getting Started with ##Platform_Name## Chips control
 
-This section explains how to create a simple Chip, and configure its available functionalities in TypeScript, using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section explains how to create a simple Chip and configure its available functionalities in TypeScript, using the Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires Node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
-The list of dependencies required to use the Chip control in your application is given below:
+The list of dependencies required to use the Chips control in your application is given below:
 
 ```js
 |-- @syncfusion/ej2-buttons
@@ -62,7 +62,7 @@ npm install
 
 ## Import the Syncfusion CSS styles
 
-To render Chip component, need to import Button and its dependent components styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+To render Chip control, need to import Button and its dependent controls styles as given below in the `~/src/styles/styles.css` file, as shown below:
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -149,5 +149,6 @@ The following example shows a basic Chip control.
 {% include code-snippet/chips/getting-started-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
-          
+
 {% previewsample "page.domainurl/code-snippet/chips/getting-started-cs1" %}
+

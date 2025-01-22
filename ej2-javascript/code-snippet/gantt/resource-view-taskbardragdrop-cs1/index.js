@@ -1,4 +1,4 @@
-ej.gantt.Gantt.Inject(ej.gantt.Edit,ej.gantt.Toolbar,ej.gantt.Selection);
+ej.gantt.Gantt.Inject(ej.gantt.Edit,ej.gantt.Toolbar,ej.gantt.Selection,ej.gantt.RowDD);
 
 var gantt = new ej.gantt.Gantt({
     dataSource: overAllocationData,
@@ -7,6 +7,7 @@ var gantt = new ej.gantt.Gantt({
     showOverAllocation: true,
     allowTaskbarOverlap: false,
     enableMultiTaskbar: true,
+    allowTaskbarDragAndDrop: true,
         taskFields: {
             id: 'TaskID',
             name: 'TaskName',

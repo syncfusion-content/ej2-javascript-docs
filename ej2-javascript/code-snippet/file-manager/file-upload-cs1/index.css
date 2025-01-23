@@ -1,18 +1,12 @@
-.fileupload {
-    max-width: 500px;
-    margin: auto;
+#container {
+    visibility: hidden;
 }
-#openBtn {
+
+#loader {
+    color: #008cff;
+    height: 40px;
+    width: 30%;
     position: absolute;
-    top: 26px;
-    margin-left: 13px;
+    top: 45%;
+    left: 45%;
 }
-#target {
-    height: 550px;
-}
-/* csslint ignore:start */
-#dialog {
-    top: 20px !important;
-    max-height: 500px !important;
-}
-/* csslint ignore:end */

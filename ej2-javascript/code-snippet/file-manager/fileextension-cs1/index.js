@@ -1,7 +1,7 @@
 var hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
-// inject feature modules of the file manager
-ej.filemanager.FileManager.Inject(ej.filemanager.DetailsView,ej.filemanager.Toolbar,ej.filemanager.NavigationPane);
-// initialize File Manager component
+// inject feature modules of the File Manager
+ej.filemanager.FileManager.Inject(ej.filemanager.DetailsView, ej.filemanager.Toolbar, ej.filemanager.NavigationPane);
+// initialize File Manager control
 var filemanagerInstance = new ej.filemanager.FileManager({
     ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations',
@@ -17,16 +17,16 @@ var filemanagerInstance = new ej.filemanager.FileManager({
     fileOpen: onBeforeFileOpen
 });
 
-// render initialized FileManager
+// render initialized File Manager
 filemanagerInstance.appendTo('#filemanager');
 
 // File Manager's file beforeFileLoad function
-function onBeforeFileLoad(args){
+function onBeforeFileLoad(args) {
     console.log(args.fileDetails.name + " is loading");
 }
 
 // File Manager's file beforeFileOpen function
-function onBeforeFileOpen(args){
+function onBeforeFileOpen(args) {
     console.log(args.fileDetails.name + " is opened");
 }
 

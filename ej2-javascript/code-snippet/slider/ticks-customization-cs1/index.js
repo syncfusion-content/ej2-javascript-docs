@@ -7,7 +7,7 @@ var ticksSlider = new ej.inputs.Slider({
     step: 5,
     // Set the type to render minRange slider
     type: 'MinRange',
-    // Initialize ticks with placement, largestep
+    // Initialize ticks with placement, largeStep
     ticks: { placement: 'Before', largeStep: 20 },
     // Handler used to add custom class to all tick element
     renderingTicks: function (args) {
@@ -17,7 +17,7 @@ var ticksSlider = new ej.inputs.Slider({
     }
 });
 ticksSlider.appendTo('#ticks_slider');
-// Initialize slider component
+// Initialize Range Slider Control
 var customTicks = new ej.inputs.Slider({
     // Set slider minimum and maximum values
     min: 0, max: 100,
@@ -25,7 +25,7 @@ var customTicks = new ej.inputs.Slider({
     value: 30,
     // Set the type to render minRange slider
     type: 'MinRange',
-    // Initialize ticks with placement, largestep, smallstep
+    // Initialize ticks with placement, largeStep, smallStep
     ticks: { placement: 'Both', largeStep: 20, smallStep: 5 },
     // Handler used to customize tick element
     renderedTicks: function (args) {
@@ -37,5 +37,3 @@ var customTicks = new ej.inputs.Slider({
     }
 });
 customTicks.appendTo('#slider');
-
-

@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## File manager control | Syncfusion
-description: Learn here all about Localization in Syncfusion ##Platform_Name## File manager control of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## File Manager control | Syncfusion
+description: Learn here all about Localization in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Localization 
+control: Localization
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in ##Platform_Name## File manager control
+# Localization in ##Platform_Name## File Manager control
 
-The file manager can be localized to any culture by defining the texts and messages of the file manager in the corresponding culture. The default locale of the file manager is `en` (English). The following table represents the default texts and messages of the file manager in `en` culture.
+The File Manager control can be localized to any culture by defining the texts and messages in the corresponding culture. The default locale of the File Manager control is `en` (English). The following table represents the default texts and messages of the File Manager control in the `en` culture.
 
 |KEY|Text/Message|
 |----|----|
@@ -108,7 +108,7 @@ The file manager can be localized to any culture by defining the texts and messa
 |Network-Error|NetworkError: Failed to send on XMLHTTPRequest: Failed to load|
 |Server-Error|ServerError: Invalid response from|
 
-The below example shows adding the German culture locale(`de-DE`)
+The example below shows adding the German culture locale (`de-DE`).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -119,8 +119,11 @@ The below example shows adding the German culture locale(`de-DE`)
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/locale-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/locale-cs2/index.css %}
+{% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/file-manager/locale-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -131,6 +134,9 @@ The below example shows adding the German culture locale(`de-DE`)
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/locale-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/locale-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

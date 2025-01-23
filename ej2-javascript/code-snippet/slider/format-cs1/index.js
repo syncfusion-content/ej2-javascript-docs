@@ -1,4 +1,4 @@
-// Initialize Slider component
+// Initialize Range Slider Control
 var sliderObj = new ej.inputs.Slider({
     min: 0, max: 100, step: 1, value: 30,
     // Applying currency formatting for tooltip with two decimal specifiers
@@ -6,6 +6,5 @@ var sliderObj = new ej.inputs.Slider({
     // Applying currency formatting for ticks with two decimal specifiers
     ticks: { placement: 'After', format: 'C2', largeStep: 20, smallStep: 10, showSmallTicks: true }
 });
-// Render initialized Slider
+// Render initialized Range Slider Control
 sliderObj.appendTo('#slider');
-

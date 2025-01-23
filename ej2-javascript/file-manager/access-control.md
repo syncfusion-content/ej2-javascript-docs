@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Access control in ##Platform_Name## File manager control | Syncfusion
-description: Learn here all about Access control in Syncfusion ##Platform_Name## File manager control of Syncfusion Essential JS 2 and more.
+title: Access control in ##Platform_Name## File Manager control | Syncfusion
+description: Learn here all about Access control in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Access control 
+control: Access control
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Access control in ##Platform_Name## File manager control
+# Access control in ##Platform_Name## File Manager control
 
-The FileManager allows you to define access permissions for folders and files using a set of access rules to user(s).
+The File Manager control allows you to define access permissions for folders and files using a set of access rules assigned to user(s).
 
 * [Access Rules](#access-rules)
 * [Permissions](#permissions)
@@ -20,7 +20,7 @@ The FileManager allows you to define access permissions for folders and files us
 
 The FileAccessController allows you to define security permissions for folders and files using a set of folder or file access rules.
 
-To set up access rules for folders (including their files and sub-folders) and individual files, use the SetRules() method in the controller. The following table represents the AccessRule properties available for file and folder:
+To set up access rules for folders (including their files and sub-folders) and individual files, use the `SetRules()` method in the controller. The following table represents the AccessRule properties available for files and folders:
 
 | **Properties** | **Applicable for file** | **Applicable for folder** | **Description** |
 | --- | --- | --- | --- |
@@ -60,14 +60,14 @@ The following syntax represent the access Rules for Default user using file or f
 
 ## Permissions
 
-It helps to explain how to apply security permission to file manager file or folder using access rules. The following table represent the value that determines the permission.
+It helps to explain how to apply security permission to File Manager file or folder using access rules. The following table represent the value that determines the permission.
 
 | **Value** | **Description** |
 | --- | ---|
 | Allow | Allows you to do read, write, copy, and download operations. |
 | Deny | Denies you to do read, write, copy, and download operations. |
 
-Use the `Role` property to apply created roles to the file manager. After that, the file manager displays folder or file and allow permisssion based on assigned roles.
+Use the `Role` property to apply created roles to the File Manager. After that, the File Manager displays folder or file and allow permisssion based on assigned roles.
 
 The following syntax represent how to apply permission based on assigned roles
 
@@ -102,19 +102,22 @@ Permission denied for writing and uploading in root folder.
  new AccessRule { Path = "/", Role = "Document Manager", Read = Permission.Allow, Write = Permission.Deny, Copy = Permission.Deny, WriteContents = Permission.Deny, Upload = Permission.Deny, Download = Permission.Deny, IsFile = false },
 ```
 
-The following example demonstrate the file manager rendered with access control support.
+The following example demonstrate the File Manager rendered with access control support.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/file-manager/access-control-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/access-control-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/access-control-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/file-manager/access-control-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -125,6 +128,9 @@ The following example demonstrate the file manager rendered with access control 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/access-control-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/access-control-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

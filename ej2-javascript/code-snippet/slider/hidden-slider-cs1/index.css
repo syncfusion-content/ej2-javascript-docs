@@ -12,11 +12,3 @@
   top: 45%;
   width: 30%;
 }
-
-.wrap {
-  box-sizing: border-box;
-  height: 260px;
-  margin: 0 auto;
-  padding: 80px 10px;
-  width: 460px;
-}

@@ -5,9 +5,7 @@ var slider = new ej.inputs.Slider({
     value: 30,
     type: 'MinRange',
     limits: { enabled: true, minStart: 10, minEnd: 40 },
-    tootip: { isVisible: true }
+    tooltip: { isVisible: true }
 });
-// Render initialized Slider
+// Render initialized Range Slider Control
 slider.appendTo('#slider');
-
-

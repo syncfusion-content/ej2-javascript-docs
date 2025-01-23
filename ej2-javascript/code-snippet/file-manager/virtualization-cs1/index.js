@@ -1,27 +1,28 @@
 var hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
-// inject feature modules of the file manager
-ej.filemanager.FileManager.Inject(ej.filemanager.DetailsView,ej.filemanager.Toolbar,ej.filemanager.NavigationPane,ej.filemanager.enableVirtualization);
-// initialize File Manager component
+// inject feature modules of the File Manager
+ej.filemanager.FileManager.Inject(ej.filemanager.DetailsView, ej.filemanager.Toolbar, ej.filemanager.NavigationPane, ej.filemanager.enableVirtualization);
+// initialize File Manager control
 var filemanagerInstance = new ej.filemanager.FileManager({
     ajaxSettings: {
-        url: hostUrl + 'api/FileManager/FileOperations',
-        getImageUrl: hostUrl + 'api/FileManager/GetImage',
-        uploadUrl: hostUrl + 'api/FileManager/Upload',
-        downloadUrl: hostUrl + 'api/FileManager/Download'
+        url: hostUrl + 'api/Virtualization/FileOperations',
+        getImageUrl: hostUrl + 'api/Virtualization/GetImage',
+        uploadUrl: hostUrl + 'api/Virtualization/Upload',
+        downloadUrl: hostUrl + 'api/Virtualization/Download'
     },
     view: 'Details',
     enableVirtualization: true,
-    beforeSend: function(args) {
+    beforeSend: function (args) {
         args.ajaxSettings.beforeSend = function (args) {
             args.httpRequest.setRequestHeader('Authorization', 'FileBrowser');
         };
     },
-    beforeImageLoad: function(args) {
+    beforeImageLoad: function (args) {
         args.imageUrl = args.imageUrl + '&rootName=' + 'FileBrowser';
     },
-    beforeDownload: function(args) {
+    beforeDownload: function (args) {
         args.data.rootFolderName = 'FileBrowser';
     },
+    height: '380px'
 });
 
 // render initialized File Manager

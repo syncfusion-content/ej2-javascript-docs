@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <title>Essential JS 2 Slider</title>
+    <title>Essential JS 2 Range Slider</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Essential JS 2 Slider Component" />
+    <meta name="description" content="Essential JS 2 Range Slider Control" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/material.css" rel="stylesheet" />
@@ -30,8 +30,52 @@
                     <div id="range"></div>
                 </div>
             </div>
-        </div>         
+        </div>
     </div>
+    <style>
+        .content-wrapper {
+            width: 52%;
+            margin: 0 auto;
+            min-width: 185px;
+        }
+
+        .sliderwrap {
+            margin-top: 45px;
+        }
+
+        .e-bigger .content-wrapper {
+            width: 80%;
+        }
+
+        .sliderwrap label {
+            padding-bottom: 50px;
+            font-size: 13px;
+            font-weight: 500;
+            margin-top: 15px;
+            display: block;
+        }
+
+        .userselect {
+            -webkit-user-select: none;
+            /* Safari 3.1+ */
+            -moz-user-select: none;
+            /* Firefox 2+ */
+            -ms-user-select: none;
+            /* IE 10+ */
+            user-select: none;
+            /* Standard syntax */
+        }
+
+        .property-custom td {
+            padding: 5px;
+        }
+
+        #range .e-limits,
+        #minrange .e-limits {
+            background-color: #ccc;
+            background-color: rgba(69, 100, 233, 0.46);
+        }
+    </style>
 </body>
 
 </html>

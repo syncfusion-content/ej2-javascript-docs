@@ -3,20 +3,20 @@ layout: post
 title: Getting started with ##Platform_Name## Dashboard layout control | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Dashboard layout control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: Getting started
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 # Getting started in ##Platform_Name## Dashboard layout control
 
-This section explains how to create a simple **DashboardLayout** control and configure its available functionalities, using the Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section explains how to create a simple **Dashboard Layout** control and configure its available functionalities, using the Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
-The following list of dependencies is required to use the DashboardLayout control in your application.
+The following list of dependencies is required to use the Dashboard Layout control in your application.
 
 ```js
 |-- @syncfusion/ej2-layouts
@@ -62,7 +62,7 @@ npm install
 
 ## Import the Syncfusion CSS styles
 
-To render the DashboardLayout control, import the DashboardLayout and its dependent control’s styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+To render the Dashboard Layout control, import the Dashboard Layout and its dependent control’s styles as given below in the `~/src/styles/styles.css` file, as shown below:
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -75,9 +75,9 @@ To render the DashboardLayout control, import the DashboardLayout and its depend
 
 > Note: To refer the combined control styles, use Syncfusion [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
-## Add DashboardLayout to the application
+## Add Dashboard Layout to the application
 
-You can render the DashboardLayout control in the following two ways.
+You can render the Dashboard Layout control in the following two ways.
 
 * Adding dashboard element and defining `panels` property as attributes in the HTML elements directly.
 * Adding the dashboard element and defining the `panels` property through script.
@@ -97,7 +97,7 @@ The following sample demonstrates defining of `panels` by adding child elements 
 <html lang="en">
 
 <head>
-    <title>Essential JS 2 DashboardLayout control</title>
+    <title>Essential JS 2 Dashboard Layout control</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <meta name="description" content="Essential JS 2" />
@@ -108,7 +108,7 @@ The following sample demonstrates defining of `panels` by adding child elements 
 
 <body>
     <div style="margin: 50px;">
-        <!--element which is going to render the dashboardlayout-->
+        <!--element which is going to render the Dashboard Layout-->
         <div id="dashboard_inline">
             <div id="one" class="e-panel" data-row="0" data-col="0" data-sizeX="1" data-sizeY="1">
                 <div class="e-panel-container">
@@ -153,7 +153,7 @@ The following sample demonstrates defining of `panels` by adding child elements 
 {% endhighlight %}
 {% endtabs %}
 
-Now, import the DashboardLayout control into your `app.ts` and append it to `#dashboard_inline`.
+Now, import the Dashboard Layout control into your `app.ts` and append it to `#dashboard_inline`.
 
 `[src/app/app.ts]`
 
@@ -162,11 +162,11 @@ Now, import the DashboardLayout control into your `app.ts` and append it to `#da
 
 import { DashboardLayout } from '@syncfusion/ej2-layouts';
 
-// initialize dashboardlayout control
+// initialize Dashboard Layout control
 let dashboard: DashboardLayout  = new DashboardLayout ({
     columns: 5
 });
-// render initialized dashboardlayout
+// render initialized Dashboard Layout
 dashboard.appendTo('#dashboard_inline');
 
 {% endhighlight %}
@@ -197,7 +197,7 @@ The below output can be achieved by following the steps mentioned above.
 {% include code-snippet/dashboard-layout/getting-started-panels-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
-          
+
 {% previewsample "page.domainurl/code-snippet/dashboard-layout/getting-started-panels-cs1" %}
 
 ## Defining panels properties through script
@@ -213,7 +213,7 @@ The following sample demonstrates defining panels property through script sectio
 
 import { DashboardLayout } from '@syncfusion/ej2-layouts';
 
-// initialize dashboardlayout control
+// initialize Dashboard Layout control
 let dashboard: DashboardLayout  = new DashboardLayout ({
     cellSpacing: [10, 10],
     columns: 5,
@@ -226,13 +226,13 @@ let dashboard: DashboardLayout  = new DashboardLayout ({
     { "sizeX": 1, "sizeY": 1, "row": 2, "col": 3, content:'<div class="content">6</div>' }
     ]
 });
-// render initialized dashboardlayout
+// render initialized Dashboard Layout
 dashboard.appendTo('#dashboard_default');
 
 {% endhighlight %}
 {% endtabs %}
 
-The following example shows a basic DashboardLayout by defining the `panels` property through script.
+The following example shows a basic Dashboard Layout by defining the `panels` property through script.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -245,7 +245,7 @@ The following example shows a basic DashboardLayout by defining the `panels` pro
 {% include code-snippet/dashboard-layout/getting-started-cs4/index.css %}
 {% endhighlight %}
 {% endtabs %}
-          
+
 {% previewsample "page.domainurl/code-snippet/dashboard-layout/getting-started-cs4" %}
 
 > You can refer to our [JavaScript Dashboard Layout](https://www.syncfusion.com/javascript-ui-controls/js-dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Dashboard Layout example](https://ej2.syncfusion.com/demos/#/material/dashboard-layout/default.html) to knows how to present and manipulate data.

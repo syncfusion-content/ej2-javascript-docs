@@ -1,4 +1,4 @@
-// initialize dashboardlayout component
+// initialize Dashboard Layout control
 var dashboardObject  = new ej.layouts.DashboardLayout({
     cellAspectRatio: 100/70,
         columns: 4,
@@ -17,7 +17,7 @@ var dashboardObject  = new ej.layouts.DashboardLayout({
             content: '<div class="content" id="panelContent">Place your content here</div>'
         }]
 });
-// render initialized dashboardlayout
+// render initialized Dashboard Layout
 dashboardObject.appendTo('#defaultLayout');
 
 

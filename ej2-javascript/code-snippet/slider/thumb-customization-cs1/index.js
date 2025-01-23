@@ -1,11 +1,11 @@
-// Initialize slider component
+// Initialize Range Slider Control
 var squareSlider = new ej.inputs.Slider({
     // Set the value for slider
     value: 30,
     min: 0, max: 100
 });
 squareSlider.appendTo('#square_slider');
-// Initialize slider component
+// Initialize Range Slider Control
 var circleSlider = new ej.inputs.Slider({
     // Set the value for slider
     value: 30,
@@ -13,7 +13,7 @@ var circleSlider = new ej.inputs.Slider({
     min: 0, max: 100
 });
 circleSlider.appendTo('#circle_slider');
-// Initialize slider component
+// Initialize Range Slider Control
 var ovalSlider = new ej.inputs.Slider({
     // Set the value for slider
     value: 30,
@@ -21,7 +21,7 @@ var ovalSlider = new ej.inputs.Slider({
     min: 0, max: 100
 });
 ovalSlider.appendTo('#oval_slider');
-// Initialize slider component
+// Initialize Range Slider Control
 var imageSlider = new ej.inputs.Slider({
     // Set the value for slider
     value: 30,
@@ -30,5 +30,3 @@ var imageSlider = new ej.inputs.Slider({
     ticks: { placement: 'After' }
 });
 imageSlider.appendTo('#image_slider');
-
-

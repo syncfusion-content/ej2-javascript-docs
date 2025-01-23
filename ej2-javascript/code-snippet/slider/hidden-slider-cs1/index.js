@@ -1,15 +1,15 @@
 // Initialize button component
 var button = new ej.buttons.Button({ content: 'Button' });
 button.appendTo('#element');
-// Initialize Slider component
+// Initialize Range Slider Control
 var defaultObj = new ej.inputs.Slider({
 	// Set slider minimum and maximum values
-	// new Date(Year, Month, day, hours, minutes, seconds, millseconds)
+	// new Date(Year, Month, day, hours, minutes, seconds, millSeconds)
 	min: new Date(2013, 6, 13, 11).getTime(), max: new Date(2013, 6, 13, 17).getTime(),
 	// 3600000 milliseconds = 1 Hour
 	step: 3600000,
 	//Set buttons for slider 
-    showButtons: true,
+	showButtons: true,
 	// Set the initial range values for slider
 	value: new Date(2013, 6, 13, 13).getTime(),
 	// Bind Tooltip change event for custom formatting
@@ -20,7 +20,7 @@ var defaultObj = new ej.inputs.Slider({
 	},
 	// Bind ticks event for custom formatting
 	renderingTicks: renderingTicksHandler,
-	// Initialize ticks with placement, largestep, smallstep
+	// Initialize ticks with placement, largeStep, smallStep
 	ticks: {
 		placement: 'After',
 		// 2 * 3600000 milliseconds = 2 Hour
@@ -49,7 +49,7 @@ function tooltipChangeHandler(args) {
 		firstPart = new Date(Number(firstPart)).toLocaleTimeString('en-us', custom);
 		secondPart = new Date(Number(secondPart)).toLocaleTimeString('en-us', custom);
 	} else {
-		args.text =  new Date(Number(args.text)).toLocaleTimeString('en-us', custom);
+		args.text = new Date(Number(args.text)).toLocaleTimeString('en-us', custom);
 	}
 }
 
@@ -71,4 +71,3 @@ document.getElementById('element').onclick = function () {
 	slider.style.display = "block";
 	ticks.ej2_instances[0].refresh();
 };
-

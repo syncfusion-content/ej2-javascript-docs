@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Responsive adaptive in ##Platform_Name## Dashboard layout control | Syncfusion
-description: Learn here all about Responsive adaptive in Syncfusion ##Platform_Name## Dashboard layout control of Syncfusion Essential JS 2 and more.
+title: Responsive adaptive in ##Platform_Name## Dashboard Layout control | Syncfusion
+description: Learn here all about Responsive adaptive in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Responsive adaptive 
+control: Responsive adaptive
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Responsive adaptive in ##Platform_Name## Dashboard layout control
+# Responsive adaptive in ##Platform_Name## Dashboard Layout control
 
-The control is provided with built-in responsive support, where panels within the layout get adjusted based on their parent element's dimensions to accommodate any resolution which relieves the burden of building responsive dashboards.
+The control is provided with built-in responsive support, allowing panels within the layout to adjust based on their parent element's dimensions to accommodate any resolution, which relieves the burden of building responsive dashboards.
 
-The dashboard layout is designed to automatically adapt with lower resolutions by transforming the entire layout into a stacked one so that the panels will be displayed in a vertical column. By default, whenever the screen resolution meets 600px or lower resolutions this layout transformation occurs. This transformation can be modified for any user defined resolution by defining the for the [`mediaQuery`](../api/dashboard-layout/#mediaquery) property of the component.
+The Dashboard Layout is designed to automatically adapt to lower resolutions by transforming the entire layout into a stacked configuration so that the panels are displayed in a vertical column. By default, whenever the screen resolution is 600px or lower, this layout transformation occurs. This transformation can be modified for any user-defined resolution by setting the [`mediaQuery`](../api/dashboard-layout/#mediaquery) property of the control.
 
-The following sample demonstrates the usage of [`mediaQuery`](../api/dashboard-layout/#mediaquery) property to turn out the layout into a stacked one in user defined resolution. Here, whenever, the window size reaches 700px or lesser, the layout becomes a stacked layout.
+The following sample demonstrates the usage of the [`mediaQuery`](../api/dashboard-layout/#mediaquery) property to convert the layout into a stacked one at a user-defined resolution. Here, whenever the window size reaches 700px or less, the layout becomes a stacked layout.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,4 +44,4 @@ The following sample demonstrates the usage of [`mediaQuery`](../api/dashboard-l
 {% previewsample "page.domainurl/code-snippet/dashboard-layout/getting-started-cs3" %}
 {% endif %}
 
-> You can refer to our [JavaScript Dashboard Layout](https://www.syncfusion.com/javascript-ui-controls/js-dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Dashboard Layout example](https://ej2.syncfusion.com/demos/#/material/dashboard-layout/default.html) to knows how to present and manipulate data.
+> You can refer to our [JavaScript Dashboard Layout](https://www.syncfusion.com/javascript-ui-controls/js-dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Dashboard Layout example](https://ej2.syncfusion.com/demos/#/material/dashboard-layout/default.html) to learn how to present and manipulate data.

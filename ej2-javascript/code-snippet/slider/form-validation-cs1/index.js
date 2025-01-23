@@ -1,4 +1,4 @@
-// Initialize Slider component
+// Initialize Range Slider Control
 var SliderMinObj = new ej.inputs.Slider({
     type: 'MinRange',
     value: 30,
@@ -21,7 +21,7 @@ function onMinChanged(args) {
     // validate the slider value in the form
     formMinObj.validate();
 }
-// Initialize Slider component
+// Initialize Range Slider Control
 var SliderMaxObj = new ej.inputs.Slider({
     type: 'MinRange',
     value: 30,
@@ -44,7 +44,7 @@ function onMaxChanged(args) {
     // validate the slider value in the form
     formMaxObj.validate();
 }
-// Initialize Slider component
+// Initialize Range Slider Control
 var SliderValObj = new ej.inputs.Slider({
     type: 'MinRange',
     value: 30,
@@ -67,7 +67,7 @@ function onValChanged(args) {
     // validate the slider value in the form
     formValObj.validate();
 }
-// Initialize Slider component
+// Initialize Range Slider Control
 var SliderRangeObj = new ej.inputs.Slider({
     type: 'MinRange',
     value: 30,
@@ -90,7 +90,7 @@ function onRangeChanged(args) {
     // validate the slider value in the form
     formRangeObj.validate();
 }
-// Initialize Slider component
+// Initialize Range Slider Control
 var SliderCustomObj = new ej.inputs.Slider({
     type: 'Range',
     value: [30, 70],
@@ -116,5 +116,3 @@ function onCustomChanged(args) {
 function validateRange(args) {
     return SliderCustomObj.value[0] >= 40 && SliderCustomObj.value[1] <= 80;
 }
-
-

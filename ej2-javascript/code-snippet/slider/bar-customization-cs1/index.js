@@ -1,11 +1,11 @@
-// Initialize slider component
+// Initialize Range Slider Control
 var heightSlider = new ej.inputs.Slider({
     // Set the value for slider
     value: 30,
     min: 0, max: 100
 });
 heightSlider.appendTo('#height_slider');
-// Initialize slider component
+// Initialize Range Slider Control
 var gradientSlider = new ej.inputs.Slider({
     // Set slider minimum and maximum values
     min: 0, max: 100,
@@ -16,7 +16,7 @@ var gradientSlider = new ej.inputs.Slider({
 gradientSlider.appendTo('#gradient_slider');
 var sliderTrack;
 var sliderHandle;
-// Initialize slider component
+// Initialize Range Slider Control
 var dynamicColorSlider = new ej.inputs.Slider({
     // Set slider minimum and maximum values
     min: 0, max: 100,
@@ -54,5 +54,3 @@ var dynamicColorSlider = new ej.inputs.Slider({
     }
 });
 dynamicColorSlider.appendTo('#dynamic_color_slider');
-
-

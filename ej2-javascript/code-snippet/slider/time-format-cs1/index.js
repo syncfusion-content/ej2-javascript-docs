@@ -1,4 +1,4 @@
-// Initialize slider component
+// Initialize Range Slider Control
 var timeObj = new ej.inputs.Slider({
     /**
      * Initialize the min and max values of the slider using JavaScript date functions
@@ -30,7 +30,5 @@ var timeObj = new ej.inputs.Slider({
     },
     showButtons: true
 });
-// Render initialized slider
+// Render initialized Range Slider Control
 timeObj.appendTo('#slider');
-
-

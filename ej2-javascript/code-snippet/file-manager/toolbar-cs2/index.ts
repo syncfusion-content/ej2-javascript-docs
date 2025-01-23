@@ -1,12 +1,10 @@
-
-
 import { FileManager, Toolbar, NavigationPane, DetailsView } from '@syncfusion/ej2-filemanager';
 import { CheckBox, ChangeEventArgs } from '@syncfusion/ej2-buttons';
 
 FileManager.Inject(Toolbar, NavigationPane, DetailsView)
 
 let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-// initialize File Manager component
+// initialize File Manager control
 let filemanagerInstance: FileManager = new FileManager({
     ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations',
@@ -15,8 +13,8 @@ let filemanagerInstance: FileManager = new FileManager({
         downloadUrl: hostUrl + 'api/FileManager/Download'
     },
     //Custom item added along with default item
-    toolbarItems: [{ text: 'Create folder' , name: 'NewFolder', prefixIcon: 'e-plus', tooltipText: 'Create folder' }, 
-    { name: 'Upload' },   
+    toolbarItems: [{ text: 'Create folder', name: 'NewFolder', prefixIcon: 'e-plus', tooltipText: 'Create folder' },
+    { name: 'Upload' },
     { name: 'SortBy' },
     { name: 'Refresh' },
     { name: 'Cut' },
@@ -28,19 +26,20 @@ let filemanagerInstance: FileManager = new FileManager({
     { template: '<input id="checkbox" type="checkbox"/>', name: 'Select' },
     { name: 'Selection' },
     { name: 'View' },
-    { name: 'Details' }]
+    { name: 'Details' }],
+    height: '380px'
 });
 
-// render initialized FileManager
+// render initialized File Manager
 filemanagerInstance.appendTo('#filemanager');
 
 // Render Checkbox in template
-var checkbox: CheckBox = new CheckBox({ label: 'Select All', checked: false, change: onChange },'#checkbox');
+var checkbox: CheckBox = new CheckBox({ label: 'Select All', checked: false, change: onChange }, '#checkbox');
 
 // on checkbox change select all or clear selection
 function onChange(args: ChangeEventArgs): void {
     if (args.checked) {
-        filemanagerInstance.selectAll(); 
+        filemanagerInstance.selectAll();
         checkbox.label = 'Unselect All';
     }
     else {

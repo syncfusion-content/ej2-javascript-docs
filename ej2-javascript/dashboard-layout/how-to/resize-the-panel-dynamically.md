@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Resize the panel dynamically in ##Platform_Name## Dashboard layout control | Syncfusion
-description: Learn here all about Resize the panel dynamically in Syncfusion ##Platform_Name## Dashboard layout control of Syncfusion Essential JS 2 and more.
+title: Resize the panel dynamically in ##Platform_Name## Dashboard Layout control | Syncfusion
+description: Learn here all about Resize the panel dynamically in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Resize the panel dynamically 
+control: Resize the panel dynamically
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Resize the panel dynamically in ##Platform_Name## Dashboard layout control
+# Resize the panel dynamically in ##Platform_Name## Dashboard Layout control
 
-In Dashboard Layout, the height of a panel is based on its width. While resizing the panel, the height and width should be changed.
+In Dashboard Layout, the height of a panel is based on its width. While resizing the panel, both the height and width should be adjusted.
 
-To resize the height of a panel alone, the [resizePanel]( ../../api/dashboard-layout/#resizepanel) method is used. In this case, the [cellAspectRatio](../../api/dashboard-layout/#cellaspectratio) property configures the height of the cells based on the cell width to height ratio (cell width/cell height ratio) when the height will not be completely adjusted to `sizeY` value.
+To resize the height of a panel alone, use the [resizePanel](../../api/dashboard-layout/#resizepanel) method. In this case, the [cellAspectRatio](../../api/dashboard-layout/#cellaspectratio) property configures the height of the cells based on the cell width-to-height ratio (cell width/cell height ratio) when the height will not be completely adjusted to the `sizeY` value.
 
 Refer to the following code snippet to determine the height of a panel.
 
@@ -32,7 +32,7 @@ Refer to the following code snippet to determine the height of a panel.
 {% include code-snippet/dashboard-layout/dynamic-resize-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/dashboard-layout/dynamic-resize-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}

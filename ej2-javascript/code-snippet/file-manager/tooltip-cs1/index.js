@@ -1,30 +1,31 @@
 var hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
-// inject feature modules of the file manager
-ej.filemanager.FileManager.Inject(ej.filemanager.DetailsView,ej.filemanager.Toolbar,ej.filemanager.NavigationPane);
-// initialize File Manager component
+// inject feature modules of the File Manager
+ej.filemanager.FileManager.Inject(ej.filemanager.DetailsView, ej.filemanager.Toolbar, ej.filemanager.NavigationPane);
+// initialize File Manager control
 var fileObj = new ej.filemanager.FileManager({
-ajaxSettings: {
+    ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations',
         uploadUrl: hostUrl + 'api/FileManager/Upload',
         downloadUrl: hostUrl + 'api/FileManager/Download',
         getImageUrl: hostUrl + 'api/FileManager/GetImage'
-},
-created: function () { addTooltip(); },
-fileLoad: function (args) {
-    //Native tooltip customization to display additonal information in new line
-    var target = args.element;
-    if (args.module === 'DetailsView') {
-        var ele = select('[title]', args.element);
-         var title =  args.fileDetails.name +
-        '\n' +  args.fileDetails.dateModified;
-        ele.setAttribute('title', title);
-    }
-    else if (args.module === 'LargeIconsView') {
-        var title =  args.fileDetails.name +
-        '\n' +  args.fileDetails.dateModified;
-        target.setAttribute('title', title);
-    }
-}
+    },
+    created: function () { addTooltip(); },
+    fileLoad: function (args) {
+        //Native tooltip customization to display additonal information in new line
+        var target = args.element;
+        if (args.module === 'DetailsView') {
+            var ele = select('[title]', args.element);
+            var title = args.fileDetails.name +
+                '\n' + args.fileDetails.dateModified;
+            ele.setAttribute('title', title);
+        }
+        else if (args.module === 'LargeIconsView') {
+            var title = args.fileDetails.name +
+                '\n' + args.fileDetails.dateModified;
+            target.setAttribute('title', title);
+        }
+    },
+    height: '380px'
 });
 
 // render initialized File Manager
@@ -33,7 +34,7 @@ fileObj.appendTo('#filemanager');
 function addTooltip() {
     var tooltip = new ej.popups.Tooltip({
         target: '#' + fileObj.element.id + '_toolbar [title]',
-        beforeRender: onTooltipBeforeRender  
+        beforeRender: onTooltipBeforeRender
     });
     tooltip.appendTo('#' + fileObj.element.id + '_toolbar');
 }
@@ -89,5 +90,3 @@ function onTooltipBeforeRender(args) {
     }
     this.content = args.target.getAttribute('title') + '</br>' + description;
 }
-
-

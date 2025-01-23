@@ -1,20 +1,17 @@
-
-
 import { enableRipple } from '@syncfusion/ej2-base';
 import { Tab } from '@syncfusion/ej2-navigations';
 import { FileManager, Toolbar, NavigationPane, DetailsView, ContextMenu } from '@syncfusion/ej2-filemanager';
 FileManager.Inject(Toolbar, NavigationPane, DetailsView, ContextMenu);
 enableRipple(true);
 
-
-//Initialize Tab component
+//Initialize Tab Control
 let tabObj: Tab = new Tab({
     heightAdjustMode: 'None',
     height: 320,
     showCloseButton: true,
     selected: onSelect,
 });
-//Render initialized Tab component
+//Render initialized Tab Control
 tabObj.appendTo('#tab_orientation');
 
 
@@ -26,12 +23,10 @@ let fileObject: FileManager = new FileManager({
         uploadUrl: hostUrl + 'api/FileManager/Upload',
         downloadUrl: hostUrl + 'api/FileManager/Download'
     },
-    view: 'Details'
+    view: 'Details',
+    height: '380px'
 });
 fileObject.appendTo('#filemanager');
-function onSelect(): void  {
-   fileObject.refreshLayout();
+function onSelect(): void {
+    fileObject.refreshLayout();
 }
-
-
-

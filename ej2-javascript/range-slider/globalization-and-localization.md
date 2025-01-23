@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalization and localization in ##Platform_Name## Range slider control | Syncfusion
-description: Learn here all about Globalization and localization in Syncfusion ##Platform_Name## Range slider control of Syncfusion Essential JS 2 and more.
+title: Globalization and localization in ##Platform_Name## Range Slider control | Syncfusion
+description: Learn here all about Globalization and localization in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Globalization and localization 
 publishingplatform: ##Platform_Name##
@@ -9,13 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Globalization and localization in ##Platform_Name## Range slider control
+# Globalization and localization in ##Platform_Name## Range Slider control
 
 ## Localization
 
-The [`Localization`](../api/base/l10n) library allows you to localize default text content of the Slider. The slider control has static text on some features (like increase and decrease button) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](../api/slider/#locale) value and translation object.
+The [`Localization`](../api/base/l10n) library allows you to localize the default text content of the Range Slider control. The Range Slider control has static text for some features (such as increase and decrease buttons) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](../api/slider/#locale) value and translation object.
 
-The following list of properties and its values are used in the slider.
+The following list of properties and their values are used in the Range Slider:
 
 Locale keywords |Text
 -----|-----
@@ -24,9 +24,9 @@ Decrease | Decrease
 
 ### Loading translations
 
-To load translation object in an application, use [`load`](../api/base/l10n/#load) function of the [`L10n`](../api/base/l10n) class.
+To load the translation object in an application, use the [`load`](../api/base/l10n/#load) function of the [`L10n`](../api/base/l10n) class.
 
-The following example demonstrates the Slider in `Deutsch` culture.
+The following example demonstrates the Range Slider in the `Deutsch` culture.
 
 {% if page.publishingplatform == "typescript" %}
 

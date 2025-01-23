@@ -1,4 +1,4 @@
-import { FileManager, Toolbar, NavigationPane, DetailsView, ContextMenu, Permission, FileData} from '@syncfusion/ej2-filemanager';
+import { FileManager, Toolbar, NavigationPane, DetailsView, ContextMenu, Permission, FileData } from '@syncfusion/ej2-filemanager';
 
 FileManager.Inject(Toolbar, NavigationPane, DetailsView, ContextMenu);
 
@@ -18,7 +18,7 @@ let resultData: FileData[] = [
         parentId: null,
         size: 1779448,
         type: "folder"
-    }, 
+    },
     {
         dateCreated: new Date("2023-11-15T19:02:02.3419426+05:30"),
         dateModified: new Date("2024-01-08T16:55:20.9464164+05:30"),
@@ -155,6 +155,7 @@ let resultData: FileData[] = [
 let fileObject: FileManager = new FileManager({
     fileSystemData: [].slice.call(resultData) as { [key: string]: Object }[],
     toolbarSettings: { items: ['NewFolder', 'Cut', 'Copy', 'Paste', 'Delete', 'Rename', 'SortBy', 'Refresh', 'Selection', 'View', 'Details'], visible: true },
-    contextMenuSettings: { file: ["Cut", "Copy", "Paste", "Delete", "Rename", "|", "Details"], folder: ["Open", "|", "Cut", "Copy", "Paste", "|", "Delete", "Rename", "|", "Details"], layout: ["SortBy", "View", "Refresh", "|", "Paste", "|", "NewFolder", "|", "Details", "|", "SelectAll"], visible: true }
+    contextMenuSettings: { file: ["Cut", "Copy", "Paste", "Delete", "Rename", "|", "Details"], folder: ["Open", "|", "Cut", "Copy", "Paste", "|", "Delete", "Rename", "|", "Details"], layout: ["SortBy", "View", "Refresh", "|", "Paste", "|", "NewFolder", "|", "Details", "|", "SelectAll"], visible: true },
+    height: '380px'
 });
 fileObject.appendTo('#filemanager');

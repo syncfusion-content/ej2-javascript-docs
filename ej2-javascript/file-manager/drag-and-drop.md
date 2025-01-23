@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Drag and drop in ##Platform_Name## File manager control | Syncfusion
-description: Learn here all about Drag and drop in Syncfusion ##Platform_Name## File manager control of Syncfusion Essential JS 2 and more.
+title: Drag and drop in ##Platform_Name## File Manager control | Syncfusion
+description: Learn here all about Drag and drop in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Drag and drop 
+control: Drag and drop
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Drag and drop in ##Platform_Name## File manager control
+# Drag and drop in ##Platform_Name## File Manager control
 
-The file manager allows files or folders to be moved from one folder to another by using the  [allowDragAndDrop](../api/file-manager/#allowdraganddrop) property. It also supports uploading a file by dragging it from Windows Explorer to  FileManager control. You can enable or disable this support by using the [allowDragAndDrop](../api/file-manager/#allowdraganddrop) property of file manager.
+The File Manager allows files and folders to be moved within the file system by drag and dropping them, this support can be enabled or disabled using the [allowDragAndDrop](../api/file-manager/#allowdraganddrop) property of the File Manager.
 
-The event triggered in drag and drop support are
+The events triggered in drag and drop support are:
 
-* [fileDragStart](../api/file-manager/#filedragstart) - Triggers when the file/folder dragging is started.
-* [fileDragging](../api/file-manager/#filedragging) - Triggers while dragging the file/folder.
-* [fileDragStop](../api/file-manager/#filedragstop) - Triggers when the file/folder is about to be dropped at the target.
-* [fileDropped](../api/file-manager/#filedropped) - Triggers when the file/folder is dropped.
+* [fileDragStart](../api/file-manager/#filedragstart) - Triggered when the file/folder dragging is started.
+* [fileDragging](../api/file-manager/#filedragging) - Triggered while dragging the file/folder.
+* [fileDragStop](../api/file-manager/#filedragstop) - Triggered when the file/folder is about to be dropped at the target.
+* [fileDropped](../api/file-manager/#filedropped) - Triggered when the file/folder is dropped.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -29,8 +29,11 @@ The event triggered in drag and drop support are
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/drag-and-drop-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/drag-and-drop-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/file-manager/drag-and-drop-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -41,6 +44,9 @@ The event triggered in drag and drop support are
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/drag-and-drop-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/drag-and-drop-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

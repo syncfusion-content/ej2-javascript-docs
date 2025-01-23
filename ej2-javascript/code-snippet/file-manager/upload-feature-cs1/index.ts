@@ -1,11 +1,9 @@
-
-
 import { FileManager, Toolbar, NavigationPane, DetailsView } from '@syncfusion/ej2-filemanager';
 
 FileManager.Inject(Toolbar, NavigationPane, DetailsView)
 
 let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-// initialize file manager component
+// initialize File Manager control
 let filemanagerInstance: FileManager = new FileManager({
     ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations',
@@ -16,7 +14,8 @@ let filemanagerInstance: FileManager = new FileManager({
     created: function () {
         filemanagerInstance.uploadObj.dropArea = null;  // Restrict file uploads by dragging them from the local file system to the File Manager.
     },
+    height: '380px'
 });
 
-// render initialized FileManager
+// render initialized File Manager
 filemanagerInstance.appendTo('#filemanager');

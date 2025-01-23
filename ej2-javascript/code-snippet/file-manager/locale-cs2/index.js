@@ -79,7 +79,7 @@ ej.base.L10n.load({
             "Search-Empty": "Keine Ergebnisse gefunden",
             "Search-Key": "Versuchen Sie es mit anderen Stichwörtern",
             "Filter-Empty": "keine Ergebnisse gefunden",
-            "Filter-Key" : "Versuchen Sie es mit einem anderen Filter",
+            "Filter-Key": "Versuchen Sie es mit einem anderen Filter",
             "Sub-Folder-Error": "Der Zielordner ist der Unterordner des Quellordners.",
             "Same-Folder-Error": "Der Zielordner ist derselbe wie der Quellordner.",
             "Access-Denied": "Zugriff verweigert",
@@ -99,9 +99,9 @@ ej.base.L10n.load({
 })
 
 var hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
-// inject feature modules of the file manager
-ej.filemanager.FileManager.Inject(ej.filemanager.DetailsView,ej.filemanager.Toolbar,ej.filemanager.NavigationPane);
-// initialize File Manager component
+// inject feature modules of the File Manager
+ej.filemanager.FileManager.Inject(ej.filemanager.DetailsView, ej.filemanager.Toolbar, ej.filemanager.NavigationPane);
+// initialize File Manager control
 var filemanagerInstance = new ej.filemanager.FileManager({
     ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations',
@@ -110,7 +110,8 @@ var filemanagerInstance = new ej.filemanager.FileManager({
         downloadUrl: hostUrl + 'api/FileManager/Download'
     },
     //defining the locale for File Manager
-    locale: 'de'
+    locale: 'de',
+    height: '380px'
 });
 
 // render initialized File Manager

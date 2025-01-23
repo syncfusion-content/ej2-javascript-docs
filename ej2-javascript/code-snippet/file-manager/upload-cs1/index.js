@@ -1,7 +1,7 @@
 var hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
-// inject feature modules of the file manager
+// inject feature modules of the File Manager
 ej.filemanager.FileManager.Inject(ej.filemanager.DetailsView,ej.filemanager.Toolbar,ej.filemanager.NavigationPane);
-// initialize File Manager component
+// initialize File Manager Control
 var filemanagerInstance = new ej.filemanager.FileManager({
     ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations',
@@ -10,7 +10,8 @@ var filemanagerInstance = new ej.filemanager.FileManager({
         downloadUrl: hostUrl + 'api/FileManager/Download'
     },
     // Upload settings customization
-    uploadSettings: { maxFileSize: 233332, minFileSize: 120, autoUpload: true}
+    uploadSettings: { maxFileSize: 233332, minFileSize: 120, autoUpload: true},
+    height: '380px'
 });
 
 // render initialized File Manager

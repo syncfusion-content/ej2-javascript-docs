@@ -2,11 +2,11 @@ var dashboard  = new ej.layouts.DashboardLayout({
     cellSpacing: [10, 10],
     columns:5,
     cellAspectRatio: 100/50,
-     //Dashboard Layout's dragstart event
+     //Dashboard Layout's dragStart event
     dragStart: onDragStart,
     //Dashboard Layout's drag event
     drag: onDrag,
-    //Dashboard Layout's dragstop event
+    //Dashboard Layout's dragStop event
     dragStop: onDragStop,
     panels: [{ "sizeX": 1, "sizeY": 1, "row": 0, "col": 0, content:'<div class="content">0</div>' },
     { "sizeX": 3, "sizeY": 2, "row": 0, "col": 1, content:'<div class="content">1</div>' },
@@ -19,7 +19,7 @@ var dashboard  = new ej.layouts.DashboardLayout({
 });
 dashboard.appendTo('#dashboard_layout');
 
-//Dashboard Layout's dragstart event function
+//Dashboard Layout's dragStart event function
 function onDragStart(args) {
     console.log("Drag start");
 }
@@ -29,7 +29,7 @@ function onDrag(args) {
     console.log("Dragging");
 }
 
-//Dashboard Layout's dragstop event function
+//Dashboard Layout's dragStop event function
 function onDragStop(args) {
     console.log("Drag stop");
 }

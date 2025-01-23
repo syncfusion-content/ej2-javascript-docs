@@ -1,6 +1,6 @@
 var hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
-// inject feature modules of the file manager
-ej.filemanager.FileManager.Inject(ej.filemanager.DetailsView,ej.filemanager.Toolbar,ej.filemanager.NavigationPane);
+// inject feature modules of the File Manager
+ej.filemanager.FileManager.Inject(ej.filemanager.DetailsView, ej.filemanager.Toolbar, ej.filemanager.NavigationPane);
 
 //Initialize Tab component
 var tabObj = new ej.navigations.Tab({
@@ -12,7 +12,7 @@ var tabObj = new ej.navigations.Tab({
 //Render initialized Tab component
 tabObj.appendTo('#tab_orientation');
 
-// initialize File Manager component
+// initialize File Manager control
 var fileObject = new ej.filemanager.FileManager({
     ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations',
@@ -20,12 +20,12 @@ var fileObject = new ej.filemanager.FileManager({
         uploadUrl: hostUrl + 'api/FileManager/Upload',
         downloadUrl: hostUrl + 'api/FileManager/Download'
     },
+    height: '380px'
 });
 
-// render initialized FileManager
+// render initialized File Manager
 fileObject.appendTo('#filemanager');
 
-function onSelect()  {
-   fileObject.refreshLayout();
+function onSelect() {
+    fileObject.refreshLayout();
 }
-

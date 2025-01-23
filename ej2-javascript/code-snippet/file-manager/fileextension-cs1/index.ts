@@ -1,11 +1,9 @@
-
-
 import { FileManager, Toolbar, NavigationPane, DetailsView } from '@syncfusion/ej2-filemanager';
 
 FileManager.Inject(Toolbar, NavigationPane, DetailsView)
 
 let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-// initialize File Manager component
+// initialize File Manager control
 let filemanagerInstance: FileManager = new FileManager({
     ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations',
@@ -21,17 +19,15 @@ let filemanagerInstance: FileManager = new FileManager({
     fileOpen: onBeforeFileOpen
 });
 
-// render initialized FileManager
+// render initialized File Manager
 filemanagerInstance.appendTo('#filemanager');
 
 // File Manager's file fileLoad function
-function onBeforeFileLoad(args: any){
+function onBeforeFileLoad(args: any) {
     console.log(args.fileDetails.name + " is loading");
 }
 
 // File Manager's file fileOpen function
-function onBeforeFileOpen(args: any){
+function onBeforeFileOpen(args: any) {
     console.log(args.fileDetails.name + " is opened");
 }
-
-

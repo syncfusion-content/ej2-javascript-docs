@@ -1,6 +1,3 @@
-
-
-
 import { Slider } from '@syncfusion/ej2-inputs';
 
 // Initialization of Slider
@@ -12,8 +9,5 @@ let slider: Slider = new Slider({
     limits: { enabled: true, startHandleFixed: true, endHandleFixed: true },
     tooltip: { isVisible: true }
 });
-// Render initialized Slider
+// Render initialized Range Slider Control
 slider.appendTo('#slider');
-
-
-

@@ -1,12 +1,12 @@
-
-#enable {
-  position: relative;
-  left: 20%;
-  top: 10px;
+#container {
+  visibility: hidden;
 }
 
-#disable {
-  position: relative;
-  left: 30%;
-  top: 10px;
+#loader {
+  color: #008cff;
+  height: 40px;
+  width: 30%;
+  position: absolute;
+  top: 45%;
+  left: 45%;
 }

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Range slider control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Range slider control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Range Slider control | Syncfusion
+description:  Checkout and learn about Getting started with ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Range slider control
+# Getting started in ##Platform_Name## Range Slider control
 
 The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
@@ -64,7 +64,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
   </html>
 ```
 
-**Step 5:** Now, add the `Slider` element and initiate the `Essential JS 2 Slider` control in the `index.html` by using following code
+**Step 5:** Now, add the `Slider` element and initiate the `Essential JS 2 Range Slider` control in the `index.html` by using following code
 
 ```html
 <!DOCTYPE html>
@@ -82,16 +82,16 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
             <!-- Add the HTML <div> element  -->
             <div id='element'></div>
             <script>
-               // Initialize Essential JS 2 JavaScript Slider control
+               // Initialize Essential JS 2 JavaScript Range Slider control
                var sliderInstance = new ej.inputs.Slider({ value: 30 });
-               //Render initialized Slider
+               //Render initialized Range Slider
                sliderInstance.appendTo("#element");
             </script>
        </body>
   </html>
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential JS 2 Slider** control.
+**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential JS 2 Range Slider** control.
 
 ### Using CDN link for script and style reference
 
@@ -109,7 +109,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
 >
 > Styles: [`https://cdn.syncfusion.com/ej2/ej2-inputs/styles/material.css`](https://cdn.syncfusion.com/ej2/ej2-inputs/styles/material.css)
 
-**Step 3:** Create a HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `Slider` element and initiate the `Essential JS 2 Slider` control in the `index.html` by using following code.
+**Step 3:** Create a HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `Slider` element and initiate the `Essential JS 2 Range Slider` control in the `index.html` by using following code.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -122,7 +122,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
         
 {% previewsample "page.domainurl/code-snippet/slider/es5-getting-started-cs1" %}
 
-**Step 4:** Now, run the `index.html` in web browser, it will render the `Essential JS 2 Slider` control.
+**Step 4:** Now, run the `index.html` in web browser, it will render the `Essential JS 2 Range Slider` control.
 
 > Need to refer dependency control styles and scripts as like above example. We can also use [CRG](https://crg.syncfusion.com/) to generate combined control styles.
 

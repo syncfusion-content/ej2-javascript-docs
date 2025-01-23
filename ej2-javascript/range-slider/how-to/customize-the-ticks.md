@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Customize the ticks in ##Platform_Name## Range slider control | Syncfusion
-description: Learn here all about Customize the ticks in Syncfusion ##Platform_Name## Range slider control of Syncfusion Essential JS 2 and more.
+title: Customize the ticks in ##Platform_Name## Range Slider control | Syncfusion
+description: Learn here all about Customize the ticks in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Customize the ticks 
+control: Customize the ticks
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize the ticks in ##Platform_Name## Range slider control
+# Customize the ticks in ##Platform_Name## Range Slider control
 
-Slider view can be customized via CSS. By overriding the slider CSS classes, you can customize the ticks. The ticks in slider allows you to easily identify the current value/values of the slider. It contains [`smallStep`](../../api/slider/ticksDataModel/#smallstep) and [`largeStep`](../../api/slider/ticksDataModel/#largestep). By default, slider has class `e-tick` for slider ticks. You can override the class as per your requirement. Refer to the following code snippet to render ticks.
+The appearance of the Range Slider control can be customized via CSS. By overriding the slider CSS classes, you can customize the ticks, which allow you to easily identify the current value/values of the slider. It contains [`smallStep`](../../api/slider/ticksDataModel/#smallstep) and [`largeStep`](../../api/slider/ticksDataModel/#largestep) properties. By default, the slider has a class named `e-tick` for slider ticks, which can be overridden as per your requirements. Refer to the following code snippet to render custom ticks:
 
 ```ts
 .e-scale .e-tick.e-custom::before {
@@ -41,7 +41,7 @@ Here, the color for rendered ticks has been applied through nth-child(`child_num
 {% include code-snippet/slider/ticks-customization-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/slider/ticks-customization-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}

@@ -3,7 +3,7 @@
 import { DashboardLayout } from '@syncfusion/ej2-layouts';
 import { Button } from '@syncfusion/ej2-buttons';
 
-// initialize dashboardlayout component
+// initialize Dashboard Layout control
 let dashboard: DashboardLayout = new DashboardLayout({
     cellSpacing: [10, 10],
     allowFloating: false,
@@ -13,7 +13,7 @@ let dashboard: DashboardLayout = new DashboardLayout({
     { 'sizeX': 2, 'sizeY': 2, 'row': 2, 'col': 2, content: '<div class="content">1</div>' },
     { 'sizeX': 2, 'sizeY': 2, 'row': 3, 'col': 4, content: '<div class="content">2</div>' }]
 });
-// render initialized dashboardlayout
+// render initialized Dashboard Layout
 dashboard.appendTo('#dashboard_default');
 
 let resetPanels = dashboard.serialize();

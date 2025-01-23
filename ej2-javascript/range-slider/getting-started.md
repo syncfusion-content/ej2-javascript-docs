@@ -50,7 +50,7 @@ Add the div element with the id attribute `#slider` inside the body tag in your 
 <html lang="en">
 
 <head>
-    <title>Essential JS 2 Slider control</title>
+    <title>Essential JS 2 Range Slider control</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <meta name="description" content="Essential JS 2" />
@@ -98,7 +98,7 @@ import { Slider } from '@syncfusion/ej2-inputs';
 // Initialization of Slider control
 let slider: Slider = new Slider();
 
-// Render initialized Slider
+// Render initialized Range Slider Control
 slider.appendTo('#slider');
 
 ```

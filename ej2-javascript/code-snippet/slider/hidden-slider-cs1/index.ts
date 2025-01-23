@@ -1,7 +1,4 @@
-
-
-
-import { Slider, SliderChangeEventArgs } from '@syncfusion/ej2-inputs';
+import { Slider, SliderTooltipEventArgs, SliderTickEventArgs } from '@syncfusion/ej2-inputs';
 import { Button } from '@syncfusion/ej2-buttons';
 
 // Initialize the Button component.
@@ -9,10 +6,10 @@ let button: Button = new Button({ content: 'Button' });
 // Render initialized button.
 button.appendTo('#element');
 
-// Initialize Slider Component
+// Initialize Range Slider Control
 let defaultObj: Slider = new Slider({
     // Set slider minimum and maximum values
-    // new Date(Year, Month, day, hours, minutes, seconds, millseconds)
+    // new Date(Year, Month, day, hours, minutes, seconds, milliseconds)
     min: new Date(2013, 6, 13, 11).getTime(), max: new Date(2013, 6, 13, 17).getTime(),
     // 3600000 milliseconds = 1 Hour
     step: 3600000,
@@ -28,7 +25,7 @@ let defaultObj: Slider = new Slider({
     },
     // Bind ticks event for custom formatting
     renderingTicks: renderingTicksHandler,
-    // Initialize ticks with placement, largestep, smallstep
+    // Initialize ticks with placement, largeStep, smallStep
     ticks: {
         placement: 'After',
         // 2 * 3600000 milliseconds = 2 Hour
@@ -57,7 +54,7 @@ function tooltipChangeHandler(args: SliderTooltipEventArgs): void {
         firstPart = new Date(Number(firstPart)).toLocaleTimeString('en-us', custom);
         secondPart = new Date(Number(secondPart)).toLocaleTimeString('en-us', custom);
     } else {
-        args.text =  new Date(Number(args.text)).toLocaleTimeString('en-us', custom);
+        args.text = new Date(Number(args.text)).toLocaleTimeString('en-us', custom);
     }
 }
 
@@ -73,11 +70,11 @@ function renderingTicksHandler(args: SliderTickEventArgs): void {
 }
 
 //Visible slider by clicking the button
-document.getElementById('element').onclick = function () {
+document.querySelector('#element')?.addEventListener('click', () => {
     let slider = document.getElementById("case");
-    let ticks = document.getElementById("slider");
-    slider.style.display = "block";
+    let ticks: any = document.getElementById("slider");
+    if (slider) {
+        slider.style.display = "block";
+    }
     ticks.ej2_instances[0].refresh();
-};
-
-
+});

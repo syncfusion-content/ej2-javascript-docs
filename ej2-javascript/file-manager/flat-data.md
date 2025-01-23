@@ -1,7 +1,7 @@
 ---
 layout: post
-title: FlatData in ##Platform_Name## File manager control | Syncfusion
-description: Learn here all about FlatData in Syncfusion ##Platform_Name## File manager control of Syncfusion Essential JS 2 and more.
+title: FlatData in ##Platform_Name## File Manager control | Syncfusion
+description: Learn here all about FlatData in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: FlatData 
 publishingplatform: ##Platform_Name##
@@ -11,21 +11,21 @@ domainurl: ##DomainURL##
 
 # Rendering Flat JSON Data in the ##Platform_Name## File Manager Control
 
-The File Manager uses a flat data object as an array of JavaScript objects for rendering, eliminating the need to define [ajaxSettings](https://ej2.syncfusion.com/documentation/api/file-manager/#ajaxsettings) url. To load a folder data as an array of JavaScript objects, use the File Manager component's [fileSystemData](https://ej2.syncfusion.com/documentation/api/file-manager/#filesystemdata) property with a type of [fileData](https://ej2.syncfusion.com/documentation/api/file-manager/fileData/) interface. This means you no longer need to use a separate service provider, as you can integrate services like Google, Amazon, Azure, and others directly into your JavaScript code using the FileManager's action events. For example, you can integrate Google Drive by following the [Google Drive API Quickstart guide for JavaScript](https://developers.google.com/drive/api/quickstart/js).
+The File Manager uses a flat data object as an array of JavaScript objects for rendering, eliminating the need to define [ajaxSettings](../api/file-manager/#ajaxsettings) url. To load a folder data as an array of JavaScript objects, use the File Manager control's [fileSystemData](../api/file-manager/#filesystemdata) property with a type of [fileData](../api/file-manager/fileData/) interface. This means you no longer need to use a separate service provider, as you can integrate services like Google, Amazon, Azure, and others directly into your JavaScript code using the FileManager's action events. For example, you can integrate Google Drive by following the [Google Drive API Quickstart guide for JavaScript](https://developers.google.com/drive/api/quickstart/js).
 
 **Event Information**
 
 Event Name | Description
  ---  | ---
-[beforeDelete](https://ej2.syncfusion.com/documentation/api/file-manager/#beforedelete) | This event is triggered before the deletion of a file or folder occurs. It can be utilized to prevent the deletion of specific files or folders. Any actions, such as displaying a spinner for deletion, can be implemented here.
-[delete](https://ej2.syncfusion.com/documentation/api/file-manager/#delete) | DeleteEventArgs | path, itemData, cancel. | This event is triggered after the file or folder is deleted successfully. The deleted file or folder details can be retrieved here. Additionally, custom elements' visibility can be managed here based on the application's use case.
-[beforeFolderCreate](https://ej2.syncfusion.com/documentation/api/file-manager/#beforefoldercreate) | This event is triggered before a folder is created. It allows for the restriction of folder creation based on the application's use case.
-[folderCreate](https://ej2.syncfusion.com/documentation/api/file-manager/#foldercreate) | This event is triggered when a folder is successfully created. It provides an opportunity to retrieve details about the newly created folder.
-[search](https://ej2.syncfusion.com/documentation/api/file-manager/#search) | This event is triggered when a search action occurs in the search bar of the File Manager component. It triggers each character entered in the input during the search process.
-[beforeRename](https://ej2.syncfusion.com/documentation/api/file-manager/#beforerename) | This event is triggered when a file or folder is about to be renamed. It allows for the restriction of the rename action for specific folders or files by utilizing the cancel option.
-[rename](https://ej2.syncfusion.com/documentation/api/file-manager/#rename) | This event is triggered when a file or folder is successfully renamed. It provides an opportunity to fetch details about the renamed file.
-[beforeMove](https://ej2.syncfusion.com/documentation/api/file-manager/#beforemove) | This event is triggered when a file or folder begins to move from its current path through a copy/cut and paste action.
-[move](https://ej2.syncfusion.com/documentation/api/file-manager/#move) | This event is triggered when a file or folder is pasted into the destination path.
+[beforeDelete](../api/file-manager/#beforedelete) | This event is triggered before the deletion of a file or folder occurs. It can be utilized to prevent the deletion of specific files or folders. Any actions, such as displaying a spinner for deletion, can be implemented here.
+[delete](../api/file-manager/#delete) | DeleteEventArgs | path, itemData, cancel. | This event is triggered after the file or folder is deleted successfully. The deleted file or folder details can be retrieved here. Additionally, custom elements' visibility can be managed here based on the application's use case.
+[beforeFolderCreate](../api/file-manager/#beforefoldercreate) | This event is triggered before a folder is created. It allows for the restriction of folder creation based on the application's use case.
+[folderCreate](../api/file-manager/#foldercreate) | This event is triggered when a folder is successfully created. It provides an opportunity to retrieve details about the newly created folder.
+[search](../api/file-manager/#search) | This event is triggered when a search action occurs in the search bar of the File Manager control. It triggers each character entered in the input during the search process.
+[beforeRename](../api/file-manager/#beforerename) | This event is triggered when a file or folder is about to be renamed. It allows for the restriction of the rename action for specific folders or files by utilizing the cancel option.
+[rename](../api/file-manager/#rename) | This event is triggered when a file or folder is successfully renamed. It provides an opportunity to fetch details about the renamed file.
+[beforeMove](../api/file-manager/#beforemove) | This event is triggered when a file or folder begins to move from its current path through a copy/cut and paste action.
+[move](../api/file-manager/#move) | This event is triggered when a file or folder is pasted into the destination path.
 
 ## Local data
 
@@ -42,6 +42,9 @@ To render the root-level folder, specify the `parentId` as null, or there is no 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/flat-data-cs/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/flat-data-cs/index.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/file-manager/flat-data-cs" %}
@@ -55,6 +58,9 @@ To render the root-level folder, specify the `parentId` as null, or there is no 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/flat-data-cs/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/flat-data-cs/index.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/file-manager/flat-data-cs" %}
@@ -62,13 +68,13 @@ To render the root-level folder, specify the `parentId` as null, or there is no 
 
 ## Rendering Flat JSON Data from Google service
 
-In the following topic, we can learn about reading files from Google API using the File Manager's action events. This eliminates the need to define [ajaxSettings](https://ej2.syncfusion.com/documentation/api/file-manager/#ajaxsettings) url.
+In the following topic, we can learn about reading files from Google API using the File Manager's action events. This eliminates the need to define [ajaxSettings](../api/file-manager/#ajaxsettings) url.
 
-These events enable you to access essential item details from the event argument. To perform file operation corresponding to your service, use the `cancel` property in File Manager's action event and customize the [fileSystemData](https://ej2.syncfusion.com/documentation/api/file-manager/#filesystemdata) based on your current service data.
+These events enable you to access essential item details from the event argument. To perform file operation corresponding to your service, use the `cancel` property in File Manager's action event and customize the [fileSystemData](../api/file-manager/#filesystemdata) based on your current service data.
 
 The example retrieves the google drive file details as Flat data object and handle the read response from source by updating `fileSystemData` property with retrieved data.
 
-To set up File Manager component with google service, create a client ID and API key for your google account. To learn more about generating the client credentials from the from Google API Console, refer to this [link](https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow).
+To set up File Manager control with google service, create a client ID and API key for your google account. To learn more about generating the client credentials from the from Google API Console, refer to this [link](https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow).
 
 ```javascript
 async function fetchData() {
@@ -156,7 +162,7 @@ async function createFlatData(files) {
 
 ### Delete action
 
-To enable the delete operation in the File Manager component with Google services, you can use the [beforeDelete](https://ej2.syncfusion.com/documentation/api/file-manager/#beforedelete) event. By setting the `cancel` property to `true` in the `beforeDelete` event, you can prevent the default delete action of the File Manager component. Then, you can make a Google API request with the help of event argument to delete the file from Google Drive. Additionally, to update the `fileSystemData` property with the current Google Drive data, you can call the `fetchData` method in the `gapi` success callback. This ensures that the File Manager component remains synchronized with the Google Drive data during the delete operation.
+To enable the delete operation in the File Manager control with Google services, you can use the [beforeDelete](../api/file-manager/#beforedelete) event. By setting the `cancel` property to `true` in the `beforeDelete` event, you can prevent the default delete action of the File Manager control. Then, you can make a Google API request with the help of event argument to delete the file from Google Drive. Additionally, to update the `fileSystemData` property with the current Google Drive data, you can call the `fetchData` method in the `gapi` success callback. This ensures that the File Manager control remains synchronized with the Google Drive data during the delete operation.
 
 Here is an example of how you can handle the delete operation using the `beforeDelete` event:
 
@@ -169,7 +175,7 @@ Here is an example of how you can handle the delete operation using the `beforeD
         gapi.client.drive.files.delete({
           fileId: item.originalID,
         }).then(function(response) {
-          // Success: load the updated Google Drive data within File Manager component.
+          // Success: load the updated Google Drive data within File Manager control.
           fetchData();
         }, function(error) {
           console.error('Error deleting folder:', error);
@@ -180,7 +186,7 @@ Here is an example of how you can handle the delete operation using the `beforeD
 
 ### Copy action
 
-To enable the copy operation in the File Manager component with Google services, you can use the [beforeMove](https://ej2.syncfusion.com/documentation/api/file-manager/#beforeMove) event. The `isCopy` property in the event argument in `true` for copy operation. By setting the `cancel` property to `true` in the `beforeMove` event, you can prevent the default copy action of the File Manager component. Then, you can make a Google API request with the help of event argument to copy the file from Google Drive. Additionally, to update the `fileSystemData` property with the current Google Drive data, you can call the `fetchData` method in the `gapi` success callback. This ensures that the File Manager component remains synchronized with the Google Drive data during the copy operation.
+To enable the copy operation in the File Manager control with Google services, you can use the [beforeMove](../api/file-manager/#beforeMove) event. The `isCopy` property in the event argument in `true` for copy operation. By setting the `cancel` property to `true` in the `beforeMove` event, you can prevent the default copy action of the File Manager control. Then, you can make a Google API request with the help of event argument to copy the file from Google Drive. Additionally, to update the `fileSystemData` property with the current Google Drive data, you can call the `fetchData` method in the `gapi` success callback. This ensures that the File Manager control remains synchronized with the Google Drive data during the copy operation.
 
 Here is an example of how you can handle the copy operation using the `beforeMove` event:
 
@@ -241,7 +247,7 @@ Here is an example of how you can handle the copy operation using the `beforeMov
                                       fileId: copiedFile.result.id,
                                       resource: updatedProperties
                                   }).then(function(updatedFile) {
-                                    // Success: load the copied Google Drive folder data within File Manager component.
+                                    // Success: load the copied Google Drive folder data within File Manager control.
                                     fetchData();
                                   ...
       return;
@@ -307,7 +313,7 @@ Here is an example of how you can handle the copy operation using the `beforeMov
 
 ### Move action
 
-To enable the move operation in the File Manager component with Google services, you can use the [beforeMove](https://ej2.syncfusion.com/documentation/api/file-manager/#beforeMove) event. The `isCopy` property in the event argument in `false` for move operation. By setting the `cancel` property to `true` in the `beforeMove` event, you can prevent the default move action of the File Manager component. Then, you can make a Google API request with the help of event argument to move the file from Google Drive. Additionally, to update the `fileSystemData` property with the current Google Drive data, you can call the `fetchData` method in the `gapi` success callback. This ensures that the File Manager component remains synchronized with the Google Drive data during the move operation.
+To enable the move operation in the File Manager control with Google services, you can use the [beforeMove](../api/file-manager/#beforeMove) event. The `isCopy` property in the event argument in `false` for move operation. By setting the `cancel` property to `true` in the `beforeMove` event, you can prevent the default move action of the File Manager control. Then, you can make a Google API request with the help of event argument to move the file from Google Drive. Additionally, to update the `fileSystemData` property with the current Google Drive data, you can call the `fetchData` method in the `gapi` success callback. This ensures that the File Manager control remains synchronized with the Google Drive data during the move operation.
 
 Here is an example of how you can handle the move operation using the `beforeMove` event:
 
@@ -332,7 +338,7 @@ Here is an example of how you can handle the move operation using the `beforeMov
             addParents: newParentFolderId,
             removeParents: fileMetadata.parents[0],
         }).then(function(updatedFile) {
-            // Success: load the Google Drive moved file data within File Manager component.
+            // Success: load the Google Drive moved file data within File Manager control.
             fetchData();
         }, function(error) {
             console.error('Error moving file:', error);
@@ -346,7 +352,7 @@ Here is an example of how you can handle the move operation using the `beforeMov
 
 ### Folder create action
 
-To enable the folder create operation in the File Manager component with Google services, you can use the [beforeFolderCreate](https://ej2.syncfusion.com/documentation/api/file-manager/#beforeFolderCreate) event. By setting the `cancel` property to `true` in the `beforeFolderCreate` event, you can prevent the default folder create action of the File Manager component. Then, you can make a Google API request with the help of event argument to create folder to Google Drive. Additionally, to update the `fileSystemData` property with the current Google Drive data, you can call the `fetchData` method in the `gapi` success callback. This ensures that the File Manager component remains synchronized with the Google Drive data during the folder creation operation.
+To enable the folder create operation in the File Manager control with Google services, you can use the [beforeFolderCreate](../api/file-manager/#beforeFolderCreate) event. By setting the `cancel` property to `true` in the `beforeFolderCreate` event, you can prevent the default folder create action of the File Manager control. Then, you can make a Google API request with the help of event argument to create folder to Google Drive. Additionally, to update the `fileSystemData` property with the current Google Drive data, you can call the `fetchData` method in the `gapi` success callback. This ensures that the File Manager control remains synchronized with the Google Drive data during the folder creation operation.
 
 Here is an example of how you can handle the folder creation operation using the `beforeFolderCreate` event:
 
@@ -367,7 +373,7 @@ Here is an example of how you can handle the folder creation operation using the
       if (resp.error) {
         console.error('Error:', resp.error.message);
       } else {
-        // success: load the newly created Google Drive data within File Manager component.
+        // success: load the newly created Google Drive data within File Manager control.
         fetchData();
       }
     });
@@ -376,7 +382,7 @@ Here is an example of how you can handle the folder creation operation using the
 
 ### Rename action
 
-To enable the rename operation in the File Manager component with Google services, you can use the [beforeRename](https://ej2.syncfusion.com/documentation/api/file-manager/#beforeRename) event. By setting the `cancel` property to `true` in the `beforeRename` event, you can prevent the default rename action of the File Manager component. Then, you can make a Google API request with the help of event argument to rename the file from Google Drive. Additionally, to update the `fileSystemData` property with the current Google Drive data, you can call the `fetchData` method in the `gapi` success callback. This ensures that the File Manager component remains synchronized with the Google Drive data during the rename operation.
+To enable the rename operation in the File Manager control with Google services, you can use the [beforeRename](../api/file-manager/#beforeRename) event. By setting the `cancel` property to `true` in the `beforeRename` event, you can prevent the default rename action of the File Manager control. Then, you can make a Google API request with the help of event argument to rename the file from Google Drive. Additionally, to update the `fileSystemData` property with the current Google Drive data, you can call the `fetchData` method in the `gapi` success callback. This ensures that the File Manager control remains synchronized with the Google Drive data during the rename operation.
 
 Here is an example of how you can handle the rename operation using the `beforeRename` event:
 
@@ -402,7 +408,7 @@ Here is an example of how you can handle the rename operation using the `beforeR
           fileId: foundFile.id,
           resource: metadata,
         }).then(function(updatedFile) {
-          // Success: load the renamed Google Drive data within File Manager component.
+          // Success: load the renamed Google Drive data within File Manager control.
           fetchData();
         }, function(error) {
           console.error('Error updating file:', error);
@@ -416,7 +422,7 @@ Here is an example of how you can handle the rename operation using the `beforeR
 
 ### Upload action
 
-To enable the upload operation in the File Manager component with Google services, you can use the [uploadListCreate](https://ej2.syncfusion.com/documentation/api/file-manager/#uploadListCreate) event. This event provides access to details of the file selected in the browser, including metadata such as the file `name`, `size`, and `content type`. Using the event argument, you can make a Google API request to upload the file to Google Drive. Additionally, to update the `fileSystemData` property with the current Google Drive data, you can call the `fetchData` method in the `gapi` success callback. This ensures that the File Manager component remains synchronized with the Google Drive data during the upload operation.
+To enable the upload operation in the File Manager control with Google services, you can use the [uploadListCreate](../api/file-manager/#uploadListCreate) event. This event provides access to details of the file selected in the browser, including metadata such as the file `name`, `size`, and `content type`. Using the event argument, you can make a Google API request to upload the file to Google Drive. Additionally, to update the `fileSystemData` property with the current Google Drive data, you can call the `fetchData` method in the `gapi` success callback. This ensures that the File Manager control remains synchronized with the Google Drive data during the upload operation.
 
 Here is an example of how you can handle the upload operation using the `uploadListCreate` event:
 
@@ -444,10 +450,10 @@ Here is an example of how you can handle the upload operation using the `uploadL
         args.element.getElementsByClassName("e-file-status")[0].innerText = "Upload Failed";
         args.element.getElementsByClassName("e-file-status")[0].classList.add("e-upload-fails");
       } else {
-        // Success: load the uploaded data within File Manager component.
+        // Success: load the uploaded data within File Manager control.
         args.element.getElementsByClassName("e-file-status")[0].innerText = "Upload successful";
         args.element.getElementsByClassName("e-file-status")[0].classList.add("e-upload-success");
-        // Success: load the updated Google Drive data within File Manager component.
+        // Success: load the updated Google Drive data within File Manager control.
         fetchData();
       }
     });
@@ -456,7 +462,7 @@ Here is an example of how you can handle the upload operation using the `uploadL
 
 ### Download action
 
-To enable the Download operatipon in the File Manager component with Google services, you can use the [beforeDownload](https://ej2.syncfusion.com/documentation/api/file-manager/#beforeDownload) event. This event provides access to details of the file selected in the File Manager. By setting the `cancel` property to `true` in the `beforeDownload` event, you can prevent the default delete action of the File Manager component. Then, you can make a Google API request with the help of event argument to Download the raw file from Google Drive.
+To enable the Download operatipon in the File Manager control with Google services, you can use the [beforeDownload](../api/file-manager/#beforeDownload) event. This event provides access to details of the file selected in the File Manager. By setting the `cancel` property to `true` in the `beforeDownload` event, you can prevent the default delete action of the File Manager control. Then, you can make a Google API request with the help of event argument to Download the raw file from Google Drive.
 
 ```javascript
   beforeDownload: function beforeDownload(args) {
@@ -560,7 +566,7 @@ To enable the Download operatipon in the File Manager component with Google serv
 
 ### Get image action
 
-To enable the image preview in the File Manager component with Google services, you can use the File Manager [fileSystemData](https://ej2.syncfusion.com/documentation/api/file-manager/#filesystemdata) property response with `imageUrl` field.
+To enable the image preview in the File Manager control with Google services, you can use the File Manager [fileSystemData](../api/file-manager/#filesystemdata) property response with `imageUrl` field.
 
 In the example, the File Manager retrieves the Google Drive file details as flat data and update the **imageUrl** field with Google Drive's file `thumbnailLink` at initial render.
 
@@ -598,4 +604,4 @@ In the example, the File Manager retrieves the Google Drive file details as flat
       ...
 ```
 
->Note: For a complete example on handling Google Drive file details as flat data in the File Manager component, view the example on [GitHub](https://github.com/SyncfusionExamples/javascript-filemanager-flat-data-with-cloud-service).
+>Note: For a complete example on handling Google Drive file details as flat data in the File Manager control, view the example on [GitHub](https://github.com/SyncfusionExamples/javascript-filemanager-flat-data-with-cloud-service).

@@ -120,7 +120,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
             <div id="filemanager"></div>
             <script>
               var hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
-              // initialize File Manager control
+              // initialize File Manager Control
               var filemanagerInstance = new ej.filemanager.FileManager({
                   ajaxSettings: {
                       url: hostUrl + 'api/FileManager/FileOperations'
@@ -189,7 +189,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
             <div id="filemanager"></div>
             <script>
               var hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
-              // initialize File Manager control
+              // initialize File Manager Control
               var filemanagerInstance = new ej.filemanager.FileManager({
                   ajaxSettings: {
                       url: hostUrl + 'api/FileManager/FileOperations'
@@ -221,7 +221,7 @@ To perform the download operation, initialize the `downloadUrl` property in a [a
 ```
 <script>
         var hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
-        // initialize File Manager control
+        // initialize File Manager Control
         var filemanagerInstance = new ej.filemanager.FileManager({
             ajaxSettings: {
                 url: hostUrl + 'api/FileManager/FileOperations',
@@ -240,7 +240,7 @@ To perform the upload operation, initialize the `uploadUrl` property in a [ajaxS
 ```
 <script>
         var hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
-        // initialize File Manager control
+        // initialize File Manager Control
         var filemanagerInstance = new ej.filemanager.FileManager({
             ajaxSettings: {
                 url: hostUrl + 'api/FileManager/FileOperations',
@@ -272,7 +272,7 @@ Basically, the File Manager control contains a context menu for performing file 
 var hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
 // inject feature modules of the File Manager
 ej.filemanager.FileManager.Inject(ej.filemanager.DetailsView,ej.filemanager.Toolbar,ej.filemanager.NavigationPane);
-// initialize File Manager control
+// initialize File Manager Control
 var filemanagerInstance = new ej.filemanager.FileManager({
     ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations',
@@ -299,7 +299,7 @@ The following example shows you the File Manager with all feature modules.
 
 ## Switching initial view of the File Manager
 
-The initial view of the File Manager can be changed to details or largeicons view with the help of [view](../api/file-manager/#view) property. By default, the File Manager will be rendered in large icons view.
+The initial view of the File Manager can be changed to details or large icons view with the help of [view](../api/file-manager/#view) property. By default, the File Manager will be rendered in large icons view.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -346,7 +346,7 @@ The current path of the File Manager can be specified initially or dynamically u
 var hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
 // inject feature modules of the File Manager
 ej.filemanager.FileManager.Inject(ej.filemanager.DetailsView,ej.filemanager.Toolbar,ej.filemanager.NavigationPane);
-// initialize File Manager control
+// initialize File Manager Control
 var filemanagerInstance = new ej.filemanager.FileManager({
     ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations',

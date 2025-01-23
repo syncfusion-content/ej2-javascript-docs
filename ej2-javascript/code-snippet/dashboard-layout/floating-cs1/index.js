@@ -1,4 +1,4 @@
-// initialize dashboardlayout component
+// initialize Dashboard Layout control
 var dashboard  = new ej.layouts.DashboardLayout({
     cellSpacing: [10, 10],
     allowFloating: false,
@@ -8,7 +8,7 @@ var dashboard  = new ej.layouts.DashboardLayout({
     {'sizeX': 2, 'sizeY': 2, 'row': 2,'col': 2, content:'<div class="content">1</div>'},
     {'sizeX': 2, 'sizeY': 2, 'row': 3, 'col': 4, content:'<div class="content">2</div>'}]
     });
-// render initialized dashboardlayout
+// render initialized Dashboard Layout
 dashboard.appendTo('#dashboard_default');
 
 var resetPanels = dashboard.serialize();

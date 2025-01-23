@@ -2,12 +2,12 @@
 
 import { DashboardLayout } from '@syncfusion/ej2-layouts';
 
-// initialize dashboardlayout component
+// initialize Dashboard Layout control
 let dashboard: DashboardLayout  = new DashboardLayout({
     cellSpacing: [10, 10],
     columns: 5
 });
-// render initialized dashboardlayout
+// render initialized Dashboard Layout
 dashboard.appendTo('#dashboard_inline');
 
 

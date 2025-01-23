@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## Achieve date format
 
-The date formatting can be achieved in `ticks` and `tooltip` using `renderingTicks` and `tooltipChange` events, respectively. The process of formatting is explained in the following sample.
+Date formatting can be achieved in `ticks` and `tooltip` using the `renderingTicks` and `tooltipChange` events, respectively. The process of formatting is explained in the following sample.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -50,7 +50,7 @@ The date formatting can be achieved in `ticks` and `tooltip` using `renderingTic
 
 ## Achieve time format
 
-The time formatting can be achieved in the same manner as date formatting using `renderingTicks` and `change` events. The process of time formatting is explained in the following sample.
+Time formatting can be achieved in the same manner as date formatting using the `renderingTicks` and `change` events. The process of time formatting is explained in the following sample.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -87,7 +87,7 @@ The time formatting can be achieved in the same manner as date formatting using 
 
 ## Customize numeric Value
 
-The numeric values can be formatted into different decimal digits or fixed number of whole numbers or to represent units. The numeric processing is demonstrated as follows.
+Numeric values can be formatted into different decimal digits, fixed numbers of whole numbers, or to represent units. The numeric processing is demonstrated as follows.
 
 {% if page.publishingplatform == "typescript" %}
 

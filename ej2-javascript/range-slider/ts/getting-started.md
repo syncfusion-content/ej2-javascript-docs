@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Range slider control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Range slider control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Range Slider control | Syncfusion
+description:  Checkout and learn about Getting started with ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Range slider control
+# Getting started in ##Platform_Name## Range Slider control
 
 This section explains how to create a simple Range Slider control and configure its available functionalities in TypeScript, using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
@@ -18,7 +18,7 @@ This section explains how to create a simple Range Slider control and configure 
 
 ## Dependencies
 
-The following list of dependencies are required to use the Slider control in your application.
+The following list of dependencies are required to use the Range Slider control in your application.
 
 ```javascript
 
@@ -67,7 +67,7 @@ npm install
 
 ## Import the Syncfusion CSS styles
 
-Combined CSS files are available in the Essential JS 2 package root folder. This can be referenced in the `~/src/styles/styles.css` file, as shown below: 
+Combined CSS files are available in the Essential JS 2 package root folder. This can be referenced in the `~/src/styles/styles.css` file, as shown below:
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -78,7 +78,7 @@ Combined CSS files are available in the Essential JS 2 package root folder. This
 {% endhighlight %}
 {% endtabs %}
 
-## Adding Slider to the project
+## Adding Range Slider to the project
 
 Add the div element with the id attribute `#slider` inside the body tag in your `index.html`.
 
@@ -91,7 +91,7 @@ Add the div element with the id attribute `#slider` inside the body tag in your 
 <html lang="en">
 
 <head>
-    <title>Essential JS 2 Slider control</title>
+    <title>Essential JS 2 Range Slider control</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <meta name="description" content="Essential JS 2" />
@@ -103,7 +103,7 @@ Add the div element with the id attribute `#slider` inside the body tag in your 
 <body>
     <div>
         <div class='wrap'>
-            <!--element which is going to render the Slider -->
+            <!--element which is going to render the Range Slider -->
              <div id="slider"></div>
         </div>
     </div>
@@ -123,7 +123,7 @@ Add the div element with the id attribute `#slider` inside the body tag in your 
 {% endhighlight %}
 {% endtabs %}
 
-Import the  Slider control into your `app.ts` and append it to `#slider`
+Import the  Range Slider control into your `app.ts` and append it to `#slider`
 `[src/app/app.ts]`
 
 {% tabs %}
@@ -131,10 +131,10 @@ Import the  Slider control into your `app.ts` and append it to `#slider`
 
 import { Slider } from '@syncfusion/ej2-inputs';
 
-// Initialization of Slider control
+// Initialization of Range Slider control
 let slider: Slider = new Slider();
 
-// Render initialized Slider
+// Render initialized Range Slider
 slider.appendTo('#slider');
 
 {% endhighlight %}
@@ -163,7 +163,7 @@ npm start
 {% include code-snippet/slider/getting-started-cs5/index.css %}
 {% endhighlight %}
 {% endtabs %}
-          
+
 {% previewsample "page.domainurl/code-snippet/slider/getting-started-cs5" %}
 
 ## See Also

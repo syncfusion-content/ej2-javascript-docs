@@ -1,10 +1,7 @@
-
-
-
 import { Slider } from '@syncfusion/ej2-inputs';
 
-// Initialize Slider control
- let sliderObj: Slider = new Slider({
+// Initialize Range Slider Control
+let sliderObj: Slider = new Slider({
     ticks: { placement: 'Before', largeStep: 20, smallStep: 5, showSmallTicks: true },
     tooltip: { placement: 'Before', isVisible: true, showOn: 'Always' },
     type: 'Range',
@@ -17,9 +14,5 @@ import { Slider } from '@syncfusion/ej2-inputs';
     // Slider current value
     value: [30, 70]
 });
-// Render initialized Slider
+// Render initialized Range Slider Control
 sliderObj.appendTo('#slider');
-
-
-
-

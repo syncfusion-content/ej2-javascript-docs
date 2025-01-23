@@ -63,7 +63,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
   </html>
 ```
 
-**Step 5:** Now, create a dashboard element to apply the `Essential JS 2 DashboardLayout` control in the `index.html` by using following code.
+**Step 5:** Now, create a dashboard element to apply the `Essential JS 2 Dashboard Layout` control in the `index.html` by using following code.
 
 ```html
     <!DOCTYPE html>
@@ -83,7 +83,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
         <div id="element">
             <!-- Add the HTML <div> element  -->
             <div style="margin: 50px;">
-                <!--element which is going to render the dashboardlayout-->
+                <!--element which is going to render the Dashboard Layout-->
                 <div id="dashboard_inline">
                     <div id="one" class="e-panel" data-row="0" data-col="0" data-sizeX="1" data-sizeY="1">
                         <div class="e-panel-container">
@@ -124,12 +124,12 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
             </div>
         </div>
         <script>
-            //Initialize DashboardLayout control
+            //Initialize Dashboard Layout control
             var dashboard = new ej.layouts.DashboardLayout({
                 cellSpacing: [10, 10],
                 columns: 5
             });
-            //Render initialized DashboardLayout control
+            //Render initialized Dashboard Layout control
             dashboard.appendTo('#element');
         </script>
         <style>
@@ -149,11 +149,11 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
     </html>
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential JS 2 DashboardLayout** control.
+**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential JS 2 Dashboard Layout** control.
 
 ### Using CDN link for script and style reference
 
-The below example shows the rendering of DashboardLayout control using CDN link for script and style reference
+The below example shows the rendering of Dashboard Layout control using CDN link for script and style reference
 
 * Setting the `panels` property using HTML attribute
 * Setting the `panels` property using script
@@ -172,7 +172,7 @@ The below example shows the rendering of DashboardLayout control using CDN link 
 **Example:**
 > Styles: [`https://cdn.syncfusion.com/ej2/ej2-layouts/styles/material.css`](https://cdn.syncfusion.com/ej2/ej2-layouts/styles/material.css)
 
-**Step 3:** Create an HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `dashboardlayout` element and initiate the `Essential JS 2 DashboardLayout` control in the index.html by using the following code.
+**Step 3:** Create an HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `dashboardlayout` element and initiate the `Essential JS 2 Dashboard Layout` control in the index.html by using the following code.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -182,18 +182,18 @@ The below example shows the rendering of DashboardLayout control using CDN link 
         
 {% previewsample "page.domainurl/code-snippet/dashboard-layout/es5-getting-started-cs1" %}
 
-**Step 4:** Now, run the `index.html` in the web browser, it will render the `Essential JS 2 DashboardLayout` control.
+**Step 4:** Now, run the `index.html` in the web browser, it will render the `Essential JS 2 Dashboard Layout` control.
 
 #### Setting the `panels` property using script
 
-You can render the DashboardLayout control by using the **panels** property through script. Add the HTML div element for DashboardLayout into your `index.html` file.
+You can render the Dashboard Layout control by using the **panels** property through script. Add the HTML div element for Dashboard Layout into your `index.html` file.
 
 `[src/index.html]`
 
 ```
 <body>
     <div style="margin: 50px;">
-        <!--element which is going to render the DashboardLayout-->
+        <!--element which is going to render the Dashboard Layout-->
         <div id="element">
         </div>
 </body>
@@ -204,7 +204,7 @@ Now, render the panel property inside the `<script>` tag
 
 ```javascript
 
-// initialize dashboardlayout control
+// initialize Dashboard Layout control
 var dashboard  = new ej.layouts.DashboardLayout ({
     cellSpacing: [10, 10],
     columns: 5,
@@ -217,12 +217,12 @@ var dashboard  = new ej.layouts.DashboardLayout ({
     { "sizeX": 1, "sizeY": 1, "row": 2, "col": 3, content:'<div class="content">6</div>' }
     ]
 });
-// render initialized dashboardlayout
+// render initialized Dashboard Layout
 dashboard.appendTo('#element');
 
 ```
 
-The following example shows a basic DashboardLayout by using the `panels` property.
+The following example shows a basic Dashboard Layout by using the `panels` property.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}

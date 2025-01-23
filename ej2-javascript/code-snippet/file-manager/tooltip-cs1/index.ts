@@ -1,5 +1,3 @@
-
-
 import { FileManager, Toolbar, NavigationPane, DetailsView, FileLoadEventArgs } from '@syncfusion/ej2-filemanager';
 import { getValue, select } from '@syncfusion/ej2-base';
 import { Tooltip, TooltipEventArgs } from '@syncfusion/ej2-popups';
@@ -7,9 +5,9 @@ import { Tooltip, TooltipEventArgs } from '@syncfusion/ej2-popups';
 FileManager.Inject(Toolbar, NavigationPane, DetailsView)
 
 let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-// initialize file manager component
+// initialize File Manager control
 let fileObj: FileManager = new FileManager({
-  ajaxSettings: {
+    ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations',
         uploadUrl: hostUrl + 'api/FileManager/Upload',
         downloadUrl: hostUrl + 'api/FileManager/Download',
@@ -19,20 +17,21 @@ let fileObj: FileManager = new FileManager({
     fileLoad: (args: FileLoadEventArgs) => {
         //Native tooltip customization to display additonal information in new line
         let target: Element = args.element;
-        if (args.module==='DetailsView') {
+        if (args.module === 'DetailsView') {
             let element: Element = select('[title]', args.element);
             let title: string = getValue('name', args.fileDetails) +
                 '\n' + getValue('dateModified', args.fileDetails);
             element.setAttribute('title', title);
-        } else if (args.module==='LargeIconsView') {
+        } else if (args.module === 'LargeIconsView') {
             let title: string = getValue('name', args.fileDetails) +
                 '\n' + getValue('dateModified', args.fileDetails);
             target.setAttribute('title', title);
         }
-    }
+    },
+    height: '380px'
 });
 
-// render initialized FileManager
+// render initialized File Manager
 fileObj.appendTo('#filemanager');
 
 function addTooltip() {
@@ -95,5 +94,3 @@ function onTooltipBeforeRender(args: TooltipEventArgs) {
     }
     this.content = args.target.getAttribute('title') + '</br>' + description;
 }
-
-

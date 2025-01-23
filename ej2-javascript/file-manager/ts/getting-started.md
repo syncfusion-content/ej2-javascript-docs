@@ -127,7 +127,7 @@ Now, import the File Manager control to your `app.ts` and append to `#filemanage
 import { FileManager } from '@syncfusion/ej2-filemanager';
 
 let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-// initialize File Manager control
+// initialize File Manager Control
 let filemanagerInstance: FileManager = new FileManager({
     ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations'
@@ -178,7 +178,7 @@ To perform the download operation, initialize the `downloadUrl` property in a [a
 import { FileManager } from '@syncfusion/ej2-filemanager';
 
 let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-// initialize File Manager control
+// initialize File Manager Control
 let filemanagerInstance: FileManager = new FileManager({
     ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations',
@@ -202,7 +202,7 @@ To perform the upload operation, initialize the `uploadUrl` property in a [ajaxS
 import { FileManager } from '@syncfusion/ej2-filemanager';
 
 let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-// initialize File Manager control
+// initialize File Manager Control
 let filemanagerInstance: FileManager = new FileManager({
     ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations',
@@ -243,7 +243,7 @@ import { FileManager, Toolbar, NavigationPane, DetailsView } from '@syncfusion/e
 FileManager.Inject(Toolbar, NavigationPane, DetailsView)
 
 let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-// initialize File Manager control
+// initialize File Manager Control
 let filemanagerInstance: FileManager = new FileManager({
     ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations',
@@ -275,7 +275,7 @@ The following example shows you the File Manager with all feature modules.
 
 ## Switching initial view of the File Manager
 
-The initial view of the File Manager can be changed to details or largeicons view with the help of [view](../api/file-manager/#view) property. By default, the File Manager will be rendered in large icons view.
+The initial view of the File Manager can be changed to details or large icons view with the help of [view](../api/file-manager/#view) property. By default, the File Manager will be rendered in large icons view.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -306,7 +306,7 @@ The File Manager supports maintaining the control state on page reload. This can
           
 {% previewsample "page.domainurl/code-snippet/file-manager/persistence-cs1" %}
 
->**Note:** The files of the current folder opened in the File Manager can be refreshed programatically by calling [refreshFiles](../api/file-manager/#refreshfiles) method.
+>**Note:** The files of the current folder opened in the File Manager can be refreshed programmatically by calling [refreshFiles](../api/file-manager/#refreshfiles) method.
 
 ## Rendering control in right-to-left direction
 
@@ -330,14 +330,14 @@ The current path of the File Manager can be specified initially or dynamically u
 The following code snippet demonstrates specifying the current path in File Manager on rendering.
 
 {% tabs %}
-{% highlight ts tabtitle="app.ts" %}
+{% highlight ts tabtitle="index.ts" %}
 
 import { FileManager, Toolbar, NavigationPane, DetailsView } from '@syncfusion/ej2-filemanager';
 
 FileManager.Inject(Toolbar, NavigationPane, DetailsView)
 
 let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-// initialize File Manager control
+// initialize File Manager Control
 let filemanagerInstance: FileManager = new FileManager({
     ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations',

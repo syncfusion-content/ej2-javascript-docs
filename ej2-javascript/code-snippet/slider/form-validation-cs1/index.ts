@@ -1,11 +1,7 @@
-
-
-
 import { Slider } from '@syncfusion/ej2-inputs';
 import { FormValidator, FormValidatorModel } from '@syncfusion/ej2-inputs';
-import { Button } from '@syncfusion/ej2-buttons';
 
-// Initialize Slider component
+// Initialize Range Slider Control
 let SliderMinObj: Slider = new Slider({
   type: 'MinRange',
   value: 30,
@@ -33,7 +29,7 @@ function onMinChanged(args: any) {
   formMinObj.validate();
 }
 
-// Initialize Slider component
+// Initialize Range Slider Control
 let SliderMaxObj: Slider = new Slider({
   type: 'MinRange',
   value: 30,
@@ -61,7 +57,7 @@ function onMaxChanged(args: any) {
   formMaxObj.validate();
 }
 
-// Initialize Slider component
+// Initialize Range Slider Control
 let SliderValObj: Slider = new Slider({
   type: 'MinRange',
   value: 30,
@@ -89,7 +85,7 @@ function onValChanged(args: any) {
   formValObj.validate();
 }
 
-// Initialize Slider component
+// Initialize Range Slider Control
 let SliderRangeObj: Slider = new Slider({
   type: 'MinRange',
   value: 30,
@@ -117,7 +113,7 @@ function onRangeChanged(args: any) {
   formRangeObj.validate();
 }
 
-// Initialize Slider component
+// Initialize Range Slider Control
 let SliderCustomObj: Slider = new Slider({
   type: 'Range',
   value: [30, 70],
@@ -148,6 +144,3 @@ function onCustomChanged(args: any) {
 function validateRange(args: any) {
   return (SliderCustomObj.value as number[])[0] >= 40 && (SliderCustomObj.value as number[])[1] <= 80;
 }
-
-
-

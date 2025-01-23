@@ -1,7 +1,7 @@
 var hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
-// inject feature modules of the file manager
-ej.filemanager.FileManager.Inject(ej.filemanager.DetailsView,ej.filemanager.Toolbar,ej.filemanager.NavigationPane);
-// initialize File Manager component
+// inject feature modules of the File Manager
+ej.filemanager.FileManager.Inject(ej.filemanager.DetailsView, ej.filemanager.Toolbar, ej.filemanager.NavigationPane);
+// initialize File Manager control
 var filemanagerInstance = new ej.filemanager.FileManager({
     ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations',
@@ -16,14 +16,13 @@ var filemanagerInstance = new ej.filemanager.FileManager({
 filemanagerInstance.appendTo('#filemanager');
 
 // Click event for enable button
-document.getElementById("enable").onclick = function(args) {
+document.getElementById("enable").onclick = function (args) {
     // Enable new folder toolbar item
     filemanagerInstance.enableToolbarItems(["newfolder"]);
 }
 
 // Click event for disable button
-document.getElementById("disable").onclick = function(args) {
+document.getElementById("disable").onclick = function (args) {
     // Disable new folder toolbar item
     filemanagerInstance.disableToolbarItems(["newfolder"]);
 }
-

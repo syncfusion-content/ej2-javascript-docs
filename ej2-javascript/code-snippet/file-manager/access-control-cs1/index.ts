@@ -5,7 +5,7 @@ import { FileManager, Toolbar, NavigationPane, DetailsView, FileToolbarClickEven
 FileManager.Inject(Toolbar, NavigationPane, DetailsView)
 
 let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-// initialize File Manager component and add custom item to contextmenu
+// initialize File Manager control and add custom item to contextmenu
 let filemanagerInstance: FileManager = new FileManager({
     ajaxSettings: {
             url: hostUrl + 'api/FileManagerAccess/FileOperations',
@@ -16,7 +16,7 @@ let filemanagerInstance: FileManager = new FileManager({
     view: 'Details'
 });
 
-// render initialized FileManager
+// render initialized File Manager
 filemanagerInstance.appendTo('#filemanager');
 
 

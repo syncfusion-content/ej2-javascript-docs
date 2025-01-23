@@ -1,4 +1,4 @@
-// initialize dashboardlayout component
+// initialize Dashboard Layout control
 var dashboard  = new ej.layouts.DashboardLayout({
     cellSpacing: [10, 10],
     enableRtl: true,
@@ -11,6 +11,6 @@ var dashboard  = new ej.layouts.DashboardLayout({
     {'sizeX': 1, 'sizeY': 1, 'row': 2, 'col': 2, header: '<div>Panel 5</div>', content:'<div class="content"></div>'},
     {'sizeX': 1, 'sizeY': 1, 'row': 2, 'col': 3, header: '<div>Panel 6</div>', content:'<div class="content"></div>'}]
     });
-// render initialized dashboardlayout
+// render initialized Dashboard Layout
 dashboard.appendTo('#dashboard_layout');
 

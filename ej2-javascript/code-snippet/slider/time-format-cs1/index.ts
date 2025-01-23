@@ -1,10 +1,7 @@
-
-
-
 import { Slider, SliderTickEventArgs, SliderTooltipEventArgs } from '@syncfusion/ej2-inputs';
 
-// Initialize slider control
- let timeObj: Slider = new Slider({
+// Initialize Range Slider Control
+let timeObj: Slider = new Slider({
     /**
      * Initialize the min and max values of the slider using JavaScript date functions
      * new Date (Year, Month, day, hours, minutes, seconds, milliseconds)
@@ -17,7 +14,7 @@ import { Slider, SliderTickEventArgs, SliderTooltipEventArgs } from '@syncfusion
     step: 3600000,
     tooltipChange: function (args: SliderTooltipEventArgs) {
         let totalMiliSeconds = Number(args.text);
-        let custom = { hour: '2-digit', minute: '2-digit' };
+        let custom: Intl.DateTimeFormatOptions = { hour: '2-digit', minute: '2-digit' };
         args.text = new Date(totalMiliSeconds).toLocaleTimeString("en-us", custom);
     },
     tooltip: {
@@ -26,7 +23,7 @@ import { Slider, SliderTickEventArgs, SliderTooltipEventArgs } from '@syncfusion
     },
     renderingTicks: function (args: SliderTickEventArgs) {
         let totalMiliSeconds = Number(args.value);
-        let custom = { hour: '2-digit', minute: '2-digit' };
+        let custom: Intl.DateTimeFormatOptions = { hour: '2-digit', minute: '2-digit' };
         args.text = new Date(totalMiliSeconds).toLocaleTimeString("en-us", custom);
     },
     ticks: {
@@ -36,8 +33,5 @@ import { Slider, SliderTickEventArgs, SliderTooltipEventArgs } from '@syncfusion
     },
     showButtons: true
 });
-// Render initialized slider
+// Render initialized Range Slider Control
 timeObj.appendTo('#slider');
-
-
-

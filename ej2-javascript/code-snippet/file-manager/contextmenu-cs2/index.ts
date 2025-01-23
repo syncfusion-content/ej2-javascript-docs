@@ -1,11 +1,9 @@
-
-
 import { FileManager, Toolbar, NavigationPane, DetailsView, MenuClickEventArgs, MenuOpenEventArgs } from '@syncfusion/ej2-filemanager';
 
 FileManager.Inject(Toolbar, NavigationPane, DetailsView)
 
 let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-// initialize File Manager component and add custom item to contextmenu
+// initialize File Manager control and add custom item to contextmenu
 let filemanagerInstance: FileManager = new FileManager({
     ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations',
@@ -15,20 +13,21 @@ let filemanagerInstance: FileManager = new FileManager({
     },
     // Custom menu item added to context menu
     contextMenuSettings: {
-     file: ["Custom", "Open", "|", "Delete", "Download", "Rename", "|", "Details"],
-     folder: ["Custom", "Open", "|", "Delete", "Download", "Rename", "|", "Details"],
-     layout: ["Custom", "SortBy", "View", "Refresh", "|", "NewFolder", "Upload", "|", "Details", "|", "SelectAll"],
-     visible: true
+        file: ["Custom", "Open", "|", "Delete", "Download", "Rename", "|", "Details"],
+        folder: ["Custom", "Open", "|", "Delete", "Download", "Rename", "|", "Details"],
+        layout: ["Custom", "SortBy", "View", "Refresh", "|", "NewFolder", "Upload", "|", "Details", "|", "SelectAll"],
+        visible: true
     },
     menuOpen: menuOpen,
-    menuClick: menuClick
+    menuClick: menuClick,
+    height: '380px'
 });
 
 // Icon added to custom menu item
 function menuOpen(args: MenuOpenEventArgs) {
-    for(let i: number = 0; i<args.items.length; i++) {
-        if(args.items[i].id === this.element.id +'_cm_custom') {
-            args.items[i].iconCss= 'e-icons e-fe-tick';
+    for (let i: number = 0; i < args.items.length; i++) {
+        if (args.items[i].id === this.element.id + '_cm_custom') {
+            args.items[i].iconCss = 'e-icons e-fe-tick';
         }
     }
 }
@@ -40,7 +39,5 @@ function menuClick(args: MenuClickEventArgs) {
     }
 }
 
-// render initialized FileManager
+// render initialized File Manager
 filemanagerInstance.appendTo('#filemanager');
-
-

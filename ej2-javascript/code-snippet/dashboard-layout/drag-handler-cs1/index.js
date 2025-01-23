@@ -1,15 +1,15 @@
-// initialize dashboardlayout component
+// initialize Dashboard Layout control
 var dashboard  = new ej.layouts.DashboardLayout({
     cellSpacing: [10, 10],
     columns: 6,
     draggableHandle: '.e-panel-header',
-    panels: [{'id':'Panel1', 'sizeX': 3, 'sizeY': 2,'row': 0, 'col': 0, header:'<div class="header"> Product usage ratio </div><span class="handler e-icons burg-icon"></span>', content:'<div id="pie"><div>'},
-    {'id':'Panel2', 'sizeX': 3, 'sizeY': 2,'row': 0, 'col': 3, header:'<div class="header"> Last year Sales Comparison </div> <span class="handler e-icons burg-icon"></span>', content:'<div id="column"><div>' },
-    {'id':'Panel3', 'sizeX': 3, 'sizeY': 2,'row': 0, 'col': 3,  header:'<div class="header"> Mobile browsers usage </div><span class="handler e-icons burg-icon"></span>', content:'<div id="pie1"><div>' },
-    {'id':'Panel4', 'sizeX': 3, 'sizeY': 2,'row': 1, 'col': 0, header:'<div class="header"> Sales increase percentage </div><span class="handler e-icons burg-icon"></span>', content:'<div id="line"><div>' }
+    panels: [{'id':'Panel1', 'sizeX': 3, 'sizeY': 2,'row': 0, 'col': 0, header:'<div class="header"> Product usage ratio </div><span class="handler e-icons e-menu"></span>', content:'<div id="pie"><div>'},
+    {'id':'Panel2', 'sizeX': 3, 'sizeY': 2,'row': 0, 'col': 3, header:'<div class="header"> Last year Sales Comparison </div> <span class="handler e-icons e-menu"></span>', content:'<div id="column"><div>' },
+    {'id':'Panel3', 'sizeX': 3, 'sizeY': 2,'row': 0, 'col': 3,  header:'<div class="header"> Mobile browsers usage </div><span class="handler e-icons e-menu"></span>', content:'<div id="pie1"><div>' },
+    {'id':'Panel4', 'sizeX': 3, 'sizeY': 2,'row': 1, 'col': 0, header:'<div class="header"> Sales increase percentage </div><span class="handler e-icons e-menu"></span>', content:'<div id="line"><div>' }
     ]
 });
-// render initialized dashboardlayout
+// render initialized Dashboard Layout
 dashboard.appendTo('#dashboard_default');
 
 var chartData = [

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Show slider from hidden state in ##Platform_Name## Range slider control | Syncfusion
-description: Learn here all about Show slider from hidden state in Syncfusion ##Platform_Name## Range slider control of Syncfusion Essential JS 2 and more.
+title: Show slider from hidden state in ##Platform_Name## Range Slider control | Syncfusion
+description: Learn here all about showing the slider from a hidden state in the Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Show slider from hidden state 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Show slider from hidden state in ##Platform_Name## Range slider control
+# Show slider from hidden state in ##Platform_Name## Range Slider control
 
-This section demonstrates how-to render the Slider component in hidden state and make it visible in button click. We can initialize Slider in hidden state by setting the display as none.
+This section demonstrates how to render the Range Slider control in a hidden state and make it visible upon a button click. You can initialize the Range Slider in a hidden state by setting the display property to none.
 
-In the sample, by clicking on the button, we can make the Slider visible from hidden state, and we must also call the [`refresh`](../../api/slider/#refresh) method of the Slider to render it properly based on its original dimensions.
+In the sample, clicking the button will make the Range Slider visible from its hidden state, and you must also call the [`refresh`](../../api/slider/#refresh) method of the Range Slider to render it properly based on its original dimensions.
 
 {% if page.publishingplatform == "typescript" %}
 

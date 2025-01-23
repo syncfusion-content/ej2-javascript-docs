@@ -2,16 +2,16 @@
 
 import { DashboardLayout } from '@syncfusion/ej2-layouts';
 
-// initialize dashboardlayout component
+// initialize Dashboard Layout control
 let dashboard: DashboardLayout = new DashboardLayout({
     cellSpacing: [10, 10],
     allowResizing: true,
     columns: 5,
-      //Dashboard Layout's resizestart event
+      //Dashboard Layout's resizeStart event
     resizeStart: onResizeStart,
     //Dashboard Layout's resize event
     resize: onResize,
-    //Dashboard Layout's resizestop event
+    //Dashboard Layout's resizeStop event
     resizeStop: onResizeStop,
     resizableHandles: ['e-south-east','e-east','e-west','e-north','e-south'],
     panels: [{ 'sizeX': 1, 'sizeY': 1, 'row': 0, 'col': 0, content: '<div class="content">0</div>' },
@@ -22,9 +22,9 @@ let dashboard: DashboardLayout = new DashboardLayout({
     { 'sizeX': 1, 'sizeY': 1, 'row': 2, 'col': 2, content: '<div class="content">5</div>' },
     { 'sizeX': 1, 'sizeY': 1, 'row': 2, 'col': 3, content: '<div class="content">6</div>' }]
 });
-// render initialized dashboardlayout
+// render initialized Dashboard Layout
 dashboard.appendTo('#dashboard_default');
-//Dashboard Layout's resizestart event function
+//Dashboard Layout's resizeStart event function
 function onResizeStart(args: any) {
     console.log("Resize start");
 }
@@ -34,7 +34,7 @@ function onResize(args: any) {
     console.log("Resizing");
 }
 
-//Dashboard Layout's resizestop event function
+//Dashboard Layout's resizeStop event function
 function onResizeStop(args: any) {
     console.log("Resize stop");
 }

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize the bar in ##Platform_Name## Range slider control | Syncfusion
-description: Learn here all about Customize the bar in Syncfusion ##Platform_Name## Range slider control of Syncfusion Essential JS 2 and more.
+title: Customize the bar in ##Platform_Name## Range Slider control | Syncfusion
+description: Learn here all about Customize the bar in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Customize the bar 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize the bar in ##Platform_Name## Range slider control
+# Customize the bar in ##Platform_Name## Range Slider control
 
-Slider appearance can be customized through CSS. By overriding the slider CSS classes, you can customize the slider bar. The slider bar can be customized with different themes. By default, slider have class name `e-slider-track` for bar. The class can be overridden with our own color values like the following code snippet.
+The appearance of the Range Slider control can be customized through CSS. By overriding the slider CSS classes, you can customize the slider bar with different themes. By default, the slider has a class name `e-slider-track` for its bar. This class can be overridden with your own color values, as shown in the following code snippet:
 
 ```
 .e-control.e-slider .e-slider-track .e-range {
@@ -20,28 +20,6 @@ Slider appearance can be customized through CSS. By overriding the slider CSS cl
 ```
 
 You can also apply background color for a certain range depending upon slider values, using change event.
-
-```ts
-change: (args: SliderChangeEventArgs) => {
-        if (args.value > 0 && args.value <= 25) {
-            // Change handle and range bar color to green when
-            (sliderHandle as HTMLElement).style.backgroundColor = 'green';
-            (sliderTrack as HTMLElement).style.backgroundColor = 'green';
-        } else if (args.value > 25 && args.value <= 50) {
-            // Change handle and range bar color to royal blue
-            (sliderHandle as HTMLElement).style.backgroundColor = 'royalblue';
-            (sliderTrack as HTMLElement).style.backgroundColor = 'royalblue';
-        } else if (args.value > 50 && args.value <= 75) {
-            // Change handle and range bar color to dark orange
-            (sliderHandle as HTMLElement).style.backgroundColor = 'darkorange';
-            (sliderTrack as HTMLElement).style.backgroundColor = 'darkorange';
-        } else if (args.value > 75 && args.value <= 100) {
-            // Change handle and range bar color to red
-            (sliderHandle as HTMLElement).style.backgroundColor = 'red';
-            (sliderTrack as HTMLElement).style.backgroundColor = 'red';
-        }
-    }
-```
 
 {% if page.publishingplatform == "typescript" %}
 

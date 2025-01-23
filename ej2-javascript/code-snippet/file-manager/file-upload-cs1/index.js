@@ -1,15 +1,15 @@
 var hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
-// inject feature modules of the file manager
+// inject feature modules of the File Manager
 ej.filemanager.FileManager.Inject(ej.filemanager.DetailsView,ej.filemanager.Toolbar,ej.filemanager.NavigationPane);
-// Initialize the Uploader component
+// Initialize the Uploader Control
 var uploadObject = new ej.inputs.Uploader({});
 uploadObject.appendTo('#fileupload');
 
-// Initialize the Button component
+// Initialize the Button Control
 var btnObj = new ej.buttons.Button({});
 btnObj.appendTo('#openBtn');
 
-// Initialize the Dialog component
+// Initialize the Dialog Control
 var dialogObj = new ej.popups.Dialog({
     header: 'Select a file',
     showCloseIcon: true,
@@ -25,7 +25,7 @@ dialogObj.appendTo('#dialog');
 
 var contextmenuItems = ['Open', '|', 'Cut', 'Copy', 'Delete', 'Rename', '|', 'Details'];
 
-// Initialize the FileManager component
+// Initialize the FileManager Control
 var filemanagerInstance = new ej.filemanager.FileManager({
     ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations',
@@ -40,7 +40,8 @@ var filemanagerInstance = new ej.filemanager.FileManager({
         file: contextmenuItems,
         folder: contextmenuItems
     },
-    fileOpen : onFileOpen
+    fileOpen : onFileOpen,
+    height: '380px'
 });
 filemanagerInstance.appendTo('#filemanager');
 

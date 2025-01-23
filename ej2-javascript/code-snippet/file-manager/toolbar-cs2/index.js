@@ -1,7 +1,7 @@
 var hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
-// inject feature modules of the file manager
-ej.filemanager.FileManager.Inject(ej.filemanager.DetailsView,ej.filemanager.Toolbar,ej.filemanager.NavigationPane);
-// initialize File Manager component
+// inject feature modules of the File Manager
+ej.filemanager.FileManager.Inject(ej.filemanager.DetailsView, ej.filemanager.Toolbar, ej.filemanager.NavigationPane);
+// initialize File Manager control
 var filemanagerInstance = new ej.filemanager.FileManager({
     ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations',
@@ -10,8 +10,8 @@ var filemanagerInstance = new ej.filemanager.FileManager({
         downloadUrl: hostUrl + 'api/FileManager/Download'
     },
     //Custom item added along with default item
-    toolbarItems: [{ text: 'Create folder' , name: 'NewFolder', prefixIcon: 'e-plus', tooltipText: 'Create folder' }, 
-    { name: 'Upload' },   
+    toolbarItems: [{ text: 'Create folder', name: 'NewFolder', prefixIcon: 'e-plus', tooltipText: 'Create folder' },
+    { name: 'Upload' },
     { name: 'SortBy' },
     { name: 'Refresh' },
     { name: 'Cut' },
@@ -23,19 +23,20 @@ var filemanagerInstance = new ej.filemanager.FileManager({
     { template: '<input id="checkbox" type="checkbox"/>', name: 'Select' },
     { name: 'Selection' },
     { name: 'View' },
-    { name: 'Details' }]
+    { name: 'Details' }],
+    height: '380px'
 });
 
 // render initialized File Manager
 filemanagerInstance.appendTo('#filemanager');
 
 // Render Checkbox in template
-var checkbox = new ej.buttons.CheckBox({ label: 'Select All', checked: false, change: onChange },'#checkbox');
+var checkbox = new ej.buttons.CheckBox({ label: 'Select All', checked: false, change: onChange }, '#checkbox');
 
 // on checkbox change select all or clear selection
 function onChange(args) {
     if (args.checked) {
-        filemanagerInstance.selectAll(); 
+        filemanagerInstance.selectAll();
         checkbox.label = 'Unselect All';
     }
     else {

@@ -1,4 +1,4 @@
-// Initialize Slider component
+// Initialize Range Slider Control
 var sliderObj = new ej.inputs.Slider({
     ticks: { placement: 'Before', largeStep: 20, smallStep: 5, showSmallTicks: true },
     tooltip: { placement: 'Before', isVisible: true, showOn: 'Always' },
@@ -12,7 +12,5 @@ var sliderObj = new ej.inputs.Slider({
     // Slider current value
     value: [30, 70]
 });
-// Render initialized Slider
+// Render initialized Range Slider Control
 sliderObj.appendTo('#slider');
-
-

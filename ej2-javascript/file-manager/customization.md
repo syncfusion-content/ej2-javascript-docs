@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## File manager control | Syncfusion
-description: Learn here all about Customization in Syncfusion ##Platform_Name## File manager control of Syncfusion Essential JS 2 and more.
+title: Customization in ##Platform_Name## File Manager control | Syncfusion
+description: Learn here all about Customization in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Customization 
+control: Customization
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in ##Platform_Name## File manager control
+# Customization in ##Platform_Name## File Manager control
 
-The file manager component allows customizing its functionalities like, context menu, searching, uploading, toolbar using APIs. Given below are some of the functionalities that can be customized in the File Manager,
+The File Manager control allows customizing its functionalities such as context menu, searching, uploading, and toolbar using APIs. Below are some functionalities that can be customized in the File Manager control:
 
 * [Context menu customization](#context-menu-customization)
 * [Details view customization](#details-view-customization)
@@ -25,7 +25,7 @@ The file manager component allows customizing its functionalities like, context 
 
 ## Context menu customization
 
-The context menu settings like, items to be displayed on files, folders and layout click and visibility can be customized using [contextMenuSettings](../api/file-manager/#contextmenusettings) property.
+The context menu settings such as items to be displayed on files, folders, layout click, and visibility can be customized using the [contextMenuSettings](../api/file-manager/#contextmenusettings) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -36,8 +36,11 @@ The context menu settings like, items to be displayed on files, folders and layo
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/contextmenu-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/contextmenu-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/file-manager/contextmenu-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -49,15 +52,17 @@ The context menu settings like, items to be displayed on files, folders and layo
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/contextmenu-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/contextmenu-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
-
+        
 {% previewsample "page.domainurl/code-snippet/file-manager/contextmenu-cs1" %}
 {% endif %}
 
 ## Details view customization
 
-The details view settings like, column width, header text, template for each field can be customized using [detailsViewSettings](../api/file-manager/#detailsviewsettings) property.
-
+The details view settings such as column width, header text, template for each field can be customized using the [detailsViewSettings](../api/file-manager/#detailsviewsettings) property.
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
@@ -67,8 +72,11 @@ The details view settings like, column width, header text, template for each fie
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/detailsview-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/detailsview-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/file-manager/detailsview-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -80,14 +88,17 @@ The details view settings like, column width, header text, template for each fie
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/detailsview-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/detailsview-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
-
+        
 {% previewsample "page.domainurl/code-snippet/file-manager/detailsview-cs1" %}
 {% endif %}
 
 ## Navigation pane customization
 
-The navigation pane settings like, minimum and maximum width and visibility can be customized using [navigationPaneSettings](../api/file-manager/#navigationpanesettings) property.
+The navigation pane settings such as minimum and maximum width and visibility can be customized using the [navigationPaneSettings](../api/file-manager/#navigationpanesettings) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -98,8 +109,11 @@ The navigation pane settings like, minimum and maximum width and visibility can 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/navigationpane-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/navigationpane-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/file-manager/navigationpane-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -111,25 +125,31 @@ The navigation pane settings like, minimum and maximum width and visibility can 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/navigationpane-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/navigationpane-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
-
+        
 {% previewsample "page.domainurl/code-snippet/file-manager/navigationpane-cs1" %}
 {% endif %}
 
 ## Show/Hide file extension
 
-The file extensions are displayed in the File Manager by default. This can be hidden by disabling the [showFileExtension](../api/file-manager/#showfileextension) property.
+The file extensions are displayed in the File Manager control by default. This can be hidden by disabling the [showFileExtension](../api/file-manager/#showfileextension) property.
 
-In File Manager [fileLoad](../api/file-manager/#fileload) and [fileOpen](../api/file-manager/#fileopen) events are triggered before the file/folder is rendered and before the file/folder is opened respectively. These events can be utilized to perform operations before a file/folder is rendered or opened.
+In File Manager control, the [fileLoad](../api/file-manager/#fileload) and [fileOpen](../api/file-manager/#fileopen) events are triggered before the file/folder is rendered and before the file/folder is opened respectively. These events can be utilized to perform operations before a file/folder is rendered or opened.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/file-manager/fileextension-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/fileextension-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/fileextension-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -144,6 +164,9 @@ In File Manager [fileLoad](../api/file-manager/#fileload) and [fileOpen](../api/
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/fileextension-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/fileextension-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/file-manager/fileextension-cs1" %}
@@ -151,16 +174,19 @@ In File Manager [fileLoad](../api/file-manager/#fileload) and [fileOpen](../api/
 
 ## Show/Hide hidden items
 
-The File Manager provides support to show/hide the hidden items by enabling/disabling the [showHiddenItems](../api/file-manager/#showhiddenitems) property.
+The File Manager control provides support to show/hide hidden items by enabling/disabling the [showHiddenItems](../api/file-manager/#showhiddenitems) property.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/file-manager/hiddenitems-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/hiddenitems-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/hiddenitems-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -175,6 +201,9 @@ The File Manager provides support to show/hide the hidden items by enabling/disa
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/hiddenitems-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/hiddenitems-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/file-manager/hiddenitems-cs1" %}
@@ -182,16 +211,19 @@ The File Manager provides support to show/hide the hidden items by enabling/disa
 
 ## Show/Hide thumbnail images in large icons view
 
-The thumbnail images are displayed in the File Manager's large icons view by default. This can be hidden by disabling the [showThumbnail](../api/file-manager/#showthumbnail) property.
+The thumbnail images are displayed in the File Manager control's large icons view by default. This can be hidden by disabling the [showThumbnail](../api/file-manager/#showthumbnail) property.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/file-manager/disablethumbnail-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/disablethumbnail-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/disablethumbnail-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -206,6 +238,9 @@ The thumbnail images are displayed in the File Manager's large icons view by def
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/disablethumbnail-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/disablethumbnail-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/file-manager/disablethumbnail-cs1" %}
@@ -213,16 +248,19 @@ The thumbnail images are displayed in the File Manager's large icons view by def
 
 ## Toolbar customization
 
-The toolbar settings like, items to be displayed in toolbar and visibility can be customized using [toolbarSettings](../api/file-manager/#toolbarsettings) property.
+The toolbar settings such as items to be displayed in the toolbar and visibility can be customized using the [toolbarSettings](../api/file-manager/#toolbarsettings) property.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/file-manager/toolbar-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/toolbar-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/toolbar-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -237,6 +275,9 @@ The toolbar settings like, items to be displayed in toolbar and visibility can b
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/toolbar-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/toolbar-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/file-manager/toolbar-cs1" %}
@@ -248,16 +289,19 @@ The toolbar settings like, items to be displayed in toolbar and visibility can b
 
 ## Upload customization
 
-The upload settings like, minimum and maximum file size and enabling auto upload can be customized using [uploadSettings](../api/file-manager/#uploadsettings) property.
+Upload settings such as minimum and maximum file size, and enabling auto upload can be customized using the [uploadSettings](../api/file-manager/#uploadsettings) property.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/file-manager/upload-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/upload-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/upload-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -272,6 +316,9 @@ The upload settings like, minimum and maximum file size and enabling auto upload
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/upload-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/upload-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/file-manager/upload-cs1" %}
@@ -279,16 +326,19 @@ The upload settings like, minimum and maximum file size and enabling auto upload
 
 ## Tooltip customization
 
-The tooltip value can be customized by adding extra content to the title of the toolbar, navigation pane, details view and large icons of the file manager element.
+The tooltip value can be customized by adding extra content to the title of the toolbar, navigation pane, details view, and large icons of the File Manager control.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/file-manager/tooltip-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/tooltip-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/tooltip-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -302,6 +352,9 @@ The tooltip value can be customized by adding extra content to the title of the 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/tooltip-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/tooltip-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -1,4 +1,4 @@
-// Initialize Slider component
+// Initialize Range Slider Control
 var eventObj = new ej.inputs.Slider({
     // Minimum value
     min: 0,
@@ -13,7 +13,7 @@ var eventObj = new ej.inputs.Slider({
     },
     renderingTicks: function (args) {
         // Weekdays Array
-        var daysArr = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thrusday', 'Friday', 'Saturday'];
+        var daysArr = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
         // Customizing each ticks text into weeksdays
         args.text = daysArr[parseFloat(args.value)];
     },
@@ -27,7 +27,5 @@ var eventObj = new ej.inputs.Slider({
         isVisible: true
     }
 });
-// Render initialized Slider
+// Render initialized Range Slider Control
 eventObj.appendTo('#slider');
-
-

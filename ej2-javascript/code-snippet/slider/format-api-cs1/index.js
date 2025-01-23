@@ -1,4 +1,4 @@
-// Initialize Slider component
+// Initialize Range Slider Control
 var percentObj = new ej.inputs.Slider({
     min: 0, max: 1, value: .3, step: .01,
     // Assigning ticks values to percentage formatting
@@ -6,6 +6,5 @@ var percentObj = new ej.inputs.Slider({
     // Assigning tooltip values to percentage formatting
     tooltip: { placement: 'Before', isVisible: true, showOn: 'Always', format: 'P0' },
 });
-// Render initialized Slider
+// Render initialized Range Slider Control
 percentObj.appendTo('#slider');
-

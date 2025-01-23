@@ -5,7 +5,7 @@ import { DropDownList } from '@syncfusion/ej2-dropdowns';
 import { Button } from '@syncfusion/ej2-buttons';
 import { NumericTextBox } from '@syncfusion/ej2-inputs';
 
-// initialize dashboardlayout component
+// initialize Dashboard Layout control
 let dashboard: DashboardLayout = new DashboardLayout({
     cellSpacing: [10, 10],
     columns: 5,
@@ -18,7 +18,7 @@ let dashboard: DashboardLayout = new DashboardLayout({
     { 'id': 'Panel6', 'sizeX': 1, 'sizeY': 1, 'row': 2, 'col': 3, content: '<div class="content">6</div>' }
     ]
 });
-// render initialized dashboardlayout
+// render initialized Dashboard Layout
 dashboard.appendTo('#dashboard_layout');
 
 let count: number = 7;

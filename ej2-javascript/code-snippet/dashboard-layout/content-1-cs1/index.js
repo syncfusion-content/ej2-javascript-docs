@@ -1,5 +1,5 @@
 
-// initialize dashboardlayout component
+// initialize Dashboard Layout control
 let dashboard  = new ej.layouts.DashboardLayout({
     cellSpacing: [10, 10],
     columns: 6,
@@ -9,7 +9,7 @@ let dashboard  = new ej.layouts.DashboardLayout({
     {'id':'Panel4', 'sizeX': 3, 'sizeY': 2,'row': 1, 'col': 0, header:'<div class="header"> Sales increase percentage </div>', content:'<div id="line"><div>' }
     ]
 });
-// render initialized dashboardlayout
+// render initialized Dashboard Layout
 dashboard.appendTo('#dashboard_default');
 
 let chartData = [

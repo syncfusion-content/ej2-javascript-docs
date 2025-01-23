@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Format in ##Platform_Name## Range slider control | Syncfusion
-description: Learn here all about Format in Syncfusion ##Platform_Name## Range slider control of Syncfusion Essential JS 2 and more.
+title: Format in ##Platform_Name## Range Slider control | Syncfusion
+description: Learn here all about Format in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Format 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Format in ##Platform_Name## Range slider control
+# Format in ##Platform_Name## Range Slider control
 
-The `format` feature used to customize the units of Slider values to desired format. The formatted values will also be applied to the ARIA attributes of the slider. There are two ways of achieving formatting in slider.
+The `format` feature is used to customize the units of Range Slider values to the desired format. The formatted values will also be applied to the ARIA attributes of the slider. There are two ways to achieve formatting in the slider:
 
 * Use the [format](../api/slider/tooltipData/#format) API of slider which utilizes our [Internationalization](../common/internationalization/) to format values.
 
@@ -50,9 +50,9 @@ The `format` feature used to customize the units of Slider values to desired for
 {% previewsample "page.domainurl/code-snippet/slider/format-cs1" %}
 {% endif %}
 
-## Using format API
+## Using the format API
 
-In this method, we have different predefined formatting styles like Numeric (N), Percentage (P), Currency (C) and `#` specifiers. In this below example we have formatted the `ticks` and `tooltip` values into percentage.
+In this method, you can apply different predefined formatting styles such as Numeric (N), Percentage (P), Currency (C), and `#` specifiers. In the example below, we have formatted the `ticks` and `tooltip` values into percentages.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -89,7 +89,7 @@ In this method, we have different predefined formatting styles like Numeric (N),
 
 ## Using Events
 
-In this method, we will be retrieving the values from the slider events then process them to desired formatted the values. In this sample we have customized the `ticks` values into weekdays as one formatting and `tooltip` values into day of the week as another formatting.
+This method involves retrieving values from slider events and then processing them into the desired format. In this example, we have customized the `ticks` values to represent weekdays as one format and `tooltip` values to display the day of the week as another format.
 
 {% if page.publishingplatform == "typescript" %}
 

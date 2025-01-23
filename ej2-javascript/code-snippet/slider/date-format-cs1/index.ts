@@ -1,10 +1,7 @@
-
-
-
 import { Slider, SliderTickEventArgs, SliderTooltipEventArgs } from '@syncfusion/ej2-inputs';
 
-// Initialize slider control
- let dateObj: Slider = new Slider({
+// Initialize Range Slider Control
+let dateObj: Slider = new Slider({
 
     /**
      * Initialize the min and max values of the slider using JavaScript date functions
@@ -19,7 +16,7 @@ import { Slider, SliderTickEventArgs, SliderTooltipEventArgs } from '@syncfusion
     tooltipChange: function (args: SliderTooltipEventArgs) {
         let totalMiliSeconds = Number(args.text);
         // Convert the current milliseconds to the respective date in desired format
-        let custom = { year: "numeric", month: "short", day: "numeric" };
+        let custom: Intl.DateTimeFormatOptions = { year: "numeric", month: "short", day: "numeric" };
         args.text = new Date(totalMiliSeconds).toLocaleDateString("en-us", custom);
     },
     tooltip: {
@@ -29,7 +26,7 @@ import { Slider, SliderTickEventArgs, SliderTooltipEventArgs } from '@syncfusion
     renderingTicks: function (args: SliderTickEventArgs) {
         let totalMiliSeconds = Number(args.value);
         // Convert the current milliseconds to the respective date in desired format
-        let custom = { year: "numeric", month: "short", day: "numeric" };
+        let custom: Intl.DateTimeFormatOptions = { year: "numeric", month: "short", day: "numeric" };
         args.text = new Date(totalMiliSeconds).toLocaleDateString("en-us", custom);
     },
     ticks: {
@@ -39,8 +36,5 @@ import { Slider, SliderTickEventArgs, SliderTooltipEventArgs } from '@syncfusion
     },
     showButtons: true
 });
-// Render initialized Slider
+// Render initialized Range Slider Control
 dateObj.appendTo('#slider');
-
-
-

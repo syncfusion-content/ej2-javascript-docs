@@ -1,11 +1,9 @@
-
-
 import { FileManager, Toolbar, NavigationPane, DetailsView } from '@syncfusion/ej2-filemanager';
 
 FileManager.Inject(Toolbar, NavigationPane, DetailsView)
 
 let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-// initialize File Manager component
+// initialize File Manager control
 let filemanagerInstance: FileManager = new FileManager({
     ajaxSettings: {
         url: hostUrl + 'api/FileManager/FileOperations',
@@ -16,20 +14,16 @@ let filemanagerInstance: FileManager = new FileManager({
     height: "330px"
 });
 
-// render initialized FileManager
+// render initialized File Manager
 filemanagerInstance.appendTo('#filemanager');
 
 // Click event for enable button
-document.getElementById("enable").onclick = function(args) {
+document.getElementById("enable")?.addEventListener("click", function (args) {
     // Enable new folder toolbar item
     filemanagerInstance.enableToolbarItems(["newfolder"]);
-}
-
+})
 // Click event for enable button
-document.getElementById("disable").onclick = function(args) {
-    // Disable new folder toolbar item
+document.getElementById("disable")?.addEventListener("click", function (args) {
+    // Enable new folder toolbar item
     filemanagerInstance.disableToolbarItems(["newfolder"]);
-}
-
-
-
+})

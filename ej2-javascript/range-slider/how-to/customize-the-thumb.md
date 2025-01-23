@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize the thumb in ##Platform_Name## Range slider control | Syncfusion
-description: Learn here all about Customize the thumb in Syncfusion ##Platform_Name## Range slider control of Syncfusion Essential JS 2 and more.
+title: Customize the thumb in ##Platform_Name## Range Slider control | Syncfusion
+description: Learn here all about Customize the thumb in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Customize the thumb 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize the thumb in ##Platform_Name## Range slider control
+# Customize the thumb in ##Platform_Name## Range Slider control
 
-Slider appearance can be customized through CSS. By overriding the slider CSS classes, you can customize the thumb. By default, slider has unique class `e-handle` for slider thumb. You can override the following class as per your requirement. Here, in the sample, the slider thumb has been customized to square, circle, oval shapes, and background image has also been customized.
+The appearance of the Range Slider control can be customized through CSS. By overriding the slider CSS classes, you can customize the thumb. By default, the Range Slider has a unique class `e-handle` for the slider thumb. You can override the following class as per your requirement. Here, in the sample, the slider thumb has been customized to square, circle, oval shapes, and the background image has also been customized.
 
 ```ts
 .e-control.e-slider .e-handle {
@@ -52,7 +52,7 @@ Slider appearance can be customized through CSS. By overriding the slider CSS cl
 {% include code-snippet/slider/thumb-customization-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/slider/thumb-customization-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}

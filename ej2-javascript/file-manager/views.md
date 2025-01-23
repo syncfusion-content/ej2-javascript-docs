@@ -1,26 +1,26 @@
 ---
 layout: post
-title: Views in ##Platform_Name## File manager control | Syncfusion
-description: Learn here all about Views in Syncfusion ##Platform_Name## File manager control of Syncfusion Essential JS 2 and more.
+title: Views in ##Platform_Name## File Manager control | Syncfusion
+description: Learn here all about Views in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Views 
+control: Views
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Views in ##Platform_Name## File manager control
+# Views in ##Platform_Name## File Manager control
 
-View is the section where the files and folders are displayed for the user to browse. The [view](../api/file-manager/#view) API can also be used to change the initial view of the file manager.
+View is the section where the files and folders are displayed for the user to browse. The [view](../api/file-manager/#view) API can also be used to change the initial view of the File Manager control.
 
- The file manager has two types of [views](../api/file-manager/#view) to display the files and folders.
+The File Manager control has two types of [views](../api/file-manager/#view) to display the files and folders:
 
 * [LargeIcons View](#largeicons-view)
 * [Details View](#details-view)
 
 ## LargeIcons View
 
-By Default, File Manager is rendered with largeicons view. The following example demonstrate this.
+By default, the File Manager control is rendered with the large icons view. The following example demonstrates this.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -31,8 +31,11 @@ By Default, File Manager is rendered with largeicons view. The following example
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/view-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/view-cs2/index.css %}
+{% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/file-manager/view-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -44,6 +47,9 @@ By Default, File Manager is rendered with largeicons view. The following example
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/view-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/view-cs2/index.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/file-manager/view-cs2" %}
@@ -51,16 +57,19 @@ By Default, File Manager is rendered with largeicons view. The following example
 
 ## Details View
 
-Details view is an injectable module in the file manager so, it should be injected before rendering the file manager to avail its functionality. The default appearance of the file manager can be changed from largeicons to details view by using the [view](../api/file-manager/#view) property. The following example demonstrate the file manager with details view.
+Details view is an injectable module in the File Manager control, so it should be injected before rendering the File Manager control to avail its functionality. The default appearance of the File Manager control can be changed from large icons to the details view by using the [view](../api/file-manager/#view) property. The following example demonstrates the File Manager control with the details view.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/file-manager/view-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/view-cs3/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/view-cs3/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -74,6 +83,9 @@ Details view is an injectable module in the file manager so, it should be inject
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/file-manager/view-cs3/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/view-cs3/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

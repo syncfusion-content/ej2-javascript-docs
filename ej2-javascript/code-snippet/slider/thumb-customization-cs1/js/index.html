@@ -1,21 +1,21 @@
-<!DOCTYPE html><html lang="en"><head>
-    <title>Essential JS 2 Slider</title>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Essential JS 2 Range Slider</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Essential JS 2 Slider Component">
+    <meta name="description" content="Essential JS 2 Range Slider Control">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/material.css" rel="stylesheet">
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-inputs/styles/material.css" rel="stylesheet">
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-popups/styles/material.css" rel="stylesheet">
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-buttons/styles/material.css" rel="stylesheet">
-    
-    
-<script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 
 <body>
-    
     <div id="container">
         <div class="col-lg-12 control-section">
             <div class="slider-content-wrapper">
@@ -43,12 +43,89 @@
         </div>
     </div>
 
+    <script>
+        var ele = document.getElementById('container');
+        if (ele) {
+            ele.style.visibility = "visible";
+        }   
+    </script>
+    <script src="index.js" type="text/javascript"></script>
+    <style>
+        .slider-content-wrapper {
+            width: 40%;
+            margin: 0 auto;
+            min-width: 185px;
+        }
 
-<script>
-var ele = document.getElementById('container');
-if(ele) {
-  ele.style.visibility = "visible";
-}   
-      </script>
-<script src="index.js" type="text/javascript"></script>
-</body></html>
+        .slider-userselect {
+            -webkit-user-select: none;
+            /* Safari 3.1+ */
+            -moz-user-select: none;
+            /* Firefox 2+ */
+            -ms-user-select: none;
+            /* IE 10+ */
+            user-select: none;
+            /* Standard syntax */
+        }
+
+        .labelText {
+            text-align: left;
+            font-weight: 500;
+            font-size: 13px;
+            padding-bottom: 10px;
+        }
+
+        .slider_container {
+            margin-top: 40px;
+        }
+
+        .e-bigger .content-wrapper {
+            width: 80%;
+        }
+
+        #square_slider .e-handle {
+            border-radius: 0;
+            background-color: #f9920b;
+            border: 0;
+        }
+
+        #circle_slider .e-handle {
+            background-color: #f9920b;
+            border-radius: 50%;
+            border: 0;
+        }
+
+        #image_slider .e-handle {
+            height: 25px;
+            width: 24px;
+            background-size: 24px;
+
+        }
+
+        #image_slider .e-handle {
+            background-image: url('https://ej2.syncfusion.com/demos/src/slider/images/thumb.png');
+            background-repeat: no-repeat;
+            background-color: transparent;
+            border: 0;
+        }
+
+        #square_slider .e-tab-handle::after,
+        #circle_slider .e-tab-handle::after {
+            background-color: #f9920b;
+        }
+
+        #image_slider .e-tab-handle::after {
+            background-color: transparent;
+        }
+
+        #oval_slider .e-handle {
+            height: 25px;
+            width: 8px;
+            top: 3px;
+            border-radius: 15px;
+            background-color: #f9920b;
+        }
+    </style>
+</body>
+
+</html>

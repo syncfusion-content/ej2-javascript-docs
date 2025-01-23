@@ -2,7 +2,7 @@
 
 import { DashboardLayout } from '@syncfusion/ej2-layouts';
 
-// initialize dashboardlayout component
+// initialize Dashboard Layout control
 let portlet: DashboardLayout = new DashboardLayout({
     columns: 8,
     allowDragging: true,
@@ -18,6 +18,6 @@ let portlet: DashboardLayout = new DashboardLayout({
     { 'id': 'Panel6', 'sizeX': 1, 'sizeY': 1, 'row': 2, 'col': 3, header: '<div>Panel 6</div>', content: '<div class="content">Panel Content<div>' }
     ]
 });
-// render initialized dashboardlayout
+// render initialized Dashboard Layout
 portlet.appendTo('#dashboard_layout');
 

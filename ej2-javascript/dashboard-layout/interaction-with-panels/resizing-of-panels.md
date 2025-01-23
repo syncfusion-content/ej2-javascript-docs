@@ -1,26 +1,26 @@
 ---
 layout: post
-title: Resizing of panels in ##Platform_Name## Dashboard layout control | Syncfusion
-description: Learn here all about Resizing of panels in Syncfusion ##Platform_Name## Dashboard layout control of Syncfusion Essential JS 2 and more.
+title: Resizing of panels in ##Platform_Name## Dashboard Layout control | Syncfusion
+description: Learn here all about Resizing of panels in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Resizing of panels 
+control: Resizing of panels
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Resizing of panels in ##Platform_Name## Dashboard layout control
+# Resizing of panels in ##Platform_Name## Dashboard Layout control
 
-The DashboardLayout component is also provided with the panel resizing functionality which can be enabled or disabled using the [`allowResizing`](../../api/dashboard-layout/#allowresizing) property. This functionality allows to resize the panels dynamically through UI interactions using the resizing handlers which controls the panel resizing in various directions.
+The Dashboard Layout control includes panel resizing functionality, which can be enabled or disabled using the [`allowResizing`](../../api/dashboard-layout/#allowresizing) property. This functionality allows panels to be resized dynamically through UI interactions using resizing handlers, which control panel resizing in various directions.
 
-Initially, the panels can be resized only in south-east direction. However, panels can also be resized in east, west, north, south and south-west directions by defining the required directions with [`resizableHandles`](../../api/dashboard-layout/#resizablehandles) property.
+Initially, panels can only be resized in the south-east direction. However, panels can also be resized in the east, west, north, south, and south-west directions by defining the required directions with the [`resizableHandles`](../../api/dashboard-layout/#resizablehandles) property.
 
-On resizing a panel in Dashboard layout the following events will be triggered,
+On resizing a panel in Dashboard Layout the following events will be triggered,
   * [resizeStart](../../api/dashboard-layout/#resizestart) - Triggers when panel resize starts
   * [resize](../../api/dashboard-layout/#resize) - Triggers when panel is being resized
   * [resizeStop](../../api/dashboard-layout/#resizestop) - Triggers when panel resize stops
 
-The following sample demonstrates how to enable and disable the resizing of panels in the DashboardLayout component in different directions.
+The following sample demonstrates how to enable and disable the resizing of panels in the Dashboard Layout control in different directions.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -51,7 +51,7 @@ The following sample demonstrates how to enable and disable the resizing of pane
 
 ## Resizing panels programatically
 
-The Dashboard Layout panels can also be resized programatically by using [resizePanel](../../api/dashboard-layout/#resizepanel) method. The method is invoked as follows,
+The Dashboard Layout panels can also be resized programmatically by using the [resizePanel](../../api/dashboard-layout/#resizepanel) method. The method is invoked as follows:
 
   ```js
    resizePanel(id, sizeX, sizeY)
@@ -74,7 +74,7 @@ The following sample demonstrates resizing panels programatically in the Dashboa
 {% include code-snippet/dashboard-layout/resize-panel-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/dashboard-layout/resize-panel-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}

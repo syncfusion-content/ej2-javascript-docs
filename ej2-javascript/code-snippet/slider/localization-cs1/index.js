@@ -5,7 +5,7 @@ ej.base.L10n.load({
         }
     }
 });
-// Initialize range Slider component
+// Initialize range Slider control
 var rangeObj = new ej.inputs.Slider({
     value: [30, 70],
     type: 'Range',
@@ -13,5 +13,3 @@ var rangeObj = new ej.inputs.Slider({
     showButtons: true
 });
 rangeObj.appendTo('#slider');
-
-

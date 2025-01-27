@@ -40,8 +40,8 @@ In the following example, **code**, **name**, and **countries** columns from the
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/dropdowntree/data-binding/hierarchical-data-cs1/index.html %}
 {% endhighlight %}
-{% highlight css tabtitle="index.css" %}
-{% include code-snippet/dropdowntree/data-binding/hierarchical-data-cs1/index.css %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/dropdowntree/data-binding/hierarchical-data-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -56,8 +56,8 @@ In the following example, **code**, **name**, and **countries** columns from the
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/dropdowntree/data-binding/hierarchical-data-cs1/index.html %}
 {% endhighlight %}
-{% highlight css tabtitle="index.css" %}
-{% include code-snippet/dropdowntree/data-binding/hierarchical-data-cs1/index.css %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/dropdowntree/data-binding/hierarchical-data-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -83,8 +83,8 @@ In the following example, **id**, **pid**, **hasChild**, and **name** columns fr
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/dropdowntree/data-binding/self-referential-data-cs1/index.html %}
 {% endhighlight %}
-{% highlight css tabtitle="index.css" %}
-{% include code-snippet/dropdowntree/data-binding/self-referential-data-cs1/index.css %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/dropdowntree/data-binding/self-referential-data-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -99,8 +99,8 @@ In the following example, **id**, **pid**, **hasChild**, and **name** columns fr
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/dropdowntree/data-binding/self-referential-data-cs1/index.html %}
 {% endhighlight %}
-{% highlight css tabtitle="index.css" %}
-{% include code-snippet/dropdowntree/data-binding/self-referential-data-cs1/index.css %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/dropdowntree/data-binding/self-referential-data-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -147,8 +147,8 @@ The **OrderID**, **EmployeeID**, and **ShipName** columns from the orders table 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/dropdowntree/data-binding/remote-data-cs1/index.html %}
 {% endhighlight %}
-{% highlight css tabtitle="index.css" %}
-{% include code-snippet/dropdowntree/data-binding/remote-data-cs1/index.css %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/dropdowntree/data-binding/remote-data-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -163,8 +163,8 @@ The **OrderID**, **EmployeeID**, and **ShipName** columns from the orders table 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/dropdowntree/data-binding/remote-data-cs1/index.html %}
 {% endhighlight %}
-{% highlight css tabtitle="index.css" %}
-{% include code-snippet/dropdowntree/data-binding/remote-data-cs1/index.css %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/dropdowntree/data-binding/remote-data-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -186,8 +186,8 @@ The `selectable` property is disabled, and the selection is prevented for parent
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/dropdowntree/data-binding/prevent-node-cs1/index.html %}
 {% endhighlight %}
-{% highlight css tabtitle="index.css" %}
-{% include code-snippet/dropdowntree/data-binding/prevent-node-cs1/index.css %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/dropdowntree/data-binding/prevent-node-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -202,8 +202,8 @@ The `selectable` property is disabled, and the selection is prevented for parent
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/dropdowntree/data-binding/prevent-node-cs1/index.html %}
 {% endhighlight %}
-{% highlight css tabtitle="index.css" %}
-{% include code-snippet/dropdowntree/data-binding/prevent-node-cs1/index.css %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/dropdowntree/data-binding/prevent-node-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

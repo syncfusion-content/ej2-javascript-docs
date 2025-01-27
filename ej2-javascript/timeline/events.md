@@ -26,8 +26,8 @@ The Timeline control triggers the [created](../api/timeline#created) event when 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/timeline/events/created/index.html %}
 {% endhighlight %}
-{% highlight css tabtitle="index.css" %}
-{% include code-snippet/timeline/events/created/index.css %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/timeline/events/created/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -42,8 +42,8 @@ The Timeline control triggers the [created](../api/timeline#created) event when 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/timeline/events/created/index.html %}
 {% endhighlight %}
-{% highlight css tabtitle="index.css" %}
-{% include code-snippet/timeline/events/created/index.css %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/timeline/events/created/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -63,8 +63,8 @@ The Timeline control triggers the [beforeItemRender](../api/timeline#beforeItemR
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/timeline/events/beforeItemRender/index.html %}
 {% endhighlight %}
-{% highlight css tabtitle="index.css" %}
-{% include code-snippet/timeline/events/beforeItemRender/index.css %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/timeline/events/beforeItemRender/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -79,8 +79,8 @@ The Timeline control triggers the [beforeItemRender](../api/timeline#beforeItemR
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/timeline/events/beforeItemRender/index.html %}
 {% endhighlight %}
-{% highlight css tabtitle="index.css" %}
-{% include code-snippet/timeline/events/beforeItemRender/index.css %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/timeline/events/beforeItemRender/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

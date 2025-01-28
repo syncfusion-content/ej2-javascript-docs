@@ -1,9 +1,6 @@
-
-
-
 import { enableRipple } from '@syncfusion/ej2-base';
-enableRipple(true);
 import { TreeView } from '@syncfusion/ej2-navigations';
+enableRipple(true);
 
 //define the nested array of JSON objects
 let continents: { [key: string]: Object; }[] = [
@@ -62,6 +59,3 @@ let treeObj: TreeView = new TreeView({
     fields: { dataSource: continents, id: 'code', text: 'name', child: 'countries' }
 });
 treeObj.appendTo('#tree');
-
-
-

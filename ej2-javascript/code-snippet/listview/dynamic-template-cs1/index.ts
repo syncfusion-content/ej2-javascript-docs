@@ -1,6 +1,3 @@
-
-
-
 import { ListView } from '@syncfusion/ej2-lists';
 import { Browser } from '@syncfusion/ej2-base';
 
@@ -40,7 +37,10 @@ let dataSource: { [key: string]: Object }[] = [
 ];
 let wintemplate: string;
 if (Browser.isDevice) {
-    document.getElementById('List').style.width = '350px';
+    const listElement = document.getElementById('List');
+    if (listElement) {
+        listElement.style.width = '350px';
+    }
     wintemplate = mob_template;
 }
 else {
@@ -69,6 +69,3 @@ let listObj: ListView = new ListView({
 
 //Render the initialized ListView control
 listObj.appendTo('#List');
-
-
-

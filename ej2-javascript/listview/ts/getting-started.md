@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Listview control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Listview control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## ListView control | Syncfusion
+description:  Checkout and learn about Getting started with ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Listview control
+# Getting started in ##Platform_Name## ListView control
 
-This section briefly explains how to create **ListView** component and configure its available functionalities in TypeScript using the Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section briefly explains how to create **ListView** control and configure its available functionalities in TypeScript using the Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
@@ -63,7 +63,7 @@ npm install
 
 ## Import the Syncfusion CSS styles
 
-To render the ListView component, need to import lists and its dependent component’s styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+To render the ListView control, need to import lists and its dependent control’s styles as given below in the `~/src/styles/styles.css` file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}

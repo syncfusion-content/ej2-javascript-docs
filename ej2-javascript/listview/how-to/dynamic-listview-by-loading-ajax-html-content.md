@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Dynamic listview by loading ajax html content in ##Platform_Name## Listview control | Syncfusion
-description: Learn here all about Dynamic listview by loading ajax html content in Syncfusion ##Platform_Name## Listview control of Syncfusion Essential JS 2 and more.
+title: Dynamic ListView by loading ajax html content in ##Platform_Name## ListView control | Syncfusion
+description: Learn here all about Dynamic ListView by loading ajax html content in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Dynamic listview by loading ajax html content 
+control: Dynamic ListView by loading ajax html content
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dynamic listview by loading ajax html content in ##Platform_Name## Listview control
+# Dynamic ##Platform_Name## ListView control by loading ajax html content
 
-We can set external `HTML` page content as [`template`](../../api/list-view/#template) for our `ListView` control by making use of `AJAX` call.
+We can set external `HTML` page content as a [`template`](../../api/list-view/#template) for our `ListView` control by making use of an `AJAX` call.
 
 ```ts
 
@@ -25,19 +25,22 @@ ajax.send();
 
 ```
 
-In the below sample, we have rendered smartphone settings template from external `HTML` file.
+In the sample below, we have rendered a smartphone settings template from an external `HTML` file.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/listview/ajax-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/ajax-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/ajax-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/listview/ajax-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -48,6 +51,9 @@ In the below sample, we have rendered smartphone settings template from external
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/ajax-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/ajax-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

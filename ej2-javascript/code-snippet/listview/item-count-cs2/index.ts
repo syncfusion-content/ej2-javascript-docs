@@ -1,6 +1,3 @@
-
-
-
 import { ListView } from '@syncfusion/ej2-lists';
 
 let template: string = '<div class="e-list-wrapper e-list-multi-line e-list-avatar">' +
@@ -41,6 +38,3 @@ let listObj: ListView = new ListView({
 
 //Render the initialized ListView control
 listObj.appendTo('#List');
-
-
-

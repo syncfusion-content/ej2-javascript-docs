@@ -1,9 +1,9 @@
 
 
 import {
-    Schedule, Day, Week, WorkWeek, Month, Agenda, CellClickEventArgs, BeforePasteEventArgs
+    Schedule, Day, Week, WorkWeek, Month, Agenda, BeforePasteEventArgs
 } from '@syncfusion/ej2-schedule';
-import {  Grid } from '@syncfusion/ej2-grids';
+import { Grid } from '@syncfusion/ej2-grids';
 
 import { scheduleData } from './datasource.ts';
 
@@ -25,16 +25,18 @@ let scheduleObj: Schedule = new Schedule({
     allowClipboard: true,
     showQuickInfo: false,
     beforePaste: (args: BeforePasteEventArgs) => {
-        const dataArray: string[] = (args.data as string).split('\t');
-        const result: ScheduleData = {
-            Id: dataArray[0],
-            Subject: dataArray[1],
-            StartTime: new Date(dataArray[4]).toISOString(),
-            EndTime: new Date(new Date(dataArray[4]).getTime() + 60 * 60 * 1000).toISOString(),
-            Location: dataArray[2],
-            Description: dataArray[3]
-        };
-        args.data = [result];
+        if (typeof args.data === 'string') {
+            const dataArray: string[] = (args.data as string).split('\t');
+            const result: ScheduleData = {
+                Id: dataArray[0],
+                Subject: dataArray[1],
+                StartTime: new Date(dataArray[4]).toISOString(),
+                EndTime: new Date(new Date(dataArray[4]).getTime() + 60 * 60 * 1000).toISOString(),
+                Location: dataArray[2],
+                Description: dataArray[3]
+            };
+            args.data = [result];
+        }
     }
 });
 scheduleObj.appendTo('#Schedule');
@@ -89,7 +91,7 @@ const gridObj: Grid = new Grid({
     allowSelection: true,
     height: 400,
     cssClass: 'drag-grid',
-    width: '550px',
+    width: '40%',
     columns: [
         { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 90 },
         { field: 'CustomerID', headerText: 'Customer ID', width: 100 },

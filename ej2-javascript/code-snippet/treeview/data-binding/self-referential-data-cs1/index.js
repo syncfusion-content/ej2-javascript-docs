@@ -30,5 +30,3 @@ var treeObj = new ej.navigations.TreeView({
     fields: { dataSource: localData, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild' }
 });
 treeObj.appendTo('#tree');
-
-

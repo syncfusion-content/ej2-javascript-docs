@@ -1,6 +1,3 @@
-
-
-
 import { ListView } from '@syncfusion/ej2-lists';
 import { Button } from '@syncfusion/ej2-buttons';
 import { enableRipple } from '@syncfusion/ej2-base';
@@ -16,7 +13,6 @@ let fruitsdata: { [key: string]: Object }[] = [
     { text: 'Pineapple', id: '7', imgUrl: './pineapple.jpg' },
     { text: 'Melon', id: '8', imgUrl: './melon.jpg' },
     { text: 'Lemon', id: '9', imgUrl: './lemon.jpg' },
-    { text: 'Cherry', id: '10', imgUrl: './cherry.jpg' },
 ];
 
 let listViewInstance: any = new ListView({
@@ -33,6 +29,3 @@ function renderHeaderButtons() {
         new Button({ iconCss: `e-icons e-${item}-icon`, cssClass: 'e-small e-round', isPrimary: true }, `#${item}`)
     });
 }
-
-
-

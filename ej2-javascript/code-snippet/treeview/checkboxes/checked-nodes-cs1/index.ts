@@ -1,9 +1,6 @@
-
-
-
 import { enableRipple } from '@syncfusion/ej2-base';
-enableRipple(true);
 import { TreeView, NodeCheckEventArgs } from '@syncfusion/ej2-navigations';
+enableRipple(true);
 
 let countries: { [key: string]: Object }[] = [
     { id: 1, name: 'Australia', hasChild: true, expanded: true },
@@ -35,7 +32,7 @@ let countries: { [key: string]: Object }[] = [
 let treeObj: TreeView = new TreeView({
     fields: { dataSource: countries, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild' },
     showCheckBox: true,
-    checkedNodes: ['2','6'],
+    checkedNodes: ['2', '6'],
     nodeChecked: nodeChecked
 });
 treeObj.appendTo('#tree');
@@ -43,6 +40,3 @@ treeObj.appendTo('#tree');
 function nodeChecked(args: NodeCheckEventArgs) {
     alert("The checked node's id: " + treeObj.checkedNodes); // To alert the checked node's id.
 }
-
-
-

@@ -1,6 +1,3 @@
-
-
-
 import { ListView } from '@syncfusion/ej2-lists';
 //Import DataManager related classes
 import { DataManager, Query } from '@syncfusion/ej2-data';
@@ -25,21 +22,21 @@ let listviewInstance: ListView = new ListView({
 
     //Set true to show header title
     showHeader: true,
-    width:"300",
-    actionComplete  : oncomplete
+    width: "300",
+    actionComplete: oncomplete
 });
 
 //Render the initialized ListView
 listviewInstance.appendTo("#element");
 
 createSpinner({
-        target: document.getElementById('spinner')
-    });
-    showSpinner(document.getElementById('spinner'));
+    target: document.getElementById('spinner')
+});
+showSpinner(document.getElementById('spinner'));
 
-function oncomplete(){
-  document.getElementById('spinner').style.display = "none";
+function oncomplete() {
+    const spinner = document.getElementById('spinner');
+    if (spinner) {
+        spinner.style.display = "none";
+    }
 }
-
-
-

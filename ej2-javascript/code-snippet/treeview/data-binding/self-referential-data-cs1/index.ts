@@ -1,9 +1,6 @@
-
-
-
 import { enableRipple } from '@syncfusion/ej2-base';
-enableRipple(true);
 import { TreeView } from '@syncfusion/ej2-navigations';
+enableRipple(true);
 
 let localData: { [key: string]: Object }[] = [
     { id: 1, name: 'Discover Music', hasChild: true, expanded: true },
@@ -35,6 +32,3 @@ let treeObj: TreeView = new TreeView({
     fields: { dataSource: localData, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild' }
 });
 treeObj.appendTo('#tree');
-
-
-

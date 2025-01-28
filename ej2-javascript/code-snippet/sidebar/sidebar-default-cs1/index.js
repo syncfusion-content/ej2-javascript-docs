@@ -1,6 +1,6 @@
 ej.base.enableRipple(true);
 
-//sidebar initialization
+//Sidebar initialization
 var defaultSidebar= new ej.navigations.Sidebar({
     showBackdrop: false,
     open:function(e)
@@ -13,14 +13,14 @@ var defaultSidebar= new ej.navigations.Sidebar({
     }
 });
 defaultSidebar.appendTo('#default');
-//end of sidebar initialization
+//end of Sidebar initialization
 
-// Toggle(Open/Close) the sidebar
+// Toggle(Open/Close) the Sidebar
 document.getElementById('toggle').onclick = function() {
     defaultSidebar.toggle();
 };
 
-// Close the sidebar
+// Close the Sidebar
 document.getElementById('close').onclick = function() {
     defaultSidebar.hide();
 };

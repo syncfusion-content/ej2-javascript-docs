@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Module injection in ##Platform_Name## Schedule control
 
-The crucial step on creating a Scheduler with required views, is to import and inject the required modules. The modules that are available on Scheduler to work with its related functionalities are as follows.
+The crucial step in creating a Scheduler with required views is to import and inject the required modules. The modules that are available on Scheduler to work with its related functionalities are as follows.
 
 * `Day` - Inject this module to work with day view.
 * `Week` - Inject this module to work with week view.
@@ -33,7 +33,7 @@ The required modules should be injected into the Scheduler using the `ej.schedul
 
 `[myapp/index.js]`
 
-```ts
+```js
 ej.schedule.Schedule.Inject(ej.schedule.Day, ej.schedule.Week, ej.schedule.WorkWeek, ej.schedule.Month, ej.schedule.Agenda, ej.schedule.MonthAgenda);
 ```
 

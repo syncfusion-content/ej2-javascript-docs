@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Hover multi line tree node in ##Platform_Name## Treeview control | Syncfusion
-description: Learn here all about Hover multi line tree node in Syncfusion ##Platform_Name## Treeview control of Syncfusion Essential JS 2 and more.
+title: Hover over multi-line tree node in ##Platform_Name## TreeView control | Syncfusion
+description: Learn here all about hovering over multi-line tree nodes in the Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Hover multi line tree node 
+control: Hover multi line tree node
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Hover multi line tree node in ##Platform_Name## Treeview control
+# Hover over multi-line tree node in ##Platform_Name## TreeView control
 
-This section demonstrates how to hover and select a multi-line tree node. Here, you can set the row height (element class: `e-fullrow`) to be the same as the row content (element class: `e-text-content`)
+This section demonstrates how to hover and select a multi-line tree node. You can set the row height (element class: `e-fullrow`) to be the same as the row content (element class: `e-text-content`).
 
 {% if page.publishingplatform == "typescript" %}
 

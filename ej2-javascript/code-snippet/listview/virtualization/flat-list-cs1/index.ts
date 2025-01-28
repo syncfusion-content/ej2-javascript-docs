@@ -1,13 +1,8 @@
-
-
-
 import { ListView, Virtualization } from '@syncfusion/ej2-lists';
 
 ListView.Inject(Virtualization);
 
-let listData: { [key: string]: string | object }[] = [];
-
-listData = [
+let listData: { [key: string]: string | object }[] = [
     { text: 'Nancy', id: '0', },
     { text: 'Andrew', id: '1' },
     { text: 'Janet', id: '2' },
@@ -36,6 +31,3 @@ let listObj: ListView = new ListView({
 });
 
 listObj.appendTo('#ui-list');
-
-
-

@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Customize listview with dynamic tags in ##Platform_Name## Listview control | Syncfusion
-description: Learn here all about Customize listview with dynamic tags in Syncfusion ##Platform_Name## Listview control of Syncfusion Essential JS 2 and more.
+title: Customize ListView with dynamic tags in ##Platform_Name## ListView control | Syncfusion
+description: Learn here all about Customize ListView with dynamic tags in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Customize listview with dynamic tags 
+control: Customize ListView with dynamic tags
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize listview with dynamic tags in ##Platform_Name## Listview control
+# Customize ListView with dynamic tags in ##Platform_Name## ListView control
 
-You can customize the ListView items using the [`template`](../../api/list-view/#template) property. Here, the dynamic tags are added and removed in the list item from another ListView. Refer to the following steps to achieve this.
+You can customize the ListView items using the [`template`](../../api/list-view/#template) property. Here, dynamic tags are added or removed in the list item from another ListView. Refer to the following steps to achieve this.
 
-* Render the ListView with data source, and add button element with each list item of ListView on [`actionComplete`](../../api/list-view/#actioncompldiaete) event. Refer to the following code sample of actionComplete event.
+* Render the ListView with a data source, and add a button element with each list item of the ListView on the [`actionComplete`](../../api/list-view/#actioncomplete) event. Refer to the following code sample of the actionComplete event.
 
 ```ts
 
@@ -30,8 +30,7 @@ function addButton() {
 
 ```
 
-* Initialize dynamic ListView with required property that holds the tags of parent ListView, and bind the [`select`](../../api/list-view/#select) event (triggers when the list item is selected), in which you can get and add the selected item value as tags into parent
-ListView. Refer to the following code sample.
+* Initialize a dynamic ListView with the required properties that hold the tags of the parent ListView, and bind the [`select`](../../api/list-view/#select) event (triggers when a list item is selected) to add the selected item value as tags into the parent ListView. Refer to the following code sample.
 
 ```ts
 
@@ -55,9 +54,9 @@ function addTag(e: SelectEventArgs) {
 
 ```
 
-* Render the dialog control with empty content and append the created dynamic ListView object to the dialog on [`created`](../../api/dialog/#created) event.
+* Render the dialog control with empty content and append the created dynamic ListView object to the dialog on the [`created`](../../api/dialog/#created) event.
 
-* Bind the click event for button icon (+) to update the ListView data source with tags, and open the dialog with this dynamic ListView. Refer to the following code sample.
+* Bind the click event to the button icon (+) to update the ListView data source with tags, and open the dialog with this dynamic ListView. Refer to the following code sample.
 
 ```ts
 
@@ -76,7 +75,7 @@ function renderDialog(id: string): void {
 
 ```
 
-* Bind the click event with added dynamic tags to remove it. Refer to the following code sample.
+* Bind the click event with added dynamic tags to remove them. Refer to the following code sample.
 
 ```ts
 
@@ -89,15 +88,18 @@ function removeTag() {
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/listview/tags-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/tags-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/tags-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/listview/tags-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -108,6 +110,9 @@ function removeTag() {
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/tags-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/tags-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

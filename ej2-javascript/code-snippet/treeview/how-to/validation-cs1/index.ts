@@ -1,16 +1,13 @@
-
-
-
 import { enableRipple } from '@syncfusion/ej2-base';
-import { TreeView } from '@syncfusion/ej2-navigations';
+import { TreeView, NodeEditEventArgs } from '@syncfusion/ej2-navigations';
 enableRipple(true);
 
 /**
  * TreeView node editing sample with validation
  */
 
-    // Hierarchical data source for TreeView component
-    let treeData: { [key: string]: Object } [] = [
+// Hierarchical data source for TreeView control
+let treeData: { [key: string]: Object }[] = [
     {
         id: 1, name: 'Discover Music', expanded: true,
         child: [
@@ -55,8 +52,8 @@ enableRipple(true);
     }
 ];
 
-    // Render the TreeView with editing option
-    let treeObj: TreeView = new TreeView({
+// Render the TreeView with editing option
+let treeObj: TreeView = new TreeView({
     fields: { dataSource: treeData, id: 'id', text: 'name', child: 'child' },
     allowEditing: true,
     nodeEdited: onNodeEdited
@@ -64,9 +61,9 @@ enableRipple(true);
 treeObj.appendTo('#tree');
 
 function onNodeEdited(args: NodeEditEventArgs): void {
-    let displayContent:string = "";
+    let displayContent: string = "";
     if (args.newText.trim() == "") {
-        args.cancel=true;
+        args.cancel = true;
         displayContent = "TreeView item text should not be empty";
     }
     else if (args.newText != args.oldText) {
@@ -74,9 +71,9 @@ function onNodeEdited(args: NodeEditEventArgs): void {
     } else {
         displayContent = "";
     }
-    document.getElementById("display").innerHTML = displayContent;
+    const displayElement = document.getElementById("display");
+
+    if (displayElement) {
+        displayElement.innerHTML = displayContent;
+    }
 }
-
-
-
-

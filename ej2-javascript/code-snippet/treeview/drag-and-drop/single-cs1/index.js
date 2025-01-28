@@ -48,4 +48,3 @@ var treeObj = new ej.navigations.TreeView({
     allowDragAndDrop: true,
 });
 treeObj.appendTo('#tree');
-

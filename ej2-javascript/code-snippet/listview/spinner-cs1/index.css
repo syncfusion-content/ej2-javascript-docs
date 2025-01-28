@@ -12,13 +12,3 @@
   top: 35%;
   left: 45%;
 }
-
-
-#element {
-    display: block;
-    max-width: 350px;
-    min-height: 200px;
-    margin: auto;
-    border: 1px solid #dddddd;
-    border-radius: 3px;
-}

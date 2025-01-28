@@ -1,6 +1,3 @@
-
-
-
 import { ListView, SelectEventArgs } from '@syncfusion/ej2-lists';
 import { Button } from '@syncfusion/ej2-buttons';
 import { Dialog } from '@syncfusion/ej2-popups';
@@ -47,7 +44,7 @@ function addButton() {
 
 //The click event for rendered button
 for (let i: number = 0; i < data.length; i++) {
-    document.getElementById(data[i].Id as string).addEventListener("click", (e: MouseEventArgs) => {
+    document.getElementById(data[i].Id as string)?.addEventListener("click", (e: MouseEventArgs) => {
         renderDialog((e.currentTarget as HTMLElement).id);
     });
 }
@@ -89,7 +86,7 @@ let listObj: ListView = new ListView({
     fields: { text: 'Name' },
     select: addTag
 });
-
+const element = document.querySelector('.e-add-icon');
 //Initialize the dialog control
 let dialog: Dialog = new Dialog({
     width: '200px',
@@ -98,7 +95,7 @@ let dialog: Dialog = new Dialog({
     visible: false,
     created: createList,
     showCloseIcon: true,
-    position: { X: document.querySelector('.e-add-icon').getBoundingClientRect().left + 50, Y: document.querySelector('.e-add-icon').getBoundingClientRect().top - 5 }
+    position: { X: (element?.getBoundingClientRect().left || 0) + 50, Y: (element?.getBoundingClientRect().top || 0) - 5 }
 });
 //Render the initialized dialog control
 dialog.appendTo('#dialog');
@@ -118,7 +115,7 @@ function renderDialog(id: string): void {
 
 //Created event for dialog
 function createList() {
-    let listElem: any = document.getElementById('dialog').querySelector("#list");
+    let listElem: any = document.getElementById('dialog')?.querySelector("#list");
     listObj.appendTo(listElem);
 }
 
@@ -144,6 +141,3 @@ function addTag(e: SelectEventArgs) {
 function removeTag() {
     this.parentNode.parentNode.remove();
 };
-
-
-

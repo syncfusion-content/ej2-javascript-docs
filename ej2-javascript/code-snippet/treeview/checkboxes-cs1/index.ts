@@ -1,9 +1,6 @@
-
-
-
 import { enableRipple } from '@syncfusion/ej2-base';
-enableRipple(true);
 import { TreeView } from '@syncfusion/ej2-navigations';
+enableRipple(true);
 
 let countries: { [key: string]: Object }[] = [
     { id: 1, name: 'Australia', hasChild: true, expanded: true },
@@ -37,6 +34,3 @@ let treeObj: TreeView = new TreeView({
     showCheckBox: true,
 });
 treeObj.appendTo('#tree');
-
-
-

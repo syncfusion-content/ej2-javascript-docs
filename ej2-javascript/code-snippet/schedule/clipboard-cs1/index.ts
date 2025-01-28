@@ -1,5 +1,3 @@
-
-
 import {
     Schedule, Day, Week, WorkWeek, Month, Agenda, CellClickEventArgs
 } from '@syncfusion/ej2-schedule';

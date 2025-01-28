@@ -1,9 +1,6 @@
-
-
-
 import { enableRipple } from '@syncfusion/ej2-base';
-enableRipple(true);
 import { TreeView } from '@syncfusion/ej2-navigations';
+enableRipple(true);
 
 let productTeam: { [key: string]: Object }[] = [
     {
@@ -54,6 +51,3 @@ let treeObj: TreeView = new TreeView({
     allowMultiSelection: true,
 });
 treeObj.appendTo('#tree');
-
-
-

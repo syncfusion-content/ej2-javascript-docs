@@ -57,4 +57,3 @@ var treeObj = new ej.navigations.TreeView({
     fields: { dataSource: continents, id: 'code', text: 'name', child: 'countries' }
 });
 treeObj.appendTo('#tree');
-

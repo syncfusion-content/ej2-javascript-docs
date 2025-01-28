@@ -1,12 +1,9 @@
-
-
-
 import { Sidebar } from '@syncfusion/ej2-navigations';
 import { enableRipple } from '@syncfusion/ej2-base';
 enableRipple(true);
 
 let defaultSidebar: Sidebar = new Sidebar({
-    type: "Push",width: '280px',animate: false
+    type: "Push", width: '280px', animate: false
 });
 defaultSidebar.appendTo('#default-sidebar');
 //end of Sidebar initialization
@@ -25,6 +22,3 @@ if (closeButton) {
         defaultSidebar.hide();
     };
 }
-
-
-

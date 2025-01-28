@@ -1,6 +1,3 @@
-
-
-
 import { enableRipple } from '@syncfusion/ej2-base';
 import { TreeView } from '@syncfusion/ej2-navigations';
 enableRipple(true);
@@ -9,9 +6,9 @@ enableRipple(true);
  * TreeView dynamic iconCss sample
  */
 
-    // List data source for TreeView component
-   let treeData: { [key: string]: Object }[] = [
-    {
+// List data source for TreeView control
+let treeData: { [key: string]: Object }[] = [
+  {
     "nodeId": "01", "nodeText": "Music", "icon": "folder", "expanded": true,
     "nodeChild": [
       { "nodeId": "01-01", "nodeText": "Gouttes.mp3", "icon": "audio" }
@@ -27,10 +24,10 @@ enableRipple(true);
 ];
 
 let tree1: TreeView = new TreeView({
-     fields: { dataSource: treeData, id: 'nodeId', text: 'nodeText', child: 'nodeChild', iconCss: 'icon', expanded: 'expanded' },
-     showCheckBox: true,
-     nodeChecking: onNodeChecking,
-     autoCheck: false
+  fields: { dataSource: treeData, id: 'nodeId', text: 'nodeText', child: 'nodeChild', iconCss: 'icon', expanded: 'expanded' },
+  showCheckBox: true,
+  nodeChecking: onNodeChecking,
+  autoCheck: false
 });
 tree1.appendTo('#tree');
 
@@ -40,6 +37,3 @@ function onNodeChecking(args) {
   let iconClass = this.getTreeData(nodeId)[0].icon;
   alert('Icon class is ' + iconClass);
 }
-
-
-

@@ -69,7 +69,7 @@ npm install
 
 ## Import the Syncfusion CSS styles
 
-To render the Sidebar control, need to import sidebar and its dependent control’s styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+To render the Sidebar control, need to import Sidebar and its dependent control’s styles as given below in the `~/src/styles/styles.css` file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -158,6 +158,9 @@ npm start
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/sidebar/default-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/sidebar/default-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/sidebar/default-cs1" %}
@@ -179,13 +182,16 @@ The following example shows a Sidebar control with enabled backdrop.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/sidebar/sidebar-howTo-cs3/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/sidebar/sidebar-howTo-cs3/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/sidebar/sidebar-howTo-cs3" %}
 
 ## Position
 
-Positioning the Sidebar to the right or left of the main content can be achieved by using the [`position`](../api/sidebar/#position) property. If the position is not set, the Sidebar will expand from the left to the body element. `enablePersistence` will persist the control's state between page reloads. `change` event will be triggered when the state(expand/collapse) of the control is changed.
+Positioning the Sidebar to the right or left of the main content can be achieved by using the [`position`](../api/sidebar/#position) property. If the position is not set, the Sidebar will expand from the left to the body element. [`enablePersistence`](../api/sidebar/#enablepersistence) will persist the control's state between page reloads. [`change`](../api/sidebar/#change) event will be triggered when the state(expand/collapse) of the control is changed.
 
 In the following sample, the position of the Sidebar can be changed using the radio buttons in the main content.
 
@@ -196,13 +202,16 @@ In the following sample, the position of the Sidebar can be changed using the ra
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/sidebar/position-cs3/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/sidebar/position-cs3/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/sidebar/position-cs3" %}
 
 ## Animate
 
-Animation transitions can be set while expanding or collapsing the Sidebar using the `animate` property. By default , `animate` property is set to true.
+Animation transitions can be set while expanding or collapsing the Sidebar using the [`animate`](../api/sidebar/#animate) property. By default , `animate` property is set to true.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -211,13 +220,16 @@ Animation transitions can be set while expanding or collapsing the Sidebar using
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/sidebar/animate-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/sidebar/animate-cs2/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/sidebar/animate-cs2" %}
 
 ## Close on document click
 
-Sidebar can be closed on document click by setting `closeOnDocumentClick` to true. If this property is not set, the Sidebar will not close on document click since its default value is false. Sidebar can be kept opened during rendering using `isOpen` property.
+Sidebar can be closed on document click by setting [`closeOnDocumentClick`](../api/sidebar/#closeondocumentclick) to true. If this property is not set, the Sidebar will not close on document click since its default value is false. Sidebar can be kept opened during rendering using [`isOpen`](../api/sidebar/#isopen) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -226,13 +238,16 @@ Sidebar can be closed on document click by setting `closeOnDocumentClick` to tru
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/sidebar/document-click-cs2/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/sidebar/document-click-cs2/styles.css %}
+{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/sidebar/document-click-cs2" %}
 
 ## Enable gestures
 
-Expand or collapse the Sidebar while swiping in touch devices using `enableGestures` property. By default, `enableGestures` is set to true.
+Expand or collapse the Sidebar while swiping in touch devices using [`enableGestures`](../api/sidebar/#enablegestures) property. By default, `enableGestures` is set to true.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -240,6 +255,9 @@ Expand or collapse the Sidebar while swiping in touch devices using `enableGestu
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/sidebar/gestures-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/sidebar/gestures-cs2/styles.css %}
 {% endhighlight %}
 {% endtabs %}
           
@@ -250,4 +268,4 @@ Expand or collapse the Sidebar while swiping in touch devices using `enableGestu
 * [Sidebar with navigation menu](https://ej2.syncfusion.com/demos/#/material/sidebar/sidebar-menu.html)
 * [Sidebar responsive panel](https://ej2.syncfusion.com/demos/#/material/sidebar/responsive-panel.html)
 * [Sidebar with listView](./how-to/sidebar-with-list-view/)
-* [Usecase sample](https://ej2.syncfusion.com/showcase/typescript/webmail/#/home)
+* [Use case sample](https://ej2.syncfusion.com/showcase/typescript/webmail/#/home)

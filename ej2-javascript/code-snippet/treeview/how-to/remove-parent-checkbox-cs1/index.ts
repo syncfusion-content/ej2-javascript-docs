@@ -1,6 +1,3 @@
-
-
-
 import { enableRipple } from '@syncfusion/ej2-base';
 import { TreeView } from '@syncfusion/ej2-navigations';
 enableRipple(true);
@@ -9,8 +6,8 @@ enableRipple(true);
  * Removing checkbox of parent nodes TreeView sample
  */
 
-    // List data source for TreeView component
-   let countries: { [key: string]: Object }[] = [
+// List data source for TreeView control
+let countries: { [key: string]: Object }[] = [
     { id: 1, name: 'India', hasChild: true, expanded: true },
     { id: 2, pid: 1, name: 'Assam' },
     { id: 3, pid: 1, name: 'Bihar' },
@@ -39,10 +36,7 @@ enableRipple(true);
 
 let tree1: TreeView = new TreeView({
     fields: { dataSource: countries, id: 'id', text: 'name', parentID: 'pid', hasChildren: 'hasChild' },
-     showCheckBox: true,
-     cssClass: 'custom'
+    showCheckBox: true,
+    cssClass: 'custom'
 });
 tree1.appendTo('#tree');
-
-
-

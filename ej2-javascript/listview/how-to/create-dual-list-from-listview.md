@@ -3,7 +3,7 @@ layout: post
 title: Create dual list in ##Platform_Name## ListView Control | Syncfusion
 description: Learn here all about create dual list in Syncfusion ##Platform_Name## ListView control, it's elements and more.
 platform: ej2-javascript
-control: Create dual list from listview 
+control: Create dual list from ListView
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,47 +11,46 @@ domainurl: ##DomainURL##
 
 # Create dual list in ##Platform_Name## ListView Control
 
-The dual list contains two ListView. This allows you to move list items from one list to another using the client-side events. This section explains how to integrate the ListView control to achieve dual list.
+The dual list configuration involves two ListView controls, allowing for list items to be transferred between lists using client-side events. This section explains how to integrate ListView controls to achieve a dual list.
 
 ## Use cases
 
-* Stock exchanges of two different countries
-* Job applications (skill sets)
+Dual lists can be utilized in scenarios such as:
+* Stock exchanges of two different countries.
+* Job applications (skill sets).
 
 ## Integration of Dual List
 
-Here, two ListView controls have been used to display the list items. An ej2-button is used to transfer data between the ListView, and a textbox is used to achieve the UI of filtering support.
+To implement a dual list, two ListView controls are used to display items. The interface uses an `ej2-button` for transferring data between lists and a textbox for filtering support.
 
-The dual list supports:
+Key features of the dual list include:
+* Transferring all items from one list to another.
+* Transferring selected items from one list to another.
+* Filtering lists using input from a textbox.
 
-* Moving whole data from one list to another.
-* Moving selected data from one list to another.
-* Filtering the list by using a client-side typed character.
-
-In the ListView control, sorting is enabled using the [sortOrder](../../api/list-view/#sortorder) property, and the [select](../../api/list-view/#select) event is triggered while selecting an item. Here, the select event is triggered to enable and disable button states.
+In the ListView control, sorting is enabled using the [sortOrder](../../api/list-view/#sortorder) property, and the [select](../../api/list-view/#select) event is triggered when an item is selected. The select event manages the enabling and disabling of buttons based on the item selection.
 
 ## Manipulating data
 
-## Moving whole data from the first list to the second list(>>)
 
-Here, the whole data can be moved from the first ListView to the second by clicking the first button. When clicking the button, the whole list items are sliced, and `concat` with the second ListView. This button is enabled only when the data source of the first ListView is not empty.
+### Moving entire data from the first list to the second list (`>>`)
 
-## Moving whole data from the second list to the first list(<<)**
+All items can be transferred from the first ListView to the second by clicking the designated button. When clicked, all items from the first list are concatenated with the second ListView's data source. This button is active only when the first ListView has items.
 
-The functionality of the second button is the same as above, and data is transferred from the second list to the first list. This button is enabled only when the data source of the second ListView is not empty.
+### Moving entire data From the second list to the first list (`<<`)
 
-## Moving selected item from one list to another list (>) and (<)**
+This button performs the reverse action, transferring all items from the second ListView to the first. It is active only when the second ListView has items.
 
-The [Select](../../api/list-view/#select) event is triggered when selecting a list item in the ListView. The selected items can be transferred between two lists. These buttons will be enabled when selecting an item in lists.
+### Transferring selected items (`>` and `<`)
 
+The [Select](../../api/list-view/#select) event facilitates transferring selected items between lists. These buttons are enabled when an item is selected in either list.
 ## Filtering method
 
-The filtering method is used to filter list items when typing a character in the text box. In this method, the [`dataManager`](../../data/getting-started/) has been used to fetch data from the data source and display in ListView.
+A filtering method allows you to filter list items by typing characters into a textbox. This feature utilizes the [`dataManager`](../../data/getting-started/) to fetch and display filtered data in the ListView.
 
 ## Sorting
 
-By using the dual list, list items can be sorted in the ListView control using the [sortOrder](../../api/list-view/#sortorder) property.
-You can enable sorting in one ListView; in the same order, data can be transferred to another ListView.
+Using the dual list, list items can be sorted in the ListView using the [sortOrder](../../api/list-view/#sortorder) property. Enabling sorting in one ListView allows the data to be transferred in the same order to the other ListView.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -62,8 +61,11 @@ You can enable sorting in one ListView; in the same order, data can be transferr
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/dual-list-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/dual-list-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/listview/dual-list-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -74,6 +76,9 @@ You can enable sorting in one ListView; in the same order, data can be transferr
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/dual-list-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/dual-list-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

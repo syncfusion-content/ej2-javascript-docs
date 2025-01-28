@@ -1,12 +1,9 @@
-
-
-
 import { Sidebar } from '@syncfusion/ej2-navigations';
 import { enableRipple } from '@syncfusion/ej2-base';
 enableRipple(true);
 
 let defaultSidebar: Sidebar = new Sidebar({
-    type: "Push",width: '280px',closeOnDocumentClick: true,isOpen: true
+    type: "Push", width: '280px', closeOnDocumentClick: true, isOpen: true
 });
 defaultSidebar.appendTo('#default-sidebar');
 
@@ -17,7 +14,3 @@ if (toggleButton) {
         defaultSidebar.show();
     };
 }
-
-
-
-

@@ -12,6 +12,7 @@
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-buttons/styles/material.css" rel="stylesheet" />
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-lists/styles/material.css" rel="stylesheet" />
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-navigations/styles/material.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -19,7 +20,7 @@
 <body>
     <div id='loader'>LOADING....</div>
     <div id='container'>
-        <!-- sidebar element declaration-->
+        <!-- Sidebar element declaration-->
         <aside id="default-sidebar">
             <div class="title"> Sidebar content</div>
             <div class="sub-title">
@@ -29,7 +30,7 @@
                 <button id="close" class="e-btn close-btn">Close Sidebar</button>
             </div>
         </aside>
-        <!-- end of sidebar element -->
+        <!-- end of Sidebar element -->
         <!-- main content declaration -->
         <div>
             <div class="title">Main content</div>
@@ -42,19 +43,6 @@
     </div>
 
     <style>
-        #container {
-            visibility: hidden;
-        }
-
-        #loader {
-            color: #008cff;
-            height: 40px;
-            width: 30%;
-            position: absolute;
-            top: 45%;
-            left: 45%;
-        }
-
         .center-align {
             text-align: center;
             padding: 20px;
@@ -79,10 +67,6 @@
             text-align: center;
             font-size: 16px;
             padding: 10px;
-        }
-
-        body {
-            margin: 0;
         }
 
         #default-sidebar {

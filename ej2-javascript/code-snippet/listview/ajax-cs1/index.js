@@ -8,20 +8,20 @@ var data = [
 ];
 
 var template;
-var ajax = new ej.base.Ajax('./template.html', 'GET', true);
+var ajax = new ej.base.Ajax('https://ej2.syncfusion.com/documentation/code-snippet/listview/ajax-cs1/template', 'GET', true);
 ajax.send().then();
-ajax.onSuccess = function(e){ 
+ajax.onSuccess = function (e) {
     template = e;
     listfunction();
 }
 
-function listfunction(){
+function listfunction() {
     listViewInstance.template = template;
     listViewInstance.refresh();
 }
 
 
-ajax.onFailure = function(reason){
+ajax.onFailure = function (reason) {
     console.log(reason);
 }
 var listViewInstance = new ej.lists.ListView({
@@ -29,8 +29,7 @@ var listViewInstance = new ej.lists.ListView({
     headerTitle: 'Settings',
     showHeader: true,
     template: template,
-    fields: {text:'name', id: 'id'}
+    fields: { text: 'name', id: 'id' }
 });
 
 listViewInstance.appendTo('#element');
-

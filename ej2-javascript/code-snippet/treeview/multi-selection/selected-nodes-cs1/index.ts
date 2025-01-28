@@ -1,9 +1,6 @@
-
-
-
 import { enableRipple } from '@syncfusion/ej2-base';
-enableRipple(true);
 import { TreeView, NodeSelectEventArgs } from '@syncfusion/ej2-navigations';
+enableRipple(true);
 
 let countries: { [key: string]: Object }[] = [
     { id: 1, name: 'Australia', hasChild: true, expanded: true },
@@ -35,7 +32,7 @@ let countries: { [key: string]: Object }[] = [
 let treeObj: TreeView = new TreeView({
     fields: { dataSource: countries, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild' },
     allowMultiSelection: true,
-    selectedNodes: ['2','6'],
+    selectedNodes: ['2', '6'],
     nodeSelected: nodeSelected
 });
 treeObj.appendTo('#tree');
@@ -43,6 +40,3 @@ treeObj.appendTo('#tree');
 function nodeSelected(args: NodeSelectEventArgs) {
     alert("The selected node's id: " + treeObj.selectedNodes); // To alert the selected node's id.
 }
-
-
-

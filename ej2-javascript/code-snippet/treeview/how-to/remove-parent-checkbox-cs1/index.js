@@ -1,9 +1,9 @@
- /**
- * Remove check box in parent nodes sample
- */
+/**
+* Remove check box in parent nodes sample
+*/
 
-// Hierarchical data source for TreeView component
- var countries = [
+// Hierarchical data source for TreeView control
+var countries = [
     { id: 1, name: 'India', hasChild: true, expanded: true },
     { id: 2, pid: 1, name: 'Assam' },
     { id: 3, pid: 1, name: 'Bihar' },
@@ -28,14 +28,12 @@
     { id: 23, pid: 21, name: 'Shanghai' },
     { id: 24, pid: 21, name: 'Beijing' },
     { id: 25, pid: 21, name: 'Shantou' }
-    
+
 ];
 
 var tree1 = new ej.navigations.TreeView({
     fields: { dataSource: countries, id: 'id', text: 'name', parentID: 'pid', hasChildren: 'hasChild' },
-     showCheckBox: true,
+    showCheckBox: true,
     cssClass: 'custom'
 });
 tree1.appendTo('#tree');
-
-

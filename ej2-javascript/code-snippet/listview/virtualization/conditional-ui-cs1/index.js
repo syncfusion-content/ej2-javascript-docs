@@ -30,9 +30,7 @@ var listObj = new ej.lists.ListView({
     height: 500,
 
     //Set defined customized template
-    template: '<div id="list-container" class="${ $id % 2 === 0 ? \'even-list\' : \'odd-list\' }" > ${text} </div>'
+    template: '${if(id % 2=="0")}<div id="list-container" class="even-list"> ${text} </div>${else}<div id="list-container" class="odd-list"> ${text} </div>${/if}'
 });
 
 listObj.appendTo('#ui-list');
-
-

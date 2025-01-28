@@ -4,8 +4,8 @@ ej.base.enableRipple(true);
  * TreeView check/uncheck the check box, while clicking on the tree node text sample
  */
 
-    // Data source for TreeView component
-    var countries = [
+// Data source for TreeView control
+var countries = [
     { id: 1, name: 'Australia', hasChild: true, expanded: true },
     { id: 2, pid: 1, name: 'New South Wales' },
     { id: 3, pid: 1, name: 'Victoria' },
@@ -32,8 +32,8 @@ ej.base.enableRipple(true);
     { id: 25, pid: 21, name: 'Punjab' }
 ];
 
-    // Render the TreeView with checkboxes
-    var treeObj = new ej.navigations.TreeView({
+// Render the TreeView with checkboxes
+var treeObj = new ej.navigations.TreeView({
     fields: { dataSource: countries, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild' },
     showCheckBox: true,
     nodeClicked: nodeCheck,
@@ -44,7 +44,7 @@ treeObj.appendTo('#tree');
 function nodeCheck(args) {
     var checkedNode = [args.node];
     if (args.event.target.classList.contains('e-fullrow') || args.event.key == "Enter") {
-       var getNodeDetails = treeObj.getNodeData(args.node);
+        var getNodeDetails = treeObj.getNodeData(args.node);
         if (getNodeDetails.isChecked == 'true') {
             treeObj.uncheckAll(checkedNode);
         } else {
@@ -52,7 +52,3 @@ function nodeCheck(args) {
         }
     }
 }
-
-
-
-

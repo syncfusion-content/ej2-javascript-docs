@@ -3,21 +3,23 @@ var scheduleObj = new ej.schedule.Schedule({
     height: '550px',
     selectedDate: new Date(2024, 1, 15),
     eventSettings: {
-    dataSource: scheduleData
+        dataSource: scheduleData
     },
     allowClipboard: true,
     showQuickInfo: false,
     beforePaste: (args) => {
-        const dataArray = args.data.split('\t');
-        const result = {
-            Id: dataArray[0],
-            Subject: dataArray[1],
-            StartTime: new Date(dataArray[4]).toISOString(),
-            EndTime: new Date(new Date(dataArray[4]).getTime() + 60 * 60 * 1000).toISOString(),
-            Location: dataArray[2],
-            Description: dataArray[3]
-        };
-        args.data = [result];
+        if (typeof args.data === 'string') {
+            const dataArray = args.data.split('\t');
+            const result = {
+                Id: dataArray[0],
+                Subject: dataArray[1],
+                StartTime: new Date(dataArray[4]).toISOString(),
+                EndTime: new Date(new Date(dataArray[4]).getTime() + 60 * 60 * 1000).toISOString(),
+                Location: dataArray[2],
+                Description: dataArray[3]
+            };
+            args.data = [result];
+        }
     }
 });
 scheduleObj.appendTo('#Schedule');
@@ -72,7 +74,7 @@ const gridObj = new Grid({
     allowSelection: true,
     height: 400,
     cssClass: 'drag-grid',
-    width: '550px',
+    width: '40%',
     columns: [
         { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 90 },
         { field: 'CustomerID', headerText: 'Customer ID', width: 100 },

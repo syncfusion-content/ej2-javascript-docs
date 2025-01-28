@@ -1,8 +1,8 @@
 ej.base.enableRipple(true);
-   
-  //initialization of sidebar 
+
+//initialization of sidebar 
 var sidebarElement = new ej.navigations.Sidebar({
-        showBackdrop: true,width: '280px', created:oncreate
+    showBackdrop: true, width: '280px', created: oncreate
 });
 sidebarElement.appendTo('#sidebar-element');
 //end of Sidebar initialization
@@ -10,10 +10,10 @@ document.getElementById('zoom').onclick = function () {
     sidebarElement.show();
     sidebarElement.element.classList.add("w3-animate-zoom");
 }
- // Opendoor Effect
+// Opendoor Effect
 document.getElementById('open_door').onclick = function () {
     sidebarElement.show();
-    var sidebar =document.getElementsByClassName("e-sidebar-overlay")[0];
+    var sidebar = document.getElementsByClassName("e-sidebar-overlay")[0];
     sidebar.classList.add("move");
 }
 //Bottom to Top
@@ -45,10 +45,9 @@ document.getElementById('close_btn').onclick = function () {
     sidebarElement.element.classList.remove("w3-animate-bottom");
     sidebarElement.element.classList.remove("rotate_3d");
     sidebarElement.element.classList.remove("reverse_slide_out");
-    sidebarElement.hide(); 
+    sidebarElement.hide();
 };
 
 function oncreate() {
-     this.element.style.visibility = '';
+    this.element.style.visibility = '';
 }
-

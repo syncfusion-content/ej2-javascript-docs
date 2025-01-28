@@ -1,13 +1,10 @@
-
-
-
-import { TreeView } from '@syncfusion/ej2-navigations';
+import { TreeView, NodeSelectEventArgs } from '@syncfusion/ej2-navigations';
 
 /**
  * Accordion tree sample
  */
-    // Hierarchical data source for TreeView component
-   let continents: { [key: string]: Object; }[] = [
+// Hierarchical data source for TreeView control
+let continents: { [key: string]: Object; }[] = [
     {
         code: "AF", name: "Africa", countries: [
             { code: "NGA", name: "Nigeria" },
@@ -26,8 +23,9 @@ import { TreeView } from '@syncfusion/ej2-navigations';
         code: "EU", name: "Europe", countries: [
             { code: "DNK", name: "Denmark" },
             { code: "FIN", name: "Finland" },
-            { code: "AUT", name: "Austria",
-             }
+            {
+                code: "AUT", name: "Austria",
+            }
         ]
     },
     {
@@ -46,7 +44,7 @@ import { TreeView } from '@syncfusion/ej2-navigations';
     },
 ];
 
-// Render treeview with cssClass
+// Render TreeView with cssClass
 let tree1: TreeView = new TreeView({
     fields: { dataSource: continents, id: "code", text: "name", child: "countries" },
     nodeSelected: nodeSelect,
@@ -54,12 +52,9 @@ let tree1: TreeView = new TreeView({
 });
 tree1.appendTo('#tree');
 
-function nodeSelect (args: NodeSelectEventArgs) {
+function nodeSelect(args: NodeSelectEventArgs) {
     if (args.node.classList.contains('e-level-1')) {
         this.collapseAll();
         this.expandAll([args.node]);
     }
 }
-
-
-

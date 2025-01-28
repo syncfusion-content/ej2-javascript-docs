@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Listview with hyper link navigation in ##Platform_Name## Listview control | Syncfusion
-description: Learn here all about Listview with hyper link navigation in Syncfusion ##Platform_Name## Listview control of Syncfusion Essential JS 2 and more.
+title: Hyper link navigation in ##Platform_Name## ListView control | Syncfusion
+description: Learn here all about ListView with hyper link navigation in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Listview with hyper link navigation 
+control: Hyper link navigation
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Listview with hyper link navigation in ##Platform_Name## Listview control
+# Hyper link navigation in ##Platform_Name## ListView control
 
-We can use `anchor` tag along with `href` attribute in our ListView [`template`](../../api/list-view/#template) property for navigation.
+You can utilize the `anchor` tag along with the `href` attribute in the ListView's [`template`](../../api/list-view/#template) property for enabling navigation links.
 
 ```ts
 
@@ -19,16 +19,19 @@ let anchor_template: string = "<a target='_blank' href='${url}'>${name}</a>";
 
 ```
 
-In the below sample, we have rendered `ListView` with search engines URL.
+In the example below, a `ListView` is rendered with hyperlinks to different search engines. The links open in a new tab or window as specified by the `target='_blank'` attribute.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/listview/navigation-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/navigation-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/navigation-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -42,6 +45,9 @@ In the below sample, we have rendered `ListView` with search engines URL.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/navigation-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/navigation-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -337,6 +337,9 @@ The output will display the Scheduler with the specified view configuration.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/views-model-cs1/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/views-model-cs1/es5-datasource.js %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/views-model-cs1" %}

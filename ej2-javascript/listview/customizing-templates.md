@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Customizing templates in ##Platform_Name## Listview control | Syncfusion
-description: Learn here all about Customizing templates in Syncfusion ##Platform_Name## Listview control of Syncfusion Essential JS 2 and more.
+title: Customizing templates in ##Platform_Name## ListView control | Syncfusion
+description: Learn here all about Customizing templates in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Customizing templates 
+control: Customizing templates
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customizing templates in ##Platform_Name## Listview control
+# Customizing templates in ##Platform_Name## ListView control
 
-The ListView control is designed to customize list items, group title and header title. It uses Essential JS2 [Template engine](../common/template-engine/) to render the elements.
+The ListView control is designed to customize list items, group titles, and header titles. It utilizes the Essential JS2 [Template Engine](../common/template-engine/) to render the elements.
 
 ## Header template
 
-ListView header can be customized with the help of the [`headerTemplate`](../api/list-view/#headertemplate) property.
+The ListView header can be customized using the [`headerTemplate`](../api/list-view/#headertemplate) property.
 
-To customize header template in your application, set your customized template string to `headerTemplate` property along with [`showHeader`](../api/list-view/#showheader) property as `true` to display the ListView header.
+To customize the header template in your application, set your customized template string to the `headerTemplate` property along with setting the [`showHeader`](../api/list-view/#showheader) property to `true` to display the ListView header.
 
 ```ts
 
@@ -29,16 +29,19 @@ let listviewInstance: ListView = new ListView({
 
 ```
 
-In the following example, we have rendered Listview with customized header which contains search, add and sort buttons.
+In the following example, we have rendered ListView with customized header which contains search, add and sort buttons.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/listview/header-template-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/header-template-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/header-template-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -53,6 +56,9 @@ In the following example, we have rendered Listview with customized header which
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/header-template-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/header-template-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/listview/header-template-cs1" %}
@@ -60,20 +66,20 @@ In the following example, we have rendered Listview with customized header which
 
 ## Template
 
-ListView items can be customized with the help of the [`template`](../api/list-view/#template) property.
+ListView items can be customized using the [`template`](../api/list-view/#template) property.
 
-To customize list items in your application, set your customized template string to `template` property.
+To customize list items in your application, set your customized template string to the `template` property.
 
 ```ts
 
 let listviewInstance: ListView = new ListView({
      data: listData,
-     template: '<div class="list-tem"><span>${text}</span></div>',
+     template: '<div class="list-item"><span>${text}</span></div>',
 })
 
 ```
 
-We provided the following built-in CSS classes to customize the list-items. Refer to the following table.
+We provided the following built-in CSS classes to customize the list items. Refer to the following table.
 
 | CSS class        | Description           |
 | ------------- |-------------|
@@ -89,12 +95,15 @@ In the following example, we have customized list items with built-in CSS classe
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/listview/avatar-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/avatar-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/avatar-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -109,6 +118,9 @@ In the following example, we have customized list items with built-in CSS classe
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/avatar-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/avatar-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/listview/avatar-cs1" %}
@@ -116,9 +128,9 @@ In the following example, we have customized list items with built-in CSS classe
 
 ## Group template
 
-ListView group header can be customized with the help of the [`groupTemplate`](../api/list-view/#grouptemplate) property.
+The ListView group header can be customized using the [`groupTemplate`](../api/list-view/#grouptemplate) property.
 
-To customize the group template in your application, set your customized template string to `groupTemplate` property.
+To customize the group template in your application, set your customized template string to the `groupTemplate` property.
 
 ```ts
 
@@ -129,16 +141,19 @@ let listviewInstance: ListView = new ListView({
 
 ```
 
-In the following example, we have grouped Listview based on the category. The category of each list item should be mapped with [`groupBy`](../api/list-view/fieldSettingsModel/#groupby) field of the data. We have also displayed grouped list items count in the group list header.
+In the following example, we have grouped the ListView based on the category. The category of each list item should be mapped with the [`groupBy`](../api/list-view/fieldSettingsModel/#groupby) field of the data. We have also displayed the count of grouped list items in the group list header.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/listview/item-count-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/item-count-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/item-count-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -152,6 +167,9 @@ In the following example, we have grouped Listview based on the category. The ca
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/item-count-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/item-count-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

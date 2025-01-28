@@ -1,9 +1,5 @@
- /**
- * Accordion tree sample
- */
-
-// Hierarchical data source for TreeView component
- var countries = [
+// Hierarchical data source for TreeView control
+var countries = [
     { id: 1, name: 'India', hasChild: true },
     { id: 2, pid: 1, name: 'Assam' },
     { id: 3, pid: 1, name: 'Bihar' },
@@ -28,7 +24,7 @@
     { id: 23, pid: 21, name: 'Shanghai' },
     { id: 24, pid: 21, name: 'Beijing' },
     { id: 25, pid: 21, name: 'Shantou' }
-    
+
 ];
 var newData;
 
@@ -40,35 +36,33 @@ var tree1 = new ej.navigations.TreeView({
 tree1.appendTo('#tree');
 
 function changeDataSource(data) {
-   tree1.fields = {
+    tree1.fields = {
         dataSource: data, id: 'id', text: 'name', parentID: 'pid', hasChildren: 'hasChild'
     }
 }
 
-function onCreate(){
+function onCreate() {
     newData = this.fields.dataSource;
-     // Selects the first level nodes alone
-    var resultData= new ej.data.DataManager(this.getTreeData()).executeLocal(new ej.data.Query().where(this.fields.parentID, 'equal', null, false));
-    var name= [];
-    for (var i = 0; i < resultData.length; i++){
+    // Selects the first level nodes alone
+    var resultData = new ej.data.DataManager(this.getTreeData()).executeLocal(new ej.data.Query().where(this.fields.parentID, 'equal', null, false));
+    var name = [];
+    for (var i = 0; i < resultData.length; i++) {
         name.push(resultData[i][this.fields.text]);
     }
     name.sort();
     var arr = [];
     for (var j = 0; j < name.length; j++) {
         var sortedData = new ej.data.DataManager(this.getTreeData()).executeLocal(new ej.data.Query().where(this.fields.text, 'equal', name[j], false));
-        var childData =  new ej.data.DataManager(newData).executeLocal(new ej.data.Query().where(this.fields.parentID, 'equal', parseInt(sortedData[0][this.fields.id]), false));
+        var childData = new ej.data.DataManager(newData).executeLocal(new ej.data.Query().where(this.fields.parentID, 'equal', parseInt(sortedData[0][this.fields.id]), false));
         arr.push(sortedData[0]);
     }
-    // Renders treeview with sorted Nodes
+    // Renders TreeView with sorted Nodes
     changeDataSource(arr);
     tree1.dataBind();
 }
-function onNodeExpand(args){
-    if (args.isInteracted && args.node.querySelector('li') === null){
-        var childData =  new ej.data.DataManager(newData).executeLocal(new ej.data.Query().where(this.fields.parentID, 'equal', parseInt(args.nodeData.id), false));
-        tree1.addNodes(childData, args.node,null)
+function onNodeExpand(args) {
+    if (args.isInteracted && args.node.querySelector('li') === null) {
+        var childData = new ej.data.DataManager(newData).executeLocal(new ej.data.Query().where(this.fields.parentID, 'equal', parseInt(args.nodeData.id), false));
+        tree1.addNodes(childData, args.node, null)
     }
 }
-
-

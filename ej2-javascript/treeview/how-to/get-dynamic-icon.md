@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Get dynamic icon in ##Platform_Name## Treeview control | Syncfusion
-description: Learn here all about Get dynamic icon in Syncfusion ##Platform_Name## Treeview control of Syncfusion Essential JS 2 and more.
+title: Get dynamic icon in ##Platform_Name## TreeView control | Syncfusion
+description: Learn here all about getting dynamic icons in the Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Get dynamic icon 
+control: Get dynamic icon
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Get dynamic icon in ##Platform_Name## Treeview control
+# Get dynamic icon in ##Platform_Name## TreeView control
 
-In TreeView component, you can get the original bound data using the `getTreeData` method. For this method, if you pass the id of the tree node, it returns the corresponding node information, or otherwise the overall tree nodes information will be returned. You can use this method to get the bound iconCss class in the `nodeChecking` event. Please refer to the following sample.
+In the TreeView control, you can obtain the original bound data using the [`getTreeData`](../../api/treeview#gettreedata)  method. If you pass the ID of a tree node to this method, it returns the corresponding node information. Otherwise, the information of all tree nodes will be returned. You can use this method to get the bound [`iconCss`](../../api/treeview/fieldsSettingsModel/#iconcss)  class in the [`nodeChecking`](../../api/treeview#nodechecking)  event. Please refer to the following sample for implementation details.
 
 {% if page.publishingplatform == "typescript" %}
 

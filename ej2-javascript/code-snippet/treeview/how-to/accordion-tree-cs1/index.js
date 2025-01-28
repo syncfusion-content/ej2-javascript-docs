@@ -1,9 +1,9 @@
- /**
- * Accordion tree sample
- */
+/**
+* Accordion tree sample
+*/
 
-// Hierarchical data source for TreeView component
- var continents = [
+// Hierarchical data source for TreeView control
+var continents = [
     {
         code: "AF", name: "Africa", countries: [
             { code: "NGA", name: "Nigeria" },
@@ -22,8 +22,9 @@
         code: "EU", name: "Europe", countries: [
             { code: "DNK", name: "Denmark" },
             { code: "FIN", name: "Finland" },
-            { code: "AUT", name: "Austria", 
-             }
+            {
+                code: "AUT", name: "Austria",
+            }
         ]
     },
     {
@@ -40,21 +41,20 @@
             { code: "WSM", name: "Samoa" }
         ]
     },
-    
+
 ];
 
-// Render treeview with cssClass
+// Render TreeView with cssClass
 var tree1 = new ej.navigations.TreeView({
     fields: { dataSource: continents, id: "code", text: "name", child: "countries" },
     nodeSelected: nodeSelect,
-     cssClass: ("accordiontree")
+    cssClass: ("accordiontree")
 });
 tree1.appendTo('#tree');
 
-function nodeSelect (args) {
+function nodeSelect(args) {
     if (args.node.classList.contains('e-level-1')) {
         this.collapseAll();
         this.expandAll([args.node]);
     }
 }
-

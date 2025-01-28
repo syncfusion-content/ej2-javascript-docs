@@ -26,12 +26,10 @@ var data = [
         ]
     },
 ];
-//Initialize TreeView component
+//Initialize TreeView control
 var treeViewInstance = new ej.navigations.TreeView({
     fields: { dataSource: data, id: 'nodeId', text: 'nodeText', child: 'nodeChild' }
 });
 
 //Render initialized TreeView
 treeViewInstance.appendTo("#tree");
-
-

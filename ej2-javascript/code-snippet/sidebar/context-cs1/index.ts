@@ -1,5 +1,3 @@
-
-
 import { Sidebar } from '@syncfusion/ej2-navigations';
 import { Button } from '@syncfusion/ej2-buttons';
 import { enableRipple } from '@syncfusion/ej2-base';
@@ -14,24 +12,22 @@ defaultSidebar.appendTo('#default-sidebar');
 //end of Sidebar initialization
 
 //toggle button initialization
-let togglebtn: Button = new Button({iconCss: 'e-icons burg-icon', isToggle: true, content:'Open'}, '#toggle');
+let togglebtn: Button = new Button({ iconCss: 'e-icons e-menu', isToggle: true, content: 'Open' }, '#toggle');
 
 // Close the Sidebar
-document.getElementById('close').onclick = (): void => {
+document.querySelector('#close')?.addEventListener('click', () => {
     defaultSidebar.hide();
-    document.getElementById('toggle').classList.remove('e-active');
+    document.getElementById('toggle')?.classList.remove('e-active');
     togglebtn.content = 'Open'
-};
+})
 
-//Click Event.
-document.getElementById('toggle').onclick = (): void => {
-        if (document.getElementById('toggle').classList.contains('e-active')) {
-            togglebtn.content = 'Close';
-            defaultSidebar.show();
-        } else {
-            togglebtn.content = 'Open';
-            defaultSidebar.hide();
-        }
-    };
-
-
+//Click Event
+document.querySelector('#toggle')?.addEventListener('click', () => {
+    if (document.getElementById('toggle')?.classList.contains('e-active')) {
+        togglebtn.content = 'Close';
+        defaultSidebar.show();
+    } else {
+        togglebtn.content = 'Open';
+        defaultSidebar.hide();
+    }
+})

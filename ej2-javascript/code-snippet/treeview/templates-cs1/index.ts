@@ -1,9 +1,6 @@
-
-
-
 import { enableRipple } from '@syncfusion/ej2-base';
-enableRipple(true);
 import { TreeView } from '@syncfusion/ej2-navigations';
+enableRipple(true);
 
 let employees: { [key: string]: Object }[] = [
     { id: 1, name: 'Steven Buchanan', eimg: '10', job: 'CEO', hasChild: true, expanded: true },
@@ -23,6 +20,3 @@ let treeObj: TreeView = new TreeView({
     nodeTemplate: '#treeTemplate'
 });
 treeObj.appendTo('#tree');
-
-
-

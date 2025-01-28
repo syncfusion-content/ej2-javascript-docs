@@ -1,23 +1,23 @@
 var scheduleObj = new ej.schedule.Schedule({
-        width: '100%',
-        height: '550px',
-        views: [
-            { option: 'Week' },
-            { option: 'Day' },
-            { option: 'Month' },
-            { option: 'TimelineDay' },
-            { option: 'TimelineWeek' },
-            { option: 'TimelineWorkWeek' },
-            { option: 'TimelineMonth' },
-        ],
-        currentView: 'Week',
-        selectedDate: new Date(2024, 1, 15),
-        allowClipboard: true,
-        showQuickInfo: false,
-        eventSettings: {dataSource: scheduleData},
-        destroyed: function () {
-            menuObj.destroy();
-        },
+    width: '100%',
+    height: '550px',
+    views: [
+        { option: 'Week' },
+        { option: 'Day' },
+        { option: 'Month' },
+        { option: 'TimelineDay' },
+        { option: 'TimelineWeek' },
+        { option: 'TimelineWorkWeek' },
+        { option: 'TimelineMonth' },
+    ],
+    currentView: 'Week',
+    selectedDate: new Date(2024, 1, 15),
+    allowClipboard: true,
+    showQuickInfo: false,
+    eventSettings: { dataSource: scheduleData },
+    destroyed: function () {
+        menuObj.destroy();
+    },
 });
 scheduleObj.appendTo('#Schedule');
 
@@ -51,14 +51,14 @@ function contextMenuBeforeOpen(args) {
     }
     selectedTargetEle = ej.base.closest(targetEle, '.e-appointment,.e-work-cells,' +
         '.e-vertical-view .e-date-header-wrap .e-all-day-cells,.e-vertical-view .e-date-header-wrap .e-header-cells');
-    
+
     if (!selectedTargetEle) {
         args.cancel = true;
         return;
     }
     if (selectedTargetEle.classList.contains('e-appointment')) {
         menuObj.showItems(['Cut', 'Copy'], true);
-        menuObj.hideItems(['Paste'], true); 
+        menuObj.hideItems(['Paste'], true);
     } else {
         menuObj.showItems(['Paste'], true);
         menuObj.hideItems(['Cut', 'Copy'], true);

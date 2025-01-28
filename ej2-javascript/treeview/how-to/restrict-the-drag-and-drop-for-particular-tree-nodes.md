@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Restrict the drag and drop for particular tree nodes in ##Platform_Name## Treeview control | Syncfusion
-description: Learn here all about Restrict the drag and drop for particular tree nodes in Syncfusion ##Platform_Name## Treeview control of Syncfusion Essential JS 2 and more.
+title: Restrict the drag and drop for particular tree nodes in ##Platform_Name## TreeView control | Syncfusion
+description: Learn here all about Restrict the drag and drop for particular tree nodes in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Restrict the drag and drop for particular tree nodes 
+control: Restrict the drag and drop for particular tree nodes
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Restrict the drag and drop for particular tree nodes in ##Platform_Name## Treeview control
+# Restrict drag and drop for particular tree nodes in ##Platform_Name## TreeView control
 
-You can able to restrict to drag and drop files under folder only. These can be achieved by using 'nodeDragStop' and 'nodeDragging' event of TreeView.
+You can restrict dragging and dropping files to within folders only. This can be achieved by using the [`nodeDragStop`](../../api/treeview#nodedragstop) and [`nodeDragging`](../../api/treeview#nodedragging) events of the TreeView.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -21,6 +21,9 @@ You can able to restrict to drag and drop files under folder only. These can be 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/treeview/how-to/restrict-drag-drop-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/treeview/how-to/restrict-drag-drop-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -34,6 +37,9 @@ You can able to restrict to drag and drop files under folder only. These can be 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/treeview/how-to/restrict-drag-drop-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/treeview/how-to/restrict-drag-drop-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

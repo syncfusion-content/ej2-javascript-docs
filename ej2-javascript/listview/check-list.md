@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Check list in ##Platform_Name## Listview control | Syncfusion
-description: Learn here all about Check list in Syncfusion ##Platform_Name## Listview control of Syncfusion Essential JS 2 and more.
+title: Check list in ##Platform_Name## ListView control | Syncfusion
+description: Learn here all about Check list in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Check list 
+control: Check list
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Check list in ##Platform_Name## Listview control
+# Check list in ##Platform_Name## ListView control
 
-The ListView supports checkbox in default and group-lists which is used to select multiple items. The checkbox can be enabled by the `showCheckBox` property.
+The ListView control supports checkboxes in both default and group lists, allowing the selection of multiple items. The checkbox can be enabled using the [`showCheckBox`](../api/list-view/#showcheckbox) property.
 
-The Checkbox will be useful in the scenario where we need to select multiple options. For Example, In Shipping cart we can be able to select or unselect the desired items before checkout and also it will be useful in selecting multiple items that belongs to the same category using the group list.
+The checkbox feature is useful in scenarios where multiple options need to be selected. For example, in a shopping cart, users can select or deselect desired items before checkout. It is also useful for selecting multiple items that belong to the same category when using a group list.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -24,8 +24,11 @@ The Checkbox will be useful in the scenario where we need to select multiple opt
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/todo-list-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/todo-list-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/listview/todo-list-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -37,6 +40,9 @@ The Checkbox will be useful in the scenario where we need to select multiple opt
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/todo-list-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/todo-list-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/listview/todo-list-cs1" %}
@@ -44,16 +50,19 @@ The Checkbox will be useful in the scenario where we need to select multiple opt
 
 ## Checkbox Position
 
-In ListView the checkbox can be positioned into either `Left` or `Right` side of the list-item text. This can be achieved by `checkBoxPositon` property. By default, checkbox will be positioned to `Left` of list-item text.
+In ListView, the checkbox can be positioned on either the `Left` or `Right` side of the list-item text. This can be adjusted using the [`checkBoxPosition`](../api/list-view/#checkboxposition) property. By default, the checkbox is positioned to the `Left` of the list-item text.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/listview/checklist-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/checklist-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/checklist-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -67,6 +76,9 @@ In ListView the checkbox can be positioned into either `Left` or `Right` side of
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/checklist-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/checklist-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

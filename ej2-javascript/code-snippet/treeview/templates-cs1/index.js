@@ -18,4 +18,3 @@ var treeObj = new ej.navigations.TreeView({
     nodeTemplate: '#treeTemplate'
 });
 treeObj.appendTo('#tree');
-

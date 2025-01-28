@@ -4,8 +4,8 @@ ej.base.enableRipple(true);
  * TreeView node editing sample with validation
  */
 
-    // Hierarchical data source for TreeView component
-   var hierarchicalData = [
+// Hierarchical data source for TreeView control
+var hierarchicalData = [
     {
         id: '01', name: 'Local Disk (C:)', expanded: true,
         subChild: [
@@ -95,9 +95,8 @@ ej.base.enableRipple(true);
     }
 ];
 
-    var treeObj = new ej.navigations.TreeView({
+var treeObj = new ej.navigations.TreeView({
     fields: { dataSource: hierarchicalData, id: 'id', text: 'name', child: 'subChild' },
     cssClass: ("mytree")
 });
 treeObj.appendTo('#tree');
-

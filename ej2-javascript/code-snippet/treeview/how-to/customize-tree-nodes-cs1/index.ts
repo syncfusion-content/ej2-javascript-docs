@@ -1,6 +1,3 @@
-
-
-
 import { enableRipple } from '@syncfusion/ej2-base';
 import { TreeView } from '@syncfusion/ej2-navigations';
 enableRipple(true);
@@ -9,8 +6,8 @@ enableRipple(true);
  * TreeView customize the tree nodes in level wise
  */
 
-    // Hierarchical data source for TreeView component
-    let hierarchicalData: { [key: string]: Object } [] = [
+// Hierarchical data source for TreeView control
+let hierarchicalData: { [key: string]: Object }[] = [
     {
         id: '01', name: 'Local Disk (C:)', expanded: true,
         subChild: [
@@ -100,13 +97,9 @@ enableRipple(true);
     }
 ];
 
-    // Render the TreeView by mapping its fields property with data source properties
-    let treeObj: TreeView = new TreeView({
+// Render the TreeView by mapping its fields property with data source properties
+let treeObj: TreeView = new TreeView({
     fields: { dataSource: hierarchicalData, id: 'id', text: 'name', child: 'subChild' },
     cssClass: ("mytree")
 });
 treeObj.appendTo('#tree');
-
-
-
-

@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Disable checkbox of the tree node in ##Platform_Name## Treeview control | Syncfusion
-description: Learn here all about Disable checkbox of the tree node in Syncfusion ##Platform_Name## Treeview control of Syncfusion Essential JS 2 and more.
+title: Disable checkbox of the tree node in ##Platform_Name## TreeView control | Syncfusion
+description: Learn here all about Disable checkbox of the tree node in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Disable checkbox of the tree node 
+control: Disable checkbox of the tree node
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Disable checkbox of the tree node in ##Platform_Name## Treeview control
+# Disable checkbox of the tree node in ##Platform_Name## TreeView control
 
-You can disable the check box alone in TreeView instead of disabling the whole node. You need to include the `e-checkbox-disabled` class into the check box element using the `drawNode` event. Please refer to the following sample to disable the check box of the tree nodes.
+You can disable only the checkbox in the TreeView control without disabling the entire node. To achieve this, add the `e-checkbox-disabled` class to the checkbox element using the [`drawNode`](../../api/treeview#drawnode)  event. Please refer to the following example to disable the checkbox of the tree nodes.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -22,8 +22,11 @@ You can disable the check box alone in TreeView instead of disabling the whole n
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/treeview/how-to/disable-checkbox-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/treeview/how-to/disable-checkbox-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/treeview/how-to/disable-checkbox-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -34,6 +37,9 @@ You can disable the check box alone in TreeView instead of disabling the whole n
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/treeview/how-to/disable-checkbox-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/treeview/how-to/disable-checkbox-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

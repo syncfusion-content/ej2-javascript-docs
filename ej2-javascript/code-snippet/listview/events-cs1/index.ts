@@ -1,6 +1,3 @@
-
-
-
 import { ListView, SelectEventArgs } from "@syncfusion/ej2-lists";
 import { Button } from "@syncfusion/ej2-buttons";
 
@@ -27,15 +24,18 @@ let listObj: ListView = new ListView({
   actionBegin: onActionBegin,
   actionComplete: onActionComplete,
   select: onSelect,
-  width:"250"
+  width: "250"
 });
 //Render the initialized ListView control
 listObj.appendTo("#listview-def");
 
 //Clears the event log details
-document.getElementById("clear").onclick = () => {
-  document.getElementById("EventLog").innerHTML = "";
-};
+document.getElementById("clear")?.addEventListener("click", () => {
+  const eventElement = document.getElementById("EventLog");
+  if (eventElement) {
+    eventElement.innerHTML = "";
+  }
+})
 //Handler for actionBegin event trace
 function onActionBegin(): void {
   appendElement("<b>actionBegin </b> event is triggered<hr>");
@@ -53,9 +53,6 @@ function onActionComplete(): void {
 function appendElement(html: string): void {
   let span: HTMLElement = document.createElement("span");
   span.innerHTML = html;
-  let log: HTMLElement = document.getElementById("EventLog");
+  let log: HTMLElement = document.getElementById("EventLog") as HTMLElement;
   log.insertBefore(span, log.firstChild);
 }
-
-
-

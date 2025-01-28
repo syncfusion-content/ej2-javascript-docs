@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Get selected items from listview in ##Platform_Name## Listview control | Syncfusion
-description: Learn here all about Get selected items from listview in Syncfusion ##Platform_Name## Listview control of Syncfusion Essential JS 2 and more.
+title: Get selected items from ListView in ##Platform_Name## ListView control | Syncfusion
+description: Learn here all about Get selected items from ListView in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Get selected items from listview 
+control: Get selected items from ListView
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Get selected items from listview in ##Platform_Name## Listview control
+# Get selected items from ##Platform_Name## ListView control
 
-Single or many items can be selected by users in the ListView control. An API is used to get selected items from the list items. This is called as the [`getSelectedItems`](../../api/list-view/#getselecteditems) method.
+In the ListView control, users can select one or more items. The [`getSelectedItems`](../../api/list-view/#getselecteditems)  API method can be used to retrieve details of the currently selected items from the ListView control.
 
-**`getSelectedItems` method**
+**`getSelectedItems` Method**
 
 This is used to get the details of the currently selected item from the list items. It returns the [`SelectedItem`](../../api/list-view/selectedItem/) | [`SelectedCollection`](../../api/list-view/selectedCollection/)
 
@@ -34,8 +34,11 @@ The `getSelectedItems` method returns the following items from the selected list
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/selected-item-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/selected-item-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/listview/selected-item-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -46,6 +49,9 @@ The `getSelectedItems` method returns the following items from the selected list
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/selected-item-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/selected-item-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

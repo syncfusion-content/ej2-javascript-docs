@@ -9,6 +9,7 @@
     <meta name="author" content="Syncfusion" />
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/material.css" rel="stylesheet" />
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-lists/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/28.1.33/ej2-layouts/styles/material.css" rel="stylesheet" />
     <link href="index.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
@@ -19,6 +20,64 @@
     <div id='container'>
         <div id='ui-list'></div>
     </div>
+    <style>
+        #ui-list.e-listview {
+            margin: auto;
+            max-width: 325px;
+            line-height: initial;
+            border: 1px solid lightgray;
+        }
+
+        #ui-list.e-listview .e-list-header {
+            height: 50px
+        }
+
+        #ui-list.e-listview .e-list-header .e-text {
+            line-height: 18px
+        }
+
+        #ui-list.e-listview .R {
+            background: lightgrey;
+        }
+
+        #ui-list.e-listview .M {
+            background: pink;
+        }
+
+        #ui-list.e-listview .A {
+            background: lightgreen;
+        }
+
+        #ui-list.e-listview .S {
+            background: lightskyblue;
+        }
+
+        #ui-list.e-listview .J {
+            background: orange;
+        }
+
+        #ui-list.e-listview .N {
+            background: lightblue;
+        }
+
+        #ui-list.e-listview .e-list-item {
+            padding: 3px 0;
+        }
+
+        #ui-list .list-container {
+            width: inherit;
+            height: 100%;
+
+        }
+
+        #ui-list.e-listview .showUI {
+            display: flex;
+        }
+
+        #ui-list.e-listview .hideUI {
+            display: none;
+        }
+    </style>
 </body>
 
 </html>

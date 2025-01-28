@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Treeview control
 
-This article describes the API migration process of TreeView component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of TreeView control from Essential JS 1 to Essential JS 2.
 
 ## Add nodes
 

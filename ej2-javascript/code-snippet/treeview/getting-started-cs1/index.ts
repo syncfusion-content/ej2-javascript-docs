@@ -1,9 +1,6 @@
-
-
-
 import { enableRipple } from '@syncfusion/ej2-base';
-enableRipple(true);
 import { TreeView } from '@syncfusion/ej2-navigations';
+enableRipple(true);
 
 //define the array of JSON
 let data: { [key: string]: Object }[] = [
@@ -31,13 +28,10 @@ let data: { [key: string]: Object }[] = [
         ]
     },
 ];
-//Initialize TreeView component
+//Initialize TreeView control
 let treeViewInstance: TreeView = new TreeView({
     fields: { dataSource: data, id: 'nodeId', text: 'nodeText', child: 'nodeChild' }
 });
 
 //Render initialized TreeView
 treeViewInstance.appendTo("#tree");
-
-
-

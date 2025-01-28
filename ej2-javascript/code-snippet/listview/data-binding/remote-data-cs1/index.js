@@ -1,4 +1,4 @@
-//Initialize ListView component
+//Initialize ListView control
 var listviewInstance = new ej.lists.ListView({
     //bind the DataManager instance to dataSource property
     dataSource: new ej.data.DataManager({
@@ -20,4 +20,3 @@ var listviewInstance = new ej.lists.ListView({
 });
 //Render initialized ListView
 listviewInstance.appendTo("#element");
-

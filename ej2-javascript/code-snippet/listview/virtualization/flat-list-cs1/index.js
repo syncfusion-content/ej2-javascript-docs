@@ -1,6 +1,4 @@
-var listData;
-
-listData = [
+var listData = [
     { text: 'Nancy', id: '0', },
     { text: 'Andrew', id: '1' },
     { text: 'Janet', id: '2' },
@@ -22,10 +20,10 @@ var listObj = new ej.lists.ListView({
 
     //Set defined data to dataSource property.
     dataSource: listData,
-
+    //Set height
+    height: 500,
     //enable UI virtualization
     enableVirtualization: true,
 });
 
 listObj.appendTo('#ui-list');
-

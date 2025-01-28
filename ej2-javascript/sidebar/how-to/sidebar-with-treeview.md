@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Sidebar with treeview in ##Platform_Name## Sidebar control | Syncfusion
-description: Learn here all about Sidebar with treeview in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
+title: Sidebar with TreeView in ##Platform_Name## Sidebar control | Syncfusion
+description: Learn here all about Sidebar with TreeView in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Sidebar with treeview 
+control: Sidebar with TreeView
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sidebar with treeview in ##Platform_Name## Sidebar control
+# ##Platform_Name## Sidebar control with TreeView
 
-The following example demonstrates how to render TreeView component inside the Sidebar with dock state and how to achieve expand and collapse the functionalities simultaneously in the sidebar and Treeview.
+The following example demonstrates how to render the TreeView control inside the Sidebar with a dock state and how to achieve simultaneous expand and collapse functionalities in both the Sidebar and TreeView.
 
-On collapse, the LI elements of TreeView show icons only to represent the short sign of the hidden text content. On expand, hidden text content will be set to be visible.
+Upon collapse, the LI elements of the TreeView display icons only, representing a short sign of the hidden text content. When expanded, the hidden text content is made visible.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -24,8 +24,11 @@ On collapse, the LI elements of TreeView show icons only to represent the short 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/sidebar/sidebar-treeview-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/sidebar/sidebar-treeview-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/sidebar/sidebar-treeview-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -36,6 +39,9 @@ On collapse, the LI elements of TreeView show icons only to represent the short 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/sidebar/sidebar-treeview-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/sidebar/sidebar-treeview-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

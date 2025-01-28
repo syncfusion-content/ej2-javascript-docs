@@ -1,4 +1,3 @@
-
 //Define an array of JSON data
 var listData = [
     { text: "Hennessey Venom", id: "list-01" },
@@ -8,7 +7,7 @@ var listData = [
     { text: "Koenigsegg CCR", id: "list-05" },
     { text: "McLaren F1", id: "list-06" }
 ];
-// Initialize ListView component
+// Initialize ListView control
 var listObj = new ej.lists.ListView({
     //Set defined data to dataSource property
     dataSource: listData,
@@ -17,7 +16,7 @@ var listObj = new ej.lists.ListView({
     //Set sortOrder property
     sortOrder: "Ascending"
 });
-//Render initialized ListView component
+//Render initialized ListView control
 listObj.appendTo("#list");
 document.getElementById("textbox").addEventListener("keyup", onKeyUp);
 //Here we are handling filtering of list items using dataManager for ListView
@@ -32,4 +31,3 @@ function onKeyUp(e) {
     }
     listObj.dataBind();
 }
-

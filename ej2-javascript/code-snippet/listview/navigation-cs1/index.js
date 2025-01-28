@@ -8,7 +8,7 @@ var dataSource = [
 ];
 var anchor_template = "<a target='_blank' href='${url}'>${name}</a>";
 
-// Initialize ListView component
+// Initialize ListView control
 var listObj = new ej.lists.ListView({
 
     //Set defined data to dataSource property
@@ -25,7 +25,5 @@ var listObj = new ej.lists.ListView({
 
 });
 
-//Render initialized ListView component
+//Render initialized ListView control
 listObj.appendTo('#element');
-
-

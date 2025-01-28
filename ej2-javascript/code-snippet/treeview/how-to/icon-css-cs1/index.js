@@ -1,9 +1,9 @@
- /**
- * TreeView icon css sample
- */
+/**
+* TreeView icon css sample
+*/
 
-// Hierarchical data source for TreeView component
-  var treeData = [
+// Hierarchical data source for TreeView control
+var treeData = [
   {
     "nodeId": "01", "nodeText": "Music", "icon": "folder", "expanded": true,
     "nodeChild": [
@@ -34,4 +34,3 @@ function onNodeChecking(args) {
   var iconClass = this.getTreeData(nodeId)[0].icon;
   alert('Icon class is ' + iconClass);
 }
-

@@ -20,35 +20,35 @@
 <body>
     <div id='loader'>LOADING....</div>
     <div id='container'>
-        <!-- first sidebar element -->
+        <!-- first Sidebar element -->
         <aside id="default-sidebar">
             <div class="sub-title">
-              <h3> First Sidebar</h3>
+                <h3> First Sidebar</h3>
                 Place your primary content here.
             </div>
         </aside>
-           <!-- dock sidebar element -->
+        <!-- dock Sidebar element -->
         <aside id="dockSidebar">
             <div class="dock">
                 <ul>
                     <li class="sidebar-item" id="toggle">
-                        <span class="e-icons expand"></span>
+                        <span class="e-icons e-chevron-right"></span>
                         <span class="e-text" title="menu">Menu</span>
                     </li>
                     <li class="sidebar-item">
-                        <span class="e-icons home"></span>
+                        <span class="e-icons e-home"></span>
                         <span class="e-text" title="home">Home</span>
                     </li>
                     <li class="sidebar-item">
-                        <span class="e-icons profile"></span>
+                        <span class="e-icons e-home"></span>
                         <span class="e-text" title="profile">Profile</span>
                     </li>
                     <li class="sidebar-item">
-                        <span class="e-icons info"></span>
+                        <span class="e-icons e-circle-info"></span>
                         <span class="e-text" title="info">Info</span>
                     </li>
                     <li class="sidebar-item">
-                        <span class="e-icons settings"></span>
+                        <span class="e-icons e-settings"></span>
                         <span class="e-text" title="settings">Settings</span>
                     </li>
                 </ul>
@@ -61,13 +61,116 @@
                 <p>Click the radio button to switch the sidebar position</p>
                 <div class="center-align">
                     <div class="column">
-                        <button class="e-btn e-info" id="buttonClick" >Open/close hidden Sidebar</button>
+                        <button class="e-btn e-info" id="buttonClick">Open/close hidden Sidebar</button>
                     </div>
                 </div>
             </div>
         </div>
         <!-- end of main content -->
     </div>
+    <style>
+        .title {
+            text-align: center;
+            font-size: 20px;
+            padding: 15px;
+        }
+
+        #default-sidebar {
+            left: 72px;
+        }
+
+        .sub-title {
+            text-align: center;
+            font-size: 16px;
+            padding: 10px;
+        }
+
+        #default-sidebar {
+            background-color: rgb(25, 118, 210);
+            color: #ffffff;
+        }
+
+        #wrapper .sub-title .column {
+            display: inline-block;
+            padding: 10px;
+        }
+
+        .center {
+            text-align: center;
+            display: none;
+            font-size: 13px;
+            font-weight: 400;
+            margin-top: 20px;
+        }
+
+        #dockSidebar.e-sidebar.e-right.e-close {
+            visibility: visible;
+            transform: translateX(0%);
+        }
+
+        #dockSidebar .e-icons::before {
+            font-size: 25px;
+        }
+
+        #dockSidebar.e-close .sidebar-item {
+            padding: 5px 20px;
+        }
+
+        #dockSidebar.e-dock.e-close span.e-text {
+            display: none;
+        }
+
+        #dockSidebar.e-dock.e-open span.e-text {
+            display: inline-block;
+        }
+
+        #dockSidebar li {
+            list-style-type: none;
+            cursor: pointer;
+        }
+
+        #dockSidebar ul {
+            padding: 0px;
+        }
+
+        #dockSidebar.e-sidebar ul li:hover span {
+            color: white
+        }
+
+        #dockSidebar span.e-icons {
+            color: #c0c2c5;
+            line-height: 2
+        }
+
+        .e-open .e-icons {
+            margin-right: 16px;
+        }
+
+        .e-open .e-text {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 23px;
+            font-size: 15px;
+        }
+
+        .sidebar-item {
+            text-align: center;
+            border-bottom: 1px #e5e5e58a solid;
+        }
+
+        .e-sidebar.e-open .sidebar-item {
+            text-align: left;
+            padding-left: 15px;
+            color: #c0c2c5;
+        }
+
+        #dockSidebar.e-sidebar {
+            background: #2d323e;
+            overflow: hidden;
+        }
+
+        /* end of Sidebar styles */
+    </style>
 </body>
 
 </html>

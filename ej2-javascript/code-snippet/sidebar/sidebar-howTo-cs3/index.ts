@@ -1,10 +1,7 @@
-
-
-
 import { Sidebar } from '@syncfusion/ej2-navigations';
 
 let defaultSidebar: Sidebar = new Sidebar({
-    showBackdrop: true, type: "Push",width: '280px'
+    showBackdrop: true, type: "Push", width: '280px'
 });
 defaultSidebar.appendTo('#default-sidebar');
 
@@ -23,6 +20,3 @@ if (closeButton) {
         defaultSidebar.hide();
     };
 }
-
-
-

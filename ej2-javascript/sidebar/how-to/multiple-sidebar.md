@@ -1,20 +1,19 @@
 ---
 layout: post
-title: Multiple sidebar in ##Platform_Name## Sidebar control | Syncfusion
-description: Learn here all about Multiple sidebar in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
+title: Multiple Sidebar in ##Platform_Name## Sidebar control | Syncfusion
+description: Learn here all about Multiple Sidebar in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Multiple sidebar 
+control: Multiple Sidebar
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Multiple sidebar in ##Platform_Name## Sidebar control
+# Multiple ##Platform_Name## Sidebar control
 
-Two Sidebars can be initialized in a web page with same main content.
-Sidebars can be initialized on right side or left side of the main content using [`position`](../../api/sidebar/#position) property.
+Two Sidebars can be initialized on a web page with the same main content. Sidebars can be positioned on the right or left side of the main content using the [`position`](../../api/sidebar/#position) property.
 
->The HTML element with class name `e-main-content` will be considered as the main content and both the Sidebars will behave as side content to this main content area of a web page.
+> The HTML element with the class name `e-main-content` is considered the main content, and both Sidebars will act as side content relative to this main content area of the web page.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -25,8 +24,11 @@ Sidebars can be initialized on right side or left side of the main content using
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/sidebar/multiple-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/sidebar/multiple-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/sidebar/multiple-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -37,6 +39,9 @@ Sidebars can be initialized on right side or left side of the main content using
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/sidebar/multiple-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/sidebar/multiple-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

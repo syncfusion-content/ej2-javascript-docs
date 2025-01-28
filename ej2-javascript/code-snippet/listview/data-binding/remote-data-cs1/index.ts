@@ -1,6 +1,3 @@
-
-
-
 import { ListView } from '@syncfusion/ej2-lists';
 //import DataManager related classes
 import { DataManager, Query } from '@syncfusion/ej2-data';

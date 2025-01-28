@@ -1,12 +1,10 @@
-
-
-
 import { enableRipple } from '@syncfusion/ej2-base';
-enableRipple(true);
 import { TreeView } from '@syncfusion/ej2-navigations';
+enableRipple(true);
 
 let hierarchicalData: { [key: string]: Object }[] = [
-    { id: '01', name: 'Local Disk (C:)', expanded: true,
+    {
+        id: '01', name: 'Local Disk (C:)', expanded: true,
         subChild: [
             {
                 id: '01-01', name: 'Program Files',
@@ -76,7 +74,7 @@ let hierarchicalData: { [key: string]: Object }[] = [
             },
             {
                 id: '03-02', name: 'Documents',
-                    subChild: [
+                subChild: [
                     { id: '03-02-01', name: 'Environment Pollution.docx' },
                     { id: '03-02-02', name: 'Global Warming.ppt' },
                     { id: '03-02-03', name: 'Social Network.pdf' },
@@ -99,6 +97,3 @@ let treeObj: TreeView = new TreeView({
     cssClass: 'custom'
 });
 treeObj.appendTo('#tree');
-
-
-

@@ -1,6 +1,3 @@
-
-
-
 import { ListView } from '@syncfusion/ej2-lists';
 
 //define the array of string
@@ -11,11 +8,8 @@ let listViewInstance: ListView = new ListView({
     //set the data to datasource property
     dataSource: data,
     //set the template for list items
-    template: '<img id="listImage" src="./apple.png" alt="apple" />'
+    template: '<img id="listImage" src="https://ej2.syncfusion.com/documentation/code-snippet/listview/grid-layout-cs1/apple.png" alt="apple" />'
 });
 
 //Render initialized ListView
 listViewInstance.appendTo("#element");
-
-
-

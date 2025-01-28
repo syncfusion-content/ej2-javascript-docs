@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Template in ##Platform_Name## Treeview control | Syncfusion
-description: Learn here all about Template in Syncfusion ##Platform_Name## Treeview control of Syncfusion Essential JS 2 and more.
+title: Template in ##Platform_Name## TreeView control | Syncfusion
+description: Learn here all about Template in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Template 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template in ##Platform_Name## Treeview control
+# Template in ##Platform_Name## TreeView control
 
-The TreeView component allows you to customize the look of TreeView nodes by using the [nodeTemplate](../api/treeview#nodetemplate) property. This property accepts either [template string](../common/template-engine/) or HTML element ID.
+The TreeView control allows you to customize the look of TreeView nodes by using the [nodeTemplate](../api/treeview#nodetemplate) property. This property accepts either a [template string](../common/template-engine/) or an HTML element ID.
 
-In the following sample, employee information such as employee photo, name, and designation have been included using the `nodeTemplate` property.
+In the following sample, employee information such as employee photo, name, and designation has been included using the `nodeTemplate` property.
 
 The template expression should be provided inside the `${...}` interpolation syntax.
 

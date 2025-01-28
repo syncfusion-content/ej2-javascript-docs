@@ -1,7 +1,5 @@
-
-
 import { Sidebar } from '@syncfusion/ej2-navigations';
-import { Button,RadioButton, ChangeArgs } from '@syncfusion/ej2-buttons';
+import { Button, RadioButton, ChangeArgs } from '@syncfusion/ej2-buttons';
 import { enableRipple } from '@syncfusion/ej2-base';
 enableRipple(true);
 
@@ -13,25 +11,26 @@ defaultSidebar.appendTo('#default-sidebar');
 //end of Sidebar initialization
 
 //toggle button initialization
-let togglebtn: Button = new Button({iconCss: 'e-icons burg-icon', isToggle: true, content:'Open'}, '#toggle');
+let togglebtn: Button = new Button({ iconCss: 'e-icons e-menu', isToggle: true, content: 'Open' }, '#toggle');
 
 //Click Event.
-document.getElementById('toggle').onclick = (): void => {
-        if (document.getElementById('toggle').classList.contains('e-active')) {
-            togglebtn.content = 'Close';
-            defaultSidebar.show();
-        } else {
-            togglebtn.content = 'Open';
-            defaultSidebar.hide();
-        }
-    };
+
+document.querySelector('#toggle')?.addEventListener("click", () => {
+    if (document.getElementById('toggle')?.classList.contains('e-active')) {
+        togglebtn.content = 'Close';
+        defaultSidebar.show();
+    } else {
+        togglebtn.content = 'Open';
+        defaultSidebar.hide();
+    }
+})
 
 // Close the Sidebar
-document.getElementById('close').onclick = (): void => {
+document.querySelector('#close')?.addEventListener("click", () => {
     defaultSidebar.hide();
-    document.getElementById('toggle').classList.remove('e-active');
+    document.getElementById('toggle')?.classList.remove('e-active');
     togglebtn.content = 'Open'
-};
+})
 
 let typeOver: RadioButton = new RadioButton({ label: 'Over', name: 'state', change: Change });
 typeOver.appendTo('#over');
@@ -50,11 +49,11 @@ typeAuto.appendTo('#auto');
 //change the togglebtn state.
 function Changestate() {
     if (defaultSidebar.type == "Auto") {
-        document.getElementById('toggle').classList.add('e-active');
+        document.getElementById('toggle')?.classList.add('e-active');
         togglebtn.content = 'close';
     }
     else {
-        document.getElementById('toggle').classList.remove('e-active');
+        document.getElementById('toggle')?.classList.remove('e-active');
         togglebtn.content = 'Open';
     }
 }
@@ -74,5 +73,3 @@ function Change(args: ChangeArgs) {
     Changestate();
     defaultSidebar.dataBind();
 }
-
-

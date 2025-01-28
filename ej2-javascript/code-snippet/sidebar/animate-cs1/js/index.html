@@ -1,4 +1,7 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <title>Essential JS 2 Sidebar</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,74 +11,68 @@
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/material.css" rel="stylesheet">
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-buttons/styles/material.css" rel="stylesheet">
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-navigations/styles/material.css" rel="stylesheet">
-    
-    
-<script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 
 <body>
-    
     <div id="container">
         <aside id="default-sidebar">
-        <div class="title"> Sidebar content</div>
-        <div class="sub-title">
-            Click the button to close the Sidebar
-        </div>
-        <div class="center-align">
-            <button id="close" class="e-btn close-btn">Close Sidebar</button>
-        </div>
+            <div class="title"> Sidebar content</div>
+            <div class="sub-title">
+                Click the button to close the Sidebar
+            </div>
+            <div class="center-align">
+                <button id="close" class="e-btn close-btn">Close Sidebar</button>
+            </div>
         </aside>
         <div>
             <div class="title">Main content</div>
             <div class="sub-title"> Click the button to open/close the Sidebar.</div>
             <div style="padding:20px" class="center-align">
-            <button id="toggle" class="e-btn e-info">Toggle Sidebar</button>
+                <button id="toggle" class="e-btn e-info">Toggle Sidebar</button>
             </div>
         </div>
     </div>
 
+    <script>
+        var ele = document.getElementById('container');
+        if (ele) {
+            ele.style.visibility = "visible";
+        }   
+    </script>
+    <script src="index.js" type="text/javascript"></script>
+    <style>
+        .center-align {
+            text-align: center;
+            padding: 20px;
+        }
 
-<script>
-var ele = document.getElementById('container');
-if(ele) {
-  ele.style.visibility = "visible";
-}   
-      </script>
-<script src="index.js" type="text/javascript"></script>
-<style>
-    .center-align {
-        text-align: center;
-        padding: 20px;
-    }
+        #close,
+        #close:hover,
+        #close:active,
+        #close:focus {
+            /* csslint allow: adjoining-classes*/
+            background: #fafafa;
+            color: black
+        }
 
-    #close,
-    #close:hover,
-    #close:active,
-    #close:focus {
-        /* csslint allow: adjoining-classes*/
-        background: #fafafa;
-        color: black
-    }
+        .title {
+            text-align: center;
+            font-size: 20px;
+            padding: 15px;
+        }
 
-    .title {
-        text-align: center;
-        font-size: 20px;
-        padding: 15px;
-    }
+        .sub-title {
+            text-align: center;
+            font-size: 16px;
+            padding: 10px;
+        }
 
-    .sub-title {
-        text-align: center;
-        font-size: 16px;
-        padding: 10px;
-    }
+        #default-sidebar {
+            background-color: rgb(25, 118, 210);
+            color: #ffffff;
+        }
+    </style>
+</body>
 
-    body {
-        margin: 0;
-    }
-
-    #default-sidebar {
-        background-color: rgb(25, 118, 210);
-        color: #ffffff;
-    }
-</style>
-</body></html>
+</html>

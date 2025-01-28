@@ -1,6 +1,3 @@
-
-
-
 import { enableRipple } from '@syncfusion/ej2-base';
 import { TreeView } from '@syncfusion/ej2-navigations';
 enableRipple(true);
@@ -9,9 +6,10 @@ enableRipple(true);
  * TreeView tooltip sample
  */
 
-    // Hierarchical data source for TreeView component
-    let hierarchicalData: { [key: string]: Object }[] = [
-    { id: '01', name: 'Local Disk (C:)', expanded: true, tooltip: 'This is parent directory',
+// Hierarchical data source for TreeView control
+let hierarchicalData: { [key: string]: Object }[] = [
+    {
+        id: '01', name: 'Local Disk (C:)', expanded: true, tooltip: 'This is parent directory',
         subChild: [
             {
                 id: '01-01', name: 'Program Files', tooltip: 'This is child directory',
@@ -43,7 +41,7 @@ enableRipple(true);
         id: '02', name: 'Local Disk (D:)', tooltip: 'This is parent directory',
         subChild: [
             {
-                id: '02-01', name: 'Personals',tooltip: 'This is child directory',
+                id: '02-01', name: 'Personals', tooltip: 'This is child directory',
                 subChild: [
                     { id: '02-01-01', name: 'My photo.png' },
                     { id: '02-01-02', name: 'Rental document.docx' },
@@ -51,7 +49,7 @@ enableRipple(true);
                 ]
             },
             {
-                id: '02-02', name: 'Projects',tooltip: 'This is child directory',
+                id: '02-02', name: 'Projects', tooltip: 'This is child directory',
                 subChild: [
                     { id: '02-02-01', name: 'ASP Application' },
                     { id: '02-02-02', name: 'TypeScript Application' },
@@ -69,7 +67,7 @@ enableRipple(true);
         ]
     },
     {
-        id: '03', name: 'Local Disk (E:)', icon: 'folder',tooltip: 'This is parent directory',
+        id: '03', name: 'Local Disk (E:)', icon: 'folder', tooltip: 'This is parent directory',
         subChild: [
             {
                 id: '03-01', name: 'Pictures', tooltip: 'This is child directory',
@@ -81,7 +79,7 @@ enableRipple(true);
             },
             {
                 id: '03-02', name: 'Documents', tooltip: 'This is child directory',
-                    subChild: [
+                subChild: [
                     { id: '03-02-01', name: 'Environment Pollution.docx' },
                     { id: '03-02-02', name: 'Global Warming.ppt' },
                     { id: '03-02-03', name: 'Social Network.pdf' },
@@ -103,6 +101,3 @@ let tree1: TreeView = new TreeView({
     fields: { dataSource: hierarchicalData, id: 'id', text: 'name', child: 'subChild' }
 });
 tree1.appendTo('#tree');
-
-
-

@@ -1,6 +1,3 @@
-
-
-
 import { ListView, SelectEventArgs } from '@syncfusion/ej2-lists';
 
 let dataSource: { [key: string]: Object }[] = [
@@ -14,7 +11,7 @@ let dataSource: { [key: string]: Object }[] = [
         id: '02', text: 'Videos', icon: 'folder',
         child: [
             { id: '02-01', text: 'Naturals.mp4', icon: 'file' },
-            { id: '02-02', text: 'Wild.mpeg', icon: 'file' },
+            { id: '02-02', text: 'Wild.mpeg', icon: 'file' }
         ]
     },
     {
@@ -24,7 +21,7 @@ let dataSource: { [key: string]: Object }[] = [
             { id: '03-02', text: 'Global Water, Sanitation, & Hygiene.docx', icon: 'file' },
             { id: '03-03', text: 'Global Warming.ppt', icon: 'file' },
             { id: '03-04', text: 'Social Network.pdf', icon: 'file' },
-            { id: '03-05', text: 'Youth Empowerment.pdf', icon: 'file' },
+            { id: '03-05', text: 'Youth Empowerment.pdf', icon: 'file' }
         ]
     },
     {
@@ -38,18 +35,10 @@ let dataSource: { [key: string]: Object }[] = [
                     { id: '04-01-03', text: 'WIN_20160726_094119.JPG', icon: 'file' }
                 ]
             },
-            {
-                id: '04-02', text: 'Wind.jpg', icon: 'file'
-            },
-            {
-                id: '04-02', text: 'Stone.jpg', icon: 'file'
-            },
-            {
-                id: '04-02', text: 'Home.jpg', icon: 'file'
-            },
-            {
-                id: '04-02', text: 'Bridge.png', icon: 'file'
-            }
+            { id: '04-02', text: 'Wind.jpg', icon: 'file' },
+            { id: '04-03', text: 'Stone.jpg', icon: 'file' },
+            { id: '04-04', text: 'Home.jpg', icon: 'file' },
+            { id: '04-05', text: 'Bridge.png', icon: 'file' }
         ]
     },
     {
@@ -58,9 +47,9 @@ let dataSource: { [key: string]: Object }[] = [
             { id: '05-01', text: 'UI-Guide.pdf', icon: 'file' },
             { id: '05-02', text: 'Tutorials.zip', icon: 'file' },
             { id: '05-03', text: 'Game.exe', icon: 'file' },
-            { id: '05-04', text: 'TypeScript.7z', icon: 'file' },
+            { id: '05-04', text: 'TypeScript.7z', icon: 'file' }
         ]
-    },
+    }
 ];
 //Initialize the listview control
 let listviewInstance: ListView = new ListView({
@@ -92,6 +81,3 @@ function onSelect(args: SelectEventArgs) {
     //Add new file to the child page of selected list item
     this.dataSource[args.index].child.push({ id: '01-02', text: 'Newly Added File', icon: 'file', htmlAttributes: { role: 'li', class: 'list' } });
 }
-
-
-

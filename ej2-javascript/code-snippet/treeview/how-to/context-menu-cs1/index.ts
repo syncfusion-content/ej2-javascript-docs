@@ -1,16 +1,13 @@
-
-
-
 import { enableRipple } from '@syncfusion/ej2-base';
 import { ContextMenu, MenuEventArgs, MenuItemModel, ContextMenuModel, TreeView, BeforeOpenCloseMenuEventArgs, NodeClickEventArgs } from '@syncfusion/ej2-navigations';
 enableRipple(true);
 
 /**
- * The node operation in tree view using context menu
+ * The node operation in TreeView using context menu
  */
 //define the data source for TreeView
-let data: { [key: string]: Object } [] = [
-    { id: '1', name: 'Local Disk (C:)', hasAttribute: { class:'remove rename'}, hasChild: true, expanded: true, },
+let data: { [key: string]: Object }[] = [
+    { id: '1', name: 'Local Disk (C:)', hasAttribute: { class: 'remove rename' }, hasChild: true, expanded: true, },
     { id: '2', name: 'Program Files', pid: '1', hasChild: true },
     { id: '3', name: 'Windows NT', pid: '2' },
     { id: '4', name: 'Windows Mail', pid: '2' },
@@ -23,7 +20,7 @@ let data: { [key: string]: Object } [] = [
     { id: '11', name: 'Boot', pid: '10' },
     { id: '12', name: 'FileManager', pid: '10' },
     { id: '13', name: 'System32', pid: '10' },
-    { id: '14', name: 'Local Disk (D:)', hasAttribute: { class: 'remove' }, hasChild: true},
+    { id: '14', name: 'Local Disk (D:)', hasAttribute: { class: 'remove' }, hasChild: true },
     { id: '15', name: 'Personals', pid: '14', hasChild: true },
     { id: '16', name: 'My photo.png', pid: '15' },
     { id: '17', name: 'Rental document.docx', pid: '15' },
@@ -53,17 +50,17 @@ let data: { [key: string]: Object } [] = [
 
 // Render the TreeView by mapping its fields property with data source properties
 let treeObj: TreeView = new TreeView({
-    fields: { dataSource: data, id: 'id', text: 'name', parentID: 'pid', hasChildren: 'hasChild', htmlAttributes:'hasAttribute'},
+    fields: { dataSource: data, id: 'id', text: 'name', parentID: 'pid', hasChildren: 'hasChild', htmlAttributes: 'hasAttribute' },
     nodeClicked: nodeClick
 });
 treeObj.appendTo('#tree');
 function nodeClick(args: NodeClickEventArgs) {
-  if (args.event.which === 3) {
-    treeObj.selectedNodes = [args.node.getAttribute('data-uid')]
-  }
+    if (args.event.which === 3) {
+        treeObj.selectedNodes = [args.node.getAttribute('data-uid')]
+    }
 }
 
-//Render the context menu with target as Treeview
+//Render the context menu with target as TreeView
 let menuItems: MenuItemModel[] = [
     { text: 'Add New Item' },
     { text: 'Rename Item' },
@@ -72,17 +69,17 @@ let menuItems: MenuItemModel[] = [
 let menuOptions: ContextMenuModel = {
     target: '#tree',
     items: menuItems,
-    select: menuclick,
-    beforeOpen: beforeopen
+    select: menuClick,
+    beforeOpen: beforeOpen
 };
 let menuObj: ContextMenu = new ContextMenu(menuOptions, '#contextmenu');
 
 let index: number = 1;
-function menuclick(args: MenuEventArgs) {
+function menuClick(args: MenuEventArgs) {
     let targetNodeId: string = treeObj.selectedNodes[0];
     if (args.item.text == "Add New Item") {
-    let nodeId: string = "tree_" + index;
-    let item: { [key: string]: Object } = { id: nodeId, name: "New Folder" };
+        let nodeId: string = "tree_" + index;
+        let item: { [key: string]: Object } = { id: nodeId, name: "New Folder" };
         treeObj.addNodes([item], targetNodeId, null);
         index++;
         data.push(item);
@@ -96,9 +93,9 @@ function menuclick(args: MenuEventArgs) {
     }
 }
 
-function beforeopen(args: BeforeOpenCloseMenuEventArgs) {
-  let targetNodeId: string = treeObj.selectedNodes[0];
-  let targetNode: Element = document.querySelector('[data-uid="' + targetNodeId + '"]');
+function beforeOpen(args: BeforeOpenCloseMenuEventArgs) {
+    let targetNodeId: string = treeObj.selectedNodes[0];
+    let targetNode: Element = document.querySelector('[data-uid="' + targetNodeId + '"]') as Element;
     if (targetNode.classList.contains('remove')) {
         menuObj.enableItems(['Remove Item'], false);
     }
@@ -112,6 +109,3 @@ function beforeopen(args: BeforeOpenCloseMenuEventArgs) {
         menuObj.enableItems(['Rename Item'], true);
     }
 }
-
-
-

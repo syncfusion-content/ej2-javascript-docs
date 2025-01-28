@@ -30,7 +30,7 @@ var countries = [
 var treeObj = new ej.navigations.TreeView({
     fields: { dataSource: countries, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild' },
     showCheckBox: true,
-    checkedNodes: ['2','6'],
+    checkedNodes: ['2', '6'],
     nodeChecked: nodeChecked
 });
 treeObj.appendTo('#tree');
@@ -38,5 +38,3 @@ treeObj.appendTo('#tree');
 function nodeChecked(args) {
     alert("The checked node's id: " + treeObj.checkedNodes); // To alert the checked node's id.
 }
-
-

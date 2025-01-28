@@ -1,4 +1,7 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
   <title>Essential JS 2 for ListView </title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,16 +15,54 @@
 </head>
 
 <body>
-  
   <div id="container">
-  <div id="element"></div>
+    <div id="element"></div>
   </div>
 
-<script>
-var ele = document.getElementById('container');
-if(ele) {
-ele.style.visibility = "visible";
-}   
-    </script>
-<script src="index.js" type="text/javascript"></script>
-</body></html>
+  <script>
+    var ele = document.getElementById('container');
+    if (ele) {
+      ele.style.visibility = "visible";
+    }   
+  </script>
+  <script src="index.js" type="text/javascript"></script>
+  <style>
+    #element {
+      display: block;
+      max-width: 300px;
+      margin: auto;
+      border: 1px solid #dddddd;
+      border-radius: 3px;
+    }
+
+    #element .e-list-header {
+      background: rgb(2, 120, 215);
+      color: white;
+      font-size: 19px;
+      font-weight: 500;
+    }
+
+    #element.e-listview .e-list-item {
+      padding: 10px 16px;
+      height: 61px;
+
+    }
+
+    #element .settings-container .name {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 20px;
+      height: 20px;
+    }
+
+    #element .settings-container .description {
+      line-height: 20px;
+      height: 20px;
+      font-size: 10px;
+      font-style: italic;
+      margin-top: -2px;
+    }
+  </style>
+</body>
+
+</html>

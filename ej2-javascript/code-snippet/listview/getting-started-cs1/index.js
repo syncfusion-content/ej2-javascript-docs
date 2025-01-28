@@ -7,12 +7,10 @@ var arts = [
     { text: 'Animation Art', id: '05' },
     { text: 'Oil Painting', id: '06' }
 ];
-//Initialize ListView component
+//Initialize ListView control
 var listviewInstance = new ej.lists.ListView({
     //set the data to datasource property
     dataSource: arts
 });
 //Render initialized ListView
 listviewInstance.appendTo("#element");
-
-

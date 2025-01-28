@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ej1 api migration in ##Platform_Name## Listview control | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion ##Platform_Name## Listview control of Syncfusion Essential JS 2 and more.
+title: Ej1 api migration in ##Platform_Name## ListView control | Syncfusion
+description: Learn here all about Ej1 api migration in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Ej1 api migration 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in ##Platform_Name## Listview control
+# Ej1 api migration in ##Platform_Name## ListView control
 
 This article describes the API migration process of ListView component from Essential JS 1 to Essential JS 2.
 

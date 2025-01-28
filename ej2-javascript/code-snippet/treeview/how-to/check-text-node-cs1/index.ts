@@ -1,16 +1,13 @@
-
-
-
-import { enableRipple } from '@syncfusion/ej2-base';
-import { TreeView } from '@syncfusion/ej2-navigations';
+import { enableRipple, KeyboardEventArgs } from '@syncfusion/ej2-base';
+import { TreeView, NodeClickEventArgs, NodeKeyPressEventArgs } from '@syncfusion/ej2-navigations';
 enableRipple(true);
 
 /**
  * TreeView check/uncheck the check box, while clicking on the tree node text sample
  */
 
-    // Data source for TreeView component
-    let countries: { [key: string]: Object } [] = [
+// Data source for TreeView control
+let countries: { [key: string]: Object }[] = [
     { id: 1, name: 'Australia', hasChild: true, expanded: true },
     { id: 2, pid: 1, name: 'New South Wales' },
     { id: 3, pid: 1, name: 'Victoria' },
@@ -37,8 +34,8 @@ enableRipple(true);
     { id: 25, pid: 21, name: 'Punjab' }
 ];
 
-    // Render the TreeView with checkboxes
-    let treeObj: TreeView = new TreeView({
+// Render the TreeView with checkboxes
+let treeObj: TreeView = new TreeView({
     fields: { dataSource: countries, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild' },
     showCheckBox: true,
     nodeClicked: nodeCheck,
@@ -46,10 +43,10 @@ enableRipple(true);
 });
 treeObj.appendTo('#tree');
 
-function nodeCheck(args: NodeKeyPressEventArgs | NodeClickEventArgs ): void {
+function nodeCheck(args: NodeKeyPressEventArgs | NodeClickEventArgs): void {
     let checkedNode: any = [args.node];
-    if (args.event.target.classList.contains('e-fullrow') || args.event.key == "Enter") {
-       let getNodeDetails: any = treeObj.getNode(args.node);
+    if ((args.event.target as HTMLElement).classList.contains('e-fullrow') || (args.event as KeyboardEventArgs).key == "Enter") {
+        let getNodeDetails: any = treeObj.getNode(args.node);
         if (getNodeDetails.isChecked == 'true') {
             treeObj.uncheckAll(checkedNode);
         } else {
@@ -57,7 +54,3 @@ function nodeCheck(args: NodeKeyPressEventArgs | NodeClickEventArgs ): void {
         }
     }
 }
-
-
-
-

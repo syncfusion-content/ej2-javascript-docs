@@ -66,7 +66,7 @@ btnobj4.appendTo('#fourthBtn');
 
 
 //Here, all list items are moved to the second list on clicking move all button
-btnobj1.element.addEventListener('click', function() {
+btnobj1.element.addEventListener('click', function () {
     listObj2.dataSource = Array.prototype.concat.call(listObj1.dataSource, listObj2.dataSource);
     listObj2.dataBind();
     updateFirstListData();
@@ -79,7 +79,7 @@ btnobj1.element.addEventListener('click', function() {
 });
 
 //Here, the selected list items are moved to the second list on clicking move button
-btnobj2.element.addEventListener('click', function() {
+btnobj2.element.addEventListener('click', function () {
     var selectedItem = listObj1.getSelectedItems();
     listObj2.dataSource = Array.prototype.concat.call(listObj2.dataSource, selectedItem.data);
     listObj2.dataBind();
@@ -93,7 +93,7 @@ btnobj2.element.addEventListener('click', function() {
 });
 
 //Here, the selected list items are moved to the first list on clicking move button
-btnobj3.element.addEventListener('click', function() {
+btnobj3.element.addEventListener('click', function () {
     var selectedItem = listObj2.getSelectedItems();
     listObj1.dataSource = Array.prototype.concat.call(listObj1.dataSource, selectedItem.data);
     listObj1.dataBind();
@@ -108,7 +108,7 @@ btnobj3.element.addEventListener('click', function() {
 });
 
 //Here, all list items are moved to the first list on clicking move all button
-btnobj4.element.addEventListener('click', function() {
+btnobj4.element.addEventListener('click', function () {
     listObj1.dataSource = Array.prototype.concat.call(listObj1.dataSource, listObj2.dataSource);
     listObj1.dataBind();
     updateSecondListData();
@@ -122,7 +122,7 @@ btnobj4.element.addEventListener('click', function() {
 
 //Here, the ListView data source is updated to the first list
 function updateFirstListData() {
-    Array.prototype.forEach.call(listObj1.element.querySelectorAll('.e-list-item'), function(list) {
+    Array.prototype.forEach.call(listObj1.element.querySelectorAll('.e-list-item'), function (list) {
         firstListData.forEach(function (data, index) {
             if (list.innerText.trim() === data.text) {
                 firstListData.splice(index, 1)
@@ -140,7 +140,7 @@ function updateFirstListData() {
 
 //Here, the ListView dataSource is updated for the second list
 function updateSecondListData() {
-    Array.prototype.forEach.call(listObj2.element.querySelectorAll('.e-list-item'), function(list) {
+    Array.prototype.forEach.call(listObj2.element.querySelectorAll('.e-list-item'), function (list) {
         secondListData.forEach(function (data, index) {
             if (list.innerText.trim() === data.text) {
                 secondListData.splice(index, 1)
@@ -205,5 +205,3 @@ function setButtonState() {
     }
 
 }
-
-

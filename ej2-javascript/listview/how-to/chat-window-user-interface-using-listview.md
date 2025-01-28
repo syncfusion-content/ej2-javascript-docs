@@ -1,23 +1,22 @@
 ---
 layout: post
-title: Chat window user interface using listview in ##Platform_Name## Listview control | Syncfusion
-description: Learn here all about Chat window user interface using listview in Syncfusion ##Platform_Name## Listview control of Syncfusion Essential JS 2 and more.
+title: Chat window user interface using ListView in ##Platform_Name## ListView control | Syncfusion
+description: Learn here all about Chat window user interface using ListView in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Chat window user interface using listview 
+control: Chat window user interface using ListView
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Chat window user interface using listview in ##Platform_Name## Listview control
+# Chat window user interface using ##Platform_Name## ListView control
 
-ListView can be customized as chat window. To achieve that, use the ListView [template](../../api/list-view/#template) property and [Avatar](../../avatar/getting-started) control.
+ListView can be customized to function as a chat window. To achieve this, use the ListView [template](../../api/list-view/#template) property alongside the [Avatar](../../avatar/getting-started) control.
 
-    * The Listview template property is used to showcase the ListView as chat window.
-    * Avatar control is used to design the image of contact person.
+* The ListView template property is used to showcase the ListView as chat window.
+* Avatar control is used to design the image of contact person.
 
-Refer the below template code snippet for Template of chat window.
-
+Refer to the template code snippet below for a chat window implementation:
 ```ts
 let template =
   '<div class="settings">' +
@@ -46,7 +45,7 @@ let template =
 
 ## Chat order in template
 
-In ListView template, we have rendered the list items based on receiver and sender information from dataSource of listview.
+The ListView template is rendered with list items based on sender and receiver information from the ListView's data source.
 
 ## Adding messages to chat window
 
@@ -73,12 +72,15 @@ document.getElementById("btn").addEventListener("click", e => {
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/listview/chat-window-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/chat-window-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/chat-window-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -92,6 +94,9 @@ document.getElementById("btn").addEventListener("click", e => {
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/chat-window-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/chat-window-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -1,6 +1,3 @@
-
-
-
 import { ListView } from '@syncfusion/ej2-lists';
 
 //define the array of JSON
@@ -31,6 +28,3 @@ let listviewInstance: ListView = new ListView({
 
 //Render initialized ListView
 listviewInstance.appendTo("#element");
-
-
-

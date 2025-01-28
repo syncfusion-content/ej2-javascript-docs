@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Sidebar with variation animation in ##Platform_Name## Sidebar control | Syncfusion
-description: Learn here all about Sidebar with variation animation in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
+title: Sidebar with Variation Animation in ##Platform_Name## Sidebar control | Syncfusion
+description: Learn here all about Sidebar with Variation Animation in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Sidebar with variation animation 
+control: Sidebar with Variation Animation
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sidebar with variation animation in ##Platform_Name## Sidebar control
+# Variation Animation in ##Platform_Name## Sidebar control
 
-In the following example, the sidebar is rendered with custom animation effects. Click the buttons available in the main content area to check how the custom animations works with sidebar.
+In the following example, the Sidebar is rendered with custom animation effects. Click the buttons available in the main content area to observe how the custom animations work with the Sidebar.
 
-Sidebar will automatically adjust expanding animation to match any custom size specified in `CSS` styles.
+The Sidebar will automatically adjust its expanding animation to match any custom size specified in `CSS` styles.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -24,8 +24,11 @@ Sidebar will automatically adjust expanding animation to match any custom size s
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/sidebar/animation-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/sidebar/animation-cs1/styles.css %}
+{% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/sidebar/animation-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -36,6 +39,9 @@ Sidebar will automatically adjust expanding animation to match any custom size s
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/sidebar/animation-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/sidebar/animation-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Treeview control | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Treeview control of Syncfusion Essential JS 2 and more details.
+title: Es5 getting started with ##Platform_Name## TreeView control | Syncfusion
+description:  Checkout and learn about Es5 getting started with ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Treeview control
+# Es5 getting started in ##Platform_Name## TreeView control
 
 The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 

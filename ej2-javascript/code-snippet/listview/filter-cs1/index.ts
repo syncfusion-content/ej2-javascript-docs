@@ -1,6 +1,3 @@
-
-
-
 import { ListView } from "@syncfusion/ej2-lists";
 import { enableRipple } from "@syncfusion/ej2-base";
 import { DataManager, Query } from "@syncfusion/ej2-data";
@@ -27,7 +24,7 @@ let listObj: ListView = new ListView({
 //Render the initialized ListView control
 listObj.appendTo("#list");
 
-document.getElementById("textbox").addEventListener("keyup", onKeyUp);
+document.getElementById("textbox")?.addEventListener("keyup", onKeyUp);
 //Here, the list items are filtered using the DataManager instance for ListView
 function onKeyUp() {
   let value = (document.getElementById("textbox") as HTMLInputElement).value;
@@ -41,6 +38,3 @@ function onKeyUp() {
   }
   listObj.dataBind();
 }
-
-
-

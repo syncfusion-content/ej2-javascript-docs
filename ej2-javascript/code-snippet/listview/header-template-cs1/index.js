@@ -8,7 +8,6 @@ var fruitsdata = [
     { text: 'Pineapple', id: '7', imgUrl: './pineapple.jpg' },
     { text: 'Melon', id: '8', imgUrl: './melon.jpg' },
     { text: 'Lemon', id: '9', imgUrl: './lemon.jpg' },
-    { text: 'Cherry', id: '10', imgUrl: './cherry.jpg' },
 ];
 
 var listViewInstance = new ej.lists.ListView({
@@ -25,4 +24,3 @@ function renderHeaderButtons() {
         new ej.buttons.Button({ iconCss: `e-icons e-${item}-icon`, cssClass: 'e-small e-round', isPrimary: true }, `#${item}`)
     });
 }
-

@@ -3,7 +3,7 @@ layout: post
 title: Customize ListView as grid layout in ##Platform_Name## | Syncfusion
 description: Learn here all about customize ListView as grid layout in Syncfusion ##Platform_Name##, it's elements and more.
 platform: ej2-javascript
-control: Customize listview as grid layout 
+control: Customize ListView as grid layout
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,23 +11,20 @@ domainurl: ##DomainURL##
 
 # Customize ListView as grid layout in ##Platform_Name##
 
-In Listview, list items can be rendered in grid layout with following data manipulations.
+In ListView, list items can be rendered in a grid layout with the following data manipulations.
 
 * Add Item
-
 * Remove Item
-
 * Sort Items
-
 * Filter Items
 
 ## Grid Layout
 
-In this section, we will discuss about rendering of list items in grid layout.
+In this section, we will discuss the rendering of list items in a grid layout.
 
-* Initialize and render ListView with dataSource which will render list items in list layout.
+* Initialize and render ListView with a `dataSource`, which will render list items in list layout.
 
-* Now, add the below CSS to list item. This will make list items to render in grid layout
+* Now, add the following CSS to list items. This will make list items render in a grid layout.
 
 ```
 
@@ -39,19 +36,22 @@ In this section, we will discuss about rendering of list items in grid layout.
 
 ```
 
-In the below sample, we have rendered List items in grid layout.
+In the sample below, we have rendered list items in a grid layout.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/listview/grid-layout-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/grid-layout-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/grid-layout-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/listview/grid-layout-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -62,6 +62,9 @@ In the below sample, we have rendered List items in grid layout.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/grid-layout-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/grid-layout-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -82,11 +85,11 @@ We can add list item using [`addItem`](../../api/list-view/#additem) API. This w
 
 ```
 
-In the below sample, you can add new fruit item by clicking add button which will open dialog box with fruit name and image URL text box. After entering the item details, click the add button. This will add your new fruit item.
+In the sample below, you can add a new fruit item by clicking the add button, which will open a dialog box with fruit name and image URL text boxes. After entering the item details, click the add button to add your new fruit item.
 
 ### Remove item
 
-We can remove list item using [`removeItem`](../../api/list-view/#removeitem) API. This will accept fields with `id` or list item element as argument.
+We can remove a list item using the [`removeItem`](../../api/list-view/#removeitem) API. This will accept fields with `id` or a list item element as an argument.
 
 ```ts
 
@@ -98,7 +101,7 @@ In the below sample, you can remove fruit by hovering the fruit item which will 
 
 ### Sort Items
 
-Listview can be sorted either in Ascending or Descending order. To enable sorting in your ListView, set [`sortOrder`](../../api/list-view/#sortorder) as `Ascending` or `Descending`.
+ListView can be sorted either in ascending or descending order. To enable sorting in your ListView, set [`sortOrder`](../../api/list-view/#sortorder) as `Ascending` or `Descending`.
 
 ```ts
 
@@ -120,7 +123,7 @@ In the below sample, we have sorted fruits in `Ascending` order. To sort it in d
 
 ### Filter Items
 
-Listview data can be filtered with the help of [`dataManager`](../../data/getting-started/). After filtering the data, update ListView [`dataSource`](../../api/list-view/#datasource) with filtered data.
+ListView data can be filtered with the help of [`dataManager`](../../data/getting-started/). After filtering the data, update the ListView [`dataSource`](../../api/list-view/#datasource) with the filtered data.
 
 ```ts
 
@@ -133,19 +136,22 @@ listViewInstance.dataSource = filteredData;
 
 ```
 
-In the below sample, we can filter fruit items with the help of search text box. This will filter fruit items based on your input. Here we used [`startswith`](../../data/querying#filter-operators) of input text to filter data in DataManager.
+In the sample below, we can filter fruit items with the help of a search text box. This will filter fruit items based on your input. Here we used [`startswith`](../../data/querying#filter-operators) with the input text to filter data in DataManager.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/listview/manipulation-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/manipulation-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/manipulation-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/listview/manipulation-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -156,6 +162,9 @@ In the below sample, we can filter fruit items with the help of search text box.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/manipulation-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/manipulation-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

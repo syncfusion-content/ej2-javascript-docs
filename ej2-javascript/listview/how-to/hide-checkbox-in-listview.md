@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Hide checkbox in listview in ##Platform_Name## Listview control | Syncfusion
-description: Learn here all about Hide checkbox in listview in Syncfusion ##Platform_Name## Listview control of Syncfusion Essential JS 2 and more.
+title: Hide checkbox in ##Platform_Name## ListView control | Syncfusion
+description: Learn here all about Hide checkbox  in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Hide checkbox in listview 
+control: Hide checkbox in ListView
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Hide checkbox in listview in ##Platform_Name## Listview control
+# Hide checkbox in ##Platform_Name## ListView control
 
-The checkbox of the any list item can be hidden by using [`htmlAttributes`](../../api/list-view/#htmlattributes) of [`fields`](../../api/list-view/#fields) object. With the help of `htmlAttributes` we can add unique class to each list item that will be rendered from the data source, from the CSS class we can hide the checkbox of the list item.
+The checkbox of any list item can be hidden by using the [`htmlAttributes`](../../api/list-view/#htmlattributes) of the [`fields`](../../api/list-view/#fields) object. With the help of `htmlAttributes`, a unique class can be added to each list item that is rendered from the data source, allowing you to hide the checkbox of the list item via that CSS class.
 
-In this sample, we had hidden the multiple leaf node of nested list. The `e-checkbox-hidden` class has been added in the data source where the checkbox needs to be hidden. Refer the below snippet for simple data source.
+In this sample, multiple leaf nodes of a nested list have been hidden. The `e-checkbox-hidden` class has been added in the data source where the checkbox needs to be hidden. Refer to the snippet below for a simple data source.
 
 ```ts
     {
@@ -24,21 +24,27 @@ In this sample, we had hidden the multiple leaf node of nested list. The `e-chec
     }
 ```
 
-Even though we have hidden the checkbox the functionality will be same for the list item which might affect the `getSelectedItems` method. So, to counteract that we will follow certain logic in the `select` event. The Logic here is to remove the `e-active` class from the other checkbox hidden list item which will be added when we select on that item and retain `e-active` on currently selected item.
+Even though we have hidden the checkbox, the functionality remains the same for the list item, which might affect the [getSelectedItems](../../api/list-view/#getselecteditems) method. To counter this, we implement certain logic in the `select` event. The logic here is to remove the `e-active` class from other checkbox-hidden list items that get added when selecting that item, and retain `e-active` on the currently selected item.
 
-> In this process we will exclude the visible checkbox list items and only consider the hidden checkbox items.
+> This process excludes the visible checkbox list items and only considers the hidden checkbox items.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/listview/hide-checkbox-cs1/index.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/listview/hide-checkbox-cs1/datasource.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/hide-checkbox-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/hide-checkbox-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/listview/hide-checkbox-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -47,8 +53,14 @@ Even though we have hidden the checkbox the functionality will be same for the l
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/listview/hide-checkbox-cs1/index.js %}
 {% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/listview/hide-checkbox-cs1/es5-datasource.js%}
+{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/hide-checkbox-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/hide-checkbox-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

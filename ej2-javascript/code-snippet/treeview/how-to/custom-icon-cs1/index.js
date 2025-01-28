@@ -1,7 +1,8 @@
 ej.base.enableRipple(true);
 
 var hierarchicalData = [
-    { id: '01', name: 'Local Disk (C:)', expanded: true,
+    {
+        id: '01', name: 'Local Disk (C:)', expanded: true,
         subChild: [
             {
                 id: '01-01', name: 'Program Files',
@@ -71,7 +72,7 @@ var hierarchicalData = [
             },
             {
                 id: '03-02', name: 'Documents',
-                    subChild: [
+                subChild: [
                     { id: '03-02-01', name: 'Environment Pollution.docx' },
                     { id: '03-02-02', name: 'Global Warming.ppt' },
                     { id: '03-02-03', name: 'Social Network.pdf' },
@@ -94,6 +95,3 @@ var treeObj = new ej.navigations.TreeView({
     cssClass: 'custom'
 });
 treeObj.appendTo('#tree');
-
-
-

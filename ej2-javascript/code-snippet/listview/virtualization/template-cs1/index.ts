@@ -2,8 +2,7 @@ import { ListView, Virtualization } from '@syncfusion/ej2-lists';
 
 ListView.Inject(Virtualization);
 
-let listData: { [key: string]: string | object }[] = [];
-listData = [
+let listData: { [key: string]: string | object }[] = [
     { name: 'Nancy', icon: 'N', id: '0', },
     { name: 'Andrew', icon: 'A', id: '1' },
     { name: 'Janet', icon: 'J', id: '2' },
@@ -22,10 +21,10 @@ for (let i: number = 10; i <= 1010; i++) {
 }
 
 var template: Function = (data: any) => {
-    var result = `<div class="e-list-wrapper e-list-avatar" >`+
-    `<span class="e-avatar e-avatar-circle ${data.icon} ${data.imgUrl ? 'hideUI' : 'showUI'  }">${data.icon}</span> <img class="e-avatar e-avatar-circle ${data.imgUrl ? 'showUI' : 'hideUI' }" ` +
-    `src="${data.imgUrl ?  data.imgUrl : ' ' }" />` +
-    `<span class="e-list-content">${data.name}</span></div>`;
+    var result = `<div class="e-list-wrapper e-list-avatar" >` +
+        `<span class="e-avatar e-avatar-circle ${data.icon} ${data.imgUrl ? 'hideUI' : 'showUI'}">${data.icon}</span> <img class="e-avatar e-avatar-circle ${data.imgUrl ? 'showUI' : 'hideUI'}" ` +
+        `src="${data.imgUrl ? data.imgUrl : ' '}" />` +
+        `<span class="e-list-content">${data.name}</span></div>`;
     return result;
 };
 
@@ -46,9 +45,9 @@ let listObj: ListView = new ListView({
     //Set true to show header title
     showHeader: true,
     cssClass: 'e-list-template',
-    
+
     //Set defined customized template
-    template:  template
+    template: template
 
 });
 

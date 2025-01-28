@@ -1,6 +1,3 @@
-
-
-
 import { ListView, SelectedCollection } from '@syncfusion/ej2-lists';
 import { Button } from '@syncfusion/ej2-buttons';
 //define the array of string
@@ -30,9 +27,9 @@ listviewInstance.appendTo("#element");
 let button: Button = new Button();
 button.appendTo("#btn")
 
-document.getElementById('btn').addEventListener('click', () => {
+document.getElementById('btn')?.addEventListener('click', () => {
     let selecteditem: SelectedCollection = listviewInstance.getSelectedItems() as SelectedCollection;
-    let data: HTMLElement = document.getElementById('val');
+    let data: HTMLElement = document.getElementById('val') as HTMLElement;
     data.innerHTML = "";
     let row1: HTMLTableRowElement = document.createElement('tr');
     let header1: HTMLTableHeaderCellElement = document.createElement('th');
@@ -41,7 +38,7 @@ document.getElementById('btn').addEventListener('click', () => {
     let header2 = document.createElement('th');
     header2.innerHTML = 'Id';
     row1.appendChild(header2);
-    document.getElementById('val').appendChild(row1);
+    document.getElementById('val')?.appendChild(row1);
     for (let i: number = 0; i < (selecteditem["data"] as { [key: string]: object }[]).length; i++) {
         let row2: HTMLTableRowElement = document.createElement('tr');
         row2.setAttribute("id", i.toString());
@@ -51,10 +48,7 @@ document.getElementById('btn').addEventListener('click', () => {
         let data2: HTMLElement = document.createElement('td');
         data2.innerHTML = (selecteditem["data"] as { [key: string]: object }[])[i].id.toString();
         row2.appendChild(data2);
-        document.getElementById('val').appendChild(row2);
+        document.getElementById('val')?.appendChild(row2);
     }
 
 });
-
-
-

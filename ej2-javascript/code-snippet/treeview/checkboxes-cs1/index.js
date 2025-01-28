@@ -32,4 +32,3 @@ var treeObj = new ej.navigations.TreeView({
     showCheckBox: true,
 });
 treeObj.appendTo('#tree');
-

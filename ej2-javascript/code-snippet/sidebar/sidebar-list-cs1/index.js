@@ -15,26 +15,18 @@ var listInstance = new ej.lists.ListView({
 listInstance.appendTo('#list');
 
 // Initialize Sidebar component
-var defaultSidebar= new ej.navigations.Sidebar({
-    type: "Over", 
+var defaultSidebar = new ej.navigations.Sidebar({
+    type: "Over",
     width: '100%'
 });
 defaultSidebar.appendTo('#default-sidebar');
 
 //Click to toggle the Sidebar
-document.getElementById('toggle').onclick = function() {
+document.getElementById('toggle').onclick = function () {
     defaultSidebar.toggle();
 };
 
 // Close the sidebar
-document.getElementById('close').onclick = function() {
+document.getElementById('close').onclick = function () {
     defaultSidebar.hide();
 };
-
-
-
-
-
-
-    
-

@@ -1,4 +1,4 @@
-//Initialize ListView component
+//Initialize ListView control
 var listviewInstance = new ej.lists.ListView({
     //Bind the DataManager instance to dataSource property
     dataSource: new ej.data.DataManager({
@@ -17,21 +17,19 @@ var listviewInstance = new ej.lists.ListView({
 
     //Set true to show header title
     showHeader: true,
-    width:"300",
-    actionComplete  : oncomplete,
-  
+    width: "300",
+    actionComplete: oncomplete,
+
 });
 
 //Render initialized ListView
 listviewInstance.appendTo("#element");
 
-ej.popups.createSpinner({ 
-        target: document.getElementById('spinner')
-    });
-    ej.popups.showSpinner(document.getElementById('spinner'));
+ej.popups.createSpinner({
+    target: document.getElementById('spinner')
+});
+ej.popups.showSpinner(document.getElementById('spinner'));
 
-function oncomplete(){ 
-  document.getElementById('spinner').style.display = "none";
+function oncomplete() {
+    document.getElementById('spinner').style.display = "none";
 }
-
-

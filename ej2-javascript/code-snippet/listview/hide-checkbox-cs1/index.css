@@ -12,14 +12,3 @@
   top: 45%;
   left: 45%;
 }
-
-#folderCheckbox {
-  border: 1px solid #dddddd;
-  border-radius: 3px;
-  width: 350px;
-  margin: auto;
-}
-
-#folderCheckbox .e-checkbox-hidden .e-checkbox-wrapper {
-  visibility: hidden;
-}

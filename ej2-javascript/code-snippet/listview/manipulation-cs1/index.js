@@ -3,19 +3,19 @@ var desClass = 'e-sort-icon-descending';
 
 //define the array of JSON
 var fruitsdata = [
-    { text: 'Date', id: '1', imgUrl: './dates.jpg' },
-    { text: 'Fig', id: '2', imgUrl: './fig.jpg' },
-    { text: 'Apple', id: '3', imgUrl: './apple.png' },
-    { text: 'Apricot', id: '4', imgUrl: './apricot.jpg' },
-    { text: 'Grape', id: '5', imgUrl: './grape.jpg' },
-    { text: 'Strawberry', id: '6', imgUrl: './strawberry.jpg' },
-    { text: 'Pineapple', id: '7', imgUrl: './pineapple.jpg' },
-    { text: 'Melon', id: '8', imgUrl: './melon.jpg' },
-    { text: 'Lemon', id: '9', imgUrl: './lemon.jpg' },
-    { text: 'Cherry', id: '10', imgUrl: './cherry.jpg' },
+    { text: 'Date', id: '1', imgUrl: 'https://ej2.syncfusion.com/documentation/code-snippet/listview/manipulation-cs1/dates.jpg' },
+    { text: 'Fig', id: '2', imgUrl: 'https://ej2.syncfusion.com/documentation/code-snippet/listview/manipulation-cs1/fig.jpg' },
+    { text: 'Apple', id: '3', imgUrl: 'https://ej2.syncfusion.com/documentation/code-snippet/listview/manipulation-cs1/apple.png' },
+    { text: 'Apricot', id: '4', imgUrl: 'https://ej2.syncfusion.com/documentation/code-snippet/listview/manipulation-cs1/apricot.jpg' },
+    { text: 'Grape', id: '5', imgUrl: 'https://ej2.syncfusion.com/documentation/code-snippet/listview/manipulation-cs1/grape.jpg' },
+    { text: 'Strawberry', id: '6', imgUrl: 'https://ej2.syncfusion.com/documentation/code-snippet/listview/manipulation-cs1/strawberry.jpg' },
+    { text: 'Pineapple', id: '7', imgUrl: 'https://ej2.syncfusion.com/documentation/code-snippet/listview/manipulation-cs1/pineapple.jpg' },
+    { text: 'Melon', id: '8', imgUrl: 'https://ej2.syncfusion.com/documentation/code-snippet/listview/manipulation-cs1/melon.jpg' },
+    { text: 'Lemon', id: '9', imgUrl: 'https://ej2.syncfusion.com/documentation/code-snippet/listview/manipulation-cs1/lemon.jpg' },
+    { text: 'Cherry', id: '10', imgUrl: 'https://ej2.syncfusion.com/documentation/code-snippet/listview/manipulation-cs1/cherry.jpg' },
 ];
 
-//Initialize ListView component
+//Initialize ListView control
 var listViewInstance = new ej.lists.ListView({
 
     //set the data to datasource property
@@ -26,7 +26,7 @@ var listViewInstance = new ej.lists.ListView({
 
     //set sortOrder for list items
     sortOrder: 'Ascending',
-    actionComplete: function() {
+    actionComplete: function () {
         wireEvents();
     }
 
@@ -56,7 +56,7 @@ function addItem() {
 }
 
 function wireEvents() {
-    Array.prototype.forEach.call(document.getElementsByClassName('e-delete-btn'), function(ele) {
+    Array.prototype.forEach.call(document.getElementsByClassName('e-delete-btn'), function (ele) {
         ele.addEventListener('click', onDeleteBtnClick);
     });
     document.getElementById("add").addEventListener('click', addItem);
@@ -114,4 +114,3 @@ function onKeyUp(e) {
         listViewInstance.dataBind();
     }
 }
-

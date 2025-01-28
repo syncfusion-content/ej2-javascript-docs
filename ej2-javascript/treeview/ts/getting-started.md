@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Treeview control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Treeview control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## TreeView control | Syncfusion
+description:  Checkout and learn about Getting started with ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Treeview control
+# Getting started in ##Platform_Name## TreeView control
 
 This section explains the steps required to create a simple [JavaScript TreeView](https://www.syncfusion.com/javascript-ui-controls/js-treeview) control, and configure its available functionalities in TypeScript using the Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is preconfigured with all the Essential JS 2 packages.
 

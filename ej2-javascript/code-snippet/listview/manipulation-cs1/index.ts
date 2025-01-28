@@ -1,6 +1,3 @@
-
-
-
 import { ListView, SelectedItem } from '@syncfusion/ej2-lists';
 import { Dialog } from '@syncfusion/ej2-popups';
 import { closest, enableRipple, MouseEventArgs } from '@syncfusion/ej2-base';
@@ -12,16 +9,16 @@ let desClass = 'e-sort-icon-descending';
 
 //define the array of JSON
 let fruitsdata: { [key: string]: Object }[] = [
-    { text: 'Date', id: '1', imgUrl: './dates.jpg' },
-    { text: 'Fig', id: '2', imgUrl: './fig.jpg' },
-    { text: 'Apple', id: '3', imgUrl: './apple.png' },
-    { text: 'Apricot', id: '4', imgUrl: './apricot.jpg' },
-    { text: 'Grape', id: '5', imgUrl: './grape.jpg' },
-    { text: 'Strawberry', id: '6', imgUrl: './strawberry.jpg' },
-    { text: 'Pineapple', id: '7', imgUrl: './pineapple.jpg' },
-    { text: 'Melon', id: '8', imgUrl: './melon.jpg' },
-    { text: 'Lemon', id: '9', imgUrl: './lemon.jpg' },
-    { text: 'Cherry', id: '10', imgUrl: './cherry.jpg' },
+    { text: 'Date', id: '1', imgUrl: 'https://ej2.syncfusion.com/documentation/code-snippet/listview/manipulation-cs1/dates.jpg' },
+    { text: 'Fig', id: '2', imgUrl: 'https://ej2.syncfusion.com/documentation/code-snippet/listview/manipulation-cs1/fig.jpg' },
+    { text: 'Apple', id: '3', imgUrl: 'https://ej2.syncfusion.com/documentation/code-snippet/listview/manipulation-cs1/apple.png' },
+    { text: 'Apricot', id: '4', imgUrl: 'https://ej2.syncfusion.com/documentation/code-snippet/listview/manipulation-cs1/apricot.jpg' },
+    { text: 'Grape', id: '5', imgUrl: 'https://ej2.syncfusion.com/documentation/code-snippet/listview/manipulation-cs1/grape.jpg' },
+    { text: 'Strawberry', id: '6', imgUrl: 'https://ej2.syncfusion.com/documentation/code-snippet/listview/manipulation-cs1/strawberry.jpg' },
+    { text: 'Pineapple', id: '7', imgUrl: 'https://ej2.syncfusion.com/documentation/code-snippet/listview/manipulation-cs1/pineapple.jpg' },
+    { text: 'Melon', id: '8', imgUrl: 'https://ej2.syncfusion.com/documentation/code-snippet/listview/manipulation-cs1/melon.jpg' },
+    { text: 'Lemon', id: '9', imgUrl: 'https://ej2.syncfusion.com/documentation/code-snippet/listview/manipulation-cs1/lemon.jpg' },
+    { text: 'Cherry', id: '10', imgUrl: 'https://ej2.syncfusion.com/documentation/code-snippet/listview/manipulation-cs1/cherry.jpg' },
 ];
 
 //Initialize ListView control
@@ -68,9 +65,9 @@ function wireEvents() {
     Array.prototype.forEach.call(document.getElementsByClassName('e-delete-btn'), (ele: HTMLButtonElement) => {
         ele.addEventListener('click', onDeleteBtnClick);
     });
-    document.getElementById("add").addEventListener('click', addItem);
-    document.getElementById("sort").addEventListener('click', sortItems);
-    document.getElementById("search").addEventListener("keyup", onKeyUp);
+    document.getElementById("add")?.addEventListener('click', addItem);
+    document.getElementById("sort")?.addEventListener('click', sortItems);
+    document.getElementById("search")?.addEventListener("keyup", onKeyUp);
 }
 
 //Here we are removing list item
@@ -95,7 +92,7 @@ function dlgButtonClick() {
 
 //Here we are sorting list item
 function sortItems() {
-    let ele: Element = document.getElementById("sort").firstElementChild;
+    let ele: Element = document.getElementById("sort")?.firstElementChild as Element;
     let des = ele.classList.contains(desClass) ? true : false;
     if (des) {
         ele.classList.remove(desClass);
@@ -123,6 +120,3 @@ function onKeyUp() {
         listViewInstance.dataBind();
     }
 }
-
-
-

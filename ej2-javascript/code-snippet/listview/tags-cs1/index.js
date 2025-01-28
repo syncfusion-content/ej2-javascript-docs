@@ -1,10 +1,10 @@
 //Define customized template
 var template = '<div><span class="templatetext">${Name} </span> <span class="designationstyle"><button id ="${Id}" class="e-but"></button></span></div>';
 var data = [{ "Id": "Brooke", "Name": "Brooke" },
-    { "Id": "Claire", "Name": "Claire" },
-    { "Id": "Erik", "Name": "Erik" },
-    { "Id": "Grace", "Name": "Grace" },
-    { "Id": "Jacob", "Name": "Jacob" }];
+{ "Id": "Claire", "Name": "Claire" },
+{ "Id": "Erik", "Name": "Erik" },
+{ "Id": "Grace", "Name": "Grace" },
+{ "Id": "Jacob", "Name": "Jacob" }];
 var listviewInstance = new ej.lists.ListView({
     //Set defined data to the dataSource property
     dataSource: data,
@@ -35,30 +35,30 @@ for (var i = 0; i < data.length; i++) {
     });
 }
 var brookeTag = [{ "id": "list11", "Name": "Discover Music" },
-    { "id": "list12", "Name": "Sales and Events" },
-    { "id": "list13", "Name": "Categories" },
-    { "id": "list14", "Name": "MP3 Albums" },
-    { "id": "list15", "Name": "More in Music" },
+{ "id": "list12", "Name": "Sales and Events" },
+{ "id": "list13", "Name": "Categories" },
+{ "id": "list14", "Name": "MP3 Albums" },
+{ "id": "list15", "Name": "More in Music" },
 ];
 var claireTag = [{ "id": "list21", "Name": "Songs" },
-    { "id": "list22", "Name": "Bestselling Albums" },
-    { "id": "list23", "Name": "New Releases" },
-    { "id": "list24", "Name": "Bestselling Songs" },
+{ "id": "list22", "Name": "Bestselling Albums" },
+{ "id": "list23", "Name": "New Releases" },
+{ "id": "list24", "Name": "Bestselling Songs" },
 ];
 var erikTag = [{ "id": "list31", "Name": "Artwork" },
-    { "id": "list32", "Name": "Abstract" },
-    { "id": "list33", "Name": "Acrylic Mediums" },
-    { "id": "list34", "Name": "Creative Acrylic" },
-    { "id": "list35", "Name": "Canvas Art" }
+{ "id": "list32", "Name": "Abstract" },
+{ "id": "list33", "Name": "Acrylic Mediums" },
+{ "id": "list34", "Name": "Creative Acrylic" },
+{ "id": "list35", "Name": "Canvas Art" }
 ];
 var graceTag = [{ "id": "list41", "Name": "Rock" },
-    { "id": "list42", "Name": "Gospel" },
-    { "id": "list43", "Name": "Latin Music" },
-    { "id": "list44", "Name": "Jazz" },
+{ "id": "list42", "Name": "Gospel" },
+{ "id": "list43", "Name": "Latin Music" },
+{ "id": "list44", "Name": "Jazz" },
 ];
 var jacobTag = [{ "id": "list51", "Name": "100 Albums - $5 Each" },
-    { "id": "list52", "Name": "Hip-Hop and R&B Sale" },
-    { "id": "list53", "Name": "CD Deals" }
+{ "id": "list52", "Name": "Hip-Hop and R&B Sale" },
+{ "id": "list53", "Name": "CD Deals" }
 ];
 var datasource = { "Brooke": brookeTag, "Claire": claireTag, "Erik": erikTag, "Grace": graceTag, "Jacob": jacobTag };
 //Initialize the ListView that is needed to append inside the dialog
@@ -119,4 +119,3 @@ function addTag(e) {
 function removeTag() {
     this.parentNode.parentNode.remove();
 }
-

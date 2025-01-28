@@ -1,6 +1,3 @@
-
-
-
 import { Sidebar } from '@syncfusion/ej2-navigations';
 import { ListView } from '@syncfusion/ej2-lists';
 import { enableRipple } from '@syncfusion/ej2-base';
@@ -30,14 +27,12 @@ defaultSidebar.appendTo('#default-sidebar');
 //end of Sidebar initialization
 
 // Toggle(Open/Close) the Sidebar
-document.getElementById('toggle').onclick = (): void => {
+document.querySelector('#toggle')?.addEventListener('click', () => {
     defaultSidebar.toggle();
-};
+})
 
 // Close the Sidebar
-document.getElementById('close').onclick = (): void => {
+document.querySelector('#close')?.addEventListener('click', () => {
     defaultSidebar.hide();
-};
 
-
-
+})

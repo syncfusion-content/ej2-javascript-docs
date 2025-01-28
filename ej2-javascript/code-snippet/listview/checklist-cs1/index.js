@@ -11,7 +11,7 @@ var data = [
     { text: 'McLaren P1', id: 'list-09' },
     { text: 'Ferrari LaFerrari', id: 'list-10' },
 ];
-//Initialize ListView component
+//Initialize ListView control
 var listviewInstance = new ej.lists.ListView({
     //set the data to datasource property
     dataSource: data,
@@ -25,5 +25,3 @@ var listviewInstance = new ej.lists.ListView({
 });
 //Render initialized ListView
 listviewInstance.appendTo("#element");
-
-

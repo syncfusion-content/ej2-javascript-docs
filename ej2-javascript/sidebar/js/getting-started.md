@@ -88,7 +88,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
         <aside id="default">
             <div class="title"> Sidebar </div>
         </aside>
-        <!-- end of sidebar element -->
+        <!-- end of Sidebar element -->
         <!-- main content declaration -->
         <div>
             <div class="title">Main content</div>
@@ -99,7 +99,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
         // initialize Sidebar control
         var defaultSidebar = new ej.navigations.Sidebar();
 
-        // Render initialized sidebar.
+        // Render initialized Sidebar.
         defaultSidebar.appendTo('#default')
     </script>
 </body>
@@ -131,7 +131,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>Essential JS 2 Sidebar Component</title>
+    <title>Essential JS 2 Sidebar Control</title>
     <!-- Sidebar and its dependent theme -->
     <link href="http://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css" />
     <link href="http://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css" rel="stylesheet" type="text/css" />
@@ -145,7 +145,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
         <aside id="default">
             <div class="title"> Sidebar </div>
         </aside>
-        <!-- end of sidebar element -->
+        <!-- end of Sidebar element -->
         <!-- main content declaration -->
         <div>
             <div class="title">Main content</div>
@@ -156,7 +156,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
         // initialize Sidebar control
         var defaultSidebar  = new ej.navigations.Sidebar();
 
-        // Render initialized sidebar.
+        // Render initialized Sidebar.
         defaultSidebar.appendTo('#default')
     </script>
 </body>
@@ -168,8 +168,8 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
 
 ## Enable backdrop
 
-Enabling the `showBackdrop` in the Sidebar control will prevent the main content from user interactions, when it is in expanded state.
-Here, the DOM elements will not get changed. It only closes the main content by covering with a black backdrop overlay and focuses the Sidebar in the screen. Sidebar can be rendered with specific width by setting `width` property.
+Enabling the [`showBackdrop`](../api/sidebar/#showbackdrop) in the Sidebar control will prevent the main content from user interactions, when it is in expanded state.
+Here, the DOM elements will not get changed. It only closes the main content by covering with a black backdrop overlay and focuses the Sidebar in the screen. Sidebar can be rendered with specific width by setting [`width`](../api/sidebar/#width) property.
 
 N> To achieve a proper **backdrop**, we suggest that you create a wrapper parent container for the div block in which you intend to enable the backdrop. Set the class name of this parent container as the **target** for the Sidebar. Alternatively, you can place an empty div container after the target container.
 
@@ -186,7 +186,7 @@ N> To achieve a proper **backdrop**, we suggest that you create a wrapper parent
 
 ## Position
 
-Positioning the Sidebar to the right or left of the main content can be achieved by using the `position` property. If the position is not set, the Sidebar will expand from the left to the body element. `enablePersistence` will persist the control's state between page reloads. `change` event will be triggered when the state(expand/collapse) of the control is changed.
+Positioning the Sidebar to the right or left of the main content can be achieved by using the [`position`](../api/sidebar/#position) property. If the position is not set, the Sidebar will expand from the left to the body element. [`enablePersistence`](../api/sidebar/#enablepersistence) will persist the control's state between page reloads. [`change`](../api/sidebar/#change) event will be triggered when the state(expand/collapse) of the control is changed.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -201,7 +201,7 @@ Positioning the Sidebar to the right or left of the main content can be achieved
 
 ## Animate
 
-Animation transitions can be set while expanding or collapsing the Sidebar using the `animate` property. By default , `animate` property is set to true. `enableRTL` will display the sidebar in the right-to-left direction.
+Animation transitions can be set while expanding or collapsing the Sidebar using the [`animate`](../api/sidebar/#animate) property. By default , `animate` property is set to true.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -216,7 +216,7 @@ Animation transitions can be set while expanding or collapsing the Sidebar using
 
 ## Close on document click
 
-Sidebar can be closed on document click by setting `closeOnDocumentClick` to true. If this property is not set, the Sidebar will not close on document click since its default value is false. Sidebar can be kept opened during rendering using `isOpen` property.
+Sidebar can be closed on document click by setting [`closeOnDocumentClick`](../api/sidebar/#closeondocumentclick) to true. If this property is not set, the Sidebar will not close on document click since its default value is false. Sidebar can be kept opened during rendering using [`isOpen`](../api/sidebar/#isopen) property.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -231,7 +231,7 @@ Sidebar can be closed on document click by setting `closeOnDocumentClick` to tru
 
 ## Enable gestures
 
-Expand or collapse the Sidebar while swiping in touch devices using `enableGestures` property. By default, `enableGestures` is set to true.
+Expand or collapse the Sidebar while swiping in touch devices using [`enableGestures`](../api/sidebar/#enablegestures) property. By default, `enableGestures` is set to true.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -249,4 +249,4 @@ Expand or collapse the Sidebar while swiping in touch devices using `enableGestu
 * [Sidebar with navigation menu](https://ej2.syncfusion.com/javascript/demos/#/material/sidebar/sidebar-menu.html)
 * [Sidebar responsive panel](https://ej2.syncfusion.com/javascript/demos/#/material/sidebar/responsive-panel.html)
 * [Sidebar with listView](./how-to/sidebar-with-list-view/)
-* [Usecase sample](https://ej2.syncfusion.com/showcase/javascript/webmail/#/home)
+* [Use case sample](https://ej2.syncfusion.com/showcase/javascript/webmail/#/home)

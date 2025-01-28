@@ -30,7 +30,7 @@ var countries = [
 var treeObj = new ej.navigations.TreeView({
     fields: { dataSource: countries, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild' },
     allowMultiSelection: true,
-    selectedNodes: ['2','6'],
+    selectedNodes: ['2', '6'],
     nodeSelected: nodeSelected
 });
 treeObj.appendTo('#tree');
@@ -38,5 +38,3 @@ treeObj.appendTo('#tree');
 function nodeSelected(args) {
     alert("The selected node's id: " + treeObj.selectedNodes); // To alert the selected node's id.
 }
-
-

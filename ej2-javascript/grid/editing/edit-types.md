@@ -372,6 +372,39 @@ The following sample code demonstrates the customization applied to DatePicker c
 {% previewsample "page.domainurl/code-snippet/grid/edit-datepicker-control" %}
 {% endif %}
 
+### Disable the date value prior to the selected date value in DatePicker control
+
+The Syncfusion Grid allows configuring the [DatePicker](../../datepicker) control to dynamically set a minimum date for selection. This feature ensures that users can select dates only from a specified minimum date onward, based on the context of each row's data. This functionality is particularly useful in maintaining data accuracy by preventing users from selecting invalid or illogical dates.
+
+The following example demonstrates how to configure the `DatePicker` control within the grid using the **edit** parameters of a column. This setup dynamically restricts the selection of dates in the DatePicker's calendar based on the data in the current row.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/hide-dates-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/hide-dates-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/hide-dates-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/hide-dates-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/hide-dates-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/hide-dates-cs1" %}
+{% endif %}
+
 ## Customize DateTimePicker control of datetimepickeredit type 
 
 You can customize the DateTimePicker control in Grid edit form using its property. This customization allows you to configure various properties of the DateTimePicker, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor control can be fine-tuned through the [columns->edit->params](../../api/grid/column/#edit) property.

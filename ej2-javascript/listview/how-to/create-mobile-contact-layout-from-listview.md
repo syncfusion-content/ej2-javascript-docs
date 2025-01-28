@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Create mobile contact layout from listview in ##Platform_Name## Listview control | Syncfusion
-description: Learn here all about Create mobile contact layout from listview in Syncfusion ##Platform_Name## Listview control of Syncfusion Essential JS 2 and more.
+title: Create mobile contact layout from ListView in ##Platform_Name## ListView control | Syncfusion
+description: Learn here all about Create mobile contact layout from ListView in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Create mobile contact layout from listview 
+control: Create mobile contact layout from ListView
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create mobile contact layout from listview in ##Platform_Name## Listview control
+# Create mobile contact layout in ##Platform_Name## ListView control
 
-You can customize the ListView using the [template](../../api/list-view/#template) property. Refer to the following steps to customize ListView as mobile contact view with our `ej2-avatar`.
+You can customize the ListView using the [template](../../api/list-view/#template) property. Follow these steps to customize the ListView as a mobile contact view with the `ej2-avatar`:
 
-* Render the ListView with [dataSource](../../api/list-view/#datasource) that has avatar data. You can set avatar data as either text or class names. Refer to the following codes.
+* Render the ListView with a [dataSource](../../api/list-view/#datasource) containing avatar data. Avatar data can be provided as either text or class names. Below is an example code snippet for data source initialization:
 
 ```ts
 
@@ -28,7 +28,7 @@ let dataSource: { [key: string]: Object }[] = [
 
 ```
 
-* Set `avatar` classes in ListView template to customize contact icon. In the following codes, medium size avatar has been set using the class name `e-avatar e-avatar-circle` from data source.
+* Use `avatar` classes in the ListView template to customize the contact icon. The following template example sets a medium-sized avatar using the class `e-avatar e-avatar-circle` from the data source:
 
 ```ts
 
@@ -44,7 +44,7 @@ let dataSource: { [key: string]: Object }[] = [
 
 ```
 
-> Avatars can be set in different sizes in avatar classes. To know more about avatar classes, refer to [Avatar](https://ej2.syncfusion.com/demos/#/material/avatar/default.html).
+> Avatars can be set in different sizes using avatar classes. For more information on avatar classes, refer to the [Avatar](https://ej2.syncfusion.com/demos/#/material/avatar/default.html) documentation.
 
 * Sort the contact names using the [`sortOder`](../../api/list-view/#sortorder) property of ListView.
 
@@ -52,12 +52,15 @@ let dataSource: { [key: string]: Object }[] = [
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/listview/avatar-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/avatar-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/avatar-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -71,6 +74,9 @@ let dataSource: { [key: string]: Object }[] = [
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/avatar-cs2/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/avatar-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

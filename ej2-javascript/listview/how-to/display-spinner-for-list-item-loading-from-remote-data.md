@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Display spinner for list item loading from remote data in ##Platform_Name## Listview control | Syncfusion
-description: Learn here all about Display spinner for list item loading from remote data in Syncfusion ##Platform_Name## Listview control of Syncfusion Essential JS 2 and more.
+title: Display spinner for list item loading from remote data in ##Platform_Name## ListView control | Syncfusion
+description: Learn here all about Display spinner for list item loading from remote data in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Display spinner for list item loading from remote data 
+control: Display spinner for list item loading from remote data
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Display spinner for list item loading from remote data in ##Platform_Name## Listview control
+# Display spinner for list item loading from remote data in ##Platform_Name## ListView control
 
-The features of the ListView control such as remote data-binding take more time to fetch data from corresponding dataSource/remote URL. In this case, you can use EJ2 [Spinner](../../spinner/) to enhance the appearance of the UI. This section explains how to load a spinner control to groom the appearance.
+Features of the ListView control, such as remote data binding, can take some time to fetch data from the corresponding dataSource/remote URL. In this scenario, you can use the EJ2 [Spinner](../../spinner/) to enhance the appearance of the UI. This section explains how to load a spinner control to improve the user experience.
 
 Refer to the following code sample to render the spinner control.
 
@@ -50,19 +50,22 @@ let listviewInstance: ListView = new ListView({
 listviewInstance.appendTo("#element");
 ```
 
-Here, the data is fetched from `Northwind` Service URL; it takes a few seconds to load the data. To enhance the UI, the spinner control has been rendered initially. After the data is loaded from remote URL, the spinner control will be hidden in ListView [actionComplete](../../api/list-view/#actioncomplete) event.
+Here, the data is fetched from the `Northwind` Service URL; it takes a few seconds to load the data. To enhance the UI, the spinner control has been rendered initially. After the data is loaded from the remote URL, the spinner control will be hidden in the ListView [actionComplete](../../api/list-view/#actioncomplete) event.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/listview/spinner-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/spinner-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/spinner-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/listview/spinner-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -73,6 +76,9 @@ Here, the data is fetched from `Northwind` Service URL; it takes a few seconds t
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/spinner-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/spinner-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

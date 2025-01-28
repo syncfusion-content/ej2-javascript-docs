@@ -1,6 +1,4 @@
-var listData = [];
-
-listData = [
+var listData = [
     { name: 'Nancy', icon: 'N', id: '0', },
     { name: 'Andrew', icon: 'A', id: '1' },
     { name: 'Janet', icon: 'J', id: '2' },
@@ -21,10 +19,10 @@ var template = function (data) {
     var showImg = data.imgUrl ? 'showUI' : 'hideUI';
     var imgUrl = data.imgUrl || '';
     var result = '<div class="e-list-wrapper e-list-avatar">' +
-    '<span class="e-avatar e-avatar-circle ' + data.icon + ' ' + showIcon + '">' + data.icon + '</span>' +
-    '<img class="e-avatar e-avatar-circle ' + showImg + '" src="' + imgUrl + '" />' +
-    '<span class="e-list-content">' + data.name + '</span>' +
-    '</div>';
+        '<span class="e-avatar e-avatar-circle ' + data.icon + ' ' + showIcon + '">' + data.icon + '</span>' +
+        '<img class="e-avatar e-avatar-circle ' + showImg + '" src="' + imgUrl + '" />' +
+        '<span class="e-list-content">' + data.name + '</span>' +
+        '</div>';
     return result;
 };
 var listObj = new ej.lists.ListView({

@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Fetch selected items from listview template sample in ##Platform_Name## Listview control | Syncfusion
-description: Learn here all about Fetch selected items from listview template sample in Syncfusion ##Platform_Name## Listview control of Syncfusion Essential JS 2 and more.
+title: Fetch selected items from ListView template sample in ##Platform_Name## ListView control | Syncfusion
+description: Learn here all about fetching selected items from a ListView template sample in the Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Fetch selected items from listview template sample 
+control: Fetch selected items from ListView template sample
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Fetch selected items from listview template sample in ##Platform_Name## Listview control
+# Fetch selected items from ListView template sample in ##Platform_Name## ListView control
 
-Single or multiple items can be selected by users in the ListView control.
+Users can select single or multiple items in the ListView control.
 
-By default, dataSource id and text is mapped in default rendering of listview, since it returns the selected item data properly. But in the custom template, dataSource and the corresponding mapping (text, id, elements rendered inside li element) will vary as per the application requirement.
+By default, the dataSource id and text are mapped in the default rendering of the ListView, which ensures proper data retrieval of selected items. However, in a custom template, the dataSource and the corresponding mappings (text, id, and elements rendered inside the li element) may vary depending on the application's requirements.
 
-So, we need to map id attribute to listview items using [fields](../../api/list-view/#fields) of [dataSource](../../api/list-view/#datasource) to get the selected item data properly while working with custom templates. Refer to the below code snippet for template sample.
+Therefore, it is crucial to map the id attribute to ListView items using the [fields](../../api/list-view/#fields) of the [dataSource](../../api/list-view/#datasource) to correctly retrieve selected item data when working with custom templates. Refer to the code snippet below for a template sample.
 
 ```ts
 
@@ -46,12 +46,15 @@ listObj.appendTo('#listview');
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/listview/listview-template-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/listview-template-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/listview-template-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -65,6 +68,9 @@ listObj.appendTo('#listview');
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/listview/listview-template-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/listview/listview-template-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

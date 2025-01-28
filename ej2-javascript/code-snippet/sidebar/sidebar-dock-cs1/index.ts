@@ -1,5 +1,3 @@
-
-
 import { Sidebar } from '@syncfusion/ej2-navigations';
 import { enableRipple } from '@syncfusion/ej2-base';
 enableRipple(false);
@@ -14,9 +12,6 @@ let dockBar: Sidebar = new Sidebar({
 dockBar.appendTo('#dockSidebar');
 //end of Sidebar initialization
 
-document.getElementById('toggle').onclick = (): void => {
+document.querySelector("#toggle")?.addEventListener('click', () => {
     dockBar.toggle();
-};
-
-
-
+})

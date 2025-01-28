@@ -4,8 +4,8 @@ ej.base.enableRipple(true);
  * TreeView node editing sample with validation
  */
 
-    // Hierarchical data source for TreeView component
-    var treeData = [
+// Hierarchical data source for TreeView control
+var treeData = [
     {
         id: 1, name: 'Discover Music', expanded: true,
         child: [
@@ -50,8 +50,8 @@ ej.base.enableRipple(true);
     }
 ];
 
-    // Render the TreeView with editing option
-    var treeObj = new ej.navigations.TreeView({
+// Render the TreeView with editing option
+var treeObj = new ej.navigations.TreeView({
     fields: { dataSource: treeData, id: 'id', text: 'name', child: 'child' },
     allowEditing: true,
     nodeEdited: onNodeEdited
@@ -61,7 +61,7 @@ treeObj.appendTo('#tree');
 function onNodeEdited(args) {
     var displayContent = "";
     if (args.newText.trim() == "") {
-        args.cancel=true;
+        args.cancel = true;
         displayContent = "TreeView item text should not be empty";
     }
     else if (args.newText != args.oldText) {
@@ -71,4 +71,3 @@ function onNodeEdited(args) {
     }
     document.getElementById("display").innerHTML = displayContent;
 }
-

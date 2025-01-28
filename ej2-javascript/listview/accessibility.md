@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Listview component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Listview component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## ListView control | Syncfusion
+description: Learn here all about Accessibility in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Accessibility 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## Listview component
+# Accessibility in ##Platform_Name## ListView control
 
-The ListView component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The ListView control followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the ListView component is outlined below.
+The accessibility compliance for the ListView control is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -33,15 +33,15 @@ The accessibility compliance for the ListView component is outlined below.
         margin: 0.5em 0;
     }
 </style>
-<div><img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> - All features of the component meet the requirement.</div>
+<div><img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> - All features of the control meet the requirement.</div>
 
-<div><img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> - Some features of the component do not meet the requirement.</div>
+<div><img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> - Some features of the control do not meet the requirement.</div>
 
-<div><img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> - The component does not meet the requirement.</div>
+<div><img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> - The control does not meet the requirement.</div>
 
 ## WAI-ARIA attributes
 
-The ListView component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/listbox/) patterns to meet the accessibility. The following ARIA attributes are used in the ListView component:
+The ListView control followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/listbox/) patterns to meet the accessibility. The following ARIA attributes are used in the ListView control:
 
 | Attributes | Purpose |
 | --- | --- |
@@ -55,7 +55,7 @@ The ListView component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/p
 
 ## Keyboard interaction
 
-The ListView component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/listbox/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the ListView component.
+The ListView control followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/listbox/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the ListView control.
 
 | Keyboard shortcuts | Actions |
 |------------|-------------------|
@@ -68,12 +68,12 @@ The ListView component followed the [keyboard interaction](https://www.w3.org/WA
 
 ## Ensuring accessibility
 
-The ListView component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The ListView control's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the ListView component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/list-view.html) in a new window to evaluate the accessibility of the ListView component with accessibility tools.
+The accessibility compliance of the ListView control is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/list-view.html) in a new window to evaluate the accessibility of the ListView control with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/list-view.html" %}
 
 ## See also
 
-* [Accessibility in Syncfusion ##Platform_Name## components](../common/accessibility)
+* [Accessibility in Syncfusion ##Platform_Name## controls](../common/accessibility)

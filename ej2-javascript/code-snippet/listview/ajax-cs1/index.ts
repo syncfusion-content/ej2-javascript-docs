@@ -1,6 +1,3 @@
-
-
-
 import { ListView } from '@syncfusion/ej2-lists';
 import { Ajax } from '@syncfusion/ej2-base';
 
@@ -13,9 +10,9 @@ let data: { [key: string]: Object }[] = [
     { name: 'Storage', id: '5', description: '52% used - 15.48 GB free' }
 ];
 
-let template: string;
-let ajax: Ajax = new Ajax('./template.html', 'GET', false);
-ajax.onSuccess = (e: string)=>{
+let template: string = "";
+let ajax: Ajax = new Ajax('https://ej2.syncfusion.com/documentation/code-snippet/listview/ajax-cs1/template', 'GET', false);
+ajax.onSuccess = (e: string) => {
     template = e;
 }
 
@@ -26,10 +23,7 @@ let listViewInstance: ListView = new ListView({
     template: template,
     headerTitle: 'Settings',
     showHeader: true,
-    fields: {text:'name', id: 'id'}
+    fields: { text: 'name', id: 'id' }
 });
 
 listViewInstance.appendTo('#element');
-
-
-

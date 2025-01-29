@@ -26,7 +26,7 @@ var maps = new ej.maps.Maps({
                         },
                         shape: 'Image',
                         height: 40, width: 40,
-                        imageUrl: 'https://ej2.syncfusion.com/javascript/demos/src/maps/images/cluster-france.svg'
+                        imageUrl: './cluster-france.svg'
                     },
                     visible: true,
                     dataSource: [
@@ -61,7 +61,7 @@ var maps = new ej.maps.Maps({
                             color: 'white',
                             size: '10px'
                         },
-                        imageUrl: 'https://ej2.syncfusion.com/javascript/demos/src/maps/images/cluster-usa.svg'
+                        imageUrl: './cluster-usa.svg'
                     },
                     visible: true,
                     shape: 'Circle',
@@ -97,7 +97,7 @@ var maps = new ej.maps.Maps({
                             size: '10px',
                             color: 'white'
                         },
-                        imageUrl: 'https://ej2.syncfusion.com/javascript/demos/src/maps/images/cluster-india.svg'
+                        imageUrl: './cluster-india.svg'
                     },
                     dataSource: [
                         { latitude: 26.985901, longitude: 75.850700, name: 'Amber Fort, Amer', state: 'Rajastan', country: 'India' },

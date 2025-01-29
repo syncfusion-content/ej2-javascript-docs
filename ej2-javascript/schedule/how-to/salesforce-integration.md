@@ -9,6 +9,8 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
+# Salesforce integration in ##Platform_Name## Schedule control
+
 This topic provides you with a detailed step-by-step guide on how to seamlessly integrate the [**JavaScript Scheduler**](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) component into Salesforce. By integrating it into Salesforce, you can enhance your productivity and streamline your scheduling processes.
 
 ## Prerequisites
@@ -62,10 +64,10 @@ sfdx org:login:web -d
 Open the `sfdx-project.json` file located in `salesforceApp/scheduler-salesforce-app` and update the `sfdcLoginUrl` with the domain URL of your Salesforce account as shown in image (fig 2). You can obtain the domain URL from the `My Domain` setup tab in Salesforce as shown in image (fig 1). 
 
 fig 1
-![Salesforce project (fig 1)](../images/Salesforce-project-fig1.png)
+![Salesforce project1](../images/Salesforce-project-fig1.png)
 
 fig 2
-![Salesforce project (fig 2)](../images/Salesforce-project-fig2.png)
+![Salesforce project2](../images/Salesforce-project-fig2.png)
 
 ## Create scratch organization 
 

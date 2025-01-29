@@ -3,12 +3,13 @@ var dataManager = new ej.data.DataManager({
     adaptor: new ej.data.ODataV4Adaptor(),
     crossDomain: true
 });
+
 var scheduleObj = new ej.schedule.Schedule({
     height: '550px',
     selectedDate: new Date(1996, 6, 9),
     currentView: 'Month',
     eventSettings: {
-        query:  new ej.data.Query(),
+        query: new ej.data.Query(),
         includeFiltersInQuery: true, dataSource: dataManager, fields: {
             id: 'Id',
             subject: { name: 'ShipName' },
@@ -22,4 +23,3 @@ var scheduleObj = new ej.schedule.Schedule({
     readonly: true
 });
 scheduleObj.appendTo('#Schedule');
-

@@ -1,7 +1,5 @@
-
-
 import { isNullOrUndefined } from '@syncfusion/ej2-base';
-import { Schedule, Day, TimelineViews, WorkWeek, Month, ActionEventArgs} from '@syncfusion/ej2-schedule';
+import { Schedule, Day, TimelineViews, WorkWeek, Month, ActionEventArgs } from '@syncfusion/ej2-schedule';
 import { scheduleData } from './datasource.ts';
 
 Schedule.Inject(Day, TimelineViews, WorkWeek, Month);
@@ -24,5 +22,3 @@ let scheduleObj: Schedule = new Schedule({
     }
 });
 scheduleObj.appendTo('#Schedule');
-
-

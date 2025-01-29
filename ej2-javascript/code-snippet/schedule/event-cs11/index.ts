@@ -1,8 +1,8 @@
-
-
 import { Schedule, Day, Week, WorkWeek, Month, Agenda } from '@syncfusion/ej2-schedule';
 
-let data: object [] = [{
+Schedule.Inject(Day, Week, WorkWeek, Month, Agenda);
+
+let data: object[] = [{
     Id: 1,
     Subject: 'Rank 1',
     StartTime: new Date(2017, 9, 29, 10, 0),
@@ -16,7 +16,7 @@ let data: object [] = [{
     EndTime: new Date(2017, 9, 29, 12, 30),
     IsAllDay: false,
     RankId: '3'
- }, {
+}, {
     Id: 3,
     Subject: 'Rank 6',
     StartTime: new Date(2017, 9, 29, 7, 0),
@@ -31,11 +31,12 @@ let data: object [] = [{
     IsAllDay: false,
     RankId: '9'
 }];
+
 let comparerFun: SortComparerFunction = (args: Record<string, any>) =>
-  args.sort((event1: Record<string, any>, event2: Record<string, any>) =>
-    event1.RankId.localeCompare(event2.RankId, undefined, { numeric: true })
-  );
-Schedule.Inject(Day, Week, WorkWeek, Month, Agenda );
+    args.sort((event1: Record<string, any>, event2: Record<string, any>) =>
+        event1.RankId.localeCompare(event2.RankId, undefined, { numeric: true })
+    );
+
 let scheduleObj: Schedule = new Schedule({
     height: '550px',
     selectedDate: new Date(2017, 9, 29),
@@ -45,5 +46,3 @@ let scheduleObj: Schedule = new Schedule({
     }
 });
 scheduleObj.appendTo('#Schedule');
-
-

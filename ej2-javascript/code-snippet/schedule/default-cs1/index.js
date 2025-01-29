@@ -2,7 +2,8 @@ var scheduleObj = new ej.schedule.Schedule({
     width: '100%',
     height: '550px',
     selectedDate: new Date(2018, 1, 15),
-    eventSettings: { dataSource: scheduleData , 
+    eventSettings: {
+        dataSource: scheduleData,
         fields: {
             subject: { name: 'Subject', validation: { required: true } },
             location: {
@@ -12,8 +13,6 @@ var scheduleObj = new ej.schedule.Schedule({
                 }
             }
         }
-     }
+    }
 });
 scheduleObj.appendTo('#Schedule');
-
-

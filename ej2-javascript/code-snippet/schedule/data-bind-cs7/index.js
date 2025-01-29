@@ -1,10 +1,12 @@
 var calendarId = 'en.usa%23holiday@group.v.calendar.google.com';
 var publicKey = 'AIzaSyBgbX_tgmVanBP4yafDPPXxWr70sjbKAXM';
+
 var dataManager = new ej.data.DataManager({
     url: 'https://www.googleapis.com/calendar/v3/calendars/' + calendarId + '/events?key=' + publicKey,
     adaptor: new ej.data.WebApiAdaptor(),
     crossDomain: true
 });
+
 var scheduleObj = new ej.schedule.Schedule({
     height: '550px',
     eventSettings: { dataSource: dataManager },
@@ -38,4 +40,3 @@ var scheduleObj = new ej.schedule.Schedule({
     }
 });
 scheduleObj.appendTo('#Schedule');
-

@@ -3,7 +3,7 @@ var scheduleObj = new ej.schedule.Schedule({
     views: ['Day', 'TimelineWeek', 'WorkWeek', 'Month'],
     currentView: 'TimelineWeek',
     selectedDate: new Date(2018, 1, 15),
-    actionBegin: function(args) {
+    actionBegin: function (args) {
         if ((args.requestType === 'eventCreate' || args.requestType === 'eventChange') && args.data.length > 0 || !(new ej.base.isNullOrUndefined(args.data))) {
             var eventData = args.data;
             var eventField = scheduleObj.eventFields;
@@ -15,4 +15,3 @@ var scheduleObj = new ej.schedule.Schedule({
     eventSettings: { dataSource: scheduleData }
 });
 scheduleObj.appendTo('#Schedule');
-

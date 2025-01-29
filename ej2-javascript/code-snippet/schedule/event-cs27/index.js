@@ -5,6 +5,7 @@ var scheduleObj = new ej.schedule.Schedule({
     eventRendered: applyCategoryColor
 });
 scheduleObj.appendTo('#Schedule');
+
 function applyCategoryColor(args, currentView) {
     var categoryColor = args.data.CategoryColor;
     if (!args.element || !categoryColor) {
@@ -16,4 +17,3 @@ function applyCategoryColor(args, currentView) {
         args.element.style.backgroundColor = categoryColor;
     }
 }
-

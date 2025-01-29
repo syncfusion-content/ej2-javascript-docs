@@ -1,5 +1,3 @@
-
-
 import { Schedule, Day, Week, WorkWeek, Month, Agenda, View, EventRenderedArgs } from '@syncfusion/ej2-schedule';
 import { scheduleData } from './datasource.ts';
 
@@ -8,13 +6,13 @@ Schedule.Inject(Day, Week, WorkWeek, Month, Agenda);
 let scheduleObj: Schedule = new Schedule({
     height: '550px',
     width: '100%',
-    cssClass: 'custom-class',
     selectedDate: new Date(2018, 1, 15),
     eventSettings: { dataSource: scheduleData },
-    eventRendered: (args: EventRenderedArgs) => applyCategoryColor(args, scheduleObj.currentView)
+    eventRendered: (args: EventRenderedArgs) => applyCategoryColor(args)
 });
 scheduleObj.appendTo('#Schedule');
-function applyCategoryColor(args: EventRenderedArgs, currentView: View): void {
+
+function applyCategoryColor(args: EventRenderedArgs): void {
     let categoryColor: string = args.data.CategoryColor as string;
     if (!args.element || !categoryColor) {
         return;
@@ -25,5 +23,3 @@ function applyCategoryColor(args: EventRenderedArgs, currentView: View): void {
         args.element.style.backgroundColor = categoryColor;
     }
 }
-
-

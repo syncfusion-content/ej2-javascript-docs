@@ -3,14 +3,15 @@ var scheduleObj = new ej.schedule.Schedule({
     height: '550px',
     selectedDate: new Date(2018, 1, 15),
     cssClass: 'schedule-drag-drop',
-    views: [ 'Month' ],
+    views: ['Month'],
     eventSettings: { dataSource: eventData },
     actionBegin: onActionBegin,
     drag: onItemDrag
 });
 scheduleObj.appendTo('#Schedule');
+
 var treeObj = new ej.navigations.TreeView({
-    fields: { dataSource: waitingList , id: 'Id', text: 'Name' },
+    fields: { dataSource: waitingList, id: 'Id', text: 'Name' },
     allowDragAndDrop: true,
     nodeDragStop: onTreeDragStop,
     nodeDragging: onItemDrag,
@@ -37,7 +38,7 @@ function onItemDrag(event) {
     if (event.name === 'nodeDragging') {
         var dragElementIcon =
             document.querySelectorAll('.e-drag-item.treeview-external-drag .e-icon-expandable');
-        for (var i= 0; i < dragElementIcon.length; i++) {
+        for (var i = 0; i < dragElementIcon.length; i++) {
             dragElementIcon[i].style.display = 'none';
         }
     }
@@ -49,7 +50,7 @@ function onActionBegin(event) {
         var filteredPeople = treeViewdata.filter(function (item) { return item.Id !== parseInt(draggedItemId, 10); });
         treeObj.fields.dataSource = filteredPeople;
         var elements = document.querySelectorAll('.e-drag-item.treeview-external-drag');
-        for (var i= 0; i < elements.length; i++) {
+        for (var i = 0; i < elements.length; i++) {
             remove(elements[i]);
         }
     }
@@ -84,4 +85,3 @@ function onTreeDragStop(event) {
         }
     }
 }
-

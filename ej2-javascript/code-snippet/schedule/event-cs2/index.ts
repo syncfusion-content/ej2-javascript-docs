@@ -1,6 +1,6 @@
 
 
-import {Schedule,Day,Week,TimelineViews,Month,Agenda,DragAndDrop} from '@syncfusion/ej2-schedule';
+import { Schedule, Day, Week, TimelineViews, Month, Agenda, DragAndDrop } from '@syncfusion/ej2-schedule';
 
 let data: object[] = [
   {
@@ -97,11 +97,10 @@ let scheduleObj: Schedule = new Schedule({
   },
   height: '550px',
   selectedDate: new Date(2022, 3, 25),
-  views: ['Day', 'Week', 'TimelineWeek', 'Month', 'Agenda'],
+  views: ['Day', 'Week'],
   eventSettings: {
     dataSource: data,
   },
+  enableHtmlSanitizer: false
 });
 scheduleObj.appendTo('#Schedule');
-
-

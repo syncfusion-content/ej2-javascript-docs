@@ -1,8 +1,6 @@
-
-
 import { Schedule, Month, Resize, DragAndDrop, CellClickEventArgs } from '@syncfusion/ej2-schedule';
 import { ActionEventArgs } from '@syncfusion/ej2-schedule';
-import  { eventData, waitingList }from './datasource.ts';
+import { eventData, waitingList } from './datasource.ts';
 import { DragAndDropEventArgs, TreeView } from '@syncfusion/ej2-navigations';
 import { closest, remove, addClass } from '@syncfusion/ej2-base';
 
@@ -12,7 +10,7 @@ let scheduleObj: Schedule = new Schedule({
     height: '550px',
     selectedDate: new Date(2018, 1, 15),
     cssClass: 'schedule-drag-drop',
-    views: [ 'Month' ],
+    views: ['Month'],
     eventSettings: { dataSource: eventData },
     actionBegin: onActionBegin,
     drag: onItemDrag
@@ -20,7 +18,7 @@ let scheduleObj: Schedule = new Schedule({
 scheduleObj.appendTo('#Schedule');
 
 let treeObj: TreeView = new TreeView({
-    fields: { dataSource: waitingList , id: 'Id', text: 'Name' },
+    fields: { dataSource: waitingList, id: 'Id', text: 'Name' },
     allowDragAndDrop: true,
     nodeDragStop: onTreeDragStop,
     nodeDragging: onItemDrag,
@@ -97,5 +95,3 @@ function onTreeDragStop(event: DragAndDropEventArgs): void {
         }
     }
 }
-
-

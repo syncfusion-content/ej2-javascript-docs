@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data binding in ##Platform_Name## Schedule control | Syncfusion
-description: Learn here all about Data binding in Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
+title: Data binding in ##Platform_Name## Scheduler control | Syncfusion
+description: Learn here all about Data binding in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Data binding 
 publishingplatform: ##Platform_Name##
@@ -9,16 +9,16 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data binding in ##Platform_Name## Schedule control
+# Data binding in ##Platform_Name## Scheduler control
 
-The Scheduler uses `DataManager`, which supports both RESTful data service binding and JavaScript object array binding. The [`dataSource`](../api/schedule/eventSettings/#datasource) property of Scheduler can be assigned either with the instance of `DataManager` or JavaScript object array collection, as it supports the following two kind of data binding methods:
+The Scheduler uses `DataManager`, which supports both RESTful data service binding and JavaScript object array binding. The [`dataSource`](../api/schedule/eventSettings/#datasource) property of the Scheduler can be assigned either with an instance of `DataManager` or JavaScript object array collection. The Scheduler supports two types of data binding methods:
 
 * Local data
 * Remote data
 
 ## Binding local data
 
-To bind local JSON data to the Scheduler, you can simply assign a JavaScript object array to the [`dataSource`](../api/schedule/eventSettings/#datasource) option of the scheduler within the `eventSettings` property. The JSON object dataSource can also be provided as an instance of `DataManager` and assigned to the Scheduler `dataSource` property.
+To bind local JSON data to the Scheduler, you can simply assign a JavaScript object array to the [`dataSource`](../api/Scheduler/eventSettings/#datasource) option of the scheduler within the `eventSettings` property. The JSON object dataSource can also be provided as an instance of `DataManager` and assigned to the Scheduler `dataSource` property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -53,11 +53,15 @@ You can also bind different field names to the default event fields as well as i
 
 ## Binding remote data
 
-Any kind of remote data services can be bound to the Scheduler. To do so, create an instance of `DataManager` and provide the service URL to the `url` option of `DataManager` and then assign it to the [`dataSource`](../api/schedule/eventSettings/#datasource) property within `eventSettings`.
+You can bind any kind of remote data service to the Scheduler. To do this:
+
+1. Create an instance of `DataManager`.
+2. Provide the service URL to the `url` option of `DataManager`.
+3. Assign the `DataManager` instance to the [`dataSource`](../api/schedule/eventSettings/#datasource) property within `eventSettings`.
 
 ### Using ODataV4Adaptor
 
-[ODataV4](https://www.odata.org/documentation/) is a standardized protocol for creating and consuming data. Refer to the following code example to retrieve the data from ODataV4 service using the DataManager. To connect with ODataV4 service end points, it is necessary to make use of `ODataV4Adaptor` within `DataManager`.
+[ODataV4](https://www.odata.org/documentation/) is a standardized protocol for creating and consuming data. To connect with ODataV4 service end points, it is necessary to make use of `ODataV4Adaptor` within `DataManager`. Refer to the following code example to retrieve the data from ODataV4 service using the DataManager. 
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -88,9 +92,9 @@ Any kind of remote data services can be bound to the Scheduler. To do so, create
 
 ### Filter events using the in-built query
 
-To enable server-side filtering operations based on predetermined conditions, the [`includeFiltersInQuery`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings/#includefiltersinquery) API can be set to true, this allows the filter query to be constructed using the start date, end date, and recurrence rule which in turn enables the request to be filtered accordingly.
+To enable server-side filtering based on predetermined conditions, set the [`includeFiltersInQuery`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings/#includefiltersinquery) API to true. This constructs a filter query using the start date, end date, and recurrence rule, allowing the request to be filtered accordingly.
 
-This method greatly improves the component's performance by reducing the data that needs to be transferred to the client side. As a result, the component's efficiency and responsiveness are significantly enhanced, resulting in a better user experience. However, it is important to consider the possibility of longer query strings, which may cause issues with the maximum URL length or server limitations on query string length.
+This method greatly improves the component's performance by reducing the data transferred to the client side. As a result, the component's efficiency and responsiveness are significantly enhanced, resulting in a better user experience. However, it is important to consider the possibility of longer query strings, which may cause issues with the maximum URL length or server limitations on query string length.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -125,7 +129,7 @@ The following image represents how the parameters are passed using ODataV4 filte
 
 ### Using custom adaptor
 
-It is possible to create your own custom adaptor by extending the built-in available adaptors. The following example demonstrates the custom adaptor usage and how to add a custom field `EventID` for the appointments by overriding the built-in response processing using the `processResponse` method of the `ODataV4Adaptor`.
+You can create your own custom adaptor by extending the built-in available adaptors. The following example demonstrates custom adaptor usage and how to add a custom field `EventID` for appointments by overriding the `processResponse` method of the `ODataV4Adaptor`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -156,7 +160,7 @@ It is possible to create your own custom adaptor by extending the built-in avail
 
 ## Loading data via AJAX post
 
-You can bind the event data through external ajax request and assign it to the `dataSource`property of Scheduler. In the following code example, we have retrieved the data from server with the help of ajax request and assigned the resultant data to the `dataSource` property of Scheduler within the `onSuccess` event of Ajax.
+You can bind the event data through external ajax request and assign it to the [`dataSource`](../api/schedule/eventSettings/#datasource) property of Scheduler. In the following code example, we have retrieved the data from server with the help of ajax request and assigned the resultant data to the [`dataSource`](../api/schedule/eventSettings/#datasource) property of Scheduler within the `onSuccess` event of Ajax.
 
 `[src/app/app.ts]`
 
@@ -183,7 +187,10 @@ scheduleObj.appendTo('#Schedule');
 
 ## Passing additional parameters to the server
 
-To send an additional custom parameter to the server-side post, you need to make use of the `addParams` method of `Query`. Now, assign this `Query` object with additional parameters to the [`query`](../api/schedule/eventSettings/#query) property of Scheduler.
+To send additional custom parameters to the server-side post:
+
+1. Use the `addParams` method of `Query`.
+2. Assign the `Query` object with additional parameters to the [`query`](../api/schedule/eventSettings/#query) property of the Scheduler.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -212,13 +219,11 @@ To send an additional custom parameter to the server-side post, you need to make
 {% previewsample "page.domainurl/code-snippet/schedule/data-bind-cs5" %}
 {% endif %}
 
-> The parameters added using the [`query`](../api/schedule/eventSettings/#query) property will be sent along with the data request sent to the server on every scheduler actions.
+> Parameters added using the [`query`](../api/schedule/eventSettings/#query) property will be sent with every data request to the server for all Scheduler actions.
 
 ## Handling failure actions
 
-During the time of Scheduler interacting with server, there are chances that some server-side exceptions may occur. You can acquire those error messages or exception details in client-side using the [`actionFailure`](../api/schedule/#actionfailure) event of Scheduler.
-
-The argument passed to the [`actionFailure`](../api/schedule/#actionfailure) event contains the error details returned from the server.
+You can handle server-side exceptions and error messages on the client-side using the Scheduler's [`actionFailure`](../api/schedule/#actionfailure) event. The event argument contains the error details returned from the server.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -247,7 +252,7 @@ The argument passed to the [`actionFailure`](../api/schedule/#actionfailure) eve
 {% previewsample "page.domainurl/code-snippet/schedule/data-bind-cs6" %}
 {% endif %}
 
-> The [`actionFailure`](../api/schedule/#actionfailure) event will be triggered not only on server returning errors, but also when there is an exception while processing any of the Scheduler CRUD actions.
+> The [`actionFailure`](../api/schedule/#actionfailure) event triggers not only when the server returns errors but also when there's an exception while processing any Scheduler CRUD action.
 
 ## Scheduler CRUD actions
 
@@ -379,7 +384,7 @@ namespace ScheduleSample.Controllers
 
 ## Configuring Scheduler with Google API service
 
-We have assigned our custom created Google Calendar url to the DataManager and assigned the same to the Scheduler `dataSource`. Since the events data retrieved from the Google Calendar will be in its own object format, therefore it needs to be resolved manually within the Scheduler’s `dataBinding` event. Within this event, the event fields needs to be mapped properly and then assigned to the result.
+We have assigned our custom created Google Calendar url to the DataManager and assigned the same to the Scheduler [`dataSource`](../api/schedule/eventSettings/#datasource). Since the events data retrieved from the Google Calendar will be in its own object format, therefore it needs to be resolved manually within the Scheduler’s [`dataBinding`](../api/schedule#databinding) event. Within this event, the event fields needs to be mapped properly and then assigned to the result.
 
 {% if page.publishingplatform == "typescript" %}
 

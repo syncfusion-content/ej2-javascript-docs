@@ -1,6 +1,6 @@
-import { Maps, Marker } from '@syncfusion/ej2-maps';
+import { Maps, Markers } from '@syncfusion/ej2-maps';
 import { world_map } from './world-map.ts';
-Maps.Inject(Marker);
+Maps.Inject(Markers);
 let map: Maps = new Maps({
     layers: [
         {

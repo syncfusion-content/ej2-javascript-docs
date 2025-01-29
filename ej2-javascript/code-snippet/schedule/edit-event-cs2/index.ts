@@ -5,6 +5,7 @@ import { Schedule, Day, Week, WorkWeek, Month } from '@syncfusion/ej2-schedule';
 import { Button } from '@syncfusion/ej2-buttons';
 
 Schedule.Inject(Day, Week, WorkWeek, Month);
+
 let scheduleData: Object[] = [{
   Id: 3,
   Subject: 'Testing',
@@ -36,8 +37,6 @@ edit.appendTo('#edit');
 edit.element.onclick = (): void => {
   let data: Object = new DataManager(scheduleObj.getCurrentViewEvents()).executeLocal(new Query().where('RecurrenceID', 'equal', 3));
   data[0].Subject = 'Edited';
-  scheduleObj.saveEvent(data[0], 'EditOccurrence');
+  scheduleObj.saveEvent(data[0], 'EditSeries');
   edit.element.setAttribute('disabled', 'true');
 };
-
-

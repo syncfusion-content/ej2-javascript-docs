@@ -1,9 +1,9 @@
 var data = [{
-    TravelId: 2,
-    TravelSummary: 'Paris',
-    DepartureTime: new Date(2018, 1, 15, 10, 0),
-    ArrivalTime: new Date(2018, 1, 15, 12, 30),
-    FullDay: false,
+    TravelId: 2,
+    TravelSummary: 'Paris',
+    DepartureTime: new Date(2018, 1, 15, 10, 0),
+    ArrivalTime: new Date(2018, 1, 15, 12, 30),
+    FullDay: false,
     Source: 'London',
     Comments: 'Summer vacation planned for outstation.',
     Origin: 'Asia/Yekaterinburg',
@@ -13,7 +13,8 @@ var data = [{
 var scheduleObj = new ej.schedule.Schedule({
     height: '550px',
     selectedDate: new Date(2018, 1, 15),
-    eventSettings: { dataSource: data,
+    eventSettings: {
+        dataSource: data,
         fields: {
             id: 'TravelId',
             subject: { name: 'TravelSummary' },
@@ -28,4 +29,3 @@ var scheduleObj = new ej.schedule.Schedule({
     }
 });
 scheduleObj.appendTo('#Schedule');
-

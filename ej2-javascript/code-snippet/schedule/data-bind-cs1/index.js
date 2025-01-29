@@ -20,6 +20,7 @@ var scheduleData = [{
     StartTime: new Date(2018, 1, 14, 13, 0),
     EndTime: new Date(2018, 1, 14, 14, 30)
 }];
+
 var scheduleObj = new ej.schedule.Schedule({
     height: '550px',
     selectedDate: new Date(2018, 1, 15),

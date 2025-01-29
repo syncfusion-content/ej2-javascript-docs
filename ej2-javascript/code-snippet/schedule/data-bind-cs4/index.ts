@@ -1,9 +1,8 @@
-
-
 import { Schedule, Day, Week, WorkWeek, Month, Agenda } from '@syncfusion/ej2-schedule';
 import { DataManager, ODataV4Adaptor, Query } from '@syncfusion/ej2-data';
 
 Schedule.Inject(Day, Week, WorkWeek, Month, Agenda);
+
 class CustomAdaptor extends ODataV4Adaptor {
     processResponse(): Object {
         let i: number = 0;
@@ -19,6 +18,7 @@ let dataManager: DataManager = new DataManager({
     url: 'https://services.odata.org/V4/Northwind/Northwind.svc/Orders/',
     adaptor: new CustomAdaptor
 });
+
 let scheduleObj: Schedule = new Schedule({
     height: '550px',
     selectedDate: new Date(1996, 6, 9),
@@ -37,5 +37,3 @@ let scheduleObj: Schedule = new Schedule({
     }
 });
 scheduleObj.appendTo('#Schedule');
-
-

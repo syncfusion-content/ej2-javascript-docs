@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Crud actions in ##Platform_Name## Schedule control | Syncfusion
-description: Learn here all about Crud actions in Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
+title: Crud actions in ##Platform_Name## Scheduler control | Syncfusion
+description: Learn here all about Crud actions in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Crud actions 
 publishingplatform: ##Platform_Name##
@@ -9,19 +9,19 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Crud actions in ##Platform_Name## Schedule control
+# Crud actions in ##Platform_Name## Scheduler control
 
-Events, a.k.a. Appointments, play an important role in Scheduler with which the users mostly interact. You can easily manipulate (add/edit/delete) the desired appointments as and when required either using the editor window or through the drag and resize action.
+Events, also known as Appointments, play an important role in the Scheduler, with which users mostly interact. You can easily manipulate (add/edit/delete) the desired appointments as and when required either using the editor window or through the drag and resize action.
 
 ## Add
 
-Any kind of appointments such as normal, all-day, spanned or recurring events can be easily added on Scheduler using any one of the following ways.
+Any kind of appointments, such as normal, all-day, spanned, or recurring events can be easily added to the Scheduler using any one of the following ways.
 * [Creation using editor window](#creation-using-editor-window)
 * [Creation using addEvent method](#creation-using-addevent-method)
 
 ### Creation using editor window
 
-The default editor window opens when you double click on the Scheduler cells. It provides you with event related options such as Subject, Location, Start and End time, All-day, Timezone, Description and other recurrence options. With these available fields, you can choose to provide detailed information to the events. Once the fields are filled with proper values, enter the `Save` button to add an event.
+The default editor window opens when you double click on the Scheduler cells. It provides you with event-related options such as Subject, Location, Start and End time, All-day, Timezone, Description and other recurrence options. With these available fields, you can choose to provide detailed information to the events. Once the fields are filled with proper values, enter the `Save` button to add an event.
 
 In case, if you want to simply provide the Subject alone for appointments, just single click on the required cells which will open the quick popup expecting you to enter subject alone and save it. You can also select multiple cells and press `Enter` key to open the quick popup for selected time range and save the appointment for that time range.
 
@@ -29,7 +29,7 @@ In case, if you need to add some other additional fields to the editor window, t
 
 ### Creation using addEvent method
 
-The appointments can be created dynamically by using [`addEvent`](https://ej2.syncfusion.com/documentation/api/schedule#addevent) method. Either you can add a single or a collection of appointment objects using [`addEvent`](https://ej2.syncfusion.com/documentation/api/schedule#addevent) method. The following code example let you know how to use the [`addEvent`](https://ej2.syncfusion.com/documentation/api/schedule#addevent) method to create multiple appointments simultaneously.
+The appointments can be created dynamically by using [`addEvent`](../api/schedule/#addevent) method. Either you can add a single or a collection of appointment objects using [`addEvent`](../api/schedule/#addevent) method. The following code example let you know how to use the [`addEvent`](../api/schedule/#addevent) method to create multiple appointments simultaneously.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -104,6 +104,9 @@ Additionally, the regex condition has been added to the Location field, so that 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/default-cs1/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/default-cs1/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs1" %}
@@ -117,12 +120,15 @@ Additionally, the regex condition has been added to the Location field, so that 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/default-cs1/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/default-cs1/es5-datasource.js %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs1" %}
 {% endif %}
 
-You can also dynamically prevent the creation of appointments on Scheduler. For example, say if you want to decline the creation of appointments on weekend days, you can check for its appropriate condition within the [`actionBegin`](https://ej2.syncfusion.com/documentation/api/schedule#actionbegin) event.
+You can also dynamically prevent the creation of appointments on Scheduler. For example, if you want to decline the creation of appointments on weekend days, you can check for its appropriate condition within the [`actionBegin`](../api/schedule/#actionbegin) event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -132,6 +138,9 @@ You can also dynamically prevent the creation of appointments on Scheduler. For 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/default-cs2/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/default-cs2/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -145,6 +154,9 @@ You can also dynamically prevent the creation of appointments on Scheduler. For 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/default-cs2/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/default-cs2/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -166,9 +178,9 @@ You can open the default editor window filled with appointment details by double
 
 ### Update using saveEvent method
 
-The appointments can be edited and updated manually using the [`saveEvent`](https://ej2.syncfusion.com/documentation/api/schedule#saveevent) method. The following code examples shows how to edit the normal and recurring events.
+The appointments can be edited and updated manually using the [`saveEvent`](../api/schedule/#saveevent) method. The following code examples shows how to edit the normal and recurring events.
 
-**Normal event** - Here, an event with ID `3` is edited and its subject is changed with a new text. When the modified data object is passed onto the [`saveEvent`](https://ej2.syncfusion.com/documentation/api/schedule#saveevent) method, the changes gets reflected onto the original event. The [`Id`](https://ej2.syncfusion.com/documentation/api/schedule/field/#id) field is mandatory in this edit process, where the modified event object should hold the valid [`Id`](https://ej2.syncfusion.com/documentation/api/schedule/field/#id) value that exists in the Scheduler data source.
+**Normal event** - Here, an event with ID `3` is edited and its subject is changed with a new text. When the modified data object is passed onto the [`saveEvent`](../api/schedule/#saveevent) method, the changes gets reflected onto the original event. The `Id` field is mandatory in this edit process, where the modified event object should hold the valid `Id` value that exists in the Scheduler data source.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -197,11 +209,11 @@ The appointments can be edited and updated manually using the [`saveEvent`](http
 {% previewsample "page.domainurl/code-snippet/schedule/edit-event-cs1" %}
 {% endif %}
 
-**Recurring event** - The following code example shows how to edit a single occurrence of a recurring event. In this case, the modified data should hold an additional field namely `RecurrenceID` mapping to its parent recurring event's Id value. Also, this modified occurrence will be considered as a new event in the Scheduler dataSource, where it is linked with its parent event through the `RecurrenceID` field value. The [`saveEvent`](https://ej2.syncfusion.com/documentation/api/schedule#saveevent) method takes 2 arguments, first one accepting the modified event data object and second argument accepting either of the 2 text values - `EditOccurrence` or `EditSeries`.
+**Recurring event** - The following code example shows how to edit a single occurrence of a recurring event. In this case, the modified data should hold an additional field namely [`RecurrenceID`](../api/schedule/field/#recurrenceid) mapping to its parent recurring event's Id value. Also, this modified occurrence will be considered as a new event in the Scheduler dataSource, where it is linked with its parent event through the [`RecurrenceID`](../api/schedule/field/#recurrenceid) field value. The [`saveEvent`](../api/schedule/#saveevent) method takes 2 arguments, first one accepting the modified event data object and second argument accepting either of the 2 text values - `EditOccurrence` or `EditSeries`.
 
 When the second argument is passed as `EditOccurrence`, which means that the passed event data is a single modified occurrence - whereas if the second argument is passed as `EditSeries`, it means that the modified data needs to be edited as a whole series and therefore no new event object will be maintained in the Scheduler dataSource.
 
-In case of modifying the single occurrence, it is also necessary to update the `RecurrenceException` field of parent event altogether with the occurrence editing. To know more about how to set `RecurrenceException` values, refer the [recurring events](./appointments/#adding-exceptions) topic.
+In case of modifying the single occurrence, it is also necessary to update the [`RecurrenceException`](../api/schedule/field/#recurrenceexception) field of parent event altogether with the occurrence editing. To know more about how to set [`RecurrenceException`](../api/schedule/field/#recurrenceexception) values, refer the [recurring events](./appointments/#adding-exceptions) topic.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -269,9 +281,9 @@ The recurring appointments can be edited in either of the following two ways.
 
 **Editing single occurrence** - When you double click on a recurring event, a popup prompts you to choose either to edit the single event or entire series. From this, if you choose to select **EDIT EVENT** option, a single occurrence of the recurring appointment alone will be edited. The following process takes place while editing a single occurrence,
 
-* A new event will be created from the parent event data and added to the Scheduler dataSource, with all its default field values overwritten with the newly modified data and additionally, the `recurrenceID` field will be added to it, that holds the `id` value of the parent recurring event. Also, a new `Id` will be generated for this event in the dataSource.
+* A new event will be created from the parent event data and added to the Scheduler dataSource, with all its default field values overwritten with the newly modified data and additionally, the [`recurrenceID`](../api/schedule/field/#recurrenceid) field will be added to it, that holds the `id` value of the parent recurring event. Also, a new `Id` will be generated for this event in the dataSource.
 
-* The parent recurring event needs to be updated with appropriate `recurrenceException` field to hold the edited occurrence appointment's date collection.
+* The parent recurring event needs to be updated with appropriate [`recurrenceException`](../api/schedule/field/#recurrenceexception) field to hold the edited occurrence appointment's date collection.
 
 Therefore, when a single occurrence is edited from a recurring event, the batch action takes place by allowing both the `Add` and `Edit` action requests to take place together.
 
@@ -373,7 +385,7 @@ if (param.action == "remove" || (param.action == "batch" && param.deleted != nul
 
 ### How to edit from the current and following events of a series
 
-The recurring appointments can be edited from current and following events when enable the property [`editFollowingEvents`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings/#editfollowingevents).
+The recurring appointments can be edited from current and following events when enable the property [`editFollowingEvents`](../api/schedule/eventSettings/#editfollowingevents).
 
 **Editing Following Events** - When you double click on a recurring event, a popup prompts you to choose either to edit the single event or Edit Following Events or entire series. From this, if you choose to select **EDIT FOLLOWING EVENTS** option, a current and following events of the recurring appointment will be edited. The following process takes place while editing a following events,
 
@@ -451,7 +463,7 @@ if (param.action == "remove" || (param.action == "batch" && param.deleted != nul
 
 ### Restricting edit action based on specific criteria
 
-You can also dynamically prevent the editing of appointments on Scheduler. For example, say if you want to decline the updating of appointments on non-working hours, you can check for its appropriate condition within the [`actionBegin`](https://ej2.syncfusion.com/documentation/api/schedule#actionbegin) event.
+You can also dynamically prevent the editing of appointments on Scheduler. For example, if you want to decline the updating of appointments on non-working hours, you can check for its appropriate condition within the [`actionBegin`](../api/schedule/#actionbegin) event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -461,6 +473,9 @@ You can also dynamically prevent the editing of appointments on Scheduler. For e
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/default-cs3/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/default-cs3/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -475,6 +490,9 @@ You can also dynamically prevent the editing of appointments on Scheduler. For e
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/default-cs3/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/default-cs3/es5-datasource.js %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs3" %}
@@ -482,7 +500,8 @@ You can also dynamically prevent the editing of appointments on Scheduler. For e
 
 ## Delete
 
-The appointments can be deleted in either of the following ways,
+The appointments can be deleted in any of the following ways,
+
 * Selecting an appointment and clicking the delete icon from the quick popup that opens.
 * Selecting an appointment and pressing `Delete` key.
 * Selecting multiple appointments by tap holding an event and then continuously single clicking on other consecutive events and then clicking the `Delete` key.
@@ -496,9 +515,9 @@ When you double click an event, the default editor window will be opened which i
 
 ### Deletion using deleteEvent method
 
-The appointments can be removed manually using the [`deleteEvent`](https://ej2.syncfusion.com/documentation/api/schedule#deleteevent) method. The following code examples shows how to edit the normal and recurring events.
+The appointments can be removed manually using the [`deleteEvent`](../api/schedule/#deleteevent) method. The following code examples shows how to delete the normal and recurring events.
 
-**Normal event** - You can delete the normal appointments of Scheduler by simply passing its `Id` value or the entire event object collection to the [`deleteEvent`](https://ej2.syncfusion.com/documentation/api/schedule#deleteevent) method.
+**Normal event** - You can delete the normal appointments of Scheduler by simply passing its `Id` value or the entire event object collection to the [`deleteEvent`](../api/schedule/#deleteevent) method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -593,7 +612,7 @@ The recurring events can be deleted in either of the following two ways.
 **Single occurrence** - When you attempt to delete the recurring events, a popup prompts you to choose either to delete the single event or entire series. From this, if you choose to select **DELETE EVENT** option, a single occurrence of the recurring appointment alone will be removed. The following process takes place while removing a single occurrence,
 
 * The selected occurrence will be deleted from the Scheduler user interface.
-* In code, the parent recurring event object will be updated with appropriate `recurrenceException` field, to hold the deleted occurrence appointment's date collection.
+* In code, the parent recurring event object will be updated with appropriate [`recurrenceException`](../api/schedule/field/#recurrenceexception) field, to hold the deleted occurrence appointment's date collection.
 
 Therefore, when a single occurrence is deleted from a recurring event, the `update` action takes place on the parent recurring event as shown in the following code example.
 
@@ -648,7 +667,7 @@ if (param.action == "remove" || (param.action == "batch" && param.deleted != nul
 
 ### How to delete only the current and following events of a series
 
-The recurring events can be deleted from current and following events only when enable [`editFollowingEvents`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings/#editfollowingevents) property.
+The recurring events can be deleted from current and following events only when enable `editFollowingEvents` property.
 
 **Delete Following Events** - When you attempt to delete the recurring events, a popup prompts you to choose either to delete the single event or Following Events or entire series. From this, if you choose to select **FOLLOWING EVENT** option, a current and following events of the recurring appointment alone will be removed. The following process takes place while removing a single occurrence,
 
@@ -716,6 +735,9 @@ When you drag and drop a normal event on the Scheduler, the event editing action
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/event-cs37/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/event-cs37/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/event-cs37" %}
@@ -728,6 +750,9 @@ When you drag and drop a normal event on the Scheduler, the event editing action
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/event-cs37/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/event-cs37/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -749,6 +774,9 @@ When you resize a normal event on the Scheduler, the event editing action takes 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/event-cs38/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/event-cs38/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/event-cs38" %}
@@ -761,6 +789,9 @@ When you resize a normal event on the Scheduler, the event editing action takes 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/event-cs38/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/event-cs38/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 

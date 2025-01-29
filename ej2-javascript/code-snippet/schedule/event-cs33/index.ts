@@ -1,5 +1,3 @@
-
-
 import { Schedule, Day, Week, WorkWeek } from '@syncfusion/ej2-schedule';
 import { readOnlyData } from './datasource.ts';
 
@@ -13,5 +11,3 @@ let scheduleObj: Schedule = new Schedule({
     eventSettings: { dataSource: readOnlyData }
 });
 scheduleObj.appendTo('#Schedule');
-
-

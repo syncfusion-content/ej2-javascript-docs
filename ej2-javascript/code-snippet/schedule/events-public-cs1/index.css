@@ -11,12 +11,3 @@
   top: 45%;
   left: 45%;
 }
-
-.content-wrapper {
-  display: flex;
-}
-
-.control-section {
-  padding-right: 10px;
-  width:70%;
-}

@@ -270,6 +270,81 @@ The following code illustrates how to add Padding to the node group.
 {% previewsample "page.domainurl/code-snippet/diagram/group-padding" %}
 {% endif %}
 
+## Group flip
+
+The flip functionality for a group node works similarly to that of normal nodes. However, when flipping a group node, the flip of its child nodes is combined with the group's flip. This combination ensures that the child nodes inherit the group’s flip while retaining their own individual flips.
+
+`Example`:
+
+- If a child node’s flip is set to Vertical and the group node’s flip is set to Horizontal, the resulting flip for the child node will be a combination of Vertical and Horizontal (effectively a "both" flip).
+- This ensures that the child nodes’ orientations adapt dynamically based on the group’s flip while maintaining their unique flip settings.
+
+The following example shows how to apply flip for group node.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/group-flip/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/group-flip/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/group-flip" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/group-flip/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/group-flip/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/diagram/group-flip" %}
+{% endif %}
+
+## Group flip mode
+
+The [`flipMode`](../api/diagram/flipMode/) of a group node also behave similarly to those of normal nodes. However,When you apply a flip mode to a group node, it takes precedence over any flip mode set on its child nodes, overriding their individual settings.
+
+For example, in the below code,
+the flipMode for the child node `Node1` is set to `LabelText`.
+The flipMode for the group node is set to `Label`.
+As a result, the effective flipMode for both the child node and the group node will be Label, as the group node’s flipMode overrides the child’s.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/group-flipMode/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/group-flipMode/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/group-flipMode" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/group-flipMode/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/group-flipMode/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/diagram/group-flipMode" %}
+{% endif %}
+
+
 ## Nested group
 
 Nested groups are essentially groups within groups, where a group can contain other groups as its children, creating a hierarchy that helps manage complexity and relationships between different elements. The following code illustrates how to create nested group node.

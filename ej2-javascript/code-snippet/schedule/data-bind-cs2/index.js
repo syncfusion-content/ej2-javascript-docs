@@ -3,10 +3,12 @@ var dataManager = new ej.data.DataManager({
     adaptor: new ej.data.ODataV4Adaptor(),
     crossDomain: true
 });
+
 var scheduleObj = new ej.schedule.Schedule({
     height: '550px',
     selectedDate: new Date(1996, 6, 9),
-    eventSettings: { dataSource: dataManager,
+    eventSettings: {
+        dataSource: dataManager,
         fields: {
             id: 'Id',
             subject: { name: 'ShipName' },
@@ -15,8 +17,8 @@ var scheduleObj = new ej.schedule.Schedule({
             startTime: { name: 'OrderDate' },
             endTime: { name: 'RequiredDate' },
             recurrenceRule: { name: 'ShipRegion' }
-        } },
+        }
+    },
     readonly: true
 });
- scheduleObj.appendTo('#Schedule');
-
+scheduleObj.appendTo('#Schedule');

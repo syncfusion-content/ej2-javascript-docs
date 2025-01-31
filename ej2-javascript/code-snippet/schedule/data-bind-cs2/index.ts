@@ -1,5 +1,3 @@
-
-
 import { Schedule, Day, Week, WorkWeek, Month, Agenda } from '@syncfusion/ej2-schedule';
 import { DataManager, ODataV4Adaptor, Query } from '@syncfusion/ej2-data';
 
@@ -27,5 +25,3 @@ let scheduleObj: Schedule = new Schedule({
     }
 });
 scheduleObj.appendTo('#Schedule');
-
-

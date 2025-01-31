@@ -3,6 +3,7 @@
 import { Schedule, Day, Week, WorkWeek, Month, Agenda } from '@syncfusion/ej2-schedule';
 
 Schedule.Inject(Day, Week, WorkWeek, Month, Agenda);
+
 let scheduleData: object[] = [{
     Id: 1,
     Subject: 'Explosion of Betelgeuse Star',
@@ -24,11 +25,10 @@ let scheduleData: object[] = [{
     StartTime: new Date(2018, 1, 14, 13, 0),
     EndTime: new Date(2018, 1, 14, 14, 30)
 }];
+
 let scheduleObj: Schedule = new Schedule({
     height: '550px',
     selectedDate: new Date(2018, 1, 15),
     eventSettings: { dataSource: scheduleData }
 });
 scheduleObj.appendTo('#Schedule');
-
-

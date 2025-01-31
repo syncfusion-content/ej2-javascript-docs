@@ -77,156 +77,528 @@ Ensuring the accessibility of Syncfusion ##Platform_Name## controls is crucial f
 
 Syncfusion ##Platform_Name## controls will keep improving when there is anything required. It also involves client feedback to make the control more accessible.
 
+## Voluntary Product Accessibility Template
+
+[Voluntary Product Accessibility Template](https://www.itic.org/policy/accessibility/vpat) - It offers a structured format for detailing how accessible information and communication technology (ICT) products and services are, allowing organizations to communicate their conformance with accessibility standards clearly and effectively. You can download the latest version of the Syncfusion VPAT document [here](https://ej2.syncfusion.com/accessibility/Syncfusion-VPAT2.5.docx).
+
 ## Accessibility support for specific controls
 
 Consult the control-specific documents below for detailed information about how Syncfusion ##Platform_Name## controls ensure compliance with accessibility standards, encompassing Section 508, WAI-ARIA, WCAG 2.2, keyboard navigation, and more.
 
-<style>
-# table
-{
-border:0 !important;
-line-height: 2!important;
-}
-
-tr
-{
-border:0 !important;
-}
-
-td
-{
-border:0 !important;
-vertical-align: top;
-}
-
-.controlanchorlink
-{
-text-decoration: none !important;
-font-size: 14px !important;
-text-align: left !important;
-padding: 5px 0px;
-letter-spacing: 1px;
-}
-.controlcategory
-{
-font-size: 14px !important;
-text-align: left !important;
-font-weight: bold !important;
-letter-spacing: 0.7px;
-}
-}
-</style>
-
-<table id="table" style="border: 0px;">
+<table id="table">
+    <thead>
+        <tr>
+            <th>Component</th>
+            <th>Section 508</th>
+            <th>WCAG 2.2</th>
+            <th>Keyboard Navigation</th>
+            <th>Accessibility Documentation</th>
+        </tr>
+    </thead>
 <tbody>
-<colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-</colgroup>
+    <tr>
+        <td>DataGrid</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../grid/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Pivot Table</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../pivotview/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Tree Grid</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../treegrid/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Spreadsheet</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../spreadsheet/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>In-place Editor</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../inplace-editor/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>PDF Viewer</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../pdfviewer/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>RichTextEditor</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../rich-text-editor/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Word Processor</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../document-editor/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Image Editor</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../image-editor/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Dialog</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../dialog/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>ListView</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../listview/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Tooltip</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../tooltip/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Splitter</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../splitter/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Dashboard Layout</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>NA</td>
+        <td><a target="_self" href="../dashboard-layout/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Accumulation Chart</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../accumulation-chart/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Charts</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../chart/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Stock Chart</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../stock-chart/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Circular Gauge</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>NA</td>
+        <td><a target="_self" href="../circular-gauge/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Diagram</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../diagram/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>HeatMap Chart</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>NA</td>
+        <td><a target="_self" href="../heatmap-chart/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Linear Gauge</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>NA</td>
+        <td><a target="_self" href="../linear-gauge/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Maps</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../maps/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Range Selector</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../range-navigator/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Smith Chart</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../smithchart/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Sparkline Charts</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../sparkline/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>TreeMap</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>NA</td>
+        <td><a target="_self" href="../treemap/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Bullet Chart</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../bullet-chart/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Kanban</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../kanban/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Button</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../button/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Button Group</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../button-group/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Dropdown Menu</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../drop-down-button/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Progress Button</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../progress-button/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Split Button</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../split-button/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Chips</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../chips/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>FAB</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../floating-action-button/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Speed Dial</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../speed-dial/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Calendar</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../calendar/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>DatePicker</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../datepicker/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>DateRangePicker</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../daterangepicker/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>DateTime Picker</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../datetimepicker/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>TimePicker</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../timepicker/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Gantt Chart</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../gantt/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>TextBox</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../textbox/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Input Mask</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../maskedtextbox/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Masked TextBox</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../maskedtextbox/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Numeric TextBox</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../numerictextbox/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Radio Button</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../radio-button/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>CheckBox</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../check-box/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Color Picker</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../color-picker/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>File Upload</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../uploader/wai-aria-accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Range Slider</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../range-slider/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Toggle Switch Button</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../switch/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Signature</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../signature/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Rating</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../rating/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Query Builder</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../query-builder/accessibility">Documentation</a></td>
+    </tr> 
+    <tr>
+        <td>Accordion</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../accordion/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>AppBar</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../appbar/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Breadcrumb</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../breadcrumb/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Carousel</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../carousel/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Context Menu</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../context-menu/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Menu Bar</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../menu/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Sidebar</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../sidebar/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Tabs</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../tab/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Toolbar</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../toolbar/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Ribbon</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../ribbon/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>TreeView</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../treeview/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>File Manager</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../file-manager/accessibility">Documentation</a></td>
+    </tr> 
+    <tr>
+        <td>Stepper</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../stepper/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Message</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../message/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Toast</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>NA</td>
+        <td><a target="_self" href="../toast/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Progress Bar</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../progress-bar/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Skeleton</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="../skeleton/accessibility">Documentation</a></td>
+    </tr>
 </tbody>
-<tr>
-    <td>
-        <div><p class="controlcategory">GRIDS</p></div>
-        <div class="controlanchorlink"><a target="_self" href="../grid/accessibility">DataGrid</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../pivotview/accessibility">Pivot Table</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../treegrid/accessibility">Tree Grid</a></div>
-         <div class="controlanchorlink"><a target="_self" href="../spreadsheet/accessibility">Spreadsheet</a></div>
-        <div><p class="controlcategory">FILE VIEWERS & EDITORS</p></div>
-        <div class="controlanchorlink"><a target="_self" href="../inplace-editor/accessibility">In-place Editor</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../pdfviewer/accessibility">PDF Viewer</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../rich-text-editor/accessibility">RichTextEditor</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../document-editor/accessibility">Word Processor</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../image-editor/accessibility">Image Editor</a></div>
-        <div><p class="controlcategory">LAYOUT</p></div>
-        <div class="controlanchorlink"><a target="_self" href="../dialog/accessibility">Dialog</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../listview/accessibility">ListView</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../tooltip/accessibility">Tooltip</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../splitter/accessibility">Splitter</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../dashboard-layout/accessibility">Dashboard Layout</a></div>
-    </td>
-    <td>
-        <div><p class="controlcategory">DATA VISUALIZATION</p></div>
-        <div class="controlanchorlink"><a target="_self" href="../accumulation-chart/accessibility">Accumulation Chart</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../chart/accessibility">Charts</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../3d-chart/accessibility">3D Chart</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../stock-chart/accessibility">Stock Chart</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../circular-gauge/accessibility">Circular Gauge</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../diagram/accessibility">Diagram</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../heatmap-chart/accessibility">HeatMap Chart</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../linear-gauge/accessibility">Linear Gauge</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../maps/accessibility">Maps</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../range-navigator/accessibility">Range Selector</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../smithchart/accessibility">Smith Chart</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../sparkline/accessibility">Sparkline Charts</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../treemap/accessibility">TreeMap</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../bullet-chart/accessibility">Bullet Chart</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../kanban/accessibility">Kanban</a></div>
-        <div><p class="controlcategory">BUTTONS</p></div>
-        <div class="controlanchorlink"><a target="_self" href="../button/accessibility">Button</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../button-group/accessibility">Button Group</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../drop-down-button/accessibility">Dropdown Menu</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../progress-button/accessibility">Progress Button</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../split-button/accessibility">Split Button</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../chips/accessibility">Chips</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../floating-action-button/accessibility">FAB</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../speed-dial/accessibility">Speed Dial</a></div>
-    </td>
-    <td>
-        <div><p class="controlcategory">CALENDARS</p></div>
-        <div class="controlanchorlink"><a target="_self" href="../schedule/accessibility">Scheduler</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../calendar/accessibility">Calendar</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../datepicker/accessibility">DatePicker</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../daterangepicker/accessibility">DateRangePicker</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../datetimepicker/accessibility">DateTime Picker</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../timepicker/accessibility">TimePicker</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../gantt/accessibility">Gantt Chart</a></div>
-        <div><p class="controlcategory">INPUTS</p></div>
-        <div class="controlanchorlink"><a target="_self" href="../textbox/accessibility">TextBox</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../maskedtextbox/accessibility">Input Mask</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../maskedtextbox/accessibility">Masked TextBox</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../numerictextbox/accessibility">Numeric TextBox</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../radio-button/accessibility">Radio Button</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../check-box/accessibility">CheckBox</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../color-picker/accessibility">Color Picker</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../uploader/wai-aria-accessibility">File Upload</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../range-slider/accessibility">Range Slider</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../switch/accessibility">Toggle Switch Button</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../signature/accessibility">Signature</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../rating/accessibility">Rating</a></div>
-        <div><p class="controlcategory">FORMS</p></div>
-        <div class="controlanchorlink"><a target="_self" href="../query-builder/accessibility">Query Builder</a></div>
-    </td>
-    <td>
-        <div><p class="controlcategory">DROPDOWNS</p></div>
-        <div class="controlanchorlink"><a target="_self" href="../auto-complete/accessibility">AutoComplete</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../combo-box/accessibility">ComboBox</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../drop-down-list/accessibility">Dropdown List</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../drop-down-tree/accessibility">DropDown Tree</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../multi-select/accessibility">Multiselect DropDown</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../mention/accessibility">Mention</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../list-box/accessibility">ListBox</a></div>
-        <div><p class="controlcategory">NAVIGATION</p></div>
-        <div class="controlanchorlink"><a target="_self" href="../accordion/accessibility">Accordion</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../appbar/accessibility">AppBar</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../breadcrumb/accessibility">Breadcrumb</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../carousel/accessibility">Carousel</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../context-menu/accessibility">Context Menu</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../menu/accessibility">Menu Bar</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../sidebar/accessibility">Sidebar</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../tab/accessibility">Tabs</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../toolbar/accessibility">Toolbar</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../ribbon/accessibility">Ribbon</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../treeview/accessibility">TreeView</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../file-manager/accessibility">File Manager</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../pager/accessibility">Pager</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../stepper/accessibility">Stepper</a></div>
-        <div><p class="controlcategory">NOTIFICATION</p></div>
-        <div class="controlanchorlink"><a target="_self" href="../message/accessibility">Message</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../toast/accessibility">Toast</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../progress-bar/accessibility">Progress Bar</a></div>
-        <div class="controlanchorlink"><a target="_self" href="../skeleton/accessibility">Skeleton</a></div>
-    </td>
-</tr>
 </table>

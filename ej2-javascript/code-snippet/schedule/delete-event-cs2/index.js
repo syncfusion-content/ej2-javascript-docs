@@ -21,18 +21,18 @@ var scheduleObj = new ej.schedule.Schedule({
     eventSettings: { dataSource: data }
 });
 scheduleObj.appendTo('#Schedule');
+
 var remove = new ej.buttons.Button();
 remove.appendTo('#delete');
-remove.element.onclick = function() {
-var scheduleData = [{
-    Id: 2,
-    Subject: 'Vacation',
-    RecurrenceID: 4,
-    StartTime: new Date(2018, 1, 12, 11, 0),
-    EndTime: new Date(2018, 1, 12, 12, 0),
-    IsAllDay: false,
-    RecurrenceRule: 'FREQ=DAILY;INTERVAL=1;COUNT=2'
-}];
-scheduleObj.deleteEvent(scheduleData,'DeleteSeries');
+remove.element.onclick = function () {
+    var scheduleData = [{
+        Id: 2,
+        Subject: 'Vacation',
+        RecurrenceID: 4,
+        StartTime: new Date(2018, 1, 12, 11, 0),
+        EndTime: new Date(2018, 1, 12, 12, 0),
+        IsAllDay: false,
+        RecurrenceRule: 'FREQ=DAILY;INTERVAL=1;COUNT=2'
+    }];
+    scheduleObj.deleteEvent(scheduleData, 'DeleteSeries');
 };
-

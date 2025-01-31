@@ -1,7 +1,7 @@
 
 
 
-import { Diagram, NodeModel ,BasicShapeModel} from '@syncfusion/ej2-diagrams';
+import { Diagram, NodeModel ,BasicShapeModel, FlipDirection} from '@syncfusion/ej2-diagrams';
 // A node is created and stored in nodes array.
 let node: NodeModel = {
     // Position of the node
@@ -11,7 +11,7 @@ let node: NodeModel = {
     width: 100,
     height: 100,
     // Flip the node in Horizontal Direction
-    flip:"Horizontal",
+    flip: FlipDirection.Horizontal,
     shape: {
         type: 'Basic',
         shape: 'RightTriangle',

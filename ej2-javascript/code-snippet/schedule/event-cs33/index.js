@@ -5,4 +5,3 @@ var scheduleObj = new ej.schedule.Schedule({
     eventSettings: { dataSource: readOnlyData }
 });
 scheduleObj.appendTo('#Schedule');
-

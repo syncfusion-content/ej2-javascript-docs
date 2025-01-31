@@ -84,7 +84,6 @@ var data = [
 ];
 var scheduleObj = new ej.schedule.Schedule({
   dataBound: function () {
-    debugger;
     if (initialLoad) {
       this.element.querySelector('.e-all-day-appointment-section').click();
       initialLoad = false;
@@ -92,8 +91,9 @@ var scheduleObj = new ej.schedule.Schedule({
   },
   height: '750px',
   selectedDate: new Date(2022, 3, 26),
-  views: ['Day', 'Week', 'TimelineWeek', 'Month', 'Agenda'],
+  views: ['Day', 'Week'],
   eventSettings: { dataSource: data },
+  enableHtmlSanitizer: false
 });
 var initialLoad = true;
 

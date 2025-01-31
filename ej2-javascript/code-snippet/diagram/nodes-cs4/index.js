@@ -6,7 +6,7 @@ var node = {
     width: 100,
     height: 100,
     // Flip the node in Horizontal Direction
-    flip: 'Horizontal',
+    flip: ej.diagrams.FlipDirection.Horizontal,
     shape: {
       type: 'Basic',
       shape: 'RightTriangle',

@@ -1,14 +1,14 @@
 var data = [{
-    Id: 1,
-    Subject: 'Scrum Meeting',
+    Id: 1,
+    Subject: 'Scrum Meeting',
     StartTime: new Date(2018, 0, 28, 10, 0),
     EndTime: new Date(2018, 0, 28, 12, 30),
-    IsAllDay: false,
+    IsAllDay: false,
     RecurrenceRule: 'FREQ=DAILY;INTERVAL=1;COUNT=8',
-    RecurrenceException:'20180130T043000Z'
+    RecurrenceException: '20180130T043000Z'
 }, {
-    Id: 2,
-    Subject: 'Scrum Meeting',
+    Id: 2,
+    Subject: 'Scrum Meeting',
     StartTime: new Date(2018, 0, 30, 9, 0),
     EndTime: new Date(2018, 0, 30, 10, 30),
     Description: "Meeting time changed based on team activities.",
@@ -20,4 +20,3 @@ var scheduleObj = new ej.schedule.Schedule({
     eventSettings: { dataSource: data }
 });
 scheduleObj.appendTo('#Schedule');
-

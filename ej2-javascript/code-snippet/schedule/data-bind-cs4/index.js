@@ -8,10 +8,12 @@ class CustomAdaptor extends ej.data.ODataV4Adaptor {
         return original;
     }
 }
+
 var dataManager = new ej.data.DataManager({
     url: 'https://services.odata.org/V4/Northwind/Northwind.svc/Orders/',
     adaptor: new CustomAdaptor
 });
+
 var scheduleObj = new ej.schedule.Schedule({
     height: '550px',
     selectedDate: new Date(1996, 6, 9),
@@ -30,4 +32,3 @@ var scheduleObj = new ej.schedule.Schedule({
     }
 });
 scheduleObj.appendTo('#Schedule');
-

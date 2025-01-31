@@ -1,5 +1,3 @@
-
-
 import { Schedule, TimelineViews, Week, WorkWeek, Month, Agenda } from '@syncfusion/ej2-schedule';
 import { scheduleData } from './datasource.ts';
 
@@ -15,5 +13,3 @@ let scheduleObj: Schedule = new Schedule({
     }
 });
 scheduleObj.appendTo('#Schedule');
-
-

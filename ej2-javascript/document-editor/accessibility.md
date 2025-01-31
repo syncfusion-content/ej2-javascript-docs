@@ -39,7 +39,7 @@ The accessibility compliance for the Document editor component is outlined below
 
 ## Keyboard interaction
 
-Document editor supports [keyboard shortcuts](../document-editor/keyboard-shortcut).
+Document editor supports [keyboard shortcuts](./keyboard-shortcut).
 
 ## Ensuring accessibility
 

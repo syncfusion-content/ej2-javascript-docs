@@ -13,7 +13,7 @@ var acObject = new ej.dropdowns.AutoComplete({
     //bind the dataSorce property
     dataSource: records,
     //map the appropriate columns to fields property
-    fields: { value: 'text', text: 'text' },
+    fields: { value: 'text' },
     //set the placeholder to DropDownList input
     placeholder:"Select an Item ",
     //set enableVirtualization property to true

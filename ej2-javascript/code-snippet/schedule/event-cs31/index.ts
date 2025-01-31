@@ -1,10 +1,8 @@
-
-
 import { Schedule, Day, Week, TimelineViews, Month, Agenda, Resize, DragAndDrop } from '@syncfusion/ej2-schedule';
 
 Schedule.Inject(Day, Week, TimelineViews, Month, Agenda, Resize, DragAndDrop);
 
-let data: object [] = [{
+let data: object[] = [{
     Id: 1,
     Subject: 'Explosion of Betelgeuse Star',
     StartTime: new Date(2018, 1, 15, 9, 30),
@@ -17,6 +15,7 @@ let data: object [] = [{
     StartTime: new Date(2018, 1, 14, 12, 0),
     EndTime: new Date(2018, 1, 14, 14, 0)
 }];
+
 let scheduleObj: Schedule = new Schedule({
     height: '550px',
     selectedDate: new Date(2018, 1, 15),
@@ -26,5 +25,3 @@ let scheduleObj: Schedule = new Schedule({
     }
 });
 scheduleObj.appendTo('#Schedule');
-
-

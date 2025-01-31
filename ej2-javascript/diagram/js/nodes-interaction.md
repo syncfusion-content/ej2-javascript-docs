@@ -130,6 +130,23 @@ The following code illustrates how to provide the mirror image of the original e
         
 {% previewsample "page.domainurl/code-snippet/diagram/nodes-cs4" %}
 
+### Update flip at runtime
+
+You can dynamically update the flip for a node at runtime using the `^` operator. This operator allows you to apply the same flip direction multiple times, toggling the node's orientation effectively.
+The following example demonstrates how to update the flip for a node dynamically:
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/nodes-cs4-flip/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/nodes-cs4-flip/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/nodes-cs4-flip" %}
+
+
 ### Flip modes
 
 The [`flipMode`](../api/diagram/flipMode/) is used to control the behavior of the flip object whether to flip the object along with the port and label.

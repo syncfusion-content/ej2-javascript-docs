@@ -71,7 +71,7 @@ npm install
 
 The Essential JS2 Maps control can be added to the application. To get started, add the Maps control to the **app.ts** and **index.html** files using the following code.
 
-**Step 1:** Add an HTML div element to act as the Maps element in the **index.html** file using the following code.
+Add an HTML div element to act as the Maps element in the **index.html** file using the following code.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -98,32 +98,15 @@ The Essential JS2 Maps control can be added to the application. To get started, 
 {% endhighlight %}
 {% endtabs %}
 
-**Step 2:** Import the Maps control in the `app.ts` to initialize the Maps and append the Maps instance to the `#container`.
-
-**Step 3:** Add the **world-map** data inside the **app** folder. The data can be provided as either a JSON or a TypeScript file.
-
-> Refer to the data for the **world-map** [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/world-map-2091224620). These data must be imported into the **app.ts** file.
-
-```
-import { world_map } from './world_map';
-```
-
-**Step 4:** Bind the **world-map** data to the **shapeData** property of the **layers** in the Maps control.
+Import the Maps control in the `app.ts` to initialize a Maps and append the Maps instance to the `#container`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 
 import { Maps } from '@syncfusion/ej2-maps';
-import { world_map } from './world_map';
 
 // initialize Maps component
-let map: Maps = new Maps({
-    layers: [
-        {
-            shapeData: world_map
-        }
-    ]
-});
+let map: Maps = new Maps();
 
 // render initialized Map
 map.appendTo('#container');
@@ -131,7 +114,7 @@ map.appendTo('#container');
 {% endhighlight %}
 {% endtabs %}
 
-**Step 5:** The quickstart project is configured to compile and run the application in the browser. Use the following command to run the application.
+The quickstart project is configured to compile and run the application in the browser. Use the following command to run the application.
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
@@ -155,7 +138,7 @@ map.appendTo('#element');
 {% endhighlight %}
 {% endtabs %}
 
-Now, the world map will be displayed on the Maps control.
+As we didn't specify shapeData to the maps, no shape will be rendered and only an empty SVG element is appended to the maps container.
 
 ## Module Injection
 

@@ -5,4 +5,3 @@ var scheduleObj = new ej.schedule.Schedule({
     views: ['Day', 'Week', 'TimelineWeek', 'Month', 'Agenda']
 });
 scheduleObj.appendTo('#Schedule');
-

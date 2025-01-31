@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Show entire time in responsive mode in ##Platform_Name## Schedule control
 
-9 AM is visible since it has enough space in responsive mode, but if you set 08:45 AM as start hour of scheduler then the time slots will not show full time in the time slot of responsive scheduler, for which we can use `majorSlotTemplate` to set proper time slots in scheduler.
+9 AM is visible since it has enough space in responsive mode, but if you set 08:45 AM as start hour of scheduler then the time slots will not show full time in the time slot of responsive scheduler, for which we can use [`majorSlotTemplate`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale/#majorslottemplate) to set proper time slots in scheduler.
 
 {% if page.publishingplatform == "typescript" %}
 

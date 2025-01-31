@@ -4,13 +4,16 @@ import { Schedule, Day, Week, WorkWeek, Month, Agenda } from '@syncfusion/ej2-sc
 import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
 
 Schedule.Inject(Day, Week, WorkWeek, Month, Agenda);
+
 const CALENDAR_ID: string = 'en.usa%23holiday@group.v.calendar.google.com';
 const PUBLIC_KEY: string = 'AIzaSyBgbX_tgmVanBP4yafDPPXxWr70sjbKAXM';
+
 let dataManager: DataManager = new DataManager({
     url: 'https://www.googleapis.com/calendar/v3/calendars/' + CALENDAR_ID + '/events?key=' + PUBLIC_KEY,
     adaptor: new WebApiAdaptor,
     crossDomain: true
 });
+
 let scheduleObj: Schedule = new Schedule({
     height: '550px',
     eventSettings: { dataSource: dataManager },
@@ -44,5 +47,3 @@ let scheduleObj: Schedule = new Schedule({
     }
 });
 scheduleObj.appendTo('#Schedule');
-
-

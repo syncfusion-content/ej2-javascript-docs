@@ -79,7 +79,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
             <link href="resources/notifications/material.css" rel="stylesheet" type="text/css" />
             <link href="resources/inputs/material.css" rel="stylesheet" type="text/css" />
             <link href="resources/navigations/material.css" rel="stylesheet" type="text/css" />
-            <!-- JavaScript (ES5) AI AssistView's control style -->
+            <!-- JavaScript (ES5) AI AssistView control style -->
             <link href="resources/interactive-chat/material.css" rel="stylesheet" type="text/css"/>
 
             <!-- JavaScript (ES5) AI AssistView's dependency global script -->
@@ -92,7 +92,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
             <script src="resources/lists/ej2-lists.min.js" type="text/javascript"></script>
             <script src="resources/dropdowns/ej2-dropdowns.min.js" type="text/javascript"></script>
             <script src="resources/navigations/ej2-navigations.min.js" type="text/javascript"></script>
-            <!-- JavaScript (ES5) AI AssistView's control global script -->
+            <!-- JavaScript (ES5) AI AssistView control global script -->
             <script src="resources/interactive-chat/ej2-interactive-chat.min.js" type="text/javascript"></script>
        </head>
        <body>
@@ -116,7 +116,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
             <link href="resources/inputs/material.css" rel="stylesheet" type="text/css" />
             <link href="resources/navigations/material.css" rel="stylesheet" type="text/css" />
 
-          <!-- JavaScript (ES5) AI AssistView's control style -->
+          <!-- JavaScript (ES5) AI AssistView control style -->
           <link href="resources/interactive-chat/material.css" rel="stylesheet" type="text/css"/>
 
           <!-- JavaScript (ES5) AI AssistView's dependency global script -->
@@ -130,12 +130,12 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
             <script src="resources/dropdowns/ej2-dropdowns.min.js" type="text/javascript"></script>
             <script src="resources/navigations/ej2-navigations.min.js" type="text/javascript"></script>
 
-          <!-- JavaScript (ES5) AI AssistView's control global script -->
+          <!-- JavaScript (ES5) AI AssistView control global script -->
           <script src="resources/interactive-chat/ej2-interactive-chat.min.js" type="text/javascript"></script>
        </head>
        <body>
             <!-- Add the HTML <div> defaultAssist  -->
-          <div class="aiassist-container" style="height: 300px; width: 500px;">
+          <div class="aiassist-container" style="height: 350px; width: 650px;">
             <div id="defaultAssist"></div>
         </div>
           <script>
@@ -174,9 +174,6 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 **Step 3:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the CDN link references. Now, add the `AI AssistView` element and initiate the `JavaScript (ES5) AI AssistView` control in the index.html by using following code.
 
 {% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/ai-assistview/gettingstarted/index.js %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/ai-assistview/gettingstarted/index.html %}
 {% endhighlight %}

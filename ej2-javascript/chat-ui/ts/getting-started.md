@@ -104,7 +104,7 @@ Add the HTML div tag with ID attribute as the `chatUI` to your `index.html` file
 </head>
 
 <body>
-    <div class="chatui-container" style="height: 350px; width: 350px;">
+    <div class="chatui-container" style="height: 380px; width: 450px;">
         <div id="chatUI"></div>
     </div>
 </body>

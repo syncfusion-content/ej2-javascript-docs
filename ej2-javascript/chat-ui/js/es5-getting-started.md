@@ -113,7 +113,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
           <title>JavaScript (ES5)</title>
-          <!-- JavaScript (ES5) Chat UI dependency style -->
+          <!-- JavaScript (ES5) Chat UI's dependency style -->
           <link href="resources/base/material.css" rel="stylesheet" type="text/css"/>
           <link href="resources/buttons/material.css" rel="stylesheet" type="text/css" />
           <link href="resources/popups/material.css" rel="stylesheet" type="text/css" />
@@ -122,7 +122,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
           <!-- JavaScript (ES5) Chat UI control style -->
           <link href="resources/interactive-chat/material.css" rel="stylesheet" type="text/css"/>
 
-          <!-- JavaScript (ES5) Chat UI dependency global script -->
+          <!-- JavaScript (ES5) Chat UI's dependency global script -->
           <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
           <script src="resources/data/ej2-data.min.js" type="text/javascript"></script>
           <script src="resources/buttons/ej2-buttons.min.js" type="text/javascript"></script>
@@ -137,7 +137,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
        </head>
        <body>
             <!-- Add the HTML <div> chatUI  -->
-          <div class="chatui-container" style="height: 350px; width: 350px;">
+          <div class="chatui-container" style="height: 380px; width: 450px;">
             <div id="chatUI"></div>
           </div>
           <script>
@@ -176,9 +176,6 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 **Step 3:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the CDN link references. Now, add the `Chat UI` element and initiate the `JavaScript (ES5) Chat UI` control in the index.html by using following code.
 
 {% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/chat-ui/getting-started/index.js %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chat-ui/getting-started/index.html %}
 {% endhighlight %}

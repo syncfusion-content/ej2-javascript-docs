@@ -102,7 +102,7 @@ Add the HTML div tag with ID attribute as the `defaultAssist` to your `index.htm
 </head>
 
 <body>
-    <div class="aiassist-container" style="height: 300px; width: 500px;">
+    <div class="aiassist-container" style="height: 350px; width: 650px;">
         <div id="defaultAssist"></div>
     </div>
 </body>
@@ -160,7 +160,7 @@ The following example shows a basic AI AssistView control.
 You can use the [promptSuggestions](../api/ai-assistview#promptsuggestions) property to add prompt suggestions and the [promptRequest](../api/ai-assistview#promptrequest) event to add responses when the prompt matches the specified prompts data otherwise, the default response will be displayed.
 
 {% tabs %}
-{% highlight js tabtitle="index.js" %}
+{% highlight js tabtitle="index.ts" %}
 {% include code-snippet/ai-assistview/defaultprompts/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}

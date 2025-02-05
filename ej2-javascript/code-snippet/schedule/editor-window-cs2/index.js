@@ -7,12 +7,11 @@ var scheduleObj = new ej.schedule.Schedule({
         fields: {
             id: 'Id',
             subject: { name: 'Subject', title: 'Event Name' },
-            location: { name: 'Location', title: 'Event Location'},
+            location: { name: 'Location', title: 'Event Location' },
             description: { name: 'Description', title: 'Event Description' },
             startTime: { name: 'StartTime', title: 'Start Duration' },
-            endTime: { name: 'EndTime', title: 'End Duration'  }
+            endTime: { name: 'EndTime', title: 'End Duration' }
         }
     }
 });
 scheduleObj.appendTo('#Schedule');
-

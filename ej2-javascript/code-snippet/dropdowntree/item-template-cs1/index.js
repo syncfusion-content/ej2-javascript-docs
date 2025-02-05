@@ -19,4 +19,3 @@ var ddtreeObj = new ej.dropdowns.DropDownTree({
     popupHeight: '250px'
 });
 ddtreeObj.appendTo('#template');
-

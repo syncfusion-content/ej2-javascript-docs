@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Data Binding in ##Platform_Name## Dropdown Tree control
 
-The Dropdown Tree control provides an option to load data either from local data sources or remote data services. This can be done through the `dataSource` property, which is a member of the `fields` property. The `dataSource` property supports an array of JavaScript objects and `DataManager`. It also supports different kinds of data services such as OData, OData V4, Web API, URL, and JSON with the help of `DataManager` adaptors.
+The Dropdown Tree control provides an option to load data either from local data sources or remote data services. This can be done through the [`dataSource`](../api/drop-down-tree/fieldsModel/#datasource) property, which is a member of the [`fields`](../api/drop-down-tree/#fields) property. The `dataSource` property supports an array of JavaScript objects and `DataManager`. It also supports different kinds of data services such as OData, OData V4, Web API, URL, and JSON with the help of `DataManager` adaptors.
 
-The Dropdown Tree has a `load on demand` (Lazy load) option. It reduces the bandwidth size when consuming large amounts of data. By default, `loadOnDemand` is set to false. When this property is enabled, it loads first-level items initially, and when a parent item is expanded, it loads the child items based on the `parentValue/child` member.
+The Dropdown Tree has a `load on demand` (Lazy load) option. It reduces the bandwidth size when consuming large amounts of data. By default, [`loadOnDemand`](../api/drop-down-tree/treeSettingsModel/#loadondemand)  is set to false. When this property is enabled, it loads first-level items initially, and when a parent item is expanded, it loads the child items based on the `parentValue/child` member.
 
 ## Local data
 
@@ -66,7 +66,7 @@ In the following example, **code**, **name**, and **countries** columns from the
 
 ### Self-referential data
 
-Dropdown Tree can be populated from the self-referential data structure that contains array of JSON objects with `parentValue` mapping.
+Dropdown Tree can be populated from the self-referential data structure that contains array of JSON objects with [`parentValue`](../api/drop-down-tree/fieldsModel/#parentvalue)  mapping.
 
 You can directly assign the self-referential data and map all the field members with corresponding key values from self-referential data to the `fields` property.
 
@@ -109,7 +109,7 @@ In the following example, **id**, **pid**, **hasChild**, and **name** columns fr
 
 ## Remote data
 
-Dropdown Tree can also be populated from a remote data service with the help of the `DataManager` control and `Query` property.
+Dropdown Tree can also be populated from a remote data service with the help of the [`DataManager`](../api/data/dataManager/) control and `Query` property.
 
 It supports different kinds of data services such as OData, OData V4, Web API, URL, and JSON with the help of `DataManager` adaptors.
 
@@ -173,7 +173,7 @@ The **OrderID**, **EmployeeID**, and **ShipName** columns from the orders table 
 
 ## Prevent Node selection
 
-You can prevent the selection of individual tree nodes by using the [selectable](https://ej2.syncfusion.com/documentation/api/drop-down-tree/fieldsModel/#selectable) property. Tree node selection is not allowed when this property is disabled.
+You can prevent the selection of individual tree nodes by using the [selectable](../api/drop-down-tree/fieldsModel/#selectable) property. Tree node selection is not allowed when this property is disabled.
 
 The `selectable` property is disabled, and the selection is prevented for parent nodes in the sample below.
 

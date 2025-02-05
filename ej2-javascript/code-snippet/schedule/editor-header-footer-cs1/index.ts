@@ -1,9 +1,9 @@
-
 import { Schedule, Day, Week, WorkWeek, Month, Agenda, PopupOpenEventArgs } from '@syncfusion/ej2-schedule';
 
 Schedule.Inject(Day, Week, WorkWeek, Month, Agenda);
+
 const today: Date = new Date();
-const data : Record<string, any>[] = [{
+const data: Record<string, any>[] = [{
     Id: 1,
     Subject: 'Surgery - Andrew',
     StartTime: new Date(today.getFullYear(), today.getMonth(), today.getDate(), 9, 0),
@@ -28,7 +28,8 @@ const data : Record<string, any>[] = [{
     EndTime: new Date(today.getFullYear(), today.getMonth(), today.getDate(), 13, 30),
     IsAllDay: false
 
-}]
+}];
+
 const scheduleObj: Schedule = new Schedule({
     width: '100%',
     height: '550px',
@@ -56,7 +57,6 @@ function onSaveButtonClick(args: PopupOpenEventArgs) {
     scheduleObj.closeEditor();
 }
 
-
 function onPopupOpen(args: PopupOpenEventArgs): void {
     if (args.type === 'Editor') {
         const saveButton: HTMLElement = args.element.querySelector('#Save') as HTMLElement;
@@ -77,5 +77,3 @@ function onPopupOpen(args: PopupOpenEventArgs): void {
         };
     }
 }
-
-

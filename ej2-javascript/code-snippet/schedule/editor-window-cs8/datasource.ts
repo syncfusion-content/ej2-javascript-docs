@@ -1,5 +1,3 @@
-
-
 export let eventsData: Object[] = [
     {
         Id: 1,

@@ -1,5 +1,3 @@
-
-
 import { DateTimePicker } from '@syncfusion/ej2-calendars';
 import { DropDownList } from '@syncfusion/ej2-dropdowns';
 import { isNullOrUndefined } from '@syncfusion/ej2-base';
@@ -7,13 +5,14 @@ import { Schedule, Day, Week, WorkWeek, Month, Agenda, PopupOpenEventArgs, Popup
 import { eventData } from './datasource.ts';
 
 Schedule.Inject(Day, Week, WorkWeek, Month, Agenda);
+
 let scheduleObj: Schedule = new Schedule({
     width: '100%',
     height: '550px',
     selectedDate: new Date(2018, 1, 15),
     showQuickInfo: false,
     editorTemplate: '#EventEditorTemplate',
-        popupOpen: (args: PopupOpenEventArgs) => {
+    popupOpen: (args: PopupOpenEventArgs) => {
         if (args.type === 'Editor') {
             let subjectElement: HTMLInputElement = args.element.querySelector('#Subject') as HTMLInputElement;
             if (subjectElement) {
@@ -46,7 +45,7 @@ let scheduleObj: Schedule = new Schedule({
     popupClose: (args: PopupCloseEventArgs) => {
         if (args.type === 'Editor' && !isNullOrUndefined(args.data)) {
             let subjectElement: HTMLInputElement = args.element.querySelector('#Subject') as HTMLInputElement;
-            if (subjectElement ) {
+            if (subjectElement) {
                 (<{ [key: string]: Object }>(args.data)).Subject = subjectElement.value;
             }
             let statusElement: HTMLInputElement = args.element.querySelector('#EventType') as HTMLInputElement;
@@ -70,5 +69,3 @@ let scheduleObj: Schedule = new Schedule({
     eventSettings: { dataSource: eventData }
 });
 scheduleObj.appendTo('#Schedule');
-
-

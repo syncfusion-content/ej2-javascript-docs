@@ -190,7 +190,7 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 
 ## Binding data source
 
-The Dropdown Tree control can load the data either from local data sources or remote data services. This can be done using the `dataSource` property that is a member of the `fields` property. The dataSource property supports array of JavaScript objects and DataManager. Here, an array of JSON values is passed to the Dropdown Tree control.
+The Dropdown Tree control can load the data either from local data sources or remote data services. This can be done using the [`dataSource`](../api/drop-down-tree/fieldsModel/#datasource) property that is a member of the [`fields`](../api/drop-down-tree/#fields) property. The dataSource property supports array of JavaScript objects and DataManager. Here, an array of JSON values is passed to the Dropdown Tree control.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}

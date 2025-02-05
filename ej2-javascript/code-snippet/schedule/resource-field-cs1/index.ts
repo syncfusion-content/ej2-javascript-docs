@@ -1,11 +1,10 @@
-
-
 import { DateTimePicker } from '@syncfusion/ej2-calendars';
 import { MultiSelect } from '@syncfusion/ej2-dropdowns';
 import { Schedule, Day, Week, WorkWeek, Month, PopupOpenEventArgs } from '@syncfusion/ej2-schedule';
 import { eventData, ownerData } from './datasource.ts';
 
-Schedule.Inject(Day, Week, WorkWeek);
+Schedule.Inject(Day, Week, WorkWeek, Month);
+
 let scheduleObj: Schedule = new Schedule({
     width: '100%',
     height: '550px',
@@ -34,11 +33,11 @@ let scheduleObj: Schedule = new Schedule({
             if (!endElement.classList.contains('e-datetimepicker')) {
                 new DateTimePicker({ value: new Date(endElement.value) || new Date() }, endElement);
             }
-            let processElement: HTMLInputElement= args.element.querySelector('#OwnerId');
+            let processElement: HTMLInputElement = args.element.querySelector('#OwnerId');
             if (!processElement.classList.contains('e-multiselect')) {
                 let multiSelectObject: MultiSelect = new MultiSelect({
                     placeholder: 'Choose a owner',
-                    fields: { text: 'text', value: 'id'},
+                    fields: { text: 'text', value: 'id' },
                     dataSource: ownerData,
                     value: <string[]>((args.data.OwnerId instanceof Array) ? args.data.OwnerId : [args.data.OwnerId])
                 });
@@ -49,5 +48,3 @@ let scheduleObj: Schedule = new Schedule({
     eventSettings: { dataSource: eventData }
 });
 scheduleObj.appendTo('#Schedule');
-
-

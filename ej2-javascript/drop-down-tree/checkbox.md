@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Checkbox in ##Platform_Name## Dropdown Tree control
 
-The Dropdown Tree control allows you to check multiple items from the tree without affecting the UI's appearance by enabling the `showCheckBox` property. When this property is enabled, a checkbox appears before each item text in the popup.
+The Dropdown Tree control allows you to check multiple items from the tree without affecting the UI's appearance by enabling the [`showCheckBox`](../api/drop-down-tree/#showcheckbox) property. When this property is enabled, a checkbox appears before each item text in the popup.
 
 In the following example, the `showCheckBox` property is enabled.
 
@@ -50,7 +50,7 @@ In the following example, the `showCheckBox` property is enabled.
 
 ## Auto Check
 
-By default, the checkbox state of the parent and child items in the Dropdown Tree control will not depend on each other. If dependent checkbox states are needed, enable the `autoCheck` property which is a member of the `treeSettings` property.
+By default, the checkbox state of the parent and child items in the Dropdown Tree control will not depend on each other. If dependent checkbox states are needed, enable the [`autoCheck`](../api/drop-down-tree/treeSettingsModel/#autocheck) property which is a member of the [`treeSettings`](../api/drop-down-tree/#treesettings) property.
 
 * If one or more child items are not checked, the parent item will be in an intermediate state.
 
@@ -97,9 +97,9 @@ In the following example, the `autoCheck` property is enabled.
 
 The Dropdown Tree control has built-in support to select all tree items using the Select All option in the header.
 
-When the `showSelectAll` property is set to true, a checkbox will be displayed in the popup header that allows you to select or deselect all the tree items in the popup.
+When the [`showSelectAll`](../api/drop-down-tree/#showselectall) property is set to true, a checkbox will be displayed in the popup header that allows you to select or deselect all the tree items in the popup.
 
-By default, `Select All` and `Unselect All` text values will be showcased along with the checkbox in the popup header to indicate the action to be performed on checking or unchecking the checkbox. You can customize these text attributes using the `selectAllText` and `unSelectAllText` properties, respectively.
+By default, `Select All` and `Unselect All` text values will be showcased along with the checkbox in the popup header to indicate the action to be performed on checking or unchecking the checkbox. You can customize these text attributes using the [`selectAllText`](../api/drop-down-tree/#selectalltext) and [`unSelectAllText`](../api/drop-down-tree/#unselectalltext) properties, respectively.
 
 {% if page.publishingplatform == "typescript" %}
 

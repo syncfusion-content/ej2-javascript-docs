@@ -129,7 +129,7 @@ DropDownTreeObject.appendTo('#ddTreeElement');
 
 ## Binding data source
 
-The Dropdown Tree control can load the data either from local data sources or remote data services. This can be done using the `dataSource` property that is a member of the `fields` property. The dataSource property supports array of JavaScript objects and DataManager. Here, an array of JSON values is passed to the Dropdown Tree control.
+The Dropdown Tree control can load the data either from local data sources or remote data services. This can be done using the [`dataSource`](../api/drop-down-tree/fieldsModel/#datasource) property that is a member of the [`fields`](../api/drop-down-tree/#fields) property. The dataSource property supports array of JavaScript objects and DataManager. Here, an array of JSON values is passed to the Dropdown Tree control.
 
 ```ts
 import { DropDownTree } from '@syncfusion/ej2-dropdowns';

@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Virtual scrolling in ##Platform_Name## Schedule control
+# Virtual scrolling in ##Platform_Name## Scheduler control
 
 To achieve better performance in the Scheduler when loading a large number of resources and events, we have added virtual scrolling support to load a large set of resources and events instantly as you scroll. You can dynamically load large number of resources and events in the Scheduler by setting `true` to the [`allowVirtualScrolling`](../api/schedule/viewsModel/#allowvirtualscrolling) property within the view specific settings. The virtual loading of events is possible in Agenda view, by setting [`allowVirtualScrolling`](../api/schedule/viewsModel/#allowvirtualscrolling) property to `true` within the agenda view specific settings.
 

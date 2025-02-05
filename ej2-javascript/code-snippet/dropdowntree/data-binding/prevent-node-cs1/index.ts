@@ -1,6 +1,3 @@
-
-
-
 import { DropDownTree } from '@syncfusion/ej2-dropdowns';
 
 let localData: { [key: string]: Object }[] = [
@@ -33,6 +30,3 @@ let DropDownTreeObj: DropDownTree = new DropDownTree({
     fields: { dataSource: localData, value: 'id', parentValue: 'pid', text: 'name', hasChildren: 'hasChild', selectable: 'selectable' }
 });
 DropDownTreeObj.appendTo('#ddTree');
-
-
-

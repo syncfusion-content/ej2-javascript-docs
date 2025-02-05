@@ -1,5 +1,3 @@
-
-
 import { DateTimePicker } from '@syncfusion/ej2-calendars';
 import { DropDownList } from '@syncfusion/ej2-dropdowns';
 import { FormValidator } from '@syncfusion/ej2-inputs';
@@ -8,6 +6,7 @@ import { Schedule, Day, Week, WorkWeek, Month, PopupOpenEventArgs, EJ2Instance }
 import { eventData } from './datasource.ts';
 
 Schedule.Inject(Day, Week, WorkWeek, Month);
+
 let scheduleObj: Schedule = new Schedule({
     width: '100%',
     height: '550px',
@@ -27,7 +26,7 @@ let scheduleObj: Schedule = new Schedule({
                 let dropDownListObject: DropDownList = new DropDownList({
                     placeholder: 'Choose status', value: statusElement.value,
                     dataSource: ['New', 'Requested', 'Confirmed'],
-                    select: function(args) {
+                    select: function (args) {
                         if (!isNullOrUndefined(document.getElementById("EventType_Error"))) {
                             document.getElementById("EventType_Error").style.display = "none";
                         }
@@ -50,5 +49,3 @@ let scheduleObj: Schedule = new Schedule({
     eventSettings: { dataSource: eventData }
 });
 scheduleObj.appendTo('#Schedule');
-
-

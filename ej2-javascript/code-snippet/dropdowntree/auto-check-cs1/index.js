@@ -30,5 +30,3 @@ var DropDownTreeObj = new ej.dropdowns.DropDownTree({
     treeSettings: { autoCheck: true }
 });
 DropDownTreeObj.appendTo('#ddltreeelement');
-
-

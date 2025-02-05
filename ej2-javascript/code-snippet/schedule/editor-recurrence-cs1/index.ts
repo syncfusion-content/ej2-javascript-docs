@@ -1,10 +1,9 @@
-
-
 import { DateTimePicker } from '@syncfusion/ej2-calendars';
 import { Schedule, Day, Week, WorkWeek, Month, RecurrenceEditor, PopupOpenEventArgs } from '@syncfusion/ej2-schedule';
 import { eventData } from './datasource.ts';
 
-Schedule.Inject(Day, Week, WorkWeek);
+Schedule.Inject(Day, Week, WorkWeek, Month);
+
 let scheduleObj: Schedule = new Schedule({
     width: '100%',
     height: '550px',
@@ -23,8 +22,7 @@ let scheduleObj: Schedule = new Schedule({
             }
             let recurElement: HTMLElement = args.element.querySelector('#RecurrenceEditor');
             if (!recurElement.classList.contains('e-recurrenceeditor')) {
-                let recurrObject: RecurrenceEditor = new RecurrenceEditor({
-                });
+                let recurrObject: RecurrenceEditor = new RecurrenceEditor({});
                 recurrObject.appendTo(recurElement);
                 (scheduleObj.eventWindow as any).recurrenceEditor = recurrObject;
             }
@@ -34,5 +32,3 @@ let scheduleObj: Schedule = new Schedule({
     eventSettings: { dataSource: eventData }
 });
 scheduleObj.appendTo('#Schedule');
-
-

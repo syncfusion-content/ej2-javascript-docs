@@ -1,6 +1,7 @@
 function minValidation(args) {
     return args['value'].length >= 5;
 };
+
 var scheduleObj = new ej.schedule.Schedule({
     width: '100%', height: '550px',
     selectedDate: new Date(2018, 1, 15),
@@ -21,4 +22,3 @@ var scheduleObj = new ej.schedule.Schedule({
     }
 });
 scheduleObj.appendTo('#Schedule');
-

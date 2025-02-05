@@ -29,5 +29,3 @@ var DropDownTreeObj = new ej.dropdowns.DropDownTree({
     showCheckBox: true
 });
 DropDownTreeObj.appendTo('#ddltreeelement');
-
-

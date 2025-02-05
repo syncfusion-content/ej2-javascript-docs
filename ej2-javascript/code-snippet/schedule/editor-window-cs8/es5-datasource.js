@@ -1,6 +1,4 @@
-
-
-var  eventsData = [
+var eventsData = [
     {
         Id: 1,
         Subject: 'Server Maintenance',
@@ -131,7 +129,7 @@ var  eventsData = [
         CategoryColor: '#ea7a57'
     }];
 
-var  scheduleData = [
+var scheduleData = [
     {
         Id: 1,
         Subject: 'Explosion of Betelgeuse Star',
@@ -255,7 +253,7 @@ var  scheduleData = [
     }
 ];
 
-var  resourceData= [
+var resourceData = [
     {
         Id: 1,
         Subject: 'Family vacation',

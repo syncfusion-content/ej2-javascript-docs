@@ -1,17 +1,19 @@
-
-
 import { Internationalization } from '@syncfusion/ej2-base';
 import { Schedule, Agenda } from '@syncfusion/ej2-schedule';
 import { scheduleData } from './datasource.ts';
 
 Schedule.Inject(Agenda);
+
 let instance: Internationalization = new Internationalization();
+
+interface TemplateFunction extends Window {
+    getTimeString?: Function;
+};
+
 (window as TemplateFunction).getTimeString = (value: Date) => {
     return instance.formatDate(value, { skeleton: 'hm' });
 };
-interface TemplateFunction extends Window {
-    getTimeString?: Function;
-}
+
 let scheduleObj: Schedule = new Schedule({
     width: '100%',
     height: '350px',
@@ -24,5 +26,3 @@ let scheduleObj: Schedule = new Schedule({
     eventSettings: { dataSource: scheduleData }
 });
 scheduleObj.appendTo('#Schedule');
-
-

@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Timezone in ##Platform_Name## Schedule control
 
-The Scheduler makes use of the current system time zone by default. If it needs to follow some other user-specific time zone, then the [`timezone`](https://ej2.syncfusion.com/documentation/api/schedule#timezone) property needs to be used. Apart from the default action of applying specific timezone to the Scheduler, it is also possible to set different time zone values for each appointments through the properties `startTimezone` and `endTimezone` which can be defined as separate fields within the event fields collection.
+The Scheduler uses the current system time zone by default. If it needs to follow a user-specific time zone, then the [`timezone`](https://ej2.syncfusion.com/documentation/api/schedule#timezone) property can be used. Apart from the default action of applying a specific timezone to the Scheduler, it is also possible to set different time zone values for each appointment through the properties `startTimezone` and `endTimezone`, which can be defined as separate fields within the event fields collection.
 
 >Note: **timezone** property only applicable for the appointment processing and current time indication.
 
@@ -21,7 +21,7 @@ The `new Date()` in JavaScript returns the exact current date object with comple
 
 ## Scheduler with no timezone
 
-When no specific time zone is set to Scheduler, appointments will be displayed based on the client system's timezone which is the default behavior. Here, the same appointment when viewed from different timezone will have different start and end times.
+When no specific time zone is set to Scheduler, appointments will be displayed based on the client system's timezone which is the default behavior.
 
 The following code example displays an appointment from 9.00 AM to 10.00 AM when you open the Scheduler from any of the timezone. This is because, we are providing the start and end time enclosing with `new Date()` which works based on the client browser's timezone.
 
@@ -65,6 +65,9 @@ When a time zone is set to Scheduler through [`timezone`](https://ej2.syncfusion
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/time-zone-cs2/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/time-zone-cs2/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/time-zone-cs2" %}
@@ -77,6 +80,9 @@ When a time zone is set to Scheduler through [`timezone`](https://ej2.syncfusion
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/time-zone-cs2/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/time-zone-cs2/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -96,6 +102,9 @@ Setting [`timezone`](https://ej2.syncfusion.com/documentation/api/schedule#timez
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/time-zone-cs3/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/time-zone-cs3/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/time-zone-cs3" %}
@@ -109,6 +118,9 @@ Setting [`timezone`](https://ej2.syncfusion.com/documentation/api/schedule#timez
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/time-zone-cs3/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/time-zone-cs3/es5-datasource.js %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/schedule/time-zone-cs3" %}
@@ -116,7 +128,7 @@ Setting [`timezone`](https://ej2.syncfusion.com/documentation/api/schedule#timez
 
 ## Set specific timezone for events
 
-It is possible to set different timezone for Scheduler events by setting `startTimezone` and `endTimezone` properties within the `eventSettings` option. It allows each appointment to maintain different timezone and displays on Scheduler with appropriate time differences.
+It is possible to set different timezone for Scheduler events by setting `startTimezone` and `endTimezone` properties within the datasource. It allows each appointment to maintain different timezone and displays on Scheduler with appropriate time differences.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -158,6 +170,9 @@ Instead of displaying all the timezone names within the timezone collection (mor
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/time-zone-cs5/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/time-zone-cs5/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/time-zone-cs5" %}
@@ -171,6 +186,9 @@ Instead of displaying all the timezone names within the timezone collection (mor
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/time-zone-cs5/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/time-zone-cs5/es5-datasource.js %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/schedule/time-zone-cs5" %}
@@ -180,7 +198,7 @@ Instead of displaying all the timezone names within the timezone collection (mor
 
 ### offset
 
-This method is used to calculate the difference between passed UTC date and timezone.
+This method is used to calculate the difference between the passed UTC date and timezone.
 
 | Parameters | Type | Description |
 |------------|------|-------------|
@@ -221,7 +239,7 @@ Returns `Date`
 
 ### add
 
-This method is used to add the time difference between passed UTC date and timezone.
+This method is used to add the time difference between the passed UTC date and timezone.
 
 | Parameters | Type | Description |
 |------------|------|-------------|

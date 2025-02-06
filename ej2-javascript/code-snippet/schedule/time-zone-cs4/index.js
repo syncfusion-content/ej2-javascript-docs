@@ -6,6 +6,7 @@ var data = [{
     StartTimezone: 'Europe/Moscow',
     EndTimezone: 'Europe/Moscow'
 }];
+
 var scheduleObj = new ej.schedule.Schedule({
     height: '550px',
     selectedDate: new Date(2018, 1, 15),
@@ -13,4 +14,3 @@ var scheduleObj = new ej.schedule.Schedule({
     eventSettings: { dataSource: data }
 });
 scheduleObj.appendTo('#Schedule');
-

@@ -1,4 +1,5 @@
 var instance = new ej.base.Internationalization();
+
 window.getTimeString = function (value) {
     return instance.formatDate(value, { skeleton: 'hm' });
 };
@@ -10,4 +11,3 @@ var scheduleObj = new ej.schedule.Schedule({
     eventSettings: { dataSource: scheduleData }
 });
 scheduleObj.appendTo('#Schedule');
-

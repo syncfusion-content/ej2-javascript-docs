@@ -1,5 +1,3 @@
-
-
 import { Schedule, Day, Week, WorkWeek, Month, Agenda } from '@syncfusion/ej2-schedule';
 import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
 

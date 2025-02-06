@@ -1,5 +1,3 @@
-
-
 import { Schedule, Day, Week, TimelineViews, Month, Agenda } from '@syncfusion/ej2-schedule';
 
 let data: object [] = [{
@@ -9,6 +7,7 @@ let data: object [] = [{
 }];
 
 Schedule.Inject(Day, Week, TimelineViews, Month, Agenda);
+
 let scheduleObj: Schedule = new Schedule({
     height: '550px',
     selectedDate: new Date(2018, 1, 15),
@@ -18,5 +17,3 @@ let scheduleObj: Schedule = new Schedule({
     }
 });
 scheduleObj.appendTo('#Schedule');
-
-

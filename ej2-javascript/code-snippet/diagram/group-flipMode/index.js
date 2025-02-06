@@ -42,6 +42,9 @@ var nodes = [
     flip: ej.diagrams.FlipDirection.Horizontal,
     //Sets the flip mode as Label
     flipMode: 'Label',
+    style: {
+      fill: 'white', strokeColor:'black'
+    },
   }
 ];
 

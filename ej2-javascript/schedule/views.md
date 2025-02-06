@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Views in ##Platform_Name## Schedule control | Syncfusion
-description: Learn here all about Views in Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
+title: Views in ##Platform_Name## Scheduler control | Syncfusion
+description: Learn here all about Views in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Views 
 publishingplatform: ##Platform_Name##
@@ -9,17 +9,17 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Views in ##Platform_Name## Schedule control
+# Views in ##Platform_Name## Scheduler control
 
-The Scheduler includes wide variety of view modes with unique configuration options for each view. The available view modes are Day, Week, Work Week, Month, Agenda, Month Agenda, Timeline Day, Timeline Week, Timeline Work Week and Timeline Month, out of which the `Week` view is set as active.
+The Scheduler includes wide variety of view modes with unique configuration options for each view. The available view modes are Day, Week, Work Week, Month, Agenda, Month Agenda, Year, Timeline Day, Timeline Week, Timeline Work Week, Timeline Year and Timeline Month, out of which the `Week` view is set as active by default.
 
-To navigate between different views and dates, the navigation options are available at the Scheduler header bar. The active view option is usually highlighted by default. The date range of the active view will also be displayed at the left corner of the header bar, clicking on which will open a calendar popup for the ease of desired date selection.
+To navigate between different views and dates, navigation options are available at the Scheduler header bar. The active view option is usually highlighted by default. The date range of the active view will also be displayed at the left corner of the header bar, clicking on which will open a calendar popup for easy date selection.
 
 > By default, Scheduler displays the calendar views such as day, week, work week, month and agenda.
 
 ## Setting specific view on scheduler
 
-As the Scheduler displays `week` view by default, therefore to change the active view, set [`currentView`](https://ej2.syncfusion.com/documentation/api/schedule#currentview)property with the desired view name. The applicable view names that the Scheduler accepts are as follows,
+As the Scheduler displays `week` view by default, therefore to change the active view, set [`currentView`](https://ej2.syncfusion.com/documentation/api/schedule#currentview)property with the desired view name. The applicable view names that the Scheduler accepts are as follows:
 
 * Day
 * Week
@@ -47,6 +47,9 @@ In the following example, the Scheduler displays 4 views namely, Week, Month, Ti
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs1/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/view-cs1/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/view-cs1" %}
@@ -59,6 +62,9 @@ In the following example, the Scheduler displays 4 views namely, Week, Month, Ti
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs1/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/view-cs1/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -76,6 +82,9 @@ To configure Scheduler with simply 2 views, but with different configurations on
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs2/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/view-cs2/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/view-cs2" %}
@@ -88,6 +97,9 @@ To configure Scheduler with simply 2 views, but with different configurations on
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs2/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/view-cs2/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -106,7 +118,7 @@ There are scenarios where each view may need to have different configurations. F
 | [`readonly`](https://ej2.syncfusion.com/documentation/api/schedule/views/#readonly) | Boolean | When set to `true`, prevents the CRUD actions on the respective view under where it is defined. | All views. |
 | [`resourceHeaderTemplate`](https://ej2.syncfusion.com/documentation/api/schedule/views/#resourceheadertemplate) | String | The template option which is used to customize the resource header cells on the Scheduler. It gets applied only on the views, wherever it is defined.| All views. |
 | [`dateHeaderTemplate`](https://ej2.syncfusion.com/documentation/api/schedule/views/#dateheadertemplate) | String | The template option which is used to customize the date header cells and is applied only on the views, wherever it is defined. | All views. |
-| [`eventTemplate`](https://ej2.syncfusion.com/documentation/api/schedule/views/#eventtemplate) | String | The template option to customize the events background. It will get applied to the events of the view to which it is currently being defined. | All views. |
+| [`eventTemplate`](https://ej2.syncfusion.com/documentation/api/schedule/views/#eventtemplate) | String | The template option to customize the events content and appearance. It will get applied to the events of the view to which it is currently being defined. | All views. |
 | [`showWeekend`](https://ej2.syncfusion.com/documentation/api/schedule/views/#showweekend) | Boolean | When set to `false`, it hides the weekend days of a week from the views on which it is defined.| All views. |
 | [`group`](https://ej2.syncfusion.com/documentation/api/schedule/views/#group) | [GroupModel](../api/schedule/groupModel) | Allows to set different resource grouping options on all available Scheduler view modes. | All views. |
 | [`cellTemplate`](https://ej2.syncfusion.com/documentation/api/schedule/views/#celltemplate) | String | The template option to customize the work cells of the Scheduler and is applied only on the views, on which it is defined. | Applicable on all views except Agenda view. |
@@ -133,6 +145,9 @@ Usually a day view displays a single day with all its related appointments. It i
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs3/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/view-cs3/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/view-cs3" %}
@@ -145,6 +160,9 @@ Usually a day view displays a single day with all its related appointments. It i
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs3/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/view-cs3/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -166,6 +184,9 @@ The Week view displays a count of 7 days (from Sunday to Saturday) with all its 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs4/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/view-cs4/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/view-cs4" %}
@@ -178,6 +199,9 @@ The Week view displays a count of 7 days (from Sunday to Saturday) with all its 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs4/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/view-cs4/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -201,6 +225,9 @@ The following code example depicts how to change the working days only on the `W
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs5/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/view-cs5/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/view-cs5" %}
@@ -213,6 +240,9 @@ The following code example depicts how to change the working days only on the `W
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs5/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/view-cs5/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -238,6 +268,9 @@ You can also have the `+ more` text indicator on each day cell of a Month view, 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs6/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/view-cs6/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/view-cs6" %}
@@ -251,6 +284,9 @@ You can also have the `+ more` text indicator on each day cell of a Month view, 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs6/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/view-cs6/es5-datasource.js %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/schedule/view-cs6" %}
@@ -260,8 +296,6 @@ You can also have the `+ more` text indicator on each day cell of a Month view, 
 
 A Year view displays all the days of a particular year with months and all its related appointments. You can navigate to a particular date in the day view by clicking on the appropriate date text on the year cells.
 
-Year view is available in both the `Horizontal` and `Vertical` orientations. You can manage the orientation of year view through `views` property.
-
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
@@ -270,6 +304,9 @@ Year view is available in both the `Horizontal` and `Vertical` orientations. You
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs7/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/view-cs7/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -283,6 +320,9 @@ Year view is available in both the `Horizontal` and `Vertical` orientations. You
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs7/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/view-cs7/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -306,6 +346,9 @@ The following code example depicts how to customize the display of events within
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs8/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/view-cs8/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/view-cs8" %}
@@ -318,6 +361,9 @@ The following code example depicts how to customize the display of events within
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs8/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/view-cs8/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -341,6 +387,9 @@ The following code example shows how to hide the weekend days on `MonthAgenda` v
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs9/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/view-cs9/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/view-cs9" %}
@@ -353,6 +402,9 @@ The following code example shows how to hide the weekend days on `MonthAgenda` v
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs9/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/view-cs9/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -374,6 +426,9 @@ To make use of the timeline views (Timeline Day, Timeline Week and Timeline Work
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs10/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/view-cs10/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/view-cs10" %}
@@ -386,6 +441,9 @@ To make use of the timeline views (Timeline Day, Timeline Week and Timeline Work
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs10/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/view-cs10/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -403,6 +461,9 @@ Similar to the Week view, the timeline week view shows 7 days with its associate
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs11/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/view-cs11/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/view-cs11" %}
@@ -415,6 +476,9 @@ Similar to the Week view, the timeline week view shows 7 days with its associate
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs11/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/view-cs11/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -432,6 +496,9 @@ The following code example depicts how to display the timeline work week view on
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs12/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/view-cs12/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/view-cs12" %}
@@ -444,6 +511,9 @@ The following code example depicts how to display the timeline work week view on
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs12/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/view-cs12/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -465,6 +535,9 @@ A Timeline Month view displays the current month days along with its appointment
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs13/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/view-cs13/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/view-cs13" %}
@@ -477,6 +550,9 @@ A Timeline Month view displays the current month days along with its appointment
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs13/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/view-cs13/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -500,6 +576,9 @@ To make use of the timeline Year view on Scheduler, import and inject `TimelineY
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs14/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/view-cs14/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/view-cs14" %}
@@ -512,6 +591,9 @@ To make use of the timeline Year view on Scheduler, import and inject `TimelineY
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs14/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/view-cs14/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -533,6 +615,9 @@ The following code example depicts how to group the multiple resources on Timeli
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs15/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/view-cs15/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/view-cs15" %}
@@ -545,6 +630,9 @@ The following code example depicts how to group the multiple resources on Timeli
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs15/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/view-cs15/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -564,6 +652,9 @@ Timeline Year view supports Auto row height. When the feature [`rowAutoHeight`](
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs16/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/view-cs16/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/view-cs16" %}
@@ -576,6 +667,9 @@ Timeline Year view supports Auto row height. When the feature [`rowAutoHeight`](
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs16/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/view-cs16/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -597,6 +691,9 @@ You can provide the alternative display name for such customized views on the Sc
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs17/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/view-cs17/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/view-cs17" %}
@@ -609,6 +706,9 @@ You can provide the alternative display name for such customized views on the Sc
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs17/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/view-cs17/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -628,6 +728,9 @@ We can also use [`isSelected`]((https://ej2.syncfusion.com/documentation/api/sch
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs18/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/view-cs18/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/view-cs18" %}
@@ -640,6 +743,9 @@ We can also use [`isSelected`]((https://ej2.syncfusion.com/documentation/api/sch
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/view-cs18/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/view-cs18/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 

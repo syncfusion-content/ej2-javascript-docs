@@ -5,7 +5,7 @@ var customTimezoneData = [
 ];
 
 ej.schedule.timezoneData.splice.apply(ej.schedule.timezoneData, [0,
- ej.schedule.timezoneData.length].concat(customTimezoneData));
+ej.schedule.timezoneData.length].concat(customTimezoneData));
 
 var scheduleObj = new ej.schedule.Schedule({
   width: '100%',
@@ -15,4 +15,3 @@ var scheduleObj = new ej.schedule.Schedule({
   eventSettings: { dataSource: scheduleData }
 });
 scheduleObj.appendTo('#Schedule');
-

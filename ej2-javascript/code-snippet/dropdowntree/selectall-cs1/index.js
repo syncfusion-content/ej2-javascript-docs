@@ -27,9 +27,8 @@ var localData = [
 var DropDownTreeObj = new ej.dropdowns.DropDownTree({
     fields: { dataSource: localData, value: 'id', parentValue: 'pid', text: 'name', hasChildren: 'hasChild' },
     showCheckBox: true,
-	showSelectAll: true,
+    showSelectAll: true,
     selectAllText: 'Check All',
     unSelectAllText: 'UnCheck All'
 });
 DropDownTreeObj.appendTo('#ddltreeelement');
-

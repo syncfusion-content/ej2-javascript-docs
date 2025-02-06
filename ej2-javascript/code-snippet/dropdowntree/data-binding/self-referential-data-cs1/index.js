@@ -30,5 +30,3 @@ var DropDownTreeObj = new ej.dropdowns.DropDownTree({
     fields: { dataSource: localData, value: 'id', parentValue: 'pid', text: 'name', hasChildren: 'hasChild' }
 });
 DropDownTreeObj.appendTo('#ddltreeelement');
-
-

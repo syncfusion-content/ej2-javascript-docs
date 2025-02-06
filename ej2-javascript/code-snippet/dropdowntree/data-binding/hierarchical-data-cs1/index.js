@@ -52,9 +52,7 @@ var continents = [
     },
 ];
 
-
 var DropDownTreeObj = new ej.dropdowns.DropDownTree({
     fields: { dataSource: continents, value: 'code', text: 'name', child: 'countries' }
 });
 DropDownTreeObj.appendTo('#ddltreeelement');
-

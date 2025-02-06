@@ -1,5 +1,3 @@
-
-
 import { DropDownTree } from '@syncfusion/ej2-dropdowns';
 
 //define the array of JSON
@@ -39,5 +37,3 @@ let DropDownTreeObject: DropDownTree = new DropDownTree({
 
 // render initialized Dropdown Tree
 DropDownTreeObject.appendTo('#ddltreeelement');
-
-

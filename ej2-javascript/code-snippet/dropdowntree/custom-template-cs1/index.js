@@ -20,4 +20,3 @@ var checkList = new ej.dropdowns.DropDownTree({
     treeSettings: { autoCheck: true }
 });
 checkList.appendTo('#checkbox');
-

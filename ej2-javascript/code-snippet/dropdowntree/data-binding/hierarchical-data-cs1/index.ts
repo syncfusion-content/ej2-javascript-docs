@@ -1,6 +1,3 @@
-
-
-
 import { DropDownTree } from '@syncfusion/ej2-dropdowns';
 
 //define the nested array of JSON objects
@@ -55,11 +52,7 @@ let continents: { [key: string]: Object; }[] = [
     },
 ];
 
-
 let DropDownTreeObj: DropDownTree = new DropDownTree({
     fields: { dataSource: continents, value: 'code', text: 'name', child: 'countries' }
 });
 DropDownTreeObj.appendTo('#ddltreeelement');
-
-
-

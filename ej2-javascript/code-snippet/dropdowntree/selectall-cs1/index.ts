@@ -1,6 +1,3 @@
-
-
-
 import { DropDownTree } from '@syncfusion/ej2-dropdowns';
 
 let localData: { [key: string]: Object }[] = [
@@ -37,7 +34,3 @@ let DropDownTreeObj: DropDownTree = new DropDownTree({
     unSelectAllText: 'UnCheck All'
 });
 DropDownTreeObj.appendTo('#ddltreeelement');
-
-
-
-

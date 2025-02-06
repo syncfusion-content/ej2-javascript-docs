@@ -15,9 +15,8 @@ var ddtreeObj = new ej.dropdowns.DropDownTree({
     itemTemplate: '#itemTemplate',
     width: '100%',
     cssClass: 'custom',
-    valueTemplate:'#valueTemplate',
+    valueTemplate: '#valueTemplate',
     placeholder: 'Select an employee',
     popupHeight: '250px'
 });
 ddtreeObj.appendTo('#template');
-

@@ -7,16 +7,15 @@ var scheduleObj = new ej.schedule.Schedule({
         resources: ['Owners']
     },
     resources: [{
-            field: 'OwnerId', title: 'Owner',
-            name: 'Owners', allowMultiple: true,
-            dataSource: [
-                { text: 'Alice', id: 1, color: '#1aaa55' },
-                { text: 'Smith', id: 2, color: '#7fa900' }
-            ],
-            textField: 'text', idField: 'id', colorField: 'color'
-        }],
+        field: 'OwnerId', title: 'Owner',
+        name: 'Owners', allowMultiple: true,
+        dataSource: [
+            { text: 'Alice', id: 1, color: '#1aaa55' },
+            { text: 'Smith', id: 2, color: '#7fa900' }
+        ],
+        textField: 'text', idField: 'id', colorField: 'color'
+    }],
     views: ['Week', 'Month', 'Agenda'],
     eventSettings: { dataSource: resourceData }
 });
 scheduleObj.appendTo('#Schedule');
-

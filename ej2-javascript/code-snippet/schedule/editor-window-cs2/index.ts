@@ -1,5 +1,3 @@
-
-
 import { Schedule, Day, Week, TimelineViews, Month, Agenda } from '@syncfusion/ej2-schedule';
 import { scheduleData } from './datasource.ts';
 
@@ -14,13 +12,11 @@ let scheduleObj: Schedule = new Schedule({
         fields: {
             id: 'Id',
             subject: { name: 'Subject', title: 'Event Name' },
-            location: { name: 'Location', title: 'Event Location'},
+            location: { name: 'Location', title: 'Event Location' },
             description: { name: 'Description', title: 'Event Description' },
             startTime: { name: 'StartTime', title: 'Start Duration' },
-            endTime: { name: 'EndTime', title: 'End Duration'  }
+            endTime: { name: 'EndTime', title: 'End Duration' }
         }
     }
 });
 scheduleObj.appendTo('#Schedule');
-
-

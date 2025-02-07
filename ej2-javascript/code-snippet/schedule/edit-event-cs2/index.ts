@@ -1,5 +1,3 @@
-
-
 import { DataManager, Query, Predicate } from '@syncfusion/ej2-data';
 import { Schedule, Day, Week, WorkWeek, Month } from '@syncfusion/ej2-schedule';
 import { Button } from '@syncfusion/ej2-buttons';

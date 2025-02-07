@@ -1,9 +1,8 @@
-
-
 import { Schedule, Day, Week, WorkWeek, Month } from '@syncfusion/ej2-schedule';
 import { createElement } from '@syncfusion/ej2-base';
 
 Schedule.Inject(Day, Week, WorkWeek, Month);
+
 let scheduleObj: Schedule = new Schedule({
     width: '100%',
     height: '550px',
@@ -43,5 +42,3 @@ eventButton.onclick = () => {
         EndTime: new Date(2023, 2, 5, 21, 0, 0)
     });
 }
-
-

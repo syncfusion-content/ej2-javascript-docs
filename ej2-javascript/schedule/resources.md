@@ -98,8 +98,6 @@ The following code example depicts how to bind the remote data for resources [`d
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/resource-grouping-remote-data" %}
-
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
@@ -114,7 +112,6 @@ The following code example depicts how to bind the remote data for resources [`d
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/schedule/resource-grouping-remote-data" %}
 {% endif %}
 
 The server-side controller code to handle the resource datasource are as follows.
@@ -157,7 +154,7 @@ It is possible to display the Scheduler in default mode without visually showcas
 
 The appointments belonging to the different resources will be displayed altogether on the default Scheduler, which will be differentiated based on the resource color assigned in the **resources** (depicting to which resource that particular appointment belongs) collection.
 
-**Example:** To display default Scheduler with multiple resource options in the event editor, ignore the group option and simply define the [`resources`](https://ej2.syncfusion.com/documentation/api/schedule/resources/) property with all its internal options.
+**Example:** To display default Scheduler with multiple resource options in the event editor, ignore the [`group`](https://ej2.syncfusion.com/documentation/api/schedule#group) option and simply define the [`resources`](https://ej2.syncfusion.com/documentation/api/schedule/resources/) property with all its internal options.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -167,6 +164,9 @@ The appointments belonging to the different resources will be displayed altogeth
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/multiple-resource-cs1/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/multiple-resource-cs1/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -180,6 +180,9 @@ The appointments belonging to the different resources will be displayed altogeth
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/multiple-resource-cs1/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/multiple-resource-cs1/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -207,6 +210,9 @@ The following code example displays how the multiple resources are grouped and i
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/resource-grouping-cs1/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/resource-grouping-cs1/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/resource-grouping-cs1" %}
@@ -219,6 +225,9 @@ The following code example displays how the multiple resources are grouped and i
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/resource-grouping-cs1/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/resource-grouping-cs1/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -238,6 +247,9 @@ The following code example depicts how to group the multiple resources on Timeli
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/resource-grouping-cs2/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/resource-grouping-cs2/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/resource-grouping-cs2" %}
@@ -250,6 +262,9 @@ The following code example depicts how to group the multiple resources on Timeli
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/resource-grouping-cs2/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/resource-grouping-cs2/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -271,6 +286,9 @@ This kind of grouping allows the Scheduler to display all the resources at a sin
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/single-level-resource-cs1/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/single-level-resource-cs1/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/single-level-resource-cs1" %}
@@ -283,6 +301,9 @@ This kind of grouping allows the Scheduler to display all the resources at a sin
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/single-level-resource-cs1/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/single-level-resource-cs1/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -306,6 +327,9 @@ It is possible to group the resources of Scheduler in multiple levels, by mappin
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/multi-level-resource-cs1/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/multi-level-resource-cs1/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/multi-level-resource-cs1" %}
@@ -318,6 +342,9 @@ It is possible to group the resources of Scheduler in multiple levels, by mappin
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/multi-level-resource-cs1/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/multi-level-resource-cs1/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -337,6 +364,9 @@ In multi-level grouping, Scheduler usually groups the resources on the child lev
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/multi-level-resource-cs2/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/multi-level-resource-cs2/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/multi-level-resource-cs2" %}
@@ -349,6 +379,9 @@ In multi-level grouping, Scheduler usually groups the resources on the child lev
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/multi-level-resource-cs2/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/multi-level-resource-cs2/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -370,6 +403,9 @@ It groups the number of resources under each date and is applicable only on the 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/group-by-date-cs1/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/group-by-date-cs1/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/group-by-date-cs1" %}
@@ -382,6 +418,9 @@ It groups the number of resources under each date and is applicable only on the 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/group-by-date-cs1/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/group-by-date-cs1/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -403,6 +442,9 @@ In timeline view work cells of parent resource can be customized by checking the
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/resource-grouping-cs3/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/resource-grouping-cs3/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/resource-grouping-cs3" %}
@@ -415,6 +457,9 @@ In timeline view work cells of parent resource can be customized by checking the
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/resource-grouping-cs3/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/resource-grouping-cs3/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -451,6 +496,9 @@ Multiple resources can share the same events, thus allowing the CRUD action made
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/resource-grouping-cs4/index.html %}
 {% endhighlight %}
+{% highlight html tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/resource-grouping-cs4/es5-datasource.js %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/schedule/resource-grouping-cs4" %}
@@ -458,9 +506,9 @@ Multiple resources can share the same events, thus allowing the CRUD action made
 
 ## Simple resource header customization
 
-It is possible to customize the resource header cells using built-in template option and change the look and appearance of it in both the vertical and timeline view modes. All the resource related fields and other information can be accessed within the resource header template option.
+It is possible to customize the resource header cells using built-in template option and change the look and appearance of it in both the vertical and timeline view modes. All the resource related fields and other information can be accessed within the [`resourceHeaderTemplate`](https://ej2.syncfusion.com/documentation/api/schedule/#resourceheadertemplate) option.
 
-**Example:** To customize the resource header and display it along with the designation [`resource field`](https://ej2.syncfusion.com/documentation/api/schedule/resources/), refer the below code example.
+**Example:** To customize the resource header and display it along with the designation [`resource`](https://ej2.syncfusion.com/documentation/api/schedule/resources/) field, refer the below code example.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -2,7 +2,7 @@ var scheduleObj = new ej.schedule.Schedule({
     width: '100%',
     height: '550px',
     currentView: 'Week',
-    views: ['Week' , 'Month','TimelineWeek', 'TimelineMonth', 'Agenda'],
+    views: ['Week', 'Month', 'TimelineWeek', 'TimelineMonth', 'Agenda'],
     selectedDate: new Date(2018, 3, 1),
     group: {
         byGroupID: false,
@@ -16,7 +16,7 @@ var scheduleObj = new ej.schedule.Schedule({
             { RoomText: 'ROOM 2', Id: 2, RoomColor: '#56ca85' }
         ],
         textField: 'RoomText', idField: 'Id', colorField: 'RoomColor'
-        },{
+    }, {
         field: 'OwnerId', title: 'Owner',
         name: 'Owners', allowMultiple: true,
         dataSource: [
@@ -29,4 +29,3 @@ var scheduleObj = new ej.schedule.Schedule({
     eventSettings: { dataSource: resourceData }
 });
 scheduleObj.appendTo('#Schedule');
-

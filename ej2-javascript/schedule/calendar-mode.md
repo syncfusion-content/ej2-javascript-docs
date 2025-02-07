@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Calendar mode in ##Platform_Name## Schedule control | Syncfusion
-description: Learn here all about Calendar mode in Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
+title: Calendar mode in ##Platform_Name## Scheduler control | Syncfusion
+description: Learn here all about Calendar mode in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Calendar mode 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Calendar mode in ##Platform_Name## Schedule control
+# Calendar mode in ##Platform_Name## Scheduler control
 
 The Scheduler supports the following two types of calendar mode.
 
@@ -26,7 +26,7 @@ The Islamic Calendar, also known as the Hijri or Muslim calendar, is a lunar cal
 
 > The current Islamic year is 1440 AH. Usually the Gregorian calendar runs from approximately 11 September 2018 to 30 August 2019 for this 1440 AH year.
 
-The Scheduler has a property `calendarMode` which is used to switch between the gregorian and islamic calendar modes. By default, it is set to `Gregorian` and to use it with Islamic calendar dates, define the `calendarMode` of Scheduler to `Islamic`. The following example depicts, how to display the Islamic calendar dates on Scheduler.
+The Scheduler has a property [`calendarMode`](https://ej2.syncfusion.com/documentation/api/schedule/#calendarmode) which is used to switch between the gregorian and islamic calendar modes. By default, it is set to `Gregorian` and to use it with Islamic calendar dates, define the [`calendarMode`](https://ej2.syncfusion.com/documentation/api/schedule/#calendarmode) of Scheduler to `Islamic`. The following example depicts, how to display the Islamic calendar dates on Scheduler.
 
 To make use of Islamic calendar in Scheduler, import the `Calendar` and `Islamic` module from `ej2-calendars` package and also inject it using the `Calendar.Inject` method. Apart from this, it requires the following CLDR data to be loaded using loadCldr function.
 

@@ -8,12 +8,12 @@ let resource: DataManager = new DataManager({
     crossDomain: true
 });
 
-Schedule.Inject( Week, Month, TimelineViews, TimelineMonth, Agenda);
+Schedule.Inject(Week, Month, TimelineViews, TimelineMonth, Agenda);
 let scheduleObj: Schedule = new Schedule({
     width: '100%',
     height: '550px',
     currentView: 'Week',
-    views: ['Week', 'Month', 'TimelineWeek','TimelineMonth', 'Agenda'],
+    views: ['Week', 'Month', 'TimelineWeek', 'TimelineMonth', 'Agenda'],
     selectedDate: new Date(2018, 3, 1),
     group: {
         resources: ['Owners']

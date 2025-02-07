@@ -1,14 +1,13 @@
-
-
 import { Schedule, Week, Month, TimelineViews, TimelineMonth, Agenda } from '@syncfusion/ej2-schedule';
 import { resourceData } from './datasource.ts';
 
-Schedule.Inject(Week, Month, TimelineViews, TimelineMonth, Agenda );
+Schedule.Inject(Week, Month, TimelineViews, TimelineMonth, Agenda);
+
 let scheduleObj: Schedule = new Schedule({
     width: '100%',
     height: '550px',
     currentView: 'Week',
-    views: ['Week' , 'Month','TimelineWeek', 'TimelineMonth', 'Agenda'],
+    views: ['Week', 'Month', 'TimelineWeek', 'TimelineMonth', 'Agenda'],
     selectedDate: new Date(2018, 3, 1),
     group: {
         byGroupID: false,
@@ -22,7 +21,7 @@ let scheduleObj: Schedule = new Schedule({
             { RoomText: 'ROOM 2', Id: 2, RoomColor: '#56ca85' }
         ],
         textField: 'RoomText', idField: 'Id', colorField: 'RoomColor'
-        },{
+    }, {
         field: 'OwnerId', title: 'Owner',
         name: 'Owners', allowMultiple: true,
         dataSource: [
@@ -35,5 +34,3 @@ let scheduleObj: Schedule = new Schedule({
     eventSettings: { dataSource: resourceData }
 });
 scheduleObj.appendTo('#Schedule');
-
-

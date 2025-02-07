@@ -13,9 +13,9 @@ var scheduleObj = new ej.schedule.Schedule({
         dataSource: [
             { RoomText: 'ROOM 1', Id: 1, RoomColor: '#cb6bb2' },
             { RoomText: 'ROOM 2', Id: 2, RoomColor: '#56ca85' }
-            ],
-            textField: 'RoomText', idField: 'Id', colorField: 'RoomColor'
-        }, {
+        ],
+        textField: 'RoomText', idField: 'Id', colorField: 'RoomColor'
+    }, {
         field: 'OwnerId', title: 'Owner',
         name: 'Owners', allowMultiple: true,
         dataSource: [
@@ -28,4 +28,3 @@ var scheduleObj = new ej.schedule.Schedule({
     eventSettings: { dataSource: resourceData }
 });
 scheduleObj.appendTo('#Schedule');
-

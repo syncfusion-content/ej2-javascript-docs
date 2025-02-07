@@ -19,4 +19,3 @@ var scheduleObj = new ej.schedule.Schedule({
     eventSettings: { dataSource: resourceData }
 });
 scheduleObj.appendTo('#Schedule');
-

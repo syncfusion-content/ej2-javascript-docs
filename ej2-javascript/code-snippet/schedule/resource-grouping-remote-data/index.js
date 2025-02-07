@@ -8,7 +8,7 @@ var scheduleObj = new ej.schedule.Schedule({
     width: '100%',
     height: '550px',
     currentView: 'Week',
-    views: ['Week', 'Month', 'TimelineWeek','TimelineMonth', 'Agenda'],
+    views: ['Week', 'Month', 'TimelineWeek', 'TimelineMonth', 'Agenda'],
     selectedDate: new Date(2018, 3, 1),
     group: {
         resources: ['Owners']
@@ -22,4 +22,3 @@ var scheduleObj = new ej.schedule.Schedule({
     eventSettings: { dataSource: resourceData }
 });
 scheduleObj.appendTo('#Schedule');
-

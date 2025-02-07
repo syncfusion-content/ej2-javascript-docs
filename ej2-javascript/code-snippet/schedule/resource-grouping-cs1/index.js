@@ -16,16 +16,15 @@ var scheduleObj = new ej.schedule.Schedule({
             { text: 'PROJECT 3', id: 3, color: '#df5286' }
         ],
         textField: 'text', idField: 'id', colorField: 'color'
-        }, {
-            field: 'TaskId', title: 'Category',
-            name: 'Categories', allowMultiple: true,
-            dataSource: [
-                { text: 'Development', id: 1, color: '#df5286' },
-                { text: 'Testing', id: 2, color: '#7fa900' }
-            ],
+    }, {
+        field: 'TaskId', title: 'Category',
+        name: 'Categories', allowMultiple: true,
+        dataSource: [
+            { text: 'Development', id: 1, color: '#df5286' },
+            { text: 'Testing', id: 2, color: '#7fa900' }
+        ],
         textField: 'text', idField: 'id', colorField: 'color'
     }],
-    eventSettings: { dataSource: resourceConferenceData }
+    eventSettings: { dataSource: timelineResourceData }
 });
 scheduleObj.appendTo('#Schedule');
-

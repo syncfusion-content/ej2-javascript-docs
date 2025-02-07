@@ -1,8 +1,7 @@
-
-
 import { Schedule, Week, Month, Agenda, TimelineViews, TimelineMonth, Resize } from '@syncfusion/ej2-schedule';
 
 Schedule.Inject(Month, Week, Agenda, TimelineViews, TimelineMonth, Resize);
+
 let resourceConferenceData: Object[] = [
     {
         Id: 1,
@@ -34,7 +33,9 @@ let resourceConferenceData: Object[] = [
         StartTime: new Date(2018, 5, 3, 10, 0),
         EndTime: new Date(2018, 5, 3, 12, 0),
         ConferenceId: [1, 2, 3]
-    }];
+    }
+];
+
 let scheduleObj: Schedule = new Schedule({
     width: '100%',
     height: '550px',

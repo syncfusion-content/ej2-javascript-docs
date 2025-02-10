@@ -1,5 +1,3 @@
-
-
 import { DashboardLayout } from '@syncfusion/ej2-layouts';
 
 // initialize Dashboard Layout control
@@ -17,5 +15,3 @@ let dashboard: DashboardLayout = new DashboardLayout({
 });
 // render initialized Dashboard Layout
 dashboard.appendTo('#dashboard_layout');
-
-

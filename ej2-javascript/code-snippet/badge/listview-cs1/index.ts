@@ -1,21 +1,16 @@
-
-
 import { ListView } from '@syncfusion/ej2-lists';
-// Datasource for listview, badge field is the class data for Badges
+
+// Datasource for LisView, badge field is the class data for Badge
 let dataSource: { [key: string]: Object }[] = [
     { id: 'p_01', text: 'Primary', messages: '3 New', badge: 'e-badge e-badge-primary', icons: 'primary', type: 'Primary' },
-    { id: 'p_02', text: 'Social', messages: '27 New', badge: 'e-badge e-badge-secondary', icons: 'social', type: 'Primary' },
-    { id: 'p_03', text: 'Promotions', messages: '7 New', badge: 'e-badge e-badge-success', icons: 'promotion', type: 'Primary' },
     { id: 'p_04', text: 'Updates', messages: '13 New', badge: 'e-badge e-badge-info', icons: 'updates', type: 'Primary' },
     { id: 'p_05', text: 'Starred', messages: '', badge: '', icons: 'starred', type: 'All Labels' },
     { id: 'p_06', text: 'Important', messages: '2 New', badge: 'e-badge e-badge-danger', icons: 'important', type: 'All Labels' },
-    { id: 'p_07', text: 'Sent', messages: '', badge: '', icons: 'sent', type: 'All Labels' },
-    { id: 'p_08', text: 'Outbox', messages: '', badge: '', icons: 'outbox', type: 'All Labels' },
     { id: 'p_09', text: 'Drafts', messages: '7 New', badge: 'e-badge e-badge-warning', icons: 'draft', type: 'All Labels' },
 ];
 
 let list: ListView = new ListView({
-    // Bind listview datasource
+    // Bind LisView datasource
     dataSource: dataSource,
     // Assign header title
     headerTitle: 'Inbox',
@@ -28,13 +23,10 @@ let list: ListView = new ListView({
 
     // Map fields
     fields: { groupBy: 'type' },
-    // Bind actioncomplete event
+    // Bind actionComplete event
     actionComplete: () => {
-        let list: HTMLElement = <HTMLElement>document.getElementById('lists').getElementsByClassName('e-list-group-item')[0];
+        let list: HTMLElement = <HTMLElement>document.getElementById('lists')?.getElementsByClassName('e-list-group-item')[0];
         list.style.display = 'none';
     }
 });
 list.appendTo('#lists');
-
-
-

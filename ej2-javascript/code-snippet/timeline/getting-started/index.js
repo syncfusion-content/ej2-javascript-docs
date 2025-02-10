@@ -1,4 +1,3 @@
-
 // Initializes the Timeline control
 var timeline = new ej.layouts.Timeline({
   items: [{}, {}, {}, {}]

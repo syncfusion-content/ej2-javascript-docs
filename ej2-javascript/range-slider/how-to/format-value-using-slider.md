@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## Achieve date format
 
-Date formatting can be achieved in `ticks` and `tooltip` using the `renderingTicks` and `tooltipChange` events, respectively. The process of formatting is explained in the following sample.
+Date formatting can be achieved in [`ticks`](../../api/slider/#ticks) and [`tooltip`](../../api/slider/#tooltip) using the [`renderingTicks`](../../api/slider/#renderingticks) and [`tooltipChange`](../../api/slider/#tooltipchange) events, respectively. The process of formatting is explained in the following sample.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -50,7 +50,7 @@ Date formatting can be achieved in `ticks` and `tooltip` using the `renderingTic
 
 ## Achieve time format
 
-Time formatting can be achieved in the same manner as date formatting using the `renderingTicks` and `change` events. The process of time formatting is explained in the following sample.
+Time formatting can be achieved in the same manner as date formatting using the [`renderingTicks`](../../api/slider/#renderingticks) and [`change`](../../api/slider/#change) events. The process of time formatting is explained in the following sample.
 
 {% if page.publishingplatform == "typescript" %}
 

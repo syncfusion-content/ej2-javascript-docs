@@ -1,4 +1,3 @@
-
 var mealTimes = [
   { content: 'Breakfast', oppositeContent: '8:00 AM'},
   { content: 'Lunch', oppositeContent: '1:00 PM'},

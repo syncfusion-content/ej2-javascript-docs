@@ -1,6 +1,5 @@
-
-
 import { DashboardLayout } from '@syncfusion/ej2-layouts';
+
 // initialize Dashboard Layout control
 let dashboard: DashboardLayout = new DashboardLayout({
     cellSpacing: [10, 10],
@@ -16,6 +15,3 @@ let dashboard: DashboardLayout = new DashboardLayout({
 });
 // render initialized Dashboard Layout
 dashboard.appendTo('#dashboard_default');
-
-
-

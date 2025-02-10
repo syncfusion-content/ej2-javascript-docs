@@ -1,4 +1,3 @@
-
 var orderStatus = [
   { content: '#content-template'},
   { content: '#content-template'},

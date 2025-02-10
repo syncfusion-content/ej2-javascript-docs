@@ -1,4 +1,3 @@
-
 var dotSizes = [
   { content: 'Extra Small', cssClass: 'x-small' },
   { content: 'Small', cssClass: 'small' },

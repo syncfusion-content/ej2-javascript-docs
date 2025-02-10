@@ -193,9 +193,6 @@ The below output can be achieved by following the steps mentioned above.
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/dashboard-layout/getting-started-panels-cs1/index.ts %}
 {% endhighlight %}
-{% highlight css tabtitle="index.css" %}
-{% include code-snippet/dashboard-layout/getting-started-panels-cs1/index.css %}
-{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/dashboard-layout/getting-started-panels-cs1" %}
@@ -240,9 +237,6 @@ The following example shows a basic Dashboard Layout by defining the `panels` pr
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/dashboard-layout/getting-started-cs4/index.html %}
-{% endhighlight %}
-{% highlight css tabtitle="index.css" %}
-{% include code-snippet/dashboard-layout/getting-started-cs4/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

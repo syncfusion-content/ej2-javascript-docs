@@ -1,5 +1,3 @@
-
-
 import { DashboardLayout } from '@syncfusion/ej2-layouts';
 import { Button } from '@syncfusion/ej2-buttons';
 
@@ -28,7 +26,7 @@ let toggleBtn: Button = new Button({
 });
 toggleBtn.appendTo("#toggle");
 
-document.getElementById('toggle').onclick = () => {
+document.getElementById('toggle')?.addEventListener('click', () => {
     let panels = [];
     if (toggleBtn.content == "Disable Floating and Reset") {
         toggleBtn.content = 'Enable Floating';
@@ -38,7 +36,4 @@ document.getElementById('toggle').onclick = () => {
         toggleBtn.content = 'Disable Floating and Reset';
         dashboard.allowFloating = true;
     }
-};
-
-
-
+})

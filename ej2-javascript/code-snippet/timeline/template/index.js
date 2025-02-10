@@ -1,4 +1,3 @@
-
 var projectMilestones = [
   { content: 'Kickoff meeting'},
   { content: 'Content approved'},

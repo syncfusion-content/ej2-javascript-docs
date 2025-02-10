@@ -15,13 +15,13 @@ The slider [`limits`](../api/slider/#limits) feature restricts the slider thumb 
 
 The following are the six options available in the slider's limits object, and each API in the limits object is optional:
 
-* ``enabled``: Enables the limits in the Slider.
-* ``minStart``: Sets the minimum limit for the first handle.
-* ``minEnd``: Sets the maximum limit for the first handle.
-* ``maxStart``: Sets the minimum limit for the second handle.
-* ``maxEnd``: Sets the maximum limit for the second handle.
-* ``startHandleFixed``: Locks the first handle.
-* ``endHandleFixed``: Locks the second handle.
+* [``enabled``](../api/slider/limitDataModel/#enabled): Enables the limits in the Slider.
+* [``minStart``](../api/slider/limitDataModel/#minstart): Sets the minimum limit for the first handle.
+* [``minEnd``](../api/slider/limitDataModel/#minend): Sets the maximum limit for the first handle.
+* [``maxStart``](../api/slider/limitDataModel/#maxstart): Sets the minimum limit for the second handle.
+* [``maxEnd``](../api/slider/limitDataModel/#maxend): Sets the maximum limit for the second handle.
+* [``startHandleFixed``](../api/slider/limitDataModel/#starthandlefixed): Locks the first handle.
+* [``endHandleFixed``](../api/slider/limitDataModel/#endhandlefixed): Locks the second handle.
 
 ## Default and MinRange Slider limits
 

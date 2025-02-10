@@ -1,4 +1,3 @@
-
 var dailyRoutine = [
   { content: 'Eat' },
   { content: 'Code' },

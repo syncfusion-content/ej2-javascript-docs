@@ -5,11 +5,10 @@ var dataSource = [
     { id: 's_03', text: 'Andrew', avatar: 'A', pic: '' },
     { id: 's_06', text: 'Michael', pic: 'pic02', avatar: '' },
     { id: 's_07', text: 'Steven', pic: 'pic03', avatar: '' },
-    { id: 's_08', text: 'Margaret', avatar: 'M', pic: '' }
 ];
 
 var letterAvatarList = new ej.lists.ListView({
-    // Bind listview datasource
+    // Bind ListView datasource
     dataSource: dataSource,
     // Assign header title
     headerTitle: 'Contacts',
@@ -28,4 +27,3 @@ var letterAvatarList = new ej.lists.ListView({
     sortOrder: 'Ascending'
 });
 letterAvatarList.appendTo('#letterAvatarList');
-

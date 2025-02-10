@@ -1,7 +1,5 @@
 import { Slider } from '@syncfusion/ej2-inputs';
 
-// tslint:disable-next-line:max-func-body-length
-
 // Initialize Range Slider Control
 let minRangeObj: Slider = new Slider({
     // Set slider minimum and maximum values

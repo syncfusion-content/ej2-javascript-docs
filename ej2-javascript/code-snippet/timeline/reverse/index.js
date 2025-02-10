@@ -1,4 +1,3 @@
-
 var careerProgress = [
   { content: 'June 2022', oppositeContent: 'Graduated \n Bachelors in Computer Engineering' },
   { content: 'Aug 2022', oppositeContent: 'Software Engineering Internship \n ABC Software and Technology' },

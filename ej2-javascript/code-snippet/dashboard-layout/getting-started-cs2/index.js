@@ -13,4 +13,3 @@ let dashboard  = new ej.layouts.DashboardLayout({
 });
 // render initialized Dashboard Layout
 dashboard.appendTo('#dashboard_default');
-

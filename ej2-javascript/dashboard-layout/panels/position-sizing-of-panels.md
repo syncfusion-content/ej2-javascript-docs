@@ -32,7 +32,7 @@ The table below represents all the available panel properties and their correspo
 
 ## Positioning of panels
 
-The panels within the layout can be easily positioned or ordered using the `row` and `col` properties of the panels. Positioning panels will be beneficial to represent the data in any desired order.
+The panels within the layout can be easily positioned or ordered using the [`row`](../../api/dashboard-layout/panelModel/#row)  and [`col`](../../api/dashboard-layout/panelModel/#col)  properties of the panels. Positioning panels will be beneficial to represent the data in any desired order.
 
 The following sample demonstrates the positioning of panels within the Dashboard Layout using the row and column properties of the panels.
 
@@ -65,7 +65,7 @@ The following sample demonstrates the positioning of panels within the Dashboard
 
 ## Sizing of panels
 
-A panel's size can be varied easily by defining the `sizeX` and `sizeY` properties. The `sizeX` property defines the width and `sizeY` property defines height of a panel in cells count. These properties will be helpful in designing a dashboard, where the content of each panel may vary in size.
+A panel's size can be varied easily by defining the [`sizeX`](../../api/dashboard-layout/panelModel/#sizex) and [`sizeY`](../../api/dashboard-layout/panelModel/#sizey) properties. The `sizeX` property defines the width and `sizeY` property defines height of a panel in cells count. These properties will be helpful in designing a dashboard, where the content of each panel may vary in size.
 
 The following sample demonstrates the sizing of panels within the Dashboard Layout using the sizeX and sizeY properties of the panels.
 

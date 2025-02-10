@@ -1,5 +1,3 @@
-
-
 import { DashboardLayout } from '@syncfusion/ej2-layouts';
 import { Button } from '@syncfusion/ej2-buttons';
 
@@ -17,7 +15,7 @@ let dashboard: DashboardLayout = new DashboardLayout({
     { "sizeX": 1, "sizeY": 1, "row": 2, "col": 2, content: '<div class="content">5</div>' },
     { "sizeX": 1, "sizeY": 1, "row": 2, "col": 3, content: '<div class="content">6</div>' }
     ],
-     created: restorePanelModel
+    created: restorePanelModel
 });
 // render initialized Dashboard Layout
 dashboard.appendTo('#dashboard_default');
@@ -34,13 +32,13 @@ let restoreBtn: Button = new Button({
 });
 restoreBtn.appendTo("#restore");
 
-document.getElementById('save').onclick = () => {
-     restorePanelModel();
-};
+document.getElementById('save')?.addEventListener('click', () => {
+    restorePanelModel();
+});
 
-document.getElementById('restore').onclick = () => {
+document.getElementById('restore')?.addEventListener('click', () => {
     dashboard.panels = restoreModel;
-};
+});
 function restorePanelModel() {
     restoreModel = dashboard.serialize();
     restoreModel[0].content = '<div class="content">0</div>';
@@ -51,5 +49,3 @@ function restorePanelModel() {
     restoreModel[5].content = '<div class="content">5</div>';
     restoreModel[6].content = '<div class="content">6</div>';
 }
-
-

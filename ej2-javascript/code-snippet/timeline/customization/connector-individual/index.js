@@ -1,4 +1,3 @@
-
 var dailyRoutine = [
   { content: 'Eat', cssClass: 'state-initial' },
   { content: 'Code', cssClass: 'state-intermediate' },

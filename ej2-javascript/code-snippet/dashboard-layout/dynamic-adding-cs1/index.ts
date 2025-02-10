@@ -1,5 +1,3 @@
-
-
 import { DashboardLayout } from '@syncfusion/ej2-layouts';
 import { DropDownList } from '@syncfusion/ej2-dropdowns';
 import { Button } from '@syncfusion/ej2-buttons';
@@ -71,7 +69,7 @@ let column: NumericTextBox = new NumericTextBox({
 
 column.appendTo('#column');
 
-document.getElementById('add').onclick = () => {
+document.getElementById('add')?.addEventListener('click', () => {
     let panel: any = {
         id: "Panel" + count.toString(),
         sizeX: sizeX.value,
@@ -84,13 +82,11 @@ document.getElementById('add').onclick = () => {
     count = count + 1;
     (<string[]>idValue.dataSource).push(panel.id);
     idValue.refresh();
-};
+});
 
-document.getElementById('remove').onclick = () => {
+document.getElementById('remove')?.addEventListener('click', () => {
     dashboard.removePanel(idValue.value.toString());
     (<string[]>idValue.dataSource).splice((<string[]>idValue.dataSource).indexOf(idValue.value.toString()), 1);
     idValue.refresh();
     idValue.value = null;
-}
-
-
+})

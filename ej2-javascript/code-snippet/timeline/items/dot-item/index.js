@@ -1,4 +1,3 @@
-
 var dotItems = [
   { content: 'Default'},
   { content: 'Icon', dotCss: 'e-icons e-check'},

@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Setting header of panels in ##Platform_Name## Dashboard Layout control
 
-The Dashboard Layout control is mostly used to represent data for monitoring or managing a process. These data or any HTML template can be placed as the content of a panel using the `content` property. Additionally, a word or phrase summarizing the panel’s content can be added as the header on the top of each panel using the `header` property of the panel.
+The Dashboard Layout control is mostly used to represent data for monitoring or managing a process. These data or any HTML template can be placed as the content of a panel using the [`content`](../../api/dashboard-layout/panelModel/#content)  property. Additionally, a word or phrase summarizing the panel’s content can be added as the header on the top of each panel using the [`header`](../../api/dashboard-layout/panelModel/#header)  property of the panel.
 
 The following sample demonstrates how to add content for each panel using the header and content properties of the panels.
 

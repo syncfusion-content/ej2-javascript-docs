@@ -1,4 +1,3 @@
-
 var tripItenerary = [
   { content: 'Day 1, 4:00 PM', oppositeContent: 'Check-in and campsite visit' },
   { content: 'Day 1, 7:00 PM', oppositeContent: 'Dinner with music' },

@@ -1,4 +1,3 @@
-
 var dotVariants = [
   { content: 'Filled', cssClass: 'dot-filled' },
   { content: 'Flat', cssClass: 'dot-flat' },

@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Ticks in ##Platform_Name## Range Slider control
 
-Ticks in the Range Slider control help you easily identify the current value or values of the slider. The control includes `smallStep` and `largeStep`. The values of the major ticks will be displayed on the slider. To enable or disable the small ticks, use the [`showSmallTicks`](../api/slider/ticksDataModel/#showsmallticks) property.
+Ticks in the Range Slider control help you easily identify the current value or values of the slider. The control includes [`smallStep`](../api/slider/ticksDataModel/#smallstep) and [`largeStep`](../api/slider/ticksDataModel/#largestep). The values of the major ticks will be displayed on the slider. To enable or disable the small ticks, use the [`showSmallTicks`](../api/slider/ticksDataModel/#showsmallticks) property.
 
 {% if page.publishingplatform == "typescript" %}
 

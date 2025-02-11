@@ -285,7 +285,7 @@ The toolbar settings such as items to be displayed in the toolbar and visibility
 
 ### See Also
 
-* [How to add new items or customize default items](../file-manager/how-to/adding-custom-item-to-toolbar.md)
+* [How to add new items or customize default items](../file-manager/how-to/adding-custom-item-to-toolbar)
 
 ## Upload customization
 

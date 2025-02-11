@@ -21,9 +21,9 @@ filemanagerInstance.appendTo('#filemanager');
 document.getElementById("enable")?.addEventListener("click", function (args) {
     // Enable new folder toolbar item
     filemanagerInstance.enableToolbarItems(["newfolder"]);
-})
+});
 // Click event for enable button
 document.getElementById("disable")?.addEventListener("click", function (args) {
     // Enable new folder toolbar item
     filemanagerInstance.disableToolbarItems(["newfolder"]);
-})
+});

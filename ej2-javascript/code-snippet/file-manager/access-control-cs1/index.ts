@@ -1,6 +1,4 @@
-
-
-import { FileManager, Toolbar, NavigationPane, DetailsView, FileToolbarClickEventArgs } from '@syncfusion/ej2-filemanager';
+import { FileManager, Toolbar, NavigationPane, DetailsView } from '@syncfusion/ej2-filemanager';
 
 FileManager.Inject(Toolbar, NavigationPane, DetailsView)
 
@@ -8,15 +6,14 @@ let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
 // initialize File Manager control and add custom item to contextmenu
 let filemanagerInstance: FileManager = new FileManager({
     ajaxSettings: {
-            url: hostUrl + 'api/FileManagerAccess/FileOperations',
-            getImageUrl: hostUrl + 'api/FileManagerAccess/GetImage',
-            uploadUrl: hostUrl + 'api/FileManagerAccess/Upload',
-            downloadUrl: hostUrl + 'api/FileManagerAccess/Download'
+        url: hostUrl + 'api/FileManagerAccess/FileOperations',
+        getImageUrl: hostUrl + 'api/FileManagerAccess/GetImage',
+        uploadUrl: hostUrl + 'api/FileManagerAccess/Upload',
+        downloadUrl: hostUrl + 'api/FileManagerAccess/Download'
     },
-    view: 'Details'
+    view: 'Details',
+    height: '380px'
 });
 
 // render initialized File Manager
 filemanagerInstance.appendTo('#filemanager');
-
-

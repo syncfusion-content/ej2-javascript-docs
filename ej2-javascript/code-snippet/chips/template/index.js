@@ -15,4 +15,3 @@ var templateData = [
 
 // initialize template chip
 new ej.buttons.ChipList({ chips: templateData }, '#customTemplate');
-

@@ -35,4 +35,4 @@ let drpDownBtn: DropDownButton = new DropDownButton({
 
 document.getElementById('file_tb_upload')?.addEventListener('click', function (args) {
     args.stopPropagation();
-})
+});

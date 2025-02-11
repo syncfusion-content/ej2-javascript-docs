@@ -1,4 +1,4 @@
-new ej.buttons.ChipList({  chips: ['Chai', 'Chang', 'Aniseed Syrup ', 'Ikura'],
-    cssClass: 'e-outline'}, '#chip');
-
-
+new ej.buttons.ChipList({
+    chips: ['Chai', 'Chang', 'Aniseed Syrup ', 'Ikura'],
+    cssClass: 'e-outline'
+}, '#chip');

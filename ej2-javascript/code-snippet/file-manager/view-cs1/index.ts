@@ -15,3 +15,6 @@ let filemanagerInstance: FileManager = new FileManager({
     view: "Details",
     height: '380px'
 });
+
+// render initialized File Manager
+filemanagerInstance.appendTo('#filemanager');

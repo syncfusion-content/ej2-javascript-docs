@@ -9,7 +9,7 @@ var filemanagerInstance = new ej.filemanager.FileManager({
         uploadUrl: hostUrl + 'api/FileManager/Upload',
         downloadUrl: hostUrl + 'api/FileManager/Download'
     },
-    uploadSettings: { autoUpload: true, chunkSize: "5242880", maxFileSize: "73728000" },
+    uploadSettings: { autoUpload: true, chunkSize: 5242880, maxFileSize: 73728000 },
     height: '380px'
 });
 filemanagerInstance.appendTo('#filemanager');

@@ -1,4 +1,5 @@
-new ej.buttons.ChipList({  chips:  [{
+new ej.buttons.ChipList({
+    chips: [{
         "text": "Apple",
         "cssClass": "e-primary"
     },
@@ -18,6 +19,5 @@ new ej.buttons.ChipList({  chips:  [{
         "text": "Intel",
         "cssClass": "e-danger"
     }
-] }, '#chip');
-
-
+    ]
+}, '#chip');

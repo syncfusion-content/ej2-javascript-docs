@@ -44,7 +44,7 @@ document.getElementById('openBtn')?.addEventListener("click", (): void => {
     });
     filemanagerInstance.appendTo('#filemanager');
     dialogOpen();
-})
+});
 
 // Uploader will be shown, if Dialog is closed
 function dialogClose(): void {

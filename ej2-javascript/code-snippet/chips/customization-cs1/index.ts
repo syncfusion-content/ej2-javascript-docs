@@ -1,8 +1,7 @@
-
-
-
 import { ChipList } from '@syncfusion/ej2-buttons';
-new ChipList({chips:  [{
+
+new ChipList({
+    chips: [{
         "text": "Apple",
         "cssClass": "e-primary"
     },
@@ -22,7 +21,5 @@ new ChipList({chips:  [{
         "text": "Intel",
         "cssClass": "e-danger"
     }
-] }, '#chip');
-
-
-
+    ]
+}, '#chip');

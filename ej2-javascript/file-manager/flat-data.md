@@ -18,7 +18,7 @@ The File Manager uses a flat data object as an array of JavaScript objects for r
 Event Name | Description
  ---  | ---
 [beforeDelete](../api/file-manager/#beforedelete) | This event is triggered before the deletion of a file or folder occurs. It can be utilized to prevent the deletion of specific files or folders. Any actions, such as displaying a spinner for deletion, can be implemented here.
-[delete](../api/file-manager/#delete) | DeleteEventArgs | path, itemData, cancel. | This event is triggered after the file or folder is deleted successfully. The deleted file or folder details can be retrieved here. Additionally, custom elements' visibility can be managed here based on the application's use case.
+[delete](../api/file-manager/#delete) | This event is triggered after the file or folder is deleted successfully. The deleted file or folder details can be retrieved here. Additionally, custom elements' visibility can be managed here based on the application's use case.
 [beforeFolderCreate](../api/file-manager/#beforefoldercreate) | This event is triggered before a folder is created. It allows for the restriction of folder creation based on the application's use case.
 [folderCreate](../api/file-manager/#foldercreate) | This event is triggered when a folder is successfully created. It provides an opportunity to retrieve details about the newly created folder.
 [search](../api/file-manager/#search) | This event is triggered when a search action occurs in the search bar of the File Manager control. It triggers each character entered in the input during the search process.
@@ -29,7 +29,7 @@ Event Name | Description
 
 ## Local data
 
-The FileManager can be populated with local data that contains the array of `fileData` interface objects with `parentId` mapping.
+The FileManager can be populated with local data that contains the array of `fileData` interface objects with [`parentId`](../api/file-manager/fileData/#parentid)  mapping.
 
 To render the root-level folder, specify the `parentId` as null, or there is no need to specify the `parentId` in the array of `fileData` interface objects.
 
@@ -162,7 +162,7 @@ async function createFlatData(files) {
 
 ### Delete action
 
-To enable the delete operation in the File Manager control with Google services, you can use the [beforeDelete](../api/file-manager/#beforedelete) event. By setting the `cancel` property to `true` in the `beforeDelete` event, you can prevent the default delete action of the File Manager control. Then, you can make a Google API request with the help of event argument to delete the file from Google Drive. Additionally, to update the `fileSystemData` property with the current Google Drive data, you can call the `fetchData` method in the `gapi` success callback. This ensures that the File Manager control remains synchronized with the Google Drive data during the delete operation.
+To enable the delete operation in the File Manager control with Google services, you can use the [beforeDelete](../api/file-manager/#beforedelete) event. By setting the [cancel](../api/file-manager/deleteEventArgs/#cancel)  property to `true` in the `beforeDelete` event, you can prevent the default delete action of the File Manager control. Then, you can make a Google API request with the help of event argument to delete the file from Google Drive. Additionally, to update the `fileSystemData` property with the current Google Drive data, you can call the `fetchData` method in the `gapi` success callback. This ensures that the File Manager control remains synchronized with the Google Drive data during the delete operation.
 
 Here is an example of how you can handle the delete operation using the `beforeDelete` event:
 
@@ -186,7 +186,7 @@ Here is an example of how you can handle the delete operation using the `beforeD
 
 ### Copy action
 
-To enable the copy operation in the File Manager control with Google services, you can use the [beforeMove](../api/file-manager/#beforeMove) event. The `isCopy` property in the event argument in `true` for copy operation. By setting the `cancel` property to `true` in the `beforeMove` event, you can prevent the default copy action of the File Manager control. Then, you can make a Google API request with the help of event argument to copy the file from Google Drive. Additionally, to update the `fileSystemData` property with the current Google Drive data, you can call the `fetchData` method in the `gapi` success callback. This ensures that the File Manager control remains synchronized with the Google Drive data during the copy operation.
+To enable the copy operation in the File Manager control with Google services, you can use the [beforeMove](../api/file-manager/#beforemove) event. The `isCopy` property in the event argument in `true` for copy operation. By setting the [cancel](../api/file-manager/moveEventArgs/#cancel) property to `true` in the `beforeMove` event, you can prevent the default copy action of the File Manager control. Then, you can make a Google API request with the help of event argument to copy the file from Google Drive. Additionally, to update the `fileSystemData` property with the current Google Drive data, you can call the `fetchData` method in the `gapi` success callback. This ensures that the File Manager control remains synchronized with the Google Drive data during the copy operation.
 
 Here is an example of how you can handle the copy operation using the `beforeMove` event:
 
@@ -313,7 +313,7 @@ Here is an example of how you can handle the copy operation using the `beforeMov
 
 ### Move action
 
-To enable the move operation in the File Manager control with Google services, you can use the [beforeMove](../api/file-manager/#beforeMove) event. The `isCopy` property in the event argument in `false` for move operation. By setting the `cancel` property to `true` in the `beforeMove` event, you can prevent the default move action of the File Manager control. Then, you can make a Google API request with the help of event argument to move the file from Google Drive. Additionally, to update the `fileSystemData` property with the current Google Drive data, you can call the `fetchData` method in the `gapi` success callback. This ensures that the File Manager control remains synchronized with the Google Drive data during the move operation.
+To enable the move operation in the File Manager control with Google services, you can use the [beforeMove](../api/file-manager/#beforeMove) event. The `isCopy` property in the event argument in `false` for move operation. By setting the [cancel](../api/file-manager/moveEventArgs/#cancel) property to `true` in the `beforeMove` event, you can prevent the default move action of the File Manager control. Then, you can make a Google API request with the help of event argument to move the file from Google Drive. Additionally, to update the `fileSystemData` property with the current Google Drive data, you can call the `fetchData` method in the `gapi` success callback. This ensures that the File Manager control remains synchronized with the Google Drive data during the move operation.
 
 Here is an example of how you can handle the move operation using the `beforeMove` event:
 
@@ -352,7 +352,7 @@ Here is an example of how you can handle the move operation using the `beforeMov
 
 ### Folder create action
 
-To enable the folder create operation in the File Manager control with Google services, you can use the [beforeFolderCreate](../api/file-manager/#beforeFolderCreate) event. By setting the `cancel` property to `true` in the `beforeFolderCreate` event, you can prevent the default folder create action of the File Manager control. Then, you can make a Google API request with the help of event argument to create folder to Google Drive. Additionally, to update the `fileSystemData` property with the current Google Drive data, you can call the `fetchData` method in the `gapi` success callback. This ensures that the File Manager control remains synchronized with the Google Drive data during the folder creation operation.
+To enable the folder create operation in the File Manager control with Google services, you can use the [beforeFolderCreate](../api/file-manager/#beforeFolderCreate) event. By setting the [cancel](../api/file-manager/foldercreateeventargs/#cancel) property to `true` in the `beforeFolderCreate` event, you can prevent the default folder create action of the File Manager control. Then, you can make a Google API request with the help of event argument to create folder to Google Drive. Additionally, to update the `fileSystemData` property with the current Google Drive data, you can call the `fetchData` method in the `gapi` success callback. This ensures that the File Manager control remains synchronized with the Google Drive data during the folder creation operation.
 
 Here is an example of how you can handle the folder creation operation using the `beforeFolderCreate` event:
 
@@ -382,7 +382,7 @@ Here is an example of how you can handle the folder creation operation using the
 
 ### Rename action
 
-To enable the rename operation in the File Manager control with Google services, you can use the [beforeRename](../api/file-manager/#beforeRename) event. By setting the `cancel` property to `true` in the `beforeRename` event, you can prevent the default rename action of the File Manager control. Then, you can make a Google API request with the help of event argument to rename the file from Google Drive. Additionally, to update the `fileSystemData` property with the current Google Drive data, you can call the `fetchData` method in the `gapi` success callback. This ensures that the File Manager control remains synchronized with the Google Drive data during the rename operation.
+To enable the rename operation in the File Manager control with Google services, you can use the [beforeRename](../api/file-manager/#beforeRename) event. By setting the [cancel](../api/file-manager/renameEventArgs/#cancel) property to `true` in the `beforeRename` event, you can prevent the default rename action of the File Manager control. Then, you can make a Google API request with the help of event argument to rename the file from Google Drive. Additionally, to update the `fileSystemData` property with the current Google Drive data, you can call the `fetchData` method in the `gapi` success callback. This ensures that the File Manager control remains synchronized with the Google Drive data during the rename operation.
 
 Here is an example of how you can handle the rename operation using the `beforeRename` event:
 
@@ -462,7 +462,7 @@ Here is an example of how you can handle the upload operation using the `uploadL
 
 ### Download action
 
-To enable the Download operatipon in the File Manager control with Google services, you can use the [beforeDownload](../api/file-manager/#beforeDownload) event. This event provides access to details of the file selected in the File Manager. By setting the `cancel` property to `true` in the `beforeDownload` event, you can prevent the default delete action of the File Manager control. Then, you can make a Google API request with the help of event argument to Download the raw file from Google Drive.
+To enable the Download operatipon in the File Manager control with Google services, you can use the [beforeDownload](../api/file-manager/#beforeDownload) event. This event provides access to details of the file selected in the File Manager. By setting the [cancel](../api/file-manager/beforeDownloadEventArgs/#cancel) property to `true` in the `beforeDownload` event, you can prevent the default delete action of the File Manager control. Then, you can make a Google API request with the help of event argument to Download the raw file from Google Drive.
 
 ```javascript
   beforeDownload: function beforeDownload(args) {

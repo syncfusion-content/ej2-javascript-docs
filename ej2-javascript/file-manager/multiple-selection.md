@@ -52,8 +52,6 @@ The File Manager control allows you to select multiple files by enabling the [al
 
 The File Manager control supports selecting files and folders in specific ranges through mouse drag, similar to File Explorer. This is especially useful in scenarios where users need to select a large group of files quickly without manually clicking each one. 
 
-### Enabling Range Selection
-
 {% if page.publishingplatform == "typescript" %}
 
 To enable range selection, you need to set the [enableRangeSelection](../api/file-manager/#enablerangeselection) property to `true` and ensure that multi-selection is allowed using the [allowMultiSelection](../api/file-manager/#allowmultiselection) property.

@@ -866,7 +866,7 @@ The following table represents the request parameters of *GetImage* operations.
 
 Return the image as a file stream in response.
 
-The request from the File Manager can be customized using the `beforeSend` event. Additional information can be passed to the File Manager in file operation response and can be used in customization.
+The request from the File Manager can be customized using the [`beforeSend`](../api/file-manager/#beforesend) event. Additional information can be passed to the File Manager in file operation response and can be used in customization.
 
 ## File request and response contents
 
@@ -931,145 +931,17 @@ The toolbar can be divided into two sections as right and left. Whenever the too
 
 The following table provides the toolbar buttons that appear based on the selection.
 
-<!-- markdownlint-disable MD033 -->
-<table>
-<tr>
-<td> <b>Selected Items Count</b> </td>
-<td> <b>Left section </b></td>
-<td> <b>Right section </b></td>
-</tr>
-
-<tr>
-<td>
-
-`0` (none of the item )
-</td>
-<td>
-
-* SortBy
-* Refresh
-* NewFolder
-* Upload
-
-</td>
-<td>
-
-* View
-* Details
-
-</td>
-</tr>
-
-<tr>
-<td>
-
-`1` (single item selected)
-</td>
-<td>
-
-* Delete
-* Download
-* Rename
-
-</td>
-<td>
-
-* Selected items count
-* View
-* Details
-
-</td>
-</tr>
-
-<tr>
-<td>
-
-`>1` (multiple selection)
-</td>
-<td>
-
-* Delete
-* Download
-
-</td>
-<td>
-
-* Selected items count
-* View
-* Details
-
-</td>
-</tr>
-
-</table>
-
+| Selected Items Count | Left section | Right section |
+|----------------------|--------------|---------------|
+| `0` (none of the item) | • SortBy<br>• Refresh<br>• NewFolder<br>• Upload | • View<br>• Details |
+| `1` (single item selected) | • Delete<br>• Download<br>• Rename | • Selected items count<br>• View<br>• Details |
+| `>1` (multiple selection) | • Delete<br>• Download | • Selected items count<br>• View<br>• Details |
 ### Context menu
 
 The following table provides the default context menu item and the corresponding target areas.
 
-<!-- markdownlint-disable MD033 -->
-<table>
-<tr>
-<td> <b>Menu Name</b> </td>
-<td> <b>Menu Items </b></td>
-<td> <b>Target </b></td>
-</tr>
-
-<tr>
-<td>Layout</td>
-<td>
-
-* SortBy
-* View
-* Refresh
-* NewFolder
-* Upload
-* Details
-* Select all
-
-</td>
-<td>
-
-* Empty space in the view section (details view and large icon view area).
-* Empty folder content.
-
-</td>
-</tr>
-
-<tr>
-<td>Folders</td>
-<td>
-
-* Open
-* Delete
-* Rename
-* Downloads
-* Details
-
-</td>
-<td>
-
-* Folders in treeview, details view, and large icon view.
-
-</td>
-</tr>
-
-<tr>
-<td>Files</td>
-<td>
-
-* Open
-* Delete
-* Rename
-* Downloads
-* Details
-
-</td>
-<td>
-
-* Files in details view and large icon view.
-
-</td>
-</tr>
-
-</table>
+| Menu Name | Menu Items | Target |
+|-----------|------------|--------|
+| Layout | • SortBy<br>• View<br>• Refresh<br>• NewFolder<br>• Upload<br>• Details<br>• Select all | • Empty space in the view section (details view and large icon view area).<br>• Empty folder content. |
+| Folders | • Open<br>• Delete<br>• Rename<br>• Downloads<br>• Details | • Folders in treeview, details view, and large icon view. |
+| Files | • Open<br>• Delete<br>• Rename<br>• Downloads<br>• Details | • Files in details view and large icon view. |

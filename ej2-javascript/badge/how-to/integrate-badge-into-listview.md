@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Integrate ##Platform_Name## Badge control into ListView control 
 
-The badges can be integrated with the `listview` control to indicate new notification with color based on priority.
+The badges can be integrated with the `ListView` control to indicate new notification with color based on priority.
 
 In the following sample, `default` badges are used and there is no need to customize the badge size. The control will automatically adjust the size based on the container element.
 

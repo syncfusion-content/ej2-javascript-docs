@@ -1,4 +1,3 @@
-
 var orderStatus = [
   { content: 'Shipped'},
   { content: 'Departed'},

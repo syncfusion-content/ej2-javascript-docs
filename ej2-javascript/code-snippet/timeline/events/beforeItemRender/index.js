@@ -1,4 +1,3 @@
-
 var productLifecycle = [
   { content: 'Planning'},
   { content: 'Developing'},

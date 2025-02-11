@@ -14,7 +14,8 @@ var filemanagerInstance = new ej.filemanager.FileManager({
     // File Manager's beforeFileLoad event
     fileLoad: onBeforeFileLoad,
     // File Manager's beforeFileOpen event
-    fileOpen: onBeforeFileOpen
+    fileOpen: onBeforeFileOpen,
+    height: '380px'
 });
 
 // render initialized File Manager

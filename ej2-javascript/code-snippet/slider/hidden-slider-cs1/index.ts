@@ -1,9 +1,9 @@
 import { Slider, SliderTooltipEventArgs, SliderTickEventArgs } from '@syncfusion/ej2-inputs';
 import { Button } from '@syncfusion/ej2-buttons';
 
-// Initialize the Button component.
+// Initialize the Button component
 let button: Button = new Button({ content: 'Button' });
-// Render initialized button.
+// Render initialized button
 button.appendTo('#element');
 
 // Initialize Range Slider Control
@@ -69,12 +69,17 @@ function renderingTicksHandler(args: SliderTickEventArgs): void {
     args.text = new Date(totalMilliSeconds).toLocaleTimeString('en-us', custom);
 }
 
-//Visible slider by clicking the button
-document.querySelector('#element')?.addEventListener('click', () => {
-    let slider = document.getElementById("case");
-    let ticks: any = document.getElementById("slider");
-    if (slider) {
-        slider.style.display = "block";
-    }
-    ticks.ej2_instances[0].refresh();
-});
+// Visible slider by clicking the button
+let elementButton = document.querySelector('#element');
+if (elementButton) {
+    elementButton.addEventListener('click', () => {
+        let slider = document.getElementById("case");
+        let ticks: any = document.getElementById("slider");
+        if (slider) {
+            slider.style.display = "block";
+        }
+        if (ticks && ticks.ej2_instances && ticks.ej2_instances[0]) {
+            ticks.ej2_instances[0].refresh();
+        }
+    });
+}

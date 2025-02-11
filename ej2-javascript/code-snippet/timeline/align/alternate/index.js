@@ -1,4 +1,3 @@
-
 var frameworks = [
   { content: 'ReactJs', oppositeContent: 'Owned by Facebook' },
   { content: 'Angular', oppositeContent: 'Owned by Google' },

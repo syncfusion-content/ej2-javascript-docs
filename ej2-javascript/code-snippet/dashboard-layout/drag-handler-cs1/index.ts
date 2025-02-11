@@ -1,5 +1,3 @@
-
-
 import { DashboardLayout } from '@syncfusion/ej2-layouts';
 import { Chart, ColumnSeries, Category, LineSeries, AccumulationChart, AccumulationTooltip, PieSeries } from '@syncfusion/ej2-charts';
 Chart.Inject(ColumnSeries, Category, LineSeries);
@@ -91,6 +89,3 @@ let piechart: AccumulationChart = new AccumulationChart({
     tooltip: { enable: true, format: '${point.x} : <b>${point.y}%</b>' },
 
 }, '#pie1');
-
-
-

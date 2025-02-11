@@ -15,7 +15,7 @@ The appearance of the Range Slider control can be customized through CSS. By ove
 
 ```
 .e-control.e-slider .e-slider-track .e-range {
-           background: linear-gradient(left, #e1451d 0, #fdff47 17%, #86f9fe 50%, #2900f8 65%, #6e00f8 74%, #e33df9 83%, #e14423 100%);
+    background: linear-gradient(left, #e1451d 0, #fdff47 17%, #86f9fe 50%, #2900f8 65%, #6e00f8 74%, #e33df9 83%, #e14423 100%);
 }
 ```
 

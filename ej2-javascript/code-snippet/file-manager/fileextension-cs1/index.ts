@@ -16,7 +16,8 @@ let filemanagerInstance: FileManager = new FileManager({
     // File Manager's fileLoad event
     fileLoad: onBeforeFileLoad,
     // File Manager's fileOpen event
-    fileOpen: onBeforeFileOpen
+    fileOpen: onBeforeFileOpen,
+    height: '380px'
 });
 
 // render initialized File Manager

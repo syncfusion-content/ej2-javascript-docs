@@ -148,7 +148,7 @@ Here an array of object values is passed to the MultiColumn ComboBox control.
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 
-import { MultiColumnComboBox } from '@syncfusion/ej2-multicolumn-combobox';
+import { MultiColumnComboBox, ColumnModel } from '@syncfusion/ej2-multicolumn-combobox';
 
 // define the array of object data for datasource
 let employeeData: {[key: string]: Object}[] = [

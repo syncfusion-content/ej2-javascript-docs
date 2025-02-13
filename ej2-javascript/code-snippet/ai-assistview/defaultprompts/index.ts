@@ -1,4 +1,4 @@
-import { AIAssistView } from '@syncfusion/ej2-interactive-chat';
+import { AIAssistView, PromptRequestEventArgs } from '@syncfusion/ej2-interactive-chat';
 import { enableRipple } from '@syncfusion/ej2-base';
 
 enableRipple(true);
@@ -26,7 +26,7 @@ let prompts = [
     }
 ]
 
-function onPromptRequest(args) {
+function onPromptRequest(args: PromptRequestEventArgs) {
     setTimeout(() => {
         let foundPrompt = prompts.find((promptObj) => promptObj.prompt === args.prompt);
         let defaultResponse = 'For real-time prompt processing, connect the AI AssistView control to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';

@@ -173,22 +173,31 @@ Here an array of object values is passed to the MultiColumn ComboBox control.
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2</title>
-            <!-- Essential JS 2 material theme -->
-            <link href="//cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="//cdn.syncfusion.com/ej2/ej2-inputs/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="//cdn.syncfusion.com/ej2/ej2-multicolumn-combobox/styles/material.css" rel="stylesheet" type="text/css"/>
-            <!-- Essential JS 2 all script -->
-            <!-- <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script> -->
+          <!-- Essential JS 2 MultiColumn ComboBox's dependency style -->
+          <link href="https://cdn.syncfusion.com/ej2/28.2.3/ej2-base/styles/material.css" rel="stylesheet" />
+          <link href="https://cdn.syncfusion.com/ej2/28.2.3/ej2-inputs/styles/material.css" rel="stylesheet" />
+          <link href="https://cdn.syncfusion.com/ej2/28.2.3/ej2-grids/styles/material.css" rel="stylesheet" />
+          <link href="https://cdn.syncfusion.com/ej2/28.2.3/ej2-popups/styles/material.css" rel="stylesheet" />
+
+          <!-- Essential JS 2 MultiColumn ComboBox's control style -->
+          <link href="https://cdn.syncfusion.com/ej2/28.1.33/ej2-multicolumn-combobox/styles/material.css" rel="stylesheet" />
 
             <!-- Essential JS 2 MultiColumn ComboBox's dependent scripts -->
-            <script src="//cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
-            <script src="//cdn.syncfusion.com/ej2/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
-            <script src="//cdn.syncfusion.com/ej2/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
-            <script src="//cdn.syncfusion.com/ej2/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
-            <script src="//cdn.syncfusion.com/ej2/ej2-lists/dist/global/ej2-lists.min.js" type="text/javascript"></script>
-            <script src="//cdn.syncfusion.com/ej2/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
-            <script src="//cdn.syncfusion.com/ej2/ej2-grids/dist/global/ej2-grids.min.js" type="text/javascript"></script>
-            <script src="//cdn.syncfusion.com/ej2/ej2-multicolumn-combobox/dist/global/ej2-multicolumn-combobox.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/28.2.3/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/28.2.3/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/28.2.3/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/28.2.3/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/28.2.3/ej2-lists/dist/global/ej2-lists.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/28.2.3/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/28.2.3/ej2-calendars/dist/global/ej2-calendars.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/28.2.3/ej2-grids/dist/global/ej2-grids.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/28.2.3/ej2-excel-export/dist/global/ej2-excel-export.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/28.2.3/ej2-pdf-export/dist/global/ej2-pdf-export.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/28.2.3/ej2-compression/dist/global/ej2-compression.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/28.2.3/ej2-file-utils/dist/global/ej2-file-utils.min.js" type="text/javascript"></script>
+
+          <!-- Essential JS 2 MultiColumn ComboBox's script -->
+          <script src="https://cdn.syncfusion.com/ej2/21.2.3/ej2-multicolumn-combobox/dist/global/ej2-multicolumn-combobox.min.js" type="text/javascript"></script>
        </head>
        <body>
            <!-- Add the HTML <input> element  -->
@@ -214,7 +223,7 @@ Here an array of object values is passed to the MultiColumn ComboBox control.
             // initialize MultiColumn ComboBox component
             var multiComboBoxObject = new ej.multicolumncombobox.MultiColumnComboBox({
                 //set the data to dataSource property
-                dataSource: empData,
+                dataSource: employeeData,
                 //set the column data to the columns property
                 columns: columnsData,
                 //set the fields of the multicolumn combobox

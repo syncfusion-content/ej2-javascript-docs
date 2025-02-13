@@ -207,13 +207,13 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
                     {
                         id : "cutcopy-collection",
                         items: [{
-                            type: RibbonItemType.Button,
+                            type: "Button",
                             buttonSettings: {
                                 content: "Cut",
                                 iconCss: "e-icons e-cut"
                             }
                         }, {
-                            type: RibbonItemType.Button,
+                            type: "Button",
                             buttonSettings: {
                                 content: "Copy",
                                 iconCss: "e-icons e-copy"

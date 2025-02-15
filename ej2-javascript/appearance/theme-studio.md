@@ -17,7 +17,7 @@ Theme Studio for Essential JS 2 can be used to customize a new theme from an exi
 
 The Essential JS 2 themes are developed under the SCSS environment. Each theme has a unique common variable list. When you change the common variable color code value, it will reflect in all the Syncfusion JavaScript controls. All Syncfusion JavaScript control styles are derived from these [theme-based common variables](theme#common-variables).This common variable list is handled inside the theme studio application for customizing theme-based colors.
 
-**Step 1:** Navigate to the theme studio application at [https://ej2.syncfusion.com/themestudio/](https://ej2.syncfusion.com/themestudio/).
+**Step 1:** Navigate to the theme studio application at [Themestudio](https://ej2.syncfusion.com/themestudio/?theme=bootstrap5).
 
 **Step 2:** The theme studio application page can be divided into two sections: the controls preview section on the left, and the theme customization section on the right.
 

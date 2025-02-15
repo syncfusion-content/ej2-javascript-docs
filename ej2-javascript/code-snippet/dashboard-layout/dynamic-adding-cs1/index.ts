@@ -69,24 +69,30 @@ let column: NumericTextBox = new NumericTextBox({
 
 column.appendTo('#column');
 
-document.getElementById('add')?.addEventListener('click', () => {
-    let panel: any = {
-        id: "Panel" + count.toString(),
-        sizeX: sizeX.value,
-        sizeY: sizeY.value,
-        row: row.value,
-        col: column.value,
-        content: "<div class='content'>" + count + "</div>"
-    }
-    dashboard.addPanel(panel);
-    count = count + 1;
-    (<string[]>idValue.dataSource).push(panel.id);
-    idValue.refresh();
-});
+let addElement = document.getElementById('add');
+if(addElement) {
+    addElement.addEventListener('click', () => {
+        let panel: any = {
+            id: "Panel" + count.toString(),
+            sizeX: sizeX.value,
+            sizeY: sizeY.value,
+            row: row.value,
+            col: column.value,
+            content: "<div class='content'>" + count + "</div>"
+        }
+        dashboard.addPanel(panel);
+        count = count + 1;
+        (<string[]>idValue.dataSource).push(panel.id);
+        idValue.refresh();
+    });
+}
 
-document.getElementById('remove')?.addEventListener('click', () => {
-    dashboard.removePanel(idValue.value.toString());
-    (<string[]>idValue.dataSource).splice((<string[]>idValue.dataSource).indexOf(idValue.value.toString()), 1);
-    idValue.refresh();
-    idValue.value = null;
-})
+let removeElement = document.getElementById('remove');
+if(removeElement) {
+    removeElement.addEventListener('click', () => {
+        dashboard.removePanel(idValue.value.toString());
+        (<string[]>idValue.dataSource).splice((<string[]>idValue.dataSource).indexOf(idValue.value.toString()), 1);
+        idValue.refresh();
+        idValue.value = null;
+    });
+}

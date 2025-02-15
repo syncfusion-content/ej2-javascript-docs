@@ -32,13 +32,20 @@ let restoreBtn: Button = new Button({
 });
 restoreBtn.appendTo("#restore");
 
-document.getElementById('save')?.addEventListener('click', () => {
-    restorePanelModel();
-});
+let saveElement = document.getElementById('save'); 
+if (saveElement) {
+    saveElement.addEventListener('click', () => {
+        restorePanelModel();
+    });
+}
 
-document.getElementById('restore')?.addEventListener('click', () => {
-    dashboard.panels = restoreModel;
-});
+let restoreElement = document.getElementById('restore');
+if (restoreElement) {
+    restoreElement.addEventListener('click', () => {
+        dashboard.panels = restoreModel;
+    });
+}
+
 function restorePanelModel() {
     restoreModel = dashboard.serialize();
     restoreModel[0].content = '<div class="content">0</div>';

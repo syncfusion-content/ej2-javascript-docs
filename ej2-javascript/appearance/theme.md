@@ -64,7 +64,7 @@ Syncfusion JavaScript controls themes that can be used in the application by ref
 
 * [NPM Packages](#npm-packages) - Used to customize the existing themes and bundle stylesheet’s in an application.
 * [Content Delivery Network (CDN)](#cdn-reference) - Used to reference complete css via static web assets.
-* [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio/) - Used to customize and generate themes only for the selected (used) components.
+* [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio) - Used to customize and generate themes only for the selected (used) components.
 
 ## NPM packages
 

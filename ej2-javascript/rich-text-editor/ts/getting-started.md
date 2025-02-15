@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Rich Text Editor control
 
-This section explains the steps to create a simple Rich Text Editor and demonstrates the basic usage of the Rich Text Editor control using the Essential JS 2  [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential JS 2 package.
+This section explains the steps to create a simple Rich Text Editor and demonstrates the basic usage of the Rich Text Editor control using the Essential JS 2  [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository. This seed repository is pre-configured with the Essential JS 2 package.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
@@ -233,7 +233,7 @@ Output will be displayed as follows
 ## See Also
 
 * [How to change the editor type](./editor-modes)
-* [How to render the iframe](./iframe/)
+* [How to render the iframe](./iframe)
 * [How to render the toolbar in inline mode](./inline-mode)
 * [How to insert Emoticons](https://ej2.syncfusion.com/angular/demos/#/material/rich-text-editor/insert-emoticons)
 * [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/angular/demos/#/material/rich-text-editor/blog-posting)

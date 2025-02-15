@@ -25,15 +25,16 @@ let toggleBtn: Button = new Button({
     isToggle: true
 });
 toggleBtn.appendTo("#toggle");
-
-document.getElementById('toggle')?.addEventListener('click', () => {
-    let panels = [];
-    if (toggleBtn.content == "Disable Floating and Reset") {
-        toggleBtn.content = 'Enable Floating';
-        dashboard.allowFloating = false;
-        dashboard.panels = resetPanels;
-    } else {
-        toggleBtn.content = 'Disable Floating and Reset';
-        dashboard.allowFloating = true;
-    }
-})
+let toggleElement = document.getElementById('toggle');
+if (toggleElement) {
+    toggleElement.addEventListener('click', () => {
+        if (toggleBtn.content == "Disable Floating and Reset") {
+            toggleBtn.content = 'Enable Floating';
+            dashboard.allowFloating = false;
+            dashboard.panels = resetPanels;
+        } else {
+            toggleBtn.content = 'Disable Floating and Reset';
+            dashboard.allowFloating = true;
+        }
+    });
+}

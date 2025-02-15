@@ -25,7 +25,6 @@ var toggleBtn = new ej.buttons.Button({
 toggleBtn.appendTo("#toggle");
 
 document.getElementById('toggle').onclick = function () {
-    var panels = [];
     if (toggleBtn.content == "Disable Floating and Reset") {
         toggleBtn.content = 'Enable Floating';
         dashboard.allowFloating = false;

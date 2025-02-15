@@ -561,5 +561,5 @@ The following example demonstrates how the `actionBegin` and `actionComplete` ev
 
 ## See Also
 
-* [Exporting grouped records](../excel-export/excel-export-options/#exporting-grouped-records)
+* [Exporting grouped records](../excel-export/excel-export-options#exporting-grouped-records)
 * [How to enable lazy load grouping in Grid](../../grid/grouping/lazy-load-grouping)

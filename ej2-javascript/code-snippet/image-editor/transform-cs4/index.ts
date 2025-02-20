@@ -25,7 +25,7 @@ import { Browser } from '@syncfusion/ej2-base';
      //Button click
     let button: Button = new Button({cssClass: `e-primary`, content:'Click'}, '#btnClick');
     document.getElementById('btnClick').onclick = (): void => {
-        if (imageEditorObj.zoomLevel < 1) {
+        if (imageEditorObj.zoomLevel <= 1) {
             imageEditorObj.zoomLevel -= 0.1;
         }
         else {

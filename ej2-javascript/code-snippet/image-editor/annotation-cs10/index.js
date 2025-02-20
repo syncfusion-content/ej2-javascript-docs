@@ -1,16 +1,9 @@
 ej.base.enableRipple(true);
 
-var id;
 var imageEditorObj = new ej.imageeditor.ImageEditor({
   width: '550px',
   height: '330px',
-  toolbar: ['Annotate', "Line", "Rectangle", "Ellipse", "Circle", "Arrow", "Path"],
-  showQuickAccessToolbar: false,
-  shapeChanging: (args) => {
-    if (args.action === 'select') {
-      id = args.currentShapeSettings.id;
-    }
-  },
+  toolbar: [],
   created: function () {
     if (ej.base.Browser.isDevice) {
       imageEditorObj.open('bee-eater.png');
@@ -21,6 +14,11 @@ var imageEditorObj = new ej.imageeditor.ImageEditor({
 });
 imageEditorObj.appendTo('#imageeditor');
 
+document.getElementById('drawShape').onclick = function () {
+  let dimension = imageEditorObj.getImageDimension();
+  imageEditorObj.drawEllipse(dimension.x + 100, dimension.y + 100);
+};
+
 document.getElementById('deleteShape').onclick = function () {
-  imageEditorObj.deleteShape(id)
+  imageEditorObj.deleteShape('shape_1');
 };

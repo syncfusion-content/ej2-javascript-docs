@@ -16,7 +16,7 @@ let imageEditorObj: ImageEditor = new ImageEditor({
         }
     },
     fileOpened: () => {
-        var dimension = imageEditorObj.getImageDimension();
+        const dimension = imageEditorObj.getImageDimension();
         imageEditorObj.drawText(dimension.x + 100, dimension.y, 'Syncfusion', 'Arial', 40, false, false, '#80330075');
     }
 });

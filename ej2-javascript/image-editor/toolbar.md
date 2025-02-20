@@ -19,15 +19,25 @@ In the Image Editor, the [`toolbar`](https://ej2.syncfusion.com/javascript/docum
 
 Specifies the toolbar items to perform UI interactions. Refer to the built-in toolbar items for the default value.
 
-* Crop
-* Transform
-* Annotate
+* Open
+* Undo
+* Redo
 * ZoomIn
 * ZoomOut
-* Open
+* Crop
+* RotateLeft
+* RotateRight
+* HorizontalFlip
+* VerticalFlip
+* Straightening
+* Annotate
+* Finetune
+* Filter
+* Frame
+* Resize
+* Redact
 * Reset
 * Save
-* Pan
 
 ## Add a custom toolbar item
 
@@ -134,6 +144,33 @@ The [`toolbar`](https://ej2.syncfusion.com/javascript/documentation/api/image-ed
 
 Here is an example of disabling the custom toolbar item using [`toolbar`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#toolbar) property.
 
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/toolbar-template-cs7/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/toolbar-template-cs7/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/toolbar-template-cs7" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/toolbar-template-cs7/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/toolbar-template-cs7/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/toolbar-template-cs7" %}
+{% endif %}
+
 ## Enable or disable a contextual toolbar item
 
 The toolbarItems property in the toolbarEventArgs is used to enable or disable contextual toolbar items in the Image Editor. To enable or disable the default toolbar items, you can accomplish this by setting the Disabled property to true in the ImageEditorToolbarItemModel within the ToolbarItems property. This allows you to selectively enable or disable specific default toolbar items based on your requirements, providing a customized toolbar experience in the Image Editor.
@@ -212,7 +249,7 @@ Here is an example of using [`toolbarTemplate`](https://ej2.syncfusion.com/javas
 
 The [`toolbarUpdating`](https://ej2.syncfusion.com/documentation/api/image-editor/#toolbarupdating) event is triggered when inserting or selecting annotations, which opens the contextual toolbar in the Image Editor. Within this event, the [`toolbarItems`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/toolbarEventArgs/#toolbaritems) property in the [`ToolbarEventArgs`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/toolbarEventArgs/) is utilized to add or remove contextual toolbar items.
 
-In the following example, the contextual toolbar for rectangle will be rendered with only stroke color by excluding fill color and stroke width using toolbarUpdating event.
+In the following example, the contextual toolbar for freehand drawing will be rendered with only the stroke color, while the stroke width, remove, and separator options are excluded using the toolbarUpdating event.
 
 {% if page.publishingplatform == "typescript" %}
 

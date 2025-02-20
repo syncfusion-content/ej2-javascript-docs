@@ -49,6 +49,8 @@ The [`drawText`](https://ej2.syncfusion.com/javascript/documentation/api/image-e
 
 * strokeWidth: Specifies the outline stroke width of the text annotation.
 
+* transformCollection: Specifies the transform collection of the text annotation.
+
 By utilizing the [`drawText`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawtext) method with these parameters, you can precisely position and customize text annotations within the image. This provides the flexibility to add labels, captions, or other text elements with specific font styles, sizes, and colors, enhancing the visual presentation and clarity of the image. 
 
 We have used the [`getImageDimension`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getimagedimension) method to obtain the current dimensions of an image, including its `clientX`, `clientY`, width, and height. Based on the `clientX` and `clientY` values, the user can precisely define the position for drawing annotations such as rectangles, ellipses, and more. 
@@ -501,6 +503,37 @@ Here is an example of deleting rectangle, ellipse, arrow, path, and line in a bu
 {% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs10" %}
 {% endif %}
 
+## Customize default stroke color for shapes 
+
+We provide default settings for stroke color, stroke width, fill color, and other customizations. If users wish to modify only the default options while preserving their previously selected customizations, they can do so by utilizing the [`shapeChanging`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapechanging) event. Within this event, users can update the values in the `currentShapeSettings` object to apply their own preferences instead of the defaults. For example, the stroke width and stroke color of freehand drawing can be customized through the `shapeChanging` event, allowing users to set specific values conditionally. This approach ensures that only the desired defaults are changed while maintaining other settings.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/annotation-cs12/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs12/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs12" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/annotation-cs12/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs12/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs12" %}
+{% endif %}
+
 ## Image annotation
 
 The image annotation feature in the Image Editor provides the capability to add and customize images directly onto the image. With this feature, you can easily insert image or icons at specific locations within the image and customize various aspects of the image to meet your requirements. You have control over the customization options including rotate, flip, transparency for the image annotation.
@@ -558,35 +591,4 @@ In the following example, you can use the [`drawImage`](https://ej2.syncfusion.c
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs11" %}
-{% endif %}
-
-### Customize default stroke color for shapes 
-
-We provide default settings for stroke color, stroke width, fill color, and other customizations. If users wish to modify only the default options while preserving their previously selected customizations, they can do so by utilizing the [`shapeChanging`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapechanging) event. Within this event, users can update the values in the `currentShapeSettings` object to apply their own preferences instead of the defaults. This approach allows conditional updates to the `currentShapeSettings`, ensuring that only the desired defaults are changed while maintaining the other settings. 
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/annotation-cs12/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs12/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs12" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/annotation-cs12/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/annotation-cs12/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs12" %}
 {% endif %}

@@ -16,6 +16,7 @@ The Image Editor provides a range of transformation options for manipulating bot
 ## Rotate an image
 
 The Image Editor allows to rotate the image and its annotations by a specific number of degrees clockwise or anti-clockwise using [`rotate`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#rotate) method. This method takes a single parameter: the angle of rotation in degrees. A positive value will rotate the image clockwise, while a negative value will rotate it anti-clockwise.
+Note: It is recommended to pass values in multiples of 90° (e.g., 90, 180, -90) for proper rotation alignment.
 
 Here is an example of rotating an image in a button click event.
 
@@ -190,17 +191,44 @@ In the following example, you can using the [`zoom`](https://ej2.syncfusion.com/
 {% previewsample "page.domainurl/code-snippet/image-editor/transform-cs4" %}
 {% endif %}
 
-## Maximum and Minimum zoom level
-
-The [`maxZoomFactor`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#maxZoomFactor) property is a useful feature in the Image Editor that allows you to define the maximum level of zoom permitted for an image. This property sets a limit on how much the image can be magnified, preventing excessive zooming that may result in a loss of image quality or visibility. 
-
-By default, the [`maxZoomFactor`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#maxZoomFactor) value is set to 10, meaning that the image can be zoomed in up to 10 times its original size. This ensures that the zooming functionality remains within reasonable bounds and maintains the integrity of the image. 
+## Minimum and Maximum zoom level
 
 The [`minZoomFactor`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#minZoomFactor) property allows you to specify the minimum level of zoom that is allowed for an image. By setting this property, you can prevent the image from being zoomed out beyond a certain point, ensuring that it remains visible and usable even at the smallest zoom level. 
 
 By default, the [`minZoomFactor`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#minZoomFactor) value is set to 0.1, meaning that the image can be zoomed out up to 10 times its original size. 
 
+The [`maxZoomFactor`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#maxZoomFactor) property is a useful feature in the Image Editor that allows you to define the maximum level of zoom permitted for an image. This property sets a limit on how much the image can be magnified, preventing excessive zooming that may result in a loss of image quality or visibility. 
+
+By default, the [`maxZoomFactor`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#maxZoomFactor) value is set to 10, meaning that the image can be zoomed in up to 10 times its original size. This ensures that the zooming functionality remains within reasonable bounds and maintains the integrity of the image. 
+
 Here is an example of specifying [`minZoomFactor`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#minZoomFactor) and [`maxZoomFactor`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#maxZoomFactor) property in [`zoomSettings`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#zoomSettings) options in an image editor. 
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/transform-cs6/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/transform-cs6/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/transform-cs6" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/transform-cs6/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/transform-cs6/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/transform-cs6" %}
+{% endif %}
 
 ### Panning event 
 

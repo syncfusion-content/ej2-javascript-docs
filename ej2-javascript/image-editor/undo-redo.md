@@ -26,7 +26,7 @@ In the following example, the [`undo`](https://ej2.syncfusion.com/javascript/doc
 
 {% if page.publishingplatform == "typescript" %}
 
-{% tabs %}
+ {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/undo-redo-cs1/index.ts %}
 {% endhighlight %}

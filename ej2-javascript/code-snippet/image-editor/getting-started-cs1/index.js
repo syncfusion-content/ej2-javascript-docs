@@ -3,8 +3,8 @@ ej.base.enableRipple(true);
 /**
      * localization querybuilder sample
      */
- ej.base.L10n.load({
-	'de-DE': {
+ej.base.L10n.load({
+    'de-DE': {
         'image-editor': {
             'Browse': 'Durchsuche',
             'Crop': 'Ernte',
@@ -46,9 +46,9 @@ ej.base.enableRipple(true);
 });
 
 var imageEditorObj = new ej.imageeditor.ImageEditor({
-	locale: 'de-DE',
+    locale: 'de-DE',
     width: '550px',
     height: '330px',
-  });
-  imageEditorObj.appendTo('#imageeditor');
+});
+imageEditorObj.appendTo('#imageeditor');
 

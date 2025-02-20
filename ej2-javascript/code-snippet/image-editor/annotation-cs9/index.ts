@@ -34,7 +34,7 @@ imageEditorObj.appendTo('#imageeditor');
 };
 (document.getElementById('arrow') as HTMLElement).onclick = function () {
     let dimension: any = imageEditorObj.getImageDimension();
-    imageEditorObj.drawArrow(dimension.x + 100, dimension.y + 30, dimension.x + 100, dimension.y + 10, 10);
+    imageEditorObj.drawArrow(dimension.x + 150, dimension.y + 150, dimension.x + 300, dimension.y + 150, 10);
 };
 (document.getElementById('path') as HTMLElement).onclick = function () {
     let dimension: any = imageEditorObj.getImageDimension();

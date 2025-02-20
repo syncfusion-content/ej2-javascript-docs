@@ -1,20 +1,28 @@
 ej.base.enableRipple(true);
 
 var imageEditorObj = new ej.imageeditor.ImageEditor({
-    width: '550px',
-    height: '330px',
-    toolbar: [],
-	created: function () {
-		if (ej.base.Browser.isDevice) {
-			imageEditorObj.open('bee-eater.png');
-        } else {
-            imageEditorObj.open('bee-eater.png');
-        }
-	}
-  });
-  imageEditorObj.appendTo('#imageeditor');
+  width: '550px',
+  height: '330px',
+  toolbar: [],
+  created: function () {
+    if (ej.base.Browser.isDevice) {
+      imageEditorObj.open('bee-eater.png');
+    } else {
+      imageEditorObj.open('bee-eater.png');
+    }
+  }
+});
+imageEditorObj.appendTo('#imageeditor');
 
-document.getElementById('btnClick').onclick = function() {
-	imageEditorObj.drawText(710, 468, 'Syncfusion', 'Arial', 100, true, true, '#000');
+document.getElementById('hueClick').onclick = function () {
+  imageEditorObj.finetuneImage(ImageFinetuneOption.Hue, 20);
 }
-
+document.getElementById('exposureClick').onclick = function () {
+  imageEditorObj.finetuneImage(ImageFinetuneOption.Exposure, 20);
+}
+document.getElementById('blurClick').onclick = function () {
+  imageEditorObj.finetuneImage(ImageFinetuneOption.Blur, 20);
+}
+document.getElementById('opacityClick').onclick = function () {
+  imageEditorObj.finetuneImage(ImageFinetuneOption.Opacity, 70);
+}

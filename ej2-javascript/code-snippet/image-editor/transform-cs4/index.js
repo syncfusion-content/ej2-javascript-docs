@@ -17,7 +17,7 @@ var imageEditorObj = new ej.imageeditor.ImageEditor({
   imageEditorObj.appendTo('#imageeditor');
 
 document.getElementById('btnClick').onclick = function() {
-	if (imageEditorObj.zoomLevel < 1) {
+	if (imageEditorObj.zoomLevel <= 1) {
         imageEditorObj.zoomLevel -= 0.1;
     }
     else {

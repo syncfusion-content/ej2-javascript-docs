@@ -4,7 +4,7 @@ import { ImageEditor } from '@syncfusion/ej2-image-editor';
 import { Browser } from '@syncfusion/ej2-base';
 import { TreeView, NodeClickEventArgs } from '@syncfusion/ej2-navigations';
 
-var data: { [key: string]: Object }[] = [
+const data: { [key: string]: Object }[] = [
     {
         "nodeId": "01", "nodeText": "Videos", "icon": "folder",
         "nodeChild": [

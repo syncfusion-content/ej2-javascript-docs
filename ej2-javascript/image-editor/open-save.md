@@ -17,9 +17,9 @@ The getImageData method is used to get the image as ImageData and this can be lo
 
 ## Supported image formats
 
-The Image Editor control supports four common image formats: PNG, JPEG, SVG and WEBP. These formats allow you to work with a wide range of image files within the Image Editor.
+The Image Editor control supports four common image formats: PNG, JPEG, SVG, and WEBP. These formats allow you to work with a wide range of image files within the Image Editor.
 
-When it comes to saving the edited image, the default file type is set as PNG. This means that when you save the edited image without specifying a different file type, it will be saved as a PNG file. However, it's important to note that the Image Editor typically provides options or methods to specify a different file type if desired. This allows you to save the edited image in formats other than the default PNG, such as JPEG, SVG or WEBP, based on your specific requirements or preferences. 
+When it comes to saving the edited image, the default file type is set as PNG. This means that when you save the edited image without specifying a different file type, it will be saved as a PNG file. However, it's important to note that the Image Editor typically provides options or methods to specify a different file type if desired. This allows you to save the edited image in formats other than the default PNG, such as JPEG, SVG, or WEBP, based on your specific requirements or preferences. 
 
 ## Open an image
 
@@ -93,7 +93,7 @@ Users can easily open images in the Image Editor using a Base64-encoded string. 
 
 User can easily open images in the Image Editor from Blob storage. This method allows you to load images directly from Blob storage, ensuring seamless integration and flexibility in your application. Simply retrieve the image Blob from storage and pass it to the open method, and the image will be loaded into the editor. 
 
-`Note:` You can obtain the Base64 representation of an image from the Image Editor using the [`getImageData`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getimagedata) method. This process will be explained in the upcoming section. 
+`Note:` You can obtain the Blob URL representation of an image from the Image Editor using the [`getImageData`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getimagedata) method. This process will be explained in the upcoming section. 
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -153,7 +153,7 @@ User can easily open images in the Image Editor using a file uploader. This meth
 {% previewsample "page.domainurl/code-snippet/image-editor/open-save-cs4" %}
 {% endif %} 
 
-### Open and image from File Manager 
+### Open an image from File Manager 
 
 User can easily open images in the Image Editor using the File Manager. This method allows you to browse and select an image file directly from the File Manager and load it into the editor. Once the image is selected, pass the file to the open method, and the image will be seamlessly loaded into the editor. 
 
@@ -249,7 +249,7 @@ You can utilize the ‘[`fileOpened`](https://ej2.syncfusion.com/javascript/docu
  
 ## Save as image
 
-The [`export`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#export) method is used to save the modified image as an image, and it accepts a file name and file type as parameters. The file type parameter supports PNG, JPEG, SVG, WEBP and the default file type is PNG. It also saves an image by clicking the save button from the toolbar and the supported file types are PNG, JPEG, SVG and WEBP. Users are allowed to save an image with a specified file name, file type, and image quality. This enhancement provides more control over the output, ensuring that users can save their work exactly as they need it.
+The [`export`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#export) method is used to save the modified image as an image, and it accepts a file name and file type as parameters. The file type parameter supports PNG, JPEG, SVG, WEBP and the default file type is PNG. It also saves an image by clicking the save button from the toolbar and the supported file types are PNG, JPEG, SVG, and WEBP. Users are allowed to save an image with a specified file name, file type, and image quality. This enhancement provides more control over the output, ensuring that users can save their work exactly as they need it.
 
 In the following example, the [`export`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#export) method is used in the button click event.
 
@@ -314,6 +314,33 @@ To save an image as a base64 format, use the [`getImageData`](https://ej2.syncfu
 ### Save the image as byte[]
 
 To save an image as a byte array, use the [`getImageData`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getimagedata) method of the editor to retrieve the image data and convert it into a byte array. You can then invoke the open method on the Syncfusion Image Editor instance to load this byte array into the editor. The resulting byte array can be stored in a database for data management and maintenance. 
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/open-save-cs13/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/open-save-cs13/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/open-save-cs13" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/open-save-cs13/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/open-save-cs13/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/open-save-cs13" %}
+{% endif %}
 
 ### Save the image as blob
 
@@ -395,7 +422,7 @@ The [`fileOpened`](https://ej2.syncfusion.com/javascript/documentation/api/image
 
 [`fileName`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#fileName): This argument is a string that contains the file name of the opened image. It represents the name of the file that was selected or provided when loading the image into the Image Editor.
 
-[`fileType`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#fileType): This argument is a string that contains the type of the opened image. It specifies the format or file type of the image that was loaded, such as PNG, JPEG, or SVG.
+[`fileType`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#fileType): This argument is a string that contains the type of the opened image. It specifies the format or file type of the image that was loaded, such as PNG, JPEG, SVG, or WEBP.
 
 By accessing these arguments within the [`fileOpened`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#fileOpened) event handler, you can retrieve information about the loaded image, such as its file name and file type. This can be useful for performing additional actions or implementing logic based on the specific image that was opened in the Image Editor control. 
 
@@ -405,7 +432,7 @@ The [`saving`](https://helpej2.syncfusion.com/javascript/documentation/api/image
 
 [`fileName`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#fileName): This argument is a string that holds the file name of the saved image. It represents the name of the file that will be used when saving the image to the local disk.
 
-[`fileType`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#fileType): This argument is a string indicating the type or format of the saved image. It specifies the desired file type in which the image will be saved, such as PNG, JPEG, or SVG.
+[`fileType`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#fileType): This argument is a string indicating the type or format of the saved image. It specifies the desired file type in which the image will be saved, such as PNG, JPEG, SVG, or WEBP.
 
 [`cancel`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#cancel): This argument is a boolean value that can be set to true in order to cancel the saving action. By default, it is set to false, allowing the saving process to proceed. However, if you want to prevent the saving action from occurring, you can set Cancel to true within the event handler.
 

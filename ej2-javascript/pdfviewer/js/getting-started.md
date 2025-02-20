@@ -29,7 +29,6 @@ The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaS
 >
 > Styles: [`https://cdn.syncfusion.com/ej2/26.2.11/ej2-base/styles/material.css`](https://cdn.syncfusion.com/ej2/26.2.11/ej2-base/styles/material.css)
 
-N> While referring the scripts from the downloaded resources in your application, make sure to place the 'ej2-pdfviewer-lib' assets in the same directory as the 'ej2.min.js' script.
 
 **Step 3:** Create a HTML page (index.html) in `my-app` location and add the CDN link references. Now, add the `Div` element and initiate the `Essential JS 2 PDF Viewer` component in the index.html by using following code.
 
@@ -40,5 +39,33 @@ N> While referring the scripts from the downloaded resources in your application
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/pdfviewer/es5-getting-started-cs2" %}
+
+
+### Steps to Load PDF Viewer with Local Resources
+
+To use local resources with your PDF Viewer, follow these steps:
+
+**Step 1:** Ensure that your application includes the `ej2-pdfviewer-lib` folder. This folder must contain the `pdfium.js`, `pdfium.wasm` files, and the PDF file that you intend to display. These should reside in the same location as the `ej2.min.js` script and its related styles.
+
+**Step 2:** Assign local file paths to the `documentPath` and `resourceUrl` properties within the PDF Viewer setup. The `documentPath` should refer to your PDF file, while the `resourceUrl` should point to the directory containing the supporting resources.
+
+**Step 3:** Insert the necessary script and style references within the `<head>` section of your HTML file. Make sure these point to your local copies of the files instead of CDN links.
+
+By following these steps, you will configure your PDF Viewer to load the required resources locally. See the code snippet below for reference.
+
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+<script>
+
+var pdfviewer = new ej.pdfviewer.PdfViewer({
+    documentPath:window.location.origin +'/resources/pdfsuccinctly.pdf',
+    resourceUrl:window.location.origin +'/resources/ej2-pdfviewer-lib'
+});
+            
+</script>
+{% endhighlight %}
+{% endtabs %}
+
+View the sample in GitHub to [load PDF Viewer with local resources](https://github.com/SyncfusionExamples/javascript-pdf-viewer-examples/tree/master/How%20to/Refer%20resource%20url%20locally)
 
 **Step 4:** Now, run the `index.html` in web browser, it will render the `Essential JS 2 PDF Viewer` component.

@@ -5,7 +5,7 @@ import { Browser } from '@syncfusion/ej2-base';
 
 //Image Editor items definition
 
- let imageEditorObj: ImageEditor = new ImageEditor({
+let imageEditorObj: ImageEditor = new ImageEditor({
     width: '550px',
     height: '330px',
     toolbar: [],
@@ -14,17 +14,17 @@ import { Browser } from '@syncfusion/ej2-base';
             imageEditorObj.open('bee-eater.png');
         } else {
             imageEditorObj.open('bee-eater.png');
-            }
         }
-    });
-    imageEditorObj.appendTo('#imageeditor');
-
-     //Button click
-    document.getElementById('brightnessClick').onclick = (): void => {
-        imageEditorObj.finetuneImage(ImageFinetuneOption.Brightness,10);
     }
-    document.getElementById('contrastClick').onclick = (): void => {
-        imageEditorObj.finetuneImage(ImageFinetuneOption.Contrast,20);
-    }
+});
+imageEditorObj.appendTo('#imageeditor');
 
-
+(document.getElementById('brightnessClick') as HTMLElement).onclick = function () {
+    imageEditorObj.finetuneImage(ImageFinetuneOption.Brightness, 10);
+};
+(document.getElementById('contrastClick') as HTMLElement).onclick = function () {
+    imageEditorObj.finetuneImage(ImageFinetuneOption.Contrast, 30);
+};
+(document.getElementById('saturationClick') as HTMLElement).onclick = function () {
+    imageEditorObj.finetuneImage(ImageFinetuneOption.Saturation, 30);
+}

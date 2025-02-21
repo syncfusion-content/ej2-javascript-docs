@@ -17,13 +17,20 @@ let filemanagerInstance: FileManager = new FileManager({
 // render initialized File Manager
 filemanagerInstance.appendTo('#filemanager');
 
-// Click event for enable button
-document.getElementById("enable")?.addEventListener("click", function (args) {
-    // Enable new folder toolbar item
-    filemanagerInstance.enableToolbarItems(["newfolder"]);
-});
-// Click event for enable button
-document.getElementById("disable")?.addEventListener("click", function (args) {
-    // Enable new folder toolbar item
-    filemanagerInstance.disableToolbarItems(["newfolder"]);
-});
+let enableEle: HTMLElement = document.getElementById('enable');
+if(enableEle) {
+    // Click event for enable button
+    enableEle.addEventListener('click', function () {
+        // Enable new folder toolbar item
+        filemanagerInstance.enableToolbarItems(["newfolder"]);
+    });
+}
+
+let disableEle: HTMLElement = document.getElementById('disable');
+if(disableEle) {
+    // Click event for disable button
+    disableEle.addEventListener('click', function () {
+        // Enable new folder toolbar item
+        filemanagerInstance.disableToolbarItems(["newfolder"]);
+    });
+}

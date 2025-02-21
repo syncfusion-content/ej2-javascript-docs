@@ -2,7 +2,7 @@ import { getOrders } from './orderService.js';
 
 ej.grids.Grid.Inject(ej.grids.Page);
 
-const query= new Query().addParams('Syncfusion_Grid', 'true')
+const query= new ej.data.Query().addParams('Syncfusion_Grid', 'true')
 const state= { skip: 0, take: 12,query:query};
 
 let grid= new ej.grids.Grid({

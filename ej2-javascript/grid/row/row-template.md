@@ -118,6 +118,41 @@ Here is an example that demonstrates rendering Syncfusion controls within a row 
 {% previewsample "page.domainurl/code-snippet/grid/row-template-component-cs1" %}
 {% endif %}
 
+## Render Syncfusion Chart in row template
+
+The Syncfusion Grid component provides the flexibility to include custom controls, such as Chart, within the rows of the Grid. This feature enhances Grid interactivity by allowing you to display graphical representations of data instead of plain text.
+
+To render a Syncfusion Chart within a row template of the Grid, you can utilize the [rowTemplate](../../api/grid/#rowtemplate) property. This property accepts a custom HTML template that specifies the layout for each row, allowing for rich data visualization.
+
+Here is an example that demonstrates rendering Syncfusion Chart within a row template:
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/row-template-chart/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/row-template-chart/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/row-template-chart" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/row-template-chart/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/row-template-chart/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/row-template-chart" %}
+{% endif %}
+
 ## Limitations
 
 Row template feature is not compatible with all the features which are available in the grid, and it has limited features support. The features that are incompatible with the row template feature are listed below.

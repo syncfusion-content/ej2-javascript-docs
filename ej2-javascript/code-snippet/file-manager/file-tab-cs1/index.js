@@ -7,7 +7,7 @@ var tabObj = new ej.navigations.Tab({
     heightAdjustMode: 'None',
     height: 320,
     showCloseButton: true,
-    selecting: onSelect
+    selected: onSelect
 });
 //Render initialized Tab component
 tabObj.appendTo('#tab_orientation');

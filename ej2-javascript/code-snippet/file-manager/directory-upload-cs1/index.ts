@@ -33,6 +33,10 @@ let drpDownBtn: DropDownButton = new DropDownButton({
     }
 }, '#file_tb_upload');
 
-document.getElementById('file_tb_upload')?.addEventListener('click', function (args) {
-    args.stopPropagation();
-});
+let uploadEle: HTMLElement = document.getElementById('file_tb_upload');
+
+if (uploadEle) {
+    uploadEle.addEventListener('click', function (args) {
+        args.stopPropagation();
+    });
+}

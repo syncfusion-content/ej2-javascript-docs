@@ -1371,6 +1371,109 @@ The following screenshot represents the grid action with custom binding
 > * While working with grid edit operation, defining the [isPrimaryKey](../../api/grid/#isprimarykey) property of column is a mandatory step. In case the primary key column is not defined, the edit or delete action will take place on the first row of the grid.
 > * Need to maintain the same instance for all grid actions.
 
+## Export all records in client side
+
+Export all records is especially beneficial when dealing with large datasets that need to be exported for offline analysis or sharing.
+
+By default, the Syncfusion Grid component exports only the records on the current page. However, the Syncfusion ##Platform_Name## Grid component allows you to export all records, including those from multiple pages, by configuring the [pdfExportProperties](../../api/grid/pdfExportProperties) and [excelExportProperties](../../api/grid/excelExportProperties).
+
+To export all records, including those from multiple pages, configure the [pdfExportProperties.dataSource](../../api/grid/pdfExportProperties/#datasource) for PDF exporting and [excelExportProperties.dataSource](../../api/grid/excelExportProperties#datasource) for Excel exporting within the [toolbarClick](../../api/grid/#toolbarclick) event handler. Inside this event, set the `dataSource` property of `pdfExportProperties` and `excelExportProperties` for PDF and Excel exporting to include all records.
+
+**Excel Exporting**
+
+To export the complete Grid data to Excel document, utilize the `excelExportProperties.dataSource` when initiating the Excel export. Use the following code snippet to export all records within the Grid:
+
+{% if page.publishingplatform == "typescript" %}
+```typescript
+  getOrders(state).then((event) => {
+    let excelExportProperties = {
+      dataSource: (event.result as any).result
+    };
+    grid.excelExport(excelExportProperties);// Need to call excelExport method of Grid when get the entire data.
+  });
+```
+{% elsif page.publishingplatform == "javascript" %}
+```typescript
+  getOrders(state).then((event) => {
+    let excelExportProperties = {
+      dataSource: event.result.result
+    };
+    grid.excelExport(excelExportProperties);
+  });
+```
+{% endif %}
+
+**PDF Exporting**
+
+To export the complete Grid data to PDF document, utilize the `pdfExportProperties.dataSource` when initiating the PDF export. Use the following code snippet to export all records within the Grid:
+
+{% if page.publishingplatform == "typescript" %}
+
+```typescript
+  getOrders(state).then((event) => {
+    let pdfExportProperties = {
+      dataSource: (event.result as any).result
+    };
+    grid.pdfExport(pdfExportProperties); 
+  });
+```
+{% elsif page.publishingplatform == "javascript" %}
+
+```typescript
+  getOrders(state).then((event) => {
+    let pdfExportProperties = {
+      dataSource: event.result.result
+    };
+    grid.pdfExport(pdfExportProperties);
+  });
+```
+{% endif %}
+
+> For further customization on Grid export, refer to the respective documentation for [PDF exporting](../../grid/pdf-export/pdf-export-options) and [Excel exporting](../../grid/excel-export/excel-export-options)
+
+The following code example shows how to export all records in client side:
+
+{% if page.publishingplatform == "typescript" %}
+  {% tabs %}
+    {% highlight ts tabtitle="app.ts" %}
+    {% include code-snippet/grid/remote-custom-export/app.ts %}
+    {% endhighlight %}
+    {% highlight html tabtitle="index.html" %}
+    {% include code-snippet/grid/remote-custom-export/index.html %}
+    {% endhighlight %}
+    {% highlight css tabtitle="styles.css" %}
+    {% include code-snippet/grid/remote-custom-export/styles.css %}
+    {% endhighlight %}
+    {% highlight ts tabtitle="server.ts" %}
+    {% include code-snippet/grid/remote-custom-export/server.ts %}
+    {% endhighlight %}
+    {% highlight ts tabtitle="orderService.ts" %}
+    {% include code-snippet/grid/remote-custom-export/orderService.ts %}
+    {% endhighlight %}
+    {% highlight ts tabtitle="datasource.ts" %}
+    {% include code-snippet/grid/remote-custom-export/datasource.ts %}
+    {% endhighlight %}
+  {% endtabs %}
+{% elsif page.publishingplatform == "javascript" %}
+  {% tabs %}
+    {% highlight js tabtitle="index.js" %}
+    {% include code-snippet/grid/remote-custom-export2/index.js %}
+    {% endhighlight %}
+    {% highlight html tabtitle="index.html" %}
+    {% include code-snippet/grid/remote-custom-export2/index.html %}
+    {% endhighlight %}
+    {% highlight js tabtitle="server.js" %}
+    {% include code-snippet/grid/remote-custom-export2/server.js %}
+    {% endhighlight %}
+    {% highlight js tabtitle="orderService.js" %}
+    {% include code-snippet/grid/remote-custom-export2/orderService.js %}
+    {% endhighlight %}
+    {% highlight js tabtitle="datasource.js" %}
+    {% include code-snippet/grid/remote-custom-export2/datasource.js %}
+    {% endhighlight %}
+  {% endtabs %}
+{% endif %}
+
 ## Sending additional parameters to the server
 
 The Syncfusion Grid component allows you to include custom parameters in data requests. This feature is particularly useful when you need to provide additional information to the server enhanced processing.

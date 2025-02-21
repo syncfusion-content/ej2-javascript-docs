@@ -55,12 +55,12 @@ document.getElementById('openBtn').onclick = function() {
 
 // 'Uploader' will be shown, if Dialog is closed
 function dialogClose() {
-    document.getElementById('container').style.display = 'block';
+    document.getElementById('fileupload').style.display = 'block';
 }
 
 // 'Uploader' will be hidden, if Dialog is opened
 function dialogOpen() {
-    document.getElementById('container').style.display = 'none';
+    document.getElementById('fileupload').style.display = 'none';
 }
 
 // File Manager's fileOpen event function

@@ -28,29 +28,34 @@ let dialogObj: Dialog = new Dialog({
 dialogObj.appendTo('#dialog');
 
 let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-document.getElementById('openBtn')?.addEventListener("click", (): void => {
-    dialogObj.show();
-    // Initialize the FileManager Control
-    let filemanagerInstance: FileManager = new FileManager({
-        ajaxSettings: {
-            url: hostUrl + 'api/FileManager/FileOperations',
-            getImageUrl: hostUrl + 'api/FileManager/GetImage',
-            uploadUrl: hostUrl + 'api/FileManager/Upload',
-            downloadUrl: hostUrl + 'api/FileManager/Download'
-        },
-        allowMultiSelection: false,
-        fileOpen: onFileOpen,
-        height: '380px'
+
+let openBtnElement: HTMLElement = document.getElementById('openBtn');
+
+if(openBtnElement) {
+    openBtnElement.addEventListener('click', function () {
+        dialogObj.show();
+        // Initialize the FileManager Control
+        let filemanagerInstance: FileManager = new FileManager({
+            ajaxSettings: {
+                url: hostUrl + 'api/FileManager/FileOperations',
+                getImageUrl: hostUrl + 'api/FileManager/GetImage',
+                uploadUrl: hostUrl + 'api/FileManager/Upload',
+                downloadUrl: hostUrl + 'api/FileManager/Download'
+            },
+            allowMultiSelection: false,
+            fileOpen: onFileOpen,
+            height: '380px'
+        });
+        filemanagerInstance.appendTo('#filemanager');
+        dialogOpen();
     });
-    filemanagerInstance.appendTo('#filemanager');
-    dialogOpen();
-});
+}
 
 // Uploader will be shown, if Dialog is closed
 function dialogClose(): void {
     let filemanager: FileManager = (document.getElementById('filemanager') as any).ej2_instances[0];
     filemanager.destroy();
-    const container = document.getElementById('container');
+    const container = document.getElementById('fileupload');
     if (container) {
         container.style.display = 'block';
     }
@@ -58,7 +63,7 @@ function dialogClose(): void {
 
 // Uploader will be hidden, if Dialog is opened
 function dialogOpen(): void {
-    const container = document.getElementById('container');
+    const container = document.getElementById('fileupload');
     if (container) {
         container.style.display = 'none';
     }

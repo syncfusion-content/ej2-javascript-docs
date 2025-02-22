@@ -28,7 +28,7 @@ function onSelect(e: any) {
 
 function onComplete() {
     if (!hasChild) {
-        headerElement = document.querySelector(".header-content")?.innerHTML;
+        headerElement = (document.querySelector(".header-content") as HTMLElement).innerHTML;
         title = document.querySelector(".nested-header .header-content");
         if (headerElement && text != undefined) {
             // Create element with new clicked item in header

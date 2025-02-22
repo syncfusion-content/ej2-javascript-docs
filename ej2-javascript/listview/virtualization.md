@@ -24,15 +24,13 @@ ListView.Inject(Virtualization);
 
 ```
 
-## Getting started
-
 UI virtualization can be enabled in the ListView by setting the [`enableVirtualization`](../api/list-view/#enablevirtualization) property to true.
 
 There are two types of scroll behaviors:
 
 **Window Scroll**: This is used by default in the ListView.
 
-**Container Scroll**: This is used when the `height` property of the ListView is set.
+**Container Scroll**: This is used when the [`height`](../api/list-view/#height) property of the ListView is set.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -67,7 +65,7 @@ There are two types of scroll behaviors:
 {% previewsample "page.domainurl/code-snippet/listview/virtualization/flat-list-cs1" %}
 {% endif %}
 
-You can use the `template` property to customize list items in UI virtualization.
+You can use the [`template`](../api/list-view/#template) property to customize list items in UI virtualization.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -108,9 +106,7 @@ The following conditional rendering support is provided for the template and gro
 
 | Name | Syntax |
 | --- | --- | --- |
-| conditional class | `<div class="${ $id % 2 === 0 ? 'even-list' : 'odd-list'}"></div>`  |
-| conditional attribute | `<div id="${ $id % 2 === 0 ? 'even-list' : 'odd-list'}"></div>`  |
-| conditional text content | `<div>${ $id % 2 === 0 ? 'even-list' : 'odd-list'}</div>`  |
+| conditional rendering | `${if(id % 2=="0")}<div id="list-container" class="even-list"> ${text} </div>${else}<div id="list-container" class="odd-list"> ${text} </div>${/if}`  |
 
 In the following sample, the light blue is applied for the even list and light coral is applied for the odd list based on the conditional class.
 

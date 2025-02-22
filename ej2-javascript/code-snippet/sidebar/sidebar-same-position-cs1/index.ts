@@ -21,7 +21,10 @@ let defaultSidebar: Sidebar = new Sidebar({
 defaultSidebar.appendTo('#default-sidebar');
 //end of DefaultSidebar initialization
 
-//switch the expand and collapse state
-document.querySelector('#buttonClick')?.addEventListener('click', () => {
-    defaultSidebar.toggle();
-})
+let btnEle: HTMLElement = document.querySelector("#buttonClick") as HTMLElement;
+if(btnEle) {
+    //switch the expand and collapse state
+    btnEle.addEventListener('click', () => {
+        defaultSidebar.toggle();
+    });
+}

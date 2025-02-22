@@ -14,20 +14,30 @@ defaultSidebar.appendTo('#default-sidebar');
 //toggle button initialization
 let togglebtn: Button = new Button({ iconCss: 'e-icons e-menu', isToggle: true, content: 'Open' }, '#toggle');
 
-// Close the Sidebar
-document.querySelector('#close')?.addEventListener('click', () => {
-    defaultSidebar.hide();
-    document.getElementById('toggle')?.classList.remove('e-active');
-    togglebtn.content = 'Open'
-})
+let toggleEle = document.getElementById('toggle');
 
-//Click Event
-document.querySelector('#toggle')?.addEventListener('click', () => {
-    if (document.getElementById('toggle')?.classList.contains('e-active')) {
-        togglebtn.content = 'Close';
-        defaultSidebar.show();
-    } else {
-        togglebtn.content = 'Open';
+// Close the Sidebar
+const closeBtn = document.querySelector('#close');
+if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
         defaultSidebar.hide();
-    }
-})
+        if (toggleEle) {
+            toggleEle.classList.remove('e-active');
+        }
+        togglebtn.content = 'Open';
+    });
+}
+
+// Click Event
+const toggleBtn = document.querySelector('#toggle');
+if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+        if (toggleEle && toggleEle.classList.contains('e-active')) {
+            togglebtn.content = 'Close';
+            defaultSidebar.show();
+        } else {
+            togglebtn.content = 'Open';
+            defaultSidebar.hide();
+        }
+    });
+}

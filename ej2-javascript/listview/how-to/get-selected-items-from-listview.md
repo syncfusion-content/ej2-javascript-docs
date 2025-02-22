@@ -13,8 +13,6 @@ domainurl: ##DomainURL##
 
 In the ListView control, users can select one or more items. The [`getSelectedItems`](../../api/list-view/#getselecteditems)  API method can be used to retrieve details of the currently selected items from the ListView control.
 
-**`getSelectedItems` Method**
-
 This is used to get the details of the currently selected item from the list items. It returns the [`SelectedItem`](../../api/list-view/selectedItem/) | [`SelectedCollection`](../../api/list-view/selectedCollection/)
 
 The `getSelectedItems` method returns the following items from the selected list items.

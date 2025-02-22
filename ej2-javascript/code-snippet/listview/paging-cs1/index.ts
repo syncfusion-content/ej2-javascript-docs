@@ -24,7 +24,8 @@ let listObj: ListView = new ListView({
     query: new Query().range(0, pager.pageSize),
     template: template,
     headerTemplate: header,
-    showHeader: true
+    showHeader: true,
+    height: 300
 });
 //Render the initialized ListView control
 listObj.appendTo('#element');

@@ -58,7 +58,7 @@ let button: Button = new Button();
 // Render initialized button.
 button.appendTo('#btn');
 
-document.getElementById('btn')?.addEventListener('click', (e) => {
+(document.getElementById('btn') as HTMLElement).addEventListener('click', (e) => {
   let value = (document.getElementById('name') as HTMLInputElement).value;
   listObj.addItem([{ text: "Amenda", contact: value, id: "2", avatar: "A", pic: "", chat: "receiver" }]);
   (document.getElementById('name') as HTMLInputElement).value = "";

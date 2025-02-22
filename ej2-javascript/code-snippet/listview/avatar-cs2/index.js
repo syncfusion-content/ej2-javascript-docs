@@ -34,7 +34,8 @@ var listObj = new ej.lists.ListView({
     headerTitle: "Contacts",
     //Set customized template
     template: template,
-    sortOrder: "Ascending"
+    sortOrder: "Ascending",
+    height: 380
 });
 //Render initialized ListView control
 listObj.appendTo("#List");

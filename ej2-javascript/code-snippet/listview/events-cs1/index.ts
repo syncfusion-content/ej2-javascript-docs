@@ -30,7 +30,7 @@ let listObj: ListView = new ListView({
 listObj.appendTo("#listview-def");
 
 //Clears the event log details
-document.getElementById("clear")?.addEventListener("click", () => {
+(document.getElementById("clear") as HTMLElement).addEventListener("click", () => {
   const eventElement = document.getElementById("EventLog");
   if (eventElement) {
     eventElement.innerHTML = "";

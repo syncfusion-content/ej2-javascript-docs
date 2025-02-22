@@ -32,7 +32,7 @@ let listObj_1: ListView = new ListView({
   //Initialize dataSource with the DataManager instance.
   dataSource: data.slice(0, 5),
   scroll: onListScrolled,
-  height: 320,
+  height: 300,
   width: 400,
   template: loadTemplate,
   cssClass: 'e-list-template',

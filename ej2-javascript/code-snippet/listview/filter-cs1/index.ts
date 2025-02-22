@@ -24,7 +24,7 @@ let listObj: ListView = new ListView({
 //Render the initialized ListView control
 listObj.appendTo("#list");
 
-document.getElementById("textbox")?.addEventListener("keyup", onKeyUp);
+(document.getElementById("textbox") as HTMLInputElement).addEventListener("keyup", onKeyUp);
 //Here, the list items are filtered using the DataManager instance for ListView
 function onKeyUp() {
   let value = (document.getElementById("textbox") as HTMLInputElement).value;

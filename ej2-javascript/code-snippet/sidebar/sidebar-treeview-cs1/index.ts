@@ -78,20 +78,23 @@ let mainTreeView: TreeView = new TreeView({
 
 mainTreeView.appendTo('#main-treeview');
 
-document.querySelector('#hamburger')?.addEventListener('click', () => {
-    if (sidebarMenu.isOpen) {
-        sidebarMenu.hide();
-        mainTreeView.collapseAll();
-    }
-    else {
-        sidebarMenu.show();
-        mainTreeView.expandAll();
-    }
-})
+let hamburger: HTMLElement = document.querySelector('#hamburger') as HTMLElement;
+if (hamburger) {
+    hamburger.addEventListener('click', () => {
+        if (sidebarMenu.isOpen) {
+            sidebarMenu.hide();
+            mainTreeView.collapseAll();
+        }
+        else {
+            sidebarMenu.show();
+            mainTreeView.expandAll();
+        }
+    });
+}
 
 function onCreate(): void {
     this.element.style.visibility = '';
 }
-function onClose(args: any) {
+function onClose() {
     mainTreeView.collapseAll();
 }

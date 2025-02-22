@@ -9,10 +9,12 @@ let defaultSidebar: Sidebar = new Sidebar({
 });
 defaultSidebar.appendTo('#default-sidebar');
 //end of Sidebar initialization  
-
-document.querySelector('#hamburger')?.addEventListener('click', () => {
-  defaultSidebar.toggle();
-})
+let hamburger: HTMLElement = document.querySelector('#hamburger') as HTMLElement;
+if (hamburger) {
+  hamburger.addEventListener('click', () => {
+    defaultSidebar.toggle();
+  });
+}
 function onCreate(): void {
   this.element.style.visibility = '';
 }

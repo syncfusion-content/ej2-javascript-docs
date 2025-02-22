@@ -24,6 +24,8 @@ var listObj = new ej.lists.ListView({
 
     width: 350,
 
+    height: 380,
+
     //Map the appropriate columns to fields property
     fields: { text: 'Name', groupBy: 'category' },
     cssClass: 'e-list-template',

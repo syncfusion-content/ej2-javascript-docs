@@ -3,7 +3,7 @@ ej.base.enableRipple(true);
 var defaultSidebar = new ej.navigations.Sidebar({
     width: "280px",
     type: "Push",
-    target: 'maincontent'
+    target: '.maincontent'
 });
 defaultSidebar.appendTo('#default-sidebar');
 //end of Sidebar initialization

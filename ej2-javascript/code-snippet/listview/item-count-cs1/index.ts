@@ -26,6 +26,8 @@ let listObj: ListView = new ListView({
 
     width: 350,
 
+    height: 380,
+
     //Map the appropriate columns to the fields property
     fields: { text: 'Name', groupBy: 'category' },
 

@@ -29,7 +29,8 @@ var listViewInstance = new ej.lists.ListView({
     headerTitle: 'Settings',
     showHeader: true,
     template: template,
-    fields: { text: 'name', id: 'id' }
+    fields: { text: 'name', id: 'id' },
+    height: 380
 });
 
 listViewInstance.appendTo('#element');

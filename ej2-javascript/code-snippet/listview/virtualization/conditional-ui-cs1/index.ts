@@ -31,7 +31,7 @@ let listObj: ListView = new ListView({
     enableVirtualization: true,
 
     //Set height
-    height: 500,
+    height: 380,
 
     //Set defined customized template
     template: '${if(id % 2=="0")}<div id="list-container" class="even-list"> ${text} </div>${else}<div id="list-container" class="odd-list"> ${text} </div>${/if}'

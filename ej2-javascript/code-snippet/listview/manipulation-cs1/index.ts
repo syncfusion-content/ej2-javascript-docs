@@ -65,9 +65,9 @@ function wireEvents() {
     Array.prototype.forEach.call(document.getElementsByClassName('e-delete-btn'), (ele: HTMLButtonElement) => {
         ele.addEventListener('click', onDeleteBtnClick);
     });
-    document.getElementById("add")?.addEventListener('click', addItem);
-    document.getElementById("sort")?.addEventListener('click', sortItems);
-    document.getElementById("search")?.addEventListener("keyup", onKeyUp);
+    (document.getElementById("add") as HTMLElement).addEventListener('click', addItem);
+    (document.getElementById("sort") as HTMLElement).addEventListener('click', sortItems);
+    (document.getElementById("search") as HTMLElement).addEventListener("keyup", onKeyUp);
 }
 
 //Here we are removing list item
@@ -92,7 +92,7 @@ function dlgButtonClick() {
 
 //Here we are sorting list item
 function sortItems() {
-    let ele: Element = document.getElementById("sort")?.firstElementChild as Element;
+    let ele: Element = (document.getElementById("sort") as HTMLElement).firstElementChild as Element;
     let des = ele.classList.contains(desClass) ? true : false;
     if (des) {
         ele.classList.remove(desClass);

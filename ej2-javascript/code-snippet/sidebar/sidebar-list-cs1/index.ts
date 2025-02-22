@@ -26,13 +26,18 @@ let defaultSidebar: Sidebar = new Sidebar({
 defaultSidebar.appendTo('#default-sidebar');
 //end of Sidebar initialization
 
-// Toggle(Open/Close) the Sidebar
-document.querySelector('#toggle')?.addEventListener('click', () => {
-    defaultSidebar.toggle();
-})
+let toggleEle: HTMLElement = document.querySelector("#toggle") as HTMLElement;
+if (toggleEle) {
+    // Toggle(Open/Close) the Sidebar
+    toggleEle.addEventListener('click', () => {
+        defaultSidebar.toggle();
+    });
+}
 
-// Close the Sidebar
-document.querySelector('#close')?.addEventListener('click', () => {
-    defaultSidebar.hide();
-
-})
+let closeEle: HTMLElement = document.querySelector("#close") as HTMLElement;
+if (closeEle) {
+    // Close the Sidebar
+    closeEle.addEventListener('click', () => {
+        defaultSidebar.hide();
+    });
+}

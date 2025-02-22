@@ -32,7 +32,9 @@ let listObj: ListView = new ListView({
 
     //Set the customized template
     template: template,
-    groupTemplate: '<div><span class="category">${items[0].category}</span> <span class="count"> ${items.length} Item(s)</span></div> '
+    groupTemplate: '<div><span class="category">${items[0].category}</span> <span class="count"> ${items.length} Item(s)</span></div> ',
+
+    height: 380,
 
 });
 

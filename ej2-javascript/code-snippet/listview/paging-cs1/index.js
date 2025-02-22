@@ -17,6 +17,7 @@ var listObj = new ej.lists.ListView({
     query: new ej.data.Query().range(0, pager.pageSize),
     headerTemplate: header,
     template: template,
-    showHeader: true
+    showHeader: true,
+    height: 300
 });
 listObj.appendTo('#element');

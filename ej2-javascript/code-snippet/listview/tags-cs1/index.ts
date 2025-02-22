@@ -44,7 +44,7 @@ function addButton() {
 
 //The click event for rendered button
 for (let i: number = 0; i < data.length; i++) {
-    document.getElementById(data[i].Id as string)?.addEventListener("click", (e: MouseEventArgs) => {
+    (document.getElementById(data[i].Id as string) as HTMLElement).addEventListener("click", (e: MouseEventArgs) => {
         renderDialog((e.currentTarget as HTMLElement).id);
     });
 }
@@ -95,7 +95,7 @@ let dialog: Dialog = new Dialog({
     visible: false,
     created: createList,
     showCloseIcon: true,
-    position: { X: (element?.getBoundingClientRect().left || 0) + 50, Y: (element?.getBoundingClientRect().top || 0) - 5 }
+    position: { X: ((element as HTMLElement).getBoundingClientRect().left || 0) + 50, Y: ((element as HTMLElement).getBoundingClientRect().top || 0) - 5 }
 });
 //Render the initialized dialog control
 dialog.appendTo('#dialog');
@@ -115,7 +115,7 @@ function renderDialog(id: string): void {
 
 //Created event for dialog
 function createList() {
-    let listElem: any = document.getElementById('dialog')?.querySelector("#list");
+    let listElem: any = (document.getElementById('dialog') as HTMLElement).querySelector("#list");
     listObj.appendTo(listElem);
 }
 

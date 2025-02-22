@@ -23,7 +23,8 @@ let listViewInstance: ListView = new ListView({
     template: template,
     headerTitle: 'Settings',
     showHeader: true,
-    fields: { text: 'name', id: 'id' }
+    fields: { text: 'name', id: 'id' },
+    height: 380
 });
 
 listViewInstance.appendTo('#element');

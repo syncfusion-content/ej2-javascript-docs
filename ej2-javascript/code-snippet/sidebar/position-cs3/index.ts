@@ -51,5 +51,8 @@ let positionRight: RadioButton = new RadioButton({ label: 'Right', name: 'state'
 positionRight.appendTo('#right');
 
 function Change(args: ChangeArgs) {
-    defaultSidebar.position = ((<HTMLInputElement>args.event?.target).id == "left") ? "Left" : "Right";
+    let target = args.event ? args.event.target as HTMLInputElement : null;
+    if (target) {
+        defaultSidebar.position = target.id === "left" ? "Left" : "Right";
+    }
 }

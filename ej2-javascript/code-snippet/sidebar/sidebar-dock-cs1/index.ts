@@ -12,6 +12,9 @@ let dockBar: Sidebar = new Sidebar({
 dockBar.appendTo('#dockSidebar');
 //end of Sidebar initialization
 
-document.querySelector("#toggle")?.addEventListener('click', () => {
-    dockBar.toggle();
-})
+let toggleEle: HTMLElement = document.querySelector("#toggle") as HTMLElement;
+if(toggleEle) {
+    toggleEle.addEventListener('click', () => {
+        dockBar.toggle();
+    }); 
+}

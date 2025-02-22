@@ -38,7 +38,8 @@ let listObj: ListView = new ListView({
     cssClass: 'e-list-template',
     //Set the customized template
     template: template,
-    sortOrder: "Ascending"
+    sortOrder: "Ascending",
+    height: 380
 });
 
 //Render the initialized ListView control

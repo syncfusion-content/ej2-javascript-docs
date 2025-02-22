@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Grouping in ##Platform_Name## ListView control
 
-The ListView control supports wrapping nested elements into a group based on categories. The category of each list item can be mapped with the `groupBy` field in the data table, which also supports single-level navigation.
+The ListView control supports wrapping nested elements into a group based on categories. The category of each list item can be mapped with the [`groupBy`](../api/list-view/fieldSettingsModel/#groupby) field in the data table, which also supports single-level navigation.
 
 In the following sample, cars are grouped based on their category by using the `groupBy` field.
 
@@ -50,4 +50,4 @@ In the following sample, cars are grouped based on their category by using the `
 
 ## Customization
 
-The grouping header can be customized by using the `groupTemplate` property for both inline and fixed group headers. A complete description and example of customization are provided in the following link. [Group Template](./customizing-templates#group-template).
+The grouping header can be customized by using the [`groupTemplate`](../api/list-view/#grouptemplate) property for both inline and fixed group headers. A complete description and example of customization are provided in the following link. [Group Template](./customizing-templates#group-template).

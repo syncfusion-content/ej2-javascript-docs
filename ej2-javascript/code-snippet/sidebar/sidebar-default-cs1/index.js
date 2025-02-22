@@ -15,6 +15,11 @@ var defaultSidebar= new ej.navigations.Sidebar({
 defaultSidebar.appendTo('#default');
 //end of Sidebar initialization
 
+// Open the Sidebar
+document.querySelector('#open').addEventListener('click', () => {
+    defaultSidebar.show();
+})
+
 // Toggle(Open/Close) the Sidebar
 document.getElementById('toggle').onclick = function() {
     defaultSidebar.toggle();

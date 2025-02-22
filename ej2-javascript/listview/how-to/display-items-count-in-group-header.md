@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Display items count in group header in ##Platform_Name## ListView control
 
-The ListView control supports grouping list items based on categories. The category of each list item can be mapped with the `groupBy` field of the data source. You can display the count of grouped list items in the list header using the group header template. Refer to the following code sample to display the count of grouped list items.
+The ListView control supports grouping list items based on categories. The category of each list item can be mapped with the [`groupBy`](../../api/list-view/fieldSettingsModel/#groupby) field of the data source. You can display the count of grouped list items in the list header using the group header template. Refer to the following code sample to display the count of grouped list items.
 
 {% if page.publishingplatform == "typescript" %}
 

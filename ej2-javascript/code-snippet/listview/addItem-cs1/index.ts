@@ -32,7 +32,7 @@ let button: Button = new Button();
 button.appendTo("#btn");
 
 //Event handler to add the list item on button click
-document.getElementById("btn")?.addEventListener("click", () => {
+(document.getElementById("btn") as HTMLElement).addEventListener("click", () => {
     let data: { [key: string]: Object } = {
         text: "Koenigsegg - " + (Math.random() * 1000).toFixed(0),
         id: (Math.random() * 1000).toFixed(0).toString(),

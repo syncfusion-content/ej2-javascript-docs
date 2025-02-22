@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Nested list in ##Platform_Name## ListView control
 
-The ListView control supports nested lists. To implement a nested list, the `child` property should be defined for the nested list within the array of JSON.
+The ListView control supports nested lists. To implement a nested list, the [`child`](../api/list-view/fieldSettingsModel/#child) property should be defined for the nested list within the array of JSON.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -62,13 +62,13 @@ System.import('app');
 The following example explains about how to configure the file browser within the Rich Text Editor component.
 
 * Configure the `FileManager` toolbar item in the `toolbarSettings` API `items` property.
-* Set [`enable`](../api/rich-text-editor/fileManagerSettings/#enable) property as `true` on [`fileManagerSettings`](../api/rich-text-editor/#fileManagerSettings) property to make the file browser in the Rich Text Editor to appear on the `FileManager` toolbar click action.
+* Set [enable](../api/rich-text-editor/fileManagerSettings/#enable) property as `true` on [fileManagerSettings](../api/rich-text-editor/#fileManagerSettings) property to make the file browser in the Rich Text Editor to appear on the `FileManager` toolbar click action.
 
 > Rich Text Editor features are segregated into individual feature-wise modules. To use file browser tool, inject FileManager module using the `RichTextEditor.Inject(FileManager)`.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/rich-text-editor/file-browser-cs1/index.ts %}
 {% endhighlight %}

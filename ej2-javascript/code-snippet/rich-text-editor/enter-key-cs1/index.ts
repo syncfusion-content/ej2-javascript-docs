@@ -1,8 +1,5 @@
-
-
 import { RichTextEditor, Toolbar, Link, Image, HtmlEditor, QuickToolbar } from '@syncfusion/ej2-richtexteditor';
 import { DropDownList } from '@syncfusion/ej2-dropdowns';
-import { createElement } from '@syncfusion/ej2-base';
 
 RichTextEditor.Inject(Toolbar, Link, Image, HtmlEditor, QuickToolbar);
 
@@ -29,6 +26,3 @@ let enterListObj: DropDownList = new DropDownList({
     }
 });
 enterListObj.appendTo('#enterOption');
-
-
-

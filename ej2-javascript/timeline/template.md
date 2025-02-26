@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Template in ##Platform_Name## Timeline control
 
-The Timeline control allows you to customize the appearance of each item by using the [template](../api/timeline/#template) property. This enables modification of dot items, templated contents, progress bar styling, and more.
+The Timeline control allows you to customize the appearance of each item by using the [`template`](../api/timeline/#template) property. This enables modification of dot items, templated contents, progress bar styling, and more.
 
 The `template` context provides the following information:
 

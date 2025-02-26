@@ -205,5 +205,5 @@ The following table illustrates the reasons for pagination (page-by-page display
 
 ## See Also
 
-* [Feature modules](../document-editor/feature-module/)
+* [Feature modules](../document-editor/feature-module)
 * [How to show and hide spinner while opening document in DocumentEditor](../document-editor/how-to/show-hide-spinner)

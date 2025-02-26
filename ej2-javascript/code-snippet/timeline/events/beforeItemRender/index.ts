@@ -1,8 +1,8 @@
 import { Timeline, TimelineItemModel, TimelineRenderingEventArgs } from '@syncfusion/ej2-layouts';
 
 const productLifecycle: TimelineItemModel[] = [
-  { content: 'Planning'},
-  { content: 'Developing'},
+  { content: 'Planning' },
+  { content: 'Developing' },
   { content: 'Testing' },
   { content: 'Launch' },
 ];

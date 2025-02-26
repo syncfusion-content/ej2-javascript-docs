@@ -1,7 +1,7 @@
 var disabledItem = [
-  { content: 'Eat'},
-  { content: 'Code'},
-  { content: 'Repeat', disabled: true},
+  { content: 'Eat' },
+  { content: 'Code' },
+  { content: 'Repeat', disabled: true },
 ];
 
 // Initializes the Timeline control

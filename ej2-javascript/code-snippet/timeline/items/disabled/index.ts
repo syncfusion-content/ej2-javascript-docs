@@ -1,9 +1,9 @@
 import { Timeline, TimelineItemModel } from '@syncfusion/ej2-layouts';
 
 const disabledItem: TimelineItemModel[] = [
-  { content: 'Eat'},
-  { content: 'Code'},
-  { content: 'Repeat', disabled: true},
+  { content: 'Eat' },
+  { content: 'Code' },
+  { content: 'Repeat', disabled: true },
 ];
 
 // Initializes the Timeline control

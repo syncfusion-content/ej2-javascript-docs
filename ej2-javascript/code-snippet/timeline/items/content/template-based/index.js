@@ -1,8 +1,8 @@
 var orderStatus = [
-  { content: '#content-template'},
-  { content: '#content-template'},
-  { content: '#content-template'},
-  { content: 'Out for Delivery'}
+  { content: '#content-template' },
+  { content: '#content-template' },
+  { content: '#content-template' },
+  { content: 'Out for Delivery' }
 ];
 
 // Initializes the Timeline control

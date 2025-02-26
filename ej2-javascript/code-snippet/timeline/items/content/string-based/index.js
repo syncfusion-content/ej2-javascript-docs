@@ -1,8 +1,8 @@
 var orderStatus = [
-  { content: 'Shipped'},
-  { content: 'Departed'},
-  { content: 'Arrived'},
-  { content: 'Out for Delivery'}
+  { content: 'Shipped' },
+  { content: 'Departed' },
+  { content: 'Arrived' },
+  { content: 'Out for Delivery' }
 ];
 
 // Initializes the Timeline control

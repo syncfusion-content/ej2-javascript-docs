@@ -38,4 +38,3 @@ var defaultRTE = new ej.richtexteditor.RichTextEditor({
     }
     });
 defaultRTE.appendTo('#defaultRTE');
-

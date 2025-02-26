@@ -1,12 +1,6 @@
-
-
-
 import { enableRipple } from '@syncfusion/ej2-base';
 enableRipple(true);
 
-/**
- * Custom cross-site scripting sample
- */
 import { RichTextEditor, Toolbar, Link, Image, HtmlEditor, QuickToolbar, BeforeSanitizeHtmlArgs } from '@syncfusion/ej2-richtexteditor';
 import { detach } from '@syncfusion/ej2-base';
 RichTextEditor.Inject(Toolbar, Link, Image, HtmlEditor, QuickToolbar);
@@ -29,6 +23,3 @@ let defaultRTE: RichTextEditor = new RichTextEditor({
   }
  });
 defaultRTE.appendTo('#defaultRTE');
-
-
-

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Disabling the Rich Text Editor in ##Platform_Name## Rich text editor control | Syncfusion
-description: Learn here all about Code View Disabling the Rich Text Editor in Syncfusion ##Platform_Name## Rich text editor control of Syncfusion Essential JS 2 and more.
+title:  Disabling the Rich Text Editor in ##Platform_Name## | Syncfusion
+description: Learn here all about Disabling the Rich Text Editor in Syncfusion ##Platform_Name## Rich text editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control:  Disabling the Rich Text Editor
 publishingplatform: ##Platform_Name##
@@ -47,3 +47,7 @@ Below are examples and code snippets demonstrating how to disable the Rich Text 
 
 {% previewsample "page.domainurl/code-snippet/rich-text-editor/disable-editor-cs1" %}
 {% endif %}
+
+### See Also
+
+[Implementing Read-Only Mode in Rich Text Editor](./read-only-mode)

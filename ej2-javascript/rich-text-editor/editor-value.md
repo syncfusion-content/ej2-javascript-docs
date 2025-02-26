@@ -21,7 +21,7 @@ You can set the initial content of the Rich Text Editor using the `value` proper
 
 * Using the [valuetemplate](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#valuetemplate) property allows you to customize the content of the Rich Text Editor.
 
-**Reterieving Values**
+**Retrieving Values**
 
 To retrieve the editor contents, use the value property of Rich Text Editor. 
 
@@ -52,7 +52,7 @@ To retrieve the editor contents, use the value property of Rich Text Editor.
 {% previewsample "page.domainurl/code-snippet/rich-text-editor/editor-value-cs1" %}
 {% endif %}
 
-## Autosave
+## Auto Save
 
 The auto-save option in the Rich Text Editor allows the content to be automatically saved during idle periods after you have typed. Once this option is enabled, the editor will save the content based on the [saveInterval](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#saveinterval) property's value, which is specified in milliseconds.
 
@@ -359,3 +359,7 @@ By default, the content styles of the Rich Text Editor are not included when ret
 }
 
 ```
+
+## See Also
+
+* [Implementing Prevention of cross-site scripting (XSS)](./prevent-cross-site-scripting)

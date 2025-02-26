@@ -75,7 +75,7 @@ The character count color will be modified based on the characters in the Rich T
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor/getting-started-cs17character-count-limit-cs1/index.js %}
+{% include code-snippet/rich-text-editor/character-count-limit-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rich-text-editor/character-count-limit-cs1/index.html %}
@@ -103,4 +103,4 @@ You can programmatically get the current character count in the editor using the
 
 ## See Also
 
-* [How to Customize Character Count and Styles in Rich Text Editor](https://ej2.syncfusion.com/documentation/rich-text-editor/style#customizing-the-rich-text-editors-character-count)
+* [How to Customize Character Count and Styles in Rich Text Editor](https://ej2.syncfusion.com/documentation/rich-text-editor/style#customizing-character-count-display)

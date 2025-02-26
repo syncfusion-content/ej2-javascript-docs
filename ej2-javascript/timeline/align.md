@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Alignment in ##Platform_Name## Timeline control
 
-You can display the Timeline content as `Before`, `After`, `Alternate`, and `AlternateReverse` using the [align](../api/timeline/#align) property. The `oppositeContent` will be displayed parallel to the content when configured in the [TimelineItemModel](../api/timeline/timelineItemModel/).
+You can display the Timeline content as `Before`, `After`, `Alternate`, and `AlternateReverse` using the [align](../api/timeline/#align) property. The [`oppositeContent`](../api/timeline#items#oppositecontent) will be displayed parallel to the content when configured in the [TimelineItemModel](../api/timeline/timelineItemModel/).
 
 ## Before
 
-In [Before](../api/timeline/timelineAlign/) alignment, for `horizontal` orientation, the item content is placed at the top and `oppositeContent` at the bottom. For `vertical` orientation, the content is on the left and `oppositeContent` on the right.
+In [`Before`](../api/timeline/timelineAlign/) alignment, for `horizontal` orientation, the item content is placed at the top and [`oppositeContent`](../api/timeline#items#oppositecontent) at the bottom. For `vertical` orientation, the content is on the left and [`oppositeContent`](../api/timeline#items#oppositecontent) on the right.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -52,7 +52,7 @@ In [Before](../api/timeline/timelineAlign/) alignment, for `horizontal` orientat
 
 ## After
 
-In [After](../api/timeline/timelineAlign/) alignment, for `horizontal` orientation, the item content is placed at the bottom and `oppositeContent` at the top. For `vertical` orientation, the content is on the right and `oppositeContent` on the left.
+In [`After`](../api/timeline/timelineAlign/) alignment, for `horizontal` orientation, the item content is placed at the bottom and [`oppositeContent`](../api/timeline#items#oppositecontent) at the top. For `vertical` orientation, the content is on the right and [`oppositeContent`](../api/timeline#items#oppositecontent) on the left.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -89,7 +89,7 @@ In [After](../api/timeline/timelineAlign/) alignment, for `horizontal` orientati
 
 ## Alternate
 
-In [Alternate](../api/timeline/timelineAlign/) alignment, the item content is arranged alternately, regardless of the Timeline orientation.
+In [`Alternate`](../api/timeline/timelineAlign/) alignment, the item content is arranged alternately, regardless of the Timeline orientation.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -126,7 +126,7 @@ In [Alternate](../api/timeline/timelineAlign/) alignment, the item content is ar
 
 ## Alternate reverse
 
-In [AlternateReverse](../api/timeline/timelineAlign/) alignment, the item content is arranged in reverse order of alternate alignment, regardless of the Timeline orientation.
+In [`AlternateReverse`](../api/timeline/timelineAlign/) alignment, the item content is arranged in reverse order of alternate alignment, regardless of the Timeline orientation.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -50,4 +50,4 @@ The Rich Text Editor provides the [showSourceCode](https://helpej2.syncfusion.co
 
 ## See Also
 
-* [Integrating Code-Mirror for Enhanced Syntax Highlighting](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/third-party-integration#codemirror-integration)
+* [Integrating Code-Mirror for Enhanced Syntax Highlighting](https://ej2.syncfusion.com/documentation/rich-text-editor/third-party-integration#codemirror-integration)

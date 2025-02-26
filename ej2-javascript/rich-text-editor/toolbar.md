@@ -292,5 +292,6 @@ The following sample demonstrates the option to insert the image to the Rich Tex
 
 ## See Also
 
-* [How to render the toolbar in inline mode](./inline-mode)
-* [How to customize the toolbar items shortcut key](./how-to/shortcut-key)
+* [Customizing Rich Text Editor Toolbar Styles](https://ej2.syncfusion.com/documentation/rich-text-editor/style#customizing-the-rich-text-editors-toolbar)
+* [Implementing Inline Editing](https://ej2.syncfusion.com/documentation/rich-text-editor/inline-mode)
+* [Customizing Accessibility Shortcut Keys](https://ej2.syncfusion.com/documentation/rich-text-editor/accessibility#keyboard-interaction)

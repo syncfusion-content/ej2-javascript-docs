@@ -15,7 +15,7 @@ This section describes the Timeline events that will be triggered when an approp
 
 ## Created
 
-The Timeline control triggers the [created](../api/timeline#created) event when the control rendering is completed.
+The Timeline control triggers the [`created`](../api/timeline#created) event when the control rendering is completed.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -52,7 +52,7 @@ The Timeline control triggers the [created](../api/timeline#created) event when 
 
 ## BeforeItemRender
 
-The Timeline control triggers the [beforeItemRender](../api/timeline#beforeItemRender) event before rendering each item.
+The Timeline control triggers the [`beforeItemRender`](../api/timeline#beforeItemRender) event before rendering each item.
 
 {% if page.publishingplatform == "typescript" %}
 

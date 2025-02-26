@@ -1,7 +1,7 @@
 var mealTimes = [
-  { content: 'Breakfast', oppositeContent: '8:00 AM'},
-  { content: 'Lunch', oppositeContent: '1:00 PM'},
-  { content: 'Dinner', oppositeContent: '8:00 PM'},
+  { content: 'Breakfast', oppositeContent: '8:00 AM' },
+  { content: 'Lunch', oppositeContent: '1:00 PM' },
+  { content: 'Dinner', oppositeContent: '8:00 PM' },
 ];
 
 // Initializes the Timeline control

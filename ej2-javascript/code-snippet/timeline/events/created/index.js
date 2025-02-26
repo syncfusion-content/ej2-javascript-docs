@@ -1,6 +1,6 @@
 var productLifecycle = [
-  { content: 'Planning'},
-  { content: 'Developing'},
+  { content: 'Planning' },
+  { content: 'Developing' },
   { content: 'Testing' },
   { content: 'Launch' },
 ];
@@ -8,7 +8,7 @@ var productLifecycle = [
 // Initializes the Timeline control
 var timeline = new ej.layouts.Timeline({
   items: productLifecycle,
-  created: function() {
+  created: function () {
     //your required action here 
   }
 });

@@ -1,18 +1,10 @@
-
-
 import { RichTextEditor, HtmlEditor, Toolbar, QuickToolbar, Video } from '@syncfusion/ej2-richtexteditor';
 RichTextEditor.Inject(HtmlEditor, Toolbar, QuickToolbar, Video);
 
 let defaultRTE: RichTextEditor = new RichTextEditor({
-    insertVideoSettings: {
-        saveUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Save',
-        removeUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Remove'
-    },
+    value: `<p>Rich Text Editor allows inserting video and audio from online sources and the local computers where you want to insert a video and audio into your content.</p>`,
     toolbarSettings: {
         items: ['Video']
     }
 });
 defaultRTE.appendTo('#defaultRTE');
-
-
-

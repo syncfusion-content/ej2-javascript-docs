@@ -1,6 +1,3 @@
-
-
-
 import { RichTextEditor, Toolbar, Link, Image, HtmlEditor, QuickToolbar } from '@syncfusion/ej2-richtexteditor';
 RichTextEditor.Inject(Toolbar, Link, Image, HtmlEditor, QuickToolbar);
 import { Mention } from '@syncfusion/ej2-dropdowns';
@@ -22,31 +19,31 @@ let emailData: { [key: string]: Object }[] = [
         { Name: "William", Status: "away", EmployeeImage: "https://ej2.syncfusion.com/demos/src/rich-text-editor/images/8.png", EmailId: "william@gmail.com" }
     ];
 
-    let emailObj: Mention;
-    let defaultRTE: RichTextEditor = new RichTextEditor({
-        placeholder: 'Type @ and tag the name',
-        actionBegin: (args) => {
-            if (args.requestType === 'EnterAction' && emailObj.element.classList.contains('e-popup-open')) {
-                args.cancel = true;
-            }
+let emailObj: Mention;
+
+let defaultRTE: RichTextEditor = new RichTextEditor({
+    placeholder: 'Type @ and tag the name',
+    actionBegin: (args) => {
+        if (args.requestType === 'EnterAction' && emailObj.element.classList.contains('e-popup-open')) {
+            args.cancel = true;
         }
-     });
-    defaultRTE.appendTo('#mention_integration');
-
-    // Initialize Mention control.
-        emailObj = new Mention({
-        dataSource: emailData,
-        fields: { text: 'Name' },
-        suggestionCount: 8,
-        displayTemplate: '<a  href=mailto:${EmailId} title=${EmailId}>@${Name}</a>',
-        itemTemplate: '<table><tr><td><div id="mention-TemplateList"><img class="mentionEmpImage" src="${EmployeeImage}" alt="employee" /><span class="e-badge e-badge-success e-badge-overlap e-badge-dot e-badge-bottom ${Status}"></span></div></td><td><span class="person">${Name}</span><span class="email">${EmailId}</span></td</tr></table>',
-        popupWidth: '250px',
-        popupHeight: '200px',
-        target: '#mention_integration_rte-edit-view',
-        allowSpaces: true
-
+    },
+        value: `<p>Hello <span contenteditable="false" class="e-mention-chip"><a href="mailto:maria@gmail.com" title="maria@gmail.com">@Maria</a></span>,</p>
+            <p>Welcome to the mention integration with rich text editor demo. Type <code>@</code> character and tag user from the suggestion list. </p>`
     });
-    emailObj.appendTo('#mentionEditor');
+defaultRTE.appendTo('#mention_integration');
 
+// Initialize Mention control
+    emailObj = new Mention({
+    dataSource: emailData,
+    fields: { text: 'Name' },
+    suggestionCount: 8,
+    displayTemplate: '<a  href=mailto:${EmailId} title=${EmailId}>@${Name}</a>',
+    itemTemplate: '<table><tr><td><div id="mention-TemplateList"><img class="mentionEmpImage" src="${EmployeeImage}" alt="employee" /><span class="e-badge e-badge-success e-badge-overlap e-badge-dot e-badge-bottom ${Status}"></span></div></td><td><span class="person">${Name}</span><span class="email">${EmailId}</span></td</tr></table>',
+    popupWidth: '250px',
+    popupHeight: '200px',
+    target: '#mention_integration_rte-edit-view',
+    allowSpaces: true
 
-
+});
+emailObj.appendTo('#mentionEditor');

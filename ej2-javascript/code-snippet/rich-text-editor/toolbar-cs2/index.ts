@@ -1,7 +1,4 @@
-
-
-
-import { RichTextEditor, Toolbar, HtmlEditor PasteCleanup } from '@syncfusion/ej2-richtexteditor';
+import { RichTextEditor, Toolbar, HtmlEditor, PasteCleanup } from '@syncfusion/ej2-richtexteditor';
 
 RichTextEditor.Inject(Toolbar, HtmlEditor, PasteCleanup);
 
@@ -41,6 +38,3 @@ let defaultRTE: RichTextEditor = new RichTextEditor({
     }
     });
 defaultRTE.appendTo('#defaultRTE');
-
-
-

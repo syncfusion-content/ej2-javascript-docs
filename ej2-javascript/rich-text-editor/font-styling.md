@@ -263,3 +263,8 @@ Both the `FontColor` and `BackgroundColor` properties offer two modes: `Picker` 
 
 {% previewsample "page.domainurl/code-snippet/rich-text-editor/styling-cs3" %}
 {% endif %}
+
+## See Also
+
+* [Applying Basic Text Formatting in Rich Text Editor](./basic-text-styling)
+* [Implementing Headings and Text Hierarchy in Rich Text Editor](./headings)

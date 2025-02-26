@@ -243,7 +243,7 @@ You can achieve the desired dot variant by customizing the border, outline and b
 
 ### Dot outline
 
-Add an `e-outline` class to the Timeline `cssClass` property to enable the dots to have an outline state.
+Add an `e-outline` class to the Timeline [`cssClass`](../api/timeline/#cssclass) property to enable the dots to have an outline state.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Orientations in ##Platform_Name## Timeline control
 
-The Timeline control supports displaying items in both horizontal and vertical directions using the [orientation](../api/timeline/#orientation) property.
+The Timeline control supports displaying items in both horizontal and vertical directions using the [`orientation`](../api/timeline/#orientation) property.
 
 ## Vertical Orientation
 
-You can display items vertically, one below the other, by setting the [orientation](../api/timeline/#orientation) property to `Vertical`. By default, the items are displayed in vertical orientation.
+You can display items vertically, one below the other, by setting the [`orientation`](../api/timeline/#orientation) property to `Vertical`. By default, the items are displayed in vertical orientation.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -52,7 +52,7 @@ You can display items vertically, one below the other, by setting the [orientati
 
 ## Horizontal Orientation
 
-In horizontal orientation, items are displayed side-by-side by setting the [orientation](../api/timeline/#orientation) property to `Horizontal`.
+In horizontal orientation, items are displayed side-by-side by setting the [`orientation`](../api/timeline/#orientation) property to `Horizontal`.
 
 {% if page.publishingplatform == "typescript" %}
 

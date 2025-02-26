@@ -1,10 +1,10 @@
 import { Timeline, TimelineItemModel } from '@syncfusion/ej2-layouts';
 
 const projectMilestones: TimelineItemModel[] = [
-  { content: 'Kickoff meeting'},
-  { content: 'Content approved'},
-  { content: 'Design approved'},
-  { content: 'Product delivered'}
+  { content: 'Kickoff meeting' },
+  { content: 'Content approved' },
+  { content: 'Design approved' },
+  { content: 'Product delivered' }
 ];
 
 // Initializes the Timeline control

@@ -1,10 +1,8 @@
-
-
 import { Tooltip } from '@syncfusion/ej2-popups';
 import { RadioButton, ChangeArgs, Button } from '@syncfusion/ej2-buttons';
 
 let tooltip: Tooltip = new Tooltip({
-   cssClass: 'curvetips e-tooltip-css',
+    cssClass: 'curvetips e-tooltip-css',
     content: 'Tooltip arrow customized',
 });
 tooltip.appendTo('#target');
@@ -18,12 +16,12 @@ tipbutton.appendTo('#tooltip');
 let bubblebutton: Button = new Button();
 bubblebutton.appendTo('#bubbletip');
 
-let curveRadio: RadioButton = new RadioButton({ label: 'TopCenter', name: 'default', value: 'TopCenter', checked: true, change: onChange});
+let curveRadio: RadioButton = new RadioButton({ label: 'TopCenter', name: 'default', value: 'TopCenter', checked: true, change: onChange });
 
 // Render initialized radio button
 curveRadio.appendTo('#element1');
 
-let curveRadioLeft = new RadioButton({ label: 'BottomLeft', name: 'default', value: 'BottomLeft',  change: onChange});
+let curveRadioLeft = new RadioButton({ label: 'BottomLeft', name: 'default', value: 'BottomLeft', change: onChange });
 curveRadioLeft.appendTo('#element2');
 
 let tippointer: Tooltip = new Tooltip({
@@ -41,12 +39,12 @@ let bubble: Tooltip = new Tooltip({
 });
 bubble.appendTo('#bubbletip');
 
-let bubbleRadio: RadioButton = new RadioButton({ label: 'BottomLeft', name: 'position', value: 'BottomLeft', change: onChanged});
+let bubbleRadio: RadioButton = new RadioButton({ label: 'BottomLeft', name: 'position', value: 'BottomLeft', change: onChanged });
 
 // Render initialized radio button
 bubbleRadio.appendTo('#radio1');
 
-let radiobutton = new RadioButton({ label: 'TopRight', name: 'position', value: 'TopRight',  checked: true, change: onChanged});
+let radiobutton = new RadioButton({ label: 'TopRight', name: 'position', value: 'TopRight', checked: true, change: onChanged });
 radiobutton.appendTo('#radio2');
 
 function onChange(args: ChangeArgs): void {
@@ -55,13 +53,10 @@ function onChange(args: ChangeArgs): void {
 }
 function onChanged(args: ChangeArgs): void {
     bubble.position = args.value as any;
-    if(bubble.position == 'BottomLeft'){
-      bubble.offsetY = -30;
+    if (bubble.position == 'BottomLeft') {
+        bubble.offsetY = -30;
     } else {
-      bubble.offsetY = 0;
+        bubble.offsetY = 0;
     }
     bubble.dataBind();
 }
-
-
-

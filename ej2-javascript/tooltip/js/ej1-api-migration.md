@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Tooltip control
 
-This article describes the API migration process of Tooltip component from Essential JS 1 to Essential JS 2
+This article describes the API migration process of Tooltip control from Essential JS 1 to Essential JS 2
 
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |

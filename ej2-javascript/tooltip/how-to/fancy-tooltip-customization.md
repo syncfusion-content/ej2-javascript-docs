@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Fancy tooltip customization in ##Platform_Name## Tooltip control | Syncfusion
-description: Learn here all about Fancy tooltip customization in Syncfusion ##Platform_Name## Tooltip control of Syncfusion Essential JS 2 and more.
+title: Fancy Tooltip customization in ##Platform_Name## Tooltip control | Syncfusion
+description: Learn here all about Fancy Tooltip customization in Syncfusion ##Platform_Name## Tooltip control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Fancy tooltip customization 
+control: Fancy Tooltip customization
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Fancy tooltip customization in ##Platform_Name## Tooltip control
+# Fancy Tooltip customization in ##Platform_Name## Tooltip control
 
-The arrow of the tooltip can be customized as needed by customizing CSS in the sample-side. The EJ2 tooltip component is achieved through CSS3 format and positioned the tip arrow according to the tooltip positions like `TopCenter`, `BottomLeft`, `RightTop`, and more.
+The arrow of the Tooltip can be customized as needed by altering the CSS in the sample-side. The EJ2 Tooltip control is implemented using CSS3 formatting, allowing the tip arrow to be positioned according to the Tooltip positions like `TopCenter`, `BottomLeft`, `RightTop`, and more.
 
-Here, the tip arrow is customized as Curved tooltip and Bubble tooltip.
+Here, the tip arrow is customized as Curved Tooltip and Bubble Tooltip.
 
 ## Curved tip
 
-The content for the tip pointer arrow has been added. To customize the curved tip arrow, override the following CSS class of tip arrow.
+To customize the curved tip arrow, override the following CSS class for the tip arrow:
 
 ```ts
     let tooltip: Tooltip = new Tooltip({
@@ -71,21 +71,24 @@ bubble.appendTo('#bubbletip');
         }
 ```
 
-These tip arrow customizations have been achieved through CSS changes in the sample level. The tooltip position can be changed by using the radio button click event.
+These tip arrow customizations are achieved through CSS changes at the sample level. The Tooltip position can be changed using the radio button click event.
 
-The arrow tip pointer can also be disabled by using the [`showTipPointer`](../../api/tooltip/#showtippointer) property in a tooltip.
+The arrow tip pointer can also be disabled by using the [`showTipPointer`](../../api/tooltip/#showtippointer) property in a Tooltip.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/tooltip/tip-customization-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/tooltip/tip-customization-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/tooltip/tip-customization-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/tooltip/tip-customization-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -96,6 +99,9 @@ The arrow tip pointer can also be disabled by using the [`showTipPointer`](../..
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/tooltip/tip-customization-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/tooltip/tip-customization-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

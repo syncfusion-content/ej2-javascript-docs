@@ -2,31 +2,71 @@
 <html lang="en">
 
 <head>
-    <title>EJ2 Tooltip</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript UI Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/material.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-popups/styles/material.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-buttons/styles/material.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
+  <title>EJ2 Tooltip</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Typescript UI Controls" />
+  <meta name="author" content="Syncfusion" />
+  <link href="index.css" rel="stylesheet" />
+  <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/material.css" rel="stylesheet" />
+  <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-popups/styles/material.css" rel="stylesheet" />
+  <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-buttons/styles/material.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+  <script src="systemjs.config.js"></script>
 </head>
 
 <body>
-    <div id='loader'>Loading....</div>
-    <div id="container">
-        <div id="tooltip">
-            <h2>HTML Tags</h2>
-        Through templates, <b><span style="color:#e3165b">tooltip content</span></b> can be loaded with <u><i> inline HTML, images, iframe, videos, maps </i></u>. A title can be added to the content</div>
-        <div id="tooltipContent">
-          <div class="content">
-             <button class="text" id="Title">HTML(With Title)</button>
-          </div>
-        </div>
+  <div id='loader'>Loading....</div>
+  <div id="container">
+    <div id="tooltip">
+      <h2>HTML Tags</h2>
+      Through templates, <b><span style="color:#e3165b">tooltip content</span></b> can be loaded with <u><i> inline
+          HTML, images, iframe, videos, maps </i></u>. A title can be added to the content
+    </div>
+    <div id="tooltipContent">
+      <div class="content">
+        <button class="text" id="Title">HTML(With Title)</button>
       </div>
+    </div>
+  </div>
+  <style>
+    #tooltipContent table {
+      margin: 0 auto;
+    }
+
+    #tooltip {
+      display: none;
+    }
+
+    #tooltipContent {
+      display: inline-block;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 100px;
+    }
+
+    .text {
+      text-transform: capitalize;
+      width: 155px;
+    }
+
+    .header {
+      font-family: "Arial Black", Gadget, sans-serif;
+      font-size: 12px;
+      padding-bottom: 2px;
+      margin: 4px -7px 7px -7px;
+      padding-right: 5px;
+      padding-left: 6px;
+      font-weight: bold;
+      height: 18px;
+      border-bottom: 1px solid white;
+    }
+
+    .e-tooltip-css.e-tooltip-wrap .e-tip-content {
+      padding: 0 10px 10px 10px;
+    }
+  </style>
 </body>
 
 </html>

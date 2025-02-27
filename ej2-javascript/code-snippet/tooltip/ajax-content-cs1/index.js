@@ -20,5 +20,3 @@ function onBeforeRender(args) {
         this.dataBind();
     });
 }
-
-

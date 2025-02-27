@@ -1,7 +1,4 @@
-
-
 import { Tooltip } from '@syncfusion/ej2-popups';
-import { Button } from '@syncfusion/ej2-buttons';
 
 //Render tooltip component
 let square: Tooltip = new Tooltip({
@@ -59,6 +56,3 @@ context.beginPath();
 context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
 context.fillStyle = '#0450C2';
 context.fill();
-
-
-

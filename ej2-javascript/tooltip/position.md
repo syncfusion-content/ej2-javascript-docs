@@ -3,7 +3,7 @@ layout: post
 title: Position in ##Platform_Name## Tooltip control | Syncfusion
 description: Learn here all about Position in Syncfusion ##Platform_Name## Tooltip control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Position 
+control: Position
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Position in ##Platform_Name## Tooltip control
 
-Tooltips can be attached to 12 static locations around the target. On initializing the Tooltip, you can set the position property with any one of the following values:
+Tooltips can be attached to 12 static locations around the target. When initializing the Tooltip, you can set the [`position`](../api/tooltip#position) property with any one of the following values:
 
 * `TopLeft`
 * `TopCenter`
@@ -37,8 +37,11 @@ Tooltips can be attached to 12 static locations around the target. On initializi
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/tooltip/position/default-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/tooltip/position/default-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/tooltip/position/default-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -50,14 +53,17 @@ Tooltips can be attached to 12 static locations around the target. On initializi
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/tooltip/position/default-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/tooltip/position/default-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
-
+        
 {% previewsample "page.domainurl/code-snippet/tooltip/position/default-cs1" %}
 {% endif %}
 
 ## Tip pointer positioning
 
-The Tooltip pointer can be attached or detached from the Tooltip by using the `showTipPointer` property. Pointer positions can be adjusted using the `tipPointerPosition` property that can be assigned to one of the following values:
+The Tooltip pointer can be attached or detached from the Tooltip by using the [`showTipPointer`](../api/tooltip#showtippointer) property. Pointer positions can be adjusted using the `tipPointerPosition` property, which can be assigned to one of the following values:
 
 * `Auto`
 * `Start`
@@ -65,7 +71,6 @@ The Tooltip pointer can be attached or detached from the Tooltip by using the `s
 * `End`
 
 The following code example illustrates how to set the pointer to the start position of the Tooltip.
-
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
@@ -75,10 +80,12 @@ The following code example illustrates how to set the pointer to the start posit
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/tooltip/position/tip-position-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/tooltip/position/tip-position-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/tooltip/position/tip-position-cs1" %}
 
+{% previewsample "page.domainurl/code-snippet/tooltip/position/tip-position-cs1" %}
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
@@ -88,26 +95,31 @@ The following code example illustrates how to set the pointer to the start posit
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/tooltip/position/tip-position-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/tooltip/position/tip-position-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/tooltip/position/tip-position-cs1" %}
 {% endif %}
 
-By default, tip pointers are auto adjusted so that the arrow does not point outside the target element.
+By default, tip pointers are auto-adjusted so that the arrow does not point outside the target element.
 
 ## Dynamic positioning
 
-The Tooltip and its tip pointer can be positioned dynamically based on the target's location. This can be achieved by using the `refresh`
-method, which auto adjusts the Tooltip over the target.
+The Tooltip and its tip pointer can be positioned dynamically based on the target's location. This can be achieved using the [`refresh`](../api/tooltip#refresh) method, which auto-adjusts the Tooltip over the target.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/tooltip/position/dynamic-position-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/tooltip/position/dynamic-position-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/tooltip/position/dynamic-position-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -122,6 +134,9 @@ method, which auto adjusts the Tooltip over the target.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/tooltip/position/dynamic-position-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/tooltip/position/dynamic-position-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/tooltip/position/dynamic-position-cs1" %}
@@ -129,16 +144,19 @@ method, which auto adjusts the Tooltip over the target.
 
 ## Mouse trailing
 
-Tooltips can be positioned relative to the mouse pointer. This behavior can be enabled or disabled by using the `mouseTrail` property. By default, it is set to `false`.
+Tooltips can be positioned relative to the mouse pointer. This behavior can be enabled or disabled by using the [`mouseTrail`](../api/tooltip#mousetrail) property. By default, it is set to `false`.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/tooltip/position/mouse-trail-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/tooltip/position/mouse-trail-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/tooltip/position/mouse-trail-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -153,31 +171,36 @@ Tooltips can be positioned relative to the mouse pointer. This behavior can be e
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/tooltip/position/mouse-trail-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/tooltip/position/mouse-trail-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/tooltip/position/mouse-trail-cs1" %}
 {% endif %}
 
-> When mouse trailing option is enabled, the tip pointer position gets auto adjusted based on the target, and
-> other position values like start, end, and middle are not applied (to prevent the pointer from moving out of target).
+> When the mouse trailing option is enabled, the tip pointer position is auto-adjusted based on the target, and other position values like start, end, and middle are not applied (to prevent the pointer from moving out of the target).
 
 ## Setting offset values
 
-Offset values are set to specify the distance between the target and tooltip element. `offsetX` and `offsetY` properties are used to specify the offset left and top values.
+Offset values are set to specify the distance between the target and the Tooltip element. The [`offsetX`](../api/tooltip#offsetx) and [`offsetY`](../api/tooltip#offsety) properties are used to specify the offset left and top values.
 
-* `offsetX` specifies the distance between the target and Tooltip element in X axis.
-* `offsetY` specifies the distance between the target and Tooltip element in Y axis.
+* `offsetX` specifies the distance between the target and Tooltip element on the X axis.
+* `offsetY` specifies the distance between the target and Tooltip element on the Y axis.
 
 The following code example illustrates how to set offset values.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/tooltip/position/offset-value-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/tooltip/position/offset-value-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/tooltip/position/offset-value-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -192,9 +215,12 @@ The following code example illustrates how to set offset values.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/tooltip/position/offset-value-cs1/index.html %}
 {% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/tooltip/position/offset-value-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/tooltip/position/offset-value-cs1" %}
 {% endif %}
 
-> By default, collision is handled automatically and therefore when collision is detected the Tooltip fits horizontally and flips vertically.
+> By default, collision is handled automatically; therefore, when a collision is detected, the Tooltip fits horizontally and flips vertically.

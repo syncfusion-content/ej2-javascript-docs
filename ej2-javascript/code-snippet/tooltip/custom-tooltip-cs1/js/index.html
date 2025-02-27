@@ -1,4 +1,7 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <title>EJ2 Tooltip</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +10,117 @@
     <link href="index.css" rel="stylesheet">
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/material.css" rel="stylesheet">
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-popups/styles/material.css" rel="stylesheet">
-    
-    
-<script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 
 <body>
-    
     <div id="container">
         <div id="target" title="Tooltip customized">
             Show tooltip
         </div>
     </div>
 
+    <script>
+        var ele = document.getElementById('container');
+        if (ele) {
+            ele.style.visibility = "visible";
+        }   
+    </script>
+    <script src="index.js" type="text/javascript"></script>
+    <style>
+        #target {
+            background-color: #cfd8dc;
+            border: 3px solid #eceff1;
+            box-sizing: border-box;
+            margin: 80px auto;
+            padding: 20px 0;
+            width: 200px;
+            text-align: center;
+            color: #424242;
+            font-size: 20px;
+            user-select: none;
+        }
 
-<script>
-var ele = document.getElementById('container');
-if(ele) {
-  ele.style.visibility = "visible";
-}   
-      </script>
-<script src="index.js" type="text/javascript"></script>
-</body></html>
+        /* csslint ignore:start */
+
+        .customtooltip.e-tooltip-wrap .e-tip-content {
+            line-height: 20px;
+        }
+
+        .customtooltip.e-tooltip-wrap .e-arrow-tip.e-tip-bottom {
+            height: 12px;
+            left: 50%;
+            top: 100%;
+            width: 24px;
+        }
+
+        .customtooltip.e-tooltip-wrap .e-arrow-tip.e-tip-top {
+            height: 12px;
+            left: 50%;
+            top: -9px;
+            width: 24px;
+        }
+
+        .customtooltip.e-tooltip-wrap .e-arrow-tip.e-tip-left {
+            height: 24px;
+            left: -9px;
+            top: 48%;
+            width: 12px;
+        }
+
+        .customtooltip.e-tooltip-wrap .e-arrow-tip.e-tip-right {
+            height: 24px;
+            left: 100%;
+            top: 50%;
+            width: 12px;
+        }
+
+        .customtooltip.e-tooltip-wrap {
+            border-radius: 4px;
+            opacity: 1;
+        }
+
+        .customtooltip.e-tooltip-wrap.e-popup {
+            background-color: #fff;
+            border: 2px solid #000;
+        }
+
+        .customtooltip.e-tooltip-wrap .e-tip-content {
+            color: #000;
+            font-size: 12px;
+        }
+
+        .customtooltip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-bottom {
+            border-left: 12px solid transparent;
+            border-right: 14px solid transparent;
+            border-top: 12px solid #000;
+        }
+
+        .customtooltip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-top {
+            border-bottom: 12px solid #000;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+        }
+
+        .customtooltip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-left {
+            border-bottom: 12px solid transparent;
+            border-right: 12px solid #000;
+            border-top: 12px solid transparent;
+        }
+
+        .customtooltip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-right {
+            border-bottom: 12px solid transparent;
+            border-left: 12px solid #000;
+            border-top: 12px solid transparent;
+        }
+
+        .customtooltip.e-tooltip-wrap .e-arrow-tip-inner.e-tip-bottom {
+            color: #fff;
+            font-size: 25.9px;
+        }
+
+        /* csslint ignore:end */
+    </style>
+</body>
+
+</html>

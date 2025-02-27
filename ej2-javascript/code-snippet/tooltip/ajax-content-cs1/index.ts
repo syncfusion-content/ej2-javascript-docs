@@ -1,13 +1,11 @@
-
-
 import { Tooltip, TooltipEventArgs } from '@syncfusion/ej2-popups';
 import { Ajax } from '@syncfusion/ej2-base';
 
 let tooltip: Tooltip = new Tooltip({
-        content: 'Loading...',
-        target: '.target',
-        position: 'RightCenter',
-        beforeRender: onBeforeRender
+    content: 'Loading...',
+    target: '.target',
+    position: 'RightCenter',
+    beforeRender: onBeforeRender
 });
 tooltip.appendTo('#targetContainer');
 
@@ -28,6 +26,3 @@ function onBeforeRender(args: TooltipEventArgs): void {
             this.dataBind();
         });
 }
-
-
-

@@ -3,8 +3,9 @@ var tooltip = new ej.popups.Tooltip({
     target: '#demoSmart',
     animation: { open: { effect: 'None' }, close: { effect: 'None' } }
 }, '#targetContainer');
-var ele = document.getElementById('demoSmart');
-var drag = new ej.base.Draggable(ele, {
+var element = document.getElementById('demoSmart');
+
+var drag = new ej.base.Draggable(element, {
     clone: false,
     dragArea: '#targetContainer',
     drag: (args) => {
@@ -17,5 +18,3 @@ var drag = new ej.base.Draggable(ele, {
         tooltip.close();
     }
 });
-
-

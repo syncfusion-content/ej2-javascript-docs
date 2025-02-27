@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 The Dropdown Tree control allows you to check multiple items from the tree without affecting the UI's appearance by enabling the [`showCheckBox`](../api/drop-down-tree/#showcheckbox) property. When this property is enabled, a checkbox appears before each item text in the popup.
 
-In the following example, the `showCheckBox` property is enabled.
+In the following example, the [`showCheckBox`](../api/drop-down-tree/#showcheckbox) property is enabled.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -58,7 +58,7 @@ By default, the checkbox state of the parent and child items in the Dropdown Tre
 
 * If a parent item is checked, all the child items will also be checked.
 
-In the following example, the `autoCheck` property is enabled.
+In the following example, the [`autoCheck`](../api/drop-down-tree/treeSettingsModel/#autocheck) property is enabled.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -15,9 +15,9 @@ The Dropdown Tree control provides support to customize each list item, header, 
 
 ## Item template
 
-The content of each list item within the Dropdown Tree control can be customized using the [itemTemplate](../api/drop-down-tree#itemtemplate) property.
+The content of each list item within the Dropdown Tree control can be customized using the [`itemTemplate`](../api/drop-down-tree#itemtemplate) property.
 
-In the following sample, Dropdown Tree list items are customized with employee information such as **name** and **job** using the **itemTemplate** property.
+In the following sample, Dropdown Tree list items are customized with employee information such as **name** and **job** using the [`itemTemplate`](../api/drop-down-tree#itemtemplate) property.
 
 The template expression should be provided inside the ${...} interpolation syntax.
 
@@ -50,7 +50,7 @@ The template expression should be provided inside the ${...} interpolation synta
 
 ## Value template
 
-The currently selected value displayed by default on the Dropdown Tree input element can be customized using the [valueTemplate](../api/drop-down-tree/#valuetemplate) property.
+The currently selected value displayed by default on the Dropdown Tree input element can be customized using the [`valueTemplate`](../api/drop-down-tree/#valuetemplate) property.
 
 In the following sample, the selected value is displayed as a combined text of both `Name` and `Job` in the Dropdown Tree input, separated by a hyphen.
 
@@ -83,7 +83,7 @@ In the following sample, the selected value is displayed as a combined text of b
 
 ## Header template
 
-The header element is statically shown at the top of the popup list items within the Dropdown Tree control. A custom element can be placed as a header element using the [headerTemplate](../api/drop-down-tree/#headertemplate) property.
+The header element is statically shown at the top of the popup list items within the Dropdown Tree control. A custom element can be placed as a header element using the [`headerTemplate`](../api/drop-down-tree/#headertemplate) property.
 
 In the following sample, the header is customized using a custom element.
 
@@ -116,7 +116,7 @@ In the following sample, the header is customized using a custom element.
 
 ## Footer template
 
-The Dropdown Tree control has options to display a footer element at the bottom of the list items in the popup list. A custom element can be placed as a footer element using the [footerTemplate](../api/drop-down-tree/#footertemplate) property.
+The Dropdown Tree control has options to display a footer element at the bottom of the list items in the popup list. A custom element can be placed as a footer element using the [`footerTemplate`](../api/drop-down-tree/#footertemplate) property.
 
 In the following sample, the footer element displays the total number of employees present in the Dropdown Tree control.
 
@@ -149,7 +149,7 @@ In the following sample, the footer element displays the total number of employe
 
 ## No Records template
 
-The Dropdown Tree control can display custom designs in the popup list content using the [noRecordsTemplate](../api/drop-down-tree/#norecordstemplate) property when no matches are found during a search and datasource is empty.
+The Dropdown Tree control can display custom designs in the popup list content using the [`noRecordsTemplate`](../api/drop-down-tree/#norecordstemplate) property when no matches are found during a search and datasource is empty.
 
 In the following sample, the popup list content displays a notification of no data available.
 
@@ -182,7 +182,7 @@ In the following sample, the popup list content displays a notification of no da
 
 ## Action failure template
 
-The Dropdown Tree control provides an option to custom design the popup list content using the [actionFailureTemplate](../api/drop-down-tree/#actionfailuretemplate) property when the data fetch request fails at the remote server.
+The Dropdown Tree control provides an option to custom design the popup list content using the [`actionFailureTemplate`](../api/drop-down-tree/#actionfailuretemplate) property when the data fetch request fails at the remote server.
 
 In the following sample, when the data fetch request fails, the Dropdown Tree control displays a notification.
 
@@ -215,11 +215,11 @@ In the following sample, when the data fetch request fails, the Dropdown Tree co
 
 ## Custom template to show selected items in input
 
-In the Dropdown Tree control, while selecting more than one item via checkbox or multi-selection support, all the selected items will be displayed in the input. Instead of displaying all the selected item text, a custom template can be displayed by setting the [mode](../api/drop-down-tree/#mode) property as ***Custom*** and using the [customTemplate](../api/drop-down-tree/#customTemplate) property.
+In the Dropdown Tree control, while selecting more than one item via checkbox or multi-selection support, all the selected items will be displayed in the input. Instead of displaying all the selected item text, a custom template can be displayed by setting the [`mode`](../api/drop-down-tree/#mode) property as ***Custom*** and using the [`customTemplate`](../api/drop-down-tree/#customtemplate) property.
 
-When the **mode** property is set as **Custom**, the Dropdown Tree control displays the default template value **(${value.length} item(s) selected)** like **1 item(s) selected or 2 item(s) selected**. The default template can be customized using the **customTemplate** property.
+When the [`mode`](../api/drop-down-tree/#mode) property is set as **Custom**, the Dropdown Tree control displays the default template value **(${value.length} item(s) selected)** like **1 item(s) selected or 2 item(s) selected**. The default template can be customized using the [`customTemplate`](../api/drop-down-tree/#customtemplate) property.
 
-In the following sample, the Dropdown Tree control is rendered with the default value of the **customTemplate** property like “**1 item(s) selected or 2 item(s) selected**”.
+In the following sample, the Dropdown Tree control is rendered with the default value of the [`customTemplate`](../api/drop-down-tree/#customtemplate) property like “**1 item(s) selected or 2 item(s) selected**”.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -248,7 +248,7 @@ In the following sample, the Dropdown Tree control is rendered with the default 
 {% previewsample "page.domainurl/code-snippet/dropdowntree/custom-template-mode-cs1" %}
 {% endif %}
 
-In the following sample, the Dropdown Tree control is rendered with a custom value of the **customTemplate** property like **Selected items count: 2**.
+In the following sample, the Dropdown Tree control is rendered with a custom value of the [`customTemplate`](../api/drop-down-tree/#customtemplate) property like **Selected items count: 2**.
 
 {% if page.publishingplatform == "typescript" %}
 

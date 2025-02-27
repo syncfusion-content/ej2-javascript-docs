@@ -1,6 +1,6 @@
 var tooltip = new ej.popups.Tooltip({
-   cssClass: 'curvetips e-tooltip-css',
-   content: 'Tooltip arrow customized',
+  cssClass: 'curvetips e-tooltip-css',
+  content: 'Tooltip arrow customized',
 });
 tooltip.appendTo('#target');
 
@@ -13,51 +13,47 @@ tipbutton.appendTo('#tooltip');
 var bubblebutton = new ej.buttons.Button();
 bubblebutton.appendTo('#bubbletip');
 
-var curveRadio = new ej.buttons.RadioButton({ label: 'TopCenter', name: 'default', value: 'TopCenter', checked: true, change: onChange});
+var curveRadio = new ej.buttons.RadioButton({ label: 'TopCenter', name: 'default', value: 'TopCenter', checked: true, change: onChange });
 
 // Render initialized RadioButton.
 curveRadio.appendTo('#element1');
 
-var curveRadioLeft = new ej.buttons.RadioButton({ label: 'BottomLeft', name: 'default', value: 'BottomLeft',  change: onChange});
+var curveRadioLeft = new ej.buttons.RadioButton({ label: 'BottomLeft', name: 'default', value: 'BottomLeft', change: onChange });
 curveRadioLeft.appendTo('#element2');
 
 var tippointer = new ej.popups.Tooltip({
-    cssClass: 'pointertip e-tooltip-css',
-    mouseTrail: true,
-    content: 'Disabled tooltip pointer',
-    showTipPointer: false
+  cssClass: 'pointertip e-tooltip-css',
+  mouseTrail: true,
+  content: 'Disabled tooltip pointer',
+  showTipPointer: false
 });
 tippointer.appendTo('#tooltip');
 
 var bubble = new ej.popups.Tooltip({
-    cssClass: 'bubbletip e-tooltip-css',
-    position: 'TopRight',
-    content: 'Tooltip arrow customized as balloon tip'
+  cssClass: 'bubbletip e-tooltip-css',
+  position: 'TopRight',
+  content: 'Tooltip arrow customized as balloon tip'
 });
 bubble.appendTo('#bubbletip');
 
-var bubbleRadio = new ej.buttons.RadioButton({ label: 'BottomLeft', name: 'position', value: 'BottomLeft', change: onChanged});
+var bubbleRadio = new ej.buttons.RadioButton({ label: 'BottomLeft', name: 'position', value: 'BottomLeft', change: onChanged });
 
 // Render initialized RadioButton.
 bubbleRadio.appendTo('#radio1');
 
-var radiobutton = new ej.buttons.RadioButton({ label: 'TopRight', name: 'position', value: 'TopRight',  checked: true, change: onChanged});
+var radiobutton = new ej.buttons.RadioButton({ label: 'TopRight', name: 'position', value: 'TopRight', checked: true, change: onChanged });
 radiobutton.appendTo('#radio2');
 
 function onChange(args) {
-    tooltip.position = args.value;
-    tooltip.dataBind();
+  tooltip.position = args.value;
+  tooltip.dataBind();
 }
 function onChanged(args) {
-    bubble.position = args.value;
-    if(bubble.position == 'BottomLeft'){
-      bubble.offsetY = -30;
-    } else {
-      bubble.offsetY = 0;
-    }
-    bubble.dataBind();
+  bubble.position = args.value;
+  if (bubble.position == 'BottomLeft') {
+    bubble.offsetY = -30;
+  } else {
+    bubble.offsetY = 0;
+  }
+  bubble.dataBind();
 }
-
-
-
-

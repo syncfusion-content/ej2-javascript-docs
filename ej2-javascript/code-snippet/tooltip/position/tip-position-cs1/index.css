@@ -10,10 +10,3 @@
   top: 45%;
   width: 30%;
 }
-
-#target {
-  position: relative;
-  left: 50%;
-  margin-top: 100px;
-  transform: translateX(-50%)
-}

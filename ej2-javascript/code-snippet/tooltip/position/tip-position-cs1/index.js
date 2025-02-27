@@ -3,7 +3,5 @@ var tooltip = new ej.popups.Tooltip({
 });
 tooltip.appendTo('#target');
 
-var button = new ej.buttons.Button({content: 'Show Tooltip'});
+var button = new ej.buttons.Button({ content: 'Show Tooltip' });
 button.appendTo('#target');
-
-

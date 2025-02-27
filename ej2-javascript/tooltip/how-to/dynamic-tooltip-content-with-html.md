@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Dynamic tooltip content with html in ##Platform_Name## Tooltip control | Syncfusion
-description: Learn here all about Dynamic tooltip content with html in Syncfusion ##Platform_Name## Tooltip control of Syncfusion Essential JS 2 and more.
+title: Dynamic Tooltip content with html in ##Platform_Name## Tooltip control | Syncfusion
+description: Learn here all about Dynamic Tooltip content with html in Syncfusion ##Platform_Name## Tooltip control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Dynamic tooltip content with html 
+control: Dynamic Tooltip content with html
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dynamic tooltip content with html in ##Platform_Name## Tooltip control
+# Dynamic content with html element in ##Platform_Name## Tooltip control
 
-The Tooltip component loads HTML tags using the [content](../content/) template.
+The Tooltip control can load HTML content using the [content](../content/) template.
 
 The HTML tags such as `<div>`, `<span>`, `bold`, `italic`, `underline`, etc., can be used. Style attributes can also be applied with HTML tags.
 
-Here, Bold, Italic, Underline, and Anchor tags are used.
+In the example below, Bold, Italic, Underline, and Anchor tags are used.
 
-When using HTML elements as content to `Tooltip` make the content element `display: none`, then from the [`beforeRender`](../../api/tooltip/#beforerender) event we can make the element visible again using below code.
+When using HTML elements as content for a `Tooltip`, initially set the content element to `display: none`. Then, within the [`beforeRender`](../../api/tooltip/#beforerender) event, you can make the element visible again using the following code:
 
 ```ts
     document.getElementById('content').style.display = 'block';
@@ -25,12 +25,15 @@ When using HTML elements as content to `Tooltip` make the content element `displ
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/tooltip/html-content-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/tooltip/html-content-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/tooltip/html-content-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -44,6 +47,9 @@ When using HTML elements as content to `Tooltip` make the content element `displ
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/tooltip/html-content-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/tooltip/html-content-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

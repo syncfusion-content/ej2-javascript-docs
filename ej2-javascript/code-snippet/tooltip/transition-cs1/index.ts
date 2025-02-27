@@ -1,6 +1,5 @@
-
-
 import { Tooltip, TooltipEventArgs } from '@syncfusion/ej2-popups';
+
 let tooltip: Tooltip = new Tooltip({
     target: '.circletool',
     closeDelay: 1000,
@@ -22,6 +21,3 @@ function onAfterClose(args: TooltipEventArgs): void {
     this.animation = { open: { effect: 'ZoomIn', duration: 500 }, close: { effect: 'ZoomOut', duration: 500 } };
 }
 tooltip.appendTo('#box');
-
-
-

@@ -13,4 +13,3 @@ document.getElementById('target').addEventListener("click", function () {
         tooltip.open(this, openAnimation);
     }
 });
-

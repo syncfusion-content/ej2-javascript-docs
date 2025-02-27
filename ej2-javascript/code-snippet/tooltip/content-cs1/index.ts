@@ -1,5 +1,3 @@
-
-
 import { Tooltip } from '@syncfusion/ej2-popups';
 
 let tooltipContent: HTMLElement = document.createElement("div");
@@ -8,6 +6,3 @@ let tooltip: Tooltip = new Tooltip({
     content: tooltipContent
 });
 tooltip.appendTo('#target');
-
-
-

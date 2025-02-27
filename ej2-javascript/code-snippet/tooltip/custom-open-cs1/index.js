@@ -11,4 +11,3 @@ document.getElementById('box').addEventListener("dblclick", function () {
         tooltip.open(this);
     }
 });
-

@@ -1,6 +1,3 @@
-
-
-
 import { Tooltip } from '@syncfusion/ej2-popups';
 
 let tooltipContent: HTMLElement = document.createElement("div");
@@ -14,6 +11,3 @@ let tooltip: Tooltip = new Tooltip({
     isSticky: true
 });
 tooltip.appendTo('#target');
-
-
-

@@ -1,7 +1,6 @@
-
-
 import { Tooltip } from '@syncfusion/ej2-popups';
 import { Button } from '@syncfusion/ej2-buttons';
+
 let hoverTooltip: Tooltip = new Tooltip({
     opensOn: 'Hover',
     content: 'Tooltip from hover'
@@ -31,12 +30,10 @@ let customTooltip: Tooltip = new Tooltip({
 customTooltip.appendTo('#tooltipcustom');
 button.appendTo('#tooltipopen');
 
-document.getElementById('tooltipopen').addEventListener("click", function () {
+document.getElementById('tooltipopen')?.addEventListener("click", function () {
     if (this.getAttribute("data-tooltip-id")) {
         customTooltip.close();
     } else {
         customTooltip.open(this);
     }
 });
-
-

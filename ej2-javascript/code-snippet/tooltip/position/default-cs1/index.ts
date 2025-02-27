@@ -1,10 +1,8 @@
-
-
 import { Tooltip } from '@syncfusion/ej2-popups';
 import { DropDownList } from '@syncfusion/ej2-dropdowns';
 import { Button } from '@syncfusion/ej2-buttons';
 
-let button: Button = new Button({content: 'Show Tooltip'});
+let button: Button = new Button({ content: 'Show Tooltip' });
 button.appendTo('#tooltip');
 
 let tooltip: Tooltip = new Tooltip({
@@ -22,6 +20,3 @@ function dropChange() {
   tooltip.close();
   tooltip.position = this.value;
 }
-
-
-

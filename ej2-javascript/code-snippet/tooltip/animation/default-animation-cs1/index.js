@@ -6,4 +6,3 @@ var tooltip = new ej.popups.Tooltip({
     }
 });
 tooltip.appendTo('#target');
-

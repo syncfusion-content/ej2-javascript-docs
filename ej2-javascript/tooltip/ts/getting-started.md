@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with ##Platform_Name## Tooltip control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Tooltip control of Syncfusion Essential JS 2 and more details.
+description: Checkout and learn about Getting started with ##Platform_Name## Tooltip control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -15,10 +15,10 @@ This section briefly explains how to create a simple **Tooltip** control and con
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
-Tooltips can be initialized on,
+Tooltip can be initialized on:
 
-* A single element (or)
-* A container that has more than one sub-element within it and the sub-elements are considered as targets.
+* A single element, or
+* A container that has more than one sub-element within it, and the sub-elements are considered as targets.
 
 ## Dependencies
 
@@ -56,7 +56,7 @@ cd ej2-quickstart
 
 Syncfusion JavaScript (Essential JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion JavaScript (Essential JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
 
-The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
+The quickstart application is pre configured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
@@ -68,7 +68,7 @@ npm install
 
 ## Import the Syncfusion CSS styles
 
-To render Tootip control, need to import Popups and its dependent controls styles as given below in in the `~/src/styles/styles.css` file, as shown below: 
+To render Tooltip control, need to import Popups and its dependent controls styles as given below in in the `~/src/styles/styles.css` file, as shown below:
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -123,12 +123,12 @@ To render Tootip control, need to import Popups and its dependent controls style
 
 import { Tooltip } from '@syncfusion/ej2-popups';
 
-// initialize tooltip control
+// initialize Tooltip control
 let tooltip: Tooltip = new Tooltip({
     content: 'Tooltip content'
 });
 
-// render initialized tooltip
+// render initialized Tooltip
 tooltip.appendTo('#target');
 
 {% endhighlight %}
@@ -157,7 +157,7 @@ The output will be as follows:
 {% include code-snippet/tooltip/getting-started-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
-          
+
 {% previewsample "page.domainurl/code-snippet/tooltip/getting-started-cs1" %}
 
 > In the above sample code, `#target` is the `id` of the HTML element in a page to which the Tooltip is initialized.
@@ -179,7 +179,7 @@ Refer to the following code example to create a Tooltip on multiple targets with
 {% include code-snippet/tooltip/getting-started-2-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
-          
+
 {% previewsample "page.domainurl/code-snippet/tooltip/getting-started-2-cs2" %}
 
 > In the above sample, `#details` refers to the container's id, and the target `.e-info` refers to the target elements available within that container.

@@ -3,7 +3,7 @@ layout: post
 title: Es5 getting started with ##Platform_Name## Tooltip control | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## Tooltip control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Es5 getting started 
+control: Es5 getting started
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -125,7 +125,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
 {% include code-snippet/tooltip/es5-getting-started-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/tooltip/es5-getting-started-cs1" %}
 
 **Step 4:** Now, run the `index.html` in web browser, it will render the `Essential JS 2 Tooltip` control.

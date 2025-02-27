@@ -10,10 +10,8 @@ title.appendTo('#Title');
 var btn = new ej.buttons.Button();
 btn.appendTo('#Title');
 
-function onBeforeRender(){
-    if(document.getElementById('tooltip')) {
+function onBeforeRender() {
+    if (document.getElementById('tooltip')) {
         document.getElementById('tooltip').style.display = 'block';
     }
 }
-
-

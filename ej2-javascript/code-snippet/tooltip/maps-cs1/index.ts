@@ -1,5 +1,3 @@
-
-
 import { Tooltip } from '@syncfusion/ej2-popups';
 import { Button } from '@syncfusion/ej2-buttons';
 
@@ -14,7 +12,7 @@ let TooltipContent: Tooltip = new Tooltip({
     position: 'BottomCenter',
     opensOn: 'Click',
     width: '350',
-    height: '250'
+    height: '250',
+    enableHtmlSanitizer: false,
 });
 TooltipContent.appendTo('#iframeContent');
-

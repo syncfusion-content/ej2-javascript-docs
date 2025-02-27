@@ -12,7 +12,7 @@ var TooltipContent = new ej.popups.Tooltip({
     position: 'BottomCenter',
     opensOn: 'Click',
     width: '350',
-    height: '250'
+    height: '250',
+    enableHtmlSanitizer: false,
 });
 TooltipContent.appendTo('#iframeContent');
-

@@ -35,5 +35,3 @@ document.getElementById('tooltipopen').addEventListener("click", function () {
         customTooltip.open(this);
     }
 });
-
-

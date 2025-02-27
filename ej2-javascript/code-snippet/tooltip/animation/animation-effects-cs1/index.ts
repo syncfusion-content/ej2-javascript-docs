@@ -1,5 +1,3 @@
-
-
 import { Tooltip, TooltipAnimationSettings } from '@syncfusion/ej2-popups';
 
 let tooltip: Tooltip = new Tooltip({
@@ -8,8 +6,7 @@ let tooltip: Tooltip = new Tooltip({
 });
 tooltip.appendTo('#target');
 
-
-document.getElementById('target').addEventListener("click", function () {
+document.getElementById('target')?.addEventListener("click", function () {
     if (this.getAttribute("data-tooltip-id")) {
         let closeAnimation: TooltipAnimationSettings = { effect: 'FadeOut', duration: 1000 }
         tooltip.close(closeAnimation);
@@ -18,6 +15,3 @@ document.getElementById('target').addEventListener("click", function () {
         tooltip.open(this, openAnimation);
     }
 });
-
-
-

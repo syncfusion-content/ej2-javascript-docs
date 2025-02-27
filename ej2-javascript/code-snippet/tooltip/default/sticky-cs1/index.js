@@ -3,4 +3,3 @@ var tooltip = new ej.popups.Tooltip({
     content: 'Click close icon to close me'
 });
 tooltip.appendTo('#target');
-

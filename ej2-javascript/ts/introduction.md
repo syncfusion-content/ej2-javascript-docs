@@ -68,6 +68,9 @@ letter-spacing: 0.7px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/documentation/pivotview/getting-started">Pivot Table</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/documentation/treegrid/getting-started">TreeGrid</a></div>
          <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/documentation/spreadsheet/getting-started">Spreadsheet</a></div>
+          <div><p class="controlcategory">Interactive Chat</p></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/documentation/ai-assistview/getting-started">AI AssistView</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/documentation/chat-ui/getting-started">Chat UI</a></div>
         <div><p class="controlcategory">FILE VIEWERS & EDITORS</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/documentation/document-editor/getting-started">Document Editor</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/documentation/image-editor/getting-started">Image Editor</a></div>

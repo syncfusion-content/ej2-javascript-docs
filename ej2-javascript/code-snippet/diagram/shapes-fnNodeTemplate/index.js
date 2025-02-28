@@ -28,7 +28,6 @@ var nodes = [
 ];
 
 function template(obj) {
-  debugger;
   let background = '#6BA5D7';
   let name = 'button';
   if (obj.id === 'node1') {

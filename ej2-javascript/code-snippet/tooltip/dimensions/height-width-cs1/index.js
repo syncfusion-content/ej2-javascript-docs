@@ -9,5 +9,3 @@ var button = new ej.buttons.Button({
     content: 'Show Tooltip'
 });
 button.appendTo('#target');
-
-

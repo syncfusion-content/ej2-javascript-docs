@@ -466,5 +466,5 @@ The [`pointRender`](../../api/chart#pointrender) event allows you to customize e
 
 ## See also
 
-* [Data label](../data-labels/)
-* [Tooltip](../tool-tip/)
+* [Data label](../data-labels)
+* [Tooltip](../tool-tip)

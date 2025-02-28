@@ -4,4 +4,3 @@ var tooltip = new ej.popups.Tooltip({
     content: 'Tooltip with delay'
 });
 tooltip.appendTo('#target');
-

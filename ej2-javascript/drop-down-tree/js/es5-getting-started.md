@@ -39,7 +39,7 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 
 **Step 1:** Create an app folder `myapp` for Essential JS 2 JavaScript controls.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2/confirm) build installed location.
+**Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
 **Syntax:**
 > Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -60,7 +60,7 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
-            <title>Essential JS 2</title>
+            <title>Essential JS 2 Dropdown Tree control</title>
             <!-- Essential JS 2 material theme -->
             <link href="resources/base/styles/material.css" rel="stylesheet" type="text/css"/>
             <link href="resources/inputs/styles/material.css" rel="stylesheet" type="text/css"/>
@@ -92,7 +92,7 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
-            <title>Essential JS 2</title>
+            <title>Essential JS 2 Dropdown Tree control</title>
             <!-- Essential JS 2 material theme -->
             <link href="resources/base/styles/material.css" rel="stylesheet" type="text/css"/>
             <link href="resources/inputs/styles/material.css" rel="stylesheet" type="text/css"/>
@@ -150,7 +150,7 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
-            <title>Essential JS 2</title>
+            <title>Essential JS 2 Dropdown Tree control</title>
             <!-- Essential JS 2 Dropdown Tree's dependent material theme -->
             <link href="//cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
             <link href="//cdn.syncfusion.com/ej2/ej2-inputs/styles/material.css" rel="stylesheet" type="text/css"/>

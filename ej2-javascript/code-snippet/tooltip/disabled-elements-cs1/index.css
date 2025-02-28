@@ -15,26 +15,3 @@
     top: 45%;
     width: 30%;
 }
-
-#disabledbutton {
-    pointer-events: none;
-    font-size: 22px;
-    padding: 10px;
-}
-
-.e-tooltip-wrap.e-popup .e-tip-content {
-    padding: 10px;
-    font-size: 14px;
-}
-
-#tooltip {
-    position: relative;
-    transform: translateX(-50%);
-}
-
-.switchContainer {
-    vertical-align: sub;
-    display: inline-block;
-    position: relative;
-    left: 3%;
-}

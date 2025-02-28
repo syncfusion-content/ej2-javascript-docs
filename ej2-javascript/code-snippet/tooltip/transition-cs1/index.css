@@ -10,20 +10,3 @@
   top: 45%;
   width: 30%;
 }
-
-#box {
-  border: 1px solid #c8c8c8;
-  box-sizing: border-box;
-  height: 200px;
-  margin-left: 10px;
-  margin-right: 10px;
-  position: relative;
-}
-
-.circletool {
-  background: yellowgreen;
-  border-radius: 50px;
-  height: 20px;
-  position: absolute;
-  width: 20px;
-}

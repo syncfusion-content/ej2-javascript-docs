@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # Data Binding in ##Platform_Name## Dropdown Tree control
 
-The Dropdown Tree control provides an option to load data either from local data sources or remote data services. This can be done through the [`dataSource`](../api/drop-down-tree/fieldsModel/#datasource) property, which is a member of the [`fields`](../api/drop-down-tree/#fields) property. The `dataSource` property supports an array of JavaScript objects and `DataManager`. It also supports different kinds of data services such as OData, OData V4, Web API, URL, and JSON with the help of `DataManager` adaptors.
+The Dropdown Tree control provides an option to load data either from local data sources or remote data services. This can be done through the [`dataSource`](../api/drop-down-tree/fieldsModel/#datasource) property, which is a member of the [`fields`](../api/drop-down-tree/#fields) property. The [`dataSource`](../api/drop-down-tree/fieldsModel/#datasource) property supports an array of JavaScript objects and `DataManager`. It also supports different kinds of data services such as OData, OData V4, Web API, URL, and JSON with the help of `DataManager` adaptors.
 
 The Dropdown Tree has a `load on demand` (Lazy load) option. It reduces the bandwidth size when consuming large amounts of data. By default, [`loadOnDemand`](../api/drop-down-tree/treeSettingsModel/#loadondemand)  is set to false. When this property is enabled, it loads first-level items initially, and when a parent item is expanded, it loads the child items based on the `parentValue/child` member.
 
 ## Local data
 
-To bind local data to the Dropdown Tree, you can assign a JavaScript object array to the `dataSource` property.
+To bind local data to the Dropdown Tree, you can assign a JavaScript object array to the [`dataSource`](../api/drop-down-tree/fieldsModel/#datasource) property.
 
 The Dropdown Tree control requires three fields (value, text, and parentValue) to render a local data source. When mapper fields are not specified, it takes the default values as the mapping fields. A local data source can also be provided as an instance of the `DataManager`. It supports two kinds of local data binding methods:
 
@@ -27,7 +27,7 @@ The Dropdown Tree control requires three fields (value, text, and parentValue) t
 
 ### Hierarchical data
 
-Dropdown Tree can be populated with a hierarchical data source that contains a nested array of JSON objects. You can directly map the hierarchical data and field members with corresponding key values from the hierarchical data to the `fields` property.
+Dropdown Tree can be populated with a hierarchical data source that contains a nested array of JSON objects. You can directly map the hierarchical data and field members with corresponding key values from the hierarchical data to the [`fields`](../api/drop-down-tree/#fields) property.
 
 In the following example, **code**, **name**, and **countries** columns from the hierarchical data have been mapped to **value**, **text**, and **child** fields, respectively.
 
@@ -68,7 +68,7 @@ In the following example, **code**, **name**, and **countries** columns from the
 
 Dropdown Tree can be populated from the self-referential data structure that contains array of JSON objects with [`parentValue`](../api/drop-down-tree/fieldsModel/#parentvalue)  mapping.
 
-You can directly assign the self-referential data and map all the field members with corresponding key values from self-referential data to the `fields` property.
+You can directly assign the self-referential data and map all the field members with corresponding key values from self-referential data to the [`fields`](../api/drop-down-tree/#fields) property.
 
 To render root-level items, specify the parentValue as null or do not specify the parentValue in the dataSource.
 
@@ -113,7 +113,7 @@ Dropdown Tree can also be populated from a remote data service with the help of 
 
 It supports different kinds of data services such as OData, OData V4, Web API, URL, and JSON with the help of `DataManager` adaptors.
 
-You can assign service data as an instance of `DataManager` to the `dataSource`. To interact with the remote data source, you must provide the endpoint `url`.
+You can assign service data as an instance of `DataManager` to the [`dataSource`](../api/drop-down-tree/fieldsModel/#datasource). To interact with the remote data source, you must provide the endpoint `url`.
 
 The `DataManager` that acts as an interface between the service endpoint and the Dropdown Tree requires the following information to interact with the service endpoint properly:
 

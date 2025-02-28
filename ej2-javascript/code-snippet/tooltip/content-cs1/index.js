@@ -5,5 +5,3 @@ var tooltip = new ej.popups.Tooltip({
     content: tooltipContent
 });
 tooltip.appendTo('#target');
-
-

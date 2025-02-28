@@ -1,5 +1,3 @@
-
-
 import { Tooltip } from '@syncfusion/ej2-popups';
 
 let tooltip: Tooltip = new Tooltip({
@@ -8,6 +6,3 @@ let tooltip: Tooltip = new Tooltip({
     content: 'Tooltip with delay'
 });
 tooltip.appendTo('#target');
-
-
-

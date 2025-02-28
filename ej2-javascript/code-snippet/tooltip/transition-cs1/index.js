@@ -19,5 +19,3 @@ function onAfterClose(args) {
     this.animation = { open: { effect: 'ZoomIn', duration: 500 }, close: { effect: 'ZoomOut', duration: 500 } };
 }
 tooltip.appendTo('#box');
-
-

@@ -39,6 +39,6 @@ Please note that this license key is different from the installer unlock key tha
 
 ## See Also
 
-* [How to generate Syncfusion JavaScript (ES5) license key?](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-generation/)
-* [How to register Syncfusion license key in JavaScript (ES5) application?](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration/)
-* [Licensing FAQ](https://ej2.syncfusion.com/javascript/documentation/licensing/licensing-troubleshoot/)
+* [How to generate Syncfusion JavaScript (ES5) license key?](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-generation)
+* [How to register Syncfusion license key in JavaScript (ES5) application?](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration)
+* [Licensing FAQ](https://ej2.syncfusion.com/javascript/documentation/licensing/licensing-troubleshoot)

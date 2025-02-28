@@ -673,5 +673,5 @@ RTL provides an option to switch the text direction and layout of the pivot tabl
 
 ## See Also
 
-* [Internationalization](https://ej2.syncfusion.com/documentation/common/internationalization/)
-* [Localization](https://ej2.syncfusion.com/documentation/common/localization/)
+* [Internationalization](https://ej2.syncfusion.com/documentation/common/internationalization)
+* [Localization](https://ej2.syncfusion.com/documentation/common/localization)

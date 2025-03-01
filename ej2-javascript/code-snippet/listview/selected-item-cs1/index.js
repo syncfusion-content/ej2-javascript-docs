@@ -26,26 +26,36 @@ var button = new ej.buttons.Button();
 button.appendTo("#btn")
 
 document.getElementById('btn').addEventListener('click', function () {
-  var selecteditem = listviewInstance.getSelectedItems();
-  var data = document.getElementById('val');
-  data.innerHTML = "";
-  var row1 = document.createElement('tr');
-  var header1 = document.createElement('th');
-  header1.innerHTML = 'Text';
-  row1.append(header1);
-  var header2 = document.createElement('th');
-  header2.innerHTML = 'Id';
-  row1.append(header2);
-  document.getElementById('val').append(row1);
-  for (var i = 0; i < selecteditem["data"].length; i++) {
-    var row2 = document.createElement('tr');
-    row2.setAttribute("id", i);
-    var data1 = document.createElement('td');
-    data1.innerHTML = selecteditem["text"][i];
-    row2.append(data1);
-    var data2 = document.createElement('td');
-    data2.innerHTML = selecteditem["data"][i].id;
-    row2.append(data2);
-    document.getElementById('val').append(row2);
-  }
+  document.getElementById('btn')?.addEventListener('click', function () {
+    var selectedItem = listviewInstance.getSelectedItems();
+    var valElement = document.getElementById('val');
+
+    if (!valElement) return;
+
+    valElement.innerHTML = '';
+
+    // Create table rows in a fragment to minimize reflow
+    var fragment = document.createDocumentFragment();
+
+    // Create header row
+    var headerRow = document.createElement('tr');
+    ['Text', 'Id'].forEach(function (text) {
+      var th = document.createElement('th');
+      th.textContent = text;
+      headerRow.appendChild(th);
+    });
+    fragment.appendChild(headerRow);
+
+    // Populate table rows
+    selectedItem.data.forEach(function (item, index) {
+      var row = document.createElement('tr');
+      row.id = index.toString();
+      row.innerHTML = `<td>${selectedItem.text[index]}</td><td>${item.id}</td>`;
+      fragment.appendChild(row);
+    });
+
+    // Append all elements at once
+    valElement.appendChild(fragment);
+  });
+
 });

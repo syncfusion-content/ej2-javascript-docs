@@ -51,7 +51,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
-            <title>Essential JS 2</title>
+            <title>Essential JS 2 ListView </title>
             <!-- Essential JS 2 material theme -->
             <link href="resources/base/styles/material.css" rel="stylesheet" type="text/css"/>
             <link href="resources/lists/styles/material.css" rel="stylesheet" type="text/css"/>
@@ -72,7 +72,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
-            <title>Essential JS 2</title>
+            <title>Essential JS 2 ListView</title>
             <!-- Essential JS 2 material theme -->
             <link href="resources/base/styles/material.css" rel="stylesheet" type="text/css"/>
             <link href="resources/lists/styles/material.css" rel="stylesheet" type="text/css"/>
@@ -118,7 +118,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
 >
 > Styles: [`https://cdn.syncfusion.com/ej2/ej2-lists/styles/material.css`](https://cdn.syncfusion.com/ej2/ej2-lists/styles/material.css)
 
-**Step 3:** Create a HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `ListView` element and initiate the `Essential JS 2 List` control in the index.html by using following code.
+**Step 3:** Create a HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `ListView` element and initiate the `Essential JS 2 ListView` control in the index.html by using following code.
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}

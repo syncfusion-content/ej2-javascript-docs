@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dynamic ListView by loading ajax html content in ##Platform_Name## ListView control | Syncfusion
+title: Load ajax html content dynamically in ##Platform_Name## ListView | Syncfusion
 description: Learn here all about Dynamic ListView by loading ajax html content in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Dynamic ListView by loading ajax html content
@@ -16,7 +16,7 @@ We can set external `HTML` page content as a [`template`](../../api/list-view/#t
 ```ts
 
 let template: string;
-let ajax: Ajax = new Ajax('./template.html', 'GET', false);
+let ajax: Ajax = new Ajax('https://ej2.syncfusion.com/documentation/code-snippet/listview/ajax-cs1/template', 'GET', false);
 ajax.onSuccess = (e: string)=>{
     template = e;
 }

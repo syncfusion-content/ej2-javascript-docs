@@ -13,9 +13,9 @@ domainurl: ##DomainURL##
 
 Users can select single or multiple items in the ListView control.
 
-By default, the dataSource id and text are mapped in the default rendering of the ListView, which ensures proper data retrieval of selected items. However, in a custom template, the dataSource and the corresponding mappings (text, id, and elements rendered inside the li element) may vary depending on the application's requirements.
+By default, the [`dataSource`](../../api/list-view/#datasource) id and text are mapped in the default rendering of the ListView, which ensures proper data retrieval of selected items. However, in a custom template, the dataSource and the corresponding mappings (text, id, and elements rendered inside the li element) may vary depending on the application's requirements.
 
-Therefore, it is crucial to map the id attribute to ListView items using the [fields](../../api/list-view/#fields) of the [dataSource](../../api/list-view/#datasource) to correctly retrieve selected item data when working with custom templates. Refer to the code snippet below for a template sample.
+Therefore, it is crucial to map the id attribute to ListView items using the [`fields`](../../api/list-view/#fields) of the [`dataSource`](../../api/list-view/#datasource) to correctly retrieve selected item data when working with custom templates. Refer to the code snippet below for a template sample.
 
 ```ts
 

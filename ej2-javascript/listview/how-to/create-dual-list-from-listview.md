@@ -28,7 +28,7 @@ Key features of the dual list include:
 * Transferring selected items from one list to another.
 * Filtering lists using input from a textbox.
 
-In the ListView control, sorting is enabled using the [sortOrder](../../api/list-view/#sortorder) property, and the [select](../../api/list-view/#select) event is triggered when an item is selected. The select event manages the enabling and disabling of buttons based on the item selection.
+In the ListView control, sorting is enabled using the [`sortOrder`](../../api/list-view/#sortorder) property, and the [`select`](../../api/list-view/#select) event is triggered when an item is selected. The select event manages the enabling and disabling of buttons based on the item selection.
 
 ## Manipulating data
 
@@ -43,14 +43,14 @@ This button performs the reverse action, transferring all items from the second 
 
 ### Transferring selected items (`>` and `<`)
 
-The [Select](../../api/list-view/#select) event facilitates transferring selected items between lists. These buttons are enabled when an item is selected in either list.
+The [`Select`](../../api/list-view/#select) event facilitates transferring selected items between lists. These buttons are enabled when an item is selected in either list.
 ## Filtering method
 
 A filtering method allows you to filter list items by typing characters into a textbox. This feature utilizes the [`dataManager`](../../data/getting-started/) to fetch and display filtered data in the ListView.
 
 ## Sorting
 
-Using the dual list, list items can be sorted in the ListView using the [sortOrder](../../api/list-view/#sortorder) property. Enabling sorting in one ListView allows the data to be transferred in the same order to the other ListView.
+Using the dual list, list items can be sorted in the ListView using the [`sortOrder`](../../api/list-view/#sortorder) property. Enabling sorting in one ListView allows the data to be transferred in the same order to the other ListView.
 
 {% if page.publishingplatform == "typescript" %}
 

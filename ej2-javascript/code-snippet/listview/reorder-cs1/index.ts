@@ -27,7 +27,7 @@ treeViewInstance.appendTo('#element');
 
 function onDragStop(args: DragAndDropEventArgs) {
     //Block the Child Drop operation in TreeView
-   let  draggingItem: HTMLCollection = document.getElementsByClassName("e-drop-in");
+    let draggingItem: HTMLCollection = document.getElementsByClassName("e-drop-in");
     if (draggingItem.length == 1) {
         draggingItem[0].classList.add('e-no-drop');
         args.cancel = true;

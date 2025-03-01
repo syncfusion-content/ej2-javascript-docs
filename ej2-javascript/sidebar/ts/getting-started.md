@@ -267,5 +267,5 @@ Expand or collapse the Sidebar while swiping in touch devices using [`enableGest
 
 * [Sidebar with navigation menu](https://ej2.syncfusion.com/demos/#/material/sidebar/sidebar-menu.html)
 * [Sidebar responsive panel](https://ej2.syncfusion.com/demos/#/material/sidebar/responsive-panel.html)
-* [Sidebar with listView](./how-to/sidebar-with-list-view/)
+* [Sidebar with listView](./how-to/sidebar-with-list-view)
 * [Use case sample](https://ej2.syncfusion.com/showcase/typescript/webmail/#/home)

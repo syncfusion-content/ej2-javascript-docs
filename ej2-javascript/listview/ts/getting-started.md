@@ -87,7 +87,7 @@ Add the HTML `<div>` element for ListView control to your `index.html`.
 <html lang="en">
 
 <head>
-    <title>Essential JS 2</title>
+    <title>Essential JS 2 ListView </title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <meta name="description" content="Essential JS 2" />

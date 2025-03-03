@@ -51,7 +51,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
-            <title>Essential JS 2</title>
+            <title>Essential JS 2 Tooltip</title>
             <!-- Essential JS 2 material theme -->
             <link href="resources/material.css" rel="stylesheet" type="text/css"/>
 
@@ -70,7 +70,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
-            <title>Essential JS 2</title>
+            <title>Essential JS 2 Tooltip</title>
             <!-- Essential JS 2 material theme -->
             <link href="resources/material.css" rel="stylesheet" type="text/css"/>
 

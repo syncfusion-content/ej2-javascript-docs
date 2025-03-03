@@ -51,7 +51,7 @@ The following sample demonstrates how to set dimensions for the Tooltip.
 
 ## Scroll mode
 
-When `height` is specified with a certain pixel value and the Tooltip content overflows, the scroll mode gets enabled.
+When [`height`](../api/tooltip/#height) is specified with a certain pixel value and the Tooltip content overflows, the scroll mode gets enabled.
 
 {% if page.publishingplatform == "typescript" %}
 

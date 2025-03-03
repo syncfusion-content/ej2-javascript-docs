@@ -15,7 +15,7 @@ The Tooltip can be customized using the [`cssClass`](../api/tooltip#cssclass) pr
 
 ## Tip pointer customization
 
-Styling the tip pointer's size, background, and border colors can be done using the `cssClass` property, as demonstrated below.
+Styling the tip pointer's size, background, and border colors can be done using the [`cssClass`](../api/tooltip#cssclass) property, as demonstrated below.
 
 {% if page.publishingplatform == "typescript" %}
 

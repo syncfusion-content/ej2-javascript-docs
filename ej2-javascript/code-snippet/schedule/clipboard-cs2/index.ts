@@ -89,5 +89,3 @@ function onMenuItemSelect(args: MenuEventArgs): void {
             break;
     }
 }
-
-

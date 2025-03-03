@@ -1,5 +1,3 @@
-
-
 import { Schedule, Day, Week, WorkWeek, Month } from '@syncfusion/ej2-schedule';
 import { scheduleData } from './datasource.ts';
 
@@ -11,9 +9,7 @@ let scheduleObj: Schedule = new Schedule({
     selectedDate: new Date(2018, 1, 15),
     currentView: 'Month',
     enablePersistence: true,
-    views: [ "Day", "Week", "WorkWeek", "Month"],
+    views: ["Day", "Week", "WorkWeek", "Month"],
     eventSettings: { dataSource: scheduleData }
 });
 scheduleObj.appendTo('#Schedule');
-
-

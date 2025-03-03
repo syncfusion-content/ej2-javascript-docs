@@ -9,5 +9,3 @@ var scheduleObj = new ej.schedule.Schedule({
     showQuickInfo: false
 });
 scheduleObj.appendTo('#Schedule');
-
-

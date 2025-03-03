@@ -63,7 +63,7 @@ Tooltips can be attached to 12 static locations around the target. When initiali
 
 ## Tip pointer positioning
 
-The Tooltip pointer can be attached or detached from the Tooltip by using the [`showTipPointer`](../api/tooltip#showtippointer) property. Pointer positions can be adjusted using the `tipPointerPosition` property, which can be assigned to one of the following values:
+The Tooltip pointer can be attached or detached from the Tooltip by using the [`showTipPointer`](../api/tooltip#showtippointer) property. Pointer positions can be adjusted using the [`tipPointerPosition`](../api/tooltip/#tippointerposition) property, which can be assigned to one of the following values:
 
 * `Auto`
 * `Start`
@@ -185,8 +185,8 @@ Tooltips can be positioned relative to the mouse pointer. This behavior can be e
 
 Offset values are set to specify the distance between the target and the Tooltip element. The [`offsetX`](../api/tooltip#offsetx) and [`offsetY`](../api/tooltip#offsety) properties are used to specify the offset left and top values.
 
-* `offsetX` specifies the distance between the target and Tooltip element on the X axis.
-* `offsetY` specifies the distance between the target and Tooltip element on the Y axis.
+* [`offsetX`](../api/tooltip#offsetx) specifies the distance between the target and Tooltip element on the X axis.
+* [`offsetY`](../api/tooltip#offsety) specifies the distance between the target and Tooltip element on the Y axis.
 
 The following code example illustrates how to set offset values.
 

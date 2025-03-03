@@ -13,11 +13,12 @@ domainurl: ##DomainURL##
 
 Tooltip loads HTML pages via HTML tags such as iframe, video, and map using the [`content`](../../api/tooltip/#content) property, which supports both strings and HTML tags.
 
-To load an `iframe` element in Tooltip, set the required iframe in the `content` of the Tooltip control while initializing it. Refer to the following code snippet:
+To load an `iframe` element in Tooltip, set the required iframe in the [`content`](../../api/tooltip/#content) of the Tooltip control while initializing it. Refer to the following code snippet:
 
 ```ts
 content: '<iframe src="https://www.syncfusion.com/products/essential-js2"></iframe>'
 ```
+{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

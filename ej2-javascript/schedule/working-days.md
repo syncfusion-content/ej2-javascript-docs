@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working days in ##Platform_Name## Schedule control | Syncfusion
-description: Learn here all about Working days in Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
+title: Working days in ##Platform_Name## Scheduler control | Syncfusion
+description: Learn here all about Working days in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Working days 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Working days in ##Platform_Name## Schedule control
+# Working days in ##Platform_Name## Scheduler control
 
 The Scheduler can be customized on various aspects as well as it inherits almost all the calendar-specific features such as options,
 
@@ -39,6 +39,9 @@ The following example code depicts how to set the Scheduler to display Monday, W
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/working-days-cs1/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/working-days-cs1/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/working-days-cs1" %}
@@ -51,6 +54,9 @@ The following example code depicts how to set the Scheduler to display Monday, W
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/working-days-cs1/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/working-days-cs1/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -72,6 +78,9 @@ Here, the working days are defined as [1, 3, 4, 5] on Scheduler and therefore th
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/working-days-cs2/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/working-days-cs2/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/working-days-cs2" %}
@@ -85,6 +94,9 @@ Here, the working days are defined as [1, 3, 4, 5] on Scheduler and therefore th
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/working-days-cs2/index.html %}
 {% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/working-days-cs2/es5-datasource.js %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/schedule/working-days-cs2" %}
@@ -92,7 +104,7 @@ Here, the working days are defined as [1, 3, 4, 5] on Scheduler and therefore th
 
 ## Show week numbers
 
-It is possible to show the week number count of a week in the header bar of the Scheduler by setting true to [`showWeekNumber`](https://ej2.syncfusion.com/documentation/api/schedule/views/#showweeknumber) property. By default, its default value is `false`. In Month view, the week numbers are displayed as a first column.
+It is possible to display  the week number count of a week in the header bar of the Scheduler by setting true to [`showWeekNumber`](https://ej2.syncfusion.com/documentation/api/schedule/views/#showweeknumber) property. By default, this property is set to `false`. In Month view, the week numbers are displayed as a first column.
 
 > The [`showWeekNumber`](https://ej2.syncfusion.com/documentation/api/schedule/views/#showweeknumber) property is not applicable on Timeline views, as it has the equivalent [`headerRows`](./header-rows/#display-week-numbers-in-timeline-views) property to handle such requirement with additional customizations.
 
@@ -104,6 +116,9 @@ It is possible to show the week number count of a week in the header bar of the 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/working-days-cs3/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/working-days-cs3/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -117,6 +132,9 @@ It is possible to show the week number count of a week in the header bar of the 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/working-days-cs3/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/working-days-cs3/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -135,42 +153,15 @@ By default, week numbers are shown in the Scheduler based on the first day of th
 
 For more details refer to [this link](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.calendarweekrule?view=net-5.0#remarks)
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/schedule/working-days-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/working-days-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/schedule/working-days-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/schedule/working-days-cs4/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/working-days-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/schedule/working-days-cs4" %}
-{% endif %}
-
  **Note**: Enable the [`showWeekNumber`](https://ej2.syncfusion.com/documentation/api/schedule/views/#showweeknumber) property to configure the [`weekRule`](https://ej2.syncfusion.com/documentation/api/schedule#weekrule) property. Also, the weekRule property depends on the value of the [`firstDayOfWeek`](https://ej2.syncfusion.com/documentation/api/schedule/views/#firstdayofweek) property.
 
 ## Set working hours
 
 Working hours indicates the work hour limit within the Scheduler, which is visually highlighted with an active color on work cells. The working hours can be set on Scheduler using the [`workHours`](https://ej2.syncfusion.com/documentation/api/schedule#workhours) property which is of object type and includes the following sub-options,
 
-* `highlight` – enables/disables the highlighting of work hours.
-* `start` - sets the start time of the working/business hour of a day.
-* `end` - sets the end time limit of the working/business hour of a day.
+* [`highlight`](https://ej2.syncfusion.com/documentation/api/schedule/workHoursModel/#highlight) – enables/disables the highlighting of work hours.
+* [`start`](https://ej2.syncfusion.com/documentation/api/schedule/workHoursModel/#start) - sets the start time of the working/business hour of a day.
+* [`end`](https://ej2.syncfusion.com/documentation/api/schedule/workHoursModel/#end) - sets the end time limit of the working/business hour of a day.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -180,6 +171,9 @@ Working hours indicates the work hour limit within the Scheduler, which is visua
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/working-days-cs5/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/working-days-cs5/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -193,6 +187,9 @@ Working hours indicates the work hour limit within the Scheduler, which is visua
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/working-days-cs5/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/working-days-cs5/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -214,6 +211,9 @@ The following code example displays the Scheduler starting from the time range 7
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/working-days-cs6/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/working-days-cs6/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/working-days-cs6" %}
@@ -227,6 +227,9 @@ The following code example displays the Scheduler starting from the time range 7
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/working-days-cs6/index.html %}
 {% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/working-days-cs6/es5-datasource.js %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/schedule/working-days-cs6" %}
@@ -234,7 +237,7 @@ The following code example displays the Scheduler starting from the time range 7
 
 ## Setting start day of the week
 
-By default, Scheduler defaults to `Sunday` as its first day of a week. To change the Scheduler's start day of a week with different day, set the [`firstDayOfWeek`](https://ej2.syncfusion.com/documentation/api/schedule#firstdayofweek) property with the values ranging from 0 to 6.
+By default, the Scheduler sets `Sunday` as its first day of a week. To change the Scheduler's start day of a week with different day, use the [`firstDayOfWeek`](https://ej2.syncfusion.com/documentation/api/schedule#firstdayofweek) property with the values ranging from 0 to 6.
 
 > Here, Sunday is always denoted as 0, Monday as 1 and so on.
 
@@ -246,6 +249,9 @@ By default, Scheduler defaults to `Sunday` as its first day of a week. To change
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/working-days-cs7/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/working-days-cs7/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -259,6 +265,9 @@ By default, Scheduler defaults to `Sunday` as its first day of a week. To change
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/working-days-cs7/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/working-days-cs7/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -278,6 +287,9 @@ You can manually scroll to a specific time on Scheduler by making use of the [`s
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/scroll-to-cs1/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/scroll-to-cs1/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/scroll-to-cs1" %}
@@ -290,6 +302,9 @@ You can manually scroll to a specific time on Scheduler by making use of the [`s
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/scroll-to-cs1/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/scroll-to-cs1/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -309,6 +324,9 @@ There are scenarios where you may need to load the Scheduler displaying the syst
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/working-days-cs8/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/working-days-cs8/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/working-days-cs8" %}
@@ -321,6 +339,9 @@ There are scenarios where you may need to load the Scheduler displaying the syst
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/working-days-cs8/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/working-days-cs8/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 

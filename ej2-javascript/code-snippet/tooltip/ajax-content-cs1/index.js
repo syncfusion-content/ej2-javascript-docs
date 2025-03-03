@@ -6,7 +6,7 @@ var tooltip = new ej.popups.Tooltip({
 });
 tooltip.appendTo('#targetContainer');
 function onBeforeRender(args) {
-    var ajax = new ej.base.Ajax('./tooltipdata.json', 'GET', true);
+    var ajax = new ej.base.Ajax('https://helpej2.syncfusion.com/documentation/code-snippet/tooltip/ajax-content-cs1/tooltipdata.json', 'GET', true);
     ajax.send().then((result) => {
         result = JSON.parse(result);
         for (var i = 0; i < result.length; i++) {

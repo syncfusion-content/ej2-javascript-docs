@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dimensions in ##Platform_Name## Schedule Control | Syncfusion
-description: Learn here all about dimensions in Syncfusion ##Platform_Name## Schedule control, its elements and more.
+title: Dimensions in ##Platform_Name## Scheduler Control | Syncfusion
+description: Learn here all about dimensions in Syncfusion ##Platform_Name## Scheduler control, its elements and more.
 platform: ej2-javascript
 control: Dimensions 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dimensions in ##Platform_Name## Schedule Control
+# Dimensions in ##Platform_Name## Scheduler Control
 
 The Scheduler dimensions refers to both height and width of the entire layout and it accepts 3 types of values.
 

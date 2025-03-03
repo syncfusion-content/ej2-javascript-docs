@@ -1,5 +1,3 @@
-
-
 import { createElement, compile } from '@syncfusion/ej2-base';
 import { Popup } from '@syncfusion/ej2-popups';
 import { ItemModel } from '@syncfusion/ej2-navigations';
@@ -7,6 +5,7 @@ import { Schedule, Month, ActionEventArgs, ToolbarActionArgs } from '@syncfusion
 import { scheduleData } from './datasource.ts';
 
 Schedule.Inject(Month);
+
 let scheduleObj: Schedule = new Schedule({
     width: '100%',
     height: '550px',
@@ -61,5 +60,3 @@ let userContentEle: HTMLElement = createElement('div', {
         height: 80
     });
     profilePopup.hide();
-
-

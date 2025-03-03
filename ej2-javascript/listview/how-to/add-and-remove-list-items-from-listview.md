@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add and remove list items from ListView in ##Platform_Name## ListView control | Syncfusion
+title: Add and remove list items from ListView in ##Platform_Name## ListView | Syncfusion
 description: Learn here all about Add and remove list items from ListView in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Add and remove list items from ListView
@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 You can add or remove list items from the ListView control using the [`addItem`](../../api/list-view/#additem) and [`removeItem`](../../api/list-view/#removeitem) methods. Follow these steps to add or remove a list item in the ListView control:
 
-* Render the ListView with a data source. Use the [template](../../api/list-view/#template) property to append a delete icon for each list item. Bind the click event for the delete icon using the [actionComplete](../../api/list-view/#actioncomplete) handler.
+* Render the ListView with a data source. Use the [`template`](../../api/list-view/#template) property to append a delete icon for each list item. Bind the click event for the delete icon using the [`actionComplete`](../../api/list-view/#actioncomplete) handler.
 
 * Render the "Add Item" button and bind the click event. In the click event handler, pass data with a random ID to the [`addItem`](../../api/list-view/#additem) method to add a new list item when the "Add Item" button is clicked.
 

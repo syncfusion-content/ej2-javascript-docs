@@ -24,8 +24,8 @@ In the following sample, `mediaQuery` is used to close and open the Sidebar base
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/sidebar/web-cs1/index.html %}
 {% endhighlight %}
-{% highlight css tabtitle="index.css" %}
-{% include code-snippet/sidebar/web-cs1/index.css %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/sidebar/web-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -40,8 +40,8 @@ In the following sample, `mediaQuery` is used to close and open the Sidebar base
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/sidebar/web-cs1/index.html %}
 {% endhighlight %}
-{% highlight css tabtitle="index.css" %}
-{% include code-snippet/sidebar/web-cs1/index.css %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/sidebar/web-cs1/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

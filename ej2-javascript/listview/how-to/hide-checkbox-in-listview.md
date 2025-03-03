@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Hide checkbox in ##Platform_Name## ListView control
 
-The checkbox of any list item can be hidden by using the [`htmlAttributes`](../../api/list-view/#htmlattributes) of the [`fields`](../../api/list-view/#fields) object. With the help of `htmlAttributes`, a unique class can be added to each list item that is rendered from the data source, allowing you to hide the checkbox of the list item via that CSS class.
+The checkbox of any list item can be hidden by using the [`htmlAttributes`](../../api/list-view/#htmlattributes) of the [`fields`](../../api/list-view/#fields) object. With the help of [`htmlAttributes`](../../api/list-view/#htmlattributes), a unique class can be added to each list item that is rendered from the data source, allowing you to hide the checkbox of the list item via that CSS class.
 
 In this sample, multiple leaf nodes of a nested list have been hidden. The `e-checkbox-hidden` class has been added in the data source where the checkbox needs to be hidden. Refer to the snippet below for a simple data source.
 
@@ -24,7 +24,7 @@ In this sample, multiple leaf nodes of a nested list have been hidden. The `e-ch
     }
 ```
 
-Even though we have hidden the checkbox, the functionality remains the same for the list item, which might affect the [getSelectedItems](../../api/list-view/#getselecteditems) method. To counter this, we implement certain logic in the `select` event. The logic here is to remove the `e-active` class from other checkbox-hidden list items that get added when selecting that item, and retain `e-active` on the currently selected item.
+Even though we have hidden the checkbox, the functionality remains the same for the list item, which might affect the [`getSelectedItems`](../../api/list-view/#getselecteditems) method. To counter this, we implement certain logic in the [`select`](../../api/list-view/#select) event. The logic here is to remove the `e-active` class from other checkbox-hidden list items that get added when selecting that item, and retain `e-active` on the currently selected item.
 
 > This process excludes the visible checkbox list items and only considers the hidden checkbox items.
 

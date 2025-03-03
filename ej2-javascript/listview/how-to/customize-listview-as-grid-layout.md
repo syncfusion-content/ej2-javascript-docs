@@ -22,7 +22,7 @@ In ListView, list items can be rendered in a grid layout with the following data
 
 In this section, we will discuss the rendering of list items in a grid layout.
 
-* Initialize and render ListView with a `dataSource`, which will render list items in list layout.
+* Initialize and render ListView with a [`dataSource`](../../api/list-view/#datasource), which will render list items in list layout.
 
 * Now, add the following CSS to list items. This will make list items render in a grid layout.
 

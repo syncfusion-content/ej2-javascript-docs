@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize nested ListView as breadcrumbs in ##Platform_Name## ListView control | Syncfusion
+title: Customize nested ListView as breadcrumbs in ##Platform_Name## ListView | Syncfusion
 description: Learn here all about customizing nested ListView as breadcrumbs in the Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Customize nested ListView as breadcrumbs
@@ -11,10 +11,10 @@ domainurl: ##DomainURL##
 
 # Customize nested ListView as breadcrumbs in ##Platform_Name## ListView control
 
-The ListView header can be customized using the [headerTemplate](https://ej2.syncfusion.com/documentation/api/list-view/#headertemplate) property. Here, we customize the header of a nested ListView as breadcrumbs using the headerTemplate property. This means that while navigating to the child data of a list item, the header data is customized with the selected data path. For example, if the header of the nested ListView is "Continent" and you select a list item (Asia), the header will be customized as "Continent>Asia."
+The ListView header can be customized using the [`headerTemplate`](https://ej2.syncfusion.com/documentation/api/list-view/#headertemplate) property. Here, we customize the header of a nested ListView as breadcrumbs using the headerTemplate property. This means that while navigating to the child data of a list item, the header data is customized with the selected data path. For example, if the header of the nested ListView is "Continent" and you select a list item (Asia), the header will be customized as "Continent>Asia."
 
-* This customization is achieved during the front and back navigation of list items using the `actionComplete` event of ListView.
-* On [actionComplete](../../api/list-view/#actioncomplete), we append the selected text to the header element.
+* This customization is achieved during the front and back navigation of list items using the [`actionComplete`](../../api/list-view/#actioncomplete) event of ListView.
+* On [`actionComplete`](../../api/list-view/#actioncomplete), we append the selected text to the header element.
 * During back navigation, we remove the last appended span from the header template.
 
 We can also navigate to the desired child level by clicking list items appended in the customized header. For example, consider the header of a nested ListView as `Continent>Asia>India`. If you want to navigate to the Continent level of the ListView, you can click "Continent" in the header.

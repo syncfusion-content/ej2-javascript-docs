@@ -40,7 +40,6 @@ let connector = {
 };
 
 function getTemplate(obj) {
-  debugger;
   let background = 'yellow';
   let height = '50%';
   if (obj.id === 'Node') {

@@ -68,7 +68,7 @@ In the following example, we have rendered ListView with customized header which
 
 ListView items can be customized using the [`template`](../api/list-view/#template) property.
 
-To customize list items in your application, set your customized template string to the `template` property.
+To customize list items in your application, set your customized template string to the [`template`](../api/list-view/#template) property.
 
 ```ts
 
@@ -130,7 +130,7 @@ In the following example, we have customized list items with built-in CSS classe
 
 The ListView group header can be customized using the [`groupTemplate`](../api/list-view/#grouptemplate) property.
 
-To customize the group template in your application, set your customized template string to the `groupTemplate` property.
+To customize the group template in your application, set your customized template string to the [`groupTemplate`](../api/list-view/#grouptemplate) property.
 
 ```ts
 

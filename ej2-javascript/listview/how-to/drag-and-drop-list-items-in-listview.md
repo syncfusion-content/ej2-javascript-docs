@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drag and drop list items in ListView in ##Platform_Name## ListView control | Syncfusion
-description: Learn here all about Drag and drop list items in ListView in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
+description: Learn how to display a spinner while loading list items from remote data in Syncfusion ##Platform_Name## ListView control of Essential JS 2 and more.
 platform: ej2-javascript
 control: Drag and drop list items in ListView
 publishingplatform: ##Platform_Name##

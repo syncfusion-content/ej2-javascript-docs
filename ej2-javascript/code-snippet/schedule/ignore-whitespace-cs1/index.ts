@@ -1,12 +1,11 @@
-
-
 import { Schedule, TimelineViews, TimelineMonth } from '@syncfusion/ej2-schedule';
 import { resourceData } from './datasource.ts';
 
 Schedule.Inject(TimelineViews, TimelineMonth);
+
 let scheduleObj: Schedule = new Schedule({
     width: '100%',
-    height: '550px',
+    height: 'auto',
     currentView: 'TimelineWeek',
     rowAutoHeight: true,
     views: ['TimelineWeek', 'TimelineMonth'],
@@ -20,9 +19,9 @@ let scheduleObj: Schedule = new Schedule({
         dataSource: [
             { RoomText: 'ROOM 1', Id: 1, RoomColor: '#cb6bb2' },
             { RoomText: 'ROOM 2', Id: 2, RoomColor: '#56ca85' }
-            ],
-            textField: 'RoomText', idField: 'Id', colorField: 'RoomColor'
-        }, {
+        ],
+        textField: 'RoomText', idField: 'Id', colorField: 'RoomColor'
+    }, {
         field: 'OwnerId', title: 'Owner',
         name: 'Owners', allowMultiple: true,
         dataSource: [
@@ -35,5 +34,3 @@ let scheduleObj: Schedule = new Schedule({
     eventSettings: { dataSource: resourceData, ignoreWhitespace: true }
 });
 scheduleObj.appendTo('#Schedule');
-
-

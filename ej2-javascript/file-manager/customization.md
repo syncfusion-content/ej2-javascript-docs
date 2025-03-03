@@ -25,7 +25,7 @@ The File Manager control allows customizing its functionalities such as context 
 
 ## Context menu customization
 
-The context menu settings such as items to be displayed on files, folders, layout click, and visibility can be customized using the [contextMenuSettings](../api/file-manager/#contextmenusettings) property.
+The context menu settings such as items to be displayed on files, folders, layout click, and visibility can be customized using the [`contextMenuSettings`](../api/file-manager/#contextmenusettings) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -62,7 +62,7 @@ The context menu settings such as items to be displayed on files, folders, layou
 
 ## Details view customization
 
-The details view settings such as column width, header text, template for each field can be customized using the [detailsViewSettings](../api/file-manager/#detailsviewsettings) property.
+The details view settings such as column width, header text, template for each field can be customized using the [`detailsViewSettings`](../api/file-manager/#detailsviewsettings) property.
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
@@ -98,7 +98,7 @@ The details view settings such as column width, header text, template for each f
 
 ## Navigation pane customization
 
-The navigation pane settings such as minimum and maximum width and visibility can be customized using the [navigationPaneSettings](../api/file-manager/#navigationpanesettings) property.
+The navigation pane settings such as minimum and maximum width and visibility can be customized using the [`navigationPaneSettings`](../api/file-manager/#navigationpanesettings) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -135,9 +135,9 @@ The navigation pane settings such as minimum and maximum width and visibility ca
 
 ## Show/Hide file extension
 
-The file extensions are displayed in the File Manager control by default. This can be hidden by disabling the [showFileExtension](../api/file-manager/#showfileextension) property.
+The file extensions are displayed in the File Manager control by default. This can be hidden by disabling the [`showFileExtension`](../api/file-manager/#showfileextension) property.
 
-In File Manager control, the [fileLoad](../api/file-manager/#fileload) and [fileOpen](../api/file-manager/#fileopen) events are triggered before the file/folder is rendered and before the file/folder is opened respectively. These events can be utilized to perform operations before a file/folder is rendered or opened.
+In File Manager control, the [`fileLoad`](../api/file-manager/#fileload) and [`fileOpen`](../api/file-manager/#fileopen) events are triggered before the file/folder is rendered and before the file/folder is opened respectively. These events can be utilized to perform operations before a file/folder is rendered or opened.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -174,7 +174,7 @@ In File Manager control, the [fileLoad](../api/file-manager/#fileload) and [file
 
 ## Show/Hide hidden items
 
-The File Manager control provides support to show/hide hidden items by enabling/disabling the [showHiddenItems](../api/file-manager/#showhiddenitems) property.
+The File Manager control provides support to show/hide hidden items by enabling/disabling the [`showHiddenItems`](../api/file-manager/#showhiddenitems) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -211,7 +211,7 @@ The File Manager control provides support to show/hide hidden items by enabling/
 
 ## Show/Hide thumbnail images in large icons view
 
-The thumbnail images are displayed in the File Manager control's large icons view by default. This can be hidden by disabling the [showThumbnail](../api/file-manager/#showthumbnail) property.
+The thumbnail images are displayed in the File Manager control's large icons view by default. This can be hidden by disabling the [`showThumbnail`](../api/file-manager/#showthumbnail) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -248,7 +248,7 @@ The thumbnail images are displayed in the File Manager control's large icons vie
 
 ## Toolbar customization
 
-The toolbar settings such as items to be displayed in the toolbar and visibility can be customized using the [toolbarSettings](../api/file-manager/#toolbarsettings) property.
+The toolbar settings such as items to be displayed in the toolbar and visibility can be customized using the [`toolbarSettings`](../api/file-manager/#toolbarsettings) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -289,7 +289,7 @@ The toolbar settings such as items to be displayed in the toolbar and visibility
 
 ## Upload customization
 
-Upload settings such as minimum and maximum file size, and enabling auto upload can be customized using the [uploadSettings](../api/file-manager/#uploadsettings) property.
+Upload settings such as minimum and maximum file size, and enabling auto upload can be customized using the [`uploadSettings`](../api/file-manager/#uploadsettings) property.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -77,7 +77,7 @@ tree1.appendTo('#tree');
     document.getElementById("tree").addEventListener(evt, (event) => { setHeight(event.target); }));
 
 // Triggers on node selection
-function onSelect(arg) {
+function onselect(arg) {
     setHeight(arg.node);
 }
 

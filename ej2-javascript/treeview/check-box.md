@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Check box in ##Platform_Name## TreeView control
 
-The TreeView control allows you to check more than one node without affecting the UI appearance by enabling the [showCheckBox](../api/treeview#showcheckbox) property. When this property is enabled, a checkbox appears before each TreeView node text.
+The TreeView control allows you to check more than one node without affecting the UI appearance by enabling the [`showCheckBox`](../api/treeview#showcheckbox) property. When this property is enabled, a checkbox appears before each TreeView node text.
 
 * If any child node is unchecked, the parent node will be in an intermediate state.
 
@@ -25,7 +25,7 @@ Using the [`checkedNodes`](../api/treeview#checkednodes) property, you can set t
 
 If you need to prevent a node check action for a particular node, the [`nodeChecking`](../api/treeview#nodechecking) event can be used, and it will be triggered before the TreeView node is checked/unchecked. The [`nodeChecked`](../api/treeview#nodechecked) event will be triggered when the TreeView node is checked/unchecked successfully.
 
-In the following example, the `showCheckBox` property is enabled.
+In the following example, the [`showCheckBox`](../api/treeview#showcheckbox) property is enabled.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -62,7 +62,7 @@ In the following example, the `showCheckBox` property is enabled.
 
 ## Checked nodes
 
-You can get or set the checked nodes in the TreeView at initial rendering and dynamically by using the [checkedNodes](../api/treeview#checkednodes) property. It returns the checked nodes' IDs as an array.
+You can get or set the checked nodes in the TreeView at initial rendering and dynamically by using the [`checkedNodes`](../api/treeview#checkednodes) property. It returns the checked nodes' IDs as an array.
 
 In the following example, the **New South Wales** and **Western Australia** nodes are checked at initial rendering. If any more nodes are checked, the checked nodes' IDs will be displayed in an alert.
 

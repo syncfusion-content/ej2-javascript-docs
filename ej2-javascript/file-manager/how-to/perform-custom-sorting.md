@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Perform custom sorting in ##Platform_Name## File Manager control
 
-The File Manager control provides a way to customize the default sort action for the LargeIconsView by defining the [sortComparer](../../api/file-manager/#sortcomparer) property and for sorting individual columns in the DetailsView by defining the [sortComparer](../../api/file-manager/column/#sortcomparer) property in the [columns](../../api/file-manager/column/) property.
+The File Manager control provides a way to customize the default sort action for the LargeIconsView by defining the [`sortComparer`](../../api/file-manager/#sortcomparer) property and for sorting individual columns in the DetailsView by defining the [`sortComparer`](../../api/file-manager/column/#sortcomparer) property in the [`columns`](../../api/file-manager/column/) property.
 
 >**Note:** To achieve natural sorting like Windows Explorer, you can import the `SortComparer` function from `'@syncfusion/ej2-javascript-filemanager'`. If you want to perform your own custom sorting, you can define your own `SortComparer` function.
 

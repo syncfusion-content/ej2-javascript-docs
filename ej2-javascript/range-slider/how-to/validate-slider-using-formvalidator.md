@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Validate slider using FormValidator in ##Platform_Name## Range Slider control | Syncfusion
+title: Validate slider using FormValidator in ##Platform_Name## Range Slider | Syncfusion
 description: Learn here all about validating the slider using FormValidator in the Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Validate slider using formvalidator
@@ -11,10 +11,10 @@ domainurl: ##DomainURL##
 
 # Validate slider using FormValidator in ##Platform_Name## Range Slider control
 
-The Range Slider control can be validated using our [FormValidator](../../form-validator/). The following steps walk through the slider validation process.
+The Range Slider control can be validated using our [`FormValidator`](../../form-validator/). The following steps walk through the slider validation process.
 
 * Render the Range Slider control inside a form.
-* Bind the [changed](../../api/slider/#changed) event in the Range Slider to validate the slider value when it changes.
+* Bind the [`changed`](../../api/slider/#changed) event in the Range Slider to validate the slider value when it changes.
 * Initialize and render FormValidator for the form using the form ID.
 
 {% if page.publishingplatform == "typescript" %}
@@ -38,7 +38,7 @@ formObj = new FormValidator("#formId", options);
 
 {% endif %}
 
-* Set the required property in the FormValidator [rules](../../api/form-validator/#rules) collection. Here, the [min](../../api/slider/#min) property of slider that sets the minimum value in the Range Slider control is set, and it has hidden input as enable `validateHidden` property is set to true.
+* Set the required property in the FormValidator [`rules`](../../api/form-validator/#rules) collection. Here, the [`min`](../../api/slider/#min) property of slider that sets the minimum value in the Range Slider control is set, and it has hidden input as enable `validateHidden` property is set to true.
 
 {% if page.publishingplatform == "typescript" %}
 

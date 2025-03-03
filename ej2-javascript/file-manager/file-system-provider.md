@@ -40,7 +40,7 @@ cd ej2-aspcore-file-provider
 
 After cloning, just open the project in Visual Studio and restore the NuGet packages. Now, set the root directory of the physical file system in the FileManager controller.
 
-After setting the root directory of the file system, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager control to the appropriate controller methods allows to manage the files in the physical file system.
+After setting the root directory of the file system, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the [`ajaxSettings`](../api/file-manager/#ajaxsettings) property of the File Manager control to the appropriate controller methods allows to manage the files in the physical file system.
 
 ```ts
 
@@ -91,7 +91,7 @@ Then, set the blob container and the root blob directory by passing the correspo
 
 > **Note:** Also, assign the same *blobPath URL* and *filePath URL* in [**AzureFileOperations** and **AzureUpload**](https://github.com/SyncfusionExamples/azure-aspcore-file-provider/blob/master/Controllers/AzureProviderController.cs) methods in the FileManager controller to determine the original path of the Azure blob.
 
-After setting the blob container references, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager control to the appropriate controller methods allows to manage the Azure blob storage.
+After setting the blob container references, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the [`ajaxSettings`](../api/file-manager/#ajaxsettings) property of the File Manager control to the appropriate controller methods allows to manage the Azure blob storage.
 
 ```ts
 
@@ -144,7 +144,7 @@ After cloning, open the project in Visual Studio and restore the NuGet packages.
 
 ```
 
-After registering the Amazon client account details, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager control to the appropriate controller methods allows to manage the Amazon ***S3*** (*Simple Storage Service*) bucket's objects storage.
+After registering the Amazon client account details, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the [`ajaxSettings`](../api/file-manager/#ajaxsettings) property of the File Manager control to the appropriate controller methods allows to manage the Amazon ***S3*** (*Simple Storage Service*) bucket's objects storage.
 
 ```ts
 
@@ -217,7 +217,7 @@ To set up the SharePoint service provider, follow these steps:
 
 Replace "<--User Site Name-->", "<--User Drive ID-->", "tenantId", "clientId", and "clientSecret" with your actual values.
 
-After configuring the SharePoint file provider, build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager control to the appropriate controller methods allows to manage the files in the Microsoft SharePoint.
+After configuring the SharePoint file provider, build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the [`ajaxSettings`](../api/file-manager/#ajaxsettings) property of the File Manager control to the appropriate controller methods allows to manage the files in the Microsoft SharePoint.
 
 ```typescript
 
@@ -258,7 +258,7 @@ void SetFTPConnection(string hostName, string userName, string password)
 
 ```
 
-After registering the File Transfer Protocol details, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager control to the appropriate controller methods allows to manage the FTP’s objects storage.
+After registering the File Transfer Protocol details, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the [`ajaxSettings`](../api/file-manager/#ajaxsettings) property of the File Manager control to the appropriate controller methods allows to manage the FTP’s objects storage.
 
 ```ts
 
@@ -319,7 +319,7 @@ void SetSQLConnection(string name, string tableName, string tableID)
 
 > Refer to this [FileManager.mdf](https://github.com/SyncfusionExamples/sql-server-database-aspcore-file-provider/blob/master/App_Data/FileManager.mdf), to learn  about the pre-defined file system SQL database for the EJ2 File Manager.
 
-After configuring the connection, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager control to the appropriate controller methods allows to manage the files in the SQL database table.
+After configuring the connection, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the [`ajaxSettings`](../api/file-manager/#ajaxsettings) property of the File Manager control to the appropriate controller methods allows to manage the files in the SQL database table.
 
 ```ts
 
@@ -392,7 +392,7 @@ set PORT=3000 && node filesystem-server.js -d D:/Projects
 
 > **Note:** By default, the service will run `8090` port.
 
-Now, just mapping the **ajaxSettings** property of the File Manager control to the appropriate file operation methods in the filesystem-server.js file will allows to manage the physical file system with Node file system provider.
+Now, just mapping the [`ajaxSettings`](../api/file-manager/#ajaxsettings) property of the File Manager control to the appropriate file operation methods in the filesystem-server.js file will allows to manage the physical file system with Node file system provider.
 
 ```ts
 
@@ -435,7 +435,7 @@ After generating the client secret data, copy the JSON data to the following spe
 
 * GoogleOAuth2.0Base > credentials > client_secret.json
 
-After updating the credentials, just build and run the project. Now, the project will be hosted in `http://localhost:{port}`, and it will ask to log on to the Gmail account created for the client secret credentials. Then, provide permission to access the Google Drive files by clicking the allow access button in the page. Now, just mapping the **ajaxSettings** property of the File Manager control to the appropriate controller methods will allows to manage the files from the Google Drive.
+After updating the credentials, just build and run the project. Now, the project will be hosted in `http://localhost:{port}`, and it will ask to log on to the Gmail account created for the client secret credentials. Then, provide permission to access the Google Drive files by clicking the allow access button in the page. Now, just mapping the [`ajaxSettings`](../api/file-manager/#ajaxsettings) property of the File Manager control to the appropriate controller methods will allows to manage the files from the Google Drive.
 
 ```ts
 
@@ -579,7 +579,7 @@ In the above code,
 
 * `hostingEnvironment.ContentRootPath + \\FirebaseRealtimeDBHelper\\access_key.json` denotes service account key path which has authentication key for the Firebase Realtime Database data.
 
-After configuring the Firebase Realtime Database service link, build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager control to the appropriate controller methods allows to manage the files in the Firebase Realtime Database.
+After configuring the Firebase Realtime Database service link, build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the [`ajaxSettings`](../api/file-manager/#ajaxsettings) property of the File Manager control to the appropriate controller methods allows to manage the files in the Firebase Realtime Database.
 
 ```typescript
 
@@ -642,7 +642,7 @@ set PORT=3000 && node index.js
 
 > **Note:** By default, the service will run `8090` port.
 
-Now, just mapping the **ajaxSettings** property of the File Manager control to the appropriate file operation methods in the index.js file will allow to manage the IBM Cloud Object Storage.
+Now, just mapping the [`ajaxSettings`](../api/file-manager/#ajaxsettings) property of the File Manager control to the appropriate file operation methods in the index.js file will allow to manage the IBM Cloud Object Storage.
 
 ```ts
 

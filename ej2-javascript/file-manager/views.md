@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Views in ##Platform_Name## File Manager control
 
-View is the section where the files and folders are displayed for the user to browse. The [view](../api/file-manager/#view) API can also be used to change the initial view of the File Manager control.
+View is the section where the files and folders are displayed for the user to browse. The [`view`](../api/file-manager/#view) API can also be used to change the initial view of the File Manager control.
 
-The File Manager control has two types of [views](../api/file-manager/#view) to display the files and folders:
+The File Manager control has two types of [`views`](../api/file-manager/#view) to display the files and folders:
 
 * [LargeIcons View](#largeicons-view)
 * [Details View](#details-view)
@@ -57,7 +57,7 @@ By default, the File Manager control is rendered with the large icons view. The 
 
 ## Details View
 
-Details view is an injectable module in the File Manager control, so it should be injected before rendering the File Manager control to avail its functionality. The default appearance of the File Manager control can be changed from large icons to the details view by using the [view](../api/file-manager/#view) property. The following example demonstrates the File Manager control with the details view.
+Details view is an injectable module in the File Manager control, so it should be injected before rendering the File Manager control to avail its functionality. The default appearance of the File Manager control can be changed from large icons to the details view by using the [`view`](../api/file-manager/#view) property. The following example demonstrates the File Manager control with the details view.
 
 {% if page.publishingplatform == "typescript" %}
 

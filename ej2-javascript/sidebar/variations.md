@@ -15,7 +15,7 @@ The Sidebar control's expand behavior can be modified based on its intended use.
 
 ## Expanding types of Sidebar
 
-The Sidebar can be initialized with one of four different types, each consistent with the main control, as explained below. When `dataBind` is invoked, it applies any pending property changes immediately to the control.
+The Sidebar can be initialized with one of four different types, each consistent with the main control, as explained below. When [`dataBind`](../api/sidebar/#databind) is invoked, it applies any pending property changes immediately to the control.
 
  | Item | Description |
 |-----|-----|

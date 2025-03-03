@@ -1,9 +1,8 @@
-
-
 import { Schedule, TimelineViews, TimelineMonth, Agenda, Resize, DragAndDrop } from '@syncfusion/ej2-schedule';
-import {  scheduleData } from './datasource.ts';
+import { scheduleData } from './datasource.ts';
 
 Schedule.Inject(TimelineViews, TimelineMonth, Agenda, Resize, DragAndDrop);
+
 let scheduleObj: Schedule = new Schedule({
     width: '100%',
     height: '450px',
@@ -20,5 +19,3 @@ let scheduleObj: Schedule = new Schedule({
     eventSettings: { dataSource: scheduleData }
 });
 scheduleObj.appendTo('#Schedule');
-
-

@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Template in ##Platform_Name## TreeView control
 
-The TreeView control allows you to customize the look of TreeView nodes by using the [nodeTemplate](../api/treeview#nodetemplate) property. This property accepts either a [template string](../common/template-engine/) or an HTML element ID.
+The TreeView control allows you to customize the look of TreeView nodes by using the [`nodeTemplate`](../api/treeview#nodetemplate) property. This property accepts either a [template string](../common/template-engine/) or an HTML element ID.
 
-In the following sample, employee information such as employee photo, name, and designation has been included using the `nodeTemplate` property.
+In the following sample, employee information such as employee photo, name, and designation has been included using the [`nodeTemplate`](../api/treeview#nodetemplate) property.
 
 The template expression should be provided inside the `${...}` interpolation syntax.
 

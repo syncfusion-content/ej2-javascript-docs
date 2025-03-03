@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Enable or disable a toolbar item in ##Platform_Name## File Manager control
 
-The toolbar items can be enabled or disabled by specifying the items in the [enableToolbarItems](../../api/file-manager/#enabletoolbaritems) or [disableToolbarItems](../../api/file-manager/#disabletoolbaritems) methods, respectively.
+The toolbar items can be enabled or disabled by specifying the items in the [`enableToolbarItems`](../../api/file-manager/#enabletoolbaritems) or [`disableToolbarItems`](../../api/file-manager/#disabletoolbaritems) methods, respectively.
 
 The following example demonstrates how to enable and disable toolbar items on button click.
 

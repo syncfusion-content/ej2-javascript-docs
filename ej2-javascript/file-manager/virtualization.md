@@ -27,9 +27,9 @@ FileManager.Inject(Virtualization);
 
 ## Enable Virtualization
 
-The virtualization of the File Manager control is based on the height and width of the viewport. The items will be loaded in both [large icons view](../api/file-manager/#view) and [details view](../api/file-manager/detailsViewSettings/) based on the viewport size.
+The virtualization of the File Manager control is based on the height and width of the viewport. The items will be loaded in both [`large icons view`](../api/file-manager/#view) and [`details view`](../api/file-manager/detailsViewSettings/) based on the viewport size.
 
-To enable `virtualization`, you must set the [enableVirtualization](../api/file-manager/#enablevirtualization) property to true.
+To enable `virtualization`, you must set the [`enableVirtualization`](../api/file-manager/#enablevirtualization) property to true.
 
 In the example below, a sizable collection of files can be found in the folders **Documents** and **Text Documents**.
 

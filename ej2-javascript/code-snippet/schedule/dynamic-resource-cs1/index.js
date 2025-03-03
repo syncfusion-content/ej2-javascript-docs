@@ -22,8 +22,9 @@ var scheduleObj = new ej.schedule.Schedule({
     eventSettings: { dataSource: generateCalendarData() }
 });
 scheduleObj.appendTo('#Schedule');
+
 function onChange(args) {
-    var value = parseInt((args.event.target).getAttribute('value'), 10);
+    var value = parseInt((args.event.currentTarget).querySelector('input').getAttribute('value'), 10);
     var resourceData = calendarCollections.filter(function (calendar) { return calendar.CalendarId === value; });
     if (args.checked) {
         scheduleObj.addResource(resourceData[0], 'Calendars', value - 1);
@@ -33,6 +34,7 @@ function onChange(args) {
         scheduleObj.dataBind();
     }
 }
+
 var check1 = new ej.buttons.CheckBox({ cssClass: 'personal', value: '1', label: 'My Calendar', checked: true, disabled: true, change: onChange }, '#personal');
 var check2 = new ej.buttons.CheckBox({ cssClass: 'company', value: '2', label: 'Company', checked: false, change: onChange }, '#company');
 var check3 = new ej.buttons.CheckBox({ cssClass: 'birthday', value: '3', label: 'Birthday', checked: false, change: onChange }, '#birthdays');
@@ -46,4 +48,3 @@ function generateCalendarData() {
     }
     return collections;
 }
-

@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Dynamic content with html element in ##Platform_Name## Tooltip control
 
-The Tooltip control can load HTML content using the [content](../content/) template.
+The Tooltip control can load HTML content using the [`content`](../content/) template.
 
 The HTML tags such as `<div>`, `<span>`, `bold`, `italic`, `underline`, etc., can be used. Style attributes can also be applied with HTML tags.
 

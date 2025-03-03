@@ -1,10 +1,9 @@
-
-
 import { RadioButton, ChangeArgs } from '@syncfusion/ej2-buttons';
 import { Schedule, Week, Month, Agenda, TimelineViews, TimelineMonth } from '@syncfusion/ej2-schedule';
 import { resourceData } from './datasource.ts';
 
 Schedule.Inject(Month, Week, Agenda, TimelineViews, TimelineMonth);
+
 let scheduleObj: Schedule = new Schedule({
     width: '100%',
     height: '550px',
@@ -21,7 +20,7 @@ let scheduleObj: Schedule = new Schedule({
             { RoomText: 'ROOM 2', Id: 2, RoomGroupId: 2, RoomColor: '#56ca85' }
         ],
         textField: 'RoomText', idField: 'Id', groupIDField: 'RoomGroupId', colorField: 'RoomColor'
-        },{
+    }, {
         field: 'OwnerId', title: 'Owner',
         name: 'Owners', allowMultiple: true,
         dataSource: [
@@ -35,11 +34,9 @@ let scheduleObj: Schedule = new Schedule({
 });
 scheduleObj.appendTo('#Schedule');
 
-new RadioButton({  value: 'Rooms', name: 'default', label: 'Rooms', checked: true,  change: onChange }, '#room');
-new RadioButton({  value: 'Owners', name: 'default', label: 'Owners', checked: false, change: onChange }, '#owner');
+new RadioButton({ value: 'Rooms', name: 'default', label: 'Rooms', checked: true, change: onChange }, '#room');
+new RadioButton({ value: 'Owners', name: 'default', label: 'Owners', checked: false, change: onChange }, '#owner');
 
 function onChange(args: ChangeArgs): void {
     scheduleObj.eventSettings.resourceColorField = args.value;
 }
-
-

@@ -13,4 +13,3 @@ var scheduleObj = new ej.schedule.Schedule({
     ],
 });
 scheduleObj.appendTo('#Schedule');
-

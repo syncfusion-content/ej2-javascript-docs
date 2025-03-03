@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Localization in ##Platform_Name## File Manager control
 
-The File Manager control can be localized to any culture by defining the texts and messages in the corresponding culture. The default locale of the File Manager control is `en` (English). The following table represents the default texts and messages of the File Manager control in the `en` culture.
+The File Manager control can be localized to any culture by defining the texts and messages in the corresponding culture. The default [`locale`](../api/file-manager/#locale) of the File Manager control is `en` (English). The following table represents the default texts and messages of the File Manager control in the `en` culture.
 
 |KEY|Text/Message|
 |----|----|

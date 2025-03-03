@@ -58,8 +58,8 @@ tree1.appendTo('#tree');
 
 function onCreate() {
     let proxy = this;
-    document.getElementById("btn")?.addEventListener("click", (event) => {
-        let id = (document.getElementById('Nodes') as HTMLInputElement)?.value;
+    (document.getElementById("btn") as HTMLElement).addEventListener("click", (event) => {
+        let id = (document.getElementById('Nodes') as HTMLInputElement).value;
         let element = proxy.element.querySelector('[data-uid="' + id + '"]');
         // Gets the child Element
         let liElements = element.querySelectorAll('ul li');
@@ -69,5 +69,5 @@ function onCreate() {
             arr.push(nodeData);
         }
         alert(JSON.stringify(arr));
-    })
+    });
 }

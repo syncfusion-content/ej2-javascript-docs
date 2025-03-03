@@ -21,55 +21,35 @@ let tooltip4: Tooltip = new Tooltip({
    position: 'RightCenter'
 });
 tooltip4.appendTo('#cpwd');
+let uname = document.getElementById('uname');
+let pwd = document.getElementById('pwd');
+let cpwd = document.getElementById('cpwd');
+document.getElementById('sample').addEventListener('click', function () {
+   if (uname.value.length > 0 & uname.value.length < 4) {
+      uname.title = 'Required Minimum 4 Characters';
+      uname.style.backgroundColor = 'red';
+      tooltip1.open(uname);
+   } else {
 
-document.getElementById('sample')?.addEventListener('click', function () {
-   let name = (document.getElementById('uname') as HTMLInputElement)?.value;
-   let pwd = (document.getElementById('pwd') as HTMLInputElement)?.value;
-   let cpwd = (document.getElementById('cpwd') as HTMLInputElement)?.value;
-   if (name.length > 0 && name.length < 4) {
-      let target = document.getElementById('uname');
-      if (target) {
-         target.title = 'Required Minimum 4 Characters';
-         target.style.backgroundColor = 'red';
-      }
-      tooltip1.open(target);
-   } else {
-      let target = document.getElementById('uname');
-      if (target) {
-         target.style.backgroundColor = 'white';
-      }
+      uname.style.backgroundColor = 'white';
    }
-   if (pwd !== '' && pwd.length < 8) {
-      let pwdtarget = document.getElementById('pwd');
-      if (pwdtarget) {
-         pwdtarget.title = 'Required Minimum 8 Characters';
-         pwdtarget.style.backgroundColor = 'red';
-      }
-      tooltip3.open(pwdtarget);
+   if (pwd !== '' && pwd.value.length < 8) {
+      pwd.title = 'Required Minimum 8 Characters';
+      pwd.style.backgroundColor = 'red';
+      tooltip3.open(pwd);
    } else {
-      let pwdtarget = document.getElementById('pwd');
-      if (pwdtarget) {
-         pwdtarget.style.backgroundColor = 'white';
-      }
+      pwd.style.backgroundColor = 'white';
    }
-   if (name.length >= 4 && pwd !== '' && pwd.length >= 8 && pwd == cpwd) {
+   if (uname.value.length >= 4 && pwd !== '' && pwd.value.length >= 8 && pwd == cpwd.value) {
       alert('Form Submitted');
    } else {
       alert('Details are not Valid');
    }
 })
-
-document.getElementById('clear')?.addEventListener('click', function () {
-   let target = document.getElementById('uname');
-   if (target) {
-      target.style.backgroundColor = 'white';
-      target.style.backgroundColor = 'white';
-   }
-   tooltip1.close(target);
-
-   let pwdtarget = document.getElementById('pwd');
-   if (pwdtarget) {
-      pwdtarget.title = 'Please enter your name';
-   }
-   tooltip3.close(pwdtarget);
+document.getElementById('clear').addEventListener('click', function () {
+   uname.style.backgroundColor = 'white';
+   pwd.style.backgroundColor = 'white';
+   tooltip1.close(uname);
+   uname.title = 'Please enter your name';
+   tooltip3.close(pwd);
 });

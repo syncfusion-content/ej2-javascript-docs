@@ -92,10 +92,10 @@ To render Tooltip control, need to import Popups and its dependent controls styl
 <html lang="en">
 
 <head>
-    <title>Essential JS 2</title>
+    <title>Essential JS 2 Tooltip</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <meta name="description" content="Essential JS 2" />
+    <meta name="description" content="Essential JS 2 Tooltip" />
     <meta name="author" content="Syncfusion" />
     <link rel="shortcut icon" href="resources/favicon.ico" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
@@ -164,7 +164,7 @@ The output will be as follows:
 
 ## Initialize Tooltip within a container
 
-You can create Tooltips on multiple targets within a container. To do so, you have to define specific target elements to the `target` property so that the Tooltip is initialized only on matched targets within a container. In this case, the Tooltip content is assigned from the `title` attribute of the target element.
+You can create Tooltips on multiple targets within a container. To do so, you have to define specific target elements to the [`target`](../../api/tooltip/#target) property so that the Tooltip is initialized only on matched targets within a container. In this case, the Tooltip content is assigned from the `title` attribute of the target element.
 
 Refer to the following code example to create a Tooltip on multiple targets within a container.
 

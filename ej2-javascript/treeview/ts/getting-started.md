@@ -140,7 +140,7 @@ treeViewInstance.appendTo("#tree");
 
 ## Binding data source
 
-TreeView can load data either from local data sources or remote data services. This can be done using the `dataSource` property that is a member of the [fields](../api/treeview#fields) property. The dataSource property supports array of JavaScript objects and `DataManager`. Here, an array of JSON values is passed to the TreeView control.
+TreeView can load data either from local data sources or remote data services. This can be done using the [`dataSource`](../api/treeview/fieldsSettingsModel#datasource) property that is a member of the [`fields`](../api/treeview#fields) property. The dataSource property supports array of JavaScript objects and `DataManager`. Here, an array of JSON values is passed to the TreeView control.
 
 `[src/app/app.ts]`
 

@@ -32,7 +32,7 @@ The following table represents the basic operations available in the File Manage
 
 ## Folder Upload support
 
-To perform the directory(folder) upload in File Manager, set [directoryUpload](../api/file-manager/uploadSettings/#directoryupload) as true within the uploadSettings property. The directory upload feature is supported for the following file service providers:
+To perform the directory(folder) upload in File Manager, set [`directoryUpload`](../api/file-manager/uploadSettings/#directoryupload) as true within the [`uploadSettings`](../api/file-manager/#uploadsettings) property. The directory upload feature is supported for the following file service providers:
 * Physical file service provider.
 * Azure file service provider.
 * NodeJS file service provider.
@@ -931,11 +931,12 @@ The toolbar can be divided into two sections as right and left. Whenever the too
 
 The following table provides the toolbar buttons that appear based on the selection.
 
-| Selected Items Count | Left section | Right section |
+| Selected Items Count | Left Section | Right Section |
 |----------------------|--------------|---------------|
-| `0` (none of the item) | • SortBy<br>• Refresh<br>• NewFolder<br>• Upload | • View<br>• Details |
-| `1` (single item selected) | • Delete<br>• Download<br>• Rename | • Selected items count<br>• View<br>• Details |
-| `>1` (multiple selection) | • Delete<br>• Download | • Selected items count<br>• View<br>• Details |
+| `0` (none of the item) | <ul><li>SortBy</li><li>Refresh</li><li>NewFolder</li><li>Upload</li></ul> | <ul><li>View</li><li>Details</li></ul> |
+| `1` (single item selected) | <ul><li>Delete</li><li>Download</li><li>Rename</li></ul> | <ul><li>Selected items count</li><li>View</li><li>Details</li></ul> |
+| `>1` (multiple selection) | <ul><li>Delete</li><li>Download</li></ul> | <ul><li>Selected items count</li><li>View</li><li>Details</li></ul> |
+
 ### Context menu
 
 The following table provides the default context menu item and the corresponding target areas.

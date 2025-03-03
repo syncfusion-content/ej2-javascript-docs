@@ -1,9 +1,8 @@
-
-
 import { Schedule, Month, RenderCellEventArgs } from '@syncfusion/ej2-schedule';
 import { scheduleData } from './datasource.ts';
 
 Schedule.Inject(Month);
+
 let getWeather: Function = (value: Date) => {
     switch (value.getDay()) {
         case 0:
@@ -24,6 +23,7 @@ let getWeather: Function = (value: Date) => {
             return null;
     }
 };
+
 let scheduleObj: Schedule = new Schedule({
     width: '100%',
     height: '550px',
@@ -39,5 +39,3 @@ let scheduleObj: Schedule = new Schedule({
     eventSettings: { dataSource: scheduleData }
 });
 scheduleObj.appendTo('#Schedule');
-
-

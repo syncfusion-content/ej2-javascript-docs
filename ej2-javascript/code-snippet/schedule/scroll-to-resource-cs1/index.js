@@ -26,9 +26,10 @@ var scheduleObj = new ej.schedule.Schedule({
   eventSettings: { dataSource: resourceData, resourceColorField: 'Rooms' }
 });
 scheduleObj.appendTo('#Schedule');
+
 var resourceButton = new ej.buttons.Button();
 resourceButton.appendTo('#btn1');
+
 resourceButton.element.onclick = function () {
   scheduleObj.scrollToResource(6, 'Owners');
 };
-

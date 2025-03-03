@@ -140,7 +140,7 @@ filemanagerInstance.appendTo('#filemanager');
 {% endhighlight %}
 {% endtabs %}
 
->**Note:** The [ajaxSettings](../api/file-manager/#ajaxsettings) must be defined while initializing the File Manager. File Manager utilizes the URL's mentioned in ajaxSettings to send [file operation](./file-operations) request to the server.
+>**Note:** The [`ajaxSettings`](../api/file-manager/#ajaxsettings) must be defined while initializing the File Manager. File Manager utilizes the URL's mentioned in ajaxSettings to send [`file operation`](./file-operations) request to the server.
 >The File Manager service link is given in `hostUrl`.
 
 ## Run the application
@@ -170,7 +170,7 @@ The following example shows the basic File Manager control.
 
 ## File Download support
 
-To perform the download operation, initialize the `downloadUrl` property in a [ajaxSettings](../api/file-manager/#ajaxsettings) of File Manager control.
+To perform the download operation, initialize the [`downloadUrl`](../api/file-manager/ajaxSettingsModel/#downloadurl) property in a [`ajaxSettings`](../api/file-manager/#ajaxsettings) of File Manager control.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -194,7 +194,7 @@ filemanagerInstance.appendTo('#filemanager');
 
 ## File Upload support
 
-To perform the upload operation, initialize the `uploadUrl` property in a [ajaxSettings](../api/file-manager/#ajaxsettings) of File Manager Control.
+To perform the upload operation, initialize the [`uploadUrl`](../api/file-manager/ajaxSettingsModel/#uploadurl) property in a [`ajaxSettings`](../api/file-manager/#ajaxsettings) of File Manager Control.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -218,7 +218,7 @@ filemanagerInstance.appendTo('#filemanager');
 
 ## Image Preview support
 
-To perform the image preview support in the File Manager control, need to initialize the `getImageUrl` property in a [ajaxSettings](../api/file-manager/#ajaxsettings) of File Manager control.
+To perform the image preview support in the File Manager control, need to initialize the [`getImageUrl`](../api/file-manager/ajaxSettingsModel/#getimageurl) property in a [`ajaxSettings`](../api/file-manager/#ajaxsettings) of File Manager control.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -271,11 +271,11 @@ The following example shows you the File Manager with all feature modules.
           
 {% previewsample "page.domainurl/code-snippet/file-manager/overview-cs1" %}
 
->**Note:** The appearance of the File Manager can be customized by using [cssClass](../api/file-manager/#cssclass) property. This adds a css class to the root of the File Manager which can be used to add new styles or override existing styles to the File Manager.
+>**Note:** The appearance of the File Manager can be customized by using [`cssClass`](../api/file-manager/#cssclass) property. This adds a css class to the root of the File Manager which can be used to add new styles or override existing styles to the File Manager.
 
 ## Switching initial view of the File Manager
 
-The initial view of the File Manager can be changed to details or large icons view with the help of [view](../api/file-manager/#view) property. By default, the File Manager will be rendered in large icons view.
+The initial view of the File Manager can be changed to details or large icons view with the help of [`view`](../api/file-manager/#view) property. By default, the File Manager will be rendered in large icons view.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -290,10 +290,10 @@ The initial view of the File Manager can be changed to details or large icons vi
 
 ## Maintaining control state on page reload
 
-The File Manager supports maintaining the control state on page reload. This can be achieved by enabling [enablePersistence](../api/file-manager/#enablepersistence) property which maintains the following,
-* Previous view of the File Manager - [View](../api/file-manager/#view)
-* Previous path of the File Manager - [Path](../api/file-manager/#path)
-* Previous selected items of the File Manager - [SelectedItems](../api/file-manager/#selecteditems)
+The File Manager supports maintaining the control state on page reload. This can be achieved by enabling [`enablePersistence`](../api/file-manager/#enablepersistence) property which maintains the following,
+* Previous view of the File Manager - [`View`](../api/file-manager/#view)
+* Previous path of the File Manager - [`Path`](../api/file-manager/#path)
+* Previous selected items of the File Manager - [`SelectedItems`](../api/file-manager/#selecteditems)
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -306,11 +306,11 @@ The File Manager supports maintaining the control state on page reload. This can
           
 {% previewsample "page.domainurl/code-snippet/file-manager/persistence-cs1" %}
 
->**Note:** The files of the current folder opened in the File Manager can be refreshed programmatically by calling [refreshFiles](../api/file-manager/#refreshfiles) method.
+>**Note:** The files of the current folder opened in the File Manager can be refreshed programmatically by calling [`refreshFiles`](../api/file-manager/#refreshfiles) method.
 
 ## Rendering control in right-to-left direction
 
-It is possible to render the File Manager in right-to-left direction by setting the [enableRtl](../api/file-manager/#enablertl) API to true.
+It is possible to render the File Manager in right-to-left direction by setting the [`enableRtl`](../api/file-manager/#enablertl) API to true.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -325,7 +325,7 @@ It is possible to render the File Manager in right-to-left direction by setting 
 
 ## Specifying the current path of the File Manager
 
-The current path of the File Manager can be specified initially or dynamically using the [path](../api/file-manager/#path) property.
+The current path of the File Manager can be specified initially or dynamically using the [`path`](../api/file-manager/#path) property.
 
 The following code snippet demonstrates specifying the current path in File Manager on rendering.
 

@@ -1,4 +1,4 @@
-var data = new ej.base.extend([], window.resourceData.concat(window.timelineResourceData), null, true);
+var data = new ej.base.extend([], resourceData.concat(timelineResourceData), null, true);
 var projectsData = [
     { text: 'PROJECT 1', id: 1, color: '#cb6bb2' },
     { text: 'PROJECT 2', id: 2, color: '#56ca85' },
@@ -39,4 +39,3 @@ var scheduleObj = new ej.schedule.Schedule({
     }
 });
 scheduleObj.appendTo('#Schedule');
-

@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Drag and drop in ##Platform_Name## TreeView control
 
-The TreeView control allows you to drag and drop any node by setting [allowDragAndDrop](../api/treeview#allowdraganddrop) to **true**. Nodes can be dragged and dropped at all levels of the same TreeView.
+The TreeView control allows you to drag and drop any node by setting [`allowDragAndDrop`](../api/treeview#allowdraganddrop) to **true**. Nodes can be dragged and dropped at all levels of the same TreeView.
 
 The dragged nodes can be dropped at any level by indicator lines with **line**, **plus/minus**, and **restrict** icons. These icons represent the exact position where the node is to be dropped as a sibling or child.
 
@@ -29,7 +29,7 @@ The following table explains the usage of indicator icons:
 
 * The [`nodeDropped`](../api/treeview#nodedropped) event is triggered when the TreeView node is successfully dropped on the target element.
 
-In the following sample, the [allowDragAndDrop](../api/treeview#allowdraganddrop) property is enabled.
+In the following sample, the [`allowDragAndDrop`](../api/treeview#allowdraganddrop) property is enabled.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -66,11 +66,11 @@ In the following sample, the [allowDragAndDrop](../api/treeview#allowdraganddrop
 
 ## Multiple-node drag and drop
 
-To drag and drop more than one node, you should enable the [allowMultiSelection](../api/treeview#allowmultiselection) property along with the `allowDragAndDrop` property.
+To drag and drop more than one node, you should enable the [`allowMultiSelection`](../api/treeview#allowmultiselection) property along with the [`allowDragAndDrop`](../api/treeview#allowdraganddrop) property.
 
 To perform multi-selection, press and hold the **CTRL** key and click the desired nodes. To select a range of nodes, press and hold the **SHIFT** key and click the nodes.
 
-In the following sample, the `allowMultiSelection` property is enabled along with the `allowDragAndDrop` property.
+In the following sample, the [`allowMultiSelection`](../api/treeview#allowmultiselection) property is enabled along with the [`allowDragAndDrop`](../api/treeview#allowdraganddrop) property.
 
 {% if page.publishingplatform == "typescript" %}
 

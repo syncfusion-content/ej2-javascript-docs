@@ -10,7 +10,7 @@ let tooltip: Tooltip = new Tooltip({
 tooltip.appendTo('#targetContainer');
 
 function onBeforeRender(args: TooltipEventArgs): void {
-    let ajax: Ajax = new Ajax('./tooltipdata.json', 'GET', true);
+    let ajax: Ajax = new Ajax('https://helpej2.syncfusion.com/documentation/code-snippet/tooltip/ajax-content-cs1/tooltipdata.json', 'GET', true);
     ajax.send().then(
         (result: any) => {
             result = JSON.parse(result);

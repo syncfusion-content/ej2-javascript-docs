@@ -1,14 +1,14 @@
-
-
 import { Schedule, Day, Week, Agenda, TimelineViews, TimelineMonth } from '@syncfusion/ej2-schedule';
 import { scheduleData } from './datasource.ts';
 import { Internationalization } from '@syncfusion/ej2-base';
 
 Schedule.Inject(Day, Week, Agenda, TimelineViews, TimelineMonth);
+
 let instance: Internationalization = new Internationalization();
 (window as TemplateFunction).getDateHeaderText = (value: Date) => {
     return instance.formatDate(value, { skeleton: 'Ed' });
 };
+
 let getWeather: Function = (value: Date) => {
     switch (value.getDay()) {
         case 0:
@@ -29,11 +29,14 @@ let getWeather: Function = (value: Date) => {
             return null;
     }
 };
+
 (window as TemplateFunction).getWeather = getWeather;
+
 interface TemplateFunction extends Window {
     getDateHeaderText?: Function;
     getWeather?: Function;
 }
+
 let scheduleObj: Schedule = new Schedule({
     width: '100%',
     height: '550px',
@@ -45,5 +48,3 @@ let scheduleObj: Schedule = new Schedule({
     eventSettings: { dataSource: scheduleData }
 });
 scheduleObj.appendTo('#Schedule');
-
-

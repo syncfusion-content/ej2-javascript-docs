@@ -1,9 +1,8 @@
-
-
 import {
     Schedule, Week, Month, TimelineViews, TimelineMonth
 } from '@syncfusion/ej2-schedule';
 import { resourceData } from './datasource.ts';
+
 Schedule.Inject(Week, Month, TimelineViews, TimelineMonth);
 
 let scheduleObj: Schedule = new Schedule({
@@ -30,5 +29,3 @@ let scheduleObj: Schedule = new Schedule({
     eventSettings: { dataSource: resourceData }
 });
 scheduleObj.appendTo('#Schedule');
-
-

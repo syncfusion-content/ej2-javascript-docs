@@ -1,10 +1,9 @@
-
-
 import { Schedule, Day, Week, WorkWeek } from '@syncfusion/ej2-schedule';
 import { TimePicker, ChangeEventArgs } from '@syncfusion/ej2-calendars';
 import { scheduleData } from './datasource.ts';
 
 Schedule.Inject(Day, Week, WorkWeek);
+
 let scheduleObj: Schedule = new Schedule({
     height: '550px',
     width: '100%',
@@ -23,5 +22,3 @@ let scrollToHour: TimePicker = new TimePicker({
     }
 });
 scrollToHour.appendTo('#ScrollToHour');
-
-

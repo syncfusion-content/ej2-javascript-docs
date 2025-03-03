@@ -9,14 +9,13 @@ var scheduleObj = new ej.schedule.Schedule({
     },
     resources: [{
         field: 'DoctorId', title: 'Doctor Name', name: 'Doctors',
-            dataSource: [
-                { text: 'Will Smith', id: 1, color: '#ea7a57', designation: 'Cardioligst' },
-                { text: 'Alice', id: 2, color: '#7fa900', designation: 'Neurologist' },
-                { text: 'Robson', id: 3, color: '#7fa900', designation: 'Orthopedic Surgeon'  }
-            ],
+        dataSource: [
+            { text: 'Will Smith', id: 1, color: '#ea7a57', designation: 'Cardioligst' },
+            { text: 'Alice', id: 2, color: '#7fa900', designation: 'Neurologist' },
+            { text: 'Robson', id: 3, color: '#7fa900', designation: 'Orthopedic Surgeon' }
+        ],
         textField: 'text', idField: 'id', colorField: 'color', designationField: 'designation'
     }],
     eventSettings: { dataSource: doctorData }
 });
 scheduleObj.appendTo('#Schedule');
-

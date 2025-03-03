@@ -11,4 +11,3 @@ let scheduleObj = new ej.schedule.Schedule({
     '<div class="cell-header-wrap">${getDate(data.date)}</div>'
 });
 scheduleObj.appendTo("#Schedule");
-

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Schedule Typescript Component</title>
+    <title>Schedule Typescript Control</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Typescript Schedule Control" />
@@ -28,6 +28,16 @@
         .content-wrapper {
             display: flex;
             justify-content: space-between;
+        }
+
+        @media screen and (max-width: 540px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+
+            .e-grid {
+                width: 100% !important;
+            }
         }
     </style>
 

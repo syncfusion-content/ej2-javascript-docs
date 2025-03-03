@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Header rows in ##Platform_Name## Schedule control | Syncfusion
-description: Learn here all about Header rows in Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
+title: Header rows in ##Platform_Name## Scheduler control | Syncfusion
+description: Learn here all about Header rows in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Header rows 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Header rows in ##Platform_Name## Schedule control
+# Header rows in ##Platform_Name## Scheduler control
 
 The Timeline views can have additional header rows other than its default date and time header rows. It is possible to show individual header rows for displaying year, month and week separately using the [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule#headerrows) property. This property is applicable only on the timeline views. The possible rows which can be added using [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule#headerrows) property are as follows.
 
@@ -32,6 +32,9 @@ The following example shows the Scheduler displaying all the available header ro
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/header-rows-cs1/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/header-rows-cs1/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/header-rows-cs1" %}
@@ -44,6 +47,9 @@ The following example shows the Scheduler displaying all the available header ro
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/header-rows-cs1/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/header-rows-cs1/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -63,6 +69,9 @@ To display the timeline Scheduler simply with year and month names alone, define
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/header-rows-cs2/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/header-rows-cs2/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/header-rows-cs2" %}
@@ -75,6 +84,9 @@ To display the timeline Scheduler simply with year and month names alone, define
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/header-rows-cs2/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/header-rows-cs2/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -94,6 +106,9 @@ The week number can be displayed in a separate header row of the timeline Schedu
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/header-rows-cs3/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/header-rows-cs3/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/header-rows-cs3" %}
@@ -106,6 +121,9 @@ The week number can be displayed in a separate header row of the timeline Schedu
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/header-rows-cs3/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/header-rows-cs3/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -125,6 +143,9 @@ It is possible to display a complete year in a timeline view by setting [`interv
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/header-rows-cs4/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/header-rows-cs4/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/header-rows-cs4" %}
@@ -137,6 +158,9 @@ It is possible to display a complete year in a timeline view by setting [`interv
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/header-rows-cs4/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/header-rows-cs4/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -156,6 +180,9 @@ You can customize the text of the header rows and display any images or formatte
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/header-rows-cs5/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/header-rows-cs5/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/header-rows-cs5" %}
@@ -168,6 +195,9 @@ You can customize the text of the header rows and display any images or formatte
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/header-rows-cs5/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/header-rows-cs5/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 

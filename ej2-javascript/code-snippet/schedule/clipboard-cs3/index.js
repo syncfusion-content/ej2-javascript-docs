@@ -84,4 +84,3 @@ const gridObj = new Grid({
     ]
 });
 gridObj.appendTo('#Grid');
-

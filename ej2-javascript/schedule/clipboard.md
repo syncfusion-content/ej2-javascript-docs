@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Clipboard in ##Platform_Name## Schedule control | Syncfusion
-description: Learn here all about Clipboard in Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
+title: Clipboard in ##Platform_Name## Scheduler control | Syncfusion
+description: Learn here all about Clipboard in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Clipboard 
 publishingplatform: ##Platform_Name##
@@ -9,16 +9,17 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Clipboard in ##Platform_Name## Schedule control
+# Clipboard in ##Platform_Name## Scheduler control
 
-The Clipboard functionality in the Syncfusion Schedule control enhances scheduling efficiency by enabling users to cut, copy, and paste appointments with ease. This feature is especially beneficial for those managing multiple appointments, as it eliminates the need for repetitive data entry and allows users to quickly adjust their schedules without hassle.
+The Clipboard functionality in the Syncfusion Scheduler control enhances scheduling efficiency by enabling users to cut, copy, and paste appointments with ease. This feature is especially beneficial for those managing multiple appointments, as it eliminates the need for repetitive data entry and allows users to quickly adjust their schedules without hassle.
+
 To activate the clipboard feature in the scheduler, simply set the [`allowClipboard`](https://ej2.syncfusion.com/documentation/api/schedule/#allowclipboard) property to **true**.
 
 >Note: The [`allowKeyboardInteraction`](https://ej2.syncfusion.com/documentation/api/schedule/#allowkeyboardinteraction) property must be true for proper functionality of the clipboard feature.
 
 ## Cut, copy and paste using keyboard
 
-The Syncfusion Schedule control supports keyboard shortcuts to streamline the process of managing appointments.
+The Syncfusion Scheduler control supports keyboard shortcuts to streamline the process of managing appointments.
 
 These keyboard shortcuts enable users to efficiently manage their schedules:
 
@@ -39,6 +40,9 @@ To use these shortcuts, simply click on the appointment and press **Ctrl+C** to 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/clipboard-cs1/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/clipboard-cs1/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/clipboard-cs1" %}
@@ -51,6 +55,9 @@ To use these shortcuts, simply click on the appointment and press **Ctrl+C** to 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/clipboard-cs1/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/clipboard-cs1/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -82,6 +89,9 @@ By using these methods, you can programmatically cut, copy, and paste appointmen
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/clipboard-cs2/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/clipboard-cs2/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/clipboard-cs2" %}
@@ -94,6 +104,9 @@ By using these methods, you can programmatically cut, copy, and paste appointmen
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/clipboard-cs2/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/clipboard-cs2/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -124,6 +137,9 @@ In this example, the `beforePaste` event can be utilized to intercept the event 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/clipboard-cs3/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/clipboard-cs3/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/clipboard-cs3" %}
@@ -136,6 +152,9 @@ In this example, the `beforePaste` event can be utilized to intercept the event 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/clipboard-cs3/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/clipboard-cs3/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -13,11 +13,11 @@ domainurl: ##DomainURL##
 
 The TreeView control provides essential methods for dynamically managing nodes, offering the ability to create a highly interactive and customizable tree structure:
 
-* [addNodes](../../api/treeview/#addnodes)
-* [removeNodes](../../api/treeview/#removenodes)
-* [updateNode](../../api/treeview/#updatenode)
-* [refreshNode](../../api/treeview/#refreshnode)
-* [moveNodes](../../api/treeview/#movenodes)
+* [`addNodes`](../../api/treeview/#addnodes)
+* [`removeNodes`](../../api/treeview/#removenodes)
+* [`updateNode`](../../api/treeview/#updatenode)
+* [`refreshNode`](../../api/treeview/#refreshnode)
+* [`moveNodes`](../../api/treeview/#movenodes)
 
 These methods provide the flexibility to add, remove, update, refresh, or relocate nodes as needed, facilitating a fully interactive and customizable TreeView structure.
 

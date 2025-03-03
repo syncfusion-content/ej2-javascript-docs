@@ -1,10 +1,8 @@
-
-
-
 import {
     Schedule, RenderCellEventArgs, TimelineViews, TimelineMonth
 } from '@syncfusion/ej2-schedule';
-import {  roomData } from './datasource.ts';
+import { roomData } from './datasource.ts';
+
 Schedule.Inject(TimelineViews, TimelineMonth);
 
 let scheduleObj: Schedule = new Schedule({
@@ -42,5 +40,3 @@ let scheduleObj: Schedule = new Schedule({
     eventSettings: { dataSource: roomData }
 });
 scheduleObj.appendTo('#Schedule');
-
-

@@ -1,10 +1,9 @@
-
-
 import { Schedule, Day, Week, Month, Resize, DragAndDrop } from '@syncfusion/ej2-schedule';
 import { extend } from '@syncfusion/ej2-base';
 import { timelineResourceData, resourceData } from './datasource.ts';
 
 Schedule.Inject(Day, Week, Month, Resize, DragAndDrop);
+
 let scheduleObj: Schedule = new Schedule({
     width: '100%', height: '555px',
     views: ['Day', 'Week', 'Month'],
@@ -42,5 +41,3 @@ let scheduleObj: Schedule = new Schedule({
     }
 });
 scheduleObj.appendTo('#Schedule');
-
-

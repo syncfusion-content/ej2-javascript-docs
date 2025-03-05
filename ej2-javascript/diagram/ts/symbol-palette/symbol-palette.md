@@ -87,7 +87,7 @@ The symbol palette supports adding group nodes. To add group nodes to the palett
 
 To drag and drop symbols from the palette to the diagram canvas, mousedown on the desired symbol in the palette, drag it to the desired location on the diagram canvas, and release the mouse button to drop it.
 
-![Drag and drop symbols](images/symbol-palette-drag-drop.gif)
+![Drag and drop symbols](../../images/symbol-palette-drag-drop.gif)
 
 ## Add symbols to palette at runtime
 

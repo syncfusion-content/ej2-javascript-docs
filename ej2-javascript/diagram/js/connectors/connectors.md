@@ -301,7 +301,7 @@ ej.diagrams.Diagram.Inject(ej.diagrams.LineRouting);
 
 The following image illustrates how the connector automatically re-routes the segments. 
 
-![LineRouting GIF](images/lineRouting.GIF.gif)
+![LineRouting GIF](../../images/lineRouting.GIF.gif)
 
 * In some situations, automatic line routing enabled diagram needs to ignore a specific connector from automatic line routing. So, in this case, auto routing feature can be disabled to the specific connector using the [`constraints`](../api/diagram/connector/#constraints) property of the connector like the following code snippet.
 

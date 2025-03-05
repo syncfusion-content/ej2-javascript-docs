@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in ##Platform_Name## Rich text editor control
 
-The Rich Text Editor component has been designed, keeping in mind the WAI-ARIA specifications, and applies the WAI-ARIA roles, states, and properties. This component is characterized by complete ARIA accessibility support that makes it easy for people who use assistive technologies (AT) or those who completely rely on keyboard navigation
+The Rich Text Editor control is designed with accessibility in mind, adhering to WAI-ARIA specifications and implementing ARIA roles, states, and properties. This ensures full accessibility support, making it user-friendly for people who rely on assistive technologies (AT) or keyboard navigation.
 
-The accessibility compliance for the Rich Text Editor component is outlined below.
+The accessibility compliance for the Rich Text Editor control is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -33,27 +33,28 @@ The accessibility compliance for the Rich Text Editor component is outlined belo
         margin: 0.5em 0;
     }
 </style>
+
 <div><img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> - All features of the component meet the requirement.</div>
 
 <div><img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> - Some features of the component do not meet the requirement.</div>
 
 <div><img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> - The component does not meet the requirement.</div>
 
-## ARIA attributes
+## ARIA Attributes
 
-* The toolbar of Rich Text Editor, assigned the role of `Toolbar` and has the following list of ARIA attribute.
+The toolbar in the Rich Text Editor is assigned the role of 'Toolbar' and includes the following attributes.
 
 | **Property** | **Functionalities** |
 | --- | --- |
 | role="toolbar" | This attribute added to the ToolBar element describes the actual role of the element. |
 | aria-orientation     | Indicates the ToolBar orientation. Default value is `horizontal`. |
 | aria-haspopup       | Indicates the popup mode of the Toolbar. Default value is false. When popup mode is enabled,  attribute value has to be changed to `true`. | |
-| aria-disabled       | Indicates the disabled state of the ToolBar. |
+| aria-disabled       | Indicates the disabled state of the toolbar. |
 | aria-owns | Identifies an element to define a visual, functional, or contextual parent/child relationship between DOM elements when the DOM hierarchy cannot represent the relationship. In the Rich Text Editor, the attribute contains the ID of the Rich Text Editor to indicate the popup as a child element. |
 
-For further details of Toolbar ARIA attributes, refer the  [`accessibility of Toolbar`](../../toolbar/accessibility) documentation.
+For more details on Toolbar ARIA attributes, refer to the [`Accessibility of Toolbar`](../../toolbar/accessibility.html) documentation.
 
-The Rich Text Editor element is assigned the role of `application`.
+* The Rich Text Editor element is assigned the role of `application`.
 
 | **Property** | **Functionalities** |
 | --- | --- |
@@ -62,7 +63,7 @@ The Rich Text Editor element is assigned the role of `application`.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/rich-text-editor/getting-started-cs1/index.ts %}
 {% endhighlight %}
@@ -87,18 +88,20 @@ The Rich Text Editor element is assigned the role of `application`.
 {% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs1" %}
 {% endif %}
 
-## Keyboard interaction
+## Keyboard Navigation
 
 The Rich Text Editor component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Rich Text Editor component.
 
-### HTML formation shortcut key
+### HTML Formatting Shortcuts
 
-You can use the following key shortcuts when the Rich Text Editor renders with HTML edit mode.
+You can use the following key shortcuts when the Rich Text Editor renders in HTML edit mode.
 
 | Actions | Keyboard shortcuts |
 |----------------|---------|
 | Toolbar focus | <kbd>Alt</kbd> + <kbd>f10</kbd> |
 | Insert link | <kbd>Ctrl</kbd> + <kbd>k</kbd> |
+| Insert audio | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>a</kbd> |
+| Insert video | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>v</kbd> |
 | Insert image | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>i</kbd> |
 | Insert table | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>e</kbd> |
 | Undo | <kbd>Ctrl</kbd> + <kbd>z</kbd> |
@@ -130,9 +133,43 @@ You can use the following key shortcuts when the Rich Text Editor renders with H
 | Format Painter Paste| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>v</kbd> |
 | Format Painter Escape | <kbd>Esc</kbd> |
 
-### Markdown formation shortcut key
+#### Customizing Shortcut Keys
 
-You can use the following key shortcuts when the Rich Text Editor renders with Markdown edit mode
+You can customize shortcut keys using the [formatter](../../api/rich-text-editor/#formatter) property.This allows you to configure custom key combinations for various actions in the Rich Text Editor. For example, you can set `ctrl+q` to open the `Insert Hyperlink` dialog.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/rich-text-editor/how-to-cs3/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor/how-to-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/how-to-cs3" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/rich-text-editor/how-to-cs3/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor/how-to-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/how-to-cs3" %}
+{% endif %}
+
+> We need to import `IHtmlFormatterModel` and `HTMLFormatter` to configure the shortcut key.
+
+
+### Markdown Formatting Shortcuts
+
+You can use the following key shortcuts when the Rich Text Editor renders in Markdown edit mode
 
 | Actions | Keyboard shortcuts |
 |----------------|---------|
@@ -156,7 +193,7 @@ You can use the following key shortcuts when the Rich Text Editor renders with M
 | Ordered list| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>o</kbd> |
 | Unordered list| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>o</kbd> |
 
-## Ensuring accessibility
+## Implementing Accessibility Best Practices
 
 The Rich Text Editor component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
@@ -164,6 +201,6 @@ The accessibility compliance of the Rich Text Editor component is shown in the f
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/rich-text-editor.html" %}
 
-## See also
+## See Also
 
-* [Accessibility in Syncfusion JavaScript components](../common/accessibility)
+* [General Accessibility Guidelines](../common/accessibility)

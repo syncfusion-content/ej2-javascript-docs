@@ -59,15 +59,15 @@ The following table shows the position of annotation with different offsets.
 
 offset|image|
 |-----|-----|
-|Top Left {x:0,y:0} |![TopLeft](images/diagram-annotation-in-lefttop-position.png)|
-|Middle left {x:0,y:0.5}|![MiddelLeft](images/diagram-annotation-in-leftcenter-position.png)|
-|Bootom left {x:0,y:1}|![BottomLeft](images/diagram-annotation-in-leftbottom-position.png)|
-|Middle Top {x:0.5,y:0}|![MiddleTop](images/diagram-annotation-in-centertop-position.png)|
-|Center {x:0.5,y:0.5}|![Center](images/diagram-annotation-in-center-position.png)|
-|Middle Bottom {x:0.5,y:1}|![MiddleBottom](images/diagram-annotation-in-centerbottom-position.png)|
-|Top right {x:1,y:0}|![TopRight](images/diagram-annotation-in-topright-position.png)|
-|Middle right {x:1,y:0.5}|![MiddleRight](images/diagram-annotation-in-rightcenter-position.png)|
-|Bottom right {x:1,y:1}|![BottomRight](images/diagram-annotation-in-rightbottom-position.png)|
+|Top Left {x:0,y:0} |![TopLeft](../../images//diagram-annotation-in-lefttop-position.png)|
+|Middle left {x:0,y:0.5}|![MiddelLeft](../../images//diagram-annotation-in-leftcenter-position.png)|
+|Bootom left {x:0,y:1}|![BottomLeft](../../images//diagram-annotation-in-leftbottom-position.png)|
+|Middle Top {x:0.5,y:0}|![MiddleTop](../../images//diagram-annotation-in-centertop-position.png)|
+|Center {x:0.5,y:0.5}|![Center](../../images//diagram-annotation-in-center-position.png)|
+|Middle Bottom {x:0.5,y:1}|![MiddleBottom](../../images//diagram-annotation-in-centerbottom-position.png)|
+|Top right {x:1,y:0}|![TopRight](../../images//diagram-annotation-in-topright-position.png)|
+|Middle right {x:1,y:0.5}|![MiddleRight](../../images//diagram-annotation-in-rightcenter-position.png)|
+|Bottom right {x:1,y:1}|![BottomRight](../../images//diagram-annotation-in-rightbottom-position.png)|
 
 ## Annotation alignment
 
@@ -92,15 +92,15 @@ The following tables illustrates all the possible alignments visually with 'offs
 
 | Horizontal Alignment | Vertical Alignment | Output with Offset(0,0) |
 | -------- | -------- | -------- |
-| Left | Top | ![Left Top Label Alignment](images/Label1.png) |
-| Center | Top | ![Center Top Label Alignment](images/Label2.png) |
-| Right | Top |  ![Right Top Label Alignment](images/Label3.png) |
-| Left | Center | ![Left Center Label Alignment](images/Label4.png) |
-| Center | Center| ![Center Center Label Alignment](images/Label5.png) |
-| Right | Center | ![Right Center Label Alignment](images/Label6.png) |
-| Left | Bottom | ![Left Bottom Label Alignment](images/Label7.png) |
-| Center | Bottom | ![Center Bottom Label Alignment](images/Label8.png) |
-| Right |Bottom |![Right Bottom Label Alignment](images/Label9.png) |
+| Left | Top | ![Left Top Label Alignment](../../images//Label1.png) |
+| Center | Top | ![Center Top Label Alignment](../../images//Label2.png) |
+| Right | Top |  ![Right Top Label Alignment](../../images//Label3.png) |
+| Left | Center | ![Left Center Label Alignment](../../images//Label4.png) |
+| Center | Center| ![Center Center Label Alignment](../../images//Label5.png) |
+| Right | Center | ![Right Center Label Alignment](../../images//Label6.png) |
+| Left | Bottom | ![Left Bottom Label Alignment](../../images//Label7.png) |
+| Center | Bottom | ![Center Bottom Label Alignment](../../images//Label8.png) |
+| Right |Bottom |![Right Bottom Label Alignment](../../images//Label9.png) |
 
 
 ### Update annotation alignment at runtime

@@ -1,17 +1,13 @@
-
-
-
 import { enableRipple } from '@syncfusion/ej2-base';
 enableRipple(true);
 
 import { RichTextEditor, Link, Image, MarkdownEditor, Toolbar, QuickToolbar } from '@syncfusion/ej2-richtexteditor';
 import { createElement, KeyboardEventArgs, isNullOrUndefined, addClass, removeClass, Browser } from '@syncfusion/ej2-base';
-
+import { marked } from 'marked';
 RichTextEditor.Inject(Link, Image, MarkdownEditor, Toolbar, QuickToolbar);
 
 let textArea: HTMLTextAreaElement;
 let mdsource: HTMLElement;
-let mdSplit: HTMLElement;
 let htmlPreview: HTMLElement;
 
 let defaultRTE: RichTextEditor = new RichTextEditor({
@@ -24,7 +20,6 @@ let defaultRTE: RichTextEditor = new RichTextEditor({
     created: () => {
         textArea = defaultRTE.contentModule.getEditPanel() as HTMLTextAreaElement;
         textArea.addEventListener('keyup', (e: KeyboardEventArgs) => { markDownConversion(); });
-        let rteObj: RichTextEditor = defaultRTE;
         mdsource = document.getElementById('preview-code');
         mdsource.addEventListener('click', (e: MouseEvent) => {
             fullPreview({ mode: true, type: 'preview' });
@@ -77,6 +72,3 @@ function fullPreview(e: { [key: string]: string | boolean }): void {
         mdsource.parentElement.title = 'Code View';
     }
 }
-
-
-

@@ -9,30 +9,30 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Link in ##Platform_Name## Rich text editor control
+# Link in ##Platform_Name## Rich Text Editor Control
 
 A hyperlink can be insert into the editor for quick access to the related information. The hyperlink itself can be a text or an image.
 
-## Insert link
+## Inserting a Link
 
-Point the cursor anywhere within the editor where you would like to insert the link. It is also possible to select a text or an image within the editor and can be converted to the hyperlink. Click the Insert HyperLink tool on the toolbar. The Insert Link Dialog will be open. The dialog has the following options.
+To insert a hyperlink:
+
+1. Position your cursor where you want to insert the link, or select the text or image you wish to convert into a hyperlink.
+2. Click the "Insert HyperLink" tool on the toolbar.
+3. In the Insert Link Dialog that appears, fill in the following options.
 
 > Rich Text Editor features are segregated into individual feature-wise modules. To use image and link tool, inject link module using the `RichTextEditor.Inject(Link)`.
 
-![RTE insert link](./images/insert-link.png)
-
 | Options | Description |
 |----------------|--------------------------------------|
-| Web Address | Type or paste the destination for the link you are creating |
-| Display Text | Type or edit the required text that you want to display text for the link|
+| Web Address | Enter or paste the destination URL for your link |
+| Display Text | Enter or edit the required text that you want to display text for the link|
 | Tooltip | To display additional helpful information when you place the pointer on the hyperlink, type the required text in the “Tooltip” field. |
 | Open Link in New Window | Specify whether, the given link will be open in new window or not |
 
-> The Rich Text Editor link tool validates the URLs, as you type them in Web Address. URLs considered invalid will be highlighted with red color by clicking the insert button in the `Insert Link` dialog.
-
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/rich-text-editor/getting-started-cs14/index.ts %}
 {% endhighlight %}
@@ -57,57 +57,67 @@ Point the cursor anywhere within the editor where you would like to insert the l
 {% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs14" %}
 {% endif %}
 
-## Remove Link
+> The Rich Text Editor validates URLs as you type in the Web Address field. Invalid URLs will be highlighted in red when you click the insert button in the `Insert Link` dialog.
 
-If you want to remove a hyperlink from a text or image, select the text or image with the hyperlink and click “Remove Hyperlink” tool from the toolbar. It will keep the text or image.
+## Removing a Link
 
-## Auto-link
+To remove a hyperlink:
 
-When you type URL, and Enter key to the Rich Text Editor, the typed URL will be automatically changed into the hyperlink.
+1. Select the linked text or image.
+2. Click the "Remove Hyperlink" tool in the toolbar.
 
-## Manipulation
+This action will remove the hyperlink while keeping the original text or image intact.
 
-Add the custom tools on the selected link inside the Rich Text Editor through the quick toolbar.
+## Auto Link Generation
 
-![RTE quick toolbar link](./images/manipulation-link.png)
+The Rich Text Editor supports automatic link generation. When you type a URL and press Space or Enter, the editor automatically converts the typed URL into a clickable hyperlink.
 
-The quick toolbar for the link has the following options.
+## Customizing the Link Quick Toolbar
+
+The Rich Text Editor allows you to customize the tools in the link quick toolbar. You can add or remove items by using the [quickToolbarSettings](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#quicktoolbarsettings) property.
+
+
+The quick toolbar for the Link has the following options.
 
 | Tools | Description |
 |----------------|--------------------------------------|
-| Open | The given link page, will be open in new window. |
-| Edit Link | Used to edit the link in the Rich Text Editor content. |
-| Remove Link | Used to remove link from the content of Rich Text Editor. |
-| Custom Tool | Used to add the custom options in the quick toolbar. |
+| Open | Opens the linked page in a new window. |
+| Edit Link | Allows you to edit the selected link. |
+| Remove Link | Removes the link from the selected content. |
+| Custom Tool | Adds custom options to the quick toolbar. |
+
+
+The following example demonstrates how to customize the link quick toolbar using the [quickToolbarSettings](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#quicktoolbarsettings) property.
 
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs15/index.ts %}
+{% include code-snippet/rich-text-editor/link-quick-toolbar-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor/getting-started-cs15/index.html %}
+{% include code-snippet/rich-text-editor/link-quick-toolbar-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs15" %}
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/link-quick-toolbar-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor/getting-started-cs15/index.js %}
+{% include code-snippet/rich-text-editor/link-quick-toolbar-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor/getting-started-cs15/index.html %}
+{% include code-snippet/rich-text-editor/link-quick-toolbar-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs15" %}
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/link-quick-toolbar-cs1" %}
 {% endif %}
 
 ## See Also
 
-* [How to edit the quick toolbar settings](./toolbar/#quick-inline-toolbar)
-* [How to insert image link editing option in the toolbar items](./image/#image-with-link)
+* [Quick Toolbars in Toolbar](https://ej2.syncfusion.com/documentation/rich-text-editor/toolbar#quick-inline-toolbar)
+* [Image with links](https://ej2.syncfusion.com/documentation/rich-text-editor/images#hyperlinking-images)
+* [Insert File Attachments](./how-to/file-attachments)

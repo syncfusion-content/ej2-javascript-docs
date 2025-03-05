@@ -254,7 +254,7 @@ The property [`maxSegmentThumb`](../api/diagram/connector/#maxsegmentthumb) is u
           
 {% previewsample "page.domainurl/code-snippet/diagram/connectors-cs38" %}
 
-![maxSegmentThumb](images/maxSegmentThumb.png)
+![maxSegmentThumb](../../images/maxSegmentThumb.png)
 
 ## Reset segments
 
@@ -288,7 +288,7 @@ The following code illustrates how to split the connector and create a connectio
         
 {% previewsample "page.domainurl/code-snippet/diagram/connectors-cs29" %}
 
-![Enable Connector Split](images/EnableSplit.gif)
+![Enable Connector Split](../../images/EnableSplit.gif)
 
 ### Preserve connector style while connector splitting
 

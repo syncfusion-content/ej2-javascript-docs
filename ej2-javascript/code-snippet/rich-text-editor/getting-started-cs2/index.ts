@@ -1,6 +1,3 @@
-
-
-
 import { RichTextEditor, Toolbar, Link, Image, HtmlEditor } from '@syncfusion/ej2-richtexteditor';
 RichTextEditor.Inject(Toolbar, Link, Image, HtmlEditor);
 
@@ -17,6 +14,3 @@ let defaultRTE: RichTextEditor = new RichTextEditor({
 });
 // render initialized Rich Text Editor
 defaultRTE.appendTo('#defaultRTE');
-
-
-

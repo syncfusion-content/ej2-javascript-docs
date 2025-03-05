@@ -1,8 +1,5 @@
-
-
-
 import { RichTextEditor, Toolbar, Link, Image, Count, HtmlEditor, QuickToolbar } from '@syncfusion/ej2-richtexteditor';
-  RichTextEditor.Inject(Toolbar, Link, Image, Count, HtmlEditor, QuickToolbar);
+RichTextEditor.Inject(Toolbar, Link, Image, Count, HtmlEditor, QuickToolbar);
 
 let defaultRTE: RichTextEditor = new RichTextEditor({
     placeholder:"Click link icon in toolbar to add the desired link",
@@ -22,6 +19,3 @@ let defaultRTE: RichTextEditor = new RichTextEditor({
         }
 });
 defaultRTE.appendTo('#defaultRTE');
-
-
-

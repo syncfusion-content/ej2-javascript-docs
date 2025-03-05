@@ -19,36 +19,36 @@ Different flowchart symbols have different meanings that are used to represent d
 
 |Symbol|Shape name|Description|
 |---|---|---|
-|![Ej2 Diagram displays Terminator Symbol](./images/flowchart-images/FlowShapes_Terminator.png)|Terminator|Indicates the beginning and ending of the process.|
-|![Ej2 Diagram displays Data Symbol](./images/flowchart-images/FlowShapes_Data.png)|Data|Indicates data input or output for a process.|
-|![Ej2 Diagram displays Process Symbol](./images/flowchart-images/FlowShapes_Process.png)|Process|Represents an operation or set of operations and data manipulations.|
-|![Ej2 Diagram displays Decision Symbol](./images/flowchart-images/FlowShapes_Decision.png)|Decision|Shows a branching point where the decision is made to choose one of the two paths|
-|![Ej2 Diagram displays Document Symbol](./images/flowchart-images/FlowShapes_Document.png)|Document|Represents a single document or report in the process.|
-|![Ej2 Diagram displays SubProcess Symbol](./images/flowchart-images/FlowShapes_PreDefinedProcess.png)|PreDefinedProcess|Represents a sequence of actions that combine to perform a specific task that is defined elsewhere.|
-|![Ej2 Diagram displays Stored data Symbol](./images/flowchart-images/FlowShapes_StoredData.png)|StoredData|Represents a step where data get stored within a process.|
-|![Ej2 Diagram displays internal storage Symbol](./images/flowchart-images/internalStorage.png)|InternalStorage|Represents the internal storage|
-|![Ej2 Diagram displays DirectData Symbol](./images/flowchart-images/FlowShapes_DirectData.png)|DirectData|Represents a collection of information that allows searching, sorting, and filtering.|
+|![Ej2 Diagram displays Terminator Symbol](../images/flowchart-images/FlowShapes_Terminator.png)|Terminator|Indicates the beginning and ending of the process.|
+|![Ej2 Diagram displays Data Symbol](../images/flowchart-images/FlowShapes_Data.png)|Data|Indicates data input or output for a process.|
+|![Ej2 Diagram displays Process Symbol](../images/flowchart-images/FlowShapes_Process.png)|Process|Represents an operation or set of operations and data manipulations.|
+|![Ej2 Diagram displays Decision Symbol](../images/flowchart-images/FlowShapes_Decision.png)|Decision|Shows a branching point where the decision is made to choose one of the two paths|
+|![Ej2 Diagram displays Document Symbol](../images/flowchart-images/FlowShapes_Document.png)|Document|Represents a single document or report in the process.|
+|![Ej2 Diagram displays SubProcess Symbol](../images/flowchart-images/FlowShapes_PreDefinedProcess.png)|PreDefinedProcess|Represents a sequence of actions that combine to perform a specific task that is defined elsewhere.|
+|![Ej2 Diagram displays Stored data Symbol](../images/flowchart-images/FlowShapes_StoredData.png)|StoredData|Represents a step where data get stored within a process.|
+|![Ej2 Diagram displays internal storage Symbol](../images/flowchart-images/internalStorage.png)|InternalStorage|Represents the internal storage|
+|![Ej2 Diagram displays DirectData Symbol](../images/flowchart-images/FlowShapes_DirectData.png)|DirectData|Represents a collection of information that allows searching, sorting, and filtering.|
 |![Ej2 Diagram displays SequentialData Symbol](./images/flowchart-images/sequentialData.png)|SequentialData|Represents the data that must be accessed sequentially|
 |![Ej2 Diagram displays SequentialData Symbol](./images/flowchart-images/sort.png)|Sort|Represents a step that organizes items list sequentially|
 |![Blazor Diagrma displays StoredData Symbol](./images/flowchart-images/paperTap.png)|PaperTap|Represents a step where data get stored within a process.|
 |![Ej2 Diagram displays ManualInput Symbol](./images/flowchart-images/FlowShapes_ManualInput.png)|ManualInput|Represents the manual input of data into a field or step in a process.|
-|![Ej2 Diagram displays ManualOperation Symbol](./images/flowchart-images/FlowShapes_ManualOperation.png)|ManualOperation|Represents an operation in a process that must be done manually, not automatically.|
-|![Ej2 Diagram displays Preparation Symbol](./images/flowchart-images/FlowShapes_Preparation.png)|Preparation|Represents a setup or initialization process to another step in the process.|
-|![Ej2 Diagram displays OffPageReference Symbol](./images/flowchart-images/FlowShapes_OffPageReference.png)|OffPageReference|Represents a labeled connector used to link two flowcharts on different pages.|
-|![Ej2 Diagram displays MultiDocument Symbol](./images/flowchart-images/FlowShapes_MultiDocument.png)|MultiDocument|Represents multiple documents or reports in the process.|
-|![Ej2 Diagram displays card Symbol](./images/flowchart-images/card.png)|Card|Represents a data card or punched card used for data entry or storage |
-|![Ej2 Diagram displays SummingJunction Symbol](./images/flowchart-images/summingJunction.png)|SummingJunction|Represents the logical AND (merge multiple inputs into a single output). |
-|![Ej2 Diagram displays Or Symbol](./images/flowchart-images/or.png)|Or|Represents the logical OR|
-|![Ej2 Diagram displays Merge Symbol](./images/flowchart-images/merge.png)|Merge|Represents a step where two or more sub-lists or sub-processes become one.|
-|![Ej2 Diagram displays Extract Symbol](./images/flowchart-images/extract.png)|Extract|Represents retrieving or obtaining data from a source for further processing or analysis in a flowchart.|
-|![Ej2 Diagram displays delay Symbol](./images/flowchart-images/delay.png)|Delay|Represents the period of delay in a process|
-|![Ej2 Diagram displays Collate Symbol](./images/flowchart-images/collate.png)|Collate|Represents the process of gathering and arranging data or documents from multiple sources into a structured format.|
-|![Ej2 Diagram displays Annotation Symbol](./images/flowchart-images/annotation.png)|Annotation|Represents additional information, clarifications, about a process or decision point in the flowchart.|
-|![Ej2 Diagram displays Annotation2 Symbol](./images/flowchart-images/annotation2.png)|Annotation2|Represents additional information, or comments about a process in the flowchart.|
-|![Ej2 Diagram displays Sequential access storage Symbol](./images/flowchart-images/sequentialAccess.png)|SequentialAccessStorage|Represents information that is stored in a sequence.|
-|![Ej2 Diagram displays Display Symbol](./images/flowchart-images/display.png)|Display|Represents that the information, data, or output is being shown on a screen or printed for the user’s review.|
-|![Ej2 Diagram displays Loop limit Symbol](./images/flowchart-images/looplimit.png)|LoopLimit|Represents a maximum number of times a particular process or operation can be repeated within a loop.|
-|![Ej2 Diagram displays Connector Symbol](./images/flowchart-images/FlowShapes_Connector.png)|Connector|Represents a direction of flow from one step to another. It will get created automatically based on the relationship between the parent and child.|
+|![Ej2 Diagram displays ManualOperation Symbol](../images/flowchart-images/FlowShapes_ManualOperation.png)|ManualOperation|Represents an operation in a process that must be done manually, not automatically.|
+|![Ej2 Diagram displays Preparation Symbol](../images/flowchart-images/FlowShapes_Preparation.png)|Preparation|Represents a setup or initialization process to another step in the process.|
+|![Ej2 Diagram displays OffPageReference Symbol](../images/flowchart-images/FlowShapes_OffPageReference.png)|OffPageReference|Represents a labeled connector used to link two flowcharts on different pages.|
+|![Ej2 Diagram displays MultiDocument Symbol](../images/flowchart-images/FlowShapes_MultiDocument.png)|MultiDocument|Represents multiple documents or reports in the process.|
+|![Ej2 Diagram displays card Symbol](../images/flowchart-images/card.png)|Card|Represents a data card or punched card used for data entry or storage |
+|![Ej2 Diagram displays SummingJunction Symbol](../images/flowchart-images/summingJunction.png)|SummingJunction|Represents the logical AND (merge multiple inputs into a single output). |
+|![Ej2 Diagram displays Or Symbol](../images/flowchart-images/or.png)|Or|Represents the logical OR|
+|![Ej2 Diagram displays Merge Symbol](../images/flowchart-images/merge.png)|Merge|Represents a step where two or more sub-lists or sub-processes become one.|
+|![Ej2 Diagram displays Extract Symbol](../images/flowchart-images/extract.png)|Extract|Represents retrieving or obtaining data from a source for further processing or analysis in a flowchart.|
+|![Ej2 Diagram displays delay Symbol](../images/flowchart-images/delay.png)|Delay|Represents the period of delay in a process|
+|![Ej2 Diagram displays Collate Symbol](../images/flowchart-images/collate.png)|Collate|Represents the process of gathering and arranging data or documents from multiple sources into a structured format.|
+|![Ej2 Diagram displays Annotation Symbol](../images/flowchart-images/annotation.png)|Annotation|Represents additional information, clarifications, about a process or decision point in the flowchart.|
+|![Ej2 Diagram displays Annotation2 Symbol](../images/flowchart-images/annotation2.png)|Annotation2|Represents additional information, or comments about a process in the flowchart.|
+|![Ej2 Diagram displays Sequential access storage Symbol](../images/flowchart-images/sequentialAccess.png)|SequentialAccessStorage|Represents information that is stored in a sequence.|
+|![Ej2 Diagram displays Display Symbol](../images/flowchart-images/display.png)|Display|Represents that the information, data, or output is being shown on a screen or printed for the user’s review.|
+|![Ej2 Diagram displays Loop limit Symbol](../images/flowchart-images/looplimit.png)|LoopLimit|Represents a maximum number of times a particular process or operation can be repeated within a loop.|
+|![Ej2 Diagram displays Connector Symbol](../images/flowchart-images/FlowShapes_Connector.png)|Connector|Represents a direction of flow from one step to another. It will get created automatically based on the relationship between the parent and child.|
 
 ## Render Flowchart layout with data source
 
@@ -81,7 +81,7 @@ To render `flowchart` layout, you need to set the [`layoutType`](../api/diagram/
 {% previewsample "page.domainurl/code-snippet/diagram/AutomaticLayout-flowchart-cs1" %}
 {% endif %}
 
-![EJ2 Flowchart layout diagram](./images/flowchart-images/Flowchart_Layout.png)
+![EJ2 Flowchart layout diagram](../images/flowchart-images/Flowchart_Layout.png)
 
 N> If you want to convert the data source into flowchart layout, you need to inject DataBinding along with FlowchartLayout module in the diagram.
 
@@ -203,7 +203,7 @@ var diagram = new ej.diagrams.Diagram({
 {% endif %}
 
 
-![EJ2 Flowchart layout diagram](./images/flowchart-images/Flowchart_Layout.png)
+![EJ2 Flowchart layout diagram](../images/flowchart-images/Flowchart_Layout.png)
 
 ### LeftToRight orientation
 
@@ -244,7 +244,7 @@ var diagram = new ej.diagrams.Diagram({
 
 {% endif %}
 
-![EJ2 Flowchart layout diagram](./images/flowchart-images/Flowchart_LeftToRight.png)
+![EJ2 Flowchart layout diagram](../images/flowchart-images/Flowchart_LeftToRight.png)
 
 
 ## Customize the decision output directions
@@ -288,13 +288,13 @@ The following table will explain the pictorial representation of the behavior:
 
 |YesBranchDirection| NoBranchDirection | TopToBottom | LeftToRight |
 |---|---|---|---|
-| Left In Flow |Right In Flow|![EJ2 Diagram displays Decision Output in Vertical](./images/flowchart-images/Flowchart_VerticalLeftAndRightBranches.png)|![EJ2 Diagram displays Decision Output in Horizontal](./images/flowchart-images/Flowchart_HorizontalLeftAndRightBranches.png)|
-| Right In Flow |Left In Flow |![EJ2 Diagram displays Decision Output in Vertical](./images/flowchart-images/Flowchart_VerticalRightAndLeftBranches.png)|![EJ2 Diagram displays Decision Output in Horizontal](./images/flowchart-images/Flowchart_HorizontalRightAndLeftBranches.png) |
-| Same As Flow |Right In Flow |![EJ2 Diagram displays Decision Output in Vertical](./images/flowchart-images/Flowchart_VerticalSameAndRightBranches.png)|![EJ2 Diagram displays Decision Output in Horizontal](./images/flowchart-images/Flowchart_HorizontalSameAndRightBranches.png) |
-| Same As Flow |Left In Flow |![EJ2 Diagram displays Decision Output in Vertical](./images/flowchart-images/Flowchart_YesSame_NoLeft.png)|![EJ2 Diagram displays Decision Output in Horizontal](./images/flowchart-images/Flowchart_YesSame_NoLeft_LTR.png) |
-| Right In Flow | Same As Flow |![EJ2 Diagram displays Decision Output in Vertical](./images/flowchart-images/Flowchart_VerticalRightAndSameBranches.png)|![EJ2 Diagram displays Decision Output in Horizontal](./images/flowchart-images/Flowchart_HorizontalRightAndSameBranches.png) |
-| Left In Flow | Same As Flow |![EJ2 Diagram displays Decision Output in Vertical](./images/flowchart-images/Flowchart_YesLeft_NoSame.png)|![EJ2 Diagram displays Decision Output in Horizontal](./images/flowchart-images/Flowchart_YesLeft_NoSame_LTR.png) |
-|Same As Flow |Same As Flow|![EJ2 Diagram displays Decision Output in Vertical](./images/flowchart-images/Flowchart_VerticalSameBranches.png)|![EJ2 Diagram displays Decision Output in Horizontal](./images/flowchart-images/Flowchart_HorizontalSameBranches.png)|
+| Left In Flow |Right In Flow|![EJ2 Diagram displays Decision Output in Vertical](../images/flowchart-images/Flowchart_VerticalLeftAndRightBranches.png)|![EJ2 Diagram displays Decision Output in Horizontal](../images/flowchart-images/Flowchart_HorizontalLeftAndRightBranches.png)|
+| Right In Flow |Left In Flow |![EJ2 Diagram displays Decision Output in Vertical](../images/flowchart-images/Flowchart_VerticalRightAndLeftBranches.png)|![EJ2 Diagram displays Decision Output in Horizontal](../images/flowchart-images/Flowchart_HorizontalRightAndLeftBranches.png) |
+| Same As Flow |Right In Flow |![EJ2 Diagram displays Decision Output in Vertical](../images/flowchart-images/Flowchart_VerticalSameAndRightBranches.png)|![EJ2 Diagram displays Decision Output in Horizontal](../images/flowchart-images/Flowchart_HorizontalSameAndRightBranches.png) |
+| Same As Flow |Left In Flow |![EJ2 Diagram displays Decision Output in Vertical](../images/flowchart-images/Flowchart_YesSame_NoLeft.png)|![EJ2 Diagram displays Decision Output in Horizontal](../images/flowchart-images/Flowchart_YesSame_NoLeft_LTR.png) |
+| Right In Flow | Same As Flow |![EJ2 Diagram displays Decision Output in Vertical](../images/flowchart-images/Flowchart_VerticalRightAndSameBranches.png)|![EJ2 Diagram displays Decision Output in Horizontal](../images/flowchart-images/Flowchart_HorizontalRightAndSameBranches.png) |
+| Left In Flow | Same As Flow |![EJ2 Diagram displays Decision Output in Vertical](../images/flowchart-images/Flowchart_YesLeft_NoSame.png)|![EJ2 Diagram displays Decision Output in Horizontal](../images/flowchart-images/Flowchart_YesLeft_NoSame_LTR.png) |
+|Same As Flow |Same As Flow|![EJ2 Diagram displays Decision Output in Vertical](../images/flowchart-images/Flowchart_VerticalSameBranches.png)|![EJ2 Diagram displays Decision Output in Horizontal](../images/flowchart-images/Flowchart_HorizontalSameBranches.png)|
 
 N> If both branch directions are same, **Yes** branch will be prioritized.
 
@@ -333,4 +333,4 @@ The following example shows how to set custom text to the yes branch and no bran
 {% previewsample "page.domainurl/code-snippet/diagram/AutomaticLayout-flowchart-cs4" %}
 {% endif %}
 
-![EJ2 Flowchart layout diagram](./images/flowchart-images/Flowchart_CustomYesOrNoBranches.png)
+![EJ2 Flowchart layout diagram](../images/flowchart-images/Flowchart_CustomYesOrNoBranches.png)

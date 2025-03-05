@@ -17,8 +17,8 @@ The intermediate point of two adjacent bezier segments can be edited interactive
 
 | SegmentEditOrientation value | Description | Output |
 |-------- | -------- | -------- |
-| Bidirectional |It allows the intermediate points to be dragged in either vertical or horizontal directions. | ![Bidirectional](images/bez-bidirectional.gif) |
-| Freeform | It allows the intermediate points to be dragged in any direction. | ![Freeform](images/bez-freeform.gif) |
+| Bidirectional |It allows the intermediate points to be dragged in either vertical or horizontal directions. | ![Bidirectional](../../../../images/bez-bidirectional.gif) |
+| Freeform | It allows the intermediate points to be dragged in any direction. | ![Freeform](../../../../images/bez-freeform.gif) |
 
 The following code illustrates how to interact with Bezier efficiently by using the [`smoothness`](../api/diagram/bezierSmoothness/) and `segmentEditOrientation` properties of the `bezierSettings`.
 

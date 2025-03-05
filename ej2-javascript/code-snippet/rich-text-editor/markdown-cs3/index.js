@@ -1,16 +1,13 @@
-
-/**
- * Rich Text Editor Markdown Preview Sample
- */
 ej.base.enableRipple(true);
 
 var textArea;
 var mdsource;
-var mdSplit;
 var htmlPreview;
 
 var defaultRTE = new ej.richtexteditor.RichTextEditor({
-    height: 340, editorMode: 'Markdown',
+    value: `In Rich Text Editor, you click the toolbar buttons to format the words and the changes are visible immediately. Markdown is not like that. When you format the word in Markdown format, you need to add Markdown syntax to the word to indicate which words and phrases should look different from each other. Rich Text Editor supports markdown editing when the editorMode set as **markdown** and using both *keyboard interaction* and *toolbar action*, you can apply the formatting to text. You can add our own custom formation syntax for the Markdown formation, [sample link](https://ej2.syncfusion.com/home/). The third-party library <b>Marked</b> is used in this sample to convert markdown into HTML content.`,
+    height: 340, 
+    editorMode: 'Markdown',
     toolbarSettings: {
         items: ['Bold', 'Italic', 'StrikeThrough', '|', 'Formats', 'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'CreateTable', '|',
             { tooltipText: 'Preview', template: '<button id="preview-code" class="e-tbar-btn e-control e-btn e-icon-btn">' +

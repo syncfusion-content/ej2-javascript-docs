@@ -44,7 +44,7 @@ The following code example illustrates how to create a complex hierarchical tree
         
 {% previewsample "page.domainurl/code-snippet/diagram/AutomaticLayout-complex" %}
 
-![Complex hierarchical tree layout](images/complex-2.png)
+![Complex hierarchical tree layout](../../images//complex-2.png)
 
 N> In Diagram Layouts, all root nodes will always render at the same level. This default behavior cannot be changed to render different trees at distinct levels.
 
@@ -68,7 +68,7 @@ The following code example illustrates how to create a complex hierarchical tree
 
 N> If you want to use line distribution in diagram layout, you need to inject  LineDistribution module in the diagram.
 
-![Different point](images/complex-diffPoint.png)
+![Different point](../../images//complex-diffPoint.png)
 
 
 ## Linear Arrangement

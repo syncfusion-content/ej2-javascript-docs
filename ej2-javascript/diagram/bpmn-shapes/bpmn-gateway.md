@@ -47,10 +47,10 @@ There are several types of gateways as tabulated:
 
 | Shape | Image |
 | -------- | -------- |
-| Exclusive | ![Exclusive GateWay BPMN Shape](images/Exclusive.png) |
-| Parallel | ![Parallel GateWay BPMN Shape](images/Parallel.png) |
-| Inclusive | ![Inclusive GateWay BPMN Shape](images/Inclusive.png) |
-| Complex | ![Complex GateWay BPMN Shape](images/Complex.png) |
-| EventBased | ![EventBased GateWay BPMNShape](images/EventBased.png) |
-| ExclusiveEventBased | ![Exclusive EventBased GateWay BPMN Shape](images/EEBased.png) |
-| ParallelEventBased | ![Parallel EventBased GateWay BPMN Shape](images/PEBased.png) |
+| Exclusive | ![Exclusive GateWay BPMN Shape](../images/Exclusive.png) |
+| Parallel | ![Parallel GateWay BPMN Shape](../images/Parallel.png) |
+| Inclusive | ![Inclusive GateWay BPMN Shape](../images/Inclusive.png) |
+| Complex | ![Complex GateWay BPMN Shape](../images/Complex.png) |
+| EventBased | ![EventBased GateWay BPMNShape](../images/EventBased.png) |
+| ExclusiveEventBased | ![Exclusive EventBased GateWay BPMN Shape](../images/EEBased.png) |
+| ParallelEventBased | ![Parallel EventBased GateWay BPMN Shape](../images/PEBased.png) |

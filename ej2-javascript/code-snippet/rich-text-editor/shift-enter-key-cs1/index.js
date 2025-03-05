@@ -21,6 +21,3 @@ var shiftEnterlistObj = new ej.dropdowns.DropDownList({
     }
 });
 shiftEnterlistObj.appendTo('#shiftEnterOption');
-
-
-

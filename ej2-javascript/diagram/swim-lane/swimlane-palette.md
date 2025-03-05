@@ -45,4 +45,4 @@ domainurl: ##DomainURL##
 * The drag and drop support for swimlane shapes has been provided.
 * Horizontal lanes can be added to vertical swimlanes, and vice versa.
 * The phase will only drop on swimlane shape with same orientation. The following image illustrates how to drag symbol from palette.
-![Drag Symbol from Palette](images/swimlane-drag-dropGif.gif)
+![Drag Symbol from Palette](../images/swimlane-drag-dropGif.gif)

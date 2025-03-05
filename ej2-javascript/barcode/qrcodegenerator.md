@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Qrcodegenerator in ##Platform_Name## Barcode control | Syncfusion
-description: Learn here all about Qrcodegenerator in Syncfusion ##Platform_Name## Barcode control of Syncfusion Essential JS 2 and more.
+title: Qrcodegenerator in ##Platform_Name## Barcode control | Syncfusion®
+description: Learn here all about Qrcodegenerator in Syncfusion® ##Platform_Name## Barcode control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Qrcodegenerator 
 publishingplatform: ##Platform_Name##

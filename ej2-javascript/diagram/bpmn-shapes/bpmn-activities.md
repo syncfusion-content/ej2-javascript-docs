@@ -86,14 +86,14 @@ The various types of BPMN tasks are tabulated as follows.
 
 | Shape | Image |
 | -------- | -------- |
-| Service | ![Service Task BPMN Shape](images/Service.png) |
-| Send | ![Send Task BPMN Shape](images/Send.png) |
-| Receive | ![Receive Task BPMN Shape](images/Receive.png) |
-| Instantiating Receive | ![Instantiating Receive Task BPMN Shape](images/InsService.png) |
-| Manual |![Manual Task BPMN Shape](images/Manual.png) |
-| Business Rule | ![Business Rule  Task BPMN Shape](images/Bussiness.png) |
-| User | ![User Task BPMN Shape](images/User.png) |
-| Script | ![Script Task BPMN Shape](images/Script.png) |
+| Service | ![Service Task BPMN Shape](../images/Service.png) |
+| Send | ![Send Task BPMN Shape](../images/Send.png) |
+| Receive | ![Receive Task BPMN Shape](../images/Receive.png) |
+| Instantiating Receive | ![Instantiating Receive Task BPMN Shape](../images/InsService.png) |
+| Manual |![Manual Task BPMN Shape](../images/Manual.png) |
+| Business Rule | ![Business Rule  Task BPMN Shape](../images/Bussiness.png) |
+| User | ![User Task BPMN Shape](../images/User.png) |
+| Script | ![Script Task BPMN Shape](../images/Script.png) |
 
 ### Collapsed Subprocess
 
@@ -160,9 +160,9 @@ The following table contains various types of BPMN loops.
 
 | Loops | Task | Subprocess |
 | -------- | -------- | --------|
-| Standard | ![Standard Task BPMN Shape](images/Standard1.png)  | ![Standard Subprocess BPMN Shape](images/Standard2.png) |
-| SequenceMultiInstance | ![Sequence MultiInstance Task BPMN Shape](images/Sequence1.png) |  ![SequenceMultiInstance Subprocess BPMN Shape](images/Sequence2.png)|
-| ParallelMultiInstance | ![ParallelMultiInstance Task BPMNShape](images/PMultiInstance1.png) | ![ParallelMultiInstance Subprocess BPMN Shape](images/PMultiInstance2.png) |
+| Standard | ![Standard Task BPMN Shape](../images/Standard1.png)  | ![Standard Subprocess BPMN Shape](../images/Standard2.png) |
+| SequenceMultiInstance | ![Sequence MultiInstance Task BPMN Shape](../images/Sequence1.png) |  ![SequenceMultiInstance Subprocess BPMN Shape](../images/Sequence2.png)|
+| ParallelMultiInstance | ![ParallelMultiInstance Task BPMNShape](../images/PMultiInstance1.png) | ![ParallelMultiInstance Subprocess BPMN Shape](../images/PMultiInstance2.png) |
 
 #### Compensation
 
@@ -297,9 +297,9 @@ The following table contains various types of BPMN boundaries.
 
 | Boundary | Image |
 | -------- | -------- |
-| Call | ![Call Boundary BPMN Shape](images/Call.png) |
-| Event | ![Event Boundary BPMN Shape](images/Eventtask.png) |
-| Default | ![Default Boundary BPMN Shape](images/DefaultBoundary.png) |
+| Call | ![Call Boundary BPMN Shape](../images/Call.png) |
+| Event | ![Event Boundary BPMN Shape](../images/Eventtask.png) |
+| Default | ![Default Boundary BPMN Shape](../images/DefaultBoundary.png) |
 
 
 #### SubProcess types

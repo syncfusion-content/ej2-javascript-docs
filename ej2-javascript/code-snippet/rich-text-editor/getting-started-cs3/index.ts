@@ -1,6 +1,3 @@
-
-
-
 import { RichTextEditor, Toolbar, MarkdownEditor } from '@syncfusion/ej2-richtexteditor';
 RichTextEditor.Inject(Toolbar, MarkdownEditor);
 
@@ -19,8 +16,5 @@ let defaultRTE: RichTextEditor = new RichTextEditor({
   - *Undo and Redo*: Undo/redo manager.
   - *Lists*:Creates bulleted and numbered list.`,
   editorMode: 'Markdown',
- });
+});
 defaultRTE.appendTo('#defaultRTE');
-
-
-

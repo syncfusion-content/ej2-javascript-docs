@@ -45,7 +45,7 @@ You can render an org-chart layout without using DataSource. The following code 
         
 {% previewsample "page.domainurl/code-snippet/diagram/AutomaticLayout-orgChart" %}
 
-![Organizational chart](images/org-chart.png)
+![Organizational chart](../../images//org-chart.png)
 
 ## GetLayout info
 
@@ -74,13 +74,13 @@ The following table illustrates the different chart orientations and chart types
 
 |Orientation|Type|Description|Example|
 | -------- | ----------- | ------------- |------|
-|Horizontal|Left|Arranges the child nodes horizontally at the left side of the parent.|![Horizontal Left](images/hleft.JPG)|
-||Right|Arranges the child nodes horizontally at the right side of the parent.|![Horizontal Right](images/hright.JPG)|
-||Center|Arranges the children like standard tree layout orientation.|![Horizontal Center](images/hcenter.JPG)|
-||Balanced|Arranges the leaf level child nodes in multiple rows.|![Horizontal Balanced](images/hbalanced.JPG)|
-|Vertical|Left|Arranges the children vertically at the left side of the parent.|![Vertical Left](images/vleft.JPG)|
-||Right|Arranges the children vertically at the right side of the parent.|![Vertical Right](images/vright.JPG)|
-||Alternate|Arranges the children vertically at both left and right sides of the parent.|![Vertical Alternate](images/vAlternate.JPG)|
+|Horizontal|Left|Arranges the child nodes horizontally at the left side of the parent.|![Horizontal Left](../../images//hleft.JPG)|
+||Right|Arranges the child nodes horizontally at the right side of the parent.|![Horizontal Right](../../images//hright.JPG)|
+||Center|Arranges the children like standard tree layout orientation.|![Horizontal Center](../../images//hcenter.JPG)|
+||Balanced|Arranges the leaf level child nodes in multiple rows.|![Horizontal Balanced](../../images//hbalanced.JPG)|
+|Vertical|Left|Arranges the children vertically at the left side of the parent.|![Vertical Left](../../images//vleft.JPG)|
+||Right|Arranges the children vertically at the right side of the parent.|![Vertical Right](../../images//vright.JPG)|
+||Alternate|Arranges the children vertically at both left and right sides of the parent.|![Vertical Alternate](../../images//vAlternate.JPG)|
 
 ### SubTree horizontal orientation
 
@@ -130,6 +130,6 @@ The following code example illustrates how to add assistants to layout.
         
 {% previewsample "page.domainurl/code-snippet/diagram/AutomaticLayout-cs6" %}
 
-![Assistant](images/assistant.png)
+![Assistant](../../images//assistant.png)
 
 N> An Assistant node cannot have any child nodes

@@ -250,7 +250,7 @@ The child node can be inserted into the lane at runtime by using the [`addNodeto
 
 We can also drag nodes from palette or diagram and drop it inside the lane. 
 
-![Add child into lane](images/addChildToSwimlane.gif)
+![Add child into lane](../images/addChildToSwimlane.gif)
 
 ### Prevent child movement outside lane
 
@@ -325,12 +325,12 @@ AddInfo for lanes similar to the nodes. we can store additional informations abo
 * Lane can be resized in the bottom and left direction.
 * Lane can be resized by using resize selector of the lane.
 * Once you can resize the lane,the swimlane will be resized automatically.
-* The lane can be resized either resizing the selector or the tight bounds of the child object. If the child node move to edge of the lane it can be automatically resized. The following image illustrates how resize the lane. ![Lane Resizing](images/lane-resizeGif.gif)
+* The lane can be resized either resizing the selector or the tight bounds of the child object. If the child node move to edge of the lane it can be automatically resized. The following image illustrates how resize the lane. ![Lane Resizing](../images/lane-resizeGif.gif)
 
 #### Lane swapping
 
 * Lanes can be swapped using drag the lanes over another lane.
-* Helper should intimate the insertion point while lane swapping. The following image illustrates how swapping the lane. ![Lane Swapping](images/swapping.gif)
+* Helper should intimate the insertion point while lane swapping. The following image illustrates how swapping the lane. ![Lane Swapping](../images/swapping.gif)
 
 #### Disable Swimlane Lane swapping
 
@@ -379,10 +379,10 @@ The following code illustrates how to disable swimlane lane swapping.
 * Drag and drop the child nodes from lane to diagram.
 * Drag and drop the child nodes from diagram to lane.
 * Based on the child node interactions,the lane size should be updated.
-The following image illustrates children interaction in lane. ![Lane Children Interaction](images/child-interaction.gif)
+The following image illustrates children interaction in lane. ![Lane Children Interaction](../images/child-interaction.gif)
 
 
 #### Lane header editing
 
 Diagram provides the support to edit Lane headers at runtime. We achieve the header editing by double click event. Double clicking the header label will enables the editing of that.
-The following image illustrates how to edit the lane header. ![Lane Header Editing](images/lane-header-edit.gif)
+The following image illustrates how to edit the lane header. ![Lane Header Editing](../images/lane-header-edit.gif)

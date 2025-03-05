@@ -84,7 +84,7 @@ While resizing or dragging the child element, if the child element bounds are wi
 
 The following image shows how to add BPMNNode into the BPMN ExpandedSubProcess at runtime.
 
-![Expanded subProcess BPMN Shape](images/expanded-Gif.gif)
+![Expanded subProcess BPMN Shape](../images/expanded-Gif.gif)
 
 #### Add/remove Process Programmatically
 

@@ -55,4 +55,4 @@ The following example shows how to add segments at runtime for the straight conn
         
 {% previewsample "page.domainurl/code-snippet/diagram/connectors-straightSegEdit" %}
 
-![Straight Segment editing GIF](images/StraightSegEdit.gif)
+![Straight Segment editing GIF](../../../images//StraightSegEdit.gif)

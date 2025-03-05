@@ -40,7 +40,7 @@ Add a custom icon for HTML source editor in the toolbar of Rich Text Editor usin
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/rich-text-editor/code-mirror-cs2/index.ts %}
 {% endhighlight %}
@@ -65,9 +65,11 @@ Add a custom icon for HTML source editor in the toolbar of Rich Text Editor usin
 {% previewsample "page.domainurl/code-snippet/rich-text-editor/code-mirror-cs2" %}
 {% endif %}
 
-## Embed.ly Integration
+## Embedly Integration
 
 Rich Text Editor easily integrate with [`Embed.ly`](https://embed.ly/) which is probably the best service when it comes to embed the rich content such as Twitter, Facebook, Instagram and lots of other publishing platform embeds.
+
+This can be achieved by binding the [actionComplete](../api/rich-text-editor/#actioncomplete) event to the toolbar items in the [toolbarSettings](../api/rich-text-editor/#toolbarsettings) property. In the event handler, create an element and add the appropriate class. The below script is have to add in the sample to embed the content.
 
 ```ts
 
@@ -75,11 +77,11 @@ Rich Text Editor easily integrate with [`Embed.ly`](https://embed.ly/) which is 
 
 ```
 
-In the following sample, the `Embed.ly` class `embedly-card` has been added to `<a>` tag in [`actionComplete`](../api/rich-text-editor/#actioncomplete) event.
+The above script is added to the page.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/rich-text-editor/how-to-embedly-integration-cs1/index.ts %}
 {% endhighlight %}

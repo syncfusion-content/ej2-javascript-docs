@@ -1,4 +1,3 @@
-
 /**
  * Rich Text Editor Markdown Preview Sample
  */
@@ -6,7 +5,6 @@ ej.base.enableRipple(true);
 
 var textArea;
 var mdsource;
-var mdSplit;
 var htmlPreview;
 
 var defaultRTE = new ej.richtexteditor.RichTextEditor({
@@ -19,7 +17,6 @@ var defaultRTE = new ej.richtexteditor.RichTextEditor({
     created: function () {
         textArea = defaultRTE.contentModule.getEditPanel();
         textArea.addEventListener('keyup', function (e) { markDownConversion(); });
-        var rteObj = defaultRTE;
         mdsource = document.getElementById('preview-code');
         mdsource.addEventListener('click', function (e) {
             fullPreview({ mode: true, type: 'preview' });
@@ -41,7 +38,7 @@ defaultRTE.appendTo('#defaultRTE');
 function markDownConversion() {
     if (mdsource.classList.contains('e-active')) {
         var id = defaultRTE.getID() + 'html-preview';
-        var htmlPreview_1 = defaultRTE.element.querySelector('#' + id);
+        var htmlPreview = defaultRTE.element.querySelector('#' + id);
         var rteElement = defaultRTE.contentModule.getEditPanel();
         var rteValue = rteElement.value;
         htmlPreview.innerHTML = marked(defaultRTE.contentModule.getEditPanel().value);
@@ -78,5 +75,3 @@ function fullPreview(e) {
         mdsource.parentElement.title = 'Code View';
     }
 }
-
-

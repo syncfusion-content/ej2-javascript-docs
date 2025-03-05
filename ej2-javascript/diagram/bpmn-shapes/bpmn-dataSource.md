@@ -16,7 +16,7 @@ domainurl: ##DomainURL##
 Datasource is used to store or access data associated with a business process. To create a datasource, set the shape as **datasource**. The following code example illustrates how to create a datasource.
 
 
-![DataSource BPMN Shape](images/Datasource.png)
+![DataSource BPMN Shape](../images/Datasource.png)
 
 
 {% if page.publishingplatform == "typescript" %}

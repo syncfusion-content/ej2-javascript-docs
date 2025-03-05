@@ -17,7 +17,7 @@ The diagram provides support for selecting, dragging, resizing, and rotating nod
 
 You can simply click on the node to select it and click on diagram canvas to unselect it like below.
 
-![Select/UnSelect Node](images/Single-node-select.gif)
+![Select/UnSelect Node](../../images/Single-node-select.gif)
 
 
 ### To select node programatically
@@ -44,7 +44,7 @@ A node can be selected at runtime by using the [`select`](../api/diagram/#select
 
 You can simply mousedown on a node and drag it anywhere on the diagram canvas like below.
 
-![Drag node](images/drag-single-node.gif)
+![Drag node](../../images/drag-single-node.gif)
 
 ### To drag node programatically
 
@@ -65,7 +65,7 @@ A node can be dragged at runtime by using the [`drag`](../api/diagram/#drag) met
 
 When we select a node a resize handle will appear on all the sides of the node. We can resize the node by clicking and dragging the resize handle.
 
-![Resize Node](images/resize-Single-node.gif)
+![Resize Node](../../images/resize-Single-node.gif)
 
 ### To resize node programatically
 
@@ -86,7 +86,7 @@ A node can be resized at runtime by using the [`scale`](../api/diagram/#scale) m
 
 A node can be rotated interactively by clicking and dragging the rotate handle of the node.
 
-![Rotate Node](images/rotate-single-node.gif)
+![Rotate Node](../../images/rotate-single-node.gif)
 
 ### To rotate node programatically
 
@@ -166,30 +166,30 @@ Below are examples of a node undergoing various FlipModes in different flip dire
 
 | Flip Direction | Flip Mode | Default Node | Flipped Node |
 | -------- | -------- | -------- | -------- |
-| Horizontal | All |![Horizontal All](images/Horizontal-All.jpg)|![HorizontalFlip All](images/HorizontalFlip-All.jpg)| 
-| Horizontal | Label |![Horizontal Label](images/Horizontal-All.jpg)|![HorizontalFlip Label](images/HorizontalFlip-Label.jpg)|
-| Horizontal | LabelText |![Horizontal LabelText](images/Horizontal-All.jpg)|![HorizontalFlip LabelText](images/HorizontalFlip-LabelText.jpg)|
-| Horizontal | Port |![Horizontal Port](images/Horizontal-All.jpg)|![HorizontalFlip Port](images/HorizontalFlip-Port.jpg)|
-| Horizontal | None |![Horizontal None](images/Horizontal-All.jpg)|![HorizontalFlip None](images/HorizontalFlip-None.jpg)|
-| Horizontal | PortAndLabel |![Horizontal PortAndLabel](images/Horizontal-All.jpg)|![HorizontalFlip PortAndLabel](images/HorizontalFlip-PortAndLabel.jpg)|
-| Horizontal | PortAndLabelText |![Horizontal PortAndLabelText](images/Horizontal-All.jpg)|![HorizontalFlip PortAndLabelText](images/HorizontalFlip-PortAndLabelText.jpg)|
-| Horizontal | LabelAndLabelText |![Horizontal LabelAndLabelText](images/Horizontal-All.jpg)|![HorizontalFlip LabelAndLabelText](images/HorizontalFlip-LabelAndLabelText.jpg)|
-| Vertical | All |![Vertical All](images/Vertical-All.jpg)|![VerticalFlip All](images/VerticalFlip-All.jpg)| 
-| Vertical | Label |![Vertical Label](images/Vertical-All.jpg)|![VerticalFlip Label](images/VerticalFlip-Label.jpg)|  
-| Vertical | LabelText |![Vertical LabelText](images/Vertical-All.jpg)|![VerticalFlip LabelText](images/VerticalFlip-LabelText.jpg)| 
-| Vertical | Port |![Vertical Port](images/Vertical-All.jpg)|![VerticalFlip Port](images/VerticalFlip-Port.jpg)| 
-| Vertical | None |![Vertical None](images/Vertical-All.jpg)|![VerticalFlip None](images/VerticalFlip-None.jpg)|  
-| Vertical | PortAndLabel |![Vertical PortAndLabel](images/Vertical-All.jpg)|![VerticalFlip PortAndLabel](images/VerticalFlip-PortAndLabel.jpg)|  
-| Vertical | PortAndLabelText |![Vertical PortAndLabelText](images/Vertical-All.jpg)|![VerticalFlip PortAndLabelText](images/VerticalFlip-PortAndLabelText.jpg)|  
-| Vertical | LabelAndLabelText |![Vertical LabelAndLabelText](images/Vertical-All.jpg)|![VerticalFlip LabelAndLabelText](images/VerticalFlip-LabelAndLabelText.jpg)|  
-| Both | All |![Both All](images/Vertical-All.jpg)|![BothFlip All](images/BothFlip-All.jpg)|  
-| Both | Label |![Both Label](images/Vertical-All.jpg)|![BothFlip Label](images/BothFlip-Label.jpg)|
-| Both | LabelText |![Both LabelText](images/Vertical-All.jpg)|![BothFlip LabelText](images/BothFlip-LabelText.jpg)| 
-| Both | Port |![Both Port](images/Vertical-All.jpg)|![BothFlip Port](images/BothFlip-Port.jpg)| 
-| Both | None |![Both None](images/Vertical-All.jpg)|![BothFlip None](images/BothFlip-None.jpg)|
-| Both | PortAndLabel |![Both PortAndLabel](images/Vertical-All.jpg)|![BothFlip PortAndLabel](images/BothFlip-PortAndLabel.jpg)| 
-| Both | PortAndLabelText |![Both PortAndLabelText](images/Vertical-All.jpg)|![BothFlip PortAndLabelText](images/BothFlip-PortAndLabelText.jpg)| 
-| Both | LabelAndLabelText |![Both LabelAndLabelText](images/Vertical-All.jpg)|![BothFlip LabelAndLabelText](images/BothFlip-LabelAndLabelText.jpg)| 
+| Horizontal | All |![Horizontal All](../../images/Horizontal-All.jpg)|![HorizontalFlip All](../../images/HorizontalFlip-All.jpg)| 
+| Horizontal | Label |![Horizontal Label](../../images/Horizontal-All.jpg)|![HorizontalFlip Label](../../images/HorizontalFlip-Label.jpg)|
+| Horizontal | LabelText |![Horizontal LabelText](../../images/Horizontal-All.jpg)|![HorizontalFlip LabelText](../../images/HorizontalFlip-LabelText.jpg)|
+| Horizontal | Port |![Horizontal Port](../../images/Horizontal-All.jpg)|![HorizontalFlip Port](../../images/HorizontalFlip-Port.jpg)|
+| Horizontal | None |![Horizontal None](../../images/Horizontal-All.jpg)|![HorizontalFlip None](../../images/HorizontalFlip-None.jpg)|
+| Horizontal | PortAndLabel |![Horizontal PortAndLabel](../../images/Horizontal-All.jpg)|![HorizontalFlip PortAndLabel](../../images/HorizontalFlip-PortAndLabel.jpg)|
+| Horizontal | PortAndLabelText |![Horizontal PortAndLabelText](../../images/Horizontal-All.jpg)|![HorizontalFlip PortAndLabelText](../../images/HorizontalFlip-PortAndLabelText.jpg)|
+| Horizontal | LabelAndLabelText |![Horizontal LabelAndLabelText](../../images/Horizontal-All.jpg)|![HorizontalFlip LabelAndLabelText](../../images/HorizontalFlip-LabelAndLabelText.jpg)|
+| Vertical | All |![Vertical All](../../images/Vertical-All.jpg)|![VerticalFlip All](../../images/VerticalFlip-All.jpg)| 
+| Vertical | Label |![Vertical Label](../../images/Vertical-All.jpg)|![VerticalFlip Label](../../images/VerticalFlip-Label.jpg)|  
+| Vertical | LabelText |![Vertical LabelText](../../images/Vertical-All.jpg)|![VerticalFlip LabelText](../../images/VerticalFlip-LabelText.jpg)| 
+| Vertical | Port |![Vertical Port](../../images/Vertical-All.jpg)|![VerticalFlip Port](../../images/VerticalFlip-Port.jpg)| 
+| Vertical | None |![Vertical None](../../images/Vertical-All.jpg)|![VerticalFlip None](../../images/VerticalFlip-None.jpg)|  
+| Vertical | PortAndLabel |![Vertical PortAndLabel](../../images/Vertical-All.jpg)|![VerticalFlip PortAndLabel](../../images/VerticalFlip-PortAndLabel.jpg)|  
+| Vertical | PortAndLabelText |![Vertical PortAndLabelText](../../images/Vertical-All.jpg)|![VerticalFlip PortAndLabelText](../../images/VerticalFlip-PortAndLabelText.jpg)|  
+| Vertical | LabelAndLabelText |![Vertical LabelAndLabelText](../../images/Vertical-All.jpg)|![VerticalFlip LabelAndLabelText](../../images/VerticalFlip-LabelAndLabelText.jpg)|  
+| Both | All |![Both All](../../images/Vertical-All.jpg)|![BothFlip All](../../images/BothFlip-All.jpg)|  
+| Both | Label |![Both Label](../../images/Vertical-All.jpg)|![BothFlip Label](../../images/BothFlip-Label.jpg)|
+| Both | LabelText |![Both LabelText](../../images/Vertical-All.jpg)|![BothFlip LabelText](../../images/BothFlip-LabelText.jpg)| 
+| Both | Port |![Both Port](../../images/Vertical-All.jpg)|![BothFlip Port](../../images/BothFlip-Port.jpg)| 
+| Both | None |![Both None](../../images/Vertical-All.jpg)|![BothFlip None](../../images/BothFlip-None.jpg)|
+| Both | PortAndLabel |![Both PortAndLabel](../../images/Vertical-All.jpg)|![BothFlip PortAndLabel](../../images/BothFlip-PortAndLabel.jpg)| 
+| Both | PortAndLabelText |![Both PortAndLabelText](../../images/Vertical-All.jpg)|![BothFlip PortAndLabelText](../../images/BothFlip-PortAndLabelText.jpg)| 
+| Both | LabelAndLabelText |![Both LabelAndLabelText](../../images/Vertical-All.jpg)|![BothFlip LabelAndLabelText](../../images/BothFlip-LabelAndLabelText.jpg)| 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

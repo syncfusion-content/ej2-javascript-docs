@@ -24,5 +24,3 @@ var enterListObj = new ej.dropdowns.DropDownList({
     }
 });
 enterListObj.appendTo('#enterOption');
-
-

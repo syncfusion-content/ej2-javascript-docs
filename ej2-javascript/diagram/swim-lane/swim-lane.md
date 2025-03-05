@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 A swimlane is a type of diagram node commonly used to visualize the relationship between a business process and the department responsible for it. It focuses on illustrating the logical connections between activities, making it simpler to grasp the dynamics of the process and the corresponding departmental responsibilities.
 
-![Swimlane](images/swimlane-image.png)
+![Swimlane](../images/swimlane-image.png)
 
 
 ## Create a swimlane
@@ -152,7 +152,7 @@ The following code example illustrates how to customize the swimlane header.
 
 ### Header editing
 
-Diagram provides the support to edit swimlane headers at runtime. We achieve the header editing by double click event. Double clicking the header label will enables the editing of that. The following image illustrates how to edit the swimlane header. ![Header Editing](images/swimlane-header-edit.gif).
+Diagram provides the support to edit swimlane headers at runtime. We achieve the header editing by double click event. Double clicking the header label will enables the editing of that. The following image illustrates how to edit the swimlane header. ![Header Editing](../images/swimlane-header-edit.gif).
 
 ## Orientation
 

@@ -57,4 +57,4 @@ The [`minWidth`](../api/diagram/node/#minwidth) and [`minHeight`](../api/diagram
         
 {% previewsample "page.domainurl/code-snippet/diagram/nodes-minWidth" %}
 
-![MinSize-MaxSize GIF](images/minSize-MaxSizeGif.gif)
+![MinSize-MaxSize GIF](../../images/minSize-MaxSizeGif.gif)

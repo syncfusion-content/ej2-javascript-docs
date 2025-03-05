@@ -48,13 +48,13 @@ The list of BPMN shapes are as follows:
 
 | Shape | Image |
 | -------- | -------- |
-| Event | ![Event Shape](images/Event.png) |
-| Gateway | ![Gateway Shape](images/Gateway.png) |
-| Task | ![Task Shape](images/Task.png) |
-| Message | ![Message Shape](images/Message.png) |
-| DataSource | ![Datasource Shape](images/Datasource.png) |
-| DataObject | ![Dataobject Shape](images/Dataobject.png) |
-| Group | ![Group Shape](images/Group.png) |
+| Event | ![Event Shape](../images/Event.png) |
+| Gateway | ![Gateway Shape](../images/Gateway.png) |
+| Task | ![Task Shape](../images/Task.png) |
+| Message | ![Message Shape](../images/Message.png) |
+| DataSource | ![Datasource Shape](../images/Datasource.png) |
+| DataObject | ![Dataobject Shape](../images/Dataobject.png) |
+| Group | ![Group Shape](../images/Group.png) |
 
 The BPMN shapes and its types are explained as follows.
 

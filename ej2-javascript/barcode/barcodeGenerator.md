@@ -1,7 +1,7 @@
 ---
 layout: post
-title: BarcodeGenerator in ##Platform_Name## Barcode control | Syncfusion
-description: Learn here all about BarcodeGenerator in Syncfusion ##Platform_Name## Barcode control of Syncfusion Essential JS 2 and more.
+title: BarcodeGenerator in ##Platform_Name## Barcode control | Syncfusion®
+description: Learn here all about BarcodeGenerator in Syncfusion® ##Platform_Name## Barcode control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: BarcodeGenerator 
 publishingplatform: ##Platform_Name##

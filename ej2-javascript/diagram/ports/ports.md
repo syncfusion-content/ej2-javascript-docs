@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 Port is a special connection point in a Node where you can glue the connectors. When you glue a connector to a node or port, they remain connected even if one of the nodes is moved.
 
-![Port](images/Port1.png)
+![Port](../images/Port1.png)
 
 ## Types of connections
 
@@ -27,14 +27,14 @@ A node to node connection is one where the connector will move around the node a
 
 When a connector is connected between two nodes, its end points are automatically docked to the node’s nearest boundary as shown in the following Gif.
 
-![Node to Node](images/node-node-gif.gif)
+![Node to Node](../images/node-node-gif.gif)
 
 ### Port to port connection
 
 Ports act as the connection points of the node and allows creating connections with only those specific points as shown in the following image.
 
 
-![Port to port](images/port-port-gif.gif)
+![Port to port](../images/port-port-gif.gif)
 
 ## Create port
 
@@ -201,7 +201,7 @@ The [`connectionDirection`](../api/diagram/port#connectionDirection) property of
 
 {% endif %}
 
-![connectionDirection](images\connectionDirection2.png)
+![connectionDirection](../images/connectionDirection2.png)
 
 ## InEdges and outEdges of ports
 

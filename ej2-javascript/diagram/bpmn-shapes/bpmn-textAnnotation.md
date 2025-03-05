@@ -94,7 +94,7 @@ Drag and drop any bpmn shapes from the palette to diagram and connect the BPMN N
 
 The following image shows how to drag a symbol from the palette and connect the textAnnotation to the BPMNNode with interaction.
 
-![Text annotation GIF](images/textAnnotationGif.gif)
+![Text annotation GIF](../images/textAnnotationGif.gif)
 
 ### Text annotation direction
 
@@ -102,11 +102,11 @@ There are several types of Text annotation directions as follows:
 
 | Text annotation direction | Image |
 | -------- | -------- |
-| Auto | ![BPMN text annotation direction auto](images/bpmn-textannotation-auto.png) |
-| Left | ![BPMN text annotation direction left](images/bpmn-textannotation-left.png) |
-| Right | ![BPMN text annotation direction right](images/bpmn-textannotation-right.png) |
-| Top | ![BPMN text annotation direction top](images/bpmn-textannotation-top.png) |
-| Bottom | ![BPMN text annotation direction bottom](images/bpmn-textannotation-bottom.png) |
+| Auto | ![BPMN text annotation direction auto](../images/bpmn-textannotation-auto.png) |
+| Left | ![BPMN text annotation direction left](../images/bpmn-textannotation-left.png) |
+| Right | ![BPMN text annotation direction right](../images/bpmn-textannotation-right.png) |
+| Top | ![BPMN text annotation direction top](../images/bpmn-textannotation-top.png) |
+| Bottom | ![BPMN text annotation direction bottom](../images/bpmn-textannotation-bottom.png) |
 
 ### Add text annotation at runtime
 

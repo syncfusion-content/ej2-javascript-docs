@@ -58,9 +58,9 @@ The following table demonstrates the visual representation of association flows.
 
 | Association | Image |
 | -------- | -------- |
-| Default | ![Default BPMN FlowShapes](images/bpmn-flow-defaultAssociation.png) |
-| Directional | ![Directional BPMN FlowShapes](images/Directional1.png) |
-| BiDirectional | ![BiDirectional BPMN FlowShapes](images/BiDirectional.png) |
+| Default | ![Default BPMN FlowShapes](../images/bpmn-flow-defaultAssociation.png) |
+| Directional | ![Directional BPMN FlowShapes](../images/Directional1.png) |
+| BiDirectional | ![BiDirectional BPMN FlowShapes](../images/BiDirectional.png) |
 
 N> The default value for the property `association` is **default**.
 
@@ -105,9 +105,9 @@ The following table contains various representation of sequence flows.
 
 | Sequence | Image |
 | -------- | -------- |
-| Default | ![Default Sequence BPMN Shpae](images/Default2.png) |
-| Conditional | ![Conditional Sequence BPMN Shpae](images/Conditional.png) |
-| Normal | ![Normal Sequence BPMN Shpae](images/Normal.png) |
+| Default | ![Default Sequence BPMN Shpae](../images/Default2.png) |
+| Conditional | ![Conditional Sequence BPMN Shpae](../images/Conditional.png) |
+| Normal | ![Normal Sequence BPMN Shpae](../images/Normal.png) |
 
 N> The default value for the property `sequence` is **normal**.
 
@@ -152,8 +152,8 @@ The following table contains various representation of message flows.
 
 | Message | Image |
 | -------- | -------- |
-| Default | ![Default Message BPMN Shape](images/bpmn-flow-defaultMessage.png) |
-| InitiatingMessage | ![InitiatingMessage Message BPMN Shape](images/IMessage.png) |
-| NonInitiatingMessage | ![NonInitiatingMessage Message BPMN Shape](images/NIMessage.png) |
+| Default | ![Default Message BPMN Shape](../images/bpmn-flow-defaultMessage.png) |
+| InitiatingMessage | ![InitiatingMessage Message BPMN Shape](../images/IMessage.png) |
+| NonInitiatingMessage | ![NonInitiatingMessage Message BPMN Shape](../images/NIMessage.png) |
 
 N> The default value for the property `message` is **default**.

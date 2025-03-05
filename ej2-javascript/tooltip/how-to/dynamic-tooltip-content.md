@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dynamic tooltip content in ##Platform_Name## Tooltip control | Syncfusion
-description: Learn here all about Dynamic tooltip content in Syncfusion ##Platform_Name## Tooltip control of Syncfusion Essential JS 2 and more.
+title: Dynamic content in JavaScript Tooltip Control | Syncfusion
+description: Learn here all about dynamic content support in Syncfusion Essential JavaScript Tooltip control, it's elements and more.
 platform: ej2-javascript
 control: Dynamic tooltip content 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dynamic tooltip content in ##Platform_Name## Tooltip control
+# Dynamic content in JavaScript Tooltip Control
 
 The tooltip content can be changed dynamically using the [AJAX](../../api/base/ajax/) request.
 

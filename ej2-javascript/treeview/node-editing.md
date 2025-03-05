@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Node editing in ##Platform_Name## TreeView control
 
-The TreeView allows you to edit nodes by setting the [allowEditing](../api/treeview/#allowediting) property to **true**. To edit the nodes directly in place, **double-click** the TreeView node or **select** the node and press the **F2** key.
+The TreeView allows you to edit nodes by setting the [`allowEditing`](../api/treeview/#allowediting) property to **true**. To edit the nodes directly in place, **double-click** the TreeView node or **select** the node and press the **F2** key.
 
 When editing is completed by losing focus or by pressing the **Enter** key, the modified node’s text is saved automatically. If you do not want to save the modified text in the TreeView node, press the **Escape** key. It does not save the edited text to the TreeView node.
 

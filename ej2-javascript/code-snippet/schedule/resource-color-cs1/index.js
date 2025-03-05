@@ -34,4 +34,3 @@ new ej.buttons.RadioButton({ value: 'Owners', name: 'default', label: 'Owners', 
 function onChange(args) {
   scheduleObj.eventSettings.resourceColorField = args.value;
 }
-

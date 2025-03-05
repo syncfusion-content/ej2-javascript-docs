@@ -1,7 +1,9 @@
 var instance = new ej.base.Internationalization();
+
 window.getDateHeaderText = function (value) {
     return instance.formatDate(value, { skeleton: 'Ed' });
 };
+
 window.getWeather = function (value) {
     switch (value.getDay()) {
         case 0:
@@ -33,4 +35,3 @@ var scheduleObj = new ej.schedule.Schedule({
     eventSettings: { dataSource: scheduleData }
 });
 scheduleObj.appendTo('#Schedule');
-

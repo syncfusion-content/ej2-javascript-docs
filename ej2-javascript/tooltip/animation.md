@@ -74,11 +74,11 @@ The animation effects that are applicable to Tooltips are:
 
 When the `effect` is specified as `none`, no effect will be applied to the Tooltip, and animation is considered to be set to `off`.
 
-> Some of the above animation effects suit the Tooltip better when its tip pointer is hidden. This can be achieved by setting the `showTipPointer` to false.
+> Some of the above animation effects suit the Tooltip better when its tip pointer is hidden. This can be achieved by setting the [`showTipPointer`](../api/tooltip/#showtippointer) to false.
 
 ## Animating via open/close methods
 
-Animations can also be applied on Tooltips dynamically through [`open`](../api/tooltip#open) and [`close`](../api/tooltip#close) methods. These methods accept the animation model as an optional parameter. If you pass `TooltipAnimationSettings`, animation takes this model; otherwise, it takes the values from the `animation` property. It is also possible to pass different animations for Tooltips on each target.
+Animations can also be applied on Tooltips dynamically through [`open`](../api/tooltip#open) and [`close`](../api/tooltip#close) methods. These methods accept the animation model as an optional parameter. If you pass [`TooltipAnimationSettings`](../api/tooltip/tooltipAnimationSettings), animation takes this model; otherwise, it takes the values from the [`animation`](../api/tooltip#animation) property. It is also possible to pass different animations for Tooltips on each target.
 
 Refer to the code snippet below to apply animations using public methods.
 

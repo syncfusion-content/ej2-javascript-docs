@@ -1,11 +1,11 @@
-
-
 import { Internationalization } from '@syncfusion/ej2-base';
 import { Schedule, Day, Week, TimelineViews } from '@syncfusion/ej2-schedule';
 import { scheduleData } from './datasource.ts';
 
 Schedule.Inject(Day, Week, TimelineViews);
+
 let intl: Internationalization = new Internationalization();
+
 let scheduleObj: Schedule = new Schedule({
     height: '550px',
     width: '100%',
@@ -17,5 +17,3 @@ let scheduleObj: Schedule = new Schedule({
     }
 });
 scheduleObj.appendTo('#Schedule');
-
-

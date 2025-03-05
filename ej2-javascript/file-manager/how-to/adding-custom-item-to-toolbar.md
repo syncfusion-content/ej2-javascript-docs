@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding a custom item to the toolbar in ##Platform_Name## File Manager control | Syncfusion
+title: Add custom item to toolbar in ##Platform_Name## File Manager | Syncfusion
 description: Learn about adding a custom item to the toolbar in the Syncfusion ##Platform_Name## File Manager control, its elements, and more.
 platform: ej2-javascript
 control: Adding custom item to the toolbar 
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Adding a custom item to the toolbar in ##Platform_Name## File Manager control
 
-You can modify the items displayed in the toolbar by using the [toolbarItems](../../api/file-manager/#toolbarItems) API. To display both default and customized items, it's essential to assign a unique **name** to each item. Additionally, you have the flexibility to alter the default items by adjusting properties such as **tooltipText, iconCss, Text, suffixIcon**, and more. This level of customization allows you to tailor the toolbar to your specific requirements and design preferences. The names used in the code example below serve as unique identifiers for default toolbar items, while custom items can be assigned any unique name value to distinguish them from the defaults.
+You can modify the items displayed in the toolbar by using the [`toolbarItems`](../../api/file-manager/#toolbaritems) API. To display both default and customized items, it's essential to assign a unique **name** to each item. Additionally, you have the flexibility to alter the default items by adjusting properties such as **tooltipText, iconCss, Text, suffixIcon**, and more. This level of customization allows you to tailor the toolbar to your specific requirements and design preferences. The names used in the code example below serve as unique identifiers for default toolbar items, while custom items can be assigned any unique name value to distinguish them from the defaults.
 
 For instance, here's an example of how to add a custom checkbox to the toolbar using the **template** property. Here we have modified the default `New Folder` item and added a custom toolbar item for selection.
 

@@ -1,5 +1,3 @@
-
-
 import { closest, isNullOrUndefined, removeClass, remove, extend } from '@syncfusion/ej2-base';
 import { Query, DataManager } from '@syncfusion/ej2-data';
 import {
@@ -19,6 +17,7 @@ let scheduleObj: Schedule = new Schedule({
     eventSettings: { dataSource: scheduleData }
 });
 scheduleObj.appendTo('#Schedule');
+
 let selectedTarget: Element;
 let menuObj: ContextMenu;
 let menuItems: MenuItemModel[] = [
@@ -145,5 +144,3 @@ function onMenuItemSelect(args: MenuEventArgs): void {
             break;
     }
 }
-
-

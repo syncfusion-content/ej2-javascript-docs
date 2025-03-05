@@ -7,4 +7,3 @@ let scheduleObj = new ej.schedule.Schedule({
   maxDate: new Date(2018, 5, 17)
 });
 scheduleObj.appendTo("#Schedule");
-

@@ -80,10 +80,10 @@ treeObj.appendTo('#tree');
 
 // Triggers on mouse hover/keydown event
 ['mouseover', 'keydown'].forEach(evt =>
-    document.getElementById("tree")?.addEventListener(evt, (event) => { setHeight(event.target); }));
+    (document.getElementById("tree") as HTMLElement).addEventListener(evt, (event) => { setHeight(event.target); }));
 
 // Triggers on node selection
-function onSelect(arg) {
+function onselect(arg) {
     setHeight(arg.node);
 }
 

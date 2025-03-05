@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 The ListView control supports wrapping nested elements into a group based on categories. The category of each list item can be mapped with the [`groupBy`](../api/list-view/fieldSettingsModel/#groupby) field in the data table, which also supports single-level navigation.
 
-In the following sample, cars are grouped based on their category by using the `groupBy` field.
+In the following sample, cars are grouped based on their category by using the [`groupBy`](../api/list-view/fieldSettingsModel/#groupby) field.
 
 {% if page.publishingplatform == "typescript" %}
 

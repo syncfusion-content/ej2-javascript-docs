@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Header bar in ##Platform_Name## Schedule control | Syncfusion
-description: Learn here all about Header bar in Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
+title: Header bar in ##Platform_Name## Scheduler control | Syncfusion
+description: Learn here all about Header bar in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Header bar 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Header bar in ##Platform_Name## Schedule control
+# Header bar in ##Platform_Name## Scheduler control
 
 The header part of Scheduler can be customized easily with the built-in options available.
 
@@ -26,6 +26,9 @@ By default, the header bar holds the date and view navigation options, through w
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/header-bar-cs1/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/header-bar-cs1/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/header-bar-cs1" %}
@@ -39,6 +42,9 @@ By default, the header bar holds the date and view navigation options, through w
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/header-bar-cs1/index.html %}
 {% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/header-bar-cs1/es5-datasource.js %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/schedule/header-bar-cs1" %}
@@ -46,7 +52,7 @@ By default, the header bar holds the date and view navigation options, through w
 
 ## Customizing header bar using template
 
-Apart from the default date navigation and view options available on the header bar, you can add custom items into the Scheduler header bar by making use of the [`toolbarItems`](https://ej2.syncfusion.com/documentation/api/schedule/#toolbaritems) property. To display the default items, it's essential to assign a [`name`](https://ej2.syncfusion.com/documentation/api/schedule/toolbarItem/#name) field to each item. The names of the default items are `Previous`, `Next`, `Today`, `DateRangeText`, `NewEvent`, and `Views`. For custom items you can give the name as `Custom` to the `name` field. Here, the default items such as previous, next, date range text, and today have been used along with external icon as custom items.
+Apart from the default date navigation and view options available on the header bar, you can add custom items into the Scheduler header bar by making use of the [`toolbarItems`](https://ej2.syncfusion.com/documentation/api/schedule/#toolbaritems) property. To display the default items, it's essential to assign a [`name`](https://ej2.syncfusion.com/documentation/api/schedule/toolbarItem/#name) field to each item. The names of the default items are `Previous`, `Next`, `Today`, `DateRangeText`, `NewEvent`, and `Views`. For custom items you can give the name as `Custom` to the [`name`](https://ej2.syncfusion.com/documentation/api/schedule/toolbarItem/#name) field. Here, the default items such as previous, next, date range text, and today have been used along with external dropdown list as custom items.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -56,6 +62,9 @@ Apart from the default date navigation and view options available on the header 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/header-bar-template/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/header-bar-template/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -69,6 +78,9 @@ Apart from the default date navigation and view options available on the header 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/header-bar-template/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/header-bar-template/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -88,6 +100,9 @@ Apart from the default date navigation and view options available on the header 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/header-bar-cs2/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/header-bar-cs2/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/header-bar-cs2" %}
@@ -100,6 +115,9 @@ Apart from the default date navigation and view options available on the header 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/header-bar-cs2/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/header-bar-cs2/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -119,6 +137,9 @@ By default, the header bar holds the view navigation options, through which the 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/header-bar-cs3/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/header-bar-cs3/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/header-bar-cs3" %}
@@ -132,6 +153,9 @@ By default, the header bar holds the view navigation options, through which the 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/header-bar-cs3/index.html %}
 {% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/header-bar-cs3/es5-datasource.js %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/schedule/header-bar-cs3" %}
@@ -141,11 +165,11 @@ By default, the header bar holds the view navigation options, through which the 
 
 ## Date header customization
 
-The Scheduler UI that displays the date text on all views are considered as the date header cells. You can customize the date header cells of Scheduler either using [`dateRangeTemplate`](../api/schedule/#daterangetemplate) or [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell) event.
+The Scheduler UI that displays the date text on all views are considered as the date header cells. You can customize the date header cells of Scheduler either using [`dateHeaderTemplate`](../api/schedule/#dateheadertemplate) or [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell) event.
 
 ### Using date header template
 
-The [`dateRangeTemplate`](../api/schedule/#daterangetemplate) option is used to customize the date header cells of day, week and work-week views.
+The [`dateHeaderTemplate`](../api/schedule/#dateheadertemplate) option is used to customize the date header cells of day, week and work-week views.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -155,6 +179,9 @@ The [`dateRangeTemplate`](../api/schedule/#daterangetemplate) option is used to 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/date-header-cs1/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/date-header-cs1/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -168,6 +195,9 @@ The [`dateRangeTemplate`](../api/schedule/#daterangetemplate) option is used to 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/date-header-cs1/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/date-header-cs1/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -187,6 +217,9 @@ In month view, the date header template is not applicable and therefore the same
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/render-cell-cs1/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/render-cell-cs1/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/render-cell-cs1" %}
@@ -199,6 +232,9 @@ In month view, the date header template is not applicable and therefore the same
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/render-cell-cs1/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/render-cell-cs1/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -220,6 +256,9 @@ The [`dateRangeTemplate`](../api/schedule/#daterangetemplate) property includes 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/default-cs4/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/default-cs4/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs4" %}
@@ -232,6 +271,9 @@ The [`dateRangeTemplate`](../api/schedule/#daterangetemplate) property includes 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/default-cs4/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/default-cs4/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -253,6 +295,9 @@ It is possible to customize the header indent cells using the [`headerIndentTemp
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/header-indent-cs1/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/header-indent-cs1/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/header-indent-cs1" %}
@@ -265,6 +310,9 @@ It is possible to customize the header indent cells using the [`headerIndentTemp
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/header-indent-cs1/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/header-indent-cs1/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 

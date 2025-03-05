@@ -25,7 +25,7 @@ The following are the six options available in the slider's limits object, and e
 
 ## Default and MinRange Slider limits
 
-The Default and MinRange Sliders have only one handle, so you can use `minStart`, `minEnd`, and `startHandleFixed` options. When the limits are enabled in the Slider, the limited area appears darkened, allowing you to differentiate between the allowed and restricted area. Refer to the following snippet to enable the limits in the Slider.
+The Default and MinRange Sliders have only one handle, so you can use [`minStart`](../api/slider/limitDataModel/#minstart), [`minEnd`](../api/slider/limitDataModel/#minend), and [`startHandleFixed`](../api/slider/limitDataModel/#starthandlefixed) options. When the limits are enabled in the Slider, the limited area appears darkened, allowing you to differentiate between the allowed and restricted area. Refer to the following snippet to enable the limits in the Slider.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -63,8 +63,7 @@ The Default and MinRange Sliders have only one handle, so you can use `minStart`
 
 ## Range Slider limits
 
-In the range slider, both handles can be restricted and locked from the limit's object. In this sample, the first handle is limited between
-10 and 40, and the second handle is limited between 60 and 90.
+In the range slider, both handles can be restricted and locked from the limit's object. In this sample, the first handle is limited between 10 and 40, and the second handle is limited between 60 and 90.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -101,7 +100,7 @@ In the range slider, both handles can be restricted and locked from the limit's 
 {% endif %}
 ## Handle lock
 
-The movement of slider handles can be locked by enabling the ``startHandleFixed`` and ``endHandleFixed`` properties in the limit's object. In this sample, the movement of both slider handles has been locked.
+The movement of slider handles can be locked by enabling the [`startHandleFixed`](../api/slider/limitDataModel/#starthandlefixed) and [`endHandleFixed`](../api/slider/limitDataModel/#endhandlefixed) properties in the limit's object. In this sample, the movement of both slider handles has been locked.
 
 {% if page.publishingplatform == "typescript" %}
 

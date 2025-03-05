@@ -1,6 +1,3 @@
-
-
-
 import { CheckBox, ChangeEventArgs } from '@syncfusion/ej2-buttons';
 import { Schedule, Month, TimelineMonth } from '@syncfusion/ej2-schedule';
 import { holidayData, birthdayData, companyData, personalData } from './datasource.ts';
@@ -33,7 +30,7 @@ let scheduleObj: Schedule = new Schedule({
 scheduleObj.appendTo('#Schedule');
 
 function onChange(args: ChangeEventArgs): void {
-    let value: number = parseInt((<Element>args.event.target).getAttribute('value'), 10);
+    let value: number = parseInt((<Element>args.event.currentTarget).querySelector('input').getAttribute('value'), 10);
     let resourceData: Object[] = calendarCollections.filter((calendar: { [key: string]: Object }) => calendar.CalendarId === value);
     if (args.checked) {
         scheduleObj.addResource(resourceData[0], 'Calendars', value - 1);
@@ -55,5 +52,3 @@ function generateCalendarData(): Object[] {
     }
     return collections;
 }
-
-

@@ -52,4 +52,3 @@ var profilePopup = new ej.popups.Popup(userContentEle, {
     height: 80
 });
 profilePopup.hide();
-

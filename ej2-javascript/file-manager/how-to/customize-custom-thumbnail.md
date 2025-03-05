@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Customize a custom thumbnail in ##Platform_Name## File Manager control
 
-The default appearance of the File Manager can be customized with your own icons by using the [showThumbnail](../../api/file-manager/#showthumbnail) property.
+The default appearance of the File Manager can be customized with your own icons by using the [`showThumbnail`](../../api/file-manager/#showthumbnail) property.
 
 The following example demonstrates how to add a custom icon in the large icons view.
 

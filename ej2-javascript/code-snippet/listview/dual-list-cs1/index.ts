@@ -164,6 +164,7 @@ function onFirstListSelect() {
 function onSeconListSelect() {
     btnobj3.disabled = false;
 }
+
 (document.getElementById('firstInput') as HTMLInputElement).addEventListener('keyup', onFirstKeyUp);
 //Here, filtering is handled using the dataManager for the first list
 function onFirstKeyUp() {
@@ -177,6 +178,7 @@ function onFirstKeyUp() {
     listObj1.dataBind();
 
 }
+
 (document.getElementById('secondInput') as HTMLInputElement).addEventListener('keyup', onSecondKeyUp);
 //Here, filtering is handled using the dataManager for the second list
 function onSecondKeyUp() {

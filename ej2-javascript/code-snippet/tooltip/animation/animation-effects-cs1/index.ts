@@ -6,7 +6,7 @@ let tooltip: Tooltip = new Tooltip({
 });
 tooltip.appendTo('#target');
 
-document.getElementById('target')?.addEventListener("click", function () {
+(document.getElementById('target') as HTMLElement).addEventListener("click", function () {
     if (this.getAttribute("data-tooltip-id")) {
         let closeAnimation: TooltipAnimationSettings = { effect: 'FadeOut', duration: 1000 }
         tooltip.close(closeAnimation);

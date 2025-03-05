@@ -168,10 +168,9 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
 
 ## Enable backdrop
 
-Enabling the [`showBackdrop`](../api/sidebar/#showbackdrop) in the Sidebar control will prevent the main content from user interactions, when it is in expanded state.
-Here, the DOM elements will not get changed. It only closes the main content by covering with a black backdrop overlay and focuses the Sidebar in the screen. Sidebar can be rendered with specific width by setting [`width`](../api/sidebar/#width) property.
+Enabling the [`showBackdrop`](../api/sidebar/#showbackdrop) in the Sidebar control will prevent the main content from user interactions, when it is in expanded state. Here, the DOM elements will not get changed. It only closes the main content by covering with a black backdrop overlay and focuses the Sidebar in the screen. Sidebar can be rendered with specific width by setting [`width`](../api/sidebar/#width) property.
 
-N> To achieve a proper **backdrop**, we suggest that you create a wrapper parent container for the div block in which you intend to enable the backdrop. Set the class name of this parent container as the **target** for the Sidebar. Alternatively, you can place an empty div container after the target container.
+N> To achieve a proper **backdrop**, we suggest that you create a wrapper parent container for the div block in which you intend to enable the backdrop. Set the class name of this parent container as the [`target`](../api/sidebar/#target) for the Sidebar. Alternatively, you can place an empty div container after the target container.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -201,7 +200,7 @@ Positioning the Sidebar to the right or left of the main content can be achieved
 
 ## Animate
 
-Animation transitions can be set while expanding or collapsing the Sidebar using the [`animate`](../api/sidebar/#animate) property. By default , `animate` property is set to true.
+Animation transitions can be set while expanding or collapsing the Sidebar using the [`animate`](../api/sidebar/#animate) property. By default , [`animate`](../api/sidebar/#animate) property is set to **true**.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -216,7 +215,7 @@ Animation transitions can be set while expanding or collapsing the Sidebar using
 
 ## Close on document click
 
-Sidebar can be closed on document click by setting [`closeOnDocumentClick`](../api/sidebar/#closeondocumentclick) to true. If this property is not set, the Sidebar will not close on document click since its default value is false. Sidebar can be kept opened during rendering using [`isOpen`](../api/sidebar/#isopen) property.
+Sidebar can be closed on document click by setting [`closeOnDocumentClick`](../api/sidebar/#closeondocumentclick) to **true**. If this property is not set, the Sidebar will not close on document click since its default value is **false**. Sidebar can be kept opened during rendering using [`isOpen`](../api/sidebar/#isopen) property.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -231,7 +230,7 @@ Sidebar can be closed on document click by setting [`closeOnDocumentClick`](../a
 
 ## Enable gestures
 
-Expand or collapse the Sidebar while swiping in touch devices using [`enableGestures`](../api/sidebar/#enablegestures) property. By default, `enableGestures` is set to true.
+Expand or collapse the Sidebar while swiping in touch devices using [`enableGestures`](../api/sidebar/#enablegestures) property. By default, [`enableGestures`](../api/sidebar/#enablegestures) is set to **true**.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

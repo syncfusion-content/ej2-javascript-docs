@@ -34,7 +34,7 @@ A connector can be selected at runtime by using the Select method and clear the 
 
 Connector can be dragged by just clicking on the connector and dragging.
 
-![Connector Drag Gif](images/connector-dragGif.gif)
+![Connector Drag Gif](../../images/connector-dragGif.gif)
 
 A connector can be dragged at runtime by using the Drag method. The following code explains how to drag the connector by using the drag method.
 
@@ -53,7 +53,7 @@ A connector can be dragged at runtime by using the Drag method. The following co
 
 The connector can be selected by clicking it. When the connector is selected, circles will be added on the starting and ending of the connector that is represented by Thumbs. Clicking and dragging those handles helps you to adjust the source and target points.
 
-![End Point drag GIF](images/EndPointDragGif.gif)
+![End Point drag GIF](../../images/EndPointDragGif.gif)
 
 You can also update the endPoints of diagram by using [`dragSourceEnd`](../api/diagram/#dragsourceend) and [`dragTargetEnd`](../api/diagram/#dragtargetend) methods of diagram. 
 
@@ -85,7 +85,7 @@ connector.constraints =
 
 N> To edit a connector segment, you need to inject the `ConnectorEditing` module into the diagram.
 
-![Connector segmnet edit](images/connectorEditing.gif)
+![Connector segmnet edit](../../images/connectorEditing.gif)
 
 ## Flip
 

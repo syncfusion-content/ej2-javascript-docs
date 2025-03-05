@@ -29,7 +29,7 @@ var scheduleObj = new ej.schedule.Schedule({
         ],
         textField: 'text', idField: 'id', colorField: 'color'
     }],
-     eventSettings: {
+    eventSettings: {
         dataSource: roomData,
         fields: {
             id: 'Id',
@@ -42,4 +42,3 @@ var scheduleObj = new ej.schedule.Schedule({
     }
 });
 scheduleObj.appendTo('#Schedule');
-

@@ -18,6 +18,7 @@ window.getMonthCellText = function (date) {
   }
   return '';
 };
+
 window.getWorkCellText = function (date) {
   var weekEnds = [0, 6];
   if (weekEnds.indexOf(date.getDay()) >= 0) {
@@ -35,4 +36,3 @@ var scheduleObj = new ej.schedule.Schedule({
   selectedDate: new Date(2017, 11, 16)
 });
 scheduleObj.appendTo('#Schedule');
-

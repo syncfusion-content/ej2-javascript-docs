@@ -1,13 +1,17 @@
 var instance = new ej.base.Internationalization();
+
 window.getDateHeaderText = function (value) {
     return instance.formatDate(value, { skeleton: 'Ed' });
 };
+
 window.getYearDetails = function (value) {
     return 'Year: ' + instance.formatDate(value.date, { skeleton: 'y' });
 };
+
 window.getMonthDetails = function (value) {
     return 'Month: ' + instance.formatDate(value.date, { skeleton: 'M' });
 };
+
 window.getWeekDetails = function (value) {
     return 'Week ' + ej.schedule.getWeekNumber(value.date);
 };
@@ -26,4 +30,3 @@ var scheduleObj = new ej.schedule.Schedule({
     eventSettings: { dataSource: scheduleData }
 });
 scheduleObj.appendTo('#Schedule');
-

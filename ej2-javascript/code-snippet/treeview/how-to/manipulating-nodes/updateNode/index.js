@@ -12,7 +12,8 @@ var countries = [
 ];
 
 var treeObj = new ej.navigations.TreeView({
-    fields: { dataSource: countries, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild', selected: 'isSelected' }
+    fields: { dataSource: countries, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild', selected: 'isSelected' },
+    allowEditing: true,
 });
 treeObj.appendTo('#tree');
 

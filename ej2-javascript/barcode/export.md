@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Export in ##Platform_Name## Barcode control | Syncfusion
-description: Learn here all about Export in Syncfusion ##Platform_Name## Barcode control of Syncfusion Essential JS 2 and more.
+title: Export in ##Platform_Name## Barcode control | Syncfusion®
+description: Learn here all about Export in Syncfusion® ##Platform_Name## Barcode control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Export 
 publishingplatform: ##Platform_Name##

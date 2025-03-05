@@ -1,5 +1,3 @@
-
-
 import {
     Schedule, Day, Week, WorkWeek, Month, Agenda, BeforePasteEventArgs
 } from '@syncfusion/ej2-schedule';
@@ -8,6 +6,7 @@ import { Grid } from '@syncfusion/ej2-grids';
 import { scheduleData } from './datasource.ts';
 
 Schedule.Inject(Day, Week, WorkWeek, Month, Agenda);
+
 interface ScheduleData {
     Id: string;
     Subject: string;

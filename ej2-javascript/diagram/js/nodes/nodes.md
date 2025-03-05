@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, entity, or any other kind of data, and it represents the functions of a complete system regarding to how it interacts with external entities.
 
-![Node](images/node.png)
+![Node](../../images/node.png)
 
 <!-- markdownlint-disable MD033 -->
 

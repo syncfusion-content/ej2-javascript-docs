@@ -46,6 +46,6 @@ The following table contains various representation of BPMN data object.
 
 | Boundary | Image |
 | -------- | -------- |
-| Collection Data Object | ![Collection Data BPMN Shape](images/Dataobject.png) |
-| Data Input | ![Data Input BPMN Shape](images/DataInput.png) |
-| Data Output | ![Data Output BPMN Shape](images/DataOutput.png) |
+| Collection Data Object | ![Collection Data BPMN Shape](../images/Dataobject.png) |
+| Data Input | ![Data Input BPMN Shape](../images/DataInput.png) |
+| Data Output | ![Data Output BPMN Shape](../images/DataOutput.png) |

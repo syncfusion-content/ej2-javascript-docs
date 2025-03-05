@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Context menu in ##Platform_Name## Schedule control | Syncfusion
-description: Learn here all about Context menu in Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
+title: Context menu in ##Platform_Name## Scheduler control | Syncfusion
+description: Learn here all about Context menu in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Context menu 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Context menu in ##Platform_Name## Schedule control
+# Context menu in ##Platform_Name## Scheduler control
 
 You can display context menu on work cells and appointments of Scheduler by making use of the [`ContextMenu`](https://ej2.syncfusion.com/documentation/context-menu/getting-started) control manually from the application end. In the following code example, context menu control is being added from sample end and set its target as `Scheduler`.
 
@@ -28,6 +28,9 @@ The deletion of appointments can be done by using the [`deleteEvent`](https://ej
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/context-menu-cs1/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/context-menu-cs1/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/context-menu-cs1" %}
@@ -40,6 +43,9 @@ The deletion of appointments can be done by using the [`deleteEvent`](https://ej
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/context-menu-cs1/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/context-menu-cs1/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 

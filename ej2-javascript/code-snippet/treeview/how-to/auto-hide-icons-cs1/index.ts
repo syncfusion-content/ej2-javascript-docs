@@ -46,10 +46,10 @@ function onCreate() {
   let collapse: NodeListOf<Element> = treeElement.querySelectorAll('.e-icons.e-icon-collapsible');
   let expand: NodeListOf<Element> = treeElement.querySelectorAll('.e-icons.e-icon-expandable');
   hideIcon(expand, collapse);
-  document.getElementById("tree")?.addEventListener('mouseenter', (event: any) => {
+  treeElement.addEventListener('mouseenter', (event: any) => {
     showIcon(expand, collapse);
   })
-  document.getElementById("tree")?.addEventListener('mouseleave', (event: any) => {
+  treeElement.addEventListener('mouseleave', (event: any) => {
     hideIcon(expand, collapse);
   })
 }

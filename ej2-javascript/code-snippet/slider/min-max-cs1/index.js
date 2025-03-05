@@ -5,7 +5,7 @@ var rangeObj = new ej.inputs.Slider({
     // Minimum value
     min: 100,
     // Maximum value
-    max: 1100,
+    max: 1000,
     // Slider current value
     value: 400
 });

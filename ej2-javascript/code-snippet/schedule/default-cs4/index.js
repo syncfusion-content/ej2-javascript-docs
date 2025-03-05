@@ -8,4 +8,3 @@ var scheduleObj = new ej.schedule.Schedule({
     dateRangeTemplate: '<div class="date-text">${getDateRange(data.startDate)}-${getDateRange(data.endDate)}</div>',
 });
 scheduleObj.appendTo('#Schedule');
-

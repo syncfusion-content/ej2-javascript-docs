@@ -32,6 +32,9 @@ By default, the rows of the calendar Month view can hold only the limited appoin
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/row-auto-height-cs1/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/row-auto-height-cs1/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/row-auto-height-cs1" %}
@@ -44,6 +47,9 @@ By default, the rows of the calendar Month view can hold only the limited appoin
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/row-auto-height-cs1/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/row-auto-height-cs1/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -63,6 +69,9 @@ When the feature [`rowAutoHeight`](https://ej2.syncfusion.com/documentation/api/
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/row-auto-height-cs2/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/row-auto-height-cs2/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/row-auto-height-cs2" %}
@@ -75,6 +84,9 @@ When the feature [`rowAutoHeight`](https://ej2.syncfusion.com/documentation/api/
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/row-auto-height-cs2/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/row-auto-height-cs2/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -94,6 +106,9 @@ The following example shows how the auto row adjustment feature works on timelin
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/row-auto-height-cs3/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/row-auto-height-cs3/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/row-auto-height-cs3" %}
@@ -106,6 +121,9 @@ The following example shows how the auto row adjustment feature works on timelin
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/row-auto-height-cs3/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/row-auto-height-cs3/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -125,6 +143,9 @@ By default, with the feature [`rowAutoHeight`](https://ej2.syncfusion.com/docume
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/ignore-whitespace-cs1/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/ignore-whitespace-cs1/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/ignore-whitespace-cs1" %}
@@ -137,6 +158,9 @@ By default, with the feature [`rowAutoHeight`](https://ej2.syncfusion.com/docume
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/ignore-whitespace-cs1/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/ignore-whitespace-cs1/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 

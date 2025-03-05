@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Barcode control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Barcode control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Barcode control | Syncfusion®
+description:  Checkout and learn about Getting started with ##Platform_Name## Barcode control of Syncfusion Essential® JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Barcode control
 
-This section explains the steps required to create the Barcode control using TypeScript and configure its properties using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section explains the steps required to create the Barcode control using TypeScript and configure its properties using Essential® JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
@@ -29,7 +29,7 @@ The following list of dependencies are required to use the `BarcodeGenerator` co
 
 ## Set up development environment
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
+Open the command prompt from the required directory, and run the following command to clone the Syncfusion® JavaScript (Essential® JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -49,9 +49,9 @@ cd ej2-quickstart
 {% endhighlight %}
 {% endtabs %}
 
-## Add Syncfusion JavaScript packages
+## Add Syncfusion® JavaScript packages
 
-Syncfusion JavaScript (Essential JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion JavaScript (Essential JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+Syncfusion® JavaScript (Essential® JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion® JavaScript (Essential® JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
 
 The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
 

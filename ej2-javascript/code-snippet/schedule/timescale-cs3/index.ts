@@ -1,21 +1,23 @@
-
-
 import { Schedule, Day, Week, WorkWeek } from '@syncfusion/ej2-schedule';
 import { scheduleData } from './datasource.ts';
 import { Internationalization } from '@syncfusion/ej2-base';
 
 Schedule.Inject(Day, Week, WorkWeek);
+
 let instance: Internationalization = new Internationalization();
 (window as TemplateFunction).majorSlotTemplate = (date: Date) => {
     return instance.formatDate(date, { skeleton: 'hm' });
 };
+
 (window as TemplateFunction).minorSlotTemplate = (date: Date) => {
     return instance.formatDate(date, { skeleton: 'ms' }).replace(':00', '');
 };
+
 interface TemplateFunction extends Window {
     majorSlotTemplate?: Function;
     minorSlotTemplate?: Function;
 }
+
 let scheduleObj: Schedule = new Schedule({
     width: '100%',
     height: '550px',
@@ -31,5 +33,3 @@ let scheduleObj: Schedule = new Schedule({
     eventSettings: { dataSource: scheduleData }
 });
 scheduleObj.appendTo('#Schedule');
-
-

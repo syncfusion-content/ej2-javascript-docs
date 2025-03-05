@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create mobile contact layout from ListView in ##Platform_Name## ListView control | Syncfusion
+title: Create mobile contact layout using ListView in ##Platform_Name## | Syncfusion
 description: Learn here all about Create mobile contact layout from ListView in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Create mobile contact layout from ListView
@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Create mobile contact layout in ##Platform_Name## ListView control
 
-You can customize the ListView using the [template](../../api/list-view/#template) property. Follow these steps to customize the ListView as a mobile contact view with the `ej2-avatar`:
+You can customize the ListView using the [`template`](../../api/list-view/#template) property. Follow these steps to customize the ListView as a mobile contact view with the `ej2-avatar`:
 
-* Render the ListView with a [dataSource](../../api/list-view/#datasource) containing avatar data. Avatar data can be provided as either text or class names. Below is an example code snippet for data source initialization:
+* Render the ListView with a [`dataSource`](../../api/list-view/#datasource) containing avatar data. Avatar data can be provided as either text or class names. Below is an example code snippet for data source initialization:
 
 ```ts
 
@@ -44,7 +44,7 @@ let dataSource: { [key: string]: Object }[] = [
 
 ```
 
-> Avatars can be set in different sizes using avatar classes. For more information on avatar classes, refer to the [Avatar](https://ej2.syncfusion.com/demos/#/material/avatar/default.html) documentation.
+> Avatars can be set in different sizes using avatar classes. For more information on avatar classes, refer to the [Avatar](https://ej2.syncfusion.com/demos/#/material/avatar/default.html) demo.
 
 * Sort the contact names using the [`sortOder`](../../api/list-view/#sortorder) property of ListView.
 

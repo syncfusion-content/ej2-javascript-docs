@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Multiple selection in ##Platform_Name## File Manager control
 
-The File Manager control allows you to select multiple files by enabling the [allowMultiSelection](../api/file-manager/#allowmultiselection) property (enabled by default). Multiple selections can be done by pressing the `Ctrl` key or `Shift` key while selecting the files. Checkboxes can also be used for multiple selections. `Ctrl + A` can be used to select all files in the current directory. The [fileSelect](../api/file-manager/#fileselect) event will be triggered when items of the File Manager control are selected or unselected.
+The File Manager control allows you to select multiple files by enabling the [`allowMultiSelection`](../api/file-manager/#allowmultiselection) property (enabled by default). Multiple selections can be done by pressing the `Ctrl` key or `Shift` key while selecting the files. Checkboxes can also be used for multiple selections. `Ctrl + A` can be used to select all files in the current directory. The [`fileSelect`](../api/file-manager/#fileselect) event will be triggered when items of the File Manager control are selected or unselected.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -46,7 +46,7 @@ The File Manager control allows you to select multiple files by enabling the [al
 {% previewsample "page.domainurl/code-snippet/file-manager/multiselect-cs1" %}
 {% endif %}
 
-> Note: The File Manager control supports selecting files and folders initially or dynamically by specifying their names in the [selectedItems](../api/file-manager/#selecteditems) property.
+> Note: The File Manager control supports selecting files and folders initially or dynamically by specifying their names in the [`selectedItems`](../api/file-manager/#selecteditems) property.
 
 ## Range Selection
 
@@ -54,7 +54,7 @@ The File Manager control supports selecting files and folders in specific ranges
 
 {% if page.publishingplatform == "typescript" %}
 
-To enable range selection, you need to set the [enableRangeSelection](../api/file-manager/#enablerangeselection) property to `true` and ensure that multi-selection is allowed using the [allowMultiSelection](../api/file-manager/#allowmultiselection) property.
+To enable range selection, you need to set the [`enableRangeSelection`](../api/file-manager/#enablerangeselection) property to `true` and ensure that multi-selection is allowed using the [`allowMultiSelection`](../api/file-manager/#allowmultiselection) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -72,7 +72,7 @@ To enable range selection, you need to set the [enableRangeSelection](../api/fil
 
 {% elsif page.publishingplatform == "javascript" %}
 
-To enable range selection, you need to set the [enableRangeSelection](https://ej2.syncfusion.com/javascript/documentation/api/file-manager/#allowmultiselection_enableRangeSelection) property to `true` and ensure that multi-selection is allowed using the [allowMultiSelection](https://ej2.syncfusion.com/javascript/documentation/api/file-manager/#allowmultiselection) property.
+To enable range selection, you need to set the [`enableRangeSelection`](https://ej2.syncfusion.com/javascript/documentation/api/file-manager/#allowmultiselection_enableRangeSelection) property to `true` and ensure that multi-selection is allowed using the [`allowMultiSelection`](https://ej2.syncfusion.com/javascript/documentation/api/file-manager/#allowmultiselection) property.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

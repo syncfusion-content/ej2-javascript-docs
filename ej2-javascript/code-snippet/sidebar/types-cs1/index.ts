@@ -15,8 +15,8 @@ let togglebtn: Button = new Button({ iconCss: 'e-icons e-menu', isToggle: true, 
 
 //Click Event.
 
-document.querySelector('#toggle')?.addEventListener("click", () => {
-    if (document.getElementById('toggle')?.classList.contains('e-active')) {
+(document.querySelector('#toggle') as HTMLElement).addEventListener("click", () => {
+    if ((document.getElementById('toggle') as HTMLElement).classList.contains('e-active')) {
         togglebtn.content = 'Close';
         defaultSidebar.show();
     } else {
@@ -26,9 +26,9 @@ document.querySelector('#toggle')?.addEventListener("click", () => {
 })
 
 // Close the Sidebar
-document.querySelector('#close')?.addEventListener("click", () => {
+(document.querySelector('#close') as HTMLElement).addEventListener("click", () => {
     defaultSidebar.hide();
-    document.getElementById('toggle')?.classList.remove('e-active');
+    (document.getElementById('toggle') as HTMLElement).classList.remove('e-active');
     togglebtn.content = 'Open'
 })
 
@@ -49,11 +49,11 @@ typeAuto.appendTo('#auto');
 //change the togglebtn state.
 function Changestate() {
     if (defaultSidebar.type == "Auto") {
-        document.getElementById('toggle')?.classList.add('e-active');
+        (document.getElementById('toggle') as HTMLElement).classList.add('e-active');
         togglebtn.content = 'close';
     }
     else {
-        document.getElementById('toggle')?.classList.remove('e-active');
+        (document.getElementById('toggle') as HTMLElement).classList.remove('e-active');
         togglebtn.content = 'Open';
     }
 }

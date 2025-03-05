@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding a custom item to the context menu in ##Platform_Name## File Manager control | Syncfusion
+title: Add custom item to context menu in ##Platform_Name## File Manager | Syncfusion
 description: Learn about adding a custom item to the context menu in the Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Adding custom item to the context menu 
@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Adding a custom item to the context menu in ##Platform_Name## File Manager control
 
-The context menu can be customized using the [contextMenuSettings](../../api/file-manager/#contextmenusettings), [menuOpen](../../api/file-manager/#menuopen), and [menuClick](../../api/file-manager/#menuclick) events.
+The context menu can be customized using the [`contextMenuSettings`](../../api/file-manager/#contextmenusettings), [`menuOpen`](../../api/file-manager/#menuopen), and [`menuClick`](../../api/file-manager/#menuclick) events.
 
 The following example shows how to add a custom item to the context menu.
 
-The [contextMenuSettings](../../api/file-manager/#contextmenusettings) property is used to add a new menu item. The [menuOpen](../../api/file-manager/#menuopen) event is used to add an icon to the new menu item. The [menuClick](../../api/file-manager/#menuclick) event is used to add an event handler to the new menu item.
+The [`contextMenuSettings`](../../api/file-manager/#contextmenusettings) property is used to add a new menu item. The [`menuOpen`](../../api/file-manager/#menuopen) event is used to add an icon to the new menu item. The [`menuClick`](../../api/file-manager/#menuclick) event is used to add an event handler to the new menu item.
 
 {% if page.publishingplatform == "typescript" %}
 

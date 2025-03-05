@@ -47,4 +47,4 @@ You can create a hierarchical layout with data Source. The following code demons
 
 N> If you want to convert the data source into layout, you need to inject DataBinding along with HierarchicalTree module in the diagram.
 
-![Hierarchical tree](images/hierarchicalTree.png)
+![Hierarchical tree](../../images//hierarchicalTree.png)

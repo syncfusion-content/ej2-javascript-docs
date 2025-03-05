@@ -50,6 +50,7 @@ Here's an example of how to configure the Clear Format feature:
 {% include code-snippet/rich-text-editor/remove-format-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 ## Using Clear Format
 

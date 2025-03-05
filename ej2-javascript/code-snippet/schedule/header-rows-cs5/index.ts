@@ -1,5 +1,3 @@
-
-
 import { Schedule, TimelineMonth, CellTemplateArgs, getWeekNumber } from '@syncfusion/ej2-schedule';
 import { Internationalization } from '@syncfusion/ej2-base';
 import { eventData } from './datasource.ts';
@@ -11,16 +9,21 @@ interface TemplateFunction extends Window {
     getMonthDetails?: Function;
     getWeekDetails?: Function;
 }
+
 let instance: Internationalization = new Internationalization();
+
 (window as TemplateFunction).getYearDetails = (value: CellTemplateArgs) => {
     return 'Year: ' + instance.formatDate((value as CellTemplateArgs).date, { skeleton: 'y' });
 };
+
 (window as TemplateFunction).getMonthDetails = (value: CellTemplateArgs) => {
-    return 'Month: '+ instance.formatDate((value as CellTemplateArgs).date, { skeleton: 'M' });
+    return 'Month: ' + instance.formatDate((value as CellTemplateArgs).date, { skeleton: 'M' });
 };
+
 (window as TemplateFunction).getWeekDetails = (value: CellTemplateArgs) => {
     return 'Week ' + getWeekNumber((value as CellTemplateArgs).date);
 };
+
 let scheduleObj: Schedule = new Schedule({
     width: '100%',
     height: '550px',
@@ -35,5 +38,3 @@ let scheduleObj: Schedule = new Schedule({
     eventSettings: { dataSource: eventData }
 });
 scheduleObj.appendTo('#Schedule');
-
-

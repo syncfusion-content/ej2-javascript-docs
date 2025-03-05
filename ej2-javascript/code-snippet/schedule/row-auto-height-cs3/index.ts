@@ -1,10 +1,10 @@
 
 
 import { Schedule, TimelineViews, Resize, DragAndDrop } from '@syncfusion/ej2-schedule';
-import { CheckBox, ChangeEventArgs } from '@syncfusion/ej2-buttons';
 import { roomData } from './datasource.ts';
 
 Schedule.Inject(TimelineViews, Resize, DragAndDrop);
+
 let scheduleObj: Schedule = new Schedule({
     width: '100%',
     height: '550px',
@@ -46,5 +46,3 @@ let scheduleObj: Schedule = new Schedule({
     }
 });
 scheduleObj.appendTo('#Schedule');
-
-

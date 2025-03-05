@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cell customization in ##Platform_Name## Schedule control | Syncfusion
-description: Learn here all about Cell customization in Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
+title: Cell customization in ##Platform_Name## Scheduler control | Syncfusion
+description: Learn here all about Cell customization in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Cell customization 
 publishingplatform: ##Platform_Name##
@@ -9,73 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Cell customization in ##Platform_Name## Schedule control
+# Cell customization in ##Platform_Name## Scheduler control
 
-The cells of the Scheduler can be easily customized either using the cell template or [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell) event.
-
-## Setting cell dimensions in all views
-
-The height and width of the Scheduler cells can be customized either to increase or reduce its size through the [`cssClass`](https://ej2.syncfusion.com/documentation/api/schedule#cssclass) property, which overrides the default CSS applied on cells.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/schedule/cell-dimension-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/cell-dimension-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/schedule/cell-dimension-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/schedule/cell-dimension-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/cell-dimension-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/schedule/cell-dimension-cs2" %}
-{% endif %}
-
-## Check for cell availability
-
-You can check whether the given time range slots are available for event creation or already occupied by other events using the [`isSlotAvailable`](https://ej2.syncfusion.com/documentation/api/schedule#isslotavailable) method. In the following code example, if a specific time slot already contains an appointment, then no more appointments can be added to that cell.
-
->Note: The **isSlotAvailable** is centered around verifying appointments within the present view's date range. Yet, it does not encompass an evaluation of availability for recurrence occurrences that fall beyond this particular date range.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/schedule/cell-dimension-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/cell-dimension-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/schedule/cell-dimension-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/schedule/cell-dimension-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/cell-dimension-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/schedule/cell-dimension-cs3" %}
-{% endif %}
+The cells of the Scheduler can be easily customized either using the [`cellTemplate`](https://ej2.syncfusion.com/documentation/api/schedule/#celltemplate) or [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell) event.
 
 ## Customizing cells in all the views
 
@@ -94,6 +30,9 @@ The [`cellTemplate`](https://ej2.syncfusion.com/documentation/api/schedule#cellt
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/cell-dimension-cs4/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/cell-dimension-cs4/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/cell-dimension-cs4" %}
@@ -106,6 +45,9 @@ The [`cellTemplate`](https://ej2.syncfusion.com/documentation/api/schedule#cellt
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/cell-dimension-cs4/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/cell-dimension-cs4/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -125,6 +67,9 @@ An alternative to [`cellTemplate`](https://ej2.syncfusion.com/documentation/api/
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/cell-dimension-cs5/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/cell-dimension-cs5/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/cell-dimension-cs5" %}
@@ -137,6 +82,9 @@ An alternative to [`cellTemplate`](https://ej2.syncfusion.com/documentation/api/
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/cell-dimension-cs5/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/cell-dimension-cs5/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -158,6 +106,82 @@ You can customize cells such as work cells, month cells, all-day cells, header c
 | majorSlot | triggers on major time slot cell rendering.|
 | minorSlot | triggers on minor time slot cell rendering.|
 | weekNumberCell | triggers on cell displaying week number.|
+
+## Setting cell dimensions in all views
+
+Customize the height and width of Scheduler cells to increase or reduce their size using the [`cssClass`](https://ej2.syncfusion.com/documentation/api/schedule#cssclass) property, which overrides the default CSS applied on cells.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/schedule/cell-dimension-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/schedule/cell-dimension-cs2/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/cell-dimension-cs2/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/schedule/cell-dimension-cs2" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/schedule/cell-dimension-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/schedule/cell-dimension-cs2/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/cell-dimension-cs2/es5-datasource.js %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/schedule/cell-dimension-cs2" %}
+{% endif %}
+
+## Check for cell availability
+
+You can check whether the given time range slots are available for event creation or already occupied by other events using the [`isSlotAvailable`](https://ej2.syncfusion.com/documentation/api/schedule#isslotavailable) method. In the following code example, if a specific time slot already contains an appointment, then no more appointments can be added to that cell.
+
+>Note: The **isSlotAvailable** is centered around verifying appointments within the present view's date range. Yet, it does not encompass an evaluation of availability for recurrence occurrences that fall beyond this particular date range.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/schedule/cell-dimension-cs3/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/schedule/cell-dimension-cs3/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/cell-dimension-cs3/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/schedule/cell-dimension-cs3" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/schedule/cell-dimension-cs3/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/schedule/cell-dimension-cs3/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/cell-dimension-cs3/es5-datasource.js %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/schedule/cell-dimension-cs3" %}
+{% endif %}
 
 ## Customizing cell header in month view
 
@@ -203,6 +227,9 @@ Providing the [`minDate`](https://ej2.syncfusion.com/documentation/api/schedule#
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/cell-dimension-cs7/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/cell-dimension-cs7/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/cell-dimension-cs7" %}
@@ -215,6 +242,9 @@ Providing the [`minDate`](https://ej2.syncfusion.com/documentation/api/schedule#
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/cell-dimension-cs7/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/cell-dimension-cs7/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 

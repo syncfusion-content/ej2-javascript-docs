@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 The Sidebar often behaves differently on mobile displays compared to desktop displays. It features a functionality that allows it to be opened or closed based on the specified resolution. This behavior is controlled through the [`mediaQuery`](../api/sidebar/#mediaquery) property, allowing you to keep the Sidebar in an expanded or collapsed state only in user-defined resolutions.
 
-In the following sample, `mediaQuery` is used to close and open the Sidebar based on a specific resolution.
+In the following sample, [`mediaQuery`](../api/sidebar/#mediaquery) is used to close and open the Sidebar based on a specific resolution.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -5,6 +5,7 @@ var scheduleObj = new ej.schedule.Schedule({
     eventSettings: { dataSource: scheduleData }
 });
 scheduleObj.appendTo('#Schedule');
+
 var scrollToHour = new ej.calendars.TimePicker({
     width: 100,
     value: new Date(2000, 0, 1, 9),
@@ -14,5 +15,3 @@ var scrollToHour = new ej.calendars.TimePicker({
     }
 });
 scrollToHour.appendTo('#ScrollToHour');
-
-

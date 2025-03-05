@@ -63,8 +63,8 @@ The Range Slider control followed the [keyboard interaction](https://www.w3.org/
 | <kbd>Left Arrow</kbd>/<kbd>Down Arrow</kbd> | Decrease the Slider value. |
 | <kbd>Home</kbd> | Moves to the start value (for Range Slider when the second thumb is focused and the Home key is pressed, it moves to the first thumb value). |
 | <kbd>End | Moves to the end value (for Range Slider when the first thumb is focused and the End key is pressed, it moves to the second thumb value). |
-| <kbd>Page Up</kbd> | 	Increases the Slider by `largeStep` value. |
-| <kbd>Page Down</kbd> | Decreases the Slider by `largeStep` value. |
+| <kbd>Page Up</kbd> | 	Increases the Slider by [`largeStep`](../api/slider/ticksDataModel/#largestep)` value. |
+| <kbd>Page Down</kbd> | Decreases the Slider by [`largeStep`](../api/slider/ticksDataModel/#largestep) value. |
 
 ## Ensuring accessibility
 

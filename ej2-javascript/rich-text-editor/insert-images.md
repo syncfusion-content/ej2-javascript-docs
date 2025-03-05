@@ -156,7 +156,7 @@ You can add additional data with the image uploaded from the Rich Text Editor on
 {% include code-snippet/rich-text-editor/image-upload-authentication/index.html %}
 {% endhighlight %}
 {% endtabs %}
-
+{% endif %}
 
 ```csharp
 

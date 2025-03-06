@@ -16,9 +16,9 @@ The Dashboard Layout control is equipped with dragging functionality to drag and
 If one or more panels collide while dragging, the colliding panels will be pushed towards left, right, top, or bottom directions where an adaptive space for the collided panel is available. The position changes of these collided panels will be updated dynamically during the dragging of a panel so the user can conclude whether to place the panel in the current position or not.
 
 While dragging a panel in the Dashboard Layout, the following dragging events will be triggered:
-  * [dragStart](../../api/dashboard-layout/#dragstart) - Triggers when panel drag starts.
-  * [drag](../../api/dashboard-layout/#drag) - Triggers when panel is being dragged.
-  * [dragStop](../../api/dashboard-layout/#dragstop) - Triggers when panel drag stops.
+  * [`dragStart`](../../api/dashboard-layout/#dragstart) - Triggers when panel drag starts.
+  * [`drag`](../../api/dashboard-layout/#drag) - Triggers when panel is being dragged.
+  * [`dragStop`](../../api/dashboard-layout/#dragstop) - Triggers when panel drag stops.
 
 The following sample demonstrates dragging and pushing of panels. For example, while dragging panel 0 over panel 1, these panels get collided and push panel 1 towards a feasible direction so that panel 0 gets placed in panel 1's position.
 
@@ -84,7 +84,7 @@ The following sample demonstrates customizing the dragging handler of the panels
 
 ## Disable dragging of panels
 
-By default, the dragging of panels is enabled in the Dashboard Layout. It can also be disabled with the help of the [allowDragging](../../api/dashboard-layout/#allowdragging) API. Setting [allowDragging](../../api/dashboard-layout/#allowdragging) to false disables the dragging functionality in the Dashboard Layout.
+By default, the dragging of panels is enabled in the Dashboard Layout. It can also be disabled with the help of the [`allowDragging`](../../api/dashboard-layout/#allowdragging) API. Setting [`allowDragging`](../../api/dashboard-layout/#allowdragging) to **false** disables the dragging functionality in the Dashboard Layout.
 
 The following sample demonstrates the Dashboard Layout with dragging support disabled.
 

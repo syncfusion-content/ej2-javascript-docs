@@ -117,4 +117,4 @@ The following example shows a basic badge control.
 
 ## See Also
 
-[Types of Badge](../types)
+[Types of Badge](./types)

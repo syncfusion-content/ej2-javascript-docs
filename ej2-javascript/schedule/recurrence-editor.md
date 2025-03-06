@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Recurrence editor in ##Platform_Name## Schedule control | Syncfusion
-description: Learn here all about Recurrence editor in Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
+title: Recurrence editor in ##Platform_Name## Scheduler control | Syncfusion
+description: Learn here all about Recurrence editor in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Recurrence editor 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Recurrence editor in ##Platform_Name## Schedule control
+# Recurrence editor in ##Platform_Name## Scheduler control
 
 The Recurrence editor is integrated into Scheduler editor window by default, to process the recurrence rule generation for events. Apart from this, it can also be used as an individual component referring from the Scheduler repository to work with the recurrence related processes.
 
@@ -36,6 +36,9 @@ It is possible to customize the recurrence editor to display only the specific r
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/recurrence-cs1/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/recurrence-cs1/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/recurrence-cs1" %}
@@ -48,6 +51,9 @@ It is possible to customize the recurrence editor to display only the specific r
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/recurrence-cs1/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/recurrence-cs1/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -110,7 +116,7 @@ It is possible to customize the recurrence editor to display only the specific e
 
 The recurrence rule is usually generated based on the options selected from the recurrence editor and also it follows the [`iCalendar`](https://tools.ietf.org/html/rfc5545#section-3.3.10) specifications. The generated recurrence rule string is a valid one to be used with the Scheduler event’s recurrence rule field.
 
-There is a [`change`](https://ej2.syncfusion.com/documentation/api/recurrence-editor#change) event available in recurrence editor, that triggers on every time the fields of recurrence editor tends to change. Within this event argument, you can access the generated recurrence value through the `value` option as shown in the following code example.
+The recurrence editor has a [`change`](https://ej2.syncfusion.com/documentation/api/recurrence-editor#change) event that triggers every time the fields are modified. You can access the generated recurrence value through the [`value`](https://ej2.syncfusion.com/documentation/api/recurrence-editor/#value) option in the event argument.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -141,7 +147,7 @@ There is a [`change`](https://ej2.syncfusion.com/documentation/api/recurrence-ed
 
 ## Set specific value on recurrence editor
 
-It is possible to display the recurrence editor with specific options loaded initially, based on the rule string that we provide. The fields of recurrence editor will change its values accordingly, when we provide a particular rule through the `setRecurrenceRule` method.
+You can display the recurrence editor with specific options loaded initially based on a provided rule string. The fields of the recurrence editor will change their values accordingly when you provide a particular rule through the `setRecurrenceRule` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -208,8 +214,6 @@ You can parse the `recurrenceRule` of an event to generate the date instances on
 
 {% previewsample "page.domainurl/code-snippet/schedule/recur-editor-cs3" %}
 {% endif %}
-
-> Above example will generate two dates January 7, 2018 & January 9 2018 by excluding the in between dates January 8 2018 & January 10 2018, since those dates were given in the exclusion list. Generated dates can then be utilised to create appointments.
 
 ## Recurrence date generation in server-side
 

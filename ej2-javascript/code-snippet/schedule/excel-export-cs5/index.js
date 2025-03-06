@@ -36,6 +36,7 @@ var data = [
         OwnerId: 2
     }
 ];
+
 var scheduleObj = new ej.schedule.Schedule({
     width: '100%',
     height: 500,
@@ -79,5 +80,3 @@ function onExportClick() {
     var exportValues = { fieldsInfo: customFields };
     scheduleObj.exportToExcel(exportValues);
 }
-
-

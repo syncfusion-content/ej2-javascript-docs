@@ -19,7 +19,7 @@ var scheduleObj = new ej.schedule.Schedule({
 scheduleObj.appendTo('#Schedule');
 
 function onExportClick() {
-    var exportValues = { 
+    var exportValues = {
         customData: [{
             Id: 1,
             Subject: 'Explosion of Betelgeuse Star',
@@ -35,7 +35,6 @@ function onExportClick() {
             EndTime: new Date(2019, 0, 7, 14, 0),
             CategoryColor: '#357cd2'
         }]
-     };
+    };
     scheduleObj.exportToExcel(exportValues);
 }
-

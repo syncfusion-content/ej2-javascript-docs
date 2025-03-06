@@ -1,8 +1,6 @@
-
-
 import { Uploader, SelectedEventArgs } from '@syncfusion/ej2-inputs';
-import { Schedule, Day, Week, WorkWeek, Month, Agenda, ICalendarImport} from
-'@syncfusion/ej2-schedule';
+import { Schedule, Day, Week, WorkWeek, Month, Agenda, ICalendarImport } from
+    '@syncfusion/ej2-schedule';
 import { scheduleData } from './datasource.ts';
 
 Schedule.Inject(Day, Week, WorkWeek, Month, Agenda, ICalendarImport);
@@ -15,6 +13,7 @@ let scheduleObj: Schedule = new Schedule({
     eventSettings: { dataSource: scheduleData }
 });
 scheduleObj.appendTo('#Schedule');
+
 // Initialize Uploder component for import
 let uploadObj: Uploader = new Uploader({
     allowedExtensions: '.ics',
@@ -25,5 +24,3 @@ let uploadObj: Uploader = new Uploader({
     selected: (args: SelectedEventArgs) => scheduleObj.importICalendar((<HTMLInputElement>args.event.target).files[0])
 });
 uploadObj.appendTo('#ics-import');
-
-

@@ -52,7 +52,7 @@ The Timeline control triggers the [`created`](../api/timeline#created) event whe
 
 ## BeforeItemRender
 
-The Timeline control triggers the [`beforeItemRender`](../api/timeline#beforeItemRender) event before rendering each item.
+The Timeline control triggers the [`beforeItemRender`](../api/timeline#beforeitemrender) event before rendering each item.
 
 {% if page.publishingplatform == "typescript" %}
 

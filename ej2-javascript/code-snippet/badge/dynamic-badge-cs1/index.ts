@@ -25,12 +25,12 @@ let list: ListView = new ListView({
     fields: { groupBy: 'type' },
     // Bind actionComplete event
     actionComplete: () => {
-        badgeElements = Array.prototype.slice.call(document.getElementById('lists')?.getElementsByClassName('e-badge'));
+        badgeElements = Array.prototype.slice.call(document.getElementById('lists').getElementsByClassName('e-badge'));
     }
 });
 list.appendTo('#lists');
-document.getElementById('button')?.addEventListener('click', function buttonClick() {
+document.getElementById('button').addEventListener('click', function buttonClick() {
     badgeElements.forEach((element) => {
-        element.textContent = (Number(element.textContent?.split(' ')[0])) + 1 + ' New';
+        element.textContent = (Number(element.textContent.split(' ')[0])) + 1 + ' New';
     })
 });

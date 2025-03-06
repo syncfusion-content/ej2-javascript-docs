@@ -1,9 +1,8 @@
-
-
-import { Schedule, Week, ExcelExport, ExportOptions, ExportFieldInfo, ActionEventArgs, ToolbarActionArgs } from '@syncfusion/ej2-schedule';
+import { Schedule, Week, ExcelExport, ExportOptions, ActionEventArgs, ToolbarActionArgs } from '@syncfusion/ej2-schedule';
 import { ItemModel } from '@syncfusion/ej2-navigations';
 
 Schedule.Inject(Week, ExcelExport);
+
 const data: object[] = [
     {
         Id: 1,
@@ -28,6 +27,7 @@ const data: object[] = [
         OwnerId: 3
     }
 ];
+
 let scheduleObj: Schedule = new Schedule({
     width: '100%',
     height: '550px',
@@ -47,8 +47,6 @@ let scheduleObj: Schedule = new Schedule({
 scheduleObj.appendTo('#Schedule');
 
 function onExportClick(): void {
-    let exportValues: ExportOptions = {exportType: 'csv', separator: ';'};
+    let exportValues: ExportOptions = { exportType: 'csv', separator: ';' };
     scheduleObj.exportToExcel(exportValues);
 }
-
-

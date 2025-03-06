@@ -18,4 +18,3 @@ scheduleObj.appendTo('#Schedule');
 function onPrintIconClick() {
     scheduleObj.print();
 }
-

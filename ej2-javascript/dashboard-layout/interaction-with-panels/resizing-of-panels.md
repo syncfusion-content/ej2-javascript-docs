@@ -16,9 +16,9 @@ The Dashboard Layout control includes panel resizing functionality, which can be
 Initially, panels can only be resized in the south-east direction. However, panels can also be resized in the east, west, north, south, and south-west directions by defining the required directions with the [`resizableHandles`](../../api/dashboard-layout/#resizablehandles) property.
 
 On resizing a panel in Dashboard Layout the following events will be triggered,
-  * [resizeStart](../../api/dashboard-layout/#resizestart) - Triggers when panel resize starts
-  * [resize](../../api/dashboard-layout/#resize) - Triggers when panel is being resized
-  * [resizeStop](../../api/dashboard-layout/#resizestop) - Triggers when panel resize stops
+  * [`resizeStart`](../../api/dashboard-layout/#resizestart) - Triggers when panel resize starts
+  * [`resize`](../../api/dashboard-layout/#resize) - Triggers when panel is being resized
+  * [`resizeStop`](../../api/dashboard-layout/#resizestop) - Triggers when panel resize stops
 
 The following sample demonstrates how to enable and disable the resizing of panels in the Dashboard Layout control in different directions.
 
@@ -51,18 +51,18 @@ The following sample demonstrates how to enable and disable the resizing of pane
 
 ## Resizing panels programatically
 
-The Dashboard Layout panels can also be resized programmatically by using the [resizePanel](../../api/dashboard-layout/#resizepanel) method. The method is invoked as follows:
+The Dashboard Layout panels can also be resized programmatically by using the [`resizePanel`](../../api/dashboard-layout/#resizepanel) method. The method is invoked as follows:
 
   ```js
    resizePanel(id, sizeX, sizeY)
   ```
 
 Where,
-  * id - ID of the panel which needs to be resized.
-  * sizeX - New panel width in cells count for resizing the panel.
-  * sizeY - New panel height in cells count for resizing the panel.
+  * [`id`](../../api/dashboard-layout/panelModel/#id) - ID of the panel which needs to be resized.
+  * [`sizeX`](../../api/dashboard-layout/panelModel/#sizex) - New panel width in cells count for resizing the panel.
+  * [`sizeY`](../../api/dashboard-layout/panelModel/#sizey) - New panel height in cells count for resizing the panel.
 
-The following sample demonstrates resizing panels programatically in the Dashboard Layout's [created](../../api/dashboard-layout/#created) event.
+The following sample demonstrates resizing panels programatically in the Dashboard Layout's [`created`](../../api/dashboard-layout/#created) event.
 
 {% if page.publishingplatform == "typescript" %}
 

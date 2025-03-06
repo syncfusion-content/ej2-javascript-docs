@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 In Dashboard Layout, the height of a panel is based on its width. While resizing the panel, both the height and width should be adjusted.
 
-To resize the height of a panel alone, use the [resizePanel](../../api/dashboard-layout/#resizepanel) method. In this case, the [cellAspectRatio](../../api/dashboard-layout/#cellaspectratio) property configures the height of the cells based on the cell width-to-height ratio (cell width/cell height ratio) when the height will not be completely adjusted to the `sizeY` value.
+To resize the height of a panel alone, use the [`resizePanel`](../../api/dashboard-layout/#resizepanel) method. In this case, the [`cellAspectRatio`](../../api/dashboard-layout/#cellaspectratio) property configures the height of the cells based on the cell width-to-height ratio (cell width/cell height ratio) when the height will not be completely adjusted to the [`sizeY`](../../api/dashboard-layout/panelModel/#sizey) value.
 
 Refer to the following code snippet to determine the height of a panel.
 

@@ -14,9 +14,9 @@ In real-time cases, the data being presented within the dashboard need to be upd
 
 ## Add or remove panels dynamically
 
-Panels can be added dynamically by using the `addPanel` public method by passing the `panel` property as parameter. Also, they can be removed dynamically by using the `removePanel` public method by simply passing the `panel id` value as a parameter.
+Panels can be added dynamically by using the [`addPanel`](../../api/dashboard-layout/#addpanel) public method by passing the [`panels`](../api/dashboard-layout/#panels) property as parameter. Also, they can be removed dynamically by using the [`removePanel`](../../api/dashboard-layout/#removepanel) public method by simply passing the `panel id` value as a parameter.
 
-It is also possible to remove all the panels in a Dashboard Layout by calling [removeAll](../../api/dashboard-layout/#removeall) method.
+It is also possible to remove all the panels in a Dashboard Layout by calling [`removeAll`](../../api/dashboard-layout/#removeall) method.
 
   ```js
    dashboard.removeAll();

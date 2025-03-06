@@ -1,6 +1,3 @@
-
-
-import { extend } from '@syncfusion/ej2-base';
 import { ItemModel } from '@syncfusion/ej2-navigations';
 import { Schedule, Day, Week, WorkWeek, Month, Agenda, ActionEventArgs, ToolbarActionArgs, Print } from '@syncfusion/ej2-schedule';
 import { scheduleData } from './datasource.ts';
@@ -27,5 +24,3 @@ scheduleObj.appendTo('#Schedule');
 function onPrintIconClick(): void {
     scheduleObj.print();
 }
-
-

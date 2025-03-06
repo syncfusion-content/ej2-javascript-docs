@@ -21,4 +21,3 @@ scheduleObj.appendTo('#Schedule');
 function onExportClick() {
     scheduleObj.exportToExcel();
 }
-

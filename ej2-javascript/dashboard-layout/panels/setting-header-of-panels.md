@@ -44,9 +44,9 @@ The following sample demonstrates how to add content for each panel using the he
 
 ## Placing controls as content of panels
 
-In a dashboard, controls like charts, grids, maps, gauges, etc. can be used to present complex data. Any such controls can be placed as panel content by assigning the corresponding control element as the `content` of the panel.
+In a dashboard, controls like charts, grids, maps, gauges, etc. can be used to present complex data. Any such controls can be placed as panel content by assigning the corresponding control element as the [`content`](../../api/dashboard-layout/panelModel/#content) of the panel.
 
-The following sample demonstrates how to add EJ2 Chart controls as the `content` for each panel in the Dashboard Layout control.
+The following sample demonstrates how to add EJ2 Chart controls as the [`content`](../../api/dashboard-layout/panelModel/#content) for each panel in the Dashboard Layout control.
 
 {% if page.publishingplatform == "typescript" %}
 

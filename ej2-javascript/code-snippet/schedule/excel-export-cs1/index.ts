@@ -1,10 +1,9 @@
-
-
 import { Schedule, Week, ExcelExport, ActionEventArgs, ToolbarActionArgs } from '@syncfusion/ej2-schedule';
 import { ItemModel } from '@syncfusion/ej2-navigations';
 import { scheduleData } from './datasource.ts';
 
 Schedule.Inject(Week, ExcelExport);
+
 let scheduleObj: Schedule = new Schedule({
     width: '100%',
     height: '550px',
@@ -26,5 +25,3 @@ scheduleObj.appendTo('#Schedule');
 function onExportClick(): void {
     scheduleObj.exportToExcel();
 }
-
-

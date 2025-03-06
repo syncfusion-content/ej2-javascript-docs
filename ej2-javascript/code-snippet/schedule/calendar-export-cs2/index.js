@@ -6,9 +6,9 @@ var scheduleObj = new ej.schedule.Schedule({
     eventSettings: { dataSource: scheduleData }
 });
 scheduleObj.appendTo('#Schedule');
+
 var buttonObj = new ej.buttons.Button();
 buttonObj.appendTo('#ics-export');
 buttonObj.element.onclick = function () {
     scheduleObj.exportToICalendar('ScheduleEvents');
 };
-

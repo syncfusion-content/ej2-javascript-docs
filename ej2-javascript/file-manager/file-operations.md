@@ -78,56 +78,56 @@ To achieve the directory upload in the physical file service provider, use the b
 
 ```ts
 [Route("Upload")]
-        public IActionResult Upload(string path, IList<IFormFile> uploadFiles, string action)
+public IActionResult Upload(string path, IList<IFormFile> uploadFiles, string action)
+{
+    try
+    {
+        FileManagerResponse uploadResponse;
+        foreach (var file in uploadFiles)
         {
-            try
+            var folders = (file.FileName).Split('/');
+            // checking the folder upload
+            if (folders.Length > 1)
             {
-                FileManagerResponse uploadResponse;
-                foreach (var file in uploadFiles)
+                for (var i = 0; i < folders.Length - 1; i++)
                 {
-                    var folders = (file.FileName).Split('/');
-                    // checking the folder upload
-                    if (folders.Length > 1)
+                    string newDirectoryPath = Path.Combine(this.basePath + path, folders[i]);
+                    // checking the directory traversal
+                    if (Path.GetFullPath(newDirectoryPath) != (Path.GetDirectoryName(newDirectoryPath) + Path.DirectorySeparatorChar + folders[i]))
                     {
-                        for (var i = 0; i < folders.Length - 1; i++)
-                        {
-                            string newDirectoryPath = Path.Combine(this.basePath + path, folders[i]);
-                            // checking the directory traversal
-                            if (Path.GetFullPath(newDirectoryPath) != (Path.GetDirectoryName(newDirectoryPath) + Path.DirectorySeparatorChar + folders[i]))
-                            {
-                                throw new UnauthorizedAccessException("Access denied for Directory-traversal");
-                            }
-                            if (!Directory.Exists(newDirectoryPath))
-                            {
-                                this.operation.ToCamelCase(this.operation.Create(path, folders[i]));
-                            }
-                            path += folders[i] + "/";
-                        }
+                        throw new UnauthorizedAccessException("Access denied for Directory-traversal");
                     }
-                }
-                uploadResponse = operation.Upload(path, uploadFiles, action, size, null);
-                if (uploadResponse.Error != null)
-                {
-                    Response.Clear();
-                    Response.ContentType = "application/json; charset=utf-8";
-                    Response.StatusCode = Convert.ToInt32(uploadResponse.Error.Code);
-                    Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = uploadResponse.Error.Message;
+                    if (!Directory.Exists(newDirectoryPath))
+                    {
+                        this.operation.ToCamelCase(this.operation.Create(path, folders[i]));
+                    }
+                    path += folders[i] + "/";
                 }
             }
-            catch (Exception e)
-            {
-                ErrorDetails er = new ErrorDetails();
-                er.Message = e.Message.ToString();
-                er.Code = "417";
-                er.Message = "Access denied for Directory-traversal";
-                Response.Clear();
-                Response.ContentType = "application/json; charset=utf-8";
-                Response.StatusCode = Convert.ToInt32(er.Code);
-                Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = er.Message;
-                return Content("");
-            }
-            return Content("");
         }
+        uploadResponse = operation.Upload(path, uploadFiles, action, size, null);
+        if (uploadResponse.Error != null)
+        {
+            Response.Clear();
+            Response.ContentType = "application/json; charset=utf-8";
+            Response.StatusCode = Convert.ToInt32(uploadResponse.Error.Code);
+            Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = uploadResponse.Error.Message;
+        }
+    }
+    catch (Exception e)
+    {
+        ErrorDetails er = new ErrorDetails();
+        er.Message = e.Message.ToString();
+        er.Code = "417";
+        er.Message = "Access denied for Directory-traversal";
+        Response.Clear();
+        Response.ContentType = "application/json; charset=utf-8";
+        Response.StatusCode = Convert.ToInt32(er.Code);
+        Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = er.Message;
+        return Content("");
+    }
+    return Content("");
+}
 ```
 
 Refer to the [GitHub](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider/blob/master/Controllers/FileManagerController.cs#L76) for more details
@@ -204,21 +204,21 @@ To perform the directory upload in the Amazon file service provider, use the bel
 
 ```ts
 foreach (var file in uploadFiles)
+{
+    var folders = (file.FileName).Split('/');
+    // checking the folder upload
+    if (folders.Length > 1)
+    {
+        for (var i = 0; i < folders.Length - 1; i++)
+        {
+            if (!this.operation.checkFileExist(path, folders[i]))
             {
-                var folders = (file.FileName).Split('/');
-                // checking the folder upload
-                if (folders.Length > 1)
-                {
-                    for (var i = 0; i < folders.Length - 1; i++)
-                    {
-                        if (!this.operation.checkFileExist(path, folders[i]))
-                        {
-                            this.operation.ToCamelCase(this.operation.Create(path, folders[i], dataObject));
-                        }
-                        path += folders[i] + "/";
-                    }
-                }
+                this.operation.ToCamelCase(this.operation.Create(path, folders[i], dataObject));
             }
+            path += folders[i] + "/";
+        }
+    }
+}
 ```
 
 Refer to the [GitHub](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider/blob/master/Controllers/AmazonS3ProviderController.cs#L83) for more details.
@@ -933,9 +933,9 @@ The following table provides the toolbar buttons that appear based on the select
 
 | Selected Items Count | Left Section | Right Section |
 |----------------------|--------------|---------------|
-| `0` (none of the item) | <ul><li>SortBy</li><li>Refresh</li><li>NewFolder</li><li>Upload</li></ul> | <ul><li>View</li><li>Details</li></ul> |
-| `1` (single item selected) | <ul><li>Delete</li><li>Download</li><li>Rename</li></ul> | <ul><li>Selected items count</li><li>View</li><li>Details</li></ul> |
-| `>1` (multiple selection) | <ul><li>Delete</li><li>Download</li></ul> | <ul><li>Selected items count</li><li>View</li><li>Details</li></ul> |
+| `0` (none of the item) | • SortBy<br>• Refresh<br>• NewFolder<br>• Upload | • View<br>• Details |
+| `1` (single item selected) | • Delete<br>• Download<br>• Rename | • Selected items count<br>• View<br>• Details |
+| `>1` (multiple selection) | • Delete<br>• Download | • Selected items count<br>• View<br>• Details |
 
 ### Context menu
 

@@ -25,7 +25,7 @@ let list: ListView = new ListView({
     fields: { groupBy: 'type' },
     // Bind actionComplete event
     actionComplete: () => {
-        let list: HTMLElement = <HTMLElement>document.getElementById('lists')?.getElementsByClassName('e-list-group-item')[0];
+        let list: HTMLElement = <HTMLElement>document.getElementById('lists').getElementsByClassName('e-list-group-item')[0];
         list.style.display = 'none';
     }
 });

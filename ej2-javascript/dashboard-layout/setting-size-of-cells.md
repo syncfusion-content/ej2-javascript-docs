@@ -118,7 +118,7 @@ In the following sample, the grid lines indicate the cells' split-up of the layo
 
 ## Rendering control in right-to-left direction
 
-It is possible to render the Dashboard Layout in a right-to-left direction by setting the [enableRtl](../api/dashboard-layout/#enablertl) API to true.
+It is possible to render the Dashboard Layout in a right-to-left direction by setting the [`enableRtl`](../api/dashboard-layout/#enablertl) API to **true**.
 
 The following sample demonstrates the Dashboard Layout in the right-to-left direction.
 

@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Items in ##Platform_Name## Timeline control
 
-The Timeline items can be added by using the [items](../api/timeline#items) property. Each item can be configured with options such as [`content`](../api/timeline#items#content), [`oppositeContent`](../api/timeline#items#oppositecontent), [`dotCss`](../api/timeline#items#dotcss), [`disabled`](../api/timeline#items#disabled) and [`cssClass`](../api/timeline#items#cssclass).
+The Timeline items can be added by using the [`items`](../api/timeline#items) property. Each item can be configured with options such as [`content`](../api/timeline/timelineItemModel/#content), [`oppositeContent`](../api/timeline/timelineItemModel/#oppositecontent), [`dotCss`](../api/timeline/timelineItemModel/#dotcss), [`disabled`](../api/timeline/timelineItemModel/#disabled) and [`cssClass`](../api/timeline/timelineItemModel/#cssclass).
 
 ## Adding content
 
-You can define the item content using the [`content`](../api/timeline#items#content) property.
+You can define the item content using the [`content`](../api/timeline/timelineItemModel/#content) property.
 
 ### String content
 
@@ -93,7 +93,7 @@ You can specify template content for the items by using a selector for an elemen
 
 ## Adding opposite content
 
-You can add additional information to each Timeline item using the [`oppositeContent`](../api/timeline#items#oppositecontent) property, which is positioned opposite the item content. Similar to the [`content`](../api/timeline#items#content) property, you can define `string` or `function` as contents for [`oppositeContent`](../api/timeline#items#oppositecontent).
+You can add additional information to each Timeline item using the [`oppositeContent`](../api/timeline/timelineItemModel/#oppositecontent) property, which is positioned opposite the item content. Similar to the [`content`](../api/timeline/timelineItemModel/#content) property, you can define `string` or `function` as contents for [`oppositeContent`](../api/timeline/timelineItemModel/#oppositecontent).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -130,19 +130,19 @@ You can add additional information to each Timeline item using the [`oppositeCon
 
 ## Dot item
 
-Define a CSS class to set icons, background colors, or images to personalize the appearance of dots associated with each Timeline item using the [`dotCss`](../api/timeline#items#dotcss) property.
+Define a CSS class to set icons, background colors, or images to personalize the appearance of dots associated with each Timeline item using the [`dotCss`](../api/timeline/timelineItemModel/#dotcss) property.
 
 ### Adding icons
 
-You can define a CSS class to display an icon for each item using the [`dotCss`](../api/timeline#items#dotcss) property.
+You can define a CSS class to display an icon for each item using the [`dotCss`](../api/timeline/timelineItemModel/#dotcss) property.
 
 ### Adding images
 
-Include images for the Timeline items using the [`dotCss`](../api/timeline#items#dotcss) property by setting the CSS `background-image` property.
+Include images for the Timeline items using the [`dotCss`](../api/timeline/timelineItemModel/#dotcss) property by setting the CSS `background-image` property.
 
 ### Adding text
 
-You can display text for the Timeline items using the [`dotCss`](../api/timeline#items#dotcss) property, by adding text to the CSS [`content`](../api/timeline#items#content) property.
+You can display text for the Timeline items using the [`dotCss`](../api/timeline/timelineItemModel/#dotcss) property, by adding text to the CSS [`content`](../api/timeline/timelineItemModel/#content) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -179,7 +179,7 @@ You can display text for the Timeline items using the [`dotCss`](../api/timeline
 
 ## Disabling items
 
-You can use the [`disabled`](../api/timeline#items#disabled) property to disable an item when set to `true`. By default, the value is `false`.
+You can use the [`disabled`](../api/timeline/timelineItemModel/#disabled) property to disable an item when set to `true`. By default, the value is `false`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -216,4 +216,4 @@ You can use the [`disabled`](../api/timeline#items#disabled) property to disable
 
 ## cssClass
 
-You can customize the appearance of the Timeline item by specifying a custom CSS class using the [`cssClass`](../api/timeline#items#cssclass) property.
+You can customize the appearance of the Timeline item by specifying a custom CSS class using the [`cssClass`](../api/timeline/timelineItemModel/#cssclass) property.

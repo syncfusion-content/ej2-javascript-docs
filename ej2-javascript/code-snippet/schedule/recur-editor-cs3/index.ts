@@ -15,6 +15,7 @@ let ruleStringDates: number[] = recObject.getRecurrenceDates(
   new Date(),
   ruleString
 );
+
 for (let index: number = 0; index < ruleStringDates.length; index++) {
   outputElement.appendChild(
     createElement('div', {

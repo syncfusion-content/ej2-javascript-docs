@@ -22,4 +22,3 @@ function onExportClick() {
     var exportValues = { fileName: "SchedulerData" };
     scheduleObj.exportToExcel(exportValues);
 }
-

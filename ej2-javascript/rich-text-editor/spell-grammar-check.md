@@ -55,8 +55,6 @@ Below is an example code snippet to integrate WProofreader with the Syncfusion R
 {% include code-snippet/rich-text-editor/spell-check-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/spell-check-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -69,7 +67,6 @@ Below is an example code snippet to integrate WProofreader with the Syncfusion R
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/spell-check-cs1" %}
 {% endif %}
 
 Below is a GIF demonstrating how to integrate WProofreader with the Syncfusion Rich Text Editor.

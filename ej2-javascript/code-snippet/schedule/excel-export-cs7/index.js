@@ -1,4 +1,5 @@
 var data = new ej.base.extend([], window.scheduleData, null, true);
+
 var scheduleObj = new ej.schedule.Schedule({
     width: '100%',
     height: '550px',
@@ -22,4 +23,3 @@ function onExportClick() {
     var exportValues = { exportType: "csv" };
     scheduleObj.exportToExcel(exportValues);
 }
-

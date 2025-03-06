@@ -10,6 +10,7 @@ let numeric: NumericTextBox = new NumericTextBox({
   change: numericFocus,
 });
 numeric.appendTo('#numeric');
+
 let outputElement: HTMLElement = <HTMLElement>document.querySelector('#rule-output');
 let labelElement: HTMLElement = <HTMLElement>document.querySelector('#rule-label');
 let ruleString: string = 'FREQ=DAILY;INTERVAL=1; COUNT=30';

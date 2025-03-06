@@ -155,10 +155,10 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
 
 The below example shows the rendering of Dashboard Layout control using CDN link for script and style reference
 
-* Setting the `panels` property using HTML attribute
-* Setting the `panels` property using script
+* Setting the [`panels`](../../api/dashboard-layout/#panels) property using HTML attribute
+* Setting the [`panels`](../../api/dashboard-layout/#panels) property using script
 
-#### Setting the `panels` property using HTML attributes
+#### Setting the [`panels`](../../api/dashboard-layout/#panels) property using HTML attributes
 
 **Step 1:** Create an app folder `myapp` for the Essential JS 2 JavaScript controls.
 
@@ -184,9 +184,9 @@ The below example shows the rendering of Dashboard Layout control using CDN link
 
 **Step 4:** Now, run the `index.html` in the web browser, it will render the `Essential JS 2 Dashboard Layout` control.
 
-#### Setting the `panels` property using script
+#### Setting the [`panels`](../../api/dashboard-layout/#panels) property using script
 
-You can render the Dashboard Layout control by using the **panels** property through script. Add the HTML div element for Dashboard Layout into your `index.html` file.
+You can render the Dashboard Layout control by using the [`panels`](../../api/dashboard-layout/#panels) property through script. Add the HTML div element for Dashboard Layout into your `index.html` file.
 
 `[src/index.html]`
 
@@ -222,7 +222,7 @@ dashboard.appendTo('#element');
 
 ```
 
-The following example shows a basic Dashboard Layout by using the `panels` property.
+The following example shows a basic Dashboard Layout by using the [`panels`](../../api/dashboard-layout/#panels) property.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}

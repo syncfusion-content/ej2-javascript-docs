@@ -1,11 +1,10 @@
-
-
 import {
-    Schedule, ScheduleModel, Week, ExcelExport, ExportOptions, ExportFieldInfo, ActionEventArgs
+    Schedule, Week, ExcelExport, ExportOptions, ExportFieldInfo, ActionEventArgs
 } from '@syncfusion/ej2-schedule';
 import { ItemModel } from '@syncfusion/ej2-navigations';
 
 Schedule.Inject(Week, ExcelExport);
+
 const data: Record<string, any>[] = [
     {
         Id: 1,
@@ -44,6 +43,7 @@ const data: Record<string, any>[] = [
         OwnerId: 2
     }
 ];
+
 let scheduleObj: Schedule = new Schedule({
     width: '100%',
     height: 500,
@@ -87,5 +87,3 @@ function onExportClick(): void {
     const exportValues: ExportOptions = { fieldsInfo: customFields };
     scheduleObj.exportToExcel(exportValues);
 }
-
-

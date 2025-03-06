@@ -79,14 +79,14 @@ To render the Dashboard Layout control, import the Dashboard Layout and its depe
 
 You can render the Dashboard Layout control in the following two ways.
 
-* Adding dashboard element and defining `panels` property as attributes in the HTML elements directly.
-* Adding the dashboard element and defining the `panels` property through script.
+* Adding dashboard element and defining [`panels`](../../api/dashboard-layout/#panels) property as attributes in the HTML elements directly.
+* Adding the dashboard element and defining the [`panels`](../../api/dashboard-layout/#panels) property through script.
 
 ## Defining panels property through HTML attributes
 
-The `panels` of the Dashboard layout control can defined through HTML attributes by using the predefined class `.e-panel` to the control child elements and data attributes for defining the `sizeX`, `sizeY`, `row` and `column` properties for each panel.
+The [`panels`](../../api/dashboard-layout/#panels) of the Dashboard layout control can defined through HTML attributes by using the predefined class `.e-panel` to the control child elements and data attributes for defining the [`sizeX`](../../api/dashboard-layout/panelModel/#sizex), [`sizeY`](../../api/dashboard-layout/panelModel/#sizey), [`row`](../../api/dashboard-layout/panelModel/#row) and [`col`](../../api/dashboard-layout/panelModel/#col) properties for each panel.
 
-The following sample demonstrates defining of `panels` by adding child elements within the root element.
+The following sample demonstrates defining of [`panels`](../../api/dashboard-layout/#panels) by adding child elements within the root element.
 
 `[src/index.html]`
 
@@ -199,7 +199,7 @@ The below output can be achieved by following the steps mentioned above.
 
 ## Defining panels properties through script
 
-The panels can be defined simply during control initialization at the script section using the `panels` property of the control.
+The panels can be defined simply during control initialization at the script section using the [`panels`](../../api/dashboard-layout/#panels) property of the control.
 
 The following sample demonstrates defining panels property through script section. Here, the panels settings is defined using panels property with same settings as in HTML definition in the previous section.
 
@@ -229,7 +229,7 @@ dashboard.appendTo('#dashboard_default');
 {% endhighlight %}
 {% endtabs %}
 
-The following example shows a basic Dashboard Layout by defining the `panels` property through script.
+The following example shows a basic Dashboard Layout by defining the [`panels`](../../api/dashboard-layout/#panels) property through script.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

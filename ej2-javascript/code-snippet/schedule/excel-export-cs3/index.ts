@@ -1,16 +1,26 @@
-
-
 import { Schedule, Week, ExcelExport, ExportOptions, ActionEventArgs, ToolbarActionArgs } from '@syncfusion/ej2-schedule';
 import { ItemModel } from '@syncfusion/ej2-navigations';
-import { scheduleData } from './datasource.ts';
 
 Schedule.Inject(Week, ExcelExport);
+
 let scheduleObj: Schedule = new Schedule({
     width: '100%',
     height: '550px',
     selectedDate: new Date(2019, 0, 10),
     views: ['Week'],
-    eventSettings: { dataSource: scheduleData },
+    eventSettings: {
+        dataSource: [
+            {
+                Id: 1,
+                Subject: 'Daily Meeting',
+                Location: 'Conference Room',
+                StartTime: new Date(2019, 0, 7, 9, 0),
+                EndTime: new Date(2019, 0, 7, 10, 0),
+                CategoryColor: '#1aaa55',
+                RecurrenceRule: 'FREQ=DAILY;INTERVAL=1;COUNT=5'
+            }
+        ]
+    },
     actionBegin: (args: ActionEventArgs & ToolbarActionArgs) => {
         if (args.requestType === 'toolbarItemRendering') {
             let exportItem: ItemModel = {
@@ -27,5 +37,3 @@ function onExportClick(): void {
     let exportValues: ExportOptions = { includeOccurrences: true };
     scheduleObj.exportToExcel(exportValues);
 }
-
-

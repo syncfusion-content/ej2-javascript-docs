@@ -22,4 +22,3 @@ function onExportClick() {
     var exportValues = { fields: ['Id', 'Subject', 'StartTime', 'EndTime', 'Location'] };
     scheduleObj.exportToExcel(exportValues);
 }
-

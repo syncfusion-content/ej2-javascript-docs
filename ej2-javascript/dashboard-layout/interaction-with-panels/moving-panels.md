@@ -11,20 +11,20 @@ domainurl: ##DomainURL##
 
 # Moving panels in ##Platform_Name## Dashboard Layout control
 
-Aside from drag and drop, it is possible to move the panels in Dashboard Layout programmatically. This can be achieved using [movePanel](../../api/dashboard-layout/#movepanel) method. The method is invoked as follows:
+Aside from drag and drop, it is possible to move the panels in Dashboard Layout programmatically. This can be achieved using [`movePanel`](../../api/dashboard-layout/#movepanel) method. The method is invoked as follows:
 
   ```js
    movePanel(id, row, col)
   ```
 
 Where,
-* id - ID of the panel which needs to be moved.
-* row - New row position for moving the panel.
-* col - New column position for moving the panel.
+* [`id`](../../api/dashboard-layout/panelModel/#id) - ID of the panel which needs to be moved.
+* [`row`](../../api/dashboard-layout/panelModel/#row) - New row position for moving the panel.
+* [`col`](../../api/dashboard-layout/panelModel/#col) - New column position for moving the panel.
 
-Each time a panel's position is changed(Programatically or through UI interaction), the Dashboard Layout's [change](../../api/dashboard-layout/#change) event will be triggered.
+Each time a panel's position is changed(Programatically or through UI interaction), the Dashboard Layout's [`change`](../../api/dashboard-layout/#change) event will be triggered.
 
-The following sample demonstrates moving a panel programatically to a new position in the Dashboard Layout's [created](../../api/dashboard-layout/#created) event.
+The following sample demonstrates moving a panel programatically to a new position in the Dashboard Layout's [`created`](../../api/dashboard-layout/#created) event.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting in ##Platform_Name## Schedule control | Syncfusion
-description: Learn here all about Exporting in Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
+title: Exporting in ##Platform_Name## Scheduler control | Syncfusion
+description: Learn here all about Exporting in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Exporting 
 publishingplatform: ##Platform_Name##
@@ -9,15 +9,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Exporting in ##Platform_Name## Schedule control
+# Exporting in ##Platform_Name## Scheduler control
 
-The Scheduler supports exporting all its appointments both to an `Excel` or `ICS` extension file at client-side. It offers different client-side methods to export its appointments in an `Excel` or `ICal` format file. Let's look onto the ways on how to implement the exporting functionality in Scheduler.
+The Scheduler supports exporting all its appointments both to an `Excel` or `ICS` extension file at client-side. It offers different client-side methods to export its appointments in an `Excel` or `ICal` format file. Let's explore how to implement the exporting functionality in Scheduler.
 
 ## Excel Exporting
 
-The Scheduler allows you to export all its events into an Excel format file by using the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel) client-side method. By default, it exports all the default fields of Scheduler mapped through [`eventSettings`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings/) property.
+The Scheduler allows you to export all its events to an Excel format file by using the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel) client-side method. By default, it exports all the default fields of Scheduler mapped through [`eventSettings`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings/) property.
 
-> Before you start with excel exporting functionality, you need to import and inject the `ExcelExport` module from the `@syncfusion/ej2-schedule` package using the `Inject` method of Scheduler.
+> Before using the Excel exporting functionality, you need to import and inject the `ExcelExport` module from the `@syncfusion/ej2-schedule` package using the `Inject` method of Scheduler.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -27,6 +27,9 @@ The Scheduler allows you to export all its events into an Excel format file by u
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/excel-export-cs1/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/excel-export-cs1/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -41,6 +44,9 @@ The Scheduler allows you to export all its events into an Excel format file by u
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/excel-export-cs1/index.html %}
 {% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/excel-export-cs1/es5-datasource.js %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/schedule/excel-export-cs1" %}
@@ -48,7 +54,7 @@ The Scheduler allows you to export all its events into an Excel format file by u
 
 ### Exporting with custom fields
 
-By default, Scheduler exports all the default event fields that are mapped to it through the `eventSettings` property. To limit the number of fields on the exported excel file, it provides an option to export only the custom fields of the event data. To export such custom fields alone, define the required `fields` through the [`eventSettings`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings/) interface and pass it as argument to the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel) method as shown in the following example. For example: `['Id', 'Subject', 'StartTime', 'EndTime', 'Location']`.
+By default, Scheduler exports all default event fields mapped through the `eventSettings` property. To limit the number of fields in the exported Excel file, you can export only custom fields of the event data. Define the required `fields` through the [`eventSettings`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings/) interface and pass it as an argument to the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel) method. For example: `['Id', 'Subject', 'StartTime', 'EndTime', 'Location']`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -58,6 +64,9 @@ By default, Scheduler exports all the default event fields that are mapped to it
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/excel-export-cs2/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/excel-export-cs2/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -71,6 +80,9 @@ By default, Scheduler exports all the default event fields that are mapped to it
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/excel-export-cs2/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/excel-export-cs2/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -110,9 +122,9 @@ By default, the Scheduler exports recurring events as a single data by exporting
 
 ### Exporting custom event data
 
-By default, the whole event collection bound to the Scheduler gets exported as an excel file. To export only specific events of Scheduler or some custom event collection, you need to pass those custom data collection as a parameter to the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel) method as shown in this following example, through the [`customData`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions/#customdata) option of [`ExportOptions`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions/) interface.
+By default, the entire event collection bound to the Scheduler is exported as an Excel file. To export only specific events or a custom event collection, pass the custom data collection as a parameter to the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel) method through the [`customData`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions/#customdata) option of the [`ExportOptions`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions/) interface.
 
-> By default, the event data are taken from Scheduler dataSource.
+> By default, the event data is taken from the Scheduler dataSource.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -122,6 +134,9 @@ By default, the whole event collection bound to the Scheduler gets exported as a
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/excel-export-cs4/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/excel-export-cs4/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -136,6 +151,9 @@ By default, the whole event collection bound to the Scheduler gets exported as a
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/excel-export-cs4/index.html %}
 {% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/excel-export-cs4/es5-datasource.js %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/schedule/excel-export-cs4" %}
@@ -143,7 +161,8 @@ By default, the whole event collection bound to the Scheduler gets exported as a
 
 ### Customizing column header with custom fields exporting
 
-Using fields property, we can only export the defined fields into excel without customizing the header. Now we can provide the alternate support to customize the header of custom fields exporting using the [`fieldsInfo`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions/#fieldsinfo) option through the [`ExportFieldInfo`](https://ej2.syncfusion.com/documentation/api/schedule/exportFieldInfo/) interface and pass it as an argument to the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel) method as shown in the following example.
+To customize the header of custom fields during export, use the [`fieldsInfo`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions/#fieldsinfo) option through the [`ExportFieldInfo`](https://ej2.syncfusion.com/documentation/api/schedule/exportFieldInfo/) interface and pass it as an argument to the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel) method.
+
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -174,7 +193,7 @@ Using fields property, we can only export the defined fields into excel without 
 
 ### Export with custom file name
 
-By default, the Scheduler allows you to download the exported Excel file with a name `Schedule.xlsx`. It also provides an option to export the excel file with a custom file name, by defining the desired `fileName` through the [`ExportOptions`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions/) interface and passing it as an argument to the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel) method.
+By default, the Scheduler downloads the exported Excel file with the name `Schedule.xlsx`. To export the Excel file with a custom file name, define the desired `fileName` through the [`ExportOptions`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions/) interface and pass it as an argument to the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel) method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -184,6 +203,9 @@ By default, the Scheduler allows you to download the exported Excel file with a 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/excel-export-cs6/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/excel-export-cs6/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -198,6 +220,9 @@ By default, the Scheduler allows you to download the exported Excel file with a 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/excel-export-cs6/index.html %}
 {% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/excel-export-cs6/es5-datasource.js %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/schedule/excel-export-cs6" %}
@@ -205,7 +230,7 @@ By default, the Scheduler allows you to download the exported Excel file with a 
 
 ### Excel file formats
 
-By default, the Scheduler exports event data to an excel file in the `.xlsx` format. You can also export the Scheduler data in either of the file type such as `.xlsx` or `csv` formats, by defining the `exportType` option as either `csv` or `xlsx` through the [`ExportOptions`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions/) interface. By default, the `exportType` is set to `xlsx`.
+By default, the Scheduler exports event data to an Excel file in the `.xlsx` format. You can also export the Scheduler data in either `.xlsx` or `.csv` formats by defining the `exportType` option as either `csv` or `xlsx` through the [`ExportOptions`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions/) interface. The default `exportType` is `xlsx`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -215,6 +240,9 @@ By default, the Scheduler exports event data to an excel file in the `.xlsx` for
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/excel-export-cs7/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/excel-export-cs7/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -228,6 +256,9 @@ By default, the Scheduler exports event data to an excel file in the `.xlsx` for
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/excel-export-cs7/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/excel-export-cs7/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -267,7 +298,7 @@ The Scheduler exports the event data to CSV format with `,` as separator. You ca
 
 ## Exporting calendar events as ICS file
 
-You can export the Scheduler events to a calendar (.ics) file format, and open it on any of the other default calendars such as Google or Outlook. To export the events of Scheduler to an ICS file, you need to first import the `ICalendarExport` module from `@syncfusion/ej2-schedule` package and then inject it using the `Schedule.Inject(ICalendarExport)` method.
+You can export Scheduler events to a calendar (.ics) file format, which can be opened in other default calendars such as Google or Outlook. To export Scheduler events to an ICS file, first import the `ICalendarExport` module from the `@syncfusion/ej2-schedule` package and then inject it using the `Schedule.Inject(ICalendarExport)` method.
 
 The following code example shows how the Scheduler events are exported to a calendar (.ics) file by making use of the [`exportToICalendar`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoicalendar) public method.
 
@@ -279,6 +310,9 @@ The following code example shows how the Scheduler events are exported to a cale
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/calendar-export-cs1/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/calendar-export-cs1/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -292,6 +326,9 @@ The following code example shows how the Scheduler events are exported to a cale
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/calendar-export-cs1/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/calendar-export-cs1/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -313,6 +350,9 @@ The following example downloads the iCal file with a name `ScheduleEvents.ics`.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/calendar-export-cs2/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/calendar-export-cs2/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/calendar-export-cs2" %}
@@ -326,6 +366,9 @@ The following example downloads the iCal file with a name `ScheduleEvents.ics`.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/calendar-export-cs2/index.html %}
 {% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/calendar-export-cs2/es5-datasource.js %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/schedule/calendar-export-cs2" %}
@@ -333,9 +376,9 @@ The following example downloads the iCal file with a name `ScheduleEvents.ics`.
 
 ## Import events from other calendars
 
-The events from external calendars (ICS files) can be imported into Scheduler by using the [`importICalendar`](https://ej2.syncfusion.com/documentation/api/schedule#importicalendar) method. This method accepts the `blob object` of an .ics file to be imported, as a mandatory argument.
+Events from external calendars (ICS files) can be imported into Scheduler using the [`importICalendar`](https://ej2.syncfusion.com/documentation/api/schedule#importicalendar) method. This method accepts the `blob object` of an .ics file to be imported as a mandatory argument.
 
-> To import an ICS file containing events into Scheduler, you need to first import the `ICalendarImport` module from `@syncfusion/ej2-schedule` package and then inject it using the `Schedule.Inject(ICalendarImport)` method.
+> To import an ICS file containing events into Scheduler, first import the `ICalendarImport` module from the `@syncfusion/ej2-schedule` package and then inject it using the `Schedule.Inject(ICalendarImport)` method.
 
 The following example shows how to import an ICS file into Scheduler, using the [`importICalendar`](https://ej2.syncfusion.com/documentation/api/schedule#importicalendar) method.
 
@@ -347,6 +390,9 @@ The following example shows how to import an ICS file into Scheduler, using the 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/calendar-import-cs1/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/calendar-import-cs1/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -360,6 +406,9 @@ The following example shows how to import an ICS file into Scheduler, using the 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/calendar-import-cs1/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/calendar-import-cs1/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -388,6 +437,9 @@ You can print the Schedule element with the current view by using the [`print`](
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/print-cs1/index.html %}
 {% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/print-cs1/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/schedule/print-cs1" %}
@@ -401,6 +453,9 @@ You can print the Schedule element with the current view by using the [`print`](
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/print-cs1/index.html %}
 {% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/print-cs1/es5-datasource.js %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/schedule/print-cs1" %}
@@ -408,7 +463,7 @@ You can print the Schedule element with the current view by using the [`print`](
 
 ### Using a print method with options
 
-You can print the Schedule element based on your needs using the `print` method by passing the print options used in this example with its values. The following example shows how to print the Scheduler using the `print` method by passing the options.
+You can print the Schedule element based on your needs using the [`print`](https://ej2.syncfusion.com/documentation/api/schedule#print) method by passing the print options used in this example with its values. The following example shows how to print the Scheduler using the [`print`](https://ej2.syncfusion.com/documentation/api/schedule#print) method by passing the options.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -418,6 +473,9 @@ You can print the Schedule element based on your needs using the `print` method 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/print-cs2/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/print-cs2/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -431,6 +489,9 @@ You can print the Schedule element based on your needs using the `print` method 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/schedule/print-cs2/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/print-cs2/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 

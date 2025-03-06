@@ -6,6 +6,7 @@ var scheduleObj = new ej.schedule.Schedule({
     eventSettings: { dataSource: scheduleData }
 });
 scheduleObj.appendTo('#Schedule');
+
 var uploadObj = new ej.inputs.Uploader({
     allowedExtensions: '.ics',
     cssClass: 'calendar-import',
@@ -17,4 +18,3 @@ var uploadObj = new ej.inputs.Uploader({
     }
 });
 uploadObj.appendTo('#ics-import');
-

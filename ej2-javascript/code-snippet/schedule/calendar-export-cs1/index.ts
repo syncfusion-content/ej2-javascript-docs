@@ -1,8 +1,6 @@
-
-
 import { Button } from '@syncfusion/ej2-buttons';
-import { Schedule, Day, Week, WorkWeek, Month, Agenda, ICalendarExport} from
-'@syncfusion/ej2-schedule';
+import { Schedule, Day, Week, WorkWeek, Month, Agenda, ICalendarExport } from
+    '@syncfusion/ej2-schedule';
 import { scheduleData } from './datasource.ts';
 
 Schedule.Inject(Day, Week, WorkWeek, Month, Agenda, ICalendarExport);
@@ -15,8 +13,7 @@ let scheduleObj: Schedule = new Schedule({
     eventSettings: { dataSource: scheduleData }
 });
 scheduleObj.appendTo('#Schedule');
+
 let buttonObj: Button = new Button();
 buttonObj.appendTo('#ics-export');
 buttonObj.element.onclick = () => scheduleObj.exportToICalendar();
-
-

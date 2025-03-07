@@ -7,7 +7,7 @@ var mentionObj = new ej.dropdowns.Mention({
         crossDomain: true
     }),
     //bind the Query instance to query property
-    query: new ej.data.Query().select(['FirstName', 'EmployeeID']).take(7),
+    query: new ej.data.Query().select(['FirstName', 'EmployeeID']).take(7).requiresCount(),
     fields: { text: 'FirstName', value: 'EmployeeID' },
     popupWidth: '250px'
 });

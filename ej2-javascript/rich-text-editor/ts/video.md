@@ -417,4 +417,4 @@ By configuring these options in the [quickToolbarSettings](https://helpej2.syncf
 ## See Also
 
 * [How to Use the Audio Editing Option in Toolbar Items](./audio)
-* [How to Use the Image Editing Option in Toolbar Items](../insert-images)
+* [How to Use the Image Editing Option in Toolbar Items](./insert-images)

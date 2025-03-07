@@ -60,11 +60,7 @@ var exportEditor = new ej.richtexteditor.RichTextEditor({
                         <p>Warm regards,</p>
                         <p>John Doe<br>Event Coordinator<br>ABC Company</p>`,
     toolbarSettings: {
-        items: [
-            'Undo', 'Redo', '|', 'ExportWord', 'ExportPdf', '|',
-            'Bold', 'Italic', 'Underline', 'StrikeThrough', '|',
-            'FontName', 'FontSize', 'FontColor', 'BackgroundColor', '|',
-            'Formats', 'Alignments', 'Blockquote', '|', 'NumberFormatList', 'BulletFormatList', '|', 'CreateLink', 'Image', 'CreateTable', '|', 'ClearFormat', 'SourceCode']
+        items: ['ExportWord', 'ExportPdf']
     },
     insertImageSettings: {
         saveUrl: hostUrl + 'api/RichTextEditor/SaveFile',

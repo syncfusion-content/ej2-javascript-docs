@@ -56,13 +56,13 @@ You can insert a video from either a hosted link or your local machine by clicki
 
 The insert video dialog opens with the `Embedded code` option selected by default. This allows you to insert a video using embedded code.
 
-![Javascript Rich Text Editor Embed URL Video insert](../images/javascript-richtexteditor-video-embed.png)
+![Javascript Rich Text Editor Embed URL Video insert](./images/javascript-richtexteditor-video-embed.png)
 
 ### Inserting Video via Web URL
 
 You can switch to the `Web URL` option by selecting the Web URL checkbox. Inserting a video using the Web URL option will add the video URL as the `src` attribute of the `<source>` tag.
 
-![Javascript Rich Text Editor Video insert](../images/javascript-richtexteditor-video-web.png)
+![Javascript Rich Text Editor Video insert](./images/javascript-richtexteditor-video-web.png)
 
 
 ## Uploading Video from Local Machine
@@ -340,9 +340,9 @@ public void SaveFiles(IList<IFormFile> UploadFiles)
 
 Once a video file has been inserted, you can replace it using the Rich Text Editor [quickToolbarSettings](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#quicktoolbarsettings) `videoReplace` option. You can replace the video file either by using the embedded code or the web URL and the browse option in the video dialog.
 
-![Javascript Rich Text Editor Embed Video Replace](../images/javascript-richtexteditor-video-replace-embed.png)
+![Javascript Rich Text Editor Embed Video Replace](./images/javascript-richtexteditor-video-replace-embed.png)
 
-![Javascript Rich Text Editor Web Video Replace](../images/javascript-richtexteditor-video-replace-web.png)
+![Javascript Rich Text Editor Web Video Replace](./images/javascript-richtexteditor-video-replace-web.png)
 
 ## Deleting Video
 
@@ -350,7 +350,7 @@ To remove a video from the Rich Text Editor content, select the video and click 
 
 Once you select the video from the local machine, the URL for the video will be generated. You can remove the video from the service location by clicking the cross icon.
 
-![Javascript Rich Text Editor Video delete](../images/javascript-richtexteditor-video-del.png)
+![Javascript Rich Text Editor Video delete](./images/javascript-richtexteditor-video-del.png)
 
 
 ## Adjusting Video Dimensions
@@ -359,7 +359,7 @@ Set the default width, minWidth, height, and minHeight of the video element when
 
 Through the [quickToolbarSettings](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#quicktoolbarsettings), you can also change the width and height using the `Change Size` button. Once you click on the button, the video size dialog will open as below. In that, specify the width and height of the video in pixels.
 
-![Javascript Rich Text Editor Video dimension](../images/javaScript-richtexteditor-video-size.png)
+![Javascript Rich Text Editor Video dimension](./images/javaScript-richtexteditor-video-size.png)
 
 ## Configuring Video Display Position
 
@@ -388,7 +388,7 @@ You can disable the resize action by configuring `false` for the [insertVideoSet
 
 > If the [minWidth](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/videoSettingsModel/#minwidth) and [minHeight](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/videoSettingsModel/#minheight) properties are configured, the video resizing does not shrink below the specified values.
 
-![Javascript Rich Text Editor video resize](../images/javascript-richtexteditor-video-resize.png)
+![Javascript Rich Text Editor video resize](./images/javascript-richtexteditor-video-resize.png)
 
 ## Customizing the Video Quick Toolbar
 
@@ -411,7 +411,7 @@ By configuring these options in the [quickToolbarSettings](https://helpej2.syncf
 
 * [Quick Toolbars in the Toolbar](./toolbar.md/#quick-toolbars)
 * [How to Use the Audio Editing Option in Toolbar Items](./audio)
-* [How to Use the Image Editing Option in Toolbar Items](./images)
+* [How to Use the Image Editing Option in Toolbar Items](./insert-images)
 
 
 

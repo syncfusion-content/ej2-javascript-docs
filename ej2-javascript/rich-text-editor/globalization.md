@@ -502,26 +502,3 @@ When RTL (right-to-left) support is enabled, the `e-rtl` class will be added to 
 
 {% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs5" %}
 {% endif %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## RTL
-
-Specifies the direction of the Rich Text Editor component using the [enableRtl]() property. For writing systems that require it like Arabic, Hebrew, etc., the direction can be switched to right-to-left.
-
-> It will not change based on the locale property.
-
-
-
-> [enableRtl](../api/rich-text-editor/#enablertl) property will not change based on [locale](../api/rich-text-editor/#locale) property.

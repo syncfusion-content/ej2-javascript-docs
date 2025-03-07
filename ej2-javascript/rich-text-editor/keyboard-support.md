@@ -274,11 +274,11 @@ These shortcuts provide additional functionalities like fullscreen mode.
 
 Customize the key config for the keyboard interaction of Rich Text Editor, using the [`keyConfig`](../api/rich-text-editor/#keyconfig) property.
 
-In the following sample, customize the cut, copy, and paste toolbar action with `Ctrl+1`, `Ctrl+2`, and `Ctrl+3`, respectively.
+In the below sample, you have customize the bold, italic, underline toolbar action with `ctrl+alt+b`, `ctrl+alt+i` and `ctrl+alt+u` respectively.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/rich-text-editor/getting-started-cs13/index.ts %}
 {% endhighlight %}

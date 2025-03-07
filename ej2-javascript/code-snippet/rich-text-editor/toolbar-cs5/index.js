@@ -1,8 +1,5 @@
-import { RichTextEditor, Toolbar, HtmlEditor } from '@syncfusion/ej2-richtexteditor';
-
-RichTextEditor.Inject(Toolbar, HtmlEditor);
-
-let defaultRTE: RichTextEditor = new RichTextEditor({
+// initialize Rich Text Editor component
+var defaultRTE = new ej.richtexteditor.RichTextEditor({
   height: 340,
   value: ` <p>The Rich Text Editor component is WYSIWYG ("what you see is what you get") editor that provides the best user experience to create and update the content.Users can format their content using standard toolbar commands.</p>
       <p><b>Key features:</b></p>
@@ -14,10 +11,10 @@ let defaultRTE: RichTextEditor = new RichTextEditor({
         <li><p>Supports third-party library integration.</p></li>
         <li><p>Allows preview of modified content before saving it.</p></li>
         <li><p>Handles images, hyperlinks, video, hyperlinks, uploads, etc.</p></li>
-        <li><p>Contains undo/redo manager.</p></li>
-        <li><p>Creates bulleted and numbered lists.</p></li>
         </ul>`,
   toolbarSettings: {
-    type: 'MultiRow'
+    type: 'Scrollable'
   }});
+// render initialized RichTeRich Text EditorxtEditor
 defaultRTE.appendTo('#defaultRTE');
+

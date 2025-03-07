@@ -1,6 +1,3 @@
-
-
-
 import { enableRipple } from '@syncfusion/ej2-base';
 enableRipple(true);
 

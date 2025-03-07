@@ -18,6 +18,6 @@ let defaultRTE: RichTextEditor = new RichTextEditor({
         <li><p>Creates bulleted and numbered lists.</p></li>
         </ul>`,
   toolbarSettings: {
-    type: 'MultiRow'
+    type: 'Scrollable'
   }});
 defaultRTE.appendTo('#defaultRTE');

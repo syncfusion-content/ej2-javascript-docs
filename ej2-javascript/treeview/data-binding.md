@@ -29,7 +29,7 @@ To bind local data to the TreeView, you can assign a JavaScript object array to 
 
 ### Hierarchical data
 
-TreeView can be populated with hierarchical data sources that contain nested arrays of JSON objects. You can directly assign hierarchical data to the [`dataSource`](../api/treeview/fieldsSettingsModel#datasource) property and map all the field members with corresponding keys from the hierarchical data to the `fields` property.
+TreeView can be populated with hierarchical data sources that contain nested arrays of JSON objects. You can directly assign hierarchical data to the [`dataSource`](../api/treeview/fieldsSettingsModel#datasource) property and map all the field members with corresponding keys from the hierarchical data to the [`fields`](../api/treeview#fields) property.
 
 In the following example, the **code**, **name**, and **countries** columns from hierarchical data have been mapped to the **id**, **text**, and **child** fields, respectively.
 
@@ -135,8 +135,7 @@ Adaptor is responsible for processing response and request from/to the service e
 
 * `WebMethodAdaptor`: Used to interact with web methods.
 
-In the following example, `ODataV4Adaptor` is  used to fetch data from remote services. The **EmployeeID**, **FirstName**, and **EmployeeID**
-columns from Employees table have been mapped to **id**, **text**, and **hasChildren** fields respectively for first level nodes.
+In the following example, `ODataV4Adaptor` is  used to fetch data from remote services. The **EmployeeID**, **FirstName**, and **EmployeeID** columns from Employees table have been mapped to **id**, **text**, and **hasChildren** fields respectively for first level nodes.
 
 The **OrderID**, **EmployeeID**, and **ShipName** columns from orders table have been mapped to **id**, **parentID**, and **text** fields respectively for second level nodes.
 

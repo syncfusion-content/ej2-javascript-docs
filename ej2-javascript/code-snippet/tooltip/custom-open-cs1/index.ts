@@ -6,7 +6,7 @@ let tooltip: Tooltip = new Tooltip({
 });
 tooltip.appendTo('#box');
 
-document.getElementById('box')?.addEventListener("dblclick", function () {
+(document.getElementById('box') as HTMLElement).addEventListener("dblclick", function () {
     if (this.getAttribute("data-tooltip-id")) {
         tooltip.close();
     } else {

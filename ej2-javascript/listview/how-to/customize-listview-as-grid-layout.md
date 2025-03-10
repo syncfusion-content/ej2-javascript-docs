@@ -29,9 +29,9 @@ In this section, we will discuss the rendering of list items in a grid layout.
 ```
 
 #default-list .e-list-item {
-        height: 100px;
-        width: 100px;
-        float: left;
+  height: 100px;
+  width: 100px;
+  float: left;
 }
 
 ```
@@ -129,7 +129,7 @@ ListView data can be filtered with the help of [`dataManager`](../../data/gettin
 
 let value = document.getElementById("filter").value;  //input text box value
 let filteredData = new DataManager(listdata).executeLocal(
-        new Query().where("text", "startswith", value, true)
+    new Query().where("text", "startswith", value, true)
 );
 
 listViewInstance.dataSource = filteredData;

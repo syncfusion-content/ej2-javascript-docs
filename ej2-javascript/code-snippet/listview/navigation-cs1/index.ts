@@ -16,7 +16,6 @@ let listObj: ListView = new ListView({
     //Set defined data to dataSource property
     dataSource: dataSource,
 
-
     //Set header title
     headerTitle: 'Search engines',
 

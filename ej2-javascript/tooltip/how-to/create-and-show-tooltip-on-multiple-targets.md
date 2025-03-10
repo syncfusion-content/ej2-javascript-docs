@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create and show tooltip on multiple targets in ##Platform_Name## Tooltip control | Syncfusion
+title: Show tooltip on multiple targets in ##Platform_Name## Tooltip control | Syncfusion
 description: Learn here all about Create and show tooltip on multiple targets in Syncfusion ##Platform_Name## Tooltip control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Create and show tooltip on multiple targets
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Create and show tooltip on multiple targets in ##Platform_Name## Tooltip control
 
-Tooltips can be created and shown on multiple targets within a container by defining specific target elements using the [`target`](../api/tooltip#target) property. This ensures that the Tooltip is initialized only on matched targets within the container.
+Tooltips can be created and shown on multiple targets within a container by defining specific target elements using the [`target`](../../api/tooltip#target) property. This ensures that the Tooltip is initialized only on matched targets within the container.
 
 In this implementation, the Tooltip content is assigned from the `title` attribute of the target element.
 

@@ -14,6 +14,7 @@ domainurl: ##DomainURL##
 ## Height and Width
 
 The Tooltip can be assigned either auto height and width values or specific pixel values. The [`width`](../api/tooltip#width) and [`height`](../api/tooltip#height) properties are used to set the outer dimensions of the Tooltip element. The default value for both properties is `auto`. They also accept string and number values indicating pixels.
+
 The following sample demonstrates how to set dimensions for the Tooltip.
 
 {% if page.publishingplatform == "typescript" %}

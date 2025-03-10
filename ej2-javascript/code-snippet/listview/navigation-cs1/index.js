@@ -14,7 +14,6 @@ var listObj = new ej.lists.ListView({
     //Set defined data to dataSource property
     dataSource: dataSource,
 
-
     //Set header title
     headerTitle: 'Search engines',
 

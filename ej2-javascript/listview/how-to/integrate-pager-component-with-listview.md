@@ -34,9 +34,9 @@ With the help of the [`query`](../../api/list-view/#query) property of ListView,
 The [`query`](../../api/list-view/#query) property helps in splitting the entire datasource based on our convenience. In the sample provided below, when clicking the next button in pager, it fetches the datasource based on page size and current page of Pager component.
 
 ```ts
- click: function () {
-        listObj.query= new Query().range((pager.currentPage - 1) * pager.pageSize, (pager.currentPage * pager.pageSize));
-    }
+click: function () {
+    listObj.query= new Query().range((pager.currentPage - 1) * pager.pageSize, (pager.currentPage * pager.pageSize));
+}
 ```
 
 Note: When `pageSize` isn't mentioned, it defaults to 12 records per page.

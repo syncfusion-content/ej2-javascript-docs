@@ -18,15 +18,13 @@ Drag and Drop in TreeView control was enabled by setting the [`allowDragAndDrop`
 ```ts
 
 let treeViewInstance: TreeView = new TreeView({
-
     fields: { dataSource: data, id: 'id', text: 'text' },
     allowDragAndDrop: true
-
 });
 
 ```
 
-The TreeView control displays hierarchical data in a tree-like structure. List items in the TreeView can be prevented from being dropped as children of another element by cancelling the [`nodeDragStop`](../../api/treeview/#nodedragstop) and [`nodeDragging`](../../api/treeview/#nodedragging) events:
+The TreeView control displays hierarchical data in a tree-like structure. List items in the TreeView can be prevented from being dropped as children of another element by canceling the [`nodeDragStop`](../../api/treeview/#nodedragstop) and [`nodeDragging`](../../api/treeview/#nodedragging) events:
 
 ```ts
 
@@ -34,8 +32,7 @@ let treeViewInstance: TreeView = new TreeView({
     fields: { dataSource: data, id: 'id', text: 'text' },
     allowDragAndDrop: true,
     nodeDragging: onDragStop,
-    nodeDragStop: onDragStop
-
+    nodeDragStop: onDragStop,
 });
 
 function onDragStop(args: DragAndDropEventArgs) {

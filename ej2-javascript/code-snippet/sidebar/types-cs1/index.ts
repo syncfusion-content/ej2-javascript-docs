@@ -23,14 +23,14 @@ let togglebtn: Button = new Button({ iconCss: 'e-icons e-menu', isToggle: true, 
         togglebtn.content = 'Open';
         defaultSidebar.hide();
     }
-})
+});
 
 // Close the Sidebar
 (document.querySelector('#close') as HTMLElement).addEventListener("click", () => {
     defaultSidebar.hide();
     (document.getElementById('toggle') as HTMLElement).classList.remove('e-active');
     togglebtn.content = 'Open'
-})
+});
 
 let typeOver: RadioButton = new RadioButton({ label: 'Over', name: 'state', change: Change });
 typeOver.appendTo('#over');

@@ -26,36 +26,33 @@ var button = new ej.buttons.Button();
 button.appendTo("#btn")
 
 document.getElementById('btn').addEventListener('click', function () {
-  document.getElementById('btn')?.addEventListener('click', function () {
-    var selectedItem = listviewInstance.getSelectedItems();
-    var valElement = document.getElementById('val');
+  var selectedItem = listviewInstance.getSelectedItems();
+  var valElement = document.getElementById('val');
 
-    if (!valElement) return;
+  if (!valElement) return;
 
-    valElement.innerHTML = '';
+  valElement.innerHTML = '';
 
-    // Create table rows in a fragment to minimize reflow
-    var fragment = document.createDocumentFragment();
+  // Create table rows in a fragment to minimize reflow
+  var fragment = document.createDocumentFragment();
 
-    // Create header row
-    var headerRow = document.createElement('tr');
-    ['Text', 'Id'].forEach(function (text) {
-      var th = document.createElement('th');
-      th.textContent = text;
-      headerRow.appendChild(th);
-    });
-    fragment.appendChild(headerRow);
+  // Create header row
+  var headerRow = document.createElement('tr');
+  ['Text', 'Id'].forEach(function (text) {
+    var th = document.createElement('th');
+    th.textContent = text;
+    headerRow.appendChild(th);
+  });
+  fragment.appendChild(headerRow);
 
-    // Populate table rows
-    selectedItem.data.forEach(function (item, index) {
-      var row = document.createElement('tr');
-      row.id = index.toString();
-      row.innerHTML = `<td>${selectedItem.text[index]}</td><td>${item.id}</td>`;
-      fragment.appendChild(row);
-    });
-
-    // Append all elements at once
-    valElement.appendChild(fragment);
+  // Populate table rows
+  selectedItem.data.forEach(function (item, index) {
+    var row = document.createElement('tr');
+    row.id = index.toString();
+    row.innerHTML = `<td>${selectedItem.text[index]}</td><td>${item.id}</td>`;
+    fragment.appendChild(row);
   });
 
+  // Append all elements at once
+  valElement.appendChild(fragment);
 });

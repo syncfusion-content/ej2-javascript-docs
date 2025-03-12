@@ -203,7 +203,7 @@ Find the code example to create parent - child relation between source and targe
         
 {% previewsample "page.domainurl/code-snippet/diagram/AutomaticLayout-cs17" %}
 
-![Layout drag and drop](../../images//drag-drop-layout.gif)
+![Layout drag and drop](../images//drag-drop-layout.gif)
 
 ## setNodeTemplate
 

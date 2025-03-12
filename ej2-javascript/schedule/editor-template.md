@@ -1,3 +1,16 @@
+---
+layout: post
+title: Editor template in ##Platform_Name## Scheduler control | Syncfusion
+description: Learn here all about Editor template in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
+platform: ej2-javascript
+control: Editor template 
+publishingplatform: ##Platform_Name##
+documentation: ug
+domainurl: ##DomainURL##
+---
+
+# Editor template in ##Platform_Name## Scheduler control
+
 Scheduler makes use of popups and dialog to display the required notifications, as well as includes an editor window with event fields for making the appointment creation and editing process easier. You can also easily customize the editor window and the fields present in it, and can also apply validations on those fields.
 
 ## Event editor

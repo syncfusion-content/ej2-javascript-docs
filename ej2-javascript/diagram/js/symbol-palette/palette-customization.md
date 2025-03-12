@@ -202,7 +202,7 @@ When hovering over symbols in the symbol palette, the default tooltip displays t
 Refer to the image below for an illustration of the tooltip behavior in the symbol palette.
 
 
-![SymmbolPaletteTooltip](../../images/symbol-palatte-tooltip.gif)
+![SymmbolPaletteTooltip](../images/symbol-palatte-tooltip.gif)
 
 ### Custom tooltip for symbols
 
@@ -240,7 +240,7 @@ The following code example demonstrates how to define different tooltips for the
 
 The following image illustrates the differentiation of tooltips displayed in the Symbol Palette and the Diagram.
 
-![SymmbolPaletteTooltip](../../images/different-tooltip.gif)
+![SymmbolPaletteTooltip](../images/different-tooltip.gif)
 
 The following code snippet will demonstrate how to define two different tooltip for symbol in the symbol palette and dropped node in the diagram canvas.
 

@@ -38,15 +38,15 @@ The following tables illustrates all the possible alignments visually with 'offs
 
 | Horizontal Alignment | Vertical Alignment | Output with Offset(0,0) |
 | -------- | -------- | -------- |
-| Left | Top | ![Left Top Label Alignment](../../images//Label1.png) |
-| Center | Top | ![Center Top Label Alignment](../../images//Label2.png) |
-| Right | Top |  ![Right Top Label Alignment](../../images//Label3.png) |
-| Left | Center | ![Left Center Label Alignment](../../images//Label4.png) |
-| Center | Center| ![Center Center Label Alignment](../../images//Label5.png) |
-| Right | Center | ![Right Center Label Alignment](../../images//Label6.png) |
-| Left | Bottom | ![Left Bottom Label Alignment](../../images//Label7.png) |
-| Center | Bottom | ![Center Bottom Label Alignment](../../images//Label8.png) |
-| Right |Bottom |![Right Bottom Label Alignment](../../images//Label9.png) |
+| Left | Top | ![Left Top Label Alignment](../images//Label1.png) |
+| Center | Top | ![Center Top Label Alignment](../images//Label2.png) |
+| Right | Top |  ![Right Top Label Alignment](../images//Label3.png) |
+| Left | Center | ![Left Center Label Alignment](../images//Label4.png) |
+| Center | Center| ![Center Center Label Alignment](../images//Label5.png) |
+| Right | Center | ![Right Center Label Alignment](../images//Label6.png) |
+| Left | Bottom | ![Left Bottom Label Alignment](../images//Label7.png) |
+| Center | Bottom | ![Center Bottom Label Alignment](../images//Label8.png) |
+| Right |Bottom |![Right Bottom Label Alignment](../images//Label9.png) |
 
 The following codes illustrates how to align annotations.
 
@@ -188,10 +188,10 @@ The following table shows the different text alignment.
 
 |Text Align|Output image|
 |-----|-----|
-|Right|![Text align right](../../images//textAlign-right.png)|
-|Left|![Text align left](../../images//textAlign-left.png)|
-|Center|![Text align center](../../images//textAlign-center.png)|
-|Justify|![Text align justify](../../images//textAlign-Justify.png)|
+|Right|![Text align right](../images//textAlign-right.png)|
+|Left|![Text align left](../images//textAlign-left.png)|
+|Center|![Text align center](../images//textAlign-center.png)|
+|Justify|![Text align justify](../images//textAlign-Justify.png)|
 
 ## Text Wrapping
 
@@ -210,9 +210,9 @@ When text overflows node boundaries, you can control it by using [`text wrapping
 
 | Value | Description | Image |
 | -------- | -------- | -------- |
-| No Wrap | Text will not be wrapped. | ![Label No Wrap](../../images//Wrap1.png) |
-| Wrap | Text-wrapping occurs, when the text overflows beyond the available node width. | ![Label Wrap](../../images//Wrap2.png) |
-| WrapWithOverflow (Default) | Text-wrapping occurs, when the text overflows beyond the available node width. However, the text may overflow beyond the node width in the case of a very long word. | ![Label WrapWith Overflow](../../images//Wrap3.png) |
+| No Wrap | Text will not be wrapped. | ![Label No Wrap](../images//Wrap1.png) |
+| Wrap | Text-wrapping occurs, when the text overflows beyond the available node width. | ![Label Wrap](../images//Wrap2.png) |
+| WrapWithOverflow (Default) | Text-wrapping occurs, when the text overflows beyond the available node width. However, the text may overflow beyond the node width in the case of a very long word. | ![Label WrapWith Overflow](../images//Wrap3.png) |
 
 ## Text overflow
 
@@ -226,9 +226,9 @@ Types of text overflow are shown in below table.
 
 |TextOverflow|output image|
 |-----|-----|
-|Clip|![Text Overflow Clip](../../images//text-overflow-clip.png)|
-|Ellipsis|![Text Overflow Ellipsis](../../images//text-overflow-ellipsis.png)|
-|Wrap(Default)|![Text Overflow Wrap](../../images//text-overflow-wrap.png)|
+|Clip|![Text Overflow Clip](../images//text-overflow-clip.png)|
+|Ellipsis|![Text Overflow Ellipsis](../images//text-overflow-ellipsis.png)|
+|Wrap(Default)|![Text Overflow Wrap](../images//text-overflow-wrap.png)|
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

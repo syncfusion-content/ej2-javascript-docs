@@ -30,7 +30,7 @@ To create a bezier segment, the [`segment.type`](../api/diagram/segments) is set
 
 * A segment control point of the Bezier connector is used to change the bezier vectors and points of the connector.
 
-![Bezier Segment edit Gif](../../../../images//Bezier-control.gif)
+![Bezier Segment edit Gif](../../../images//Bezier-control.gif)
 
 
 ### Control Points
@@ -55,7 +55,7 @@ The [`point1`](../api/diagram/bezierSegment#point1) and [`point2`](../api/diagra
         
 {% previewsample "page.domainurl/code-snippet/diagram/connectors-cs14" %}
 
-![Bezier Control point set by point1 and point2](../../../../images//Bezier-point1.gif)
+![Bezier Control point set by point1 and point2](../../../images//Bezier-point1.gif)
 
 #### Vector
 
@@ -72,7 +72,7 @@ The [`vector1`](../api/diagram/bezierSegment#vector1) and [`vector2`](../api/dia
         
 {% previewsample "page.domainurl/code-snippet/diagram/connectors-cs15" %}
 
-![Bezier Control point set by vector1 and vector1](../../../../images//Bezier-vector1.gif)
+![Bezier Control point set by vector1 and vector1](../../../images//Bezier-vector1.gif)
 
 
 
@@ -98,13 +98,13 @@ This feature allows users to choose whether to reset the control points of bezie
 
 #### With allow segment reset as true.
 
-![Allow Segment rest true](../../../../images//allowsegReset-true.gif)
+![Allow Segment rest true](../../../images//allowsegReset-true.gif)
 
 
 
 ##### With allow segment reset as false.
 
-![Allow Segment rest false](../../../../images//allowsegReset-false.gif)
+![Allow Segment rest false](../../../images//allowsegReset-false.gif)
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

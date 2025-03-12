@@ -49,4 +49,4 @@ You can render a radial tree layout without using DataSource. The following code
 
 N> If you want to use radial tree layout in diagram, you need to inject RadialTree in the diagram.
 
-![Radial tree](../../images//RadialTree.png)
+![Radial tree](../images//RadialTree.png)

@@ -40,7 +40,7 @@ The following code illustrates, how to set offset for the connector.
 
 The following image shows the position of the annotation with respect to different offsets.
 
-![PathAnnotation offset](../../images//diagram-pathAnnotation-offset.png)
+![PathAnnotation offset](../images//diagram-pathAnnotation-offset.png)
 
 ## Annotation alignment
 
@@ -94,7 +94,7 @@ The [`segmentAngle`](../api/diagram/pathAnnotationModel/#segmentangle) property 
 
 |Segment angle|Output|
 |-----|-----|
-|True|![Segment angle true](../../images//diagram-annotation-segmentAngle-true.png)|
-|False|![Segment angle false](../../images//diagram-annotation-segmentAngle-false.png)|
+|True|![Segment angle true](../images//diagram-annotation-segmentAngle-true.png)|
+|False|![Segment angle false](../images//diagram-annotation-segmentAngle-false.png)|
 
 

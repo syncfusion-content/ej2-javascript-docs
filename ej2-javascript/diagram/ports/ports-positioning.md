@@ -21,15 +21,15 @@ The following table shows the position of port within the shape.
 
 | Offset values | Output |
 | -------- | -------- |
-| (0,0) | ![Port offset (0,0)](../images/port0-0.png)|
-| (0,0.5) | ![Port offset (0,0.5)]../(images/port0-0.5.png) |
-| (0,1) | ![Port offset (0,1)](../images/port0-1.png) |
-| (0.5,0) | ![Port offset (0.5,0)](../images/port0.5-0.png) |
-| (0.5,0.5) |![Port offset (0.5,0.5)](../images/port0.5-0.5.png) |
-| (0.5,1) | ![Port offset (0.5,1)](../images/port0.5-1.png) |
-| (1,0) | ![Port offset (1,0)](../images/port1-0.png) |
-| (1,0.5) | ![Port offset (1,0.5)](../images/port1-0.5.png) |
-| (1,1) | ![Port offset (1,1)](../images/port1-1.png) |
+| (0,0) | ![Port offset - 0,0](../images/port0-0.png) |
+| (0,0.5) | ![Port offset - 0,0.5](../images/port0-0.5.png) |
+| (0,1) | ![Port offset - 0,1](../images/port0-1.png) |
+| (0.5,0) | ![Port offset - 0.5,0](../images/port0.5-0.png) |
+| (0.5,0.5) | ![Port offset 0.5,0.5](../images/port0.5-0.5.png) |
+| (0.5,1) | ![Port offset - 0.5,1](../images/port0.5-1.png) |
+| (1,0) | ![Port offset - 1,0](../images/port1-0.png) |
+| (1,0.5) | ![Port offset - 1,0.5](../images/port1-0.5.png) |
+| (1,1) | ![Port offset - 1,1](../images/port1-1.png) |
 
 ## Horizontal and vertical alignment
 

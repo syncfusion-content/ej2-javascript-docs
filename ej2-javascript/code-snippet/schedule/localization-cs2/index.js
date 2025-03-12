@@ -1,6 +1,6 @@
 loadCultureFiles();
 var localeTexts;
-var localeAjax = new ej.base.Ajax('./locale.json', 'GET', false);
+var localeAjax = new ej.base.Ajax('https://helpej2.syncfusion.com/javascript/documentation/code-snippet/schedule/localization-cs2/locale.json', 'GET', false);
 localeAjax.onSuccess = function (value) {
   localeTexts = value;
 };
@@ -8,7 +8,10 @@ localeAjax.send();
 ej.base.L10n.load(JSON.parse(localeTexts));
 
 function loadCultureFiles() {
-  var files = ['ca-gregorian.json', 'numbers.json', 'numberingSystems.json', 'timeZoneNames.json'];
+  var files = ['https://helpej2.syncfusion.com/javascript/documentation/code-snippet/schedule/localization-cs2/ca-gregorian.json',
+    'https://helpej2.syncfusion.com/javascript/documentation/code-snippet/schedule/localization-cs2/numbers.json',
+    'https://helpej2.syncfusion.com/javascript/documentation/code-snippet/schedule/localization-cs2/numberingSystems.json',
+    'https://helpej2.syncfusion.com/javascript/documentation/code-snippet/schedule/localization-cs2/timeZoneNames.json'];
   var loader = ej.base.loadCldr;
   var loadCulture = function (prop) {
     var val, ajax;

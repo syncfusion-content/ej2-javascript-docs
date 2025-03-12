@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Data binding in ##Platform_Name## ListView control
 
-The ListView control provides an option to load the data either from a local data source or remote data services. This can be done through the [`dataSource`](../../api/list-view/#datasource) property, which supports the data type of an array or [`DataManager`](../api/data/dataManager/).
+The ListView control provides an option to load the data either from a local data source or remote data services. This can be done through the [`dataSource`](../api/list-view/#datasource) property, which supports the data type of an array or [`DataManager`](../api/data/dataManager/).
 
 ListView supports different kinds of data services such as OData, OData V4, and Web API, and data formats like XML, JSON, and JSONP with the help of DataManager Adaptors.
 
@@ -116,7 +116,7 @@ In the following example, the role column is mapped with the text field.
 
 ## Bind to remote data
 
-The ListView control supports retrieving data from remote data services with the help of the DataManager control. The [`query`](../../api/list-view/#query) property allows fetching data and returning it to the ListView from the database.
+The ListView control supports retrieving data from remote data services with the help of the DataManager control. The [`query`](../api/list-view/#query) property allows fetching data and returning it to the ListView from the database.
 
 In the following sample, the first 10 employees from the ListView table are displayed.
 

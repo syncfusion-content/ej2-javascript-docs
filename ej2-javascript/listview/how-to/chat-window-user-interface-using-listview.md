@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Chat window user interface using ##Platform_Name## ListView control
 
-ListView can be customized to function as a chat window. To achieve this, use the ListView [`template`](../../api/list-view/#template) property alongside the [`Avatar`](../../avatar/getting-started) control.
+ListView can be customized to function as a chat window. To achieve this, use the ListView [`template`](../../api/list-view/#template) property alongside the [`Avatar`](../../avatar/) control.
 
 * The ListView template property is used to showcase the ListView as chat window.
 * Avatar control is used to design the image of contact person.

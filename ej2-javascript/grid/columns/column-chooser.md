@@ -223,3 +223,83 @@ Here is an example that demonstrates the usage of the `ignoreAccent` property to
 
 {% previewsample "page.domainurl/code-snippet/grid/columnchooser-diacriticsSearch-cs1" %}
 {% endif %}
+
+## Column Chooser Template in Syncfusion ##Platform_Name## Grid
+
+The Column Chooser Template feature allows full customization of the column chooser’s header, content, and footer, making it easier to manage column visibility. To enable the column chooser, set [showColumnChooser](../../api/grid/#showcolumnchooser) to **true** and add **ColumnChooser** to the [toolbar](../../api/grid#toolbar) property.
+
+To implement a custom column chooser template in the Grid, use the following properties:
+
+* **columnChooserSettings.headerTemplate** - Defines the header template of the column chooser.
+
+* **columnChooserSettings.template**- Defines the content template.
+
+* **columnChooserSettings.footerTemplate** - Defines the footer template.
+
+* **columnChooserSettings.renderCustomColumnChooser** -  Allows you to override the default column chooser UI with a fully customized layout.
+
+In this example, a Syncfusion TreeView component is rendered inside the column chooser. To use the TreeView component, install the Syncfusion TreeView package as described in the [documentation](../../treeview/getting-started). The `columnChooserSettings.template` property defines a element with the `id` set to **tree**, providing as a container for the TreeView component. The `columnChooserSettings.renderCustomColumnChooser` method initializes the TreeView with checkboxes and appends it to this template. Checkbox selection is handled using the [nodeClicked](../../api/treeview#nodeclicked) and [keyPress](../../api/treeview#keypress) events, which organize columns into **Order Details**, **Shipping Details**, and **Delivery Status**.
+
+The column chooser footer is customized using `columnChooserSettings.footerTemplate`, replacing the default buttons with customized **Apply** and **Close** buttons. The **Apply** button updates column visibility based on selection, while the **Close** button closes the column chooser via the `onClick` event. Additionally, the header is customized using `columnChooserSettings.headerTemplate` to include a title and an icon.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/column-chooser-template/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/column-chooser-template/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/column-chooser-template" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/column-chooser-template/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/column-chooser-template/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/column-chooser-template" %}
+{% endif %}
+
+## Enable and disable search option
+
+By default, the search option in the column chooser allows filtering specific columns from the Grid's column list.
+
+The search option is enabled by default in the column chooser. However, you can disable it by setting the `columnChooserSettings.enableSearching` property to **false**.
+
+The following example demonstrates how to enable or disable the search option dynamically using a [Switch](../../switch/getting-started) and its [change](../../api/switch#change) event in the Grid.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/columnchooser-enable-disable/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/columnchooser-enable-disable/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/columnchooser-enable-disable" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/columnchooser-enable-disable/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/columnchooser-enable-disable/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/columnchooser-enable-disable" %}
+{% endif %}

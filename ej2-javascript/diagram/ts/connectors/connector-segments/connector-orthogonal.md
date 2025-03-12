@@ -51,7 +51,7 @@ N> You need to mention the segment type as same as what you mentioned in connect
 {% previewsample "page.domainurl/code-snippet/diagram/connectors-cs9" %}
 
 
-![Orthogonal Segment edit Gif](../../../images//orthoSegEdit.gif)
+![Orthogonal Segment edit Gif](../../images//orthoSegEdit.gif)
 
 
 ## Avoid overlapping
@@ -75,18 +75,18 @@ The orthogonal connector can have any number of segments in between the source a
 
 | Shape name | Shape |
 |-------- | -------- |
-|Rhombus| ![Rhombus](../../../images//rhombus.png) |
-| Square | ![Square](../../../images//Square.png) |
-| Rectangle | ![Rectangle](../../../images//Rectangle.png) |
-| Ellipse |![Ellipse](../../../images//Ellipse.png) |
-|Arrow| ![Arrow](../../../images//Arrow.png) |
-| OpenArrow | ![OpenArrow](../../../images//OpenArrow.png) |
-| Circle |![Circle](../../../images//Circle.png) |
-| Fletch|![Fletch](../../../images//Fletch.png) |
-|OpenFetch| ![OpenFetch](../../../images//OpenFetch.png) |
-| IndentedArrow | ![IndentedArrow](../../../images//IndentedArrow.png) |
-| OutdentedArrow | ![OutdentedArrow](../../../images//OutdentedArrow.png) |
-| DoubleArrow |![DoubleArrow](../../../images//DoubleArrow.png) |
+|Rhombus| ![Rhombus](../../images//rhombus.png) |
+| Square | ![Square](../../images//Square.png) |
+| Rectangle | ![Rectangle](../../images//Rectangle.png) |
+| Ellipse |![Ellipse](../../images//Ellipse.png) |
+|Arrow| ![Arrow](../../images//Arrow.png) |
+| OpenArrow | ![OpenArrow](../../images//OpenArrow.png) |
+| Circle |![Circle](../../images//Circle.png) |
+| Fletch|![Fletch](../../images//Fletch.png) |
+|OpenFetch| ![OpenFetch](../../images//OpenFetch.png) |
+| IndentedArrow | ![IndentedArrow](../../images//IndentedArrow.png) |
+| OutdentedArrow | ![OutdentedArrow](../../images//OutdentedArrow.png) |
+| DoubleArrow |![DoubleArrow](../../images//DoubleArrow.png) |
 
  You can customize the style of the thumb shape by overriding the class e-orthogonal-thumb.
 
@@ -101,7 +101,7 @@ The orthogonal connector can have any number of segments in between the source a
         
 {% previewsample "page.domainurl/code-snippet/diagram/connectors-cs12" %}
 
-![Segment Thumb Shape](../../../images//thumbshape.png)
+![Segment Thumb Shape](../../images//thumbshape.png)
 
 Use the following CSS to customize the segment thumb shape.
 

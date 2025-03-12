@@ -55,4 +55,4 @@ You can also decide the branch for mind map using [`getBranch`](../api/diagram/l
         
 {% previewsample "page.domainurl/code-snippet/diagram/AutomaticLayout-mindmap" %}
 
-![Mind map layout](../../images//mindmap.png)
+![Mind map layout](../images//mindmap.png)

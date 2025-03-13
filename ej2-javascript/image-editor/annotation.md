@@ -51,13 +51,13 @@ The [`drawText`](https://ej2.syncfusion.com/javascript/documentation/api/image-e
 
 * transformCollection: Specifies the transform collection of the text annotation.
 
-By utilizing the [`drawText`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawtext) method with these parameters, you can precisely position and customize text annotations within the image. This provides the flexibility to add labels, captions, or other text elements with specific font styles, sizes, and colors, enhancing the visual presentation and clarity of the image. 
+By utilizing the `drawText` method with these parameters, you can precisely position and customize text annotations within the image. This provides the flexibility to add labels, captions, or other text elements with specific font styles, sizes, and colors, enhancing the visual presentation and clarity of the image. 
 
 We have used the [`getImageDimension`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getimagedimension) method to obtain the current dimensions of an image, including its `clientX`, `clientY`, width, and height. Based on the `clientX` and `clientY` values, the user can precisely define the position for drawing annotations such as rectangles, ellipses, and more. 
 
-Here is an example of adding a text in a button click using [`drawText`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawtext) method. 
+Here is an example of adding a text in a button click using `drawText` method. 
 
-In the following example, you can using the [`drawText`](../../api/image-editor/#drawtext) method in the button click event.
+In the following example, you can using the `drawText` method in the button click event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -92,7 +92,7 @@ The [`drawText`](https://ej2.syncfusion.com/javascript/documentation/api/image-e
 
 We have used the [`getImageDimension`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getimagedimension) method to obtain the current dimensions of an image, including its `clientX`, `clientY`, width, and height. Based on the `clientX` and `clientY` values, the user can precisely define the position for drawing annotations such as rectangles, ellipses, and more. 
 
-In the following example, you can using the [`drawText`](../../api/image-editor/#drawtext) method in the button click event.
+In the following example, you can using the `drawText` method in the button click event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -125,13 +125,13 @@ In the following example, you can using the [`drawText`](../../api/image-editor/
 
 The [`deleteShape`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#deleteshape) method in the Image Editor allows you to remove a text annotation from the image editor. To use this method, you need to pass the [`shapeId`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapeid) of the annotation as a parameter.
 
-The [`shapeId`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapeid) is a unique identifier assigned to each text annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired text element. By specifying the [`shapeId`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapeid) associated with the text annotation you want to remove, you can effectively delete it from the image editor.
+The `shapeId` is a unique identifier assigned to each text annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired text element. By specifying the `shapeId` associated with the text annotation you want to remove, you can effectively delete it from the image editor.
 
 To retrieve the inserted text annotations, you can utilize the [`getShapeSetting`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getshapesetting) method, which provides a collection of annotations represented by [`ShapeSettings`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/shapeSettings/). This method allows you to access and work with the annotations that have been inserted into the image.
 
 We have used the [`getImageDimension`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getimagedimension) method to obtain the current dimensions of an image, including its `clientX`, `clientY`, width, and height. Based on the `clientX` and `clientY` values, the user can precisely define the position for drawing annotations such as rectangles, ellipses, and more. 
 
-In the following example, the [`deleteShape`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#deleteshape) method is used in the button click event.
+In the following example, the `deleteShape` method is used in the button click event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -164,7 +164,7 @@ In the following example, the [`deleteShape`](https://ej2.syncfusion.com/javascr
 
 The [`shapeChanging`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapechanging) event in the Image Editor control is triggered when a text annotation is being modified or changed through the toolbar interaction. This event provides an opportunity to make alterations to the text's color and font family by adjusting the relevant properties. 
 
-By leveraging the [`shapeChanging`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapechanging) event, you can enhance the customization options for text annotations and provide a more tailored and interactive experience within the Image Editor control. 
+By leveraging the `shapeChanging` event, you can enhance the customization options for text annotations and provide a more tailored and interactive experience within the Image Editor control. 
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -197,7 +197,7 @@ By leveraging the [`shapeChanging`](https://ej2.syncfusion.com/javascript/docume
 
 The [`fontFamily`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#fontFamily) property in the Image Editor control provides the flexibility to incorporate supplementary font families, expanding your options for text styling and ensuring a broader range of fonts can be utilized within your design or content. The font value will be determined by the 'id' property.
 
-By leveraging the [`fontFamily`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#fontFamily) property, you can elevate the scope of customization for text annotations, enriching the user experience within the Image Editor control. This enhancement offers a more personalized and dynamic interaction, empowering users to tailor their text styles for a truly engaging editing experience.
+By leveraging the `fontFamily` property, you can elevate the scope of customization for text annotations, enriching the user experience within the Image Editor control. This enhancement offers a more personalized and dynamic interaction, empowering users to tailor their text styles for a truly engaging editing experience.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -232,7 +232,7 @@ The Freehand Draw annotation tool in the Image Editor control is a versatile fea
 
 The [`freehandDraw`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#freehanddraw)method is used to enable or disable the freehand drawing option in the Image Editor control. 
 
-Here is an example of using the [`freeHandDraw`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#freehanddraw) method in a button click event.
+Here is an example of using the `freeHandDraw` method in a button click event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -265,7 +265,7 @@ Here is an example of using the [`freeHandDraw`](https://ej2.syncfusion.com/java
 
 The [`shapeChanging`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapechanging) event in the Image Editor control is triggered when a freehand annotation is being modified or changed through the toolbar interaction. This event provides an opportunity to make alterations to the freehand annotation's color and stroke width by adjusting the relevant properties.
 
-By leveraging the [`shapeChanging`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapechanging) event, you can enhance the customization options for freehand annotations and provide a more tailored and interactive experience within the Image Editor control.
+By leveraging the `shapeChanging` event, you can enhance the customization options for freehand annotations and provide a more tailored and interactive experience within the Image Editor control.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -298,11 +298,11 @@ By leveraging the [`shapeChanging`](https://ej2.syncfusion.com/javascript/docume
 
 The [`deleteShape`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#deleteshape) method in the Image Editor allows you to remove a freehand annotation from the image editor. To use this method, you need to pass the [`shapeId`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapeid) of the annotation as a parameter. 
 
-The [`shapeId`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapeid) is a unique identifier assigned to each freehand annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired annotation. By specifying the [`shapeId`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapeid) associated with the freehand annotation you want to remove, you can effectively delete it from the image editor.
+The `shapeId` is a unique identifier assigned to each freehand annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired annotation. By specifying the `shapeId` associated with the freehand annotation you want to remove, you can effectively delete it from the image editor.
 
 To retrieve the inserted freehand annotations, you can utilize the [`getShapeSetting`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getshapesetting) method, which provides a collection of annotations represented by [`ShapeSettings`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/shapeSettings/). This method allows you to access and work with the annotations that have been inserted into the image.
 
-In the following example, the [`deleteShape`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#deleteshape) method is used in the button click event.
+In the following example, the `deleteShape` method is used in the button click event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -339,7 +339,7 @@ The Image Editor control provides the ability to add shape annotations to an ima
 
 The [`drawRectangle`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawrectangle) method is used to insert a rectangle to the Image Editor control. Rectangle annotations are valuable tools for highlighting, emphasizing, or marking specific areas of an image to draw attention or provide additional context.
 
-The [`drawRectangle`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawrectangle) method in the Image Editor control takes ten parameters to define the properties of the rectangle annotation:
+The `drawRectangle` method in the Image Editor control takes ten parameters to define the properties of the rectangle annotation:
 
 * x: Specifies the x-coordinate of the top-left corner of the rectangle. 
 
@@ -363,7 +363,7 @@ The [`drawRectangle`](https://ej2.syncfusion.com/javascript/documentation/api/im
 
 The [`drawEllipse`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawellipse) method is used to insert a ellipse to the Image Editor control. Ellipse annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
 
-The [`drawEllipse`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawellipse) method in the Image Editor control takes seven parameters to define the properties of the ellipse annotation: 
+The `drawEllipse` method in the Image Editor control takes seven parameters to define the properties of the ellipse annotation: 
 
 * x: Specifies the x-coordinate of the center of the ellipse. 
 
@@ -385,7 +385,7 @@ The [`drawEllipse`](https://ej2.syncfusion.com/javascript/documentation/api/imag
 
 The [`drawLine`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawline) method is used to insert a line to the Image Editor control. Line annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
 
-The [`drawLine`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawline) method in the Image Editor control takes seven parameters to define the properties of the ellipse annotation: 
+The `drawLine` method in the Image Editor control takes seven parameters to define the properties of the ellipse annotation: 
 
 * startX - Specifies the x-coordinate of the start point. 
 
@@ -404,7 +404,7 @@ The [`drawLine`](https://ej2.syncfusion.com/javascript/documentation/api/image-e
 
 The [`drawArrow`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawarrow) method is used to insert a arrow to the Image Editor control. Arrow annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
 
-The [`drawArrow`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawarrow) method in the Image Editor control takes seven parameters to define the properties of the ellipse annotation: 
+The `drawArrow` method in the Image Editor control takes seven parameters to define the properties of the ellipse annotation: 
 
 * startX - Specifies the x-coordinate of the start point. 
 
@@ -425,7 +425,7 @@ The [`drawArrow`](https://ej2.syncfusion.com/javascript/documentation/api/image-
 * isSelected: Specifies to show the arrow in the selected state.
 
 The [`drawPath`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawpath) method is used to insert a path to the Image Editor control. Path annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
-The [`drawPath`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawpath) method in the Image Editor control takes three parameters to define the properties of the ellipse annotation: 
+The `drawPath` method in the Image Editor control takes three parameters to define the properties of the ellipse annotation: 
 
 * points - Specifies collection of x and y coordinates as ImageEditorPoint to draw a path. 
 
@@ -470,7 +470,7 @@ Here is an example of inserting rectangle, ellipse, arrow, path, and line in a b
 
 The [`deleteShape`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#deleteshape) method in the Image Editor allows you to remove a shape annotation from the image editor. To use this method, you need to pass the [`shapeId`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapeid) of the annotation as a parameter. 
 
-The [`shapeId`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapeid) is a unique identifier assigned to each shape annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired annotation. By specifying the [`shapeId`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapeid) associated with the shape annotation you want to remove, you can effectively delete it from the image editor.
+The `shapeId` is a unique identifier assigned to each shape annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired annotation. By specifying the `shapeId` associated with the shape annotation you want to remove, you can effectively delete it from the image editor.
 
 To retrieve the inserted shape annotations, you can utilize the [`getShapeSetting`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getshapesetting) method, which provides a collection of annotations represented by [`ShapeSettings`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/shapeSettings/). This method allows you to access and work with the annotations that have been inserted into the image.
 
@@ -542,7 +542,7 @@ The image annotation feature in the Image Editor provides the capability to add 
 
 The [`drawImage`](https://ej2.syncfusion.com/documentation/api/image-editor/#drawimage) method serves the purpose of inserting an image into the Image Editor control, allowing for image annotations to be added. These image annotations can be used for various purposes, such as adding logos, watermarks, or decorative elements to the image.
 
-The [`drawImage`](https://ej2.syncfusion.com/documentation/api/image-editor/#drawimage) method in the Image Editor control takes six parameters to define the properties of the image annotation:
+The `drawImage` method in the Image Editor control takes six parameters to define the properties of the image annotation:
 
 * data: Specified the image data or url of the image to be inserted.
 

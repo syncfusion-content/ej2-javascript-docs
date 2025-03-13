@@ -21,5 +21,5 @@ document.getElementById('contrastClick').onclick = function() {
 	imageEditorObj.finetuneImage('Contrast', 30);
 }
 document.getElementById('saturationClick').onclick = function() {
-	imageEditorObj.finetuneImage('Contrast', 30);
+	imageEditorObj.finetuneImage('Saturation', 100);
 }

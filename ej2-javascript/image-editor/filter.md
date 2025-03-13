@@ -19,7 +19,7 @@ The [`applyImageFilter`](https://ej2.syncfusion.com/javascript/documentation/api
 
 * filterOption - Specifies the filter options to the image.
 
-In the following example, you can using the applyImageFilter method in the button click event.
+In the following example, you can using the `applyImageFilter` method in the button click event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -48,7 +48,7 @@ In the following example, you can using the applyImageFilter method in the butto
 {% previewsample "page.domainurl/code-snippet/image-editor/filter-cs1" %}
 {% endif %}
 
-## Image Filtering Event
+## Image filtering event
 
 The [`imageFiltering`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#imageFiltering) event is triggered when applying filtering on the image. This event is passed an object that contains information about the filtering event, such as the type of filtering. 
 

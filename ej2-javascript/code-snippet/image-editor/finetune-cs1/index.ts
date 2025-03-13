@@ -26,5 +26,5 @@ imageEditorObj.appendTo('#imageeditor');
     imageEditorObj.finetuneImage(ImageFinetuneOption.Contrast, 30);
 };
 (document.getElementById('saturationClick') as HTMLElement).onclick = function () {
-    imageEditorObj.finetuneImage(ImageFinetuneOption.Saturation, 30);
+    imageEditorObj.finetuneImage(ImageFinetuneOption.Saturation, 100);
 }

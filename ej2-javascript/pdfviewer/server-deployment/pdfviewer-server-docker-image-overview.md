@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pdfviewer server docker image overview in ##Platform_Name## Pdfviewer control | Syncfusion
+title: PDF Viewer Server Docker Image in ##Platform_Name## | Syncfusion
 description: Learn here all about Pdfviewer server docker image overview in Syncfusion ##Platform_Name## Pdfviewer control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Pdfviewer server docker image overview 
@@ -20,7 +20,7 @@ PDF Viewer control is supported in the JavaScript, Angular, React, Vue, ASP.NET 
 
 ## Prerequisites
 
-Have [`Docker`](https://www.docker.com/products/container-runtime#/download) installed in your environment:
+Have [`Docker`](https://www.docker.com/products/container-runtime/#/download) installed in your environment:
 
 * On Windows, install [`Docker for Windows`](https://hub.docker.com/editions/community/docker-ce-desktop-windows).
 
@@ -135,4 +135,4 @@ services:
     - "6001:80"
 ```
 
-Refer to these getting started pages to create a PDF Viewer in [`Angular`](https://ej2.syncfusion.com/angular/documentation/pdfviewer/getting-started/), [`React`](https://ej2.syncfusion.com/react/documentation/pdfviewer/getting-started/), [`Vue`](https://ej2.syncfusion.com/vue/documentation/pdfviewer/getting-started/), [`ASP.NET MVC`](https://ej2.syncfusion.com/aspnetmvc/documentation/pdfviewer/getting-started/), [`ASP.NET Core`](https://ej2.syncfusion.com/aspnetcore/documentation/pdfviewer/getting-started/), and [`Blazor`](https://blazor.syncfusion.com/documentation/pdfviewer/getting-started/server-side-application/).
+Refer to these getting started pages to create a PDF Viewer in [`Angular`](https://ej2.syncfusion.com/angular/documentation/pdfviewer/getting-started), [`React`](https://ej2.syncfusion.com/react/documentation/pdfviewer/getting-started), [`Vue`](https://ej2.syncfusion.com/vue/documentation/pdfviewer/getting-started), [`ASP.NET MVC`](https://ej2.syncfusion.com/aspnetmvc/documentation/pdfviewer/getting-started), [`ASP.NET Core`](https://ej2.syncfusion.com/aspnetcore/documentation/pdfviewer/getting-started), and [`Blazor`](https://blazor.syncfusion.com/documentation/pdfviewer/getting-started/server-side-application).

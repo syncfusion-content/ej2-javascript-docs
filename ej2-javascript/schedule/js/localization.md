@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Schedule control | Syncfusion
-description: Learn here all about Localization in Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## Scheduler control | Syncfusion
+description: Learn here all about Localization in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Localization 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in ##Platform_Name## Schedule control
+# Localization in ##Platform_Name## Scheduler control
 
 The Scheduler integrates different date-time formats and cultures, which allows it to function globally, thus meeting the diverse needs of different regions.
 
@@ -195,7 +195,7 @@ L10n.load({
 
 ## Setting date format
 
-Scheduler can be used with all valid date formats and by default it follows the universal date format "MM/dd/yyyy". If the `dateFormat` property is not specified particularly, then it will work based on the locale that is assigned to the Scheduler. As the default locale applied on Scheduler is "en-US", this makes it to follow the "MM/dd/yyyy" pattern.
+Scheduler can be used with all valid date formats. By default, it follows the universal date format "MM/dd/yyyy". If the [`dateFormat`](https://ej2.syncfusion.com/javascript/documentation/api/schedule/#dateformat) property is not specified, the Scheduler will use the format based on the assigned locale. Since the default locale is "en-US", it follows the "MM/dd/yyyy" pattern by default.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -210,9 +210,9 @@ Scheduler can be used with all valid date formats and by default it follows the 
 
 ## Setting the time format
 
-Time formats is a way of representing the time value in different string formats in the Scheduler. By default, the time mode of the Scheduler can be either 12 or 24 hours format which is completely based on the `locale` set to the Scheduler. Since the default `locale` value of the Scheduler is en-US, the time mode will be set to 12 hours format automatically. You can also customize the format by using the `timeFormat` property. To know more about the time format standards, refer to the [Date and Time Format](https://ej2.syncfusion.com/javascript/documentation/common/internationalization#custom-formats) section.
+Time formats represent time values in different string formats in the Scheduler. By default, the Scheduler's time mode can be either 12 or 24 hours format, which is based on the [`locale`](https://ej2.syncfusion.com/documentation/api/schedule/#locale) setting. Since the default locale value is en-US, the time mode is automatically set to 12-hour format. You can customize this format using the [`timeFormat`](https://ej2.syncfusion.com/documentation/api/schedule/#timeformat)property. For more information about time format standards, refer to the [`Date and Time Format`](https://ej2.syncfusion.com/documentation/common/internationalization#custom-formats) section section.
 
-The following example demonstrates the Scheduler component in 24 hours format.
+The following example demonstrates the Scheduler control in 24 hours format.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -229,7 +229,7 @@ The following example demonstrates the Scheduler component in 24 hours format.
 
 ## Displaying Scheduler in RTL mode
 
-The Scheduler layout and its behavior can be changed as per the common RTL (Right to Left) conventions by setting `enableRtl` to `true`. By doing so, the Scheduler will display its usual layout from right to left. It's default value is `false`.
+The Scheduler layout and behavior can be changed to follow RTL (Right to Left) conventions by setting [`enableRtl`](https://ej2.syncfusion.com/documentation/api/schedule/#enablertl) to true. This will display the Scheduler layout from right to left. The default value is `false`.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

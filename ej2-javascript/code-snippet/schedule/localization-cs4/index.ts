@@ -1,9 +1,8 @@
-
-
 import { Schedule, Day, Week, WorkWeek, Month } from '@syncfusion/ej2-schedule';
 import { scheduleData } from './datasource.ts';
 
 Schedule.Inject(Day, Week, WorkWeek, Month);
+
 let scheduleObj: Schedule = new Schedule({
     height: '550px',
     timeFormat: 'HH:mm',
@@ -12,5 +11,3 @@ let scheduleObj: Schedule = new Schedule({
     eventSettings: { dataSource: scheduleData }
 });
 scheduleObj.appendTo('#Schedule');
-
-

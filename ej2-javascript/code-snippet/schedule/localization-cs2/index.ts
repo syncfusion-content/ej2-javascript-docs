@@ -1,9 +1,6 @@
-
-
 import { Schedule, Day, Week, WorkWeek, Month } from '@syncfusion/ej2-schedule';
 import { L10n, loadCldr } from '@syncfusion/ej2-base';
 import { scheduleData } from './datasource.ts';
-import { loadCldr} from '@syncfusion/ej2-base';
 import frNumberData from '@syncfusion/ej2-cldr-data/main/fr-CH/numbers.json';
 import frtimeZoneData from '@syncfusion/ej2-cldr-data/main/fr-CH/timeZoneNames.json';
 import frGregorian from '@syncfusion/ej2-cldr-data/main/fr-CH/ca-gregorian.json';
@@ -22,5 +19,3 @@ let scheduleObj: Schedule = new Schedule({
   eventSettings: { dataSource: scheduleData }
 });
 scheduleObj.appendTo('#Schedule');
-
-

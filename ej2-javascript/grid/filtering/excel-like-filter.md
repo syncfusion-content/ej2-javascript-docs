@@ -237,6 +237,39 @@ The following example demonstrates how to remove the context menu option in the 
 {% previewsample "page.domainurl/code-snippet/grid/excel-filter-cs5" %}
 {% endif %}
 
+## Bind custom remote datasource for excel/checkbox filtering
+
+The Syncfusion ##Platform_Name## Grid allows you to dynamically change the filter data source for the Excel or checkbox filter module using custom remote data as well. This can be done by either assigning a custom remote [DataManager](../../data/getting-started) as the [dataSource](../../api/grid/#datasource) or by fetching the data initially and storing it in a global variable. This data can then be bound directly to the filter module's `dataSource` in the [actionBegin](../../api/grid/#actionbegin) event for the `filterBeforeOpen` [requestType](../../api/grid/filterEventArgs/#requesttype), as detailed in our [knowledge base](https://support.syncfusion.com/kb/article/10065/how-to-change-the-data-source-for-checkbox-filter-popup-in-grid).
+
+The following example demonstrates how to dynamically change the remote custom data source for all columns in the Excel or checkbox filter dialog using a `DataManager` with `WebApiAdaptor`.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/filtering-custom-datasource-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/filtering-custom-datasource-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/filtering-custom-datasource-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/filtering-custom-datasource-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/filtering-custom-datasource-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/filtering-custom-datasource-cs1" %}
+{% endif %}
+
 ## Hide sorting option in filter dialog
 
 The Excel-like filter dialog in the Syncfusion ##Platform_Name## Grid includes built-in sorting options (ascending and descending) by default. To hide these options, set the **display** property of the following CSS classes to **none**, which will prevent the sorting options from appearing in the filter dialog:

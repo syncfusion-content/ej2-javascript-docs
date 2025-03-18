@@ -15,13 +15,112 @@ domainurl: ##DomainURL##
 
 You can use the `transcript` property to retrieve the transcribed text from the spoken text. This property allows to display the transcribed text once the speech recognition process is started.
 
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/speech-to-text/speechRecognition/transcript/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/speech-to-text/speechRecognition/transcript/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/speech-to-text/speechRecognition/transcript/index.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/transcript" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/speech-to-text/speechRecognition/transcript/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/speech-to-text/speechRecognition/transcript/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/speech-to-text/speechRecognition/transcript/index.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/transcript" %}
+{% endif %}
+
 ## Setting language
 
 You can use the `lang` property to specify the language for speech recognition. Setting this property ensures that the recognition engine interprets the spoken words correctly based on the specified locale such as `en-US` for American `English`, `fr-FR` for `French`, and more.
 
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/speech-to-text/speechRecognition/language/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/speech-to-text/speechRecognition/language/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/speech-to-text/speechRecognition/language/index.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/language" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/speech-to-text/speechRecognition/language/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/speech-to-text/speechRecognition/language/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/speech-to-text/speechRecognition/language/index.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/language" %}
+{% endif %}
+
 ## Allowing interim results
 
 You can use the `allowInterimResults` property to enable or disable interim results. When set to `true`, the recognized speech will be displayed in real time as words are spoken. When set to `false`, only final results will be displayed after recognition is complete. By default, the value is `true`.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/speech-to-text/speechRecognition/interimResults/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/speech-to-text/speechRecognition/interimResults/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/speech-to-text/speechRecognition/interimResults/index.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/interimResults" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/speech-to-text/speechRecognition/interimResults/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/speech-to-text/speechRecognition/interimResults/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/speech-to-text/speechRecognition/interimResults/index.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/interimResults" %}
+{% endif %}
 
 ## Managing listening state
 
@@ -39,13 +138,114 @@ It is actively listening which captures and transcribes speech with a stop icon 
 
 Denotes the speech recognition has ended, and no further speech is being processed.
 
+Below sample demonstrates the usage of `listeningState` property.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/speech-to-text/speechRecognition/listeningState/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/speech-to-text/speechRecognition/listeningState/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/speech-to-text/speechRecognition/listeningState/index.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/listeningState" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/speech-to-text/speechRecognition/listeningState/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/speech-to-text/speechRecognition/listeningState/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/speech-to-text/speechRecognition/listeningState/index.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/listeningState" %}
+{% endif %}
+
 ## Show or hide tooltip
 
 You can use the `showTooltip` property to specify the tooltip text to be displayed on hovering the SpeechToText button. By default, the value is `true`.
 
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/speech-to-text/speechRecognition/showTooltip/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/speech-to-text/speechRecognition/showTooltip/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/speech-to-text/speechRecognition/showTooltip/index.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/showTooltip" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/speech-to-text/speechRecognition/showTooltip/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/speech-to-text/speechRecognition/showTooltip/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/speech-to-text/speechRecognition/showTooltip/index.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/showTooltip" %}
+{% endif %}
+
 ## Setting disabled
 
 You can use the `disabled` property to disable the SpeechToText, preventing user interaction when set to `true`. By default, the value is `false`.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/speech-to-text/speechRecognition/disabled/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/speech-to-text/speechRecognition/disabled/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/speech-to-text/speechRecognition/disabled/index.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/disabled" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/speech-to-text/speechRecognition/disabled/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/speech-to-text/speechRecognition/disabled/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/speech-to-text/speechRecognition/disabled/index.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/disabled" %}
+{% endif %}
 
 ## Setting html attributes
 

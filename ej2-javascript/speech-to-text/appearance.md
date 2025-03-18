@@ -39,6 +39,41 @@ You can display the icon on the top, bottom, left, or right side of the button t
 
 You can use the `isPrimary` property to configure the button as a primary action button.
 
+Below code sample demonstrates how to configure the button with above mentioned properties.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/speech-to-text/appearance/buttonSettings/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/speech-to-text/appearance/buttonSettings/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/speech-to-text/appearance/buttonSettings/index.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/speech-to-text/appearance/buttonSettings" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/speech-to-text/appearance/buttonSettings/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/speech-to-text/appearance/buttonSettings/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/speech-to-text/appearance/buttonSettings/index.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/speech-to-text/appearance/buttonSettings" %}
+{% endif %}
+
 ## Customizing the tooltips
 
 You can use the `tooltipSettings` property to customize the content and positions of the tooltip.
@@ -54,6 +89,41 @@ You can use the `stopContent` property to customize the stop button tooltip text
 ### Setting tooltip position
 
 You can use the `position` property to determine the placement of tooltips relative to the button.
+
+Below code sample demonstrates how to configure the tooltip with above mentioned properties.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/speech-to-text/appearance/tooltipSettings/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/speech-to-text/appearance/tooltipSettings/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/speech-to-text/appearance/tooltipSettings/index.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/speech-to-text/appearance/tooltipSettings" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/speech-to-text/appearance/tooltipSettings/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/speech-to-text/appearance/tooltipSettings/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/speech-to-text/appearance/tooltipSettings/index.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/speech-to-text/appearance/tooltipSettings" %}
+{% endif %}
 
 ## Setting button styles
 
@@ -71,3 +141,36 @@ The SpeechToText control supports the following predefined styles that can be de
 ## Setting cssclass
 
 You can use the `cssClass` property to customize the appearance of the SpeechToText control.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/speech-to-text/appearance/cssClass/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/speech-to-text/appearance/cssClass/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/speech-to-text/appearance/cssClass/index.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/speech-to-text/appearance/cssClass" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/speech-to-text/appearance/cssClass/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/speech-to-text/appearance/cssClass/index.html %}
+{% endhighlight %}
+{% highlight html tabtitle="index.css" %}
+{% include code-snippet/speech-to-text/appearance/cssClass/index.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/speech-to-text/appearance/cssClass" %}
+{% endif %}

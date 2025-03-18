@@ -21,9 +21,7 @@ This section describes the SpeechToText events that will be triggered when appro
 |onError|ErrorEventArgs|Triggers when an error occurs during speech recognition or while listening. For list of possible errors, refer to the [Error handling](./speech-recognition#error-handling) section.|
 |transcriptChanged|TranscriptChangedEventArgs|Triggers when an transcription change occurs during the speech recognition.|
 
-## How to configure SpeechToText events
-
-Above table contains the list of events available in the SpeechToText control. The following example demonstrates how to configure the SpeechToText events.
+The following example demonstrates how to configure the SpeechToText events.
 
 {% if page.publishingplatform == "typescript" %}
 

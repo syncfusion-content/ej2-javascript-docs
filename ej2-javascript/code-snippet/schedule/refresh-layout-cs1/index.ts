@@ -1,9 +1,8 @@
-
-
 import { Schedule, Day, Week, WorkWeek, Month } from '@syncfusion/ej2-schedule';
 import { Button } from '@syncfusion/ej2-buttons';
 
 Schedule.Inject(Day, Week, WorkWeek, Month);
+
 let scheduleData: Object[] = [
     {
         Id: 1,
@@ -31,12 +30,9 @@ let scheduleObj: Schedule = new Schedule({
 scheduleObj.appendTo('#Schedule');
 
 let button: Button = new Button({
-  cssClass: 'e-info'
+    cssClass: 'e-info'
 });
 button.appendTo('#btn1');
 button.element.onclick = (): void => {
     scheduleObj.refreshLayout();
 };
-
-
-

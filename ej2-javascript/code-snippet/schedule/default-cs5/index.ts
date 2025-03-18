@@ -1,7 +1,4 @@
-
-
 import { Schedule, Day, Week, WorkWeek, Month, CellClickEventArgs, EventClickArgs } from '@syncfusion/ej2-schedule';
-import { Button } from '@syncfusion/ej2-buttons';
 import { schedulerData } from './datasource.ts';
 
 Schedule.Inject(Day, Week, WorkWeek, Month);
@@ -25,5 +22,3 @@ let scheduleObj: Schedule = new Schedule({
     }
 });
 scheduleObj.appendTo('#Schedule');
-
-

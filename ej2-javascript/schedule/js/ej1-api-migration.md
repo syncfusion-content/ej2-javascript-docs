@@ -11,9 +11,7 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Schedule control
 
-This topic shows the API equivalent of JS2 Scheduler component to be used, while migrating your project that uses JS1 Scheduler.
-
-## Scheduler
+This topic shows the API equivalent of JS2 Scheduler control to be used, while migrating your project that uses JS1 Scheduler.
 
 ## Properties
 

@@ -86,4 +86,3 @@ window.addEventListener("wheel", event => {
     }
   }
 });
-

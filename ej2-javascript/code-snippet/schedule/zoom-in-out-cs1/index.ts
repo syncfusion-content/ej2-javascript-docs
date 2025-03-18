@@ -1,10 +1,8 @@
-
-
-
 import { Schedule, Week, Month, Agenda, TimelineViews, TimelineMonth, NavigatingEventArgs } from '@syncfusion/ej2-schedule';
 import { scheduleData } from './datasource.ts';
 
 Schedule.Inject(Month, Week, Agenda, TimelineViews, TimelineMonth);
+
 let scheduleObj: Schedule = new Schedule({
   height: "600px",
   width: "100%",
@@ -16,7 +14,7 @@ let scheduleObj: Schedule = new Schedule({
     interval: 60,
     slotCount: 2
   },
-   navigating: (args: NavigatingEventArgs) => {
+  navigating: (args: NavigatingEventArgs) => {
     if (args.currentView != "TimelineMonth") {
       scheduleObj.headerRows = [];
     }
@@ -92,5 +90,3 @@ window.addEventListener("wheel", event => {
     }
   }
 });
-
-

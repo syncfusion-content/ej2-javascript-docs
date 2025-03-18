@@ -28,7 +28,6 @@ var btn = new ej.buttons.Button({
     cssClass: 'e-info'
 });
 btn.appendTo('#btn1');
-btn.element.onclick = function() {
+btn.element.onclick = function () {
     scheduleObj.refreshLayout();
 };
-

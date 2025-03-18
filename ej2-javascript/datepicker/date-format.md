@@ -47,3 +47,58 @@ The following example demonstrates the DatePicker with the custom format (`yyyy-
 
 {% previewsample "page.domainurl/code-snippet/datepicker/getting-started-cs2" %}
 {% endif %}
+
+## Input formats 
+
+Input format allows users to enter dates in various formats in the DatePicker control, providing flexibility in date entry.
+
+## Configuring input formats
+
+By default, the DatePicker accepts date input in the format specified by the [`format`](../api/datepicker/#format) property. However, you can allow users to enter dates in multiple formats by using the [`inputFormats`](../api/datepicker/#format) property.
+
+When a user enters a date in any of the specified input formats, the DatePicker automatically converts it to the display format after:
+- Pressing Enter or Tab key
+- The input field loses focus
+
+The following example demonstrates the DatePicker with multiple input formats.
+
+# Input formats in ##Platform_Name## Datepicker control
+
+Input format allows users to enter dates in various formats in the DatePicker control, providing flexibility in date entry.
+
+## Configuring input formats
+
+By default, the DatePicker accepts date input in the format specified by the [`format`](../api/datepicker/#format) property. However, you can allow users to enter dates in multiple formats by using the [`inputFormats`](../api/datepicker/#format) property.
+
+When a user enters a date in any of the specified input formats, the DatePicker automatically converts it to the display format after:
+- Pressing Enter or Tab key
+- The input field loses focus
+
+The following example demonstrates the DatePicker with multiple input formats.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/datepicker/getting-started-cs15/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/datepicker/getting-started-cs15/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/datepicker/getting-started-cs15" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/datepicker/getting-started-cs15/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/datepicker/getting-started-cs15/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/datepicker/getting-started-cs15" %}
+{% endif %}

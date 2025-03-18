@@ -72,18 +72,23 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
-            <title>JavaScript (ES5)</title>
-            <!-- JavaScript (ES5) SpeechToText's dependency style -->
-            <link href="resources/base/material.css" rel="stylesheet" type="text/css"/>
+          <title>JavaScript (ES5)</title>
+          <!-- JavaScript (ES5) SpeechToText's dependency style -->
+          <link href="resources/base/material.css" rel="stylesheet" type="text/css"/>
+          <link href="resources/buttons/material.css" rel="stylesheet" type="text/css"/>
+          <link href="resources/popups/material.css" rel="stylesheet" type="text/css"/>
 
-            <!-- JavaScript (ES5) SpeechToText's control style -->
-            <link href="resources/inputs/material.css" rel="stylesheet" type="text/css"/>
+          <!-- JavaScript (ES5) SpeechToText's control style -->
+          <link href="resources/inputs/material.css" rel="stylesheet" type="text/css"/>
 
-            <!-- JavaScript (ES5) SpeechToText's dependency global script -->
-            <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
+          <!-- JavaScript (ES5) SpeechToText's dependency global script -->
+          <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
+          <script src="resources/buttons/ej2-buttons.min.js" type="text/javascript"></script>
+          <script src="resources/popups/ej2-popups.min.js" type="text/javascript"></script>
+          <script src="resources/splitbuttons/ej2-splitbuttons.min.js" type="text/javascript"></script>
 
-            <!-- JavaScript (ES5) SpeechToText's control global script -->
-            <script src="resources/inputs/ej2-inputs.min.js" type="text/javascript"></script>
+          <!-- JavaScript (ES5) SpeechToText's control global script -->
+          <script src="resources/inputs/ej2-inputs.min.js" type="text/javascript"></script>
        </head>
        <body>
        </body>
@@ -111,6 +116,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
           <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
           <script src="resources/buttons/ej2-buttons.min.js" type="text/javascript"></script>
           <script src="resources/popups/ej2-popups.min.js" type="text/javascript"></script>
+          <script src="resources/splitbuttons/ej2-splitbuttons.min.js" type="text/javascript"></script>
 
           <!-- JavaScript (ES5) SpeechToText's control global script -->
           <script src="resources/inputs/ej2-inputs.min.js" type="text/javascript"></script>
@@ -180,5 +186,5 @@ You can use the `content` property to display the start listening text and `stop
 {% include code-snippet/speech-to-text/getting-started/buttonContent/index.css %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/speech-to-text/getting-started/buttonContent" %}

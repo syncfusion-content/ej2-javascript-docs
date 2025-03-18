@@ -1,0 +1,20 @@
+---
+layout: post
+title: Methods in ##Platform_Name## SpeechToText control | Syncfusion
+description: Checkout and learn about methods with ##Platform_Name## SpeechToText control of Syncfusion Essential JS 2 and more.
+platform: ej2-javascript
+control: SpeechToText
+publishingplatform: ##Platform_Name##
+documentation: ug
+domainurl: ##DomainURL##
+---
+
+# Methods in ##Platform_Name## SpeechToText control
+
+## Startlistening
+
+You can use the `startListening` public method to initiate the speech recognition and begins the conversion of the speech to text.
+
+## Stoplistening
+
+You can use the `stopListening` public method to stop capturing your speech and ends the speech recognition.

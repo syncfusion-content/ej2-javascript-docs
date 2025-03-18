@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Show entire time in responsive mode in ##Platform_Name## Schedule control | Syncfusion
-description: Learn here all about Show entire time in responsive mode in Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
+title: Show entire time in responsive mode in ##Platform_Name## Scheduler control | Syncfusion
+description: Learn here all about Show entire time in responsive mode in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Show entire time in responsive mode 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Show entire time in responsive mode in ##Platform_Name## Schedule control
+# Show entire time in responsive mode in ##Platform_Name## Scheduler control
 
 9 AM is visible since it has enough space in responsive mode, but if you set 08:45 AM as start hour of scheduler then the time slots will not show full time in the time slot of responsive scheduler, for which we can use [`majorSlotTemplate`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale/#majorslottemplate) to set proper time slots in scheduler.
 

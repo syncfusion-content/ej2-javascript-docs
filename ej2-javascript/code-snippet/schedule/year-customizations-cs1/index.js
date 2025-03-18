@@ -1,5 +1,5 @@
-window.getMonthHeaderText = function(date) {
-  return date.toLocaleString('en-us', { month: 'long' }) + ' ' + date.getFullYear();
+window.getMonthHeaderText = function (date) {
+    return date.toLocaleString('en-us', { month: 'short' }) + ' ' + date.getFullYear();
 };
 var data = new ej.base.extend([], window.resourceData, null, true);
 
@@ -12,10 +12,10 @@ var scheduleObj = new ej.schedule.Schedule({
     monthHeaderTemplate: '<div class="date-text">${getMonthHeaderText(data.date)}</div>',
     resourceHeaderTemplate: '#resourceTemplate',
     views: [
-        { option: 'Year'},
-        { option: 'TimelineYear', displayName: 'Horizontal Year', isSelected: true  },
+        { option: 'Year' },
+        { option: 'TimelineYear', displayName: 'Horizontal Year', isSelected: true },
         { option: 'TimelineYear', displayName: 'Vertical Year', orientation: 'Vertical' }
-    ],    
+    ],
     group: {
         resources: ['Projects', 'Categories']
     },
@@ -45,4 +45,3 @@ var scheduleObj = new ej.schedule.Schedule({
     eventSettings: { dataSource: data }
 });
 scheduleObj.appendTo('#Schedule');
-

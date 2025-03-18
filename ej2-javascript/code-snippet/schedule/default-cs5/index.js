@@ -4,10 +4,10 @@ var scheduleObj = new ej.schedule.Schedule({
     showQuickInfo: false,
     views: ['Day', 'Week', 'WorkWeek', 'Month'],
     eventSettings: { dataSource: schedulerData },
-    cellClick: function(args) {
+    cellClick: function (args) {
         scheduleObj.openEditor(args, 'Add');
     },
-    eventClick: function(args) {
+    eventClick: function (args) {
         if (!args.event.RecurrenceRule) {
             scheduleObj.openEditor(args.event, 'Save');
         }
@@ -17,5 +17,3 @@ var scheduleObj = new ej.schedule.Schedule({
     }
 });
 scheduleObj.appendTo('#Schedule');
-
-

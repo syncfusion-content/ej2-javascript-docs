@@ -31,7 +31,7 @@ Triggers when the node is clicked. The following code example explains how to ge
 ## Selection change event
 
 Triggers when the node is selected in diagram.
-The following code example explains how to get the [`selectionChange`](../api/diagram/iSelectionChangeEventArgs/) event in the diagram.
+The following code example explains how to get the [`selectionChange`](https://ej2.syncfusion.com/javascript/documentation/api/diagram/#selectionchange) event in the diagram.
 
 
 {% tabs %}
@@ -45,7 +45,7 @@ The following code example explains how to get the [`selectionChange`](../api/di
         
 {% previewsample "page.domainurl/code-snippet/diagram/nodes-selectionEvent" %}
 
- You can prevent selection by setting the `cancel` property of [`SelectionChangeEventArgs`](../api/diagram/iSelectionChangeEventArgs/) to true, as shown in the code snippet below.
+ You can prevent selection by setting the `cancel` property of [`SelectionChangeEventArgs`](https://ej2.syncfusion.com/javascript/documentation/api/diagram/iselectionchangeeventargs/) to true, as shown in the code snippet below.
 
 ```ts
   selectionChange: function (args) {

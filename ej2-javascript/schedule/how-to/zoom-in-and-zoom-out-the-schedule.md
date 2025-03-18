@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Zoom in and zoom out the schedule in ##Platform_Name## Schedule control | Syncfusion
-description: Learn here all about Zoom in and zoom out the schedule in Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
+title: Zoom in and zoom out in ##Platform_Name## Scheduler control | Syncfusion
+description: Learn here all about Zoom in and zoom out in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Zoom in and zoom out the schedule 
+control: Zoom in and zoom out the scheduler
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Zoom in and zoom out the schedule in ##Platform_Name## Schedule control
+# Zoom in and zoom out in ##Platform_Name## Scheduler control
 
 By default Scheduler component doesn’t have the Zoom in/out support. Using the [`timeScale`](https://ej2.syncfusion.com/documentation/api/schedule#timescale) and [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule#headerrows) properties of our scheduler, we can achieve this.
 

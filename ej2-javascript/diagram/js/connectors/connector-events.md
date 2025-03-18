@@ -31,7 +31,7 @@ Triggers when the connector is clicked. The following code example explains how 
 ## Selection change event
 
 When selecting/unselecting the connector, the selection change event will be triggered.
-The following code example explains how to get the [`selection change`](../api/diagram/iselectionchangeeventargs/) event in the diagram.
+The following code example explains how to get the [`selection change`](https://ej2.syncfusion.com/javascript/documentation/api/diagram/#selectionchange) event in the diagram.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -44,7 +44,7 @@ The following code example explains how to get the [`selection change`](../api/d
         
 {% previewsample "page.domainurl/code-snippet/diagram/connectors-SelectEvent" %}
 
- You can prevent selection by setting the `cancel` property of [`SelectionChangeEventArgs`](../api/diagram/iSelectionChangeEventArgs/) to true, as shown in the code snippet below.
+ You can prevent selection by setting the `cancel` property of [`SelectionChangeEventArgs`](https://ej2.syncfusion.com/javascript/documentation/api/diagram/iselectionchangeeventargs/) to true, as shown in the code snippet below.
 
 ```ts
   selectionChange: function (args) {

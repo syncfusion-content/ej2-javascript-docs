@@ -234,9 +234,9 @@ If you want to allow only image files like .jpg and .png, you should set the pro
 
 The File Manager control provides support for external drag-and-drop functionality for uploading files by dragging them from the local file system to File Manager.
 
-Setting the [`allowDragAndDrop`](https://ej2.syncfusion.com/angular/documentation/api/file-manager#allowdraganddrop) property to false will not prevent the file upload operation through external drag and drop. It will only prevent drag-and-drop actions within the File Manager control
-
 To completely prevent the external drag-and-drop upload functionality (i.e., disallowing users from dragging and dropping files from outside into the File Manager), you can set the [`dropArea`](../api/uploader#droparea) property to null. This can be done by accessing the File Manager instance via its class methods.
+
+>**Note:** Setting the [`allowDragAndDrop`](../api/file-manager#allowdraganddrop) property to false will not prevent the file upload operation through external drag and drop. It will only prevent drag-and-drop actions within the File Manager control.
 
 The following example demonstrates how to prevent the external drag-and-drop upload actions for all types of files in the File Manager control.
 

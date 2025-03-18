@@ -73,3 +73,33 @@ The [`animationComplete`](../api/diagram/#animationcomplete) event is triggered 
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/diagram/AutomaticLayout-animComplete" %}
+
+## Layout updated event
+
+The [`layoutUpdated`](https://ej2.syncfusion.com/documentation/api/diagram/#layoutupdated) event is triggered when the layout rendering process in the diagram either starts or completes. This event allows users to track the state of the layout rendering process.
+
+The following code example explains the layout updated event in the diagram.
+
+```ts
+
+// Initializes the diagram
+let diagram: Diagram = new Diagram({
+  width: '100%',
+  height: '550px',
+  layout: {
+    type: 'HierarchicalTree',
+  },
+  dataSourceSettings: {
+    id: 'Name',
+    parentId: 'ReportingPerson',
+    dataManager: items,
+  },
+  layoutUpdated: function (args: ILayoutUpdatedEventArgs) {
+      if (args.state == 'Started') {
+        console.log('layout started rendering');
+      }
+  }
+});
+
+diagram.appendTo('#element');
+```

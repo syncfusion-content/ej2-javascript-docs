@@ -153,7 +153,7 @@ The following example shows a basic SpeechToText control.
 {% include code-snippet/speech-to-text/getting-started/getting-started-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/code-snippet/speech-to-text/getting-started/getting-started-cs1" %}
 
 ## Adding button content
@@ -171,5 +171,5 @@ You can use the `content` property to display the start listening text and `stop
 {% include code-snippet/speech-to-text/getting-started/buttonContent/index.css %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/code-snippet/speech-to-text/getting-started/buttonContent" %}

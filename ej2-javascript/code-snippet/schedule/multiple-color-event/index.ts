@@ -54,7 +54,7 @@ let scheduleObj: Schedule = new Schedule({
     width: '100%',
     height: '650px',
     selectedDate: new Date(2024, 1, 15),
-    views: [{option: "Week"}],
+    views: [{ option: "Week" }],
     eventSettings: {
         dataSource: data,
         template: eventTemplate

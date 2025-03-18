@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Half yearly view in ##Platform_Name## Schedule control | Syncfusion
-description: Learn here all about Half yearly view in Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
+title: Half yearly view in ##Platform_Name## Scheduler control | Syncfusion
+description: Learn here all about Half yearly view in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Half yearly view 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Half yearly view in ##Platform_Name## Schedule control
+# Half yearly view in ##Platform_Name## Scheduler control
 
 The year view of our scheduler displays all the 365 days and their related appointments of a particular year. You can customize the year view by using the following properties.
 
@@ -17,7 +17,7 @@ The year view of our scheduler displays all the 365 days and their related appoi
 * [`monthsCount`](../../api/schedule/#monthscount)
 * [`monthHeaderTemplate`](../../api/schedule/#monthheadertemplate)
 
-In the following code example, you can see how to render only the last six months of a year in the scheduler. To start with the month of  June, [`firstMonthOfYear`](../../api/schedule/#firstmonthofyear) is set to 6 and [`monthsCount`](../../api/schedule/#monthscount) is set to 6 to render only 6 months.
+In the following code example, you can see how to render only the last six months of a year in the scheduler. To start with the month of June, [`firstMonthOfYear`](../../api/schedule/#firstmonthofyear) is set to 6 and [`monthsCount`](../../api/schedule/#monthscount) is set to 6 to render only 6 months.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -1,8 +1,4 @@
-
-
-
 import { Schedule, Year, TimelineYear, DragAndDrop, Resize } from '@syncfusion/ej2-schedule';
-import { Internationalization } from '@syncfusion/ej2-base';
 import { resourceData } from './datasource.ts';
 
 Schedule.Inject(Year, TimelineYear, DragAndDrop, Resize);
@@ -10,7 +6,7 @@ Schedule.Inject(Year, TimelineYear, DragAndDrop, Resize);
 interface TemplateFunction extends Window {
     getMonthHeaderText?: Function;
 }
-(window as TemplateFunction).getMonthHeaderText = (date: Date) => { return date.toLocaleString("en-us", { month: "long" }) + " " + date.getFullYear(); };
+(window as TemplateFunction).getMonthHeaderText = (date: Date) => { return date.toLocaleString("en-us", { month: "short" }) + " " + date.getFullYear(); };
 
 let scheduleObj: Schedule = new Schedule({
     width: '100%',
@@ -21,8 +17,8 @@ let scheduleObj: Schedule = new Schedule({
     monthHeaderTemplate: '<div class="date-text">${getMonthHeaderText(data.date)}</div>',
     resourceHeaderTemplate: '#resourceTemplate',
     views: [
-        { option: 'Year'},
-        { option: 'TimelineYear', displayName: 'Horizontal Year', isSelected: true  },
+        { option: 'Year' },
+        { option: 'TimelineYear', displayName: 'Horizontal Year', isSelected: true },
         { option: 'TimelineYear', displayName: 'Vertical Year', orientation: 'Vertical' }
     ],
     group: {
@@ -54,6 +50,3 @@ let scheduleObj: Schedule = new Schedule({
     eventSettings: { dataSource: resourceData }
 });
 scheduleObj.appendTo('#Schedule');
-
-
-

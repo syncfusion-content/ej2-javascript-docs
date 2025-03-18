@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Frequently asked questions in ##Platform_Name## Schedule control | Syncfusion
-description: Learn here all about Frequently asked questions in Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
+title: Frequently asked questions in ##Platform_Name## Scheduler control | Syncfusion
+description: Learn here all about Frequently asked questions in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Frequently asked questions 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Frequently asked questions in ##Platform_Name## Schedule control
+# Frequently asked questions in ##Platform_Name## Scheduler control
 
 In this article, you can find some frequently asked questions and corresponding solutions while getting hands-on experience with scheduler control.
 
@@ -84,6 +84,14 @@ function onClick(args) {
     this.eventAdded = true;
   }
 }
+```
+
+```css
+
+.e-schedule .e-quick-popup-wrapper {
+  min-height: 232px;
+}
+
 ```
 
 ## Not processing culture files while using localization

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Open event editor manually in ##Platform_Name## Schedule control | Syncfusion
-description: Learn here all about Open event editor manually in Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
+title: Open event editor manually in ##Platform_Name## Scheduler control | Syncfusion
+description: Learn here all about Open event editor manually in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Open event editor manually 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,14 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open event editor manually in ##Platform_Name## Schedule control
+# Open event editor manually in ##Platform_Name## Scheduler control
+
+The Scheduler control provides flexibility in how you interact with event creation and editing. While the default behavior opens the editor when double-clicking on cells or appointments, you can also trigger the editor programmatically. This guide demonstrates different approaches to manually open the event editor window in your Scheduler application.
 
 ## Open Editor Window externally
 
-Scheduler allows the user to manually open the event editor on specific time or on certain events using [`openEditor`](https://ej2.syncfusion.com/documentation/api/schedule#openeditor) method. To open the editor on specific range of time, user need to pass the cell details as first argument and **Add** as second argument whereas to open it on event pass that event detail and **Save** as arguments. In the following code example, on clicking the respective button will open the respective editor window manually.
+The Scheduler allows the user to manually open the event editor on specific time or on certain events using [`openEditor`](https://ej2.syncfusion.com/documentation/api/schedule#openeditor) method. To open the editor on specific range of time, user need to pass the cell details as first argument and **Add** as second argument whereas to open it on event pass that event detail and **Save** as arguments. In the following code example, on clicking the respective button will open the respective editor window manually.
+
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -1,11 +1,11 @@
-
-
 import { Schedule, Day, Week, WorkWeek } from "@syncfusion/ej2-schedule";
 import { Internationalization } from "@syncfusion/ej2-base";
 import { scheduleData } from './datasource.ts';
 
 Schedule.Inject(Day, Week, WorkWeek);
+
 let instance: Internationalization = new Internationalization();
+
 (window as TemplateFunction).majorSlotTemplate = (date: Date) => {
   return instance.formatDate(date, { skeleton: "hm" });
 };
@@ -24,5 +24,3 @@ let scheduleObj: Schedule = new Schedule({
   eventSettings: { dataSource: scheduleData }
 });
 scheduleObj.appendTo("#Schedule");
-
-

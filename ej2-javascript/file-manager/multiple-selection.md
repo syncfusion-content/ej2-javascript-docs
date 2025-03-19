@@ -88,3 +88,40 @@ To enable range selection, you need to set the [`enableRangeSelection`](https://
 
 {% previewsample "page.domainurl/code-snippet/file-manager/rangeselection-cs1" %}
 {% endif %}
+
+## Disable Multi selection
+
+Setting the [`allowMultiSelection`](../api/file-manager/#allowmultiselection) property to false will prevent you from selecting multiple files or folders with standard selection methods. However, you can still select multiple items if checkboxes are visible. To fully disable all multi-selection capabilities, you must also set the [`showItemCheckBoxes`](../api/file-manager/#showitemcheckboxes) property to false. This ensures that you cannot use checkboxes for multiple selections.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.ts" %}
+{% include code-snippet/file-manager/disablemultiselection-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/file-manager/disablemultiselection-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/disablemultiselection-cs1/index.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/file-manager/multiselect-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/file-manager/disablemultiselection-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/file-manager/disablemultiselection-cs1/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/disablemultiselection-cs1/index.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/file-manager/multiselect-cs1" %}
+{% endif %}

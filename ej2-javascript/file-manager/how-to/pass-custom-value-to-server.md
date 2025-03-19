@@ -45,7 +45,7 @@ let filemanagerInstance: FileManager = new FileManager({
     },
     beforeSend: (args: BeforeSendEventArgs) => {
         if (args.ajaxSettings) {
-            args.ajaxSettings.beforeSend = function (args) {
+            (args.ajaxSettings as any).beforeSend = function (args : any) {
                 args.httpRequest.setRequestHeader('Authorization', 'User1');
             };
         }
@@ -154,7 +154,7 @@ var filemanagerInstance = new ej.filemanager.FileManager({
     beforeDownload: function (args){
         args.useFormPost = false;
         if (args.ajaxSettings) {
-            args.ajaxSettings.beforeSend = function {
+            args.ajaxSettings.beforeSend = function (args) {
               args.fetchRequest.headers.append('Authorization', 'User1');
             };
         } 

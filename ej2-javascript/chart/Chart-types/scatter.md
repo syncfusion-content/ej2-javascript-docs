@@ -173,6 +173,38 @@ The [shape](../../api/chart/markerSettings/#shape) property allows you to custom
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs351" %}
 {% endif %}
 
+**Border**
+
+The [border](../../api/chart/series/#border) property allows you to customize the border of the series by defining its [color](../../api/chart/borderModel/#color), [width](../../api/chart/borderModel/#width), and [dashArray](../../api/chart/borderModel/#dasharray).
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs488/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs488/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs488" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs488/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs488/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs488" %}
+{% endif %}
+
+
 ## Empty points
 
 Data points with `null` or `undefined` values are considered empty. Empty data points are ignored and not plotted on the chart.

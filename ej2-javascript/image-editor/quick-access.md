@@ -2,8 +2,9 @@
 layout: post
 title: Quick Access Toolbar in ##Platform_Name## Image editor control | Syncfusion
 description: Learn here all about Quick Access in ##Platform_Name## Image editor control of Syncfusion Essential JS 2 and more.
-control: Quick Access
 platform: ej2-javascript
+control: Quick Access
+publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

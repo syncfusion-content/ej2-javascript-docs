@@ -28,7 +28,7 @@ let resultData: FileData[] = [
         parentId: '0',
         size: 69632,
         type: ".png",
-        imageUrl: "https://ej2.syncfusion.com/react/demos/src/image-editor/images/flower.png"
+        imageUrl: "flower.png"
     },
     {
         dateCreated: new Date("2023-11-15T19:02:02.3419426+05:30"),
@@ -41,7 +41,7 @@ let resultData: FileData[] = [
         parentId: '0',
         size: 48951,
         type: ".png",
-        imageUrl: "https://ej2.syncfusion.com/react/demos/src/image-editor/images/bridge.png"
+        imageUrl: "bridge.png"
     }
 ];
 
@@ -55,4 +55,4 @@ function fileOpen(args: FileOpenEventArgs): void {
     }
 }
 
-const fileObject = new FileManager({ fileSystemData: resultData as { [key: string]: Object }[], fileOpen: fileOpen }, '#filemanager');
+const fileObject = new FileManager({ fileSystemData: resultData as { [key: string]: Object }[], height: '200px', fileOpen: fileOpen }, '#filemanager');

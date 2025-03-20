@@ -9,9 +9,9 @@ let imageEditorObj: ImageEditor = new ImageEditor({
     height: '330px',
     created: () => {
         if (Browser.isDevice) {
-            imageEditorObj.open('https://ej2.syncfusion.com/react/demos/src/image-editor/images/bridge.png');
+            imageEditorObj.open('bee-eater.jpg');
         } else {
-            imageEditorObj.open('https://ej2.syncfusion.com/react/demos/src/image-editor/images/bridge.png');
+            imageEditorObj.open('bee-eater.jpg');
         }
     }
 });

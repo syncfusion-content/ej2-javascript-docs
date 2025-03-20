@@ -22,7 +22,7 @@ let resultData = [
     parentId: '0',
     size: 69632,
     type: ".png",
-    imageUrl: "https://ej2.syncfusion.com/react/demos/src/image-editor/images/flower.png"
+    imageUrl: "flower.png"
   },
   {
     dateCreated: new Date("2023-11-15T19:02:02.3419426+05:30"),
@@ -35,7 +35,7 @@ let resultData = [
     parentId: '0',
     size: 48951,
     type: ".png",
-    imageUrl: "https://ej2.syncfusion.com/react/demos/src/image-editor/images/bridge.png"
+    imageUrl: "bridge.png"
   }
 ];
 
@@ -49,4 +49,4 @@ function fileOpen(args) {
   }
 }
 
-const fileObject = new ej.filemanager.FileManager({ fileSystemData: resultData, fileOpen: fileOpen }, '#filemanager');
+const fileObject = new ej.filemanager.FileManager({ fileSystemData: resultData, height: '200px', fileOpen: fileOpen }, '#filemanager');

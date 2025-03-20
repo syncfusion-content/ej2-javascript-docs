@@ -24,8 +24,8 @@ var data = [
             {
                 "nodeId": "03-01", "nodeText": "Camera Roll", "icon": "folder", "expanded": true,
                 "nodeChild": [
-                    { "nodeId": "03-01-01", "nodeText": "WIN_20160726_094117.JPG", "image": "https://ej2.syncfusion.com/react/demos/src/image-editor/images/flower.png" },
-                    { "nodeId": "03-01-02", "nodeText": "WIN_20160726_094118.JPG", "image": "https://ej2.syncfusion.com/react/demos/src/image-editor/images/bridge.png" }
+                    { "nodeId": "03-01-01", "nodeText": "WIN_20160726_094117.JPG", "image": "flower.png" },
+                    { "nodeId": "03-01-02", "nodeText": "WIN_20160726_094118.JPG", "image": "bridge.png" }
                 ]
             },
         ]

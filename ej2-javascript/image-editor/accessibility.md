@@ -59,7 +59,15 @@ The Image Editor component's accessibility levels are ensured through an [access
 
 The accessibility compliance of the Image Editor component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/image-editor.html) in a new window to evaluate the accessibility of the Image Editor component with accessibility tools.
 
-{% previewsample "page.domainurl/code-snippet/image-editor/getting-started-cs1" %}
+{% if page.publishingplatform == "typescript" %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/getting-started-cs3" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/es5-getting-started-cs1" %}
+
+{% endif %}
 
 ## See also
 

@@ -466,7 +466,7 @@ Here is an example of inserting rectangle, ellipse, arrow, path, and line in a b
 {% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs9" %}
 {% endif %}
 
-## Delete a shape
+### Delete a shape
 
 The [`deleteShape`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#deleteshape) method in the Image Editor allows you to remove a shape annotation from the image editor. To use this method, you need to pass the [`shapeId`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapeid) of the annotation as a parameter. 
 
@@ -503,7 +503,7 @@ Here is an example of deleting rectangle, ellipse, arrow, path, and line in a bu
 {% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs10" %}
 {% endif %}
 
-## Customize default stroke color for shapes 
+### Customize default stroke color for shapes 
 
 We provide default settings for stroke color, stroke width, fill color, and other customizations. If users wish to modify only the default options while preserving their previously selected customizations, they can do so by utilizing the [`shapeChanging`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#shapechanging) event. Within this event, users can update the values in the `currentShapeSettings` object to apply their own preferences instead of the defaults. For example, the stroke width and stroke color of freehand drawing can be customized through the `shapeChanging` event, allowing users to set specific values conditionally. This approach ensures that only the desired defaults are changed while maintaining other settings.
 

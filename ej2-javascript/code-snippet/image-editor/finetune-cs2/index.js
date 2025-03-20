@@ -15,14 +15,14 @@ var imageEditorObj = new ej.imageeditor.ImageEditor({
 imageEditorObj.appendTo('#imageeditor');
 
 document.getElementById('hueClick').onclick = function () {
-  imageEditorObj.finetuneImage(ImageFinetuneOption.Hue, 20);
+  imageEditorObj.finetuneImage('Hue', 20);
 }
 document.getElementById('exposureClick').onclick = function () {
-  imageEditorObj.finetuneImage(ImageFinetuneOption.Exposure, 20);
+  imageEditorObj.finetuneImage('Exposure', 20);
 }
 document.getElementById('blurClick').onclick = function () {
-  imageEditorObj.finetuneImage(ImageFinetuneOption.Blur, 20);
+  imageEditorObj.finetuneImage('Blur', 20);
 }
 document.getElementById('opacityClick').onclick = function () {
-  imageEditorObj.finetuneImage(ImageFinetuneOption.Opacity, 70);
+  imageEditorObj.finetuneImage('Opacity', 70);
 }

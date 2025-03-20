@@ -5,9 +5,9 @@ var imageEditorObj = new ej.imageeditor.ImageEditor({
     height: '330px',
     created: function () {
         if (ej.base.Browser.isDevice) {
-            imageEditorObj.open('https://ej2.syncfusion.com/react/demos/src/image-editor/images/bridge.png');
+            imageEditorObj.open('bee-eater.jpg');
         } else {
-            imageEditorObj.open('https://ej2.syncfusion.com/react/demos/src/image-editor/images/bridge.png');
+            imageEditorObj.open('bee-eater.jpg');
         }
     }
 });

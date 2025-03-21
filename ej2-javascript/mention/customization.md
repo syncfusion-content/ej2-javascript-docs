@@ -144,3 +144,5 @@ When set to `false`, the mention can be activated without a preceding space. Whe
 
 {% previewsample "page.domainurl/code-snippet/mention/getting-started-cs13" %}
 {% endif %}
+
+![Leading Space Requirement](./images/required_leading_space.gif)

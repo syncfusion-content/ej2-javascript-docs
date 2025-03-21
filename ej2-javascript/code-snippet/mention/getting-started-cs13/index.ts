@@ -15,7 +15,7 @@ let mentionObject: Mention = new Mention({
     dataSource: emailData,
     // maps the appropriate column to fields property
     fields: { text: 'Name', value: 'EmailId' },
-    mentionChar: '#',
+    mentionChar: '@',
     showMentionChar: true,
     requireLeadingSpace : false
 });

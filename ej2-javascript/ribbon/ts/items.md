@@ -158,9 +158,6 @@ The following sample showcases how to customize a specific dropdown item.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/ribbon/dropdownCustomization/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/ribbon/dropdownCustomization/styles.css %}
-{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/ribbon/dropdownCustomization" %}
@@ -450,9 +447,6 @@ You can customize the ribbon items with non-built-in items or HTML content by se
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/ribbon/customItem/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/ribbon/customItem/styles.css %}
 {% endhighlight %}
 {% endtabs %}
           

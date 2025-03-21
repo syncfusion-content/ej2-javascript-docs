@@ -17,10 +17,39 @@
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-dropdowns/styles/material.css" rel="stylesheet" />
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-navigations/styles/material.css" rel="stylesheet" />
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-ribbon/styles/material.css" rel="stylesheet" />
-
     <!--system js reference and configuration-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
+    <style>
+        .ribbonTemplate {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .ribbonTemplate.Large {
+            flex-direction: column;
+        }
+
+        .ribbonTemplate.Large .e-icons {
+            font-size: 35px;
+        }
+
+        .ribbonTemplate.Medium .e-icons,
+        .ribbonTemplate.Small .e-icons{
+            font-size: 20px;
+            margin: 15px 5px;
+        }
+
+        .ribbonTemplate.Small .text {
+            display:none;
+        }
+
+        .font-group .e-ribbon-group-content {
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
     <div id='loader'>LOADING....</div>

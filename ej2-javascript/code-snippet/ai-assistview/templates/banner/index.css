@@ -12,16 +12,3 @@
     top: 45%;
     width: 30%;
 }
-
-#banner .e-view-container {
-    margin: auto;
-}
-#banner .e-banner-view {
-    margin-left: 0;
-}
-.banner-content .e-assistview-icon:before {
-    font-size: 35px;
-}
-.banner-content {
-    text-align: center;
-}

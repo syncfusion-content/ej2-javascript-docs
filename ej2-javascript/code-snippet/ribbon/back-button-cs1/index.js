@@ -42,14 +42,12 @@ var tabs = [
 
 var ribbon = new ej.ribbon.Ribbon({
     tabs: tabs,
-    visible: true,
     backStageMenu: {
       items: [
         { id: 'home', text: 'Home', iconCss: 'e-icons e-home', content: '#homeContent' }
       ],
-      backButton: { 
-        text: 'Close',
-      }
+      visible: true,
+      backButton: { text: 'Close' }
     }
 });
 ribbon.appendTo("#ribbon");

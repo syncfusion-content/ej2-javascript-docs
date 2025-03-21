@@ -3,8 +3,8 @@
 import { BulletChart } from '@syncfusion/ej2-charts';
 let bulletChart: BulletChart = new BulletChart({
     dataSource: [{ value: 270, target: 250 },],
-    valueName: 'value',
-    targetName: 'target',
+    valueField: 'value',
+    targetField: 'target',
     title: 'Revenue',
     minimum: 0, maximum: 300, interval: 50,
     ranges: [{ end: 100, color: 'red' },

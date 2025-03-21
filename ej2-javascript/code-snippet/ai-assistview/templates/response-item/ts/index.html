@@ -16,6 +16,29 @@
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-notifications/styles/material.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
+    <style>
+        .responseItemContent {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-left: 20px
+        }
+        .responseItemContent .response-header {
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        .responseItemContent .responseContent {
+            margin-left: 35px;
+        }
+        .responseItemContent .response-header .e-assistview-icon:before {
+            margin-right: 10px;
+        }
+        #response-item .e-response-item-template .e-toolbar-items {
+            margin-left: 35px;
+        }
+    </style>
 </head>
 <body>
     <div id='loader'>Loading....</div>

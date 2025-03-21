@@ -49,8 +49,8 @@ let tabs: RibbonTabModel[] = [
 let ribbon: Ribbon = new Ribbon({
     tabs: tabs,
     backStageMenu: {
-      height: '550px',
-      width: '350px',
+      height: '350px',
+      width: '550px',
       items: [
         { id: 'home', text: 'Home', iconCss: 'e-icons e-home', content: '#homeContent' },
         { id: 'new', text: 'New', iconCss: 'e-icons e-file-new', content: '#newContent' },

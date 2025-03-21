@@ -110,8 +110,8 @@ Now import the Stock Chart component into your `app.ts` to instantiate a Stock C
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 
-import { StockChart  } from '@syncfusion/ej2-charts';
-
+import { StockChart, DateTime  } from '@syncfusion/ej2-charts';
+StockChart.Inject(DateTime);
 // initialize  Stock Chart component
 let stockChart: StockChart = new StockChart();
 
@@ -159,8 +159,8 @@ This section explains how to plot below JSON data to the  Stock Chart.Please fin
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 
-let stockchartData: any[] = [{
-   x: new Date( '2012-04-02' ),
+let chartData: any[] = [{
+    date : new Date('2012-04-02'),
     open : 85.9757,
     high : 90.6657,
     low : 85.7685,
@@ -168,7 +168,7 @@ let stockchartData: any[] = [{
     volume : 660187068
   },
   {
-   x: new Date( '2012-04-09' ),
+    date : new Date('2012-04-09'),
     open : 89.4471,
     high : 92,
     low : 86.2157,
@@ -176,7 +176,7 @@ let stockchartData: any[] = [{
     volume : 912634864
   },
   {
-   x: new Date( '2012-04-16' ),
+    date : new Date('2012-04-16'),
     open : 87.1514,
     high : 88.6071,
     low : 81.4885,
@@ -184,7 +184,7 @@ let stockchartData: any[] = [{
     volume : 1221746066
   },
   {
-   x: new Date( '2012-04-23' ),
+    date : new Date('2012-04-23'),
     open : 81.5157,
     high : 88.2857,
     low : 79.2857,
@@ -192,7 +192,7 @@ let stockchartData: any[] = [{
     volume : 965935749
   },
   {
-   x: new Date( '2012-04-30' ),
+    date : new Date('2012-04-30'),
     open : 85.4,
     high : 85.4857,
     low : 80.7385,

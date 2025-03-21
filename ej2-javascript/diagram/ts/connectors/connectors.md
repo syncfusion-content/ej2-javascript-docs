@@ -323,33 +323,36 @@ The diagram provides flexibility to prevent connectors from overlapping, ensurin
 
 To enable this feature, inject the `AvoidLineOverlapping` module and add its constraints to the diagram.
 
-N> The `AvoidLineOverlapping` feature applies only to orthogonal connectors and requires the `LineRouting` module to be injected with its constraints enabled.
- 
 * Inject both the `LineRouting` and `AvoidLineOverlapping` modules into the application.
 
   ```ts
 
   /**
    * Injecting the line routing and avoid line overlapping module.
-   */
+    */
   Diagram.Inject(LineRouting, AvoidLineOverlapping);
 
   ```
+
 * Add `LineRouting` and `AvoidLineOverlapping` constraints to the diagram constraints to enable line routing with avoid line overlapping support.
 
   ```ts
+
   /**
    *  Initialize the Diagram
-   */
-    var diagram = new Diagram({
-          //Add line routing and avoid line overlapping constraints to diagram.
-          constraints: DiagramConstraints.Default |
-                      DiagramConstraints.LineRouting | 
-                      DiagramConstraints.AvoidLineOverlapping
-      });
-      diagram.appendTo('#diagram');
+    */
+  var diagram = new Diagram({
+        //Add line routing and avoid line overlapping constraints to diagram.
+        constraints: DiagramConstraints.Default |
+                     DiagramConstraints.LineRouting | 
+                     DiagramConstraints.AvoidLineOverlapping
+    });
+  diagram.appendTo('#diagram');
 
   ```
+
+![AvoidLineOverlapping GIF](../images//avoidconnectoroverlap.gif)
+
 The following example demonstrates how to enable the AvoidLineOverlapping feature in the diagram.
 
 {% tabs %}
@@ -360,13 +363,10 @@ The following example demonstrates how to enable the AvoidLineOverlapping featur
 {% include code-snippet/diagram/connectors-cs64/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/diagram/connectors-cs64" %}
 
-The following image illustrates how the connector automatically avoid overlapping with other connectors.  
-
-![AvoidLineOverlapping GIF](../../../diagram/images/avoidconnectoroverlap.gif)
-
+N> The `AvoidLineOverlapping` feature applies only to orthogonal connectors and requires the `LineRouting` module to be injected with its constraints enabled.
 
 ## See Also
 

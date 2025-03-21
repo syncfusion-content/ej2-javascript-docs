@@ -52,13 +52,9 @@ The following example demonstrates the DatePicker with the custom format (`yyyy-
 
 Input format allows users to enter dates in various formats in the DatePicker control, providing flexibility in date entry.
 
-## Configuring input formats
+By default, the DatePicker accepts date input in the format specified by the format property. If the format property does not have a value, the input format can be specified using the inputFormats property. This allows users to enter dates in multiple formats.
 
-By default, the DatePicker accepts date input in the format specified by the [`format`](../api/datepicker/#format) property. However, you can allow users to enter dates in multiple formats by using the [`inputFormats`](../api/datepicker/#format) property.
-
-When a user enters a date in any of the specified input formats, the DatePicker automatically converts it to the display format after:
-- Pressing Enter or Tab key
-- The input field loses focus
+When a user enters a date in any of the specified input formats, the DatePicker automatically converts it to the display format after the user presses Enter or Tab, or when the input field loses focus. This ensures a smooth user experience by allowing intuitive date entry through custom input formats.
 
 The following example demonstrates the DatePicker with multiple input formats.
 

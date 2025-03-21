@@ -50,17 +50,11 @@ The following example demonstrates the DateTimePicker with the custom format (`y
 
 ## Input formats
 
-Input format allows users to enter date and time in various formats in the DateTimePicker control, providing flexibility in date and time entry.
+Input format allows users to enter dates in various formats in the DateTimePicker control, providing flexibility in date entry.
 
-## Configuring input formats
+By default, the DateTimePicker accepts date input in the format specified by the format property. If the format property does not have a value, the input format can be specified using the inputFormats property. This allows users to enter dates in multiple formats.
 
-By default, the DateTimePicker accepts date and time input in the format specified by the [`format`](../api/datetimepicker#format) property. However, you can allow users to enter date and time in multiple formats by using the [`inputFormats`](../api/datetimepicker#format) property.
-
-When a user enters a date and time in any of the specified input formats, the DateTimePicker automatically converts it to the display format after:
-- Pressing Enter or Tab key
-- The input field loses focus
-
-The string format of the date and time value specifies how the date and time should be represented as a string when entered by the user. This enhances the user experience by allowing intuitive data entry through various custom input formats.
+When a user enters a date in any of the specified input formats, the DateTimePicker automatically converts it to the display format after the user presses Enter or Tab, or when the input field loses focus. This ensures a smooth user experience by allowing intuitive date entry through custom input formats.
 
 The following example demonstrates the DateTimePicker with multiple input formats.
 

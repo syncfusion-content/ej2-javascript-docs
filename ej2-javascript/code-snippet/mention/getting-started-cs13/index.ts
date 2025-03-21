@@ -1,29 +1,23 @@
-
-
-
 import { Mention } from '@syncfusion/ej2-dropdowns';
 
-// define the array of complex data
-let countriesData: { [key: string]: Object }[] = [
-    { Country : 'Australia', Code : 'AU'},
-    { Country : 'Bermuda', Code : 'BM' },
-    { Country : 'Canada', Code : 'CA' },
-    { Country : 'Cameroon', Code : 'CM' },
-    { Country : 'Denmark', Code : 'DK' }
+// defined the array of complex data
+let emailData: { [key: string]: Object }[] = [
+    { Name: 'Selma Rose', EmailId : 'selma@gmail.com' },
+    { Name: 'Maria', EmailId : 'maria@gmail.com' },
+    { Name: 'Russo kay', EmailId : 'russo@gmail.com' },
+    { Name: 'Robert', EmailId : 'robert@gmail.com' },
+    { Name: 'Garth', EmailId : 'garth@gmail.com' }
 ];
 
 // initialize Mention control
 let mentionObject: Mention = new Mention({
     //set the data to dataSource property
-    dataSource: countriesData,
+    dataSource: emailData,
     // maps the appropriate column to fields property
-    fields: { text: 'Country', value: 'Code' },
-    //set height to popup list
-    popupHeight: '200px',
-    //set width to popup list
-    popupWidth: '250px',
-    //set requireLeadingSpace to popup list
-    requireLeadingSpace : false 
+    fields: { text: 'Name', value: 'EmailId' },
+    mentionChar: '#',
+    showMentionChar: true,
+    requireLeadingSpace : false
 });
 
 // render initialized Mention

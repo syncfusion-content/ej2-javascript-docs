@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## Draw connector from port
 
-The port can be used to create connector by enabling `Draw` constraints to the [`constraints`](../api/diagram/portconstraints/) property. By default, the connector segment type is set to **Orthogonal**.
+The port can be used to create connector by enabling `Draw` constraints to the [`constraints`](../../api/diagram/portconstraints/) property. By default, the connector segment type is set to **Orthogonal**.
 
 The following code explains how to draw the connector by using the port constraints.
 
@@ -157,10 +157,10 @@ There are several events that can be triggered while interacting with ports. The
 
 | Event| Description|
 |----|----|
-| [`Click`](../api/diagram/iClickEventArgs/)   | Triggers when the port is clicked. |
-| [`Element Draw`](../api/diagram/iElementDrawEventArgs/)  | Triggers when drawing a connector from the port. |
-| [`Position Change`](../api/diagram/iDraggingEventArgs/)  | Triggers when the port is dragged. |
-| [`Connection Change`](../api/diagram/iConnectionChangeEventArgs/) | Triggers when a connector is connected or disconnected from the port|
+| [`Click`](../../api/diagram/iClickEventArgs/)   | Triggers when the port is clicked. |
+| [`Element Draw`](../../api/diagram/iElementDrawEventArgs/)  | Triggers when drawing a connector from the port. |
+| [`Position Change`](../../api/diagram/iDraggingEventArgs/)  | Triggers when the port is dragged. |
+| [`Connection Change`](../../api/diagram/iConnectionChangeEventArgs/) | Triggers when a connector is connected or disconnected from the port|
 
 The following example shows how to get these events in diagram.
 

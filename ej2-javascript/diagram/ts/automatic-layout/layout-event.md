@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## DataLoaded event
 
-The [`dataLoaded`](../api/diagram/idataloadedeventargs/) event is triggered after the diagram is populated from the external data source.
+The [`dataLoaded`](../../api/diagram/idataloadedeventargs/) event is triggered after the diagram is populated from the external data source.
 
 The following code example explains the data loaded event in the diagram.
 
@@ -43,7 +43,7 @@ diagram.appendTo('#element');
 
 ## ExpandStateChange event
 
-The [`expandStateChange`](../api/diagram/iExpandStateChangeEventArgs/) will be triggered when the state of the expand and collapse icon change for a node.
+The [`expandStateChange`](../../api/diagram/iExpandStateChangeEventArgs/) will be triggered when the state of the expand and collapse icon change for a node.
 
 The following code example explains the `expandStateChange` event in the diagram.
 
@@ -60,7 +60,7 @@ The following code example explains the `expandStateChange` event in the diagram
 
 ## Animation complete event
 
-The [`animationComplete`](../api/diagram/#animationcomplete) event is triggered after the animation of the diagram elements is completed. The following example demonstrates how to handle the animation complete event and customize based on the expand state of the root node.
+The [`animationComplete`](../../api/diagram/#animationcomplete) event is triggered after the animation of the diagram elements is completed. The following example demonstrates how to handle the animation complete event and customize based on the expand state of the root node.
 
 
 {% tabs %}
@@ -73,3 +73,33 @@ The [`animationComplete`](../api/diagram/#animationcomplete) event is triggered 
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/diagram/AutomaticLayout-animComplete" %}
+
+## Layout updated event
+
+The [`layoutUpdated`](https://ej2.syncfusion.com/documentation/api/diagram/#layoutupdated) event is triggered when the layout rendering process in the diagram either starts or completes. This event allows users to track the state of the layout rendering process.
+
+The following code example explains the layout updated event in the diagram.
+
+```ts
+
+// Initializes the diagram
+let diagram: Diagram = new Diagram({
+  width: '100%',
+  height: '550px',
+  layout: {
+    type: 'HierarchicalTree',
+  },
+  dataSourceSettings: {
+    id: 'Name',
+    parentId: 'ReportingPerson',
+    dataManager: items,
+  },
+  layoutUpdated: function (args: ILayoutUpdatedEventArgs) {
+      if (args.state == 'Started') {
+        console.log('layout started rendering');
+      }
+  }
+});
+
+diagram.appendTo('#element');
+```

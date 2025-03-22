@@ -24,7 +24,8 @@ var dialog = new ej.popups.Dialog({
 // Render initialized Dialog
 dialog.appendTo('#customTbarDialog');
 
-var defaultRTE = new ej.richtexteditor.RichTextEditor({
+
+var markdownRTE = new ej.richtexteditor.RichTextEditor({
   editorMode: 'Markdown',
   value: `The custom command \"insert special character\" is configured as the last item of the toolbar. Click on the command and choose the special character you want to include from the popup.`,
   toolbarSettings: {
@@ -47,7 +48,7 @@ var defaultRTE = new ej.richtexteditor.RichTextEditor({
           dialog.element.style.display = '';
 
           // Get the textarea (Markdown editor)
-          var markdownEditor = defaultRTE.contentModule.getEditPanel();
+          var markdownEditor = markdownRTE.contentModule.getEditPanel();
 
           // Save cursor position for later insertion
           selection = {
@@ -63,7 +64,7 @@ var defaultRTE = new ej.richtexteditor.RichTextEditor({
     ],
   },
 });
-defaultRTE.appendTo('#defaultRTE');
+markdownRTE.appendTo('#markdown-editor');
 
 function dialogOverlay() {
   var activeEle = dialog.element.querySelector('.char_block.e-active');
@@ -76,7 +77,7 @@ function dialogOverlay() {
 function onInsert() {
   var activeEle = dialog.element.querySelector('.char_block.e-active');
   if (activeEle) {
-    var markdownEditor = defaultRTE.contentModule.getEditPanel();
+    var markdownEditor = markdownRTE.contentModule.getEditPanel();
 
     // Ensure selection data exists
     if (!selection || selection.start === undefined) {

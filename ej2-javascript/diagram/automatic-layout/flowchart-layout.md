@@ -28,10 +28,10 @@ Different flowchart symbols have different meanings that are used to represent d
 |![Ej2 Diagram displays Stored data Symbol](../images/flowchart-images/FlowShapes_StoredData.png)|StoredData|Represents a step where data get stored within a process.|
 |![Ej2 Diagram displays internal storage Symbol](../images/flowchart-images/internalStorage.png)|InternalStorage|Represents the internal storage|
 |![Ej2 Diagram displays DirectData Symbol](../images/flowchart-images/FlowShapes_DirectData.png)|DirectData|Represents a collection of information that allows searching, sorting, and filtering.|
-|![Ej2 Diagram displays SequentialData Symbol](./images/flowchart-images/sequentialData.png)|SequentialData|Represents the data that must be accessed sequentially|
-|![Ej2 Diagram displays SequentialData Symbol](./images/flowchart-images/sort.png)|Sort|Represents a step that organizes items list sequentially|
-|![Blazor Diagrma displays StoredData Symbol](./images/flowchart-images/paperTap.png)|PaperTap|Represents a step where data get stored within a process.|
-|![Ej2 Diagram displays ManualInput Symbol](./images/flowchart-images/FlowShapes_ManualInput.png)|ManualInput|Represents the manual input of data into a field or step in a process.|
+|![Ej2 Diagram displays SequentialData Symbol](../images/flowchart-images/sequentialData.png)|SequentialData|Represents the data that must be accessed sequentially|
+|![Ej2 Diagram displays SequentialData Symbol](../images/flowchart-images/sort.png)|Sort|Represents a step that organizes items list sequentially|
+|![Blazor Diagrma displays StoredData Symbol](../images/flowchart-images/paperTap.png)|PaperTap|Represents a step where data get stored within a process.|
+|![Ej2 Diagram displays ManualInput Symbol](../images/flowchart-images/FlowShapes_ManualInput.png)|ManualInput|Represents the manual input of data into a field or step in a process.|
 |![Ej2 Diagram displays ManualOperation Symbol](../images/flowchart-images/FlowShapes_ManualOperation.png)|ManualOperation|Represents an operation in a process that must be done manually, not automatically.|
 |![Ej2 Diagram displays Preparation Symbol](../images/flowchart-images/FlowShapes_Preparation.png)|Preparation|Represents a setup or initialization process to another step in the process.|
 |![Ej2 Diagram displays OffPageReference Symbol](../images/flowchart-images/FlowShapes_OffPageReference.png)|OffPageReference|Represents a labeled connector used to link two flowcharts on different pages.|
@@ -52,7 +52,7 @@ Different flowchart symbols have different meanings that are used to represent d
 
 ## Render Flowchart layout with data source
 
-To render `flowchart` layout, you need to set the [`layoutType`](../api/diagram/layoutType/) property as `Flowchart`. The following code example displays how to render flowchart layout using data source.
+To render `flowchart` layout, you need to set the [`layoutType`](../../api/diagram/layoutType/) property as `Flowchart`. The following code example displays how to render flowchart layout using data source.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -130,7 +130,7 @@ This structure allows for easy customization of the flowchart's visual elements 
 
 ## Render Flowchart layout with nodes and connectors
 
-The following example demonstrates how to render a flowchart layout using nodes and connectors. To achieve this, you need to define the [`nodes`](../api/diagram/nodeModel/) and [`connectors`](../api/diagram/connectormodel/) collections and assign them to the diagram. Additionally, you need to set the [`layoutType`](../api/diagram/layoutType/) to `Flowchart`.
+The following example demonstrates how to render a flowchart layout using nodes and connectors. To achieve this, you need to define the [`nodes`](../../api/diagram/nodeModel/) and [`connectors`](../../api/diagram/connectormodel/) collections and assign them to the diagram. Additionally, you need to set the [`layoutType`](../../api/diagram/layoutType/) to `Flowchart`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -161,7 +161,7 @@ The following example demonstrates how to render a flowchart layout using nodes 
 
 ## Customize flowchart layout orientation
 
-The sequence of a node's direction can be customized by flowchart's orientation, either vertically from top to bottom or horizontally from left to right. The [orientation](../api/diagram/layoutOrientation/) property of the layout class allows you to define the flow direction for the flowchart as either `TopToBottom` or `LeftToRight`. The default orientation is `TopToBottom`.
+The sequence of a node's direction can be customized by flowchart's orientation, either vertically from top to bottom or horizontally from left to right. The [orientation](../../api/diagram/layoutOrientation/) property of the layout class allows you to define the flow direction for the flowchart as either `TopToBottom` or `LeftToRight`. The default orientation is `TopToBottom`.
 
 ### TopToBottom orientation
 
@@ -249,7 +249,7 @@ var diagram = new ej.diagrams.Diagram({
 
 ## Customize the decision output directions
 
-The decision symbol in a flowchart represents a question or condition that leads to different paths based on a binary outcome (Yes/No, True/False). You can customize the output direction of these paths using the [`yesBranchDirection`](../api/diagram/branchDirection/) and [`noBranchDirection`](../api/diagram/branchDirection/) properties of the [`flowchartLayoutSettings`](../api/diagram/flowchartLayoutSettingsModel/) class.
+The decision symbol in a flowchart represents a question or condition that leads to different paths based on a binary outcome (Yes/No, True/False). You can customize the output direction of these paths using the [`yesBranchDirection`](../../api/diagram/branchDirection/) and [`noBranchDirection`](../../api/diagram/branchDirection/) properties of the [`flowchartLayoutSettings`](../../api/diagram/flowchartLayoutSettingsModel/) class.
 
 - `LeftInFlow` - Arranges the Yes/No branch to the left of the decision symbol.
 - `RightInFlow` - Arranges the Yes/No branch to the right of the decision symbol.
@@ -300,7 +300,7 @@ N> If both branch directions are same, **Yes** branch will be prioritized.
 
 ## Custom Yes and No branch values
 
-The decision symbol produces two output branches: a Yes branch and a No branch. If the connector text value matches any value in the [`yesBranchValues`](../api/diagram/flowchartLayoutSettingsModel/#yesbranchvalues) property of the [`flowchartLayoutSettings`](../api/diagram/flowchartLayoutSettingsModel/) class, it will be considered a Yes branch. Similarly, if the connector text value matches any value in the [`noBranchValues`](../api/diagram/flowchartLayoutSettingsModel/#nobranchvalues) property, it will be considered a No branch. By default, the `yesBranchValues` property contains the string values **Yes** and **True**, while the `noBranchValues` property contains **No** and **False**.
+The decision symbol produces two output branches: a Yes branch and a No branch. If the connector text value matches any value in the [`yesBranchValues`](../../api/diagram/flowchartLayoutSettingsModel/#yesbranchvalues) property of the [`flowchartLayoutSettings`](../../api/diagram/flowchartLayoutSettingsModel/) class, it will be considered a Yes branch. Similarly, if the connector text value matches any value in the [`noBranchValues`](../../api/diagram/flowchartLayoutSettingsModel/#nobranchvalues) property, it will be considered a No branch. By default, the `yesBranchValues` property contains the string values **Yes** and **True**, while the `noBranchValues` property contains **No** and **False**.
 
 Any text can be used as the connector text to describe the flow. Additionally, custom string values can be assigned to the `yesBranchValues` and `noBranchValues` properties. To direct the flow based on a conditional decision (if/else), the connector text must match a value in either the `yesBranchValues` or `noBranchValues` properties.
 

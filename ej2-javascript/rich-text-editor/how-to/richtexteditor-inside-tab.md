@@ -17,14 +17,14 @@ Integrating a Rich Text Editor within Tab control provides a versatile and organ
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor/richtexteditor-inside-dialog/index.ts %}
+{% include code-snippet/rich-text-editor/richtexteditor-inside-tab/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor/richtexteditor-inside-dialog/index.html %}
+{% include code-snippet/rich-text-editor/richtexteditor-inside-tab/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/richtexteditor-inside-dialog" %}
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/richtexteditor-inside-tab" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 

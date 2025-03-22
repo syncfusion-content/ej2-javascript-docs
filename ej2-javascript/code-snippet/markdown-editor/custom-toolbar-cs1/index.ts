@@ -34,7 +34,7 @@ let dialog: Dialog = new Dialog({
 // Render initialized Dialog
 dialog.appendTo('#customTbarDialog');
 
-let defaultRTE: RichTextEditor = new RichTextEditor({
+let markdownRTE: RichTextEditor = new RichTextEditor({
   editorMode: 'Markdown',
   value: `The custom command \"insert special character\" is configured as the last item of the toolbar. Click on the command and choose the special character you want to include from the popup.`,
   toolbarSettings: {
@@ -58,7 +58,7 @@ let defaultRTE: RichTextEditor = new RichTextEditor({
 
           // Get textarea reference (Markdown Mode)
           const markdownEditor =
-            defaultRTE.contentModule.getEditPanel() as HTMLTextAreaElement;
+            markdownRTE.contentModule.getEditPanel() as HTMLTextAreaElement;
 
           // Save cursor position for later insertion
           selection = {
@@ -74,7 +74,7 @@ let defaultRTE: RichTextEditor = new RichTextEditor({
     ],
   },
 });
-defaultRTE.appendTo('#defaultRTE');
+markdownRTE.appendTo('#markdown-editor');
 
 function dialogOverlay() {
   let activeEle: HTMLElement = dialog.element.querySelector(
@@ -92,7 +92,7 @@ function onInsert() {
   ) as HTMLElement;
   if (activeEle) {
     const markdownEditor =
-      defaultRTE.contentModule.getEditPanel() as HTMLTextAreaElement;
+      markdownRTE.contentModule.getEditPanel() as HTMLTextAreaElement;
 
     // Ensure selection data exists
     if (!selection) {

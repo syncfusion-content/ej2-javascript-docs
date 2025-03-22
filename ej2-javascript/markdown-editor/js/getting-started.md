@@ -72,7 +72,7 @@ Here’s an example of referencing the Rich Text Editor’s scripts and styles i
 
 **a.Essential Dependency (Minimal Setup)**
 
-This setup includes only the necessary scripts and styles required to render the Syncfusion Rich Text Editor. Use this setup for a lightweight application that requires basic Rich Text Editor functionality.
+This setup includes only the necessary scripts and styles required to render the Syncfusion Markdown Editor. Use this setup for a lightweight application that requires basic Markdown Editor functionality.
 
 ```html
 <!DOCTYPE html>
@@ -147,7 +147,7 @@ Here’s an example of referencing the Rich Text Editor’s scripts and styles i
 
 **a.Essential Dependency (Minimal Setup)**
 
-This setup includes only the necessary scripts and styles required to render the Syncfusion Rich Text Editor. Use this setup for a lightweight application that requires basic Rich Text Editor functionality.
+This setup includes only the necessary scripts and styles required to render the Syncfusion Markdown Editor. Use this setup for a lightweight application that requires basic Markdown Editor functionality.
 
 ```html
 <!DOCTYPE html>
@@ -292,16 +292,16 @@ Output will be displayed as follows.
           
 {% previewsample "page.domainurl/code-snippet/markdown-editor/getting-started-cs2" %}
 
-> You can refer to our [JavaScript Rich Text Editor](https://www.syncfusion.com/javascript-ui-controls/js-wysiwyg-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Rich Text Editor example](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/mark-down-editor/overview.html) that shows how to render the markdown editor.
+> You can refer to our [JavaScript Rich Text Editor](https://www.syncfusion.com/javascript-ui-controls/js-wysiwyg-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Markdown Editor example](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/mark-down-editor/overview.html) that shows how to render the markdown editor.
 
 ## See Also
 
 * [How to change the editor type](./editor-modes)
 * [How to render the iframe](./iframe)
 * [How to render the toolbar in inline mode](./inline-mode)
-* [How to insert Emoticons](https://ej2.syncfusion.com/angular/demos/#/material/rich-text-editor/insert-emoticons)
-* [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/angular/demos/#/material/rich-text-editor/blog-posting)
-* [Reactive Form with Rich Text Editor](https://ej2.syncfusion.com/angular/demos/#/material/rich-text-editor/reactive-form)
+* [How to insert Emoticons](https://ej2.syncfusion.com/javascript/demos/#/material/rich-text-editor/insert-emoticons)
+* [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/javascript/demos/#/material/rich-text-editor/blog-posting)
+* [Reactive Form with Rich Text Editor](https://ej2.syncfusion.com/javascript/demos/#/material/rich-text-editor/reactive-form)
 * [Accessibility in Rich text editor](https://ej2.syncfusion.com/javascript/documentation/rich-text-editor/accessibility)
 * [Keyboard support in Rich text editor](https://ej2.syncfusion.com/javascript/documentation/rich-text-editor/keyboard-support)
 * [Globalization in Rich text editor](https://ej2.syncfusion.com/javascript/documentation/rich-text-editor/globalization)

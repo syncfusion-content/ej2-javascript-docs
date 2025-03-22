@@ -18,7 +18,7 @@ let textArea: HTMLTextAreaElement;
 let mdsource: HTMLElement;
 let htmlPreview: HTMLElement;
 
-let defaultRTE: RichTextEditor = new RichTextEditor({
+let markdownRTE: RichTextEditor = new RichTextEditor({
   value: `In Rich Text Editor, you click the toolbar buttons to format the words and the changes are visible immediately. Markdown is not like that. When you format the word in Markdown format, you need to add Markdown syntax to the word to indicate which words and phrases should look different from each other. Rich Text Editor supports markdown editing when the editorMode set as **markdown** and using both *keyboard interaction* and *toolbar action*, you can apply the formatting to text. You can add our own custom formation syntax for the Markdown formation, [sample link](https://ej2.syncfusion.com/home/). The third-party library <b>Marked</b> is used in this sample to convert markdown into HTML content.`,
   height: 250,
   editorMode: 'Markdown',
@@ -34,36 +34,37 @@ let defaultRTE: RichTextEditor = new RichTextEditor({
     ],
   },
   created: () => {
-    textArea = defaultRTE.contentModule.getEditPanel() as HTMLTextAreaElement;
+    textArea = markdownRTE.contentModule.getEditPanel() as HTMLTextAreaElement;
     textArea.addEventListener('keyup', (e: KeyboardEventArgs) => {
       markDownConversion();
     });
-    let rteObj: RichTextEditor = defaultRTE;
+    let rteObj: RichTextEditor = markdownRTE;
     mdsource = document.getElementById('preview-code');
     mdsource.addEventListener('click', (e: MouseEvent) => {
       fullPreview({ mode: true, type: 'preview' });
       if ((e.currentTarget as HTMLElement).classList.contains('e-active')) {
-        defaultRTE.disableToolbarItem(['CreateTable']);
+        markdownRTE.disableToolbarItem(['CreateTable']);
       } else {
-        defaultRTE.enableToolbarItem(['CreateTable']);
+        markdownRTE.enableToolbarItem(['CreateTable']);
       }
     });
   },
 });
-defaultRTE.appendTo('#defaultRTE');
+markdownRTE.appendTo('#markdown-editor');
+
 function markDownConversion(): void {
   if (mdsource.classList.contains('e-active')) {
-    let id: string = defaultRTE.getID() + 'html-view';
-    let htmlPreview: HTMLElement = defaultRTE.element.querySelector('#' + id);
+    let id: string = markdownRTE.getID() + 'html-view';
+    let htmlPreview: HTMLElement = markdownRTE.element.querySelector('#' + id);
     htmlPreview.innerHTML = Marked(
-      (defaultRTE.contentModule.getEditPanel() as HTMLTextAreaElement).value
+      (markdownRTE.contentModule.getEditPanel() as HTMLTextAreaElement).value
     );
   }
 }
 function fullPreview(): void {
-  let id: string = defaultRTE.getID() + 'html-preview';
-  let htmlPreview: HTMLElement = defaultRTE.element.querySelector('#' + id);
-  let previewTextArea: HTMLElement = defaultRTE.element.querySelector(
+  let id: string = markdownRTE.getID() + 'html-preview';
+  let htmlPreview: HTMLElement = markdownRTE.element.querySelector('#' + id);
+  let previewTextArea: HTMLElement = markdownRTE.element.querySelector(
     '.e-rte-content'
   ) as HTMLElement;
   if (mdsource.classList.contains('e-active')) {
@@ -88,7 +89,7 @@ function fullPreview(): void {
     textArea.style.display = 'none';
     htmlPreview.style.display = 'block';
     htmlPreview.innerHTML = Marked(
-      (defaultRTE.contentModule.getEditPanel() as HTMLTextAreaElement).value
+      (markdownRTE.contentModule.getEditPanel() as HTMLTextAreaElement).value
     );
     mdsource.parentElement.title = 'Code View';
   }

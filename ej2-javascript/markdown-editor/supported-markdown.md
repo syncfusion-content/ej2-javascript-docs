@@ -9,13 +9,17 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Supported Markdown Syntax in ##Platform_Name## Markdown Editor Control
+# Supported Markdown Syntax in ##Platform_Name## Markdown Editor Component
 
-The Markdown Editor supports various commands to format markdown content. Below is a list of supported commands along with their syntax and descriptions. 
+The Markdown Editor supports various Markdown syntax commands for text formatting, lists, links, tables, and more. This guide provides an overview of all supported commands along with their syntax and usage.
+
+## Markdown Syntax Guide for ##Platform_Name## Markdown Editor
+
+The following table lists the Markdown commands supported by the Markdown Editor:
 
 |Commands|Syntax| Description |
 |--------|------------------------------------------|------------|
-| Bold | Sample content for `**`bold text`**`. | For bold, add `**` or `__` to front and back of the text. | For order list, precede each line with a number. |
+| Bold | Sample content for `**`bold text`**`. | For bold, add `**` or `__` to front and back of the text. |
 | Italic | Sample content for `*`Italic text`*`. | For Italic, add `*` or `_` to front and back of the text. |
 | Bold and Italics | Sample content for `***`bold and Italic text`***`. | For bold and Italics, add `***` to the front and back of the text. |
 | Heading 1 | `#` Heading 1 content | For heading 1, add `#` to start of the line. |

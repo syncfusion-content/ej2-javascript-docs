@@ -17,7 +17,7 @@ This section explains the steps to create a simple Markdown Editor and demonstra
 
 ## Dependencies
 
-The following minimum dependencies are required to use the Rich Text Editor.
+The following minimum dependencies are required to use the Markdown Editor.
 
 ```javascript
 |-- @syncfusion/ej2-richtexteditor
@@ -94,7 +94,7 @@ The quickstart application is preconfigured to use the `Material` theme in the `
 
 ## Module Injection
 
-To create Markdown Editor with additional features, inject the required modules. The following modules are used to extend Rich Text Editor’s basic functionality.
+To create Markdown Editor with additional features, inject the required modules. The following modules are used to extend Markdown Editor’s basic functionality.
 
 * `Toolbar` - Inject this module to use Toolbar feature.
 * `Link` - Inject this module to use link feature in Markdown Editor.
@@ -109,7 +109,7 @@ These modules should be injected into the Markdown Editor using the `RichTextEdi
 
 To get started, add the Markdown Editor control in app.ts and index.html files. Markdown Editor can be initialized through div element or textarea element.
 
-Place the following Rich Text Editor code in the `app.ts` file.
+Place the following Markdown Editor code in the `app.ts` file.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -123,7 +123,7 @@ editor.appendTo('#editor');
 {% endhighlight %}
 {% endtabs %}
 
-Rich Text Editor can be initialized on div element as shown below
+Markdown Editor can be initialized on div element as shown below
 
 `[src/index.html]`
 
@@ -216,16 +216,16 @@ npm start
 {% endhighlight %}
 {% endtabs %}
 
-> You can refer to our [TypeScript Rich Text Editor](https://www.syncfusion.com/javascript-ui-controls/js-wysiwyg-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [TypeScript Rich Text Editor example](https://ej2.syncfusion.com/demos/#/bootstrap5/mark-down-editor/overview.html) that shows how to render the Markdown Editor.
+> You can refer to our [TypeScript Rich Text Editor](https://www.syncfusion.com/javascript-ui-controls/js-wysiwyg-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [TypeScript Markdown Editor example](https://ej2.syncfusion.com/demos/#/bootstrap5/mark-down-editor/overview.html) that shows how to render the Markdown Editor.
 
 ## See Also
 
 * [How to change the editor type](./editor-modes)
 * [How to render the iframe](./iframe)
 * [How to render the toolbar in inline mode](./inline-mode)
-* [How to insert Emoticons](https://ej2.syncfusion.com/angular/demos/#/material/rich-text-editor/insert-emoticons)
-* [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/angular/demos/#/material/rich-text-editor/blog-posting)
-* [Reactive Form with Rich Text Editor](https://ej2.syncfusion.com/angular/demos/#/material/rich-text-editor/reactive-form)
+* [How to insert Emoticons](https://ej2.syncfusion.com/javascript/demos/#/material/rich-text-editor/insert-emoticons)
+* [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/javascript/demos/#/material/rich-text-editor/blog-posting)
+* [Reactive Form with Rich Text Editor](https://ej2.syncfusion.com/javascript/demos/#/material/rich-text-editor/reactive-form)
 * [Accessibility in Rich text editor](https://ej2.syncfusion.com/documentation/rich-text-editor/accessibility)
 * [Keyboard support in Rich text editor](https://ej2.syncfusion.com/documentation/rich-text-editor/keyboard-support)
 * [Globalization in Rich text editor](https://ej2.syncfusion.com/documentation/rich-text-editor/globalization)

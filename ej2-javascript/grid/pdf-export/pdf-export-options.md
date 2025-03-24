@@ -226,6 +226,49 @@ In the following example, the **CustomerID** is initially a hidden column in the
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs144" %}
 {% endif %}
 
+## Show or hide columns while exporting with stacked header
+
+The Syncfusion ##Platform_Name## Grid allows you to control the visibility of columns during export operations. This feature is particularly useful when customizing the data presented in exported files while using stacked headers.
+
+To implement the show or hide columns feature during PDF export in the Syncfusion ##Platform_Name## Grid, follow these steps:
+
+1. Handle the [toolbarClick](../../api/grid/#toolbarclick) event of the Syncfusion ##Platform_Name## Grid.
+
+2. Update the visibility of the desired columns by setting the [visible](../../api/grid/column/#visible) property of the column to **true** or **false**.
+
+3. Export the Syncfusion ##Platform_Name## Grid to PDF document using [pdfExport](../../api/grid/#pdfexport) method.
+
+4. Handle the [pdfExportComplete](../../api/grid/#pdfexportcomplete) event to restore the column visibility to its original state.
+
+In the following example, the **ShipName** is initially a hidden column in the Syncfusion ##Platform_Name## Grid. However, during the PDF export process, the **ShipName** column is made visible, while the **OrderDate** column is hidden:
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/pdf-stackedheader/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/pdf-stackedheader/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/pdf-stackedheader" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/pdf-stackedheader/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/pdf-stackedheader/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/pdf-stackedheader" %}
+{% endif %}
+
 ## Change page orientation
 
 The Syncfusion ##Platform_Name## Grid control allows you to change the page orientation of the exported PDF document from the default portrait mode to landscape mode. This feature provides the flexibility to adjust the layout and presentation of the exported PDF according to your needs.

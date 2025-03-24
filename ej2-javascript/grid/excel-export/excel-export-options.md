@@ -219,6 +219,49 @@ In the following example, the **CustomerID** is initially a hidden column in the
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs55" %}
 {% endif %}
 
+## Show or hide columns while exporting with stacked header
+
+The Syncfusion ##Platform_Name## Grid allows you to control the visibility of columns during export operations. This feature is particularly useful when customizing the data presented in exported files while using stacked headers.
+
+To implement the show or hide columns feature during Excel export in the Syncfusion ##Platform_Name## Grid, follow these steps:
+
+1. Handle the [toolbarClick](../../api/grid/#toolbarclick) event of the Syncfusion ##Platform_Name## Grid.
+
+2. Update the visibility of the desired columns by setting the [visible](../../api/grid/column/#visible) property of the column to **true** or **false**.
+
+3. Export the Syncfusion ##Platform_Name## Grid to Excel document using the [excelExport](../../api/grid/#excelexport) or [csvExport](../../api/grid/#csvexport)  method.
+
+4. Handle the [excelExportComplete](../../api/grid/#excelexportcomplete) event to restore the column visibility to its original state.
+
+In the following example, the **ShipName** is initially a hidden column in the Syncfusion ##Platform_Name## Grid. However, during the Excel export process, the **ShipName** column is made visible, while the **OrderDate** column is hidden:
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/excel-stackedheader/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/excel-stackedheader/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/excel-stackedheader" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/excel-stackedheader/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/excel-stackedheader/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/excel-stackedheader" %}
+{% endif %}
+
 ## Enable filtering in the exported excel file
 
 The Grid allows you to export data to Excel or CSV with filter options and also export only filtered records. This feature is especially beneficial when you need to share data with others while preserving the ability for them to filter and analyze the data in Excel or CSV.

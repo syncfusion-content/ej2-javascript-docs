@@ -1565,3 +1565,38 @@ On remote data binding, all grid actions such as paging, sorting, editing, group
 
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs16" %}
 {% endif %}
+
+## Fetch result from the DataManager query using external button 
+
+By default, Syncfusion ##Platform_Name## Grid automatically binds a remote data source using the [DataManager](../../data/getting-started). However, in some scenarios, you may need to fetch data dynamically from the server using a query triggered by an external button. This approach allows greater control over when and how data is loaded into the Grid.
+
+To achieve this, you can use the [executeQuery](../../api/data/dataManager/#executequery) method of `DataManager` with a **[Query](../../api/data/query)** object. This method allows you to run a custom query and retrieve results dynamically.
+
+The following example demonstrates how to fetch data from the server when an external button is clicked and display a status message indicating the data fetch status:
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/fetch-datamanger/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/fetch-datamanger/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/fetch-datamanger" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/fetch-datamanger/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/fetch-datamanger/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/fetch-datamanger" %}
+{% endif %}

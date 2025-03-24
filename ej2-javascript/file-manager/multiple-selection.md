@@ -107,7 +107,7 @@ Setting the [`allowMultiSelection`](../api/file-manager/#allowmultiselection) pr
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/file-manager/multiselect-cs1" %}
+{% previewsample "page.domainurl/code-snippet/file-manager/disablemultiselection-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -123,5 +123,5 @@ Setting the [`allowMultiSelection`](../api/file-manager/#allowmultiselection) pr
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/file-manager/multiselect-cs1" %}
+{% previewsample "page.domainurl/code-snippet/file-manager/disablemultiselection-cs1" %}
 {% endif %}

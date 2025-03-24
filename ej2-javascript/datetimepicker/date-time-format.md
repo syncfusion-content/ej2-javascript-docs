@@ -52,9 +52,9 @@ The following example demonstrates the DateTimePicker with the custom format (`y
 
 Input format allows users to enter dates in various formats in the DateTimePicker control, providing flexibility in date entry.
 
-By default, the DateTimePicker accepts date input in the format specified by the format property. If the format property does not have a value, the input format can be specified using the inputFormats property. This allows users to enter dates in multiple formats.
+The string format of the date and time value specifies how the date and time should be represented as a string when entered by the user. When the user types the date and time in the input format, it will be automatically converted to the display format after pressing enter, tab key, or when the input loses focus. This enhances the user experience by allowing intuitive data entry through various custom input formats.  You can also set the own custom format by using the [`format`](../api/datetimepicker#format) property.
 
-When a user enters a date in any of the specified input formats, the DateTimePicker automatically converts it to the display format after the user presses Enter or Tab, or when the input field loses focus. This ensures a smooth user experience by allowing intuitive date entry through custom input formats.
+To know more about the date format standards, refer to the [Internationalization Date Time Format](http://ej2.syncfusion.com/documentation/base/internationalization/) section.
 
 The following example demonstrates the DateTimePicker with multiple input formats.
 

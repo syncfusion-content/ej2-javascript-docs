@@ -174,9 +174,11 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 **Step 4:** Now, run the `index.html` in web browser, it will render the `Syncfusion JavaScript SpeechToText` control.
 
+> The `SpeechToText` control requires an internet connection and using a browser that supports `SpeechRecognition` from the Web Speech API.
+
 ## Adding button content
 
-You can use the `content` property to display the start listening text and `stopContent` to display the stop listening text by using the `buttonSettings` property.
+You can use the [content](../api/speech-to-text/buttonSettingsModel/#content) property to display the start listening text and [stopContent](../api/speech-to-text/buttonSettingsModel/#stopContent) to display the stop listening text by using the [buttonSettings](../api/speech-to-text#buttonSettings) property.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}

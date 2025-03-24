@@ -205,6 +205,37 @@ The [`fill`](../api/chart/tooltipSettings/#fill) and [`border`](../api/chart/too
 {% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs21" %}
 {% endif %}
 
+## ShowNearestTooltip
+
+The `showNearestTooltip` property in the chart tooltip displays tooltips based on the data points closest to the cursor.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/user-interaction-cs55/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/user-interaction-cs55/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs55" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/user-interaction-cs55/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/user-interaction-cs55/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs55" %}
+{% endif %}
+
 ## See also
 
 * [Format the tooltip value](./how-to/tool-tip-format.md)

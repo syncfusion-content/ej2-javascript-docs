@@ -172,7 +172,7 @@ let data: any[] = [
 {% endhighlight %}
 {% endtabs %}
 
-Now assign the local data to `dataSource` property. `value` and `target` values should be mapped with `valueName` and `targetName` respectively.
+Now assign the local data to `dataSource` property. `value` and `target` values should be mapped with `valueField` and `targetField` respectively.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

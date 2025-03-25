@@ -83,11 +83,9 @@ function updateTemplate() {
 
 function rowPageClick(args) {
     pivotObj.pageSettings.currentRowPage = args.currentPage;
-    pivotObj.refreshData();
 }
 
 function columnPageClick(args) {
     pivotObj.pageSettings.currentColumnPage = args.currentPage;
-    pivotObj.refreshData();
 }
 

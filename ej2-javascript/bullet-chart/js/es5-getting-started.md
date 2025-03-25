@@ -178,7 +178,7 @@ var data = [
 ];
 ```
 
-Now assign the local data to `dataSource` property. `value` and `target` values should be mapped with `valueName` and `targetName` respectively.
+Now assign the local data to `dataSource` property. `value` and `target` values should be mapped with `valueField` and `targetField` respectively.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

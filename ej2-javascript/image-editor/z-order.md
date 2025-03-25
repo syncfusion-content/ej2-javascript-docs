@@ -15,19 +15,19 @@ We are excited to introduce `z-order` support in the Image Editor. It's a powerf
  
 Types of adjustment in the Image Editor `z-order` support.
 
-* Sent Backward - Switch the selected annotation with the annotation one layer behind it.
+* [Bring forward](https://helpej2.syncfusion.com/documentation/api/image-editor/#bringforward) - Switch the selected annotation with the annotation one layer ahead of it.
 
-* Send to Back - Move the selected annotation to behind all other annotations.
+* [Sent Backward](https://helpej2.syncfusion.com/documentation/api/image-editor/#sendbackward) - Switch the selected annotation with the annotation one layer behind it.
 
-* Bring to Front - Move the selected annotation to ahead of all other annotations.
+* [Bring to Front](https://helpej2.syncfusion.com/documentation/api/image-editor/#bringtofront) - Move the selected annotation to ahead of all other annotations.
 
-* Bring forward - Switch the selected annotation with the annotation one layer ahead of it.
+* [Send to Back](https://helpej2.syncfusion.com/documentation/api/image-editor/#sendtoback) - Move the selected annotation to behind all other annotations.
 
 In the following example, you can use the `z-order` support.
 
 {% if page.publishingplatform == "typescript" %}
 
-{% tabs %}
+ {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/z-order-cs1/index.ts %}
 {% endhighlight %}

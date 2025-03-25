@@ -16,10 +16,6 @@ function footerContent() {
             </div>`;
 }
 
-document.getElementById('reset').addEventListener('click', function () {
-    textArea.value = '';
-});
-
 document.addEventListener('click', function (event) {
     if (event.target && event.target.id === 'sendPrompt') {
         const textArea = document.getElementById('promptTextArea');

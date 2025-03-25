@@ -14,6 +14,6 @@ var imageEditorObj = new ej.imageeditor.ImageEditor({
 });
 imageEditorObj.appendTo('#imageeditor');
 
-document.getElementById('customSelection').onclick = function () {
+document.getElementById('squareSelection').onclick = function () {
     imageEditorObj.select("Square");
 };

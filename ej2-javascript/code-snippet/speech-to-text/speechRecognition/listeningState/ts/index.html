@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Essential JS 2 - SpeechToText</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Essential JS 2" />
+    <meta name="author" content="Syncfusion" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-buttons/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-popups/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-inputs/styles/material.css" rel="stylesheet" />
+
+    <!--style reference from app-->
+    <link href="index.css" rel="stylesheet" />
+
+    <!--system js reference and configuration-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+</head>
+<body>
+    <div id='loader'>LOADING....</div>
+    <div id="container">
+        <div id="status-box-container" class="status-box inactive">
+            <span>Status: <strong id="status-text">Inactive</strong></span>
+        </div>
+        <button id="speechtotext_default"></button>
+        <div class="waveform-container">
+            <div id="waveform-item" class="waveform" style="display: none;">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <p id="instruction-text">Click the button to start listening.</p>
+        </div>
+    </div>
+</body>
+
+</html>

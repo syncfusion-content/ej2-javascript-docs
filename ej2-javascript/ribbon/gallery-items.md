@@ -158,9 +158,6 @@ The following sample showcases how to customize the appearance of each gallery i
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/ribbon/gallery/classCustomization/index.html %}
 {% endhighlight %}
-{% highlight css tabtitle="styles.css" %}
-{% include code-snippet/ribbon/gallery/classCustomization/styles.css %}
-{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/ribbon/gallery/classCustomization" %}
@@ -173,9 +170,6 @@ The following sample showcases how to customize the appearance of each gallery i
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/ribbon/gallery/classCustomization/index.html %}
-{% endhighlight %}
-{% highlight css tabtitle="styles.css" %}
-{% include code-snippet/ribbon/gallery/classCustomization/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -294,9 +288,6 @@ You can use the [cssClass](../api/ribbon/ribbonGalleryGroupModel/#cssclass) prop
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/ribbon/gallery/groupCustomization/index.html %}
 {% endhighlight %}
-{% highlight css tabtitle="styles.css" %}
-{% include code-snippet/ribbon/gallery/groupCustomization/styles.css %}
-{% endhighlight %}
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/ribbon/gallery/groupCustomization" %}
@@ -309,9 +300,6 @@ You can use the [cssClass](../api/ribbon/ribbonGalleryGroupModel/#cssclass) prop
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/ribbon/gallery/groupCustomization/index.html %}
-{% endhighlight %}
-{% highlight css tabtitle="styles.css" %}
-{% include code-snippet/ribbon/gallery/groupCustomization/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

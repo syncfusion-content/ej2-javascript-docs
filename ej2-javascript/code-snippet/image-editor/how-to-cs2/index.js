@@ -7,6 +7,7 @@ var dialog = new ej.popups.Dialog({
   height: '420px',
   closeOnEscape: true,
   visible: false,
+  minHeight: '400px',
 });
 dialog.appendTo('#profile-dialog');
 
@@ -15,5 +16,7 @@ imageEditorObj.appendTo('#imageeditor');
 
 document.getElementById('openDialog').onclick = function () {
   dialog.show();
-  imageEditorObj.open('flower.png');
+  setTimeout(() => {
+    imageEditorObj.open('flower.png');
+  }, 10);
 };

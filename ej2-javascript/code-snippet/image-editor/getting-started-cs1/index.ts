@@ -47,10 +47,10 @@ L10n.load({
 
 //Image Editor items definition
 
- new ImageEditor({
+new ImageEditor({
     locale: 'de-DE',
     width: '550px',
     height: '350px',
-    }, '#imageeditor');
+}, '#imageeditor');
 
 

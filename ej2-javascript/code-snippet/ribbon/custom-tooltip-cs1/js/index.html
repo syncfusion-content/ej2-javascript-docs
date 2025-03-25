@@ -1,5 +1,8 @@
-<!DOCTYPE html><html lang="en"><head>
-            <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js"></script>
     <title>Essential JS 2 - Ribbon</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -14,25 +17,51 @@
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-dropdowns/styles/material.css" rel="stylesheet">
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-navigations/styles/material.css" rel="stylesheet">
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-ribbon/styles/material.css" rel="stylesheet">
-
     <!--system js reference and configuration-->
-    
-    
-<script src="https://cdn.syncfusion.com/ej2/20.3.56/dist/ej2.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/20.3.56/dist/ej2.min.js" type="text/javascript"></script>
+    <style>
+        :root {
+            --borderColor: rgb(72, 72, 72);
+            --black: #000000;
+        }  
+
+        /* To customize the appearance of the tooltip */
+        .custom-tooltip.e-ribbon-tooltip.e-popup {
+            border: 2px solid var(--borderColor);
+            border-radius: 5px;
+            background: var(--black);
+        }
+
+        /* To customize the arrow of the tooltip */
+        .custom-tooltip.e-ribbon-tooltip .e-arrow-tip .e-arrow-tip-inner.e-tip-top,
+        .custom-tooltip.e-ribbon-tooltip .e-arrow-tip .e-arrow-tip-inner.e-tip-bottom {
+            color: var(--black);;
+        }
+        .custom-tooltip.e-ribbon-tooltip .e-arrow-tip-outer.e-tip-top {
+            border-bottom: 8px solid var(--borderColor); 
+        }
+        .custom-tooltip.e-ribbon-tooltip .e-arrow-tip-outer.e-tip-bottom {
+            border-top: 8px solid var(--borderColor);; 
+        }
+
+        /* To change the size of the tooltip title */
+        .custom-tooltip.e-ribbon-tooltip .e-tip-content .e-ribbon-tooltip-title {
+            font-size: 14px;
+        }
+
+        /* To change the size of the tooltip content */
+        .custom-tooltip.e-ribbon-tooltip .e-tip-content .e-ribbon-text-container .e-ribbon-tooltip-content {
+            font-size: 11px;
+        }
+    </style>
 </head>
+
 <body>
-    
+
     <div id="container">
         <div id="ribbon"></div>
     </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
 
-
-
-<script>
-var ele = document.getElementById('container');
-if(ele) {
-    ele.style.visibility = "visible";
- }   
-        </script>
-<script src="index.js" type="text/javascript"></script>
-</body></html>
+</html>

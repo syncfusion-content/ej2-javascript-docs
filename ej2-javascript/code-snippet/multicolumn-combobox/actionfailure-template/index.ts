@@ -12,7 +12,7 @@ const columns: ColumnModel[] = [
 
 let multiColumnComboboxObj: MultiColumnComboBox = new MultiColumnComboBox({
     dataSource: new DataManager({
-        url: 'https://services.syncfusion.com/js/production/api/Order',
+        url: 'https://services.syncfusion.com/js/production/api/order-data',
         adaptor: new WebApiAdaptor,
         crossDomain: true
     }),

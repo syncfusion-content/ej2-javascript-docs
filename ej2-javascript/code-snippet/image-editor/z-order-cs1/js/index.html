@@ -1,4 +1,7 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <title>Essential JS 2</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -13,30 +16,34 @@
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-splitbuttons/styles/material.css" rel="stylesheet">
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-image-editor/styles/material.css" rel="stylesheet">
 
-
     <!--style reference from app-->
     <link href="styles.css" rel="stylesheet">
 
     <!--system js reference and configuration-->
-    
-    
-<script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
 </head>
+
 <body>
-    
     <div id="container">
         <div class="control-section">
             <div id="imageeditor" class="row"></div>
+            <div>
+                <button id="drawShapes" class="e-btn e-primary">Draw Shapes</button>
+                <button id="bringForward" class="e-btn e-primary">Bring Forward</button>
+                <button id="sendBackward" class="e-btn e-primary">Sent Backward</button>
+                <button id="bringToFront" class="e-btn e-primary">Bring to Front</button>
+                <button id="sendToBack" class="e-btn e-primary">Send to Back</button>
+            </div>
         </div>
     </div>
 
+    <script>
+        var ele = document.getElementById('container');
+        if (ele) {
+            ele.style.visibility = "visible";
+        }   
+    </script>
+    <script src="index.js" type="text/javascript"></script>
+</body>
 
-
-<script>
-var ele = document.getElementById('container');
-if(ele) {
-  ele.style.visibility = "visible";
-}   
-      </script>
-<script src="index.js" type="text/javascript"></script>
-</body></html>
+</html>

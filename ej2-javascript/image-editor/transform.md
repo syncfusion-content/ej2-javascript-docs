@@ -17,9 +17,11 @@ The Image Editor provides a range of transformation options for manipulating bot
 
 The Image Editor allows to rotate the image and its annotations by a specific number of degrees clockwise or anti-clockwise using [`rotate`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#rotate) method. This method takes a single parameter: the angle of rotation in degrees. A positive value will rotate the image clockwise, while a negative value will rotate it anti-clockwise.
 
+`Note:` It is recommended to pass values in multiples of 90° (e.g., 90, 180, -90) for proper rotation alignment.
+
 Here is an example of rotating an image in a button click event.
 
-In the following example, the [`rotate`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#rotate) method is used to rotate the image.
+In the following example, the `rotate` method is used to rotate the image.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -52,11 +54,11 @@ In the following example, the [`rotate`](https://ej2.syncfusion.com/javascript/d
 
 The Image Editor provides the [`flip`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#flip) method, which allows you to flip both the image and its annotations either horizontally or vertically. This method takes a single parameter of type [`Direction`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#Direction), which specifies the direction in which the flip operation should be applied. 
 
-The [`Direction`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#Direction) parameter accepts two values: 'Horizontal' and 'Vertical'. When you choose 'Horizontal', the image and annotations will be flipped along the horizontal axis, resulting in a mirror effect. On the other hand, selecting 'Vertical' will flip them along the vertical axis, producing a vertical mirror effect. 
+The `Direction` parameter accepts two values: 'Horizontal' and 'Vertical'. When you choose 'Horizontal', the image and annotations will be flipped along the horizontal axis, resulting in a mirror effect. On the other hand, selecting 'Vertical' will flip them along the vertical axis, producing a vertical mirror effect. 
 
 Here is an example of flipping an image in a button click event.
 
-In the following example, the [`flip`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#flip) method is used to flip the image.
+In the following example, the `flip` method is used to flip the image.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -126,42 +128,19 @@ The Image Editor allows to magnify an image using the [`zoom`](https://ej2.syncf
 
 zoomFactor - Specifies a value to controlling the level of magnification applied to the image.
 
-zoomPoint - Specifies x and y coordinates of a point as [`Point`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#Point) on image to perform zooming.
+zoomPoint - Specifies x and y coordinates of a point as ImageEditorPoint on image to perform zooming.
 
-Here is an example of zooming an image in a button click event.
+### Minimum and maximum zoom level
 
-In the following example, you can using the [`zoom`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#zoom) method in the button click event.
+The [`minZoomFactor`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#minZoomFactor) property allows you to specify the minimum level of zoom that is allowed for an image. By setting this property, you can prevent the image from being zoomed out beyond a certain point, ensuring that it remains visible and usable even at the smallest zoom level. 
 
-{% if page.publishingplatform == "typescript" %}
+By default, the `minZoomFactor` value is set to 0.1, meaning that the image can be zoomed out up to 10 times its original size. 
 
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/transform-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/transform-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/image-editor/transform-cs3" %}
+The [`maxZoomFactor`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#maxZoomFactor) property is a useful feature in the Image Editor that allows you to define the maximum level of zoom permitted for an image. This property sets a limit on how much the image can be magnified, preventing excessive zooming that may result in a loss of image quality or visibility. 
 
-{% elsif page.publishingplatform == "javascript" %}
+By default, the `maxZoomFactor` value is set to 10, meaning that the image can be zoomed in up to 10 times its original size. This ensures that the zooming functionality remains within reasonable bounds and maintains the integrity of the image. 
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/transform-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/transform-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/image-editor/transform-cs3" %}
-{% endif %}
-
-To perform the Zoom out the image, In toolbar, you can clicking the Zoom out button in toolbar.
-
-In the following example, you can using the [`zoom`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#zoom) method in the button click event.
+Here is an example of specifying `minZoomFactor` and `maxZoomFactor` property in [`zoomSettings`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#zoomSettings) options in an image editor. 
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -190,23 +169,44 @@ In the following example, you can using the [`zoom`](https://ej2.syncfusion.com/
 {% previewsample "page.domainurl/code-snippet/image-editor/transform-cs4" %}
 {% endif %}
 
-## Maximum and Minimum zoom level
+## Panning an image
 
-The [`maxZoomFactor`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#maxZoomFactor) property is a useful feature in the Image Editor that allows you to define the maximum level of zoom permitted for an image. This property sets a limit on how much the image can be magnified, preventing excessive zooming that may result in a loss of image quality or visibility. 
+The Image Editor allows to pan an image when the image exceeds the canvas size or selection range. When zooming in on an image or applying a selection for cropping, it is common for the image to exceed the size of the canvas or exceed the selection range. So, the panning is used to view the entire image, by clicking on the canvas and dragging it in the direction they want to move.
 
-By default, the [`maxZoomFactor`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#maxZoomFactor) value is set to 10, meaning that the image can be zoomed in up to 10 times its original size. This ensures that the zooming functionality remains within reasonable bounds and maintains the integrity of the image. 
+In the following example, you can enable panning using the [`pan`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#pan) method in the button click event.
 
-The [`minZoomFactor`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#minZoomFactor) property allows you to specify the minimum level of zoom that is allowed for an image. By setting this property, you can prevent the image from being zoomed out beyond a certain point, ensuring that it remains visible and usable even at the smallest zoom level. 
+{% if page.publishingplatform == "typescript" %}
 
-By default, the [`minZoomFactor`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#minZoomFactor) value is set to 0.1, meaning that the image can be zoomed out up to 10 times its original size. 
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/transform-cs3/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/transform-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/transform-cs3" %}
 
-Here is an example of specifying [`minZoomFactor`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#minZoomFactor) and [`maxZoomFactor`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#maxZoomFactor) property in [`zoomSettings`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#zoomSettings) options in an image editor. 
+{% elsif page.publishingplatform == "javascript" %}
 
-### Panning event 
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/transform-cs3/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/transform-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/transform-cs3" %}
+{% endif %}
+
+## Panning event 
 
 The [`panning`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#panning) event is activated when the user begins dragging the image within the canvas. This event provide an opportunity to perform specific actions, like adjusting the position of an image, in response to the gesture of panning. And these event uses [`panEventArgs`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/panEventArgs/) to handle the panning action when the user starts dragging the image. 
 
-The parameter available in the [`panEventArgs`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#paneventargs) events are, 
+The parameter available in the `panEventArgs` events are, 
 
 * PanEventArgs.startPoint - The x and y coordinates as ImageEditorPoint for the start point. 
 
@@ -214,41 +214,11 @@ The parameter available in the [`panEventArgs`](https://ej2.syncfusion.com/javas
 
 * PanEventArgs.cancel – Specifies the boolean value to cancel the panning action. 
 
-In the following example, you can use the [`pan`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#pan) method in the button click event.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/transform-cs5/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/transform-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/image-editor/transform-cs5" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/transform-cs5/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/transform-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/image-editor/transform-cs5" %}
-{% endif %}
-
-
 ## Zooming event
 
 The [`zooming`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#zooming) event is triggered when performing zooming the image. This event can be used to perform certain actions, such as updating the position of the image. This event is passed an object that contains information about the zooming event, such as the amount of zooming performed. And this event uses [`ZoomEventArgs`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/zoomEventArgs/) to handle the zooming action in the image.
 
-The parameter available in the [`zooming`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#zooming) event is,
+The parameter available in the `zooming` event is,
 
 * ZoomEventArgs.zoomPoint - The x and y coordinates as [`Point`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#Point) for the zoom point.
 
@@ -264,7 +234,7 @@ The parameter available in the [`zooming`](https://ej2.syncfusion.com/javascript
 
 The [`rotating`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#rotating) event is triggered when performing rotating the image. This event is passed an object that contains information about the rotating event, such as the amount of rotation performed. And this event uses [`RotateEventArgs`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/rotateEventArgs/) to handle the rotating action in the image.
 
-The parameter available in the [`rotating`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#rotating) event is,
+The parameter available in the `rotating` event is,
 
 * RotateEventArgs.previousDegree: The degree of rotation before the recent rotation action was applied in the Image Editor.
 
@@ -276,7 +246,7 @@ The parameter available in the [`rotating`](https://ej2.syncfusion.com/javascrip
 
 The [`flipping`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#flipping) event is triggered when performing flipping the image. This event is passed an object that contains information about the flipping event, such as the amount of flip performed. And this event uses [`FlipEventArgs`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/flipEventArgs/) to handle the flipping action in the image.
 
-The parameter available in the [`flipping`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#flipping) event is,
+The parameter available in the `flipping` event is,
 
 * FlipEventArgs.direction - The flip direction as [`Direction`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#Direction) to be applied in the image editor.
 

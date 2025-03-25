@@ -1,41 +1,37 @@
-
-
-
-import { Gantt, Toolbar, PdfExport, Selection, PdfQueryTimelineCellInfoEventArgs } from '@syncfusion/ej2-gantt';
-import { GanttData } from 'datasource.ts';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
-
+import { Gantt, Toolbar, PdfExport, Selection } from '@syncfusion/ej2-gantt';
+import { GanttData } from './datasource.ts';
+import { PdfColor } from '@syncfusion/ej2-pdf-export';
 Gantt.Inject(Toolbar, PdfExport, Selection);
 
-let clickHandler: EmitType<ClickEventArgs> = (args: ClickEventArgs) => {
+var clickHandler = function(args){
     if (args.item.id === 'GanttExport_pdfexport') {
         gantt.pdfExport();
     }
-};
+ };
 
-let pdfQueryCellInfo: EmitType<PdfQueryCellInfoEventArgs> = (args: PdfQueryCellInfoEventArgs) => {
+ var pdfQueryCellInfo = function(args){
     if(args.column.field == 'Progress'){
-        if(args.value < 50) {
-            args.style = {backgroundColor: '#F08080'};
-        } else {
-            args.style = {backgroundColor: '#A569BD'};
-        }
-    }
-};
+     if(args.value < 50) {
+         args.style.backgroundColor = new PdfColor(240, 128, 128);
+       } else {
+         args.style.backgroundColor = new PdfColor(165, 105, 189);
+       }
+     }
+ };
 
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
     height: '450px',
     taskFields: {
-        id: 'TaskID',
+        id: 'TaskId',
         name: 'TaskName',
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID:'ParentId'
     },
     columns: [
-        { field: 'TaskID'},
+        { field: 'TaskId'},
         { field: 'TaskName', visible: false},
         { field: 'StartDate'},
         { field: 'Duration'},

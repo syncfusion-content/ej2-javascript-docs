@@ -14,7 +14,7 @@ var imageEditorObj = new ej.imageeditor.ImageEditor({
 });
 imageEditorObj.appendTo('#imageeditor');
 
-document.getElementById('customCrop').onclick = function () {
+document.getElementById('circleCrop').onclick = function () {
     imageEditorObj.select("Circle");
     imageEditorObj.crop();
 };

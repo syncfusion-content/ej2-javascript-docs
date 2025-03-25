@@ -1,7 +1,10 @@
 var stockChart = new ej.charts.StockChart({
-    title: 'Sales Analysis'
+    // Title for chart
+    title: 'Sales Analysis',
     series:[{
-        dataSource: chartData, type: 'Candle'
+        dataSource: chartData,
+        name:'Sales',
+        type: 'Candle'
     }],
 });
 stockChart.appendTo('#element');

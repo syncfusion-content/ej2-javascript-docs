@@ -169,3 +169,34 @@ Trackball can be enabled by setting the [`enable`](../api/chart/crosshairSetting
 
 {% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs8" %}
 {% endif %}
+
+## Crosshair highlight Category
+
+The `highlightCategory` property in the crosshair highlights the background of the entire category when hovered over. The crosshair color can be customized using the `color` property within the `line` configuration.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/user-interaction-cs54/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/user-interaction-cs54/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs54" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/user-interaction-cs54/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/user-interaction-cs54/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs54" %}
+{% endif %}

@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Supported Markdown Syntax in ##Platform_Name## Markdown Editor Control
+# Supported Markdown Syntax in ##Platform_Name## Markdown Editor Component
 
 The Markdown Editor supports various Markdown syntax commands for text formatting, lists, links, tables, and more. This guide provides an overview of all supported commands along with their syntax and usage.
 

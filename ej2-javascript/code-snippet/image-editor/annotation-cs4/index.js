@@ -6,6 +6,7 @@ var imageEditorObj = new ej.imageeditor.ImageEditor({
   shapeChanging: (args) => {
     if (args.currentShapeSettings.type === 'Text') {
       args.currentShapeSettings.color = 'red';
+      args.currentShapeSettings.fontFamily = 'Times New Roman';
     }
   },
   created: function () {

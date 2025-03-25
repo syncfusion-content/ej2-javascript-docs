@@ -14,7 +14,7 @@ let mentionObject: Mention = new Mention({
         crossDomain: true
     }),
     //bind the Query instance to query property
-    query: new Query().select(['FirstName', 'EmployeeID']).take(7),
+    query: new Query().select(['FirstName', 'EmployeeID']).take(7).requiresCount(),
     //map the appropriate columns to fields property
     fields: { text: 'FirstName', value: 'EmployeeID' },
     popupWidth: '250px'

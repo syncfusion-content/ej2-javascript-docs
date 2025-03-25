@@ -62,4 +62,4 @@ The splitted tasks can be merged either by using the `Merge Task` item of the Co
 
 1. Parent and milestone tasks cannot be split into segments.
 2. The task must have a width greater than the timeline unit cell in order to be split.
-3. Split task is not supported in the `Resource view`.
+3. Split task is not supported with `Multi taskbar`.

@@ -20,9 +20,6 @@ The help pane is dedicated area where the users can define help contents like co
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/ribbon/HelpPaneTemplate/index.html %}
 {% endhighlight %}
-{% highlight css tabtitle="styles.css" %}
-{% include code-snippet/ribbon/HelpPaneTemplate/styles.css %}
-{% endhighlight %}
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/ribbon/HelpPaneTemplate" %}

@@ -7,7 +7,7 @@ var aiAssistView = new ej.interactivechat.AIAssistView({
         "Best practices for clean, maintainable code?",
         "How to optimize code editor for speed?"
     ],
-    promptRequest: function () {
+    promptRequest: function (args) {
         setTimeout(function () {
             var response1 = "Use clear naming, break code into small functions, avoid repetition, write tests, and follow coding standards.";
             var response2 = "Install useful extensions, set up shortcuts, enable linting, and customize settings for smoother development.";

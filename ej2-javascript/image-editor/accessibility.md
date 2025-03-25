@@ -2,7 +2,7 @@
 layout: post
 title: Accessibility in ##Platform_Name## Image editor control | Syncfusion
 description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Image Editor component of Syncfusion Essential JS 2 and more.
-platform: ej2-javaScript
+platform: ej2-javascript
 control: Accessibility
 publishingplatform: ##Platform_Name##
 documentation: ug
@@ -50,6 +50,8 @@ The Image Editor component followed the keyboard interaction guideline, making i
 | <kbd>Ctrl + S</kbd> | To save the Image. |
 | <kbd>Ctrl + O</kbd> | To open the Image. |
 | <kbd>Delete</kbd> | To delete the shape once the shape got selected through mouse click . |
+| <kbd>Enter</kbd> | To apply Selection Crop or Image Resize. |
+| <kbd>Escape</kbd> | To discard operations performed in the Image Editor, such as annotation drawings, crop selection, and more. |
 
 ## Ensuring accessibility
 
@@ -57,7 +59,15 @@ The Image Editor component's accessibility levels are ensured through an [access
 
 The accessibility compliance of the Image Editor component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/image-editor.html) in a new window to evaluate the accessibility of the Image Editor component with accessibility tools.
 
-{% previewsample "page.domainurl/code-snippet/image-editor/getting-started-cs1" %}
+{% if page.publishingplatform == "typescript" %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/getting-started-cs3" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/es5-getting-started-cs1" %}
+
+{% endif %}
 
 ## See also
 

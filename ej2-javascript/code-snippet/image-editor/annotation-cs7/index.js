@@ -6,7 +6,7 @@ var imageEditorObj = new ej.imageeditor.ImageEditor({
   shapeChanging: (args) => {
     if (args.currentShapeSettings.type === 'FreehandDraw') {
       args.currentShapeSettings.strokeColor = 'red';
-      args.currentShapeSettings.strokeWidth = 10
+      args.currentShapeSettings.strokeWidth = 5
     }
   },
   created: function () {

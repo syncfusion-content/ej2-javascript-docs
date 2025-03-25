@@ -50,7 +50,7 @@ var pivotTableObj = new ej.pivotview.PivotView({
                 }
             });
             if (args.report) {
-                pivotTableObj.dataSource = JSON.parse(args.report).dataSource;
+                pivotTableObj.dataSourceSettings = JSON.parse(args.report).dataSourceSettings;
             }
         },
         removeReport: function (args) {

@@ -5,11 +5,11 @@ var clickHandler = function(args){
 };
 
 var pdfQueryCellInfo = function(args){
-   if(args.column.field == 'Progress'){
+    if(args.column.field == 'Progress'){
         if(args.value < 50) {
-            args.style = {backgroundColor: '#F08080'};
+            args.style.backgroundColor = new ej.pdfexport.PdfColor(240, 128, 128);
         } else {
-            args.style = {backgroundColor: '#A569BD'};
+            args.style.backgroundColor = new ej.pdfexport.PdfColor(165, 105, 189);
         }
     }
 };
@@ -18,15 +18,15 @@ var ganttChart = new ej.gantt.Gantt({
     dataSource: GanttData,
     height: '450px',
     taskFields: {
-        id: 'TaskID',
+        id: 'TaskId',
         name: 'TaskName',
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID:'ParentId'
     },
     columns: [
-        { field: 'TaskID'},
+        { field: 'TaskId'},
         { field: 'TaskName'},
         { field: 'StartDate'},
         { field: 'Duration', visible: false},

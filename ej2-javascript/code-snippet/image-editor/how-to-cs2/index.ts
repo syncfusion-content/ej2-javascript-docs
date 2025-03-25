@@ -11,6 +11,7 @@ var dialog: Dialog = new Dialog({
     height: '420px',
     closeOnEscape: true,
     visible: false,
+    minHeight: '400px',
 });
 dialog.appendTo('#profile-dialog');
 
@@ -19,5 +20,7 @@ imageEditorObj.appendTo('#imageeditor');
 
 (document.getElementById('openDialog') as HTMLElement).onclick = function () {
     dialog.show();
-    imageEditorObj.open('flower.png');
+    setTimeout(() => {
+        imageEditorObj.open('flower.png');
+    }, 10);
 };

@@ -560,3 +560,38 @@ The following example demonstrates how to add template column using external but
 
 {% previewsample "page.domainurl/code-snippet/grid/column-template-cs10" %}
 {% endif %}
+
+## Enhancing Grid performance by enabling or disabling Aria Labels
+
+By default, the Syncfusion ##Platform_Name## Grid adds custom **aria-label** attributes to template cells by combining the cell value, the "**is template cell**" identifier, and the column header name. These attributes help screen readers provide meaningful context.
+
+If your application doesn’t require screen reader support and includes multiple template columns, Aria labels may impact performance. To improve rendering, you can disable them for all template columns by setting the `enableAriaLabel` property to **false** in the `templateOptions` of those columns. If accessibility is needed, set it to **true** to retain Aria labels.
+
+The example below enables Aria labels for the **Employee Image** column and disables them for the **First Name** column in the Syncfusion ##Platform_Name## Grid.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/template-aria-label/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/template-aria-label/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/template-aria-label" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/template-aria-label/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/template-aria-label/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/template-aria-label" %}
+{% endif %}

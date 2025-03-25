@@ -55,4 +55,5 @@ function fileOpen(args: FileOpenEventArgs): void {
     }
 }
 
-const fileObject = new FileManager({ fileSystemData: resultData as { [key: string]: Object }[], height: '200px', fileOpen: fileOpen }, '#filemanager');
+const fileObject = new FileManager({ fileSystemData: resultData as { [key: string]: Object }[], height: '200px', fileOpen: fileOpen });
+fileObject.appendTo('#filemanager');

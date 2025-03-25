@@ -6,7 +6,7 @@ import { Browser } from '@syncfusion/ej2-base';
 
 //Image Editor items definition
 
- let imageEditorObj: ImageEditor = new ImageEditor({
+let imageEditorObj: ImageEditor = new ImageEditor({
     width: '550px',
     height: '330px',
     toolbar: [],
@@ -17,13 +17,10 @@ import { Browser } from '@syncfusion/ej2-base';
             imageEditorObj.open('bee-eater.png');
             }
         }
-    });
-    imageEditorObj.appendTo('#imageeditor');
+});
+imageEditorObj.appendTo('#imageeditor');
 
-     //Button click
-    let button: Button = new Button({cssClass: `e-primary`, content:'Click'}, '#btnClick');
-    document.getElementById('btnClick').onclick = (): void => {
-        imageEditorObj.flip("Horizontal"); // Horizontal flip
-    }
-
-
+new Button({cssClass: `e-primary`, content:'Horizontal Flip'}, '#btnClick');
+(document.getElementById('btnClick') as HTMLElement).onclick = function () {
+    imageEditorObj.flip("Horizontal"); // Horizontal flip
+};

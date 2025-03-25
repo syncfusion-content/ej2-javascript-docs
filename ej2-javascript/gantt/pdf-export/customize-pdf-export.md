@@ -16,7 +16,7 @@ PDF export provides an option to customize the mapping of Gantt to exported PDF 
 
 ## File name for exported document
 
-You can assign a file name for the exported document by defining the `fileName` property in `pdfExportProperties`.
+The file name of the exported PDF document can be specified using the [fileName](../../api/gantt/pdfExportProperties/#filename) property in [pdfExportProperties](../../api/gantt/pdfExportProperties/).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -47,7 +47,8 @@ You can assign a file name for the exported document by defining the `fileName` 
 
 ## How to change page orientation
 
-Page orientation can be changed to `Portrait` (Default Landscape) for the exported document using the property `pdfExportProperties.pageOrientation`.
+The page orientation of the exported PDF document can be customized using the [pageOrientation]
+(../../api/gantt/pdfExportProperties/#pageorientation) property in [pdfExportProperties](../../api/gantt/pdfExportProperties/). By default, the exported PDF document is in Landscape orientation.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -78,8 +79,8 @@ Page orientation can be changed to `Portrait` (Default Landscape) for the export
 
 ## How to change page size
 
-Page size can be customized for the exported document using the `pdfExportProperties.pageSize`.
-The supported page sizes are:
+Page size can be customized for the exported document using the  [pageSize](../../api/gantt/pdfExportProperties/#pagesize) property in [pdfExportProperties](../../api/gantt/pdfExportProperties/).
+ The supported page sizes are:
 
 * Letter
 * Note
@@ -138,7 +139,7 @@ The supported page sizes are:
 
 ## Export current view data
 
-PDF export provides an option to export the current view data into PDF. To export current view data alone, define the `exportType` to `CurrentViewData`.
+PDF export provides an option to export the current view data into PDF. To export current view data alone, define the [exportType](../../api/gantt/pdfExportProperties/#exporttype) to `CurrentViewData`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -167,40 +168,9 @@ PDF export provides an option to export the current view data into PDF. To expor
 {% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs4" %}
 {% endif %}
 
-## Enable footer
-
-By default, we render the default footer for a PDF file, this can be enabled or disabled by using the `enableFooter` property.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt/pdf-export-cs5/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/pdf-export-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs5" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt/pdf-export-cs5/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/pdf-export-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs5" %}
-{% endif %}
-
 ## Export hidden columns
 
-PDF export provides an option to export hidden columns of Gantt by defining the `includeHiddenColumn` to `true`.
+PDF export provides an option to export hidden columns of Gantt by defining the [includeHiddenColumn](../../api/gantt/pdfExportProperties/#includehiddencolumn) to `true`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -231,7 +201,7 @@ PDF export provides an option to export hidden columns of Gantt by defining the 
 
 ## Export predecessor lines
 
-By using `showPredecessorLines`, you can hide or show predecessor lines in the exported PDF document.
+The visibility of predecessor lines in the exported PDF document can be controlled using the [showPredecessorLines](../../api/gantt/pdfExportProperties/#showpredecessorlines) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -262,11 +232,11 @@ By using `showPredecessorLines`, you can hide or show predecessor lines in the e
 
 ## Show or hide columns on exported PDF
 
-You can show a hidden column or hide a visible column while exporting the Gantt using the [`toolbarClick`](../../api/gantt#toolbarclick) and [`beforePdfExport`](../../api/gantt/#beforepdfexport) events.
+A hidden column can be shown, or a visible column can be hidden while exporting the Gantt chart by using the  [`toolbarClick`](../../api/gantt#toolbarclick) and [`beforePdfExport`](../../api/gantt/#beforepdfexport) events.
 
-You can show or hide columns by setting the `column.visible` property to `true` or `false` respectively.
+Columns can be shown or hidden by setting the `column.visible` property to true or false, respectively.
 
-In the following example, there is a hidden column `Duration` in the Gantt. While exporting, we have changed `Duration` to visible column and `StartDate` to hidden column.
+In the following example, the `Duration` column is initially hidden in the Gantt chart. During export, the `Duration` column is made visible and the StartDate column is hidden.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -297,7 +267,7 @@ In the following example, there is a hidden column `Duration` in the Gantt. Whil
 
 ## Conditional cell formatting
 
-TreeGrid cells in the exported PDF can be customized or formatted using the [`pdfQueryCellInfo`](../../api/gantt/#pdfquerycellinfo) event. In this event, you can format the treegrid cells of exported PDF document based on the column cell value.
+TreeGrid cells in the exported PDF can be customized or formatted using the [`pdfQueryCellInfo`](../../api/gantt/#pdfquerycellinfo) event. This event allows formatting TreeGrid cells in the exported PDF document based on the column cell value.
 
 In the following sample, the background color is set for `Progress` column in the exported document by using the `args.style.backgroundColor` property.
 
@@ -394,45 +364,9 @@ In the following sample, the taskbar background color is customized in the chart
 {% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs11" %}
 {% endif %}
 
-## Theme
+## Customize Gantt Chart Appearance in PDF Export
 
-PDF export provides an option to include theme for the exported PDF document. To apply theme in exported PDF, define the `theme` in `pdfExportProperties`. The available themes are:
-
-* Material
-* Fabric
-* Bootstrap
-* Bootstrap 4
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt/pdf-export-cs12/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/pdf-export-cs12/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs12" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt/pdf-export-cs12/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/pdf-export-cs12/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs12" %}
-{% endif %}
-
-## Customized Theme
-
-PDF export provides an option to customize the Gantt style for the exported PDF document. To customize Gantt style in exported PDF, define the `ganttStyle` in `pdfExportProperties`.
+PDF export allows to customize the Gantt chart's appearance in the exported PDF documents. To customize the appearance of Gantt charts in exported PDF documents, define [ganttStyle](../../api/gantt/pdfExportProperties/#ganttstyle) within [pdfExportProperties](../../api/gantt/pdfExportProperties/). By using `ganttStyle`, can customize `columnHeader`, `fontFamily`, `cell`, `taskbar`, `label`, `timeline`, `chartGridLineColor`, `connectorLineColor`, `criticalConnectorLineColor`, `footer`, `font`, `eventMarker` and `holiday` regardless of the theme.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -496,3 +430,144 @@ property contains a collection of style properties for task segments. By specify
 {% endif %}
 
 
+## Exporting with templates
+
+### Exporting with column template
+
+The PDF export functionality allows to export Grid columns that include images, hyperlinks, and custom text to an PDF document using [pdfQueryCellInfo](https://ej2.syncfusion.com/documentation/api/gantt/pdfQueryCellInfoEventArgs/) event.
+
+In the following sample, the hyperlinks and images are exported to PDF using [hyperlink](https://ej2.syncfusion.com/documentation/api/gantt/pdfQueryCellInfoEventArgs/#hyperlink) and [image](https://ej2.syncfusion.com/documentation/api/gantt/pdfQueryCellInfoEventArgs/#image) properties in the [pdfQueryCellInfo](https://ej2.syncfusion.com/documentation/api/gantt/pdfQueryCellInfoEventArgs/) event.
+
+>Note: PDF Export supports base64 string to export the images.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/pdf-export-column-template-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/pdf-export-column-template-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-column-template-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/pdf-export-column-template-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/pdf-export-column-template-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-column-template-cs1" %}
+{% endif %}
+
+### Exporting with taskbar template
+
+The PDF export functionality allows to export taskbar templates that include `images` and `text` to an PDF document using [pdfQueryTaskbarInfo](../../api/gantt/#pdfquerytaskbarinfo) event. Taskbars in the exported PDF document can be customized or formatted using the `pdfQueryTaskbarInfo` event for parent taskbar template, taskbar templates and milestone templates.
+
+In the following sample, taskbar templates with images and text are exported to PDF using [taskbarTemplate](https://ej2.syncfusion.com/documentation/api/gantt/pdfQueryTaskbarInfoEventArgs/#taskbarTemplate) properties in the [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/documentation/api/gantt/#pdfquerytaskbarinfo) event.
+
+>Note: PDF Export supports base64 string to export the images.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/pdf-export-taskbar-template-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/pdf-export-taskbar-template-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-taskbar-template-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/pdf-export-taskbar-template-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/pdf-export-taskbar-template-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-taskbar-template-cs1" %}
+{% endif %}
+
+### Exporting with task label template
+
+The PDF export functionality allows to export task label template that include `images` and `text` to an PDF document using [pdfQueryTaskbarInfo](../../api/gantt/#pdfquerytaskbarinfo) event.
+
+In the following sample, task label template with images and text are exported to PDF using [labelSettings](https://ej2.syncfusion.com/documentation/api/gantt/pdfQueryTaskbarInfoEventArgs/#labelSettings) properties in the [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/documentation/api/gantt/#pdfquerytaskbarinfo) event.
+
+>Note: PDF Export supports base64 string to export the images.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/pdf-export-tasklabel-template-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/pdf-export-tasklabel-template-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-tasklabel-template-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/pdf-export-tasklabel-template-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/pdf-export-tasklabel-template-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-tasklabel-template-cs1" %}
+{% endif %}
+
+### Exporting with header template
+
+The PDF export functionality allows to export header template that include `images` and `text` to an PDF document using [pdfColumnHeaderQueryCellInfo](https://ej2.syncfusion.com/documentation/api/gantt/pdfColumnHeaderQueryCellInfoEventArgs/) event.
+
+In the following sample, header template with images and text are exported to PDF using [headerTemplate](https://ej2.syncfusion.com/documentation/api/gantt/pdfColumnHeaderQueryCellInfoEventArgs/#headerTemplate) properties in the [pdfColumnHeaderQueryCellInfo](https://ej2.syncfusion.com/documentation/api/gantt/pdfColumnHeaderQueryCellInfoEventArgs/) event.
+
+>Note: PDF Export supports base64 string to export the images.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/pdf-export-header-template-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/pdf-export-header-template-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-header-template-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/pdf-export-header-template-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/pdf-export-header-template-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-header-template-cs1" %}
+{% endif %}

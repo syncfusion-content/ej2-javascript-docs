@@ -19,7 +19,7 @@ let imageEditorObj: ImageEditor = new ImageEditor({
 });
 imageEditorObj.appendTo('#imageeditor');
 
-(document.getElementById('customCrop') as HTMLElement).onclick = function () {
+(document.getElementById('circleCrop') as HTMLElement).onclick = function () {
     imageEditorObj.select("Circle");
     imageEditorObj.crop();
 };

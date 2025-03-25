@@ -30,7 +30,7 @@ let chatMessages: MessageModel[] = [
 let chatUI: ChatUI = new ChatUI({
     messages: chatMessages,
     user: currentUserModel,
-    cssClass: 'Start typing...'
+    placeholder: 'Start typing...'
 });
 
 // Render initialized Chat UI.

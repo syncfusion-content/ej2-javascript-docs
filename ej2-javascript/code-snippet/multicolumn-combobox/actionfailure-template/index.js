@@ -7,7 +7,7 @@ var columns = [
 
 var multiColumnComboboxObj = new ej.multicolumncombobox.MultiColumnComboBox({
   dataSource: new ej.data.DataManager({
-    url:'https://services.syncfusion.com/js/production/api/Order',
+    url:'https://services.syncfusion.com/js/production/api/order-data',
     adaptor: new ej.data.WebApiAdaptor(),
     crossDomain: true
   }),

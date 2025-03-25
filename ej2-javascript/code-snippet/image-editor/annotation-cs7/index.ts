@@ -11,7 +11,7 @@ let imageEditorObj: ImageEditor = new ImageEditor({
     shapeChanging: (args: shapeChanging) => {
         if (args.currentShapeSettings.type === 'FreehandDraw') {
             args.currentShapeSettings.strokeColor = 'red',
-                args.currentShapeSettings.strokeWidth = 10
+                args.currentShapeSettings.strokeWidth = 5
         }
     },
     created: () => {

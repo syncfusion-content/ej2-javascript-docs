@@ -92,13 +92,13 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
         <script src="resources/charts/ej2-charts.min.js" type="text/javascript"></script>
     </head>
     <body>
-        <!-- Add the HTML <smithchart> element  -->
-        <smithchart id="element">Smithchart</smithchart>
+        <!--container which is going to render the Smith Chart-->
+        <div id='container'></div>
         <script>
             // initialize smithchart control
             var smithchart = new ej.charts.Smithchart();
             // Render initialized smithchart.
-            smithchart.appendTo('#element');
+            smithchart.appendTo('#container');
         </script>
     </body>
 </html>

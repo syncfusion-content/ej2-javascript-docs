@@ -14,7 +14,7 @@ let chartData: any[] = [
 ];
 let chart: Chart = new Chart({
     // Title for chart
-    title: 'Sales Analysis'
+    title: 'Sales Analysis',
     primaryXAxis: {
         valueType: 'Category',
         title: 'Month'

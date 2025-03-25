@@ -19,6 +19,6 @@ let imageEditorObj: ImageEditor = new ImageEditor({
 });
 imageEditorObj.appendTo('#imageeditor');
 
-(document.getElementById('customSelection') as HTMLElement).onclick = function () {
+(document.getElementById('squareSelection') as HTMLElement).onclick = function () {
     imageEditorObj.select("Square");
 };

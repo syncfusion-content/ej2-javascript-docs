@@ -5,17 +5,10 @@ import { Browser } from '@syncfusion/ej2-base';
 
 //Image Editor items definition
 
-let id: string;
 let imageEditorObj: ImageEditor = new ImageEditor({
     width: '550px',
     height: '330px',
-    toolbar: ['Annotate', "Line", "Rectangle", "Ellipse", "Circle", "Arrow", "Path"],
-    showQuickAccessToolbar: false,
-    shapeChanging: (args: shapeChanging) => {
-        if (args.action === 'select') {
-            id = args.currentShapeSettings.id;
-        }
-    },
+    toolbar: [],
     created: () => {
         if (Browser.isDevice) {
             imageEditorObj.open('bee-eater.png');
@@ -26,6 +19,11 @@ let imageEditorObj: ImageEditor = new ImageEditor({
 });
 imageEditorObj.appendTo('#imageeditor');
 
+(document.getElementById('drawShape') as HTMLElement).onclick = function () {
+    let dimension: any = imageEditorObj.getImageDimension();
+    imageEditorObj.drawEllipse(dimension.x + 100, dimension.y + 100);
+};
+
 (document.getElementById('deleteShape') as HTMLElement).onclick = function () {
-    imageEditorObj.deleteShape(id);
+    imageEditorObj.deleteShape('shape_1');
 };

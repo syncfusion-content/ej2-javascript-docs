@@ -9,7 +9,7 @@ import { Browser } from '@syncfusion/ej2-base';
 let imageEditorObj: ImageEditor = new ImageEditor({
     width: '550px',
     height: '350px',
-    toolbar: ['Annotation' , 'Finetune' , 'Filter' , 'Confirm' , 'Reset' , 'Save', 'ZoomIn', 'ZoomOut'],
+    toolbar: ['Annotate' , 'Finetune' , 'Filter' , 'Confirm' , 'Reset' , 'Save', 'ZoomIn', 'ZoomOut'],
     created: () => {
         if (Browser.isDevice) {
             imageEditorObj.open('bee-eater.png');

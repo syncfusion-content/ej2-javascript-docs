@@ -1,33 +1,58 @@
 
 
 import { ImageEditor } from '@syncfusion/ej2-image-editor';
-import { FileManager, FileOpenEventArgs } from '@syncfusion/ej2-filemanager';
+import { FileManager, FileData, FileOpenEventArgs } from '@syncfusion/ej2-filemanager';
 
-let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-// initialize FileManager component
-let fileManagerObj: FileManager = new FileManager({
-    ajaxSettings: {
-        url: hostUrl + 'api/FileManager/FileOperations',
-        getImageUrl: hostUrl + 'api/FileManager/GetImage',
-        uploadUrl: hostUrl + 'api/FileManager/Upload',
-        downloadUrl: hostUrl + 'api/FileManager/Download'
+
+let resultData: FileData[] = [
+    {
+        dateCreated: new Date("2023-11-15T19:02:02.3419426+05:30"),
+        dateModified: new Date("2024-01-08T16:55:20.9464164+05:30"),
+        filterPath: "\\",
+        hasChild: true,
+        id: "0",
+        isFile: false,
+        name: "Pictures",
+        parentId: "0",
+        size: 228465,
+        type: "folder"
     },
-    fileOpen: fileOpen,
-    width: '535px',
-    height: '150px'
-});
-fileManagerObj.appendTo('#filemanager');
+    {
+        dateCreated: new Date("2023-11-15T19:02:02.3419426+05:30"),
+        dateModified: new Date("2024-01-08T16:55:20.9464164+05:30"),
+        filterPath: "\\Pictures\\",
+        hasChild: false,
+        id: '1',
+        isFile: true,
+        name: "Flower",
+        parentId: '0',
+        size: 69632,
+        type: ".png",
+        imageUrl: "flower.png"
+    },
+    {
+        dateCreated: new Date("2023-11-15T19:02:02.3419426+05:30"),
+        dateModified: new Date("2024-01-08T16:55:20.9464164+05:30"),
+        filterPath: "\\Pictures\\",
+        hasChild: false,
+        id: '2',
+        isFile: true,
+        name: "Bridge",
+        parentId: '0',
+        size: 48951,
+        type: ".png",
+        imageUrl: "bridge.png"
+    }
+];
+
+const imageEditorObj = new ImageEditor({ width: '550px', height: '350px' }, '#imageeditor');
 
 function fileOpen(args: FileOpenEventArgs): void {
-    let file: any = (args as any).fileDetails;
-    let fileName: string = file.name;
-    let filePath: string = file.filterPath.replace(/\\/g, '/') + fileName;
-    let basePath = (document.getElementById('filemanager') as any).ej2_instances[0];
-    let imagePath = `${basePath.ajaxSettings.getImageUrl}?path=${filePath}`;
-    if (file.isFile) {
+    let file = args.fileDetails as FileData;
+    if (file.isFile && file.imageUrl) {
         args.cancel = true;
-        imageEditorObj.open(imagePath);
+        imageEditorObj.open(file.imageUrl);
     }
 }
 
-var imageEditorObj = new ImageEditor({ width: '550px', height: '350px' }, '#imageeditor');
+const fileObject = new FileManager({ fileSystemData: resultData as { [key: string]: Object }[], height: '200px', fileOpen: fileOpen }, '#filemanager');

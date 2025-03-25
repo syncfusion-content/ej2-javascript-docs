@@ -228,233 +228,45 @@ The color mapping feature supports customization of item colors based on the und
 
 Legend is enabled for the tree map control by setting the visible property to true in legendSettings object and injecting the `TreeMapLegend` module using the `TreeMap.Inject(TreeMapLegend)`.
 
+
 {% tabs %}
-{% highlight ts tabtitle="app.ts" %}
-
-import { TreeMap } from '@syncfusion/ej2-treemap';
-let treemap: TreeMap = new TreeMap({
-   dataSource: [
-            { Title: 'State wise International Airport count in South America', State: "Brazil", Count: 25 },
-            { Title: 'State wise International Airport count in South America', State: "Colombia", Count: 12 },
-            { Title: 'State wise International Airport count in South America', State: "Argentina", Count: 9 },
-            { Title: 'State wise International Airport count in South America', State: "Ecuador", Count: 7 },
-            { Title: 'State wise International Airport count in South America', State: "Chile", Count: 6 },
-            { Title: 'State wise International Airport count in South America', State: "Peru", Count: 3 },
-            { Title: 'State wise International Airport count in South America', State: "Venezuela", Count: 3 },
-            { Title: 'State wise International Airport count in South America', State: "Bolivia", Count: 2 },
-            { Title: 'State wise International Airport count in South America', State: "Paraguay", Count: 2 },
-            { Title: 'State wise International Airport count in South America', State: "Uruguay", Count: 2 },
-            { Title: 'State wise International Airport count in South America', State: "Falkland Islands", Count: 1 },
-            { Title: 'State wise International Airport count in South America', State: "French Guiana", Count: 1 },
-            { Title: 'State wise International Airport count in South America', State: "Guyana", Count: 1 },
-            { Title: 'State wise International Airport count in South America', State: "Suriname", Count: 1 },
-        ],
-        legendSettings: {
-            visible: true,
-            position: 'Top',
-            shape: 'Rectangle'
-        },
-        weightValuePath: 'Count',
-        equalColorValuePath: 'Count',
-        leafItemSettings: {
-            labelPath: 'State',
-            colorMapping: [
-                {
-                    value: 25,
-                    color: '#634D6F'
-                },
-                {
-                    value: 12,
-                    color: '#B34D6D'
-                },
-                {
-                    value: 9,
-                    color: '#557C5C'
-                },
-                {
-                    value: 7,
-                    color: '#44537F'
-                },
-                {
-                    value: 6,
-                    color: '#637392'
-                },
-                {
-                    value: 3,
-                    color: '#7C754D'
-                },
-                {
-                    value: 2,
-                    color: '#2E7A64'
-                },
-                {
-                    value: 1,
-                    color: '#95659A'
-                },
-            ]
-        }
-}, '#container');
-
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/treemap/getting-started-cs3/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/treemap/getting-started-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/treemap/getting-started-cs3" %}
 
 ## Add labels
 
 Labels are added to show additional information of the items in tree map. By default, the visibility of the label is set to true. This can be customized using the showLabels property in leafItemSettings.
 
 {% tabs %}
-{% highlight ts tabtitle="app.ts" %}
-
-import { TreeMap } from '@syncfusion/ej2-treemap';
-let treemap: TreeMap = new TreeMap({
-   dataSource: [
-            { Title: 'State wise International Airport count in South America', State: "Brazil", Count: 25 },
-            { Title: 'State wise International Airport count in South America', State: "Colombia", Count: 12 },
-            { Title: 'State wise International Airport count in South America', State: "Argentina", Count: 9 },
-            { Title: 'State wise International Airport count in South America', State: "Ecuador", Count: 7 },
-            { Title: 'State wise International Airport count in South America', State: "Chile", Count: 6 },
-            { Title: 'State wise International Airport count in South America', State: "Peru", Count: 3 },
-            { Title: 'State wise International Airport count in South America', State: "Venezuela", Count: 3 },
-            { Title: 'State wise International Airport count in South America', State: "Bolivia", Count: 2 },
-            { Title: 'State wise International Airport count in South America', State: "Paraguay", Count: 2 },
-            { Title: 'State wise International Airport count in South America', State: "Uruguay", Count: 2 },
-            { Title: 'State wise International Airport count in South America', State: "Falkland Islands", Count: 1 },
-            { Title: 'State wise International Airport count in South America', State: "French Guiana", Count: 1 },
-            { Title: 'State wise International Airport count in South America', State: "Guyana", Count: 1 },
-            { Title: 'State wise International Airport count in South America', State: "Suriname", Count: 1 },
-        ],
-        legendSettings: {
-            visible: true,
-            position: 'Top',
-            shape: 'Rectangle'
-        },
-        weightValuePath: 'Count',
-        equalColorValuePath: 'Count',
-        leafItemSettings: {
-            showLabels: true,
-            labelPath: 'State',
-            labelPosition: 'Center',
-            labelStyle: {
-                color: 'white'
-            },
-            colorMapping: [
-                {
-                    value: 25,
-                    color: '#634D6F'
-                },
-                {
-                    value: 12,
-                    color: '#B34D6D'
-                },
-                {
-                    value: 9,
-                    color: '#557C5C'
-                },
-                {
-                    value: 7,
-                    color: '#44537F'
-                },
-                {
-                    value: 6,
-                    color: '#637392'
-                },
-                {
-                    value: 3,
-                    color: '#7C754D'
-                },
-                {
-                    value: 2,
-                    color: '#2E7A64'
-                },
-                {
-                    value: 1,
-                    color: '#95659A'
-                },
-            ]
-        }
-}, '#container');
-
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/treemap/getting-started-cs4/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/treemap/getting-started-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/treemap/getting-started-cs4" %}
 
 ## Enable tooltip
 
 Tooltips are used when labels cannot display information due to space constraints. Tooltips can be enabled by setting the visible property to true in tooltipSettings object and injecting the `TreeMapTooltip` module using the `TreeMap.Inject(TreeMapTooltip)`.
 
+
 {% tabs %}
-{% highlight ts tabtitle="app.ts" %}
-
-import { TreeMap } from '@syncfusion/ej2-treemap';
-let treemap: TreeMap = new TreeMap({
-    tooltipSettings: {
-            visible: true,
-        },
-        dataSource: [
-            { Title: 'State wise International Airport count in South America', State: "Brazil", Count: 25 },
-            { Title: 'State wise International Airport count in South America', State: "Colombia", Count: 12 },
-            { Title: 'State wise International Airport count in South America', State: "Argentina", Count: 9 },
-            { Title: 'State wise International Airport count in South America', State: "Ecuador", Count: 7 },
-            { Title: 'State wise International Airport count in South America', State: "Chile", Count: 6 },
-            { Title: 'State wise International Airport count in South America', State: "Peru", Count: 3 },
-            { Title: 'State wise International Airport count in South America', State: "Venezuela", Count: 3 },
-            { Title: 'State wise International Airport count in South America', State: "Bolivia", Count: 2 },
-            { Title: 'State wise International Airport count in South America', State: "Paraguay", Count: 2 },
-            { Title: 'State wise International Airport count in South America', State: "Uruguay", Count: 2 },
-            { Title: 'State wise International Airport count in South America', State: "Falkland Islands", Count: 1 },
-            { Title: 'State wise International Airport count in South America', State: "French Guiana", Count: 1 },
-            { Title: 'State wise International Airport count in South America', State: "Guyana", Count: 1 },
-            { Title: 'State wise International Airport count in South America', State: "Suriname", Count: 1 },
-        ],
-        legendSettings: {
-            visible: true,
-            position: 'Top',
-            shape: 'Rectangle'
-        },
-        weightValuePath: 'Count',
-        equalColorValuePath: 'Count',
-        leafItemSettings: {
-            showLabels: true,
-            labelPath: 'State',
-            labelPosition: 'Center',
-            labelStyle: {
-                color: 'white'
-            },
-            colorMapping: [
-                {
-                    value: 25,
-                    color: '#634D6F'
-                },
-                {
-                    value: 12,
-                    color: '#B34D6D'
-                },
-                {
-                    value: 9,
-                    color: '#557C5C'
-                },
-                {
-                    value: 7,
-                    color: '#44537F'
-                },
-                {
-                    value: 6,
-                    color: '#637392'
-                },
-                {
-                    value: 3,
-                    color: '#7C754D'
-                },
-                {
-                    value: 2,
-                    color: '#2E7A64'
-                },
-                {
-                    value: 1,
-                    color: '#95659A'
-                },
-            ]
-        },
-}, '#container');
-
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/treemap/getting-started-cs5/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/treemap/getting-started-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/treemap/getting-started-cs5" %}

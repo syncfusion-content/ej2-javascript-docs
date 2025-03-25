@@ -124,20 +124,6 @@ npm start
 {% endhighlight %}
 {% endtabs %}
 
-The below example shows a basic Maps control.
-
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
-
-import { Maps } from '@syncfusion/ej2-maps';
-
-let map: Maps = new Maps();
-
-map.appendTo('#element');
-
-{% endhighlight %}
-{% endtabs %}
-
 As we didn't specify shapeData to the maps, no shape will be rendered and only an empty SVG element is appended to the maps container.
 
 ## Module Injection
@@ -307,7 +293,7 @@ You can add data labels to show additional information of the shapes in map. Thi
 
 ## Enable Tooltip
 
-The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable tooltip by setting the [`visible`](../api/maps/tooltipSettingsModel/#visible) property as true in [`tooltipSettings`](../api/maps/tooltipSettingsModel/) object and by injecting `MapsTooltip` module using `Msps.Inject(MapsTooltip)` method.
+The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable tooltip by setting the [`visible`](../api/maps/tooltipSettingsModel/#visible) property as true in [`tooltipSettings`](../api/maps/tooltipSettingsModel/) object and by injecting `MapsTooltip` module using `Maps.Inject(MapsTooltip)` method.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

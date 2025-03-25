@@ -7,10 +7,10 @@ let bulletChart: BulletChart = new BulletChart({
             { value: 300, target: 280 },
             { value: 400, target: 380 },
             { value: 500, target: 480 }],
-    valueName: 'value',
-    targetName: 'target',
+    valueField: 'value',
+    targetField: 'target',
     height: '300',
-    minimum: 0, maximum: 300, interval: 50,
+    minimum: 0, maximum: 500, interval: 50,
 });
 bulletChart.appendTo('#element');
 

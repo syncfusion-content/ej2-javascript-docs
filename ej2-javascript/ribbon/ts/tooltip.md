@@ -69,9 +69,6 @@ You can use the [cssClass](https://ej2.syncfusion.com/documentation/api/ribbon/r
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/ribbon/custom-tooltip-cs1/index.html %}
 {% endhighlight %}
-{% highlight css tabtitle="styles.css" %}
-{% include code-snippet/ribbon/custom-tooltip-cs1/styles.css %}
-{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/ribbon/custom-tooltip-cs1" %}

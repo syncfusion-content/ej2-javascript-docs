@@ -173,6 +173,7 @@ The [shape](../../api/chart/markerSettings/#shape) property allows you to custom
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs351" %}
 {% endif %}
 
+
 **Border**
 
 The [border](../../api/chart/series/#border) property allows you to customize the border of the series by defining its [color](../../api/chart/borderModel/#color), [width](../../api/chart/borderModel/#width), and [dashArray](../../api/chart/borderModel/#dasharray).
@@ -187,7 +188,7 @@ The [border](../../api/chart/series/#border) property allows you to customize th
 {% include code-snippet/chart/chart-types-cs488/index.html %}
 {% endhighlight %}
 {% endtabs %}
-
+        
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs488" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -203,7 +204,6 @@ The [border](../../api/chart/series/#border) property allows you to customize th
 
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs488" %}
 {% endif %}
-
 
 ## Empty points
 

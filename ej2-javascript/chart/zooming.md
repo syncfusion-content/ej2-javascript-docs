@@ -212,6 +212,40 @@ Using the [`enableScrollbar`](../api/chart/zoomSettingsModel/#enablescrollbar) p
 {% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs43" %}
 {% endif %}
 
+### Position
+The `position` property allows users to specify their preferred scrollbar location. By default, both vertical and horizontal scrollbars are rendered near their respective axes. Using the customization options below, you can position the scrollbar as desired:
+
+* Default: `placeNextToAxisLine`.
+* Horizontal scrollbar: Available positions are `Top` and `Bottom`.
+* Vertical scrollbar: Available positions are `Left` and `Right`.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/user-interaction-cs53/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/user-interaction-cs53/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs53" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/user-interaction-cs53/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/user-interaction-cs53/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs53" %}
+{% endif %}
+
 ## Enable animation
 
 Enable the [enableAnimation](../api/chart/zoomSettingsModel/#enableanimation) property to experience smooth transitions when zooming in on the chart.

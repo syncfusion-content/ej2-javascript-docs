@@ -111,3 +111,38 @@ By default, the popup list width value is set as `auto`. Depending on the mentio
 You can customize the trigger character by using the [mentionChar](../api/mention/#mentionchar) property in the Mention control. The trigger character triggers the suggestion list to display in the target area.
 
 By default, the [mentionChar](../api/mention/#mentionchar) is `@`.
+
+## Leading Space Requirement
+
+The [requireLeadingSpace](../api/mention/#mentionchar) property in Mention controls whether a space is needed before triggering the Mention suggestion popup. 
+
+When set to `false`, the mention can be activated without a preceding space. When set to `true` (default), a space is required before the mention character to activate suggestions.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/mention/getting-started-cs13/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/mention/getting-started-cs13/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/mention/getting-started-cs13" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/mention/getting-started-cs13/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/mention/getting-started-cs13/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/mention/getting-started-cs13" %}
+{% endif %}
+
+![Leading Space Requirement](./images/required_leading_space.gif)

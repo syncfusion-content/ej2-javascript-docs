@@ -15,7 +15,6 @@ A swimlane is a type of diagram node commonly used to visualize the relationship
 
 ![Swimlane](../images/swimlane-image.png)
 
-
 ## Create a swimlane
 
 To create a swimlane,the type of shape should be set as [`swimlane`](../../api/diagram/swimLaneModel).By Default swimlane's are arranged horizontally.
@@ -48,6 +47,8 @@ The following code example illustrates how to define a swimlane object.
 
 {% previewsample "page.domainurl/code-snippet/diagram/swimlane-cs1" %}
 {% endif %}
+
+N> When setting a Swimlane's ID, ensure that it does not contain white spaces, does not start with numbers or special characters, and does not include special characters like underscores (_) or spaces.
 
 ## Headers
 

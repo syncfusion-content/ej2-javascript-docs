@@ -67,6 +67,8 @@ To add a connection port, define the port object and add it to node’s [`ports`
 {% previewsample "page.domainurl/code-snippet/diagram/ports-cs1" %}
 {% endif %}
 
+N> When setting a Port's ID, ensure that it does not contain white spaces, does not start with numbers or special characters, and does not include special characters like underscores (_) or spaces.
+
 ## Add ports at runtime
 
 You can add ports to the nodes  at runtime by using the diagram method [`addPorts`](../../api/diagram/#addports). The following code illustrates how to add ports to node at runtime.

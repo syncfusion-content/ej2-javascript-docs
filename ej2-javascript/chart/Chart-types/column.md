@@ -568,6 +568,75 @@ The [`pointRender`](../../api/chart#pointrender) event allows you to customize e
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs428" %}
 {% endif %}
 
+## Corner Radius
+
+The [`cornerRadius`](../../api/chart/series/#cornerRadius) property in the chart series is used to customize the corner radius for bar series. This allows you to create bars with rounded corners, giving your chart a more polished appearance. You can customize each corner of the bars using the topLeft, topRight, bottomLeft, and bottomRight properties.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs428A/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs428A/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/chart-types-cs428A/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs428A" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs428A/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs428A/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs428A" %}
+{% endif %}
+
+### Point Corner Radius
+
+We can customize the corner radius for individual points in the chart series using the `pointRender` event by setting the `cornerRadius` property in its event argument.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs428B/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs428B/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/chart-types-cs428B/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs428B" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs428B/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs428B/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs428B" %}
+{% endif %}
+
+
 ## See also
 
 * [Data label](../data-labels/)

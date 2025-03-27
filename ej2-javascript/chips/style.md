@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on user preference.
 
-## Customizing the chip text
+## Customizing the Chip text
 
 Use the following CSS to customize the text properties of the chip:
 
@@ -25,7 +25,7 @@ Use the following CSS to customize the text properties of the chip:
 }
 ```
 
-## Customizing the chip icon
+## Customizing the Chip icon
 
 Use the following CSS to customize the chip icon properties.
 
@@ -36,7 +36,7 @@ Use the following CSS to customize the chip icon properties.
 }
 ```
 
-## Customizing the chip delete button
+## Customizing the Chip delete button
 
 Use the following CSS to customize the chip's delete button.
 
@@ -47,7 +47,7 @@ Use the following CSS to customize the chip's delete button.
 }
 ```
 
-## Customizing the chip outline
+## Customizing the Chip outline
 
 Use the following CSS to customize the chip outline.
 
@@ -58,7 +58,7 @@ Use the following CSS to customize the chip outline.
 }
 ```
 
-## Customizing the chip on selection
+## Customizing the Chip on selection
 
 Use the following CSS to customize the styling of chips when selected:
 
@@ -76,7 +76,7 @@ Use the following CSS to customize the styling of chips when selected:
 }
 ```
 
-## Customizing the chip avatar text
+## Customizing the Chip avatar text
 
 Use the following CSS to customize the chip avatar text properties.
 
@@ -85,4 +85,14 @@ Use the following CSS to customize the chip avatar text properties.
     background-color: #d51a1a;
     color: #fafafa;
 }
+```
+
+## Customizing the Chip height
+
+Use the following CSS to customize the Chips height.
+
+```
+.e-chip-list.e-chip {
+    height: 60px;
+  }
 ```

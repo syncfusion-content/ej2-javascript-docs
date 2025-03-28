@@ -91,7 +91,7 @@ documenteditor.selection.navigateHyperlink();
 Document Editor copies link text of a hyperlink field to the clipboard if the selection is in hyperlink. Refer to the following example.
 
 ```ts
-documenteditor .selection.copyHyperlink();
+documenteditor.selection.copyHyperlink();
 ```
 
 ## Add hyperlink
@@ -138,7 +138,7 @@ Also Document Editor expose API [`insertHyperlink()`](../api/document-editor/edi
 Refer to the following sample code.
 
 ```ts
-documenteditor.insertHyperlink('https://www.google.com', 'Google');
+documenteditor.editor.insertHyperlink('https://www.google.com', 'Google');
 ```
 
 ## Customize screen tip
@@ -146,7 +146,7 @@ documenteditor.insertHyperlink('https://www.google.com', 'Google');
 You can customize the screen tip text for the hyperlink by using below sample code.
 
 ```ts
-documenteditor.insertHyperlink('https://www.google.com', 'Google', '<<Screen tip text>>');
+documenteditor.editor.insertHyperlink('https://www.google.com', 'Google', '<<Screen tip text>>');
 ```
 
 Screen tip text can be modified through UI by using the [Hyperlink dialog](../document-editor/dialog#hyperlink-dialog)

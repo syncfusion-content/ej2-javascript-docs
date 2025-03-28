@@ -63,14 +63,14 @@ You can also do it programmatically by using the exposed API. Refer to the follo
 let documentEditor: DocumentEditor = new DocumentEditor({ enableEditor: true, isReadOnly: false, enableSelection: true });
 documentEditor.appendTo('#DocumentEditor');
 /*Open any existing document*/
-editor.open('');
+documentEditor.open('');
 //Table of contents settings.
 let tocSettings: TableOfContentsSettings =
 {
       startLevel: 1, endLevel: 3, includeHyperlink: true, includePageNumber: true, rightAlign: true
 };
 //Insert table of contents in Document Editor.
-editor.editorModule.insertTableOfContents(tocSettings);
+documentEditor.editorModule.insertTableOfContents(tocSettings);
 ```
 
 >Same method is used for inserting, updating, and editing table of contents. This will work based on the current element at cursor position and the optional settings parameter. If table of contents is present at cursor position, the update operation will be done based on the optional settings parameter. Otherwise, the insert operation will be done.

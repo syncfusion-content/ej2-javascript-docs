@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 # Getting started in ##Platform_Name## Grid control
 
 This section explains the steps to create a simple Grid and demonstrates the basic usage of the grid component using the Essential JS 2
-[quickstart](https://github.com/syncfusion/ej2-quickstart.git) seed repository. This seed repository is pre-configured with the Essential JS 2 package.
+[quickstart](https://github.com/syncfusion/ej2-quickstart) seed repository. This seed repository is pre-configured with the Essential JS 2 package.
 
 ## Dependencies
 
@@ -32,7 +32,7 @@ Following is the list of minimum dependencies required to use the grid.
 
 ## Setup for local development
 
-Clone the Essential JS 2 quickstart application project from [GitHub](https://github.com/syncfusion/ej2-quickstart.git), and install the necessary npm packages using the following command line scripts.
+Clone the Essential JS 2 quickstart application project from [GitHub](https://github.com/syncfusion/ej2-quickstart), and install the necessary npm packages using the following command line scripts.
 
 ```
 git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
@@ -326,8 +326,8 @@ Output will be displayed as follows.
 
 ## See Also
 
-* [Overview of Grid](https://www.syncfusion.com/blogs/post/overview-of-grid-in-essential-js-2-part-1.aspx)
-* [Introduction to the Grid control](https://www.syncfusion.com/blogs/post/introduction-to-the-grid-control-for-javascript.aspx)
+* [Overview of Grid](https://www.syncfusion.com/blogs/post/overview-of-grid-in-essential-js-2-part-1)
+* [Introduction to the Grid control](https://www.syncfusion.com/blogs/post/introduction-to-the-grid-control-for-javascript)
 * [How to display a table data after clicking Submit button in JavaScript?](https://support.syncfusion.com/kb/article/10145/how-to-display-a-table-data-after-clicking-submit-button)
 * [How to display table in popup window using JavaScript?](https://support.syncfusion.com/kb/article/10339/how-to-display-table-in-popup-window-using-javascript)
 * [How to open pdf document on button click inside a Grid](https://support.syncfusion.com/kb/article/10246/how-to-open-pdf-document-on-button-click-inside-a-grid)

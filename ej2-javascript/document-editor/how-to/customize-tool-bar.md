@@ -33,7 +33,7 @@ let toolItem: CustomToolbarItemModel = {
 let container: DocumentEditorContainer = new DocumentEditorContainer({
     toolbarItems: [toolItem, 'Undo', 'Redo', 'Separator', 'Image', 'Table', 'Hyperlink', 'Bookmark', 'TableOfContents', 'Separator', 'Header', 'Footer', 'PageSetup', 'PageNumber', 'Break', 'InsertFootnote', 'InsertEndnote', 'Separator', 'Find', 'Separator', 'Comments', 'TrackChanges', 'Separator', 'LocalClipboard', 'RestrictEditing', 'Separator', 'FormFields', 'UpdateFields','ContentControl']
 });
-
+container.appendTo('#container');
 //To handle custom toolbar click event.
 container.toolbarClick = (args: ClickEventArgs): void => {
     switch (args.item.id) {

@@ -255,6 +255,57 @@ Consider the following sample where the `ignoreAccent` property is set to true i
 {% previewsample "page.domainurl/code-snippet/grid/filter-diacritics-cs1" %}
 {% endif %}
 
+## Perform ENUM column filtering
+
+The Syncfusion ##Platform_Name## Grid allows you to filter enum-type data using the [FilterBarTemplate](../../api/grid/column/#filterbartemplate) feature. This is particularly useful for filtering predefined values, such as categories or statuses.
+
+To achieve this functionality:
+
+{% if page.publishingplatform == "typescript" %}
+
+1. Render [DropDownList](https://ej2.syncfusion.com/documentation/drop-down-list/getting-started) in the `FilterBarTemplate` for the enum-type column.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+1. Render [DropDownList](https://ej2.syncfusion.com/javascript/documentation/drop-down-list/getting-started) in the `FilterBarTemplate` for the enum-type column.
+
+{% endif %}
+
+2. Bind the enumerated list data to the column.
+
+3. Use the [template](../../api/grid/column/#template) property in the **Type** column to display enum values in a readable format.
+
+4. In the [change](../../api/drop-down-list#change) event of the **DropDownList**, dynamically filter the column using the [filterByColumn](../../api/grid#filterbycolumn) method of the Syncfusion ##Platform_Name## Grid.
+
+Below is an example demonstrating how to filter enum-type data in a Syncfusion ##Platform_Name## Grid:
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/enum-filtering-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/enum-filtering-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/enum-filtering-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/enum-filtering-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/enum-filtering-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/enum-filtering-cs1" %}
+{% endif %}
+
 ## Filtering with case sensitivity
 
 The Syncfusion ##Platform_Name## Grid provides the flexibility to enable or disable case sensitivity during filtering. This feature is useful when you want to control whether filtering operations should consider the case of characters. It can be achieved by using the  [enableCaseSensitivity](../../api/grid/filterSettings/#enablecasesensitivity) property within the [filterSettings](../../api/grid/filterSettings) of the grid.

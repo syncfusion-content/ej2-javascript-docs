@@ -42,7 +42,7 @@ Accumulation Chart can be given a title using [`title`](../api/accumulation-char
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs62" %}
 {% endif %}
 
-## Title customization
+## Title Customization
 
 Accumulation Chart can be customizing a title using [`titleStyle`](../api/accumulation-chart/accumulationChartModel/#titlestyle) property.
 
@@ -75,7 +75,7 @@ Accumulation Chart can be customizing a title using [`titleStyle`](../api/accumu
 
 ### Position
 
-The `position` property customizes the placement of the accumulation chart title. It supports the following options: `Right`, `Left`, `Bottom`, `Top`, and `Custom`. The Custom option allows you to position the title anywhere on the chart using x and y coordinates, providing flexible title alignment based on layout requirements.
+The [`position`](../api/accumulation-chart/titleStyleSettings/#position) property customizes the placement of the accumulation chart title. It supports the following options: `Right`, `Left`, `Bottom`, `Top`, and `Custom`. The Custom option allows you to position the title anywhere on the chart using x and y coordinates, providing flexible title alignment based on layout requirements.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -135,7 +135,7 @@ Accumulation Chart can be given a subtitle using [`subTitle`](../api/accumulatio
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs64" %}
 {% endif %}
 
-## SubTitle customization
+## SubTitle Customization
 
 Accumulation Chart can be customizing a subtitle using [`subTitleStyle`](../api/accumulation-chart/accumulationChartModel/#subtitlestyle) property, to show the information about the data plotted.
 
@@ -168,7 +168,7 @@ Accumulation Chart can be customizing a subtitle using [`subTitleStyle`](../api/
 
 ### Position
 
-The `position` property customizes the placement of the accumulation chart subtitle. It supports the following options: `Right`, `Left`, `Bottom`, `Top`, and `Custom`. The Custom option allows you to position the subtitle anywhere on the chart using x and y coordinates, providing flexible subtitle alignment based on layout requirements.
+The [`position`](../api/accumulation-chart/titleStyleSettings/#position) property customizes the placement of the accumulation chart subtitle. It supports the following options: `Right`, `Left`, `Bottom`, `Top`, and `Custom`. The Custom option allows you to position the subtitle anywhere on the chart using x and y coordinates, providing flexible subtitle alignment based on layout requirements.
 
 {% if page.publishingplatform == "typescript" %}
 

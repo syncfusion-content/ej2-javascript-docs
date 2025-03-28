@@ -1731,6 +1731,45 @@ Here's an example:
 
 > Note: You can access all field names mapped from the Scheduler dataSource within your template, including `subject`, `description`, `location`, `startTime`, and `endTime`.
 
+### How to prevent the tooltip for specific events
+
+By using the [`tooltipOpen`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettingsModel/#tooltipOpen) event, you can selectively control when tooltips appear, based on appointment data or other custom conditions.
+
+To prevent a tooltip from appearing for certain events, you can set the `cancel` property to `true` within the `tooltipOpen` event. This ensures that tooltips are only displayed for the relevant appointments, improving user experience by minimizing unnecessary distractions.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/schedule/before-tooltip-open/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/schedule/before-tooltip-open/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/schedule/before-tooltip-open/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/schedule/before-tooltip-open" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/schedule/before-tooltip-open/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/schedule/before-tooltip-open/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/schedule/before-tooltip-open/es5-datasource.js %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/schedule/before-tooltip-open" %}
+{% endif %}
+
 ## Appointment filtering
 
 You can filter appointments based on specific criteria using the [`query`](../api/schedule/eventSettings/#query) option in [`eventSettings`](../api/schedule/eventSettings/). 

@@ -464,9 +464,9 @@ The [`pointRender`](../../api/chart#pointrender) event allows you to customize e
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs438" %}
 {% endif %}
 
-## Stack labels
+## Stack Labels
 
-The `stackLabels` in stacked charts display cumulative total values for stack segments directly using data labels. If a stacked point has negative values, the stack labels are displayed below the point.
+The stack labels in stacked charts display cumulative total values for stack segments directly using data labels. If a stacked point has negative values, the stack labels are displayed below the point.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -498,18 +498,18 @@ The `stackLabels` in stacked charts display cumulative total values for stack se
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs492" %}
 {% endif %}
 
-### Stack labels customization
+### Stack Labels Customization
 Stack labels have various properties for customization to enhance the visual based on your requirements:
 
-* `visible` - Specifies whether stack labels are visible. Setting to true will display the labels. Default is false.
-* `fill` - Defines the background color of the stack labels. Accepts valid CSS color strings (hex, RGBA, etc.). Default is transparent.
-* `format` - Formats the text displayed in the stack labels. Supports placeholders like {value}. Default is null.
-* `angle` - Specifies the rotation angle for stack labels in degrees. Default is 0.
-* `rx` - Defines the rounded corner radius along the X-axis (horizontal direction) for the stack label background. Default is 5.
-* `ry` - Defines the rounded corner radius along the Y-axis (vertical direction) for the stack label background. Default is 5.
-* `margin` - Configures the margin around the stack label (left, right, top, and bottom).
-* `border` - Configures the appearance of the stack label's border.
-* `font` - Customizes the stack label text, including font size, color, style, weight, and family.
+* [`visible`](../../api/chart/stackLabelSettings/#visible) - Specifies whether stack labels are visible. Setting to true will display the labels. Default is false.
+* [`fill`](../../api/chart/stackLabelSettings/#fill) - Defines the background color of the stack labels. Accepts valid CSS color strings (hex, RGBA, etc.). Default is transparent.
+* [`format`](../../api/chart/stackLabelSettings/#format) - Formats the text displayed in the stack labels. Supports placeholders like {value}. Default is null.
+* [`angle`](../../api/chart/stackLabelSettings/#angle) - Specifies the rotation angle for stack labels in degrees. Default is 0.
+* [`rx`](../../api/chart/stackLabelSettings/#rx) - Defines the rounded corner radius along the X-axis (horizontal direction) for the stack label background. Default is 5.
+* [`ry`](../../api/chart/stackLabelSettings/#ry) - Defines the rounded corner radius along the Y-axis (vertical direction) for the stack label background. Default is 5.
+* [`margin`](../../api/chart/stackLabelSettings/#margin) - Configures the margin around the stack label (left, right, top, and bottom).
+* [`border`](../../api/chart/stackLabelSettings/#border) - Configures the appearance of the stack label's border.
+* [`font`](../../api/chart/stackLabelSettings/#font) - Customizes the stack label text, including font size, color, style, weight, and family.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -543,7 +543,7 @@ Stack labels have various properties for customization to enhance the visual bas
 
 ## Corner Radius
 
-The [`cornerRadius`](../../api/chart/series/#cornerRadius) property in the chart series is used to customize the corner radius for bar series. This allows you to create bars with rounded corners, giving your chart a more polished appearance. You can customize each corner of the bars using the topLeft, topRight, bottomLeft, and bottomRight properties.
+The [`cornerRadius`](../../api/chart/series/#cornerradius) property in the chart series is used to customize the corner radius for bar series. This allows you to create bars with rounded corners, giving your chart a more polished appearance. You can customize each corner of the bars using the topLeft, topRight, bottomLeft, and bottomRight properties.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -577,7 +577,7 @@ The [`cornerRadius`](../../api/chart/series/#cornerRadius) property in the chart
 
 ### Point Corner Radius
 
-We can customize the corner radius for individual points in the chart series using the `pointRender` event by setting the `cornerRadius` property in its event argument.
+We can customize the corner radius for individual points in the chart series using the [`pointRender`](../../api/chart/iPointRenderEventArgs/) event by setting the [`cornerRadius`] (../../api/chart/iPointRenderEventArgs/#cornerradius) property in its event argument.
 
 {% if page.publishingplatform == "typescript" %}
 

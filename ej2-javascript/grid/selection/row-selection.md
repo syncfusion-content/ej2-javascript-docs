@@ -516,3 +516,747 @@ In the following example, row selection is canceled when the value of **Customer
 
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs192" %}
 {% endif %}
+
+## Pass selected records to server using AJAX
+
+The Syncfusion ##Platform_Name## Grid allows you to select multiple or single records and send them to the server using AJAX requests. This feature is useful for scenarios where you need to process or manipulate selected data on the server side.
+
+To achieve passing selected records to the server using AJAX requests in the Syncfusion ##Platform_Name## Grid, follow these steps:
+
+{% if page.publishingplatform == "typescript" %}
+ 
+**Step 1:** Open Visual Studio and create an project followed by this [link](https://ej2.syncfusion.com/documentation/grid/connecting-to-adaptors/web-api-adaptor#creating-an-api-service) and named **SelectedRecord**. 
+
+**Step 2 :** Create a simple ##Platform_Name## Grid by following the [Getting Started](https://ej2.syncfusion.com/documentation/grid/getting-started) documentation link.
+
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+**Step 1:** Open Visual Studio and create an project followed by this [link](https://ej2.syncfusion.com/javascript/documentation/grid/connecting-to-adaptors/web-api-adaptor#creating-an-api-service) and named **SelectedRecord**. 
+
+**Step 2 :** Create a simple ##Platform_Name## Grid by following the [Getting Started](https://ej2.syncfusion.com/javascript/documentation/grid/getting-started) documentation link.
+
+{% endif %}
+
+**Step 3:** In your ##Platform_Name## control HTML file (e.g., **index.html**), add a button to trigger the AJAX call and include the Syncfusion ##Platform_Name## Grid with necessary configurations.
+{% if page.publishingplatform == "typescript" %}
+ 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EJ2 Grid</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Typescript Grid Control" />
+    <meta name="author" content="Syncfusion" />
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/bootstrap5.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/styles/bootstrap5.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/bootstrap5.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/bootstrap5.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-richtexteditor/styles/bootstrap5.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/bootstrap5.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/styles/bootstrap5.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/styles/bootstrap5.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/bootstrap5.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/styles/bootstrap5.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-notifications/styles/bootstrap5.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/styles/bootstrap5.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id='container'>
+        <button id="sendRecords">Pass the selected records to controller</button>
+        <div id='Grid'></div>
+    </div>
+</body>
+</html>
+```
+
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EJ2 Grid</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Javascript Grid Control">
+    <meta name="author" content="Syncfusion">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/bootstrap5.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/styles/bootstrap5.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/bootstrap5.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/bootstrap5.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-richtexteditor/styles/bootstrap5.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/bootstrap5.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/styles/bootstrap5.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/styles/bootstrap5.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/bootstrap5.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/styles/bootstrap5.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-notifications/styles/bootstrap5.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/styles/bootstrap5.css" rel="stylesheet">
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="container">
+        <button id="sendRecords">Pass the selected records to controller</button>
+        <div id="Grid"></div>
+    </div>
+    <script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>
+```
+{% endif %}
+
+{% if page.publishingplatform == "typescript" %}
+
+**Step 4:** In your ##Platform_Name## control (**index.ts**), retrieve the button element and add an event listener. When clicked, retrieve the selected records using the [getSelectedRecords](../../api/grid/#getselectedrecords) method from the Syncfusion Platform_Name## Grid and send them to the server using AJAX. Add the following code:
+ 
+```ts
+import { Grid, Selection } from '@syncfusion/ej2-grids';
+import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
+import { Ajax } from '@syncfusion/ej2-base';
+
+let data: DataManager = new DataManager({
+    url: 'https://localhost:****/api/Grid', // Replace your hosted link.
+    adaptor: new UrlAdaptor()
+});
+
+
+let grid: Grid = new Grid({
+    dataSource: data,
+    selectionSettings: { type: 'Multiple' },
+    columns: [
+        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, isPrimaryKey: true, type: 'number' },
+        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
+        { field: 'ShipCity', headerText: 'Ship City', width: 140 },
+        { field: 'ShipCountry', headerText: 'Ship Country', width: 140 }
+    ]
+});
+grid.appendTo('#Grid');
+
+(document.getElementById('sendRecords') as HTMLElement).addEventListener('click', function () {
+    if (grid) {
+        let selectedRecords = grid.getSelectedRecords();
+        let rows = JSON.stringify(selectedRecords);
+
+        let ajax = new Ajax({
+            url: 'https://localhost:****/api/Grid/SelectRecord', // Replace your hosted link.
+            type: 'POST',
+            contentType: 'application/json; charset=utf-8',
+            data: rows,
+        });
+        ajax.onSuccess = (response: string) => {
+            console.log('Data sent successfully:', response);
+        };
+        ajax.onFailure = (error: string) => {
+            console.error('Error sending data:', error);
+        };
+        ajax.send();
+    }
+});
+```
+
+{% elsif page.publishingplatform == "javascript" %}
+ 
+**Step 4:** In your ##Platform_Name## control (**index.js**), retrieve the button element and add an event listener. When clicked, retrieve the selected records using the [getSelectedRecords](../../api/grid/#getselectedrecords) method from the Syncfusion Platform_Name## Grid and send them to the server using AJAX. Add the following code:
+
+```js
+var data = new ej.data.DataManager({
+    url: 'https://localhost:****/api/Grid', // Replace your hosted link.
+    adaptor: new ej.data.UrlAdaptor()
+});
+
+var grid = new ej.grids.Grid({
+    dataSource: data,
+    selectionSettings: { type: 'Multiple' },
+    columns: [
+        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, isPrimaryKey: true, type: 'number' },
+        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
+        { field: 'ShipCity', headerText: 'ShipCity', width: 140 },
+        { field: 'ShipCountry', headerText: 'ShipCountry', width: 140 }
+    ]
+});
+grid.appendTo('#Grid');
+
+document.getElementById('sendRecords').addEventListener('click', function () {
+    if (grid) {
+        var selectedRecords = grid.getSelectedRecords();
+        var rows = JSON.stringify(selectedRecords);
+        var ajax = new ej.base.Ajax({
+            url: 'https://localhost:****/api/Grid/SelectRecord', // Replace your hosted link.
+            type: 'POST',
+            contentType: 'application/json; charset=utf-8',
+            data: rows,
+        });
+        ajax.onSuccess = (response) => {
+            console.log('Data sent successfully:', response);
+        };
+        ajax.onFailure = (error) => {
+            console.error('Error sending data:', error);
+        };
+        ajax.send();
+    }
+});
+```
+{% endif %}
+
+**Step 5:** On the server side, create a controller named **GridController.cs** under the **Controllers** folder to handle incoming requests and process selected records. Add the following code:
+
+```cs
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Syncfusion.EJ2.Base;
+using SelectedReacord.Models;
+namespace SelectedReacord.Controllers
+{
+    [ApiController]
+    public class GridController : Controller
+    {
+        [HttpPost]
+        [Route("api/[controller]")]
+        public object Post([FromBody] DataManagerRequest DataManagerRequest)
+        {
+            // Retrieve data from the data source (e.g., database).
+            IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
+            QueryableOperation queryableOperation = new QueryableOperation(); // Initialize DataOperations instance.
+            // Handling searching operation.
+            if (DataManagerRequest.Search != null && DataManagerRequest.Search.Count > 0)
+            {
+                DataSource = queryableOperation.PerformSearching(DataSource, DataManagerRequest.Search);
+            }
+            // Handling filtering operation.
+            if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
+            {
+                foreach (var condition in DataManagerRequest.Where)
+                {
+                    foreach (var predicate in condition.predicates)
+                    {
+                        DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, predicate.Operator);
+                    }
+                }
+            }
+            // Handling sorting operation.
+            if (DataManagerRequest.Sorted != null && DataManagerRequest.Sorted.Count > 0)
+            {
+                DataSource = queryableOperation.PerformSorting(DataSource, DataManagerRequest.Sorted);
+            }
+            // Get the total count of records.
+            int totalRecordsCount = DataSource.Count();
+
+            // Handling paging operation.
+            if (DataManagerRequest.Skip != 0)
+            {
+                DataSource = queryableOperation.PerformSkip(DataSource, DataManagerRequest.Skip);
+            }
+            if (DataManagerRequest.Take != 0)
+            {
+                DataSource = queryableOperation.PerformTake(DataSource, DataManagerRequest.Take);
+            }
+            // Return data based on the request.
+            return new { result = DataSource, count = totalRecordsCount };
+        }
+
+        [HttpGet]
+        [Route("api/[controller]")]
+        public List<OrdersDetails> GetOrderData()
+        {
+            var data = OrdersDetails.GetAllRecords().ToList();
+            return data;
+        }
+        [HttpPost]
+        [Route("api/[controller]/SelectRecord")]
+        public ActionResult SelectRecord([FromBody] List<Gridcolumns> row)
+        {
+            return Json(row);
+        }
+        public class SelectedModel
+        {
+            public List<Gridcolumns> rowData { get; set; }
+        }
+        public class Gridcolumns
+        {
+            public int OrderID { get; set; }
+            public string CustomerID { get; set; }
+            public int EmployeeID { get; set; }
+            public DateTime OrderDate { get; set; }
+        }
+    }
+}
+
+```
+
+**Step 6:** Create a model class named **OrdersDetails.cs** under the **Models** folder in the server-side project to represent the order data. Add the following code:
+
+```cs
+namespace SelectedReacord.Models
+{
+    public class OrdersDetails
+    {
+        public static List<OrdersDetails> order = new List<OrdersDetails>();
+        public OrdersDetails()
+        {
+
+        }
+        public OrdersDetails(
+        int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified,
+        DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry,
+        DateTime ShippedDate, string ShipAddress)
+        {
+            this.OrderID = OrderID;
+            this.CustomerID = CustomerId;
+            this.EmployeeID = EmployeeId;
+            this.Freight = Freight;
+            this.ShipCity = ShipCity;
+            this.Verified = Verified;
+            this.OrderDate = OrderDate;
+            this.ShipName = ShipName;
+            this.ShipCountry = ShipCountry;
+            this.ShippedDate = ShippedDate;
+            this.ShipAddress = ShipAddress;
+        }
+
+        public static List<OrdersDetails> GetAllRecords()
+        {
+            if (order.Count() == 0)
+            {
+                int code = 10000;
+                for (int i = 1; i < 10; i++)
+                {
+                    order.Add(new OrdersDetails(code + 1, "ALFKI", i + 0, 2.3 * i, false, new DateTime(1991, 05, 15), "Berlin", "Simons bistro", "Denmark", new DateTime(1996, 7, 16), "Kirchgasse 6"));
+                    order.Add(new OrdersDetails(code + 2, "ANATR", i + 2, 3.3 * i, true, new DateTime(1990, 04, 04), "Madrid", "Queen Cozinha", "Brazil", new DateTime(1996, 9, 11), "Avda. Azteca 123"));
+                    order.Add(new OrdersDetails(code + 3, "ANTON", i + 1, 4.3 * i, true, new DateTime(1957, 11, 30), "Cholchester", "Frankenversand", "Germany", new DateTime(1996, 10, 7), "Carrera 52 con Ave. Bolívar #65-98 Llano Largo"));
+                    order.Add(new OrdersDetails(code + 4, "BLONP", i + 3, 5.3 * i, false, new DateTime(1930, 10, 22), "Marseille", "Ernst Handel", "Austria", new DateTime(1996, 12, 30), "Magazinweg 7"));
+                    order.Add(new OrdersDetails(code + 5, "BOLID", i + 4, 6.3 * i, true, new DateTime(1953, 02, 18), "Tsawassen", "Hanari Carnes", "Switzerland", new DateTime(1997, 12, 3), "1029 - 12th Ave. S."));
+                    code += 5;
+                }
+            }
+            return order;
+        }
+        
+        public int? OrderID { get; set; }
+        public string? CustomerID { get; set; }
+        public int? EmployeeID { get; set; }
+        public double? Freight { get; set; }
+        public string? ShipCity { get; set; }
+        public bool? Verified { get; set; }
+        public DateTime OrderDate { get; set; }
+        public string? ShipName { get; set; }
+        public string? ShipCountry { get; set; }
+        public DateTime ShippedDate { get; set; }
+        public string? ShipAddress { get; set; }
+    }
+}
+
+```
+
+**Step 7:** In the **Program.cs** file, add the following code:
+
+```cs
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder =>
+    {
+        builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+    });
+});
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+var app = builder.Build();
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+app.UseDefaultFiles();
+app.UseStaticFiles();
+app.UseCors();
+app.UseHttpsRedirection();
+app.UseAuthorization();
+app.MapControllers();
+app.Run();
+```
+
+The following screenshot shows how to pass selected records to the server:
+
+![Pass selected records to server using ajax](../../grid/images/row-selected-record.png)
+
+## Pass selected records to server using FETCH
+
+The Syncfusion ##Platform_Name## Grid allows you to select multiple or single records and send them to the server using Fetch requests. This feature is useful for scenarios where you need to process or manipulate selected data on the server side.
+
+To achieve passing selected records to the server using Fetch requests in the Syncfusion ##Platform_Name## Grid, follow these steps:
+
+{% if page.publishingplatform == "typescript" %}
+
+**Step 1:** Open Visual Studio and create an project followed by this [link](https://ej2.syncfusion.com/documentation/grid/connecting-to-adaptors/web-api-adaptor#creating-an-api-service) and named **SelectedRecord**.
+ 
+**Step 2 :** Create a simple ##Platform_Name## Grid by following the [Getting Started](https://ej2.syncfusion.com/documentation/grid/getting-started) documentation link.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+**Step 1:** Open Visual Studio and create an project followed by this [link](https://ej2.syncfusion.com/javascript/documentation/grid/connecting-to-adaptors/web-api-adaptor#creating-an-api-service) and named **SelectedRecord**.
+ 
+**Step 2 :** Create a simple ##Platform_Name## Grid by following the [Getting Started](https://ej2.syncfusion.com/javascript/documentation/grid/getting-started) documentation link.
+
+{% endif %}
+
+**Step 3:** In your ##Platform_Name## control HTML file (e.g., **index.html**), add a button to trigger the Fetch call and include the Syncfusion ##Platform_Name## Grid with necessary configurations.
+
+{% if page.publishingplatform == "typescript" %}
+ 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EJ2 Grid</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Typescript Grid Control" />
+    <meta name="author" content="Syncfusion" />
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/bootstrap5.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/styles/bootstrap5.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/bootstrap5.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/bootstrap5.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-richtexteditor/styles/bootstrap5.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/bootstrap5.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/styles/bootstrap5.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/styles/bootstrap5.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/bootstrap5.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/styles/bootstrap5.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-notifications/styles/bootstrap5.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/styles/bootstrap5.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id='container'>
+        <button id="sendRecords">Pass the selected records to controller</button>
+        <div id='Grid'></div>
+    </div>
+</body>
+</html>
+```
+
+ {% elsif page.publishingplatform == "javascript" %}
+ 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EJ2 Grid</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Javascript Grid Control">
+    <meta name="author" content="Syncfusion">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/bootstrap5.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/styles/bootstrap5.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/bootstrap5.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/bootstrap5.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-richtexteditor/styles/bootstrap5.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/bootstrap5.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/styles/bootstrap5.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/styles/bootstrap5.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/bootstrap5.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/styles/bootstrap5.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-notifications/styles/bootstrap5.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/styles/bootstrap5.css" rel="stylesheet">
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="container">
+        <button id="sendRecords">Pass the selected records to controller</button>
+        <div id="Grid"></div>
+    </div>
+    <script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>
+```
+{% endif %}
+
+{% if page.publishingplatform == "typescript" %}
+
+ **Step 4:** In your ##Platform_Name## control (**index.ts**), retrieve the button element and add an event listener. When clicked, retrieve the selected records using the [getSelectedRecords](../../api/grid/#getselectedrecords) method from the Syncfusion Platform_Name## Grid and send them to the server using AJAX. Add the following code:
+ 
+```ts
+import { Grid, Selection } from '@syncfusion/ej2-grids';
+import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
+import { Fetch } from '@syncfusion/ej2-base';
+
+let data: DataManager = new DataManager({
+    url: 'https://localhost:****/api/Grid', // Replace your hosted link.
+    adaptor: new UrlAdaptor()
+});
+
+
+let grid: Grid = new Grid({
+    dataSource: data,
+    selectionSettings: { type: 'Multiple' },
+    columns: [
+        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, isPrimaryKey: true, type: 'number' },
+        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
+        { field: 'ShipCity', headerText: 'Ship City', width: 140 },
+        { field: 'ShipCountry', headerText: 'Ship Country', width: 140 }
+    ]
+});
+grid.appendTo('#Grid');
+
+(document.getElementById('sendRecords') as HTMLElement).addEventListener('click', function () {
+    if (grid) {
+        let selectedRecords = grid.getSelectedRecords();
+        let rows = JSON.stringify(selectedRecords);
+        // Replace your hosted link.
+        fetch('https://localhost:****/api/Grid/SelectRecord', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: rows
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    }
+});
+```
+
+{% elsif page.publishingplatform == "javascript" %}
+ 
+**Step 4:** In your ##Platform_Name## control (**index.js**), retrieve the button element and add an event listener. When clicked, retrieve the selected records using the [getSelectedRecords](../../api/grid/#getselectedrecords) method from the Syncfusion Platform_Name## Grid and send them to the server using AJAX. Add the following code:
+
+```js
+var data = new ej.data.DataManager({
+    url: 'https://localhost:****/api/Grid', // Replace your hosted link.
+    adaptor: new ej.data.UrlAdaptor()
+});
+
+var grid = new ej.grids.Grid({
+    dataSource: data,
+    selectionSettings: { type: 'Multiple' },
+    columns: [
+        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, isPrimaryKey: true, type: 'number' },
+        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
+        { field: 'ShipCity', headerText: 'ShipCity', width: 140 },
+        { field: 'ShipCountry', headerText: 'ShipCountry', width: 140 }
+    ]
+});
+grid.appendTo('#Grid');
+
+document.getElementById('sendRecords').addEventListener('click', function () {
+    if (grid) {
+        let selectedRecords = grid.getSelectedRecords();
+        let rows = JSON.stringify(selectedRecords);
+        // Replace your hosted link.
+        fetch('https://localhost:****/api/Grid/SelectRecord', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: rows
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    }
+});
+```
+{% endif %}
+
+**Step 5:** On the server side, create a controller named **GridController.cs** under the **Controllers** folder to handle incoming requests and process selected records. Add the following code:
+
+```cs
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Syncfusion.EJ2.Base;
+using SelectedReacord.Models;
+namespace SelectedReacord.Controllers
+{
+    [ApiController]
+    public class GridController : Controller
+    {
+        [HttpPost]
+        [Route("api/[controller]")]
+        public object Post([FromBody] DataManagerRequest DataManagerRequest)
+        {
+            // Retrieve data from the data source (e.g., database).
+            IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
+            QueryableOperation queryableOperation = new QueryableOperation(); // Initialize DataOperations instance.
+            // Handling searching operation.
+            if (DataManagerRequest.Search != null && DataManagerRequest.Search.Count > 0)
+            {
+                DataSource = queryableOperation.PerformSearching(DataSource, DataManagerRequest.Search);
+            }
+            // Handling filtering operation.
+            if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
+            {
+                foreach (var condition in DataManagerRequest.Where)
+                {
+                    foreach (var predicate in condition.predicates)
+                    {
+                        DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, predicate.Operator);
+                    }
+                }
+            }
+            // Handling sorting operation.
+            if (DataManagerRequest.Sorted != null && DataManagerRequest.Sorted.Count > 0)
+            {
+                DataSource = queryableOperation.PerformSorting(DataSource, DataManagerRequest.Sorted);
+            }
+            // Get the total count of records.
+            int totalRecordsCount = DataSource.Count();
+
+            // Handling paging operation.
+            if (DataManagerRequest.Skip != 0)
+            {
+                DataSource = queryableOperation.PerformSkip(DataSource, DataManagerRequest.Skip);
+            }
+            if (DataManagerRequest.Take != 0)
+            {
+                DataSource = queryableOperation.PerformTake(DataSource, DataManagerRequest.Take);
+            }
+            // Return data based on the request.
+            return new { result = DataSource, count = totalRecordsCount };
+        }
+
+        [HttpGet]
+        [Route("api/[controller]")]
+        public List<OrdersDetails> GetOrderData()
+        {
+            var data = OrdersDetails.GetAllRecords().ToList();
+            return data;
+        }
+        [HttpPost]
+        [Route("api/[controller]/SelectRecord")]
+        public ActionResult SelectRecord([FromBody] List<Gridcolumns> row)
+        {
+            return Json(row);
+        }
+        public class SelectedModel
+        {
+            public List<Gridcolumns> rowData { get; set; }
+        }
+        public class Gridcolumns
+        {
+            public int OrderID { get; set; }
+            public string CustomerID { get; set; }
+            public int EmployeeID { get; set; }
+            public DateTime OrderDate { get; set; }
+        }
+    }
+}
+
+```
+
+**Step 6:** Create a model class named **OrdersDetails.cs** under the **Models** folder in the server-side project to represent the order data. Add the following code:
+
+```cs
+namespace SelectedReacord.Models
+{
+    public class OrdersDetails
+    {
+        public static List<OrdersDetails> order = new List<OrdersDetails>();
+        public OrdersDetails()
+        {
+
+        }
+        public OrdersDetails(
+        int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified,
+        DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry,
+        DateTime ShippedDate, string ShipAddress)
+        {
+            this.OrderID = OrderID;
+            this.CustomerID = CustomerId;
+            this.EmployeeID = EmployeeId;
+            this.Freight = Freight;
+            this.ShipCity = ShipCity;
+            this.Verified = Verified;
+            this.OrderDate = OrderDate;
+            this.ShipName = ShipName;
+            this.ShipCountry = ShipCountry;
+            this.ShippedDate = ShippedDate;
+            this.ShipAddress = ShipAddress;
+        }
+
+        public static List<OrdersDetails> GetAllRecords()
+        {
+            if (order.Count() == 0)
+            {
+                int code = 10000;
+                for (int i = 1; i < 10; i++)
+                {
+                    order.Add(new OrdersDetails(code + 1, "ALFKI", i + 0, 2.3 * i, false, new DateTime(1991, 05, 15), "Berlin", "Simons bistro", "Denmark", new DateTime(1996, 7, 16), "Kirchgasse 6"));
+                    order.Add(new OrdersDetails(code + 2, "ANATR", i + 2, 3.3 * i, true, new DateTime(1990, 04, 04), "Madrid", "Queen Cozinha", "Brazil", new DateTime(1996, 9, 11), "Avda. Azteca 123"));
+                    order.Add(new OrdersDetails(code + 3, "ANTON", i + 1, 4.3 * i, true, new DateTime(1957, 11, 30), "Cholchester", "Frankenversand", "Germany", new DateTime(1996, 10, 7), "Carrera 52 con Ave. Bolívar #65-98 Llano Largo"));
+                    order.Add(new OrdersDetails(code + 4, "BLONP", i + 3, 5.3 * i, false, new DateTime(1930, 10, 22), "Marseille", "Ernst Handel", "Austria", new DateTime(1996, 12, 30), "Magazinweg 7"));
+                    order.Add(new OrdersDetails(code + 5, "BOLID", i + 4, 6.3 * i, true, new DateTime(1953, 02, 18), "Tsawassen", "Hanari Carnes", "Switzerland", new DateTime(1997, 12, 3), "1029 - 12th Ave. S."));
+                    code += 5;
+                }
+            }
+            return order;
+        }
+
+        public int? OrderID { get; set; }
+        public string? CustomerID { get; set; }
+        public int? EmployeeID { get; set; }
+        public double? Freight { get; set; }
+        public string? ShipCity { get; set; }
+        public bool? Verified { get; set; }
+        public DateTime OrderDate { get; set; }
+        public string? ShipName { get; set; }
+        public string? ShipCountry { get; set; }
+        public DateTime ShippedDate { get; set; }
+        public string? ShipAddress { get; set; }
+    }
+}
+
+```
+
+**Step 7:** In the **Program.cs** file, add the following code:
+
+```cs
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder =>
+    {
+        builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+    });
+});
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+var app = builder.Build();
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+app.UseDefaultFiles();
+app.UseStaticFiles();
+app.UseCors();
+app.UseHttpsRedirection();
+app.UseAuthorization();
+app.MapControllers();
+app.Run();
+```
+
+The following screenshot shows how to pass selected records to the server:
+
+![Pass selected records to server using fetch](../../grid/images/row-selected-record.png)

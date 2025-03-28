@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in ##Platform_Name## Grid control
 
-The Grid control followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Grid control followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the Grid control is outlined below.
 
@@ -244,7 +244,7 @@ The following example demonstrates how to prevent the default behavior of the **
 
 ### Custom shortcut keys to perform grid actions
 
-The Syncfusion ##Platform_Name## Grid control enables you to enhance the usablity of keyboard shortcuts for various grid actions and navigation. In addition to the built-in keyboard navigation capabilities, you can implement custom keyboard shortcuts to execute specific actions.
+The Syncfusion ##Platform_Name## Grid control enables you to enhance the usability of keyboard shortcuts for various grid actions and navigation. In addition to the built-in keyboard navigation capabilities, you can implement custom keyboard shortcuts to execute specific actions.
 
 To achieve this, you can utilize the [keyPressed](../api/grid/#keypressed) event of the grid. This event is triggered for every key press, allowing you to customize the behavior based on the pressed key.
 

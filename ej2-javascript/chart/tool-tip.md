@@ -205,9 +205,9 @@ The [`fill`](../api/chart/tooltipSettings/#fill) and [`border`](../api/chart/too
 {% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs21" %}
 {% endif %}
 
-## ShowNearestTooltip
+## Closest Tooltip
 
-The `showNearestTooltip` property in the chart tooltip displays tooltips based on the data points closest to the cursor.
+The [`showNearestTooltip`](../api/chart/tooltipSettings/#shownearesttooltip) property in the chart tooltip displays tooltips based on the data points closest to the cursor.
 
 {% if page.publishingplatform == "typescript" %}
 

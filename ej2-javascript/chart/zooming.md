@@ -213,7 +213,7 @@ Using the [`enableScrollbar`](../api/chart/zoomSettingsModel/#enablescrollbar) p
 {% endif %}
 
 ### Position
-The `position` property allows users to specify their preferred scrollbar location. By default, both vertical and horizontal scrollbars are rendered near their respective axes. Using the customization options below, you can position the scrollbar as desired:
+The [`position`](../api/chart/scrollbarPosition/) property allows users to specify their preferred scrollbar location. By default, both vertical and horizontal scrollbars are rendered near their respective axes. Using the customization options below, you can position the scrollbar as desired:
 
 * Default: `placeNextToAxisLine`.
 * Horizontal scrollbar: Available positions are `Top` and `Bottom`.

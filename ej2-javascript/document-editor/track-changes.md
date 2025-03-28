@@ -310,7 +310,7 @@ To demonstrate a specific use case, let's consider an example where we want to r
 import { DocumentEditorContainer, Toolbar } from '@syncfusion/ej2-documenteditor';
 DocumentEditorContainer.Inject(Toolbar);
 let container: DocumentEditorContainer = new DocumentEditorContainer({ 
-  beforeAcceptRejectChanges:{beforeAcceptRejectChanges},
+  beforeAcceptRejectChanges: beforeAcceptRejectChanges.bind(this),
   enableToolbar: true,
   height: '590px',
   currentUser: 'Hary'

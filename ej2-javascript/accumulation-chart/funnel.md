@@ -228,9 +228,9 @@ Individual points can be customized using the `pointRender` event.
 
 ## Mode
 
-The Funnel chart supports both Standard and Trapezoidal modes of rendering. The default value of the `funnelMode` is `Standard`.
+The Funnel chart supports both Standard and Trapezoidal modes of rendering. The default value of the [`funnelMode`](../api/accumulation-chart/funnelModes/) is `Standard`.
 
-### Standard Mode
+### Standard
 
 The `Standard` funnel mode follows the traditional funnel shape, with the width continuously narrowing down to a point at the bottom.
 
@@ -261,7 +261,7 @@ The `Standard` funnel mode follows the traditional funnel shape, with the width 
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs495" %}
 {% endif %}
 
-### Trapezoidal Mode
+### Trapezoidal
 
 The `Trapezoidal` mode is a modified funnel shape where the width narrows, but features a flattened or parallel section near the top, creating a trapezoidal appearance. This mode helps compare different data points more clearly while maintaining a funnel-like structure.
 

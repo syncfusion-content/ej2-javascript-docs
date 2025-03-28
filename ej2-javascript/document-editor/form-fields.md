@@ -25,7 +25,7 @@ documentEditor.editor.insertFormField('Text');
 //Insert Checkbox form field
 documentEditor.editor.insertFormField('CheckBox');
 //Insert Drop down form field
-documentEditor.editor.insertFormField('Dropdown');
+documentEditor.editor.insertFormField('DropDown');
 ```
 
 ## Get form field names
@@ -70,7 +70,7 @@ documentEditor.setFormFieldInfo('Check1', checkboxfieldInfo);
 
 // Set checkbox form field properties
 let dropdownfieldInfo: DropDownFormFieldInfo = documentEditor.getFormFieldInfo('Drop1') as DropDownFormFieldInfo;
-dropdownfieldInfo.dropDownItems = ['One', 'Two', 'Three']
+dropdownfieldInfo.dropdownItems  = ['One', 'Two', 'Three']
 dropdownfieldInfo.name = "Drop2";
 documentEditor.setFormFieldInfo('Drop1', dropdownfieldInfo);
 ```

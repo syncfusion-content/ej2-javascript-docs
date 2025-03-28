@@ -57,9 +57,17 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
             <!-- Essential JS 2 material theme -->
             <link href="resources/material.css" rel="stylesheet" type="text/css"/>
 
-            <!-- Essential JS 2 TreeView's global and dependent script -->
+            <!-- Essential JS 2 TreeView's dependent script -->
             <script src="resources/ej2-base.min.js" type="text/javascript"></script>
+            <script src="resources/ej2-data.min.js" type="text/javascript"></script>
+            <script src="resources/ej2-inputs.min.js" type="text/javascript"></script>
+            <script src="resources/ej2-popups.min.js" type="text/javascript"></script>
+            <script src="resources/ej2-lists.min.js" type="text/javascript"></script>
+            <script src="resources/ej2-buttons.min.js" type="text/javascript"></script>
             <script src="resources/ej2-navigations.min.js" type="text/javascript"></script>
+          
+            <!-- Essential JS 2 TreeView's global script -->
+            <script src="resources/ej2.min.js" type="text/javascript"></script>
        </head>
        <body>
        </body>
@@ -77,9 +85,17 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
     <!-- Essential JS 2 material theme -->
     <link href="resources/material.css" rel="stylesheet" type="text/css"/>
 
-    <!-- Essential JS 2 TreeView's global and dependent script -->
+    <!-- Essential JS 2 TreeView's dependent script -->
     <script src="resources/ej2-base.min.js" type="text/javascript"></script>
+    <script src="resources/ej2-data.min.js" type="text/javascript"></script>
+    <script src="resources/ej2-inputs.min.js" type="text/javascript"></script>
+    <script src="resources/ej2-popups.min.js" type="text/javascript"></script>
+    <script src="resources/ej2-lists.min.js" type="text/javascript"></script>
+    <script src="resources/ej2-buttons.min.js" type="text/javascript"></script>
     <script src="resources/ej2-navigations.min.js" type="text/javascript"></script>
+  
+    <!-- Essential JS 2 TreeView's global script -->
+    <script src="resources/ej2.min.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -152,6 +168,6 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
         
 {% previewsample "page.domainurl/code-snippet/treeview/es5-getting-started-cs1" %}
 
-**Step 4:** Now, run the `index.html` in web browser, it will render the `Essential JS 2 Accordion` control.
+**Step 4:** Now, run the `index.html` in web browser, it will render the `Essential JS 2 TreeView` control.
 
 > You can also explore our [JavaScript (ES5) TreeView](https://ej2.syncfusion.com/javascript/demos/#/material/treeview/default.html) to knows how to present and manipulate data.

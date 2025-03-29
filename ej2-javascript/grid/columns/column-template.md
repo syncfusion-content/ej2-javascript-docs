@@ -403,6 +403,84 @@ function queryCellInfo(args) {
 {% previewsample "page.domainurl/code-snippet/grid/column-template-cs9" %}
 {% endif %}
 
+### Render RadioButton in a column 
+
+{% if page.publishingplatform == "typescript" %} 
+
+The Syncfusion ##Platform_Name## Grid supports rendering the [RadioButton](../../radio-button/getting-started) within a column using the [template](../../api/grid/column/#template) property. This feature is particularly useful for displaying selection options, such as order statuses, payment methods, or approval choices, within the Grid.
+
+In the following example, a `RadioButton` is rendered in the **Order Status** column of the Grid by defining the `template` property.
+
+```ts
+function initializeRadioButtons(args: QueryCellInfoEventArgs){
+  if (args.column.field === 'OrderStatus') {
+    let orderStatus = args.data['OrderStatus']; // Get current row status.
+    let radioButtons = (args.cell as HTMLElement).querySelectorAll('.order-status-radio');
+    radioButtons.forEach((radio) => {
+      let status = (radio as HTMLInputElement).getAttribute('data-status');
+      let radioButton = new RadioButton({
+        label: status,
+        name: `orderStatus-${args.data['OrderID']}`, // Unique name per row.
+        checked: status === orderStatus
+      });
+      radioButton.appendTo(radio as HTMLElement);
+    });
+  }
+}
+```
+
+{% elsif page.publishingplatform == "javascript" %}
+
+The Syncfusion ##Platform_Name## Grid supports rendering the [RadioButton](../../radio-button/es5-getting-started) within a column using the [template](../../api/grid/column/#template) property. This feature is particularly useful for displaying selection options, such as order statuses, payment methods, or approval choices, within the Grid.
+
+In the following example, a `RadioButton` is rendered in the **Order Status** column of the Grid by defining the `template` property.
+
+```js
+function initializeRadioButtons(args) {
+  if (args.column.field === 'OrderStatus') {
+    let orderStatus = args.data['OrderStatus']; // Get current row status.
+    let radioButtons = args.cell.querySelectorAll('.order-status-radio');
+    radioButtons.forEach((radio) => {
+      let status = radio.getAttribute('data-status');
+      let radioButton = new ej.buttons.RadioButton({
+        label: status,
+        name: `orderStatus-${args.data['OrderID']}`, // Unique name per row.
+        checked: status === orderStatus
+      });
+      radioButton.appendTo(radio);
+    });
+  }
+}
+```
+{% endif %}
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/template-radiobutton/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/template-radiobutton/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/template-radiobutton" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/template-radiobutton/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/template-radiobutton/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/template-radiobutton" %}
+{% endif %}
+
 ## Using condition template
 
 The conditional column [template](../../api/grid/column/#template) allows you to display template elements based on specific conditions.

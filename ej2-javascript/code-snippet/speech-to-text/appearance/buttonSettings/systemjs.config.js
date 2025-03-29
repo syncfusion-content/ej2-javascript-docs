@@ -22,3 +22,7 @@ System.config({
         "@syncfusion/ej2-splitbuttons": "syncfusion:ej2-splitbuttons/dist/ej2-splitbuttons.umd.min.js"
     }
 });
+System.import('index.ts').catch(console.error.bind(console)).then(function () {
+    document.getElementById('loader').style.display = "none";
+    document.getElementById('container').style.visibility = "visible";
+});

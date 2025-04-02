@@ -165,9 +165,6 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speech-to-text/getting-started/es5-getting-started-cs1/index.html %}
 {% endhighlight %}
-{% highlight css tabtitle="styles.css" %}
-{% include code-snippet/speech-to-text/getting-started/es5-getting-started-cs1/index.css %}
-{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/speech-to-text/getting-started/es5-getting-started-cs1" %}
@@ -183,9 +180,6 @@ You can use the [content](../api/speech-to-text/buttonSettingsModel/#content) pr
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speech-to-text/getting-started/buttonContent/index.html %}
-{% endhighlight %}
-{% highlight css tabtitle="styles.css" %}
-{% include code-snippet/speech-to-text/getting-started/buttonContent/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

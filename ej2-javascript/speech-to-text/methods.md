@@ -30,9 +30,6 @@ Below sample demonstrates the SpeechToText control configured with above methods
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speech-to-text/methods/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="index.css" %}
-{% include code-snippet/speech-to-text/methods/index.css %}
-{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/speech-to-text/methods" %}
@@ -45,9 +42,6 @@ Below sample demonstrates the SpeechToText control configured with above methods
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speech-to-text/methods/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="index.css" %}
-{% include code-snippet/speech-to-text/methods/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

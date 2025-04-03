@@ -51,4 +51,13 @@
                     textareaObj.appendTo('#textareaInst');
                </script>
           </body>
+          <style>
+               #container {
+                    margin: 50px auto;
+                    gap: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+               }
+          </style>
      </html>

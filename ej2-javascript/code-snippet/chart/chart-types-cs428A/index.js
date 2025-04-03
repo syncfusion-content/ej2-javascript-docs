@@ -14,7 +14,6 @@ var chart = new ej.charts.Chart({
         title: 'Countries'
     },
     primaryYAxis: {
-        minimum: 0,
         maximum: 80,
         interval: 20,
         title: 'Medals'

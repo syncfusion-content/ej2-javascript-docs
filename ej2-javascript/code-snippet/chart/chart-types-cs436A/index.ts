@@ -10,7 +10,6 @@ let chart: Chart = new Chart({
         title: 'Year'
     },
     primaryYAxis: {
-        minimum: 3, 
         maximum: 12,
         interval: 1, 
         title: 'Percentage',

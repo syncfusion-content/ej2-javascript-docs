@@ -50,9 +50,6 @@ Below code sample demonstrates how to configure the button with above mentioned 
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speech-to-text/appearance/buttonSettings/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="index.css" %}
-{% include code-snippet/speech-to-text/appearance/buttonSettings/index.css %}
-{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/speech-to-text/appearance/buttonSettings" %}
@@ -65,9 +62,6 @@ Below code sample demonstrates how to configure the button with above mentioned 
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speech-to-text/appearance/buttonSettings/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="index.css" %}
-{% include code-snippet/speech-to-text/appearance/buttonSettings/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -101,9 +95,6 @@ Below code sample demonstrates how to configure the tooltip with above mentioned
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speech-to-text/appearance/tooltipSettings/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="index.css" %}
-{% include code-snippet/speech-to-text/appearance/tooltipSettings/index.css %}
-{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/speech-to-text/appearance/tooltipSettings" %}
@@ -116,9 +107,6 @@ Below code sample demonstrates how to configure the tooltip with above mentioned
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speech-to-text/appearance/tooltipSettings/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="index.css" %}
-{% include code-snippet/speech-to-text/appearance/tooltipSettings/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -151,9 +139,6 @@ You can use the [cssClass](../api/speech-to-text#cssClass) property to customize
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speech-to-text/appearance/cssClass/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="index.css" %}
-{% include code-snippet/speech-to-text/appearance/cssClass/index.css %}
-{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/speech-to-text/appearance/cssClass" %}
@@ -166,9 +151,6 @@ You can use the [cssClass](../api/speech-to-text#cssClass) property to customize
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speech-to-text/appearance/cssClass/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="index.css" %}
-{% include code-snippet/speech-to-text/appearance/cssClass/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

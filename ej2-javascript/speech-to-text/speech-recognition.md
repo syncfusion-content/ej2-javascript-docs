@@ -24,9 +24,6 @@ You can use the [transcript](../api/speech-to-text#transcript) property to retri
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speech-to-text/speechRecognition/transcript/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="index.css" %}
-{% include code-snippet/speech-to-text/speechRecognition/transcript/index.css %}
-{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/transcript" %}
@@ -39,9 +36,6 @@ You can use the [transcript](../api/speech-to-text#transcript) property to retri
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speech-to-text/speechRecognition/transcript/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="index.css" %}
-{% include code-snippet/speech-to-text/speechRecognition/transcript/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -61,9 +55,6 @@ You can use the [lang](../api/speech-to-text#lang) property to specify the langu
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speech-to-text/speechRecognition/language/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="index.css" %}
-{% include code-snippet/speech-to-text/speechRecognition/language/index.css %}
-{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/language" %}
@@ -76,9 +67,6 @@ You can use the [lang](../api/speech-to-text#lang) property to specify the langu
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speech-to-text/speechRecognition/language/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="index.css" %}
-{% include code-snippet/speech-to-text/speechRecognition/language/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -98,9 +86,6 @@ You can use the [allowInterimResults](../api/speech-to-text#allowInterimResults)
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speech-to-text/speechRecognition/interimResults/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="index.css" %}
-{% include code-snippet/speech-to-text/speechRecognition/interimResults/index.css %}
-{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/interimResults" %}
@@ -113,9 +98,6 @@ You can use the [allowInterimResults](../api/speech-to-text#allowInterimResults)
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speech-to-text/speechRecognition/interimResults/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="index.css" %}
-{% include code-snippet/speech-to-text/speechRecognition/interimResults/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -149,9 +131,6 @@ Below sample demonstrates the usage of [listeningState](../api/speech-to-text#li
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speech-to-text/speechRecognition/listeningState/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="index.css" %}
-{% include code-snippet/speech-to-text/speechRecognition/listeningState/index.css %}
-{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/listeningState" %}
@@ -164,9 +143,6 @@ Below sample demonstrates the usage of [listeningState](../api/speech-to-text#li
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speech-to-text/speechRecognition/listeningState/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="index.css" %}
-{% include code-snippet/speech-to-text/speechRecognition/listeningState/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -186,9 +162,6 @@ You can use the [showTooltip](../api/speech-to-text#showTooltip) property to spe
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speech-to-text/speechRecognition/showTooltip/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="index.css" %}
-{% include code-snippet/speech-to-text/speechRecognition/showTooltip/index.css %}
-{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/showTooltip" %}
@@ -201,9 +174,6 @@ You can use the [showTooltip](../api/speech-to-text#showTooltip) property to spe
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speech-to-text/speechRecognition/showTooltip/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="index.css" %}
-{% include code-snippet/speech-to-text/speechRecognition/showTooltip/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -223,9 +193,6 @@ You can use the [disabled](../api/speech-to-text#disabled) property to disable t
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speech-to-text/speechRecognition/disabled/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="index.css" %}
-{% include code-snippet/speech-to-text/speechRecognition/disabled/index.css %}
-{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/disabled" %}
@@ -238,9 +205,6 @@ You can use the [disabled](../api/speech-to-text#disabled) property to disable t
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speech-to-text/speechRecognition/disabled/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="index.css" %}
-{% include code-snippet/speech-to-text/speechRecognition/disabled/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

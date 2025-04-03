@@ -42,7 +42,7 @@ Accumulation Chart can be given a title using [`title`](../api/accumulation-char
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs62" %}
 {% endif %}
 
-## Title Customization
+## Title customization
 
 Accumulation Chart can be customizing a title using [`titleStyle`](../api/accumulation-chart/accumulationChartModel/#titlestyle) property.
 
@@ -135,7 +135,7 @@ Accumulation Chart can be given a subtitle using [`subTitle`](../api/accumulatio
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs64" %}
 {% endif %}
 
-## SubTitle Customization
+## SubTitle customization
 
 Accumulation Chart can be customizing a subtitle using [`subTitleStyle`](../api/accumulation-chart/accumulationChartModel/#subtitlestyle) property, to show the information about the data plotted.
 

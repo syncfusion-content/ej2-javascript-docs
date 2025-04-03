@@ -32,9 +32,6 @@ The following example demonstrates how to configure the SpeechToText events.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speech-to-text/events/index.html %}
 {% endhighlight %}
-{% highlight html tabtitle="index.css" %}
-{% include code-snippet/speech-to-text/events/index.css %}
-{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/speech-to-text/events" %}
@@ -47,9 +44,6 @@ The following example demonstrates how to configure the SpeechToText events.
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speech-to-text/events/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="index.css" %}
-{% include code-snippet/speech-to-text/events/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

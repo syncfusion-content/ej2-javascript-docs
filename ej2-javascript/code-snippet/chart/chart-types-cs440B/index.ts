@@ -4,7 +4,7 @@ Chart.Inject(StackingBarSeries);
 
 let chart: Chart = new Chart({
     primaryXAxis: {
-        title: 'Months'
+        title: 'Years'
     },
     primaryYAxis:
     {

@@ -149,9 +149,6 @@ The following example shows a basic SpeechToText control.
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speech-to-text/getting-started/getting-started-cs1/index.html %}
 {% endhighlight %}
-{% highlight css tabtitle="index.css" %}
-{% include code-snippet/speech-to-text/getting-started/getting-started-cs1/index.css %}
-{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/speech-to-text/getting-started/getting-started-cs1" %}
@@ -168,9 +165,6 @@ You can use the [content](../api/speech-to-text/buttonSettingsModel/#content) pr
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/speech-to-text/getting-started/buttonContent/index.html %}
-{% endhighlight %}
-{% highlight css tabtitle="index.css" %}
-{% include code-snippet/speech-to-text/getting-started/buttonContent/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

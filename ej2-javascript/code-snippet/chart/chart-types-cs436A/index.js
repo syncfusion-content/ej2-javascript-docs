@@ -14,7 +14,6 @@ var chart = new ej.charts.Chart({
         title: 'Year'
     },
     primaryYAxis: {
-        minimum: 3, 
         maximum: 12,
         interval: 1, 
         title: 'Percentage',

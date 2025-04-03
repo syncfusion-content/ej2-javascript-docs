@@ -70,7 +70,7 @@ letter-spacing: 0.7px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/pivotview/getting-started">Pivot Table</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/treegrid/getting-started">TreeGrid</a></div>
          <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/spreadsheet/getting-started">Spreadsheet</a></div>
-          <div><p class="controlcategory">Interactive Chat</p></div>
+          <div><p class="controlcategory">INTERACTIVE CHAT</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/ai-assistview/es5-getting-started">AI AssistView</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/chat-ui/es5-getting-started">Chat UI</a></div>
         <div><p class="controlcategory">FILE VIEWERS & EDITORS</p></div>
@@ -141,6 +141,7 @@ letter-spacing: 0.7px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/signature/es5-getting-started">Signature</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/rating/es5-getting-started">Rating</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/otp-input/es5-getting-started">OTP Input</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/speech-to-text/es5-getting-started">Speech To Text</a></div>
         <div><p class="controlcategory">FORMS</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/form-validator/validation-rules">Form Validator</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/javascript/documentation/query-builder/es5-getting-started">Query Builder</a></div>

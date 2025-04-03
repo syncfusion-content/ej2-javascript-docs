@@ -11,7 +11,6 @@ let chart: Chart = new Chart({
     primaryYAxis:
     {
         title: 'Sales in Billions',
-        minimum: 0,
         maximum: 700,
         interval: 100,
         labelFormat: '{value}B'

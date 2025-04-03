@@ -8,7 +8,6 @@ let chart: Chart = new Chart({
         title: 'Countries'
     },
     primaryYAxis: {
-        minimum: 0, 
         maximum: 80,
         interval: 20, 
         title: 'Medals'

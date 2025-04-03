@@ -296,7 +296,7 @@ The [`pointRender`](../../api/chart#pointrender) event allows you to customize e
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs458" %}
 {% endif %}
 
-## Corner Radius
+## Corner radius
 
 The [`cornerRadius`](../../api/chart/series/#cornerradius) property in the chart series is used to customize the corner radius for bar series. This allows you to create bars with rounded corners, giving your chart a more polished appearance. You can customize each corner of the bars using the topLeft, topRight, bottomLeft, and bottomRight properties.
 
@@ -330,7 +330,7 @@ The [`cornerRadius`](../../api/chart/series/#cornerradius) property in the chart
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs458A" %}
 {% endif %}
 
-### Point Corner Radius
+### Point corner radius
 
 We can customize the corner radius for individual points in the chart series using the [`pointRender`](../../api/chart/iPointRenderEventArgs/) event by setting the [`cornerRadius`] (../../api/chart/iPointRenderEventArgs/#cornerradius) property in its event argument.
 

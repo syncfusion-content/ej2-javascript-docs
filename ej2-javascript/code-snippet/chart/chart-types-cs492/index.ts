@@ -1,4 +1,4 @@
-import { Chart, StackingBarSeries, Category, Legend } from '@syncfusion/ej2-charts';
+import { Chart, StackingBarSeries, Category, Legend, DataLabel } from '@syncfusion/ej2-charts';
 import { stackedData } from './datasource.ts';
 Chart.Inject(StackingBarSeries, Category, Legend, DataLabel);
 

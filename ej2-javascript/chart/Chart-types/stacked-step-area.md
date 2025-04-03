@@ -464,7 +464,7 @@ The [`pointRender`](../../api/chart#pointrender) event allows you to customize e
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs422" %}
 {% endif %}
 
-## Stack Labels
+## Stack labels
 
 The stack labels in stacked charts display cumulative total values for stack segments directly using data labels. If a stacked point has negative values, the stack labels are displayed below the point.
 
@@ -498,7 +498,7 @@ The stack labels in stacked charts display cumulative total values for stack seg
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs494" %}
 {% endif %}
 
-### Stack Labels Customization
+### Stack labels customization
 Stack labels have various properties for customization to enhance the visual based on your requirements:
 
 * [`visible`](../../api/chart/stackLabelSettings/#visible) - Specifies whether stack labels are visible. Setting to true will display the labels. Default is false.

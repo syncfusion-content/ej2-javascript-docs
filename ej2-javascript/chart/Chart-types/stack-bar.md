@@ -464,7 +464,7 @@ The [`pointRender`](../../api/chart#pointrender) event allows you to customize e
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs438" %}
 {% endif %}
 
-## Stack Labels
+## Stack labels
 
 The stack labels in stacked charts display cumulative total values for stack segments directly using data labels. If a stacked point has negative values, the stack labels are displayed below the point.
 
@@ -498,7 +498,7 @@ The stack labels in stacked charts display cumulative total values for stack seg
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs492" %}
 {% endif %}
 
-### Stack Labels Customization
+### Stack labels customization
 Stack labels have various properties for customization to enhance the visual based on your requirements:
 
 * [`visible`](../../api/chart/stackLabelSettings/#visible) - Specifies whether stack labels are visible. Setting to true will display the labels. Default is false.
@@ -541,7 +541,7 @@ Stack labels have various properties for customization to enhance the visual bas
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs492A" %}
 {% endif %}
 
-## Corner Radius
+## Corner radius
 
 The [`cornerRadius`](../../api/chart/series/#cornerradius) property in the chart series is used to customize the corner radius for bar series. This allows you to create bars with rounded corners, giving your chart a more polished appearance. You can customize each corner of the bars using the topLeft, topRight, bottomLeft, and bottomRight properties.
 
@@ -575,7 +575,7 @@ The [`cornerRadius`](../../api/chart/series/#cornerradius) property in the chart
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs438A" %}
 {% endif %}
 
-### Point Corner Radius
+### Point corner radius
 
 We can customize the corner radius for individual points in the chart series using the [`pointRender`](../../api/chart/iPointRenderEventArgs/) event by setting the [`cornerRadius`] (../../api/chart/iPointRenderEventArgs/#cornerradius) property in its event argument.
 

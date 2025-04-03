@@ -226,7 +226,7 @@ Individual points can be customized using the `pointRender` event.
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs24" %}
 {% endif %}
 
-## Mode
+## Modes
 
 The Funnel chart supports both Standard and Trapezoidal modes of rendering. The default value of the [`funnelMode`](../api/accumulation-chart/funnelModes/) is `Standard`.
 

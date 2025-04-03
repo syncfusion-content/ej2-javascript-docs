@@ -12,7 +12,7 @@ var stackedData = [
 ];
 var chart = new ej.charts.Chart({
     primaryXAxis: {
-        title: 'Months'
+        title: 'Years'
     },
     primaryYAxis:
     {

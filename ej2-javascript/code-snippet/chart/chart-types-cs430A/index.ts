@@ -12,7 +12,7 @@ let chart: Chart = new Chart({
         labelFormat: '{value}°C'
     },
     series: [
-        {cornerRadius: {topRight: 10 , topLeft: 10},
+        {cornerRadius: {topRight: 10 , topLeft: 10, bottomLeft: 10, bottomRight: 10},
             // Series type as range column series
             type: 'RangeColumn',
             dataSource: data1, 
@@ -20,7 +20,7 @@ let chart: Chart = new Chart({
             high: 'high', 
             low: 'low'
         }, 
-        {cornerRadius: {topRight: 10 , topLeft: 10},
+        {cornerRadius: {topRight: 10 , topLeft: 10, bottomLeft: 10, bottomRight: 10},
             type: 'RangeColumn',
             dataSource: data2, 
             xName: 'x', 

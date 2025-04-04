@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Extract text in ##Platform_Name## Pdfviewer control | Syncfusion
-description: Learn here all about Extract text in Syncfusion ##Platform_Name## Pdfviewer control of Syncfusion Essential JS 2 and more.
+title: extractTextCompleted Event in ##Platform_Name## Pdfviewer control | Syncfusion
+description: Learn here all about extractTextCompleted Event in Syncfusion ##Platform_Name## Pdfviewer control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Extract text 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Extract text in ##Platform_Name## Pdfviewer control
+# Extract text in ##Platform_Name## Pdfviewer control using extractTextCompleted event
 
 To extract text in Syncfusion PDF viewer, you can use the [**isExtractText**](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#isextracttext) property and [**extractTextCompleted**](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#extracttextcompleted) event.This allows you to extract the text from a page along with the bounds.
 

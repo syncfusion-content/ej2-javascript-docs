@@ -53,7 +53,7 @@ const scheduleObj: Schedule = new Schedule({
         }
     }
 });
-scheduleObj.appendTo('#schedule');
+scheduleObj.appendTo('#Schedule');
 function onPrintIconClick(): void {
     scheduleObj.print();
 }

@@ -6,11 +6,10 @@ var chartData = [
 var chart = new ej.charts.Chart({
     primaryXAxis: {
         // Date time range in primary X Axis
-        valueType: 'DateTime',
+        valueType: 'DateTimeCategory',
         title: 'Sales Across Years',
         labelFormat: 'yMMM',
-        minimum: new Date(2000, 6, 1),
-        maximum: new Date(2010, 6, 1)
+    
     },
     primaryYAxis: {
         title: 'Sales Amount in millions(USD)'

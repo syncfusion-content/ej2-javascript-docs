@@ -6,8 +6,7 @@ var chartData = [
 ];
 var chart = new ej.charts.Chart({
     primaryXAxis: {
-        // Date time scale in primary X Axis
-        valueType: 'DateTime',
+        valueType: 'DateTimeCategory',
         title: 'Sales Across Years',
         labelFormat: 'yMMM'
     },

@@ -16,7 +16,7 @@ var config = {
     limit: 200
 };
 
-var defaultRTE = new ej.richtexteditor.RichTextEditor({
+var editor = new ej.richtexteditor.RichTextEditor({
     toolbarSettings: {
         items: ['|', 'Undo', 'Redo', '|',
             'Bold', 'Italic', 'Underline', 'StrikeThrough', '|',
@@ -28,7 +28,7 @@ var defaultRTE = new ej.richtexteditor.RichTextEditor({
     },
     placeholder:"Type @ to get the e-mail list",
     created: function (args) {
-        var textArea = defaultRTE.contentModule.getEditPanel();
+        var textArea = editor.contentModule.getEditPanel();
         $(textArea).atwho(config);
         $(textArea).on('keydown', function (e) {
             if (e.keyCode == 13 && $(textArea).atwho('isSelecting'))
@@ -36,5 +36,5 @@ var defaultRTE = new ej.richtexteditor.RichTextEditor({
         });
     }
 });
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');
 

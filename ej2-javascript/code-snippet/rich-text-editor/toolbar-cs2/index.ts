@@ -2,7 +2,7 @@ import { RichTextEditor, Toolbar, HtmlEditor, PasteCleanup } from '@syncfusion/e
 
 RichTextEditor.Inject(Toolbar, HtmlEditor, PasteCleanup);
 
-let defaultRTE: RichTextEditor = new RichTextEditor({
+let editor: RichTextEditor = new RichTextEditor({
     value: ` <p>Rich Text Editor is a WYSIWYG editing control which will reduce the effort for users while trying to express their formatting word content as HTML or Markdown format.</p>
         <p><b>Paste Cleanup properties:</b></p>
         <ul>
@@ -37,4 +37,4 @@ let defaultRTE: RichTextEditor = new RichTextEditor({
         allowedStyleProps: ['color', 'margin', 'font-size']
     }
     });
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');

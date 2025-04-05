@@ -3,7 +3,7 @@ import WProofreader from '@webspellchecker/wproofreader-sdk-js';
 RichTextEditor.Inject(Toolbar, HtmlEditor);
 
 
-let defaultRTE: RichTextEditor = new RichTextEditor({
+let editor: RichTextEditor = new RichTextEditor({
    created: function () {
       // WProofreader configuration
       WProofreader.init({
@@ -14,4 +14,4 @@ let defaultRTE: RichTextEditor = new RichTextEditor({
    },
    value: `<p>Enter you\'re text here with real spelling and grammer mistakes to see how WProofreader work. Alot of potential errors will be underlined; hover on the marked wods for instant correction suggesstions.</p>`,
 });
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');

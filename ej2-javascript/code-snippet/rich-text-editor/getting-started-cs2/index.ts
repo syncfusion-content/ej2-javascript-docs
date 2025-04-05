@@ -2,7 +2,7 @@ import { RichTextEditor, Toolbar, Link, Image, HtmlEditor } from '@syncfusion/ej
 RichTextEditor.Inject(Toolbar, Link, Image, HtmlEditor);
 
 // initialize RichTextEditor component
-let defaultRTE: RichTextEditor = new RichTextEditor({
+let editor: RichTextEditor = new RichTextEditor({
     value: `<p>The Rich Text Editor component is WYSIWYG ("what you see is what you get") editor that provides the best user experience to create and update the content.Users can format their content using standard toolbar commands.</p>
     <p><b>Key features:</b></p>
     <ul><li><p>Provides <b>IFRAME</b> and <b>DIV</b> modes</p></li>
@@ -13,4 +13,4 @@ let defaultRTE: RichTextEditor = new RichTextEditor({
     </ul>`
 });
 // render initialized Rich Text Editor
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');

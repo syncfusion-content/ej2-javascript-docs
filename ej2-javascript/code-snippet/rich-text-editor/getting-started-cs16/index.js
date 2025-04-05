@@ -1,7 +1,7 @@
 /**
  * Rich Text Editor placeholder sample 
  */
-var defaultRTE = new ej.richtexteditor.RichTextEditor({
+var editor = new ej.richtexteditor.RichTextEditor({
   placeholder:'Type Something' 
 });
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');

@@ -2,7 +2,7 @@
  * Rich Text Editor - RemoveUrl sample
  */
 
-var defaultRTE = new ej.richtexteditor.RichTextEditor({
+var editor = new ej.richtexteditor.RichTextEditor({
     insertImageSettings: {
         saveUrl: 'https://services.syncfusion.com/js/production/api/RichTextEditor/SaveFile',
         removeUrl: 'https://services.syncfusion.com/js/production/api/RichTextEditor/DeleteFile'
@@ -12,5 +12,5 @@ var defaultRTE = new ej.richtexteditor.RichTextEditor({
         items: ['Image']
     }
 });
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');
 

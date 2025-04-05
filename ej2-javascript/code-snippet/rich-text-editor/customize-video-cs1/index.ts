@@ -19,4 +19,4 @@ let editor: RichTextEditor = new RichTextEditor({
               </video></p> `
 });
  
-editor.appendTo('#defaultRTE');
+editor.appendTo('#editor');

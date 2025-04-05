@@ -28,7 +28,7 @@ import { RichTextEditor, Toolbar, Link, Image, Count, HtmlEditor, QuickToolbar }
   };
 let leftBarWdith : number = window.parent.document.getElementById('doc-left-toc').offsetWidth;
 let leftPadding : number = +getComputedStyle(window.parent.document.getElementById('md-cnt')).paddingRight.match(/\d/g).join('');
-  let defaultRTE: RichTextEditor = new RichTextEditor({
+  let editor: RichTextEditor = new RichTextEditor({
       toolbarSettings: {
           items: ['|', 'Undo', 'Redo', '|',
               'Bold', 'Italic', 'Underline', 'StrikeThrough', '|',
@@ -40,7 +40,7 @@ let leftPadding : number = +getComputedStyle(window.parent.document.getElementBy
       },
       placeholder:"Type @ to get the e-mail list",
       created: (args: any) => {
-          let textArea: HTMLElement = defaultRTE.contentModule.getEditPanel() as HTMLElement;
+          let textArea: HTMLElement = editor.contentModule.getEditPanel() as HTMLElement;
           $(textArea).atwho(config); // to get the popup of the email list
           $(textArea).on('keydown', function(e) {
             if(e.keyCode == 13 && $(textArea).atwho('isSelecting'))
@@ -48,7 +48,7 @@ let leftPadding : number = +getComputedStyle(window.parent.document.getElementBy
           })
       }
   });
-  defaultRTE.appendTo('#defaultRTE');
+  editor.appendTo('#editor');
 
 
 

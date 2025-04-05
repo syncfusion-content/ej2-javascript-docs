@@ -1,7 +1,7 @@
 import WProofreader from '@webspellchecker/wproofreader-sdk-js';
 
 // initialize Rich Text Editor component
-var defaultRTE = new ej.richtexteditor.RichTextEditor({
+var editor = new ej.richtexteditor.RichTextEditor({
         created: function () {
                 // WProofreader configuration
                 WProofreader.init({
@@ -14,4 +14,4 @@ var defaultRTE = new ej.richtexteditor.RichTextEditor({
 });
 
 // render initialized Rich Text Editor
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');

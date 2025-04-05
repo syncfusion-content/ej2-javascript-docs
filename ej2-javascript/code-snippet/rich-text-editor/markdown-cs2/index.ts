@@ -10,7 +10,7 @@ let textArea: HTMLTextAreaElement;
 let mdsource: HTMLElement;
 let htmlPreview: HTMLElement;
 
-let defaultRTE: RichTextEditor = new RichTextEditor({
+let editor: RichTextEditor = new RichTextEditor({
     height: 340, editorMode: 'Markdown',
     toolbarSettings: {
         items: ['Bold', 'Italic', 'StrikeThrough', '|', 'Formats', 'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', '|',
@@ -18,36 +18,36 @@ let defaultRTE: RichTextEditor = new RichTextEditor({
                 '<span class="e-btn-icon e-md-preview e-icons"></span></button>' }, '|', 'Undo', 'Redo']
     },
     created: () => {
-        textArea = defaultRTE.contentModule.getEditPanel() as HTMLTextAreaElement;
+        textArea = editor.contentModule.getEditPanel() as HTMLTextAreaElement;
         textArea.addEventListener('keyup', (e: KeyboardEventArgs) => { markDownConversion(); });
         mdsource = document.getElementById('preview-code');
         mdsource.addEventListener('click', (e: MouseEvent) => {
             fullPreview({ mode: true, type: 'preview' });
             if ((e.currentTarget as HTMLElement).classList.contains('e-active')) {
-                defaultRTE.disableToolbarItem(['Bold', 'Italic', 'StrikeThrough', '|',
+                editor.disableToolbarItem(['Bold', 'Italic', 'StrikeThrough', '|',
                     'Formats', 'OrderedList', 'UnorderedList', '|',
                     'CreateLink', 'Image', 'Undo', 'Redo']);
             } else {
-                defaultRTE.enableToolbarItem(['Bold', 'Italic', 'StrikeThrough', '|',
+                editor.enableToolbarItem(['Bold', 'Italic', 'StrikeThrough', '|',
                     'Formats', 'OrderedList', 'UnorderedList', '|',
                     'CreateLink', 'Image', 'Undo', 'Redo']);
             }
         });
     },
 });
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');
 function markDownConversion(): void {
     if (mdsource.classList.contains('e-active')) {
-        let id: string = defaultRTE.getID() + 'html-preview';
-        let htmlPreview: HTMLElement = defaultRTE.element.querySelector('#' + id);
-        let rteElement = defaultRTE.contentModule.getEditPanel() as HTMLTextAreaElement;
+        let id: string = editor.getID() + 'html-preview';
+        let htmlPreview: HTMLElement = editor.element.querySelector('#' + id);
+        let rteElement = editor.contentModule.getEditPanel() as HTMLTextAreaElement;
         let rteValue = rteElement.value;
-        htmlPreview.innerHTML = marked((defaultRTE.contentModule.getEditPanel() as HTMLTextAreaElement).value);
+        htmlPreview.innerHTML = marked((editor.contentModule.getEditPanel() as HTMLTextAreaElement).value);
     }
 }
 function fullPreview(e: { [key: string]: string | boolean }): void {
-    let id: string = defaultRTE.getID() + 'html-preview';
-    htmlPreview = defaultRTE.element.querySelector('#' + id);
+    let id: string = editor.getID() + 'html-preview';
+    htmlPreview = editor.element.querySelector('#' + id);
     if (mdsource.classList.contains('e-active')) {
         mdsource.classList.remove('e-active');
         mdsource.parentElement.title = 'Preview';

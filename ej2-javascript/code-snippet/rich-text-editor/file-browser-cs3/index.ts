@@ -5,7 +5,7 @@ RichTextEditor.Inject(HtmlEditor, Toolbar, QuickToolbar, Image, FileManager);
 
 let hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
 
-let defaultRTE: RichTextEditor = new RichTextEditor({
+let editor: RichTextEditor = new RichTextEditor({
     fileManagerSettings: {
         enable: true,
         path: '/Pictures/Food',
@@ -20,7 +20,7 @@ let defaultRTE: RichTextEditor = new RichTextEditor({
         items: ['FileManager']
     }
 });
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');
 
 
 

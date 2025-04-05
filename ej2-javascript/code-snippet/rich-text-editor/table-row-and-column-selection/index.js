@@ -1,5 +1,5 @@
 // initialize Rich Text Editor component
-var defaultRTE = new ej.richtexteditor.RichTextEditor({
+var editor = new ej.richtexteditor.RichTextEditor({
         toolbarSettings: {
                 items: ['CreateTable']
         },
@@ -42,5 +42,5 @@ var defaultRTE = new ej.richtexteditor.RichTextEditor({
                 </tbody>
             </table>`
 });
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');
 

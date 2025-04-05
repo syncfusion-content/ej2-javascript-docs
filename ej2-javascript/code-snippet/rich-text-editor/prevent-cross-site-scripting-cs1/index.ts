@@ -6,7 +6,7 @@ RichTextEditor.Inject(Toolbar, Link, Image, HtmlEditor, QuickToolbar);
 
 let rteValue: string = `<div>Prevention of Cross Sit Scripting (XSS) </div> <script>alert('hi')</script>`;
 
-let defaultRTE: RichTextEditor = new RichTextEditor({
+let editor: RichTextEditor = new RichTextEditor({
     value: rteValue,
      beforeSanitizeHtml: (e: BeforeSanitizeHtmlArgs) => {
       if (e.selectors && e.selectors.tags) {
@@ -15,4 +15,4 @@ let defaultRTE: RichTextEditor = new RichTextEditor({
     }
   }
  });
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');

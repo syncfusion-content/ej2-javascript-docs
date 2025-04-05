@@ -10,9 +10,9 @@ import { RichTextEditor, Toolbar, Link, Image, HtmlEditor, QuickToolbar } from '
 RichTextEditor.Inject(Toolbar, Link, Image, HtmlEditor, QuickToolbar);
 
 
-let defaultRTE: RichTextEditor = new RichTextEditor({toolbarSettings: {
+let editor: RichTextEditor = new RichTextEditor({toolbarSettings: {
         items: ['CreateLink', 'RemoveLink']} });
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');
 
 
 

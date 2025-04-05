@@ -2,7 +2,7 @@
  * Rich Text Editor - RemoveUrl sample
  */
 
-var defaultRTE = new ej.richtexteditor.RichTextEditor({
+var editor = new ej.richtexteditor.RichTextEditor({
     insertVideoSettings: {
         saveUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Save',
         removeUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Remove'
@@ -11,5 +11,5 @@ var defaultRTE = new ej.richtexteditor.RichTextEditor({
         items: ['Video']
     }
 });
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');
 

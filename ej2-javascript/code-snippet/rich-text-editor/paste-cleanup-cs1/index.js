@@ -3,7 +3,7 @@
  */
 import { detach } from '@syncfusion/ej2-base';
 
-var defaultRTE = new ej.richtexteditor.RichTextEditor({
+var editor = new ej.richtexteditor.RichTextEditor({
     value: ` <p>Rich Text Editor is a WYSIWYG editing control which will reduce the effort for users while trying to express their formatting word content as HTML or Markdown format.</p>
         <p><b>Paste Cleanup properties:</b></p>
         <ul>
@@ -39,7 +39,7 @@ var defaultRTE = new ej.richtexteditor.RichTextEditor({
     },
     afterPasteCleanup: onAfterPasteCleanup,
 });
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');
 
 function onAfterPasteCleanup(args) {
     const divElement = document.createElement('div');

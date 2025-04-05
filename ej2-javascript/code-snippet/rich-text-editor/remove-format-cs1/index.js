@@ -1,5 +1,5 @@
 // initialize Rich Text Editor component
- var defaultRTE = new ej.richtexteditor.RichTextEditor({
+ var editor = new ej.richtexteditor.RichTextEditor({
     height: 340,
     toolbarSettings: {
         items: ['ClearFormat']
@@ -8,4 +8,4 @@
 });
 
 // render initialized Rich Text Editor
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');

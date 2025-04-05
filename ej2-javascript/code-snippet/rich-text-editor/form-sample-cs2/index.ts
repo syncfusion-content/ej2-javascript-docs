@@ -10,11 +10,11 @@ RichTextEditor.Inject(Toolbar, Link, Image, HtmlEditor, Count, QuickToolbar);
 import { Button } from '@syncfusion/ej2-buttons';
 
 let button: Button;
-let defaultRTE: RichTextEditor = new RichTextEditor({ showCharCount: true, maxLength: 100, placeholder: 'Type something' ,
+let editor: RichTextEditor = new RichTextEditor({ showCharCount: true, maxLength: 100, placeholder: 'Type something' ,
 change : function() {
    button.disabled = false;
 } });
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');
 
 button = new Button({
 disabled :true
@@ -24,7 +24,7 @@ button.appendTo('#validateSubmit');
 let option: FormValidatorModel = {
   rules: {
     // Initialize the CustomPlacement.
-    defaultRTE: {
+    editor: {
       required: true,
       minLength: [20, 'Need atleast 6 character length'],
       maxLength:[100, 'Maximum 100 character only']

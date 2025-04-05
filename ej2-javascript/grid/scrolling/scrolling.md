@@ -193,7 +193,7 @@ The Syncfusion ##Platform_Name## Grid allows rendering scrollbars at both the to
 Steps to render scrollbars at the top in the Grid:
 
 1. **Add a Scrollbar** - Insert a `<div id="scroller">` above the Grid in the template to act as a top scrollbar.
-2. **Initialize Scrollbar in [Created](../api/grid/#created) Event** - Retrieve the Grid's content and move the scroller `div` above it dynamically.
+2. **Initialize Scrollbar in [created](../../api/grid/#created) Event** - Retrieve the Grid's content and move the scroller `div` above it dynamically.
 3. **Synchronize Scroll Events** - Link `onscroll` events of the scroller `div` and the Grid content to scroll together.
 4. **Adjust Scrollbar Width and Visibility** - Use `setScroller()` to match the scrollbar width with the Grid and update it on window resize.
 

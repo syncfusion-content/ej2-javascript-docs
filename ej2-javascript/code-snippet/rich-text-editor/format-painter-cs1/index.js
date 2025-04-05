@@ -1,7 +1,7 @@
 /**
  * Rich Text Editor - Format Painter sample
  */
-var defaultRTE = new ej.richtexteditor.RichTextEditor({
+var editor = new ej.richtexteditor.RichTextEditor({
     toolbarSettings: {
         items: ['FormatPainter', 'ClearFormat', 'Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments',
         'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', '|', 'SourceCode', 'Undo', 'Redo']
@@ -35,5 +35,5 @@ var defaultRTE = new ej.richtexteditor.RichTextEditor({
                     It's a helpful tool for anyone who works with text editing regularly, such as writers, editors, and content creators.
                 </p>`,
 });
-defaultRTE.appendTo('#formatPainterRTE');
+editor.appendTo('#formatPainterRTE');
 

@@ -1,5 +1,5 @@
 // initialize Rich Text Editor component
-var defaultRTE = new ej.richtexteditor.RichTextEditor({
+var editor = new ej.richtexteditor.RichTextEditor({
     //Define the quicktoolbar items for image
     quickToolbarSettings: {
         image: [
@@ -19,5 +19,5 @@ var defaultRTE = new ej.richtexteditor.RichTextEditor({
     }
 });
 // render initialized Rich Text Editor
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');
 

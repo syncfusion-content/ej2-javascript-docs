@@ -1,4 +1,4 @@
-var defaultRTE = new ej.richtexteditor.RichTextEditor({
+var editor = new ej.richtexteditor.RichTextEditor({
         height: 400,
         toolbarSettings: {
             items: ['Undo', 'Redo', '|',
@@ -16,7 +16,7 @@ var defaultRTE = new ej.richtexteditor.RichTextEditor({
         },
         imageUploading: onImageUploading
     });
-    defaultRTE.appendTo("#defaultRTE");
+    editor.appendTo("#editor");
 
     function onImageUploading(args) {
         console.log("file is uploading");

@@ -1,4 +1,4 @@
-var defaultRTE1 = new ej.richtexteditor.RichTextEditor({
+var editor1 = new ej.richtexteditor.RichTextEditor({
   value: `<p>The Syncfudion <strong>Rich Text Editor</strong>, a WYSIWYG (what you see is what you get) editor, is a user interface that allows you to create, edit, and format rich text content. You can try out a demo of this editor here.</p><p><b>Key features:</b></p><ul>
   <li>
      <p>Provides &lt;IFRAME&gt; and &lt;DIV&gt; modes.</p>
@@ -19,9 +19,9 @@ var defaultRTE1 = new ej.richtexteditor.RichTextEditor({
 });
 
 // render initialized Rich Text Editor
-defaultRTE1.appendTo('#defaultRTE1');
+editor1.appendTo('#editor1');
 
-var defaultRTE2 = new ej.richtexteditor.RichTextEditor({
+var editor2 = new ej.richtexteditor.RichTextEditor({
   value: `<p>The Syncfudion <strong>Rich Text Editor</strong>, a WYSIWYG (what you see is what you get) editor, is a user interface that allows you to create, edit, and format rich text content. You can try out a demo of this editor here.</p><p><b>Key features:</b></p><ul>
     <li>
        <p>Provides &lt;IFRAME&gt; and &lt;DIV&gt; modes.</p>
@@ -39,4 +39,4 @@ var defaultRTE2 = new ej.richtexteditor.RichTextEditor({
 });
 
 // render initialized Rich Text Editor
-defaultRTE2.appendTo('#defaultRTE2');
+editor2.appendTo('#editor2');

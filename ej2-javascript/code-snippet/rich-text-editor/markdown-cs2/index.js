@@ -7,7 +7,7 @@ var textArea;
 var mdsource;
 var htmlPreview;
 
-var defaultRTE = new ej.richtexteditor.RichTextEditor({
+var editor = new ej.richtexteditor.RichTextEditor({
     height: 340, editorMode: 'Markdown',
     toolbarSettings: {
         items: ['Bold', 'Italic', 'StrikeThrough', '|', 'Formats', 'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', '|',
@@ -15,39 +15,39 @@ var defaultRTE = new ej.richtexteditor.RichTextEditor({
                     '<span class="e-btn-icon e-md-preview e-icons"></span></button>' }, '|', 'Undo', 'Redo']
     },
     created: function () {
-        textArea = defaultRTE.contentModule.getEditPanel();
+        textArea = editor.contentModule.getEditPanel();
         textArea.addEventListener('keyup', function (e) { markDownConversion(); });
         mdsource = document.getElementById('preview-code');
         mdsource.addEventListener('click', function (e) {
             fullPreview({ mode: true, type: 'preview' });
             if (e.currentTarget.classList.contains('e-active')) {
-                defaultRTE.disableToolbarItem(['Bold', 'Italic', 'StrikeThrough', '|',
+                editor.disableToolbarItem(['Bold', 'Italic', 'StrikeThrough', '|',
                     'Formats', 'OrderedList', 'UnorderedList', '|',
                     'CreateLink', 'Image', 'Undo', 'Redo']);
             }
             else {
-                defaultRTE.enableToolbarItem(['Bold', 'Italic', 'StrikeThrough', '|',
+                editor.enableToolbarItem(['Bold', 'Italic', 'StrikeThrough', '|',
                     'Formats', 'OrderedList', 'UnorderedList', '|',
                     'CreateLink', 'Image', 'Undo', 'Redo']);
             }
         });
     },
 });
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');
 
 function markDownConversion() {
     if (mdsource.classList.contains('e-active')) {
-        var id = defaultRTE.getID() + 'html-preview';
-        var htmlPreview = defaultRTE.element.querySelector('#' + id);
-        var rteElement = defaultRTE.contentModule.getEditPanel();
+        var id = editor.getID() + 'html-preview';
+        var htmlPreview = editor.element.querySelector('#' + id);
+        var rteElement = editor.contentModule.getEditPanel();
         var rteValue = rteElement.value;
-        htmlPreview.innerHTML = marked(defaultRTE.contentModule.getEditPanel().value);
+        htmlPreview.innerHTML = marked(editor.contentModule.getEditPanel().value);
     }
 }
 
 function fullPreview(e) {
-    var id = defaultRTE.getID() + 'html-preview';
-    htmlPreview = defaultRTE.element.querySelector('#' + id);
+    var id = editor.getID() + 'html-preview';
+    htmlPreview = editor.element.querySelector('#' + id);
     if (mdsource.classList.contains('e-active')) {
         mdsource.classList.remove('e-active');
         mdsource.parentElement.title = 'Preview';

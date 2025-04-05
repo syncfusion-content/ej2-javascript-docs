@@ -4,7 +4,7 @@
 import { RichTextEditor, Toolbar, Link, Image, Count, HtmlEditor, QuickToolbar } from '@syncfusion/ej2-richtexteditor';
 RichTextEditor.Inject(Toolbar, Link, Image, Count, HtmlEditor, QuickToolbar);
 
-let defaultRTE: RichTextEditor = new RichTextEditor({
+let editor: RichTextEditor = new RichTextEditor({
    fontFamily: {
         default:"Noto Sans", // to define default font-family
         items:[
@@ -25,7 +25,7 @@ let defaultRTE: RichTextEditor = new RichTextEditor({
         },
         cssClass: "customClass"
     });
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');
 
 
 

@@ -1,4 +1,4 @@
-var defaultRTE = new ej.richtexteditor.RichTextEditor({
+var editor = new ej.richtexteditor.RichTextEditor({
     editorMode: 'Markdown',
     toolbarSettings: {
         items: ['Bold', 'Italic', 'StrikeThrough', '|',
@@ -6,11 +6,11 @@ var defaultRTE = new ej.richtexteditor.RichTextEditor({
             'CreateLink', 'Image', '|', 'Undo', 'Redo']
     }
 });
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');
 document.onkeyup = function (e) {
     if (e.altKey && e.keyCode === 84 /* t */) {
         // press alt+t to focus the component.
-        defaultRTE.focusIn();
+        editor.focusIn();
     }
 };
 

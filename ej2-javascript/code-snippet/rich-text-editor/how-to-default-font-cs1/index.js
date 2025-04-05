@@ -1,5 +1,5 @@
 
-var defaultRTE = new ej.richtexteditor.RichTextEditor({ 
+var editor = new ej.richtexteditor.RichTextEditor({ 
  fontFamily: {
       default:"Noto Sans", // to define default font-family
         items:[
@@ -21,6 +21,6 @@ var defaultRTE = new ej.richtexteditor.RichTextEditor({
         },
         cssClass: "customClass"
   });
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');
 
 

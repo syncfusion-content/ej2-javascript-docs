@@ -15,4 +15,4 @@ let editor: RichTextEditor = new RichTextEditor({
                     <p><audio controls><source src="https://cdn.syncfusion.com/ej2/richtexteditor-resources/RTE-Audio.wav" type="audio/mp3" /></audio></p>`
 });
  
-editor.appendTo('#defaultRTE');
+editor.appendTo('#editor');

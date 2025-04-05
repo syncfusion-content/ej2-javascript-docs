@@ -1,7 +1,7 @@
 import { RichTextEditor, Toolbar, Image,  Link, HtmlEditor, QuickToolbar, NodeSelection, Table } from '@syncfusion/ej2-richtexteditor';
 RichTextEditor.Inject(Toolbar, Image,  Link, HtmlEditor, QuickToolbar, Table );
 
-let defaultRTE: RichTextEditor = new RichTextEditor({
+let editor: RichTextEditor = new RichTextEditor({
         toolbarSettings: {
             items: ['CreateTable']
         },
@@ -44,4 +44,4 @@ let defaultRTE: RichTextEditor = new RichTextEditor({
                 </tbody>
             </table>`
 });
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');

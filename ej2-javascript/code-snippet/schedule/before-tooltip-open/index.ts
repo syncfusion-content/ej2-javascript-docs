@@ -33,4 +33,4 @@ const scheduleOptions: ScheduleModel = {
     }
 };
 
-const scheduleObj: Schedule = new Schedule(scheduleOptions, document.getElementById('schedule'));
+const scheduleObj: Schedule = new Schedule(scheduleOptions, document.getElementById('Schedule'));

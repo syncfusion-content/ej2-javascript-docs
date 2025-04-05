@@ -20,7 +20,7 @@ window.emailData = [
 ];
 
 var emailObj;
-var defaultRTE = new ej.richtexteditor.RichTextEditor({
+var editor = new ej.richtexteditor.RichTextEditor({
    placeholder: 'Type @ and tag the name',
    actionBegin: function (args) {
        if (args.requestType === 'EnterAction' && emailObj.element.classList.contains('e-popup-open')) {
@@ -30,7 +30,7 @@ var defaultRTE = new ej.richtexteditor.RichTextEditor({
    value: `<p>Hello <span contenteditable="false" class="e-mention-chip"><a href="mailto:maria@gmail.com" title="maria@gmail.com">@Maria</a></span>,</p>
                 <p>Welcome to the mention integration with rich text editor demo. Type <code>@</code> character and tag user from the suggestion list. </p>`
 });
-defaultRTE.appendTo('#mention_integration');
+editor.appendTo('#mention_integration');
 
 // Initialize Mention control
    emailObj = new ej.dropdowns.Mention({

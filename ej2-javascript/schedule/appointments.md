@@ -576,7 +576,7 @@ The following code example demonstrates how to enable the [`allowOverlap`](../ap
 
 The [`allowOverlap`](../api/schedule/#allowoverlap) property checks for event overlaps only within the currently visible date range. Events scheduled outside the rendered date range are not included in the overlap check by default.
 
-If you need to check for overlaps with events outside the visible date range, you can leverage the [`promise`](../api/schedule/actionBeginEventArgs/#promise) field within the [`actionBegin`](../api/schedule/#actionbegin) event to validate all events before proceeding. By implementing a custom validation method inside the [`actionBegin`](../api/schedule/#actionbegin) event, you can assign the result (a boolean) to the [`promise`](../api/schedule/actionBeginEventArgs/#promise) field. If the result is `true`, the action (e.g., adding or saving the event) will proceed; if `false`, the action will be blocked.
+If you need to check for overlaps with events outside the visible date range, you can leverage the [`promise`](../api/schedule/actionEventArgs/#promise) field within the [`actionBegin`](../api/schedule/#actionbegin) event to validate all events before proceeding. By implementing a custom validation method inside the [`actionBegin`](../api/schedule/#actionbegin) event, you can assign the result (a boolean) to the [`promise`](../api/schedule/actionEventArgs/#promise) field. If the result is `true`, the action (e.g., adding or saving the event) will proceed; if `false`, the action will be blocked.
 
 Additionally, you can use the public method [`openOverlapAlert`](../api/schedule/#openoverlapalert) to show an alert popup whenever an overlap occurs and the result is `false`.
 

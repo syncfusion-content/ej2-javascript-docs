@@ -33,6 +33,7 @@ let dialog: Dialog = new Dialog({
 });
 // Render initialized Dialog
 dialog.appendTo('#customTbarDialog');
+<<<<<<< HEAD
 
 let defaultRTE: RichTextEditor = new RichTextEditor({
   value: `<div style='display: block;'><p style='margin-right: 10px'>The custom command \"insert special character\" is configured as the last item of the toolbar. Click on the command and choose the special character you want to include from the popup.</p></div>`,
@@ -74,6 +75,49 @@ let defaultRTE: RichTextEditor = new RichTextEditor({
 });
 defaultRTE.appendTo('#defaultRTE');
 
+=======
+
+let editor: RichTextEditor = new RichTextEditor({
+  value: `<div style='display: block;'><p style='margin-right: 10px'>The custom command \"insert special character\" is configured as the last item of the toolbar. Click on the command and choose the special character you want to include from the popup.</p></div>`,
+  toolbarSettings: {
+    items: [
+      'Bold',
+      'Italic',
+      'Underline',
+      '|',
+      'Formats',
+      'Alignments',
+      'OrderedList',
+      'UnorderedList',
+      '|',
+      'CreateLink',
+      'Image',
+      '|',
+      'SourceCode',
+      {
+        tooltipText: 'Insert Symbol',
+        undo: true,
+        click: function () {
+          dialog.element.style.display = '';
+          selection = editor.formatter.editorManager.nodeSelection;
+          var range = selection.getRange(
+            editor.contentModule.getDocument()
+          );
+          selection.save(range, editor.contentModule.getDocument());
+          dialog.show();
+        },
+        template:
+          '<button class="e-tbar-btn e-btn" tabindex="-1" id="custom_tbar"  style="width:100%"><div class="e-tbar-btn-text" style="font-weight: 500;"> &#937;</div></button>',
+      },
+      '|',
+      'Undo',
+      'Redo',
+    ],
+  },
+});
+editor.appendTo('#editor');
+
+>>>>>>> e565562a0a5f8d08f1b5455b3b345a79184d65cb
 function dialogOverlay() {
   let activeEle: HTMLElement = dialog.element.querySelector(
     '.char_block.e-active'
@@ -90,7 +134,11 @@ function onInsert() {
     '.char_block.e-active'
   );
   if (activeEle) {
+<<<<<<< HEAD
     defaultRTE.executeCommand('insertText', activeEle.textContent, {
+=======
+    editor.executeCommand('insertText', activeEle.textContent, {
+>>>>>>> e565562a0a5f8d08f1b5455b3b345a79184d65cb
       undo: true,
     });
   }

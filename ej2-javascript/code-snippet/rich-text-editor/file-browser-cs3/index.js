@@ -4,7 +4,7 @@
 
 var hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
 
-var defaultRTE = new ej.richtexteditor.RichTextEditor({
+var editor = new ej.richtexteditor.RichTextEditor({
 	fileManagerSettings: {
 		enable: true,
 		path: '/Pictures/Food',
@@ -19,5 +19,5 @@ var defaultRTE = new ej.richtexteditor.RichTextEditor({
 		items: ['FileManager']
 	}
 });
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');
 

@@ -185,3 +185,43 @@ The following example that demonstrates how to use the `hideScroll` method insid
 
 {% previewsample "page.domainurl/code-snippet/grid/scroller-cs6" %}
 {% endif %}
+
+## Render scrollbar in both top and bottom
+
+The Syncfusion ##Platform_Name## Grid allows rendering scrollbars at both the top and bottom, enhancing horizontal navigation for large datasets. This feature ensures users can scroll the Grid from either direction, enhancing usability and accessibility.
+
+Steps to render scrollbars at the top in the Grid:
+
+1. **Add a Scrollbar** - Insert a `<div id="scroller">` above the Grid in the template to act as a top scrollbar.
+2. **Initialize Scrollbar in [created](../../api/grid/#created) Event** - Retrieve the Grid's content and move the scroller `div` above it dynamically.
+3. **Synchronize Scroll Events** - Link `onscroll` events of the scroller `div` and the Grid content to scroll together.
+4. **Adjust Scrollbar Width and Visibility** - Use `setScroller()` to match the scrollbar width with the Grid and update it on window resize.
+
+The following example demonstrates how to use the `created` event to insert a scrollbar at the top of the Grid content:
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/scroller-cs7/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/scroller-cs7/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/scroller-cs7" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/scroller-cs7/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/scroller-cs7/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/scroller-cs7" %}
+{% endif %}

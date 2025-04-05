@@ -5,7 +5,7 @@ import { RichTextEditor, Toolbar, Image,  Link, HtmlEditor, QuickToolbar, NodeSe
 import { UploadingEventArgs } from '@syncfusion/ej2-inputs';
 RichTextEditor.Inject(Toolbar, Image,  Link, HtmlEditor, QuickToolbar );
 
-let defaultRTE: RichTextEditor = new RichTextEditor({
+let editor: RichTextEditor = new RichTextEditor({
         height: 400,
         toolbarSettings: {
         items: ['Undo', 'Redo', '|',
@@ -23,7 +23,7 @@ let defaultRTE: RichTextEditor = new RichTextEditor({
         },
         imageUploading: onImageUploading
     });
-    defaultRTE.appendTo("#defaultRTE");
+    editor.appendTo("#editor");
 
     function onImageUploading(args: UploadingEventArgs): void {
     console.log("file is uploading");

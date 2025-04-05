@@ -1,5 +1,5 @@
 // initialize Rich Text Editor component
-var defaultRTE = new ej.richtexteditor.RichTextEditor({
+var editor = new ej.richtexteditor.RichTextEditor({
     height: 340,
     value: ` <p>The Rich Text Editor component is WYSIWYG ("what you see is what you get") editor that provides the best user experience to create and update the content.Users can format their content using standard toolbar commands.</p>
         <p><b>Key features:</b></p>
@@ -13,8 +13,45 @@ var defaultRTE = new ej.richtexteditor.RichTextEditor({
         <li><p>Handles images, hyperlinks, video, hyperlinks, uploads, etc.</p></li>
         </ul>`,
     toolbarSettings: {
-        type: 'Expand'
+        type: 'Expand',
+        items: [
+            'Undo',
+            'Redo',
+            '|',
+            'Bold',
+            'Italic',
+            'Underline',
+            'StrikeThrough',
+            'InlineCode',
+            'SuperScript',
+            'SubScript',
+            '|',
+            'FontName',
+            'FontSize',
+            'FontColor',
+            'BackgroundColor',
+            '|',
+            'LowerCase',
+            'UpperCase',
+            '|',
+            'Formats',
+            'Alignments',
+            'Blockquote',
+            '|',
+            'NumberFormatList',
+            'BulletFormatList',
+            '|',
+            'Outdent',
+            'Indent',
+            '|',
+            'CreateLink',
+            'Image',
+            'CreateTable',
+            '|',
+            'ClearFormat',
+            'SourceCode',
+          ],
     }
 });
 // render initialized Rich Text Editor
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');

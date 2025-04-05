@@ -1,6 +1,6 @@
 var rteValue = `<div>Prevention of Cross Sit Scripting (XSS) </div> <script>alert('hi')</script>`;
 
-var defaultRTE = new ej.richtexteditor.RichTextEditor({
+var editor = new ej.richtexteditor.RichTextEditor({
   value: rteValue,
   beforeSanitizeHtml: (e) => {
     if (e.selectors && e.selectors.tags) {
@@ -9,4 +9,4 @@ var defaultRTE = new ej.richtexteditor.RichTextEditor({
     }
   }
 });
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');

@@ -1,4 +1,4 @@
-var defaultRTE = new ej.richtexteditor.RichTextEditor({
+var editor = new ej.richtexteditor.RichTextEditor({
     toolbarSettings: {
         items: ['Video']
     },
@@ -14,4 +14,4 @@ var defaultRTE = new ej.richtexteditor.RichTextEditor({
           type="video/mp4" />
       </video></p> `
 });
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');

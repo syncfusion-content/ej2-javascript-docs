@@ -1,5 +1,5 @@
 // initialize Rich Text Editor component
-var defaultRTE = new ej.richtexteditor.RichTextEditor({
+var editor = new ej.richtexteditor.RichTextEditor({
         toolbarSettings: {
                 items: ['FontName']
         },
@@ -7,4 +7,4 @@ var defaultRTE = new ej.richtexteditor.RichTextEditor({
 });
 
 // render initialized Rich Text Editor
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');

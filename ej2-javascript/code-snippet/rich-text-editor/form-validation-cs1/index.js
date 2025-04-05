@@ -1,4 +1,4 @@
-var defaultRTE = new ej.richtexteditor.RichTextEditor({ 
+var editor = new ej.richtexteditor.RichTextEditor({ 
     showCharCount: true,
     maxLength: 100,
     placeholder: 'Type something',
@@ -6,7 +6,7 @@ var defaultRTE = new ej.richtexteditor.RichTextEditor({
   button.disabled = false;
 }
 });
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');
 
  var button = new ej.buttons.Button({
    disabled : true

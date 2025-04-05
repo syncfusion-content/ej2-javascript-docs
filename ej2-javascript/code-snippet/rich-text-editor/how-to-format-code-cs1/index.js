@@ -1,9 +1,9 @@
-var defaultRTE = new ej.richtexteditor.RichTextEditor({ 
+var editor = new ej.richtexteditor.RichTextEditor({ 
     toolbarSettings: {
     items: ['InsertCode']
   }
 });
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');
 
 
 

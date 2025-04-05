@@ -1,4 +1,4 @@
-var defaultRTE = new ej.richtexteditor.RichTextEditor({
+var editor = new ej.richtexteditor.RichTextEditor({
     placeholder: "Click link icon in toolbar to add the desired link",
     toolbarSettings: {
         items: ['createLink']
@@ -15,5 +15,5 @@ var defaultRTE = new ej.richtexteditor.RichTextEditor({
         }
     }
 });
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');
 

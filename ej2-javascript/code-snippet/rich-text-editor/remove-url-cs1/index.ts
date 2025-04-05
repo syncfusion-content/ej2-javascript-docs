@@ -1,7 +1,7 @@
 import { RichTextEditor, HtmlEditor, Toolbar, QuickToolbar, Image, FileManager } from '@syncfusion/ej2-richtexteditor';
 RichTextEditor.Inject(HtmlEditor, Toolbar, QuickToolbar, Image, FileManager);
 
-let defaultRTE: RichTextEditor = new RichTextEditor({
+let editor: RichTextEditor = new RichTextEditor({
     insertImageSettings: {
         saveUrl: 'https://services.syncfusion.com/js/production/api/RichTextEditor/SaveFile',
         removeUrl: 'https://services.syncfusion.com/js/production/api/RichTextEditor/DeleteFile'
@@ -11,4 +11,4 @@ let defaultRTE: RichTextEditor = new RichTextEditor({
         items: ['Image']
     }
 });
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');

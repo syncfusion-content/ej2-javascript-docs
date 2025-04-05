@@ -6,7 +6,7 @@ import { CheckBox, ChangeEventArgs } from '@syncfusion/ej2-buttons';
 
 RichTextEditor.Inject(Toolbar, HtmlEditor);
 
-let defaultRTE: RichTextEditor = new RichTextEditor({
+let editor: RichTextEditor = new RichTextEditor({
    height: 340,
    toolbarSettings: {
       enableFloating: false
@@ -22,7 +22,7 @@ let defaultRTE: RichTextEditor = new RichTextEditor({
     <li><p>Allows preview of modified content before saving it.</p></li>
     <li><p>Handles images, hyperlinks, video, hyperlinks, uploads, etc.</p></li>
     </ul>`});
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');
 
 let float: CheckBox = new CheckBox({
     // set false for enable the checked state at initial rendering
@@ -30,8 +30,8 @@ let float: CheckBox = new CheckBox({
     label: 'Enable Floating',
     // bind change event
     change: (args: ChangeEventArgs) => {
-        defaultRTE.toolbarSettings.enableFloating = (args as any).checked;
-        defaultRTE.dataBind();
+        editor.toolbarSettings.enableFloating = (args as any).checked;
+        editor.dataBind();
     }
 });
 float.appendTo('#float');

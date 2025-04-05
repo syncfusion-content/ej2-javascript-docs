@@ -2,7 +2,7 @@
  * Rich Text Editor Paste Cleanup Sample
  */
 
-var defaultRTE = new ej.richtexteditor.RichTextEditor({
+var editor = new ej.richtexteditor.RichTextEditor({
     value: ` <p>Rich Text Editor is a WYSIWYG editing control which will reduce the effort for users while trying to express their formatting word content as HTML or Markdown format.</p>
         <p><b>Paste Cleanup properties:</b></p>
         <ul>
@@ -37,4 +37,4 @@ var defaultRTE = new ej.richtexteditor.RichTextEditor({
         allowedStyleProps: ['color', 'margin', 'font-size']
     }
     });
-defaultRTE.appendTo('#defaultRTE');
+editor.appendTo('#editor');

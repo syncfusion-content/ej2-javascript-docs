@@ -20,8 +20,8 @@ To enable strict [Content Security Policy (CSP)](https://csp.withgoogle.com/docs
 {% highlight razor tabtitle="HTML" %}
 
 <meta http-equiv="Content-Security-Policy" content="default-src 'self';
-    style-src 'self' blob:;
-    font-src 'self' data:;" />
+    style-src 'self' https://fonts.googleapis.com/ blob:;
+    font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/ data:;" />
 
 {% endhighlight %}
 {% endtabs %}
@@ -36,8 +36,8 @@ The resultant meta tag is included within the `<head>` tag and resolves the CSP 
 <head>
     ...
     <meta http-equiv="Content-Security-Policy" content="default-src 'self';
-    style-src 'self' blob:;
-    font-src 'self' data:;" />
+    style-src 'self' https://fonts.googleapis.com/ blob:;
+    font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/ data:;" />
 </head>
 
 {% endhighlight %}
@@ -50,8 +50,8 @@ The resultant meta tag is included within the `<head>` tag and resolves the CSP 
 <head>
     <meta http-equiv="Content-Security-Policy" content="default-src 'self';
     script-src 'self' 'wasm-unsafe-eval' blob:;
-    font-src 'self' data:;
-    style-src 'self' blob:;
+    font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/ data:;
+    style-src 'self' https://fonts.googleapis.com/ blob:;
     img-src 'self' data:"/>
 </head>
 {% endhighlight %}
@@ -66,8 +66,8 @@ The resultant meta tag is included within the `<head>` tag and resolves the CSP 
     script-src 'self' 'wasm-unsafe-eval' blob:;
     worker-src 'self' blob:;
     connect-src 'self' data:;
-    style-src 'self' blob:;
-    font-src 'self' data:;
+    style-src 'self' https://fonts.googleapis.com/ blob:;
+    font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/ data:;
     img-src 'self' data: blob:;" />
 </head>
 {% endhighlight %}

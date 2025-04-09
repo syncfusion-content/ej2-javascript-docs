@@ -20,8 +20,8 @@ To enable strict [Content Security Policy (CSP)](https://csp.withgoogle.com/docs
 {% highlight razor tabtitle="HTML" %}
 
 <meta http-equiv="Content-Security-Policy" content="default-src 'self';
-    style-src 'self' 'wasm-unsafe-eval' blob:;
-    font-src 'self'  data:;" />
+    style-src 'self' blob:;
+    font-src 'self' data:;" />
 
 {% endhighlight %}
 {% endtabs %}
@@ -36,22 +36,22 @@ The resultant meta tag is included within the `<head>` tag and resolves the CSP 
 <head>
     ...
     <meta http-equiv="Content-Security-Policy" content="default-src 'self';
-    style-src 'self' https://fonts.googleapis.com/ ;
-    font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/ data:;" />
+    style-src 'self' blob:;
+    font-src 'self' data:;" />
 </head>
 
 {% endhighlight %}
 {% endtabs %}
 
-* Syncfusion PDF Viewer control when images are added as **blob** and **base64**, which are blocked on a strict CSP-enabled site.To overcome this restriction, it is necessary to add the img-src data: directive in the meta tag. To allow them, add the  [`style-src  'self' 'wasm-unsafe-eval' blob:;`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/style-src) and [`img-src 'self' data:;`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/img-src) directives as follows.
+* Syncfusion PDF Viewer control when images are added as **blob** and **base64**, which are blocked on a strict CSP-enabled site.To overcome this restriction, it is necessary to add the img-src data: directive in the meta tag. To allow them, add the  [`style-src  'self' blob:;`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/style-src) and [`img-src 'self' data:;`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/img-src) directives as follows.
 
 {% tabs %}
 {% highlight razor tabtitle="HTML" %}
 <head>
     <meta http-equiv="Content-Security-Policy" content="default-src 'self';
     script-src 'self' 'wasm-unsafe-eval' blob:;
-    font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/ data: 'unsafe-inline';
-    style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+    font-src 'self' data:;
+    style-src 'self' blob:;
     img-src 'self' data:"/>
 </head>
 {% endhighlight %}

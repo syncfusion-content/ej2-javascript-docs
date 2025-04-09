@@ -167,7 +167,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/speech-to-text/getting-started/es5-getting-started-cs1" %}
+{% previewsample "page.domainurl/code-snippet/speech-to-text/getting-started/es5-getting-started-cs1/index" %}
 
 **Step 4:** Now, run the `index.html` in web browser, it will render the `Syncfusion JavaScript SpeechToText` control.
 
@@ -183,4 +183,4 @@ You can use the [content](../api/speech-to-text/buttonSettingsModel/#content) pr
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/speech-to-text/getting-started/buttonContent" %}
+{% previewsample "page.domainurl/code-snippet/speech-to-text/getting-started/buttonContent/index" %}

@@ -70,7 +70,7 @@ To render the root-level folder, specify the `parentId` as null, or there is no 
 
 In the following topic, we can learn about reading files from Google API using the File Manager's action events. This eliminates the need to define [`ajaxSettings`](../api/file-manager/#ajaxsettings) url.
 
-These events enable you to access essential item details from the event argument. To perform file operation corresponding to your service, use the `cancel` property in File Manager's action event and customize the [`fileSystemData`](../api/file-manager/#filesystemdata) based on your current service data.
+These events enable you to access Essential<sup style="font-size:70%">&reg;</sup> item details from the event argument. To perform file operation corresponding to your service, use the `cancel` property in File Manager's action event and customize the [`fileSystemData`](../api/file-manager/#filesystemdata) based on your current service data.
 
 The example retrieves the google drive file details as Flat data object and handle the read response from source by updating [`fileSystemData`](../api/file-manager/#filesystemdata) property with retrieved data.
 

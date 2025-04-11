@@ -151,7 +151,7 @@ The following example shows a basic SpeechToText control.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/speech-to-text/getting-started/getting-started-cs1" %}
+{% previewsample "page.domainurl/code-snippet/speech-to-text/getting-started/getting-started-cs1/index" %}
 
 > The `SpeechToText` control requires an internet connection and using a browser that supports `SpeechRecognition` from the Web Speech API.
 
@@ -168,4 +168,4 @@ You can use the [content](../api/speech-to-text/buttonSettingsModel/#content) pr
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/speech-to-text/getting-started/buttonContent" %}
+{% previewsample "page.domainurl/code-snippet/speech-to-text/getting-started/buttonContent/index" %}

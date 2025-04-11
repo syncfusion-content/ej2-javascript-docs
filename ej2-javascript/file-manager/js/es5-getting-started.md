@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 ---
 # Es5 getting started in ##Platform_Name## File Manager control
 
-The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
 ## Control Initialization
 
-Create an app folder `myapp` in local machine to initialize Essential JS 2 JavaScript controls.
+Create an app folder `myapp` in local machine to initialize Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
 
 Using either of the following way to refer the required script and styles.
 
@@ -23,9 +23,9 @@ Using either of the following way to refer the required script and styles.
 
 ### Using local script and style references in a HTML page
 
-**Step 1:** Create an app folder `myapp` for Essential JS 2 JavaScript controls.
+**Step 1:** Create an app folder `myapp` for Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+**Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
 **Syntax:**
 > Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
@@ -38,7 +38,7 @@ Using either of the following way to refer the required script and styles.
 >
 > Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-filemanager\styles\material.css`
 
-The below located script and style file contains all Syncfusion JavaScript (ES5) UI control resources in a single file.
+The below located script and style file contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file.
 
 > Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
 >
@@ -84,7 +84,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
 
 >Note: If you want to refer the combined control styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
-**Step 5:** Now, add the `div` element and initiate the `Essential JS 2 File Manager` control in the `index.html` by using following code
+**Step 5:** Now, add the `div` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 File Manager** control in the `index.html` by using following code
 
 ```html
 <!DOCTYPE html>
@@ -136,11 +136,11 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
 >**Note:** The [`ajaxSettings`](../api/file-manager/#ajaxsettings) must be defined while initializing the File Manager. File Manager utilizes the URL's mentioned in ajaxSettings to send [`file operation`](./file-operations) request to the server.
 >The File Manager service link is given in `hostUrl`.
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential JS 2 File Manager** control.
+**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 File Manager** control.
 
 ### Using CDN link for script and style reference
 
-**Step 1:** The Essential JS 2 controls scripts and styles are already hosted in the below CDN link formats.
+**Step 1:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls scripts and styles are already hosted in the below CDN link formats.
 
 **Syntax:**
 > Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`

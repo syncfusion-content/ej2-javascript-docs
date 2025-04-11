@@ -15,7 +15,7 @@ The ##Platform_Name## File Manager control provides an [`uploadSettings`](../api
 
 ## Directory Upload
 
-The [`directoryUpload`](../api/file-manager/uploadSettingsModel/#directoryupload) property controls whether users can browse and upload entire directories (folders) in the Syncfusion ##Platform_Name## File Manager control.
+The [`directoryUpload`](../api/file-manager/uploadSettingsModel/#directoryupload) property controls whether users can browse and upload entire directories (folders) in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## File Manager control.
 
 To enable directory upload, set the [`directoryUpload`](../api/file-manager/uploadSettingsModel/#directoryupload) property to `true` in the [`uploadSettings`](../api/file-manager/#uploadsettings) configuration.
 

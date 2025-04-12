@@ -43,7 +43,7 @@ After installing the package, you can integrate WProofreader with the Rich Text 
 5. Configure the activation key in the `serviceId` property.
 
 
-Below is an example code snippet to integrate WProofreader with the Syncfusion Rich Text Editor:
+Below is an example code snippet to integrate WProofreader with the Syncfusion<sup style="font-size:70%">&reg;</sup> Rich Text Editor:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -69,6 +69,6 @@ Below is an example code snippet to integrate WProofreader with the Syncfusion R
 
 {% endif %}
 
-Below is a GIF demonstrating how to integrate WProofreader with the Syncfusion Rich Text Editor.
+Below is a GIF demonstrating how to integrate WProofreader with the Syncfusion<sup style="font-size:70%">&reg;</sup> Rich Text Editor.
 
 ![WebSpellChecker](images/spell-grammar-check.gif)

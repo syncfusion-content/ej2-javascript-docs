@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Treemap control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Treemap control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## TreeMap control | Syncfusion
+description:  Checkout and learn about Getting started with ##Platform_Name## TreeMap control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 ---
 
 
-# Getting started in ##Platform_Name## Treemap control
+# Getting started in ##Platform_Name## TreeMap control
 
-This section explains the steps to create a simple Treemap and demonstrates the basic usage of the Treemap component using the Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential JS 2 package.
+This section explains the steps to create a simple TreeMap and demonstrates the basic usage of the TreeMap component using the Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential JS 2 package.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 

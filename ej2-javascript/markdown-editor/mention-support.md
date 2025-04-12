@@ -21,7 +21,7 @@ When a user types the `@` symbol followed by a character, the Markdown Editor di
 
 ## Configuring Mention Properties
 
-The Syncfusion Mention control provides several customizable properties to enhance the tagging experience:
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Mention control provides several customizable properties to enhance the tagging experience:
 
 * [allowSpaces](https://helpej2.syncfusion.com/documentation/api/mention#allowspaces) - Allow to continue search action if user enter space after mention character while searching.
 * [suggestionCount](https://helpej2.syncfusion.com/documentation/api/mention#suggestioncount) - Defines the maximum number of items displayed in the suggestion list.

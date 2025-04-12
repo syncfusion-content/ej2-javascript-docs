@@ -11,12 +11,12 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Auto complete control
 
-This article describes the API migration process of  AutoComplete component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of  AutoComplete component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 > MultiSelect concept is not present in EJ2-AutoComplete.  If you want to use multiselection support in autocomplete, we suggest you to use MultiSelect component.
 
 ## DataBinding
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Default** | **Property:** *datasource* <br/>`$('#autocomplete').ejAutocomplete({ dataSource: countriesField,});`| **Property:** *dataSource*<br/>`var groupObj = new ej.dropdowns.AutoComplete({dataSource: vegetableData,});groupObj.appendTo('#vegetables');`|
 | **Fields for mapping** | **Property:** *fields*<br/>`$('#autocomplete').ejAutocomplete({fields: { key: "index", text: "name" },});`| **Property:** *fields*<br/>`var groupObj = new ej.dropdowns.AutoComplete({fields: { groupBy: 'Category', value: 'Vegetable' },});groupObj.appendTo('#vegetables');` |
@@ -28,7 +28,7 @@ This article describes the API migration process of  AutoComplete component from
 
 ## Filtering
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Case sensitivity** | **Property**: *caseSensitiveSearch*<br/>`$('#autocomplete').ejAutocomplete({ caseSensitiveSearch: true,});`|**Property:** *ignoreCase*<br/>`var groupObj = new ej.dropdowns.AutoComplete({ignoreCase: true,});groupObj.appendTo('#vegetables');`|
 | **Accent effective search** | **Not applicable** | **Property** : *ignoreAccent* <br/>`var groupObj = new ej.dropdowns.AutoComplete({ignoreAccent: true,});groupObj.appendTo('#vegetables');`|
@@ -41,14 +41,14 @@ This article describes the API migration process of  AutoComplete component from
 
 ## Placeholder
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Watermark text** | **Property:** *watermarkText* <br/>`$('#autocomplete').ejAutocomplete({watermarkText:"select" });`| **Property:** *placeholder* <br/>`var groupObj = new ej.dropdowns.AutoComplete({placeholder: "Select",});groupObj.appendTo('#vegetables');`|
 | **Floating  of watermark text** | **Not applicable**   | **Property:** *floatLabelType* <br/>`var groupObj = new ej.dropdowns.AutoComplete({floatLabelType: floatLabelType,});groupObj.appendTo('#vegetables');`|
 
 ## Popup
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **No records text** | **Property:** *emptyResultText* <br/> `$('#autocomplete').ejAutocomplete({emptyResultText:"no records" });`| **Property:** *noRecordsTemplate*<br/> `var groupObj = new ej.dropdowns.AutoComplete({noRecordsTemplate: noRecordsTemplate,});groupObj.appendTo('#vegetables');`|
 | **No records showing** | **Property:** *showEmptyResultText*<br/> `$('#autocomplete').ejAutocomplete({showEmptyResultText:true })` | **Not applicable** |
@@ -67,7 +67,7 @@ This article describes the API migration process of  AutoComplete component from
 
 ## CSS
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Default** | **Property:** *cssClass* <br/> `$('#autocomplete').ejAutocomplete({cssClass:"cssClass" })` | **Property:** *cssClass* <br/> `var groupObj = new ej.dropdowns.AutoComplete({cssClass:"cssClass",});groupObj.appendTo('#vegetables');`|
 | **Height** | **Property:** *height* <br/> `$('#autocomplete').ejAutocomplete({height:"300px" })`| **Acheivable through the [cssClass](https://ej2.syncfusion.com/documentation/auto-complete/api-autoComplete.html?lang=typescript#cssclass) property** |
@@ -77,19 +77,19 @@ This article describes the API migration process of  AutoComplete component from
 
 ## Grouping
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Default** | **Property:** *fields*<br/> `$('#autocomplete').ejAutocomplete({fields: { key: "index", groupBy: "name" },});`|**Property:** *fields*<br/> `var groupObj = new ej.dropdowns.AutoComplete({fields: { groupBy: 'Category', value: 'Vegetable' },});groupObj.appendTo('#vegetables');`|
 
 ## Localization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Default** | **Property:** *Locale* <br/>`$('#autocomplete').ejAutocomplete({lcoale: "fr-FE",});`| **Property:** *Locale* <br/>`var groupObj = new ej.dropdowns.AutoComplete({locale: "fr-FE"});groupObj.appendTo('#vegetables');`|
 
 ## Template
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Default** | **Property:** *template* `$('#autocomplete').ejAutocomplete({template: "<span><span class='name'>${FirstName}</span><span class ='city'>${City}</span></span>"})`|**Property:** *itemTemplate*<br/> `var groupObj = new ej.dropdowns.AutoComplete({itemTemplate: "<span><span class='name'>${FirstName}</span><span class ='city'>${City}</span></span>"});groupObj.appendTo('#vegetables');` |
 | **Group Template** | **Not Applicable**  | **Property:** *groupTemplate* <br/>`var groupObj = new ej.dropdowns.AutoComplete({groupTemplate: "<strong>${City}</strong>"});groupObj.appendTo('#vegetables');`|
@@ -101,20 +101,20 @@ This article describes the API migration process of  AutoComplete component from
 
 ## Sorting
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Default** | **Property:** *allowSorting* <br/> `$('#autocomplete').ejAutocomplete({allowSorting: true,});` | **Acheivable through [sortOrder](https://ej2.syncfusion.com/documentation/auto-complete/api-autoComplete.html?lang=typescript#sortorder) property** |
 | **Order of sorting** | **Property:** *sortOrder* <br/>`$('#autocomplete').ejAutocomplete({sortOrder: "Ascending",});`|**Property:** *sortOrder*<br/> `var groupObj = new ej.dropdowns.AutoComplete({sortOrder: "sortOrder"});groupObj.appendTo('#vegetables');` |
 
 ## Accessibility
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **RTL support** | **Property:** *enableRtl* <br/>`$('#autocomplete').ejAutocomplete({enableRtl: true,});` | **Property:** *enableRtl* <br/>`var groupObj = new ej.dropdowns.AutoComplete({enableRtl: true});groupObj.appendTo('#vegetables');`|
 
 ## Selection
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------ | ----------- |
 |**Selecting particular value**| **Property**: *selectValueByKey* <br/>`$('#autocomplete').ejAutocomplete({selectValueByKey: 1,});`|**Achievable through [value](https://ej2.syncfusion.com/documentation/auto-complete/api-autoComplete.html?lang=typescript#value) property** |
 | **Selecting particular value** | **Property**: *value*<br/>`$('#autocomplete').ejAutocomplete({value: data,});` | **Property:** *value*<br/> `var groupObj = new ej.dropdowns.AutoComplete({value: "data"});groupObj.appendTo('#vegetables');`|
@@ -125,7 +125,7 @@ This article describes the API migration process of  AutoComplete component from
 
 ## Miscellaneous
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Enable/disable** | **Property:** *enabled*<br/>`$('#autocomplete').ejAutocomplete({enabled: true,});` | **Property:** *enabled* <br/>`var groupObj = new ej.dropdowns.AutoComplete({enabled: true});groupObj.appendTo('#vegetables');`|
 | **Enable persistence** | **Property:** *enablePersistence*<br/> `$('#autocomplete').ejAutocomplete({enablePersistence: true,});` | **Property:** *enablePersistence* <br/> `var groupObj = new ej.dropdowns.AutoComplete({enablePersistence: true});groupObj.appendTo('#vegetables');`|
@@ -135,7 +135,7 @@ This article describes the API migration process of  AutoComplete component from
 
 ## Common
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Addition of new option watermark text** | **Property:** *addNewText*<br/> `$('#autocomplete').ejAutocomplete({addNewText:"text"});`|**Not applicable** |
 | **Addition of new item** | **Property:**  *allowAddNew* <br/>`$('#autocomplete').ejAutocomplete({allowAddNew: true});`|**Property:** *allowCustom*<br/> `var groupObj = new ej.dropdowns.AutoComplete({allowCustom: true});groupObj.appendTo('#vegetables');`|

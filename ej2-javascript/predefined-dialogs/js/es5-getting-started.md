@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Es5 getting started in ##Platform_Name## Predefined dialogs control
 
-The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
 ## Dependencies
 
@@ -25,16 +25,16 @@ The following list of dependencies are required to use Predefined dialogs in you
 
 ## Control Initialization
 
-The Essential JS 2 JavaScript controls can be initialized by using either of the following ways.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using either of the following ways.
 
 * Using local script and style references in a HTML page.
 * Using CDN link for script and style reference.
 
 ### Using local script and style references in a HTML page
 
-**Step 1:** Create an app folder `quickstart` for Essential JS 2 JavaScript controls.
+**Step 1:** Create an app folder `quickstart` for Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+**Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
 **Syntax:**
 > Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -71,7 +71,7 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
   </html>
 ```
 
-**Step 5:** Now, add the `Predefined dialogs` element and initiate the `Syncfusion Javascript Predefined Dialogs` in the `index.html` by using following code
+**Step 5:** Now, add the `Predefined dialogs` element and initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> Javascript Predefined Dialogs** in the `index.html` by using following code
 
 ```html
 <!DOCTYPE html>
@@ -111,13 +111,13 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Syncfusion Javascript Predefined Dialogs**.
+**Step 6:** Now, run the `index.html` in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> Javascript Predefined Dialogs**.
 
 ### Using CDN link for script and style reference
 
 **Step 1:** Create an app folder `quickstart` for the getting started.
 
-**Step 2:** The Essential JS 2 control's global scripts and styles are already hosted in the below CDN link formats.
+**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 control's global scripts and styles are already hosted in the below CDN link formats.
 
 **Syntax:**
 > Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -129,7 +129,7 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 >
 > Styles: [`http://cdn.syncfusion.com/ej2/ej2-popups/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-popups/styles/material.css)
 
-**Step 3:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the CDN link references. Now, add the `Predefined dialogs` element and initiate the `Syncfusion Javascript Predefined Dialogs` in the index.html by using following code.
+**Step 3:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the CDN link references. Now, add the `Predefined dialogs` element and initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> Javascript Predefined Dialogs** in the index.html by using following code.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -142,7 +142,7 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
         
 {% previewsample "page.domainurl/code-snippet/predefined-dialogs/getting-started-cs1" %}
 
-**Step 4:** Now, run the `index.html` in web browser, it will render the `Syncfusion Javascript Predefined Dialogs`.
+**Step 4:** Now, run the `index.html` in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> Javascript Predefined Dialogs**.
 
 ## Render a dialog using utility functions
 

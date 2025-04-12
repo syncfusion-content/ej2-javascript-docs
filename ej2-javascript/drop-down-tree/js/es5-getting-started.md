@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Es5 getting started in ##Platform_Name## Dropdown Tree control
 
-The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework that can be directly used in the latest web browsers.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework that can be directly used in the latest web browsers.
 
 ## Dependencies
 
@@ -30,16 +30,16 @@ The following list of dependencies are required to use the Dropdown Tree control
 
 ## Control Initialization
 
-The Essential JS 2 JavaScript controls can be initialized by using either of the following ways.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using either of the following ways.
 
 * Using local script and style references in a HTML page.
 * Using CDN link for script and style reference.
 
 ### Using local script and style references in a HTML page
 
-**Step 1:** Create an app folder `myapp` for Essential JS 2 JavaScript controls.
+**Step 1:** Create an app folder `myapp` for Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+**Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
 **Syntax:**
 > Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -86,7 +86,7 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
   </html>
 ```
 
-**Step 5:** Now, add the `input` element and initiate the `Essential JS 2 Dropdown Tree` control in the `index.html` by using the following code.
+**Step 5:** Now, add the `input` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Dropdown Tree** control in the `index.html` by using the following code.
 
 ```html
 <!DOCTYPE html>
@@ -126,13 +126,13 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
   </html>
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential JS 2 Dropdown Tree** control.
+**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Dropdown Tree** control.
 
 ### Using CDN link for script and style reference
 
-**Step 1:** Create an app folder `myapp` for the Essential JS 2 JavaScript controls.
+**Step 1:** Create an app folder `myapp` for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
 
-**Step 2:** The Essential JS 2 control's global scripts and styles are already hosted in the below CDN link formats.
+**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 control's global scripts and styles are already hosted in the below CDN link formats.
 
 **Syntax:**
 > Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -144,7 +144,7 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 >
 > Styles: [`http://cdn.syncfusion.com/ej2/ej2-dropdowns/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-dropdowns/styles/material.css)
 
-**Step 3:** Create a HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `input` element and initiate the `Essential JS 2 Dropdown Tree` control in the index.html by using the following code.
+**Step 3:** Create a HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `input` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Dropdown Tree** control in the index.html by using the following code.
 
 ```html
 <!DOCTYPE html>
@@ -186,7 +186,7 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 
 ```
 
-**Step 4:** Now, run the `index.html` in web browser, it will render the `Essential JS 2 Dropdown Tree` control.
+**Step 4:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Dropdown Tree** control.
 
 ## Binding data source
 

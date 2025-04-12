@@ -32,7 +32,7 @@ function exportDetailDataBound(args: DetailDataBoundEventArgs) {
   ((args.childGrid as GridModel).columns as ColumnModel[])[2].format ={ type: 'date', format: 'dd\\/MM\\/yyyy'};
 }
 function toolbarClick(args: ClickEventArgs) {
-  if (args['item'].id === 'Grid_excelexport') {
+  if (args['item'].id === 'Grid_pdfexport') {
     let exportProperties: PdfExportProperties = {
       hierarchyExportMode: 'All',
     };

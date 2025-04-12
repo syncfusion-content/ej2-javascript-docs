@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Rich text editor control
 
-The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
 ## Dependencies
 
@@ -34,24 +34,24 @@ The following list of dependencies are required to use the `Rich Text Editor` co
 
 Refer to the following steps to set up your local environment.
 
-**Step 1:** Create an app folder `my-app` for Essential JS 2 JavaScript controls.
+**Step 1:** Create an app folder `my-app` for Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
 
 **Step 2:** Create a `my-app/resources` folder to store local scripts and styles files.
 
-**Step 3:** Open Visual Studio Code and create `my-app/index.js` and `my-app/index.html` files for initializing the Essential JS 2 Rich Text Editor control.
+**Step 3:** Open Visual Studio Code and create `my-app/index.js` and `my-app/index.html` files for initializing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Rich Text Editor control.
 
-## Adding Syncfusion resources
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
 
-The Essential JS 2 JavaScript controls can be initialized by using either of the following ways.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using either of the following ways.
 
 * Using local script and style
 * Using CDN link for script and style
 
 ### Using local script and style
 
-**1. Download Essential Studio JavaScript (Essential JS 2):** Obtain the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+**1. Download Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2):** Obtain the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
-**2. Locate Script and Style Files:** After installing the Essential JS 2 product build, identify the location of the Rich Text Editor’s script and style file. The syntax for the file paths is as follows:
+**2. Locate Script and Style Files:** After installing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 product build, identify the location of the Rich Text Editor’s script and style file. The syntax for the file paths is as follows:
 
 **Syntax:**
 > Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -70,9 +70,9 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 
 Here’s an example of referencing the Rich Text Editor’s scripts and styles in an HTML file:
 
-**a.Essential Dependency (Minimal Setup)**
+**a.Essential<sup style="font-size:70%">&reg;</sup> Dependency (Minimal Setup)**
 
-This setup includes only the necessary scripts and styles required to render the Syncfusion Rich Text Editor. Use this setup for a lightweight application that requires basic Rich Text Editor functionality.
+This setup includes only the necessary scripts and styles required to render the Syncfusion<sup style="font-size:70%">&reg;</sup> Rich Text Editor. Use this setup for a lightweight application that requires basic Rich Text Editor functionality.
 
 ```html
 <!DOCTYPE html>
@@ -110,7 +110,7 @@ This setup includes only the necessary scripts and styles required to render the
 
 **b. Comprehensive Dependency (All Controls)**
 
-This setup includes all possible dependencies for Syncfusion controls in a single comprehensive file, ensuring maximum compatibility and functionality. Use this setup for a complex application that utilizes a wide range of Syncfusion controls.
+This setup includes all possible dependencies for Syncfusion<sup style="font-size:70%">&reg;</sup> controls in a single comprehensive file, ensuring maximum compatibility and functionality. Use this setup for a complex application that utilizes a wide range of Syncfusion<sup style="font-size:70%">&reg;</sup> controls.
 
 ```html
 <!DOCTYPE html>
@@ -145,9 +145,9 @@ Refer the Rich Text Editor’s CDN links as belows.
 
 Here’s an example of referencing the Rich Text Editor’s scripts and styles in an HTML file using CDN links:
 
-**a.Essential Dependency (Minimal Setup)**
+**a.Essential<sup style="font-size:70%">&reg;</sup> Dependency (Minimal Setup)**
 
-This setup includes only the necessary scripts and styles required to render the Syncfusion Rich Text Editor. Use this setup for a lightweight application that requires basic Rich Text Editor functionality.
+This setup includes only the necessary scripts and styles required to render the Syncfusion<sup style="font-size:70%">&reg;</sup> Rich Text Editor. Use this setup for a lightweight application that requires basic Rich Text Editor functionality.
 
 ```html
 <!DOCTYPE html>
@@ -186,7 +186,7 @@ This setup includes only the necessary scripts and styles required to render the
 
 **c. Comprehensive Dependency (All Controls)**
 
-This setup includes all possible dependencies for Syncfusion controls in a single comprehensive file, ensuring maximum compatibility and functionality. Use this setup for a complex application that utilizes a wide range of Syncfusion controls.
+This setup includes all possible dependencies for Syncfusion<sup style="font-size:70%">&reg;</sup> controls in a single comprehensive file, ensuring maximum compatibility and functionality. Use this setup for a complex application that utilizes a wide range of Syncfusion<sup style="font-size:70%">&reg;</sup> controls.
 
 ```html
 <!DOCTYPE html>
@@ -278,7 +278,7 @@ Configure the toolbar with the tools using items field of the [toolbarSettings](
 
 ## Run the application
 
-Now, run the index.html in web browser, it will render the Essential JS 2 Rich Text Editor control.
+Now, run the index.html in web browser, it will render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Rich Text Editor control.
 
 Output will be displayed as follows.
 

@@ -11,12 +11,12 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Drop down list control
 
-This article describes the API migration process of  DropDownList component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of  DropDownList component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## DataBinding
 
 <!-- markdownlint-disable MD010 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Default** | **Property**: *dataSource* <br/>`$('#dropdown1').ejDropDownList({dataSource: List});` | **Property**: *dataSource* <br/>`var dropDownListObject = new ej.dropdowns.DropDownList({dataSource: sportsData,});dropDownListObject.appendTo('#ddlelement');`|
 | **Fields for mapping** | **Property**: *fields* <br/>`$('#dropdown1').ejDropDownList({fields: {text: "text",value: "country",},});`| **Property**: *fields* <br/>`var dropDownListObject = new ej.dropdowns.DropDownList({fields: { text: 'Game', value: 'Id' },});dropDownListObject.appendTo('#ddlelement');`|
@@ -30,7 +30,7 @@ This article describes the API migration process of  DropDownList component from
 ## Filtering
 
 <!-- markdownlint-disable MD010 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Default** |	**Property**: *enableFilterSearch* <br/>`$('#dropdown1').ejDropDownList({enableFilterSearch : true,});`| **Property**: *allowFiltering* <br/>`var dropDownListObject = new ej.dropdowns.DropDownList({allowFiltering: true});dropDownListObject.appendTo('#ddlelement');` |
 | **Server filtering** | **Property**: *enableServerFiltering* <br/>`$('#dropdown1').ejDropDownList({enableServerFiltering : true,});`| **Property**: *allowFiltering* <br/>`var dropDownListObject = new ej.dropdowns.DropDownList({allowFiltering: true});dropDownListObject.appendTo('#ddlelement');` |
@@ -45,7 +45,7 @@ This article describes the API migration process of  DropDownList component from
 ## Template
 
 <!-- markdownlint-disable MD010 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Default** | **Property**: *template* <br/>`$("#dropdown").ejDropDownList({template: '<div class="flag ${flag}"> </div>' + '<div class="txt"> ${text} </div>', width: "200px"});` |**Property**: *itemTemplate*<br/>`var dropDownListObject = new ej.dropdowns.DropDownList({itemTemplate: "<span><span class='name'>${FirstName}</span><span class ='city'>${City}</span></span>"});dropDownListObject.appendTo('#ddlelement');`|
 | **Group Template** | **Not Applicable** | **Property**: *groupTemplate* <br/>`var dropDownListObject = new ej.dropdowns.DropDownList({ groupTemplate: "<strong>${City}</strong>"});dropDownListObject.appendTo('#ddlelement');`|
@@ -58,14 +58,14 @@ This article describes the API migration process of  DropDownList component from
 ## Virtual Scrolling
 
 <!-- markdownlint-disable MD010 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Default** |	**Property**: *allowVirtualScrolling* <br/>`$('#dropdown1').ejDropDownList({allowVirtualScrolling : true,});` | **Not applicable** |
 
 ## Applying CSS
 
 <!-- markdownlint-disable MD010 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Default** | **Property**: *cssClass* <br/>`$('#dropdown1').ejDropDownList({cssClass : "customClass",});` | **Property**: *cssClass* <br/>`var dropDownListObject = new ej.dropdowns.DropDownList({cssClass: "customClass"});dropDownListObject.appendTo('#ddlelement');`|
 | **showRoundedCorner** | **Property**: *showRoundedCorner* <br/>`$('#dropdown1').ejDropDownList({showRoundedCorner : true,});` | **Property**: *cssClass* <br/>`var dropDownListObject = new ej.dropdowns.DropDownList({cssClass: "customClass"});dropDownListObject.appendTo('#ddlelement');`|
@@ -73,7 +73,7 @@ This article describes the API migration process of  DropDownList component from
 ## Sorting
 
 <!-- markdownlint-disable MD010 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Default** |	**Property**: *enableSorting* <br/>`$('#dropdown1').ejDropDownList({enableSorting : true,});` | **Acheivable through [sortOrder](https://ej2.syncfusion.com/documentation/drop-down-list/api-dropDownList.html?lang=typescript#sortorder) property** |
 | **Order of sorting** | **Property**: *sortOrder* <br/>`$('#dropdown1').ejDropDownList({sortOrder : ej.sortOrder.Descending,});` | **Property**: *sortOrder* <br/>`var dropDownListObject = new ej.dropdowns.DropDownList({sortOrder: "Ascending"});dropDownListObject.appendTo('#ddlelement');`|
@@ -81,7 +81,7 @@ This article describes the API migration process of  DropDownList component from
 ## Popup
 
 <!-- markdownlint-disable MD010 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--- | --- | --- |
 | **Popup height** | **Property**: *popupHeight* <br/>`$('#dropdown1').ejDropDownList({popupHeight : "500px",});`| **Property**: popupHeight <br/>`var dropDownListObject = new ej.dropdowns.DropDownList({popupHeight: "300px"});dropDownListObject.appendTo('#ddlelement');`|
 | **Popup width** |	**Property**: *popupWidth* <br/>`$('#dropdown1').ejDropDownList({popupWidth : "500px",});` | **Property**: *popupWidth* <br/>`var dropDownListObject = new ej.dropdowns.DropDownList({popupWidth: "400px"});dropDownListObject.appendTo('#ddlelement');`|
@@ -106,7 +106,7 @@ This article describes the API migration process of  DropDownList component from
 ## Placeholder
 
 <!-- markdownlint-disable MD010 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Watermark text** | **Property**: *watermarkText* <br/>`$('#dropdown1').ejDropDownList({watermarkText : "Select"});`| **Property**: *placeholder* <br/>`var dropDownListObject = new ej.dropdowns.DropDownList({placeholder: "select"});dropDownListObject.appendTo('#ddlelement');`|
 | **Floating  of watermark text** | **Not applicable** |	**Property**: *floatLabelType* <br/>`var dropDownListObject = new ej.dropdowns.DropDownList({floatLabelType: "Auto"});dropDownListObject.appendTo('#ddlelement');`|
@@ -114,7 +114,7 @@ This article describes the API migration process of  DropDownList component from
 ## Grouping
 
 <!-- markdownlint-disable MD010 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Default** | **Property**: *fields.groupBy* <br/>`$('#dropdown1').ejDropDownList({fields: {groupBy: "text"},});`|**Property**: *fields.groupBy*<br/>>`var dropDownListObject = new ej.dropdowns.DropDownList({fields: { groupBy: 'ContactName',}});dropDownListObject.appendTo('#ddlelement');`|
 | **Group Template**| **Not applicable** | **Property**: *groupTemplate*<br/>`var dropDownListObject = new ej.dropdowns.DropDownList({ groupTemplate: "<strong>${City}</strong>"});dropDownListObject.appendTo('#ddlelement');` |
@@ -122,7 +122,7 @@ This article describes the API migration process of  DropDownList component from
 ## Accessibility
 
 <!-- markdownlint-disable MD010 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Globalization** | **Property**: *locale*<br/>`$('#dropdown1').ejDropDownList({locale: "fr-FE"});`| **Property**: *locale*<br/>`var dropDownListObject = new ej.dropdowns.DropDownList({ locale: "fr-FE"});dropDownListObject.appendTo('#ddlelement');` |
 | **Rtl support** |	**Property**: *enableRTL*<br/>`$('#dropdown1').ejDropDownList({enableRTL: true,});` | **Property**: *enableRtl*<br/>`var dropDownListObject = new ej.dropdowns.DropDownList({ enableRtl: true});dropDownListObject.appendTo('#ddlelement');` |
@@ -130,7 +130,7 @@ This article describes the API migration process of  DropDownList component from
 ## Miscellaneous
 
 <!-- markdownlint-disable MD010 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Enable/disable** | **Property**: *enabled*<br/>`$('#dropdown1').ejDropDownList({enabled: true,});` | **Property**: *enabled* <br/>`var dropDownListObject = new ej.dropdowns.DropDownList({ enabled: true});dropDownListObject.appendTo('#ddlelement');` |
 | Read only | **Property**: *readOnly* <br/>`$('#dropdown1').ejDropDownList({readOnly: true,});` | <br/>**Property**: *readOnly*<br/>`var dropDownListObject = new ej.dropdowns.DropDownList({ readOnly: true});dropDownListObject.appendTo('#ddlelement');` |
@@ -143,7 +143,7 @@ This article describes the API migration process of  DropDownList component from
 ## Selection
 
 <!-- markdownlint-disable MD010 -->
-| Behavior	| API in Essential JS 1	| API in Essential JS 2 |
+| Behavior	| API in Essential<sup style="font-size:70%">&reg;</sup> JS 1	| API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--- | --- | --- |
 | Selecting particular index | **Property**: *selectedIndex*<br/>`$('#dropdown1').ejDropDownList({selectedIndex: 3,});` | **Property**: *index*<br/>`var dropDownListObject = new ej.dropdowns.DropDownList({ index: 3});dropDownListObject.appendTo('#ddlelement');` |
 | **Selecting particular value** | **Property**: *value*<br/>`$('#dropdown1').ejDropDownList({value: "data",});` | **Property**: *value*<br/>`var dropDownListObject = new ej.dropdowns.DropDownList({ value: "data"});dropDownListObject.appendTo('#ddlelement');`|
@@ -161,7 +161,7 @@ This article describes the API migration process of  DropDownList component from
 ## Common
 
 <!-- markdownlint-disable MD010 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Adding new item** | **Method** : *addItem*<br/>`$('#dropdown').ejDropDownList("addItem", {text:"India"});` | **Method**: *addItem*<br/>`var dropDownListObject = new ej.dropdowns.DropDownList();dropDownListObject.appendTo('#ddlelement')`<br/>`dropDownListObject.addItem("data");` |
 | **Clearing the text**| **Method** : *clearText*<br/>`$('#dropdown').ejDropDownList('clearText')` | **Property:** *value*<br/>`var dropDownListObject = new ej.dropdowns.DropDownList({value:""});dropDownListObject.appendTo('#ddlelement')`|

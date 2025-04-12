@@ -12,12 +12,12 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Combo box control
 
-This article describes the API migration process of ComboBox component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of ComboBox component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## DataBinding
 
 <!-- markdownlint-disable MD010 -->
-| Behavior	| API in Essential JS 1 | API in Essential JS 2 |
+| Behavior	| API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Default** |	**Property**: *datasource*<br/>`var sample = new ej.ComboBox($('#dropdown1'),{dataSource: List});`|**Property**: *dataSource*<br/>`let comboBoxObject = new ComboBox({dataSource: sportsData,});comboBoxObject.appendTo('#cmbelement');`|
 | **Fields for mapping** | **Property**: *fields*<br/>`var sample = new ej.ComboBox($('#dropdown1'),{fields: { text: "text", value: "empid" }});`|**Property**: *fields*<br/>`let comboBoxObject = new ComboBox({fields: { text: "text", value: "empid" },});comboBoxObject.appendTo('#cmbelement');` |
@@ -29,7 +29,7 @@ This article describes the API migration process of ComboBox component from Esse
 ## Filtering
 
 <!-- markdownlint-disable MD010 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Default**| **Property**: *allowFiltering*<br/>`var sample = new ej.ComboBox($('#dropdown1'),{allowFiltering: true});`| **Property**: *allowFiltering*<br/>`let comboBoxObject = new ComboBox({allowFiltering: true,});comboBoxObject.appendTo('#cmbelement');`|
 | **No records template** | **Property**: *noRecordsTemplate*<br/>`var sample = new ej.ComboBox($('#dropdown1'),{allowFiltering: "<span class='norecord'> NO DATA AVAILABLE</span>"});` |**Property**: *noRecordsTemplate*<br/>`let comboBoxObject = new ComboBox({allowFiltering: true,});comboBoxObject.appendTo('#cmbelement');` |
@@ -40,7 +40,7 @@ This article describes the API migration process of ComboBox component from Esse
 ## Template
 
 <!-- markdownlint-disable MD010 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Default** | **Property**: *itemTemplate*<br/>`var sample = new ej.ComboBox($('#dropdown1'),{itemTemplate: "<span class='item' ><span class='name'>${FirstName}</span><span class='city'>${City}</span></span>"});` | **Property**: *itemTemplate*<br/>`let comboBoxObject = new ComboBox({itemTemplate: "<span class='item' ><span class='name'>${FirstName}</span><span class='city'>${City}</span></span>",});comboBoxObject.appendTo('#cmbelement');`|
 | **Group Template** | **Property**: *groupTemplate*<br/>`var sample = new ej.ComboBox($('#dropdown1'),{groupTemplate: "<strong>${City}</strong>"});` | **Property**: *groupTemplate*<br/>`let comboBoxObject = new ComboBox({groupTemplate: "<strong>${City}</strong>",});comboBoxObject.appendTo('#cmbelement');`|
@@ -54,7 +54,7 @@ This article describes the API migration process of ComboBox component from Esse
 ## Applying CSS
 
 <!-- markdownlint-disable MD010 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | ---|
 | **Default** | **Property**: *cssClass* <br/>`var sample = new ej.ComboBox($('#dropdown1'),{cssClass: "className"});`| **Property**: *cssClass*<br/>`let comboBoxObject = new ComboBox({cssClass: "className",});comboBoxObject.appendTo('#cmbelement');` |
 | **width** | **Property**: *width* <br/>`var sample = new ej.ComboBox($('#dropdown1'),{width: "500px"});` | **Property**: *Width*<br/>`let comboBoxObject = new ComboBox({width: "500px",});comboBoxObject.appendTo('#cmbelement');` |
@@ -62,14 +62,14 @@ This article describes the API migration process of ComboBox component from Esse
 ## Grouping
 
 <!-- markdownlint-disable MD010 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2|
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2|
 | --- | --- | --- |
 | **Default** | **Property**: *fields*<br/>`var sample = new ej.ComboBox($('#dropdown1'),{fields: { groupBy: "text", value: "empid" }});`| **Property**: *fields*<br/>`let comboBoxObject = new ComboBox({fields: { groupBy: "text", value: "empid" },});comboBoxObject.appendTo('#cmbelement');` |
 
 ## Accessibility
 
 <!-- markdownlint-disable MD010 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2|
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2|
 | --- | --- | --- |
 | **Globalization** | **Property**: *locale*<br/>`var sample = new ej.ComboBox($('#dropdown1'),{locale: true});`| **Property**: *locale*<br/>`let comboBoxObject = new ComboBox({locale: true});comboBoxObject.appendTo('#cmbelement');` |
 | **Rtl support**| **Property**: *enableRtl*<br/>`var sample = new ej.ComboBox($('#dropdown1'),{enableRtl: true});`|**Property**: *enableRtl*<br/>`let comboBoxObject = new ComboBox({enableRtl: true,});comboBoxObject.appendTo('#cmbelement');`|
@@ -77,7 +77,7 @@ This article describes the API migration process of ComboBox component from Esse
 ## Placeholder
 
 <!-- markdownlint-disable MD010 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2|
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2|
 | --- | --- | --- |
 | **Watermark text** | **Property**: *placeholder*<br/>`var sample = new ej.ComboBox($('#dropdown1'),{placeholder: "Select"});`|<br/>**Property**: *placeholder*<br/>`let comboBoxObject = new ComboBox({placeholder: "Select",});comboBoxObject.appendTo('#cmbelement');` |
 | **Floating  of watermark text**| **Not applicable** |**Property**: *floatLabelType*<br/>`let comboBoxObject = new ComboBox({floatLabelType: "Auto",});comboBoxObject.appendTo('#cmbelement');` |
@@ -85,7 +85,7 @@ This article describes the API migration process of ComboBox component from Esse
 ## Miscellaneous
 
 <!-- markdownlint-disable MD010 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2|
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2|
 | --- | --- | --- |
 | **Enable/disable** | **Property**: *enabled*<br/>`var sample = new ej.ComboBox($('#dropdown1'),{enabled: true});`|**Property**: *enabled*<br/>`let comboBoxObject = new ComboBox({enabled: true,});comboBoxObject.appendTo('#cmbelement');` |
 | **Read only** | **Property**: *readOnly*<br/>`var sample = new ej.ComboBox($('#dropdown1'),{readOnly: true});` |**Property**: *readOnly*<br/>`let comboBoxObject = new ComboBox({readOnly: true,});comboBoxObject.appendTo('#cmbelement');`|
@@ -94,14 +94,14 @@ This article describes the API migration process of ComboBox component from Esse
 ## Sorting
 
 <!-- markdownlint-disable MD010 -->
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Order of sorting** | **Property**: *sortOrder*<br/>`var sample = new ej.ComboBox($('#dropdown1'),{sortOrder: SortOrder.Ascending});` | **Property**: *sortOrder*<br/>`let comboBoxObject = new ComboBox({sortOrder: SortOrder.Ascending,});comboBoxObject.appendTo('#cmbelement');`|
 
 ## Selection
 
 <!-- markdownlint-disable MD010 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Selecting particular index** | **Property**: *index*<br/>`var sample = new ej.ComboBox($('#dropdown1'),{index: 1});` | **Property**: *index*<br/>`let comboBoxObject = new ComboBox({index: 1,});comboBoxObject.appendTo('#cmbelement');` |
 | **Selecting particular value** | **Property**: *value*<br/>`var sample = new ej.ComboBox($('#dropdown1'),{value: "data"});`| **Property**: *value*<br/>`let comboBoxObject = new ComboBox({value: "data",});comboBoxObject.appendTo('#cmbelement');` |
@@ -112,7 +112,7 @@ This article describes the API migration process of ComboBox component from Esse
 ## Popup
 
 <!-- markdownlint-disable MD010 -->
-| Behavior| API in Essential JS 1 | API in Essential JS 2 |
+| Behavior| API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Popup height** | **Property**: *popupHeight*<br/>`var sample = new ej.ComboBox($('#dropdown1'),{popupHeight: "300px"});`|**Property**:*popupheight*<br/>`let comboBoxObject = new ComboBox({popupHeight: "300px",});comboBoxObject.appendTo('#cmbelement');`|
 | **Popup width** | **Property**: *popupWidth*<br/>`var sample = new ej.ComboBox($('#dropdown1'),{popupWidth: "300px"})`|**Property**:*popupWidth*<br/>`let comboBoxObject = new ComboBox({popupWidth: "300px",});comboBoxObject.appendTo('#cmbelement');` |
@@ -124,7 +124,7 @@ This article describes the API migration process of ComboBox component from Esse
 ## Common
 
 <!-- markdownlint-disable MD010 -->
-| Behavior | API in Essential JS 1 |API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 |API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Adding new item** | **Method** : *addItem*<br/>`var sample = new ej.ComboBox($('#dropdown1'),{})` <br/> <br/>sample.addItem({ text :"India"});| **Method**: *addItem*<br/>`let comboBoxObject = new ComboBox({});comboBoxObject.appendTo('#cmbelement');`<br/><br/> comboBoxObject.addItem({Id: 'id', Game: 'Golf'},2);|
 | **Focus out event** | **Not applicable** | **Event**: *Blur*<br/>`let comboBoxObject = new ComboBox({blur: "onclose",});comboBoxObject.appendTo('#cmbelement');` |

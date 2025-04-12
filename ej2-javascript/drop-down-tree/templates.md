@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Templates in ##Platform_Name## Dropdown Tree Control
 
-The Dropdown Tree control provides support to customize each list item, header, and footer elements. It uses the Essential JS 2 [Template engine](../common/template-engine) to compile and render the elements properly.
+The Dropdown Tree control provides support to customize each list item, header, and footer elements. It uses the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [Template engine](../common/template-engine) to compile and render the elements properly.
 
 ## Item template
 

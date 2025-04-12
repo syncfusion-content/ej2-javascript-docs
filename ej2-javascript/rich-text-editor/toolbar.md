@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Toolbar in ##Platform_Name## Rich Text Editor Control
 
-The Syncfusion ##Platform_Name## Rich Text Editor control provides a versatile and powerful toolbar to enhance your text editing experience. The toolbar contains a variety of formatting, styling, and editing tools, allowing users to create and modify content efficiently.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Rich Text Editor control provides a versatile and powerful toolbar to enhance your text editing experience. The toolbar contains a variety of formatting, styling, and editing tools, allowing users to create and modify content efficiently.
 
 ## Tools
 
@@ -21,7 +21,7 @@ By default, the Rich Text Editor displays the following toolbar items:
 
 > `Bold` , `Italic` , `Underline` , `|` , `Formats` , `Alignments` , `Blockquote`, `OrderedList` , `UnorderedList` , `|` , `CreateLink` , `Image` , `|` , `SourceCode` , `Undo` , `Redo`
 
-These default items cover essential text editing features, such as text formatting, lists, alignment, and linking.
+These default items cover Essential<sup style="font-size:70%">&reg;</sup> text editing features, such as text formatting, lists, alignment, and linking.
 
 ### Available Toolbar Items
 

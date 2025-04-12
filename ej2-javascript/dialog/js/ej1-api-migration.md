@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Dialog control
 
-This section API migration process of Dialog component from Essential JS1 to Essential JS2.
+This section API migration process of Dialog component from Essential<sup style="font-size:70%">&reg;</sup> JS JS1 to Essential<sup style="font-size:70%">&reg;</sup> JS2.
 
 ## Accessibility and Localization
 
@@ -22,10 +22,10 @@ This section API migration process of Dialog component from Essential JS1 to Ess
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1<b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1<b>
 </td>
 <td>
-<b>API in Essential JS 2<b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2<b>
 </td>
 </tr>
 <tr>
@@ -88,10 +88,10 @@ Right to left
 <b>Behavior<b>
 </td>
 <td>
-<b>API in Essential JS 1<b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1<b>
 </td>
 <td>
-<b>API in Essential JS 2<b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2<b>
 </td>
 </tr>
 <tr>
@@ -276,10 +276,10 @@ Close on escape key press
 <b>Behavior<b>
 </td>
 <td>
-<b>API in Essential JS 1<b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1<b>
 </td>
 <td>
-<b>API in Essential JS 2<b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2<b>
 </td>
 </tr>
 <tr>
@@ -344,10 +344,10 @@ Not Applicable
 Behavior
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -433,10 +433,10 @@ Not Applicable
 <b>Behavior<b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -515,10 +515,10 @@ Not applicable
 Behavior
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -660,10 +660,10 @@ Not Applicable
 Behavior
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -709,10 +709,10 @@ Not applicable
 Behavior
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -757,10 +757,10 @@ position: { X: 'Center', Y: 'Center'}<br/>
 Behavior
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -791,10 +791,10 @@ Render dialog in visible/hidden state
 Behavior
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -825,10 +825,10 @@ Render modal dialog
 Behavior
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -858,10 +858,10 @@ No Separate API for tooltip. It renders based on locale text.
 Behavior
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -904,10 +904,10 @@ By default, scrolling prevented for modal dialog
 Behavior
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -938,10 +938,10 @@ Save the model values in local storage or cookies
 <b>Behavior<b>
 </td>
 <td>
-<b>API in Essential JS 1<b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1<b>
 </td>
 <td>
-<b>API in Essential JS 2<b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2<b>
 </td>
 </tr>
 <tr>

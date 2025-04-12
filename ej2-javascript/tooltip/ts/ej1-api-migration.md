@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Tooltip control
 
-This article describes the API migration process of Tooltip component from Essential JS 1 to Essential JS 2
+This article describes the API migration process of Tooltip component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Position | **Property:** *position* <br /> var tooltip = new ej.Tooltip($("#test"),{ <br /> position: { <br />target: {<br />horizontal: "center",<br />vertical: "top"<br />},<br />stem: {<br />horizontal: "center",<br />vertical: "bottom"<br />}<br />}<br />}); | **Property:** *position* <br />  let tooltip: Tooltip = new Tooltip({ <br />position : 'TopCenter' <br /> }); <br /> tooltip.appendTo('#test); |
 | Animation | **Property:** *animation* <br /> var tooltip =new ej.Tooltip($("#test"),{ <br /> animation :{ effect : "slide", speed : 1000} <br /> }); <br /> | **Property:** *animation* <br />  let tooltip: Tooltip = new Tooltip({<br /> position : 'TopCenter', <br /> animation:{<br /> open: { effect: 'FadeIn', duration: <br /> 150, delay: 0 }, <br /> close: { effect: 'FadeOut', duration: 150, delay: 0 }<br /> }<br /> });<br /> tooltip.appendTo('#test);|

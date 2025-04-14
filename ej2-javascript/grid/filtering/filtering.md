@@ -13,9 +13,9 @@ domainurl: ##DomainURL##
 
 Filtering is a powerful feature in the Syncfusion Grid control that enables you to selectively view data based on specific criteria. It allows you to narrow down large datasets and focus on the information you need, thereby enhancing data analysis and decision-making.
 
-To use filter, inject the [Filter](../../api/grid/filter) module in the grid.
+To use filter, inject the [Filter](../../api/grid/filter/) module in the grid.
 
-To enable filtering in the Grid, you need to set the [allowFiltering](../../api/grid/#allowfiltering) property of the Grid control to true. Once filtering is enabled, you can configure various filtering options through the [filterSettings](../../api/grid/filterSettings) property of the Grid control. This property allows you to define the behavior and appearance of the filter.
+To enable filtering in the Grid, you need to set the [allowFiltering](../../api/grid/#allowfiltering) property of the Grid control to true. Once filtering is enabled, you can configure various filtering options through the [filterSettings](../../api/grid/filterSettings/) property of the Grid control. This property allows you to define the behavior and appearance of the filter.
 
 Here is an example that demonstrates the default filtering feature of the grid:
 
@@ -51,7 +51,7 @@ Here is an example that demonstrates the default filtering feature of the grid:
 
 ## Initial filter
 
-To apply an initial filter, you need to specify the filter criteria using the [predicate](../../api/grid/predicate) object in [filterSettings->columns](../../api/grid/filterSettingsModel/#columns). The `predicate` object represents the filtering condition and contains properties such as field, operator, and value.
+To apply an initial filter, you need to specify the filter criteria using the [predicate](../../api/grid/predicate/) object in [filterSettings->columns](../../api/grid/filterSettingsModel/#columns). The `predicate` object represents the filtering condition and contains properties such as field, operator, and value.
 
 Here is an example of how to configure the initial filter using the `predicate` object:
 
@@ -86,7 +86,7 @@ Here is an example of how to configure the initial filter using the `predicate` 
 
 In the Syncfusion ##Platform_Name## Grid, you can establish an initial filter containing multiple values for a particular column, which helps you to preset filter conditions for a specific column using multiple values. This functionality allows you to display a filtered records in the grid right after the grid is initially loaded.
 
-To apply the filter with multiple values for same column at initial rendering, set the filter [predicate](../../api/grid/predicate) object in [filterSettings->columns](../../api/grid/filterSettingsModel/#columns).
+To apply the filter with multiple values for same column at initial rendering, set the filter [predicate](../../api/grid/predicate/) object in [filterSettings->columns](../../api/grid/filterSettingsModel/#columns).
 
 The following example demonstrates, how to perform an initial filter with multiple values for same **CustomerID** column using `filterSettings.columns` and `predicate`.
 
@@ -121,7 +121,7 @@ The following example demonstrates, how to perform an initial filter with multip
 
 By applying an initial filter with multiple values for different columns in the Syncfusion ##Platform_Name## Grid, you have the flexibility to set predefined filter settings for each column. This results in a filtered records of the grid right after the grid is initially loaded.
 
-To apply the filter with multiple values for different column at initial rendering, set the filter [predicate](../../api/grid/predicate) object in [filterSettings->columns](../../api/grid/filterSettingsModel/#columns).
+To apply the filter with multiple values for different column at initial rendering, set the filter [predicate](../../api/grid/predicate/) object in [filterSettings->columns](../../api/grid/filterSettingsModel/#columns).
 
 The following example demonstrates how to perform an initial filter with multiple values for different **Order ID** and **Customer ID** columns using `filterSettings.columns` and `predicate`.
 
@@ -207,7 +207,7 @@ a* |Everything that starts with "a".
 The **LIKE** filter can process single search patterns using the "%" symbol, retrieving values matching the specified patterns. The following Grid features support LIKE filtering on string-type columns:
 
 * Filter Menu
-* Filter Bar with the [filterSettings->showFilterBarOperator](../../api/grid/filter/#showFilterBarOperator) property enabled on the Grid [filterSettings](../../api/grid/filterSettings).
+* Filter Bar with the [filterSettings->showFilterBarOperator](../../api/grid/filter/#showFilterBarOperator) property enabled on the Grid [filterSettings](../../api/grid/filterSettings/).
 * Custom Filter of Excel filter type.
 
 **For example:**
@@ -308,7 +308,7 @@ Below is an example demonstrating how to filter enum-type data in a Syncfusion #
 
 ## Filtering with case sensitivity
 
-The Syncfusion ##Platform_Name## Grid provides the flexibility to enable or disable case sensitivity during filtering. This feature is useful when you want to control whether filtering operations should consider the case of characters. It can be achieved by using the  [enableCaseSensitivity](../../api/grid/filterSettings/#enablecasesensitivity) property within the [filterSettings](../../api/grid/filterSettings) of the grid.
+The Syncfusion ##Platform_Name## Grid provides the flexibility to enable or disable case sensitivity during filtering. This feature is useful when you want to control whether filtering operations should consider the case of characters. It can be achieved by using the  [enableCaseSensitivity](../../api/grid/filterSettings/#enablecasesensitivity) property within the [filterSettings](../../api/grid/filterSettings/) of the grid.
 
 Below is an example code demonstrating how to enable or disable case sensitivity while filtering:
 
@@ -483,7 +483,7 @@ Here's an example of how to get the filtering data in a Syncfusion grid using th
 
 **2.Using the properties in the FilterEventArgs object**
 
-Alternatively, you can use the properties available in the [FilterEventArgs](../../api/grid/filterEventArgs) object to obtain the filter record details.
+Alternatively, you can use the properties available in the [FilterEventArgs](../../api/grid/filterEventArgs/) object to obtain the filter record details.
 
 * [columns](../../api/grid/filterEventArgs/#columns): This property returns the collection of filtered columns.
 

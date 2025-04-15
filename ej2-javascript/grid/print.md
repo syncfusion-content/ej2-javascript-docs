@@ -369,4 +369,4 @@ Here’s an example of how to add a title to your Grid when using the print func
 ## See Also
 
 * [How to Print the expanded state grid from all pages](./how-to#print-the-expanded-state-from-other-pages)
-* [How to print only selected records in grid](https://www.syncfusion.com/kb/11252/how-to-print-only-selected-records-in-grid)
+* [How to print only selected records in grid](https://support.syncfusion.com/kb/article/9694/how-to-print-only-selected-records-in-grid-of-javascript?isInternalRefresh=False)

@@ -41,7 +41,7 @@ The SpeechToText can be localized to any culture by defining the text in the cor
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/speech-to-text/globalization/localization" %}
+{% previewsample "page.domainurl/code-snippet/speech-to-text/globalization/localization/index" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -54,7 +54,7 @@ The SpeechToText can be localized to any culture by defining the text in the cor
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/speech-to-text/globalization/localization" %}
+{% previewsample "page.domainurl/code-snippet/speech-to-text/globalization/localization/index" %}
 {% endif %}
 
 ## RTL
@@ -72,7 +72,7 @@ RTL provides an option to switch the text direction and layout of the SpeechToTe
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/speech-to-text/globalization/rtl" %}
+{% previewsample "page.domainurl/code-snippet/speech-to-text/globalization/rtl/index" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -85,5 +85,5 @@ RTL provides an option to switch the text direction and layout of the SpeechToTe
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/speech-to-text/globalization/rtl" %}
+{% previewsample "page.domainurl/code-snippet/speech-to-text/globalization/rtl/index" %}
 {% endif %}

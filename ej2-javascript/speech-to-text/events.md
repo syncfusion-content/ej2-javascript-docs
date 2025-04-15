@@ -34,7 +34,7 @@ The following example demonstrates how to configure the SpeechToText events.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/speech-to-text/events" %}
+{% previewsample "page.domainurl/code-snippet/speech-to-text/events/index" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -47,5 +47,5 @@ The following example demonstrates how to configure the SpeechToText events.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/speech-to-text/events" %}
+{% previewsample "page.domainurl/code-snippet/speech-to-text/events/index" %}
 {% endif %}

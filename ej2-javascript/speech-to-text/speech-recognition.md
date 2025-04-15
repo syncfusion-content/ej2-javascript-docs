@@ -26,7 +26,7 @@ You can use the [transcript](../api/speech-to-text#transcript) property to retri
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/transcript" %}
+{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/transcript/index" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -39,7 +39,7 @@ You can use the [transcript](../api/speech-to-text#transcript) property to retri
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/transcript" %}
+{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/transcript/index" %}
 {% endif %}
 
 ## Setting language
@@ -57,7 +57,7 @@ You can use the [lang](../api/speech-to-text#lang) property to specify the langu
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/language" %}
+{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/language/index" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -70,7 +70,7 @@ You can use the [lang](../api/speech-to-text#lang) property to specify the langu
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/language" %}
+{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/language/index" %}
 {% endif %}
 
 ## Allowing interim results
@@ -88,7 +88,7 @@ You can use the [allowInterimResults](../api/speech-to-text#allowInterimResults)
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/interimResults" %}
+{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/interimResults/index" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -101,7 +101,7 @@ You can use the [allowInterimResults](../api/speech-to-text#allowInterimResults)
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/interimResults" %}
+{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/interimResults/index" %}
 {% endif %}
 
 ## Managing listening state
@@ -133,7 +133,7 @@ Below sample demonstrates the usage of [listeningState](../api/speech-to-text#li
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/listeningState" %}
+{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/listeningState/index" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -146,7 +146,7 @@ Below sample demonstrates the usage of [listeningState](../api/speech-to-text#li
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/listeningState" %}
+{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/listeningState/index" %}
 {% endif %}
 
 ## Show or hide tooltip
@@ -164,7 +164,7 @@ You can use the [showTooltip](../api/speech-to-text#showTooltip) property to spe
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/showTooltip" %}
+{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/showTooltip/index" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -177,7 +177,7 @@ You can use the [showTooltip](../api/speech-to-text#showTooltip) property to spe
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/showTooltip" %}
+{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/showTooltip/index" %}
 {% endif %}
 
 ## Setting disabled
@@ -195,7 +195,7 @@ You can use the [disabled](../api/speech-to-text#disabled) property to disable t
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/disabled" %}
+{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/disabled/index" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -208,7 +208,7 @@ You can use the [disabled](../api/speech-to-text#disabled) property to disable t
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/disabled" %}
+{% previewsample "page.domainurl/code-snippet/speech-to-text/speechRecognition/disabled/index" %}
 {% endif %}
 
 ## Setting html attributes

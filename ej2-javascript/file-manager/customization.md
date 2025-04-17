@@ -98,7 +98,7 @@ The details view settings such as column width, header text, template for each f
 
 ## Navigation pane customization
 
-The navigation pane settings such as minimum and maximum width and visibility can be customized using the [`navigationPaneSettings`](../api/file-manager/#navigationpanesettings) property.
+The navigation pane settings such as minimum and maximum width, visibility and sort order can be customized using the [`navigationPaneSettings`](../api/file-manager/#navigationpanesettings) property.
 
 {% if page.publishingplatform == "typescript" %}
 

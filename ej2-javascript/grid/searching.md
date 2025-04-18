@@ -103,15 +103,15 @@ Search operators are symbols or keywords used to define the type of comparison o
 
 By default, the `searchSettings->operator` is set to **contains**, which returns the values contains the search key. The following operators are supported in searching:
 
-Operator |Description
+Operator |Description
 -----|-----
-startswith |Checks whether a value begins with the specified value.
-endswith |Checks whether a value ends with the specified value.
-contains |Checks whether a value contains with the specified value.
+startswith |Checks whether a value begins with the specified value.
+endswith |Checks whether a value ends with the specified value.
+contains |Checks whether a value contains with the specified value.
 wildcard |Processes one or more search patterns using the **"*"** symbol, returning values that match the given patterns.
 like |Processes a single search pattern using the **"%"** symbol, retrieving values that match the specified pattern.
-equal |Checks whether a value equal to the specified value.
-notequal |Checks whether a value not equal to the specified value.
+equal |Checks whether a value equal to the specified value.
+notequal |Checks whether a value not equal to the specified value.
 
 These operators provide flexibility in defining the search behavior and allow you to perform different types of comparisons based on your requirements.
 
@@ -156,7 +156,7 @@ The following example demonstrates how to set the `searchSettings->operator` pro
 
 The Syncfusion Grid control allows you to perform searches programmatically, enabling you to search for records using an external button instead of relying solely on the built-in search bar. This feature provides flexibility and allows for custom search implementations within your application. To search for records using an external button, you can utilize the [search](../api/grid/#search) method provided by the Grid control.
 
-The `search` method allows you to perform a search operation based on a search key or criteria. The following example demonstatres how to implement `search` by an external button using the following steps:
+The `search` method allows you to perform a search operation based on a search key or criteria. The following example demonstrates how to implement `search` by an external button using the following steps:
 
 1. Add a button element outside of the grid control.
 2. Attach a click event handler to the button.
@@ -446,6 +446,41 @@ The following example demonstrates how to clear the searched records using an ex
 {% endif %}
 
 > You can also clear the searched records by using the clear icon within the search input field.
+
+## Retrieve searched records by external button
+
+The Syncfusion Grid allows users to retrieve searched records using an external button. This functionality enables capturing the search text entered in the toolbar and filtering the data accordingly.
+
+To achieve this, the [actionComplete](../api/grid/#actionComplete) event can be used. This event is triggered when a search action is performed, allowing access to the search text. The captured search string can then be used with the `executeQuery` method of the `DataManager` to retrieve the matching records.
+
+The following example demonstrates how to retrieve searched records using an external button:
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/retrieve-searched-records-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/retrieve-searched-records-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/retrieve-searched-records-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/retrieve-searched-records-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/retrieve-searched-records-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/retrieve-searched-records-cs1" %}
+{% endif %}
 
 ## See Also
 

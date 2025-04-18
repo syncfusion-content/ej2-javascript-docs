@@ -344,6 +344,43 @@ To switch to the **French** culture and set the currency code as **EUR**, you ca
 {% previewsample "page.domainurl/code-snippet/grid/localization-cs3" %}
 {% endif %}
 
+### Set different Locale text for two Grids in same page
+
+The Syncfusion Grid allows configuring different [Locale](https://ej2.syncfusion.com/documentation/api/grid/#locale) settings for multiple Grids displayed on the same page. By using the **load** function of the **L10n** class, you can customize the text content of the Grid to be displayed in different languages.
+
+In this setup, each Grid can display text in a different language based on its assigned `Locale`. The `load` function is used to define translations for specific languages, ensuring that each Grid correctly applies the localized text for headers, toolbar items, and action buttons.
+
+For example, when the first Grid is set to use the **fr-FR** Locale, it applies the French translations loaded via **L10n.load**. The second Grid, set to **en-US**, retains the default English text. This demonstrates how localization can be customized per Grid without affecting other components on the page.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/grid-cs213/index.ts %}
+{% endhighlight %}
+
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/grid-cs213/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/grid-cs213" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/grid-cs213/index.js %}
+{% endhighlight %}
+
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/grid-cs213/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/grid-cs213" %}
+{% endif %}
+
 ## Internationalization
 
 The Internationalization library in the Syncfusion ##Platform_Name## Grid provides a localized display of number, date, and time values in the Grid control based on the preferred language and region.

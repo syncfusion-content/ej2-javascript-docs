@@ -224,6 +224,57 @@ When [enablePersistence](../api/grid/#enablepersistence) is enabled, the Grid do
 
 {% endif %}
 
+## Observables binding with state persistence
+
+The Syncfusion ##Platform_Name## Grid supports state persistence when using observable binding, ensuring that the Grid retains its state across sessions. This is useful when dealing with real-time data updates or asynchronous data sources while preserving user interactions such as sorting, filtering, paging, and grouping.
+
+To implement state persistence with observables, the initial query state must be manually handled. This involves:
+
+    * Retrieving the initial query using the Grid’s [getDataModule](https://ej2.syncfusion.com/documentation/api/grid/#getdatamodule) method with `generateQuery`.
+
+    * Obtaining the state from the query via `getStateEventArgument` method.
+
+    * Sending the retrieved state to the service to fetch data accordingly.
+
+Except for the initial render, state persistence ensures that manually performed actions are retained by storing the state in the browser’s `localStorage`, allowing it to persist across page reloads. The following example demonstrates how to use the [created](https://ej2.syncfusion.com/documentation/api/grid/#created) event to send the persisted state to the service at initial render:
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/state-management-cs8/index.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="order-service.ts" %}
+{% include code-snippet/grid/state-management-cs8/order-service.ts %}
+{% endhighlight %}
+
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/state-management-cs8/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/state-management-cs8" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/state-management-cs8/index.js %}
+{% endhighlight %}
+
+{% highlight js tabtitle="es5-order-service.js" %}
+{% include code-snippet/grid/state-management-cs8/es5-order-service.js %}
+{% endhighlight %}
+
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/state-management-cs8/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/state-management-cs8" %}
+{% endif %}
+
 ## Get or set local storage value
 
 If the [enablePersistence](../api/grid/#enablepersistence) property is set to **true**, the Grid property value is saved in the **window.localStorage** for reference. You can get or set the localStorage value by using the **getItem** and **setItem** methods in **window.localStorage**.

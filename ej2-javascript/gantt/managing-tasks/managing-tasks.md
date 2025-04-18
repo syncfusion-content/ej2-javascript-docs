@@ -277,7 +277,7 @@ In the below sample, `General` tab is customized using the `fields` property. Th
 
 ### Customize dependency, segments and resources tab of dialog 
 
-You can customize the dependency, segments, and resource tabs of the dialog box using the [additionalParams](https://ej2.syncfusion.com/documentation/api/gantt/addDialogFieldSettingsModel/#additionalParams) property within the [addDialogFields](https://ej2.syncfusion.com/documentation/api/gantt/addDialogFieldSettings/) and [editDialogFields](https://ej2.syncfusion.com/documentation/api/editDialogFieldSettings/) settings respectively. This customization involves defining properties from the [Grid](https://ej2.syncfusion.com/documentation/api/grid/) within the `additionalParams` property.
+You can customize the dependency, segments, and resource tabs of the dialog box using the [additionalParams](https://ej2.syncfusion.com/documentation/api/gantt/addDialogFieldSettingsModel/#additionalParams) property within the [addDialogFields](https://ej2.syncfusion.com/documentation/api/gantt/addDialogFieldSettings/) and [editDialogFields](https://ej2.syncfusion.com/documentation/api/gantt/editDialogFieldSettings/) settings respectively. This customization involves defining properties from the [Grid](https://ej2.syncfusion.com/documentation/api/grid/) within the `additionalParams` property.
 
 In the example below: 
 * The `dependency` tab enables [sorting](https://ej2.syncfusion.com/documentation/api/grid/#allowsorting) and [toolbar](https://ej2.syncfusion.com/documentation/api/grid/#toolbar) options. 

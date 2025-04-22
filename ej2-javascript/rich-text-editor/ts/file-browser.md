@@ -27,7 +27,7 @@ The following additional dependencies are required to use the file browser featu
 
 ### Configuring system JS
 
-Map the Syncfusion<sup style="font-size:70%">&reg;</sup> Rich Text Editor packages in the system.config.js configuration file
+Map the Syncfusion Rich Text Editor packages in the system.config.js configuration file
 
 ```javascript
 System.config({

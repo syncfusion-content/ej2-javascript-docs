@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Mentions in ##Platform_Name## Rich text editor control
+# Mentions in ##Platform_Name## Rich Text Editor control
 
 By integrating the [Mention](https://ej2.syncfusion.com/documentation/mention/getting-started) control with a Rich Text Editor, users can effortlessly mention or tag other users or objects from a suggested list. This eliminates the need to manually type out names or identifying information, improving efficiency and accuracy.
 
@@ -57,6 +57,6 @@ In the following sample, we configured the following properties with popup dimen
 > [View Sample](https://ej2.syncfusion.com/demos/#/bootstrap5/rich-text-editor/mention-integration.html)
 
 
-## See Also
+## See also
 
 * [Getting Started with Mention](https://ej2.syncfusion.com/documentation/mention/getting-started)

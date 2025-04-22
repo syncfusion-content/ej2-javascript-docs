@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# File browser in ##Platform_Name## Rich text editor control
+# File browser in ##Platform_Name## Rich Text Editor control
 
 Rich Text Editor allows to browse and insert an image in the edit panel using the file browser. File browser allows the users to browse and select a file or folder from the file system and it supports various cloud services.
 
-## Required additional package styles and scripts reference
+## Required additional dependency
 
 The following additional dependencies are required to use the file browser feature in Rich Text Editor.
 
@@ -27,7 +27,7 @@ The following additional dependencies are required to use the file browser featu
 
 ### Configuring system JS
 
-Map the Syncfusion<sup style="font-size:70%">&reg;</sup> Rich Text Editor packages in the system.config.js configuration file
+Map the Syncfusion Rich Text Editor packages in the system.config.js configuration file
 
 ```javascript
 System.config({

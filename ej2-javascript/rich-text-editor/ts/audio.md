@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 The Rich Text Editor allows you to insert audio from online sources and local computers and then insert them into your content. You can insert the audio with the following list of options in the [insertAudioSettings](../api/rich-text-editor/#insertaudiosettings) property.
 
-## Configuring the Audio Tool in the Toolbar
+## Configuring the audio tool in the toolbar
 
 You can add an `Audio` tool in the Rich Text Editor toolbar using the `toolbarSettings` [items](../api/rich-text-editor/toolbarSettings/#items) property.
 
@@ -32,8 +32,7 @@ To configure the `Audio` toolbar item, refer to the below code.
           
 {% previewsample "page.domainurl/code-snippet/rich-text-editor/remove-url-cs4" %}
 
-
-## Audio Save Formats
+## Audio save formats
 
 The audio files can be saved as `Blob` or `Base64` URL by using the [insertAudioSettings.saveFormat](../api/rich-text-editor/audioSettingsModel/#saveformat) property, which is of enum type, and the generated URL will be set to the `src` attribute of the `<source>` tag.
 
@@ -51,23 +50,31 @@ The audio files can be saved as `Blob` or `Base64` URL by using the [insertAudio
 
 ```
 
-## Insert Audio from the Web
+## Insert audio from the Web
 
 You can insert audio from either the hosted link or the local machine, by clicking the audio button in the editor's toolbar. On clicking the audio button, a dialog opens, which allows you to insert audio from the web URL.
 
-### Inserting Audio from Web URLs
+### Inserting audio from web URLs
 
 By default, the audio tool opens the audio dialog, allowing you to insert audio from an online source. Inserting the URL will be added to the `src` attribute of the `<source>` tag.
 
 ![JavaScript Rich Text Editor Audio insert](./images/javascript-richtexteditor-audio-web.png)
 
-## Uploading Audio from Local Machine
+## Uploading audio from local machine
 
 You can use the `browse` option on the audio dialog, to select the audio from the local machine and insert it into the Rich Text Editor content.
 
 If the path field is not specified in the [insertAudioSettings](../api/rich-text-editor/#insertaudiosettings), the audio will be converted into the `Blob` URL or `Base64` and inserted inside the Rich Text Editor.
 
-### Server-Side Action
+## Saving audio to the server
+
+[saveFormat](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/audioSettingsModel/#saveformat) Sets the default save format of the audio element when inserted. Possible options are: `Blob` and `Base64`.
+
+[saveUrl](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/audioSettingsModel/#saveurl) provides URL to map the action result method to save the audio.
+
+[removeUrl](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/audioSettingsModel/#removeurl) provides URL to map the action result method to remove the audio.
+
+### Server-side action
 
 The selected audio can be uploaded to the required destination using the controller action below. Map this method name in [insertAudioSettings.saveUrl](../api/rich-text-editor/audioSettingsModel/#saveurl) and provide the required destination path through [insertAudioSettings.path](../api/rich-text-editor/audioSettingsModel/#path) properties.
 
@@ -167,15 +174,7 @@ namespace FileUpload.Controllers
 
 ```
 
-## Saving Audio to the Server 
-
-[saveFormat](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/audioSettingsModel/#saveformat) Sets the default save format of the audio element when inserted. Possible options are: `Blob` and `Base64`.
-
-[saveUrl](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/audioSettingsModel/#saveurl) provides URL to map the action result method to save the audio.
-
-[removeUrl](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/audioSettingsModel/#removeurl) provides URL to map the action result method to remove the audio.
-
-### Renaming Audio Before Inserting
+### Renaming audio before inserting
 
 You can use the [insertAudioSettings](../api/rich-text-editor/#insertaudiosettings) property, to specify the server handler to upload the selected audio. Then by binding the [fileUploadSuccess](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#fileuploadsuccess) event, you can receive the modified file name from the server and update it in the Rich Text Editor's insert audio dialog.
 
@@ -266,7 +265,7 @@ public void Rename()
 
 ```
 
-### Restricting Audio by Size
+### Restricting audio by size
 
 You can restrict the audio uploaded from the local machine when the uploaded audio file size is greater than the allowed size by using the [fileUploading](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#fileuploading) event.
 
@@ -302,7 +301,7 @@ function onFileUpload (args: UploadingEventArgs): void {
 
 ```
 
-### Uploading Audio with Authentication
+### Uploading audio with authentication
 
 You can add additional data with the audio uploaded from the Rich Text Editor on the client side, which can even be received on the server side by using the [fileUploading](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#fileuploading) event and its `customFormData` argument, you can pass parameters to the controller action. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
 
@@ -343,13 +342,13 @@ public void SaveFiles(IList<IFormFile> UploadFiles)
 
 ```
 
-## Audio Replacement Functionality
+## Audio replacement functionality
 
 Once an audio file has been inserted, you can change it using the Rich Text Editor [quickToolbarSettings](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#quicktoolbarsettings) `audioReplace` option. You can replace the audio file using the web URL or the browse option in the audio dialog.
 
 ![JavaScript Rich Text Editor Audio replace](./images/javascript-richtexteditor-audio-replace.png)
 
-## Deleting Audios
+## Deleting audios
 
 To remove audio from the Rich Text Editor content, select the audio and click the `audioRemove` button from the quick toolbar. It will delete the audio from the Rich Text Editor content as well as from the service location if the [insertAudioSettings.removeUrl](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/audioSettingsModel/#removeurl) is given.
 
@@ -357,7 +356,7 @@ Once you select the audio from the local machine, the URL for the audio will be 
 
 ![JavaScript Rich Text Editor Audio delete](./images/javascript-richtexteditor-audio-del.png)
 
-## Configuring Audio Display Position
+## Configuring audio display position
 
 Sets the default display property for audio when it is inserted in the Rich Text Editor using the [insertAudioSettings.layoutOption](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/audioSettingsModel/#layoutoption) property. It has two possible options: `Inline` and `Break`. When updating the display positions, it updates the audio elements’ layout position.
 
@@ -377,7 +376,7 @@ defaultRTE.appendTo('#defaultRTE');
 
 ## Customizing the Audio Quick Toolbar
 
-The Rich Text Editor enables customization of the audio quick toolbar, allowing you to tailor its functionality with Essential<sup style="font-size:70%">&reg;</sup> tools such as AudioReplace, Remove, and AudioLayoutOption.
+The Rich Text Editor enables customization of the audio quick toolbar, allowing you to tailor its functionality with Essential tools such as AudioReplace, Remove, and AudioLayoutOption.
 
 By configuring these options in the [quickToolbarSettings](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#quicktoolbarsettings) property, you enhance the editor's capabilities, facilitating seamless management and editing of audio directly within your content. This customization ensures a user-friendly experience for manipulating audio elements efficiently.
 

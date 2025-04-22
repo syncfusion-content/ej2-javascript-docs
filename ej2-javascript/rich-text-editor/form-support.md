@@ -63,7 +63,7 @@ Upon submitting the form, the `getValue` method will be triggered. Through the `
 {% previewsample "page.domainurl/code-snippet/rich-text-editor/form-sample-cs1" %}
 {% endif %}
 
-## See Also
+## See also
 
 * [How to integrate the third party library](./third-party-integration/)
 * [How to validate the value](./validation/)

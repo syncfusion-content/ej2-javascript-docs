@@ -23,6 +23,10 @@ WProofreader is a powerful tool that enhances content quality by detecting and c
 
 * Integration Capabilities: Seamlessly integrates with various content management systems (CMS) and applications, enhancing editing workflows without requiring users to leave their editing environment.
 
+## Set up the WProofreader
+
+For integrating the `WProofreader` refer the following link : https://webspellchecker.com, you need to install the[@webspellchecker/wproofreader-sdk-js](https://www.npmjs.com/package/@webspellchecker/wproofreader-sdk-js) package using NPM or Yarn:
+
 ```bash
 npm install @webspellchecker/wproofreader-sdk-js
 
@@ -43,7 +47,7 @@ After installing the package, you can integrate WProofreader with the Rich Text 
 5. Configure the activation key in the `serviceId` property.
 
 
-Below is an example code snippet to integrate WProofreader with the Syncfusion<sup style="font-size:70%">&reg;</sup> Rich Text Editor:
+Below is an example code snippet to integrate WProofreader with the Syncfusion Rich Text Editor:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -69,6 +73,6 @@ Below is an example code snippet to integrate WProofreader with the Syncfusion<s
 
 {% endif %}
 
-Below is a GIF demonstrating how to integrate WProofreader with the Syncfusion<sup style="font-size:70%">&reg;</sup> Rich Text Editor.
+Below is a GIF demonstrating how to integrate WProofreader with the Syncfusion Rich Text Editor.
 
 ![WebSpellChecker](images/spell-grammar-check.gif)

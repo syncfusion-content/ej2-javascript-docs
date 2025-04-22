@@ -9,14 +9,14 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Editor mode in ##Platform_Name## Rich text editor control
+# Editor Mode in ##Platform_Name## Rich Text Editor control
 
 The Rich Text Editor component used to create, edit and return the content in valid HTML markup or markdown (MD) of the content. It supports following two editing formation.
 
 * HTML Editor
 * Markdown Editor
 
-## HTML Editor
+## HTML editor
 
 Rich Text Editor is a WYSIWYG editing control for formatting the word content as HTML.
 
@@ -50,6 +50,12 @@ The HTML editing mode is the default mode of Rich Text Editor. Which is used for
 
 {% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs2" %}
 {% endif %}
+
+## IFrame editor
+
+The IFrame editor mode enables content editing within an iframe, isolating styles from the main page.
+
+For more details, refer to the [Iframe Editor](./iframe) documentation.
 
 ## Markdown editor
 
@@ -90,4 +96,8 @@ The third-party library such as `Marked` or any other library is used to convert
 {% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs3" %}
 {% endif %}
 
-For further details on Markdown editing, refer to the [Markdown](../rich-text-editor/markdown)
+For further details on Markdown editing, refer to the [Markdown](https://ej2.syncfusion.com/documentation/markdown-editor/getting-started)
+
+## See also
+
+* [Markdown Editor](https://ej2.syncfusion.com/documentation/markdown-editor/getting-started)

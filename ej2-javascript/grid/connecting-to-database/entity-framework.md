@@ -22,7 +22,7 @@ Entity Framework is an open-source [ORM framework](https://en.wikipedia.org/wiki
 
 **1. Using UrlAdaptor**
 
-The [UrlAdaptor](.../../grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion ##Platform_Name## Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server databaset5uf5. While the Grid supports various adaptors to fulfill this requirement, including [Web API](.../../grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](.../../grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](.../../grid/connecting-to-adaptors/url-adaptor), and [GraphQL](.../../grid/connecting-to-adaptors/graphql-adaptor), the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
+The [UrlAdaptor](../../grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion ##Platform_Name## Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server databaset5uf5. While the Grid supports various adaptors to fulfill this requirement, including [Web API](../../grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](../../grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](../../grid/connecting-to-adaptors/url-adaptor), and [GraphQL](../../grid/connecting-to-adaptors/graphql-adaptor), the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
 
 **2. Using CustomAdaptor**
 
@@ -1563,6 +1563,16 @@ When you run the application, the resultant Syncfusion ##Platform_Name## Grid wi
 
 ![Grid bound with Microsoft SQL Server using Entity](../images/DB-grid-action.gif)
 
+{% if page.publishingplatform == "typescript" %}
+
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-typescript-grid/tree/master/Binding%20SQL%20database%20using%20EF%20and%20UrlAdaptor/Binding%20SQL%20database%20using%20EF%20and%20UrlAdaptor).
+
+{% elsif page.publishingplatform == "javascript" %}
+
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-javascript-grid/tree/master/Binding%20SQL%20database%20using%20EF%20and%20UrlAdaptor).
+
+{% endif %}
+
 ## Binding data from Microsoft SQL Server using Entity Framework with CustomAdaptor
 
 This section describes step by step process how to use Entity Framework to retrieve data from a Microsoft SQL Server using `CustomAdaptor` and bind it to the Syncfusion ##Platform_Name## Grid.
@@ -1578,7 +1588,7 @@ This section describes step by step process how to use Entity Framework to retri
 
 **4.** Within the `processResponse` method of `CustomAdaptor`, fetch data by calling the **GetOrderData** method.
 
-  * In this **GetOrderData** method, a connection is established to Microsoft SQL Server using **OrderDbContext**. This class extends **DbContext** and is configured to connect to a SQL Server database using the provided connection string. It includes a **DbSet<Orders>** property, enabling interaction with the **Orders** table in the database. The method retrieves all orders from the database asynchronously and returns them as a list of `Orders` objects.
+  * In this **GetOrderData** method, a connection is established to Microsoft SQL Server using **OrderDbContext**. This class extends **DbContext** and is configured to connect to a SQL Server database using the provided connection string. It includes a **DbSet&lt;Orders&gt;** property, enabling interaction with the **Orders** table in the database. The method retrieves all orders from the database asynchronously and returns them as a list of `Orders` objects.
 
   * Finally, return the response as a **result** and **count** pair object in the `processResponse` method to bind the data to the Grid.
 
@@ -2902,3 +2912,13 @@ public class CRUDModel<T> where T : class
 {% endtabs %}
 
 ![Grid bound with Microsoft SQL Server using Entity](../images/DB-grid-action.gif)
+
+{% if page.publishingplatform == "typescript" %}
+
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-typescript-grid/tree/master/Binding%20SQL%20database%20using%20EF%20and%20CustomAdaptor/Binding%20SQL%20database%20using%20EF%20and%20CustomAdaptor).
+
+{% elsif page.publishingplatform == "javascript" %}
+
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-javascript-grid/tree/master/Binding%20MS%20SQL%20database%20using%20CustomAdaptor).
+
+{% endif %}

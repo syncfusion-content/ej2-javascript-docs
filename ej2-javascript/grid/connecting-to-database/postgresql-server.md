@@ -1537,6 +1537,16 @@ When you run the application, the resultant Grid will look like this
 
 ![Grid bound with PostgreSQL Server data](.../images/connecting-micro-curd.gif)
 
+{% if page.publishingplatform == "typescript" %}
+
+Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-typescript-grid/tree/master/Binding%20PostgreSQL%20database%20using%20UrlAdaptor).
+
+{% elsif page.publishingplatform == "javascript" %}
+
+Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-javascript-grid/tree/master/Binding%20PostgreSQL%20database%20using%20UrlAdaptor).
+
+{% endif %}
+
 ## Binding data from PostgreSQL Server using CustomAdaptor
 
 This section describes step by step process how to retrieve data from a PostgreSQL Server using `CustomAdaptor` and bind it to the Grid.
@@ -2867,3 +2877,13 @@ public class CRUDModel<T> where T : class
 {% endtabs %}
 
 ![Grid bound with PostgreSQL Server data](../images/connecting-micro-curd.gif)
+
+{% if page.publishingplatform == "typescript" %}
+
+Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-typescript-grid/tree/master/Binding%20PostgreSQL%20database%20using%20CustomAdaptor).
+
+{% elsif page.publishingplatform == "javascript" %}
+
+Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-javascript-grid/tree/master/Binding%20PostgreSQL%20database%20using%20CustomAdaptor).
+
+{% endif %}

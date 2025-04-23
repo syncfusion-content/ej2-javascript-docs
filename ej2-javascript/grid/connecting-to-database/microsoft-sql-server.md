@@ -18,7 +18,7 @@ Microsoft SQL Server database can be bound to the Syncfusion ##Platform_Name## G
 
 **1. Using UrlAdaptor**
 
-The [UrlAdaptor](.../../grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion ##Platform_Name## Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server databaset. While the Grid supports various adaptors to fulfill this requirement, including [Web API](.../../grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](.../../grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](.../../grid/connecting-to-adaptors/url-adaptor), and [GraphQL](.../../grid/connecting-to-adaptors/graphql-adaptor), the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
+The [UrlAdaptor](../../grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion ##Platform_Name## Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server databaset. While the Grid supports various adaptors to fulfill this requirement, including [Web API](../../grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](../../grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](../../grid/connecting-to-adaptors/url-adaptor), and [GraphQL](../../grid/connecting-to-adaptors/graphql-adaptor), the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
 
 **2. Using CustomAdaptor**
 
@@ -1425,6 +1425,16 @@ When you run the application, the resultant Syncfusion ##Platform_Name## Grid wi
 
 ![Grid bound with Microsoft SQL Server data](../images/DB-grid-action.gif)
 
+{% if page.publishingplatform == "typescript" %}
+
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-typescript-grid/tree/master/Binding%20MS%20SQL%20database%20using%20UrlAdaptor/Binding%20MS%20SQL%20database%20using%20UrlAdaptor).
+
+{% elsif page.publishingplatform == "javascript" %}
+
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-javascript-grid/tree/master/Binding%20MS%20SQL%20database%20using%20UrlAdaptor).
+
+{% endif %}
+
 ## Binding data from Microsoft SQL Server using CustomAdaptor
 
 This section describes step by step process how to retrieve data from a Microsoft SQL Server using `CustomAdaptor` and bind it to the Syncfusion ##Platform_Name## Grid.
@@ -2671,3 +2681,13 @@ public class CRUDModel<T> where T : class
 {% endtabs %}
 
 ![Grid bound with Microsoft SQL Server data](../images/DB-grid-action.gif)
+
+{% if page.publishingplatform == "typescript" %}
+
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-typescript-grid/tree/master/Binding%20MS%20SQL%20database%20using%20CustomAdaptor/Binding%20MS%20SQL%20database%20using%20CustomAdaptor).
+
+{% elsif page.publishingplatform == "javascript" %}
+
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-javascript-grid/tree/master/Binding%20MS%20SQL%20database%20using%20CustomAdaptor).
+
+{% endif %}

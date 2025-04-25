@@ -1,4 +1,4 @@
-export async function getData(state) {
+window.getData = async function getData(state) {
     const BASE_URL ='https://services.odata.org/V4/Northwind/Northwind.svc/Orders';
     const pageQuery = `$skip=${state.skip}&$top=${state.take}`;
     let sortQuery = '';

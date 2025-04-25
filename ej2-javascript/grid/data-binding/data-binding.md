@@ -308,7 +308,7 @@ The following example demonstrates how to set custom headers using the custom ad
 {% include code-snippet/grid/custom-headers-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid/custom-headers-cs1/js/index.html %}
+{% include code-snippet/grid/custom-headers-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 

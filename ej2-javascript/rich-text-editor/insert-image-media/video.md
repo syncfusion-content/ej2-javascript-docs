@@ -356,8 +356,6 @@ Once a video file has been inserted, you can replace it using the Rich Text Edit
 
 ![Javascript Rich Text Editor Embed Video Replace](../images/javascript-richtexteditor-video-replace-embed.png)
 
-![Javascript Rich Text Editor Web Video Replace](../images/javascript-richtexteditor-video-replace-web.png)
-
 ## Deleting video
 
 To remove a video from the Rich Text Editor content, select the video and click the `videoRemove` button from the quick toolbar. It will delete the video from the Rich Text Editor content as well as from the service location if the [insertVideoSettings.removeUrl](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/videoSettingsModel/#removeurl) is given.

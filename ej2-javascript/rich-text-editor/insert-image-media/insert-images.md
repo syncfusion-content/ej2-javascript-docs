@@ -17,8 +17,6 @@ Rich Text Editor allows to insert images in your content from online sources as 
 
 You can add an `Image` tool in the Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#items) property.
 
-> Rich Text Editor features are segregated into individual feature-wise modules. To use image tool, inject image module using the `RichTextEditor.Inject(Image)`.
-
 To configure the `Image` toolbar item, refer to the below code.
 
 {% if page.publishingplatform == "typescript" %}
@@ -118,6 +116,90 @@ Upload the selected image to a specified destination using the controller action
 Configure [insertImageSettings.removeUrl](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/imageSettingsModel/#removeurl) to point to the endpoint responsible for deleting image files.
 
 Set the [insertImageSettings.saveFormat](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/imageSettingsModel/#saveformat) property to determine whether the image should be saved as Blob or Base64, aligning with your application's requirements.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/rich-text-editor/image-upload-server/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor/image-upload-server/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/rich-text-editor/image-upload-server/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor/image-upload-server/index.html %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+```csharp
+
+public class HomeController : Controller
+    {
+        private IHostingEnvironment hostingEnv;
+
+        public HomeController(IHostingEnvironment env)
+        {
+            hostingEnv = env;
+        }
+
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        [AcceptVerbs("Post")]
+        public void SaveImage(IList<IFormFile> UploadFiles)
+        {
+            try
+            {
+                foreach (IFormFile file in UploadFiles)
+                {
+                    if (UploadFiles != null)
+                    {
+                        string filename = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
+                        filename = hostingEnv.WebRootPath + "\\Uploads" + $@"\{filename}";
+
+                        // Create a new directory, if it does not exists
+                        if (!Directory.Exists(hostingEnv.WebRootPath + "\\Uploads"))
+                        {
+                            Directory.CreateDirectory(hostingEnv.WebRootPath + "\\Uploads");
+                        }
+
+                        if (!System.IO.File.Exists(filename))
+                        {
+                            using (FileStream fs = System.IO.File.Create(filename))
+                            {
+                                file.CopyTo(fs);
+                                fs.Flush();
+                            }
+                            Response.StatusCode = 200;
+                        }
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                Response.StatusCode = 204;
+            }
+        }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+    }
+
+```
 
 ### Rename images before inserting
 

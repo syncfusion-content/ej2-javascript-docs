@@ -263,6 +263,39 @@ Here's a code example that demonstrates how to show a hidden column (CustomerID)
 {% previewsample "page.domainurl/code-snippet/grid/showhideColumns-print-cs1" %}
 {% endif %}
 
+## Print the expanded state from other pages
+
+By default, when printing, the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid only includes the expanded child Grids visible on the current page. However, you can enhance the printing functionality to include expanded child Grids from other pages. This can be achieved using the [load](../api/grid/#load) and [toolbarClick](../api/grid/#toolbarclick) events, which help manage the expanded state of rows across different pages.
+
+The following example demonstrates how to print the expanded child Grids from other pages:
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/print-expanded-state/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/print-expanded-state/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/print-expanded-state" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/print-expanded-state/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/print-expanded-state/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/print-expanded-state" %}
+{% endif %}
+
 ## Limitations of printing large data
 
 Printing a large volume of data all at once in the grid can have certain limitations due to potential browser performance issues. Rendering numerous DOM elements on a single page can lead to browser slowdowns or even hang the browser. The grid offers a solution to manage extensive datasets through virtualization. However, it's important to note that virtualization for both rows and columns is not feasible during the printing process.

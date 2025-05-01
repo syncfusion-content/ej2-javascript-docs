@@ -24,11 +24,7 @@ var dialog = new ej.popups.Dialog({
 // Render initialized Dialog
 dialog.appendTo('#customTbarDialog');
 
-<<<<<<< HEAD
-var defaultRTE = new ej.richtexteditor.RichTextEditor({
-=======
 var editor = new ej.richtexteditor.RichTextEditor({
->>>>>>> e565562a0a5f8d08f1b5455b3b345a79184d65cb
   value: `<div style='display: block;'><p style='margin-right: 10px'>The custom command \"insert special character\" is configured as the last item of the toolbar. Click on the command and choose the special character you want to include from the popup.</p></div>`,
   toolbarSettings: {
     items: [
@@ -50,19 +46,11 @@ var editor = new ej.richtexteditor.RichTextEditor({
         undo: true,
         click: function () {
           dialog.element.style.display = '';
-<<<<<<< HEAD
-          selection = defaultRTE.formatter.editorManager.nodeSelection;
-          var range = selection.getRange(
-            defaultRTE.contentModule.getDocument()
-          );
-          selection.save(range, defaultRTE.contentModule.getDocument());
-=======
           selection = editor.formatter.editorManager.nodeSelection;
           var range = selection.getRange(
             editor.contentModule.getDocument()
           );
           selection.save(range, editor.contentModule.getDocument());
->>>>>>> e565562a0a5f8d08f1b5455b3b345a79184d65cb
           dialog.show();
         },
         template:
@@ -74,11 +62,7 @@ var editor = new ej.richtexteditor.RichTextEditor({
     ],
   },
 });
-<<<<<<< HEAD
-defaultRTE.appendTo('#defaultRTE');
-=======
 editor.appendTo('#editor');
->>>>>>> e565562a0a5f8d08f1b5455b3b345a79184d65cb
 
 function dialogOverlay() {
   var activeEle = dialog.element.querySelector('.char_block.e-active');
@@ -92,11 +76,7 @@ function onInsert() {
   selection.restore();
   var activeEle = dialog.element.querySelector('.char_block.e-active');
   if (activeEle) {
-<<<<<<< HEAD
-    defaultRTE.executeCommand('insertText', activeEle.textContent, {
-=======
     editor.executeCommand('insertText', activeEle.textContent, {
->>>>>>> e565562a0a5f8d08f1b5455b3b345a79184d65cb
       undo: true,
     });
   }

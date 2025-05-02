@@ -7,18 +7,11 @@ Chart.Inject(ColumnSeries, Category);
 
 let chart: Chart = new Chart({
     primaryXAxis: {
-        crossesAt : 15
-    },
-    primaryXAxis: {
         crossesAt : 5
     },
     series:[{
         dataSource: stripData,
         xName: 'x', yName: 'y',
         type: 'Column'
-    }],
-
+    }]
 }, '#element');
-
-
-

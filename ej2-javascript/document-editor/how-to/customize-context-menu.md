@@ -145,3 +145,61 @@ The following is the output of custom context menu with customization.
 
 {% previewsample "page.domainurl/code-snippet/document-editor/customize-context-menu-cs1" %}
 {% endif %}
+
+#### Customize Context Menu with sub-menu items
+
+Document Editor allows you to customize the Context Menu with sub-menu items. It can be achieved by using the [`addCustomMenu()`](../../api/document-editor/contextMenu/#addcustommenu) method.
+
+The following code shows how to add a sub items in the custom option in context menu in Document Editor Container.
+ 
+```ts
+import {
+  DocumentEditorContainer,
+  Toolbar,
+} from '@syncfusion/ej2-documenteditor';
+import { MenuItemModel } from '@syncfusion/ej2-navigations';
+
+//Inject require modules.
+DocumentEditorContainer.Inject(Toolbar);
+
+// creating Custom Options
+let menuItems: MenuItemModel[] = [
+  {
+    text: 'Form field',
+    id: 'form field',
+    iconCss: 'e-de-formfield e-icons',
+    items: [
+      {
+        text: 'Text form',
+        id: 'Text form',
+        iconCss: 'e-icons e-de-textform',
+      },
+      {
+        text: 'Check box',
+        id: 'Check box',
+        iconCss: 'e-icons e-de-checkbox-form',
+      },
+      {
+        text: 'Drop down',
+        id: 'Drop down',
+        iconCss: 'e-icons e-de-dropdownform',
+      },
+    ],
+  },
+];
+//Initialize Document Editor component.
+let container: DocumentEditorContainer = new DocumentEditorContainer({
+  enableToolbar: true,
+  height: '590px',
+});
+
+//Open the default document in `created` event.
+container.created = function () {
+  // adding Custom Options
+  container.documentEditor.contextMenu.addCustomMenu(menuItems, false, true);
+};
+//Render Document Editor Container component.
+container.appendTo('#DocumentEditor');
+
+
+```

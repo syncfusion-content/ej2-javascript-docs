@@ -245,3 +245,79 @@ DocumentEditorContainer.Inject(Toolbar);
 container.serviceUrl = 'https://services.syncfusion.com/js/production/api/documenteditor/';
 container.appendTo('#container');
 ```
+
+> The Web API hosted link `https://services.syncfusion.com/js/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
+
+## Events
+
+DocumentEditor provides [beforeCommentAction](../api/document-editor-container/#beforecommentaction) event, which is triggered on comment actions like Post, edit, reply, resolve and reopen. This event provides an opportunity to perform custom logic on comment actions like Post, edit, reply, resolve and reopen. The event handler receives the [CommentActionEventArgs](../api/document-editor/commentActionEventArgs) object as an argument, which allows access to information about the comment.
+
+To demonstrate a specific use case, let’s consider an example where we want to restrict the delete functionality based on the author’s name. The following code snippet illustrates how to allow only the author of a comment to delete:
+
+{% if page.publishingplatform == "typescript" %}
+
+```ts
+
+import { DocumentEditorContainer, Toolbar, CommentActionEventArgs } from '@syncfusion/ej2-documenteditor';
+
+// Inject require modules.
+DocumentEditorContainer.Inject(Toolbar);
+let mentionData: any = [
+    { "Name": "Mary Kate", "EmailId": "marry@company.com" },
+    { "Name": "Andrew James", "EmailId": "james@company.com" },
+    { "Name": "Andrew Fuller", "EmailId": "andrew@company.com"}
+];
+let container: DocumentEditorContainer = new DocumentEditorContainer({ enableToolbar: true,height: '590px', beforeCommentAction:beforecomment,
+// Enable mention support in document editor
+  documentEditorSettings: {
+    mentionSettings: { dataSource: mentionData, fields: { text: 'Name' }},
+  }
+});
+DocumentEditorContainer.Inject(Toolbar);
+container.serviceUrl = 'https://services.syncfusion.com/js/production/api/documenteditor/';
+container.appendTo('#container');
+container.currentUser="Guest User";
+
+// Event get triggerd on comment actions like Post, edit, reply, resolve and reopen
+function beforecomment(args : CommentActionEventArgs){
+    // Check the type and author of the comment and current user are different
+    if(args.type === "Delete" && container.currentUser !== args.author){
+        // Cancel the comment action
+        args.cancel = true;
+    }
+}
+```
+
+{% elsif page.publishingplatform == "javascript" %}
+
+```js
+
+var mentionData = [
+    { "Name": "Mary Kate", "EmailId": "marry@company.com" },
+    { "Name": "Andrew James", "EmailId": "james@company.com" },
+    { "Name": "Andrew Fuller", "EmailId": "andrew@company.com"}
+    ];
+    // Initialize DocumentEditorContainer component.
+    var documenteditorContainer = new ej.documenteditor.DocumentEditorContainer({ enableToolbar: true, height: '590px', beforeCommentAction:beforecomment,documentEditorSettings: {
+    mentionSettings: { dataSource: mentionData, fields: { text: 'Name' }},
+  } });
+    ej.documenteditor.DocumentEditorContainer.Inject(ej.documenteditor.Toolbar);
+    documenteditorContainer.serviceUrl = 'http://localhost:6028/api/documenteditor/';
+    //DocumentEditorContainer control rendering starts
+    documenteditorContainer.appendTo('#DocumentEditor');
+    documenteditorContainer.currentUser = "Guest User";
+
+
+    // Event get triggerd on comment actions like Post, edit, reply, resolve and reopen
+    function beforecomment(args){
+      // Check the type and author of the comment and current user are different
+      if(args.type === "Delete" && documenteditorContainer.currentUser !== args.author){
+        // Cancel the comment action
+        args.cancel = true;
+      }
+    }
+```
+
+{% endif %}
+
+> The Web API hosted link `https://services.syncfusion.com/js/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.

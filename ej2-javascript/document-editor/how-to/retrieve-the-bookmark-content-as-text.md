@@ -43,6 +43,8 @@ container.documentEditor.selection.selectBookmark('Bookmark1');
  let selectedContent: string = container.documentEditor.selection.text;
 ```
 
+> The Web API hosted link `https://services.syncfusion.com/js/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
+
 To get the bookmark content as SFDT (rich text), please check this [`link`](../../document-editor/how-to/get-the-selected-content/#get-the-selected-content-as-sfdt-rich-text)
 
 ## Get the whole document content as text
@@ -70,6 +72,8 @@ container.documentEditor.selection.selectAll();
  let selectedContent: string = container.documentEditor.selection.text;
 ```
 
+> The Web API hosted link `https://services.syncfusion.com/js/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
+
 ## Get the whole document content as SFDT(rich text)
 
 You can use [`serialize`](../../api/document-editor/#serialize) API to get the whole document content as SFDT string from JavaScript Document Editor component.
@@ -92,6 +96,7 @@ container.documentEditor.editor.insertText('Document editor');
 // To get the content as SFDT
  let selectedContent: string = container.documentEditor.serialize();
 ```
+
 
 ## Get the header content as text
 
@@ -119,5 +124,7 @@ container.documentEditor.selection.selectAll();
 // To get the selected content as text
  let selectedContent: string = container.documentEditor.selection.text;
 ```
+
+> The Web API hosted link `https://services.syncfusion.com/js/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
 
 Similarly, you can use [`goToFooter`](../../api/document-editor/selection/#gotofooter) API to navigate the selection to the footer and then use [`text`](../../api/document-editor/selection/#text-code-classlanguage-textstringcode) API to get the content as plain text.

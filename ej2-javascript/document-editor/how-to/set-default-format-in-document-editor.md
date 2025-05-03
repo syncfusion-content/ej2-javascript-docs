@@ -30,6 +30,8 @@ container.setDefaultCharacterFormat({ fontSize: 20 });
 container.appendTo('#container');  
 ```
 
+> The Web API hosted link `https://services.syncfusion.com/js/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
+
 Similarly, you can change the required [`CharacterFormatProperties`](../../api/document-editor/characterFormatProperties) default value.
 
 The following example code illustrates how to change other character format default value in Document editor.
@@ -54,6 +56,8 @@ container.setDefaultCharacterFormat(defaultCharacterFormat);
 container.appendTo('#container');
 ```
 
+> The Web API hosted link `https://services.syncfusion.com/js/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
+
 ## Set the default paragraph format
 
 You can use [`setDefaultParagraphFormat`](../../api/document-editor/#setdefaultparagraphformat) API to set the default paragraph format. You can change the required [`ParagraphFormatProperties`](../../api/document-editor/paragraphFormatProperties) default value.
@@ -76,6 +80,8 @@ let defaultParagraphFormat: ParagraphFormatProperties = {
 container.setDefaultParagraphFormat(defaultParagraphFormat);
 container.appendTo('#container');  
 ```
+
+> The Web API hosted link `https://services.syncfusion.com/js/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
 
 ## Set the default section format
 
@@ -104,3 +110,5 @@ let defaultSectionFormat: SectionFormatProperties = {
 container.setDefaultSectionFormat(defaultSectionFormat);
 container.appendTo('#container');  
 ```
+
+> The Web API hosted link `https://services.syncfusion.com/js/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.

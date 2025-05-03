@@ -6,7 +6,7 @@ var chart= new ej.charts.Chart({
     primaryXAxis: {
         title: 'Overs',
         stripLines:[
-            { startFromOrigin: true, size: 4, zIndex: 'Behind', opacity: 0.5}
+            { startFromAxis: true, size: 4, zIndex: 'Behind', opacity: 0.5}
         ]
     },
     primaryYAxis: {

@@ -22,8 +22,52 @@ Refer to the following sample code.
 ```ts
  documenteditor.editor.insertTable(3,3);
 ```
+## Set the maximum number of rows when inserting a table
 
-The maximum size of row and column is limited to 32767 and 63 respectively.
+{% if page.publishingplatform == "typescript" %}
+
+You can use the [maximumRows](https://ej2.syncfusion.com/documentation/api/document-editor/documentEditorSettings/#maximumrows) property to set the maximum number of rows allowed while inserting a table in the Document Editor component.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+You can use the [maximumRows](https://ej2.syncfusion.com/javascript/documentation/api/document-editor/documentEditorSettings/#maximumrows) property to set the maximum number of rows allowed while inserting a table in the Document Editor component.
+
+{% endif %}
+
+Refer to the following sample code.
+
+```ts
+ let container: DocumentEditorContainer = new DocumentEditorContainer({ documentEditorSettings: { maximumRows: 4 } });
+```
+
+When the maximum row limit is reached, an alert will appear, as follow 
+
+![Row Limit Alert](images/Row_Limit_Alert.PNG) 
+
+>Note: The maximum value of Row is 32767, as per Microsoft Word application and you can set any value less than or equal to 32767 to this property.
+## Set the maximum number of Columns when inserting a table
+
+{% if page.publishingplatform == "typescript" %}
+
+You can use the [maximumColumns](https://ej2.syncfusion.com/documentation/api/document-editor/documentEditorSettings/#maximumcolumns) property to set the maximum number of columns allowed while inserting a table in the Document Editor component.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+You can use the [maximumColumns](https://ej2.syncfusion.com/javascript/documentation/api/document-editor/documentEditorSettings/#maximumcolumns) property to set the maximum number of columns allowed while inserting a table in the Document Editor component.
+
+{% endif %}
+
+Refer to the following sample code.
+
+```ts
+let container: DocumentEditorContainer = new DocumentEditorContainer({ documentEditorSettings: { maximumColumns: 4 } });
+```
+
+When the maximum column limit is reached, an alert will appear, as follow 
+
+![Column Limit Alert](images/Column_Limit_Alert.PNG) 
+
+>Note: The maximum value of Column is 63, as per Microsoft Word application and you can set any value less than or equal to 63 to this property.
 
 ## Insert rows
 

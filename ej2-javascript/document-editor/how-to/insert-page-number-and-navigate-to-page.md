@@ -39,6 +39,8 @@ container.documentEditor.selection.goToHeader();
 container.documentEditor.editor.insertPageNumber();
 ```
 
+> The Web API hosted link `https://services.syncfusion.com/js/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
+
 Also, you use [`insertField`](../../api/document-editor/editor/#insertfield) API in Editor module to insert the Page number in current position
 
 ```ts
@@ -68,6 +70,7 @@ container.documentEditor.editor.insertText('Document editor');
 let pageCount : number=container.documentEditor.pageCount;
 ```
 
+
 ## Navigate to specific page
 
 You can use [`goToPage`](../../api/document-editor/selection/#gotopage) API in Selection module to move selection to the start of the specified page number.
@@ -89,3 +92,5 @@ container.documentEditor.open(sfdt);
 // To move selection to page number 2
 container.documentEditor.selection.goToPage(2);
 ```
+
+> The Web API hosted link `https://services.syncfusion.com/js/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.

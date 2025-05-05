@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Accordion control
 
-This article describes the API migration process of Accordion component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Accordion component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Accessibility
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Keyboard Navigation | **Property:** *allowKeyboardNavigation* <br /><br /> var accordion = new ej.Accordion($("#accordion"), { <br /> &nbsp; allowKeyboardNavigation: false <br /> }); <br /> | **Not Applicable** |
 | Localization | **Not Applicable** | **Property:** *locale* <br /><br /> let accordion: Accordion = new Accordion({ <br /> &nbsp; locale: 'en-US' <br /> }); <br /> accordion.appendTo('#ej2Accordion'); <br /> |
@@ -23,7 +23,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## AjaxSettings
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Default | **Property:** *ajaxSettings* <br /><br /> var accordion = new ej.Accordion($("#accordion"), { <br /> &nbsp; ajaxSettings: { type: 'GET' } <br /> }); <br /> | **Not Applicable** |
 | Asynchronous | **Property:** *ajaxSettings.async* <br /><br /> var accordion = new ej.Accordion($("#accordion"), { <br /> &nbsp; ajaxSettings: { async: true } <br /> }); <br /> | **Not Applicable** |
@@ -39,7 +39,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Animation
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Default | **Not Applicable** | **Property:** *animation* <br /><br /> let accordion: Accordion = new Accordion({ <br /> &nbsp; animation: { expand: { }, collapse: { } } <br /> }); <br /> accordion.appendTo('#ej2Accordion'); <br /> |
 | EnableAnimation | **Property:** *enableAnimation* <br /><br /> var accordion = new ej.Accordion($("#accordion"), { <br /> &nbsp; enableAnimation: false <br /> }); <br /> | **Not Applicable** |
@@ -51,7 +51,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Items
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Default | **Not Applicable** | **Property:** *items* <br /><br /> let accordion: Accordion = new Accordion({ <br /> &nbsp; items: [] <br /> }); <br /> accordion.appendTo('#ej2Accordion'); <br /> |
 | Content | **Not Applicable** | **Property:** *items[0].content* <br /><br /> let accordion: Accordion = new Accordion({ <br /> &nbsp; items: [{ content: 'Contents' }] <br /> }); <br /> accordion.appendTo('#ej2Accordion'); <br /> |
@@ -82,7 +82,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Common
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Collapsible | **Property:** *collapsible* <br /><br /> var accordion = new ej.Accordion($("#accordion"), { <br /> &nbsp; collapsible: false <br /> }); <br /> | **Not Applicable** |
 | Collapse speed | **Property:** *collapseSpeed* <br /><br /> var accordion = new ej.Accordion($("#accordion"), { <br /> &nbsp; collapseSpeed: 500 <br /> }); <br /> | **Not Applicable** |

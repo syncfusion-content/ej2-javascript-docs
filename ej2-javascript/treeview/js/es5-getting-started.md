@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Es5 getting started in ##Platform_Name## TreeView control
 
-The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
 ## Controls Initialization
 
-Create an app folder `myapp` in local machine to initialize Essential JS 2 JavaScript control.
+Create an app folder `myapp` in local machine to initialize Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript control.
 
 Using either of the following way to refer the required script and styles.
 
@@ -24,9 +24,9 @@ Using either of the following way to refer the required script and styles.
 
 ### Using local script and style references in a HTML page
 
-**Step 1:** Create an app folder `myapp` for Essential JS 2 JavaScript control.
+**Step 1:** Create an app folder `myapp` for Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript control.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+**Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
 **Syntax:**
 > Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
@@ -39,7 +39,7 @@ Using either of the following way to refer the required script and styles.
 >
 > Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-navigations\styles\material.css`
 
-The below located script and style file contains all Syncfusion JavaScript (ES5) UI control resources in a single file.
+The below located script and style file contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file.
 
 > Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
 >
@@ -47,7 +47,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
 
 **Step 3:** Create a folder `myapp/resources` and copy/paste the above mentioned packages from the above installed location to `myapp/resources` location.
 
-**Step 4:** Create a HTML page (index.html) in `myapp` location and add the Essentials JS 2 script and style references.
+**Step 4:** Create a HTML page (index.html) in `myapp` location and add the Essential<sup style="font-size:70%">&reg;</sup> JS 2 script and style references.
 
 ```html
 <!DOCTYPE html>
@@ -74,7 +74,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
   </html>
 ```
 
-**Step 5:** Now, add the `div` element and initiate the `Essential JS 2 TreeView` control in the `index.html` by using following code
+**Step 5:** Now, add the `div` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeView** control in the `index.html` by using following code
 
 ```html
 <!DOCTYPE html>
@@ -140,13 +140,13 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
 </html>
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential JS 2 TreeView** control.
+**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeView** control.
 
 ### Using CDN link for script and style reference
 
-**Step 1:** Create an app folder `myapp` for the Essential JS 2 JavaScript control.
+**Step 1:** Create an app folder `myapp` for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript control.
 
-**Step 2:** The Essential JS 2 control's global scripts and styles are already hosted in the below CDN link formats.
+**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 control's global scripts and styles are already hosted in the below CDN link formats.
 
 **Syntax:**
 > Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -158,7 +158,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
 >
 > Styles: [`http://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css)
 
-**Step 3:** Create a HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `TreeView` element and initiate the `Essential JS 2 TreeView` control in the index.html by using following code.
+**Step 3:** Create a HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `TreeView` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeView** control in the index.html by using following code.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -168,6 +168,6 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
         
 {% previewsample "page.domainurl/code-snippet/treeview/es5-getting-started-cs1" %}
 
-**Step 4:** Now, run the `index.html` in web browser, it will render the `Essential JS 2 TreeView` control.
+**Step 4:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Accordion** control.
 
 > You can also explore our [JavaScript (ES5) TreeView](https://ej2.syncfusion.com/javascript/demos/#/material/treeview/default.html) to knows how to present and manipulate data.

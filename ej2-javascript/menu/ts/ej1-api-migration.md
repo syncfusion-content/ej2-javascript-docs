@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Menu control
 
-This article describes the API migration process of Menu component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Menu component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Properties
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Animation type on hover or click on the menu items | **Property:** *animationType* <br/><br/> new ej.Menu($("#menu"), { <br/>animationType: ej.AnimationType.Default <br/> }); | Not applicable |
 | Context menu target  | **Property:** *contextMenuTarget* <br/><br/> new ej.Menu($("#menu"), { <br/>menuType: ej.MenuType.ContextMenu, <br/>contextMenuTarget: "#target", <br/> }); | Not applicable |
@@ -46,7 +46,7 @@ This article describes the API migration process of Menu component from Essentia
 
 ## Methods
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Disable Method | **Method:** *disable* <br/><br/> var menu = new ej.Menu($("#menu"), { }); <br/> menu.disable();| Not applicable |
 | Disable menu items | **Method:** *disableItem* <br/><br/> var menu = new ej.Menu($("#menu"), { }); <br/> menu.disableItem("Home");| **Method:** *enableItems* <br/><br/> let menu: Menu= new Menu({ <br/> items: menuItems<br/>}); <br/>menu.appendTo("#menu");<br/> menu.enableItems("Home", false) |
@@ -66,7 +66,7 @@ This article describes the API migration process of Menu component from Essentia
 
 ## Events
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Triggers before opening the menu | **Events:** *beforeOpen* <br/><br/> var menu = new ej.Menu($("#menu"), {<br/> beforeOpen: function(args) { /** code block */ } <br/> }); | **Events:** *beforeOpen* <br/><br/> let menu: Menu= new Menu({ <br/> items: menuItems <br/> beforeOpen: (args) => { /** code block */ }<br/>}); <br/>menu.appendTo("#menu"); |
 | Triggers before closing the menu | Not applicable | **Events:** *beforeClose* <br/><br/> let menu: Menu= new Menu({ <br/> items: menuItems <br/> beforeClose: (args) => { /** code block */ }<br/>}); <br/>menu.appendTo("#menu"); |

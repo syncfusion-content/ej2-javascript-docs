@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## TreeView control
 
-This article describes the API migration process of TreeView control from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of TreeView control from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Add nodes
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Add node | **Method:** *addNode*<br/><br/>$("#tree").ejTreeView({<br/>fields: {dataSource: treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild"}<br/>});<br/>var treeObj = $("#tree").data("ejTreeView");<br/>treeObj.addNode("Node", "#book"); | **Method:** *addNodes*<br/><br/>var treeObj = new ej.navigations.TreeView({<br/>fields: {dataSource: treeData, id: "id", parentId: "pid", text: "name", hasChildren: "hasChild"},<br/>});<br/>treeObj.appendTo("#tree");<br/>var object = [{ id: "temp", name: "New node" }, { id: "new", name: "New node 1" }];<br/>treeObj.addNodes(object, "book"); |
 | Triggers before adding node | **Event:** *beforeAdd*<br/><br/>$("#tree").ejTreeView({<br/>fields: {dataSource: treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild"},<br/>beforeAdd: function() {}<br/>}); | Not Applicable |
@@ -25,7 +25,7 @@ This article describes the API migration process of TreeView control from Essent
 
 ## Common
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Keyboard Navigation | **Property:** *allowKeyboardNavigation*<br/><br/>$("#tree").ejTreeView({<br/>fields: {dataSource: treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild"},<br/>allowKeyboardNavigation: false<br/>}); | **Can be achieved using,**<br/><br/>var treeObj = new ej.navigations.TreeView({<br/>fields: {dataSource: treeData, id: "id", parentId: "pid", text: "name", hasChildren: "hasChild"},<br/>keyPress: function(args) {<br/>args.cancel = true;<br/>}<br/>});<br/>treeObj.appendTo("#tree"); |
 | Triggers before node is cut | **Event:** *beforeCut*<br/><br/>$("#tree").ejTreeView({<br/>fields: {dataSource: treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild"},<br/>beforeCut: function() {}<br/>}); | Not Applicable |
@@ -84,7 +84,7 @@ This article describes the API migration process of TreeView control from Essent
 
 ## CheckBox
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Prevent auto-check of child and parent | **Property:** *autoCheck*<br/><br/>$("#tree").ejTreeView({<br/>fields: {dataSource: treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild"},<br/>showCheckbox: true,<br/>autoCheck: false<br/>}); | **Property:** *autoCheck*<br/><br/>var treeObj = new ej.navigations.TreeView({<br/>fields: {dataSource: treeData, id: "id", parentId: "pid", text: "name", hasChildren: "hasChild"},<br/>showCheckBox: true,<br/>autoCheck: false<br/>});<br/>treeObj.appendTo("#tree"); |
 | Prevent indeterminate state in parent node | **Property:** *autoCheckParentNode*<br/><br/>$("#tree").ejTreeView({<br/>fields: {dataSource: treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild"},<br/>showCheckbox: true,<br/>autoCheckParentNode: true<br/>}); | **Can be achieved using,**<br/><br/>var treeObj = new ej.navigations.TreeView({<br/>fields: {dataSource: treeData, id: "id", parentId: "pid", text: "name", hasChildren: "hasChild"},<br/>showCheckBox: true,<br/>autoCheck: false,<br/>nodeChecked: function(args){<br/>var child = treeObj.element.querySelector('[data-uid="' + args.data[0]['id'] + '"]');<br/>var checkNodes = [];<br/>var element = child.parentNode;<br/>while ((element !== null || element !== undefined) && !element.parentNode.classList.contains('e-treeview')) {<br/>element = element.parentNode;<br/>var id = element.getAttribute('data-uid');<br/>if (id !== null) checkNodes.push(element.getAttribute('data-uid'))<br/>}<br/>if (child.querySelector('.e-list-item') !== null && args.isInteracted === true && args.action === 'check') {<br/>treeObj.autoCheck = true;<br/>treeObj.checkAll(child.getAttribute('data-uid'));<br/>} else if (child.querySelector('.e-list-item') !== null && args.isInteracted === true && args.action === 'uncheck') {<br/>treeObj.autoCheck = true;<br/>treeObj.uncheckAll(child.getAttribute('data-uid'));<br/>}<br/>treeObj.autoCheck = false;<br/>if (args.action === 'check') {<br/>treeObj.checkAll(checkNodes)<br/>}<br/>else if (args.action === 'uncheck' && child.parentNode.querySelector('.e-check') === null) {<br/>treeObj.uncheckAll(checkNodes)<br/>}<br />}<br/>});<br/>treeObj.appendTo("#tree"); |
@@ -103,7 +103,7 @@ This article describes the API migration process of TreeView control from Essent
 
 ## Drag and Drop
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Drag and drop | **Property:** *allowDragAndDrop*<br/><br/>$("#tree").ejTreeView({<br/>fields: {dataSource: treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild"},<br/>allowDragAndDrop: true<br/>}); | **Property:** *allowDragAndDrop*<br/><br/>var treeObj = new ej.navigations.TreeView({<br/>fields: {dataSource: treeData, id: "id", parentId: "pid", text: "name", hasChildren: "hasChild"},<br/>allowDragAndDrop: true<br/>});<br/>treeObj.appendTo("#tree"); |
 | Prevent Drag and drop to another TreeView | **Property:** *allowDragAndDropAcrossControl*<br/><br/>$("#tree").ejTreeView({<br/>fields: {dataSource: treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild"},<br/>allowDragAndDrop: true,<br/>allowDragAndDropAcrossControl: false<br/>}); | **Can be achieved using,** <br/><br/>var treeObj = new ej.navigations.TreeView({<br/>fields: {dataSource: treeData, id: "id", parentId: "pid", text: "name", hasChildren: "hasChild"},<br/>allowDragAndDrop: true,<br/>nodeDragStop: function(args) {<br/>if (args.draggedParentNode.closest('.e-treeview') !== args.dropTarget.closest('.e-treeview')) {<br/>args.cancel = true;<br/>}}<br/>});<br/>treeObj.appendTo("#tree"); |
@@ -116,7 +116,7 @@ This article describes the API migration process of TreeView control from Essent
 
 ## Expand/Collapse nodes
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Triggers before node is collapsed | **Event:** *beforeCollapse*<br/><br/>$("#tree").ejTreeView({<br/>fields: {dataSource: treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild"},<br/>beforeCollapse: function() {}<br/>}); | **Event:** *nodeCollapsing*<br/><br/>var treeObj = new ej.navigations.TreeView({<br/>fields: {dataSource: treeData, id: "id", parentId: "pid", text: "name", hasChildren: "hasChild"},<br/>nodeCollapsing: function() {}<br/>});<br/>treeObj.appendTo("#tree"); |
 | Triggers before node is expanded | **Event:** *beforeExpand*<br/><br/>$("#tree").ejTreeView({<br/>fields: {dataSource: treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild"},<br/>beforeExpand: function() {}<br/>}); | **Event:** *nodeExpanding*<br/><br/>var treeObj = new ej.navigations.TreeView({<br/>fields: {dataSource: treeData, id: "id", parentId: "pid", text: "name", hasChildren: "hasChild"},<br/>nodeExpanding: function() {}<br/>});<br/>treeObj.appendTo("#tree"); |
@@ -135,7 +135,7 @@ This article describes the API migration process of TreeView control from Essent
 
 ## Node Editing
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Editing | **Property:** *allowEditing*<br/><br/>$("#tree").ejTreeView({<br/>fields: {dataSource: treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild"},<br/>allowEditing: true<br/>}); | **Property:** *allowEditing*<br/><br/>var treeObj = new ej.navigations.TreeView({<br/>fields: {dataSource: treeData, id: "id", parentId: "pid", text: "name", hasChildren: "hasChild"},<br/>allowEditing: true<br/>});<br/>treeObj.appendTo("#tree"); |
 | Triggers before node is edited | **Event:** *beforeEdit*<br/><br/>$("#tree").ejTreeView({<br/>fields: {dataSource: treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild"},<br/>allowEditing: true,<br/>beforeEdit: function() {}<br/>}); | **Event:** *nodeEditing*<br/><br/>var treeObj = new ej.navigations.TreeView({<br/>fields: {dataSource: treeData, id: "id", parentId: "pid", text: "name", hasChildren: "hasChild"},<br/>allowEditing: true,<br/>nodeEditing: function() {}<br/>});<br/>treeObj.appendTo("#tree"); |
@@ -145,7 +145,7 @@ This article describes the API migration process of TreeView control from Essent
 
 ## Node Selection
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Multi-selection | **Property:** *allowMultiSelection*<br/><br/>$("#tree").ejTreeView({<br/>fields: {dataSource: treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild"},<br/>allowMultiSelection: true<br/>}); | **Property:** *allowMultiSelection*<br/><br/>var treeObj = new ej.navigations.TreeView({<br/>fields: {dataSource: treeData, id: "id", parentId: "pid", text: "name", hasChildren: "hasChild"},<br/>allowMultiSelection: true<br/>});<br/>treeObj.appendTo("#tree"); |
 | Triggers before node is selected | **Event:** *beforeSelect*<br/><br/>$("#tree").ejTreeView({<br/>fields: {dataSource: treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild"},<br/>beforeSelect: function() {}<br/>}); | **Event:** *nodeSelecting*<br/><br/>var treeObj = new ej.navigations.TreeView({<br/>fields: {dataSource: treeData, id: "id", parentId: "pid", text: "name", hasChildren: "hasChild"},<br/>nodeSelecting: function() {}<br/>});<br/>treeObj.appendTo("#tree"); |
@@ -166,6 +166,6 @@ This article describes the API migration process of TreeView control from Essent
 
 ## Template
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Custom template | **Property:** *template*<br/><br/>$("#tree").ejTreeView({<br/>fields: {dataSource: treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild"},<br/>template: "#templateData",<br/>}); | **Property:** *nodeTemplate*<br/><br/>var treeObj = new ej.navigations.TreeView({<br/>fields: {dataSource: treeData, id: "id", parentId: "pid", text: "name", hasChildren: "hasChild"},<br/>nodeTemplate: "#templateData   ",<br/>});<br/>treeObj.appendTo("#tree"); |

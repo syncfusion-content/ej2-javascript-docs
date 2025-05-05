@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data source binding and custom menu items in ##Platform_Name## Menu control | Syncfusion
+title: Data source binding in ##Platform_Name## Menu control | Syncfusion
 description: Learn here all about Data source binding and custom menu items in Syncfusion ##Platform_Name## Menu control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Data source binding and custom menu items 
@@ -149,7 +149,7 @@ The Menu can be initialized using `<UL>` element that contains a collection of `
 
 ## Custom menu items
 
-The Menu can be customized using Essential JS2 [Template engine](https://ej2.syncfusion.com/documentation/common/template-engine) to render the elements.
+The Menu can be customized using Essential<sup style="font-size:70%">&reg;</sup> JS2 [Template engine](https://ej2.syncfusion.com/documentation/common/template-engine) to render the elements.
 
 To customize menu items in your application, set your customized template string to the [`template`](../api/menu#template) property. In the following example, the menu has been rendered with customized menu items.
 

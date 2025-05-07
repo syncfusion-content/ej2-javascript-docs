@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Stacked bar in ##Platform_Name## Chart control | Syncfusion
-description: Learn here all about Stacked bar in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
+title: Stacked Bar Chart in ##Platform_Name## Charts | Syncfusion
+description: Learn here all about Stacked Bar in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Stacked bar 
+control: Stacked Bar 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Stacked bar Chart in ##Platform_Name## control
+# Stacked Bar Chart in ##Platform_Name## Charts
 
-## 100% Stacked bar
+## 100% Stacked Bar
 
 To render a [100% stacked bar](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/100-stacked-bar-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  

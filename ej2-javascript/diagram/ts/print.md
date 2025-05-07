@@ -126,7 +126,7 @@ The following example shows how to set pageOrientation for the printOptions.
 ## Limitations
 
 
-Currently, printing diagram with native and HTML nodes is not supported. To overcome this limitation, we make use of the Syncfusion Essential® PDF library. This library incorporates the Syncfusion Essential® HTML converter, which employs the advanced Blink rendering engine. This converter seamlessly transforms HTML content into images. Refer to [`export Html-and-Native node`](https://support.syncfusion.com/kb/article/14031/how-to-export-html-node-using-blink-rendering-in-javascript-diagram) kb for more information.
+Currently, printing diagram with native and HTML nodes is not supported. To overcome this limitation, we make use of the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> PDF library. This library incorporates the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> HTML converter, which employs the advanced Blink rendering engine. This converter seamlessly transforms HTML content into images. Refer to [`export Html-and-Native node`](https://support.syncfusion.com/kb/article/14031/how-to-export-html-node-using-blink-rendering-in-javascript-diagram) kb for more information.
 
 ## See Also
 

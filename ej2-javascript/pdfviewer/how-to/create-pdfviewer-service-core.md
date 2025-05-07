@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 ---
 # Create pdfviewer service in ##Platform_Name## Pdfviewer control
 
-The Essential JavaScript PDF Viewer have server side dependency to get the details from PDF Documents for rendering. This section explains how to create the service for PDF Viewer to perform server-side preprocessing of the PDF document to be rendered in client side.
+The Essential<sup style="font-size:70%">&reg;</sup> JavaScript PDF Viewer have server side dependency to get the details from PDF Documents for rendering. This section explains how to create the service for PDF Viewer to perform server-side preprocessing of the PDF document to be rendered in client side.
 
 ## Prerequisites
 

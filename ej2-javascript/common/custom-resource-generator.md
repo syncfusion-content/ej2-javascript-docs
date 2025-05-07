@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Custom Resource Generator for Syncfusion for EJ2 JavaScript ES5.
+# Custom Resource Generator for Syncfusion<sup style="font-size:70%">&reg;</sup> for EJ2 JavaScript ES5.
 
-Syncfusion provides an option to generate a selective controls script (JavaScript ES5) and styles by using the [Custom Resource Generator](https://crg.syncfusion.com/) (CRG). 
+Syncfusion<sup style="font-size:70%">&reg;</sup> provides an option to generate a selective controls script (JavaScript ES5) and styles by using the [Custom Resource Generator](https://crg.syncfusion.com/) (CRG). 
 
 ##  Control Search and Selection.
 
@@ -22,7 +22,7 @@ Using our CRG site, you can effortlessly navigate through our comprehensive list
 
 Refer to the following steps to search and select the controls in CRG.
 
-1. Open [Syncfusion Custom Resource Generator](https://crg.syncfusion.com/) (CRG) application.
+1. Open [Syncfusion<sup style="font-size:70%">&reg;</sup> Custom Resource Generator](https://crg.syncfusion.com/) (CRG) application.
 2. Type the required control name in the search bar and select the check box. The dependency of the selected control is resolved in the application itself, so it does not need to choose each dependent control by manually.
 ![ej2 search and select non-injectable module controls](images/search-non-injectable.png)
 3. Click the expand icon and select the required feature for the injectable module supported controls.
@@ -61,7 +61,7 @@ Refer to the following steps to download the custom resources in CRG.
 
 ## Import previously generated settings into the CRG
 
-To add more controls or upgrade the latest Syncfusion scripts, it is not necessary to generate it from the scratch in the CRG. Just import the old **import.json** file and make the changes, then download it again from the CRG application.
+To add more controls or upgrade the latest Syncfusion<sup style="font-size:70%">&reg;</sup> scripts, it is not necessary to generate it from the scratch in the CRG. Just import the old **import.json** file and make the changes, then download it again from the CRG application.
 
 Refer to the following steps to import previous **import.json** file in the CRG.
 

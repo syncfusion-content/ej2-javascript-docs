@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Splitter control
 
-This article describes the API migration process of Splitter component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Splitter component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Common
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Adding custom class | **Property:** *cssClass* <br /><br /> var splitter = new <br /> &nbsp;ej.Splitter($("#splitter"), { <br /> &nbsp; cssClass: ”custom-class” <br /> }); <br /> | **Property:** *cssClass* <br /><br /> let obj: Splitter = new Splitter({ <br /> cssClass: “custom-class" <br /> &nbsp; }) <br /> &nbsp; obj.appendTo(“#ej2_splitter”) |
 | Adjusting Height | **Property:** *height* <br /><br /> var splitter = new <br /> &nbsp;ej.Splitter($("#splitter"), { <br /> height: ”100%” <br /> }); <br /> | **Property:** *height* <br /> <br /> let obj: Splitter = new Splitter ({ <br /> height: ‘100%’ <br />&nbsp; }) <br /> &nbsp; obj.appendTo(“#ej2_splitter”) |
@@ -32,26 +32,26 @@ This article describes the API migration process of Splitter component from Esse
 
 ## Accessibility and Localization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Keyboard Navigation | **Property:** *allowKeyboardNavigation* <br /><br /> var splitter = new <br /> ej.Splitter($("#splitter"), { <br /> allowKeyboardNavigation: true <br /> }); <br /> &nbsp; | No separate property for enable/disable keyboard navigation.  Its enabled by default. |
 | Right to Left | **Property:** *enableRTL* <br /><br /> var splitter = new <br /> ej.Splitter($("#splitter"), { <br /> enableRTL: false <br /> }); <br />&nbsp; | **Property:** *enableRtl*<br /><br /> Let obj: Splitter = new <br /> Splitter({ <br /> enableRtl: false <br /> }) <br /> obj.appendTo(“#ej2_splitter”) |
 
 ## Control State
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Enable/Disable the control | Not Available | **Property:** *enabled* <br /><br /> let obj: Splitter = new <br /> Splitter({ <br /> enabled: true <br /> }) <br /> obj.appendTo(“#ej2_splitter”) |
 
 ## State Maintenance
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Save the model value in local storage or cookies | Not Available | **Property:** *enablePersistence* <br /><br /> let obj: Splitter = new <br /> Splitter({<br /> enablePersistence: false <br /> }) <br /> obj.appendTo(“#ej2_splitter”) |
 
 ## Pane Properties
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Default | **Property:** *properties* <br /><br /> var splitter = new <br /> ej.Splitter($("#splitter"), { <br /> properties: [ ] <br /> });<br /> | **Property:** *paneSettings* <br /><br /> let obj: Splitter = new <br /> Splitter({ <br /> paneSettings: [ ]<br /> }) <br /> obj.appendTo(“#ej2_splitter”) |
 | Pane Content | Not Available | **Property:** *content* <br /><br /> let obj: Splitter = new<br /> Splitter({ <br /> paneSettings: [{ content:<br />‘First Pane Content’}]<br /> })<br /> obj.appendTo(“#ej2_splitter”) |
@@ -75,7 +75,7 @@ This article describes the API migration process of Splitter component from Esse
 
 ## Animation
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | EnableAnimation | **Property:** *enableAnimation* <br /><br /> var splitter = new <br /> ej.Splitter($("#splitter"), { <br /> enableAnimation: true <br /> }); <br /> &nbsp; | Not Available |
 | AnimationSpeed | **Property:** *animationSpeed* <br /><br /> var splitter = new <br /> ej.Splitter($("#splitter"), { <br /> animationSpeed: 150 <br /> }); <br />&nbsp; | Not Available |

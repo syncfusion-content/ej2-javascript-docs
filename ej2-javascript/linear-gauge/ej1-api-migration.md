@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Linear gauge control
 
-This article describes the API migration process of Accordion component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Accordion component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Linear gauge dimensions
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Height| **Property:** *height*<br/><br/> $("#container").ejLinearGauge({ height: 150 });|**Property:** *height*<br/><br/> let gauge: LinearGauge = new LinearGauge({ <br/> &nbsp; height : '150px' <br/> }); <br/> gauge.appendTo('#container');|
 |Width| **Property:** *width*<br/><br/> $("#container").ejLinearGauge({ width: 200 });|**Property:** *width*<br/><br/> let gauge: LinearGauge = new LinearGauge({ <br/> &nbsp; width : '200px' <br/> }); <br/> gauge.appendTo('#container');|
@@ -24,7 +24,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Line customizaton
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Height| **Property:** *scales.length*<br/><br/> $("#container").ejLinearGauge({ <br/> &nbsp; scales:[{ <br/> &nbsp; &nbsp; length: 300 <br/> &nbsp; }] });|**Property:** *axes.line.height*<br/><br/> let gauge: LinearGauge = new LinearGauge({ <br/> &nbsp; axes: [{ <br/> &nbsp; &nbsp; line: { height : 150 } <br/> &nbsp; }] }); <br/> gauge.appendTo('#container');|
 |Width| **Property:** *scales.width*<br/><br/> $("#container").ejLinearGauge({ <br/> &nbsp; scales:[{ <br/> &nbsp; &nbsp; width: 300 <br/> &nbsp; }] });|**Property:** *axes.line.width*<br/><br/> let gauge: LinearGauge = new LinearGauge({ <br/> &nbsp; axes: [{ <br/> &nbsp; &nbsp; line: { width : 2 } <br/> &nbsp; }] }); <br/> gauge.appendTo('#container');|
@@ -35,7 +35,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Ticks
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Type of Ticks| **Property:** *scales.ticks.type*<br/><br/> $("#container").ejLinearGauge({ <br/> &nbsp; scales:[{ <br/> &nbsp; &nbsp; ticks: [{ type: "majorinterval" }] <br/> &nbsp; }] });| **Property:** *axes.majorTicks.height*<br/><br/> let gauge: LinearGauge = new LinearGauge({ <br/> &nbsp; axes: [{ <br/> &nbsp; &nbsp; majorTicks: {  } <br/> &nbsp; }] }); <br/> gauge.appendTo('#container');|
 |Height of Major Ticks| **Property:** *scales.ticks.height*<br/><br/> $("#container").ejLinearGauge({ <br/> &nbsp; scales: [{ <br/> &nbsp; &nbsp; ticks: [{ type: "majorinterval", height: 8 }] <br/> &nbsp; }] });|**Property:** *axes.majorTicks.height*<br/><br/> let gauge: LinearGauge = new LinearGauge({ <br/> &nbsp; axes: [{ <br/> &nbsp; &nbsp; majorTicks: { height : 10 } <br/> &nbsp; }] }); <br/> gauge.appendTo('#container');|
@@ -55,7 +55,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Labels
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Angle| **Property:** *scales.labels.angle*<br/><br/> $("#container").ejLinearGauge({ <br/> &nbsp; scales:[{ <br/> &nbsp; &nbsp; labels: [{ angle: 15 }] <br/> &nbsp; }] });| Not Applicable|
 |Offset| **Property:** *scales.labels.distanceFromScale*<br/><br/> $("#container").ejLinearGauge({ <br/> &nbsp; scales:[{ <br/> &nbsp; &nbsp; labels: [{ distanceFromScale: { x: -5, y: 10 } }] <br/> &nbsp; }] });|**Property:** *axes.labelStyle.offset*<br/><br/> let gauge: LinearGauge = new LinearGauge({ <br/> &nbsp; axes: [{ <br/> &nbsp; &nbsp; labelStyle: { offset : 3 } <br/> &nbsp; }] }); <br/> gauge.appendTo('#container');|
@@ -71,7 +71,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Axis
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Minimum Value| **Property:** *scales.minimum*<br/><br/> $("#container").ejLinearGauge({ <br/> &nbsp; scales: [{ minimum: 20 }] <br/> });| **Property:** *axes.minimum*<br/><br/> let gauge: LinearGauge = new LinearGauge({ <br/> &nbsp; axes: [{ minimum: 20 }] <br/> }); <br/> gauge.appendTo('#container');|
 |Maximum Value| **Property:** *scales.maximum*<br/><br/> $("#container").ejLinearGauge({ <br/> &nbsp; scales: [{ maximum: 120 }] <br/> });| **Property:** *axes.maximum*<br/><br/> let gauge: LinearGauge = new LinearGauge({ <br/> &nbsp; axes: [{ maximum: 120 }] <br/> }); <br/> gauge.appendTo('#container');|
@@ -80,7 +80,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Ranges
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Start Value| **Property:** *scales.ranges.startValue*<br/><br/> $("#container").ejLinearGauge({ <br/> &nbsp; scales:[{ <br/> &nbsp; &nbsp; ranges: [{ startValue: 20 }] <br/> &nbsp; }] });| **Property:** *axes.ranges.start*<br/><br/> let gauge: LinearGauge = new LinearGauge({ <br/> &nbsp; axes: [{ <br/> &nbsp; &nbsp; ranges: [{ start: 20 }] <br/> &nbsp; }] }); <br/> gauge.appendTo('#container');|
 |End Value| **Property:** *scales.ranges.endValue*<br/><br/> $("#container").ejLinearGauge({ <br/> &nbsp; scales:[{ <br/> &nbsp; &nbsp; ranges: [{ endValue: 20 }] <br/> &nbsp; }] });| **Property:** *axes.ranges.end*<br/><br/> let gauge: LinearGauge = new LinearGauge({ <br/> &nbsp; axes: [{ <br/> &nbsp; &nbsp; ranges: [{ end: 20 }] <br/> &nbsp; }] }); <br/> gauge.appendTo('#container');|
@@ -94,7 +94,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Bar Pointer
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Bar Pointer| **Property:** *scales.barPointers.value*<br/><br/> $("#container").ejLinearGauge({ <br/> &nbsp; scales:[{ <br/> &nbsp; &nbsp; barPointers: [{ value: 20 }] <br/> &nbsp; }] });| **Property:** *axes.pointers.value*<br/><br/> let gauge: LinearGauge = new LinearGauge({ <br/> &nbsp; axes: [{ <br/> &nbsp; &nbsp; pointers: [{ type: 'Bar', value: 20 }] <br/> &nbsp; }] }); <br/> gauge.appendTo('#container');|
 |Color of Bar Pointer| **Property:** *scales.barPointers.backgroundColor*<br/><br/> $("#container").ejLinearGauge({ <br/> &nbsp; scales:[{ <br/> &nbsp; &nbsp; barPointers: [{ value: 20, backgroundColor: "red" }] <br/> &nbsp; }] });| **Property:** *axes.pointers.color*<br/><br/> let gauge: LinearGauge = new LinearGauge({ <br/> &nbsp; axes: [{ <br/> &nbsp; &nbsp; pointers: [{ type: 'Bar', value: 20, color: 'red' }] <br/> &nbsp; }] }); <br/> gauge.appendTo('#container');|
@@ -108,7 +108,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Marker Pointer
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Marker Pointer| **Property:** *scales.markerPointers.value*<br/><br/> $("#container").ejLinearGauge({ <br/> &nbsp; scales:[{ <br/> &nbsp; &nbsp; markerPointers: [{ value: 20 }] <br/> &nbsp; }] });| **Property:** *axes.pointers.value*<br/><br/> let gauge: LinearGauge = new LinearGauge({ <br/> &nbsp; axes: [{ <br/> &nbsp; &nbsp; pointers: [{ type: 'Marker', value: 20 }] <br/> &nbsp; }] }); <br/> gauge.appendTo('#container');|
 |Color of Marker Pointer| **Property:** *scales.markerPointers.backgroundColor*<br/><br/> $("#container").ejLinearGauge({ <br/> &nbsp; scales:[{ <br/> &nbsp; &nbsp; markerPointers: [{ value: 20, backgroundColor: "blue" }] <br/> &nbsp; }] });| **Property:** *axes.pointers.color*<br/><br/> let gauge: LinearGauge = new LinearGauge({ <br/> &nbsp; axes: [{ <br/> &nbsp; &nbsp; pointers: [{ type: 'Marker', value: 20, color: 'red' }] <br/> &nbsp; }] }); <br/> gauge.appendTo('#container');|
@@ -125,7 +125,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Annotation
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Content| **Property:** *scales.customLabels.value*<br/><br/> $("#container").ejLinearGauge({ <br/> &nbsp; scales:[{ <br/> &nbsp; &nbsp; showCustomLabels: true, <br/> &nbsp; &nbsp; customLabels: [{ <br/> &nbsp; &nbsp; &nbsp; value: "LinearGauge" }] <br/> &nbsp; }] });| **Property:** *annotations.content*<br/><br/> let gauge: LinearGauge = new LinearGauge({ <br/> &nbsp; annotation: [{ <br/> &nbsp; &nbsp; content: "Annotation" }] }); <br/> gauge.appendTo('#container');|
 |Horizontal Alignment| Not Applicable| **Property:** *annotations.horizontalAlignment*<br/><br/> let gauge: LinearGauge = new LinearGauge({ <br/> &nbsp; annotation: [{ <br/> &nbsp; &nbsp; content: "Annotation", horizontalAlignment: 'Center' }] }); <br/> gauge.appendTo('#container');|
@@ -143,7 +143,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Tooltip
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Tooltip for Pointer| Not Applicable| **Property:** *tooltip.enable*<br/><br/> let gauge: LinearGauge = new LinearGauge({ <br/> &nbsp; tooltip: { <br/> &nbsp; &nbsp; enable: true } <br/> &nbsp;}); <br/> gauge.appendTo('#container');|
 |Tooltip for Label|  **Property:** *tooltip.showLabelTooltip*<br/><br/> $("#container").ejLinearGauge({ <br/> &nbsp; tooltip: { <br/> &nbsp; &nbsp; showLabelTooltip: true <br/> &nbsp; });| Not Applicable|
@@ -156,7 +156,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Appearence of Linear Gauge
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Background Color| **Property:** *backgroundColor*<br/><br/> $("#container").ejLinearGauge({ backgroundColor: "Red" });| **Property:** *background*<br/><br/> let gauge: LinearGauge = new LinearGauge({ <br/> &nbsp; background: 'skyblue' <br/> &nbsp;}); <br/> gauge.appendTo('#container');|
 |Border Color| **Property:** *borderColor*<br/><br/> $("#container").ejLinearGauge({ borderColor: "Black" });| **Property:** *border.color*<br/><br/> let gauge: LinearGauge = new LinearGauge({ <br/> &nbsp; border: { color: 'red' } <br/> &nbsp;}); <br/> gauge.appendTo('#container');|
@@ -168,7 +168,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Gauge Container type
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Container Type| **Property:** *scales.type*<br/><br/> $("#container").ejLinearGauge({ <br/> &nbsp; scales: [{ <br/> &nbsp; &nbsp; type: 'thermometer' <br/> &nbsp; }] });| **Property:** *container.type*<br/><br/> let gauge: LinearGauge = new LinearGauge({ <br/> &nbsp; container: { type: 'Thermometer' } <br/> &nbsp;}); <br/> gauge.appendTo('#container');|
 |Container Height| Not Applicable| **Property:** *container.height*<br/><br/> let gauge: LinearGauge = new LinearGauge({ <br/> &nbsp; container: { height: 20 } <br/> &nbsp;}); <br/> gauge.appendTo('#container');|
@@ -177,7 +177,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Events
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Animation Complete Event| Not Applicable| **Event:** *animationComplete*<br/><br/> let gauge: LinearGauge = new LinearGauge({ <br/>&nbsp; animationComplete: function(e: IAnimationCompleteEventArgs): void { }  <br/> }); <br/> gauge.appendTo('#container');|
 |Annotation Render Event| **Event:** *drawCustomLabel*<br/><br/> $("#container").ejLinearGauge({<br/>&nbsp; drawCustomLabel: function (args) {} <br/> });| **Event:** *annotationRender*<br/><br/> let gauge: LinearGauge = new LinearGauge({ <br/> &nbsp; annotationRender: function(e: IAnnotationRenderEventArgs): void { } <br/> }) <br/> gauge.appendTo('#container');|

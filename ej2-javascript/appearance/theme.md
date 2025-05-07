@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Theme in ##Platform_Name## controls
 
-The Syncfusion JavaScript library has provided the below list of in-built themes:
+The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript library has provided the below list of in-built themes:
 
 |Theme | Style Sheet Name |
 |--------|--------|
@@ -38,11 +38,11 @@ The Syncfusion JavaScript library has provided the below list of in-built themes
 |Microsoft Office Fabric Dark | fabric-dark.css |
 |High Contrast | highcontrast.css |
 
-> The Syncfusion Bootstrap theme is designed based on `Bootstrap v3`, but it can be compatible with `Bootstrap v4` applications. In addition to these four built-in themes, [ThemeStudio](https://ej2.syncfusion.com/documentation/appearance/theme-studio/) also provides support for the Fusion theme, which can only be downloaded from [ThemeStudio](https://ej2.syncfusion.com/themestudio/?theme=fusion).
+> The Syncfusion<sup style="font-size:70%">&reg;</sup> Bootstrap theme is designed based on `Bootstrap v3`, but it can be compatible with `Bootstrap v4` applications. In addition to these four built-in themes, [ThemeStudio](https://ej2.syncfusion.com/documentation/appearance/theme-studio/) also provides support for the Fusion theme, which can only be downloaded from [ThemeStudio](https://ej2.syncfusion.com/themestudio/?theme=fusion).
 
 ## Optimized CSS files
 
-Syncfusion controls provide two size modes for each theme: **normal** and **bigger**. By default, the **normal size mode** is applied, offering a standard appearance that is suitable for all devices. The **bigger size mode** provides an enlarged interface for enhanced interactions, visibility, and an overall improved user experience by increasing the size of the UI controls.
+Syncfusion<sup style="font-size:70%">&reg;</sup> controls provide two size modes for each theme: **normal** and **bigger**. By default, the **normal size mode** is applied, offering a standard appearance that is suitable for all devices. The **bigger size mode** provides an enlarged interface for enhanced interactions, visibility, and an overall improved user experience by increasing the size of the UI controls.
 
 The bigger size mode is ideal when an enlarged appearance is needed, while the normal size mode works best for maintaining the default appearance of controls.
 
@@ -50,7 +50,7 @@ Below is a comparison of the Button control in normal and bigger size modes:
 
 ![bigger-sized-button](./images/bigger-theme-button.png)
 
-Each theme includes both normal and bigger size modes, which increases the overall file size. To optimize performance, Syncfusion offers additional theme files (e.g., `fluent2-lite.css`), which only include the normal size mode styles. This results in a significant reduction in file size, improving load times and overall application performance, especially when the bigger size mode is unnecessary.
+Each theme includes both normal and bigger size modes, which increases the overall file size. To optimize performance, Syncfusion<sup style="font-size:70%">&reg;</sup> offers additional theme files (e.g., `fluent2-lite.css`), which only include the normal size mode styles. This results in a significant reduction in file size, improving load times and overall application performance, especially when the bigger size mode is unnecessary.
 
 Refer to the comparison below for the default and optimized theme file sizes:
 
@@ -60,7 +60,7 @@ Refer to the comparison below for the default and optimized theme file sizes:
 
 ## Reference themes in the application
 
-Syncfusion JavaScript controls themes that can be used in the application by referencing the style sheet. Using the following approaches, themes can be referenced in the application.
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls themes that can be used in the application by referencing the style sheet. Using the following approaches, themes can be referenced in the application.
 
 * [NPM Packages](#npm-packages) - Used to customize the existing themes and bundle stylesheet’s in an application.
 * [Content Delivery Network (CDN)](#cdn-reference) - Used to reference complete css via static web assets.
@@ -68,7 +68,7 @@ Syncfusion JavaScript controls themes that can be used in the application by ref
 
 ## NPM packages
 
-All Syncfusion JavaScript (Essential JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. Themes are shipped as individual and combined CSS files. A combined CSS file can be referred to from the npm package [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) and individual CSS files are available within the same control repository’s `style` folder. In the `ej2` npm package, we have shipped both CSS and SCSS files for all controls.
+All Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. Themes are shipped as individual and combined CSS files. A combined CSS file can be referred to from the npm package [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) and individual CSS files are available within the same control repository’s `style` folder. In the `ej2` npm package, we have shipped both CSS and SCSS files for all controls.
 
 ### Referring all controls theme
 
@@ -102,7 +102,7 @@ Referring individual control SCSS theme from an individual package.
 @import "ej2-buttons/styles/button/material.scss";
 ```
 
-> `ej2-base` is common dependent package for all Syncfusion JavaScript control styles. so, it needs to be added first in the import statement.
+> `ej2-base` is common dependent package for all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript control styles. so, it needs to be added first in the import statement.
 
 Referring individual control SCSS theme from ej2 package
 
@@ -156,11 +156,11 @@ To refer to individual control's optimized CSS files from an individual packages
 
 ## CDN reference
 
-Syncfusion hosts every Syncfusion JavaScript control as a separate package on the CDN. This allows you to load the scripts and styles for each individual package. Syncfusion also provides a single package that includes all Syncfusion JavaScript controls, allowing you to load the scripts and styles for all controls as a single script and style file.
+Syncfusion<sup style="font-size:70%">&reg;</sup> hosts every Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript control as a separate package on the CDN. This allows you to load the scripts and styles for each individual package. Syncfusion<sup style="font-size:70%">&reg;</sup> also provides a single package that includes all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls, allowing you to load the scripts and styles for all controls as a single script and style file.
 
 ### Single CDN theme reference for all controls
 
-Refer to a single CDN link that contains all Syncfusion JavaScript control styles as follows:
+Refer to a single CDN link that contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript control styles as follows:
 
 ```
 https://cdn.syncfusion.com/ej2/<version>/<theme_name>.css
@@ -222,7 +222,7 @@ The primary goal of individual CDN control is to optimize the loading time and m
 
 ## Change theme dynamically
 
-In the application, Syncfusion themes can be changed dynamically by changing their style reference as follows.
+In the application, Syncfusion<sup style="font-size:70%">&reg;</sup> themes can be changed dynamically by changing their style reference as follows.
 
 * Add the theme CDN link and DropDownList element to the HTML file using the following code.
 
@@ -252,7 +252,7 @@ In the application, Syncfusion themes can be changed dynamically by changing the
 </html>
 ```
 
-* The following code example demonstrates how to change the theme dynamically in the application using Syncfusion JavaScript DropDownList control.
+* The following code example demonstrates how to change the theme dynamically in the application using Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript DropDownList control.
 
 ```ts
 import { DropDownList, ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
@@ -301,11 +301,11 @@ dropDownListObject.appendTo('#themes-dropdown');
 
 ## Common variables
 
-The following list of common variables are used in the Syncfusion JavaScript library themes for all UI controls. You can change these variables to customize the corresponding theme.
+The following list of common variables are used in the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript library themes for all UI controls. You can change these variables to customize the corresponding theme.
 
 <!-- markdownlint-disable MD033 -->
 
-### Syncfusion Tailwind 3.4 theme
+### Syncfusion<sup style="font-size:70%">&reg;</sup> Tailwind 3.4 theme
 
 <table>
     <style>
@@ -514,7 +514,7 @@ The following list of common variables are used in the Syncfusion JavaScript lib
     </tbody>
 </table>
 
-### Syncfusion Bootstrap 5.3 theme
+### Syncfusion<sup style="font-size:70%">&reg;</sup> Bootstrap 5.3 theme
 
 <table>
     <style>
@@ -759,7 +759,7 @@ The following list of common variables are used in the Syncfusion JavaScript lib
     </tbody>
 </table>
 
-### Syncfusion Fluent 2 theme
+### Syncfusion<sup style="font-size:70%">&reg;</sup> Fluent 2 theme
 
 <table>
     <style>
@@ -1040,7 +1040,7 @@ The following list of common variables are used in the Syncfusion JavaScript lib
     </tbody>
 </table>
 
-### Syncfusion Material 3 theme
+### Syncfusion<sup style="font-size:70%">&reg;</sup> Material 3 theme
 
 <table>
     <style>
@@ -1465,7 +1465,7 @@ The following list of common variables are used in the Syncfusion JavaScript lib
     </tbody>
 </table>
 
-### Syncfusion Bootstrap 5 theme
+### Syncfusion<sup style="font-size:70%">&reg;</sup> Bootstrap 5 theme
 
 <table>
     <style>
@@ -1683,7 +1683,7 @@ The following list of common variables are used in the Syncfusion JavaScript lib
     </tbody>
 </table>
 
-### Syncfusion Fluent theme
+### Syncfusion<sup style="font-size:70%">&reg;</sup> Fluent theme
 
 <table>
     <style>
@@ -1973,7 +1973,7 @@ The following list of common variables are used in the Syncfusion JavaScript lib
     </tbody>
 </table>
 
-### Syncfusion Bootstrap 4 theme
+### Syncfusion<sup style="font-size:70%">&reg;</sup> Bootstrap 4 theme
 
 <table>
     <style>
@@ -2127,7 +2127,7 @@ The following list of common variables are used in the Syncfusion JavaScript lib
     </tbody>
 </table>
 
-### Syncfusion Bootstrap theme
+### Syncfusion<sup style="font-size:70%">&reg;</sup> Bootstrap theme
 
 <table>
     <style>
@@ -2596,7 +2596,7 @@ The following list of common variables are used in the Syncfusion JavaScript lib
     </tbody>
 </table>
 
-### Syncfusion Material theme
+### Syncfusion<sup style="font-size:70%">&reg;</sup> Material theme
 
 <table>
     <style>
@@ -2942,7 +2942,7 @@ The following list of common variables are used in the Syncfusion JavaScript lib
     </tbody>
 </table>
 
-### Syncfusion Microsoft Office Fabric theme
+### Syncfusion<sup style="font-size:70%">&reg;</sup> Microsoft Office Fabric theme
 
 <table>
     <style>
@@ -3309,7 +3309,7 @@ The following list of common variables are used in the Syncfusion JavaScript lib
     </tbody>
 </table>
 
-### Syncfusion High Contrast theme
+### Syncfusion<sup style="font-size:70%">&reg;</sup> High Contrast theme
 
 <table>
     <style>
@@ -3535,7 +3535,7 @@ The following list of common variables are used in the Syncfusion JavaScript lib
     </tbody>
 </table>
 
-### Syncfusion Tailwind CSS theme
+### Syncfusion<sup style="font-size:70%">&reg;</sup> Tailwind CSS theme
 
 <table>
     <style>

@@ -11,20 +11,20 @@ domainurl: ##DomainURL##
 
 # Es5 getting started in ##Platform_Name## Listview control
 
-The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
 ## control Initialization
 
-The Essential JS 2 JavaScript controls can be initialized by using either of the following ways.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using either of the following ways.
 
 * Using local script and style references in a HTML page.
 * Using CDN link for script and style reference.
 
 ### Using local script and style references in a HTML page
 
-**Step 1:** Create an app folder `myapp` for Essential JS 2 JavaScript controls.
+**Step 1:** Create an app folder `myapp` for Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+**Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
 **Syntax:**
 > Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -39,7 +39,7 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 
 **Step 3:** Create a folder `myapp/resources` and copy/paste the global scripts and styles from the above installed location to `myapp/resources` location.
 
-**Step 4:** Create a HTML page (index.html) in `myapp` location and add the Essentials JS 2 script and style references.
+**Step 4:** Create a HTML page (index.html) in `myapp` location and add the Essential<sup style="font-size:70%">&reg;</sup> JS 2 script and style references.
 
 ```html
 <!DOCTYPE html>
@@ -57,7 +57,7 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
   </html>
 ```
 
-**Step 5:** Now, add the `ListView` element and initiate the `Essential JS 2 ListView` control in the `index.html` by using following code
+**Step 5:** Now, add the `ListView` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 ListView** control in the `index.html` by using following code
 
 ```html
 <!DOCTYPE html>
@@ -88,13 +88,13 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
   </html>
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential JS 2 ListView** control.
+**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 ListView** control.
 
 ### Using CDN link for script and style reference
 
-**Step 1:** Create an app folder `myapp` for the Essential JS 2 JavaScript controls.
+**Step 1:** Create an app folder `myapp` for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
 
-**Step 2:** The Essential JS 2 control's global scripts and styles are already hosted in the below CDN link formats.
+**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 control's global scripts and styles are already hosted in the below CDN link formats.
 
 **Syntax:**
 > Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -106,7 +106,7 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 >
 > Styles: [`https://cdn.syncfusion.com/ej2/ej2-lists/styles/material.css`](https://cdn.syncfusion.com/ej2/ej2-lists/styles/material.css)
 
-**Step 3:** Create a HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `ListView` element and initiate the `Essential JS 2 List` control in the index.html by using following code.
+**Step 3:** Create a HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `ListView` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 List** control in the index.html by using following code.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -116,7 +116,7 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
         
 {% previewsample "page.domainurl/code-snippet/listview/es5-getting-started-cs1" %}
 
-**Step 4:** Now, run the `index.html` in web browser, it will render the `Essential JS 2 ListView` control.
+**Step 4:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 ListView** control.
 
 > Need to refer dependency control styles and scripts as like above example. We can also use [CRG](https://crg.syncfusion.com/) to generate combined control styles.
 

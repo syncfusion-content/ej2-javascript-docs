@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Syncfusion JavaScript (ES5) UI control and ASP.NET Web Forms in Visual Studio 2017
+# Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control and ASP.NET Web Forms in Visual Studio 2017
 
 ## Prerequisites
 
@@ -29,7 +29,7 @@ To get started with ASP.NET Web Forms application, ensure the following software
 
     ![aspnet web forms syncfusion project template](images/webforms-site.png)
 
-### Configure Syncfusion JavaScript (ES5) control in the Web Forms application
+### Configure Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) control in the Web Forms application
 
  1. Add the [`Syncfusion.EJ2.Javascript`](https://www.nuget.org/packages/Syncfusion.EJ2.Javascript/) NuGet package to the new application by using the NuGet Package Manager. Right-click the project and select **Manage NuGet Packages...**.
 
@@ -41,7 +41,7 @@ To get started with ASP.NET Web Forms application, ensure the following software
 
     The Syncfuion Javascript NuGet package will be included in the project after the installation process is completed.
 
- 3. Open `~/Site.master` file and add the required styles and script references of Syncfusion JavaScript controls to the `<head>` element.
+ 3. Open `~/Site.master` file and add the required styles and script references of Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to the `<head>` element.
 
     ```html
     <head>
@@ -59,7 +59,7 @@ To get started with ASP.NET Web Forms application, ensure the following software
     </head>
     ```
 
- 4. Open `~/Default.aspx` file and add the Syncfusion JavaScript control to the `<div>` element and intiate the Grid control inside the `<script>` element.
+ 4. Open `~/Default.aspx` file and add the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript control to the `<div>` element and intiate the Grid control inside the `<script>` element.
 
     ```html
     <div class="row">
@@ -86,6 +86,6 @@ To get started with ASP.NET Web Forms application, ensure the following software
     </div>
     ```
 
- 5. Run the application. The Syncfusion JavaScript Grid control will render in the web browser.
+ 5. Run the application. The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Grid control will render in the web browser.
 
     ![aspnet web forms grid control](images/webforms-grid.png)

@@ -157,7 +157,7 @@ In this below code, we have disabled resize for **Ship City** column.
 
 ## Resizing modes
 
-The Syncfusion Grid control provides a [ResizeSettingsModel](../../api/grid/resizeSettingsModel/#resizesettingsmodel) interface for configuring the resizing behavior of grid columns. The interface includes a property named [mode](../../api/grid/resizeSettings/#mode) which is of the type [ResizeMode](../../api/grid/resizeMode). The `ResizeMode` is an enum that determines the available resizing modes for the grid columns. There are two resizing modes available for grid columns in Grid:
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control provides a [ResizeSettingsModel](../../api/grid/resizeSettingsModel/#resizesettingsmodel) interface for configuring the resizing behavior of grid columns. The interface includes a property named [mode](../../api/grid/resizeSettings/#mode) which is of the type [ResizeMode](../../api/grid/resizeMode). The `ResizeMode` is an enum that determines the available resizing modes for the grid columns. There are two resizing modes available for grid columns in Grid:
 
 1. `Normal Mode`: This mode does not adjust the columns to fit the remaining space. When the sum of column width is less than the grid's width, empty space will be present to the right of the last column. When the sum of column width is greater than the grid's width, columns will overflow, and a horizontal scrollbar will appear.
 

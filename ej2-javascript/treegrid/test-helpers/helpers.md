@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 ---
 # Helpers in ##Platform_Name## Treegrid control
 
-Essential JS 2 components packages provide the testing helper APIs for testing the Essential JS 2 components. The following helper APIs are available for the Tree Grid component’s testing helpers in Essential JS 2.
+Essential<sup style="font-size:70%">&reg;</sup> JS 2 components packages provide the testing helper APIs for testing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 components. The following helper APIs are available for the Tree Grid component’s testing helpers in Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 |    Helper Methods          |               Description                            |
 |:--------------------:|---------------------|

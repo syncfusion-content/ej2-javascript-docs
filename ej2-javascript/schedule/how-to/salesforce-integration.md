@@ -23,7 +23,7 @@ Before getting started, make sure you have the following prerequisites need to b
 
 To begin the integration process, you need to configure Salesforce by following these steps.
 
-[Sign up](https://developer.salesforce.com/signup) with salesforce developer account, if you don’t have salesforce account, sign up for one to access the necessary tools and resources for integration.
+[Sign up](https://www.salesforce.com/form/developer-signup/) with salesforce developer account, if you don’t have salesforce account, sign up for one to access the necessary tools and resources for integration.
 
 [Log in](https://login.salesforce.com/) with salesforce account. 
 
@@ -83,7 +83,7 @@ sfdx org:create:scratch -f config/project-scratch-def.json
 
 ## Adding static resources 
 
-To integrate the Syncfusion scripts and styles as static resource files within Salesforce, follow these steps.  
+To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> scripts and styles as static resource files within Salesforce, follow these steps.  
  
 Use the following command to open the scratch project in the browser
 
@@ -97,7 +97,7 @@ In the Salesforce setup menu, search for `Static Resources` and click on **New**
 
 ![Salesforce Setup menu](../images/Salesforce-setup-menu.png)
 
-Load the Syncfusion scripts and styles as static files in a zip format, which you can obtain from the [CRG](https://crg.syncfusion.com/).
+Load the Syncfusion<sup style="font-size:70%">&reg;</sup> scripts and styles as static files in a zip format, which you can obtain from the [CRG](https://crg.syncfusion.com/).
 
 In the static resource tab, provide a name for the static resource files, upload the zip file, and change the cache control to `Public`. Click **Save** button to add the static resources to your Salesforce project.
 
@@ -111,7 +111,7 @@ In the Salesforce setup menu, search for `CSP Trusted Sites` and click New Trust
 
 ![Salesforce CSP trusted sites](../images/Salesforce-CSP-trusted-sites.png)
 
-Enter the trusted site name and URL. For example, if the Syncfusion static styles refer to https://fonts.googleapis.com, enter that URL as the trusted site URL.  
+Enter the trusted site name and URL. For example, if the Syncfusion<sup style="font-size:70%">&reg;</sup> static styles refer to https://fonts.googleapis.com, enter that URL as the trusted site URL.  
  
 Enable the following options to bypass the CSP issues and Click Save button to apply the changes. 
  
@@ -194,7 +194,7 @@ sfdx lightning:generate:component --type lwc -n scheduler -d force-app/main/defa
 </LightningComponentBundle> 
 ```
 
-3. Open the `scheduler.html` file located in `force-app/main/default/lwc/scheduler` and add an element with a class name to append the Syncfusion scheduler. Here's an example of the modified file.
+3. Open the `scheduler.html` file located in `force-app/main/default/lwc/scheduler` and add an element with a class name to append the Syncfusion<sup style="font-size:70%">&reg;</sup> scheduler. Here's an example of the modified file.
 
 ```html
 <template> 

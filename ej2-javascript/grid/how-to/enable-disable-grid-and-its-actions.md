@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Enable disable grid and its actions in ##Platform_Name## Grid control
 
-You can enable or disable the Syncfusion ##Platform_Name## Grid and its actions by applying or removing specific CSS styles. This functionality is particularly useful in scenarios where interactions need to be restricted. Follow the steps below to implement this feature.
+You can enable or disable the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid and its actions by applying or removing specific CSS styles. This functionality is particularly useful in scenarios where interactions need to be restricted. Follow the steps below to implement this feature.
 
 **Step 1**:
 

@@ -72,4 +72,4 @@ The accessibility compliance of the Chips control can be evaluated in the follow
 
 ## See Also
 
-* [Accessibility in Syncfusion ##Platform_Name## controls](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls](../common/accessibility)

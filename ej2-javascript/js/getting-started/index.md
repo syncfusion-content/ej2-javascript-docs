@@ -11,8 +11,8 @@ domainurl: ##DomainURL##
 
 # Index in ##Platform_Name## Getting started control
 
-This document illustrates how to build and run a simple Syncfusion JavaScript (ES5) UI control in the web applications.
+This document illustrates how to build and run a simple Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control in the web applications.
 
-* [Getting Started with Syncfusion JavaScript (ES5) UI control in a quickstart application](./quick-start)
-* [Compatibility with Syncfusion JavaScript Essential JS 1](./compatible-with-essential-js1)
-* [Getting Started with Syncfusion JavaScript (ES5) UI control and ASP.NET Web Forms in Visual Studio 2017](./webforms)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control in a quickstart application](./quick-start)
+* [Compatibility with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Essential<sup style="font-size:70%">&reg;</sup> JS 1](./compatible-with-essential-js1)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control and ASP.NET Web Forms in Visual Studio 2017](./webforms)

@@ -15,7 +15,7 @@ This topic shows the API equivalent of JS2 Scheduler control to be used, while m
 
 ## Properties
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | To change the display of days count in agenda view | **Property:** *daysInAgenda* <br/> <br/> `$("#Schedule").ejSchedule({`<br> `currentView: "Agenda",` <br>`daysInAgenda: 7` <br>`});` | **Property:** *agendaDaysCount* <br/><br/> `var scheduleObj = new ej.schedule.Schedule({`<br>`currentView: 'Agenda',`<br> `agendaDaysCount: 7`<br>`});`<br>`scheduleObj.appendTo('#Schedule');` |
 | Preventing deletion of appointment | **Property:** *allowDelete* <br/> <br/>  `$("#Schedule").ejSchedule({`<br>`allowDelete: false`<br>`});` | Not applicable |
@@ -68,7 +68,7 @@ This topic shows the API equivalent of JS2 Scheduler control to be used, while m
 
 ### Resources
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | To group the resources in scheduler layout |  **Property:** *resources* <br/><br/> `$("#Schedule").ejSchedule({`<br>`group: {`<br>`resources: ["Rooms"]`<br>`},`<br>`resources: [`<br>`{`<br>`field: "roomId",title: "Room",name: "Rooms", allowMultiple: false,`<br>`resourceSettings: {`<br> `dataSource: [`<br>`{ text: "ROOM", id: 2, color: "#56ca85"}],`<br>`text: "text", id: "id", color: "color"}`<br>`}],`<br>`});` | **Property:** *resources* <br/> <br/> `var scheduleObj = new ej.schedule.Schedule({`<br>`group: {`<br>`resources: ['Owners']`<br>`},`<br>`resources: [{`<br>`field: 'TaskId', title: 'Assignee',name: 'Owners', allowMultiple: true,`<br>`dataSource: [`<br>`{ text: 'Smith', id: 2, color: '#7fa900' }`<br>`],`<br>`textField: 'text', idField: 'id', colorField: 'color'}],`<br>`});`<br>`scheduleObj.appendTo('#Schedule');` |
 | Allowing multiple selection of resources in event window | **Property:** *allowMultiple* <br/> <br/> `$("#Schedule").ejSchedule({`<br>`group: {`<br>`resources: ["Rooms"]`<br>`},`<br>`resources: [`<br>`{`<br>`field: "roomId",title: "Room",name: "Rooms", allowMultiple: false,`<br>`resourceSettings: {`<br> `dataSource: [`<br>`{ text: "Room3", id: 3, groupId: 2, color: "#56ac88", start: "10", end: "15", workWeek: ["sunday","saturday"] }],`<br>`text: "text", id: "id", color: "color", groupId: "groupId", start: "start", end: "end", workWeek: "workWeek"}`<br>`}],`<br>`});`| **Property:** *allowMultiple* <br/><br/>  `var scheduleObj = new ej.schedule.Schedule({`<br>`group: {`<br> `resources: ['Projects', 'Categories']`<br>`},`<br>`resources: [`<br>`{`<br>`field: 'ProjectId', title: 'Choose Project', name: 'Projects',`<br>`dataSource: [`<br>`{ text: 'PROJECT 1', id: 2, color: '#56ca85' }`<br>`],`<br>`textField: 'text', idField: 'id', colorField: 'color'}, {`<br>`field: 'CategoryId', title: 'Category',name: 'Categories', allowMultiple: true,`<br>`dataSource: [`<br>`{ text: 'Testing', id: 2, color: '#7fa900' }],`<br>`textField: 'text', idField: 'id', colorField: 'color'}],`<br>`});`<br>`scheduleObj.appendTo('#Schedule');` |
@@ -76,7 +76,7 @@ This topic shows the API equivalent of JS2 Scheduler control to be used, while m
 
 ### Group
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Resources | **Property:** *resources* <br/> <br/> `$("#Schedule").ejSchedule({`<br>`group: {`<br>`resources: ["Rooms"]`<br>`},`<br>`resources: [`<br>`{`<br>`field: "roomId",title: "Room",name: "Rooms", allowMultiple: false,`<br>`resourceSettings: {`<br>`dataSource: [`<br>`{ text: "ROOM", id: 2, color: "#56ca85"}],`<br>`text: "text", id: "id", color: "color"}`<br>`}],`<br>`});` | **Property:** *resources* <br/><br/> `var scheduleObj = new ej.schedule.Schedule({`<br>`group: {`<br>`resources: ['Owners']`<br>`},`<br>`resources: [{`<br>`field: 'TaskId', title: 'Assignee',name: 'Owners', allowMultiple: true,`<br>`dataSource: [`<br>`{ text: 'Smith', id: 2, color: '#7fa900' }`<br>`],`<br>`textField: 'text', idField: 'id', colorField: 'color'}],`<br>`});`<br>`scheduleObj.appendTo('#Schedule');` |
 | Allow group editing | **Property:** *allowGroupEditing* <br/> <br/> `$("#Schedule").ejSchedule({`<br>`group: {`<br>`resources: ["Rooms"],`<br>`allowGroupEditing: true`<br>`},`<br>`resources: [`<br>`{`<br>`field: "roomId",title: "Room",name: "Rooms", allowMultiple: false,`<br>`resourceSettings: {`<br>`dataSource: [`<br>`{ text: "ROOM1", id: 1,color: "#f8a398" },`<br>`{ text: "ROOM2", id: 2, color: "#56ca85"}],`<br>`text: "text", id: "id", color: "color"}`<br>`}],`<br>`});`| **Property:** *allowGroupEdit* <br/><br/> `var scheduleObj = new ej.schedule.Schedule({`<br>`group: {`<br>`resources: ['Owners'],`<br>`allowGroupEdit: true`<br>`},`<br>`resources: [{`<br>`field: 'TaskId', title: 'Assignee',name: 'Owners', allowMultiple: true,`<br>`dataSource: [`<br>`{ text: 'Smith', id: 2, color: '#7fa900' }`<br>`],`<br>`textField: 'text', idField: 'id', colorField: 'color'}],`<br>`});`<br>`scheduleObj.appendTo('#Schedule');` |
@@ -87,13 +87,13 @@ This topic shows the API equivalent of JS2 Scheduler control to be used, while m
 
 ### Header Rows
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Adding custom rows in the header in timeline views | Not applicable | **Property:** *HeaderRows* <br/><br/> `var scheduleObj = new ej.schedule.Schedule({`<br> `headerRows: [`<br>`{ option: 'Month', template: '#month-template' },`<br>`{ option: 'Week', template: '#week-template' },`<br>`{ option: 'Date' }`<br>`],`<br>`views: [`<br>`{ option: 'TimelineMonth', interval: 12 }],`<br>`});`<br>`scheduleObj.appendTo('#Schedule');`|
 
 ### TimeScale
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Enabling time scale | **Property:** *enable* <br/> <br/> `$("#Schedule").ejSchedule({`<br>`timeScale:{`<br>`enable: true`<br>`}`<br>`});` | **Property:** *enable* <br/><br/> `var scheduleObj = new ej.schedule.Schedule({`<br>`timeScale:{`<br>`enable: true`<br>`}`<br>`});`<br>`scheduleObj.appendTo('#Schedule');` |
 | Setting major interval on time scale | **Property:** *majorSlot* <br/> <br/> `$("#Schedule").ejSchedule({`<br>`timeScale:{`<br>`enable: true,`<br>`majorSlot: 60`<br>`}`<br>`});` | **Property:** *interval* <br/><br/>  `var scheduleObj = new ej.schedule.Schedule({`<br>`enable: true,`<br>`interval: 60`<br>`}`<br>`});`<br>`scheduleObj.appendTo('#Schedule');` |
@@ -103,13 +103,13 @@ This topic shows the API equivalent of JS2 Scheduler control to be used, while m
 
 ### Quick info templates
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Template for quick popup | Not applicable | **Property:** *quickInfoTemplates* <br/><br/> `var scheduleObj = new ej.schedule.Schedule({`<br>`quickInfoTemplates: {`<br>`header: '#headerTemplate',`<br>`content:'#contentTemplate',`<br>`footer: '#footerTemplate'`<br>`}`<br>`});`<br>`scheduleObj.appendTo('#Schedule');` |
 
 ### Event settings
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Datasource for events | **Property:** *dataSource* <br/> <br/> `$("#Schedule").ejSchedule({`<br>`appointmentSettings: {`<br>`dataSource: Appoint,`<br>`id: "Id",`<br>`subject: "Subject",`<br>`startTime: "StartTime",`<br>`endTime: "EndTime",`<br>`description: "Description",`<br>`allDay: "AllDay",`<br>`recurrence: "Recurrence",`<br>`recurrenceRule: "RecurrenceRule"`<br>`}`<br>`});` | **Property:** *dataSource* <br/><br/> `var scheduleObj = new ej.schedule.Schedule({`<br><br> `eventSettings: { dataSource: data }`<br>`});`<br>`scheduleObj.appendTo('#Schedule');` |
 | Appointment fields | `$("#Schedule").ejSchedule({`<br>`appointmentSettings: {`<br>`id: "Id",`<br>`subject: "Subject",`<br>`startTime: "StartTime",`<br>`endTime: "EndTime",`<br>`description: "Description",`<br>`allDay: "AllDay",`<br>`recurrence: "Recurrence",`<br>`recurrenceRule: "RecurrenceRule"`<br>`}`<br>`});` | **Property:** *eventsSettings* <br/><br/>  `var scheduleObj = new ej.schedule.Schedule({`<br> `dataSource: data,`<br>`fields: {`<br>`id: 'id',`<br>`subject: { name: 'Subject', default: 'New title', title: 'New Event', validation: ValidationRules },`<br>`location: { name: 'Location' },`<br>`description: {name: 'Description' },`<br>`startTime: {name: 'StartTime' },`<br>`endTime: {name: 'EndTime' },`<br>`recurrenceID: {name: 'Recurrence' },`<br>`recurrenceRule : {name: 'Recurrence' },`<br>`recurrenceException: {name: 'EndTime' },`<br>`startTimezone: {name: 'StartTime' },`<br>`endTimezone: {name: 'EndTime' }`<br>`}`<br>`});`<br>`scheduleObj.appendTo('#Schedule');` |
@@ -121,7 +121,7 @@ This topic shows the API equivalent of JS2 Scheduler control to be used, while m
 
 ## Methods
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | To add appointments manually | **Method:** *saveAppointment()* <br/> <br/>`$('#Schedule').ejSchedule();`<br> `var data = {`<br> `Id: 1,`<br>`Subject: "Testing",`<br>`StartTime: new Date(2014, 4, 5, 10, 00),`<br>`EndTime: new Date(2014, 4, 5, 12, 00)};`<br> `var scheduleobj = $("#Schedule").data("ejSchedule");`<br>`scheduleobj.saveAppointment(data);`<br> | **Method:** *addEvent()* <br/><br/> `var scheduleobj= document.getElementById('schedule').ej2_instances[0];`<br>`scheduleObj.addEvent({` <br>`Id: 1,`<br>`Subject: "New Event",`<br>`StartTime: new Date(2014, 4, 5, 10, 00),`<br>`EndTime: new Date(2014, 4, 5, 12, 00)`<br>`});`<br> |
 | To add resources dynamically | **Method:** *addResource()* <br/><br/>`$("#Schedule").ejSchedule();`<br> `var data = { text: "Paul", id: 1, groupId: 3, color: "#cc99ff" };` <br> `var index = 0;` <br> `var scheduleobj = $("#Schedule").data("ejSchedule");` <br> `scheduleobj.addResource(data, "Owners", index);` | **Method:** *addResource()* <br/><br/> `var data = { text: "Paul", id: 1, groupId: 3, color: "#cc99ff" };` <br> `var index = 0;` <br> `var scheduleobj= document.getElementById('schedule').ej2_instances[0];` <br> `scheduleobj.addResource(data, "Owners", index));` |
@@ -157,7 +157,7 @@ This topic shows the API equivalent of JS2 Scheduler control to be used, while m
 
 ## Events
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Fires on the beginning of each scheduler action | **Event:** *actionBegin* <br/><br/> `$("#Schedule").ejSchedule({` <br> `actionBegin: function OnActionBegin (args){}` <br> `});`| **Event:** *actionBegin* <br><br> `var schObj = new ej.schedule.Schedule({` <br> `actionBegin: function onActionBegin(args) {}`<br> `});` |
 | Fires on the completion of each scheduler action | **Event:** *actionComplete* <br/><br/>  `$("#Schedule").ejSchedule({` <br> `actionComplete: function onActionComplete (args){}` <br> `});`<br>  | **Event:** *actionComplete* <br/><br/> `var schObj = new ej.schedule.Schedule({` <br>`actionComplete: function onActionComplete (args) {}` <br> `});` |

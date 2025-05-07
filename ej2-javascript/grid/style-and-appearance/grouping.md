@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Grouping in ##Platform_Name## Grid control
 
-You can customize the appearance of grouping elements in the Syncfusion ##Platform_Name## Grid control using CSS. Here are examples of how to customize the group header, group expand/collapse icons, group caption row, and grouping indent cell.
+You can customize the appearance of grouping elements in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control using CSS. Here are examples of how to customize the group header, group expand/collapse icons, group caption row, and grouping indent cell.
 
 ## Customizing the group header
 
@@ -40,7 +40,7 @@ To customize the appearance of the group expand/collapse icons in the grid, you 
 }
 ```
 
-In this example, the **.e-icon-gdownarrow** and **.e-icon-grightarrow** classes target the expand and collapse icons, respectively. You can modify the `content` property to change the icon displayed. You can use the available Syncfusion icons based on your theme.
+In this example, the **.e-icon-gdownarrow** and **.e-icon-grightarrow** classes target the expand and collapse icons, respectively. You can modify the `content` property to change the icon displayed. You can use the available Syncfusion<sup style="font-size:70%">&reg;</sup> icons based on your theme.
 
 ![Group expand or collapse icons](../images/group-expand-or-collapse-icons.png)
 

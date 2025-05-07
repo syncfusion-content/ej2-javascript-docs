@@ -10,9 +10,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# WebMethodAdaptor in Syncfusion ##Platform_Name## Grid Control
+# WebMethodAdaptor in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid Control
 
-The WebMethodAdaptor in Syncfusion ##Platform_Name## Grid facilitates data binding from remote services using web methods. This powerful feature enables efficient communication between the client-side application and the server. The WebMethodAdaptor, like the URL adaptor, sends query parameters encapsulated within an object named **value**. Within this **value** object, various datamanager properties such as **requiresCounts**, **skip**, **take**, **sorted**, and **where** queries are included.
+The WebMethodAdaptor in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid facilitates data binding from remote services using web methods. This powerful feature enables efficient communication between the client-side application and the server. The WebMethodAdaptor, like the URL adaptor, sends query parameters encapsulated within an object named **value**. Within this **value** object, various datamanager properties such as **requiresCounts**, **skip**, **take**, **sorted**, and **where** queries are included.
 
 ![Webmethod Adaptor](../images/web-method-adaptor-value.png)
 
@@ -184,9 +184,9 @@ namespace WebMethodAdaptor.Controllers
 
 > The **GetOrderData** method retrieves sample order data. You can replace it with your custom logic to fetch data from a database or any other source.
 
-## Connecting syncfusion grid to an api service
+## Connecting syncfusion<sup style="font-size:70%">&reg;</sup> grid to an api service
 
-To integrate the Syncfusion Grid control into your ##Platform_Name## and ASP.NET Core project using Visual Studio, follow these steps:
+To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control into your ##Platform_Name## and ASP.NET Core project using Visual Studio, follow these steps:
 
 **Step 1:** Create a package.json file:
 
@@ -264,9 +264,9 @@ module.exports = {
 
 **Step 6:** Create a new directory named `src` in the project root for the client code.
 
-**Step 7:** Install Syncfusion Packages
+**Step 7:** Install Syncfusion<sup style="font-size:70%">&reg;</sup> Packages
 
-Open your terminal in the project’s root folder and install the required Syncfusion packages using npm:
+Open your terminal in the project’s root folder and install the required Syncfusion<sup style="font-size:70%">&reg;</sup> packages using npm:
 
 ```bash
 npm install @syncfusion/ej2-grids --save
@@ -364,7 +364,7 @@ Run the project in Visual Studio.
 
 The `wwwroot/index.html` file is served at **https://localhost:xxxx**.
 
-With these steps, you have integrated the Syncfusion Grid control with your ASP.NET Core project and set up the necessary client-side configuration using Webpack and ##Platform_Name##. This will allow the Syncfusion Grid to fetch data from your API and display it accordingly.
+With these steps, you have integrated the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control with your ASP.NET Core project and set up the necessary client-side configuration using Webpack and ##Platform_Name##. This will allow the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid to fetch data from your API and display it accordingly.
 
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -526,7 +526,7 @@ namespace WebMethodAdaptor.Controllers
 
 > The **GetOrderData** method retrieves sample order data. You can replace it with your custom logic to fetch data from a database or any other source.
 
-## Connecting syncfusion grid to an api service
+## Connecting syncfusion<sup style="font-size:70%">&reg;</sup> grid to an api service
 
 **Step 1:** Create wwwroot folder
 
@@ -538,7 +538,7 @@ Inside the wwwroot folder, create js and css folders to hold script and CSS file
 
 **Step 3:** Create index.html File
 
-Create an `index.html` file under the `wwwroot` folder and add the necessary HTML structure along with CSS and JavaScript links to include Syncfusion Grid dependencies.
+Create an `index.html` file under the `wwwroot` folder and add the necessary HTML structure along with CSS and JavaScript links to include Syncfusion<sup style="font-size:70%">&reg;</sup> Grid dependencies.
 
 ```html
 <!DOCTYPE html>
@@ -578,7 +578,7 @@ Create an `index.html` file under the `wwwroot` folder and add the necessary HTM
 
 **Step 4:** Create JavaScript File
 
-Create a index.js file under the `wwwroot/js` folder and add the JavaScript code to initialize the Syncfusion Grid with data from the API service.
+Create a index.js file under the `wwwroot/js` folder and add the JavaScript code to initialize the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid with data from the API service.
 
 ```js
 var data = new ej.data.DataManager({
@@ -601,11 +601,11 @@ grid.appendTo('#Grid');
 
 **Step 5:** Run the Project
 
-Now, run the project to see the Syncfusion Grid connected to the API service in action.
+Now, run the project to see the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid connected to the API service in action.
 
 {% endif %}
 
-> * The Syncfusion Grid control provides built-in support for handling various data operations such as searching, sorting, filtering, aggregate and paging on the server-side. These operations can be handled using methods such as [PerformSearching](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformSearching__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_EJ2_Base_SearchFilter__), [PerformFiltering](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformFiltering__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_EJ2_Base_WhereFilter__System_String_), [PerformSorting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformSorting__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_EJ2_Base_Sort__), [PerformTake](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformTake__1_System_Linq_IQueryable___0__System_Int32_) and [PerformSkip](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformSkip__1_System_Linq_IQueryable___0__System_Int32_) available in the `Syncfusion.EJ2.AspNet.Core` package. Let’s explore how to manage these data operations using the `WebMethodAdaptor`.
+> * The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control provides built-in support for handling various data operations such as searching, sorting, filtering, aggregate and paging on the server-side. These operations can be handled using methods such as [PerformSearching](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformSearching__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_EJ2_Base_SearchFilter__), [PerformFiltering](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformFiltering__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_EJ2_Base_WhereFilter__System_String_), [PerformSorting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformSorting__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_EJ2_Base_Sort__), [PerformTake](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformTake__1_System_Linq_IQueryable___0__System_Int32_) and [PerformSkip](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html#Syncfusion_EJ2_Base_QueryableOperation_PerformSkip__1_System_Linq_IQueryable___0__System_Int32_) available in the `Syncfusion.EJ2.AspNet.Core` package. Let’s explore how to manage these data operations using the `WebMethodAdaptor`.
 > * In an API service project, add `Syncfusion.EJ2.AspNet.Core` by opening the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
 > * To access [DataManagerRequest](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.DataManagerRequest.html) and [QueryableOperation](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Base.QueryableOperation.html), import `Syncfusion.EJ2.Base` in `GridController.cs` file.
 > * In the WebMethodAdaptor configuration, the properties of the DataManager object are encapsulated within an object named **value**. To access the DataManager properties, a dedicated class is created, representing the **value** object.
@@ -993,7 +993,7 @@ grid.appendTo('#Grid');
 
 ## Handling CRUD operations
 
-The Syncfusion ##Platform_Name## Grid Control seamlessly integrates CRUD (Create, Read, Update, Delete) operations with server-side controller actions through specific properties: [insertUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_InsertUrl), [removeUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_RemoveUrl), [updateUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_UpdateUrl), [crudUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_CrudUrl), and [batchUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_BatchUrl). These properties enable the grid to communicate with the data service for every grid action, facilitating server-side operations.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid Control seamlessly integrates CRUD (Create, Read, Update, Delete) operations with server-side controller actions through specific properties: [insertUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_InsertUrl), [removeUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_RemoveUrl), [updateUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_UpdateUrl), [crudUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_CrudUrl), and [batchUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_BatchUrl). These properties enable the grid to communicate with the data service for every grid action, facilitating server-side operations.
 
 **CRUD Operations Mapping**
 

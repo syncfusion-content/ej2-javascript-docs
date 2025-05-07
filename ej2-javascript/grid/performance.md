@@ -39,7 +39,7 @@ When integrating image or template elements into a column, it's recommended to u
 
 ## How to improve loading performance by referring individual script and CSS
 
-To improve the performance of Syncfusion Grid control during the initial render as well as certain actions, suggested you to download the specific control scripts using CRG (Custom Resource Generator) to speed up the project. By default, the ej2.min.js script file contains all the Syncfusion control scripts. So, it will take some time to load the scripts to the project. Using [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator), you can select the controls which you want to use, and the modules for those controls, then you can download the scripts and CSS for the selected controls and use them as per your need.
+To improve the performance of Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control during the initial render as well as certain actions, suggested you to download the specific control scripts using CRG (Custom Resource Generator) to speed up the project. By default, the ej2.min.js script file contains all the Syncfusion<sup style="font-size:70%">&reg;</sup> control scripts. So, it will take some time to load the scripts to the project. Using [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator), you can select the controls which you want to use, and the modules for those controls, then you can download the scripts and CSS for the selected controls and use them as per your need.
 
 [CRG website link](https://crg.syncfusion.com/) 
 

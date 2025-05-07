@@ -15,15 +15,15 @@ domainurl: ##DomainURL##
 
 [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties), also known as custom properties, are entities defined by CSS authors that contain specific values that can be reused throughout a CSS file. They are identified by their name, which must begin with two hyphens (--) followed by an identifier. These variables can be assigned any valid CSS value, such as colors, lengths, or fonts. To retrieve the value of a CSS variable, the var() function is used.
 
-## Material 3 - Syncfusion ##Platform_Name## Controls
+## Material 3 - Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Controls
 
-Syncfusion has introduced the Material 3 theme across all EJ2 Controls, featuring both `light` and `dark` variants. This theme utilizes `CSS variables` to allow easy customization of control colors in CSS format. With this implementation, users can seamlessly switch between light and dark color schemes, providing a flexible solution to meet their preferences and application needs.
+Syncfusion<sup style="font-size:70%">&reg;</sup> has introduced the Material 3 theme across all EJ2 Controls, featuring both `light` and `dark` variants. This theme utilizes `CSS variables` to allow easy customization of control colors in CSS format. With this implementation, users can seamlessly switch between light and dark color schemes, providing a flexible solution to meet their preferences and application needs.
 
-> Kindly note that in the Material 3 theme, Syncfusion utilizes CSS variables with rgb() values for color variables. The use of hex values in this context may lead to improper functionality. For example, in previous versions of the Material theme or other themes, the primary color variable was defined as follows: $primary: #6200ee;. However, in the Material 3 theme, the primary color variable is defined as follows: --color-sf-primary: 98, 0, 238;.
+> Kindly note that in the Material 3 theme, Syncfusion<sup style="font-size:70%">&reg;</sup> utilizes CSS variables with rgb() values for color variables. The use of hex values in this context may lead to improper functionality. For example, in previous versions of the Material theme or other themes, the primary color variable was defined as follows: $primary: #6200ee;. However, in the Material 3 theme, the primary color variable is defined as follows: --color-sf-primary: 98, 0, 238;.
 
-### How does Syncfusion Material 3 theme utilize CSS Variables?
+### How does Syncfusion<sup style="font-size:70%">&reg;</sup> Material 3 theme utilize CSS Variables?
 
-Syncfusion's Material 3 theme incorporates support for CSS variables, utilizing rgb() values for customizing colors. For more information you can refer this [documentation](./theme#syncfusion-material-3-theme) for color variables of material 3 theme.
+Syncfusion's<sup style="font-size:70%">&reg;</sup> Material 3 theme incorporates support for CSS variables, utilizing rgb() values for customizing colors. For more information you can refer this [documentation](./theme#syncfusion-material-3-theme) for color variables of material 3 theme.
 
 ```CSS
 :root {
@@ -47,7 +47,7 @@ Syncfusion's Material 3 theme incorporates support for CSS variables, utilizing 
 ```
 ### How to get the Material 3 theme?
 
-To access the Material 3 theme provided by Syncfusion, you have two primary options,
+To access the Material 3 theme provided by Syncfusion<sup style="font-size:70%">&reg;</sup>, you have two primary options,
 
 * Package
 * CDN links
@@ -131,11 +131,11 @@ Here you can find the example for Material 3 customization using JavaScript.
 
 ![customized primary value](images/material3-customize.PNG)
 
-With this CSS variable support, you can effortlessly customize the color variable values for Syncfusion JavaScript controls.
+With this CSS variable support, you can effortlessly customize the color variable values for Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls.
 
 ### Material 3 Light Theme
 
-Syncfusion has implemented the Material 3 theme, offering both Light and Dark variants. In the Material 3 light theme, there are distinct class variables for both light and dark modes, providing flexibility for seamless switching between the two modes within your application.
+Syncfusion<sup style="font-size:70%">&reg;</sup> has implemented the Material 3 theme, offering both Light and Dark variants. In the Material 3 light theme, there are distinct class variables for both light and dark modes, providing flexibility for seamless switching between the two modes within your application.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -174,4 +174,4 @@ With CSS variable support, transitioning between light and dark theme modes has 
 
 The ThemeStudio application now includes seamless integration with the Material 3 theme, offering a comprehensive solution for customization requirements. This enhancement enables users to effortlessly customize and personalize their themes.
 
-Access the Syncfusion ThemeStudio application, featuring the Material 3 theme, via the following link: [Link to Syncfusion ThemeStudio with Material 3 Theme](https://ej2.syncfusion.com/themestudio/?theme=material3)
+Access the Syncfusion<sup style="font-size:70%">&reg;</sup> ThemeStudio application, featuring the Material 3 theme, via the following link: [Link to Syncfusion<sup style="font-size:70%">&reg;</sup> ThemeStudio with Material 3 Theme](https://ej2.syncfusion.com/themestudio/?theme=material3)

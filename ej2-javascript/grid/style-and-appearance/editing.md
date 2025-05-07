@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Editing in ##Platform_Name## Grid control
 
-You can customize the appearance of editing-related elements in the Syncfusion ##Platform_Name## Grid control using CSS. Below are examples of how to customize various editing-related elements.
+You can customize the appearance of editing-related elements in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control using CSS. Below are examples of how to customize various editing-related elements.
 
 ## Customizing the edited and added row element
 

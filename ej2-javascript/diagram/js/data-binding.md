@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Data binding in ##Platform_Name## Diagram control
 
-Its essential for binding external data to the diagram, enabling dynamic creation of nodes and connectors based on the provided data. Here's a detailed explanation of the key properties and their usage:
+Its Essential<sup style="font-size:70%">&reg;</sup> for binding external data to the diagram, enabling dynamic creation of nodes and connectors based on the provided data. Here's a detailed explanation of the key properties and their usage:
 
 ## DataSource settings
 

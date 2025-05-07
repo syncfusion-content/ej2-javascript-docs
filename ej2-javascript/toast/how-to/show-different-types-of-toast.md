@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Show different types of toast in ##Platform_Name## Toast control
 
-The Essential JS 2 toast has the following predefined styles that can be defined using the [cssClass](../../api/toast/#cssclass) property for achieving different types of toast:
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 toast has the following predefined styles that can be defined using the [cssClass](../../api/toast/#cssclass) property for achieving different types of toast:
 
 | Class | Description |
 | -------- | -------- |

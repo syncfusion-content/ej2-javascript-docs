@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Uploader control
 
-This article describes the API migration process of File Upload component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of File Upload component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Accessibility
 
@@ -22,10 +22,10 @@ This article describes the API migration process of File Upload component from E
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -76,10 +76,10 @@ uploader.appendTo('#ej2_Uploader')
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -174,10 +174,10 @@ clearing: function() {}
 <b>Behavior </b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -446,10 +446,10 @@ function onFileSelect() {}
 <b>Behavior </b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -711,10 +711,10 @@ Not Applicable
 <b>Behavior </b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -950,10 +950,10 @@ function onChunkSuccess () {}
 <b>Behavior </b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -1031,10 +1031,10 @@ function onRemoveFailure () {}
 <b>Behavior </b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -1070,10 +1070,10 @@ Customize button text
 <b>Behavior </b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -1117,10 +1117,10 @@ var uploader =new ej.inputs.Uploader({<br/>
 <b>Behavior </b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>

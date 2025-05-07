@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Right-To-Left support in Syncfusion JavaScript Controls
+# Right-To-Left support in Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Controls
 
 Right-to-Left (RTL) support allows applications to effectively communicate with users who use languages that are written from right to left, such as Arabic, Hebrew, etc.
 
-Syncfusion JavaScript (ES5) controls support for right-to-left (RTL) by setting the [enableRtl](https://ej2.syncfusion.com/documentation/api/base/staticFunctions/#enablertl) property to `true`. This adds the class name `e-rtl` to the control element and renders all Syncfusion JavaScript controls in a right-to-left direction.
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) controls support for right-to-left (RTL) by setting the [enableRtl](https://ej2.syncfusion.com/documentation/api/base/staticFunctions/#enablertl) property to `true`. This adds the class name `e-rtl` to the control element and renders all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls in a right-to-left direction.
 
 ## Enable RTL for all controls
 

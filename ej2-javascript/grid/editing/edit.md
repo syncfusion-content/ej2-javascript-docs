@@ -201,7 +201,7 @@ The following example that demonstrates how to customize the delete confirmation
 
 ## Update boolean column value with a single click   
 
-The Syncfusion Grid allows you to update a boolean column value with a single click in the normal mode of editing. This feature streamlines the process of toggling boolean values within the grid, enhancing interaction and efficiency. This can be achieved through the use of the column template feature.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to update a boolean column value with a single click in the normal mode of editing. This feature streamlines the process of toggling boolean values within the grid, enhancing interaction and efficiency. This can be achieved through the use of the column template feature.
 
 In the following sample, the `CheckBox` control is rendered as a template in the **Verified** column to make it editable with a single click.
 
@@ -234,7 +234,7 @@ In the following sample, the `CheckBox` control is rendered as a template in the
 
 ## Edit enum column 
 
-The Syncfusion Grid provides a feature that allows you to edit enum type data in a grid column. This is particularly useful when you need to edit enumerated list data efficiently.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid provides a feature that allows you to edit enum type data in a grid column. This is particularly useful when you need to edit enumerated list data efficiently.
 
 In the following example, the `DropDownList` control is rendered within the cell edit template for the Employee Feedback column using edit property. 
 
@@ -300,7 +300,7 @@ In the following sample, the input element is rendered in the edit template of t
 
 ## Edit foreign key column 
 
-The Syncfusion Grid offers a powerful editing feature for foreign key columns, enhancing the default rendering of the DropDownList control during editing. This flexibility is particularly useful when you need to customize the editor for foreign key columns. By default, the Syncfusion Grid renders the DropDownList control as the editor for foreign key columns during editing. However, you can enhance and customize this behavior by leveraging the cell edit template  for the column using [edit](../../api/grid/column/#edit) property . The [edit](../../api/grid/column/#edit) property allows you to specify a cell edit template that serves as an editor for a particular column.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid offers a powerful editing feature for foreign key columns, enhancing the default rendering of the DropDownList control during editing. This flexibility is particularly useful when you need to customize the editor for foreign key columns. By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid renders the DropDownList control as the editor for foreign key columns during editing. However, you can enhance and customize this behavior by leveraging the cell edit template  for the column using [edit](../../api/grid/column/#edit) property . The [edit](../../api/grid/column/#edit) property allows you to specify a cell edit template that serves as an editor for a particular column.
 
 In the following code example, the Employee Name is a foreign key column. When editing, the ComboBox control is rendered instead of DropDownList.
 
@@ -331,9 +331,9 @@ In the following code example, the Employee Name is a foreign key column. When e
 {% previewsample "page.domainurl/code-snippet/grid/edit-foreignKey-column" %}
 {% endif %}
 
-## Prevent adding duplicate rows in Syncfusion ##Platform_Name## Grid with custom validation
+## Prevent adding duplicate rows in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid with custom validation
 
-The Syncfusion ##Platform_Name## Grid allows you to enforce constraints to prevent duplicate rows by customizing the validation logic within the Grid setup. This ensures data integrity by restricting duplicate entries in the **OrderID** column.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid allows you to enforce constraints to prevent duplicate rows by customizing the validation logic within the Grid setup. This ensures data integrity by restricting duplicate entries in the **OrderID** column.
 
 To prevent adding duplicate rows in the Grid, follow these steps:
 
@@ -374,11 +374,11 @@ For server-side validation to prevent adding duplicate rows, you can refer to th
 
 ## How to perform CRUD action externally 
 
-Performing CRUD (Create, Read, Update, Delete) actions externally in the Syncfusion Grid allows you to manipulate grid data outside the grid itself. This can be useful in scenarios where you want to manage data operations programmatically.
+Performing CRUD (Create, Read, Update, Delete) actions externally in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to manipulate grid data outside the grid itself. This can be useful in scenarios where you want to manage data operations programmatically.
 
 ### Using separate toolbar 
 
-The Syncfusion Grid enables external CRUD operations, allowing you to efficiently manage data manipulation within the grid. This capability is particularly useful when you need to manage data operations using a separate toolbar.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid enables external CRUD operations, allowing you to efficiently manage data manipulation within the grid. This capability is particularly useful when you need to manage data operations using a separate toolbar.
 
 To perform CRUD operations externally, the following methods are available:
 
@@ -388,7 +388,7 @@ To perform CRUD operations externally, the following methods are available:
 [endEdit](../../api/grid/#endedit) - If the grid is in editable state, then you can save a record by invoking this method.
 [closeEdit](../../api/grid/#closeedit) - To cancel the edited state.
 
-The following example demonstrates the integration of the Syncfusion Grid with a separate toolbar for external CRUD operations. The toolbar contains buttons for Add, Edit, Delete, Update, and Cancel.
+The following example demonstrates the integration of the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid with a separate toolbar for external CRUD operations. The toolbar contains buttons for Add, Edit, Delete, Update, and Cancel.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -419,9 +419,9 @@ The following example demonstrates the integration of the Syncfusion Grid with a
 
 ### Using external form 
 
-Performing the edit operation in a custom external form in the Syncfusion Grid is a valuable feature when you need to customize the edit operation within a separate form rather than the default in-grid editing. 
+Performing the edit operation in a custom external form in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid is a valuable feature when you need to customize the edit operation within a separate form rather than the default in-grid editing. 
 
-To enable the use of an external form for editing in Syncfusion Grid, you can make use of the [rowSelected](../../api/grid/#rowselected) event. This event specifies whether the edit operation should be triggered when a row is selected.
+To enable the use of an external form for editing in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can make use of the [rowSelected](../../api/grid/#rowselected) event. This event specifies whether the edit operation should be triggered when a row is selected.
 
 In the following example, it demonstrates how to edit the form using an external form by utilizing the `rowSelected` event.
 

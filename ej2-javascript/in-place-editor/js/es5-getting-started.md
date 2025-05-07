@@ -11,20 +11,20 @@ domainurl: ##DomainURL##
 
 # Es5 getting started in ##Platform_Name## In place editor control
 
-The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in the latest web browsers.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in the latest web browsers.
 
 ## Control Initialization
 
-The Essential JS 2 JavaScript controls can be initialized by using either of the following ways.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using either of the following ways.
 
 * Using local script and style references in a HTML page.
 * Using CDN link for the script and style reference.
 
 ### Using local script and style references in an HTML page
 
-**Step 1:** Create an app folder `myapp` for Essential JS 2 JavaScript controls.
+**Step 1:** Create an app folder `myapp` for Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+**Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
 **Syntax:**
 > Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -39,7 +39,7 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 
 **Step 3:** Create a folder `myapp/resources` and copy/paste the global scripts and styles from the above installed location to `myapp/resources` location.
 
-**Step 4:** Create an HTML page (index.html) in `myapp` location and add the Essentials JS 2 script and style references.
+**Step 4:** Create an HTML page (index.html) in `myapp` location and add the Essential<sup style="font-size:70%">&reg;</sup> JS 2 script and style references.
 
 ```html
 <!DOCTYPE html>
@@ -57,7 +57,7 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
   </html>
 ```
 
-**Step 5:** Now, add the `In-place Editor` element and initiate the `Essential JS 2 In-place Editor` control in the `index.html` by using following code
+**Step 5:** Now, add the `In-place Editor` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 In-place Editor** control in the `index.html` by using following code
 
 ```html
 <!DOCTYPE html>
@@ -88,13 +88,13 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
   </html>
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential JS 2 In-place Editor** control.
+**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 In-place Editor** control.
 
 ### Using CDN link for the script and style reference
 
-**Step 1:** Create an app folder `myapp` for the Essential JS 2 JavaScript controls.
+**Step 1:** Create an app folder `myapp` for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
 
-**Step 2:** The Essential JS 2 control's global scripts and styles are already hosted in the following CDN link formats.
+**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 control's global scripts and styles are already hosted in the following CDN link formats.
 
 **Syntax:**
 > Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -106,13 +106,13 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 >
 > Styles: [`http://cdn.syncfusion.com/ej2/ej2-inplace-editor/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-inplace-editor/styles/material.css)
 
-**Step 3:** Create an HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `In-place Editor` element and initiate the `Essential JS 2 In-place Editor` control in the index.html by using the following code.
+**Step 3:** Create an HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `In-place Editor` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 In-place Editor** control in the index.html by using the following code.
 
-**Step 4:** Now, run the `index.html` in web browser, it will render the `Essential JS 2 In-place Editor` control.
+**Step 4:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 In-place Editor** control.
 
 ## Configuring DropDownList
 
-You can render the Essential JS 2 DropDownList by changing the [`type`](../api/inplace-editor/inputType/) property as [`DropDownList`](../api/drop-down-list) and configure its properties and methods using the `model` property.
+You can render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 DropDownList by changing the [`type`](../api/inplace-editor/inputType/) property as [`DropDownList`](../api/drop-down-list) and configure its properties and methods using the `model` property.
 
 In the following sample, [`type`](../api/inplace-editor/inputType/) and model values are configured to render the [`DropDownList`](../api/drop-down-list) control.
 
@@ -187,7 +187,7 @@ In the following sample, [`type`](../api/inplace-editor/inputType/) and model
 
 ## Integrate DatePicker
 
-You can render the Essential JS2 [DatePicker](../api/datepicker) by changing the [`type`](../api/inplace-editor/inputType/) property as [`Date`](../api/inplace-editor/inputType/)  and also configure its properties and methods using the [`model`](../api/inplace-editor/#model) property.
+You can render the Essential<sup style="font-size:70%">&reg;</sup> JS2 [DatePicker](../api/datepicker) by changing the [`type`](../api/inplace-editor/inputType/) property as [`Date`](../api/inplace-editor/inputType/)  and also configure its properties and methods using the [`model`](../api/inplace-editor/#model) property.
 
 In the following sample, [`type`](../api/inplace-editor/inputType/) and [`model`](../api/inplace-editor/#model) values are configured to render the [DatePicker](../api/datepicker) control.
 

@@ -10,15 +10,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# RemoteSaveAdaptor in Syncfusion ##Platform_Name## Grid Control
+# RemoteSaveAdaptor in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid Control
 
-The RemoteSaveAdaptor in Syncfusion Angular Grid Component allows you to perform grid actions such as sorting, filtering, searching and paging primarily on the client-side while handling CRUD operations, such as updating, inserting, and removing data, on the server-side for data persistence. This approach optimizes your experience by minimizing unnecessary server interactions.
+The RemoteSaveAdaptor in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid Component allows you to perform grid actions such as sorting, filtering, searching and paging primarily on the client-side while handling CRUD operations, such as updating, inserting, and removing data, on the server-side for data persistence. This approach optimizes your experience by minimizing unnecessary server interactions.
 
 Ensure your server-side implementation in ASP.NET Core handles CRUD operations. Here is an example of how you can set up your ASP.NET Core controller to handle these operations:
 
 **Server-Side Implementation**
 
-To configure a server with Syncfusion Angular Grid, you need to follow the below steps:
+To configure a server with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid, you need to follow the below steps:
 
 **Step 1:** Set Up Your Development Environment
 
@@ -275,9 +275,9 @@ After running the application, you can verify that the server-side API controlle
 
 {% if page.publishingplatform == "typescript" %}
 
-**Connecting syncfusion grid to an api service**
+**Connecting syncfusion<sup style="font-size:70%">&reg;</sup> grid to an api service**
 
-To integrate the Syncfusion Grid control into your TypeScript and ASP.NET Core project using Visual Studio, follow these steps:
+To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control into your TypeScript and ASP.NET Core project using Visual Studio, follow these steps:
 
 **Step 1:** Create a package.json file:
 
@@ -355,9 +355,9 @@ module.exports = {
 
 **Step 6:** Create a new directory named `src` in the project root for the client code.
 
-**Step 7:** Install Syncfusion Packages
+**Step 7:** Install Syncfusion<sup style="font-size:70%">&reg;</sup> Packages
 
-Open your terminal in the project’s root folder and install the required Syncfusion packages using npm:
+Open your terminal in the project’s root folder and install the required Syncfusion<sup style="font-size:70%">&reg;</sup> packages using npm:
 
 ```bash
 npm install @syncfusion/ej2-grids --save
@@ -405,7 +405,7 @@ npm install @syncfusion/ej2-data --save
 
 In Solution Explorer, right-click the project node and select Manage NuGet Packages. In the Browse tab, search for [Microsoft.TypeScript.MSBuild](https://www.nuget.org/packages/Microsoft.TypeScript.MSBuild/) and then select Install on the right to install the package.
 
-**Step 10:** In this step, create a new TypeScript file (src/index.ts) and add the necessary code to set up and configure the Syncfusion Grid with `RemoteSaveAdaptor`. The Syncfusion Grid will fetch data from a remote API and support various features such as paging, sorting, filtering, and CRUD operations.
+**Step 10:** In this step, create a new TypeScript file (src/index.ts) and add the necessary code to set up and configure the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid with `RemoteSaveAdaptor`. The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid will fetch data from a remote API and support various features such as paging, sorting, filtering, and CRUD operations.
 
 ***CRUD Operations Mapping:*** CRUD operations within the grid can be mapped to server-side controller actions using specific properties:
 
@@ -496,13 +496,13 @@ Run the project in Visual Studio.
 
 The `wwwroot/index.html` file is served at **https://localhost:xxxx**.
 
-With these steps, you have integrated the Syncfusion Grid control with your ASP.NET Core project and set up the necessary client-side configuration using Webpack and TypeScript. This will allow the Syncfusion Grid to fetch data from your API and display it accordingly.
+With these steps, you have integrated the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control with your ASP.NET Core project and set up the necessary client-side configuration using Webpack and TypeScript. This will allow the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid to fetch data from your API and display it accordingly.
 
 > You can find the complete sample for the RemoteSaveAdaptor in [GitHub](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-typescript-data-grid) repository.
 
 {% elsif page.publishingplatform == "javascript" %}
 
-**Connecting syncfusion grid to an api service**
+**Connecting syncfusion<sup style="font-size:70%">&reg;</sup> grid to an api service**
 
 **Step 1:** Create wwwroot folder
 
@@ -514,7 +514,7 @@ Inside the wwwroot folder, create js and css folders to hold script and CSS file
 
 **Step 3:** Create index.html File
 
-Create an `index.html` file under the `wwwroot` folder and add the necessary HTML structure along with CSS and JavaScript links to include Syncfusion Grid dependencies.
+Create an `index.html` file under the `wwwroot` folder and add the necessary HTML structure along with CSS and JavaScript links to include Syncfusion<sup style="font-size:70%">&reg;</sup> Grid dependencies.
 
 ```html
 <!DOCTYPE html>
@@ -554,7 +554,7 @@ Create an `index.html` file under the `wwwroot` folder and add the necessary HTM
 
 **Step 4:** Create JavaScript File
 
-In this step, you will create a new JavaScript file (js/index.js) and add the necessary code to set up and configure the Syncfusion Grid with `RemoteSaveAdaptor`. The Syncfusion Grid will fetch data from a remote API and support various features such as paging, sorting, filtering, and CRUD operations.
+In this step, you will create a new JavaScript file (js/index.js) and add the necessary code to set up and configure the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid with `RemoteSaveAdaptor`. The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid will fetch data from a remote API and support various features such as paging, sorting, filtering, and CRUD operations.
 
 ***CRUD Operations Mapping:*** CRUD operations within the grid can be mapped to server-side controller actions using specific properties:
 
@@ -611,7 +611,7 @@ function createGrid() {
 
 **Step 5:** Run the Project
 
-Now, run the project to see the Syncfusion Grid connected to the API service in action.
+Now, run the project to see the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid connected to the API service in action.
 
 > You can find the complete sample for the RemoteSaveAdaptor in [GitHub](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-javascript-data-grid) repository.
 

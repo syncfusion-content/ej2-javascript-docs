@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## ListView control
 
-This article describes the API migration process of ListView component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of ListView component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Virtualization | **Property:** *allowVirtualScrolling*  <br /> var listObj = new ej.ListView($("#list"),{ <br /> dataSource: dataSrc,<br /> allowVirtualScrolling: true, <br />virtualScrollMode: "normal" <br /> }); | **Property:** *enableVirtualization* <br /> let list: ListView = new ListView({ <br /> dataSource: data, <br /> enableVirtualization: true <br /> }); <br /> list.appendTo('#test'); |
 | Checkbox | **Property:** *enableCheckMark* <br /> var listObj = new ej.ListView($("#list"),{ <br />dataSource: dataSrc, <br />enableCheckMark: true <br /> }); | **Property:** *showCheckBox*  <br /> let list: ListView = new ListView({ <br /> dataSource: data, <br /> showCheckBox: true <br />  }); <br /> list.appendTo('#test'); |

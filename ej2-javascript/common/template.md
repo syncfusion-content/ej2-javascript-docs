@@ -9,13 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template in Syncfusion ##Platform_Name## controls
+# Template in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls
 
-Syncfusion JavaScript controls are rendered with a pre-defined layout or structure that is used to define how the control should be rendered on the user interface. The user wants to customise the appearance of the control and add functionality that is specific to the needs of the application. Syncfusion JavaScript controls have the option to achieve this using template support. A template can contain a variety of elements, depending on the context in which it is being used.
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls are rendered with a pre-defined layout or structure that is used to define how the control should be rendered on the user interface. The user wants to customise the appearance of the control and add functionality that is specific to the needs of the application. Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls have the option to achieve this using template support. A template can contain a variety of elements, depending on the context in which it is being used.
 
 ## Types of templates
 
-Syncfusion JavaScript controls have two types of templates, such as:
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls have two types of templates, such as:
 
 * [String template](#String-template)
 * [Script template](#Script-template)
@@ -23,7 +23,7 @@ Syncfusion JavaScript controls have two types of templates, such as:
 
 ## String template
 
-Users can add templates to Syncfusion JavaScript controls by using `string literals` and JavaScript expressions. Using this approach, the template string is passed to the library's template engine, which parses the string and generates the corresponding HTML elements along with the data bindings.
+Users can add templates to Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls by using `string literals` and JavaScript expressions. Using this approach, the template string is passed to the library's template engine, which parses the string and generates the corresponding HTML elements along with the data bindings.
 
 The template string can be added directly to the `template` property of the control. Refer to the following code snippet.
 
@@ -132,7 +132,7 @@ Here, the script template identifier (customTemplate) is assigned to the `templa
 
 ## Function template
 
-The function template approach is compatible with the strict guidelines of [Content-Security-Policy (CSP)](../common/Troubleshoot/content-security-policy). In the application, JavaScript functions with [string literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) can be used to add templates in the Syncfusion JavaScript (ES5) controls. This approach eliminates the need for the `unsafe-eval` keyword in the meta tag of project pages. It is essential to convert all inline string and script templates into function templates that comply with the [Content-Security-Policy (CSP)](../common/Troubleshoot/content-security-policy) guidelines in order to avoid potential security risks and enhance the overall safety of the application.
+The function template approach is compatible with the strict guidelines of [Content-Security-Policy (CSP)](../common/Troubleshoot/content-security-policy). In the application, JavaScript functions with [string literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) can be used to add templates in the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) controls. This approach eliminates the need for the `unsafe-eval` keyword in the meta tag of project pages. It is Essential<sup style="font-size:70%">&reg;</sup> to convert all inline string and script templates into function templates that comply with the [Content-Security-Policy (CSP)](../common/Troubleshoot/content-security-policy) guidelines in order to avoid potential security risks and enhance the overall safety of the application.
 
 Lets discuss about converting the existing [string template](#string-template) and [script template](#script-template) into a function template approach.
 

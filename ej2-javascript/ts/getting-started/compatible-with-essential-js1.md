@@ -9,27 +9,27 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Compatibility with Syncfusion JavaScript (Essential JS 1)
+# Compatibility with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 1)
 
-This article provides a step-by-step introduction to configure the Essential JS 1 and Essential JS 2 JavaScript controls in a same web page.
+This article provides a step-by-step introduction to configure the Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls in a same web page.
 
 ## Prerequisites
 
-To work with the Essential JS 1 and the Essential JS 2 controls compatibility in JavaScript, the below mentioned System requirements are necessary,
+To work with the Essential<sup style="font-size:70%">&reg;</sup> JS 1 and the Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls compatibility in JavaScript, the below mentioned System requirements are necessary,
 
-* [Essential JS 1 Dependencies](https://help.syncfusion.com/js/dependencies)
+* [Essential<sup style="font-size:70%">&reg;</sup> JS 1 Dependencies](https://help.syncfusion.com/js/dependencies)
 * [Node.js](https://nodejs.org/en/)
 * [Visual Studio Code](https://code.visualstudio.com/)
 
-## Creating JavaScript application with Essential JS 2 control
+## Creating JavaScript application with Essential<sup style="font-size:70%">&reg;</sup> JS 2 control
 
-1.You can create a JavaScript application with the help of the given Essential JS2 [getting started documentation](./quick-start/).
+1.You can create a JavaScript application with the help of the given Essential<sup style="font-size:70%">&reg;</sup> JS2 [getting started documentation](./quick-start/).
 
-2.Now the Essential JS 2 Button control rendered successfully in the web page.
+2.Now the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Button control rendered successfully in the web page.
 
-## Adding Essential JS 1 control in the JavaScript application
+## Adding Essential<sup style="font-size:70%">&reg;</sup> JS 1 control in the JavaScript application
 
-1.Install the Essential JS 1 npm package with required dependent typing package in the JavaScript quick start application.
+1.Install the Essential<sup style="font-size:70%">&reg;</sup> JS 1 npm package with required dependent typing package in the JavaScript quick start application.
 
    ```
       npm install syncfusion-javascript @types/ej.web.all @types/jquery
@@ -37,7 +37,7 @@ To work with the Essential JS 1 and the Essential JS 2 controls compatibility in
 
  ![ej1 npm package install](images/ej1-npm-install.png)
 
-2.Add the necessary Essential JS 1 scripts in the `<head>` element and add the HTML Button element inside `<body>` element in the `~/src/index.html` for rendering Essential JS 1 Button control.
+2.Add the necessary Essential<sup style="font-size:70%">&reg;</sup> JS 1 scripts in the `<head>` element and add the HTML Button element inside `<body>` element in the `~/src/index.html` for rendering Essential<sup style="font-size:70%">&reg;</sup> JS 1 Button control.
 
  ```
     <head>
@@ -58,11 +58,11 @@ To work with the Essential JS 1 and the Essential JS 2 controls compatibility in
     </body>
  ```
 
-    > Refer to this [documentation](https://help.syncfusion.com/js/dependencies) to know more about Essential JS 1 dependencies.
+    > Refer to this [documentation](https://help.syncfusion.com/js/dependencies) to know more about Essential<sup style="font-size:70%">&reg;</sup> JS 1 dependencies.
 
-3.After adding the HTML Button element, Add the Essential JS 1 compatibility style references in the `styles.css` file.
+3.After adding the HTML Button element, Add the Essential<sup style="font-size:70%">&reg;</sup> JS 1 compatibility style references in the `styles.css` file.
 
-    > The compatibility styles of Essential JS 1 and Essential JS 2 must be added in the application to prevent the UI conflicts between the Essential JS 1 and Essential JS 2 controls.
+    > The compatibility styles of Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 must be added in the application to prevent the UI conflicts between the Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls.
 
     Replace the `style.css` file content with the below style references.
 
@@ -71,7 +71,7 @@ To work with the Essential JS 1 and the Essential JS 2 controls compatibility in
      @import '../../node_modules/syncfusion-javascript/Content/ej/web/material/ej.web.all.compatibility.min';
   ```
 
-4.Add the Essential JS 1 type reference to the `types` compiler options in `~/tsconfig.json` file.
+4.Add the Essential<sup style="font-size:70%">&reg;</sup> JS 1 type reference to the `types` compiler options in `~/tsconfig.json` file.
 
  ```
     {
@@ -81,7 +81,7 @@ To work with the Essential JS 1 and the Essential JS 2 controls compatibility in
     }
  ```
 
-5.Now, add the Essential JS 1 Definitely Typed references and create the Essential JS 1 Button control in the `~/src/app/app.ts` file.
+5.Now, add the Essential<sup style="font-size:70%">&reg;</sup> JS 1 Definitely Typed references and create the Essential<sup style="font-size:70%">&reg;</sup> JS 1 Button control in the `~/src/app/app.ts` file.
 
  ```ts
     /**
@@ -103,6 +103,6 @@ To work with the Essential JS 1 and the Essential JS 2 controls compatibility in
     npm start
  ```
 
-    The Essential JS 1 and Essential JS 2 Button control will be rendered in the same web page.
+    The Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 Button control will be rendered in the same web page.
 
 ![ej1 and ej2 button](./images/ej1-ej2-button.png)

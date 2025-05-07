@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Heatmap chart control
 
-This article describes the API migration process of heat map component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of heat map component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Members
 
@@ -19,8 +19,8 @@ This article describes the API migration process of heat map component from Esse
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -476,8 +476,8 @@ heatmap.appendTo('#heatmap');
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>

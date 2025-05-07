@@ -57,7 +57,7 @@ In the following sample, the In-place Editor renders with `Inline` mode. You can
 
 In-place Editor popup mode can be customized by using the [title](../api/inplace-editor/popupSettings/#title) and [model](../api/inplace-editor/popupSettings/#model) properties in [popupSettings](../api/inplace-editor/popupSettings/) API.
 
-Popup mode rendered by using the Essential JS 2 Tooltip control, so you can use tooltip properties and events to customize the behavior of popup via the [model](../api/inplace-editor/popupSettings/#model) property of [popupSettings](../api/inplace-editor/popupSettings/) API.
+Popup mode rendered by using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Tooltip control, so you can use tooltip properties and events to customize the behavior of popup via the [model](../api/inplace-editor/popupSettings/#model) property of [popupSettings](../api/inplace-editor/popupSettings/) API.
 
 > For more details, refer the tooltip documentation [section](../tooltip/).
 

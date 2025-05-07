@@ -24,7 +24,7 @@ The following list of dependencies are required to use the NumericTextBox compon
 
 ## Set up your development environment
 
-To get you started with the NumericTextBox component, you can clone the [Essential JS 2 QuickStart](https://github.com/syncfusion/ej2-quickstart.git) project and install the packages by using the following commands.
+To get you started with the NumericTextBox component, you can clone the [Essential<sup style="font-size:70%">&reg;</sup> JS 2 QuickStart](https://github.com/syncfusion/ej2-quickstart.git) project and install the packages by using the following commands.
 
 ```
 git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
@@ -32,7 +32,7 @@ cd quickstart
 npm install
 ```
 
-> The [project](https://github.com/syncfusion/ej2-quickstart.git) is preconfigured with common settings (`src/styles/styles.css`, `system.config.js` ) to start with all Essential JS 2 components.
+> The [project](https://github.com/syncfusion/ej2-quickstart.git) is preconfigured with common settings (`src/styles/styles.css`, `system.config.js` ) to start with all Essential<sup style="font-size:70%">&reg;</sup> JS 2 components.
 
 ## Add NumericTextBox to the project
 

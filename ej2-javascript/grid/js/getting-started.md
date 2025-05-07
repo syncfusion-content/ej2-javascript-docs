@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Grid control
 
-This section explains you the steps required to create a simple Essential JS 2 Grid and demonstrate the basic usage of the Grid control in a JavaScript application.
+This section explains you the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Grid and demonstrate the basic usage of the Grid control in a JavaScript application.
 
 ## Dependencies
 
@@ -44,22 +44,22 @@ Refer to the following steps to set up your local environment.
 
 **Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
 
-**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files for initializing the Essential JS 2 Grid control.
+**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files for initializing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Grid control.
 
-## Adding Syncfusion resources
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
 
-The Essential JS 2 Grid control can be initialized by using either of the following ways.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Grid control can be initialized by using either of the following ways.
 
 * Using local script and style.
 * Using CDN link for script and style.
 
 ### Using local script and style
 
-To utilize local scripts and styles for Syncfusion Grid, you can follow these steps:
+To utilize local scripts and styles for Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can follow these steps:
 
-**1. Download Essential Studio JavaScript (Essential JS 2):** Obtain the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installation location.
+**1. Download Essential<sup style="font-size:70%">&reg;</sup> Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2):** Obtain the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installation location.
 
-**2. Copy Files to Resources Folder:** After installing the Essential JS 2 product build, copy the grid and its dependencies scripts and style file into the designated folders:
+**2. Copy Files to Resources Folder:** After installing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 product build, copy the grid and its dependencies scripts and style file into the designated folders:
 
 **Scripts:** Copy the scripts to the **resources/scripts** folder.
 **Styles:** Copy the styles to the **resources/styles** folder.
@@ -78,9 +78,9 @@ To utilize local scripts and styles for Syncfusion Grid, you can follow these st
 
 Here's an example of referencing the grid's scripts and styles in an HTML file:
 
-**a.Essential Dependency (Minimal Setup)**
+**a.Essential<sup style="font-size:70%">&reg;</sup> Dependency (Minimal Setup)**
 
-This setup includes only the necessary scripts and styles required to render the Syncfusion Grid. Use this setup for a lightweight application that requires basic grid functionality.
+This setup includes only the necessary scripts and styles required to render the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. Use this setup for a lightweight application that requires basic grid functionality.
 
 ```html
 
@@ -160,7 +160,7 @@ This setup includes additional dependencies required for more advanced functiona
 ```
 
 **c. Comprehensive Dependency (All Components)**
-This setup includes all possible dependencies for Syncfusion components in a single comprehensive file, ensuring maximum compatibility and functionality. Use this setup for a complex application that utilizes a wide range of Syncfusion components.
+This setup includes all possible dependencies for Syncfusion<sup style="font-size:70%">&reg;</sup> components in a single comprehensive file, ensuring maximum compatibility and functionality. Use this setup for a complex application that utilizes a wide range of Syncfusion<sup style="font-size:70%">&reg;</sup> components.
 
 ```html
 <!DOCTYPE html>
@@ -199,9 +199,9 @@ Refer the grid's CDN links as below
 
 Here's an example of referencing the grid's scripts and styles in an HTML file using CDN links:
 
-**a.Essential Dependency (Minimal Setup)**
+**a.Essential<sup style="font-size:70%">&reg;</sup> Dependency (Minimal Setup)**
 
-This setup includes only the necessary scripts and styles required to render the Syncfusion Grid. Use this setup for a lightweight application that requires basic grid functionality.
+This setup includes only the necessary scripts and styles required to render the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. Use this setup for a lightweight application that requires basic grid functionality.
 
 ```html
 <!DOCTYPE html>
@@ -287,7 +287,7 @@ This setup includes additional dependencies required for more advanced functiona
 
 **c. Comprehensive Dependency (All Components)**
 
-This setup includes all possible dependencies for Syncfusion components in a single comprehensive file, ensuring maximum compatibility and functionality. Use this setup for a complex application that utilizes a wide range of Syncfusion components.
+This setup includes all possible dependencies for Syncfusion<sup style="font-size:70%">&reg;</sup> components in a single comprehensive file, ensuring maximum compatibility and functionality. Use this setup for a complex application that utilizes a wide range of Syncfusion<sup style="font-size:70%">&reg;</sup> components.
 
 ```html
 <!DOCTYPE html>
@@ -309,7 +309,7 @@ This setup includes all possible dependencies for Syncfusion components in a sin
 </html>
 ```
 
-Based on your requirement, additional dependencies can be included as needed. In this documentation, the common **ej2.min.js** and **material.css** are used, which include all the Essential JS 2 components and their dependent scripts and theme files.
+Based on your requirement, additional dependencies can be included as needed. In this documentation, the common **ej2.min.js** and **material.css** are used, which include all the Essential<sup style="font-size:70%">&reg;</sup> JS 2 components and their dependent scripts and theme files.
 
 ## Adding Grid control
 
@@ -516,7 +516,7 @@ The grouping feature enables you to view the grid record in a grouped view. It c
 
 ## Run the application
 
-Now, run the **index.html** in web browser, it will render the Essential JS 2 Grid control.
+Now, run the **index.html** in web browser, it will render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Grid control.
 
 Output will be displayed as follows.
 
@@ -536,7 +536,7 @@ Output will be displayed as follows.
 
 ## Deploy the Application
 
-The Essential JS 2 Grid control features are segregated into individual feature-wise modules. The [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build and **CDN** scripts contains code for all features used in grid and hence we suggest to not to use them in production. We strongly recommend you to generate script files to use in production using our **Custom Resource Generator**[(CRG)](https://crg.syncfusion.com) for Essential JS 2. CRG will allow you to generate the bundled script for the currently enabled features in grid.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Grid control features are segregated into individual feature-wise modules. The [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build and **CDN** scripts contains code for all features used in grid and hence we suggest to not to use them in production. We strongly recommend you to generate script files to use in production using our **Custom Resource Generator**[(CRG)](https://crg.syncfusion.com) for Essential<sup style="font-size:70%">&reg;</sup> JS 2. CRG will allow you to generate the bundled script for the currently enabled features in grid.
 
 ## See Also
 

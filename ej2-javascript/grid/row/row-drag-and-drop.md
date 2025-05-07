@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Row drag and drop in ##Platform_Name## Grid control
 
-The Syncfusion ##Platform_Name## Grid control provides built-in support for row drag and drop functionality. This feature allows you to easily rearrange rows within the grid by dragging and dropping them to new positions. Additionally, you can also drag and drop rows from one grid to another grid, as well as drag and drop rows to custom controls.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control provides built-in support for row drag and drop functionality. This feature allows you to easily rearrange rows within the grid by dragging and dropping them to new positions. Additionally, you can also drag and drop rows from one grid to another grid, as well as drag and drop rows to custom controls.
 
 To use the row drag and drop feature in Grid control, you need to inject the **RowDD** module in the grid. The **RowDD** is responsible for handling the row drag and drop functionality in the grid control. Once you have injected the **RowDD**, you can then use the [allowRowDragAndDrop](../../api/grid/#allowrowdraganddrop) and [targetID](../../api/grid/rowDropSettings/#targetid) properties to enable and configure the row drag and drop feature in the Grid.
 
@@ -123,11 +123,11 @@ In the below example, the selected grid row is dragged and dropped in to the Tre
 
 ## Drag and drop rows without drag icon
 
-By default, when performing a drag and drop operation in the Syncfusion Grid, drag icons are displayed. However, in some cases, you may want to hide these drag icons. This can be achieved by setting the [targetID](../../api/grid/rowDropSettings/#targetid) property of the [rowDropSettings](../../api/grid/rowDropSettings/) object to the current Grid's ID.
+By default, when performing a drag and drop operation in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, drag icons are displayed. However, in some cases, you may want to hide these drag icons. This can be achieved by setting the [targetID](../../api/grid/rowDropSettings/#targetid) property of the [rowDropSettings](../../api/grid/rowDropSettings/) object to the current Grid's ID.
 
 By setting the `targetID`, the Grid will render without a helper icon for row dragging. You can then customize the drag and drop action by binding to the [rowDrop](../../api/grid/#rowdrop) event of the Grid. In the `rowDrop` event, you can prevent the default action by setting `args.cancel` to **true**, and reorder the rows using the [reorderRows](../../api/grid/#reorderrows) method of the Grid.
 
-Here's an example of how to hide the drag and drop icon in the Syncfusion Grid:
+Here's an example of how to hide the drag and drop icon in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -205,5 +205,5 @@ The Grid control provides a set of events that are triggered during drag and dro
 
 ## See also
 
-[Sorting data in the Syncfusion Grid](../sorting)
-[Filtering data in the Syncfusion Grid](../filtering/filtering)
+[Sorting data in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid](../sorting)
+[Filtering data in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid](../filtering/filtering)

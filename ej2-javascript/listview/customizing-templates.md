@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Customizing templates in ##Platform_Name## ListView control
 
-The ListView control is designed to customize list items, group titles, and header titles. It utilizes the Essential JS2 [Template Engine](../common/template-engine/) to render the elements.
+The ListView control is designed to customize list items, group titles, and header titles. It utilizes the Essential<sup style="font-size:70%">&reg;</sup> JS2 [Template Engine](../common/template-engine/) to render the elements.
 
 ## Header template
 

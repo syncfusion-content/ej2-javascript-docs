@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Es5 getting started in ##Platform_Name## Floating action button control
 
-The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
 ## Dependencies
 
@@ -33,7 +33,7 @@ The JavaScript (ES5) Floating Action Button control can be initialized by using 
 
 **Step 1:** Create an app folder `quickstart` for getting started.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+**Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
 **Syntax:**
 > Dependency Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\dist\global\{DEPENDENCY_PACKAGE_NAME}.min.js`
@@ -54,7 +54,7 @@ The JavaScript (ES5) Floating Action Button control can be initialized by using 
 >
 > Control Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\20.3.0.47\Web (Essential JS 2)\JavaScript\ej2-buttons\styles\material.css`
 
-The below located script and style file contains all Syncfusion JavaScript (ES5) UI control resources in a single file.
+The below located script and style file contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file.
 
 > Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
 >
@@ -121,7 +121,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
   </html>
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Syncfusion JavaScript (ES5) Floating Action Button** control.
+**Step 6:** Now, run the `index.html` in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) Floating Action Button** control.
 
 ### Using CDN link for script and style reference
 
@@ -153,7 +153,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
         
 {% previewsample "page.domainurl/code-snippet/floating-action-button/es5-getting-started-cs1" %}
 
-**Step 4:** Now, run the `index.html` in web browser, it will render the `Syncfusion JavaScript Floating Action Button` control.
+**Step 4:** Now, run the `index.html` in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Floating Action Button** control.
 
 ## Click event
 

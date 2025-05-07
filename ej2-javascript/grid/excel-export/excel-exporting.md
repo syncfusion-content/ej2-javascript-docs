@@ -200,7 +200,7 @@ The following example demonstrates how to perform export with cell and row spann
 
 ## Exporting with custom date format
 
-The exporting functionality in the Syncfusion ##Platform_Name## Grid allows you to export grid data, including custom date format. This feature is useful when you need to export grid data with customized date values.
+The exporting functionality in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid allows you to export grid data, including custom date format. This feature is useful when you need to export grid data with customized date values.
 
 To apply a custom date format to grid columns during the export, you can utilize the [columns->format](../../api/grid/column/#format) property. This property allows you to define a custom format using format options.
 
@@ -235,7 +235,7 @@ The following example demonstrates how to export the grid with custom date forma
 
 ## Exporting multiple grids
 
-Exporting multiple grids in the Syncfusion ##Platform_Name## Grid control allows you to export different grids to compare them side by side in external applications on the same or different pages of a Excel. Each grid is identified by its unique ID. You can specify which grid to export by listing their IDs in the [exportGrids](../../api/grid/#exportgrids) property.
+Exporting multiple grids in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control allows you to export different grids to compare them side by side in external applications on the same or different pages of a Excel. Each grid is identified by its unique ID. You can specify which grid to export by listing their IDs in the [exportGrids](../../api/grid/#exportgrids) property.
 
 ### Same sheet
 
@@ -323,7 +323,7 @@ The following example demonstrates how to export multiple grids to a Excel file 
 
 ## Exporting hierarchy grid 
 
-Exporting a hierarchy grid in the Syncfusion ##Platform_Name## Grid control allows you to generate a Excel or CSV document that includes the parent grid along with its child grids. This feature is useful when you need to export hierarchical data with its related details.
+Exporting a hierarchy grid in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control allows you to generate a Excel or CSV document that includes the parent grid along with its child grids. This feature is useful when you need to export hierarchical data with its related details.
 
 To achieve this, you can customize the exporting behavior by using the `ExcelExportProperties.hierarchyExportMode` property of the Grid. This property allows you to specify the exporting behavior for the hierarchy grid. The following options are available:
 
@@ -401,7 +401,7 @@ In the following example, the `exportDetailDataBound` event is used to modify th
 
 ## Remove header row while exporting
 
-When exporting data from the Syncfusion ##Platform_Name## Grid, you have an option to remove the header row from the exported file. This can be useful when you want to export grid data without including the header values in the exported document. To achieve this, you can utilize the [excelHeaderQueryCellInfo](../../api/grid/#excelheaderquerycellinfo) and [created](../../api/grid/#created) event. 
+When exporting data from the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid, you have an option to remove the header row from the exported file. This can be useful when you want to export grid data without including the header values in the exported document. To achieve this, you can utilize the [excelHeaderQueryCellInfo](../../api/grid/#excelheaderquerycellinfo) and [created](../../api/grid/#created) event. 
 
 The following example demonstrates how to perform an export without the header by using the `excelHeaderQueryCellInfo` event to clear cell content in the header row and the [created](../../api/grid/#created) event to remove the header row from the Grid:
 
@@ -469,7 +469,7 @@ In the following example, the [toolbarClick](../../api/grid/#toolbarclick) funct
 
 ## Passing additional parameters to the server when exporting
 
-Passing additional parameters to the server when exporting data in the Syncfusion ##Platform_Name## Grid involves providing flexibility to include extra information or customize the export process based on specific requirements.
+Passing additional parameters to the server when exporting data in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid involves providing flexibility to include extra information or customize the export process based on specific requirements.
 
 You can achieve this by utilizing the [query](../../api/grid/#query) property and the [toolbarClick](../../api/grid/#toolbarclick) event. Within the `query` property, you can invoke the `addParams` method to add parameters to the request.
 
@@ -504,7 +504,7 @@ The following example demonstrates how to pass additional parameters to the serv
 
 ## Merge duplicate cells in a specific column before exporting
 
-You can merge duplicate cells (based on their values) in a specific column of the Syncfusion Grid. This can be achieved by utilizing the [dataBound](../../api/grid/#databound) event. Additionally, you can merge duplicate cells in the specified column during export by using the [excelQueryCellInfo](../../api/grid/#excelquerycellinfo) event for Excel and CSV formats. This functionality is useful for improving the readability of your data and providing a clearer visual representation.
+You can merge duplicate cells (based on their values) in a specific column of the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. This can be achieved by utilizing the [dataBound](../../api/grid/#databound) event. Additionally, you can merge duplicate cells in the specified column during export by using the [excelQueryCellInfo](../../api/grid/#excelquerycellinfo) event for Excel and CSV formats. This functionality is useful for improving the readability of your data and providing a clearer visual representation.
 
 Here’s an example demonstrating how to merge duplicate cells in the OrderID column in both Grid view and export:
 

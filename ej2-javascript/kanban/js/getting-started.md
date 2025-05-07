@@ -40,20 +40,20 @@ Refer to the following steps to setup your local environment:
 
 **Step 2:** Create `myapp/resources` folder to store local scripts and styles files.
 
-**Step 3:** Create `myapp/index.js` and `myapp/index.html` files for initializing Essential JS 2 Kanban control.
+**Step 3:** Create `myapp/index.js` and `myapp/index.html` files for initializing Essential<sup style="font-size:70%">&reg;</sup> JS 2 Kanban control.
 
-## Adding Syncfusion resources
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
 
-The Essential JS 2 Kanban control can be initialized by using one of the following ways.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Kanban control can be initialized by using one of the following ways.
 
 * Using local scripts and styles.
 * Using CDN links for scripts and styles.
 
 ### Using local scripts and styles
 
-You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
-After installing the Essential JS 2 product build, you can copy the Kanban and its dependency scripts and style files into the `resources/scripts` and `resources/styles` folder respectively.
+After installing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 product build, you can copy the Kanban and its dependency scripts and style files into the `resources/scripts` and `resources/styles` folder respectively.
 
 Refer to the following location from where the Kanban's script and styles can be referenced.
 
@@ -185,7 +185,7 @@ kanbanObj.appendTo('#Kanban');
 
 Now, you can add the Kanban control to the application. For getting started, add a `div` element for Kanban control in `index.html`. Then refer the `index.js` file into the `index.html` file.
 
-In this document context, we are going to use `ej2.min.js`, which includes all the Essential JS 2 components and their dependent scripts.
+In this document context, we are going to use `ej2.min.js`, which includes all the Essential<sup style="font-size:70%">&reg;</sup> JS 2 components and their dependent scripts.
 
 ```html
 <!DOCTYPE html>

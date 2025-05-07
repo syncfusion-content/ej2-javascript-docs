@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Inherited Features from TextArea
 
-The Syncfusion JavaScript Smart TextArea control fully inherits all the properties, features, and styling options of the Syncfusion JavaScript TextArea control. This means that you can leverage the existing features of the Syncfusion JavaScript TextArea while benefiting from the enhanced functionality of the Smart TextArea.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Smart TextArea control fully inherits all the properties, features, and styling options of the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript TextArea control. This means that you can leverage the existing features of the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript TextArea while benefiting from the enhanced functionality of the Smart TextArea.
 
 * [Form Support](https://ej2.syncfusion.com/javascript/documentation/textarea/form-support)
 * [Floating Labels](https://ej2.syncfusion.com/javascript/documentation/textarea/floating-label)
@@ -21,4 +21,4 @@ The Syncfusion JavaScript Smart TextArea control fully inherits all the properti
 
 ## See also
 
-* [Getting Started with Syncfusion JavaScript Smart TextArea](./getting-started)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Smart TextArea](./getting-started)

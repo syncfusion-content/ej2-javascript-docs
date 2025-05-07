@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ### Overview
 
-This guide demonstrates how to fetch the base64-encoded value of a PDF document loaded in the Syncfusion PDF Viewer using Typescript. This is useful for sending the PDF as a base64 string or processing it in the front end.
+This guide demonstrates how to fetch the base64-encoded value of a PDF document loaded in the Syncfusion<sup style="font-size:70%">&reg;</sup> PDF Viewer using Typescript. This is useful for sending the PDF as a base64 string or processing it in the front end.
 
 ### How to Retrieve Base64 Value
 
@@ -57,6 +57,6 @@ function base64ofloadedDocument() {
 ```
 ### Conclusion
 
-By implementing these steps, you can convert a PDF document loaded in the Syncfusion PDF Viewer to a base64 string on button click, facilitating the manipulation or transfer of PDF data as needed.
+By implementing these steps, you can convert a PDF document loaded in the Syncfusion<sup style="font-size:70%">&reg;</sup> PDF Viewer to a base64 string on button click, facilitating the manipulation or transfer of PDF data as needed.
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/typescript-pdf-viewer-examples/tree/master/How%20to)

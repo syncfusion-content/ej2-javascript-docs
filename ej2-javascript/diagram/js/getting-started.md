@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Es5 getting started in ##Platform_Name## Diagram control
 
-The Essential® JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
 ## Component Initialization
 
@@ -24,7 +24,7 @@ The Essential® JS 2 JavaScript components can be initialized by using either of
 
 **Step 1:** Create an app folder `my-diagram-app` for Essential® JS 2 JavaScript components.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio® JavaScript (Essential® JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+**Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
 **Syntax:**
 > Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -57,7 +57,7 @@ The Essential® JS 2 JavaScript components can be initialized by using either of
   </html>
 ```
 
-**Step 5:** Now, add the `Diagram` element and initiate the `Essential® JS 2 Diagram` component in the `index.html` by using following code
+**Step 5:** Now, add the `Diagram` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Diagram** component in the `index.html` by using following code
 
 ```html
 <!DOCTYPE html>
@@ -84,13 +84,13 @@ The Essential® JS 2 JavaScript components can be initialized by using either of
   </html>
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential® JS 2 Diagram** component.
+**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Diagram** component.
 
 ### Using CDN link for script and style reference
 
-**Step 1:** Create an app folder `my-diagram-app` for the Essential® JS 2 JavaScript components.
+**Step 1:** Create an app folder `my-diagram-app` for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components.
 
-**Step 2:** The Essential® JS 2 component's global scripts and styles are already hosted in the below CDN link formats.
+**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 component's global scripts and styles are already hosted in the below CDN link formats.
 
 **Syntax:**
 > Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -102,7 +102,7 @@ The Essential® JS 2 JavaScript components can be initialized by using either of
 >
 > Styles: [`http://cdn.syncfusion.com/ej2/ej2-diagrams/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-diagrams/styles/material.css)
 
-**Step 3:** Create a HTML page (index.html) in `my-diagram-app` location and add the CDN link references. Now, add the `Diagram` element and initiate the `Essential® JS 2 Diagram` component in the index.html by using following code.
+**Step 3:** Create a HTML page (index.html) in `my-diagram-app` location and add the CDN link references. Now, add the `Diagram` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Diagram** component in the index.html by using following code.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -115,7 +115,7 @@ The Essential® JS 2 JavaScript components can be initialized by using either of
         
 {% previewsample "page.domainurl/code-snippet/diagram/getting-started-cs6" %}
 
-**Step 4:** Now, run the `index.html` in web browser, it will render the `Essential® JS 2 Diagram` component.
+**Step 4:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Diagram** component.
 
 
 ## Module Injection

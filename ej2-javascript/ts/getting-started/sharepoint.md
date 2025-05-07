@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Syncfusion JavaScript (Essential JS 2) library and SharePoint Framework (SPFx)
+# Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) library and SharePoint Framework (SPFx)
 
-This article provides a step-by-step introduction to configure Syncfusion JavaScript (Essential JS 2) library and build a simple SharePoint framework application in Visual Studio Code.
+This article provides a step-by-step introduction to configure Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) library and build a simple SharePoint framework application in Visual Studio Code.
 
 ## Prerequisites
 
@@ -60,7 +60,7 @@ This article provides a step-by-step introduction to configure Syncfusion JavaSc
 
 4.After configuring the above setup, the Yeoman generator will create the SharePoint client-side web part under `ej2-sharepoint` folder and install the required default dependencies.
 
-## Configure Syncfusion JavaScript UI control in application
+## Configure Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript UI control in application
 
 1.Install the [`@syncfusion/ej2`](https://www.npmjs.com/package/@syncfusion/ej2) npm package in the application using the following command line.
 
@@ -68,10 +68,10 @@ This article provides a step-by-step introduction to configure Syncfusion JavaSc
     npm install @syncfusion/ej2 --save
  ```
 
-2.Open the SharePoint application in Visual Studio Code, and add the Syncfusion JavaScript Button control script and styles in the `~/src/webparts/buttonComponent/ButtonComponentWebPart.ts` file.
+2.Open the SharePoint application in Visual Studio Code, and add the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Button control script and styles in the `~/src/webparts/buttonComponent/ButtonComponentWebPart.ts` file.
 
-    1. Import the Button source and add Syncfusion JavaScript style reference at the top of the file.
-    2. Add the HTML button element in `this.domElement.innerHTML`, and initialize the Syncfusion JavaScript Button in the `render()` method of `ButtonComponentWebPart` class.
+    1. Import the Button source and add Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript style reference at the top of the file.
+    2. Add the HTML button element in `this.domElement.innerHTML`, and initialize the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Button in the `render()` method of `ButtonComponentWebPart` class.
 
  ```ts
     ....
@@ -113,7 +113,7 @@ This article provides a step-by-step introduction to configure Syncfusion JavaSc
     }
  ```
 
-3.Run the application using the following command line, and the Syncfusion JavaScript Button control will be rendered in web browser.
+3.Run the application using the following command line, and the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Button control will be rendered in web browser.
 
  ```
     gulp serve
@@ -127,6 +127,6 @@ This article provides a step-by-step introduction to configure Syncfusion JavaSc
 
 ![ej2 spfx button web part](images/sharepoint-button-webpart.png)
 
-    Finally, the Syncfusion JavaScript Button control is rendered in the SharePoint Framework client-side web part.
+    Finally, the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Button control is rendered in the SharePoint Framework client-side web part.
 
 ![ej2 spfx button rendered](images/sharepoint-button.png)

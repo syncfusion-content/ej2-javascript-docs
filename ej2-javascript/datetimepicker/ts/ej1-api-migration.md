@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Datetimepicker control
 
-This article describes the API migration process of DateTimePicker component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of DateTimePicker component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## DateTime Selection
 
@@ -22,10 +22,10 @@ This article describes the API migration process of DateTimePicker component fro
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -65,10 +65,10 @@ datetimepickerObject.appendTo('#element');
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -128,10 +128,10 @@ var datetimeObj = new ej.DateTimePicker($("#datetimepicker"), {
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -197,10 +197,10 @@ datetimepickerObject.appendTo('#element');
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -266,10 +266,10 @@ datetimepickerObject.appendTo('#element');
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -314,10 +314,10 @@ function disableDate(args: RenderDayCellEventArgs): void {
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -696,10 +696,10 @@ datetimepickerObject.show();
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -739,10 +739,10 @@ datetimepickerObject.appendTo('#element');
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -782,10 +782,10 @@ datetimepickerObject.appendTo('#element');
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -869,10 +869,10 @@ let formObject: FormValidator = new FormValidator('#form-element', options);
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -1319,10 +1319,10 @@ function onDestroy(args): void {/* code block*/}
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -1388,10 +1388,10 @@ datetimepickerObject.appendTo('#element');
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -1434,10 +1434,10 @@ datetimepickerObject.appendTo('#element');
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -1557,10 +1557,10 @@ datetimepickerObject.show();
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>

@@ -9,39 +9,39 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Syncfusion JavaScript (ES5) UI control in a quickstart application
+# Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control in a quickstart application
 
-This section provides a step-by-step guide to configuring the Syncfusion JavaScript (ES5) UI control (Essential JS 2) and building a simple HTML web application.
+This section provides a step-by-step guide to configuring the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control (Essential<sup style="font-size:70%">&reg;</sup> JS 2) and building a simple HTML web application.
 
 ## Prerequisites
 
 To get started, ensure the following software to be installed in the machine.
 
-* [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2)
+* [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2)
 
 * [Visual Studio Code](https://code.visualstudio.com/)
 
-> Check out the [download and installation](https://ej2.syncfusion.com/javascript/documentation/installation-and-upgrade/download/) section of `Essential Studio JavaScript`. If you are using Syncfusion CDN resources to build your web application, you can skip the Essential Studio JavaScript prerequisite.
+> Check out the [download and installation](https://ej2.syncfusion.com/javascript/documentation/installation-and-upgrade/download/) section of **Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript**. If you are using Syncfusion<sup style="font-size:70%">&reg;</sup> CDN resources to build your web application, you can skip the Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript prerequisite.
 
 ## Set up development environment
 
 * Create a folder named `~/quickstart` from the required directory and open it in Visual Studio Code.
 
-* Create an HTML file `~/quickstart/index.html` to add the Syncfusion JavaScript (ES5) control's resources.
+* Create an HTML file `~/quickstart/index.html` to add the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) control's resources.
 
-## Add Syncfusion resources
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> resources
 
-You can access Syncfusion control resources using either of the following methods:
+You can access Syncfusion<sup style="font-size:70%">&reg;</sup> control resources using either of the following methods:
 
 * [Using local scripts and styles](#using-local-scripts-and-styles)
 
 * [Using CDN link for scripts and styles](#using-cdn-link-for-scripts-and-styles)
 
-> Syncfusion JavaScript controls have dependencies on other Syncfusion controls, so you must add these dependent control resources to use all their functionality. These dependencies are listed in the corresponding control's getting started documentation. For example, you can find the dependencies for the Grid control [here](https://ej2.syncfusion.com/javascript/documentation/grid/getting-started/#dependencies).
+> Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls have dependencies on other Syncfusion<sup style="font-size:70%">&reg;</sup> controls, so you must add these dependent control resources to use all their functionality. These dependencies are listed in the corresponding control's getting started documentation. For example, you can find the dependencies for the Grid control [here](https://ej2.syncfusion.com/javascript/documentation/grid/getting-started/#dependencies).
 
 ### Using local scripts and styles
 
-* After installing the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build, it contains the scripts and styles reference for each individual package and all control resources in a single script and style file. In this getting started, simple Grid control is used as an example.
+* After installing the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build, it contains the scripts and styles reference for each individual package and all control resources in a single script and style file. In this getting started, simple Grid control is used as an example.
 
 * Create a folder named `~/quickstart/resources`. Inside that folder, create the `base/styles/`, `popups/styles/`, `grids/styles/` and `scripts` folders. Then, copy/paste the individual scripts and styles from the below installed location to the corresponding `~/quickstart/resources/` location.
 
@@ -88,7 +88,7 @@ You can access Syncfusion control resources using either of the following method
     >
     >`C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\20.4.0.38\Web (Essential JS 2)\JavaScript\ej2-popups\styles\material.css`
 
-    You can also refer to a single script and style file that contains all Syncfusion JavaScript control resources from the following location.
+    You can also refer to a single script and style file that contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript control resources from the following location.
 
     **Single script and style reference for all controls:**
 
@@ -96,7 +96,7 @@ You can access Syncfusion control resources using either of the following method
     >
     > Style reference for all controls: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\material.css`
 
-    > Since this file includes all Syncfusion controls, it may impact the website's loading time. To reduce the size of the single file, you can generate custom scripts and styles for a set of specific Syncfusion JavaScript controls using the [Custom Resource Generator (CRG)](https://crg.syncfusion.com/) tool. This tool is useful for combining the required control scripts and styles into a single file. To know more about the CRG, refer to this [documentation](https://ej2.syncfusion.com/javascript/documentation/common/custom-resource-generator/).
+    > Since this file includes all Syncfusion<sup style="font-size:70%">&reg;</sup> controls, it may impact the website's loading time. To reduce the size of the single file, you can generate custom scripts and styles for a set of specific Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls using the [Custom Resource Generator (CRG)](https://crg.syncfusion.com/) tool. This tool is useful for combining the required control scripts and styles into a single file. To know more about the CRG, refer to this [documentation](https://ej2.syncfusion.com/javascript/documentation/common/custom-resource-generator/).
 
 * Once copy/paste the individual scripts and styles to the `~/quickstart/resources/` location. Add the required Grid control resources to the `~/quickstart/index.html` file in the following order.
 
@@ -126,7 +126,7 @@ You can access Syncfusion control resources using either of the following method
 
 ### Using CDN link for scripts and styles
 
-* Syncfusion hosts every Syncfusion JavaScript (ES5) control as a separate package on CDN. This allows you to load the scripts and styles for each individual package. Syncfusion also provides a single package that includes all Syncfusion JavaScript (ES5) controls, allowing you to load the scripts and styles for all controls as a single script and style file. In this getting started, simple Grid control is used as an example. Refer to the following CDN scripts and styles link.
+* Syncfusion<sup style="font-size:70%">&reg;</sup> hosts every Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) control as a separate package on CDN. This allows you to load the scripts and styles for each individual package. Syncfusion<sup style="font-size:70%">&reg;</sup> also provides a single package that includes all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) controls, allowing you to load the scripts and styles for all controls as a single script and style file. In this getting started, simple Grid control is used as an example. Refer to the following CDN scripts and styles link.
 
     **Individual control CDN reference**
     > Dependency script:
@@ -171,7 +171,7 @@ You can access Syncfusion control resources using either of the following method
     > 
     >[https://cdn.syncfusion.com/ej2/22.1.34/ej2-popups/styles/material.css](https://cdn.syncfusion.com/ej2/22.1.34/ej2-popups/styles/material.css)
 
-    You can also refer to a single script and style CDN link that contains all Syncfusion JavaScript control resources as follows:
+    You can also refer to a single script and style CDN link that contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript control resources as follows:
 
     **Single script and style CDN reference for all controls:**
 
@@ -207,9 +207,9 @@ You can access Syncfusion control resources using either of the following method
       </html>
 ```
 
-## Add Syncfusion control to the application
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> control to the application
 
-Now, add the Grid element and `Syncfusion JavaScript (ES5) Grid` control in the `~/quickstart/index.html` file as follows.
+Now, add the Grid element and Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) Grid control in the `~/quickstart/index.html` file as follows.
 
 ```html
     <!DOCTYPE html>
@@ -267,7 +267,7 @@ Now, add the Grid element and `Syncfusion JavaScript (ES5) Grid` control in the 
 
 ## Run the application
 
-Open the `~/quickstart/index.html` file in the web browser and it will render the Syncfusion JavaScript (ES5) Grid control.
+Open the `~/quickstart/index.html` file in the web browser and it will render the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) Grid control.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -285,4 +285,4 @@ To learn more about the functionality of the Grid control, refer to the [Grid co
 
 ## See also
 
-* [How to register Syncfusion license key in JavaScript(ES5) application](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration/)
+* [How to register Syncfusion<sup style="font-size:70%">&reg;</sup> license key in JavaScript(ES5) application](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration/)

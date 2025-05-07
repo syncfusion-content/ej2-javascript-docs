@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pareto in ##Platform_Name## Chart control | Syncfusion
+title: Pareto Chart in ##Platform_Name## Charts | Syncfusion
 description: Learn here all about Pareto in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Pareto 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Pare to Chart in ##Platform_Name## control
+# Pareto Chart in ##Platform_Name## Charts
 
 ## Pareto
 

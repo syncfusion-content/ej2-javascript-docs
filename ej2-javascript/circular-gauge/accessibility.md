@@ -72,4 +72,4 @@ The accessibility compliance of the Circular Gauge control is shown in the follo
 
 ## See also
 
-* [Accessibility in Syncfusion ##Platform_Name## controls](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls](../common/accessibility)

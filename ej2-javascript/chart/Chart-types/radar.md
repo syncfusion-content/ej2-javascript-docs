@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Radar in ##Platform_Name## Chart control | Syncfusion
+title: Radar Chart in ##Platform_Name## Charts | Syncfusion
 description: Learn here all about Radar in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Radar 
@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Radar Chart in ##Platform_Name## control
+# Radar Chart in ##Platform_Name## Charts
 
-## Radar chart
+## Radar Chart
 
 To render a [radar](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/radar-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  

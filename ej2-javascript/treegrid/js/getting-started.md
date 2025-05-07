@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Treegrid control
 
-This section explains the steps required to create a simple Essential JS 2 TreeGrid and demonstrates the basic usage of the TreeGrid control in a JavaScript application.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeGrid and demonstrates the basic usage of the TreeGrid control in a JavaScript application.
 
 ## Dependencies
 
@@ -45,20 +45,20 @@ Refer to the following steps to setup your local environment.
 
 **Step 2:** Create `myapp/resources` folder to store local scripts and styles files.
 
-**Step 3:** Create `myapp/index.js` and `myapp/index.html` files for initializing Essential JS 2 TreeGrid control.
+**Step 3:** Create `myapp/index.js` and `myapp/index.html` files for initializing Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeGrid control.
 
-## Adding Syncfusion resources
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
 
-The Essential JS 2 TreeGrid control can be initialized by using either of the following ways.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeGrid control can be initialized by using either of the following ways.
 
 * Using local script and style.
 * Using CDN link for script and style.
 
 ### Using local script and style
 
-You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
-After installing the Essential JS 2 product build, copy the TreeGrid and its dependencies scripts and style file into the `resources/scripts` and `resources/styles` folder.
+After installing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 product build, copy the TreeGrid and its dependencies scripts and style file into the `resources/scripts` and `resources/styles` folder.
 
 Refer to the following code to find location TreeGrid's script and style file.
 
@@ -153,7 +153,7 @@ The following HTML code example shows the minimal dependency of TreeGrid.
 
 Now, you can start adding TreeGrid control in the application. For getting started, add a `div` element for TreeGrid control in `index.html`. Then refer the `index.js` file into the `index.html` file.
 
-In this document context, the `ej2.min.js` is used, which includes all the Essential JS 2 components and its dependent scripts.
+In this document context, the `ej2.min.js` is used, which includes all the Essential<sup style="font-size:70%">&reg;</sup> JS 2 components and its dependent scripts.
 
 ```html
 <!DOCTYPE html>
@@ -359,7 +359,7 @@ By default, filtered records are shown along with its parent records. This behav
 
 ## Run the application
 
-Now, run the `index.html` in the web browser, it will render the Essential JS 2 TreeGrid control.
+Now, run the `index.html` in the web browser, it will render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeGrid control.
 
 Output will be displayed as follows.
 
@@ -379,7 +379,7 @@ Output will be displayed as follows.
 
 ## Deploy the application
 
-The Essential JS 2 TreeGrid control features are segregated into individual feature-wise modules. The [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build and `CDN` scripts contains code for all features used in the TreeGrid. So, do not to use the `CDN` scripts in production. It is strongly recommended to generate script files to use in production using our **Custom Resource Generator**[`(CRG)`](https://crg.syncfusion.com/) for Essential JS 2. CRG allows you to generate the bundled script for the currently enabled features in TreeGrid.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeGrid control features are segregated into individual feature-wise modules. The [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build and `CDN` scripts contains code for all features used in the TreeGrid. So, do not to use the `CDN` scripts in production. It is strongly recommended to generate script files to use in production using our **Custom Resource Generator**[`(CRG)`](https://crg.syncfusion.com/) for Essential<sup style="font-size:70%">&reg;</sup> JS 2. CRG allows you to generate the bundled script for the currently enabled features in TreeGrid.
 
 > You can refer to our [`JavaScript Tree Grid`](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our JavaScript Tree Grid example [`JavaScript Tree Grid example`](https://ej2.syncfusion.com/demos/#/material/tree-grid/treegrid-overview.html) to knows how to present and manipulate data.
 
@@ -420,10 +420,10 @@ The following code example shows how to use the [actionFailure](https://ej2.sync
 
 ## See Also
 
-* [Getting Started with Syncfusion JavaScript documentation](https://ej2.syncfusion.com/documentation/treegrid/getting-started)
-* [Getting Started with Syncfusion Angular documentation](https://ej2.syncfusion.com/angular/documentation/treegrid/getting-started)
-* [Getting Started with Syncfusion React documentation](https://ej2.syncfusion.com/react/documentation/treegrid/getting-started)
-* [Getting Started with Syncfusion Vue documentation](https://ej2.syncfusion.com/vue/documentation/treegrid/getting-started)
-* [Getting Started with Syncfusion ASP.NET Core documentation](https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/getting-started-core)
-* [Getting Started with Syncfusion ASP.NET MVC documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/tree-grid/getting-started-mvc)
-* [Getting Started with Syncfusion Blazor documentation](https://blazor.syncfusion.com/documentation/treegrid/getting-started-webapp)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript documentation](https://ej2.syncfusion.com/documentation/treegrid/getting-started)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular documentation](https://ej2.syncfusion.com/angular/documentation/treegrid/getting-started)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> React documentation](https://ej2.syncfusion.com/react/documentation/treegrid/getting-started)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Vue documentation](https://ej2.syncfusion.com/vue/documentation/treegrid/getting-started)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core documentation](https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/getting-started-core)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/tree-grid/getting-started-mvc)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor documentation](https://blazor.syncfusion.com/documentation/treegrid/getting-started-webapp)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Area in ##Platform_Name## Chart control | Syncfusion
+title: Area Chart in ##Platform_Name## Charts | Syncfusion
 description: Learn here all about Area in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Area 
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Area Chart in ##Platform_Name## control
+# Area Chart in ##Platform_Name## Charts
 
 ## Area
 

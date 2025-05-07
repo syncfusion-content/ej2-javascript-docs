@@ -43,20 +43,20 @@ Refer the following steps for setup your local environment.
 
 **Step 2:** Create **myapp/resources** folder to store local scripts and styles files.
 
-**Step 3:** Create **myapp/index.js** and **myapp/index.html** files for initializing Essential JS 2 Stock Chart control.
+**Step 3:** Create **myapp/index.js** and **myapp/index.html** files for initializing Essential<sup style="font-size:70%">&reg;</sup> JS 2 Stock Chart control.
 
-## Adding Syncfusion resources
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
 
-The Essential JS 2 Stock Chart control can be initialized by using either of the following ways.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Stock Chart control can be initialized by using either of the following ways.
 
 * Using local script.
 * Using CDN link for script.
 
 ### Using local script
 
-You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
-After installing the Essential JS 2 product build, you can copy the chart and its dependencies scripts and style file into the **resources/scripts** and **resources/styles** folder.
+After installing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 product build, you can copy the chart and its dependencies scripts and style file into the **resources/scripts** and **resources/styles** folder.
 
 Refer the below code to find location stock chart's script and style file.
 
@@ -155,7 +155,7 @@ The below html code example shows the minimal dependency of chart.
 
 Now, you can start adding stock chart control in the application. For getting started, add a **div** element for Chart control in **index.html**. Then refer the **index.js** file into the **index.html** file.
 
-In this document context we are going to use **ej2.min.js** which includes all the Essential JS 2 components and its dependent scripts.
+In this document context we are going to use **ej2.min.js** which includes all the Essential<sup style="font-size:70%">&reg;</sup> JS 2 components and its dependent scripts.
 
 ```html
 <!DOCTYPE html>

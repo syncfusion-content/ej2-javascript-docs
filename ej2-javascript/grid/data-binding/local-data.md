@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Local data in ##Platform_Name## Grid control
 
-The Syncfusion Grid offers a straight forward way to bind local data, such as arrays or JSON objects, to the grid control. This feature allows you to display and manipulate data within the grid without the need for external server calls, making it particularly useful for scenarios where you're working with static or locally stored data.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid offers a straight forward way to bind local data, such as arrays or JSON objects, to the grid control. This feature allows you to display and manipulate data within the grid without the need for external server calls, making it particularly useful for scenarios where you're working with static or locally stored data.
 
 To achieve this, you can assign a JavaScript object array to the [dataSource](../../api/grid/#datasource) property. Additionally, you have an option to provide the local data source using an instance of the **DataManager**.
 
@@ -46,9 +46,9 @@ The following example demonstrates how to utilize the local data binding feature
 
 ## Data binding with SignalR
 
-The Syncfusion Grid provides support for real-time data binding using SignalR, allowing you to update the grid automatically as data changes on the server-side. This feature is particularly useful for applications requiring live updates and synchronization across multiple clients.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid provides support for real-time data binding using SignalR, allowing you to update the grid automatically as data changes on the server-side. This feature is particularly useful for applications requiring live updates and synchronization across multiple clients.
 
-To achieve real-time data binding with SignalR in your Syncfusion ##Platform_Name## Grid, follow the steps below:
+To achieve real-time data binding with SignalR in your Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid, follow the steps below:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -132,7 +132,7 @@ module.exports = {
     ],
 };
 ```
-**Step 9:** Open your terminal in the project root folder and install the required Syncfusion packages using npm:
+**Step 9:** Open your terminal in the project root folder and install the required Syncfusion<sup style="font-size:70%">&reg;</sup> packages using npm:
 
 ```ts
 
@@ -1190,15 +1190,15 @@ The following screenshot represents the addition, editing, and deletion operatio
 
 {% if page.publishingplatform == "typescript" %}
  
-The Syncfusion Grid control allows you to import data from Excel files into your web application for display and manipulation within the grid. This feature streamlines the process of transferring Excel data to a web-based environment. This can be achieved by using [Uploader](../../uploader/getting-started) control [change](../../api/uploader#change) event.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control allows you to import data from Excel files into your web application for display and manipulation within the grid. This feature streamlines the process of transferring Excel data to a web-based environment. This can be achieved by using [Uploader](../../uploader/getting-started) control [change](../../api/uploader#change) event.
 
  {% elsif page.publishingplatform == "javascript" %}
  
-The Syncfusion Grid control allows you to import data from Excel files into your web application for display and manipulation within the grid. This feature streamlines the process of transferring Excel data to a web-based environment. This can be achieved by using [Uploader](../../uploader/es5-getting-started) control [change](../../api/uploader#change) event. 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control allows you to import data from Excel files into your web application for display and manipulation within the grid. This feature streamlines the process of transferring Excel data to a web-based environment. This can be achieved by using [Uploader](../../uploader/es5-getting-started) control [change](../../api/uploader#change) event. 
 
 {% endif %}
 
-To bind data from an Excel file to a Syncfusion Grid control, including the xlsx library via a script tag in an HTML page
+To bind data from an Excel file to a Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control, including the xlsx library via a script tag in an HTML page
 
 ```html
 <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
@@ -1249,9 +1249,9 @@ The following example demonstrates how to import Excel data into the grid by uti
 
 ## Binding data and performing CRUD actions via Fetch request
 
-The Syncfusion Grid provides a seamless way to bind data from external sources using Fetch requests, facilitating CRUD (Create, Read, Update, Delete) operations with data retrieved from a server. This feature is particularly valuable for sending data to a server for database updates and asynchronously retrieving data without refreshing the entire web page.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid provides a seamless way to bind data from external sources using Fetch requests, facilitating CRUD (Create, Read, Update, Delete) operations with data retrieved from a server. This feature is particularly valuable for sending data to a server for database updates and asynchronously retrieving data without refreshing the entire web page.
 
-To achieve data binding and perform CRUD actions using Fetch requests in the Syncfusion Grid, follow these steps:
+To achieve data binding and perform CRUD actions using Fetch requests in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, follow these steps:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -1414,7 +1414,7 @@ app.Run();
 {% endhighlight %}
 {% endtabs %}
 
-**Step 12:** Open your terminal in the project root folder and install the required Syncfusion packages using npm:
+**Step 12:** Open your terminal in the project root folder and install the required Syncfusion<sup style="font-size:70%">&reg;</sup> packages using npm:
 
 ```ts
 
@@ -2129,11 +2129,11 @@ The following screenshot represents loading data when the button is clicked and 
 
 ### Display the loading indicator with local data. 
 
-The Syncfusion Grid allows you to display a loading indicator while loading local data. This feature is useful when there is a delay in loading data from a local source, and you want to inform the you that the data is being fetched.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to display a loading indicator while loading local data. This feature is useful when there is a delay in loading data from a local source, and you want to inform the you that the data is being fetched.
 
 To display the loading indicator with local data, you need to set the [showSpinner](../api/grid#showspinner) property to **true**. This property controls the visibility of the loading indicator.
 
-The following example demonstrates how to display the loading indicator in the Syncfusion Grid using the [load](../api/grid#load) and [created](../api/grid/#created) events:
+The following example demonstrates how to display the loading indicator in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid using the [load](../api/grid#load) and [created](../api/grid/#created) events:
 
 
 {% if page.publishingplatform == "typescript" %}
@@ -2223,9 +2223,9 @@ function created(){
 
 ## Binding data and performing CRUD actions via AJAX request
 
-The Syncfusion Grid provides a seamless way to bind data from external sources using AJAX requests, facilitating CRUD (Create, Read, Update, Delete) operations with data retrieved from a server. This feature is particularly valuable for sending data to a server for database updates and asynchronously retrieving data without refreshing the entire web page
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid provides a seamless way to bind data from external sources using AJAX requests, facilitating CRUD (Create, Read, Update, Delete) operations with data retrieved from a server. This feature is particularly valuable for sending data to a server for database updates and asynchronously retrieving data without refreshing the entire web page
 
-To achieve data binding and perform CRUD actions using Ajax requests in the Syncfusion Grid, follow these steps:
+To achieve data binding and perform CRUD actions using Ajax requests in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, follow these steps:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -2370,7 +2370,7 @@ app.Run();
 {% endhighlight %}
 {% endtabs %}
 
-**Step 11:** Open your terminal in the project root folder and install the required Syncfusion packages using npm:
+**Step 11:** Open your terminal in the project root folder and install the required Syncfusion<sup style="font-size:70%">&reg;</sup> packages using npm:
 
 ```ts
 
@@ -3105,11 +3105,11 @@ The following screenshot represents loading data when the button is clicked and 
 
 ### Display the loading indicator using AJAX. 
 
-The Syncfusion Grid allows you to display a loading indicator while loading data using AJAX. This feature is useful when there is a delay in loading data from data , and you want to inform the you that the data is being fetched. This is particularly beneficial when working with large datasets or under conditions of slower internet connections.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to display a loading indicator while loading data using AJAX. This feature is useful when there is a delay in loading data from data , and you want to inform the you that the data is being fetched. This is particularly beneficial when working with large datasets or under conditions of slower internet connections.
 
 To display the loading indicator with local data, you need to set the [showSpinner](../api/grid#showspinner) property to **true**. This property controls the visibility of the loading indicator.
 
-The following example demonstrates how to display the loading indicator in the Syncfusion Grid using the [load](../api/grid#load) and [created](../api/grid/#created) events:
+The following example demonstrates how to display the loading indicator in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid using the [load](../api/grid#load) and [created](../api/grid/#created) events:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -3213,7 +3213,7 @@ function created() {
 
 ## Managing spinner visibility during data loading
 
-Showing a spinner during data loading in the Syncfusion ##Platform_Name## Grid enhances the experience by providing a visual indication of the loading progress. This feature helps to understand that data is being fetched or processed.
+Showing a spinner during data loading in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid enhances the experience by providing a visual indication of the loading progress. This feature helps to understand that data is being fetched or processed.
 
 To show or hide a spinner during data loading in the grid, you can utilize the [showSpinner](../../api/grid/#showspinner) and [hideSpinner](../../api/grid/#hidespinner) methods provided by the Grid control.
 
@@ -3248,7 +3248,7 @@ The following example demonstrates how to show and hide the spinner during data 
 
 ## Immutable mode  
 
-Immutable mode in the Syncfusion Grid is designed to optimize re-rendering performance by utilizing the object reference and [deep compare](https://dmitripavlutin.com/how-to-compare-objects-in-javascript/#4-deep-equality) concept. This mode ensures that when performing Grid actions, only the modified or newly added rows are re-rendered, preventing unnecessary re-rendering of unchanged rows. 
+Immutable mode in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid is designed to optimize re-rendering performance by utilizing the object reference and [deep compare](https://dmitripavlutin.com/how-to-compare-objects-in-javascript/#4-deep-equality) concept. This mode ensures that when performing Grid actions, only the modified or newly added rows are re-rendered, preventing unnecessary re-rendering of unchanged rows. 
 
 To enable this feature, you need to set the [enableImmutableMode](../../api/grid/#enableImmutableMode) property as **true**.
 

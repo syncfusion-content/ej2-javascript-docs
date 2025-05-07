@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Use local script and style references in ##Platform_Name## Pdfviewer control
 
-**Step 1:** Create an app folder `myapp` for Essential JS 2 JavaScript components.
+**Step 1:** Create an app folder `myapp` for Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2/) build installed location.
+**Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2/) build installed location.
 
 **Syntax:**
 > Script: `**(installed location)**/Syncfusion/Essential Studio/JavaScript - EJ2/{RELEASE_VERSION}/Web(Essential JS 2)/JavaScript/{PACKAGE_NAME}/dist/{PACKAGE_NAME}.min.js`
@@ -25,7 +25,7 @@ domainurl: ##DomainURL##
 >
 > Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/JavaScript - EJ2/19.3.53/Web(Essential JS 2)/JavaScript/ej2-js-es5/styles/material.css`
 
-You can also clone the [`Essential JS 2 quickstart`](https://github.com/syncfusion/ej2-quickstart.git) project and install necessary packages by using the following commands.
+You can also clone the [Essential<sup style="font-size:70%">&reg;</sup> JS 2 quickstart](https://github.com/syncfusion/ej2-quickstart.git) project and install necessary packages by using the following commands.
 
 ```
 git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
@@ -35,7 +35,7 @@ npm install
 
 **Step 3:** Create a folder `myapp/resources` and copy/paste the scripts and styles of ej2 package from the above installed location to `myapp/resources` location.
 
-**Step 4:** Add the `Div` element and initiate the `Essential JS 2 PDF Viewer` component with script and style references in the `index.html` by using following code
+**Step 4:** Add the `Div` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 PDF Viewer** component with script and style references in the `index.html` by using following code
 
 ```html
 <!DOCTYPE html>
@@ -67,6 +67,6 @@ npm install
   </html>
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential JS 2 PDF Viewer** component as below.
+**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 PDF Viewer** component as below.
 
 ![JavaScript Output](../../pdfviewer/images/javascript_output.png)

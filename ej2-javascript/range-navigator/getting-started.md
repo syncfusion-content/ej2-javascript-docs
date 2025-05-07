@@ -30,7 +30,7 @@ This section explains you the steps required to create a simple range navigator 
 
 ## Setup for Local Development
 
-Clone the Essential JS 2 quickstart application project from [GitHub](https://github.com/syncfusion/ej2-quickstart), and install the necessary npm packages using the following command line scripts.
+Clone the Essential<sup style="font-size:70%">&reg;</sup> JS 2 quickstart application project from [GitHub](https://github.com/syncfusion/ej2-quickstart), and install the necessary npm packages using the following command line scripts.
 
 ```javascript
 git clone https://github.com/angular/quickstart.git quickstart
@@ -40,7 +40,7 @@ npm install
 
 ## Configuring System JS
 
-Syncfusion Chart packages have to be mapped in the `system.config.js` configuration file to render range navigator.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Chart packages have to be mapped in the `system.config.js` configuration file to render range navigator.
 
 ```javascript
 System.config({
@@ -201,7 +201,7 @@ Since the JSON contains Datetime data, set the `valueType` as `DateTime`. By def
 {% previewsample "page.domainurl/code-snippet/rangenavigator/getting-started-cs7" %}
 {% endif %}
 
->Note: Get data from [here](https://gitlab.syncfusion.com/essential-studio/ej2-samples/blob/master/src/rangenavigator/default_data.json).
+>Note: Get data from [here](https://github.com/essential-studio/ej2-samples/blob/master/src/range-navigator/default-data.json).
 
 The sample should look like our [default](http://npmci.syncfusion.com/production/demos/#/material/rangenavigator/default.html), don’t worry about the gradient color, let it takes the default color.
 

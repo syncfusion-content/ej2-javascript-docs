@@ -74,4 +74,4 @@ The accessibility compliance of the Button group component is shown in the follo
 
 ## See also
 
-* [Accessibility in Syncfusion ##Platform_Name## components](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## components](../common/accessibility)

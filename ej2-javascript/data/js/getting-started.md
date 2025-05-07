@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Data control
 
-This section explains you the steps required to create a simple Essential JS 2 Data Manager and demonstrate the basic usage of the Data Manager control in a JavaScript application.
+This section explains you the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Data Manager and demonstrate the basic usage of the Data Manager control in a JavaScript application.
 
 ## Dependencies
 
@@ -29,24 +29,24 @@ Below is the list of minimum dependencies required to use the DataManager.
 
 Refer the following steps for setup your local environment.
 
-**Step 1:** Create a root folder `myapp` for your application.
+**Step 1:** Create a root folder `my-app` for your application.
 
-**Step 2:** Create `myapp/resources` folder to store local scripts files.
+**Step 2:** Create `my-app/resources` folder to store local scripts files.
 
-**Step 3:** Create `myapp/index.js` and `myapp/index.html` files for initializing Essential JS 2 data manager control.
+**Step 3:** Create `my-app/index.js` and `my-app/index.html` files for initializing Essential<sup style="font-size:70%">&reg;</sup> JS 2 data manager control.
 
-## Adding Syncfusion resources
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
 
-The Essential JS 2 Data Manager control can be initialized by using either of the following ways.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Data Manager control can be initialized by using either of the following ways.
 
 * Using local script.
 * Using CDN link for script.
 
 ### Using local script
 
-You can get the global script from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+You can get the global script from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
-After installing the Essential JS 2 product build, you can copy the data manager and its dependencies scripts file into the `resources/scripts` folder.
+After installing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 product build, you can copy the data manager and its dependencies scripts file into the `resources/scripts` folder.
 
 Refer the below code to find location data manager's script file.
 
@@ -116,7 +116,7 @@ The DataManager can act as gateway for both local and remote data source which w
 
 Create `my-app/es5-datasource.js` file to bind JSON data.
 
-Add the CSS below to the `myapp/index.html` file to style the table.
+Add the CSS below to the `my-app/index.html` file to style the table.
 
 ```html
 <style>
@@ -228,13 +228,13 @@ The `page` method of the Query class is used to get range of data based on the p
 
 ## Component binding
 
-DataManager component can be used with Syncfusion components which supports data binding.
+DataManager component can be used with Syncfusion<sup style="font-size:70%">&reg;</sup> components which supports data binding.
 
 In the following samples, the grid component is bound. To render the grid with the necessary configurations, please refer to the [Grid Getting Started](https://ej2.syncfusion.com/javascript/documentation/grid/getting-started) documentation.
 
 ### Local data binding
 
-A DataSource can be created in-line with other Syncfusion component configuration settings.
+A DataSource can be created in-line with other Syncfusion<sup style="font-size:70%">&reg;</sup> component configuration settings.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -252,7 +252,7 @@ A DataSource can be created in-line with other Syncfusion component configuratio
 
 ### Remote data binding
 
-To bind remote data to Syncfusion component, you can assign a service data as an instance of `DataManager` to the `dataSource` property.
+To bind remote data to Syncfusion<sup style="font-size:70%">&reg;</sup> component, you can assign a service data as an instance of `DataManager` to the `dataSource` property.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Global local in ##Platform_Name## Grid control
 
-The Syncfusion ##Platform_Name## Grid control provides a feature known as Globalization (global and local), which makes the application more accessible and useful for individuals from different regions and language backgrounds. You have the ability to view data in your preferred language and format, resulting in an enhanced overall experience.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control provides a feature known as Globalization (global and local), which makes the application more accessible and useful for individuals from different regions and language backgrounds. You have the ability to view data in your preferred language and format, resulting in an enhanced overall experience.
 
 ## Localization
 
-The Syncfusion ##Platform_Name## Grid provides a built-in [Localization](../common/localization) library, enabling you to customize the text used in the grid to suit different languages or cultural preferences. With this library, you can change static text on various elements, such as **group drop area text** and **pager information text**, to different cultures, such as **Arabic**, **Deutsch**, **French**, and more.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid provides a built-in [Localization](../common/localization) library, enabling you to customize the text used in the grid to suit different languages or cultural preferences. With this library, you can change static text on various elements, such as **group drop area text** and **pager information text**, to different cultures, such as **Arabic**, **Deutsch**, **French**, and more.
 
 This can be achieved by defining the [locale](../api/grid/#locale) property and translation object.
 
@@ -229,7 +229,7 @@ Pages |  Pages |
 
 ### Loading translations for de culture
 
-The Syncfusion ##Platform_Name## Grid control provides a built-in Localization library that allows you to load translation objects for different cultures. By using the **load** function of the **L10n** class, you can customize the text content of the Grid to be displayed in different languages. 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control provides a built-in Localization library that allows you to load translation objects for different cultures. By using the **load** function of the **L10n** class, you can customize the text content of the Grid to be displayed in different languages. 
 
 This feature allows you to specify translation objects for specific cultures, such as **Deutsch** (German), and display the Grid's content in the desired language.
 
@@ -383,7 +383,7 @@ For example, when the first Grid is set to use the **fr-FR** Locale, it applies 
 
 ## Internationalization
 
-The Internationalization library in the Syncfusion ##Platform_Name## Grid provides a localized display of number, date, and time values in the Grid control based on the preferred language and region.
+The Internationalization library in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid provides a localized display of number, date, and time values in the Grid control based on the preferred language and region.
 
 [Internationalization](../common/internationalization) library allows you to globalize number, date, and time values using format strings defined in the [columns.format](../api/grid/column/#format) property.
 
@@ -421,7 +421,7 @@ You need to load the culture format files corresponding to the desired locale. T
 
 ## Right to Left - RTL
 
-The Right to Left (RTL) feature in the Syncfusion ##Platform_Name## Grid allows you to switch the text direction and layout from left-to-right to right-to-left. This feature is especially beneficial for interacting with the grid in languages that are written and read from right to left, such as **Arabic**, **Farsi,** **Urdu**, and others. Enabling RTL significantly improves the experience and accessibility for such languages.
+The Right to Left (RTL) feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid allows you to switch the text direction and layout from left-to-right to right-to-left. This feature is especially beneficial for interacting with the grid in languages that are written and read from right to left, such as **Arabic**, **Farsi,** **Urdu**, and others. Enabling RTL significantly improves the experience and accessibility for such languages.
 
 To enable RTL in the Grid, you need to set the [enableRtl](../api/grid/#enablertl) property to **true**. By setting `enableRtl`, the grid control's text direction and layout will be adjusted to support right-to-left languages.
 

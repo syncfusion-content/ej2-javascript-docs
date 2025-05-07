@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Accumulation chart control
 
-This article describes the API migration process of Chart component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Chart component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Accumulation Chart
 
@@ -19,8 +19,8 @@ This article describes the API migration process of Chart component from Essenti
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -491,8 +491,8 @@ pie.appendTo('#chart');
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -762,8 +762,8 @@ chart.appendTo('#chart');
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -1594,8 +1594,8 @@ chart.appendTo('#chart);
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -1849,8 +1849,8 @@ chart.appendTo('#chart);
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -2356,8 +2356,8 @@ Not applicable
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -2509,8 +2509,8 @@ chart.removeSeries();
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>

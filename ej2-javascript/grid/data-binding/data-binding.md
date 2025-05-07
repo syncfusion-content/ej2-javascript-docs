@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 Data binding is a fundamental technique that empowers the Grid control to integrate data into its interface, enabling the creation of dynamic and interactive grid views. This feature is particularly valuable when working with large datasets or when data needs to be fetched remotely. 
 
-The Syncfusion Grid utilizes the **DataManager**, which supports both local binding with JavaScript object arrays and remote binding with RESTful JSON data services. The key property, [dataSource](../../api/grid/#datasource), can be assigned to a DataManager instance or a collection of JavaScript object arrays.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid utilizes the **DataManager**, which supports both local binding with JavaScript object arrays and remote binding with RESTful JSON data services. The key property, [dataSource](../../api/grid/#datasource), can be assigned to a DataManager instance or a collection of JavaScript object arrays.
 
 It supports two kinds of data binding methods:
 
@@ -22,7 +22,7 @@ It supports two kinds of data binding methods:
 
 ## Loading indicator
 
-The Syncfusion ##Platform_Name##  Grid offers a loading animation feature, which makes it easy to identify when data is being loaded or refreshed. This feature provides a clear understanding of the grid's current state and actions, such as sorting, filtering, grouping, and more.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name##  Grid offers a loading animation feature, which makes it easy to identify when data is being loaded or refreshed. This feature provides a clear understanding of the grid's current state and actions, such as sorting, filtering, grouping, and more.
 
 To achieve this, you can utilize the [loadingIndicator.indicatorType](../../api/grid/loadingIndicatorModel/) property of the grid, which supports two types of indicators:
 
@@ -60,7 +60,7 @@ The following example demonstrates how to set the `loadingIndicator.indicatorTyp
 
 ## Refresh the datasource using property
 
-Refreshing the data source in a Syncfusion Grid involves updating the data that the grid displays dynamically. This operation is essential when you need to reflect changes in the underlying data without reloading the entire page or control.
+Refreshing the data source in a Syncfusion<sup style="font-size:70%">&reg;</sup> Grid involves updating the data that the grid displays dynamically. This operation is Essential<sup style="font-size:70%">&reg;</sup> when you need to reflect changes in the underlying data without reloading the entire page or control.
 
 To achieve this, you can make use of the [datasource](../../api/grid/#datasource) property in conjunction with the `setProperties` method. This ensures that the grid reflects the changes in the data source without requiring a complete page or control reload.
 
@@ -122,7 +122,7 @@ The following example demonstrates adding a new record to the data source throug
 
 ## Dynamically change the datasource or columns or both
 
-The Grid control in Syncfusion allows dynamic modification of the data source, columns, or both . This feature is particularly valuable when you need to refresh the grid's content and structure without requiring a complete page reload.
+The Grid control in Syncfusion<sup style="font-size:70%">&reg;</sup> allows dynamic modification of the data source, columns, or both . This feature is particularly valuable when you need to refresh the grid's content and structure without requiring a complete page reload.
 
 To achieve dynamic changes, you can utilize the [changeDataSource](../../api/grid/#changedatasource) method. This method enables you to update the data source, columns, or both, based on your application's requirements. However, it is important to note that during the changing process for the data source and columns, the grid's existing actions such as sorting, filtering, grouping, aggregation, and searching will be reset. The `changeDataSource` method has two optional arguments: the first argument represents the data source, and the second argument represents the columns. The various uses of the `changeDataSource` method are explained in the following topic.
 
@@ -245,11 +245,11 @@ The following code demonstrates, how to use the `changeDataSource` method to bin
 
 ## Prevent to convert local time zone format for date column
 
-By default, Syncfusion ##Platform_Name## Grid automatically converts date values to the local time zone of the client system. However, in some scenarios, you may need to display the original date as received from the server without any timezone conversion.
+By default, Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid automatically converts date values to the local time zone of the client system. However, in some scenarios, you may need to display the original date as received from the server without any timezone conversion.
 
 To prevent timezone conversion for a date column, use the `serverTimezoneOffset` property from `DataUtil`. Setting this property to **0** ensures that dates remain in the original format received from the server without conversion to the local timezone.
 
-The following example demonstrates how to prevent local time zone conversion for date columns in Syncfusion ##Platform_Name## Grid by using the `DataUtil.serverTimezoneOffset` property:
+The following example demonstrates how to prevent local time zone conversion for date columns in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid by using the `DataUtil.serverTimezoneOffset` property:
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Syncfusion JavaScript (Essential JS 2) library and Meteor Framework
+# Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) library and Meteor Framework
 
-This article provides a step-by-step introduction to configure Syncfusion JavaScript (Essential JS 2) library and build it in the Meteor framework.
+This article provides a step-by-step introduction to configure Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) library and build it in the Meteor framework.
 
 ## Prerequisites
 
@@ -54,7 +54,7 @@ on OSX/LINUX:
 
 ![ej2 meteor npm install](images/meteor-npm-install.png)
 
-## Configure Essential JS 2 control in application
+## Configure Essential<sup style="font-size:70%">&reg;</sup> JS 2 control in application
 
 1.Install the [`@syncfusion/ej2`](https://www.npmjs.com/package/@syncfusion/ej2) npm package in the application using the following command line.
 
@@ -89,7 +89,7 @@ on OSX/LINUX:
     ....
 ```
 
-3.Then, import the Syncfusion JavaScript styles, and render the Calender control inside the `Meteor.startup` method in `~/src/client/main.js` file.
+3.Then, import the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript styles, and render the Calender control inside the `Meteor.startup` method in `~/src/client/main.js` file.
 
 ```js
     ....

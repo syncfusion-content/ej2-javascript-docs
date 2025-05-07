@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Stack line in ##Platform_Name## Chart control | Syncfusion
-description: Learn here all about Stack line in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
+title: Stacked Line Chart in ##Platform_Name## Charts | Syncfusion
+description: Learn here all about Stacked Line in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Stack line 
+control: Stacked Line 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Stack line Chart in ##Platform_Name## control
+# Stacked Line Chart in ##Platform_Name## Charts
 
-## Stacked line
+## Stacked Line
 
 To render a [stacked line](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/stacked-line-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  

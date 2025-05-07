@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Tool bar items in ##Platform_Name## Grid control
 
-The Syncfusion ##Platform_Name## Grid offers a flexible toolbar that enables the addition of custom toolbar items or modification of existing ones. This customizable toolbar is positioned above the grid, providing a convenient way to access various actions and functionalities
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid offers a flexible toolbar that enables the addition of custom toolbar items or modification of existing ones. This customizable toolbar is positioned above the grid, providing a convenient way to access various actions and functionalities
 
 ## Built-in toolbar items
 
-Built-in toolbar items in the Syncfusion ##Platform_Name## Grid control involves utilizing pre-defined actions to perform standard operations within the Grid.
+Built-in toolbar items in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control involves utilizing pre-defined actions to perform standard operations within the Grid.
 
 These items can be added by defining the [toolbar](../../api/grid/#toolbar) property as a collection of built-in items. Each item is rendered as a button with an icon and text. The following table lists the built-in toolbar items and their respective actions.
 
@@ -108,7 +108,7 @@ This is demonstrated in the following sample:
 
 ### Customize the built-in toolbar items
 
-The Syncfusion ##Platform_Name## Grid component allows you to customize the built-in toolbar items to meet your specific requirements. This can include adding, removing, or modifying toolbar items, as well as handling custom actions when toolbar buttons are clicked.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid component allows you to customize the built-in toolbar items to meet your specific requirements. This can include adding, removing, or modifying toolbar items, as well as handling custom actions when toolbar buttons are clicked.
 
 To customize the built-in toolbar items, you can use the [toolbarClick](../../api/grid/#toolbarclick) event of the grid.
 
@@ -143,7 +143,7 @@ The following example demonstrate how to customize the toolbar by disabling and 
 
 ## Custom toolbar items
 
-Adding custom toolbar items to the Syncfusion ##Platform_Name## Grid involves incorporating personalized functionality into the toolbar.
+Adding custom toolbar items to the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid involves incorporating personalized functionality into the toolbar.
 
 Custom toolbar items can be added to the Grid control by defining the [toolbar](../../api/grid/#toolbar) property as a collection of [ItemModel](../../api/toolbar/itemModel) objects. These objects define the custom items and their corresponding actions. The actions for the customized toolbar items are defined in the [toolbarClick](../../api/grid/#toolbarclick) event.
 
@@ -181,7 +181,7 @@ By default, custom toolbar items are positioned on the **left** side of the tool
 
 ## Both built-in and custom items in toolbar
 
-Built-in and custom items in a toolbar within the Syncfusion ##Platform_Name## Grid provides the flexibility to create a customized toolbar with a combination of standard actions and custom actions.
+Built-in and custom items in a toolbar within the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid provides the flexibility to create a customized toolbar with a combination of standard actions and custom actions.
 
 To use both types of toolbar items, you can define the [toolbar](../../api/grid/#toolbar) property of the Grid as an array that includes both built-in and custom items. The built-in items are specified as strings, while the custom items are defined as objects with properties such as [text](../../api/toolbar/item/#text), [prefixIcon](../../api/toolbar/item/#prefixicon), and [id](../../api/toolbar/item/#id) within the toolbar control.
 
@@ -216,7 +216,7 @@ The following example demonstrates, how to use both built-in and custom toolbar 
 
 ## Custom toolbar control in a specific position
 
-Customizing the position of a custom toolbar within the Syncfusion ##Platform_Name## Grid involves modifying the default placement of the custom toolbar items. This enables you to precisely control the positioning of each custom toolbar item according to your specific requirements and desired layout within the Grid.
+Customizing the position of a custom toolbar within the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid involves modifying the default placement of the custom toolbar items. This enables you to precisely control the positioning of each custom toolbar item according to your specific requirements and desired layout within the Grid.
 
 By default, custom toolbar items in Grid control are aligned on the left side of the toolbar. However, you have the ability to modify the position of the custom toolbar items by utilizing the [align](../../api/toolbar/itemModel#align) property of the [ItemModel](../../api/toolbar/itemModel).
 

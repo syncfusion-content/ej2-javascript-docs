@@ -11,4 +11,4 @@ domainurl: ##DomainURL##
 
 # Index in ##Platform_Name## Chips control
 
-The chip is a small block of essential information that triggers an event on click action. It contains the text, image, or both and mostly used in contacts, mails, or filter tags.
+The chip is a small block of Essential<sup style="font-size:70%">&reg;</sup> information that triggers an event on click action. It contains the text, image, or both and mostly used in contacts, mails, or filter tags.

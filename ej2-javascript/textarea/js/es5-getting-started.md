@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Es5 Getting Started in ##Platform_Name## TextArea Control
 
-This section explains how to create a simple TextArea Control and configure its available functionalities, using Essential JS 2 quickstart seed repository.
+This section explains how to create a simple TextArea Control and configure its available functionalities, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 quickstart seed repository.
 
 ## Dependencies
 
@@ -25,7 +25,7 @@ The following list of dependencies are required to use the TextArea Control in y
 
 ## Installation and configuration
 
-* Clone the Essential JS 2 quickstart application project from [GitHub](https://github.com/syncfusion/ej2-quickstart.git) and install necessary npm packages using the following command.
+* Clone the Essential<sup style="font-size:70%">&reg;</sup> JS 2 quickstart application project from [GitHub](https://github.com/syncfusion/ej2-quickstart.git) and install necessary npm packages using the following command.
 
 ```
 git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
@@ -33,7 +33,7 @@ cd quickstart
 npm install
 ```
 
-> By default, the project is configured with all the Essential JS 2 dependencies. For better understanding, remove all the dependencies from
+> By default, the project is configured with all the Essential<sup style="font-size:70%">&reg;</sup> JS 2 dependencies. For better understanding, remove all the dependencies from
 `src/system.config.js` to get started with the TextArea Control.
 
 * Refer to the [TextArea component dependencies](#dependencies) in `system.config.js` configuration file.

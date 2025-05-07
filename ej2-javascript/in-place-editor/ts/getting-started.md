@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## In place editor control
 
-This section briefly explains about how to create a simple In-place Editor using TypeScript and configure its properties using the Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section briefly explains about how to create a simple In-place Editor using TypeScript and configure its properties using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
@@ -33,7 +33,7 @@ The following is the list of dependencies required to use the In-place Editor co
 
 ## Set up development environment
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
+Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -53,9 +53,9 @@ cd ej2-quickstart
 {% endhighlight %}
 {% endtabs %}
 
-## Add Syncfusion JavaScript packages
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript packages
 
-Syncfusion JavaScript (Essential JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion JavaScript (Essential JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
 
 The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
 
@@ -67,7 +67,7 @@ npm install
 {% endhighlight %}
 {% endtabs %}
 
-## Import the Syncfusion CSS styles
+## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
 In-place Editor CSS files are available in the ej2-inplace-editor and its sub-control package folder. This can be referenced in the `~/src/styles/styles.css` file of your application using the following code.
 
@@ -89,7 +89,7 @@ In-place Editor CSS files are available in the ej2-inplace-editor and its sub-co
 {% endhighlight %}
 {% endtabs %}
 
-* If you want to use the combined CSS files of entire controls, you can avail it from the root folder of Essential JS 2 package and reference it with the following code.
+* If you want to use the combined CSS files of entire controls, you can avail it from the root folder of Essential<sup style="font-size:70%">&reg;</sup> JS 2 package and reference it with the following code.
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -101,7 +101,7 @@ In-place Editor CSS files are available in the ej2-inplace-editor and its sub-co
 
 ## Add the In-place Editor with Textbox
 
-By default, the Essential JS 2 TextBox control is rendered in In-place Editor with the [`type`](../api/inplace-editor/inputType/) property sets as Text.
+By default, the Essential<sup style="font-size:70%">&reg;</sup> JS 2 TextBox control is rendered in In-place Editor with the [`type`](../api/inplace-editor/inputType/) property sets as Text.
 
 * Add the HTML div tag with its ID attribute as `element` in your `index.html` file to initialize the In-place Editor.
 
@@ -157,7 +157,7 @@ editObj.appendTo('#element');
 
 ## Configuring DropDownList
 
-You can render the Essential JS 2 DropDownList by changing the [`type`](../api/inplace-editor/inputType/) property as [`DropDownList`](../api/drop-down-list) and configure its properties and methods using the `model` property.
+You can render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 DropDownList by changing the [`type`](../api/inplace-editor/inputType/) property as [`DropDownList`](../api/drop-down-list) and configure its properties and methods using the `model` property.
 
 In the following sample, [`type`](../api/inplace-editor/inputType/) and model values are configured to render the [`DropDownList`](../api/drop-down-list) control.
 
@@ -183,7 +183,7 @@ editObj.appendTo('#element');
 
 ## Integrate DatePicker
 
-You can render the Essential JS2 [DatePicker](../api/datepicker) by changing the [`type`](../api/inplace-editor/inputType/) property as [`Date`](../api/inplace-editor/inputType/)  and also configure its properties and methods using the [`model`](../api/inplace-editor/#model) property.
+You can render the Essential<sup style="font-size:70%">&reg;</sup> JS2 [DatePicker](../api/datepicker) by changing the [`type`](../api/inplace-editor/inputType/) property as [`Date`](../api/inplace-editor/inputType/)  and also configure its properties and methods using the [`model`](../api/inplace-editor/#model) property.
 
 In the following sample, [`type`](../api/inplace-editor/inputType/) and [`model`](../api/inplace-editor/#model) values are configured to render the [DatePicker](../api/datepicker) control.
 

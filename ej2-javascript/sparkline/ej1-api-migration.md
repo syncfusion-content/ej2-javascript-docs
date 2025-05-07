@@ -11,17 +11,17 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Sparkline control
 
-This article describes the API migration process of Accordion component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Accordion component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Sparkline Types
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Type| **Property:** *type*<br/><br/> $("#container").ejSparkline({ type : 'line' }); |**Property:** *type*<br/><br/> let sparkline: Sparkline = new Sparkline({ <br/> &nbsp; type: 'Line' <br/> }); <br/> sparkline.appendTo('#container');|
 
 ## Databinding
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Datasource| **Property:** *dataSource*<br/><br/> $("#container").ejSparkline({ dataSource : 'data' }); |**Property:** *dataSource*<br/><br/> let sparkline: Sparkline = new Sparkline({ <br/> &nbsp; dataSource: data <br/> }); <br/> sparkline.appendTo('#container');|
 |Binding X values with datasource| **Property:** *xName*<br/><br/> $("#container").ejSparkline({ xName : "XValue" }); |**Property:** *xName*<br/><br/> let sparkline: Sparkline = new Sparkline({ <br/> &nbsp; xName: 'XValue' <br/> }); <br/> sparkline.appendTo('#container');|
@@ -29,7 +29,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Markers
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Enable markers| **Property:** *markerSettings.visible*<br/><br/> $("#container").ejSparkline({ <br/>&nbsp; markerSettings :{ visible : true } <br/>}); |**Property:** *markerSettings.visible*<br/><br/> let sparkline: Sparkline = new Sparkline({ <br/> &nbsp; markerSettings: { <br/> &nbsp; &nbsp; visible: ['All'] <br/> &nbsp; } <br/> }); <br/> sparkline.appendTo('#container');|
 |Color| **Property:** *markerSettings.fill*<br/><br/> $("#container").ejSparkline({ <br/>&nbsp; markerSettings :{ fill : "green" } <br/>}); |**Property:** *markerSettings.fill*<br/><br/> let sparkline: Sparkline = new Sparkline({ <br/> &nbsp; markerSettings: { <br/> &nbsp; &nbsp; fill: "green" <br/> &nbsp; } <br/> }); <br/> sparkline.appendTo('#container');|
@@ -41,7 +41,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Data labels
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Enable data labels| Not applicable |**Property:** *dataLabelSettings.visible*<br/><br/> let sparkline: Sparkline = new Sparkline({ <br/> &nbsp; dataLabelSettings: { <br/> &nbsp; &nbsp; visible: ['All'] <br/> &nbsp; } <br/> }); <br/> sparkline.appendTo('#container');|
 |Color| Not applicable |**Property:** *dataLabelSettings.fill*<br/><br/> let sparkline: Sparkline = new Sparkline({ <br/> &nbsp; dataLabelSettings: { <br/> &nbsp; &nbsp; fill: "green" <br/> &nbsp; } <br/> }); <br/> sparkline.appendTo('#container');|
@@ -61,7 +61,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Range band
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Color| **Property:** *rangeBandSettings.fill*<br/><br/> $("#container").ejSparkline({ <br/>&nbsp; rangeBandSettings :{ fill : "green" } <br/>}); |**Property:** *rangeBandSettings.fill*<br/><br/> let sparkline: Sparkline = new Sparkline({ <br/> &nbsp; rangeBandSettings: { <br/> &nbsp; &nbsp; fill: "green" <br/> &nbsp; } <br/> }); <br/> sparkline.appendTo('#container');|
 |Opacity| **Property:** *rangeBandSettings.opacity*<br/><br/> $("#container").ejSparkline({ <br/>&nbsp; rangeBandSettings :{ opacity : 0.5 } <br/>}); |**Property:** *rangeBandSettings.opacity*<br/><br/> let sparkline: Sparkline = new Sparkline({ <br/> &nbsp; rangeBandSettings: { <br/> &nbsp; &nbsp; opacity: 0.5 <br/> &nbsp; } <br/> }); <br/> sparkline.appendTo('#container');|
@@ -70,7 +70,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Special points customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |High point color| **Property:** *highPointColor*<br/><br/> $("#container").ejSparkline({ highPointColor: 'green' }); |**Property:** *highPointColor*<br/><br/> let sparkline: Sparkline = new Sparkline({ highPointColor: 'green' }); <br/> sparkline.appendTo('#container');|
 |Low point color| **Property:** *lowPointColor*<br/><br/> $("#container").ejSparkline({ lowPointColor: 'red' }); |**Property:** *lowPointColor*<br/><br/> let sparkline: Sparkline = new Sparkline({ lowPointColor: 'red' }); <br/> sparkline.appendTo('#container');|
@@ -81,7 +81,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Axis customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Show axis line| **Property:** *axisSettings.visible*<br/><br/> $("#container").ejSparkline({ <br/>&nbsp; axisSettings :{ <br/> &nbsp; &nbsp; visible: true <br/> &nbsp;} <br/>}); |**Property:** *axisSettings.lineSettings.visible*<br/><br/> let sparkline: Sparkline = new Sparkline({ <br/> &nbsp; axisSettings: { <br/> &nbsp; &nbsp; lineSettings: { visible: true } <br/> &nbsp; } <br/> }); <br/> sparkline.appendTo('#container');|
 |Line color| **Property:** *axisSettings.color*<br/><br/> $("#container").ejSparkline({ <br/>&nbsp; axisSettings :{ <br/> &nbsp; &nbsp; color: "green" <br/> &nbsp;} <br/>}); |**Property:** *axisSettings.lineSettings.color*<br/><br/> let sparkline: Sparkline = new Sparkline({ <br/> &nbsp; axisSettings: { <br/> &nbsp; &nbsp; lineSettings: { color: "green" } <br/> &nbsp; } <br/> }); <br/> sparkline.appendTo('#container');|
@@ -95,7 +95,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Appearance customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Background color| **Property:** *background*<br/><br/> $("#container").ejSparkline({ background: "gray" }); |**Property:** *containerArea.background*<br/><br/> let sparkline: Sparkline = new Sparkline({ <br/> &nbsp; containerArea: { background: "gray" } <br/> }); <br/> sparkline.appendTo('#container');|
 |Border color | Not applicable |**Property:** *containerArea.border.color*<br/><br/> let sparkline: Sparkline = new Sparkline({ <br/> &nbsp; containerArea: { <br/> &nbsp; &nbsp; border: { color: "green" } <br/> &nbsp; } <br/> }); <br/> sparkline.appendTo('#container');|
@@ -112,7 +112,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Tooltip
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Show tooltip| **Property:** *tooltip.visible*<br/><br/> $("#container").ejSparkline({ <br/> &nbsp; tooltip: { visible: true } <br/> }); |**Property:** *tooltipSettings.visible*<br/><br/> let sparkline: Sparkline = new Sparkline({ <br/> &nbsp; tooltipSettings: { visible: true } <br/> }); <br/> sparkline.appendTo('#container');|
 |Background| **Property:** *tooltip.fill*<br/><br/> $("#container").ejSparkline({ <br/> &nbsp; tooltip: { fill: "white" } <br/> }); |**Property:** *tooltipSettings.fill*<br/><br/> let sparkline: Sparkline = new Sparkline({ <br/> &nbsp; tooltipSettings: { fill: "white" } <br/> }); <br/> sparkline.appendTo('#container');|
@@ -130,26 +130,26 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Rendering
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Enable canvas rendering| **Property:** *enableCanvasRendering*<br/><br/> $("#container").ejSparkline({ enableCanvasRendering : true }); | Not applicable |
 
 ## Localization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Localization| **Property:** *locale*<br/><br/> $("#container").ejSparkline({ locale : "en-US" }); | **Property:** *type*<br/><br/> let sparkline: Sparkline = new Sparkline({ locale: 'en-US' }); <br/> sparkline.appendTo('#container'); |
 
 ## Methods
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Dynamically updating sparkline| **Method:** *redraw*<br/><br/> $("#container").ejSparkline("redraw"}}); | **Method:** *refresh*<br/><br/> sparkline.refresh(); |
 |Append sparkline to element| Not applicable | **Method:** *appendTo*<br/><br/> sparkline.appendTo("#container"); |
 
 ## Events
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Load| **Event:** *load*<br/><br/> $("#container").ejSparkline({<br/>&nbsp;load: function(args) { } <br/> }); | **Event:** *load*<br/><br/> let sparkline: Sparkline = new Sparkline({ <br/>&nbsp; load: function(e: ISparklineLoadEventArgs): void { }  <br/>}); <br/> sparkline.appendTo('#container'); |
 |Load completed| **Event:** *loaded*<br/><br/> $("#container").ejSparkline({<br/>&nbsp;loaded: function(args) { } <br/> }); | **Event:** *loaded*<br/><br/> let sparkline: Sparkline = new Sparkline({ <br/>&nbsp; loaded: function(e: ISparklineLoadedEventArgs): void { }  <br/>}); <br/> sparkline.appendTo('#container'); |

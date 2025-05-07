@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Clipboard in ##Platform_Name## Scheduler control
 
-The Clipboard functionality in the Syncfusion Scheduler control enhances scheduling efficiency by enabling users to cut, copy, and paste appointments with ease. This feature is especially beneficial for those managing multiple appointments, as it eliminates the need for repetitive data entry and allows users to quickly adjust their schedules without hassle.
+The Clipboard functionality in the Syncfusion<sup style="font-size:70%">&reg;</sup> Scheduler control enhances scheduling efficiency by enabling users to cut, copy, and paste appointments with ease. This feature is especially beneficial for those managing multiple appointments, as it eliminates the need for repetitive data entry and allows users to quickly adjust their schedules without hassle.
 
 To activate the clipboard feature in the scheduler, simply set the [`allowClipboard`](https://ej2.syncfusion.com/documentation/api/schedule/#allowclipboard) property to **true**.
 
@@ -19,7 +19,7 @@ To activate the clipboard feature in the scheduler, simply set the [`allowClipbo
 
 ## Cut, copy and paste using keyboard
 
-The Syncfusion Scheduler control supports keyboard shortcuts to streamline the process of managing appointments.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Scheduler control supports keyboard shortcuts to streamline the process of managing appointments.
 
 These keyboard shortcuts enable users to efficiently manage their schedules:
 
@@ -70,7 +70,7 @@ To use these shortcuts, simply click on the appointment and press **Ctrl+C** to 
 
 You can programmatically manage appointments by using the public methods **cut**, **copy**, and **paste**. These methods allow you to perform the same actions as the context menu or external buttons.
 
-Utilize these public methods to manage appointments programmatically in Syncfusion Schedule control:
+Utilize these public methods to manage appointments programmatically in Syncfusion<sup style="font-size:70%">&reg;</sup> Schedule control:
 
 | Method | Parameters                     | Description                                                                                     |
 |--------|--------------------------------|-------------------------------------------------------------------------------------------------|

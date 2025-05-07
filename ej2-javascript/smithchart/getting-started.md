@@ -30,7 +30,7 @@ Below is the list of minimum dependencies required to use the Smith Chart.
 ## Installation and Configuration
 
 * To get you started with Smith Chart component, you can clone the
-[`Essential JS 2 quickstart`](https://github.com/syncfusion/ej2-quickstart.git) project
+[Essential<sup style="font-size:70%">&reg;</sup> JS 2 quickstart](https://github.com/syncfusion/ej2-quickstart.git) project
 and install necessary packages by using the following commands.
 
 ```
@@ -67,7 +67,7 @@ System.config({
 ```
 
 >The [project](https://github.com/syncfusion/ej2-quickstart.git) is preconfigured with common settings (`src/styles/styles.css`, `system.config.js` ) to start
-with all Essential JS 2 components.
+with all Essential<sup style="font-size:70%">&reg;</sup> JS 2 components.
 
 ## Add Smith Chart to the Project
 

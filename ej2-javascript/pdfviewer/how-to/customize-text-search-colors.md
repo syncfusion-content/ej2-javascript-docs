@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Customize text search colors in ##Platform_Name## Pdfviewer control
 
-To change the text search color in the Syncfusion PDF viewer, you can use the **searchColor** property of the searchModule object. This property accepts a string value that represents the color in hexadecimal format.
+To change the text search color in the Syncfusion<sup style="font-size:70%">&reg;</sup> PDF viewer, you can use the **searchColor** property of the searchModule object. This property accepts a string value that represents the color in hexadecimal format.
 
 ```javascript
 

@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Range Slider control
 
-This article describes the API migration process of Range Slider control from Essential JS 1 to Essential JS 2
+This article describes the API migration process of Range Slider control from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Max value | **Property:**  *maxValue* <br />  var sliderObj = new ej.Slider($("#slider"),{ <br /> maxValue: 60 <br /> }); | **Property:** *max* <br /> let slider: Slider = new Slider({ <br /> max : 100 <br /> }); <br /> slider.appendTo('#test'); |
 | Min value | **Property:**  *minValue* <br /> var sliderObj = new ej.Slider($("#slider"),{<br /> minValue: 60 <br /> }); | **Property:** *min* <br /> let slider: Slider = new Slider({ <br /> min : 10 <br /> }); <br /> slider.appendTo('#test'); |

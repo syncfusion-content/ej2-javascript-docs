@@ -11,20 +11,20 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Heatmap chart control
 
-The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
 ## control Initialization
 
-The Essential JS 2 JavaScript controls can be initialized by using either of the following ways.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using either of the following ways.
 
 * Using local script and style references in a HTML page.
 * Using CDN link for script and style reference.
 
 ### Using local script and style references in a HTML page
 
-**Step 1:** Create an app folder `quickstart` for Essential JS 2 JavaScript controls.
+**Step 1:** Create an app folder `quickstart` for Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+**Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
 **Syntax:**
 > Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -35,7 +35,7 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 
 **Step 3:** Create a folder `quickstart/resources` and copy/paste the dependent scripts and styles from the above installed location to `quickstart/resources` location.
 
-**Step 4:** Create a HTML page (index.html) in `quickstart` location and add the Essentials JS 2 script and style references.
+**Step 4:** Create a HTML page (index.html) in `quickstart` location and add the Essential<sup style="font-size:70%">&reg;</sup> JS 2 script and style references.
 
 ```html
 <!DOCTYPE html>
@@ -52,7 +52,7 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
   </html>
 ```
 
-**Step 5:** Now, add the `div` element and initiate the `Essential JS 2 Heatmap` control in the **index.html** by using following code
+**Step 5:** Now, add the `div` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Heatmap** control in the **index.html** by using following code
 
 ```html
 <!DOCTYPE html>
@@ -78,13 +78,13 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
   </html>
 ```
 
-**Step 6:** Now, run the **index.html** in web browser, it will render the **Essential JS 2 HeatMap** control.
+**Step 6:** Now, run the **index.html** in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 HeatMap** control.
 
 ### Using CDN link for script and style reference
 
-**Step 1:** Create an app folder `quickstart` for the Essential JS 2 JavaScript controls.
+**Step 1:** Create an app folder `quickstart` for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
 
-**Step 2:** The Essential JS 2 controls' global scripts are already hosted in the below CDN link formats.
+**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls' global scripts are already hosted in the below CDN link formats.
 
 **Common Control Script:**
 > Syntax: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/dist/ej2.min.js`
@@ -110,7 +110,7 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 >
 > [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-svg-base/dist/global/ej2-svg-base.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-svg-base/dist/global/ej2-svg-base.min.js)
 
-Create a HTML page (**index.html**) in **~/quickstart** location and add the CDN link references. Now, add the **div** element and initiate the `Essential JS 2 Heatmap` control in the **index.html** by using following code.
+Create a HTML page (**index.html**) in **~/quickstart** location and add the CDN link references. Now, add the **div** element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Heatmap** control in the **index.html** by using following code.
 
 ```
 <!DOCTYPE html>
@@ -138,7 +138,7 @@ Create a HTML page (**index.html**) in **~/quickstart** location and add the CDN
 
 > Please replace {RELEASE_VERSION} with the latest version number in the script file referred to in the sample.
 
-**Step 3:** Now, run the **index.html** in web browser, it will render the `Essential JS 2 HeatMap` control.
+**Step 3:** Now, run the **index.html** in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 HeatMap** control.
 
 The below example shows a basic HeatMap control.
 

@@ -15,11 +15,11 @@ The Grid user interface (UI) was redesigned to provide an optimal viewing experi
 
 ## Render adaptive dialogs
 
-The Syncfusion ##Platform_Name## Grid offers a valuable feature for rendering adaptive dialogs, specifically designed to enhance the user experience on smaller screens. This feature proves especially useful for optimizing the interface on devices with limited screen real estate. The functionality is achieved by enabling the [enableAdaptiveUI](../api/grid/#enableadaptiveui) property, allowing the grid to render filter, sort, and edit dialogs in full-screen mode.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid offers a valuable feature for rendering adaptive dialogs, specifically designed to enhance the user experience on smaller screens. This feature proves especially useful for optimizing the interface on devices with limited screen real estate. The functionality is achieved by enabling the [enableAdaptiveUI](../api/grid/#enableadaptiveui) property, allowing the grid to render filter, sort, and edit dialogs in full-screen mode.
 
 Additionally, apply the `e-bigger` class to the grid's parent element to enable the adaptive view.
 
-The following sample demonstrates how to enable and utilize adaptive dialogs in the Syncfusion ##Platform_Name## Grid:
+The following sample demonstrates how to enable and utilize adaptive dialogs in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -50,7 +50,7 @@ The following sample demonstrates how to enable and utilize adaptive dialogs in 
 
 ## Vertical row rendering
 
-The Syncfusion ##Platform_Name## Grid introduces the feature of vertical row rendering, allowing you to display row elements in a vertical order. This is particularly useful for scenarios where a vertical presentation enhances data visibility. This is achieved by setting the [rowRenderingMode](../api/grid#rowrenderingmode) property to the value **Vertical**.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid introduces the feature of vertical row rendering, allowing you to display row elements in a vertical order. This is particularly useful for scenarios where a vertical presentation enhances data visibility. This is achieved by setting the [rowRenderingMode](../api/grid#rowrenderingmode) property to the value **Vertical**.
 
 >The default row rendering mode is **Horizontal**.
 

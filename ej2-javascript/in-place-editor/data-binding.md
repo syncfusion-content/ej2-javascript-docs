@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Data binding in ##Platform_Name## In place editor control
 
-The Essential JS 2 controls load the data either from local data sources or remote data services using the `dataSource` property and it supports the data type of an array or `DataManager`. Also supports different kind of data services such as OData, OData V4, Web API, and data formats such as XML, JSON, JSONP with the help of `DataManager` adaptors.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls load the data either from local data sources or remote data services using the `dataSource` property and it supports the data type of an array or `DataManager`. Also supports different kind of data services such as OData, OData V4, Web API, and data formats such as XML, JSON, JSONP with the help of `DataManager` adaptors.
 
 ## Local
 
-To bind local data to the Essential JS 2 controls, you can assign a JavaScript array of object or string to the `dataSource` property. The local data source can also be provided as an instance of the `DataManager`.
+To bind local data to the Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls, you can assign a JavaScript array of object or string to the `dataSource` property. The local data source can also be provided as an instance of the `DataManager`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -46,7 +46,7 @@ To bind local data to the Essential JS 2 controls, you can assign a JavaScript a
 
 ## Remote
 
-To bind remote data to the Essential JS 2 control, assign service data as an instance of `DataManager` to the `dataSource` property. To interact with remote data source, provide the endpoint URL.
+To bind remote data to the Essential<sup style="font-size:70%">&reg;</sup> JS 2 control, assign service data as an instance of `DataManager` to the `dataSource` property. To interact with remote data source, provide the endpoint URL.
 
 ### OData V4
 

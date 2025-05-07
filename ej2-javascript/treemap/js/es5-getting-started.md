@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Es5 getting started in ##Platform_Name## TreeMap control
 
-The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
 ## Control Initialization
 
-The Essential JS 2 JavaScript controls can be initialized by using either of the following ways.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using either of the following ways.
 
 * Using local script references in a HTML page.
 * Using CDN link for script reference.
@@ -24,7 +24,7 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 
 **Step 1:** Create an app folder `quickstart` for getting started.
 
-**Step 2:** You can get the global scripts from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+**Step 2:** You can get the global scripts from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
 **Syntax:**
 > Dependency Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\dist\global\{DEPENDENCY_PACKAGE_NAME}.min.js`
@@ -40,7 +40,7 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 >
 > Control Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\20.1.0.58\Web (Essential JS 2)\JavaScript\ej2-treemap\dist\global\ej2-treemap.min.js`
 
-The below located script file contains all Syncfusion JavaScript (ES5) UI control resources in a single file.
+The below located script file contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file.
 
 > Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
 >
@@ -49,7 +49,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 **Step 3:** Create a folder `~/quickstart/resources` and copy/paste the global scripts from the above installed location to `~/quickstart/resources/package` corresponding package location.
 
-**Step 4:** Create a HTML page (index.html) in `~/quickstart/index.html` and add the Essentials JS 2 script references.
+**Step 4:** Create a HTML page (index.html) in `~/quickstart/index.html` and add the Essential<sup style="font-size:70%">&reg;</sup> JS 2 script references.
 
 ```html
 <!DOCTYPE html>
@@ -68,7 +68,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 </html>
 ```
 
-**Step 5:** Now, initiate the `Syncfusion JavaScript (ES5) TreeMap` control in the `~/quickstart/index.html` by using following code
+**Step 5:** Now, initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) TreeMap** control in the `~/quickstart/index.html` by using following code
 
 ```html
 <!DOCTYPE html>
@@ -113,13 +113,13 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 </html>
 ```
 
-**Step 6:** Now, run the **index.html** in web browser, it will render the **Syncfusion JavaScript TreeMap** control.
+**Step 6:** Now, run the **index.html** in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript TreeMap** control.
 
 ### Using CDN link for script reference
 
 **Step 1:** Create an app folder `quickstart` for getting started.
 
-**Step 2:** The Essential JS 2 controls's common script is already hosted in the below CDN link format.
+**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls's common script is already hosted in the below CDN link format.
 
 **Common Control Scripts:**
 > Syntax: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/dist/ej2.min.js`
@@ -147,7 +147,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 >
 > [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-pdf-export/dist/global/ej2-pdf-export.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-pdf-export/dist/global/ej2-pdf-export.min.js)
 
-Create a HTML page (**index.html**) in **~/quickstart** location and add the following CDN link references. Now, initiate the `Syncfusion JavaScript (ES5) TreeMap` control in the **index.html** by using following code.
+Create a HTML page (**index.html**) in **~/quickstart** location and add the following CDN link references. Now, initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) TreeMap** control in the **index.html** by using following code.
 
 ```html
 <!DOCTYPE html>
@@ -191,7 +191,7 @@ Create a HTML page (**index.html**) in **~/quickstart** location and add the fol
 ```
 > Please replace {RELEASE_VERSION} with the latest version number in the script file referred to in the sample.
 
-**Step 3:**  Now, run the index.html in web browser, it will render the Essential JS 2 TreeMap control.
+**Step 3:**  Now, run the index.html in web browser, it will render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeMap control.
 
 The below example shows a basic TreeMap control.
 

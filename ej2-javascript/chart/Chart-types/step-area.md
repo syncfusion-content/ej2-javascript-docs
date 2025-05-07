@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Step area in ##Platform_Name## Chart control | Syncfusion
-description: Learn here all about Step area in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
+title: Step Area Chart in ##Platform_Name## Charts | Syncfusion
+description: Learn here all about Step Area in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Step area 
+control: Step Area 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Step area Chart in ##Platform_Name## control
+# Step Area Chart in ##Platform_Name## Charts
 
-## Step area
+## Step Area
 
 To render a [step area](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/step-area-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  

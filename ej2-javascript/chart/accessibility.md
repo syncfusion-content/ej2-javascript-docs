@@ -86,4 +86,4 @@ The accessibility compliance of the Chart control is shown in the following samp
 
 ## See also
 
-* [Accessibility in Syncfusion ##Platform_Name## controls](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls](../common/accessibility)

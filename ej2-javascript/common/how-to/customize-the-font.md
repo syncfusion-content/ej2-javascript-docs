@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Customize the font in ##Platform_Name## Common control
 
-You can customize the font for all the syncfusion components by overriding the CSS for `e-control` class as follows.
+You can customize the font for all the syncfusion<sup style="font-size:70%">&reg;</sup> components by overriding the CSS for `e-control` class as follows.
 
 ```
 <style>

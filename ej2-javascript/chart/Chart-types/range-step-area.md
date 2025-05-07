@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Range step area in ##Platform_Name## Chart control | Syncfusion
-description: Learn here all about Range step area in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
+title: Range Step Area Chart in ##Platform_Name## Charts | Syncfusion
+description: Learn here all about Range Step Area in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Range step area 
+control: Range Step Area 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Range step area Chart in ##Platform_Name## control
+# Range Step Area Chart in ##Platform_Name## Charts
 
-## Range step area
+## Range Step Area
 
 To render a range step area series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  

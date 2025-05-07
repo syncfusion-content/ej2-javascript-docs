@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Validation in ##Platform_Name## Grid control
 
-Validation is a crucial aspect of data integrity in any application. The ##Platform_Name## Grid control in Syncfusion provides built-in support for easy and effective data validation. This feature ensures that the data entered or modified adheres to predefined rules, preventing errors and guaranteeing the accuracy of the displayed information.
+Validation is a crucial aspect of data integrity in any application. The ##Platform_Name## Grid control in Syncfusion<sup style="font-size:70%">&reg;</sup> provides built-in support for easy and effective data validation. This feature ensures that the data entered or modified adheres to predefined rules, preventing errors and guaranteeing the accuracy of the displayed information.
 
 ## Column validation
 

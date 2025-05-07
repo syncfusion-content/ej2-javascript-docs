@@ -26,7 +26,7 @@ The following are the dependencies required to use the uploader component in you
 
 ## Set up of the development environment
 
-To get started with the uploader component, you have to clone the Essential JS 2 [`quickstart`](https://github.com/syncfusion/ej2-quickstart.git) project and install the npm packages by using the following commands.
+To get started with the uploader component, you have to clone the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [`quickstart`](https://github.com/syncfusion/ej2-quickstart.git) project and install the npm packages by using the following commands.
 
 ```
 git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
@@ -34,7 +34,7 @@ cd quickstart
 npm install
 ```
 
->The [project](https://github.com/syncfusion/ej2-quickstart.git) is preconfigured with common settings (`src/styles/styles.css`, `system.config.js` ) to start all the Essential JS 2 components.
+>The [project](https://github.com/syncfusion/ej2-quickstart.git) is preconfigured with common settings (`src/styles/styles.css`, `system.config.js` ) to start all the Essential<sup style="font-size:70%">&reg;</sup> JS 2 components.
 
 ## Initialize the uploader
 
@@ -97,7 +97,7 @@ After completing the configuration to render the basic uploader, run the followi
 npm run start
 ```
 
-> From v16.2.41 version, the `Essential JS2 AJAX` library has been integrated for uploader server requests. Hence, use the third party `promise` library like blue-bird to use the uploader in Internet Explorer.
+> From v16.2.41 version, the **Essential<sup style="font-size:70%">&reg;</sup> JS2 AJAX** library has been integrated for uploader server requests. Hence, use the third party `promise` library like blue-bird to use the uploader in Internet Explorer.
 
 The following example illustrates the output in your browser.
 

@@ -52,7 +52,7 @@ The following sample illustrates how to achieve an Outline ButtonGroup.
 
 ## ButtonGroup styles
 
-The Essential JS 2 ButtonGroup has the following predefined styles. This can be achieved by adding corresponding class name in each button elements.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 ButtonGroup has the following predefined styles. This can be achieved by adding corresponding class name in each button elements.
 
 | Class | Description |
 | -------- | -------- |

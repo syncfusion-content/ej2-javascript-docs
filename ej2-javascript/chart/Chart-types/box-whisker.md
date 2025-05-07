@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Box whisker in ##Platform_Name## Chart control | Syncfusion
-description: Learn here all about Box whisker in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
+title: Box Whisker Chart in ##Platform_Name## Charts | Syncfusion
+description: Learn here all about Box Whisker in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Box whisker 
+control: Box Whisker 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Box whisker Chart in ##Platform_Name## control
+# Box and Whisker Chart in ##Platform_Name## Charts
 
-## Box and whisker
+## Box and Whisker
 
 To render a `box and whisker` series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  

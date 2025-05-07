@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Es5 getting started in ##Platform_Name## Maps control
 
-The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
 You can explore some useful features in the Maps component using the following video.
 
@@ -23,7 +23,7 @@ You can explore some useful features in the Maps component using the following v
 <!-- markdownlint-disable MD010 -->
 <!-- markdownlint-disable MD031 -->
 <!-- markdownlint-disable MD040 -->
-The Essential JS 2 JavaScript controls can be initialized by using either of the following ways.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using either of the following ways.
 
 * Using local script and style references in a HTML page.
 * Using CDN link for script and style reference.
@@ -32,7 +32,7 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 
 **Step 1:** Create a folder `quickstart` for getting started application.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+**Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
 **Syntax:**
 > Dependency Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\dist\global\{DEPENDENCY_PACKAGE_NAME}.min.js`
@@ -50,7 +50,7 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 >
 > Control Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\20.1.0.58\Web (Essential JS 2)\JavaScript\ej2-maps\dist\global\ej2-maps.min.js`
 
-The below located script file contains all Syncfusion JavaScript (ES5) UI control resources.
+The below located script file contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources.
 
 > Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
 
@@ -58,7 +58,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 **Step 3:** Create a folder `~/quickstart/resources` and copy/paste the global scripts and styles from the above installed location to `~/quickstart/resources/scripts` for script files and `~/quickstart/resources/styles` for styles.
 
-**Step 4:** Create a HTML page (index.html) in `~/quickstart/index.html` and add the Essentials JS 2 script and style references.
+**Step 4:** Create a HTML page (index.html) in `~/quickstart/index.html` and add the Essential<sup style="font-size:70%">&reg;</sup> JS 2 script and style references.
 
 ```html
 <!DOCTYPE html>
@@ -77,7 +77,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 </html>
 ```
 
-**Step 5:** Now, add a div element to initiate the `Syncfusion JavaScript (ES5) Maps` control in the `~/quickstart/index.html` by using following code
+**Step 5:** Now, add a div element to initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) Maps** control in the `~/quickstart/index.html` by using following code
 
 ```html
 <!DOCTYPE html>
@@ -140,13 +140,13 @@ map.appendTo('#element');
 
 >Note: Refer the data values for [`world_map`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/world_map1557035892) here. These data must be referred as script file in the HTML code.
 
-**Step 8:** Now, run the `index.html` in web browser, it will render the **Syncfusion JavaScript maps** control.
+**Step 8:** Now, run the `index.html` in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript maps** control.
 
 ### Using CDN link for script and style reference
 
 **Step 1:** Create a folder `quickstart` for getting started application.
 
-**Step 2:** The Essential JS 2 controls' global scripts are already hosted in the below CDN link formats.
+**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls' global scripts are already hosted in the below CDN link formats.
 
 **Common Control Script:**
 > Syntax: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/dist/ej2.min.js`
@@ -184,7 +184,7 @@ map.appendTo('#element');
 
 ```
 
-**Step 4:** Now, add the div element for initiating the `Syncfusion JavaScript (ES5) Maps` control in the **index.html** by using following code.
+**Step 4:** Now, add the div element for initiating the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) Maps** control in the **index.html** by using following code.
 
 ```html
 <!DOCTYPE html>
@@ -245,7 +245,7 @@ map.appendTo('#element');
 
 > Note: Refer the data values for [`world_map`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/world_map1557035892) here. These data must be referred as script file in the HTML code.
 
-**Step 7:** Now, run the **index.html** in web browser, it will render the **Syncfusion JavaScript maps** control.
+**Step 7:** Now, run the **index.html** in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript maps** control.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

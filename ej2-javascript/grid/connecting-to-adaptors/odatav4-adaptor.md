@@ -10,9 +10,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# ODataV4Adaptor in Syncfusion ##Platform_Name## Grid Control
+# ODataV4Adaptor in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid Control
 
-The `ODataV4Adaptor` in the Syncfusion Grid Control allows seamless integration of the Grid with OData v4 services, enabling efficient data fetching and manipulation. This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `ODataV4Adaptor` in your Syncfusion Grid Control.
+The `ODataV4Adaptor` in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid Control allows seamless integration of the Grid with OData v4 services, enabling efficient data fetching and manipulation. This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `ODataV4Adaptor` in your Syncfusion<sup style="font-size:70%">&reg;</sup> Grid Control.
 
 This section describes a step-by-step process for retrieving data using ODataV4Adaptor, then binding it to the ##Platform_Name## Grid control to facilitate data and CRUD operations.
 
@@ -20,7 +20,7 @@ This section describes a step-by-step process for retrieving data using ODataV4A
 
 ## Creating an ODataV4 service
 
-To configure a server with Syncfusion Grid, you need to follow the below steps:
+To configure a server with Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you need to follow the below steps:
 
 **Step 1:** Set Up Your Development Environment
 
@@ -188,9 +188,9 @@ Run the application in Visual Studio. It will be accessible on a URL like **http
 
 After running the application, you can verify that the server-side API controller is successfully returning the order data in the URL(https://localhost:xxxx/odata/Orders). Here **xxxx** denotes the port number.
 
-## Connecting syncfusion grid to an odataV4 service
+## Connecting syncfusion<sup style="font-size:70%">&reg;</sup> grid to an odataV4 service
 
-To integrate the Syncfusion Grid control into your TypeScript and ASP.NET Core project using Visual Studio, follow these steps:
+To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control into your TypeScript and ASP.NET Core project using Visual Studio, follow these steps:
 
 **Step 1:** Create a package.json file:
 
@@ -268,9 +268,9 @@ module.exports = {
 
 **Step 6:** Create a new directory named `src` in the project root for the client code.
 
-**Step 7:** Install Syncfusion Packages
+**Step 7:** Install Syncfusion<sup style="font-size:70%">&reg;</sup> Packages
 
-Open your terminal in the project’s root folder and install the required Syncfusion packages using npm:
+Open your terminal in the project’s root folder and install the required Syncfusion<sup style="font-size:70%">&reg;</sup> packages using npm:
 
 ```bash
 npm install @syncfusion/ej2-grids --save
@@ -368,7 +368,7 @@ Run the project in Visual Studio.
 
 The `wwwroot/index.html` file is served at **https://localhost:xxxx**.
 
-With these steps, you have integrated the Syncfusion Grid control with your ASP.NET Core project and set up the necessary client-side configuration using Webpack and TypeScript. This will allow the Syncfusion Grid to fetch data from your API and display it accordingly.
+With these steps, you have integrated the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control with your ASP.NET Core project and set up the necessary client-side configuration using Webpack and TypeScript. This will allow the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid to fetch data from your API and display it accordingly.
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -531,7 +531,7 @@ Run the application in Visual Studio. It will be accessible on a URL like **http
 
 After running the application, you can verify that the server-side API controller is successfully returning the order data in the URL(https://localhost:xxxx/odata/Orders). Here **xxxx** denotes the port number.
 
-## Connecting syncfusion grid to an odataV4 service
+## Connecting syncfusion<sup style="font-size:70%">&reg;</sup> grid to an odataV4 service
 
 **Step 1:** Create wwwroot folder
 
@@ -543,7 +543,7 @@ Inside the wwwroot folder, create js and css folders to hold script and CSS file
 
 **Step 3:** Create index.html File
 
-Create an `index.html` file under the `wwwroot` folder and add the necessary HTML structure along with CSS and JavaScript links to include Syncfusion Grid dependencies.
+Create an `index.html` file under the `wwwroot` folder and add the necessary HTML structure along with CSS and JavaScript links to include Syncfusion<sup style="font-size:70%">&reg;</sup> Grid dependencies.
 
 ```html
 <!DOCTYPE html>
@@ -583,7 +583,7 @@ Create an `index.html` file under the `wwwroot` folder and add the necessary HTM
 
 **Step 4:** Create JavaScript File
 
-Create a index.js file under the `wwwroot/js` folder and add the JavaScript code to initialize the Syncfusion Grid with data from the API service.
+Create a index.js file under the `wwwroot/js` folder and add the JavaScript code to initialize the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid with data from the API service.
 
 ```js
 var data = new ej.data.DataManager({
@@ -606,7 +606,7 @@ grid.appendTo('#Grid');
 
 **Step 5:** Run the Project
 
-Now, run the project to see the Syncfusion Grid connected to the API service in action.
+Now, run the project to see the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid connected to the API service in action.
 
 {% endif %}
 
@@ -917,9 +917,9 @@ grid.appendTo('#Grid');
 
 ## Handling CRUD operations
 
-To manage CRUD (Create, Read, Update, Delete) operations using the ODataV4Adaptor, follow the provided guide for configuring the Syncfusion Grid for [editing](../editing/edit) and utilize the sample implementation of the `OrdersController` in your server application. This controller handles HTTP requests for CRUD operations such as GET, POST, PATCH, and DELETE.
+To manage CRUD (Create, Read, Update, Delete) operations using the ODataV4Adaptor, follow the provided guide for configuring the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid for [editing](../editing/edit) and utilize the sample implementation of the `OrdersController` in your server application. This controller handles HTTP requests for CRUD operations such as GET, POST, PATCH, and DELETE.
 
-To enable CRUD operations in the Syncfusion Grid control, follow the below steps:
+To enable CRUD operations in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control, follow the below steps:
 
 {% tabs %}
 {% if page.publishingplatform == "typescript" %}
@@ -978,7 +978,7 @@ grid.appendTo('#Grid');
 
 **Insert Record**
 
-To insert a new record into your Syncfusion Grid, you can utilize the `HttpPost` method in your server application. Below is a sample implementation of inserting a record using the **OrdersController**:
+To insert a new record into your Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can utilize the `HttpPost` method in your server application. Below is a sample implementation of inserting a record using the **OrdersController**:
 
 ```cs
 /// <summary>
@@ -1003,7 +1003,7 @@ public IActionResult Post([FromBody] OrdersDetails addRecord)
 
 **Update Record**
 
-Updating a record in the Syncfusion Grid can be achieved by utilizing the `HttpPatch` method in your controller. Here's a sample implementation of updating a record:
+Updating a record in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid can be achieved by utilizing the `HttpPatch` method in your controller. Here's a sample implementation of updating a record:
 
 ```cs
 /// <summary>
@@ -1034,7 +1034,7 @@ public IActionResult Patch(int key, [FromBody] OrdersDetails updateRecord)
 
 **Delete Record**
 
-To delete a record from your Syncfusion Grid, you can utilize the `HttpDelete` method in your controller. Below is a sample implementation:
+To delete a record from your Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can utilize the `HttpDelete` method in your controller. Below is a sample implementation:
 
 ```cs
 /// <summary>
@@ -1063,11 +1063,11 @@ public IActionResult Delete(int key)
 
 ## Odata with custom url
 
-The Syncfusion ODataV4 adaptor extends support for calling customized URLs to accommodate data retrieval and CRUD actions as per your application's requirements. However, when utilizing a custom URL with the ODataV4 adaptor, it's essential to modify the routing configurations in your application's route configuration file to align with your custom URL. You can invoke the custom URL by the following methods in the Datamanager
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ODataV4 adaptor extends support for calling customized URLs to accommodate data retrieval and CRUD actions as per your application's requirements. However, when utilizing a custom URL with the ODataV4 adaptor, it's Essential<sup style="font-size:70%">&reg;</sup> to modify the routing configurations in your application's route configuration file to align with your custom URL. You can invoke the custom URL by the following methods in the Datamanager
 
 **Configuring Custom URLs**
 
-To work with custom URLs for CRUD operations in the Syncfusion Grid, you can use the following properties:
+To work with custom URLs for CRUD operations in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can use the following properties:
 
 * insertUrl: Specifies the custom URL for inserting new records.
 * removeUrl: Specifies the custom URL for deleting records.

@@ -11,17 +11,17 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Treemap control
 
-This article describes the API migration process of Accordion component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Accordion component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Data Binding
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Datasource| **Property:** *dataSource*<br/><br/> var population_data = [{ <br/> &nbsp; Continent: "Asia", <br/> &nbsp; Population: 1749046000 }], <br/> $("#container").ejTreeMap({ <br/> dataSource: population_data })|**Property:** *dataSource*<br/><br/> var population_data = [{ Continent: "Asia", <br/> &nbsp; Population: 1749046000 }], <br/> let treemap: TreeMap = new TreeMap({ <br/> &nbsp; dataSource: population_data <br/> }); <br/> treemap.appendTo('#container');|
 
 ## Appearance
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Layout| **Property:** *itemsLayoutMode*<br/><br/> $("#container").ejTreeMap({ <br/> itemsLayoutMode: "sliceanddiceauto" })|**Property:** *layoutType*<br/><br/> let treemap: TreeMap = new TreeMap({ <br/> &nbsp; layoutType: 'SliceAndDiceAuto' <br/> }); <br/> treemap.appendTo('#container');|
 |Weight Value Path| **Property:** *weightValuePath*<br/><br/> $("#container").ejTreeMap({ <br/> weightValuePath: "Population" })|**Property:** *weightValuePath*<br/><br/> let treemap: TreeMap = new TreeMap({ <br/> &nbsp; weightValuePath: 'Population' <br/> }); <br/> treemap.appendTo('#container');|
@@ -38,7 +38,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Leaf Items
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Border Color| **Property:** *leafItemSettings.borderBrush*<br/><br/> $("#container").ejTreeMap({ <br/> &nbsp; leafItemSettings: { showLabels: true, <br/> &nbsp; borderBrush: "blue" } <br/> })|**Property:** *leafItemSettings.border*<br/><br/> let treemap: TreeMap = new TreeMap({ <br/> &nbsp; leafItemSettings: { border: { color: 'white' } } <br/> }); <br/> treemap.appendTo('#container');|
 |Border Width| **Property:** *leafItemSettings.borderThickness*<br/><br/> $("#container").ejTreeMap({ <br/> &nbsp; leafItemSettings: { showLabels: true, <br/> &nbsp; borderThickness: 5 } <br/> })|**Property:** *leafItemSettings.border*<br/><br/> let treemap: TreeMap = new TreeMap({ <br/> &nbsp; leafItemSettings: { border: { width: 5 } } <br/> }); <br/> treemap.appendTo('#container');|
@@ -57,7 +57,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Legend
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Legend Alignment| **Property:** *legendSettings.alignment*<br/><br/> $("#container").ejTreeMap({ <br/> &nbsp; legendSettings: { alignment: "far" } <br/> })|**Property:** *legendSettings.alignment*<br/><br/> let treemap: TreeMap = new TreeMap({ <br/> &nbsp; legendSettings: { alignment: 'Near' } <br/> }); <br/> treemap.appendTo('#container');|
 |Legend Visibility| **Property:** *showLegend*<br/><br/> $("#container").ejTreeMap({ <br/> &nbsp; showLegend: false <br/> })|**Property:** *legendSettings.visible*<br/><br/> let treemap: TreeMap = new TreeMap({ <br/> &nbsp; legendSettings: { visible: true } <br/> }); <br/> treemap.appendTo('#container');|
@@ -83,7 +83,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Levels
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Random Colors| Not Applicable|**Property:** *levels.autoFill*<br/><br/> let treemap: TreeMap = new TreeMap({ <br/> &nbsp; levels: [{ autoFill: true }] <br/> }); <br/> treemap.appendTo('#container');|
 |Level Background Color| **Property:** *levels.groupBackground*<br/><br/> $("#container").ejTreeMap({ <br/> &nbsp; levels: [{ groupBackground: "white" }] <br/> })| **Property:** *levels.fill*<br/><br/> let treemap: TreeMap = new TreeMap({ <br/> &nbsp; levels: [{ fill: 'white' }] <br/> }); <br/> treemap.appendTo('#container');|
@@ -103,7 +103,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Selection
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Selection| **Property:** *selectionMode*<br/><br/> $("#container").ejTreeMap({ <br/> &nbsp; selectionMode: "default" <br/> })| **Property:** *selectionSettings.mode*<br/><br/> let treemap: TreeMap = new TreeMap({ <br/> &nbsp; selectionSettings: { enable: true, mode: 'Item' } <br/> }); <br/> treemap.appendTo('#container');|
 |Selection Color| Not Applicable| **Property:** *selectionSettings.fill*<br/><br/> let treemap: TreeMap = new TreeMap({ <br/> &nbsp; selectionSettings: { enable: true, fill: 'blue' } <br/> }); <br/> treemap.appendTo('#container');|
@@ -112,7 +112,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Hightlight
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Highlight Group Selection Mode| **Property:** *highlightGroupOnSelection*<br/><br/> $("#container").ejTreeMap({ <br/> &nbsp; highlightGroupOnSelection: true <br/> })| **Property:** *highlightSettings.mode*<br/><br/> let treemap: TreeMap = new TreeMap({ <br/> &nbsp; highlightSettings: { enable: true, mode: 'All' } <br/> }); <br/> treemap.appendTo('#container');|
 |Highlight Selection Mode| **Property:** *highlightOnSelection*<br/><br/> $("#container").ejTreeMap({ <br/> &nbsp; highlightOnSelection: true <br/> })| **Property:** *highlightSettings.mode*<br/><br/> let treemap: TreeMap = new TreeMap({ <br/> &nbsp; highlightSettings: { enable: true, mode: 'Item' } <br/> }); <br/> treemap.appendTo('#container');|
@@ -125,7 +125,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Range ColorMapping
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |From value| **Property:** *rangeColorMapping.from*<br/><br/> $("#container").ejTreeMap({ <br/> &nbsp; rangeColorMapping: [{ from: 1000 }] <br/> })| **Property:** *leafItemSettings.colorMapping.from*<br/><br/> let treemap: TreeMap = new TreeMap({ <br/> &nbsp; leafItemSettings: { colorMapping: [{ from: 1000 }] } <br/> }); <br/> treemap.appendTo('#container');|
 |To value| **Property:** *rangeColorMapping.to*<br/><br/> $("#container").ejTreeMap({ <br/> &nbsp; rangeColorMapping: [{ to: 100000 }] <br/> })| **Property:** *leafItemSettings.colorMapping.to*<br/><br/> let treemap: TreeMap = new TreeMap({ <br/> &nbsp; leafItemSettings: { colorMapping: [{ to: 100000 }] } <br/> }); <br/> treemap.appendTo('#container');|
@@ -134,7 +134,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Desaturation ColorMapping
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |From value| **Property:** *desaturationColorMapping.from*<br/><br/> $("#container").ejTreeMap({ <br/> &nbsp; desaturationColorMapping: [{ from: 1000 }] <br/> })| **Property:** *leafItemSettings.colorMapping.from*<br/><br/> let treemap: TreeMap = new TreeMap({ <br/> &nbsp; leafItemSettings: { colorMapping: [{ from: 1000 }] } <br/> }); <br/> treemap.appendTo('#container');|
 |To value| **Property:** *desaturationColorMapping.to*<br/><br/> $("#container").ejTreeMap({ <br/> &nbsp; desaturationColorMapping: [{ to: 10000 }] <br/> })| **Property:** *leafItemSettings.colorMapping.to*<br/><br/> let treemap: TreeMap = new TreeMap({ <br/> &nbsp; leafItemSettings: { colorMapping: [{ to: 10000 }] } <br/> }); <br/> treemap.appendTo('#container');|
@@ -145,7 +145,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Tooltip
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Tooltip| **Property:** *showTooltip*<br/><br/> $("#container").ejTreeMap({ <br/> &nbsp; showTooltip: true <br/> })| **Property:** *tooltipSettings.visible*<br/><br/> let treemap: TreeMap = new TreeMap({ <br/> &nbsp; tooltipSettings: { visible: true } <br/> }); <br/> treemap.appendTo('#container');|
 |Tooltip Template| **Property:** *tooltipTemplate*<br/><br/> $("#container").ejTreeMap({ <br/> &nbsp; tooltipTemplate: 'template' <br/> })| **Property:** *tooltipSettings.template*<br/><br/> let treemap: TreeMap = new TreeMap({ <br/> &nbsp; tooltipSettings: { template: 'template' } <br/> }); <br/> treemap.appendTo('#container');|
@@ -158,14 +158,14 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Drilldown
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Drilldown| **Property:** *enableDrillDown*<br/><br/> $("#container").ejTreeMap({ <br/> &nbsp; enableDrillDown: true <br/> })| **Property:** *enableDrillDown*<br/><br/> let treemap: TreeMap = new TreeMap({ <br/> &nbsp; enableDrillDown: true <br/> }); <br/> treemap.appendTo('#container');|
 |Drilldown Level| **Property:** *drillDownLevel*<br/><br/> $("#container").ejTreeMap({ <br/> &nbsp; drillDownLevel: 1 <br/> })| **Property:** *InitialDrillSettings.groupIndex*<br/><br/> let treemap: TreeMap = new TreeMap({ <br/> &nbsp; InitialDrillSettings: { groupIndex: 1 } <br/> }); <br/> treemap.appendTo('#container');|
 
 ## Methods
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Treemap Refresh Method| **Method:** *refresh*<br/><br/> $("#container").ejTreeMap({ "refresh" })| **Method:** *refresh*<br/><br/> let treemap: TreeMap = new TreeMap({ <br/> &nbsp; treemap.refresh(); }); <br/> treemap.appendTo('#container');|
 |Method to Drilldown| **Method:** *drillDown*<br/><br/> $("#container").ejTreeMap({ "drillDown" })|Not Applicable|
@@ -181,7 +181,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Events
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Treemap Load Event| Not Applicable| **Event:** *load*<br/><br/> let treemap: TreeMap = new TreeMap({ <br/> &nbsp; load: function(e: ILoadEventArgs): void { } <br/> }); <br/> treemap.appendTo('#container');|
 |Treemap Loaded Event| Not Applicable| **Event:** *loaded*<br/><br/> let treemap: TreeMap = new TreeMap({ <br/> &nbsp; loaded: function(e: ILoadedEventArgs): void { } <br/> }); <br/> treemap.appendTo('#container');|

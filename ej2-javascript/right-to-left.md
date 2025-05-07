@@ -9,10 +9,10 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Right-To-Left support in Syncfusion JavaScript Controls
+# Right-To-Left support in Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Controls
 
-Right To Left (RTL) can be enabled for Syncfusion JavaScript UI controls by calling [`enableRtl`](./api/base/staticFunctions#enablertl) with
-`true`. This will render all the Syncfusion JavaScript controls in right to left direction. Find the code snippet
+Right To Left (RTL) can be enabled for Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript UI controls by calling [`enableRtl`](./api/base/staticFunctions#enablertl) with
+`true`. This will render all the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls in right to left direction. Find the code snippet
 for this below.
 
 {% if page.publishingplatform == "typescript" %}

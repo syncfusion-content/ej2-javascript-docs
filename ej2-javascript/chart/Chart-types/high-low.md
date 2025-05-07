@@ -1,14 +1,14 @@
 ---
 layout: post
-title: High low in ##Platform_Name## Chart control | Syncfusion
-description: Learn here all about High low in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
+title: High Low Chart in ##Platform_Name## Charts | Syncfusion
+description: Learn here all about High Low in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: High low 
+control: High Low 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# High low Chart in ##Platform_Name## control
+# High Low Chart in ##Platform_Name## Charts
 
 ## Hilo
 

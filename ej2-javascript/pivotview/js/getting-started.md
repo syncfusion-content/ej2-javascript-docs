@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Pivotview control
 
-This section explains the steps to create a simple Essential JS 2 **Pivot Table** and demonstrates the basic usage of the [pivot table](https://www.syncfusion.com/javascript-ui-controls/js-pivot-table) control in a JavaScript application.
+This section explains the steps to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 **Pivot Table** and demonstrates the basic usage of the [pivot table](https://www.syncfusion.com/javascript-ui-controls/js-pivot-table) control in a JavaScript application.
 
 ## Dependencies
 
@@ -47,20 +47,20 @@ Refer the following steps for setup your local environment.
 
 **Step 2:** Create `my-app/resources` folder to store local scripts and styles files.
 
-**Step 3:** Open Visual Studio Code and create `my-app/index.js` and `my-app/index.html` files for initializing Essential JS 2 pivot table control.
+**Step 3:** Open Visual Studio Code and create `my-app/index.js` and `my-app/index.html` files for initializing Essential<sup style="font-size:70%">&reg;</sup> JS 2 pivot table control.
 
-## Adding Syncfusion resources
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
 
-The Essential JS 2 pivot table control can be initialized by using either of the following ways.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 pivot table control can be initialized by using either of the following ways.
 
 * Using local script and style.
 * Using CDN link for script and style.
 
 ### Using local script and style
 
-**1. Download Essential Studio JavaScript (Essential JS 2):** Obtain the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+**1. Download Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2):** Obtain the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
-**2. Copy Files to Resources Folder:** After installing the Essential JS 2 product build, you can copy the pivot table scripts and style file into the designated folders:
+**2. Copy Files to Resources Folder:** After installing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 product build, you can copy the pivot table scripts and style file into the designated folders:
 
 Scripts: Copy the scripts to the `resources/scripts` folder.
 
@@ -435,7 +435,7 @@ Place the following pivot table code in the `index.js`.
 
 ## Run the application
 
-Now,  run the `index.html` in web browser, it will render the `Essential JS 2 pivot table` control.
+Now,  run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 pivot table** control.
 
 Output will be displayed as follows.
 
@@ -455,7 +455,7 @@ Output will be displayed as follows.
 
 ## Deploy the Application
 
-The Essential JS 2 pivot table control features are segregated into individual feature-wise modules. The [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build and `CDN` scripts contains code for all features used in pivot table and hence we suggest to not to use them in production. We strongly recommend you to generate script files to use in production using our **Custom Resource Generator**[`(CRG)`](https://crg.syncfusion.com/) for Essential JS 2. CRG will allow you to generate the bundled script for the currently enabled features in pivot table.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 pivot table control features are segregated into individual feature-wise modules. The [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build and `CDN` scripts contains code for all features used in pivot table and hence we suggest to not to use them in production. We strongly recommend you to generate script files to use in production using our **Custom Resource Generator**[`(CRG)`](https://crg.syncfusion.com/) for Essential<sup style="font-size:70%">&reg;</sup> JS 2. CRG will allow you to generate the bundled script for the currently enabled features in pivot table.
 
 For more information and to access the quick start project, visit: [GitHub Repository](https://github.com/SyncfusionExamples/getting-started-with-the-javascript-pivot-table-component)
 

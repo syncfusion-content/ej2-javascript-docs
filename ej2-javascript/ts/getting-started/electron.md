@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 [Electron](https://www.electronjs.org/docs/latest/) is a framework that allows you to build cross-platform desktop applications using JavaScript, HTML, and CSS. It includes Chromium and Node.js within its binary, enabling you to write a single JavaScript codebase that can run on Windows, macOS, and Linux platforms.
 
-This section provides a step-by-step guide to configuring the Syncfusion JavaScript (Essential JS 2) library and building a simple [electron](https://www.electronjs.org/docs/latest/) application.
+This section provides a step-by-step guide to configuring the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) library and building a simple [electron](https://www.electronjs.org/docs/latest/) application.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
@@ -50,9 +50,9 @@ To get started with application, ensure the following software to be installed i
   tsc --init
   ```
 
-## Add Syncfusion packages
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> packages
 
-All Syncfusion JavaScript (Essential JS 2) packages are published on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. So, choose the desired control to install. In this getting started, the Grid control is used as an example. To install the Grid control package, use the following command.
+All Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are published on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. So, choose the desired control to install. In this getting started, the Grid control is used as an example. To install the Grid control package, use the following command.
 
 ```
 
@@ -62,11 +62,11 @@ npm i @syncfusion/ej2-grids
 
 > Check out the [installation and upgrade](https://ej2.syncfusion.com/documentation/installation-and-upgrade/installation/) section to learn about the different ways of installing the packages.
 
-## Import the Syncfusion CSS styles
+## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-After installing the Syncfusion control packages in the application, create a `~/style.css` file in the application root directory then add the required theme based on the controls used. 
+After installing the Syncfusion<sup style="font-size:70%">&reg;</sup> control packages in the application, create a `~/style.css` file in the application root directory then add the required theme based on the controls used. 
 
-Syncfusion JavaScript controls comes with [built-in](https://ej2.syncfusion.com/documentation/appearance/theme/) themes, which are available in installed packages. It is easy to adapt the Syncfusion JavaScript controls based on the application style by referring to any of the [built-in](https://ej2.syncfusion.com/documentation/appearance/theme/) themes. 
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls comes with [built-in](https://ej2.syncfusion.com/documentation/appearance/theme/) themes, which are available in installed packages. It is easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls based on the application style by referring to any of the [built-in](https://ej2.syncfusion.com/documentation/appearance/theme/) themes. 
 
 Open the application in Visual Studio Code and import the `Material` theme for the Grid control and its dependencies to the `~/style.css` file as follows.
 
@@ -82,9 +82,9 @@ Open the application in Visual Studio Code and import the `Material` theme for t
   @import "node_modules/@syncfusion/ej2-grids/styles/material.css";
 ```
 
-> Grid control have dependencies on other Syncfusion controls, so CSS references for the dependent control must be added in order to use all Grid functionalities. Check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme/) section to know more about built-in themes and combined CSS reference of all controls.
+> Grid control have dependencies on other Syncfusion<sup style="font-size:70%">&reg;</sup> controls, so CSS references for the dependent control must be added in order to use all Grid functionalities. Check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme/) section to know more about built-in themes and combined CSS reference of all controls.
 
-## Add Syncfusion control to the application
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> control to the application
 
 Create a `~/index.html` file in the application root directory and add the following code snippet.
 
@@ -113,7 +113,7 @@ Create a `~/index.html` file in the application root directory and add the follo
 </html>
 ```
 
-Create a `~/src` folder and add the `renderer.ts` file inside it. Then, include the Syncfusion JavaScript Grid control in the `renderer.ts` file as follows,
+Create a `~/src` folder and add the `renderer.ts` file inside it. Then, include the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Grid control in the `renderer.ts` file as follows,
 
 ```ts
 import { Grid } from '@syncfusion/ej2-grids';
@@ -285,4 +285,4 @@ To learn more about the functionality of the Grid control, refer to the [Grid co
 
 ## See also
 
-* [How to register Syncfusion License key in JavaScript(ES6) application](https://ej2.syncfusion.com/documentation/licensing/license-key-registration/)
+* [How to register Syncfusion<sup style="font-size:70%">&reg;</sup> License key in JavaScript(ES6) application](https://ej2.syncfusion.com/documentation/licensing/license-key-registration/)

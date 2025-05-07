@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Range column in ##Platform_Name## Chart control | Syncfusion
-description: Learn here all about Range column in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
+title: Range Column Chart in ##Platform_Name## Charts | Syncfusion
+description: Learn here all about Range Column in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Range column 
+control: Range Column 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Range column Chart in ##Platform_Name## control
+# Range Column Chart in ##Platform_Name## Charts
 
-## Range column
+## Range Column
 
 To render a [range column](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/range-column-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  

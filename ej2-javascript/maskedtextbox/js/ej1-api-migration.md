@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Maskedtextbox control
 
-This article describes the API migration process of MaskEdit component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of MaskEdit component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Common
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Adding custom class | **Property:** *cssClass* <br/><br/>$("#mask").ejMaskEdit({<br/>maskFormat: "9999",<br/>cssClass: "custom"<br/>}); | **Property:** *cssClass*<br/><br/>var mask = new ej.inputs.MaskedTextBox({<br/>mask: "9999",<br/>cssClass: "custom"<br/>});<br/>mask.appendTo("#mask"); |
 | Destroy editor | Not Applicable | **Property:** *destroy*<br/><br/>var mask = new ej.inputs.MaskedTextBox({<br/>mask: "00-000"<br/>});<br/>mask.appendTo("#mask");<br/>mask.destroy(); |
@@ -40,7 +40,7 @@ This article describes the API migration process of MaskEdit component from Esse
 
 ## Mask Configuration
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Triggers on value change | **Event** *change*<br/><br/>$("#mask").ejMaskEdit({<br/>maskFormat: "00-00",<br/>change: function() {}<br/>}); | **Event:** *change*<br/><br/>var mask = new ej.inputs.MaskedTextBox({<br/>mask: "00-00",<br/>change: function() {}<br/>});<br/>mask.appendTo("#mask"); |
 | Clears maskedit text/value | **Method:** *clear*<br/><br/>$("#mask").ejMaskEdit({<br/>maskFormat: "0000",<br/>value: “1234”<br/>});<br/>var maskObj = $(“#mask”).data(“ejMaskEdit”);<br/>maskObj.clear(); | **Can be achieved using**<br/>var mask = new ej.inputs.MaskedTextBox({<br/>mask: "99,999"<br/>});<br/>mask.appendTo("#mask");<br/>var maskObj = document.getElementById("mask").ej2\_instances[0];<br/>maskObj.value =""; |
@@ -61,7 +61,7 @@ This article describes the API migration process of MaskEdit component from Esse
 
 ## Validation
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Displays error until correct value is entered | **Property:** *showError*<br/><br/>$("#mask").ejMaskEdit({<br/>maskFormat: "99-999",<br/>showError: true<br/>}); | **MaskedTextBox by default shows error until correct value is entered.** <br/>var mask = new ej.inputs.MaskedTextBox({<br/>mask: "9999",<br/>placeholder: "Enter value"<br/>});<br/>mask.appendTo("#mask"); |
 | Validation message | **Property:** *validationMessage*<br/><br/>$("#mask").ejMaskEdit({<br/>maskFormat: "0000",<br/>validationRules: {required: true},<br/>validationMessage: {required: "Required value"}<br/>}); | **Validation in MaskedTextBox can be achieved through form validation**<br/>var options = {<br/> rules: {<br/>'maskValue': { required: [ true, 'Enter valid mobile number'] },<br/> },<br/>}<br/>var formObject =  new ej.inputs.FormValidator('#form-element', options);<br/> formObject.customPlacement =  function(element, error) {<br/> document.querySelector(".form-group").appendChild(error);<br/>};<br/>var mask = new ej.inputs.MaskedTextBox({<br/>   mask: '000-000-0000',<br/>});<br/>mask.appendTo("#mask");<br/>**HTML** <br/> &lt;form id="form-element" class="form-horizontal"><br/>&lt;div class = "form-group"><br/>&lt;input id="mask" type="text" name="maskValue" class="form-control" /> <br/> &lt;div id="error">&lt;/div><br/>&lt;/div<br/>&lt;/form> |

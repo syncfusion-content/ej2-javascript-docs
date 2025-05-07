@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Pager control
 
-This section explains you the steps required to create a simple Essential JS 2 Pager and demonstrate the basic usage of the Pager control in a JavaScript application.
+This section explains you the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Pager and demonstrate the basic usage of the Pager control in a JavaScript application.
 
 ## Dependencies
 
@@ -30,20 +30,20 @@ Refer the following steps for setup your local environment.
 
 **Step 2:** Create `myapp/resources` folder to store local scripts and styles files.
 
-**Step 3:** Create `myapp/index.js` and `myapp/index.html` files for initializing Essential JS 2 Pager control.
+**Step 3:** Create `myapp/index.js` and `myapp/index.html` files for initializing Essential<sup style="font-size:70%">&reg;</sup> JS 2 Pager control.
 
-## Adding Syncfusion resources
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
 
-The Essential JS 2 Pager control can be initialized by using either of the following ways.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Pager control can be initialized by using either of the following ways.
 
 * Using local script and style.
 * Using CDN link for script and style.
 
 ### Using local script and style
 
-You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/account/manage-trials/downloads) build installed location.
 
-After installing the Essential JS 2 product build, you can copy the pager and its dependencies scripts and style file into the `resources/scripts` and `resources/styles` folder.
+After installing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 product build, you can copy the pager and its dependencies scripts and style file into the `resources/scripts` and `resources/styles` folder.
 
 Refer the below code to find location pager's script and style file.
 
@@ -174,7 +174,7 @@ pager.appendTo('#Pager');
 
 ## Page sizes
 
-The [pageSizes](https://ej2.syncfusion.com/javascript/documentation/api/pager#pagesizes) property in the Syncfusion Pager control allows you to control the number of records displayed per page through a `DropDownList` integrated into the pager. This feature enhances the experience by providing flexibility in data viewing.
+The [pageSizes](https://ej2.syncfusion.com/javascript/documentation/api/pager#pagesizes) property in the Syncfusion<sup style="font-size:70%">&reg;</sup> Pager control allows you to control the number of records displayed per page through a `DropDownList` integrated into the pager. This feature enhances the experience by providing flexibility in data viewing.
 
 **Enabling Page Sizes**
 
@@ -214,7 +214,7 @@ The following example demonstrates how to include the `pageSizes` property in th
 
 ## Run the application
 
-Now, run the `index.html` in web browser, it will render the Essential JS 2 Pager control.
+Now, run the `index.html` in web browser, it will render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Pager control.
 
 Output will be appears as follows.
 

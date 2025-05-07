@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to load the culture file in Essential JS 2
+# How to load the culture file in Essential<sup style="font-size:70%">&reg;</sup> JS 2
 
-In Essential JS 2, the culture file can be loaded by using the loadCldr function. The culture file contains information about the specific culture, such as date and time formats, currency symbols, and translations for UI elements.
+In Essential<sup style="font-size:70%">&reg;</sup> JS 2, the culture file can be loaded by using the loadCldr function. The culture file contains information about the specific culture, such as date and time formats, currency symbols, and translations for UI elements.
 
 ## Installing the CLDR JSON Files
 

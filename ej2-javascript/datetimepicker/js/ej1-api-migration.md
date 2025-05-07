@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Datetimepicker control
 
-This article describes the API migration process of DateTimePicker component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of DateTimePicker component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## DateTime Selection
 
@@ -22,10 +22,10 @@ This article describes the API migration process of DateTimePicker component fro
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -60,10 +60,10 @@ var datetimepicker = new ej.calendars.DateTimePicker({ value: new Date("05/11/20
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -121,10 +121,10 @@ $("#datetimepicker").ejDateTimePicker({ dayHeaderFormat: "short"});
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -180,10 +180,10 @@ var datetimepicker = new ej.calendars.DateTimePicker({ depth:'Year'});datetimepi
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -239,10 +239,10 @@ var datetimepicker = new ej.calendars.DateTimePicker({ max : new Date("5/30/2015
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -288,10 +288,10 @@ function disableDate(args) {
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -622,10 +622,10 @@ datetimepicker.show();
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -661,10 +661,10 @@ datetimepicker.appendTo('#element');
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -699,10 +699,10 @@ var datetimepicker = new ej.calendars.DateTimePicker({ enablePersistence : true}
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -777,10 +777,10 @@ var options = {
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -1157,10 +1157,10 @@ function onDestroy(args){/*code block*/}
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -1217,10 +1217,10 @@ var datetimepicker = new ej.calendars.DateTimePicker({ firstDayOfWeek: 2});datet
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -1261,10 +1261,10 @@ datetimepicker.appendTo('#element');
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>
@@ -1374,10 +1374,10 @@ datetimepicker.show();
 <b>Behavior</b>
 </td>
 <td>
-<b>API in Essential JS 1</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b>
 </td>
 <td>
-<b>API in Essential JS 2</b>
+<b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b>
 </td>
 </tr>
 <tr>

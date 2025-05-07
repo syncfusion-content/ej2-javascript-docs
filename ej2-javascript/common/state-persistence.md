@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# State Persistence in Syncfusion JavaScript controls
+# State Persistence in Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls
 
-Syncfusion JavaScript controls support persisting their state across page refreshes or navigation. To enable this feature, set the [`enablePersistence`](https://ej2.syncfusion.com/documentation/api/base/component/#enablepersistence) property to `true` for the desired control. This stores the control's state in the browser's `localStorage` object on the `unload` event of the page. For example, the [`enablePersistence`](https://ej2.syncfusion.com/documentation/api/base/component/#enablepersistence) property can be set for the Grid control, as shown in the following code snippet.
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls support persisting their state across page refreshes or navigation. To enable this feature, set the [`enablePersistence`](https://ej2.syncfusion.com/documentation/api/base/component/#enablepersistence) property to `true` for the desired control. This stores the control's state in the browser's `localStorage` object on the `unload` event of the page. For example, the [`enablePersistence`](https://ej2.syncfusion.com/documentation/api/base/component/#enablepersistence) property can be set for the Grid control, as shown in the following code snippet.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -42,7 +42,7 @@ Syncfusion JavaScript controls support persisting their state across page refres
 
 ## State Persistence supported controls and properties
 
-The following table illustrates the list of Syncfusion JavaScript controls that are supported with state persistence and the properties that are stored in the `localStorage`.
+The following table illustrates the list of Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls that are supported with state persistence and the properties that are stored in the `localStorage`.
 
 <!-- markdownlint-disable MD033 -->
 

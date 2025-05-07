@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## Getting Started
 
-This section explain steps to create a simple **Pivot Table** with OLAP data source using the Essential JS 2 [quickstart](https://github.com/syncfusion/ej2-quickstart.git) seed repository. This seed repository is pre-configured with the Essential JS 2 package.
+This section explain steps to create a simple **Pivot Table** with OLAP data source using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/syncfusion/ej2-quickstart.git) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 
 > This quickstart seed application is integrated with **System.js** configuration. Refer [here](https://github.com/systemjs/systemjs) to know more details about **System.js** and its functionalities.
 
@@ -45,7 +45,7 @@ The following list of dependencies are required to use the pivot table component
 
 ### Setup for local development
 
-Open the command prompt from the required file directory, and run the following command to clone Syncfusion JavaScript (Essential JS 2) quick start project from [GitHub](https://github.com/syncfusion/ej2-quickstart.git).
+Open the command prompt from the required file directory, and run the following command to clone Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quick start project from [GitHub](https://github.com/syncfusion/ej2-quickstart.git).
 
 ```
 git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
@@ -59,11 +59,11 @@ cd quickstart
 npm install
 ```
 
-> The quickstart seed application has been preconfigured with **@syncfusion/ej2 package** in the **~/package.json** file. On running the command **npm install**, it will automatically install all required Syncfusion JavaScript packages in the application.
+> The quickstart seed application has been preconfigured with **@syncfusion/ej2 package** in the **~/package.json** file. On running the command **npm install**, it will automatically install all required Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript packages in the application.
 
 ### Configuring System JS
 
-Next we need to map [Syncfusion PivotView packages](#dependencies) in the **system.config.js** configuration file as follows.
+Next we need to map [Syncfusion<sup style="font-size:70%">&reg;</sup> PivotView packages](#dependencies) in the **system.config.js** configuration file as follows.
 
 ```ts
 System.config({
@@ -103,7 +103,7 @@ System.import('app');
 
 ### Adding CSS reference
 
-Combined CSS files are available in the Essential JS 2 package root folder. In this illustration, we have referred **material** theme. This theme needs to be referred in your demo application under **src/styles/styles.css** file using the following code.
+Combined CSS files are available in the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package root folder. In this illustration, we have referred **material** theme. This theme needs to be referred in your demo application under **src/styles/styles.css** file using the following code.
 
 ```
 @import '../../node_modules/@syncfusion/ej2/material.css';
@@ -113,7 +113,7 @@ Combined CSS files are available in the Essential JS 2 package root folder. In t
 
 ### Adding pivot table control
 
-You can initialize Essential JS 2 pivot table component in the application using following steps.
+You can initialize Essential<sup style="font-size:70%">&reg;</sup> JS 2 pivot table component in the application using following steps.
 
 * Import the **PivotView** (aka, PivotTable) component from the **@syncfusion/ej2-pivotview** package in **app.ts** file.
 * Then you can initialize pivot table component using **new PivotView()** instance.
@@ -305,37 +305,37 @@ Users can add a calculated field at runtime through the built-in dialog by using
 **Step 1:** Click the "CALCULATED FIELD" button in the field list dialog positioned at the top right corner. The calculated field dialog will be opened now. Enter the name of the calculated field to be created.
 <br/>
 <br/>
-![output](images/olap_calc_button.png "Enabling calculated field in field list UI")
+![output](images/olap_calc_button.png)
 <br/>
 <br/>
-![output](images/calculatedfield-name.png "Enabling calculated field in field list UI")
+![output](images/calculatedfield-name.png)
 <br/>
 <br/>
 **Step 2:** Frame the expression by dragging and dropping the fields from the tree view on the left side of the dialog using simple arithmetic operators. **Example:** "IIF([Measures].[Internet Sales Amount]^0.5 > 100, [Measures].[Internet Sales Amount]*100, [Measures].[Internet Sales Amount]/100)". Please refer here to learn more about the supported [`operators`](https://docs.microsoft.com/en-us/sql/mdx/operators-mdx-syntax?view=sql-server-ver15) and [`functions`](https://docs.microsoft.com/en-us/sql/mdx/functions-mdx-syntax?view=sql-server-ver15) to frame the expression.
 <br/>
 <br/>
-![output](images/calculatedfield-drag.png "Enabling calculated field in field list UI")
+![output](images/calculatedfield-drag.png)
 <br/>
 <br/>
 **Step 3:** Confirm the type of the field to be created - calculated measure or calculated dimension.
 <br/>
 <br/>
-![output](images/calculatedfield-type.png "Enabling calculated field in field list UI")
+![output](images/calculatedfield-type.png)
 <br/>
 <br/>
 **Step 4:** Choose the parent hierarchy of the calculated field. NOTE: It is only applicable to the calculated dimension.
 <br/>
 <br/>
-![output](images/calculatedfield-hierarchy.png "Enabling calculated field in field list UI")
+![output](images/calculatedfield-hierarchy.png)
 <br/>
 <br/>
 **Step 5:** Then select the format string from the drop-down list and finally click "OK".
 <br/>
 <br/>
-![output](images/calculatedfield-format-string.png "Creating new calculated field through dialog")
+![output](images/calculatedfield-format-string.png)
 <br/>
 <br/>
-![output](images/olap_calc_grid.png "New calculated field 'Order on Discount' added in pivot table")
+![output](images/olap_calc_grid.png)
 <br/>
 <br/>
 
@@ -350,53 +350,53 @@ Allows you to specify the required format string while creating new calculated f
 
 By default, **Standard** will be selected from the drop down list.
 
-![output](images/calculatedfield-fomat.png "Calculated field format string")
+![output](images/calculatedfield-fomat.png)
 
 #### Renaming the existing calculated field
 
 Existing calculated field can be renamed only through the UI at runtime. To do so, open the calculated field dialog, click the target field. User can now see the existing name getting displayed in the text box at the top of the dialog. Now, change the name based on user requirement and click "OK".
 
 <!-- markdownlint-disable MD012 -->
-![output](images/before-edit-olap.png "Editing the calculated field")
+![output](images/before-edit-olap.png)
 <br/>
 <br/>
-![output](images/after-edit-olap.png "Renaming the calculated field")
+![output](images/after-edit-olap.png)
 
 #### Editing the existing calculated field formula
 
 Existing calculated field formula can be edited only through the UI at runtime. To do so, open the calculated field dialog, click the target field. User can now see the existing expression getting displayed in a "Expression" section. Now, change the expression based on user requirement and click "OK".
 
-![output](images/before-edit-olap.png "Editing the calculated field")
+![output](images/before-edit-olap.png)
 <br/>
 <br/>
-![output](images/after-change-olap.png "Editing the calculated field formula")
+![output](images/after-change-olap.png)
 
 #### Reusing the existing formula in a new calculate field
 
 While creating a new calculated field, if user wants to the add the formula of an existing calculated field, it can be done easily. To do so, simply drag-and-drop the existing calculated field to the "Expression" section.
 
-![output](images/before-edit-olap.png "Dragging the existing calculated field")
+![output](images/before-edit-olap.png)
 <br/>
 <br/>
-![output](images/while-drag-olap.png "Drag field to formula")
+![output](images/while-drag-olap.png)
 <br/>
 <br/>
-![output](images/after-drag-olap.png "Reusing the existing calculated field formula")
+![output](images/after-drag-olap.png)
 
 #### Modifying the existing format string
 
 Existing calculated field's format string can be modified only through the UI at runtime. To do so, open the calculated field dialog and click the target calculated field. User can now see the format string for the existing calculated field getting displayed in a drop-down list. Change the format string based on the requirement and finally click "OK".
 
-![output](images/before-edit-olap.png "Editing the calculated field")
+![output](images/before-edit-olap.png)
 <br/>
 <br/>
-![output](images/after-modify-olap.png "Editing the calculated field formula")
+![output](images/after-modify-olap.png)
 
 #### Clearing the changes while editing the calculated field
 
 Previous changes can be cleared by using the "Clear" option while performing operations such as creating and editing the calculated field. To do so, click the "Clear" button in the bottom left corner of the dialog.
 
-![output](images/clear-edit-olap.png "Editing the calculated field")
+![output](images/clear-edit-olap.png)
 
 ### Virtual Scrolling
 

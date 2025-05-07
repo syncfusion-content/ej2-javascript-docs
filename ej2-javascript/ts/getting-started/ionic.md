@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Syncfusion JavaScript (Essential JS 2) library and Ionic Framework
+# Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) library and Ionic Framework
 
-This article provides a step-by-step introduction to configure Syncfusion JavaScript (Essential JS 2) library and build it in the Ionic framework.
+This article provides a step-by-step introduction to configure Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) library and build it in the Ionic framework.
 
 ## Prerequisites
 
@@ -46,7 +46,7 @@ on OSX / LINUX:
 
     > Type `yes` and press the <kbd>Enter</kbd> key if the application needs to be integrated with Cordova to target native IOS and Android.
 
-## Configuring Syncfusion JavaScript UI control in application
+## Configuring Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript UI control in application
 
 1.Navigate to the `ej2-ionic` folder from the command prompt, and install the [`@syncfusion/ej2`](https://www.npmjs.com/package/@syncfusion/ej2) npm package in the application using the following command line.
 
@@ -104,7 +104,7 @@ on OSX / LINUX:
     }
 ```
 
-4.Add the Syncfusion JavaScript styles inside `<head>` element in `~/src/index.html` file.
+4.Add the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript styles inside `<head>` element in `~/src/index.html` file.
 
  ```html
 

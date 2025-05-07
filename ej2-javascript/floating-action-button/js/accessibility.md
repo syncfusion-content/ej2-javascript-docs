@@ -65,4 +65,4 @@ The accessibility compliance of the Floating action button control is shown in t
 
 ## See also
 
-* [Accessibility in Syncfusion JavaScript controls](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls](../common/accessibility)

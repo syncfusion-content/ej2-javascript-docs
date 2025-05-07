@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spline in ##Platform_Name## Chart control | Syncfusion
+title: Spline Chart in ##Platform_Name## Charts | Syncfusion
 description: Learn here all about Spline in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Spline 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Spline Chart in ##Platform_Name## control
+# Spline Chart in ##Platform_Name## Charts
 
 ## Spline
 

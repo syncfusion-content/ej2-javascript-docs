@@ -60,4 +60,4 @@ The accessibility compliance of the Skeleton control is shown in the following s
 
 ## See also
 
-* [Accessibility in Syncfusion TypeScript controls](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript controls](../common/accessibility)

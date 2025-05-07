@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Split button control
 
-This article describes the API migration process of SplitButton component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of SplitButton component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Properties
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Specifies the text of the SplitButton | **Property:** *text* <br/><br/>  new ej.SplitButton($("#splitbutton"), { <br/> target: "#target", <br/> text: "Split Button" <br/>}); | **Property:** *content* <br/><br/> let splitButton: SplitButton= new SplitButton({ <br/> content: "Split Button" <br/>}); <br/>splitButton.appendTo("#splitbutton"); |
 | Popup content | **Property:** *target* <br/><br/>  new ej.SplitButton($("#splitbutton"), { <br/> target: "#target", <br/> text: "Split Button" <br/>}); | **Property:** *target* <br/><br/> let splitButton: SplitButton= new SplitButton({ <br/>target: "#target",<br/> content: "Split Button" <br/>}); <br/>splitButton.appendTo("#splitbutton"); |
@@ -37,7 +37,7 @@ This article describes the API migration process of SplitButton component from E
 
 ## Methods
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Destroy method | **Method:** *destroy* <br/><br/>  var splitButton = new ej.SplitButton($("#splitbutton"), { <br/> target: "#target", <br/> text: "Split Button" <br/>});<br/> splitButton.destroy(); | **Method:** *destroy* <br/><br/> let splitButton: SplitButton= new SplitButton({ <br/> content: "Split Button" <br/>}); <br/>splitButton.appendTo("#splitbutton");<br/> splitButton.destroy(); |
 | Disable method | **Method:** *disable* <br/><br/>  var splitButton = new ej.SplitButton($("#splitbutton"), { <br/> target: "#target", <br/> text: "Split Button" <br/>});<br/> splitButton.disable(); | Not applicable |
@@ -47,7 +47,7 @@ This article describes the API migration process of SplitButton component from E
 
 ## Events
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | BeforeOpen event | **Event:** *beforeOpen* <br/><br/>  var splitButton = new ej.SplitButton($("#splitbutton"), { <br/>beforeOpen: function(args) { /** code block */ }, <br/> target: "#target", <br/> text: "Split Button" <br/>}); | **Event:** *beforeOpen* <br/><br/> let splitButton: SplitButton= new SplitButton({ <br/>beforeOpen: (args) => { /** code block */ },<br/> items: items, <br/> content: "Split Button" <br/>}); <br/>splitButton.appendTo("#splitbutton"); |
 | Click event | **Event:** *click* <br/><br/>  var splitButton = new ej.SplitButton($("#splitbutton"), { <br/>click: function(args) { /** code block */ }, <br/> target: "#target", <br/> text: "Split Button" <br/>}); | **Event:** *click* <br/><br/> let splitButton: SplitButton= new SplitButton({ <br/>click: (args) => { /** code block */ },<br/> items: items, <br/> content: "Split Button" <br/>}); <br/>splitButton.appendTo("#splitbutton"); |

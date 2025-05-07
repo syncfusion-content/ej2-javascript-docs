@@ -28,7 +28,7 @@ The following list of dependencies are required to use the Slider control in you
 
 ## Set up your development environment
 
-To get started with Slider control, you can clone the [Essential JS 2 quickstart](https://github.com/syncfusion/ej2-quickstart.git) project, and
+To get started with Slider control, you can clone the [Essential<sup style="font-size:70%">&reg;</sup> JS 2 quickstart](https://github.com/syncfusion/ej2-quickstart.git) project, and
 install the packages by using the following commands.
 
 ```
@@ -37,7 +37,7 @@ cd quickstart
 npm install
 ```
 
-> The [project](https://github.com/syncfusion/ej2-quickstart.git) is preconfigured with the common settings (`src/styles/index.css`, `system.config.js`) to start with all Essential JS 2 controls.
+> The [project](https://github.com/syncfusion/ej2-quickstart.git) is preconfigured with the common settings (`src/styles/index.css`, `system.config.js`) to start with all Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls.
 
 ## Adding Slider to the project
 
@@ -105,7 +105,7 @@ slider.appendTo('#slider');
 
 ## Run the application
 
-The `Essential JS 2 quickstart` application project is configured to compile and run the application in browser. Use the following command to run the application.
+The **Essential<sup style="font-size:70%">&reg;</sup> JS 2 quickstart** application project is configured to compile and run the application in browser. Use the following command to run the application.
 
 ```
 npm start

@@ -88,7 +88,7 @@ Icon only DropDownButton can be achieved by using [`iconCss`](../api/drop-down-b
 {% previewsample "page.domainurl/code-snippet/drop-down-button/icon-only-cs1" %}
 {% endif %}
 
-> The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element. You can also use third party icons on the DropDownButton using the [`iconCss`](../api/drop-down-button/#iconcss) property.
+> The Essential<sup style="font-size:70%">&reg;</sup> JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element. You can also use third party icons on the DropDownButton using the [`iconCss`](../api/drop-down-button/#iconcss) property.
 
 ### DropDownButton with sprite image
 

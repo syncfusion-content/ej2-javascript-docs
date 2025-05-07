@@ -11,20 +11,20 @@ domainurl: ##DomainURL##
 
 # License key registration in ##Platform_Name## Licensing control
 
-Syncfusion license key should be registered, if your project using Syncfusion JavaScript(ES6) packages reference. The generated license key is a string that needs to be registered after any [Syncfusion JavaScript(ES6) reference](https://ej2.syncfusion.com/documentation/getting-started/quick-start/#configure-syncfusion-javascript-control-in-application).
+Syncfusion<sup style="font-size:70%">&reg;</sup> license key should be registered, if your project using Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript(ES6) packages reference. The generated license key is a string that needs to be registered after any [Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript(ES6) reference](https://ej2.syncfusion.com/documentation/getting-started/quick-start/#configure-syncfusion-javascript-control-in-application).
 
->Note: Syncfusion license validation is done offline during application execution and does not require internet access. Apps registered with a Syncfusion license key can be deployed on any system that does not have an internet connection.
+>Note: Syncfusion<sup style="font-size:70%">&reg;</sup> license validation is done offline during application execution and does not require internet access. Apps registered with a Syncfusion<sup style="font-size:70%">&reg;</sup> license key can be deployed on any system that does not have an internet connection.
 
-Generate the [Syncfusion license key](https://ej2.syncfusion.com/documentation/licensing/license-key-generation/) and register it in one of the following ways,
+Generate the [Syncfusion<sup style="font-size:70%">&reg;</sup> license key](https://ej2.syncfusion.com/documentation/licensing/license-key-generation/) and register it in one of the following ways,
 
 * [Register the license key in the project](#register-syncfusion-license-key-in-the-project)
 * [Register the license key using the npx command](#register-syncfusion-license-key-using-the-npx-command)
 
-## Register Syncfusion license key in the project
+## Register Syncfusion<sup style="font-size:70%">&reg;</sup> license key in the project
 
-Register the license key at the entry point of the project before using the Syncfusion controls.
+Register the license key at the entry point of the project before using the Syncfusion<sup style="font-size:70%">&reg;</sup> controls.
 
-> As we have mandated license registration for the Syncfusion JavaScript components, we realize there is a possibility to view the registered Syncfusion License key from your application by others. We acknowledge this is taking place in the JavaScript platform, as we have minimal scope for hiding the License key and we also recommend not to advertise it.
+> As we have mandated license registration for the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript components, we realize there is a possibility to view the registered Syncfusion<sup style="font-size:70%">&reg;</sup> License key from your application by others. We acknowledge this is taking place in the JavaScript platform, as we have minimal scope for hiding the License key and we also recommend not to advertise it.
 
 ```ts
 // Registering Syncfusion license key
@@ -34,11 +34,11 @@ registerLicense('Replace your generated license key here');
 
 ```
 
-> Only from 2022 Vol 1 v20.1.0.47, license key registration required for Essential JavaScript 2 products.
+> Only from 2022 Vol 1 v20.1.0.47, license key registration required for Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 products.
 
-## Register Syncfusion license key using the npx command
+## Register Syncfusion<sup style="font-size:70%">&reg;</sup> license key using the npx command
 
-Register the Syncfusion license key through npx command in one of the following ways,
+Register the Syncfusion<sup style="font-size:70%">&reg;</sup> license key through npx command in one of the following ways,
 
 * [Register the license key with the license file](#register-the-license-key-with-the-license-file)
 * [Register the license key with the environment variable](#register-the-license-key-with-the-environment-variable)
@@ -47,7 +47,7 @@ Register the Syncfusion license key through npx command in one of the following 
 
 ### Register the license key with the license file
 
-The following steps show how to register the Syncfusion license key with the license text file.
+The following steps show how to register the Syncfusion<sup style="font-size:70%">&reg;</sup> license key with the license text file.
 
 * Create the `syncfusion-license.txt` file in the application root directory and paste the license key.
 
@@ -57,19 +57,19 @@ The following steps show how to register the Syncfusion license key with the lic
 npx syncfusion-license activate
 ```
 
-* Once the Syncfusion license key is activated, the following console message will appear.
+* Once the Syncfusion<sup style="font-size:70%">&reg;</sup> license key is activated, the following console message will appear.
 
-  **License message:** <br /> (INFO) Syncfusion License imported successfully.
+  **License message:** <br /> (INFO) Syncfusion<sup style="font-size:70%">&reg;</sup> License imported successfully.
 
 * Now run the application. If you are facing a license validation error, refer to this [link](https://ej2.syncfusion.com/documentation/licensing/licensing-errors/) to resolve it. Also, find the most frequent license registration questions from this [`link`](https://ej2.syncfusion.com/documentation/licensing/licensing-troubleshoot/).
 
->If you don't want to use the license text file in the application, refer to this [link](#register-the-license-key-with-the-environment-variable) to use an environment variable and register the Syncfusion license key. Also, check out some common licensing FAQs while registering the license key using the npx command from this [link](https://ej2.syncfusion.com/documentation/licensing/licensing-troubleshoot#Reactivating-license-once-after-updating-the-package-version-while-using-npx)
+>If you don't want to use the license text file in the application, refer to this [link](#register-the-license-key-with-the-environment-variable) to use an environment variable and register the Syncfusion<sup style="font-size:70%">&reg;</sup> license key. Also, check out some common licensing FAQs while registering the license key using the npx command from this [link](https://ej2.syncfusion.com/documentation/licensing/licensing-troubleshoot#Reactivating-license-once-after-updating-the-package-version-while-using-npx)
 
 ### Register the license key with the environment variable
 
 You can set the environment variable as `SYNCFUSION_LICENSE` in the system and paste the license key as a value. It can be used in all applications on your machine.
 
-The following steps show how to set environment variable in different operating systems and register the Syncfusion license key.
+The following steps show how to set environment variable in different operating systems and register the Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
 * Set the environment variable in different operating systems like below,
 
@@ -119,13 +119,13 @@ export SYNCFUSION_LICENSE='license key'
 npx syncfusion-license activate
 ```
 
-* Once the Syncfusion license key is activated, the following console message will appear.
+* Once the Syncfusion<sup style="font-size:70%">&reg;</sup> license key is activated, the following console message will appear.
 
-  **License message:** <br /> (INFO) Syncfusion License imported successfully.
+  **License message:** <br /> (INFO) Syncfusion<sup style="font-size:70%">&reg;</sup> License imported successfully.
 
 * Now run the application. If you are facing a license validation error, refer to this [link](https://ej2.syncfusion.com/documentation/licensing/licensing-errors/) to resolve it. Also, find the most frequent license registration questions from this [`link`](https://ej2.syncfusion.com/documentation/licensing/licensing-troubleshoot/).
 
-### Register Syncfusion license key in CI services
+### Register Syncfusion<sup style="font-size:70%">&reg;</sup> license key in CI services
 
 The following sections show how to use an environment variable in CI services.
 
@@ -133,7 +133,7 @@ The following sections show how to use an environment variable in CI services.
 
 * Create a [new Repository Secret](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository) or an [Organization Secret](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-an-organization). Set the name of the secret to `SYNCFUSION_LICENSE` and use the license key as a value.
 
-* Add the Syncfusion license activation command after running npm install or yarn like below,
+* Add the Syncfusion<sup style="font-size:70%">&reg;</sup> license activation command after running npm install or yarn like below,
 
 ```bash
   steps:
@@ -150,7 +150,7 @@ The following sections show how to use an environment variable in CI services.
 
 * Create a new [User-defined Variable](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch) named `SYNCFUSION_LICENSE`. Use the license key as a value.
 
-* Add the Syncfusion license activation command after running npm install or yarn like below,
+* Add the Syncfusion<sup style="font-size:70%">&reg;</sup> license activation command after running npm install or yarn like below,
 
 The following example shows the syntax for Windows build agents.
 
@@ -188,7 +188,7 @@ steps:
 
 * Create a new [User-defined Variable](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch) named `SYNCFUSION_LICENSE`. Use the license key as a value.
 
-* Add the Syncfusion license activation command after running npm install or yarn using bash task like below,
+* Add the Syncfusion<sup style="font-size:70%">&reg;</sup> license activation command after running npm install or yarn using bash task like below,
 
 ```bash
 # Activate the license

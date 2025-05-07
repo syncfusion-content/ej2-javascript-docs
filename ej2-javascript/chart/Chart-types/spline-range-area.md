@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Spline range area in ##Platform_Name## Chart control | Syncfusion
-description: Learn here all about Spline range area in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
+title: Spline Range Area Chart in ##Platform_Name## Charts | Syncfusion
+description: Learn here all about Spline Range Area in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Spline range area 
+control: Spline Range Area 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Spline range area Chart in ##Platform_Name## control
+# Spline Range Area Chart in ##Platform_Name## Charts
 
-## Spline range area
+## Spline Range Area
 
 To render a [spline range area](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/spline-range-area-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  

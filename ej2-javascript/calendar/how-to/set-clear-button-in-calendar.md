@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 To configure `clear` button in Calendar UI, do the following:
 
-1. To the [`created`](../../api/calendar#created) event of the Calendar, add the required elements to make clear button visible. In the following example, Essential JS 2 button component within `div` element is used.
+1. To the [`created`](../../api/calendar#created) event of the Calendar, add the required elements to make clear button visible. In the following example, Essential<sup style="font-size:70%">&reg;</sup> JS 2 button component within `div` element is used.
 
 2. When the `e-footer` class is used, the div tag acts as the footer.
 

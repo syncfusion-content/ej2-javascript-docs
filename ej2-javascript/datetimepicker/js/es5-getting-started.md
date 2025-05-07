@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Es5 getting started in ##Platform_Name## Datetimepicker control
 
-The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
 ## Component Initialization
 
-Create an app folder `myapp` in local machine to initialize Essential JS 2 JavaScript components.
+Create an app folder `myapp` in local machine to initialize Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components.
 
 Using either of the following way to refer the required script and styles.
 
@@ -24,7 +24,7 @@ Using either of the following way to refer the required script and styles.
 
 ### Using local script and style references in a HTML page
 
-**Step 1:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+**Step 1:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
 **Step 2:** To render DateTimePicker component, need to add DateTimePicker and its dependent packages from below installed location.
 
@@ -63,7 +63,7 @@ Using either of the following way to refer the required script and styles.
 
 **Step 3:** Create a folder `myapp/resources` and copy/paste the global scripts and styles from the above installed location to `myapp/resources` location.
 
-**Step 4:** Create a HTML page (index.html) in `myapp` location and add the Essentials JS 2 script and style references.
+**Step 4:** Create a HTML page (index.html) in `myapp` location and add the Essential<sup style="font-size:70%">&reg;</sup> JS 2 script and style references.
 
 ```html
 <!DOCTYPE html>
@@ -94,7 +94,7 @@ Using either of the following way to refer the required script and styles.
 
 > If you want to refer the combined component styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
-**Step 5:** Now, add the `input` element and initiate the `Essential JS 2 DateTimePicker` component in the `index.html` by using following code
+**Step 5:** Now, add the `input` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 DateTimePicker** component in the `index.html` by using following code
 
 ```html
 <!DOCTYPE html>
@@ -134,11 +134,11 @@ Using either of the following way to refer the required script and styles.
 </html>
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential JS 2 DateTimePicker** component.
+**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 DateTimePicker** component.
 
 ### Using CDN link for script and style reference
 
-**Step 1:** The Essential JS 2 components scripts and styles are already hosted in the below CDN link formats.
+**Step 1:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 components scripts and styles are already hosted in the below CDN link formats.
 
 **Syntax:**
 > Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`

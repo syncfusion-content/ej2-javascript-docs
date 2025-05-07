@@ -50,7 +50,7 @@ In the following sample, treegrid enabled with dialog template editing.
 
 ### Template context
 
-The Essential JS2 packages has a built-in template engine. Using the template engine, you can access the row information inside the HTML element and bind the attributes, values, or elements based on this row information.
+The Essential<sup style="font-size:70%">&reg;</sup> JS2 packages has a built-in template engine. Using the template engine, you can access the row information inside the HTML element and bind the attributes, values, or elements based on this row information.
 
 The following properties will be available at the time of template execution.
 

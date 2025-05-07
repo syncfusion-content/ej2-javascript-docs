@@ -79,4 +79,4 @@ The accessibility compliance of the Speed Dial control is shown in the following
 
 ## See also
 
-* [Accessibility in Syncfusion TypeScript controls](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript controls](../common/accessibility)

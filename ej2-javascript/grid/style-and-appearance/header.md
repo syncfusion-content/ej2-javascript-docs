@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Header in ##Platform_Name## Grid control
 
-You can customize the appearance of the header elements in the Syncfusion ##Platform_Name## Grid control using CSS. Here are examples of how to customize the Grid header, header cell, and header cell div element.
+You can customize the appearance of the header elements in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control using CSS. Here are examples of how to customize the Grid header, header cell, and header cell div element.
 
 ## Customizing the grid header
 

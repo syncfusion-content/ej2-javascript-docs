@@ -11,20 +11,20 @@ domainurl: ##DomainURL##
 
 # Es5 getting started in ##Platform_Name## Splitter control
 
-The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework that can be directly used in latest web browsers.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework that can be directly used in latest web browsers.
 
 ## Component initialization
 
-The Essential JS 2 JavaScript controls can be initialized by using any of the following two ways:
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using any of the following two ways:
 
 * Using local script and style references in an HTML page.
 * Using CDN link for script and style reference.
 
 ### Using local script and style references in an HTML page
 
-**Step 1:** Create an app folder `myapp` for Essential JS 2 JavaScript controls.
+**Step 1:** Create an app folder `myapp` for Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+**Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
 **Syntax:**
 > Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -59,7 +59,7 @@ The Essential JS 2 JavaScript controls can be initialized by using any of the fo
   </html>
 ```
 
-**Step 5:** Now, create a `div` element to apply the `Essential JS 2 splitter` control in the `index.html` by using following code.
+**Step 5:** Now, create a `div` element to apply the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 splitter** control in the `index.html` by using following code.
 
 ```html
 <!DOCTYPE html>
@@ -88,13 +88,13 @@ The Essential JS 2 JavaScript controls can be initialized by using any of the fo
   </html>
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential JS 2 splitter** control.
+**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 splitter** control.
 
 ### Using CDN link for script and style reference
 
-**Step 1:** Create an app folder `myapp` for the Essential JS 2 JavaScript controls.
+**Step 1:** Create an app folder `myapp` for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
 
-**Step 2:** The Essential JS 2 component's global scripts and styles are already hosted in the following CDN link formats.
+**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 component's global scripts and styles are already hosted in the following CDN link formats.
 
 **Syntax:**
 > Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -104,7 +104,7 @@ The Essential JS 2 JavaScript controls can be initialized by using any of the fo
 **Example:**
 > Styles: [`http://cdn.syncfusion.com/ej2/ej2-layouts/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-layouts/styles/material.css)
 
-**Step 3:** Create an HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `div` element and initiate the `Essential JS 2 splitter` control in the index.html by using the following code.
+**Step 3:** Create an HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `div` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 splitter** control in the index.html by using the following code.
 
 ## Load content to the pane
 

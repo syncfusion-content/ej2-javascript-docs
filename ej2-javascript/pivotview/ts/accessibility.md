@@ -3,7 +3,7 @@ layout: post
 title: Accessibility in Typescript Pivotview component | Syncfusion
 description: Learn here all about Accessibility in Syncfusion Typescript Pivotview component of Syncfusion Essential JS 2 and more.
 control: Accessibility 
-platform: ej2-Typescript
+platform: ej2-typescript
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -246,4 +246,4 @@ The accessibility compliance of the pivot table component is shown in the follow
 
 ## See also
 
-* [Accessibility in Syncfusion EJ2 Typescript components](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2 Typescript components](../common/accessibility)

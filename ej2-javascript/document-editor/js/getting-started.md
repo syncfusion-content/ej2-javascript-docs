@@ -11,20 +11,20 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Document editor control
 
-The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
 ## Component Initialization
 
-The Essential JS 2 JavaScript components can be initialized by using either of the following ways.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components can be initialized by using either of the following ways.
 
 * Using local script and style references in a HTML page.
 * Using CDN link for script and style reference.
 
 ### Using local script and style references in a HTML page
 
-**Step 1:** Create an app folder `app` for Essential JS 2 JavaScript components.
+**Step 1:** Create an app folder `app` for Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2/) build installed location.
+**Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2/) build installed location.
 
 **Syntax:**
 > Script: `**(installed location)**/JavaScript - EJ2/{RELEASE_VERSION}/Web (Essential JS 2)/JavaScript/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -83,7 +83,7 @@ The Essential JS 2 JavaScript components can be initialized by using either of t
   </html>
 ```
 
-**Step 5:** Now, add the `Div` element and initiate the `Essential JS 2 DocumentEditor` component in the `index.html` by using following code
+**Step 5:** Now, add the `Div` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 DocumentEditor** component in the `index.html` by using following code
 
 ```html
   <!DOCTYPE html>
@@ -144,9 +144,9 @@ The Essential JS 2 JavaScript components can be initialized by using either of t
 
 > The Web API hosted link `https://services.syncfusion.com/js/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential JS 2 DocumentEditor** component.
+**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 DocumentEditor** component.
 
-**Step 7:** To render DocumentEditorContainer component, add the `Div` element and initiate the `Essential JS 2 DocumentEditorContainer` component in the `index.html` by using following code
+**Step 7:** To render DocumentEditorContainer component, add the `Div` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 DocumentEditorContainer** component in the `index.html` by using following code
 
 ```html
   <!DOCTYPE html>
@@ -206,13 +206,13 @@ The Essential JS 2 JavaScript components can be initialized by using either of t
 
 > The Web API hosted link `https://services.syncfusion.com/js/production/api/documenteditor/` utilized in the Document Editor's serviceUrl property is intended solely for demonstration and evaluation purposes. For production deployment, please host your own web service with your required server configurations. You can refer and reuse the [GitHub Web Service example](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) or [Docker image](https://hub.docker.com/r/syncfusion/word-processor-server) for hosting your own web service and use for the serviceUrl property.
 
-Now, run the `index.html` in web browser, it will render the **Essential JS 2 DocumentEditorContainer** component.
+Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 DocumentEditorContainer** component.
 
 ### Using CDN link for script and style reference
 
-**Step 1:** Create an app folder `app` for the Essential JS 2 JavaScript components.
+**Step 1:** Create an app folder `app` for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components.
 
-**Step 2:** The Essential JS 2 component's global scripts and styles are already hosted in the below CDN link formats.
+**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 component's global scripts and styles are already hosted in the below CDN link formats.
 
 **Syntax:**
 > Script: `https://cdn.syncfusion.com/ej2/23.1.36/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -224,7 +224,7 @@ Now, run the `index.html` in web browser, it will render the **Essential JS 2 Do
 >
 > Styles: [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-documenteditor/styles/material.css`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-documenteditor/styles/material.css)
 
-**Step 3:** Create a HTML page (index.html) in `app` location and add the CDN link references. Now, add the `Div` element and initiate the `Essential JS 2 DocumentEditor` component in the index.html by using following code.
+**Step 3:** Create a HTML page (index.html) in `app` location and add the CDN link references. Now, add the `Div` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 DocumentEditor** component in the index.html by using following code.
 
 ```html
 <!DOCTYPE html>
@@ -289,9 +289,9 @@ Now, run the `index.html` in web browser, it will render the **Essential JS 2 Do
 
 {% previewsample "page.domainurl/code-snippet/document-editor/es5-getting-started-cs1" %}
 
-**Step 4:** Now, run the `index.html` in web browser, it will render the `Essential JS 2 DocumentEditor` component.
+**Step 4:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 DocumentEditor** component.
 
-**Step 5:** To render DocumentEditorContainer component, add the `Div` element and initiate the `Essential JS 2 DocumentEditorContainer` component in the index.html by using following code.
+**Step 5:** To render DocumentEditorContainer component, add the `Div` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 DocumentEditorContainer** component in the index.html by using following code.
 
 ```html
 <!DOCTYPE html>
@@ -354,7 +354,7 @@ Now, run the `index.html` in web browser, it will render the **Essential JS 2 Do
 
 {% previewsample "page.domainurl/code-snippet/document-editor/es5-getting-started-cs2" %}
 
-Now, run the `index.html` in web browser, it will render the `Essential JS 2 DocumentEditorContainer` component.
+Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 DocumentEditorContainer** component.
 
 ## Server side dependencies
 
@@ -370,7 +370,7 @@ The Document Editor component requires server-side interactions for the followin
 
 Please refer the [example from GitHub](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices) to configure the web service and set the [serviceUrl](../api/document-editor-container/#serviceurl).
 
-Syncfusion provides a predefined [Word Processor server docker image](https://hub.docker.com/r/syncfusion/word-processor-server) targeting ASP.NET Core 2.1 framework. You can directly pull this docker image and deploy it in server on the go. You can also create own docker image by customizing the existing [docker project from GitHub](https://github.com/SyncfusionExamples/Word-Processor-Server-Docker).
+Syncfusion<sup style="font-size:70%">&reg;</sup> provides a predefined [Word Processor server docker image](https://hub.docker.com/r/syncfusion/word-processor-server) targeting ASP.NET Core 2.1 framework. You can directly pull this docker image and deploy it in server on the go. You can also create own docker image by customizing the existing [docker project from GitHub](https://github.com/SyncfusionExamples/Word-Processor-Server-Docker).
 
 >Note: Staring from `v19.3.0.x`, we have optimized the accuracy of text size measurements such as to match Microsoft Word pagination for most Word documents. This improvement is included as default behavior along with an optional API [to disable it and retain the document pagination behavior of older versions](../document-editor/how-to/disable-optimized-text-measuring)..
 

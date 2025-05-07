@@ -25,7 +25,7 @@ Below is the list of minimum dependencies required to use the DataManager.
 
 ## Set up development environment
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
+Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -45,9 +45,9 @@ cd ej2-quickstart
 {% endhighlight %}
 {% endtabs %}
 
-## Add Syncfusion JavaScript packages
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript packages
 
-Syncfusion JavaScript (Essential JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion JavaScript (Essential JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
 
 The quickstart application is preconfigured with the dependent **@syncfusion/ej2** package in the **~/package.json** file. Use the following command to install the dependent npm packages from the command prompt.
 
@@ -239,13 +239,13 @@ result.forEach((data: Object) => {
 
 ## Component binding
 
-DataManager component can be used with Syncfusion components which supports data binding.
+DataManager component can be used with Syncfusion<sup style="font-size:70%">&reg;</sup> components which supports data binding.
 
 In the following samples, the grid component is bound. To render the grid with the necessary configurations, please refer to the [Grid Getting Started](https://ej2.syncfusion.com/documentation/grid/getting-started) documentation.
 
 ### Local data binding
 
-A DataSource can be created in-line with other Syncfusion component configuration settings.
+A DataSource can be created in-line with other Syncfusion<sup style="font-size:70%">&reg;</sup> component configuration settings.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -281,7 +281,7 @@ grid.appendTo('#Grid');
 
 ### Remote data binding
 
-To bind remote data to Syncfusion component, you can assign a service data as an instance of `DataManager` to the `dataSource` property.
+To bind remote data to Syncfusion<sup style="font-size:70%">&reg;</sup> component, you can assign a service data as an instance of `DataManager` to the `dataSource` property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

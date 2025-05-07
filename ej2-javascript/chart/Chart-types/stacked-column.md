@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Stacked column in ##Platform_Name## Chart control | Syncfusion
-description: Learn here all about Stacked column in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
+title: Stacked Column Chart in ##Platform_Name## Charts | Syncfusion
+description: Learn here all about Stacked Column in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Stacked column 
+control: Stacked Column 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Stacked column Chart in ##Platform_Name## control
+# Stacked Column Chart in ##Platform_Name## Charts
 
-## 100% Stacked column
+## 100% Stacked Column
 
 To render a [100% stacked column](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/100-stacked-column-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  

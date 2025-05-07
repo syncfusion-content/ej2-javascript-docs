@@ -9,13 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion JavaScript UI Controls (Essential JS 2)
+# Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript UI Controls (Essential<sup style="font-size:70%">&reg;</sup> JS 2)
 
-Syncfusion JavaScript (Essential JS 2) is a modern UI Controls library that has been built from the ground up to be lightweight, responsive, modular and touch friendly. It is written in TypeScript and has no external dependencies. It also includes complete support for Angular, React, Vue, ASP.NET MVC and ASP.NET Core frameworks.
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) is a modern UI Controls library that has been built from the ground up to be lightweight, responsive, modular and touch friendly. It is written in TypeScript and has no external dependencies. It also includes complete support for Angular, React, Vue, ASP.NET MVC and ASP.NET Core frameworks.
 
 ## Components list
 
-The Syncfusion JavaScript UI controls are listed below.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript UI controls are listed below.
 
 <style>
 
@@ -194,12 +194,12 @@ which contains hundreds of code samples, it is very likely that you will find a 
 
 If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please contact us by creating a support ticket in [our support site](https://syncfusion.com/support) or ask your query in Stack Overflow with tag `syncfusion-ej2`.
 
-> Syncfusion does not collect any kind of information when our components are used in customer applications.
+> Syncfusion<sup style="font-size:70%">&reg;</sup> does not collect any kind of information when our components are used in customer applications.
 
 ## See also
 
 * [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/estudio)
-* [Getting Started with Syncfusion JavaScript UI controls](https://ej2.syncfusion.com/documentation/getting-started/quick-start)
-* [Getting Started with Syncfusion JavaScript and Ionic Frameworks](https://ej2.syncfusion.com/documentation/getting-started/ionic)
-* [Getting started with Syncfusion JavaScript and Cordova CLI](https://ej2.syncfusion.com/documentation/getting-started/cordova)
-* [Getting Started with Syncfusion JavaScript and Meteor Framework](https://ej2.syncfusion.com/documentation/getting-started/meteor)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript UI controls](https://ej2.syncfusion.com/documentation/getting-started/quick-start)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript and Ionic Frameworks](https://ej2.syncfusion.com/documentation/getting-started/ionic)
+* [Getting started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript and Cordova CLI](https://ej2.syncfusion.com/documentation/getting-started/cordova)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript and Meteor Framework](https://ej2.syncfusion.com/documentation/getting-started/meteor)

@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to load culture files in Essential JS 2 using Ajax
+# How to load culture files in Essential<sup style="font-size:70%">&reg;</sup> JS 2 using Ajax
 
 Ajax post can be used to load the `cldr` JSON files. To get started, install the `cldr-data` package using the following command.
 

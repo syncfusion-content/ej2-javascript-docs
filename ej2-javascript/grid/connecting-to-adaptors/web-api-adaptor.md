@@ -10,9 +10,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# WebApiAdaptor in Syncfusion ##Platform_Name## Grid Control
+# WebApiAdaptor in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid Control
 
-The `WebApiAdaptor` is an extension of the `ODataAdaptor`, designed to interact with Web APIs created with OData endpoints. This adaptor ensures seamless communication between Syncfusion Grid and OData-endpoint based Web APIs, enabling efficient data retrieval and manipulation. For successful integration, the endpoint must be capable of understanding OData-formatted queries sent along with the request.
+The `WebApiAdaptor` is an extension of the `ODataAdaptor`, designed to interact with Web APIs created with OData endpoints. This adaptor ensures seamless communication between Syncfusion<sup style="font-size:70%">&reg;</sup> Grid and OData-endpoint based Web APIs, enabling efficient data retrieval and manipulation. For successful integration, the endpoint must be capable of understanding OData-formatted queries sent along with the request.
 
 To enable the OData query option for a Web API, please refer to the corresponding [documentation](https://learn.microsoft.com/en-us/aspnet/web-api/overview/odata-support-in-aspnet-web-api/supporting-odata-query-options), which provides detailed instructions on configuring the endpoint to understand OData-formatted queries.
 
@@ -162,9 +162,9 @@ namespace WebApiAdaptor.Controllers
 {% endhighlight %}
 {% endtabs %}
 
-## Connecting syncfusion grid to an api service
+## Connecting syncfusion<sup style="font-size:70%">&reg;</sup> grid to an api service
 
-To integrate the Syncfusion Grid control into your ##Platform_Name## and ASP.NET Core project using Visual Studio, follow these steps:
+To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control into your ##Platform_Name## and ASP.NET Core project using Visual Studio, follow these steps:
 
 **Step 1:** Create a package.json file:
 
@@ -242,9 +242,9 @@ module.exports = {
 
 **Step 6:** Create a new directory named `src` in the project root for the client code.
 
-**Step 7:** Install Syncfusion Packages
+**Step 7:** Install Syncfusion<sup style="font-size:70%">&reg;</sup> Packages
 
-Open your terminal in the project’s root folder and install the required Syncfusion packages using npm:
+Open your terminal in the project’s root folder and install the required Syncfusion<sup style="font-size:70%">&reg;</sup> packages using npm:
 
 ```bash
 npm install @syncfusion/ej2-grids --save
@@ -342,7 +342,7 @@ Run the project in Visual Studio.
 
 The `wwwroot/index.html` file is served at **https://localhost:xxxx**.
 
-With these steps, you have integrated the Syncfusion Grid control with your ASP.NET Core project and set up the necessary client-side configuration using Webpack and ##Platform_Name##. This will allow the Syncfusion Grid to fetch data from your API and display it accordingly.
+With these steps, you have integrated the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control with your ASP.NET Core project and set up the necessary client-side configuration using Webpack and ##Platform_Name##. This will allow the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid to fetch data from your API and display it accordingly.
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -483,7 +483,7 @@ namespace WebApiAdaptor.Controllers
 {% endhighlight %}
 {% endtabs %}
 
-## Connecting syncfusion grid to an api service
+## Connecting syncfusion<sup style="font-size:70%">&reg;</sup> grid to an api service
 
 **Step 1:** Create wwwroot folder
 
@@ -495,7 +495,7 @@ Inside the wwwroot folder, create js and css folders to hold script and CSS file
 
 **Step 3:** Create index.html File
 
-Create an `index.html` file under the `wwwroot` folder and add the necessary HTML structure along with CSS and JavaScript links to include Syncfusion Grid dependencies.
+Create an `index.html` file under the `wwwroot` folder and add the necessary HTML structure along with CSS and JavaScript links to include Syncfusion<sup style="font-size:70%">&reg;</sup> Grid dependencies.
 
 ```html
 <!DOCTYPE html>
@@ -534,7 +534,7 @@ Create an `index.html` file under the `wwwroot` folder and add the necessary HTM
 
 **Step 4:** Create JavaScript File
 
-Create a index.js file under the `wwwroot/js` folder and add the JavaScript code to initialize the Syncfusion Grid with data from the API service.
+Create a index.js file under the `wwwroot/js` folder and add the JavaScript code to initialize the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid with data from the API service.
 
 ```js
 var data = new ej.data.DataManager({
@@ -558,7 +558,7 @@ grid.appendTo('#Grid');
 
 **Step 5:** Run the Project
 
-Now, run the project to see the Syncfusion Grid connected to the API service in action.
+Now, run the project to see the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid connected to the API service in action.
 
 {% endif %}
 
@@ -966,7 +966,7 @@ grid.appendTo('#Grid');
 
 ## Handling CRUD operations
 
-The Syncfusion ##Platform_Name## Grid Control seamlessly integrates CRUD (Create, Read, Update, Delete) operations with server-side controller actions through specific properties: [insertUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_InsertUrl), [removeUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_RemoveUrl), [updateUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_UpdateUrl), [crudUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_CrudUrl), and [batchUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_BatchUrl). These properties enable the grid to communicate with the data service for every grid action, facilitating server-side operations.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid Control seamlessly integrates CRUD (Create, Read, Update, Delete) operations with server-side controller actions through specific properties: [insertUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_InsertUrl), [removeUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_RemoveUrl), [updateUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_UpdateUrl), [crudUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_CrudUrl), and [batchUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_BatchUrl). These properties enable the grid to communicate with the data service for every grid action, facilitating server-side operations.
 
 To enable editing in ##Platform_Name## Grid control, refer to the editing [documentation](../editing/edit). In the below example, the inline edit [mode](../../api/grid/editSettings/#mode) is enabled and [toolbar](../../api/grid/#toolbar) property is configured to display toolbar items for editing purposes.
 

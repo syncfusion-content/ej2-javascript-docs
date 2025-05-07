@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Schedule control
 
-This section briefly explains how to create [**JavaScript Scheduler**](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) component and configure its available functionalities in TypeScript, using Essential JS 2 [quickstart](https://github.com/syncfusion/ej2-quickstart.git) seed repository.
+This section briefly explains how to create [**JavaScript Scheduler**](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) component and configure its available functionalities in TypeScript, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/syncfusion/ej2-quickstart.git) seed repository.
 
 ## Dependencies
 
@@ -33,7 +33,7 @@ The following list of dependencies are required to use the Schedule component in
 
 ## Installation and configuration
 
-Clone the Essential JS2 quickstart application project from [GitHub](https://github.com/syncfusion/ej2-quickstart.git) using the command prompt, and
+Clone the Essential<sup style="font-size:70%">&reg;</sup> JS2 quickstart application project from [GitHub](https://github.com/syncfusion/ej2-quickstart.git) using the command prompt, and
 install the necessary npm packages using the following command line scripts.
 
 ```
@@ -99,7 +99,7 @@ Scheduler CSS files are available in the ej2-schedule and its sub-component pack
 @import '../../node_modules/@syncfusion/ej2-schedule/styles/material.css';
 ```
 
-In case, if you want to make use of the combined CSS files of entire components, then you can avail it from the root folder of Essential JS 2 package and reference it with the code shown below.
+In case, if you want to make use of the combined CSS files of entire components, then you can avail it from the root folder of Essential<sup style="font-size:70%">&reg;</sup> JS 2 package and reference it with the code shown below.
 
 ```
 @import '../../node_modules/@syncfusion/ej2/material.css';

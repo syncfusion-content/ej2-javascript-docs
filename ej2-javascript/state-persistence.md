@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# State Persistence in Syncfusion JavaScript controls
+# State Persistence in Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls
 
-The Syncfusion JavaScript (Essential JS 2) library has support for persisting control's state across page refreshes or navigation. To
+The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) library has support for persisting control's state across page refreshes or navigation. To
 enable this feature, set [`enablePersistence`](./api/base/component#enablepersistence) property as true to the required control. This will store
 the control's state in browser’s `localStorage` object on page `unload` event. For example, we have enabled persistence to grid control in the following code.
 

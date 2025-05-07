@@ -295,11 +295,11 @@ The following example shows `Protect Workbook` by using the [`isProtected`](http
 
 {% if page.publishingplatform == "typescript" %}
 
-The following example shows `Protect Workbook` by using the [`password`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#password) property in the Spreadsheet control. To unprotect the workbook, click the unprotect workbook button in the data tab and provide the password as syncfusion in the dialog box.
+The following example shows `Protect Workbook` by using the [`password`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#password) property in the Spreadsheet control. To unprotect the workbook, click the unprotect workbook button in the data tab and provide the password as syncfusion<sup style="font-size:70%">&reg;</sup> in the dialog box.
 
 {% elsif page.publishingplatform == "javascript" %}
 
-The following example shows `Protect Workbook` by using the [`password`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#password) property in the Spreadsheet control. To unprotect the workbook, click the unprotect workbook button in the data tab and provide the password as syncfusion in the dialog box.
+The following example shows `Protect Workbook` by using the [`password`](https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet/#password) property in the Spreadsheet control. To unprotect the workbook, click the unprotect workbook button in the data tab and provide the password as syncfusion<sup style="font-size:70%">&reg;</sup> in the dialog box.
 
 {% endif %}
 

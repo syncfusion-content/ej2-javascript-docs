@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scatter in ##Platform_Name## Chart control | Syncfusion
+title: Scatter Chart in ##Platform_Name## Charts | Syncfusion
 description: Learn here all about Scatter in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Scatter 
@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Scatter Chart in ##Platform_Name## control
+# Scatter Chart in ##Platform_Name## Charts
 
-## Scatter charts
+## Scatter Chart
 
 To render a [scatter](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/scatter-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  

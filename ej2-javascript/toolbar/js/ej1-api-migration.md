@@ -11,18 +11,18 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Toolbar control
 
-This article describes the API migration process of Toolbar component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Toolbar component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Accessibility
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Localization | **Not Applicable** | **Property:** *locale* <br /><br /> var toolbar = new ej.navigations.Toolbar({ <br /> &nbsp; locale: 'en-US' <br /> }); <br /> toolbar.appendTo('#ej2Toolbar'); <br /> |
 | RTL | **Property:** *enableRTL* <br /><br /> $("#toolbar").ejToolbar({ <br /> &nbsp; enableRTL: true <br /> }); <br /> | **Property:** *enableRtl* <br /><br /> var toolbar = new ej.navigations.Toolbar({ <br /> &nbsp; enableRtl: true <br /> }); <br /> toolbar.appendTo('#ej2Toolbar'); <br /> |
 
 ## DataSource
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | DataSource | **Property:** *dataSource* <br /><br /> $("#toolbar").ejToolbar({ <br /> &nbsp; dataSource: items <br /> }); <br /> | **Not Applicable** |
 | Query | **Property:** *query* <br /><br /> $("#toolbar").ejToolbar({ <br /> &nbsp; query: query <br /> }); <br /> | **Not Applicable** |
@@ -39,7 +39,7 @@ This article describes the API migration process of Toolbar component from Essen
 
 ## Items
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Default | **Property:** *items* <br /><br /> $("#toolbar").ejToolbar({ <br /> &nbsp; items: [] <br /> }); <br /> | **Property:** *items* <br /><br /> var toolbar = new ej.navigations.Toolbar({ <br /> &nbsp; items: [] <br /> }); <br /> toolbar.appendTo('#ej2Toolbar'); <br /> |
 | Align | **Not Applicable** | **Property:** *items[0].align* <br /><br /> var toolbar = new ej.navigations.Toolbar({ <br /> items: [{ align: 'center' }] <br /> }); <br /> toolbar.appendTo('#ej2Toolbar'); <br /> |
@@ -80,7 +80,7 @@ This article describes the API migration process of Toolbar component from Essen
 
 ## Common
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Custom class | **Property:** *cssClass* <br /><br /> $("#toolbar").ejToolbar({ <br /> &nbsp; cssClass: 'customClass' <br /> }); <br /> | **Not Applicable** |
 | Enabled | **Property:** *enabled* <br /><br /> $("#toolbar").ejToolbar({ <br /> &nbsp; enabled: false <br /> }); <br /> | **Not Applicable** |

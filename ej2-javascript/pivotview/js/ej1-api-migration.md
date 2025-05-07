@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Pivotview control
 
-This article describes the API migration process of pivot table component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of pivot table component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Data Binding
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Data source | **property:** dataSource<br/><br/>$("#PivotGrid").ejPivotGrid({<br/>dataSource: {<br/>data: []<br/>}); | **property:** dataSourceSettings<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/>dataSourceSettings: {<br/>dataSource: []<br/>}});<br/>pivotGridObj.appendTo('#PivotGrid');|
 | Rows |**property:** rows<br/><br/>$("#PivotGrid").ejPivotGrid({<br/>dataSource: {<br/>rows: [{fieldName: "Country",fieldCaption: "Country"}] }<br/>}); | **property:** rows<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/> dataSourceSettings: {<br/>rows: [{ name: 'company', caption: 'Industry' }]}<br/>});<br/>pivotGridObj.appendTo('#PivotGrid');|
@@ -26,19 +26,19 @@ This article describes the API migration process of pivot table component from E
 
 ## Aggregation
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Summary Type|**property:** summaryType<br/><br/>$("#PivotGrid").ejPivotGrid({<br/> dataSource: {<br/>values: [ {<br/> fieldName: "balance",<br/>fieldCaption: "Balance($)",<br/>summaryType: ej.PivotAnalysis.SummaryType.Count<br/> } ] }<br/> });|**property:** type<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/>    dataSourceSettings: {<br/> values: [{ name: 'balance', caption: 'Balance($)', type: 'Count' }]}<br/>});<br/>pivotGridObj.appendTo('#PivotGrid');|
 
 ## Number Format
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Format settings|**property:** format<br/><br/>$("#PivotGrid").ejPivotGrid({<br/>  dataSource: {<br/>  values: [ { fieldName: "balance", fieldCaption: "Balance($)", format: "currency" } ] }<br/> }); |**property:** formatSettings<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/> dataSourceSettings: {<br/>formatSettings: [{ name: 'balance', format: 'C' },<br/> { name: 'date', format: 'dd/MM/yyyy-hh:mm', type: 'date' }]}<br/>});<br/>pivotGridObj.appendTo('#PivotGrid');|
 
 ## Summary Customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Show/hide grand totals|**property:** enableGrandTotal<br/><br/>$("#PivotGrid").ejPivotGrid({<br/> enableGrandTotal: false<br/> });|**property:** showGrandTotals<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/>dataSourceSettings: {<br/>showGrandTotals: false<br/> }<br/>});<br/>pivotGridObj.appendTo('#PivotGrid');|
 |Show/hide row grand totals|**property:** enableRowGrandTotal<br/><br/>$("#PivotGrid").ejPivotGrid({<br/> enableRowGrandTotal: false<br/> });|**property:** showRowGrandTotals<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/>dataSourceSettings: {<br/>showRowGrandTotals: false<br/> }<br/>});<br/>pivotGridObj.appendTo('#PivotGrid');|
@@ -50,14 +50,14 @@ This article describes the API migration process of pivot table component from E
 
 ## Drill operation
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Expand All|**property:** enableCollapseByDefault<br/><br/>$("#PivotGrid").ejPivotGrid({<br/>  enableCollapseByDefault:true<br/> });|**property:** expandAll<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/>dataSourceSettings: {<br/>expandAll: false<br/> }<br/>});<br/>pivotGridObj.appendTo('#PivotGrid');|
 |Drill Up/Down|**property:** collapsedMembers<br/><br/>$("#PivotGrid").ejPivotGrid({<br/> collapsedMembers: { Country: ["Canada", "France"] }<br/>});|**property:** drilledMembers<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/> dataSourceSettings: {<br/> drilledMembers: [{ name: 'Country', items: ['France'] }]<br/> }<br/>});<br/>pivotGridObj.appendTo('#PivotGrid');|
 
 ## Field List
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Show/hide field list pop-up button on pivot table|Not Applicable|**property:** showFieldList<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/> showFieldList: true<br/>});<br/>pivotGridObj.appendTo('#PivotGrid');|
 |Defer update|**property:** enableDeferUpdate<br/><br/>$("#PivotGrid").ejPivotGrid({<br/> enableDeferUpdate: true<br/>});|Not Applicable|
@@ -68,7 +68,7 @@ This article describes the API migration process of pivot table component from E
 
 ## Grouping Bar
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Show/hide Grouping bar|**property:** enableGroupingBar<br/><br/>$("#PivotGrid").ejPivotGrid({<br/> enableGroupingBar: true<br/>});|**property:** showGroupingBar<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/> showGroupingBar: true<br/>});<br/>pivotGridObj.appendTo('#PivotGrid');|
 |Grouping Bar Settings|Not Applicable|**property:** groupingBarSettings<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/> groupingBarSettings: {<br/>        showFilterIcon: false,<br/>showSortIcon: true,<br/>showRemoveIcon: false}<br/>});<br/>pivotGridObj.appendTo('#PivotGrid');|
@@ -76,74 +76,74 @@ This article describes the API migration process of pivot table component from E
 
 ## Filtering
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Filter settings|**property:** filterItems<br/><br/>$("#PivotGrid").ejPivotGrid({<br/> dataSource: {<br/> rows: [ {fieldName: "country",<br/>                    filterItems : {<br/> filterType: ej.PivotAnalysis.FilterType.Exclude,<br/>  values: ["Canada", "France"] }<br/> } ] }<br/>});|**property:** filterSettings<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/> dataSourceSettings: {<br/> filterSettings: [{<br/> name: 'eyeColor',<br/> type: 'Exclude', items: ['blue'] }]<br/>}});<br/>pivotGridObj.appendTo('#PivotGrid');|
 
 ## Maximum node limit in member editor
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Max node limit in member editor|**property:** maxNodeLimitInMemberEditor<br/><br/>$("#PivotGrid").ejPivotGrid({<br/> maxNodeLimitInMemberEditor: 100<br/>});|**property:** maxNodeLimitInMemberEditor<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/> maxNodeLimitInMemberEditor: 100<br/>});<br/>pivotGridObj.appendTo('#PivotGrid');|
 
 ## No Data Items
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Show/hide "no data" items|Not Applicable|**property:** showNoDataItems<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/> dataSourceSettings: {<br/> rows: [{<br/> name: 'eyeColor', showNoDataItems: true }]<br/>}});<br/>pivotGridObj.appendTo('#PivotGrid');|
 
 ## Excel-like filtering
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Label filtering|**property:** enableAdvancedFilter<br/><br/>$("#PivotGrid").ejPivotGrid({<br/> enableAdvancedFilter: true,<br/> dataSource: {<br/> rows: [ {      fieldName: "country",<br/> advancedFilter : [{<br/> labelFilterOperator: ej.olap.LabelFilterOptions.EndsWith,<br/> values:  ["es"] }]<br/> }  ] }<br/> });|**property:** allowLabelFilter<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/>dataSourceSettings: {<br/> allowLabelFilter: true,<br/> filterSettings: [{ <br/> name: 'product',<br/> type: 'Label', <br/> condition: 'Between',<br/> value1: 'e', <br/>value2: 'v' }]<br/>}});<br/>pivotGridObj.appendTo('#PivotGrid');|
 |Value filtering|**property:** enableAdvancedFilter<br/><br/>$("#PivotGrid").ejPivotGrid({<br/> enableAdvancedFilter: true,<br/> dataSource: {<br/> rows: [{ fieldName: "country",<br/> advancedFilter : [{<br/> measure: "balance",<br/>valueFilterOperator: ej.olap.ValueFilterOptions.GreaterThan,<br/> values:  ["200"] }]<br/> } ]}<br/> });|**property:** allowValueFilter<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/>dataSourceSettings: {<br/>allowValueFilter: true,<br/>filterSettings: [{ <br/>        name: 'product',<br/> measure: 'quantity',<br/> type: 'Value', <br/>condition: 'Between',<br/> value1: '3250',<br/>value2: '5000' }]<br/>}});<br/>pivotGridObj.appendTo('#PivotGrid');|
 
 ## Sorting
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Enable/disable sorting|Not Applicable|**property:** enableSorting<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/> dataSourceSettings: {<br/> enableSorting: false<br/>}});<br/>pivotGridObj.appendTo('#PivotGrid');|
 |Sort settings|**property:** sortOrder<br/><br/>$("#PivotGrid").ejPivotGrid({<br/>dataSource: { <br/>      rows: [{<br/> fieldName: "Country",<br/> sortOrder : ej.PivotAnalysis.SortOrder.Descending }]<br/> } });<br/>|**property:** sortSettings<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/> dataSourceSettings: {<br/> sortSettings: [{<br/> name: 'company',<br/>order: 'Descending' }]<br/> }});<br/>pivotGridObj.appendTo('#PivotGrid');|
 
 ## Value Sorting
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Enable/disable value sorting|Not Applicable|**property:** enableValueSorting<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/> enableValueSorting: true<br/>});<br/>pivotGridObj.appendTo('#PivotGrid');|
 |Value sort settings|**property:** valueSortSettings<br/><br/>$("#PivotGrid").ejPivotGrid({<br/>valueSortSettings: {<br/> headerText: "Bike##Quantity",<br/>       headerDelimiters: "##",<br/>sortOrder: ej.PivotAnalysis.SortOrder.Descending }<br/>});|**property:** valueSortSettings<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/> dataSourceSettings: {<br/>valueSortSettings: {<br/>headerText: 'FY 2015##Sold Amount',<br/>headerDelimiter: '##',<br/> sortOrder: 'Descending' }<br/> }});<br/>pivotGridObj.appendTo('#PivotGrid');|
 
 ## Calculated Field
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Show/hide calculated field|Not Applicable|**property:** allowCalculatedField<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/> allowCalculatedField: true<br/>});<br/>pivotGridObj.appendTo('#PivotGrid');|
 |Calculated field settings|**property:** values<br/><br/>$("#PivotGrid").ejPivotGrid({<br/> dataSource: {<br/>values: [ {<br/> fieldName: "Amount", fieldCaption: "Amount"<br/>}, {<br/> fieldName: "Price",<br/>fieldCaption: "Price",<br/> isCalculatedField: true,<br/> formula: "Amount*15" }] }<br/>});|**property:** calculatedFieldSettings<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/>dataSourceSettings: {<br/>values: [{<br/> name: 'Total', type: 'CalculatedField' }],<br/>    calculatedFieldSettings: [{<br/> name: 'Total', <br/> formula: '"Sum(Amount)"+"Sum(Sold)"' }]<br/>}});<br/>pivotGridObj.appendTo('#PivotGrid');|
 
 ## Paging
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Paging|**property:** enablePaging<br/><br/>$("#PivotGrid").ejPivotGrid({<br/> enablePaging : true<br/>});|Not Applicable|
 |Virtual scrolling|**property:** enableVirtualScrolling<br/><br/>$("#PivotGrid").ejPivotGrid({<br/> enableVirtualScrolling : true<br/> });|**property:** enableVirtualization<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/> enableVirtualization: true});<br/>pivotGridObj.appendTo('#PivotGrid');|
 
 ## Conditional Formatting
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Show/hide conditional formatting|**property:** enableConditionalFormatting<br/><br/>$("#PivotGrid").ejPivotGrid({<br/> enableConditionalFormatting: true<br/>    });|**property:** allowConditionalFormatting<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/> allowConditionalFormatting: true<br/>});<br/>pivotGridObj.appendTo('#PivotGrid');|
 |Conditional formatting settings|**property:** conditionalFormatSettings<br/><br/>$("#PivotGrid").ejPivotGrid({<br/>conditionalFormatSettings: [{<br/>name: "Format2",<br/> style: { <br/>"color": "#000000",<br/> "backgroundcolor": "#0000FF",<br/> "bordercolor": "#000000",<br/>"borderstyle": "Dashed",<br/> "borderwidth": "5",<br/> "fontsize": "12",<br/> "fontstyle": "Algerian" },<br/>condition: ej.PivotGrid.ConditionalOptions.LessThan,<br/> value: "200",<br/> measures: "Amount,Quantity" }]<br/>});|**property:** conditionalFormatSettings<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/>    dataSourceSettings: {<br/>conditionalFormatSettings: [{<br/> measure: 'In Stock',<br/>value1: 5000,<br/> conditions: 'LessThan',<br/> style: {<br/>              backgroundColor: '#80cbc4',<br/> color: 'black',<br/> fontFamily: 'Tahoma',<br/>fontSize: '12px' }<br/> }]<br/>}});<br/>pivotGridObj.appendTo('#PivotGrid');|
 
 ## Exporting
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Excel Export|Not Applicable|**property:** allowExcelExport<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/> allowExcelExport: true<br/>});<br/>pivotGridObj.appendTo('#PivotGrid');|
 |Pdf Export|Not Applicable|**property:** allowPdfExport<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/>allowPdfExport: true<br/>});<br/>pivotGridObj.appendTo('#PivotGrid');|
 
 ## Grid Customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Set width for pivot table|Not Applicable|**property:** width<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/>width: '800'<br/>});<br/>pivotGridObj.appendTo('#PivotGrid');|
 |Set height for pivot table|Not Applicable|**property:** height<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/>height: '400'<br/>});<br/>pivotGridObj.appendTo('#PivotGrid');|
@@ -161,21 +161,21 @@ This article describes the API migration process of pivot table component from E
 
 ## Drill Through
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Show/hide drill though feature|**property:** enableDrillThrough<br/><br/>$("#PivotGrid").ejPivotGrid({<br/> enableDrillThrough: true<br/>});|**property:** allowDrillThrough<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/> allowDrillThrough: true<br/>});<br/>pivotGridObj.appendTo('#PivotGrid');|
 |Event Triggers when cell clicked in pivot table widget|**event:** drillThrough<br/><br/>$("#PivotGrid").ejPivotGrid({<br/>drillThrough: function() {}<br/>});|**event:** drillThrough<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/> drillThrough: function() {}<br/>});<br/>pivotGridObj.appendTo('#PivotGrid');|
 
 ## Cell Editing
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Edit settings|Not Applicable|**property:** editSettings<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/> editSettings: { }<br/>});<br/>pivotGridObj.appendTo('#PivotGrid');|
 |Show/hide cell editing feature|**property:** enableCellEditing<br/><br/>$("#PivotGrid").ejPivotGrid({<br/> enableCellEditing: true<br/>});|**property:** allowEditing<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/> editSettings: {<br/>allowAdding: true, allowDeleting: true, allowEditing: true, mode: 'Normal'<br/>}<br/>});<br/>pivotGridObj.appendTo('#PivotGrid');|
 
 ## Hyperlink
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Hyperlink settings|**property:** hyperlinkSettings<br/><br/>$("#PivotGrid").ejPivotGrid({<br/> hyperlinkSettings:  { }<br/>});|**property:** hyperlinkSettings<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/> hyperlinkSettings: { }<br/>});<br/>pivotGridObj.appendTo('#PivotGrid');|
 |Show/hide hyperlink to all cells|Not Applicable|**property:** showHyperlink<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/> hyperlinkSettings: {<br/>showHyperlink: true }<br/>});<br/>pivotGridObj.appendTo('#PivotGrid');|
@@ -192,20 +192,20 @@ This article describes the API migration process of pivot table component from E
 
 ## Defer Layout Update
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Show/hide defer layout update|**property:** enableDeferUpdate<br/><br/>$("#PivotGrid").ejPivotGrid({<br/> enableDeferUpdate: true<br/>});|**property:** allowDeferLayoutUpdate<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/> allowDeferLayoutUpdate: true<br/>});<br/>pivotGridObj.appendTo('#PivotGrid');|
 
 ## Accessibility
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Localization|**property:** locale<br/><br/>$("#PivotGrid").ejPivotGrid({<br/>locale: 'es-ES'<br/> });|**property:** locale<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/>locale: 'es-ES'<br/>});<br/>pivotGridObj.appendTo('#PivotGrid');|
 |Right to left|**property:** enableRTL<br/><br/>$("#PivotGrid").ejPivotGrid({<br/> enableRTL: true<br/>});|**property:** enableRtl<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/> enableRtl: true<br/>});<br/>pivotGridObj.appendTo('#PivotGrid');|
 
 ## Common
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Adding custom class to wrapper element|**property:** cssClass<br/><br/>$("#PivotGrid").ejPivotGrid({<br/> cssClass: 'custom-class'<br/> });|**property:** cssClass<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/>cssClass: 'custom-class'<br/>});<br/>pivotGridObj.appendTo('#PivotGrid');|
 |Keeping the model values in cookies|Not Applicable|**property:** enablePersistence<br/><br/>var pivotGridObj = new ej.pivotview.PivotView({<br/> enablePersistence: true});<br/>pivotGridObj.appendTo('#PivotGrid');|

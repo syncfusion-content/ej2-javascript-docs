@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Column chooser in ##Platform_Name## Grid control
 
-The column chooser feature in the Syncfusion ##Platform_Name## Grid control allows you to dynamically show or hide columns. This feature can be enabled by defining the [showColumnChooser](../../api/grid/#showcolumnchooser) property as **true**.
+The column chooser feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control allows you to dynamically show or hide columns. This feature can be enabled by defining the [showColumnChooser](../../api/grid/#showcolumnchooser) property as **true**.
 
 To use the column chooser, inject the **ColumnChooser** module in the grid.
 
@@ -82,7 +82,7 @@ In this example, the `columns->showInColumnChooser` property is set to false for
 
 ## Open column chooser by external button
 
-The Syncfusion ##Platform_Name## Grid provides the flexibility to open the column chooser dialog on a web page using an external button. By default, the column chooser button is displayed in the right corner of the grid control, and clicking the button opens the column chooser dialog below it. However, you can programmatically open the column chooser dialog at specific **X** and **Y** axis positions by using the [openColumnChooser](../../api/grid/columnChooser/#opencolumnchooser) method.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid provides the flexibility to open the column chooser dialog on a web page using an external button. By default, the column chooser button is displayed in the right corner of the grid control, and clicking the button opens the column chooser dialog below it. However, you can programmatically open the column chooser dialog at specific **X** and **Y** axis positions by using the [openColumnChooser](../../api/grid/columnChooser/#opencolumnchooser) method.
 
 Here's an example of how to open the column chooser in the Grid using an external button:
 
@@ -115,7 +115,7 @@ Here's an example of how to open the column chooser in the Grid using an externa
 
 ## Customize column chooser dialog size
 	
-The column chooser dialog in Syncfusion ##Platform_Name## Grid comes with default size, but you can modify its height and width as per your specific needs using CSS styles.
+The column chooser dialog in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid comes with default size, but you can modify its height and width as per your specific needs using CSS styles.
 To customize the column chooser dialog size, you can use the following CSS styles:
 
 ```css
@@ -158,9 +158,9 @@ To customize the column chooser dialog size, you can use the following CSS style
 
 ## Change default search operator of the column chooser 
 
-The column chooser dialog in the Syncfusion ##Platform_Name## Grid provides a search box that allows you to search for column names. By default, the search functionality uses the "startswith" operator to match columns and display the results in the column chooser dialog. However, there might be cases where you need to change the default search operator to achieve more precise data matching.
+The column chooser dialog in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid provides a search box that allows you to search for column names. By default, the search functionality uses the "startswith" operator to match columns and display the results in the column chooser dialog. However, there might be cases where you need to change the default search operator to achieve more precise data matching.
 
-To change the default search operator of the column chooser in Syncfusion Grid, you need to use the [operator](../../api/grid/columnChooserSettings/#operator) property of the `columnChooserSettings`.
+To change the default search operator of the column chooser in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you need to use the [operator](../../api/grid/columnChooserSettings/#operator) property of the `columnChooserSettings`.
 
 Here's an example of how to change the default search operator of the column chooser to **contains** in the ##Platform_Name## Grid:
 
@@ -224,7 +224,7 @@ Here is an example that demonstrates the usage of the `ignoreAccent` property to
 {% previewsample "page.domainurl/code-snippet/grid/columnchooser-diacriticsSearch-cs1" %}
 {% endif %}
 
-## Column Chooser Template in Syncfusion ##Platform_Name## Grid
+## Column Chooser Template in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid
 
 The Column Chooser Template feature allows full customization of the column chooser’s header, content, and footer, making it easier to manage column visibility. To enable the column chooser, set [showColumnChooser](../../api/grid/#showcolumnchooser) to **true** and add **ColumnChooser** to the [toolbar](../../api/grid#toolbar) property.
 
@@ -238,7 +238,7 @@ To implement a custom column chooser template in the Grid, use the following pro
 
 * **columnChooserSettings.renderCustomColumnChooser** -  Allows you to override the default column chooser UI with a fully customized layout.
 
-In this example, a Syncfusion TreeView component is rendered inside the column chooser. To use the TreeView component, install the Syncfusion TreeView package as described in the [documentation](../../treeview/getting-started). The `columnChooserSettings.template` property defines a element with the `id` set to **tree**, providing as a container for the TreeView component. The `columnChooserSettings.renderCustomColumnChooser` method initializes the TreeView with checkboxes and appends it to this template. Checkbox selection is handled using the [nodeClicked](../../api/treeview#nodeclicked) and [keyPress](../../api/treeview#keypress) events, which organize columns into **Order Details**, **Shipping Details**, and **Delivery Status**.
+In this example, a Syncfusion TreeView component is rendered inside the column chooser. To use the TreeView component, install the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeView package as described in the [documentation](../../treeview/getting-started). The `columnChooserSettings.template` property defines a element with the `id` set to **tree**, providing as a container for the TreeView component. The `columnChooserSettings.renderCustomColumnChooser` method initializes the TreeView with checkboxes and appends it to this template. Checkbox selection is handled using the [nodeClicked](../../api/treeview#nodeclicked) and [keyPress](../../api/treeview#keypress) events, which organize columns into **Order Details**, **Shipping Details**, and **Delivery Status**.
 
 The column chooser footer is customized using `columnChooserSettings.footerTemplate`, replacing the default buttons with customized **Apply** and **Close** buttons. The **Apply** button updates column visibility based on selection, while the **Close** button closes the column chooser via the `onClick` event. Additionally, the header is customized using `columnChooserSettings.headerTemplate` to include a title and an icon.
 

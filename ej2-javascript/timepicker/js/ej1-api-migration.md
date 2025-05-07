@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Timepicker control
 
-This article describes the API migration process of TimePicker component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of TimePicker component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Time Selection
 
@@ -20,8 +20,8 @@ This article describes the API migration process of TimePicker component from Es
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -57,8 +57,8 @@ timepicker.appendTo('#element');
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -94,8 +94,8 @@ timepicker.appendTo('#element');
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -185,8 +185,8 @@ timepicker.appendTo('#element');
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -230,8 +230,8 @@ function itemRenderHandler(args){
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -540,8 +540,8 @@ timepicker.show();
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -579,8 +579,8 @@ timepicker.appendTo('#element');
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -618,8 +618,8 @@ timepicker.appendTo('#element');
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -695,8 +695,8 @@ var options = {
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -966,8 +966,8 @@ timepicker.appendTo('#element');
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -1005,8 +1005,8 @@ timepicker.appendTo('#element');
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -1044,8 +1044,8 @@ timepicker.appendTo('#element');
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>

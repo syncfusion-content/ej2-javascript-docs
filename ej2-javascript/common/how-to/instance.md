@@ -9,13 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to Get an Instance of Syncfusion ##Platform_Name## Control?
+# How to Get an Instance of Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Control?
 
-This guide explains how to initialize a Syncfusion ##Platform_Name## control and retrieve its instance for further manipulation.
+This guide explains how to initialize a Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## control and retrieve its instance for further manipulation.
 
-## Initialize the Syncfusion control
+## Initialize the Syncfusion<sup style="font-size:70%">&reg;</sup> control
 
-You first need to create a new instance of the desired Syncfusion control by using the constructor provided in the Syncfusion library. For example, to create a Grid control, the code looks like this:
+You first need to create a new instance of the desired Syncfusion<sup style="font-size:70%">&reg;</sup> control by using the constructor provided in the Syncfusion<sup style="font-size:70%">&reg;</sup> library. For example, to create a Grid control, the code looks like this:
 
 ```html
 <script>
@@ -48,7 +48,7 @@ After creating the instance, the control needs to be rendered on the page by app
 ```
 * `#myGrid`: This is the ID of the HTML element where the Grid will be rendered.
 
-## Access the instance of the Syncfusion control
+## Access the instance of the Syncfusion<sup style="font-size:70%">&reg;</sup> control
 
 Once the control has been created and appended, the instance is stored in the variable (in this case, grid). You can use this instance to interact with the control, such as accessing its methods, properties, or updating the control. For example, you can get all rows of the Grid using this instance like below:
 

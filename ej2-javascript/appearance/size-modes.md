@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Size modes Size Mode for Syncfusion ##Platform_Name## Controls
+# Size modes Size Mode for Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Controls
 
 An application that is designed to be accessed through a web browser on various devices, including desktop computers and mobile devices, may have a distinct layout or user interface on a mobile device compared to a desktop computer to better suit the smaller screen size.
 
-Syncfusion JavaScript controls support both touch (bigger) and normal size modes. Touch mode creates a responsive design for mobile devices by adding the `e-bigger` class, which enhances interactions, visibility, and the overall experience.
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls support both touch (bigger) and normal size modes. Touch mode creates a responsive design for mobile devices by adding the `e-bigger` class, which enhances interactions, visibility, and the overall experience.
 
 ## Size mode for application
 

@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Nodes Manipulation in ##Platform_Name## TreeView Control
 
-The TreeView control provides essential methods for dynamically managing nodes, offering the ability to create a highly interactive and customizable tree structure:
+The TreeView control provides Essential<sup style="font-size:70%">&reg;</sup> methods for dynamically managing nodes, offering the ability to create a highly interactive and customizable tree structure:
 
 * [`addNodes`](../../api/treeview/#addnodes)
 * [`removeNodes`](../../api/treeview/#removenodes)

@@ -92,11 +92,11 @@ The column template has options to render a custom control in a grid column inst
 ### Render LineChart control in a column
 {% if page.publishingplatform == "typescript" %}
 
-The [LineChart](../../sparkline/getting-started) control of Syncfusion provides an elegant way to represent and compare data over time. It displays data points connected by straight line segments to visualize trends in data. 
+The [LineChart](../../sparkline/getting-started) control of Syncfusion<sup style="font-size:70%">&reg;</sup> provides an elegant way to represent and compare data over time. It displays data points connected by straight line segments to visualize trends in data. 
  
 {% elsif page.publishingplatform == "javascript" %}
  
-The [LineChart](../../sparkline/es5-getting-started) control of Syncfusion provides an elegant way to represent and compare data over time. It displays data points connected by straight line segments to visualize trends in data.
+The [LineChart](../../sparkline/es5-getting-started) control of Syncfusion<sup style="font-size:70%">&reg;</sup> provides an elegant way to represent and compare data over time. It displays data points connected by straight line segments to visualize trends in data.
 
 {% endif %}
 In the following example, we have rendered the Sparkline Chart control in the Grid column by defining the [template](../../api/grid/column/#template) property.
@@ -132,11 +132,11 @@ In the following example, we have rendered the Sparkline Chart control in the Gr
 
 {% if page.publishingplatform == "typescript" %}
  
-The [ColorPicker](../../color-picker/getting-started) control of Syncfusion provides a user-friendly way to select colors from a pre-defined color palette or custom colors. It can be used in a variety of scenarios such as picking a theme color or changing the color of an element on a page.  
+The [ColorPicker](../../color-picker/getting-started) control of Syncfusion<sup style="font-size:70%">&reg;</sup> provides a user-friendly way to select colors from a pre-defined color palette or custom colors. It can be used in a variety of scenarios such as picking a theme color or changing the color of an element on a page.  
  
 {% elsif page.publishingplatform == "javascript" %}
  
-The [ColorPicker](../../color-picker/es5-getting-started) control of Syncfusion provides a user-friendly way to select colors from a pre-defined color palette or custom colors. It can be used in a variety of scenarios such as picking a theme color or changing the color of an element on a page.  
+The [ColorPicker](../../color-picker/es5-getting-started) control of Syncfusion<sup style="font-size:70%">&reg;</sup> provides a user-friendly way to select colors from a pre-defined color palette or custom colors. It can be used in a variety of scenarios such as picking a theme color or changing the color of an element on a page.  
  
 {% endif %}
 In the following code, we rendered the ColorPicker control in the Grid column by defining the [template](../../api/grid/column/#template) property.
@@ -332,11 +332,11 @@ function queryCellInfo(args) {
 
 {% if page.publishingplatform == "typescript" %}
  
-The Syncfusion Grid control supports rendering the [Progress Bar](../../progressbar/getting-started) control within a column using the [template](../../api/grid/column/#template) property. Displaying the `Progress Bar` control in a grid column allows users to visually track the progress of tasks or operations associated with specific records. This feature is particularly useful for applications involving processes such as data loading, task completion, or other progressive activities.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control supports rendering the [Progress Bar](../../progressbar/getting-started) control within a column using the [template](../../api/grid/column/#template) property. Displaying the `Progress Bar` control in a grid column allows users to visually track the progress of tasks or operations associated with specific records. This feature is particularly useful for applications involving processes such as data loading, task completion, or other progressive activities.
 
 {% elsif page.publishingplatform == "javascript" %}
  
-The Syncfusion Grid control supports rendering the [Progress Bar](../../progressbar/es5-getting-started) control within a column using the [template](../../api/grid/column/#template) property. Displaying the `Progress Bar` control in a grid column allows users to visually track the progress of tasks or operations associated with specific records. This feature is particularly useful for applications involving processes such as data loading, task completion, or other progressive activities.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control supports rendering the [Progress Bar](../../progressbar/es5-getting-started) control within a column using the [template](../../api/grid/column/#template) property. Displaying the `Progress Bar` control in a grid column allows users to visually track the progress of tasks or operations associated with specific records. This feature is particularly useful for applications involving processes such as data loading, task completion, or other progressive activities.
 
 {% endif %}
 
@@ -407,7 +407,7 @@ function queryCellInfo(args) {
 
 {% if page.publishingplatform == "typescript" %} 
 
-The Syncfusion ##Platform_Name## Grid supports rendering the [RadioButton](../../radio-button/getting-started) within a column using the [template](../../api/grid/column/#template) property. This feature is particularly useful for displaying selection options, such as order statuses, payment methods, or approval choices, within the Grid.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid supports rendering the [RadioButton](../../radio-button/getting-started) within a column using the [template](../../api/grid/column/#template) property. This feature is particularly useful for displaying selection options, such as order statuses, payment methods, or approval choices, within the Grid.
 
 In the following example, a `RadioButton` is rendered in the **Order Status** column of the Grid by defining the `template` property.
 
@@ -431,7 +431,7 @@ function initializeRadioButtons(args: QueryCellInfoEventArgs){
 
 {% elsif page.publishingplatform == "javascript" %}
 
-The Syncfusion ##Platform_Name## Grid supports rendering the [RadioButton](../../radio-button/es5-getting-started) within a column using the [template](../../api/grid/column/#template) property. This feature is particularly useful for displaying selection options, such as order statuses, payment methods, or approval choices, within the Grid.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid supports rendering the [RadioButton](../../radio-button/es5-getting-started) within a column using the [template](../../api/grid/column/#template) property. This feature is particularly useful for displaying selection options, such as order statuses, payment methods, or approval choices, within the Grid.
 
 In the following example, a `RadioButton` is rendered in the **Order Status** column of the Grid by defining the `template` property.
 
@@ -561,7 +561,7 @@ In the following code, the button element is rendered in the **Employee Data** c
 
 ## Use custom helper inside the template
 
-The Syncfusion Grid allows you to use custom helpers inside the `template` property of a column. This feature allows you to create complex templates that can incorporate additional helper functions that are not available through the default [template](../../api/grid/column/#template) syntax.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to use custom helpers inside the `template` property of a column. This feature allows you to create complex templates that can incorporate additional helper functions that are not available through the default [template](../../api/grid/column/#template) syntax.
 
 To use the custom helper function inside a column template, you must first add the function to the template's context.
 
@@ -598,7 +598,7 @@ The following example demonstrates how to use a custom helper function inside th
 
 ## Dynamically adding template column
 
-The Syncfusion Grid control allows you to dynamically add template columns at runtime. This capability is particularly useful when the structure of the grid needs to be modified based on individual interactions or other dynamic conditions.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control allows you to dynamically add template columns at runtime. This capability is particularly useful when the structure of the grid needs to be modified based on individual interactions or other dynamic conditions.
 
 Dynamically adding template columns involves creating and inserting columns with custom templates after the grid has been initialized. This approach provides flexibility in presenting data in a highly customizable manner.
 
@@ -641,11 +641,11 @@ The following example demonstrates how to add template column using external but
 
 ## Enhancing Grid performance by enabling or disabling Aria Labels
 
-By default, the Syncfusion ##Platform_Name## Grid adds custom **aria-label** attributes to template cells by combining the cell value, the "**is template cell**" identifier, and the column header name. These attributes help screen readers provide meaningful context.
+By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid adds custom **aria-label** attributes to template cells by combining the cell value, the "**is template cell**" identifier, and the column header name. These attributes help screen readers provide meaningful context.
 
 If your application doesn’t require screen reader support and includes multiple template columns, Aria labels may impact performance. To improve rendering, you can disable them for all template columns by setting the `enableAriaLabel` property to **false** in the `templateOptions` of those columns. If accessibility is needed, set it to **true** to retain Aria labels.
 
-The example below enables Aria labels for the **Employee Image** column and disables them for the **First Name** column in the Syncfusion ##Platform_Name## Grid.
+The example below enables Aria labels for the **Employee Image** column and disables them for the **First Name** column in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid.
 
 {% if page.publishingplatform == "typescript" %}
 

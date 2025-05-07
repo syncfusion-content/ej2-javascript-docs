@@ -84,4 +84,4 @@ The accessibility compliance of the Tab control is shown in the following sample
 
 ## See also
 
-- [Accessibility in Syncfusion components](../common/accessibility)
+- [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> components](../common/accessibility)

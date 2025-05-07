@@ -59,7 +59,7 @@ The NumericTextBox uses the `spinbutton` role and following ARIA properties to i
 ## Keyboard interaction
 
 Keyboard interaction of the NumericTextBox component has been designed based on
-[WAI-ARIA Practices](https://www.w3.org/TR/wai-aria/roles/#spinbutton) described for the NumericTextBox and
+[WAI-ARIA Practices](https://www.w3.org/TR/wai-aria/#spinbutton) described for the NumericTextBox and
 it is an alternative to mouse actions to interact with the NumericTextBox.
 
 The below table shows shortcut keys and its corresponding usage.
@@ -112,4 +112,4 @@ The accessibility compliance of the NumericTextBox component is shown in the fol
 
 ## See also
 
-* [Accessibility in Syncfusion components](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> components](../common/accessibility)

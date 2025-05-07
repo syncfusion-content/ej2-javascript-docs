@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column in ##Platform_Name## Chart control | Syncfusion
+title: Column Chart in ##Platform_Name## Charts | Syncfusion
 description: Learn here all about Column in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Column 
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Column Chart in ##Platform_Name## control
+# Column Chart in ##Platform_Name## Charts
 
 ## Column
 

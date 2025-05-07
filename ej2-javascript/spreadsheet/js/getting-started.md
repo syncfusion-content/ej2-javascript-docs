@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Spreadsheet control
 
-This section explains the steps to create a simple Essential JS 2 Spreadsheet control in a JavaScript application.
+This section explains the steps to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Spreadsheet control in a JavaScript application.
 
 ## Dependencies
 
@@ -34,20 +34,20 @@ Refer to the following steps to setup your local environment.
 
 **Step 2:** Create `myapp/resources` folder to store local scripts and styles files.
 
-**Step 3:** Create `myapp/index.js` and `myapp/index.html` files for initializing Essential JS 2 Spreadsheet control.
+**Step 3:** Create `myapp/index.js` and `myapp/index.html` files for initializing Essential<sup style="font-size:70%">&reg;</sup> JS 2 Spreadsheet control.
 
-## Adding Syncfusion resources
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
 
-The Essential JS 2 Spreadsheet control can be initialized by using any of the following two ways:
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Spreadsheet control can be initialized by using any of the following two ways:
 
 * Using local script and style.
 * Using CDN link for script and style.
 
 ### Using local script and style
 
-You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
-After installing the Essential JS 2 product build, you can copy the Spreadsheet and its dependencies scripts and style file into the resources folder.
+After installing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 product build, you can copy the Spreadsheet and its dependencies scripts and style file into the resources folder.
 
 Refer to the following code to find Spreadsheet's script and style file location.
 
@@ -262,7 +262,7 @@ spreadsheet.appendTo('#element');
 
 ## Run the application
 
-Now, run the `index.html` in web browser, it will render the Essential JS 2 Spreadsheet control.
+Now, run the `index.html` in web browser, it will render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Spreadsheet control.
 
 Output will be displayed as follows.
 

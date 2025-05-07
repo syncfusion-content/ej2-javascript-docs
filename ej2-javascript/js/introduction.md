@@ -9,15 +9,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion JavaScript (ES5) UI Controls (Essential JS 2)
+# Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI Controls (Essential<sup style="font-size:70%">&reg;</sup> JS 2)
 
-Syncfusion JavaScript (ES5) is a modern UI Controls library that has been built from the ground up to be lightweight, responsive, modular and touch friendly. It is written in TypeScript and has no external dependencies. It also includes complete support for Angular, React, Vue, ASP.NET MVC and ASP.NET Core frameworks.
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) is a modern UI Controls library that has been built from the ground up to be lightweight, responsive, modular and touch friendly. It is written in TypeScript and has no external dependencies. It also includes complete support for Angular, React, Vue, ASP.NET MVC and ASP.NET Core frameworks.
 
-The Syncfusion JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
 ## Components list
 
-The Syncfusion JavaScript (ES5) UI controls are listed below.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI controls are listed below.
 
 <style>
 
@@ -206,9 +206,9 @@ self-help resources mentioned above then please contact us by creating a support
 in [our support site](https://syncfusion.com/support) or ask your query in Stack Overflow
 with tag `syncfusion-ej2`.
 
-> Syncfusion does not collect any kind of information when our components are used in customer applications.
+> Syncfusion<sup style="font-size:70%">&reg;</sup> does not collect any kind of information when our components are used in customer applications.
 
 ## See also
 
 * [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/estudio)
-* [Getting Started with Syncfusion Javascript ES5 controls](https://ej2.syncfusion.com/javascript/documentation/getting-started/quick-start)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Javascript ES5 controls](https://ej2.syncfusion.com/javascript/documentation/getting-started/quick-start)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Waterfall in ##Platform_Name## Chart control | Syncfusion
+title: Waterfall Chart in ##Platform_Name## Charts | Syncfusion
 description: Learn here all about Waterfall in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Waterfall 
@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Waterfall Chart in ##Platform_Name## control
+# Waterfall Chart in ##Platform_Name## Charts
 
-## Waterfall chart
+## Waterfall Chart
 
 To render a `waterfall` series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  

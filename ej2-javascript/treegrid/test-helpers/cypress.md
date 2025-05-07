@@ -25,15 +25,15 @@ To set the cypress project, follow these steps to create a project:
 
   * Start writing [your testcase](https://docs.cypress.io/guides/getting-started/writing-your-first-test.html#Add-a-test-file).
 
-## Installing syncfusion package
+## Installing syncfusion<sup style="font-size:70%">&reg;</sup> package
 
-The test helpers are available in the Syncfusion default component packages. Here, Tree Grid component is tested. So, run the following command to install the Syncfusion Tree Grid component.
+The test helpers are available in the Syncfusion<sup style="font-size:70%">&reg;</sup> default component packages. Here, Tree Grid component is tested. So, run the following command to install the Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid component.
 
 > npm install @syncfusion/ej2-treegrid --save
 
 ## Importing Test Helper from the package
 
-You can test the drop-down components by using the `TreeGridHelper` class that is imported from the `@syncfusion/ej2-treegrid` package. The helper class is available in the `helpers/e2e` folder in every Syncfusion components package.
+You can test the drop-down components by using the `TreeGridHelper` class that is imported from the `@syncfusion/ej2-treegrid` package. The helper class is available in the `helpers/e2e` folder in every Syncfusion<sup style="font-size:70%">&reg;</sup> components package.
 
 * Create a `sample_spec.js` file in the `cypress/integration/` folder.
 * Import the testinghelper class name which is to be tested in the created file.

@@ -11,12 +11,12 @@ domainurl: ##DomainURL##
 
 # Index in ##Platform_Name## Getting started control
 
-This document illustrates how to build and run a simple Syncfusion JavaScript (Essential JS 2) web application in TypeScript.
+This document illustrates how to build and run a simple Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) web application in TypeScript.
 
-* [Getting Started with Syncfusion JavaScript (Essential JS 2) library from a seed application](./getting-started/quick-start)
-* [Getting Started with Syncfusion JavaScript (Essential JS 2) library and Electron Framework](./getting-started/electron)
-* [Getting Started with Syncfusion JavaScript (Essential JS 2) library and Cordova](./getting-started/cordova)
-* [Getting Started with Syncfusion JavaScript (Essential JS 2) library and Ionic Framework](./getting-started/ionic)
-* [Getting Started with Syncfusion JavaScript (Essential JS 2) library and Meteor Framework](./getting-started/meteor)
-* [Getting Started with Syncfusion JavaScript (Essential JS 2) library and SharePoint Framework (SPFx)](./getting-started/sharepoint)
-* [Compatibility with Essential JS 1 JavaScript](./getting-started/compatible-with-essential-js1)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) library from a seed application](./getting-started/quick-start)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) library and Electron Framework](./getting-started/electron)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) library and Cordova](./getting-started/cordova)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) library and Ionic Framework](./getting-started/ionic)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) library and Meteor Framework](./getting-started/meteor)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) library and SharePoint Framework (SPFx)](./getting-started/sharepoint)
+* [Compatibility with Essential<sup style="font-size:70%">&reg;</sup> JS 1 JavaScript](./getting-started/compatible-with-essential-js1)

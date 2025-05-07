@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Toolbar in ##Platform_Name## Grid control
 
-You can customize the appearance of the toolbar in the Syncfusion ##Platform_Name## Grid control using CSS. Here are examples of how to customize the toolbar root element and toolbar button element.
+You can customize the appearance of the toolbar in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control using CSS. Here are examples of how to customize the toolbar root element and toolbar button element.
 
 ## Customizing the toolbar root element
 

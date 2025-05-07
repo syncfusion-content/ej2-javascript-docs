@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Inherited Features from TextArea
 
-The Syncfusion Typescript Smart TextArea control fully inherits all the properties, features, and styling options of the Syncfusion Typescript TextArea control. This means that you can leverage the existing features of the Syncfusion Typescript TextArea while benefiting from the enhanced functionality of the Smart TextArea.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Typescript Smart TextArea control fully inherits all the properties, features, and styling options of the Syncfusion<sup style="font-size:70%">&reg;</sup> Typescript TextArea control. This means that you can leverage the existing features of the Syncfusion<sup style="font-size:70%">&reg;</sup> Typescript TextArea while benefiting from the enhanced functionality of the Smart TextArea.
 
 * [Form Support](https://ej2.syncfusion.com/documentation/textarea/form-support)
 * [Floating Labels](https://ej2.syncfusion.com/documentation/textarea/floating-label)
@@ -21,4 +21,4 @@ The Syncfusion Typescript Smart TextArea control fully inherits all the properti
 
 ## See also
 
-* [Getting Started with Syncfusion Typescript Smart TextArea](./getting-started)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Typescript Smart TextArea](./getting-started)

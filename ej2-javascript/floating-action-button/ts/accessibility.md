@@ -65,4 +65,4 @@ The accessibility compliance of the Floating action button control is shown in t
 
 ## See also
 
-* [Accessibility in Syncfusion TypeScript controls](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript controls](../common/accessibility)

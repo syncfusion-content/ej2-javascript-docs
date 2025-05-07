@@ -94,4 +94,4 @@ The accessibility compliance of the Maps control is shown in the following sampl
 
 ## See also
 
-* [Accessibility in Syncfusion ##Platform_Name## controls](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls](../common/accessibility)

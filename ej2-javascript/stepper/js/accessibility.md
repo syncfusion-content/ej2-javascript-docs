@@ -73,4 +73,4 @@ The accessibility compliance of the Stepper control is shown in the following sa
 
 ## See also
 
-* [Accessibility in Syncfusion JavaScript controls](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls](../common/accessibility)

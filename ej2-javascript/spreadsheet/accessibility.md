@@ -119,10 +119,10 @@ The accessibility compliance of the Spreadsheet control is shown in the followin
 
 {% if page.publishingplatform == "typescript" %}
 
-* [Accessibility in Syncfusion EJ2 controls](https://ej2.syncfusion.com/documentation/common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2 controls](https://ej2.syncfusion.com/documentation/common/accessibility)
 
 {% elsif page.publishingplatform == "javascript" %}
 
-* [Accessibility in Syncfusion EJ2 controls](https://ej2.syncfusion.com/javascript/documentation/common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2 controls](https://ej2.syncfusion.com/javascript/documentation/common/accessibility)
 
 {% endif %}

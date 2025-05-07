@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Stacked area in ##Platform_Name## Chart control | Syncfusion
-description: Learn here all about Stacked area in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
+title: Stacked Area Chart in ##Platform_Name## Charts | Syncfusion
+description: Learn here all about Stacked Area in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Stacked area 
+control: Stacked Area 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Stacked area Chart in ##Platform_Name## control
+# Stacked Area Chart in ##Platform_Name## Charts
 
-## 100% Stacked area
+## 100% Stacked Area
 
 To render a [100% stacked area](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/100-stacked-area-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
 

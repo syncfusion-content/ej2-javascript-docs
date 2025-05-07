@@ -1,17 +1,17 @@
 ---
 layout: post
-title: High low open close in ##Platform_Name## Chart control | Syncfusion
-description: Learn here all about High low open close in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
+title: High Low Open Close Chart in ##Platform_Name## Charts | Syncfusion
+description: Learn here all about High Low Open Close in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: High low open close 
+control: High Low Open Close
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# High low open close Chart in ##Platform_Name## control
+# High Low Open Close Chart in ##Platform_Name## Charts
 
-## High low open close
+## High Low Open Close
 
 To render an [`hiloOpenClose`](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/ohlc-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  

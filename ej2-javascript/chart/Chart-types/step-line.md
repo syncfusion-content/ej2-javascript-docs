@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Step line in ##Platform_Name## Chart control | Syncfusion
-description: Learn here all about Step line in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
+title: Step Line Chart in ##Platform_Name## Charts | Syncfusion
+description: Learn here all about Step Line in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Step line 
+control: Step Line 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Step line Chart in ##Platform_Name## control
+# Step Line Chart in ##Platform_Name## Charts
 
-## Step line
+## Step Line
 
 To render a [step line](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/stepline-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  

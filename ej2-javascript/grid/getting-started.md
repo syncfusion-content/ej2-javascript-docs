@@ -11,8 +11,8 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Grid control
 
-This section explains the steps to create a simple Grid and demonstrates the basic usage of the grid component using the Essential JS 2
-[quickstart](https://github.com/syncfusion/ej2-quickstart) seed repository. This seed repository is pre-configured with the Essential JS 2 package.
+This section explains the steps to create a simple Grid and demonstrates the basic usage of the grid component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2
+[quickstart](https://github.com/syncfusion/ej2-quickstart.git) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 
 ## Dependencies
 
@@ -32,7 +32,11 @@ Following is the list of minimum dependencies required to use the grid.
 
 ## Setup for local development
 
+<<<<<<< HEAD
+Clone the Essential<sup style="font-size:70%">&reg;</sup> JS 2 quickstart application project from [GitHub](https://github.com/syncfusion/ej2-quickstart.git), and install the necessary npm packages using the following command line scripts.
+=======
 Clone the Essential JS 2 quickstart application project from [GitHub](https://github.com/syncfusion/ej2-quickstart), and install the necessary npm packages using the following command line scripts.
+>>>>>>> dffb264cd8572d95b7b8d4750a807381c4a16357
 
 ```
 git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
@@ -42,7 +46,7 @@ npm install
 
 ## Configuring system JS
 
-**Syncfusion Grid packages** have to be mapped in the **system.config.js** configuration file.
+**Syncfusion<sup style="font-size:70%">&reg;</sup> Grid packages** have to be mapped in the **system.config.js** configuration file.
 
 ```javascript
 System.config({
@@ -82,7 +86,7 @@ System.import('app');
 
 ## Adding CSS reference
 
-Combined CSS files are available in the Essential JS 2 package root folder. This can be referenced in your `[src/styles/styles.css]` using the following code.
+Combined CSS files are available in the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package root folder. This can be referenced in your `[src/styles/styles.css]` using the following code.
 
 ```
 @import '../../node_modules/@syncfusion/ej2/material.css';
@@ -92,7 +96,7 @@ Combined CSS files are available in the Essential JS 2 package root folder. This
 
 ## Adding Grid component
 
-You can start adding Essential JS 2 grid component to the application. To get started, add the grid component in **app.ts** and **index.html** files using the following code.
+You can start adding Essential<sup style="font-size:70%">&reg;</sup> JS 2 grid component to the application. To get started, add the grid component in **app.ts** and **index.html** files using the following code.
 
 Place the following grid code in the **app.ts**.
 

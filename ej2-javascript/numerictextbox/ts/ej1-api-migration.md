@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Numerictextbox control
 
-This article describes the API migration process of NumericTextBox component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of NumericTextBox component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Common
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Triggers on creation | **Event:** *create*<br /><br />$("#numeric").ejNumericTextBox({<br />value: 120,<br />create: function(){}<br/>}); | **Event:** *created*<br /><br />let numeric: NumericTextBox  = new NumericTextBox({<br />value: 120,<br />created: function(){}<br />});<br />numeric.appendTo("#numeric"); |
 | Adding custom classes | **Property:** *cssClass*<br /><br />$("#numeric").ejNumericTextBox({<br />value: 100,<br />cssClass: “custom”<br />}); | **Property:** *cssClass*<br /><br />let numeric: NumericTextBox  = new NumericTextBox({<br />value: 100,<br />cssClass: “custom”<br />});<br />numeric.appendTo("#numeric"); |
@@ -37,20 +37,20 @@ This article describes the API migration process of NumericTextBox component fro
 
 ## Globalization
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Localization culture | **Property:** *locale*<br /><br />$("#numeric").ejNumericTextBox({<br />value: 80,<br />locale: “de-DE”<br />}); | **Property:** *locale*<br /><br />let numeric: NumericTextBox  = new NumericTextBox({<br />value: 80,<br />locale: “de-DE”<br />});<br />numeric.appendTo("#numeric"); |
 
 ## Group
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Group digits in editor | **Property:** *groupSize*<br /><br />$("#numeric").ejNumericTextBox({<br />value: 100,<br />groupSize: "2"<br />}); | Not Applicable |
 | Group Separator | **Property:** *groupSeparator*<br /><br />$("#numeric").ejNumericTextBox({<br />value: 100,<br />groupSeparator: "-"<br />}); | Not Applicable |
 
 ## Numeric configuration
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | ---- |
 | Triggers on value change | **Event:** *change*<br /><br />$("#numeric").ejNumericTextBox({<br />value: 120,<br />change: function(){}}) | **Event:** *change*<br /><br />let numeric: NumericTextBox  = new NumericTextBox({<br />value: 120,<br />change: function(){}<br />});<br />numeric.appendTo("#numeric"); |
 | Sets digits allowed after decimal point | **Property:** *decimalPlaces*<br /><br />$("#numeric").ejNumericTextBox({<br />value: 100,<br />decimalPlaces: 2<br />}); | **Property:** *decimals*<br /><br />let numeric: NumericTextBox  = new NumericTextBox({<br />value: 100,<br />format: “n2”,<br />decimals: 2<br />});<br />numeric.appendTo("#numeric"); |
@@ -70,14 +70,14 @@ This article describes the API migration process of NumericTextBox component fro
 
 ## Number Formats
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Set Currency symbol | **Property:** *currencySymbol*<br /><br />$("#currency").ejCurrencyTextBox({<br />value: 100,<br />currencySymbol: “EUR”<br />}); | **Property:** *currency*<br /><br />let currency: NumericTextBox  = new NumericTextBox({<br />value: 100,<br />format: “c2”,<br />currency: “EUR”<br />});<br />currency.appendTo("#currency"); |
 | Number Format | Not Applicable | **Property:** *format*<br /><br />let numeric: NumericTextBox  = new NumericTextBox({<br />value: 200<br />format: "n2"<br />});<br />numeric.appendTo("#numeric"); |
 
 ## Validation
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Strict Mode | **Property:** *enableStrictMode*<br /><br />$("#numeric").ejNumericTextBox({<br />value: 80,<br />enableStrictMode: true<br />}); | **Property:** *strictMode*<br /><br />let numeric: NumericTextBox  = new NumericTextBox({<br />value: 80,<br />strictMode: true<br />});<br />numeric.appendTo("#numeric"); |
 | Validation on typing | **Property:** *validateOnType*<br /><br />$("#numeric").ejNumericTextBox({<br />value: 100,<br />validateOnType: true<br />}); | **Property:** *validateDecimalOnType*<br /><br />let numeric: NumericTextBox  = new NumericTextBox({<br />value: 100,<br />validateDecimalOnType: true<br />});<br />numeric.appendTo("#numeric"); |

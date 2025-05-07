@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Dynamic templates in listview based on device in ##Platform_Name## Listview control
 
-The Syncfusion Essential JS 2 controls are both desktop and mobile-friendly, allowing the use of Syncfusion controls in various environments. The control templates are flexible and can differ depending on the device being used.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls are both desktop and mobile-friendly, allowing the use of Syncfusion<sup style="font-size:70%">&reg;</sup> controls in various environments. The control templates are flexible and can differ depending on the device being used.
 
 ## Integration
 

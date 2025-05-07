@@ -9,13 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Installing Syncfusion JavaScript Linux installer
+# Installing Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Linux installer
 
 ## Step-by-Step Installation
 
 The steps below show how to install JavaScript Linux installer.
 
-1. Extract the Syncfusion JavaScript Linux installer(.zip) file. The files are extracted in your machine.
+1. Extract the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Linux installer(.zip) file. The files are extracted in your machine.
 
    ![Welcome wizard](images/Linux_Installer1.png)
    
@@ -35,4 +35,4 @@ The steps below show how to install JavaScript Linux installer.
 
 After the installation, the license key is required to register the demo source that is included in the Linux installer. To learn about the steps for license registration for the JavaScript - EJ2 Linux installer, please refer to this.
 
-Register the license key by using [registerLicense](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration#javascript-es5) method after the Syncfusion JavaScript script file reference.
+Register the license key by using [registerLicense](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration#javascript-es5) method after the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript script file reference.

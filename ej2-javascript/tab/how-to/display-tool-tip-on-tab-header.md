@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Display tooltip on tab header in ##Platform_Name## Tab control
 
-You can enhance the user experience of your Tab control by displaying tooltips for the tab headers. This feature provides hint text when users hover their mouse over a tab header. To implement this, you'll use the [`beforeRender`](../../api/tooltip#beforerender) event of the Essential JS 2 Tooltip control.
+You can enhance the user experience of your Tab control by displaying tooltips for the tab headers. This feature provides hint text when users hover their mouse over a tab header. To implement this, you'll use the [`beforeRender`](../../api/tooltip#beforerender) event of the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Tooltip control.
 
 Here's an example of how to add tooltips to your tab headers:
 

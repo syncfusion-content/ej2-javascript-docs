@@ -68,4 +68,4 @@ The accessibility compliance of the Smith chart control is shown in the followin
 
 ## See also
 
-* [Accessibility in Syncfusion ##Platform_Name## controls](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls](../common/accessibility)

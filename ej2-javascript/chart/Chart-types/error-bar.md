@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Error bar in ##Platform_Name## Chart control | Syncfusion
-description: Learn here all about Error bar in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
+title: Error Bar Chart in ##Platform_Name## Charts | Syncfusion
+description: Learn here all about Error Bar in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Error bar 
+control: Error Bar 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Error bar Chart in ##Platform_Name## control
+# Error Bar Chart in ##Platform_Name## Charts
 
-## Error bar
+## Error Bar
 
 Error bars are graphical representations of the variability of data and are used on graphs to indicate the error or uncertainty in a reported measurement.
 

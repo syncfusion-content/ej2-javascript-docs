@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Tab control
 
-This article describes the API migration process of Tab component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Tab component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Accessibility
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Keyboard Navigation | **Property:** *allowKeyboardNavigation* <br /><br /> $("#tab").ejTab({ <br /> &nbsp; allowKeyboardNavigation: false <br /> }); <br /> | **Not Applicable** |
 | Localization | **Not Applicable** | **Property:** *locale* <br /><br /> var tab = new ej.navigations.Tab({ <br /> &nbsp; locale: 'en-US' <br /> }); <br /> tab.appendTo('#ej2Tab'); <br /> |
@@ -23,7 +23,7 @@ This article describes the API migration process of Tab component from Essential
 
 ## AjaxSettings
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Default | **Property:** *ajaxSettings* <br /><br /> $("#tab").ejTab({ <br /> &nbsp; ajaxSettings: { type: 'GET' } <br /> }); <br /> | **Not Applicable** |
 | Asynchronous | **Property:** *ajaxSettings.async* <br /><br /> $("#tab").ejTab({ <br /> &nbsp; ajaxSettings: { async: true } <br /> }); <br /> | **Not Applicable** |
@@ -39,7 +39,7 @@ This article describes the API migration process of Tab component from Essential
 
 ## Animation
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Default | **Not Applicable** | **Property:** *animation* <br /><br /> var tab = new ej.navigations.Tab({ <br /> &nbsp; animation: { prev: { }, next: { } } <br /> }); <br /> tab.appendTo('#ej2Tab'); <br /> |
 | EnableAnimation | **Property:** *enableAnimation* <br /><br /> $("#tab").ejTab({ <br /> &nbsp; enableAnimation: false <br /> }); <br /> | **Not Applicable** |
@@ -51,7 +51,7 @@ This article describes the API migration process of Tab component from Essential
 
 ## Header
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Header position | **Property:** *headerPosition* <br /><br /> $("#tab").ejTab({ <br /> &nbsp; headerPosition: "Bottom" <br /> }); <br /> | **Property:** *headerPlacement* <br /><br /> var tab = new ej.navigations.Tab({ <br /> &nbsp; headerPlacement: 'Bottom' <br /> }); <br /> tab.appendTo('#ej2Tab'); <br /> |
 | Header size | **Property:** *headerSize* <br /><br /> $("#tab").ejTab({ <br /> &nbsp; headerSize: "100px" <br /> }); <br /> | **Not Applicable** |
@@ -60,7 +60,7 @@ This article describes the API migration process of Tab component from Essential
 
 ## Items
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Default | **Not Applicable** | **Property:** *items* <br /><br /> var tab = new ej.navigations.Tab({ <br /> &nbsp; items: [] <br /> }); <br /> tab.appendTo('#ej2Tab'); <br /> |
 | Content | **Not Applicable** | **Property:** *items[0].content* <br /><br /> var tab = new ej.navigations.Tab({ <br /> &nbsp; items: [ { <br /> &nbsp;&nbsp; content: 'content1' <br /> &nbsp; } ]<br /> }); <br /> tab.appendTo('#ej2Tab'); <br /> |
@@ -89,7 +89,7 @@ This article describes the API migration process of Tab component from Essential
 
 ## Common
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Collapse active item | **Property:** *collapsible* <br /><br /> $("#tab").ejTab({ <br /> &nbsp; collapsible: true <br /> }); <br /> | **Not Applicable** |
 | Custom class | **Property:** *cssClass* <br /><br /> $("#tab").ejTab({ <br /> &nbsp; cssClass: 'customClass' <br /> }); <br /> | **Property:** *cssClass* <br /><br /> var tab = new ej.navigations.Tab({ <br /> &nbsp; cssClass: 'customClass' <br /> }); <br /> tab.appendTo('#ej2Tab'); <br /> |

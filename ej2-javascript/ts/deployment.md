@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## CDN
 
-The CDN links are published individually for all the scripts and style sheets of Syncfusion JavaScript UI controls. The below files are hosted in the CDN links for each Syncfusion npm packages.
+The CDN links are published individually for all the scripts and style sheets of Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript UI controls. The below files are hosted in the CDN links for each Syncfusion<sup style="font-size:70%">&reg;</sup> npm packages.
 
 1. UMD (Universal Module Definition) Files
 2. Global (ES5) Files
@@ -33,7 +33,7 @@ For example,
 * [https://cdn.syncfusion.com/ej2/22.1.34/ej2-grids/dist/global/ej2-grids.min.js](https://cdn.syncfusion.com/ej2/22.1.34/ej2-grids/dist/global/ej2-grids.min.js)
 * [https://cdn.syncfusion.com/ej2/22.1.34/ej2-grids/styles/material.css](https://cdn.syncfusion.com/ej2/22.1.34/ej2-grids/styles/material.css)
 
-The Syncfusion npm package released version files are also available in the below CDN format.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> npm package released version files are also available in the below CDN format.
 
 * **`https://cdn.syncfusion.com/ej2/22.1.34/{VERSION}/{PACKAGE-NAME}/dist/{PACKAGE-NAME}.umd.min.js`**
 * **`https://cdn.syncfusion.com/ej2/22.1.34/{VERSION}/{PACKAGE-NAME}/dist/global/{PACKAGE-NAME}.min.js`**
@@ -49,23 +49,23 @@ W> The un-versioned CDN links which always maintains latest version scripts are 
 
 ## NPM packages
 
-The Syncfusion JavaScript (Essential JS 2) npm packages are published and available in public [npm](https://www.npmjs.com/search?q=scope:syncfusion) registry.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) npm packages are published and available in public [npm](https://www.npmjs.com/search?q=scope:syncfusion) registry.
 
 ### Anatomy of NPM packages
 
-The Syncfusion JavaScript controls are published as npm packages. The below table explains the purpose of each file available in the npm package.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls are published as npm packages. The below table explains the purpose of each file available in the npm package.
 
 |    Files                                                                  |    Purpose                                                                                                                                                                                                                                                                                   |
 |---------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `dist/es6`                                                               |    This folder contains the ES6 formatted JS file of   the package.                                                                                                   |
 |    `dist/<package-name>.umd.min.js`   `dist/<package-name>.umd.min.js.map`              |        For applications using AMD or Common JS based module loader can utilize these files. This file can be used to load in [`System.js`](https://github.com/systemjs/systemjs) or [`RequireJS`](https://requirejs.org/).                                                                                                                                                                                           |
-|    `dist/global/<package-name>.min.js`   `dist/global/<package-name>.min.js.map`        |    The global folder contains the ES5 script files for creating and manipulating Syncfusion JavaScript controls using a global variable name `window.ej`. All Syncfusion JavaScript controls are available within the `window.ej` variable. This file can be used directly in the script tag without using any module loaders.    |
+|    `dist/global/<package-name>.min.js`   `dist/global/<package-name>.min.js.map`        |    The global folder contains the ES5 script files for creating and manipulating Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls using a global variable name `window.ej`. All Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls are available within the `window.ej` variable. This file can be used directly in the script tag without using any module loaders.    |
 |    `src/`                                                                   |    This folder contains the script files in ES6 format.                                                                                                                                                         |
 |    `styles/<theme name>.css`   `styles/<theme name>.scss`                     |    This folder contains the CSS and SCSS files of the   package.                                                                                                                                                                                                                             ||
 
 ## Bundling and tree shaking
 
-The Syncfusion JavaScript (Essential JS 2) packages has support for bundling and tree-shaking the script files. Using bundling you can combine the JavaScript modules in a single file. Using Tree Shaking, you can exclude the unused script modules for production bundle.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages has support for bundling and tree-shaking the script files. Using bundling you can combine the JavaScript modules in a single file. Using Tree Shaking, you can exclude the unused script modules for production bundle.
 
 ### Webpack and module injection
 
@@ -73,7 +73,7 @@ Large components provides the module injection for their features. For example, 
 
 #### Example to Use module injection in Grid control
 
-1. Clone Syncfusion JavaScript (Essential JS 2) seed application from [GitHub](https://github.com/syncfusion/ej2-typescript-seed.git)
+1. Clone Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) seed application from [GitHub](https://github.com/syncfusion/ej2-typescript-seed.git)
 
  ```
     git clone https://github.com/syncfusion/ej2-typescript-seed.git webpack-demo
@@ -142,7 +142,7 @@ Large components provides the module injection for their features. For example, 
 
 ### Tree shaking in webpack
 
-1. Clone Syncfusion JavaScript (Essential JS 2) seed application from the GitHub repository and navigate to the cloned folder.
+1. Clone Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) seed application from the GitHub repository and navigate to the cloned folder.
 
  ```
     git clone https://github.com/syncfusion/ej2-typescript-seed.git webpack-demo

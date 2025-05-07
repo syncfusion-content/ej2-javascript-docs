@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Cell in ##Platform_Name## Grid Control
 
-In the Syncfusion ##Platform_Name## Grid, a **cell** refers to an individual data point or a unit within a grid column that displays data. It represents the intersection of a row and a column, and it contains specific information associated with that row and column. Each cell can display text, numbers, or other content related to the data it represents. 
+In the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid, a **cell** refers to an individual data point or a unit within a grid column that displays data. It represents the intersection of a row and a column, and it contains specific information associated with that row and column. Each cell can display text, numbers, or other content related to the data it represents. 
 
 The Grid control allows you to customize the appearance and behavior of cells using various features and options. You can define templates, format cell values, enable or disable editing, and perform various other operations on the cells to create interactive and informative data grids in your web applications.
 
@@ -76,7 +76,7 @@ change(args) {
 
 ## Autowrap the grid content
 
-The auto wrap feature allows the cell content in the grid to wrap to the next line when it exceeds the boundary of the specified cell width. The cell content wrapping works based on the position of white space between words. To support the Autowrap functionality in Syncfusion Grid, you should set the appropriate [width](../api/grid/column/#width) for the columns. The column width defines the maximum width of a column and helps to wrap the content automatically.
+The auto wrap feature allows the cell content in the grid to wrap to the next line when it exceeds the boundary of the specified cell width. The cell content wrapping works based on the position of white space between words. To support the Autowrap functionality in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you should set the appropriate [width](../api/grid/column/#width) for the columns. The column width defines the maximum width of a column and helps to wrap the content automatically.
 
 To enable auto wrap, set the [allowTextWrap](../api/grid/#allowtextwrap) property to **true**. You can also configure the wrap mode by setting the [textWrapSettings.wrapMode](../api/grid/textWrapSettings/#wrapmode) property.
 
@@ -331,7 +331,7 @@ The following example demonstrates, how to set the [clipMode](../api/grid/column
 
 ## Tooltip
 
-The Syncfusion Grid allows you to display information about the grid columns to the user when they hover over them with the mouse.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to display information about the grid columns to the user when they hover over them with the mouse.
 
 ### Render bootstrap tooltip in grid cells
 

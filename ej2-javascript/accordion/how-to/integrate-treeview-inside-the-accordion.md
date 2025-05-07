@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Integrate treeview inside the accordion in ##Platform_Name## Accordion control
 
-Accordion supports to render other Essential JS 2 Components by using content property. You can give content as an element string like below, for initializing the component.
+Accordion supports to render other Essential<sup style="font-size:70%">&reg;</sup> JS 2 Components by using content property. You can give content as an element string like below, for initializing the component.
 
 ```js
 content: '<div id="element"> </div>'

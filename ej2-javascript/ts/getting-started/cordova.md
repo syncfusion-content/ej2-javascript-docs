@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Syncfusion JavaScript (Essential JS 2) library and Cordova
+# Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) library and Cordova
 
-This article provides a step-by-step introduction to configure Syncfusion JavaScript (Essential JS 2) library and build it in the Cordova framework.
+This article provides a step-by-step introduction to configure Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) library and build it in the Cordova framework.
 
 ## Getting started with Cordova CLI
 
@@ -127,7 +127,7 @@ This article provides a step-by-step introduction to configure Syncfusion JavaSc
     }
     ```
 
-### Configure Syncfusion JavaScript UI control in application
+### Configure Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript UI control in application
 
 1.Install [`@syncfusion/ej2`](https://www.npmjs.com/package/@syncfusion/ej2) npm package in the application using the following command line.
 
@@ -137,7 +137,7 @@ This article provides a step-by-step introduction to configure Syncfusion JavaSc
 
 ![ej2 cordova npm ej2 install](images/cordova-ej2-install.png)
 
-2.Add the Syncfusion JavaScript UI cotrols in the application. For getting started, the Button control is added in the application `~/www/index.html` file.
+2.Add the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript UI cotrols in the application. For getting started, the Button control is added in the application `~/www/index.html` file.
 
  ```html
      <!DOCTYPE html>
@@ -180,7 +180,7 @@ This article provides a step-by-step introduction to configure Syncfusion JavaSc
 
     > This `~/www/ts/ej2.ts` file reference has already been added in the `files` option of `~/tsconfig.json` file.
 
-4.Add the Syncfusion JavaScript style reference inside the `<head>` element in the `~/www/index.html` file.
+4.Add the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript style reference inside the `<head>` element in the `~/www/index.html` file.
 
  ```
     <head>
@@ -222,7 +222,7 @@ This article provides a step-by-step introduction to configure Syncfusion JavaSc
 
     > The `data-main` attribute in `RequireJS` script reference is used to load the entry point of the AMD file in the application, and it will be loaded asynchronously at the run time. Refer to this [documentation](https://requirejs.org/docs/api.html#data-main) for more information about `data-main` attribute in `RequireJS`.
     >
-    > The `paths` option should be configured with the package dependencies to resolve the path used inside module file. The Syncfusion JavaScript UI control dependencies are listed in the corresponding control's getting started documentation. Refer to this [documentation](https://ej2.syncfusion.com/documentation/button/getting-started.html#dependencies) to learn about the button control dependencies.
+    > The `paths` option should be configured with the package dependencies to resolve the path used inside module file. The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript UI control dependencies are listed in the corresponding control's getting started documentation. Refer to this [documentation](https://ej2.syncfusion.com/documentation/button/getting-started.html#dependencies) to learn about the button control dependencies.
     >
     > The UMD (Universal Module Definition) module supports both [AMD](http://requirejs.org/) and [`CommonJS`](http://www.commonjs.org/). Refer to this [documentation](https://github.com/umdjs/umd) for more details about UMD module loading.
 

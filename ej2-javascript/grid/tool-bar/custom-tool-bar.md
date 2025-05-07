@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Custom tool bar in ##Platform_Name## Grid control
 
-Custom toolbar in Syncfusion ##Platform_Name## Grid allows you to create a distinctive toolbar layout, style, and functionality that aligns with the specific needs of your application, providing a personalized experience within the Grid control.
+Custom toolbar in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid allows you to create a distinctive toolbar layout, style, and functionality that aligns with the specific needs of your application, providing a personalized experience within the Grid control.
 
 This can be achieved by utilizing the [toolbarTemplate](../../api/grid/#toolbartemplate) property, which offers extensive customization options for the toolbar. You can define a custom template for the toolbar and handle the actions for this toolbar template items are defined in the **clicked** event.
 
@@ -46,7 +46,7 @@ The following example demonstrates, how to render the custom toolbar using `tool
 
 ## Render image with text in custom toolbar
 
-Render an image with text in custom toolbar in Syncfusion ##Platform_Name## Grid allows easily render an image along with text in the toolbar of the Grid. This feature enhances the visual presentation of the Grid, providing additional context and improving the overall experience.
+Render an image with text in custom toolbar in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid allows easily render an image along with text in the toolbar of the Grid. This feature enhances the visual presentation of the Grid, providing additional context and improving the overall experience.
 
 To render an image with text in custom toolbar, This can be achieved by utilizing the [toolbarTemplate](../../api/grid/#toolbartemplate) property.
 
@@ -85,11 +85,11 @@ The following example demonstrates how to render an image in the toolbar of the 
 
 {% if page.publishingplatform == "typescript" %}
  
-Render DropDownList in custom toolbar in Syncfusion ##Platform_Name## Grid enables you to extend the functionality of the custom toolbar by incorporating a [DropDownList](../../drop-down-list/getting-started) control, allowing you to perform various actions within the Grid based on their selections.
+Render DropDownList in custom toolbar in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid enables you to extend the functionality of the custom toolbar by incorporating a [DropDownList](../../drop-down-list/getting-started) control, allowing you to perform various actions within the Grid based on their selections.
 
  {% elsif page.publishingplatform == "javascript" %}
  
-Render DropDownList in custom toolbar in Syncfusion ##Platform_Name## Grid enables you to extend the functionality of the custom toolbar by incorporating a [DropDownList](../../drop-down-list/es5-getting-started) control, allowing you to perform various actions within the Grid based on their selections.
+Render DropDownList in custom toolbar in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid enables you to extend the functionality of the custom toolbar by incorporating a [DropDownList](../../drop-down-list/es5-getting-started) control, allowing you to perform various actions within the Grid based on their selections.
 
 {% endif %}
 
@@ -126,7 +126,7 @@ In the **onChange** method, the text of the selected item is checked to determin
 
 ## Render a control or element using the toolbar template
 
-Rendering a control or element using the toolbar template in the Syncfusion ##Platform_Name## Grid allows you to extend the capabilities of the grid toolbar by incorporating custom components or elements. This provides flexibility to enhance the toolbar with custom buttons, dropdowns, input fields, icons, or any other desired UI elements. You can bind event handlers or handle interactions within the template to enable specific actions or behaviors associated with the added components or elements.
+Rendering a control or element using the toolbar template in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid allows you to extend the capabilities of the grid toolbar by incorporating custom components or elements. This provides flexibility to enhance the toolbar with custom buttons, dropdowns, input fields, icons, or any other desired UI elements. You can bind event handlers or handle interactions within the template to enable specific actions or behaviors associated with the added components or elements.
 
 {% if page.publishingplatform == "typescript" %}
  

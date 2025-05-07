@@ -11,18 +11,18 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Maps control
 
-This article describes the API migration process of Maps component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Maps component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Size Customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Height| Not Applicable |**Property:** *height*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp; height : '300px' <br/> }); <br/> maps.appendTo('#container');|
 |Width| Not Applicable |**Property:** *width*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp; width : '600px' <br/> }); <br/> maps.appendTo('#container');|
 
 ## Title and Subtitle Customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Title Text| Not Applicable |**Property:** *title.text*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp; titleSettings:{ text : 'Members of the UN Security Council' } <br/> }); <br/> maps.appendTo('#container')|
 |Subtitle Text| Not Applicable |**Property:** *title.subtitle.text*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp; titleSettings:{ subtitleSettings:{ text : 'In 2017' } <br/> } }); <br/> maps.appendTo('#container');|
@@ -33,7 +33,7 @@ This article describes the API migration process of Maps component from Essentia
 
 ## Layer Customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Type | Not Applicable | **Property:** *layers.type*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp; layers:[{ type:'Layer' }] <br/> }); <br/> maps.appendTo('#container')|
 | Layer Type | **Property:** *layers.layerType*<br/><br/> $("#container").ejMap({ <br/> &nbsp; layers:[{ layerType:'geometry' }] <br/> }); | To render shape maps, there is no need to mention the layer type. You can use the `shapeData` property alone.<br/>**Property:** *layers.shapeData*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp; layers:[{ shapeData:'WorldMap' }] <br/> }); <br/> maps.appendTo('#container')<br/> <br/>To render online maps, there is no need to mention the layer type. You can use the `urlTemplate` property alone.<br/>**Property:** *layers.urlTemplate*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp; layers:[{ urlTemplate:'http://a.tile.openstreetmap.org/level/tileX/tileY.png' }] <br/> }); <br/> maps.appendTo('#container')|
@@ -50,7 +50,7 @@ This article describes the API migration process of Maps component from Essentia
 
 ## Shape Customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Shape Fill | **Property:** *layers.shapeSettings.fill*<br/><br/> $("#container").ejMap({ <br/> &nbsp; layers:[{ shapeSettings:{ fill:'#626171' } }] <br/> }); | **Property:** *layers.shapeSettings.fill*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp; layers:[{ shapeSettings:{ fill: '#626171' } }] <br/> }); <br/> maps.appendTo('#container')|
 | Shape Palette | **Property:** *layers.shapeSettings.colorPalette*<br/><br/> $("#container").ejMap({ <br/> &nbsp; layers:[{ shapeSettings:{ colorPalette:'customPalette' } }] <br/> }); | **Property:** *layers.shapeSettings.palette*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp; layers:[{ shapeSettings:{ palette: ['red','green'] } }] <br/> }); <br/> maps.appendTo('#container')|
@@ -64,7 +64,7 @@ This article describes the API migration process of Maps component from Essentia
 
 ## Marker Customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Marker Data Source | **Property:** *layers.markers*<br/><br/> $("#container").ejMap({ <br/> &nbsp; layers:[{ markers:[{ "Name": "USA", "latitude": 38.8833, "longitude": -77.0167 }] }] <br/> })  | **Property:** *layers.markerSettings.dataSource*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp; layers:[{ markerSettings:{ dataSource: [{ "Name": "USA", "latitude": 38.8833, "longitude": -77.0167 }] } }] <br/> }); <br/> maps.appendTo('#container')|
 | Marker Template | **Property:** *layers.markerTemplate*<br/><br/> $("#container").ejMap({ <br/> &nbsp; layers:[{ markerTemplate:"Template" }] <br/> })  | **Property:** *layers.markerSettings.template*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp; layers:[{ markerSettings:{ template:'Template' } }] <br/> }); <br/> maps.appendTo('#container')|
@@ -86,7 +86,7 @@ This article describes the API migration process of Maps component from Essentia
 
 ## Bubble Customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Visible | **Property:** *layers.bubbleSettings.visible*<br/><br/> $("#container").ejMap({ <br/> &nbsp; layers:[{ bubbleSettings: { showBubble:true }  }] <br/> })   | **Property:** *layers.bubbleSettings.visible*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp; layers:[{ bubbleSettings:{ visible:true  }] <br/> }); <br/> maps.appendTo('#container')|
 | ValuePath | **Property:** *layers.bubbleSettings.valuePath*<br/><br/> $("#container").ejMap({ <br/> &nbsp; layers:[{ bubbleSettings: { valuePath:'Population' }  }] <br/> })   | **Property:** *layers.bubbleSettings.valuePath*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp; layers:[{ bubbleSettings:{ valuePath:'Population'  }] <br/> }); <br/> maps.appendTo('#container')|
@@ -105,7 +105,7 @@ This article describes the API migration process of Maps component from Essentia
 
 ## DataLabel Customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Visible | **Property:** *layers.labelSettings.showLabels*<br/><br/> $("#container").ejMap({ <br/> &nbsp; layers:[{ labelSettings: { showLabels:true }  }] <br/> }) | **Property:** *layers.dataLabelSettings.visible*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp; layers:[{ dataLabelSettings:{ visible:true  }] <br/> }); <br/> maps.appendTo('#container')|
 | Label Path | **Property:** *layers.labelSettings.labelPath*<br/><br/> $("#container").ejMap({ <br/> &nbsp; layers:[{ labelSettings: { labelPath:'Continent' }  }] <br/> }) | **Property:** *layers.dataLabelSettings.labelPath*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp; layers:[{ dataLabelSettings:{ labelPath:'Continent'  }] <br/> }); <br/> maps.appendTo('#container')|
@@ -119,7 +119,7 @@ This article describes the API migration process of Maps component from Essentia
 
 ## Legend Customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Visible | **Property:** *layers.legendSettings.showLegend*<br/><br/> $("#container").ejMap({ <br/> &nbsp; layers:[{ legendSettings: { showLegend:true }  }] <br/> }) | **Property:** *legendSettings.visible*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp; legendSettings: { visible:true }} <br/> }); <br/> maps.appendTo('#container')|
 | Toggle Visibility | **Property:** *layers.legendSettings.toggleVisibility*<br/><br/> $("#container").ejMap({ <br/> &nbsp; layers:[{ legendSettings: { toggleVisibility:true }  }] <br/> }) | **Property:** *legendSettings.toggleVisibility*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp; legendSettings: { toggleVisibility:true }} <br/> }); <br/> maps.appendTo('#container')|
@@ -155,7 +155,7 @@ This article describes the API migration process of Maps component from Essentia
 
 ## Zooming Customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Enable| Not Applicable | **Property:** *zoomSettings.enableZoom*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp; zoomSettings:{ enable:true } <br/> }); <br/> maps.appendTo('#container')|
 |Minimum Zoom| **Property:** *zoomSettings.minValue*<br/><br/> $("#container").ejMap({ <br/> &nbsp; zoomSettings:{ minValue:2 } <br/> }); | **Property:** *zoomSettings.minZoom*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp; zoomSettings:{ minZoom:2 } <br/> }); <br/> maps.appendTo('#container')|
@@ -175,7 +175,7 @@ This article describes the API migration process of Maps component from Essentia
 
 ## Highlight And Selection Customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Highlight Fill | **Property:** *layers.shapeSettings.highlightColor*<br/><br/> $("#container").ejMap({ <br/> &nbsp; layers:{ shapeSettings:{ highlightColor:'green' } } <br/> }); | **Property:** *fill*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp; layers:[{ highlightSettings:{ fill:'green' }}] <br/> }); <br/> maps.appendTo('#container')|
 | Enable Highlight | **Property:** *layers.enableMouseHover*<br/><br/> $("#container").ejMap({ <br/> &nbsp; layers:{ enableMouseHover:true } <br/> }); | **Property:** *enable*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp; layers:[{ highlightSettings:{ enable:true }}] <br/> }); <br/> maps.appendTo('#container')|
@@ -190,7 +190,7 @@ This article describes the API migration process of Maps component from Essentia
 
 ## Navigation Line Customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Visible | Not Applicable | **Property:** *layers.navigationLineSettings.visible*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp;layers:[{ navigationLineSettings:{ visible:true } }]   <br/> }); <br/> maps.appendTo('#container') |
 | Width | Not Applicable | **Property:** *layers.navigationLineSettings.width*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp;layers:[{ navigationLineSettings:{ width:2 } }]   <br/> }); <br/> maps.appendTo('#container') |
@@ -207,7 +207,7 @@ This article describes the API migration process of Maps component from Essentia
 
 ## Tooltip Customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Tooltip Enable | **Property:** *layers.showTooltip*<br/><br/> $("#container").ejMap({ <br/> &nbsp; layers:{ layers:[{ showTooltip: true }] <br/> }); | **Property:** *layers.tooltipSettings.visible*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp;layers:[{ tooltipSettings:{ visible: true }] <br/> }); <br/> maps.appendTo('#container')|
 | Tooltip Template | **Property:** *layers.tooltipTemplate*<br/><br/> $("#container").ejMap({ <br/> &nbsp; layers:{ layers:[{ tooltipTemplate: "Template" }] <br/> }); | **Property:** *layers.tooltipSettings.visible*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp;layers:[{ tooltipSettings:{ visible: true }] <br/> }); <br/> maps.appendTo('#container')|
@@ -219,7 +219,7 @@ This article describes the API migration process of Maps component from Essentia
 
 ## Annotation Cutomization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Content | Not Applicable | **Property:** *legendSettings.annotations.content*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp; annotations: { content:'<div>USA Population 2018</div>' }} <br/> }); <br/> maps.appendTo('#container') |
 | Location X | Not Applicable | **Property:** *legendSettings.annotations.x*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp; annotations: { x:'250px' }} <br/> }); <br/> maps.appendTo('#container') |
@@ -230,7 +230,7 @@ This article describes the API migration process of Maps component from Essentia
 
 ## Maps Other Properties Customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Projection Type | Not Applicable | **Property:** *projectionType*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp; projectionType: 'Mercator' <br/> }); <br/> maps.appendTo('#container') |
 | Background | **Property:** *background*<br/><br/> $("#container").ejMap({ <br/> &nbsp; background:'red' <br/> }); | **Property:** *background*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp; background: 'red' <br/> }); <br/> maps.appendTo('#container') |
@@ -251,7 +251,7 @@ This article describes the API migration process of Maps component from Essentia
 
 ## Events
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Shape Selected | **Property:** *shapeSelected*<br/><br/> $("#container").ejMap({ <br/> &nbsp; shapeSelected:'MapShapeSelected' <br/> });  | **Property:** *shapeSelected*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp; shapeSelected:'MapShapeSelected' <br/> }); <br/> maps.appendTo('#container') |
 | Marker Selected | **Property:** *markerSelected*<br/><br/> $("#container").ejMap({ <br/> &nbsp; markerSelected:'MapMarkerSelected' <br/> });  | **Property:** *markerClick*<br/><br/> var maps = new ej.maps.Maps({ <br/> &nbsp; markerClick:'MapMarkerSelected' <br/> }); <br/> maps.appendTo('#container') |

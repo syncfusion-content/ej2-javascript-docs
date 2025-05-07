@@ -21,7 +21,7 @@ The UML class diagram shapes are explained as follows.
 
 ### Class
 
-A class defines a group of objects that share common specifications, features, constraints, and semantics. To create a class object, the classifier should be defined using the [class](../api/diagram/umlClassifierShapeModel#class) notation. This notation serves as a foundational element in object-oriented programming, encapsulating the essential characteristics and behaviors that objects belonging to the class will exhibit. 
+A class defines a group of objects that share common specifications, features, constraints, and semantics. To create a class object, the classifier should be defined using the [class](../api/diagram/umlClassifierShapeModel#class) notation. This notation serves as a foundational element in object-oriented programming, encapsulating the Essential<sup style="font-size:70%">&reg;</sup> characteristics and behaviors that objects belonging to the class will exhibit. 
 
 Also, define the [`name`](../api/diagram/umlClassModel/#name), [`attributes`](../api/diagram/umlClassModel/#attributes), and [`methods`](../api/diagram/umlClassModel/#methods) of the class using the class property of node.
 

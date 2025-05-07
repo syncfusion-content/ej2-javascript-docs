@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Es5 getting started in ##Platform_Name## Gantt control
 
-This section explains you the steps required to create a simple Essential JS 2 Gantt chart in a JavaScript application and demonstrates its basic features.
+This section explains you the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Gantt chart in a JavaScript application and demonstrates its basic features.
 
 ## Dependencies
 
@@ -47,20 +47,20 @@ Refer to the following steps to setup your local environment:
 
 **Step 2:** Create `myapp/resources` folder to store local scripts and styles files.
 
-**Step 3:** Create `myapp/index.js` and `myapp/index.html` files for initializing Essential JS 2 Gantt control.
+**Step 3:** Create `myapp/index.js` and `myapp/index.html` files for initializing Essential<sup style="font-size:70%">&reg;</sup> JS 2 Gantt control.
 
-## Adding Syncfusion resources
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
 
-The Essential JS 2 Gantt control can be initialized by using either of the following ways:
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Gantt control can be initialized by using either of the following ways:
 
 * Using local script and style.
 * Using CDN link for script and style.
 
 ### Using local script and style
 
-You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
-After installing the Essential JS 2 product build, you can copy the Gantt and its dependencies scripts and style file into the `resources/scripts` and `resources/styles` folder.
+After installing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 product build, you can copy the Gantt and its dependencies scripts and style file into the `resources/scripts` and `resources/styles` folder.
 
 Refer to the following code to find the location of Gantt script and style file.
 
@@ -205,7 +205,7 @@ The below html code example shows the dependency of gantt.
   </html>
 ```
 
-The following located script and style file contains all the Syncfusion JavaScript (ES5) UI control resources in a single file.
+The following located script and style file contains all the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file.
 
 > Scripts: **(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js
 >
@@ -215,7 +215,7 @@ The following located script and style file contains all the Syncfusion JavaScri
 
 Now, you can add the Gantt control to the application. For getting started, add a `div` element to the Gantt control in `index.html`. Then, refer to the `index.js` file in the `index.html` file.
 
-In this document context, `ej2.min.js` and `material.css` which includes all the Essential JS 2 components and its dependent scripts and theme files are used.
+In this document context, `ej2.min.js` and `material.css` which includes all the Essential<sup style="font-size:70%">&reg;</sup> JS 2 components and its dependent scripts and theme files are used.
 
 ```html
 <!DOCTYPE html>
@@ -535,7 +535,7 @@ You can display and assign the resource for each task in the Gantt control. Crea
 
 ## Run the application
 
-Now, run the `index.html` in the web browser, it will render the Essential JS 2 Gantt control
+Now, run the `index.html` in the web browser, it will render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Gantt control
 
 Output will be displayed as follows.
 
@@ -552,7 +552,7 @@ Output will be displayed as follows.
 
 ## Deploy the application
 
-The Essential JS 2 Gantt control features are segregated into individual feature-wise modules. The [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build and `CDN` scripts contains code for all features used in Gantt and hence you should avoid to use them in production. You are strongly recommend to generate script files to use in production using the Syncfusion **Custom Resource Generator**[`(CRG)`](https://crg.syncfusion.com/) for Essential JS 2. CRG will allow you generate the bundled script for the currently enabled features in Gantt.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Gantt control features are segregated into individual feature-wise modules. The [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build and `CDN` scripts contains code for all features used in Gantt and hence you should avoid to use them in production. You are strongly recommend to generate script files to use in production using the Syncfusion<sup style="font-size:70%">&reg;</sup> **Custom Resource Generator**[`(CRG)`](https://crg.syncfusion.com/) for Essential<sup style="font-size:70%">&reg;</sup> JS 2. CRG will allow you generate the bundled script for the currently enabled features in Gantt.
 
 ## Error handling
 

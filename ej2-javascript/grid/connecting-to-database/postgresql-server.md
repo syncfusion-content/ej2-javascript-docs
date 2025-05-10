@@ -1539,11 +1539,11 @@ When you run the application, the resultant Grid will look like this
 
 {% if page.publishingplatform == "typescript" %}
 
-Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-typescript-grid/tree/master/Binding%20PostgreSQL%20database%20using%20UrlAdaptor).
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-typescript-grid/tree/master/Binding%20PostgreSQL%20database%20using%20UrlAdaptor).
 
 {% elsif page.publishingplatform == "javascript" %}
 
-Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-javascript-grid/tree/master/Binding%20PostgreSQL%20database%20using%20UrlAdaptor).
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-javascript-grid/tree/master/Binding%20PostgreSQL%20database%20using%20UrlAdaptor).
 
 {% endif %}
 
@@ -2880,10 +2880,10 @@ public class CRUDModel<T> where T : class
 
 {% if page.publishingplatform == "typescript" %}
 
-Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-typescript-grid/tree/master/Binding%20PostgreSQL%20database%20using%20CustomAdaptor).
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-typescript-grid/tree/master/Binding%20PostgreSQL%20database%20using%20CustomAdaptor).
 
 {% elsif page.publishingplatform == "javascript" %}
 
-Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-javascript-grid/tree/master/Binding%20PostgreSQL%20database%20using%20CustomAdaptor).
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-javascript-grid/tree/master/Binding%20PostgreSQL%20database%20using%20CustomAdaptor).
 
 {% endif %}

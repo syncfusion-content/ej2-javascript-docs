@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # Getting started in Standalone PDF Viewer control
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
 ## Component Initialization with CDN link for script and style reference
 
-**Step 1:** Create an app folder `my-app` for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components.
+**Step 1:** Create an app folder `my-app` for the Essential JS 2 JavaScript components.
 
-**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 component's global scripts and styles are already hosted in the below CDN link formats.
+**Step 2:** The Essential JS 2 component's global scripts and styles are already hosted in the below CDN link formats.
 
 **Syntax:**
 > Script: `https://cdn.syncfusion.com/ej2/{Version}/dist/{PACKAGE_NAME}.min.js`
@@ -30,7 +30,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global 
 > Styles: [`https://cdn.syncfusion.com/ej2/26.2.11/ej2-base/styles/material.css`](https://cdn.syncfusion.com/ej2/26.2.11/ej2-base/styles/material.css)
 
 
-**Step 3:** Create a HTML page (index.html) in `my-app` location and add the CDN link references. Now, add the `Div` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 PDF Viewer** component in the index.html by using following code.
+**Step 3:** Create a HTML page (index.html) in `my-app` location and add the CDN link references. Now, add the `Div` element and initiate the `Essential JS 2 PDF Viewer` component in the index.html by using following code.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -39,6 +39,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global 
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/pdfviewer/es5-getting-started-cs2" %}
+
 
 ### Steps to Load PDF Viewer with Local Resources
 
@@ -67,4 +68,4 @@ var pdfviewer = new ej.pdfviewer.PdfViewer({
 
 View the sample in GitHub to [load PDF Viewer with local resources](https://github.com/SyncfusionExamples/javascript-pdf-viewer-examples/tree/master/How%20to/Refer%20resource%20url%20locally)
 
-**Step 4:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 PDF Viewer** component.
+**Step 4:** Now, run the `index.html` in web browser, it will render the `Essential JS 2 PDF Viewer` component.

@@ -1,14 +1,51 @@
+window.imagedate = function () {
+    const getImage = Math.floor(Math.random() * 5) + 1;
+    return getImage + '.svg';
+};
+
+window.bgColor = function(value, date) {
+    if (value === 'S') {
+      return '#7BD3EA';
+    }
+    const parsedDate = new Date(date);
+    for (let i = 0; i < ganttChart.holidays.length; i++) {
+      const holiday = ganttChart.holidays[i];
+      const fromDate = new Date(holiday.from);
+      const toDate = new Date(holiday.to);
+      if (parsedDate >= fromDate && parsedDate <= toDate) {
+        return '#97E7E1';
+      }
+    }
+    return '#E0FBE2';
+}
+
+window.holidayValue = function(value, date) {
+    const parsedDate = new Date(date);
+    for (let i = 0; i < ganttChart.holidays.length; i++) {
+      const holiday = ganttChart.holidays[i];
+      const fromDate = new Date(holiday.from);
+      const toDate = new Date(holiday.to);
+      if (parsedDate >= fromDate && parsedDate <= toDate) {
+        const options = { weekday: 'short' };
+        return parsedDate
+          .toLocaleDateString('en-US', options)
+          .toLocaleUpperCase();
+      }
+    }
+    return value;
+}
+
 var ganttChart = new ej.gantt.Gantt({
     dataSource: GanttData,
     allowSorting: true,
     taskFields: {
-        id: 'TaskID',
+        id: 'TaskId',
         name: 'TaskName',
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
         dependency: 'Predecessor',
-        child: 'subtasks'
+        parentID: 'ParentId',
     },
     splitterSettings: {
         columnIndex: 1
@@ -61,48 +98,3 @@ var ganttChart = new ej.gantt.Gantt({
     projectEndDate: new Date('05/30/2019'),
 });
 ganttChart.appendTo('#Gantt');
-
-function bgColor (value, date){
-    if (value === "S") {
-        return "#7BD3EA"
-    }
-    const parsedDate = new Date(date);
-    for (let i = 0; i < ganttChart.holidays.length; i++) {
-        const holiday = ganttChart.holidays[i];
-        const fromDate = new Date(holiday.from);
-        const toDate = new Date(holiday.to)
-        if (parsedDate >= fromDate && parsedDate <= toDate) {
-            return "#97E7E1";
-        }
-    }
-    return "#E0FBE2"
-};
-function imagedate () {
-    const getImage = Math.floor(Math.random() * 5) + 1;
-    return  getImage + ".svg";
-
-}
-function holidayValue  (value, date) {
-
-    const parsedDate = new Date(date);
-    for (let i = 0; i < ganttChart.holidays.length; i++) {
-        const holiday = ganttChart.holidays[i];
-        const fromDate = new Date(holiday.from);
-        const toDate = new Date(holiday.to)
-        if (parsedDate >= fromDate && parsedDate <= toDate) {
-            const options = { weekday: 'short' };
-            return parsedDate.toLocaleDateString('en-US', options).toLocaleUpperCase();
-        }
-    }
-    return value
-}
-
-
-
-
-
-
-
-
-
-

@@ -150,5 +150,5 @@ Additionally, you can enable or disable the floating toolbar using the [enableFl
 ## See also
 
 * [Customizing Rich Text Editor Toolbar Styles](../style#customizing-editor-toolbar)
-* [Implementing Inline Editing](../editor-types/inline-editing)
+* [Implementing Inline Editing](../inline-editing)
 * [Customizing Accessibility Shortcut Keys](../accessibility#keyboard-navigation)

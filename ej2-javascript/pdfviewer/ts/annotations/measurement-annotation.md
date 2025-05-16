@@ -266,7 +266,7 @@ if (addVolumeAnnotation) {
 
 ## Edit the existing measurement annotation programmatically
 
-To modify existing measurement annotation in the Syncfusion<sup style="font-size:70%">&reg;</sup> PDF viewer programmatically, you can use the **editAnnotation()** method.
+To modify existing measurement annotation in the Syncfusion PDF viewer programmatically, you can use the **editAnnotation()** method.
 
 Here is an example of how you can use the **editAnnotation()** method:
 

@@ -58,4 +58,5 @@ The following example demonstrates how to import and inject modules.
 | `FormatPainter` | Injecting this module allows users to copy formatting (like bold, italic, font size, color, etc.) from one section of text and apply it to another in the Rich Text Editor. |
 | `EmojiPicker` | Injecting this module allows users to search, and insert emojis into the Rich Text Editor. |
 
+
 These modules should be injected into the richtexteditor using the `RichTextEditor.Inject` method.

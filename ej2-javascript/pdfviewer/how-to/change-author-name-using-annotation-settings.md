@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Change Author name in ##Platform_Name## Pdfviewer control | Syncfusion
+title: Change author name using annotation settings in ##Platform_Name## Pdfviewer control | Syncfusion
 description: Learn here all about Change author name using annotation settings in Syncfusion ##Platform_Name## Pdfviewer control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Change author name using annotation settings 
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Change author name using annotation settings in ##Platform_Name## Pdfviewer control
 
-The Essential<sup style="font-size:70%">&reg;</sup> JavaScript PDF Viewer supports to customize a single property of the annotation settings by exposing an API for the properties common to all the annotations.
+The Essential JavaScript PDF Viewer supports to customize a single property of the annotation settings by exposing an API for the properties common to all the annotations.
 
 **API Name** : annotationSettings
 

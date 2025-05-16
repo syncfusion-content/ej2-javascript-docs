@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 ---
 # Pdfviewer server docker image overview in ##Platform_Name## Pdfviewer control
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> PDF Viewer control allows you to view, print, form-fill, and annotate PDF files in your web applications. This PDF Viewer control requires a server-side backend Web API service to render PDF contents.
+The Syncfusion PDF Viewer control allows you to view, print, form-fill, and annotate PDF files in your web applications. This PDF Viewer control requires a server-side backend Web API service to render PDF contents.
 
 This Docker image is the predefined Docker container of Syncfusion’s PDF Viewer backend. You can deploy it quickly to your infrastructure.
 

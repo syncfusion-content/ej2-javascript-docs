@@ -9,7 +9,6 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-
 # Paste Cleanup in ##Platform_Name## Rich Text Editor control
 
 The Rich Text Editor simplifies the conversion of Microsoft Word content to HTML format, preserving formatting and styles. The `pasteCleanup` settings property allows you to control the formatting and styles when pasting content into the editor. The following settings are available to clean up the content:
@@ -25,8 +24,7 @@ The Rich Text Editor simplifies the conversion of Microsoft Word content to HTML
 
 > Rich Text Editor features are segregated into individual feature-wise modules. To use paste cleanup, inject PasteCleanup module using the `RichTextEditor.Inject(PasteCleanup)`.
 
-
-## Understanding Paste Options in the Prompt Dialog
+## Paste options in the prompt dialog
 
 When `prompt` is set to true, pasting the content in the editor will open a dialog box that contains three options `Keep`, `Clean`, and `Plain Text` as radio buttons:
 1. `Keep`: Maintains the same format as the copied content.
@@ -35,13 +33,13 @@ When `prompt` is set to true, pasting the content in the editor will open a dial
 
 > When `prompt` value is set true, the API properties [plainText](#plain-text) and [keepFormat](#keep-format) will not be considered for processing when pasting the content.
 
-## How to Paste as Plain Text
+## How to paste as plain text
 
 Setting `plainText` to true converts the copied content to plain text by removing all HTML tags and styles. Only the plain text is pasted into the editor.
 
 >When `plainText` is set to true, set `prompt` to false. The `keepFormat` property will not be considered.
 
-## Maintaining Formatting with Keep Format Option
+## Keep format option
 
 When `keepFormat` is set to true, the copied content maintains all style formatting allowed in the `allowedStyleProps` when pasted into the editor.
 
@@ -49,13 +47,13 @@ If `keepFormat` is set to false, all styles in the copied content are removed, r
 
 >When `keepFormat` is set to true, set both `prompt` and `plainText` to false.
 
-## Cleaning Formatting During Paste
+## Cleaning formatting during paste
 
 Setting `cleanFormat` to true removes all applied styles from the pasted content while retaining all other HTML tags in the editor.
 
 >When `cleanFormat` is set to true, set `prompt`, `plainText`, and `keepFormat` to false.
 
-## Managing Denied Tags for Paste Cleanup
+## Denied tags during paste
 
 When `deniedTags` values are set, the specified tags will be removed from the pasted content. For example,
 
@@ -63,13 +61,13 @@ When `deniedTags` values are set, the specified tags will be removed from the pa
 * `'a[!href]'`: Removes anchor tags without the 'href' attribute.
 * `'a[href, target]'`: Removes anchor tags with both 'href' and 'target' attributes.
 
-## Configuring Denied Attributes in Paste Settings
+## Denied attributes during paste
 
 When `deniedAttrs` values are set, the specified attributes will be removed from all tags in the pasted content. For example,
 
 `'id', 'title'`: Removes 'id' and 'title' attributes from all tags.
 
-## Allowing Specific Style Properties for Pasted Content
+## Allowing specific style properties
 
 By default, the following basic styles are allowed on pasting the content to the editor.
 
@@ -110,7 +108,38 @@ In the following example, the paste cleanup related settings are explained with 
 {% previewsample "page.domainurl/code-snippet/rich-text-editor/toolbar-cs2" %}
 {% endif %}
 
-## Manual Customization of Pasted Content
+## Get pasted content
+
+You can get the pasted text as HTML using the [afterPasteCleanup](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#afterpastecleanup) event.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/rich-text-editor/get-pasted-content-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor/get-pasted-content-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/get-pasted-content-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/rich-text-editor/get-pasted-content-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor/get-pasted-content-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/get-pasted-content-cs1" %}
+{% endif %}
+
+## Customization of pasted content
 
 The Rich Text Editor enables the customization of copied content prior to pasting it into the editor. By configuring the [afterPasteCleanUp](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#afterpastecleanup) event, users can exercise precise control over formatting and content modifications after the paste action is executed.
 

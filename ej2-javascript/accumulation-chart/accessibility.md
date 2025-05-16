@@ -77,4 +77,4 @@ The accessibility compliance of the Accumulation chart control is shown in the f
 
 ## See also
 
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls](../common/accessibility)
+* [Accessibility in Syncfusion ##Platform_Name## controls](../common/accessibility)

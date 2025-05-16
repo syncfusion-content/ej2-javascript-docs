@@ -431,4 +431,4 @@ By configuring these options in the [quickToolbarSettings](https://helpej2.syncf
 * [Quick Toolbars in the Toolbar](https://ej2.syncfusion.com/documentation/rich-text-editor/toolbar#quick-inline-toolbar)
 * [How to Use the Video Editing Option in Toolbar Items](https://ej2.syncfusion.com/documentation/rich-text-editor/video)
 * [How to Use the Image Editing Option in Toolbar Items](./insert-images)
-* [Audio Quick Toolbar](../toolbar/quick-toolbar)
+* [Audio Quick Toolbar](../toolbar/quick-toolbar#audio-quick-toolbar)

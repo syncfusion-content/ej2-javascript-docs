@@ -11,20 +11,20 @@ domainurl: ##DomainURL##
 
 # Es5 getting started in ##Platform_Name## Rich text editor control
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
 ## Component Initialization
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components can be initialized by using either of the following ways.
+The Essential JS 2 JavaScript components can be initialized by using either of the following ways.
 
 * Using local script and style references in a HTML page.
 * Using CDN link for script and style reference.
 
 ### Using local script and style references in a HTML page
 
-**Step 1:** Create an app folder `myapp` for Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components.
+**Step 1:** Create an app folder `myapp` for Essential JS 2 JavaScript components.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+**Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
 **Syntax:**
 > Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -75,7 +75,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components c
   </html>
 ```
 
-**Step 5:** Now, add the `textarea` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Rich Text Editor** component in the `index.html` by using following code
+**Step 5:** Now, add the `textarea` element and initiate the **Essential JS 2 Rich Text Editor** component in the `index.html` by using following code
 
 ```html
 <!DOCTYPE html>
@@ -120,13 +120,13 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components c
   </html>
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Rich Text Editor** component.
+**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential JS 2 Rich Text Editor** component.
 
 ### Using CDN link for script and style reference
 
-**Step 1:** Create an app folder `myapp` for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components.
+**Step 1:** Create an app folder `myapp` for the Essential JS 2 JavaScript components.
 
-**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 component's global scripts and styles are already hosted in the below CDN link formats.
+**Step 2:** The Essential JS 2 component's global scripts and styles are already hosted in the below CDN link formats.
 
 **Syntax:**
 > Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -138,7 +138,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components c
 >
 > Styles: [`http://cdn.syncfusion.com/ej2/ej2-richtexteditor/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-richtexteditor/styles/material.css)
 
-**Step 3:** Create a HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `textarea` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Rich Text Editor** component in the index.html by using following code.
+**Step 3:** Create a HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `textarea` element and initiate the **Essential JS 2 Rich Text Editor** component in the index.html by using following code.
 
 ```html
 <!DOCTYPE html>
@@ -184,7 +184,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components c
 
 ```
 
-**Step 4:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Rich Text Editor** component.
+**Step 4:** Now, run the `index.html` in web browser, it will render the **Essential JS 2 Rich Text Editor** component.
 
 ### Initialize from textarea
 
@@ -368,7 +368,7 @@ Initialize the Rich Text Editor on div element and set the `enable` field of [if
 
 ```
 
-## Configure the Toolbar
+## Configure the toolbar
 
 Configure the toolbar with the tools using items field of the [toolbarSettings](../api/rich-text-editor/toolbarSettings/#toolbarsettings) property as your application requires.
 
@@ -426,7 +426,7 @@ To fetch the Rich Text Editor's text content, use [`getText`](../api/rich-text-e
 
 > You can refer to our [JavaScript Rich Text Editor](https://www.syncfusion.com/javascript-ui-controls/js-wysiwyg-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Rich Text Editor example](https://ej2.syncfusion.com/javascript/demos/#/material/rich-text-editor/rich-text-editor.html) that shows how to render the rich text editor tools.
 
-## See Also
+## See also
 
 * [How to change the editor type](./editor-modes/)
 * [How to render the iframe](./iframe/)

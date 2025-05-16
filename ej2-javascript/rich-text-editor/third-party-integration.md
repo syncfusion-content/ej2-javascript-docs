@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 The Rich Text Editor can be integrated with third-party to suite the application scenario.
 
-## Code-Mirror Integration
+## CodeMirror integration
 
 Rich Text Editor comes with a basic HTML source editor through view-source property. [`Code mirror`](https://codemirror.net/) plugin can be used to highlight the syntax of HTML. CodeMirror plugin for Rich Text Editor makes editing of HTML source code with a pleasant experience.
 
@@ -65,7 +65,7 @@ Add a custom icon for HTML source editor in the toolbar of Rich Text Editor usin
 {% previewsample "page.domainurl/code-snippet/rich-text-editor/code-mirror-cs2" %}
 {% endif %}
 
-## Embedly Integration
+## Embedly integration
 
 Rich Text Editor easily integrate with [`Embed.ly`](https://embed.ly/) which is probably the best service when it comes to embed the rich content such as Twitter, Facebook, Instagram and lots of other publishing platform embeds.
 

@@ -30,7 +30,7 @@ The list of minimum dependencies required to use an accumulation chart are follo
 
 ## Installation and Configuration
 
-* To get started with accumulation chart component, clone the [Essential<sup style="font-size:70%">&reg;</sup> JS 2 quickstart](https://github.com/syncfusion/ej2-quickstart.git) project, and install necessary packages by using the following commands:
+* To get started with accumulation chart component, clone the [`Essential JS 2 quickstart`](https://github.com/syncfusion/ej2-quickstart.git) project, and install necessary packages by using the following commands:
 
 ```
 git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
@@ -72,7 +72,7 @@ System.config({
 ```
 
 > The [project](https://github.com/syncfusion/ej2-quickstart.git) is preconfigured with common settings
-(`src/styles/styles.css, system.config.js`)  to start with all Essential<sup style="font-size:70%">&reg;</sup> JS 2 components.
+(`src/styles/styles.css, system.config.js`)  to start with all Essential JS 2 components.
 
 ## Add Accumulation Chart to the Project
 

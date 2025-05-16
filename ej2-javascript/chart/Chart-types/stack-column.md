@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stacked Column Chart in ##Platform_Name## Charts | Syncfusion
+title: Stacked Column in ##Platform_Name## Charts | Syncfusion
 description: Learn here all about Stacked Column in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Stacked Column 

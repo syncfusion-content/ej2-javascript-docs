@@ -194,9 +194,7 @@ In the below sample, you have customize the bold, italic, underline toolbar acti
 {% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs13" %}
 {% endif %}
 
-## See Also
+## See also
 
 * [Globalization](./globalization)
 * [Accessibility](./accessibility)
-* [How to customize the toolbar items shortcut key](./how-to/shortcut-key)
-* [How to customize the saving operation](./how-to/save)

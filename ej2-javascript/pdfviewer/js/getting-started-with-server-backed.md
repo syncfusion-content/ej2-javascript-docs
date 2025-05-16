@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## PDF Viewer control
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
 ## Component Initialization with CDN link for script and style reference
 
-**Step 1:** Create an app folder `my_app` for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components.
+**Step 1:** Create an app folder `my_app` for the Essential JS 2 JavaScript components.
 
-**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 component's global scripts and styles are already hosted in the below CDN link formats.
+**Step 2:** The Essential JS 2 component's global scripts and styles are already hosted in the below CDN link formats.
 
 **Syntax:**
 > Script: `https://cdn.syncfusion.com/ej2/{Version}/dist/{PACKAGE_NAME}.min.js`
@@ -29,7 +29,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global 
 >
 > Styles: [`https://cdn.syncfusion.com/ej2/26.2.11/ej2-base/styles/material.css`](https://cdn.syncfusion.com/ej2/26.2.11/ej2-base/styles/material.css)
 
-**Step 3:** Create a HTML page (index.html) in `my_app` location and add the CDN link references. Now, add the `Div` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 PDF Viewer** component in the index.html by using following code.
+**Step 3:** Create a HTML page (index.html) in `my_app` location and add the CDN link references. Now, add the `Div` element and initiate the `Essential JS 2 PDF Viewer` component in the index.html by using following code.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -49,7 +49,7 @@ N> The Web API hosted link https://services.syncfusion.com/js/production/api/pdf
         
 {% previewsample "page.domainurl/code-snippet/pdfviewer/es5-getting-started-cs1" %}
 
-**Step 4:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 PDF Viewer** component.
+**Step 4:** Now, run the `index.html` in web browser, it will render the `Essential JS 2 PDF Viewer` component.
 
 > For PDF Viewer serviceUrl creation, follow the steps provided in the [link](https://ej2.syncfusion.com/documentation/pdfviewer/how-to/create-pdfviewer-service/)
 
@@ -78,7 +78,7 @@ var pdfviewer = new ej.pdfviewer.PdfViewer({
 });
 ```
 
-N> When configuring the server-backed PDF viewer, it's Essential<sup style="font-size:70%">&reg;</sup> to understand that there is no need to include the pdfium.js and pdfium.wasm files. Unlike the standalone PDF viewer, which relies on these files for local rendering, the server-backed PDF viewer fetches and renders PDFs directly from the server. Consequently, you can exclude the copy command for deployment process, as they are not required to load and display PDFs in this context.
+N> When configuring the server-backed PDF viewer, it's essential to understand that there is no need to include the pdfium.js and pdfium.wasm files. Unlike the standalone PDF viewer, which relies on these files for local rendering, the server-backed PDF viewer fetches and renders PDFs directly from the server. Consequently, you can exclude the copy command for deployment process, as they are not required to load and display PDFs in this context.
 
 N> For hosting the web service on the Linux platform, ensure to include the [SkiaSharp.NativeAssets.Linux](https://nuget.org/packages/SkiaSharp.NativeAssets.Linux/2.88.6). Additionally, for AWS environments, utilize the following packages:
 

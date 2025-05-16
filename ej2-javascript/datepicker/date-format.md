@@ -47,3 +47,38 @@ The following example demonstrates the DatePicker with the custom format (`yyyy-
 
 {% previewsample "page.domainurl/code-snippet/datepicker/getting-started-cs2" %}
 {% endif %}
+
+## Input formats 
+
+The [`inputFormats`](../api/datepicker) property in the DatePicker control allows users to enter dates in various formats, providing flexibility in date entry. This property accepts an array of predefined formats that the control recognizes, enabling users to input dates in different ways while ensuring they are parsed correctly.
+ 
+When the user types the date in any of the specified input formats, it will be automatically converted to the display format after pressing Enter, the Tab key, or when the input loses focus. This enhances the user experience by allowing intuitive data entry through various custom input formats.
+ 
+The following example demonstrates the DatePicker with multiple input formats.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/datepicker/getting-started-cs15/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/datepicker/getting-started-cs15/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/datepicker/getting-started-cs15" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/datepicker/getting-started-cs15/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/datepicker/getting-started-cs15/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/datepicker/getting-started-cs15" %}
+{% endif %}

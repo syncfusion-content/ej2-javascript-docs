@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Disable tile rendering in ##Platform_Name## Pdfviewer control
 
-To disable the tile rendering feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> PDF viewer control, you can use the **enableTileRendering** property. This property allows you to enable or disable the tile rendering feature, which is used to improve the performance of the PDF viewer when displaying large documents.
+To disable the tile rendering feature in the Syncfusion PDF viewer control, you can use the **enableTileRendering** property. This property allows you to enable or disable the tile rendering feature, which is used to improve the performance of the PDF viewer when displaying large documents.
 
 To disable the tile rendering feature, you can set the **enableTileRendering** property to `false`.
 

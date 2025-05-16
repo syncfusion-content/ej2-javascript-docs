@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Range navigator control
 
-This article describes the API migration process of Chart component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
+This article describes the API migration process of Chart component from Essential JS 1 to Essential JS 2.
 
 ## RangeNavigator
 
@@ -19,8 +19,8 @@ This article describes the API migration process of Chart component from Essenti
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
-<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
+<td><b>API in Essential JS 1</b></td>
+<td><b>API in Essential JS 2</b></td>
 </tr>
 
 <tr>
@@ -740,8 +740,8 @@ Not Applicable
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
-<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
+<td><b>API in Essential JS 1</b></td>
+<td><b>API in Essential JS 2</b></td>
 </tr>
 
 <tr>
@@ -973,8 +973,8 @@ range.appendTo('#element');
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
-<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
+<td><b>API in Essential JS 1</b></td>
+<td><b>API in Essential JS 2</b></td>
 </tr>
 
 <tr>
@@ -1272,8 +1272,8 @@ Not Applicable
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
-<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
+<td><b>API in Essential JS 1</b></td>
+<td><b>API in Essential JS 2</b></td>
 </tr>
 
 <tr>
@@ -1454,8 +1454,8 @@ range.appendTo('#element');
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
-<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
+<td><b>API in Essential JS 1</b></td>
+<td><b>API in Essential JS 2</b></td>
 </tr>
 
 <tr>
@@ -1487,8 +1487,8 @@ range.appendTo('#element');
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
-<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
+<td><b>API in Essential JS 1</b></td>
+<td><b>API in Essential JS 2</b></td>
 </tr>
 
 <tr>
@@ -1534,8 +1534,8 @@ range.export('JPEG', 'chart');
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
-<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
+<td><b>API in Essential JS 1</b></td>
+<td><b>API in Essential JS 2</b></td>
 </tr>
 
 <tr>

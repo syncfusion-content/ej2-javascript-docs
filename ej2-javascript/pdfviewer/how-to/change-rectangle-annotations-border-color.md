@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rectangle annotation in ##Platform_Name## Pdfviewer control|Syncfusion
+title: Change rectangle annotations border color in ##Platform_Name## Pdfviewer control | Syncfusion
 description: Learn here all about Change rectangle annotations border color in Syncfusion ##Platform_Name## Pdfviewer control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Change rectangle annotations border color 
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Change rectangle annotations border color in ##Platform_Name## Pdfviewer control
 
-The Essential<sup style="font-size:70%">&reg;</sup> JavaScript PDF Viewer supports customizing the rectangle annotation's property by using the [rectangleSettings](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#rectanglesettings) API.
+The Essential JavaScript PDF Viewer supports customizing the rectangle annotation's property by using the [rectangleSettings](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#rectanglesettings) API.
 
 **Step 1:** Follow the steps provided in the [link](https://ej2.syncfusion.com/documentation/pdfviewer/getting-started/) to create simple PDF Viewer sample.
 

@@ -112,6 +112,41 @@ Likewise, add the external script file to the `< iframe >` element using the [sc
 
 > You can also explore our [iframe in Javascript Rich Text Editor example](https://ej2.syncfusion.com/demos/#/bootstrap5/rich-text-editor/iframe.html) that shows how to render the iframe in Javascript Rich Text Editor.
 
+## Integrating Mention with Iframe
+
+Rich Text Editor supports advanced features such as Mention control, even when it is rendered inside an iframe. To enable mention functionality within the iframe-mode Rich Text Editor, you need to correctly set the [target](https://ej2.syncfusion.com/documentation/api/mention/#target) of the Mention control.
+
+Specifically, assign the `inputElement` of the Rich Text Editor to the target property of the Mention control. This ensures that the Mention popup is triggered correctly when the user types a designated character (such as @) inside the Rich Text Editor's editable area.
+
+Here's an example of how to integrate Mention with Iframe editor,
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/rich-text-editor/mention-iframe/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor/mention-iframe/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/mention-iframe" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/rich-text-editor/mention-iframe/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor/mention-iframe/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/mention-iframe" %}
+{% endif %}
+
 ## See also
 
 * [Implementing Inline Editing](./inline-editing)

@@ -10,10 +10,45 @@ let editor: RichTextEditor = new RichTextEditor({
     items: [ 'FontColor', 'BackgroundColor']
   },
   backgroundColor: {
-      modeSwitcher : true
+    default: '#00ffff',
+    columns: 5,
+    colorCode: {
+      Custom: [
+        '#ffff00',
+        '#00ff00',
+        '#00ffff',
+        '#ff00ff',
+        '#0000ff',
+        '#ff0000',
+        '#000080',
+        '#008080',
+        '#008000',
+        '#800080',
+        '#800000',
+        '#808000',
+        '#c0c0c0',
+        '#000000',
+        '',
+      ],
+    },
+    modeSwitcher : true
   },
   fontColor: {
-      modeSwitcher : true
+    default: '#c0c0c0',
+    columns: 2,
+    colorCode: {
+      Custom: [
+        '#ffff00',
+        '#008000',
+        '#800080',
+        '#800000',
+        '#808000',
+        '#c0c0c0',
+        '#000000',
+        '',
+      ],
+    },
+    modeSwitcher : true
   }
 });
 editor.appendTo('#editor');

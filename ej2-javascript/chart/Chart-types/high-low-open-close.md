@@ -3,7 +3,7 @@ layout: post
 title: High Low Open Close Chart in ##Platform_Name## Charts | Syncfusion
 description: Learn here all about High Low Open Close in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: High Low Open Close 
+control: High Low Open Close
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##

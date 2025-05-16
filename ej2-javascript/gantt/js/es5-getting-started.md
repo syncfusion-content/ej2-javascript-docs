@@ -89,6 +89,7 @@ The below html code example shows the minimal dependency for Gantt.
             <link href="resources/buttons/styles/material.css" rel="stylesheet" type="text/css"/>
             <link href="resources/popups/styles/material.css" rel="stylesheet" type="text/css"/>
             <link href="resources/navigations/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/notifications/styles/material.css" rel="stylesheet" type="text/css"/>
             <link href="resources/lists/styles/material.css" rel="stylesheet" type="text/css"/>
             <link href="resources/dropdowns/styles/material.css" rel="stylesheet" type="text/css"/>
             <link href="resources/inputs/styles/material.css" rel="stylesheet" type="text/css"/>
@@ -106,6 +107,7 @@ The below html code example shows the minimal dependency for Gantt.
             <script src="resources/scripts/ej2-buttons.min.js" type="text/javascript"></script>
             <script src="resources/scripts/ej2-popups.min.js" type="text/javascript"></script>
             <script src="resources/scripts/ej2-navigations.min.js" type="text/javascript"></script>
+            <script src="resources/scripts/ej2-notifications.min.js" type="text/javascript"></script>
             <script src="resources/scripts/ej2-lists.min.js" type="text/javascript"></script>
             <script src="resources/scripts/ej2-dropdowns.min.js" type="text/javascript"></script>
             <script src="resources/scripts/ej2-inputs.min.js" type="text/javascript"></script>
@@ -160,6 +162,7 @@ The below html code example shows the dependency of gantt.
             <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css"/>
             <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-popups/styles/material.css" rel="stylesheet" type="text/css"/>
             <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-navigations/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-notifications/styles/material.css" rel="stylesheet" type="text/css"/>
             <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-lists/styles/material.css" rel="stylesheet" type="text/css"/>
             <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-dropdowns/styles/material.css" rel="stylesheet" type="text/css"/>
             <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-inputs/styles/material.css" rel="stylesheet" type="text/css"/>
@@ -177,6 +180,7 @@ The below html code example shows the dependency of gantt.
             <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
             <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
             <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-navigations/dist/global/ej2-navigations.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-notifications/dist/global/ej2-notifications.min.js" type="text/javascript"></script>
             <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-lists/dist/global/ej2-lists.min.js" type="text/javascript"></script>
             <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-dropdowns/dist/global/ej2-dropdowns.min.js" type="text/javascript"></script>
             <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>

@@ -12,7 +12,7 @@ let filemanagerInstance: FileManager = new FileManager({
         downloadUrl: hostUrl + 'api/FileManager/Download'
     },
     // Navigation Pane settings customization
-    navigationPaneSettings: { maxWidth: '850px', minWidth: '140px', visible: true },
+    navigationPaneSettings: { maxWidth: '850px', minWidth: '140px', visible: true, sortOrder: 'Ascending' },
     height: '380px'
 });
 

@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Style Encapsulation in ##Platform_Name## Rich Text Editor control
 
-Style encapsulation determines how styles are applied within the Syncfusion<sup style="font-size:70%">&reg;</sup> **Rich Text Editor**. This feature helps control whether the component's content inherits global styles from the application or remains isolated. 
+Style encapsulation determines how styles are applied within the Syncfusion **Rich Text Editor**. This feature helps control whether the component's content inherits global styles from the application or remains isolated. 
 
 ## Encapsulation modes
 
-Syncfusion's<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Rich Text Editor offers two rendering modes for controlling style encapsulation:
+Syncfusion's ##Platform_Name## Rich Text Editor offers two rendering modes for controlling style encapsulation:
 
 1. **Encapsulated Mode (Iframe Mode)**  
    - When enabled, the Rich Text Editor is rendered inside an `<iframe>`.  
@@ -61,3 +61,7 @@ Below is a sample implementation of both **encapsulated** and **non-encapsulated
 
 {% previewsample "page.domainurl/code-snippet/rich-text-editor/style-encapsulation-cs1" %}
 {% endif %}
+
+## See also
+
+* [Iframe Editor](./iframe)

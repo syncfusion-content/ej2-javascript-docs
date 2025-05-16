@@ -47,3 +47,38 @@ The following example demonstrates the DateTimePicker with the custom format (`y
 
 {% previewsample "page.domainurl/code-snippet/datetimepicker/getting-started-cs3" %}
 {% endif %}
+
+## Input formats
+
+The [`inputFormats`](../api/datetimepicker) property in the DatetimePicker control allows users to enter dates and times in various formats, providing flexibility in date and time entry. This property accepts an array of predefined formats that the control recognizes, enabling users to input dates in different ways while ensuring they are parsed correctly.
+ 
+When the user types the date and time in any of the specified input formats, it will be automatically converted to the display format after pressing Enter, the Tab key, or when the input loses focus. This enhances the user experience by allowing intuitive data entry through various custom input formats.
+
+The following example demonstrates the DateTimePicker with multiple input formats.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/datetimepicker/getting-started-cs13/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/datetimepicker/getting-started-cs13/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/datetimepicker/getting-started-cs13" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/datetimepicker/getting-started-cs13/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/datetimepicker/getting-started-cs13/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/datetimepicker/getting-started-cs13" %}
+{% endif %}

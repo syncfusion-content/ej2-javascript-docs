@@ -1,3 +1,25 @@
+// Define the toolbar settings
+var toolbarSettings = {
+        items: [
+          'Bold',
+          'Italic',
+          'Underline',
+          '|',
+          'Formats',
+          'Alignments',
+          'OrderedList',
+          'UnorderedList',
+          '|',
+          'CreateLink',
+          'Image',
+          '|',
+          'SourceCode',
+          '|',
+          'Undo',
+          'Redo',
+        ],
+};
+      
 // Initialize Rich Text Editor component
 var editor = new ej.richtexteditor.RichTextEditor({
         toolbarSettings: toolbarSettings,
@@ -16,4 +38,7 @@ function getEditorContent() {
 }
 
 // Add event listener to the button
-document.getElementById('getValueBtn').addEventListener('click', getEditorContent);
+document
+.getElementById('getValueBtn')
+.addEventListener('click', getEditorContent);
+      

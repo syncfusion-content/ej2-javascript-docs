@@ -522,7 +522,7 @@ The sample below demonstrates the Rich Text Editor component rendered in German 
 {% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs4" %}
 {% endif %}
 
-## Enable Right-to-Left (RTL) Mode
+## Enable Right-to-Left (RTL) mode
 
 The [enableRtl](../api/rich-text-editor/#enablertl) property specifies the direction of the Rich Text Editor component. This property can be enabled for writing systems that require right-to-left direction, such as Arabic and Hebrew.
 
@@ -538,7 +538,7 @@ When RTL (right-to-left) support is enabled, the `e-rtl` class will be added to 
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/rich-text-editor/getting-started-cs5/index.ts %}
 {% endhighlight %}

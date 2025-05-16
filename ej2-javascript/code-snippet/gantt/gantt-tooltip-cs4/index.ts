@@ -1,6 +1,6 @@
 
 import { Gantt, Selection, Toolbar, DayMarkers, Edit, Filter } from '@syncfusion/ej2-gantt';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 Gantt.Inject(Selection, Toolbar, DayMarkers, Edit, Filter);
 
 (<{ bgColor?: Function }>window).bgColor = (value: string, date: string): string => {
@@ -42,13 +42,13 @@ let gantt: Gantt = new Gantt({
     dataSource: GanttData,
     allowSorting: true,
     taskFields: {
-        id: 'TaskID',
+        id: 'TaskId',
         name: 'TaskName',
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
         dependency: 'Predecessor',
-        child: 'subtasks'
+        parentID: 'ParentId',
     },
     splitterSettings: {
         columnIndex: 1

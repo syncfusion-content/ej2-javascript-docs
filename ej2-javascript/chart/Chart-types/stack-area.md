@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stacked Area Chart in ##Platform_Name## Charts | Syncfusion
-description: Learn here all about Stacked Area in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
+description: Learn here all about Stacked area in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Stacked Area 
 publishingplatform: ##Platform_Name##

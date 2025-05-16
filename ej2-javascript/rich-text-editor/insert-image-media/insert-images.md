@@ -17,8 +17,6 @@ Rich Text Editor allows to insert images in your content from online sources as 
 
 You can add an `Image` tool in the Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#items) property.
 
-> Rich Text Editor features are segregated into individual feature-wise modules. To use image tool, inject image module using the `RichTextEditor.Inject(Image)`.
-
 To configure the `Image` toolbar item, refer to the below code.
 
 {% if page.publishingplatform == "typescript" %}
@@ -350,7 +348,7 @@ You can allow the specific images alone to be uploaded using the the allowedType
 ```ts
 
     insertImageSettings: {
-      allowedTypes: ['.jpg']
+      allowedTypes: ['.jpg', '.png', '.jpeg']
     }
 
 ```
@@ -437,5 +435,5 @@ By configuring these options in the [quickToolbarSettings](https://helpej2.syncf
 
 ## See also
 
-* [Image Quick Toolbar](../toolbar/quick-toolbar)
+* [Image Quick Toolbar](../toolbar/quick-toolbar#image-quick-toolbar)
 * [Hyperlink Management](../link)

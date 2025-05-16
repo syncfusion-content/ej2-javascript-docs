@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Pdfviewer control
 
-This article describes API migration process of PDF Viewer component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
+This article describes API migration process of PDF Viewer component from Essential JS 1 to Essential JS 2.
 
 ## Properties
 
 <!-- markdownlint-disable MD010 -->
 
-| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |---|---|---|
 | Localization | **Property**: *locale* <br/>`$("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', locale:"es-ES" });` | **Property**: *locale* <br/>`var pdfviewer = new ej.pdfviewer.PdfViewer({locale: 'es-ES',                    serviceUrl:https://services.syncfusion.com/js/production/api/pdfviewer'}); ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch,ej.pdfviewer.Navigation,ej.pdfviewer.Print);   pdfviewer.appendTo('#PdfViewer');`|
 |To set the PDF document path for initial loading | **Property**: *documentPath* <br/>`$("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', documentPath: "HTTP Succinctly.pdf" });` | **Property**: *documentPath* <br/>`var pdfviewer = new ej.pdfviewer.PdfViewer({ documentPath: "PDF_Succinctly.pdf",                    serviceUrl:'https://services.syncfusion.com/js/production/api/pdfviewer'}); ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch,ej.pdfviewer.Navigation,ej.pdfviewer.Print);pdfviewer.appendTo('#PdfViewer');`|
@@ -41,7 +41,7 @@ This article describes API migration process of PDF Viewer component from Essent
 
 <!-- markdownlint-disable MD010 -->
 
-| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 | Downloads the PDF document being loaded in the ejPdfViewer control | **Property**: *download()* <br/>`var pdfviewerObj = $("#viewer").data("ejPdfViewer");pdfviewerObj.download();` | **Property**: *download()* <br/>`var pdfviewer = new ej.pdfviewer.PdfViewer({locale: 'es-ES',               serviceUrl:https://services.syncfusion.com/js/production/api/pdfviewer'}); ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch,ej.pdfviewer.Navigation,ej.pdfviewer.Print);pdfviewer.appendTo('#PdfViewer');pdfviewer.download();`|
 | Scales the page to fit the page in the container in the control | **Property**: *fitToPage()* <br/>`var pdfviewerObj = $("#viewer").data("ejPdfViewer");pdfviewerObj.fitToPage();` | **Property**: *fitToPage()* <br/>`var pdfviewer = new ej.pdfviewer.PdfViewer({locale: 'es-ES',                    serviceUrl:https://services.syncfusion.com/js/production/api/pdfviewer'}); ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch,ej.pdfviewer.Navigation,ej.pdfviewer.Print);pdfviewer.appendTo('#PdfViewer');pdfviewer.magnification.fitToPage();`|
@@ -68,7 +68,7 @@ This article describes API migration process of PDF Viewer component from Essent
 
 <!-- markdownlint-disable MD010 -->
 
-| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 |Triggers when the PDF document gets loaded and is ready to view in the Control| **Property**: *documentLoad* <br/>`$(function () {var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', documentLoad:"documentLoaded" });});function documentLoaded(args) {alert("The document" +args.fileName + "is ready to view");}` | **Property**: *documentLoad* <br/>`var pdfviewer = new ej.pdfviewer.PdfViewer({ serviceUrl:https://services.syncfusion.com/js/production/api/pdfviewer',documentLoad: function () {alert("The PDF document is Loaded")}}); ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch,ej.pdfviewer.Navigation,ej.pdfviewer.Print);pdfviewer.appendTo('#PdfViewer');`|
 |Triggers when hyperlink in the PDF document is clicked| **Property**: *hyperlinkClick* <br/>`$(function () {var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', hyperlinkClick:"onHyperlinkClicked" });});function onHyperlinkClicked(args) {alert(""The hyperlink is " + args.hyperlink");}` | **Property**: *hyperlinkClick* <br/>`var pdfviewer = new ej.pdfviewer.PdfViewer({ serviceUrl:https://services.syncfusion.com/js/production/api/pdfviewer',hyperlinkClick: function () {alert("The hyperlink is clicked")}}); ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch,ej.pdfviewer.Navigation,ej.pdfviewer.Print);pdfviewer.appendTo('#PdfViewer');`|

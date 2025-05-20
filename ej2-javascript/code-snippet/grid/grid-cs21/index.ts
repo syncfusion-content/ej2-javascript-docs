@@ -10,12 +10,12 @@ let grid: Grid = new Grid({
     enableHover: false,
     created: created,
     load: load,
-    editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Batch'},
+    editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Batch' },
     toolbar: ['Add', 'Delete', 'Update', 'Cancel'],
     columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', isPrimaryKey: true, validationRules: { required: true, number: true }, width: 120},
-        { field: 'CustomerID', headerText: 'Customer ID', width: 120, validationRules: { required: true }},
-        { field: 'Freight', headerText: 'Freight', format: 'C2', width: 150, textAlign: 'Right',validationRules: { min:1,max:1000} },
+        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', isPrimaryKey: true, validationRules: { required: true, number: true }, width: 120 },
+        { field: 'CustomerID', headerText: 'Customer ID', width: 120, validationRules: { required: true } },
+        { field: 'Freight', headerText: 'Freight', format: 'C2', width: 150, textAlign: 'Right', validationRules: { min: 1, max: 1000 } },
         { field: 'OrderDate', headerText: 'Order Date', editType: 'datepickeredit', format: 'yMd', width: 150 },
         { field: 'ShipCountry', headerText: 'Ship Country', width: 150 }
     ],
@@ -24,35 +24,34 @@ let grid: Grid = new Grid({
 grid.appendTo('#Grid');
 
 function created() {
-    grid.getContentTable().addEventListener('click', function(args: ClickEventArgs) {
+    grid.getContentTable().addEventListener('click', function (args: ClickEventArgs) {
         if ((args.target as HTMLElement).classList.contains('e-rowcell')) {
             grid.editModule.editCell(parseInt((args.target as HTMLElement).getAttribute('index') as string),
-              grid.getColumnByIndex(parseInt((args.target as HTMLElement).getAttribute('data-colindex') as string)).field);
+                grid.getColumnByIndex(parseInt((args.target as HTMLElement).getAttribute('aria-colindex') as string) - 1).field);
         }
     });
 }
 
 function load() {
-    grid.element.addEventListener('keydown', function(e: KeyboardEventArgs) {
+    grid.element.addEventListener('keydown', function (e: KeyboardEventArgs) {
         let closesttd = (e.target as HTMLElement).closest('td');
         if (e.keyCode === 39 && !isNullOrUndefined((closesttd as HTMLTableCellElement).nextSibling as HTMLElement)) {
             editACell((closesttd as HTMLTableCellElement).nextSibling as HTMLElement);
         }
         if (e.keyCode === 37 && !isNullOrUndefined((closesttd as HTMLTableCellElement).previousSibling as HTMLElement) &&
             !grid.getColumnByIndex(
-                parseInt(((closesttd as HTMLTableCellElement).previousSibling as HTMLElement).getAttribute('data-colindex') as string)).isPrimaryKey)
-        {
-             editACell((closesttd as HTMLTableCellElement).previousSibling as HTMLElement);
+                parseInt(((closesttd as HTMLTableCellElement).previousSibling as HTMLElement).getAttribute('aria-colindex') as string) - 1).isPrimaryKey) {
+            editACell((closesttd as HTMLTableCellElement).previousSibling as HTMLElement);
         }
         if (e.keyCode === 40 && !isNullOrUndefined(((closesttd as HTMLTableCellElement).closest('tr') as HTMLTableRowElement).nextSibling)) {
             editACell(
                 (((closesttd as HTMLTableCellElement).closest('tr') as HTMLTableRowElement).nextSibling as HTMLElement).querySelectorAll('td')[
-                parseInt((closesttd as HTMLTableCellElement).getAttribute('data-colindex') as string)]);
+                parseInt((closesttd as HTMLTableCellElement).getAttribute('aria-colindex') as string) - 1]);
         }
-        if ( e.keyCode === 38 && !isNullOrUndefined(((closesttd as HTMLTableCellElement).closest('tr')as HTMLTableRowElement).previousSibling)) {
+        if (e.keyCode === 38 && !isNullOrUndefined(((closesttd as HTMLTableCellElement).closest('tr') as HTMLTableRowElement).previousSibling)) {
             editACell(
                 (((closesttd as HTMLTableCellElement).closest('tr') as HTMLTableRowElement).previousSibling as HTMLElement).querySelectorAll('td')[
-                 parseInt((closesttd as HTMLTableCellElement).getAttribute('data-colindex')as string)]);
+                parseInt((closesttd as HTMLTableCellElement).getAttribute('aria-colindex') as string) - 1]);
         }
     });
 }
@@ -60,5 +59,5 @@ function load() {
 function editACell(args: HTMLElement) {
     grid.editModule.editCell(
         parseInt(args.getAttribute('index') as string),
-        grid.getColumnByIndex(parseInt(args.getAttribute('data-colindex') as string)).field);
+        grid.getColumnByIndex(parseInt(args.getAttribute('aria-colindex') as string) - 1).field);
 }

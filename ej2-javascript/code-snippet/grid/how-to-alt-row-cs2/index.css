@@ -12,6 +12,7 @@
   top: 45%;
   width: 30%;
 }
-.e-grid td.e-selectionbackground {
-    background-color: #f9920b;
+
+.e-grid .e-row .e-selectionbackground {
+  background-color: #f9920b;
 }

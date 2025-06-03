@@ -2,7 +2,7 @@
 layout: post
 title: Filtering in ##Platform_Name## Grid control | Syncfusion
 description: Learn here all about Filtering in Syncfusion ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more.
-platform: ej2-javascript
+platform: ej2-javascript1
 control: Filtering 
 publishingplatform: ##Platform_Name##
 documentation: ug
@@ -15,7 +15,7 @@ Filtering is a powerful feature in the Syncfusion<sup style="font-size:70%">&reg
 
 To use filter, inject the [Filter](../../api/grid/filter/) module in the grid.
 
-To enable filtering in the Grid, you need to set the [allowFiltering](../../api/grid/#allowfiltering) property of the Grid control to true. Once filtering is enabled, you can configure various filtering options through the [filterSettings](../../api/grid/filterSettings/) property of the Grid control. This property allows you to define the behavior and appearance of the filter.
+To enable filtering in the Grid, you need to set the [allowFiltering](../../api/grid#allowfiltering) property of the Grid control to true. Once filtering is enabled, you can configure various filtering options through the [filterSettings](../../api/grid/filterSettings/) property of the Grid control. This property allows you to define the behavior and appearance of the filter.
 
 Here is an example that demonstrates the default filtering feature of the grid:
 
@@ -263,7 +263,7 @@ To achieve this functionality:
 
 {% if page.publishingplatform == "typescript" %}
 
-1. Render [DropDownList](https://ej2.syncfusion.com/documentation/drop-down-list/getting-started) in the `FilterBarTemplate` for the enum-type column.
+1. Render [DropDownList](https://ej2.syncfusion.com/documentation/drop-down-list/getting-started/) in the `FilterBarTemplate` for the enum-type column.
 
 {% elsif page.publishingplatform == "javascript" %}
 

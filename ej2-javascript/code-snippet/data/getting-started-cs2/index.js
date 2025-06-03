@@ -1,16 +1,18 @@
+let template = '<tr><td>${OrderID}</td><td>${CustomerID}</td><td>${EmployeeID}</td><td>${ShipCity}</td><td>${ShipCountry}</td></tr>';
 
-var template = '<tr><td>${OrderID}</td><td>${CustomerID}</td><td>${EmployeeID}</td></tr>'
+let compiledFunction = ej.base.compile(template);
 
-var compiledFunction = ej.base.compile(template);
+let table = document.getElementById('datatable');
 
-const SERVICE_URI =  'https://services.odata.org/V3/Northwind/Northwind.svc/Orders/';
+const datamanger = new ej.data.DataManager({
+    // Use remote server host and port instead of 'xxxx'.
+    url: "https://localhost:xxxx/api/Orders", 
+    adaptor: new ej.data.ODataAdaptor() 
+});
 
-var table = (document.getElementById('datatable'));
+datamanger.executeQuery(new ej.data.Query().take(8)).then((e) => {
 
-new ej.data.DataManager({ url: SERVICE_URI, adaptor: new ej.data.ODataAdaptor })
-    .executeQuery(new ej.data.Query().take(8))
-    .then((e) => {
-        (e.result.items).forEach((data) => {
-            table.appendChild(compiledFunction(data)[0]);
-        });
+    e.result.result.forEach((data) => {
+        table.appendChild(compiledFunction(data)[0]);
     });
+});

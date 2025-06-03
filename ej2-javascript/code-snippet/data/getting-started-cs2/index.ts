@@ -1,22 +1,21 @@
-
-
-import { DataManager, Query, ReturnOption, ODataAdaptor } from '@syncfusion/ej2-data';
+import { DataManager, Query, ODataAdaptor, ReturnOption } from '@syncfusion/ej2-data';
 import { compile } from '@syncfusion/ej2-base';
 
-let template: string = '<tr><td>${OrderID}</td><td>${CustomerID}</td><td>${EmployeeID}</td></tr>';
+let template: string = '<tr><td>${OrderID}</td><td>${CustomerID}</td><td>${EmployeeID}</td><td>${ShipCity}</td><td>${ShipCountry}</td></tr>';
 
 let compiledFunction: Function = compile(template);
 
-const SERVICE_URI: string = 'https://services.odata.org/V3/Northwind/Northwind.svc/Orders/';
-
 let table: HTMLElement = (<HTMLElement>document.getElementById('datatable'));
 
-new DataManager({ url: SERVICE_URI, adaptor: new ODataAdaptor }).executeQuery(new Query().take(8)).then((e: ReturnOption) => {
-
-        (<Object[]>e.result.items).forEach((data: Object) => {
-            table.appendChild(compiledFunction(data)[0]);
-        });
+const datamanger = new DataManager({
+    // Use remote server host and port instead of 'xxxx'.  
+    url: "https://localhost:xxxx/api/Orders", 
+    adaptor: new ODataAdaptor() 
 });
 
+datamanger.executeQuery(new Query().take(8)).then((e: ReturnOption) => {
 
-
+    (<Object[]>e.result.result).forEach((data: Object) => {
+        table.appendChild(compiledFunction(data)[0]);
+    });
+});

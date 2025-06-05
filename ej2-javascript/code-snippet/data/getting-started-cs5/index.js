@@ -1,4 +1,3 @@
-
 var template = '<tr><td>${OrderID}</td><td>${CustomerID}</td><td>${EmployeeID}</td></tr>';
 var compiledFunction = ej.base.compile(template);
 

@@ -11,8 +11,7 @@ domainurl: ##DomainURL##
 
 # Migrating from mxGraph to Syncfusion® JavaScript Diagram control
 
-[mxGraph](https://github.com/jgraph/mxgraph) was once one of the most popular client-side diagramming libraries for JavaScript. However, with its official end-of-life status since 2020, the need for modern alternatives has grown. Syncfusion® JavaScript Diagram presents a powerful and feature-rich option with robust features, better performance, and extensive documentation. 
-This guide will walk you through setting up the Syncfusion® JavaScript Diagram, and migrating typical diagramming scenarios from `mxGraph` to this platform. You’ll also learn how to convert existing `mxGraph` diagrams into an EJ2-compatible format and continue building with a supported solution.
+[mxGraph](https://github.com/jgraph/mxgraph) was once one of the most popular client-side diagramming libraries for JavaScript. However, with its official end-of-life status since 2020, the need for modern alternatives has grown. Syncfusion® JavaScript Diagram presents a powerful and feature-rich option with robust features, better performance, and extensive documentation. This guide will walk you through setting up the Syncfusion® JavaScript Diagram, and migrating typical diagramming scenarios from `mxGraph` to this platform. You’ll also learn how to convert existing `mxGraph` diagrams into an EJ2-compatible format and continue building with a supported solution.
 
 ## Why Switch to Syncfusion® JavaScript Diagram from mxGraph
 
@@ -44,6 +43,8 @@ Let's say you have diagram data stored as `mxGraph` XML format. To migrate this 
 {% endhighlight %}
 {% endtabs %}
 
+{% previewsample "page.domainurl/code-snippet/diagram/mxgraph-to-ej2-migration" %}
+
 Next, let's closely examine how the `mxGraph` diagram elements are rendered and how you can achieve the same output using Syncfusion® JavaScript Diagram.
 
 ## Migrating from mxGraph to Syncfusion® JavaScript Diagram control
@@ -71,7 +72,7 @@ graph.getModel().endUpdate();
 In Syncfusion® JavaScript Diagram, you create nodes by specifying their properties such as position and size.
 
 {% tabs %}
-{% highlight js tabtitle="Syncfusion®" %}
+{% highlight js tabtitle="Syncfusion" %}
 const diagram = new ej.diagrams.Diagram({
   width: '100%',
   height: '600px',
@@ -103,7 +104,7 @@ const e1 = graph.insertEdge(parent, null, '', v1, v2);
 In Syncfusion® JavaScript Diagram, you create connectors by specifying the source and target node IDs.
 
 {% tabs %}
-{% highlight js tabtitle="Syncfusion®" %}
+{% highlight js tabtitle="Syncfusion" %}
 const nodes = [
   { id: 'node1', offsetX: 60, offsetY: 35, width: 80, height: 30, annotations: [{ content: 'Node1' }] },
   { id: 'node2', offsetX: 200, offsetY: 150, width: 80, height: 30, annotations: [{ content: 'Node2' }] }
@@ -134,7 +135,7 @@ graph.getModel().setStyle(vertex, mxStyleRegistry.getName(style));
 In Syncfusion® JavaScript Diagram, annotations are defined within the annotations array of a node, allowing for straightforward customization:
 
 {% tabs %}
-{% highlight js tabtitle="Syncfusion®" %}
+{% highlight js tabtitle="Syncfusion" %}
 const node = {
   id: 'decisionNode',
   offsetX: 300,
@@ -175,7 +176,7 @@ port.geometry.relative = true;
 In Syncfusion® JavaScript Diagram, ports are similarly enabled by defining them within a node, specifying offsets and shapes.
 
 {% tabs %}
-{% highlight js tabtitle="Syncfusion®" %}
+{% highlight js tabtitle="Syncfusion" %}
 var diagram = new ej.diagrams.Diagram({
   width: '100%',
   height: '600px',
@@ -219,7 +220,7 @@ layout.execute(parent);
 In Syncfusion® JavaScript Diagram, layouts are defined in the diagram using `layout` property.
 
 {% tabs %}
-{% highlight js tabtitle="Syncfusion®" %}
+{% highlight js tabtitle="Syncfusion" %}
 ej.diagrams.Diagram.Inject(ej.diagrams.HierarchicalTree);
 var diagram = new ej.diagrams.Diagram({
   width: '100%',
@@ -279,7 +280,7 @@ function loadGraph(graph, xml) {
 In Syncfusion® JavaScript Diagram, diagram states are saved and loaded using JSON strings for persistence.
 
 {% tabs %}
-{% highlight js tabtitle="Syncfusion®" %}
+{% highlight js tabtitle="Syncfusion" %}
 const savedDiagram = diagram.saveDiagram(); // returns JSON string
 diagram.loadDiagram(savedDiagram); // restores diagram
 {% endhighlight %}
@@ -303,7 +304,7 @@ graph.addListener(mxEvent.CLICK, function(sender, evt) {
 In Syncfusion® JavaScript Diagram, event handling is configured with function callbacks in the diagram.
 
 {% tabs %}
-{% highlight js tabtitle="Syncfusion®" %}
+{% highlight js tabtitle="Syncfusion" %}
 var diagram = new ej.diagrams.Diagram({
   width: '100%',
   height: '600px',
@@ -336,7 +337,7 @@ graph.view.gridColor = '#e0e0e0';
 In Syncfusion® JavaScript Diagram, grid lines are configured using the [snapSettings](https://ej2.syncfusion.com/javascript/documentation/api/diagram/#snapsettings) property, allowing for a straightforward setup while also supporting additional customization options that are self-explanatory:
 
 {% tabs %}
-{% highlight js tabtitle="Syncfusion®" %}
+{% highlight js tabtitle="Syncfusion" %}
 var diagram = new ej.diagrams.Diagram({
     width: '100%', height: '600px',
     snapSettings: {
@@ -355,7 +356,7 @@ diagram.appendTo('#element');
 To use rulers in `mxGraph`, you'll need to undertake custom development since it lacks native support for this feature. In contrast, Syncfusion® Diagram provides built-in ruler support that can be easily activated with a straightforward property setting:
 
 {% tabs %}
-{% highlight js tabtitle="Syncfusion®" %}
+{% highlight js tabtitle="Syncfusion" %}
 var diagram = new ej.diagrams.Diagram({
     width: '100%', height: '600px',
     rulerSettings: { showRulers: true }
@@ -380,7 +381,7 @@ graph.container.style.backgroundColor = '#f5f5f5';
 In Syncfusion® JavaScript Diagram (ej2), the [pageSettings](https://ej2.syncfusion.com/javascript/documentation/api/diagram/#pagesettings) property provides a straightforward way to configure page settings, including support for multiple pages and showing page breaks.
 
 {% tabs %}
-{% highlight js tabtitle="Syncfusion®" %}
+{% highlight js tabtitle="Syncfusion" %}
 var diagram = new ej.diagrams.Diagram({
     width: '100%', height: '600px',
     pageSettings: {
@@ -411,7 +412,7 @@ graph.container.style.overflow = 'auto';
 In Syncfusion® JavaScript Diagram, the [scrollSettings](https://ej2.syncfusion.com/javascript/documentation/api/diagram/scrollSettingsModel/) property provides detailed control over scroll behavior, including auto-scroll, scroll limits, and scroll frequency.
 
 {% tabs %}
-{% highlight js tabtitle="Syncfusion®" %}
+{% highlight js tabtitle="Syncfusion" %}
 var diagram = new ej.diagrams.Diagram({
 width: '100%', height: '600px',
 scrollSettings: {
@@ -430,7 +431,7 @@ diagram.appendTo('#element');
 Unlike Syncfusion® JavaScript Diagram, `mxGraph` does not offer a built-in SymbolPalette UI component. You must manually build a palette using HTML elements, style them, and use mxUtils.makeDraggable() for drag-and-drop integration. Below is an example of easily creating a palette with Syncfusion® JavaScript Diagram.
 
 {% tabs %}
-{% highlight js tabtitle="Syncfusion®" %}
+{% highlight js tabtitle="Syncfusion" %}
 const palette = new ej.diagrams.SymbolPalette({
   palettes: [{
     id: 'flowShapes',
@@ -470,7 +471,7 @@ graph.zoomTo(1.5); // 150% zoom
 With Syncfusion® JavaScript Diagram, you can easily control zooming using built-in methods or through the user interface.
 
 {% tabs %}
-{% highlight js tabtitle="Syncfusion®" %}
+{% highlight js tabtitle="Syncfusion" %}
 // Zoom in
 diagram.zoomTo({ type: 'ZoomIn', zoomFactor: 0.2 });
 
@@ -498,7 +499,7 @@ graph.panningHandler.useLeftButtonForPanning = true;
 In Syncfusion® JavaScript Diagram, to enable panning, you need to set the tool property to include ZoomPan:
 
 {% tabs %}
-{% highlight js tabtitle="Syncfusion®" %}
+{% highlight js tabtitle="Syncfusion" %}
 // Enable panning
 diagram.tool = ej.diagrams.DiagramTools.ZoomPan;
 {% endhighlight %}
@@ -520,7 +521,7 @@ undoManager.redo();
 Syncfusion® JavaScript Diagram provides built-in undo and redo commands, requiring no additional setup:
 
 {% tabs %}
-{% highlight js tabtitle="Syncfusion®" %}
+{% highlight js tabtitle="Syncfusion" %}
 diagram.undo();
 diagram.redo();
 {% endhighlight %}
@@ -528,7 +529,7 @@ diagram.redo();
 
 In addition to the interactions showcased above, Syncfusion® JavaScript Diagram supports many more intuitive and powerful interactions—such as snapping, constraints, drag-and-drop from palettes, tooltips, and context menus. All of these can be enabled or customized with minimal configuration, making it easy to deliver a seamless and interactive diagramming experience.
 
-N > To know more about the Interactions in Syncfusion® JavaScript Diagram, refer to the [documentation](https://ej2.syncfusion.com/javascript/documentation/diagram/interaction).
+N> To know more about the Interactions in Syncfusion® JavaScript Diagram, refer to the [documentation](https://ej2.syncfusion.com/javascript/documentation/diagram/interaction).
 
 ### Keyboard Interactions
 
@@ -536,22 +537,22 @@ Keyboard shortcuts enhance user productivity by allowing quick access to common 
 
 The following table compares common keyboard shortcuts and their implementations in `mxGraph` and Syncfusion® JavaScript Diagram:
 
-| **Action**          | **mxGraph** Implementation                                                       | **Syncfusion® JavaScript Diagram** Implementation                                            |                                          |
-| ------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ---------------------------------------- |
-| **Select All**      | Requires custom key handler setup using `mxKeyHandler` or `mxDefaultKeyHandler`  | Built-in support: `Ctrl + A` selects all nodes/connectors                             |                                          |
-| **Copy**            | Custom implementation needed using `mxClipboard.copy` and key handler            | Built-in support: `Ctrl + C` copies selected elements                                 |                                          |
-| **Paste**           | Custom implementation needed using `mxClipboard.paste` and key handler           | Built-in support: `Ctrl + V` pastes copied elements                                   |                                          |
-| **Cut**             | Custom implementation needed using `mxClipboard.cut` and key handler             | Built-in support: `Ctrl + X` cuts selected elements                                   |                                          |
-| **Undo**            | Requires setting up `mxUndoManager` and binding `Ctrl + Z` manually              | Built-in support: `Ctrl + Z` undoes the last action                                   |                                          |
-| **Redo**            | Requires setting up `mxUndoManager` and binding `Ctrl + Y` manually              | Built-in support: `Ctrl + Y` redoes the last undone action                            |                                          |
-| **Delete**          | Custom implementation needed to bind `Delete` key to remove selected elements    | Built-in support: `Delete` key removes selected elements                              |                                          |
-| **Label Editing**   | Requires custom event handling for label editing initiation and termination      | Built-in support: `F2` to start editing, `Esc` to cancel                              |                                          |
-| **Zoom In/Out**     | Custom implementation needed to bind `Ctrl + MouseWheel` for zooming             | Built-in support: `Ctrl + MouseWheel` zooms in/out                                    |                                          |
-| **Nudge Elements**  | Custom implementation needed to move elements with arrow keys                    | Built-in support: Arrow keys move elements by 1px; `Shift + Arrow` moves by 5px       |                                          |
-| **Group/Ungroup**   | Custom implementation needed to group/ungroup elements with key bindings         | Built-in support: `Ctrl + G` to group, `Ctrl + Shift + U` to ungroup                  |                                          |
-| **Rotate Elements** | Custom implementation needed to rotate elements with key bindings                | Built-in support: `Ctrl + R` rotates clockwise, `Ctrl + L` rotates counter-clockwise  |                                          |
-| **Flip Elements**   | Custom implementation needed to flip elements with key bindings                  | Built-in support: `Ctrl + H` flips horizontally, `Ctrl + J` flips vertically          |                                          |
-| **Align Text** | Custom implementation needed to align text with key bindings | Built-in support: Use `Ctrl + Shift + L/C/R/J` for horizontal and `Ctrl + Shift + E/M/V` for vertical text alignment. |
+| Action            | mxGraph Implementation                                                       | Syncfusion® JavaScript Diagram Implementation                                            |
+|-------------------|--------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| **Select All**     | Requires custom key handler setup using `mxKeyHandler` or `mxDefaultKeyHandler`  | Built-in support: `Ctrl + A` selects all nodes/connectors                              |
+| **Copy**           | Custom implementation needed using `mxClipboard.copy` and key handler            | Built-in support: `Ctrl + C` copies selected elements                                   |
+| **Paste**          | Custom implementation needed using `mxClipboard.paste` and key handler           | Built-in support: `Ctrl + V` pastes copied elements                                     |
+| **Cut**            | Custom implementation needed using `mxClipboard.cut` and key handler             | Built-in support: `Ctrl + X` cuts selected elements                                     |
+| **Undo**           | Requires setting up `mxUndoManager` and binding `Ctrl + Z` manually              | Built-in support: `Ctrl + Z` undoes the last action                                     |
+| **Redo**           | Requires setting up `mxUndoManager` and binding `Ctrl + Y` manually              | Built-in support: `Ctrl + Y` redoes the last undone action                              |
+| **Delete**         | Custom implementation needed to bind `Delete` key to remove selected elements    | Built-in support: `Delete` key removes selected elements                                |
+| **Label Editing**  | Requires custom event handling for label editing initiation and termination      | Built-in support: `F2` to start editing, `Esc` to cancel                                |
+| **Zoom In/Out**    | Custom implementation needed to bind `Ctrl + MouseWheel` for zooming             | Built-in support: `Ctrl + MouseWheel` zooms in/out                                      |
+| **Nudge Elements** | Custom implementation needed to move elements with arrow keys                    | Built-in support: Arrow keys move elements by 1px; `Shift + Arrow` moves by 5px         |
+| **Group/Ungroup**  | Custom implementation needed to group/ungroup elements with key bindings         | Built-in support: `Ctrl + G` to group, `Ctrl + Shift + U` to ungroup                    |
+| **Rotate Elements**| Custom implementation needed to rotate elements with key bindings                | Built-in support: `Ctrl + R` rotates clockwise, `Ctrl + L` rotates counter-clockwise    |
+| **Flip Elements**  | Custom implementation needed to flip elements with key bindings                  | Built-in support: `Ctrl + H` flips horizontally, `Ctrl + J` flips vertically            |
+| **Align Text**     | Custom implementation needed to align text with key bindings                    | Built-in support: Use `Ctrl + Shift + L/C/R/J` for horizontal and `Ctrl + Shift + E/M/V` for vertical text alignment. |
 
 ### Enhanced Interactions in Syncfusion JavaScript Diagram over mxGraph
 
@@ -573,7 +574,7 @@ graph.view.setTranslate(-bounds.x, -bounds.y);
 In Syncfusion® JavaScript Diagram, this can be achieved with a single method call:
 
 {% tabs %}
-{% highlight js tabtitle="Syncfusion®" %}
+{% highlight js tabtitle="Syncfusion" %}
 diagram.fitToPage();
 {% endhighlight %}
 {% endtabs %}
@@ -594,7 +595,7 @@ graph.view.setTranslate(dx, dy);
 In Syncfusion® JavaScript Diagram, this is simplified with a direct API method:
 
 {% tabs %}
-{% highlight js tabtitle="Syncfusion®" %}
+{% highlight js tabtitle="Syncfusion" %}
 diagram.bringToCenter('node1');
 {% endhighlight %}
 {% endtabs %}
@@ -612,7 +613,7 @@ graph.scrollCellToVisible(cell);
 In Syncfusion® JavaScript Diagram, bringing a node into view is very similar to doing so in `mxGraph`.
 
 {% tabs %}
-{% highlight js tabtitle="Syncfusion®" %}
+{% highlight js tabtitle="Syncfusion" %}
 diagram.bringIntoView('node1');
 {% endhighlight %}
 {% endtabs %}

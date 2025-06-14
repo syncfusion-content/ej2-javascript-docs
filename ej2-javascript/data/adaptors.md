@@ -989,7 +989,7 @@ To achieve this, follow these steps:
     | `aggregates`     | Contains details about aggregate data.                                          |
 
     {% tabs %}
-    {% highlight graphql tabtitle="schema.graphql" %}
+    {% highlight text tabtitle="schema.graphql" %}
     {% include code-snippet/data/getting-started-cs38/schema.graphql %}
     {% endhighlight %}
     {% endtabs %}

@@ -19,7 +19,7 @@ Using the `Query` class is like ordering food from a digital menu. You can filte
 
 ## How query processing works
 
-The [Query](../api/data/query) class in Syncfusion’s DataManager provides a fluent interface for defining and executing complex data operations, such as filtering, sorting, grouping, and paging. Each method in the `Query` class adds a logical layer of transformation, and the entire `Query` is processed through the [executeQuery()](https://ej2.syncfusion.com/documentation/api/data/dataManager/#executequery) method. This abstraction ensures efficient and optimized data handling, whether you're working with local collections or remote data services.
+The [Query](../api/data/query/) class in Syncfusion’s DataManager provides a fluent interface for defining and executing complex data operations, such as filtering, sorting, grouping, and paging. Each method in the `Query` class adds a logical layer of transformation, and the entire `Query` is processed through the [executeQuery()](https://ej2.syncfusion.com/documentation/api/data/dataManager/#executequery) method. This abstraction ensures efficient and optimized data handling, whether you're working with local collections or remote data services.
 
 The processing flow generally follows these steps:
 
@@ -50,7 +50,7 @@ This modular and extensible approach simplifies data interactions, promotes main
 
 ## Creating and executing queries
 
-The Syncfusion [Query](../api/data/query) class, available in the [@syncfusion/ej2-data package](https://www.npmjs.com/package/@syncfusion/ej2-data), provides a fluent API for querying local or remote data. You can perform operations such as filtering, sorting, grouping, and aggregation on data before binding it to UI components like Grids, Lists, or Charts.
+The Syncfusion [Query](../api/data/query/) class, available in the [@syncfusion/ej2-data package](https://www.npmjs.com/package/@syncfusion/ej2-data), provides a fluent API for querying local or remote data. You can perform operations such as filtering, sorting, grouping, and aggregation on data before binding it to UI components like Grids, Lists, or Charts.
 
 Queries are executed using the [executeQuery](https://ej2.syncfusion.com/documentation/api/data/dataManager/#executequery) or [executeLocal](https://ej2.syncfusion.com/documentation/api/data/query/#executelocal) methods of the [DataManager](https://ej2.syncfusion.com/documentation/api/data/dataManager/), depending on whether you're using a remote or local data source.
 
@@ -100,6 +100,8 @@ let query = new Query().using(adaptorInstance);
 ```js
 let query = new ej.data.Query().using(adaptorInstance);
 ``` 
+{% endif %}
+
 3. [from](https://ej2.syncfusion.com/documentation/api/data/query/#from)
 
 Defines the data collection or resource name to target in the `Query`.
@@ -339,7 +341,7 @@ Filter operators are generally used to specify the filter type. Syncfusion ##Pla
 | `endswith`           | Ends with a substring                     |
 | `contains`           | Contains a substring                      |
 
-Use the following [Query](../api/data/query) format to apply any filter condition by updating the field name, operator, and value:
+Use the following [Query](../api/data/query/) format to apply any filter condition by updating the field name, operator, and value:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -383,7 +385,7 @@ The following example demonstrates how to filter records where the **CustomerID*
 {% previewsample "page.domainurl/code-snippet/data/querying-cs8" %}
 {% endif %}
 
-> These filter operators are used for creating filter [Query](../api/data/query) using [where](../api/data/query/#where) method and [Predicate](../api/data/predicate/) class.
+> These filter operators are used for creating filter [Query](../api/data/query/) using [where](../api/data/query/#where) method and [Predicate](../api/data/predicate/) class.
 
 ### Build complex filter criteria using `Predicate`
 
@@ -502,7 +504,7 @@ The following example demonstrates how to group records by **EmployeeID**:
 
 The Syncfusion ##Platform_Name## DataManager allow you to fetch data one page at a time instead of loading the entire dataset at once. This is especially useful when working with large collections of data, helping your application stay fast and responsive.
 
-You can [Query](../api/data/query) paged data using [page](../api/data/query/#page) method. This allow you to `Query` particular set of records based on the page size and index.
+You can [Query](../api/data/query/) paged data using [page](../api/data/query/#page) method. This allow you to `Query` particular set of records based on the page size and index.
 
 The page method takes two arguments:
 
@@ -589,7 +591,7 @@ The following example demonstrates how to retrieve and display the minimum **Emp
 
 The Syncfusion ##Platform_Name## DataManager provides several powerful methods in the [Query](../api/data/query/) class to build custom and dynamic queries. These are especially helpful when you want to manipulate the way data is fetched or shaped before execution.
 
-The custom [Query](../api/data/query) methods are as follows:
+The custom [Query](../api/data/query/) methods are as follows:
 
 * [addParams(key, value)](https://ej2.syncfusion.com/documentation/api/data/query/#addparams)
 

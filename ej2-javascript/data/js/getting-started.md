@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Data control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Data control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## DataManager | Syncfusion
+description:  Checkout and learn about Getting started with ##Platform_Name## DataManager of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Data control
+# Getting started in ##Platform_Name## DataManager
 
-This section explains you the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Data Manager and demonstrate the basic usage of the Data Manager control in a JavaScript application.
+This section provides a quick overview of how to get started with the Syncfusion DataManager in the ##Platform_Name## platform. It includes guidance on installation, basic setup, and connecting to both local and remote data sources.
 
 ## Dependencies
 
@@ -27,96 +27,35 @@ Below is the list of minimum dependencies required to use the DataManager.
 
 ## Setup for local environment
 
-Refer the following steps for setup your local environment.
-
-**Step 1:** Create a root folder `my-app` for your application.
-
-**Step 2:** Create `my-app/resources` folder to store local scripts files.
-
-**Step 3:** Create `my-app/index.js` and `my-app/index.html` files for initializing Essential<sup style="font-size:70%">&reg;</sup> JS 2 data manager control.
-
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
-
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Data Manager control can be initialized by using either of the following ways.
-
-* Using local script.
-* Using CDN link for script.
-
-### Using local script
-
-You can get the global script from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
-
-After installing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 product build, you can copy the data manager and its dependencies scripts file into the `resources/scripts` folder.
-
-Refer the below code to find location data manager's script file.
-
-**Syntax:**
-
-> Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
-
-**Example:**
-
-> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-data/dist/global/ej2-data.min.js`
-
-After copying the files, then you can refer the pager's scripts into the `index.html` file.
-
-```html
-<!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2</title>
-            <!-- Essential JS 2 Data Manager's dependent script -->
-            <script src="resources/scripts/ej2-base.min.js" type="text/javascript"></script>
-            <!-- Essential JS 2 Data Manager's global script -->
-            <script src="resources/scripts/ej2-data.min.js" type="text/javascript"></script>
-       </head>
-       <body>
-       </body>
-  </html>
-
-```
-
-### Using CDN link for script
-
-Using CDN link, you can directly refer the data manager and its dependencies script into the `index.html`.
-
-Refer the data manager's CDN links as below
-
-**Syntax:**
-
-> Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
-
-**Example:**
-
-> Script: [`http://cdn.syncfusion.com/ej2/ej2-data/dist/global/ej2-data.min.js`](http://cdn.syncfusion.com/ej2/ej2-data/dist/global/ej2-data.min.js)
-
-```html
-<!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2</title>
-            <!-- Essential JS 2 Data Manager's dependent script -->
-            <script src="http://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
-            <!-- Essential JS 2 Pager's global script -->
-            <script src="http://cdn.syncfusion.com/ej2/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
-       </head>
-       <body>
-       </body>
-  </html>
-
-```
+To get started with the Syncfusion ##Platform_Name## DataManager, follow the step-by-step instructions provided in the [Syncfusion Getting Started](https://ej2.syncfusion.com/javascript/documentation/getting-started/quick-start#set-up-development-environment) documentation to configure your local environment.
 
 ## Connection to a data source
 
-The DataManager can act as gateway for both local and remote data source which will uses the query to interact with the data source.
+The Syncfusion ##Platform_Name## DataManager acts as a centralized data gateway, enabling seamless interaction with both local (in-memory) and remote (server-based) data sources. It abstracts the complexities of data handling by using a consistent API for data retrieval and manipulation across various components.
+
+By integrating with the **Query** class, DataManager can perform essential operations such as:
+
+* **Filtering** – Retrieve only the data that matches specific conditions.
+
+* **Sorting** – Order records by one or more fields.
+
+* **Paging** – Load and display data in chunks for performance.
+
+* **CRUD** – Create, Read, Update, and Delete records efficiently.
+
+Whether the data resides in a static JSON file, a RESTful Web API, or an OData service, DataManager ensures that components like Grid, DropDownList, or Chart can consume and manipulate the data with minimal code.
 
 ### Binding to JSON data
 
-`DataManager` can be bound to local data source by assigning the array of JavaScript objects to the `json` property or simply passing them to the constructor while instantiating.
+The Syncfusion ##Platform_Name## DataManager allows seamless integration with local JSON data sources, making it ideal for applications where data is managed entirely on the client-side without involving server communication.
 
-Create `my-app/es5-datasource.js` file to bind JSON data.
+This can be done in one of two ways:
 
-Add the CSS below to the `my-app/index.html` file to style the table.
+* Assigning an array of JavaScript objects to the `json` property, or
+
+* Passing the data array directly to the `DataManager` constructor.
+
+To display the data in a clean, readable table format, add the following CSS inside the <head> tag of your index.html file:
 
 ```html
 <style>
@@ -143,6 +82,8 @@ Add the CSS below to the `my-app/index.html` file to style the table.
 </style>
 ``` 
 
+The following sample demonstrates passing the data array directly to the DataManager:
+
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/data/getting-started-cs9/index.js %}
@@ -159,7 +100,13 @@ Add the CSS below to the `my-app/index.html` file to style the table.
 
 ### Binding to OData
 
-`DataManager` can be bound to remote data source by assigning service end point URL to the `url` property. Now all `DataManager` operations will address the provided service end point.
+OData (Open Data Protocol) is a standardized protocol for querying and updating data using RESTful APIs. It is widely adopted in enterprise applications for enabling structured, scalable access to remote data services.
+
+The Syncfusion ##Platform_Name## DataManager provides built-in support for interacting with OData v3 and v4 services, allowing seamless integration with external data sources.
+
+You can bind a remote OData service to the DataManager by setting its `url` property to the service endpoint URL. This configuration enables the DataManager to automatically perform server-side operations such as sorting, filtering, paging, and CRUD by sending appropriate requests to the specified endpoint.
+
+The following sample demonstrates how to bind the DataManager to a remote OData service:
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -171,96 +118,3 @@ Add the CSS below to the `my-app/index.html` file to style the table.
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/data/getting-started-cs10" %}
-
-## Filter
-
-The data filtering is a trivial operation which will let us to get reduced view of data based on filter criteria. The filter expression can be built easily using `where` method of `Query` class.
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/data/getting-started-cs11/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/data/getting-started-cs11/index.html %}
-{% endhighlight %}
-{% highlight ts tabtitle="es5-datasource.js" %}
-{% include code-snippet/data/getting-started-cs11/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/data/getting-started-cs11" %}
-
-## Sort
-
-The data can be ordered either in ascending or descending using `sortBy` method of `Query` class.
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/data/getting-started-cs12/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/data/getting-started-cs12/index.html %}
-{% endhighlight %}
-{% highlight ts tabtitle="es5-datasource.js" %}
-{% include code-snippet/data/getting-started-cs12/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/data/getting-started-cs12" %}
-
-## Page
-
-The `page` method of the Query class is used to get range of data based on the page number and the total page size.
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/data/getting-started-cs13/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/data/getting-started-cs13/index.html %}
-{% endhighlight %}
-{% highlight ts tabtitle="es5-datasource.js" %}
-{% include code-snippet/data/getting-started-cs13/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/data/getting-started-cs13" %}
-
-## Component binding
-
-DataManager component can be used with Syncfusion<sup style="font-size:70%">&reg;</sup> components which supports data binding.
-
-In the following samples, the grid component is bound. To render the grid with the necessary configurations, please refer to the [Grid Getting Started](https://ej2.syncfusion.com/javascript/documentation/grid/getting-started) documentation.
-
-### Local data binding
-
-A DataSource can be created in-line with other Syncfusion<sup style="font-size:70%">&reg;</sup> component configuration settings.
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/data/getting-started-cs14/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/data/getting-started-cs14/index.html %}
-{% endhighlight %}
-{% highlight ts tabtitle="es5-datasource.js" %}
-{% include code-snippet/data/getting-started-cs14/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/data/getting-started-cs14" %}
-
-### Remote data binding
-
-To bind remote data to Syncfusion<sup style="font-size:70%">&reg;</sup> component, you can assign a service data as an instance of `DataManager` to the `dataSource` property.
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/data/getting-started-cs15/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/data/getting-started-cs15/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/data/getting-started-cs15" %}

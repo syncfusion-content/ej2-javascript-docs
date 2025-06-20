@@ -109,6 +109,18 @@ To integrate the file manager into the Rich Text Editor, follow these steps:
 
 > Rich Text Editor features are segregated into individual feature-wise modules. To use the file browser tool, inject FileManager module using the `RichTextEditor.Inject(FileManager)`.
 
+## Maximum file size restriction
+
+You can restrict the image uploaded from the local machine when the uploaded image file size is greater than the allowed size by using the [maxFileSize](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/imageSettingsModel/#maxfilesize) property. By default, the maximum file size is 30000000 bytes. You can configure this size as follows.
+
+```ts
+
+    insertImageSettings: {
+      maxFileSize: 10000000
+    }
+
+```
+
 ## Saving images to server
 
 Upload the selected image to a specified destination using the controller action specified in [insertImageSettings.saveUrl](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/imageSettingsModel/#saveurl). Ensure to map this method name appropriately and provide the required destination path through the [insertImageSettings.path](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/imageSettingsModel/#path) properties.
@@ -204,12 +216,6 @@ public class HomeController : Controller
 ### Rename images before inserting
 
 You can use the [insertImageSettings](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#insertimagesettings) property, to specify the server handler to upload the selected image. Then by binding the [fileUploadSuccess](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#fileuploadsuccess) event, you can receive the modified file name from the server and update it in the Rich Text Editor's insert image dialog.
-
-### Size-based image restrictions
-
-You can restrict the image uploaded from the local machine when the uploaded image file size is greater than the allowed size by using the [fileUploading](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#fileuploading) event.
-
-> The file size in the argument will be returned in `bytes`.
 
 ### Secure image upload with authentication
 

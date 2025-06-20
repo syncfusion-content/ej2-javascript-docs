@@ -87,6 +87,44 @@ You can use the `browse` option on the video dialog to select the video from the
 
 If the path field is not specified in the [insertVideoSettings](../api/rich-text-editor/#insertvideosettings), the video will be converted into the `Blob` URL or `Base64` and inserted inside the Rich Text Editor.
 
+## Maximum file size restrictions
+
+You can restrict the video uploaded from the local machine when the uploaded video file size is greater than the allowed size by using the [maxFileSize](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/videoSettingsModel/#maxfilesize) property. By default, the maximum file size is 30000000 bytes. You can configure this size as follows.
+
+```ts
+
+    insertVideoSettings: {
+      maxFileSize: 10000000
+    }
+
+```
+
+In the following example, the video size has been validated before uploading and determined whether the video has been uploaded or not.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/rich-text-editor/video-size/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor/video-size/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/rich-text-editor/video-size/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor/video-size/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
+
 ## Saving video to the server
 
 Upload the selected video to a specified destination using the controller action specified in [insertVideoSettings.saveUrl](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/videoSettingsModel/#saveurl). Ensure to map this method name appropriately and provide the required destination path through the [insertVideoSettings.path](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/videoSettingsModel/#path) properties.
@@ -278,38 +316,6 @@ public void Rename()
 }
 
 ```
-
-### Restricting video by size
-
-You can restrict the video uploaded from the local machine when the uploaded video file size is greater than the allowed size by using the [fileUploading](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#fileuploading) event.
-
-> The file size in the argument will be returned in `bytes`.
-
-In the following example, the video size has been validated before uploading and determined whether the video has been uploaded or not.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor/video-size/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor/video-size/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor/video-size/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor/video-size/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% endif %}
 
 ### Uploading video with authentication
 

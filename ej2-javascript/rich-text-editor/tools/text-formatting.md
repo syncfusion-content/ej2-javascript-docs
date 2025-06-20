@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text Formatting and Structure in ##Platform_Name## Rich text editor control | Syncfusion
+title: Text Formatting and Structure in ##Platform_Name## Rich text editor | Syncfusion
 description: Learn here all about Text Formatting and Structure in Syncfusion ##Platform_Name## Rich text editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Text Formatting and Structure
@@ -413,6 +413,41 @@ Use the `Blockquote` tool in the editor below to see the feature in action.
 {% endif %}
 
 > In a markdown editor, blockquotes are represented using the `>` symbol.
+
+## Horizontal line
+
+The Rich Text Editor enables users to insert horizontal dividers using the `Horizontal Line` tool available in the toolbar. Horizontal lines (<hr>) help visually separate sections of content, enhancing readability and structural clarity.
+
+To insert a horizontal line, place the cursor at the desired location and click the `Horizontal Line` icon in the toolbar. A full-width line will be added, creating a clear visual break between sections of text or other elements.
+
+Use the `Horizontal Line` tool in the editor below to see the feature in action.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/rich-text-editor/horizontal-line/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor/horizontal-line/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/horizontal-line" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/rich-text-editor/horizontal-line/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor/horizontal-line/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/horizontal-line" %}
+{% endif %}
 
 ## Insert code
 

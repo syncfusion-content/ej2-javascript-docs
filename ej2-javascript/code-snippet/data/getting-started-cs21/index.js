@@ -6,7 +6,7 @@ const SERVICE_URI =  'https://services.odata.org/V4/Northwind/Northwind.svc/Orde
 
 let table = (document.getElementById('datatable'));
 
-//Building complex filter criteria using `Predicate`
+//Building complex filter criteria using `Predicate`.
 var predicate = new ej.data.Predicate('EmployeeID', 'equal', 3);
 predicate = predicate.or('EmployeeID', 'equal', 2);
 

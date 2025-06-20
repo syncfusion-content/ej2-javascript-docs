@@ -176,6 +176,37 @@ In the following sample,data with diacritics are bound as dataSource for ComboBo
 {% previewsample "page.domainurl/code-snippet/combobox/basic-cs8" %}
 {% endif %}
 
+## Debounce delay
+
+You can use the [debounceDelay](../api/combo-box/#debouncedelay) property for filtering, enabling you to set a delay in milliseconds. This functionality helps reduce the frequency of filtering as you type, enhancing performance and responsiveness for a smoother user experience.By default, a DebounceDelay of 300ms is set. If you wish to disable this feature entirely, you can set it to 0ms.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/combobox/basic-cs13/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/combobox/basic-cs13/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/combobox/basic-cs13" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/combobox/basic-cs13/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/combobox/basic-cs13/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/combobox/basic-cs13" %}
+{% endif %}
+
 ## See Also
 
 * [How to acheive autofill while filtering](./how-to/autofill)

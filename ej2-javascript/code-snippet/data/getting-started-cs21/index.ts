@@ -11,7 +11,7 @@ const SERVICE_URI: string =  'https://services.odata.org/V4/Northwind/Northwind.
 
 let table: HTMLElement = (<HTMLElement>document.getElementById('datatable'));
 
-//Building complex filter criteria using `Predicate`
+//Building complex filter criteria using `Predicate`.
 let predicate: Predicate = new Predicate('EmployeeID', 'equal', 3);
 predicate = predicate.or('EmployeeID', 'equal', 2);
 

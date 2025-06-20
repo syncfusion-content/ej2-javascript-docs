@@ -117,6 +117,42 @@ The following code explains how to enable port drag.
 
 {% endif %}
 
+## Automatic Port Creation
+
+The Diagram component allows you to dynamically create ports on nodes or connectors by clicking and dragging the mouse while holding the Control (Ctrl) key. This feature is disabled by default and can be enabled by using the `DiagramConstraints.AutomaticPortCreation` constraint.
+
+You can also remove a port using the same Ctrl + Click interaction, but only if the port is not currently connected to any connector.
+
+The following example shows how to enable automatic port creation:
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/automaticPortCreation/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/automaticPortCreation/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/diagram/automaticPortCreation" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/automaticPortCreation/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/automaticPautomaticPortCreationort/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/diagram/automaticPortCreation" %}
+
+{% endif %}
+
 ## Port tooltip
 
 The port tooltip feature allows a tooltip to be displayed when hovering over a port. This functionality can be enabled by setting the port constraints to **"Tooltip"**.

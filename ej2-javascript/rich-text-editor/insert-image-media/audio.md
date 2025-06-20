@@ -80,6 +80,44 @@ You can use the `browse` option on the audio dialog, to select the audio from th
 
 If the path field is not specified in the [insertAudioSettings](../api/rich-text-editor/#insertaudiosettings), the audio will be converted into the `Blob` URL or `Base64` and inserted inside the Rich Text Editor.
 
+## Maximum file size restriction
+
+You can restrict the audio uploaded from the local machine when the uploaded audio file size is greater than the allowed size by using the [maxFileSize](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/audioSettingsModel/#maxfilesize) property. By default, the maximum file size is 30000000 bytes. You can configure this size as follows.
+
+```ts
+
+    insertAudioSettings: {
+      maxFileSize: 10000000
+    }
+
+```
+
+In the following illustration, the audio size has been validated before uploading, and it is determined whether the audio has been uploaded or not.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/rich-text-editor/audio-size/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor/audio-size/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/rich-text-editor/audio-size/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor/audio-size/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
+
 ## Saving audio to the server
 
 [saveFormat](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/audioSettingsModel/#saveformat) Sets the default save format of the audio element when inserted. Possible options are: `Blob` and `Base64`.
@@ -276,38 +314,6 @@ public void Rename()
 }
 
 ```
-
-### Restricting audio by size
-
-You can restrict the audio uploaded from the local machine when the uploaded audio file size is greater than the allowed size by using the [fileUploading](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#fileuploading) event.
-
-> The file size in the argument will be returned in `bytes`.
-
-In the following illustration, the audio size has been validated before uploading, and it is determined whether the audio has been uploaded or not.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor/audio-size/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor/audio-size/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor/audio-size/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor/audio-size/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% endif %}
 
 ### Uploading audio with authentication
 

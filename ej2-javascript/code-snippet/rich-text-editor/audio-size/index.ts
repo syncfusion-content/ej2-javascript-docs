@@ -8,16 +8,8 @@ let editor: RichTextEditor = new RichTextEditor({
     },
     insertAudioSettings: {
         saveUrl: "https://aspnetmvc.syncfusion.com/services/api/uploadbox/Save",
-        path: "../Files/"
-    },
-    fileUploading: onFileUpload
+        path: "../Files/",
+        maxFileSize: 30000000
+    }
 });
 editor.appendTo('#editor');
-
-function onFileUpload (args: UploadingEventArgs): void {
-    let sizeInBytes: number = args.fileData.size;
-    let fileSize: number = 500000;
-    if (fileSize < sizeInBytes) {
-        args.Cancel = true;
-    }
-}

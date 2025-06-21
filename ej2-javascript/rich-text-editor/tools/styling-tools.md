@@ -265,3 +265,36 @@ The [default](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/
 
 {% previewsample "page.domainurl/code-snippet/rich-text-editor/styling-cs3" %}
 {% endif %}
+
+### Show recent color
+
+The [showRecentColors](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/fontColor/#showrecentcolor) feature in the Rich Text Editor provides quick access to a row of recently used colors displayed below the main palette. This streamlines editing by keeping frequently used colors easily accessible, improving styling efficiency and consistency.
+
+This feature can be enabled separately for the [fontColor](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#fontcolor) and [backgroundColor](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#backgroundcolor) tools, giving flexibility based on formatting needs. It is especially helpful when working with consistent color themes, eliminating the need to repeatedly search through the full palette.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/rich-text-editor/show-recent-color/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor/show-recent-color/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/show-recent-color" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/rich-text-editor/show-recent-color/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor/show-recent-color/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/show-recent-color" %}
+{% endif %}

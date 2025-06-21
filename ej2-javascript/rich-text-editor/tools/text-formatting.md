@@ -416,11 +416,11 @@ Use the `Blockquote` tool in the editor below to see the feature in action.
 
 ## Horizontal line
 
-The Rich Text Editor enables users to insert horizontal dividers using the `Horizontal Line` tool available in the toolbar. Horizontal lines (<hr>) help visually separate sections of content, enhancing readability and structural clarity.
+The Rich Text Editor enables users to insert horizontal dividers using the `HorizontalLine` tool available in the toolbar. Horizontal lines (<hr>) help visually separate sections of content, enhancing readability and structural clarity.
 
-To insert a horizontal line, place the cursor at the desired location and click the `Horizontal Line` icon in the toolbar. A full-width line will be added, creating a clear visual break between sections of text or other elements.
+To insert a horizontal line, place the cursor at the desired location and click the `HorizontalLine` icon in the toolbar. A full-width line will be added, creating a clear visual break between sections of text or other elements.
 
-Use the `Horizontal Line` tool in the editor below to see the feature in action.
+Use the `HorizontalLine` tool in the editor below to see the feature in action.
 
 {% if page.publishingplatform == "typescript" %}
 

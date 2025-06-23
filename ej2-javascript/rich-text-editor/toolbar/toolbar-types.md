@@ -13,13 +13,14 @@ domainurl: ##DomainURL##
 
 The Syncfusion ##Platform_Name## Rich Text Editor provides a powerful toolbar that enables users to format, style, and edit content efficiently. The toolbar includes essential editing tools such as bold, italic, underline, alignment, and lists, along with customization options to suit different use cases.
 
-> To create Rich Text Editor with Toolbar feature, inject the [Toolbar](../api/rich-text-editor/toolbarSettings) module to the Rich Text Editor using the `RichTextEditor.Inject(Toolbar)` method.
+> To create Rich Text Editor with Toolbar feature, inject the [Toolbar](../api/rich-text-editor/toolbarSettings/) module to the Rich Text Editor using the `RichTextEditor.Inject(Toolbar)` method.
 
 The Rich Text Editor allows you to configure different types of toolbar using [type](../api/rich-text-editor/toolbarType/#toolbartype) field in [toolbarSettings](../api/rich-text-editor/toolbarSettings/#toolbarsettings) property. The types of toolbar are:
 
 1. Expand 
 2. MultiRow
 3. Scrollable
+4. Popup
 
 ## Expanding the toolbar
 
@@ -112,6 +113,37 @@ Setting the `type` to `Scrollable` in [toolbarSettings](../api/rich-text-editor/
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/rich-text-editor/toolbar-cs5" %}
+{% endif %}
+
+## Configuring a popup toolbar
+
+Setting the `type` to `Popup` in [toolbarSettings](../api/rich-text-editor/toolbarSettings/#toolbarsettings) will display overflowing toolbar items into a popup container, optimizing the toolbar layout for limited space and smaller screens.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/rich-text-editor/toolbar-popup/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor/toolbar-popup/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/toolbar-popup" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/rich-text-editor/toolbar-popup/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor/toolbar-popup/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/toolbar-popup" %}
 {% endif %}
 
 ## Creating a sticky toolbar

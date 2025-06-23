@@ -281,6 +281,8 @@ Here is an example that demonstrates how to use the `UrlAdaptor`:
 
 {% endif %}
 
+![UrlAdaptor](./image/url-result-image.png)
+
 ## OData adaptor
 
 The `ODataAdaptor` in Syncfusion's DataManager facilitates seamless integration with [OData](http://www.odata.org/documentation/odata-version-3-0/) services, which are standardized RESTful APIs designed for querying and manipulating data over HTTP. This adaptor streamlines operations such as querying, filtering, sorting, and paging data from OData endpoints, making it especially suitable for enterprise applications that require standardized and interoperable data access.
@@ -417,6 +419,8 @@ Here is an example that demonstrates how to use the `ODataAdaptor`:
 
 {% endif %}
 
+![OData adaptor](./image/odata-adaptor-image.png)
+
 > By default, `ODataAdaptor` is used by **DataManager**.
 
 ## ODataV4 adaptor
@@ -546,6 +550,8 @@ Here is an example that demonstrates how to use the `ODataV4Adaptor`:
 {% endtabs %}
 
 {% endif %}
+
+![ODataV4 adaptor](./image/odatav4-adaptor.png)
 
 ## Web API adaptor
 
@@ -680,6 +686,8 @@ Here is an example that demonstrates how to use the `WebApiAdaptor`:
 
 {% endif %}
 
+![Web API adaptor](./image/webapiadaptor-image.png)
+
 ## WebMethod Adaptor
 
 The `WebMethodAdaptor` is a powerful and flexible adaptor provided by Syncfusion's DataManager module, specifically designed to interact with remote services or server-side methods that accept data via HTTP POST requests. Unlike adaptors that communicate with standard REST or OData services, the `WebMethodAdaptor` enables seamless data binding from custom server-side logic such as controller actions, web services, or business-layer functions.
@@ -811,6 +819,8 @@ Here is an example that demonstrates how to use the `WebMethodAdaptor`:
 
 {% endif %}
 
+![WebMethod Adaptor](./image/webmethodadaptor-image.png)
+
 ## RemoteSaveAdaptor
 
 The `RemoteSaveAdaptor` is a specialized adaptor in Syncfusion’s DataManager module designed to perform actions such as sorting, filtering, searching and paging primarily on the client-side while handling CRUD operations(Create, Read, Update, and Delete), on the server-side for data persistence. This approach optimizes your experience by minimizing unnecessary server interactions.
@@ -926,6 +936,8 @@ Here is an example that demonstrates how to use the `RemoteSaveAdaptor`:
 {% endtabs %}
 
 {% endif %}
+
+![RemoteSaveAdaptor](./image/remotesaveadaptor-image.png)
 
 ## GraphQL Adaptor
 
@@ -1319,3 +1331,108 @@ Create a schema that supports Syncfusion DataManager queries and mutations with 
 {% include code-snippet/data/getting-started-cs39/db.js %}
 {% endhighlight %}
 {% endtabs %}
+
+## CacheAdaptor
+
+The CacheAdaptor is a powerful feature in Syncfusion’s ##Platform_Name## DataManager that enhances application performance by reducing redundant server calls. It caches previously fetched data on the client side, allowing your app to quickly retrieve cached data instead of making repeated HTTP requests when navigating through pages or revisiting previously loaded data. This significantly improves the responsiveness of data-bound components and reduces server load, especially in applications with large datasets or frequent data navigation.
+
+You can enable this functionality by setting the `enableCache` property to true in the **DataManager** configuration.
+
+**How it works**
+
+* When `enableCache` is set to **true**, the DataManager generates a unique ID at initialization and uses it to store previously loaded page data in cache memory. This enables efficient data retrieval without redundant server requests.
+
+* The cache is automatically cleared when data actions such as sorting, filtering, grouping, searching, or CRUD operations (Create, Read, Update, Delete) are performed.
+
+* This feature is supported by all adaptors in DataManager, ensuring consistent caching behavior across different data sources.
+
+Consider a customer order management dashboard that displays thousands of orders in a paginated grid with filtering and sorting options. By enabling `enableCache` in the DataManager:
+
+* When the user first navigates to page 2, the data is fetched from the server and stored in the cache.
+
+* If the user later returns to page 2, the DataManager serves the data directly from the cache, with no additional request sent.
+
+* If the user applies a filter or sort, the cache is cleared to ensure new data is retrieved fresh from the server.
+
+* This results in a smoother user experience, reduced load times, and improved overall performance.
+
+This caching behavior is especially beneficial for:
+
+* Applications with large datasets and frequent navigation.
+
+* Scenarios with network latency or bandwidth constraints.
+
+* Reducing costs in cloud-hosted backends by minimizing API calls.
+
+The following example demonstrates how to enable caching using the `enableCache` property in the DataManager:
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/data/getting-started-cs6/index.ts %}
+{% raw %}
+
+import { Grid } from '@syncfusion/ej2-grids';
+import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
+
+let data: Object = new DataManager({
+  url: "https://services.syncfusion.com/js/production/api/orders",
+  adaptor: new WebApiAdaptor,
+  crossDomain: true,
+  enableCache: true // Enables caching to prevent repeated HTTP requests.
+});
+
+let grid: Grid = new Grid({
+  dataSource: data,
+  columns: [
+    { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100, type: 'number' },
+    { field: 'CustomerID', width: 100, headerText: 'Customer ID', type: 'string' },
+    { field: 'EmployeeID', headerText: 'Employee ID', textAlign: 'Right', width: 100 },
+    { field: 'OrderDate', headerText: 'Order Date', format: 'yMd', width: 120, textAlign: 'Right', type:'Date' },
+  ],
+});
+
+grid.appendTo('#Grid');
+{% endraw %}
+{% endhighlight %}
+
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/data/getting-started-cs6/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% raw %}
+
+var data = new ej.data.DataManager({
+  url: "https://services.syncfusion.com/js/production/api/orders",
+  adaptor: new ej.data.WebApiAdaptor(),
+  crossDomain: true,
+  enableCache: true // Enables caching to prevent repeated HTTP requests.
+});
+
+var grid = new ej.grids.Grid({
+  dataSource: data,
+  columns: [
+    { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100, type: 'number' },
+    { field: 'CustomerID', width: 100, headerText: 'Customer ID', type: 'string' },
+    { field: 'EmployeeID', headerText: 'Employee ID', textAlign: 'Right', width: 100 },
+    { field: 'OrderDate', headerText: 'Order Date', format: 'yMd', width: 120, textAlign: 'Right', type:'Date' },
+  ],
+});
+
+grid.appendTo('#Grid');
+
+{% endraw %}
+{% endhighlight %}
+
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/data/getting-started-cs6/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}

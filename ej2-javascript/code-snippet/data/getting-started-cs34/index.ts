@@ -19,7 +19,7 @@ datamanger.executeQuery(new Query().take(10)).then((e: ReturnOption) => {
           <td>${item.ShipCity}</td>
           <td>${item.ShipCountry}</td>
       `;
-        (tbody as HTMLElement).appendChild(row);
+        tbody.appendChild(row);
     });
 }).catch(error => {
     console.error("Data fetch failed:", error);

@@ -259,6 +259,37 @@ You can create rounded corners for each slice by using the [borderRadius](../api
 {% previewsample "page.domainurl/code-snippet/chart/border-radius" %}
 {% endif %}
 
+## Palette
+
+The default palette for the pie series can be customized by using the [`palettes`](../api/accumulation-chart/accumulationSeriesModel/#palettes) property in the series.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/palette/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/palette/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/palette" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/palette/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/palette/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/palette" %}
+{% endif %}
+
 ## Customization
 
 Individual points can be customized using the `pointRender` event.

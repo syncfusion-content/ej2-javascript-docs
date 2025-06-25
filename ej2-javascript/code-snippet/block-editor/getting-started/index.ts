@@ -1,5 +1,5 @@
-import { BlockEditor } from "@syncfusion/ej2-blockeditor"
+import { BlockEditor } from "@syncfusion/ej2-blockeditor";
 
-let overviewBlockEditor: BlockEditor = new BlockEditor({
+let blockeditor: BlockEditor = new BlockEditor({
 });    
-overviewBlockEditor.appendTo('#blockeditor_default');
+blockeditor.appendTo('#blockeditor_default');

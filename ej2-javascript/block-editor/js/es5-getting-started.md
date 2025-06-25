@@ -47,9 +47,9 @@ The JavaScript (ES5) BlockEditor control can be initialized by using either of t
 >
 > Control Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
 >
-> Dependency Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\styles\material.css`
+> Dependency Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\styles\fluent2.css`
 >
-> Control Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\material.css`
+> Control Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\fluent2.css`
 
 **Example:**
 
@@ -59,16 +59,16 @@ The JavaScript (ES5) BlockEditor control can be initialized by using either of t
 \dist\global\ej2-blockeditor
 .min.js`
 >
-> Dependency Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-base\styles\material.css`
+> Dependency Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-base\styles\fluent2.css`
 >
 > Control Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-blockeditor
-\styles\material.css`
+\styles\fluent2.css`
 
 The below located script and style file contains all Syncfusion JavaScript (ES5) UI control resources in a single file.
 
 > Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
 >
-> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\material.css`
+> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\fluent2.css`
 
 The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script and styles for a set of specific controls. This web tool is useful to combine the required control scripts and styles in a single file.
 
@@ -82,15 +82,16 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
        <head>
           <title>JavaScript (ES5)</title>
           <!-- JavaScript (ES5) BlockEditor's dependency style -->
-          <link href="resources/base/material.css" rel="stylesheet" type="text/css"/>
-          <link href="resources/buttons/material.css" rel="stylesheet" type="text/css"/>
-          <link href="resources/popups/material.css" rel="stylesheet" type="text/css"/>
-          <link href="resources/inputs/material.css" rel="stylesheet" type="text/css" />
-          <link href="resources/navigations/material.css" rel="stylesheet" type="text/css" />
-          <link href="resources/splitbuttons/material.css" rel="stylesheet" type="text/css"/>
+          <link href="resources/base/fluent2.css" rel="stylesheet" type="text/css"/>
+          <link href="resources/buttons/fluent2.css" rel="stylesheet" type="text/css"/>
+          <link href="resources/popups/fluent2.css" rel="stylesheet" type="text/css"/>
+          <link href="resources/inputs/fluent2.css" rel="stylesheet" type="text/css" />
+          <link href="resources/navigations/fluent2.css" rel="stylesheet" type="text/css" />
+          <link href="resources/splitbuttons/fluent2.css" rel="stylesheet" type="text/css"/>
+          <link href="resources/dropdowns/fluent2.css" rel="stylesheet" type="text/css"/>
 
           <!-- JavaScript (ES5) BlockEditor's control style -->
-          <link href="resources/blockeditor/material.css" rel="stylesheet" type="text/css"/>
+          <link href="resources/blockeditor/fluent2.css" rel="stylesheet" type="text/css"/>
 
           <!-- JavaScript (ES5) BlockEditor's dependency global script -->
           <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
@@ -119,15 +120,16 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
        <head>
           <title>JavaScript (ES5)</title>
           <!-- JavaScript (ES5) BlockEditor's dependency style -->
-          <link href="resources/base/material.css" rel="stylesheet" type="text/css"/>
-          <link href="resources/buttons/material.css" rel="stylesheet" type="text/css"/>
-          <link href="resources/popups/material.css" rel="stylesheet" type="text/css"/>
-          <link href="resources/inputs/material.css" rel="stylesheet" type="text/css" />
-          <link href="resources/navigations/material.css" rel="stylesheet" type="text/css" />
-          <link href="resources/splitbuttons/material.css" rel="stylesheet" type="text/css"/>
+          <link href="resources/base/fluent2.css" rel="stylesheet" type="text/css"/>
+          <link href="resources/buttons/fluent2.css" rel="stylesheet" type="text/css"/>
+          <link href="resources/popups/fluent2.css" rel="stylesheet" type="text/css"/>
+          <link href="resources/inputs/fluent2.css" rel="stylesheet" type="text/css" />
+          <link href="resources/navigations/fluent2.css" rel="stylesheet" type="text/css" />
+          <link href="resources/splitbuttons/fluent2.css" rel="stylesheet" type="text/css"/>
+          <link href="resources/dropdowns/fluent2.css" rel="stylesheet" type="text/css"/>
 
           <!-- JavaScript (ES5) BlockEditor's control style -->
-          <link href="resources/blockeditor/material.css" rel="stylesheet" type="text/css"/>
+          <link href="resources/blockeditor/fluent2.css" rel="stylesheet" type="text/css"/>
 
           <!-- JavaScript (ES5) BlockEditor's dependency global script -->
           <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
@@ -145,12 +147,11 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
        <body>
             <!-- Add the HTML <div> element  -->
             <div id="container">
-                <button id="BlockEditor_default"></button>
+                <div id="BlockEditor_default"></div>
             </div>
             <script>
                 // Initializes the BlockEditor control
-                var BlockEditor = new ej.blockeditor
-                .BlockEditor({});
+                var BlockEditor = new ej.blockeditor.BlockEditor({});
 
                 // Render initialized BlockEditor.
                 BlockEditor.appendTo('#BlockEditor_default');
@@ -172,23 +173,26 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 >
 > Control Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Dependency Styles: `https://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/styles/material.css`
+> Dependency Styles: `https://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/styles/fluent2.css`
 >
-> Control Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material.css`
+> Control Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/fluent2.css`
 
 **Example:**
 > Script: [`https://cdn.syncfusion.com/ej2/ej2-blockeditor/dist/global/ej2-blockeditor.min.js`](https://cdn.syncfusion.com/ej2/ej2-blockeditor/dist/globalej2-blockeditor.min.js)
 >
-> Styles: [`https://cdn.syncfusion.com/ej2/ej2-blockeditor/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-blockeditor/styles/material.css)
+> Styles: [`https://cdn.syncfusion.com/ej2/ej2-blockeditor/styles/fluent2.css`](http://cdn.syncfusion.com/ej2/ej2-blockeditor/styles/fluent2.css)
 
 **Step 3:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the CDN link references. Now, add the `BlockEditor` element and initiate the `JavaScript (ES5) BlockEditor` control in the index.html by using following code.
 
 {% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/block-editor/getting-started/index.js %}
+{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/block-editor/getting-started/js/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/block-editor/getting-started/index" %}
+{% previewsample "page.domainurl/code-snippet/block-editor/getting-started" %}
 
 **Step 4:** Now, run the `index.html` in web browser, it will render the `Syncfusion JavaScript BlockEditor` control.

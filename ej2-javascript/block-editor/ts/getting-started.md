@@ -73,14 +73,14 @@ To render BlockEditor control, need to import blockeditor and its dependent cont
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
 
-@import "../../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-blockeditor/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-inputs/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-buttons/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-navigations/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-popups/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-dropdowns/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css";
+@import "../../node_modules/@syncfusion/ej2-base/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-inputs/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-buttons/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-navigations/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-popups/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-dropdowns/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-splitbuttons/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-blockeditor/styles/fluent2.css";
 
 {% endhighlight %}
 {% endtabs %}
@@ -109,7 +109,7 @@ Add the HTML input tag with ID attribute as the `element` to your `index.html` f
 
 <body>
     <div id="container">
-        <button id="blockeditor_default"></button>
+        <div id="blockeditor_default"></div>
     </div>
 </body>
 
@@ -159,4 +159,4 @@ The following example shows a basic BlockEditor control.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/block-editor/getting-started/index" %}
+{% previewsample "page.domainurl/code-snippet/block-editor/getting-started" %}

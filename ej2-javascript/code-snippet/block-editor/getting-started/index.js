@@ -1,5 +1,5 @@
 
-var overviewBlockEditor = new ej.blockeditor.BlockEditor({
-    });
+var blockeditor = new ej.blockeditor.BlockEditor({
+});
     
-overviewBlockEditor.appendTo('#blockeditor_default');
+blockeditor.appendTo('#blockeditor_default');

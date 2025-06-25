@@ -40,7 +40,7 @@ Local Data CRUD Operations allow you to efficiently manage and manipulate data s
 
 To perform CRUD operations on local data using DataManager, follow these steps:
 
-1. **Initialize the DataManager with local data:**
+**1. Initialize the DataManager with local data:**
 
   You can initialize the DataManager with a dataset by either:
 
@@ -48,7 +48,7 @@ To perform CRUD operations on local data using DataManager, follow these steps:
     
     * Passing the dataset directly to the `DataManager` constructor.
 
-2. **Perform CRUD operations using the following DataManager methods:**
+**2. Perform CRUD operations using the following DataManager methods:**
 
   * [insert](../api/data/dataManager/#insert) : The JSON data passed as a parameter to the insert method that is inserted to the data source of the data manager.
 
@@ -61,27 +61,27 @@ To perform CRUD operations on local data using DataManager, follow these steps:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/data/manipulation-cs1/index.ts %}
+{% include code-snippet/data/manipulation-cs4/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/data/manipulation-cs1/index.html %}
+{% include code-snippet/data/manipulation-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/data/manipulation-cs1" %}
+{% previewsample "page.domainurl/code-snippet/data/manipulation-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/data/manipulation-cs1/index.js %}
+{% include code-snippet/data/manipulation-cs4/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/data/manipulation-cs1/index.html %}
+{% include code-snippet/data/manipulation-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/data/manipulation-cs1" %}
+{% previewsample "page.domainurl/code-snippet/data/manipulation-cs4" %}
 {% endif %}
 
 > * Primary key name is required by the [update](../api/data/dataManager/#update) method to find the record to be updated.
@@ -93,7 +93,7 @@ Remote Data CRUD operations allow you to manage data hosted on a remote server o
 
 To perform CRUD operations on remote data using DataManager, follow these steps:
 
-1. **Initialize the DataManager with remote data:**
+**1. Initialize the DataManager with remote data:**
 
   You can bind the DataManager to a remote data source by specifying the service endpoint URL in the `url` property. Additionally, to handle CRUD operations properly, you should specify separate URLs for insert, update, and remove actions using the properties:
 
@@ -107,7 +107,7 @@ To perform CRUD operations on remote data using DataManager, follow these steps:
 
   To retrieve data from the remote server, use the DataManager’s [executeQuery](https://ej2.syncfusion.com/documentation/api/data/dataManager/#executequery) method. This method converts the **Query** object into a server request and sends it to the specified endpoint. It then waits for the server response in JSON format and returns the resulting data.
 
-2. **Perform CRUD operations using the following DataManager methods:**
+**2. Perform CRUD operations using the following DataManager methods:**
 
   Use the following DataManager methods to perform client-side CRUD actions, which are automatically translated into HTTP requests to the corresponding remote URLs:
 
@@ -160,7 +160,7 @@ To perform CRUD operations on remote data using DataManager, follow these steps:
 
 The Syncfusion ##Platform_Name## DataManager supports batch operations, allowing multiple CRUD actions such as create, update, and delete to be submitted in a single request. This feature improves performance by minimizing the number of HTTP requests sent to the data source, reducing network overhead and enhancing efficiency.
 
-Use the [saveChanges](../../api/data/dataManager/#savechanges) method to commit all pending changes (insertions, updates, and deletions) in a single call. This eliminates the need for individual requests for each action.
+Use the [saveChanges](../api/data/dataManager/#savechanges) method to commit all pending changes (insertions, updates, and deletions) in a single call. This eliminates the need for individual requests for each action.
 
 **How Batch processing works:**
 
@@ -176,6 +176,7 @@ These arrays are then passed to the DataManager’s `saveChanges` method along w
 
 Below is an example demonstrating batch CRUD operations using local data:
 
+{% if page.publishingplatform == "typescript" %}
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/data/manipulation-local-batch/index.ts %}
@@ -184,11 +185,10 @@ Below is an example demonstrating batch CRUD operations using local data:
 {% include code-snippet/data/manipulation-local-batch/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/data/manipulation-local-batch" %}
 
 {% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/data/manipulation-local-batch/index.js %}

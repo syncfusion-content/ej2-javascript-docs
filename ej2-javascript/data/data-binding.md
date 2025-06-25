@@ -17,7 +17,7 @@ This section explains how to establish data connections and perform data binding
 
 The Syncfusion ##Platform_Name## DataManager enables efficient data management in ##Platform_Name## applications. It supports both RESTful JSON data services binding and local JavaScript object array binding, providing flexibility to handle and manipulate data.
 
-Data binding is the process of connecting UI elements with data sources, allowing the UI to reflect changes in the data automatically. The [DataManager](../../api/data/dataManager/) abstracts this process by managing CRUD operations, query building, and communication with local or remote data sources.
+Data binding is the process of connecting UI elements with data sources, allowing the UI to reflect changes in the data automatically. The [DataManager](../api/data/dataManager/) abstracts this process by managing CRUD operations, query building, and communication with local or remote data sources.
 
 For example, consider an HR dashboard that displays a list of employees, including fields such as Name, Department, Role, and Status. Instead of writing custom code to fetch and manage data manually, the developer binds the Grid to a DataManager instance.
 
@@ -53,7 +53,7 @@ To achieve this:
     1. Assigning a JavaScript object array to the `json` property.
     2. Pass the array directly to the `DataManager` constructor during instantiation.
 
-* After binding the local data to the DataManager, you can query and manipulate the data using the built-in **Query** class in combination with the [executeLocal](../../api/data/dataManager/#executelocal)  method.
+* After binding the local data to the DataManager, you can query and manipulate the data using the built-in **Query** class in combination with the [executeLocal](../api/data/dataManager/#executelocal)  method.
 
 The following example demonstrates how to bind JSON data using the `executeLocal` method of DataManager:
 
@@ -94,7 +94,7 @@ Configure remote data binding with below steps:-
 
 * To bind remote data, you can use the DataManager by specifying the service endpoint URL in the `url` property. The DataManager handles all data interactions, including query serialization, server communication, and response parsing.
 
-* To retrieve data from the remote server, use the DataManager’s [executeQuery](../../api/data/datamanager/#executequery) method. This method converts the **Query** object into a server request and sends it to the specified endpoint. It then waits for the server response in JSON format and returns the resulting data.
+* To retrieve data from the remote server, use the DataManager’s [executeQuery](../api/data/datamanager/#executequery) method. This method converts the **Query** object into a server request and sends it to the specified endpoint. It then waits for the server response in JSON format and returns the resulting data.
 
 The following example demonstrates bind remote data using the `executeQuery` method of DataManager.
 
@@ -147,7 +147,7 @@ Binding local data allows you to directly associate a JavaScript object array wi
 
 For example, consider an HR dashboard that displays a list of employees, including fields such as Name, Department, Role, and Status. Instead of writing custom code to fetch and manage data manually, the developer binds the `Grid` to a DataManager instance initialized with a local array of employee objects. This enables easy sorting by department or filtering by role directly within the grid UI without additional server calls.
 
-To bind local data to the `Grid`, you can directly assign a JavaScript object array to the [dataSource](../../api/grid/#datasource) property. Alternatively, you can use an instance of the DataManager with a local data source.
+To bind local data to the `Grid`, you can directly assign a JavaScript object array to the [dataSource](../api/grid/#datasource) property. Alternatively, you can use an instance of the DataManager with a local data source.
 
 Here's an example demonstrating binding local data using the `DataManager`:
 
@@ -184,7 +184,7 @@ Binding Remote Data allows you to connect the `Grid` to a remote data source, su
 
 For example, in an e-commerce admin panel, the product inventory data can be very large and frequently updated. Binding the `Grid` to a remote service via DataManager allows the admin panel to fetch only the required pages of product data on demand, with built-in support for paging and sorting, ensuring performance and scalability.
 
-To bind remote data, you can configure the DataManager with the service endpoint URL and assign it to the `Grid's` [dataSource](../../api/grid/#datasource) property.
+To bind remote data, you can configure the DataManager with the service endpoint URL and assign it to the `Grid's` [dataSource](../api/grid/#datasource) property.
 
 Here’s an example demonstrating binding remote data to the `Grid` using the `DataManager`:
 
@@ -229,7 +229,7 @@ Binding local data allows you to directly associate a local dataset, such as a s
 
 For example, a form in a corporate intranet site may have a "Department" dropdown populated with a static list of departments such as HR, Sales, IT, and Marketing. Since these options rarely change, binding the DropDownList to a local array improves performance and eliminates unnecessary network requests.
 
-You can achieve this by making the `DropDownList` generate its list items from an array of complex data. To do this, map the appropriate fields using the [fields](../../api/drop-down-list/#fields) property and assign the dataset to the [dataSource](../../api/drop-down-list/#datasource) property.
+You can achieve this by making the `DropDownList` generate its list items from an array of complex data. To do this, map the appropriate fields using the [fields](../api/drop-down-list/#fields) property and assign the dataset to the [dataSource](../api/drop-down-list/#datasource) property.
 
 Additionally, the `DropDownList` supports binding an array of primitive data types such as strings or numbers.
 
@@ -268,7 +268,7 @@ Binding remote data allows you to fetch and display data dynamically from a remo
 
 For example, an e-commerce website’s product filter dropdown fetches available product categories from a remote server. As categories update frequently, the `DropDownList`, bound to a remote DataManager, ensures the filter list always reflects the latest categories without requiring app redeployment.
 
-You can achieve this by retrieving data from remote services using the `DataManager`. The [query](../../api/drop-down-list/#query) property is used to fetch and filter data from the service, and the resulting data can be bound to the `DropDownList` using [dataSource](../../api/drop-down-list/#datasource) property .
+You can achieve this by retrieving data from remote services using the `DataManager`. The [query](../api/drop-down-list/#query) property is used to fetch and filter data from the service, and the resulting data can be bound to the `DropDownList` using [dataSource](../api/drop-down-list/#datasource) property .
 
 Here’s an example demonstrating how to bind remote data to the `DropDownList` using the `DataManager`:
 
@@ -313,7 +313,7 @@ Binding local data allows you to directly associate a local dataset (such as a s
 
 For example, a small retail store manager’s dashboard displays daily sales data for the past week. Since the data is collected and stored locally on the device or in memory, the `Chart` binds directly to this local dataset to quickly visualize sales trends without needing server calls.
 
-You can bind a simple JSON data to the `Chart` using the [dataSource](../../api/chart/series/#datasource) property in the series. Then, map the fields in the JSON data to the [xName](../../api/chart/series/#xname) and [yName](../../api/chart/series/#yname) properties to represent the `Chart's` x-axis and y-axis values.
+You can bind a simple JSON data to the `Chart` using the [dataSource](../api/chart/series/#datasource) property in the series. Then, map the fields in the JSON data to the [xName](../api/chart/series/#xname) and [yName](../api/chart/series/#yname) properties to represent the `Chart's` x-axis and y-axis values.
 
 Here’s an example demonstrating binding local data using the `DataManager`:
 
@@ -350,7 +350,7 @@ Binding remote data allows you to fetch and display data dynamically from a remo
 
 For example, an online analytics dashboard shows live website traffic metrics. The `Chart` binds to a remote data source via DataManager, which continuously fetches real-time traffic data from a web API and updates the chart dynamically to reflect visitor trends.
 
-You can bind remote data to the `Chart` using the `DataManager`. The DataManager requires minimal configuration, such as the web service URL, adaptor, and cross-domain settings, to interact with the service endpoint properly. You can then assign the instance of DataManager to the [dataSource](../../api/chart/series/#datasource) property in the series and map the fields of the data to the [xName](../../api/chart/series/#xname) and [yName](../../api/chart/series/#yname) properties. Additionally, you can use the [query](../../api/chart/series/#query) property to filter the data.
+You can bind remote data to the `Chart` using the `DataManager`. The DataManager requires minimal configuration, such as the web service URL, adaptor, and cross-domain settings, to interact with the service endpoint properly. You can then assign the instance of DataManager to the [dataSource](../api/chart/series/#datasource) property in the series and map the fields of the data to the [xName](../api/chart/series/#xname) and [yName](../api/chart/series/#yname) properties. Additionally, you can use the [query](../api/chart/series/#query) property to filter the data.
 
 Here’s an example demonstrating how to bind remote data using the `DataManager`:
 

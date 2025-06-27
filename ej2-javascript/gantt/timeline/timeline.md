@@ -273,6 +273,45 @@ In the Gantt control, you can enable or disable the mouse hover tooltip of timel
 {% previewsample "page.domainurl/code-snippet/gantt/gantt-tooltip-cs2" %}
 {% endif %}
 
+## Show/hide weekends
+
+The [timelineSettings.showWeekend](../../api/gantt/timelineSettings/#showWeekend) property is used to customize the timeline in the Gantt component by controlling the visibility of weekends. To exclude weekends from the timeline, set the `showWeekend` property to `false` in the `timelineSettings` configuration. This feature is particularly useful for focusing the timeline on working days, enhancing project management efficiency by hiding weekends from the view.
+
+>Note: To customize non-working or weekend days in the Gantt chart, refer to the [workWeek](../../gantt/task-scheduling#weekendnon-working-days) documentation for detailed information.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/timeline-showweekend-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/timeline-showweekend-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/timeline-showweekend-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/timeline-showweekend-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/timeline-showweekend-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/timeline-showweekend-cs1" %}
+{% endif %}
+
+> Limitations
+>* The `showWeekend` feature does not support baselines.
+>* The `showWeekend` is not compatible with the manual task mode.
+>* Non-working hours cannot be excluded when `showWeekend` is set to false.
+>* Holidays are not excluded from the timeline if `showWeekend` is set to false.
+
 ## Timeline template
 
 In the Gantt component, you can customize timeline cells using the [timelineTemplate](../../api/gantt/#timelineTemplate) property, allowing for the customization of HTML content within timeline cells. This feature enhances the visual appeal and enables personalized functionality.

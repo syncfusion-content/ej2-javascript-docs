@@ -1,7 +1,7 @@
 ---
 layout: post
-title: State persistence in ##Platform_Name## Data control | Syncfusion
-description: Learn here all about dataManager state persistence in Syncfusion ##Platform_Name## Data control of Syncfusion Essential JS 2 and more.
+title: State persistence in ##Platform_Name## Data DataManager | Syncfusion
+description: Learn here all about dataManager state persistence in Syncfusion ##Platform_Name## Data DataManager of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: State persistence
 publishingplatform: ##Platform_Name##
@@ -9,145 +9,257 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# State persistence in ##Platform_Name## Data control
+# State persistence in ##Platform_Name## DataManager
 
-State persistence refers to the ability of the DataManager to maintain its state in the browser's localStorage, even when the browser is refreshed or when navigating to a different page within the same browser. To enable this feature, you need to set the `id` and `enablePersistence` properties in the DataManager. This allows the DataManager's query object to persistently store in the local storage.
+State persistence in Syncfusion ##Platform_Name## DataManager refers to its ability to retain data operation states such as sorting, filtering, paging, and grouping in the browser’s `localStorage`, even when the user refreshes the page or navigates across different views within the same browser session. This allows the DataManager’s query object to persistently store in the local storage. To enable this feature, set the `enablePersistence` property to **true** and provide a unique `id` for the DataManager.
 
-```ts
-import { DataManager, Query, UrlAdaptor } from "@syncfusion/ej2-data";
+Benefits of enabling state persistence:
 
-let SERVICE_URI =
-  "https://services.syncfusion.com/js/production/api/UrlDataSource";
+* Seamless user experience with no loss of state across page transitions or reloads.
+* Automatically reapplies the last known query state on initialization.
+* Ideal for dashboards or multipage applications where consistent view state is critical.
 
-new DataManager({
-  url: SERVICE_URI,
-  adaptor: new UrlAdaptor(),
-  //Mandatory properties to use state persistence.
-  enablePersistence: true,
-  id: "johnDoe",
-})
-  .executeQuery(new Query().take(8))
-  .then((e) => {
-    //e.result will contain the records
-  });
-```
+For example, in a sales analytics dashboard, users may sort transactions by revenue and apply filters on customer regions. With state persistence enabled, these preferences remain intact even after a page reload eliminating the need to repeat the same operations, thus improving usability and efficiency.
+
+The following sample demonstrates how to implement state persistence using DataManager and display the fetched data. In this example, an initial paging query (skip(5).take(8)) is used, and the paging state is automatically persisted across reloads.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+
+{% include code-snippet/data/state-persistence-cs1/index.ts %}
+{% endhighlight %}
+
+{% highlight html tabtitle="index.html" %}
+
+{% include code-snippet/data/state-persistence-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/data/state-persistence-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+
+{% include code-snippet/data/state-persistence-cs1/index.js %}
+{% endhighlight %}
+
+{% highlight html tabtitle="index.html" %}
+
+{% include code-snippet/data/state-persistence-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/data/state-persistence-cs1" %}
+{% endif %}
 
 ## Preventing a query from persistence
 
-By default, the DataManager can persist various types of queries, such as sorting, searching, filtering, and selection queries. However, there may be cases where you want to exclude specific queries from persistence. To achieve this, you can utilize the `ignoreOnPersist` property and specify the queries you wish to exclude. Refer to the table below for the naming conventions of DataManager queries:
+By default, the Syncfusion ##Platform_Name## DataManager can persist various types of queries, such as sorting, searching, filtering, and selection queries. However, there may be cases where you want to exclude specific queries from persistence. To achieve this, you can utilize the `ignoreOnPersist` property and specify the queries you wish to exclude. By using this property, only selected aspects of the DataManager’s state can be retained while excluding others such as sorting, searching, filtering, grouping, or selection.
 
-Sorting: onSortBy
-Searching: onSearch
-Selection: onSelect
-Filtering: onWhere
-Grouping: onGroup
+The following are the query types that can be excluded using `ignoreOnPersist`. This property accepts an array of query keys representing the operations you wish to exclude from persistence which is described below as follows:
 
-The `ignoreOnPersist` property type is an array, allowing you to exclude multiple queries from persistence according to your requirements.
-Refer to the following example, which demonstrates how to exclude the sorting query ("onSortBy") and the search query ("onSearch") from being persisted in the DataManager:
+Supported query keys:
 
-```ts
-import { DataManager, Query, UrlAdaptor } from "@syncfusion/ej2-data";
+| Operation            | Query Key        |
+|----------------------|------------------|
+| Sorting              | `onSortBy`       |
+| Searching            | `onSearch`       |
+| Filtering            | `onWhere`        |
+| Grouping             | `Grouping`       |
 
-let SERVICE_URI =
-  "https://services.syncfusion.com/js/production/api/UrlDataSource";
+* The `ignoreOnPersist` property type is an array, allowing you to exclude multiple queries from persistence according to your requirements.
+* Refer to the following example, which demonstrates how to exclude the sorting query ("onSortBy") and the search query ("onSearch") from being persisted in the DataManager:
 
-new DataManager({
-  url: SERVICE_URI,
-  adaptor: new UrlAdaptor(),
-  enablePersistence: true,
-  id: "DataManagerid",
-  //sort and search query won't persist now.
-  ignoreOnPersist: ["onSortBy", "onSearch"],
-})
-  .executeQuery(new Query().sortBy("Designation", "descending").take(8))
-  .then((e) => {
-    //e.result will contain the records
-  });
-```
+{% if page.publishingplatform == "typescript" %}
 
-## How to get or set the existing persisted data
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
 
-To access or modify the existing persisted data in the DataManager, you can utilize the [`getPersistedData`](https://ej2.syncfusion.com/documentation/api/data/dataManager/#getpersisteddata) and [`setPersistData`](https://ej2.syncfusion.com/documentation/api/data/dataManager/#setpersistdata) methods available in the DataManager.
+{% include code-snippet/data/state-persistence-cs2/index.ts %}
+{% endhighlight %}
 
-The [`getPersistedData`](https://ej2.syncfusion.com/documentation/api/data/dataManager/#getpersisteddata) method allows you to retrieve the existing persisted data. It takes a single argument, which is the DataManager's `id`. By passing the DataManager's id, you can retrieve the persisted data associated with the DataManager from the window.localStorage. Here is an example of how to use the getPersistedData method:
+{% highlight html tabtitle="index.html" %}
 
-```ts
-import { DataManager, Query, UrlAdaptor } from "@syncfusion/ej2-data";
+{% include code-snippet/data/state-persistence-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/data/state-persistence-cs2" %}
 
-let SERVICE_URI =
-  "https://services.syncfusion.com/js/production/api/UrlDataSource";
+{% elsif page.publishingplatform == "javascript" %}
 
-let dataManager = new DataManager({
-  url: SERVICE_URI,
-  adaptor: new UrlAdaptor(),
-  enablePersistence: true,
-  id: "Johndoe",
-});
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
 
-let persistedQuery = dataManager.getPersistedData("Johndoe");
-```
-On the other hand, the [`setPersistData`](https://ej2.syncfusion.com/documentation/api/data/dataManager/#setpersistdata) method enables you to add a query to the existing persisted data. It accepts three arguments:
+{% include code-snippet/data/state-persistence-cs2/index.js %}
+{% endhighlight %}
 
-Original event: Set this argument to null.
-Id: Pass the DataManager's id value.
-Query: Provide the query that you want to add to the persisted data.
+{% highlight html tabtitle="index.html" %}
 
-Here is an example demonstrating how to add a query to the existing persisted data:
+{% include code-snippet/data/state-persistence-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
 
-```ts
-import { DataManager, Query, UrlAdaptor } from "@syncfusion/ej2-data";
+{% previewsample "page.domainurl/code-snippet/data/state-persistence-cs2" %}
+{% endif %}
 
-let SERVICE_URI =
-  "https://services.syncfusion.com/js/production/api/UrlDataSource";
+## Get/Set existing persisted data
 
-let dataManager = new DataManager({
-  url: SERVICE_URI,
-  adaptor: new UrlAdaptor(),
-  enablePersistence: true,
-  id: "Johndoe",
-});
+The Syncfusion ##Platform_Name## DataManager provides built in methods to retrieve and update the persisted query state stored in the browser’s `localStorage`. For example, to modify, inspect, or reuse persisted configurations across sessions or user roles. 
 
-let query = new Query().sortBy("Designation", "descending").take(8);
+* getPersistedData : This method returns the current persisted state of the DataManager, including query information like sorting, filtering, searching, and more.
+* setPersistData : This method allows you to update or overwrite the existing persisted data with a custom state object. It is especially useful when restoring saved configurations or applying a default state programmatically.
 
-dataManager.setPersistData(null, "Johndoe", query);
+The `getPersistedData` method retrieves the query state saved in the browser’s `localStorage` for a specific DataManager instance. It requires the `id` of the DataManager as a parameter and returns the persisted query information such as filtering, sorting, or paging configurations.
 
-```
-By using the setPersistData method, you can append the specified query to the DataManager's existing persisted data.
+In the following example, the method is used to retrieve and log the persisted sorting state of the DataManager with the id **JohnDoe**, where the data was sorted by the **Designation** field in **descending** order.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+
+{% include code-snippet/data/state-persistence-cs3/index.ts %}
+{% endhighlight %}
+
+{% highlight html tabtitle="index.html" %}
+
+{% include code-snippet/data/state-persistence-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/data/state-persistence-cs3" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+
+{% include code-snippet/data/state-persistence-cs3/index.js %}
+{% endhighlight %}
+
+{% highlight html tabtitle="index.html" %}
+
+{% include code-snippet/data/state-persistence-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/data/state-persistence-cs3" %}
+{% endif %}
+
+![getPersistData](./image/getPersistData.png)
+
+The `setPersistData` method allows adding or updating the persisted query data for the specified DataManager. It accepts the following three arguments:
+
+* Original event: Set to `null` when not using within an event context.
+
+* id: A string representing the unique `id` of the DataManager instance.
+
+* Query: A `query` object that defines the data operation (such as sorting, filtering, etc.) to be persisted.
+
+In this example, the existing persisted query sorted by **Designation** is updated using `setPersistData` to a new query that applies a **descending** sort on **EmployeeID**.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+
+{% include code-snippet/data/state-persistence-cs4/index.ts %}
+{% endhighlight %}
+
+{% highlight html tabtitle="index.html" %}
+
+{% include code-snippet/data/state-persistence-cs4/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/data/state-persistence-cs4" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+
+{% include code-snippet/data/state-persistence-cs4/index.js %}
+{% endhighlight %}
+
+{% highlight html tabtitle="index.html" %}
+
+{% include code-snippet/data/state-persistence-cs4/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/data/state-persistence-cs4" %}
+{% endif %}
+
+![setPersistData](./image/setPersistData.png)
+
+By using the `setPersistData` method, the persisted query state of the DataManager is updated with the specified `query`.
 
 ## Restoring the initial state of Datamanager
 
-If you have enabled the `enablePersistence` feature in the DataManager, it automatically retains the previous state when the browser is refreshed or reloaded. However, there might be situations where you want to clear the persistence and load the initial state of the DataManager. In such cases, you can utilize the `clearPersistence()` method provided by the DataManager.
+When the `enablePersistence` feature is enabled in Syncfusion ##Platform_Name## DataManager, it automatically stores and retains the last known state (e.g., sorting, filtering, paging) in the browser’s `localStorage`. This ensures the user’s configuration persists across page reloads or browser sessions.
 
-Here is a code example demonstrating how to clear the persistence in the DataManager:
+However, in certain scenario, such as application resets, user preference changes, or logout flows you may want to clear the persisted state and restore the DataManager to its original configuration.
 
-```ts
-import { DataManager, Query, UrlAdaptor } from "@syncfusion/ej2-data";
+To achieve this, use the `clearPersistence()` method provided by the DataManager. This will remove all persisted data associated with the DataManager id and restore it to its initial state.
 
-let SERVICE_URI =
-  "https://services.syncfusion.com/js/production/api/UrlDataSource";
+The following sample demonstrates how to clear the persisted state in the DataManager using the `clearPersistence` method:
 
-let dataManager = new DataManager({
-  url: SERVICE_URI,
-  adaptor: new UrlAdaptor(),
-  enablePersistence: true,
-  id: "dataManagerid",
-});
+{% if page.publishingplatform == "typescript" %}
 
-let query = new Query().sortBy("Designation", "descending").take(8);
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
 
-//sets persist query to browser storage.
-dataManager.setPersistData(null, "Johndoe", query);
+{% include code-snippet/data/state-persistence-cs5/index.ts %}
+{% endhighlight %}
 
-//clears the persisted query.
-dataManager.clearPersistence();
-```
-By invoking the clearPersistence() method, you can remove the persisted data and restore the DataManager to its initial state.
+{% highlight html tabtitle="index.html" %}
+
+{% include code-snippet/data/state-persistence-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/data/state-persistence-cs5" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+
+{% include code-snippet/data/state-persistence-cs5/index.js %}
+{% endhighlight %}
+
+{% highlight html tabtitle="index.html" %}
+
+{% include code-snippet/data/state-persistence-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/data/state-persistence-cs5" %}
+{% endif %}
+
+In this sample, the DataManager is initially configured to sort the data by the **Designation** field in descending order. This query is executed on load, and the resulting state is automatically stored in the browser’s `localStorage` due to the `enablePersistence` setting.
+
+![Initial Query](./image/initial-query.png)
+
+When the Apply Query button is clicked, a new query is applied. This updates the table content by sorting based on the **EmployeeID** field and again stores the latest query state in `localStorage`.
+
+![Apply Query](./image/apply-query.png)
+
+When the Clear Persistence button is clicked, the `clearPersistence()` method is called, which removes the stored query state from `localStorage`. This restores the DataManager to its original state, so any previously applied queries such as sorting will no longer be retained after a page reload.
+
+![Clear Persistence](./image/clear-persistence.png)
 
 ## Use case example demonstrating state persistence with the DataManager
 
-This demonstration involves two controls, namely the **Grid** control and the **Chart** control, which both fetch data from the same instance of the DataManager, which has the state persistence feature enabled.
+This demonstration involves two controls, namely the **Grid** and the **Chart**, which both fetch data from the same instance of the DataManager, which has the state persistence feature enabled.
 
-The Grid control is responsible for displaying the entire dataset, while the Chart control presents user reviews based on specific data from the "column name" field. Both controls are associated with the same DataManager instance and it has enabled the state persistence feature. The query state of the DataManager is automatically saved in the browser's local storage as the user applies filtering and sorting actions. In both controls are reloaded the data with the last persisted state while refreshing or reloading the browser.
+The Grid is responsible for displaying the entire dataset, while the Chart presents user reviews based on specific data from the "column name" field. Both controls are associated with the same DataManager instance and it has enabled the state persistence feature. The query state of the DataManager is automatically saved in the browser's local storage as the user applies filtering and sorting actions. In both controls are reloaded the data with the last persisted state while refreshing or reloading the browser.
 
 In this demo, the filter query and sort query are persisted, whereas the search query is not persisted. The onSearch query is excluded from persistence by setting it in the ignoreOnPersist property of the DataManager.
 
@@ -159,7 +271,7 @@ Step 2: This demo allows you to select Grid items by clicking checkboxes and add
 
 You also can filter the product items using the product category filter. However, this category filter is also not persisted.
 
-The Chart control allows you to see the product reviews.
+The Chart allows you to see the product reviews.
 
 Step 3: To log out, simply use the "Logout" button.
 

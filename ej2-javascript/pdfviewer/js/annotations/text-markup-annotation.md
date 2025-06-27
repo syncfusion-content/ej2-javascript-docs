@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Text markup annotation in ##Platform_Name## Pdfviewer control
 
-The PDF Viewer control provides the options to add, edit, and delete text markup annotations such as highlight, underline, and strikethrough annotations in the PDF document.
+The PDF Viewer control provides the options to add, edit, and delete text markup annotations such as highlight, underline, strikethrough and squiggly annotations in the PDF document.
 
-![Alt text](./images/text_markup_annotation.png)
+![Alt text](../../images/text_markup_annotation.png)
 
 ## Highlight a text
 
@@ -23,7 +23,7 @@ There are two ways to highlight a text in the PDF document:
     * Select a text in the PDF document and right-click it.
     * Select **Highlight** option in the context menu that appears.
 
-![Alt text](./images/highlight_context.png)
+![Alt text](../../images/highlight_context.png)
 
 <!-- markdownlint-disable MD029 -->
 2. Using the annotation toolbar
@@ -32,7 +32,7 @@ There are two ways to highlight a text in the PDF document:
     * Select the text and the highlight annotation will be added.
     * You can also select the text and apply the highlight annotation using the **Highlight** button.
 
-![Alt text](./images/highlight_button.PNG)
+![Alt text](../../images/highlight_button.PNG)
 
 In the pan mode, if the highlight mode is entered, the PDF Viewer control will switch to text select mode to enable the text selection for highlighting the text.
 
@@ -128,7 +128,7 @@ There are two ways to underline a text in the PDF document:
     * Select a text in the PDF document and right-click it.
     * Select **Underline** option in the context menu that appears.
 
-![Alt text](./images/underline_context.png)
+![Alt text](../../images/underline_context.png)
 
 2. Using the annotation toolbar
     * Click the **Edit Annotation** button in the PDF Viewer toolbar. A toolbar appears below it.
@@ -136,7 +136,7 @@ There are two ways to underline a text in the PDF document:
     * Select the text and the underline annotation will be added.
     * You can also select the text and apply the underline annotation using the **Underline** button.
 
-![Alt text](./images/underline_button.png)
+![Alt text](../../images/underline_button.png)
 
 In the pan mode, if the underline mode is entered, the PDF Viewer control will switch to text select mode to enable the text selection for underlining the text.
 
@@ -234,7 +234,7 @@ There are two ways to strikethrough a text in the PDF document:
     * Select a text in the PDF document and right-click it.
     * Select **Strikethrough** option in the context menu that appears.
 
-![Alt text](./images/strikethrough_context.png)
+![Alt text](../../images/strikethrough_context.png)
 
 2. Using the annotation toolbar
     * Click the **Edit Annotation** button in the PDF Viewer toolbar. A toolbar appears below it.
@@ -242,7 +242,7 @@ There are two ways to strikethrough a text in the PDF document:
     * Select the text and the strikethrough annotation will be added.
     * You can also select the text and apply the strikethrough annotation using the **Strikethrough** button.
 
-![Alt text](./images/strikethrough_button.png)
+![Alt text](../../images/strikethrough_button.png)
 
 In the pan mode, if the strikethrough mode is entered, the PDF Viewer control will switch to text select mode to enable the text selection for striking through the text.
 
@@ -330,6 +330,111 @@ if (strikethrough) {
 {% endhighlight %}
 {% endtabs %}
 
+## Squiggly a text
+
+There are two ways to add squiggly to a text in the PDF document:
+
+1. Using the context menu
+    * Select a text in the PDF document and right-click it.
+    * Select **Squiggly** option in the context menu that appears.
+
+![Alt text](../../images/squiggly_context.png)
+
+2. Using the annotation toolbar
+    * Click the **Edit Annotation** button in the PDF Viewer toolbar. A toolbar appears below it.
+    * Select the **Squiggly** button in the annotation toolbar. It enables the squiggly mode.
+    * Select the text and the squiggly annotation will be added.
+    * You can also select the text and apply the squiggly annotation using the **Squiggly** button.
+
+![Alt text](../../images/squiggly_button.png)
+
+In the pan mode, if the squiggly mode is entered, the PDF Viewer control will switch to text select mode to enable the text selection for adding squiggly to the text.
+
+Refer to the following code snippet to switch to squiggly mode.
+
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/pdfviewer/es5-text-markup-annotation/squiggly-mode-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+N> To set up the **server-backed PDF Viewer**,
+Add the below `serviceUrl` in the `index.html` file
+`serviceUrl: 'https://services.syncfusion.com/js/production/api/pdfviewer'`
+
+{% previewsample "page.domainurl/code-snippet/pdfviewer/es5-text-markup-annotation/squiggly-mode-cs1" %}
+
+Refer to the following code snippet to switch back to normal mode from squiggly mode.
+
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/pdfviewer/es5-text-markup-annotation/squiggly-normal-mode-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+N> To set up the **server-backed PDF Viewer**,
+Add the below `serviceUrl` in the `index.html` file
+`serviceUrl: 'https://services.syncfusion.com/js/production/api/pdfviewer'`
+
+{% previewsample "page.domainurl/code-snippet/pdfviewer/es5-text-markup-annotation/squiggly-normal-mode-cs1" %}
+
+## Squiggly a text programmatically
+
+The PDF Viewer library enables you to programmatically add squiggly to text within the PDF Viewer control using the [**addAnnotation()**](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/annotation/#addannotation) method.
+
+Here's an example of how you can use the **addAnnotation()** method to apply squiggly programmatically:
+
+```html
+<button id="squiggly">Add TextMarkup annotation programmatically</button>
+```
+
+{% tabs %}
+{% highlight ts tabtitle="Standalone" %}
+
+var pdfviewer = new ej.pdfviewer.PdfViewer({
+                    documentPath: "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf",
+                    resourceUrl : "https://cdn.syncfusion.com/ej2/30.1.37/dist/ej2-pdfviewer-lib",
+                });
+ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch, ej.pdfviewer.Print, ej.pdfviewer.Navigation, ej.pdfviewer.Toolbar,
+                              ej.pdfviewer.Magnification, ej.pdfviewer.Annotation, ej.pdfviewer.FormDesigner, ej.pdfviewer.FormFields, ej.pdfviewer.PageOrganizer);
+pdfviewer.appendTo('#PdfViewer');
+
+let squiggly = document.getElementById('squiggly');
+if (squiggly) {
+    squiggly.addEventListener('click', function () {
+        if (pdfviewer) {
+            pdfviewer.annotation.addAnnotation("Squiggly", {
+                bounds: [{ x: 97, y: 110, width: 350, height: 14 }],
+                pageNumber: 1
+            });
+        }
+    });
+}
+
+{% endhighlight %}
+{% highlight ts tabtitle="Server-Backed" %}
+
+var pdfviewer = new ej.pdfviewer.PdfViewer({
+                    documentPath: "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf",
+                    serviceUrl : "https://services.syncfusion.com/js/production/api/pdfviewer",
+                });
+ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch, ej.pdfviewer.Print, ej.pdfviewer.Navigation, ej.pdfviewer.Toolbar,
+                              ej.pdfviewer.Magnification, ej.pdfviewer.Annotation, ej.pdfviewer.FormDesigner, ej.pdfviewer.FormFields, ej.pdfviewer.PageOrganizer);
+pdfviewer.appendTo('#PdfViewer');
+let squiggly = document.getElementById('squiggly');
+if (squiggly) {
+    squiggly.addEventListener('click', function () {
+        if (pdfviewer) {
+            pdfviewer.annotation.addAnnotation("Squiggly", {
+                bounds: [{ x: 97, y: 110, width: 350, height: 14 }],
+                pageNumber: 1
+            });
+        }
+    });
+}
+{% endhighlight %}
+{% endtabs %}
+
 ## Deleting a text markup annotation
 
 The selected annotation can be deleted by the following ways:
@@ -342,7 +447,7 @@ The selected annotation can be deleted by the following ways:
     * Select the annotation to be deleted.
     * Click the **Delete Annotation** button in the annotation toolbar. The selected annotation will be deleted.
 
-![Alt text](./images/delete_button.png)
+![Alt text](../../images/delete_button.png)
 
 ## Editing the properties of the text markup annotation
 
@@ -352,17 +457,17 @@ The color and the opacity of the text markup annotation can be edited using the 
 
 The color of the annotation can be edited using the color palette provided in the Edit Color tool.
 
-![Alt text](./images/edit_color.png)
+![Alt text](../../images/edit_color.png)
 
 ### Editing opacity
 
 The opacity of the annotation can be edited using the range slider provided in the Edit Opacity tool.
 
-![Alt text](./images/edit_opacity.png)
+![Alt text](../../images/edit_opacity.png)
 
 ## Setting default properties during control initialization
 
-The properties of the text markup annotation can be set before creating the control using highlightSettings, underlineSettings, and strikethroughSettings.
+The properties of the text markup annotation can be set before creating the control using highlightSettings, underlineSettings, strikethroughSettings and squigglySettings.
 
 >After editing the default color and opacity using the Edit Color tool and Edit Opacity tool, they will be changed to the selected values.
 
@@ -375,7 +480,8 @@ var pdfviewer = new ej.pdfviewer.PdfViewer({
     documentPath: "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"",
     highlightSettings: {author: 'Guest User', subject: 'Important', color: '#ffff00', opacity: 0.9, modifiedDate: ''},
     underlineSettings: {author: 'Guest User', subject: 'Points to be remembered', color: '#00ffff', opacity: 0.9, modifiedDate: ''},
-    strikethroughSettings: {author: 'Guest User', subject: 'Not Important', color: '#ff00ff', opacity: 0.9, modifiedDate: ''}
+    strikethroughSettings: {author: 'Guest User', subject: 'Not Important', color: '#ff00ff', opacity: 0.9, modifiedDate: ''},
+    squigglySettings: {author: 'Guest User', subject: 'Spelling Error', color: '#ff0000', opacity: 0.9, modifiedDate: ''}
 });
 ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.Toolbar, ej.pdfviewer.Magnification, ej.pdfviewer.LinkAnnotation,ej.pdfviewer.ThumbnailView, ej.pdfviewer.BookmarkView, ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch, ej.pdfviewer.Navigation, ej.pdfviewer.Print);
 pdfviewer.appendTo('#PdfViewer');
@@ -388,7 +494,8 @@ var pdfviewer = new ej.pdfviewer.PdfViewer({
     serviceUrl: 'https://services.syncfusion.com/js/production/api/pdfviewer',
     highlightSettings: {author: 'Guest User', subject: 'Important', color: '#ffff00', opacity: 0.9, modifiedDate: ''},
     underlineSettings: {author: 'Guest User', subject: 'Points to be remembered', color: '#00ffff', opacity: 0.9, modifiedDate: ''},
-    strikethroughSettings: {author: 'Guest User', subject: 'Not Important', color: '#ff00ff', opacity: 0.9, modifiedDate: ''}
+    strikethroughSettings: {author: 'Guest User', subject: 'Not Important', color: '#ff00ff', opacity: 0.9, modifiedDate: ''},
+    squigglySettings: {author: 'Guest User', subject: 'Spelling Error', color: '#ff0000', opacity: 0.9, modifiedDate: ''}
 });
 ej.pdfviewer.PdfViewer.Inject(ej.pdfviewer.Toolbar, ej.pdfviewer.Magnification, ej.pdfviewer.LinkAnnotation,ej.pdfviewer.ThumbnailView, ej.pdfviewer.BookmarkView, ej.pdfviewer.TextSelection, ej.pdfviewer.TextSearch, ej.pdfviewer.Navigation, ej.pdfviewer.Print);
 pdfviewer.appendTo('#PdfViewer');
@@ -459,5 +566,5 @@ pdfviewer.appendTo('#PdfViewer');
 
 ## See also
 
-* [Toolbar items](./toolbar)
-* [Feature Modules](./feature-module)
+* [Toolbar items](../toolbar)
+* [Feature Modules](../feature-module)

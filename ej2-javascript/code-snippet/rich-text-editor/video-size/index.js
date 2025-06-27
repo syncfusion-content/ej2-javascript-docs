@@ -5,18 +5,10 @@ var editor = new ej.richtexteditor.RichTextEditor({
     },
     insertVideoSettings: {
         saveUrl: "https://aspnetmvc.syncfusion.com/services/api/uploadbox/Save",
-        path: "../Files/"
-    },
-    fileUploading: onFileUpload
+        path: "../Files/",
+        maxFileSize: 30000000
+    }
 });
 
 // render initialized Rich Text Editor
 editor.appendTo('#editor');
-
-function onFileUpload (args) {
-    var sizeInBytes = args.fileData.size;
-    var fileSize = 500000;
-    if (fileSize < sizeInBytes) {
-        args.Cancel = true;
-    }
-}

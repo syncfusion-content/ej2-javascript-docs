@@ -29,7 +29,7 @@ The following table shows built-in toolbar items and its actions:-
 | AnnotationEditTool | This tool provides options to enable or disable the edit mode of annotation in the PDF Viewer.|
 | FormDesignerEditTool | This tool provides options to enable or disable the edit mode of form fields in the PDF Viewer.|
 
-### Show/Hide the default toolbar
+## Show/Hide the default toolbar
 
 The PDF Viewer has an option to show or hide the complete default toolbar. You can achieve this by using following two ways.,
 
@@ -83,7 +83,7 @@ Add the below `serviceUrl` in the `index.html` file
 
 {% previewsample "page.domainurl/code-snippet/pdfviewer/es5-toolbar/toolbar-method-cs1" %}
 
-### Show/Hide the default toolbaritem
+## Show/Hide the default toolbaritem
 
 The PDF Viewer has an option to show or hide these grouped items in the default toolbar.
 

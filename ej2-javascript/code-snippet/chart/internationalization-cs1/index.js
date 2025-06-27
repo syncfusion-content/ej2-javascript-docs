@@ -3,6 +3,7 @@ var chartData = [
     { x: 1940, y: 3.8, y1: 2.6}, { x: 1960, y: 3.4, y1: 3 },
     { x: 1980, y: 3.2, y1: 3.6 }, { x: 2000, y: 3.9, y1: 3 }
 ]
+ej.base.setCurrencyCode('EUR');
 var chart = new ej.charts.Chart({
     primaryXAxis: {
         title: 'Year',

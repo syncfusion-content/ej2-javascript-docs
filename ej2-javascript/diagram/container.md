@@ -17,7 +17,7 @@ A Container is a group of logically related shapes surrounded by a visible bound
 
 ### Add a Container
 
-The following code illustrates how to create a container node.
+The following code illustrates how to create a container node:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,6 +44,7 @@ The following code illustrates how to create a container node.
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/diagram/container-1" %}
+
 {% endif %}
 
 ### Setting a Header
@@ -77,6 +78,7 @@ The following code example explains how to define a container header and its cus
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/diagram/container-2" %}
+
 {% endif %}
 
 N> You can edit the header by double-clicking the region of the container's header.

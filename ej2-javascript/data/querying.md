@@ -67,7 +67,7 @@ This section categorizes the available `Query` methods into three groups for eas
 
 ### Basic query operations
 
-1.[select](https://ej2.syncfusion.com/documentation/api/data/query/#select)
+**1.[select](https://ej2.syncfusion.com/documentation/api/data/query/#select)**
 
 Specifies the fields (columns) to retrieve from the data source.
 
@@ -85,7 +85,7 @@ let query = new ej.data.Query().select(['id', 'name'])
  
 {% endif %}
 
-2.[using](https://ej2.syncfusion.com/documentation/api/data/query/#using)
+**2.[using](https://ej2.syncfusion.com/documentation/api/data/query/#using)**
 
 Sets a custom adaptor for the DataManager when executing a `Query`.
 
@@ -102,7 +102,7 @@ let query = new ej.data.Query().using(adaptorInstance);
 ``` 
 {% endif %}
 
-3.[from](https://ej2.syncfusion.com/documentation/api/data/query/#from)
+**3.[from](https://ej2.syncfusion.com/documentation/api/data/query/#from)**
 
 Defines the data collection or resource name to target in the `Query`.
 
@@ -120,7 +120,7 @@ let query = new ej.data.Query().from('collectionName');
  
 {% endif %}
 
-4.[take](https://ej2.syncfusion.com/documentation/api/data/query/#take)
+**4.[take](https://ej2.syncfusion.com/documentation/api/data/query/#take)**
 
 Retrieves only the specified number of records from the beginning of the result set.
 
@@ -138,7 +138,7 @@ let query = new ej.data.Query().take(5);
  
 {% endif %}
 
-5.[skip](https://ej2.syncfusion.com/javascript/documentation/api/data/query/#skip)
+**5.[skip](https://ej2.syncfusion.com/javascript/documentation/api/data/query/#skip)**
 
 Skips a given number of records from the beginning and returns the rest. 
 
@@ -187,7 +187,7 @@ The following example demonstrates how to specify a resource using `from()`, pro
 
 ### Operation based queries
 
-1.**Eager loading navigation properties**
+**1.Eager loading navigation properties**
 
 The Syncfusion ##Platform_Name## DataManager allows you to eagerly load related navigation properties using the [expand](../api/data/query/#expand) method. This is especially useful for reduces the number of server requests by including related entities in one fetch. Enhances performance and consistency in master detail or hierarchical data scenarios. The navigation properties values are accessed using appropriate field names separated by dot(.) sign.
 
@@ -220,7 +220,7 @@ The following example demonstrates how to retrieve **Orders** along with related
 {% previewsample "page.domainurl/code-snippet/data/getting-started-cs18" %}
 {% endif %}
 
-2.**Sorting**
+**2.Sorting**
 
 Sorting helps organize data based on the values of a specific field, making it easier to view and analyze.
 
@@ -292,7 +292,7 @@ The following example demonstrates how to fetch records from the server and manu
 {% previewsample "page.domainurl/code-snippet/data/querying-cs2" %}
 {% endif %}
 
-3.**Filtering**
+**3.Filtering**
 
 The Syncfusion ##Platform_Name## DataManager allows you to filter records using the [where](../api/data/query/#where) method. It supports simple and complex filtering scenarios, making it easy to retrieve a reduced and meaningful subset of data from a larger dataset.
 
@@ -430,7 +430,7 @@ The DataManager supports various `Predicate` methods:
 {% previewsample "page.domainurl/code-snippet/data/getting-started-cs21" %}
 {% endif %}
 
-4.**Searching**
+**4.Searching**
 
 Syncfusion ##Platform_Name## DataManager allows you to perform global or field specific searches across your dataset using the [search](../api/data/query/#search) method. It is used to filter the records from the entire data source based on the `search` parameter.
 
@@ -465,7 +465,7 @@ This method is ideal for implementing keyword based search experiences, especial
 
 > You can search particular fields by passing the field name collection in the second argument of [search](../api/data/query/#search) method.
 
-5.**Grouping**
+**5.Grouping**
 
 The Syncfusion ##Platform_Name## DataManager allows you to group records by one or more fields using the [group](../api/data/query/#group) method. Grouping is especially useful for reporting, data summarization, and categorization, where related records need to be logically organized based on shared field values.
 
@@ -500,7 +500,7 @@ The following example demonstrates how to group records by **EmployeeID**:
 
 > Multiple grouping can be done by simply chaining the [group](../api/data/query/#group) method.
 
-6.**Paging**
+**6.Paging**
 
 The Syncfusion ##Platform_Name## DataManager allow you to fetch data one page at a time instead of loading the entire dataset at once. This is especially useful when working with large collections of data, helping your application stay fast and responsive.
 
@@ -542,7 +542,7 @@ The following example demonstrate how to get the second page of data with 8 reco
 {% previewsample "page.domainurl/code-snippet/data/getting-started-cs24" %}
 {% endif %}
 
-7.**Aggregation**
+**7.Aggregation**
 
 The Syncfusion ##Platform_Name## DataManager allows you to compute summary values using the [aggregate](../api/data/query/#aggregate) method. This is useful when you need to display totals, averages, counts, or other statistical summaries alongside your data. Aggregation is ideal for dashboards, reports, and summary views, where high level insights like minimum, maximum, or total values are needed.
 
@@ -603,7 +603,7 @@ The custom [Query](../api/data/query/) methods are as follows:
 
 * [setKey(field)](https://ej2.syncfusion.com/documentation/api/data/query/#setkey)
 
-1.[addParams(key, value)](https://ej2.syncfusion.com/documentation/api/data/query/#addparams)
+**1.[addParams(key, value)](https://ej2.syncfusion.com/documentation/api/data/query/#addparams)**
 
 The `addParams` method enables you to append custom parameters to the `Query` string. These parameters are included in the server request and are particularly useful for:
 
@@ -642,7 +642,7 @@ The following example demonstrates how to add custom parameters to a `Query` req
 {% previewsample "page.domainurl/code-snippet/data/querying-cs3" %}
 {% endif %}
 
- 2.[clone()](https://ej2.syncfusion.com/documentation/api/data/query/#clone)
+**2.[clone()](https://ej2.syncfusion.com/documentation/api/data/query/#clone)**
 
 The Syncfusion ##Platform_Name## DataManager provides the `clone` method, which allows you to create a deep copy of the current `Query` object. This is particularly useful when you want to reuse a base `Query` and apply slight modifications without altering the original.
 
@@ -677,7 +677,7 @@ The following example demonstrates how to clone a base `Query`, skip the first f
 {% previewsample "page.domainurl/code-snippet/data/querying-cs4" %}
 {% endif %}
 
-3.[requiresCount(value: boolean)](https://ej2.syncfusion.com/documentation/api/data/query/#requirescount)
+**3.[requiresCount(value: boolean)](https://ej2.syncfusion.com/documentation/api/data/query/#requirescount)**
 
 The Syncfusion ##Platform_Name## DataManager provides the `requiresCount` method to instruct the server to return the total number of available records in addition to the paginated result set.
 
@@ -714,7 +714,7 @@ This method is essential for implementing pagination or infinite scrolling in UI
 {% previewsample "page.domainurl/code-snippet/data/querying-cs5" %}
 {% endif %}
 
- 4.[range(start: number, end: number)](https://ej2.syncfusion.com/documentation/api/data/query/#range)
+**4.[range(start: number, end: number)](https://ej2.syncfusion.com/documentation/api/data/query/#range)**
 
 The Syncfusion ##Platform_Name## DataManager provides the `range(start, end)` method to retrieve records within a specific index range. This method internally applies both `skip()` and `take()` logic, offering a concise and efficient way to fetch a slice of data.
 
@@ -747,7 +747,7 @@ This method is especially useful in scenarios such as infinite scrolling or virt
 {% previewsample "page.domainurl/code-snippet/data/querying-cs6" %}
 {% endif %}
 
- 5.[setKey(field: string)](https://ej2.syncfusion.com/documentation/api/data/query/#setkey)
+**5.[setKey(field: string)](https://ej2.syncfusion.com/documentation/api/data/query/#setkey)**
 
  The Syncfusion ##Platform_Name## DataManager includes the `setKey(field: string)` method to specify the primary key field for your dataset. This is crucial for enabling accurate CRUD operations such as update or delete where each record must be uniquely identifiable.
 

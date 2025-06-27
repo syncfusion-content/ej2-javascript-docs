@@ -13,11 +13,13 @@ let michaleUserModel = {
 let chatMessages = [
     {
         author: currentUserModel,
-        text: "Hi Michale, are we on track for the deadline?"
+        text: "Hi Michale, are we on track for the deadline?",
+        id: "chat-message-1"
     },
     {
         author: michaleUserModel,
         text: "Yes, the design phase is complete.",
+        id: "chat-message-2"
     },
     {
         author: currentUserModel,
@@ -25,7 +27,7 @@ let chatMessages = [
         replyTo: {
             user: michaleUserModel,
             text: 'Yes, the design phase is complete.',
-            messageID: 'user2'
+            messageID: 'chat-message-2'
         }
     }
 ];

@@ -145,7 +145,7 @@ The following example shows how to enable automatic port creation:
 {% include code-snippet/diagram/automaticPortCreation/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/diagram/automaticPautomaticPortCreationort/index.html %}
+{% include code-snippet/diagram/automaticPortCreation/index.html %}
 {% endhighlight %}
 {% endtabs %}
           

@@ -31,7 +31,7 @@ A sequence diagram includes several key elements such as participants, messages,
 | showDestructionMarker | boolean | Indicates whether a destruction marker (X) is shown at the end of the lifeline |
 | activationBoxes | UmlSequenceActivationBoxModel[] | A collection of activation boxes associated with the participant |
 
-The following code example illustrates how to create participants.
+The following code example illustrates how to create participants:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -58,6 +58,7 @@ The following code example illustrates how to create participants.
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/diagram/umlsequencediagram-1" %}
+
 {% endif %}
 
 ### Messages
@@ -112,6 +113,7 @@ The following code example illustrates how to create messages:
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/diagram/umlsequencediagram-2" %}
+
 {% endif %}
 
 ### Activation Boxes
@@ -126,7 +128,7 @@ The following code example illustrates how to create messages:
 | startMessageID | string \| number | ID of the message that initiates the activation |
 | endMessageID | string \| number | ID of the message that terminates the activation |
 
-The following code example illustrates how to create activation boxes.
+The following code example illustrates how to create activation boxes:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -153,6 +155,7 @@ The following code example illustrates how to create activation boxes.
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/diagram/umlsequencediagram-3" %}
+
 {% endif %}
 
 ### Fragments
@@ -185,7 +188,7 @@ The [UmlSequenceFragmentType](https://ej2.syncfusion.com/documentation/api/diagr
 | messageIds | (string \| number)[] | Collection of message IDs included in this condition section |
 | fragmentIds | string[] | Collection of nested fragments ids (for complex structures) |
 
-The following code example illustrates how to create fragments.
+The following code example illustrates how to create fragments:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -212,6 +215,7 @@ The following code example illustrates how to create fragments.
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/diagram/umlsequencediagram-4" %}
+
 {% endif %}
 
 ### Customizing Participant Spacing in Sequence Diagram 

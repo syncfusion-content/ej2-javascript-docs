@@ -247,7 +247,7 @@ let diagram: Diagram = new Diagram({
 diagram.appendTo('#diagram');
 ```
 
-![negativeAxisRestrict](../images/negativeAxisRestrict.gif)
+![negativeAxisRestrict](./images/negativeAxisRestrict.gif)
 
 N> A symbol dragged from the palette will only be added to the diagram if it’s fully positioned within the positive coordinate space.
 

@@ -52,25 +52,37 @@ const editor = new BlockEditor({
 });
 ```
 
-```css
-/* Custom CSS for custom theme */
-.custom-editor-theme {
-    border: 2px solid #007acc;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 122, 204, 0.15);
-}
+Below example demonstrates the usage of readonly and cssClass properties.
 
-.custom-editor-theme .e-block {
-    margin-bottom: 8px;
-}
+{% if page.publishingplatform == "typescript" %}
 
-.custom-editor-theme .e-block:hover {
-    background-color: #b5b5b5;
-    transition: ease-in-out 0.5s;
-}
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/block-editor/appearance/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/block-editor/appearance/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/block-editor/appearance/index.css %}
+{% endhighlight %}
+{% endtabs %}
 
-.custom-editor-theme .e-block [contenteditable=true]:empty::before {
-    color: #6c757d;
-    font-style: italic;
-}
-```
+{% previewsample "page.domainurl/code-snippet/block-editor/appearance" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/block-editor/appearance/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/block-editor/appearance/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/block-editor/appearance/index.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/appearance" %}
+{% endif %}

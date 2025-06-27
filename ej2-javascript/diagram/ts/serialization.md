@@ -140,9 +140,9 @@ The following example shows how to load mind map diagram from mermaid syntax.
           
 {% previewsample "page.domainurl/code-snippet/diagram/serialisation-cs3" %}
 
-#### Load Uml Sequence diagram
+#### Load UML Sequence diagram
 
-The following example shows how to load Uml Sequence diagram from mermaid syntax.
+The following example shows how to load UML Sequence diagram from mermaid syntax.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

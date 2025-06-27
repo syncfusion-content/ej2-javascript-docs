@@ -29,7 +29,7 @@ Below is the list of minimum dependencies required to use the DataManager.
 
 You can install DataManager via npm for your preferred framework.
 
-```npm
+```bash
 npm install @syncfusion/ej2-data
 
 ```

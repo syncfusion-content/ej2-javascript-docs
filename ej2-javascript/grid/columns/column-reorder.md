@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Column reorder in ##Platform_Name## Grid control
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control allows to reorder columns by drag and drop of a particular column header from one index to another index within the grid. This feature can be enabled by injecting the [Reorder](../../api/grid/reorder) module in the grid.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid control allows to reorder columns by drag and drop of a particular column header from one index to another index within the grid. This feature can be enabled by injecting the [Reorder](../../api/grid/reorder/) module in the grid.
 
 To reorder the columns, set the [allowReordering](../../api/grid/#allowreordering) property to **true** in the grid.
 
@@ -194,6 +194,46 @@ Here is an example of how to use the `reorderColumns` method to reorder single c
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/grid/reorder-column-ByFieldName-cs1" %}
+{% endif %}
+
+### Reorder columns using the column model (ideal for stacked headers)
+
+Previously, column reordering in the Grid was handled using methods like [reorderColumnByIndex](../../api/grid/#reordercolumnbyindex), [reorderColumns](../../api/grid/#reordercolumns), and [reorderColumnByTargetIndex](../../api/grid/#reordercolumnbytargetindex). These methods allowed reordering based on field names or index positions and were suitable for simple, flat column structures.
+
+To reorder stacked header columns, use the `reorderByColumnModel` method. It enables reordering by passing complete column model objects. This method is specifically designed to support [stacked header columns](../../grid/columns/column-headers#stacked-header), but it also works with normal column configurations.
+
+The `reorderColumnByModel` method accepts two arguments:
+
+* **fromColumn**: The column object that you want to move.
+* **toColumn**: The target column object before which the **fromColumn** should be placed.
+
+In this example, **Order Details** is moved before **Customer Name**, and **Ship Country** is moved before **Ship Name** within **Ship Details**, showing how `reorderColumnByModel` method reorders both normal and stacked header columns using a button click.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid/reorderByColumnModel/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/reorderByColumnModel/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid/reorderByColumnModel" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid/reorderByColumnModel/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid/reorderByColumnModel/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/reorderByColumnModel" %}
 {% endif %}
 
 ## Reorder events

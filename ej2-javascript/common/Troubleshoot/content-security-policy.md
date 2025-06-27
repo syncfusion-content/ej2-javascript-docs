@@ -13,15 +13,16 @@ domainurl: ##DomainURL##
 
 Content Security Policy (CSP) is a security feature implemented by web browsers that helps to protect against attacks such as cross-site scripting (XSS) and data injection. It limits the sources from which content can be loaded on a web page.
 
-To enable strict [Content Security Policy (CSP)](https://csp.withgoogle.com/docs/strict-csp.html), certain browser features are disabled by default. In order to use Syncfusion<sup style="font-size:70%">&reg;</sup> controls with strict CSP mode, it is Essential<sup style="font-size:70%">&reg;</sup> to include following directives in the CSP meta tag.
+To enable strict [Content Security Policy (CSP)](https://csp.withgoogle.com/docs/strict-csp.html), certain browser features are disabled by default. JavaScript EJ2 ES5 controls support strict CSP mode without requiring the `unsafe-eval` directive, starting with Essential Studio 2023 Volume 2 release (v22.1.34). Additionally, with the 2025 Volume 1 update (v29.1.33), most `inline style`-related issues have been resolved, significantly reducing the dependency on the unsafe-inline directive in the style-src policy for a more secure and CSP-compliant environment.
 
-* Syncfusion<sup style="font-size:70%">&reg;</sup> controls are rendered with calculated **inline styles** and **base64** font icons, which are blocked on a strict CSP-enabled site. To allow them, add the [`style-src 'self' 'unsafe-inline';`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/style-src) and [`font-src 'self' data:;`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/font-src) directives in the meta tag as follows.
+Syncfusion<sup style="font-size:70%">&reg;</sup> controls are fully CSP-compliant, except for the Document Editor and PDF Viewer, which still require the unsafe-inline directive. Syncfusion<sup style="font-size:70%">&reg;</sup> controls use base64-encoded font icons for rendering, which are blocked on a strict CSP-enabled site. To allow them, add the [`font-src 'self' data:;`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/font-src) directives in the meta tag as follows.
+
 
 {% tabs %}
 {% highlight razor tabtitle="HTML" %}
 
 <meta http-equiv="Content-Security-Policy" content="default-src 'self';
-    style-src 'self' 'unsafe-inline';
+    style-src 'self';
     font-src 'self'  data:;" />
 
 {% endhighlight %}

@@ -1,23 +1,22 @@
 import { DataManager, Query, ReturnOption, ODataV4Adaptor } from '@syncfusion/ej2-data';
 import { compile } from '@syncfusion/ej2-base';
 
-const template: string = '<tr><td>${OrderID}</td><td>${CustomerID}</td><td>${EmployeeID}</td></tr>';
-const compiledFunction: Function = compile(template);
+let template: string = '<tr><td>${OrderID}</td><td>${CustomerID}</td><td>${EmployeeID}</td></tr>';
 
-const SERVICE_URI: string = 'https://services.odata.org/V4/Northwind/Northwind.svc/Orders';
+let compiledFunction: Function = compile(template);
 
-const table: HTMLElement | null = document.getElementById('datatable');
+const SERVICE_URI: string = 'https://services.odata.org/V4/Northwind/Northwind.svc/';
 
-new DataManager({ url: SERVICE_URI, adaptor: new ODataV4Adaptor() })
+let table: HTMLElement = (<HTMLElement>document.getElementById('datatable'));
+
+new DataManager({ url: SERVICE_URI, adaptor: new ODataV4Adaptor })
     .executeQuery(new Query()
+    .from('Orders')        
     .requiresCount(true)
     .take(8))
     .then((e: ReturnOption) => {
-        console.log('Total Count:', e.count);
-        (e.result as Object[]).forEach((data: Object) => {
-            const nodes = compiledFunction(data); 
-            nodes.forEach((node: Node) => {
-                table?.appendChild(node);
-            });
+        console.log('Total Count:', e.count); // Count from server.
+        (<Object[]>e.result).forEach((data: Object) => {
+            table.appendChild(compiledFunction(data)[0]);
         });
     });

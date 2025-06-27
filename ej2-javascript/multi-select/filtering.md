@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 The MultiSelect has built-in support to filter data items when [`allowFiltering`](../api/multi-select/#allowfiltering) is enabled. The filter
 operation starts as soon as you start typing characters in the MultiSelect input.
 
-To display filtered items in the popup, filter the required data and return it to the MultiSelect via [updateData](../api/multi-select/filteringEventArgs/#updatedata) method by using the [filtering](../api/multi-select/#filtering) event.
+To display filtered items in the popup, filter the required data and return it to the MultiSelect via [updateData](../api/multi-select/filteringEventArgs/#updatedata/) method by using the [filtering](../api/multi-select/#filtering/) event.
 
 The following sample illustrates how to query the data source and pass the data to the MultiSelect through the `updateData` method in `filtering` event.
 
@@ -175,6 +175,37 @@ In the following sample,data with diacritics are bound as dataSource for MultiSe
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/multiselect/basic-cs13" %}
+{% endif %}
+
+## Debounce delay
+
+You can use the [debounceDelay](../api/multi-select/#debouncedelay) property for filtering, enabling you to set a delay in milliseconds. This functionality helps reduce the frequency of filtering as you type, enhancing performance and responsiveness for a smoother user experience.By default, a DebounceDelay of 300ms is set. If you wish to disable this feature entirely, you can set it to 0ms.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/multiselect/basic-cs19/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/multiselect/basic-cs19/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/multiselect/basic-cs19" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/multiselect/basic-cs19/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/multiselect/basic-cs19/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/multiselect/basic-cs19" %}
 {% endif %}
 
 ## See Also

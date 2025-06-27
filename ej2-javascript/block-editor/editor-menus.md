@@ -33,8 +33,6 @@ The Slash Command menu comes with a set of pre-defined commands for all block ty
 
 You can utilize the [commandMenu](../api/blockeditor/#commandmenu) property on the Block Editor control to customize the Slash Command menu to include your own custom commands and other modifications.
 
-Below example demonstrates how to customize the Slash Command menu.
-
 #### Show or hide tooltip
 
 By default, the tooltip is displayed when the user hovers over the command item. You can show or hide the tooltip using the [enableTooltip](../api/blockeditor/commandMenuSettingsModel/#enabletooltip) property on the command menu settings.
@@ -50,7 +48,34 @@ The following events are available in the Slash Command menu.
 |[queryFiltering](../api/blockeditor/commandMenuSettingsModel/#queryfiltering)|CommandQueryFilteringEventArgs|Triggers when the user types to filter the command menu items.|
 |[itemClicked](../api/blockeditor/commandMenuSettingsModel/#itemclicked)|CommandItemClickedEventArgs|Triggers when the user clicks on a command menu item.|
 
-Below example demonstrates how to configure the events in the Slash Command menu.
+Below example demonstrates the customization of the Slash Command menu.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/block-editor/editor-menus/slash-command/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/block-editor/editor-menus/slash-command/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/editor-menus/slash-command" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/block-editor/editor-menus/slash-command/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/block-editor/editor-menus/slash-command/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/editor-menus/slash-command" %}
+{% endif %}
 
 ## Context menu
 
@@ -67,9 +92,7 @@ The Context menu offers different built-in options:
 
 ### Customize Context menu
 
-You can utilize the [contextMenu](../api/blockeditor/#contextmenu) property on the blockeditor to customize the Context menu to add specific actions or modify existing ones based on the application needs.
-
-Below example demonstrates how to customize the Context menu.
+You can utilize the [contextMenu](../api/blockeditor/#contextmenu) property on the Block Editor to customize the Context menu to add specific actions or modify existing ones based on the application needs.
 
 ### Events
 
@@ -83,9 +106,36 @@ The following events are available in the Context menu.
 |[close](../api/blockeditor/contextMenuSettingsModel/#close)|ContextMenuCloseEventArgs|Triggers when the context menu is closed.|
 |[itemClick](../api/blockeditor/contextMenuSettingsModel/#itemclick)|ContextMenuItemClickEventArgs|Triggers when a context menu item is clicked.|
 
-Below example demonstrates how to configure the events in the Context menu.
+Below example demonstrates the customization of the Context menu.
 
-## Blockaction menu
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/block-editor/editor-menus/context-menu/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/block-editor/editor-menus/context-menu/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/editor-menus/context-menu" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/block-editor/editor-menus/context-menu/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/block-editor/editor-menus/context-menu/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/editor-menus/context-menu" %}
+{% endif %}
+
+## Block action menu
 
 The Block Action menu typically appears next to a block when you hover over it and click on the drag handle icon, offering quick actions specific to that block.
 
@@ -98,11 +148,9 @@ The Block Action menu provides convenient actions for managing individual blocks
 -   **Move Up**: Move the block one level up in the hierarchy.
 -   **Move Down**: Move the block one level down in the hierarchy.
 
-### Customize Blockaction menu
+### Customize Block action menu
 
-You can utilize the [blockActionsMenu](../api/blockeditor/#blockactionsmenu) property on the blockeditor to customize the Blockaction menu to include block-specific commands relevant to your application. This allows for highly tailored user experiences.
-
-Below example demonstrates how to customize the Blockaction menu.
+You can utilize the [blockActionsMenu](../api/blockeditor/#blockactionsmenu) property on the Block Editor to customize the Block action menu to include block-specific commands relevant to your application. This allows for highly tailored user experiences.
 
 #### Show or hide tooltip
 
@@ -110,7 +158,7 @@ By default, the tooltip is displayed when the user hovers over the action item. 
 
 ### Events
 
-The following events are available in the Blockaction menu.
+The following events are available in the Block action menu.
 
 |Name|Args|Description|
 |---|---|---|
@@ -118,7 +166,34 @@ The following events are available in the Blockaction menu.
 |[close](../api/blockeditor/blockActionMenuSettingsModel/#close)|BlockActionMenuCloseEventArgs|Triggers when the block action menu is closed.|
 |[itemClick](../api/blockeditor/blockActionMenuSettingsModel/#itemClick)|BlockActionMenuItemClickEventArgs|Triggers when a block action menu item is clicked.|
 
-Below example demonstrates how to configure the events in the Blockaction menu.
+Below example demonstrates the customization of the Block action menu.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/block-editor/editor-menus/block-action/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/block-editor/editor-menus/block-action/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/editor-menus/block-action" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/block-editor/editor-menus/block-action/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/block-editor/editor-menus/block-action/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/editor-menus/block-action" %}
+{% endif %}
 
 ## Inline Toolbar
 
@@ -136,9 +211,7 @@ The Inline Toolbar includes below built-in formatting options:
 
 ### Customize Inline Toolbar
 
-You can utilize the [inlineToolbar](../api/blockeditor/#inlinetoolbar) property on the blockeditor to customize the Inline Toolbar to add or remove formatting options based on your application's needs.
-
-Below example demonstrates how to customize the Inline Toolbar.
+You can utilize the [inlineToolbar](../api/blockeditor/#inlinetoolbar) property on the Block Editor to customize the Inline Toolbar to add or remove formatting options based on your application's needs.
 
 #### Show or hide tooltip
 
@@ -154,4 +227,31 @@ The following events are available in the Inline Toolbar.
 |[close](../api/blockeditor/inlineToolbarSettingsModel/#close)|ToolbarCloseEventArgs|Triggers when the inline toolbar is closed.|
 |[itemClicked](../api/blockeditor/inlineToolbarSettingsModel/#itemclicked)|ToolbarItemClickedEventArgs|Triggers when the user clicks on an inline toolbar item.|
 
-Below example demonstrates how to configure the events in the Inline Toolbar.
+Below example demonstrates the customization of the Inline Toolbar.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/block-editor/editor-menus/inline-toolbar/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/block-editor/editor-menus/inline-toolbar/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/editor-menus/inline-toolbar" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/block-editor/editor-menus/inline-toolbar/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/block-editor/editor-menus/inline-toolbar/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/editor-menus/inline-toolbar" %}
+{% endif %}

@@ -82,6 +82,43 @@ Setting the [`height`](../api/treegrid/#height) to `100%` requires the treegrid 
 {% previewsample "page.domainurl/code-snippet/treegrid/responsive-scrolling-cs1" %}
 {% endif %}
 
+## Sticky header
+
+The Syncfusion ##Platform_Name## TreeGrid provides a useful feature to keep the column headers fixed (sticky) while scrolling through large datasets. This ensures that the headers remain visible at all times, enhancing user experience by making it easier to understand the context of the data displayed, especially when dealing with wide or long hierarchical data.
+
+For example, in a project management application, users often need to scroll through a detailed list of tasks and subtasks. When the dataset is large, scrolling down can cause confusion if the column headers scroll out of view, making it difficult to remember what each column represents. By enabling sticky headers, the column headers remain visible even while scrolling, allowing users to easily keep track of the data context.
+
+To enable sticky headers in the TreeGrid, you can simply set the `enableStickyHeader` property to **true**. This makes the column headers stick to the top of the TreeGrid container or its parent scrolling container when you scroll vertically.
+
+The following sample demonstrates how to enable or disable the sticky header in the TreeGrid using a [Switch](../../switch/getting-started) and its [change](../api/switch#change) event:
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/treegrid/scrolling-sticky-header/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/treegrid/scrolling-sticky-header/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/treegrid/scrolling-sticky-header" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/treegrid/scrolling-sticky-header/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/treegrid/scrolling-sticky-header/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/treegrid/sscrolling-sticky-header" %}
+{% endif %}
+
 ## Scroll to selected row
 
 You can scroll the treegrid content to the selected row position by using the [`rowSelected`](../api/treegrid/#rowselected) event.

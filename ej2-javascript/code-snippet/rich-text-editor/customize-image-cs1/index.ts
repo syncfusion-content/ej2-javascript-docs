@@ -9,7 +9,7 @@ let editor: RichTextEditor = new RichTextEditor({
   quickToolbarSettings: {
     showOnRightClick: true,
     image: [
-      'Replace', 'Align', 'Caption', 'Remove', 'InsertLink', 'OpenImageLink', '-',
+      'Replace', 'Align', 'Caption', 'Remove', 'InsertLink', 'OpenImageLink', '|',
       'EditImageLink', 'RemoveImageLink', 'Display', 'AltText', 'Dimension'
     ]
   },

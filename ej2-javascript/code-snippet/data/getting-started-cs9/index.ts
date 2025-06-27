@@ -14,3 +14,6 @@ let table: HTMLElement = (<HTMLElement>document.getElementById('datatable'));
 result.forEach((data: Object) => {
     table.appendChild(compiledFunction(data)[0]);
 });
+
+
+

@@ -29,7 +29,7 @@ The following table shows built-in toolbar items and its actions:-
 | AnnotationEditTool | This tool provides options to enable or disable the edit mode of annotation in the PDF Viewer.|
 | FormDesignerEditTool | This tool provides options to enable or disable the edit mode of form fields in the PDF Viewer.|
 
-### Show/Hide the default toolbar
+## Show/Hide the default toolbar
 
 The PDF Viewer has an option to show or hide the complete default toolbar. You can achieve this by using following two ways.,
 
@@ -183,7 +183,7 @@ Add the below [serviceUrl](https://helpej2.syncfusion.com/documentation/api/pdfv
 
 {% previewsample "page.domainurl/code-snippet/pdfviewer/toolbar/toolbar-method-cs1" %}
 
-### Show/Hide the default toolbaritem
+## Show/Hide the default toolbaritem
 
 The PDF Viewer has an option to show or hide these grouped items in the default toolbar.
 
@@ -462,7 +462,7 @@ N> When customizing toolbar items, you have the flexibility to include either ic
 
 The PDF Viewer provides API for user interactions options provided in it's built-in toolbar. Using this we can create our own User Interface for toolbar actions in application level by hiding the default toolbar. The following steps are used to create the custom toolbar for PDF Viewer,
 
-**Step 1:** Follow the steps provided in the [link](https://ej2.syncfusion.com/documentation/pdfviewer/getting-started/) to create simple PDF Viewer sample.
+**Step 1:** Follow the steps provided in the [link](https://ej2.syncfusion.com/documentation/pdfviewer/getting-started) to create simple PDF Viewer sample.
 
 **Step 2:** Now, add an HTML div element to act as the custom toolbar PDF Viewer using the following code.
 

@@ -32,4 +32,3 @@ ganttChart.appendTo('#Gantt');
 
 
 
-

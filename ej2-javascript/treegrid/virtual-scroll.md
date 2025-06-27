@@ -17,8 +17,7 @@ To use virtualization, you need to inject `VirtualScroll` module in treegrid.
 
 ## Row virtualization
 
-Row virtualization allows you to load and render rows only in the content viewport. It is an alternative way of paging in which the rows will be appended while scrolling vertically. To setup the row virtualization, you need to define
-[`enableVirtualization`](../api/treegrid/#enablevirtualization) as true and content height by [`height`](../api/treegrid/#height) property.
+Row virtualization allows you to load and render rows only in the content viewport. It is an alternative way of paging in which the rows will be appended while scrolling vertically. To setup the row virtualization, you need to define [`enableVirtualization`](../api/treegrid/#enablevirtualization) as true and content height by [`height`](../api/treegrid/#height) property.
 
 The number of records displayed in the TreeGrid is determined implicitly by height of the content area and a buffer records will be maintained in the TreeGrid content in addition to the original set of rows.
 
@@ -54,11 +53,12 @@ Expand and Collapse state of any child record will be persisted.
 ### Limitations 
 
 * Row virtual scrolling is not compatible with the following feature
-	1. Batch editing
-	2. Detail template
-	3. Row template
-	4. Rowspan
-	5. Autofill
+  1. Batch editing
+  2. Checkbox selection
+  3. Detail template
+  4. Row template
+  5. Rowspan
+  6. Autofill
 	
 * It is necessary to set a static height for the component or its parent container when using row virtualization. The 100% height will work only if the component height is set to 100%, and its parent container has a static height.
 
@@ -74,12 +74,12 @@ Expand and Collapse state of any child record will be persisted.
         height: 2em;
     }
     ```
+    
 ## Column virtualization
 
 Column virtualization allows you to virtualize columns. It will render column only in the current view port and all other columns are rendered on demand during horizontal scrolling.
 
-To setup the column virtualization, set the
-[`enableVirtualization`](../api/treegrid/#enablevirtualization) and
+To setup the column virtualization, set the [`enableVirtualization`](../api/treegrid/#enablevirtualization) and
 [`enableColumnVirtualization`](../api/treegrid/#enablecolumnvirtualization) properties as `true`.
 
 {% if page.publishingplatform == "typescript" %}
@@ -128,11 +128,12 @@ To setup the column virtualization, set the
 * Column virtual scrolling is not compatible with the following feature
     1. Colspan
     2. Batch editing
-    3. Column with infinite scrolling
-    4. Stacked header
-    5. Row template
-    6. Detail template
-    7. Autofill
-    8. Column chooser
+    3. Checkbox selection
+    4. Column with infinite scrolling
+    5. Stacked header
+    6. Row template
+    7. Detail template
+    8. Autofill
+    9. Column chooser
   
 > You can refer to our [`JavaScript Tree Grid`](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our JavaScript Tree Grid example [`JavaScript Tree Grid example`](https://ej2.syncfusion.com/demos/#/material/tree-grid/treegrid-overview.html) to knows how to present and manipulate data.

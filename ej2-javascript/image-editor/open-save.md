@@ -17,7 +17,7 @@ The getImageData method is used to get the image as ImageData and this can be lo
 
 ## Supported image formats
 
-The Image Editor control supports four common image formats: PNG, JPEG, SVG, and WEBP. These formats allow you to work with a wide range of image files within the Image Editor.
+The Image Editor control supports five common image formats: PNG, JPEG, SVG, WEBP, and BMP. These formats allow you to work with a wide range of image files within the Image Editor.
 
 When it comes to saving the edited image, the default file type is set as PNG. This means that when you save the edited image without specifying a different file type, it will be saved as a PNG file. However, it's important to note that the Image Editor typically provides options or methods to specify a different file type if desired. This allows you to save the edited image in formats other than the default PNG, such as JPEG, SVG, or WEBP, based on your specific requirements or preferences. 
 
@@ -245,8 +245,46 @@ You can utilize the [`fileOpened`](https://ej2.syncfusion.com/javascript/documen
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/image-editor/open-save-cs7" %}
-{% endif %} 
+{% endif %}
+
+### Opening Images with Custom Width and Height
+
+Users can now open images with specific width and height values using the [`imageSettings`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/imageSettings/#properties) parameter in the `open` method. This enhancement introduces three additional properties: `width`, `height`, and `isAspectRatio`. These options allow precise control over the image dimensions, with the flexibility to preserve the original aspect ratio if needed. This feature is especially useful when rendering high-resolution images or when fitting images into fixed-size layouts or canvas areas.
  
+The following behaviors are supported through these properties:
+- Contains behavior: By specifying only one dimension (either `width` or `height`) and enabling `isAspectRatio`, the other dimension is automatically calculated to maintain the image's original proportions.
+- Cover behavior: When both `width` and `height` are specified with `isAspectRatio` set to `true`, the image scales proportionally to fit within the given dimensions while preserving its aspect ratio.
+- Stretch or Shrink behavior: Setting `isAspectRatio` to `false` forces the image to strictly follow the specified `width` and `height`, allowing it to stretch or shrink regardless of its original aspect ratio.
+
+The following example showcases how all three behaviors can be achieved using the open method.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/open-save-cs14/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/open-save-cs14/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/open-save-cs14" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/open-save-cs14/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/open-save-cs14/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/open-save-cs14" %}
+{% endif %}
+
 ## Save as image
 
 The [`export`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#export) method is used to save the modified image as an image, and it accepts a file name and file type as parameters. The file type parameter supports PNG, JPEG, SVG, WEBP and the default file type is PNG. It also saves an image by clicking the save button from the toolbar and the supported file types are PNG, JPEG, SVG, and WEBP. Users are allowed to save an image with a specified file name, file type, and image quality. This enhancement provides more control over the output, ensuring that users can save their work exactly as they need it.
@@ -421,7 +459,7 @@ The [`fileOpened`](https://ej2.syncfusion.com/javascript/documentation/api/image
 
 [`fileName`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#fileName): This argument is a string that contains the file name of the opened image. It represents the name of the file that was selected or provided when loading the image into the Image Editor.
 
-[`fileType`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#fileType): This argument is a string that contains the type of the opened image. It specifies the format or file type of the image that was loaded, such as PNG, JPEG, SVG, or WEBP.
+[`fileType`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#fileType): This argument is a string that contains the type of the opened image. It specifies the format or file type of the image that was loaded, such as PNG, JPEG, SVG, WEBP, or BMP.
 
 By accessing these arguments within the `fileOpened` event handler, you can retrieve information about the loaded image, such as its file name and file type. This can be useful for performing additional actions or implementing logic based on the specific image that was opened in the Image Editor control. 
 

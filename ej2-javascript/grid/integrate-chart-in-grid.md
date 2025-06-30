@@ -123,12 +123,12 @@ To apply a theme, you can import the required CSS files from the node_modules di
 
 {% elsif page.publishingplatform == "javascript" %}
 
-## Adding Syncfusion resources
+### Adding Syncfusion resources
 
 The Essential JS 2 Grid and GridChart can be initialized by using either of the following ways.
 
-* [Using local script and style](https://ej2.syncfusion.com/javascript/documentation/getting-started/quick-start#using-local-scripts-and-styles).
-* [Using CDN link for script and style](https://ej2.syncfusion.com/javascript/documentation/getting-started/quick-start#using-cdn-link-for-scripts-and-styles).
+* [Using local script and style](../../documentation/getting-started/quick-start#using-local-scripts-and-styles).
+* [Using CDN link for script and style](../../documentation/getting-started/quick-start#using-cdn-link-for-scripts-and-styles).
 
 {% endif %}
 

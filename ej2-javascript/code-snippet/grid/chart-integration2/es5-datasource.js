@@ -1,4 +1,4 @@
-export const salesDatas = [
+var salesDatas = [
   { Product: "Laptop", Month: "January", Online: 1500, Retail: 2000, Total: 3500 },
   { Product: "Mobile", Month: "February", Online: 1600, Retail: 2500, Total: 4100 },
   { Product: "Tablet", Month: "March", Online: 1800, Retail: 2200, Total: 4000 },

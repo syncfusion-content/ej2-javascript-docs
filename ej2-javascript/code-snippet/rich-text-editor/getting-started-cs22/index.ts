@@ -1,6 +1,6 @@
-import { RichTextEditor, Toolbar, HtmlEditor } from '@syncfusion/ej2-richtexteditor';
+import { RichTextEditor, Toolbar, Link, Image, HtmlEditor, QuickToolbar } from '@syncfusion/ej2-richtexteditor';
 
-RichTextEditor.Inject(Toolbar, HtmlEditor);
+RichTextEditor.Inject(Toolbar, Link, Image, HtmlEditor, QuickToolbar);
 
 let editor: RichTextEditor = new RichTextEditor({
   toolbarSettings: {

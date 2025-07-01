@@ -1,4 +1,4 @@
-let customers = new ej.data.DropDownList({
+let customers = new ej.dropdowns.DropDownList({
     //bind the DataManager instance to dataSource property.
     dataSource: new ej.data.DataManager({
         url: 'https://services.odata.org/V4/Northwind/Northwind.svc/',

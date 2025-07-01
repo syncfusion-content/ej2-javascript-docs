@@ -1,7 +1,8 @@
 import { Chart, ColumnSeries, Category } from '@syncfusion/ej2-charts';
-import { DataManager, Query } from '@syncfusion/ej2-data';
+import { DataManager } from '@syncfusion/ej2-data';
 
 Chart.Inject(ColumnSeries, Category);
+
 let localData: any[] = [
     { month: 'Jan', sales: 35 }, { month: 'Feb', sales: 28 },
     { month: 'Mar', sales: 34 }, { month: 'Apr', sales: 32 },

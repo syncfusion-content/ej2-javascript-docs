@@ -50,50 +50,50 @@ If you're building a feature like a product listing or a customer table where da
 
 To achieve the manipulation of local data using `JsonAdaptor`, follow these steps:
 
-1. Import **DataManager**, **Query**, **JsonAdaptor** modules from **@syncfusion/ej2-data**, and the **compile** module from **@syncfusion/ej2-base**.
+**Step 1:** Import **DataManager**, **Query**, **JsonAdaptor** modules from **@syncfusion/ej2-data**, and the **compile** module from **@syncfusion/ej2-base**.
 
-```ts
+  ```ts
 
-import { DataManager, Query, JsonAdaptor } from '@syncfusion/ej2-data';
-import { compile } from '@syncfusion/ej2-base';
+  import { DataManager, Query, JsonAdaptor } from '@syncfusion/ej2-data';
+  import { compile } from '@syncfusion/ej2-base';
 
-```
+  ```
 
-2. Provide your local data array to `json` of **DataManager**.
+**Step 2:** Provide your local data array to `json` of **DataManager**.
 
-```ts
+  ```ts
 
-const data: Object[] = [
-  { OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5 },
-  { OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6 },
-  { OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4 },
-  // ... more data items.
-];
+  const data: Object[] = [
+    { OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5 },
+    { OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6 },
+    { OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4 },
+    // ... more data items.
+  ];
 
-```
+  ```
 
-3. **Configure the DataManager:**
+**Step 3: Configure the DataManager:**
 
-Assign your local data array to the `json` property and set the `adaptor` to an instance of `JsonAdaptor`.
+  Assign your local data array to the `json` property and set the `adaptor` to an instance of `JsonAdaptor`.
 
-```ts
+  ```ts
 
-const dataManager = new DataManager({
-  json: data,
-  adaptor: new JsonAdaptor()
-});
+  const dataManager = new DataManager({
+    json: data,
+    adaptor: new JsonAdaptor()
+  });
 
-```
+  ```
 
-4. **Apply a query using executeLocal method:**
+**Step 4: Apply a query using executeLocal method:**
 
-Use the [executeLocal](../../api/data/dataManager/#executelocal) method with a [Query](../../api/data/query/) object to retrieve and manipulate data directly on the client-side. This method allows you to perform operations like filtering, sorting, paging, and grouping on local data without any server requests. For example, to retrieve the first 8 records.
+  Use the [executeLocal](../../api/data/dataManager/#executelocal) method with a [Query](../../api/data/query/) object to retrieve and manipulate data directly on the client-side. This method allows you to perform operations like filtering, sorting, paging, and grouping on local data without any server requests. For example, to retrieve the first 8 records.
 
-```ts
+  ```ts
 
-const result: Object[] = dataManager.executeLocal(new Query().take(8));
+  const result: Object[] = dataManager.executeLocal(new Query().take(8));
 
-```
+  ```
 
 Here is an example that demonstrates how to use the `JsonAdaptor`:
 
@@ -152,14 +152,14 @@ To achieve this, follow these steps:
 
 {% if page.publishingplatform == "typescript" %}
 
-1. Import **DataManager**, **Query**, **UrlAdaptor** modules from **@syncfusion/ej2-data**.
+**Step 1:** Import **DataManager**, **Query**, **UrlAdaptor** modules from **@syncfusion/ej2-data**.
 
 ```ts
 
 import { DataManager, Query, UrlAdaptor, ReturnOption } from '@syncfusion/ej2-data';
 
 ```
-2. **Configure the DataManager:**
+**Step 2: Configure the DataManager:**
 
 Assign your API endpoint to the `url` property and use `UrlAdaptor` as the `adaptor`.
 
@@ -173,7 +173,7 @@ const datamanger = new DataManager({
 
 ```
 
-3. **Apply a query using executeQuery:**
+**Step 3: Apply a query using executeQuery:**
 
 Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [Query](../../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 10 records from the remote data source in the form of `result` and `count`.
 
@@ -202,7 +202,7 @@ datamanger.executeQuery(new Query().take(10)).then((e: ReturnOption) => {
 
 {% elsif page.publishingplatform == "javascript" %}
 
-1. **Configure the DataManager:**
+**Step 1: Configure the DataManager:**
 
 Assign your API endpoint to the `url` property and use `UrlAdaptor` as the `adaptor`.
 
@@ -216,7 +216,7 @@ const datamanger = new ej.data.DataManager({
 
 ```
 
-2. **Apply a query using executeQuery:**
+**Step 2: Apply a query using executeQuery:**
 
 Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [Query](../../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 10 records from the remote data source in the form of `result` and `count`.
 
@@ -281,8 +281,6 @@ Here is an example that demonstrates how to use the `UrlAdaptor`:
 
 {% endif %}
 
-![UrlAdaptor](./image/url-result-image.png)
-
 ## OData adaptor
 
 The `ODataAdaptor` in Syncfusion's DataManager facilitates seamless integration with [OData](http://www.odata.org/documentation/odata-version-3-0/) services, which are standardized RESTful APIs designed for querying and manipulating data over HTTP. This adaptor streamlines operations such as querying, filtering, sorting, and paging data from OData endpoints, making it especially suitable for enterprise applications that require standardized and interoperable data access.
@@ -314,7 +312,7 @@ To retrieve data from an OData service using the DataManager, follow these steps
 
 {% if page.publishingplatform == "typescript" %}
 
-1. Import **DataManager**, **Query**, **ODataAdaptor** modules from **@syncfusion/ej2-data**, and the **compile** module from **@syncfusion/ej2-base**.
+**Step 1:** Import **DataManager**, **Query**, **ODataAdaptor** modules from **@syncfusion/ej2-data**, and the **compile** module from **@syncfusion/ej2-base**.
 
 ```ts
 
@@ -322,7 +320,7 @@ import { DataManager, Query, ODataAdaptor, ReturnOption } from '@syncfusion/ej2-
 import { compile } from '@syncfusion/ej2-base';
 
 ```
-2. **Configure the DataManager:**
+**Step 2: Configure the DataManager:**
 
 Assign your API endpoint to the `url` property and use `ODataAdaptor` as the `adaptor`.
 
@@ -336,7 +334,7 @@ const datamanger = new DataManager({
 
 ```
 
-3. **Apply a query using executeQuery:**
+**Step 3: Apply a query using executeQuery:**
 
 Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [Query](../../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source in the form of `result` and `count`.
 
@@ -352,7 +350,7 @@ datamanger.executeQuery(new Query().take(8)).then((e: ReturnOption) => {
 
 {% elsif page.publishingplatform == "javascript" %}
 
-1. **Configure the DataManager:**
+**Step 1: Configure the DataManager:**
 
 Assign your API endpoint to the `url` property and use `ODataAdaptor` as the `adaptor`.
 
@@ -366,7 +364,7 @@ const datamanger = new ej.data.DataManager({
 
 ```
 
-2. **Apply a query using executeQuery:**
+**Step 2: Apply a query using executeQuery:**
 
 Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [Query](../../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source in the form of `result` and `count`.
 
@@ -419,8 +417,6 @@ Here is an example that demonstrates how to use the `ODataAdaptor`:
 
 {% endif %}
 
-![OData adaptor](./image/odata-adaptor-image.png)
-
 > By default, `ODataAdaptor` is used by **DataManager**.
 
 ## ODataV4 adaptor
@@ -437,7 +433,7 @@ To achieve this, follow these steps:
 
 {% if page.publishingplatform == "typescript" %}
 
-1. Import **DataManager**, **Query**, **ODataV4Adaptor** modules from **@syncfusion/ej2-data**, and the **compile** module from **@syncfusion/ej2-base**.
+**Step 1:** Import **DataManager**, **Query**, **ODataV4Adaptor** modules from **@syncfusion/ej2-data**, and the **compile** module from **@syncfusion/ej2-base**.
 
 ```ts
 
@@ -445,7 +441,7 @@ import { DataManager, Query, ReturnOption, ODataV4Adaptor } from '@syncfusion/ej
 import { compile } from '@syncfusion/ej2-base';
 
 ```
-2. **Configure the DataManager:**
+**Step 2: Configure the DataManager:**
 
 Assign your API endpoint to the `url` property and use `ODataV4Adaptor` as the `adaptor`.
 
@@ -459,7 +455,7 @@ const datamanger = new DataManager({
 
 ```
 
-3. **Apply a query using executeQuery:**
+**Step 3: Apply a query using executeQuery:**
 
 Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [Query](../../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source.
 
@@ -476,7 +472,7 @@ datamanger.executeQuery(new Query().take(8)).then((e: ReturnOption) => {
 
 {% elsif page.publishingplatform == "javascript" %}
 
-1. **Configure the DataManager:**
+**Step 1: Configure the DataManager:**
 
 Assign your API endpoint to the `url` property and use `ODataV4Adaptor` as the `adaptor`.
 
@@ -491,7 +487,7 @@ const datamanger= new ej.data.DataManager({
 
 ```
 
-2. **Apply a query using executeQuery:**
+**Step 2: Apply a query using executeQuery:**
 
 Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [Query](../../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source.
 
@@ -551,8 +547,6 @@ Here is an example that demonstrates how to use the `ODataV4Adaptor`:
 
 {% endif %}
 
-![ODataV4 adaptor](./image/odatav4-adaptor.png)
-
 ## Web API adaptor
 
 The `WebApiAdaptor` is a specialized adaptor in Syncfusion's DataManager module designed to interact with Web APIs, particularly those that support OData query options. Since the `WebApiAdaptor` is extended from the `ODataAdaptor`, it requires that the remote service endpoint understands and can process OData-formatted queries sent along with the request.
@@ -579,7 +573,7 @@ To achieve this, follow these steps:
 
 {% if page.publishingplatform == "typescript" %}
 
-1. Import **DataManager**, **Query**, **WebApiAdaptor** modules from **@syncfusion/ej2-data**, and the **compile** module from **@syncfusion/ej2-base**.
+**Step 1:** Import **DataManager**, **Query**, **WebApiAdaptor** modules from **@syncfusion/ej2-data**, and the **compile** module from **@syncfusion/ej2-base**.
 
 
 ```ts
@@ -588,7 +582,7 @@ import { DataManager, Query, WebApiAdaptor, ReturnOption } from '@syncfusion/ej2
 import { compile } from '@syncfusion/ej2-base';
 
 ```
-2. **Configure the DataManager:**
+**Step 2: Configure the DataManager:**
 
 Assign your API endpoint to the `url` property and use `WebApiAdaptor` as the `adaptor`.
 
@@ -602,7 +596,7 @@ const datamanger = new DataManager({
 
 ```
 
-3. **Apply a query using executeQuery:**
+**Step 3: Apply a query using executeQuery:**
 
 Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [Query](../../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source in the form of `Items` and `Count`.
 
@@ -619,7 +613,7 @@ datamanger.executeQuery(new Query().take(8)).then((e: ReturnOption) => {
 
 {% elsif page.publishingplatform == "javascript" %}
 
-1. **Configure the DataManager:**
+**Step 1: Configure the DataManager:**
 
 Assign your API endpoint to the `url` property and use `WebApiAdaptor` as the `adaptor`.
 
@@ -633,7 +627,7 @@ const datamanger = new ej.data.DataManager({
 
 ```
 
-2. **Apply a query using executeQuery:**
+**Step 2: Apply a query using executeQuery:**
 
 Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [Query](../../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source in the form of `Items` and `Count`.
 
@@ -686,8 +680,6 @@ Here is an example that demonstrates how to use the `WebApiAdaptor`:
 
 {% endif %}
 
-![Web API adaptor](./image/webapiadaptor-image.png)
-
 ## WebMethod Adaptor
 
 The `WebMethodAdaptor` is a powerful and flexible adaptor provided by Syncfusion's DataManager module, specifically designed to interact with remote services or server-side methods that accept data via HTTP POST requests. Unlike adaptors that communicate with standard REST or OData services, the `WebMethodAdaptor` enables seamless data binding from custom server-side logic such as controller actions, web services, or business-layer functions.
@@ -710,7 +702,7 @@ To achieve this, follow these steps:
 
 {% if page.publishingplatform == "typescript" %}
 
-1. Import **DataManager**, **Query**, **WebMethodAdaptor** modules from **@syncfusion/ej2-data**, and the **compile** module from **@syncfusion/ej2-base**.
+**Step 1:** Import **DataManager**, **Query**, **WebMethodAdaptor** modules from **@syncfusion/ej2-data**, and the **compile** module from **@syncfusion/ej2-base**.
 
 ```ts
 
@@ -718,7 +710,7 @@ import { DataManager, Query, WebMethodAdaptor, ReturnOption } from '@syncfusion/
 import { compile } from '@syncfusion/ej2-base';
 
 ```
-2. **Configure the DataManager:**
+**Step 2: Configure the DataManager:**
 
 Assign your API endpoint to the `url` property and use `WebMethodAdaptor` as the `adaptor`.
 
@@ -732,7 +724,7 @@ const datamanger = new DataManager({
 
 ```
 
-3. **Apply a query using executeQuery:**
+**Step 3: Apply a query using executeQuery:**
 
 Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [Query](../../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source in the form of `result` and `count`.
 
@@ -749,7 +741,7 @@ datamanger.executeQuery(new Query().take(8)).then((e: ReturnOption) => {
 
 {% elsif page.publishingplatform == "javascript" %}
 
-1. **Configure the DataManager:**
+**Step 1: Configure the DataManager:**
 
 Assign your API endpoint to the `url` property and use `WebMethodAdaptor` as the `adaptor`.
 
@@ -763,7 +755,7 @@ const datamanger = new ej.data.DataManager({
 
 ```
 
-2. **Apply a query using executeQuery:**
+**Step 2: Apply a query using executeQuery:**
 
 Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [Query](../../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source in the form of `result` and `count`.
 
@@ -819,8 +811,6 @@ Here is an example that demonstrates how to use the `WebMethodAdaptor`:
 
 {% endif %}
 
-![WebMethod Adaptor](./image/webmethodadaptor-image.png)
-
 ## RemoteSaveAdaptor
 
 The `RemoteSaveAdaptor` is a specialized adaptor in Syncfusion’s DataManager module designed to perform actions such as sorting, filtering, searching and paging primarily on the client-side while handling CRUD operations(Create, Read, Update, and Delete), on the server-side for data persistence. This approach optimizes your experience by minimizing unnecessary server interactions.
@@ -831,7 +821,7 @@ To achieve this, follow these steps:
 
 {% if page.publishingplatform == "typescript" %}
 
-1. Import **DataManager**, **Query**, **RemoteSaveAdaptor** modules from **@syncfusion/ej2-data**, and the **compile** module from **@syncfusion/ej2-base**.
+**Step 1:** Import **DataManager**, **Query**, **RemoteSaveAdaptor** modules from **@syncfusion/ej2-data**, and the **compile** module from **@syncfusion/ej2-base**.
 
 ```ts
 
@@ -839,7 +829,7 @@ import { DataManager, Query, RemoteSaveAdaptor, ReturnOption } from '@syncfusion
 import { compile } from '@syncfusion/ej2-base';
 
 ```
-2. **Configure the DataManager:**
+**Step 2: Configure the DataManager:**
 
 Assign your API endpoint to the `url` property and use `RemoteSaveAdaptor` as the `adaptor`.
 
@@ -852,7 +842,7 @@ const datamanger = new DataManager({
 });
 ```
 
-3. **Apply a query using executeQuery:**
+**Step 3: Apply a query using executeQuery:**
 
 Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [Query](../../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source.
 
@@ -869,7 +859,7 @@ datamanger.executeQuery(new Query().take(8)).then((e: ReturnOption) => {
 
 {% elsif page.publishingplatform == "javascript" %}
 
-1. **Configure the DataManager:**
+**Step 1: Configure the DataManager:**
 
 Assign your API endpoint to the `url` property and use `RemoteSaveAdaptor` as the `adaptor`.
 
@@ -883,7 +873,7 @@ const datamanger = new ej.data.DataManager({
 
 ```
 
-2. **Apply a query using executeQuery:**
+**Step 2: Apply a query using executeQuery:**
 
 Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [Query](../../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source.
 
@@ -937,8 +927,6 @@ Here is an example that demonstrates how to use the `RemoteSaveAdaptor`:
 
 {% endif %}
 
-![RemoteSaveAdaptor](./image/remotesaveadaptor-image.png)
-
 ## GraphQL Adaptor
 
 The `GraphQLAdaptor` enables seamless data retrieval and manipulation from a GraphQL server. It allows you to precisely fetch the data you need, reducing over-fetching and under-fetching of data. GraphQL provides a flexible and expressive syntax for querying, enabling clients to request only the specific data they require. It allows efficient data retrieval with support for various operations like CRUD (Create, Read, Update, and Delete), paging, sorting, and filtering.
@@ -949,17 +937,17 @@ To achieve this, follow these steps:
 
 **Step 1: Create service for GraphQL:**
 
-1. Create a new folder named **GraphQLServer** specifically for your GraphQL server.
+**1:** Create a new folder named **GraphQLServer** specifically for your GraphQL server.
 
-2. Install the [graph pack](https://www.npmjs.com/package/graphpack) npm package. Open your terminal and navigate to the server folder, then run:
+**2:** Install the [graph pack](https://www.npmjs.com/package/graphpack) npm package. Open your terminal and navigate to the server folder, then run:
 
   ```bash
   npm i graphpack
   ```
 
-3. To utilize Syncfusion's  **ej2-data** package, you need to include it as a dependency in your project's **package.json** file. Here's how you can mention it in the configuration:
+**3:** To utilize Syncfusion's  **ej2-data** package, you need to include it as a dependency in your project's **package.json** file. Here's how you can mention it in the configuration:
   
-    ```json
+  ```json
     {
         "name": "graphql-server",
         "version": "1.0.0",
@@ -975,38 +963,38 @@ To achieve this, follow these steps:
         "@syncfusion/ej2-data": "24.1.41"
         }
     }
-    ```
+  ```
 
-4. Create a schema file (e.g., **src/schema.graphql**) in your GraphQL server project and write the schema definition.
+**4:** Create a schema file (e.g., **src/schema.graphql**) in your GraphQL server project and write the schema definition.
 
-    * **Define Types:** Create types representing the structure of data retrieved from GraphQL queries. Since the `GraphQLAdaptor` in  Syncfusion extends from `UrlAdaptor`, it expects a JSON response with specific properties:
+  * **Define Types:** Create types representing the structure of data retrieved from GraphQL queries. Since the `GraphQLAdaptor` in  Syncfusion extends from `UrlAdaptor`, it expects a JSON response with specific properties:
 
-        **result:** An array containing the data entities.
-        **count:** The total number of records.
-        **aggregates:** Contains total aggregate data(optional).
+    **result:** An array containing the data entities.
+    **count:** The total number of records.
+    **aggregates:** Contains total aggregate data(optional).
 
-    * **Define Queries:** Define queries to retrieve data from the server. Whether using a normal table or Syncfusion controls, you can define a query to fetch orders, accepting parameters such as a DataManager for advanced data operations.
+  * **Define Queries:** Define queries to retrieve data from the server. Whether using a normal table or Syncfusion controls, you can define a query to fetch orders, accepting parameters such as a DataManager for advanced data operations.
 
-    * **Define DataManager Input:** Define input types for DataManager, specifying parameters for sorting, filtering, paging, aggregates, etc., to be used in queries. The query parameters will be send in a string format which contains the below details.
+  * **Define DataManager Input:** Define input types for DataManager, specifying parameters for sorting, filtering, paging, aggregates, etc., to be used in queries. The query parameters will be send in a string format which contains the below details.
 
-    | Parameters       | Description                                                                     |
-    | ---------------- | ------------------------------------------------------------------------------- |
-    | `requiresCounts` | If it is **true** then the total count of records will be included in response. |
-    | `skip`           | Holds the number of records to skip.                                            |
-    | `take`           | Holds the number of records to take.                                            |
-    | `sorted`         | Contains details about current sorted column and its direction.                 |
-    | `where`          | Contains details about current filter column name and its constraints.          |
-    | `group`          | Contains details about current grouped column names.                            |
-    | `search`         | Contains details about current search data.                                     |
-    | `aggregates`     | Contains details about aggregate data.                                          |
+  | Parameters       | Description                                                                     |
+  | ---------------- | ------------------------------------------------------------------------------- |
+  | `requiresCounts` | If it is **true** then the total count of records will be included in response. |
+  | `skip`           | Holds the number of records to skip.                                            |
+  | `take`           | Holds the number of records to take.                                            |
+  | `sorted`         | Contains details about current sorted column and its direction.                 |
+  | `where`          | Contains details about current filter column name and its constraints.          |
+  | `group`          | Contains details about current grouped column names.                            |
+  | `search`         | Contains details about current search data.                                     |
+  | `aggregates`     | Contains details about aggregate data.                                          |
 
-    {% tabs %}
-    {% highlight text tabtitle="schema.graphql" %}
-    {% include code-snippet/data/getting-started-cs38/schema.graphql %}
-    {% endhighlight %}
-    {% endtabs %}
+  {% tabs %}
+  {% highlight text tabtitle="schema.graphql" %}
+  {% include code-snippet/data/getting-started-cs38/schema.graphql %}
+  {% endhighlight %}
+  {% endtabs %}
 
-5. Create a resolver file (e.g., **src/resolvers.js**) to handle GraphQL queries and fetch data from your database or data source. Resolver functions are responsible for processing incoming GraphQL requests and returning the appropriate data in the expected `result` and `count` format.  To efficiently handle filtering, sorting, searching, and paging, you can use the utilities from the **@syncfusion/ej2-data** package such as **DataUtil**, [Query](../../api/data/query/), and **DataManager**.
+**5:** Create a resolver file (e.g., **src/resolvers.js**) to handle GraphQL queries and fetch data from your database or data source. Resolver functions are responsible for processing incoming GraphQL requests and returning the appropriate data in the expected `result` and `count` format.  To efficiently handle filtering, sorting, searching, and paging, you can use the utilities from the **@syncfusion/ej2-data** package such as **DataUtil**, [Query](../../api/data/query/), and **DataManager**.
 
     {% tabs %}
     {% highlight js tabtitle="resolvers.js" %}
@@ -1014,7 +1002,7 @@ To achieve this, follow these steps:
     {% endhighlight %}
     {% endtabs %}
 
-6. Create a simple data file **src/db.js** that exports your data array.
+**6:** Create a simple data file **src/db.js** that exports your data array.
 
     {% tabs %}
     {% highlight js tabtitle="db.js" %}
@@ -1022,12 +1010,12 @@ To achieve this, follow these steps:
     {% endhighlight %}
     {% endtabs %}
 
-7. Install required packages and start the GraphQL server by running the following commands in your terminal:
+**7:** Install required packages and start the GraphQL server by running the following commands in your terminal:
 
-    ```bash
+  ```bash
     npm install
     npm run dev
-    ```
+  ```
 The server will be hosted at **http://localhost:xxxx/**. (where xxxx represents the port number).
 
 
@@ -1088,7 +1076,23 @@ let data: DataManager = new DataManager({
 
 * The `GraphQLAdaptor` includes a `query` property where you define your GraphQL query string. The response from the server should follow this JSON structure:
 
-    ```ts
+  ```ts
+
+    query: `query getOrders($datamanager: DataManager) {
+      getOrders(datamanager: $datamanager) {
+        count,
+        result {
+          OrderID,
+          CustomerID,
+          ShipCity,
+          ShipCountry
+        }
+      }
+    }
+
+  ```
+
+  ```ts
 
     {
      "data": {
@@ -1099,7 +1103,7 @@ let data: DataManager = new DataManager({
      }
     }
 
-    ```
+  ```
 
 * To map this structure, set the `result` and `count` fields in the `response` property of the adaptor:
 
@@ -1151,6 +1155,22 @@ let data: DataManager = new ej.data.DataManager({
 **B. Define the GraphQL query and map the response:**
 
 * The `GraphQLAdaptor` includes a `query` property where you define your GraphQL query string. The response from the server should follow this JSON structure:
+
+  ```ts
+
+    query: `query getOrders($datamanager: DataManager) {
+      getOrders(datamanager: $datamanager) {
+        count,
+        result {
+          OrderID,
+          CustomerID,
+          ShipCity,
+          ShipCountry
+        }
+      }
+    }
+
+    ```
 
     ```ts
 
@@ -1331,108 +1351,3 @@ Create a schema that supports Syncfusion DataManager queries and mutations with 
 {% include code-snippet/data/getting-started-cs39/db.js %}
 {% endhighlight %}
 {% endtabs %}
-
-## CacheAdaptor
-
-The CacheAdaptor is a powerful feature in Syncfusion’s ##Platform_Name## DataManager that enhances application performance by reducing redundant server calls. It caches previously fetched data on the client side, allowing your app to quickly retrieve cached data instead of making repeated HTTP requests when navigating through pages or revisiting previously loaded data. This significantly improves the responsiveness of data-bound components and reduces server load, especially in applications with large datasets or frequent data navigation.
-
-You can enable this functionality by setting the `enableCache` property to true in the **DataManager** configuration.
-
-**How it works**
-
-* When `enableCache` is set to **true**, the DataManager generates a unique ID at initialization and uses it to store previously loaded page data in cache memory. This enables efficient data retrieval without redundant server requests.
-
-* The cache is automatically cleared when data actions such as sorting, filtering, grouping, searching, or CRUD operations (Create, Read, Update, Delete) are performed.
-
-* This feature is supported by all adaptors in DataManager, ensuring consistent caching behavior across different data sources.
-
-Consider a customer order management dashboard that displays thousands of orders in a paginated grid with filtering and sorting options. By enabling `enableCache` in the DataManager:
-
-* When the user first navigates to page 2, the data is fetched from the server and stored in the cache.
-
-* If the user later returns to page 2, the DataManager serves the data directly from the cache, with no additional request sent.
-
-* If the user applies a filter or sort, the cache is cleared to ensure new data is retrieved fresh from the server.
-
-* This results in a smoother user experience, reduced load times, and improved overall performance.
-
-This caching behavior is especially beneficial for:
-
-* Applications with large datasets and frequent navigation.
-
-* Scenarios with network latency or bandwidth constraints.
-
-* Reducing costs in cloud-hosted backends by minimizing API calls.
-
-The following example demonstrates how to enable caching using the `enableCache` property in the DataManager:
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/data/getting-started-cs6/index.ts %}
-{% raw %}
-
-import { Grid } from '@syncfusion/ej2-grids';
-import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
-
-let data: Object = new DataManager({
-  url: "https://services.syncfusion.com/js/production/api/orders",
-  adaptor: new WebApiAdaptor,
-  crossDomain: true,
-  enableCache: true // Enables caching to prevent repeated HTTP requests.
-});
-
-let grid: Grid = new Grid({
-  dataSource: data,
-  columns: [
-    { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100, type: 'number' },
-    { field: 'CustomerID', width: 100, headerText: 'Customer ID', type: 'string' },
-    { field: 'EmployeeID', headerText: 'Employee ID', textAlign: 'Right', width: 100 },
-    { field: 'OrderDate', headerText: 'Order Date', format: 'yMd', width: 120, textAlign: 'Right', type:'Date' },
-  ],
-});
-
-grid.appendTo('#Grid');
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/data/getting-started-cs6/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% raw %}
-
-var data = new ej.data.DataManager({
-  url: "https://services.syncfusion.com/js/production/api/orders",
-  adaptor: new ej.data.WebApiAdaptor(),
-  crossDomain: true,
-  enableCache: true // Enables caching to prevent repeated HTTP requests.
-});
-
-var grid = new ej.grids.Grid({
-  dataSource: data,
-  columns: [
-    { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100, type: 'number' },
-    { field: 'CustomerID', width: 100, headerText: 'Customer ID', type: 'string' },
-    { field: 'EmployeeID', headerText: 'Employee ID', textAlign: 'Right', width: 100 },
-    { field: 'OrderDate', headerText: 'Order Date', format: 'yMd', width: 120, textAlign: 'Right', type:'Date' },
-  ],
-});
-
-grid.appendTo('#Grid');
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/data/getting-started-cs6/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% endif %}

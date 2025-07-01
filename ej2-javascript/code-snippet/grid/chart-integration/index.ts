@@ -1,6 +1,6 @@
 
 import { Grid, ContextMenu, ContextMenuClickEventArgs } from '@syncfusion/ej2-grids';
-import { salesDatas } from './datasource';
+import { salesDatas } from './datasource.ts';
 import { CategorySeries, ChartChanges, ChartPopupArgs, GridChart } from '@syncfusion/ej2-grid-chart';
 import { ChartModel} from '@syncfusion/ej2-charts';
 

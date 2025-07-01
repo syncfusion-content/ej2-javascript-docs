@@ -4,7 +4,7 @@ let localData = [
   { Id: 'game3', Game: 'Tennis' }
 ];
 
-let sportsData = new DataManager(localData);
+let sportsData = new ej.data.DataManager(localData);
 
 let dropDownListObject = new ej.dropdowns.DropDownList({
   // bind the sports data to dataSource property.

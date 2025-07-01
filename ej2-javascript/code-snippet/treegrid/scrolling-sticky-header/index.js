@@ -14,12 +14,12 @@ let treeGridObj = new ej.treegrid.TreeGrid({
 treeGridObj.appendTo('#TreeGrid');
 
 let toggle = new ej.buttons.Switch({
-    checked: true,
-    change: toggleStickyHeader
+  checked: true,
+  change: toggleStickyHeader
 });
 toggle.appendTo('#switch');
 
 function toggleStickyHeader(args) {
-  treeGridObj.enableStickyHeader = args.checked ?? false;
+  treeGridObj.enableStickyHeader = args.checked ? true : false;
 }
 

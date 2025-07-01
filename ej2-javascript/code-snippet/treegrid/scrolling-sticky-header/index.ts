@@ -24,5 +24,5 @@ let toggle: Switch = new Switch({
 toggle.appendTo('#switch');
 
 function toggleStickyHeader(args: ChangeEventArgs) {
-  treeGridObj.enableStickyHeader = args.checked ?? false;
+  treeGridObj.enableStickyHeader = args.checked ? true : false;
 }

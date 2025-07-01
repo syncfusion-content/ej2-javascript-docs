@@ -21,7 +21,7 @@ let grid = new ej.grids.Grid({
     { field: 'Total', headerText: 'Total', format: 'C2', textAlign: 'Right', width: 160 },
   ],
   created: () => {
-    gridChart = new GridChart({
+    gridChart = new ej.gridchart.GridChart({
       enableRtl: grid.enableRtl,
       locale: grid.locale,
     });

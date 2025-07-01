@@ -707,9 +707,9 @@ Meanwhile, the memory cache is set to expire after 60 minutes from RAM to free i
 
 ## Excel Export
 
-The server-side engine seamlessly supports Excel export functionality, enabling users to efficiently generate and download pivot table reports in Excel format directly from the server. To enable Excel export in the pivot table, set the [`allowExcelExport`] class to **true**. Once the API is set, the user needs to call the [`excelExport`] method to export the pivot table to Excel by clicking an external button.
+The server-side engine seamlessly supports Excel export functionality, enabling users to efficiently generate and download pivot table reports in Excel format directly from the server. To enable Excel export in the pivot table, set the [`allowExcelExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#allowexcelexport) class to **true**. Once the API is set, the user needs to call the [`excelExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#excelexport) method to export the pivot table to Excel by clicking an external button.
 
-N>: The pivot table component can be exported to Excel format using options available in the toolbar. For more details [refer](./tool-bar) here.
+N> The pivot table component can be exported to Excel format using options available in the toolbar. For more details [refer](./tool-bar) here.
 
 ```javascript
 var pivotTableObj = new ej.pivotview.PivotView({
@@ -850,7 +850,7 @@ document.getElementById('excel').onclick = function () {
 
 Also, the Excel export allows pivot table data to be exported in `CSV` file format. To export pivot table in `CSV` file format, you need to use the `csvExport` method by clicking an external button.
 
-N>: The pivot table component can be exported to CSV format using options available in the toolbar. For more details [refer](./tool-bar) here.
+N> The pivot table component can be exported to CSV format using options available in the toolbar. For more details [refer](./tool-bar) here.
 
 ```javascript
 var pivotTableObj = new ej.pivotview.PivotView({

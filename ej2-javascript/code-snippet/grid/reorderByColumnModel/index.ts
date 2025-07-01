@@ -1,5 +1,5 @@
 import { Grid, Reorder, Column } from '@syncfusion/ej2-grids';
-import { data } from './datasource';
+import { data } from './datasource.ts';
 import { Button } from '@syncfusion/ej2-buttons';
 
 Grid.Inject(Reorder);

@@ -1,6 +1,6 @@
 
 import { Grid, ContextMenu, ContextMenuClickEventArgs } from '@syncfusion/ej2-grids';
-import { salesDatas } from './datasource';
+import { salesDatas } from './datasource.ts';
 import { CategorySeries, ChartChanges, ChartPopupArgs, GridChart, UpdateChartArgs } from '@syncfusion/ej2-grid-chart';
 import { ChartModel, ILoadedEventArgs,AccumulationChartModel } from '@syncfusion/ej2-charts';
 
@@ -93,7 +93,7 @@ let grid: Grid = new Grid(
 grid.appendTo('#GridChart');
 
 function updateChartSettings(args: UpdateChartArgs): void {
-  const chart = args.changes?.chart;
+  const chart = args.changes.chart;
   if (!chart) return;
 
   // Restrict margin values to minimum 20.

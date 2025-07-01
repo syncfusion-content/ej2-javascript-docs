@@ -129,7 +129,7 @@ The following example demonstrates bind remote data using the `executeQuery` met
 
 ## Component Binding
 
-The Syncfusion ##Platform_Name## DataManager provides an abstraction for handling data binding across various UI components, including [Grid](https://ej2.syncfusion.com/documentation/grid/getting-started), [DropDownList](https://ej2.syncfusion.com/documentation/drop-down-list/getting-started), [Charts](https://ej2.syncfusion.com/documentation/chart/getting-started), and HTML tables. It supports both local and remote data sources, enabling flexible integration with data services.
+The Syncfusion ##Platform_Name## DataManager provides an abstraction for handling data binding across various UI components, including [Grid](../../grid/getting-started), [DropDownList](../../drop-down-list/getting-started), [Charts](../../chart/getting-started), and HTML tables. It supports both local and remote data sources, enabling flexible integration with data services.
 
 With built-in support for operations such as filtering, sorting, grouping, paging, and CRUD actions, the DataManager streamlines the process of managing data logic in modern web applications.
 

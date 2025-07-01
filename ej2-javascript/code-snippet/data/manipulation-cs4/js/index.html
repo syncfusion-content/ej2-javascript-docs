@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-  <title>EJ2 Grid</title>
+  <title>EJ2 DataManager</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Typescript Grid Control">
+  <meta name="description" content="Typescript DataManager Control">
   <meta name="author" content="Syncfusion">
   <link href="index.css" rel="stylesheet">
   <style>
@@ -33,6 +33,23 @@
       width: 120px;
     }
 
+    input {
+      width: 120px;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 14px;
+      font-family: Roboto;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus {
+      border-color: #3f51b5;
+      outline: none;
+    }
+
     #message {
       color: red;
       margin-top: 10px;
@@ -41,7 +58,7 @@
 
     .e-form button,
     .e-form input[type="button"] {
-      padding: 5px 16px;
+      padding: 10px 20px;
       background-color: #3f51b5;
       color: white;
       border: none;

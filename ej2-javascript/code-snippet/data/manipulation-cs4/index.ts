@@ -1,6 +1,6 @@
 import { DataManager, Query, ReturnOption } from '@syncfusion/ej2-data';
 import { compile } from '@syncfusion/ej2-base';
-import { data } from './datasource';
+import { data } from './datasource.ts';
 
 
 // Compile template for inserting data rows.

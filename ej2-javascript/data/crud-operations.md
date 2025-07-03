@@ -44,9 +44,9 @@ To perform CRUD operations on local data using DataManager, follow these steps:
 
   You can initialize the DataManager with a dataset by either:
 
-    * Assigning a JavaScript object array to the `json` property.
+  * Assigning a JavaScript object array to the `json` property.
     
-    * Passing the dataset directly to the `DataManager` constructor.
+  * Passing the dataset directly to the `DataManager` constructor.
 
 **2. Perform CRUD operations using the following DataManager methods:**
 

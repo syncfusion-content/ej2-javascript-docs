@@ -13,7 +13,13 @@
 </head>
 
 <body>
-       
+    <script type="text/x-template" id="rightLabel">
+        <div style="margin-top=-7px;">
+           <div id = "rightLabel">
+             ${getConstraintText(ganttProperties.constraintType)}
+           </div>
+        </div>
+    </script>
     
     <div id="container">
         <div id="Gantt"></div>        
@@ -27,11 +33,4 @@ if(ele) {
 }   
       </script>
 <script src="index.js" type="text/javascript"></script>
-<script type="text/x-template" id="rightLabel">
-    <div style="margin-top=-7px;">
-       <div id = "rightLabel">
-         ${getConstraintText(ganttProperties.constraintType)}
-       </div>
-    </div>
-</script>
 </body></html>

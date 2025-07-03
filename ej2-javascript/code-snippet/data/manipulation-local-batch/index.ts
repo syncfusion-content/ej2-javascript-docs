@@ -28,7 +28,6 @@ let changes: { changedRecords: Object[], addedRecords: Object[], deletedRecords:
         CustomerID: cusid.value,
         EmployeeID: +empid.value
     });
-    savaechanges()
 };
 
 (document.getElementById('changed') as HTMLElement).onclick = () => {
@@ -40,7 +39,6 @@ let changes: { changedRecords: Object[], addedRecords: Object[], deletedRecords:
         CustomerID: cusid.value,
         EmployeeID: +empid.value
     });
-    savaechanges()
 };
 
 (document.getElementById('deleted') as HTMLElement).onclick = () => {
@@ -48,10 +46,9 @@ let changes: { changedRecords: Object[], addedRecords: Object[], deletedRecords:
     changes.deletedRecords.push({
         OrderID: +orderid.value
     });
-    savaechanges()
 };
 
-function savaechanges() {
+(document.getElementById('save') as HTMLElement).onclick = () => {
   datamanager.saveChanges(changes, 'OrderID');
   changes = { changedRecords: [], addedRecords: [], deletedRecords: [] };
     datamanager.executeQuery(new Query())
@@ -61,4 +58,4 @@ function savaechanges() {
                 table.tBodies[0].appendChild(compiledFunction(data)[0].firstChild);
             });
         });
-}
+};

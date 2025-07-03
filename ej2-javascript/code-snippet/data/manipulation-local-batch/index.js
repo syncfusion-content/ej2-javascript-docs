@@ -25,7 +25,6 @@ document.getElementById('added').onclick = () => {
         CustomerID: cusid.value,
         EmployeeID: +empid.value
     });
-    savaechanges()
 };
 
 document.getElementById('changed').onclick = () => {
@@ -37,7 +36,6 @@ document.getElementById('changed').onclick = () => {
         CustomerID: cusid.value,
         EmployeeID: +empid.value
     });
-    savaechanges()
 };
 
 document.getElementById('deleted').onclick = () => {
@@ -45,17 +43,16 @@ document.getElementById('deleted').onclick = () => {
     changes.deletedRecords.push({
         OrderID: +orderid.value
     });
-    savaechanges()
 };
 
-function savaechanges() {
+document.getElementById('save').onclick = () => {
     datamanager.saveChanges(changes, 'OrderID');
     changes = { changedRecords: [], addedRecords: [], deletedRecords: [] };
-    datamanager.executeQuery(new Query())
+    datamanager.executeQuery(new ej.data.Query())
         .then((e) => {
             table.tBodies[0].innerHTML = '';
             (e.result).forEach((data) => {
                 table.tBodies[0].appendChild(compiledFunction(data)[0].firstChild);
             });
         });
-}
+};

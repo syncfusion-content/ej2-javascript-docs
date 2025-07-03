@@ -26,12 +26,12 @@ The Work Breakdown Structure (WBS) organizes project tasks hierarchically in the
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/wbscolumn-cs1/index.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="index.html" %}
+{% highlight html tabtitle="index.html" %}
 {% include code-snippet/gantt/wbscolumn-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/gantt/wbscolumn-cs1" %}
+{% previewsample "page.domainurl/code-snippet/gantt/wbscolumn-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -62,12 +62,12 @@ In the following example, WBS auto-update is enabled only during the **row drag 
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/wbscolumn-cs2/index.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="index.html" %}
+{% highlight html tabtitle="index.html" %}
 {% include code-snippet/gantt/wbscolumn-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/gantt/wbscolumn-cs2" %}
+{% previewsample "page.domainurl/code-snippet/gantt/wbscolumn-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 

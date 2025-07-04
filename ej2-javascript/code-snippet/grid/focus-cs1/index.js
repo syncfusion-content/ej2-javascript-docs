@@ -24,7 +24,7 @@ grid.appendTo('#Grid');
 var fieldName;
 
 function recordDoubleClick(e) {
-  var clickedColumnIndex = e.cell.getAttribute("data-colindex");
+  var clickedColumnIndex = e.cell.getAttribute('aria-colindex')-1;
   fieldName = this.columnModel[parseInt(clickedColumnIndex)].field;
 }
 

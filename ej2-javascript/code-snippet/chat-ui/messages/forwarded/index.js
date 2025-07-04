@@ -32,4 +32,4 @@ let chatUI = new ej.interactivechat.ChatUI({
 });
 
 // Render initialized Chat UI.
-chatUI.appendTo('#pinned');
+chatUI.appendTo('#forwarded');

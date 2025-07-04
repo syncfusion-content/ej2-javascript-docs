@@ -30,7 +30,7 @@ grid.appendTo('#Grid');
 let fieldName;
 
 function recordDoubleClick(e: RecordDoubleClickEventArgs) {
-  let clickedColumnIndex = e.cell.getAttribute("data-colindex");
+  let clickedColumnIndex = e.cell.getAttribute('aria-colindex')-1;
   fieldName = this.columnModel[parseInt(clickedColumnIndex)].field;
 }
 

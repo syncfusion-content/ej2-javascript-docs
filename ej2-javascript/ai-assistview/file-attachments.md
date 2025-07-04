@@ -41,7 +41,7 @@ You can enable the attachment by using the `enableAttachments` property. By defa
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/ai-assistview/file-attachments/enbale-attachment" %}
+{% previewsample "page.domainurl/code-snippet/ai-assistview/file-attachments/enable-attachment" %}
 {% endif %}
 
 ## Configuring attachments

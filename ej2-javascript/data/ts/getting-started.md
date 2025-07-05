@@ -9,9 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## DataManager
+# Getting started in Syncfusion ##Platform_Name## DataManager
 
-This section provides a quick overview of how to get started with the Syncfusion DataManager in the ##Platform_Name## platform. It includes guidance on installation, basic setup, and connecting to both local and remote data sources.
+The Syncfusion ##Platform_Name## DataManager enables efficient data management in ##Platform_Name## applications. It seamlessly interacts with various data sources (remote or local) and provides functionalities like sorting, filtering, paging, and CRUD (Create, Read, Update, and Delete) operations, enhancing the data presentation capabilities of your ##Platform_Name## application.
+
+This section provides a quick overview of how to set up a ##Platform_Name## project and integrate the Syncfusion ##Platform_Name## DataManager. It includes instructions for installation, basic configuration, and integration with both local and remote data sources, along with support for data operations like sorting, filtering, and paging.
 
 ## Dependencies
 
@@ -25,18 +27,54 @@ Below is the list of minimum dependencies required to use the DataManager.
 
 > `@syncfusion/ej2-data` requires the presence of a Promise feature in global environment. In the browser, window.Promise must be available.
 
-## Installation
-
-You can install DataManager via npm for your preferred framework.
-
-```bash
-npm install @syncfusion/ej2-data
-
-```
-
 ## Set up development environment
 
-To get started with the Syncfusion ##Platform_Name## DataManager, follow the step-by-step instructions provided in the [Syncfusion Getting Started](https://ej2.syncfusion.com/documentation/getting-started/quick-start) documentation to configure your development environment.
+Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
+
+After cloning the application in the **ej2-quickstart** folder, run the following command line to navigate to the 
+**ej2-quickstart** folder.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+cd ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
+
+## Add Syncfusion JavaScript packages
+
+Syncfusion JavaScript (Essential JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion JavaScript (Essential JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+
+The quickstart application is preconfigured with the dependent **@syncfusion/ej2** package in the **~/package.json** file. Use the following command to install the dependent npm packages from the command prompt.
+
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
+npm install
+
+{% endhighlight %}
+{% endtabs %}
+
+or 
+
+To install the Syncfusion package required for data management using the following command:
+
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
+npm install @syncfusion/ej2-data
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Connection to a data source
 
@@ -56,7 +94,7 @@ Whether the data resides in a static JSON file, a RESTful Web API, or an OData s
 
 ### Binding to JSON data
 
-The Syncfusion ##Platform_Name## DataManager allows seamless integration with local JSON data sources, making it ideal for applications where data is managed entirely on the client-side without involving server communication.
+Binding to a local data source involves connecting your application directly to a dataset stored within the application itself, such as a JSON file. This approach is ideal for small-scale applications where data is static and does not need to be fetched from a server. It simplifies development and improves performance by keeping everything on the client side.
 
 This can be done in one of two ways:
 
@@ -64,53 +102,70 @@ This can be done in one of two ways:
 
 * Passing the data array directly to the `DataManager` constructor.
 
-To display the data in a clean, readable table format, add the following CSS inside the <head> tag of your index.html file:
+Follow these steps to bind the JSON data:
 
-```html
+**1.** Create a file named **src/datasource.ts** and export your JSON data:
+
+```ts
+
+export let data: Object[] = [
+  {
+    OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5, OrderDate: new Date(8364186e5),
+    ShipName: 'Vins et alcools Chevalier', ShipCity: 'Reims', ShipAddress: '59 rue de l Abbaye',
+    ShipRegion: 'CJ', ShipPostalCode: '51100', ShipCountry: 'France', Freight: 32.38, Verified: !0
+  },
+  {
+    OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6, OrderDate: new Date(836505e6),
+    ShipName: 'Toms Spezialitäten', ShipCity: 'Münster', ShipAddress: 'Luisenstr. 48',
+    ShipRegion: 'CJ', ShipPostalCode: '44087', ShipCountry: 'Germany', Freight: 11.61, Verified: !1
+  },
+  {
+    OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4, OrderDate: new Date(8367642e5),
+    ShipName: 'Hanari Carnes', ShipCity: 'Rio de Janeiro', ShipAddress: 'Rua do Paço, 67',
+    ShipRegion: 'RJ', ShipPostalCode: '05454-876', ShipCountry: 'Brazil', Freight: 65.83, Verified: !0
+  }
+ // Add more records as needed.
+]
+
+```
+
+**2.** In your **src/index.ts** file, import the data and bind it using `DataManager`.
+
+
+**3.** Add the following CSS inside the <head> tag of your **index.html** file to style the table:
+
+```css
+
 <style>
-     .e-table {
-          border: solid 1px #e0e0e0;
-          border-collapse: collapse;
-          font-family: Roboto;
-     }
+  .e-table {
+    border: solid 1px #e0e0e0;
+    border-collapse: collapse;
+    font-family: Roboto;
+  }
 
-     .e-table td,
-     .e-table th {
-          border-style: solid;
-          border-width: 1px 0 0;
-          border-color: #e0e0e0;
-          display: table-cell;
-          font-size: 14px;
-          line-height: 20px;
-          overflow: hidden;
-          padding: 8px 21px;
-          vertical-align: middle;
-          white-space: nowrap;
-          width: auto;
-     }
-</style>
-``` 
+  .e-table td,
+  .e-table th {
+    border-style: solid;
+    border-width: 1px 0 0;
+    border-color: #e0e0e0;
+    display: table-cell;
+    font-size: 14px;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 8px 21px;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: auto;
+  }
+ </style>
 
-The following sample demonstrates passing the data array directly to the DataManager:
+```
+
+The following example demonstrates how to bind JSON data using the [executeLocal](../api/data/dataManager/#executelocal) method of [DataManager](../../documentation/api/data/datamanager):
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
-{% raw %}
-import { DataManager, Query } from '@syncfusion/ej2-data';
-import { compile } from '@syncfusion/ej2-base';
-import {data} from './datasource';
-
-let template: string = '<tr><td>${OrderID}</td><td>${CustomerID}</td><td>${EmployeeID}</td></tr>';
-let compiledFunction: Function = compile(template);
-
-let result: Object[] = new DataManager(data).executeLocal(new Query().take(8));
-
-let table: HTMLElement = (<HTMLElement>document.getElementById('datatable'));
-
-result.forEach((data: Object) => {
-    table.appendChild(compiledFunction(data)[0]);
-});
-{% endraw %}
+{% include code-snippet/data/getting-started-cs27/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/data/getting-started-cs27/index.html %}
@@ -122,7 +177,7 @@ result.forEach((data: Object) => {
           
 {% previewsample "page.domainurl/code-snippet/data/getting-started-cs27" %}
 
-### Binding to OData
+### Binding to ODataV4
 
 OData (Open Data Protocol) is a standardized protocol for querying and updating data using RESTful APIs. It is widely adopted in enterprise applications for enabling structured, scalable access to remote data services.
 
@@ -130,7 +185,7 @@ The Syncfusion ##Platform_Name## DataManager provides built-in support for inter
 
 You can bind a remote OData service to the DataManager by setting its `url` property to the service endpoint URL. This configuration enables the DataManager to automatically perform server-side operations such as sorting, filtering, paging, and CRUD by sending appropriate requests to the specified endpoint.
 
-The following sample demonstrates how to bind the DataManager to a remote OData service:
+The following sample demonstrates how to bind the remote ODataV4 service using the [executeLocal](../api/data/dataManager/#executelocal) method of [DataManager](../../documentation/api/data/datamanager):
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -142,3 +197,69 @@ The following sample demonstrates how to bind the DataManager to a remote OData 
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/data/getting-started-cs28" %}
+
+## Filter
+
+Data filtering is a fundamental operation that enables you to obtain a refined view of data based on specified criteria. This feature is essential for efficiently managing and displaying large datasets.
+
+You can easily construct filter expressions using the [where](../api/data/query/#where) method of the [query](../api/data/query) class. This method allows you to specify filter criteria based on various conditions.
+
+The following example demonstrates how to filter data based on the **EmployeeID** field equal to **4** using the `where` method: 
+
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+{% include code-snippet/data/getting-started-cs29/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/data/getting-started-cs29/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/data/getting-started-cs29/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/data/getting-started-cs29" %}
+
+## Sort
+
+Sorting allows you to arrange data in a specific order, making it easier to read, analyze, and locate information quickly.
+
+You can sort the data either in ascending or descending order using the [sortBy](../api/data/query/#sortby) method of the [query](../api/data/query) class. This method specifies the field by which the data should be sorted.
+
+The following example demonstrates how to sort data based on the **EmployeeID** field in **ascending** order using the `sortBy` method:
+
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+{% include code-snippet/data/getting-started-cs30/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/data/getting-started-cs30/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/data/getting-started-cs30/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/data/getting-started-cs30" %}
+
+## Page
+
+Paging allows data to be displayed in segmented pages, making it easier to navigate large datasets. It is especially helpful in client-side applications, where only a limited number of records are shown per page to enhance readability and improve performance.
+
+You can use the [page](../api/data/query/#page)` method of the [query](../api/data/query) class to retrieve a specific range of data based on the page index and page size.
+
+The following example demonstrates how to apply paging to the data using the `page` method to get the first page containing 8 records:
+
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+{% include code-snippet/data/getting-started-cs31/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/data/getting-started-cs31/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/data/getting-started-cs31/datasource.ts%}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/data/getting-started-cs31" %}

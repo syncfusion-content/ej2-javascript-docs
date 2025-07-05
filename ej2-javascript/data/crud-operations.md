@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# CRUD operations in ##Platform_Name## DataManager
+# CRUD operations in Syncfusion ##Platform_Name## DataManager
 
 The Syncfusion ##Platform_Name## DataManager enables seamless Create, Read, Update, and Delete (CRUD) operations on data, whether it's stored locally in the browser or remotely on a server. You can manipulate data using the DataManager by calling its built-in methods or binding it to UI components like Grid, Gantt, or Scheduler. These components automatically trigger CRUD actions based on user interactions such as editing a row or deleting a record.
 
@@ -38,7 +38,7 @@ The process of performing CRUD operations varies depending on the data source:
 
 Local Data CRUD Operations allow you to efficiently manage and manipulate data stored in your application without the need for external servers or APIs. This is useful for smaller applications, offline use cases, or situations where you want to quickly manipulate temporary datasets within your application.
 
-To perform CRUD operations on local data using DataManager, follow these steps:
+To perform CRUD operations on local data using Syncfusion ##Platform_Name## DataManager, follow these steps:
 
 **1. Initialize the DataManager with local data:**
 

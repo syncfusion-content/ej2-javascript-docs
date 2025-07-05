@@ -9,9 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## DataManager
+# Getting started in Syncfusion ##Platform_Name## DataManager
 
-This section provides a quick overview of how to get started with the Syncfusion DataManager in the ##Platform_Name## platform. It includes guidance on installation, basic setup, and connecting to both local and remote data sources.
+The Syncfusion ##Platform_Name## DataManager enables efficient data management in ##Platform_Name## applications. It seamlessly interacts with various data sources (remote or local) and provides functionalities like sorting, filtering, paging, and CRUD (Create, Read, Update, and Delete) operations, enhancing the data presentation capabilities of your ##Platform_Name## application.
+
+This section provides a quick overview of how to set up a ##Platform_Name## project and integrate the Syncfusion ##Platform_Name## DataManager. It includes instructions for installation, basic configuration, and integration with both local and remote data sources, along with support for data operations like sorting, filtering, and paging.
 
 ## Dependencies
 
@@ -27,7 +29,84 @@ Below is the list of minimum dependencies required to use the DataManager.
 
 ## Setup for local environment
 
-To get started with the Syncfusion ##Platform_Name## DataManager, follow the step-by-step instructions provided in the [Syncfusion Getting Started](https://ej2.syncfusion.com/javascript/documentation/getting-started/quick-start#set-up-development-environment) documentation to configure your local environment.
+Refer the following steps for setup your local environment.
+
+**Step 1:** Create a root folder `my-app` for your application.
+
+**Step 2:** Create `my-app/resources` folder to store local scripts files.
+
+**Step 3:** Create `my-app/index.js` and `my-app/index.html` files for initializing Essential JS 2 DataManager.
+
+## Adding Syncfusion resources
+
+The Syncfusion ##Platform_Name## DataManager can be initialized by using either of the following ways.
+
+* Using local script.
+* Using CDN link for script.
+
+### Using local script
+
+You can get the global script from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+
+After installing the Essential JS 2 product build, you can copy the data manager and its dependencies scripts file into the `resources/scripts` folder.
+
+Refer the below code to find location DataManager script file.
+
+**Syntax:**
+
+> Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+
+**Example:**
+
+> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-data/dist/global/ej2-data.min.js`
+
+After copying the files, then you can refer the pager's scripts into the `index.html` file.
+
+```html
+<!DOCTYPE html>
+  <html xmlns="http://www.w3.org/1999/xhtml">
+       <head>
+            <title>Essential JS 2</title>
+            <!-- Essential JS 2 Data Manager's dependent script -->
+            <script src="resources/scripts/ej2-base.min.js" type="text/javascript"></script>
+            <!-- Essential JS 2 Data Manager's global script -->
+            <script src="resources/scripts/ej2-data.min.js" type="text/javascript"></script>
+       </head>
+       <body>
+       </body>
+  </html>
+
+```
+
+### Using CDN link for script
+
+Using CDN link, you can directly refer the DataManager and its dependencies script into the `index.html`.
+
+Refer the DataManager CDN links as below
+
+**Syntax:**
+
+> Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+
+**Example:**
+
+> Script: [`http://cdn.syncfusion.com/ej2/ej2-data/dist/global/ej2-data.min.js`](http://cdn.syncfusion.com/ej2/ej2-data/dist/global/ej2-data.min.js)
+
+```html
+<!DOCTYPE html>
+  <html xmlns="http://www.w3.org/1999/xhtml">
+       <head>
+            <title>Essential JS 2</title>
+            <!-- Essential JS 2 Data Manager's dependent script -->
+            <script src="http://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+            <!-- Essential JS 2 Pager's global script -->
+            <script src="http://cdn.syncfusion.com/ej2/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
+       </head>
+       <body>
+       </body>
+  </html>
+
+```
 
 ## Connection to a data source
 
@@ -47,7 +126,7 @@ Whether the data resides in a static JSON file, a RESTful Web API, or an OData s
 
 ### Binding to JSON data
 
-The Syncfusion ##Platform_Name## DataManager allows seamless integration with local JSON data sources, making it ideal for applications where data is managed entirely on the client-side without involving server communication.
+Binding to a local data source involves connecting your application directly to a dataset stored within the application itself, such as a JSON file. This approach is ideal for small-scale applications where data is static and does not need to be fetched from a server. It simplifies development and improves performance by keeping everything on the client side.
 
 This can be done in one of two ways:
 
@@ -55,34 +134,67 @@ This can be done in one of two ways:
 
 * Passing the data array directly to the `DataManager` constructor.
 
-To display the data in a clean, readable table format, add the following CSS inside the <head> tag of your index.html file:
+Follow these steps to bind the JSON data:
 
-```html
+**1.** Create a file named **src/datasource.js** and define your JSON data:
+
+```ts
+
+var data = [
+  {
+    OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5, OrderDate: new Date(8364186e5),
+    ShipName: 'Vins et alcools Chevalier', ShipCity: 'Reims', ShipAddress: '59 rue de l Abbaye',
+    ShipRegion: 'CJ', ShipPostalCode: '51100', ShipCountry: 'France', Freight: 32.38, Verified: !0
+  },
+  {
+    OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6, OrderDate: new Date(836505e6),
+    ShipName: 'Toms Spezialitäten', ShipCity: 'Münster', ShipAddress: 'Luisenstr. 48',
+    ShipRegion: 'CJ', ShipPostalCode: '44087', ShipCountry: 'Germany', Freight: 11.61, Verified: !1
+  },
+  {
+    OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4, OrderDate: new Date(8367642e5),
+    ShipName: 'Hanari Carnes', ShipCity: 'Rio de Janeiro', ShipAddress: 'Rua do Paço, 67',
+    ShipRegion: 'RJ', ShipPostalCode: '05454-876', ShipCountry: 'Brazil', Freight: 65.83, Verified: !0
+  }
+ // Add more records as needed.
+]
+
+```
+
+**2.** Include **datasource.js** file in your **index.html** before your main script:
+
+**3.** In your **src/index.js** file, bind the data to the table using `DataManager`:
+
+**4.** Add the following CSS inside the <head> tag of your **index.html** file to style the table:
+
+```css
+
 <style>
-     .e-table {
-          border: solid 1px #e0e0e0;
-          border-collapse: collapse;
-          font-family: Roboto;
-     }
+  .e-table {
+    border: solid 1px #e0e0e0;
+    border-collapse: collapse;
+    font-family: Roboto;
+  }
 
-     .e-table td,
-     .e-table th {
-          border-style: solid;
-          border-width: 1px 0 0;
-          border-color: #e0e0e0;
-          display: table-cell;
-          font-size: 14px;
-          line-height: 20px;
-          overflow: hidden;
-          padding: 8px 21px;
-          vertical-align: middle;
-          white-space: nowrap;
-          width: auto;
-     }
-</style>
-``` 
+  .e-table td,
+  .e-table th {
+    border-style: solid;
+    border-width: 1px 0 0;
+    border-color: #e0e0e0;
+    display: table-cell;
+    font-size: 14px;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 8px 21px;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: auto;
+  }
+ </style>
 
-The following sample demonstrates passing the data array directly to the DataManager:
+```
+
+The following example demonstrates how to bind JSON data using the [executeLocal](../api/data/dataManager/#executelocal) method of [DataManager](../api/data/datamanager/):
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -98,7 +210,7 @@ The following sample demonstrates passing the data array directly to the DataMan
         
 {% previewsample "page.domainurl/code-snippet/data/getting-started-cs9" %}
 
-### Binding to OData
+### Binding to ODataV4
 
 OData (Open Data Protocol) is a standardized protocol for querying and updating data using RESTful APIs. It is widely adopted in enterprise applications for enabling structured, scalable access to remote data services.
 
@@ -106,7 +218,7 @@ The Syncfusion ##Platform_Name## DataManager provides built-in support for inter
 
 You can bind a remote OData service to the DataManager by setting its `url` property to the service endpoint URL. This configuration enables the DataManager to automatically perform server-side operations such as sorting, filtering, paging, and CRUD by sending appropriate requests to the specified endpoint.
 
-The following sample demonstrates how to bind the DataManager to a remote OData service:
+The following sample demonstrates how to bind the remote ODataV4 service using the `executeQuery` method of `DataManager`:
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -118,3 +230,69 @@ The following sample demonstrates how to bind the DataManager to a remote OData 
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/data/getting-started-cs10" %}
+
+## Filter
+
+Data filtering is a fundamental operation that enables you to obtain a refined view of data based on specified criteria. This feature is essential for efficiently managing and displaying large datasets.
+
+You can easily construct filter expressions using the [where](../api/data/query/#where) method of the [query](../api/data/query) class. This method allows you to specify filter criteria based on various conditions.
+
+The following example demonstrates how to filter data based on the **EmployeeID** field equal to **4** using the `where` method: 
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/data/getting-started-cs29/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/data/getting-started-cs29/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="es5-datasource.js" %}
+{% include code-snippet/data/getting-started-cs29/es5-datasource.js %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/data/getting-started-cs29" %}
+
+## Sort
+
+Sorting allows you to arrange data in a specific order, making it easier to read, analyze, and locate information quickly.
+
+You can sort the data either in ascending or descending order using the [sortBy](../api/data/query/#sortby) method of the [query](../api/data/query) class. This method specifies the field by which the data should be sorted.
+
+The following example demonstrates how to sort data based on the **EmployeeID** field in **ascending** order using the `sortBy` method:
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/data/getting-started-cs30/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/data/getting-started-cs30/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="es5-datasource.js" %}
+{% include code-snippet/data/getting-started-cs30/es5-datasource.js %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/data/getting-started-cs30" %}
+
+## Page
+
+Paging allows data to be displayed in segmented pages, making it easier to navigate large datasets. It is especially helpful in client-side applications, where only a limited number of records are shown per page to enhance readability and improve performance.
+
+You can use the [page](../api/data/query/#page)` method of the [query](../api/data/query) class to retrieve a specific range of data based on the page index and page size.
+
+The following example demonstrates how to apply paging to the data using the `page` method to get the first page containing 8 records:
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/data/getting-started-cs31/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/data/getting-started-cs31/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="es5-datasource.js" %}
+{% include code-snippet/data/getting-started-cs31/es5-datasource.js %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/data/getting-started-cs31" %}

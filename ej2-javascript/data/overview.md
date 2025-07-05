@@ -9,13 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Overview
+# Overview in Syncfusion ##Platform_Name## DataManager
 
 This section introduces the core concepts, architecture, and use cases of Syncfusion ##Platform_Name## DataManager, a versatile and extensible data management component designed to unify data operations across platforms.
 
 ## What is DataManager?
 
-DataManager is a powerful data handling component provided by Syncfusion that simplifies working with data from different sources. It acts as a bridge between your application and various types of data sources, Whether your data is stored locally (like in an array or JSON) or fetched remotely from web services, APIs, or databases, DataManager provides a unified way to query, manipulate, and manage that data efficiently across these different sources. DataManager is a high-level data-handling utility provided by Syncfusion that acts as a bridge between your application and multiple data sources, whether they are local (arrays or JSON objects) or remote (REST APIs, OData services, GraphQL, etc.).
+The Syncfusion ##Platform_Name## DataManager is a powerful data handling component provided by Syncfusion that simplifies working with data from different sources. It acts as a bridge between your application and various types of data sources, Whether your data is stored locally (like in an array or JSON) or fetched remotely from web services, APIs, or databases, DataManager provides a unified way to query, manipulate, and manage that data efficiently across these different sources. DataManager is a high-level data-handling utility provided by Syncfusion that acts as a bridge between your application and multiple data sources, whether they are local (arrays or JSON objects) or remote (REST APIs, OData services, GraphQL, etc.).
 
 With DataManager, you can perform common data operations such as filtering, sorting, paging, grouping, and even CRUD (Create, Read, Update, and Delete) actions without worrying about the underlying complexities of the data source. This eliminates the need to write repetitive logic for handling different data formats or protocols, making it much easier to build data-driven, UI-rich applications.
 
@@ -57,23 +57,23 @@ Use Syncfusion ##Platform_Name## DataManager when your application requires a un
 
 The Syncfusion ##Platform_Name## DataManager follows a streamlined request lifecycle to manage data operations, with built-in support for error handling to ensure robustness:
 
-**Request lifecycle**
+**Request lifecycle:**
 
-1. **Query creation:** A query object is created using the **Query** class, specifying operations such as filtering, sorting, or paging.
+**1. Query creation:** A query object is created using the **Query** class, specifying operations such as filtering, sorting, or paging.
 
-2. **Request translation:** DataManager passes the query to an adaptor, which translates it into a format the server can understand (e.g., query parameters for REST, a GraphQL query string, etc.).
+**2. Request translation:** DataManager passes the query to an adaptor, which translates it into a format the server can understand (e.g., query parameters for REST, a GraphQL query string, etc.).
 
-3. **Request execution:** The adaptor executes the request against the target data source:
+**3. Request execution:** The adaptor executes the request against the target data source:
 
-  * **Remote:** Issues an HTTP call to the server endpoint.
+   * **Remote:** Issues an HTTP call to the server endpoint.
 
-  * **Local:** Performs a client-side operation on an in-memory array or local cache.
+   * **Local:** Performs a client-side operation on an in-memory array or local cache.
 
-4. **Response handling:** The server returns a response, which the adaptor processes and formats into a structure DataManager can consume. Upon receiving a response, the adaptor processes the raw data parsing JSON, normalizing field names, or applying client-side transformations and returns a standardized result object.
+**4. Response handling:** The server returns a response, which the adaptor processes and formats into a structure DataManager can consume. Upon receiving a response, the adaptor processes the raw data parsing JSON, normalizing field names, or applying client-side transformations and returns a standardized result object.
 
-5. **Data binding:** DataManager returns the processed result to the UI component or service for binding or further use.
+**5. Data binding:** DataManager returns the processed result to the UI component or service for binding or further use.
 
-6. **Error Handling:** If any step fails such as a network error, invalid response format, or server-side validation error the adaptor or DataManager triggers an error event (`actionFailure`).
+**6. Error Handling:** If any step fails such as a network error, invalid response format, or server-side validation error the adaptor or DataManager triggers an error event (`actionFailure`).
 
 **Adaptor role:**
 

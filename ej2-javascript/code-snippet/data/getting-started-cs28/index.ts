@@ -13,9 +13,9 @@ let table: HTMLElement = (<HTMLElement>document.getElementById('datatable'));
 
 new DataManager({ url: SERVICE_URI, adaptor: new ODataV4Adaptor(), }).executeQuery(new Query().take(8)).then((e: ReturnOption) => {
 
-        (<Object[]>e.result).forEach((data: Object) => {
-            table.appendChild(compiledFunction(data)[0]);
-        });
+    (<Object[]>e.result).forEach((data: Object) => {
+        table.appendChild(compiledFunction(data)[0]);
+    });
 });
 
 

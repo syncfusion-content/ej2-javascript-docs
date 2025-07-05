@@ -9,13 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adaptors in ##Platform_Name## DataManager
+# Adaptors in Syncfusion ##Platform_Name## DataManager
 
 Different data sources and remote services often follow distinct protocols for handling requests and returning responses. While the DataManager is designed to support a wide range of data services, it cannot natively interpret every possible data format or communication pattern.
 
 To tackle this challenge, the DataManager leverages a flexible adaptor system. Adaptors act as intermediaries that translate requests and responses between the DataManager and the data service, ensuring seamless interaction regardless of the backend’s architecture.
 
-Adaptors in Syncfusion’s DataManager act as communication bridges between the component and various data sources. They format queries and interpret responses appropriately depending on whether the data source is local or remote.
+Adaptors in Syncfusion ##Platform_Name## DataManager act as communication bridges between the component and various data sources. They format queries and interpret responses appropriately depending on whether the data source is local or remote.
 
 **Purpose of Adaptors:**
 
@@ -44,7 +44,7 @@ Syncfusion provides several built-in adaptors to work with different data source
 
 ## Json adaptor
 
-The `JsonAdaptor` is a built-in adaptor provided by Syncfusion DataManager module. It is specifically designed to work with local data sources, such as JavaScript arrays or in-memory collections.  It allows you to perform various data operations like filtering, sorting, paging, and grouping directly on the client-side, without the need for server-side requests.
+The `JsonAdaptor` is a built-in adaptor provided by Syncfusion ##Platform_Name## DataManager module. It is specifically designed to work with local data sources, such as JavaScript arrays or in-memory collections.  It allows you to perform various data operations like filtering, sorting, paging, and grouping directly on the client-side, without the need for server-side requests.
 
 If you're building a feature like a product listing or a customer table where data is already available on the client-side (e.g., fetched once from an API or stored locally), the `JsonAdaptor` allows you to perform data operations directly in the browser, eliminating unnecessary server requests and improving performance.
 
@@ -132,7 +132,7 @@ Here is an example that demonstrates how to use the `JsonAdaptor`:
 
 ## Url adaptor
 
-The `UrlAdaptor` is a built-in adaptor in Syncfusion's DataManager module designed to interact with remote web services such as RESTful APIs. It acts as the base class for many other adaptors (like WebApiAdaptor and ODataAdaptor), providing core functionality for HTTP communication.
+The `UrlAdaptor` is a built-in adaptor in Syncfusion ##Platform_Name## DataManager module designed to interact with remote web services such as RESTful APIs. It acts as the base class for many other adaptors (like WebApiAdaptor and ODataAdaptor), providing core functionality for HTTP communication.
 
 This adaptor is especially useful when your data resides on a server and you need to perform operations like filtering, sorting, paging, or grouping on that remote data.
 
@@ -166,9 +166,9 @@ Assign your API endpoint to the `url` property and use `UrlAdaptor` as the `adap
 ```ts
 
 const datamanger = new DataManager({
-    // Use remote server host and port instead of 'xxxx'.
-    url: 'https://localhost:xxxx/api/Orders',
-    adaptor: new UrlAdaptor(),
+  // Use remote server host and port instead of 'xxxx'.
+  url: 'https://localhost:xxxx/api/Orders',
+  adaptor: new UrlAdaptor(),
 });
 
 ```
@@ -180,22 +180,22 @@ Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [
 ```ts
 
 datamanger.executeQuery(new Query().take(10)).then((e: ReturnOption) => {
-    const response = e.result as { result: Order[] };
-    const data = response.result;
-    const tbody = document.getElementById('table-body');
-    data.forEach((item: Order) => {
-        const row = document.createElement('tr');
-        row.innerHTML = `
-          <td>${item.OrderID}</td>
-          <td>${item.CustomerID}</td>
-          <td>${item.EmployeeID}</td>
-          <td>${item.ShipCity}</td>
-          <td>${item.ShipCountry}</td>
-      `;
-        tbody.appendChild(row);
-    });
+  const response = e.result as { result: Order[] };
+  const data = response.result;
+  const tbody = document.getElementById('table-body');
+  data.forEach((item: Order) => {
+    const row = document.createElement('tr');
+    row.innerHTML = `
+      <td>${item.OrderID}</td>
+      <td>${item.CustomerID}</td>
+      <td>${item.EmployeeID}</td>
+      <td>${item.ShipCity}</td>
+      <td>${item.ShipCountry}</td>
+    `;
+    tbody.appendChild(row);
+  });
 }).catch(error => {
-    console.error("Data fetch failed:", error);
+  console.error("Data fetch failed:", error);
 });
 
 ```
@@ -209,9 +209,9 @@ Assign your API endpoint to the `url` property and use `UrlAdaptor` as the `adap
 ```js
 
 const datamanger = new ej.data.DataManager({
-    // Use remote server host and port instead of 'xxxx'.
-    url: 'https://localhost:xxxx/api/Orders',
-    adaptor: new ej.data.UrlAdaptor(),
+  // Use remote server host and port instead of 'xxxx'.
+  url: 'https://localhost:xxxx/api/Orders',
+  adaptor: new ej.data.UrlAdaptor(),
 });
 
 ```
@@ -222,21 +222,21 @@ Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [
 
 ```js
 datamanger.executeQuery(new ej.data.Query().take(10)).then((e) => {
-    const data = e.result.result;
-    const tbody = document.getElementById('table-body');
-    data.forEach((item) => {
-        const row = document.createElement('tr');
-        row.innerHTML = `
-          <td>${item.OrderID}</td>
-          <td>${item.CustomerID}</td>
-          <td>${item.EmployeeID}</td>
-          <td>${item.ShipCity}</td>
-          <td>${item.ShipCountry}</td>
-      `;
-        tbody.appendChild(row);
-    });
+  const data = e.result.result;
+  const tbody = document.getElementById('table-body');
+  data.forEach((item) => {
+    const row = document.createElement('tr');
+    row.innerHTML = `
+      <td>${item.OrderID}</td>
+      <td>${item.CustomerID}</td>
+      <td>${item.EmployeeID}</td>
+      <td>${item.ShipCity}</td>
+      <td>${item.ShipCountry}</td>
+    `;
+    tbody.appendChild(row);
+  });
 }).catch(error => {
-    console.error("Data fetch failed:", error);
+  console.error("Data fetch failed:", error);
 });
 
 ```
@@ -283,7 +283,7 @@ Here is an example that demonstrates how to use the `UrlAdaptor`:
 
 ## OData adaptor
 
-The `ODataAdaptor` in Syncfusion's DataManager facilitates seamless integration with [OData](http://www.odata.org/documentation/odata-version-3-0/) services, which are standardized RESTful APIs designed for querying and manipulating data over HTTP. This adaptor streamlines operations such as querying, filtering, sorting, and paging data from OData endpoints, making it especially suitable for enterprise applications that require standardized and interoperable data access.
+The `ODataAdaptor` in Syncfusion ##Platform_Name## DataManager facilitates seamless integration with [OData](http://www.odata.org/documentation/odata-version-3-0/) services, which are standardized RESTful APIs designed for querying and manipulating data over HTTP. This adaptor streamlines operations such as querying, filtering, sorting, and paging data from OData endpoints, making it especially suitable for enterprise applications that require standardized and interoperable data access.
 
 This adaptor is especially useful when:
 
@@ -298,10 +298,10 @@ The `ODataAdaptor` automatically translates DataManager query operations into OD
 The `ODataAdaptor` expects the server's response to be a JSON object containing two primary properties:
 
 - **result:**
-    An array that contains the actual data records to be processed or displayed.
+  An array that contains the actual data records to be processed or displayed.
 
 - **count:**
-    A number representing the total count of records available on the server. This is especially important for enabling accurate pagination.
+  A number representing the total count of records available on the server. This is especially important for enabling accurate pagination.
 
 A sample response object should look like this:
 
@@ -327,9 +327,9 @@ Assign your API endpoint to the `url` property and use `ODataAdaptor` as the `ad
 ```ts
 
 const datamanger = new DataManager({
-    // Use remote server host and port instead of 'xxxx'.
-    url: 'https://localhost:xxxx/api/Orders',
-    adaptor: new ODataAdaptor(),
+  // Use remote server host and port instead of 'xxxx'.
+  url: 'https://localhost:xxxx/api/Orders',
+  adaptor: new ODataAdaptor(),
 });
 
 ```
@@ -341,9 +341,9 @@ Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [
 ```ts
 
 datamanger.executeQuery(new Query().take(8)).then((e: ReturnOption) => {
-    (<Object[]>e.result.result).forEach((data: Object) => {
-        table.appendChild(compiledFunction(data)[0]);
-    });
+  (<Object[]>e.result.result).forEach((data: Object) => {
+    table.appendChild(compiledFunction(data)[0]);
+  });
 });
 
 ```
@@ -357,9 +357,9 @@ Assign your API endpoint to the `url` property and use `ODataAdaptor` as the `ad
 ```js
 
 const datamanger = new ej.data.DataManager({
-    // Use remote server host and port instead of 'xxxx'.
-    url: 'https://localhost:xxxx/api/Orders',
-    adaptor: new ej.data.ODataAdaptor(),
+  // Use remote server host and port instead of 'xxxx'.
+  url: 'https://localhost:xxxx/api/Orders',
+  adaptor: new ej.data.ODataAdaptor(),
 });
 
 ```
@@ -370,10 +370,9 @@ Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [
 
 ```js
 datamanger.executeQuery(new ej.data.Query().take(8)).then((e) => {
-
-    e.result.result.forEach((data) => {
-        table.appendChild(compiledFunction(data)[0]);
-    });
+  e.result.result.forEach((data) => {
+    table.appendChild(compiledFunction(data)[0]);
+  });
 });
 
 ```
@@ -421,7 +420,7 @@ Here is an example that demonstrates how to use the `ODataAdaptor`:
 
 ## ODataV4 adaptor
 
-The `ODataV4Adaptor` is a specialized adaptor in Syncfusion's DataManager module, designed for interacting with OData v4 services. OData (Open Data Protocol) is a standardized protocol for creating and consuming RESTful APIs. The ODataV4 protocol is an improved version of previous OData protocols, offering enhanced capabilities and better support for modern web standards.
+The `ODataV4Adaptor` is a specialized adaptor in Syncfusion ##Platform_Name## DataManager module, designed for interacting with OData v4 services. OData (Open Data Protocol) is a standardized protocol for creating and consuming RESTful APIs. The ODataV4 protocol is an improved version of previous OData protocols, offering enhanced capabilities and better support for modern web standards.
 
 Syncfusion’s `ODataV4Adaptor` allows the DataManager to communicate with OData V4-compliant services, performing operations like filtering, sorting, paging, and grouping directly via OData query options in the URL. These operations are translated into OData query options and appended to the request URL, allowing the server to process them efficiently. This adaptor is particularly useful when integrating enterprise-grade OData services, such as those provided by Microsoft Dynamics 365, Azure, or SAP.
 
@@ -448,9 +447,9 @@ Assign your API endpoint to the `url` property and use `ODataV4Adaptor` as the `
 ```ts
 
 const datamanger = new DataManager({
-    // Use remote server host and port instead of 'xxxx'.
-    url: "https://localhost:xxxx/odata/Orders/", 
-    adaptor: new ODataV4Adaptor 
+  // Use remote server host and port instead of 'xxxx'.
+  url: "https://localhost:xxxx/odata/Orders/", 
+  adaptor: new ODataV4Adaptor 
 });
 
 ```
@@ -462,10 +461,9 @@ Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [
 ```ts
 
 datamanger.executeQuery(new Query().take(8)).then((e: ReturnOption) => {
-
-    (<Object[]>e.result).forEach((data: Object) => {
-        table.appendChild(compiledFunction(data)[0]);
-    });
+  (<Object[]>e.result).forEach((data: Object) => {
+    table.appendChild(compiledFunction(data)[0]);
+  });
 });
 
 ```
@@ -479,9 +477,9 @@ Assign your API endpoint to the `url` property and use `ODataV4Adaptor` as the `
 ```js
 
 const datamanger= new ej.data.DataManager({ 
-    // Use remote server host and port instead of 'xxxx'.
-    url: 'https://localhost:xxxx/odata/Orders/', 
-    adaptor: new ej.data.ODataV4Adaptor 
+  // Use remote server host and port instead of 'xxxx'.
+  url: 'https://localhost:xxxx/odata/Orders/', 
+  adaptor: new ej.data.ODataV4Adaptor 
 });
 
 
@@ -492,11 +490,10 @@ const datamanger= new ej.data.DataManager({
 Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [Query](../../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source.
 
 ```js
-datamanger.executeQuery(new ej.data.Query().take(8))
-    .then((e) => {
-    (e.result).forEach((data) => {
-            table.appendChild(compiledFunction(data)[0]);
-    });
+datamanger.executeQuery(new ej.data.Query().take(8)).then((e) => {
+  (e.result).forEach((data) => {
+    table.appendChild(compiledFunction(data)[0]);
+  });
 });
 
 ```
@@ -549,7 +546,7 @@ Here is an example that demonstrates how to use the `ODataV4Adaptor`:
 
 ## Web API adaptor
 
-The `WebApiAdaptor` is a specialized adaptor in Syncfusion's DataManager module designed to interact with Web APIs, particularly those that support OData query options. Since the `WebApiAdaptor` is extended from the `ODataAdaptor`, it requires that the remote service endpoint understands and can process OData-formatted queries sent along with the request.
+The `WebApiAdaptor` is a specialized adaptor in Syncfusion ##Platform_Name## DataManager module designed to interact with Web APIs, particularly those that support OData query options. Since the `WebApiAdaptor` is extended from the `ODataAdaptor`, it requires that the remote service endpoint understands and can process OData-formatted queries sent along with the request.
 
 Since `WebApiAdaptor` inherits from `ODataAdaptor`, it expects the API endpoint to understand and process OData-formatted queries such as **$top**, **$**, **$filter**, sent along with the request.
 
@@ -560,10 +557,10 @@ To enable OData query options for your Web API, you need to ensure that the Web 
 The `WebApiAdaptor` expects the server's response to be a JSON object containing two primary properties:
 
 - **Items:**
-    An array that contains the actual data records to be displayed or processed.
+  An array that contains the actual data records to be displayed or processed.
 
 - **Count:**
-    A number representing the total count of records available on the server. This is especially important for enabling accurate pagination.
+  A number representing the total count of records available on the server. This is especially important for enabling accurate pagination.
 
 A sample response object should look like this:
 
@@ -589,9 +586,9 @@ Assign your API endpoint to the `url` property and use `WebApiAdaptor` as the `a
 ```ts
 
 const datamanger = new DataManager({
-    // Use remote server host and port instead of 'xxxx'.
-    url: 'https://localhost:xxxx/api/Orders',
-    adaptor: new WebApiAdaptor(),
+  // Use remote server host and port instead of 'xxxx'.
+  url: 'https://localhost:xxxx/api/Orders',
+  adaptor: new WebApiAdaptor(),
 });
 
 ```
@@ -603,10 +600,9 @@ Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [
 ```ts
 
 datamanger.executeQuery(new Query().take(8)).then((e: ReturnOption) => {
-
-    ((e as any).actual.Items.).forEach((data: Object) => {
-        table.appendChild(compiledFunction(data)[0]);
-    });
+  ((e as any).actual.Items.).forEach((data: Object) => {
+    table.appendChild(compiledFunction(data)[0]);
+  });
 });
 
 ```
@@ -620,9 +616,9 @@ Assign your API endpoint to the `url` property and use `WebApiAdaptor` as the `a
 ```js
 
 const datamanger = new ej.data.DataManager({
-    // Use remote server host and port instead of 'xxxx'.
-    url: 'https://localhost:xxxx/api/Orders',
-    adaptor: new ej.data.WebApiAdaptor(),
+  // Use remote server host and port instead of 'xxxx'.
+  url: 'https://localhost:xxxx/api/Orders',
+  adaptor: new ej.data.WebApiAdaptor(),
 });
 
 ```
@@ -633,10 +629,9 @@ Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [
 
 ```js
 datamanger.executeQuery(new ej.data.Query().take(8)).then((e) => {
-
-    e.actual.Items.forEach((data) => {
-        table.appendChild(compiledFunction(data)[0]);
-    });
+  e.actual.Items.forEach((data) => {
+    table.appendChild(compiledFunction(data)[0]);
+  });
 });
 
 ```
@@ -682,17 +677,17 @@ Here is an example that demonstrates how to use the `WebApiAdaptor`:
 
 ## WebMethod Adaptor
 
-The `WebMethodAdaptor` is a powerful and flexible adaptor provided by Syncfusion's DataManager module, specifically designed to interact with remote services or server-side methods that accept data via HTTP POST requests. Unlike adaptors that communicate with standard REST or OData services, the `WebMethodAdaptor` enables seamless data binding from custom server-side logic such as controller actions, web services, or business-layer functions.
+The `WebMethodAdaptor` is a powerful and flexible adaptor provided by Syncfusion ##Platform_Name## DataManager module, specifically designed to interact with remote services or server-side methods that accept data via HTTP POST requests. Unlike adaptors that communicate with standard REST or OData services, the `WebMethodAdaptor` enables seamless data binding from custom server-side logic such as controller actions, web services, or business-layer functions.
 
 This adaptor is ideal for applications where server-side methods are responsible for data retrieval and business logic processing. It ensures that data operations such as paging, sorting, filtering, and grouping are handled on the server and returned to the client in a structured format.
 
 The `WebMethodAdaptor` expects the server's response to be a JSON object containing two primary properties:
 
 - **result:**
-    An array that contains the actual data records to be displayed or processed.
+  An array that contains the actual data records to be displayed or processed.
 
 - **count:**
-    A number representing the total count of records available on the server. This is especially important for enabling accurate pagination.
+  A number representing the total count of records available on the server. This is especially important for enabling accurate pagination.
 
 A sample response object should look like this:
 
@@ -717,9 +712,9 @@ Assign your API endpoint to the `url` property and use `WebMethodAdaptor` as the
 ```ts
 
 const datamanger = new DataManager({
-    // Use remote server host and port instead of 'xxxx'.
-    url: "https://localhost:xxxx/api/Orders",
-    adaptor: new WebMethodAdaptor()
+  // Use remote server host and port instead of 'xxxx'.
+  url: "https://localhost:xxxx/api/Orders",
+  adaptor: new WebMethodAdaptor()
 });
 
 ```
@@ -731,10 +726,9 @@ Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [
 ```ts
 
 datamanger.executeQuery(new Query().take(8)).then((e: ReturnOption) => {
-
-    (<Object[]>e.result.result).forEach((data: Object) => {
-        table.appendChild(compiledFunction(data)[0]);
-    });
+  (<Object[]>e.result.result).forEach((data: Object) => {
+    table.appendChild(compiledFunction(data)[0]);
+  });
 })
 
 ```
@@ -748,9 +742,9 @@ Assign your API endpoint to the `url` property and use `WebMethodAdaptor` as the
 ```js
 
 const datamanger = new ej.data.DataManager({
-    // Use remote server host and port instead of 'xxxx'.
-    url: "https://localhost:xxxx/api/Orders",
-    adaptor: new ej.data.WebMethodAdaptor()
+  // Use remote server host and port instead of 'xxxx'.
+  url: "https://localhost:xxxx/api/Orders",
+  adaptor: new ej.data.WebMethodAdaptor()
 });
 
 ```
@@ -762,10 +756,9 @@ Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [
 ```js
 
 datamanger.executeQuery(new ej.data.Query().take(8)).then((e) => {
-
-    (e.result.result).forEach((data) => {
-        table.appendChild(compiledFunction(data)[0]);
-    });
+  (e.result.result).forEach((data) => {
+    table.appendChild(compiledFunction(data)[0]);
+  });
 });
 
 ```
@@ -813,7 +806,7 @@ Here is an example that demonstrates how to use the `WebMethodAdaptor`:
 
 ## RemoteSaveAdaptor
 
-The `RemoteSaveAdaptor` is a specialized adaptor in Syncfusion’s DataManager module designed to perform actions such as sorting, filtering, searching and paging primarily on the client-side while handling CRUD operations(Create, Read, Update, and Delete), on the server-side for data persistence. This approach optimizes your experience by minimizing unnecessary server interactions.
+The `RemoteSaveAdaptor` is a specialized adaptor in Syncfusion ##Platform_Name## DataManager module designed to perform actions such as sorting, filtering, searching and paging primarily on the client-side while handling CRUD operations(Create, Read, Update, and Delete), on the server-side for data persistence. This approach optimizes your experience by minimizing unnecessary server interactions.
 
 For example, if you are building a dashboard that displays order data stored remotely and users need to add, edit, or delete records with changes saved back to the server, the `RemoteSaveAdaptor` helps manage these interactions effectively.
 
@@ -836,9 +829,9 @@ Assign your API endpoint to the `url` property and use `RemoteSaveAdaptor` as th
 ```ts
 
 const datamanger = new DataManager({
-    // Use remote server host and port instead of 'xxxx'.
-    url: "https://localhost:xxxx/api/Orders",
-    adaptor: new RemoteSaveAdaptor()
+  // Use remote server host and port instead of 'xxxx'.
+  url: "https://localhost:xxxx/api/Orders",
+  adaptor: new RemoteSaveAdaptor()
 });
 ```
 
@@ -849,10 +842,9 @@ Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [
 ```ts
 
 datamanger.executeQuery(new Query().take(8)).then((e: ReturnOption) => {
-
-    (<Object[]>e.result).forEach((data: Object) => {
-        table.appendChild(compiledFunction(data)[0]);
-    });
+  (<Object[]>e.result).forEach((data: Object) => {
+    table.appendChild(compiledFunction(data)[0]);
+  });
 })
 
 ```
@@ -866,9 +858,9 @@ Assign your API endpoint to the `url` property and use `RemoteSaveAdaptor` as th
 ```js
 
 const datamanger = new ej.data.DataManager({
-    // Use remote server host and port instead of 'xxxx'.
-    url: "https://localhost:xxxx/api/Orders",
-    adaptor: new ej.data.RemoteSaveAdaptor()
+  // Use remote server host and port instead of 'xxxx'.
+  url: "https://localhost:xxxx/api/Orders",
+  adaptor: new ej.data.RemoteSaveAdaptor()
 });
 
 ```
@@ -880,10 +872,9 @@ Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [
 ```js
 
 datamanger.executeQuery(new ej.data.Query().take(8)).then((e) => {
-
-    e.result.forEach((data) => {
-        table.appendChild(compiledFunction(data)[0]);
-    });
+  e.result.forEach((data) => {
+    table.appendChild(compiledFunction(data)[0]);
+  });
 });
 
 ```
@@ -949,19 +940,19 @@ To achieve this, follow these steps:
   
   ```json
     {
-        "name": "graphql-server",
-        "version": "1.0.0",
-        "description": "",
-        "scripts": {
+      "name": "graphql-server",
+      "version": "1.0.0",
+      "description": "",
+      "scripts": {
         "dev": "graphpack --port 4205",
         "build": "graphpack build"
-        },
-        "devDependencies": {
+      },
+      "devDependencies": {
         "graphpack": "^1.0.9"
-        },
-        "dependencies": {
+      },
+      "dependencies": {
         "@syncfusion/ej2-data": "24.1.41"
-        }
+      }
     }
   ```
 
@@ -996,19 +987,19 @@ To achieve this, follow these steps:
 
 **5:** Create a resolver file (e.g., **src/resolvers.js**) to handle GraphQL queries and fetch data from your database or data source. Resolver functions are responsible for processing incoming GraphQL requests and returning the appropriate data in the expected `result` and `count` format.  To efficiently handle filtering, sorting, searching, and paging, you can use the utilities from the **@syncfusion/ej2-data** package such as **DataUtil**, [Query](../../api/data/query/), and **DataManager**.
 
-    {% tabs %}
-    {% highlight js tabtitle="resolvers.js" %}
-    {% include code-snippet/data/getting-started-cs38/resolvers.js %}
-    {% endhighlight %}
-    {% endtabs %}
+  {% tabs %}
+  {% highlight js tabtitle="resolvers.js" %}
+  {% include code-snippet/data/getting-started-cs38/resolvers.js %}
+  {% endhighlight %}
+  {% endtabs %}
 
 **6:** Create a simple data file **src/db.js** that exports your data array.
 
-    {% tabs %}
-    {% highlight js tabtitle="db.js" %}
-    {% include code-snippet/data/getting-started-cs38/db.js %}
-    {% endhighlight %}
-    {% endtabs %}
+  {% tabs %}
+  {% highlight js tabtitle="db.js" %}
+  {% include code-snippet/data/getting-started-cs38/db.js %}
+  {% endhighlight %}
+  {% endtabs %}
 
 **7:** Install required packages and start the GraphQL server by running the following commands in your terminal:
 
@@ -1063,11 +1054,11 @@ Assign your API endpoint to the `url` property and use `GraphQLAdaptor` as the `
 ```ts
 
 let data: DataManager = new DataManager({
-    // Use remote server host and port instead of 'xxxx'.
-    url: "http://localhost:xxxx",
-    adaptor: new GraphQLAdaptor({
-        // Additional adaptor options can be specified here.
-    })
+  // Use remote server host and port instead of 'xxxx'.
+  url: "http://localhost:xxxx",
+  adaptor: new GraphQLAdaptor({
+    // Additional adaptor options can be specified here.
+  })
 });
 
 ```
@@ -1097,8 +1088,8 @@ let data: DataManager = new DataManager({
     {
      "data": {
         "getOrders": {
-           "result": [...],
-           "count": 100
+          "result": [...],
+          "count": 100
         }
      }
     }
@@ -1110,8 +1101,8 @@ let data: DataManager = new DataManager({
     ```ts
 
     response: {
-        result: 'getOrders.result',
-        count: 'getOrders.count'
+      result: 'getOrders.result',
+      count: 'getOrders.count'
     }
 
     ```
@@ -1143,11 +1134,11 @@ Assign your API endpoint to the `url` property and use `GraphQLAdaptor` as the `
 ```ts
 
 let data: DataManager = new ej.data.DataManager({
-    // Use remote server host and port instead of 'xxxx'.
-    url: "http://localhost:xxxx",
-    adaptor: new ej.data.GraphQLAdaptor({
-        // Additional adaptor options can be specified here.
-    })
+  // Use remote server host and port instead of 'xxxx'.
+  url: "http://localhost:xxxx",
+  adaptor: new ej.data.GraphQLAdaptor({
+    // Additional adaptor options can be specified here.
+  })
 });
 
 ```
@@ -1176,10 +1167,10 @@ let data: DataManager = new ej.data.DataManager({
 
     {
     "data": {
-        "getOrders": {
-            "result": [...],
-            "count": 100
-        }
+      "getOrders": {
+        "result": [...],
+        "count": 100
+      }
     }
     }
 
@@ -1190,8 +1181,8 @@ let data: DataManager = new ej.data.DataManager({
     ```ts
 
     response: {
-        result: 'getOrders.result',
-        count: 'getOrders.count'
+      result: 'getOrders.result',
+      count: 'getOrders.count'
     }
 
     ```
@@ -1268,7 +1259,7 @@ npm start
 
 ### Performing CRUD action with GraphQLAdaptor
 
-The `GraphQLAdaptor` in Syncfusion’s DataManager provides a smooth way to integrate GraphQL endpoints for performing CRUD operations (Create, Read, Update, and Delete). This adaptor requires you to supply the appropriate GraphQL queries and mutations corresponding to each CRUD action.
+The `GraphQLAdaptor` in Syncfusion ##Platform_Name## DataManager provides a smooth way to integrate GraphQL endpoints for performing CRUD operations (Create, Read, Update, and Delete). This adaptor requires you to supply the appropriate GraphQL queries and mutations corresponding to each CRUD action.
 
 You perform these actions by defining mutation queries dynamically inside the `getMutation` method, which returns the correct GraphQL mutation based on the CRUD operation being performed.
 
@@ -1351,3 +1342,107 @@ Create a schema that supports Syncfusion DataManager queries and mutations with 
 {% include code-snippet/data/getting-started-cs39/db.js %}
 {% endhighlight %}
 {% endtabs %}
+
+## CacheAdaptor
+
+The CacheAdaptor is a powerful feature in Syncfusion’s ##Platform_Name## DataManager that enhances application performance by reducing redundant server calls. It caches previously fetched data on the client side, allowing your app to quickly retrieve cached data instead of making repeated HTTP requests when navigating through pages or revisiting previously loaded data. This significantly improves the responsiveness of data-bound components and reduces server load, especially in applications with large datasets or frequent data navigation.
+
+You can enable this functionality by setting the `enableCache` property to true in the `DataManager` configuration.
+
+**How it works**
+
+* When `enableCache` is set to **true**, the DataManager generates a unique ID at initialization and uses it to store previously loaded page data in cache memory. This enables efficient data retrieval without redundant server requests.
+
+* The cache is automatically cleared when data actions such as sorting, filtering, grouping, searching, or CRUD operations (Create, Read, Update, Delete) are performed.
+
+* This feature is supported by all adaptors in DataManager, ensuring consistent caching behavior across different data sources.
+
+Consider a customer order management dashboard that displays thousands of orders in a paginated grid with filtering and sorting options. By enabling `enableCache` in the DataManager:
+
+* When the user first navigates to page 2, the data is fetched from the server and stored in the cache.
+
+* If the user later returns to page 2, the DataManager serves the data directly from the cache, with no additional request sent.
+
+* If the user applies a filter or sort, the cache is cleared to ensure new data is retrieved fresh from the server.
+
+* This results in a smoother user experience, reduced load times, and improved overall performance.
+
+This caching behavior is especially beneficial for:
+
+* Applications with large datasets and frequent navigation.
+
+* Scenarios with network latency or bandwidth constraints.
+
+* Reducing costs in cloud-hosted backends by minimizing API calls.
+
+The following example demonstrates how to enable caching using the `enableCache` property in the `DataManager`:
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/data/getting-started-cs6/index.ts %}
+{% raw %}
+
+import { Grid } from '@syncfusion/ej2-grids';
+import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
+
+let data: Object = new DataManager({
+  url: "https://services.syncfusion.com/js/production/api/orders",
+  adaptor: new WebApiAdaptor,
+  crossDomain: true,
+  enableCache: true // Enables caching to prevent repeated HTTP requests.
+});
+
+let grid: Grid = new Grid({
+  dataSource: data,
+  columns: [
+    { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100, type: 'number' },
+    { field: 'CustomerID', width: 100, headerText: 'Customer ID', type: 'string' },
+    { field: 'EmployeeID', headerText: 'Employee ID', textAlign: 'Right', width: 100 },
+    { field: 'OrderDate', headerText: 'Order Date', format: 'yMd', width: 120, textAlign: 'Right', type:'Date' },
+  ],
+});
+
+grid.appendTo('#Grid');
+{% endraw %}
+{% endhighlight %}
+
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/data/getting-started-cs6/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% raw %}
+
+var data = new ej.data.DataManager({
+  url: "https://services.syncfusion.com/js/production/api/orders",
+  adaptor: new ej.data.WebApiAdaptor(),
+  crossDomain: true,
+  enableCache: true // Enables caching to prevent repeated HTTP requests.
+});
+
+var grid = new ej.grids.Grid({
+  dataSource: data,
+  columns: [
+    { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100, type: 'number' },
+    { field: 'CustomerID', width: 100, headerText: 'Customer ID', type: 'string' },
+    { field: 'EmployeeID', headerText: 'Employee ID', textAlign: 'Right', width: 100 },
+    { field: 'OrderDate', headerText: 'Order Date', format: 'yMd', width: 120, textAlign: 'Right', type:'Date' },
+  ],
+});
+
+grid.appendTo('#Grid');
+
+{% endraw %}
+{% endhighlight %}
+
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/data/getting-started-cs6/index.html %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}

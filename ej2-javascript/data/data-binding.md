@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data Connection & Binding in ##Platform_Name## DataManager
+# Data Binding in Syncfusion ##Platform_Name## DataManager
 
-This section explains how to establish data connections and perform data binding using the Syncfusion DataManager in ##Platform_Name## applications.
+This section explains how to perform data binding using both local and remote data sources with the Syncfusion DataManager in ##Platform_Name## applications.
 
 ## Data Binding
 
@@ -92,11 +92,11 @@ For example, consider an online store application where the product catalog is s
 
 Configure remote data binding with below steps:-
 
-* To bind remote data, you can use the DataManager by specifying the service endpoint URL in the `url` property. The DataManager handles all data interactions, including query serialization, server communication, and response parsing.
+* To bind remote data, you can use the Syncfusion ##Platform_Name## DataManager by specifying the service endpoint URL in the `url` property. The DataManager handles all data interactions, including query serialization, server communication, and response parsing.
 
 * To retrieve data from the remote server, use the DataManager’s [executeQuery](../api/data/datamanager/#executequery) method. This method converts the **Query** object into a server request and sends it to the specified endpoint. It then waits for the server response in JSON format and returns the resulting data.
 
-The following example demonstrates bind remote data using the `executeQuery` method of DataManager.
+The following example demonstrates bind remote data using the `executeQuery` method of DataManager:
 
 {% if page.publishingplatform == "typescript" %}
 

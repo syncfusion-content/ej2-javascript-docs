@@ -17,7 +17,7 @@ By customizing these adaptors, you can define how data is read, inserted, update
 
 ## CustomDataAdaptor
 
-The `CustomDataAdaptor` in Syncfusion ##Platform_Name## DataManager empowers developers with complete control over how data is fetched, processed, and sent between client and server. This adaptor is especially valuable when working with APIs that have non-standard request structures, authentication requirements, or custom business rules.
+The `CustomDataAdaptor` in Syncfusion ##Platform_Name## DataManager provides an option to send your own request and manually manage all data operations. It offers complete control over the way data is retrieved, processed, and transmitted between client and server. This adaptor is especially valuable when working with APIs that have non-standard request structures, authentication requirements, or custom business rules.
 
 By extending the `UrlAdaptor`, `CustomDataAdaptor` inherits support for RESTful endpoints while allowing deep customization through method overrides.
 
@@ -924,7 +924,7 @@ Build and run the project in Visual Studio. Once the application is running, ope
 
 ## CustomAdaptor
 
-The `CustomAdaptor` in Syncfusion ##Platform_Name## DataManager enables developers to fully customize data communication logic by extending existing built-in adaptors (such as ODataV4Adaptor, WebApiAdaptor, etc.). This is especially useful when integrating with non-standard APIs or when the server's request and response formats do not match DataManager's default expectations.
+The `CustomAdaptor` in Syncfusion ##Platform_Name## DataManager allows you to extend built-in adaptors (like UrlAdaptor) and override specific methods to customize the data communication between the client and server. This adaptor is useful when integrating with non-standard APIs or when the server's request and response formats do not match DataManager's default expectations.
 
 With a `CustomAdaptor`, you have control over:
 

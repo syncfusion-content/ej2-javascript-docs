@@ -77,7 +77,7 @@ namespace UrlAdaptor.Controllers
     {
       var updatedOrder = Order.value;
 
-      if (updatedOrder.OrderID > 10010 || updatedOrder.OrderID < 10030)
+      if (updatedOrder.OrderID < 10010 || updatedOrder.OrderID < 10030)
       {
         return BadRequest(new { message = "OrderID must be between 10010 and 10030 to update." });
       }
@@ -111,7 +111,7 @@ namespace UrlAdaptor.Controllers
         return BadRequest(new { message = "'OrderID' is required to delete." });
       }
 
-      int orderId = Convert.ToInt32(value.key);
+      int orderId = int.Parse((value.key).ToString());
 
       if (orderId < 10031 || orderId > 10045)
       {

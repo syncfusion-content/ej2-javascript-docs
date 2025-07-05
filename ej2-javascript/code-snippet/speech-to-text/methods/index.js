@@ -23,7 +23,7 @@ let startButton = new ej.buttons.Button({
 });
 startButton.appendTo('#startListening');
 startButton.element.onclick = () => {
-    speechToTextInstance.startListening();
+    speechToText.startListening();
 };
 
 let stopButton = new ej.buttons.Button({
@@ -31,5 +31,5 @@ let stopButton = new ej.buttons.Button({
 });
 stopButton.appendTo('#stopListening');
 stopButton.element.onclick = () => {
-    speechToTextInstance.stopListening();
+    speechToText.stopListening();
 };

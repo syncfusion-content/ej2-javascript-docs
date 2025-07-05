@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Advanced scenarios in ##Platform_Name## DataManager
+# Advanced scenarios in Syncfusion ##Platform_Name## DataManager
 
 ## Offline Mode
 
-Offline mode in Syncfusion’s ##Platform_Name## DataManager enables full client-side data processing by fetching data from the server once and then performing all subsequent operations (such as filtering, sorting, paging, and grouping) locally, without additional network requests.
+Offline mode in Syncfusion ##Platform_Name## DataManager enables full client-side data processing by fetching data from the server once and then performing all subsequent operations (such as filtering, sorting, paging, and grouping) locally, without additional network requests.
 
 This feature is ideal for:
 
@@ -60,7 +60,7 @@ The following sample demonstrates how to enable `offline` mode:
 
 Load on demand is an efficient technique that optimizes performance and reduces bandwidth usage by fetching only a specific subset of data from the server, rather than loading the entire dataset at once. This approach is particularly beneficial for applications dealing with large datasets, ensuring faster load times and improved responsiveness.
 
-You can achieve load on demand using the [Query.page](../api/data/query/#page) method in Syncfusion's ##Platform_Name## DataManager. This method requests a specific page of data from the server, based on the given page number and page size.
+You can achieve load on demand using the [Query.page](../api/data/query/#page) method in Syncfusion ##Platform_Name## DataManager. This method requests a specific page of data from the server, based on the given page number and page size.
 
 For example, an employee directory in an HR portal displays thousands of records. Instead of loading all employees at once, the Grid uses `Query.page` to retrieve only the records for the current page, loading data on demand as users navigate through pages.
 

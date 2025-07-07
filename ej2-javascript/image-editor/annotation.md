@@ -51,6 +51,10 @@ The [`drawText`](https://ej2.syncfusion.com/javascript/documentation/api/image-e
 
 * transformCollection: Specifies the transform collection of the text annotation.
 
+* underline — Specifies whether the text should be underlined.
+
+* strikethrough — Specifies whether the text should have a strikethrough.
+
 By utilizing the `drawText` method with these parameters, you can precisely position and customize text annotations within the image. This provides the flexibility to add labels, captions, or other text elements with specific font styles, sizes, and colors, enhancing the visual presentation and clarity of the image. 
 
 We have used the [`getImageDimension`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#getimagedimension) method to obtain the current dimensions of an image, including its `clientX`, `clientY`, width, and height. Based on the `clientX` and `clientY` values, the user can precisely define the position for drawing annotations such as rectangles, ellipses, and more. 
@@ -224,6 +228,37 @@ By leveraging the `fontFamily` property, you can elevate the scope of customizat
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs5" %}
+{% endif %}
+
+### Formatting Text with Bold, Italic, Underline, and Strikethrough
+
+The [`drawText`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#drawtext) method in the Image Editor component allows you to insert a text annotation into the image with specific customization options. Applying these styles enhances the text by improving readability and emphasizing key information, where bold increases visual weight to highlight important points, italic adds a slanted emphasis or creative touch, underline draws a line beneath the text for clarity or separation, and strikethrough places a line through text to indicate removal or outdated content. These formatting options enable users to make their annotations more visually distinctive and effective in conveying information.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/annotation-cs13/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs13/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs13" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/annotation-cs13/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs13/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs13" %}
 {% endif %}
 
 ## Freehand drawing

@@ -15,23 +15,27 @@
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-popups/styles/material.css" rel="stylesheet" />
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-splitbuttons/styles/material.css" rel="stylesheet" />
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-image-editor/styles/material.css" rel="stylesheet" />
-
-
-    <!--style reference from app-->
-    <link href="styles.css" rel="stylesheet" />
-
+    <style>
+        .button-group {
+            margin-top: 10px;
+        }
+    </style>
     <!--system js reference and configuration-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
+
 <body>
     <div id='loader'>LOADING....</div>
     <div id='container'>
         <div class="control-section">
-            <div id="imageeditor" class="row">
+            <div class="control">
+                <div id="imageEditor"></div>
             </div>
-            <div> 
-                <button id='btnClick' class='e-btn e-primary' >Pan</button>
+            <div class="button-group">
+                <button id="contains" class="e-btn e-primary">Fit to Width (Aspect Ratio)</button>
+                <button id="cover" class="e-btn e-primary">Cover (Aspect Ratio)</button>
+                <button id="stretch" class="e-btn e-primary">Stretch / Shrink</button>
             </div>
         </div>
     </div>

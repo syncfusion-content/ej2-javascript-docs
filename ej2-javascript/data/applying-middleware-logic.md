@@ -37,7 +37,7 @@ For example, you can programmatically inject an authentication token or enrich h
 
 If you're building a SaaS admin dashboard where users log in and fetch their own data from a secured REST API. Each user is issued a JWT (JSON Web Token) after authentication. Every request sent by the Syncfusion DataManager must include this token to validate the user’s identity.
 
-By using `applyPreRequestMiddlewares`, you can automatically inject the JWT into the request headers as an authorization field. This avoids manual token handling and ensures every [DataManager](../api/data/dataManager) request remains authenticated.
+By using `applyPreRequestMiddlewares`, you can automatically inject the JWT into the request headers as an authorization field. This avoids manual token handling and ensures every [DataManager](../api/data/dataManager/) request remains authenticated.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -112,9 +112,9 @@ For example, in a sales dashboard, the API may return product data with inconsis
 
 ## Supported data adaptors
 
-Middleware functions are compatible with various DataManager adaptors, including [WebApiAdaptor](../../grid/connecting-to-adaptors/web-api-adaptor), [ODataAdaptor](../../grid/connecting-to-adaptors/odatav4-adaptor), and `CustomAdaptor`. They support both local and remote data processing. By leveraging middleware, you can improve the flexibility, security, and efficiency of data handling within your application.
+Middleware functions are compatible with various DataManager adaptors, including [WebApiAdaptor](./adaptors#web-api-adaptor), [ODataAdaptor](./adaptors#odata-adaptor), and [CustomAdaptor](./adaptors#customadaptor). They support both local and remote data processing. By leveraging middleware, you can improve the flexibility, security, and efficiency of data handling within your application.
 
-The following code example demonstrates how to use Syncfusion's [WebApiAdaptor](../../grid/connecting-to-adaptors/web-api-adaptor) while applying middleware logic to modify requests and responses. Before sending a request to the backend, the [applyPreRequestMiddlewares](https://ej2.syncfusion.com/javascript/documentation/api/data/dataManager/#applyprerequestmiddlewares) method retrieves an authentication token from an external middleware server and adds it to the request headers. If the middleware server fails to return a valid token, the DataManager `failure` event is triggered to handle the error.
+The following code example demonstrates how to use Syncfusion's [WebApiAdaptor](./adaptors#web-api-adaptor) while applying middleware logic to modify requests and responses. Before sending a request to the backend, the [applyPreRequestMiddlewares](https://ej2.syncfusion.com/javascript/documentation/api/data/dataManager/#applyprerequestmiddlewares) method retrieves an authentication token from an external middleware server and adds it to the request headers. If the middleware server fails to return a valid token, the DataManager `failure` event is triggered to handle the error.
 
 The [applyPostRequestMiddlewares](https://ej2.syncfusion.com/javascript/documentation/api/data/dataManager/#applypostrequestmiddlewares) method processes the server response before updating the component. This allows for any necessary transformations, such as filtering or reformatting, to be applied before the data is bound to the UI. These middleware methods enhance request lifecycle management, improve security, and offer greater control over data manipulation in applications.
 
@@ -166,7 +166,7 @@ When making cross-origin requests with custom headers, browsers will automatical
 
 **Ways to add custom headers:**
 
-* Static headers during [DataManager](../api/data/dataManager) initialization.
+* Static headers during [DataManager](../api/data/dataManager/) initialization.
 
 * Dynamic headers via applyPreRequestMiddlewares.
 
@@ -174,7 +174,7 @@ When making cross-origin requests with custom headers, browsers will automatical
 
 ### Using the headers property
 
-You can assign custom headers directly during the initialization of the [DataManager](../api/data/dataManager) by using the `headers` property. This approach is ideal when you have static or pre-defined headers such as authorization tokens or tenant IDs.
+You can assign custom headers directly during the initialization of the [DataManager](../api/data/dataManager/) by using the `headers` property. This approach is ideal when you have static or pre-defined headers such as authorization tokens or tenant IDs.
 
 This method ensures that all requests made by the `DataManager` automatically include these headers without the need for additional logic or middleware handling. This is useful for sending static API keys, including content-type headers, applying application-level custom identifiers.
 
@@ -211,15 +211,15 @@ This method ensures that all requests made by the `DataManager` automatically in
 
 The `beforeSend` callback allows you to dynamically modify request headers just before the request is dispatched. This is useful when headers depend on runtime information, such as freshly fetched tokens or user specific data.
 
-**Parameters**
+**Parameters:**
 
 It accepts an three arguments:
 
-* DataManager (dm): Provides the dataSource and adaptor value.
+* **DataManager (dm):** Provides the dataSource and adaptor value.
 
-* Request (request): Used to send custom headers, such as setting the Authorization header.
+* **Request (request):** Used to send custom headers, such as setting the Authorization header.
 
-* Settings (settings): An optional argument that allows additional configurations.
+* **Settings (settings):** An optional argument that allows additional configurations.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -252,9 +252,9 @@ It accepts an three arguments:
 
 ## Sending additional parameters to server
 
-When working with remote data sources, it is often necessary to send additional parameters to the server, such as filtering values, paging limits, or culture settings. The [DataManager](../api/data/dataManager) supports this by allowing custom parameters to be appended to the query string of the request using the [addParams](https://ej2.syncfusion.com/documentation/api/data/query/#addparams) method.
+When working with remote data sources, it is often necessary to send additional parameters to the server, such as filtering values, paging limits, or culture settings. The [DataManager](../api/data/dataManager/) supports this by allowing custom parameters to be appended to the query string of the request using the [addParams](https://ej2.syncfusion.com/documentation/api/data/query/#addparams) method.
 
-The `addParams` method of the [Query](../api/data/query) class is used to append custom query string parameters to the request sent by the `DataManager`. These parameters are useful when you want to pass additional data required by the server to process the request.
+The `addParams` method of the [Query](../api/data/query/) class is used to append custom query string parameters to the request sent by the `DataManager`. These parameters are useful when you want to pass additional data required by the server to process the request.
 
 The following example demonstrates how to send an additional parameter `($top)` to limit the number of records retrieved from the server.
 

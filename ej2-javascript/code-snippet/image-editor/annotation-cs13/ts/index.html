@@ -15,26 +15,56 @@
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-popups/styles/material.css" rel="stylesheet" />
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-splitbuttons/styles/material.css" rel="stylesheet" />
     <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-image-editor/styles/material.css" rel="stylesheet" />
-
-
-    <!--style reference from app-->
-    <link href="styles.css" rel="stylesheet" />
-
+    <style>
+        #text {
+            margin-bottom: 5px;
+        }
+        .button-group {
+            margin-top: 10px;
+        }
+        .button-group .e-btn .e-icons {
+            margin-right: 5px;
+        }
+    </style>
     <!--system js reference and configuration-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
+
 <body>
     <div id='loader'>LOADING....</div>
     <div id='container'>
         <div class="control-section">
-            <div id="imageeditor" class="row">
-            </div>
-            <div> 
-                <button id='btnClick' class='e-btn e-primary' >Pan</button>
+            <div id="imageEditor" class="row"></div>
+            <div class="button-group">
+                <button id="text" class="e-btn e-primary">Add Text</button>
+                <div class="e-btn-group">
+                    <input type="checkbox" id="bold" value="bold" />
+                    <label class="e-btn" for="bold">
+                        <span class="e-icons e-bold"></span>Bold
+                    </label>
+                    <input type="checkbox" id="italic" value="italic" />
+                    <label class="e-btn" for="italic">
+                        <span class="e-icons e-italic"></span>Italic
+                    </label>
+                    <input type="checkbox" id="underline" value="underline" />
+                    <label class="e-btn" for="underline">
+                        <span class="e-icons e-underline"></span>Underline
+                    </label>
+                    <input type="checkbox" id="strikethrough" value="strikethrough" />
+                    <label class="e-btn" for="strikethrough">
+                        <span class="e-icons e-strikethrough"></span>Strikethrough
+                    </label>
+                </div>
             </div>
         </div>
     </div>
 </body>
+
+<style>
+    #btngroup {
+        margin-left: 15px;
+    }
+</style>
 
 </html>

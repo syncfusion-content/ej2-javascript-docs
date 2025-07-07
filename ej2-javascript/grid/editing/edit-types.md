@@ -47,7 +47,7 @@ You can customize the default TextBox control in Grid edit form using its proper
 
 control|Edit Type |Description|Example Customized edit params
 -----|---|-----|-----|
-[TextBox](../../textbox) |stringedit| The `stringedit` type renders a TextBox control for string data type columns. To customize the `TextBox` control, refer to the [TextBox API documentation](../../api/textbox) for detailed information on available properties | params: { showClearButton : true}
+[TextBox](../../textbox) |stringedit| The `stringedit` type renders a TextBox control for string data type columns. To customize the `TextBox` control, refer to the [TextBox API documentation](../../api/textbox/) for detailed information on available properties | params: { showClearButton : true}
 
 The following sample code demonstrates the customization applied to TextBox control of **CustomerID** Grid column:
 
@@ -158,7 +158,7 @@ You can customize the `DropDownList` control in Grid edit form using its propert
 
 Control|Edit Type |Description| Example Customized edit params
 -----|-----|-----|----|
-[DropDownList](../../drop-down-list/)|DropDownEdit|  The `dropdownedit` type renders a DropDownList control for string data type columns. To customize the DropDownList control, refer to the [DropDownList API documentation](../../api/drop-down-list) for detailed information on available properties.  | params: { value: ‘Germany’ }
+[DropDownList](../../drop-down-list)|DropDownEdit|  The `dropdownedit` type renders a DropDownList control for string data type columns. To customize the DropDownList control, refer to the [DropDownList API documentation](../../api/drop-down-list/) for detailed information on available properties.  | params: { value: ‘Germany’ }
 
 The following sample code demonstrates the customization applied to DropDownList control  of **ShipCity** Grid column:
 
@@ -195,7 +195,7 @@ In Syncfusion's<sup style="font-size:70%">&reg;</sup> Grid control, you have an 
 
 To achieve this, you can utilize the [columns->edit->params](../../api/grid/column/#edit) property. This property allows you to define the edit params for the column within the grid.
 
-When setting a new data source using the edit params, you need to specify a new [query](../../api/drop-down-list#query)  property for the DropDownList. The `query` property allows you to define custom queries for data retrieval and filtering.
+When setting a new data source using the edit params, you need to specify a new [query](https://ej2.syncfusion.com/javascript/documentation/api/drop-down-list/#query) property for the DropDownList. The `query` property allows you to define custom queries for data retrieval and filtering.
 
 In the below demo, DropDownList is rendered with custom data source for the **ShipCountry** column.
 
@@ -230,7 +230,7 @@ In the below demo, DropDownList is rendered with custom data source for the **Sh
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control provides filtering for the DropDownList within the edit form. This feature allows to select options from a predefined list and easily search for specific items using the built-in filtering feature.  
 
-To enable filtering, set the [allowFiltering](../../api/drop-down-list#allowfiltering) property to **true** within the edit params. This will enable the filtering feature in the DropDownList.
+To enable filtering, set the [allowFiltering](https://ej2.syncfusion.com/javascript/documentation/api/drop-down-list/#allowfiltering) property to **true** within the edit params. This will enable the filtering feature in the DropDownList.
 
 In the following demo, filtering is enabled for the **ShipCountry** column.
 
@@ -411,7 +411,7 @@ You can customize the DateTimePicker control in Grid edit form using its propert
 
 control|Edit Type |Description |Example Customized edit params
 -----|-----|-----|----|
-[DateTimePicker](../../datetimepicker)| datetimepickeredit | The `datetimepickeredit` type renders a **DateTimePicker** control for date time data type columns. You can customize the DateTimePicker control, refer to the [DateTimePicker API documentation](../../api/datetimepicker) for detailed information on available properties. | params: { value: new Date() }
+[DateTimePicker](../../datetimepicker)| datetimepickeredit | The `datetimepickeredit` type renders a **DateTimePicker** control for date time data type columns. You can customize the DateTimePicker control, refer to the [DateTimePicker API documentation](../../api/datetimepicker/) for detailed information on available properties. | params: { value: new Date() }
  
 The following sample code demonstrates the customization applied to DateTimePicker control of **OrderDate** Grid column:
 
@@ -886,21 +886,24 @@ The following example demonstrates how to render a Upload control in the **Emplo
 
 > By default, the grid saves the cell when clicking outside the editor component. If your components, like multiple popups, are dynamically rendered, the grid may not recognize them, causing the editor to close when the popup is clicked. To prevent this, apply the `edit-custom-template` class to both your main component and sub-components. If you are using Syncfusion<sup style="font-size:70%">&reg;</sup> components, set their `cssClass` property to include the `edit-custom-template` class.
 
-### Render AutoComplete control in edit form 
+### Render AutoComplete in edit form 
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to render the AutoComplete control within the edit form by using the cell edit template feature.This feature enables you to select values from a predefined list during the editing of a specific column. It is especially valuable when you need to provide a dropdown-like auto-suggestion and input assistance for data entry in the Grid's columns.
+The Syncfusion ##Platform_Name## Grid allows you to render the AutoComplete within the edit form by using the cell edit template feature.This feature enables you to select values from a predefined list during the editing of a specific column. It is especially valuable when you need to provide a dropdown-like auto-suggestion and input assistance for data entry in the Grid's columns.
 
-To achieve this, you need to utilize the [columns->edit->params](../../api/grid/column/#edit) property along with a defined object that specifies the necessary functions for creating, reading, and writing the auto complete control.
+To achieve this, you need to define the cell edit template for the column using the [edit](../../api/grid/column/#edit) property. This property specifies the necessary functions for creating, reading, and writing the AutoComplete into the specific column.
 
-The following example demonstrates how to render a Autocomplete control in the **CustomerID** column:
+The following example demonstrates how to render a Autocomplete in the **CustomerID** column:
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
+
 {% include code-snippet/grid/grid-cs30/index.ts %}
 {% endhighlight %}
+
 {% highlight html tabtitle="index.html" %}
+
 {% include code-snippet/grid/grid-cs30/index.html %}
 {% endhighlight %}
 {% endtabs %}
@@ -911,9 +914,12 @@ The following example demonstrates how to render a Autocomplete control in the *
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
+
 {% include code-snippet/grid/grid-cs30/index.js %}
 {% endhighlight %}
+
 {% highlight html tabtitle="index.html" %}
+
 {% include code-snippet/grid/grid-cs30/index.html %}
 {% endhighlight %}
 {% endtabs %}
@@ -921,11 +927,11 @@ The following example demonstrates how to render a Autocomplete control in the *
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs30" %}
 {% endif %}
 
-### Render cascading DropDownList control in edit form 
+### Render cascading DropDownList in edit form 
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to render the cascading DropDownList within the edit form by using the cell edit template feature.This feature is especially useful when you need to establish a hierarchy of options, such as choosing a country and then selecting a state based on the chosen country.
+The Syncfusion ##Platform_Name## Grid allows you to render the cascading DropDownList within the edit form by using the cell edit template feature.This feature is especially useful when you need to establish a hierarchy of options, such as choosing a country and then selecting a state based on the chosen country.
 
-To achieve this, you need to utilize the [columns->edit->params](../../api/grid/column/#edit) property along with a defined object that specifies the necessary functions for creating, reading, and writing the auto complete control.
+To achieve this, you need to define the cell edit template for the column using the [edit](../../api/grid/column/#edit) property. This property specifies the necessary functions for creating, reading, and writing the cascading DropDownList.
 
 In the below demo, cascading DropDownList rendered for **ShipCountry** and **ShipState** column.
 
@@ -933,9 +939,12 @@ In the below demo, cascading DropDownList rendered for **ShipCountry** and **Shi
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
+
 {% include code-snippet/grid/grid-cs34/index.ts %}
 {% endhighlight %}
+
 {% highlight html tabtitle="index.html" %}
+
 {% include code-snippet/grid/grid-cs34/index.html %}
 {% endhighlight %}
 {% endtabs %}
@@ -946,9 +955,12 @@ In the below demo, cascading DropDownList rendered for **ShipCountry** and **Shi
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
+
 {% include code-snippet/grid/grid-cs34/index.js %}
 {% endhighlight %}
+
 {% highlight html tabtitle="index.html" %}
+
 {% include code-snippet/grid/grid-cs34/index.html %}
 {% endhighlight %}
 {% endtabs %}

@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 State persistence in Syncfusion ##Platform_Name## DataManager refers to its ability to retain data operation states such as sorting, filtering, paging, and grouping in the browser’s `localStorage`, even when the user refreshes the page or navigates across different views within the same browser session. This allows the DataManager’s query object to persistently store in the local storage. To enable this feature, set the `enablePersistence` property to **true** and provide a unique `id` for the DataManager.
 
-Benefits of enabling state persistence:
+**Benefits of enabling state persistence:**
 
 * Seamless user experience with no loss of state across page transitions or reloads.
 * Automatically reapplies the last known query state on initialization.
@@ -62,7 +62,7 @@ By default, the Syncfusion ##Platform_Name## DataManager can persist various typ
 
 The following are the query types that can be excluded using `ignoreOnPersist`. This property accepts an array of query keys representing the operations you wish to exclude from persistence which is described below as follows:
 
-Supported query keys:
+**Supported query keys:**
 
 | Operation            | Query Key        |
 |----------------------|------------------|
@@ -111,8 +111,8 @@ Supported query keys:
 
 The Syncfusion ##Platform_Name## DataManager provides built in methods to retrieve and update the persisted query state stored in the browser’s `localStorage`. For example, to modify, inspect, or reuse persisted configurations across sessions or user roles. 
 
-* getPersistedData : This method returns the current persisted state of the DataManager, including query information like sorting, filtering, searching, and more.
-* setPersistData : This method allows you to update or overwrite the existing persisted data with a custom state object. It is especially useful when restoring saved configurations or applying a default state programmatically.
+* **getPersistedData:** This method returns the current persisted state of the DataManager, including query information like sorting, filtering, searching, and more.
+* **setPersistData:** This method allows you to update or overwrite the existing persisted data with a custom state object. It is especially useful when restoring saved configurations or applying a default state programmatically.
 
 The `getPersistedData` method retrieves the query state saved in the browser’s `localStorage` for a specific DataManager instance. It requires the `id` of the DataManager as a parameter and returns the persisted query information such as filtering, sorting, or paging configurations.
 
@@ -151,15 +151,15 @@ In the following example, the method is used to retrieve and log the persisted s
 {% previewsample "page.domainurl/code-snippet/data/state-persistence-cs3" %}
 {% endif %}
 
-![getPersistData](./image/getPersistData.png)
+![getPersistData](./image/getPersistData.jpeg)
 
 The `setPersistData` method allows adding or updating the persisted query data for the specified DataManager. It accepts the following three arguments:
 
-* Original event: Set to `null` when not using within an event context.
+* **Original event:** Set to `null` when not using within an event context.
 
-* id: A string representing the unique `id` of the DataManager instance.
+* **id:** A string representing the unique `id` of the DataManager instance.
 
-* Query: A `query` object that defines the data operation (such as sorting, filtering, etc.) to be persisted.
+* **Query:** A `query` object that defines the data operation (such as sorting, filtering, etc.) to be persisted.
 
 In this example, the existing persisted query sorted by **Designation** is updated using `setPersistData` to a new query that applies a **descending** sort on **EmployeeID**.
 
@@ -196,7 +196,7 @@ In this example, the existing persisted query sorted by **Designation** is updat
 {% previewsample "page.domainurl/code-snippet/data/state-persistence-cs4" %}
 {% endif %}
 
-![setPersistData](./image/setPersistData.png)
+![setPersistData](./image/setPersistData.jpeg)
 
 By using the `setPersistData` method, the persisted query state of the DataManager is updated with the specified `query`.
 
@@ -245,11 +245,11 @@ The following sample demonstrates how to clear the persisted state in the DataMa
 
 In this sample, the DataManager is initially configured to sort the data by the **Designation** field in descending order. This query is executed on load, and the resulting state is automatically stored in the browser’s `localStorage` due to the `enablePersistence` setting.
 
-![Initial Query](./image/initial-query.png)
+![Initial Query](./image/initial-query.jpeg)
 
 When the Apply Query button is clicked, a new query is applied. This updates the table content by sorting based on the **EmployeeID** field and again stores the latest query state in `localStorage`.
 
-![Apply Query](./image/apply-query.png)
+![Apply Query](./image/apply-query.jpeg)
 
 When the Clear Persistence button is clicked, the `clearPersistence()` method is called, which removes the stored query state from `localStorage`. This restores the DataManager to its original state, so any previously applied queries such as sorting will no longer be retained after a page reload.
 
@@ -265,17 +265,17 @@ In this demo, the filter query and sort query are persisted, whereas the search 
 
 For a more detailed explanation and steps of this use case, refer to the following:
 
-Step 1: To initiate the demo, users are required to select a username from the dropdown list. After making a selection, the Grid and Chart controls will load with initial data using the Datamanager. Specifically for this demo, the Datamanager's id will be set to the chosen username. The Datamanager will then store the query with this id in the window.localStorage. Refer to the code example for your reference:
+**Step 1:** To initiate the demo, users are required to select a username from the dropdown list. After making a selection, the Grid and Chart controls will load with initial data using the Datamanager. Specifically for this demo, the Datamanager's id will be set to the chosen username. The Datamanager will then store the query with this id in the window.localStorage. Refer to the code example for your reference:
 
-Step 2: This demo allows you to select Grid items by clicking checkboxes and adding them to your cart using the "Add" button in the toolbar. Additionally, you can sort the products from high price to low price by clicking the "Price Low-High" and "Price High-Low" buttons. Furthermore, you can view the added products from the wishlist by clicking the wishlist icon. All this information is persisted and stored by the DataManager based on the user ID.
+**Step 2:** This demo allows you to select Grid items by clicking checkboxes and adding them to your cart using the "Add" button in the toolbar. Additionally, you can sort the products from high price to low price by clicking the "Price Low-High" and "Price High-Low" buttons. Furthermore, you can view the added products from the wishlist by clicking the wishlist icon. All this information is persisted and stored by the DataManager based on the user ID.
 
 You also can filter the product items using the product category filter. However, this category filter is also not persisted.
 
 The Chart allows you to see the product reviews.
 
-Step 3: To log out, simply use the "Logout" button.
+**Step 3:** To log out, simply use the "Logout" button.
 
-Step 4: After logging out or refreshing the browser, you will need to select a username from the dropdown list once again (repeat step 1). However, the Grid data will now be loaded based on the last persisted wishlist, associated with the chosen username. The complete example is as follows:
+**Step 4:** After logging out or refreshing the browser, you will need to select a username from the dropdown list once again (repeat step 1). However, the Grid data will now be loaded based on the last persisted wishlist, associated with the chosen username. The complete example is as follows:
 
 To clear the wishlist for a specific user, click the "Clear Wishlist" button. This will remove all the saved wishlist items for that user.
 

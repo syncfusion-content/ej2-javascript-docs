@@ -14,7 +14,6 @@ const datamanger = new DataManager({
 });
 
 datamanger.executeQuery(new Query().take(8)).then((e: ReturnOption) => {
-
     (<Object[]>e.result.result).forEach((data: Object) => {
         table.appendChild(compiledFunction(data)[0]);
     });

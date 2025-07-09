@@ -1,4 +1,11 @@
 import { DataManager, Query, UrlAdaptor, ReturnOption } from '@syncfusion/ej2-data';
+import { compile } from '@syncfusion/ej2-base';
+
+let template: string = '<tr><td>${OrderID}</td><td>${CustomerID}</td><td>${EmployeeID}</td><td>${ShipCity}</td><td>${ShipCountry}</td></tr>';
+
+let compiledFunction: Function = compile(template);
+
+let table: HTMLElement = (<HTMLElement>document.getElementById('datatable'));
 
 const datamanger = new DataManager({
     // Use remote server host and port instead of 'xxxx'.
@@ -7,28 +14,9 @@ const datamanger = new DataManager({
 });
 
 datamanger.executeQuery(new Query().take(10)).then((e: ReturnOption) => {
-    const response = e.result as { result: Order[] };
-    const data = response.result;
-    const tbody = document.getElementById('table-body');
-    data.forEach((item: Order) => {
-        const row = document.createElement('tr');
-        row.innerHTML = `
-          <td>${item.OrderID}</td>
-          <td>${item.CustomerID}</td>
-          <td>${item.EmployeeID}</td>
-          <td>${item.ShipCity}</td>
-          <td>${item.ShipCountry}</td>
-      `;
-        tbody.appendChild(row);
+    (<Object[]>e.result.result).forEach((data: Object) => {
+        table.appendChild(compiledFunction(data)[0]);
     });
 }).catch(error => {
     console.error("Data fetch failed:", error);
 });
-
-interface Order {
-  OrderID: number;
-  CustomerID: string;
-  EmployeeID: number;
-  ShipCity: string;
-  ShipCountry: string;
-}

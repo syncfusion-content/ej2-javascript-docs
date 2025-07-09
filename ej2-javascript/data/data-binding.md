@@ -180,7 +180,7 @@ Here's an example demonstrating binding local data using the `DataManager`:
 
 **Binding remote data:**
 
-Binding Remote Data allows you to connect the `Grid` to a remote data source, such as an API or service endpoint, to dynamically fetch and display large datasets from a server. This is useful when working with large datasets or when the data is hosted on a server.
+Binding remote Data allows you to connect the `Grid` to a remote data source, such as an API or service endpoint, to dynamically fetch and display large datasets from a server. This is useful when working with large datasets or when the data is hosted on a server.
 
 For example, in an e-commerce admin panel, the product inventory data can be very large and frequently updated. Binding the `Grid` to a remote service via DataManager allows the admin panel to fetch only the required pages of product data on demand, with built-in support for paging and sorting, ensuring performance and scalability.
 
@@ -301,7 +301,7 @@ Here’s an example demonstrating how to bind remote data to the `DropDownList` 
 
 ### Using with Charts
 
-The Syncfusion #Platform_Name## `Charts` provides powerful visualization capabilities that allow you to bind data from both local and remote sources. 
+The Syncfusion ##Platform_Name## `Charts` provides powerful visualization capabilities that allow you to bind data from both local and remote sources. 
 
 This section demonstrates how to bind data to the `Charts` using both local and remote sources.
 

@@ -4,12 +4,14 @@ using ODataV4Adaptor.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Create an ODataConventionModelBuilder to build the OData model.
 var modelBuilder = new ODataConventionModelBuilder();
+// Register the "Orders" entity set with the OData model builder
 modelBuilder.EntitySet<OrdersDetails>("Orders");
 
 var recordCount = OrdersDetails.GetAllRecords().Count;
 
+// Add controllers with OData support to the service collection.
 builder.Services.AddControllers().AddOData(
     options => options
     .Count()

@@ -130,6 +130,479 @@ Here is an example that demonstrates how to use the `JsonAdaptor`:
 {% previewsample "page.domainurl/code-snippet/data/getting-started-cs1" %}
 {% endif %}
 
+
+## Client and server API integration
+
+{% if page.publishingplatform == "typescript" %}
+
+**Step 1: Set up your development environment:**
+
+Before you start, make sure you have the following installed:
+
+- .NET Core SDK
+- Node.js
+- Visual Studio or any other preferred code editor.
+
+**Step 2: Create a new ASP.NET Core project:**
+
+Open Visual Studio and create an ASP.NET Core Web API project named any of Adaptor(For ex: **UrlAdaptor**).
+
+**Step 3: Add the Microsoft.TypeScript.MSBuild NuGet package to the project:**
+
+In Solution Explorer, right-click the project node and select Manage NuGet Packages. In the Browse tab, search for [Microsoft.TypeScript.MSBuild](https://www.nuget.org/packages/Microsoft.TypeScript.MSBuild/) and then select **Install** on the right to install the package.
+
+**Step 4: Configure the server:**
+
+In `Program.cs`, call `UseDefaultFiles` and `UseStaticFiles`.
+
+```cs
+var app = builder.Build();
+
+app.UseDefaultFiles();
+app.UseStaticFiles();
+```
+
+Comment out the below line in `launchSettings.json`:
+
+```json
+  "https": {
+    "commandName": "Project",
+    "dotnetRunMessages": true,
+    "launchBrowser": true,
+    // "launchUrl": "swagger",
+    "applicationUrl": "https://localhost:xxxx;http://localhost:xxxx",
+    "environmentVariables": {
+      "ASPNETCORE_ENVIRONMENT": "Development"
+    }
+  }
+```
+This configuration enables the server to locate and serve the `index.html` file.
+
+**Step 5: Model class creation:**
+
+Create a model class named **OrdersDetails.cs** in the **Models** folder to represent the order data.
+
+{% tabs %}
+{% highlight cs tabtitle="OrdersDetails.cs" %}
+
+namespace UrlAdaptor.Models
+{
+  public class OrdersDetails
+  {
+    public static List<OrdersDetails> order = new List<OrdersDetails>();
+    public OrdersDetails()
+    {
+
+    }
+    public OrdersDetails(
+    int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified,
+    DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry,
+    DateTime ShippedDate, string ShipAddress)
+    {
+      this.OrderID = OrderID;
+      this.CustomerID = CustomerId;
+      this.EmployeeID = EmployeeId;
+      this.Freight = Freight;
+      this.ShipCity = ShipCity;
+      this.Verified = Verified;
+      this.OrderDate = OrderDate;
+      this.ShipName = ShipName;
+      this.ShipCountry = ShipCountry;
+      this.ShippedDate = ShippedDate;
+      this.ShipAddress = ShipAddress;
+    }
+
+    public static List<OrdersDetails> GetAllRecords()
+    {
+      if (order.Count() == 0)
+      {
+        int code = 10000;
+        for (int i = 1; i < 10; i++)
+        {
+        order.Add(new OrdersDetails(code + 1, "ALFKI", i + 0, 2.3 * i, false, new DateTime(1991, 05, 15), "Berlin", "Simons bistro", "Denmark", new DateTime(1996, 7, 16), "Kirchgasse 6"));
+        order.Add(new OrdersDetails(code + 2, "ANATR", i + 2, 3.3 * i, true, new DateTime(1990, 04, 04), "Madrid", "Queen Cozinha", "Brazil", new DateTime(1996, 9, 11), "Avda. Azteca 123"));
+        order.Add(new OrdersDetails(code + 3, "ANTON", i + 1, 4.3 * i, true, new DateTime(1957, 11, 30), "Cholchester", "Frankenversand", "Germany", new DateTime(1996, 10, 7), "Carrera 52 con Ave. Bolívar #65-98 Llano Largo"));
+        order.Add(new OrdersDetails(code + 4, "BLONP", i + 3, 5.3 * i, false, new DateTime(1930, 10, 22), "Marseille", "Ernst Handel", "Austria", new DateTime(1996, 12, 30), "Magazinweg 7"));
+        order.Add(new OrdersDetails(code + 5, "BOLID", i + 4, 6.3 * i, true, new DateTime(1953, 02, 18), "Tsawassen", "Hanari Carnes", "Switzerland", new DateTime(1997, 12, 3), "1029 - 12th Ave. S."));
+        code += 5;
+        }
+      }
+      return order;
+    }
+
+    public int? OrderID { get; set; }
+    public string? CustomerID { get; set; }
+    public int? EmployeeID { get; set; }
+    public double? Freight { get; set; }
+    public string? ShipCity { get; set; }
+    public bool? Verified { get; set; }
+    public DateTime OrderDate { get; set; }
+    public string? ShipName { get; set; }
+    public string? ShipCountry { get; set; }
+    public DateTime ShippedDate { get; set; }
+    public string? ShipAddress { get; set; }
+  }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+**Step 6: API controller creation:**
+
+Create a file named `OrdersController.cs` under the **Controllers** folder. This controller will handle data communication with the table or Syncfusion controls.
+
+{% tabs %}
+{% highlight cs tabtitle="OrdersController.cs" %}
+
+using Microsoft.AspNetCore.Mvc;
+using Syncfusion.EJ2.Base;
+using UrlAdaptor.Models;
+
+namespace UrlAdaptor.Controllers
+{
+  [ApiController]
+  public class OrdersController
+  {
+    /// <summary>
+    /// Processes the DataManager request to perform paging operations (skip and take) on the ordersdetails data.
+    /// </summary>
+    /// <param name="DataManagerRequest">Contains the details of the data operation requested, including paging parameters.</param>
+    /// <returns>Returns a JSON object and the total record count.</returns>
+    [HttpPost]
+    [Route("api/[controller]")]
+    public object Post([FromBody] DataManagerRequest DataManagerRequest)
+    {
+      // Retrieve data from the data source (e.g., database).
+      IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
+
+        // Return the paginated data and the total record count.
+        return new { result = DataSource, count = totalRecordsCount };
+      }
+
+      /// <summary>
+      /// Retrieves all order data records from the data source.
+      /// </summary>
+      /// <returns>Returns a list of all order records.</returns>
+      [HttpGet]
+      [Route("api/[controller]")]
+      public List<OrdersDetails> GetOrderData()
+      {
+        var data = OrdersDetails.GetAllRecords().ToList();
+        return data;
+      }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+> The **GetOrderData** method retrieves sample order data. You can replace it with your custom logic to fetch data from a database or any other source.
+
+> The controller logic can be modified based on the selected adaptor configuration such as Web API or OData to ensure seamless integration and optimal performance for each integration scenario.
+
+**Step 7:** To integrate the table or Syncfusion controls into your ##Platform_Name## and ASP.NET Core project using Visual Studio, follow these steps:
+
+  **1: Create a package.json file:**
+
+  Run the following command in the project root to create a `package.json` file.
+
+  ```bash
+  npm init -y
+  ```
+
+  **2: Install webpack and other dependencies:**
+
+  ```bash
+  npm i -D -E clean-webpack-plugin css-loader html-webpack-plugin mini-css-extract-plugin ts-loader typescript webpack webpack-cli
+  ```
+
+  **3: Configure package.json scripts:**
+
+  Replace the **scripts** property of `package.json` file with the following code:
+
+  ```JSON
+  "scripts": {
+    "build": "webpack --mode=development --watch",
+    "release": "webpack --mode=production",
+    "publish": "npm run release && dotnet publish -c Release"
+  },
+  ```
+
+  **4: Create wwwroot folder:**
+
+  Create a folder named `wwwroot` in the project root directory. This folder will contain static files served by the web server.
+
+  **5: Create webpack.config.js:**
+
+  Create a file named `webpack.config.js` in the project root, with the following code to configure the Webpack compilation process:
+
+  ```js
+  const path = require("path");
+  const HtmlWebpackPlugin = require("html-webpack-plugin");
+  const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+  const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
+  module.exports = {
+      entry: "./src/index.ts",
+      output: {
+          path: path.resolve(__dirname, "wwwroot"),
+          filename: "[name].[chunkhash].js",
+          publicPath: "/",
+      },
+      resolve: {
+          extensions: [".js", ".ts"],
+      },
+      module: {
+          rules: [
+              {
+                  test: /\.ts$/,
+                  use: "ts-loader",
+              },
+              {
+                  test: /\.css$/,
+                  use: [MiniCssExtractPlugin.loader, "css-loader"],
+              },
+          ],
+      },
+      plugins: [
+          new CleanWebpackPlugin(),
+          new HtmlWebpackPlugin({
+              template: "./src/index.html",
+          }),
+          new MiniCssExtractPlugin({
+              filename: "css/[name].[chunkhash].css",
+          }),
+      ],
+  };
+  ```
+
+  **6:** Create a new directory named `src` in the project root for the client code.
+
+  **7: Install Syncfusion packages:**
+
+  Open your terminal in the project’s root folder and install the required Syncfusion packages using npm:
+
+  ```bash
+  npm install @syncfusion/ej2-data --save
+  ```
+
+  **8: Implement Adaptor:** 
+
+  Create `src/index.html` to add the required HTML structure, and create `src/index.ts` to implement the adapter logic, which has been elaborated based on each adaptor in below topics.
+
+  **9:** Create `src/tsconfig.json` in the project and add the following content:
+
+  ```json
+  {
+    "compilerOptions": {
+      "noImplicitAny": true,
+      "noEmitOnError": true,
+      "removeComments": false,
+      "sourceMap": true,
+      "target": "es5"
+    },
+    "exclude": [
+      "node_modules",
+      "wwwroot"
+    ]
+  }
+  ```
+
+  **11: Install additional packages and build the project:**
+
+  ```bash
+  npm i @types/node
+  npm run build
+  ```
+
+  **12: Run the project:**
+
+  Run the project in Visual Studio.
+
+  The `wwwroot/index.html` file is served at **https://localhost:xxxx**.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+**Step 1: Create a new ASP.NET Core project:**
+
+To create a new ASP.NET Core Web API project named any of Adaptor(For ex: **UrlAdaptor**), follow these steps:
+
+* Open Visual Studio.
+* Select "Create a new project"
+* Choose **ASP.NET Core Web API** project template.
+* Name the project **UrlAdaptor**.
+* Click "Create"
+
+**Step 2: Configure the server:** 
+
+In the `Program.cs` file of your project, configure the server to serve static files by adding the following code:
+
+```cs
+var app = builder.Build();
+
+app.UseDefaultFiles();
+app.UseStaticFiles();
+```
+
+Additionally, comment out the following line in the `launchSettings.json` file:
+
+```json
+    "https": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+     // "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:xxxx;http://localhost:xxxx",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+```
+This configuration enables the server to locate and serve the index.html file.
+
+**Step 3: Model class creation:**
+
+Create a model class named **OrdersDetails.cs** in the **Models** folder to represent the order data.
+
+{% tabs %}
+{% highlight cs tabtitle="OrdersDetails.cs" %}
+
+ namespace UrlAdaptor.Models
+ {
+ public class OrdersDetails
+ {
+    public static List<OrdersDetails> order = new List<OrdersDetails>();
+    public OrdersDetails()
+    {
+
+    }
+    public OrdersDetails(
+    int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified,
+    DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry,
+    DateTime ShippedDate, string ShipAddress)
+    {
+      this.OrderID = OrderID;
+      this.CustomerID = CustomerId;
+      this.EmployeeID = EmployeeId;
+      this.Freight = Freight;
+      this.ShipCity = ShipCity;
+      this.Verified = Verified;
+      this.OrderDate = OrderDate;
+      this.ShipName = ShipName;
+      this.ShipCountry = ShipCountry;
+      this.ShippedDate = ShippedDate;
+      this.ShipAddress = ShipAddress;
+    }
+
+    public static List<OrdersDetails> GetAllRecords()
+    {
+      if (order.Count() == 0)
+      {
+        int code = 10000;
+        for (int i = 1; i < 10; i++)
+        {
+        order.Add(new OrdersDetails(code + 1, "ALFKI", i + 0, 2.3 * i, false, new DateTime(1991, 05, 15), "Berlin", "Simons bistro", "Denmark", new DateTime(1996, 7, 16), "Kirchgasse 6"));
+        order.Add(new OrdersDetails(code + 2, "ANATR", i + 2, 3.3 * i, true, new DateTime(1990, 04, 04), "Madrid", "Queen Cozinha", "Brazil", new DateTime(1996, 9, 11), "Avda. Azteca 123"));
+        order.Add(new OrdersDetails(code + 3, "ANTON", i + 1, 4.3 * i, true, new DateTime(1957, 11, 30), "Cholchester", "Frankenversand", "Germany", new DateTime(1996, 10, 7), "Carrera 52 con Ave. Bolívar #65-98 Llano Largo"));
+        order.Add(new OrdersDetails(code + 4, "BLONP", i + 3, 5.3 * i, false, new DateTime(1930, 10, 22), "Marseille", "Ernst Handel", "Austria", new DateTime(1996, 12, 30), "Magazinweg 7"));
+        order.Add(new OrdersDetails(code + 5, "BOLID", i + 4, 6.3 * i, true, new DateTime(1953, 02, 18), "Tsawassen", "Hanari Carnes", "Switzerland", new DateTime(1997, 12, 3), "1029 - 12th Ave. S."));
+        code += 5;
+        }
+      }
+      return order;
+    }
+
+    public int? OrderID { get; set; }
+    public string? CustomerID { get; set; }
+    public int? EmployeeID { get; set; }
+    public double? Freight { get; set; }
+    public string? ShipCity { get; set; }
+    public bool? Verified { get; set; }
+    public DateTime OrderDate { get; set; }
+    public string? ShipName { get; set; }
+    public string? ShipCountry { get; set; }
+    public DateTime ShippedDate { get; set; }
+    public string? ShipAddress { get; set; }
+  }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+**Step 4: API controller creation:**
+
+Create a file named `OrdersController.cs` under the **Controllers** folder. This controller will handle data communication with the table or syncfusion controls.
+
+{% tabs %}
+{% highlight cs tabtitle="OrdersController.cs" %}
+
+using Microsoft.AspNetCore.Mvc;
+using Syncfusion.EJ2.Base;
+using UrlAdaptor.Models;
+
+namespace UrlAdaptor.Controllers
+{
+  [ApiController]
+  public class OrdersController
+  {
+    /// <summary>
+    /// Processes the DataManager request to perform paging operations (skip and take) on the ordersdetails data.
+    /// </summary>
+    /// <param name="DataManagerRequest">Contains the details of the data operation requested, including paging parameters.</param>
+    /// <returns>Returns a JSON object and the total record count.</returns>
+    [HttpPost]
+    [Route("api/[controller]")]
+    public object Post([FromBody] DataManagerRequest DataManagerRequest)
+    {
+      // Retrieve data from the data source (e.g., database).
+      IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
+
+        // Return the paginated data and the total record count.
+        return new { result = DataSource, count = totalRecordsCount };
+      }
+
+      /// <summary>
+      /// Retrieves all order data records from the data source.
+      /// </summary>
+      /// <returns>Returns a list of all order records.</returns>
+      [HttpGet]
+      [Route("api/[controller]")]
+      public List<OrdersDetails> GetOrderData()
+      {
+        var data = OrdersDetails.GetAllRecords().ToList();
+        return data;
+      }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+> The **GetOrderData** method retrieves sample order data. You can replace it with your custom logic to fetch data from a database or any other source.
+
+> The controller logic can be modified based on the selected adaptor configuration such as Web API or OData to ensure seamless integration and optimal performance for each integration scenario.
+
+**Step 7:** To integrate the table or Syncfusion controls into your ##Platform_Name## and ASP.NET Core project using Visual Studio, follow these steps:
+
+  **1: Create wwwroot folder:**
+
+  Create a folder named `wwwroot` in the project root directory. This folder will contain static files served by the web server.
+
+  **2: Create JS and CSS folders:**
+
+  Inside the wwwroot folder, create js and css folders to hold script and CSS files, respectively.
+
+  **3: Implement Adaptor:** 
+
+  Create an `index.html` file under the `wwwroot` folder to add the required HTML structure, and create a `index.js` file under the `wwwroot/js` folder to implement the adapter, which has been elaborated based on each adaptor in below topics.
+
+  **4: Run the project:**
+
+  Now, run the project to see the table or Syncfusion controls connected to the API service in action.
+
+{% endif %}
+
+> * In an API service project, add `Syncfusion.EJ2.AspNet.Core` by opening the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
+> * To access `DataManagerRequest` and `QueryableOperation`, import `Syncfusion.EJ2.Base` in `OrdersController.cs` file.
+
 ## Url adaptor
 
 The `UrlAdaptor` is a built-in adaptor in Syncfusion ##Platform_Name## DataManager module designed to interact with remote web services such as RESTful APIs. It acts as the base class for many other adaptors (like WebApiAdaptor and ODataAdaptor), providing core functionality for HTTP communication.
@@ -139,10 +612,10 @@ This adaptor is especially useful when your data resides on a server and you nee
 The `UrlAdaptor` expects the server's response to be a JSON object containing two primary properties:
 
 - **result:**
-    An array that contains the actual data records to be processed or displayed.
+  An array that contains the actual data records to be processed or displayed.
 
 - **count:**
-    A number representing the total count of records available on the server. This is especially important for enabling accurate pagination.
+  A number representing the total count of records available on the server. This is especially important for enabling accurate pagination.
 
 A sample response object should look like this:
 
@@ -180,19 +653,8 @@ Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [
 ```ts
 
 datamanger.executeQuery(new Query().take(10)).then((e: ReturnOption) => {
-  const response = e.result as { result: Order[] };
-  const data = response.result;
-  const tbody = document.getElementById('table-body');
-  data.forEach((item: Order) => {
-    const row = document.createElement('tr');
-    row.innerHTML = `
-      <td>${item.OrderID}</td>
-      <td>${item.CustomerID}</td>
-      <td>${item.EmployeeID}</td>
-      <td>${item.ShipCity}</td>
-      <td>${item.ShipCountry}</td>
-    `;
-    tbody.appendChild(row);
+  (<Object[]>e.result.result).forEach((data: Object) => {
+    table.appendChild(compiledFunction(data)[0]);
   });
 }).catch(error => {
   console.error("Data fetch failed:", error);
@@ -221,29 +683,21 @@ const datamanger = new ej.data.DataManager({
 Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [Query](../../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 10 records from the remote data source in the form of `result` and `count`.
 
 ```js
-datamanger.executeQuery(new ej.data.Query().take(10)).then((e) => {
-  const data = e.result.result;
-  const tbody = document.getElementById('table-body');
-  data.forEach((item) => {
-    const row = document.createElement('tr');
-    row.innerHTML = `
-      <td>${item.OrderID}</td>
-      <td>${item.CustomerID}</td>
-      <td>${item.EmployeeID}</td>
-      <td>${item.ShipCity}</td>
-      <td>${item.ShipCountry}</td>
-    `;
-    tbody.appendChild(row);
+datamanger.executeQuery(new Query().take(10)).then((e) => {
+  e.result.result.forEach((data) => {
+    table.appendChild(compiledFunction(data)[0]);
   });
 }).catch(error => {
   console.error("Data fetch failed:", error);
-});
+})
 
 ```
 
 {% endif %}
 
-Here is an example that demonstrates how to use the `UrlAdaptor`:
+>* Built-in support is available for handling data operations such as searching, sorting, filtering, aggregate and paging on the server-side. These operations can be handled using methods such as `PerformSearching`, `PerformFiltering`, `PerformSorting`, `PerformTake` and `PerformSkip` available in the `Syncfusion.EJ2.AspNet.Core` package.
+
+This example demonstrates how to use the `UrlAdaptor` and return the data in result and count format from server end with **OrdersController.cs** as below:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -378,7 +832,7 @@ datamanger.executeQuery(new ej.data.Query().take(8)).then((e) => {
 ```
 {% endif %}
 
-Here is an example that demonstrates how to use the `ODataAdaptor`:
+This example demonstrates how to use the `ODataAdaptor` and return the data in result and count format from server end with **OrdersController.cs** as below:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -500,7 +954,9 @@ datamanger.executeQuery(new ej.data.Query().take(8)).then((e) => {
 
 {% endif %}
 
-Here is an example that demonstrates how to use the `ODataV4Adaptor`:
+>  To construct the entity data model for your ODataV4 service, utilize the `ODataConventionModelBuilder` to define the model's structure. Start by creating an instance of the `ODataConventionModelBuilder`, then register the entity set **Orders** using the `EntitySet<T>` method, where `OrdersDetails` represents the CLR type containing order details. Once the entity data model is built, you need to register the ODataV4 services in your ASP.NET Core application. Please refer to the **Program.cs** file below.
+
+This example demonstrates how to use the `ODataV4Adaptor` and return data from server side end with **OrdersController.cs** as below:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -637,7 +1093,7 @@ datamanger.executeQuery(new ej.data.Query().take(8)).then((e) => {
 ```
 {% endif %}
 
-Here is an example that demonstrates how to use the `WebApiAdaptor`:
+This example demonstrates how to use the `WebApiAdaptor` and return the data in items and count format from server end with **OrdersController.cs** as below:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -766,7 +1222,7 @@ datamanger.executeQuery(new ej.data.Query().take(8)).then((e) => {
 
 > The server-side method must accept a parameter named `value` to receive the request payload from the client.
 
-Here is an example that demonstrates how to use the `WebMethodAdaptor`:
+This example demonstrates how to use the `WebMethodAdaptor` and return the data in result and count format from server end with **OrdersController.cs** as below:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -880,7 +1336,7 @@ datamanger.executeQuery(new ej.data.Query().take(8)).then((e) => {
 ```
 {% endif %}
 
-Here is an example that demonstrates how to use the `RemoteSaveAdaptor`:
+This example demonstrates how to use the `RemoteSaveAdaptor` and return data from server side end with **OrdersController.cs** as below:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -1393,273 +1849,23 @@ This structure ensures that DataManager can correctly handle data binding, pagin
 
 {% if page.publishingplatform == "typescript" %}
 
-### Connecting to an API service
-
-This section demonstrates how to implement a `CustomDataAdaptor` in TypeScript for consuming data from an ASP.NET Core Web API service.
-
-**Step 1:** Set up your development environment.
-
-Ensure you have the following installed:
-
-- .NET Core SDK
-- Node.js
-- Visual Studio or another preferred code editor
-
-**Step 2:** Create a new ASP.NET Core project.
-
-Open Visual Studio and create an ASP.NET Core Web API project named **CustomDataAdaptor**.
-
-**Step 3:** Add the Microsoft.TypeScript.MSBuild NuGet package.
-
-In Visual Studio, use the NuGet Package Manager (Tools → NuGet Package Manager → Manage NuGet Packages for Solution) to install the [Microsoft.TypeScript.MSBuild](https://www.nuget.org/packages/Microsoft.TypeScript.MSBuild/) package.
-
-**Step 4:** Create the model class.
-
-Add a class named **OrdersDetails.cs** in the **Models** folder to represent order data.
-
-{% tabs %}
-{% highlight cs tabtitle="OrdersDetails.cs" %}
-
-using System.ComponentModel.DataAnnotations;
-
-namespace CustomDataAdaptor.Models
-{
-  public class OrdersDetails
-  {
-    public static List<OrdersDetails> order = new List<OrdersDetails>();
-
-    public OrdersDetails() { }
-
-    public OrdersDetails(int OrderID, string CustomerId, int EmployeeId, string ShipCountry)
-    {
-      this.OrderID = OrderID;
-      this.CustomerID = CustomerId;
-      this.EmployeeID = EmployeeId;
-      this.ShipCountry = ShipCountry;
-    }
-
-    public static List<OrdersDetails> GetAllRecords()
-    {
-      if (order.Count == 0)
-      {
-        int code = 10000;
-        for (int i = 1; i < 10; i++)
-        {
-          order.Add(new OrdersDetails(code + 1, "ALFKI", i + 0, "Denmark"));
-          order.Add(new OrdersDetails(code + 2, "ANATR", i + 2, "Brazil"));
-          order.Add(new OrdersDetails(code + 3, "ANTON", i + 1, "Germany"));
-          order.Add(new OrdersDetails(code + 4, "BLONP", i + 3, "Austria"));
-          order.Add(new OrdersDetails(code + 5, "BOLID", i + 4, "Switzerland"));
-          code += 5;
-        }
-      }
-      return order;
-    }
-
-    [Key]
-    public int? OrderID { get; set; }
-    public string? CustomerID { get; set; }
-    public int? EmployeeID { get; set; }
-    public string? ShipCountry { get; set; }
-  }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-**Step 5:** Add the controller.
-
-Add a controller named **HomeController.cs** under the **Controllers** folder to handle data requests:
-
-{% tabs %}
-{% highlight cs tabtitle="HomeController.cs" %}
-
-using CustomDataAdaptor.Models;
-using Microsoft.AspNetCore.Mvc;
-
-namespace CustomDataAdaptor.Controllers
-{
-  public class HomeController : Controller
-  {
-    public IActionResult Index()
-    {
-      return View();
-    }
-
-    [HttpPost]
-    public IActionResult UrlDatasource()
-    {
-      var data = OrdersDetails.GetAllRecords();
-      var totalRecordsCount = data.Count;
-      return Json(new { result = data, count = totalRecordsCount });
-    }
-  }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-**Step 6:** Configure the server to serve static files.
-
-Update your `Program.cs` file as follows:
-
-```csharp
-var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-builder.Services.AddControllersWithViews();
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-  app.UseExceptionHandler("/Home/Error");
-  app.UseHsts();
-}
-app.UseDefaultFiles();
-app.UseStaticFiles();
-app.UseHttpsRedirection();
-app.UseRouting();
-app.UseAuthorization();
-
-app.MapStaticAssets();
-
-app.MapControllerRoute(
-  name: "default",
-  pattern: "{controller=Home}/{action=Index}/{id?}"
-).WithStaticAssets();
-
-app.Run();
-```
-
-In `launchSettings.json`, set `launchBrowser` to `true`:
-
-```json
-"https": {
-  "commandName": "Project",
-  "dotnetRunMessages": true,
-  "launchBrowser": true,
-  "applicationUrl": "https://localhost:xxxx;http://localhost:xxxx",
-  "environmentVariables": {
-    "ASPNETCORE_ENVIRONMENT": "Development"
-  }
-}
-```
-
-This configuration allows the server to locate and serve the `index.html` file.
-
-**Step 7:** Set up the client-side environment.
-
-1. Initialize a `package.json` file in the project root:
-
-    ```bash
-    npm init -y
-    ```
-
-2. Install webpack and related dependencies:
-
-    ```bash
-    npm i -D -E clean-webpack-plugin css-loader html-webpack-plugin mini-css-extract-plugin ts-loader typescript webpack webpack-cli
-    ```
-
-3. Create a `wwwroot` folder in the project root to serve static files, and add an `index.html` file inside `wwwroot`:
-
-    ```html
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <title>CustomDataAdaptor in Syncfusion TS DataManager</title>
-    </head>
-    <body>
-      <div id="container">
-        <table id="datatable" class="e-table" border="1">
-          <thead>
-            <tr>
-              <th>Order ID</th>
-              <th>Customer ID</th>
-              <th>Employee ID</th>
-              <th>Ship Country</th>
-            </tr>
-          </thead>
-          <tbody>
-          </tbody>
-        </table>
-      </div>
-      <script src="js/index.js"></script>
-    </body>
-    </html>
-    ```
-
-4. Add a `webpack.config.js` file in the project root:
-
-    ```js
-    const path = require('path');
-
-    module.exports = {
-      mode: 'development',
-      entry: './src/index.ts',
-      output: {
-        filename: 'index.js',
-        path: path.resolve(__dirname, 'wwwroot/js'),
-      },
-      resolve: {
-        extensions: ['.ts', '.js'],
-      },
-      module: {
-        rules: [
-          {
-            test: /\.ts$/,
-            use: 'ts-loader',
-            exclude: /node_modules/,
-          },
-        ],
-      }
-    };
-    ```
-
-5. Install the Syncfusion DataManager package:
-
-    ```bash
-    npm install @syncfusion/ej2-data --save
-    ```
-
-6. Create a `src/tsconfig.json` file:
-
-    ```json
-    {
-      "compilerOptions": {
-        "target": "ES6",
-        "module": "ESNext",
-        "strict": true,
-        "moduleResolution": "node",
-        "esModuleInterop": true,
-        "forceConsistentCasingInFileNames": true,
-        "outDir": "./wwwroot/js",
-        "rootDir": "./src"
-      },
-      "include": [ "src" ]
-    }
-    ```
-
-**Step 8:** Implement the CustomDataAdaptor. 
+**Implement the CustomDataAdaptor**
 
 Use the following steps in your `src/index.ts` to fetch and display data with a `CustomDataAdaptor`:
 
-1. **Import required modules:**
+**1. Import required modules:**
 
-    Import the necessary classes from the Syncfusion packages:
+  Import the necessary classes from the Syncfusion packages:
 
-    ```ts
+  ```ts
     import { CustomDataAdaptor, DataManager, Query, ReturnOption } from "@syncfusion/ej2-data";
     import { compile } from "@syncfusion/ej2-base";
-    ```
-2. **Set up the CustomDataAdaptor with a getData function:**
+  ```
+**2. Set up the CustomDataAdaptor with a getData function:**
 
-    Define how data is fetched from the server using the fetch API inside the `CustomDataAdaptor`.
+  Define how data is fetched from the server using the fetch API inside the `CustomDataAdaptor`.
 
-    ```ts
+  ```ts
     const SERVICE_URI = '/Home/UrlDatasource';
 
     new DataManager({
@@ -1696,7 +1902,7 @@ Use the following steps in your `src/index.ts` to fetch and display data with a 
       .catch((error) => {
         console.error('Data fetch error:', error);
       });
-    ```
+  ```
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -1850,246 +2056,44 @@ namespace CustomDataAdaptor.Models
 {% endhighlight %}
 {% endtabs %}
 
-
-**Step 9:** Build and run the application.
-
-```bash
-npx webpack
-```
-
-Next, run the project in Visual Studio. Once the application is running, open your browser and navigate to the application URL (for example, `https://localhost:xxxx`). The `wwwroot/index.html` file will be served, and you will see the DataManager working with your `CustomDataAdaptor`.
-
 {% elsif page.publishingplatform == "javascript" %}
 
-### Connecting to an API service
+Use the following code in your `src/index.js` to fetch and display data with a `CustomDataAdaptor` by defining how data is fetched from the server using the fetch API inside the adaptor's `getData` function.
 
-Follow these steps to create an ASP.NET Core Web App project and connect it to the Syncfusion ##Platform_Name## DataManager using a custom API service.
+  ```js
+  let template = '<tr><td>${orderID}</td><td>${customerID}</td><td>${employeeID}</td><td>${shipCountry}</td></tr>';
+  let compiledFunction = ej.base.compile(template);
+  let table = document.getElementById('datatable');
 
-**Step 1:** Create a new ASP.NET Core Web App project.
+  const SERVICE_URI = '/Home/UrlDatasource';
 
-1. Open Visual Studio.
-2. Select **Create a new project**.
-3. Choose the **ASP.NET Core Web App** project template.
-4. Name the project **CustomDataAdaptor**.
-5. Click **Create**.
-
-**Step 2:** Configure the server.
-
-In your `Program.cs` file, configure the server to serve static files and set up routing:
-
-```csharp
-var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-builder.Services.AddControllersWithViews();
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-  app.UseExceptionHandler("/Home/Error");
-  app.UseHsts();
-}
-app.UseDefaultFiles();
-app.UseStaticFiles();
-app.UseHttpsRedirection();
-app.UseRouting();
-app.UseAuthorization();
-
-app.MapStaticAssets();
-
-app.MapControllerRoute(
-  name: "default",
-  pattern: "{controller=Home}/{action=Index}/{id?}"
-).WithStaticAssets();
-
-app.Run();
-```
-
-In your `launchSettings.json`, ensure `launchBrowser` is set to `true`:
-
-```json
-"https": {
-  "commandName": "Project",
-  "dotnetRunMessages": true,
-  "launchBrowser": true,
-  "applicationUrl": "https://localhost:xxxx;http://localhost:xxxx",
-  "environmentVariables": {
-    "ASPNETCORE_ENVIRONMENT": "Development"
-  }
-}
-```
-
-This configuration allows the server to locate and serve the `index.html` file.
-
-**Step 3:** Create the model class.
-
-Add a model class named **OrdersDetails.cs** in the **Models** folder to represent order data:
-
-{% tabs %}
-{% highlight cs tabtitle="OrdersDetails.cs" %}
-
-using System.ComponentModel.DataAnnotations;
-
-namespace CustomDataAdaptor.Models
-{
-  public class OrdersDetails
-  {
-    public static List<OrdersDetails> order = new List<OrdersDetails>();
-    public OrdersDetails()
-    {
-
-    }
-    public OrdersDetails(
-    int OrderID, string CustomerId, int EmployeeId, string ShipCountry)
-    {
-      this.OrderID = OrderID;
-      this.CustomerID = CustomerId;
-      this.EmployeeID = EmployeeId;
-      this.ShipCountry = ShipCountry;
-    }
-
-    public static List<OrdersDetails> GetAllRecords()
-    {
-      if (order.Count() == 0)
-      {
-        int code = 10000;
-        for (int i = 1; i < 10; i++)
-        {
-          order.Add(new OrdersDetails(code + 1, "ALFKI", i + 0, "Denmark"));
-          order.Add(new OrdersDetails(code + 2, "ANATR", i + 2, "Brazil"));
-          order.Add(new OrdersDetails(code + 3, "ANTON", i + 1, "Germany"));
-          order.Add(new OrdersDetails(code + 4, "BLONP", i + 3, "Austria"));
-          order.Add(new OrdersDetails(code + 5, "BOLID", i + 4, "Switzerland"));
-          code += 5;
-        }
-      }
-      return order;
-    }
-    [Key]
-    public int? OrderID { get; set; }
-    public string? CustomerID { get; set; }
-    public int? EmployeeID { get; set; }
-    public string? ShipCountry { get; set; }
-  }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-**Step 4:** Create the Controller.
-
-Add a controller named **HomeController.cs** under the **Controllers** folder to handle data requests:
-
-{% tabs %}
-{% highlight cs tabtitle="HomeController.cs" %}
-
-using CustomDataAdaptor.Models;
-using Microsoft.AspNetCore.Mvc;
-
-namespace CustomDataAdaptor.Controllers
-{
-  public class HomeController : Controller
-  {
-    public IActionResult Index()
-    {
-      return View();
-    }
-
-    [HttpPost]
-    public IActionResult UrlDatasource()
-    {
-      var data = OrdersDetails.GetAllRecords();
-      var totalRecordsCount = data.Count;
-      return Json(new { result = data, count = totalRecordsCount });
-    }
-  }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-**Step 5:** Set up static files.
-
-1. Create a folder named `wwwroot` in the project root directory. This folder will contain static files served by the web server.
-2. Inside `wwwroot`, create `js` and `css` folders for JavaScript and CSS files.
-
-**Step 6:** Create the HTML file.
-
-Add an `index.html` file under the `wwwroot` folder with the following structure:
-
-{% tabs %}
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>CustomDataAdaptor in Syncfusion JS DataManager</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="JavaScript DataManager Example">
-    <meta name="author" content="Syncfusion">
-</head>
-<body>
-  <div id="container">
-    <table border="1" id="datatable">
-      <thead>
-        <tr>
-          <th>Order ID</th>
-          <th>Customer ID</th>
-          <th>Employee ID</th>
-          <th>Ship Country</th>
-        </tr>
-      </thead>
-      <tbody id="table-body"></tbody>
-    </table>
-  </div>
-  <script src="js/index.js" type="text/javascript"></script>
-</body>
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-**Step 7:** Add the JavaScript file.
-
-Use the following code in your `wwwroot/js/index.js` file to fetch and display data using a `CustomDataAdaptor`. Set up the DataManager with a `CustomDataAdaptor` to retrieve data from your API and render it in the table.
-
-```js
-let template = '<tr><td>${orderID}</td><td>${customerID}</td><td>${employeeID}</td><td>${shipCountry}</td></tr>';
-let compiledFunction = ej.base.compile(template);
-let table = document.getElementById('datatable');
-
-const SERVICE_URI = '/Home/UrlDatasource';
-
-new ej.data.DataManager({
-  adaptor: new ej.data.CustomDataAdaptor({
-    getData: function (option) {
-      fetch(SERVICE_URI, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json; charset=utf-8',
-        },
-        body: JSON.stringify(option)
-      }).then((response) => {
-        if (response.status >= 200 && response.status <= 299) {
-          return response.json();
-        }
-        throw new Error('Network response was not ok.');
-      }).then((data) => {
-        option.onSuccess(data, {});
-      }).catch((error) => {
-        option.onFailure({}, error);
-      });
-    },
-  }),
-}).executeQuery(new ej.data.Query()).then((e) => {
-  e.result.result.forEach((data) => {
-    table.appendChild(compiledFunction(data)[0]);
+  new ej.data.DataManager({
+    adaptor: new ej.data.CustomDataAdaptor({
+      getData: function (option) {
+        fetch(SERVICE_URI, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json; charset=utf-8',
+          },
+          body: JSON.stringify(option)
+        }).then((response) => {
+          if (response.status >= 200 && response.status <= 299) {
+            return response.json();
+          }
+          throw new Error('Network response was not ok.');
+        }).then((data) => {
+          option.onSuccess(data, {});
+        }).catch((error) => {
+          option.onFailure({}, error);
+        });
+      },
+    }),
+  }).executeQuery(new ej.data.Query()).then((e) => {
+    e.result.result.forEach((data) => {
+      table.appendChild(compiledFunction(data)[0]);
+    });
   });
-});
-```
+  ```
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -2238,12 +2242,7 @@ namespace CustomDataAdaptor.Models
 }
 
 {% endhighlight %}
-
 {% endtabs %}
-
-**Step 8:** Run the project
-
-Build and run the project in Visual Studio. Once the application is running, open your browser and navigate to the application URL (for example, `https://localhost:xxxx`). The `wwwroot/index.html` file will be served, and you will see the DataManager working with your `CustomDataAdaptor`.
 
 {% endif %}
 
@@ -2394,7 +2393,7 @@ The `processResponse` method is executed after data is received from the server 
 
 {% if page.publishingplatform == "typescript" %}
 
-### Implement the custom adaptor
+**Implement the custom adaptor:**
 
 The following example demonstrates how to extend the `ODataV4Adaptor` to create a custom adaptor and bind data to a table using the Syncfusion ##Platform_Name## DataManager.
 
@@ -2567,7 +2566,7 @@ namespace CustomAdaptor.Models
 
 {% elsif page.publishingplatform == "javascript" %}
 
-### Implement the custom adaptor
+**Implement the custom adaptor:**
 
 The following example demonstrates how to extend the `ODataV4Adaptor` to create a custom adaptor and bind data to a table using the Syncfusion DataManager in JavaScript.
 
@@ -2789,7 +2788,7 @@ The CacheAdaptor is a powerful feature in Syncfusion’s ##Platform_Name## DataM
 
 You can enable this functionality by setting the `enableCache` property to true in the `DataManager` configuration.
 
-**How it works**
+**How it works:**
 
 * When `enableCache` is set to **true**, the DataManager generates a unique ID at initialization and uses it to store previously loaded page data in cache memory. This enables efficient data retrieval without redundant server requests.
 
@@ -2845,6 +2844,7 @@ let grid: Grid = new Grid({
 });
 
 grid.appendTo('#Grid');
+
 {% endraw %}
 {% endhighlight %}
 
@@ -2854,7 +2854,6 @@ grid.appendTo('#Grid');
 {% endtabs %}
 
 {% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}

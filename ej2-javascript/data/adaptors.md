@@ -714,6 +714,9 @@ This example demonstrates how to use the `UrlAdaptor` and return the data in res
 {% highlight cs tabtitle="OrdersDetails.cs" %}
 {% include code-snippet/data/getting-started-cs34/OrdersDetails.cs %}
 {% endhighlight %}
+{% highlight cs tabtitle="Program.cs" %}
+{% include code-snippet/data/getting-started-cs34/program.cs %}
+{% endhighlight %}
 {% endtabs %}
         
 {% elsif page.publishingplatform == "javascript" %}
@@ -730,6 +733,9 @@ This example demonstrates how to use the `UrlAdaptor` and return the data in res
 {% endhighlight %}
 {% highlight cs tabtitle="OrdersDetails.cs" %}
 {% include code-snippet/data/getting-started-cs34/OrdersDetails.cs %}
+{% endhighlight %}
+{% highlight cs tabtitle="Program.cs" %}
+{% include code-snippet/data/getting-started-cs34/program.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -849,6 +855,9 @@ This example demonstrates how to use the `ODataAdaptor` and return the data in r
 {% highlight cs tabtitle="OrdersDetails.cs" %}
 {% include code-snippet/data/getting-started-cs2/OrdersDetails.cs %}
 {% endhighlight %}
+{% highlight cs tabtitle="Program.cs" %}
+{% include code-snippet/data/getting-started-cs2/program.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -865,6 +874,9 @@ This example demonstrates how to use the `ODataAdaptor` and return the data in r
 {% endhighlight %}
 {% highlight cs tabtitle="OrdersDetails.cs" %}
 {% include code-snippet/data/getting-started-cs2/OrdersDetails.cs %}
+{% endhighlight %}
+{% highlight cs tabtitle="Program.cs" %}
+{% include code-snippet/data/getting-started-cs2/program.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1110,6 +1122,9 @@ This example demonstrates how to use the `WebApiAdaptor` and return the data in 
 {% highlight cs tabtitle="OrdersDetails.cs" %}
 {% include code-snippet/data/getting-started-cs35/OrdersDetails.cs %}
 {% endhighlight %}
+{% highlight cs tabtitle="Program.cs" %}
+{% include code-snippet/data/getting-started-cs35/program.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -1126,6 +1141,9 @@ This example demonstrates how to use the `WebApiAdaptor` and return the data in 
 {% endhighlight %}
 {% highlight cs tabtitle="OrdersDetails.cs" %}
 {% include code-snippet/data/getting-started-cs35/OrdersDetails.cs %}
+{% endhighlight %}
+{% highlight cs tabtitle="Program.cs" %}
+{% include code-snippet/data/getting-started-cs35/program.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1239,6 +1257,9 @@ This example demonstrates how to use the `WebMethodAdaptor` and return the data 
 {% highlight cs tabtitle="OrdersDetails.cs" %}
 {% include code-snippet/data/getting-started-cs36/OrdersDetails.cs %}
 {% endhighlight %}
+{% highlight cs tabtitle="Program.cs" %}
+{% include code-snippet/data/getting-started-cs36/program.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -1255,6 +1276,9 @@ This example demonstrates how to use the `WebMethodAdaptor` and return the data 
 {% endhighlight %}
 {% highlight cs tabtitle="OrdersDetails.cs" %}
 {% include code-snippet/data/getting-started-cs36/OrdersDetails.cs %}
+{% endhighlight %}
+{% highlight cs tabtitle="Program.cs" %}
+{% include code-snippet/data/getting-started-cs36/program.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1353,6 +1377,9 @@ This example demonstrates how to use the `RemoteSaveAdaptor` and return data fro
 {% highlight cs tabtitle="OrdersDetails.cs" %}
 {% include code-snippet/data/getting-started-cs37/OrdersDetails.cs %}
 {% endhighlight %}
+{% highlight cs tabtitle="Program.cs" %}
+{% include code-snippet/data/getting-started-cs37/program.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -1369,6 +1396,9 @@ This example demonstrates how to use the `RemoteSaveAdaptor` and return data fro
 {% endhighlight %}
 {% highlight cs tabtitle="OrdersDetails.cs" %}
 {% include code-snippet/data/getting-started-cs37/OrdersDetails.cs %}
+{% endhighlight %}
+{% highlight cs tabtitle="Program.cs" %}
+{% include code-snippet/data/getting-started-cs37/program.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1836,12 +1866,12 @@ Example:
 
 ```json
 {
-        "result": [
-                { /* record 1 */ },
-                { /* record 2 */ }
-                // ...
-        ],
-        "count": 67
+  "result": [
+    { /* record 1 */ },
+    { /* record 2 */ }
+    // ...
+  ],
+  "count": 67
 }
 ```
 
@@ -1849,7 +1879,7 @@ This structure ensures that DataManager can correctly handle data binding, pagin
 
 {% if page.publishingplatform == "typescript" %}
 
-**Implement the CustomDataAdaptor**
+**Implement the CustomDataAdaptor:**
 
 Use the following steps in your `src/index.ts` to fetch and display data with a `CustomDataAdaptor`:
 
@@ -2250,7 +2280,7 @@ namespace CustomDataAdaptor.Models
 
 The `CustomAdaptor` in Syncfusion ##Platform_Name## DataManager allows you to extend built-in adaptors (like UrlAdaptor) and override specific methods to customize the data communication between the client and server. This adaptor is useful when integrating with non-standard APIs or when the server's request and response formats do not match DataManager's default expectations.
 
-To create and use custom adaptor, please refer to the below steps.
+To create and use custom adaptor, please refer to the below steps:
 
 * Select an built-in adaptor which will act as base class for your custom adaptor.
 * Override the desired method to achieve your requirement.
@@ -2784,7 +2814,7 @@ Use the following example to understand how to implement error handling in a `Cu
 
 ## CacheAdaptor
 
-The CacheAdaptor is a powerful feature in Syncfusion’s ##Platform_Name## DataManager that enhances application performance by reducing redundant server calls. It caches previously fetched data on the client side, allowing your app to quickly retrieve cached data instead of making repeated HTTP requests when navigating through pages or revisiting previously loaded data. This significantly improves the responsiveness of data-bound components and reduces server load, especially in applications with large datasets or frequent data navigation.
+The `CacheAdaptor` is a powerful feature in Syncfusion’s ##Platform_Name## DataManager that enhances application performance by reducing redundant server calls. It caches previously fetched data on the client side, allowing your app to quickly retrieve cached data instead of making repeated HTTP requests when navigating through pages or revisiting previously loaded data. This significantly improves the responsiveness of data-bound components and reduces server load, especially in applications with large datasets or frequent data navigation.
 
 You can enable this functionality by setting the `enableCache` property to true in the `DataManager` configuration.
 

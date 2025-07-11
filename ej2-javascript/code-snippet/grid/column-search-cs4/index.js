@@ -66,6 +66,13 @@ var grid = new ej.grids.Grid({
             removeQuery = false;
             grid.refresh();
         }
+        document.getElementById(grid.element.id + '_searchbar').addEventListener('keyup', (args) => {
+            if (args.target.value === '' && (args.key === 'Enter' || args.key === 'Backspace')) {
+                grid.query = new ej.data.Query();
+                removeQuery = false;
+                grid.refresh();
+            }
+        });
     },
 });
 grid.appendTo('#Grid');

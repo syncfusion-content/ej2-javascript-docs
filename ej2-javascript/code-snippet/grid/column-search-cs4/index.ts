@@ -71,6 +71,13 @@ let grid: Grid = new Grid({
             removeQuery = false;
             grid.refresh();
         }
+        (document.getElementById(grid.element.id + '_searchbar') as HTMLElement).addEventListener('keyup', (args) => {
+            if ((args.target as HTMLInputElement).value === '' && (args.key === 'Enter' || args.key === 'Backspace')) {
+                grid.query = new Query();
+                removeQuery = false;
+                grid.refresh();
+            }
+        });
     },
 });
 grid.appendTo('#Grid');

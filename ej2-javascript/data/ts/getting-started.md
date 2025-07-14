@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Getting started in Syncfusion ##Platform_Name## DataManager
 
-The Syncfusion ##Platform_Name## DataManager enables efficient data management in ##Platform_Name## applications. It seamlessly interacts with various data sources (remote or local) and provides functionalities like sorting, filtering, paging, and CRUD (Create, Read, Update, and Delete) operations, enhancing the data presentation capabilities of your ##Platform_Name## application.
+The Syncfusion ##Platform_Name## DataManager enables efficient data management in ##Platform_Name## applications. It seamlessly interacts with various datasources (remote or local) and provides functionalities like sorting, filtering, paging, and CRUD (Create, Read, Update, and Delete) operations, enhancing the data presentation capabilities of your ##Platform_Name## application.
 
-This section provides a quick overview of how to set up a ##Platform_Name## project and integrate the Syncfusion ##Platform_Name## DataManager. It includes instructions for installation, basic configuration, and integration with both local and remote data sources, along with support for data operations like sorting, filtering, and paging.
+This section provides a quick overview of how to set up a ##Platform_Name## project and integrate the Syncfusion ##Platform_Name## DataManager. It includes instructions for installation, basic configuration, and integration with both local and remote datasources, along with support for data operations like sorting, filtering, and paging.
 
 ## Dependencies
 
@@ -76,9 +76,9 @@ npm install @syncfusion/ej2-data
 {% endhighlight %}
 {% endtabs %}
 
-## Connection to a data source
+## Connection to a datasource
 
-The Syncfusion ##Platform_Name## DataManager acts as a centralized data gateway, enabling seamless interaction with both local (in-memory) and remote (server-based) data sources. It abstracts the complexities of data handling by using a consistent API for data retrieval and manipulation across various components.
+The Syncfusion ##Platform_Name## DataManager acts as a centralized data gateway, enabling seamless interaction with both local (in-memory) and remote (server-based) datasources. It abstracts the complexities of data handling by using a consistent API for data retrieval and manipulation across various components.
 
 By integrating with the **Query** class, DataManager can perform essential operations such as:
 
@@ -94,7 +94,7 @@ Whether the data resides in a static JSON file, a RESTful Web API, or an OData s
 
 ### Binding to JSON data
 
-Binding to a local data source involves connecting your application directly to a dataset stored within the application itself, such as a JSON file. This approach is ideal for small-scale applications where data is static and does not need to be fetched from a server. It simplifies development and improves performance by keeping everything on the client side.
+Binding to a local datasource involves connecting your application directly to a dataset stored within the application itself, such as a JSON file. This approach is ideal for small-scale applications where data is static and does not need to be fetched from a server. It simplifies development and improves performance by keeping everything on the client side.
 
 This can be done in one of two ways:
 
@@ -161,7 +161,7 @@ export let data: Object[] = [
 
 ```
 
-The following example demonstrates how to bind JSON data using the [executeLocal](../api/data/dataManager/#executelocal) method of [DataManager](../../documentation/api/data/datamanager):
+The following example demonstrates how to bind JSON data using the [executeLocal](../api/data/dataManager/#executelocal) method of [DataManager](../../documentation/api/data/datamanager/):
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -179,13 +179,11 @@ The following example demonstrates how to bind JSON data using the [executeLocal
 
 ### Binding to ODataV4
 
-OData (Open Data Protocol) is a standardized protocol for querying and updating data using RESTful APIs. It is widely adopted in enterprise applications for enabling structured, scalable access to remote data services.
-
-The Syncfusion ##Platform_Name## DataManager provides built-in support for interacting with OData v3 and v4 services, allowing seamless integration with external data sources.
+OData (Open Data Protocol) is a standardized protocol for querying and updating data using RESTful Web API. It is widely adopted in enterprise applications for enabling structured, scalable access to remote data services. It support for interacting with OData v3 and v4 services, allowing seamless integration with external datasources.
 
 You can bind a remote OData service to the DataManager by setting its `url` property to the service endpoint URL. This configuration enables the DataManager to automatically perform server-side operations such as sorting, filtering, paging, and CRUD by sending appropriate requests to the specified endpoint.
 
-The following sample demonstrates how to bind the remote ODataV4 service using the [executeLocal](../api/data/dataManager/#executelocal) method of [DataManager](../../documentation/api/data/datamanager):
+The following sample demonstrates how to bind the remote ODataV4 service using the [executeQuery](../api/data/dataManager/#executequery) method of [DataManager](../../documentation/api/data/datamanager/):
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -200,9 +198,9 @@ The following sample demonstrates how to bind the remote ODataV4 service using t
 
 ## Filter
 
-Data filtering is a fundamental operation that enables you to obtain a refined view of data based on specified criteria. This feature is essential for efficiently managing and displaying large datasets.
+Data filtering lets you show only the data that matches specific conditions. It helps simplify large datasets, making it easier for users to find the information they need quickly and efficiently.
 
-You can easily construct filter expressions using the [where](../api/data/query/#where) method of the [query](../api/data/query) class. This method allows you to specify filter criteria based on various conditions.
+You can easily construct filter expressions using the [where](../api/data/query/#where) method of the [query](../api/data/query/) class. This method allows you to specify filter criteria based on various conditions.
 
 The following example demonstrates how to filter data based on the **EmployeeID** field equal to **4** using the `where` method: 
 
@@ -224,7 +222,7 @@ The following example demonstrates how to filter data based on the **EmployeeID*
 
 Sorting allows you to arrange data in a specific order, making it easier to read, analyze, and locate information quickly.
 
-You can sort the data either in ascending or descending order using the [sortBy](../api/data/query/#sortby) method of the [query](../api/data/query) class. This method specifies the field by which the data should be sorted.
+You can sort the data either in ascending or descending order using the [sortBy](../api/data/query/#sortby) method of the [query](../api/data/query/) class. This method specifies the field by which the data should be sorted.
 
 The following example demonstrates how to sort data based on the **EmployeeID** field in **ascending** order using the `sortBy` method:
 
@@ -246,7 +244,7 @@ The following example demonstrates how to sort data based on the **EmployeeID** 
 
 Paging allows data to be displayed in segmented pages, making it easier to navigate large datasets. It is especially helpful in client-side applications, where only a limited number of records are shown per page to enhance readability and improve performance.
 
-You can use the [page](../api/data/query/#page)` method of the [query](../api/data/query) class to retrieve a specific range of data based on the page index and page size.
+You can use the [page](../api/data/query/#page) method of the [query](../api/data/query/) class to retrieve a specific range of data based on the page index and page size.
 
 The following example demonstrates how to apply paging to the data using the `page` method to get the first page containing 8 records:
 

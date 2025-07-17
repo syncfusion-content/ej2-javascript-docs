@@ -235,7 +235,7 @@ The following sample demonstrates how to bind the remote ODataV4 service using t
 
 Data filtering is a fundamental operation that enables you to obtain a refined view of data based on specified criteria. This feature is essential for efficiently managing and displaying large datasets.
 
-You can easily construct filter expressions using the [where](../api/data/query/#where) method of the [query](../api/data/query) class. This method allows you to specify filter criteria based on various conditions.
+You can easily construct filter expressions using the [where](../api/data/query/#where) method of the [Query](../api/data/query/) class. This method allows you to specify filter criteria based on various conditions.
 
 The following example demonstrates how to filter data based on the **EmployeeID** field equal to **4** using the `where` method: 
 
@@ -257,7 +257,7 @@ The following example demonstrates how to filter data based on the **EmployeeID*
 
 Sorting allows you to arrange data in a specific order, making it easier to read, analyze, and locate information quickly.
 
-You can sort the data either in ascending or descending order using the [sortBy](../api/data/query/#sortby) method of the [query](../api/data/query) class. This method specifies the field by which the data should be sorted.
+You can sort the data either in ascending or descending order using the [sortBy](../api/data/query/#sortby) method of the [Query](../api/data/query/) class. This method specifies the field by which the data should be sorted.
 
 The following example demonstrates how to sort data based on the **EmployeeID** field in **ascending** order using the `sortBy` method:
 
@@ -279,7 +279,7 @@ The following example demonstrates how to sort data based on the **EmployeeID** 
 
 Paging allows data to be displayed in segmented pages, making it easier to navigate large datasets. It is especially helpful in client-side applications, where only a limited number of records are shown per page to enhance readability and improve performance.
 
-You can use the [page](../api/data/query/#page)` method of the [query](../api/data/query) class to retrieve a specific range of data based on the page index and page size.
+You can use the [page](../api/data/query/#page) method of the [Query](../api/data/query/) class to retrieve a specific range of data based on the page index and page size.
 
 The following example demonstrates how to apply paging to the data using the `page` method to get the first page containing 8 records:
 

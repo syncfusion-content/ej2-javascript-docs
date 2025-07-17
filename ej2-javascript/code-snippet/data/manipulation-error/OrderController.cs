@@ -50,7 +50,7 @@ namespace UrlAdaptor.Controllers
     [Route("api/[controller]/Insert")]
     public IActionResult Insert([FromBody] CRUDModel<OrdersDetails> value)
     {
-      if (value.value.OrderID == null && value.value.CustomerID == "" && value.value.EmployeeID ==null)
+      if (value.value.OrderID == null || value.value.CustomerID == "" || value.value.EmployeeID == null)
       {
         return BadRequest(new { message = "All fields are required to insert a new order." });
       }

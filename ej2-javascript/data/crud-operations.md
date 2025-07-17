@@ -15,7 +15,7 @@ The Syncfusion ##Platform_Name## DataManager enables seamless Create, Read, Upda
 
 Each data source type handles CRUD operations differently. To manage this, DataManager uses data adaptors translate DataManager actions into the appropriate format for the target data source.
 
-**Data Adaptors and CRUD Translation**
+**Data Adaptors and CRUD Translation:**
 
 | Adaptor Type           | Target Data Source     | Notes                                                                 |
 |------------------------|------------------------|-----------------------------------------------------------------------|
@@ -26,7 +26,7 @@ Each data source type handles CRUD operations differently. To manage this, DataM
 | `RemoteSaveAdaptor`    | Remote, batch updates  | Batches multiple CRUD operations into a single request.              |
 | `CustomAdaptor`        | Developer-defined      | Extend the base class to fully control how CRUD requests behave.     |
 
-## Performing CRUD operations:
+## Performing CRUD operations
 
 The process of performing CRUD operations varies depending on the data source:
 
@@ -105,7 +105,7 @@ To perform CRUD operations on remote data using DataManager, follow these steps:
 
   The **DataManager** uses these URLs to perform the respective operations by sending appropriate HTTP requests to the server.
 
-  To retrieve data from the remote server, use the DataManager’s [executeQuery](https://ej2.syncfusion.com/documentation/api/data/dataManager/#executequery) method. This method converts the **Query** object into a server request and sends it to the specified endpoint. It then waits for the server response in JSON format and returns the resulting data.
+  To retrieve data from the remote server, use the DataManager’s [executeQuery](../api/data/dataManager/#executequery) method. This method converts the **Query** object into a server request and sends it to the specified endpoint. It then waits for the server response in JSON format and returns the resulting data.
 
 **2. Perform CRUD operations using the following DataManager methods:**
 
@@ -205,7 +205,7 @@ Below is an example demonstrating batch CRUD operations using local data:
 
 When performing data operations using Syncfusion's DataManager, such as fetching, inserting, updating, or deleting data from a remote server, these operations are asynchronous and can encounter errors due to server issues, network problems, or invalid requests.
 
-To manage these failures effectively, you can use the [catch](https://ej2.syncfusion.com/documentation/api/data/deferred/#catch) method available on the promise returned by the DataManager operation. The `catch` block allows you to gracefully handle errors by:
+To manage these failures effectively, you can use the [catch](../api/data/deferred/#catch) method available on the promise returned by the DataManager operation. The `catch` block allows you to gracefully handle errors by:
 
 * Identify and capture failures caused by unreachable endpoints, timeouts, or server-side issues.
 

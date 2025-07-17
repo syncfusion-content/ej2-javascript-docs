@@ -101,15 +101,15 @@ This approach improves code readability, maintainability, and robustness by sepa
 
 To achieve this, the following concepts are used:
 
-1. [catch](https://ej2.syncfusion.com/documentation/api/data/deferred/#catch)- Handles errors or rejections that occur during the asynchronous operation.
+1. [catch](../api/data/deferred/#catch)- Handles errors or rejections that occur during the asynchronous operation.
 
-2. [promise](https://ej2.syncfusion.com/documentation/api/data/deferred/#promise)- Represents the eventual completion (or failure) of an asynchronous operation and its resulting value. If it fails, it passes an error or reason to the rejection handler for appropriate processing.
+2. [promise](../api/data/deferred/#promise)- Represents the eventual completion (or failure) of an asynchronous operation and its resulting value. If it fails, it passes an error or reason to the rejection handler for appropriate processing.
 
-3. [reject](https://ej2.syncfusion.com/documentation/api/data/deferred/#reject)- Indicates that the asynchronous operation has failed and passes an error or reason to the handler.
+3. [reject](../api/data/deferred/#reject)- Indicates that the asynchronous operation has failed and passes an error or reason to the handler.
 
-4. [resolve](https://ej2.syncfusion.com/documentation/api/data/deferred/#resolve)- Indicates that the asynchronous operation has completed successfully and passes the result to the handler.
+4. [resolve](../api/data/deferred/#resolve)- Indicates that the asynchronous operation has completed successfully and passes the result to the handler.
 
-5. [then](https://ej2.syncfusion.com/documentation/api/data/deferred/#then)- Executes the logic that run after the asynchronous operation completes successfully. It allows chaining of further actions.
+5. [then](../api/data/deferred/#then)- Executes the logic that run after the asynchronous operation completes successfully. It allows chaining of further actions.
 
 The following sample demonstrates how to use deferred execution & error handling:
 

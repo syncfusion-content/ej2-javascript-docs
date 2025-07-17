@@ -87,7 +87,7 @@ To achieve the manipulation of local data using `JsonAdaptor`, follow these step
 
 **Step 4: Apply a query using executeLocal method:**
 
-  Use the [executeLocal](../../api/data/dataManager/#executelocal) method with a [Query](../../api/data/query/) object to retrieve and manipulate data directly on the client-side. This method allows you to perform operations like filtering, sorting, paging, and grouping on local data without any server requests. For example, to retrieve the first 8 records.
+  Use the [executeLocal](../api/data/dataManager/#executelocal) method with a [Query](../api/data/query/) object to retrieve and manipulate data directly on the client-side. This method allows you to perform operations like filtering, sorting, paging, and grouping on local data without any server requests. For example, to retrieve the first 8 records.
 
   ```ts
 
@@ -457,7 +457,7 @@ Additionally, comment out the following line in the `launchSettings.json` file:
       }
     },
 ```
-This configuration enables the server to locate and serve the index.html file.
+This configuration enables the server to locate and serve the **index.html** file.
 
 **Step 3: Model class creation:**
 
@@ -530,7 +530,7 @@ Create a model class named **OrdersDetails.cs** in the **Models** folder to repr
 
 **Step 4: API controller creation:**
 
-Create a file named `OrdersController.cs` under the **Controllers** folder. This controller will handle data communication with the table or syncfusion controls.
+Create a file named `OrdersController.cs` under the **Controllers** folder. This controller will handle data communication with the table or Syncfusion controls.
 
 {% tabs %}
 {% highlight cs tabtitle="OrdersController.cs" %}
@@ -648,7 +648,7 @@ const datamanger = new DataManager({
 
 **Step 3: Apply a query using executeQuery:**
 
-Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [Query](../../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 10 records from the remote data source in the form of `result` and `count`.
+Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 10 records from the remote data source in the form of `result` and `count`.
 
 ```ts
 
@@ -680,7 +680,7 @@ const datamanger = new ej.data.DataManager({
 
 **Step 2: Apply a query using executeQuery:**
 
-Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [Query](../../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 10 records from the remote data source in the form of `result` and `count`.
+Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 10 records from the remote data source in the form of `result` and `count`.
 
 ```js
 datamanger.executeQuery(new Query().take(10)).then((e) => {
@@ -796,7 +796,7 @@ const datamanger = new DataManager({
 
 **Step 3: Apply a query using executeQuery:**
 
-Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [Query](../../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source in the form of `result` and `count`.
+Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source in the form of `result` and `count`.
 
 ```ts
 
@@ -826,7 +826,7 @@ const datamanger = new ej.data.DataManager({
 
 **Step 2: Apply a query using executeQuery:**
 
-Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [Query](../../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source in the form of `result` and `count`.
+Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source in the form of `result` and `count`.
 
 ```js
 datamanger.executeQuery(new ej.data.Query().take(8)).then((e) => {
@@ -922,7 +922,7 @@ const datamanger = new DataManager({
 
 **Step 3: Apply a query using executeQuery:**
 
-Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [Query](../../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source.
+Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source.
 
 ```ts
 
@@ -953,7 +953,7 @@ const datamanger= new ej.data.DataManager({
 
 **Step 2: Apply a query using executeQuery:**
 
-Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [Query](../../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source.
+Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source.
 
 ```js
 datamanger.executeQuery(new ej.data.Query().take(8)).then((e) => {
@@ -1063,7 +1063,7 @@ const datamanger = new DataManager({
 
 **Step 3: Apply a query using executeQuery:**
 
-Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [Query](../../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source in the form of `Items` and `Count`.
+Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source in the form of `Items` and `Count`.
 
 ```ts
 
@@ -1093,7 +1093,7 @@ const datamanger = new ej.data.DataManager({
 
 **Step 2: Apply a query using executeQuery:**
 
-Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [Query](../../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source in the form of `Items` and `Count`.
+Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source in the form of `Items` and `Count`.
 
 ```js
 datamanger.executeQuery(new ej.data.Query().take(8)).then((e) => {
@@ -1195,7 +1195,7 @@ const datamanger = new DataManager({
 
 **Step 3: Apply a query using executeQuery:**
 
-Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [Query](../../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source in the form of `result` and `count`.
+Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source in the form of `result` and `count`.
 
 ```ts
 
@@ -1225,7 +1225,7 @@ const datamanger = new ej.data.DataManager({
 
 **Step 2: Apply a query using executeQuery:**
 
-Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [Query](../../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source in the form of `result` and `count`.
+Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source in the form of `result` and `count`.
 
 ```js
 
@@ -1317,7 +1317,7 @@ const datamanger = new DataManager({
 
 **Step 3: Apply a query using executeQuery:**
 
-Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [Query](../../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source.
+Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source.
 
 ```ts
 
@@ -1347,7 +1347,7 @@ const datamanger = new ej.data.DataManager({
 
 **Step 2: Apply a query using executeQuery:**
 
-Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [Query](../../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source.
+Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source.
 
 ```js
 
@@ -1414,15 +1414,15 @@ To achieve this, follow these steps:
 
 **Step 1: Create service for GraphQL:**
 
-**1:** Create a new folder named **GraphQLServer** specifically for your GraphQL server.
+**1.** Create a new folder named **GraphQLServer** specifically for your GraphQL server.
 
-**2:** Install the [graph pack](https://www.npmjs.com/package/graphpack) npm package. Open your terminal and navigate to the server folder, then run:
+**2.** Install the [graph pack](https://www.npmjs.com/package/graphpack) npm package. Open your terminal and navigate to the server folder, then run:
 
   ```bash
   npm i graphpack
   ```
 
-**3:** To utilize Syncfusion's  **ej2-data** package, you need to include it as a dependency in your project's **package.json** file. Here's how you can mention it in the configuration:
+**3.** To utilize Syncfusion's  **ej2-data** package, you need to include it as a dependency in your project's **package.json** file. Here's how you can mention it in the configuration:
   
   ```json
     {
@@ -1442,9 +1442,9 @@ To achieve this, follow these steps:
     }
   ```
 
-**4:** Create a schema file (e.g., **src/schema.graphql**) in your GraphQL server project and write the schema definition.
+**4.** Create a schema file (e.g., **src/schema.graphql**) in your GraphQL server project and write the schema definition.
 
-  * **Define Types:** Create types representing the structure of data retrieved from GraphQL queries. Since the `GraphQLAdaptor` in  Syncfusion extends from `UrlAdaptor`, it expects a JSON response with specific properties:
+  * **Define Types:** Create types representing the structure of data retrieved from GraphQL queries. Since the `GraphQLAdaptor` in Syncfusion extends from `UrlAdaptor`, it expects a JSON response with specific properties:
 
     **result:** An array containing the data entities.
     **count:** The total number of records.
@@ -1471,7 +1471,7 @@ To achieve this, follow these steps:
   {% endhighlight %}
   {% endtabs %}
 
-**5:** Create a resolver file (e.g., **src/resolvers.js**) to handle GraphQL queries and fetch data from your database or data source. Resolver functions are responsible for processing incoming GraphQL requests and returning the appropriate data in the expected `result` and `count` format.  To efficiently handle filtering, sorting, searching, and paging, you can use the utilities from the **@syncfusion/ej2-data** package such as **DataUtil**, [Query](../../api/data/query/), and **DataManager**.
+**5.** Create a resolver file (e.g., **src/resolvers.js**) to handle GraphQL queries and fetch data from your database or data source. Resolver functions are responsible for processing incoming GraphQL requests and returning the appropriate data in the expected `result` and `count` format. To efficiently handle filtering, sorting, searching, and paging, you can use the utilities from the **@syncfusion/ej2-data** package such as **DataUtil**, [Query](../api/data/query/), and **DataManager**.
 
   {% tabs %}
   {% highlight js tabtitle="resolvers.js" %}
@@ -1479,7 +1479,7 @@ To achieve this, follow these steps:
   {% endhighlight %}
   {% endtabs %}
 
-**6:** Create a simple data file **src/db.js** that exports your data array.
+**6.** Create a simple data file **src/db.js** that exports your data array.
 
   {% tabs %}
   {% highlight js tabtitle="db.js" %}
@@ -1487,7 +1487,7 @@ To achieve this, follow these steps:
   {% endhighlight %}
   {% endtabs %}
 
-**7:** Install required packages and start the GraphQL server by running the following commands in your terminal:
+**7.** Install required packages and start the GraphQL server by running the following commands in your terminal:
 
   ```bash
     npm install
@@ -1500,14 +1500,14 @@ The server will be hosted at **http://localhost:xxxx/**. (where xxxx represents 
 
 {% if page.publishingplatform == "typescript" %}
 
-**1:** Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from GitHub.
+**1.** Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from GitHub.
 
 ```bash
 git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ClientApp
 cd ClientApp
 ```
 
-**2: Add Syncfusion packages:**
+**2. Add Syncfusion packages:**
 
 ```bash
 npm install
@@ -1515,13 +1515,13 @@ npm install
 
 {% elsif page.publishingplatform == "javascript" %}
 
-**1:** Create a root folder named `ClientApp` for your application.
+**1.** Create a root folder named `ClientApp` for your application.
 
-**2:** Open Visual Studio Code and create `ClientApp/index.js` and `ClientApp/index.html` files to initialize either a normal table or Syncfusion controls.
+**2.** Open Visual Studio Code and create `ClientApp/index.js` and `ClientApp/index.html` files to initialize either a normal table or Syncfusion controls.
 
 {% endif %}
 
-**3: Configure DataManager with GraphQLAdaptor:**
+**3. Configure DataManager with GraphQLAdaptor:**
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -1549,7 +1549,7 @@ let data: DataManager = new DataManager({
 
 ```
 
-**C.Define the GraphQL query and map the response:**
+**C. Define the GraphQL query and map the response:**
 
 * The `GraphQLAdaptor` includes a `query` property where you define your GraphQL query string. The response from the server should follow this JSON structure:
 
@@ -1595,7 +1595,7 @@ let data: DataManager = new DataManager({
 
 **D. Apply a query using executeQuery:**
 
-Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [Query](../../api/data/query/)object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting.  The example below retrieves the first 8 records where the **ShipCity** contains "Cunewalde" and **ShipCountry** equals "Germany," sorted by **OrderID** descending.
+Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting.  The example below retrieves the first 8 records where the **ShipCity** contains "Cunewalde" and **ShipCountry** equals "Germany," sorted by **OrderID** descending.
 
 ```ts
 
@@ -1675,7 +1675,7 @@ let data: DataManager = new ej.data.DataManager({
 
 **C. Apply a query using executeQuery:**
 
-Use the [executeQuery](../../api/data/dataManager/#executequery) method with a [Query](../../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting.  The example below retrieves the first 8 records where the **ShipCity** contains "Cunewalde" and **ShipCountry** equals "Germany," sorted by **OrderID** descending.
+Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting.  The example below retrieves the first 8 records where the **ShipCity** contains "Cunewalde" and **ShipCountry** equals "Germany," sorted by **OrderID** descending.
 
 ```ts
 
@@ -1710,7 +1710,7 @@ data.executeQuery(query).then((e) => {
 
 {% endif %}
 
-**5: Add HTML Table:**
+**4. Add HTML Table:**
 
 Create a basic HTML structure with a <table> element where data using the GraphQL adaptor will be rendered.
 
@@ -1734,7 +1734,7 @@ Create a basic HTML structure with a <table> element where data using the GraphQ
 
 {% if page.publishingplatform == "typescript" %}
 
-**6: Run the Application:**
+**5. Run the Application:**
 
 Once the GraphQL server is running, assign its URL (e.g., http://localhost:xxxx/) to the `dataManager.url` property of the `DataManager` in your application.
 

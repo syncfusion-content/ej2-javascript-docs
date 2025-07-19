@@ -11,16 +11,16 @@ domainurl: ##DomainURL##
 
 # CRUD operations in Syncfusion ##Platform_Name## DataManager
 
-The Syncfusion ##Platform_Name## DataManager enables seamless Create, Read, Update, and Delete (CRUD) operations on data, whether it's stored locally in the browser or remotely on a server. You can manipulate data using the DataManager by calling its built-in methods or binding it to UI components like Grid, Gantt, or Scheduler. These components automatically trigger CRUD actions based on user interactions such as editing a row or deleting a record.
+The Syncfusion ##Platform_Name## DataManager enables seamless Create, Read, Update, and Delete (CRUD) operations on data, whether it is stored locally in the browser or remotely on a server. You can manipulate data using the DataManager by calling its built-in methods and then binding it to UI components such as Grid, Gantt, or Scheduler. These components automatically trigger CRUD actions based on user interactions, such as editing a row or deleting a record.
 
-Each data source type handles CRUD operations differently. To manage this, DataManager uses data adaptors translate DataManager actions into the appropriate format for the target data source.
+Each datasource type handles CRUD operations differently. To manage this, DataManager uses data adaptors translate DataManager actions into the appropriate format for the target datasource.
 
 **Data Adaptors and CRUD Translation:**
 
-| Adaptor Type           | Target Data Source     | Notes                                                                 |
+| Adaptor Type           | Target DataSource     | Notes                                                                 |
 |------------------------|------------------------|-----------------------------------------------------------------------|
 | `JsonAdaptor`          | Local JSON data        | All changes are made in-memory. Useful for offline scenarios.        |
-| `UrlAdaptor`           | RESTful endpoints      | Sends GET/POST/PUT/DELETE requests to remote URLs.                   |
+| `UrlAdaptor`           | RESTful WebAPIs endpoints      | Sends GET/POST/PUT/DELETE requests to remote URLs.                   |
 | `WebApiAdaptor`        | ASP.NET Web API        | Formats requests per Web API standards (e.g., OData-style queries).  |
 | `ODataAdaptor` / V4    | OData services         | Compatible with OData-compliant services and supports query options. |
 | `RemoteSaveAdaptor`    | Remote, batch updates  | Batches multiple CRUD operations into a single request.              |
@@ -28,7 +28,7 @@ Each data source type handles CRUD operations differently. To manage this, DataM
 
 ## Performing CRUD operations
 
-The process of performing CRUD operations varies depending on the data source:
+The process of performing CRUD operations varies depending on the datasource:
 
 * For local data, operations are performed directly on in-memory or client-side collections.
 
@@ -36,7 +36,7 @@ The process of performing CRUD operations varies depending on the data source:
 
 ### Local data
 
-Local Data CRUD Operations allow you to efficiently manage and manipulate data stored in your application without the need for external servers or APIs. This is useful for smaller applications, offline use cases, or situations where you want to quickly manipulate temporary datasets within your application.
+Local data CRUD Operations allow you to efficiently manage and manipulate data stored in your application without the need for external servers or APIs. This is useful for smaller applications, offline use cases, or situations where you want to quickly manipulate temporary datasets within your application.
 
 To perform CRUD operations on local data using Syncfusion ##Platform_Name## DataManager, follow these steps:
 
@@ -50,11 +50,11 @@ To perform CRUD operations on local data using Syncfusion ##Platform_Name## Data
 
 **2. Perform CRUD operations using the following DataManager methods:**
 
-  * [insert](../api/data/dataManager/#insert) : The JSON data passed as a parameter to the insert method that is inserted to the data source of the data manager.
+  * [insert](../api/data/dataManager/#insert) : The JSON data passed as a parameter to the insert method that is inserted to the datasource of the data manager.
 
-  * [update](../api/data/dataManager/#update): Modifies or updates an existing record in the data source using a unique key.
+  * [update](../api/data/dataManager/#update): Modifies or updates an existing record in the datasource using a unique key.
 
-  * [remove](../api/data/dataManager/#remove) : Removes a record from the local data source using a unique key.
+  * [remove](../api/data/dataManager/#remove) : Removes a record from the local datasource using a unique key.
 
 
 {% if page.publishingplatform == "typescript" %}
@@ -89,13 +89,13 @@ To perform CRUD operations on local data using Syncfusion ##Platform_Name## Data
 
 ### Remote data
 
-Remote Data CRUD operations allow you to manage data hosted on a remote server or external API using the Syncfusion ##Platform_Name## DataManager. This is especially useful for modern web applications that interact with centralized databases or cloud services, ensuring seamless synchronization between client and server.
+Remote data CRUD operations allow you to manage data hosted on a remote server or external API using the Syncfusion ##Platform_Name## DataManager. This is especially useful for modern web applications that interact with centralized databases or cloud services, ensuring seamless synchronization between client and server.
 
 To perform CRUD operations on remote data using DataManager, follow these steps:
 
 **1. Initialize the DataManager with remote data:**
 
-  You can bind the DataManager to a remote data source by specifying the service endpoint URL in the `url` property. Additionally, to handle CRUD operations properly, you should specify separate URLs for insert, update, and remove actions using the properties:
+  You can bind the DataManager to a remote datasource by specifying the service endpoint URL in the `url` property. Additionally, to handle CRUD operations properly, you should specify separate URLs for insert, update, and remove actions using the properties:
 
    * `insertUrl`: The endpoint URL to insert (create) new records.
 
@@ -154,11 +154,11 @@ To perform CRUD operations on remote data using DataManager, follow these steps:
 {% endif %}
 
 > * The [update](../api/data/dataManager/#update) method requires the primary key name to locate the record to be modified, while the remove method requires both the primary key name and its value to identify the record to be deleted.
->* In remote data sources, when the primary key field is an identity field, then it is advised to return the created data in the response.
+>* In remote datasources, when the primary key field is an identity field, then it is advised to return the created data in the response.
 
 ## Handling batch operations
 
-The Syncfusion ##Platform_Name## DataManager supports batch operations, allowing multiple CRUD actions such as create, update, and delete to be submitted in a single request. This feature improves performance by minimizing the number of HTTP requests sent to the data source, reducing network overhead and enhancing efficiency.
+The Syncfusion ##Platform_Name## DataManager supports batch operations, allowing multiple CRUD actions such as create, update, and delete to be submitted in a single request. This feature improves performance by minimizing the number of HTTP requests sent to the datasource, reducing network overhead and enhancing efficiency.
 
 Use the [saveChanges](../api/data/dataManager/#savechanges) method to commit all pending changes (insertions, updates, and deletions) in a single call. This eliminates the need for individual requests for each action.
 

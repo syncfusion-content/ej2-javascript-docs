@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Getting started in Syncfusion ##Platform_Name## DataManager
 
-The Syncfusion ##Platform_Name## DataManager enables efficient data management in ##Platform_Name## applications. It seamlessly interacts with various data sources (remote or local) and provides functionalities like sorting, filtering, paging, and CRUD (Create, Read, Update, and Delete) operations, enhancing the data presentation capabilities of your ##Platform_Name## application.
+The Syncfusion ##Platform_Name## DataManager enables efficient data management in ##Platform_Name## applications. It seamlessly interacts with various datasources (remote or local) and provides functionalities like sorting, filtering, paging, and CRUD (Create, Read, Update, and Delete) operations, enhancing the data presentation capabilities of your ##Platform_Name## application.
 
-This section provides a quick overview of how to set up a ##Platform_Name## project and integrate the Syncfusion ##Platform_Name## DataManager. It includes instructions for installation, basic configuration, and integration with both local and remote data sources, along with support for data operations like sorting, filtering, and paging.
+This section provides a quick overview of how to set up a ##Platform_Name## project and integrate the Syncfusion ##Platform_Name## DataManager. It includes instructions for installation, basic configuration, and integration with both local and remote datasources, along with support for data operations like sorting, filtering, and paging.
 
 ## Dependencies
 
@@ -108,9 +108,9 @@ Refer the DataManager CDN links as below
 
 ```
 
-## Connection to a data source
+## Connection to a datasource
 
-The Syncfusion ##Platform_Name## DataManager acts as a centralized data gateway, enabling seamless interaction with both local (in-memory) and remote (server-based) data sources. It abstracts the complexities of data handling by using a consistent API for data retrieval and manipulation across various components.
+The Syncfusion ##Platform_Name## DataManager acts as a centralized data gateway, enabling seamless interaction with both local (in-memory) and remote (server-based) datasources. It abstracts the complexities of data handling by using a consistent API for data retrieval and manipulation across various components.
 
 By integrating with the **Query** class, DataManager can perform essential operations such as:
 
@@ -120,13 +120,15 @@ By integrating with the **Query** class, DataManager can perform essential opera
 
 * **Paging** – Load and display data in chunks for performance.
 
+* **Grouping** – Organize data into logical groups based on a specific field.
+
 * **CRUD** – Create, Read, Update, and Delete records efficiently.
 
-Whether the data resides in a static JSON file, a RESTful Web API, or an OData service, DataManager ensures that components like Grid, DropDownList, or Chart can consume and manipulate the data with minimal code.
+Whether the data resides in a static JSON file, a RESTful WebAPIs, or an OData service, DataManager ensures that components like Grid, DropDownList, or Chart can consume and manipulate the data with minimal code.
 
 ### Binding to JSON data
 
-Binding to a local data source involves connecting your application directly to a dataset stored within the application itself, such as a JSON file. This approach is ideal for small-scale applications where data is static and does not need to be fetched from a server. It simplifies development and improves performance by keeping everything on the client side.
+Binding to a local datasource involves connecting your application directly to a dataset stored within the application itself, such as a JSON file. This approach is ideal for small-scale applications where data is static and does not need to be fetched from a server. It simplifies development and improves performance by keeping everything on the client side.
 
 This can be done in one of two ways:
 
@@ -212,13 +214,11 @@ The following example demonstrates how to bind JSON data using the [executeLocal
 
 ### Binding to ODataV4
 
-OData (Open Data Protocol) is a standardized protocol for querying and updating data using RESTful APIs. It is widely adopted in enterprise applications for enabling structured, scalable access to remote data services.
-
-The Syncfusion ##Platform_Name## DataManager provides built-in support for interacting with OData v3 and v4 services, allowing seamless integration with external data sources.
+OData (Open Data Protocol) is a standardized protocol for querying and updating data using RESTful Web API. It is widely adopted in enterprise applications for enabling structured, scalable access to remote data services. It support for interacting with OData v3 and v4 services, allowing seamless integration with external datasources.
 
 You can bind a remote OData service to the DataManager by setting its `url` property to the service endpoint URL. This configuration enables the DataManager to automatically perform server-side operations such as sorting, filtering, paging, and CRUD by sending appropriate requests to the specified endpoint.
 
-The following sample demonstrates how to bind the remote ODataV4 service using the `executeQuery` method of `DataManager`:
+The following sample demonstrates how to bind the remote ODataV4 service using the [executeQuery](../api/data/dataManager/#executequery) method of [DataManager](../api/data/datamanager/):
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -233,7 +233,7 @@ The following sample demonstrates how to bind the remote ODataV4 service using t
 
 ## Filter
 
-Data filtering is a fundamental operation that enables you to obtain a refined view of data based on specified criteria. This feature is essential for efficiently managing and displaying large datasets.
+Data filtering lets you show only the data that matches specific conditions. It helps simplify large datasets, making it easier for users to find the information they need quickly and efficiently..
 
 You can easily construct filter expressions using the [where](../api/data/query/#where) method of the [Query](../api/data/query/) class. This method allows you to specify filter criteria based on various conditions.
 

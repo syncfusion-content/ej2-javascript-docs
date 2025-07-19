@@ -10,26 +10,24 @@ domainurl: ##DomainURL##
 ---
 
 # Adaptors in Syncfusion ##Platform_Name## DataManager
-
-Different data sources and remote services often follow distinct protocols for handling requests and returning responses. While the DataManager is designed to support a wide range of data services, it cannot natively interpret every possible data format or communication pattern.
+ 
+Different datasources and remote services often follow distinct protocols for handling requests and returning responses. While the DataManager is designed to support a wide range of dataservices, it cannot natively interpret every possible data format or communication pattern.
 
 To tackle this challenge, the DataManager leverages a flexible adaptor system. Adaptors act as intermediaries that translate requests and responses between the DataManager and the data service, ensuring seamless interaction regardless of the backend’s architecture.
-
-Adaptors in Syncfusion ##Platform_Name## DataManager act as communication bridges between the component and various data sources. They format queries and interpret responses appropriately depending on whether the data source is local or remote.
-
+ 
 **Purpose of Adaptors:**
-
-**For local data sources:** An adaptor facilitates the management of data that is already present within the application, such as a list or table maintained in memory. It handles operations like searching, sorting, filtering, and paging directly on this local dataset, eliminating the need for communication with an external server.
-
-For example, imagine you have a contact list saved on your phone. If you want to quickly find all contacts with the name "John" or sort them by last called date, the adaptor handles this immediately on your phone without needing internet or asking a server.
-
-**For remote data sources:** An adaptor serves as a bridge between the application and the server, translating data operations into appropriate request formats. It constructs and sends queries to the server using protocols like REST, OData, or GraphQL. Once the server responds, the adaptor processes and formats the data so the application can understand and use it.
-
+ 
+**For local datasources:** The role of the data adaptor is to query the JavaScript object array based on the [Query](../api/data/query/) object and manipulate it. This means the adaptor facilitates the management of data that is already present within the application, such as a list or table maintained in memory. It handles operations like searching, sorting, filtering, and paging directly on this local dataset, eliminating the need for communication with an external server.
+ 
+For example, imagine you have a contact list saved on your phone. If you want to quickly find all contacts with the name "John" or sort them by last called date, the adaptor handles this immediately on your phone without needing internet access or contacting a server.
+ 
+**For remote datasources:** The role of the data adaptor is to construct and send queries using protocols such as RESTful Web APIs, OData, or GraphQL in a format that the server can understand. It also processes and formats the server’s response data so that the application can interpret and use it effectively. 
+ 
 For example, in an online shopping app where product information is stored on a remote server, when you search for products or browse pages, the adaptor formats your request properly, sends it to the server, and then converts the returned data into a list that the app can display.
 
 **Types of Adaptors:**
 
-Syncfusion provides several built-in adaptors to work with different data sources:
+Here are the list of supported adaptor types to work with different datasources:
 
 | Adaptor          | Description                                |
 |------------------|--------------------------------------------|
@@ -38,13 +36,13 @@ Syncfusion provides several built-in adaptors to work with different data source
 | ODataV4Adaptor   | For OData v4 endpoints.                     |
 | WebApiAdaptor    | Integrates with ASP.NET Web API.            |
 | WebMethodAdaptor | Integrates with web methods (e.g., ASP.NET server methods). |
-| UrlAdaptor       | A generic adaptor for RESTful endpoints.   |
+| UrlAdaptor       | A generic adaptor for RESTful WebAPIs endpoints.  |
 | CustomAdaptor    | Enables fully custom data processing logic.|
 | GraphQLAdaptor   | Used to communicate with GraphQL services.|
 
 ## Json adaptor
 
-The `JsonAdaptor` is a built-in adaptor provided by Syncfusion ##Platform_Name## DataManager module. It is specifically designed to work with local data sources, such as JavaScript arrays or in-memory collections.  It allows you to perform various data operations like filtering, sorting, paging, and grouping directly on the client-side, without the need for server-side requests.
+The `JsonAdaptor` is a built-in adaptor provided by Syncfusion ##Platform_Name## DataManager module. It is specifically designed to work with local datasources, such as JavaScript arrays or in-memory collections.  It allows you to perform various data operations like filtering, sorting, paging, and grouping directly on the client-side, without the need for server-side requests.
 
 If you're building a feature like a product listing or a customer table where data is already available on the client-side (e.g., fetched once from an API or stored locally), the `JsonAdaptor` allows you to perform data operations directly in the browser, eliminating unnecessary server requests and improving performance.
 
@@ -129,7 +127,6 @@ Here is an example that demonstrates how to use the `JsonAdaptor`:
 
 {% previewsample "page.domainurl/code-snippet/data/getting-started-cs1" %}
 {% endif %}
-
 
 ## Client and server API integration
 
@@ -272,7 +269,7 @@ namespace UrlAdaptor.Controllers
     [Route("api/[controller]")]
     public object Post([FromBody] DataManagerRequest DataManagerRequest)
     {
-      // Retrieve data from the data source (e.g., database).
+      // Retrieve data from the datasource (e.g., database).
       IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
 
         // Return the paginated data and the total record count.
@@ -280,7 +277,7 @@ namespace UrlAdaptor.Controllers
       }
 
       /// <summary>
-      /// Retrieves all order data records from the data source.
+      /// Retrieves all order data records from the datasource.
       /// </summary>
       /// <returns>Returns a list of all order records.</returns>
       [HttpGet]
@@ -553,7 +550,7 @@ namespace UrlAdaptor.Controllers
     [Route("api/[controller]")]
     public object Post([FromBody] DataManagerRequest DataManagerRequest)
     {
-      // Retrieve data from the data source (e.g., database).
+      // Retrieve data from the datasource (e.g., database).
       IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
 
         // Return the paginated data and the total record count.
@@ -561,7 +558,7 @@ namespace UrlAdaptor.Controllers
       }
 
       /// <summary>
-      /// Retrieves all order data records from the data source.
+      /// Retrieves all order data records from the datasource.
       /// </summary>
       /// <returns>Returns a list of all order records.</returns>
       [HttpGet]
@@ -605,17 +602,15 @@ namespace UrlAdaptor.Controllers
 
 ## Url adaptor
 
-The `UrlAdaptor` is a built-in adaptor in Syncfusion ##Platform_Name## DataManager module designed to interact with remote web services such as RESTful APIs. It acts as the base class for many other adaptors (like WebApiAdaptor and ODataAdaptor), providing core functionality for HTTP communication.
+The `UrlAdaptor` is a one of the adaptor in Syncfusion ##Platform_Name## DataManager module designed to interact with remote dataservices such as RESTful WebAPIs. It acts as the base class for many other adaptors (like WebApiAdaptor and ODataV4Adaptor), providing core functionality for HTTP communication.
 
-This adaptor is especially useful when your data resides on a server and you need to perform operations like filtering, sorting, paging, or grouping on that remote data.
+This adaptor is especially useful when your data resides on a server and you need to perform operations like filtering, sorting, paging, grouping and CRUD actions on that remote data.
 
 The `UrlAdaptor` expects the server's response to be a JSON object containing two primary properties:
 
-- **result:**
-  An array that contains the actual data records to be processed or displayed.
+  * **result:** An array that contains the actual data records to be processed or displayed.
 
-- **count:**
-  A number representing the total count of records available on the server. This is especially important for enabling accurate pagination.
+  * **count:** A number representing the total count of records available on the server. This is especially important for enabling accurate pagination.
 
 A sample response object should look like this:
 
@@ -648,7 +643,7 @@ const datamanger = new DataManager({
 
 **Step 3: Apply a query using executeQuery:**
 
-Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 10 records from the remote data source in the form of `result` and `count`.
+Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 10 records from the remote datasource in the form of `result` and `count`.
 
 ```ts
 
@@ -680,7 +675,7 @@ const datamanger = new ej.data.DataManager({
 
 **Step 2: Apply a query using executeQuery:**
 
-Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 10 records from the remote data source in the form of `result` and `count`.
+Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 10 records from the remote datasource in the form of `result` and `count`.
 
 ```js
 datamanger.executeQuery(new Query().take(10)).then((e) => {
@@ -743,7 +738,9 @@ This example demonstrates how to use the `UrlAdaptor` and return the data in res
 
 ## OData adaptor
 
-The `ODataAdaptor` in Syncfusion ##Platform_Name## DataManager facilitates seamless integration with [OData](http://www.odata.org/documentation/odata-version-3-0/) services, which are standardized RESTful APIs designed for querying and manipulating data over HTTP. This adaptor streamlines operations such as querying, filtering, sorting, and paging data from OData endpoints, making it especially suitable for enterprise applications that require standardized and interoperable data access.
+The `ODataAdaptor` in Syncfusion ##Platform_Name## DataManager facilitates seamless integration with [OData](http://www.odata.org/documentation/odata-version-3-0/) services, a standardized protocol for creating and consuming data through RESTful WebAPIs. It enables querying and manipulating data over HTTP, making it ideal for enterprise applications that require standardized and interoperable data access.
+
+You can retrieve data from an OData service using the DataManager, and the `ODataAdaptor` helps you interact with the service efficiently. It automatically translates DataManager query operations into OData-compliant HTTP requests, manages response parsing, and maps the server data into the format expected by Syncfusion components ensuring smooth client-server communication.
 
 This adaptor is especially useful when:
 
@@ -753,20 +750,15 @@ This adaptor is especially useful when:
 
 * Performing efficient server-side data operations, including paging, sorting, and filtering.
 
-The `ODataAdaptor` automatically translates DataManager query operations into OData-compliant HTTP requests. It manages response parsing and maps the server data into the format expected by Syncfusion components, enabling smooth client-server communication.
-
 The `ODataAdaptor` expects the server's response to be a JSON object containing two primary properties:
 
-- **result:**
-  An array that contains the actual data records to be processed or displayed.
+  * **result:** An array that contains the actual data records to be processed or displayed.
 
-- **count:**
-  A number representing the total count of records available on the server. This is especially important for enabling accurate pagination.
+  * **count:** A number representing the total count of records available on the server. This is especially important for enabling accurate pagination.
 
 A sample response object should look like this:
 
 ![OData adaptor](./image/odata-adaptor.png)
-
 
 To retrieve data from an OData service using the DataManager, follow these steps:
 
@@ -796,7 +788,7 @@ const datamanger = new DataManager({
 
 **Step 3: Apply a query using executeQuery:**
 
-Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source in the form of `result` and `count`.
+Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote datasource in the form of `result` and `count`.
 
 ```ts
 
@@ -826,7 +818,7 @@ const datamanger = new ej.data.DataManager({
 
 **Step 2: Apply a query using executeQuery:**
 
-Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source in the form of `result` and `count`.
+Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote datasource in the form of `result` and `count`.
 
 ```js
 datamanger.executeQuery(new ej.data.Query().take(8)).then((e) => {
@@ -886,7 +878,7 @@ This example demonstrates how to use the `ODataAdaptor` and return the data in r
 
 ## ODataV4 adaptor
 
-The `ODataV4Adaptor` is a specialized adaptor in Syncfusion ##Platform_Name## DataManager module, designed for interacting with OData v4 services. OData (Open Data Protocol) is a standardized protocol for creating and consuming RESTful APIs. The ODataV4 protocol is an improved version of previous OData protocols, offering enhanced capabilities and better support for modern web standards.
+The `ODataV4Adaptor` is a specialized adaptor in Syncfusion ##Platform_Name## DataManager module, designed for interacting with OData v4 services. OData (Open Data Protocol) is a standardized protocol for creating and consuming RESTful WebAPIs. The ODataV4 protocol is an improved version of previous OData protocols, offering enhanced capabilities and better support for modern web standards.
 
 Syncfusion’s `ODataV4Adaptor` allows the DataManager to communicate with OData V4-compliant services, performing operations like filtering, sorting, paging, and grouping directly via OData query options in the URL. These operations are translated into OData query options and appended to the request URL, allowing the server to process them efficiently. This adaptor is particularly useful when integrating enterprise-grade OData services, such as those provided by Microsoft Dynamics 365, Azure, or SAP.
 
@@ -922,7 +914,7 @@ const datamanger = new DataManager({
 
 **Step 3: Apply a query using executeQuery:**
 
-Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source.
+Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote datasource.
 
 ```ts
 
@@ -953,7 +945,7 @@ const datamanger= new ej.data.DataManager({
 
 **Step 2: Apply a query using executeQuery:**
 
-Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source.
+Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote datasource.
 
 ```js
 datamanger.executeQuery(new ej.data.Query().take(8)).then((e) => {
@@ -1014,9 +1006,9 @@ This example demonstrates how to use the `ODataV4Adaptor` and return data from s
 
 ## Web API adaptor
 
-The `WebApiAdaptor` is a specialized adaptor in Syncfusion ##Platform_Name## DataManager module designed to interact with Web APIs, particularly those that support OData query options. Since the `WebApiAdaptor` is extended from the `ODataAdaptor`, it requires that the remote service endpoint understands and can process OData-formatted queries sent along with the request.
+The `WebApiAdaptor` is a specialized adaptor in Syncfusion ##Platform_Name## DataManager module designed to interact with Web APIs, particularly those that support OData query options. Since the `WebApiAdaptor` is extended from the `ODataAdaptor`, it requires that the remote service endpoint can understand and process OData-formatted queries such as **$top**, **$filter**, and **$orderby** sent along with the request.
 
-Since `WebApiAdaptor` inherits from `ODataAdaptor`, it expects the API endpoint to understand and process OData-formatted queries such as **$top**, **$**, **$filter**, sent along with the request.
+You can use the `WebApiAdaptor` to interact with Web APIs created with OData endpoints. This enables the DataManager to perform server-side operations such as filtering, sorting, paging, and grouping by appending OData-compliant query parameters to the request URL. It is especially useful in enterprise applications that rely on standardized RESTful WebAPIs services for efficient data access and manipulation.
 
 For example, if you are fetching employee records from a Web API that accepts OData queries (like $top, $skip, $filter, etc.), the `WebApiAdaptor` automatically formats and sends these queries and parses the response appropriately.
 
@@ -1024,11 +1016,9 @@ To enable OData query options for your Web API, you need to ensure that the Web 
 
 The `WebApiAdaptor` expects the server's response to be a JSON object containing two primary properties:
 
-- **Items:**
-  An array that contains the actual data records to be displayed or processed.
+  * **Items:** An array that contains the actual data records to be displayed or processed.
 
-- **Count:**
-  A number representing the total count of records available on the server. This is especially important for enabling accurate pagination.
+  * **Count:** A number representing the total count of records available on the server. This is especially important for enabling accurate pagination.
 
 A sample response object should look like this:
 
@@ -1063,7 +1053,7 @@ const datamanger = new DataManager({
 
 **Step 3: Apply a query using executeQuery:**
 
-Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source in the form of `Items` and `Count`.
+Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote datasource in the form of `Items` and `Count`.
 
 ```ts
 
@@ -1093,7 +1083,7 @@ const datamanger = new ej.data.DataManager({
 
 **Step 2: Apply a query using executeQuery:**
 
-Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source in the form of `Items` and `Count`.
+Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote datasource in the form of `Items` and `Count`.
 
 ```js
 datamanger.executeQuery(new ej.data.Query().take(8)).then((e) => {
@@ -1151,17 +1141,15 @@ This example demonstrates how to use the `WebApiAdaptor` and return the data in 
 
 ## WebMethod Adaptor
 
-The `WebMethodAdaptor` is a powerful and flexible adaptor provided by Syncfusion ##Platform_Name## DataManager module, specifically designed to interact with remote services or server-side methods that accept data via HTTP POST requests. Unlike adaptors that communicate with standard REST or OData services, the `WebMethodAdaptor` enables seamless data binding from custom server-side logic such as controller actions, web services, or business-layer functions.
+The `WebMethodAdaptor` is a powerful and flexible adaptor provided by the Syncfusion ##Platform_Name## DataManager module, specifically designed to interact with remote services or server-side methods that accept data via HTTP POST requests. Similar to the `UrlAdaptor`, the `WebMethodAdaptor` sends query parameters encapsulated within an object named `value`. This object includes various DataManager properties such as `requiresCounts`, `skip`, `take`, `sorted`, and `where`, which are essential for performing data operations.
 
 This adaptor is ideal for applications where server-side methods are responsible for data retrieval and business logic processing. It ensures that data operations such as paging, sorting, filtering, and grouping are handled on the server and returned to the client in a structured format.
 
 The `WebMethodAdaptor` expects the server's response to be a JSON object containing two primary properties:
 
-- **result:**
-  An array that contains the actual data records to be displayed or processed.
+  * **result:** An array that contains the actual data records to be displayed or processed.
 
-- **count:**
-  A number representing the total count of records available on the server. This is especially important for enabling accurate pagination.
+  * **count:** A number representing the total count of records available on the server. This is especially important for enabling accurate pagination.
 
 A sample response object should look like this:
 
@@ -1195,7 +1183,7 @@ const datamanger = new DataManager({
 
 **Step 3: Apply a query using executeQuery:**
 
-Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source in the form of `result` and `count`.
+Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote datasource in the form of `result` and `count`.
 
 ```ts
 
@@ -1225,7 +1213,7 @@ const datamanger = new ej.data.DataManager({
 
 **Step 2: Apply a query using executeQuery:**
 
-Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source in the form of `result` and `count`.
+Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote datasource in the form of `result` and `count`.
 
 ```js
 
@@ -1304,28 +1292,52 @@ import { compile } from '@syncfusion/ej2-base';
 ```
 **Step 2: Configure the DataManager:**
 
-Assign your API endpoint to the `url` property and use `RemoteSaveAdaptor` as the `adaptor`.
+Assign your API endpoint to the `json` property and use `RemoteSaveAdaptor` as the `adaptor`.
 
 ```ts
 
-const datamanger = new DataManager({
-  // Use remote server host and port instead of 'xxxx'.
-  url: "https://localhost:xxxx/api/Orders",
-  adaptor: new RemoteSaveAdaptor()
-});
+fetch('https://localhost:xxxx/api/Orders') // Use remote server host and port instead of 'xxxx'.
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("Unable to fetch data. Please check the URL or network connectivity.");
+    }
+      return response.json();
+  })
+  .then(jsonValue => {
+    dataManager = new DataManager({
+      json: jsonValue,
+      adaptor: new RemoteSaveAdaptor()
+   });
+  });
+
 ```
 
 **Step 3: Apply a query using executeQuery:**
 
-Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source.
+Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote datasource.
 
 ```ts
 
-datamanger.executeQuery(new Query().take(8)).then((e: ReturnOption) => {
-  (<Object[]>e.result).forEach((data: Object) => {
-    table.appendChild(compiledFunction(data)[0]);
+fetch('https://localhost:xxxx/api/Orders') // Use remote server host and port instead of 'xxxx'.
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("Unable to fetch data. Please check the URL or network connectivity.");
+    }
+      return response.json();
+  })
+  .then(jsonValue => {
+    dataManager = new DataManager({
+      json: jsonValue,
+      adaptor: new RemoteSaveAdaptor()
+   });
+
+    dataManager.executeQuery(new Query().take(8)).then((e: ReturnOption) => {
+      const data = e.result as Object[]
+      data.forEach((item) => {
+        table.appendChild(compiledFunction(item)[0]);
+      });
+    })
   });
-})
 
 ```
 
@@ -1333,29 +1345,52 @@ datamanger.executeQuery(new Query().take(8)).then((e: ReturnOption) => {
 
 **Step 1: Configure the DataManager:**
 
-Assign your API endpoint to the `url` property and use `RemoteSaveAdaptor` as the `adaptor`.
+Assign your API endpoint to the `json` property and use `RemoteSaveAdaptor` as the `adaptor`.
 
 ```js
 
-const datamanger = new ej.data.DataManager({
-  // Use remote server host and port instead of 'xxxx'.
-  url: "https://localhost:xxxx/api/Orders",
-  adaptor: new ej.data.RemoteSaveAdaptor()
-});
+fetch('https://localhost:xxxx/orders') // Use remote server host and port instead of 'xxxx'.
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("Unable to fetch data. Please check URL or network connectivity.");
+    }
+    return response.json();
+  })
+  .then(jsonValue => {
+    dataManager = new ej.data.DataManager({
+      json: jsonValue, 
+      adaptor: new ej.data.RemoteSaveAdaptor()
+    });
+  });
 
 ```
 
 **Step 2: Apply a query using executeQuery:**
 
-Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote data source.
+Use the [executeQuery](../api/data/dataManager/#executequery) method with a [Query](../api/data/query/) object to retrieve data. This enables you to perform server-side operations such as paging, filtering, or sorting. For example, the following code retrieves the first 8 records from the remote datasource.
 
 ```js
 
-datamanger.executeQuery(new ej.data.Query().take(8)).then((e) => {
-  e.result.forEach((data) => {
-    table.appendChild(compiledFunction(data)[0]);
+fetch('https://localhost:xxxx/orders') // Use remote server host and port instead of 'xxxx'.
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("Unable to fetch data. Please check URL or network connectivity.");
+    }
+    return response.json();
+  })
+  .then(jsonValue => {
+    dataManager = new ej.data.DataManager({
+      json: jsonValue, 
+      adaptor: new ej.data.RemoteSaveAdaptor()
+    });
+
+    dataManager.executeQuery(new Query().take(8)).then((e) => {
+      const data = e.result;
+      data.forEach((item) => {
+        table.appendChild(compiledFunction(item)[0]);
+      });
+    })
   });
-});
 
 ```
 {% endif %}
@@ -1446,9 +1481,9 @@ To achieve this, follow these steps:
 
   * **Define Types:** Create types representing the structure of data retrieved from GraphQL queries. Since the `GraphQLAdaptor` in Syncfusion extends from `UrlAdaptor`, it expects a JSON response with specific properties:
 
-    **result:** An array containing the data entities.
-    **count:** The total number of records.
-    **aggregates:** Contains total aggregate data(optional).
+    * **result:** An array containing the data entities.
+    * **count:** The total number of records.
+    * **aggregates:** Contains total aggregate data(optional).
 
   * **Define Queries:** Define queries to retrieve data from the server. Whether using a normal table or Syncfusion controls, you can define a query to fetch orders, accepting parameters such as a DataManager for advanced data operations.
 
@@ -1471,7 +1506,7 @@ To achieve this, follow these steps:
   {% endhighlight %}
   {% endtabs %}
 
-**5.** Create a resolver file (e.g., **src/resolvers.js**) to handle GraphQL queries and fetch data from your database or data source. Resolver functions are responsible for processing incoming GraphQL requests and returning the appropriate data in the expected `result` and `count` format. To efficiently handle filtering, sorting, searching, and paging, you can use the utilities from the **@syncfusion/ej2-data** package such as **DataUtil**, [Query](../api/data/query/), and **DataManager**.
+**5.** Create a resolver file (e.g., **src/resolvers.js**) to handle GraphQL queries and fetch data from your database or datasource. Resolver functions are responsible for processing incoming GraphQL requests and returning the appropriate data in the expected `result` and `count` format. To efficiently handle filtering, sorting, searching, and paging, you can use the utilities from the **@syncfusion/ej2-data** package such as **DataUtil**, [Query](../api/data/query/), and **DataManager**.
 
   {% tabs %}
   {% highlight js tabtitle="resolvers.js" %}
@@ -1833,7 +1868,7 @@ Create a schema that supports Syncfusion DataManager queries and mutations with 
 
 The `CustomDataAdaptor` in Syncfusion ##Platform_Name## DataManager provides an option to send your own request and manually manage all data operations. It offers complete control over the way data is retrieved, processed, and transmitted between client and server. This adaptor is especially valuable when working with APIs that have non-standard request structures, authentication requirements, or custom business rules.
 
-By extending the `UrlAdaptor`, `CustomDataAdaptor` inherits support for RESTful endpoints while allowing deep customization through method overrides.
+By extending the `UrlAdaptor`, `CustomDataAdaptor` inherits support for RESTful WebAPIs endpoints while allowing deep customization through method overrides.
 
 **Custom request construction:**
 
@@ -2776,7 +2811,7 @@ namespace CustomAdaptor.Models
 
 ### Error handling
 
-Proper error handling is essential when working with remote data sources to ensure a robust user experience and facilitate easier debugging. Syncfusion ##Platform_Name## DataManager provides built-in mechanisms to capture and respond to errors that occur during data operations.
+Proper error handling is essential when working with remote datasources to ensure a robust user experience and facilitate easier debugging. Syncfusion ##Platform_Name## DataManager provides built-in mechanisms to capture and respond to errors that occur during data operations.
 
 When using a `CustomAdaptor`, you must explicitly invoke error callbacks in case of failures. This ensures that the DataManager triggers the appropriate error events on the bound UI components, such as Grid, allowing you to handle errors gracefully in the UI.
 
@@ -2822,9 +2857,9 @@ You can enable this functionality by setting the `enableCache` property to true 
 
 * When `enableCache` is set to **true**, the DataManager generates a unique ID at initialization and uses it to store previously loaded page data in cache memory. This enables efficient data retrieval without redundant server requests.
 
-* The cache is automatically cleared when data actions such as sorting, filtering, grouping, searching, or CRUD operations (Create, Read, Update, Delete) are performed.
+* The cache is automatically cleared when data actions such as sorting, filtering, grouping, searching, or CRUD operations (Create, Read, Update, and Delete) are performed.
 
-* This feature is supported by all adaptors in DataManager, ensuring consistent caching behavior across different data sources.
+* This feature is supported by all adaptors in DataManager, ensuring consistent caching behavior across different datasources.
 
 Consider a customer order management dashboard that displays thousands of orders in a paginated grid with filtering and sorting options. By enabling `enableCache` in the DataManager:
 

@@ -11,7 +11,9 @@ domainurl: ##DomainURL##
 
 # Advanced scenarios in Syncfusion ##Platform_Name## DataManager
 
-## Offline Mode
+This section covers advanced features such as offline mode, load on demand, deferred execution, and error handling in the Syncfusion ##Platform_Name## DataManager.
+
+## Offline mode
 
 Offline mode in Syncfusion ##Platform_Name## DataManager enables full client-side data processing by fetching data from the server once and then performing all subsequent operations (such as filtering, sorting, paging, and grouping) locally, without additional network requests.
 
@@ -56,7 +58,7 @@ The following sample demonstrates how to enable `offline` mode:
 {% previewsample "page.domainurl/code-snippet/data/advanced-cs1" %}
 {% endif %}
 
-## Load On Demand
+## Load on demand
 
 Load on demand is an efficient technique that optimizes performance and reduces bandwidth usage by fetching only a specific subset of data from the server, rather than loading the entire dataset at once. This approach is particularly beneficial for applications dealing with large datasets, ensuring faster load times and improved responsiveness.
 

@@ -35,7 +35,7 @@ The [applyPreRequestMiddlewares](https://ej2.syncfusion.com/javascript/documenta
 
 For example, you can programmatically inject an authentication token or enrich headers based on user context.
 
-If you're building a SaaS admin dashboard where users log in and fetch their own data from a secured REST API. Each user is issued a JWT (JSON Web Token) after authentication. Every request sent by the Syncfusion DataManager must include this token to validate the user’s identity.
+If you're building a SaaS admin dashboard where users log in and fetch their own data from a secured RESTful WebAPIs. Each user is issued a JWT (JSON Web Token) after authentication. Every request sent by the Syncfusion DataManager must include this token to validate the user’s identity.
 
 By using `applyPreRequestMiddlewares`, you can automatically inject the JWT into the request headers as an authorization field. This avoids manual token handling and ensures every [DataManager](../api/data/dataManager/) request remains authenticated.
 
@@ -120,7 +120,7 @@ The [applyPostRequestMiddlewares](https://ej2.syncfusion.com/javascript/document
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/data/supported-adaptors/index.ts %}
 {% endhighlight %}
@@ -215,11 +215,11 @@ The `beforeSend` callback allows you to dynamically modify request headers just 
 
 It accepts an three arguments:
 
-* **DataManager (dm):** Provides the dataSource and adaptor value.
+* **DataManager (dm):** Provides the datasource and adaptor value.
 
 * **Request (request):** Used to send custom headers, such as setting the Authorization header.
 
-* **Settings (settings):** An optional argument that allows additional configurations.
+* **Settings (settings)**: An optional argument that allows additional configurations.
 
 {% if page.publishingplatform == "typescript" %}
 

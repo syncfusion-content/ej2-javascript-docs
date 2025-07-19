@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # Data Binding in Syncfusion ##Platform_Name## DataManager
 
-This section explains how to perform data binding using both local and remote data sources with the Syncfusion DataManager in ##Platform_Name## applications.
+This section explains how to perform data binding using both local and remote datasources with the Syncfusion DataManager in ##Platform_Name## applications.
 
 ## Data Binding
 
-The Syncfusion ##Platform_Name## DataManager enables efficient data management in ##Platform_Name## applications. It supports both RESTful JSON data services binding and local JavaScript object array binding, providing flexibility to handle and manipulate data.
+The Syncfusion ##Platform_Name## DataManager enables efficient data management in ##Platform_Name## applications. It supports both RESTful WebAPIs that return JSON data and local JavaScript object array binding, providing flexibility to handle and manipulate data.
 
-Data binding is the process of connecting UI elements with data sources, allowing the UI to reflect changes in the data automatically. The [DataManager](../api/data/dataManager/) abstracts this process by managing CRUD operations, query building, and communication with local or remote data sources.
+Data binding is the process of connecting UI elements with datasources, allowing the UI to reflect changes in the data automatically. The [DataManager](../api/data/dataManager/) abstracts this process by managing CRUD operations, query building, and communication with local or remote datasources.
 
 For example, consider an HR dashboard that displays a list of employees, including fields such as Name, Department, Role, and Status. Instead of writing custom code to fetch and manage data manually, the developer binds the Grid to a DataManager instance.
 
@@ -86,7 +86,7 @@ The following example demonstrates how to bind JSON data using the `executeLocal
 
 ### Remote data binding
 
-Remote data binding refers to connecting a UI component to data retrieved from an external source such as a REST API, web service, or cloud database. This technique is especially useful in scenarios where large datasets need to be fetched from a server, real-time data updates are required, or data needs to be accessed from an external API or database.
+Remote data binding refers to connecting a UI component to data retrieved from an external source such as a RESTful WebAPIs, web service, or cloud database. This technique is especially useful in scenarios where large datasets need to be fetched from a server, real-time data updates are required, or data needs to be accessed from an external API or database.
 
 For example, consider an online store application where the product catalog is stored on a remote server. Since the product data is frequently updated and can be very large, fetching it directly from the server ensures the latest information is always displayed. Remote data binding allows the application to request only the needed data, such as filtered or paged results, reducing the amount of data transferred and improving performance.
 
@@ -129,7 +129,7 @@ The following example demonstrates bind remote data using the `executeQuery` met
 
 ## Component Binding
 
-The Syncfusion ##Platform_Name## DataManager provides an abstraction for handling data binding across various UI components, including [Grid](../../grid/getting-started), [DropDownList](../../drop-down-list/getting-started), [Charts](../../chart/getting-started), and HTML tables. It supports both local and remote data sources, enabling flexible integration with data services.
+The Syncfusion ##Platform_Name## DataManager provides an abstraction for handling data binding across various UI components, including [Grid](../../grid/getting-started), [DropDownList](../../drop-down-list/getting-started), [Charts](../../chart/getting-started), and HTML tables. It supports both local and remote datasources, enabling flexible integration with data services.
 
 With built-in support for operations such as filtering, sorting, grouping, paging, and CRUD actions, the DataManager streamlines the process of managing data logic in modern web applications.
 
@@ -383,7 +383,7 @@ Here’s an example demonstrating how to bind remote data using the `DataManager
 
 ### Normal HTML table
 
-Binding data to a normal HTML table can be done through both local and remote data sources. This allows for easy and dynamic population of table rows with data. This approach is particularly useful in scenarios such as dashboards, reports, or summary views, where the focus is on quickly rendering a set of records in a tabular format.
+Binding data to a normal HTML table can be done through both local and remote datasources. This allows for easy and dynamic population of table rows with data. This approach is particularly useful in scenarios such as dashboards, reports, or summary views, where the focus is on quickly rendering a set of records in a tabular format.
 
 For example, consider  you are building a simple order management dashboard that displays the latest orders to customer service agents. The dashboard needs to update frequently with new order data, either fetched from a local cache or a remote API, and display it quickly in a clean tabular format. Using a lightweight HTML table with  DataManager helps efficiently manage and render this data dynamically.
 

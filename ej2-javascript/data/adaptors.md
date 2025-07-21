@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
  
 Different datasources and remote services often follow distinct protocols for handling requests and returning responses. While the DataManager is designed to support a wide range of dataservices, it cannot natively interpret every possible data format or communication pattern.
 
-To tackle this challenge, the DataManager leverages a flexible adaptor system. Adaptors act as intermediaries that translate requests and responses between the DataManager and the data service, ensuring seamless interaction regardless of the backend’s architecture.
+To tackle this challenge, the DataManager leverages a flexible adaptor system. Adaptors act as intermediaries that translate requests and responses between the DataManager and the dataservice, ensuring seamless interaction regardless of the backend’s architecture.
  
 **Purpose of Adaptors:**
  
@@ -382,7 +382,7 @@ namespace UrlAdaptor.Controllers
   npm install @syncfusion/ej2-data --save
   ```
 
-  **8: Implement Adaptor:** 
+  **8: Implement adaptor:** 
 
   Create `src/index.html` to add the required HTML structure, and create `src/index.ts` to implement the adapter logic, which has been elaborated based on each adaptor in below topics.
 
@@ -587,7 +587,7 @@ namespace UrlAdaptor.Controllers
 
   Inside the wwwroot folder, create js and css folders to hold script and CSS files, respectively.
 
-  **3: Implement Adaptor:** 
+  **3: Implement adaptor:** 
 
   Create an `index.html` file under the `wwwroot` folder to add the required HTML structure, and create a `index.js` file under the `wwwroot/js` folder to implement the adapter, which has been elaborated based on each adaptor in below topics.
 
@@ -1506,7 +1506,7 @@ To achieve this, follow these steps:
   {% endhighlight %}
   {% endtabs %}
 
-**5.** Create a resolver file (e.g., **src/resolvers.js**) to handle GraphQL queries and fetch data from your database or datasource. Resolver functions are responsible for processing incoming GraphQL requests and returning the appropriate data in the expected `result` and `count` format. To efficiently handle filtering, sorting, searching, and paging, you can use the utilities from the **@syncfusion/ej2-data** package such as **DataUtil**, [Query](../api/data/query/), and **DataManager**.
+**5.** Create a resolver file (e.g., **src/resolvers.js**) to handle GraphQL queries and fetch data from your database or datasource. Resolver functions are responsible for processing incoming GraphQL requests and returning the appropriate data in the expected `result` and `count` format. To efficiently handle filtering, sorting, searching, and paging, you can use the utilities from the **@syncfusion/ej2-data** package such as `DataUtil`, [Query](../api/data/query/), and `DataManager`.
 
   {% tabs %}
   {% highlight js tabtitle="resolvers.js" %}

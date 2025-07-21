@@ -27,7 +27,7 @@ This feature is ideal for:
 
 You can enable this feature by setting the `offline` property to **true** when creating the DataManager instance. When the `offline` property is set to **true**, the DataManager fetches data from the server once and then performs all subsequent operations on the locally stored data, ensuring faster and responsive UI interactions without further server round-trips.
 
-In remote data binding, each call to [executeQuery](../api/data/dataManager/#executequery) sends a request to the server for processing; to avoid repeated server postbacks, you can set the DataManager to load all data during initialization and handle query processing entirely on the client-side. 
+In remote data binding, each call to [executeQuery](../api/data/dataManager/#executequery) sends a request to the server for processing to avoid repeated server postbacks, you can set the DataManager to load all data during initialization and handle query processing entirely on the client-side. 
 
 The following sample demonstrates how to enable `offline` mode:
 
@@ -97,7 +97,7 @@ The following code example demonstrates the implementation of load on demand usi
 
 ## Deferred execution & error handling
 
-Deferred Execution & Error Handling is a technique used in asynchronous programming to manage operations that take time to complete, such as network requests, loading data from a server or file access. 
+Deferred execution & error handling is a technique used in asynchronous programming to manage operations that take time to complete, such as network requests, loading data from a server or file access. 
 
 This approach improves code readability, maintainability, and robustness by separating the logic for successful execution (`then`, `resolve`) from error handling (`catch`, `reject`). It enables chaining of asynchronous tasks and ensures that errors are caught and managed gracefully, preventing unexpected application crashes.
 

@@ -36,7 +36,7 @@ The process of performing CRUD operations varies depending on the datasource:
 
 ### Local data
 
-Local data CRUD Operations allow you to efficiently manage and manipulate data stored in your application without the need for external servers or APIs. This is useful for smaller applications, offline use cases, or situations where you want to quickly manipulate temporary datasets within your application.
+Local data CRUD operations allow you to efficiently manage and manipulate data stored in your application without the need for external servers or APIs. This is useful for smaller applications, offline use cases, or situations where you want to quickly manipulate temporary datasets within your application.
 
 To perform CRUD operations on local data using Syncfusion ##Platform_Name## DataManager, follow these steps:
 
@@ -50,7 +50,7 @@ To perform CRUD operations on local data using Syncfusion ##Platform_Name## Data
 
 **2. Perform CRUD operations using the following DataManager methods:**
 
-  * [insert](../api/data/dataManager/#insert) : The JSON data passed as a parameter to the insert method that is inserted to the datasource of the data manager.
+  * [insert](../api/data/dataManager/#insert) : The JSON data passed as a parameter to the insert method that is inserted to the datasource of the dataManager.
 
   * [update](../api/data/dataManager/#update): Modifies or updates an existing record in the datasource using a unique key.
 

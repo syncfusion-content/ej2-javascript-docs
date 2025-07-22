@@ -1,6 +1,6 @@
 import { DataManager, Query, WebApiAdaptor, ReturnOption } from '@syncfusion/ej2-data';
 
-const tableBody = document.getElementById('datatable')?.querySelector('tbody');
+const tableBody = (document.getElementById('datatable') as HTMLElement).querySelector('tbody');
 if (!tableBody) throw new Error('Table body not found');
 
 const SERVICE_URI = 'https://services.syncfusion.com/js/production/';
@@ -10,6 +10,7 @@ const dataManager = new DataManager({
   adaptor: new WebApiAdaptor()
 });
 
+// Middleware stack function.
 function applyMiddlewareStack(stack: ((result: any) => Promise<any>)[]) {
   return async function (result: any) {
     let modifiedResult = result;
@@ -20,6 +21,7 @@ function applyMiddlewareStack(stack: ((result: any) => Promise<any>)[]) {
   };
 }
 
+// Apply custom post-request middlewares.
 dataManager.applyPostRequestMiddlewares = applyMiddlewareStack([
   async (result) => {
     console.log('Original Data:', result);
@@ -30,7 +32,7 @@ dataManager.applyPostRequestMiddlewares = applyMiddlewareStack([
 
     return result.map((item: any) => ({
       id: item.OrderID,
-      name: item.CustomerID?.toLowerCase(),
+      name: item.CustomerID.toLowerCase(),
       date: item.OrderDate
         ? new Date(item.OrderDate).toLocaleDateString()
         : 'N/A'
@@ -43,6 +45,7 @@ dataManager.applyPostRequestMiddlewares = applyMiddlewareStack([
   }
 ]);
 
+// Execute query and render data.
 dataManager.executeQuery(new Query()).then((e: ReturnOption) => {
   (e.result as any[]).forEach(data => {
     const tr = document.createElement('tr');

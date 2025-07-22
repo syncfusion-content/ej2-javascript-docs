@@ -23,12 +23,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
     <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type ="text/javascript"></script>
+    <style>
+      button {
+        background-color: #6200ee;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 14px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-right: 10px;
+      }
+
+      button:hover {
+        background-color: #3700b3;
+      }
+    </style>
 </head>
 <body style="margin-top: 100px">
     <div id='container'>
-      <button onclick="applyDM()">Apply Query</button>
-      <button onclick="clearDM()">Clear Persistence</button>
-      <div id='Grid'></div>
+      <div style="margin-bottom: 20px;">
+        <button onclick="applyDM()">Apply Query</button>
+        <button onclick="clearDM()">Clear Persistence</button>
+      </div>
       <table id="datatable" class="e-table">
         <thead>
           <tr>

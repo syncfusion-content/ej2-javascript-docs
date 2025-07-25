@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
  
 Different datasources and remote services often follow distinct protocols for handling requests and returning responses. While the DataManager is designed to support a wide range of dataservices, it cannot natively interpret every possible data format or communication pattern.
 
-To tackle this challenge, the DataManager leverages a flexible adaptor system. Adaptors act as intermediaries that translate requests and responses between the DataManager and the dataservice, ensuring seamless interaction regardless of the backend’s architecture.
+To tackle this challenge, the DataManager leverages a flexible adaptor system. Adaptors act as intermediaries that translate requests and responses between the DataManager and the dataservices, ensuring seamless interaction regardless of the backend’s architecture.
  
 **Purpose of Adaptors:**
  
@@ -36,7 +36,7 @@ Here are the list of supported adaptor types to work with different datasources:
 | ODataV4Adaptor   | For OData v4 endpoints.                     |
 | WebApiAdaptor    | Integrates with ASP.NET Web API.            |
 | WebMethodAdaptor | Integrates with web methods (e.g., ASP.NET server methods). |
-| UrlAdaptor       | A generic adaptor for RESTful WebAPIs endpoints.  |
+| UrlAdaptor       | A generic adaptor for RESTful Web APIs endpoints.  |
 | CustomAdaptor    | Enables fully custom data processing logic.|
 | GraphQLAdaptor   | Used to communicate with GraphQL services.|
 
@@ -602,7 +602,7 @@ namespace UrlAdaptor.Controllers
 
 ## Url adaptor
 
-The `UrlAdaptor` is a one of the adaptor in Syncfusion ##Platform_Name## DataManager module designed to interact with remote dataservices such as RESTful WebAPIs. It acts as the base class for many other adaptors (like WebApiAdaptor and ODataV4Adaptor), providing core functionality for HTTP communication.
+The `UrlAdaptor` is a one of the adaptor in Syncfusion ##Platform_Name## DataManager module designed to interact with remote dataservices such as RESTful Web APIs. It acts as the base class for many other adaptors (like WebApiAdaptor and ODataV4Adaptor), providing core functionality for HTTP communication.
 
 This adaptor is especially useful when your data resides on a server and you need to perform operations like filtering, sorting, paging, grouping and CRUD actions on that remote data.
 
@@ -738,7 +738,7 @@ This example demonstrates how to use the `UrlAdaptor` and return the data in res
 
 ## OData adaptor
 
-The `ODataAdaptor` in Syncfusion ##Platform_Name## DataManager facilitates seamless integration with [OData](http://www.odata.org/documentation/odata-version-3-0/) services, a standardized protocol for creating and consuming data through RESTful WebAPIs. It enables querying and manipulating data over HTTP, making it ideal for enterprise applications that require standardized and interoperable data access.
+The `ODataAdaptor` in Syncfusion ##Platform_Name## DataManager facilitates seamless integration with [OData](http://www.odata.org/documentation/odata-version-3-0/) services, a standardized protocol for creating and consuming data through RESTful Web APIs. It enables querying and manipulating data over HTTP, making it ideal for enterprise applications that require standardized and interoperable data access.
 
 You can retrieve data from an OData service using the DataManager, and the `ODataAdaptor` helps you interact with the service efficiently. It automatically translates DataManager query operations into OData-compliant HTTP requests, manages response parsing, and maps the server data into the format expected by Syncfusion components ensuring smooth client-server communication.
 
@@ -878,7 +878,7 @@ This example demonstrates how to use the `ODataAdaptor` and return the data in r
 
 ## ODataV4 adaptor
 
-The `ODataV4Adaptor` is a specialized adaptor in Syncfusion ##Platform_Name## DataManager module, designed for interacting with OData v4 services. OData (Open Data Protocol) is a standardized protocol for creating and consuming RESTful WebAPIs. The ODataV4 protocol is an improved version of previous OData protocols, offering enhanced capabilities and better support for modern web standards.
+The `ODataV4Adaptor` is a specialized adaptor in Syncfusion ##Platform_Name## DataManager module, designed for interacting with OData v4 services. OData (Open Data Protocol) is a standardized protocol for creating and consuming RESTful Web APIs. The ODataV4 protocol is an improved version of previous OData protocols, offering enhanced capabilities and better support for modern web standards.
 
 Syncfusion’s `ODataV4Adaptor` allows the DataManager to communicate with OData V4-compliant services, performing operations like filtering, sorting, paging, and grouping directly via OData query options in the URL. These operations are translated into OData query options and appended to the request URL, allowing the server to process them efficiently. This adaptor is particularly useful when integrating enterprise-grade OData services, such as those provided by Microsoft Dynamics 365, Azure, or SAP.
 
@@ -1008,7 +1008,7 @@ This example demonstrates how to use the `ODataV4Adaptor` and return data from s
 
 The `WebApiAdaptor` is a specialized adaptor in Syncfusion ##Platform_Name## DataManager module designed to interact with Web APIs, particularly those that support OData query options. Since the `WebApiAdaptor` is extended from the `ODataAdaptor`, it requires that the remote service endpoint can understand and process OData-formatted queries such as **$top**, **$filter**, and **$orderby** sent along with the request.
 
-You can use the `WebApiAdaptor` to interact with Web APIs created with OData endpoints. This enables the DataManager to perform server-side operations such as filtering, sorting, paging, and grouping by appending OData-compliant query parameters to the request URL. It is especially useful in enterprise applications that rely on standardized RESTful WebAPIs services for efficient data access and manipulation.
+You can use the `WebApiAdaptor` to interact with Web APIs created with OData endpoints. This enables the DataManager to perform server-side operations such as filtering, sorting, paging, and grouping by appending OData-compliant query parameters to the request URL. It is especially useful in enterprise applications that rely on standardized RESTful Web APIs services for efficient data access and manipulation.
 
 For example, if you are fetching employee records from a Web API that accepts OData queries (like $top, $skip, $filter, etc.), the `WebApiAdaptor` automatically formats and sends these queries and parses the response appropriately.
 
@@ -1868,7 +1868,7 @@ Create a schema that supports Syncfusion DataManager queries and mutations with 
 
 The `CustomDataAdaptor` in Syncfusion ##Platform_Name## DataManager provides an option to send your own request and manually manage all data operations. It offers complete control over the way data is retrieved, processed, and transmitted between client and server. This adaptor is especially valuable when working with APIs that have non-standard request structures, authentication requirements, or custom business rules.
 
-By extending the `UrlAdaptor`, `CustomDataAdaptor` inherits support for RESTful WebAPIs endpoints while allowing deep customization through method overrides.
+By extending the `UrlAdaptor`, `CustomDataAdaptor` inherits support for RESTful Web APIs endpoints while allowing deep customization through method overrides.
 
 **Custom request construction:**
 

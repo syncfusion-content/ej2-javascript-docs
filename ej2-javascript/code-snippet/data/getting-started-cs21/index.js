@@ -1,4 +1,4 @@
-var template = '<tr><td>${OrderID}</td><td>${CustomerID}</td><td>${EmployeeID}</td></tr>';
+var template = '<tr><td>${OrderID}</td><td>${CustomerID}</td><td>${EmployeeID}</td><td>${ShipCountry}</td></tr>';
 
 var compiledFunction = ej.base.compile(template);
 
@@ -8,7 +8,7 @@ let table = (document.getElementById('datatable'));
 
 //Building complex filter criteria using `Predicate`.
 var predicate = new ej.data.Predicate('EmployeeID', 'equal', 3);
-predicate = predicate.or('EmployeeID', 'equal', 2);
+predicate = predicate.and('ShipCountry', 'equal', 'Germany');
 
 new ej.data.DataManager({ url: SERVICE_URI, adaptor: new ej.data.ODataV4Adaptor })
     .executeQuery(new ej.data.Query().where(predicate).take(8))

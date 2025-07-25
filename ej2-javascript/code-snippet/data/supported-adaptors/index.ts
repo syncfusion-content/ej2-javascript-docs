@@ -48,7 +48,6 @@ dataManager.dataManagerFailure = (e: Error) => {
 }
 
 dataManager.executeQuery(new Query()).then((e: ReturnOption) => {
-  //e.result will contain the records.
   (e.result as Object[]).forEach((data: Object) => {
     table.appendChild(compiledFunction(data)[0]);
   });

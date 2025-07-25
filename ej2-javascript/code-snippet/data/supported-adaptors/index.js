@@ -45,8 +45,7 @@ dataManager.dataManagerFailure = (e) => {
 }
 
 dataManager.executeQuery(new ej.data.Query()).then(function (e) {
-  //e.result will contain the records.
-e.result.forEach(function (data) {
-  table.appendChild(compiledFunction(data)[0]);
-});
+  e.result.forEach(function (data) {
+    table.appendChild(compiledFunction(data)[0]);
+  });
 });

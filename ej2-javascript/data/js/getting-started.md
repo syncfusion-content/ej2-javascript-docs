@@ -124,7 +124,7 @@ By integrating with the **Query** class, DataManager can perform essential opera
 
 * **CRUD** – Create, Read, Update, and Delete records efficiently.
 
-Whether the data resides in a static JSON file, a RESTful WebAPIs, or an OData service, DataManager ensures that components like Grid, DropDownList, or Chart can consume and manipulate the data with minimal code.
+Whether the data resides in a static JSON file, a RESTful Web APIs, or an OData service, DataManager ensures that components like Grid, DropDownList, or Chart can consume and manipulate the data with minimal code.
 
 ### Binding to JSON data
 

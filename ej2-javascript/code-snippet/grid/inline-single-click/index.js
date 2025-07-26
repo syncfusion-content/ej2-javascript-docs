@@ -16,17 +16,15 @@ var grid = new ej.grids.Grid({
 });
 grid.appendTo('#Grid');
 
-function load()
-{
+function load() {
   grid.element.addEventListener('mouseup', (e) => {
-    if (e.target.classList.contains("e-rowcell")) {
-    if (grid.isEdit)
-    {
+    if (e.target.classList.contains('e-rowcell')) {
+      if (grid.isEdit) {
         grid.endEdit();
-        var index = parseInt(e.target.getAttribute("Index"));
-        grid.selectRow(index);
-        grid.startEdit();
-    };
+      }
+      let index = parseInt(e.target.getAttribute('Index'));
+      grid.selectRow(index);
+      grid.startEdit(index);
     }
   });
 }

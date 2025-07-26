@@ -21,17 +21,15 @@ let grid: Grid = new Grid({
 });
 grid.appendTo('#Grid');
 
-function load()
-{
+function load() {
   grid.element.addEventListener('mouseup', (e) => {
-    if ((e.target as HTMLElement).classList.contains("e-rowcell")) {
-    if (grid.isEdit)
-    {
+    if ((e.target as HTMLElement).classList.contains('e-rowcell')) {
+      if (grid.isEdit) {
         grid.endEdit();
-        let index = parseInt((e.target as HTMLElement).getAttribute("Index") as string);
-        grid.selectRow(index);
-        grid.startEdit();
-    };
+      }
+      let index = parseInt((e.target as HTMLElement).getAttribute('Index') as string);
+      grid.selectRow(index);
+      grid.startEdit(index);
     }
   });
 }

@@ -49,7 +49,7 @@ function loadData(sortField: string = 'OrderID'): void {
 
 loadData();
 
-document.getElementById('sortBtn')?.addEventListener('click', () => {
+(document.getElementById('sortBtn')as HTMLElement).addEventListener('click', () => {
   const sortField = dropdown.value as string;
   if (sortField) {
     loadData(sortField);

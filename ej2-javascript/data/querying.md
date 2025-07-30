@@ -330,7 +330,7 @@ The following example demonstrates how to apply multi-sorting using the `sortBy`
 
 The Syncfusion ##Platform_Name## DataManager supports dynamic sorting by allowing a field to be specified at runtime. This is particularly useful when the sort criteria need to be updated based on user interaction.
 
-To implement this functionality, a field is selected from a [DropDownList](../../drop-down-list/getting-started), and the `sortBy` method is used to fetch the data in ascending order when a [Button click](../api/button/#click) event is triggered.
+To implement this functionality, a field is selected from a [DropDownList](../../documentation/drop-down-list/getting-started), and the `sortBy` method is used to fetch the data in ascending order when a [Button click](../api/button/#click) event is triggered.
 
 The following example demonstrates how to dynamically sort data in ascending order based on a field selected from a `DropDownList`:
 
@@ -460,7 +460,7 @@ The following example demonstrates how to filter records where the **CustomerID*
 
 ### lessThan
 
-The Syncfusion ##Platform_Name# DataManager supports the `lessThan` operator, which retrieves records where the specified field's value is `lessThan` the given filter value. This is particularly useful for range-based filtering, such as identifying records below a certain threshold, filtering earlier dates, or applying upper-bound conditions in analytics and reporting.
+The Syncfusion ##Platform_Name## DataManager supports the `lessThan` operator, which retrieves records where the specified field's value is `lessThan` the given filter value. This is particularly useful for range-based filtering, such as identifying records below a certain threshold, filtering earlier dates, or applying upper-bound conditions in analytics and reporting.
 
 To achieve this, you can use the `lessThan` operator within the `where` method of the `Query` class.
 

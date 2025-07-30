@@ -7,7 +7,7 @@ let template: string = '<tr><td>${OrderID}</td><td>${CustomerID}</td><td>${Emplo
 
 let compiledFunction: Function = compile(template);
 
-const SERVICE_URI: string =  'https://services.odata.org/V4/Northwind/Northwind.svc/Orders/';
+const SERVICE_URI: string =  'https://services.odata.org/V4/Northwind/Northwind.svc/';
 
 let table: HTMLElement = (<HTMLElement>document.getElementById('datatable'));
 

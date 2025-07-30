@@ -114,13 +114,30 @@ Add the HTML Input element with `e-input` class into your `index.html`.
 
 You can create a TextBox with icon as a group by creating the parent div element with the class `e-input-group` and add the icon element as span with the class `e-input-group-icon`. For detailed information, refer to the [Groups](./groups) section.
 
-```
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+
       <!--element which is going to render the TextBox with date icon-->
-      <div class="e-input-group">
-            <input class="e-input" name='input' type="text" placeholder="Enter Date"/>
-            <span class="e-input-group-icon e-input-popup-date"></span>
+      <div>
+          <input id="textbox" />
       </div>
+
+{% endhighlight %}
+{% highlight html tabtitle="index.js" %}
 ```
+    var iconTextBox = new ej.inputs.TextBox({
+        placeholder: 'Enter Date',
+        created: createHandler,
+    });
+    iconTextBox.appendTo('#textbox');
+
+    function createHandler() {
+       iconTextBox.addIcon('append', 'e-icons e-date-range');
+    }
+
+```
+{% endhighlight %}
+{% endtabs %}
 
 * Now, run the application in the browser using the following command.
 

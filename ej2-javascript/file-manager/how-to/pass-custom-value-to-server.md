@@ -255,7 +255,7 @@ In server-side, `GetImage` method access the **Authorization** header from the i
 [Route("GetImage")]
 public object GetImage([FromBody] FileManagerDirectoryContent args)
 {
-        var header = args.Authorization;
+    var header = args.Authorization;
     return this.operation.GetImage(args.Path, args.Id, false, null, null);
 }
 

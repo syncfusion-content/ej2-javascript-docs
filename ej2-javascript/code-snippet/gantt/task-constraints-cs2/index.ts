@@ -6,6 +6,19 @@ import { constraintData } from 'datasource.ts';
 Gantt.Inject(Edit, Selection, Toolbar, DayMarkers);
 
 
+(window as any).getConstraintText = function (value: number): string {
+    const map: { [key: number]: string } = {
+        0: 'As Soon As Possible',
+        1: 'As Late As Possible',
+        2: 'Must Start On',
+        3: 'Must Finish On',
+        4: 'Start No Earlier Than',
+        5: 'Start No Later Than',
+        6: 'Finish No Earlier Than',
+        7: 'Finish No Later Than'
+    };
+    return map[value];
+};
 let gantt: Gantt = new Gantt({
     dataSource: constraintData,
     taskFields: {
@@ -79,18 +92,3 @@ let gantt: Gantt = new Gantt({
     projectEndDate: new Date('09/01/2025')
 });
 gantt.appendTo('#Gantt');
-
-(window as any).getConstraintText = function (value: number): string {
-    const map: { [key: number]: string } = {
-        0: 'As Soon As Possible',
-        1: 'As Late As Possible',
-        2: 'Must Start On',
-        3: 'Must Finish On',
-        4: 'Start No Earlier Than',
-        5: 'Start No Later Than',
-        6: 'Finish No Earlier Than',
-        7: 'Finish No Later Than'
-    };
-    return map[value];
-};
-

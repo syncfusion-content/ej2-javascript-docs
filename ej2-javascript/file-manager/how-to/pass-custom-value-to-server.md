@@ -229,7 +229,7 @@ var filemanagerInstance = new ej.filemanager.FileManager({
     },
     beforeImageLoad: function (args){
         // Add custom parameter in image URL
-	    args.useImageAsUrl = false;
+        args.useImageAsUrl = false;
         // Check if ajaxSettings are present in the arguments
         if (args.ajaxSettings) {
             (args.ajaxSettings).beforeSend = function (args) {

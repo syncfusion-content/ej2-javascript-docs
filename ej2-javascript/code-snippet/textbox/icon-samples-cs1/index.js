@@ -1,10 +1,10 @@
 ej.base.enableRipple(true);
 
- var iconTextBox = new ej.inputs.TextBox({
-    placeholder: 'Enter Date',
-    created: () => {
-      iconTextBox.addIcon('append', 'e-date-icon');
-      iconTextBox.addIcon('append', 'e-icons e-date-range');
-    },
-  });
+var iconTextBox = new ej.inputs.TextBox({
+    placeholder: 'First Name',
+    floatLabelType: 'Auto',
+    created: function() {
+        iconTextBox.addIcon('append', 'e-icons e-date-range');
+    }
+});
 iconTextBox.appendTo('#textboxicon');

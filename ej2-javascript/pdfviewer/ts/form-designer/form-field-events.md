@@ -15,19 +15,19 @@ The PDF Viewer control provides the support to different Form Field events. The 
 
 | Form Field events | Description |
 |---|---|
-| formFieldAdd | Event trigger when a form field is added.|
-| formFieldClick | Events trigger when the form field is selected.|
-| formFieldDoubleClick | Events trigger when the form field is double-clicked.|
-| formFieldFocusOut | Events trigger when focus out from the form fields.|
-| formFieldMouseLeave | Events trigger when the mouse cursor leaves the form field.|
-| formFieldMouseOver | Events trigger when the mouse cursor is over a form field.|
-| formFieldMove | Events trigger when a form field is moved.|
-| formFieldPropertiesChange | Events trigger when a property of form field is changed.|
-| formFieldRemove | Events trigger when a form field is removed.|
-| formFieldResize | Events trigger when a form field is resized.|
-| formFieldSelect | Events trigger when a form field is selected.|
-| formFieldUnselect | Events trigger when a form field is unselected.|
-| validateFormFields | Events trigger when validation is failed.|
+| [formFieldAdd](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/formFieldAddArgs/) | Event trigger when a form field is added.|
+| [formFieldClick](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/formFieldClickArgs/) | Events trigger when the form field is selected.|
+| [formFieldDoubleClick](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/formFieldDoubleClickArgs/) | Events trigger when the form field is double-clicked.|
+| [formFieldFocusOut](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/formFieldFocusOutEventArgs/) | Events trigger when focus out from the form fields.|
+| [formFieldMouseLeave](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/formFieldMouseLeaveArgs/) | Events trigger when the mouse cursor leaves the form field.|
+| [formFieldMouseOver](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/formFieldMouseoverArgs/) | Events trigger when the mouse cursor is over a form field.|
+| [formFieldMove](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/formFieldMoveArgs/) | Events trigger when a form field is moved.|
+| [formFieldPropertiesChange](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/formFieldPropertiesChangeArgs/) | Events trigger when a property of form field is changed.|
+| [formFieldRemove](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/formFieldRemoveArgs/) | Events trigger when a form field is removed.|
+| [formFieldResize](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/formFieldResizeArgs/) | Events trigger when a form field is resized.|
+| [formFieldSelect](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/formFieldSelectArgs/) | Events trigger when a form field is selected.|
+| [formFieldUnselect](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/formFieldUnselectArgs/) | Events trigger when a form field is unselected.|
+| [validateFormFields](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/validateFormFieldsArgs/) | Events trigger when validation is failed.|
 
 ## formFieldAdd event
 
@@ -186,3 +186,14 @@ The [formFieldUnselect](https://helpej2.syncfusion.com/javascript/documentation/
 {% endtabs %}
 
 ## validateFormFields event
+
+The [validateFormFields](https://helpej2.syncfusion.com/javascript/documentation/api/pdfviewer/validateFormFieldsArgs/) events are triggered when a required form field is left unfilled before downloading the PDF. These events provide the necessary information for validating which form fields are incomplete.
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/pdfviewer/formfieldvalidationevent-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/pdfviewer/formfieldvalidationevent-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}

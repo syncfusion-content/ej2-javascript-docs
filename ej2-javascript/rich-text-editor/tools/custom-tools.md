@@ -24,6 +24,8 @@ To add a custom tool with a tooltip, define it in the [`items`](https://helpej2.
 ```javascript
 {
     tooltipText: 'Insert Symbol',
+    // To disable the custom toolbar items on source code view
+    command: 'Custom',
     undo: true,
     // To disable the custom toolbar items on source code view
     command: 'Custom',

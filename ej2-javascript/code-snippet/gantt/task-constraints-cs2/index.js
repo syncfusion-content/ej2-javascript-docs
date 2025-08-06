@@ -2,19 +2,6 @@ ej.gantt.Gantt.Inject(ej.gantt.Selection,
     ej.gantt.Toolbar,
     ej.gantt.DayMarkers,
     ej.gantt.Edit);
-window.getConstraintText = function (value) {
-    var map = {
-        0: 'As Soon As Possible',
-        1: 'As Late As Possible',
-        2: 'Must Start On',
-        3: 'Must Finish On',
-        4: 'Start No Earlier Than',
-        5: 'Start No Later Than',
-        6: 'Finish No Earlier Than',
-        7: 'Finish No Later Than'
-    };
-    return map[value];
-};
 var ganttChart = new ej.gantt.Gantt({
     dataSource: constraintData,
     taskFields: {
@@ -88,3 +75,20 @@ var ganttChart = new ej.gantt.Gantt({
     projectEndDate: new Date('09/01/2025')
 });
 ganttChart.appendTo('#Gantt');
+window.getConstraintText = function (value) {
+    var map = {
+        0: 'As Soon As Possible',
+        1: 'As Late As Possible',
+        2: 'Must Start On',
+        3: 'Must Finish On',
+        4: 'Start No Earlier Than',
+        5: 'Start No Later Than',
+        6: 'Finish No Earlier Than',
+        7: 'Finish No Later Than'
+    };
+    return map[value];
+};
+
+
+
+

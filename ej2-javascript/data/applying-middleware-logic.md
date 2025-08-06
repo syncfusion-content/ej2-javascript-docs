@@ -105,7 +105,7 @@ For example, in a sales dashboard, the API may return product data with inconsis
 {% previewsample "page.domainurl/code-snippet/data/PostRequestMiddlewares-cs1" %}
 {% endif %}
 
-**Orginal data:**
+**Original data:**
 ![PostRequestMiddlewares-before](./image/post-request-before-data.png)
 **Transformed data:**
 ![PostRequestMiddlewares-after](./image/post-request-middleware.png)
@@ -154,13 +154,13 @@ The [applyPostRequestMiddlewares](../api/data/dataManager/#applypostrequestmiddl
 
 The Syncfusion ##Platform_Name## DataManager allows you to add custom HTTP headers to each request, enabling advanced scenarios such as:
 
-* Authentication (e.g., JWT Bearer tokens).
+* **Authentication** – for example, adding a JWT token to verify the user.
 
-* Multi-tenant access (e.g., tenant ID headers).
+* **Multi-tenant access** – such as including a tenant ID to identify which tenant the request belongs to.
 
-* Feature flags or localization controls.
+* **Feature control or localization** – like enabling specific features or setting language preferences.
 
-* Content-type negotiation or custom logic routing.
+* **Content negotiation or routing** – to handle different content types or direct requests based on custom logic
 
 When making cross-origin requests with custom headers, browsers will automatically issue a `preflight (options)` request to verify server permissions.
 
@@ -168,7 +168,7 @@ When making cross-origin requests with custom headers, browsers will automatical
 
 * Static headers during DataManager initialization.
 
-* Dynamic headers via [applyPostRequestMiddlewares](../api/data/dataManager/#applypostrequestmiddlewares).
+* Dynamic headers via [applyPreRequestMiddlewares](../api/data/dataManager/#applyprerequestmiddlewares).
 
 * Custom adaptor-level injection for advanced control.
 

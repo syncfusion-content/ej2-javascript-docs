@@ -63,4 +63,4 @@ dataManager.executeQuery(new ej.data.Query()).then((e) => {
   });
 }).catch(error => {
   console.error('❌ Data fetch error:', error);
-}); 
+});

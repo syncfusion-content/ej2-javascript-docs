@@ -195,7 +195,7 @@ In Syncfusion's<sup style="font-size:70%">&reg;</sup> Grid control, you have an 
 
 To achieve this, you can utilize the [columns->edit->params](../../api/grid/column/#edit) property. This property allows you to define the edit params for the column within the grid.
 
-When setting a new data source using the edit params, you need to specify a new [query](https://ej2.syncfusion.com/javascript/documentation/api/drop-down-list/#query) property for the DropDownList. The `query` property allows you to define custom queries for data retrieval and filtering.
+When setting a new data source using the edit params, you need to specify a new [query](../../api/drop-down-list/#query)  property for the DropDownList. The `query` property allows you to define custom queries for data retrieval and filtering.
 
 In the below demo, DropDownList is rendered with custom data source for the **ShipCountry** column.
 
@@ -230,7 +230,7 @@ In the below demo, DropDownList is rendered with custom data source for the **Sh
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control provides filtering for the DropDownList within the edit form. This feature allows to select options from a predefined list and easily search for specific items using the built-in filtering feature.  
 
-To enable filtering, set the [allowFiltering](https://ej2.syncfusion.com/javascript/documentation/api/drop-down-list/#allowfiltering) property to **true** within the edit params. This will enable the filtering feature in the DropDownList.
+To enable filtering, set the [allowFiltering](../../api/drop-down-list/#allowfiltering) property to **true** within the edit params. This will enable the filtering feature in the DropDownList.
 
 In the following demo, filtering is enabled for the **ShipCountry** column.
 
@@ -927,7 +927,7 @@ The following example demonstrates how to render a Autocomplete in the **Custome
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs30" %}
 {% endif %}
 
-### Render cascading DropDownList in edit form 
+### Render cascading DropDownList in edit form
 
 The Syncfusion ##Platform_Name## Grid allows you to render the cascading DropDownList within the edit form by using the cell edit template feature.This feature is especially useful when you need to establish a hierarchy of options, such as choosing a country and then selecting a state based on the chosen country.
 
@@ -937,7 +937,7 @@ In the below demo, cascading DropDownList rendered for **ShipCountry** and **Shi
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 
 {% include code-snippet/grid/grid-cs34/index.ts %}

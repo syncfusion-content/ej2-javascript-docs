@@ -205,6 +205,8 @@ if (changeContent) {
 {% endhighlight %}
 {% endtabs %}
 
+N> Please note that the current version of the PDF Viewer does not offer the functionality to edit existing text within a PDF document. However, you can add new free text annotations and modify existing free text annotations within the document.
+
 ## Editing the properties of free text annotation
 
 The font family, font size, font styles, font color, text alignment, fill color, the border stroke color, border thickness, and opacity of the free text annotation can be edited using the Font Family tool, Font Size tool, Font Color tool, Text Align tool, Font Style tool  Edit Color tool, Edit Stroke Color tool, Edit Thickness tool, and Edit Opacity tool in the annotation toolbar.

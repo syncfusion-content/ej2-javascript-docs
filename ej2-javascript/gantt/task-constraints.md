@@ -87,12 +87,12 @@ This task is constrained to must start on July 1, 2025.
 {% include code-snippet/gantt/task-constraints-cs1/index.ts %}
 {% endhighlight %}
 
-{% highlight html tabtitle="index.html" %}
+{% highlight ts tabtitle="index.html" %}
 {% include code-snippet/gantt/task-constraints-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/gantt/task-constraints-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/task-constraints-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -159,12 +159,12 @@ In the following example, we have disabled the MustStartOn violation popup by se
 {% include code-snippet/gantt/task-constraints-cs2/index.ts %}
 {% endhighlight %}
 
-{% highlight html tabtitle="index.html" %}
+{% highlight ts tabtitle="index.html" %}
 {% include code-snippet/gantt/task-constraints-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/gantt/task-constraints-cs2" %}
+{% previewsample "page.domainurl/samples/gantt/task-constraints-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 

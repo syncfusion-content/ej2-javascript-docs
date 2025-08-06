@@ -22,6 +22,6 @@ let editor: RichTextEditor = new RichTextEditor({
           '|','FontName','FontSize','FontColor','BackgroundColor','|','LowerCase','UpperCase','|','Formats',
           'Alignments','Blockquote','|','NumberFormatList','BulletFormatList','|','Outdent','Indent','|',
           'CreateLink','Image','CreateTable','|','ClearFormat','SourceCode',
-        ],
+          ],
     }});
 editor.appendTo('#editor');

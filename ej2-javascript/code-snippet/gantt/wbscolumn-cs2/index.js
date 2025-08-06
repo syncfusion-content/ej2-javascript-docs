@@ -4,7 +4,6 @@ ej.gantt.Gantt.Inject(ej.gantt.Selection,
     ej.gantt.Edit,
     ej.gantt.Filter,
     ej.gantt.Sort,
-    ej.gantt.RowDD,
     ej.gantt.ContextMenu);
 
 
@@ -14,7 +13,6 @@ var ganttChart = new ej.gantt.Gantt({
     allowSorting: true,
     enableContextMenu: true,
     enableWBS: true,
-    allowRowDragAndDrop: true,
     dataBound: function () {
         if (isRowDropped) {
             ganttChart.enableAutoWbsUpdate = false;
@@ -102,3 +100,4 @@ var ganttChart = new ej.gantt.Gantt({
     projectEndDate: new Date('05/30/2024'),
 });
 ganttChart.appendTo('#Gantt');
+

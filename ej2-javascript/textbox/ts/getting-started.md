@@ -143,8 +143,8 @@ You can create a TextBox with icon as a group by creating the parent div element
 
 
     let iconTextBox: TextBox = new TextBox({
-        placeholder: 'Enter Date',
-        created: createHandler,
+    placeholder: 'Enter Date',
+    created: createHandler,
     });
     iconTextBox.appendTo('#textbox');
 

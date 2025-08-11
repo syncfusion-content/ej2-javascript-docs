@@ -27,8 +27,6 @@ To add a custom tool with a tooltip, define it in the [`items`](https://helpej2.
     // To disable the custom toolbar items on source code view
     command: 'Custom',
     undo: true,
-    // To disable the custom toolbar items on source code view
-    command: 'Custom',
     click: function() {
     },
     template: '<button class="e-tbar-btn e-btn" tabindex="-1" id="custom_tbar" style="width:100%"><div class="e-tbar-btn-text" style="font-weight: 500;"> &#937;</div></button>'
@@ -68,4 +66,4 @@ To add a custom tool with a tooltip, define it in the [`items`](https://helpej2.
 
 You can use the [enableToolbarItem](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#enabletoolbaritem) and [disableToolbarItem](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#disabletoolbaritem) methods to control the state of toolbar items. This methods takes a single item or an array of [items](#available-toolbar-items) as parameter.
 
-> You can add the command name `Custom` to disable the custom toolbar items on source code view and other quick toolbar operations.
+> You can add the command name `Custom` to disable the custom toolbar items on source code view and other quicktoolbar operations.

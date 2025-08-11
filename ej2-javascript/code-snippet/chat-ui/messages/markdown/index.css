@@ -13,4 +13,5 @@
 
 .e-chat-ui .e-message-content p {
     margin: 0;
+    display: inline-block;
 }

@@ -19,11 +19,11 @@ Member sorting can be enabled by setting the [`enableSorting`](https://ej2.syncf
 
 > By default the [`enableSorting`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#enablesorting) property in [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/) set as **true**. If we set it as **false**, then the field members arrange in pivot table as its data source order. And, the sort icons in grouping bar and field list buttons will be removed.
 
-![Member sorting icon in field list](images/sorting_fl.png)
+![output](images/sorting_fl.png "Member sorting icon in field list")
 <br/>
-![Member sorting icon in grouping bar](images/sorting_gb.png)
+![output](images/sorting_gb.png "Member sorting icon in grouping bar")
 <br/>
-![Resultant pivot table on member sort](images/sorting_grid.png)
+![output](images/sorting_grid.png "Resultant pivot table on member sort")
 
 Member sorting can also be configured using the [`sortSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/sort/) through code behind, during initial rendering. The settings required to sort are:
 
@@ -87,7 +87,7 @@ The value sorting can also be configured using the [`valueSortSettings`](https:/
 * [`headerDelimiter`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/valueSortSettings/#headerdelimiter): It allows to set the delimiters string to separate the header text between levels.
 * [`sortOrder`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/valueSortSettings/#sortorder): It allows to set the sort direction of the value field.
 
-> Value fields are set to the column axis by default. In such cases, the value sorting applied will have an effect on the column alone. You need to place the value fields in the row axis to do so in row wise. For more information, please [`refer here`](https://ej2.syncfusion.com/javascript/documentation/pivotview/data-binding#values-in-row-axis).
+> Value fields are set to the column axis by default. In such cases, the value sorting applied will have an effect on the column alone. You need to place the value fields in the row axis to do so in row wise. For more information, please [`refer here`](https://ej2.syncfusion.com/javascript/documentation/pivotview/data-binding/#values-in-row-axis).
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -99,29 +99,6 @@ The value sorting can also be configured using the [`valueSortSettings`](https:/
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs251" %}
-
-### Multiple Axis Sorting
-
-You can apply value sorting to both row and column axes simultaneously for more dynamic and precise data analysis. The following settings are used to configure sorting:
-
-* [`columnHeaderText`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/valueSortSettingsModel/#columnHeaderText): Specifies the column header hierarchy for value sorting. Header levels are defined from Level 1 to N using a delimiter for clarity.
-* [`headerDelimiter`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/valueSortSettingsModel/#headerdelimiter): It allows to set the delimiters string to separate the header text between levels.
-* [`columnSortOrder`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/valueSortSettingsModel/#columnSortOrder): Determines the sorting direction for the specified column header.
-* [`rowHeaderText`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/valueSortSettingsModel/#rowHeaderText): Defines the specific row header for which the value sorting should be applied.
-* [`rowSortOrder`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/valueSortSettingsModel/#rowSortOrder): Determines the sorting direction for the specified row header.
-
->Note: This feature is applicable only to relational data sources.
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs504/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs504/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs504" %}
 
 ## Event
 
@@ -160,8 +137,8 @@ The event [`actionBegin`](https://ej2.syncfusion.com/javascript/documentation/ap
 
 | Action | Action Name|
 |------|-------------|
-| [`Sort field`](./sorting#member-sorting)| Sort field |
-| [`Value sort icon`](./sorting#value-sorting)| Sort value|
+| [`Sort field`](./sorting/#member-sorting)| Sort field |
+| [`Value sort icon`](./sorting/#value-sorting)| Sort value|
 
 * `fieldInfo`: It holds the selected field information.
 
@@ -192,8 +169,8 @@ The event [`actionComplete`](https://ej2.syncfusion.com/javascript/documentation
 
 | Action | Action Name|
 |------|-------------|
-| [`Sort field`](./sorting#member-sorting)| Field sorted|
-| [`Value sort icon`](./sorting#value-sorting)| Value sorted|
+| [`Sort field`](./sorting/#member-sorting)| Field sorted|
+| [`Value sort icon`](./sorting/#value-sorting)| Value sorted|
 
 * `fieldInfo`: It holds the selected field information.
 
@@ -220,8 +197,8 @@ The event [`actionFailure`](https://ej2.syncfusion.com/javascript/documentation/
 
 | Action | Action Name|
 |------|-------------|
-| [`Sort field`](./sorting#member-sorting)| Sort field |
-| [`Value sort icon`](./sorting#value-sorting)| Sort value|
+| [`Sort field`](./sorting/#member-sorting)| Sort field |
+| [`Value sort icon`](./sorting/#value-sorting)| Sort value|
 
 * `errorInfo`: It holds the error information of the current UI action.
 

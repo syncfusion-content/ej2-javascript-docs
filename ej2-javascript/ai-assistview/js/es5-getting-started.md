@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## AI AssistView control | Syncfusion
+title: ES5 getting started with ##Platform_Name## AI AssistView | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: AI AssistView
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## AI AssistView control
+# ES5 getting started in ##Platform_Name## AI AssistView control
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
@@ -185,7 +185,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 ## Configure suggestions and responses
 
-You can use the [promptSuggestions](../api/ai-assistview#promptsuggestions) property to add prompt suggestions and the [promptRequest](../api/ai-assistview#promptrequest) event to add responses when the prompt matches the specified prompts data otherwise, the default response will be displayed.
+You can use the [promptSuggestions](../api/ai-assistview/#promptsuggestions) property to add prompt suggestions and the [promptRequest](../api/ai-assistview/#promptrequest) event to add responses when the prompt matches the specified prompts data otherwise, the default response will be displayed.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

@@ -187,7 +187,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 ## Configure messages and user
 
-You can use the [messages](../api/chat-ui#messages) property to add messages and the [user](../api/chat-ui#user) property to configure the current user for the chat.
+You can use the [messages](../api/chat-ui/#messages) property to add messages and the [user](../api/chat-ui/#user) property to configure the current user for the chat.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

@@ -45,7 +45,7 @@ var chatUI = new ej.interactivechat.ChatUI({
     var messageText = suggestion ? suggestion.markdownText : args.message.text;
 
     var newMessage = {
-      text: marked.parse(messageText),
+      text: DOMPurify.sanitize(marked.parse(messageText)),
       author: currentUserModel,
       timeStamp: new Date()
     };

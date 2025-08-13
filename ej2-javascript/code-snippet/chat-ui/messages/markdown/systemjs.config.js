@@ -24,7 +24,8 @@ System.config({
         "@syncfusion/ej2-splitbuttons": "syncfusion:ej2-splitbuttons/dist/ej2-splitbuttons.umd.min.js",
         "@syncfusion/ej2-lists": "syncfusion:ej2-lists/dist/ej2-lists.umd.min.js",
         "@syncfusion/ej2-navigations": "syncfusion:ej2-navigations/dist/ej2-navigations.umd.min.js",
-        "marked": "https://cdn.jsdelivr.net/npm/marked/marked.min.js"
+        "marked": "https://cdn.jsdelivr.net/npm/marked/marked.min.js",
+        "DOMPurify": "https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.0/purify.min.js"
     }
 });
 

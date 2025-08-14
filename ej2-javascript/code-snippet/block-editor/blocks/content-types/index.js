@@ -1,6 +1,7 @@
 let blocksData = [
     {
-        type: 'Heading2',
+        type: 'Heading',
+        props: {level: 2},
         content: [
             {
                 type: ej.blockeditor.ContentType.Text,
@@ -18,7 +19,7 @@ let blocksData = [
             {
                 type: ej.blockeditor.ContentType.Link,
                 content: 'hyperlinks',
-                linkSettings: {
+                props: {
                     url: 'https://ej2.syncfusion.com/documentation/',
                     openInNewWindow: true
                 }
@@ -33,7 +34,7 @@ let blocksData = [
             },
             {
                 type: ej.blockeditor.ContentType.Text,
-                content: '\nUser mentions like '
+                content: '\nUser mentions like'
             },
             {
                 type: ej.blockeditor.ContentType.Mention,
@@ -41,7 +42,7 @@ let blocksData = [
             },
             {
                 type: ej.blockeditor.ContentType.Text,
-                content: ', and labels such as '
+                content: ', and labels such as'
             },
             {
                 type: ej.blockeditor.ContentType.Label,

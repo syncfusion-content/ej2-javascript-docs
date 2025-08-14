@@ -1,6 +1,7 @@
 let blocksData = [
     {
         type: 'Callout',
+        props:{
         children: [{ 
             id: 'callout-content',
             type: 'Paragraph',
@@ -10,6 +11,7 @@ let blocksData = [
                 content: 'Important information: This is a callout block used to highlight important content.'
             }]
         }]
+    }
     }
 ];
 

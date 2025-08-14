@@ -2,13 +2,14 @@ import { BlockEditor, BlockModel, ContentType } from "@syncfusion/ej2-blockedito
 
 const blocksData: BlockModel[] = [
     {
-        type: 'ToggleHeading1',
+        type: 'CollapsibleParagraph',
         content: [
             {
                 type: ContentType.Text,
                 content: 'Collapsible Section'
             }
         ],
+        props:{
         isExpanded: true,
         children: [
             {
@@ -21,15 +22,17 @@ const blocksData: BlockModel[] = [
                 ]
             }
         ]
+    }
     },
     {
-        type: 'ToggleParagraph',
+        type: 'CollapsibleParagraph',
         content: [
             {
                 type: ContentType.Text,
                 content: 'Toggle paragraph section'
             }
         ],
+        props:{
         isExpanded: false,
         children: [
             {
@@ -42,6 +45,7 @@ const blocksData: BlockModel[] = [
                 ]
             }
         ]
+    }
     }
 ];
 

@@ -2,9 +2,10 @@ import { ChatUI, UserModel, MessageModel} from '@syncfusion/ej2-interactive-chat
 import { enableRipple } from '@syncfusion/ej2-base';
 import marked = require('marked');
 
+
 // Enable ripple effect
 enableRipple(true);
-
+declare var DOMPurify: any;
 // Define user models
 let currentUserModel: UserModel = {
   id: 'user1',
@@ -61,8 +62,9 @@ let chatUI: ChatUI = new ChatUI({
     const messageText = suggestion
       ? suggestion.markdownText
       : args.message.text;
+    const parsedText = DOMPurify.sanitize(marked.parse(messageText));
     const newMessage: MessageModel = {
-      text: marked.parse(messageText),
+      text: parsedText,
       author: currentUserModel,
       timeStamp: new Date(),
     };

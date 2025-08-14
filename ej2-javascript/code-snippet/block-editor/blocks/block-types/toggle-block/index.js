@@ -1,12 +1,13 @@
 let blocksData = [
     {
-        type: 'ToggleHeading1',
+        type: 'CollapsibleParagraph',
         content: [
             {
                 type: ej.blockeditor.ContentType.Text,
                 content: 'Collapsible Section'
             }
         ],
+        props:{
         isExpanded: true,
         children: [
             {
@@ -19,15 +20,17 @@ let blocksData = [
                 ]
             }
         ]
+    }
     },
     {
-        type: 'ToggleParagraph',
+        type: 'CollapsibleParagraph',
         content: [
             {
                 type: ej.blockeditor.ContentType.Text,
                 content: 'Toggle paragraph section'
             }
         ],
+        props:{
         isExpanded: false,
         children: [
             {
@@ -40,6 +43,7 @@ let blocksData = [
                 ]
             }
         ]
+    }
     }
 ];
 

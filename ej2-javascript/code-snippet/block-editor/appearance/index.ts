@@ -3,7 +3,8 @@ import { BlockEditor, ContentType } from '@syncfusion/ej2-blockeditor';
 const blockData = [
     {
         id: 'title-block',
-        type: 'Heading1',
+        type: 'Heading',
+        props: { level: 1 },
         content: [
             {
                 type: ContentType.Text,
@@ -23,7 +24,8 @@ const blockData = [
     },
     {
         id: 'features-heading',
-        type: 'Heading2',
+        type: 'Heading',
+        props: { level: 2 },
         content: [
             {
                 type: ContentType.Text,

@@ -2,7 +2,7 @@ import { BlockEditor, BlockModel, ContentType } from "@syncfusion/ej2-blockedito
 
 const blocksData: BlockModel[] = [
     {
-        type: 'CollapsibleParagraph',
+        type: 'CollapsibleHeading',
         content: [
             {
                 type: ContentType.Text,
@@ -10,6 +10,7 @@ const blocksData: BlockModel[] = [
             }
         ],
         props:{
+        level: 1,
         isExpanded: true,
         children: [
             {

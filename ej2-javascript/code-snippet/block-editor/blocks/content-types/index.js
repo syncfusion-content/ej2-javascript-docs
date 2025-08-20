@@ -46,7 +46,7 @@ let blocksData = [
             },
             {
                 type: ej.blockeditor.ContentType.Label,
-                id: 'label1'
+                props: {lableId: 'label1'}
             },
             {
                 type: ej.blockeditor.ContentType.Text,

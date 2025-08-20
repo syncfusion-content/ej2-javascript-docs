@@ -48,7 +48,7 @@ const blocksData: BlockModel[] = [
             },
             {
                 type: ContentType.Label,
-                id: 'label1'
+                props: {lableId: 'label1'}
             },
             {
                 type: ContentType.Text,

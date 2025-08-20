@@ -1,6 +1,6 @@
 let blocksData = [
     {
-        type: 'CollapsibleParagraph',
+        type: 'CollapsibleHeading',
         content: [
             {
                 type: ej.blockeditor.ContentType.Text,
@@ -8,6 +8,7 @@ let blocksData = [
             }
         ],
         props:{
+        level: 1,
         isExpanded: true,
         children: [
             {

@@ -121,8 +121,6 @@ You can use the [mentionSelect](../api/chat-ui/messageModel/#mentionSelect/) eve
 {% include code-snippet/chat-ui/mention/mention-select/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/chat-ui/mention/mention-select" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -134,6 +132,4 @@ You can use the [mentionSelect](../api/chat-ui/messageModel/#mentionSelect/) eve
 {% include code-snippet/chat-ui/mention/mention-select/index.html %}
 {% endhighlight %}
 {% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/chat-ui/mention/mention-select" %}
 {% endif %}

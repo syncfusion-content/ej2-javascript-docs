@@ -13,23 +13,25 @@ let michaleUserModel = {
 let chatMessages = [
     {
         author: currentUserModel,
-        text: "Hi Michale, are we on track for the deadline?"
+        text: "Want to get coffee tomorrow?"
     },
     {
         author: michaleUserModel,
-        text: "Yes, the design phase is complete."
+        text: "Sure! What time?"
     },
     {
         author: currentUserModel,
-        text: "I’ll review it and send feedback by today."
+        text: "{0} How about 10 AM?",
+        mentionUsers: [michaleUserModel]
     }
 ];
 
 // Initializes the Chat UI control
 let chatUI = new ej.interactivechat.ChatUI({
+    headerText: "TeamSync Professionals",
     messages: chatMessages,
     mentionUsers: [ currentUserModel, michaleUserModel ],
-    mentionTriggerChar: '@',
+    mentionTriggerChar: '/',
     user: currentUserModel
 });
 

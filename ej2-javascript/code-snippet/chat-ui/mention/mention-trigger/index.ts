@@ -16,23 +16,25 @@ let michaleUserModel: UserModel = {
 let chatMessages: MessageModel[] = [
     {
         author: currentUserModel,
-        text: "Hi Michale, are we on track for the deadline?"
+        text: "Want to get coffee tomorrow?"
     },
     {
         author: michaleUserModel,
-        text: "Yes, the design phase is complete."
+        text: "Sure! What time?"
     },
     {
         author: currentUserModel,
-        text: "I’ll review it and send feedback by today."
+        text: "{0} How about 10 AM?",
+        mentionUsers: [michaleUserModel]
     }
 ];
 
 // Initializes the Chat UI control
 let chatUI: ChatUI = new ChatUI({
+    headerText: "TeamSync Professionals",
     messages: chatMessages,
-    mentionUsers: [ currentUserModel, { user: 'Reena', id: 'custom-user' } ],
-    mentionTriggerChar: '@',
+    mentionTriggerChar: '/',
+    mentionUsers: [ currentUserModel, michaleUserModel ],
     user: currentUserModel
 });
 

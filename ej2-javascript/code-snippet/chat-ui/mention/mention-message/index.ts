@@ -21,7 +21,8 @@ let chatMessages: MessageModel[] = [
     },
     {
         author: michaleUserModel,
-        text: "Yes, the design phase is complete."
+        text: "Yes {0}, the design phase is complete.",
+        mentionUsers: [currentUserModel]
     },
     {
         author: currentUserModel,
@@ -31,6 +32,7 @@ let chatMessages: MessageModel[] = [
 
 // Initializes the Chat UI control
 let chatUI: ChatUI = new ChatUI({
+    headerText: "TeamSync Professionals",
     messages: chatMessages,
     user: currentUserModel
 });

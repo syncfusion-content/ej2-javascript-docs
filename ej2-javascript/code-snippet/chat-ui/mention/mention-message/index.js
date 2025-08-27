@@ -18,7 +18,8 @@ let chatMessages = [
     },
     {
         author: michaleUserModel,
-        text: "Yes, the design phase is complete."
+        text: "Yes{0}, the design phase is complete.",
+        mentionUsers: [currentUserModel]
     },
     {
         author: currentUserModel,
@@ -28,6 +29,7 @@ let chatMessages = [
 
 // Initializes the Chat UI control
 let chatUI = new ej.interactivechat.ChatUI({
+    headerText: "TeamSync Professionals",
     messages: chatMessages,
     user: currentUserModel
 });

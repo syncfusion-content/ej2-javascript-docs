@@ -191,6 +191,70 @@ In the following example, the backlog column is collapsed on initialization of K
 {% previewsample "page.domainurl/code-snippet/kanban/expanded-cs1" %}
 {% endif %}
 
+## Drag and Drop
+
+The Kanban component allows dynamic column reordering through drag-and-drop interactions. To enable this, set the [`allowColumnDragAndDrop`](https://ej2.syncfusion.com/documentation/api/kanban/#allowColumnDragAndDrop) property to true. Once enabled, users can rearrange columns by dragging a column header to a new position, with visual feedback highlighting potential drop locations.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/kanban/column-drag-and-drop-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/kanban/column-drag-and-drop-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/kanban/column-drag-and-drop-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/kanban/column-drag-and-drop-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/kanban/column-drag-and-drop-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/kanban/column-drag-and-drop-cs1" %}
+{% endif %}
+
+## Disabling Drag and drop
+
+The Kanban component provides multiple event-based options to prevent column reordering. You can cancel a column drag operation by setting args.cancel = true in the `columnDragStart` event. The same cancellation capability is also available in the `columnDrag` and `columnDrop` events, allowing you to intercept the operation at different stages.
+
+In the following sample, column drag-and-drop is disabled for the "To do" Kanban column.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/kanban/column-drag-and-drop-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/kanban/column-drag-and-drop-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/kanban/column-drag-and-drop-cs2" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/kanban/column-drag-and-drop-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/kanban/column-drag-and-drop-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/kanban/column-drag-and-drop-cs2" %}
+{% endif %}
+
 ## Stacked headers
 
 Stacked headers are the additional headers to column header that will group the similar columns.

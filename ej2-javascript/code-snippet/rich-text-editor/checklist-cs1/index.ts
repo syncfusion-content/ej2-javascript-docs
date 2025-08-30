@@ -3,7 +3,8 @@ RichTextEditor.Inject(Toolbar, Image, Link, HtmlEditor, QuickToolbar, Table, Cod
 
 let editor: RichTextEditor = new RichTextEditor({
         toolbarSettings: {
-                items: ['Checklist']
+                items: ['Checklist', 'Bold', 'Italic', 'StrikeThrough', '|', 'Formats', 'Alignments', 'Blockquote', 'OrderedList',
+                        'UnorderedList', '|', 'CreateLink', 'Image', '|', 'SourceCode', 'Undo', 'Redo']
         }
 });
 editor.appendTo('#editor');

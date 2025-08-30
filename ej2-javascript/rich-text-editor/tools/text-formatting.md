@@ -233,7 +233,6 @@ You can embed interactive task lists directly within the Rich Text Editor. Hereâ
 #### Configuring Checklist
 
 To enable the Checklist feature in your editor, add the `Checklist` toolbar item to the `toolbarSettings.items` property. This feature supports customizable behavior and can be easily integrated into your Rich Text Editor toolbar for quick access.
-Hereâ€™s an example of how you can configure the Checklist in your Rich Text Editor:
 
 Below is an example of how to configure the Checklist in the Rich Text Editor:
 

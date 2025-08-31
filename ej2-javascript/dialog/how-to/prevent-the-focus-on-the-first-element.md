@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Prevent the focus on the first element in ##Platform_Name## Dialog control | Syncfusion
+title: Prevent the focus on first element | Syncfusion
 description: Learn here all about Prevent the focus on the first element in Syncfusion ##Platform_Name## Dialog control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Prevent the focus on the first element 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Prevent the focus on the first element in ##Platform_Name## Dialog control
+# Prevent focus on first element in ##Platform_Name## Dialog control
 
 By default, the dialog focuses on the first elements of the content area which can be active and focusable. You can prevent this default focusing behavior using the [open](../../api/dialog/#open) event and by enabling the `preventFocus` argument.
 
@@ -41,3 +41,7 @@ Bind the open event and enable the preventFocus argument within an event like th
 
 {% previewsample "page.domainurl/code-snippet/dialog/dlg-focus-cs1" %}
 {% endif %}
+
+## See Also
+
+* [Prevent the focus to the previous element](./how-to/prevent-the-focus-to-the-previous-element.md)

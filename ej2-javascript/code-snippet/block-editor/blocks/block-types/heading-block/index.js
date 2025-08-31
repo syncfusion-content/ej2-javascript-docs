@@ -1,6 +1,7 @@
 let blocksData = [
     {
-        type: 'Heading1',
+        type: 'Heading',
+        props: { level: 1 },
         content: [
             {
                 type: ej.blockeditor.ContentType.Text,
@@ -9,7 +10,8 @@ let blocksData = [
         ]
     },
     {
-        type: 'Heading2',
+        type: 'Heading',
+        props: { level: 2 },
         content: [
             {
                 type: ej.blockeditor.ContentType.Text,
@@ -18,7 +20,8 @@ let blocksData = [
         ]
     },
     {
-        type: 'Heading3',
+        type: 'Heading',
+        props: { level: 3 },
         content: [
             {
                 type: ej.blockeditor.ContentType.Text,
@@ -27,7 +30,8 @@ let blocksData = [
         ]
     },
     {
-        type: 'Heading4',
+        type: 'Heading',
+        props: { level: 4 },
         content: [
             {
                 type: ej.blockeditor.ContentType.Text,

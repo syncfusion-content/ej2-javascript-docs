@@ -2,7 +2,8 @@ import { BlockEditor, BlockModel, ContentType } from "@syncfusion/ej2-blockedito
 
 const blocksData: BlockModel[] = [
     {
-        type: 'Heading2',
+        type: 'Heading',
+        props: {level : 2},
         content: [
             {
                 type: ContentType.Text,
@@ -20,7 +21,7 @@ const blocksData: BlockModel[] = [
             {
                 type: ContentType.Link,
                 content: 'hyperlinks',
-                linkSettings: {
+                props: {
                     url: 'https://ej2.syncfusion.com/documentation/',
                     openInNewWindow: true
                 }
@@ -35,7 +36,7 @@ const blocksData: BlockModel[] = [
             },
             {
                 type: ContentType.Text,
-                content: '\nUser mentions like '
+                content: '\nUser mentions like'
             },
             {
                 type: ContentType.Mention,
@@ -43,11 +44,11 @@ const blocksData: BlockModel[] = [
             },
             {
                 type: ContentType.Text,
-                content: ', and labels such as '
+                content: ', and labels such as'
             },
             {
                 type: ContentType.Label,
-                id: 'label1'
+                props: {lableId: 'label1'}
             },
             {
                 type: ContentType.Text,

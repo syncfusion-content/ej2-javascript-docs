@@ -17,7 +17,8 @@ const labelSettings: LabelSettingsModel = {
 
 const blocksData: BlockModel[] = [
     {
-        type: 'Heading1',
+        type: 'Heading',
+        props: { level: 1},
         content: [
             {
                 type: ContentType.Text,
@@ -43,7 +44,7 @@ const blocksData: BlockModel[] = [
             },
             {
                 type: ContentType.Label,
-                id: 'bug'
+                props: { labelId: 'bug'}
             },
             {
                 type: ContentType.Text,
@@ -51,7 +52,7 @@ const blocksData: BlockModel[] = [
             },
             {
                 type: ContentType.Label,
-                id: 'high'
+                props: { labelId: 'high'}
             }
         ]
     },
@@ -64,7 +65,7 @@ const blocksData: BlockModel[] = [
             },
             {
                 type: ContentType.Label,
-                id: 'task'
+                props: { labelId: 'task'}
             },
             {
                 type: ContentType.Text,
@@ -72,7 +73,7 @@ const blocksData: BlockModel[] = [
             },
             {
                 type: ContentType.Label,
-                id: 'medium'
+                props: { labelId: 'medium'}
             }
         ]
     },
@@ -85,7 +86,7 @@ const blocksData: BlockModel[] = [
             },
             {
                 type: ContentType.Label,
-                id: 'feature'
+                props: { labelId: 'feature'}
             },
             {
                 type: ContentType.Text,
@@ -93,7 +94,7 @@ const blocksData: BlockModel[] = [
             },
             {
                 type: ContentType.Label,
-                id: 'critical'
+                props: { labelId: 'critical'}
             }
         ]
     }

@@ -4,11 +4,13 @@ const blocksData: BlockModel[] = [
     {
         id: 'security-callout',
         type: 'Callout',
+        props:{
         children: [
             { 
                 id: 'security-title',
                 parentId: 'security-callout',
-                type: 'Heading3',
+                type: 'Heading',
+                props: { level: 3},
                 content: [{
                     type: ContentType.Text,
                     content: 'Security Notice'
@@ -55,6 +57,7 @@ const blocksData: BlockModel[] = [
             }
         ]
     }
+}
 ];
 
 const blockEditor = new BlockEditor({

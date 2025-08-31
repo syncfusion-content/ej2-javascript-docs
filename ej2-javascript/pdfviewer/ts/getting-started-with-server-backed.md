@@ -182,19 +182,24 @@ These modules should be injected into the PDF Viewer using `PdfViewer.Inject` me
 
 2.Navigate to the `ASP.NET Core` folder and open it in the command prompt.
 
-3.Use the below command to restore the required packages.
+3.Navigate to the appropriate subfolder based on your .NET version:
+
+   - .NET 6.0 → `PdfViewerWebService_6.0`
+   - .NET 8.0 → `PdfViewerWebService_8.0`
+
+4.Use the below command to restore the required packages.
 
 ```
  dotnet restore
 ```
 
-4.Use the below command to run the web service.
+5.Use the below command to run the web service.
 
 ```
  dotnet run
 ```
 
-5.You can see that the PDF Viewer server instance runs in the localhost with the port number `localhost:5001` and navigate to the PDF Viewer Web control `localhost:5001/pdfviewer` which returns the default get response method. We can bind the link to the [serviceUrl](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#serviceurl) property of PDF Viewer as below.
+6.You can see that the PDF Viewer server instance runs in the localhost with the port number `localhost:5001` and navigate to the PDF Viewer Web control `localhost:5001/pdfviewer` which returns the default get response method. We can bind the link to the [serviceUrl](https://helpej2.syncfusion.com/documentation/api/pdfviewer/#serviceurl) property of PDF Viewer as below.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

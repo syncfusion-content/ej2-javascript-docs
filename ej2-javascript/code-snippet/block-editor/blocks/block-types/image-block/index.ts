@@ -3,7 +3,7 @@ import { BlockEditor, BlockModel, ContentType } from "@syncfusion/ej2-blockedito
 const blocksData: BlockModel[] = [
     {
         type: 'Image',
-        imageSettings: {
+        props: {
             src: 'https://cdn.syncfusion.com/ej2/richtexteditor-resources/RTE-Overview.png',
             altText: 'Sample image'
         }

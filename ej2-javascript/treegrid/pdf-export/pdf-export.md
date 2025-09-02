@@ -136,4 +136,37 @@ PDF export provides an option to define datasource dynamically before exporting.
 {% previewsample "page.domainurl/code-snippet/treegrid/pdfexport-cs12" %}
 {% endif %}
 
+## Exporting custom aggregates in TreeGrid
+ 
+The TreeGrid enables exporting custom aggregates, which summarize column data, to an PDF document using the `pdfAggregateQueryCellInfo` event.
+ 
+In the provided example, the `customAggregateFn` function computes the item count for a selected category, while the `pdfAggregateQueryCellInfo` event customizes the exported cell values in the PDF document.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/treegrid/custom-aggregate-pdf/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/treegrid/custom-aggregate-pdf/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/treegrid/custom-aggregate-pdf" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/treegrid/custom-aggregate-pdf/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/treegrid/custom-aggregate-pdf/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/treegrid/custom-aggregate-pdf" %}
+{% endif %}
+
 > You can refer to our [`JavaScript Tree Grid`](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our JavaScript Tree Grid example [`JavaScript Tree Grid example`](https://ej2.syncfusion.com/demos/#/material/tree-grid/treegrid-overview.html) to knows how to present and manipulate data.

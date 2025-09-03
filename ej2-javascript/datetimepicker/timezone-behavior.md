@@ -15,7 +15,7 @@ The DateTimePicker component displays and maintains the selected date and time v
 
 N> if the system time zone is changed dynamically after a value is selected, the DateTimePicker will **not update or shift** the selected value. The component preserves the original selection, ensuring a stable and reliable user experience.
 
-## `serverTimezoneOffset`
+## serverTimezoneOffset
 
 The `serverTimezoneOffset` property allows you to specify the server's time zone offset from UTC in **hours** or **fractional hours**. This is useful when binding values from the server to ensure they are interpreted correctly on the client side.
 
@@ -27,7 +27,7 @@ The `serverTimezoneOffset` property allows you to specify the server's time zone
 
 N> The `serverTimezoneOffset` property is applicable **only for pre-bound values** (i.e., values set during initialization or data binding). It does **not affect** values selected by the user during runtime.
 
-The following example demonstrates the DateTimePicker in `German` culture.
+The following example demonstrates the DateTimePicker Timezone Behavior
 
 {% if page.publishingplatform == "typescript" %}
 

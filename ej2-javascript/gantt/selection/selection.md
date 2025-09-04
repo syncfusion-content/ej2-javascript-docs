@@ -86,6 +86,39 @@ The toggle selection allows you to select and deselect a specific row or cell. T
 {% previewsample "page.domainurl/code-snippet/gantt/toggleselection-cs1" %}
 {% endif %}
 
+## Hover highlighting
+
+The hover highlighting feature in the Syncfusion Gantt Chart enhances user interaction by highlighting **tree grid rows, chart task bars, header cells, and timeline cells** when hovered, making it easier to track tasks in complex project timelines. Enable it by setting the [enableHover](../../api/gantt/#enablehover) property to **true** in the control.
+
+The following code example shows how to enable the hover highlighting in Gantt.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/selection-cs11/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/selection-cs11/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/selection-cs11" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/selection-cs11/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/selection-cs11/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/selection-cs11" %}
+{% endif %}
+
 ## Clear selection
 
 You can clear the selected cells and selected rows by using a method called [`clearSelection`](../../api/gantt/#clearselection). The following code example demonstrates how to clear the selected rows in Gantt Chart.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Symbol Palette customization in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Symbol palette in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+title: Palette customization in ##Platform_Name## Diagram control | Syncfusion®
+description: Learn here how to customize symbol palette in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
 platform: ej2-javascript
 control: Symbol palette 
 publishingplatform: ##Platform_Name##
@@ -218,8 +218,27 @@ The code provided below demonstrates how to define tooltip content for symbols w
 {% include code-snippet/diagram/symbol-palette-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/diagram/symbol-palette-cs8" %}
+
+### How to enable or disable the default tooltip for shapes in the symbol palette
+
+By default, the symbol ID is displayed as a tooltip when hovering over a symbol in the Symbol Palette. To disable this default tooltip, you can use the [`showTooltip`](../../api/diagram/symbolInfo/#showTooltip) property within the [`getSymbolInfo`](../../api/diagram/symbolPaletteModel/#getsymbolinfo) method. The `showTooltip` property is set to **true** by default, which enables the tooltip.
+
+The following example demonstrates how to configure selective tooltip display:
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/symbol-palette-cs25/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/symbol-palette-cs25/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/diagram/symbol-palette-cs25" %}
+
+N> This property is effective only when tooltip constraints are disabled for the symbol palette element.
 
 ### How to provide different tooltip for Symbol palette and diagram elements.
 

@@ -1,10 +1,13 @@
 import { DatePicker } from '@syncfusion/ej2-calendars';
 
-/* Initialize the DatePicker component */
-let datepicker: DatePicker = new DatePicker({
+// creates a datepicker with min max property
+let datepickerObject: DatePicker = new DatePicker({
     placeholder: "Select Date",
+    value: new Date(),
     width: "250px",
     serverTimezoneOffset: 5.5 // Example: UTC+5:30 for IST
 });
+datepickerObject.appendTo('#element');
 
-datepicker.appendTo('#datepicker');
+
+

@@ -1,10 +1,9 @@
-import { DatePicker } from '@syncfusion/ej2-calendars';
+import { DateTimePicker } from '@syncfusion/ej2-calendars';
 
-/* Initialize the DatePicker component */
-let datepicker: DatePicker = new DatePicker({
-    placeholder: "Select Date Time",
-    width: "250px",
-    serverTimezoneOffset: 5.5 // Example: UTC+5:30 for IST
+let datetimepickerObject: DateTimePicker = new DateTimePicker({
+  placeholder: "Select Date Time",
+  value: new Date(),
+  width: "250px",
+  serverTimezoneOffset: 5.5 
 });
-
-datepicker.appendTo('#datepicker');
+datetimepickerObject.appendTo('#element');

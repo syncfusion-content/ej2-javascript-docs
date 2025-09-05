@@ -39,9 +39,9 @@ Specific color for an empty point can be set by using the `fill` property in `em
           
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs17" %}
 
-## Handling when no data is available
+## Handling No Data
 
-When no data is available to render in the chart, the `noDataTemplate` property can be used to display a custom layout within the chart area. This layout may include a message indicating the absence of data, a relevant image, or a button to initiate data loading. Styled text, images, or interactive elements can be incorporated to maintain design consistency and improve user guidance. Once data becomes available, the chart automatically updates to display the appropriate visualization.
+When no data is available to render in the accumulation chart, the `noDataTemplate` property can be used to display a custom layout within the chart area. This layout may include a message indicating the absence of data, a relevant image, or a button to initiate data loading. Styled text, images, or interactive elements can be incorporated to maintain design consistency and improve user guidance. Once data becomes available, the chart automatically updates to display the appropriate visualization.
 
 {% if page.publishingplatform == "typescript" %}
 

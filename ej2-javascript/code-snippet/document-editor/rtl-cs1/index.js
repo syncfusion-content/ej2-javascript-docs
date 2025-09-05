@@ -289,7 +289,9 @@ var documenteditor = new ej.documenteditor.DocumentEditor({isReadOnly: false,ena
 documenteditor.enableAllModules();
 var containerPanel = document.getElementById('container');
 function updateContainerSize() {
-  this.containerPanel.style.height = window.innerHeight + 'px';
+    if (this.containerPanel) {
+        this.containerPanel.style.height = window.innerHeight + 'px';
+    }
 }
 
 updateContainerSize();

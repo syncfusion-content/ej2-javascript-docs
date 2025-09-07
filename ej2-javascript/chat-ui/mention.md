@@ -11,8 +11,6 @@ domainurl: ##DomainURL##
 
 # Mention Integration in ##Platform_Name## Chat UI control
 
-## Mention Integration in Syncfusion Chat UI
-
 The Syncfusion ChatUI allows users to mention others in messages using the `@` character, with an dropdown for selecting users. The following sections explain how to configure mentions
 
 ## Configure mention users
@@ -111,7 +109,7 @@ You can use the [text](../api/chat-ui/messageModel/#text) property in the [Messa
 
 ## Configure mentionSelect
 
-You can use the [mentionSelect](../api/chat-ui/messageModel/#mentionSelect/) event which triggers when a user selects an item from the mention dropdown, providing access to the selected user’s details for custom handling.
+You can use the [mentionSelect](../api/chat-ui/#mentionSelect/) event which triggers when a user selects an item from the mention dropdown, providing access to the selected user’s details for custom handling.
 
 {% if page.publishingplatform == "typescript" %}
 

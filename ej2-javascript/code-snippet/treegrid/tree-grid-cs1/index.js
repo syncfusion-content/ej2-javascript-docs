@@ -1,6 +1,6 @@
 ej.treegrid.TreeGrid.Inject(ej.treegrid.Page);
 var treeGridObj = new ej.treegrid.TreeGrid({
-    dataSource: window.sampleData,
+    dataSource: sampleData,
     childMapping: 'subtasks',
     treeColumnIndex: 1,
     allowPaging: true,

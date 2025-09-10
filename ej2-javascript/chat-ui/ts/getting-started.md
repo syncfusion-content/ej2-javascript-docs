@@ -25,6 +25,7 @@ The list of dependencies required to use the Chat UI control in your application
     |-- @syncfusion/ej2-navigations
     |-- @syncfusion/ej2-inputs
     |-- @syncfusion/ej2-buttons
+    |-- @syncfusion/ej2-dropdowns
     |-- @syncfusion/ej2-popups
 ```
 
@@ -76,6 +77,7 @@ To render Chat UI control, need to import interactive-chat and its dependent con
 @import "../../node_modules/@syncfusion/ej2-buttons/styles/material.css";
 @import "../../node_modules/@syncfusion/ej2-navigations/styles/material.css";
 @import "../../node_modules/@syncfusion/ej2-popups/styles/material.css";
+@import '../../node_modules/@syncfusion/ej2-dropdowns/styles/fluent2.css';
 @import "../../node_modules/@syncfusion/ej2-interactive-chat/styles/material.css";
 
 {% endhighlight %}

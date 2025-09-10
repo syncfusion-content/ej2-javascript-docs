@@ -1,4 +1,4 @@
-import { sortData } from './es5-datasource.js';
+
 ej.treegrid.TreeGrid.Inject(ej.treegrid.Page, ej.treegrid.Sort);
 var treeGridObj = new ej.treegrid.TreeGrid({
     dataSource: sortData,

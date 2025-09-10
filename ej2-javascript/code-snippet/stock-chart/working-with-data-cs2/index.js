@@ -20,7 +20,7 @@ var stockChart = new ej.charts.StockChart({
     loaded: function (args) {
         var btnElem = document.getElementById('loadDataBtn');
         if (btnElem) {
-            var loadBtn = ej.buttons.Button({
+            var loadBtn = new ej.buttons.Button({
                 content: 'Load Data',
                 iconCss: 'e-icons e-refresh',
                 cssClass: 'e-outline',

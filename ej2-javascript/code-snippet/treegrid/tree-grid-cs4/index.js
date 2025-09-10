@@ -1,7 +1,7 @@
-import { sampleData } from './es5-datasource.js';
+
 ej.treegrid.TreeGrid.Inject(ej.treegrid.Page, ej.treegrid.Sort, ej.grids.Filter);
 var treeGridObj = new ej.treegrid.TreeGrid({
-    dataSource: window.sampleData,
+    dataSource: sampleData,
     childMapping: 'subtasks',
     treeColumnIndex: 1,
     allowFiltering: true,

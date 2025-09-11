@@ -82,9 +82,9 @@ You can change the border color for the spanned cells by the using [queryCellInf
     3. Grouping
     4. Autofill
 
-## column spanning using enableColumnSpan property    
+## Column spanning using enableColumnSpan property    
 
-The Syncfusion ##Platform_Name## Grid introduces a simplified approach to horizontally merge cells using the `enableColumnSpan` property. 
+The Syncfusion Grid introduces a simplified approach to horizontally merge cells using the `enableColumnSpan` property. 
 
 When the `enableColumnSpan` property is enabled, the Grid automatically merges cells with matching data across adjacent columns without requiring manual span configuration using the [queryCellInfo](../../api/grid/#querycellinfo) event. These merged cells are visually combined into a single cell, improving readability.
 

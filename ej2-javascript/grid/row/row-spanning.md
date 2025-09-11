@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 The grid provides an option to span row cells, allowing you to merge two or more cells in a row into a single cell. This feature can be useful in scenarios where you want to display information that spans across multiple rows, but want to avoid repeating the same information in each row.
 
-To achieve this, You need to define the [rowSpan](../../api/grid/queryCellInfoEventArgs/#rowspan) attribute to span cells in the [queryCellInfo](../../api/grid/queryCellInfoEventArgs) event. The rowSpan attribute is used to specify the number of rows that the current cell should span.
+To achieve this, You need to define the [rowSpan](../../api/grid/queryCellInfoEventArgs/#rowspan) attribute to span cells in the [queryCellInfo](../../api/grid/queryCellInfoEventArgs/) event. The rowSpan attribute is used to specify the number of rows that the current cell should span.
 
 The `queryCellInfo` event is triggered for each cell in the grid, and allows you to customize the cells in the grid. By handling this event, you can set the `rowSpan` attribute for a cell to achieve row spanning.
 
@@ -64,7 +64,7 @@ In the following demo, **Davolio** cell is spanned to two rows in the **Employee
 
 ## Row spanning using enableRowSpan property    
 
-The Syncfusion ##Platform_Name## Grid introduces a simplified approach to vertically merge cells using the `enableRowSpan` property. 
+The Syncfusion Grid introduces a simplified approach to vertically merge cells using the `enableRowSpan` property. 
 
 When the `enableRowSpan` property is enabled, the Grid automatically merges cells with matching data across adjacent columns without requiring manual span configuration using the [queryCellInfo](../../api/grid/#querycellinfo) event. These merged cells are visually combined into a single cell, improving readability.
 

@@ -164,7 +164,7 @@ var sampleData =  [
     }
 ];
 
-window.sortData = [
+ var sortData = [
     {
         orderID: '1',
         orderName: 'Order 1',

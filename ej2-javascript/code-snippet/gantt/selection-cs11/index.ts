@@ -1,7 +1,4 @@
-
-
-
-import { Gantt, Selection, RowSelectEventArgs } from '@syncfusion/ej2-gantt';
+import { Gantt, Selection } from '@syncfusion/ej2-gantt';
 import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Selection);
@@ -23,4 +20,5 @@ let gantt: Gantt = new Gantt({
         type: 'Multiple'
     },
 });
+
 gantt.appendTo('#Gantt');

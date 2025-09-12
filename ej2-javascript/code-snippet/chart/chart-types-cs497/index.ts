@@ -3,7 +3,7 @@
 
 import {
     AccumulationChart, AccumulationDataLabel, FunnelSeries, PieSeries,
-    PyramidSeries, AccumulationAnnotation, AccumulationLegend, AccumulationTooltip, ILoadedEventArgs
+    PyramidSeries, AccumulationAnnotation, AccumulationLegend, AccumulationTooltip, IAccLoadedEventArgs
 } from '@syncfusion/ej2-charts';
 AccumulationChart.Inject(AccumulationLegend, AccumulationTooltip, AccumulationAnnotation, AccumulationDataLabel, FunnelSeries, PieSeries, PyramidSeries);
 import { Button } from '@syncfusion/ej2-buttons';
@@ -39,7 +39,7 @@ let chart: AccumulationChart = new AccumulationChart({
     legendSettings: { visible: false },
     title: 'Pie Annotation CoordinateUnits Point',
     titleStyle: { textOverflow: 'Trim' },
-    loaded: (args: ILoadedEventArgs) => {
+    loaded: (args: IAccLoadedEventArgs) => {
         const btnElem: HTMLElement | null = document.getElementById('loadDataBtn');
         if (btnElem) {
             const loadBtn: Button = new Button({

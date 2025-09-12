@@ -16,5 +16,6 @@ var ganttChart = new ej.gantt.Gantt({
         mode: 'Row',
         type: 'Multiple'
     },
-    });
+});
+
 ganttChart.appendTo('#Gantt');

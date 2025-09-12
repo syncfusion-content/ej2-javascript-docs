@@ -1,9 +1,9 @@
 
 
 import {
-    Chart, LineSeries, Legend, Category, Tooltip, DataLabel, LastValueLabel
+    Chart, LineSeries, ColumnSeries, Legend, Category, Tooltip, DataLabel, LastValueLabel
 } from '@syncfusion/ej2-charts';
-Chart.Inject(LineSeries, Category, Legend,Tooltip, DataLabel, LastValueLabel);
+Chart.Inject(LineSeries, ColumnSeries, Category, Legend, Tooltip, DataLabel, LastValueLabel);
 
 let chartData: Object[] = [
      { x: 2005, y: 28 }, { x: 2006, y: 25 }, { x: 2007, y: 26 }, { x: 2008, y: 27 },

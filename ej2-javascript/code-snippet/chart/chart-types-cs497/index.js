@@ -41,9 +41,9 @@ var piechart = new ej.charts.AccumulationChart({
             loadBtn.element.addEventListener('click', function () {
                 checked = !checked;
                 if (checked) {
-                    chart.series[0].dataSource = chartData;
+                    piechart.series[0].dataSource = chartData;
                 }
-                chart.refresh();
+                piechart.refresh();
             });
         }
     }

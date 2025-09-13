@@ -1,4 +1,4 @@
-//Initialize the basic shapes for the symbol palette
+// Initialize the basic shapes for the symbol palette.
 function getBasicShapes() {
   var basicShapes = [
     { id: 'Rectangle', shape: { type: 'Basic', shape: 'Rectangle' }},
@@ -12,7 +12,8 @@ function getBasicShapes() {
   ];
   return basicShapes;
 }
-//Initialize the basic shapes for the symbol palette
+
+// Initialize the flow shapes for the symbol palette.
 function getFlowShapes() {
   var flowShapes = [
     { id: 'Terminator', shape: { type: 'Flow', shape: 'Terminator' } },
@@ -27,6 +28,9 @@ function getFlowShapes() {
   return flowShapes;
 }
 
+var checkBox = document.getElementById('showTooltip');
+
+//Initializes the symbol palette
 var palette = new ej.diagrams.SymbolPalette({
   expandMode: 'Multiple',
   palettes: [
@@ -46,6 +50,7 @@ var palette = new ej.diagrams.SymbolPalette({
   getNodeDefaults: function (symbol) {
     symbol.style.fill = '#6495ED';
     symbol.style.strokeColor = '#6495ED';
+    return symbol;
   },
   width: '600px',
   height: '300px',
@@ -53,17 +58,14 @@ var palette = new ej.diagrams.SymbolPalette({
   symbolWidth: 70,
   symbolPreview: { height: 80, width: 80 },
   symbolMargin: { left: 15, right: 15, top: 15, bottom: 15 },
+  //Enable/disable tooltip for the symbols
   getSymbolInfo: function (symbol) {
-    return { showTooltip: true };
+    return { showTooltip: checkBox.checked };
   },
 });
 palette.appendTo('#element');
 
 document.getElementById('showTooltip').onclick = function (args) {
-  var checkBox = document.getElementById('showTooltip');
-  palette.getSymbolInfo = function (symbol) {
-    return { showTooltip: checkBox.checked };
-  };
-  palette.dataBind();
+  palette.refresh();
 };
 

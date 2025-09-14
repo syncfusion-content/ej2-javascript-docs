@@ -1,8 +1,5 @@
-
-
-
 import { Gantt, Filter, Sort, Resize, ColumnMenu } from '@syncfusion/ej2-gantt';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 import { MenuEventArgs } from '@syncfusion/ej2-navigations';
 
 Gantt.Inject(Filter, Sort, Resize, ColumnMenu);
@@ -19,22 +16,22 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks',
+        parentID: 'ParentID'
     },
-    columnMenuItems:[{text:'Clear Sorting', id:'ganttclearsorting'}],
-    columnMenuClick: function(args: MenuEventArgs){
-        if(args.item.id === 'ganttclearsorting'){
+    columnMenuItems: [{ text: 'Clear Sorting', id: 'ganttclearsorting' }],
+    columnMenuClick: function (args: MenuEventArgs) {
+        if (args.item.id === 'ganttclearsorting') {
             gantt.clearSorting();
         }
     },
-    sortSettings:{
-        columns:[{direction: "Ascending", field: "TaskName"}]
+    sortSettings: {
+        columns: [{ direction: "Ascending", field: "TaskName" }]
     },
     splitterSettings: {
         position: '75%'
     },
     columns: [
-        { field: 'TaskID', headerText: 'Task ID'},
+        { field: 'TaskID', headerText: 'ID' },
         { field: 'TaskName', headerText: 'Task Name' },
         { field: 'StartDate', headerText: 'Start Date', width: '150' },
         { field: 'Duration', headerText: 'Duration', width: '100' },
@@ -44,6 +41,3 @@ let gantt: Gantt = new Gantt({
 });
 
 gantt.appendTo('#Gantt');
-
-
-

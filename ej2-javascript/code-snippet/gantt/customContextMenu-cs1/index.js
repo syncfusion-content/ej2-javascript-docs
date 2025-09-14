@@ -8,7 +8,7 @@ var ganttChart = new ej.gantt.Gantt({
         	dependency: 'Predecessor',
         	duration: 'Duration',
         	progress: 'Progress',
-        	child: 'subtasks'
+        	parentID: 'ParentID'
         },
         allowSorting: true,
         allowResizing: true,
@@ -54,4 +54,3 @@ var ganttChart = new ej.gantt.Gantt({
         }
 });
 ganttChart.appendTo('#CustomContextMenu');
-

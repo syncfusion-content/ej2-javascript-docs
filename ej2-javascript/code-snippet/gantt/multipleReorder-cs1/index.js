@@ -9,7 +9,7 @@ var ganttChart = new ej.gantt.Gantt({
 			startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-			child: 'subtasks'
+			parentID: 'ParentID'
         },
 		splitterSettings:{
 		  position:'100%'
@@ -33,4 +33,3 @@ reorderMultipleCols.appendTo('#reorderMultipleCols');
 document.getElementById('reorderMultipleCols').addEventListener('click', function(){
 	ganttChart.reorderColumns(['TaskID','TaskName'],'Progress');
 });
-

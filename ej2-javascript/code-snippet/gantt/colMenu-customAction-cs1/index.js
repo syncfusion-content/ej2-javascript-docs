@@ -12,15 +12,15 @@ var ganttChart = new ej.gantt.Gantt({
             startDate: 'StartDate',
 			duration: 'Duration',
             progress: 'Progress',
-			child: 'subtasks'
+			parentID: 'ParentID'
         },
         splitterSettings: {
             position: '100%'
         },
     columns: [
         { field: 'TaskID', headerText: 'Task ID' },
-        { field: 'Progress', headerText: 'Progress' },
         { field: 'TaskName', headerText: 'Task Name' },
+        { field: 'Progress', headerText: 'Progress' },
         { field: 'StartDate', headerText: 'Start Date' },
         { field: 'Duration', headerText: 'Duration' }
     ],
@@ -36,4 +36,3 @@ var ganttChart = new ej.gantt.Gantt({
 });
 
 ganttChart.appendTo('#Gantt');
-

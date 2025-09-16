@@ -9,7 +9,7 @@ var ganttChart = new ej.gantt.Gantt({
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            child: 'subtasks'
+            parentID: 'ParentID'
         },
 		filterSettings: {
             columns: [{ field: 'TaskName', matchCase: false, operator: 'startswith', predicate: 'and', value: 'Identify' },
@@ -18,6 +18,3 @@ var ganttChart = new ej.gantt.Gantt({
 		allowFiltering: true
     });
 ganttChart.appendTo('#Gantt');
-
-
-

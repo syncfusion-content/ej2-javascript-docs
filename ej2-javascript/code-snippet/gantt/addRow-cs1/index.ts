@@ -3,7 +3,7 @@
 
 import { Gantt, Toolbar, Edit } from '@syncfusion/ej2-gantt';
 import { Button } from '@syncfusion/ej2-buttons';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Toolbar, Edit);
 
@@ -16,7 +16,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     editSettings: {
         allowAdding: true
@@ -37,7 +37,3 @@ document.getElementById('addRow').addEventListener('click', () => {
     };
     gantt.editModule.addRecord(record, 'Below', 2);
 });
-
-
-
-

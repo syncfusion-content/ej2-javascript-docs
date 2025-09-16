@@ -19,7 +19,7 @@ var gantt = new ej.gantt.Gantt({
             resourceInfo: 'resources',
             work: 'work',
             expandState: 'isExpand',
-            child: 'subtasks'
+            parentID: 'ParentID'
         },
         resourceFields: {
             id: 'resourceId',
@@ -52,4 +52,3 @@ var gantt = new ej.gantt.Gantt({
         projectEndDate: new Date('05/18/2019')
 });
 gantt.appendTo('#Gantt');
-

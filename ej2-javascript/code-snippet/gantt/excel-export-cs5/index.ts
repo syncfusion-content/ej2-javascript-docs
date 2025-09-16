@@ -1,8 +1,5 @@
-
-
-
 import { Gantt, Toolbar, ExcelExport, Selection } from '@syncfusion/ej2-gantt';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Toolbar, ExcelExport,Selection );
 
@@ -15,7 +12,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'parentID',
     },
     treeColumnIndex: 1,
     allowExcelExport: true,
@@ -27,7 +24,7 @@ let gantt: Gantt = new Gantt({
         columnIndex: 3
     },
     columns: [
-        { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: '100',visible:false  },
+        { field: 'TaskId', headerText: 'Task ID', textAlign: 'Left', width: '100',visible:false  },
         { field: 'TaskName', headerText: 'Task Name', width: '150' },
         { field: 'Progress', headerText: 'Progress', width: '150' },
         { field: 'StartDate', headerText: 'Start Date', width: '150' },
@@ -69,6 +66,3 @@ gantt.toolbarClick = (args: Object) => {
         gantt.excelExport();
     }
 }
-
-
-

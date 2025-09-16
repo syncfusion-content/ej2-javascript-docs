@@ -21,7 +21,7 @@ let gantt: Gantt = new Gantt({
         resourceInfo: 'resources',
         work: 'work',
         expandState: 'isExpand',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     resourceFields: {
         id: 'resourceId',

@@ -1,5 +1,5 @@
 var ganttChart = new ej.gantt.Gantt({
-        dataSource: YearData,
+        dataSource: GanttData,
 		height:'450px',
 		taskFields: {
             id: 'TaskID',
@@ -7,7 +7,7 @@ var ganttChart = new ej.gantt.Gantt({
             startDate: 'StartDate',
 			duration: 'Duration',
             progress: 'Progress',
-			child: 'subtasks'
+			parentID: 'ParentID'
         },
 		timelineSettings: {
 		    timelineViewMode:'Year',
@@ -15,20 +15,3 @@ var ganttChart = new ej.gantt.Gantt({
 		}
 });
 ganttChart.appendTo('#Gantt');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

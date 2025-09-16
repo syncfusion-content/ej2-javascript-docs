@@ -7,7 +7,7 @@ var ganttChart = new ej.gantt.Gantt({
             startDate: 'StartDate',
 			duration: 'Duration',
             progress: 'Progress',
-			child: 'subtasks'
+			parentID: 'ParentID'
         },
 		splitterSettings:{
 		  position: "50%"
@@ -21,15 +21,3 @@ scrollBtn.appendTo('#scrollTop');
 document.getElementById('scrollTop').addEventListener('click', function() {
     ganttChart.ganttChartModule.scrollObject.setScrollTop(300);
 });
-
-
-
-
-
-
-
-
-
-
-
-

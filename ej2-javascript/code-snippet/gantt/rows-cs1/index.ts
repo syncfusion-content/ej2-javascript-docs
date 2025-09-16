@@ -2,7 +2,7 @@
 
 
 import { Gantt, Toolbar, Edit } from '@syncfusion/ej2-gantt';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Toolbar, Edit);
 
@@ -15,7 +15,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     editSettings: {
         allowAdding: true
@@ -23,6 +23,3 @@ let gantt: Gantt = new Gantt({
     toolbar: ['Add']
 });
 gantt.appendTo('#Gantt');
-
-
-

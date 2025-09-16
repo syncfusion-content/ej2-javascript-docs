@@ -1,12 +1,12 @@
 
 
 import { Gantt, Edit } from '@syncfusion/ej2-gantt';
-import { timelineData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Edit);
 
 let gantt: Gantt = new Gantt({
-    dataSource: timelineData,
+    dataSource: GanttData,
     height: '450px',
     taskFields: {
         id: 'TaskID',
@@ -14,7 +14,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     timelineSettings: {
         updateTimescaleView: false
@@ -25,6 +25,3 @@ let gantt: Gantt = new Gantt({
     }
 });
 gantt.appendTo('#Gantt');
-
-
-

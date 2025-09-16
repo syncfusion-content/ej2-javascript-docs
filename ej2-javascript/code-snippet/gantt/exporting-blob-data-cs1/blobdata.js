@@ -49,7 +49,7 @@ if (args.item.id === 'GanttExport_excelexport') {
          startDate: 'StartDate',
          duration: 'Duration',
          progress: 'Progress',
-         child: 'subtasks'
+         parentID: 'ParentID'
      },
      allowPdfExport: true,
      allowExcelExport: true,

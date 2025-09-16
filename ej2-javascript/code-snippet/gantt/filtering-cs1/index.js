@@ -9,7 +9,7 @@ var ganttChart = new ej.gantt.Gantt({
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            child: 'subtasks'
+            parentID: 'ParentID'
         },
 		allowFiltering: true
     });
@@ -32,5 +32,3 @@ var dropDownMode = new ej.dropdowns.DropDownList({
 });
 
 dropDownMode.appendTo('#mode');
-
-

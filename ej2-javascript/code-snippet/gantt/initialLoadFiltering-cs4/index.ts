@@ -1,6 +1,3 @@
-
-
-
 import { Gantt, Filter } from '@syncfusion/ej2-gantt';
 import { GanttData } from 'datasource.ts';
 
@@ -15,7 +12,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     filterSettings: {
         columns: [{ field: 'TaskName', matchCase: false, operator: 'startswith', predicate: 'and', value: 'Identify' },
@@ -25,6 +22,3 @@ let gantt: Gantt = new Gantt({
 });
 
 gantt.appendTo('#Gantt');
-
-
-

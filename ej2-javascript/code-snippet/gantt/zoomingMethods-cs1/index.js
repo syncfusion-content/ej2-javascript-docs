@@ -1,15 +1,14 @@
-
 var ganttChart = new ej.gantt.Gantt({
-        dataSource: GanttData,
+    dataSource: GanttData,
 		height:'450px',
 		taskFields: {
             id: 'TaskID',
             name: 'TaskName',
             startDate: 'StartDate',
-			duration: 'Duration',
+			      duration: 'Duration',
             progress: 'Progress',
-			dependency: 'Predecessor',
-            child: 'subtasks'
+			      dependency: 'Predecessor',
+            parentID: 'parentID'
         },
         labelSettings: {
             leftLabel: 'TaskName'
@@ -39,14 +38,3 @@ zoomInBtn.appendTo('#fitToProject');
 document.getElementById('fitToProject').addEventListener('click', function() {
   ganttChart.fitToProject();
 });
-
-
-
-
-
-
-
-
-
-
-

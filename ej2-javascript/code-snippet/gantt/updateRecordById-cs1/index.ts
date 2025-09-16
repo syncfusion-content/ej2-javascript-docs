@@ -3,7 +3,7 @@
 
 import { Gantt, Edit } from '@syncfusion/ej2-gantt';
 import { Button } from '@syncfusion/ej2-buttons';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Edit);
 
@@ -16,7 +16,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     editSettings: {
         allowEditing: true
@@ -38,6 +38,3 @@ document.getElementById('updateRecord').addEventListener('click', () => {
     };
     gantt.updateRecordByID(data);
 });
-
-
-

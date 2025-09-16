@@ -19,7 +19,7 @@ To use row drag and drop feature, inject the `RowDD` and `Edit` module in Gantt.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/rows-cs7/index.ts %}
 {% endhighlight %}
@@ -50,7 +50,7 @@ Gantt also supports dragging multiple rows at a time and drop them on any rows a
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/rows-cs8/index.ts %}
 {% endhighlight %}
@@ -131,7 +131,7 @@ You can prevent drag action of the particular record by setting the `cancel` pro
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/rows-cs9/index.ts %}
 {% endhighlight %}
@@ -164,7 +164,7 @@ In the following sample, we have prevented the drop action based on the position
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/rows-cs10/index.ts %}
 {% endhighlight %}
@@ -197,7 +197,7 @@ In the below example drop action is cancelled and dropped above to target row.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/rows-cs11/index.ts %}
 {% endhighlight %}
@@ -234,7 +234,7 @@ The following code example shows how to drag and drop a row on button click acti
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/dynamicDrag-cs1/index.ts %}
 {% endhighlight %}

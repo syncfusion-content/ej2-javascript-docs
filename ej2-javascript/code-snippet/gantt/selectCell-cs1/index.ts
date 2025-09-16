@@ -3,7 +3,7 @@
 
 import { Gantt, Selection } from '@syncfusion/ej2-gantt';
 import { Button } from '@syncfusion/ej2-buttons';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Selection);
 
@@ -16,7 +16,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     selectionSettings: {
         mode: 'Cell'
@@ -30,6 +30,3 @@ cellBtn.appendTo('#selectCell');
 document.getElementById('selectCell').addEventListener('click', () => {
     gantt.selectionModule.selectCell({ cellIndex: 1, rowIndex: 1 });
 });
-
-
-

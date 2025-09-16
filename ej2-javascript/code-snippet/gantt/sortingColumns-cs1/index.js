@@ -10,7 +10,7 @@ var ganttChart = new ej.gantt.Gantt({
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            child: 'subtasks'
+            parentID: 'ParentID'
         }
 });
 ganttChart.appendTo('#Gantt');
@@ -22,6 +22,3 @@ document.getElementById('sortColumn').addEventListener('click', () => {
     var ganttObj= document.getElementById('Gantt').ej2_instances[0];
 	ganttObj.sortModule.sortColumn('TaskName',"Descending",false)
 });
-
-
-

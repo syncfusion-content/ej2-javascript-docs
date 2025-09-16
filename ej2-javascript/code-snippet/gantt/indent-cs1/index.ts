@@ -1,9 +1,9 @@
 
 
 
-import { Gantt, Toolbar, Edit, Selection, Toolbar } from '@syncfusion/ej2-gantt';
+import { Gantt, Toolbar, Edit, Selection } from '@syncfusion/ej2-gantt';
 import { Button } from '@syncfusion/ej2-buttons';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Toolbar, Edit, Selection, Toolbar);
 
@@ -16,7 +16,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     toolbar: ['Indent', 'Outdent'],
     editSettings: {
@@ -35,6 +35,3 @@ document.getElementById('indent').addEventListener('click', () => {
 document.getElementById('outdent').addEventListener('click', () => {
    gantt.outdent();
 });
-
-
-

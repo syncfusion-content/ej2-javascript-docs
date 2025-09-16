@@ -8,7 +8,7 @@ var gantt = new ej.gantt.Gantt({
         	dependency: 'Predecessor',
         	duration: 'Duration',
         	progress: 'Progress',
-        	child: 'subtasks'
+        	parentID: 'ParentID'
         },
         splitterSettings: {
             position: "50%"
@@ -24,4 +24,3 @@ scrollBtn.appendTo('#scroll');
 document.getElementById('scroll').addEventListener('click', function() {
 gantt.scrollToDate('05/27/2019');
 });
-

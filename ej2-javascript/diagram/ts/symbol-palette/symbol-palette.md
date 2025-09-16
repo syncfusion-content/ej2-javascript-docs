@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Symbol palette in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here all about Symbol palette in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+description: Learn here all about Symbol Palette in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more
 platform: ej2-javascript
 control: Symbol palette 
 publishingplatform: ##Platform_Name##
@@ -83,6 +83,28 @@ The symbol palette supports adding group nodes. To add group nodes to the palett
         
 {% previewsample "page.domainurl/code-snippet/diagram/symbol-palette-group" %}
 
+## Template-based symbols
+
+### HTML and SVG node with content template
+
+The Symbol Palette supports the creation of complex nodes using HTML or SVG templates. This allows developers to incorporate rich, interactive, and visually engaging content within diagram elements.
+
+* For HTML content, set the node's `shape.type` property to **HTML**.
+* For SVG content, set the `shape.type` property to **Native**.
+
+Templates can be defined either as strings or functions and assigned to the node's `content` property. Function-based templates offer the flexibility to generate dynamic content based on node-specific properties or external data sources.
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/diagram/symbol-palette-contentFnTemplate/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/diagram/symbol-palette-contentFnTemplate/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/diagram/symbol-palette-contentFnTemplate" %}
+
 ## Drag and drop symbols from palette to diagram
 
 To drag and drop symbols from the palette to the diagram canvas, mousedown on the desired symbol in the palette, drag it to the desired location on the diagram canvas, and release the mouse button to drop it.
@@ -91,7 +113,7 @@ To drag and drop symbols from the palette to the diagram canvas, mousedown on th
 
 ## Add symbols to palette at runtime
 
-Symbols can be added to palette at runtime by using public method, [`addPaletteItem`](../../api/diagram/palette). The following example shows how to add shapes to the palette at runtime.
+Symbols can be added to palette at runtime by using public method, [`addPaletteItem`](../../api/diagram/palette/). The following example shows how to add shapes to the palette at runtime.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -106,7 +128,7 @@ Symbols can be added to palette at runtime by using public method, [`addPaletteI
 
 ## Remove symbols from palette at runtime
 
-Symbols can be removed from palette at runtime by using public method, [`removePaletteItem`](../../api/diagram/palette). The following example shows how to remove shapes from the palette at runtime.
+Symbols can be removed from palette at runtime by using public method, [`removePaletteItem`](../../api/diagram/palette/). The following example shows how to remove shapes from the palette at runtime.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

@@ -1,6 +1,6 @@
 
 var ganttChart = new ej.gantt.Gantt({
-        dataSource: WeekData,
+        dataSource: GanttData,
 		height:'450px',
 		taskFields: {
             id: 'TaskID',
@@ -9,21 +9,10 @@ var ganttChart = new ej.gantt.Gantt({
 			duration: 'Duration',
             progress: 'Progress',
 			dependency: 'Predecessor',
-            child: 'subtasks'
+            parentID: 'ParentID'
         },
 		timelineSettings: {
 			timelineViewMode:'Week'
 		}
 });
 ganttChart.appendTo('#Gantt');
-
-
-
-
-
-
-
-
-
-
-

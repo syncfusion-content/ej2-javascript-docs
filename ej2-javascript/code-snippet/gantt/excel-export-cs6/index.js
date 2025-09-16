@@ -9,7 +9,7 @@ var ganttChart = new ej.gantt.Gantt({
         startDate: 'StartDate',        
         duration: 'Duration',
         progress: 'Progress',        
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     treeColumnIndex: 1,
     allowExcelExport: true,	
@@ -29,4 +29,3 @@ ganttChart.toolbarClick = (args) => {
         ganttChart.excelExport(excelExportProperties);
     }	
 }
-

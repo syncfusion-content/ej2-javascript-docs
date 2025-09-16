@@ -1,8 +1,5 @@
-
-
-
 import { Gantt, Selection } from '@syncfusion/ej2-gantt';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Selection);
 
@@ -15,13 +12,10 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     selectionSettings: {
         mode: 'Both'
     }
 });
 gantt.appendTo('#Gantt');
-
-
-

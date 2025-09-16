@@ -16,7 +16,7 @@ var ganttChart = new ej.gantt.Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     toolbar: ['Search'],
     searchSettings: { fields: ['TaskName'], operator: 'contains', key: 'Perform', ignoreCase: true },
@@ -29,8 +29,3 @@ clearBtn.appendTo('#changeByPosition');
 document.getElementById('clear').addEventListener('click', function() {
    ganttChart.searchSettings.key='';
 });
-
-
-
-
-

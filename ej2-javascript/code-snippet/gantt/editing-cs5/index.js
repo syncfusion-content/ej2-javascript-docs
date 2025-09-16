@@ -9,7 +9,7 @@ var ganttChart = new ej.gantt.Gantt({
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            child: 'subtasks'
+            parentID: 'ParentID'
         },
 		 taskbarEditing: function (args) {
 			if (args.data.TaskID == 4) // We can't edit Task Id 4
@@ -25,6 +25,3 @@ var ganttChart = new ej.gantt.Gantt({
          }
      });
 ganttChart.appendTo('#Gantt');
-
-
-

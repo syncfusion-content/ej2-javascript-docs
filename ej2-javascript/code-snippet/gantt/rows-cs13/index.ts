@@ -13,7 +13,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     gridLines:'Both',
     queryCellInfo: queryCellInfo,
@@ -25,6 +25,3 @@ function queryCellInfo(args: QueryCellInfoEventArgs): void {
         args.rowSpan = 2;
     }
 }
-
-
-

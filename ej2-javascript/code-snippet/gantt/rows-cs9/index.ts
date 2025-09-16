@@ -2,7 +2,7 @@
 
 
 import { Gantt, RowDD, Edit, Selection } from '@syncfusion/ej2-gantt';
-import { projectNewData } from 'datasource.ts';
+import { projectNewData } from './datasource.ts';
 
 Gantt.Inject(RowDD, Edit, Selection);
 
@@ -16,7 +16,7 @@ let gantt: Gantt = new Gantt({
         duration: 'Duration',
         progress: 'Progress',
         dependency: 'Predecessor',
-        child: 'subtasks'
+        parentID: 'parentID'
     },
     rowDragStartHelper: function(args) {
         let record = args.data[0] ? args.data[0] : args.data;
@@ -28,6 +28,3 @@ let gantt: Gantt = new Gantt({
     allowRowDragAndDrop: true
 });
 gantt.appendTo('#Gantt');
-
-
-

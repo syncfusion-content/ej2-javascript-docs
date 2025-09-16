@@ -13,7 +13,7 @@ var ganttChart = new ej.gantt.Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks',
+        parentID: 'ParentID',
         indicators: 'Indicators'
     },
     allowPdfExport: true,
@@ -21,4 +21,3 @@ var ganttChart = new ej.gantt.Gantt({
     toolbarClick: clickHandler
 });
 ganttChart.appendTo('#GanttExport');
-

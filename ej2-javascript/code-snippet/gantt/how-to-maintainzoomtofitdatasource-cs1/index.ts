@@ -2,7 +2,7 @@
 
 
 import { Gantt, Toolbar } from '@syncfusion/ej2-gantt';
-import { GanttData, data } from 'datasource.ts';
+import { GanttData, data } from './datasource.ts';
 import { Button } from '@syncfusion/ej2-buttons';
 
 Gantt.Inject(Toolbar);
@@ -17,7 +17,7 @@ let gantt: Gantt = new Gantt({
         duration: 'Duration',
         progress: 'Progress',
         dependency: 'Predecessor',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     toolbar: ['ZoomToFit'],
     labelSettings: {
@@ -38,5 +38,3 @@ document.getElementById('changeData').addEventListener('click', () => {
   var obj = document.getElementById('Gantt').ej2_instances[0];
   obj.dataSource = data;
 });
-
-

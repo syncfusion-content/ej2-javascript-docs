@@ -2,7 +2,8 @@
 
 
 import { Gantt, Toolbar, ZoomTimelineSettings } from '@syncfusion/ej2-gantt';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
+
 let customZoomingLevels: ZoomTimelineSettings[] = [{
     topTier: { unit: 'Month', format: 'MMM, yy', count: 1 },
     bottomTier: { unit: 'Week', format: 'dd', count: 1 }, timelineUnitSize: 33, level: 0,
@@ -51,7 +52,7 @@ let gantt: Gantt = new Gantt({
         duration: 'Duration',
         progress: 'Progress',
         dependency: 'Predecessor',
-        child: 'subtasks'
+        parentID: 'parentID'
     },
     toolbar: ['ZoomIn', 'ZoomOut', 'ZoomToFit'],
     labelSettings: {
@@ -64,6 +65,3 @@ let gantt: Gantt = new Gantt({
     projectEndDate: new Date('04/28/2019')
 });
 gantt.appendTo('#Gantt');
-
-
-

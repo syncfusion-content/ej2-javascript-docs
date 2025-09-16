@@ -14,18 +14,18 @@
 </head>
 
 <body>
-        <div id='loader'>Loading....</div>
-        <div id='container'>
-            <div id='Gantt'></div>        
-        </div>
+  <div id='loader'>Loading....</div>
+  <div id='container'>
+      <div id='Gantt'></div>        
+  </div>
 
-        <script type="text/x-template" id="resColumnTemplate">
-            ${if(ganttProperties.resourceNames)}
-              <div style= "${Resources(data.ganttProperties.resourceNames)}">
-                <span style= "${ResourcesStyles(data.ganttProperties.resourceNames)}">${ganttProperties.resourceNames}</span>
-              </div>
-            ${/if}
-        </script>
+  <script type="text/x-template" id="resColumnTemplate">
+      ${if(ganttProperties.resourceNames)}
+        <div style= "${Resources(data.ganttProperties.resourceNames)}">
+          <span style= "${ResourcesStyles(data.ganttProperties.resourceNames)}">${ganttProperties.resourceNames}</span>
+        </div>
+      ${/if}
+  </script>
 </body>
 
 </html>

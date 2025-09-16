@@ -9,12 +9,12 @@ var ganttChart = new ej.gantt.Gantt({
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            child: 'subtasks'
+            parentID: 'ParentID'
         },
 		allowFiltering: true,
 		filterSettings: {
             columns: [{ field: 'TaskName', matchCase: false, operator: 'startswith', predicate: 'and', value: 'Identify' },
-               { field: 'Progress', matchCase: false, operator: 'equal', predicate: 'and', value: 50 }]
+               { field: 'Progress', matchCase: false, operator: 'equal', predicate: 'and', value: 90 }]
         }
 });
 ganttChart.appendTo('#Gantt');
@@ -25,6 +25,3 @@ filterBtn.appendTo('#clearFilter');
 document.getElementById('clearFilter').addEventListener('click', function() {
     ganttChart.clearFiltering();
 });
-
-
-

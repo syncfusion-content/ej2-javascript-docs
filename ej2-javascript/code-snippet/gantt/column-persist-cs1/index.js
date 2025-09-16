@@ -7,7 +7,7 @@ var ganttChart = new ej.gantt.Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks',
+        parentID: 'ParentID',
     },
     columns: [
         { field: 'TaskID', headerText: 'Task ID', textAlign: 'Right', width: 120 },

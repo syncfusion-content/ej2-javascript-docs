@@ -62,7 +62,7 @@ palette.appendTo('#element');
 
 let tooltipCheckBox = document.getElementById('showTooltip');
 if (tooltipCheckBox) {
-  tooltipCheckBox.onclick = function (args) {
+  tooltipCheckBox.onclick = function () {
     palette.refresh();
   };
 }

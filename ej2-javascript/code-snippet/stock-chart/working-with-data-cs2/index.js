@@ -1,3 +1,4 @@
+var checked = false;
 var stockChart = new ej.charts.StockChart({
     series: [
         {

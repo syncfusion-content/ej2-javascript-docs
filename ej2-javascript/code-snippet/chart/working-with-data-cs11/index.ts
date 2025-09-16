@@ -10,8 +10,6 @@ import { Button } from '@syncfusion/ej2-buttons';
 
 Chart.Inject(LineSeries, Category, Tooltip);
 
-(window as any).default = (): void => {
-
     const chartData: any[] = [
         { Month: 'January', Value: 19173 },
         { Month: 'February', Value: 17726 },
@@ -91,4 +89,3 @@ Chart.Inject(LineSeries, Category, Tooltip);
     });
 
     chart.appendTo('#element');
-};

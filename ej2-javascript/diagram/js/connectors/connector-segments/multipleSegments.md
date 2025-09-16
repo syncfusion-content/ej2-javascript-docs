@@ -41,8 +41,8 @@ This functionality ensures consistent editing behavior across all connector type
 The following example demonstrates undo and redo functionality for connector segments:
 
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/diagram/connectors-segundo/index.ts %}
+{% highlight ts tabtitle="index.js" %}
+{% include code-snippet/diagram/connectors-segundo/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/diagram/connectors-segundo/index.html %}

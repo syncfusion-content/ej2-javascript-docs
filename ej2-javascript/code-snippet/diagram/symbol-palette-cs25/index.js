@@ -30,7 +30,7 @@ function getFlowShapes() {
 
 var checkBox = document.getElementById('showTooltip');
 
-//Initializes the symbol palette
+// Initializes the symbol palette.
 var palette = new ej.diagrams.SymbolPalette({
   expandMode: 'Multiple',
   palettes: [
@@ -58,14 +58,15 @@ var palette = new ej.diagrams.SymbolPalette({
   symbolWidth: 70,
   symbolPreview: { height: 80, width: 80 },
   symbolMargin: { left: 15, right: 15, top: 15, bottom: 15 },
-  //Enable/disable tooltip for the symbols
+  
+  // Enable/disable tooltip for the symbols.
   getSymbolInfo: function (symbol) {
     return { showTooltip: checkBox.checked };
   },
 });
 palette.appendTo('#element');
 
-document.getElementById('showTooltip').onclick = function (args) {
+document.getElementById('showTooltip').onclick = function () {
   palette.refresh();
 };
 

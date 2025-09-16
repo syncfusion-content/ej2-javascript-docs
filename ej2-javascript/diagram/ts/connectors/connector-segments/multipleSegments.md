@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Multiple segments in ##Platform_Name## Diagram control | Syncfusion®
-description: Learn here how to create connectors with multiple segments in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more.
+description: Learn here how to create connectors with multiple Segments in Syncfusion® ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more
 platform: ej2-javascript
 control: Multiple segments
 publishingplatform: ##Platform_Name##

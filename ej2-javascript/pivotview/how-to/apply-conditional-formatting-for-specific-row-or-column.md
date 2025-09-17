@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Apply conditional formatting for specific row or column in ##Platform_Name## Pivotview control | Syncfusion
-description: Learn here all about Apply conditional formatting for specific row or column in Syncfusion ##Platform_Name## Pivotview control of Syncfusion Essential JS 2 and more.
+title: TypeScript Pivot Table: Conditional Formatting | Syncfusion
+description: Apply conditional formatting to rows or columns in the Syncfusion EJ2 TypeScript Pivot Table. Customize cell styles based on values to highlight key data.
 platform: ej2-javascript
 control: Apply conditional formatting for specific row or column 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Apply conditional formatting for specific row or column in ##Platform_Name## Pivotview control
+# Conditional Formatting for Specific Rows or Columns
 
 You can apply conditional formatting for specific row or column using `label` option in the pivot table. It can be configured using the `conditionalFormatSettings` option through code behind, during initial rendering. The required settings are:
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Perform cell selection and get selected cells information in ##Platform_Name## Pivotview control | Syncfusion
-description: Learn here all about Perform cell selection and get selected cells information in Syncfusion ##Platform_Name## Pivotview control of Syncfusion Essential JS 2 and more.
+title: TypeScript Pivot Table: Select Cells & Get Data | Syncfusion
+description: Select and retrieve data from cells in the Syncfusion EJ2 TypeScript Pivot Table. Learn to manage user interaction and data extraction.
 platform: ej2-javascript
 control: Perform cell selection and get selected cells information 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Perform cell selection and get selected cells information in ##Platform_Name## Pivotview control
+# Cell Selection and Getting Cell Information
 
 To select any cell or row using mouse or arrow keys, set the `gridSettings.allowSelection` property to true. The selected cells will be highlighted.
 

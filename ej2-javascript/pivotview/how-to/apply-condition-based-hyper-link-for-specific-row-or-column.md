@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TypeScript Pivot Table: Conditional Hyperlinks | Syncfusion
-description: Apply conditional hyperlinks to rows or columns in the Syncfusion EJ2 TypeScript Pivot Table. Dynamically create unique cell links based on values.
+title: ##Platform_Name## Pivot Table: Conditional Hyperlinks | Syncfusion
+description: Apply conditional hyperlinks to rows or columns in the Syncfusion EJ2 ##Platform_Name## Pivot Table. Dynamically create unique cell links based on values.
 platform: ej2-javascript
 control: Apply condition based hyper link for specific row or column 
 publishingplatform: ##Platform_Name##

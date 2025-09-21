@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TypeScript Pivot Table: Conditional Formatting | Syncfusion
-description: Apply conditional formatting to rows or columns in the Syncfusion EJ2 TypeScript Pivot Table. Customize cell styles based on values to highlight key data.
+title: ##Platform_Name## Pivot Table: Conditional Formatting | Syncfusion
+description: Apply conditional formatting to rows or columns in the Syncfusion EJ2 ##Platform_Name## Pivot Table. Customize cell styles based on values to highlight key data.
 platform: ej2-javascript
 control: Apply conditional formatting for specific row or column 
 publishingplatform: ##Platform_Name##

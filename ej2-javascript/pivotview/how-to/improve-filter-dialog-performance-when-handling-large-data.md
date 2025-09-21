@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TypeScript Pivot Table: Fast Filtering for Large Data | Syncfusion
-description: Improve filter dialog performance for large datasets in the Syncfusion EJ2 TypeScript Pivot Table. Learn tips to optimize your app for speed.
+title: ##Platform_Name## Pivot Table: Fast Filtering for Large Data | Syncfusion
+description: Improve filter dialog performance for large datasets in the Syncfusion EJ2 ##Platform_Name## Pivot Table. Learn tips to optimize your app for speed.
 platform: ej2-javascript
 control: Improve filter dialog performance when handling large data 
 publishingplatform: ##Platform_Name##

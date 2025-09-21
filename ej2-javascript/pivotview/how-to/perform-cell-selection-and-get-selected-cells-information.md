@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TypeScript Pivot Table: Select Cells & Get Data | Syncfusion
-description: Select and retrieve data from cells in the Syncfusion EJ2 TypeScript Pivot Table. Learn to manage user interaction and data extraction.
+title: ##Platform_Name## Pivot Table: Select Cells & Get Data | Syncfusion
+description: Select and retrieve data from cells in the Syncfusion EJ2 ##Platform_Name## Pivot Table. Learn to manage user interaction and data extraction.
 platform: ej2-javascript
 control: Perform cell selection and get selected cells information 
 publishingplatform: ##Platform_Name##

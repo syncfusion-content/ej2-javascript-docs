@@ -59,7 +59,7 @@ npm install @google/generative-ai
 
 Create ##Platform_Name## application to integrate the Open AI with AI AssistView component with the respective files
 
-> Add your generated `API Key` at the line 
+* Add your generated `API Key` at the line 
 
 ```bash
 

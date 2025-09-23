@@ -128,5 +128,5 @@ For versions 30.x.x and earlier, follow the platform-based licensing model:
 ## See Also
 
 * [How to register Syncfusion<sup style="font-size:70%">&reg;</sup> license key in the application?](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration)
-* [Syncfusion Licensing Overview](https://ej2.syncfusion.com/documentation/licensing/overview)
+* [Syncfusion Licensing Overview](https://ej2.syncfusion.com/javascript/documentation/licensing/overview)
 * [Licensing FAQ](https://ej2.syncfusion.com/javascript/documentation/licensing/licensing-troubleshoot)

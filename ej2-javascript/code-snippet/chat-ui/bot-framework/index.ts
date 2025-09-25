@@ -1,6 +1,6 @@
 import { Chat, UserModel } from '@syncfusion/ej2-interactive-chat';
 import { DirectLine } from 'directline-js';
-import axios from 'axios';}
+import {axios} from 'axios';
 
 const currentUserModel: UserModel = {
     id: "user1",

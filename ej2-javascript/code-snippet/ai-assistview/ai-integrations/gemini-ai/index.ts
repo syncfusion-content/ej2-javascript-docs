@@ -60,7 +60,6 @@ async function onPromptRequest(args: any) {
         stopStreaming = false;
         await streamResponse(response);
     } catch (error) {
-        console.error('Error fetching Gemini response:', error);
         aiAssistView.addPromptResponse(
             '⚠️ Something went wrong while connecting to the AI service. Please check your API key or try again later.'
         );

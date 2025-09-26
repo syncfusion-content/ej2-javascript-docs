@@ -18,24 +18,16 @@ var ganttChart = new ej.gantt.Gantt({
     dataSource: GanttData,
     height: '450px',
     taskFields: {
-        id: 'TaskId',
+        id: 'TaskID',
         name: 'TaskName',
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        parentID:'ParentId'
+        parentID:'ParentID'
     },
-    columns: [
-        { field: 'TaskId'},
-        { field: 'TaskName'},
-        { field: 'StartDate'},
-        { field: 'Duration', visible: false},
-        { field: 'Progress'}
-    ],
     allowPdfExport: true,
     toolbar: ['PdfExport'],
     toolbarClick: clickHandler,
     pdfQueryCellInfo: pdfQueryCellInfo
 });
 ganttChart.appendTo('#GanttExport');
-

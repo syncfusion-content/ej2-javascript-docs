@@ -8,7 +8,7 @@ var ganttChart = new ej.gantt.Gantt({
         endDate: "EndDate",
         duration: "Duration",
         progress: "Progress",
-        child: "subtasks",
+        parentID: 'ParentID',
         segments: "Segments"
     },
 

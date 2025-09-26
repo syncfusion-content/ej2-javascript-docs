@@ -18,7 +18,7 @@ var ganttChart = new ej.gantt.Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Search', 'ZoomIn', 'ZoomOut', 'ZoomToFit','Indent','Outdent', 
     'PrevTimeSpan', 'NextTimeSpan','Undo','Redo'],
@@ -29,4 +29,3 @@ var ganttChart = new ej.gantt.Gantt({
     }
      });
 ganttChart.appendTo('#Gantt');
-

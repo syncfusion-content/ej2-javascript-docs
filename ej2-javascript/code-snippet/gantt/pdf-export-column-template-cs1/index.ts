@@ -1,8 +1,5 @@
-
-
-
 import { Gantt, Toolbar, PdfExport, Selection, PdfExportProperties,PdfQueryCellInfoEventArgs } from '@syncfusion/ej2-gantt';
-import { GanttData,editingResources } from 'datasource.ts';
+import { GanttData,editingResources } from './datasource.ts';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
 
 Gantt.Inject(Toolbar, PdfExport, Selection);
@@ -18,13 +15,15 @@ let clickHandler: EmitType<ClickEventArgs> = (args: ClickEventArgs) => {
 function pdfQueryCellInfo(args: PdfQueryCellInfoEventArgs): any {
     if (args.column.headerText === 'Resources') {
         {
-            args.image = { height:40,width:40, base64: (args as any).data.taskData.resourcesImage };
+            args.image = { height:40,width:40, base64: (args as any).data.taskData.ResourcesImage };
         }
     }
+    console.log(args.column.headerText);
     if (args.column.headerText === 'Email ID') {
+        console.log(args.data.taskData);
         args.hyperLink = {
-            target: 'mailto:' + (args as any).data.taskData.EmailId,
-            displayText: (args as any).data.taskData.EmailId
+            target: 'mailto:' + (args as any).data.taskData.EmailID,
+            displayText: (args as any).data.taskData.EmailID
         };
     }
 }
@@ -39,15 +38,15 @@ let gantt: Gantt = new Gantt({
         endDate: 'EndDate',
         duration: 'Duration',
         progress: 'Progress',
-        resourceInfo: 'resources',
+        resourceInfo: 'Resources',
         dependency: 'Predecessor',
-        child: 'subtasks'
+        parentID: 'ParentID',
     },
     columns: [
         { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left' },
         { field: 'TaskName', headerText: 'Task Name', width: '250' },
-        { field: 'resources', headerText: 'Resources', width: '250', template: '#columnTemplate' },
-        {field: 'EmailId', headerText: 'Email ID', template: '#template2', width: 180 },
+        { field: 'Resources', headerText: 'Resources', width: '250', template: '#columnTemplate' },
+        {field: 'EmailID', headerText: 'Email ID', template: '#template2', width: 180 },
     ],
     pdfQueryCellInfo: pdfQueryCellInfo,
     allowPdfExport: true,
@@ -55,13 +54,10 @@ let gantt: Gantt = new Gantt({
     toolbarClick: clickHandler,
     resources: editingResources,
     resourceFields: {
-        id: 'resourceId',
-        name: 'resourceName'
+        id: 'ResourceId',
+        name: 'ResourceName'
     },
     projectStartDate: new Date('03/24/2019'),
     projectEndDate: new Date('07/06/2019')
 });
 gantt.appendTo('#GanttExport');
-
-
-

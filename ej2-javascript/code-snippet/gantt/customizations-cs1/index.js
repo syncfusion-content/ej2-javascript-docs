@@ -7,7 +7,7 @@ var ganttChart = new ej.gantt.Gantt({
             startDate: 'StartDate',
 			duration: 'Duration',
             progress: 'Progress',
-			child: 'subtasks'
+			parentID: 'ParentID'
         },
 		rowHeight:60,
 		milestoneTemplate:'#MilestoneTemplate',
@@ -15,4 +15,3 @@ var ganttChart = new ej.gantt.Gantt({
 		taskbarTemplate: '#TaskbarTemplate'
 });
 ganttChart.appendTo('#Gantt');
-

@@ -1,8 +1,10 @@
 import { AIAssistView } from '@syncfusion/ej2-interactive-chat';
 import marked from 'marked';
 
-// Initialize Gemini API (using OpenAI API in this case)
-let openaiApiKey = ''; // Replace with your actual API key
+const azureOpenAIApiKey = ''; // replace your key
+const azureOpenAIEndpoint = ''; // replace your endpoint
+const azureOpenAIApiVersion = ''; // replace to match your resource
+const azureDeploymentName = ''; // your Azure OpenAI deployment name
 let stopStreaming = false;
 let suggestions = [
     'What are the best tools for organizing my tasks?',
@@ -48,11 +50,16 @@ async function streamResponse(response) {
 }
 
 function onPromptRequest(args) {
-    fetch('https://api.openai.com/v1/chat/completions', {
+        const url =
+        azureOpenAIEndpoint.replace(/\/$/, '') +
+        `/openai/deployments/${encodeURIComponent(azureDeploymentName)}/chat/completions` +
+        `?api-version=${encodeURIComponent(azureOpenAIApiVersion)}`;
+
+        fetch(url, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            Authorization: `Bearer ${openaiApiKey}`,
+            Authorization: azureOpenAIApiKey,
         },
         body: JSON.stringify({
             model: 'gpt-4o-mini',
@@ -68,8 +75,8 @@ function onPromptRequest(args) {
         streamResponse(responseText);
     })
     .catch(error => {
-        aiAssistView.addPromptResponse('⚠️ Something went wrong while connecting to the AI service. Please check your API key or try again later.');
-        stopStreaming = true; // Ensure streaming is stopped
+        aiAssistView.addPromptResponse('⚠️ Something went wrong while connecting to the AI service. Please check your API key, Deployment model, endpoint or try again later.', true);
+        stopStreaming = true;
     });
 }
 

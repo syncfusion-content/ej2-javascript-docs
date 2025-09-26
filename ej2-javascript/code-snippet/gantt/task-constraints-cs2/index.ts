@@ -1,10 +1,6 @@
-
-
-
 import {  Gantt, Edit, Selection, Toolbar, DayMarkers } from '@syncfusion/ej2-gantt';
-import { constraintData } from 'datasource.ts';
+import { constraintData } from './datasource.ts';
 Gantt.Inject(Edit, Selection, Toolbar, DayMarkers);
-
 
 let gantt: Gantt = new Gantt({
     dataSource: constraintData,
@@ -93,4 +89,3 @@ gantt.appendTo('#Gantt');
     };
     return map[value];
 };
-

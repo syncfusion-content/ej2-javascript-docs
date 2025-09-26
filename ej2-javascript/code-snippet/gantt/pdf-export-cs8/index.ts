@@ -12,23 +12,23 @@ let clickHandler = (args: ClickEventArgs) => {
 
 let beforePdfExport = (args: Object) => {
     (gantt.treeGrid.columns[2] as any).visible = false;
-    (gantt.treeGrid.columns[2] as any).visible = true;
+    (gantt.treeGrid.columns[3] as any).visible = true;
 };
 
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
     height: '450px',
     taskFields: {
-        id: 'TaskId',
+        id: 'TaskID',
         name: 'TaskName',
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
         dependency: 'Predecessor',
-        parentID:'ParentId',
+        parentID:'ParentID',
     },
     columns: [
-        { field: 'TaskId'},
+        { field: 'TaskID'},
         { field: 'TaskName'},
         { field: 'StartDate'},
         { field: 'Duration', visible: false},

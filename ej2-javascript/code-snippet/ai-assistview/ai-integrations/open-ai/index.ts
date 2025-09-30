@@ -2,10 +2,10 @@ import { AIAssistView } from '@syncfusion/ej2-interactive-chat';
 import marked from 'marked';
 
 // Initialize Gemini API (using OpenAI API in this case)
-const azureOpenAIApiKey = ''; // replace your key
-const azureOpenAIEndpoint = ''; // replace your endpoint
-const azureOpenAIApiVersion = ''; // replace to match your resource
-const azureDeploymentName = ''; // your Azure OpenAI deployment name
+const azureOpenAIApiKey = 'YOUR_AZURE_OPENAI_API_KEY'; // replace your key
+const azureOpenAIEndpoint = 'YOUR_AZURE_OPENAI_API_ENDPOINT'; // replace your endpoint
+const azureOpenAIApiVersion = 'YOUR_AZURE_OPENAI_API_VERSION'; // replace to match your resource
+const azureDeploymentName = 'YOUR_DEPLOYMENT_NAME'; // your Azure OpenAI deployment name
 let stopStreaming = false;
 let suggestions = [
     'What are the best tools for organizing my tasks?',

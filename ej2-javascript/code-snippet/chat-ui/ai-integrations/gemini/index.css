@@ -1,0 +1,37 @@
+#container {
+    visibility: hidden;
+    margin: 20px auto;
+}
+
+#loader {
+    color: #008cff;
+    height: 40px;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 30%;
+}
+.default-chatui {
+    height: 400px;
+    width:400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.emptychat-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.e-ai-chat{
+    margin-top:10px;
+    font-size:18px;
+}
+.e-message-content p {
+    margin: 0;
+    display: inline-block;
+}
+.e-assistview-icon{
+    font-size: 24px;
+}

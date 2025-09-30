@@ -35,7 +35,7 @@ let chatUI: ChatUI = new ChatUI({
       chatUI.typingUsers = [aiModel];
 
       try {
-        const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+        const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' }); //Replace Your Model Name Here
         const result = await model.generateContent(args.message.text);
         const response = result.response.text();
 
@@ -45,8 +45,6 @@ let chatUI: ChatUI = new ChatUI({
           author: aiModel,
         });
       } catch (error) {
-        console.error('Error fetching Gemini response:', error);
-        // Add error message
         chatUI.addMessage({
           text: 'Error generating response. Please try again.',
           author: aiModel,

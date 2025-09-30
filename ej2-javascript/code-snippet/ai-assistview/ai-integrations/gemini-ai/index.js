@@ -51,7 +51,7 @@ import { AIAssistView } from '@syncfusion/ej2-interactive-chat';
  
  async function onPromptRequest(args) {
      try {
-         const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+         const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' }); //Replace Your Model Name Here
          const result = await model.generateContent(args.prompt);
          const response = result.response.text();
          stopStreaming = false;

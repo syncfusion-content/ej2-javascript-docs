@@ -31,7 +31,7 @@ Before integrating LLM model, ensure that the Syncfusion AI AssistView control i
 
 ```bash 
 
-npm install @syncfusion/ej2-react-interactive-chat --save
+npm install @syncfusion/ej2-interactive-chat --save
 
 ```
 

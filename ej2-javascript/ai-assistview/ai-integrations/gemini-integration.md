@@ -15,7 +15,7 @@ The Syncfusion AI AssistView supports integration with [Gemini](https://ai.googl
 
 ## Getting Started With the ##Platform_Name## AI AssistView control
 
-Before integrating Gemini AI, ensure that the Syncfusion Chat UI control is correctly rendered in your application:
+Before integrating Gemini AI, ensure that the Syncfusion AI AssistView control is correctly rendered in your application:
 
 [ ##Platform_Name## Getting Started Guide](../getting-started)
 
@@ -27,7 +27,7 @@ Before integrating Gemini AI, ensure that the Syncfusion Chat UI control is corr
 
 ## Install Dependencies
 
-Install the Syncfusion Chat UI in your project
+Install the Syncfusion AI AssistView in your project
 
 ```bash 
 

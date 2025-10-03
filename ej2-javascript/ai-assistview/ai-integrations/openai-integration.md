@@ -31,7 +31,7 @@ Install the Syncfusion AI AssistView in your project
 
 ```bash 
 
-npm install @syncfusion/ej2-react-interactive-chat --save
+npm install @syncfusion/ej2-interactive-chat --save
 
 ```
 
@@ -41,7 +41,7 @@ npm install @syncfusion/ej2-react-interactive-chat --save
 
 2. Under Resource Management, select Keys and Endpoint to retrieve your API key and endpoint URL.  
 
-3. Copy the API key, endpoint, and deployment name (e.g., gpt-4o-mini). Ensure the API version (e.g., 2024-07-01-preview) matches your resource configuration.
+3. Copy the API key, endpoint, and deployment name (e.g., gpt-4o-mini). Ensure the API version matches your resource configuration.
 
 4. Store these values securely, as they will be used in your application.
 

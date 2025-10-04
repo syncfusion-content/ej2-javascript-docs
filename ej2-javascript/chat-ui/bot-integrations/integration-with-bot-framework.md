@@ -9,21 +9,21 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integration of Microsoft Bot With ##Platform_Name## Chat UI control
+# Microsoft Bot With JavaScript Chat UI control
 
-The Syncfusion Chat UI supports integration with a Microsoft Bot Framework bot hosted on Azure, enabling a custom chat interface for seamless user interaction. The process involves setting up a secure backend token server, configuring the bot in Azure, and integrating the Syncfusion Chat UI in your application.
+The Syncfusion Chat UI supports integration with a [Microsoft Bot Framework](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0) bot hosted on Azure, enabling a custom chat interface for seamless user interaction. The process involves setting up a secure backend token server, configuring the bot in Azure, and integrating the Syncfusion Chat UI in your application.
 
 ## Getting Started With the Chat UI control
 
 Before integrating Microsoft Bot Framework, ensure that the Syncfusion Chat UI control is correctly rendered in your application:
 
-[##Platform_Name## Getting Started Guide](../getting-started)
+[JavaScript Getting Started Guide](../getting-started)
 
 ## Prerequisites
 
-* `Microsoft Azure Account`: Required to create and host the bot.
+* [Microsoft Azure Account](https://portal.azure.com/#home): Required to create and host the bot.
 * `Node.js Environment`: The backend portion requires `Node.js` and `npm`.
-* `Syncfusion Chat UI`: Install @syncfusion/ej2-interactive-chat in your  project.
+* `Syncfusion Chat UI`: Install `@syncfusion/ej2-interactive-chat` in your  project.
 * `Deployed Azure Bot`: A bot should be created and published using the Bot Framework, which is accessible via an Azure App Service. Refer to Microsoft's Bot Creation Guide.
 
 ## Install Dependencies
@@ -53,11 +53,11 @@ npm install express axios cors dotenv
 
 1. In the [Azure Portal](https://portal.azure.com/#home), navigate to your bot resource.
 
-2. Enable the Direct Line channel:
+2. Enable the direct line channel:
     * Go to `Channels` > `Direct Line` > `Default-Site`.
     * Copy one of the displayed secret keys.
 
-3. Verify the Messaging endpoint in the Configuration section (e.g., https://your-bot-service.azurewebsites.net/api/messages).
+3. Verify the messaging endpoint in the configuration section (e.g., https://your-bot-service.azurewebsites.net/api/messages).
 
 > `Security Note`: Never expose the Direct Line secret key in frontend code. Use a backend token server to handle it securely.
 
@@ -109,9 +109,9 @@ app.listen(port, () => console.log(`Token server running on http://localhost:${p
 {% endhighlight %}
 {% endtabs %}
 
-## Integrate ChatUI in ##Platform_Name##
+## Configure ChatUI
 
-Add the below files in their respective files to connect the Syncfusion Chat UI to the bot via the Direct Line API:
+Add the below files in their respective files to connect the Syncfusion Chat UI to the bot via the direct line API:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -158,12 +158,12 @@ In a separate terminal window, navigate to your project folder and start the dev
 npm start
 
 ```
-Open `http://localhost:3000` to interact with your Microsoft Bot Framework chatbot.
+Open the hosted link to interact with your Microsoft Bot Framework chatbot.
 
 ## Troubleshooting
 
 * `Token Server Error (500)`: Ensure the `DIRECT_LINE_SECRET` in the `.env` file is correct and that you have restarted the token server after changes.
-* `CORS Error`: Ensure the CORS configuration in `index.js` allows requests from your frontend URL (e.g., `http://localhost:3000`).
+* `CORS Error`: Ensure the CORS configuration in `index.js` allows requests from your frontend hosted URL.
 * `Bot is Not Responding`:
   - Test the bot in the Azure Portal using the `Test in Web Chat` feature to ensure it's running correctly.
   - Check the bot's `Messaging endpoint` in the Configuration section and ensure it is correct and accessible.

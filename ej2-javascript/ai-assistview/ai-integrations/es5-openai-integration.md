@@ -9,31 +9,20 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Azure Open AI With TypeScript AI AssistView control 
+# Azure Open AI With JavaScript AI AssistView control 
 
 The Syncfusion AI AssistView supports integration with [Azure Open AI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai), enabling advanced conversational AI features in your applications.
 
-## Getting Started with the TypeScript AI AssistView control
+## Getting Started with the JavaScript AI AssistView control
 
 Before integrating Azure Open AI, ensure that the Syncfusion AI AssistView control is correctly rendered in your app:
 
-[TypeScript Getting Started Guide](../getting-started)
+[JavaScript Getting Started Guide](../getting-started)
 
 ## Prerequisites
 
 * Requires `Node.js` (v16 or higher) and `npm`.
 * An Azure account with access to [Azure Open AI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai) services and a generated API key.
-* Syncfusion AI AssistView for TypeScript `@syncfusion/ej2-interactive-chat` installed in your project.
-
-## Install Dependencies
-
-Install the Syncfusion AI AssistView in your project
-
-```bash 
-
-npm install @syncfusion/ej2-interactive-chat --save
-
-```
 
 ## Generate Azure API Key
 
@@ -47,40 +36,35 @@ npm install @syncfusion/ej2-interactive-chat --save
 
 > `Security Note`: Never expose your API key in client-side code for production applications. Use a server-side proxy or environment variables to manage sensitive information securely.
 
-## Configure Open AI with TypeScript AI AssistView control
+##  Configure Open AI with JavaScript AI AssistView control
 
-Create TypeScript application to integrate the Open AI with AI AssistView component with the respective files:
+Create JavaScript application to integrate the Open AI with AI AssistView component with the respective files:
 
 * Update the following configuration values with your Azure Open AI details:
 
 ```bash
 
-const azureOpenAIApiKey = 'Your_Azure_OpenAI_API_Key';
-const azureOpenAIEndpoint = 'Your_Azure_OpenAI_Endpoint';
-const azureOpenAIApiVersion = 'Your_Azure_OpenAI_API_Version';
-const azureDeploymentName = 'Your_Deployment_Name';
+var azureOpenAIApiKey = 'Your_Azure_OpenAI_API_Key';
+var azureOpenAIEndpoint = 'Your_Azure_OpenAI_Endpoint';
+var azureOpenAIApiVersion = 'Your_Azure_OpenAI_API_Version';
+var azureDeploymentName = 'Your_Deployment_Name';
 
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/ai-assistview/ai-integrations/open-ai/index.ts %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/ai-assistview/ai-integrations/open-ai/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/ai-assistview/ai-integrations/open-ai/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/ai-assistview/ai-integrations/open-ai" %}
+
 
 ## Run and Test 
 
-Run the application in the browser using the following command.
+Now, run the `index.html` in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript AI AssistView** control.
 
-```bash
-
-npm start
-
-```
-
-Open the hosted link to interact with your Azure Open AI for dynamic response.
+Open the hosted link to interact with your Open AI for dynamic response.

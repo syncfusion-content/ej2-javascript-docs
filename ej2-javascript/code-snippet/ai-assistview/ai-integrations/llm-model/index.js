@@ -1,14 +1,11 @@
-import { AIAssistView } from "@syncfusion/ej2-interactive-chat";
-import marked from 'marked';
-
-const suggestions = [
+var suggestions = [
   'What are the best tools for organizing my tasks?',
   'How can I maintain work-life balance effectively?',
 ];
-let stopStreaming = false;
+var stopStreaming = false;
 
 // Initialize AI AssistView
-const aiAssist = new AIAssistView({
+var aiAssist = new ej.interactivechat.AIAssistView({
      bannerTemplate:
  '<div class="banner-content"><div class="e-icons e-assistview-icon"></div><h3>AI Assistance</h3><div>To get started, provide input or choose a suggestion.</div></div>',
   promptSuggestions: suggestions,
@@ -20,11 +17,11 @@ const aiAssist = new AIAssistView({
   stopRespondingClick: handleStopResponse
 });
 async function onPromptrequest(args) {
-  let lastResponse = "";
-  const defaultResponse = "⚠️ Something went wrong while connecting to the AI service. Please check your Ollama application running background.";
+  var lastResponse = "";
+  var defaultResponse = "⚠️ Something went wrong while connecting to the AI service. Please check your Ollama application running background.";
   try {
       // Send request to Ollama API
-      const response = await fetch('http://localhost:11434/api/generate', {
+      var response = await fetch('http://localhost:11434/api/generate', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -33,16 +30,16 @@ async function onPromptrequest(args) {
           stream: false,
       }),
       });
-      const reply = await response.json();
-      const responseUpdateRate = 10;
+      var reply = await response.json();
+      var responseUpdateRate = 10;
       async function streamResponse(response) {
-          let i = 0;
-          const responseLength = response.length;
+          var i = 0;
+          var responseLength = response.length;
           while (i < responseLength && !stopStreaming) {
           lastResponse += response[i];
           i++;
           if (i % responseUpdateRate === 0 || i === responseLength) {
-              const htmlResponse =marked.parse(lastResponse);
+              var htmlResponse =marked.parse(lastResponse);
               aiAssist.addPromptResponse(htmlResponse, i === responseLength);
               aiAssist.scrollToBottom();
           }
@@ -60,7 +57,7 @@ async function onPromptrequest(args) {
   aiAssist.promptSuggestions = suggestions;
   }
 }
-// Append the AI AssistView to the container
+
 aiAssist.appendTo('#llmAssist');
 
 function handleStopResponse() {

@@ -1,18 +1,14 @@
-import { AIAssistView } from '@syncfusion/ej2-interactive-chat';
-import marked from 'marked';
-
-const azureOpenAIApiKey = ''; // replace your key
-const azureOpenAIEndpoint = ''; // replace your endpoint
-const azureOpenAIApiVersion = ''; // replace to match your resource
-const azureDeploymentName = ''; // your Azure OpenAI deployment name
-let stopStreaming = false;
-let suggestions = [
+var azureOpenAIApiKey = ''; // replace your key
+var azureOpenAIEndpoint = ''; // replace your endpoint
+var azureOpenAIApiVersion = ''; // replace to match your resource
+var azureDeploymentName = ''; // your Azure OpenAI deployment name
+var stopStreaming = false;
+var suggestions = [
     'What are the best tools for organizing my tasks?',
     'How can I maintain work-life balance effectively?',
 ];
 
-// Initialize AI AssistView
-let aiAssistView = new AIAssistView({
+var aiAssistView = new ej.interactivechat.AIAssistView({
     promptSuggestions: suggestions,
     toolbarSettings: {
         items: [{ iconCss: 'e-icons e-refresh', align: 'Right' }],
@@ -32,29 +28,28 @@ function toolbarItemClicked(args) {
 }
 
 async function streamResponse(response) {
-    let lastResponse = "";
-    const responseUpdateRate = 10;
-    let i = 0;
-    const responseLength = response.length;
+    var lastResponse = "";
+    var responseUpdateRate = 10;
+    var i = 0;
+    var responseLength = response.length;
     while (i < responseLength && !stopStreaming) {
         lastResponse += response[i];
         i++;
         if (i % responseUpdateRate === 0 || i === responseLength) {
-            const htmlResponse = marked.parse(lastResponse);
+            var htmlResponse = marked.parse(lastResponse);
             aiAssistView.addPromptResponse(htmlResponse, i === responseLength);
             aiAssistView.scrollToBottom();
         }
-        await new Promise(resolve => setTimeout(resolve, 15)); // Delay before the next chunk
+        await new Promise(resolve => setTimeout(resolve, 15));
     }
     aiAssistView.promptSuggestions = suggestions;
 }
 
 function onPromptRequest(args) {
-        const url =
+        var url =
         azureOpenAIEndpoint.replace(/\/$/, '') +
         `/openai/deployments/${encodeURIComponent(azureDeploymentName)}/chat/completions` +
         `?api-version=${encodeURIComponent(azureOpenAIApiVersion)}`;
-
         fetch(url, {
         method: 'POST',
         headers: {
@@ -70,7 +65,7 @@ function onPromptRequest(args) {
     })
     .then(response => response.json())
     .then(reply => {
-        const responseText = reply.choices[0].message.content.trim() || 'No response received.';
+        var responseText = reply.choices[0].message.content.trim() || 'No response received.';
         stopStreaming = false;
         streamResponse(responseText);
     })
@@ -83,5 +78,5 @@ function onPromptRequest(args) {
 function handleStopResponse() {
     stopStreaming = true;
 }
- // Render AI AssistView
+
  aiAssistView.appendTo('#defaultAssist');

@@ -9,39 +9,20 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Gemini AI With TypeScript AI AssistView control
+# Gemini AI With JavaScript AI AssistView control
 
 The Syncfusion AI AssistView supports integration with [Gemini](https://ai.google.dev/gemini-api/docs), enabling advanced conversational AI features in your applications.
 
-## Getting Started With the TypeScript AI AssistView control
+## Getting Started With the JavaScript AI AssistView control
 
 Before integrating Gemini AI, ensure that the Syncfusion AI AssistView control is correctly rendered in your application:
 
-[ TypeScript Getting Started Guide](../getting-started)
+[ JavaScript Getting Started Guide](../getting-started)
 
 ## Prerequisites
 
 * Requires `Node.js` (v16 or higher) and `npm`.
 * Google account to generate API key on accessing [Gemini AI](https://ai.google.dev/gemini-api/docs).
-* Syncfusion AI AssistView for TypeScript `@syncfusion/ej2-interactive-chat` installed in your project.
-
-## Install Dependencies
-
-Install the Syncfusion AI AssistView in your project
-
-```bash 
-
-npm install @syncfusion/ej2-interactive-chat --save
-
-```
-
-Install the Gemini AI dependencies
-
-```bash
-
-npm install @google/generative-ai
-
-```
 
 ## Generate API Key
 
@@ -55,38 +36,31 @@ npm install @google/generative-ai
 
 > `Security Note`: Never commit the API key to version control. Use environment variables or a secret manager for production.
 
-## Configure Gemini AI with AI AssistView
+##  Configure Gemini AI with AI AssistView
 
-Create TypeScript application to integrate the Gemini AI with AI AssistView component with the respective files
+Create JavaScript application to integrate the Open AI with AI AssistView component with the respective files
 
 * Add your generated `API Key` at the line 
 
 ```bash
 
-const geminiApiKey = 'Place your API key here'; 
+var geminiApiKey = 'Place your API key here'; 
 
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/ai-assistview/ai-integrations/gemini-ai/index.ts %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/ai-assistview/ai-integrations/gemini-ai/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/ai-assistview/ai-integrations/gemini-ai/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/ai-assistview/ai-integrations/gemini-ai" %}
 
+{% previewsample "page.domainurl/code-snippet/ai-assistview/ai-integrations/gemini-ai" %}
 
 ## Run and Test 
 
-Run the application in the browser using the following command.
-
-```bash
-
-npm start
-
-```
+Now, run the `index.html` in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript AI AssistView** control.
 
 Open the hosted link to interact with your Gemini AI for dynamic response.

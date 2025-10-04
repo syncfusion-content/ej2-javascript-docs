@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integration of LLM via Ollama With TypeScript AI AssistView control
+# LLM via Ollama With JavaScript AI AssistView control
 
 The Syncfusion AI AssistView supports integration with [LLM via Ollama](https://ollama.com), enabling advanced conversational AI features in your applications. This control acts as a UI for a support bot, where user prompts are sent to the selected AI service via API calls.
 
@@ -17,25 +17,16 @@ The Syncfusion AI AssistView supports integration with [LLM via Ollama](https://
 
 * Requires `Node.js` (v16 or higher) and `npm`.
 * [Ollama](https://ollama.com) application should be installed to run and manage LLM models locally.
-* Syncfusion AI AssistView for React `@syncfusion/ej2-interactive-chat` installed in your project.
 
 ## Step 1: Getting Started with the AI AssistView control
 
 Before integrating LLM model, ensure that the Syncfusion AI AssistView control is correctly rendered in your application:
 
-[ TypeScript Getting Started Guide](../getting-started)
+[ JavaScript Getting Started Guide](../getting-started)
 
 ## Step 2: Install Dependencies
 
-* Install the Syncfusion AI AssistView in your project
-
-```bash 
-
-npm install @syncfusion/ej2-interactive-chat --save
-
-```
-
-* Download and install `Ollama` based on your operating system:
+Download and install `Ollama` based on your operating system:
 
 {% tabs %}
 {% highlight ts tabtitle="Windows" %}
@@ -86,29 +77,23 @@ ollama serve
 
 ```
 
-## Step 4: Integrate AI AssistView in TypeScript
+## Step 4: Configure AI AssistView in JavaScript
 
-Create TypeScript application to integrate the `Ollama` model with AI AssistView control with the respective files
+Create JavaScript application to integrate the `Ollama` model with AI AssistView control with the respective files
 
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/ai-assistview/ai-integrations/llm-model/index.ts %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/ai-assistview/ai-integrations/llm-model/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/ai-assistview/ai-integrations/llm-model/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/ai-assistview/ai-integrations/llm-model" %}
 
 ## Step 5: Run and Test 
 
-Run the application in the browser using the following command.
+Now, run the `index.html` in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript AI AssistView** control.
 
-```bash
-
-npm start
-
-```
-
-Open the hosted link to interact with your AI model where you can enter prompts and receive responses from the `Ollama` model.
+Open the hosted link to interact with AI model where you can enter prompts and receive responses from the `Ollama` model.

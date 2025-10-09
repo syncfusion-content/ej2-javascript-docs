@@ -515,3 +515,5 @@ The [`layout`](../api/chart/legendSettingsModel/#layout) property in [`legendSet
 ## See also
 
 * [Customize each shape in legend](./how-to/#customize-each-shape-in-legend)
+* [Customize Legend Text](https://support.syncfusion.com/kb/article/20959/how-to-customize-legend-text-in-javascript-charts)
+* [Hide/Show Series by Clicking Single Legend](https://support.syncfusion.com/kb/article/21482/how-to-hideshow-series-by-clicking-single-legend-in-javascript-chart)

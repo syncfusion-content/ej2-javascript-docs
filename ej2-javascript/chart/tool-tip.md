@@ -240,3 +240,4 @@ The [`showNearestTooltip`](../api/chart/tooltipSettings/#shownearesttooltip) pro
 
 * [Format the tooltip value](./how-to/tool-tip-format.md)
 * [Create a table in tooltip](./how-to/tool-tip-table#create-a-table-in-tooltip.md)
+* [Change the Cursor to a Hand Pointer](https://support.syncfusion.com/kb/article/21505/how-to-change-the-cursor-to-a-hand-pointer-in-a-javascript-chart)

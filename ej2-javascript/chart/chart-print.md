@@ -239,3 +239,7 @@ You can export the rendered chart data to Excel in either `XLSX` or `CSV` format
 
 {% previewsample "page.domainurl/code-snippet/chart/export-cs7" %}
 {% endif %}
+
+## See Also
+
+* [Change Axis Label Color During Chart Export](https://support.syncfusion.com/kb/article/21484/how-to-change-axis-label-color-during-javascript-chart-export)

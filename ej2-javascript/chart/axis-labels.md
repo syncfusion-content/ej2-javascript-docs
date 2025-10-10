@@ -484,3 +484,8 @@ Line break feature used to customize the long axis label text into multiple line
 
 {% previewsample "page.domainurl/code-snippet/chart/axis-cs15" %}
 {% endif %}
+
+## See Also
+
+* [Remove Duplicate X-Axis Labels in Stacked Charts](https://support.syncfusion.com/kb/article/21504/how-to-remove-duplicate-x-axis-labels-in-stacked-charts-using-javascript)
+* [Format Axis Labels in Billions](https://support.syncfusion.com/kb/article/21518/how-to-format-axis-labels-in-billions-using-javascript-chart)

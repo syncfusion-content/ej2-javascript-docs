@@ -208,3 +208,4 @@ Marker can be filled with the series color by setting the [`isFilled`](../api/ch
 ## See also
 
 * [Customize the marker with different shape](./how-to/marker-customization#customize-the-marker-with-different-shape)
+* [Change the Cursor to a Pointer on Series Markers](https://support.syncfusion.com/kb/article/21473/how-to-change-the-cursor-to-a-pointer-on-series-markers-in-javascript-charts)

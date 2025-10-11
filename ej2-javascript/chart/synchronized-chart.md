@@ -144,3 +144,7 @@ You can select the data across multiple charts using the [`selectionComplete`](.
 
 {% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs48" %}
 {% endif %}
+
+## See Also
+
+* [Synchronized Hover Between EJ2 JavaScript Charts](https://support.syncfusion.com/kb/article/21479/how-to-synchronized-hover-between-ej2-javascript-charts)

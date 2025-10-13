@@ -9,7 +9,7 @@ var ganttChart = new ej.gantt.Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     highlightWeekends: true,
     weekWorkingTime: [{ dayOfWeek: 'Monday', timeRange: [{ from: 10, to: 18 }] },

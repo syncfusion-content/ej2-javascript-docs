@@ -20,7 +20,7 @@ var ganttChart = new ej.gantt.Gantt({
                 duration: 'Duration',
                 progress: 'Progress',
                 dependency: 'Predecessor',
-                child: 'subtasks',
+                parentID: 'ParentID',
             },
             columns: [
                 { field: 'TaskID', width: 80 },
@@ -29,7 +29,6 @@ var ganttChart = new ej.gantt.Gantt({
                 { field: 'EndDate' },
                 { field: 'Duration' },
                 { field: 'Predecessor' },
-                { field: 'resources' },
                 { field: 'Progress' }
             ],
             splitterSettings: {
@@ -42,10 +41,6 @@ var ganttChart = new ej.gantt.Gantt({
             gridLines: 'Both',
             height: '450px',
             treeColumnIndex: 1,
-            resourceFields: {
-                id: 'resourceId',
-                name: 'resourceName'
-            },
             highlightWeekends: true,
             timelineSettings: {
                 topTier: {
@@ -58,10 +53,8 @@ var ganttChart = new ej.gantt.Gantt({
             },
             labelSettings: {
                 leftLabel: 'TaskName',
-                rightLabel: 'resources'
             },
             projectStartDate: new Date('03/25/2019'),
             projectEndDate: new Date('07/28/2019')
 });
 ganttChart.appendTo('#GanttExport');
-

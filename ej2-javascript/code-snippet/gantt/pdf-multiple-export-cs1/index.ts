@@ -1,20 +1,17 @@
-
-
-
 import { Gantt, Toolbar,PdfExport, Selection } from '@syncfusion/ej2-gantt';
-import { GanttData } from 'datasource.ts';
+import { FirstGanttData, SecondGanttData } from './datasource.ts';
 
 Gantt.Inject(Toolbar, PdfExport, Selection);
 
 let firstGantt: Gantt = new Gantt({
-    dataSource: [GanttData[0]],
+    dataSource: FirstGanttData,
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'parentID',
     },
     treeColumnIndex: 1,
     allowPdfExport: true,
@@ -26,29 +23,26 @@ let firstGantt: Gantt = new Gantt({
 firstGantt.appendTo('#GanttExport1');
 
 let secondGantt: Gantt = new Gantt({
-    dataSource: [GanttData[1]],  
+    dataSource: SecondGanttData,  
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'parentID',
     },
     treeColumnIndex: 1,
-    toolbar: ['PdfExport'],
+    allowPdfExport: true,
     height: '250px'
 });
 secondGantt.appendTo('#GanttExport2');
 
 firstGantt.toolbarClick = (args: Object) => {
     if (args.item.id === 'GanttExport1_pdfexport') {
-        let firstGanttPdfExport: Promise<Object> = gantt.pdfExport({}, true);
+        let firstGanttPdfExport: Promise<Object> = firstGantt.pdfExport({}, true);
         firstGanttPdfExport.then(function(pdfData){
             secondGantt.pdfExport({}, false, pdfData);
         });
     }
 }
-
-
-

@@ -10,7 +10,7 @@ var ganttChart = new ej.gantt.Gantt({
             duration: 'Duration',
             dependency: 'Predecessor',
             progress: 'Progress',
-            child: 'subtasks',
+            parentID: 'ParentID',
             resourceInfo: 'resources'
         },
         resourceFields: {
@@ -43,5 +43,3 @@ var ganttChart = new ej.gantt.Gantt({
         }
      });
 ganttChart.appendTo('#Gantt');
-
-

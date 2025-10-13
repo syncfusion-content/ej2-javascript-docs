@@ -1,4 +1,3 @@
-
 import { Gantt, Selection, Toolbar, DayMarkers, Edit, Filter } from '@syncfusion/ej2-gantt';
 import { GanttData } from './datasource.ts';
 Gantt.Inject(Selection, Toolbar, DayMarkers, Edit, Filter);
@@ -42,13 +41,13 @@ let gantt: Gantt = new Gantt({
     dataSource: GanttData,
     allowSorting: true,
     taskFields: {
-        id: 'TaskId',
+        id: 'TaskID',
         name: 'TaskName',
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
         dependency: 'Predecessor',
-        parentID: 'ParentId',
+        parentID: 'ParentID',
     },
     splitterSettings: {
         columnIndex: 1
@@ -101,6 +100,3 @@ let gantt: Gantt = new Gantt({
     projectEndDate: new Date('05/30/2019'),
 });
 gantt.appendTo('#Gantt');
-
-
-

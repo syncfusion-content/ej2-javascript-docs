@@ -16,11 +16,11 @@ var ganttChart = new ej.gantt.Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        dependency: 'Predecessor',
+        parentID: 'ParentID'
     },
     allowPdfExport: true,
     toolbar: ['PdfExport'],
     toolbarClick: clickHandler
 });
 ganttChart.appendTo('#GanttExport');
-

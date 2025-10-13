@@ -1,8 +1,6 @@
-
-
 import { Gantt, Filter } from '@syncfusion/ej2-gantt';
 import { DropDownList, ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Filter);
 
@@ -15,7 +13,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     allowFiltering: true
 });
@@ -38,6 +36,3 @@ let dropDownMode: DropDownList = new DropDownList({
     }
 });
 dropDownMode.appendTo('#mode');
-
-
-

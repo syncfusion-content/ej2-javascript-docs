@@ -1,8 +1,5 @@
-
-
-
 import { Gantt, Sort , Selection, VirtualScroll, Filter} from '@syncfusion/ej2-gantt';
-import { virtualData } from 'datasource.ts';
+import { virtualData } from './datasource.ts';
 
 Gantt.Inject(Sort, Selection, VirtualScroll, Filter);
 
@@ -30,6 +27,3 @@ let gantt: Gantt = new Gantt({
     ],
 });
 gantt.appendTo('#Gantt');
-
-
-

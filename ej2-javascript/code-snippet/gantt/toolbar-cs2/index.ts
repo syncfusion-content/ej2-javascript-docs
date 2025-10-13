@@ -1,9 +1,6 @@
-
-
-
 import { Gantt, Toolbar, Filter } from '@syncfusion/ej2-gantt';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Toolbar, Filter);
 
@@ -16,7 +13,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     toolbarClick: (args: ClickEventArgs) => {
         if (args.item.id === 'toolbarfilter') {
@@ -28,7 +25,3 @@ let gantt: Gantt = new Gantt({
 });
 
 gantt.appendTo('#Gantt');
-
-
-
-

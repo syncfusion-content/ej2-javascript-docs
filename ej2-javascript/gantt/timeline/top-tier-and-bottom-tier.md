@@ -77,7 +77,7 @@ In the Gantt control, you can format the value of top and bottom timeline cells 
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/timeline-cs10/index.ts %}
 {% endhighlight %}

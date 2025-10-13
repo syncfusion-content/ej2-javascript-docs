@@ -1,11 +1,8 @@
-
-
-
 import { Gantt } from '@syncfusion/ej2-gantt';
-import { SplitTaskData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 let gantt: Gantt = new Gantt({
-    dataSource: SplitTaskData,
+    dataSource: GanttData,
     height: "450px",
     taskFields: {
         id: "TaskID",
@@ -14,8 +11,8 @@ let gantt: Gantt = new Gantt({
         endDate: "EndDate",
         duration: "Duration",
         progress: "Progress",
-        child: "subtasks",
-         segmentId: "segmentId"
+        parentID: 'ParentID',
+        segmentId: "segmentId"
   },
   segmentData: [
     { segmentId: 2, StartDate: new Date("04/02/2019"), Duration: 2 },
@@ -26,6 +23,3 @@ let gantt: Gantt = new Gantt({
 });
 
 gantt.appendTo('#Gantt');
-
-
-

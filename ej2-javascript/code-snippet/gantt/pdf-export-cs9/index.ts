@@ -23,26 +23,16 @@ let gantt: Gantt = new Gantt({
     dataSource: GanttData,
     height: '450px',
     taskFields: {
-        id: 'TaskId',
+        id: 'TaskID',
         name: 'TaskName',
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        parentID:'ParentId'
+        parentID:'ParentID'
     },
-    columns: [
-        { field: 'TaskId'},
-        { field: 'TaskName', visible: false},
-        { field: 'StartDate'},
-        { field: 'Duration'},
-        { field: 'Progress'}
-    ],
     allowPdfExport: true,
     toolbar: ['PdfExport'],
     toolbarClick: clickHandler,
     pdfQueryCellInfo: pdfQueryCellInfo
 });
 gantt.appendTo('#GanttExport');
-
-
-

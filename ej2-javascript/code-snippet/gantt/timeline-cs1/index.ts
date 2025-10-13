@@ -1,10 +1,10 @@
 
 
 import { Gantt } from '@syncfusion/ej2-gantt';
-import { WeekData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 let gantt: Gantt = new Gantt({
-    dataSource: WeekData,
+    dataSource: GanttData,
     height: '450px',
     taskFields: {
         id: 'TaskID',
@@ -12,13 +12,10 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     timelineSettings: {
         timelineViewMode: 'Week'
     }
 });
 gantt.appendTo('#Gantt');
-
-
-

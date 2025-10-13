@@ -1,8 +1,5 @@
-
-
-
 import { Gantt, Toolbar, PdfExport, Selection, PdfExportProperties,PdfColumnHeaderQueryCellInfoEventArgs,pdfQueryTaskbarInfo,PdfQueryCellInfoEventArgs } from '@syncfusion/ej2-gantt';
-import { GanttData,editingResources } from 'datasource.ts';
+import { GanttData,editingResources } from './datasource.ts';
 import { PdfColor } from '@syncfusion/ej2-pdf-export';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
 
@@ -50,7 +47,7 @@ let gantt: Gantt = new Gantt({
         duration: 'Duration',
         resourceInfo: 'resources',
         dependency: 'Predecessor',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     columns: [
         { field: 'TaskName', headerTemplate: '#projectName', width: 250 },
@@ -69,6 +66,3 @@ let gantt: Gantt = new Gantt({
     projectEndDate: new Date('04/30/2019'),
 });
 gantt.appendTo('#GanttExport');
-
-
-

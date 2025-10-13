@@ -1,8 +1,5 @@
-
-
-
 import { Gantt, Toolbar, PdfExport, Selection, PdfExportProperties } from '@syncfusion/ej2-gantt';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
 
 Gantt.Inject(Toolbar, PdfExport, Selection);
@@ -26,20 +23,10 @@ let gantt: Gantt = new Gantt({
         duration: 'Duration',
         progress: 'Progress',
         dependency: 'Predecessor',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
-    columns: [
-        { field: 'TaskID'},
-        { field: 'TaskName', visible: false},
-        { field: 'StartDate'},
-        { field: 'Duration'},
-        { field: 'Progress'}
-    ],
     allowPdfExport: true,
     toolbar: ['PdfExport'],
     toolbarClick: clickHandler
 });
 gantt.appendTo('#GanttExport');
-
-
-

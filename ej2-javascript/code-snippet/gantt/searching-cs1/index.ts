@@ -1,8 +1,5 @@
-
-
-
 import { Gantt, Filter, Toolbar } from '@syncfusion/ej2-gantt';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Filter, Toolbar);
 
@@ -15,11 +12,8 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     toolbar: ['Search']
 });
 gantt.appendTo('#Gantt');
-
-
-

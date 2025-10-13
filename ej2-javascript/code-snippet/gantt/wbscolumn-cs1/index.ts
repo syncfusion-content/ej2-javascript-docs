@@ -2,7 +2,7 @@
 
 
 import { Gantt, Selection, Toolbar, DayMarkers, Edit, Filter, Sort, ContextMenu} from '@syncfusion/ej2-gantt';
-import { WBSData } from 'datasource.ts';
+import { WBSData } from './datasource.ts';
 
 
 Gantt.Inject(Selection, Toolbar, DayMarkers, Edit, Filter, Sort, ContextMenu);

@@ -1,8 +1,5 @@
-
-
-
 import { Gantt, Toolbar, PdfExport, Selection, PdfExportProperties } from '@syncfusion/ej2-gantt';
-import { GanttData,editingResources } from 'datasource.ts';
+import { GanttData,editingResources } from './datasource.ts';
 import { PdfColor } from '@syncfusion/ej2-pdf-export';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
 
@@ -21,7 +18,7 @@ let pdfQueryTaskbarInfo: EmitType<Object> = (args: Object) => {
         if (args.data.ganttProperties.resourceNames) {
             args.labelSettings.rightLabel.value = args.data.ganttProperties.resourceNames;
             args.labelSettings.rightLabel.image = [{
-                    base64: args.data.taskData.resourcesImage, width: 20, height: 20
+                    base64: args.data.taskData.ResourcesImage, width: 20, height: 20
                 }];
         }
         args.labelSettings.taskLabel.value = args.data.ganttProperties.progress + '%';
@@ -34,8 +31,8 @@ let pdfQueryTaskbarInfo: EmitType<Object> = (args: Object) => {
     span.style.marginLeft = '5px';
     span.style.marginRight = '5px';
     for (let index: number = 0; index < value.length; index++) {
-        img.src = 'https://ej2.syncfusion.com/demos/src/gantt/images/' + value[index].resourceName + '.png';
-        span.innerHTML = value[index].resourceName;
+        img.src = 'https://ej2.syncfusion.com/demos/src/gantt/images/' + value[index].ResourceName + '.png';
+        span.innerHTML = value[index].ResourceName;
         out = out + img.outerHTML + span.outerHTML;
     }
     return out;
@@ -53,9 +50,9 @@ let gantt: Gantt = new Gantt({
         endDate: 'EndDate',
         progress: 'Progress',
         duration: 'Duration',
-        resourceInfo: 'resources',
+        resourceInfo: 'Resources',
         dependency: 'Predecessor',
-        child: 'subtasks'
+        parentID: 'ParentID',
     },
     columns: [
         { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left' },
@@ -72,13 +69,10 @@ let gantt: Gantt = new Gantt({
     toolbarClick: clickHandler,
     resources: editingResources,
     resourceFields: {
-        id: 'resourceId',
-        name: 'resourceName'
+        id: 'ResourceId',
+        name: 'ResourceName'
     },
     projectStartDate: new Date('03/24/2019'),
     projectEndDate: new Date('04/30/2019'),
 });
 gantt.appendTo('#GanttExport');
-
-
-

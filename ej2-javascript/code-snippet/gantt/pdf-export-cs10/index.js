@@ -5,9 +5,7 @@ var clickHandler = function(args){
 };
 
 var pdfQueryTimelineCellInfo = function(args){
-   if(args.column.field == 'Progress'){
-        args.timelineCell.backgroundColor = new ej.pdfexport.PdfColor(240, 248, 255);
-    }
+    args.timelineCell.backgroundColor = new ej.pdfexport.PdfColor(240, 248, 255);
 };
 
 var ganttChart = new ej.gantt.Gantt({
@@ -19,19 +17,11 @@ var ganttChart = new ej.gantt.Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
-    columns: [
-        { field: 'TaskID'},
-        { field: 'TaskName'},
-        { field: 'StartDate'},
-        { field: 'Duration', visible: false},
-        { field: 'Progress'}
-    ],
     allowPdfExport: true,
     toolbar: ['PdfExport'],
     toolbarClick: clickHandler,
     pdfQueryTimelineCellInfo: pdfQueryTimelineCellInfo
 });
 ganttChart.appendTo('#GanttExport');
-

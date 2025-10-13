@@ -1,8 +1,5 @@
-
-
-
 import { Gantt, Resize } from '@syncfusion/ej2-gantt';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Resize);
 
@@ -15,7 +12,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     splitterSettings: {
         columnIndex: 5
@@ -31,6 +28,3 @@ let gantt: Gantt = new Gantt({
 
 });
 gantt.appendTo('#Gantt');
-
-
-

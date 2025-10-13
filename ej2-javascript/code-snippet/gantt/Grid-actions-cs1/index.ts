@@ -1,8 +1,5 @@
-
-
-
-import { Gantt, Filter, Sort, Resize, ColumnMenu, Reorder, Selection, Edit }  from '@syncfusion/ej2-gantt';
-import { GanttData } from 'datasource.ts';
+import { Gantt, Filter, Sort, Resize, ColumnMenu, Reorder, Selection, Edit } from '@syncfusion/ej2-gantt';
+import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Edit, Selection, Filter, Sort, Resize, Reorder);
 
@@ -14,7 +11,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     allowFiltering: true,
     allowSorting: true,
@@ -35,6 +32,3 @@ let gantt: Gantt = new Gantt({
     ]
 });
 gantt.appendTo('#Gantt');
-
-
-

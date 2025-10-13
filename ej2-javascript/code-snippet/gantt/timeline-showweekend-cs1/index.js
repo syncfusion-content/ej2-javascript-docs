@@ -7,7 +7,7 @@ var ganttChart = new ej.gantt.Gantt({
             startDate: 'StartDate',
 			duration: 'Duration',
             progress: 'Progress',
-			child: 'subtasks'
+			parentID: 'parentID'
         },
 		timelineSettings: {
             showWeekend: false
@@ -18,14 +18,3 @@ var ganttChart = new ej.gantt.Gantt({
 		}
 });
 ganttChart.appendTo('#Gantt');
-
-
-
-
-
-
-
-
-
-
-

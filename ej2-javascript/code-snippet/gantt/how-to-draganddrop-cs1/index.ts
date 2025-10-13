@@ -1,9 +1,6 @@
-
-
-
 import { Gantt, Edit, Selection } from '@syncfusion/ej2-gantt';
 import { TreeView, DragAndDropEventArgs } from '@syncfusion/ej2-navigations';
-import { editingData, editingResources } from 'datasource.ts';
+import { editingData, editingResources } from './datasource.ts';
 import { closest } from '@syncfusion/ej2-base';
 
 Gantt.Inject(Edit, Selection);
@@ -54,7 +51,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks',
+        parentID: 'ParentID',
         dependency: 'Predecessor',
         resourceInfo: 'resources'
     },
@@ -75,6 +72,3 @@ let gantt: Gantt = new Gantt({
 });
 treeObj.appendTo('#TreeView');
 gantt.appendTo('#Gantt');
-
-
-

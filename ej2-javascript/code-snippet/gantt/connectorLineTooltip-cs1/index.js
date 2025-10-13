@@ -8,7 +8,7 @@ var ganttChart = new ej.gantt.Gantt({
             duration: 'Duration',
 		    progress: 'Progress',
 			dependency: 'Predecessor',
-            child: 'subtasks'
+            parentID: 'ParentID'
         },
 		tooltipSettings: {
             showTooltip: true,
@@ -16,17 +16,3 @@ var ganttChart = new ej.gantt.Gantt({
         }
 });
 ganttChart.appendTo('#Gantt');
-
-
-
-
-
-
-
-
-
-
-
-
-
-

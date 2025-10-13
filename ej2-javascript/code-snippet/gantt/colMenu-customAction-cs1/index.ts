@@ -1,10 +1,8 @@
-
-
-import { Gantt, Filter, Sort, Resize, ColumnMenu } from '@syncfusion/ej2-gantt';
-import { GanttData } from 'datasource.ts';
+import { Gantt, Filter, Sort, Resize, ColumnMenu, Selection} from '@syncfusion/ej2-gantt';
+import { GanttData } from './datasource.ts';
 import { ColumnMenuOpenEventArgs, ColumnMenuItemModel } from '@syncfusion/ej2-grids';
 
-Gantt.Inject(Filter, Sort, Resize, ColumnMenu);
+Gantt.Inject(Filter, Sort, Resize, ColumnMenu, Selection);
 
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
@@ -18,7 +16,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks',
+        parentID: 'ParentID'
     },
     splitterSettings: {
         position: '100%'
@@ -43,7 +41,3 @@ let gantt: Gantt = new Gantt({
 });
 
 gantt.appendTo('#Gantt');
-
-
-
-

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { SymbolPalette, NodeModel, Diagram } from '@syncfusion/ej2-diagrams';
+=======
+import { SymbolPalette, Diagram } from '@syncfusion/ej2-diagrams';
+>>>>>>> 5e0432fe790d22c521f22d2e5b323e0fb8b8fb04
 
 // Template for the HTML and SVG Shape.
 function template(obj: any) {

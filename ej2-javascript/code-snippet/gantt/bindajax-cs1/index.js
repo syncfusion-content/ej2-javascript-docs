@@ -28,15 +28,3 @@ button.addEventListener("click", function(e){
         gantt.dataSource = (JSON.parse(data)).Items;
     };
 });
-
-
-
-
-
-
-
-
-
-
-
-

@@ -31,7 +31,7 @@ In the `Week` timeline mode, the upper part of the schedule header displays the 
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/timeline-cs1/index.ts %}
 {% endhighlight %}
@@ -62,7 +62,7 @@ In the `Month` timeline mode, the upper part of the schedule header displays the
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/timeline-cs2/index.ts %}
 {% endhighlight %}
@@ -93,7 +93,7 @@ In the `Year` timeline mode, the upper schedule header displays the years wherea
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/timeline-cs3/index.ts %}
 {% endhighlight %}
@@ -124,7 +124,7 @@ In the `Day` timeline mode, the upper part of the header displays the days where
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/timeline-cs4/index.ts %}
 {% endhighlight %}
@@ -155,7 +155,7 @@ An `Hour` timeline mode tracks the tasks in minutes scale. In this mode, the upp
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/timeline-cs5/index.ts %}
 {% endhighlight %}
@@ -186,7 +186,7 @@ In the Gantt control, you can customize the week start day using the [`weekStart
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/timeline-cs6/index.ts %}
 {% endhighlight %}
@@ -217,7 +217,7 @@ In the Gantt control, the schedule timeline will be automatically updated when t
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/timeline-cs7/index.ts %}
 {% endhighlight %}
@@ -248,7 +248,7 @@ In the Gantt control, you can enable or disable the mouse hover tooltip of timel
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/gantt-tooltip-cs2/index.ts %}
 {% endhighlight %}
@@ -326,7 +326,7 @@ The following code example how to customize the top tier to display the week's w
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/gantt-tooltip-cs4/index.ts %}
 {% endhighlight %}

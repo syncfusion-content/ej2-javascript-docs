@@ -1,14 +1,13 @@
 
 
-
 import { Gantt, Toolbar, Edit, Selection } from '@syncfusion/ej2-gantt';
-import { GanttData, resourceCollection } from 'datasource.ts';
+import { GanttData, selfReferenceData } from './datasource.ts';
 
 Gantt.Inject(Toolbar, Edit, Selection);
 
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
-    resources: resourceCollection,
+    resources: selfReferenceData,
     viewType: 'ResourceView',
     taskFields: {
         id: 'TaskID',

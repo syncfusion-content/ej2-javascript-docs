@@ -9,11 +9,10 @@ var ganttChart = new ej.gantt.Gantt({
             startDate: 'StartDate',
 			duration: 'Duration',
             progress: 'Progress',
-		    child: 'subtasks'
+		    parentID: 'ParentID'
         },
 		selectionSettings: {
             mode: 'Both'
 		}
     });
 ganttChart.appendTo('#Gantt');
-

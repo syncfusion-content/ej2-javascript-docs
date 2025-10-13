@@ -63,7 +63,7 @@ var gantt = new ej.gantt.Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     resourceFields: {
         id: 'resourceId',

@@ -3,7 +3,7 @@
 
 import { Gantt, Edit, Selection } from '@syncfusion/ej2-gantt';
 import { Button } from '@syncfusion/ej2-buttons';
-import { data } from 'datasource.ts';
+import { data } from './datasource.ts';
 
 Gantt.Inject(Edit, Selection);
 
@@ -16,7 +16,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     splitterSettings: {
         position: "50%"
@@ -30,7 +30,3 @@ scrollBtn.appendTo('#scrollTop');
 document.getElementById('scrollTop').addEventListener('click', () => {
     gantt.ganttChartModule.scrollObject.setScrollTop(300);
 });
-
-
-
-

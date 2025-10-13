@@ -9,7 +9,7 @@ var ganttChart = new ej.gantt.Gantt({
             startDate: 'StartDate',
 			duration: 'Duration',
             progress: 'Progress',
-			child: 'subtasks'
+			parentID: 'ParentID'
         },
 		editSettings: {
 		   allowDeleting:true
@@ -23,10 +23,3 @@ delBtn.appendTo('#deleteRecord');
 document.getElementById('deleteRecord').addEventListener('click', () => {
     ganttChart.editModule.deleteRow();
 });
-
-
-
-
-
-
-

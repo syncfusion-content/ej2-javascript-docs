@@ -2,12 +2,11 @@
 
 
 import { Gantt, Edit, Selection, ContextMenu } from '@syncfusion/ej2-gantt';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Edit, Selection, ContextMenu);
 
 var copiedRecord: any;
-var enableFlag: any;
 
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
@@ -18,7 +17,7 @@ let gantt: Gantt = new Gantt({
         duration: 'Duration',
         progress: 'Progress',
         dependency:'Predecessor',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     editSettings: {
         allowAdding: true,
@@ -69,6 +68,3 @@ function addChildRecords(record: any, index: any) {
           }
     }
   }
-
-
-

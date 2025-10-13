@@ -5,7 +5,7 @@ import { ContextMenu, MenuItemModel, ContextMenuModel } from '@syncfusion/ej2-na
 import { Gantt, Toolbar, Filter, Edit, Selection} from '@syncfusion/ej2-gantt';
 import { EmitType } from '@syncfusion/ej2-base';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 import { enableRipple } from '@syncfusion/ej2-base';
 
 Gantt.Inject(Toolbar, Selection, Filter, Edit);
@@ -85,7 +85,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     editSettings: {
         allowEditing: true,
@@ -97,6 +97,3 @@ let gantt: Gantt = new Gantt({
     });
 
 gantt.appendTo('#Gantt');
-
-
-

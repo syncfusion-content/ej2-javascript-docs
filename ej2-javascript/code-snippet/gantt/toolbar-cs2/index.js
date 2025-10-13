@@ -15,11 +15,10 @@ var ganttChart = new ej.gantt.Gantt({
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            child: 'subtasks'
+            parentID: 'ParentID'
         },
 		toolbarClick: clickHandler,
 		toolbar: [{text: 'Quick Filter', tooltipText: 'Quick Filter', id: 'toolbarfilter', align:'Right', prefixIcon: 'e-quickfilter'}],
 		allowFiltering:true
 });
 ganttChart.appendTo('#Gantt');
-

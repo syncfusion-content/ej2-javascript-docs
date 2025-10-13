@@ -9,7 +9,7 @@ var ganttChart = new ej.gantt.Gantt({
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            child: 'subtasks'
+            parentID: 'ParentID'
         },
 		allowFiltering:true
 });
@@ -22,4 +22,3 @@ document.getElementById('search').addEventListener('click', function() {
     var searchText = document.getElementsByClassName('searchtext')[0].value;
     ganttChart.search(searchText);
 });
-

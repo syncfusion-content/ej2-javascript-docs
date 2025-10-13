@@ -34,6 +34,3 @@ button.addEventListener("click", function(e){
         gantt.refresh();
     };
 });
-
-
-

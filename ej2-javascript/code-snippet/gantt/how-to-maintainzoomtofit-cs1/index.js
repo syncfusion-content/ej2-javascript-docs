@@ -9,7 +9,7 @@ var ganttChart = new ej.gantt.Gantt({
         duration: 'Duration',
         progress: 'Progress',
         dependency: 'Predecessor',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     toolbar: ['Edit', 'ZoomToFit'],
     editSettings: {
@@ -37,15 +37,3 @@ var ganttChart = new ej.gantt.Gantt({
     }
 });
 ganttChart.appendTo('#Gantt');
-
-
-
-
-
-
-
-
-
-
-
-

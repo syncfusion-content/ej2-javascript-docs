@@ -7,7 +7,7 @@ var ganttChart = new ej.gantt.Gantt({
             startDate: 'StartDate',
 			duration: 'Duration',
             progress: 'Progress',
-			child: 'subtasks'
+			parentID: 'ParentID'
         },
 		tooltipSettings: {
             showTooltip: true,
@@ -99,16 +99,3 @@ function bottomTierTooltip(date, tier) {
     var data = getTooltipData(startdate, endDate,tier);
     return generateTooltipMarkup(date, data);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

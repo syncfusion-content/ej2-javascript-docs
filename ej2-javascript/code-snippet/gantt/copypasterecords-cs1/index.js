@@ -11,7 +11,7 @@ var gantt = new ej.gantt.Gantt({
         	dependency: 'Predecessor',
         	duration: 'Duration',
         	progress: 'Progress',
-        	child: 'subtasks'
+        	parentID: 'ParentID'
         },
     editSettings: {
         allowAdding: true,
@@ -52,14 +52,13 @@ var gantt = new ej.gantt.Gantt({
 
 gantt.appendTo('#Gantt');
 
-    function addChildRecords(record, index) {
-      for(var i=0; i<record.childRecords.length; i++) {
-            var childRecord = record.childRecords[i];
-            childRecord.taskData.TaskID = ganttChart.currentViewData.length + 1;
-            ganttChart.addRecord(childRecord.taskData,'Child',index);
-            if(childRecord.hasChildRecords) {
-                addChildRecords(childRecord, index + (i+1));
-            }
-      }
+function addChildRecords(record, index) {
+    for(var i=0; i<record.childRecords.length; i++) {
+        var childRecord = record.childRecords[i];
+        childRecord.taskData.TaskID = ganttChart.currentViewData.length + 1;
+        ganttChart.addRecord(childRecord.taskData,'Child',index);
+        if(childRecord.hasChildRecords) {
+            addChildRecords(childRecord, index + (i+1));
+        }
     }
-
+}

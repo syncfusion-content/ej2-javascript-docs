@@ -1,9 +1,6 @@
-
-
-
 import { Gantt, Filter } from '@syncfusion/ej2-gantt';
 import { Button } from '@syncfusion/ej2-buttons';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Filter);
 
@@ -16,12 +13,12 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     allowFiltering: true,
     filterSettings: {
         columns: [{ field: 'TaskName', matchCase: false, operator: 'startswith', predicate: 'and', value: 'Identify' },
-        { field: 'Progress', matchCase: false, operator: 'equal', predicate: 'and', value: 50 }]
+        { field: 'Progress', matchCase: false, operator: 'equal', predicate: 'and', value: 90 }]
     }
 });
 gantt.appendTo('#Gantt');
@@ -32,6 +29,3 @@ filterBtn.appendTo('#clearFilter');
 document.getElementById('clearFilter').addEventListener('click', () => {
     gantt.clearFiltering();
 });
-
-
-

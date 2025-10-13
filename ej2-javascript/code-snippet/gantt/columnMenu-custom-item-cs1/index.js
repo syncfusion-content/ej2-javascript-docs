@@ -12,7 +12,7 @@ var ganttChart = new ej.gantt.Gantt({
             startDate: 'StartDate',
 			duration: 'Duration',
             progress: 'Progress',
-			child: 'subtasks'
+			parentID: 'ParentID'
         },
         columnMenuItems:[{text:'Clear Sorting', id:'ganttclearsorting'}],
         columnMenuClick: function(args){
@@ -24,12 +24,12 @@ var ganttChart = new ej.gantt.Gantt({
             position: '75%'
         },
         sortSettings:{
-            columns:[{direction: "Ascending", field: "TaskID"}]
+            columns:[{direction: "Ascending", field: "TaskName"}]
         },
         columns: [
-            { field: 'TaskID', headerText: 'Task ID' },
-            { field: 'Progress', headerText: 'Progress' },
+            { field: 'TaskID', headerText: 'ID' },
             { field: 'TaskName', headerText: 'Task Name' },
+            { field: 'Progress', headerText: 'Progress' },
             { field: 'StartDate', headerText: 'Start Date' },
             { field: 'Duration', headerText: 'Duration' }
         ],

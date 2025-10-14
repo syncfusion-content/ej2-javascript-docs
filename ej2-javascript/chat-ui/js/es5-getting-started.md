@@ -23,6 +23,7 @@ The list of dependencies required to use the Chat UI control in your application
     |-- @syncfusion/ej2-navigations
     |-- @syncfusion/ej2-inputs
     |-- @syncfusion/ej2-buttons
+    |-- @syncfusion/ej2-dropdowns
     |-- @syncfusion/ej2-popups
     |-- @syncfusion/ej2-dropdowns
 ```
@@ -122,7 +123,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
           <link href="resources/inputs/material.css" rel="stylesheet" type="text/css" />
           <link href="resources/navigations/material.css" rel="stylesheet" type="text/css" />
           <link href="resources/dropdowns/material.css" rel="stylesheet" type="text/css"/>
-
+          
           <!-- JavaScript (ES5) Chat UI control style -->
           <link href="resources/interactive-chat/material.css" rel="stylesheet" type="text/css"/>
 

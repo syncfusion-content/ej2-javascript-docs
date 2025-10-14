@@ -1,4 +1,5 @@
-import { AIAssistView, PromptRequestEventArgs } from '@syncfusion/ej2-interactive-chat';
+
+ import { AIAssistView, PromptRequestEventArgs } from '@syncfusion/ej2-interactive-chat';
  import { GoogleGenerativeAI } from '@google/generative-ai';
  import { marked } from 'marked';
  

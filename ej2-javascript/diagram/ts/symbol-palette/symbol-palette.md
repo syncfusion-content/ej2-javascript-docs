@@ -95,8 +95,13 @@ The Symbol Palette supports the creation of complex nodes using HTML or SVG temp
 Templates can be defined either as strings or functions and assigned to the node's `content` property. Function-based templates offer the flexibility to generate dynamic content based on node-specific properties or external data sources.
 
 {% tabs %}
+<<<<<<< HEAD
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/diagram/symbol-palette-contentFnTemplate/index.js %}
+=======
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/diagram/symbol-palette-contentFnTemplate/index.ts %}
+>>>>>>> c280d6a804217b47196fc1c52ac155db290301fa
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/diagram/symbol-palette-contentFnTemplate/index.html %}
@@ -113,7 +118,11 @@ To drag and drop symbols from the palette to the diagram canvas, mousedown on th
 
 ## Add symbols to palette at runtime
 
+<<<<<<< HEAD
 Symbols can be added to palette at runtime by using public method, [`addPaletteItem`](../../api/diagram/palette/). The following example shows how to add shapes to the palette at runtime.
+=======
+Symbols can be added to palette at runtime by using public method, [`addPaletteItem`](../../api/diagram/#palette/). The following example shows how to add shapes to the palette at runtime.
+>>>>>>> c280d6a804217b47196fc1c52ac155db290301fa
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -128,7 +137,11 @@ Symbols can be added to palette at runtime by using public method, [`addPaletteI
 
 ## Remove symbols from palette at runtime
 
+<<<<<<< HEAD
 Symbols can be removed from palette at runtime by using public method, [`removePaletteItem`](../../api/diagram/palette/). The following example shows how to remove shapes from the palette at runtime.
+=======
+Symbols can be removed from palette at runtime by using public method, [`removePaletteItem`](../../api/diagram/#palette/). The following example shows how to remove shapes from the palette at runtime.
+>>>>>>> c280d6a804217b47196fc1c52ac155db290301fa
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

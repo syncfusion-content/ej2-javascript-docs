@@ -113,7 +113,7 @@ To drag and drop symbols from the palette to the diagram canvas, mousedown on th
 
 ## Add symbols to palette at runtime
 
-Symbols can be added to palette at runtime by using public method, [`addPaletteItem`](../../api/diagram/palette/#addPaletteItem-number). The following example shows how to add shapes to the palette at runtime.
+Symbols can be added to palette at runtime by using public method, [`addPaletteItem`](../../api/diagram/palette/#addPaletteItem-number/). The following example shows how to add shapes to the palette at runtime.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -128,7 +128,7 @@ Symbols can be added to palette at runtime by using public method, [`addPaletteI
 
 ## Remove symbols from palette at runtime
 
-Symbols can be removed from palette at runtime by using public method, [`removePaletteItem`](../../api/diagram/palette/#removePaletteItem-number). The following example shows how to remove shapes from the palette at runtime.
+Symbols can be removed from palette at runtime by using public method, [`removePaletteItem`](../../api/diagram/palette/#removePaletteItem-number/). The following example shows how to remove shapes from the palette at runtime.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

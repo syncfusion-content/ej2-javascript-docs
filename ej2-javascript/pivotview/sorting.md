@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting in ##Platform_Name## Pivotview control | Syncfusion
-description: Learn here all about Sorting in Syncfusion ##Platform_Name## Pivotview control of Syncfusion Essential JS 2 and more.
+title: Sorting in ##Platform_Name## Pivot Table control | Syncfusion
+description: Learn here all about Sorting in Syncfusion ##Platform_Name## Pivot Table control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Sorting 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sorting in ##Platform_Name## Pivotview control
+# Sorting in ##Platform_Name## Pivot Table control
 
 ## Member Sorting
 

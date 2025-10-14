@@ -123,11 +123,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
           <link href="resources/inputs/material.css" rel="stylesheet" type="text/css" />
           <link href="resources/navigations/material.css" rel="stylesheet" type="text/css" />
           <link href="resources/dropdowns/material.css" rel="stylesheet" type="text/css"/>
-<<<<<<< HEAD
-
-=======
           
->>>>>>> 5e0432fe790d22c521f22d2e5b323e0fb8b8fb04
           <!-- JavaScript (ES5) Chat UI control style -->
           <link href="resources/interactive-chat/material.css" rel="stylesheet" type="text/css"/>
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Improve filter dialog performance when handling large data in ##Platform_Name## Pivotview control | Syncfusion
-description: Learn here all about Improve filter dialog performance when handling large data in Syncfusion ##Platform_Name## Pivotview control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Pivot Table: Fast Filtering for Large Data | Syncfusion
+description: Improve filter dialog performance for large datasets in the Syncfusion EJ2 ##Platform_Name## Pivot Table. Learn tips to optimize your app for speed.
 platform: ej2-javascript
 control: Improve filter dialog performance when handling large data 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Improve filter dialog performance when handling large data in ##Platform_Name## Pivotview control
+# Improve Filter Dialog Performance with Large Data
 
 In the filter dialog, you can set the limit to display the field values while loading large data. Based on this limit, the initial loading will complete quickly without any performance constraint. You can use the search option to refine the field values from the exceeded limit and refine the data further. A message with the remaining data count will be displayed in the member editor. The data limit can be set in the `maxNodeLimitInMemberEditor` property.
 

@@ -9,33 +9,33 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integration of LLM via Ollama With TypeScript AI AssistView control
+# Integrate LLM via Ollama With TypeScript AI AssistView control
 
-The Syncfusion AI AssistView supports integration with [LLM via Ollama](https://ollama.com), enabling advanced conversational AI features in your applications. This control acts as a UI for a support bot, where user prompts are sent to the selected AI service via API calls.
+The AI AssistView control integrates with [LLM via Ollama](https://ollama.com) to enable advanced conversational AI features in your application. The control acts as a user interface where user prompts are sent to the selected LLM model via API calls, providing natural language understanding and context-aware responses.
 
 ## Prerequisites
 
-* Requires `Node.js` (v16 or higher) and `npm`.
-* [Ollama](https://ollama.com) application should be installed to run and manage LLM models locally.
-* Syncfusion AI AssistView for React `@syncfusion/ej2-interactive-chat` installed in your project.
+Before starting, ensure you have the following:
 
-## Step 1: Getting Started with the AI AssistView control
+* **Node.js**: Version 16 or higher with npm.
 
-Before integrating LLM model, ensure that the Syncfusion AI AssistView control is correctly rendered in your application:
+* [Ollama](https://ollama.com) installed to run and manage LLM models locally.
 
-[ TypeScript Getting Started Guide](../getting-started)
+* **Syncfusion AI AssistView**: Package [@syncfusion/ej2-interactive-chat](https://www.npmjs.com/package/@syncfusion/ej2-interactive-chat) installed.
 
-## Step 2: Install Dependencies
+* **Marked Library**: For parsing Markdown responses (`npm install marked --save`).
 
-* Install the Syncfusion AI AssistView in your project
+## Set Up the Environment
 
-```bash 
+Follow the Syncfusion AI AssistView [Getting Started](../getting-started) guide to configure and render the AI AssistView control in your  application.
 
-npm install @syncfusion/ej2-interactive-chat --save
+## Install Dependency
 
-```
+To install the marked library, run `npm install marked --save` in your project directory to add it as a dependency in your package.json file.
 
-* Download and install `Ollama` based on your operating system:
+## Configuring Ollama
+
+Install Ollama for your operating system:
 
 {% tabs %}
 {% highlight ts tabtitle="Windows" %}
@@ -46,7 +46,7 @@ npm install @syncfusion/ej2-interactive-chat --save
 
 {% endhighlight %}
 
-{% highlight ts tabtitle="MAC" %}
+{% highlight ts tabtitle="macOS" %}
 
 1. Visit [macOS](https://ollama.com/download/mac)
 2. Click `Download for macOS` to get `.dmg file`
@@ -68,9 +68,9 @@ curl -fsSL https://ollama.ai/install.sh | sh
 {% endhighlight %}
 {% endtabs %}
 
-## Step 3: Install and Run an Ollama Model
+## Download and run an Ollama model
 
-1. Download and run a model using the following command. Replace `deepseek-r1` with your preferred model (e.g., `llama3`, `phi4`). See the [Ollama model](https://ollama.com/search) library for available models
+1. Download and run a model using the following command. Replace `deepseek-r1` with your preferred model (e.g., `llama3`, `phi4`). See the [Ollama model](https://ollama.com/search) library for available models.
  
 ```bash
 
@@ -78,7 +78,7 @@ ollama run deepseek-r1
 
 ```
 
-2. Once the model download is complete, start the Ollama server to make the model accessible:
+2. After the model download completes, start the Ollama server to make the model accessible:
 
 ```bash
 
@@ -86,9 +86,9 @@ ollama serve
 
 ```
 
-## Step 4: Integrate AI AssistView in TypeScript
+## Configure AI AssistView with Ollama
 
-Create TypeScript application to integrate the `Ollama` model with AI AssistView control with the respective files
+Modify the `index.js` file to integrate the `Ollama` model with the AI AssistView control .
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -100,15 +100,3 @@ Create TypeScript application to integrate the `Ollama` model with AI AssistView
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/ai-assistview/ai-integrations/llm-model" %}
-
-## Step 5: Run and Test 
-
-Run the application in the browser using the following command.
-
-```bash
-
-npm start
-
-```
-
-Open the hosted link to interact with your AI model where you can enter prompts and receive responses from the `Ollama` model.

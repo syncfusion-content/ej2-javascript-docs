@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Microsoft Bot With ##Platform_Name## Chat UI component | Syncfusion
-description:  Checkout and learn about Integration of Microsoft Bot Framework With ##Platform_Name## Chat UI component of Syncfusion Essential JS 2 and more details.
+title: Microsoft Bot With ##Platform_Name## Chat UI control | Syncfusion
+description:  Checkout and learn about Integration of Microsoft Bot Framework With ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Chat UI
 publishingplatform: ##Platform_Name##
@@ -9,34 +9,35 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Microsoft Bot With JavaScript Chat UI control
+# Integrate Microsoft Bot With JavaScript Chat UI control
 
-The Syncfusion Chat UI supports integration with a [Microsoft Bot Framework](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0) bot hosted on Azure, enabling a custom chat interface for seamless user interaction. The process involves setting up a secure backend token server, configuring the bot in Azure, and integrating the Syncfusion Chat UI in your application.
-
-## Getting Started With the Chat UI control
-
-Before integrating Microsoft Bot Framework, ensure that the Syncfusion Chat UI control is correctly rendered in your application:
-
-[JavaScript Getting Started Guide](../getting-started)
+The Chat UI control integrates with a [Microsoft Bot Framework](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0) bot hosted on Azure, enabling a custom chat interface for seamless user interaction. The process involves setting up a secure backend token server, configuring Direct Line in Azure, and integrating the Chat UI in the application.
 
 ## Prerequisites
 
-* [Microsoft Azure Account](https://portal.azure.com/#home): Required to create and host the bot.
-* `Node.js Environment`: The backend portion requires `Node.js` and `npm`.
-* `Syncfusion Chat UI`: Install `@syncfusion/ej2-interactive-chat` in your  project.
-* `Deployed Azure Bot`: A bot should be created and published using the Bot Framework, which is accessible via an Azure App Service. Refer to Microsoft's Bot Creation Guide.
+Before starting, ensure you have the following:
+
+* **Node.js**: Version 16 or higher with npm.
+
+* [Microsoft Azure Account](https://portal.azure.com/#home) : Required to create and host the bot.
+
+* **Syncfusion Chat UI**: Package [@syncfusion/ej2-interactive-chat](https://www.npmjs.com/package/@syncfusion/ej2-interactive-chat) installed.
+
+* **Deployed Azure Bot**: A bot should be created and published using the [Microsoft Bot Framework](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0), which is accessible via an Azure App Service. Refer to Microsoft's Bot Creation Guide.
+
+## Set Up the Environment
+
+Follow the Syncfusion Chat UI [Getting Started](../getting-started) guide to configure and render the Chat UI control in your application.
 
 ## Install Dependencies
 
+Install the required packages:
+
 * Install `frontend` dependencies for bot communication and the Syncfusion Chat UI:
 
-    * Install `directline-js` package to handle communication with the Bot Framework.
-
-    * Install `axios` for the HTTP requests.
 
 ```bash
 
-npm install @syncfusion/ej2-interactive-chat --save
 npm install directline-js axios --save
 
 ```
@@ -111,7 +112,7 @@ app.listen(port, () => console.log(`Token server running on http://localhost:${p
 
 ## Configure ChatUI
 
-Add the below files in their respective files to connect the Syncfusion Chat UI to the bot via the direct line API:
+Modify the `index.js` file to connect the Syncfusion Chat UI to the bot via the direct line API.
 
 {% if page.publishingplatform == "typescript" %}
 

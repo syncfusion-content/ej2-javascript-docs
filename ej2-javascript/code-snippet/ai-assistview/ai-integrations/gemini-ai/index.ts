@@ -33,6 +33,7 @@ function toolbarItemClicked(args: any) {
     }
 }
 
+// Stream AI response in chunks
 async function streamResponse(response: string) {
     let lastResponse = "";
     const responseUpdateRate = 10;
@@ -51,9 +52,10 @@ async function streamResponse(response: string) {
     aiAssistView.promptSuggestions = suggestions;
 }
 
+// Handle user prompt: call Gemini model
 async function onPromptRequest(args: any) {
     try {
-        const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' }); //Replace Your Model Name Here
+        const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' }); // Select the Gemini model (update model name as needed)
         const result = await model.generateContent(args.prompt);
         const response = result.response.text();
         stopStreaming = false;

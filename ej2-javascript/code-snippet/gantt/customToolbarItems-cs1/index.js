@@ -9,11 +9,9 @@ var ganttChart = new ej.gantt.Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     toolbar: [{ type: 'Input', template: new ej.inputs.NumericTextBox({ format: 'c2', value:1, width:150 }) }]
 });
 
 ganttChart.appendTo('#Gantt');
-
-

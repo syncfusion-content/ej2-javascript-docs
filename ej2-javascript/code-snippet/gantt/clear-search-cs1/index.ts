@@ -1,8 +1,6 @@
-
-
 import { Gantt, Filter, Toolbar } from '@syncfusion/ej2-gantt';
 import { Button } from '@syncfusion/ej2-buttons';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Filter, Toolbar);
 
@@ -22,7 +20,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     toolbar: ['Search'],
     searchSettings: { fields: ['TaskName'], operator: 'contains', key: 'Perform', ignoreCase: true },
@@ -35,6 +33,3 @@ clearBtn.appendTo('#clear');
 document.getElementById('clear').addEventListener('click', () => {
    gantt.searchSettings.key='';
 });
-
-
-

@@ -1,8 +1,5 @@
-
-
-
 import { Gantt } from '@syncfusion/ej2-gantt';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 function getTooltipData(startDate: Date, endDate: Date, tier: string) {
     const gantt: any = (document.getElementsByClassName('e-gantt')[0] as any).ej2_instances[0];
@@ -98,7 +95,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     tooltipSettings: {
         showTooltip: true,
@@ -106,6 +103,3 @@ let gantt: Gantt = new Gantt({
     }
 });
 gantt.appendTo('#Gantt');
-
-
-

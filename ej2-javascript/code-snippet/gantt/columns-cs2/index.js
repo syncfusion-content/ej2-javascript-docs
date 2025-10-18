@@ -9,7 +9,7 @@ var ganttChart = new ej.gantt.Gantt({
 			startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-			child: 'subtasks',
+			parentID: 'ParentID'
         },
 		height:'450px',
 		splitterSettings:{
@@ -17,5 +17,3 @@ var ganttChart = new ej.gantt.Gantt({
 		}
 });
 ganttChart.appendTo('#Gantt');
-
-

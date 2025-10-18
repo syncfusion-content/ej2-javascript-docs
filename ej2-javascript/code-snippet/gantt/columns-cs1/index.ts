@@ -1,10 +1,10 @@
 
 
 
-import { Gantt, Filter, Sort, Resize, ColumnMenu } from '@syncfusion/ej2-gantt';
-import { GanttData } from 'datasource.ts';
+import { Gantt, Filter, Sort, Resize, ColumnMenu, Selection } from '@syncfusion/ej2-gantt';
+import { GanttData } from './datasource.ts';
 
-Gantt.Inject(Filter, Sort, Resize, ColumnMenu);
+Gantt.Inject(Filter, Sort, Resize, ColumnMenu, Selection);
 
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
@@ -27,6 +27,3 @@ let gantt: Gantt = new Gantt({
 });
 
 gantt.appendTo('#Gantt');
-
-
-

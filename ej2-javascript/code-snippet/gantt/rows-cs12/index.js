@@ -8,7 +8,7 @@ var ganttChart = new ej.gantt.Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     rowDataBound: function(args){
         if (args.data['TaskID'] == 4) {
@@ -22,18 +22,3 @@ var ganttChart = new ej.gantt.Gantt({
     }
 });
 ganttChart.appendTo('#Gantt');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

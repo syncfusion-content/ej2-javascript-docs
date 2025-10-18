@@ -9,38 +9,61 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Gemini AI With JavaScript AI AssistView control
+# Integrate Gemini AI with JavaScript AI AssistView control
 
-The Syncfusion AI AssistView supports integration with [Gemini](https://ai.google.dev/gemini-api/docs), enabling advanced conversational AI features in your applications.
-
-## Getting Started With the JavaScript AI AssistView control
-
-Before integrating Gemini AI, ensure that the Syncfusion AI AssistView control is correctly rendered in your application:
-
-[ JavaScript Getting Started Guide](../getting-started)
+The AI AssistView control integrates with Google’s [Gemini](https://ai.google.dev/gemini-api/docs) API to deliver intelligent conversational interfaces. It leverages advanced natural language understanding to interpret user input, maintain context throughout interactions, and provide accurate, relevant responses. By configuring secure authentication and data handling, developers can unlock powerful AI-driven communication features that elevate user engagement and streamline support experiences.
 
 ## Prerequisites
 
-* Requires `Node.js` (v16 or higher) and `npm`.
-* Google account to generate API key on accessing [Gemini AI](https://ai.google.dev/gemini-api/docs).
+Before starting, ensure you have the following:
+
+* **Node.js**: Version 16 or higher with npm.
+
+* **Google Account**: For generating a Gemini API key.
+
+* **Marked Library**: For parsing Markdown responses (`npm install marked --save`).
+
+## Set Up the Environment
+
+Follow the Syncfusion AI AssistView [Getting Started](../getting-started) guide to configure and render the AI AssistView control in your application.
+
+## Install Dependencies
+
+Install the required packages:
+
+1. Google Generative AI SDK:
+
+```bash
+
+npm install @google/generative-ai
+
+```
+
+2. Marked Library:
+
+```bash
+
+npm install marked --save
+
+```
 
 ## Generate API Key
 
-1. Go to [Google AI Studio](https://aistudio.google.com/app/apikey) and sign in with your Google account. If you don’t have one, create a new account. 
+1. Access Google AI Studio: Instructs users to sign into [Google AI Studio](https://aistudio.google.com/app/apikey) with a Google account or create a new account if needed. 
 
-2. Once logged in, click on `Get API Key` from the left-hand menu or the top-right corner of the dashboard. 
+2. Navigate to API Key Creation: Go to the `Get API Key` option in the left-hand menu or top-right corner of the dashboard. Click the `Create API Key` button. 
 
-3. Click the `Create API Key` button. You’ll be prompted to either select an existing Google Cloud project or create a new one. Choose the appropriate option and proceed. 
+3. Project Selection: Choose an existing Google Cloud project or create a new one.
 
-4. After selecting or creating a project, your API key will be generated and displayed. Copy the key and store it securely, as it will only be shown once.
+4. API Key Generation: After project selection, the API key is generated. Users are instructed to copy and store the key securely, as it is shown only once.
 
-> `Security Note`: Never commit the API key to version control. Use environment variables or a secret manager for production.
+> `Security Note`: Advises against committing the API key to version control and recommends using environment variables or a secret manager in production.
 
 ##  Configure Gemini AI with AI AssistView
 
-Create JavaScript application to integrate the Open AI with AI AssistView component with the respective files
+Modify the `index.js` file to integrate the Gemini API with the AI AssistView control.
 
-* Add your generated `API Key` at the line 
+* Add your Gemini API key securely in the configuration:
 
 ```bash
 
@@ -58,9 +81,3 @@ var geminiApiKey = 'Place your API key here';
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/ai-assistview/ai-integrations/gemini-ai" %}
-
-## Run and Test 
-
-Now, run the `index.html` in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript AI AssistView** control.
-
-Open the hosted link to interact with your Gemini AI for dynamic response.

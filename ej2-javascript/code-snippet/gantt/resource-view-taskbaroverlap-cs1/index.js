@@ -1,7 +1,7 @@
 ej.gantt.Gantt.Inject(ej.gantt.Edit,ej.gantt.Toolbar,ej.gantt.Selection);
 
 var gantt = new ej.gantt.Gantt({
-    dataSource: overAllocationData,
+    dataSource: selfReferenceData,
     resources: resources,
     viewType: 'ResourceView',
     showOverAllocation: true,
@@ -18,7 +18,7 @@ var gantt = new ej.gantt.Gantt({
             resourceInfo: 'resources',
             work: 'work',
             expandState: 'isExpand',
-            child: 'subtasks'
+            parentID: 'ParentID'
         },
         resourceFields: {
             id: 'resourceId',

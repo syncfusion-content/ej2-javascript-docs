@@ -2,10 +2,11 @@ import {
   Diagram,
   NodeModel,
   ConnectorModel,
+  HierarchicalTree,
   ConnectorConstraints,
   ConnectorEditing, UndoRedo
 } from '@syncfusion/ej2-diagrams';
-Diagram.Inject(ConnectorEditing, UndoRedo);
+Diagram.Inject(HierarchicalTree, ConnectorEditing, UndoRedo);
 let nodes: NodeModel[] = [
  {
     id: 'sourcenode',

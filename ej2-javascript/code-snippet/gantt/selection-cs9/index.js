@@ -9,7 +9,7 @@ var ganttChart = new ej.gantt.Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     selectionSettings: {
         mode: 'Row',
@@ -21,8 +21,7 @@ ganttChart.appendTo('#Gantt');
 
 function rowSelected(args) {
     var selectedrowindex = ganttChart.selectionModule.getSelectedRowIndexes();  // get the selected row indexes.
-    alert(selectedrowindex); // to alert the selected row indexes.
-    var selectedrecords = ganttChart.selectionModule.getSelectedRecords();  // get the selected records.
-    console.log(selectedrecords); // to print the selected records in console window.
+    alert(`Selected row index: ${selectedrowindex}`); // to alert the selected row indexes.
+    let selectedrecords = ganttChart.selectionModule.getSelectedRecords();  // get the selected records.
+    console.log("Selected records:", selectedrecords); // to print the selected records in console window.
 }
-

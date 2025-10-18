@@ -9,7 +9,7 @@ var ganttChart = new ej.gantt.Gantt({
             startDate: 'StartDate',
 			duration: 'Duration',
             progress: 'Progress',
-		    child: 'subtasks'
+		    parentID: 'ParentID'
         },
 		sortSettings: { columns: [{ field: 'TaskID', direction: 'Ascending' }, { field: 'TaskName', direction: 'Ascending' }] },
 		allowSorting:true
@@ -22,4 +22,3 @@ clrBtn.appendTo('#clearSorting');
 document.getElementById('clearSorting').addEventListener('click', () => {
 	ganttChart.clearSorting();
 });
-

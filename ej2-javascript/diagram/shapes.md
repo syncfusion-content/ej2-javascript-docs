@@ -176,7 +176,7 @@ Html elements can be embedded in the diagram through [`Html`](../api/diagram/nod
 
 N> HTML node cannot be exported to image format, like JPEG, PNG, and BMP. It is by design, while exporting the diagram is drawn in a canvas. Further, this canvas is exported into image formats. Currently, drawing in a canvas equivalent from all possible HTML is not feasible. Hence, this limitation. To overcome this limiatation we can use Blink rendering engine. Refer to - [`Html node export`](https://support.syncfusion.com/kb/article/14031/how-to-export-html-node-using-blink-rendering-in-javascript-diagram)
 
-### HTML node with content template
+### HTML Node with contentTemplate.
 
 To render an HTML node with a content template, we need to define the desired template string within the [`content`](../api/diagram/htmlModel/#content) property. The following code illustrates how to create an HTML node with a content template:
 
@@ -207,7 +207,7 @@ To render an HTML node with a content template, we need to define the desired te
 {% previewsample "page.domainurl/code-snippet/diagram/shapes-cs5" %}
 {% endif %}
 
-#### Functional content template
+#### Functional content template.
 
 To render an HTML node using a functional template, we define a function that returns the template string. Within this function, modifications can be made based on the node's ID.
 
@@ -240,7 +240,7 @@ The following code illustrates how to render an HTML node using the function and
 {% previewsample "page.domainurl/code-snippet/diagram/shapes-contentFnTemplate" %}
 {% endif %}
 
-### HTML node with node template
+### HTML Node With nodeTemplate
 
 To render html node with nodeTemplate we need to define the nodeTemplate in the html file and assign it to the [`nodeTemplate`](../api/diagram/#nodetemplate) property of the diagram. The following code illustrates how to render html node with nodeTemplate.
 
@@ -271,7 +271,7 @@ To render html node with nodeTemplate we need to define the nodeTemplate in the 
 {% previewsample "page.domainurl/code-snippet/diagram/shapes-cs6" %}
 {% endif %}
 
-#### Functional node template
+#### Functional nodeTemplate
 
 We can define a function which returns a template string and assign it directly to the `nodeTemplate` property of diagram.
 
@@ -308,12 +308,6 @@ Refer the code example below.
 
 Diagram provides support to embed SVG element into a node. The shape property of node allows you to set the type of node. To create a [`native`](../api/diagram/node/#shape) node, it should be set as **native**. The following code illustrates how a native node is created.
 
-N> Like HTML node, the native node also cannot be exported to image format. Fill color of native node can be overridden by the inline style or fill of the SVG element specified in the template.
-
-### Native node with content template
-
-To render an SVG node using a content template, define the desired template string in the node's [`content`](../api/diagram/native/#content) property. The following example demonstrates how to create an SVG node using a content template.
-
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
@@ -341,103 +335,7 @@ To render an SVG node using a content template, define the desired template stri
 {% previewsample "page.domainurl/code-snippet/diagram/shapes-cs7" %}
 {% endif %}
 
-
-#### Functional content template
-
-Dynamic SVG content generation is supported through function-based templates that return SVG markup based on runtime conditions. This approach enables responsive graphics that adapt to node properties or the application's state.
-
-The following example demonstrates how to render an SVG node using a function and dynamically manipulate its content.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/diagram/shapes-contentFnTemplateSVG/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/diagram/shapes-contentFnTemplateSVG/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/diagram/shapes-contentFnTemplateSVG" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/diagram/shapes-contentFnTemplateSVG/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/diagram/shapes-contentFnTemplateSVG/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/diagram/shapes-contentFnTemplateSVG" %}
-{% endif %}
-
-### Native node with node template
-
-The [`nodeTemplate`](../api/diagram/#nodetemplate) property allows defining reusable SVG templates at the diagram level. This approach is efficient when multiple nodes share similar vector graphics or when centralized template management is required.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/diagram/shapes-cs12/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/diagram/shapes-cs12/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/diagram/shapes-cs12" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/diagram/shapes-cs12/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/diagram/shapes-cs12/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/diagram/shapes-cs12" %}
-{% endif %}
-
-#### Functional node template
-
-A functional `nodeTemplate` implementation provides maximum flexibility for generating SVG templates programmatically and creating dynamic content.
-
-The following example demonstrates this approach.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/diagram/shapes-fnNodeTemplateSVG/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/diagram/shapes-fnNodeTemplateSVG/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/diagram/shapes-fnNodeTemplateSVG" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/diagram/shapes-fnNodeTemplateSVG/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/diagram/shapes-fnNodeTemplateSVG/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/diagram/shapes-fnNodeTemplateSVG" %}
-{% endif %}
+N> Like HTML node, the native node also cannot be exported to image format. Fill color of native node can be overridden by the inline style or fill of the SVG element specified in the template.
 
 ### SVG content alignment
 

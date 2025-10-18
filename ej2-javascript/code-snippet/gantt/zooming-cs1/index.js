@@ -9,7 +9,7 @@ var ganttChart = new ej.gantt.Gantt({
 			duration: 'Duration',
             progress: 'Progress',
 			dependency: 'Predecessor',
-            child: 'subtasks'
+            parentID: 'parentID'
         },
         toolbar: ['ZoomIn', 'ZoomOut', 'ZoomToFit'],
         labelSettings: {
@@ -19,15 +19,3 @@ var ganttChart = new ej.gantt.Gantt({
         projectEndDate: new Date('04/28/2019')
     });
 ganttChart.appendTo('#Gantt');
-
-
-
-
-
-
-
-
-
-
-
-

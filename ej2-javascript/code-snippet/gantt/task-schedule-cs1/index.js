@@ -24,4 +24,3 @@ var gantt = new ej.gantt.Gantt({
     },
 });
 gantt.appendTo('#Gantt');
-

@@ -2,7 +2,7 @@
 
 
 import { Gantt, DayMarkers } from '@syncfusion/ej2-gantt';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 Gantt.Inject(DayMarkers);
 
@@ -15,7 +15,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     holidays: [{
         from: "04/04/2019",

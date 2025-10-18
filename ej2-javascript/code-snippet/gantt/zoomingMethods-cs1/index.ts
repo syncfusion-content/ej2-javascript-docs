@@ -1,9 +1,6 @@
-
-
-
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { Button } from '@syncfusion/ej2-buttons';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
@@ -15,7 +12,7 @@ let gantt: Gantt = new Gantt({
         duration: 'Duration',
         progress: 'Progress',
         dependency: 'Predecessor',
-        child: 'subtasks'
+        parentID: 'parentID'
     },
     labelSettings: {
         leftLabel: 'TaskName'
@@ -45,6 +42,3 @@ fitToBth.appendTo('#fitToProject');
 document.getElementById('fitToProject').addEventListener('click', () => {
     gantt.fitToProject();
 });
-
-
-

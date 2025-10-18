@@ -1,7 +1,7 @@
 var clickHandler = function(args){
 	if (args.item.id === 'GanttExport_excelexport') {
 		var excelExportProperties = {
-            dataSource: [GanttData[1]]
+            dataSource: [GanttData[4]]
         };
         ganttChart.excelExport(excelExportProperties);
 	}
@@ -18,11 +18,10 @@ var ganttChart = new ej.gantt.Gantt({
         startDate: 'StartDate',        
         duration: 'Duration',
         progress: 'Progress',        
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     allowExcelExport: true,
     toolbar: ['ExcelExport'],
 	toolbarClick: clickHandler
 });
 ganttChart.appendTo('#GanttExport');
-

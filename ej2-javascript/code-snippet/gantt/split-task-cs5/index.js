@@ -10,7 +10,7 @@ var ganttChart = new ej.gantt.Gantt({
             endDate: "EndDate",
             duration: "Duration",
             progress: "Progress",
-            child: "subtasks",
+            parentID: 'ParentID',
             segments: "Segments"
         },
         toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
@@ -24,10 +24,3 @@ var ganttChart = new ej.gantt.Gantt({
         enableContextMenu: true
 });
 ganttChart.appendTo('#Gantt');
-
-
-
-
-
-
-

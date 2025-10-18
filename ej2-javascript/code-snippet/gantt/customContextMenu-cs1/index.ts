@@ -23,7 +23,7 @@ let gantt: Gantt = new Gantt({
         duration: 'Duration',
         progress: 'Progress',
         dependency:'Predecessor',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     editSettings: {
         allowAdding: true,
@@ -64,6 +64,3 @@ let gantt: Gantt = new Gantt({
 });
 
 gantt.appendTo('#CustomContextMenu');
-
-
-

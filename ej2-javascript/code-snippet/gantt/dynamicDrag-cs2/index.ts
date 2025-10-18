@@ -2,12 +2,12 @@
 
 
 import { Gantt, RowDD, Edit, Selection } from '@syncfusion/ej2-gantt';
-import { projectNewData } from 'datasource.ts';
+import { ProjectNewData } from './datasource.ts';
 
 Gantt.Inject(RowDD, Edit, Selection);
 
 let gantt: Gantt = new Gantt({
-    dataSource: projectNewData,
+    dataSource: ProjectNewData,
     height:'450px',
     taskFields: {
         id: 'TaskID',
@@ -16,7 +16,7 @@ let gantt: Gantt = new Gantt({
         duration: 'Duration',
         progress: 'Progress',
         dependency: 'Predecessor',
-        child: 'subtasks'
+        parentID: 'parentID'
     },
     editSettings: {
         allowAdding: true,
@@ -29,6 +29,3 @@ let gantt: Gantt = new Gantt({
     allowRowDragAndDrop: true
 });
 gantt.appendTo('#Gantt');
-
-
-

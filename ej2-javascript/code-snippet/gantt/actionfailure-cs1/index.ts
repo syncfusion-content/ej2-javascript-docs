@@ -29,6 +29,3 @@ let gantt: Gantt = new Gantt({
     },
 });
 gantt.appendTo('#Gantt');
-
-
-

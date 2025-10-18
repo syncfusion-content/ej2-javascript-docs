@@ -1,5 +1,5 @@
 var ganttChart = new ej.gantt.Gantt({
-         dataSource: projectNewData,
+         dataSource: ProjectNewData,
 		 height:'450px',
 		 taskFields: {
             id: 'TaskID',
@@ -8,7 +8,7 @@ var ganttChart = new ej.gantt.Gantt({
             duration: 'Duration',
             progress: 'Progress',
             dependency: 'Predecessor',
-            child: 'subtasks'
+            parentID: 'parentID'
         },
         editSettings: {
             allowAdding: true,
@@ -21,5 +21,3 @@ var ganttChart = new ej.gantt.Gantt({
         allowRowDragAndDrop: true
 	});
 ganttChart.appendTo('#Gantt');
-
-

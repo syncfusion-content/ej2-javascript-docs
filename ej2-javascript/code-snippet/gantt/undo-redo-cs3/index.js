@@ -18,7 +18,7 @@ var ganttChart = new ej.gantt.Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Search', 'ZoomIn', 'ZoomOut', 'ZoomToFit','Indent','Outdent', 
     'PrevTimeSpan', 'NextTimeSpan','Undo','Redo'],
@@ -45,4 +45,3 @@ document.getElementById('redo').addEventListener('click', () => {
     var ganttObj= document.getElementById('Gantt').ej2_instances[0];
 	ganttObj.redo();
 });
-

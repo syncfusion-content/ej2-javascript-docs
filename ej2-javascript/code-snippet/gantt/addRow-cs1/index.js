@@ -9,7 +9,7 @@ var ganttChart = new ej.gantt.Gantt({
             startDate: 'StartDate',
 			duration: 'Duration',
             progress: 'Progress',
-			child: 'subtasks'
+			parentID: 'ParentID'
         },
 		editSettings:{
 			allowAdding:true
@@ -29,17 +29,3 @@ document.getElementById('addRow').addEventListener('click', function() {
 	    };
     ganttChart.editModule.addRecord(record,'Below',2);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-

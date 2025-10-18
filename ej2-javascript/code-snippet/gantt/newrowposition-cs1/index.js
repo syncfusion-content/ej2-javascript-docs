@@ -1,8 +1,8 @@
 var clickHandler = function(args){
-	if (args.item.id === 'GanttExport_add') {
-			 var contextMenuObj = document.getElementById("contextmenu").ej2_instances[0];
-             contextMenuObj.open(60, 20);
-		}
+	if(args.item.id === 'Add'){
+    var contextMenuObj = document.getElementById("contextmenu").ej2_instances[0];
+        contextMenuObj.open(60, 20);
+	}
 };
 ej.gantt.Gantt.Inject(ej.gantt.Toolbar);
 var menuItems = [
@@ -62,23 +62,23 @@ function select(args) {
 }
 
 var ganttChart = new ej.gantt.Gantt({
-        dataSource: GanttData,
+    dataSource: GanttData,
 		height:'450px',
 		allowSelection: true,
 		taskFields: {
-            id: 'TaskID',
-            name: 'TaskName',
-            startDate: 'StartDate',
-			duration: 'Duration',
-            progress: 'Progress',
-			child: 'subtasks'
-        },
+        id: 'TaskID',
+        name: 'TaskName',
+        startDate: 'StartDate',
+        duration: 'Duration',
+        progress: 'Progress',
+        parentID: 'ParentID'
+      },
 		editSettings:{
-			allowAdding:true
+			allowAdding: true,
+      allowEditing: true
 		},
-        toolbar: ['Edit', { text: 'Add', tooltipText: 'Add', id: 'Add' }],
-        toolbarClick: clickHandler,
+    toolbar: ['Edit', { text: 'Add', tooltipText: 'Add', id: 'Add' }],
+    toolbarClick: clickHandler,
 
 });
 ganttChart.appendTo('#Gantt');
-

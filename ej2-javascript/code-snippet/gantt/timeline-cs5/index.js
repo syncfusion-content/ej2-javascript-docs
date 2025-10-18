@@ -1,5 +1,5 @@
 var ganttChart = new ej.gantt.Gantt({
-        dataSource: HourData,
+        dataSource: GanttData,
 		height:'450px',
 		taskFields: {
             id: 'TaskID',
@@ -7,27 +7,10 @@ var ganttChart = new ej.gantt.Gantt({
             startDate: 'StartDate',
 			duration: 'Duration',
             progress: 'Progress',
-			child: 'subtasks'
+			parentID: 'ParentID'
         },
 		timelineSettings: {
 		    timelineViewMode:'Hour'
 		}
 });
 ganttChart.appendTo('#Gantt');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

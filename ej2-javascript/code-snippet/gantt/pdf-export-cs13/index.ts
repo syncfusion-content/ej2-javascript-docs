@@ -1,6 +1,3 @@
-
-
-
 import { Gantt, Toolbar, PdfExport, Selection,PdfBorders, PdfExportProperties, DayMarkers } from '@syncfusion/ej2-gantt';
 import { GanttData } from 'datasource.ts';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
@@ -94,7 +91,7 @@ let gantt: Gantt = new Gantt({
         duration: 'Duration',
         progress: 'Progress',
         dependency: 'Predecessor',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     columns: [
         { field: 'TaskID'},
@@ -129,6 +126,3 @@ let gantt: Gantt = new Gantt({
     }],
 });
 gantt.appendTo('#GanttExport');
-
-
-

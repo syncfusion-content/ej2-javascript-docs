@@ -88,7 +88,3 @@ window.getConstraintText = function (value) {
     };
     return map[value];
 };
-
-
-
-

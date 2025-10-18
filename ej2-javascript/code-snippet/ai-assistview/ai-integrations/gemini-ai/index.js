@@ -1,3 +1,4 @@
+ // Initialize Gemini API
 var geminiApiKey = ''; // Replace with your real Gemini API key
 var stopStreaming = false;
 
@@ -6,6 +7,7 @@ var suggestions = [
     'How can I maintain work-life balance effectively?'
 ];
 
+// Initializes the AI Assist control
 var aiAssistView = new ej.interactivechat.AIAssistView({
     promptSuggestions: suggestions,
     toolbarSettings: {
@@ -25,6 +27,7 @@ function toolbarItemClicked(args) {
     }
 }
 
+// Stream AI response in chunks
 async function streamResponse(response) {
     var lastResponse = "";
     var responseUpdateRate = 10;
@@ -43,8 +46,9 @@ async function streamResponse(response) {
     aiAssistView.promptSuggestions = suggestions;
 }
 
+// Handle user prompt: call Gemini model
 function onPromptRequest(args) {
-    var model = 'gemini-2.5-flash'; // Replace Your Model Name Here 
+    var model = 'gemini-2.5-flash'; // Select the Gemini model (update model name as needed)
     var url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${geminiApiKey}`;
     
     var requestBody = {

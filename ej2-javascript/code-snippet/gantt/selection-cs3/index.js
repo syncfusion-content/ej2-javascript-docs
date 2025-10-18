@@ -9,11 +9,15 @@ var ganttChart = new ej.gantt.Gantt({
             startDate: 'StartDate',
 			duration: 'Duration',
             progress: 'Progress',
-		    child: 'subtasks'
+		    parentID: 'ParentID'
         },
-	    cellSelecting:function(args){
-		   if(args.data.TaskID==4 && args.cellIndex.cellIndex==1){
-			    args.cancel=true;
+	    cellSelecting: function (args) {
+			if (args.data.TaskID === 4 && args.cellIndex.cellIndex === 1) {
+				args.cancel = true;
+				message.innerText=`Cell selection cancelled for Task: "${args.data.TaskName}"`;
+			}
+			else{
+				message.innerText = "";
 			}
 		},
 		selectionSettings: {
@@ -21,14 +25,3 @@ var ganttChart = new ej.gantt.Gantt({
         }
     });
 ganttChart.appendTo('#Gantt');
-
-
-
-
-
-
-
-
-
-
-

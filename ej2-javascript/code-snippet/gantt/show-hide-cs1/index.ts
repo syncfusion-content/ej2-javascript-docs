@@ -1,9 +1,6 @@
-
-
-
 import { Gantt, Edit, Selection } from '@syncfusion/ej2-gantt';
 import { Button } from '@syncfusion/ej2-buttons';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Edit, Selection);
 
@@ -15,7 +12,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     splitterSettings: {
         position: '75%'
@@ -43,6 +40,3 @@ document.getElementById('show').addEventListener('click', () => {
 document.getElementById('hide').addEventListener('click', () => {
    gantt.hideColumn(['TaskName', 'Duration']);
 });
-
-
-

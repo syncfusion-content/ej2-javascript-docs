@@ -2,7 +2,7 @@
 
 
 import { Gantt } from '@syncfusion/ej2-gantt';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
@@ -13,7 +13,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks',
+        parentID: 'ParentID',
     },
     columns: [
         { field: 'TaskID', headerText: 'Task ID', textAlign: 'Right', width: 120 },
@@ -54,6 +54,3 @@ document.getElementById('restore').onclick = () => {
     console.log(savedProperties);
     gantt.treeGrid.setProperties(savedProperties);
 };
-
-
-

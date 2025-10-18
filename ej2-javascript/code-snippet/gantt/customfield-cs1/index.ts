@@ -6,7 +6,7 @@ import { CheckBox } from "@syncfusion/ej2-buttons";
 import { TextBox, NumericTextBox, MaskedTextBox } from "@syncfusion/ej2-inputs";
 import { DatePicker, DateTimePicker } from "@syncfusion/ej2-calendars";
 import { DropDownList } from "@syncfusion/ej2-dropdowns";
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Edit, Toolbar);
 
@@ -30,7 +30,7 @@ let gantt: Gantt = new Gantt({
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            child: 'subtasks',
+            parentID: 'ParentID',
         },
         editSettings: {
         allowAdding: true,
@@ -96,6 +96,3 @@ let gantt: Gantt = new Gantt({
 });
 
 gantt.appendTo('#Gantt');
-
-
-

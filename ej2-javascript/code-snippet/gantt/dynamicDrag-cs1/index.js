@@ -8,7 +8,7 @@ var ganttChart = new ej.gantt.Gantt({
             duration: 'Duration',
             progress: 'Progress',
             dependency: 'Predecessor',
-            child: 'subtasks'
+            parentID: 'ParentID'
         },
         allowRowDragAndDrop: true
 	});
@@ -20,6 +20,3 @@ dragBtn.appendTo('#dynamicDrag');
 document.getElementById('dynamicDrag').addEventListener('click', function() {
     ganttChart.reorderRows([1,2,3], 4, 'child');
 });
-
-
-

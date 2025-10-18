@@ -1,7 +1,7 @@
 ej.gantt.Gantt.Inject(ej.gantt.Edit,ej.gantt.Toolbar,ej.gantt.Selection);
 
 var gantt = new ej.gantt.Gantt({
-    dataSource: GanttData,
+    dataSource: selfReferenceData,
     resources: resourceCollection,
     viewType: 'ResourceView',
         taskFields: {
@@ -13,7 +13,7 @@ var gantt = new ej.gantt.Gantt({
             progress: 'Progress',
             resourceInfo: 'resources',
             work: 'work',
-            child: 'subtasks'
+            parentID: 'ParentID'
         },
         resourceFields: {
             id: 'resourceId',
@@ -53,4 +53,3 @@ var gantt = new ej.gantt.Gantt({
         projectEndDate: new Date('05/18/2019')
 });
 gantt.appendTo('#Gantt');
-

@@ -8,9 +8,15 @@
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/26.1.35/material.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
+    <style>
+        .e-gantt .e-gantt-chart .e-gantt-milestone {
+        position: absolute;
+        transform: rotate(0deg)!important;
+    }
+    </style>
 </head>
 
 <body>
@@ -40,8 +46,8 @@
     <script type="text/x-jsrender" id="MilestoneTemplate">
         <div style="margin-top=-7px;">
         <div class="e-gantt-milestone" style="position:absolute;">
-            <div class="image" style="position:absolute; left: 6px ; top: 5px">
-                <img class="moments" src="../images/${ganttProperties.resourceNames}.png" height="40px" width="40px" />
+            <div class="image" style="position:absolute;">
+                <img class="moments" src="./images/${ganttProperties.resourceNames}.png" height="40px" width="40px" />
             </div>
             <div class="e-milestone-top" style="border-right-width:20px; margin-top: -2px;border-left-width:20px;border-bottom-width:20px;"></div>
             <div class="e-milestone-bottom" style="top:26px;border-right-width:20px; border-left-width:20px; border-top-width:20px;"></div>

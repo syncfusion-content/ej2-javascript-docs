@@ -39,13 +39,13 @@ var ganttChart = new ej.gantt.Gantt({
     dataSource: GanttData,
     allowSorting: true,
     taskFields: {
-        id: 'TaskId',
+        id: 'TaskID',
         name: 'TaskName',
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
         dependency: 'Predecessor',
-        parentID: 'ParentId',
+        parentID: 'ParentID',
     },
     splitterSettings: {
         columnIndex: 1

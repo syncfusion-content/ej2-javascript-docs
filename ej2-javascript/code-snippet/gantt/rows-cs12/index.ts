@@ -13,7 +13,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     rowDataBound: rowBound,
     queryTaskbarInfo: queryTaskbarInfo,
@@ -30,6 +30,3 @@ function queryTaskbarInfo(args: IQueryTaskbarInfoEventArgs) {
    args.rowElement.style.background = 'cyan';
   }
 }
-
-
-

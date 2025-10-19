@@ -9,8 +9,8 @@ var gantt = new ej.gantt.Gantt({
         duration: 'Duration',
         progress: 'Progress',
         resourceInfo: 'resources',
-        work: 'work',
-        child: 'subtasks'
+        work: 'Work',
+        parentID: 'ParentID'
     },
     editSettings: {
         allowAdding: true,
@@ -23,7 +23,7 @@ var gantt = new ej.gantt.Gantt({
     resourceFields: {
         id: 'resourceId',
         name: 'resourceName',
-        unit: 'unit'
+        unit: 'Unit'
     },
     workUnit: 'Hour',
     toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
@@ -34,9 +34,8 @@ var gantt = new ej.gantt.Gantt({
         { field: 'TaskID', visible: false },
         { field: 'TaskName', headerText: 'Task Name', width: '180' },
         { field: 'resources', headerText: 'Resources', width: '160' },
-        { field: 'work', width: '110' },
+        { field: 'Work', width: '110' },
         { field: 'Duration', width: '100' },
     ],
 });
 gantt.appendTo('#Gantt');
-

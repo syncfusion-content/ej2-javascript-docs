@@ -92,7 +92,7 @@ You can perform the various zoom actions dynamically or on external click action
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/zoomingMethods-cs1/index.ts %}
 {% endhighlight %}

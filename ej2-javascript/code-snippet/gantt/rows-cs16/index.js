@@ -4,18 +4,18 @@ var ganttChart = new ej.gantt.Gantt({
     dataSource: GanttData,
     resources: resourceCollection,
     addDialogFields: [
-        { type: 'General', headerText: 'General add',fields:["newinput"]},
-        { type: 'Dependency', additionalParams: {allowPaging: true, allowSorting: true, toolbar: ["Search", "Print",]}},
+        { type: 'General', headerText: 'General add'},
+        { type: 'Dependency'},
         { type: 'Resources'} , 
-        { type: 'Notes' },
-        {type:"Segments", additionalParams:{columns:[{field:"segmenttask",width:"170px" ,headerText:"Segment Task"}],}}
+        {type: 'Notes', additionalParams: {inlineMode: { enable: true,onSelection: true }}},
+        {type:"Segments"}
     ],
     editDialogFields: [
-        { type: 'General', headerText: 'General edit', fields: ["TaskID", "TaskName", "newinput"] },
-        {type: 'Dependency', additionalParams: {allowPaging: true, allowSorting: true, toolbar: ["Search", "Print",]}},
-        { type: 'Resources', additionalParams: { allowSorting: true, allowPaging: true, toolbar: ["Search", "Print"], columns: [{ field: "newdata" }]}},
+        { type: 'General', headerText: 'General edit' },
+        {type: 'Dependency'},
+        { type: 'Resources'},
         {type: 'Notes', additionalParams: {inlineMode: { enable: true,onSelection: true }}},
-        {type: "Segments", additionalParams: {columns: [{ field: "segmenttask", width: "170px", headerText: "Segment Task" }],}}
+        {type: "Segments"}
     ],
     height: '450px',
     taskFields: {
@@ -28,9 +28,14 @@ var ganttChart = new ej.gantt.Gantt({
         dependency: 'Predecessor',
         resourceInfo: 'resources',
         work: 'work',
-        child: 'subtasks',
+        parentID: 'ParentID',
         segments: 'Segments',
         notes:"note",
+    },
+    resourceFields: {
+        id: 'resourceId',
+        name: 'resourceName',
+        unit: 'resourceUnit'
     },
     editSettings: {
         allowAdding: true,
@@ -43,18 +48,3 @@ var ganttChart = new ej.gantt.Gantt({
 		
 });
 ganttChart.appendTo('#Gantt');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

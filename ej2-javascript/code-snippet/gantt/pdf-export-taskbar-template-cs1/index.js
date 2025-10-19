@@ -10,7 +10,7 @@ var pdfQueryTaskbarInfo =  function(args){
     if (!args.data.hasChildRecords) {
         if (args.data.ganttProperties.resourceNames) {
             args.taskbarTemplate.image = [{
-                width: 20, base64: (args).data.taskData.resourcesImage, height: 20
+                width: 20, base64: (args).data.taskData.ResourcesImage, height: 20
             }]
         }
         args.taskbarTemplate.value = args.data.TaskName;
@@ -18,7 +18,7 @@ var pdfQueryTaskbarInfo =  function(args){
     if (args.data.hasChildRecords) {
         if (args.data.ganttProperties.resourceNames) {
             args.taskbarTemplate.image = [{
-                width: 20, base64: (args).data.taskData.resourcesImage, height: 20
+                width: 20, base64: (args).data.taskData.ResourcesImage, height: 20
             }]
         }
         args.taskbarTemplate.value = args.data.TaskName;
@@ -26,7 +26,7 @@ var pdfQueryTaskbarInfo =  function(args){
     if (args.data.ganttProperties.duration === 0) {
         if (args.data.ganttProperties.resourceNames) {
             args.taskbarTemplate.image = [{
-                width: 20, base64: (args).data.taskData.resourcesImage, height: 20,
+                width: 20, base64: (args).data.taskData.ResourcesImage, height: 20,
             }]
         }
         args.taskbarTemplate.value = args.data.TaskName
@@ -34,19 +34,20 @@ var pdfQueryTaskbarInfo =  function(args){
 };
 
 var ganttChart = new ej.gantt.Gantt({
-    dataSource: ganttData,
+    dataSource: GanttData,
     height: '450px',
     rowHeight: 55,
     taskbarHeight: 45,
     taskFields: {
         id: 'TaskID',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        endDate: 'EndDate',
-        duration: 'Duration',
-        resourceInfo: 'resources',
-        dependency: 'Predecessor',
-        child: 'subtasks'
+         name: 'TaskName',
+         startDate: 'StartDate',
+         endDate: 'EndDate',
+         duration: 'Duration',
+         progress: 'Progress',
+         resourceInfo: 'Resources',
+         dependency: 'Predecessor',
+         parentID: 'ParentID',
     },
     allowPdfExport: true,
     columns: [
@@ -58,8 +59,8 @@ var ganttChart = new ej.gantt.Gantt({
     toolbarClick: clickHandler,
     resources: editingResources,
     resourceFields: {
-        id: 'resourceId',
-        name: 'resourceName'
+        id: 'ResourceId',
+        name: 'ResourceName'
     },
     milestoneTemplate: '#MilestoneTemplate',
     parentTaskbarTemplate: '#ParentTaskbarTemplate',
@@ -68,4 +69,3 @@ var ganttChart = new ej.gantt.Gantt({
     projectEndDate: new Date('04/30/2019'),
 });
 ganttChart.appendTo('#GanttExport');
-

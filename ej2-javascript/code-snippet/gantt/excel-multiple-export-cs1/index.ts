@@ -3,19 +3,19 @@
 
 import { Gantt, Toolbar,ExcelExport, Selection } from '@syncfusion/ej2-gantt';
 import { ExcelExportProperties } from '@syncfusion/ej2-grids'
-import { GanttData } from 'datasource.ts';
+import { firstGanttData, secondGanttData } from './datasource.ts';
 
 Gantt.Inject(Toolbar, ExcelExport, Selection);
 
 let firstGantt: Gantt = new Gantt({
-    dataSource: [GanttData[0]],
+    dataSource: firstGanttData,
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     treeColumnIndex: 1,
     allowExcelExport: true,
@@ -27,14 +27,14 @@ let firstGantt: Gantt = new Gantt({
 firstGantt.appendTo('#GanttExport1');
 
 let secondGantt: Gantt = new Gantt({
-    dataSource: [GanttData[1]],  
+    dataSource: secondGanttData,  
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     treeColumnIndex: 1,
     allowExcelExport: true,
@@ -54,6 +54,3 @@ firstGantt.toolbarClick = (args: Object) => {
         });
     }
 }
-
-
-

@@ -3,7 +3,7 @@
 
 import { Gantt, Edit } from '@syncfusion/ej2-gantt';
 import { DropDownList } from '@syncfusion/ej2-dropdowns';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Edit);
 let elem: HTMLElement;
@@ -18,7 +18,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     editSettings: {
         allowEditing: true
@@ -57,6 +57,3 @@ let gantt: Gantt = new Gantt({
 });
 
 gantt.appendTo('#Gantt');
-
-
-

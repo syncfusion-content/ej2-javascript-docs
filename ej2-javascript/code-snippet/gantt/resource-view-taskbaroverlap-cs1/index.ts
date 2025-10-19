@@ -1,13 +1,12 @@
 
 
-
 import { Gantt, Toolbar, Edit, Selection } from '@syncfusion/ej2-gantt';
-import { overAllocationData, resources } from 'datasource.ts';
+import { selfReferenceData, resources } from './datasource.ts';
 
 Gantt.Inject(Toolbar, Edit, Selection);
 
 let gantt: Gantt = new Gantt({
-    dataSource: overAllocationData,
+    dataSource: selfReferenceData,
     resources: resources,
     viewType: 'ResourceView',
     showOverAllocation: true,
@@ -24,7 +23,7 @@ let gantt: Gantt = new Gantt({
         resourceInfo: 'resources',
         work: 'work',
         expandState: 'isExpand',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     resourceFields: {
         id: 'resourceId',
@@ -57,6 +56,3 @@ let gantt: Gantt = new Gantt({
     projectEndDate: new Date('05/18/2019')
 });
 gantt.appendTo('#Gantt');
-
-
-

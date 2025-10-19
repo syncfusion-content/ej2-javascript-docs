@@ -9,7 +9,7 @@ var ganttChart = new ej.gantt.Gantt({
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            child: 'subtasks'
+            parentID: 'ParentID'
         },
 		allowFiltering:true
 });
@@ -21,6 +21,3 @@ filterBtn.appendTo('#filter');
 document.getElementById('filter').addEventListener('click', function() {
     ganttChart.filterByColumn('TaskName','startswith','Iden');
 });
-
-
-

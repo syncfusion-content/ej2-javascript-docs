@@ -1,10 +1,8 @@
-
-
 import { Gantt } from '@syncfusion/ej2-gantt';
-import { Data } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 let gantt: Gantt = new Gantt({
-    dataSource: Data,
+    dataSource: GanttData,
     height: '450px',
     taskFields: {
         id: 'TaskID',
@@ -12,7 +10,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'parentID'
     },
     timelineSettings: {
         timelineUnitSize: 100,
@@ -26,6 +24,3 @@ let gantt: Gantt = new Gantt({
     }
 });
 gantt.appendTo('#Gantt');
-
-
-

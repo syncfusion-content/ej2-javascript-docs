@@ -3,12 +3,12 @@
 
 import { Gantt, Edit, Selection } from '@syncfusion/ej2-gantt';
 import { Button } from '@syncfusion/ej2-buttons';
-import { data } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Edit, Selection);
 
 let gantt: Gantt = new Gantt({
-    dataSource: data,
+    dataSource: GanttData,
     height: '450px',
     taskFields: {
         id: 'TaskID',
@@ -16,7 +16,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     }
 });
 
@@ -28,6 +28,3 @@ dateBtn.appendTo('#updateSchedule');
 document.getElementById('updateSchedule').addEventListener('click', () => {
     gantt.updateProjectDates(new Date('01/10/2019'), new Date('06/20/2019'), true);
 });
-
-
-

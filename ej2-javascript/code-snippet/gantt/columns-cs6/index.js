@@ -1,12 +1,12 @@
 var ganttChart = new ej.gantt.Gantt({
          dataSource: GanttData,
 	     taskFields: {
-            id: 'TaskID',
-            name: 'TaskName',
-		    startDate: 'StartDate',
-            duration: 'Duration',
-            progress: 'Progress',
-			child: 'subtasks'
+			 id: 'TaskID',
+			 name: 'TaskName',
+			 startDate: 'StartDate',
+			 duration: 'Duration',
+			 progress: 'Progress',
+			 parentID: 'ParentID'
         },
 		rowHeight:50,
 		splitterSettings:{
@@ -22,4 +22,3 @@ var ganttChart = new ej.gantt.Gantt({
 		]
 });
 ganttChart.appendTo('#Gantt');
-

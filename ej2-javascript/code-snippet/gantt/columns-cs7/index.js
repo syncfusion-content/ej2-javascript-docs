@@ -6,7 +6,7 @@ var ganttChart = new ej.gantt.Gantt({
 		    startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-			child: 'subtasks'
+            parentID: 'ParentID'
         },
 		splitterSettings:{
 			columnIndex:3

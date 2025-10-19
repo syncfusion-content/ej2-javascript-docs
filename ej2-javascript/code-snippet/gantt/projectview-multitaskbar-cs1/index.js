@@ -1,7 +1,7 @@
 ej.gantt.Gantt.Inject(ej.gantt.Edit,ej.gantt.Selection);
 
 var ganttChart = new ej.gantt.Gantt({
-        dataSource: projectViewMultiTaskData,
+        dataSource: GanttData,
 		height:'450px',
 		taskFields: {
             id: 'TaskID',
@@ -9,21 +9,9 @@ var ganttChart = new ej.gantt.Gantt({
             startDate: 'StartDate',
 			duration: 'Duration',
             progress: 'Progress',
-		    child: 'subtasks',
+		    parentID: 'ParentID',
             expandState: 'isExpand'
         },
         enableMultiTaskbar: true,
     });
 ganttChart.appendTo('#Gantt');
-
-
-
-
-
-
-
-
-
-
-
-

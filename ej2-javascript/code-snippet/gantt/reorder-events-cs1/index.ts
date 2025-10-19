@@ -1,7 +1,7 @@
 
 
 import { Gantt, Reorder } from '@syncfusion/ej2-gantt';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Reorder);
 
@@ -14,7 +14,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     splitterSettings: {
         columnIndex: 4
@@ -28,16 +28,13 @@ let gantt: Gantt = new Gantt({
         { field: 'Progress', headerText: 'Progress', width: '150' }
     ],
     columnDragStart: () => {
-        alert('columnDragStart event is Triggered');
+        console.log('columnDragStart event is Triggered');
     },
     columnDrag: () => {
-        alert('columnDrag event is Triggered');
+        console.log('columnDrag event is Triggered');
     },
     columnDrop: () => {
-        alert('columnDrop event is Triggered');
+        console.log('columnDrop event is Triggered');
     }
 });
 gantt.appendTo('#Gantt');
-
-
-

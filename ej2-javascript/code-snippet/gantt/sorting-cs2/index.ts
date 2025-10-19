@@ -2,7 +2,7 @@
 
 
 import { Gantt, Sort } from '@syncfusion/ej2-gantt';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 import { SortEventArgs } from '@syncfusion/ej2-grids';
 
 Gantt.Inject(Sort);
@@ -16,7 +16,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     allowSorting: true,
     actionBegin: actionHandler,
@@ -27,6 +27,3 @@ gantt.appendTo('#Gantt');
 function actionHandler(args: SortEventArgs) {
     alert(args.requestType + ' ' + args.type);
 }
-
-
-

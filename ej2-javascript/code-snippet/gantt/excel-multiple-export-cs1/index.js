@@ -1,14 +1,14 @@
 ej.gantt.Gantt.Inject(ej.gantt.ExcelExport,ej.gantt.Toolbar);
 
 var firstGantt = new ej.gantt.Gantt({
-    dataSource: [GanttData[0]],
+    dataSource: firstGanttData,
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     treeColumnIndex: 1,
     allowExcelExport: true,
@@ -20,14 +20,14 @@ var firstGantt = new ej.gantt.Gantt({
 firstGantt.appendTo('#GanttExport1');
 
 var secondGantt = new ej.gantt.Gantt({
-    dataSource: [GanttData[1]],
+    dataSource: secondGanttData,
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     treeColumnIndex: 1,
     height:250,
@@ -47,8 +47,3 @@ firstGantt.toolbarClick = function(args) {
         });
     }
 }
-
-
-
-
-

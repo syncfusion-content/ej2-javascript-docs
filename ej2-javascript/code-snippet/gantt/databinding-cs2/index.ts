@@ -1,6 +1,3 @@
-
-
-
 import { Gantt } from '@syncfusion/ej2-gantt';
 
 let SelfReferenceData: Object[]  = [
@@ -27,6 +24,3 @@ let gantt: Gantt = new Gantt({
     }
 });
 gantt.appendTo('#Gantt');
-
-
-

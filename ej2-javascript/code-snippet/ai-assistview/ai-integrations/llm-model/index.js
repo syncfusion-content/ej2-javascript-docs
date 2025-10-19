@@ -16,6 +16,8 @@ var aiAssist = new ej.interactivechat.AIAssistView({
   promptRequest:onPromptrequest,
   stopRespondingClick: handleStopResponse
 });
+
+//  Handle user prompt: call local LLM via Ollama
 async function onPromptrequest(args) {
   var lastResponse = "";
   var defaultResponse = "⚠️ Something went wrong while connecting to the AI service. Please check your Ollama application running background.";
@@ -32,6 +34,8 @@ async function onPromptrequest(args) {
       });
       var reply = await response.json();
       var responseUpdateRate = 10;
+
+      // Stream AI response in chunks
       async function streamResponse(response) {
           var i = 0;
           var responseLength = response.length;
@@ -58,8 +62,6 @@ async function onPromptrequest(args) {
   }
 }
 
-aiAssist.appendTo('#llmAssist');
-
 function handleStopResponse() {
   stopStreaming = true;
 }
@@ -68,4 +70,8 @@ function toolbarItemClicked(args) {
   if (args.item?.iconCss === 'e-icons e-refresh') {
     aiAssist.prompts = [];
     aiAssist.promptSuggestions = suggestions;
-  }}
+  }
+}
+
+// Append the AI AssistView to the container
+aiAssist.appendTo('#llmAssist');

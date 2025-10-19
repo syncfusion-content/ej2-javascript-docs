@@ -1,7 +1,6 @@
-
 import { Gantt, Selection, Toolbar, Edit, PdfExport } from '@syncfusion/ej2-gantt';
 Gantt.Inject(Selection, Toolbar, Edit, PdfExport);
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 import { PdfColor } from '@syncfusion/ej2-pdf-export';
 
 
@@ -14,7 +13,7 @@ let gantt: Gantt = new Gantt({
         endDate: "EndDate",
         duration: "Duration",
         progress: "Progress",
-        child: "subtasks",
+        parentID: 'ParentID',
         segments: "Segments"
     },
 
@@ -60,6 +59,3 @@ let gantt: Gantt = new Gantt({
     },
 });
 gantt.appendTo('#GanttExport');
-
-
-

@@ -8,7 +8,7 @@ var ganttChart = new ej.gantt.Gantt({
         duration: 'Duration',
         progress: 'Progress',
         dependency: 'Predecessor',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     toolbar: ['ZoomToFit'],
     labelSettings: {
@@ -26,12 +26,3 @@ document.getElementById('changeData').addEventListener('click', function () {
   var obj = document.getElementById('Gantt').ej2_instances[0];
   obj.dataSource = data;
 });
-
-
-
-
-
-
-
-
-

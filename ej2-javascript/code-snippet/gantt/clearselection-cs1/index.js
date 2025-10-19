@@ -9,7 +9,7 @@ var ganttChart = new ej.gantt.Gantt({
             startDate: 'StartDate',
 			duration: 'Duration',
             progress: 'Progress',
-			child: 'subtasks'
+			parentID: 'ParentID'
         },
 		selectionSettings: {
             mode: 'Row',
@@ -31,5 +31,3 @@ document.getElementById('selectRows').addEventListener('click', () => {
 document.getElementById('clearSelection').addEventListener('click', () => {
     ganttChart.clearSelection(); // Clear the selected rows
 });
-
-

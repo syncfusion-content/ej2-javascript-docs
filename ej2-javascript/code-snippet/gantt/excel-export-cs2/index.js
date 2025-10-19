@@ -17,11 +17,10 @@ var ganttChart = new ej.gantt.Gantt({
         startDate: 'StartDate',        
         duration: 'Duration',
         progress: 'Progress',        
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     allowExcelExport: true,
     toolbar: ['ExcelExport', 'CsvExport'],
 	toolbarClick: clickHandler
 });
 ganttChart.appendTo('#GanttExport');
-

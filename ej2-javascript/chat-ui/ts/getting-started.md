@@ -27,7 +27,6 @@ The list of dependencies required to use the Chat UI control in your application
     |-- @syncfusion/ej2-buttons
     |-- @syncfusion/ej2-dropdowns
     |-- @syncfusion/ej2-popups
-    |-- @syncfusion/ej2-dropdowns
 ```
 
 ## Set up development environment

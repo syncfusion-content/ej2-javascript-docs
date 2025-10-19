@@ -18,7 +18,7 @@ var gantt = new ej.gantt.Gantt({
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            child: 'subtasks',
+            parentID: 'ParentID',
         },
         editSettings: {
         allowAdding: true,
@@ -84,4 +84,3 @@ var gantt = new ej.gantt.Gantt({
 });
 
 gantt.appendTo('#Gantt');
-

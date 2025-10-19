@@ -18,7 +18,7 @@ var ganttChart = new ej.gantt.Gantt({
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            child: 'subtasks'
+            parentID: 'ParentID'
         },
 		toolbarClick: clickHandler,
 		toolbar: ['QuickFilter', 'ClearFilter'],
@@ -36,10 +36,3 @@ enable.element.onclick = function(){
 disable.element.onclick = function(){
     ganttChart.toolbarModule.enableItems([ganttChart.element.id + '_QuickFilter', ganttChart.element.id + '_ClearFilter'], false);// disable toolbar items.
 };
-
-
-
-
-
-
-

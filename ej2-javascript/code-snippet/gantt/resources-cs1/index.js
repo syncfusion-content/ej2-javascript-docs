@@ -8,7 +8,7 @@ var ganttChart = new ej.gantt.Gantt({
         duration: 'Duration',
         progress: 'Progress',
         resourceInfo: 'resources',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     columns: [
         { field: 'TaskID', visible: false },
@@ -19,7 +19,6 @@ var ganttChart = new ej.gantt.Gantt({
     labelSettings: {
         rightLabel: 'resources'
     },
-    height: '450px',
     resourceFields: {
         id: 'resourceId',
         name: 'resourceName',

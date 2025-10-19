@@ -15,11 +15,9 @@ var ganttChart = new ej.gantt.Gantt({
             startDate: 'StartDate',
             duration: 'Duration',
             progress: 'Progress',
-            child: 'subtasks'
+            parentID: 'ParentID'
         },
 		toolbarClick: clickHandler,
 		toolbar: ['ExpandAll', 'CollapseAll', { text: 'Test', tooltipText: 'Test',id: 'Test' }]
 });
 ganttChart.appendTo('#Gantt');
-
-

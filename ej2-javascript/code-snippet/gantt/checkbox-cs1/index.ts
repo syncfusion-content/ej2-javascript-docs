@@ -1,8 +1,5 @@
-
-
-
 import { Gantt } from '@syncfusion/ej2-gantt';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
@@ -12,7 +9,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks',
+        parentID: 'ParentID',
         verified: 'verified'
     },
     splitterSettings: {
@@ -21,14 +18,11 @@ let gantt: Gantt = new Gantt({
     height: '450px',
     columns: [
         { field: 'TaskID', headerText: 'Task ID' },
-        { field: 'Progress', headerText: 'Progress' },
         { field: 'TaskName', headerText: 'Task Name' },
         { field: 'StartDate', headerText: 'Start Date' },
+        { field: 'Progress', headerText: 'Progress' },
         { field: 'verified', headerText: 'Verified', displayAsCheckBox: true, type: 'boolean' },
         { field: 'Duration', headerText: 'Duration' }
     ]
 });
 gantt.appendTo('#Gantt');
-
-
-

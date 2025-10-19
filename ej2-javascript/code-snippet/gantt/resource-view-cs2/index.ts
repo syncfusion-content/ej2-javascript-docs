@@ -1,9 +1,6 @@
-
-
-
 import { Gantt, Toolbar, Edit, Selection } from '@syncfusion/ej2-gantt';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
-import { overAllocationData, resources } from 'datasource.ts';
+import { overAllocationData, resources } from './datasource.ts';
 
 Gantt.Inject(Toolbar, Edit, Selection);
 
@@ -22,7 +19,7 @@ let gantt: Gantt = new Gantt({
         dependency: 'Predecessor',
         resourceInfo: 'resources',
         work: 'work',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     resourceFields: {
         id: 'resourceId',
@@ -61,6 +58,3 @@ let gantt: Gantt = new Gantt({
     projectEndDate: new Date('05/18/2019')
 });
 gantt.appendTo('#Gantt');
-
-
-

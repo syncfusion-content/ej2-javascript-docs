@@ -26,7 +26,7 @@ var ganttChart = new ej.gantt.Gantt({
         dependency: 'Predecessor',
         resourceInfo: 'resources',
         work: 'work',
-        child: 'subtasks',
+        parentID: 'ParentID',
         segments: 'Segments',
         notes:"note",
     },
@@ -46,18 +46,3 @@ var ganttChart = new ej.gantt.Gantt({
 		
 });
 ganttChart.appendTo('#Gantt');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

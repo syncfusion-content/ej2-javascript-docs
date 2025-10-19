@@ -9,7 +9,7 @@ var ganttChart = new ej.gantt.Gantt({
             startDate: 'StartDate',
 			duration: 'Duration',
             progress: 'Progress',
-			child: 'subtasks'
+			parentID: 'ParentID'
         },
 		selectionSettings: {
             mode: 'Row',
@@ -25,5 +25,3 @@ toggleBtn.appendTo('#toggle');
 document.getElementById('toggle').addEventListener('click', () => {
     gantt.selectionSettings.enableToggle = false;
 });
-
-

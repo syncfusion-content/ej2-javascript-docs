@@ -1,8 +1,5 @@
-
-
-
 import { Gantt, Toolbar, PdfExport, Selection, PdfExportProperties } from '@syncfusion/ej2-gantt';
-import { ganttData,editingResources } from 'datasource.ts';
+import { GanttData,editingResources } from './datasource.ts';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
 
 Gantt.Inject(Toolbar, PdfExport, Selection);
@@ -17,9 +14,11 @@ let clickHandler: EmitType<ClickEventArgs> = (args: ClickEventArgs) => {
 };
 let pdfQueryTaskbarInfo: EmitType<Object> = (args: Object) => {
     if(!args.data.hasChildRecords){
+        console.log(args.data.ganttProperties.resourceNames);
         if (args.data.ganttProperties.resourceNames) {
+            debugger;
             args.taskbarTemplate.image = [{
-                width: 20, base64: (args as any).data.taskData.resourcesImage, height: 20
+                width: 20, base64: (args as any).data.taskData.ResourcesImage, height: 20
             }]
         }
         args.taskbarTemplate.value =  args.data.TaskName;
@@ -27,7 +26,7 @@ let pdfQueryTaskbarInfo: EmitType<Object> = (args: Object) => {
     if(args.data.hasChildRecords){
         if (args.data.ganttProperties.resourceNames) {
             args.taskbarTemplate.image = [{
-                width: 20, base64: (args as any).data.taskData.resourcesImage, height: 20
+                width: 20, base64: (args as any).data.taskData.ResourcesImage, height: 20
             }]
         }
         args.taskbarTemplate.value= args.data.TaskName;
@@ -35,7 +34,7 @@ let pdfQueryTaskbarInfo: EmitType<Object> = (args: Object) => {
     if(args.data.ganttProperties.duration === 0){
         if (args.data.ganttProperties.resourceNames) {
             args.taskbarTemplate.image = [{
-                width: 20, base64: (args as any).data.taskData.resourcesImage, height: 20,
+                width: 20, base64: (args as any).data.taskData.ResourcesImage, height: 20,
             }]
         }
         args.taskbarTemplate.value = args.data.TaskName
@@ -43,7 +42,7 @@ let pdfQueryTaskbarInfo: EmitType<Object> = (args: Object) => {
 }
 
 let gantt: Gantt = new Gantt({
-    dataSource: ganttData,
+    dataSource: GanttData,
     height: '450px',
     rowHeight: 55,
     taskbarHeight: 45,
@@ -53,9 +52,9 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         endDate: 'EndDate',
         duration: 'Duration',
-        resourceInfo: 'resources',
+        resourceInfo: 'Resources',
         dependency: 'Predecessor',
-        child: 'subtasks'
+        parentID: 'ParentID',
     },
     columns: [
         { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left' },
@@ -70,13 +69,10 @@ let gantt: Gantt = new Gantt({
     toolbarClick: clickHandler,
     resources: editingResources,
     resourceFields: {
-        id: 'resourceId',
-        name: 'resourceName'
+        id: 'ResourceId',
+        name: 'ResourceName'
     },
     projectStartDate: new Date('03/24/2019'),
     projectEndDate: new Date('04/30/2019'),
 });
 gantt.appendTo('#GanttExport');
-
-
-

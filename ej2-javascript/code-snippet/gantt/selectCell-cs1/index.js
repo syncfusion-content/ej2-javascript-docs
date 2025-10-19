@@ -9,7 +9,7 @@ var ganttChart = new ej.gantt.Gantt({
             startDate: 'StartDate',
 			duration: 'Duration',
             progress: 'Progress',
-			child: 'subtasks'
+			parentID: 'ParentID'
         },
         selectionSettings: {
             mode: 'Cell'
@@ -23,13 +23,3 @@ cellBtn.appendTo('#selectCell');
 document.getElementById('selectCell').addEventListener('click', () => {
 	ganttChart.selectionModule.selectCell({ cellIndex: 1, rowIndex: 1 });
 });
-
-
-
-
-
-
-
-
-
-

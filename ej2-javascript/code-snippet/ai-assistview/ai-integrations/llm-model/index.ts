@@ -19,6 +19,8 @@ const aiAssist = new AIAssistView({
   promptRequest:onPromptrequest,
   stopRespondingClick: handleStopResponse
 });
+
+//  Handle user prompt: call local LLM via Ollama
 async function onPromptrequest(args: PromptRequestEventArgs) {
   let lastResponse = "";
   const defaultResponse = "⚠️ Something went wrong while connecting to the AI service. Please check your Ollama application running background.";
@@ -35,6 +37,8 @@ async function onPromptrequest(args: PromptRequestEventArgs) {
       });
       const reply = await response.json();
       const responseUpdateRate = 10;
+
+      // Stream AI response in chunks
       async function streamResponse(response:string) {
           let i = 0;
           const responseLength = response.length;
@@ -60,8 +64,6 @@ async function onPromptrequest(args: PromptRequestEventArgs) {
   aiAssist.promptSuggestions = suggestions;
   }
 }
-// Append the AI AssistView to the container
-aiAssist.appendTo('#llmAssist');
 
 function handleStopResponse(): void {
   stopStreaming = true;
@@ -71,4 +73,8 @@ function toolbarItemClicked(args: ToolbarItemClickedEventArgs) {
   if (args.item?.iconCss === 'e-icons e-refresh') {
     aiAssist.prompts = [];
     aiAssist.promptSuggestions = suggestions;
-  }}
+  }
+}
+
+// Append the AI AssistView to the container
+aiAssist.appendTo('#llmAssist');

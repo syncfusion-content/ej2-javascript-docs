@@ -10,14 +10,15 @@ var ganttChart = new ej.gantt.Gantt({
     allowResizing: true,
     allowReordering: true,
     allowRowDragAndDrop: true,
-    undoRedoActions: ['Edit', 'Delete'],
+    undoRedoActions: ['Add', 'Edit', 'Delete', 'Search','Sorting','Filtering', 'ZoomIn', 'ZoomOut', 'ZoomToFit','Indent','Outdent', 
+    'PreviousTimeSpan', 'NextTimeSpan','ColumnState'],
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Search', 'ZoomIn', 'ZoomOut', 'ZoomToFit','Indent','Outdent', 
     'PrevTimeSpan', 'NextTimeSpan','Undo','Redo'],
@@ -44,4 +45,3 @@ document.getElementById('getredocollection').addEventListener('click', () => {
     var ganttObj= document.getElementById('Gantt').ej2_instances[0];
 	console.log(ganttObj.getRedoActions());
 });
-

@@ -9,7 +9,7 @@ var ganttChart = new ej.gantt.Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     selectionSettings: {
         mode: 'Row',
@@ -26,5 +26,3 @@ var ganttChart = new ej.gantt.Gantt({
     }
     });
 ganttChart.appendTo('#Gantt');
-
-

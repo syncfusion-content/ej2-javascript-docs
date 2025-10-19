@@ -2,7 +2,7 @@
 
 
 import { Gantt } from '@syncfusion/ej2-gantt';
-import { GanttData, ProjectResources } from 'datasource.ts';
+import { GanttData, ProjectResources } from './datasource.ts';
 
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
@@ -14,7 +14,7 @@ let gantt: Gantt = new Gantt({
         duration: 'Duration',
         progress: 'Progress',
         resourceInfo: 'resources',
-        child: 'subtasks'
+        parentID: 'ParentID'
     },
     columns: [
         { field: 'TaskID', visible: false },
@@ -31,7 +31,6 @@ let gantt: Gantt = new Gantt({
     labelSettings: {
         rightLabel: 'resources'
     },
-    height: '450px',
     resources: ProjectResources,
     splitterSettings: {
         columnIndex: 5.1
@@ -39,6 +38,3 @@ let gantt: Gantt = new Gantt({
 });
 
 gantt.appendTo('#Gantt');
-
-
-

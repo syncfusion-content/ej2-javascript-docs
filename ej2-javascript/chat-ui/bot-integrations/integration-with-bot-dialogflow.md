@@ -9,36 +9,34 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Google Dialogflow Chat UI control
+# Integrate Google Dialogflow Chat UI control
 
-The Syncfusion Chat UI supports integration with [Google Dialogflow](https://cloud.google.com/dialogflow/docs), enabling advanced conversational AI features in your  applications.
+The Chat UI control integrates with [Google Dialogflow](https://cloud.google.com/dialogflow/docs) to enable advanced conversational AI features in your Angular applications. The control acts as a user interface for a support bot, where user prompts are sent to the Dialogflow service via API calls, providing natural language understanding and context-aware responses.
 
-## Getting Started With the ChatUI control
-
-Before integrating Dialogflow, ensure that the Syncfusion Chat UI control is correctly rendered in your application:
-[ Getting Started Guide](../getting-started)
 
 ## Prerequisites
 
-* Google account to access `Dialogflow` and `Google Cloud Console`.
-* Backend requires `Node.js` (v16 or higher) and `npm`.
-* Syncfusion Chat UI for `@syncfusion/ej2-interactive-chat` installed in your project.
+Before starting, ensure you have the following:
+
+* **Node.js**: Version 16 or higher with npm.
+
+* **Google Account**: To access [Google Dialogflow](https://cloud.google.com/dialogflow/docs) and [Google Cloud Console](https://console.cloud.google.com/).
+
+* **Syncfusion Chat UI**: Package [@syncfusion/ej2-interactive-chat](https://www.npmjs.com/package/@syncfusion/ej2-interactive-chat) installed.
+
 * Dialogflow Service Account with the `Dialogflow API Client` role and its JSON key file.
 
-## Install Dependencies
+## Set Up the Environment
 
-* Install `backend` dependencies for Dialogflow and server setup:
+Follow the Syncfusion Chat UI [Getting Started](../getting-started) guide to configure and render the Chat UI control in your application.
+
+## Install Dependency
+
+`Backend` dependencies for Dialogflow and server setup:
 
 ```bash
 
 npm install express body-parser dialogflow cors
-
-```
-* Install the Syncfusion Chat UI in your  project:
-
-```bash
-
-npm install @syncfusion/ej2-interactive-chat --save
 
 ```
 
@@ -48,7 +46,7 @@ npm install @syncfusion/ej2-interactive-chat --save
 
 2. Add intents with training phrases and responses (e.g., greetings, FAQs). Test using the dialogflow simulator.
 
-3. In the Google Cloud Console, go to `APIs & Services` > `Credentials`, create a Service Account with the dialogflow API client role, and download the JSON key file.
+3. In the Google Cloud Console, go to `APIs & Services` > `Credentials`, create a service account with the dialogflow API client role, and download the JSON key file.
 
 > `Security Note`: Never commit the JSON key file to version control. Use environment variables or a secret manager (e.g., Google Cloud Secret Manager) for production.
 
@@ -122,7 +120,7 @@ app.listen(5000, () => console.log('Backend running on http://localhost:5000'));
 
 ## Configure message send 
 
-Use the Chat UI `messageSend` event to exchanges  message. Each time a user sends a message, this event will be invoked with details of the sent message.
+Use the Chat UI `messageSend` event to exchanges message. Each time a user sends a message, this event will be invoked with details of the sent message.
 
 ### Forward Message to backend:
 
@@ -130,7 +128,7 @@ Upon message submission, a POST request is sent to your backend API endpoint (`/
 
 ### Displaying Bot response:
 
-You can add the below respective files in your application:
+Modify the `index.js` file to integrate the Syncfusion Chat UI with the dialogflow backend:
 
 {% if page.publishingplatform == "typescript" %}
 

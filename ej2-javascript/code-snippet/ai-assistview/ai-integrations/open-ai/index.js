@@ -1,3 +1,4 @@
+// Initialize Azure OpenAI
 var azureOpenAIApiKey = ''; // replace your key
 var azureOpenAIEndpoint = ''; // replace your endpoint
 var azureOpenAIApiVersion = ''; // replace to match your resource
@@ -8,6 +9,7 @@ var suggestions = [
     'How can I maintain work-life balance effectively?',
 ];
 
+// Initialize AI AssistView
 var aiAssistView = new ej.interactivechat.AIAssistView({
     promptSuggestions: suggestions,
     toolbarSettings: {
@@ -27,6 +29,7 @@ function toolbarItemClicked(args) {
     }
 }
 
+// Stream the model response to the UI in chunks
 async function streamResponse(response) {
     var lastResponse = "";
     var responseUpdateRate = 10;
@@ -40,16 +43,19 @@ async function streamResponse(response) {
             aiAssistView.addPromptResponse(htmlResponse, i === responseLength);
             aiAssistView.scrollToBottom();
         }
-        await new Promise(resolve => setTimeout(resolve, 15));
+        await new Promise(resolve => setTimeout(resolve, 15)); // Delay before the next chunk
     }
     aiAssistView.promptSuggestions = suggestions;
 }
 
+// Handle user prompt: call Azure OpenAI Chat Completions
 function onPromptRequest(args) {
         var url =
         azureOpenAIEndpoint.replace(/\/$/, '') +
         `/openai/deployments/${encodeURIComponent(azureDeploymentName)}/chat/completions` +
         `?api-version=${encodeURIComponent(azureOpenAIApiVersion)}`;
+
+        // Send the request to Azure OpenAI
         fetch(url, {
         method: 'POST',
         headers: {
@@ -79,4 +85,5 @@ function handleStopResponse() {
     stopStreaming = true;
 }
 
+ // Render AI AssistView
  aiAssistView.appendTo('#defaultAssist');

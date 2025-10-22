@@ -1,7 +1,7 @@
 import { AIAssistView } from '@syncfusion/ej2-interactive-chat';
 import marked from 'marked';
 
-// Initialize Gemini API (using OpenAI API in this case)
+// Initialize Azure OpenAI
 const azureOpenAIApiKey = ''; // replace your key
 const azureOpenAIEndpoint = ''; // replace your endpoint
 const azureOpenAIApiVersion = ''; // replace to match your resource
@@ -32,6 +32,7 @@ function toolbarItemClicked(args: any) {
     }
 }
 
+// Stream the model response to the UI in chunks
 async function streamResponse(response: string) {
     let lastResponse = "";
     const responseUpdateRate = 10;
@@ -50,12 +51,14 @@ async function streamResponse(response: string) {
     aiAssistView.promptSuggestions = suggestions;
 }
 
+// Handle user prompt: call Azure OpenAI Chat Completions
 function onPromptRequest(args:any) {
         const url =
         azureOpenAIEndpoint.replace(/\/$/, '') +
         `/openai/deployments/${encodeURIComponent(azureDeploymentName)}/chat/completions` +
         `?api-version=${encodeURIComponent(azureOpenAIApiVersion)}`;
 
+        // Send the request to Azure OpenAI
         fetch(url, {
         method: 'POST',
         headers: {
@@ -84,5 +87,6 @@ function onPromptRequest(args:any) {
 function handleStopResponse() {
     stopStreaming = true;
 }
+
  // Render AI AssistView
  aiAssistView.appendTo('#defaultAssist');

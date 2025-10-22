@@ -19,7 +19,7 @@ The [actionBegin](../api/gantt/#actionbegin) event triggers before the Gantt com
 
 The event argument structure varies based on the operation type. The following tables describe the supported argument types and their properties.
 
-**1. [ActionBeginArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/actionBeginArgs/)**
+**1. [ActionBeginArgs](../api/gantt/actionBeginArgs/)**
 
 | **Property**             | **Type**       | **Description**                                                                 |
 |--------------------------|----------------|---------------------------------------------------------------------------------|
@@ -36,7 +36,7 @@ The event argument structure varies based on the operation type. The following t
 | `toItem`                | IGanttData   | Specifies the successor task in a dependency relationship.                      |
 | `type`                  | string       | Defines the type of event triggered.                                            |
 
-**2. [ITimeSpanEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iTimeSpanEventArgs/) (Taskbar editing)**
+**2. [ITimeSpanEventArgs](../api/gantt/iTimeSpanEventArgs/) (Taskbar editing)**
 
 | **Property**           | **Type**   | **Description**                                                                 |
 |------------------------|------------|---------------------------------------------------------------------------------|
@@ -46,7 +46,7 @@ The event argument structure varies based on the operation type. The following t
 | `projectEndDate`      | Date    | End date of the overall project. Useful for validating task boundaries.        |
 | `requestType`         | string   | Describes the type of request. For taskbar editing, values include **taskbarEditing**. |
 
-**3. [ITaskAddedEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iTaskAddedEventArgs/) (Adding/Editing/Deleting tasks)**
+**3. [ITaskAddedEventArgs](../api/gantt/iTaskAddedEventArgs/) (Adding/Editing/Deleting tasks)**
 
 | **Property**        | **Type**     | **Description**                                                                 |
 |---------------------|--------------|---------------------------------------------------------------------------------|
@@ -60,7 +60,7 @@ The event argument structure varies based on the operation type. The following t
 | `requestType`       | string     | Describes the type of request, such as **beforeAdd** or **beforeDelete**.         |
 | `rowPosition`       | string     | Indicates the position where the new row is added. Possible values: **Top**, **Bottom**, **Above**, **Below**. |
 
-**4. [FilterEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs/) (Filtering)**
+**4. [FilterEventArgs](../api/grid/filterEventArgs/) (Filtering)**
 
 | **Property**             | **Type**     | **Description**                                                                 |
 |--------------------------|--------------|---------------------------------------------------------------------------------|
@@ -71,7 +71,7 @@ The event argument structure varies based on the operation type. The following t
 | `requestType`            | string     | Describes the type of request, typically **filtering**.                        |
 | `type`                   | string     | Event type identifier.                                                         |
 
-**5. [SortEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/sortEventArgs/) (Sorting)**
+**5. [SortEventArgs](../api/grid/sortEventArgs/) (Sorting)**
 
 | **Property**     | **Type**   | **Description**                                                                 |
 |------------------|------------|---------------------------------------------------------------------------------|
@@ -81,7 +81,7 @@ The event argument structure varies based on the operation type. The following t
 | `requestType`    | string   | Describes the type of request, typically **sorting**.                          |
 | `type`           | string   | Event type identifier.                                                         |
 
-**6. [IDependencyEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iDependencyEventArgs/) (Dependency editing)**
+**6. [IDependencyEventArgs](../api/gantt/iDependencyEventArgs/) (Dependency editing)**
 
 | **Property**              | **Type**   | **Description**                                                                 |
 |---------------------------|------------|---------------------------------------------------------------------------------|
@@ -92,7 +92,7 @@ The event argument structure varies based on the operation type. The following t
 | `requestType`             | string  | Describes the type of request, typically **validateDependency** or **updateDependency**. |
 | `toItem`                  | object   | Target task object in the dependency link.                                     |
 
-**7. [ZoomEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/zoomEventArgs/) (Zooming)**
+**7. [ZoomEventArgs](../api/gantt/zoomEventArgs/) (Zooming)**
 
 | **Property**     | **Type**   | **Description**                                                                 |
 |------------------|------------|---------------------------------------------------------------------------------|
@@ -355,7 +355,7 @@ The [actionComplete](../api/gantt/#actioncomplete) event is triggered after the 
 
 Below are detailed descriptions of each argument type's properties, and their purposes.
 
-**1. [ActionCompleteArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/actionCompleteArgs/)**
+**1. [ActionCompleteArgs](../api/gantt/actionCompleteArgs/)**
 
 | **Property**       | **Type**                | **Description**                                                                 |
 |--------------------|-------------------------|---------------------------------------------------------------------------------|
@@ -366,7 +366,7 @@ Below are detailed descriptions of each argument type's properties, and their pu
 | `timeline`         | ZoomTimelineSettings  | Defines the settings applied to the Zoom timeline.                             |
 | `type`             | string                | Defines the type of the event.                                                 |
 
-**2. [FilterEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs/) (Filtering)**
+**2. [FilterEventArgs](../api/grid/filterEventArgs/) (Filtering)**
 
 | **Property**             | **Type**     | **Description** |
 |--------------------------|--------------|-----------------|
@@ -377,7 +377,7 @@ Below are detailed descriptions of each argument type's properties, and their pu
 | `requestType`            | string     | Describes the type of request like **filtering**, **filterAfterOpen**. |
 | `type`                   | string     | Event type identifier. |
 
-**3. [SortEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/sortEventArgs/) (Sorting)**
+**3. [SortEventArgs](../api/grid/sortEventArgs/) (Sorting)**
 
 | **Property**     | **Type**   | **Description** |
 |------------------|------------|-----------------|
@@ -387,7 +387,7 @@ Below are detailed descriptions of each argument type's properties, and their pu
 | `requestType`    | string   | Describes the type of request, typically **sorting**. |
 | `type`           | string   | Event type identifier. |
 
-**4. [ITaskAddedEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iTaskAddedEventArgs/) (Adding/Editing/Deleting tasks)**
+**4. [ITaskAddedEventArgs](../api/gantt/iTaskAddedEventArgs/) (Adding/Editing/Deleting tasks)**
 
 | **Property**        | **Type**     | **Description** |
 |---------------------|--------------|-----------------|
@@ -401,7 +401,7 @@ Below are detailed descriptions of each argument type's properties, and their pu
 | `requestType`       | string     | Describes the type of request, such as **beforeSave**, **beforeDelete**. |
 | `rowPosition`       | string     | Indicates the position where the new row is added. Possible values: **Top**, **Bottom**, **Above**, **Below**. |
 
-**5. [ZoomEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/zoomEventArgs/) (Zooming)**
+**5. [ZoomEventArgs](../api/gantt/zoomEventArgs/) (Zooming)**
 
 | **Property**     | **Type**   | **Description** |
 |------------------|------------|-----------------|
@@ -5093,7 +5093,7 @@ function destroyed(args) {
 
 ## endEdit
 
-The [endEdit](../api/gantt/#endedit) event is triggered after a task is modified through cell or taskbar editing. It enables post-edit actions such as validation, logging, or syncing changes with external systems.
+The [endEdit](../api/gantt/#endedit) event is triggered after a task is modified through cell editing. It enables post-edit actions such as validation, logging, or syncing changes with external systems.
 
 The event provides an argument of type [ITaskbarEditedEventArgs](../api/gantt/iTaskbarEditedEventArgs/) with the following properties:
 

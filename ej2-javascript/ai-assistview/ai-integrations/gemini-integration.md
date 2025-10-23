@@ -31,14 +31,14 @@ Follow the Syncfusion AI AssistView [Getting Started](../getting-started) guide 
 
 Install the required packages:
 
-1. Google Generative AI SDK:
+* Google Generative AI SDK:
 
 ```bash
 
 npm install @google/generative-ai
 
 ```
-2. Marked Library:
+* Marked Library:
 
 ```bash
 

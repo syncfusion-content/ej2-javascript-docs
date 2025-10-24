@@ -460,6 +460,43 @@ Use the `Blockquote` tool in the editor below to see the feature in action.
 
 > In a markdown editor, blockquotes are represented using the `>` symbol.
 
+### Nested Blockquotes
+
+The Rich Text Editor also supports nested blockquotes, allowing one blockquote to be placed inside another. 
+
+While the toolbar does not provide a direct method to apply blockquote formatting recursively (i.e., within an already blockquoted section), nested blockquotes can still be achieved in the following ways:
+
+1. **Pasting preformatted content:** If you paste content that already contains nested blockquote tags (e.g., from another editor or email), the Rich Text Editor will preserve and render the nested structure correctly.
+2. **Preloading nested blockquote HTML:** You can initialize the editor with nested blockquote content using the value property.
+3. **Manual editing via Source Code view:** You can manually insert nested blockquote tags using the SourceCode toolbar option.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/rich-text-editor/nested-blockquote/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor/nested-blockquote/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/nested-blockquote" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/rich-text-editor/nested-blockquote/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor/nested-blockquote/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/nested-blockquote" %}
+{% endif %}
+
 ## Horizontal line
 
 The Rich Text Editor enables users to insert horizontal dividers using the `HorizontalLine` tool available in the toolbar. Horizontal lines (<hr>) help visually separate sections of content, enhancing readability and structural clarity.

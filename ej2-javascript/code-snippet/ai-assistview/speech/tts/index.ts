@@ -27,6 +27,7 @@ let aiAssistView = new AIAssistView({
     stopRespondingClick: handleStopResponse
 });
 
+// Handles toolbar item clicks, such as clearing the conversation on refresh
 function toolbarItemClicked(args: ToolbarItemClickedEventArgs) {
     if (args.item.iconCss === 'e-icons e-refresh') {
         aiAssistView.prompts = [];
@@ -34,6 +35,7 @@ function toolbarItemClicked(args: ToolbarItemClickedEventArgs) {
     }
 }
 
+// Handles clicks on response toolbar items, such as copying, reading aloud, liking, or disliking the response
 function onResponseToolbarItemClicked(args: ToolbarItemClickedEventArgs) {
     const responseHtml = aiAssistView.prompts[args.dataIndex].response;
     if (responseHtml) {
@@ -62,6 +64,7 @@ function onResponseToolbarItemClicked(args: ToolbarItemClickedEventArgs) {
     }
 }
 
+// Streams the AI response character by character to create a typing effect
 async function streamResponse(response: string) {
     let lastResponse = "";
     const responseUpdateRate = 10;
@@ -79,6 +82,7 @@ async function streamResponse(response: string) {
     }
 }
 
+// Handles prompt requests by sending them to the Azure OpenAI API and streaming the response
 function onPromptRequest(args: PromptRequestEventArgs) {
         const url =
         azureOpenAIEndpoint.replace(/\/$/, '') +
@@ -110,6 +114,7 @@ function onPromptRequest(args: PromptRequestEventArgs) {
     });
 }
 
+// Stops the ongoing streaming response
 function handleStopResponse() {
     stopStreaming = true;
 }

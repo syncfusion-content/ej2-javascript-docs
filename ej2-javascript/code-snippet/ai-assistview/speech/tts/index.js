@@ -24,6 +24,7 @@ var aiAssistView = new ej.interactivechat.AIAssistView({
     stopRespondingClick: handleStopResponse
 });
 
+// Handles toolbar item clicks, such as clearing the conversation on refresh
 function toolbarItemClicked(args) {
     if (args.item.iconCss === 'e-icons e-refresh') {
         aiAssistView.prompts = [];
@@ -31,6 +32,7 @@ function toolbarItemClicked(args) {
     }
 }
 
+// Handles clicks on response toolbar items, such as copying, reading aloud, liking, or disliking the response
 function onResponseToolbarItemClicked(args) {
     const responseHtml = aiAssistView.prompts[args.dataIndex].response;
     if (responseHtml) {
@@ -59,6 +61,7 @@ function onResponseToolbarItemClicked(args) {
     }
 }
 
+// Streams the AI response character by character to create a typing effect
 async function streamResponse(response) {
     var lastResponse = "";
     var responseUpdateRate = 10;
@@ -76,6 +79,7 @@ async function streamResponse(response) {
     }
 }
 
+// Handles prompt requests by sending them to the Azure OpenAI API and streaming the response
 function onPromptRequest(args) {
     var url =
         azureOpenAIEndpoint.replace(/\/$/, '') +
@@ -106,9 +110,12 @@ function onPromptRequest(args) {
         });
 }
 
+// Stops the ongoing streaming response
 function handleStopResponse() {
     stopStreaming = true;
 }
+
+// Loads the external marked.js library for markdown parsing
 function loadExternalFile() {
     var script = document.createElement('script');
     script.src = 'https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.19/marked.js';

@@ -38,7 +38,7 @@ async function initialize(): Promise<void> {
     }
 }
 
-// Initialize the Syncfusion Chat component
+// Initialize Chat UI
 chat = new Chat({
     user: currentUserModel,
     messageSend: function(args) {

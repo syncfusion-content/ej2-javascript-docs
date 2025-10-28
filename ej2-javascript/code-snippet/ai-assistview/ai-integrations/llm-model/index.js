@@ -67,7 +67,7 @@ function handleStopResponse() {
 }
 
 function toolbarItemClicked(args) {
-  if (args.item?.iconCss === 'e-icons e-refresh') {
+  if (args.item.iconCss === 'e-icons e-refresh') {
     aiAssist.prompts = [];
     aiAssist.promptSuggestions = suggestions;
   }

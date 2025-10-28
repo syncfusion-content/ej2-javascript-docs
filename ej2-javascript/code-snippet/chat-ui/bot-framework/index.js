@@ -37,7 +37,7 @@ async function initialize() {
     }
 }
 
-// Initialize the Syncfusion Chat component
+// Initialize Chat UI 
 chat = new ej.interactivechat.Chat({
     user: currentUserModel,
     messageSend: function(args) {

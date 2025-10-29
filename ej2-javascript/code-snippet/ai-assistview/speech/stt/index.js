@@ -60,7 +60,7 @@ async function streamResponse(response) {
 }
 
 function onPromptRequest(args) {
-    if (!args?.prompt?.trim() || !aiAssistView) return;
+    if (!args.prompt.trim() || !aiAssistView) return;
     stopStreaming = false;
     var url =
         azureOpenAIEndpoint.replace(/\/$/, '') +

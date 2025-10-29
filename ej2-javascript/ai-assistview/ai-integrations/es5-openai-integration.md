@@ -27,7 +27,7 @@ Before starting, ensure you have the following:
 
 ## Set Up the Environment
 
-Follow the Syncfusion AI AssistView [Getting Started](../getting-started) guide to configure and render the AI AssistView control in your application.
+Follow the [Getting Started](../getting-started) guide to configure and render the AI AssistView control in your application.
 
 ## Install Dependency
 
@@ -49,7 +49,7 @@ To install the marked library, run `npm install marked --save` in your project d
 
 > `Security Note`: Never expose your API key in client-side code for production applications. Use a server-side proxy or environment variables to manage sensitive information securely.
 
-##  Configure Azure OpenAI with JavaScript AI AssistView control
+##  Configure AI AssistView with Azure OpenAI
 
 Modify the `index.js` file to integrate the Azure OpenAI with the AI AssistView control.
 

@@ -25,7 +25,7 @@ Before starting, ensure you have the following:
 
 ## Set Up the Environment
 
-Follow the Syncfusion AI AssistView [Getting Started](../getting-started) guide to configure and render the AI AssistView control in your application.
+Follow the [Getting Started](../getting-started) guide to configure and render the AI AssistView control in your application.
 
 ## Install Dependencies
 

@@ -27,7 +27,7 @@ Before starting, ensure you have the following:
 
 ## Set Up the Environment
 
-Follow the Syncfusion Chat UI [Getting Started](../getting-started) guide to configure and render the Chat UI control in your application.
+Follow the [Getting Started](../getting-started) guide to configure and render the Chat UI control in your application.
 
 ## Install Dependencies
 
@@ -112,7 +112,7 @@ app.listen(port, () => console.log(`Token server running on http://localhost:${p
 
 ## Configure ChatUI
 
-Modify the `index.js` file to connect the Syncfusion Chat UI to the bot via the direct line API.
+Modify the `index.js` file to connect the Chat UI to the bot via the direct line API.
 
 {% if page.publishingplatform == "typescript" %}
 

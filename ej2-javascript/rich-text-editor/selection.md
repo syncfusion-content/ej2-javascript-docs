@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text Selection Using Slider in ##Platform_Name## Rich text editor control | Syncfusion
+title: Slider-Based Text Selection in ##Platform_Name## Editor | Syncfusion
 description:  Learn how to select a character range using ##Platform_Name## Rich text editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Text Selection
@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-
 
 # Text Selection Using Slider in ##Platform_Name## Rich Text Editor Control
 
@@ -40,5 +39,5 @@ This functionality is useful for scenarios where precise text selection is neede
 {% endhighlight %}
 {% endtabs %}
 
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/selection" %}
 {% endif %}
-

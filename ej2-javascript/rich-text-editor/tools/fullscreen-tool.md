@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Fullscreen modes in ##Platform_Name## Rich text editor control | Syncfusion
-description: Learn here all about Editor modes in Syncfusion ##Platform_Name## Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Fullscreen Mode in ##Platform_Name## Rich Text Editor | Syncfusion 
+description: Learn here all about Fullscreen mode in Syncfusion ##Platform_Name## Rich text editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Fullscreen mode
 publishingplatform: ##Platform_Name##

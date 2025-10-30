@@ -269,7 +269,7 @@ In the Rich Text Editor, pressing the `Tab` key while the cursor is inside a lis
 
 Please refer to the below video for visual behavior and interaction examples:
 
-![Rich Text Editor list editing behaviour](images/list-editing.gif)
+![Rich Text Editor list editing behaviour](../images/list-editing.gif)
 
 ## Increase and decrease indent
 
@@ -468,7 +468,7 @@ Use the `Blockquote` tool in the editor below to see the feature in action.
 
 > In a markdown editor, blockquotes are represented using the `>` symbol.
 
-### Nested Blockquotes
+### Nested blockquotes
 
 The Rich Text Editor also supports nested blockquotes, allowing one blockquote to be placed inside another. 
 

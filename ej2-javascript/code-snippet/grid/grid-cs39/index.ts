@@ -27,7 +27,8 @@ function queryCellInfo(args: QueryCellInfoEventArgs) {
             checked: (args.data as any).Verified,
             change: function (changeArgs: ChangeEventArgs) {
                 (args.data as any).Verified = changeArgs.checked;
-                grid.updateRow((args.data as any).OrderID, args.data);
+                let rowIndex = grid.getRowIndexByPrimaryKey(args.data.OrderID);
+                grid.updateRow(rowIndex, args.data);
             }, 
         });
         checkbox.appendTo(args.cell.querySelector('input'));

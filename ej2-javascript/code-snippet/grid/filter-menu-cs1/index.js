@@ -1,4 +1,6 @@
 ej.grids.Grid.Inject(ej.grids.Filter);
+
+var filterParams = { params: { format: 'M/d/y HH:mm', } };
 var grid = new ej.grids.Grid({
     dataSource: data,
     allowPaging: true,
@@ -8,8 +10,8 @@ var grid = new ej.grids.Grid({
     filterSettings: { type: 'Menu' },
     columns: [
         { field: 'OrderID', headerText: 'Order ID', width: 120, textAlign: 'Right' },
-        { field: 'OrderDate', headerText: 'Order Date', width: 180, type: 'datetime', format: 'M/d/y HH:mm', textAlign: 'Right' },
-        { field: 'ShippedDate', headerText: 'Shipped Date', width: 180, type: 'datetime', format: 'M/d/y HH:mm', textAlign: 'Right' },
+        { field: 'OrderDate', headerText: 'Order Date', width: 180, type: 'datetime', format: 'M/d/y HH:mm',filter: filterParams, textAlign: 'Right' },
+        { field: 'ShippedDate', headerText: 'Shipped Date', width: 180, type: 'datetime', format: 'M/d/y HH:mm',filter: filterParams, textAlign: 'Right' },
         { field: 'ShipCountry', headerText: 'Ship Country', width: 150 }
     ],
     actionComplete: actionComplete

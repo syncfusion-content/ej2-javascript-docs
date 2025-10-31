@@ -23,7 +23,8 @@ function queryCellInfo(args) {
       checked: args.data.Verified,
       change: function (changeArgs) {
         args.data.Verified = changeArgs.checked;
-        grid.updateRow(args.data.OrderID, args.data);
+        var rowIndex = grid.getRowIndexByPrimaryKey(args.data.OrderID);
+        grid.updateRow(rowIndex, args.data);
       },  
     });
     checkbox.appendTo(args.cell.querySelector('input'));

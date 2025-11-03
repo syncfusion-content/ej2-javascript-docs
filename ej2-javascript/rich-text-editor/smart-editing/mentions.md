@@ -32,7 +32,7 @@ You can control when the suggestion list appears by setting the [minLength](http
 
 By default, `minLength` is set to 0, which means the suggestion list appears immediately after the mention character is entered. However, you can increase this value to delay the search until the user has typed a specific number of characters.
 
-In the following example, the minLength is set to 3, so the suggestion list will only appear once the user types three or more characters after the @ symbol.
+In the following example, the ``minLength` is set to 3, so the suggestion list will only appear once the user types three or more characters after the @ symbol.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -116,8 +116,8 @@ For example, by default, the mention chip renders as:
 Using the `displayTemplate` property, you can customize it to render as a clickable link:
 
 ```
-<a href="" title="">@Selma Rose</a>
-<a href="mailto:maria@gmail.com" title="maria@gmail.com">@Maria</a>
+<a href="mailto:selma@gmail.com" title="selma@gmail.com">@Selma Rose</a>
+
 ```
 
 This allows you to create more interactive and informative mentions within the editor.

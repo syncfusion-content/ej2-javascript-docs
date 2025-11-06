@@ -29,7 +29,21 @@ var formatRTE = new ej.richtexteditor.RichTextEditor({
                 iconCss: 'e-icons e-signature',
                 type: 'Custom',
                 command: 'Signature'
-            }
+            },
+            {
+                text: 'HorizontalLine',
+                description: 'Insert a horizontal line',
+                iconCss: 'e-icons e-horizontal-line',
+                type: 'Custom',
+                command: 'HorizontalLine',
+            },
+            {
+                text: 'CheckList',
+                description: 'Insert a check list',
+                iconCss: 'e-icons e-checklist',
+                type: 'Custom',
+                command: 'CheckList',
+            },
         ]
     },
     slashMenuItemSelect: function(args) {
@@ -39,7 +53,13 @@ var formatRTE = new ej.richtexteditor.RichTextEditor({
         if (args.itemData.command === 'Signature') {
             formatRTE.executeCommand('insertHTML', signature, {undo: true});
         }
+        if (args.itemData.command === 'HorizontalLine') {
+            formatRTE.executeCommand('insertHTML', '<hr>');
+        }
+        if (args.itemData.command === 'CheckList') {
+            formatRTE.executeCommand('insertHTML',`<ul class="e-rte-checklist"><li> Task 1</li><li> Task 2</li></ul>`);
+        }
     },
-        placeholder: 'Type "/" and choose format',
+    placeholder: 'Type "/" and choose format',
 });
 formatRTE.appendTo('#slashMenuEditor');

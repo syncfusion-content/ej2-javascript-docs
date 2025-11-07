@@ -1,4 +1,4 @@
-
+{% raw %}
 var rteValue =
   '<p>Dear <span contenteditable="false" class="e-mention-chip"><span>{{FirstName}}</span></span> ' +
   '<span contenteditable="false" class="e-mention-chip"><span>{{LastName}}</span></span>,</p>' +
@@ -197,3 +197,4 @@ var mergeObj = new ej.dropdowns.Mention({
   allowSpaces: true,
 });
 mergeObj.appendTo('#mentionField');
+{% endraw %}

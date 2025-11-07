@@ -1,3 +1,4 @@
+{% raw %}
 import {RichTextEditor,Toolbar,Link,Image,HtmlEditor,QuickToolbar,Table,PasteCleanup, ActionCompleteEventArgs, ActionBeginEventArgs} from '@syncfusion/ej2-richtexteditor';
 import { DropDownButton, MenuEventArgs } from '@syncfusion/ej2-splitbuttons';
 import { Mention } from '@syncfusion/ej2-dropdowns';
@@ -176,3 +177,4 @@ const mentionObj: Mention = new Mention({
    displayTemplate: '<span> {{${value}}} </span>',
 });
 mentionObj.appendTo('#mentionField');
+{% endraw %}

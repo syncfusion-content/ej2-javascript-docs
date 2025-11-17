@@ -1,4 +1,4 @@
-{% raw %}
+
 import {RichTextEditor,Toolbar,Link,Image,HtmlEditor,QuickToolbar,Table,PasteCleanup, ActionCompleteEventArgs, ActionBeginEventArgs} from '@syncfusion/ej2-richtexteditor';
 import { DropDownButton, MenuEventArgs } from '@syncfusion/ej2-splitbuttons';
 import { Mention } from '@syncfusion/ej2-dropdowns';
@@ -169,7 +169,7 @@ document.getElementById('merge_data')?.addEventListener('click', onClickHandler)
 const mentionObj: Mention = new Mention({
    dataSource: mergeData,
    target: '#mailMergeEditor',
-   mentionChar: '{{',
+   mentionChar: '@',
    fields: { text: 'text' },
    allowSpaces: true,
    popupWidth: '250px',
@@ -177,4 +177,3 @@ const mentionObj: Mention = new Mention({
    displayTemplate: '<span> {{${value}}} </span>',
 });
 mentionObj.appendTo('#mentionField');
-{% endraw %}

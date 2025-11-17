@@ -1,5 +1,9 @@
 import { Grid, Edit, Toolbar,QueryCellInfoEventArgs } from '@syncfusion/ej2-grids';
+<<<<<<< HEAD
 import { CheckBox, ChangeEventArgs } from '@syncfusion/ej2-buttons';
+=======
+import { CheckBox,ChangeEventArgs } from '@syncfusion/ej2-buttons';
+>>>>>>> 3e4292b7c985da37c845d13e076d35157e5979e7
 import { data } from './datasource.ts';
 
 Grid.Inject(Edit,Toolbar);
@@ -25,12 +29,21 @@ function queryCellInfo(args: QueryCellInfoEventArgs) {
         let checkbox: CheckBox = new CheckBox
         ({  
             checked: (args.data as any).Verified,
+<<<<<<< HEAD
              change: function (changeArgs: ChangeEventArgs) {
                 (args.data as any).Verified = changeArgs.checked;
                 let rowIndex = grid.getRowIndexByPrimaryKey(args.data.OrderID);
                 grid.updateRow(rowIndex, args.data);
             },
+=======
+            change: function (changeArgs: ChangeEventArgs) {
+                (args.data as any).Verified = changeArgs.checked;
+                let rowIndex = grid.getRowIndexByPrimaryKey(args.data.OrderID);
+                grid.updateRow(rowIndex, args.data);
+            }, 
+>>>>>>> 3e4292b7c985da37c845d13e076d35157e5979e7
         });
         checkbox.appendTo(args.cell.querySelector('input'));
     }
   }
+

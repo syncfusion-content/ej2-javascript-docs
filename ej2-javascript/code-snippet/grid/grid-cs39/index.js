@@ -17,6 +17,7 @@ var grid = new ej.grids.Grid({
 grid.appendTo('#Grid');
 
 function queryCellInfo(args) {
+<<<<<<< HEAD
     if (args.column.headerText === 'Verified') {
         var checkbox = new ej.buttons.CheckBox
         ({  
@@ -30,3 +31,18 @@ function queryCellInfo(args) {
         checkbox.appendTo(args.cell.querySelector('input'));
     }
   }
+=======
+  if (args.column.headerText === 'Verified') {
+    var checkbox = new ej.buttons.CheckBox
+    ({
+      checked: args.data.Verified,
+      change: function (changeArgs) {
+        args.data.Verified = changeArgs.checked;
+        var rowIndex = grid.getRowIndexByPrimaryKey(args.data.OrderID);
+        grid.updateRow(rowIndex, args.data);
+      },  
+    });
+    checkbox.appendTo(args.cell.querySelector('input'));
+  }
+}
+>>>>>>> 3e4292b7c985da37c845d13e076d35157e5979e7

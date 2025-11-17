@@ -13,7 +13,7 @@ grid.appendTo('#Grid');
 var widthsize = new ej.inputs.NumericTextBox({
   min : 400,
   max : 650,
-  placeholder : 400,
+  placeholder : '400',
   step : 5,
   width : 120
 });
@@ -22,7 +22,7 @@ widthsize.appendTo('#WidthTextBox');
 var heightsize = new ej.inputs.NumericTextBox({
   min : 200,
   max : 650,
-  placeholder : 200,
+  placeholder : '200',
   step : 5,
   width : 120
 });

@@ -27,6 +27,8 @@ This functionality is useful for scenarios where precise text selection is neede
 {% include code-snippet/rich-text-editor/selection/index.html %}
 {% endhighlight %}
 {% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/selection" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -59,6 +61,8 @@ The following example demonstrates how to select a paragraph node programmatical
 {% endhighlight %}
 {% endtabs %}
 
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/node-selection" %}
+
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
@@ -72,6 +76,7 @@ The following example demonstrates how to select a paragraph node programmatical
 
 {% previewsample "page.domainurl/code-snippet/rich-text-editor/node-selection" %}
 {% endif %}
+
 
 ## Cell selection
 
@@ -89,6 +94,8 @@ The following example demonstrates how to select a table cell programmatically u
 {% include code-snippet/rich-text-editor/cell-selection/index.html %}
 {% endhighlight %}
 {% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/cell-selection" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -119,6 +126,8 @@ To select all content within the Rich Text Editor, use the [selectAll](https://e
 {% endhighlight %}
 {% endtabs %}
 
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/select-all" %}
+
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
@@ -130,5 +139,5 @@ To select all content within the Rich Text Editor, use the [selectAll](https://e
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/cell-selection" %}
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/select-all" %}
 {% endif %}

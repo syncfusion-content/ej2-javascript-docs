@@ -9,12 +9,6 @@ var editor = new ej.richtexteditor.RichTextEditor({
             </blockquote>
         </blockquote>
     </blockquote>
-`,
-    toolbarSettings: {
-        items: ['Blockquote', 'Bold', 'Italic', 'Underline', 'StrikeThrough',
-            'FontName', 'FontSize',
-            'LowerCase', 'UpperCase', '|',
-            'Formats', 'Alignments', 'OrderedList', 'UnorderedList',
-            'Outdent', 'Indent', '|', 'Undo', 'Redo']
-    }});
+`
+});
 editor.appendTo('#editor');

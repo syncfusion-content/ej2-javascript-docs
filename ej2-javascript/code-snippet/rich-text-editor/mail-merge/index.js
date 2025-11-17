@@ -1,4 +1,3 @@
-{% raw %}
 var rteValue =
   '<p>Dear <span contenteditable="false" class="e-mention-chip"><span>{{FirstName}}</span></span> ' +
   '<span contenteditable="false" class="e-mention-chip"><span>{{LastName}}</span></span>,</p>' +
@@ -189,12 +188,10 @@ var mergeObj = new ej.dropdowns.Mention({
   dataSource: mergeData,
   fields: { text: 'Name', value: 'Field' },
   displayTemplate: '<span>{{${Field}}}</span>',
-
   popupWidth: '250px',
   popupHeight: '200px',
   target: mailMergeEditor.inputElement,
-  mentionChar: '{{',
+  mentionChar: '@',
   allowSpaces: true,
 });
 mergeObj.appendTo('#mentionField');
-{% endraw %}

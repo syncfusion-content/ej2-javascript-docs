@@ -1,6 +1,6 @@
 ej.grids.Grid.Inject(ej.grids.Filter);
 
-var filterParams = { params: { format: 'M/d/y HH:mm' } };
+var filterParams = { params: { format: 'M/d/y HH:mm', } };
 var grid = new ej.grids.Grid({
     dataSource: data,
     allowPaging: true,

@@ -17,16 +17,16 @@ var grid = new ej.grids.Grid({
 grid.appendTo('#Grid');
 
 function queryCellInfo(args) {
-    if (args.column.headerText === 'Verified') {
-        var checkbox = new ej.buttons.CheckBox
-        ({  
-            checked: args.data.Verified,
-            change: function (changeArgs) {
-                args.data.Verified = changeArgs.checked;
-                var rowIndex = grid.getRowIndexByPrimaryKey(args.data.OrderID);
-                grid.updateRow(rowIndex, args.data);
-            },
-        });
-        checkbox.appendTo(args.cell.querySelector('input'));
-    }
+  if (args.column.headerText === 'Verified') {
+    var checkbox = new ej.buttons.CheckBox
+    ({
+      checked: args.data.Verified,
+      change: function (changeArgs) {
+        args.data.Verified = changeArgs.checked;
+        var rowIndex = grid.getRowIndexByPrimaryKey(args.data.OrderID);
+        grid.updateRow(rowIndex, args.data);
+      },  
+    });
+    checkbox.appendTo(args.cell.querySelector('input'));
   }
+}

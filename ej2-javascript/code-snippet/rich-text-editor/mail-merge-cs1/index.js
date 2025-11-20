@@ -1,5 +1,3 @@
-{% raw %}
-
 var rteValue =
   '<p>Dear <span contenteditable="false" class="e-mention-chip"><span>{{FirstName}}</span></span> ' +
   '<span contenteditable="false" class="e-mention-chip"><span>{{LastName}}</span></span>,</p>' +
@@ -179,6 +177,22 @@ var insertField = new ej.splitbuttons.DropDownButton({
   select: onItemSelect,
   close: onDropDownClose,
 });
+insertField.appendTo('#insertField');var insertField = new ej.splitbuttons.DropDownButton({
+  items: [
+    { text: 'First Name' },
+    { text: 'Last Name' },
+    { text: 'Support Email' },
+    { text: 'Company Name' },
+    { text: 'Promo Code' },
+    { text: 'Support Phone Number' },
+    { text: 'Customer ID' },
+    { text: 'Expiration Date' },
+    { text: 'Subscription Plan' },
+  ],
+  content: dropdownContent,
+  select: onItemSelect,
+  close: onDropDownClose,
+});
 insertField.appendTo('#insertField');
 
 var mergeField = document.getElementById('merge_data');
@@ -197,4 +211,3 @@ var mergeObj = new ej.dropdowns.Mention({
   allowSpaces: true,
 });
 mergeObj.appendTo('#mentionField');
-{% endraw %}

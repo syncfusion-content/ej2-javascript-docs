@@ -78,7 +78,7 @@ The quickstart application is preconfigured to use the `Material` theme in the `
 {% endhighlight %}
 {% endtabs %}
 
-> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls. 
 
 ## Adding Gantt component
 

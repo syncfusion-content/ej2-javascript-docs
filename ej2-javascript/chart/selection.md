@@ -226,6 +226,8 @@ You can able to select a point or series programmatically on a chart using [`sel
 
 You can able to select a point or series through on legend using [`toggleVisibility`](../api/chart/legendSettingsModel/#toggleVisibility) property. Also, use [`enableHighlight`](../api/chart/legendSettings/#enableHighlight) property for highlighting the series through legend.
 
+>When [`highlightMode`](https://ej2.syncfusion.com/documentation/api/chart/highlightmode) is set to 'Series', 'Cluster' or 'Point', legend highlighting will still occur even when [`enableHighlight`](https://ej2.syncfusion.com/documentation/api/chart/legendsettings#enablehighlight) is set to false. This is because, the [`highlightMode`](https://ej2.syncfusion.com/documentation/api/chart/highlightmode) takes precedence, so hovering over legend items will trigger highlighting of the corresponding series regardless of the legend’s [`enableHighlight`](https://ej2.syncfusion.com/documentation/api/chart/legendsettings#enablehighlight) setting.
+
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}

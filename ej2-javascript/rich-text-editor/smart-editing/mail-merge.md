@@ -194,8 +194,8 @@ When the **Merge Data** button is clicked, the editor content is processed to re
 
 {% if page.publishingplatform == "typescript" %}
 
-{% endhighlight %}
-{% endtabs %}
+{% tabs %}
+{% highlight %}
 
 document.getElementById('merge_data')?.addEventListener('click', onClickHandler);
 
@@ -208,6 +208,9 @@ function onClickHandler(): void {
 function replacePlaceholders(template: string, data: { [key: string]: string }): string {
    return template.replace(/{{\s*(\w+)\s*}}/g, (match, key) => data[key.trim()] || match);
 }
+
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -242,9 +245,6 @@ function replacePlaceholders(template, data) {
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
 
 {% if page.publishingplatform == "typescript" %}
 

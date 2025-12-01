@@ -194,8 +194,8 @@ When the **Merge Data** button is clicked, the editor content is processed to re
 
 {% if page.publishingplatform == "typescript" %}
 
-{% highlight %}
 {% tabs %}
+{% highlight %}
 
 document.getElementById('merge_data')?.addEventListener('click', onClickHandler);
 

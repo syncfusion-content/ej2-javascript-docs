@@ -109,15 +109,42 @@ The below html code example shows the minimal dependency of chart.
 
 ```html
 <!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
-       <head>
-            <title>Essential JS 2 Chart</title>
-            <!-- Essential JS 2 Chart's global script -->
-            <script src="http://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js" type="text/javascript"></script>
-       </head>
-       <body>
-       </body>
-  </html>
+	<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Essential JS 2 Chart</title>
+    <!-- Include Essential JS 2 other component's script based on features used -->
+    <script
+      src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://cdn.syncfusion.com/ej2/ej2-data/dist/global/ej2-data.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://cdn.syncfusion.com/ej2/ej2-pdf-export/dist/global/ej2-pdf-export.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://cdn.syncfusion.com/ej2/ej2-file-utils/dist/global/ej2-file-utils.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://cdn.syncfusion.com/ej2/ej2-compression/dist/global/ej2-compression.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://cdn.syncfusion.com/ej2/ej2-svg-base/dist/global/ej2-svg-base.min.js"
+      type="text/javascript"
+    ></script>
+    <!-- Essential JS 2 Chart's global script -->
+    <script
+      src="http://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body></body>
+</html>
 
 ```
 

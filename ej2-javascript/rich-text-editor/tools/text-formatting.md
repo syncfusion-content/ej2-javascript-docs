@@ -138,7 +138,7 @@ For more detailed control over the numbering style, use the `numberFormatList` d
 * `Lower Alpha`: Uses lowercase letters (a, b, c, ...)
 * `Upper Roman`: Employs uppercase Roman numerals (I, II, III, ...)
 
-You can customize the available number formats using the [numberFormatList](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#numberformatlist) property of the Rich Text Editor.
+You can customize the available number formats using the [numberFormatList](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#numberformatlist) property of the Rich Text Editor.
 
 The following example demonstrates how to customize the number format lists in the Rich Text Editor:
 
@@ -275,7 +275,7 @@ Please refer to the below video for visual behavior and interaction examples:
 
 The Rich Text Editor allows you to set indentation for text blocks such as paragraphs, headings, or lists. This feature helps you visually organize and structure your content, making it easier to read and understand.
 
-The Rich Text Editor allows you to configure two types of indentation tools, `Indent` and `Outdent` tool  in the Rich Text Editor toolbar using the `toolbarSettings` [items](../api/rich-text-editor/toolbarSettings/#items) property.
+The Rich Text Editor allows you to configure two types of indentation tools, `Indent` and `Outdent` tool  in the Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#items) property.
 
 | Options | Description |
 |----------------|---------|
@@ -542,11 +542,11 @@ Use the `HorizontalLine` tool in the editor below to see the feature in action.
 
 ## Format painter
 
-The format painter tool enables users to replicate formatting from one text segment and apply it to another. It can be accessed through the toolbar or keyboard shortcuts, allowing for the transfer of formatting styles from individual words to entire paragraphs. Customization options for the format painter are available through the [formatPainterSettings](../api/rich-text-editor/formatPainterSettings/) property.
+The format painter tool enables users to replicate formatting from one text segment and apply it to another. It can be accessed through the toolbar or keyboard shortcuts, allowing for the transfer of formatting styles from individual words to entire paragraphs. Customization options for the format painter are available through the [formatPainterSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/formatPainterSettings) property.
 
 ### Configuring format painter tool in the toolbar
 
-You can add the `FormatPainter` tool in the Rich Text Editor using the `toolbarSettings` [items](../api/rich-text-editor/toolbarSettings/#items) property.
+You can add the `FormatPainter` tool in the Rich Text Editor using the `toolbarSettings` [items](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#items) property.
 
 > Rich Text Editor features are segregated into individual feature-wise modules. To use the Format Painter feature, we need to import and inject the `FormatPainter` module using the `RichTextEditor.Inject(FormatPainter)`.
 
@@ -583,11 +583,11 @@ The following code example shows how to add the format painter tool in the Rich 
 
 ### Customizing copy and paste format
 
-You can customize the format painter tool in the Rich Text Editor using the [formatPainterSettings](../api/rich-text-editor/formatPainterSettings/) property.
+You can customize the format painter tool in the Rich Text Editor using the [formatPainterSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/formatPainterSettings) property.
 
-The [allowedFormats](../api/rich-text-editor/formatPainterSettings/#allowedformats) property helps you to specify tag names that allow the formats to be copied from the selected text. For instance, you can include formats from the selected text using tags like `p; h1; h2; h3; div; ul; ol; li; span; strong; em; code;`. The following example demonstrates how to customize this functionality.
+The [allowedFormats](https://ej2.syncfusion.com/documentation/api/rich-text-editor/formatpaintersettings#allowedformats) property helps you to specify tag names that allow the formats to be copied from the selected text. For instance, you can include formats from the selected text using tags like `p; h1; h2; h3; div; ul; ol; li; span; strong; em; code;`. The following example demonstrates how to customize this functionality.
 
-Similarly, with the [deniedFormats](../api/rich-text-editor/formatPainterSettings/#deniedformats) property, you can utilize the selectors to prevent specific formats from being pasted onto the selected text. The table below illustrates the selectors and their respective usage.
+Similarly, with the [deniedFormats](https://ej2.syncfusion.com/documentation/api/rich-text-editor/formatpaintersettings#deniedformats) property, you can utilize the selectors to prevent specific formats from being pasted onto the selected text. The table below illustrates the selectors and their respective usage.
 
 | Type | Description        | Selector                                                | Usage                                                                  |
 |------|--------------------|---------------------------------------------------------|------------------------------------------------------------------------|
@@ -649,7 +649,7 @@ This feature is particularly useful when you need to:
 To enable the Clear Format feature in your Rich Text Editor, you need to add it to the toolbar items. Follow these steps:
 
 1. Open your component file where you've implemented the Rich Text Editor.
-2. Locate the [toolbarSettings](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#toolbarsettings) property in your Rich Text Editor configuration.
+2. Locate the [toolbarSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#toolbarsettings) property in your Rich Text Editor configuration.
 3. Add `'ClearFormat'` to the `items` array within `toolbarSettings`.
 
 Here's an example of how to configure the Clear Format feature:
@@ -712,4 +712,69 @@ Using `Clear Format` makes it easy to undo styling changes and keep your text lo
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/rich-text-editor/remove-format-cs2" %}
+{% endif %}
+
+## Markdown Auto Format
+
+The Rich Text Editor supports automatic conversion of Markdown syntax into HTML using the [enableMarkdownAutoFormat](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#enablemarkdownautoformat) 
+property. This feature simplifies content creation by transforming Markdown elements into their corresponding HTML tags, ensuring consistency and improving efficiency.
+
+By default, Markdown Auto-Format is enabled. The editor supports both inline formatting and block-level elements. As you type, Markdown syntax is automatically converted into semantic HTML tags, ensuring a smooth and efficient editing experience.
+
+|Commands|Syntax Example| Description |
+|--------|------------------------------------------|------------|
+| Bold | `**`Bold Text`**` or `__`Bold Text`__` | Makes text bold by wrapping it with `**` or `__`. |
+| Italic | `*`Italic Text`*` or `_`Italic Text`_` | Makes text italic by wrapping it with `*` or `_`. |
+| Bold and Italics | `***`bold and Italic text`***`. | Combines bold and italic by wrapping text with `***`. |
+| Strike Through | `~~`Strikethrough`~~` | Adds a strikethrough effect by wrapping text with `~~`. |
+| Inline Code (Single line) | \`Inline Code\` | Displays inline code by wrapping text with \`. |
+| Heading 1 | `#` Heading 1 | Creates an H1 heading by starting the line with `#`. |
+| Heading 2 | `##` Heading 2 | Creates an H2 heading by starting the line with `##`. |
+| Heading 3 | `###` Heading 3 | Creates an H2 heading by starting the line with `###`. |
+| Heading 4 | `####` Heading 4 | Creates an H2 heading by starting the line with `####` |
+| Heading 5 | `#####` Heading 5 | Creates an H2 heading by starting the line with `#####` |
+| Heading 6 | `######` Heading 6 | Creates an H2 heading by starting the line with `######` |
+| Blockquotes | `>` Blockquotes text | Adds a blockquote by starting the line with `>`. |
+| Code block (Multi Line) | \`\`\`<br>Multi line code text<br>Multi line code text<br>\`\`\` | Creates a code block by starting the line with \`\`\` |
+| Ordered List | `1.` First<br>`1.` Second | Creates a numbered list by starting lines with `1.` or `i.`. |
+| Unordered List | `*` First<br> `*` second | Creates a bulleted list by starting lines with `*` or `-`. |
+| Check List | `[]` Task<br>`[x]` Completed Task | Creates a checklist using `[]` for check list and `[x]` for checked checklist.|
+| Horizontal Line | `---` or `___` | Inserts a horizontal line using `---` or `___` on a new line.|
+
+
+### How Markdown auto-formatting works
+
+#### Inline Formats
+Elements such as **bold**, *italic*, ~~strikethrough~~, and `inline code` are converted **immediately after the closing marker is typed**.  
+**Example:** Typing `**bold**` will render as **bold** the moment you enter the second `*`.
+
+#### Block Formats
+Elements such as headings, lists, blockquotes, and code block are converted **only after a space is typed following the marker**.  
+**Example:** Typing `# Title` will render as a heading only after you type the space following `#`.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/rich-text-editor/markdown-autoformat-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor/markdown-autoformat-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/markdown-autoformat-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/rich-text-editor/markdown-autoformat-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor/markdown-autoformat-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/markdown-autoformat-cs1" %}
 {% endif %}

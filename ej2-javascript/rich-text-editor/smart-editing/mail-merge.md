@@ -27,6 +27,8 @@ To enable mail merge functionality, the Rich Text Editor toolbar is extended wit
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 
+{% raw %}
+
 const mailMergeEditor: RichTextEditor = new RichTextEditor({
    toolbarSettings: {
       items: [
@@ -40,6 +42,8 @@ const mailMergeEditor: RichTextEditor = new RichTextEditor({
 });
 mailMergeEditor.appendTo('#mailMergeEditor');
 
+{% endraw %}
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -47,6 +51,8 @@ mailMergeEditor.appendTo('#mailMergeEditor');
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
+
+{% raw %}
 
 var mailMergeEditor = new ej.richtexteditor.RichTextEditor({
   toolbarSettings: {
@@ -61,6 +67,8 @@ var mailMergeEditor = new ej.richtexteditor.RichTextEditor({
 });
 mailMergeEditor.appendTo('#mailMergeEditor');
 
+{% endraw %}
+
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -73,6 +81,8 @@ The **DropDownButton** component displays a list of merge fields such as First N
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
+
+{% raw %}
 
 let insertField: DropDownButton = new DropDownButton({
    items: [
@@ -100,6 +110,8 @@ function onItemSelect(args: MenuEventArgs): void {
    );
 }
 
+{% endraw %}
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -107,6 +119,8 @@ function onItemSelect(args: MenuEventArgs): void {
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
+
+{% raw %}
 
 var insertField = new ej.splitbuttons.DropDownButton({
   items: [
@@ -139,6 +153,8 @@ function onItemSelect(args) {
   }
 }
 
+{% endraw %}
+
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -152,10 +168,12 @@ The **Mention** control provides an alternative way to insert placeholders by ty
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 
+{% raw %}
+
 const mentionObj: Mention = new Mention({
    dataSource: mergeData,
    target: '#mailMergeEditor',
-   mentionChar: <code>&#123;&#123;</code>,
+   mentionChar: `{{`,
    fields: { text: 'text' },
    allowSpaces: true,
    popupWidth: '250px',
@@ -163,6 +181,8 @@ const mentionObj: Mention = new Mention({
    displayTemplate: '<span> {{${value}}} </span>',
 });
 mentionObj.appendTo('#mentionField');
+
+{% endraw %}
 
 {% endhighlight %}
 {% endtabs %}
@@ -172,6 +192,8 @@ mentionObj.appendTo('#mentionField');
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 
+{% raw %}
+
 var mergeObj = new ej.dropdowns.Mention({
   dataSource: mergeData,
   fields: { text: 'Name', value: 'Field' },
@@ -179,10 +201,12 @@ var mergeObj = new ej.dropdowns.Mention({
   popupWidth: '250px',
   popupHeight: '200px',
   target: mailMergeEditor.inputElement,
-  mentionChar: <code>&#123;&#123;</code> ,
+  mentionChar: `{{` ,
   allowSpaces: true,
 });
 mergeObj.appendTo('#mentionField');
+
+{% endraw %}
 
 {% endhighlight %}
 {% endtabs %}
@@ -195,7 +219,9 @@ When the **Merge Data** button is clicked, the editor content is processed to re
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
-{% highlight %}
+{% highlight ts tabtitle="app.ts" %}
+
+{% raw %}
 
 document.getElementById('merge_data')?.addEventListener('click', onClickHandler);
 
@@ -209,6 +235,8 @@ function replacePlaceholders(template: string, data: { [key: string]: string }):
    return template.replace(/{{\s*(\w+)\s*}}/g, (match, key) => data[key.trim()] || match);
 }
 
+{% endraw %}
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -216,6 +244,8 @@ function replacePlaceholders(template: string, data: { [key: string]: string }):
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
+
+{% raw %}
 
 var mergeField = document.getElementById('merge_data');
 if (mergeField) {
@@ -241,6 +271,8 @@ function replacePlaceholders(template, data) {
     return value !== undefined ? value : match;
   });
 }
+
+{% endraw %}
 
 {% endhighlight %}
 {% endtabs %}

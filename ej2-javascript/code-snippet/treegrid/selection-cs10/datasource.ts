@@ -58,7 +58,7 @@ function randomDate(start: Date, end: Date): string {
   return d.toISOString().split('T')[0];
 }
 
-let taskData: Task[] = [];
+export let taskData: Task[] = [];
 let id = 1;
 
 for (let i = 0; i < NUM_ROOTS; i++) {

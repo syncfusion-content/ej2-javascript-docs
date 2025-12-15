@@ -289,7 +289,7 @@ function replacePlaceholders(template, data) {
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/mail-merge-cs1" %}
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/mail-merge" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 

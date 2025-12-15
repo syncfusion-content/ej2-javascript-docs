@@ -96,3 +96,143 @@ The [userTyping](../api/chat-ui#usertyping) event is triggered when the user is 
 {% endtabs %}
 
 {% endif %}
+
+## beforeAttachmentUpload
+
+The [beforeAttachmentUpload](../api/chat-ui#beforeattachmentupload) event is triggered before attached files begin uploading in the Chat UI.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chat-ui/events/before-attachment/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chat-ui/events/before-attachment/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chat-ui/events/before-attachment/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chat-ui/events/before-attachment/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
+
+## attachmentUploadSuccess
+
+The [attachmentUploadSuccess](../api/chat-ui#attachmentuploadsuccess) event is triggered when an attached file is successfully uploaded in the Chat UI.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chat-ui/events/attachment-success/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chat-ui/events/attachment-success/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chat-ui/events/attachment-success/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chat-ui/events/attachment-success/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
+
+## attachmentUploadFailure
+
+The [attachmentUploadFailure](../api/chat-ui#attachmentuploadfailure) event is triggered when an attached file upload fails in the Chat UI.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chat-ui/events/attachment-failure/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chat-ui/events/attachment-failure/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chat-ui/events/attachment-failure/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chat-ui/events/attachment-failure/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
+
+## attachmentRemoved
+
+The [attachmentRemoved](../api/chat-ui#attachmentremoved) event is triggered when an attached file is removed from the Chat UI.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chat-ui/events/attachment-removed/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chat-ui/events/attachment-removed/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chat-ui/events/attachment-removed/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chat-ui/events/attachment-removed/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
+
+## attachmentClick
+
+The [attachmentClick](../api/chat-ui#attachmentclick) event is triggered when an attached file is clicked in the Chat UI.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chat-ui/events/attachment-click/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chat-ui/events/attachment-click/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chat-ui/events/attachment-click/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chat-ui/events/attachment-click/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}

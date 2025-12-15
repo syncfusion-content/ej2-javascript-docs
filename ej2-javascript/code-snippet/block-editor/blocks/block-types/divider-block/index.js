@@ -1,21 +1,21 @@
 let blocksData = [
     {
-        type: 'Paragraph',
+        blockType: 'Paragraph',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'This section discusses the features of the Block Editor.'
             }
         ]
     },
     {
-        type: 'Divider'
+        blockType: 'Divider'
     },
     {
-        type: 'Paragraph',
+        blockType: 'Paragraph',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'This section covers implementation details and usage examples.' 
             }
         ]

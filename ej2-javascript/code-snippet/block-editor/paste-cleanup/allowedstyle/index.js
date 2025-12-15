@@ -3,15 +3,15 @@ var blockEditor = new ej.blockeditor.BlockEditor({
     blocks: [
         {
             id: 'demo-block',
-            type: 'Paragraph'
+            blockType: 'Paragraph'
         }
     ],
     // Configure paste cleanup settings
-    pasteSettings: {
+    pasteCleanupSettings: {
         allowedStyles: ['text-decoration'],
         deniedTags: ['script', 'iframe']
     },
-    afterPaste: (args) => {
+    afterPasteCleanup: (args) => {
         displayOutput(`After Paste Event: Processed content length: ${args.content.length} characters`);
     }
 });

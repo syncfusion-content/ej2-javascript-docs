@@ -2,10 +2,10 @@ import { BlockEditor, BlockModel, ContentType } from "@syncfusion/ej2-blockedito
 
 const blocksData: BlockModel[] = [
     {
-        type: 'Quote',
+        blockType: 'Quote',
         content: [
             {
-                type: ContentType.Text,
+                contentType: ContentType.Text,
                 content: 'The greatest glory in living lies not in never falling, but in rising every time we fall.'
             }
         ]

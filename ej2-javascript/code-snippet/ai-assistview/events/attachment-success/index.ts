@@ -1,5 +1,6 @@
-import { AIAssistView, ToolbarItemClickedEventArgs, UploadingEventArgs } from '@syncfusion/ej2-interactive-chat';
+import { AIAssistView, ToolbarItemClickedEventArgs } from '@syncfusion/ej2-interactive-chat';
 import { enableRipple } from '@syncfusion/ej2-base';
+import { UploadingEventArgs } from '@syncfusion/ej2-inputs';
 
 enableRipple(true);
 

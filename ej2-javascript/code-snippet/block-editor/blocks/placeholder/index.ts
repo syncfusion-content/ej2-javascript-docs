@@ -2,17 +2,9 @@ import { BlockEditor, BlockModel, ContentType } from "@syncfusion/ej2-blockedito
 
 const blocksData: BlockModel[] = [
     {
-        type: 'Paragraph',
-        content: [
-            {
-                type: ContentType.Text,
-                content: 'This is a sample paragraph block.'
-            }
-        ]
-    },
-    {
-        type: 'Paragraph',
-        props: { placeholder: 'Start typing your notes or press "/" for commands...'}
+        blockType: 'Paragraph',
+        properties: { placeholder: 'Start typing your notes or press "/" for commands...'},
+        content: [ { contentType: ContentType.Text, content: '' } ]
     }
 ];
 

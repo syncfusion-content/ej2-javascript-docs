@@ -159,39 +159,6 @@ TreeGrid column supports the following types:
 
 > If the [`type`](../../api/treegrid/column/#type) is not defined, it will be determined from the first record of the [`dataSource`](../../api/treegrid/column/#datasource).
 
-## Checkbox column
-
-To render checkboxes in existing column, you need to set [`columns.showCheckbox`] property as `true`.
-
-It is also possible to select the rows hierarchically using checkboxes in TreeGrid by enabling [`autoCheckHierarchy`] property. When we check on any parent record checkbox then the child record checkboxes will get checked.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/treegrid/columns-cs10/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/columns-cs10/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs10" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/treegrid/columns-cs10/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/treegrid/columns-cs10/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs10" %}
-{% endif %}
-
 ## Controlling Tree Grid actions
 
 You can enable or disable treegrid action for a particular column by setting the [`allowFiltering`](../../api/treegrid/column/#allowfiltering), and [`allowSorting`](../../api/treegrid/column/#allowsorting) properties.

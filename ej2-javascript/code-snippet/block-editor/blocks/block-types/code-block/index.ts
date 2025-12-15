@@ -1,27 +1,29 @@
-import { BlockEditor, BlockModel, ContentType } from "@syncfusion/ej2-blockeditor";
+import { BlockEditor, BlockModel, ContentType, CodeBlockSettingsModel } from "@syncfusion/ej2-blockeditor";
 
 const blocksData: BlockModel[] = [
     {
-        type: 'Code',
+        blockType: 'Code',
         content: [
             {
-                type: ContentType.Text,  
+                contentType: ContentType.Text,  
                 content: 'function greeting() {\n  console.log("Hello, world!");\n}'
             }
-        ],
-        props: {
-            defaultLanguage: 'javascript',
-            languages: [
-                { language: 'javascript', label: 'JavaScript' },
-                { language: 'typescript', label: 'TypeScript' },
-                { language: 'html', label: 'HTML' },
-                { language: 'css', label: 'CSS' }
-            ]
-        }
+        ]
     }
 ];
 
+const codeBlockData: CodeBlockSettingsModel = {
+    defaultLanguage: 'javascript',
+    languages: [
+        { language: 'javascript', label: 'JavaScript' },
+        { language: 'typescript', label: 'TypeScript' },
+        { language: 'html', label: 'HTML' },
+        { language: 'css', label: 'CSS' }
+    ]
+}
+
 const blockEditor = new BlockEditor({
-    blocks: blocksData
+    blocks: blocksData,
+    codeBlockSettings: codeBlockData
 });
 blockEditor.appendTo('#blockEditor');

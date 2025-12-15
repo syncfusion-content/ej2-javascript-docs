@@ -1,19 +1,18 @@
-import { BlockEditor, AfterPasteEventArgs } from '@syncfusion/ej2-blockeditor';
+import { BlockEditor, AfterPasteCleanupEventArgs } from '@syncfusion/ej2-blockeditor';
 
 // Initialize BlockEditor with paste cleanup settings
 const blockEditor: BlockEditor = new BlockEditor({
     blocks: [
         {
-            id: 'demo-block',
-            type: 'Paragraph'
+            blockType: 'Paragraph'
         }
     ],
     // Configure paste cleanup settings
-    pasteSettings: {
+    pasteCleanupSettings: {
         keepFormat: false,
         plainText: true,
     },
-    afterPaste: (args: AfterPasteEventArgs) => {
+    afterPasteCleanup: (args: AfterPasteCleanupEventArgs) => {
         displayOutput(`After Paste Event: Processed content length: ${args.content.length} characters`);
     }
 });

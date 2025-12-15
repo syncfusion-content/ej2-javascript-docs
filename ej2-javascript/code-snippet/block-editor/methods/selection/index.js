@@ -1,42 +1,42 @@
 var blockData = [
     {
         id: 'heading-block',
-        type: 'Heading',
-        props: { level: 1},
+        blockType: 'Heading',
+        properties: { level: 1},
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'Welcome to Block Editor'
             }
         ]
     },
     {
         id: 'paragraph-1',
-        type: 'Paragraph',
+        blockType: 'Paragraph',
         content: [
             {
                 id: 'paragraph1-content',
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'This is the first paragraph with some sample text content for selection demonstration.'
             }
         ]
     },
     {
         id: 'paragraph-2',
-        type: 'Paragraph',
+        blockType: 'Paragraph',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'This is the second paragraph that can be used for various selection operations.'
             }
         ]
     },
     {
         id: 'list-block',
-        type: 'BulletList',
+        blockType: 'BulletList',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'First list item'
             }
         ]
@@ -69,7 +69,7 @@ blockEditor.appendTo('#blockeditor');
     var selectedBlocks = blockEditor.getSelectedBlocks();
     if (selectedBlocks && selectedBlocks.length > 0) {
         var blockInfo = selectedBlocks.map(block => 
-            `ID: ${block.id}, Type: ${block.type}`
+            `ID: ${block.id}, Type: ${block.blockType}`
         ).join('\n');
         displayOutput(`Selected blocks (${selectedBlocks.length}):\n${blockInfo}`);
     } else {

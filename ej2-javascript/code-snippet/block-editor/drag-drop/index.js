@@ -1,51 +1,46 @@
 let blocksData = [
     {
-        id: 'block-1',
-        type: 'Heading',
-        props: { level: 1},
+        blockType: 'Heading',
+        properties: { level: 1},
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'Drag and Drop Demo'
             }
         ]
     },
     {
-        id: 'block-2',
-        type: 'Paragraph',
+        blockType: 'Paragraph',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'Try rearranging blocks by dragging the handle that appears when hovering over them. You can drag a single block or select multiple blocks to drag them together.'
             }
         ]
     },
     {
-        id: 'block-3',
-        type: 'BulletList',
+        blockType: 'BulletList',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'Drag and drop is enabled by default'
             }
         ]
     },
     {
-        id: 'block-4',
-        type: 'NumberedList',
+        blockType: 'NumberedList',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'You can select multiple blocks and drag them together'
             }
         ]
     },
     {
-        id: 'block-5',
-        type: 'NumberedList',
+        blockType: 'NumberedList',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'Try dragging this block to rearrange the content'
             }
         ]

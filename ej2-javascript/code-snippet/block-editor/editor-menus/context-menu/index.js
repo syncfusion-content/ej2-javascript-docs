@@ -55,44 +55,36 @@ var customContextMenuItems = [
 var blockEditor = new ej.blockeditor.BlockEditor({
     blocks: [
         {
-            id: 'title-block',
-            type: 'Heading',
+            blockType: 'Heading',
             props: { level: 1},
             content: [
                 {
-                    type: ej.blockeditor.ContentType.Text,
+                    contentType: ej.blockeditor.ContentType.Text,
                     content: 'Context Menu Demo'
                 }
             ]
         },
         {
-            id: 'intro-block',
-            type: 'Quote',
+            blockType: 'Quote',
             content: [
                 {
-                    type: ej.blockeditor.ContentType.Text,
+                    contentType: ej.blockeditor.ContentType.Text,
                     content: 'Right-click anywhere in this editor to open the custom context menu. Try different areas and blocks.'
                 }
             ]
         }
     ],
-    contextMenu: {
+    contextMenuSettings: {
         enable: true,
         showItemOnClick: true,
         items: customContextMenuItems,
-        beforeOpen: (args) => {
+        opening: (args) => {
             // Your actions here
         },
-        open: (args) => {
+        closing: (args) => {
             // Your actions here
         },
-        beforeClose: (args) => {
-            // Your actions here
-        },
-        close: (args) => {
-            // Your actions here
-        },
-        itemClick: (args) => {
+        itemSelect: (args) => {
             // Handle custom actions here
         }
     }

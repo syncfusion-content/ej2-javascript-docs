@@ -1,21 +1,19 @@
 let blocksData = [
     {
-        id: 'block-1',
-        type: 'Heading',
-        props: { level: 1},
+        blockType: 'Heading',
+        properties: { level: 1},
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'Sample Heading'
             }
         ]
     },
     {
-        id: 'block-2',
-        type: 'Paragraph',
+        blockType: 'Paragraph',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'This is a sample paragraph block.'
             }
         ]

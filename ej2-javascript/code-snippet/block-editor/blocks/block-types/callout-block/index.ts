@@ -2,14 +2,12 @@ import { BlockEditor, BlockModel, ContentType } from "@syncfusion/ej2-blockedito
 
 const blocksData: BlockModel[] = [
     {
-        type: 'Callout',
-        props:{
-        children: [{ 
-            id: 'callout-content',
-            type: 'Paragraph',
+        blockType: 'Callout',
+        properties:{
+        children: [{
+            blockType: 'Paragraph',
             content: [{
-                id: 'callout-content-1',
-                type: ContentType.Text,
+                contentType: ContentType.Text,
                 content: 'Important information: This is a callout block used to highlight important content.'
             }]
         }]

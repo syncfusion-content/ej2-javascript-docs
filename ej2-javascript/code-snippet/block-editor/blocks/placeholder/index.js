@@ -1,16 +1,8 @@
 let blocksData = [
     {
-        type: 'Paragraph',
-        content: [
-            {
-                type: ej.blockeditor.ContentType.Text,
-                content: 'This is a sample paragraph block.'
-            }
-        ]
-    },
-    {
-        type: 'Paragraph',
-        props: { placeholder: 'Start typing your notes or press "/" for commands...'}
+        blockType: 'Paragraph',
+        properties: { placeholder: 'Start typing your notes or press "/" for commands...'},
+        content: [ { contentType: ej.blockeditor.ContentType.Text, content: '' } ]
     }
 ];
 

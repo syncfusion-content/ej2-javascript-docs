@@ -1,21 +1,21 @@
 let blocksData = [
     {
-        type: 'CollapsibleHeading',
+        blockType: 'CollapsibleHeading',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'Collapsible Section'
             }
         ],
-        props:{
+        properties:{
         level: 1,
         isExpanded: true,
         children: [
             {
-                type: 'Paragraph',
+                blockType: 'Paragraph',
                 content: [
                     {
-                        type: ej.blockeditor.ContentType.Text,
+                        contentType: ej.blockeditor.ContentType.Text,
                         content: 'This content is inside a toggle section and can be collapsed.'
                     }
                 ]
@@ -24,21 +24,21 @@ let blocksData = [
     }
     },
     {
-        type: 'CollapsibleParagraph',
+        blockType: 'CollapsibleParagraph',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'Toggle paragraph section'
             }
         ],
-        props:{
+        properties:{
         isExpanded: false,
         children: [
             {
-                type: 'Paragraph',
+                blockType: 'Paragraph',
                 content: [
                     {
-                        type: ej.blockeditor.ContentType.Text,
+                        contentType: ej.blockeditor.ContentType.Text,
                         content: 'This content is initially hidden because isExpanded is set to false.'
                     }
                 ]

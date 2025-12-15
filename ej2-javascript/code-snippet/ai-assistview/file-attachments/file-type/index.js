@@ -12,7 +12,7 @@ var aiAssistView = new ej.interactivechat.AIAssistView({
     attachmentSettings: {
         saveUrl: 'https://services.syncfusion.com/js/production/api/FileUploader/Save',
         removeUrl: 'https://services.syncfusion.com/js/production/api/FileUploader/Remove',
-        allowedFileType: '.png'
+        allowedFileTypes: '.png'
     }
 });
 

@@ -1,13 +1,11 @@
 let blocksData = [
     {
-        type: 'Callout',
-        props:{
-        children: [{ 
-            id: 'callout-content',
-            type: 'Paragraph',
+        blockType: 'Callout',
+        properties:{
+        children: [{
+            blockType: 'Paragraph',
             content: [{
-                id: 'callout-content-1',
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'Important information: This is a callout block used to highlight important content.'
             }]
         }]

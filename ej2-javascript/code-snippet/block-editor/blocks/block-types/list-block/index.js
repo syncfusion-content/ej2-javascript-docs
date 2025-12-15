@@ -1,41 +1,41 @@
 let blocksData = [
     {
-        type: 'BulletList',
+        blockType: 'BulletList',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'Features of the Block Editor'
             }
         ]
     },
     {
-        type: 'NumberedList',
+        blockType: 'NumberedList',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'Step 1: Initialize the Block Editor'
             }
         ]
     },
     {
-        type: 'Checklist',
+        blockType: 'Checklist',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'Review documentation'
             }
         ],
-        props:{isChecked: true}
+        properties:{isChecked: true}
     },
     {
-        type: 'Checklist',
+        blockType: 'Checklist',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'Implement drag and drop functionality'
             }
         ],
-        props:{isChecked: false}
+        properties:{isChecked: false}
     }
 ];
 

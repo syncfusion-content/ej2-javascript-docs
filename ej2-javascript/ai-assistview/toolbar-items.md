@@ -11,7 +11,137 @@ domainurl: ##DomainURL##
 
 # Toolbar items in ##Platform_Name## AI AssistView control
 
-You can render the AI AssistView toolbar items by using the `items` property in the [toolbarSettings](../api/ai-assistview#toolbarsettings), [responseToolbarSettings](../api/ai-assistview#responsetoolbarsettings) & [promptToolbarSettings](../api/ai-assistview#prompttoolbarsettings) properties.
+You can render the AI AssistView toolbar items by using the `items` property in the [toolbarSettings](../api/ai-assistview#toolbarsettings), [responseToolbarSettings](../api/ai-assistview#responsetoolbarsettings), [promptToolbarSettings](../api/ai-assistview#prompttoolbarsettings) & [footerToolbarSettings](../api/ai-assistview#footertoolbarsettings) properties.
+
+## Configure footer toolbar
+
+By default, the footer toolbar renders the `send`, if attachment is enabled the `attachment` item will also be rendered which allows users to send the prompt text or attach files as needed.
+
+In the following example, AI AssistView component rendered with footer toolbar items such as `send` and `attachment` icons.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/ai-assistview/file-attachments/enable-attachment/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/ai-assistview/file-attachments/enable-attachment/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/ai-assistview/file-attachments/enable-attachment" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/ai-assistview/file-attachments/enable-attachment/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/ai-assistview/file-attachments/enable-attachment/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/ai-assistview/file-attachments/enable-attachment" %}
+{% endif %}
+
+### Toolbar positioning
+
+You can use the [toolbarPosition](../api/ai-assistview/footerToolbarSettingsModel#toolbarPosition) property to customize footer toolbar position. It has two modes such as `Inline`, and `Bottom`. By default, the toolbarPosition is `Inline`.
+
+By settings toolbarPosition as `Bottom`, footer items will be rendered at the bottom with a dedicated footer area.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/ai-assistview/toolbar-items/footer-position/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/ai-assistview/toolbar-items/footer-position/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/ai-assistview/toolbar-items/footer-position" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/ai-assistview/toolbar-items/footer-position/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/ai-assistview/toolbar-items/footer-position/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/ai-assistview/toolbar-items/footer-position" %}
+{% endif %}
+
+### Adding custom items
+
+You can use the [footerToolbarSettings](../api/ai-assistview#footertoolbarsettings) property to add custom items for the footer toolbar in the AI AssistView. The custom items will be added with the existing built-in items in the footer toolbar.
+
+> To know more about the items, please refer to the [items](#items) section.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/ai-assistview/toolbar-items/footer-settings/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/ai-assistview/toolbar-items/footer-settings/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/ai-assistview/toolbar-items/footer-settings" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/ai-assistview/toolbar-items/footer-settings/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/ai-assistview/toolbar-items/footer-settings/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/ai-assistview/toolbar-items/footer-settings" %}
+{% endif %}
+
+### Item click
+
+The [itemClick](../api/ai-assistview/footerToolbarSettingsModel#itemclick) event is triggered when the footer toolbar item is clicked.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/ai-assistview/toolbar-items/footer-itemclick/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/ai-assistview/toolbar-items/footer-itemclick/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/ai-assistview/toolbar-items/footer-itemclick" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/ai-assistview/toolbar-items/footer-itemclick/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/ai-assistview/toolbar-items/footer-itemclick/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/ai-assistview/toolbar-items/footer-itemclick" %}
+{% endif %}
 
 ## Adding header toolbar items
 
@@ -410,11 +540,11 @@ In the following example, AI AssistView control rendered with built-in toolbar i
 
 #### Setting width
 
-You can use the [width](../api/ai-assistview/promptToolbarSettingsModel/#width) property to set the width of the prompt toolbar in the AI AssistView.
+You can use the [width](../api/ai-assistview/promptToolbarSettingsModel#width) property to set the width of the prompt toolbar in the AI AssistView.
 
 #### Item clicked
 
-The [itemClicked](../api/ai-assistview/promptToolbarSettingsModel/#itemclicked) event is triggered when the prompt toolbar item is clicked.
+The [itemClicked](../api/ai-assistview/promptToolbarSettingsModel#itemclicked) event is triggered when the prompt toolbar item is clicked.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -478,11 +608,11 @@ In the following example, AI AssistView renders with built-in toolbar items.
 
 #### Setting width
 
-You can use the [width](../api/ai-assistview/responseToolbarSettingsModel/#width) property to set the width of the response toolbar in the AI AssistView.
+You can use the [width](../api/ai-assistview/responseToolbarSettingsModel#width) property to set the width of the response toolbar in the AI AssistView.
 
 #### Item clicked
 
-The [itemClicked](../api/ai-assistview/responseToolbarSettingsModel/#itemclicked) event is triggered when the response toolbar item is clicked.
+The [itemClicked](../api/ai-assistview/responseToolbarSettingsModel#itemclicked) event is triggered when the response toolbar item is clicked.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -583,4 +713,4 @@ You can use the [responseToolbarSettings](../api/ai-assistview#responsetoolbarse
 
 #### Item clicked
 
-The [itemClicked](../api/ai-assistview/promptToolbarSettingsModel/#itemclicked) event is triggered when a custom toolbar item is clicked. This event applies to both prompt and response toolbar items. 
+The [itemClicked](../api/ai-assistview/promptToolbarSettingsModel#itemclicked) event is triggered when a custom toolbar item is clicked. This event applies to both prompt and response toolbar items. 

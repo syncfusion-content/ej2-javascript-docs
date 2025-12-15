@@ -99,6 +99,10 @@ When set to `true`, the selected files will process sequentially (one after the 
 {% previewsample "page.domainurl/code-snippet/file-manager/sequential-upload" %}
 {% endif %}
 
+The screenshot below shows that each file begins uploading only after the previous one completes. This demonstrates how the `sequentialUpload` property works in the File Manager control.
+
+![File Manager with sequentialUpload](./images/filemanager-sequentialupload.png)
+
 To learn more about folder upload actions, refer to this [link](https://ej2.syncfusion.com/documentation/file-manager/file-operations#folder-upload-support)
 
 ## Chunk Upload

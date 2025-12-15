@@ -2,22 +2,22 @@ import { BlockEditor, BlockModel, ContentType } from "@syncfusion/ej2-blockedito
 
 const blocksData: BlockModel[] = [
     {
-        type: 'CollapsibleHeading',
+        blockType: 'CollapsibleHeading',
         content: [
             {
-                type: ContentType.Text,
+                contentType: ContentType.Text,
                 content: 'Collapsible Section'
             }
         ],
-        props:{
+        properties:{
         level: 1,
         isExpanded: true,
         children: [
             {
-                type: 'Paragraph',
+                blockType: 'Paragraph',
                 content: [
                     {
-                        type: ContentType.Text,
+                        contentType: ContentType.Text,
                         content: 'This content is inside a toggle section and can be collapsed.'
                     }
                 ]
@@ -26,21 +26,21 @@ const blocksData: BlockModel[] = [
     }
     },
     {
-        type: 'CollapsibleParagraph',
+        blockType: 'CollapsibleParagraph',
         content: [
             {
-                type: ContentType.Text,
+                contentType: ContentType.Text,
                 content: 'Toggle paragraph section'
             }
         ],
-        props:{
+        properties:{
         isExpanded: false,
         children: [
             {
-                type: 'Paragraph',
+                blockType: 'Paragraph',
                 content: [
                     {
-                        type: ContentType.Text,
+                        contentType: ContentType.Text,
                         content: 'This content is initially hidden because isExpanded is set to false.'
                     }
                 ]

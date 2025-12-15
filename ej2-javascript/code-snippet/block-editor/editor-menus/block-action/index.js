@@ -2,22 +2,20 @@
 const blockEditor = new ej.blockeditor.BlockEditor({
     blocks: [
         {
-            id: 'title-block',
-            type: 'Heading',
+            blockType: 'Heading',
             props: { level: 1},
             content: [
                 {
-                    type: ej.blockeditor.ContentType.Text,
+                    contentType: ej.blockeditor.ContentType.Text,
                     content: 'Block Action Menu Demo'
                 }
             ]
         },
         {
-            id: 'intro-block',
-            type: 'Quote',
+            blockType: 'Quote',
             content: [
                 {
-                    type: ej.blockeditor.ContentType.Text,
+                    contentType: ej.blockeditor.ContentType.Text,
                     content: 'Hover over any block and click the drag handle icon to see custom actions.'
                 }
             ]
@@ -25,7 +23,7 @@ const blockEditor = new ej.blockeditor.BlockEditor({
     ],
 
     // Block Action Menu Configuration
-    blockActionsMenu: {
+    blockActionMenuSettings: {
         enable: true,
         popupWidth: '180px',
         popupHeight: '110px',

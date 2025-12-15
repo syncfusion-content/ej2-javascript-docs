@@ -1,9 +1,9 @@
 let blocksData = [
     {
-        type: 'Quote',
+        blockType: 'Quote',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'The greatest glory in living lies not in never falling, but in rising every time we fall.'
             }
         ]

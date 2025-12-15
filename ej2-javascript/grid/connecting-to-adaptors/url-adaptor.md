@@ -10,7 +10,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# UrlAdaptor in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid Control
+# UrlAdaptor in Syncfusion ##Platform_Name## Grid Control
 
 The UrlAdaptor serves as the base adaptor for facilitating communication between remote data services and an UI control. It enables seamless data binding and interaction with custom API services or any remote service through URLs. The UrlAdaptor is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name##  Grid control.
 
@@ -957,7 +957,7 @@ grid.appendTo('#Grid');
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid Control seamlessly integrates CRUD (Create, Read, Update, Delete) operations with server-side controller actions through specific properties: [insertUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_InsertUrl), [removeUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_RemoveUrl), [updateUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_UpdateUrl), [crudUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_CrudUrl), and [batchUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_BatchUrl). These properties enable the grid to communicate with the data service for every grid action, facilitating server-side operations.
 
-**CRUD Operations Mapping**
+**CRUD operations mapping:**
 
 CRUD operations within the grid can be mapped to server-side controller actions using specific properties:
 
@@ -967,7 +967,7 @@ CRUD operations within the grid can be mapped to server-side controller actions 
 4. **crudUrl**: Specifies a single URL for all CRUD operations.
 5. **batchUrl**: Specifies the URL for batch editing.
 
-To enable editing in ##Platform_Name## Grid control, refer to the editing [documentation](../editing/edit). In the below example, the inline edit [mode](../../api/grid/editSettings/#mode) is enabled and [toolbar](../../api/grid/#toolbar) property is configured to display toolbar items for editing purposes.
+To enable editing in ##Platform_Name## Grid control, refer to the editing [documentation](../editing/edit). In the below example, the inline edit [mode](../../api/grid/editSettings#mode) is enabled and [toolbar](../../api/grid#toolbar) property is configured to display toolbar items for editing purposes.
 
 {% tabs %}
 {% if page.publishingplatform == "typescript" %}
@@ -1028,7 +1028,7 @@ grid.appendTo('#Grid');
 {% endif %}
 {% endtabs %}
 
-> Normal/Inline editing is the default edit [mode](../../api/grid/editSettings/#mode) for the Grid control. To enable CRUD operations, ensure that the [isPrimaryKey](../../api/grid/column/#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit [mode](../../api/grid/editSettings#mode) for the Grid control. To enable CRUD operations, ensure that the [isPrimaryKey](../../api/grid/column#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 
 The below class is used to structure data sent during CRUD operations.
 
@@ -1108,7 +1108,7 @@ public void Update([FromBody] CRUDModel<OrdersDetails> updatedRecord)
 }
 ```
 
-**Delete operation**
+**Delete operation:**
 
 To delete existing records, use the [removeUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_RemoveUrl) property to specify the controller action mapping URL for the delete operation. The primary key value of the deleted record is bound to the **deletedRecord** parameter.
 
@@ -1136,7 +1136,7 @@ public void Remove([FromBody] CRUDModel<OrdersDetails> deletedRecord)
 
 ![UrlAdaptor CRUD operations](../images/adaptor-crud-operation.gif)
 
-**Single method for performing all CRUD operations**
+**Single method for performing all CRUD operations:**
 
 Using the `crudUrl` property, the controller action mapping URL can be specified to perform all the CRUD operation at server-side using a single method instead of specifying separate controller action method for CRUD (insert, update and delete) operations.
 
@@ -1224,9 +1224,9 @@ public void CrudUpdate([FromBody] CRUDModel<OrdersDetails> request)
 }
 ```
 
-**Batch operation**
+**Batch operation:**
 
-To perform batch operation, define the edit [mode](../../api/grid/editSettings/#mode) as **Batch** and specify the `batchUrl` property in the DataManager. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the OrdersDetails table using a single API POST request.
+To perform batch operation, define the edit [mode](../../api/grid/editSettings#mode) as **Batch** and specify the `batchUrl` property in the DataManager. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the OrdersDetails table using a single API POST request.
 
 {% if page.publishingplatform == "typescript" %}
 ```ts
@@ -1326,4 +1326,158 @@ if (batchOperation.deleted != null)
 > You can find the complete sample for the UrlAdaptor in [GitHub](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-typescript-data-grid) link.
 {% elsif page.publishingplatform == "javascript" %}
 > You can find the complete sample for the UrlAdaptor in [GitHub](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-javascript-data-grid) link.
+{% endif %}
+
+## Foreign key column with UrlAdaptor
+
+Configuration of foreign key column with remote data using `UrlAdaptor` requires assigning the DataManager instance with the endpoint URL to the particular column dataSource along with foreign key field and foreign key value properties. When both grid and foreign key column uses a `UrlAdaptor`, the grid data and the foreign key data are fetched separately from their respective remote endpoints. During operations such as filtering or sorting, the grid sends requests to the server based on the foreign key field and its corresponding value.
+
+### Handling Filter operation on foreign key column
+
+Filter operation on a foreign key column ensures that the displayed value ("CustomerName") is automatically mapped to the underlying foreign key field ("CustomerID"). This ensures the filter request sent to the server uses the value from the foreign key field ("CustomerID"), applying the filter correctly to the main dataset.
+
+![ForeignKey column filtering](../images/foreign-key-filter.png)
+
+```csharp
+[HttpPost]
+public object Post([FromBody] DataManagerRequest DataManagerRequest)
+{
+  // Retrieve data from the data source.
+  IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
+
+  QueryableOperation queryableOperation = new QueryableOperation(); // Initialize QueryableOperation instance.
+
+  // Handling filtering operation
+  if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
+  {
+    DataSource = operation.PerformFiltering(DataSource, DataManagerRequest.Where, DataManagerRequest.Where[0].Operator);
+  }
+
+  // Get the total count of records.
+  int totalRecordsCount = DataSource.Count();
+
+  // Return data based on the request.
+  return new { result = DataSource, count = totalRecordsCount };
+```
+### Handling Sort operation on foreign key column
+
+Sort operation on a foreign key column orders records based on the underlying field ("CustomerID"). The sorting query sent to the server includes the corresponding foreign key value. To sort by the foreign key value, supply the foreign key's data source to the sorted query within the performSorting method.
+
+![ForeignKey column Sorting](../images/foreign-key-sorting.png)
+
+```csharp
+[HttpPost]
+public object Post([FromBody] DataManagerRequest DataManagerRequest)
+{
+  // Retrieve data from the data source (e.g., database).
+  IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
+
+  QueryableOperation queryableOperation = new QueryableOperation(); // Initialize QueryableOperation instance.
+
+  if (DataManagerRequest.Sorted != null && DataManagerRequest.Sorted.Count > 0) //Sorting
+  {
+    for (int i = 0; i < DataManagerRequest.Sorted.Count; i++)
+    {
+      if (DataManagerRequest.Sorted[i].ForeignKeyValue == "CustomerName")
+      {
+        DataManagerRequest.Sorted[i].ForeignKeyDataSource = GetCustomerData().AsQueryable();
+      }
+    }
+    DataSource = operation.PerformSorting(DataSource, DataManagerRequest.Sorted);
+  }
+  // Get the total count of records.
+  int totalRecordsCount = DataSource.Count();
+
+  // Return data based on the request.
+  return new { result = DataSource, count = totalRecordsCount };
+}
+```
+
+> Sort operation for a foreign key column based on its foreign key value mandates including the foreign key DataSource in the sorted query of the DataManager request on the server. If the foreign key DataSource is not passed, the sorting operation will be performed based on the column field.
+
+### Handling search operation on foreign key column
+
+Search process in a grid with foreign key columns produces a filter query for each column using the provided search term. For foreign key columns specifically, the grid first queries the associated foreign key data source to retrieve the underlying field value that matches the search term. It then constructs a filter query using that value and the column's field, applying it to the main dataset.
+
+### Client side configuration for a foreign key column with UrlAdaptor
+
+The following example demonstrates how to configure a foreign key column using the `UrlAdaptor`.
+
+{% if page.publishingplatform == "typescript" %}
+```ts
+import { Grid, Filter, ForeignKey,Toolbar, Sort } from '@syncfusion/ej2-grids';
+import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
+
+Grid.Inject(Filter,ForeignKey,Toolbar, Sort);
+
+// Grid data source
+let orders: DataManager = new DataManager({
+  url: 'https://localhost:xxxx/api/Orders',
+  adaptor: new UrlAdaptor()
+});
+
+// Foreign key data source
+let customers: DataManager = new DataManager({
+  url: 'https://localhost:xxxx/api/Customers',
+  adaptor: new UrlAdaptor()
+});
+
+let grid: Grid = new Grid({
+  dataSource: orders,
+  toolbar:['Search'],
+  columns: [
+   { field: 'OrderID', headerText: 'Order ID', width: 120 },
+   {
+     field: 'CustomerID',
+     foreignKeyField: 'CustomerID',
+     foreignKeyValue: 'CustomerName',
+     dataSource: customers,
+     headerText: 'Customer Name',
+     width: 160
+   },
+   { field: 'Freight', width: 120 }
+  ],
+  allowFiltering: true,
+  allowSorting: true
+});
+
+grid.appendTo('#Grid');
+```
+{% elsif page.publishingplatform == "javascript" %}
+.
+```js
+
+// Grid data source
+let orders = new ej.data.DataManager({
+  url: 'https://localhost:xxxx/api/Orders',
+  adaptor: new ej.data.UrlAdaptor()
+});
+
+// Foreign key data source
+let customers = new ej.data.DataManager({
+  url: 'https://localhost:xxxx/api/Customers',
+  adaptor: new ej.data.UrlAdaptor()
+});
+
+var grid = new ej.grids.Grid({
+  dataSource: orders,
+  toolbar:['Search'],
+  columns: [
+   { field: 'OrderID', headerText: 'Order ID', width: 120 },
+   {
+     field: 'CustomerID',
+     foreignKeyField: 'CustomerID',
+     foreignKeyValue: 'CustomerName',
+     dataSource: customers,
+     headerText: 'Customer Name',
+     width: 160
+   },
+   { field: 'Freight', width: 120 }
+  ],
+  allowFiltering: true,
+  allowSorting: true
+});
+
+grid.appendTo('#Grid');
+```
 {% endif %}

@@ -1,31 +1,28 @@
 var blockData = [
     {
-        id: 'sample-heading',
-        type: 'Heading',
-        props: { level: 1},
+        blockType: 'Heading',
+        properties: { level: 1},
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'Formatting Demo'
             }
         ]
     },
     {
-        id: 'sample-paragraph-1',
-        type: 'Paragraph',
+        blockType: 'Paragraph',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'Select this text and apply different formatting options using the buttons below. You can make text bold or change colors for the text.'
             }
         ]
     },
     {
-        id: 'sample-list',
-        type: 'BulletList',
+        blockType: 'BulletList',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'List item for formatting demonstration'
             }
         ]
@@ -41,13 +38,13 @@ blockEditor.appendTo('#blockeditor');
 
 // Apply Bold Formatting
 document.getElementById('applyBoldBtn').addEventListener('click', () => {
-    blockEditor.executeToolbarAction(ej.blockeditor.BuiltInToolbar.Bold);
+    blockEditor.executeToolbarAction(ej.blockeditor.CommandName.Bold);
     displayOutput('Bold formatting applied to selected text');
 });
 
 // Apply Color Formatting
 document.getElementById('applyColorBtn').addEventListener('click', () => {
-    blockEditor.executeToolbarAction(ej.blockeditor.BuiltInToolbar.Color, '#ff6b35');
+    blockEditor.executeToolbarAction(ej.blockeditor.CommandName.Color, '#ff6b35');
     displayOutput('Orange color (#ff6b35) applied to selected text');
 });
 

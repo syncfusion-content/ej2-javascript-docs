@@ -1,26 +1,24 @@
 import { BlockEditor, ContentType } from '@syncfusion/ej2-blockeditor';
-import { BlockActionMenuOpenEventArgs, BlockActionMenuCloseEventArgs, BlockActionItemClickEventArgs } from '@syncfusion/ej2-blockeditor';
+import { BlockActionMenuOpeningEventArgs, BlockActionMenuClosingEventArgs, BlockActionItemSelectEventArgs } from '@syncfusion/ej2-blockeditor';
 
 // Initialize BlockEditor with custom block action configuration
 const blockEditor: BlockEditor = new BlockEditor({
     blocks: [
         {
-            id: 'title-block',
-            type: 'Heading',
-            props: { level: 1},
+            blockType: 'Heading',
+            properties: { level: 1},
             content: [
                 {
-                    type: ContentType.Text,
+                    contentType: ContentType.Text,
                     content: 'Block Action Menu Demo'
                 }
             ]
         },
         {
-            id: 'intro-block',
-            type: 'Quote',
+            blockType: 'Quote',
             content: [
                 {
-                    type: ContentType.Text,
+                    contentType: ContentType.Text,
                     content: 'Hover over any block and click the drag handle icon to see custom actions.'
                 }
             ]
@@ -28,7 +26,7 @@ const blockEditor: BlockEditor = new BlockEditor({
     ],
 
     // Block Action Menu Configuration
-    blockActionsMenu: {
+    blockActionMenuSettings: {
         enable: true,
         popupWidth: '180px',
         popupHeight: '110px',
@@ -53,13 +51,13 @@ const blockEditor: BlockEditor = new BlockEditor({
                 tooltip: 'Show block information'
             }
         ],
-        open: (args: BlockActionMenuOpenEventArgs) => {
+        opening: (args: BlockActionMenuOpeningEventArgs) => {
             // Your actions here
         },
-        close: (args: BlockActionMenuCloseEventArgs) => {
+        closing: (args: BlockActionMenuClosingEventArgs) => {
             // Your actions here
         },
-        itemClick: (args: BlockActionItemClickEventArgs) => {
+        itemSelect: (args: BlockActionItemSelectEventArgs) => {
             // Handle custom block actions
         }
     }

@@ -1,6 +1,6 @@
 let blocksData = [
     {
-        type: 'Template',
+        blockType: 'Template',
         template: `<div class="notification-card">
             <div class="notification-header">
                 <span class="notification-icon">📢</span>

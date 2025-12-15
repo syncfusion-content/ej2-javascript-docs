@@ -1,52 +1,52 @@
 let blocksData = [
     {
-        type: 'Paragraph',
+        blockType: 'Paragraph',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'Task List:'
             }
         ]
     },
     {
-        type: 'Checklist',
+        blockType: 'Checklist',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'Completed task (checked)'
             }
         ],
-        props: {isChecked: true}
+        properties: {isChecked: true}
     },
     {
-        type: 'Checklist',
+        blockType: 'Checklist',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'Pending task (unchecked)'
             }
         ],
-        props: {isChecked: false}
+        properties: {isChecked: false}
     },
     {
-        type: 'Checklist',
+        blockType: 'Checklist',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'High priority task'
             }
         ],
-        props: {isChecked: true}
+        properties: {isChecked: true}
     },
     {
-        type: 'Checklist',
+        blockType: 'Checklist',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'Low priority task'
             }
         ],
-        props:{ isChecked: false}
+        properties:{ isChecked: false}
     }
 ];
 

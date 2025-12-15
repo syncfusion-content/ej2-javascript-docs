@@ -485,6 +485,37 @@ Line break feature used to customize the long axis label text into multiple line
 {% previewsample "page.domainurl/code-snippet/chart/axis-cs15" %}
 {% endif %}
 
+## Axis label template
+
+The axis label template allows you to customize axis labels by formatting them with HTML content, applying conditional styling, and including dynamic elements such as icons, images or additional data. This customization is enabled by setting the template content in the [labelTemplate](https://ej2.syncfusion.com/documentation/api/chart/axismodel#labelTemplate) property of the `AxisModel`.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/axis-cs99/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/axis-cs99/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/axis-cs99" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/axis-cs99/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/axis-cs99/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/axis-cs99" %}
+{% endif %}
+
 ## See Also
 
 * [Remove Duplicate X-Axis Labels in Stacked Charts](https://support.syncfusion.com/kb/article/21504/how-to-remove-duplicate-x-axis-labels-in-stacked-charts-using-javascript)

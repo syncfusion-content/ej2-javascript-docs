@@ -1,9 +1,9 @@
 let paragraphBlock = [
     {
-        type: 'Paragraph',
+        blockType: 'Paragraph',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'This is a paragraph block example.'
             }
         ]

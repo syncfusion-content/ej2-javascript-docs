@@ -1,33 +1,30 @@
-import { BlockEditor, BuiltInToolbar, ContentType } from '@syncfusion/ej2-blockeditor';
+import { BlockEditor, ContentType } from '@syncfusion/ej2-blockeditor';
 
 const blockData = [
     {
-        id: 'sample-heading',
-        type: 'Heading',
-        props: { level: 1},
+        blockType: 'Heading',
+        properties: { level: 1},
         content: [
             {
-                type: ContentType.Text,
+                contentType: ContentType.Text,
                 content: 'Formatting Demo'
             }
         ]
     },
     {
-        id: 'sample-paragraph-1',
-        type: 'Paragraph',
+        blockType: 'Paragraph',
         content: [
             {
-                type: ContentType.Text,
+                contentType: ContentType.Text,
                 content: 'Select this text and apply different formatting options using the buttons below. You can make text bold or change colors for the text.'
             }
         ]
     },
     {
-        id: 'sample-list',
-        type: 'BulletList',
+        blockType: 'BulletList',
         content: [
             {
-                type: ContentType.Text,
+                contentType: ContentType.Text,
                 content: 'List item for formatting demonstration'
             }
         ]
@@ -43,13 +40,13 @@ blockEditor.appendTo('#blockeditor');
 
 // Apply Bold Formatting
 document.getElementById('applyBoldBtn')?.addEventListener('click', () => {
-    blockEditor.executeToolbarAction(BuiltInToolbar.Bold);
+    blockEditor.executeToolbarAction(CommandName.Bold);
     displayOutput('Bold formatting applied to selected text');
 });
 
 // Apply Color Formatting
 document.getElementById('applyColorBtn')?.addEventListener('click', () => {
-    blockEditor.executeToolbarAction(BuiltInToolbar.Color, '#ff6b35');
+    blockEditor.executeToolbarAction(CommandName.Color, '#ff6b35');
     displayOutput('Orange color (#ff6b35) applied to selected text');
 });
 

@@ -2,7 +2,7 @@ import { BlockEditor, BlockModel, ContentType } from "@syncfusion/ej2-blockedito
 
 const blocksData: BlockModel[] = [
     {
-        type: 'Template',
+        blockType: 'Template',
         template: `<div class="notification-card">
             <div class="notification-header">
                 <span class="notification-icon">📢</span>

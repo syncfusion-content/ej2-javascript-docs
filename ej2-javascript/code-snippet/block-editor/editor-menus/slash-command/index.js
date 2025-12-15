@@ -2,47 +2,39 @@
 var blockEditor = new ej.blockeditor.BlockEditor({
     blocks: [
         {
-            id: 'demo-block',
-            type: 'Paragraph',
+            blockType: 'Paragraph',
             content: [
                 {
-                    type: ContentType.Text,
+                    contentType: ej.blockeditor.ContentType.Text,
                     content: 'Type "/" anywhere in this editor to open the custom slash command menu.'
                 }
             ]
         }
     ],
     // Slash Command Menu Configuration
-    commandMenu: {
+    commandMenuSettings: {
         popupWidth: '350px',
         popupHeight: '400px',
-        enableTooltip: false,
         // Custom command items
         commands: [
             {
                 id: 'line-cmd',
                 type: 'Divider',
-                groupHeader: 'Utility',
+                groupBy: 'Utility',
                 label: 'Insert a Line',
                 iconCss: 'e-icons e-divider',
             },
             {
                 id: 'timestamp-cmd',
-                groupHeader: 'Actions',
+                groupBy: 'Actions',
                 label: 'Insert Timestamp',
                 iconCss: 'e-icons e-schedule',
             }
         ],
-        itemClicked: (args) => {
+        itemSelect: (args) => {
             // Handle custom command actions
         },
-        open: (args) => {
-            // Your actions here
-        },
-        close: (args) => {
-            // Your actions here
-        },
-        queryFiltering: (args) => {
+        filtering: (args) => {
             // Your actions here
         }
     }

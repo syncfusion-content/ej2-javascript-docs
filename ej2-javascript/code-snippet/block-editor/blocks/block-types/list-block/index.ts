@@ -2,42 +2,42 @@ import { BlockEditor, BlockModel, ContentType } from "@syncfusion/ej2-blockedito
 
 const blocksData: BlockModel[] = [
     {
-        type: 'BulletList',
+        blockType: 'BulletList',
         content: [
             {
-                type: ContentType.Text,
+                contentType: ContentType.Text,
                 content: 'Features of the Block Editor'
             }
         ]
     },
     {
-        type: 'NumberedList',
+        blockType: 'NumberedList',
         content: [
             {
-                type: ContentType.Text,
+                contentType: ContentType.Text,
                 content: 'Step 1: Initialize the Block Editor'
             }
         ]
     },
     {
-        type: 'Checklist',
+        blockType: 'Checklist',
         content: [
             {
-                type: ContentType.Text,
+                contentType: ContentType.Text,
                 content: 'Review documentation'
             }
         ],
-       props:{isChecked: true}
+       properties:{isChecked: true}
     },
     {
-        type: 'Checklist',
+        blockType: 'Checklist',
         content: [
             {
-                type: ContentType.Text,
+                contentType: ContentType.Text,
                 content: 'Implement drag and drop functionality'
             }
         ],
-        props:{isChecked: false}
+        properties:{isChecked: false}
     }
 ];
 

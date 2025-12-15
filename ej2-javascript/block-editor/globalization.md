@@ -11,9 +11,11 @@ domainurl: ##DomainURL##
 
 # Globalization in ##Platform_Name## Block Editor control
 
+Globalization is the process of designing and developing applications that can adapt to different cultures and languages. The Syncfusion Block Editor control provides support for globalization, enabling it to serve users from diverse linguistic and cultural backgrounds.
+
 ## Localization
 
-The Block Editor can be localized to any culture by defining the text of the Block Editor in the corresponding culture. The default locale of the Block Editor is `en` (English). The following table represents the default text of the Block Editor in `en` culture.
+The Block Editor can be localized for any culture by translating its static text labels. The default locale is `en` (English). The following table lists the default text values for the `en` culture that can be translated.
 
 |KEY|Text|
 |----|----|
@@ -29,7 +31,7 @@ The Block Editor can be localized to any culture by defining the text of the Blo
 |`collapsibleHeading4`|Collapsible Heading 4|
 |`bulletList`|Add item|
 |`numberedList`|Add item|
-|`checkList`|Todo|
+|`checklist`|Todo|
 |`callout`|Write a callout|
 |`addIconTooltip`|Click to insert below|
 |`dragIconTooltipActionMenu`|Click to open|
@@ -78,7 +80,7 @@ The below example shows adding the German culture locale(`de-DE`)
 
 ## RTL
 
-RTL provides an option to switch the text direction and layout of the Block Editor control from right to left by setting the [enableRtl](../api/blockeditor/#enablertl) property to `true`.
+The Block Editor supports Right-to-Left (RTL) mode, which reverses the layout of the control to accommodate languages read from right to left, such as Arabic, Hebrew, and Persian. This feature can be enabled by setting the [enableRtl](../api/blockeditor#enablertl) property to `true`.
 
 {% if page.publishingplatform == "typescript" %}
 

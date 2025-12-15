@@ -3,31 +3,31 @@ import { BlockEditor, BlockModel, ContentType } from "@syncfusion/ej2-blockedito
 const blockData = [
     {
         id: 'block-1',
-        type: 'Heading',
-        props: { level: 1},
+        blockType: 'Heading',
+        properties: { level: 1},
         content: [
             {
-                type: ContentType.Text,
+                contentType: ContentType.Text,
                 content: 'Sample Heading'
             }
         ]
     },
     {
         id: 'block-2',
-        type: 'Paragraph',
+        blockType: 'Paragraph',
         content: [
             {
-                type: ContentType.Text,
+                contentType: ContentType.Text,
                 content: 'This is a sample paragraph block.'
             }
         ]
     },
     {
         id: 'block-3',
-        type: 'Paragraph',
+        blockType: 'Paragraph',
         content: [
             {
-                type: ContentType.Text,
+                contentType: ContentType.Text,
                 content: 'This is another paragraph block.'
             }
         ]
@@ -45,10 +45,10 @@ blockEditor.appendTo('#blockeditor');
 (document.getElementById('addBlockBtn') as HTMLElement).addEventListener('click', () => {
     const newBlock: BlockModel = {
         id: 'new-block',
-        type: 'Paragraph',
+        blockType: 'Paragraph',
         content: [
             {
-                type: ContentType.Text,
+                contentType: ContentType.Text,
                 content: 'This is a newly added block'
             }
         ]

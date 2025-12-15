@@ -1,31 +1,31 @@
 var blockData = [
     {
         id: 'block-1',
-        type: 'Heading',
-        props: { level: 1},
+        blockType: 'Heading',
+        properties: { level: 1},
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'Sample Heading'
             }
         ]
     },
     {
         id: 'block-2',
-        type: 'Paragraph',
+        blockType: 'Paragraph',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'This is a sample paragraph block.'
             }
         ]
     },
     {
         id: 'block-3',
-        type: 'Paragraph',
+        blockType: 'Paragraph',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'This is another paragraph block.'
             }
         ]
@@ -43,10 +43,10 @@ blockEditor.appendTo('#blockeditor');
 (document.getElementById('addBlockBtn')).addEventListener('click', () => {
     var newBlock = {
         id: 'new-block',
-        type: 'Paragraph',
+        blockType: 'Paragraph',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'This is a newly added block'
             }
         ]
@@ -66,7 +66,7 @@ blockEditor.appendTo('#blockeditor');
 (document.getElementById('getBlockBtn')).addEventListener('click', () => {
     var block = blockEditor.getBlock('block-1');
     if (block && block.content) {
-        displayOutput(`Block found:\nID: ${block.id}\nType: ${block.type}\nContent: ${block.content[0].content}`);
+        displayOutput(`Block found:\nID: ${block.id}\nType: ${block.blockType}\nContent: ${block.content[0].content}`);
     } else {
         displayOutput('Block with ID "block-1" not found');
     }

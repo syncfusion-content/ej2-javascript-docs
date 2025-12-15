@@ -11,28 +11,28 @@ domainurl: ##DomainURL##
 
 # Typography Blocks in ##Platform_Name## Block Editor control
 
-Typography blocks are essential for organizing and presenting text-based content in your documents. The BlockEditor component supports various structural blocks—such as Paragraph, Heading, Collapsible Block, Divider, Quote, and Callout to help you format and structure content effectively.
+Typography blocks are essential for organizing and presenting text-based content. The Block Editor control supports various structural blocks—such as Paragraph, Heading, Collapsible (CollapsibleParagraph and CollapsibleHeading), Divider, Quote, and Callout—to help you format and structure content effectively.
 
 ## Configure paragraph block
 
-You can render Paragraph blocks by setting the [type](../api/blockeditor/blockModel/#type) property as `Paragraph`. Paragraph blocks are the most common type, used for regular text content. They provide standard text formatting options and serve as the default block type.
+Paragraph blocks are the most common type, used for standard text content. They serve as the default block type and provide basic text formatting options. To render a Paragraph block, set the [blockType](../api/blockeditor/blockModel#blockType) property to `Paragraph`.
 
-### Type 
+### BlockType  
 
 ```typescript
 // Adding paragraph block
 {
-    type: 'Paragraph',
+    blockType: 'Paragraph',
     content: [
         {
-            type: 'Text',
+            contentType: 'Text',
             content: 'This is a paragraph block example.'
         }
     ]
 }
 ```
 
-The below sample demonstrates the configuration of paragraph block in the Block Editor.
+The following sample demonstrates the configuration of a paragraph block in the Block Editor.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -63,15 +63,15 @@ The below sample demonstrates the configuration of paragraph block in the Block 
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the [placeholder](../api/blockeditor/blockModel/#placeholder) property. This text appears when the block is empty. The default placeholder for the paragraph block is `Write something or ‘/’ for commands.`.
+You can configure placeholder text for block using the [placeholder](../api/blockeditor/blockModel#placeholder) property. This text appears when the block is empty. The default placeholder for the paragraph block is `Write something or ‘/’ for commands.`.
 
-### Type & Props
+### BlockType & Properties
 
 ```typescript
 // Adding placeholder
  {
-    type: 'Paragraph',
-    props: {placeholder: 'Start typing ...'}
+    blockType: 'Paragraph',
+    properties: {placeholder: 'Start typing ...'}
 }
 ```
 
@@ -107,31 +107,30 @@ The below sample demonstrates the configuration of placeholder in the Block Edit
 
 ## Configure heading block
 
-You can render Heading blocks by setting the [type](../api/blockeditor/blockModel/#type) property as `Heading`. Heading blocks are used to create document titles and section headers of varying importance. These blocks help structure your content hierarchically, making it easier to read and navigate.
+Heading blocks create document titles and section headers. These blocks help structure content hierarchically, making it easier to read and navigate. Render a Heading block by setting the [blockType](../api/blockeditor/blockModel#blockType) property to `Heading`.
 
-### Configure levels
+### Configuring Levels
 
-You can configure the heading blocks using the property `level`.
-The heading level representing a title `level: 1`, heading `level: 2`, subheading `level: 3` and a subsection by `level: 4`.
+By using the [properties](../api/blockeditor/blockModel#properties), you can set the heading level using the `level` property, with `1` being the highest level (title) and `4` being the lowest (subsection).
 
-### Type & Props
+### BlockType & Properties
 
 ```typescript
 // Adding heading block
 {
-    type: 'Heading',
-    props: { level: 1 },
+    blockType: 'Heading',
+    properties: { level: 1 },
     // levels range from 1 to 4
     content: [
         {
-            type: 'Text',
+            contentType: 'Text',
             content: 'This is a heading block example.'
         }
     ]
 }
 ```
 
-The below sample demonstrates the configuration of heading block in the Block Editor.
+The following sample demonstrates the configuration of a heading block in the Block Editor.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -162,13 +161,13 @@ The below sample demonstrates the configuration of heading block in the Block Ed
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the [placeholder](../api/blockeditor/blockModel/#placeholder) property. This text appears when the block is empty. The default placeholder for heading block is `Heading{levels}`.
+You can configure placeholder text for block using the [placeholder](../api/blockeditor/blockModel#placeholder) property. This text appears when the block is empty. The default placeholder for heading block is `Heading{level}`.
 
 ```typescript
 // Adding placeholder value to blocktype
 {
-    type: 'Heading',
-    props: { 
+    blockType: 'Heading',
+    properties: { 
         level: 1,
         placeholder: 'Heading1'
     }
@@ -177,29 +176,34 @@ You can configure placeholder text for block using the [placeholder](../api/bloc
 
 ## Configure collapsible blocks
 
-You can render Collapsible blocks by setting the [type](../api/blockeditor/blockModel/#type) property as `CollapsibleParagraph` or `CollapsibleHeading`. Collapsible blocks allow users to expand or collapse sections, providing a way to hide or show content as needed.
+You can render Collapsible blocks by setting the [blockType](../api/blockeditor/blockModel#blockType) property as `CollapsibleParagraph` or `CollapsibleHeading`. Collapsible blocks allow users to expand or collapse sections, providing a way to hide or show content as needed.
 
 ### Configure levels
 
-You can configure the CollapsibleHeading using the property `level` inside the `props` property . The levels can be varied from `level: 1` to `level: 4`.
+You can configure the CollapsibleHeading using the property `level` inside the `properties` property . The levels can be varied from `level: 1` to `level: 4`.
 
 ### Configure children
 
-The Block Editor supports hierarchical content structures through the [children](../api/blockeditor/blockModel/#children) property. This property can be achieved through `props` property that allows you to create nested blocks, which is applicable only for Callout and Collapsible blocks.
+The Block Editor supports hierarchical content structures through the [children](../api/blockeditor/blockModel#children) property. This can be achieved by using the `properties` property that allows you to create nested blocks, which is applicable only for `Callout` and `Collapsible` blocks.
 
 Child blocks can be configured with all the same properties as top-level blocks.
 
+### Configure parent id
+To establish a clear parent-child relationship, the [parentId](../api/blockeditor/blockModel#parentid) of each child block must match the [id](../api/blockeditor/blockModel#id) of its parent block.
+
+This structure is essential for maintaining nested relationships within the editor.
+
 ### Configure expanded state
 
-You can control whether a block is expanded or collapsed using the [isExpanded](../api/blockeditor/blockModel/#isexpanded) property. By default, this property is set to `false`, meaning the block will be collapsed initially. This setting is only applicable to Collapsible blocks.
+You can control whether a block is expanded or collapsed using the [isExpanded](../api/blockeditor/blockModel#isExpanded) property. By default, this property is set to `false`, meaning the block will be collapsed initially. This setting is only applicable to `Collapsible` blocks.
 
-### Type & Props
+### BlockType & Properties
 
 ```typescript
 // Configuring CollapsibleHeading block
 {
-    type: 'CollapsibleHeading',
-    props:{
+    blockType: 'CollapsibleHeading',
+    properties:{
         level: 1, //level varies from 1 to 4
         isExpanded: true,
         children: [
@@ -211,8 +215,8 @@ You can control whether a block is expanded or collapsed using the [isExpanded](
 }
 // Configuring CollapsibleParagraph block
 {
-    type: 'CollapsibleParagraph',
-    props:{
+    blockType: 'CollapsibleParagraph',
+    properties:{
         children: [
             {
                //your content to be here..
@@ -222,7 +226,7 @@ You can control whether a block is expanded or collapsed using the [isExpanded](
 }
 ```
 
-The below sample demonstrates the configuration of collapsibleHeading and collapsibleParagraph blocks in the Block Editor.
+This example shows how to configure `CollapsibleHeading` and `CollapsibleParagraph` blocks.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -253,54 +257,54 @@ The below sample demonstrates the configuration of collapsibleHeading and collap
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the [placeholder](../api/blockeditor/blockModel/#placeholder) property. This text appears when the block is empty. The default placeholder for collapsible heading and collapsible paragraph is `Collapsible Heading{levels}` and `Collapsible Paragraph` respectively.
+You can configure placeholder text for block using the [placeholder](../api/blockeditor/blockModel#placeholder) property. This text appears when the block is empty. The default placeholder for collapsible heading and collapsible paragraph is `Collapsible Heading{level}` and `Collapsible Paragraph` respectively.
 
 ```typescript
 // Adding placeholder value to collapsible heading
 {
-    type: 'CollapsibleHeading',
-    props: {
+    blockType: 'CollapsibleHeading',
+    properties: {
         level: 2,
         placeholder: 'Heading block'
     }
 }
 //Adding placeholder value for collapsible paragraph
 {
-    type: 'CollapsibleParagraph',
-    props: { placeholder: 'Collapsible Paragraph'}
+    blockType: 'CollapsibleParagraph',
+    properties: { placeholder: 'Collapsible Paragraph'}
 }
 ```
 
 ## Configure divider block
 
-Divider blocks insert horizontal lines that separate different sections of content. You can render Divider blocks by setting the [type](../api/blockeditor/blockModel/#type) property as `Divider`.
+A Divider block inserts a horizontal line to separate content. Render it by setting the [blockType](../api/blockeditor/blockModel#blockType) to `Divider`.
 
-### Type & Props
+### BlockType & Properties
 
 ```typescript
 // Adding divider block
 {
     {
-        type: 'Paragraph',
+        blockType: 'Paragraph',
         content: [
-            type: 'Text',
+            contentType: 'Text',
             content: 'This is a paragraph 1.'
         ]
     },
     {
-        type: 'Divider' 
+        blockType: 'Divider' 
     },
     {
-        type: 'Paragraph',
+        blockType: 'Paragraph',
         content: [
-            type: 'Text',
+            contentType: 'Text',
             content: 'This is a paragraph 1.'
         ]
     }
 }
 ```
 
-The below sample demonstrates the configuration of divider block in the Block Editor.
+This sample shows how to place a divider between two blocks.
 
 
 {% if page.publishingplatform == "typescript" %}
@@ -332,22 +336,21 @@ The below sample demonstrates the configuration of divider block in the Block Ed
 
 ## Configure quote block
 
-You can render Quote blocks by setting the [type](../api/blockeditor/blockModel/#type) property as `Quote`. Quote blocks are specially styled for quotations or excerpts.
+Quote blocks are styled for displaying quotations or excerpts. Render a Quote block by setting the [blockType](../api/blockeditor/blockModel#blockType) to `Quote`.
 
-### Type & Props
+### BlockType & Properties
 
 ```typescript
 // Adding quote block
 {
-    type: 'Quote',
+    blockType: 'Quote',
     content: [
-        type: 'Text',
+        contentType: 'Text',
         content: ''
     ]
 }
 ```
-
-The below sample demonstrates the configuration of quote block in the Block Editor.
+The following sample shows how to configure a quote block.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -378,31 +381,31 @@ The below sample demonstrates the configuration of quote block in the Block Edit
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the [placeholder](../api/blockeditor/blockModel/#placeholder) property. This text appears when the block is empty. The default placeholder for quote block is `Write a quote`.
+You can configure placeholder text for block using the [placeholder](../api/blockeditor/blockModel#placeholder) property. This text appears when the block is empty. The default placeholder for quote block is `Write a quote`.
 
 ```typescript
 // Adding placeholder value to blocktype
 {
-    type: 'Quote',
-    props: { placeholder: 'Quote'}
+    blockType: 'Quote',
+    properties: { placeholder: 'Quote'}
 }
 ```
 
 ## Configure callout block
 
-You can render Callout blocks by setting the [type](../api/blockeditor/blockModel/#type) property as `Callout`. They're useful for notes, warnings, or tips that require special attention.
+Callout blocks highlight important information such as notes, warnings, or tips. Render one by setting the [blockType](../api/blockeditor/blockModel#blockType) to `Callout`.
 
-### Type & Props
+### BlockType & Properties
 
 ```typescript
 // Adding callout block
- {
-    type: 'Callout',
-    props:{
+  {
+    blockType: 'Callout',
+    properties:{
         children: [{ 
-            type: 'Paragraph',
+            blockType: 'Paragraph',
             content: [{
-                type: 'Text',
+                contentType: 'Text',
                 content: 'Important information: This is a callout block used to highlight important content.'
             }]
         }]
@@ -410,7 +413,7 @@ You can render Callout blocks by setting the [type](../api/blockeditor/blockMode
  }
 ```
 
-The below sample demonstrates the configuration of callout block in the Block Editor.
+The following sample adds a callout block to the editor.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -441,15 +444,15 @@ The below sample demonstrates the configuration of callout block in the Block Ed
 
 ### Configure children
 
-The Block Editor supports hierarchical content structures through the [children](../api/blockeditor/blockModel/#children) property. This property allows you to create nested blocks, which is applicable only for Callout and Collapsible blocks.
+The Block Editor supports hierarchical content structures through the [children](../api/blockeditor/blockModel#children) property. This can be achieved by using the `properties` property that allows you to create nested blocks, which is applicable only for `Callout` and `Collapsible` blocks.
 
 Child blocks can be configured with all the same properties as top-level blocks.
 
 ### Configure parent id
 
-For proper hierarchy, you should ensure that the [parentId](../api/blockeditor/blockModel/#parentid) of each child block matches the [id](../api/blockeditor/blockModel/#id) of its parent block. This structure helps maintain the nested relationships within the editor.
+To establish a clear parent-child relationship, the [parentId](../api/blockeditor/blockModel#parentid) of each child block must match the [id](../api/blockeditor/blockModel#id) of its parent block.
 
-The below sample demonstrates the configuration of children in the Block Editor using parentId.
+This structure is essential for maintaining nested relationships within the editor. The following sample demonstrates how to create a nested hierarchy.
 
 {% if page.publishingplatform == "typescript" %}
 

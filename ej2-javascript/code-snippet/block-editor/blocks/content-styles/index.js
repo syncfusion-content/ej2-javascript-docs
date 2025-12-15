@@ -1,21 +1,21 @@
 let blocksData = [
     {
-        type: 'Heading',
-        props: { level: 2},
+        blockType: 'Heading',
+        properties: { level: 2},
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'Content Styling Options'
             }
         ]
     },
     {
-        type: 'Paragraph',
+        blockType: 'Paragraph',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'Bold text: ',
-                props:{
+                properties:{
                 styles: { 
                     bold: true,
                     color: '#1976d2'
@@ -23,9 +23,9 @@ let blocksData = [
             }
             },
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'This text is bold.',
-                props:{
+                properties:{
                 styles: { 
                     bold: true 
                 }
@@ -34,12 +34,12 @@ let blocksData = [
         ]
     },
     {
-        type: 'Paragraph',
+        blockType: 'Paragraph',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'Italic text: ',
-                props:{
+                properties:{
                 styles: { 
                     bold: true,
                     color: '#1976d2'
@@ -47,9 +47,9 @@ let blocksData = [
             }
             },
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'This text is italicized.',
-                props:{
+                properties:{
                 styles: { 
                     italic: true 
                 }
@@ -58,12 +58,12 @@ let blocksData = [
         ]
     },
     {
-        type: 'Paragraph',
+        blockType: 'Paragraph',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'Text with color: ',
-                props:{
+                properties:{
                 styles: { 
                     bold: true,
                     color: '#1976d2'
@@ -71,9 +71,9 @@ let blocksData = [
             }
             },
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'This text has custom color.',
-                props:{
+                properties:{
                 styles: { 
                     color: '#e91e63' 
                 }
@@ -82,12 +82,12 @@ let blocksData = [
         ]
     },
     {
-        type: 'Paragraph',
+        blockType: 'Paragraph',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'Text with background: ',
-                props:{
+                properties:{
                 styles: { 
                     bold: true,
                     color: '#1976d2'
@@ -95,23 +95,23 @@ let blocksData = [
             }
             },
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'This text has background color.',
-                props:{
+                properties:{
                 styles: { 
-                    bgColor: '#fff9c4' 
+                    backgroundColor: '#fff9c4' 
                 }
             }
             }
         ]
     },
     {
-        type: 'Paragraph',
+        blockType: 'Paragraph',
         content: [
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'Multiple styles: ',
-                props:{
+                properties:{
                 styles: { 
                     bold: true,
                     color: '#1976d2'
@@ -119,9 +119,9 @@ let blocksData = [
             }
             },
             {
-                type: ej.blockeditor.ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'This text combines multiple styles.',
-                props:{
+                properties:{
                 styles: { 
                     bold: true,
                     italic: true,

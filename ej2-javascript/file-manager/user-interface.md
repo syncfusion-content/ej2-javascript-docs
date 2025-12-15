@@ -85,3 +85,11 @@ The context menu can be customized using [`contextMenuSettings`](../api/file-man
 *Refer to the [Context Menu](./file-operations/#context-menu) section in file operations to learn more about the menu items present in the context menu*.
 
 ![Context Menu](./images/contextmenu.png)
+
+### Upload Files or Folders via context menu
+
+File Manager control allows to perform the files or folder [upload](https://ej2.syncfusion.com/javascript/documentation/file-manager/file-operations#upload) operations with the help of Context Menu items by switching between the Files or Folder from Upload menu item.
+
+![Uploading a file](./images/filemanager-fileupload.png)
+
+![Uploading a folder](./images/filemanager-folderupload.png)

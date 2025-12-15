@@ -58,6 +58,49 @@ When set to `true`, this property enables directory upload in the File Manager, 
 
 To learn more about folder upload actions, refer to this [link](https://ej2.syncfusion.com/documentation/file-manager/file-operations#folder-upload-support)
 
+## Sequential Upload
+
+The [`sequentialUpload`](../api/file-manager/uploadSettingsModel/#sequentialupload) property controls whether users can upload files one by one in a sequential manner.
+
+To enable sequential upload, set the [`sequentialUpload`](../api/file-manager/uploadSettingsModel/#sequentialupload) property to `true` in the [`uploadSettings`](../api/file-manager/#uploadsettings) configuration.
+
+When set to `true`, the selected files will process sequentially (one after the other) to the server. If the file uploaded successfully or failed, the next file will upload automatically in this sequential upload. This feature helps to reduce the upload traffic and reduce the failure of file upload.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/file-manager/sequential-upload/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/file-manager/sequential-upload/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/sequential-upload/index.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/file-manager/sequential-upload" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/file-manager/sequential-upload/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/file-manager/sequential-upload/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/file-manager/sequential-upload/index.css %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/file-manager/sequential-upload" %}
+{% endif %}
+
+To learn more about folder upload actions, refer to this [link](https://ej2.syncfusion.com/documentation/file-manager/file-operations#folder-upload-support)
+
 ## Chunk Upload
 
 The [`chunkSize`](../api/file-manager/uploadSettingsModel/#chunksize) property specifies the size of each chunk when uploading large files. It divides the file into smaller parts, which are uploaded sequentially to the server.

@@ -277,3 +277,30 @@ Provide a custom UI for previewing selected files using [previewTemplate](../api
 ### Customizing the attachments
 
 Control how attachments appear inside message bubbles with [attachmentTemplate](../api/chat-ui/attachmentSettings#attachmenttemplate). Use this to tailor the display of images, documents, or custom file types once the message is posted.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chat-ui/file-attachments/template/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chat-ui/file-attachments/template/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chat-ui/file-attachments/template" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chat-ui/file-attachments/template/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chat-ui/file-attachments/template/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chat-ui/file-attachments/template" %}
+{% endif %}

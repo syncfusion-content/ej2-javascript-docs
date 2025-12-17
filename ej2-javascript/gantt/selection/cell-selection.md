@@ -134,3 +134,7 @@ While selecting a cell in Gantt, the [`cellSelecting`](../../api/gantt/#cellsele
 
 {% previewsample "page.domainurl/code-snippet/gantt/selection-cs3" %}
 {% endif %}
+
+## Limitations for cell selection
+
+* Cell-based selection is not supported when virtualization is enabled.

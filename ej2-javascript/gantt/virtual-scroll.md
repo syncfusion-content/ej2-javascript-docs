@@ -115,7 +115,7 @@ While enabling virtual scroll you can get the filtered or sorted record count us
 ## Limitations for virtual vcroll
 
 * Due to the element height limitation in browsers, the maximum number of records loaded is limited by the browser capacity.
-* Cell selection will not be persisted.
+* Cell selection is not persisted due to on-demand rendering.
 * The number of records rendered will be determined by the `height` property.
 * It is necessary to mention the height of the Gantt in pixels when enabling Virtual Scrolling.
 * Virtual Scroll does not support Multi Taskbar support in Resource View.

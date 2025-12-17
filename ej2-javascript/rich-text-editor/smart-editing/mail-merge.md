@@ -3,12 +3,12 @@ layout: post
 title: Mail Merge in ##Platform_Name## Rich Text Editor Control | Syncfusion
 description: Learn all about Mail Merge in the Syncfusion ##Platform_Name## Rich Text Editor control, part of Essential JS 2.
 platform: ej2-javascript
-control: Mail Merge
+control: Mail Merge 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
- 
+
 # Mail merge in ##Platform_Name## Rich Text Editor Control
 
 The Rich Text Editor can be customized to implement **Mail Merge** functionality by inserting placeholders into the editor using custom toolbar items. These placeholders are later replaced with actual data to generate personalized content such as letters, invoices, and reports.
@@ -288,7 +288,7 @@ function replacePlaceholders(template, data) {
 {% include code-snippet/rich-text-editor/mail-merge/index.html %}
 {% endhighlight %}
 {% endtabs %}
-
+       
 {% previewsample "page.domainurl/code-snippet/rich-text-editor/mail-merge-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}

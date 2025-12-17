@@ -109,7 +109,7 @@ The below html code example shows the minimal dependency of chart.
 
 ```html
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+	<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>Essential JS 2 Chart</title>
     <!-- Include Essential JS 2 other component's script based on features used -->
@@ -145,6 +145,7 @@ The below html code example shows the minimal dependency of chart.
   </head>
   <body></body>
 </html>
+
 ```
 
 ## Adding Chart control

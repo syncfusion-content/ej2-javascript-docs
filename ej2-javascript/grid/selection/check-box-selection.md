@@ -83,7 +83,7 @@ In the following example, it demonstrates how to dynamically enable and change t
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs160" %}
 {% endif %}
 
-## Hide selectall checkbox in column header 
+## Hide select-all checkbox in column header 
 
 You can hide the select all checkbox in the column header of the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. This is a useful feature in various scenarios where you want to customize the appearance and behavior of the checkboxes within the grid.
 
@@ -118,46 +118,13 @@ Here's an example of how to hide selectall checkbox in column header using empty
 {% previewsample "page.domainurl/code-snippet/grid/hide-checkbox-cs1" %}
 {% endif %}
 
-## Prevent specific rows from being selected in checkbox selection
+## Conditional row selection
 
-The checkbox selection mode allows you to select rows either by clicking on checkboxes or by clicking on the rows themselves. However, there might be scenarios where you want to prevent specific rows from being selected based on certain conditions or business requirements.
+The `isRowSelectable` callback determines which rows in the Data Grid can be selected. It evaluates each row's data and returns **true** for rows that should be selectable and **false** for those that should not.
 
-To achieve this, you can use the [rowDataBound](../../api/grid#rowdatabound) event of the Grid. The `rowDataBound` event is triggered for each row after it is bound to the data source. In this event, you can check the row data and determine whether the row should be selectable or not. If you want to prevent the row from being selected, you can set the [isSelectable](../../api/grid/rowDataBoundEventArgs#isselectable) argument of the event to **false**.
+**Local data:**   The callback runs once when the grid initializes and evaluates all records because the full dataset is already available on the client.
 
-In the following sample, the selection of specific rows has been prevented based on the `isSelectable` argument in the `rowDataBound` event.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid/grid-cs161/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid/grid-cs161/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs161" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid/grid-cs161/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid/grid-cs161/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs161" %}
-{% endif %}
-
-## Partial selection using isRowSelectable
-
-The `isRowSelectable` callback in Syncfusion's EJ2 Grid allows control over which rows users can select. It uses a simple callback that runs before the grid loads the data. This callback checks each row data and returns **true** if the row can be selected, or **false** for non-selectable rows.
-
-For local data, the callback checks all items just once when the grid first loads. For remote data, it only checks the rows shown on the current page when the grid first appears. It re-checks them every time an action occurs, such as changing pages, filtering, or sorting.
+**Remote data:**   The callback runs only for the rows displayed on the current page when the grid first loads. It runs again whenever the grid fetches new data such as during paging, filtering, or sorting to re-evaluate the newly visible rows.
 
 In the example below, it prevents selection of rows with canceled orders.
 
@@ -188,9 +155,9 @@ In the example below, it prevents selection of rows with canceled orders.
 {% previewsample "page.domainurl/code-snippet/grid/prevent-checkbox-selection" %}
 {% endif %}
 
-## How to select single row in checkbox selection mode
+## Select single row in checkbox selection mode
 
-The ##Platform_Name## Grid allows you to select only one row at a time within the Grid. This feature is particularly useful when you want to ensure that only a single row is selected, and any previous selections are cleared when a new row is selected.
+The Data Grid allows you to select only one row at a time within the Grid. This feature is particularly useful when you want to ensure that only a single row is selected, and any previous selections are cleared when a new row is selected.
 
 To achieve single-row selection in checkbox selection mode within the Grid, you can handle the [rowSelecting](../../api/grid#rowselecting) event and use the [clearSelection](../../api/grid#clearselection) method to clear any previous selections before selecting a new row. This ensures that only one row is selected at a time, and any prior selections are deselected when a new row is chosen.
 

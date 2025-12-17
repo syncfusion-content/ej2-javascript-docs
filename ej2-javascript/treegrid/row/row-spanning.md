@@ -57,7 +57,7 @@ Row spanning in the TreeGrid has the following limitations:
 
 The Syncfusion TreeGrid provides an API-based approach to vertically merge cells with identical values in the same column across consecutive rows.
 
-The row spanning feature in the Syncfusion Angular TreeGrid can be enabled using `enableRowSpan` property to **true** in the TreeGrid configuration, which significantly enhances readability and delivers a cleaner layout by eliminating repetitive data in columns such as "Status", "Permit Status", "Inspection Status" and "Punch List Status".
+The row spanning feature in the Syncfusion TreeGrid can be enabled using `enableRowSpan` property to **true** in the TreeGrid configuration, which significantly enhances readability and delivers a cleaner layout by eliminating repetitive data in columns such as "Status", "Permit Status", "Inspection Status" and "Punch List Status".
 
 {% if page.publishingplatform == "typescript" %}
 

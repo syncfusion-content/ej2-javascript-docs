@@ -1,8 +1,10 @@
 
 
-import { PivotView, IDataSet } from '@syncfusion/ej2-pivotview';
+import { PivotView, IDataSet, ExcelExport} from '@syncfusion/ej2-pivotview';
 import { Button } from '@syncfusion/ej2-buttons';
 import { pivotData } from './datasource.ts';
+
+PivotView.Inject(ExcelExport);
 
 let pivotTableObj: PivotView = new PivotView({
     dataSourceSettings: {
@@ -26,6 +28,3 @@ exportBtn.appendTo('#excel');
 document.getElementById('excel').onclick = function () {
     pivotTableObj.excelExport();
 }
-
-
-

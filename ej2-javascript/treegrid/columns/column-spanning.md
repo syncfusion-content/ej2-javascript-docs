@@ -55,7 +55,7 @@ Column spanning in the TreeGrid has the following limitations:
 
 ## Column spanning implementation through API
 
-The Syncfusion TreeGrid provides an API-based approach to vertically merge cells with identical values in the same column across consecutive rows.
+The Syncfusion TreeGrid provides an API-based approach to horizontally merge cells with identical values in the same row across adjacent columns.
 
 The column spanning feature in the Syncfusion TreeGrid can be enabled using `enableColumnSpan` property to **true** in the TreeGrid configuration, which significantly enhances readability and delivers a cleaner layout by eliminating repetitive data in columns such as "Status", "Permit Status", "Inspection Status" and "Punch List Status".
 

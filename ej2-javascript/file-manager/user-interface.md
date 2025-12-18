@@ -35,7 +35,7 @@ The `Toolbar` provides easy access to the file operations using different button
 
 If the toolbar items exceed the available space, they will be moved to a toolbar popup accessible via a dropdown button at the end of the toolbar.
 
-*Refer to the [Toolbar](./file-operations/#toolbar) section in file operations to learn more about the buttons present in the toolbar*.
+*Refer to the [Toolbar](./file-operations#toolbar) section in file operations to learn more about the buttons present in the toolbar*.
 
 ![Toolbar](./images/toolbar.png)
 
@@ -48,7 +48,11 @@ The File Manager provides navigation between files and folders using the followi
 
 ### Navigation pane
 
-The Navigation Pane is an injectable module, so it should be injected before rendering the File Manager to use its functionality. It displays the folder hierarchy of the file system and provides easy navigation to the desired folder. Using [`navigationPaneSettings`](../api/file-manager/#navigationpanesettings), the minimum and maximum width of the Navigation Pane can be changed. The Navigation Pane can be shown or hidden using the `visible` option in the [`navigationPaneSettings`](../api/file-manager/#navigationpanesettings).
+The Navigation Pane is an injectable module, so it should be injected before rendering the File Manager to use its functionality. It displays the folder hierarchy of the file system and provides easy navigation to the desired folder. Using [`navigationPaneSettings`](../api/file-manager/index-default#navigationpanesettings), the minimum and maximum width of the Navigation Pane can be changed. The Navigation Pane can be shown or hidden using the `visible` option in the [`navigationPaneSettings`](../api/file-manager/index-default#navigationpanesettings).
+
+You can customize the appearance of the navigation pane by using the `navigationPaneTemplate` property. This enables you to modify icons, display text, and include additional elements to suit your application's requirements.
+
+![Navigation Pane Template Output](./images/navigationpane-template.png)
 
 ### BreadCrumb
 
@@ -62,7 +66,7 @@ View is the section where the files and folders are displayed for the user to br
 * [Large Icons View](#large-icons-view)
 * [Details View](#details-view)
 
-The `large icons view` is the default starting view in the File Manager. The view can be changed by using the [toolbar](#toolbar) view button or the view menu in the [context menu](#context-menu). The [`view`](../api/file-manager/#view) API can also be used to change the initial view of the File Manager.
+The `large icons view` is the default starting view in the File Manager. The view can be changed by using the [toolbar](#toolbar) view button or the view menu in the [context menu](#context-menu). The [`view`](../api/file-manager/index-default#view) API can also be used to change the initial view of the File Manager.
 
 ### Large icons view
 
@@ -70,9 +74,13 @@ In the large icons view, the thumbnail icons are shown in a larger size, which d
 
 ![LargeIconView](./images/largeiconsview.png)
 
+The `largeIconsTemplate` property enables complete customization of how folders and files are rendered in the `Large Icons View`. It allows you to enhance the layout by adding background images, custom file-type icons, and actions such as dropdown menus.
+
+![Large Icon View Template Output](./images/large-icons-view-template.png)
+
 ### Details view
 
-Details View is an injectable module in the File Manager, so it should be injected before rendering the File Manager to use its functionality. In the Details View, the files are displayed in a sorted list order. This file list comprises several columns of information about the files such as **Name**, **Date Modified**, **Type**, and **Size**. Each file has its own small icon representing the file type. Additional columns can be added using the [`detailsViewSettings`](../api/file-manager/#detailsviewsettings) API. The Details View allows you to perform sorting using the column header.
+Details View is an injectable module in the File Manager, so it should be injected before rendering the File Manager to use its functionality. In the Details View, the files are displayed in a sorted list order. This file list comprises several columns of information about the files such as **Name**, **Date Modified**, **Type**, and **Size**. Each file has its own small icon representing the file type. Additional columns can be added using the [`detailsViewSettings`](../api/file-manager/index-default#detailsviewsettings) API. The Details View allows you to perform sorting using the column header.
 
 ![DetailsView](./images/detailsview.png)
 
@@ -80,8 +88,16 @@ Details View is an injectable module in the File Manager, so it should be inject
 
 The context menu appears on user interactions such as right-clicks. The File Manager is provided with context menu support to perform a list of file operations with the files and folders. The context menu appears with varying menu items based on the targets such as file, folder (including navigation pane folders), and layout (empty area in view).
 
-The context menu can be customized using [`contextMenuSettings`](../api/file-manager/#contextmenusettings), [`menuOpen`](../api/file-manager/#menuopen), and [`menuClick`](../api/file-manager/#menuclick) events.
+The context menu can be customized using [`contextMenuSettings`](../api/file-manager/index-default#contextmenusettings), [`menuOpen`](../api/file-manager/index-default#menuopen), and [`menuClick`](../api/file-manager/index-default#menuclick) events.
 
-*Refer to the [Context Menu](./file-operations/#context-menu) section in file operations to learn more about the menu items present in the context menu*.
+*Refer to the [Context Menu](./file-operations#context-menu) section in file operations to learn more about the menu items present in the context menu*.
 
 ![Context Menu](./images/contextmenu.png)
+
+### Upload Files or Folders via context menu
+
+File Manager control allows to perform the files or folder [upload](https://ej2.syncfusion.com/javascript/documentation/file-manager/file-operations#upload) operations with the help of Context Menu items by switching between the Files or Folder from Upload menu item.
+
+![Uploading a file](./images/filemanager-fileupload.png)
+
+![Uploading a folder](./images/filemanager-folderupload.png)

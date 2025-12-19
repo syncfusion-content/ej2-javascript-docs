@@ -23,10 +23,10 @@ The following example pins rows with "Critical" priority and "Open" status at th
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/javascript/grid/rows-pinning-cs1/index.ts %}
+{% include code-snippet/grid/rows-pinning-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/javascript/grid/rows-pinning-cs1/index.html %}
+{% include code-snippet/grid/rows-pinning-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -36,10 +36,10 @@ The following example pins rows with "Critical" priority and "Open" status at th
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/javascript/grid/rows-pinning-cs1/index.js %}
+{% include code-snippet/grid/rows-pinning-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/javascript/grid/rows-pinning-cs1/index.html %}
+{% include code-snippet/grid/rows-pinning-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -56,10 +56,10 @@ Row pinning in the Grid control keeps important rows visible at the top while na
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/javascript/grid/rows-pinning-cs2/index.ts %}
+{% include code-snippet/grid/rows-pinning-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/javascript/grid/rows-pinning-cs2/index.html %}
+{% include code-snippet/grid/rows-pinning-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -69,10 +69,10 @@ Row pinning in the Grid control keeps important rows visible at the top while na
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/javascript/grid/rows-pinning-cs2/index.js %}
+{% include code-snippet/grid/rows-pinning-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/javascript/grid/rows-pinning-cs2/index.html %}
+{% include code-snippet/grid/rows-pinning-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -87,10 +87,10 @@ Pinned rows can be selected in the same way as regular rows. Their selection sta
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/javascript/grid/rows-pinning-cs4/index.ts %}
+{% include code-snippet/grid/rows-pinning-cs4/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/javascript/grid/rows-pinning-cs4/index.html %}
+{% include code-snippet/grid/rows-pinning-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -100,10 +100,10 @@ Pinned rows can be selected in the same way as regular rows. Their selection sta
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/javascript/grid/rows-pinning-cs4/index.js %}
+{% include code-snippet/grid/rows-pinning-cs4/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/javascript/grid/rows-pinning-cs4/index.html %}
+{% include code-snippet/grid/rows-pinning-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -122,10 +122,10 @@ When sorting is applied to any column, pinned rows are reordered using the same 
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/javascript/grid/rows-pinning-cs3/index.ts %}
+{% include code-snippet/grid/rows-pinning-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/javascript/grid/rows-pinning-cs3/index.html %}
+{% include code-snippet/grid/rows-pinning-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -135,10 +135,10 @@ When sorting is applied to any column, pinned rows are reordered using the same 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/javascript/grid/rows-pinning-cs3/index.js %}
+{% include code-snippet/grid/rows-pinning-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/javascript/grid/rows-pinning-cs3/index.html %}
+{% include code-snippet/grid/rows-pinning-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -154,10 +154,10 @@ Row pinning fully supports CRUD operations by keeping pinned rows and their corr
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/javascript/grid/rows-pinning-cs5/index.ts %}
+{% include code-snippet/grid/rows-pinning-cs5/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/javascript/grid/rows-pinning-cs5/index.html %}
+{% include code-snippet/grid/rows-pinning-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -167,10 +167,10 @@ Row pinning fully supports CRUD operations by keeping pinned rows and their corr
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/javascript/grid/rows-pinning-cs5/index.js %}
+{% include code-snippet/grid/rows-pinning-cs5/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/javascript/grid/rows-pinning-cs5/index.html %}
+{% include code-snippet/grid/rows-pinning-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -179,16 +179,16 @@ Row pinning fully supports CRUD operations by keeping pinned rows and their corr
 
 ## Dynamic row pinning
 
-Row pinning provides dynamic control through the built‑in context menu, allowing quick actions to pin or remove pinned rows. Using options such as `PinRow` and `UnpinRow`, any row can be right‑clicked to pin it to the top or quickly remove it from the pinned section.
+Row pinning provides dynamic control through the built-in context menu, allowing quick actions to pin or remove pinned rows. Using options such as `PinRow` and `UnpinRow`, any row can be right-clicked to pin it to the top or quickly remove it from the pinned section.
 
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/javascript/grid/rows-pinning-cs6/index.ts %}
+{% include code-snippet/grid/rows-pinning-cs6/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/javascript/grid/rows-pinning-cs6/index.html %}
+{% include code-snippet/grid/rows-pinning-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -198,10 +198,10 @@ Row pinning provides dynamic control through the built‑in context menu, allowi
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/javascript/grid/rows-pinning-cs6/index.js %}
+{% include code-snippet/grid/rows-pinning-cs6/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/javascript/grid/rows-pinning-cs6/index.html %}
+{% include code-snippet/grid/rows-pinning-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
 

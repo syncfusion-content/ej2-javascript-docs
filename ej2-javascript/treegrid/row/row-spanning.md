@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Row spanning in ##Platform_Name## TreeGrid control
 
-The row spanning feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid allows merging cells in the same column vertically, creating a visually appealing and informative layout. By defining the `rowSpan` attribute in the [queryCellInfo](https://ej2.syncfusion.com/documentation/api/treegrid/index-default#querycellinfo) event, cells can be easily spanned and the appearance of the TreeGrid can be customized.
+Row spanning in the TreeGrid allows merging cells in the same column vertically, creating a visually appealing and informative layout. By defining the `rowSpan` attribute in the [queryCellInfo](https://ej2.syncfusion.com/documentation/api/treegrid/index-default#querycellinfo) event, cells can be easily spanned and the appearance of the TreeGrid can be customized.
 
-In the following demo, the **Lunch Break** cell spans multiple rows in the "1:00 PM" column.
+In the following demo, the "Lunch Break" cell spans multiple rows in the "1:00 PM" column.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -42,22 +42,11 @@ In the following demo, the **Lunch Break** cell spans multiple rows in the "1:00
 {% previewsample "page.domainurl/code-snippet/treegrid/row-spanning-cs1" %}
 {% endif %}
 
-## Limitations
+## Row spanning via API
 
-Row spanning in the TreeGrid has the following limitations:
+Row spanning in the TreeGrid automatically merges cells that contain identical values in the same column across consecutive rows. This improves readability and creates a cleaner layout by removing redundant data. Row spanning can be enabled by setting the `enableRowSpan` property to "true" in the TreeGrid configuration.
 
-* The [updateCell](https://ej2.syncfusion.com/documentation/api/treegrid/index-default#updatecell) method does not support row spanning.
-* Row spanning is not compatible with the following features:
-    1. Virtual scrolling
-    2. Infinite scrolling
-
-> When using Row spanning, ensure that the spanned cells do not interfere with TreeGrid operations such as sorting, filtering, or editing, as this may lead to unexpected behavior.
-
-## Row spanning implementation through API
-
-The Syncfusion TreeGrid provides an API-based approach to vertically merge cells with identical values in the same column across consecutive rows.
-
-The row spanning feature in the Syncfusion TreeGrid can be enabled using `enableRowSpan` property to **true** in the TreeGrid configuration, which significantly enhances readability and delivers a cleaner layout by eliminating repetitive data in columns such as "Status", "Permit Status", "Inspection Status" and "Punch List Status".
+In the example below, row spanning is enabled for the "Status", "Permit Status", "Inspection Status", and "Punch List Status" columns. It is disabled for the "Planned Budget" and "Actual Spend" columns by setting the `enableRowSpan` property to "false" at the column level.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -86,12 +75,10 @@ The row spanning feature in the Syncfusion TreeGrid can be enabled using `enable
 {% previewsample "page.domainurl/code-snippet/treegrid/row-spanning-cs2" %}
 {% endif %}
 
-> In the sample, row spanning is disabled at the column level for the price based columns such as "Planned Budget" and "Actual Spend" by setting each column's `enableRowSpan` property to **false**.
-
 ### Limitations
-
-Row spanning feature is not compatible with all the features which are available in TreeGrid and it has limited features support. Here we have listed out the features which are not compatible with row spanning feature.
-
+ 
+The following list outlines the features that are not compatible with row spanning:
+ 
 * Virtualization
 * Infinite Scrolling
 * Row Drag and Drop
@@ -99,3 +86,6 @@ Row spanning feature is not compatible with all the features which are available
 * Detail Template
 * Editing
 * Export
+
+## See Also
+* [Column Spanning in Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid](https://ej2.syncfusion.com/documentation/treegrid/columns/column-spanning)

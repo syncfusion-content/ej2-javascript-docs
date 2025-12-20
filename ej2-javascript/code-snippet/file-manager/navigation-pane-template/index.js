@@ -9,7 +9,7 @@ var filemanagerInstance = new ej.filemanager.FileManager({
         uploadUrl: hostUrl + 'api/FileManager/Upload',
         downloadUrl: hostUrl + 'api/FileManager/Download'
     },
-    height: '380px'
+    height: '380px',
     navigationPaneTemplate: function (item) {
         return `
         <div class="e-nav-pane-node" style="display: inline-flex; align-items: center;">

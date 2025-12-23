@@ -28,12 +28,10 @@ let aiAssistView: AIAssistView = new AIAssistView({
 // Render initialized AI Assist.
 aiAssistView.appendTo('#prompts');
 
-document.getElementById("toolbarBtn")?.addEventListener("click",)
-function UpdateToolbarPosition() {
-    if (aiAssistView.footerToolbarSettings.toolbarPosition === 'Inline') {
-        aiAssistView.footerToolbarSettings.toolbarPosition = 'Bottom';
-    }
-    else {
-        aiAssistView.footerToolbarSettings.toolbarPosition = 'Inline';
-    }
-}
+(document.getElementById("toolbarBtn") as HTMLElement).addEventListener('click', () => {
+  // Toggle the toolbar position
+  aiAssistView.footerToolbarSettings.toolbarPosition =
+    aiAssistView.footerToolbarSettings.toolbarPosition === "Inline"
+      ? "Bottom"
+      : "Inline";
+});

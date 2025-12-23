@@ -1,4 +1,4 @@
-import { BlockEditor, ContentType } from '@syncfusion/ej2-blockeditor';
+import { BlockEditor, ContentType, CommandName } from '@syncfusion/ej2-blockeditor';
 
 const blockData = [
     {

@@ -35,7 +35,7 @@ let blocksData = [
         blockType: 'Paragraph',
         content: [
             {
-                contentType: ContentType.Text,
+                contentType: ej.blockeditor.ContentType.Text,
                 content: 'You can customize the table further by configuring properties like width, enableHeader to show a header row, enableRowNumbers to display row indices, and readOnly to prevent edits.'
             }
         ]

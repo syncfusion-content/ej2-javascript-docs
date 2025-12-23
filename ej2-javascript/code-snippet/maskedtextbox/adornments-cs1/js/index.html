@@ -1,23 +1,64 @@
 <!DOCTYPE html><html lang="en"><head>
-    <title>EJ2 MaskedTextBox</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="TypeScript MaskedTextBox Component">
-    <meta name="author" content="Syncfusion">
-    <link href="styles.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-base/styles/material.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/20.3.56/ej2-inputs/styles/material.css" rel="stylesheet">
-    
-    
-<script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+<title>EJ2 MaskedTextBox Adornments</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="TypeScript MaskedTextBox Component">
+<meta name="author" content="Syncfusion">
+<link href="styles.css" rel="stylesheet">
+<link href="https://cdn.syncfusion.com/ej2/32.1.19/ej2-base/styles/material.css" rel="stylesheet">
+<link href="https://cdn.syncfusion.com/ej2/32.1.19/material3.css" rel="stylesheet">
+<link href="https://cdn.syncfusion.com/ej2/32.1.19/ej2-inputs/styles/material.css" rel="stylesheet">
+<script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
-    
-    <div class="content-wrapper">
-        <div class="mask-row">
-            <input id="mask" type="text">
-        </div>
+<div id='loader'>Loading....</div>
+<div class="content-wrapper">
+    <div class="mask-row">
+        <input id="mask" type="text">
     </div>
 </div>
 <script src="index.js" type="text/javascript"></script>
-</body></html>
+
+<style>
+.content-wrapper div.mask-row {
+max-width: 250px;
+margin: 0 auto;
+padding: 40px 0px 0px;
+}
+.multiline-property .left-side {
+font-size: 14px;
+padding: 8px;
+}
+.multiline-property.property-panel-table div.multiline {
+padding-left: 0px;
+}
+.mask-row label.e-float-text,
+.mask-row .e-float-input:not(.e-error):not(.e-input-focus) input:not(:focus):valid~label.e-float-text.e-label-bottom,
+.mask-row .e-float-input.e-control-wrapper:not(.e-error):not(.e-input-focus) input:not(:focus):valid~label.e-float-text.e-label-bottom {
+margin-top: -2px;
+}
+.bootstrap5\.3 .mask-row .e-prepend-template,
+.bootstrap5\.3-dark .mask-row .e-prepend-template,
+.tailwind3 .mask-row .e-prepend-template,
+.tailwind3-dark .mask-row .e-prepend-template {
+padding-right: 0 !important;
+}
+.fluent2 .mask-row .e-float-input:not(.e-error):not(.e-input-focus) input:not(:focus):valid~label.e-float-text.e-label-bottom,
+.fluent2-dark .mask-row .e-float-input:not(.e-error):not(.e-input-focus) input:not(:focus):valid~label.e-float-text.e-label-bottom,
+.fluent2-highcontrast .mask-row .e-float-input:not(.e-error):not(.e-input-focus) input:not(:focus):valid~label.e-float-text.e-label-bottom {
+top: -8px !important;
+}
+.e-bigger.material3 .mask-row .e-float-input:not(.e-error):not(.e-input-focus) input:not(:focus):valid~label.e-float-text.e-label-bottom,
+.e-bigger.material3-dark .mask-row .e-float-input:not(.e-error):not(.e-input-focus) input:not(:focus):valid~label.e-float-text.e-label-bottom {
+top: -3px !important;
+}
+.e-bigger.bootstrap5\.3 .mask-row .e-float-input:not(.e-error):not(.e-input-focus) input:not(:focus):valid~label.e-float-text.e-label-bottom,
+.e-bigger.bootstrap5\.3-dark .mask-row .e-float-input:not(.e-error):not(.e-input-focus) input:not(:focus):valid~label.e-float-text.e-label-bottom {
+top: 20px !important;
+}
+.e-bigger.fluent2 .mask-row .e-float-input:not(.e-error):not(.e-input-focus) input:not(:focus):valid~label.e-float-text.e-label-bottom,
+.e-bigger.fluent2-dark .mask-row .e-float-input:not(.e-error):not(.e-input-focus) input:not(:focus):valid~label.e-float-text.e-label-bottom,
+.e-bigger.fluent2-highcontrast .mask-row .e-float-input:not(.e-error):not(.e-input-focus) input:not(:focus):valid~label.e-float-text.e-label-bottom {
+margin-top: 0 !important;
+}
+</style></body></html>

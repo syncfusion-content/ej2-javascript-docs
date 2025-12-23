@@ -1,5 +1,5 @@
 import { TreeGrid, Selection, VirtualScroll } from '@syncfusion/ej2-treegrid';
-import { taskData } from './datasource';
+import { taskData } from './datasource.ts';
 
 TreeGrid.Inject(Selection, VirtualScroll);
 

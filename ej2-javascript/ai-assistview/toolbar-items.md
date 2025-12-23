@@ -127,8 +127,6 @@ The [itemClick](../api/ai-assistview/footerToolbarSettingsModel#itemclick) event
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/ai-assistview/toolbar-items/footer-itemclick" %}
-
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
@@ -140,7 +138,6 @@ The [itemClick](../api/ai-assistview/footerToolbarSettingsModel#itemclick) event
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/ai-assistview/toolbar-items/footer-itemclick" %}
 {% endif %}
 
 ## Adding header toolbar items

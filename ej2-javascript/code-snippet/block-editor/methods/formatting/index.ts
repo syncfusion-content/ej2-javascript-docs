@@ -39,26 +39,26 @@ const blockEditor: BlockEditor = new BlockEditor({
 blockEditor.appendTo('#blockeditor');
 
 // Apply Bold Formatting
-document.getElementById('applyBoldBtn')?.addEventListener('click', () => {
+(document.getElementById('applyBoldBtn')as HTMLElement).addEventListener('click', () => {
     blockEditor.executeToolbarAction(CommandName.Bold);
     displayOutput('Bold formatting applied to selected text');
 });
 
 // Apply Color Formatting
-document.getElementById('applyColorBtn')?.addEventListener('click', () => {
+(document.getElementById('applyColorBtn')as HTMLElement).addEventListener('click', () => {
     blockEditor.executeToolbarAction(CommandName.Color, '#ff6b35');
     displayOutput('Orange color (#ff6b35) applied to selected text');
 });
 
 // Enable Toolbar Items
-document.getElementById('enableToolbarBtn')?.addEventListener('click', () => {
+(document.getElementById('enableToolbarBtn')as HTMLElement).addEventListener('click', () => {
     // Enable specific toolbar items
     blockEditor.enableToolbarItems(['bold', 'italic', 'underline']);
     displayOutput('Toolbar items (bold, italic, underline) have been enabled');
 });
 
 // Disable Toolbar Items
-document.getElementById('disableToolbarBtn')?.addEventListener('click', () => {
+(document.getElementById('disableToolbarBtn')as HTMLElement).addEventListener('click', () => {
     // Disable specific toolbar items
     blockEditor.disableToolbarItems(['bold', 'italic']);
     displayOutput('Toolbar items (bold, italic) have been disabled');

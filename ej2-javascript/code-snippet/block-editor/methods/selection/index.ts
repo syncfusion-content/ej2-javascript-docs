@@ -87,7 +87,7 @@ blockEditor.appendTo('#blockeditor');
             ? (range.startContainer.parentElement as HTMLElement)
             : (range.startContainer as HTMLElement);
         displayOutput(`Current selection range:
-            blockId: ${(parent as HTMLElement).closest('.e-block')?.id}
+            blockId: ${((parent as HTMLElement).closest('.e-block') as HTMLElement).id}
             Start Container: ${range.startContainer.nodeName}
             Start Offset: ${range.startOffset}
             End Container: ${range.endContainer.nodeName}

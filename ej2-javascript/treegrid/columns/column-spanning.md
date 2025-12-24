@@ -45,9 +45,9 @@ In the following example, Employee "Davolio" is scheduled for analysis from "9.0
 
 ## Column spanning via API
  
-Column spanning in the TreeGrid automatically merges cells that contain identical values within the same row across consecutive columns. This improves readability and creates a cleaner layout by removing repeated information. Column spanning can be enabled by setting the `enableColumnSpan` property to "true" in the TreeGrid configuration.
-
-In the example below, column spanning is enabled for the "Status", "Permit Status", "Inspection Status", and "Punch List Status" columns. It is disabled for the "Planned Budget" and "Actual Spend" columns by setting the `enableColumnSpan` property to "false" at the column level.
+Column spanning in the TreeGrid allows automatically merging cells with identical values in the same row across consecutive columns. This significantly enhances readability and delivers a cleaner layout by eliminating repetitive data. To enable column spanning, set the `enableColumnSpan` property to "true" in the TreeGrid configuration.
+ 
+In the following example, column spanning is applied to the "Status", "Permit Status", "Inspection Status", and "Punch List Status" columns, while it is disabled for the "Planned Budget" and "Actual Spend" columns by setting the `enableColumnSpan` property to "false" in the column level.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -1,4 +1,3 @@
-import { pivotData } from './es5-datasource.js';
 var pivotTableObj = new ej.pivotview.PivotView({
   dataSourceSettings: {
     dataSource: pivotData,

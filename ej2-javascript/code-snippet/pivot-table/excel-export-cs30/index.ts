@@ -1,6 +1,4 @@
-
-
-import { PivotView, VirtualScroll, IDataSet, ExcelExport } from '@syncfusion/ej2-pivotview';
+import { PivotView, VirtualScroll, IDataSet, ExcelExport, ExportCompleteEventArgs, ExcelExportProperties } from '@syncfusion/ej2-pivotview';
 import { Button } from '@syncfusion/ej2-buttons';
 import { pivotData } from './datasource.ts';
 
@@ -8,7 +6,7 @@ PivotView.Inject(ExcelExport, VirtualScroll);
 let pivotTableObj: PivotView = new PivotView({
     dataSourceSettings: {
         dataSource: pivotData as IDataSet[],
-        expandAll: true,
+        expandAll: false,
         drilledMembers: [{ name: 'Country', items: ['France'] }],
         columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
         rows: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
@@ -38,5 +36,3 @@ document.getElementById('excel').onclick = function () {
     };
     pivotTableObj.excelExport(excelExportProperties, false, null, true);
 };
-
-

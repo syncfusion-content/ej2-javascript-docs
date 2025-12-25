@@ -1,7 +1,7 @@
 var pivotTableObj = new ej.pivotview.PivotView({
     dataSourceSettings: {
         dataSource: pivotData,
-        expandAll: true,
+        expandAll: false,
         columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
         rows: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
         values: [{ name: 'Country' }, { name: 'Products' }],
@@ -29,4 +29,3 @@ document.getElementById('excel').onclick = function () {
     };
     pivotTableObj.excelExport(excelExportProperties, false, null, true);
 };
-

@@ -1,5 +1,6 @@
 var grid = new ej.grids.Grid({
     dataSource: ordersTrackData,
+    height: 255,
     allowPaging: true,
     allowSorting: true,
     allowFiltering: true,

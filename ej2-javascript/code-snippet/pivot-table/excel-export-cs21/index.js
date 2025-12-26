@@ -11,33 +11,29 @@ var pivotTableObj = new ej.pivotview.PivotView({
     height: 300,
     allowExcelExport: true
 });
+pivotTableObj.appendTo('#PivotTable');
 
 var pivotTableObj2 = new ej.pivotview.PivotView({
     dataSourceSettings: {
         dataSource: pivotData,
         expandAll: false,
         rows: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
-        values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
+        values: [{ name: 'Amount', caption: 'Sold Amount' }, { name: 'Sold', caption: 'Units Sold' }],
         columns: [{ name: 'Country' }, { name: 'Products' }],
-        formatSettings: [{ name: 'Amount', format: 'C0' }],
         filters: []
     },
     height: 300,
     allowExcelExport: true
 });
-pivotTableObj.appendTo('#PivotTable');
 pivotTableObj2.appendTo('#PivotTable2');
 
 var exportBtn = new ej.buttons.Button({ isPrimary: true });
 exportBtn.appendTo('#excel');
 
 document.getElementById('excel').onclick = function () {
-    var excelExportProperties = {
-        multipleExport: { type: 'AppendToSheet', blankRows: 2 }
+    let excelExportProperties = {
+        multipleExport: { type: 'AppendToSheet', blankRows: 2 },
+        pivotTableIds: ['PivotTable', 'PivotTable2']
     };
-    var firstGridExport = pivotTableObj.grid.excelExport(excelExportProperties, true);
-    firstGridExport.then(function (fData) {
-        pivotTableObj2.excelExport(excelExportProperties, false, fData);
-    });
+    pivotTableObj.excelExport(excelExportProperties, true);
 };
-

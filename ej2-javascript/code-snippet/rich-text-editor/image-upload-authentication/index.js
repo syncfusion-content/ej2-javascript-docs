@@ -13,7 +13,5 @@ var editor = new ej.richtexteditor.RichTextEditor({
 editor.appendTo('#editor');
 
 function imageUploading(args){
-        let accessToken = "Authorization_token";
-        // adding custom form Data
-        args.customFormData = [ { 'Authorization': accessToken}];
+        args.currentRequest.setRequestHeader('Authorization', 'Syncfusion');
 }

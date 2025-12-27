@@ -96,4 +96,4 @@ The following sample demonstrates the sizing of panels within the dashboard layo
 {% previewsample "page.domainurl/code-snippet/dashboard-layout/getting-started-cs2" %}
 {% endif %}
 
-> You can refer to our [JavaScript Dashboard Layout](https://www.syncfusion.com/javascript-ui-controls/js-dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Dashboard Layout example](https://ej2.syncfusion.com/demos/#/material/dashboard-layout/default.html) to knows how to present and manipulate data.
+> You can refer to our [JavaScript Dashboard Layout](https://www.syncfusion.com/javascript-ui-controls/js-dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Dashboard Layout example](https://ej2.syncfusion.com/demos/#/bootstrap5/dashboard-layout/default.html) to knows how to present and manipulate data.

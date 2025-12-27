@@ -44,7 +44,7 @@ The Essential JS 2 Data Manager control can be initialized by using either of th
 
 ### Using local script
 
-You can get the global script from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+You can get the global script from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/account/manage-trials/downloads) build installed location.
 
 After installing the Essential JS 2 product build, you can copy the data manager and its dependencies scripts file into the `resources/scripts` folder.
 

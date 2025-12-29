@@ -30,7 +30,7 @@ The following example pins rows with "Critical" priority and "Open" status at th
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/code-snippet/grid/rows-pinning-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/rows-pinning-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -43,7 +43,7 @@ The following example pins rows with "Critical" priority and "Open" status at th
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/code-snippet/grid/rows-pinning-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/rows-pinning-cs1" %}
 {% endif %}
 
 > Pinning rows requires a primary key column for mapping the pinned rows to their original records. To define the primary key, set [columns->isPrimaryKey](../../api/grid/column#isprimarykey) to **true** in particular column.
@@ -63,7 +63,7 @@ Row pinning in the Grid control keeps important rows visible at the top while na
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/code-snippet/grid/rows-pinning-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/rows-pinning-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -76,7 +76,7 @@ Row pinning in the Grid control keeps important rows visible at the top while na
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/code-snippet/grid/rows-pinning-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/rows-pinning-cs2" %}
 {% endif %}
 
 ## Pinned rows selection
@@ -94,7 +94,7 @@ Pinned rows can be selected in the same way as regular rows. Their selection sta
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/code-snippet/grid/rows-pinning-cs4" %}
+{% previewsample "page.domainurl/code-snippet/grid/rows-pinning-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -107,7 +107,7 @@ Pinned rows can be selected in the same way as regular rows. Their selection sta
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/code-snippet/grid/rows-pinning-cs4" %}
+{% previewsample "page.domainurl/code-snippet/grid/rows-pinning-cs4" %}
 {% endif %}
 
 > The [selectionSettings->persistSelection](../../api/grid/selectionsettings#persistselection) will be automatically enabled when pinning the rows using the `isRowPinned` callback function.
@@ -129,7 +129,7 @@ When sorting is applied to any column, pinned rows are reordered using the same 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/code-snippet/grid/rows-pinning-cs3" %}
+{% previewsample "page.domainurl/code-snippet/grid/rows-pinning-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -142,7 +142,7 @@ When sorting is applied to any column, pinned rows are reordered using the same 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/code-snippet/grid/rows-pinning-cs3" %}
+{% previewsample "page.domainurl/code-snippet/grid/rows-pinning-cs3" %}
 {% endif %}
 
 
@@ -161,7 +161,7 @@ Row pinning fully supports CRUD operations by keeping pinned rows and their corr
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/code-snippet/grid/rows-pinning-cs5" %}
+{% previewsample "page.domainurl/code-snippet/grid/rows-pinning-cs5" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -174,7 +174,7 @@ Row pinning fully supports CRUD operations by keeping pinned rows and their corr
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/code-snippet/grid/rows-pinning-cs5" %}
+{% previewsample "page.domainurl/code-snippet/grid/rows-pinning-cs5" %}
 {% endif %}
 
 ## Dynamic row pinning
@@ -192,7 +192,7 @@ Row pinning provides dynamic control through the built-in context menu, allowing
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/code-snippet/grid/rows-pinning-cs6" %}
+{% previewsample "page.domainurl/code-snippet/grid/rows-pinning-cs6" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -205,7 +205,7 @@ Row pinning provides dynamic control through the built-in context menu, allowing
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/code-snippet/grid/rows-pinning-cs6" %}
+{% previewsample "page.domainurl/code-snippet/grid/rows-pinning-cs6" %}
 {% endif %}
 
 ## Limitation

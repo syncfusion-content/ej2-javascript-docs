@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Rich text editor control | Syncfusion
+title: Getting started with ##Platform_Name## Rich text editor | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Rich text editor control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
@@ -261,7 +261,7 @@ Output will be displayed as follows
 
 ## Configure the Toolbar
 
-Configure the toolbar with the tools using items field of the [toolbarSettings](../api/rich-text-editor/toolbarSettings/#toolbarsettings) property as your application requires.
+Configure the toolbar with the tools using items field of the [toolbarSettings](../api/rich-text-editor/toolbarSettings#toolbarsettings) property as your application requires.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -298,9 +298,9 @@ Output will be displayed as follows.
 
 ## See also
 
-* [How to change the editor type](./editor-modes)
-* [How to render the iframe](./iframe)
-* [How to render the toolbar in inline mode](./inline-mode)
+* [How to change the editor type](https://ej2.syncfusion.com/javascript/documentation/rich-text-editor/editor-types/editor-modes)
+* [How to render the iframe](https://ej2.syncfusion.com/javascript/documentation/rich-text-editor/editor-types/iframe)
+* [How to render the toolbar in inline mode](https://ej2.syncfusion.com/javascript/documentation/rich-text-editor/editor-types/inline-editing)
 * [How to insert Emoticons](https://ej2.syncfusion.com/angular/demos/#/material/rich-text-editor/insert-emoticons)
 * [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/angular/demos/#/material/rich-text-editor/blog-posting)
 * [Reactive Form with Rich Text Editor](https://ej2.syncfusion.com/angular/demos/#/material/rich-text-editor/reactive-form)

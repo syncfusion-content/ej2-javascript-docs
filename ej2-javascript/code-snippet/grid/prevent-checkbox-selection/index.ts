@@ -5,6 +5,7 @@ Grid.Inject(Page, Filter, Sort, Edit, Toolbar);
 
 let grid: Grid = new Grid({
     dataSource: ordersTrackData,
+    height: 255,
     allowPaging: true,
     allowSorting: true,
     allowFiltering: true,

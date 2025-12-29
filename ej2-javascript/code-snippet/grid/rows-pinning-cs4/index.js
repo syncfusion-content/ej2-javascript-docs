@@ -7,7 +7,7 @@ var grid = new ej.grids.Grid({
     }
     return false;
   },
-  height: 200,
+  height: 210,
   columns: [
     {type: 'checkbox', textAlign: 'Left', width: 50, },
     { field: 'TaskID', headerText: 'Task ID', width: 100, isPrimaryKey: true, textAlign: 'Right' },

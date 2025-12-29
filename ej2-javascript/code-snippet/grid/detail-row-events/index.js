@@ -19,7 +19,7 @@ var grid = new ej.grids.Grid({
     },
     detailCollapse: detailCollapse,
     detailExpand: detailExpand,
-    height: 260
+    height: 345
 });
 grid.appendTo('#Grid');
 

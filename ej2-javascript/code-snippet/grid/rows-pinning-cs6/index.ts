@@ -1,5 +1,5 @@
 import { Grid, Page, ContextMenu } from '@syncfusion/ej2-grids';
-import { taskData } from './datasource';
+import { taskData } from './datasource.ts';
 
 Grid.Inject(Page, ContextMenu);
 

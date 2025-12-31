@@ -1,5 +1,5 @@
 import { Grid, Page } from '@syncfusion/ej2-grids';
-import { taskData } from './datasource';
+import { taskData } from './datasource.ts';
 
 Grid.Inject(Page);
 
@@ -12,7 +12,7 @@ var grid : Grid = new Grid({
     }
     return false;
   },
-  height: 210,
+  height: 225,
   columns: [
     { field: 'TaskID', headerText: 'Task ID', width: 100, isPrimaryKey: true, textAlign: 'Right' },
     { field: 'Title', headerText: 'Title', width: 100 },

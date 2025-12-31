@@ -9,7 +9,7 @@ var grid = new ej.grids.Grid({
     }
     return false;
   },
-  height: 210,
+  height: 180,
   columns: [
     { field: 'TaskID', headerText: 'Task ID', width: 100, isPrimaryKey: true, textAlign: 'Right' },
     { field: 'Title', headerText: 'Title', width: 100 },

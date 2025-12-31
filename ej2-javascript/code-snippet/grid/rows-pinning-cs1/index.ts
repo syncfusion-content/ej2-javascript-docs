@@ -1,5 +1,5 @@
 import { Grid } from '@syncfusion/ej2-grids';
-import { taskData } from './datasource';
+import { taskData } from './datasource.ts';
 
 var grid : Grid = new Grid({
   dataSource: taskData,

@@ -73,7 +73,12 @@ function onCreate(): void {
   updateValue();
 }
 function updateValue(): void {
-  srcArea.innerHTML = MarkdownConverter.toHtml((markdownRTE.contentModule.getEditPanel() as HTMLTextAreaElement).value) as string;
+  srcArea.innerHTML = MarkdownConverter.toHtml((markdownRTE.contentModule.getEditPanel() as HTMLTextAreaElement).value, {
+    async: true,
+    gfm: true,
+    lineBreak: true,
+    silence: true
+  }) as string;
 }
 function updateOrientation(): void {
   if (Browser.isDevice) {

@@ -57,12 +57,7 @@ function markDownConversion(): void {
     if (mdsource.classList.contains('e-active')) {
         let id: string = markdownRTE.getID() + 'html-view';
         let htmlPreview: HTMLElement = markdownRTE.element.querySelector('#' + id);
-        htmlPreview.innerHTML = MarkdownConverter.toHtml((markdownRTE.contentModule.getEditPanel() as HTMLTextAreaElement).value, {
-            async: true,
-            gfm: true,
-            lineBreak: true,
-            silence: true
-        }) as string;
+        htmlPreview.innerHTML = MarkdownConverter.toHtml((markdownRTE.contentModule.getEditPanel() as HTMLTextAreaElement).value) as string;
     }
 }
 function fullPreview(): void {
@@ -88,12 +83,7 @@ function fullPreview(): void {
         }
         textArea.style.display = 'none';
         htmlPreview.style.display = 'block';
-        htmlPreview.innerHTML = MarkdownConverter.toHtml((markdownRTE.contentModule.getEditPanel() as HTMLTextAreaElement).value, {
-            async: true,
-            gfm: true,
-            lineBreak: true,
-            silence: true
-        }) as string;
+        htmlPreview.innerHTML = MarkdownConverter.toHtml((markdownRTE.contentModule.getEditPanel() as HTMLTextAreaElement).value) as string;
         mdsource.parentElement.title = 'Code View';
     }
 }

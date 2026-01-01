@@ -68,7 +68,12 @@ function onCreate() {
   srcArea = document.querySelector('.source-code');
 }
 function updateValue() {
-  srcArea.innerHTML = markdownConverter.toHtml(defaultRTE.contentModule.getEditPanel().value);
+  srcArea.innerHTML = markdownConverter.toHtml(defaultRTE.contentModule.getEditPanel().value, {
+    async: true,
+    gfm: true,
+    lineBreak: true,
+    silence: true
+  });
 }
 function updateOrientation() {
   if (ej.base.Browser.isDevice) {

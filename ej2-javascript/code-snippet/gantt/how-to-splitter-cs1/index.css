@@ -1,5 +1,5 @@
 #container {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 #loader {
@@ -14,10 +14,10 @@
 }
 
 #element {
-    display: block;
-    height: 350px;
+  display: block;
+  height: 350px;
 }
 
 #container #Gantt{
-	height:450px;
+  height:450px;
 }

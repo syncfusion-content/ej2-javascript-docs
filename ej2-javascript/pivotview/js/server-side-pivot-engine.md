@@ -35,7 +35,7 @@ This section briefs the Syncfusion<sup style="font-size:70%">&reg;</sup> assembl
 
 **1.** Run the **PivotController** (Server-side) application which will be hosted in IIS shortly.
 
-**2.** Then in the Pivot Table sample, set the [`mode`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettingsModel/#mode) property under [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/) as **Server** and map the URL of the hosted Server-side application in [`URL`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#url) property of `dataSourceSettings`.
+**2.** Then in the Pivot Table sample, set the [`mode`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettingsmodel#mode) property under [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings) as **Server** and map the URL of the hosted Server-side application in [`URL`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings#url) property of `dataSourceSettings`.
 
 ```javascript
 var pivotObj = new ej.pivotview.PivotView({
@@ -93,7 +93,7 @@ The server-side Pivot Engine supports the following data sources,
 
 #### Collection
 
-The collection data sources such as List, IEnumerable, and so on are supported. This can be bound using the **GetData** controller method. Also, in the Pivot Table sample, set the [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/fieldOptionsModel/#type) property under [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/) to **JSON**, which is also the default enumeration value.
+The collection data sources such as List, IEnumerable, and so on are supported. This can be bound using the **GetData** controller method. Also, in the Pivot Table sample, set the [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/fieldoptionsmodel#type) property under [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings) to **JSON**, which is also the default enumeration value.
 
 In the server-side application **(PivotController)**, a collection type data source is framed in the **DataSource.cs** file as shown in the following.
 
@@ -289,7 +289,7 @@ public async Task<object> GetData(FetchData param)
 
 #### CSV
 
-The CSV data from a local *.csv file type can be connected to the Pivot Table. Here, the file can be read by the **StreamReader** option, which will give the result in the string format. The resultant string needs to be converted to collect data that can be bound to the server-side pivot engine. Also, in the Pivot Table sample, set the [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/fieldOptionsModel/#type) property under [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/) as **CSV**.
+The CSV data from a local *.csv file type can be connected to the Pivot Table. Here, the file can be read by the **StreamReader** option, which will give the result in the string format. The resultant string needs to be converted to collect data that can be bound to the server-side pivot engine. Also, in the Pivot Table sample, set the [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/fieldoptionsmodel#type) property under [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings) as **CSV**.
 
 In the server application, the **sales.csv** file is available under the **DataSource** folder, and its model type is defined in the **DataSource.cs** file.
 
@@ -707,28 +707,22 @@ Meanwhile, the memory cache is set to expire after 60 minutes from RAM to free i
 
 ## Excel Export
 
-The server-side engine seamlessly supports Excel export functionality, enabling users to efficiently generate and download pivot table reports in Excel format directly from the server. To enable Excel export in the pivot table, set the [`allowExcelExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#allowexcelexport) class to **true**. Once the API is set, the user needs to call the [`excelExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#excelexport) method to export the pivot table to Excel by clicking an external button.
+The server-side engine seamlessly supports Excel export functionality, enabling users to efficiently generate and download pivot table reports in Excel format directly from the server. To enable Excel export in the pivot table, set the [`allowExcelExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#allowexcelexport) class to **true**. Once the API is set, the user needs to call the [`excelExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#excelexport) method to export the pivot table to Excel by clicking an external button.
 
 N> The pivot table component can be exported to Excel format using options available in the toolbar. For more details [refer](./tool-bar) here.
 
 ```javascript
 var pivotTableObj = new ej.pivotview.PivotView({
     dataSourceSettings: {
-        url: 'https://localhost:44350/api/pivot/post',
+        url: 'https://services.syncfusion.com/js/production/api/pivot/post',
         mode: 'Server',
-        rows: [{
-            name: 'ProductID', caption: 'Product ID'
-        }],
-        formatSettings: [{
-            name: 'Price', format: 'C'
-        }],
-        columns: [{
-            name: 'Year', caption: 'Production Year'
-        }],
+        columns: [ { name: 'Year', caption: 'Production Year' }],
         values: [
             { name: 'Sold', caption: 'Units Sold' },
-            { name: 'Price', caption: 'Sold Amount' }
+            { name: 'Amount', caption: 'Sold Amount' }
         ],
+        rows: [{ name: 'Country' }, {name: 'Products'}],
+        formatSettings: [{ name: 'Amount', format: 'C0' }, { name: 'Sold', format: 'N0' }]
     },
     height: 320,
     allowExcelExport: true
@@ -796,26 +790,20 @@ Then, based on the **Action** parameter (**onExcelExport** or **onCsvExport**), 
 
 ### Add header and footer while exporting
 
-The Excel export provides an option to include header and footer content for the excel document before exporting. In-order to add header and footer, define **header** and **footer** properties in **excelExportProperties** object and pass it as a parameter to the [`excelExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#excelexport) method.
+The Excel export provides an option to include header and footer content for the excel document before exporting. In-order to add header and footer, define **header** and **footer** properties in **excelExportProperties** object and pass it as a parameter to the [`excelExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#excelexport) method.
 
 ```javascript
 var pivotTableObj = new ej.pivotview.PivotView({
      dataSourceSettings: {
-        url: 'https://localhost:44350/api/pivot/post',
+        url: 'https://services.syncfusion.com/js/production/api/pivot/post',
         mode: 'Server',
-        rows: [{
-            name: 'ProductID', caption: 'Product ID'
-        }],
-        formatSettings: [{
-            name: 'Price', format: 'C'
-        }],
-        columns: [{
-            name: 'Year', caption: 'Production Year'
-        }],
+        columns: [ { name: 'Year', caption: 'Production Year' }],
         values: [
             { name: 'Sold', caption: 'Units Sold' },
-            { name: 'Price', caption: 'Sold Amount' }
+            { name: 'Amount', caption: 'Sold Amount' }
         ],
+        rows: [{ name: 'Country' }, {name: 'Products'}],
+        formatSettings: [{ name: 'Amount', format: 'C0' }, { name: 'Sold', format: 'N0' }]
     },
     height: 320,
     allowExcelExport: true
@@ -855,21 +843,15 @@ N> The pivot table component can be exported to CSV format using options availab
 ```javascript
 var pivotTableObj = new ej.pivotview.PivotView({
     dataSourceSettings: {
-        url: 'https://localhost:44350/api/pivot/post',
+        url: 'https://services.syncfusion.com/js/production/api/pivot/post',
         mode: 'Server',
-        rows: [{
-            name: 'ProductID', caption: 'Product ID'
-        }],
-        formatSettings: [{
-            name: 'Price', format: 'C'
-        }],
-        columns: [{
-            name: 'Year', caption: 'Production Year'
-        }],
+        columns: [ { name: 'Year', caption: 'Production Year' }],
         values: [
             { name: 'Sold', caption: 'Units Sold' },
-            { name: 'Price', caption: 'Sold Amount' }
+            { name: 'Amount', caption: 'Sold Amount' }
         ],
+        rows: [{ name: 'Country' }, {name: 'Products'}],
+        formatSettings: [{ name: 'Amount', format: 'C0' }, { name: 'Sold', format: 'N0' }]
     },
     height: 320,
     allowExcelExport: true
@@ -940,26 +922,20 @@ Then, based on the **Action** parameter (**onExcelExport** or **onCsvExport**), 
 
 You can export a Syncfusion PivotTable to an Excel file while preserving its native pivot structure using the server-side engine. The exported Excel document contains a fully interactive PivotTable, allowing users to dynamically modify configurations such as filtering, sorting, grouping, and aggregation directly in Microsoft Excel.
 
-To enable native Excel pivot export in the PivotTable, the user must call the [`exportAsPivot`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#exportAsPivot) method to export the PivotTable to Excel by clicking an external button, specifying the export type (**Excel** or **CSV**) as a parameter.
+To enable native Excel pivot export in the PivotTable, the user must call the [`exportAsPivot`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#exportAsPivot) method to export the PivotTable to Excel by clicking an external button, specifying the export type (**Excel** or **CSV**) as a parameter.
 
 ```javascript
 var pivotTableObj = new ej.pivotview.PivotView({
     dataSourceSettings: {
-        url: 'https://localhost:44350/api/pivot/post',
+        url: 'https://services.syncfusion.com/js/production/api/pivot/post',
         mode: 'Server',
-        rows: [{
-            name: 'ProductID', caption: 'Product ID'
-        }],
-        formatSettings: [{
-            name: 'Price', format: 'C'
-        }],
-        columns: [{
-            name: 'Year', caption: 'Production Year'
-        }],
+        columns: [ { name: 'Year', caption: 'Production Year' }],
         values: [
             { name: 'Sold', caption: 'Units Sold' },
-            { name: 'Price', caption: 'Sold Amount' }
+            { name: 'Amount', caption: 'Sold Amount' }
         ],
+        rows: [{ name: 'Country' }, {name: 'Products'}],
+        formatSettings: [{ name: 'Amount', format: 'C0' }, { name: 'Sold', format: 'N0' }]
     },
     height: 320,
     allowExcelExport: true
@@ -1025,3 +1001,40 @@ Then, based on the **Action** parameter (**onPivotExcelExport** or **onPivotCsvE
 ```
 
 ![Export as Pivot](./images/export-as-pivot.png)
+
+## Secure server requests with beforeServiceInvoke
+
+Imagine you’ve wired the Pivot Table to a server endpoint and it looks great locally. When you point it at your real API, the requests return 401 errors—not because the queries are wrong, but because the server refuses to talk without credentials. The simplest, least‑invasive fix is to attach authentication headers right before each request leaves the browser.
+
+The Pivot Table exposes a window into every outgoing call through the beforeServiceInvoke event. It fires just before a request is sent and hands you an args object, so you can set args.internalProperties.headers and have the Pivot Table include them automatically. This requires no endpoint rewrites and no custom transport, and it gives you a single reliable hook that works across aggregation, sorting, filtering, grouping, exporting, and more.
+
+Start with a token you trust, issued by your auth flow after sign‑in. Keep it out of source control by retrieving it at runtime (for example, from a secure in‑memory store, a server endpoint that reads an httpOnly cookie, or a token manager that refreshes on expiry). Then merge it into the request headers so every call carries proof of identity.
+
+{% tabs %}
+{% highlight ts tabtitle="index.js" %}
+{% include code-snippet/pivot-table/server-side-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/pivot-table/server-side-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/pivot-table/server-side-cs1" %}
+
+**Production tips**
+- Load tokens on demand and rotate them regularly; never hard-code secrets in source control.
+- If your backend expects a different header (for example, X‑API‑Key), use that instead of Authorization.
+- Configure CORS to allow any custom headers you add (for example, include Authorization in Access‑Control‑Allow‑Headers) so browsers don’t block requests.
+
+**Troubleshooting**
+- 401 or 403: Token is missing, expired, or invalid for the target route.
+- CORS preflight error: Server isn’t allowing your custom headers.
+- Missing headers: Ensure beforeServiceInvoke runs on the same Pivot instance and sets headers on every call.
+
+**Pre‑shipment checks**
+- Inspect request headers in the browser’s Network panel; Authorization (or your custom key) must be present on every call.
+- Confirm the server reads the same header and maps it to your auth middleware.
+- Reproduce 401 vs 403 responses during testing to validate end‑to‑end header handling and permissions.
+
+**Summary**
+- One event keeps requests authenticated without API redesign and reduces surprises when moving from local testing to production.

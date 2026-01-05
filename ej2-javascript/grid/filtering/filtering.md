@@ -487,7 +487,7 @@ Alternatively, you can use the properties available in the [FilterEventArgs](../
 
 * [columns](../../api/grid/filterEventArgs#columns): This property returns the collection of filtered columns.
 
-* [currentFilterObject](../..api/grid/filterEventArgs#currentfilterobject): This property returns the object that is currently filtered.
+* [currentFilterObject](../../api/grid/filterEventArgs#currentfilterobject): This property returns the object that is currently filtered.
 
 * [currentFilteringColumn](../../api/grid/filterEventArgs#currentfilteringcolumn): This property returns the column name that is currently filtered.
 
@@ -537,7 +537,7 @@ Here's an example of how to clear the filtering in a Syncfusion<sup style="font-
 
 Filtering events allow you to customize the behavior of the grid when filtering is applied. You can prevent filtering for specific columns, show messages to users, or perform other actions to suit your application's needs.
 
-To implement filtering events in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid, you can utilize the available events such as [actionBegin](../..api/grid#actionbegin) and [actionComplete](../../api/grid#actioncomplete). These events allow you to intervene in the filtering process and customize it as needed.
+To implement filtering events in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid, you can utilize the available events such as [actionBegin](../../api/grid#actionbegin) and [actionComplete](../../api/grid#actioncomplete). These events allow you to intervene in the filtering process and customize it as needed.
 
 In the given example, the filtering is prevented for **ShipCity** column during `actionBegin` event.
 

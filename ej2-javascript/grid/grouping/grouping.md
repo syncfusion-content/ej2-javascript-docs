@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Grouping in ##Platform_Name## Grid control
 
-The grouping feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid allows you to organize data into a hierarchical structure, making it easier to expand and collapse records. You can group the columns by simply dragging and dropping the column header to the group drop area. To enable grouping in the grid, you need to set the [allowGrouping](../../api/grid/#allowgrouping) property to **true**. Additionally, you can customize the grouping options using the [groupSettings](../../api/grid/groupSettings) property.
+The grouping feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid allows you to organize data into a hierarchical structure, making it easier to expand and collapse records. You can group the columns by simply dragging and dropping the column header to the group drop area. To enable grouping in the grid, you need to set the [allowGrouping](../../api/grid#allowgrouping) property to **true**. Additionally, you can customize the grouping options using the [groupSettings](../../api/grid/groupSettings) property.
 
 To use the Grouping feature, need to inject **Group** in the grid.
 
@@ -42,12 +42,12 @@ To use the Grouping feature, need to inject **Group** in the grid.
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs80" %}
 {% endif %}
 
-> * You can group and ungroup columns in the Grid by using the [groupColumn](../../api/grid/group/#groupcolumn) and [ungroupColumn](../../api/grid/group/#ungroupcolumn) methods respectively.
-> * To disable grouping for a specific column, set the [columns->allowGrouping](../../api/grid/column/#allowgrouping) to **false**.
+> * You can group and ungroup columns in the Grid by using the [groupColumn](../../api/grid/group#groupcolumn) and [ungroupColumn](../../api/grid/group#ungroupcolumn) methods respectively.
+> * To disable grouping for a specific column, set the [columns->allowGrouping](../../api/grid/column#allowgrouping) to **false**.
 
 ## Initial group
 
-To enable initial grouping in the Grid, you can use the [groupSettings](../../api/grid/groupSettings) property and set the [groupSettings->columns](../../api/grid/groupSettings/#columns) property to an array of column names(`field` of the column) that you want to group by. This feature is particularly useful when working with large datasets, as it allows you to quickly organize and analyze the data based on specific criteria.
+To enable initial grouping in the Grid, you can use the [groupSettings](../../api/grid/groupSettings) property and set the [groupSettings->columns](../../api/grid/groupSettings#columns) property to an array of column names(`field` of the column) that you want to group by. This feature is particularly useful when working with large datasets, as it allows you to quickly organize and analyze the data based on specific criteria.
 
 The following example demonstrates how to set an initial grouping for the **CustomerID** and **ShipCity** columns during the initial rendering grid, by using the `groupSettings.columns` property.
 
@@ -82,7 +82,7 @@ The following example demonstrates how to set an initial grouping for the **Cust
 
 ## Prevent grouping for particular column
 
-The Grid control provides the ability to prevent grouping for a particular column. This can be useful when you have certain columns that you do not want to be included in the grouping process. It can be achieved by setting the [allowGrouping](../../api/grid/column/#allowgrouping) property of the particular `column` to **false**. The following example demonstrates, how to disable grouping for **CustomerID** column.
+The Grid control provides the ability to prevent grouping for a particular column. This can be useful when you have certain columns that you do not want to be included in the grouping process. It can be achieved by setting the [allowGrouping](../../api/grid/column#allowgrouping) property of the particular `column` to **false**. The following example demonstrates, how to disable grouping for **CustomerID** column.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -119,11 +119,11 @@ To hide the drop area in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##
 
 {% if page.publishingplatform == "typescript" %}
  
-In the following example, the [EJ2 Toggle Switch Button](../../switch/getting-started) control is added to hide or show the drop area. When the switch is toggled, the [change](../../api/switch/#change) event is triggered and the `groupSettings.showDropArea` property of the grid is updated accordingly. 
+In the following example, the [EJ2 Toggle Switch Button](../../switch/getting-started) control is added to hide or show the drop area. When the switch is toggled, the [change](../../api/switch#change) event is triggered and the `groupSettings.showDropArea` property of the grid is updated accordingly. 
 
  {% elsif page.publishingplatform == "javascript" %}
  
-In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-getting-started) control is added to hide or show the drop area. When the switch is toggled, the [change](../../api/switch/#change) event is triggered and the `groupSettings.showDropArea` property of the grid is updated accordingly. 
+In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-getting-started) control is added to hide or show the drop area. When the switch is toggled, the [change](../../api/switch#change) event is triggered and the `groupSettings.showDropArea` property of the grid is updated accordingly. 
 
 {% endif %}
 
@@ -158,15 +158,15 @@ In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-gettin
 
 ## Show the grouped column
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid has a default behavior where the grouped column is hidden, to provide a cleaner and more focused view of your data. However, if you prefer to show the grouped column in the grid, you can achieve this by setting the [groupSettings->showGroupedColumn](../../api/grid/groupSettings/#showgroupedcolumn) property to **true**.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid has a default behavior where the grouped column is hidden, to provide a cleaner and more focused view of your data. However, if you prefer to show the grouped column in the grid, you can achieve this by setting the [groupSettings->showGroupedColumn](../../api/grid/groupSettings#showgroupedcolumn) property to **true**.
 
 {% if page.publishingplatform == "typescript" %}
  
-In the following example, the [EJ2 Toggle Switch Button](../../switch/getting-started) control is added to hide or show the grouped columns. When the switch is toggled, the [change](../../documentation/api/switch/#change) event is triggered and the `groupSettings.showGroupedColumn` property of the grid is updated accordingly.
+In the following example, the [EJ2 Toggle Switch Button](../../switch/getting-started) control is added to hide or show the grouped columns. When the switch is toggled, the [change](../../api/switch#change) event is triggered and the `groupSettings.showGroupedColumn` property of the grid is updated accordingly.
 
  {% elsif page.publishingplatform == "javascript" %}
  
-In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-getting-started) control is added to hide or show the grouped columns. When the switch is toggled, the [change](../../documentation/api/switch/#change) event is triggered and the `groupSettings.showGroupedColumn` property of the grid is updated accordingly.
+In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-getting-started) control is added to hide or show the grouped columns. When the switch is toggled, the [change](../../api/switch#change) event is triggered and the `groupSettings.showGroupedColumn` property of the grid is updated accordingly.
 
 {% endif %}
 
@@ -201,7 +201,7 @@ In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-gettin
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid allows you to easily reorder the grouped columns by dragging and dropping the grouped header cells in the group drag area. By changing the order of the grouped columns, the corresponding changes are automatically reflected in the grouping hierarchy of the grid. The grid dynamically adjusts the grouping based on the reordered columns in the group drag area. Additionally, you can also drop new columns into specific positions within the group drag area.
 
-To enable this feature, you have to set the [groupSettings->allowReordering](../../api/grid/groupSettings/#allowReordering) property as **true**. This is demonstrated in the sample below.
+To enable this feature, you have to set the [groupSettings->allowReordering](../../api/grid/groupSettings#allowReordering) property as **true**. This is demonstrated in the sample below.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -232,7 +232,7 @@ To enable this feature, you have to set the [groupSettings->allowReordering](../
 
 ## Sort grouped columns in descending order during initial grouping
 
-By default, grouped columns are sorted in ascending order. However, you can sort them in descending order during initial grouping by setting the [field](../../api/grid/sortDescriptorModel/#field) and [direction](../../api/grid/sortDescriptorModel/#direction-string) in the [sortSettings->columns](../../api/grid/sortSettings/#columns) property.
+By default, grouped columns are sorted in ascending order. However, you can sort them in descending order during initial grouping by setting the [field](../../api/grid/sortDescriptorModel#field) and [direction](../../api/grid/sortDescriptorModel#direction-string) in the [sortSettings->columns](../../api/grid/sortSettings#columns) property.
 
 The following example demonstrates how to sort the **CustomerID** column by setting the `sortSettings.columns` property to **Descending** during the initial grouping of the grid.
 
@@ -271,7 +271,7 @@ The Grid control supports grouping columns with paging feature. When grouping is
 
 ## Group by format
 
-By default, columns are grouped by the data or value present for the particular row. However, you can also group numeric or datetime columns based on the specified format. To enable this feature, you need to set the [enableGroupByFormat](../../api/grid/column/#enablegroupbyformat) property of the corresponding grid column. This feature allows you to group numeric or datetime columns based on a specific format.
+By default, columns are grouped by the data or value present for the particular row. However, you can also group numeric or datetime columns based on the specified format. To enable this feature, you need to set the [enableGroupByFormat](../../api/grid/column#enablegroupbyformat) property of the corresponding grid column. This feature allows you to group numeric or datetime columns based on a specific format.
 
 The following example demonstrates how to perform a group action using the `enableGroupByFormat` property for the  **OrderDate** and **Freight** columns of the grid. 
 
@@ -308,7 +308,7 @@ The following example demonstrates how to perform a group action using the `enab
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid offers a convenient feature to expand or collapse grouped rows, allowing you to control the visibility of grouped data. The option is useful when dealing with a large dataset that contains many groups, and there is a need to provide a summarized view by initially hiding the details.
 
-To collapse all grouped rows at the initial rendering of the Grid using the [dataBound](../../api/grid/#databound) event along with the [collapseAll](../../api/grid/group/#collapseall) method.
+To collapse all grouped rows at the initial rendering of the Grid using the [dataBound](../../api/grid#databound) event along with the [collapseAll](../../api/grid/group#collapseall) method.
 
 The following example demonstrates how to collapse all grouped rows at the initial rendering.
 
@@ -339,7 +339,7 @@ The following example demonstrates how to collapse all grouped rows at the initi
 {% previewsample "page.domainurl/code-snippet/grid/grid-grouping-collapse" %}
 {% endif %}
 
-> You can also collapse all the grouped rows at the initial rendering using the [groupCollapseAll](../../api/grid/#groupcollapseall) method inside the [dataBound](../../api/grid/#databound) event. This is demonstrated in the below code snippet,
+> You can also collapse all the grouped rows at the initial rendering using the [groupCollapseAll](../../api/grid#groupcollapseall) method inside the [dataBound](../../api/grid#databound) event. This is demonstrated in the below code snippet,
 
 ```typescript
     function dataBound() {
@@ -349,11 +349,11 @@ The following example demonstrates how to collapse all grouped rows at the initi
         }
     }
 ```
-> The collapse all approach is suggested for a limited number of records since collapsing every grouped record takes some time. If you have a large dataset, it is recommended to use [lazy-load grouping](../../grid/grouping/lazy-load-grouping). This approach is also applicable for the [groupExpandAll](../../api/grid/#groupexpandall) method.
+> The collapse all approach is suggested for a limited number of records since collapsing every grouped record takes some time. If you have a large dataset, it is recommended to use [lazy-load grouping](../../grid/grouping/lazy-load-grouping). This approach is also applicable for the [groupExpandAll](../../api/grid#groupexpandall) method.
 
 ## Group or ungroup column externally
 
-By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid supports interaction-oriented column grouping, where users manually group columns by dragging and dropping them into the grouping area of the grid. Grid provides an ability to group and ungroup a column using [groupColumn](../../api/grid/#groupcolumn) and [ungroupColumn](../../api/grid/#ungroupcolumn) methods. These methods provide a programmatic approach to perform column grouping and ungrouping.
+By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid supports interaction-oriented column grouping, where users manually group columns by dragging and dropping them into the grouping area of the grid. Grid provides an ability to group and ungroup a column using [groupColumn](../../api/grid#groupcolumn) and [ungroupColumn](../../api/grid#ungroupcolumn) methods. These methods provide a programmatic approach to perform column grouping and ungrouping.
 
 {% if page.publishingplatform == "typescript" %}
  
@@ -398,15 +398,15 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid offe
 
 ### Expand or collapse all grouped rows
 
-Grid provides an ability to expand or collapse grouped rows using [groupExpandAll](../../api/grid/#groupexpandall) and [groupCollapseAll](../../api/grid/#groupcollapseall) methods respectively.
+Grid provides an ability to expand or collapse grouped rows using [groupExpandAll](../../api/grid#groupexpandall) and [groupCollapseAll](../../api/grid#groupcollapseall) methods respectively.
 
 {% if page.publishingplatform == "typescript" %}
  
-In the following example, the [EJ2 Toggle Switch Button](../../switch/getting-started) control is added to expand or collapse grouped rows. When the switch is toggled, the [change](../../api/switch/#change) event is triggered and the `groupExpandAll` and `groupCollapseAll` methods are called to expand or collapse grouped rows.
+In the following example, the [EJ2 Toggle Switch Button](../../switch/getting-started) control is added to expand or collapse grouped rows. When the switch is toggled, the [change](../../api/switch#change) event is triggered and the `groupExpandAll` and `groupCollapseAll` methods are called to expand or collapse grouped rows.
 
 {% elsif page.publishingplatform == "javascript" %}
  
-In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-getting-started) control is added to expand or collapse grouped rows. When the switch is toggled, the [change](../../api/switch/#change) event is triggered and the `groupExpandAll` and `groupCollapseAll` methods are called to expand or collapse grouped rows.
+In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-getting-started) control is added to expand or collapse grouped rows. When the switch is toggled, the [change](../../api/switch#change) event is triggered and the `groupExpandAll` and `groupCollapseAll` methods are called to expand or collapse grouped rows.
 
 {% endif %}
 
@@ -441,7 +441,7 @@ In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-gettin
 
 Expanding or collapsing selected grouped rows in a Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid involves implementing the functionality to expand or collapse grouped records programatically.
 
-To enable the expand and collapse functionality for grouped rows in a grid, you can utilize the [expandCollapseRows](../..api/grid/group/#expandcollapserows) method. This method is designed to handle two scenarios such as expanding collapsed grouped records and collapsing expanded grouped records.
+To enable the expand and collapse functionality for grouped rows in a grid, you can utilize the [expandCollapseRows](../../api/grid/group#expandcollapserows) method. This method is designed to handle two scenarios such as expanding collapsed grouped records and collapsing expanded grouped records.
 
 To implement this functionality, follow these steps:
 
@@ -484,7 +484,7 @@ The following example demonstrates the function that collapses the selected row 
 
 The clear grouping feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid allows you to removing all the grouped columns from the grid. This feature provides a convenient way to clear the grouping of columns in your application.
 
-To clear all the grouped columns in the Grid, you can utilize the [clearGrouping](../../api/grid/#cleargrouping) method of the grid.
+To clear all the grouped columns in the Grid, you can utilize the [clearGrouping](../../api/grid#cleargrouping) method of the grid.
 
 The following example demonstrates how to clear the grouping using `clearGrouping` method in the external button click.
 
@@ -517,7 +517,7 @@ The following example demonstrates how to clear the grouping using `clearGroupin
 
 ## Grouping Events
 
-The Grid control provides two events that are triggered during the group action such as [actionBegin](../../api/grid/#actionbegin) and [actionComplete](../../api/grid/#actioncomplete). The `actionBegin` event is triggered before the group action starts, and the `actionComplete` event is triggered after the group action is completed. You can use these events to perform any custom action based on the grouping.
+The Grid control provides two events that are triggered during the group action such as [actionBegin](../../api/grid#actionbegin) and [actionComplete](../../api/grid#actioncomplete). The `actionBegin` event is triggered before the group action starts, and the `actionComplete` event is triggered after the group action is completed. You can use these events to perform any custom action based on the grouping.
 
 1. **actionBegin event**: `actionBegin` event is triggered before the group action begins. It provides a way to perform any necessary operations before the group action takes place. This event provides a parameter that contains the current grid state, including the current group field name, requestType information and etc.
 
@@ -552,7 +552,7 @@ The following example demonstrates how the `actionBegin` and `actionComplete` ev
 {% previewsample "page.domainurl/code-snippet/grid/grouping-event-cs1" %}
 {% endif %}
 
-> The [args.requestType](../../api/grid/sortEventArgs/#requesttype) property represents the name of the current action being performed. For instance, during grouping, the `args.requestType` value will be **grouping**.
+> The [args.requestType](../../api/grid/sortEventArgs#requesttype) property represents the name of the current action being performed. For instance, during grouping, the `args.requestType` value will be **grouping**.
 
 ## Limitations
 

@@ -178,9 +178,9 @@ let chartData: any[] = [
 {% endhighlight %}
 {% endtabs %}
 
-Add a series object to the 3D Chart by using [`series`](../api/chart3d/chart3dseries/) property. Now map the field names `month` and `sales` in the JSON data to the [`xName`](../api/chart3d/chart3dseries#xname) and [`yName`](../api/chart3d/chart3dseries#yname) properties of the series, then set the JSON data to [`dataSource`](../api/chart3d/chart3dseries#datasource) property.
+Add a series object to the 3D Chart by using [`series`](../api/chart3d/chart3dseriesmodel/) property. Now map the field names `month` and `sales` in the JSON data to the [`xName`](../api/chart3d/chart3dseriesmodel#xname) and [`yName`](../api/chart3d/chart3dseriesmodel#yname) properties of the series, then set the JSON data to [`dataSource`](../api/chart3d/chart3dseriesmodel#datasource) property.
 
-Since the JSON contains category data, set the [`valueType`](../api/chart3d/chart3daxis#valuetype) for horizontal axis to Category. By default, the axis valueType is Numeric.
+Since the JSON contains category data, set the [`valueType`](../api/chart3d/chart3daxismodel#valuetype) for horizontal axis to Category. By default, the axis valueType is Numeric.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -193,7 +193,7 @@ Since the JSON contains category data, set the [`valueType`](../api/chart3d/char
           
 {% previewsample "page.domainurl/code-snippet/chart3d/getting-started-cs2" %}
 
-The sales data are in thousands, so format the vertical axis label by adding `$` as a prefix and `K` as a suffix to each label. This can be achieved by setting the `${value}K` to the [`labelFormat`](../api/chart3d/chart3daxis#labelformat) property of axis. Here, `{value}` act as a placeholder for each axis label.
+The sales data are in thousands, so format the vertical axis label by adding `$` as a prefix and `K` as a suffix to each label. This can be achieved by setting the `${value}K` to the [`labelFormat`](../api/chart3d/chart3daxismodel#labelformat) property of axis. Here, `{value}` act as a placeholder for each axis label.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -223,7 +223,7 @@ You can add a title using [`title`](../api/chart3d/chart3DModel/#title) property
 
 ## Enable legend
 
-You can use legend for the 3D Chart by setting the [`visible`](../api/chart3d/chart3dlegendsettings#visible) property to true in [`legendSettings`](../api/chart3d/chart3DModel/#legendsettings) object and by injecting the `Legend3D` module using `Chart3D.Inject(Legend3D)` method.
+You can use legend for the 3D Chart by setting the [`visible`](../api/chart3d/chart3dlegendsettingsmodel#visible) property to true in [`legendSettings`](../api/chart3d/chart3DModel/#legendsettings) object and by injecting the `Legend3D` module using `Chart3D.Inject(Legend3D)` method.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -238,7 +238,7 @@ You can use legend for the 3D Chart by setting the [`visible`](../api/chart3d/ch
 
 ## Add data label
 
-You can add data labels to improve the readability of the 3D Chart. This can be achieved by setting the [`visible`](../api/chart3d/chart3ddatalabelsettingsmodel#visible) property to true in the [`dataLabel`](../api/chart3d/chart3dseries#datalabel) object and by injecting `DataLabel3D` module using `Chart3D.Inject(DataLabel3D)` method. Now, the data labels are arranged smartly based on series.
+You can add data labels to improve the readability of the 3D Chart. This can be achieved by setting the [`visible`](../api/chart3d/chart3ddatalabelsettingsmodel#visible) property to true in the [`dataLabel`](../api/chart3d/chart3dseriesmodel#datalabel) object and by injecting `DataLabel3D` module using `Chart3D.Inject(DataLabel3D)` method. Now, the data labels are arranged smartly based on series.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

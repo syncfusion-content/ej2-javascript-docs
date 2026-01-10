@@ -3,7 +3,7 @@ layout: post
 title: Index in ##Platform_Name## Color picker control | Syncfusion
 description: Learn here all about Index in Syncfusion ##Platform_Name## Color picker control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Index 
+control: Overview
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##

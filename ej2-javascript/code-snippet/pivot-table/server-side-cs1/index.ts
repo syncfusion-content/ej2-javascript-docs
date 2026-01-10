@@ -16,6 +16,7 @@ let pivotTableObj: PivotView = new PivotView({
         formatSettings: [{ name: 'Amount', format: 'C0' }, { name: 'Sold', format: 'N0' }],
         filters: []
     },
+    // Attach an Authorization header before each server call
     beforeServiceInvoke: function (args: any) {
         const token = getAuthToken(); // obtain securely at runtime
 

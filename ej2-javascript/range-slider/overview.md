@@ -3,7 +3,7 @@ layout: post
 title: Index in ##Platform_Name## Range slider control | Syncfusion
 description: Learn here all about Index in Syncfusion ##Platform_Name## Range slider control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Index 
+control: Overview 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -20,20 +20,20 @@ There are three types of Slider:
 
 ## Key Features
 
-* **[Types](./types/)**: Provided three types of Slider.
+* **[Types](./types)**: Provided three types of Slider.
 
-* **[Orientation](./orientation/)**: Displays the Slider in horizontal or vertical direction.
+* **[Orientation](./orientation)**: Displays the Slider in horizontal or vertical direction.
 
-* **[Buttons](./tooltip/#buttons)**: Provided built-in support to render the buttons in both edges of the Slider.
+* **[Buttons](./tooltip#buttons)**: Provided built-in support to render the buttons in both edges of the Slider.
 
 * **[Tooltip](./tooltip)**: Displays a tooltip to show the currently selected value.
 
-* **[Ticks](./ticks/)**: Displays a scale with small and big ticks.
+* **[Ticks](./ticks)**: Displays a scale with small and big ticks.
 
-* **[Format](./format/)**: Customize the slider values into various format.
+* **[Format](./format)**: Customize the slider values into various format.
 
-* **[Limits and Drag Interval](./limits/)**: Slider thumb movement restriction and interval dragging.
+* **[Limits and Drag Interval](./limits)**: Slider thumb movement restriction and interval dragging.
 
-* **[Accessibility](./accessibility/)**: Built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications.
+* **[Accessibility](./accessibility)**: Built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications.
 
-* **[Keyboard Interaction](./accessibility/#keyboard-interaction)**: The Slider can be intractable through the keyboard.
+* **[Keyboard Interaction](./accessibility#keyboard-interaction)**: The Slider can be intractable through the keyboard.

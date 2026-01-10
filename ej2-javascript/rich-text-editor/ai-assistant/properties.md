@@ -1,13 +1,13 @@
-----
+---
 layout: post
-title: AI Assistant Configuration in ##Platform_Name## Rich Text Editor control
+title: Configure AI Assistant in ##Platform_Name## Rich Text Editor | Syncfusion
 description: Learn about the AI Assistant feature in the Syncfusion Essential JS 2 ##Platform_Name## Rich Text Editor control.
 platform: ej2-javascript
 control: Properties of AI Assistant
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
-----
+---
 
 # Properties of AI Assistant
 
@@ -206,27 +206,27 @@ In the below sample, the maximum prompt history is configured to `30`, and when 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor/ai-assistant/promt-history/index.ts %}
+{% include code-snippet/rich-text-editor/ai-assistant/prompt-history/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor/ai-assistant/promt-history/index.html %}
+{% include code-snippet/rich-text-editor/ai-assistant/prompt-history/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/ai-assistant/promt-history" %}
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/ai-assistant/prompt-history" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor/ai-assistant/promt-history/index.js %}
+{% include code-snippet/rich-text-editor/ai-assistant/prompt-history/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor/ai-assistant/promt-history/index.html %}
+{% include code-snippet/rich-text-editor/ai-assistant/prompt-history/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/ai-assistant/promt-history" %}
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/ai-assistant/prompt-history" %}
 {% endif %}
 
 ## Setting the Banner

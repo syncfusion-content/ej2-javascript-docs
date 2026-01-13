@@ -15,7 +15,7 @@ You can get the current word or paragraph content from the JavaScript Document E
 
 ## Select and get the word in current cursor position
 
-You can use [`selectCurrentWord`](../../api/document-editor/selection#selectcurrentword) API in selection module to select the current word at cursor position and use [`text`](../../api/document-editor/selection/#text-code-classlanguage-textstringcode) API to get the selected content as plain text from JavaScript Document Editor component.
+You can use [`selectCurrentWord`](../../api/document-editor/selection/#selectcurrentword) API in selection module to select the current word at cursor position and use [`text`](../../api/document-editor/selection/#text-code-classlanguage-textstringcode) API to get the selected content as plain text from JavaScript Document Editor component.
 
 The following example code illustrates how to select and get the current word as plain text.
 
@@ -38,7 +38,7 @@ container.documentEditor.selection.selectCurrentWord();
 let selectedContent: string = container.documentEditor.selection.text;
 ```
 
-To get the bookmark content as SFDT (rich text), please check this [`link`](../../document-editor/how-to/get-the-selected-content/#get-the-selected-content-as-sfdt-rich-text)
+To get the bookmark content as SFDT (rich text), please check this [`link`](../../document-editor/how-to/get-the-selected-content#get-the-selected-content-as-sfdt-rich-text)
 
 ## Select and get the paragraph in current cursor position
 

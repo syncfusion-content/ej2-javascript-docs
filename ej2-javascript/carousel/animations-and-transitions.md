@@ -1,16 +1,15 @@
 ---
 layout: post
-title: Animations and transitions in ##Platform_Name## Carousel control | Syncfusion
-description: Learn here all about Animations and transitions in Syncfusion ##Platform_Name## Carousel control of Syncfusion Essential JS 2 and more.
+title: Animations in TypeScript Carousel Component | Syncfusion
+description: Learn here all about animations and transitions in Syncfusion Essential TypeScript Carousel Component, it's elements and more.
 platform: ej2-javascript
 control: Animations and transitions 
-publishingplatform: ##Platform_Name##
+publishingplatform: TypeScript
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Animations and transitions in ##Platform_Name## Carousel control
-
+# Animations in TypeScript Carousel Component
 ## Animations
 
 ### Fade animation

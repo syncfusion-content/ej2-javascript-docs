@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Overview of ##Platform_Name## Document editor control | Syncfusion
-description: Document editor for ##Platform_Name## is used to create, edit, view and print word documents.
+title: Overview of TypeScript Document editor Control | Syncfusion
+description: Document editor for TypeScript is used to create, edit, view and print word documents of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Index 
-publishingplatform: ##Platform_Name##
+publishingplatform: TypeScript
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Overview
+# Overview of TypeScript Document editor Control
 
 The Document Editor component is used to create, edit, view, and print Word documents in web applications. All the user interactions and editing operations that run purely in the client-side provides much faster editing experience to the users.
 
@@ -38,14 +38,14 @@ The Document Editor component is used to create, edit, view, and print Word docu
 
 ### Other platforms
 
-* [Javascript(ES5)](https://ej2.syncfusion.com/javascript/documentation/document-editor/getting-started/)
-* [Javascript](https://ej2.syncfusion.com/documentation/document-editor/getting-started/)
-* [Angular](https://ej2.syncfusion.com/angular/documentation/document-editor/getting-started/)
-* [React](https://ej2.syncfusion.com/react/documentation/document-editor/getting-started/)
-* [Vue](https://ej2.syncfusion.com/vue/documentation/document-editor/getting-started/)
-* [ASP.NET Core](https://ej2.syncfusion.com/aspnetcore/documentation/document-editor/getting-started-core/)
-* [ASP.NET MVC](https://ej2.syncfusion.com/aspnetmvc/documentation/document-editor/getting-started/)
-* [Blazor](https://blazor.syncfusion.com/documentation/document-editor/getting-started/server-side-application/)
+* [Javascript(ES5)](https://ej2.syncfusion.com/javascript/documentation/document-editor/getting-started)
+* [Javascript](https://ej2.syncfusion.com/documentation/document-editor/getting-started)
+* [Angular](https://ej2.syncfusion.com/angular/documentation/document-editor/getting-started)
+* [React](https://ej2.syncfusion.com/react/documentation/document-editor/getting-started)
+* [Vue](https://ej2.syncfusion.com/vue/documentation/document-editor/getting-started)
+* [ASP.NET Core](https://ej2.syncfusion.com/aspnetcore/documentation/document-editor/getting-started-core)
+* [ASP.NET MVC](https://ej2.syncfusion.com/aspnetmvc/documentation/document-editor/getting-started)
+* [Blazor](https://blazor.syncfusion.com/documentation/document-editor/getting-started/server-side-application)
 
 ### Supported platforms for server-side dependencies
 

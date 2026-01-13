@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Load accordion items dynamically in ##Platform_Name## Accordion control | Syncfusion
-description: Learn here all about Load accordion items dynamically in Syncfusion ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more.
+title: Load accordion items dynamically in JavaScript Accordion | Syncfusion
+description: Learn here all about load accordion items dynamically in Syncfusion Essential JavaScript Accordion control, it's elements and more.
 platform: ej2-javascript
 control: Load accordion items dynamically 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Load accordion items dynamically in ##Platform_Name## Accordion control
+# Load accordion items dynamically in JavaScript Accordion Control
 
-Accordion items can be added dynamically by passing the item and index value with the [`addItem`](../../api/accordion#additem) method.
+Accordion items can be added dynamically by passing the item and index value with the [`addItem`](../../api/accordion/#additem) method.
 
-In the following demo, new items are added dynamically when you expand an Accordion header using [`expanded`](../../api/accordion#expanded) event.
+In the following demo, new items are added dynamically when you expand an Accordion header using [`expanded`](../../api/accordion/#expanded) event.
 
 * Data is fetched from the data source and it is formatted as a JSON object with `header` and `content` fields.
 

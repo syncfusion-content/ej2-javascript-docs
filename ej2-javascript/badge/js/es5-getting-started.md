@@ -24,7 +24,7 @@ The Essential JS 2 JavaScript components can be initialized by using any of the 
 
 **Step 1:** Create an app folder `myapp` for Essential JS 2 JavaScript components.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2/confirm) build installed location.
+**Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
 **Syntax:**
 > Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
@@ -110,4 +110,4 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
 
 ## See Also
 
-[Types of Badge](./types/)
+[Types of Badge](./types)

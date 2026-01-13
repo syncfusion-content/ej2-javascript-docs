@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Customize the expand and collapse icons in ##Platform_Name## Treeview control
 
-You can customize TreeView expand and collapse icons by using the [`cssClass`](../../api/treeview#cssclass)&nbsp;property of TreeView.
+You can customize TreeView expand and collapse icons by using the [`cssClass`](../../api/treeview/#cssclass)&nbsp;property of TreeView.
 Refer to the sample to customize expand/collapse icons.
 
 {% if page.publishingplatform == "typescript" %}

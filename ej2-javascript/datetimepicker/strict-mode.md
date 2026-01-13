@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Strict mode in ##Platform_Name## Datetimepicker control
 
-The [`strictMode`](../api/datetimepicker#strictmode) is an act, that allows the user to enter only the valid date and time within the specified min/max range in textbox. If the input entered is invalid, then the component will stay with the previous value. Else, if the date and time is
+The [`strictMode`](../api/datetimepicker/#strictmode) is an act, that allows the user to enter only the valid date and time within the specified min/max range in textbox. If the input entered is invalid, then the component will stay with the previous value. Else, if the date and time is
 out of range, then the component will set the date to the min/max value.
 
 The following example demonstrates the DateTimePicker in `strictMode` with min/max range of `5/5/2019 2:00 AM` to `5/25/2019 2:00 AM`. Here, it allows to enter only the valid date and time within the specified range. If you are trying to enter the out-of-range value as

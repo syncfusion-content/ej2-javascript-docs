@@ -128,4 +128,4 @@ namespace LazyLoadingServices.Controllers
 
 ## See Also
 
-* [Virtual scrolling in Agenda view](./views/#agenda-view)
+* [Virtual scrolling in Agenda view](./views#agenda-view)

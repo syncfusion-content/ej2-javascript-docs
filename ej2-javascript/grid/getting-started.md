@@ -32,11 +32,7 @@ Following is the list of minimum dependencies required to use the grid.
 
 ## Setup for local development
 
-<<<<<<< HEAD
-Clone the Essential<sup style="font-size:70%">&reg;</sup> JS 2 quickstart application project from [GitHub](https://github.com/syncfusion/ej2-quickstart.git), and install the necessary npm packages using the following command line scripts.
-=======
 Clone the Essential JS 2 quickstart application project from [GitHub](https://github.com/syncfusion/ej2-quickstart), and install the necessary npm packages using the following command line scripts.
->>>>>>> dffb264cd8572d95b7b8d4750a807381c4a16357
 
 ```
 git clone https://github.com/syncfusion/ej2-quickstart.git quickstart

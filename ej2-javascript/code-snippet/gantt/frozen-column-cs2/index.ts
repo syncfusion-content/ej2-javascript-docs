@@ -1,5 +1,7 @@
-import { Gantt } from '@syncfusion/ej2-gantt';
+import { Gantt, Freeze } from '@syncfusion/ej2-gantt';
 import { GanttData } from './datasource.ts';
+
+Gantt.Inject(Freeze);
 
 var taskSettings = {
     id: 'TaskID',

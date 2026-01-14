@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Introduction in ##Platform_Name## Introduction md control | Syncfusion
-description: Learn here all about Introduction in Syncfusion ##Platform_Name## Introduction md control of Syncfusion Essential JS 2 and more.
+title: Introduction in JavaScript Introduction md control | Syncfusion
+description: Learn here all about Introduction in Syncfusion JavaScript Introduction md control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Introduction 
-publishingplatform: ##Platform_Name##
+publishingplatform: JavaScript
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -190,8 +190,8 @@ If you are still not able to find the information that you are looking for in th
 
 ## See also
 
-* [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/)
-* [Getting Started with Syncfusion Javascript UI controls](https://ej2.syncfusion.com/documentation/getting-started/quick-start/)
-* [Getting Started with Syncfusion Javascript and Ionic Frameworks](https://ej2.syncfusion.com/documentation/getting-started/ionic/)
-* [Getting started with Syncfusion Javascript and Cordova CLI](https://ej2.syncfusion.com/documentation/getting-started/cordova/)
-* [Getting Started with Syncfusion Javascript and Meteor Framework](https://ej2.syncfusion.com/documentation/getting-started/meteor/)
+* [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/estudio)
+* [Getting Started with Syncfusion Javascript UI controls](https://ej2.syncfusion.com/documentation/getting-started/quick-start)
+* [Getting Started with Syncfusion Javascript and Ionic Frameworks](https://ej2.syncfusion.com/documentation/getting-started/ionic)
+* [Getting started with Syncfusion Javascript and Cordova CLI](https://ej2.syncfusion.com/documentation/getting-started/cordova)
+* [Getting Started with Syncfusion Javascript and Meteor Framework](https://ej2.syncfusion.com/documentation/getting-started/meteor)

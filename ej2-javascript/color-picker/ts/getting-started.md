@@ -159,7 +159,7 @@ The following example shows a default ColorPicker component.
 
 ## Inline type
 
-By default, the ColorPicker will be rendered using SplitButton and open the pop-up to access the ColorPicker. To render the ColorPicker container alone and to access it directly, render it as inline. It can be achieved by setting the [`inline`](../api/color-picker/#inline) property to `true`.
+By default, the ColorPicker will be rendered using SplitButton and open the pop-up to access the ColorPicker. To render the ColorPicker container alone and to access it directly, render it as inline. It can be achieved by setting the [`inline`](../api/color-picker#inline) property to `true`.
 
 The following sample shows the inline type rendering of ColorPicker.
 
@@ -177,7 +177,7 @@ The following sample shows the inline type rendering of ColorPicker.
           
 {% previewsample "page.domainurl/code-snippet/colorpicker/getting-started/inline-cs1" %}
 
->> The `showButtons` property is disabled in this sample because the control buttons are not needed for inline type. To know about the control buttons functionality, refer to the [`showButtons`](../how-to/hide-control-buttons) sample.
+>> The `showButtons` property is disabled in this sample because the control buttons are not needed for inline type. To know about the control buttons functionality, refer to the [`showButtons`](https://ej2.syncfusion.com/documentation/color-picker/how-to/hide-control-buttons) sample.
 
 ## See Also
 

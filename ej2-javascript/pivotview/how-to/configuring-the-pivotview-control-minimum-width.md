@@ -1,21 +1,30 @@
 ---
 layout: post  
-title: Configuring the minimum width in the ##Platform_Name## Pivot Table Control | Syncfusion  
-description: Learn all about configuring the minimum width in the Syncfusion ##Platform_Name## Pivot Table control of Syncfusion Essential JS 2, and more.  
+title: Configure minimum width in Javascript | Syncfusion
+description: Learn all about configuring the minimum width in the Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2, and more.  
 platform: ej2-javascript  
-control: Configuring the minimum width in the Pivot Table control  
+control: Configuring the minimum width in the Pivot Table component  
 publishingplatform: ##Platform_Name##  
 documentation: ug  
 domainurl: ##DomainURL##  
 ---
 
-# Configuring the minimum width in the ##Platform_Name## Pivot Table control
+# Configuring the minimum width in the JavaScript
 
-The pivot table control allows you to configure its minimum width using the `minWidth` property. This property is useful for ensuring the component maintains a consistent layout and responsiveness across different screen sizes.
+The Typescript Pivot Table component provides the `minWidth` property to define the minimum width threshold for the component. This configuration ensures the pivot table maintains optimal usability and prevents layout issues when the container size decreases below the specified minimum width value.
 
-> When the pivot table has the [Grouping Bar](https://ej2.syncfusion.com/documentation/pivotview/grouping-bar) enabled, the `minWidth` property is set to **400** pixels by default to accommodate the grouping bar UI elements. Without the [Grouping Bar](https://ej2.syncfusion.com/documentation/pivotview/grouping-bar), the `minWidth` property defaults to **310** pixels.
+## Default minimum width behavior
 
-To customize the minimum width, set the `minWidth` property to your desired value (in pixels) as shown below:
+The pivot table automatically sets appropriate default minimum width values based on its current configuration:
+
+| Configuration | Default Minimum Width | Purpose |
+|---------------|----------------------|---------|
+| With [Grouping Bar](../grouping-bar) enabled | 400 pixels | Accommodates grouping bar UI elements and drag-drop functionality |
+| Without [Grouping Bar](../grouping-bar) | 310 pixels | Provides sufficient space for basic pivot table operations |
+
+## Setting custom minimum width
+
+To customize the minimum width according to specific layout requirements, configure the `minWidth` property with the desired pixel value:
 
 {% if page.publishingplatform == "typescript" %}
 

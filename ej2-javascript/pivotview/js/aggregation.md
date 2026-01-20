@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Aggregation in ##Platform_Name## Pivotview control | Syncfusion
-description: Learn here all about Aggregation in Syncfusion ##Platform_Name## Pivotview control of Syncfusion Essential JS 2 and more.
+title: Aggregation in ##Platform_Name## Pivot Table component | Syncfusion
+description: Learn here all about Aggregation in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Aggregation 
 publishingplatform: ##Platform_Name##
@@ -9,30 +9,30 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Aggregation in ##Platform_Name## Pivotview control
+# Aggregation in ##Platform_Name## Pivot Table component
 
 > This feature is applicable only for the relational data source.
 
-End user can perform calculations over a group of values (exclusively for value fields bound in value axis) using the aggregation option. By default, values are added (summed) together. The other aggregation types are explained below.
+End users can perform calculations on groups of values (specifically for value fields placed in the value axis) by using different aggregation types. By default, values are combined by summing them. Additional aggregation types are described below.
 
-> The fields with data type such as number support all aggregation types mentioned below except for **"CalculatedField"**. The fields with data type such as string, date, datetime, boolean, etc., support **"Count"** and **"DistinctCount"** aggregation types alone.
+> Numeric fields support all aggregation types listed below, except **CalculatedField**. Fields of type string, date, datetime, boolean, and similar types support only **Count** and **DistinctCount** aggregation.
 
 | Operator | Description |
 |------|-------------|
-| Sum| Displays the pivot table values with sum.|
-| Product| Displays the pivot table values with product.|
-| Count| Displays the pivot table values with count.|
-| DistinctCount| Displays the pivot table values with distinct count.|
-| Min| Displays the pivot table with minimum value.|
-| Max| Displays the pivot table with maximum value.|
-| Avg| Displays the pivot table values with average.|
-| Median| Displays the pivot table values with median.|
-| Index| Displays the pivot table values with index.|
-| PopulationStDev| Displays the pivot table values with standard deviation of population.|
-| SampleStDev| Displays the pivot table values with sample standard deviation.|
-| PopulationVar| Displays the pivot table values with variance of population.|
-| SampleVar| Displays the pivot table values with sample variance.|
-| RunningTotals| Displays the pivot table values with running totals.|
+| Sum| Displays the total sum for the selected field values.|
+| Product| Displays the product of the selected field values.|
+| Count| Displays the number of records for the selected field.|
+| DistinctCount| Displays the number of unique records for the selected field.|
+| Min| Displays the minimum value for the selected field.|
+| Max| Displays the maximum value for the selected field.|
+| Avg| Displays the average (mean) of the selected field values.|
+| Median| Displays the median value for the selected field.|
+| Index| Displays the index value for the selected field data.|
+| PopulationStDev| Displays the standard deviation of the population for the selected field.|
+| SampleStDev| Displays the sample standard deviation for the selected field.|
+| PopulationVar| Displays the variance of the population for the selected field.|
+| SampleVar| Displays the sample variance for the selected field.|
+| RunningTotals| Displays the running total for the selected field values.|
 | DifferenceFrom| Displays the pivot table values with difference from the value of the base item in the base field.|
 | PercentageOfDifferenceFrom| Displays the pivot table values with percentage difference from the value of the base item in the base field.|
 | PercentageOfGrandTotal| Displays the pivot table values with percentage of grand total of all values.|
@@ -45,15 +45,11 @@ End user can perform calculations over a group of values (exclusively for value 
 
 ## Assigning aggregation type for value fields through API
 
-For each value field, the aggregation type can be set using the property `type` for each value fields through code-behind. Meanwhile, aggregation types like **DifferenceFrom** and **PercentageOfDifferenceFrom** can check for specific field of specific item using `baseField` and `baseItem` properties. Likewise, **PercentageOfParentTotal** type can for specific field using `baseField` property. For instance, the aggregation type **DifferenceFrom** would intake the specified field and its corresponding member as input and its value is compared across other members in the same field and also across different fields to formulate an appropriate output value.
+For each value field, the aggregation type can be set using the property [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings#type) in [`values`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#values). Meanwhile, aggregation types like **DifferenceFrom** and **PercentageOfDifferenceFrom** can check for specific field of specific item using [`baseField`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/fieldoptionsmodel#basefield) and [`baseItem`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/fieldoptionsmodel#baseitem) properties. Likewise, **PercentageOfParentTotal** type can for specific field using [`baseField`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/fieldoptionsmodel#basefield) property. For instance, the aggregation type **DifferenceFrom** would intake the specified field and its corresponding member as input and its value is compared across other members in the same field and also across different fields to formulate an appropriate output value.
 
-It can be configured using `type` option for each value fields through code-behind. The settings required for summarize the value fields at initial rendering are:
-
-* `type`: It allows to set the aggregate type of the field.
-* `baseField`: It allows to set the base field to aggregate the values.
-* `baseItem`: It allows to set the base item to aggregate the values.
-
-> By default, the aggregation will be considered as `Sum` to the value fields which had number type and for the value fields which had non-number type such as string, date, datetime, boolean, etc., the aggregation type will be considered as `Count`. **DifferenceFrom** and **PercentageOfDifferenceFrom** can check for specific field of the specific item using `baseField` and `baseItem`. We can consider the **PercentageOfParentTotal** for specific field using `baseField`.
+* [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings#type): It allows to set the aggregate type of the field.
+* [`baseField`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/fieldoptionsmodel#basefield): It allows to set the specific field to aggregate the values.
+* [`baseItem`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/fieldoptionsmodel#baseitem): It allows to set the specific member to aggregate the values.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -66,19 +62,23 @@ It can be configured using `type` option for each value fields through code-behi
         
 {% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs93" %}
 
+> By default, the aggregation will be considered as **Sum** to the value fields which had number type and for the value fields which had non-number type values such as string, date, datetime, boolean, etc., the aggregation type will be considered as **Count**.
+
 ## Modifying aggregation type for value fields at runtime
 
-Aggregation types can be changed easily through UI at runtime. The value fields bound to grouping bar and field list appears with a dropdown icon which helps to select an appropriate aggregation type for the respective value field. On selection, the values in the pivot table will be changed dynamically.
+You can dynamically modify the aggregation type for value fields in the Pivot Table component through the UI at runtime. Value fields, displayed in the grouping bar and field list, include a dropdown icon that allows you to select from various aggregation types (e.g., **Sum**, **Average**, **Count**). Once you select a new aggregation type, the pivot table updates instantly to reflect the change, providing a seamless experience for data analysis.
 
 <!-- markdownlint-disable MD012 -->
-![output](images/aggregation_fl_menu.png "List of pre-defined aggregation types to be changed via Field List")
+![List of pre-defined aggregation types to be changed via Field List](images/aggregation_fl_menu.png)
 <br/>
-<br/>
-![output](images/aggregation_gb_menu.png "List of pre-defined aggregation types to be changed via Grouping Bar")
+
+![List of pre-defined aggregation types to be changed via Grouping Bar](images/aggregation_gb_menu.png)
 
 ## Show desired aggregation types in its dropdown menu
 
-By default, all the aggregation types are displayed in the dropdown menu available in buttons. However, based on the request for an application, we may need to show selective aggregation types on our own. This can be achieved using the [`aggregateTypes`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#aggregatetypes) property.
+By default, the dropdown menu for value fields includes all available aggregation types. However, you can customize this menu to display only specific aggregation types relevant to your application using the [`aggregateTypes`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#aggregatetypes) property. This allows you to tailor the user experience by limiting the options to those that best fit your use case.
+
+The following code demonstrates how to configure the pivot table component to display only the **DistinctCount**, **Average**, and **Product** aggregation types in the dropdown menu.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -93,7 +93,9 @@ By default, all the aggregation types are displayed in the dropdown menu availab
 
 ## Hiding aggregation type from button text
 
-By default, in value axis each field would be displayed by its name and aggregation type together. To hide aggregation type and display field name alone, set the property [`showAggregationOnValueField`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#showaggregationonvaluefield)  in [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/) to **false**.
+By default, each field in the value axis is displayed with its name and aggregation type (e.g., "Sum of Units Sold"). To display only the field name (e.g., "Units Sold") and hide the aggregation type, set the [`showAggregationOnValueField`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#showaggregationonvaluefield) property in the [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings) to **false**.
+
+This customization enhances the clarity of the pivot table’s interface by simplifying the button text, making it more concise and user-friendly.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -108,9 +110,9 @@ By default, in value axis each field would be displayed by its name and aggregat
 
 ## Hiding aggregation type icon from UI
 
-By default, the icon to set aggregation type is enabled in the grouping bar. To disable this icon, set the property [`showValueTypeIcon`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/groupingBarSettingsModel/#showvaluetypeicon) in [`groupingBarSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/groupingBarSettingsModel/#showvaluetypeicon) to **false**.
+By default, the dropdown icon to change the aggregation type is visible in the grouping bar. To hide this icon, set the [`showValueTypeIcon`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/groupingBarSettings#showvaluetypeicon) property within [`groupingBarSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#groupingbarsettings) to **false**.
 
-> Icon to change the aggregation type can be hidden only in Grouping Bar but not in Field List at the moment.
+> The aggregation type icon can only be hidden in the Grouping Bar, not in the Field List.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -127,11 +129,11 @@ By default, the icon to set aggregation type is enabled in the grouping bar. To 
 
 ### AggregateCellInfo
 
-The event [`aggregateCellInfo`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#aggregatecellinfo) triggers every time while rendering each value cell. This allows user to change the cell value and skip formatting if applied. It has following parameters:
+The [`aggregateCellInfo`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#aggregatecellinfo) event triggers each time a value cell is rendered. This allows users to override the cell's value or skip formatting. The event provides the following parameters:
 
 * `fieldName` - It holds current cell's field name.
 * `row` - It holds current cell's row value.
-* `column` - It holds current cell's row value.
+* `column` - It holds current cell's column value.
 * `value` - It holds value of current cell.
 * `cellSets` - It holds raw data for the aggregated value cell.
 * `rowCellType` - It holds row cell type value.
@@ -152,19 +154,19 @@ The event [`aggregateCellInfo`](https://ej2.syncfusion.com/javascript/documentat
 
 ### ActionBegin
 
-The event [`actionBegin`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#actionbegin) triggers when clicking and selecting the aggregate type via the dropdown icon in the value field button, which is present in both grouping bar and field list UI. This allows user to identify the current action being performed at runtime. It has the following parameters:
+The event [`actionBegin`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#actionbegin) triggers when clicking and selecting the aggregate type via the dropdown icon in the value field button, which is present in both grouping bar and field list UI. This allows the user to identify the current action being performed at runtime. It has the following parameters:
 
-* `dataSourceSettings`: It holds the current data source settings such as input data source, rows, columns, values, filters, format settings and so on.
+* [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/pivotActionBeginEventArgs#datasourcesettings): Contains the current data source settings such as input data source, rows, columns, values, filters, format settings and more.
 
-* `actionName`: It holds the name of the current action began. For example, while performing aggregation, the action name will be shown as **Aggregate field**.
+* [`actionName`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/pivotActionBeginEventArgs#actionname): Provides the name of the current action initiated. For example, when selecting aggregation, the action name is **Aggregate field**.
 
-* `fieldInfo`: It holds the selected value field information.
+* [`fieldInfo`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/pivotActionBeginEventArgs#fieldinfo): Contains information regarding the selected value field.
 
->Note: This option is applicable only when the field based UI actions are performed such as filtering, sorting, removing field from grouping bar, editing and aggregation type change.
+> Note: This option applies only to actions performed through the field-based UI, such as filtering, sorting, removing a field from the grouping bar, editing, and changing the aggregation type.
 
-* `cancel`: It allows user to restrict the current action.
+* [`cancel`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/pivotActionBeginEventArgs#cancel): Allows restricting the current action.
 
-In the following example, action taken during aggregation type selection via dropdown icon can be restricted by setting the **args.cancel** option to **true** in the `actionBegin` event.
+In the following example, an action taken during aggregation type selection via the dropdown icon can be prevented by setting the **args.cancel** option to **true** in the [`actionBegin`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#actionbegin) event.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -179,15 +181,17 @@ In the following example, action taken during aggregation type selection via dro
 
 ### ActionComplete
 
-The event [`actionComplete`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#actioncomplete) triggers when a UI action, such as applying aggregation using the dropdown icon via the value field button, which is present in both the grouping bar and the field list UI, is completed. This allows user to identify the current UI action being completed at runtime. It has the following parameters:
+The [`actionComplete`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#actioncomplete) event is triggered when a UI action is completed, such as changing the aggregation type using the dropdown icon in the value field button, available within both the grouping bar and field list user interfaces. This event enables users to identify which UI action has been completed at runtime. The event provides the following parameters:
 
-* `dataSourceSettings`: It holds the current data source settings such as input data source, rows, columns, values, filters, format settings and so on.
+* [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/pivotActionCompleteEventArgs#datasourcesettings): The current data source settings, including input data source, rows, columns, values, filters, format settings, and related properties.
 
-* `actionName`: It holds the name of the current action completed. For example, after completing the aggregation, the action name will be shown as **Field aggregated**.
+* [`actionName`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/pivotActionCompleteEventArgs#actionname): Specifies the name of the completed action. For example, after changing the aggregation type, the action name will be **Field aggregated**.
 
-* `fieldInfo`: It holds the selected value field information.
+* [`fieldInfo`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/pivotActionCompleteEventArgs#fieldinfo): Contains information about the selected value field.
 
->Note: This option is applicable only when the field based UI actions are performed such as filtering, sorting, removing field from grouping bar, editing and aggregation type change.
+* [`actionInfo`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/pivotActionCompleteEventArgs#actioninfo): Defines the unique information about the current UI action performed.
+
+> Note: This event is triggered only when field-based UI actions are performed, such as filtering, sorting, removing a field from the grouping bar, editing, or changing the aggregation type.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -202,11 +206,11 @@ The event [`actionComplete`](https://ej2.syncfusion.com/javascript/documentation
 
 ### ActionFailure
 
-The event [`actionFailure`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#actionfailure) triggers when the current UI action fails to achieve the desired result. It has the following parameters:
+The [`actionFailure`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#actionfailure) event is triggered when a UI action fails to produce the expected result. This event provides detailed information about the failure through the following parameters:
 
-* `actionName`: It holds the name of the current action failed. For example, if the action fails while performing the aggregation, then the action name will be shown as **Aggregate field**.
+* [`actionName`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/pivotActionFailureEventArgs#actionname): Specifies the name of the failed action. For example, if the failure occurs during aggregation, the action name will be **Aggregate field**.
 
-* `errorInfo`: It holds the error information of the current UI action.
+* [`errorInfo`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/pivotActionFailureEventArgs#errorinfo): Contains detailed error information related to the failed UI action.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

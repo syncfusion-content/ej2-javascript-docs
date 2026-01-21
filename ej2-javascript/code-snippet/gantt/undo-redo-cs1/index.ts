@@ -13,8 +13,7 @@ let gantt: Gantt = new Gantt({
     allowResizing: true,
     allowReordering: true,
     allowRowDragAndDrop: true,
-    undoRedoActions: ['Add', 'Edit', 'Delete', 'Search','Sorting','Filtering', 'ZoomIn', 'ZoomOut', 'ZoomToFit','Indent','Outdent', 
-    'PreviousTimeSpan', 'NextTimeSpan','ColumnState'],
+    undoRedoActions: ['Edit', 'Delete'],
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
@@ -28,7 +27,9 @@ let gantt: Gantt = new Gantt({
     editSettings: {
         allowEditing: true,
         allowAdding: true,
-        allowDeleting: true
-    }
+        allowDeleting: true,
+        allowTaskbarEditing: true,
+        showDeleteConfirmDialog: true
+    },
 });
 gantt.appendTo('#Gantt');

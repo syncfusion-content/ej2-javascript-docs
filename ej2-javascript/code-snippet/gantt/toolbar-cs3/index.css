@@ -1,5 +1,5 @@
 #container {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 #loader {
@@ -13,14 +13,8 @@
   width: 30%;
 }
 
-#element {
-    display: block;
-    height: 350px;
-}
-
-#container #Gantt{
-	height:450px;
-}
-.e-quickfilter::before {
-    content: '\e7ee';
+#message {
+  color: red;
+  text-align: center;
+  font-weight: bold;
 }

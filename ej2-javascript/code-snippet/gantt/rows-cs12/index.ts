@@ -1,32 +1,24 @@
-
-
-
-import { Gantt, RowDataBoundEventArgs, IQueryTaskbarInfoEventArgs } from '@syncfusion/ej2-gantt';
-import { GanttData } from 'datasource.ts';
+import { Gantt } from '@syncfusion/ej2-gantt';
+import { GanttData } from './datasource.ts';
 
 let gantt: Gantt = new Gantt({
-    dataSource: GanttData,
-    height: '450px',
-    taskFields: {
-        id: 'TaskID',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        parentID: 'ParentID'
-    },
-    rowDataBound: rowBound,
-    queryTaskbarInfo: queryTaskbarInfo,
+  dataSource: GanttData,
+  height: '380px',
+  taskFields: {
+    id: 'TaskID',
+    name: 'TaskName',
+    startDate: 'StartDate',
+    duration: 'Duration',
+    progress: 'Progress',
+    parentID: 'ParentID'
+  },
+  splitterSettings: {
+    position: '75%'
+  },
+  dataBound: dataBound,
 });
 gantt.appendTo('#Gantt');
 
-function rowBound(args: RowDataBoundEventArgs) {
-  if (args.data['TaskID'] == 4) {
-    args.row.style.background = 'cyan';
-  }
-}
-function queryTaskbarInfo(args: IQueryTaskbarInfoEventArgs) {
- if (args.data['TaskID'] == 4) {
-   args.rowElement.style.background = 'cyan';
-  }
+function dataBound() {
+  (gantt.treeGrid.getRowByIndex(2) as HTMLElement).style.background = 'rgb(193, 228, 234)';
 }

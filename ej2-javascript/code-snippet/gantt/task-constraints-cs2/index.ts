@@ -58,7 +58,7 @@ let gantt: Gantt = new Gantt({
         { field: 'TaskName', headerText: 'Job Name', width: '200', clipMode: 'EllipsisWithTooltip' },
         { field: 'StartDate' },
         { field: 'Duration' },
-        { field: 'ConstraintType', width: '180' },
+        { field: 'ConstraintType' },
         { field: 'ConstraintDate' },
         { field: 'EndDate' },
         { field: 'Predecessor' },

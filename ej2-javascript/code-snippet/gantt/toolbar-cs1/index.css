@@ -1,5 +1,5 @@
 #container {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 #loader {
@@ -11,16 +11,4 @@
   position: absolute;
   top: 45%;
   width: 30%;
-}
-
-#element {
-    display: block;
-    height: 350px;
-}
-
-#container #Gantt{
-	height:450px;
-}
-.e-quickfilter::before {
-    content: '\e7ee';
 }

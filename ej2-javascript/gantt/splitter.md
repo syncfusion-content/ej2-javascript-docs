@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Splitter in ##Platform_Name## Gantt Chart control | Syncfusion
+title: Splitter in ##Platform_Name## Gantt Chart Control | Syncfusion
 description: Learn here all about splitter in Syncfusion ##Platform_Name## Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Splitter 
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Splitter in ##Platform_Name## Gantt Chart control
+# Splitter in ##Platform_Name## Gantt Chart Control
 
-The splitter in the ##Platform_Name## Gantt Chart control divides the TreeGrid pane and Chart pane, enabling flexible width allocation for project visualization. Configured via the [splitterSettings](../api/gantt/splitterSettings/) property, the splitter supports pixel or percentage-based positioning, column-based alignment, and predefined view modes. The [setSplitterPosition](../api/gantt/#setsplitterposition) method adjusts positioning dynamically, while the [splitterResizeStart](../api/gantt/splitterresizestart), [splitterResizing](../api/gantt/splitterresizing), and [splitterResized](../api/gantt/splitterresized) events handle resize interactions. The splitter includes ARIA labels for accessibility, ensuring screen reader compatibility, and adapts to responsive designs, though narrow screens may limit visible columns or timeline segments. By default, both panels are visible with equal width.
+The splitter in the ##Platform_Name## Gantt Chart control divides the TreeGrid pane and Chart pane, enabling flexible width allocation for project visualization. Configured via the [splitterSettings](../api/gantt/splitterSettings) property, the splitter supports pixel or percentage-based positioning, column-based alignment, and predefined view modes. The [setSplitterPosition](../api/gantt#setsplitterposition) method adjusts positioning dynamically, while the [splitterResizeStart](../api/gantt/splitterresizestart), [splitterResizing](../api/gantt/splitterresizing), and [splitterResized](../api/gantt/splitterresized) events handle resize interactions. The splitter includes ARIA labels for accessibility, ensuring screen reader compatibility, and adapts to responsive designs, though narrow screens may limit visible columns or timeline segments. By default, both panels are visible with equal width.
 
 ## Configure splitter position
 
@@ -86,7 +86,7 @@ The following example configures the Grid view mode. This configuration prioriti
 
 ## Adjust splitter position dynamically
 
-Change the splitter position using the [setSplitterPosition](../api/gantt/#setsplitterposition) method with pixel, percentage, or column index values, triggered by events like window resizing or button clicks.
+Change the splitter position using the [setSplitterPosition](../api/gantt#setsplitterposition) method with pixel, percentage, or column index values, triggered by events like window resizing or button clicks.
 
 The following example adjusts the splitter dynamically:
 
@@ -119,7 +119,7 @@ The following example adjusts the splitter dynamically:
 
 ## Customize splitter appearance
 
-Customize the splitter’s appearance in the Gantt Chart control by handling the [dataBound](../api/gantt/#databound), [splitterResizing](../api/gantt/#splitterresizing) and [splitterResized](../api/gantt/#splitterresized) events to dynamically adjust styles, such as the background color or visibility of the resize handler. This enhances visual feedback during splitter interactions, improving usability for resizing the TreeGrid and Chart panels. The splitter retains ARIA labels for accessibility, ensuring screen reader compatibility.
+Customize the splitter’s appearance in the Gantt Chart control by handling the [dataBound](../api/gantt#databound), [splitterResizing](../api/gantt#splitterresizing) and [splitterResized](../api/gantt#splitterresized) events to dynamically adjust styles, such as the background color or visibility of the resize handler. This enhances visual feedback during splitter interactions, improving usability for resizing the TreeGrid and Chart panels. The splitter retains ARIA labels for accessibility, ensuring screen reader compatibility.
 
 The following example customizes the splitter’s background and hides the resize handler during resizing:
 

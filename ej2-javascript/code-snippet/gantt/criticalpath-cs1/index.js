@@ -9,7 +9,7 @@ var ganttChart = new ej.gantt.Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks',
+        parentID: 'ParentID'
     },
     enableCriticalPath: true,
     editSettings: {
@@ -22,8 +22,3 @@ var ganttChart = new ej.gantt.Gantt({
     toolbar: ['CriticalPath'],
 });
 ganttChart.appendTo('#Gantt');
-
-
-
-
-

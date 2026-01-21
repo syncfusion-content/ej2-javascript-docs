@@ -29,7 +29,9 @@ let gantt: Gantt = new Gantt({
     editSettings: {
         allowEditing: true,
         allowAdding: true,
-        allowDeleting: true
+        allowDeleting: true,
+        allowTaskbarEditing: true,
+        showDeleteConfirmDialog: true
     }
 });
 gantt.appendTo('#Gantt');

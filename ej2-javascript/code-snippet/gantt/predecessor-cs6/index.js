@@ -4,15 +4,15 @@ switchObj.appendTo('#switch');
 function Onchange() {
   var ganttDependencyViewContainer = document.querySelector('.e-gantt-dependency-view-container');
   if (switchObj.checked) {
-  ganttDependencyViewContainer.style.visibility = 'hidden';
+    ganttDependencyViewContainer.style.visibility = 'hidden';
   }
   else {
-      ganttDependencyViewContainer.style.visibility = 'visible';
+    ganttDependencyViewContainer.style.visibility = 'visible';
   }
 }
 var ganttChart = new ej.gantt.Gantt({
   dataSource: GanttData,
-  height: '450px',
+  height: '420px',
   taskFields: {
     id: 'TaskID',
     name: 'TaskName',
@@ -21,6 +21,13 @@ var ganttChart = new ej.gantt.Gantt({
     duration: 'Duration',
     progress: 'Progress',
     parentID: 'ParentID',
+  },
+  editSettings: {
+    allowAdding: true,
+    allowEditing: true,
+    allowDeleting: true,
+    allowTaskbarEditing: true,
+    showDeleteConfirmDialog: true,
   },
   columns: [
     { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: '100' },

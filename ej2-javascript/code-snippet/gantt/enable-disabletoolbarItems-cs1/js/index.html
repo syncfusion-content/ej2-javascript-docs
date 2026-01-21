@@ -7,15 +7,16 @@
         <meta name="description" content="Typescript Gantt Controls">
         <meta name="author" content="Syncfusion">
         <link href="index.css" rel="stylesheet">
-        <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-        <script src="https://cdn.syncfusion.com/ej2/31.1.17/dist/ej2.min.js" type="text/javascript"></script>
+        <link href="https://cdn.syncfusion.com/ej2/32.1.19/material.css" rel="stylesheet" type="text/css">
+        <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
         <script src="es5-datasource.js" type="text/javascript"></script>
     </head>
-
     <body>
         <div id="container">
-            <button id="enable" class="e-flat">Enable</button>
-            <button id="disable" class="e-flat">Disable</button>
+            <div style="margin-bottom: 20px; padding-left: 20px;">
+                <label style="margin-right: 10px; font-weight: bold;">Enable or disable toolbar items</label>
+                <input type="checkbox" id="switch" />
+            </div>
             <div id="Gantt"></div>        
         </div>
         <script>

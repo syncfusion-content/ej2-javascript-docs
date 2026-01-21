@@ -1,8 +1,5 @@
-
-
-
 import { Gantt, CriticalPath, Toolbar, Edit } from '@syncfusion/ej2-gantt';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 Gantt.Inject(CriticalPath, Toolbar, Edit);
 
@@ -15,7 +12,7 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        child: 'subtasks',
+        parentID: 'ParentID'
     },
     enableCriticalPath: true,
     editSettings: {
@@ -34,6 +31,3 @@ let gantt: Gantt = new Gantt({
     }
 });
 gantt.appendTo('#Gantt');
-
-
-

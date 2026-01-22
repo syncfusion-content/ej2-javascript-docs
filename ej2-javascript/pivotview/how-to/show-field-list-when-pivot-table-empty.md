@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Show field list when pivot table empty in ##Platform_Name## Pivotview control | Syncfusion
-description: Learn here all about Show field list when pivot table empty in Syncfusion ##Platform_Name## Pivotview control of Syncfusion Essential JS 2 and more.
+title: Show fieldlist when table is empty in Javascript | Syncfusion
+description: Learn here all about Show field list when pivot table empty in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Show field list when pivot table empty 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Show field list when pivot table empty in ##Platform_Name## Pivotview control
+# Show field list for empty ##Platform_Name## Pivot Table component
 
-When there are no fields in a pivot table's row, column, value, and filter axes, a field list can still be displayed. To do so, use the [`dataBound`](https://ej2.syncfusion.com/documentation/api/pivotview/#databound) event and call the `onShowFieldList` method as shown below.
+When there are no fields configured in a pivot table's row, column, value, and filter axes, the field list can be automatically displayed to help users configure the pivot table. This is particularly useful in scenarios where users start with an empty pivot configuration and need immediate access to available fields for setup. To achieve this functionality, use the [`dataBound`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#databound) event and call the `onShowFieldList` method as demonstrated below.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Mongodb in ##Platform_Name## Pivotview control | Syncfusion
-description: Learn here all about Mongodb in Syncfusion ##Platform_Name## Pivotview control of Syncfusion Essential JS 2 and more.
+title: Mongodb in ##Platform_Name## Pivot Table control | Syncfusion
+description: Learn here all about Mongodb in Syncfusion ##Platform_Name## Pivot Table control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Mongodb 
 publishingplatform: ##Platform_Name##
@@ -9,23 +9,37 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# MongoDB in ##Platform_Name## Pivotview control
+# MongoDB in ##Platform_Name## Pivot Table control
 
-This section describes how to consume data from MongoDB database using [MongoDB Driver](https://www.nuget.org/packages/MongoDB.Driver) and [MongoDB Bson](https://www.nuget.org/packages/MongoDB.Bson) libraries and bind it to the Pivot Table via a Web API controller.
+This guide explains how to retrieve data from a MongoDB database using the [MongoDB.Driver](https://www.nuget.org/packages/MongoDB.Driver) and [MongoDB.Bson](https://www.nuget.org/packages/MongoDB.Bson) libraries and bind it to the Pivot Table through a Web API controller.
 
-## Create a Web API service to fetch MongoDB data
+## Creating a Web API Service to Fetch MongoDB Data
 
-**1.** Open Visual Studio and create an ASP.NET Core Web App project type, naming it **MyWebService**. To create an ASP.NET Core Web application, follow the document [link](https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-aspnet-core?view=vs-2022).
+Follow these steps to create a Web API service that retrieves data from a MongoDB database and prepares it for the Pivot Table.
+
+### Step 1: Create an ASP.NET Core Web Application
+1. Open Visual Studio and create a new **ASP.NET Core Web App** project named **MyWebService**.
+2. Follow the official [Microsoft documentation](https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-aspnet-core?view=vs-2022) for detailed instructions on creating an ASP.NET Core Web application.
 
 ![Create ASP.NET Core Web App project](../images/azure-asp-core-web-service-create.png)
 
-**2.** To connect a MongoDB Server using the **MongoDB.Driver** and **MongoDB.Bson** in our application, we need to install the [MongoDB.Driver](https://www.nuget.org/packages/MongoDB.Driver) NuGet package. To do so, open the NuGet package manager of the project solution, search for the package **MongoDB.Driver** and install it.
+### Step 2: Install the MongoDB NuGet Packages
+To enable MongoDB database connectivity:
+1. Open the **NuGet Package Manager** in your project solution and search for the packages [MongoDB.Driver](https://www.nuget.org/packages/MongoDB.Driver) and [MongoDB.Bson](https://www.nuget.org/packages/MongoDB.Bson).
+2. Install both packages to add MongoDB support.
 
-![Add the NuGet package "MongoDB.Driver" to the project](../images/mongodb-data-nuget-package-install.png)
+![Add the NuGet package MongoDB.Driver to the project](../images/mongodb-data-nuget-package-install.png)
 
-**3.** Create a Web API controller (aka, PivotController.cs) file under **Controllers** folder that helps to establish data communication with the Pivot Table.
+### Step 3: Create a Web API Controller
+1. Under the **Controllers** folder, create a new Web API controller named **PivotController.cs**.
+2. This controller facilitates data communication between the MongoDB database and the Pivot Table.
 
-**4.** In the Web API controller (aka, PivotController), **MongoClient** helps to connect the MongoDB database. Next, using the **GetDatabase** and **GetCollection** methods, you can retrieve data from the database. The **Find** method of the **IMongoDatabase** is used to populate the retrieved data into a **List**, as shown in the following code snippet.
+### Step 4: Connect to MongoDB and Retrieve Data
+In the **PivotController.cs** file, use the [MongoDB.Driver](https://www.nuget.org/packages/MongoDB.Driver) and [MongoDB.Bson](https://www.nuget.org/packages/MongoDB.Bson) libraries to connect to a MongoDB database and retrieve data for the Pivot Table.
+
+1. **Establish Connection**: Use **MongoClient** with a valid connection string (e.g., `<Enter your valid connection string here>`) to connect to the MongoDB database.
+2. **Access the Database and Collection**: Use the **GetDatabase** method to access the specified database (e.g., `sample_training`) and the **GetCollection** method to target the desired collection (e.g., `ProductDetails`).
+3. **Retrieve and Structure Data**: Use the **Find** method of the **IMongoCollection** interface with an empty **BsonDocument** to retrieve data from the collection. The **ToList** method then converts the retrieved data into a **List** for JSON serialization.
 
 ```c#
     using Microsoft.AspNetCore.Mvc;
@@ -63,7 +77,10 @@ This section describes how to consume data from MongoDB database using [MongoDB 
 
 ```
 
-**5.** In the **Get()** method of the **PivotController.cs** file, the **FetchMongoDbResult()** method is used to retrieve the MongoDB data as a **List**, which is then serialized into JSON using **JsonConvert.SerializeObject()**.
+### Step 5: Serialize Data to JSON
+In the **PivotController.cs** file, define a **Get** method that calls **FetchMongoDbResult** to retrieve data from the MongoDB database as a **List**. Then, use **JsonConvert.SerializeObject** from the **Newtonsoft.Json** library to convert the **List** into JSON format. This JSON data will be used by the Pivot Table component.
+
+> Ensure the **Newtonsoft.Json** NuGet package is installed in your project to use **JsonConvert**.
 
 ```c#
     using Microsoft.AspNetCore.Mvc;
@@ -107,17 +124,27 @@ This section describes how to consume data from MongoDB database using [MongoDB 
 
 ```
 
-**6.** Run the web application and it will be hosted within the URL `https://localhost:44346`.
+### Step 6: Run the Web API Service
+1. Build and run the application.
+2. The application will be hosted at `https://localhost:44346/` (the port number may vary based on your configuration).
 
-**7.** Finally, the retrieved data from MongoDB database which is in the form of JSON can be found in the Web API controller available in the URL link `https://localhost:44346/Pivot`, as shown in the browser page below.
+### Step 7: Access the JSON Data
+1. Access the Web API endpoint at `https://localhost:44346/Pivot` to view the JSON data retrieved from the MongoDB database.
+2. The browser will display the JSON data, as shown below.
 
 ![Hosted Web API URL](../images/mongodb-data.png)
 
-## Connecting the Pivot Table to a MongoDB database using the Web API service
+## Connecting the Pivot Table to a MongoDB Database Using the Web API Service
 
-**1.** Create a simple Javascript Pivot Table by following the **"Getting Started"** documentation [link](../getting-started).
+This section explains how to connect the Pivot Table component to a MongoDB database by retrieving data from the Web API service created in the previous section.
 
-**2.** Map the hosted Web API's URL link `https://localhost:44346/Pivot` to the Pivot Table component in **index.js** by using the [url](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#url) property under [dataSourceSettings](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/).
+### Step 1: Create a Pivot Table in Javascript
+1. Set up a basic Javascript Pivot Table by following the [Getting Started](../getting-started) documentation.
+2. Ensure your Javascript project is configured with the necessary EJ2 Pivot Table dependencies.
+
+### Step 2: Configure the Web API URL in the Pivot Table
+1. In the **App.tsx** (or **App.jsx**) file, map the Web API URL (`https://localhost:44346/Pivot`) to the Pivot Table using the [url](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#url) property within the [dataSourceSettings](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings).
+2. Below is the sample code to configure the Pivot Table to fetch data from the Web API:
 
 ```javascript
 var pivotObj = new ej.pivotview.PivotView({
@@ -132,7 +159,12 @@ pivotObj.appendTo('#PivotView');
 
 ```
 
-**3.** Frame and set the report based on the data retrieved from the MongoDB database.
+### Step 3: Define the Pivot Table Report
+1. Configure the Pivot Table report in the **App.tsx** (or **App.jsx**) file to structure the data retrieved from the MongoDB database.
+2. Add fields to the [rows](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#rows), [columns](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#columns), [values](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#values), and [filters](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#filters) properties of [dataSourceSettings](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings) to define the report structure, specifying how data fields are organized and aggregated in the Pivot Table.
+3. Enable the field list by setting the [showFieldList](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#showfieldlist) property to **true** and including the `FieldList` module in the services section. This allows users to dynamically add or rearrange fields across the columns, rows, and values axes using an interactive user interface.
+
+Here’s the updated sample code for **App.jsx** with the report configuration and field list support:
 
 ```javascript
 var pivotObj = new ej.pivotview.PivotView({
@@ -158,8 +190,12 @@ pivotObj.appendTo('#PivotView');
 
 ```
 
-When you run the sample, the resulting pivot table will look like this:
+### Step 4: Run and Verify the Pivot Table
+1. Run the Javascript application.
+2. The Pivot Table will display the data fetched from the MongoDB database via the Web API, structured according to the defined report.
+3. The resulting Pivot Table will look like this:
 
 ![PivotTable bound with MongoDB database](../images/mongodb-data-binding.png)
 
-> Explore our Javascript Pivot Table sample and ASP.NET Core Web Application to extract data from a MongoDB database and bind to the Pivot Table in [this](https://github.com/SyncfusionExamples/how-to-bind-MongoDB-to-pivot-table) GitHub repository.
+### Additional Resources
+Explore a complete example of the Javascript Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a MongoDB database in this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-MongoDB-to-pivot-table) repository.

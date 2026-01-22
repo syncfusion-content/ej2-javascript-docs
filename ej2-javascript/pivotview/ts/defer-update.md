@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Defer update in ##Platform_Name## Pivotview control | Syncfusion
-description: Learn here all about Defer update in Syncfusion ##Platform_Name## Pivotview control of Syncfusion Essential JS 2 and more.
+title: Defer update in ##Platform_Name## Pivot Table component | Syncfusion
+description: Learn here all about Defer update in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Defer update 
 publishingplatform: ##Platform_Name##
@@ -9,18 +9,18 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Defer update in ##Platform_Name## Pivotview control
+# Defer update in ##Platform_Name## Pivot Table component
 
-Defer layout update support allows to update the pivot table component only on demand. On enabling this feature, end user can drag-and-drop fields between row, column, value and filter axes, apply sorting and filtering inside the Field List, resulting in change of pivot report alone but not the pivot table values. Once all operations are performed and on clicking the "Apply" button in the Field List, pivot table will start to update with the last modified report. This also helps in bringing better performance in pivot table component rendering.
+Defer layout update support allows updating the pivot table component only on demand, significantly improving performance for complex data operations. When this feature is enabled, users can drag-and-drop fields between row, column, value, and filter axes, apply sorting and filtering inside the Field List, resulting in changes to the pivot report configuration without immediately updating the pivot table values. Once all operations are performed and the "Apply" button is clicked in the Field List, the pivot table will update with the final modified report. This approach reduces multiple unnecessary renders and brings better performance, especially when working with large datasets or performing multiple field operations.
 
-The field list can be displayed in two different formats to interact with pivot table. They are:
+The field list can be displayed in two different formats to interact with the pivot table:
 
-* **In-built Field List (Popup)**: To display the field list icon in pivot table UI to invoke the built-in dialog.
-* **Stand-alone Field List (Fixed)**: To display the field list in a static position within a web page.
+* **In-built Field List (Popup)**: Displays the field list icon in the pivot table UI to invoke the built-in dialog.
+* **Stand-alone Field List (Fixed)**: Displays the field list in a static position within a web page.
 
 ## In-built Field List (Popup)
 
-To enable deferred updates in the pivot table, set the property [`allowDeferLayoutUpdate`](https://ej2.syncfusion.com/documentation/api/pivotview/#allowdeferlayoutupdate) in pivot table as **true**. To make a note, the defer update option can be controlled only via Field List during runtime.
+To enable deferred updates in the pivot table, set the [`allowDeferLayoutUpdate`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#allowdeferlayoutupdate) property to **true** in [`PivotView`](https://ej2.syncfusion.com/documentation/api/pivotview). Note that the defer update option can be controlled only via Field List during runtime.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -35,11 +35,11 @@ To enable deferred updates in the pivot table, set the property [`allowDeferLayo
 
 ## Stand-alone Field List (Fixed)
 
-The field list can be rendered in a static position, anywhere in web page layout, like a separate component. To do so, you need to set [`renderMode`](https://ej2.syncfusion.com/documentation/api/pivotfieldlist/#rendermode) property to **Fixed** in [`pivotFieldList`](https://ej2.syncfusion.com/documentation/api/pivotfieldlist/).
+The field list can be rendered in a static position anywhere in the web page layout, functioning as a separate component. To achieve this, set the [`renderMode`](https://ej2.syncfusion.com/documentation/api/pivotfieldlist#rendermode) property to **Fixed** in [`PivotFieldList`](https://ej2.syncfusion.com/documentation/api/pivotfieldlist).
 
-To enable deferred updates in the static fieldlist, set the property [`allowDeferLayoutUpdate`](https://ej2.syncfusion.com/documentation/api/pivotfieldlist/#allowdeferlayoutupdate) in [`pivotFieldlist`](https://ej2.syncfusion.com/documentation/api/pivotfieldlist/) as **true**. To make a note, the defer update option can be controlled only via Field List during runtime.
+To enable deferred updates in the static fieldlist, set the [`allowDeferLayoutUpdate`](https://ej2.syncfusion.com/documentation/api/pivotfieldlist#allowdeferlayoutupdate) property to **true** in [`PivotFieldList`](https://ej2.syncfusion.com/documentation/api/pivotfieldlist). Note that the defer update option can be controlled only via Field List during runtime.
 
-> To make field list interact with pivot table, you need to use the **updateView** and **update** methods for data source update in both field list and pivot table simultaneously.
+> To make the field list interact with the pivot table, use the **updateView** and **update** methods to synchronize data source updates between both the field list and pivot table components simultaneously.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

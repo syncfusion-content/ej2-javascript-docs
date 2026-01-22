@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Drill through grid cell edit type in ##Platform_Name## Pivotview control | Syncfusion
-description: Learn here all about Drill through grid cell edit type in Syncfusion ##Platform_Name## Pivotview control of Syncfusion Essential JS 2 and more.
+title: Drill through grid cell edit type in Javascript | Syncfusion
+description: Learn here all about Drill through grid cell edit type in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Drill through grid cell edit type 
 publishingplatform: ##Platform_Name##
@@ -9,20 +9,28 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Drill through grid cell edit type in ##Platform_Name## Pivotview control
+# Drill-through grid cell edit type in JavaScript Pivot Table
 
-Using the [`drillThrough`](https://ej2.syncfusion.com/documentation/api/pivotview/#drillthrough) event in the pivot table, you can define the edit type of a particular column in the grid present inside the drill-through dialog. To do so, check the column name in the [`drillThrough`](https://ej2.syncfusion.com/documentation/api/pivotview/#drillthrough) event and then specify the edit type of that column using the [`gridColumns.editType`](https://ej2.syncfusion.com/documentation/api/grid/column/#edittype) event argument.
+The drill-through feature in the Pivot Table allows users to view the raw data behind aggregated values by opening a detailed grid dialog. When this dialog appears, you can customize the edit behavior of specific columns to provide appropriate input controls based on their data types.
 
-> The [`gridColumns.editType`](https://ej2.syncfusion.com/documentation/api/grid/column/#edittype) property must be set based on the column's data type. For example, the string data type will not be applicable for the numeric text box edit type.
+Using the [`drillThrough`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#drillthrough) event in the Pivot Table, you can define the edit type for any column in the drill-through grid. This is accomplished by checking the column name within the event handler and setting the appropriate edit type using the [`gridColumns.editType`](https://ej2.syncfusion.com/documentation/api/grid/column#edittype) event argument.
 
-* [`NumericTextBox`](https://ej2.syncfusion.com/documentation/numerictextbox/) control for integer, double, and decimal data types.
-* [`TextBox`](https://ej2.syncfusion.com/documentation/textbox/) control for string data type.
-* [`DropDownList`](https://ej2.syncfusion.com/documentation/drop-down-list/) control to show all unique values related to that field.
-* [`CheckBox`](https://ej2.syncfusion.com/documentation/check-box/) control for boolean data type.
-* [`DatePicker`](https://ej2.syncfusion.com/documentation/datepicker/) control for date data type.
-* [`DateTimePicker`](https://ej2.syncfusion.com/documentation/datetimepicker/) control for date time data type.
+## Edit type options
 
-In the below example, the data type of the `Country` column is set to `DropDownList`.
+The following edit types are available for different data types:
+
+* [`NumericTextBox`](https://ej2.syncfusion.com/documentation/numerictextbox/getting-started) - For integer, double, and decimal data types.
+* [`TextBox`](https://ej2.syncfusion.com/documentation/textbox/getting-started) - For string data type.
+* [`DropDownList`](https://ej2.syncfusion.com/documentation/drop-down-list/getting-started) - To display all unique values for that field.
+* [`CheckBox`](https://ej2.syncfusion.com/documentation/check-box/getting-started) - For boolean data type.
+* [`DatePicker`](https://ej2.syncfusion.com/documentation/datepicker/getting-started) - For date data type.
+* [`DateTimePicker`](https://ej2.syncfusion.com/documentation/datetimepicker/getting-started) - For date time data type.
+
+> The [`gridColumns.editType`](https://ej2.syncfusion.com/documentation/api/grid/column#edittype) property must be set based on the column's data type. For example, string data will not work properly with numeric text box edit type.
+
+## Implementation example
+
+The following example demonstrates how to set the **Country** column to use a `DropDownList` edit type in the drill-through grid:
 
 {% if page.publishingplatform == "typescript" %}
 

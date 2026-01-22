@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Switching older themes style in ##Platform_Name## Pivotview control | Syncfusion
-description: Learn here all about Switching older themes style in Syncfusion ##Platform_Name## Pivotview control of Syncfusion Essential JS 2 and more.
+title: Switching older themes style in ##Platform_Name## Pivot Table component | Syncfusion
+description: Learn here all about Switching older themes style in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Switching older themes style 
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD009 -->
 
-# Switching older themes style in ##Platform_Name## Pivotview control
+# Switching older themes style in ##Platform_Name## Pivot Table component
 
 From Volume 1, 2020 onwards Syncfusion<sup style="font-size:70%">&reg;</sup> has revised the theming and layout of the Pivot Table. So, to inherit the older theme style and layout please do the necessary changes in CSS and pivot table height.
 
@@ -67,7 +67,7 @@ Meanwhile for high contrast theme, we need to set the following CSS.
 
 ## Adjusting Row Height
 
-In current theme, to make the component compact we have reduced the height of each pivot table rows. But user can reset the height of the pivot table using the [`rowHeight`](https://ej2.syncfusion.com/documentation/api/pivotview/gridSettings/#rowheight) property in [`gridSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/gridSettings/). In older theme, the property was set to 36 pixels for desktop layout and 48 pixels for mobile layout. So reset the [`rowHeight`](https://ej2.syncfusion.com/documentation/api/pivotview/gridSettings/#rowheight) accordingly to visualize the older theme style.
+In current theme, to make the component compact we have reduced the height of each pivot table rows. But user can reset the height of the pivot table using the [`rowHeight`](https://ej2.syncfusion.com/documentation/api/pivotview/gridSettingsModel#rowheight) property in [`gridSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#gridsettings). In older theme, the property was set to 36 pixels for desktop layout and 48 pixels for mobile layout. So reset the [`rowHeight`](https://ej2.syncfusion.com/documentation/api/pivotview/gridSettingsModel#rowheight) accordingly to visualize the older theme style.
 
 In the below code sample, we replicate the older theme style.
 

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Accessibility in Javascript Pivotview component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Javascript Pivotview component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Javascript Pivot Table component | Syncfusion
+description: Learn here all about Accessibility in Syncfusion Javascript Pivot Table component of Syncfusion Essential JS 2 and more.
 control: Accessibility 
 platform: ej2-javascript
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Javascript Pivotview component
+# Accessibility in Javascript Pivot Table component
 
-The pivot table component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The pivot table component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the pivot table component is outlined below.
 
@@ -67,7 +67,7 @@ The accessibility compliance for the pivot table component is outlined below.
 
 ## Keyboard interaction
 
-The pivot table component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Message component.
+The pivot table component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Message component.
 
 | **Press** | **To do this** |
 | --- | --- |
@@ -243,7 +243,3 @@ The accessibility compliance of the pivot table component is shown in the follow
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/pivot-table/accessibility" %}
-
-## See also
-
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2 JavaScript components](../common/accessibility)

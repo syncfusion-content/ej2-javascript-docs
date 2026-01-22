@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Drill through in ##Platform_Name## Pivotview control | Syncfusion
-description: Learn here all about Drill through in Syncfusion ##Platform_Name## Pivotview control of Syncfusion Essential JS 2 and more.
+title: Drill through in ##Platform_Name## Pivot Table component | Syncfusion
+description: Learn here all about Drill through in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Drill through 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Drill through in ##Platform_Name## Pivotview control
+# Drill through in ##Platform_Name## Pivot Table component
 
-Allows to view the underlying raw data of a summarized cell in the pivot table. It can be enabled by setting the [`allowDrillThrough`](https://ej2.syncfusion.com/documentation/api/pivotview/#allowdrillthrough) property to **true**. By double-clicking on any value cell, user can view the detailed raw data in a data grid inside a new window. In the new window, row header, column header and measure name of the clicked cell will be shown at the top. Also, user can include or exclude fields available in the data grid using column chooser option.
+The drill-through feature in the Pivot Table component allows users to view the raw, unaggregated data behind any aggregated cell in the Pivot Table. To enable this feature, set the [`allowDrillThrough`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#allowdrillthrough) property to **true**. By double-clicking an aggregated cell, users can view its detailed raw data in a data grid displayed in a new window. The new window shows the row header, column header, and measure name of the selected cell at the top. Additionally, users can include or exclude fields available in the data grid using the column chooser option.
 
-To use drill-through feature, You need to inject the `DrillThrough` module in pivot table.
+To use the drill-through feature, inject the `DrillThrough` module in the Pivot Table.
+
+Below is an example of enabling drill-through in a Pivot Table:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -26,7 +28,9 @@ To use drill-through feature, You need to inject the `DrillThrough` module in pi
           
 {% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs342" %}
 
-Users can also view the underlying raw data though the pivot chart. By clicking on any data point, user can view the detailed raw data in a data grid inside a new window.
+Users can also access drill-through data through the pivot chart. By clicking on any data point in the pivot chart, they can view the raw data in a data grid displayed in a new window.
+
+Below is an example of enabling drill-through with a pivot chart:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -43,14 +47,11 @@ Users can also view the underlying raw data though the pivot chart. By clicking 
 
 > This property is applicable only for the OLAP data source.
 
-The [`maxRowsInDrillThrough`](https://ej2.syncfusion.com/documentation/api/pivotview/#maxrowsindrillthrough) property allows to specify the maximum number of rows that should be returned while drill through. By default, this property is set to **"10000"**. This means that if you do not specify this property, you will get 10,000 rows or less.
+The [`maxRowsInDrillThrough`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#maxrowsindrillthrough) property specifies the maximum number of rows to be returned during a drill-through operation. By default, this property is set to **"10000"**, meaning that if it is not explicitly defined, up to 10,000 rows will be returned.
 
 ```ts
 
-import { PivotView, FieldList, GroupingBar, CalculatedField, DrillThrough } from '@syncfusion/ej2-pivotview';
-
-PivotView.Inject(FieldList, GroupingBar, CalculatedField, DrillThrough);
-let pivotTableObj: PivotView = new PivotView({
+var pivotTableObj = new ej.pivotview.PivotView({
     dataSourceSettings: {
             catalog: 'Adventure Works DW 2008 SE',
             cube: 'Adventure Works',
@@ -67,8 +68,7 @@ let pivotTableObj: PivotView = new PivotView({
             ],
             values: [
                 { name: '[Measures].[Customer Count]', caption: 'Customer Count' },
-                { name: '[Measures].[Internet Sales Amount]', caption: 'Internet Sales Amount' },
-                { name: 'Order on Discount', isCalculatedField: true }
+                { name: '[Measures].[Internet Sales Amount]', caption: 'Internet Sales Amount' }
             ],
             filters: [
                 { name: '[Date].[Fiscal]', caption: 'Date Fiscal' },
@@ -111,16 +111,18 @@ pivotTableObj.appendTo('#PivotTable');
 
 ### DrillThrough
 
-The event [`drillThrough`](https://ej2.syncfusion.com/documentation/api/pivotview/#drillthrough) triggers every time before a value cell is double clicked. This event allows user to customize the data grid columns in drill through popup. Exclusively the event helps to view and process the raw data information behind a aggregated value inside value cell. It has the following parameters:
+The [`drillThrough`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#drillthrough) event is triggered immediately after a user double-clicks a value cell in the Pivot Table. This event allows users to customize the columns displayed in the drill-through popup's data grid. It is specifically designed to help users view and process the raw data behind an aggregated value in a value cell. The event includes the following parameters:
 
-* `columnHeaders` - It holds column header of the current cell.
-* `currentCell` - It holds the current cell's information.
-* `currentTarget` - It holds current cell's html element.
-* `gridColumns` - It holds data grid columns to be rendered in drill through popup.
-* `rawData` - It holds current cell's raw data.
-* `rowHeaders` - It holds row header of current cell.
-* `value` - It holds value of current cell.
-* `cancel` - It is a boolean property and by setting this to true, dialog won’t be created.
+- [`columnHeaders`](https://ej2.syncfusion.com/documentation/api/pivotview/drillThroughEventArgs#columnheaders): Contains the column header of the clicked cell.
+- [`currentCell`](https://ej2.syncfusion.com/documentation/api/pivotview/drillThroughEventArgs#currentcell): Contains details about the clicked cell.
+- [`currentTarget`](https://ej2.syncfusion.com/documentation/api/pivotview/drillThroughEventArgs#currenttarget): Contains the HTML element of the clicked cell.
+- [`gridColumns`](https://ej2.syncfusion.com/documentation/api/pivotview/drillThroughEventArgs#gridcolumns): Specifies the data grid columns to be displayed in the drill-through popup.
+- [`rawData`](https://ej2.syncfusion.com/documentation/api/pivotview/drillThroughEventArgs#rawdata): Contains the raw, unaggregated data for the clicked cell.
+- [`rowHeaders`](https://ej2.syncfusion.com/documentation/api/pivotview/drillThroughEventArgs#rowheaders): Contains the row header of the clicked cell.
+- [`value`](https://ej2.syncfusion.com/documentation/api/pivotview/drillThroughEventArgs#value): Contains the value of the clicked cell.
+- [`cancel`](https://ej2.syncfusion.com/documentation/api/pivotview/drillThroughEventArgs#cancel): It is a boolean property and by setting this to **true**, dialog won’t be created.
+
+Below is an example of using the [`drillThrough`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#drillthrough) event in a Pivot Table:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -135,12 +137,14 @@ The event [`drillThrough`](https://ej2.syncfusion.com/documentation/api/pivotvie
 
 ### BeginDrillThrough
 
-The event [`beginDrillThrough`](https://ej2.syncfusion.com/documentation/api/pivotview/#begindrillthrough) occurs for each and every value cell with a double click, and the event argument provides the data grid information before the drill-through popup is shown. User can access the data grid (which holds the raw data underneath the aggregated value cell) options such as sort, group, filter and customize those in the data grid. It has the following parameters:
+The event [`beginDrillThrough`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#begindrillthrough) triggers after a double-click on a value cell in the Pivot Table and fires right after the data grid is initialized in the drill-through popup. This event allows users to interact with the data grid, which displays the raw data behind the aggregated value cell. Users can perform operations such as [`sorting`](https://ej2.syncfusion.com/documentation/grid/sorting), [`grouping`](https://ej2.syncfusion.com/documentation/grid/grouping), and [`filtering`](https://ej2.syncfusion.com/documentation/grid/filtering) within the data grid according to their specific needs. The event includes the following parameters:
 
 * `gridObj` - It holds the data grid instance to be rendered inside the drill-through popup.
-* `cellInfo` - It holds current cell information like raw data, row header, column header and value.
+* `cellInfo` - Gives details about the clicked cell, including rawData (unaggregated data), rowHeaders, columnHeaders, and value.
 
-> Grid features are segregated into individual feature-wise modules. For example, to use sorting feature, you should inject `Sort` using the `Grid.Inject(Sort)` section.
+The following example demonstrates how to enable [`sorting`](https://ej2.syncfusion.com/documentation/grid/sorting), [`filtering`](https://ej2.syncfusion.com/documentation/grid/filtering), and [`grouping`](https://ej2.syncfusion.com/documentation/grid/grouping) in the data grid displayed within the drill-through popup. This is achieved by configuring the `gridObj` in the [`beginDrillThrough`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#begindrillthrough) event.
+
+> [Grid](https://ej2.syncfusion.com/documentation/grid/getting-started) features are segregated into individual feature-wise modules. For example, to use [`sorting`](https://ej2.syncfusion.com/documentation/grid/sorting) feature, you should inject `Sort` using the `Grid.Inject(Sort)` section.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

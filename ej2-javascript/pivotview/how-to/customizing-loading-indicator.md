@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customizing loading indicator in ##Platform_Name## Pivotview control | Syncfusion
-description: Learn here all about Customizing loading indicator in Syncfusion ##Platform_Name## Pivotview control of Syncfusion Essential JS 2 and more.
+title: Customizing loading indicator in Javascript | Syncfusion
+description: Learn here all about Customizing loading indicator in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Customizing loading indicator 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customizing loading indicator in ##Platform_Name## Pivotview control
+# Customize loading indicator in JavaScript Pivot Table Component
 
-You can customize the appearance of the loading indicator in the pivot table by using the [`spinnerTemplate`](https://ej2.syncfusion.com/documentation/api/pivotview/#spinnertemplate) property. This property accepts an HTML string which can be used for appearance customization.
+The Pivot Table displays a loading indicator during data processing operations such as filtering, sorting, and aggregation calculations. The default loading spinner can be customized to match application design requirements using the [`spinnerTemplate`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#spinnertemplate) property.
 
-> You can also disable the loading indicator by setting [`spinnerTemplate`](https://ej2.syncfusion.com/documentation/api/pivotview/#spinnertemplate) to empty string.
+The [`spinnerTemplate`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#spinnertemplate) property accepts an HTML string that defines the custom loading indicator appearance. This enables control over the visual presentation, including custom styling and animations.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -41,3 +41,14 @@ You can customize the appearance of the loading indicator in the pivot table by 
 
 {% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs78" %}
 {% endif %}
+
+## Disabling the loading indicator
+
+The loading indicator can be completely disabled by setting the [`spinnerTemplate`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#spinnertemplate) property to an empty string.
+
+```js
+function App() {
+    return (<PivotViewComponent id='PivotView' height={350} spinnerTemplate={''}></PivotViewComponent>);
+};
+export default App;
+```

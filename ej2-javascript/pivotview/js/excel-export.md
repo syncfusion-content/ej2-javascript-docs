@@ -11,11 +11,13 @@ domainurl: ##DomainURL##
 
 # Excel export in ##Platform_Name## Pivot Table component
 
-The Pivot Table component supports exporting pivot data to **Excel** and **CSV** file formats. This enables data sharing and analysis in spreadsheet applications such as Microsoft Excel, Google Sheets, and more. To enable the export functionality, set the [`allowExcelExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#allowexcelexport) property to **true**.
+The Pivot Table component supports exporting pivot data to **Excel** and **CSV** file formats. This enables data sharing and analysis in spreadsheet applications such as Microsoft Excel, Google Sheets, and more. To enable the export functionality, inject the `ExcelExport` module into the Pivot Table and set the [`allowExcelExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#allowexcelexport) property to **true**.
 
 ## Export data to an Excel file
 
 Pivot Table data can be exported to an Excel file (.xlsx format) while preserving all formatting and structure. This format is compatible with Microsoft Excel and other spreadsheet applications. To export the data to Excel, invoke the [`excelExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#excelexport) method.
+
+> The Pivot Table component can be exported to Excel format using options available in the toolbar. For more details, [`refer`](./tool-bar) here.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -31,6 +33,8 @@ Pivot Table data can be exported to an Excel file (.xlsx format) while preservin
 ## Export data to a CSV file
 
 Pivot Table data can be exported to a plain text CSV file. The CSV format is lightweight and compatible with most spreadsheet and data analysis applications. To export the data to CSV, invoke the [`csvExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#csvexport) method.
+
+> The Pivot Table component can be exported to CSV format using options available in the toolbar. For more details, [`refer`](./tool-bar) here.
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
@@ -85,7 +89,7 @@ Multiple Pivot Tables can be organized into separate worksheets within a single 
 
 Pivot Table report settings can be customized before exporting, such as applying filters, adding formatting, or performing drill-down and drill-up operations. These customizations are applied exclusively to the exported file and do not affect the Pivot Table UI. To customize the export behavior, use the [`beforeExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#beforeexport) event, which is triggered before the export operation begins.
 
-In the following example, the [`beforeExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#beforeexport) event is used to expand all Pivot Table headers by setting the [`expandAll`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettingsmodel#expandall) property to **true**. The `generateGridData` method is then called to obtain the updated [`pivotValues`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#pivotvalues). The updated [`pivotValues`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#pivotvalues) are assigned to [`args.dataCollections`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/beforeexporteventargs#datacollections) for the export. Finally, [`expandAll`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettingsmodel#expandall) is set to **false** again to restore the original state of the Pivot Table.
+In the following example, the [`beforeExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#beforeexport) event is used to expand all Pivot Table headers by setting the [`expandAll`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#expandall) property to **true**. The `generateGridData` method is then called to obtain the updated [`pivotValues`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#pivotvalues). The updated [`pivotValues`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#pivotvalues) are assigned to [`args.dataCollections`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/beforeExportEventArgs#datacollections) for the export. Finally, [`expandAll`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#expandall) is set to **false** again to restore the original state of the Pivot Table.
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
@@ -104,10 +108,10 @@ The Pivot Table supports exporting data with custom calculations beyond the defa
 
 To add custom aggregates, follow these steps:
 
-1.  Define custom aggregate names using the [localization](https://ej2.syncfusion.com/javascript/documentation/pivotview/globalization-and-localization#localization) option. These names will appear in the Pivot Table's aggregation menu.
-2.  Add the custom aggregation types to the aggregate menu during Pivot Table initialization using the [`dataBound`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#databound) event.
-3.  Use the [`aggregateCellInfo`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#aggregatecellinfo) event to specify the calculation logic for each custom type. This event is triggered for every aggregate cell, allowing you to apply your custom formulas.
-4.  Finally, call the [`excelExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#excelexport) method to export the Pivot Table with all custom aggregations applied.
+1.  Define custom aggregate names using the [localization](https://ej2.syncfusion.com/javascript/documentation/pivotview/globalization-and-localization#localization) option. These names will appear in the Pivot Table's aggregation menu.
+2.  Add the custom aggregation types to the aggregate menu during Pivot Table initialization using the [`dataBound`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#databound) event.
+3.  Use the [`aggregateCellInfo`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#aggregatecellinfo) event to specify the calculation logic for each custom type. This event is triggered for every aggregate cell, allowing you to apply your custom formulas.
+4.  Finally, call the [`excelExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#excelexport) method to export the Pivot Table with all custom aggregations applied.
 
 For detailed information about adding custom aggregation types, refer to the [custom aggregation documentation](https://ej2.syncfusion.com/javascript/documentation/pivotview/how-to/add-custom-aggregation-type-in-menu).
 
@@ -126,11 +130,11 @@ The following example demonstrates how to add two custom aggregate types to the 
 
 ## Export with custom date format
 
-The Pivot Table component allows applying custom date formatting to date-type fields added to the **row** and **column** axes. This formatting ensures consistency across both the rendered pivot table and the exported file. Custom date formatting can be applied by configuring the [`formatSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettingsmodel#formatsettings) property using the following steps:
+The Pivot Table component allows applying custom date formatting to date-type fields added to the **row** and **column** axes. This formatting ensures consistency across both the rendered pivot table and the exported file. Custom date formatting can be applied by configuring the [`formatSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#formatsettings) property using the following steps:
 
-1. Set the [`name`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/formatsettingsmodel#name) property to the target date field.
-2. Set the [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/formatsettingsmodel#type) property to **date** to identify the field as a date type.
-3. Set the [`format`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/formatsettingsmodel#format) property to the desired date format pattern (for example, `"EEE, MMM d, ''yy"`)
+1. Set the [`name`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/formatSettingsModel#name) property to the target date field.
+2. Set the [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/formatSettingsModel#type) property to **date** to identify the field as a date type.
+3. Set the [`format`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/formatSettingsModel#format) property to the desired date format pattern (for example, `"EEE, MMM d, ''yy"`)
 
 After configuration, call the [`excelExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#excelexport) method to export the Pivot Table with the applied formatting.
 
@@ -149,7 +153,7 @@ The following example demonstrates exporting a Pivot Table with a custom date fo
 
 ## Remove row header during export
 
-Row headers can be excluded from the exported Excel file when only values and column headers are required. To achieve this, use the [`beforeExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#beforeexport) event to access pivot values through [`args.dataCollections`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/beforeexporteventargs#datacollections) and remove the row headers before exporting.
+Row headers can be excluded from the exported Excel file when only values and column headers are required. To achieve this, use the [`beforeExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#beforeexport) event to access pivot values through [`args.dataCollections`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/beforeExportEventArgs#datacollections) and remove the row headers before exporting.
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
@@ -166,7 +170,7 @@ Row headers can be excluded from the exported Excel file when only values and co
 
 By default, all columns in the Pivot Table, including hidden ones, are exported. To exclude hidden columns, set the `includeHiddenColumn` property to **false** in `excelExportProperties`.
 
-To hide a column, use the [`columnRender`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/gridsettingsmodel#columnrender) event in [`gridSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#gridsettings) to set the `visible` property of the target column to **false**. For more information, see the [Hide Specific Columns in Pivot Table](https://ej2.syncfusion.com/javascript/documentation/pivotview/how-to/hide-specific-columns-in-pivot-table) documentation.
+To hide a column, use the [`columnRender`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/gridSettingsModel#columnrender) event in [`gridSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#gridsettings) to set the `visible` property of the target column to **false**. For more information, see the [Hide Specific Columns in Pivot Table](https://ej2.syncfusion.com/javascript/documentation/pivotview/how-to/hide-specific-columns-in-pivot-table) documentation.
 
 After hiding the columns, set `includeHiddenColumn` to **false** in `excelExportProperties` to exclude them from the exported file. The exported file will then match the column structure shown in the Pivot Table UI.
 
@@ -187,10 +191,10 @@ The style of each cell in the exported file can be customized, including rotatin
 
 To rotate text, use the following events:
 
-*   [`excelHeaderQueryCellInfo`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/gridsettingsmodel#excelheaderquerycellinfo): Triggered for column headers. This event is used to customize column header cell styles.
-*   [`excelQueryCellInfo`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/gridsettingsmodel#excelquerycellinfo): Triggered for row and value cells. This event is used to customize row header and value cell styles.
+*   [`excelHeaderQueryCellInfo`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/gridSettingsModel#excelheaderquerycellinfo): Triggered for column headers. This event is used to customize column header cell styles.
+*   [`excelQueryCellInfo`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/gridSettingsModel#excelquerycellinfo): Triggered for row and value cells. This event is used to customize row header and value cell styles.
 
-Within these events, set the [`rotation`](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelstyle#rotation) property in the [`style`](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelheaderquerycellinfoeventargs#style) argument to rotate the text to the desired angle.
+Within these events, set the [`rotation`](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelStyle#rotation) property in the [`style`](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelHeaderQueryCellInfoEventArgs#style) argument to rotate the text to the desired angle.
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
@@ -205,7 +209,7 @@ Within these events, set the [`rotation`](https://ej2.syncfusion.com/javascript/
 
 ## Apply custom styles based on specific conditions
 
-When exporting Pivot Table data to Excel, custom styles can be applied to cells based on their values or other criteria. To apply custom styles, use the [`excelQueryCellInfo`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/gridsettingsmodel#excelquerycellinfo) event. In this event, the cell information can be accessed through the [`args.cell`](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelquerycellinfoeventargs#cell) property, and its style properties, such as [`backColor`](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelstyle#backcolor), [`fontName`](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelstyle#fontname), and [`fontColor`](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelstyle#fontcolor), can be customized.
+When exporting Pivot Table data to Excel, custom styles can be applied to cells based on their values or other criteria. To apply custom styles, use the [`excelQueryCellInfo`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/gridSettingsModel#excelquerycellinfo) event. In this event, the cell information can be accessed through the [`args.cell`](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelQueryCellInfoEventArgs#cell) property, and its style properties, such as [`backColor`](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelStyle#backcolor), [`fontName`](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelStyle#fontname), and [`fontColor`](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelStyle#fontcolor), can be customized.
 
 The following example demonstrates how to apply conditional formatting to the **Sold** field values in the exported Excel document. Values below **700** units are highlighted in **red**, while values of **700** units or more are highlighted in **green**.
 
@@ -220,11 +224,11 @@ The following example demonstrates how to apply conditional formatting to the **
           
 {% previewsample "page.domainurl/code-snippet/pivot-table/excel-export-cs37" %}
 
-## Changing the pivot table style while exporting
+## Changing the Pivot Table style while exporting
 
-The Excel export provides an option to change the colors of headers, captions, and records in a pivot table before exporting. To apply colors, define `theme` settings in `excelExportProperties` and pass it as a parameter to the [`excelExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#excelexport) method.
+The Excel export provides an option to change colors for headers, caption, and records in Pivot Table before exporting. To apply colors, define [`theme`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/excelExportProperties#theme) settings in [`excelExportProperties`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/excelExportProperties) object and pass it as a parameter to the [`excelExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#excelexport) method.
 
-> By default, the material theme is applied to the exported Excel document.
+> By default, material theme is applied to exported Excel document.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -239,7 +243,7 @@ The Excel export provides an option to change the colors of headers, captions, a
 
 ## Add header and footer while exporting
 
-The Excel export provides an option to include header and footer content in the Excel document before exporting. To add a header and footer, define the `header` and `footer` properties in `excelExportProperties` and pass them as parameters to the [`excelExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#excelexport) method.
+The Excel export provides an option to include header and footer content for the Excel document before exporting. To add header and footer, define [`header`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/excelexportproperties#header) and [`footer`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/excelexportproperties#footer) properties in [`excelExportProperties`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/excelExportProperties) object and pass it as a parameter to the [`excelExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#excelexport) method.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -254,7 +258,7 @@ The Excel export provides an option to include header and footer content in the 
 
 ## Changing the file name while exporting
 
-This option provides flexibility to specify a custom file name for your exported Excel document, making it easier to organize and identify your exported data. The Excel export provides an option to change the file name of the document before exporting. To change the file name, define the `fileName` property in the `excelExportProperties` object and pass it as a parameter to the [`excelExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#excelexport) method.
+This option provides flexibility to specify a custom file name for your exported Excel document, making it easier to organize and identify your exported data files. The Excel export provides an option to change the file name of the document before exporting. To change the file name, define the [`fileName`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/excelExportProperties#filename) property in the [`excelExportProperties`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/excelExportProperties) object and pass it as a parameter to the [`excelExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#excelexport) method.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -284,7 +288,7 @@ When exporting data, displaying a spinner provides visual feedback to end users 
 
 ## Export only the current page
 
-By default, the Pivot Table exports all data records, which can result in larger file sizes when a large data source is assigned to the Pivot Table. To improve performance, export only the data records currently visible in the viewport by setting the [`exportAllPages`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#exportallpages) property to **false**.
+By default, the Pivot Table exports all data records, which can result in larger file sizes when a large data source is assigned to the Pivot Table. To improve performance, export only the data records currently visible in the viewport by setting the [`exportAllPages`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#exportallpages) property to **false**.
 
 > This option is applicable only when the virtualization or paging feature is enabled.
 
@@ -303,14 +307,14 @@ By default, the Pivot Table exports all data records, which can result in larger
 
 ### ExcelQueryCellInfo
 
-The [`excelQueryCellInfo`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/gridsettingsmodel#excelquerycellinfo) event is triggered during the creation of each row and value cell while exporting data to Excel. This event offers options to change the content and style of individual cells in the exported Excel document, improving the flexibility and appearance of exported reports.
+The [`excelQueryCellInfo`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/gridSettingsModel#excelquerycellinfo) event is triggered during the creation of each row and value cell while exporting data to Excel. This event offers options to change the content and style of individual cells in the exported Excel document, improving the flexibility and appearance of exported reports.
 
 The event provides the following arguments:
 
-* [`value`](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelquerycellinfoeventargs#value) – Represents the value of the current cell in the exported Excel sheet.
-* [`column`](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelquerycellinfoeventargs#column) – Provides details about the column to which the current cell belongs.
-* [`data`](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelquerycellinfoeventargs#data) – Contains all data for the row that includes the current cell.
-* [`style`](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelquerycellinfoeventargs#style) – Defines the style settings (such as font, color, borders) applied to the current cell.
+* [`value`](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelQueryCellInfoEventArgs#value) – Represents the value of the current cell in the exported Excel sheet.
+* [`column`](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelQueryCellInfoEventArgs#column) – Provides details about the column to which the current cell belongs.
+* [`data`](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelQueryCellInfoEventArgs#data) – Contains all data for the row that includes the current cell.
+* [`style`](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelQueryCellInfoEventArgs#style) – Defines the style settings (such as font, color, borders) applied to the current cell.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -325,10 +329,10 @@ The event provides the following arguments:
 
 ### ExcelHeaderQueryCellInfo
 
-The [`excelHeaderQueryCellInfo`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/gridsettingsmodel#excelheaderquerycellinfo) event provides the ability to modify header cell appearance and content during Excel export, ensuring exported documents match specific formatting requirements or business standards. This event triggers while processing each header cell during the Excel export operation. The event contains the following parameters:
+The [`excelHeaderQueryCellInfo`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/gridSettingsModel#excelheaderquerycellinfo) event provides the ability to modify header cell appearance and content during Excel export, ensuring exported documents match specific formatting requirements or business standards. This event triggers while processing each header cell during the Excel export operation. The event contains the following parameters:
 
-* [`cell`](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelheaderquerycellinfoeventargs#cell) – Contains the current cell information and properties.
-* [`style`](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelheaderquerycellinfoeventargs#style) – Contains the style properties that can be applied to the cell.
+* [`cell`](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelHeaderQueryCellInfoEventArgs#cell) – Contains the current cell information and properties.
+* [`style`](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelHeaderQueryCellInfoEventArgs#style) – Contains the style properties that can be applied to the cell.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -343,10 +347,10 @@ The [`excelHeaderQueryCellInfo`](https://ej2.syncfusion.com/javascript/documenta
 
 ### ExportComplete
 
-The [`exportComplete`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#exportcomplete) event triggers after the Pivot Table data exports to an Excel or CSV document. This event enables acquiring blob stream data for further processing and customization by setting the `isBlob` parameter to **true** when calling the [`excelExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#excelexport) method. The event includes the following parameters:
+The [`exportComplete`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#exportcomplete) event triggers after the Pivot Table data exports to an Excel or CSV document. This event enables acquiring blob stream data for further processing and customization by setting the `isBlob` parameter to **true** when calling the [`excelExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#excelexport) method. The event includes the following parameters:
 
-* [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/exportcompleteeventargs#type) – Specifies the current export format such as PDF, Excel, or CSV.
-* [`promise`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/exportcompleteeventargs#promise) – Contains the promise object that resolves with blob data for the exported file.
+* [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/exportCompleteEventArgs#type) – Specifies the current export format such as PDF, Excel, or CSV.
+* [`promise`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/exportCompleteEventArgs#promise) – Contains the promise object that resolves with blob data for the exported file.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

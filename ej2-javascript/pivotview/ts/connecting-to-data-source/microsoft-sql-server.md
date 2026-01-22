@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Microsoft sql server in ##Platform_Name## Pivotview control | Syncfusion
-description: Learn here all about Microsoft sql server in Syncfusion ##Platform_Name## Pivotview control of Syncfusion Essential JS 2 and more.
+title: Microsoft sql server in Typescript | Syncfusion
+description: Learn here all about Microsoft sql server in Syncfusion ##Platform_Name## Pivot Table Component of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Microsoft sql server 
 publishingplatform: ##Platform_Name##
@@ -9,23 +9,27 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Microsoft SQL server in ##Platform_Name## Pivotview control
+# Microsoft SQL server in ##Platform_Name## Pivot Table Component
 
-This section describes how to retrieve data from Microsoft SQL Server using [Microsoft SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient?view=dotnet-plat-ext-7.0) and bind it to the Pivot Table via a Web API controller.
+This section describes how to retrieve data from SQL Server database using [Microsoft SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient?view=dotnet-plat-ext-7.0) and bind it to the Pivot Table via a Web API controller.
 
-## Create a Web API service to fetch SQL Server data
+## Steps to Connect the SQL Server Database via Web API Application
 
-**1.** Open Visual Studio and create an ASP.NET Core Web App project type, naming it **MyWebService**. To create an ASP.NET Core Web application, follow the document [link](https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-aspnet-core?view=vs-2022).
+### Step 1: Download the Sample Application
+Download the ASP.NET Core Web Application from this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-SQL-database-to-pivot-table) repository.
 
-![Create ASP.NET Core Web App project](../images/azure-asp-core-web-service-create.png)
+### Step 2: Understand the Application Structure
+The application named **PivotController** (server-side) that is downloaded from the above GitHub repository includes the following files:
 
-**2.** To connect a SQL Server using the **SqlClient** in our application, we need to install the [System.Data.SqlClient](https://www.nuget.org/packages/System.Data.SqlClient/4.8.5?_src=template) NuGet package. To do so, open the NuGet package manager of the project solution, search for the package **System.Data.SqlClient** and install it.
+- **PivotController.cs** file under **Controllers** folder – This helps to do data communication with Pivot Table.
+- **Database1.mdf** file under **App_Data** folder – This MDF (Master Database File) file contains example data.
 
-![Add the NuGet package "System.Data.SqlClient" to the project](../images/system-Data-sql-client-nuget-package-install.png)
+### Step 3: Connect to SQL Server and Retrieve Data
+In the **PivotController.cs** file, the [Microsoft SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient?view=dotnet-plat-ext-7.0) library is used to connect to a Microsoft SQL Server database and retrieve data for the Pivot Table.
 
-**3.** Create a Web API controller (aka, PivotController.cs) file under **Controllers** folder that helps to establish data communication with the Pivot Table.
-
-**4.** In the Web API controller (aka, PivotController), **SqlConnection** helps to connect the SQL database (that is, Database1.mdf). Next, using **SqlCommand** and **SqlDataAdapter** you can process the desired SQL query string and retrieve data from the database. The **Fill** method of the DataAdapter is used to populate the SQL data into a **DataTable** as shown in the following code snippet.
+1. **Establish Connection**: Use **SqlConnection** with a valid connection string to connect to the SQL Server database (e.g., **Database1.mdf**).
+2. **Query and Fetch Data**: Execute a SQL query (e.g., `SELECT * FROM table1`) using **SqlCommand** to retrieve data for the Pivot Table.
+3. **Structure the Data**: Use the **Fill** method of **SqlDataAdapter** to populate query results into a **DataTable** for JSON serialization.
 
 ```c#
     using Microsoft.AspNetCore.Mvc;
@@ -55,7 +59,12 @@ This section describes how to retrieve data from Microsoft SQL Server using [Mic
 
 ```
 
-**5.** In the **Get()** method of the **PivotController.cs** file, the **FetchSQLResult** method is used to retrieve the SQL data as a **DataTable**, which is then serialized into JSON using **JsonConvert.SerializeObject()**.
+> Replace `<Enter your valid connection string here>` with the actual connection string for your SQL Server database.
+
+### Step 4: Serialize Data to JSON
+In the **PivotController.cs** file, define a **Get** method that calls **FetchSQLResult** to retrieve data from the SQL Server database as a **DataTable**. Then, use **JsonConvert.SerializeObject** from the **Newtonsoft.Json** library to convert the **DataTable** into JSON format. This JSON data will be consumed by the Pivot Table component.
+
+> Ensure the **Newtonsoft.Json** NuGet package is installed in your project to use **JsonConvert**.
 
 ```c#
     using Microsoft.AspNetCore.Mvc;
@@ -92,17 +101,27 @@ This section describes how to retrieve data from Microsoft SQL Server using [Mic
 
 ```
 
-**6.** Run the web application and it will be hosted within the URL `https://localhost:44393`.
+### Step 5: Run the Web API Application
+1. Build and run the **PivotController** application.
+2. The application will be hosted at `https://localhost:7139/` (the port number may vary depending on your configuration).
 
-**7.** Finally, the retrieved data from SQL Server which is in the form of JSON can be found in the Web API controller available in the URL link `https://localhost:44393/Pivot`, as shown in the browser page below.
+### Step 6: Access the JSON Data
+1. Access the Web API endpoint at `https://localhost:7139/pivot` to view the JSON data retrieved from the SQL Server database.
+2. The browser will display the JSON data, as shown below, ready to be used by the Pivot Table.
 
-![Hosted Web API URL](../images/code-web-app.png)
+![Hosted Web API URL](../images/code-web-app.jpeg)
 
-## Connecting the Pivot Table to a SQL database using the Web API service
+## Connecting the Pivot Table to the Hosted Web API URL
 
-**1.** Create a simple Typescript Pivot Table by following the **"Getting Started"** documentation [link](../getting-started).
+This section explains how to connect the Pivot Table component to a Microsoft SQL Server database by retrieving data from the Web API service created in the previous section.
 
-**2.** Map the hosted Web API's URL link `https://localhost:44393/Pivot` to the Pivot Table in **app.ts** by using the [url](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings/#url) property under [dataSourceSettings](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings/).
+### Step 1: Set Up the Typescript Pivot Table
+1. Download the Typescript Pivot Table sample from the [GitHub](https://github.com/SyncfusionExamples/how-to-bind-SQL-database-to-pivot-table) repository.
+2. Ensure your Typescript project is configured with the necessary EJ2 Pivot Table dependencies by following the [Getting Started](https://ej2.syncfusion.com/documentation/pivotview/getting-started) documentation.
+
+### Step 2: Configure the Web API URL in the Pivot Table
+1. In the **App.tsx** or **App.jsx** file, configure the Pivot Table to use the hosted Web API URL (`https://localhost:7139/pivot`) by setting the [url](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings#url) property within the [dataSourceSettings](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings) object.
+2. Below is the sample code to configure the Pivot Table to fetch data from the Web API:
 
 ```ts
 import { PivotView, FieldList } from '@syncfusion/ej2-pivotview';
@@ -118,7 +137,12 @@ pivotObj.appendTo('#PivotView1');
 
 ```
 
-**3.** Frame and set the report based on the data retrieved from the SQL database.
+### Step 3: Define the Pivot Table Report
+1. Configure the Pivot Table report in the **App.tsx** or **App.jsx** file to structure the data retrieved from the SQL Server database.
+2. Add fields to the [rows](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings#rows), [columns](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings#columns), [values](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings#values), and [filters](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings#filters) properties of [dataSourceSettings](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings) to define how data fields are organized and aggregated in the Pivot Table.
+3. Enable the field list by setting the [showFieldList](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#showfieldlist) property to **true** and including the `FieldList` module in the services section. This allows users to dynamically add or rearrange fields across the columns, rows, and values axes using an interactive user interface.
+
+Here’s the updated sample code for **App.jsx** with the report configuration and field list support:
 
 ```ts
 import { PivotView, FieldList } from '@syncfusion/ej2-pivotview';
@@ -145,8 +169,12 @@ pivotObj.appendTo('#PivotView1');
 
 ```
 
-When you run the sample, the resulting pivot table will look like this:
+### Step 4: Run and Verify the Pivot Table
+1. Run the Typescript application.
+2. The Pivot Table will display the data fetched from the SQL Server database via the Web API, structured according to the defined report.
+3. The resulting Pivot Table will look like this:
 
-![PivotTable bound with SQL database](../images/sql-data-binding.png)
+![Pivot Table bound with SQL database](../images/sql-data-binding.png)
 
-> Explore our Typescript Pivot Table sample and ASP.NET Core Web Application to extract data from a SQL database and bind to the Pivot Table in [this](https://github.com/SyncfusionExamples/how-to-bind-SQL-database-to-pivot-table) GitHub repository.
+### Additional Resources
+Explore a complete example of the Typescript Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a SQL Server database in the [GitHub](https://github.com/SyncfusionExamples/how-to-bind-SQL-database-to-pivot-table) repository.

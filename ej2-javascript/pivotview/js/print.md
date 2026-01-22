@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Print in ##Platform_Name## Pivotview control | Syncfusion
-description: Learn here all about Print in Syncfusion ##Platform_Name## Pivotview control of Syncfusion Essential JS 2 and more.
+title: Print in ##Platform_Name## Pivot Table component | Syncfusion
+description: Learn here all about Print in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Print 
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,11 @@ domainurl: ##DomainURL##
 
 # Print
 
-The rendered pivot table can be printed directly from the browser by invoking the [print](https://ej2.syncfusion.com/javascript/documentation/api/grid/#print) method from the grid's instance. The below sample code illustrates the print option being invoked by an external button click.
+The Javascript Pivot Table component supports print functionality, allowing users to print the current state of the pivot table or pivot chart. This feature enables users to generate hard copies of pivot table reports for convenient review and data sharing.
+
+## Print pivot table
+
+The rendered pivot table can be printed by invoking the [print](https://ej2.syncfusion.com/javascript/documentation/api/grid#print) method from the underlying [`Grid`](https://ej2.syncfusion.com/javascript/documentation/grid/getting-started) component instance. The [`Grid`](https://ej2.syncfusion.com/javascript/documentation/grid/getting-started) control manages the print functionality and captures the current state of the pivot table, including all applied filters, sorting, and formatting. The sample code below demonstrates how to trigger the print operation using an external button click.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -24,11 +28,15 @@ The rendered pivot table can be printed directly from the browser by invoking th
         
 {% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs495" %}
 
-Similarly, to print the pivot chart, use the [print](https://ej2.syncfusion.com/javascript/documentation/api/chart/#print) method from the chart's instance. The below sample code illustrates the print option being invoked by an external button click.
+## Print pivot chart
 
-> To use pivot chart, you need to inject the `PivotChart` module in the pivot table.
+To print the pivot chart, use the [print](https://ej2.syncfusion.com/javascript/documentation/api/chart#print) method from the underlying [`Chart`](https://ej2.syncfusion.com/javascript/documentation/chart/getting-started) component instance. The [`Chart`](https://ej2.syncfusion.com/javascript/documentation/chart/getting-started) control manages the print functionality and preserves all visual elements, including colors, legends, and data labels, in the printed output.
 
-> To display the pivot chart, set the [displayOption](https://helpej2.syncfusion.com/javascript/documentation/api/pivotview/displayOptionModel/#view) property to either **Chart** or **Both**. 
+> To use pivot chart functionality, inject the `PivotChart` module into the pivot table.
+
+> To display the pivot chart, set the [`displayOption`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#displayoption) property to either **Chart** or **Both**.
+
+The sample code below illustrates how to print the pivot chart through an external button click.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

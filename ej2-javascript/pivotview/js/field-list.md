@@ -11,10 +11,6 @@ domainurl: ##DomainURL##
 
 # Field list in ##Platform_Name## Pivot Table component
 
-To have a quick glance on how to enable field list in the Javascript Pivot Table, watch this video:
-
-{% youtube "https://www.youtube.com/watch?v=YBjR8HiyyFw" %}
-
 The Field List makes it easy to organize and analyze data in your Pivot Table. It provides a user-friendly interface similar to Microsoft Excel that allows you to add or remove fields and move them between different axes like columns, rows, values, and filters. You can also apply sorting and filtering options while working with your data.
 
 The Field List can be displayed in two different ways to work with your Pivot Table:

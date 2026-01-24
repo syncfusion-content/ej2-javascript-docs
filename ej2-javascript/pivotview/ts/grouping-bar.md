@@ -11,10 +11,6 @@ domainurl: ##DomainURL##
 
 # Grouping bar in ##Platform_Name## Pivot Table component
 
-To have a quick glance on how to enable grouping bar in the Typescript Pivot Table, watch this video:
-
-{% youtube "https://www.youtube.com/watch?v=6zKDyLyPnmg" %}
-
 The Grouping Bar option in the Pivot Table automatically displays fields from the bound data source. It allows users to drag and drop fields between different axes such as columns, rows, values, and filters to create a pivot table at runtime. You can enable it by setting the [`showGroupingBar`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#showgroupingbar) property to **true**.
 
 The grouping bar provides intuitive interactions similar to the Field List, making report creation accessible to all users. These interactions include:

@@ -13,10 +13,6 @@ domainurl: ##DomainURL##
 
 # Row and column in ##Platform_Name## Pivot Table component
 
-To learn about how to use the row and column options effectively in the Javascript Pivot Table, watch this video:
-
-{% youtube "https://www.youtube.com/watch?v=eZipGFIYI7E" %}
-
 ## Width and Height
 
 Setting appropriate dimensions for the Pivot Table ensures optimal display and better user experience across different screen sizes and layouts. You can define the Pivot Table's dimensions using the [`height`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#height) and [`width`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#width) properties to meet your specific requirements.

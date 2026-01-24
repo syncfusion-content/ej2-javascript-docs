@@ -11,10 +11,6 @@ domainurl: ##DomainURL##
 
 # Sorting in ##Platform_Name## Pivot Table component
 
-To have a quick glance on how to sort data in the Javascript Pivot Table, watch this video:
-
-{% youtube "https://www.youtube.com/watch?v=x4xAFXkbq2E" %}
-
 ## Member Sorting
 
 The Member Sorting functionality enables you to arrange field members in the rows and columns of a pivot table in either **ascending** or **descending** order. By default, field members are sorted in ascending order.

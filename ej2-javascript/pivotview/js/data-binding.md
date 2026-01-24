@@ -11,10 +11,6 @@ domainurl: ##DomainURL##
 
 # Data binding in ##Platform_Name## Pivot Table component
 
-To get start quickly with Data Binding, you can check on this video:
-
-{% youtube "https://www.youtube.com/watch?v=_sKndiVl5w0" %}
-
 ## JSON
 
 The Pivot Table supports JSON data binding by setting the [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#type) property under [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#datasourcesettings) to `JSON`. Since JSON is the default data type, you can bind JSON data without setting this property.

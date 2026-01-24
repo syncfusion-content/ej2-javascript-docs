@@ -10,10 +10,6 @@ domainurl: ##DomainURL##
 ---
 # Data binding in ##Platform_Name## Pivot Table component
 
-To get start quickly with Data Binding, you can check on this video:
-
-{% youtube "https://www.youtube.com/watch?v=_sKndiVl5w0" %}
-
 ## JSON
 
 The Pivot Table supports JSON data binding by setting the [`type`](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings#type) property under [`dataSourceSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#datasourcesettings) to `JSON`. Since JSON is the default data type, you can bind JSON data without setting this property.
@@ -436,7 +432,7 @@ When this event triggers, it provides the following parameters:
 - [`pivotFieldList`](https://ej2.syncfusion.com/documentation/api/pivotview/enginePopulatedEventArgs#pivotfieldlist): Lists all available fields in the Pivot Table, including those used in rows, columns, values, and filters.
 - [`pivotValues`](https://ej2.syncfusion.com/documentation/api/pivotview/enginePopulatedEventArgs#pivotvalues): Presents the aggregated values and results displayed in the table.
 
-Below is an example showing how the [`enginePopulated`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#enginepopulated) event can be used in a Javascript Pivot Table. The code demonstrates how to set up the event and access its details for custom logic.
+Below is an example showing how the [`enginePopulated`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#enginepopulated) event can be used in a TypeScript Pivot Table. The code demonstrates how to set up the event and access its details for custom logic.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -453,7 +449,7 @@ Below is an example showing how the [`enginePopulated`](https://ej2.syncfusion.c
 
 The [`enginePopulating`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#enginepopulating) event lets you update the [`dataSourceSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#datasourcesettings) before the Pivot Table's engine processes the data. This allows you to modify how your data appears by changing field captions, formatting options, or report configurations right before the table renders. For example, you can adjust column captions or show a message for empty cells. This helps users control how the data will appear in the Pivot Table in a straightforward way.
 
-The [`enginePopulating`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#enginepopulating) event provides an argument that contains the [`dataSourceSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/enginePopulatingEventArgs#datasourcesettings) property. You can directly edit this property to update fields, labels, or other [`dataSourceSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/enginePopulatingEventArgs#datasourcesettings) options, ensuring your Pivot Table displays data exactly how you need it. Below is an example showing how to use the `enginePopulating` event in a Javascript Pivot Table:
+The [`enginePopulating`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#enginepopulating) event provides an argument that contains the [`dataSourceSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/enginePopulatingEventArgs#datasourcesettings) property. You can directly edit this property to update fields, labels, or other [`dataSourceSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/enginePopulatingEventArgs#datasourcesettings) options, ensuring your Pivot Table displays data exactly how you need it. Below is an example showing how to use the `enginePopulating` event in a TypeScript Pivot Table:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Grid control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more details.
+title: Getting started with TypeScript Grid control | Syncfusion
+description:  Checkout and learn about Getting started with TypeScript Grid control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,12 +9,12 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Grid control
+# Getting started in TypeScript Grid control
 
 This section explains the steps to create a simple Grid and demonstrates the basic usage of the grid component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2
 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 
-> This application is integrated with the **webpack.config.js** configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node **v14.15.0** or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+> This application is integrated with the **webpack.config.js** configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node **v14.15.0** or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started).
 
 ## Dependencies
 
@@ -78,16 +78,16 @@ The quickstart application is preconfigured to use the **Material** theme in the
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
 
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-notifications/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
+@import '../../node_modules/@syncfusion/ej2-base/styles/material.css';  
+@import '../../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
+@import '../../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
+@import '../../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
+@import '../../node_modules/@syncfusion/ej2-inputs/styles/material.css';  
+@import '../../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import '../../node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import '../../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+@import '../../node_modules/@syncfusion/ej2-notifications/styles/material.css';
+@import '../../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
 
 {% endhighlight %}
 {% endtabs %}
@@ -243,10 +243,10 @@ Now, add an HTML div element with its `ID` attribute set to `Grid` in your **ind
 
 To create grids with additional features, inject the required modules. The following modules are used to extend grid's basic functionality.
 
-* [Page](https://ej2.syncfusion.com/documentation/api/grid/page/) - Inject this module to use paging feature.
-* [Sort](https://ej2.syncfusion.com/documentation/api/grid/sort/) - Inject this module to use sorting feature.
-* [Filter](https://ej2.syncfusion.com/documentation/api/grid/filter/) - Inject this module to use filtering feature.
-* [Group](https://ej2.syncfusion.com/documentation/api/grid/group/) - Inject this module to use grouping feature.
+* [Page](https://ej2.syncfusion.com/documentation/api/grid/page) - Inject this module to use paging feature.
+* [Sort](https://ej2.syncfusion.com/documentation/api/grid/sort) - Inject this module to use sorting feature.
+* [Filter](https://ej2.syncfusion.com/documentation/api/grid/filter) - Inject this module to use filtering feature.
+* [Group](https://ej2.syncfusion.com/documentation/api/grid/group) - Inject this module to use grouping feature.
 * **ExcelExport** - Inject this module to use Excel export feature.
 * **PdfExport** - Inject this module to use PDF export feature.
 
@@ -256,7 +256,7 @@ These modules should be injected into the grid using the **Grid.Inject** method.
 
 ## Enable paging
 
-The paging feature enables users to view the grid record in a paged view. It can be enabled by setting the  [allowPaging](https://ej2.syncfusion.com/documentation/api/grid/#allowpaging) property to true. Inject the [Page](https://ej2.syncfusion.com/documentation/api/grid/page/) module as follows. If the **Page** module is not injected, the pager will not be rendered in the grid. Pager can be customized using the [pageSettings](https://ej2.syncfusion.com/documentation/api/grid/pageSettings/) property.
+The paging feature enables users to view the grid record in a paged view. It can be enabled by setting the  [allowPaging](https://ej2.syncfusion.com/documentation/api/grid#allowpaging) property to true. Inject the [Page](https://ej2.syncfusion.com/documentation/api/grid/page) module as follows. If the **Page** module is not injected, the pager will not be rendered in the grid. Pager can be customized using the [pageSettings](https://ej2.syncfusion.com/documentation/api/grid/pageSettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -289,7 +289,7 @@ grid.appendTo('#Grid');
 
 ## Enable sorting
 
-The sorting feature enables you to order the records. It can be enabled by setting the [allowSorting](https://ej2.syncfusion.com/documentation/api/grid/#allowsorting) property as **true**. Inject the [Sort](https://ej2.syncfusion.com/documentation/api/grid/sort/) module as follows. If **Sort** module is not injected, you cannot sort when a header is clicked. Sorting feature can be customized using the [sortSettings](https://ej2.syncfusion.com/documentation/api/grid/sortSettings/) property.
+The sorting feature enables you to order the records. It can be enabled by setting the [allowSorting](https://ej2.syncfusion.com/documentation/api/grid#allowsorting) property as **true**. Inject the [Sort](https://ej2.syncfusion.com/documentation/api/grid/sort) module as follows. If **Sort** module is not injected, you cannot sort when a header is clicked. Sorting feature can be customized using the [sortSettings](https://ej2.syncfusion.com/documentation/api/grid/sortSettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -324,8 +324,8 @@ grid.appendTo('#Grid');
 
 ## Enable filtering
 
-The filtering feature enables you to view reduced amount of records based on filter criteria. It can be enabled by setting the [allowFiltering](https://ej2.syncfusion.com/documentation/api/grid/#allowfiltering) property as **true**. The [Filter](https://ej2.syncfusion.com/documentation/api/grid/filter/) module has to be injected as follows.
-If **Filter** module is not injected,  filter bar will not be rendered in the grid. Filtering feature can be customized using the [filterSettings](https://ej2.syncfusion.com/documentation/api/grid/filterSettings/) property.
+The filtering feature enables you to view reduced amount of records based on filter criteria. It can be enabled by setting the [allowFiltering](https://ej2.syncfusion.com/documentation/api/grid#allowfiltering) property as **true**. The [Filter](https://ej2.syncfusion.com/documentation/api/grid/filter) module has to be injected as follows.
+If **Filter** module is not injected,  filter bar will not be rendered in the grid. Filtering feature can be customized using the [filterSettings](https://ej2.syncfusion.com/documentation/api/grid/filterSettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -361,7 +361,7 @@ grid.appendTo('#Grid');
 
 ## Enable grouping
 
-The grouping feature enables users to view the grid record in a grouped view. It can be enabled by setting the [allowGrouping](https://ej2.syncfusion.com/documentation/api/grid/#allowgrouping) property to true. The [Group](https://ej2.syncfusion.com/documentation/api/grid/group/) module has to be injected as follows. If **Group** module is not injected, the group drop area will not be rendered in the grid. Grouping feature can be customized using the [groupSettings](https://ej2.syncfusion.com/documentation/api/grid/groupSettings/) property.
+The grouping feature enables users to view the grid record in a grouped view. It can be enabled by setting the [allowGrouping](https://ej2.syncfusion.com/documentation/api/grid#allowgrouping) property to true. The [Group](https://ej2.syncfusion.com/documentation/api/grid/group) module has to be injected as follows. If **Group** module is not injected, the group drop area will not be rendered in the grid. Grouping feature can be customized using the [groupSettings](https://ej2.syncfusion.com/documentation/api/grid/groupSettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

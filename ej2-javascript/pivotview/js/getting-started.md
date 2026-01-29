@@ -76,13 +76,13 @@ Styles: Copy the styles to the `resources/styles` folder.
 
 > Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/material.css`
+> Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/tailwind3.css`
 
 **Example:**
 
 > Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-pivotview/dist/global/ej2-pivotview.min.js`
 >
-> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-pivotview/styles/material.css`
+> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-pivotview/styles/tailwind3.css`
 
 After copying the files, you can then reference the Pivot Table and its [dependency](#dependencies) scripts and styles in the **index.html** file.
 
@@ -91,18 +91,18 @@ After copying the files, you can then reference the Pivot Table and its [depende
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2</title>
-            <!-- Essential JS 2 pivot table's dependent material theme -->
-            <link href="resources/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/ej2-calendars/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/ej2-dropdowns/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/ej2-inputs/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/ej2-lists/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/ej2-popups/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/ej2-navigations/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/ej2-grids/styles/material.css" rel="stylesheet" type="text/css"/>
-            <!-- Essential JS 2 pivot table's material theme -->
-            <link href="resources/ej2-pivotview/styles/material.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 pivot table's dependent tailwind3 theme -->
+            <link href="resources/ej2-base/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/ej2-buttons/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/ej2-calendars/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/ej2-dropdowns/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/ej2-inputs/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/ej2-lists/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/ej2-popups/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/ej2-navigations/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/ej2-grids/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 pivot table's tailwind3 theme -->
+            <link href="resources/ej2-pivotview/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential JS 2 pivot table's dependent scripts -->
             <script src="resources/scripts/ej2-base.min.js" type="text/javascript"></script>
@@ -130,7 +130,7 @@ After copying the files, you can then reference the Pivot Table and its [depende
 
 ```
 
-> In this illustration, we have referred **material** theme. You can also refer other themes like bootstrap, fabric, high-contrast etc.,
+> In this illustration, we have referred **tailwind3** theme. You can also refer other themes like bootstrap, fabric, high-contrast etc.,
 
 ### Using CDN link for script and style
 
@@ -142,31 +142,31 @@ Refer the pivot table's CDN links as below
 
 > Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material.css`
+> Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/tailwind3.css`
 
 **Example:**
 
 > Script: [`https://cdn.syncfusion.com/ej2/ej2-pivotview/dist/global/ej2-pivotview.min.js`](https://cdn.syncfusion.com/ej2/ej2-pivotview/dist/global/ej2-pivotview.min.js)
 >
-> Styles: [`https://cdn.syncfusion.com/ej2/ej2-pivotview/styles/material.css`](https://cdn.syncfusion.com/ej2/ej2-pivotview/styles/material.css)
+> Styles: [`https://cdn.syncfusion.com/ej2/32.1.19/ej2-pivotview/styles/tailwind3.css`](https://cdn.syncfusion.com/ej2/32.1.19/ej2-pivotview/styles/tailwind3.css)
 
 ```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2</title>
-            <!-- Essential JS 2 pivot table's dependent material theme -->
-            <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-calendars/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-dropdowns/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-inputs/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-lists/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-popups/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-grids/styles/material.css" rel="stylesheet" type="text/css"/>
-            <!-- Essential JS 2 pivot table's material theme -->
-            <link href="https://cdn.syncfusion.com/ej2/ej2-pivotview/styles/material.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 pivot table's dependent tailwind3 theme -->
+            <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-buttons/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-calendars/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-dropdowns/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-inputs/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-lists/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-popups/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-navigations/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-grids/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 pivot table's tailwind3 theme -->
+            <link href="https://cdn.syncfusion.com/ej2/ej2-pivotview/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential JS 2 pivot table's dependent scripts -->
             <script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
@@ -197,7 +197,7 @@ Refer the pivot table's CDN links as below
 
 <!-- markdownlint-disable MD028 -->
 
-> In this illustration, we have referenced the **Material** theme. You can also use other themes like Bootstrap, Fabric, or High Contrast.
+> In this illustration, we have referenced the **Tailwind3** theme. You can also use other themes like Bootstrap, Fabric, or High Contrast.
 
 ## Browser compatibility
 
@@ -214,18 +214,18 @@ To get started, add **div** element for pivot table control in **index.html**. T
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2</title>
-            <!-- Essential JS 2 pivot table's dependent material theme -->
-            <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-calendars/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-dropdowns/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-inputs/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-lists/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-popups/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-grids/styles/material.css" rel="stylesheet" type="text/css"/>
-            <!-- Essential JS 2 pivot table's material theme -->
-            <link href="https://cdn.syncfusion.com/ej2/ej2-pivotview/styles/material.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 pivot table's dependent tailwind3 theme -->
+            <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-buttons/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-calendars/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-dropdowns/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-inputs/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-lists/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-popups/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-navigations/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-grids/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 pivot table's tailwind3 theme -->
+            <link href="https://cdn.syncfusion.com/ej2/ej2-pivotview/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential JS 2 Pivot table's dependent scripts -->
             <script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
@@ -491,4 +491,4 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Pivot Table control fea
 
 For more information and to access the quick start project, visit: [GitHub Repository](https://github.com/SyncfusionExamples/getting-started-with-the-javascript-pivot-table-component)
 
-> You can also explore our [JavaScript Pivot Table example](https://ej2.syncfusion.com/demos#/material/pivot-table/default) that shows how to rendering of the pivot table with drill-up and drill-down functionality bound to a relational report.
+> You can also explore our [JavaScript Pivot Table example](https://ej2.syncfusion.com/demos#/tailwind3/pivot-table/default) that shows how to rendering of the pivot table with drill-up and drill-down functionality bound to a relational report.

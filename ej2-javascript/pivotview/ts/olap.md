@@ -105,10 +105,10 @@ System.import('app');
 
 ### Adding CSS reference
 
-Combined CSS files are available in the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package root folder. In this illustration, we have referred **material** theme. This theme needs to be referred in your demo application under **src/styles/styles.css** file using the following code.
+Combined CSS files are available in the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package root folder. In this illustration, we have referred **tailwind3** theme. This theme needs to be referred in your demo application under **src/styles/styles.css** file using the following code.
 
 ```
-@import '../../node_modules/@syncfusion/ej2/material.css';
+@import '../../node_modules/@syncfusion/ej2/tailwind3.css';
 ```
 
 > You can also refer other themes like bootstrap, fabric, high-contrast etc. To know about individual component CSS, please refer [here](../../appearance/theme).

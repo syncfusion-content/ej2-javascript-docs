@@ -17,10 +17,9 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global 
 
 ## Component Initialization
 
-The Essential® JS 2 JavaScript components can be initialized by using either of the following ways.
-
-* Using local script and style references in a HTML page.
-* Using CDN link for script and style reference.
+The Essential® JS 2 JavaScript components can be initialized in two ways:
+- Using local script and style references in a HTML page.
+- Using CDN link for script and style references.
 
 ### Using local script and style references in a HTML page
 
@@ -31,13 +30,13 @@ The Essential® JS 2 JavaScript components can be initialized by using either of
 **Syntax:**
 > Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/material.css`
+> Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/tailwind3.css`
 
 **Example:**
 
-> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-diagrams/dist/global/ej2-diagrams.min.js`
+> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/32.1.19/Essential JS 2/ej2-diagrams/dist/global/ej2-diagrams.min.js`
 >
-> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-diagrams/styles/material.css`
+> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/32.1.19/Essential JS 2/ej2-diagrams/styles/tailwind3.css`
 
 **Step 3:** Create a folder `my-diagram-app/resources` and copy/paste the global scripts and styles from the above installed location to `my-diagram-app/resources` location.
 
@@ -48,8 +47,8 @@ The Essential® JS 2 JavaScript components can be initialized by using either of
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential® JS 2</title>
-            <!-- Essential® JS 2 material theme -->
-            <link href="resources/material.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential® JS 2 tailwind3 theme -->
+            <link href="resources/tailwind3.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential® JS 2 Diagram's global script -->
             <script src="resources/ej2-diagrams.min.js" type="text/javascript"></script>
@@ -66,8 +65,8 @@ The Essential® JS 2 JavaScript components can be initialized by using either of
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential® JS 2</title>
-            <!-- Essential® JS 2 material theme -->
-            <link href="resources/material.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential® JS 2 tailwind3 theme -->
+            <link href="resources/tailwind3.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential® JS 2 Diagram's global script -->
             <script src="resources/ej2-diagrams.min.js" type="text/javascript"></script>
@@ -97,12 +96,12 @@ The Essential® JS 2 JavaScript components can be initialized by using either of
 **Syntax:**
 > Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Styles: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material.css`
+> Styles: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/tailwind3.css`
 
 **Example:**
-> Script: [`https://cdn.syncfusion.com/ej2/25.2.3/dist/ej2.min.js`](http://cdn.syncfusion.com/ej2/ej2-diagrams/dist/global/ej2-diagrams.min.js)
+> Script: [`https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js`](http://cdn.syncfusion.com/ej2/ej2-diagrams/dist/global/ej2-diagrams.min.js)
 >
-> Styles: [`http://cdn.syncfusion.com/ej2/ej2-diagrams/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-diagrams/styles/material.css)
+> Styles: [`http://cdn.syncfusion.com/ej2/ej2-diagrams/styles/Tailwind 3.4.css`](http://cdn.syncfusion.com/ej2/ej2-diagrams/styles/tailwind3.css)
 
 **Step 3:** Create a HTML page (index.html) in `my-diagram-app` location and add the CDN link references. Now, add the `Diagram` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Diagram** component in the index.html by using following code.
 
@@ -205,10 +204,10 @@ Create and add a `node` (JSON data) with specific position, size.
 
 ### Apply shape and style to node
 
-Syncfusion® diagram control provides support to render many build-in shapes in diagram.
-Please refer to [`Shapes`](../api/diagram/shapes/) to know about built-in Shapes.
+Syncfusion® diagram control provides support to render many built-in shapes in diagram.
+Please refer to [`Shapes`](../api/diagram/shapes) to know about built-in Shapes.
 
-* The appearance of a node can be customized by changing its [`fill`](../api/diagram/shapeStyleModel#fill-string) color, [`strokeColor`](../api/diagram/shapeStyleModel#strokecolor-string), [`strokeWidth`](../api/diagram/shapeStyleModel#strokewidth-number), [`borderColor`](../api/diagram/node#borderColor-string), [`borderWidth`](../api/diagram/node#borderWidth-number), [`strokeDashArray`](../api/diagram/shapeStyleModel#strokeDashArray-number),  [`opacity`](../api/diagram/shapeStyleModel#opacity-number), and [`shadow`](../api/diagram/shapeStyleModel#shadow-number).
+* The appearance of a node can be customized by changing its [`fill`](../api/diagram/shapeStyleModel#fill) color, [`strokeColor`](../api/diagram/shapeStyleModel#strokecolor), [`strokeWidth`](../api/diagram/shapeStyleModel#strokewidth), [`borderColor`](../api/diagram/node#borderColor), [`borderWidth`](../api/diagram/node#borderWidth), [`strokeDashArray`](../api/diagram/shapeStyleModel#strokeDashArray),  [`opacity`](../api/diagram/shapeStyleModel#opacity), and [`shadow`](../api/diagram/shapeStyleModel#shadow).
 
 
 {% tabs %}
@@ -241,7 +240,7 @@ You can add multiple nodes with different shapes into diagram.
 
 ### Connect flow chart nodes
 
-Connect these nodes by adding a connector using the [`connectors`](../api/diagram/connectorModel/) property of diagram and refer the source and target end by using the [`sourceID`](../api/diagram/connectorModel/#sourceid) and [`targetID`](../api/diagram/connectorModel/#targetid) properties.
+Connect these nodes by adding a connector using the [`connectors`](../api/diagram/index-default#connectors) property of diagram and refer the source and target end by using the [`sourceID`](../api/diagram/connectormodel#sourceid) and [`targetID`](../api/diagram/connectormodel#targetid) properties.
 The required nodes and connectors can be added to form a complete flow diagram.
 
 
@@ -257,7 +256,7 @@ The required nodes and connectors can be added to form a complete flow diagram.
 {% previewsample "page.domainurl/code-snippet/diagram/getting-started-cs4" %}
 
 
-Default values for all [`nodes`](../api/diagram/nodemodel/) and [`connectors`](../api/diagram/connectorModel/) can be set using the [`getNodeDefaults`](../api/diagram/#getnodedefaults) and [`getConnectorDefaults`](../api/diagram/#getconnectordefaults) properties, respectively. For example, if all nodes have the same width and height, such properties can be moved into `getNodeDefaults`.
+Default values for all [`nodes`](../api/diagram/nodemodel) and [`connectors`](../api/diagram/connectorModel) can be set using the [`getNodeDefaults`](../api/diagram/index-default#getnodedefaults) and [`getConnectorDefaults`](../api/diagram/index-default#getconnectordefaults) properties, respectively. For example, if all nodes have the same width and height, such properties can be moved into `getNodeDefaults`.
 
 
 ## Automatic organization chart
@@ -312,7 +311,7 @@ diagram.appendTo('#element');
 
 ### Rendering layout with Datasource
 
-To create an organizational chart, the [`type`](../api/diagram/layout) of layout should be set as an `OrganizationalChart`. The following code example shows how DataManager is used to generate Layout based on the DataSourceSettings of the Diagram.
+To create an organizational chart, the [`type`](../api/diagram/layout#type) of layout should be set as an `OrganizationalChart`. The following code example shows how DataManager is used to generate Layout based on the DataSourceSettings of the Diagram.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -328,7 +327,7 @@ To create an organizational chart, the [`type`](../api/diagram/layout) of layout
 
 ### Customize employee appearance
 
-The following code examples indicate how to define the default appearance of nodes and connectors. The [`setNodeTemplate`](../api/diagram/#setnodetemplate) is used to update each node based on employee data.
+The following code examples indicate how to define the default appearance of nodes and connectors. The [`setNodeTemplate`](../api/diagram/index-default#setnodetemplate) is used to update each node based on employee data.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

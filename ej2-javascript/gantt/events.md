@@ -207,7 +207,7 @@ function actionBegin(args:ITimeSpanEventArgs | ITaskAddedEventArgs | IDependency
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -327,8 +327,8 @@ gantt.appendTo('#Gantt');
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -547,7 +547,7 @@ function actionComplete(args: ActionCompleteArgs | FilterEventArgs | SortEventAr
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -700,8 +700,8 @@ gantt.appendTo('#Gantt');
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -812,7 +812,7 @@ gantt.appendTo('#Gantt');
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -907,8 +907,8 @@ gantt.appendTo('#Gantt');
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -1039,7 +1039,7 @@ function beforeExcelExport(args: { name: string; isCsv: boolean }) {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -1151,8 +1151,8 @@ function beforeExcelExport(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -1282,7 +1282,7 @@ function beforePdfExport(args: { name: string }): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -1392,8 +1392,8 @@ function beforePdfExport(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -1535,7 +1535,7 @@ function beforeTooltipRender(args: BeforeTooltipRenderEventArgs) {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -1647,8 +1647,8 @@ function beforeTooltipRender(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -1779,7 +1779,7 @@ function cellDeselected(args: CellDeselectEventArgs) {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -1890,8 +1890,8 @@ function cellDeselected(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -2024,7 +2024,7 @@ function cellDeselecting(args: CellDeselectEventArgs) {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -2137,8 +2137,8 @@ function cellDeselecting(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -2290,7 +2290,7 @@ function cellEdit(args: CellEditArgs) {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -2404,8 +2404,8 @@ function cellEdit(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -2537,7 +2537,7 @@ function cellSelected(args: CellSelectEventArgs) {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -2645,8 +2645,8 @@ function cellSelected(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -2781,7 +2781,7 @@ function cellSelecting(args: CellSelectEventArgs) {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -2893,8 +2893,8 @@ function cellSelecting(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -3020,7 +3020,7 @@ function columnDrag(args: ColumnDragEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -3127,8 +3127,8 @@ function columnDrag(args){
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -3254,7 +3254,7 @@ function columnDragStart(args: ColumnDragEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -3361,8 +3361,8 @@ function columnDragStart(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -3489,7 +3489,7 @@ function columnDrop(args: ColumnDragEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -3596,8 +3596,8 @@ function columnDrop(args){
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -3725,7 +3725,7 @@ function columnMenuClick(args: ColumnMenuClickEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -3833,8 +3833,8 @@ function columnMenuClick(args){
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -3969,7 +3969,7 @@ function columnMenuOpen(args: ColumnMenuOpenEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -4079,8 +4079,8 @@ function columnMenuOpen(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -4201,7 +4201,7 @@ function contextMenuClick(args: ContextMenuClickEventArgs) {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -4289,8 +4289,8 @@ function contextMenuClick(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -4412,7 +4412,7 @@ function contextMenuOpen(args: ContextMenuOpenEventArgs) {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -4499,8 +4499,8 @@ function contextMenuOpen(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -4597,7 +4597,7 @@ function created() {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -4685,8 +4685,8 @@ function created() {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -4777,7 +4777,7 @@ gantt.appendTo('#Gantt');
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -4858,8 +4858,8 @@ gantt.appendTo('#Gantt');
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -4972,7 +4972,7 @@ function destroyed(args: object): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -5068,8 +5068,8 @@ function destroyed(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -5211,7 +5211,7 @@ function endEditHandler(args: ITaskbarEditedEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -5324,8 +5324,8 @@ function endEditHandler(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -5463,7 +5463,7 @@ function excelExportComplete(args: ExcelExportCompleteArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -5582,8 +5582,8 @@ function excelExportComplete(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -5725,7 +5725,7 @@ function excelHeaderQueryCellInfo(args: ExcelHeaderQueryCellInfoEventArgs): void
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -5844,8 +5844,8 @@ function excelHeaderQueryCellInfo(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -5990,7 +5990,7 @@ function excelQueryCellInfo(args: ExcelQueryCellInfoEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -6109,8 +6109,8 @@ function excelQueryCellInfo(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -6232,7 +6232,7 @@ function onRowExpanded(args: ICollapsingEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -6335,8 +6335,8 @@ function onRowExpanded(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -6476,7 +6476,7 @@ function onRowExpanding(args: ICollapsingEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -6584,8 +6584,8 @@ function onRowExpanding(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -6714,7 +6714,7 @@ function headerCellInfo(args: HeaderCellInfoEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -6822,8 +6822,8 @@ function headerCellInfo(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -6957,7 +6957,7 @@ function load(): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -7080,8 +7080,8 @@ function load() {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -7216,7 +7216,7 @@ function onMouseMove(args: IMouseMoveEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -7329,8 +7329,8 @@ function onMouseMove(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -7478,7 +7478,7 @@ function onTaskbarClick(args: ITaskbarClickEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -7595,8 +7595,8 @@ function onTaskbarClick(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -7754,7 +7754,7 @@ function pdfColumnHeaderQueryCellInfo(args: PdfHeaderQueryCellInfoEventArgs): vo
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -7878,8 +7878,8 @@ function pdfColumnHeaderQueryCellInfo(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -8019,7 +8019,7 @@ function pdfExportComplete(args: object): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -8142,8 +8142,8 @@ function pdfColumnHeaderQueryCellInfo(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -8293,7 +8293,7 @@ function pdfQueryCellInfo(args: PdfQueryCellInfoEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -8417,8 +8417,8 @@ function pdfQueryCellInfo(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -8563,7 +8563,7 @@ function toolbarClick(args: ClickEventArgs) {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -8684,8 +8684,8 @@ function toolbarClick(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -8826,7 +8826,7 @@ function pdfQueryTimelineCellInfo(args: PdfQueryTaskbarInfoEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -8947,8 +8947,8 @@ function pdfQueryTimelineCellInfo(args){
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -9111,7 +9111,7 @@ function queryCellInfo(args: QueryCellInfoEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -9239,8 +9239,8 @@ function queryCellInfo(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -9397,7 +9397,7 @@ function queryTaskbarInfo(args: IQueryTaskbarInfoEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -9526,8 +9526,8 @@ function queryTaskbarInfo(args){
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -9680,7 +9680,7 @@ function recordDoubleClick(args: RecordDoubleClickEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -9806,8 +9806,8 @@ function recordDoubleClick(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -9952,7 +9952,7 @@ function resizeStart(args: ResizeArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -10076,8 +10076,8 @@ function resizeStart(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -10213,7 +10213,7 @@ function resizeStop(args: ResizeArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -10329,8 +10329,8 @@ function resizeStop(args){
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -10465,7 +10465,7 @@ function resizing(args: ResizeArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -10581,8 +10581,8 @@ function resizing(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -10718,7 +10718,7 @@ function rowDataBound(args: RowDataBoundEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -10836,8 +10836,8 @@ function rowDataBound(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -10974,7 +10974,7 @@ function rowDeselected(args: RowDeselectEventArgs) {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -11089,8 +11089,8 @@ function rowDeselected(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -11227,7 +11227,7 @@ function rowDeselecting(args: RowDeselectEventArgs) {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -11341,8 +11341,8 @@ function rowDeselecting(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -11487,7 +11487,7 @@ function rowDrag(args: RowDragEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -11609,8 +11609,8 @@ function rowDrag(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -11751,7 +11751,7 @@ function rowDragStart(args: RowDragEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -11872,8 +11872,8 @@ function rowDragStart(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -12028,7 +12028,7 @@ function rowDragStartHelper(args: RowDragEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -12147,8 +12147,8 @@ function rowDragStartHelper(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -12304,7 +12304,7 @@ function rowDrop(args: RowDropEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -12424,8 +12424,8 @@ function rowDrop(args){
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -12574,7 +12574,7 @@ function rowSelected(args: RowSelectEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -12698,8 +12698,8 @@ function rowSelected(args){
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -12860,7 +12860,7 @@ function rowSelecting(args: RowSelectingEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -12981,8 +12981,8 @@ function rowSelecting(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -13119,7 +13119,7 @@ function splitterResizeStart(args: ResizeArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -13238,8 +13238,8 @@ function splitterResizeStart(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -13380,7 +13380,7 @@ function splitterResized(args: ISplitterResizedEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -13499,8 +13499,8 @@ function splitterResized(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -13637,7 +13637,7 @@ function splitterResizing(args: ResizingEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -13751,8 +13751,8 @@ function splitterResizing(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -13918,7 +13918,7 @@ function taskbarEdited(args: ITaskbarEditedEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -14046,8 +14046,8 @@ function taskbarEdited(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -14208,7 +14208,7 @@ function taskbarEditing(args: ITaskbarEditedEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -14332,8 +14332,8 @@ function taskbarEditing(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -14455,7 +14455,7 @@ function toolbarClick(args: ClickEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -14557,8 +14557,8 @@ function toolbarClick(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">

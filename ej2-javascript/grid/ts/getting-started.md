@@ -33,7 +33,7 @@ Following is the list of minimum dependencies required to use the grid.
     |-- @syncfusion/ej2-notifications
 ```
 
-## Set up development environment
+## Setup development environment
 
 Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
@@ -443,6 +443,6 @@ grid.appendTo('#Grid');
           
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs177" %}
 
-## See Also
+## See also
 
 * [How to open PDF document on button click inside a Grid](https://support.syncfusion.com/kb/article/10246/how-to-open-pdf-document-on-button-click-inside-a-grid)

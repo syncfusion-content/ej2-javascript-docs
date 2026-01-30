@@ -70,13 +70,13 @@ Refer to the following code to find the location of Gantt script and style file.
 
 > Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/material.css`
+> Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/tailwind3.css`
 
 **Example:**
 
-> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/26.1.35/Essential JS 2/ej2-gantt/dist/global/ej2-gantt.min.js`
+> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/32.1.19/Essential JS 2/ej2-gantt/dist/global/ej2-gantt.min.js`
 >
-> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/26.1.35/Essential JS 2/ej2-gantt/styles/material.css`
+> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/32.1.19/Essential JS 2/ej2-gantt/styles/tailwind3.css`
 
 After copying the files, then you can refer the gantt's scripts and styles into the `index.html` file.
 The below html code example shows the minimal dependency for Gantt.
@@ -86,22 +86,22 @@ The below html code example shows the minimal dependency for Gantt.
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2 Gantt</title>
-             <!-- Essential JS 2 gantt's dependent material theme -->
-            <link href="resources/base/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/buttons/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/popups/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/navigations/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/notifications/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/lists/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/dropdowns/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/inputs/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/calendars/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/layouts/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/richtexteditor/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/grids/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/treegrid/styles/material.css" rel="stylesheet" type="text/css"/>
-            <!-- Essential JS 2 material theme -->
-            <link href="resources/gantt/styles/material.css" rel="stylesheet" type="text/css"/>
+             <!-- Essential JS 2 gantt's dependent tailwind3 theme -->
+            <link href="resources/base/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/buttons/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/popups/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/navigations/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/notifications/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/lists/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/dropdowns/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/inputs/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/calendars/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/layouts/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/richtexteditor/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/grids/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/treegrid/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 tailwind3 theme -->
+            <link href="resources/gantt/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential JS 2 Gantt's dependent scripts -->
             <script src="resources/scripts/ej2-base.min.js" type="text/javascript"></script>
@@ -144,13 +144,13 @@ Refer to the Gantt's CDN links as follows.
 
 > Script: `http://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Styles: `http://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/styles/material.css`
+> Styles: `http://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/styles/tailwind3.css`
 
 **Example:**
 
-> Script: [`http://cdn.syncfusion.com/ej2/26.1.35/ej2-gantt/dist/global/ej2-gantt.min.js`](http://cdn.syncfusion.com/ej2/ej2-gantt/dist/global/ej2-gantt.min.js)
+> Script: [`http://cdn.syncfusion.com/ej2/32.1.19/ej2-gantt/dist/global/ej2-gantt.min.js`](http://cdn.syncfusion.com/ej2/ej2-gantt/dist/global/ej2-gantt.min.js)
 >
-> Styles: [`http://cdn.syncfusion.com/ej2/26.1.35/ej2-gantt/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-gantt/styles/material.css)
+> Styles: [`http://cdn.syncfusion.com/ej2/32.1.19/ej2-gantt/styles/tailwind3.css`](http://cdn.syncfusion.com/ej2/ej2-gantt/styles/tailwind3.css)
 
 The below html code example shows the dependency of gantt.
 
@@ -159,45 +159,45 @@ The below html code example shows the dependency of gantt.
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2 Gantt</title>
-            <!-- Essential JS 2 gantt's dependent material theme -->
-            <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-popups/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-navigations/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-notifications/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-lists/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-dropdowns/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-inputs/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-calendars/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-layouts/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-richtexteditor/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-grids/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-treegrid/styles/material.css" rel="stylesheet" type="text/css"/>
-            <!-- Essential JS 2 material theme -->
-            <link href="http://cdn.syncfusion.com/ej2/26.1.35/ej2-gantt/styles/material.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 gantt's dependent tailwind3 theme -->
+            <link href="http://cdn.syncfusion.com/ej2/32.1.19/ej2-base/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/32.1.19/ej2-buttons/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/32.1.19/ej2-popups/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/32.1.19/ej2-navigations/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/32.1.19/ej2-notifications/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/32.1.19/ej2-lists/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/32.1.19/ej2-dropdowns/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/32.1.19/ej2-inputs/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/32.1.19/ej2-calendars/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/32.1.19/ej2-layouts/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/32.1.19/ej2-richtexteditor/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/32.1.19/ej2-grids/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/32.1.19/ej2-treegrid/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 tailwind3 theme -->
+            <link href="http://cdn.syncfusion.com/ej2/32.1.19/ej2-gantt/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential JS 2 Gantt's dependent scripts -->
-            <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-navigations/dist/global/ej2-navigations.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-notifications/dist/global/ej2-notifications.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-lists/dist/global/ej2-lists.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-dropdowns/dist/global/ej2-dropdowns.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-calendars/dist/global/ej2-calendars.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-layouts/dist/global/ej2-layouts.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-richtexteditor/dist/global/ej2-richtexteditor.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-grids/dist/global/ej2-grids.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-treegrid/dist/global/ej2-treegrid.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/ej2/26.1.35/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-excel-export/dist/global/ej2-excel-export.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-file-utils/dist/global/ej2-file-utils.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-compression/dist/global/ej2-compression.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-pdf-export/dist/global/ej2-pdf-export.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-navigations/dist/global/ej2-navigations.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-notifications/dist/global/ej2-notifications.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-lists/dist/global/ej2-lists.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-dropdowns/dist/global/ej2-dropdowns.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-calendars/dist/global/ej2-calendars.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-layouts/dist/global/ej2-layouts.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-richtexteditor/dist/global/ej2-richtexteditor.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-grids/dist/global/ej2-grids.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-treegrid/dist/global/ej2-treegrid.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/32.1.19/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-excel-export/dist/global/ej2-excel-export.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-file-utils/dist/global/ej2-file-utils.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-compression/dist/global/ej2-compression.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-pdf-export/dist/global/ej2-pdf-export.min.js" type="text/javascript"></script>
             <!-- Essential JS 2 Gantt's global script -->
-            <script src="http://cdn.syncfusion.com/ej2/26.1.35/ej2-gantt/dist/global/ej2-gantt.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/ej2/32.1.19/ej2-gantt/dist/global/ej2-gantt.min.js" type="text/javascript"></script>
        </head>
        <body>
            <!-- Add the HTML <div> element for Gantt  -->
@@ -211,21 +211,21 @@ The following located script and style file contains all the Syncfusion<sup styl
 
 > Scripts: **(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js
 >
-> Styles: **(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\material.css
+> Styles: **(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\tailwind3.css
 
 ## Adding Gantt control
 
 Now, you can add the Gantt control to the application. For getting started, add a `div` element to the Gantt control in `index.html`. Then, refer to the `index.js` file in the `index.html` file.
 
-In this document context, `ej2.min.js` and `material.css` which includes all the Essential<sup style="font-size:70%">&reg;</sup> JS 2 components and its dependent scripts and theme files are used.
+In this document context, `ej2.min.js` and `tailwind3.css` which includes all the Essential<sup style="font-size:70%">&reg;</sup> JS 2 components and its dependent scripts and theme files are used.
 
 ```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2 Gantt</title>
-            <!-- Essential JS 2 all material theme -->
-            <link href="https://cdn.syncfusion.com/ej2/26.1.35/material.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 all tailwind3 theme -->
+            <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
              <!-- Essential JS 2 all script -->
             <script src="http://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
        </head>
@@ -290,8 +290,8 @@ Bind data with the Gantt control by using the [`dataSource`](https://ej2.syncfus
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2 Gantt</title>
-            <!-- Essential JS 2 all material theme -->
-            <link href="https://cdn.syncfusion.com/ej2/26.1.35/material.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 all tailwind3 theme -->
+            <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential JS 2 all script -->
             <script src="http://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>

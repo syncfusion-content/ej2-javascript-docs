@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Customize a custom thumbnail in ##Platform_Name## File Manager control | Syncfusion
-description: Learn about customizing a custom thumbnail in the Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Customize Thumbnails in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to customize file thumbnails in the Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Customize custom thumbnail 
+control: File Manager
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize a custom thumbnail in ##Platform_Name## File Manager control
+# Customize file thumbnails in ##Platform_Name## File Manager component
 
-The default appearance of the File Manager can be customized with your own icons by using the [`showThumbnail`](../../api/file-manager/#showthumbnail) property.
+The File Manager's thumbnail appearance can be customized by enabling and configuring the [`showThumbnail`](../../api/file-manager#showthumbnail) property.
 
-The following example demonstrates how to add a custom icon in the large icons view.
+The example below shows how to add a custom thumbnail/icon for items in the large icons view.
 
 {% if page.publishingplatform == "typescript" %}
 

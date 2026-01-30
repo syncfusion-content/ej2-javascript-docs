@@ -213,7 +213,7 @@ To apply theme in exported Excel, define the `theme` in `ExcelExportProperties`.
 {% previewsample "page.domainurl/code-snippet/gantt/excel-export-cs6" %}
 {% endif %}
 
-> By default, material theme is applied to the exported Excel document.
+> By default, tailwind3 theme is applied to the exported Excel document.
 
 ### Add header and footer
 

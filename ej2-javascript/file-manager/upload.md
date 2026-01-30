@@ -1,25 +1,21 @@
 ---
 layout: post
-title: Upload in ##Platform_Name## File Manager control | Syncfusion
-description: Learn here all about Upload in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Upload in ##Platform_Name## File Manager component | Syncfusion
+description: Learn here all about Upload in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more
 platform: ej2-javascript
-control: Upload
+control: File Manager
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Upload in ##Platform_Name## File Manager control
+# Upload in ##Platform_Name## File Manager component
 
-The ##Platform_Name## File Manager control provides an [`uploadSettings`](../api/file-manager/uploadsettings) property with various options to customize file uploads, including controlling file size, restricting file types, checking for excessively large and empty files, and enabling chunk uploads.
+The ##Platform_Name## File Manager component provides an [`uploadSettings`](../api/file-manager/uploadsettings) property with options to control file uploads, including file size limits, allowed extensions, directory uploads, sequential and chunked uploads, auto-close behavior, and more.
 
-## Directory Upload
+## Directory upload
 
-The [`directoryUpload`](../api/file-manager/uploadSettingsModel#directoryupload) property controls whether users can browse and upload entire directories (folders) in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## File Manager control.
-
-To enable directory upload, set the [`directoryUpload`](../api/file-manager/uploadSettingsModel#directoryupload) property to `true` in the [`uploadSettings`](../api/file-manager/uploadsettings) configuration.
-
-When set to `true`, this property enables directory upload in the File Manager, allowing users to upload entire folders. If set to `false`, only individual files can be uploaded. 
+Enable folder uploads by setting [`directoryUpload`](../api/file-manager/uploadSettingsModel#directoryupload) to `true` inside [`uploadSettings`](../api/file-manager/uploadsettings). When `directoryUpload: true` users can upload entire folders; when `false`, only individual files are allowed. Simultaneous uploading of files and folders is not supported.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -58,7 +54,7 @@ When set to `true`, this property enables directory upload in the File Manager, 
 
 To learn more about folder upload actions, refer to this [link](https://ej2.syncfusion.com/documentation/file-manager/file-operations#folder-upload-support)
 
-## Sequential Upload
+## Sequential upload
 
 The [`sequentialUpload`](../api/file-manager/uploadSettingsModel#sequentialupload) property controls whether users can upload files one by one in a sequential manner in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## File Manager control.
 
@@ -105,13 +101,9 @@ The screenshot below shows that each file begins uploading only after the previo
 
 To learn more about folder upload actions, refer to this [link](https://ej2.syncfusion.com/documentation/file-manager/file-operations#folder-upload-support)
 
-## Chunk Upload
+## Chunk upload
 
-The [`chunkSize`](../api/file-manager/uploadSettingsModel#chunksize) property specifies the size of each chunk when uploading large files. It divides the file into smaller parts, which are uploaded sequentially to the server.
-
-This property allows you to enable chunked uploads for large files by specifying a [`chunkSize`](../api/file-manager/uploadSettingsModel#chunksize).
-
-By specifying a [`chunkSize`](../api/file-manager/uploadSettingsModel#chunksize), the large file is divided into smaller parts, reducing the load on the network and making the upload process more efficient.
+Use [`chunkSize`](../api/file-manager/uploadSettingsModel#chunksize) to split large files into smaller parts uploaded sequentially. This enables pause/resume and improves resilience for large transfers.
 
 In the following example, the chunkSize is set to 5 MB (5,242,880 bytes), and the maxFileSize is set to 70 MB (73,728,000 bytes). This means files that are up to 70 MB will be uploaded in 5 MB chunks.
 
@@ -156,11 +148,9 @@ Chunk upload provides pause and resume options, offering users enhanced control 
 >1. Chunk upload will function when the selected file size is greater than the specified chunk size. Otherwise, it uploads files normally.
 >2. The pause and resume features are available only when the chunk upload is enabled.
 
-## Auto Upload
+## Auto upload
 
-The [`autoUpload`](../api/file-manager/uploadSettingsModel#autoupload) property controls whether files are automatically uploaded when they are added to the upload queue in the File Manager control.
-
-The default value is `true`, meaning the File Manager will automatically upload files as soon as they are added to the upload queue. If set to `false`, the files will not be uploaded automatically, giving you a chance to manipulate the files before uploading them to the server.
+Control automatic uploading with [`autoUpload`](../api/file-manager/uploadSettingsModel#autoupload). Default is `true`. Set to `false`, the files will not be uploaded automatically, giving you a chance to manipulate the files before uploading them to the server.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -195,11 +185,9 @@ The default value is `true`, meaning the File Manager will automatically upload 
 {% previewsample "page.domainurl/code-snippet/file-manager/auto-upload" %}
 {% endif %}
 
-## Auto Close
+## Auto close
 
-The [`autoClose`](../api/file-manager/uploadSettingsModel#autoclose) property controls whether the upload dialog automatically closes after all the files have been uploaded.
-
-The default value is `false`, meaning the upload dialog remains open even after the upload process is complete. If [`autoClose`](../api/file-manager/uploadSettingsModel#autoclose) is set to `true`, the upload dialog will automatically close after all the files in the upload queue are uploaded.
+Use [`autoClose`](../api/file-manager/uploadSettingsModel#autoclose) to automatically close the upload dialog after uploads finish. Default is `false`; set to `true` to auto-close.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -277,7 +265,7 @@ If you want to allow only image files like .jpg and .png, you should set the pro
 {% previewsample "page.domainurl/code-snippet/file-manager/file-extension" %}
 {% endif %}
 
-## Restrict drag and drop upload
+## Restrict external drag-and-drop upload
 
 The File Manager control provides support for external drag-and-drop functionality for uploading files by dragging them from the local file system to File Manager.
 

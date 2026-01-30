@@ -1,17 +1,17 @@
 ---
 layout: post
-title: User interface in ##Platform_Name## File Manager control | Syncfusion
-description: Learn here all about User interface in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: User interface in ##Platform_Name## File Manager component | Syncfusion
+description: Learn about the File Manager component UI: toolbar, navigation pane, breadcrumb, views, context menu, and customization points.
 platform: ej2-javascript
-control: User interface
+control: File Manager
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# User interface in ##Platform_Name## File Manager control
+# User interface in ##Platform_Name## File Manager component
 
-The File Manager UI is comprised of several sections like view, toolbar, breadcrumb, context menu, and more. The UI of the File Manager is enhanced with injectable modules such as `Details View` for browsing files and folders in a grid, `Navigation Pane` for folder navigation, and `Toolbar` for file operations. The File Manager with all feature modules includes the following sections in its UI:
+The File Manager component UI consists of several sections: view area, toolbar, breadcrumb, context menu, navigation pane, and more. The UI is enhanced by injectable modules such as Details View (grid-based browsing), Navigation Pane (folder navigation), and Toolbar (file operations). A full-featured File Manager includes these sections:
 
 * [Toolbar](#toolbar) (For direct access to file operations)
 * [Navigation Pane](#navigation-pane) (For easy navigation between folders)
@@ -31,9 +31,7 @@ The basic File Manager is a lightweight control with all the basic functions. Th
 
 ## Toolbar
 
-The `Toolbar` provides easy access to the file operations using different buttons and is located at the top of the File Manager.
-
-If the toolbar items exceed the available space, they will be moved to a toolbar popup accessible via a dropdown button at the end of the toolbar.
+The `Toolbar` (at the top) provides buttons for common file operations. When toolbar items exceed available space they move into an overflow popup accessible via a dropdown at the end of the toolbar.
 
 *Refer to the [Toolbar](./file-operations#toolbar) section in file operations to learn more about the buttons present in the toolbar*.
 
@@ -54,7 +52,7 @@ You can customize the appearance of the navigation pane by using the `navigation
 
 ![Navigation Pane Template Output](./images/navigationpane-template.png)
 
-### BreadCrumb
+### Breadcrumb
 
 The File Manager provides a breadcrumb for navigating to parent folders. The breadcrumb in the File Manager is responsible for resizing. Whenever the path length exceeds the breadcrumb length, a dropdown button will be added at the start of the breadcrumb to hold the parent folders adjacent to the root.
 ![BreadCrumb](./images/breadcrumb.png)

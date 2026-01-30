@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Drag and drop in ##Platform_Name## File Manager control | Syncfusion
-description: Learn here all about Drag and drop in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Drag and drop in ##Platform_Name## File Manager component | Syncfusion
+description: Learn how to enable and configure drag-and-drop in the ##Platform_Name## File Manager component, and the events it raises during the operation.
 platform: ej2-javascript
-control: Drag and drop
+control: File Manager
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Drag and drop in ##Platform_Name## File Manager control
+# Drag and drop in ##Platform_Name## File Manager component
 
-The File Manager allows files and folders to be moved within the file system by drag and dropping them, this support can be enabled or disabled using the [`allowDragAndDrop`](../api/file-manager/#allowdraganddrop) property of the File Manager.
+The File Manager component supports moving files and folders within the file system using drag-and-drop. Enable or disable this feature using the [`allowDragAndDrop`](../api/file-manager#allowdraganddrop) property of the File Manager.
 
-The events triggered in drag and drop support are:
+The following events are raised during drag-and-drop operations:
 
-* [`fileDragStart`](../api/file-manager/#filedragstart) - Triggered when the file/folder dragging is started.
-* [`fileDragging`](../api/file-manager/#filedragging) - Triggered while dragging the file/folder.
-* [`fileDragStop`](../api/file-manager/#filedragstop) - Triggered when the file/folder is about to be dropped at the target.
-* [`fileDropped`](../api/file-manager/#filedropped) - Triggered when the file/folder is dropped.
+* [`fileDragStart`](../api/file-manager#filedragstart) - Triggered when file or folder dragging starts.
+* [`fileDragging`](../api/file-manager#filedragging) - Triggered while the file or folder is being dragged.
+* [`fileDragStop`](../api/file-manager#filedragstop) - Triggered when the file or folder is about to be dropped on the target.
+* [`fileDropped`](../api/file-manager#filedropped) - Triggered after the file or folder has been dropped.
 
 {% if page.publishingplatform == "typescript" %}
 

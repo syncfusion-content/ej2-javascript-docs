@@ -1,27 +1,27 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## File Manager control | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## File Manager control | Syncfusion
+description: Learn how to get started with the ES5 ##Platform_Name## File Manager component using Syncfusion Essential JS 2.
 platform: ej2-javascript
-control: Es5 getting started 
+control: File Manager
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Es5 getting started in ##Platform_Name## File Manager control
+# ES5 getting started in ##Platform_Name## File Manager component
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
-## Control Initialization
+## Control initialization
 
 Create an app folder `myapp` in local machine to initialize Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
 
-Using either of the following way to refer the required script and styles.
+Use either of the following methods to reference the required scripts and styles.
 
-* Using local script and style references in a HTML page.
+* Using local script and style references in an HTML page.
 * Using CDN link for script and style reference.
 
-### Using local script and style references in a HTML page
+### Using local script and style references in an HTML page
 
 **Step 1:** Create an app folder `myapp` for Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
 
@@ -42,11 +42,11 @@ The below located script and style file contains all Syncfusion<sup style="font-
 
 > Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
 >
-> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\material.css`
+> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\styles\material.css`
 
 **Step 3:** Create a folder `myapp/resources` and copy/paste the global scripts and styles from the above installed location to `myapp/resources` location.
 
-**Step 4:** Create a HTML page (index.html) in `myapp` location and add the Essentials JS 2 script and style references.
+**Step 4:** Create an HTML page (index.html) in the `myapp` location and add the Essential JS 2 script and style references.
 
 ```html
 <!DOCTYPE html>
@@ -84,7 +84,7 @@ The below located script and style file contains all Syncfusion<sup style="font-
 
 >Note: If you want to refer the combined control styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
-**Step 5:** Now, add the `div` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 File Manager** control in the `index.html` by using following code
+**Step 5:** Add the `div` element and initialize the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 File Manager** component in the `index.html` using the following code
 
 ```html
 <!DOCTYPE html>
@@ -133,12 +133,12 @@ The below located script and style file contains all Syncfusion<sup style="font-
   </html>
 ```
 
->**Note:** The [`ajaxSettings`](../api/file-manager/#ajaxsettings) must be defined while initializing the File Manager. File Manager utilizes the URL's mentioned in ajaxSettings to send [`file operation`](./file-operations) request to the server.
->The File Manager service link is given in `hostUrl`.
+>**Note:** The [`ajaxSettings`](../api/file-manager#ajaxsettings) must be defined when initializing the File Manager. The File Manager uses the URLs specified in `ajaxSettings` to send [file operation](./file-operations) requests to the server.
+>The File Manager service link is provided in `hostUrl`.
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 File Manager** control.
+**Step 6:** Run `index.html` in a web browser to render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 File Manager** component.
 
-### Using CDN link for script and style reference
+### Using CDN links for script and style references
 
 **Step 1:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls scripts and styles are already hosted in the below CDN link formats.
 
@@ -153,7 +153,7 @@ The below located script and style file contains all Syncfusion<sup style="font-
 > Styles: [`https://cdn.syncfusion.com/ej2/ej2-filemanager/styles/material.css`](https://cdn.syncfusion.com/ej2/ej2-filemanager/styles/material.css)
 >
 
-**Step 2:** Have to add `CDN` global script and style for File Manager and its dependent packages in `myapp/index.html` like below.
+**Step 2:** Add CDN global script and style references for the File Manager and its dependent packages in `myapp/index.html` as shown below.
 
 ```html
 <!DOCTYPE html>
@@ -202,7 +202,7 @@ The below located script and style file contains all Syncfusion<sup style="font-
   </html>
 ```
 
->When referencing CDN links in application, always ensure the network connection will be in enabled state.
+>When referencing CDN links in the application, ensure the network connection is available.
 
 The following example shows the basic File Manager.
 
@@ -214,11 +214,11 @@ The following example shows the basic File Manager.
         
 {% previewsample "page.domainurl/code-snippet/file-manager/es5-getting-started-cs1" %}
 
-## File Download support
+## File download support
 
-To perform the download operation, initialize the [`downloadUrl`](../api/file-manager/ajaxSettingsModel/#downloadurl) property in a [`ajaxSettings`](../api/file-manager/#ajaxsettings) of File Manager control.
+To perform the download operation, initialize the [`downloadUrl`](../api/file-manager/ajaxSettingsModel#downloadurl) property in [`ajaxSettings`](../api/file-manager#ajaxsettings) of the File Manager component.
 
-```
+```html
 <script>
         var hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
         // initialize File Manager Control
@@ -233,11 +233,11 @@ To perform the download operation, initialize the [`downloadUrl`](../api/file-ma
 </script>
 ```
 
-## File Upload support
+## File upload support
 
-To perform the upload operation, initialize the [`uploadUrl`](../api/file-manager/ajaxSettingsModel/#uploadurl) property in a [`ajaxSettings`](../api/file-manager/#ajaxsettings) of File Manager Control.
+To perform the upload operation, initialize the [`uploadUrl`](../api/file-manager/ajaxSettingsModel#uploadurl) property in [`ajaxSettings`](../api/file-manager#ajaxsettings) of the File Manager component.
 
-```
+```html
 <script>
         var hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
         // initialize File Manager Control
@@ -252,9 +252,9 @@ To perform the upload operation, initialize the [`uploadUrl`](../api/file-manage
 </script>
 ```
 
-## Image Preview support
+## Image preview support
 
-To perform the image preview support in the File Manager control, need to initialize the [`getImageUrl`](../api/file-manager/ajaxSettingsModel/#getimageurl) property in a [`ajaxSettings`](../api/file-manager/#ajaxsettings) of File Manager control.
+To enable image preview in the File Manager component, initialize the [`getImageUrl`](../api/file-manager/ajaxSettingsModel#getimageurl) property in [`ajaxSettings`](../api/file-manager#ajaxsettings).
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -266,7 +266,7 @@ To perform the image preview support in the File Manager control, need to initia
 
 ## Injecting feature modules
 
-Basically, the File Manager control contains a context menu for performing file operations, large-icons view for displaying the files and folders, and a breadcrumb for navigation. However, these basic functionalities can be extended by using the additional feature modules like toolbar, navigation pane, and details view to simplify the navigation and file operations within the file system. The above modules can be injected using the `ej.filemanager.FileManager.Inject()` method in the script as follows.
+The File Manager includes a context menu for file operations, a large-icons view for displaying files and folders, and a breadcrumb for navigation. These functionalities can be extended using additional feature modules such as Toolbar, NavigationPane, and DetailsView to simplify navigation and file operations. Inject these modules using the `ej.filemanager.FileManager.Inject()` method as follows.
 
 ```javascript
 var hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
@@ -285,7 +285,7 @@ var filemanagerInstance = new ej.filemanager.FileManager({
 filemanagerInstance.appendTo('#filemanager');
 ```
 
-The following example shows you the File Manager with all feature modules.
+The following example shows the File Manager with all feature modules.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -295,11 +295,11 @@ The following example shows you the File Manager with all feature modules.
         
 {% previewsample "page.domainurl/code-snippet/file-manager/es5-getting-started-cs3" %}
 
->**Note:** The appearance of the File Manager can be customized by using [`cssClass`](../api/file-manager/#cssclass) property. This adds a css class to the root of the File Manager which can be used to add new styles or override existing styles to the File Manager.
+>**Note:** Customize the appearance of the File Manager using the [`cssClass`](../api/file-manager#cssclass) property. This adds a CSS class to the root element, which can be used to add new styles or override existing styles for the File Manager.
 
 ## Switching initial view of the File Manager
 
-The initial view of the File Manager can be changed to details or large icons view with the help of [`view`](../api/file-manager/#view) property. By default, the File Manager will be rendered in large icons view.
+Change the initial view of the File Manager to Details or Large Icons using the [`view`](../api/file-manager#view) property. By default, the File Manager renders in Large Icons view.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -311,10 +311,10 @@ The initial view of the File Manager can be changed to details or large icons vi
 
 ## Maintaining control state on page reload
 
-The File Manager supports maintaining the control state on page reload. This can be achieved by enabling [`enablePersistence`](../api/file-manager/#enablepersistence) property which maintains the following,
-* Previous view of the File Manager - [`View`](../api/file-manager/#view)
-* Previous path of the File Manager - [`Path`](../api/file-manager/#path)
-* Previous selected items of the File Manager - [`SelectedItems`](../api/file-manager/#selecteditems)
+The File Manager can maintain its state on page reload. Enable the [`enablePersistence`](../api/file-manager#enablepersistence) property to preserve the following:
+* Previous view of the File Manager - [`view`](../api/file-manager#view)
+* Previous path of the File Manager - [`path`](../api/file-manager#path)
+* Previous selected items of the File Manager - [`selectedItems`](../api/file-manager#selecteditems)
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -324,11 +324,11 @@ The File Manager supports maintaining the control state on page reload. This can
         
 {% previewsample "page.domainurl/code-snippet/file-manager/es5-getting-started-cs5" %}
 
->**Note:** The files of the current folder opened in the File Manager can be refreshed programatically by calling [`refreshFiles`](../api/file-manager/#refreshfiles) method.
+>**Note:** Refresh the files of the current folder programmatically by calling the [`refreshFiles`](../api/file-manager#refreshfiles) method.
 
 ## Rendering control in right-to-left direction
 
-It is possible to render the File Manager in right-to-left direction by setting the [`enableRtl`](../api/file-manager/#enablertl) API to true.
+Render the File Manager in the right-to-left direction by setting the [`enableRtl`](../api/file-manager#enablertl) API to `true`.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -340,7 +340,7 @@ It is possible to render the File Manager in right-to-left direction by setting 
 
 ## Specifying the current path of the File Manager
 
-The current path of the File Manager can be specified initially or dynamically using the [`path`](../api/file-manager/#path) property.
+The current path of the File Manager can be specified initially or dynamically using the [`path`](../api/file-manager#path) property.
 
 ```javascript
 var hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';

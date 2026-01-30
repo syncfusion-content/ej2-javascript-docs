@@ -1,31 +1,31 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## File Manager control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## File Manager component | Syncfusion
+description: Learn how the ##Platform_Name## File Manager component meets accessibility standards with keyboard, screen reader, and RTL support.
 platform: ej2-javascript
-control: Accessibility 
+control: File Manager 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## File Manager control
+# Accessibility in ##Platform_Name## File Manager component
 
-The File Manager control followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The File Manager component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/), and [WAI-ARIA roles](https://www.w3.org/TR/wai-aria/#roles), which are commonly used to evaluate accessibility.
 
-The accessibility compliance for the File Manager control is outlined below.
+The accessibility compliance for the File Manager component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
 | [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | [Section 508](https://www.section508.gov/) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| Screen Reader Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| Right-To-Left Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
+| Screen reader support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
+| Right-to-left (RTL) support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | Color Contrast | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| Mobile Device Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| Keyboard Navigation Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| [Accessibility Checker](https://www.npmjs.com/package/accessibility-checker) Validation | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| [Axe-core](https://www.npmjs.com/package/axe-core) Accessibility Validation | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
+| Mobile device support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
+| Keyboard navigation support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
+| [Accessibility Checker](https://www.npmjs.com/package/accessibility-checker) validation | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
+| [axe-core](https://www.npmjs.com/package/axe-core) accessibility validation | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 
 <style>
     .post .post-content img {
@@ -41,7 +41,7 @@ The accessibility compliance for the File Manager control is outlined below.
 
 ## WAI-ARIA attributes
 
-The File Manager control followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns) patterns to meet the accessibility. The following ARIA attributes are used in the File Manager control:
+The File Manager component follows [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns) patterns to meet accessibility requirements. The following ARIA attributes are used in the File Manager component:
 
 | Attributes | Purpose |
 | --- | --- |
@@ -71,7 +71,7 @@ The File Manager control followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg
 
 ## Keyboard interaction
 
-The File Manager control followed the `keyboard interaction` guidelines, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the File Manager control.
+The File Manager component follows keyboard interaction guidelines, making it easy for people who use assistive technologies (AT) or rely on keyboard navigation. The following keyboard shortcuts are supported by the File Manager component.
 
 | **Press** | **To do this** |
 | --- | --- |
@@ -105,9 +105,9 @@ The File Manager control followed the `keyboard interaction` guidelines, making 
 
 ## Ensuring accessibility
 
-The File Manager control's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The File Manager component's accessibility levels are validated using [Accessibility Checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) during automated testing.
 
-The accessibility compliance of the File Manager control is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/file-manager.html) in a new window to evaluate the accessibility of the File Manager control with accessibility tools.
+The accessibility compliance of the File Manager component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/file-manager.html) in a new window to evaluate the File Manager component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/file-manager.html" %}
 

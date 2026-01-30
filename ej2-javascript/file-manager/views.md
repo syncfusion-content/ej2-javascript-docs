@@ -1,26 +1,26 @@
 ---
 layout: post
-title: Views in ##Platform_Name## File Manager control | Syncfusion
-description: Learn here all about Views in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Views in ##Platform_Name## File Manager component | Syncfusion
+description: Learn about the available views (Large Icons and Details) in the ##Platform_Name## File Manager component and how to customize them.
 platform: ej2-javascript
-control: Views
+control: File Manager
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Views in ##Platform_Name## File Manager control
+# Views in ##Platform_Name## File Manager component
 
-View is the section where the files and folders are displayed for the user to browse. The [`view`](../api/file-manager/index-default#view) API can also be used to change the initial view of the File Manager control.
+The View section displays files and folders for users to browse. Use the [`view`](../api/file-manager/index-default#view) API to set or change the initial view of the File Manager component.
 
-The File Manager control has two types of [`views`](../api/file-manager/index-default#view) to display the files and folders:
+The File Manager supports two view types:
 
-* [LargeIcons View](#largeicons-view)
+* [LargeIcons View](#large-icons-view)
 * [Details View](#details-view)
 
-## LargeIcons View
+## Large Icons view
 
-By default, the File Manager control is rendered with the large icons view. The following example demonstrates this.
+By default the File Manager renders in Large Icons view. The example below demonstrates the default Large Icons view.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -55,7 +55,7 @@ By default, the File Manager control is rendered with the large icons view. The 
 {% previewsample "page.domainurl/code-snippet/file-manager/view-cs2" %}
 {% endif %}
 
-### Customize existing Large Icons View
+### Customize Large Icons view
 
 The large icons view layout can be customized using the `largeIconsTemplate` property, which allows you to display file or folder information, apply custom formatting, and use conditional rendering based on item type. You can customize it further based on your application requirements.
 
@@ -92,7 +92,7 @@ The large icons view layout can be customized using the `largeIconsTemplate` pro
 {% previewsample "page.domainurl/code-snippet/file-manager/large-icon-view-template" %}
 {% endif %}
 
-## Details View
+## Details view
 
 Details view is an injectable module in the File Manager control, so it should be injected before rendering the File Manager control to avail its functionality. The default appearance of the File Manager control can be changed from large icons to the details view by using the [`view`](../api/file-manager/index-default#view) property. The following example demonstrates the File Manager control with the details view.
 

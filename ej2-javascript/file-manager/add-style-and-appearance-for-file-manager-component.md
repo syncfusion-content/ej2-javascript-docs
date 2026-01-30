@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Style Customize in ##Platform_Name## File Manager control | Syncfusion
-description: Learn here all about How to add style and appearance in ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
-platform:  ej2-javascript
+title: Style customize in ##Platform_Name## File Manager component | Syncfusion
+description: Learn how to customize styles and appearance in the ##Platform_Name## File Manager component using CSS selectors.
+platform: ej2-javascript
 control: File Manager
 documentation: ug
 domainurl: ##DomainURL##
@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # How to customize style and appearance in ##Platform_Name## File Manager
 
-The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
+The following CSS structure can be used to customize the component's appearance based on user preference.
 
 ## Customizing the File Manager navigation pane
 
 To customize the File Manager navigation pane, use the `.e-navigation` selector and apply styles.
 
-The following example shows customize the navigation pane for these sections.
+The following example customizes the navigation pane for these sections.
 
 ```css
 .sample-container {
@@ -98,7 +98,7 @@ To customize the thumbnails in the File Manager, you can apply background-image 
 |XML|.e-fe-xml|
 |Folder|.e-fe-folder|
 
-The following example demonstrates how to customize the File Manager's thumbnail icon for folders:
+The following example demonstrates how to customize the File Manager thumbnail icon for folders:
 
 ```css
 
@@ -112,7 +112,7 @@ The following example demonstrates how to customize the File Manager's thumbnail
 
 ![Javascript File Manager Customization Thumbnail](./images/customize_thumbnail.png)
 
-## Customizing the File Manager Toolbar
+## Customizing the File Manager toolbar
 
 To customize the File Manager toolbar items, use the `.e-toolbar` selector and apply styles.
 
@@ -142,9 +142,9 @@ To customize the File Manager toolbar items, use the `.e-toolbar` selector and a
 
 ![Javascript File Manager Customization Toolbar](./images/customize_toolbar.png)
 
-## Customizing the File Manager selected files/folders
+## Customizing selected files and folders
 
-To customize the File Manager selected files/folders, use the below selectors and apply styles.
+To customize the selected files and folders, use the following selectors and apply styles.
 
 ```css
 
@@ -174,9 +174,9 @@ To customize the File Manager selected files/folders, use the below selectors an
 
 ![Javascript File Manager Customization Selected File](./images/customize_selected_file.png)
 
-## Customizing the File Manager Dialog
+## Customizing the File Manager dialog
 
-To customize the dialog popup in the File Manager, you can apply styles to specific CSS selectors, as listed below.
+To customize the dialog popup in the File Manager, apply styles to the following CSS selectors:
 
 |Element|CSS Selector|
 |---------|------------|

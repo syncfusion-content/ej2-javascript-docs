@@ -1,43 +1,43 @@
 ---
 layout: post
-title: Access control in ##Platform_Name## File Manager control | Syncfusion
-description: Learn here all about Access control in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Access control in ##Platform_Name## File Manager component | Syncfusion
+description: Learn how to configure access control (permissions and rules) in the ##Platform_Name## File Manager component using Syncfusion Essential JS 2.
 platform: ej2-javascript
-control: Access control
+control: File Manager
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Access control in ##Platform_Name## File Manager control
+# Access control in ##Platform_Name## File Manager component
 
-The File Manager control allows you to define access permissions for folders and files using a set of access rules assigned to user(s).
+The File Manager component allows defining access permissions for folders and files using access rules assigned to users or roles.
 
-* [Access Rules](#access-rules)
+* [Access rules](#access-rules)
 * [Permissions](#permissions)
 
-## Access Rules
+## Access rules
 
-The FileAccessController allows you to define security permissions for folders and files using a set of folder or file access rules.
+Use `FileAccessController` to define security permissions for folders and files with a set of folder or file access rules.
 
-To set up access rules for folders (including their files and sub-folders) and individual files, use the `SetRules()` method in the controller. The following table represents the AccessRule properties available for files and folders:
+To set up access rules for folders (including their files and subfolders) and individual files, use the `SetRules()` method in the controller. The following table lists the `AccessRule` properties available for files and folders:
 
-| **Properties** | **Applicable for file** | **Applicable for folder** | **Description** |
+| **Property** | **Applicable to file** | **Applicable to folder** | **Description** |
 | --- | --- | --- | --- |
-| Copy | Yes | Yes | Allows access to copy a file or folder. |
-| Read | Yes | Yes | Allows access to read a file or folder. |
-| Write | Yes | Yes | Allows permission to write a file or folder. |
-| WriteContents | No | Yes | Allows permission to write the content of folder. |
-| Download | Yes | Yes | Allows permission to download a file or folder. |
-| Upload | No | Yes | Allows permission to upload to the folder. |
-| Path | Yes | Yes | Specifies the path to apply the rules, which are defined. |
-| Role | Yes | Yes | Specifies the role to which the rule is applied. |
-| IsFile | Yes | Yes | Specifies whether the rule is specified for folder or file. |
+| Copy | Yes | Yes | Allows copying a file or folder. |
+| Read | Yes | Yes | Allows reading a file or folder. |
+| Write | Yes | Yes | Allows writing to a file or folder. |
+| WriteContents | No | Yes | Allows writing the contents of a folder. |
+| Download | Yes | Yes | Allows downloading a file or folder. |
+| Upload | No | Yes | Allows uploading to the folder. |
+| Path | Yes | Yes | Specifies the path to which the rules apply. |
+| Role | Yes | Yes | Specifies the role to which the rule applies. |
+| IsFile | Yes | Yes | Specifies whether the rule targets a folder or a file. |
 
-The following syntax represents the access Rules for Administrator using file or folder.
+The following example shows access rules for the Administrator role for files and folders.
 
 ```ts
-//Adminstrator
+//Administrator
 //Access Rules for File
     new AccessRule { Path = "/*.*", Role = "Administrator", Read = Permission.Allow, Write = Permission.Allow, Copy = Permission.Allow, Download = Permission.Allow, IsFile = true },
 
@@ -46,7 +46,7 @@ The following syntax represents the access Rules for Administrator using file or
 
 ```
 
-The following syntax represent the access Rules for Default user using file or folder.
+The following example shows access rules for the Default User role for files and folders.
 
 ```ts
 //Default User
@@ -60,18 +60,18 @@ The following syntax represent the access Rules for Default user using file or f
 
 ## Permissions
 
-It helps to explain how to apply security permission to File Manager file or folder using access rules. The following table represent the value that determines the permission.
+This section explains how to apply security permissions to File Manager files and folders using access rules. The following table lists the values that determine the permission behavior.
 
 | **Value** | **Description** |
 | --- | ---|
-| Allow | Allows you to do read, write, copy, and download operations. |
-| Deny | Denies you to do read, write, copy, and download operations. |
+| Allow | Permits read, write, copy, and download operations. |
+| Deny | Prevents read, write, copy, and download operations. |
 
-Use the `Role` property to apply created roles to the File Manager. After that, the File Manager displays folder or file and allow permisssion based on assigned roles.
+Use the `Role` property to apply roles to the File Manager. The File Manager then enforces permissions for files and folders based on assigned roles.
 
-The following syntax represent how to apply permission based on assigned roles
+The following examples show how to apply permissions based on assigned roles.
 
-Permission denied for administrator to write a file or folder.
+Deny write permission for the Administrator role on files and folders.
 
 ```ts
 // For file
@@ -82,9 +82,9 @@ Permission denied for administrator to write a file or folder.
 
 ```
 
-The following syntax represent how to allow or deny permission based on file or folder access rule.
+The following examples show how to allow or deny permissions based on file or folder access rules.
 
-Permission denied for writing except for particular file or folder.
+Deny write permission except for a particular file or folder.
 
 ```ts
 // Deny writing for particular folder
@@ -95,14 +95,14 @@ Permission denied for writing except for particular file or folder.
 
 ```
 
-Permission denied for writing and uploading in root folder.
+Deny write and upload permissions in the root folder.
 
 ```ts
 // Folder Rule
  new AccessRule { Path = "/", Role = "Document Manager", Read = Permission.Allow, Write = Permission.Deny, Copy = Permission.Deny, WriteContents = Permission.Deny, Upload = Permission.Deny, Download = Permission.Deny, IsFile = false },
 ```
 
-The following example demonstrate the File Manager rendered with access control support.
+The following example demonstrates the File Manager rendered with access control support.
 
 {% if page.publishingplatform == "typescript" %}
 

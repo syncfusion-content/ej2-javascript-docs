@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Virtualization in ##Platform_Name## File Manager control | Syncfusion
-description: Learn here all about Virtualization in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Virtualization in ##Platform_Name## File Manager component | Syncfusion
+description: Learn how to enable UI virtualization for the ##Platform_Name## File Manager component to efficiently render large file sets in Details and Large Icons views.
 platform: ej2-javascript
-control: Virtualization
+control: File Manager
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Virtualization in ##Platform_Name## File Manager control
+# Virtualization in ##Platform_Name## File Manager component
 
 The File Manager control's UI virtualization allows for the dynamic loading of a large number of directories and files in both the details view and large icons view without degrading performance.
 
-## Module Injection
+## Module injection
 
 To use UI virtualization, you must import the `Virtualization` module from the `ej2-filemanager` package and inject it using the `FileManager.Inject()` function.
 
@@ -25,11 +25,9 @@ FileManager.Inject(Virtualization);
 
 ```
 
-## Enable Virtualization
+## Enable virtualization
 
-The virtualization of the File Manager control is based on the height and width of the viewport. The items will be loaded in both [`large icons view`](../api/file-manager/#view) and [`details view`](../api/file-manager/detailsViewSettings/) based on the viewport size.
-
-To enable `virtualization`, you must set the [`enableVirtualization`](../api/file-manager/#enablevirtualization) property to true.
+Virtualization behavior depends on the viewport size (height/width). Enable it by setting the [`enableVirtualization`](../api/file-manager#enablevirtualization) property to `true`. Virtualization applies to both Large Icons and Details views where supported.
 
 In the example below, a sizable collection of files can be found in the folders **Documents** and **Text Documents**.
 
@@ -68,6 +66,6 @@ In the example below, a sizable collection of files can be found in the folders 
 
 ## Limitations for Virtualization
 
-* Programmatic selection using the [`selectAll`](../api/file-manager/#selectall) method is not supported with virtual scrolling.
+* Programmatic selection using the [`selectAll`](../api/file-manager#selectall) method is not supported with virtual scrolling.
 * The keyboard shortcut **CTRL+A** will only select the files and directories that are currently visible within the viewport, rather than selecting all files and directories in the entire directory tree.
 * Selected file items are not maintained while scrolling, considering the performance of the control.

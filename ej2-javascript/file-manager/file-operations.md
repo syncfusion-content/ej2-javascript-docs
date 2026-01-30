@@ -1,44 +1,44 @@
 ---
 layout: post
-title: File operations in ##Platform_Name## File Manager control | Syncfusion
-description: Learn here all about File operations in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: File operations in ##Platform_Name## File Manager component | Syncfusion
+description: Learn how the ##Platform_Name## File Manager component performs file operations and the request/response formats.
 platform: ej2-javascript
-control: File operations 
+control: File Manager
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# File operations in ##Platform_Name## File Manager control
+# File operations in ##Platform_Name## File Manager component
 
-The File Manager control is used to browse, manage, and organize the files and folders in a file system through a web application. All basic file operations like creating a new folder, uploading and downloading of files in the file system, and deleting and renaming of existing files and folders are available in the File Manager control.  Additionally, previewing of image files is also provided in the File Manager control.
+The File Manager component provides a web-based interface to browse, manage, and organize files and folders. It supports basic file operations such as creating folders, uploading and downloading files, deleting and renaming items, and previewing images.
 
-The following table represents the basic operations available in the File Manager and their corresponding functions.
+The following table summarizes the core file operations and their functions.
 
 |Operation Name|Function|
 |----|----|
-|read|Read the details of files or folders available in the given path from the file system, to display the files for the user to browse the content.|
-|create|Creates a new folder in the current path of the file system.|
-|delete|Removes the file or folder from the file server.|
-|rename|Rename the selected file or folder in the file system.|
-|search|Searches for items matching the search string in the current and child directories.|
-|details|Gets the detail of the selected item(s) from the file server.|
-|copy|Copy the selected file or folder in the file system.|
-|move|Cut the selected file or folder in the file server.|
-|upload|Upload files to the current path or directory in the file system.|
-|download|Downloads the file from the server and the multiple files can be downloaded as ZIP files.|
+|read|Read details of files or folders in the specified path to display content to the user.|
+|create|Create a new folder in the current path.|
+|delete|Remove a file or folder from the server.|
+|rename|Rename the selected file or folder.|
+|search|Search for items matching a search string within the current directory and its children.|
+|details|Retrieve details for the selected item(s).|
+|copy|Copy the selected files or folders.|
+|move|Cut (move) the selected files or folders.|
+|upload|Upload files to the current path or directory.|
+|download|Download files from the server; multiple files may be returned as a ZIP archive.|
 
->The *CreateFolder*, *Remove*, and *Rename* actions will be reflected in the File Manager only after the successful response from the server.
+>The CreateFolder, Remove, and Rename actions are applied in the File Manager only after the server returns a successful response.
 
-## Folder Upload support
+## Folder upload support
 
-To perform the directory(folder) upload in File Manager, set [`directoryUpload`](../api/file-manager/uploadSettings/#directoryupload) as true within the [`uploadSettings`](../api/file-manager/#uploadsettings) property. The directory upload feature is supported for the following file service providers:
+Enable directory (folder) upload by setting [`directoryUpload`](../api/file-manager/uploadSettings#directoryupload) to true inside the [`uploadSettings`](../api/file-manager#uploadsettings) property. Directory upload is supported for the following server providers:
 * Physical file service provider.
 * Azure file service provider.
 * NodeJS file service provider.
 * Amazon file service provider.
 
-In the following example, directory upload is enabled/disabled on DropDownButton selection.
+The example below shows enabling/disabling directory upload via a DropDownButton selection.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -232,9 +232,9 @@ string name = folders[folders.Length - 1];
 
 Refer to the [GitHub](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider/blob/master/Models/AmazonS3FileProvider.cs#L585) for more details.
 
-## File operation request and response Parameters
+## File operation request and response parameters
 
-The default parameters available in file operation request from the File Manager and the corresponding response parameters required by the File Manager are listed as follows.
+The File Manager sends operation requests to the server and expects structured responses. The following sections describe request/response parameters for each operation.
 
 ### Read
 
@@ -866,7 +866,7 @@ The following table represents the request parameters of *GetImage* operations.
 
 Return the image as a file stream in response.
 
-The request from the File Manager can be customized using the [`beforeSend`](../api/file-manager/#beforesend) event. Additional information can be passed to the File Manager in file operation response and can be used in customization.
+The request from the File Manager can be customized using the [`beforeSend`](../api/file-manager#beforesend) event. Additional information can be passed to the File Manager in file operation response and can be used in customization.
 
 ## File request and response contents
 

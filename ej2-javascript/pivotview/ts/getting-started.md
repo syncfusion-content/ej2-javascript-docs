@@ -82,12 +82,12 @@ npm install
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
 
-The quickstart application is preconfigured to use the `Material` theme in the `~/src/styles/styles.css` file, as shown below: 
+The quickstart application is preconfigured to use the `Tailwind3` theme in the `~/src/styles/styles.css` file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
 
-@import "../../node_modules/@syncfusion/ej2/material.css";
+@import "../../node_modules/@syncfusion/ej2/tailwind3.css";
 
 {% endhighlight %}
 {% endtabs %}

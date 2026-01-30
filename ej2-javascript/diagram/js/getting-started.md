@@ -1,46 +1,62 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Diagram control | Syncfusion®
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more details.
+title: ES5 getting started with ##Platform_Name## Diagram control | Syncfusion®
+description:  Checkout and learn about ES5 getting started with ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more details.
 platform: ej2-javascript
-control: Es5 getting started 
+control: ES5 getting started 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Diagram control
+# ES5 getting started with ##Platform_Name## Diagram control
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+Essential<sup style="font-size:70%">&reg;</sup> JS 2 (global script) is an ES5-formatted, pure JavaScript framework that can be used directly in modern web browsers.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/javascript/documentation/ai-coding-assistant/overview)
 
+## Dependencies
+
+The following list of dependencies are required to use the `Diagram` component in your application.
+
+```javascript
+|-- @syncfusion/ej2-diagrams
+    |-- @syncfusion/ej2-base
+    |-- @syncfusion/ej2-data
+    |-- @syncfusion/ej2-navigations
+    |-- @syncfusion/ej2-inputs
+    |-- @syncfusion/ej2-popups
+    |-- @syncfusion/ej2-buttons
+    |-- @syncfusion/ej2-lists
+    |-- @syncfusion/ej2-splitbuttons
+```
+
 ## Component Initialization
 
-The Essential® JS 2 JavaScript components can be initialized in two ways:
-- Using local script and style references in a HTML page.
-- Using CDN link for script and style references.
+The Essential® JS 2 components can be initialized in two ways:
+- Using local script and style references in an HTML page.
+- Using CDN links for scripts and styles.
 
 ### Using local script and style references in a HTML page
 
-**Step 1:** Create an app folder `my-diagram-app` for Essential® JS 2 JavaScript components.
+**Step 1:**Create an application folder named `my-diagram-app` for Essential® JS 2 JavaScript components.
 
 **Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
 **Syntax:**
-> Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+> Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Web(Essential JS 2)/javascript/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/tailwind3.css`
+> Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Web(Essential JS 2)/javascript/{PACKAGE_NAME}/styles/tailwind3.css`
 
 **Example:**
 
-> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/32.1.19/Essential JS 2/ej2-diagrams/dist/global/ej2-diagrams.min.js`
+> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/32.1.19/Web(Essential JS 2)/javascript/ej2-diagrams/dist/global/ej2-diagrams.min.js`
 >
-> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/32.1.19/Essential JS 2/ej2-diagrams/styles/tailwind3.css`
+> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/32.1.19/Web(Essential JS 2)/javascript/ej2-diagrams/styles/tailwind3.css`
 
-**Step 3:** Create a folder `my-diagram-app/resources` and copy/paste the global scripts and styles from the above installed location to `my-diagram-app/resources` location.
+**Step 3:** Create a  `my-diagram-app/resources` folder and copy the global scripts and styles from the installation location to this resources folder.
 
-**Step 4:** Create a HTML page (index.html) in `my-diagram-app` location and add the Essentials® JS 2 script and style references.
+**Step 4:** Create an HTML file named `index.html` in the `my-diagram-app` folder and add references to the Essentials® JS 2 script and style references.
 
 ```html
 <!DOCTYPE html>
@@ -50,8 +66,11 @@ The Essential® JS 2 JavaScript components can be initialized in two ways:
             <!-- Essential® JS 2 tailwind3 theme -->
             <link href="resources/tailwind3.css" rel="stylesheet" type="text/css"/>
 
+             <!-- Essential JS 2 Diagram's dependent scripts -->
+             <script src="resources/ej2-base.min.js" type="text/javascript"></script>
+         
             <!-- Essential® JS 2 Diagram's global script -->
-            <script src="resources/ej2-diagrams.min.js" type="text/javascript"></script>
+            <script src="resources/ej2.min.js" type="text/javascript"></script>
        </head>
        <body>
        </body>
@@ -68,15 +87,20 @@ The Essential® JS 2 JavaScript components can be initialized in two ways:
             <!-- Essential® JS 2 tailwind3 theme -->
             <link href="resources/tailwind3.css" rel="stylesheet" type="text/css"/>
 
+            <!-- Essential JS 2 Diagram's dependent scripts -->
+             <script src="resources/ej2-base.min.js" type="text/javascript"></script>
+
             <!-- Essential® JS 2 Diagram's global script -->
-            <script src="resources/ej2-diagrams.min.js" type="text/javascript"></script>
+            <script src="resources/ej2.min.js" type="text/javascript"></script>
        </head>
        <body>
             <!-- Add the HTML <div> element  -->
              <div id="element">Diagram</div>
             <script>
                 // initialize diagram component
-                var diagram = new ej.diagrams.Diagram();
+                var diagram = new ej.diagrams.Diagram({
+                        width:'100%',height:'700px'
+                    });
 
                 // Render initialized diagram.
                 diagram.appendTo('#element')
@@ -87,23 +111,23 @@ The Essential® JS 2 JavaScript components can be initialized in two ways:
 
 **Step 6:** Now, run the `index.html` in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Diagram** component.
 
-### Using CDN link for script and style reference
+### Using CDN links for scripts and styles
 
 **Step 1:** Create an app folder `my-diagram-app` for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components.
 
-**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 component's global scripts and styles are already hosted in the below CDN link formats.
+**Step 2:** Essential<sup style="font-size:70%">&reg;</sup> JS 2 global scripts and styles are hosted on Syncfusion's CDN. Reference the required packages using the following patterns.
 
 **Syntax:**
-> Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+> Script: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Styles: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/tailwind3.css`
+> Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/tailwind3.css`
 
 **Example:**
-> Script: [`https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js`](http://cdn.syncfusion.com/ej2/ej2-diagrams/dist/global/ej2-diagrams.min.js)
+> Script: [`https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js`](https://cdn.syncfusion.com/ej2/ej2-diagrams/dist/global/ej2-diagrams.min.js)
 >
-> Styles: [`http://cdn.syncfusion.com/ej2/ej2-diagrams/styles/Tailwind 3.4.css`](http://cdn.syncfusion.com/ej2/ej2-diagrams/styles/tailwind3.css)
+> Styles: [`https://cdn.syncfusion.com/ej2/ej2-diagrams/styles/Tailwind3.css`](https://cdn.syncfusion.com/ej2/ej2-diagrams/styles/tailwind3.css)
 
-**Step 3:** Create a HTML page (index.html) in `my-diagram-app` location and add the CDN link references. Now, add the `Diagram` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Diagram** component in the index.html by using following code.
+**Step 3:** Create an HTML page (`index.html`) in `my-diagram-app` and add the CDN link references. Then add a container element (for example, `<div id="element">`) and initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Diagram component using the example code below.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -121,7 +145,7 @@ The Essential® JS 2 JavaScript components can be initialized in two ways:
 
 ## Module Injection
 
-The diagram component is divided into individual feature-wise modules. In order to use a particular feature, inject the required module. The following list describes the module names and their description.
+The Diagram component is divided into individual feature-wise modules. In order to use a particular feature, inject the required module. The following list describes the module names and their description.
 
 * `BpmnDiagrams`: Inject this provider to add built-in BPMN shapes to diagrams.
 * `ConnectorBridging`: Inject this provider to add bridges to connectors.
@@ -224,7 +248,7 @@ Please refer to [`Shapes`](../api/diagram/shapes) to know about built-in Shapes.
 
 ### Add other flowchart nodes to the diagram
 
-You can add multiple nodes with different shapes into diagram.
+Add multiple nodes with different shapes to create a complete flowchart. Each node can represent different process steps such as decisions, processes, or terminators.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -265,7 +289,7 @@ In the 'Flow Diagram' section, how to create a diagram manually was discussed. T
 
 ### Create Business object (Employee information)
 
-Define Employee Information as JSON data. The following code example shows an employee array whose, `Name` is used as an unique identifier and `ReportingPerson` is used to identify the person to whom an employee report to, in the organization.
+Define employee information as JSON data. The following code example shows an employee array whose, `Name` is used as an unique identifier and `ReportingPerson` property identifies each employee's manager in the organizational hierarchy.
 
 ```ts
 

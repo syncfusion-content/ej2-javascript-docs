@@ -1,17 +1,19 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## File Manager control | Syncfusion
-description: Learn here all about Localization in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## File Manager component | Syncfusion
+description: Learn how to localize the ##Platform_Name## File Manager component by providing culture-specific texts and messages.
 platform: ej2-javascript
-control: Localization
+control: File Manager
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in ##Platform_Name## File Manager control
+# Localization in ##Platform_Name## File Manager component
 
-The File Manager control can be localized to any culture by defining the texts and messages in the corresponding culture. The default [`locale`](../api/file-manager/#locale) of the File Manager control is `en` (English). The following table represents the default texts and messages of the File Manager control in the `en` culture.
+The File Manager component supports localization by providing culture-specific texts and messages. The default [`locale`](../api/file-manager#locale) is `en` (English). To localize the component, supply translations for the keys listed below for your target culture and register them with the localization framework.
+
+The table below lists the default keys and their English texts/messages.
 
 |KEY|Text/Message|
 |----|----|
@@ -108,7 +110,7 @@ The File Manager control can be localized to any culture by defining the texts a
 |Network-Error|NetworkError: Failed to send on XMLHTTPRequest: Failed to load|
 |Server-Error|ServerError: Invalid response from|
 
-The example below shows adding the German culture locale (`de-DE`).
+The example below shows how to add a `de-DE` locale for the File Manager component.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Virtual scrolling in ##Platform_Name## Schedule control | Syncfusion
-description: Learn here all about Virtual scrolling in Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
+description: Discover virtual scrolling in Syncfusion ##Platform_Name## Scheduler (Essential JS 2), covering lazy loading, server integration, and view limitations.
 platform: ej2-javascript
 control: Virtual scrolling 
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Virtual scrolling in ##Platform_Name## Scheduler control
 
-To achieve better performance in the Scheduler when loading a large number of resources and events, we have added virtual scrolling support to load a large set of resources and events instantly as you scroll. You can dynamically load large number of resources and events in the Scheduler by setting `true` to the [`allowVirtualScrolling`](../api/schedule/viewsModel/#allowvirtualscrolling) property within the view specific settings. The virtual loading of events is possible in Agenda view, by setting [`allowVirtualScrolling`](../api/schedule/viewsModel/#allowvirtualscrolling) property to `true` within the agenda view specific settings.
+To improve performance when loading many resources and events, the Scheduler supports virtual scrolling. Virtual scrolling loads resources and events on demand as the user scrolls, reducing initial render time and memory usage. Enable virtual scrolling by setting `true` on the [`allowVirtualScrolling`](../api/schedule/viewsModel#allowvirtualscrolling) property within the view-specific settings. Virtual loading of events is also supported in the Agenda view by enabling [`allowVirtualScrolling`](../api/schedule/viewsModel#allowvirtualscrolling) in the agenda view settings.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -40,17 +40,17 @@ To achieve better performance in the Scheduler when loading a large number of re
 {% previewsample "page.domainurl/code-snippet/schedule/virtual-scrolling-cs1" %}
 {% endif %}
 
-**Note:** For now, the virtual loading of resources and events is not supported in `MonthAgenda`, `Year` and `TimelineYear` (Horizontal Orientation) views.
+**Note:** Virtual loading of resources and events is not supported in the `MonthAgenda`, `Year`, and `TimelineYear` (horizontal orientation) views.
 
 ## Enabling lazy loading for appointments
 
-The lazy loading feature provides a convenient way to efficiently load resource appointments into the Scheduler using an on-demand approach. With this feature, you can seamlessly load a large volume of appointment data into the Scheduler without experiencing any performance degradation.
+Lazy loading allows the Scheduler to fetch appointment data on demand for the currently visible resources, improving responsiveness for large datasets.
 
-By default, the Scheduler fetches all the relevant appointments from the server with in the current date range. However, enabling this feature will trigger query requests to the server for appointment retrieval whenever new resources are rendered due to scroll actions. These queries contain the resource IDs of currently displayed resources along with current date range, which can be passed as a comma-separated string. In the server controller, these resource IDs are parsed to filter the necessary appointments to render in the scheduler. 
+By default, the Scheduler requests all appointments for the current date range. When lazy loading is enabled, the Scheduler issues queries to the server whenever new resources are rendered due to scrolling. These queries include the resource IDs currently in view (usually passed as a comma-separated string) and the current date range. On the server, parse the resource IDs to filter and return only the appointments needed for the visible resources.
 
-When you enable this feature, the Scheduler becomes capable of fetching events from remote services only for the current view port alone to optimize the data retrieval. The remaining appointment data is fetched form the server on-demand based on currently rendered view port resources as you scroll's through the scheduler content.
+With lazy loading enabled, the Scheduler fetches events from remote services only for the current viewport, and remaining data is retrieved from the server on demand as the user scrolls through the Scheduler content.
 
-To enable this feature, you have to set the [`enableLazyLoading`](../api/schedule/viewsModel/#enablelazyloading) property to `true` within the view specific settings.
+Enable lazy loading by setting `true` for the [`enableLazyLoading`](../api/schedule/viewsModel#enablelazyloading) property within the view-specific settings.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -79,7 +79,7 @@ To enable this feature, you have to set the [`enableLazyLoading`](../api/schedul
 {% previewsample "page.domainurl/code-snippet/schedule/lazy-loading-cs1" %}
 {% endif %}
 
-Here's the server-side controller code that retrieves appointment data based on the resource IDs provided as query parameters:
+Here's a sample server-side controller that retrieves appointment data based on resource IDs provided as query parameters:
 
 ```c#
 using Microsoft.AspNetCore.Mvc;
@@ -120,12 +120,12 @@ namespace LazyLoadingServices.Controllers
 }
 ```
 
-**Note:** 
-* The property will be effective, when large number of resources and appointments bound to the Scheduler.
-* This property is applicable only when [resource grouping](https://ej2.syncfusion.com/documentation/api/schedule/group/#resources) is enabled in Scheduler.
+**Notes:** 
+* This feature is most effective when a large number of resources and appointments are bound to the Scheduler.
+* Lazy loading applies only when [resource grouping](https://ej2.syncfusion.com/documentation/api/schedule/group#resources) is enabled on the Scheduler.
 
-> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to knows how to present and manipulate data.
+> Refer to the [JavaScript Scheduler feature tour](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) for an overview of capabilities, and see the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to learn how to present and manipulate data.
 
 ## See Also
 
-* [Virtual scrolling in Agenda view](./views/#agenda-view)
+* [Virtual scrolling in Agenda view](./views#agenda-view)

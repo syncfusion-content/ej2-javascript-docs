@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Frequently asked questions in ##Platform_Name## Scheduler control | Syncfusion
-description: Learn here all about Frequently asked questions in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
+title: Syncfusion ##Platform_Name## Scheduler FAQ
+description: Find solutions to common questions and issues encountered while using the Syncfusion ##Platform_Name## Scheduler control (Essential JS 2) with TypeScript.
 platform: ej2-javascript
 control: Frequently asked questions 
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Frequently asked questions in ##Platform_Name## Scheduler control
 
-In this article, you can find some frequently asked questions and corresponding solutions while getting hands-on experience with scheduler control.
+This article provides answers to frequently asked questions and solutions to common issues encountered while working with the Scheduler control in TypeScript.
 
 ## Maximum call stack size exceeded
 
@@ -19,16 +19,13 @@ In this article, you can find some frequently asked questions and corresponding 
 
 ![Maximum call stack size exceeded](images/max-call-stack-size.png)
 
-**Solution:**
+**Problem:** This error occurs when using Scheduler views that have not been imported and injected into the project.
 
-The above error occurs when using scheduler views that were not imported into the project. You can resolve this issue by importing the required view modules.
+**Solution:** Import and inject the required view modules. In the example below, the `Day` option is used without injecting the `Day` module, which causes the error. Resolve this by injecting the `Day` module:
 
-In the below code, `Day` option is used without injecting, So, it throws the above error. You can resolve this problem by simply injecting the day module in below code.
-
-```ts
-
-import { Schedule, TimelineViews, TimelineMonth, Agenda, Resize, DragAndDrop } from '@syncfusion/ej2-schedule';
-Schedule.Inject(TimelineViews, TimelineMonth, Agenda, Resize, DragAndDrop);
+```typescript
+import { Schedule, Day, TimelineViews, TimelineMonth, Agenda, Resize, DragAndDrop } from '@syncfusion/ej2-schedule';
+Schedule.Inject(Day, TimelineViews, TimelineMonth, Agenda, Resize, DragAndDrop);
 
 let scheduleObj: Schedule = new Schedule({
   height: '650px',
@@ -44,23 +41,22 @@ let scheduleObj: Schedule = new Schedule({
   ]
 });
 scheduleObj.appendTo('#Schedule');
-
 ```
 
 ## Grouping with empty resources
 
-Grouping without providing any resource data will throw the following problems.
+Enabling grouping without providing resource data causes the following issues:
 
-* Normal(vertical) views are rendered, but you are not able to perform CRUD operations
-* Timeline views not at all render and shows empty scheduler table
+* Normal (vertical) views render but CRUD operations do not function.
+* Timeline views fail to render and display an empty scheduler table.
 
-So, we suggest to avoid grouping with empty resources in the scheduler.
+**Recommendation:** Avoid enabling grouping when no resource data is available.
 
-## Not providing e-field in editor template
+## Missing `e-field` attribute in editor template
 
-**Error:** While using editor template, value of  `e-field` is missing in editor window.
+**Error:** When using a custom editor template, input field values may not bind correctly if the `e-field` attribute is missing.
 
-**Solution:** `e-field` value is mandatory, we need to add it. Please refer [here](https://ej2.syncfusion.com/documentation/schedule/editor-template/#customizing-event-editor-using-template) for more info.
+**Solution:** The `e-field` attribute is mandatory for binding input values to event fields. Add it to each editor input element. For more information, refer to the [editor template documentation](https://ej2.syncfusion.com/documentation/schedule/editor-template#customizing-event-editor-using-template).
 
 ## Missing CSS reference
 
@@ -68,41 +64,40 @@ So, we suggest to avoid grouping with empty resources in the scheduler.
 
   ![Missing CSS reference](images/missing-css-reference.png)
 
-**Solution:**
+**Problem:** Scheduler layout or styles are broken when the required CSS files are not included.
 
-The above problem occurs when missing CSS references for the scheduler in a project. You can resolve this issue by providing proper CSS for the scheduler.
+**Solution:** Add the Scheduler theme CSS to your page. Example:
 
-```
+```html
 <html>
 <head>
-    <title>Syncfusion Typescript Sample</title>
+    <title>Syncfusion TypeScript Sample</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="author" content="Syncfusion" />
 
-      <! –– scheduler CSS is referred from this link ––>
+    <!-- Scheduler CSS is referred from this link -->
     <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet">
-
 </head>
 
 <body class="material">
     <div id='sample'>
+        <!-- Scheduler component -->
+    </div>
 </body>
 </html>
 ```
 
-## QuickInfoTemplate at bottom
+## QuickInfoTemplate appears clipped at bottom
 
-When using the `quickInfoTemplate` in scheduler, sometimes quickinfo popup not shown fully at the bottom area of scheduler. You can resolve this by using `cellClick` and `eventClick` events and below code snippet.
+When using a `quickInfoTemplate`, the quick info popup may appear clipped at the bottom of the Scheduler. Resolve this by refreshing the popup position when it opens using the `cellClick` and `eventClick` events.
 
-```ts
-
+```typescript
 let eventAdded: boolean = false;
 
 let scheduleObj: Schedule = new Schedule({
-    .
-    .
+  // ... other options
   cellClick: onClick,
   eventClick: onClick
 });
@@ -110,42 +105,42 @@ let scheduleObj: Schedule = new Schedule({
 scheduleObj.appendTo('#Schedule');
 
 function onClick(args) {
-  if (!this.eventAdded) {
+  if (!eventAdded) {
     let popupInstance = (document.querySelector('.e-quick-popup-wrapper') as any).ej2_instances[0];
     popupInstance.open = () => {
       popupInstance.refreshPosition();
     };
-    this.eventAdded = true;
+    eventAdded = true;
   }
 }
 ```
 
-```css
+Optionally, add CSS to ensure minimum height:
 
+```css
 .e-schedule .e-quick-popup-wrapper {
   min-height: 232px;
 }
-
 ```
 
-## Not importing culture files while using localization
+## Culture files not imported for localization
 
 **Error Image:**
 
 ![Locale import issue](images/locale-import-issue.png)
 
- While using [`locale`](https://ej2.syncfusion.com/documentation/schedule/localization/) in scheduler, not importing the required culture files properly throws the problem.
+**Problem:** When using the [`locale`](https://ej2.syncfusion.com/documentation/schedule/localization) property, localization fails if the required culture files are not imported correctly.
 
-**Solution:** Properly add and import the culture files(numberingSystems, timeZoneNames, loadCldr, L10n etc.,) in your project will resolve the problem.
+**Solution:** Import all required CLDR culture files and load them using `loadCldr`, then load locale strings using `L10n.load`:
 
-```ts
+```typescript
 import { loadCldr, L10n } from '@syncfusion/ej2-base';
 import enNumberData from '@syncfusion/ej2-cldr-data/main/en-GB/numbers.json';
 import entimeZoneData from '@syncfusion/ej2-cldr-data/main/en-GB/timeZoneNames.json';
 import enGregorian from '@syncfusion/ej2-cldr-data/main/en-GB/ca-gregorian.json';
 import enNumberingSystem from '@syncfusion/ej2-cldr-data/supplemental/numberingSystems.json';
 
-loadCldr(frNumberData, frtimeZoneData, frGregorian, frNumberingSystem);
+loadCldr(enNumberData, entimeZoneData, enGregorian, enNumberingSystem);
 
 L10n.load({
   'en-GB': {
@@ -154,28 +149,28 @@ L10n.load({
       week: 'Week',
       workWeek: 'Work Week',
       month: 'Month'
-      }
     }
-  });
-
+  }
+});
 ```
 
-## Getting instance of the Scheduler component
+## Getting the Scheduler component instance
 
-User can access the component instance from the component element through the variable where you are initializing the Schedule component(scheduleObj) or by using the ej2_instances property as shown below.
+You can access the Scheduler component instance either from the variable used during initialization or by querying the DOM element and accessing the `ej2_instances` property.
 
-```ts
-
+```typescript
 let scheduleObj: Schedule = new Schedule({
-    .
-    .
-  cellClick: onClick,
+  // ... other options
+  cellClick: onClick
 });
 
 scheduleObj.appendTo('#Schedule');
 
-function onClick(args) {  
-    let scheduleInstance = (document.querySelector('.e-schedule') as any).ej2_instances[0];
+function onClick(args) {
+  // Method 1: Use the initialization variable
+  let instance1 = scheduleObj;
+  
+  // Method 2: Query from the DOM element
+  let instance2 = (document.querySelector('.e-schedule') as any).ej2_instances[0];
 }
 ```
-

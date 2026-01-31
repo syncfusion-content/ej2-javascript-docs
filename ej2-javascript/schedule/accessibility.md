@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Schedule control | Syncfusion
+title: Accessibility and keyboard navigation for ##Platform_Name## Syncfusion
 description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Accessibility 
@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in ##Platform_Name## Schedule control
 
-The Scheduler has been designed based on the WAI-ARIA specifications, thus applying the appropriate ARIA roles, states and properties for the Scheduler elements. It is also available with a built-in keyboard navigation support, making it easier for the people who use assistive technologies or who completely rely on the Keyboard support. As per the accessibility standard, the navigated dates, views and other interactive actions performed on the Scheduler will be read out to the target users who use assistive technologies such as screen readers.
+The Scheduler component is designed following WAI-ARIA specifications, applying appropriate ARIA roles, states, and properties to all interactive elements. This ensures compatibility with assistive technologies such as screen readers. The component includes built-in keyboard navigation support, enabling users who rely on assistive technologies or keyboard-only navigation to interact with all Scheduler features effectively. Assistive technologies announce navigated dates, view changes, and interactive actions performed within the Scheduler, providing clear feedback to users.
 
-The Scheduler makes use of the most required ARIA attributes such as `aria-label` and `role` to support the accessibility in it. To be more accurate, it must be used with an ARIA compliant browser along with the screen reader running from backend.
+The Scheduler implements essential ARIA attributes including `aria-label` and `role` to ensure comprehensive accessibility support. For optimal accessibility, use the Scheduler with ARIA-compliant browsers in conjunction with screen readers.
 
 The accessibility compliance for the Schedule control is outlined below.
 
@@ -44,49 +44,49 @@ The accessibility compliance for the Schedule control is outlined below.
 
 ## ARIA attributes
 
-The Scheduler parent element is assigned with a role of `main`, to denote it as the main content of a control as well as a unique element of the entire document.
+The Scheduler's parent element is assigned with the role of `main`, identifying it as the primary content area of the control and a unique element within the document structure. These ARIA attributes provide essential context for assistive technologies to interpret the Scheduler's structure and functionality.
 
-The following ARIA attributes are used in the Scheduler.
+The following ARIA attributes are implemented in the Scheduler to ensure comprehensive accessibility:
 
 | Attributes | Description |
 |-------|---------|
-| role="main" |  Attribute added to the Scheduler element describes the actual role of the element and denote it as a main and unique content. |
-| role="button" | Attribute is assigned to the appointments of Scheduler, to denote it as a clickable element. |
-| aria-label | Attribute is set to the Scheduler parent element and its default value is Scheduler's current date. On every time, the date is navigated, this attribute is updated with appropriate current date values. It is also assigned to other scheduler UI elements such as previous and next date navigation buttons depicting its purpose, div element displaying date range in the header bar and appointment elements. |
-| aria-labelledby | It indicates editor dialog title to the user through assistive technologies. |
-| aria-describedby | It indicates editor dialog content description to the user through assistive technologies. |
-| aria-disabled | Attribute is set to the appointment element to indicates the disabled state of the Scheduler.
+| role="main" | Applied to the Scheduler's parent element to identify it as the main content area and primary interactive region of the control. |
+| role="button" | Assigned to appointment elements within the Scheduler, indicating they are interactive and clickable elements that users can select to view or edit appointment details. |
+| aria-label | Applied to the Scheduler's parent element with a default value reflecting the current date. This attribute updates dynamically as users navigate to different dates. Also assigned to navigation buttons (previous/next), the date range display in the header bar, and appointment elements to provide descriptive labels for assistive technologies. |
+| aria-labelledby | References the editor dialog's title element, enabling assistive technologies to announce the dialog's purpose when opened. |
+| aria-describedby | References the editor dialog's content description, providing detailed context about the dialog to assistive technology users. |
+| aria-disabled | Applied to appointment elements when they are in a disabled state, informing assistive technology users that the appointment cannot be interacted with. |
 
 ## Keyboard interaction
 
-All the Scheduler actions can be controlled via keyboard keys by using the `allowKeyboardInteraction` property which is set to `true` by default. The following are the standard keys that work on Scheduler.
+The Scheduler provides comprehensive keyboard navigation support through the `allowKeyboardInteraction` property, which is enabled by default. This feature allows users to perform all Scheduler operations using keyboard shortcuts, ensuring full accessibility for keyboard-only users. The following keyboard shortcuts enable efficient navigation and interaction with the Scheduler:
 
 | Keys | Description |
 |-----|-----|
-| <kbd>Alt</kbd> + <kbd>j</kbd> | Focuses the Scheduler element [provided from application end]. |
-| <kbd>Tab</kbd> | Focuses the first or active item on the Scheduler header bar and then move the focus to the next available event elements. If no events present, then focus moves out of the control. |
-| <kbd>Shift</kbd> + <kbd>Tab</kbd> | Reverse focusing of the `Tab` key functionality. Inverse focusing of event elements from the last one and then move onto the first or active item on Scheduler header bar and then moves out of the control.
-| <kbd>Enter</kbd> | Opens the quick info popup on the selected cells or events. |
+| <kbd>Alt</kbd> + <kbd>j</kbd> | Focuses the Scheduler element. This shortcut must be implemented at the application level to direct focus to the Scheduler. |
+| <kbd>Tab</kbd> | Moves focus to the first or currently active item in the Scheduler header bar, then progressively to each appointment element in the visible view. When no appointments are present, focus moves beyond the control. |
+| <kbd>Shift</kbd> + <kbd>Tab</kbd> | Reverses the Tab key's focus order, moving backward through appointment elements, then to the active or first item in the header bar, and finally out of the control. |
+| <kbd>Enter</kbd> | Opens the quick info popup for the currently selected cell or appointment, providing details and action options. |
 | <kbd>Escape</kbd> | Closes any of the popup that are in open state. |
-| <kbd>Arrow</kbd> | To move onto the next available cells in either of the needed directions. (left, right, top and right) |
-| <kbd>Shift</kbd> + <kbd>Arrow</kbd> | For multiple cell selection on either direction. |
-| <kbd>Delete</kbd> | Deletes one or more selected events. |
-| <kbd>Ctrl</kbd> + <kbd>Click</kbd> on events | To select multiple events. |
-| <kbd>Alt</kbd> + <kbd>Number</kbd> (from 1 to 6) |To switch between the views of Scheduler. |
-| <kbd>Ctrl</kbd> + <kbd>Left Arrow</kbd> | To navigate to the previous date period. |
-| <kbd>Ctrl</kbd> + <kbd>Right Arrow</kbd> | To navigate to the next date period. |
-| <kbd>Left</kbd> or <kbd>Right Arrow</kbd> | On pressing any of these keys, when focus is currently on the Schedule header bar, moves the focus to the previous or next items in the header bar. |
-| <kbd>Space</kbd> or <kbd>Enter</kbd> | It activates any of the focused items. |
+| <kbd>Arrow</kbd> | Navigates to adjacent cells in the current view. Use Left/Right arrows for horizontal navigation and Up/Down arrows for vertical navigation across time slots or dates. |
+| <kbd>Shift</kbd> + <kbd>Arrow</kbd> | Extends the selection to multiple cells in the direction of the arrow key, enabling multi-cell selection for creating appointments spanning multiple time slots or days. |
+| <kbd>Delete</kbd> | Deletes the currently selected appointment or multiple selected appointments. |
+| <kbd>Ctrl</kbd> + <kbd>Click</kbd> on events | Enables selection of multiple appointments simultaneously. |
+| <kbd>Alt</kbd> + <kbd>Number</kbd> (from 1 to 6) | Switches between available Scheduler views. The number corresponds to the view order defined in the views configuration. |
+| <kbd>Ctrl</kbd> + <kbd>Left Arrow</kbd> | Navigates to the previous date period based on the current view (previous day, week, or month). |
+| <kbd>Ctrl</kbd> + <kbd>Right Arrow</kbd> | Navigates to the next date period based on the current view (next day, week, or month). |
+| <kbd>Left</kbd> or <kbd>Right Arrow</kbd> | When focus is on the Scheduler header bar, moves focus to the previous or next interactive element in the header (such as view switcher buttons or date navigation controls). |
+| <kbd>Space</kbd> or <kbd>Enter</kbd> | Activates the currently focused element. |
 | <kbd>Page Up</kbd> & <kbd>Page Down</kbd> | To scroll through the work cells area. |
-| <kbd>Home</kbd> | To move the selection to the first cell of Scheduler. |
-| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Y</kbd> | To navigate to today date. |
-| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>N</kbd> | To open editor window. |
+| <kbd>Home</kbd> | Moves the selection to the first cell in the Scheduler. |
+| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Y</kbd> | Navigates to today's date. |
+| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>N</kbd> | Opens the appointment editor window to create a new appointment. |
 
-> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to knows how to present and manipulate data.
+> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to knows how to present and manipulate data.
 
 ## Ensuring accessibility
 
-The Scheduler control accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The accessibility compliance of the Scheduler control is validated using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) tools during automated testing to ensure adherence to accessibility standards.
 
 The accessibility compliance of the Scheduler control is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/schedule.html) in a new window to evaluate the accessibility of the Scheduler control with accessibility tools.
 

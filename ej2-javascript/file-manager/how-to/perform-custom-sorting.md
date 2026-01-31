@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Perform custom sorting in ##Platform_Name## File Manager control | Syncfusion
-description: Learn about how to perform custom sorting in the Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Custom Sorting in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to implement custom sorting in the Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Perform custom sorting 
+control: File Manager
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Perform custom sorting in ##Platform_Name## File Manager control
+# Perform custom sorting in ##Platform_Name## File Manager component
 
-The File Manager control provides a way to customize the default sort action for the LargeIconsView by defining the [`sortComparer`](../../api/file-manager/#sortcomparer) property and for sorting individual columns in the DetailsView by defining the [`sortComparer`](../../api/file-manager/column/#sortcomparer) property in the [`columns`](../../api/file-manager/column/) property.
+The File Manager component provides a way to customize the default sort action for the LargeIconsView by defining the [`sortComparer`](../../api/file-manager#sortcomparer) property and for sorting individual columns in the DetailsView by defining the [`sortComparer`](../../api/file-manager/column#sortcomparer) property in the [`columns`](../../api/file-manager/column) property.
 
 >**Note:** To achieve natural sorting like Windows Explorer, you can import the `SortComparer` function from `'@syncfusion/ej2-javascript-filemanager'`. If you want to perform your own custom sorting, you can define your own `SortComparer` function.
 

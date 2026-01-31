@@ -1,4 +1,3 @@
-// initialize Rich Text Editor component
 var editor = new ej.richtexteditor.RichTextEditor({
     value: `<table border="1" style="width:100%; border-collapse: collapse;">
   <tr>
@@ -53,5 +52,4 @@ var editor = new ej.richtexteditor.RichTextEditor({
         ],
     }
 });
-// render initialized Rich Text Editor
 editor.appendTo('#editor');

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Frequently asked questions in ##Platform_Name## Scheduler control | Syncfusion
-description: Learn here all about Frequently asked questions in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Scheduler FAQs | Syncfusion
+description: Find solutions to common questions and issues encountered while using the Syncfusion ##Platform_Name## Scheduler control (Essential JS 2).
 platform: ej2-javascript
 control: Frequently asked questions 
 publishingplatform: ##Platform_Name##
@@ -11,22 +11,22 @@ domainurl: ##DomainURL##
 
 # Frequently asked questions in ##Platform_Name## Scheduler control
 
-In this article, you can find some frequently asked questions and corresponding solutions while getting hands-on experience with scheduler control.
+This article provides answers to frequently asked questions and solutions to common issues encountered while working with the Scheduler control.
 
 ## Grouping with empty resources
 
-Grouping without providing any resource data will throw the following problems.
+Enabling grouping without providing resource data causes the following issues:
 
-* Normal(vertical) views are rendered, but you are not able to perform CRUD operations
-* Timeline views not at all render and shows empty scheduler table
+* Normal (vertical) views render but CRUD operations fail.
+* Timeline views do not render at all and display an empty scheduler table.
 
-So, we suggest to avoid grouping with empty resources in the scheduler.
+**Recommendation:** Avoid enabling grouping when no resource data is available.
 
-## Not providing e-field in editor template
+## Missing `e-field` attribute in editor template
 
-**Error:** While using editor template, value of  `e-field` is missing in editor window.
+**Error:** When using a custom editor template, input field values may not bind correctly if the `e-field` attribute is missing.
 
-**Solution:** `e-field` value is mandatory, we need to add it. Please refer [here](https://ej2.syncfusion.com/javascript/documentation/schedule/editor-template/#customizing-event-editor-using-template) for more info.
+**Solution:** The `e-field` attribute is mandatory for binding input values to event fields. Add it to each editor input element. For more information, refer to the [editor template documentation](https://ej2.syncfusion.com/javascript/documentation/schedule/editor-template#customizing-event-editor-using-template).
 
 ## Missing CSS reference
 
@@ -36,39 +36,38 @@ So, we suggest to avoid grouping with empty resources in the scheduler.
 
 **Solution:**
 
-The above problem occurs when missing CSS references for the scheduler in a project. You can resolve this issue by providing proper CSS for the scheduler.
+This issue occurs when the Scheduler CSS files are not included in the project. Add the appropriate theme CSS to resolve the styling issue:
 
-```
+```html
 <html>
 <head>
-    <title>Syncfusion Javascript Sample</title>
+    <title>Syncfusion JavaScript Sample</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="author" content="Syncfusion" />
 
-      <! –– scheduler CSS is referred from this link ––>
+    <!-- Scheduler CSS is referred from this link -->
     <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet">
-
 </head>
 
 <body class="material">
     <div id='sample'>
+        <!-- Scheduler component -->
+    </div>
 </body>
 </html>
 ```
 
-## QuickInfoTemplate at bottom
+## QuickInfoTemplate clipped at bottom
 
-When using the `quickInfoTemplate` in scheduler, sometimes quickinfo popup not shown fully at the bottom area of scheduler. You can resolve this by using `cellClick` and `eventClick` events and below code snippet.
+When using the `quickInfoTemplate`, the quick info popup may appear clipped at the bottom of the Scheduler. Resolve this by refreshing the popup position when it opens using the `cellClick` and `eventClick` events.
 
 ```javascript
-
 var eventAdded = false;
 
 var scheduleObj = new ej.schedule.Schedule({
-    .
-    .
+  // ... other options
   cellClick: onClick,
   eventClick: onClick
 });
@@ -86,27 +85,27 @@ function onClick(args) {
 }
 ```
 
-```css
+Optionally, add CSS to ensure minimum height:
 
+```css
 .e-schedule .e-quick-popup-wrapper {
   min-height: 232px;
 }
-
 ```
 
-## Not processing culture files while using localization
+## Culture files not loaded for localization
 
 **Error Image:**
 
 ![Locale import issue](images/locale-import-issue.png)
 
- While using [`locale`](https://ej2.syncfusion.com/javascript/documentation/schedule/localization/) in scheduler, not processing the `loadCultureFiles` properly throws the problem.
+**Problem:** When using the [`locale`](https://ej2.syncfusion.com/javascript/documentation/schedule/localization) property, localization fails if culture files are not loaded correctly.
 
-**Solution:** Properly add the culture files(numberingSystems, timeZoneNames, loadCldr, L10n etc.,) and `loadCultureFiles` method in your project will resolve the problem.
+**Solution:** Ensure all required CLDR culture files (numberingSystems, timeZoneNames, etc.) are loaded properly and the `loadCultureFiles` method is called before initializing the Scheduler.
 
 ```javascript
-
 loadCultureFiles();
+
 var localeTexts;
 var localeAjax = new ej.base.Ajax('./locale.json', 'GET', false);
 localeAjax.onSuccess = function (value) {
@@ -116,7 +115,7 @@ localeAjax.send();
 ej.base.L10n.load(JSON.parse(localeTexts));
 
 function loadCultureFiles() {
-  // Processing culture files
+  // Load CLDR culture files
   var files = ['ca-gregorian.json', 'numbers.json', 'numberingSystems.json', 'timeZoneNames.json'];
   var loader = ej.base.loadCldr;
   var loadCulture = function (prop) {
@@ -136,29 +135,29 @@ function loadCultureFiles() {
 var scheduleObj = new ej.schedule.Schedule({
   width: '100%',
   height: '550px',
-  locale: 'fr-CH',
-}
+  locale: 'fr-CH'
 });
-scheduleObj.appendTo('#Schedule');
 
+scheduleObj.appendTo('#Schedule');
 ```
 
-## Getting instance of the Scheduler component
+## Getting the Scheduler component instance
 
-User can access the component instance from the component element through the variable where you are initializing the Schedule component(scheduleObj) or by using the ej2_instances property as shown below.
+You can access the Scheduler component instance either from the variable used during initialization or by querying the DOM element and accessing the `ej2_instances` property.
 
 ```javascript
-
 var scheduleObj = new ej.schedule.Schedule({
-    .
-    .
-  cellClick: onClick,
+  // ... other options
+  cellClick: onClick
 });
 
 scheduleObj.appendTo('#Schedule');
 
 function onClick(args) {
-    let scheduleInstance = document.querySelector('.e-schedule').ej2_instances[0];  
+  // Method 1: Use the initialization variable
+  var instance1 = scheduleObj;
+  
+  // Method 2: Query from the DOM element
+  var instance2 = document.querySelector('.e-schedule').ej2_instances[0];
 }
-
 ```

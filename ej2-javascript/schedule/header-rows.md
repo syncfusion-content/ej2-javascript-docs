@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Header rows in ##Platform_Name## Scheduler control
 
-The Timeline views can have additional header rows other than its default date and time header rows. It is possible to show individual header rows for displaying year, month and week separately using the [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule#headerrows) property. This property is applicable only on the timeline views. The possible rows which can be added using [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule#headerrows) property are as follows.
+The Timeline views support additional header rows other than its default date and time header rows. To show individual header rows for displaying year, month and week separately using the [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule#headerrows) property. This property is applicable only on the timeline views. The possible rows which can be added using [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule#headerrows) property are as follows.
 
 * `Year`
 * `Month`
@@ -21,7 +21,7 @@ The Timeline views can have additional header rows other than its default date a
 
 > The `Hour` row is not applicable for Timeline month view.
 
-The following example shows the Scheduler displaying all the available header rows on timeline views.
+The following example demonstrates the Scheduler displaying all the available header rows on timeline views.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -58,7 +58,7 @@ The following example shows the Scheduler displaying all the available header ro
 
 ## Display year and month rows in timeline views
 
-To display the timeline Scheduler simply with year and month names alone, define the option `Year` and `Month` within the [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule#headerrows) property.
+To display the Timeline Scheduler with only year and month information, specify the `Year` and `Month` options within the [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule#headerrows) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -95,7 +95,7 @@ To display the timeline Scheduler simply with year and month names alone, define
 
 ## Display week numbers in timeline views
 
-The week number can be displayed in a separate header row of the timeline Scheduler by setting `Week` option within [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule#headerrows) property.
+Week numbers can be displayed in a dedicated header row of the timeline Scheduler by including the `Week` option within the [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule#headerrows) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -132,7 +132,7 @@ The week number can be displayed in a separate header row of the timeline Schedu
 
 ## Timeline view displaying dates of a complete year
 
-It is possible to display a complete year in a timeline view by setting [`interval`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale/#interval) value as 12 and defining **TimelineMonth** view option within the `views` property of Scheduler.
+A complete year can be displayed in a Timeline view by setting [`interval`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#interval) value as 12 and defining **TimelineMonth** view option within the `views` property of Scheduler.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -169,7 +169,7 @@ It is possible to display a complete year in a timeline view by setting [`interv
 
 ## Customizing the header rows using template
 
-You can customize the text of the header rows and display any images or formatted text on each individual header rows using the built-in [`template`](https://ej2.syncfusion.com/documentation/api/schedule/headerRows/#template) option available within the [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule#headerrows)property.
+The header row text can be customized and formatted content or images can be displayed using the [`template`](https://ej2.syncfusion.com/documentation/api/schedule/headerRows#template) option available within the [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule#headerrows) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -204,4 +204,4 @@ You can customize the text of the header rows and display any images or formatte
 {% previewsample "page.domainurl/code-snippet/schedule/header-rows-cs5" %}
 {% endif %}
 
-> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/bootstrap5/schedule/overview.html) to knows how to present and manipulate data.
+> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to knows how to present and manipulate data.

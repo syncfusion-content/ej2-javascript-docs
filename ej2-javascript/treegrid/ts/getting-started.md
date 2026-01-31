@@ -9,15 +9,19 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Treegrid control
+#  Getting started in ##Platform_Name## Treegrid control
 
-This section explains the steps to create a simple TreeGrid and demonstrates the basic usage of the TreeGrid component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
+The TreeGrid component is essential for displaying hierarchical data in a tabular format. It is commonly used for project management (displaying tasks and subtasks), organizational structures (displaying company hierarchies), file systems, and any scenario where data has parent-child relationships. This section explains the steps to create a simple TreeGrid and demonstrates the basic usage of the TreeGrid component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
-Following is the list of minimum dependencies required to use the treegrid.
+The TreeGrid component requires several npm packages that work together to
+provide core functionality. Understanding these dependencies helps ensure that
+all required packages are installed.
+
+Following is the list of minimum dependencies required to use the treegrid:
 
 ```javascript
 |-- @syncfusion/ej2-treegrid
@@ -51,7 +55,7 @@ cd ej2-quickstart
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available in the public registry on [npmjs.com] (https://www.npmjs.com/~syncfusionorg).All Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls are available either as a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or as individual packages for each control.
 
 The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
 
@@ -65,7 +69,7 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme/), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
 
 The quickstart application is preconfigured to use the `Material` theme in the `~/src/styles/styles.css` file, as shown below: 
 
@@ -77,13 +81,21 @@ The quickstart application is preconfigured to use the `Material` theme in the `
 {% endhighlight %}
 {% endtabs %}
 
-> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme/) section to know more about built-in themes and CSS reference for individual controls.
+>The [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section explains more about built-in themes and CSS reference for individual controls.
 
 ## Adding TreeGrid component
 
-You can start adding Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeGrid component to the application. To get started, add the TreeGrid component in the `index.ts` and `index.html` files using the following code.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeGrid component can be added to the application.
+To get started, add the TreeGrid component in the `index.ts` and `index.html`
+files using the following code.
 
-Place the following grid code in the `index.ts`.
+Place the following TreeGrid code in the `index.ts`.
+
+The TreeGrid component requires two key configurations:
+1. [DataSource](https://ej2.syncfusion.com/documentation/api/treegrid/index-default#datasource): The hierarchical data to display (typically with parent-child relationships)
+2. [Columns](https://ej2.syncfusion.com/documentation/api/treegrid/index-default#columns): The columns to render with field mappings
+
+For hierarchical data where child records are nested in a parent record's property (like "subtasks" within a task), use the [`childMapping`](../api/treegrid#childMapping) property to specify which property contains the child records. This is the most common approach for displaying structured hierarchical data.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -160,7 +172,7 @@ treeGridObj.appendTo('#TreeGrid');
 {% endhighlight %}
 {% endtabs %}
 
-In the above code example, the hierarchical data binding is represented in which the [`chilMapping`](../api/treegrid/#childMapping) property denotes the hierarchy relationship; whereas in self-referencing data binding [`idMapping`](../api/treegrid/#idMapping) and [`parentIdMapping`](../api/treegrid/#parentIdMapping) denotes the hierarchy relationship.
+In the above code example, the hierarchical data binding is represented in which the [`childMapping`](../api/treegrid#childMapping) property denotes the hierarchy relationship; whereas in self-referencing data binding [`idMapping`](../api/treegrid#idMapping) and [`parentIdMapping`](../api/treegrid#parentIdMapping) denotes the hierarchy relationship.
 
 Now, add an HTML div element to act as the treegrid element in `index.html` using the following code.
 
@@ -195,19 +207,19 @@ Now, add an HTML div element to act as the treegrid element in `index.html` usin
 To create a treegrid with additional features, inject the required modules. The following modules are used to extend grid's basic functionality.
 
 * `Page`: Inject this module to use paging feature.
-* `Sort` Inject this module to use sorting feature.
+* `Sort`: Inject this module to use sorting feature.
 * `Filter`: Inject this module to use filtering feature.
 * `ExcelExport`: Inject this module to use Excel export feature.
 * `PdfExport`: Inject this module to use PDF export feature.
 
-These modules should be injected into the grid using the `TreeGrid.Inject` method.
+These modules should be injected into the tree grid using the `TreeGrid.Inject` method.
 
 ## Enable paging
 
-The paging feature enables users to view the treegrid record in a paged view. It can be enabled by setting the  [`allowPaging`](../api/treegrid/#allowpaging) property to true. Inject the [`Page`](../api/treegrid/#pagermodule)
- module as follows. If the `Page` module is not injected, the pager will not be rendered in the grid. The pager can be customized using the [`pageSettings`](../api/treegrid/#pagesettings) property.
+The paging feature enables users to view the treegrid record in a paged view. It can be enabled by setting the  [`allowPaging`](../api/treegrid#allowpaging) property to true. Inject the [`Page`](../api/treegrid#pagermodule)
+ module as follows. If the `Page` module is not injected, the pager will not be rendered in the grid. The pager can be customized using the [`pageSettings`](../api/treegrid#pagesettings) property.
 
- In root-level paging mode, paging is based on the root-level rows only i.e., it ignores the child row count and it can be enabled by using the [`pageSettings.pageSizeMode`](../api/treegrid/pageSettingsModel/#pagesizemode) property.
+ In root-level paging mode, paging is based on the root-level rows only i.e., it ignores the child row count and it can be enabled by using the [`pageSettings.pageSizeMode`](../api/treegrid/pageSettingsModel#pagesizemode) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -225,8 +237,12 @@ The paging feature enables users to view the treegrid record in a paged view. It
 
 ## Enable sorting
 
-The sorting feature enables you to order the records. It can be enabled by setting the  [`allowSorting`](../api/treegrid/#allowsorting) property to true. Inject the [`Sort`](../api/treegrid/#sortmodule)
-  module as follows. If the [`Sort`](../api/treegrid/#sortmodule) module is not injected, you cannot sort when a header is clicked. Sorting feature can be customized using the  [`sortSettings`](../api/treegrid/#sortsettings) property.
+The sorting feature enables record ordering. It can be enabled by setting the
+[`allowSorting`](../api/treegrid#allowsorting) property to true. Inject the
+[`Sort`](../api/treegrid#sortmodule) module as follows. If the
+[`Sort`](../api/treegrid#sortmodule) module is not injected, sorting is not
+available when a header is clicked. The sorting feature can be customized using
+the [`sortSettings`](../api/treegrid#sortsettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -244,10 +260,17 @@ The sorting feature enables you to order the records. It can be enabled by setti
 
 ## Enable filtering
 
-The filtering feature enables you to view the reduced amount of records based on the filter criteria. It can be enabled by setting the [`allowFiltering`](../api/treegrid/#allowfiltering) property to true.  The `Filter` module has to be injected as follows.
- If the `Filter` module is not injected,  filter bar will not be rendered in the treegrid. Filtering feature can be customized using the [`filterSettings`](../api/treegrid/#filtersettings) property.
+The filtering feature enables viewing a reduced set of records based on filter
+criteria. It can be enabled by setting the [`allowFiltering`](../api/treegrid#allowfiltering)
+property to true. The `Filter` module must be injected as follows.
+If the `Filter` module is not injected, the filter bar is not rendered
+in the TreeGrid. The filtering feature can be customized using the
+[`filterSettings`](../api/treegrid#filtersettings) property.
 
-By default, filtered records are shown along with its parent records. This behavior can be changed using the [`filterSettings-hierarchyMode`](../api/treegrid/filterSettingsModel/#hierarchymode) property.
+By default, filtered records are displayed along with their parent records.
+This behavior can be modified using the
+[`filterSettings-hierarchyMode`](../api/treegrid/filterSettingsModel#hierarchymode)
+property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -291,28 +314,28 @@ Output will be displayed as follows.
           
 {% previewsample "page.domainurl/code-snippet/treegrid/tree-grid-cs8" %}
 
-> You can refer to our [`JavaScript Tree Grid`](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our JavaScript Tree Grid example [`JavaScript Tree Grid example`](https://ej2.syncfusion.com/demos/#/material/tree-grid/treegrid-overview.html) to knows how to present and manipulate data.
+> The [`JavaScript Tree Grid`](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid) feature tour page provides an overview of its advanced capabilities. The [`JavaScript Tree Grid example`](https://ej2.syncfusion.com/demos/#/material/tree-grid/treegrid-overview.html) demonstrates effective techniques for presenting and manipulating data.
 
 ## Handling errors
 
-Error handling in Tree Grid identifies exceptions and notifies them through the [actionFailure](https://ej2.syncfusion.com/documentation/api/treegrid/#actionfailure) event. When configuring the Tree Grid or enabling specific features through its API, mistakes can occur. The `actionFailure` event can be used to manage these errors. This event triggers when such mistakes happen. The `actionFailure` event handles various scenarios, including:
+Error handling in Tree Grid identifies exceptions and notifies them through the [actionFailure](https://ej2.syncfusion.com/documentation/api/treegrid#actionfailure) event. When configuring the Tree Grid or enabling specific features through its API, mistakes can occur. The `actionFailure` event can be used to manage these errors. This event triggers when such mistakes happen. The `actionFailure` event handles various scenarios, including:
 
-* For CRUD operations, row drag and drop, and persisiting the selection, ensure the [isPrimaryKey](https://ej2.syncfusion.com/documentation/api/treegrid/column/#isprimarykey) property is mapped to a unique data column. Failure to do so will cause an error.
+* For CRUD operations, row drag and drop, and persisting the selection, ensure the [isPrimaryKey](https://ej2.syncfusion.com/documentation/api/treegrid/column#isprimarykey) property is mapped to a unique data column. Failure to do so will cause an error.
 * [Paging](https://ej2.syncfusion.com/documentation/treegrid/paging) is not supported with [virtualization](https://ej2.syncfusion.com/documentation/treegrid/virtual-scroll). Enabling `paging` with `virtualization` will result in an error.
-* To render the Tree Grid, map either the [dataSource](https://ej2.syncfusion.com/documentation/api/treegrid/#datasource) or [columns](https://ej2.syncfusion.com/documentation/api/treegrid/#columns) property. Failure to do so will result in an error.
-* Freeze columns by mapping either [isFrozen](https://ej2.syncfusion.com/documentation/api/treegrid/column/#isfrozen) or [frozenColumns](https://ej2.syncfusion.com/documentation/api/treegrid#frozencolumns). Enabling both properties simultaneously will result in an error.
+* To render the Tree Grid, map either the [dataSource](https://ej2.syncfusion.com/documentation/api/treegrid#datasource) or [columns](https://ej2.syncfusion.com/documentation/api/treegrid#columns) property. Failure to do so will result in an error.
+* Freeze columns by mapping either [isFrozen](https://ej2.syncfusion.com/documentation/api/treegrid/column#isfrozen) or [frozenColumns](https://ej2.syncfusion.com/documentation/api/treegrid#frozencolumns). Enabling both properties simultaneously will result in an error.
 * The [detailTemplate](https://ej2.syncfusion.com/documentation/api/treegrid#detailtemplate) is not supported with `virtualization` and `stacked header`. Enabling them with these features will result in an error.
 * The [frozenRows](https://ej2.syncfusion.com/documentation/api/treegrid#frozenrows) and `frozencolumns` are not supported with [rowtemplate](https://ej2.syncfusion.com/documentation/api/treegrid#rowtemplate), `detailTemplate`, and [cell editing](https://ej2.syncfusion.com/documentation/treegrid/editing/cell-editing). Enabling them with these features will result in an error.
-* In `stacked header`, the [freeze](https://ej2.syncfusion.com/documentation/api/treegrid/column/#freeze) direction is incompatible with [column reordering](https://ej2.syncfusion.com/documentation/treegrid/columns/column-reorder).  
+* In `stacked header`, the [freeze](https://ej2.syncfusion.com/documentation/api/treegrid/column#freeze) direction is incompatible with [column reordering](https://ej2.syncfusion.com/documentation/treegrid/columns/column-reorder).  
 * [Selection](https://ej2.syncfusion.com/documentation/treegrid/selection/selection) functionality is not supported when using `rowTemplate`. Enabling both properties simultaneously will result in an error.
 * Set the [treeColumnIndex](https://ej2.syncfusion.com/documentation/api/treegrid#treecolumnindex) value to display the tree structure. Make sure the value does not exceed the total column count, or it will result in an error.
 * For `virtualization`, do not specify height and width in percentages. Using percentages will result in an error.
-* When using the default filter ([filterbar](https://ej2.syncfusion.com/documentation/treegrid/filtering/filter-bar)) type, do not apply the other [filterType](https://ej2.syncfusion.com/documentation/api/treegrid/filterType/) to columns within the same tree grid, as this will result in an error.
+* When using the default filter ([filterbar](https://ej2.syncfusion.com/documentation/treegrid/filtering/filter-bar)) type, do not apply the other [filterType](https://ej2.syncfusion.com/documentation/api/treegrid/filterType) to columns within the same tree grid, as this will result in an error.
 * In Tree Grid, avoid enabling [idMapping](https://ej2.syncfusion.com/documentation/api/treegrid#idmapping) and [childMapping](https://ej2.syncfusion.com/documentation/api/treegrid#childmapping) simultaneously. Enabling both properties at the same time will result in an error.
-* The [showCheckbox](https://ej2.syncfusion.com/documentation/api/treegrid/column/#showcheckbox) column should only be defined in the tree column. Defining it elsewhere will result in an error.
-* The [textAlign](https://ej2.syncfusion.com/documentation/api/treegrid/column/#textalign) right is not applicable for tree columns in the Tree Grid.  Enabling right alignment for tree columns will result in an error.
+* The [showCheckbox](https://ej2.syncfusion.com/documentation/api/treegrid/column#showcheckbox) column should only be defined in the tree column. Defining it elsewhere will result in an error.
+* The [textAlign](https://ej2.syncfusion.com/documentation/api/treegrid/column#textalign) right is not applicable for tree columns in the Tree Grid.  Enabling right alignment for tree columns will result in an error.
 
-The following code example shows how to use the [actionFailure](https://ej2.syncfusion.com/documentation/api/treegrid/#actionfailure) event in the Tree Grid control to display an exception when `isPrimaryKey`are not configured properly in the Tree Grid.
+The following code example shows how to use the [actionFailure](https://ej2.syncfusion.com/documentation/api/treegrid#actionfailure) event in the Tree Grid control to display an exception when `isPrimaryKey` property is not configured properly in the Tree Grid.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

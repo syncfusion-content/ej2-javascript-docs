@@ -1,7 +1,6 @@
 import { RichTextEditor, Toolbar, Link, Audio, Image, HtmlEditor, QuickToolbar} from '@syncfusion/ej2-richtexteditor';
 RichTextEditor.Inject(Toolbar, Link, Image, Audio, HtmlEditor, QuickToolbar);
  
-// Initialize Rich Text Editor component
 let editor: RichTextEditor = new RichTextEditor({
   toolbarSettings: {
     items: ['Audio']

@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Add custom item to toolbar in ##Platform_Name## File Manager | Syncfusion
-description: Learn about adding a custom item to the toolbar in the Syncfusion ##Platform_Name## File Manager control, its elements, and more.
+description: Learn how to add a custom item to the toolbar in the Syncfusion ##Platform_Name## File Manager component.
 platform: ej2-javascript
-control: Adding custom item to the toolbar 
+control: File Manager
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adding a custom item to the toolbar in ##Platform_Name## File Manager control
+# Add Custom Toolbar Item in ##Platform_Name## File Manager
 
-You can modify the items displayed in the toolbar by using the [`toolbarItems`](../../api/file-manager/#toolbaritems) API. To display both default and customized items, it's Essential<sup style="font-size:70%">&reg;</sup> to assign a unique **name** to each item. Additionally, you have the flexibility to alter the default items by adjusting properties such as **tooltipText, iconCss, Text, suffixIcon**, and more. This level of customization allows you to tailor the toolbar to your specific requirements and design preferences. The names used in the code example below serve as unique identifiers for default toolbar items, while custom items can be assigned any unique name value to distinguish them from the defaults.
+Use the [`toolbarItems`](../../api/file-manager#toolbaritems) API to modify the items displayed in the toolbar. When combining default and custom items, assign a unique `name` to each item so they can be managed independently. Default items can be customized by setting properties such as `tooltipText`, `iconCss`, `text`, `suffixIcon`, and `template`.
 
-For instance, here's an example of how to add a custom checkbox to the toolbar using the **template** property. Here we have modified the default `New Folder` item and added a custom toolbar item for selection.
+The example below demonstrates adding a custom checkbox to the toolbar using the `template` property. It also shows how to modify the default `NewFolder` item and add a custom toolbar item for selection.
 
 {% if page.publishingplatform == "typescript" %}
 

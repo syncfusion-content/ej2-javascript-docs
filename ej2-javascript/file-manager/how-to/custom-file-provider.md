@@ -1,19 +1,19 @@
 ---
 layout: post
-title:  Implement own service provider in ##Platform_Name## File Manager control | Syncfusion
-description: Learn here all about implementation own service provider in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Custom Service Provider in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to implement a custom service provider for the Syncfusion ##Platform_Name## File Manager component.
 platform: ej2-javascript
-control: Implement own service provider
+control: File Manager
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create the custom file provider using NodeJS
+# Create the custom file provider using Node JS
 
-Here we manipulate the Azure Blob Storage to supply the necessary data for the File Manager. We achieve this by utilizing NodeJS to fetch the required data from the Azure blob storage.
+Here we manipulate the Azure Blob Storage to supply the necessary data for the File Manager. We achieve this by utilizing Node JS to fetch the required data from the Azure blob storage.
 
-NodeJS acts as the bridge between the File Manager Control and Azure Blob Storage, allowing seamless communication and data retrieval. Through this integration, the File Manager can access and interact with the data stored in Azure Blob Storage, enabling smooth file management operations.
+Node JS acts as the bridge between the File Manager Control and Azure Blob Storage, allowing seamless communication and data retrieval. Through this integration, the File Manager can access and interact with the data stored in Azure Blob Storage, enabling smooth file management operations.
 
 
 ## Prerequisites
@@ -31,14 +31,14 @@ Azure Blob Storage is a cloud-based object storage service provided by Microsoft
 
 **Blobs:** Blobs are the actual data objects stored in Azure Blob Storage.
 
-By understanding the fundamental concepts and use cases of Azure Blob Storage, you will be well-prepared to proceed with setting up and interacting with it using NodeJS in the custom File Provider.
+By understanding the fundamental concepts and use cases of Azure Blob Storage, you will be well-prepared to proceed with setting up and interacting with it using Node JS in the custom File Provider.
 
 
-## Create NodeJS project
+## Create Node JS project
 
-Following the steps to create the NodeJS project.
+Following the steps to create the Node JS project.
 
-Create a new directory for your project and run the following command to initialize a new NodeJS project. This will create a package.json file.
+Create a new directory for your project and run the following command to initialize a new Node JS project. This will create a package.json file.
 
 ```ts
 
@@ -55,7 +55,7 @@ Install the following packages.
   - esm
   - multer
 
-Open your text editor or integrated development environment (IDE) and create the index.js file start writing your NodeJS code. This file will serve as the entry point of your application.
+Open your text editor or integrated development environment (IDE) and create the index.js file start writing your Node JS code. This file will serve as the entry point of your application.
 
 ```ts
 
@@ -73,7 +73,7 @@ app.listen(port, () => {
 
 ```
 
-To start your NodeJS application, simply run the following command in your terminal, pointing to the entry point file:
+To start your Node JS application, simply run the following command in your terminal, pointing to the entry point file:
 
 ```ts
 

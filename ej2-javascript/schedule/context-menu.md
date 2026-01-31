@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Context menu in ##Platform_Name## Scheduler control | Syncfusion
-description: Learn here all about Context menu in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
+description: To implement and customize the context menu in the Syncfusion ##Platform_Name## Scheduler control for Essential JS 2, with cell and appointment actions.
 platform: ej2-javascript
 control: Context menu 
 publishingplatform: ##Platform_Name##
@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # Context menu in ##Platform_Name## Scheduler control
 
-You can display context menu on work cells and appointments of Scheduler by making use of the [`ContextMenu`](https://ej2.syncfusion.com/documentation/context-menu/getting-started) control manually from the application end. In the following code example, context menu control is being added from sample end and set its target as `Scheduler`.
+The context menu can be displayed on work cells and appointments within the Scheduler by manually integrating the [`ContextMenu`](https://ej2.syncfusion.com/documentation/context-menu/getting-started) control from the application. In the following example, the ContextMenu control is added and its target is set to the `Scheduler`.
 
-On Scheduler cells, you can display the menu items such as `New Event`, `New Recurring Event` and `Today` option. For appointments, you can display its related options such as `Edit Event` and `Delete Event`. The default event window can be opened for appointment creation and editing using the [`openEditor`](https://ej2.syncfusion.com/documentation/api/schedule#openeditor) method of Scheduler.
+On Scheduler cells, menu items such as `New Event`, `New Recurring Event`, and `Today` can be displayed. For appointments, relevant options like `Edit Event` and `Delete Event` are available. The default event window for creating or editing appointments can be opened using the [`openEditor`](https://ej2.syncfusion.com/documentation/api/schedule#openeditor) method of the Scheduler.
 
-The deletion of appointments can be done by using the [`deleteEvent`](https://ej2.syncfusion.com/documentation/api/schedule#deleteevent) public method. Also, the [`selectedDate`](https://ej2.syncfusion.com/documentation/api/schedule#selecteddate) property can be used to navigate between different dates.
+Appointments can be deleted using the [`deleteEvent`](https://ej2.syncfusion.com/documentation/api/schedule#deleteevent) public method. The [`selectedDate`](https://ej2.syncfusion.com/documentation/api/schedule#selecteddate) property allows navigation between different dates.
 
-> You can also display custom menu options on Scheduler cells and appointments. Context menu will open on tap-hold in responsive mode.
+> Custom menu options can also be displayed on Scheduler cells and appointments. In responsive mode, the context menu opens with a tap-and-hold gesture.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -52,4 +52,4 @@ The deletion of appointments can be done by using the [`deleteEvent`](https://ej
 {% previewsample "page.domainurl/code-snippet/schedule/context-menu-cs1" %}
 {% endif %}
 
-> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to knows how to present and manipulate data.
+> For more information, refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for comprehensive feature demonstrations. Explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

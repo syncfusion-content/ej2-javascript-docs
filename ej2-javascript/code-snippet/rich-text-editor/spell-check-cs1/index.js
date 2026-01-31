@@ -1,6 +1,5 @@
 import WProofreader from '@webspellchecker/wproofreader-sdk-js';
 
-// initialize Rich Text Editor component
 var editor = new ej.richtexteditor.RichTextEditor({
         created: function () {
                 // WProofreader configuration
@@ -13,5 +12,4 @@ var editor = new ej.richtexteditor.RichTextEditor({
         value: `<p>Enter you\'re text here with real spelling and grammer mistakes to see how WProofreader work. Alot of potential errors will be underlined; hover on the marked wods for instant correction suggesstions.</p>`,
 });
 
-// render initialized Rich Text Editor
 editor.appendTo('#editor');

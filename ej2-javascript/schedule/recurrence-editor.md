@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # Recurrence editor in ##Platform_Name## Scheduler control
 
-The Recurrence editor is integrated into Scheduler editor window by default, to process the recurrence rule generation for events. Apart from this, it can also be used as an individual component referring from the Scheduler repository to work with the recurrence related processes.
+The Recurrence editor is integrated into Scheduler editor window by default, to process the recurrence rule generation for events. Tt can also be used as an individual component referring from the Scheduler repository to work with the recurrence related processes.
 
 > All the valid recurrence rule string mentioned in the [iCalendar](https://tools.ietf.org/html/rfc5545#section-3.3.10) specifications are applicable to use with the recurrence editor.
 
 ## Customizing the repeat type option in editor
 
-By default, there are 5 types of repeat options available in recurrence editor such as,
+By default, there are 5 types of repeat options available in the Recurrence editor:
 
 * Never
 * Daily
@@ -25,7 +25,7 @@ By default, there are 5 types of repeat options available in recurrence editor s
 * Monthly
 * Yearly
 
-It is possible to customize the recurrence editor to display only the specific repeat options such as `Daily` and `Weekly` options alone by setting the appropriate [`frequencies`](https://ej2.syncfusion.com/documentation/api/recurrence-editor#frequencies) option.
+The Recurrence editor can be customized to display only the specific repeat options such as `Daily` and `Weekly` options alone by setting the appropriate [`frequencies`](https://ej2.syncfusion.com/documentation/api/recurrence-editor#frequencies) option.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -77,13 +77,13 @@ The other properties available in recurrence editor are tabulated below,
 
 ## Customizing the End Type Option in Editor
 
-By default, there are 3 types of end options available in the recurrence editor such as:
+By default, there are 3 types of end options available in the Recurrence editor:
 
 * Never
 * Until
 * Count
 
-It is possible to customize the recurrence editor to display only the specific end options, such as the `Until` and `Count` options alone, by setting the appropriate [`endTypes`](https://ej2.syncfusion.com/documentation/api/recurrence-editor/#endtypes) option.
+The Recurrence editor can be customized to display only the specific end options, such as the `Until` and `Count` options alone, by setting the appropriate [`endTypes`](https://ej2.syncfusion.com/documentation/api/recurrence-editor#endtypes) option.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -114,9 +114,9 @@ It is possible to customize the recurrence editor to display only the specific e
 
 ## Accessing the recurrence rule string
 
-The recurrence rule is usually generated based on the options selected from the recurrence editor and also it follows the [`iCalendar`](https://tools.ietf.org/html/rfc5545#section-3.3.10) specifications. The generated recurrence rule string is a valid one to be used with the Scheduler event’s recurrence rule field.
+The recurrence rule is generated based on the options selected from the recurrence editor and also it follows the [`iCalendar`](https://tools.ietf.org/html/rfc5545#section-3.3.10) specifications. The generated recurrence rule string is a valid one to be used with the Scheduler event’s recurrence rule field.
 
-The recurrence editor has a [`change`](https://ej2.syncfusion.com/documentation/api/recurrence-editor#change) event that triggers every time the fields are modified. You can access the generated recurrence value through the [`value`](https://ej2.syncfusion.com/documentation/api/recurrence-editor/#value) option in the event argument.
+The recurrence editor has a [`change`](https://ej2.syncfusion.com/documentation/api/recurrence-editor#change) event that triggers every time the fields are modified. The generated recurrence value can be accessed through the [`value`](https://ej2.syncfusion.com/documentation/api/recurrence-editor#value) option in the event argument.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -147,7 +147,7 @@ The recurrence editor has a [`change`](https://ej2.syncfusion.com/documentation/
 
 ## Set specific value on recurrence editor
 
-You can display the recurrence editor with specific options loaded initially based on a provided rule string. The fields of the recurrence editor will change their values accordingly when you provide a particular rule through the `setRecurrenceRule` method.
+The Recurrence editor can be displayed with specific options loaded initially based on a provided rule string. The fields of the recurrence editor will change their values accordingly when you provide a particular rule through the `setRecurrenceRule` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -178,7 +178,7 @@ You can display the recurrence editor with specific options loaded initially bas
 
 ## Recurrence date generation
 
-You can parse the `recurrenceRule` of an event to generate the date instances on which that particular event is going to occur, using the `getRecurrenceDates` method. It generates the dates based on the `recurrenceRule` that we provide. The parameters to be provided for `getRecurrenceDates` method are as follows.
+The `recurrenceRule` of an event can be parsed to generate the date instances on which that particular event will occur, using the `getRecurrenceDates` method. It generates the dates based on the `recurrenceRule` that we provide. The parameters to be provided for `getRecurrenceDates` method are as follows.
 
 | Field name | Type | Description |
 |------------|------|-------------|
@@ -217,13 +217,13 @@ You can parse the `recurrenceRule` of an event to generate the date instances on
 
 ## Recurrence date generation in server-side
 
-It is also possible to generate recurrence date instances from server-side by manually referring the `RecurrenceHelper` class, which is specifically written and referred from application end to handle this date generation process.
+Recurrence date instances can also be generated from server-side by manually referring the `RecurrenceHelper` class, which is specifically written and referenced from application end to handle this date generation process.
 
-> Refer [here](https://www.syncfusion.com/kb/10009/how-to-parse-the-recurrencerule-at-server-side) for the step by step procedure to achieve date generation in server-side.
+> Refer [here](https://www.syncfusion.com/kb/10009/how-to-parse-the-recurrencerule-at-server-side) for the step-by-step procedure to achieve date generation in server-side.
 
 ## Restrict date generation with specific count
 
-In case, if the rule is given in "NEVER ENDS" category, then you can mention the maximum count when you actually want to stop the date generation starting from the provided start date. To do so, provide the appropriate `maximumCount` value within the `getRecurrenceDates` method as shown in the following code example.
+If the rule is given in the "NEVER ENDS" category, the maximum count can be specified to stop the date generation starting from the provided start date. To do so, provide the appropriate `maximumCount` value within the `getRecurrenceDates` method as shown in the following code example.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -252,4 +252,4 @@ In case, if the rule is given in "NEVER ENDS" category, then you can mention the
 {% previewsample "page.domainurl/code-snippet/schedule/recur-editor-cs4" %}
 {% endif %}
 
-> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to knows how to present and manipulate data.
+> Refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. Also explore [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

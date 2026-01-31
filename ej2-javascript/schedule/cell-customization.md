@@ -11,15 +11,15 @@ domainurl: ##DomainURL##
 
 # Cell customization in ##Platform_Name## Scheduler control
 
-The cells of the Scheduler can be easily customized either using the [`cellTemplate`](https://ej2.syncfusion.com/documentation/api/schedule/#celltemplate) or [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell) event.
+The cells of the Scheduler can be easily customized to modify their appearance, add custom content, or apply conditional styling. This can be achieved using the [`cellTemplate`](https://ej2.syncfusion.com/documentation/api/schedule#celltemplate) property or the [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell) event. Cell customization allows you to highlight specific dates, display additional information, or create a unique visual experience for your scheduling application.
 
 ## Customizing cells in all the views
 
-It is possible to customize the appearance of the cells using both template options and [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell) event on all the views.
+The appearance of cells can be customized across all Scheduler views using either template options or the [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell) event. Both approaches provide flexibility to modify cell content and styling based on specific requirements.
 
 ### Using template
 
-The [`cellTemplate`](https://ej2.syncfusion.com/documentation/api/schedule#celltemplate) option accepts the template string and is used to customize the cell background with specific images or appropriate text on the given date values.
+The [`cellTemplate`](https://ej2.syncfusion.com/documentation/api/schedule#celltemplate) property accepts a template string and allows you to customize the cell background with specific images, icons, or formatted text based on the given date values. This approach is ideal when you need to apply consistent styling or content across multiple cells.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -54,9 +54,9 @@ The [`cellTemplate`](https://ej2.syncfusion.com/documentation/api/schedule#cellt
 {% previewsample "page.domainurl/code-snippet/schedule/cell-dimension-cs4" %}
 {% endif %}
 
-### Using renderCell event
+### Customizing cells using renderCell event
 
-An alternative to [`cellTemplate`](https://ej2.syncfusion.com/documentation/api/schedule#celltemplate) is the [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell) event, which can also be used to customize the cells with appropriate images or formatted text values.
+The [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell) event provides an alternative approach for [`cellTemplate`](https://ej2.syncfusion.com/documentation/api/schedule#celltemplate). This event is triggered during the rendering of each cell, allowing you to apply dynamic customizations based on runtime conditions. Use this event when you need more control over individual cells or when customization logic depends on complex business rules.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -91,25 +91,25 @@ An alternative to [`cellTemplate`](https://ej2.syncfusion.com/documentation/api/
 {% previewsample "page.domainurl/code-snippet/schedule/cell-dimension-cs5" %}
 {% endif %}
 
-You can customize cells such as work cells, month cells, all-day cells, header cells, resource header cells using  [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell) event by checking the [`elementType`](https://ej2.syncfusion.com/documentation/api/schedule/renderCellEventArgs/#elementtype) option within the event. You can check elementType with any of the following.
+The [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell) event allows you to customize different types of cells such as work cells, month cells, all-day cells, header cells, resource header cells by checking the [`elementType`](https://ej2.syncfusion.com/documentation/api/schedule/renderCellEventArgs#elementtype) property within the event arguments. The following table describes the available element types:
 
 | Element type | Description |
 |-------|---------|
-| dateHeader | triggers on header cell rendering.|
-| monthDay | triggers on header cell in month view rendering.|
-| resourceHeader | triggers on resource header cell rendering.|
-| alldayCells | triggers on all day cell rendering.|
-| emptyCells | triggers on empty cell rendering on header bar.|
-| resourceGroupCells | triggers on rendering of work cells for parent resource.|
-| workCells | triggers on work cell rendering.|
-| monthCells | triggers on month cell rendering.|
-| majorSlot | triggers on major time slot cell rendering.|
-| minorSlot | triggers on minor time slot cell rendering.|
-| weekNumberCell | triggers on cell displaying week number.|
+| dateHeader | Triggered when rendering header cells that display dates.|
+| monthDay | Triggered when rendering header cells in the month view.|
+| resourceHeader | Triggered when rendering resource header cells.|
+| alldayCells | Triggered when rendering all-day cells in day, week, and work week views.|
+| emptyCells | Triggered when rendering empty cells in the header bar.|
+| resourceGroupCells | Triggered when rendering work cells for parent resource.|
+| workCells | Triggered when rendering work cells.|
+| monthCells | Triggered when rendering date cells in the month view.|
+| majorSlot | Triggered when rendering major time slot cells.|
+| minorSlot | Triggered when rendering minor time slot cells.|
+| weekNumberCell | Triggered when rendering cells that display week numbers.|
 
 ## Setting cell dimensions in all views
 
-Customize the height and width of Scheduler cells to increase or reduce their size using the [`cssClass`](https://ej2.syncfusion.com/documentation/api/schedule#cssclass) property, which overrides the default CSS applied on cells.
+The height and width of Scheduler cells can be adjusted using the [`cssClass`](https://ej2.syncfusion.com/documentation/api/schedule#cssclass) property along with custom CSS. This approach allows you to increase or reduce cell sizes to accommodate different content requirements or improve visual hierarchy. The custom CSS classes override the default styles applied to cells.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -144,11 +144,11 @@ Customize the height and width of Scheduler cells to increase or reduce their si
 {% previewsample "page.domainurl/code-snippet/schedule/cell-dimension-cs2" %}
 {% endif %}
 
-## Check for cell availability
+## Checking cell availability for appointments
 
-You can check whether the given time range slots are available for event creation or already occupied by other events using the [`isSlotAvailable`](https://ej2.syncfusion.com/documentation/api/schedule#isslotavailable) method. In the following code example, if a specific time slot already contains an appointment, then no more appointments can be added to that cell.
+The [`isSlotAvailable`](https://ej2.syncfusion.com/documentation/api/schedule#isslotavailable) method verifies whether a specific time range is available for creating new appointments or is already occupied by existing events. This method is useful for implementing custom validation logic or preventing double-booking scenarios. In the following example, the method prevents adding new appointments to time slots that already contain events.
 
->Note: The **isSlotAvailable** is centered around verifying appointments within the present view's date range. Yet, it does not encompass an evaluation of availability for recurrence occurrences that fall beyond this particular date range.
+>Note: The [`isSlotAvailable`](https://ej2.syncfusion.com/documentation/api/schedule#isslotavailable) method verifies appointments within the current view's date range only. It does not evaluate availability for recurrence occurrences that fall outside the visible date range.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -185,7 +185,7 @@ You can check whether the given time range slots are available for event creatio
 
 ## Customizing cell header in month view
 
-The month header of each date cell in the month view can be customized using the [`cellHeaderTemplate`](https://ej2.syncfusion.com/documentation/api/schedule#cellheadertemplate) option which accepts the string or HTMLElement. The corresponding date can be accessed with the template.
+The month header of each date cell in the month view can be customized using the [`cellHeaderTemplate`](https://ej2.syncfusion.com/documentation/api/schedule#cellheadertemplate) property. This property accepts either a template string or an HTMLElement, allowing you to display custom content such as formatted dates, icons, or additional information. The corresponding date can be accessed with the template.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -216,7 +216,7 @@ The month header of each date cell in the month view can be customized using the
 
 ## Customizing the minimum and maximum date values
 
-Providing the [`minDate`](https://ej2.syncfusion.com/documentation/api/schedule#mindate) and [`maxDate`](https://ej2.syncfusion.com/documentation/api/schedule#maxdate) property with some date values, allows the Scheduler to set the minimum and maximum date range. The Scheduler date that lies beyond this minimum and maximum date range will be in a disabled state so that the date navigation will be blocked beyond the specified date range.
+The [`minDate`](https://ej2.syncfusion.com/documentation/api/schedule#mindate) and [`maxDate`](https://ej2.syncfusion.com/documentation/api/schedule#maxdate) properties define the allowable date range for the Scheduler. Dates that fall outside this range will be disabled, preventing navigation beyond the specified boundaries.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -251,11 +251,11 @@ Providing the [`minDate`](https://ej2.syncfusion.com/documentation/api/schedule#
 {% previewsample "page.domainurl/code-snippet/schedule/cell-dimension-cs7" %}
 {% endif %}
 
->By default, the [`minDate`](https://ej2.syncfusion.com/documentation/api/schedule#mindate) property value is set to new Date(1900, 0, 1) and [`maxDate`](https://ej2.syncfusion.com/documentation/api/schedule#maxdate) property value is set to new Date(2099, 11, 31). The user can also set the customized [`minDate`](https://ej2.syncfusion.com/documentation/api/schedule#mindate) and [`maxDate`](https://ej2.syncfusion.com/documentation/api/schedule#maxdate) property values.
+>By default, the [`minDate`](https://ej2.syncfusion.com/documentation/api/schedule#mindate) property is set to new Date(1900, 0, 1) and the [`maxDate`](https://ej2.syncfusion.com/documentation/api/schedule#maxdate) property is set to new Date(2099, 11, 31). Custom values can be assigned to these properties to restrict the date range according to application requirements.
 
 ## Customizing the weekend cells background color
 
-You can customize the background color of weekend cells by utilizing the [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell) event and checking the [`elementType`](https://ej2.syncfusion.com/documentation/api/schedule/renderCellEventArgs/#elementtype) option within the event.
+You can customize the background color of weekend cells by utilizing the [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell) event and checking the [`elementType`](https://ej2.syncfusion.com/documentation/api/schedule/renderCellEventArgs#elementtype) option within the event.
 
 ```ts
 
@@ -275,7 +275,7 @@ renderCell: function (args) {
 
 ```
 
-And, the background color for weekend cells in the Month view through the [`cssClass`](https://ej2.syncfusion.com/documentation/api/schedule#cssclass) property, which overrides the default CSS applied on cells.
+And, the background color for weekend cells in the Month view, apply custom CSS through the through the [`cssClass`](https://ej2.syncfusion.com/documentation/api/schedule#cssclass) property, which overrides the default CSS applied on cells.
 
 ```css
 
@@ -314,6 +314,6 @@ And, the background color for weekend cells in the Month view through the [`cssC
 
 ## How to disable multiple cell and row selection in Schedule
 
-By default, the [`allowMultiCellSelection`](https://ej2.syncfusion.com/documentation/api/schedule#allowmulticellselection) and [`allowMultiRowSelection`](https://ej2.syncfusion.com/documentation/api/schedule#allowmultirowselection) properties of the Schedule are set to `true`. So, the Schedule allows user to select multiple cells and rows. If the user want to disable this multiple cell and row selection. The user can disable this feature by setting up `false` to these properties.
+By default, the [`allowMultiCellSelection`](https://ej2.syncfusion.com/documentation/api/schedule#allowmulticellselection) and [`allowMultiRowSelection`](https://ej2.syncfusion.com/documentation/api/schedule#allowmultirowselection) properties of the Schedule are set to `true`. So, the Schedule allows to select multiple cells and rows.If multiple cell and row selection needs to be disabled, this feature can be turned off by setting these properties to `false`.
 
 > You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to knows how to present and manipulate data.

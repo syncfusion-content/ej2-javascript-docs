@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Timescale in ##Platform_Name## Scheduler control | Syncfusion
-description: Learn here all about Timescale in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
+description: Learn all about Timescale in the Syncfusion ##Platform_Name## Scheduler control of Essential JS 2, including configuration, customization, and advanced options.
 platform: ej2-javascript
 control: Timescale 
 publishingplatform: ##Platform_Name##
@@ -11,17 +11,17 @@ domainurl: ##DomainURL##
 
 # Timescale in ##Platform_Name## Scheduler control
 
-The time slots are usually the time cells that are displayed on the Day, Week and Work Week views of both the calendar (to the left most position) and timeline views (at the top position). The [`timeScale`](https://ej2.syncfusion.com/documentation/api/schedule#timescale) property allows you to control and set the required time slot duration for the work cells displayed on Scheduler. It includes the following sub-options such as,
+Time slots are the individual time cells displayed in the Day, Week, and Work Week views of the Scheduler—positioned to the left in calendar views and at the top in timeline views. The [`timeScale`](https://ej2.syncfusion.com/documentation/api/schedule#timescale) property enables precise control over the time slot duration and appearance for Scheduler work cells. The `timeScale` property includes the following sub-options:
 
-* [`enable`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale/#enable) - When set to `true`, allows the Scheduler to display appointments accurately against the exact time duration. If set to `false`, all appointments of a day will be displayed one below the other with no grid lines. Its default value is `true`.
-* [`interval`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale/#interval) – Defines the time duration for which the time axis to be displayed either in 1 hour or 30 minutes intervals, and so on. It accepts the values in minutes and defaults to 60.
-* [`slotCount`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale/#slotcount) – Determines the number of slot count to be split for the specified time interval duration. It defaults to 2, thus displaying two slots to represent an hour(each slot depicting 30 minutes duration).
+* [`enable`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#enable) – When set to `true`, the Scheduler displays appointments accurately against the exact time duration, with grid lines indicating each slot. If set to `false`, all appointments for a day are shown one below the other without grid lines. Default is `true`.
+* [`interval`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#interval) – Defines the duration of each major time slot in minutes (e.g., 60 for 1 hour, 30 for 30 minutes). Default is 60.
+* [`slotCount`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#slotcount) – Specifies how many minor slots each major interval is divided into. Default is 2, so each hour is split into two 30-minute slots.
 
->Note: The upper limit for rendering slots within a single day, utilizing the **interval** and **slotCount** properties of the **timeScale**, stands at 1000. This constraint aligns with the maximum **colspan** value permissible for the **table** element, also capped at 1000. This particular restriction is relevant exclusively to the `TimelineDay`, `TimelineWeek` and `TimelineWorkWeek` views.
+> **Note:** The maximum number of slots that can be rendered in a single day using the **interval** and **slotCount** properties is 1000. This limit matches the maximum **colspan** value allowed for the HTML **table** element. This restriction applies only to the `TimelineDay`, `TimelineWeek`, and `TimelineWorkWeek` views.
 
-## Setting different time slot duration
+## Setting different time slot durations
 
-The [`interval`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale/#interval) and [`slotCount`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale/#slotcount) properties can be used together on the Scheduler to set different time slot duration which is depicted in the following code example. Here, six time slots together represents an hour.
+The [`interval`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#interval) and [`slotCount`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#slotcount) properties can be combined to set custom time slot durations. For example, setting `interval` to 60 and `slotCount` to 6 creates six 10-minute slots per hour, as shown in the following example.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -56,12 +56,12 @@ The [`interval`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale
 {% previewsample "page.domainurl/code-snippet/schedule/timescale-cs2" %}
 {% endif %}
 
-## Customizing time cells using template
+## Customizing time cells using templates
 
-The [`timeScale`](https://ej2.syncfusion.com/documentation/api/schedule#timescale) property also provides template option to allow customization of time slots which are as follows,
+The [`timeScale`](https://ej2.syncfusion.com/documentation/api/schedule#timescale) property also provides template options for customizing the appearance of time slots:
 
-* [`majorSlotTemplate`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale/#majorslottemplate) - The template option to be applied for major time slots. Here, the template accepts either the string or HTMLElement as template design and then the parsed design is displayed onto the time cells. The time details can be accessed within this template.
-* [`minorSlotTemplate`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale/#minorslottemplate) - The template option to be applied for minor time slots. Here, the template accepts either the string or HTMLElement as template design and then the parsed design is displayed onto the time cells. The time details can be accessed within this template.
+* [`majorSlotTemplate`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#majorslottemplate) – Template for major time slots. Accepts a string or HTMLElement, and displays parsed content in the major time cells. Time details are accessible within the template.
+* [`minorSlotTemplate`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#minorslottemplate) – Template for minor time slots. Accepts a string or HTMLElement, and displays parsed content in the minor time cells. Time details are accessible within the template.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -96,9 +96,9 @@ The [`timeScale`](https://ej2.syncfusion.com/documentation/api/schedule#timescal
 {% previewsample "page.domainurl/code-snippet/schedule/timescale-cs3" %}
 {% endif %}
 
-## Hide the timescale
+## Hiding the timescale
 
-The grid lines which indicates the exact time duration can be enabled or disabled on the Scheduler, by setting `true` or `false` to the [`enable`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale/#enable) option within the [`timeScale`](https://ej2.syncfusion.com/documentation/api/schedule#timescale) property. It's default value is `true`.
+Grid lines indicating time durations can be toggled in the Scheduler by setting the [`enable`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#enable) option within the [`timeScale`](https://ej2.syncfusion.com/documentation/api/schedule#timescale) property to `true` or `false`. The default value is `true`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -135,7 +135,7 @@ The grid lines which indicates the exact time duration can be enabled or disable
 
 ## Highlighting current date and time
 
-By default, Scheduler indicates current date with a highlighted date header on all views, as well as marks accurately the system's current time on specific views such as Day, Week, Work Week, Timeline Day, Timeline Week and Timeline Work Week views. To stop highlighting the current time indicator on Scheduler views, set `false` to the [`showTimeIndicator`](https://ej2.syncfusion.com/documentation/api/schedule#showtimeindicator) property which defaults to `true`.
+By default, the Scheduler highlights the current date in the date header on all views and marks the current system time in Day, Week, Work Week, Timeline Day, Timeline Week, and Timeline Work Week views. To disable the current time indicator, set the [`showTimeIndicator`](https://ej2.syncfusion.com/documentation/api/schedule#showtimeindicator) property to `false`. The default value is `true`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -164,4 +164,4 @@ By default, Scheduler indicates current date with a highlighted date header on a
 {% previewsample "page.domainurl/code-snippet/schedule/timescale-cs5" %}
 {% endif %}
 
-> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to knows how to present and manipulate data.
+> Refer to the [JavaScript Scheduler feature tour](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) for a comprehensive overview of its capabilities. Explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to see how to present and manipulate data effectively.

@@ -1,19 +1,17 @@
 ---
 layout: post
-title: Customize Navigation Pane in ##Platform_Name## Syncfusion File Manager
-description: Learn about how to customize the Navigation Pane in the Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Customize Navigation in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to customize the Navigation Pane in the Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Customize the Navigation Pane
+control: File Manager
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize Navigation Pane in ##Platform_Name## File Manager Control
+# Customize the navigation pane in ##Platform_Name## File Manager component
 
-The navigation pane in the File Manager Control displays the folder hierarchy in a tree-like structure. You can customize the layout of each folder node in the navigation pane using the `navigationPaneTemplate` property. This allows you to modify the appearance of folders based on your application's requirements.
-
-You may use this template to show additional metadata, custom icons, or other UI elements alongside the folder name.
+The navigation pane displays the folder hierarchy in a tree structure. Use the `navigationPaneTemplate` property to customize the layout of each folder node. This template enables showing additional metadata, custom icons, or other UI elements alongside the folder name to match application requirements.
 
 {% if page.publishingplatform == "typescript" %}
 

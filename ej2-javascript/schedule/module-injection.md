@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Module injection in ##Platform_Name## Schedule control | Syncfusion
-description: Learn here all about Module injection in Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
+title: Module injection on ##Platform_Name## Schedule control | Syncfusion
+description: Learn here all about Module injection on Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Module injection 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Module injection in ##Platform_Name## Schedule control
+# Module injection in the ##Platform_Name## Schedule control
 
 The crucial step on creating a Scheduler with required views, is to import and inject the required modules. The modules that are available on Scheduler to work with its related functionalities are as follows.
 
@@ -36,4 +36,4 @@ Schedule.Inject(Day, Week, WorkWeek, Month, Agenda, MonthAgenda);
 
 **Note:** If a Scheduler [`currentView`](https://ej2.syncfusion.com/documentation/api/schedule#currentview) is set to any one of the available views without injecting that respective view module, then a script error will occur and the Scheduler will not render.
 
-> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to knows how to present and manipulate data.
+> Refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. Also explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to knows how to present and manipulate data.

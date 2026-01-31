@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Nested items in ##Platform_Name## File Manager control | Syncfusion
-description: Learn here all about Nested items in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Nested items in ##Platform_Name## File Manager component | Syncfusion
+description: Learn here all about Nested items in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Nested items 
+control: File Manager
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Nested items in ##Platform_Name## File Manager control
+# c in ##Platform_Name## File Manager component
 
-The File Manager can be rendered inside other controls like Tab, Dialog, and more.
+The File Manager can be rendered inside other UI components such as Dialog and more.
 
 * [Adding File Manager inside the Dialog](#adding-file-manager-inside-the-dialog)
 * [Adding File Manager inside the Tab](#adding-file-manager-inside-the-tab)
 
 ## Adding File Manager inside the Dialog
 
-The following example shows the File Manager control rendered inside a Dialog. Click the browse button in the Uploader element to open the File Manager inside the Dialog control.
+The example below shows the File Manager rendered inside a Dialog. Click the browse button in the Uploader element to open the File Manager inside the Dialog.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -55,7 +55,7 @@ The following example shows the File Manager control rendered inside a Dialog. C
 
 ## Adding File Manager inside the Tab
 
-The following example demonstrates that the File Manager control is placed inside the content area of a Tab element.
+The example below demonstrates placing the File Manager inside the content area of a Tab.
 
 {% if page.publishingplatform == "typescript" %}
 

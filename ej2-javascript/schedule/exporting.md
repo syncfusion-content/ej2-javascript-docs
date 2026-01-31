@@ -15,7 +15,7 @@ The Scheduler supports exporting all its appointments both to an `Excel` or `ICS
 
 ## Excel Exporting
 
-The Scheduler allows you to export all its events to an Excel format file by using the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel) client-side method. By default, it exports all the default fields of Scheduler mapped through [`eventSettings`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings/) property.
+The Scheduler allows you to export all its events to an Excel format file by using the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel) client-side method. By default, it exports all the default fields of Scheduler mapped through [`eventSettings`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings) property.
 
 > Before using the Excel exporting functionality, you need to import and inject the `ExcelExport` module from the `@syncfusion/ej2-schedule` package using the `Inject` method of Scheduler.
 
@@ -54,7 +54,7 @@ The Scheduler allows you to export all its events to an Excel format file by usi
 
 ### Exporting with custom fields
 
-By default, Scheduler exports all default event fields mapped through the `eventSettings` property. To limit the number of fields in the exported Excel file, you can export only custom fields of the event data. Define the required `fields` through the [`eventSettings`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings/) interface and pass it as an argument to the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel) method. For example: `['Id', 'Subject', 'StartTime', 'EndTime', 'Location']`.
+By default, Scheduler exports all default event fields mapped through the `eventSettings` property. To limit the number of fields in the exported Excel file, you can export only custom fields of the event data. Define the required `fields` through the [`eventSettings`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings) interface and pass it as an argument to the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel) method. For example: `['Id', 'Subject', 'StartTime', 'EndTime', 'Location']`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -91,7 +91,7 @@ By default, Scheduler exports all default event fields mapped through the `event
 
 ### Exporting individual occurrences of a recurring series
 
-By default, the Scheduler exports recurring events as a single data by exporting only its parent record into the excel file. If you want to export each individual occurrences of a recurring series appointment as separate records in an Excel file, define the [`includeOccurrences`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions/#includeoccurrences) option as `true` through the [`ExportOptions`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions/) interface and pass it as argument to the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel) method. By default, the [`includeOccurrences`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions/#includeoccurrences) option is set to `false`.
+By default, the Scheduler exports recurring events as a single data by exporting only its parent record into the excel file. If you want to export each individual occurrences of a recurring series appointment as separate records in an Excel file, define the [`includeOccurrences`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions#includeoccurrences) option as `true` through the [`ExportOptions`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions) interface and pass it as argument to the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel) method. By default, the [`includeOccurrences`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions#includeoccurrences) option is set to `false`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -122,7 +122,7 @@ By default, the Scheduler exports recurring events as a single data by exporting
 
 ### Exporting custom event data
 
-By default, the entire event collection bound to the Scheduler is exported as an Excel file. To export only specific events or a custom event collection, pass the custom data collection as a parameter to the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel) method through the [`customData`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions/#customdata) option of the [`ExportOptions`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions/) interface.
+By default, the entire event collection bound to the Scheduler is exported as an Excel file. To export only specific events or a custom event collection, pass the custom data collection as a parameter to the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel) method through the [`customData`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions#customdata) option of the [`ExportOptions`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions) interface.
 
 > By default, the event data is taken from the Scheduler dataSource.
 
@@ -161,7 +161,7 @@ By default, the entire event collection bound to the Scheduler is exported as an
 
 ### Customizing column header with custom fields exporting
 
-To customize the header of custom fields during export, use the [`fieldsInfo`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions/#fieldsinfo) option through the [`ExportFieldInfo`](https://ej2.syncfusion.com/documentation/api/schedule/exportFieldInfo/) interface and pass it as an argument to the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel) method.
+To customize the header of custom fields during export, use the [`fieldsInfo`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions#fieldsinfo) option through the [`ExportFieldInfo`](https://ej2.syncfusion.com/documentation/api/schedule/exportFieldInfo) interface and pass it as an argument to the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel) method.
 
 
 {% if page.publishingplatform == "typescript" %}
@@ -193,7 +193,7 @@ To customize the header of custom fields during export, use the [`fieldsInfo`](h
 
 ### Export with custom file name
 
-By default, the Scheduler downloads the exported Excel file with the name `Schedule.xlsx`. To export the Excel file with a custom file name, define the desired `fileName` through the [`ExportOptions`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions/) interface and pass it as an argument to the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel) method.
+By default, the Scheduler downloads the exported Excel file with the name `Schedule.xlsx`. To export the Excel file with a custom file name, define the desired `fileName` through the [`ExportOptions`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions) interface and pass it as an argument to the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel) method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -230,7 +230,7 @@ By default, the Scheduler downloads the exported Excel file with the name `Sched
 
 ### Excel file formats
 
-By default, the Scheduler exports event data to an Excel file in the `.xlsx` format. You can also export the Scheduler data in either `.xlsx` or `.csv` formats by defining the `exportType` option as either `csv` or `xlsx` through the [`ExportOptions`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions/) interface. The default `exportType` is `xlsx`.
+By default, the Scheduler exports event data to an Excel file in the `.xlsx` format. You can also export the Scheduler data in either `.xlsx` or `.csv` formats by defining the `exportType` option as either `csv` or `xlsx` through the [`ExportOptions`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions) interface. The default `exportType` is `xlsx`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -267,7 +267,7 @@ By default, the Scheduler exports event data to an Excel file in the `.xlsx` for
 
 ### Custom separator in CSV
 
-The Scheduler exports the event data to CSV format with `,` as separator. You can change separator by setting [separator](../api/schedule/exportOptions/#separator) property in [ExportOptions](../api/schedule/exportOptions/#exporttype).
+The Scheduler exports the event data to CSV format with `,` as separator. You can change separator by setting [separator](../api/schedule/exportOptions#separator) property in [ExportOptions](../api/schedule/exportOptions#exporttype).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -583,4 +583,4 @@ Here’s an example of how you can add a custom header and footer to the print l
 {% previewsample "page.domainurl/code-snippet/schedule/before-print" %}
 {% endif %}
 
-> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to knows how to present and manipulate data.
+> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to knows how to present and manipulate data.

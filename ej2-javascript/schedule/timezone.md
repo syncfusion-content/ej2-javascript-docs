@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Timezone in ##Platform_Name## Schedule control | Syncfusion
-description: Learn here all about Timezone in Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
+description: Learn all about timezone handling in the Syncfusion ##Platform_Name## Scheduler control of Essential JS 2.
 platform: ej2-javascript
 control: Timezone 
 publishingplatform: ##Platform_Name##
@@ -11,19 +11,18 @@ domainurl: ##DomainURL##
 
 # Timezone in ##Platform_Name## Schedule control
 
-The Scheduler uses the current system time zone by default. If it needs to follow a user-specific time zone, then the [`timezone`](https://ej2.syncfusion.com/documentation/api/schedule#timezone) property can be used. Apart from the default action of applying a specific timezone to the Scheduler, it is also possible to set different time zone values for each appointment through the properties `startTimezone` and `endTimezone`, which can be defined as separate fields within the event fields collection.
+By default, the Scheduler uses the client system's time zone. To display or process appointments in a specific time zone, use the [`timezone`](https://ej2.syncfusion.com/documentation/api/schedule#timezone) property. Individual appointments can also carry their own time zone information by using `startTimezone` and `endTimezone` fields in the event data.
 
->Note: **timezone** property only applicable for the appointment processing and current time indication.
+> Note: The `timezone` property affects appointment processing and the current-time indicator only.
 
-## Understanding date manipulation in JavaScript
+## Understanding date behavior in JavaScript
 
-The `new Date()` in JavaScript returns the exact current date object with complete time and timezone information. For example, it may return value such as `Wed Dec 12 2018 05:23:27 GMT+0530 (India Standard Time)` which indicates that the current date is December 12, 2018 and the current time is 5.23 AM on browsers following the IST timezone.
+JavaScript's `new Date()` returns a Date object that includes local time and the client's time zone offset. For example:  
+`Wed Dec 12 2018 05:23:27 GMT+0530 (India Standard Time)` — indicating local time 5:23 AM in IST (UTC+05:30).
 
-## Scheduler with no timezone
+## Scheduler with no explicit timezone
 
-When no specific time zone is set to Scheduler, appointments will be displayed based on the client system's timezone which is the default behavior.
-
-The following code example displays an appointment from 9.00 AM to 10.00 AM when you open the Scheduler from any of the timezone. This is because, we are providing the start and end time enclosing with `new Date()` which works based on the client browser's timezone.
+When no time zone is set on the Scheduler, appointments render according to the client browser's time zone. For example, providing start/end times with `new Date()` will present those times in the viewer's local time zone.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -52,9 +51,9 @@ The following code example displays an appointment from 9.00 AM to 10.00 AM when
 {% previewsample "page.domainurl/code-snippet/schedule/time-zone-cs1" %}
 {% endif %}
 
-## Scheduler set to specific timezone
+## Scheduler set to a specific timezone
 
-When a time zone is set to Scheduler through [`timezone`](https://ej2.syncfusion.com/documentation/api/schedule#timezone) property, the appointments will be displayed exactly based on the Scheduler timezone regardless of its client timezone. In the following code example, appointments will be displayed based on Eastern Time (UTC -05:00).
+Setting the Scheduler's [`timezone`](https://ej2.syncfusion.com/documentation/api/schedule#timezone) property forces all appointments to display according to that time zone regardless of the client's local setting. The example below demonstrates appointments displayed in Eastern Time (UTC−05:00).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -89,9 +88,9 @@ When a time zone is set to Scheduler through [`timezone`](https://ej2.syncfusion
 {% previewsample "page.domainurl/code-snippet/schedule/time-zone-cs2" %}
 {% endif %}
 
-## Display events on same time everywhere with no time difference
+## Display events at the same time everywhere (UTC)
 
-Setting [`timezone`](https://ej2.syncfusion.com/documentation/api/schedule#timezone) to UTC for Scheduler will display the appointments on same time as in the database for all the users in different time zone.
+If events are stored in UTC and the goal is to present the same wall-clock time to all users, set the Scheduler's [`timezone`](https://ej2.syncfusion.com/documentation/api/schedule#timezone) to `UTC`. Doing so ensures event times match the stored database times for every user, regardless of their local time zone.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -126,9 +125,9 @@ Setting [`timezone`](https://ej2.syncfusion.com/documentation/api/schedule#timez
 {% previewsample "page.domainurl/code-snippet/schedule/time-zone-cs3" %}
 {% endif %}
 
-## Set specific timezone for events
+## Per-event time zones
 
-It is possible to set different timezone for Scheduler events by setting `startTimezone` and `endTimezone` properties within the datasource. It allows each appointment to maintain different timezone and displays on Scheduler with appropriate time differences.
+To keep each appointment in its originating time zone, provide `startTimezone` and `endTimezone` properties in the event datasource. The Scheduler will render events with appropriate offsets so that time differences are correctly reflected.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -157,9 +156,9 @@ It is possible to set different timezone for Scheduler events by setting `startT
 {% previewsample "page.domainurl/code-snippet/schedule/time-zone-cs4" %}
 {% endif %}
 
-## Add or remove timezone names to/from the timezone collection
+## Customize timezone list in the editor
 
-Instead of displaying all the timezone names within the timezone collection (more than 200 are displayed on the editor window timezone fields by default), you can customize the timezone collection at application end as shown in the following example.
+The timezone editor displays a large collection (200+) of time zone names by default. You can customize this collection at the application level to show only relevant zones or to add/remove entries.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -194,103 +193,105 @@ Instead of displaying all the timezone names within the timezone collection (mor
 {% previewsample "page.domainurl/code-snippet/schedule/time-zone-cs5" %}
 {% endif %}
 
-## Timezone methods
+## Timezone utility methods
+
+The Scheduler provides a `Timezone` utility with helper methods for offset calculation and conversion.
 
 ### offset
 
-This method is used to calculate the difference between the passed UTC date and timezone.
+Calculates the offset (in minutes) between the passed UTC date and the specified time zone.
 
 | Parameters | Type | Description |
 |------------|------|-------------|
-| Date | Date | UTC time as date object.|
-| Timezone | String | Timezone.|
+| date | Date | UTC date object. |
+| timezone | String | IANA time zone identifier (for example, "Europe/Paris"). |
 
 Returns `number`
 
 ```ts
-    // Assume your local timezone as IST/UTC+05:30
-    let timezone: Timezone = new Timezone();
-    let date: Date = new Date(2018,11,5,15,25,11);
-    let timeZoneOffset: number = timezone.offset(date,"Europe/Paris");
-    console.log(timeZoneOffset); //-60
+// Assume local timezone is IST (UTC+05:30)
+let timezone: Timezone = new Timezone();
+let date: Date = new Date(2018,11,5,15,25,11);
+let timeZoneOffset: number = timezone.offset(date, "Europe/Paris");
+console.log(timeZoneOffset); // -60
 ```
 
 ### convert
 
-This method is used to convert the passed date from one timezone to another timezone.
+Converts a date from one timezone to another.
 
 | Parameters | Type | Description |
 |------------|------|-------------|
-| Date | Date | UTC time as date object.|
-| fromOffset | number/string | Timezone from which date need to be converted.|
-| toOffset | number/string | Timezone to which date need to be converted.|
+| date | Date | UTC date object. |
+| fromOffset | number|string | Source timezone (offset in minutes or IANA name). |
+| toOffset | number|string | Target timezone (offset in minutes or IANA name). |
 
 Returns `Date`
 
 ```ts
-    // Assume your local timezone as IST/UTC+05:30
-    let timezone: Timezone = new Timezone();
-    let date: Date = new Date(2018,11,5,15,25,11);
-    let convertedDate: Date = timezone.convert(date, "Europe/Paris", "Asia/Tokya");
-    let convertedDate1: Date = timezone.convert(date, 60, -360);
-    console.log(convertedDate); //2018-12-05T08:55:11.000Z
-    console.log(convertedDate1); //2018-12-05T16:55:11.000Z
+// Assume local timezone is IST (UTC+05:30)
+let timezone: Timezone = new Timezone();
+let date: Date = new Date(2018,11,5,15,25,11);
+let convertedDate: Date = timezone.convert(date, "Europe/Paris", "Asia/Tokyo");
+let convertedDate1: Date = timezone.convert(date, 60, -360);
+console.log(convertedDate);  // 2018-12-05T08:55:11.000Z
+console.log(convertedDate1); // 2018-12-05T16:55:11.000Z
 ```
 
 ### add
 
-This method is used to add the time difference between the passed UTC date and timezone.
+Adds the time difference between the passed UTC date and the specified timezone, returning a Date adjusted to that zone.
 
 | Parameters | Type | Description |
 |------------|------|-------------|
-| Date | Date | UTC time as date object.|
-| Timezone | String | Timezone.|
+| date | Date | UTC date object. |
+| timezone | String | IANA time zone identifier. |
 
 Returns `Date`
 
 ```ts
-    // Assume your local timezone as IST/UTC+05:30
-    let timezone: Timezone = new Timezone();
-    let date: Date = new Date(2018,11,5,15,25,11);
-    let convertedDate: Date = timezone.add(date, "Europe/Paris");
-    console.log(convertedDate); //2018-12-05T05:25:11.000Z
+// Assume local timezone is IST (UTC+05:30)
+let timezone: Timezone = new Timezone();
+let date: Date = new Date(2018,11,5,15,25,11);
+let convertedDate: Date = timezone.add(date, "Europe/Paris");
+console.log(convertedDate); // 2018-12-05T05:25:11.000Z
 ```
 
 ### remove
 
-This method is used to remove the time difference between passed UTC date and timezone.
+Removes the time difference between the passed UTC date and the specified timezone.
 
 | Parameters | Type | Description |
 |------------|------|-------------|
-| Date | Date | UTC as date object.|
-| Timezone | String | Timezone.|
+| date | Date | UTC date object. |
+| timezone | String | IANA time zone identifier. |
 
 Returns `Date`
 
 ```ts
-    // Assume your local timezone as IST/UTC+05:30
-    let timezone: Timezone = new Timezone();
-    let date: Date = new Date(2018,11,5,15,25,11);
-    let convertedDate: Date = timezone.remove(date, "Europe/Paris");
-    console.log(convertedDate); //2018-12-05T14:25:11.000Z
+// Assume local timezone is IST (UTC+05:30)
+let timezone: Timezone = new Timezone();
+let date: Date = new Date(2018,11,5,15,25,11);
+let convertedDate: Date = timezone.remove(date, "Europe/Paris");
+console.log(convertedDate); // 2018-12-05T14:25:11.000Z
 ```
 
 ### removeLocalOffset
 
-This method is used to remove the local offset time from the date passed.
+Removes the local offset from the given date.
 
 | Parameters | Type | Description |
 |------------|------|-------------|
-| Date | Date | UTC as date object.|
+| date | Date | UTC date object. |
 
 Returns `Date`
 
 ```ts
-    // Assume your local timezone as IST/UTC+05:30
-    let timezone: Timezone = new Timezone();
-    let date: Date = new Date(2018,11,5,15,25,11);
-    let convertedDate: Date = timezone.removeLocalOffset(date);
-    console.log(convertedDate); //2018-12-05T15:25:11.000Z
+// Assume local timezone is IST (UTC+05:30)
+let timezone: Timezone = new Timezone();
+let date: Date = new Date(2018,11,5,15,25,11);
+let convertedDate: Date = timezone.removeLocalOffset(date);
+console.log(convertedDate); // 2018-12-05T15:25:11.000Z
 ```
 
-> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to knows how to present and manipulate data.
+> Refer to the [JavaScript Scheduler feature tour](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) for an overview of capabilities, and see the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) for sample usage and demonstrations.

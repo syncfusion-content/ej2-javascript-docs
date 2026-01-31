@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Dimensions in ##Platform_Name## Scheduler Control
 
-The Scheduler dimensions refers to both height and width of the entire layout and it accepts 3 types of values.
+The Scheduler dimensions refer to both the height and width of the entire layout. It accepts the following three types of values:
 
 * auto
 * pixel
@@ -19,7 +19,7 @@ The Scheduler dimensions refers to both height and width of the entire layout an
 
 ## Auto Height and Width
 
-When [height](https://ej2.syncfusion.com/documentation/api/schedule#height) and [width](https://ej2.syncfusion.com/documentation/api/schedule#width) of the Scheduler are set to `auto`, it will try as hard as possible to keep an element the same width as its parent container. In other words, the parent container that holds Scheduler, it's width/height will be the sum of its children. By default, Scheduler is assigned with `auto` values for both height and width properties.
+When the [`height`](../api/schedule#height) and [`width`](../api/schedule#width) of the Scheduler are set to `auto`, it will try as hard as possible to keep an element the same width as its parent container. In other words, the parent container that holds Scheduler the component adjusts its dimensions to fit the parent container. By default, the Scheduler is assigned `auto` values for both the height and width properties.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -50,7 +50,7 @@ When [height](https://ej2.syncfusion.com/documentation/api/schedule#height) and 
 
 ## Height and Width in pixel
 
-The Scheduler height and width will be rendered exactly as per the given pixel values. It accepts both string and number values.
+The Scheduler height and width are rendered exactly according to the provided pixel values. This property accepts both string and number values.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -81,7 +81,7 @@ The Scheduler height and width will be rendered exactly as per the given pixel v
 
 ## Height and Width in percentage
 
-When height and width of the Scheduler are given as percentage, it will make the Scheduler as wide as the parent container.
+When the height and width of the Scheduler are defined as percentages, the component adjusts its size relative to the parent container.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -110,7 +110,7 @@ When height and width of the Scheduler are given as percentage, it will make the
 {% previewsample "page.domainurl/code-snippet/schedule/dimension-cs3" %}
 {% endif %}
 
-> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to knows how to present and manipulate data.
+> Can refer our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its comprehensive feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.
 
 ## See Also
 

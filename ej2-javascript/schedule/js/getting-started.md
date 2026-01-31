@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with JavaScript Schedule Control | Syncfusion
-description:  Checkout and learn about Getting started with JavaScript Schedule Control of Syncfusion Essential JS 2 and more details.
+description: Learn how to create and configure the JavaScript Scheduler control in your application, including setup, initialization, and basic customization.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,15 +9,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with JavaScript Schedule Control
+# Getting started with JavaScript Schedule Control
 
-This section briefly explains how to create the [**JavaScript Scheduler**](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) component and configure its available functionalities in a JavaScript application.
+This guide explains how to create a [**JavaScript Scheduler**](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) component and configure its core features in a JavaScript application.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/javascript/documentation/ai-coding-assistant/overview)
 
 ## Dependencies
 
-The following list of dependencies are required to use the Scheduler component in your application.
+The Scheduler component requires the following dependencies:
 
 ```javascript
 |-- @syncfusion/ej2-schedule
@@ -35,28 +35,28 @@ The following list of dependencies are required to use the Scheduler component i
 
 ## Setup for local environment
 
-Refer the following steps for setup your local environment.
+Follow these steps to set up your local development environment:
 
-**Step 1:** Create a root folder `myapp` for your application.
+**Step 1:** Create a root folder `my-app` for your application.
 
-**Step 2:** Create `myapp/resources` folder to store local scripts and styles files.
+**Step 2:** Create a `my-app/resources` folder to store local scripts and style files.
 
-**Step 3:** Create `myapp/index.js` and `myapp/index.html` files for initializing Essential<sup style="font-size:70%">&reg;</sup> JS 2 Scheduler control.
+**Step 3:** Create `my-app/index.js` and `my-app/index.html` files for initializing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Scheduler control.
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Scheduler control can be initialized by using either of the following ways.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Scheduler control can be initialized using either of the following methods:
 
 * Using local scripts and styles.
 * Using CDN links for scripts and styles.
 
 ### Using local scripts and styles
 
-You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+You can obtain global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installation location.
 
-After installing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 product build, you can copy the Scheduler and its dependency scripts and style files into the `resources/scripts` and `resources/styles` folder respectively.
+After installing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 product build, copy the Scheduler and its dependency scripts and style files into the `resources/scripts` and `resources/styles` folders respectively.
 
-Refer the below location from where the Scheduler's script and styles can be referenced.
+Reference the Scheduler's script and style files from the following locations:
 
 **Syntax:**
 
@@ -70,11 +70,10 @@ Refer the below location from where the Scheduler's script and styles can be ref
 >
 > Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-schedule/styles/material.css`
 
-After copying the files, you can refer the Scheduler's scripts and styles into the `index.html` file.
-The below html code example shows the dependency of Scheduler.
+After copying the files, reference the Scheduler's scripts and styles in the `index.html` file.
+The following HTML code example shows the Scheduler's dependencies:
 
-```
-
+```html
 <!DOCTYPE html>
   <html xmlns="https://www.w3.org/1999/xhtml">
        <head>
@@ -112,14 +111,13 @@ The below html code example shows the dependency of Scheduler.
        <body>
        </body>
   </html>
-
 ```
 
 ### Using CDN links for scripts and styles
 
-Using CDN link, you can directly refer the Scheduler's script and styles into the `index.html` file.
+Using CDN links, you can directly reference the Scheduler's script and styles in the `index.html` file.
 
-Refer the Scheduler's CDN links as given below.
+Reference the Scheduler's CDN links as shown below:
 
 **Syntax:**
 
@@ -129,11 +127,11 @@ Refer the Scheduler's CDN links as given below.
 
 **Example:**
 
-> Script: [`https://cdn.syncfusion.com/ej2/20.3.56/ej2-schedule/dist/global/ej2-schedule.min.js`](https://cdn.syncfusion.com/ej2/ej2-schedule/dist/global/ej2-schedule.min.js)
+> Script: [`https://cdn.syncfusion.com/ej2/32.1.19/ej2-schedule/dist/global/ej2-schedule.min.js`](https://cdn.syncfusion.com/ej2/ej2-schedule/dist/global/ej2-schedule.min.js)
 >
-> Styles: [`https://cdn.syncfusion.com/ej2/20.3.56/ej2-schedule/styles/material.css`](https://cdn.syncfusion.com/ej2/ej2-schedule/styles/material.css)
+> Styles: [`https://cdn.syncfusion.com/ej2/32.1.19/ej2-schedule/styles/material.css`](https://cdn.syncfusion.com/ej2/ej2-schedule/styles/material.css)
 
-The below html code example shows the dependency of Scheduler with `ej2-schedule.min.js`.
+The following HTML code example shows the Scheduler dependencies using `ej2-schedule.min.js`:
 
 ```html
 <!DOCTYPE html>
@@ -176,10 +174,9 @@ The below html code example shows the dependency of Scheduler with `ej2-schedule
              <script src="index.js" type="text/javascript"></script>
        </body>
   </html>
-
 ```
 
-Place the following Scheduler code in the `index.js` file.
+Place the following Scheduler code in the `index.js` file:
 
 ```javascript
 ej.schedule.Schedule.Inject(ej.schedule.Day, ej.schedule.Week, ej.schedule.WorkWeek, ej.schedule.Month, ej.schedule.Agenda);
@@ -189,9 +186,9 @@ scheduleObj.appendTo('#Schedule');
 
 ## Initialize the Scheduler
 
-Now, you can start adding Scheduler control in the application. For getting started, add a `div` element for Scheduler control in `index.html`. Then refer the `index.js` file into the `index.html` file.
+Add a `div` element for the Scheduler control in `index.html` and reference the `index.js` file.
 
-In this document context we are going to use `ej2.min.js` which includes all the Essential<sup style="font-size:70%">&reg;</sup> JS 2 components and its dependent scripts.
+In this example, `ej2.min.js` is used, which includes all Essential<sup style="font-size:70%">&reg;</sup> JS 2 components and their dependencies.
 
 ```html
 <!DOCTYPE html>
@@ -220,10 +217,9 @@ In this document context we are going to use `ej2.min.js` which includes all the
              <script src="index.js" type="text/javascript"></script>
        </body>
   </html>
-
 ```
 
-Place the following Scheduler code in the `index.js` file.
+Place the following Scheduler code in the `index.js` file:
 
 ```javascript
 var scheduleObj = new ej.schedule.Schedule();
@@ -232,33 +228,33 @@ scheduleObj.appendTo('#Schedule');
 
 ## Populating appointments
 
-To populate the empty Scheduler with appointments, define either the local JSON data or remote data through the `dataSource` property available within the `eventSettings` option. To define any appointments, start and end time fields are mandatory. In the following example, you can see the appointment defined with default fields such as Id, Subject, StartTime and EndTime.
+To populate the empty Scheduler with appointments, define local JSON data or remote data through the `dataSource` property within the `eventSettings` option. The start and end time fields are mandatory for appointments. The following example demonstrates an appointment defined with default fields: Id, Subject, StartTime, and EndTime.
 
-```ts
+```javascript
 var scheduleObj = new ej.schedule.Schedule({
     height: '550px',
     selectedDate: new Date(2018, 1, 15),
     eventSettings: {
         dataSource: [{
-            id: 1,
-            subject: 'Meeting',
-            startTime: new Date(2018, 1, 15, 10, 0),
-            endTime: new Date(2018, 1, 15, 12, 30)
+            Id: 1,
+            Subject: 'Meeting',
+            StartTime: new Date(2018, 1, 15, 10, 0),
+            EndTime: new Date(2018, 1, 15, 12, 30)
         }]
     }
 });
 scheduleObj.appendTo('#Schedule');
 ```
 
-You can also provide different names to these default fields, for which the custom names of those fields must be mapped appropriately within `fields` property as shown below.
+You can also use custom field names by mapping them appropriately within the `fields` property:
 
-```ts
+```javascript
 var data = [{
-    Id: 2,
-    EventName: 'Meeting',
-    StartTime: new Date(2018, 1, 15, 10, 0),
-    EndTime: new Date(2018, 1, 15, 12, 30),
-    IsAllDay: false,
+    Id: 2,
+    EventName: 'Meeting',
+    StartTime: new Date(2018, 1, 15, 10, 0),
+    EndTime: new Date(2018, 1, 15, 12, 30),
+    IsAllDay: false,
     Status: 'Completed',
     Priority: 'High'
 }];
@@ -268,12 +264,12 @@ var scheduleObj = new ej.schedule.Schedule({
     eventSettings: {
         dataSource: data,
         fields: {
-              id: 'Id',
-              subject: { name: 'EventName' },
-              isAllDay: { name: 'IsAllDay' },
-              startTime: { name: 'StartTime' },
-              endTime: { name: 'EndTime' },
-            }
+            id: 'Id',
+            subject: { name: 'EventName' },
+            isAllDay: { name: 'IsAllDay' },
+            startTime: { name: 'StartTime' },
+            endTime: { name: 'EndTime' }
+        }
     }
 });
 scheduleObj.appendTo('#Schedule');
@@ -283,7 +279,7 @@ The other fields available in Scheduler can be referred from [here](./appointmen
 
 ## Setting date
 
-Scheduler usually displays the system date as its current date. To change the current date of Scheduler with specific date, define the `selectedDate` property.
+By default, the Scheduler displays the current system date. To change the Scheduler's current date, set the `selectedDate` property to a specific date.
 
 ```ts
 var scheduleObj = new ej.schedule.Schedule({
@@ -295,11 +291,11 @@ scheduleObj.appendTo('#Schedule');
 
 ## Setting view
 
-Scheduler displays `Week` view by default. To change the current view, define the applicable view name to the `currentView` property. The applicable view names are,
+The Scheduler displays the `Week` view by default. To change the current view, set the `currentView` property to one of the following view names:
 
 * Day
 * Week
-* Workweek
+* WorkWeek
 * Month
 * Year
 * Agenda
@@ -321,10 +317,9 @@ scheduleObj.appendTo('#Schedule');
 
 ## Individual view customization
 
-Each individual Scheduler views can be customized with its own options such as setting different start and end hour on Week and Work Week views, whereas hiding the weekend days on Month view alone.
-This can be achieved by defining views property to accept the array of object type, where each object depicts the individual view customization.
+Each Scheduler view can be customized individually with its own options, such as setting different start and end hours for Week and Work Week views or hiding weekend days in the Month view only. This is achieved by defining the `views` property as an array of objects, where each object represents the customization for an individual view.
 
-Now, run the application in the browser using the following command.
+Now, run the application in the browser using the following command:
 
 ```
 npm start
@@ -346,4 +341,4 @@ The output will display the Scheduler with the specified view configuration.
         
 {% previewsample "page.domainurl/code-snippet/schedule/views-model-cs1" %}
 
-> You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/javascript/demos/#/material/schedule/overview.html) that shows how to use the toolbar buttons to play with Scheduler functionalities.
+> You can also explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/javascript/demos/#/material/schedule/overview.html) to see how toolbar buttons interact with Scheduler functionalities.

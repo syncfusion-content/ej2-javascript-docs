@@ -3,7 +3,7 @@ layout: post
 title: Salesforce integration ##Platform_Name## Scheduler control | Syncfusion
 description: Learn here all about salesforce integration in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Salesforce Integration 
+control: Scheduler
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,27 +11,27 @@ domainurl: ##DomainURL##
 
 # Salesforce integration in ##Platform_Name## Scheduler control
 
-This topic provides you with a detailed step-by-step guide on how to seamlessly integrate the [**JavaScript Scheduler**](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) control into Salesforce. By integrating it into Salesforce, you can enhance your productivity and streamline your scheduling processes.
+This topic provides a detailed step-by-step guide on how to seamlessly integrate the [**JavaScript Scheduler**](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) control into Salesforce. By integrating it into Salesforce, you can enhance productivity and streamline scheduling processes.
 
 ## Prerequisites
 
-Before getting started, make sure you have the following prerequisites need to be installed
+Before getting started, ensure the following prerequisite is installed:
 
 * [Salesforce CLI](https://developer.salesforce.com/tools/salesforcecli)
 
-## Configuring salesforce 
+## Configuring Salesforce
 
-To begin the integration process, you need to configure Salesforce by following these steps.
+To begin the integration process, configure Salesforce by following these steps:
 
 [Sign up](https://www.salesforce.com/form/developer-signup/) with salesforce developer account, if you don’t have salesforce account, sign up for one to access the necessary tools and resources for integration.
 
 [Log in](https://login.salesforce.com/) with salesforce account. 
 
-After successful login, search for Dev Hub in the quick find search box and select Dev Hub. In the Dev Hub setup tab, ensure that the `Enable Dev Hub` option is enabled. If it's not enabled, enable it to proceed further.
+After login, search for **Dev Hub** in the quick find search box and select **Dev Hub**. In the Dev Hub setup tab, ensure that the `Enable Dev Hub` option is enabled.
 
 ![Enable Dev Hub](../images/Salesforce-enable-dev-hub.png)
 
-## Creating a salesforce project
+## Creating a Salesforce project
 
 Now you have have Salesforce configured, let's create a [Salesforce project](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm) for our integration. 
 
@@ -49,7 +49,7 @@ sfdx project:generate -n scheduler-salesforce-app
 
 ![Salesforce App](../images/Salesforce-app.png)
 
-## Authorization of salesforce project 
+## Authorizing the Salesforce project
 
 Before proceeding further, you need to authorize your Salesforce project by following these steps
 
@@ -120,7 +120,7 @@ Enable the following options to bypass the CSP issues and Click Save button to a
 
 ![CSP trusted sites](../images/CSP-trusted-sites.png)
 
-## Creating data model for appointment 
+## Creating a data model for appointment 
 
 To begin, navigate to the Object Manager in Salesforce and select Create followed by `Custom Object`.
 
@@ -164,7 +164,7 @@ let's configure the fields and relationships for the `SchedulerEvent` object. To
 
 ![Salesforce New custom field](../images/Salesforce-custom-field.png)
 
-## Creating a lightning web component 
+## Creating a Lightning web component 
 
 To integrate the **JavaScript Scheduler** into your Salesforce project, we will create a [Lightning web component](https://developer.salesforce.com/docs/platform/lwc/guide/get-started-introduction.html).
 

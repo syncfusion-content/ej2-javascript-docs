@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Style and appearance in ##Platform_Name## Gantt control
 
-To modify the Gantt Chart appearance, you need to override the default CSS of gantt chart. Please find the list of CSS classes and its corresponding section in Gantt Chart. Also, you have an option to create your own custom theme for all the JavaScript controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
+To modify the Gantt Chart appearance, you need to override the default CSS of gantt chart. Please find the list of CSS classes and its corresponding section in Gantt Chart. Also, you have an option to create your own custom theme for all the JavaScript controls using our [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material).
 
 Section | CSS Class | Purpose of Class
 -----|-----|-----
@@ -53,7 +53,7 @@ Section | CSS Class | Purpose of Class
 
 ## Grid lines
 
-In the Gantt control, you can show or hide the grid lines in the TreeGrid side and chart side by using the [`gridLines`](../api/gantt/gridLine/) property.
+In the Gantt control, you can show or hide the grid lines in the TreeGrid side and chart side by using the [gridLines](../api/gantt/gridLine) property.
 
 The following options are available in the Gantt control for rendering the grid lines:
 
@@ -62,7 +62,7 @@ The following options are available in the Gantt control for rendering the grid 
 * Both: Both the horizontal and vertical grid lines will be visible on the TreeGrid and chart sides.
 * None: Gridlines will not be visible on TreeGrid and chart sides.
 
-> By default, the [`gridLines`](../api/gantt/gridLine/) property is set to `Horizontal` type.
+> By default, the [gridLines](../api/gantt/gridLine) property is set to `Horizontal` type.
 
 The following code example shows how to change the gridlines rendering mode in the Gantt control.
 

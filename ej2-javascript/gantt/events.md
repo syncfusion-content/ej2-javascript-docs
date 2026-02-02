@@ -15,11 +15,11 @@ The Syncfusion ##Platform_Name## Gantt Chart component offers comprehensive supp
 
 ## actionBegin
 
-The [actionBegin](../api/gantt/#actionbegin) event triggers before the Gantt component processes actions such as **adding**, **editing(cell, dialog, taskbar)**, **deleting**, **sorting**, **filtering**, **dependency changes**, and **zooming**. It provides detailed contextual information through the [ActionBeginArgs](../api/gantt/actionBeginArgs/) argument. The argument type and structure depend on the triggered operation. Each argument type provides specific properties to help you inspect and modify the action.
+The [actionBegin](../api/gantt#actionbegin) event triggers before the Gantt component processes actions such as **adding**, **editing(cell, dialog, taskbar)**, **deleting**, **sorting**, **filtering**, **dependency changes**, and **zooming**. It provides detailed contextual information through the [ActionBeginArgs](../api/gantt/actionBeginArgs) argument. The argument type and structure depend on the triggered operation. Each argument type provides specific properties to help you inspect and modify the action.
 
 The event argument structure varies based on the operation type. The following tables describe the supported argument types and their properties.
 
-**1. [ActionBeginArgs](../api/gantt/actionBeginArgs/)**
+**1. [ActionBeginArgs](../api/gantt/actionBeginArgs)**
 
 | **Property**             | **Type**       | **Description**                                                                 |
 |--------------------------|----------------|---------------------------------------------------------------------------------|
@@ -36,7 +36,7 @@ The event argument structure varies based on the operation type. The following t
 | `toItem`                | IGanttData   | Specifies the successor task in a dependency relationship.                      |
 | `type`                  | string       | Defines the type of event triggered.                                            |
 
-**2. [ITimeSpanEventArgs](../api/gantt/iTimeSpanEventArgs/) (Taskbar editing)**
+**2. [ITimeSpanEventArgs](../api/gantt/iTimeSpanEventArgs) (Taskbar editing)**
 
 | **Property**           | **Type**   | **Description**                                                                 |
 |------------------------|------------|---------------------------------------------------------------------------------|
@@ -46,7 +46,7 @@ The event argument structure varies based on the operation type. The following t
 | `projectEndDate`      | Date    | End date of the overall project. Useful for validating task boundaries.        |
 | `requestType`         | string   | Describes the type of request. For taskbar editing, values include **taskbarEditing**. |
 
-**3. [ITaskAddedEventArgs](../api/gantt/iTaskAddedEventArgs/) (Adding/Editing/Deleting tasks)**
+**3. [ITaskAddedEventArgs](../api/gantt/iTaskAddedEventArgs) (Adding/Editing/Deleting tasks)**
 
 | **Property**        | **Type**     | **Description**                                                                 |
 |---------------------|--------------|---------------------------------------------------------------------------------|
@@ -60,7 +60,7 @@ The event argument structure varies based on the operation type. The following t
 | `requestType`       | string     | Describes the type of request, such as **beforeAdd** or **beforeDelete**.         |
 | `rowPosition`       | string     | Indicates the position where the new row is added. Possible values: **Top**, **Bottom**, **Above**, **Below**. |
 
-**4. [FilterEventArgs](../api/grid/filterEventArgs/) (Filtering)**
+**4. [FilterEventArgs](../api/grid/filterEventArgs) (Filtering)**
 
 | **Property**             | **Type**     | **Description**                                                                 |
 |--------------------------|--------------|---------------------------------------------------------------------------------|
@@ -71,7 +71,7 @@ The event argument structure varies based on the operation type. The following t
 | `requestType`            | string     | Describes the type of request, typically **filtering**.                        |
 | `type`                   | string     | Event type identifier.                                                         |
 
-**5. [SortEventArgs](../api/grid/sortEventArgs/) (Sorting)**
+**5. [SortEventArgs](../api/grid/sortEventArgs) (Sorting)**
 
 | **Property**     | **Type**   | **Description**                                                                 |
 |------------------|------------|---------------------------------------------------------------------------------|
@@ -81,7 +81,7 @@ The event argument structure varies based on the operation type. The following t
 | `requestType`    | string   | Describes the type of request, typically **sorting**.                          |
 | `type`           | string   | Event type identifier.                                                         |
 
-**6. [IDependencyEventArgs](../api/gantt/iDependencyEventArgs/) (Dependency editing)**
+**6. [IDependencyEventArgs](../api/gantt/iDependencyEventArgs) (Dependency editing)**
 
 | **Property**              | **Type**   | **Description**                                                                 |
 |---------------------------|------------|---------------------------------------------------------------------------------|
@@ -92,7 +92,7 @@ The event argument structure varies based on the operation type. The following t
 | `requestType`             | string  | Describes the type of request, typically **validateDependency** or **updateDependency**. |
 | `toItem`                  | object   | Target task object in the dependency link.                                     |
 
-**7. [ZoomEventArgs](../api/gantt/zoomEventArgs/) (Zooming)**
+**7. [ZoomEventArgs](../api/gantt/zoomEventArgs) (Zooming)**
 
 | **Property**     | **Type**   | **Description**                                                                 |
 |------------------|------------|---------------------------------------------------------------------------------|
@@ -207,7 +207,7 @@ function actionBegin(args:ITimeSpanEventArgs | ITaskAddedEventArgs | IDependency
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -327,8 +327,8 @@ gantt.appendTo('#Gantt');
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -351,11 +351,11 @@ gantt.appendTo('#Gantt');
 
 ## actionComplete
 
-The [actionComplete](../api/gantt/#actioncomplete) event is triggered after the Gantt component successfully completes an operation such as **adding**, **editing(cell, dialog, taskbar)**, **deleting**, **sorting**, **filtering**, **dependency changes**, and **zooming**. It provides detailed contextual information about the completed action through the [ActionCompleteArgs](../api/gantt/actionCompleteArgs/) argument. The structure of this argument varies depending on the type of operation performed, and includes specific properties that allow you to inspect the outcome and implement custom logic based on the completed action. 
+The [actionComplete](../api/gantt#actioncomplete) event is triggered after the Gantt component successfully completes an operation such as **adding**, **editing(cell, dialog, taskbar)**, **deleting**, **sorting**, **filtering**, **dependency changes**, and **zooming**. It provides detailed contextual information about the completed action through the [ActionCompleteArgs](../api/gantt/actionCompleteArgs) argument. The structure of this argument varies depending on the type of operation performed, and includes specific properties that allow you to inspect the outcome and implement custom logic based on the completed action. 
 
 Below are detailed descriptions of each argument type's properties, and their purposes.
 
-**1. [ActionCompleteArgs](../api/gantt/actionCompleteArgs/)**
+**1. [ActionCompleteArgs](../api/gantt/actionCompleteArgs)**
 
 | **Property**       | **Type**                | **Description**                                                                 |
 |--------------------|-------------------------|---------------------------------------------------------------------------------|
@@ -366,7 +366,7 @@ Below are detailed descriptions of each argument type's properties, and their pu
 | `timeline`         | ZoomTimelineSettings  | Defines the settings applied to the Zoom timeline.                             |
 | `type`             | string                | Defines the type of the event.                                                 |
 
-**2. [FilterEventArgs](../api/grid/filterEventArgs/) (Filtering)**
+**2. [FilterEventArgs](../api/grid/filterEventArgs) (Filtering)**
 
 | **Property**             | **Type**     | **Description** |
 |--------------------------|--------------|-----------------|
@@ -377,7 +377,7 @@ Below are detailed descriptions of each argument type's properties, and their pu
 | `requestType`            | string     | Describes the type of request like **filtering**, **filterAfterOpen**. |
 | `type`                   | string     | Event type identifier. |
 
-**3. [SortEventArgs](../api/grid/sortEventArgs/) (Sorting)**
+**3. [SortEventArgs](../api/grid/sortEventArgs) (Sorting)**
 
 | **Property**     | **Type**   | **Description** |
 |------------------|------------|-----------------|
@@ -387,7 +387,7 @@ Below are detailed descriptions of each argument type's properties, and their pu
 | `requestType`    | string   | Describes the type of request, typically **sorting**. |
 | `type`           | string   | Event type identifier. |
 
-**4. [ITaskAddedEventArgs](../api/gantt/iTaskAddedEventArgs/) (Adding/Editing/Deleting tasks)**
+**4. [ITaskAddedEventArgs](../api/gantt/iTaskAddedEventArgs) (Adding/Editing/Deleting tasks)**
 
 | **Property**        | **Type**     | **Description** |
 |---------------------|--------------|-----------------|
@@ -401,7 +401,7 @@ Below are detailed descriptions of each argument type's properties, and their pu
 | `requestType`       | string     | Describes the type of request, such as **beforeSave**, **beforeDelete**. |
 | `rowPosition`       | string     | Indicates the position where the new row is added. Possible values: **Top**, **Bottom**, **Above**, **Below**. |
 
-**5. [ZoomEventArgs](../api/gantt/zoomEventArgs/) (Zooming)**
+**5. [ZoomEventArgs](../api/gantt/zoomEventArgs) (Zooming)**
 
 | **Property**     | **Type**   | **Description** |
 |------------------|------------|-----------------|
@@ -547,7 +547,7 @@ function actionComplete(args: ActionCompleteArgs | FilterEventArgs | SortEventAr
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -700,8 +700,8 @@ gantt.appendTo('#Gantt');
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -724,7 +724,7 @@ gantt.appendTo('#Gantt');
 
 ## actionFailure
 
-The [actionFailure](../api/gantt/#actionfailure) event is triggered when an operation in the Gantt encounters an error due to configuration issues, invalid data, or missing modules. It returns a [FailureEventArgs](../api/grid/failureEventArgs/#failureeventargs/) object containing detailed information about the failure, including the following property:
+The [actionFailure](../api/gantt#actionfailure) event is triggered when an operation in the Gantt encounters an error due to configuration issues, invalid data, or missing modules. It returns a [FailureEventArgs](../api/grid/failureEventArgs#failureeventargs) object containing detailed information about the failure, including the following property:
 
 | **Property**     | **Type**   | **Description** |
 |------------------|------------|-----------------|
@@ -812,7 +812,7 @@ gantt.appendTo('#Gantt');
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -907,8 +907,8 @@ gantt.appendTo('#Gantt');
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -931,7 +931,7 @@ gantt.appendTo('#Gantt');
 
 ## beforeExcelExport
 
-The [beforeExcelExport](../api/gantt/#beforeexcelexport) event is triggered before initiating data export from the Gantt component to Excel or CSV format. This event enables conditional control over the export process, such as canceling the operation or applying format-specific logic.
+The [beforeExcelExport](../api/gantt#beforeexcelexport) event is triggered before initiating data export from the Gantt component to Excel or CSV format. This event enables conditional control over the export process, such as canceling the operation or applying format-specific logic.
 
 The event argument is an `object` containing the following properties:
 
@@ -1039,7 +1039,7 @@ function beforeExcelExport(args: { name: string; isCsv: boolean }) {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -1151,8 +1151,8 @@ function beforeExcelExport(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -1175,7 +1175,7 @@ function beforeExcelExport(args) {
 
 ## beforePdfExport
 
-The [beforePdfExport](../api/gantt/#beforepdfexport) event is triggered before exporting Gantt data to a PDF file. This event provides an opportunity to conditionally cancel the export or modify behavior based on the current Gantt configuration.
+The [beforePdfExport](../api/gantt#beforepdfexport) event is triggered before exporting Gantt data to a PDF file. This event provides an opportunity to conditionally cancel the export or modify behavior based on the current Gantt configuration.
 
 The event provides an argument of type `object` with the following properties:
 
@@ -1282,7 +1282,7 @@ function beforePdfExport(args: { name: string }): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -1392,8 +1392,8 @@ function beforePdfExport(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -1416,9 +1416,9 @@ function beforePdfExport(args) {
 
 ## beforeTooltipRender
 
-The [beforeTooltipRender](../api/gantt/#beforetooltiprender) event is triggered before rendering a tooltip for interactive elements within the Gantt component. This includes taskbars, timeline headers, and connector lines. The event allows dynamic customization or suppression of tooltip content based on contextual data.
+The [beforeTooltipRender](../api/gantt#beforetooltiprender) event is triggered before rendering a tooltip for interactive elements within the Gantt component. This includes taskbars, timeline headers, and connector lines. The event allows dynamic customization or suppression of tooltip content based on contextual data.
 
-The event provides an argument of type [BeforeTooltipRenderEventArgs](../api/gantt/beforeTooltipRenderEventArgs/) with the following properties:
+The event provides an argument of type [BeforeTooltipRenderEventArgs](../api/gantt/beforeTooltipRenderEventArgs) with the following properties:
 
 | **Property** | **Type**   | **Description**                                                   |
 |--------------|------------|-------------------------------------------------------------------|
@@ -1535,7 +1535,7 @@ function beforeTooltipRender(args: BeforeTooltipRenderEventArgs) {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -1647,8 +1647,8 @@ function beforeTooltipRender(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -1671,9 +1671,9 @@ function beforeTooltipRender(args) {
 
 ## cellDeselected
 
-The [cellDeselected](../api/gantt/#celldeselected) event is triggered when a selected cell in the Gantt component is deselected. This occurs when the selection is cleared by clicking outside the cell, selecting a different cell or row, or through programmatic control. This event is typically used to validate cell data after deselection, synchronize external state, or trigger updates based on cell-level interactions.
+The [cellDeselected](../api/gantt#celldeselected) event is triggered when a selected cell in the Gantt component is deselected. This occurs when the selection is cleared by clicking outside the cell, selecting a different cell or row, or through programmatic control. This event is typically used to validate cell data after deselection, synchronize external state, or trigger updates based on cell-level interactions.
 
-The event provides an argument of type [CellDeselectEventArgs](../api/grid/cellDeselectEventArgs/) with the following properties:
+The event provides an argument of type [CellDeselectEventArgs](../api/grid/cellDeselectEventArgs) with the following properties:
 
 | **Property**      | **Type**     | **Description**                             |
 |-----------------|----------------|---------------------------------------------|
@@ -1779,7 +1779,7 @@ function cellDeselected(args: CellDeselectEventArgs) {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -1890,8 +1890,8 @@ function cellDeselected(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -1914,9 +1914,9 @@ function cellDeselected(args) {
 
 ## cellDeselecting
 
-The [cellDeselecting](../api/gantt/#celldeselecting) event is triggered when a previously selected cell in the Gantt component is deselected. This occurs when the selection is cleared either through user interaction or programmatic control. This event is typically used to validate cell data after deselection, synchronize external state, or trigger updates based on cell-level interactions.
+The [cellDeselecting](../api/gantt#celldeselecting) event is triggered when a previously selected cell in the Gantt component is deselected. This occurs when the selection is cleared either through user interaction or programmatic control. This event is typically used to validate cell data after deselection, synchronize external state, or trigger updates based on cell-level interactions.
 
-The event provides an argument of type [CellDeselectEventArgs](../api/grid/cellDeselectEventArgs/) with the following properties:
+The event provides an argument of type [CellDeselectEventArgs](../api/grid/cellDeselectEventArgs) with the following properties:
 
 | **Property**   | **Type**     | **Description**                                                   |
 |----------------|--------------|-------------------------------------------------------------------|
@@ -2024,7 +2024,7 @@ function cellDeselecting(args: CellDeselectEventArgs) {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -2137,8 +2137,8 @@ function cellDeselecting(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -2161,9 +2161,9 @@ function cellDeselecting(args) {
 
 ## cellEdit
 
-The [cellEdit](../api/gantt/#celledit) event is triggered when a cell enters edit mode in the Gantt Chart component. This event allows customization of the editing behavior, such as validating input, modifying cell values, or preventing edits based on specific conditions. It helps ensure that data changes meet application requirements before being applied.
+The [cellEdit](../api/gantt#celledit) event is triggered when a cell enters edit mode in the Gantt Chart component. This event allows customization of the editing behavior, such as validating input, modifying cell values, or preventing edits based on specific conditions. It helps ensure that data changes meet application requirements before being applied.
 
-The event provides an argument of type [CellEditArgs](../api/gantt/cellEditArgs/) with the following properties:
+The event provides an argument of type [CellEditArgs](../api/gantt/cellEditArgs) with the following properties:
 
 | **Property**       | **Type**         | **Description**                          |
 |--------------------|------------------|------------------------------------------|
@@ -2290,7 +2290,7 @@ function cellEdit(args: CellEditArgs) {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -2404,8 +2404,8 @@ function cellEdit(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -2428,9 +2428,9 @@ function cellEdit(args) {
 
 ## cellSelected
 
-The [cellSelected](../api/gantt/#cellselected) event is triggered after a cell in the Gantt component is selected. This event provides access to the selected cell’s context and enables interaction logic based on cell-level selection. This event is commonly used to apply conditional styling, display contextual information, or trigger logic based on the selected task or field.
+The [cellSelected](../api/gantt#cellselected) event is triggered after a cell in the Gantt component is selected. This event provides access to the selected cell’s context and enables interaction logic based on cell-level selection. This event is commonly used to apply conditional styling, display contextual information, or trigger logic based on the selected task or field.
 
-The event provides an argument of type [CellSelectEventArgs](../api/grid/cellSelectEventArgs/) with the following properties:
+The event provides an argument of type [CellSelectEventArgs](../api/grid/cellSelectEventArgs) with the following properties:
 
 | **Property**             | **Type**           | **Description**                              |
 |----------------------------|------------------|----------------------------------------------|
@@ -2537,7 +2537,7 @@ function cellSelected(args: CellSelectEventArgs) {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -2645,8 +2645,8 @@ function cellSelected(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -2669,9 +2669,9 @@ function cellSelected(args) {
 
 ## cellSelecting
 
-The [cellSelecting](../api/gantt/#cellselecting) event is triggered before a cell is selected in the Gantt Chart component. It enables logic to control selection behavior based on cell context, such as preventing selection under specific conditions or customizing appearance dynamically.
+The [cellSelecting](../api/gantt#cellselecting) event is triggered before a cell is selected in the Gantt Chart component. It enables logic to control selection behavior based on cell context, such as preventing selection under specific conditions or customizing appearance dynamically.
 
-The event provides an argument of type [CellSelectingEventArgs](../api/gantt/cellSelectingEventArgs/)  with the following properties:
+The event provides an argument of type [CellSelectingEventArgs](../api/gantt/cellSelectingEventArgs)  with the following properties:
 
 | **Property**             | **Type**       | **Description**                              |
 |--------------------------|------------------|----------------------------------------------|
@@ -2781,7 +2781,7 @@ function cellSelecting(args: CellSelectEventArgs) {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -2893,8 +2893,8 @@ function cellSelecting(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -2917,9 +2917,9 @@ function cellSelecting(args) {
 
 ## columnDrag
 
-The [columnDrag](../api/gantt/#columndrag) event is triggered while a column header is being dragged during reordering. It provides contextual details about the drag operation and enables customization of the column's behavior during the process, such as restricting movement, applying visual styles, or preparing layout adjustments based on the interaction.
+The [columnDrag](../api/gantt#columndrag) event is triggered while a column header is being dragged during reordering. It provides contextual details about the drag operation and enables customization of the column's behavior during the process, such as restricting movement, applying visual styles, or preparing layout adjustments based on the interaction.
 
-The event provides an argument of type [ColumnDragEventArgs](../api/grid/columnDragEventArgs/) with the following properties:
+The event provides an argument of type [ColumnDragEventArgs](../api/grid/columnDragEventArgs) with the following properties:
 
 | **Property**     | **Type**     | **Description**                              |
 |--------------------|----------------|----------------------------------------------|
@@ -3020,7 +3020,7 @@ function columnDrag(args: ColumnDragEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -3127,8 +3127,8 @@ function columnDrag(args){
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -3151,9 +3151,9 @@ function columnDrag(args){
 
 ## columnDragStart
 
-The [columnDragStart](../api/gantt/#columndragstart) event is triggered when a column header drag operation begins in the Gantt component. This event provides access to the initial drag context and enables customization or restriction of the drag behavior.
+The [columnDragStart](../api/gantt#columndragstart) event is triggered when a column header drag operation begins in the Gantt component. This event provides access to the initial drag context and enables customization or restriction of the drag behavior.
 
-The event provides an argument of type [ColumnDragEventArgs](../api/grid/columnDragEventArgs/) with the following properties:
+The event provides an argument of type [ColumnDragEventArgs](../api/grid/columnDragEventArgs) with the following properties:
 
 | **Property**       | **Type**         | **Description**                            |
 |--------------------|----------------|----------------------------------------------|
@@ -3254,7 +3254,7 @@ function columnDragStart(args: ColumnDragEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -3361,8 +3361,8 @@ function columnDragStart(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -3386,9 +3386,9 @@ function columnDragStart(args) {
 
 ## columnDrop
 
-The [columnDrop](../api/gantt/#columndrop) is triggered when a column header is dropped after a drag operation in the Gantt component.  It provides drop context and supports post-reorder logic such as validation or UI updates.
+The [columnDrop](../api/gantt#columndrop) is triggered when a column header is dropped after a drag operation in the Gantt component.  It provides drop context and supports post-reorder logic such as validation or UI updates.
 
-The event provides an argument of type [ColumnDragEventArgs](../api/grid/columnDragEventArgs/) with the following properties:
+The event provides an argument of type [ColumnDragEventArgs](../api/grid/columnDragEventArgs) with the following properties:
 
 | **Property**       | **Type**         | **Description**                             |
 |--------------------|----------------|-----------------------------------------------|
@@ -3489,7 +3489,7 @@ function columnDrop(args: ColumnDragEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -3596,8 +3596,8 @@ function columnDrop(args){
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -3620,9 +3620,9 @@ function columnDrop(args){
 
 ## columnMenuClick
 
-The [columnMenuClick](../api/gantt/#columnmenuclick) event is triggered when a column menu item is selected in the Gantt Chart. It provides access to the clicked item and its associated column, allowing you to customize menu behavior or execute additional logic.
+The [columnMenuClick](../api/gantt#columnmenuclick) event is triggered when a column menu item is selected in the Gantt Chart. It provides access to the clicked item and its associated column, allowing you to customize menu behavior or execute additional logic.
 
-The event provides an argument of type [ColumnMenuClickEventArgs](../api/grid/columnMenuClickEventArgs/) with the following properties:
+The event provides an argument of type [ColumnMenuClickEventArgs](../api/grid/columnMenuClickEventArgs) with the following properties:
 
 | **Property** | **Type**   | **Description**                          |
 |--------------|------------|------------------------------------------|
@@ -3725,7 +3725,7 @@ function columnMenuClick(args: ColumnMenuClickEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -3833,8 +3833,8 @@ function columnMenuClick(args){
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -3857,9 +3857,9 @@ function columnMenuClick(args){
 
 ## columnMenuOpen
 
-The [columnMenuOpen](../api/gantt/#columnmenuopen) event is triggered when the column menu is opened. This event provides access to the menu context and allows customization of its appearance, behavior, or available options.
+The [columnMenuOpen](../api/gantt#columnmenuopen) event is triggered when the column menu is opened. This event provides access to the menu context and allows customization of its appearance, behavior, or available options.
 
-The event provides an argument of type [ColumnMenuOpenEventArgs](../api/grid/columnMenuOpenEventArgs/) with the following properties:
+The event provides an argument of type [ColumnMenuOpenEventArgs](../api/grid/columnMenuOpenEventArgs) with the following properties:
 
 | **Property**       | **Type**           | **Description**                                 |
 |--------------------|--------------------|-------------------------------------------------|
@@ -3969,7 +3969,7 @@ function columnMenuOpen(args: ColumnMenuOpenEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -4079,8 +4079,8 @@ function columnMenuOpen(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -4103,9 +4103,9 @@ function columnMenuOpen(args) {
 
 ## contextMenuClick
 
-The [contextMenuClick](../api/gantt/#contextmenuclick) event is triggered when a context menu item is clicked within the Gantt component. This event provides access to the clicked item and the associated context, enabling customization of menu behavior or execution of additional logic.
+The [contextMenuClick](../api/gantt#contextmenuclick) event is triggered when a context menu item is clicked within the Gantt component. This event provides access to the clicked item and the associated context, enabling customization of menu behavior or execution of additional logic.
 
-The event provides an argument of type [ContextMenuClickEventArgs](../api/grid/contextMenuClickEventArgs/) with the following properties:
+The event provides an argument of type [ContextMenuClickEventArgs](../api/grid/contextMenuClickEventArgs) with the following properties:
 
 | **Property**   | **Type**         | **Description**                              |
 |----------------|------------------|----------------------------------------------|
@@ -4201,7 +4201,7 @@ function contextMenuClick(args: ContextMenuClickEventArgs) {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -4289,8 +4289,8 @@ function contextMenuClick(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -4313,9 +4313,9 @@ function contextMenuClick(args) {
 
 ## contextMenuOpen
 
-The [contextMenuOpen](../api/gantt/#contextmenuopen) event is triggered when the context menu is opened in the Gantt Chart.  This event allows customization of menu behavior or execution of additional logic based on the selected item and context.
+The [contextMenuOpen](../api/gantt#contextmenuopen) event is triggered when the context menu is opened in the Gantt Chart.  This event allows customization of menu behavior or execution of additional logic based on the selected item and context.
 
-The event provides an argument of type [ContextMenuOpenEventArgs](../api/gantt/contextMenuOpenEventArgs/) with the following properties:
+The event provides an argument of type [ContextMenuOpenEventArgs](../api/gantt/contextMenuOpenEventArgs) with the following properties:
 
 | **Property**       | **Type**         | **Description**                              |
 |--------------------|------------------|----------------------------------------------|
@@ -4412,7 +4412,7 @@ function contextMenuOpen(args: ContextMenuOpenEventArgs) {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -4499,8 +4499,8 @@ function contextMenuOpen(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -4523,7 +4523,7 @@ function contextMenuOpen(args) {
 
 ## created
 
-The [created](../api/gantt/#created) event is triggered after the Gantt component has been fully initialized and rendered. This event is useful for executing logic that depends on the component being completely loaded and ready for interaction.
+The [created](../api/gantt#created) event is triggered after the Gantt component has been fully initialized and rendered. This event is useful for executing logic that depends on the component being completely loaded and ready for interaction.
 
 {% if page.publishingplatform == "typescript" %}
 {% tabs %}
@@ -4597,7 +4597,7 @@ function created() {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -4685,8 +4685,8 @@ function created() {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -4709,7 +4709,7 @@ function created() {
 
 ## dataBound
 
-The [dataBound](../api/gantt/#databound) event is triggered after the Gantt component has successfully bound its data source and rendered the task data. This event is useful for executing logic that depends on the data being fully loaded and available in the UI.
+The [dataBound](../api/gantt#databound) event is triggered after the Gantt component has successfully bound its data source and rendered the task data. This event is useful for executing logic that depends on the data being fully loaded and available in the UI.
 
 {% if page.publishingplatform == "typescript" %}
 {% tabs %}
@@ -4777,7 +4777,7 @@ gantt.appendTo('#Gantt');
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -4858,8 +4858,8 @@ gantt.appendTo('#Gantt');
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -4882,7 +4882,7 @@ gantt.appendTo('#Gantt');
 
 ## destroyed
 
-The [destroyed](../api/gantt/#destroyed) event is triggered when the Gantt component is removed from the DOM using the `destroy` method. This event is useful for handling cleanup operations and releasing resources associated with the component instance.
+The [destroyed](../api/gantt#destroyed) event is triggered when the Gantt component is removed from the DOM using the `destroy` method. This event is useful for handling cleanup operations and releasing resources associated with the component instance.
 
 The event provides an argument of type `object` with the following properties:
 
@@ -4972,7 +4972,7 @@ function destroyed(args: object): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -5068,8 +5068,8 @@ function destroyed(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -5093,9 +5093,9 @@ function destroyed(args) {
 
 ## endEdit
 
-The [endEdit](../api/gantt/#endedit) event is triggered after a task is modified through cell editing. It enables post-edit actions such as validation, logging, or syncing changes with external systems.
+The [endEdit](../api/gantt#endedit) event is triggered after a task is modified through cell editing. It enables post-edit actions such as validation, logging, or syncing changes with external systems.
 
-The event provides an argument of type [ITaskbarEditedEventArgs](../api/gantt/iTaskbarEditedEventArgs/) with the following properties:
+The event provides an argument of type [ITaskbarEditedEventArgs](../api/gantt/iTaskbarEditedEventArgs) with the following properties:
 
 | **Property**         | **Type**       | **Description**                                      |
 |----------------------|----------------|------------------------------------------------------|
@@ -5211,7 +5211,7 @@ function endEditHandler(args: ITaskbarEditedEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -5324,8 +5324,8 @@ function endEditHandler(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -5348,9 +5348,9 @@ function endEditHandler(args) {
 
 ## excelExportComplete
 
-The [excelExportComplete](../api/gantt/#excelexportcomplete) event is triggered after the Gantt component has completed exporting data to an Excel file. This event enables post-export actions such as displaying notifications, logging activity, or applying additional formatting to the exported content.
+The [excelExportComplete](../api/gantt#excelexportcomplete) event is triggered after the Gantt component has completed exporting data to an Excel file. This event enables post-export actions such as displaying notifications, logging activity, or applying additional formatting to the exported content.
 
-The event provides an argument of type [ExcelExportCompleteArgs](../api/grid/excelExportCompleteArgs/) with the following property:
+The event provides an argument of type [ExcelExportCompleteArgs](../api/grid/excelExportCompleteArgs) with the following property:
 
 | **Property**         | **Type**       | **Description**                                      |
 |----------------------|----------------|------------------------------------------------------|  
@@ -5463,7 +5463,7 @@ function excelExportComplete(args: ExcelExportCompleteArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -5582,8 +5582,8 @@ function excelExportComplete(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -5606,9 +5606,9 @@ function excelExportComplete(args) {
 
 ## excelHeaderQueryCellInfo
 
-The [excelHeaderQueryCellInfo](../api/gantt/#excelheaderquerycellinfo) event is triggered during the Excel export process when customizing header cells in the exported file. It allows modification of header text, styles, and other properties before they are written to the Excel sheet.
+The [excelHeaderQueryCellInfo](../api/gantt#excelheaderquerycellinfo) event is triggered during the Excel export process when customizing header cells in the exported file. It allows modification of header text, styles, and other properties before they are written to the Excel sheet.
 
-The event provides an argument of type [ExcelHeaderQueryCellInfoEventArgs](../api/grid/excelHeaderQueryCellInfoEventArgs/) with the following properties:
+The event provides an argument of type [ExcelHeaderQueryCellInfoEventArgs](../api/grid/excelHeaderQueryCellInfoEventArgs) with the following properties:
 
 | **Property**   | **Type**         | **Description**                                        |
 |----------------|------------------|--------------------------------------------------------|
@@ -5725,7 +5725,7 @@ function excelHeaderQueryCellInfo(args: ExcelHeaderQueryCellInfoEventArgs): void
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -5844,8 +5844,8 @@ function excelHeaderQueryCellInfo(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -5868,9 +5868,9 @@ function excelHeaderQueryCellInfo(args) {
 
 ## excelQueryCellInfo
 
-The [excelQueryCellInfo](../api/gantt/#excelquerycellinfo) event is triggered during the Excel export process when customizing individual data cells in the exported file. It allows modification of cell values, styles, and formatting before they are written to the Excel sheet.
+The [excelQueryCellInfo](../api/gantt#excelquerycellinfo) event is triggered during the Excel export process when customizing individual data cells in the exported file. It allows modification of cell values, styles, and formatting before they are written to the Excel sheet.
 
-The event provides an argument of type [ExcelQueryCellInfoEventArgs](../api/grid/excelQueryCellInfoEventArgs/) with the following properties:
+The event provides an argument of type [ExcelQueryCellInfoEventArgs](../api/grid/excelQueryCellInfoEventArgs) with the following properties:
 
 | **Property** | **Type**         | **Description**                                        |
 |----------------|------------------|------------------------------------------------------|
@@ -5990,7 +5990,7 @@ function excelQueryCellInfo(args: ExcelQueryCellInfoEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -6109,8 +6109,8 @@ function excelQueryCellInfo(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -6133,9 +6133,9 @@ function excelQueryCellInfo(args) {
 
 ## expanded
 
-The [expanded](../api/gantt/#expanded) event is triggered after a row is expanded in the Gantt Chart. It enables actions that respond to row expansion, such as loading additional data, updating UI elements, or tracking user interaction.
+The [expanded](../api/gantt#expanded) event is triggered after a row is expanded in the Gantt Chart. It enables actions that respond to row expansion, such as loading additional data, updating UI elements, or tracking user interaction.
 
-The event provides an argument of type [ICollapsingEventArgs](../api/gantt/iCollapsingEventArgs/) with the following properties:
+The event provides an argument of type [ICollapsingEventArgs](../api/gantt/iCollapsingEventArgs) with the following properties:
 
 | **Property** | **Type**         | **Description**                                      |
 |----------------|------------------|------------------------------------------------------|
@@ -6232,7 +6232,7 @@ function onRowExpanded(args: ICollapsingEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -6335,8 +6335,8 @@ function onRowExpanded(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -6360,9 +6360,9 @@ function onRowExpanded(args) {
 
 ## expanding
 
-The [expanding](../api/gantt/#expanding) event is triggered before a row is expanded in the Gantt Chart. It enables interception of the expansion process and allows cancellation based on custom logic or conditions.
+The [expanding](../api/gantt#expanding) event is triggered before a row is expanded in the Gantt Chart. It enables interception of the expansion process and allows cancellation based on custom logic or conditions.
 
-The event provides an argument of type [ICollapsingEventArgs](../api/gantt/iCollapsingEventArgs/) with the following properties:
+The event provides an argument of type [ICollapsingEventArgs](../api/gantt/iCollapsingEventArgs) with the following properties:
 
 | **Property** | **Type**         | **Description**                                      |
 |----------------|------------------|----------------------------------------------------|
@@ -6476,7 +6476,7 @@ function onRowExpanding(args: ICollapsingEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -6584,8 +6584,8 @@ function onRowExpanding(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -6609,9 +6609,9 @@ function onRowExpanding(args) {
 
 ## headerCellInfo
 
-The [headerCellInfo](../api/gantt/#headercellinfo) event is triggered during the rendering of column header cells in the Gantt Chart. It allows customization of header cell appearance and content before they are displayed in the UI.
+The [headerCellInfo](../api/gantt#headercellinfo) event is triggered during the rendering of column header cells in the Gantt Chart. It allows customization of header cell appearance and content before they are displayed in the UI.
 
-The event provides an object of type [HeaderCellInfoEventArgs](../api/grid/headerCellInfoEventArgs/) with the following properties:
+The event provides an object of type [HeaderCellInfoEventArgs](../api/grid/headerCellInfoEventArgs) with the following properties:
 
 | **Property**   | **Type**         | **Description**                                      |
 |----------------|------------------|------------------------------------------------------|
@@ -6714,7 +6714,7 @@ function headerCellInfo(args: HeaderCellInfoEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -6822,8 +6822,8 @@ function headerCellInfo(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -6846,7 +6846,7 @@ function headerCellInfo(args) {
 
 ## load
 
-The [load](../api/gantt/#load) event is triggered before the Gantt Chart component is rendered. It allows execution of pre-rendering logic such as modifying initial settings, injecting dynamic configurations, or preparing data before the component is displayed.
+The [load](../api/gantt#load) event is triggered before the Gantt Chart component is rendered. It allows execution of pre-rendering logic such as modifying initial settings, injecting dynamic configurations, or preparing data before the component is displayed.
 
 {% if page.publishingplatform == "typescript" %}
 {% tabs %}
@@ -6957,7 +6957,7 @@ function load(): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -7080,8 +7080,8 @@ function load() {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -7104,9 +7104,9 @@ function load() {
 
 ## onMouseMove
 
-The [onMouseMove](../api/gantt/#onmousemove) event is triggered when the mouse moves within the Gantt Chart area. It enables tracking of cursor movement and interaction with elements under the pointer.
+The [onMouseMove](../api/gantt#onmousemove) event is triggered when the mouse moves within the Gantt Chart area. It enables tracking of cursor movement and interaction with elements under the pointer.
 
-The event provides an argument of type [IMouseMoveEventArgs](../api/gantt/iMouseMoveEventArgs/) with the following properties:
+The event provides an argument of type [IMouseMoveEventArgs](../api/gantt/iMouseMoveEventArgs) with the following properties:
 
 | **Property**  | **Type**                 |**Description**                                       |
 |-----------------|-----------------------|---------------------------------------------------------|
@@ -7216,7 +7216,7 @@ function onMouseMove(args: IMouseMoveEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -7329,8 +7329,8 @@ function onMouseMove(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -7353,9 +7353,9 @@ function onMouseMove(args) {
 
 ## onTaskbarClick
 
-The [onTaskbarClick](../api/gantt/#ontaskbarclick) event is triggered when a taskbar element is clicked in the Gantt Chart. It supports custom actions based on the selected task, such as displaying task details, navigating to related views, or tracking interactions.
+The [onTaskbarClick](../api/gantt#ontaskbarclick) event is triggered when a taskbar element is clicked in the Gantt Chart. It supports custom actions based on the selected task, such as displaying task details, navigating to related views, or tracking interactions.
 
-The event provides an argument of type [ITaskbarClickEventArgs](../api/gantt/iTaskbarClickEventArgs/) with the following properties:
+The event provides an argument of type [ITaskbarClickEventArgs](../api/gantt/iTaskbarClickEventArgs) with the following properties:
 
 | **Property**     | **Type**      | **Description**                                 |
 |------------------|---------------|-------------------------------------------------|
@@ -7478,7 +7478,7 @@ function onTaskbarClick(args: ITaskbarClickEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -7595,8 +7595,8 @@ function onTaskbarClick(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -7630,9 +7630,9 @@ function onTaskbarClick(args) {
 
 ## pdfColumnHeaderQueryCellInfo
 
-The [pdfColumnHeaderQueryCellInfo](../api/gantt/#pdfcolumnheaderquerycellinfo) event is triggered before each column header cell is exported to a PDF document in the Gantt Chart. It enables customization of header cell content, style, and formatting during the export process.
+The [pdfColumnHeaderQueryCellInfo](../api/gantt#pdfcolumnheaderquerycellinfo) event is triggered before each column header cell is exported to a PDF document in the Gantt Chart. It enables customization of header cell content, style, and formatting during the export process.
 
-The event provides an argument of type [PdfColumnHeaderQueryCellInfoEventArgs](../api/gantt/pdfColumnHeaderQueryCellInfoEventArgs/)  with the following properties:
+The event provides an argument of type [PdfColumnHeaderQueryCellInfoEventArgs](../api/gantt/pdfColumnHeaderQueryCellInfoEventArgs)  with the following properties:
 
 | **Property**   | **Type**               | **Description**                                 |
 |------------------|------------------------|------------------------------------------------ |
@@ -7754,7 +7754,7 @@ function pdfColumnHeaderQueryCellInfo(args: PdfHeaderQueryCellInfoEventArgs): vo
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -7878,8 +7878,8 @@ function pdfColumnHeaderQueryCellInfo(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -7903,7 +7903,7 @@ function pdfColumnHeaderQueryCellInfo(args) {
 
 ## pdfExportComplete
 
-The [pdfExportComplete](../api/gantt/#pdfexportcomplete) event is triggered after the Gantt Chart completes the process of exporting data to a PDF document. It enables post-export operations such as handling the generated file, displaying notifications, or logging export activity.
+The [pdfExportComplete](../api/gantt#pdfexportcomplete) event is triggered after the Gantt Chart completes the process of exporting data to a PDF document. It enables post-export operations such as handling the generated file, displaying notifications, or logging export activity.
 
 The event provides an `object` with the following property:
 
@@ -8019,7 +8019,7 @@ function pdfExportComplete(args: object): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -8142,8 +8142,8 @@ function pdfColumnHeaderQueryCellInfo(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -8167,9 +8167,9 @@ function pdfColumnHeaderQueryCellInfo(args) {
 
 ## pdfQueryCellInfo
 
-The [pdfQueryCellInfo](../api/gantt/#pdfquerycellinfo) event is triggered for each cell during the PDF export process in the Gantt Chart. It allows customization of individual cell content, style, and formatting in the exported PDF document.
+The [pdfQueryCellInfo](../api/gantt#pdfquerycellinfo) event is triggered for each cell during the PDF export process in the Gantt Chart. It allows customization of individual cell content, style, and formatting in the exported PDF document.
 
-The event provides an argument of type [PdfExportCompleteArgs](../api/gantt/pdfQueryCellInfoEventArgs/) with the following properties:
+The event provides an argument of type [PdfExportCompleteArgs](../api/gantt/pdfQueryCellInfoEventArgs) with the following properties:
 
 |  **Property** | **Type**           | **Description**                                     |
 |---------------|--------------------|-----------------------------------------------------|
@@ -8293,7 +8293,7 @@ function pdfQueryCellInfo(args: PdfQueryCellInfoEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -8417,8 +8417,8 @@ function pdfQueryCellInfo(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -8441,9 +8441,9 @@ function pdfQueryCellInfo(args) {
 
 ## pdfQueryTaskbarInfo
 
-The [pdfQueryTaskbarInfo](../api/gantt/#pdfquerytaskbarinfo) event is triggered for each taskbar during the PDF export process in the Gantt Chart. This event allows customization of the taskbar appearance and content in the exported PDF document.
+The [pdfQueryTaskbarInfo](../api/gantt#pdfquerytaskbarinfo) event is triggered for each taskbar during the PDF export process in the Gantt Chart. This event allows customization of the taskbar appearance and content in the exported PDF document.
 
-The event provides an argument of type [PdfQueryTaskbarInfoEventArgs](../api/gantt/pdfQueryTaskbarInfoEventArgs/) with the following properties:
+The event provides an argument of type [PdfQueryTaskbarInfoEventArgs](../api/gantt/pdfQueryTaskbarInfoEventArgs) with the following properties:
 
 | **Property**     | **Type**             | **Description**                                            |
 |------------------  | ---------------------|----------------------------------------------------------|
@@ -8563,7 +8563,7 @@ function toolbarClick(args: ClickEventArgs) {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -8684,8 +8684,8 @@ function toolbarClick(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -8708,9 +8708,9 @@ function toolbarClick(args) {
 
 ## pdfQueryTimelineCellInfo
 
-The [pdfQueryTimelineCellInfo](../api/gantt/#pdfquerytimelinecellinfo) event is triggered for each timeline cell during the PDF export process in the Gantt chart. It allows customization of the appearance, content, and style of timeline cells in the exported PDF document.
+The [pdfQueryTimelineCellInfo](../api/gantt#pdfquerytimelinecellinfo) event is triggered for each timeline cell during the PDF export process in the Gantt chart. It allows customization of the appearance, content, and style of timeline cells in the exported PDF document.
 
-The event provides an argument of type [pdfQueryTimelineCellInfoEventArgs](../api/gantt/pdfQueryTimelineCellInfoEventArgs/) with the following properties:
+The event provides an argument of type [pdfQueryTimelineCellInfoEventArgs](../api/gantt/pdfQueryTimelineCellInfoEventArgs) with the following properties:
 
 | **Property**   | **Type**            | **Description**                                      |
 |----------------|---------------------|------------------------------------------------------|
@@ -8826,7 +8826,7 @@ function pdfQueryTimelineCellInfo(args: PdfQueryTaskbarInfoEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -8947,8 +8947,8 @@ function pdfQueryTimelineCellInfo(args){
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -8971,9 +8971,9 @@ function pdfQueryTimelineCellInfo(args){
 
 ## queryCellInfo
 
-The [queryCellInfo](../api/gantt/#querytaskbarinfo) event is triggered during the rendering of each cell in the Gantt Chart. It allows customization of cell content, appearance, and style before they are displayed.
+The [queryCellInfo](../api/gantt#querytaskbarinfo) event is triggered during the rendering of each cell in the Gantt Chart. It allows customization of cell content, appearance, and style before they are displayed.
 
-The event provides an argument of type  [QueryCellInfoEventArgs](../api/gantt/querycellinfoeventargs/) with the following properties:
+The event provides an argument of type  [QueryCellInfoEventArgs](../api/gantt/querycellinfoeventargs) with the following properties:
 
 | **Property**       | **Type**         | **Description**                                   |
 |--------------------|------------------|---------------------------------------------------|
@@ -9111,7 +9111,7 @@ function queryCellInfo(args: QueryCellInfoEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -9239,8 +9239,8 @@ function queryCellInfo(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -9263,9 +9263,9 @@ function queryCellInfo(args) {
 
 ## queryTaskbarInfo
 
-The [queryTaskbarInfo](../api/gantt/#querytaskbarinfo) event is triggered while rendering each taskbar in the Gantt Chart. It allows customization of taskbar appearance, content, and behavior before they are displayed in the UI.
+The [queryTaskbarInfo](../api/gantt#querytaskbarinfo) event is triggered while rendering each taskbar in the Gantt Chart. It allows customization of taskbar appearance, content, and behavior before they are displayed in the UI.
 
-The event provides an argument of type [IQueryTaskbarInfoEventArgs](../api/gantt/iquerytaskbarinfoeventargs/) with the following properties:
+The event provides an argument of type [IQueryTaskbarInfoEventArgs](../api/gantt/iquerytaskbarinfoeventargs) with the following properties:
 
 | **Property**            | **Type**        | **Description**                                      |
 |-------------------------|-----------------|------------------------------------------------------|
@@ -9397,7 +9397,7 @@ function queryTaskbarInfo(args: IQueryTaskbarInfoEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -9526,8 +9526,8 @@ function queryTaskbarInfo(args){
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -9551,9 +9551,9 @@ function queryTaskbarInfo(args){
 
 ## recordDoubleClick
 
-The [recordDoubleClick](../api/gantt/#recorddoubleclick) event is triggered when a row in the Gantt Chart is double-clicked. It enables custom actions based on the selected task, such as opening detailed views, initiating inline editing, or displaying contextual information.
+The [recordDoubleClick](../api/gantt#recorddoubleclick) event is triggered when a row in the Gantt Chart is double-clicked. It enables custom actions based on the selected task, such as opening detailed views, initiating inline editing, or displaying contextual information.
 
-The event provides an argument of type [RecordDoubleClickEventArgs](../api/gantt/recorddoubleclickeventargs/) with the following properties:
+The event provides an argument of type [RecordDoubleClickEventArgs](../api/gantt/recorddoubleclickeventargs) with the following properties:
 
 | **Property**         | **Type**         | **Description**                                       |
 |----------------------|------------------|-------------------------------------------------------|
@@ -9680,7 +9680,7 @@ function recordDoubleClick(args: RecordDoubleClickEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -9806,8 +9806,8 @@ function recordDoubleClick(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -9831,9 +9831,9 @@ function recordDoubleClick(args) {
 
 ## resizeStart
 
-The [resizeStart](../api/gantt/#resizestart) event is triggered when a column resize action begins in the Gantt Chart. It allows interception of the resize process to apply validations or restrict resizing for specific columns.
+The [resizeStart](../api/gantt#resizestart) event is triggered when a column resize action begins in the Gantt Chart. It allows interception of the resize process to apply validations or restrict resizing for specific columns.
 
-The event provides an argument of type [ResizeArgs](../api/grid/resizeArgs/) with the following properties:
+The event provides an argument of type [ResizeArgs](../api/grid/resizeArgs) with the following properties:
 
 | **Property** | **Type**    | **Description**                                  |
 |--------------|-------------|--------------------------------------------------|
@@ -9952,7 +9952,7 @@ function resizeStart(args: ResizeArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -10076,8 +10076,8 @@ function resizeStart(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -10100,9 +10100,9 @@ function resizeStart(args) {
 
 ## resizeStop
 
-The [resizeStop](../api/gantt/#resizestop) event is triggered when a column resize operation is completed in the Gantt Chart. It enables layout updates, persistence of dimensions, or UI adjustments.
+The [resizeStop](../api/gantt#resizestop) event is triggered when a column resize operation is completed in the Gantt Chart. It enables layout updates, persistence of dimensions, or UI adjustments.
 
-The event provides an argument of type [ResizeArgs](../api/grid/resizeArgs/) with the following properties:
+The event provides an argument of type [ResizeArgs](../api/grid/resizeArgs) with the following properties:
 
 | **Property** | **Type**    | **Description**                                  |
 |--------------|-------------|--------------------------------------------------|
@@ -10213,7 +10213,7 @@ function resizeStop(args: ResizeArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -10329,8 +10329,8 @@ function resizeStop(args){
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -10353,9 +10353,9 @@ function resizeStop(args){
 
 ## resizing
 
-The [resizing](../api/gantt/#resizing) event is triggered continuously while a column is being resized in the Gantt Chart. It provides access to the current column width and supports dynamic updates to layout, styling, or constraints while the resize operation is in progress. This event is commonly used to enforce minimum or maximum widths, preview layout changes, or display contextual indicators during interaction.
+The [resizing](../api/gantt#resizing) event is triggered continuously while a column is being resized in the Gantt Chart. It provides access to the current column width and supports dynamic updates to layout, styling, or constraints while the resize operation is in progress. This event is commonly used to enforce minimum or maximum widths, preview layout changes, or display contextual indicators during interaction.
 
-The event provides an argument of type [ResizeArgs](../api/grid/resizeArgs/) with the following properties:
+The event provides an argument of type [ResizeArgs](../api/grid/resizeArgs) with the following properties:
 
 | **Property** | **Type**    | **Description**                                  |
 |--------------|-------------|--------------------------------------------------|
@@ -10465,7 +10465,7 @@ function resizing(args: ResizeArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -10581,8 +10581,8 @@ function resizing(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -10605,9 +10605,9 @@ function resizing(args) {
 
 ## rowDataBound
 
-The [rowDataBound](../api/gantt/#rowdatabound) event is triggered each time a row is bound to data in the Gantt chart. It enables customization of row appearance and content based on the associated task data. This event supports scenarios such as applying conditional formatting, injecting tooltips or icons, and modifying row structure to reflect task-specific context or status.
+The [rowDataBound](../api/gantt#rowdatabound) event is triggered each time a row is bound to data in the Gantt chart. It enables customization of row appearance and content based on the associated task data. This event supports scenarios such as applying conditional formatting, injecting tooltips or icons, and modifying row structure to reflect task-specific context or status.
 
-The event provides an argument of type [RowDataBoundEventArgs](../api/gantt/rowDataBoundEventArgs/) with the following properties:
+The event provides an argument of type [RowDataBoundEventArgs](../api/gantt/rowDataBoundEventArgs) with the following properties:
 
 | **Property**     | **Type**         | **Description**                                               |
 |------------------|------------------|---------------------------------------------------------------|
@@ -10718,7 +10718,7 @@ function rowDataBound(args: RowDataBoundEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -10836,8 +10836,8 @@ function rowDataBound(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -10859,9 +10859,9 @@ function rowDataBound(args) {
 
 ## rowDeselected
 
-The [rowDeselected](../api/gantt/#rowdeselected) event is triggered after a row is deselected in the Gantt Chart. It enables logic execution tied to selection changes, such as removing visual highlights, updating contextual UI elements, or tracking interaction patterns. This event supports scenarios involving both user-driven and programmatic deselection, ensuring consistent behavior across selection workflows.
+The [rowDeselected](../api/gantt#rowdeselected) event is triggered after a row is deselected in the Gantt Chart. It enables logic execution tied to selection changes, such as removing visual highlights, updating contextual UI elements, or tracking interaction patterns. This event supports scenarios involving both user-driven and programmatic deselection, ensuring consistent behavior across selection workflows.
 
-The event provides an argument of type [RowDeselectEventArgs](../api/gantt/rowDeselectEventArgs/) with the following properties:
+The event provides an argument of type [RowDeselectEventArgs](../api/gantt/rowDeselectEventArgs) with the following properties:
 
 | **Property**              | **Type**                  | **Description**                              |
 |---------------------------|---------------------------|----------------------------------------------|
@@ -10974,7 +10974,7 @@ function rowDeselected(args: RowDeselectEventArgs) {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -11089,8 +11089,8 @@ function rowDeselected(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -11113,9 +11113,9 @@ function rowDeselected(args) {
 
 ## rowDeselecting
 
-The [rowDeselecting](../api/gantt/#rowdeselecting) event is triggered before a row is deselected in the Gantt Chart. It enables conditional control over the deselection process, allowing validations, confirmation prompts, or logic to prevent deselection based on task state or application rules. This event supports consistent behavior across both interactive and programmatic selection workflows.
+The [rowDeselecting](../api/gantt#rowdeselecting) event is triggered before a row is deselected in the Gantt Chart. It enables conditional control over the deselection process, allowing validations, confirmation prompts, or logic to prevent deselection based on task state or application rules. This event supports consistent behavior across both interactive and programmatic selection workflows.
 
-The event provides an argument of type [RowDeselectEventArgs](../api/gantt/rowDeselectEventArgs/) with the following properties:
+The event provides an argument of type [RowDeselectEventArgs](../api/gantt/rowDeselectEventArgs) with the following properties:
 
 | **Property**               | **Type**                | **Description** |
 |----------------------------|-------------------------|------------------------------------------|
@@ -11227,7 +11227,7 @@ function rowDeselecting(args: RowDeselectEventArgs) {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -11341,8 +11341,8 @@ function rowDeselecting(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -11365,9 +11365,9 @@ function rowDeselecting(args) {
 
 ## rowDrag
 
-The [rowDrag](../api/gantt/#rowdrag) event is triggered while a row is being dragged in the Gantt Chart. It allows customization during drag operations, such as showing visual indicators, applying drag constraints, or tracking drag operations.
+The [rowDrag](../api/gantt#rowdrag) event is triggered while a row is being dragged in the Gantt Chart. It allows customization during drag operations, such as showing visual indicators, applying drag constraints, or tracking drag operations.
 
-The event provides an argument of type [RowDragEventArgs](../api/gantt/rowDropEventArgs/) with the following properties:
+The event provides an argument of type [RowDragEventArgs](../api/gantt/rowDropEventArgs) with the following properties:
 
 | **Property**     | **Type**        | **Description**                                      |
 |------------------|-----------------|------------------------------------------------------|
@@ -11487,7 +11487,7 @@ function rowDrag(args: RowDragEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -11609,8 +11609,8 @@ function rowDrag(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -11633,9 +11633,9 @@ function rowDrag(args) {
 
 ## rowDragStart
 
-The [rowDragStart](../api/gantt/#rowdragstart) event is triggered when a row drag operation begins in the Gantt Chart. It allows handling of drag initiation, such as applying movement restrictions, customizing visuals, or initiating tracking mechanisms.
+The [rowDragStart](../api/gantt#rowdragstart) event is triggered when a row drag operation begins in the Gantt Chart. It allows handling of drag initiation, such as applying movement restrictions, customizing visuals, or initiating tracking mechanisms.
 
-The event provides an argument of type [RowDragEventArgs](../api/gantt/rowDropEventArgs/) with the following properties:
+The event provides an argument of type [RowDragEventArgs](../api/gantt/rowDropEventArgs) with the following properties:
 
 | **Property**     | **Type**        | **Description**                            |
 |------------------|-----------------|--------------------------------------------|
@@ -11751,7 +11751,7 @@ function rowDragStart(args: RowDragEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -11872,8 +11872,8 @@ function rowDragStart(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -11896,9 +11896,9 @@ function rowDragStart(args) {
 
 ## rowDragStartHelper
 
-The [rowDragStartHelper](../api/gantt/#rowdragstarthelper) event is triggered before a row drag operation begins in the Gantt Chart. It allows handling of drag eligibility checks, such as validating conditions, modifying behavior, or canceling the drag action.
+The [rowDragStartHelper](../api/gantt#rowdragstarthelper) event is triggered before a row drag operation begins in the Gantt Chart. It allows handling of drag eligibility checks, such as validating conditions, modifying behavior, or canceling the drag action.
 
-The event provides an argument of type [RowDragEventArgs](../api/gantt/rowDropEventArgs/) with the following properties:
+The event provides an argument of type [RowDragEventArgs](../api/gantt/rowDropEventArgs) with the following properties:
 
 | **Property**       | **Type**    | **Description**                                  |
 |------------------|---------------|--------------------------------------------------|
@@ -12028,7 +12028,7 @@ function rowDragStartHelper(args: RowDragEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -12147,8 +12147,8 @@ function rowDragStartHelper(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -12171,9 +12171,9 @@ function rowDragStartHelper(args) {
 
 ## rowDrop
 
-The [rowDrop](../api/gantt/#rowdrop) event is triggered after a row is dropped into a new position in the Gantt Chart. It allows handling of row reordering, such as updating data, validating hierarchy changes, or tracking user actions.
+The [rowDrop](../api/gantt#rowdrop) event is triggered after a row is dropped into a new position in the Gantt Chart. It allows handling of row reordering, such as updating data, validating hierarchy changes, or tracking user actions.
 
-The event provides an argument of type [RowDragEventArgs](../api/gantt/rowDropEventArgs/) with the following properties:
+The event provides an argument of type [RowDragEventArgs](../api/gantt/rowDropEventArgs) with the following properties:
 
 | **Property**      | **Type**       | **Description**                                     |
 |-------------------|------------------|---------------------------------------------------|
@@ -12304,7 +12304,7 @@ function rowDrop(args: RowDropEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -12424,8 +12424,8 @@ function rowDrop(args){
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -12448,9 +12448,9 @@ function rowDrop(args){
 
 ## rowSelected
 
-The [rowSelected](../api/gantt/#rowselected) event is triggered after a row is selected in the Gantt Chart. It enables actions that respond to selection changes, such as styling the row, displaying related details, or tracking user interaction.
+The [rowSelected](../api/gantt#rowselected) event is triggered after a row is selected in the Gantt Chart. It enables actions that respond to selection changes, such as styling the row, displaying related details, or tracking user interaction.
 
-The event provides an argument of type [RowSelectEventArgs](../api/gantt/rowselecteventargs/) with the following properties:
+The event provides an argument of type [RowSelectEventArgs](../api/gantt/rowselecteventargs) with the following properties:
 
 | **Property**              | **Type**                  |  **Description**                            |
 |---------------------------|---------------------------|---------------------------------------------|
@@ -12574,7 +12574,7 @@ function rowSelected(args: RowSelectEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -12698,8 +12698,8 @@ function rowSelected(args){
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -12722,9 +12722,9 @@ function rowSelected(args){
 
 ## rowSelecting
 
-The [rowSelecting](../api/gantt/#rowselecting) event is triggered before a row is selected in the Gantt Chart. It enables actions that intercept the selection process, such as validating conditions, prompting confirmation, or canceling the selection.
+The [rowSelecting](../api/gantt#rowselecting) event is triggered before a row is selected in the Gantt Chart. It enables actions that intercept the selection process, such as validating conditions, prompting confirmation, or canceling the selection.
 
-The event provides an argument of type [RowSelectingEventArgs](../api/gantt/rowselecteventargs/) with the following properties:
+The event provides an argument of type [RowSelectingEventArgs](../api/gantt/rowselecteventargs) with the following properties:
 
 | **Property**              | **Type**                  | **Description**                              |
 |---------------------------|---------------------------|----------------------------------------------|
@@ -12860,7 +12860,7 @@ function rowSelecting(args: RowSelectingEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -12981,8 +12981,8 @@ function rowSelecting(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -13005,9 +13005,9 @@ function rowSelecting(args) {
 
 ## splitterResizeStart
 
-The [splitterResizeStart](../api/gantt/#splitterresizestart) event is triggered when the splitter bar begins resizing in the Gantt Chart layout.It enables actions that respond to resize initiation, such as applying layout constraints, customizing visuals, or tracking user interaction.
+The [splitterResizeStart](../api/gantt#splitterresizestart) event is triggered when the splitter bar begins resizing in the Gantt Chart layout.It enables actions that respond to resize initiation, such as applying layout constraints, customizing visuals, or tracking user interaction.
 
-The event provides an argument of type [ResizeArgs](../api/grid/resizeArgs/) with the following properties:
+The event provides an argument of type [ResizeArgs](../api/grid/resizeArgs) with the following properties:
 
 | **Property**     | **Type**               | **Description**                          |
 |------------------|------------------------|------------------------------------------|
@@ -13119,7 +13119,7 @@ function splitterResizeStart(args: ResizeArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -13238,8 +13238,8 @@ function splitterResizeStart(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -13262,9 +13262,9 @@ function splitterResizeStart(args) {
 
 ## splitterResized
 
-The [splitterResized](../api/gantt/#splitterresized) event is triggered after the splitter bar has been resized in the Gantt Chart layout. It enables actions that respond to final layout changes, such as saving pane dimensions, updating related components, or tracking user interaction.
+The [splitterResized](../api/gantt#splitterresized) event is triggered after the splitter bar has been resized in the Gantt Chart layout. It enables actions that respond to final layout changes, such as saving pane dimensions, updating related components, or tracking user interaction.
 
-The event provides an argument of type [ISplitterResizedEventArgs](../api/gantt/isplitterresizedeventargs/) with the following properties:
+The event provides an argument of type [ISplitterResizedEventArgs](../api/gantt/isplitterresizedeventargs) with the following properties:
 
 | **Property**   | **Type**               | **Description**                              |
 |----------------|------------------------|----------------------------------------------|
@@ -13380,7 +13380,7 @@ function splitterResized(args: ISplitterResizedEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -13499,8 +13499,8 @@ function splitterResized(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -13523,7 +13523,7 @@ function splitterResized(args) {
 
 ## splitterResizing
 
-The [splitterResizing](../api/gantt/#splitterresizing) event is triggered continuously while the splitter bar is being dragged in the Gantt Chart layout. It enables responsive actions during resizing, such as enforcing layout constraints, updating visual elements, or tracking user interaction.
+The [splitterResizing](../api/gantt#splitterresizing) event is triggered continuously while the splitter bar is being dragged in the Gantt Chart layout. It enables responsive actions during resizing, such as enforcing layout constraints, updating visual elements, or tracking user interaction.
 
 The event provides an argument of type `ResizingEventArgs` with the following properties:
 
@@ -13637,7 +13637,7 @@ function splitterResizing(args: ResizingEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -13751,8 +13751,8 @@ function splitterResizing(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -13775,9 +13775,9 @@ function splitterResizing(args) {
 
 ## taskbarEdited
 
-The [taskbarEdited](../api/gantt/#taskbaredited) event is triggered after a taskbar is modified in the Gantt Chart. It enables actions that respond to task updates, such as saving changes, validating edits, or updating related components.
+The [taskbarEdited](../api/gantt#taskbaredited) event is triggered after a taskbar is modified in the Gantt Chart. It enables actions that respond to task updates, such as saving changes, validating edits, or updating related components.
 
-The event provides an argument of type [TaskbarEditedEventArgs](../api/gantt/itaskbareditedeventargs/) with the following properties:
+The event provides an argument of type [TaskbarEditedEventArgs](../api/gantt/itaskbareditedeventargs) with the following properties:
 
 | **Property**          | **Type**         | **Description**                              |
 |-----------------------|------------------|----------------------------------------------|
@@ -13918,7 +13918,7 @@ function taskbarEdited(args: ITaskbarEditedEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -14046,8 +14046,8 @@ function taskbarEdited(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -14070,9 +14070,9 @@ function taskbarEdited(args) {
 
 ## taskbarEditing
 
-The [taskbarEditing](../api/gantt/#taskbarediting) event is triggered while a taskbar is being dragged or resized in the Gantt Chart. It enables actions that respond to live taskbar changes, such as enforcing constraints, updating tooltips, or canceling edits based on conditions.
+The [taskbarEditing](../api/gantt#taskbarediting) event is triggered while a taskbar is being dragged or resized in the Gantt Chart. It enables actions that respond to live taskbar changes, such as enforcing constraints, updating tooltips, or canceling edits based on conditions.
 
-The event provides an argument of type [ITaskbarEditedEventArgs](../api/gantt/iTaskbarEditedEventArgs/) with the following properties:
+The event provides an argument of type [ITaskbarEditedEventArgs](../api/gantt/iTaskbarEditedEventArgs) with the following properties:
 
 | **Property**          | **Type**         | **Description**                              |
 |-----------------------|------------------|----------------------------------------------|
@@ -14208,7 +14208,7 @@ function taskbarEditing(args: ITaskbarEditedEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -14332,8 +14332,8 @@ function taskbarEditing(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">
@@ -14356,9 +14356,9 @@ function taskbarEditing(args) {
 
 ## toolbarClick
 
-The [toolbarClick](../api/gantt/#toolbarclick) event is triggered when any toolbar item is clicked in the Gantt chart. It enables actions that respond to toolbar interactions, such as overriding default behavior, confirming actions, or triggering external workflows.
+The [toolbarClick](../api/gantt#toolbarclick) event is triggered when any toolbar item is clicked in the Gantt chart. It enables actions that respond to toolbar interactions, such as overriding default behavior, confirming actions, or triggering external workflows.
 
-The event provides an argument of type [ClickEventArgs](../api/toolbar/clickEventArgs/) with the following properties:
+The event provides an argument of type [ClickEventArgs](../api/toolbar/clickEventArgs) with the following properties:
 
 | **Property**     | **Type**           | **Description**               |
 |--------------------|------------------|-------------------------------|
@@ -14455,7 +14455,7 @@ function toolbarClick(args: ClickEventArgs): void {
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
@@ -14557,8 +14557,8 @@ function toolbarClick(args) {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container">

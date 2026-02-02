@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # Data binding in ##Platform_Name## Gantt control
 
-The Gantt control uses `DataManager` for binding the data source, which supports both RESTful JSON data services and local JavaScript object array. The [`dataSource`](../api/gantt/#datasource) property can be assigned either with the instance of DataManager or JavaScript object array collection. The Gantt control supports binding two types of data:
+The Gantt control uses `DataManager` for binding the data source, which supports both RESTful JSON data services and local JavaScript object array. The [dataSource](../api/gantt#datasource) property can be assigned either with the instance of DataManager or JavaScript object array collection. The Gantt control supports binding two types of data:
 * Local data
 * Remote data
 
 ## Local data
 
-To bind local data to Gantt, you can assign a JavaScript object array to the [`dataSource`](../api/gantt/#datasource) property. The local data source can also be provided as an instance of the `DataManager`.
+To bind local data to Gantt, you can assign a JavaScript object array to the [dataSource](../api/gantt#datasource) property. The local data source can also be provided as an instance of the `DataManager`.
 
 In local data binding, the data source for rendering the Gantt control is retrieved from the same application locally.
 
@@ -28,7 +28,7 @@ The following are the two types of data binding possible with the Gantt control:
 
 ### Hierarchical data binding
 
-The [`child`](../api/gantt/taskFields/#child) property is used to map the child records in hierarchical data.
+The [child](../api/gantt/taskFields#child) property is used to map the child records in hierarchical data.
 
 The following code example shows how to bind the hierarchical local data into the Gantt control.
 
@@ -61,10 +61,10 @@ The following code example shows how to bind the hierarchical local data into th
 
 ### Self-referential data binding (Flat data)
 
-The Gantt control can be bound with self-referential data by mapping the data source field values to the [`id`](../api/gantt/taskFields/#id) and [`parentID`](../api/gantt/taskFields/#parentid) properties.
+The Gantt control can be bound with self-referential data by mapping the data source field values to the [id](../api/gantt/taskFields#id) and [parentID](../api/gantt/taskFields#parentid) properties.
 
-* ID field: This field contains unique values used to identify each individual task and it is mapped to the [`id`](../api/gantt/taskFields/#id) property.
-* Parent ID field: This field contains values that indicate parent tasks and it is mapped to the [`parentID`](../api/gantt/taskFields/#parentid) property.
+* ID field: This field contains unique values used to identify each individual task and it is mapped to the [id](../api/gantt/taskFields#id) property.
+* Parent ID field: This field contains values that indicate parent tasks and it is mapped to the [parentID](../api/gantt/taskFields#parentid) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -95,7 +95,7 @@ The Gantt control can be bound with self-referential data by mapping the data so
 
 ## Remote data
 
-To bind remote data to the Gantt component, assign service data as an instance of `DataManager` to the [`dataSource`](../api/gantt/#datasource) property.
+To bind remote data to the Gantt component, assign service data as an instance of `DataManager` to the [dataSource](../api/gantt#datasource) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -126,9 +126,9 @@ To bind remote data to the Gantt component, assign service data as an instance o
 
 ### URL Adaptor
 
-In Gantt, we can fetch data from SQL database using `ADO.NET` Entity Data Model and update the changes on CRUD action to the server by using `DataManager` support. To communicate with the remote data we are using `UrlAdaptor` of DataManager property to call the server method and get back resultant data in JSON format. We can know more about `UrlAdaptor` from [`here`](https://ej2.syncfusion.com/javascript/documentation/data/adaptors/?no-cache=1).
+In Gantt, we can fetch data from SQL database using `ADO.NET` Entity Data Model and update the changes on CRUD action to the server by using `DataManager` support. To communicate with the remote data we are using `UrlAdaptor` of DataManager property to call the server method and get back resultant data in JSON format. We can know more about `UrlAdaptor` from [here](https://ej2.syncfusion.com/javascript/documentation/data/adaptors/?no-cache=1).
 
-> Please refer the [link](https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/models-data/creating-model-classes-with-the-entity-framework-cs) to create the `ADO.NET` Entity Data Model in Visual studio,
+> Please refer the [link](https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/models-data/creating-model-classes-with-the-entity-framework-cs) to create the `ADO.NET` Entity Data Model in Visual Studio,
 
 We can define data source for Gantt as instance of DataManager using `url` property of DataManager. Please Check the below code snippet to assign data source to Gantt.
 
@@ -173,11 +173,11 @@ public ActionResult UrlDatasource(DataManagerRequest dm)
 
 ### Load child on demand
 
-To render child records on demand, assign a remote service URL in the instance of DataManager to the Url property. To interact with the remote data source, provide the endpoint URL and also define the [`hasChildMapping`](https://ej2.syncfusion.com/documentation/api/gantt/taskFields/#hasChildMapping) property in taskFields of Gantt Chart.
+To render child records on demand, assign a remote service URL in the instance of DataManager to the Url property. To interact with the remote data source, provide the endpoint URL and also define the [hasChildMapping](https://ej2.syncfusion.com/documentation/api/gantt/taskFields#hasChildMapping) property in taskFields of Gantt Chart.
 
 The <code>hasChildMapping</code> property maps the field name in the data source, which denotes whether the current record holds any child records. This is useful internally to show expand icon while binding child data on demand.
 
-When [`loadChildOnDemand`](https://ej2.syncfusion.com/documentation/api/gantt/#loadChildOnDemand) is disabled, all the root nodes are rendered in a collapsed state at initial load. On expanding the root node, the child nodes will be loaded from the remote server.
+When [loadChildOnDemand](https://ej2.syncfusion.com/documentation/api/gantt#loadChildOnDemand) is disabled, all the root nodes are rendered in a collapsed state at initial load. On expanding the root node, the child nodes will be loaded from the remote server.
 
 When <code>enableVirtualization</code> is enabled and <code>loadChildOnDemand</code> is disabled, only the current viewport root nodes are rendered in a collapsed state.
 
@@ -543,8 +543,8 @@ The following code example describes handling of Load on demand at server end.
 
 ### Sending additional parameters to the server
 
-We can pass additional parameters using [`addParams`](../api/data/query/#addparams) method of [`Query`](../api/data/query/) class.
-In server side we have inherited and shown the additional parameter value in Syncfusion<sup style="font-size:70%">&reg;</sup> DataManager class itself. We pass an additional parameter in load time using [`load`](../api/gantt#load) event. We can also pass additional parameter to the CRUD model. Please Check the below code snippet to send additional parameter to Gantt.
+We can pass additional parameters using [addParams](../api/data/query#addparams) method of [Query](../api/data/query) class.
+In server side we have inherited and shown the additional parameter value in Syncfusion<sup style="font-size:70%">&reg;</sup> DataManager class itself. We pass an additional parameter in load time using [load](../api/gantt#load) event. We can also pass additional parameter to the CRUD model. Please Check the below code snippet to send additional parameter to Gantt.
 
 ```ts
 
@@ -638,7 +638,7 @@ You can find the full sample from here.
 
 #### Handling HTTP error
 
-During server interaction from the Gantt, some server-side exceptions may occur, and you can acquire those error messages or exception details in client-side using the [`actionFailure`](../api/gantt#actionfailure) event.
+During server interaction from the Gantt, some server-side exceptions may occur, and you can acquire those error messages or exception details in client-side using the [actionFailure](../api/gantt#actionfailure) event.
 
 The argument passed to the `actionFailure` event contains the error details returned from the server.
 
@@ -671,7 +671,7 @@ The argument passed to the `actionFailure` event contains the error details retu
 
 #### Binding with Ajax
 
-You can use Gantt [`dataSource`](../api/gantt#datasource) property to bind the data source to Gantt from external Ajax request. In the below code we have fetched the data source from the server with the help of Ajax request and provided that to `dataSource` property by using [`onSuccess`](../api/base/ajax/#onsuccess) event of the Ajax.
+You can use Gantt [dataSource](../api/gantt#datasource) property to bind the data source to Gantt from external Ajax request. In the below code we have fetched the data source from the server with the help of Ajax request and provided that to `dataSource` property by using [onSuccess](../api/base/ajax#onsuccess) event of the Ajax.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -708,7 +708,7 @@ The `Split-task` feature allows you to split a task or interrupt the work during
 
 ### Hierarchical
 
-To split a task at load time in hierarchical way, we need to define the segment details in datasource and this field should be mapped by using the [`taskFields.segments`](../api/gantt/taskFields/#segments) property.
+To split a task at load time in hierarchical way, we need to define the segment details in datasource and this field should be mapped by using the [taskFields.segments](../api/gantt/taskFields#segments) property.
 
 ```ts
 
@@ -753,7 +753,7 @@ To split a task at load time in hierarchical way, we need to define the segment 
 
 ### Self-referential
 
-We can also define segment details as a flat data and this collection can be mapped by using [`segmentData`](../api/gantt/#segmentData) property. The segment id field of this collection is mapped by using the [`taskFields.segmentId`](../api/gantt/taskFields/#segmentId) property.
+We can also define segment details as a flat data and this collection can be mapped by using [segmentData](../api/gantt#segmentData) property. The segment id field of this collection is mapped by using the [taskFields.segmentId](../api/gantt/taskFields#segmentId) property.
 
 ```ts
 

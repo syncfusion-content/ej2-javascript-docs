@@ -16,13 +16,13 @@ let gantt: Gantt = new Gantt({
     },
     updateOffsetOnTaskbarEdit : false,
     editSettings: {
-            allowAdding: true,
-            allowEditing: true,
-            allowDeleting: true,
-            allowTaskbarEditing: true,
-            showDeleteConfirmDialog: true
-        },
-        toolbar: ['Add', 'Cancel', 'CollapseAll', 'Delete', 'Edit', 'ExpandAll', 'NextTimeSpan', 'PrevTimeSpan', 'Search', 'Update', 'Indent', 'Outdent'],
+        allowAdding: true,
+        allowEditing: true,
+        allowDeleting: true,
+        allowTaskbarEditing: true,
+        showDeleteConfirmDialog: true
+    },
+    toolbar: ['Add', 'Cancel', 'CollapseAll', 'Delete', 'Edit', 'ExpandAll', 'NextTimeSpan', 'PrevTimeSpan', 'Search', 'Update', 'Indent', 'Outdent'],
     columns: [
         { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: '100' },
         { field: 'Predecessor', headerText: 'Depedency', width: '150' },

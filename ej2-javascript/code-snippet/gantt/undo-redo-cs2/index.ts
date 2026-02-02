@@ -12,7 +12,7 @@ let gantt: Gantt = new Gantt({
     showColumnMenu: true,
     allowResizing: true,
     allowReordering: true,
-	undoRedoStepsCount: 5,
+    undoRedoStepsCount: 5,
     allowRowDragAndDrop: true,
     undoRedoActions: ['Add', 'Edit', 'Delete', 'Search','Sorting','Filtering', 'ZoomIn', 'ZoomOut', 'ZoomToFit','Indent','Outdent', 
     'PreviousTimeSpan', 'NextTimeSpan','ColumnState'],
@@ -29,7 +29,9 @@ let gantt: Gantt = new Gantt({
     editSettings: {
         allowEditing: true,
         allowAdding: true,
-        allowDeleting: true
+        allowDeleting: true,
+        allowTaskbarEditing: true,
+        showDeleteConfirmDialog: true
     }
 });
 gantt.appendTo('#Gantt');

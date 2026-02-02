@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Column menu in ##Platform_Name## Gantt control
 
-The column menu has options to integrate features like sorting, filtering, and autofit. It will show a menu with the integrated feature when users click the Multiple icon of the column. To enable the column menu, you should set the [`showColumnMenu`](../../api/gantt/#showcolumnmenu) property to true.
+The column menu has options to integrate features like sorting, filtering, and autofit. It will show a menu with the integrated feature when users click the Multiple icon of the column. To enable the column menu, you should set the [showColumnMenu](../../api/gantt#showcolumnmenu) property to true.
 
 The default items are displayed in the following table:
 
@@ -56,8 +56,8 @@ The default items are displayed in the following table:
 
 During the resizing action, the gantt component triggers the below two events.
 
-1. The [`columnMenuOpen`](../../api/gantt/#columnmenuopen) event triggers before the column menu opens.
-2. The [`columnMenuClick`](../../api/gantt/#columnmenuclick) event triggers when the user clicks the column menu of the gantt.
+1. The [columnMenuOpen](../../api/gantt#columnmenuopen) event triggers before the column menu opens.
+2. The [columnMenuClick](../../api/gantt#columnmenuclick) event triggers when the user clicks the column menu of the gantt.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -88,7 +88,7 @@ During the resizing action, the gantt component triggers the below two events.
 
 ## Custom Column Menu Item
 
-Custom column menu items can be added by defining the [`columnMenuItems`](../../api/gantt/#columnmenuitems). Actions for this customized items can be defined in the [`columnMenuClick`](../../api/gantt/#columnmenuclick) event.
+Custom column menu items can be added by defining the [columnMenuItems](../../api/gantt#columnmenuitems). Actions for this customized items can be defined in the [columnMenuClick](../../api/gantt#columnmenuclick) event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -119,7 +119,7 @@ Custom column menu items can be added by defining the [`columnMenuItems`](../../
 
 ## Customize menu items for particular columns
 
-Sometimes, you have a scenario that to hide an item from column menu for particular columns. In that case, you need to define the [`columnMenuOpenEventArgs.hide`](../../api/grid/columnMenuOpenEventArgs) as true in the [`columnMenuOpen`](../../api/gantt/#columnmenuopen) event.
+Sometimes, you have a scenario that to hide an item from column menu for particular columns. In that case, you need to define the [columnMenuOpenEventArgs.hide](../../api/grid/columnMenuOpenEventArgs) as true in the [columnMenuOpen](../../api/gantt#columnmenuopen) event.
 
 The following sample, **Filter** item was hidden in column menu when opens for the **Task Name** column.
 

@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## Taskbar template
 
-You can design your own taskbars to view the tasks in Gantt by using [`taskbarTemplate`](../api/gantt/#taskbartemplate) property. And it is possible to map the template script element’s ID value to this property. It is also possible to customize the parent taskbars and milestones with custom templates by using [`parentTaskbarTemplate`](../api/gantt/#parenttaskbartemplate) and [`milestoneTemplate`](../api/gantt/#milestonetemplate) properties.
+You can design your own taskbars to view the tasks in Gantt by using [taskbarTemplate](../api/gantt#taskbartemplate) property. And it is possible to map the template script element’s ID value to this property. It is also possible to customize the parent taskbars and milestones with custom templates by using [parentTaskbarTemplate](../api/gantt#parenttaskbartemplate) and [milestoneTemplate](../api/gantt#milestonetemplate) properties.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -46,7 +46,7 @@ You can design your own taskbars to view the tasks in Gantt by using [`taskbarTe
 
 ### Taskbar Height
 
-Height of child taskbars and parent taskbars can be customized by using [`taskbarHeight`](../api/gantt/#taskbarheight) property. The following code example shows how to use the property.
+Height of child taskbars and parent taskbars can be customized by using [taskbarHeight](../api/gantt#taskbarheight) property. The following code example shows how to use the property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -76,11 +76,11 @@ Height of child taskbars and parent taskbars can be customized by using [`taskba
 {% endif %}
 
 > NOTE
-The [`taskbarHeight`](../api/gantt/#taskbarheight) value should be lower than the [`rowHeight`](../api/gantt/#rowheight) property value and these properties accept only pixel values.
+The [taskbarHeight](../api/gantt#taskbarheight) value should be lower than the [rowHeight](../api/gantt#rowheight) property value and these properties accept only pixel values.
 
 ### Conditional formatting
 
-The default taskbar UI can be replaced with custom templates using the [`queryTaskbarInfo`](../api/gantt/#querytaskbarinfo) event. The following code example shows customizing the taskbar UI based on task progress values in the Gantt control.
+The default taskbar UI can be replaced with custom templates using the [queryTaskbarInfo](../api/gantt#querytaskbarinfo) event. The following code example shows customizing the taskbar UI based on task progress values in the Gantt control.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -144,7 +144,7 @@ You can change the gripper icon in the taskbar by applying styles to their respe
 
 The Gantt component, supports rendering multi-taskbars in the project view. With this feature the parent taskbar, when it is collapsed, visually summarize the progress of all its child taskbars.
 
-This feature can be enabled by setting the [enableMultiTaskbar](../api/gantt/#enablemultitaskbar) property value to `true`. 
+This feature can be enabled by setting the [enableMultiTaskbar](../api/gantt#enablemultitaskbar) property value to `true`. 
 
 The following code example shows how to use this property.
 
@@ -177,7 +177,7 @@ The following code example shows how to use this property.
 
 ## Connector lines
 
-The width and background color of connector lines in Gantt can be customized using the [`connectorLineWidth`](../api/gantt/#connectorlinewidth) and [`connectorLineBackground`](../api/gantt/#connectorlinebackground) properties. The following code example shows how to use these properties.
+The width and background color of connector lines in Gantt can be customized using the [connectorLineWidth](../api/gantt#connectorlinewidth) and [connectorLineBackground](../api/gantt#connectorlinebackground) properties. The following code example shows how to use these properties.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -208,7 +208,7 @@ The width and background color of connector lines in Gantt can be customized usi
 
 ## Enable tooltip
 
-In the Gantt control, you can enable or disable the mouse hover tooltip for the following UI elements using the [`tooltipSettings.showTooltip`](../api/gantt/tooltipSettings/#showtooltip) property:
+In the Gantt control, you can enable or disable the mouse hover tooltip for the following UI elements using the [tooltipSettings.showTooltip](../api/gantt/tooltipSettings#showtooltip) property:
 
 * Taskbar
 * Connector line
@@ -242,13 +242,13 @@ In the Gantt control, you can enable or disable the mouse hover tooltip for the 
 {% previewsample "page.domainurl/code-snippet/gantt/gantt-tooltip-cs1" %}
 {% endif %}
 
-> The default value of the [`tooltipSettings.showTooltip`](../api/gantt/tooltipSettings/#showtooltip) property is true.
+> The default value of the [tooltipSettings.showTooltip](../api/gantt/tooltipSettings#showtooltip) property is true.
 
 ## Tooltip template
 
 ### Taskbar tooltip
 
-The default tooltip in the Gantt control can be customized using the [`tooltipSettings.taskbar`](../api/gantt/tooltipSettings/#taskbar) property. You can map the template script element’s ID value or template string directly to this property.
+The default tooltip in the Gantt control can be customized using the [tooltipSettings.taskbar](../api/gantt/tooltipSettings#taskbar) property. You can map the template script element’s ID value or template string directly to this property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -279,7 +279,7 @@ The default tooltip in the Gantt control can be customized using the [`tooltipSe
 
 ### Connector line tooltip
 
-The default connector line tooltip in the Gantt control can be customized using the [`tooltipSettings.connectorLine`](../api/gantt/tooltipSettings/#connectorline) property. You can map the value to this property as template script element ID or template string format. The following code example shows how to use the [`tooltipSettings.connectorLine`](../api/gantt/tooltipSettings/#connectorline) property.
+The default connector line tooltip in the Gantt control can be customized using the [tooltipSettings.connectorLine](../api/gantt/tooltipSettings#connectorline) property. You can map the value to this property as template script element ID or template string format. The following code example shows how to use the [tooltipSettings.connectorLine](../api/gantt/tooltipSettings#connectorline) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -310,7 +310,7 @@ The default connector line tooltip in the Gantt control can be customized using 
 
 ### Baseline tooltip
 
-A baseline tooltip can be customized using the [`tooltipSettings.baseline`](../api/gantt/tooltipSettings/#baseline) property. The following code example shows how to customize the baseline tooltip in Gantt.
+A baseline tooltip can be customized using the [tooltipSettings.baseline](../api/gantt/tooltipSettings#baseline) property. The following code example shows how to customize the baseline tooltip in Gantt.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -341,7 +341,7 @@ A baseline tooltip can be customized using the [`tooltipSettings.baseline`](../a
 
 ### Timeline tooltip
 
-A timeline tooltip can be customized using the [`tooltipSettings.timeline`](../api/gantt/tooltipSettings/#timeline) property. This allows modifying the appearance and content of the tooltip displayed over the timeline. The following code example shows how to customize the timeline tooltip in Gantt.
+A timeline tooltip can be customized using the [tooltipSettings.timeline](../api/gantt/tooltipSettings#timeline) property. This allows modifying the appearance and content of the tooltip displayed over the timeline. The following code example shows how to customize the timeline tooltip in Gantt.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -372,4 +372,4 @@ A timeline tooltip can be customized using the [`tooltipSettings.timeline`](../a
 
 ## Tooltip Touch interaction
 
-To perform `touch and hold` action on a element, refer to [`tooltip popup`](tooltip/#tooltip).
+To perform `touch and hold` action on a element, refer to [tooltip popup](tooltip#tooltip).

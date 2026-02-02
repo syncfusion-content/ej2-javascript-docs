@@ -11,14 +11,14 @@ domainurl: ##DomainURL##
 
 # Data markers in ##Platform_Name## Gantt control
 
-Data markers are a set of events used to represent the schedule events for a task. Data markers are defined in data source as array of objects, and this value is mapped to the Gantt control using the [`taskFields.indicators`](../api/gantt/taskFields/#indicators) property. You can represent more than one data marker in a task.
+Data markers are a set of events used to represent the schedule events for a task. Data markers are defined in data source as array of objects, and this value is mapped to the Gantt control using the [taskFields.indicators](../api/gantt/taskFields#indicators) property. You can represent more than one data marker in a task.
 
 Data markers can be defined using the following properties:
 
-* [`date`](../api/gantt/iIndicator/#date): Defines the date of indicator.
-* [`iconClass`](../api/gantt/iIndicator/#iconclass): Defines the icon class of indicator.
-* [`name`](../api/gantt/iIndicator/#name): Defines the name of indicator.
-* [`tooltip`](../api/gantt/iIndicator/#tooltip): Defines the tooltip of indicator.
+* [date](../api/gantt/iIndicator#date): Defines the date of indicator.
+* [iconClass](../api/gantt/iIndicator#iconclass): Defines the icon class of indicator.
+* [name](../api/gantt/iIndicator#name): Defines the name of indicator.
+* [tooltip](../api/gantt/iIndicator#tooltip): Defines the tooltip of indicator.
 
 >Note: Data Marker `tooltip` will be rendered only if tooltip property has value.
 

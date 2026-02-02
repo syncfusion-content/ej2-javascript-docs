@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # In dent and out dent in ##Platform_Name## Gantt control
 
-Indent and Outdent of a task are used to update the level of task in the hierarchical order of the task. It can be performed by enabling the [`editSettings.allowEditing`](../../api/gantt/editSettings/#allowediting) property.
+Indent and Outdent of a task are used to update the level of task in the hierarchical order of the task. It can be performed by enabling the [editSettings.allowEditing](../../api/gantt/editSettings#allowediting) property.
 
 `Indent` - Selected task can be indented to the level of task to the hierarchical order. It can be performed by using in-built context menu or toolbar items. It can also be invoked by using the `indent` method dynamically on any action like external button click. The following code example shows how to enable indent option in the Gantt chart.
 

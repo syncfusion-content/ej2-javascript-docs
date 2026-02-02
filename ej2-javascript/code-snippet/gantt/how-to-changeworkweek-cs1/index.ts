@@ -10,6 +10,7 @@ let gantt: Gantt = new Gantt({
         id: 'TaskID',
         name: 'TaskName',
         startDate: 'StartDate',
+        endDate: 'EndDate',
         duration: 'Duration',
         progress: 'Progress',
         parentID: 'ParentID'

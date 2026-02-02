@@ -1,13 +1,11 @@
-
-
 import { Gantt, RowDD, Edit, Selection } from '@syncfusion/ej2-gantt';
-import { projectNewData } from './datasource.ts';
+import { ganttData } from './datasource.ts';
 
 Gantt.Inject(RowDD, Edit, Selection);
 
 let gantt: Gantt = new Gantt({
-    dataSource: projectNewData,
-    height:'450px',
+    dataSource: ganttData,
+    height:'380px',
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
@@ -15,11 +13,21 @@ let gantt: Gantt = new Gantt({
         duration: 'Duration',
         progress: 'Progress',
         dependency: 'Predecessor',
-        parentID: 'parentID'
+        parentID: 'ParentID'
     },
+    columns: [
+        { field: 'TaskID', headerText: 'ID', textAlign: "Right", width: 90 },
+        { field: 'TaskName', headerText: 'Task Name', textAlign: "Left", width: 180 },
+        { field: 'StartDate', headerText: 'Start Date', textAlign: "Right", width: 120 },
+        { field: 'Duration', headerText: 'Duration', textAlign: "Right", width: 90 },
+        { field: 'Progress', headerText: 'Progress', textAlign: "Right", width: 120 },
+    ],
     selectionSettings: {
         type: 'Multiple'
     },
-    allowRowDragAndDrop: true
+    allowRowDragAndDrop: true,
+    splitterSettings: {
+      position: '75%'
+    },
 });
 gantt.appendTo('#Gantt');

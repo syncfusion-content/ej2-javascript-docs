@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Top tier and bottom tier in ##Platform_Name## Gantt control
 
-Gantt control contains two tier layout in timeline, we can customize the top tier and bottom tier using [`topTier`](../../api/gantt/timelineSettings/#toptier) and [`bottomTier`](../../api/gantt/timelineSettings/#bottomtier) properties. Timeline tier's unit can be defined by using [`unit`](../../api/gantt/timelineTierSettings/#unit) property and [`format`](../../api/gantt/timelineTierSettings/#format) property was used to define date format of timeline cell and [`count`](../../api/gantt/timelineTierSettings/#count) property was used to define how many unit will be combined as single cell and [`formatter`](../../api/gantt/timelineTierSettings/#formatter) property was used to define custom method to format the date value of timeline cell.
+Gantt control contains two tier layout in timeline, we can customize the top tier and bottom tier using [topTier](../../api/gantt/timelineSettings#toptier) and [bottomTier](../../api/gantt/timelineSettings#bottomtier) properties. Timeline tier's unit can be defined by using [unit](../../api/gantt/timelineTierSettings#unit) property and [format](../../api/gantt/timelineTierSettings#format) property was used to define date format of timeline cell and [count](../../api/gantt/timelineTierSettings#count) property was used to define how many unit will be combined as single cell and [formatter](../../api/gantt/timelineTierSettings#formatter) property was used to define custom method to format the date value of timeline cell.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -42,7 +42,7 @@ Gantt control contains two tier layout in timeline, we can customize the top tie
 
 ## Combining timeline cells
 
-In Gantt, timeline cells in top tier and bottom tier can be combined with number of timeline units, this can be acheived by using [`topTier.count`](../../api/gantt/timelineTierSettings/#count) and [`bottomTier.count`](../../api/gantt/timelineTierSettings/#count) properties. Please refer the below sample.
+In Gantt, timeline cells in top tier and bottom tier can be combined with number of timeline units, this can be acheived by using [topTier.count](../../api/gantt/timelineTierSettings#count) and [bottomTier.count](../../api/gantt/timelineTierSettings#count) properties. Please refer the below sample.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -73,7 +73,7 @@ In Gantt, timeline cells in top tier and bottom tier can be combined with number
 
 ## Format value of timeline cell
 
-In the Gantt control, you can format the value of top and bottom timeline cells using the standard date format string or the custom formatter method. This can be done using the [`topTier.format`](../../api/gantt/timelineTierSettings/#format), [`topTier.formatter`](../../api/gantt/timelineTierSettings/#formatter), [`bottomTier.format`](../../api/gantt/timelineTierSettings/#format) and [`bottomTier.formatter`](../../api/gantt/timelineTierSettings/#formatter) properties. The following example shows how to use the formatter method for timeline cells.
+In the Gantt control, you can format the value of top and bottom timeline cells using the standard date format string or the custom formatter method. This can be done using the [topTier.format](../../api/gantt/timelineTierSettings#format), [topTier.formatter](../../api/gantt/timelineTierSettings#formatter), [bottomTier.format](../../api/gantt/timelineTierSettings#format) and [bottomTier.formatter](../../api/gantt/timelineTierSettings#formatter) properties. The following example shows how to use the formatter method for timeline cells.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -104,7 +104,7 @@ In the Gantt control, you can format the value of top and bottom timeline cells 
 
 ## Timeline cell width
 
-In the Gantt control, you can define the width value of timeline cell using the [`timelineSettings.timelineUnitSize`](../../api/gantt/timelineSettings/#timelineunitsize) property. This value will be set to the bottom timeline cell, and the width value of top timeline cell will be calculated automatically based on bottom tier cell width using the [`topTier.unit`](../../api/gantt/timelineTierSettings/#unit) and [`timelineSettings.timelineUnitSize`](../../api/gantt/timelineSettings/#timelineunitsize) properties. Refer to the following example.
+In the Gantt control, you can define the width value of timeline cell using the [timelineSettings.timelineUnitSize](../../api/gantt/timelineSettings#timelineunitsize) property. This value will be set to the bottom timeline cell, and the width value of top timeline cell will be calculated automatically based on bottom tier cell width using the [topTier.unit](../../api/gantt/timelineTierSettings#unit) and [timelineSettings.timelineUnitSize](../../api/gantt/timelineSettings#timelineunitsize) properties. Refer to the following example.
 
 {% if page.publishingplatform == "typescript" %}
 

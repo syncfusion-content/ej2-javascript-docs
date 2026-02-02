@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Splitting and merging tasks in ##Platform_Name## Gantt control | Syncfusion
+title: Splitting and merging tasks in ##Platform_Name## Gantt | Syncfusion
 description: Learn here all about Splitting and merging tasks in Syncfusion ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Splitting and merging tasks 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Splitting and merging tasks in ##Platform_Name## Gantt control
+# Splitting and merging tasks in ##Platform_Name## Gantt
 
 ## Splitting task at load time
 
@@ -23,9 +23,9 @@ Refer below link for more details.
 
 The task can be splitted dynamically, either by using the context menu or dialog.
 
-* `Dialog`: `Segments` tab is rendered in add/edit dialog, when the [`taskFields.segments`](../../api/gantt/taskFields/#segments) or [`taskFields.segmentId`](../../api/gantt/taskFields/#segmentId) property is mapped. Using this tab, we can split the task based on the original start and end date of a particular task.
+* `Dialog`: `Segments` tab is rendered in add/edit dialog, when the [taskFields.segments](../../api/gantt/taskFields#segments) or [taskFields.segmentId](../../api/gantt/taskFields#segmentId) property is mapped. Using this tab, we can split the task based on the original start and end date of a particular task.
 
-* `Context menu`: When the [`taskFields.segments`](../../api/gantt/taskFields/#segments) or [`taskFields.segmentId`](../../api/gantt/taskFields/#segmentId) property is mapped and the [`enableContextMenu`](../../api/gantt/#enablecontextmenu) property is enabled, `Split Task` item will be included in the context menu.
+* `Context menu`: When the [taskFields.segments](../../api/gantt/taskFields#segments) or [taskFields.segmentId](../../api/gantt/taskFields#segmentId) property is mapped and the [enableContextMenu](../../api/gantt#enablecontextmenu) property is enabled, `Split Task` item will be included in the context menu.
 
 {% if page.publishingplatform == "typescript" %}
 

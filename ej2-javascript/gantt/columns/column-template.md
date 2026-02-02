@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Column template in ##Platform_Name## Gantt control
 
-A column template is used to customize the column’s look. The following code example explains how to define the custom template in Gantt using the [`template`](../../api/gantt/column/#template) property.
+A column template is used to customize the column’s look. The following code example explains how to define the custom template in Gantt using the [template](../../api/gantt/column#template) property.
 
 {% if page.publishingplatform == "typescript" %}
 

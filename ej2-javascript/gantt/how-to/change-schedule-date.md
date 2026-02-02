@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Change schedule date in ##Platform_Name## Gantt control
 
-In the Gantt control, you can change the schedule start and end dates by clicking the custom button programmatically using the [`updateProjectDates`](../../api/gantt/#updateprojectdates) method. You can pass the start and end dates as method arguments to the [`updateProjectDates`](../../api/gantt/#updateprojectdates) method. You can also pass the Boolean value as an additional parameter, which is used to round-off the schedule start and end dates displayed in Gantt timeline.
+In the Gantt control, you can change the schedule start and end dates by clicking the custom button programmatically using the [updateProjectDates](../../api/gantt#updateprojectdates) method. You can pass the start and end dates as method arguments to the [updateProjectDates](../../api/gantt#updateprojectdates) method. You can also pass the Boolean value as an additional parameter, which is used to round-off the schedule start and end dates displayed in Gantt timeline.
 
 {% if page.publishingplatform == "typescript" %}
 

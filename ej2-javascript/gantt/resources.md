@@ -15,14 +15,14 @@ In Gantt, the resources are represented by staff, equipment and materials etc. I
 
 ## Resource collection
 
-The resource collection contains details about resources that are used in the project. Resources are JSON object that contains id, name, unit and group of the resources and this collection is mapped to the Gantt control using the [`resources`](../api/gantt/#resources) property. These resource fields are mapped to the Gantt control using the [`resourceFields`](../api/gantt/#resourceFields) property.
+The resource collection contains details about resources that are used in the project. Resources are JSON object that contains id, name, unit and group of the resources and this collection is mapped to the Gantt control using the [resources](../api/gantt#resources) property. These resource fields are mapped to the Gantt control using the [resourceFields](../api/gantt#resourceFields) property.
 
 Resource fields | Description
 -----|-----
-[`id`](../api/gantt/resourceFields/#id) | This field is used to assign resources to the tasks.
-[`name`](../api/gantt/resourceFields/#name) | This field is used to map the resource names. These names are displayed as one of Gantt columns and also can display as labels using the [`labelSettings`](../api/gantt/labelSettings) property.
-[`unit`](../api/gantt/resourceFields/#unit) | It indicates the amount of work that can be done by a resource for the task in a day.
-[`group`](../api/gantt/resourceFields/#group) | This field is used to group the resources and the tasks assigned to that particular resource into category.
+[id](../api/gantt/resourceFields#id) | This field is used to assign resources to the tasks.
+[name](../api/gantt/resourceFields#name) | This field is used to map the resource names. These names are displayed as one of Gantt columns and also can display as labels using the [labelSettings](../api/gantt/labelSettings) property.
+[unit](../api/gantt/resourceFields#unit) | It indicates the amount of work that can be done by a resource for the task in a day.
+[group](../api/gantt/resourceFields#group) | This field is used to group the resources and the tasks assigned to that particular resource into category.
 
 The following code snippets shows resource collection and how it assigned to Gantt control.
 
@@ -52,7 +52,7 @@ gantt.appendTo('#Gantt');
 
 ## Assign resource
 
-We can assign resources for a task at initial load, using the resource id value of the resources as a collection. This collection is mapped from the dataSource to the Gantt control using the [`resourceInfo`](../api/gantt/taskFields/#resourceinfo) property.
+We can assign resources for a task at initial load, using the resource id value of the resources as a collection. This collection is mapped from the dataSource to the Gantt control using the [resourceInfo](../api/gantt/taskFields#resourceinfo) property.
 
 Resources are assigned to tasks in following ways.
 
@@ -112,15 +112,15 @@ The following code snippet shows how to assign the resource for each task and ma
 
 By using cell/ dialog edit option, we can add/remove the multiple resources for a particular task. Resource Unit can be change for a each task on resource tab in the edit dialog by double click on the unit cell.
 
-![Cell Edit](images/cellEdit-resource.png)
+![Cell Edit](./images/cellEdit-resource.png)
 
-![Dialog Edit](images/dialogedit-resource.png)
+![Dialog Edit](./images/dialogedit-resource.png)
 
 ## Custom background colors for resource column and taskbar
 
 In Gantt Component, you can customize the background colors of the resource column and taskbars based on the resources assigned to each task. This customization enhances the readability and usability of the Gantt chart.
 
-To achieve this, utilize the [template](https://ej2.syncfusion.com/documentation/api/gantt/column/#template) property for the resource column and the [queryTaskbarInfo](https://ej2.syncfusion.com/documentation/api/gantt/#querytaskbarinfo) event. The `template` property allows you to define a custom template for the resource column, while the `queryTaskbarInfo` event to modify the taskbar properties, including background colors.
+To achieve this, utilize the [template](https://ej2.syncfusion.com/documentation/api/gantt/column#template) property for the resource column and the [queryTaskbarInfo](https://ej2.syncfusion.com/documentation/api/gantt#querytaskbarinfo) event. The `template` property allows you to define a custom template for the resource column, while the `queryTaskbarInfo` event to modify the taskbar properties, including background colors.
 
 The following code snippet demonstrates how to customize the background colors of the taskbar and resource column according to the assigned resources:
 

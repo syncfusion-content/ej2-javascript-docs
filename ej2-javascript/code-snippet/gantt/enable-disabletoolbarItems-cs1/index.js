@@ -1,8 +1,8 @@
 var clickHandler = function(args){
-    if (args.item.text === 'QuickFilter') {
+    if (args.item.id === 'QuickFilter') {
         ganttChart.filterByColumn('TaskName', 'startswith', 'Identify');
     }
-    if (args.item.text === 'ClearFilter') {
+    if (args.item.id === 'ClearFilter') {
         ganttChart.clearFiltering();
     }
 };
@@ -10,29 +10,32 @@ var clickHandler = function(args){
 ej.gantt.Gantt.Inject(ej.gantt.Filter,ej.gantt.Toolbar);
 
 var ganttChart = new ej.gantt.Gantt({
-         dataSource: GanttData,
-		 height:'450px',
-		 taskFields: {
-            id: 'TaskID',
-            name: 'TaskName',
-            startDate: 'StartDate',
-            duration: 'Duration',
-            progress: 'Progress',
-            parentID: 'ParentID'
-        },
-		toolbarClick: clickHandler,
-		toolbar: ['QuickFilter', 'ClearFilter'],
-		allowFiltering:true
+    dataSource: GanttData,
+    height:'450px',
+    taskFields: {
+        id: 'TaskID',
+        name: 'TaskName',
+        startDate: 'StartDate',
+        duration: 'Duration',
+        progress: 'Progress',
+        parentID: 'ParentID'
+    },
+    toolbarClick: clickHandler,
+    toolbar: [
+        { text: 'Quick Filter', id: 'QuickFilter' }, 
+        { text: 'Clear Filter', id: 'ClearFilter' }
+    ],
+    allowFiltering:true
 });
 ganttChart.appendTo('#Gantt');
 
-var enable = new ej.buttons.Button({}, '#enable');
-var disable = new ej.buttons.Button({}, '#disable');
+let switchObj = new ej.buttons.Switch({
+    checked: true,
+    change: (args) => {
+        const enable = args.checked;
+        // Enable or disable both custom toolbar items.
+        ganttChart.toolbarModule.enableItems(['QuickFilter', 'ClearFilter'], enable);
+    }
+});
 
-enable.element.onclick = function(){
-    ganttChart.toolbarModule.enableItems([ganttChart.element.id + '_QuickFilter', ganttChart.element.id + '_ClearFilter'], true);// enable toolbar items.
-};
-
-disable.element.onclick = function(){
-    ganttChart.toolbarModule.enableItems([ganttChart.element.id + '_QuickFilter', ganttChart.element.id + '_ClearFilter'], false);// disable toolbar items.
-};
+switchObj.appendTo('#switch');

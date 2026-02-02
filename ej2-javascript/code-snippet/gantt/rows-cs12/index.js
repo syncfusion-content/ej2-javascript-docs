@@ -1,7 +1,6 @@
-
 var ganttChart = new ej.gantt.Gantt({
    dataSource: GanttData,
-    height: '450px',
+    height: '380px',
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
@@ -10,15 +9,13 @@ var ganttChart = new ej.gantt.Gantt({
         progress: 'Progress',
         parentID: 'ParentID'
     },
-    rowDataBound: function(args){
-        if (args.data['TaskID'] == 4) {
-            args.row.style.background = 'cyan';
-        }
+    splitterSettings: {
+        position: '75%'
     },
-    queryTaskbarInfo: function(args){
-        if (args.data['TaskID'] == 4) {
-            args.rowElement.style.background = 'cyan';
-        }
-    }
+    dataBound: dataBound,
 });
 ganttChart.appendTo('#Gantt');
+
+function dataBound() {
+  ganttChart.treeGrid.getRowByIndex(2).style.background = 'rgb(193, 228, 234)';
+}

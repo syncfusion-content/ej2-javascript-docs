@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Check box columns in ##Platform_Name## Gantt control
 
-To render boolean values as checkbox in columns, you need to set [`displayAsCheckBox`](../../api/gantt/column/#displayascheckbox) property as **true**.
+To render boolean values as checkbox in columns, you need to set [displayAsCheckBox](../../api/gantt/column#displayascheckbox) property as **true**.
 
 {% if page.publishingplatform == "typescript" %}
 

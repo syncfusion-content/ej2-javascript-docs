@@ -1,6 +1,3 @@
-
-
-
 import { Gantt, RowDD, Edit, Selection } from '@syncfusion/ej2-gantt';
 import { projectNewData } from './datasource.ts';
 

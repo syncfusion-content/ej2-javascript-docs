@@ -1,7 +1,7 @@
 ej.gantt.Gantt.Inject(ej.gantt.Edit,ej.gantt.Toolbar, ej.gantt.Selection, ej.gantt.Filter,ej.gantt.Sort,ej.gantt.RowDD,ej.gantt.ColumnMenu,ej.gantt.Reorder,ej.gantt.Resize,ej.gantt.UndoRedo);
 
 var ganttChart = new ej.gantt.Gantt({
-	dataSource: GanttData,
+    dataSource: GanttData,
     height: '450px',
     allowSorting: true,
     allowFiltering: true,
@@ -21,27 +21,20 @@ var ganttChart = new ej.gantt.Gantt({
         parentID: 'ParentID'
     },
     toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Search', 'ZoomIn', 'ZoomOut', 'ZoomToFit','Indent','Outdent', 
-    'PrevTimeSpan', 'NextTimeSpan','Undo','Redo'],
+    'PrevTimeSpan', 'NextTimeSpan'],
     editSettings: {
         allowEditing: true,
         allowAdding: true,
-        allowDeleting: true
+        allowDeleting: true,
+        allowTaskbarEditing: true,
+        showDeleteConfirmDialog: true
     }
      });
 ganttChart.appendTo('#Gantt');
 
-var undo= new ej.buttons.Button();
-undo.appendTo('#undo');
-
-var redo= new ej.buttons.Button();
-redo.appendTo('#redo');
-
-document.getElementById('undo').addEventListener('click', () => {
-    var ganttObj= document.getElementById('Gantt').ej2_instances[0];
-	ganttObj.undo();
-});
+milestone
 
 document.getElementById('redo').addEventListener('click', () => {
     var ganttObj= document.getElementById('Gantt').ej2_instances[0];
-	ganttObj.redo();
+    ganttObj.redo();
 });

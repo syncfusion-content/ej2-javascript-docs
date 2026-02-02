@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Searching in ##Platform_Name## Gantt control
 
-You can search records in the Gantt control by using the [`search`](../../api/gantt/#search) method with search key as a parameter. The Gantt control provides an option to integrate the search text box in the toolbar by adding the search item to the [`toolbar`](../../api/gantt/#toolbar) property.
+You can search records in the Gantt control by using the [search](../../api/gantt#search) method with search key as a parameter. The Gantt control provides an option to integrate the search text box in the toolbar by adding the search item to the [toolbar](../../api/gantt#toolbar) property.
 
 To search records, inject the `Filter` module into the Gantt control.
 
@@ -44,7 +44,7 @@ To search records, inject the `Filter` module into the Gantt control.
 
 ## Initial search
 
-In the Gantt control, you can load a task with some search criteria and this can be done by using the [`searchSettings`](../../api/gantt/searchSettings/) property. To apply search at initial rendering, set the value for [`fields`](../../api/gantt/searchSettings/#fields), [`operator`](../../api/gantt/searchSettings/#operator), [`key`](../../api/gantt/searchSettings/#key), and [`ignoreCase`](../../api/gantt/searchSettings/#ignorecase) in the [`searchSettings`](../../api/gantt/searchSettings/) property.
+In the Gantt control, you can load a task with some search criteria and this can be done by using the [searchSettings](../../api/gantt/searchSettings) property. To apply search at initial rendering, set the value for [fields](../../api/gantt/searchSettings#fields), [operator](../../api/gantt/searchSettings#operator), [key](../../api/gantt/searchSettings#key), and [ignoreCase](../../api/gantt/searchSettings#ignorecase) in the [searchSettings](../../api/gantt/searchSettings) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -73,11 +73,11 @@ In the Gantt control, you can load a task with some search criteria and this can
 {% previewsample "page.domainurl/code-snippet/gantt/searching-cs2" %}
 {% endif %}
 
-> By default, Gantt searches all the bound column values. To customize this behavior, define the [`searchSettings.fields`](../../api/gantt/searchSettings/#fields) property.
+> By default, Gantt searches all the bound column values. To customize this behavior, define the [searchSettings.fields](../../api/gantt/searchSettings#fields) property.
 
 ## Search operators
 
-The search operator can be defined in the [`searchSettings.operator`](../../api/gantt/searchSettings/#operator) property to configure specific searching.
+The search operator can be defined in the [searchSettings.operator](../../api/gantt/searchSettings#operator) property to configure specific searching.
 
 The following operators are supported in searching:
 
@@ -89,11 +89,11 @@ contains |Checks whether a value contains the specified value.
 equal |Checks whether a value is equal to the specified value.
 notEqual |Checks for the values that are not equal to the specified value.
 
-> By default, the [`searchSettings.operator`](../../api/gantt/searchSettings/#operator) value is `contains`.
+> By default, the [searchSettings.operator](../../api/gantt/searchSettings#operator) value is `contains`.
 
 ## Search by external button
 
-To search the Gantt records from an external button, invoke the [`search`](../../api/gantt/#search) method.
+To search the Gantt records from an external button, invoke the [search](../../api/gantt#search) method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -122,11 +122,11 @@ To search the Gantt records from an external button, invoke the [`search`](../..
 {% previewsample "page.domainurl/code-snippet/gantt/externalSearch-cs1" %}
 {% endif %}
 
->Note: You should set the [`allowFiltering`](../../api/gantt/#allowfiltering) property to `true` for searching the content externally.
+>Note: You should set the [allowFiltering](../../api/gantt#allowfiltering) property to `true` for searching the content externally.
 
 ## Search specific columns
 
-By default, the Gantt control searches all the columns. You can search specific columns by defining the specific column's field names in the [`searchSettings.fields`](../../api/gantt/searchSettings/#fields) property.
+By default, the Gantt control searches all the columns. You can search specific columns by defining the specific column's field names in the [searchSettings.fields](../../api/gantt/searchSettings#fields) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -159,7 +159,7 @@ By default, the Gantt control searches all the columns. You can search specific 
 
 ## Clear search by external button
 
-You can set [`searchSettings.key`](../../api/gantt/searchSettings/#key) property as `empty` string, to clear the searched Gantt records from external button.
+You can set [searchSettings.key](../../api/gantt/searchSettings#key) property as `empty` string, to clear the searched Gantt records from external button.
 
 {% if page.publishingplatform == "typescript" %}
 

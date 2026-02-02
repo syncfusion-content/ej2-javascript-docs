@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Context menu in ##Platform_Name## Gantt control
 
-The Gantt control allows you to perform quick actions by using context menu. When right-clicking the context menu, the context menu options are shown. To enable this feature, set the [`enableContextMenu`](../api/gantt/#enablecontextmenu) to true. The default context menu options are enabled using the [`editSettings`](../api/gantt/#editsettings) property. The context menu options can be customized using the [`contextMenuItems`](../api/gantt/#contextmenuitems) property.
+The Gantt control allows you to perform quick actions by using context menu. When right-clicking the context menu, the context menu options are shown. To enable this feature, set the [enableContextMenu](../api/gantt#enablecontextmenu) to true. The default context menu options are enabled using the [editSettings](../api/gantt#editsettings) property. The context menu options can be customized using the [contextMenuItems](../api/gantt#contextmenuitems) property.
 
-To use the context menu, inject the [`ContextMenu`](../api/gantt/#contextmodule) module into the Gantt control.
+To use the context menu, inject the [ContextMenu](../api/gantt#contextmodule) module into the Gantt control.
 
 The default items are listed in the following table.
 
@@ -61,7 +61,7 @@ Items| Description
 
 ## Custom context menu items
 
-The custom context menu items can be added by defining the [`contextMenuItems`](../api/gantt/#contextmenuitems) as a collection of [`contextMenuItemModel`](../api/grid/contextMenuItemModel/). Actions for the customized items can be defined in the [`contextMenuClick`](../api/gantt/#contextmenuclick) event and the visibility of customized items can be defined in the [`contextMenuOpen`](../api/gantt/#contextmenuopen) event.
+The custom context menu items can be added by defining the [contextMenuItems](../api/gantt#contextmenuitems) as a collection of [contextMenuItemModel](../api/grid/contextMenuItemModel). Actions for the customized items can be defined in the [contextMenuClick](../api/gantt#contextmenuclick) event and the visibility of customized items can be defined in the [contextMenuOpen](../api/gantt#contextmenuopen) event.
 
 To create custom context menu items for header area, define the target property as `.e-gridheader`.
 
@@ -98,4 +98,4 @@ The following sample shows context menu item for parent rows to expand or collap
 
 ## Touch interaction
 
-To perform `long press` action on a row, [`context menu`](context-menu/#context-menu) is opened, and then tap a menu item to trigger its action.
+To perform `long press` action on a row, [context menu](context-menu#context-menu) is opened, and then tap a menu item to trigger its action.

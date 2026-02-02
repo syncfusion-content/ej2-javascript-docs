@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Undo Redo in ##Platform_Name## Gantt control | Syncfusion
-description: Learn here all about Undo Redo in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+title: Undo Redo in ##Platform_Name## Gantt Chart Control | Syncfusion
+description: Learn here all about undo redo in Syncfusion ##Platform_Name## Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Undo Redo
 publishingplatform: ##Platform_Name##
@@ -9,17 +9,30 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Undo Redo in ##Platform_Name## Gantt component
+# Undo Redo in ##Platform_Name## Gantt Chart Control
 
-The Undo feature enables users to revert the most recent action performed in the Gantt Chart. It helps undo changes made to tasks, dependencies, or other actions within the Gantt Chart.
+The undo redo feature in the ##Platform_Name## Gantt Chart control allows users to revert or reapply actions like task edits, deletions, or dependency changes, enhancing project management by correcting mistakes efficiently. Enabled via the [enableUndoRedo](../api/gantt#enableundoredo) property, it supports actions such as editing task details, dragging taskbars, or reordering columns. For example, undoing a task duration change restores the original timeline, while redoing it reapplies the edit. The [undoRedoActions](../api/gantt#undoredoactions) property specifies which actions to track (e.g., Edit, Delete), defaulting to a comprehensive set including sorting, filtering, and zooming. The [undoRedoStepsCount](../api/gantt#undoredostepscount) property limits the action history, defaulting to 10, with older actions removed as new ones are added. This feature ensures history management for complex projects with hierarchical tasks or frequent updates.
 
-The Redo feature can reapply an action that was previously undone using the Undo feature. This allows users to revert their decision to undo an action.
+## Configure undo redo
 
-The undo redo feature can be enabled in Gantt by using the [enableUndoRedo](https://ej2.syncfusion.com/javascript/documentation/api/gantt/#enableundoredo) property.
+Enable undo redo by setting [enableUndoRedo](../api/gantt#enableundoredo) to **true** and injecting `UndoRedo`. The [undoRedoActions](../api/gantt#undoredoactions) property customizes supported actions, such as:
+- **Edit:** Reverts task field changes (e.g., StartDate, Duration) via dialog or taskbar drag, requiring `Edit`.
+- **Delete:** Restores deleted tasks, requiring `Edit`.
+- **Add:** Removes added tasks, requiring `Edit`.
+- **Column Reorder:** Reverts column reordering, requiring `Reorder`.
+- **Indent/Outdent:** Reverts hierarchy changes, requiring `Edit`.
+- **Row Drag And Drop:** Restores row positions, requiring `RowDD`.
+- **Taskbar Drag And Drop:** Reverts taskbar drags, requiring `Edit`.
+- **Sorting, Filtering, Search:** Reverts grid operations, requiring respective services.
+- **Zoom In, Zoom Out, Zoom To Fit:** Reverts timeline zoom changes.
+- **ColumnState:** Restores column visibility.
+- **Previous Time Span, Next Time Span:** Reverts timeline navigation.
+
+The [undoRedoStepsCount](../api/gantt#undoredostepscount) property sets the action history limit (e.g., 5); setting it to **0** disables undo/redo. Ensure dependencies like `Edit` or `RowDD ` are injected for actions like Edit or RowDragAndDrop.
 
 ## Configure the feature set for undo redo actions
 
-By default, all the gantt features listed in the below table will be restored for undo and redo actions. However, you have the option to specify only the required actions to be restored using [undoRedoActions](https://ej2.syncfusion.com/javascript/documentation/api/gantt/#undoredoactions) property.
+By default, all the gantt features listed in the below table will be restored for undo and redo actions. However, you have the option to specify only the required actions to be restored using [undoRedoActions](../api/gantt#undoredoactions) property.
 
 | Built-in Undo Redo Items | Actions |
 |------------------------|---------|
@@ -42,7 +55,7 @@ By default, all the gantt features listed in the below table will be restored fo
 | PreviousTimeSpan | Undo redo actions can be performed for previous time span acton.|
 | NextTimeSpan | Undo redo actions can be performed for next time span action.|
 
-In the following code example, `Edit` and `Delete` actions are specified in `undoRedoActions` property.
+In the following code example, **Edit** and **Delete** actions are specified in `undoRedoActions` property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -71,15 +84,15 @@ In the following code example, `Edit` and `Delete` actions are specified in `und
 {% previewsample "page.domainurl/code-snippet/gantt/undo-redo-cs1" %}
 {% endif %}
 
-## Configuring the Storage Step Count for Undo and Redo Actions
+## Configuring the storage step count for undo and redo actions
 
-You can specify the number of actions to be stored for undo and redo operations using the [undoRedoStepsCount](https://ej2.syncfusion.com/javascript/documentation/api/gantt/#undoredostepscount) property.
+You can specify the number of actions to be stored for undo and redo operations using the [undoRedoStepsCount](../api/gantt#undoredostepscount) property.
 
 By default, the value of `undoRedoStepsCount` is set to 10.
 
 When the number of actions performed exceeds the `undoRedoStepsCount`, the oldest action in the undo collection is removed, and the latest action performed is added to the collection. This ensures that the number of stored actions does not exceed the specified limit, maintaining efficient memory usage.
 
-In the following example, `undoRedoStepsCount` value is set to 5.
+In the following example, `undoRedoStepsCount` value is set to 5. This code allows reverting task edits (e.g., changing a task’s duration) or deletions, with up to 5 actions stored.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -108,11 +121,11 @@ In the following example, `undoRedoStepsCount` value is set to 5.
 {% previewsample "page.domainurl/code-snippet/gantt/undo-redo-cs2" %}
 {% endif %}
 
-## Perform undo redo actions programatically
+## Programmatic undo and redo in Gantt Chart
 
-You can perform undo and redo actions programatically using [undo](https://ej2.syncfusion.com/documentation/api/gantt/#undo) and [redo](https://ej2.syncfusion.com/documentation/api/gantt/#redo) methods.
+Programmatic control over undo redo is achieved using methods like [undo](../api/gantt/#undo) to revert actions, [redo](../api/gantt#redo) to reapply them.
 
-The following code example demonstrates how to invoke the `undo` and `redo` method by clicking the external button.
+The following example triggers `undo` and `redo` via external buttons:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -143,9 +156,9 @@ The following code example demonstrates how to invoke the `undo` and `redo` meth
 
 ## Retrieve undo and redo stack collection
 
-By default, when an undo or redo action is performed, the actions are stored in an array collection. To retrieve the undo and redo stack array collections, you can use the [getUndoActions](https://ej2.syncfusion.com/documentation/api/gantt/#getundoactions) and [getRedoActions](https://ej2.syncfusion.com/documentation/api/gantt/#getredoactions) methods.
+By default, when an undo or redo action is performed, the actions are stored in an array collection. To retrieve the undo and redo stack array collections, you can use the [getUndoActions](../api/gantt#getundoactions) and [getRedoActions](../api/gantt#getredoactions) methods.
 
-The following code example demonstrates how to retrieve the undo and redo collection using method by clicking the external button.
+The following code example demonstrates how to retrieve the **undo** and **redo** collection using method by clicking the external button.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -176,7 +189,7 @@ The following code example demonstrates how to retrieve the undo and redo collec
 
 ## Clear undo and redo collection
 
-At any point, you can clear the undo and redo collections using the [clearUndoCollection](https://ej2.syncfusion.com/documentation/api/gantt/#clearundocollection) and [clearRedoCollection](https://ej2.syncfusion.com/documentation/api/gantt/#clearredocollection) methods. This allows you to reset the undo and redo stacks as needed during runtime.
+At any point, you can clear the undo and redo collections using [clearUndoCollection](../api/gantt#clearundocollection) and [clearRedoCollection](../api/gantt#clearredocollection) methods. This allows you to reset the undo and redo stacks as needed during runtime.
 
 The following code example demonstrates how to clear the undo and redo collection using method by clicking the external button.
 
@@ -206,3 +219,8 @@ The following code example demonstrates how to clear the undo and redo collectio
 
 {% previewsample "page.domainurl/code-snippet/gantt/undo-redo-cs5" %}
 {% endif %}
+
+## See also
+- [How to configure task editing?](./managing-tasks/task-bar-editing)
+- [How to manage task dependencies?](./task-dependency)
+- [How to configure critical path?](./critical-path)

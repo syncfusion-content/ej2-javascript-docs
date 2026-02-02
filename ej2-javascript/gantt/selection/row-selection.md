@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Row selection in ##Platform_Name## Gantt control
 
-The row selection in the Gantt control can be enabled or disabled using the [`allowSelection`](../../api/gantt/#allowselection) property. You can get the selected row object using the [`getSelectedRecords`](../../api/gantt/selection/#getselectedrecords) method. The following code example shows how to disable the row selection in Gantt.
+The row selection in the Gantt control can be enabled or disabled using the [allowSelection](../../api/gantt#allowselection) property. You can get the selected row object using the [getSelectedRecords](../../api/gantt/selection#getselectedrecords) method. The following code example shows how to disable the row selection in Gantt.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,7 +44,7 @@ The row selection in the Gantt control can be enabled or disabled using the [`al
 
 ## Selecting a row on initial load
 
-You can select a row at the time of loading by setting the index of the row to the [`selectedRowIndex`](../../api/gantt/#selectedrowindex) property. Find the following code example for details.
+You can select a row at the time of loading by setting the index of the row to the [selectedRowIndex](../../api/gantt#selectedrowindex) property. Find the following code example for details.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -75,7 +75,7 @@ You can select a row at the time of loading by setting the index of the row to t
 
 ## Selecting a row dynamically
 
-You can also select a row dynamically using the [`selectRow`](../../api/gantt/selection/#selectrow) method. Similarly, You can also select rows dynamically using the [`selectRows`](../../api/gantt/selection/#selectrows) method. The following code demonstrates how to select a single or multiples row dynamically by clicking the custom button.
+You can also select a row dynamically using the [selectRow](../../api/gantt/selection#selectrow) method. Similarly, You can also select rows dynamically using the [selectRows](../../api/gantt/selection#selectrows) method. The following code demonstrates how to select a single or multiples row dynamically by clicking the custom button.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -106,7 +106,7 @@ You can also select a row dynamically using the [`selectRow`](../../api/gantt/se
 
 ## Multiple row selection
 
-You can select multiple rows by setting the [`selectionSettings.type`](../../api/gantt/selectionSettings/#type) property to `multiple`. You can select more than one row by holding down the CTRL key while selecting multiple rows. The following code example explains how to enable multiple selection in Gantt.
+You can select multiple rows by setting the [selectionSettings.type](../../api/gantt/selectionSettings#type) property to `multiple`. You can select more than one row by holding down the CTRL key while selecting multiple rows. The following code example explains how to enable multiple selection in Gantt.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -137,7 +137,7 @@ You can select multiple rows by setting the [`selectionSettings.type`](../../api
 
 ## Customize row selection action
 
-While selecting a row in Gantt, the [`rowSelecting`](../../api/gantt/#rowselecting) and [`rowSelected`](../../api/gantt/#rowselected) events will be triggered. The the [`rowSelecting`](../../api/gantt/#rowselecting) event will be triggered on initialization of row selection, and you can get the previously selected row and current selecting row’s information, which is used to prevent selection of a particular row. The [`rowSelected`](../../api/gantt/#rowselected) event will be triggered on completion of row selection action, and you can get the current selected row’s information through this event. The following code example demonstrates how to prevent the selection of a row using the [`rowSelecting`](../../api/gantt/#rowselecting) event.
+While selecting a row in Gantt, the [rowSelecting](../../api/gantt#rowselecting) and [rowSelected](../../api/gantt#rowselected) events will be triggered. The the [rowSelecting](../../api/gantt#rowselecting) event will be triggered on initialization of row selection, and you can get the previously selected row and current selecting row’s information, which is used to prevent selection of a particular row. The [rowSelected](../../api/gantt#rowselected) event will be triggered on completion of row selection action, and you can get the current selected row’s information through this event. The following code example demonstrates how to prevent the selection of a row using the [rowSelecting](../../api/gantt#rowselecting) event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -166,4 +166,4 @@ While selecting a row in Gantt, the [`rowSelecting`](../../api/gantt/#rowselecti
 {% previewsample "page.domainurl/code-snippet/gantt/selection-cs7" %}
 {% endif %}
 
-In the Gantt control, when you click an already selected row, selection will be cleared. While deselecting a row in Gantt, the [`rowDeselecting`](../../api/gantt/#rowdeselecting) and [`rowDeselected`](../../api/gantt/#rowselected) events will occur. The [`rowDeselecting`](../../api/gantt/#rowdeselecting) event will occur on initialization of deselecting row, and you can get the current deselecting row’s information to prevent the deselection of particular row. The [`rowDeselected`](../../api/gantt/#rowselected) event will occur on completion of row deselection action, and you can get the current deselected row’s information.
+In the Gantt control, when you click an already selected row, selection will be cleared. While deselecting a row in Gantt, the [rowDeselecting](../../api/gantt#rowdeselecting) and [rowDeselected](../../api/gantt#rowselected) events will occur. The [rowDeselecting](../../api/gantt#rowdeselecting) event will occur on initialization of deselecting row, and you can get the current deselecting row’s information to prevent the deselection of particular row. The [rowDeselected](../../api/gantt#rowselected) event will occur on completion of row deselection action, and you can get the current deselected row’s information.

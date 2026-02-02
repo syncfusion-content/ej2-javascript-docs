@@ -19,7 +19,7 @@
 }
 
 #container #Gantt{
-	height:450px;
+    height:450px;
 }
 .e-quickfilter::before {
     content: '\e7ee';

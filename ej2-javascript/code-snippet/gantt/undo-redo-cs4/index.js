@@ -1,7 +1,7 @@
 ej.gantt.Gantt.Inject(ej.gantt.Edit,ej.gantt.Toolbar, ej.gantt.Selection, ej.gantt.Filter,ej.gantt.Sort,ej.gantt.RowDD,ej.gantt.ColumnMenu,ej.gantt.Reorder,ej.gantt.Resize,ej.gantt.UndoRedo);
 
 var ganttChart = new ej.gantt.Gantt({
-	dataSource: GanttData,
+    dataSource: GanttData,
     height: '450px',
     allowSorting: true,
     allowFiltering: true,
@@ -25,7 +25,9 @@ var ganttChart = new ej.gantt.Gantt({
     editSettings: {
         allowEditing: true,
         allowAdding: true,
-        allowDeleting: true
+        allowDeleting: true,
+        allowTaskbarEditing: true,
+        showDeleteConfirmDialog: true
     }
      });
 ganttChart.appendTo('#Gantt');
@@ -38,10 +40,10 @@ getredocollection.appendTo('#getredocollection');
 
 document.getElementById('getundocollection').addEventListener('click', () => {
     var ganttObj= document.getElementById('Gantt').ej2_instances[0];
-	console.log(ganttObj.getUndoActions());
+    console.log(ganttObj.getUndoActions());
 });
 
 document.getElementById('getredocollection').addEventListener('click', () => {
     var ganttObj= document.getElementById('Gantt').ej2_instances[0];
-	console.log(ganttObj.getRedoActions());
+    console.log(ganttObj.getRedoActions());
 });

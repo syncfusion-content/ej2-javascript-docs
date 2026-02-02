@@ -1,7 +1,7 @@
 ej.gantt.Gantt.Inject(ej.gantt.Edit,ej.gantt.Toolbar, ej.gantt.Selection, ej.gantt.Filter,ej.gantt.Sort,ej.gantt.RowDD,ej.gantt.ColumnMenu,ej.gantt.Reorder,ej.gantt.Resize,ej.gantt.UndoRedo);
 
 var ganttChart = new ej.gantt.Gantt({
-	dataSource: GanttData,
+    dataSource: GanttData,
     height: '450px',
     allowSorting: true,
     allowFiltering: true,
@@ -10,8 +10,7 @@ var ganttChart = new ej.gantt.Gantt({
     allowResizing: true,
     allowReordering: true,
     allowRowDragAndDrop: true,
-    undoRedoActions: ['Add', 'Edit', 'Delete', 'Search','Sorting','Filtering', 'ZoomIn', 'ZoomOut', 'ZoomToFit','Indent','Outdent', 
-    'PreviousTimeSpan', 'NextTimeSpan','ColumnState'],
+    undoRedoActions: ['Edit', 'Delete'],
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
@@ -25,7 +24,9 @@ var ganttChart = new ej.gantt.Gantt({
     editSettings: {
         allowEditing: true,
         allowAdding: true,
-        allowDeleting: true
+        allowDeleting: true,
+        allowTaskbarEditing: true,
+        showDeleteConfirmDialog: true
     }
      });
 ganttChart.appendTo('#Gantt');

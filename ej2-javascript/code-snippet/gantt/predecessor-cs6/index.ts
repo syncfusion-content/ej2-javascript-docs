@@ -7,14 +7,14 @@ switchObj.appendTo('#switch');
 function Onchange() {
 	let ganttDependencyViewContainer = document.querySelector('.e-gantt-dependency-view-container') as HTMLElement;
 	if (switchObj.checked) {
-	    ganttDependencyViewContainer.style.visibility = 'hidden';
+    ganttDependencyViewContainer.style.visibility = 'hidden';
 	} else {
 		ganttDependencyViewContainer.style.visibility  = 'visible';
 	}
 }
 let gantt: Gantt = new Gantt({
   dataSource: GanttData,
-  height: '450px',
+  height: '420px',
   taskFields: {
     id: 'TaskID',
     name: 'TaskName',
@@ -23,6 +23,13 @@ let gantt: Gantt = new Gantt({
     duration: 'Duration',
     progress: 'Progress',
     parentID: 'ParentID',
+  },
+  editSettings: {
+    allowAdding: true,
+    allowEditing: true,
+    allowDeleting: true,
+    allowTaskbarEditing: true,
+    showDeleteConfirmDialog: true,
   },
   columns: [
     { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: '100' },

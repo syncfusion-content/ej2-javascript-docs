@@ -25,11 +25,13 @@ let gantt: Gantt = new Gantt({
         parentID: 'ParentID'
     },
     toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Search', 'ZoomIn', 'ZoomOut', 'ZoomToFit','Indent','Outdent', 
-    'PrevTimeSpan', 'NextTimeSpan','Undo','Redo'],
+    'PrevTimeSpan', 'NextTimeSpan'],
     editSettings: {
         allowEditing: true,
         allowAdding: true,
-        allowDeleting: true
+        allowDeleting: true,
+        allowTaskbarEditing: true,
+        showDeleteConfirmDialog: true
     }
 });
 gantt.appendTo('#Gantt');

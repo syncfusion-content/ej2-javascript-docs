@@ -1,5 +1,5 @@
 #container {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 #loader {
@@ -13,11 +13,10 @@
   width: 30%;
 }
 
-#element {
-    display: block;
-    height: 350px;
+.e-gantt .e-selectionbackground, .e-gantt .e-active  {
+  background-color: #f9920b !important;
 }
 
-#container #Gantt{
-	height:450px;
+.e-gantt .e-altrow {
+  background-color: #f2dadaff;
 }

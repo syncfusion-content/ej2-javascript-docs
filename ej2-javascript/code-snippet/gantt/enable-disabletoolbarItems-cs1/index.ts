@@ -1,5 +1,5 @@
 import { Gantt, Toolbar, Filter } from '@syncfusion/ej2-gantt';
-import { Button } from '@syncfusion/ej2-buttons';
+import { Switch, ChangeEventArgs } from '@syncfusion/ej2-buttons';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { GanttData } from './datasource.ts';
 
@@ -16,12 +16,15 @@ let gantt: Gantt = new Gantt({
         progress: 'Progress',
         parentID: 'ParentID'
     },
-    toolbar: ['QuickFilter', 'ClearFilter'],
+    toolbar: [
+        { text: 'Quick Filter', id: 'QuickFilter' }, 
+        { text: 'Clear Filter', id: 'ClearFilter' }
+    ],
     toolbarClick: (args: ClickEventArgs) => {
-        if (args.item.text === 'QuickFilter') {
+        if (args.item.id === 'QuickFilter') {
             gantt.filterByColumn('TaskName', 'startswith', 'Identify');
         }
-        if (args.item.text === 'ClearFilter') {
+        if (args.item.id === 'ClearFilter') {
             gantt.clearFiltering();
         }
     },
@@ -30,13 +33,13 @@ let gantt: Gantt = new Gantt({
 
 gantt.appendTo('#Gantt');
 
-let enable: Button = new Button({}, '#enable');
-let disable: Button = new Button({}, '#disable');
+let switchObj: Switch = new Switch({
+    checked: true,
+    change: (args: ChangeEventArgs) => {
+        const enable = args.checked as boolean;
+        // Enable or disable both custom toolbar items.
+        gantt.toolbarModule.enableItems(['QuickFilter', 'ClearFilter'], enable);
+    }
+});
 
-enable.element.onclick = () => {
-    gantt.toolbarModule.enableItems([gantt.element.id + '_QuickFilter', gantt.element.id + '_ClearFilter'], true);// enable toolbar items.
-};
-
-disable.element.onclick = () => {
-    gantt.toolbarModule.enableItems([gantt.element.id + '_QuickFilter', gantt.element.id + '_ClearFilter'], false);// disable toolbar items.
-};
+switchObj.appendTo('#switch');

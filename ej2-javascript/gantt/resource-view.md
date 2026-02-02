@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Resource view in ##Platform_Name## Gantt control
 
-The resource breakdown view is used to visualize the tasks assigned to each resource in hierarchy manner. Resources are displayed as parents and all the tasks assigned to each resource are displayed as its child records. It can be initialized by setting the [`viewType`](../api/gantt/#viewtype) property to `ResourceView`.
+The resource breakdown view is used to visualize the tasks assigned to each resource in hierarchy manner. Resources are displayed as parents and all the tasks assigned to each resource are displayed as its child records. It can be initialized by setting the [viewType](../api/gantt#viewtype) property to `ResourceView`.
 
 ## Resource task
 
@@ -89,7 +89,7 @@ A task not assigned to any one of the resource are termed as unassigned tasks. T
 
 ## Enable taskbar drag and drop
 
-In Gantt, you can enable taskbar drag and drop between resources by using the [`allowTaskbarDragAndDrop`](../api/gantt/#allowtaskbardraganddrop) property. This allows you to move a taskbar from one resource to another vertically, making it easier to schedule tasks and manage resources.
+In Gantt, you can enable taskbar drag and drop between resources by using the [allowTaskbarDragAndDrop](../api/gantt#allowtaskbardraganddrop) property. This allows you to move a taskbar from one resource to another vertically, making it easier to schedule tasks and manage resources.
 
 {% if page.publishingplatform == "typescript" %}
 

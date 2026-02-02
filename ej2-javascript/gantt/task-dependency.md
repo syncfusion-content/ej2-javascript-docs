@@ -1,94 +1,87 @@
 ---
 layout: post
-title: Task dependency in ##Platform_Name## Gantt control | Syncfusion
-description: Learn here all about Task dependency in Syncfusion ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more.
+title: Task Dependency in ##Platform_Name## Gantt Chart Control | Syncfusion
+description: Learn here all about task dependency in Syncfusion ##Platform_Name## Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Task dependency 
+control: Task Dependency 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Task dependency in ##Platform_Name## Gantt control
+# Task Dependency in ##Platform_Name## Gantt Chart Control
 
-Task dependency or task relationship can be established between two tasks in Gantt. This dependency affects the project schedule. If you change the predecessor of a task, it will affect the successor task, which will affect the next task, and so on. Relationship can be established between parent-parent tasks, child-child tasks, parent-child and child-parent task.
+Task dependency in the ##Platform_Name## Gantt Chart control establishes relationships between tasks, affecting scheduling where changes to predecessors impact successors. Dependencies are categorized into four types—Start to Start (SS), Start to Finish (SF), Finish to Start (FS), and Finish to Finish (FF)—mapped via the [taskFields.dependency](../api/gantt/taskFields#dependency) property in the data source. Parent dependencies are enabled by default with [allowParentDependency](../api/gantt#allowparentdependency) set to **true**, allowing relationships between parent-parent, child-child, parent-child, and child-parent tasks. Offsets support day, hour, or minute units for precise timing, and validation modes handle conflicts during editing via the [actionBegin](../api/gantt#actionbegin) event. Connector lines are customized using [connectorLineWidth](../api/gantt#connectorlinewidth) and [connectorLineBackground](../api/gantt#connectorlinebackground), with the `queryTaskbarInfo` event enabling dynamic styling. Public methods like [addPredecessor](../api/gantt#addpredecessor) and [removePredecessor](../api/gantt#removepredecessor) allow programmatic management, ensuring accurate visualization with ARIA labels for accessibility and responsive scaling for mobile views.
 
-In Gantt, you can enable or disable the parent predecessor using [`allowParentDependency`](../api/gantt/#allowparentdependency) property.
+## Configure task dependencies
 
-By default, the `allowParentDependency` property will be `true`.
+Task dependencies are defined in the data source as string values (e.g., '2FS+3d' for Finish to Start with 3-day offset) and mapped using [taskFields.dependency](../api/gantt/taskFields#dependency). Parent dependencies can be enabled by [allowParentDependency](../api/gantt#allowparentdependency) property. By default, the `allowParentDependency` property will be **true**.
 
-## Task relationship types
+Multiple predecessor relationships can be defined in a single task by assigning a comma-separated string to the `Predecessor` field, such as `'2FS,3FS'`. This configuration allows the Gantt Chart to interpret and render multiple dependencies during the initial data load.
 
-Task relationships are categorized into four types based on the start and finish dates of the task.
+```ts
+{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 0, Predecessor: '3FS,2FS', Progress: 30 }
+```
 
-### Start to Start (SS)
-
-You cannot start a task until the dependent task also starts.
-
-![Alt text](images/ss.png)
-
-### Start to Finish (SF)
-
-You cannot finish a task until the dependent task is started.
-
-![Alt text](images/sf.png)
-
-### Finish to Start (FS)
-
-You cannot start a task until the dependent task is completed.
-
-![Alt text](images/fs.png)
-
-### Finish to Finish (FF)
-
-You cannot finish a task until the dependent task is completed.
-
-![Alt text](images/ff.png)
-
-## Define task relationship
-
-Task relationship is defined in the data source as a string value, and this value is mapped to the Gantt control by using the [`taskFields.dependency`](../api/gantt/taskFields/#dependency) property. The following code example demonstrates how to enable the predecessor in the Gantt control.
+The following example establishes dependencies. This code renders connector lines for dependencies like '2FS' and updates taskbars when changes occur.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt/predecessor-cs1/index.ts %}
+{% include code-snippet/gantt/task-dependency/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/predecessor-cs1/index.html %}
+{% include code-snippet/gantt/task-dependency/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/gantt/predecessor-cs1" %}
+{% previewsample "page.domainurl/code-snippet/gantt/task-dependency" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt/predecessor-cs1/index.js %}
+{% include code-snippet/gantt/task-dependency/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/predecessor-cs1/index.html %}
+{% include code-snippet/gantt/task-dependency/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/gantt/predecessor-cs1" %}
+{% previewsample "page.domainurl/code-snippet/gantt/task-dependency" %}
 {% endif %}
 
-## Predecessor offset with duration units
+## Understand task relationship types
 
-In the Gantt control, the predecessor offset can be defined with the following duration units:
+Task relationships are categorized into four types based on start and finish dates:
+- Start to Start (SS): Successor starts with predecessor.
 
-* Day
-* Hour
-* Minute
+    ![Start to Start dependency](../images/ss.png)
 
-You can define an offset with various offset duration units for predecessors by using the following code example.
+- Start to Finish (SF): Successor finishes when predecessor starts.
+
+    ![Start to Finish dependency](../images/sf.png)
+
+- Finish to Start (FS): Successor starts after predecessor finishes (default).
+
+    ![Finish to Start dependency](../images/fs.png)
+
+- Finish to Finish (FF): Successor finishes with predecessor.
+
+    ![Finish to Finish dependency](../images/ff.png)
+
+Specify types in the data source (e.g., '2SS+1h') for hour-based offsets.
+
+## Configure predecessor offsets with duration units
+
+Predecessor offsets support day, hour, or minute units (e.g., '2FS+3h'), allowing precise delays or leads between tasks.
+
+The following example uses duration units. This code applies offsets such as '2FS+3h', adjusting the taskbars accordingly.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/predecessor-cs2/index.ts %}
 {% endhighlight %}
@@ -113,13 +106,15 @@ You can define an offset with various offset duration units for predecessors by 
 {% previewsample "page.domainurl/code-snippet/gantt/predecessor-cs2" %}
 {% endif %}
 
-## Disabling automatic dependency offset updates
+## Disable automatic dependency offset updates
 
-By default, the dependency offsets are automatically updated in the Gantt chart whenever a task's start or end date is changed. However, if you want to disable this feature, you can do so by disabling the [`updateOffsetOnTaskbarEdit`](../api/gantt/#updateOffsetOnTaskbarEdit) property. Once this property is disabled, you can only update the offset value by editing the predecessor column cell or the offset column in the dependency tab of the edit dialog.
+Automatic offset updates during taskbar editing are disabled with [updateOffsetOnTaskbarEdit](../api/gantt#updateoffsetontaskbaredit) set to **false**, allowing manual updates via the dependency tab or predecessor column.
+
+The following example disables automatic updates. This code preserves dependency offsets during edits, requiring manual adjustments.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/predecessor-cs3/index.ts %}
 {% endhighlight %}
@@ -144,29 +139,19 @@ By default, the dependency offsets are automatically updated in the Gantt chart 
 {% previewsample "page.domainurl/code-snippet/gantt/predecessor-cs3" %}
 {% endif %}
 
-## Validate predecessor links on editing
+## Handle dependency validation modes
 
-In Gantt, task relationship link can be broken by editing the start date, end date and duration value of task. When the task relationship broken on any edit action. This can be handled in Gantt in two ways.
-* Using actionBegin event
-* Using predecessor validation dialog
+Dependency validation during editing uses the [actionBegin](../api/gantt#actionbegin) event with `requestType: 'validateLinkedTask'`. The `validateMode` argument defines modes:
 
-### Using actionBegin event
+- `respectLink`: Prioritizes links, reverting invalid edits.
+- `removeLink`: Prioritizes editing, removing conflicting links.
+- `preserveLinkWithEditing`: Updates offsets to maintain links (default).
 
-When the task relationship link is broken on any edit action, then the [`actionBegin`](../api/gantt/#actionbegin) event will be triggered with `requestType` argument as `validateLinkedTask`. You can validate the editing action within the actionBegin event using the `validateMode` event argument. The `validateMode` event argument has the following properties:
-
-Argument |Default value |Description
------|-----|-----
-args.validateMode.respectLink | false | In this validation mode, the predecessor links get high priority. With this mode enabled, when the successor task is moved before the predecessor task’s end date, the editing will be reverted, and dates will be validated based on the dependency links.
-args.validateMode.removeLink | false | In this validation mode, the taskbar editing gets high priority. For inappropriate task dates, the dependency links will be removed and tasks will be moved to the edited date.
-args.validateMode.preserveLinkWithEditing | true | In this validation mode, the taskbar editing will be considered along with the dependency links. This relationship will be maintained by updating the offset value of predecessors.
-
-By default, the `preserveLinkWithEditing` validation mode will be enabled, so the predecessors are updated with offset values.
-
-The following sample explains enabling the `respectLink` validation mode while editing the linked tasks in the [`actionBegin`](../api/gantt/#actionbegin) event.
+The following example enables `respectLink` mode. This code reverts edits violating links, ensuring dependency integrity.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/predecessor-cs4/index.ts %}
 {% endhighlight %}
@@ -191,28 +176,15 @@ The following sample explains enabling the `respectLink` validation mode while e
 {% previewsample "page.domainurl/code-snippet/gantt/predecessor-cs4" %}
 {% endif %}
 
-### Using validation dialog
+## Use validation dialog
 
-When disabling all the validation modes in the [`actionBegin`](../api/gantt/#actionbegin) event, a validation pop-up will be displayed prompting users to select the validation mode to validate taskbar editing.
+When all validation modes are disabled in [actionBegin](../api/gantt#actionbegin), a dialog prompts users to choose modes like canceling edits or removing links, based on the successor's start date relative to the predecessor.
 
-This validation pop-up will display different options based on the successor task’s start date after editing.
-
-If you move the successor task that starts after the predecessor task’s end date, then a dialog will be rendered with the following options:
-
-* Cancel, Keep the existing link.
-* Remove the link and move the task to start on edited date.
-* Move the task to start on edited date and keep the link.
-
-If you move the successor task that starts before the predecessor task’s end date, then a dialog will be rendered with the following options:
-
-* Cancel, Keep the existing link.
-* Remove the link and move the task to start on edited date.
-
-The following code example shows how to enable the predecessor validation dialog in Gantt.
+The following example enables the validation dialog. This code displays options like "Remove the link and move the task" for conflicts.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/predecessor-cs5/index.ts %}
 {% endhighlight %}
@@ -237,9 +209,11 @@ The following code example shows how to enable the predecessor validation dialog
 {% previewsample "page.domainurl/code-snippet/gantt/predecessor-cs5" %}
 {% endif %}
 
-## Dynamically show/hide the dependency line
+## Show or hide dependency lines dynamically
 
-By default, mapping the dependency field in taskFields displays dependency lines in the Gantt chart. To hide the dependency line upon button click, set `visibility` style to hidden for the CSS class name `.e-gantt-dependency-view-container`.
+Dependency lines are hidden or shown by toggling `visibility: hidden` on `.e-gantt-dependency-view-container`, allowing dynamic control for focused views.
+
+The following example toggles dependency lines. This code hides lines on button click, with ARIA updates for accessibility.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -267,3 +241,111 @@ By default, mapping the dependency field in taskFields displays dependency lines
 
 {% previewsample "page.domainurl/code-snippet/gantt/predecessor-cs6" %}
 {% endif %}
+
+## Managing predecessor dependencies
+
+You can manage task dependencies by adding, updating, or removing predecessor links. These methods control task order and execution:
+
+- [addPredecessor](../api/gantt#addpredecessor): Adds a predecessor to a task to define its dependency.
+- [removePredecessor](../api/gantt#removepredecessor): Removes an existing dependency from the task.
+- [updatePredecessor](../api/gantt#updatepredecessor): Updates the dependency details using the task's ID.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/predecessor-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/predecessor-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/predecessor-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/predecessor-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/predecessor-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/predecessor-cs1" %}
+{% endif %}
+
+## Customize connector lines
+
+Connector lines are styled globally with [connectorLineWidth](../api/gantt#connectorlinewidth) and [connectorLineBackground](../api/gantt#connectorlinebackground).
+
+The following example sets the connector line background color as red:
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/connector-line/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/connector-line/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/connector-line" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/connector-line/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/connector-line/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/connector-line" %}
+{% endif %}
+
+## Disable predecessor validation
+
+By default, Gantt Chart task dates are validated based on predecessor values. To disable this validation, set the [enablePredecessorValidation](../api/gantt#enablepredecessorvalidation) property to **false**.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/disable-predecessor/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/disable-predecessor/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/disable-predecessor" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/disable-predecessor/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/disable-predecessor/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/disable-predecessor" %}
+{% endif %}
+
+## Limitation
+
+> When virtualization is enabled, dependency lines are shown only for tasks currently visible in the viewport. If two tasks are connected by a line, the line will appear only if at least one of the tasks is visible. If both tasks are expanded and the line spans across pages, it will still be displayed as long as one task is in view.
+
+## See also
+- [How to configure task constraints?](./task-constraints)
+- [How to customize taskbars?](./taskbar)
+- [How to enable critical path?](./critical-path)

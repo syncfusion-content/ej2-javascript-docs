@@ -1,5 +1,5 @@
 #container {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 #loader {
@@ -13,11 +13,10 @@
   width: 30%;
 }
 
-#element {
-    display: block;
-    height: 350px;
+#Gantt {
+  margin-top: 10px;
 }
 
-#container #Gantt{
-	height:450px;
+#medium, #big {
+  margin-left: 5px;
 }

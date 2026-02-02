@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Column spanning in ##Platform_Name## Gantt control
 
-The gantt has option to span the adjacent cells. You need to define the [`colSpan`](../../api/gantt/queryCellInfoEventArgs/#colspan) attribute to span cells in the [`QueryCellInfo`](../../api/gantt/queryCellInfoEventArgs) event.
+The gantt has option to span the adjacent cells. You need to define the [colSpan](../../api/gantt/queryCellInfoEventArgs#colspan) attribute to span cells in the [QueryCellInfo](../../api/gantt/queryCellInfoEventArgs) event.
 
 In the following demo, **Work 1**  cells have been spanned.
 

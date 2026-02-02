@@ -8,7 +8,7 @@ Gantt.Inject(Edit);
 
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
-    height: '450px',
+    height: '380px',
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
@@ -20,7 +20,6 @@ let gantt: Gantt = new Gantt({
     },
     editSettings: {
         allowEditing: true,
-        allowTaskbarEditing: true
     },
     allowUnscheduledTasks: true
 });

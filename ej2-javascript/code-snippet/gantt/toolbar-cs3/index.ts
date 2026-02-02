@@ -7,7 +7,10 @@ Gantt.Inject(Toolbar, Filter);
 
 let clickHandler: EmitType<ClickEventArgs> = (args: ClickEventArgs) => {
     if (args.item.text === 'Test') {
-        alert("Custom toolbar click...");
+        const messageElement = document.getElementById('message');
+        if (messageElement) {
+            messageElement.textContent = 'Custom toolbar click';
+        }
     }
 };
 
@@ -18,6 +21,7 @@ let gantt: Gantt = new Gantt({
         id: 'TaskID',
         name: 'TaskName',
         startDate: 'StartDate',
+        endDate: 'EndDate',
         duration: 'Duration',
         progress: 'Progress',
         parentID: 'ParentID'

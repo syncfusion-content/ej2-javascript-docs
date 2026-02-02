@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## Taskbar editing
 
-Modify the task details through user interaction such as resizing and dragging the taskbar by enabling the [`allowTaskbarEditing`](../../api/gantt/editSettings/#allowtaskbarediting) property.
+Modify the task details through user interaction such as resizing and dragging the taskbar by enabling the [allowTaskbarEditing](../../api/gantt/editSettings#allowtaskbarediting) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,7 +44,7 @@ Modify the task details through user interaction such as resizing and dragging t
 
 ## Prevent editing for specific tasks
 
-On taskbar edit action, the [`taskbarEditing`](../../api/gantt/#taskbarediting) event will be triggered. You can prevent the taskbar from editing using the [`taskbarEditing`](../../api/gantt/#taskbarediting) event. This can be done by setting cancel property of [`taskbarEditing`](../../api/gantt/#taskbarediting) event argument to true. And we can hide the taskbar editing indicators like taskbar resizer, progress resizer and connector points by using [`queryTaskbarInfo`](../../api/gantt/#querytaskbarinfo) event.  The following code example shows how to achieve this.
+On taskbar edit action, the [taskbarEditing](../../api/gantt#taskbarediting) event will be triggered. You can prevent the taskbar from editing using the [taskbarEditing](../../api/gantt#taskbarediting) event. This can be done by setting cancel property of [taskbarEditing](../../api/gantt#taskbarediting) event argument to true. And we can hide the taskbar editing indicators like taskbar resizer, progress resizer and connector points by using [queryTaskbarInfo](../../api/gantt#querytaskbarinfo) event.  The following code example shows how to achieve this.
 
 {% if page.publishingplatform == "typescript" %}
 

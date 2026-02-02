@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # Filtering in ##Platform_Name## Gantt control
 
-Filtering allows you to view specific or related records based on filter criteria. This can be done in the Gantt control by using the filter menu support and toolbar search support. To enable filtering in the Gantt control, set the [`allowFiltering`](../../api/gantt/#allowfiltering) to true. Menu filtering support can be configured using the [`filterSettings`](../../api/gantt/filterSettings/) property and toolbar searching can be configured using the [`searchSettings`](../../api/gantt/searchSettings/) property.
+Filtering allows you to view specific or related records based on filter criteria. This can be done in the Gantt control by using the filter menu support and toolbar search support. To enable filtering in the Gantt control, set the [allowFiltering](../../api/gantt#allowfiltering) to true. Menu filtering support can be configured using the [filterSettings](../../api/gantt/filterSettings) property and toolbar searching can be configured using the [searchSettings](../../api/gantt/searchSettings) property.
 
-To use filter, inject the [`Filter`](../../api/gantt/#filtermodule) module into the Gantt control.
+To use filter, inject the [Filter](../../api/gantt#filtermodule) module into the Gantt control.
 
 ## Filter hierarchy modes
 
-The Gantt supports a set of filtering modes with the [`filterSettings.hierarchyMode`](../../api/gantt/filterSettings/#hierarchymode) property. The following are the types of filter hierarchy modes available in the Gantt control:
+The Gantt supports a set of filtering modes with the [filterSettings.hierarchyMode](../../api/gantt/filterSettings#hierarchymode) property. The following are the types of filter hierarchy modes available in the Gantt control:
 
 * `Parent`: This is the default filter hierarchy mode in Gantt. The filtered records are displayed with its parent records. If the filtered records do not have any parent record, then only the filtered records will be displayed.
 
@@ -56,7 +56,7 @@ The Gantt supports a set of filtering modes with the [`filterSettings.hierarchyM
 
 ## Initial filter
 
-To apply the filter at initial rendering, set the filter to `predicate` object in the [`filterSettings.columns`](../../api/gantt/filterSettings/#columns) property.
+To apply the filter at initial rendering, set the filter to `predicate` object in the [filterSettings.columns](../../api/gantt/filterSettings#columns) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -107,7 +107,7 @@ lessthanorequal |Checks whether the value is less than or equal to the specified
 
 ## Diacritics
 
-By default, the Gantt control ignores the diacritic characters while filtering. To include diacritic characters, set the [`filterSettings.ignoreAccent`](../../api/gantt/filterSettings/#ignoreaccent) to true.
+By default, the Gantt control ignores the diacritic characters while filtering. To include diacritic characters, set the [filterSettings.ignoreAccent](../../api/gantt/filterSettings#ignoreaccent) to true.
 
 In the following sample, type **Perform** in the **TaskName** column to filter diacritic characters.
 
@@ -140,7 +140,7 @@ In the following sample, type **Perform** in the **TaskName** column to filter d
 
 ## Filtering a specific column by method
 
-You can filter the columns dynamically by using the [`filterByColumn`](../../api/gantt/#filterbycolumn) method.
+You can filter the columns dynamically by using the [filterByColumn](../../api/gantt#filterbycolumn) method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -171,7 +171,7 @@ You can filter the columns dynamically by using the [`filterByColumn`](../../api
 
 ## Clear filtered columns
 
-You can clear all the filtering condition done in the Gantt control by using the [`clearFiltering`](../../api/gantt/#clearfiltering) method.
+You can clear all the filtering condition done in the Gantt control by using the [clearFiltering](../../api/gantt#clearfiltering) method.
 The following code snippet explains the above behavior.
 
 {% if page.publishingplatform == "typescript" %}

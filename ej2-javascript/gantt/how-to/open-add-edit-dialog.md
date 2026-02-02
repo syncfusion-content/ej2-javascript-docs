@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Open add edit dialog in ##Platform_Name## Gantt control
 
-Gantt add and edit dialogs can be opened dynamically by using [`openAddDialog`](../../api/gantt/#openadddialog) and [`openEditDialog`](../../api/gantt/#openeditdialog) methods. The following code example shows how to open add and dialog on separate button click actions.
+Gantt add and edit dialogs can be opened dynamically by using [openAddDialog](../../api/gantt#openadddialog) and [openEditDialog](../../api/gantt#openeditdialog) methods. The following code example shows how to open add and dialog on separate button click actions.
 
 {% if page.publishingplatform == "typescript" %}
 

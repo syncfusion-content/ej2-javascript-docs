@@ -34,20 +34,20 @@ document.getElementById('changeByPosition').addEventListener('click', () => {
 });
 
 document.getElementById('changeByIndex').addEventListener('click', () => {
-    gantt.setSplitterPosition(0, 'columnIndex');
+    gantt.setSplitterPosition(1, 'columnIndex');
 });
 
 let dropDownMode: DropDownList = new DropDownList({
-     dataSource: [
-            { id: 'Default', mode: 'Default' },
-            { id: 'Grid', mode: 'Grid' },
-            { id: 'Chart', mode: 'Chart' },
-          ],
-        fields: { text: 'mode', value: 'id' },
-        value: 'Default',
-         change: (e: ChangeEventArgs) => {
-            let viewType: any = <string>e.value;
-            gantt.setSplitterPosition(viewType, 'view');
-        }
+    dataSource: [
+        { id: 'Default', mode: 'Default' },
+        { id: 'Grid', mode: 'Grid' },
+        { id: 'Chart', mode: 'Chart' },
+        ],
+    fields: { text: 'mode', value: 'id' },
+    value: 'Default',
+        change: (e: ChangeEventArgs) => {
+        let viewType: string = <string>e.value;
+        gantt.setSplitterPosition(viewType, 'view');
+    }
 });
 dropDownMode.appendTo('#view');

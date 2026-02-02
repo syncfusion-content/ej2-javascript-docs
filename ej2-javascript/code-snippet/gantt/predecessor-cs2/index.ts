@@ -3,7 +3,7 @@ import { GanttData } from './datasource.ts';
 
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
-    height: '450px',
+    height: '400px',
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',

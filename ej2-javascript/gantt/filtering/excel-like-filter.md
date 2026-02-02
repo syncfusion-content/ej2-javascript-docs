@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Excel like filter in ##Platform_Name## Gantt control
 
-You can enable Excel like filter by defining [`filterSettings.type`](https://ej2.syncfusion.com/documentation/api/gantt#filtersettings) as `Excel`. The excel menu contains an option such as Sorting, Clear filter, Sub menu for advanced filtering.
+You can enable Excel like filter by defining [filterSettings.type](https://ej2.syncfusion.com/documentation/api/gantt/filtersettings#type) as `Excel`. The excel menu contains an option such as Sorting, Clear filter, Sub menu for advanced filtering.
 
 {% if page.publishingplatform == "typescript" %}
 

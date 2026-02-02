@@ -15,19 +15,19 @@ Theme Studio for Essential<sup style="font-size:70%">&reg;</sup> JS 2 can be use
 
 ## Customizing theme color from theme studio
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 themes are developed under the SCSS environment. Each theme has a unique common variable list. When you change the common variable color code value, it will reflect in all the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls. All Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript control styles are derived from these [theme-based common variables](theme#common-variables).This common variable list is handled inside the theme studio application for customizing theme-based colors.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 themes are developed in the SCSS environment. Each theme contains a unique set of common variables that define the color scheme and styling properties. When these common variable values are modified, the changes reflect across all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls. All Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript control styles derive from these [theme-based common variables](theme#common-variables). The Theme Studio application provides an intuitive interface for customizing these theme-based colors without requiring direct SCSS editing.
 
 **Step 1:** Navigate to the theme studio application at [Themestudio](https://ej2.syncfusion.com/themestudio/?theme=bootstrap5).
 
-**Step 2:** The theme studio application page can be divided into two sections: the controls preview section on the left, and the theme customization section on the right.
+**Step 2:** The Theme Studio application page is divided into two sections: the controls preview section on the left, and the theme customization section on the right.
 
-![theme studio two-sections](images/two-pane.png)
+![Theme Studio two sections layout](images/two-pane.png)
 
-**Step 3:** Click the color pickers in the theme customization section to select your desired colors.
+**Step 3:** Click the color pickers in the theme customization section to select the desired colors.
 
-![theme studio colpr-picker](images/colorpicker.png)
+![Theme Studio color picker interface](images/colorpicker.png)
 
-**Step 4:** The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript UI controls will rendered with the newly selected colors in the preview section, after selecting the custom color form pickers.
+**Step 4:** The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript UI controls will be rendered with the newly selected colors in the preview section after selecting the custom colors from the pickers.
 
 ![theme studio customized](images/customized.png)
 
@@ -43,13 +43,13 @@ Using the theme studio, you can apply custom themes to a list of specific contro
 
 ![theme studio filter-dialog](images/filter-dialog.png)
 
-**Step 3:** Now you can customize the colors in the theme customization section for the controls you selected.
+**Step 3:** Now the colors in the theme customization section can be customized for the selected controls.
 
 ![theme studio filter-customized](images/filter-customized.png)
 
 ### Download the customized theme
 
-You can download the custom styles after customizing the theme colors.
+The custom styles can be downloaded after customizing the theme colors.
 
 **Step 1:** Click the Download button in the top right corner. The Download dialog will open.
 
@@ -77,11 +77,11 @@ You can directly use the customized CSS file in the web application.
     </head>
 ```
 
-> If you are using Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls in a same web application, then you have to copy/paste the customized CSS file from the `compatibility` folder in the download location.
+> If the web application uses both Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls, copy and paste the customized CSS file from the `compatibility` folder in the download location.
 
 ## Import previously changed settings into the theme studio
 
-When you want to change your application theme and UI design in the future, you won’t need to customize the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript UI controls from scratch in the theme studio. Just import the old `settings.json` file to review and update your stored settings in the theme studio application.
+When the application theme and UI design need to be updated in the future, there is no need to customize the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript UI controls from scratch in the Theme Studio. Simply import the previously exported `settings.json` file to review and update the stored settings in the Theme Studio application.
 
 **Step 1:** Click the Import icon in the top right corner.
 

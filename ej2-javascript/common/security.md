@@ -17,11 +17,11 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls are impleme
 
 ## Security Vulnerabilities
 
-Security vulnerabilities in web applications refer to weaknesses or flaws in the design, implementation, or configuration of a web application that can be exploited by attackers to compromise the application's integrity, confidentiality, or availability. Here you can see some of the vulnerabilities.
+Security vulnerabilities in web applications refer to weaknesses or flaws in the design, implementation, or configuration that can be exploited by attackers to compromise the application's integrity, confidentiality, or availability. The following are some common vulnerabilities.
 
-* [Cross-Site Scripting](https://developer.mozilla.org/en-US/docs/Glossary/Cross-site_scripting) - XSS is a security vulnerability that can occur in web applications. These scripts can steal session cookies, redirect users to malicious websites, or deface the website. XSS vulnerabilities typically arise when the application fails to properly validate or encode user-supplied input before rendering it in the browser.
+* [Cross-Site Scripting](https://developer.mozilla.org/en-US/docs/Glossary/Cross-site_scripting) (XSS) - A security vulnerability that can occur in web applications. These scripts can steal session cookies, redirect users to malicious websites, or deface the website. XSS vulnerabilities typically arise when the application fails to properly validate or encode user-supplied input before rendering it in the browser.
 
-* [Cross-Site Request Forgery](https://developer.mozilla.org/en-US/docs/Glossary/CSRF) - CSRF is a type of web security vulnerability that allows an attacker to force a logged-in user to perform actions on a web application without their consent or knowledge. CSRF attacks exploit the trust that a web application has in the user's browser by tricking it into sending unauthorized requests to the vulnerable application.
+* [Cross-Site Request Forgery](https://developer.mozilla.org/en-US/docs/Glossary/CSRF) (CSRF) - A type of web security vulnerability that allows an attacker to force a logged-in user to perform actions on a web application without their consent or knowledge. CSRF attacks exploit the trust that a web application has in the user's browser by tricking it into sending unauthorized requests to the vulnerable application.
 
 * Injection Attacks - These occur when an attacker injects malicious code (such as SQL injection, XML injection, or command injection) into input fields or parameters of a web application. If the application does not properly sanitize or validate user inputs, it can execute unintended commands or gain unauthorized access to sensitive data.
 
@@ -57,7 +57,7 @@ The following directives are Essential<sup style="font-size:70%">&reg;</sup> for
 
 #### CSP Sources
 
-The following sources refer to the origins from which resources such as styles, images, fonts are allowed to be loaded and executed on a web page.
+The following sources refer to the origins from which resources such as styles, images, and fonts are allowed to be loaded and executed on a web page.
 
 |  Source  |  Description  | Examples  |
 |----------|---------------|-----------|

@@ -11,7 +11,9 @@ domainurl: ##DomainURL##
 
 # Syncfusion<sup style="font-size:70%">&reg;</sup> Licensing Errors
 
-Licensing error popup is displayed with various messages under different circumstances. Here are some ways to resolve different issues.
+When a valid license key is missing, invalid, expired, or mismatched, a licensing warning popup or console/terminal error appears in your application. 
+
+Below are the most common messages and their solutions.
 
 ## Licensing errors
 

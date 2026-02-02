@@ -15,7 +15,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls are rendere
 
 ## Types of templates
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls have two types of templates, such as:
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls support the following template types:
 
 * [String template](#String-template)
 * [Script template](#Script-template)
@@ -25,7 +25,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls have two ty
 
 Users can add templates to Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls by using `string literals` and JavaScript expressions. Using this approach, the template string is passed to the library's template engine, which parses the string and generates the corresponding HTML elements along with the data bindings.
 
-The template string can be added directly to the `template` property of the control. Refer to the following code snippet.
+Provide the template string directly to the control's `template` property. Refer to the following code snippet.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -58,7 +58,7 @@ The template string can be added directly to the `template` property of the cont
 
 A script template is a type of template that uses a scripting language, such as JavaScript, to define the structure and layout of the content that is displayed in the control. These template elements can be defined in the `script` tag along with the unique identifier. The script template's identifier needs to be mapped to the corresponding control's template property along with the fragment identifier (#). Refer to the below code sample.
 
-Add the below HTML template to the `index.html` file.
+Add the HTML template to the `index.html` file as shown below.
 
 ```html
 <script id="customTemplate" type="text/x-template">
@@ -101,7 +101,7 @@ Add the below HTML template to the `index.html` file.
 </script>
 ```
 
-Here, the script template identifier (customTemplate) is assigned to the `template` property of the Grid control. Refer to the following code snippet.
+Assign the script template identifier (for example, `customTemplate`) to the control's `template` property. Refer to the code snippets below.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -144,7 +144,7 @@ To convert the existing [string template](#string-template) into function templa
 var customTemplate = (data) => `<div class="template">${data.ShipCountry}</div>`
 ```
 
-Here, the function template identifier (customTemplate) is assigned to the `template` property of the Grid control. Refer to the following code snippet.
+Assign the function template identifier (for example, `customTemplate`) to the control's `template` property. Refer to the following code snippet.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -211,7 +211,7 @@ var customTemplate = (data) => `<tr>
   </tr>`
 ```
 
-Here, the function template identifier (customTemplate) is assigned to the `template` property of the Grid control. Refer to the following code snippet.
+Assign the function template identifier (for example, `customTemplate`) to the control's `template` property. Refer to the following code snippet.
 
 {% if page.publishingplatform == "typescript" %}
 

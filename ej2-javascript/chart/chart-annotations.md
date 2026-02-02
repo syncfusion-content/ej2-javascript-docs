@@ -11,11 +11,9 @@ domainurl: ##DomainURL##
 
 # Chart annotations in ##Platform_Name## Chart control
 
-Annotations are used to mark the specific area of interest in the chart area with texts, shapes or images.
+Chart annotations allow highlighting specific areas of the chart using text, shapes, images, or custom HTML elements. Annotations can be used to emphasize trends, mark thresholds, show custom notes, or display additional information directly inside the chart area.
 
-<!-- markdownlint-disable MD033 -->
-
-You can add annotations to the chart by using the <code>annotations</code> option. By using the [`content`](../api/chart/chartAnnotationSettingsModel/#content-string) option of annotation object, you can specify either the id of the element or directly specify the element in the content that needs to be displayed in the chart area.
+Annotations are added using the `annotations` option. Set the [`content`](../api/chart/chartAnnotationSettingsModel#content-string) property to reference the element that should be rendered within the chart.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,11 +42,11 @@ You can add annotations to the chart by using the <code>annotations</code> optio
 {% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs1" %}
 {% endif %}
 
->Note: To use annotations feature, we need to inject `ChartAnnotation` using `Chart.Inject(ChartAnnotation)` method.
+> Note: To use the annotation feature, inject `ChartAnnotation` using `Chart.Inject(ChartAnnotation)` method.
 
 ## Region
 
-Annotations can be placed either with respect to `Series` or `Chart`. by default, it will placed with respect to `Chart`.
+Annotations can be positioned relative to either the overall `Chart` area or a specific `Series`. When placed relative to the chart, the annotation uses the chart’s coordinate system. When placed relative to a series, the annotation aligns with that series' data points. By default, annotations are placed with respect to the chart.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -79,7 +77,10 @@ Annotations can be placed either with respect to `Series` or `Chart`. by default
 
 ## Co-ordinate units
 
-Specified the coordinates units of the annotation either `Pixel` or `Point`.
+Use the `coordinateUnits` property to define how annotation coordinates are interpreted. Choose between:
+
+- **Pixel** – The annotation is positioned using fixed pixel values within the chart area.  
+- **Point** – The annotation is positioned based on chart data points (x and y values).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -172,5 +173,5 @@ By setting text div in the `content` option of annotation object you can add sub
 
 ## See also
 
-* [Show total stacking values in data label](../chart/how-to/stacking-total/#show-the-total-value-for-stacking-series-in-data-label)
-* [Create footer and watermark for chart](../chart/how-to/footer/#create-footer-and-watermark-for-chart)
+* [Show total stacking values in data label](../chart/how-to/stacking-total#show-the-total-value-for-stacking-series-in-data-label)
+* [Create footer and watermark for chart](../chart/how-to/footer#create-footer-and-watermark-for-chart)

@@ -49,7 +49,7 @@ W> The un-versioned CDN links which always maintains latest version scripts are 
 
 ## NPM packages
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) npm packages are published and available in public [npm](https://www.npmjs.com/search?q=scope:syncfusion) registry.
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are published to the public [npm registry](https://www.npmjs.com/search?q=scope:syncfusion).registry.
 
 ### Anatomy of NPM packages
 
@@ -69,7 +69,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup s
 
 ### Webpack and module injection
 
-Large components provides the module injection for their features. For example, Grid control has some features like Sorting, Paging, Filtering, etc., To use these features in Grid control we need to require the respective module from the package and other features no need to be required when that is not used. So, the module injection helps to remove bunch of unused codes in the application. This will reduce the file size on production.
+Many components support **module injection**, enabling you to load only the required feature modules (e.g., Sorting, Paging, Filtering in Grid) and exclude unused functionality. This significantly reduces bundle size.
 
 #### Example to Use module injection in Grid control
 

@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 This section explains the steps to create a simple Grid and demonstrates the basic usage of the grid component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2
 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 
-> This application is integrated with the **webpack.config.js** configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node **v14.15.0** or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started).
+> This application is integrated with the **webpack.config.js** configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli#commands). It requires node **v14.15.0** or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started).
 
 ## Dependencies
 
@@ -252,7 +252,7 @@ To create grids with additional features, inject the required modules. The follo
 
 These modules should be injected into the grid using the **Grid.Inject** method.
 
-> Additional feature modules are available [here](https://ej2.syncfusion.com/documentation/grid/module).
+> Additional feature modules are available [here](https://ej2.syncfusion.com/documentation/grid/module).
 
 ## Enable paging
 

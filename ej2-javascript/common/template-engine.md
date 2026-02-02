@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Template Engine
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) has built-in template engine which provides options to compile template string into a executable function. Then the generated executable function can be used for rendering DOM element using desired data.
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) includes a built-in template engine that compiles template strings into executable functions. The compiled function renders DOM elements using supplied data, enabling efficient and reusable rendering for complex UI templates.
 
 ## Compiling
 
-`compile` method from `ej2-base` can be used to convert our template strings into executable functions.
+Use the `compile` method from `ej2-base` to convert template strings into executable functions.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -61,7 +61,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style
 
 ## Custom helper
 
-Custom helper function can be defined and passed to `compile` function. Refer to the following example.
+Custom helper functions can be defined and passed to the `compile` function to extend template behavior. Refer to the example below for usage.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Grid control
 
-This section explains you the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Grid and demonstrate the basic usage of the Grid control in a JavaScript application.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Grid and demonstrate the basic usage of the Grid control in a JavaScript application.
 
 ## Dependencies
 
-Following is the list of dependencies to use the grid with all features.
+A list of dependencies to use the grid with all features.
 
 ```javascript
 |-- @syncfusion/ej2-grids
@@ -44,7 +44,7 @@ Refer to the following steps to set up your local environment.
 
 **Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
 
-**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files for initializing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Grid control.
+**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Grid control.
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
 
@@ -55,16 +55,16 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Grid control can be ini
 
 ### Using local script and style
 
-To utilize local scripts and styles for Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can follow these steps:
+To use local scripts and styles for Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can follow these steps:
 
 **1. Download Essential<sup style="font-size:70%">&reg;</sup> Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2):** Obtain the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installation location.
 
-**2. Copy Files to Resources Folder:** After installing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 product build, copy the grid and its dependencies scripts and style file into the designated folders:
+**2. Copy Files to Resources Folder:** After installing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 product build, copy the grid's scripts, and dependencies scripts and style file into the designated folders:
 
 **Scripts:** Copy the scripts to the **resources/scripts** folder.
 **Styles:** Copy the styles to the **resources/styles** folder.
 
-**3. Locate Script and Style Files:** Identify the location of the grid's script and style file. The syntax for the file paths is as follows:
+**3. Locate Script and Style Files:** Identify the location of the grid's script and style files. The syntax for the file paths are as follows:
 
 **Syntax:**
 >Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -111,7 +111,7 @@ This setup includes only the necessary scripts and styles required to render the
 ```
 
 **b.Extended Dependency (Additional Components)**
-This setup includes additional dependencies required for more advanced functionalities of the grid, such as buttons, dropdowns, navigations and other components. Use this setup when you need to integrate additional features like filtering, paging, column menu and more.
+This setup includes additional dependencies required for more advanced functionalities of the grid, such as buttons, dropdowns, navigations, and other components. Use this setup when you need to integrate additional features like filtering, paging, column menu and more.
 
 ```html
 <!DOCTYPE html>
@@ -182,7 +182,7 @@ This setup includes all possible dependencies for Syncfusion<sup style="font-siz
 
 ### Using CDN link for script and style
 
-Using CDN link, you can directly refer the grid control's script and style into the `index.html`.
+Using CDN links, you can directly refer the grid control's script and style into the `index.html`.
 
 Refer the grid's CDN links as below
 
@@ -395,12 +395,12 @@ grid.appendTo('#Grid');
 
 ## Defining columns
 
-The Grid has an option to define columns as array. In these columns, we have properties to customize columns. Let’s check the properties used here:
+The Grid has an option to define columns as array. Each column in this array supports various properties that allow customization. Let’s check the properties used here:
 
-* We have added [field](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#field) to map with a property name an array of JavaScript objects.
-* We have added [headerText](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#headertext) to change the title of columns.
-* We have used [textAlign](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#textalign) to change the alignment of columns. By default, columns will be left aligned. To change columns to right align, we need to define [textAlign](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#textalign) as **Right**.
-* Also, we have used another useful property, [format](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#format). Using this, we can format number and date values to standard or custom formats. Here, we have defined it for the conversion of numeric values to currency.
+* The [field](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#field) property is used to map the column to a corresponding property name in the array of JavaScript objects.
+* The [headerText](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#headertext) property is used to specify a custom title for the column.
+* The [textAlign](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#textalign) property controls the horizontal alignment of content in the column. By default, columns are left-aligned. To align content to the right, set [textAlign](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#textalign) to **Right**.
+* The [format](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#format) property is applied to format numeric and date values. In this case, it is used to convert numeric values into a standard currency format.
 
 ```javascript
 var data = [{ OrderID: 10248, CustomerID: 'VINET', Freight: 32.38, OrderDate: new Date(8364186e5) },
@@ -438,7 +438,7 @@ To create grids with additional features, inject the required modules. The follo
 
 These modules should be injected into the grid using the **ej.grids.Grid.Inject** method.
 
-> Additional feature modules are available [here](https://helpej2.syncfusion.com/javascript/documentation/api/grid/overview).
+> Additional feature modules are available [here](https://helpej2.syncfusion.com/javascript/documentation/api/grid/overview).
 
 ## Enable paging
 
@@ -498,7 +498,7 @@ The filtering feature enables you to view reduced amount of records based on fil
 
 ## Enable grouping
 
-The grouping feature enables you to view the grid record in a grouped view. It can be enabled by setting the [allowGrouping](https://ej2.syncfusion.com/javascript/documentation/api/grid#allowgrouping) property to true. The [Group](https://ej2.syncfusion.com/javascript/documentation/api/grid#groupmodule) module has to be injected as follows. If [Group](https://ej2.syncfusion.com/javascript/documentation/api/grid#groupmodule) module is not injected, the group drop area will not be rendered in the grid.Grouping feature can be customized using the [groupSettings](https://ej2.syncfusion.com/javascript/documentation/api/grid#groupsettings) property.
+The grouping feature enables you to view the grid record in a grouped view. It can be enabled by setting the [allowGrouping](https://ej2.syncfusion.com/javascript/documentation/api/grid#allowgrouping) property to true. The [Group](https://ej2.syncfusion.com/javascript/documentation/api/grid#groupmodule) module has to be injected as follows. If [Group](https://ej2.syncfusion.com/javascript/documentation/api/grid#groupmodule) module is not injected, the group drop area will not be rendered in the grid. The grouping feature can be customized using the [groupSettings](https://ej2.syncfusion.com/javascript/documentation/api/grid#groupsettings) property.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -536,7 +536,7 @@ Output will be displayed as follows.
 
 ## Deploy the application
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Grid control features are segregated into individual feature-wise modules. The [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build and **CDN** scripts contains code for all features used in grid and hence we suggest to not to use them in production. We strongly recommend you to generate script files to use in production using our **Custom Resource Generator**[(CRG)](https://crg.syncfusion.com) for Essential<sup style="font-size:70%">&reg;</sup> JS 2. CRG will allow you to generate the bundled script for the currently enabled features in grid.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Grid control features are segregated into individual feature-wise modules. The [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build and **CDN** scripts include code for all Grid features. Therefore, these are **not recommended** for production environments. For production use, generate optimized script and style files using the **Custom Resource Generator**[(CRG)](https://crg.syncfusion.com) for Essential<sup style="font-size:70%">&reg;</sup> JS 2. CRG will allow you to generate the bundled script for the currently enabled features in grid.
 
 ## See also
 

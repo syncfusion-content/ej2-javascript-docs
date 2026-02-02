@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Index in ##Platform_Name## controls
 
-The Base (`ej2-base`) is the common package which have common class definitions, libraries and methods for the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript UI controls.
+The Base (`ej2-base`) package provides common class definitions, libraries, and utility methods used across all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript UI controls.
 
 ## Key Features
 

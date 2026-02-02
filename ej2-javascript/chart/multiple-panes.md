@@ -11,15 +11,15 @@ domainurl: ##DomainURL##
 
 # Multiple panes in ##Platform_Name## Chart control
 
-Chart area can be divided into multiple panes using [`rows`](../api/chart/row/) and [`columns`](../api/chart/column/).
+The chart area can be divided into multiple panes by defining rows and columns using the [`rows`](../api/chart/row) and [`columns`](../api/chart/column) collections. This feature is useful for displaying multiple related datasets within the same chart container while maintaining clear visual separation.
 
 ## Rows
 
-To split the chart area vertically into number of rows, use [`rows`](../api/chart/row/) property of the chart.
+To split the chart area vertically into multiple rows, use the [`rows`](../api/chart/row) property of the chart.
 
-* You can allocate space for each row by using the [`height`](../api/chart/row/#height-string) property. The value can be either percentage or in pixel.
-* To associate a vertical axis to a particular row, specify its index to [`rowIndex`](../api/chart/axis/#rowindex-number) property of the axis.
-* To customize each row’s bottom line, use  [`border`](../api/chart/row/#border-bordermodel) property.
+- Space for each row can be allocated by using the [`height`](../api/chart/row#height-string) property. The value can be specified either in pixels or as a percentage.
+- To associate a vertical axis with a specific row, assign the corresponding index using the [`rowIndex`](../api/chart/axis#rowindex-number) property of the axis.
+- To customize the bottom line of each row, use the [`border`](../api/chart/row#border-bordermodel) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -48,7 +48,7 @@ To split the chart area vertically into number of rows, use [`rows`](../api/char
 {% previewsample "page.domainurl/code-snippet/chart/axis-cs78" %}
 {% endif %}
 
-For spanning the vertical axis along multiple row, you can use [`span`](../api/chart/axis/#span-number) property of an axis.
+To span a vertical axis across multiple rows, use the [`span`](../api/chart/axis#span-number) property of the axis.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -79,12 +79,11 @@ For spanning the vertical axis along multiple row, you can use [`span`](../api/
 
 ## Columns
 
-To split the chart area horizontally into number of columns, use [`columns`](../api/chart/column/) property of the chart.
+To split the chart area horizontally into multiple columns, use the [`columns`](../api/chart/column) property of the chart.
 
-* You can allocate space for each column by using the [`width`](../api/chart/row/#width-string) property. The given width can be either
- percentage or in pixel.
-* To associate a horizontal axis to a particular column, specify its index to [`columnIndex`](../api/chart/axis/#columnindex-number) property of the axis.
-* To customize each column’s bottom line, use [[`border`](../api/chart/row/#border-bordermodel) property.
+- Space for each column can be allocated using the [`width`](../api/chart/row#width-string) property. The width can be specified either in pixels or as a percentage.
+- To associate a horizontal axis with a specific column, assign the corresponding index using the [`columnIndex`](../api/chart/axis#columnindex-number) property of the axis.
+- To customize the bottom line of each column, use the [`border`](../api/chart/row#border-bordermodel) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -113,7 +112,7 @@ To split the chart area horizontally into number of columns, use [`columns`](../
 {% previewsample "page.domainurl/code-snippet/chart/axis-cs80" %}
 {% endif %}
 
-For spanning the vertical axis along multiple column, you can use [`span`](../api/chart/axis/#span-number) property of an axis.
+To span a horizontal axis across multiple columns, use the [`span`](../api/chart/axis#span-number) property of the axis.
 
 {% if page.publishingplatform == "typescript" %}
 

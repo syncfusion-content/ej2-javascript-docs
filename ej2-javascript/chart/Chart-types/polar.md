@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 
 To render a [polar](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/polar-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  
-* **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `Polar` in your chart configuration. This indicates that the data should be represented as a polar chart, which is ideal for plotting data points on a circular graph.
+* **Set the series type**: Define the series [`type`](../../api/chart/series#type) as `Polar` in your chart configuration. This indicates that the data should be represented as a polar chart, which is ideal for plotting data points on a circular graph.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -50,7 +50,7 @@ To render a [polar](https://www.syncfusion.com/javascript-ui-controls/js-charts/
 
 ## Binding data with series
 
-You can bind data to the chart using the [`dataSource`](../../api/chart/series/#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](../../api/chart/series/#xname) and [`yName`](../../api/chart/series/#yname) properties.
+You can bind data to the chart using the [`dataSource`](../../api/chart/series#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](../../api/chart/series#xname) and [`yName`](../../api/chart/series#yname) properties.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -84,19 +84,19 @@ You can bind data to the chart using the [`dataSource`](../../api/chart/series/#
 
 ## Draw types
 
-Use the [`drawType`](../../api/chart/series/#drawtype) property to change the series plotting type in a Polar chart to line, column, area, range column, spline, scatter, stacking area, spline area, or stacking column. The default value of `drawType` is `Line`.
+Use the [`drawType`](../../api/chart/series#drawtype) property to change the series plotting type in a Polar chart to line, column, area, range column, spline, scatter, stacking area, spline area, or stacking column. The default value of `drawType` is `Line`.
 
 ### Line
 
 To render a line draw type, you need to follow a few steps to configure it correctly.
 
-* **Set the series type**: Define the series [`drawType`](../../api/chart/series/#drawtype) as `Line` in your chart configuration. This indicates that the data should be represented as a polar line chart, with lines connecting each data point.
+* **Set the series type**: Define the series [`drawType`](../../api/chart/series#drawtype) as `Line` in your chart configuration. This indicates that the data should be represented as a polar line chart, with lines connecting each data point.
 
 {% if page.publishingplatform == "typescript" %}
 
 * **Inject the LineSeries module**: Use the `Chart.Inject(LineSeries)` method to inject the `LineSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar line series are available in your chart.
 
-The [`isClosed`](../../api/chart/series/#isclosed) property specifies whether to join the start and end points of a line series used in a polar chart to form a closed path. The default value of `isClosed` is **true**.
+The [`isClosed`](../../api/chart/series#isclosed) property specifies whether to join the start and end points of a line series used in a polar chart to form a closed path. The default value of `isClosed` is **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -114,7 +114,7 @@ The [`isClosed`](../../api/chart/series/#isclosed) property specifies whether to
 
 {% elsif page.publishingplatform == "javascript" %}
 
-The [`isClosed`](../../api/chart/series/#isclosed) property specifies whether to join the start and end points of a line series used in a polar chart to form a closed path. The default value of `isClosed` is **true**.
+The [`isClosed`](../../api/chart/series#isclosed) property specifies whether to join the start and end points of a line series used in a polar chart to form a closed path. The default value of `isClosed` is **true**.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -132,7 +132,7 @@ The [`isClosed`](../../api/chart/series/#isclosed) property specifies whether to
 
 To render a spline draw type, you need to follow a few steps to configure it correctly.
 
-* **Set the series type**: Define the series [`drawType`](../../api/chart/series/#drawtype) as `Spline` in your chart configuration. This indicates that the data should be represented as a polar spline chart, with smooth, curved lines connecting each data point.
+* **Set the series type**: Define the series [`drawType`](../../api/chart/series#drawtype) as `Spline` in your chart configuration. This indicates that the data should be represented as a polar spline chart, with smooth, curved lines connecting each data point.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -170,7 +170,7 @@ To render a spline draw type, you need to follow a few steps to configure it cor
 
 To render an area draw type, you need to follow a few steps to configure it correctly.
 
-* **Set the series type**: Define the series [`drawType`](../../api/chart/series/#drawtype) as `Area` in your chart configuration. This indicates that the data should be represented as a polar area chart, with filled areas below the lines connecting each data point.
+* **Set the series type**: Define the series [`drawType`](../../api/chart/series#drawtype) as `Area` in your chart configuration. This indicates that the data should be represented as a polar area chart, with filled areas below the lines connecting each data point.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -208,7 +208,7 @@ To render an area draw type, you need to follow a few steps to configure it corr
 
 To render a stacked area draw type, you need to follow a few steps to configure it correctly.
 
-* **Set the series type**: Define the series [`drawType`](../../api/chart/series/#drawtype) as `StackingArea` in your chart configuration. This indicates that the data should be represented as a polar stacked area chart, with areas stacked on top of each other, displaying the cumulative value of multiple series.
+* **Set the series type**: Define the series [`drawType`](../../api/chart/series#drawtype) as `StackingArea` in your chart configuration. This indicates that the data should be represented as a polar stacked area chart, with areas stacked on top of each other, displaying the cumulative value of multiple series.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -246,7 +246,7 @@ To render a stacked area draw type, you need to follow a few steps to configure 
 
 To render a column draw type, you need to follow a few steps to configure it correctly.
 
-* **Set the series type**: Define the series [`drawType`](../../api/chart/series/#drawtype) as `Column` in your chart configuration. This indicates that the data should be represented as a polar column chart, allowing for the comparison of values across categories.
+* **Set the series type**: Define the series [`drawType`](../../api/chart/series#drawtype) as `Column` in your chart configuration. This indicates that the data should be represented as a polar column chart, allowing for the comparison of values across categories.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -284,7 +284,7 @@ To render a column draw type, you need to follow a few steps to configure it cor
 
 To render a stacked column draw type, you need to follow a few steps to configure it correctly.
 
-* **Set the series type**: Define the series [`drawType`](../../api/chart/series/#drawtype) as `StackingColumn` in your chart configuration. This indicates that the data should be represented as a polar stacked column chart, with each column consisting of multiple segments stacked on top of each other.
+* **Set the series type**: Define the series [`drawType`](../../api/chart/series#drawtype) as `StackingColumn` in your chart configuration. This indicates that the data should be represented as a polar stacked column chart, with each column consisting of multiple segments stacked on top of each other.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -322,7 +322,7 @@ To render a stacked column draw type, you need to follow a few steps to configur
 
 To render a range column draw type, you need to follow a few steps to configure it correctly.
 
-* **Set the series type**: Define the series [`drawType`](../../api/chart/series/#drawtype) as `RangeColumn` in your chart configuration. This indicates that the data should be represented as a polar range column chart, where each column spans a range of values.
+* **Set the series type**: Define the series [`drawType`](../../api/chart/series#drawtype) as `RangeColumn` in your chart configuration. This indicates that the data should be represented as a polar range column chart, where each column spans a range of values.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -360,7 +360,7 @@ To render a range column draw type, you need to follow a few steps to configure 
 
 To render a scatter draw type, you need to follow a few steps to configure it correctly.
 
-* **Set the series type**: Define the series [`drawType`](../../api/chart/series/#drawtype) as `Scatter` in your chart configuration. This indicates that the data should be represented as a polar scatter chart.
+* **Set the series type**: Define the series [`drawType`](../../api/chart/series#drawtype) as `Scatter` in your chart configuration. This indicates that the data should be represented as a polar scatter chart.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -398,7 +398,7 @@ To render a scatter draw type, you need to follow a few steps to configure it co
 
 To render an spline area draw type, you need to follow a few steps to configure it correctly.
 
-* **Set the series type**: Define the series [`drawType`](../../api/chart/series/#drawtype) as `SplineArea` in your chart configuration. This indicates that the data should be represented as a polar spline area chart, where the series is drawn with smooth, curved lines connecting each data point, and the area beneath the line is filled with color.
+* **Set the series type**: Define the series [`drawType`](../../api/chart/series#drawtype) as `SplineArea` in your chart configuration. This indicates that the data should be represented as a polar spline area chart, where the series is drawn with smooth, curved lines connecting each data point, and the area beneath the line is filled with color.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -436,7 +436,7 @@ To render an spline area draw type, you need to follow a few steps to configure 
 
 ### Start angle
 
-You can customize the start angle of the polar series using [`startAngle`](../../api/chart/axis/#startangle) property. By default, `startAngle` is 0 degree.
+You can customize the start angle of the polar series using [`startAngle`](../../api/chart/axis#startangle) property. By default, `startAngle` is 0 degree.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -470,7 +470,7 @@ You can customize the start angle of the polar series using [`startAngle`](../..
 
 ### Radius
 
-You can customize the radius of the polar series using [`coefficient`](../../api/chart/axis/#coefficient) property. By default, `coefficient` is 100.
+You can customize the radius of the polar series using [`coefficient`](../../api/chart/axis#coefficient) property. By default, `coefficient` is 100.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -508,7 +508,7 @@ Data points with `null` or `undefined` values are considered empty. Empty data p
 
 **Mode**
 
-Use the [`mode`](../../api/chart/emptyPointSettings/#mode) property to define how empty or missing data points are handled in the series. The default mode for empty points is `Gap`.
+Use the [`mode`](../../api/chart/emptyPointSettings#mode) property to control handling of empty points. Available modes: `Gap`, `Drop`, `Zero`, `Average`. The default mode is `Gap`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -542,7 +542,7 @@ Use the [`mode`](../../api/chart/emptyPointSettings/#mode) property to define ho
 
 **Fill**
 
-Use the [`fill`](../../api/chart/emptyPointSettings/#fill) property to customize the fill color of empty points in the series.
+Use the [`fill`](../../api/chart/emptyPointSettings#fill) property to set the fill color for empty points.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -576,7 +576,7 @@ Use the [`fill`](../../api/chart/emptyPointSettings/#fill) property to customize
 
 **Border**
 
-Use the [`border`](../../api/chart/emptyPointSettings/#border) property to customize the width and color of the border for empty points.
+Use the [`border`](../../api/chart/emptyPointSettings#border) property to customize the border width and color for empty points.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -612,7 +612,7 @@ Use the [`border`](../../api/chart/emptyPointSettings/#border) property to custo
 
 ### Series render
 
-The [`seriesRender`](../../api/chart#seriesrender) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](../../api/chart#seriesrender) event enables modification of series properties (for example, data, fill, or name) immediately before rendering. Use this event to adjust series appearance or to dynamically swap data sources.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -646,7 +646,7 @@ The [`seriesRender`](../../api/chart#seriesrender) event allows you to customize
 
 ### Point render
 
-The [`pointRender`](../../api/chart#pointrender) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](../../api/chart#pointrender) event provides a hook to customize each data point (for example, marker shape, border, or fill) before it is drawn. Use this to apply per-point styling rules or conditional formatting.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -680,5 +680,5 @@ The [`pointRender`](../../api/chart#pointrender) event allows you to customize e
 
 ## See also
 
-* [Data label](../data-labels/)
-* [Tooltip](../tool-tip/)
+* [Data label](../data-labels)
+* [Tooltip](../tool-tip)

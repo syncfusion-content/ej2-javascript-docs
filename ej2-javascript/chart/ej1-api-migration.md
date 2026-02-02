@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in ##Platform_Name## Chart control
 
-This article describes the API migration process of Chart component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of the Chart component from Essential JS 1 to Essential JS 2.
 
 ## Annotations
 

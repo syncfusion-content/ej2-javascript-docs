@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 # Installation
 
-## Install by using npm CLI
+##  Install via npm CLI 
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are published in [npm](https://www.npmjs.com/search?q=scope:syncfusion). You can install the necessary packages from npm’s install command. For example, grid package can be installed using following command.
 

@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Custom Resource Generator for Syncfusion<sup style="font-size:70%">&reg;</sup> for EJ2 JavaScript ES5.
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> provides an option to generate a selective controls script (JavaScript ES5) and styles by using the [Custom Resource Generator](https://crg.syncfusion.com/) (CRG). 
+Syncfusion<sup style="font-size:70%">&reg;</sup> provides an option to generate selective control scripts (JavaScript ES5) and styles using the [Custom Resource Generator](https://crg.syncfusion.com/) (CRG).
 
-##  Control Search and Selection.
+##  Control Search and Selection
 
-Using our CRG site, you can effortlessly navigate through our comprehensive list of controls, where those compatible with `Injectable Modules` are presented in a treeview format with checkboxes and the components not supported with `Injectable Modules` are displayed only with checkboxes. You can seamlessly search, select, and tailor your choices to find minified or unminified scripts and styles that precisely match your requirements.
+Using the CRG site, users can effortlessly navigate through the comprehensive list of controls. Controls compatible with `Injectable Modules` are presented in a treeview format with checkboxes, while components not supported with `Injectable Modules` are displayed only with checkboxes. Users can seamlessly search, select, and tailor their choices to find minified or unminified scripts and styles that precisely match their requirements.
 
 ![Preview](./images/controls-categorization.png)
 
@@ -52,18 +52,18 @@ Refer to the following steps to download the custom resources in CRG.
 
 1. Extract the downloaded script and styles into the project.
 
-2. Refer the script and style in `<head>` section of `index.html` file.
+2. Refer to the script and style in the `<head>` section of the `index.html` file.
 
    ![Offline layout](images/offline-layout-crg.png)
 
-3. Run the application and it will load the resources with application required controls.
+3. Run the application, and it will load the resources with the required controls.
 
 
 ## Import previously generated settings into the CRG
 
-To add more controls or upgrade the latest Syncfusion<sup style="font-size:70%">&reg;</sup> scripts, it is not necessary to generate it from the scratch in the CRG. Just import the old **import.json** file and make the changes, then download it again from the CRG application.
+To add more controls or upgrade to the latest Syncfusion<sup style="font-size:70%">&reg;</sup> scripts, it is not necessary to generate resources from scratch in the CRG. Simply import the old **import.json** file, make the changes, and download again from the CRG application.
 
-Refer to the following steps to import previous **import.json** file in the CRG.
+Refer to the following steps to import a previous **import.json** file in the CRG.
 
 1.	Click the **IMPORT SETTINGS** button at the bottom of the page.
 ![ej2 Import option in CRG](images/import-option.png)
@@ -72,12 +72,12 @@ Refer to the following steps to import previous **import.json** file in the CRG.
 
 ## To download a licensed script
 
-If you prefer to utilize a licensed script, As a licensed user, you can download a licensed script from the Custom Resource Generator (CRG) by logging into your CRG account, as illustrated below.
+As a licensed user, you can download a licensed script from the Custom Resource Generator (CRG) by logging into your CRG account, as illustrated below.
 
 ![image](images/licensed-profile.png)
 
-Licensed scripts generated through the Custom Resource Generator (CRG) do not require additional license registration when downloaded by authenticated users. But if you are not downloading a licensed script, you need to register the license key in your application. For more information, refer to the [Licensing section](../js/licensing/license-key-registration.md).
+Licensed scripts generated through the Custom Resource Generator (CRG) do not require additional license registration when downloaded by authenticated users. However, if you are not downloading a licensed script, you need to register the license key in your application. For more information, refer to the [Licensing section](../js/licensing/license-key-registration.md).
 
-Also when you log in and download the script, the license registration code is intentionally removed to prevent redundancy, ensuring that your licensed script is ready to use without extra steps. This design choice brings ease to our licensed users.
+Additionally, when you log in and download the script, the license registration code is intentionally removed to prevent redundancy, ensuring that your licensed script is ready to use without extra steps. This design choice provides ease for licensed users.
 
 

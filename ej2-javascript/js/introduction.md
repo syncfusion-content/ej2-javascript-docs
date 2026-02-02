@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI Controls (Essential<sup style="font-size:70%">&reg;</sup> JS 2)
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) is a modern UI Controls library that has been built from the ground up to be lightweight, responsive, modular and touch friendly. It is written in TypeScript and has no external dependencies. It also includes complete support for Angular, React, Vue, ASP.NET MVC and ASP.NET Core frameworks.
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI Controls provide a comprehensive suite of modern, lightweight, responsive, modular, and touch-friendly components. Built from the ground up in TypeScript with no external dependencies, the library offers full compatibility with plain JavaScript (ES5/global scripts) as well as seamless integration with Angular, React, Vue, ASP.NET MVC, and ASP.NET Core.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/javascript/documentation/ai-coding-assistant/overview)
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) library delivers pure JavaScript (global script) components in ES5 format, ready for direct use in modern web browsers without transpilation.
 
 ## Components list
 
@@ -49,7 +49,7 @@ text-align: left!important;
 font-weight: bold!important;
 letter-spacing: 0.7px;
 }
-}
+
 
 </style>
 
@@ -186,11 +186,7 @@ letter-spacing: 0.7px;
 
 ## How to best read this user guide
 
-* The best way to get started would be to read the "Getting Started" section of the
-documentation for the control that you would like to start using first. The "Getting Started"
-guide gives just enough information that you need to know before starting to write code.
-This is the only section that we recommend reading end-to-end before starting to write code,
-all other information can be referred as needed.
+* Begin with the "Getting Started" section for the specific control you plan to use. This section provides essential setup information and basic usage to help you start coding quickly. It is the only section recommended for end-to-end reading before implementation.
 
 * Now that you are familiar with the basics of using the control, the next step would
 be to start integrating the control into your application. A good starting point
@@ -213,4 +209,4 @@ with tag `syncfusion-ej2`.
 ## See also
 
 * [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/estudio)
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Javascript ES5 controls](https://ej2.syncfusion.com/javascript/documentation/getting-started/quick-start)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) controls](https://ej2.syncfusion.com/javascript/documentation/getting-started/quick-start)

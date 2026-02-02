@@ -11,14 +11,14 @@ domainurl: ##DomainURL##
 
 # Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) library and Ionic Framework
 
-This article provides a step-by-step introduction to configure Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) library and build it in the Ionic framework.
+This article explains how to integrate Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls into an Ionic application.
 
 ## Prerequisites
 
 * [Node.js](https://nodejs.org/en/)
 * [Visual Studio Code](https://code.visualstudio.com/)
 
-## Setup development environment
+## Set up the development environment
 
 1.Open the command prompt, and run the following command line to install the `ionic` with global flag.
 

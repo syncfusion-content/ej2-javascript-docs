@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript UI Controls (Essential<sup style="font-size:70%">&reg;</sup> JS 2)
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) is a modern UI Controls library that has been built from the ground up to be lightweight, responsive, modular and touch friendly. It is written in TypeScript and has no external dependencies. It also includes complete support for Angular, React, Vue, ASP.NET MVC and ASP.NET Core frameworks.
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) is a modern UI controls library built from the ground up to be lightweight, responsive, modular, and touch-friendly. Written in TypeScript with no external dependencies, it provides comprehensive support for Angular, React, Vue, ASP.NET MVC, and ASP.NET Core frameworks.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/documentation/ai-coding-assistant/overview)
 
@@ -185,10 +185,9 @@ letter-spacing: 0.7px;
 
 ## How to best read this user guide
 
-* The best way to get started would be to read the "Getting Started" section of the documentation for the control that you would like to start using first. The "Getting Started" guide gives just enough information that you need to know before starting to write code. This is the only section that we recommend reading end-to-end before starting to write code, all other information can be referred as needed.
+* The best way to get started is to read the "Getting Started" section for the specific control you want to use first. The "Getting Started" guide provides essential information needed before writing code. This is the only section recommended for end-to-end reading initially; all other sections can be referenced as required.
 
-* Now that you are familiar with the basics of using the control, the next step would be to start integrating the control into your application. A good starting point would be to refer to the code snippets in the [online sample browser](https://ej2.syncfusion.com/home/)
-which contains hundreds of code samples, it is very likely that you will find a code sample that resembles your intended usage scenario.
+* Once familiar with the basics, integrate the control into your application. Start by exploring code snippets in the [online sample browser](https://ej2.syncfusion.com/home/), which offers hundreds of examples—many will closely match your intended scenario.
 
 * Another valuable resource is the API reference which provides detailed information on the object hierarchy as well as the settings available on every object.
 

@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 
 ## DateTime Axis
 
-Date time axis uses date time scale and displays the date time values as axis labels in the specified format.
+The DateTime axis uses a date-time scale and displays date-time values as axis labels based on the specified format. This axis type is ideal for visualizing time-based data such as trends, timelines, and time-series data.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -43,11 +43,11 @@ Date time axis uses date time scale and displays the date time values as axis la
 {% previewsample "page.domainurl/code-snippet/chart/axis-cs65" %}
 {% endif %}
 
->Note: To use datetime axis, we need to inject DateTime using `Chart.Inject(DateTime)` method and set the [`valueType`](../api/chart/axis/#valuetype-string) of axis to DateTime.
+> Note: To use the Datetime axis, inject `DateTime` using `Chart.Inject(DateTime)` method and set the [`valueType`](../api/chart/axis#valuetype-string) property of the axis to `DateTime`.
 
 ## DateTimeCategory Axis
 
-Date-time category axis is used to display the date-time values with non-linear intervals. For example, the business days alone have been depicted in a week here.
+The DateTimeCategory axis is used to render date-time values with non-linear intervals. This axis type is especially useful when certain time ranges, such as weekends or holidays, need to be excluded. In the following example, only business days are displayed within a week.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -76,12 +76,11 @@ Date-time category axis is used to display the date-time values with non-linear 
 {% previewsample "page.domainurl/code-snippet/chart/axis-cs66" %}
 {% endif %}
 
->Note: To use dateTimeCategory axis, we need to inject DateTimeCategory using `Chart.Inject(DateTimeCategory)` method and set the [`valueType`](../api/chart/axis/#valuetype-string) of axis to DateTimeCategory.
+>Note: To use the DateTimeCategory axis, inject `DateTimeCategory` using `Chart.Inject(DateTimeCategory)` method and set the [`valueType`](../api/chart/axis#valuetype-string) property of the axis to `DateTimeCategory`. The axis range can be controlled using the [`minimum`](../api/chart/axis#minimum-object), [`maximum`](../api/chart/axis#maximum-object), and [`interval`](../api/chart/axis#interval-number) properties.
 
 ### Range
 
-Range of an axis will be calculated automatically based on the provided data, you can also customize the range of the axis using [`minimum`](../api/chart/axis/#minimum-object), [`maximum`](../api/chart/axis/#maximum-object) and [`interval`](../api/chart/axis/#interval-number) property
-of the axis.
+Range of an axis will be calculated automatically based on the provided data, you can also customize the range of the axis using [`minimum`](../api/chart/axis#minimum-object), [`maximum`](../api/chart/axis#maximum-object) and [`interval`](../api/chart/axis#interval-number) property of the axis.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -112,15 +111,17 @@ of the axis.
 
 ### Interval Customization
 
-Date time intervals can be customized by using the [`interval`](../api/chart/axis/#interval-number) and [`intervalType`](../api/chart/axis/#intervaltype-string) properties of the axis. For example, when you set interval as 2 and intervalType as years, it considers 2 years as interval. Datetime axis supports following interval types,
+Date-time intervals can be customized using the [`interval`](../api/chart/axis#interval-number) and [`intervalType`](../api/chart/axis#intervaltype-string) properties of the axis. For example, when the interval is set to `2` and the interval type is set to `Years`, the axis displays labels at two-year intervals.
 
-* Auto
-* Years
-* Months
-* Days
-* Hours
-* Minutes
-* Seconds
+The DateTime axis supports the following interval types:
+
+- Auto
+- Years
+- Months
+- Days
+- Hours
+- Minutes
+- Seconds
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -151,15 +152,15 @@ Date time intervals can be customized by using the [`interval`](../api/chart/axi
 
 **Applying Padding to the Range**
 
-Padding can be applied to the minimum and maximum extremes of the range by using the [`rangePadding`](../api/chart/axis/#rangepadding-string) property. Date time axis supports the following types of padding,
+Padding can be applied to the minimum and maximum values of the axis range using the [`rangePadding`](../api/chart/axis#rangepadding-string) property. The DateTime axis supports the following range padding types:
 
-* None
-* Round
-* Additional
+- None
+- Round
+- Additional
 
 **Datetime - None**
 
-When the [`rangePadding`](../api/chart/axis/#rangepadding-string) is set to `None`, minimum and maximum of an axis is based on the data.
+When the [`rangePadding`](../api/chart/axis#rangepadding-string) property is set to `None`, the minimum and maximum values of the axis are calculated directly from the data values.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -190,7 +191,7 @@ When the [`rangePadding`](../api/chart/axis/#rangepadding-string) is set to `Non
 
 **Datetime - Round**
 
-When the [`rangePadding`](../api/chart/axis/#rangepadding-string) is set to `Round`, minimum and maximum will be rounded to the nearest possible value, which is divisible by interval. For example, when the minimum is 15th Jan, interval is 1 and the interval type is ‘month’, then the axis minimum will be Jan 1st.
+When the [`rangePadding`](../api/chart/axis#rangepadding-string) property is set to `Round`, the minimum and maximum values are rounded to the nearest interval boundary. For example, if the minimum value is January 15 and the interval type is set to `Months` with an interval of `1`, the axis minimum is adjusted to January 1.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -221,7 +222,7 @@ When the [`rangePadding`](../api/chart/axis/#rangepadding-string) is set to `Rou
 
 **Datetime - Additional**
 
-When the [`rangePadding`](../api/chart/axis/#rangepadding-string) is set to `Additional`, interval of an axis will be padded to the minimum and maximum of the axis.
+When the [`rangePadding`](../api/chart/axis#rangepadding-string) property is set to `Additional`, an additional interval is added before the minimum and after the maximum values of the axis range to provide extra spacing.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -252,7 +253,7 @@ When the [`rangePadding`](../api/chart/axis/#rangepadding-string) is set to `Add
 
 ## Label Format
 
-You can format and parse the date to all globalize format using [`labelFormat`](../api/chart/axis/#labelformat-string) property in an axis.
+Date values displayed on the DateTime axis can be formatted using the [`labelFormat`](../api/chart/axis#labelformat-string) property. This property supports globalized date and time formats for clear and localized label rendering.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -281,45 +282,45 @@ You can format and parse the date to all globalize format using [`labelFormat`]
 {% previewsample "page.domainurl/code-snippet/chart/axis-cs72" %}
 {% endif %}
 
-The following table describes the result of applying some common date time formats to the `labelFormat` property
+The following table illustrates the output produced by applying commonly used date-time format strings to the `labelFormat` property.
 
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>Label Value</b></td>
 <td><b>Label Format Property Value</b></td>
-<td><b>Result </b></td>
-<td><b>Description </b></td>
+<td><b>Result</b></td>
+<td><b>Description</b></td>
 </tr>
 <tr>
 <td>new Date(2000, 03, 10)</td>
 <td>EEEE</td>
 <td>Monday</td>
-<td>The Date is displayed in day format</td>
+<td>Displays the full name of the day</td>
 </tr>
 <tr>
 <td>new Date(2000, 03, 10)</td>
 <td>yMd</td>
 <td>04/10/2000</td>
-<td>The Date is displayed in month/date/year format</td>
+<td>Displays the date in month/day/year format</td>
 </tr>
 <tr>
 <td>new Date(2000, 03, 10)</td>
-<td> MMM </td>
+<td>MMM</td>
 <td>Apr</td>
-<td>The Shorthand month for the date is displayed</td>
+<td>Displays the abbreviated month name</td>
 </tr>
 <tr>
 <td>new Date(2000, 03, 10)</td>
 <td>hm</td>
-<td>12:00 AM</td>
-<td>Time of the date value is displayed as label</td>
+<tdtd>
+<td>Displays the time in hours and minutes</td>
 </tr>
 <tr>
 <td>new Date(2000, 03, 10)</td>
 <td>hms</td>
 <td>12:00:00 AM</td>
-<td>The Label is displayed in hours:minutes:seconds format</td>
+<td>Displays the time in hours, minutes, and seconds</td>
 </tr>
 </table>
 

@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Cross hair and track ball in ##Platform_Name## Chart control
 
-Crosshair has a vertical and horizontal line to view the value of the axis at mouse or touch position.
+The crosshair feature displays vertical and horizontal guide lines that intersect at the mouse or touch position, helping to identify the corresponding axis values precisely.
 
-Crosshair lines can be enabled by using [`enable`](../api/chart/crosshairTooltip/#enable-boolean) property in the `crosshair`. Likewise tooltip label for an axis can be enabled by using [`enable`](../api/chart/crosshairTooltipModel/#enable-boolean) property of `crosshairTooltip` in the corresponding axis.
+Crosshair lines can be enabled by setting the [`enable`](../api/chart/crosshairTooltip#enable-boolean) property in the `crosshair` settings.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,7 +44,7 @@ Crosshair lines can be enabled by using [`enable`](../api/chart/crosshairToolti
 
 ## Tooltip for axis
 
-Tooltip label for an axis can be enabled by using [`enable`](../api/chart/crosshairTooltipModel/#enable-boolean) property of `crosshairTooltip` in the corresponding axis.
+Axis tooltip labels can be enabled by setting the [`enable`](../api/chart/crosshairTooltipModel#enable-boolean) property of `crosshairTooltip` in the corresponding axis. This tooltip displays the current axis value at the crosshair position.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -75,7 +75,9 @@ Tooltip label for an axis can be enabled by using [`enable`](../api/chart/cross
 
 ## Customization
 
-The [`fill`](../api/chart/crosshairTooltip/#fill-string) and [`textStyle`](../api/chart/crosshairTooltip/#textstyle-fontmodel) property of the `crosshairTooltip` is used to customize the background color and font style of the crosshair label respectively. Color and width of the crosshair line can be customized by using the [`line`](../api/chart/crosshairSettingsModel/#line-bordermodel) property in the crosshair.
+The [`fill`](../api/chart/crosshairTooltip#fill-string) and [`textStyle`](../api/chart/crosshairTooltip#textstyle-fontmodel) properties of `crosshairTooltip` are used to customize the background color and font style of the crosshair label.
+
+The color and width of the crosshair lines can be customized by using the [`line`](../api/chart/crosshairSettingsModel#line-bordermodel) property in the crosshair settings.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -104,11 +106,11 @@ The [`fill`](../api/chart/crosshairTooltip/#fill-string) and [`textStyle`](../ap
 {% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs7" %}
 {% endif %}
 
->Note: To use crosshair feature, we need to inject `Crosshair` module `Chart.Inject(Crosshair)` method.
+> Note: To use the crosshair feature, inject `Crosshair` module `Chart.Inject(Crosshair)` method.
 
 **Snap to data**
 
-Enabling the [`snapToData`](../api/chart/crosshairSettingsModel/#snaptodata) property in the crosshair aligns it with the nearest data point instead of following the exact mouse position.
+By enabling the [`snapToData`](../api/chart/crosshairSettingsModel#snaptodata) property, the crosshair snaps to the nearest data point instead of following the exact mouse position. This improves accuracy when inspecting values.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -139,9 +141,11 @@ Enabling the [`snapToData`](../api/chart/crosshairSettingsModel/#snaptodata) pro
 
 ## Trackball
 
-Trackball is used to track a data point closest to the mouse or touch position. Trackball marker indicates the closest point and trackball tooltip displays the information about the point. To use trackball feature, we need to inject `Crosshair` module and `Tooltip` module using `Chart.Inject(Crosshair, Tooltip)`.
+The trackball feature tracks the data point closest to the mouse or touch position. A trackball marker highlights the nearest point, and the trackball tooltip displays detailed information about that point.
 
-Trackball can be enabled by setting the [`enable`](../api/chart/crosshairSettings/#enable-boolean) property of the crosshair to true and [`shared`](../api/chart/tooltipSettings/#shared-boolean) property in `tooltip` to true in chart.
+To use the trackball feature, inject both `Crosshair` and `Tooltip` into the `provide`.
+
+Trackball functionality can be enabled by setting the [`enable`](../api/chart/crosshairSettings#enable-boolean) property of the crosshair to **true** and the [`shared`](../api/chart/tooltipSettings#shared-boolean) property of the tooltip to **true**.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -171,7 +175,10 @@ Trackball can be enabled by setting the [`enable`](../api/chart/crosshairSetting
 {% endif %}
 
 ## Crosshair highlight
-The [`highlightCategory`](../api/chart/crosshairSettings/#highlightcategory) property in the crosshair highlights the background of the entire category when hovered over. The crosshair color can be customized using the [`color`](../api/chart/borderModel/#color) property within the [`line`](../api/chart/crosshairSettings/#line) configuration.
+
+The [`highlightCategory`](../api/chart/crosshairSettings#highlightcategory) property highlights the background of the entire category when the crosshair is moved over the chart.
+
+The crosshair line color can be customized using the [`color`](../api/chart/borderModel#color) property within the [`line`](../api/chart/crosshairSettings#line) configuration.
 
 {% if page.publishingplatform == "typescript" %}
 

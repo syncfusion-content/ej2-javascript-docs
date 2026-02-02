@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Theme in ##Platform_Name## controls
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript library has provided the below list of in-built themes:
+The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript library provides the following list of built-in themes:
 
 |Theme | Style Sheet Name |
 |--------|--------|
@@ -38,11 +38,11 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript library has prov
 |Microsoft Office Fabric Dark | fabric-dark.css |
 |High Contrast | highcontrast.css |
 
-> The Syncfusion<sup style="font-size:70%">&reg;</sup> Bootstrap theme is designed based on `Bootstrap v3`, but it can be compatible with `Bootstrap v4` applications. In addition to these four built-in themes, [ThemeStudio](https://ej2.syncfusion.com/documentation/appearance/theme-studio/) also provides support for the Fusion theme, which can only be downloaded from [ThemeStudio](https://ej2.syncfusion.com/themestudio/?theme=fusion).
+> The Syncfusion<sup style="font-size:70%">&reg;</sup> Bootstrap theme is designed based on `Bootstrap v3`, but it is compatible with `Bootstrap v4` applications. In addition to these built-in themes, [ThemeStudio](https://ej2.syncfusion.com/documentation/appearance/theme-studio) also provides support for the Fusion theme, which can only be downloaded from [ThemeStudio](https://ej2.syncfusion.com/themestudio/?theme=fusion).
 
 ## Optimized CSS files
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> controls provide two size modes for each theme: **normal** and **bigger**. By default, the **normal size mode** is applied, offering a standard appearance that is suitable for all devices. The **bigger size mode** provides an enlarged interface for enhanced interactions, visibility, and an overall improved user experience by increasing the size of the UI controls.
+Syncfusion<sup style="font-size:70%">&reg;</sup> controls provide two size modes for each theme: **normal** and **bigger**. By default, the **normal size mode** is applied, offering a standard appearance suitable for all devices. The **bigger size mode** provides an enlarged interface for enhanced interactions, improved visibility, and a better overall user experience by increasing the size of UI controls. This mode is particularly useful for touch-based interactions and accessibility requirements.
 
 The bigger size mode is ideal when an enlarged appearance is needed, while the normal size mode works best for maintaining the default appearance of controls.
 
@@ -51,6 +51,10 @@ Below is a comparison of the Button control in normal and bigger size modes:
 ![bigger-sized-button](./images/bigger-theme-button.png)
 
 Each theme includes both normal and bigger size modes, which increases the overall file size. To optimize performance, Syncfusion<sup style="font-size:70%">&reg;</sup> offers additional theme files (e.g., `fluent2-lite.css`), which only include the normal size mode styles. This results in a significant reduction in file size, improving load times and overall application performance, especially when the bigger size mode is unnecessary.
+**When to use optimized CSS files:**
+
+* Use **default theme files** when the application requires both normal and bigger size modes for touch-optimized or accessibility-enhanced interfaces.
+* Use **optimized theme files** (with `-lite` suffix) when the application only needs standard-sized controls, reducing bundle size and improving performance.
 
 Refer to the comparison below for the default and optimized theme file sizes:
 
@@ -60,11 +64,11 @@ Refer to the comparison below for the default and optimized theme file sizes:
 
 ## Reference themes in the application
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls themes that can be used in the application by referencing the style sheet. Using the following approaches, themes can be referenced in the application.
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript control themes can be used in the application by referencing the style sheet. The following approaches can be used to reference themes in the application:
 
-* [NPM Packages](#npm-packages) - Used to customize the existing themes and bundle stylesheet’s in an application.
-* [Content Delivery Network (CDN)](#cdn-reference) - Used to reference complete css via static web assets.
-* [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio) - Used to customize and generate themes only for the selected (used) components.
+* [NPM Packages](#npm-packages) - Used to customize existing themes and bundle stylesheets in an application.
+* [Content Delivery Network (CDN)](#cdn-reference) - Used to reference complete CSS via static web assets.
+* [Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio) - Used to customize and generate themes only for selected components.
 
 ## NPM packages
 
@@ -156,7 +160,7 @@ To refer to individual control's optimized CSS files from an individual packages
 
 ## CDN reference
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> hosts every Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript control as a separate package on the CDN. This allows you to load the scripts and styles for each individual package. Syncfusion<sup style="font-size:70%">&reg;</sup> also provides a single package that includes all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls, allowing you to load the scripts and styles for all controls as a single script and style file.
+Syncfusion<sup style="font-size:70%">&reg;</sup> hosts every Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript control as a separate package on the CDN. This allows scripts and styles to be loaded for each individual package. Syncfusion<sup style="font-size:70%">&reg;</sup> also provides a single package that includes all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls, allowing scripts and styles to be loaded for all controls as a single script and style file.
 
 ### Single CDN theme reference for all controls
 
@@ -166,7 +170,7 @@ Refer to a single CDN link that contains all Syncfusion<sup style="font-size:70%
 https://cdn.syncfusion.com/ej2/<version>/<theme_name>.css
 ```
 
-To refer to optimized CSS files, use the following syntax:
+To reference optimized CSS files, use the following syntax:
 
 ```
 https://cdn.syncfusion.com/ej2/<version>/<theme_name>-lite.css
@@ -175,28 +179,28 @@ https://cdn.syncfusion.com/ej2/<version>/<theme_name>-lite.css
 
 | Theme Name | CDN Reference |
 |--- | --- |
-| Tailwind 3.4 | [https://cdn.syncfusion.com/ej2/28.1.33/tailwind3.css](https://cdn.syncfusion.com/ej2/28.1.33/tailwind3.css) |
-| Tailwind 3.4 Dark | [https://cdn.syncfusion.com/ej2/28.1.33/tailwind3-dark.css](https://cdn.syncfusion.com/ej2/28.1.33/tailwind3-dark.css) |
-| Bootstrap 5.3 | [https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.3.css](https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.3.css) |
-| Bootstrap 5.3 Dark | [https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.3-dark.css](https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.3-dark.css) |
-| Fluent 2 | [https://cdn.syncfusion.com/ej2/27.1.48/fluent2.css](https://cdn.syncfusion.com/ej2/27.1.48/fluent2.css) |
-| Fluent 2 Dark | [https://cdn.syncfusion.com/ej2/27.1.48/fluent2-dark.css](https://cdn.syncfusion.com/ej2/27.1.48/fluent2-dark.css) |
-| Material 3 | [https://cdn.syncfusion.com/ej2/27.1.48/material3.css](https://cdn.syncfusion.com/ej2/27.1.48/material3.css) |
-| Material 3 Dark | [https://cdn.syncfusion.com/ej2/27.1.48/material3-dark.css](https://cdn.syncfusion.com/ej2/27.1.48/material3-dark.css) |
-| Fluent | [https://cdn.syncfusion.com/ej2/27.1.48/fluent.css](https://cdn.syncfusion.com/ej2/27.1.48/fluent.css) |
-| Fluent Dark | [https://cdn.syncfusion.com/ej2/27.1.48/fluent-dark.css](https://cdn.syncfusion.com/ej2/27.1.48/fluent-dark.css) |
-| Bootstrap 5 | [https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.css](https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.css) |
-| Bootstrap 5 Dark| [https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5-dark.css](https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5-dark.css) |
-| Bootstrap 4 | [https://cdn.syncfusion.com/ej2/27.1.48/bootstrap4.css](https://cdn.syncfusion.com/ej2/27.1.48/bootstrap4.css) |
-| Bootstrap 3 | [https://cdn.syncfusion.com/ej2/27.1.48/bootstrap.css](https://cdn.syncfusion.com/ej2/27.1.48/bootstrap.css) |
-| Bootstrap 3 Dark| [https://cdn.syncfusion.com/ej2/27.1.48/bootstrap-dark.css](https://cdn.syncfusion.com/ej2/27.1.48/bootstrap-dark.css) |
-| Google’s Material | [https://cdn.syncfusion.com/ej2/27.1.48/material.css](https://cdn.syncfusion.com/ej2/27.1.48/material.css) |
-| Google’s Material Dark | [https://cdn.syncfusion.com/ej2/27.1.48/material-dark.css](https://cdn.syncfusion.com/ej2/27.1.48/material-dark.css) |
-| Tailwind CSS | [https://cdn.syncfusion.com/ej2/27.1.48/tailwind.css](https://cdn.syncfusion.com/ej2/27.1.48/tailwind.css) |
-| Tailwind CSS Dark | [https://cdn.syncfusion.com/ej2/27.1.48/tailwind-dark.css](https://cdn.syncfusion.com/ej2/27.1.48/tailwind-dark.css) |
-| Microsoft Office Fabric  | [https://cdn.syncfusion.com/ej2/27.1.48/fabric.css](https://cdn.syncfusion.com/ej2/27.1.48/fabric.css) |
-| Microsoft Office Fabric Dark | [https://cdn.syncfusion.com/ej2/27.1.48/fabric-dark.css](https://cdn.syncfusion.com/ej2/27.1.48/fabric-dark.css) |
-| High Contrast  | [https://cdn.syncfusion.com/ej2/27.1.48/highcontrast.css](https://cdn.syncfusion.com/ej2/27.1.48/highcontrast.css) |
+| Tailwind 3.4 | [https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css](https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css) |
+| Tailwind 3.4 Dark | [https://cdn.syncfusion.com/ej2/32.1.19/tailwind3-dark.css](https://cdn.syncfusion.com/ej2/32.1.19/tailwind3-dark.css) |
+| Bootstrap 5.3 | [https://cdn.syncfusion.com/ej2/32.1.19/bootstrap5.3.css](https://cdn.syncfusion.com/ej2/32.1.19/bootstrap5.3.css) |
+| Bootstrap 5.3 Dark | [https://cdn.syncfusion.com/ej2/32.1.19/bootstrap5.3-dark.css](https://cdn.syncfusion.com/ej2/32.1.19/bootstrap5.3-dark.css) |
+| Fluent 2 | [https://cdn.syncfusion.com/ej2/32.1.19/fluent2.css](https://cdn.syncfusion.com/ej2/32.1.19/fluent2.css) |
+| Fluent 2 Dark | [https://cdn.syncfusion.com/ej2/32.1.19/fluent2-dark.css](https://cdn.syncfusion.com/ej2/32.1.19/fluent2-dark.css) |
+| Material 3 | [https://cdn.syncfusion.com/ej2/32.1.19/material3.css](https://cdn.syncfusion.com/ej2/32.1.19/material3.css) |
+| Material 3 Dark | [https://cdn.syncfusion.com/ej2/32.1.19/material3-dark.css](https://cdn.syncfusion.com/ej2/32.1.19/material3-dark.css) |
+| Fluent | [https://cdn.syncfusion.com/ej2/32.1.19/fluent.css](https://cdn.syncfusion.com/ej2/32.1.19/fluent.css) |
+| Fluent Dark | [https://cdn.syncfusion.com/ej2/32.1.19/fluent-dark.css](https://cdn.syncfusion.com/ej2/32.1.19/fluent-dark.css) |
+| Bootstrap 5 | [https://cdn.syncfusion.com/ej2/32.1.19/bootstrap5.css](https://cdn.syncfusion.com/ej2/32.1.19/bootstrap5.css) |
+| Bootstrap 5 Dark| [https://cdn.syncfusion.com/ej2/32.1.19/bootstrap5-dark.css](https://cdn.syncfusion.com/ej2/32.1.19/bootstrap5-dark.css) |
+| Bootstrap 4 | [https://cdn.syncfusion.com/ej2/32.1.19/bootstrap4.css](https://cdn.syncfusion.com/ej2/32.1.19/bootstrap4.css) |
+| Bootstrap 3 | [https://cdn.syncfusion.com/ej2/32.1.19/bootstrap.css](https://cdn.syncfusion.com/ej2/32.1.19/bootstrap.css) |
+| Bootstrap 3 Dark| [https://cdn.syncfusion.com/ej2/32.1.19/bootstrap-dark.css](https://cdn.syncfusion.com/ej2/32.1.19/bootstrap-dark.css) |
+| Google’s Material | [https://cdn.syncfusion.com/ej2/32.1.19/material.css](https://cdn.syncfusion.com/ej2/32.1.19/material.css) |
+| Google’s Material Dark | [https://cdn.syncfusion.com/ej2/32.1.19/material-dark.css](https://cdn.syncfusion.com/ej2/32.1.19/material-dark.css) |
+| Tailwind CSS | [https://cdn.syncfusion.com/ej2/32.1.19/tailwind.css](https://cdn.syncfusion.com/ej2/32.1.19/tailwind.css) |
+| Tailwind CSS Dark | [https://cdn.syncfusion.com/ej2/32.1.19/tailwind-dark.css](https://cdn.syncfusion.com/ej2/32.1.19/tailwind-dark.css) |
+| Microsoft Office Fabric  | [https://cdn.syncfusion.com/ej2/32.1.19/fabric.css](https://cdn.syncfusion.com/ej2/32.1.19/fabric.css) |
+| Microsoft Office Fabric Dark | [https://cdn.syncfusion.com/ej2/32.1.19/fabric-dark.css](https://cdn.syncfusion.com/ej2/32.1.19/fabric-dark.css) |
+| High Contrast  | [https://cdn.syncfusion.com/ej2/32.1.19/highcontrast.css](https://cdn.syncfusion.com/ej2/32.1.19/highcontrast.css) |
 
 ### Individual control theme CDN reference
 
@@ -204,21 +208,21 @@ The primary goal of individual CDN control is to optimize the loading time and m
 
 >Dependency style:
 >
->`https://cdn.syncfusion.com/ej2/22.1.34/{DEPENDENCY_PACKAGE_NAME}/styles/material.css`
+>`https://cdn.syncfusion.com/ej2/32.1.19/{DEPENDENCY_PACKAGE_NAME}/styles/material.css`
 >
 >Control style:
 >
->`https://cdn.syncfusion.com/ej2/22.1.34/{PACKAGE_NAME}/styles/material.css`
+>`https://cdn.syncfusion.com/ej2/32.1.19/{PACKAGE_NAME}/styles/material.css`
 
 **Example:**
 
 >Button's control style:
 >
->[https://cdn.syncfusion.com/ej2/22.1.34/ej2-buttons/styles/material.css](https://cdn.syncfusion.com/ej2/22.1.34/ej2-buttons/styles/material.css)
+>[https://cdn.syncfusion.com/ej2/32.1.19/ej2-buttons/styles/material.css](https://cdn.syncfusion.com/ej2/32.1.19/ej2-buttons/styles/material.css)
 >
 >Button's dependency style:
 >
->[https://cdn.syncfusion.com/ej2/22.1.34/ej2-base/styles/material.css](https://cdn.syncfusion.com/ej2/22.1.34/ej2-base/styles/material.css)
+>[https://cdn.syncfusion.com/ej2/32.1.19/ej2-base/styles/material.css](https://cdn.syncfusion.com/ej2/32.1.19/ej2-base/styles/material.css)
 
 ## Change theme dynamically
 
@@ -235,7 +239,7 @@ In the application, Syncfusion<sup style="font-size:70%">&reg;</sup> themes can 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Syncfusion JavaScript Grid control" />
     <!-- Syncfusion JavaScript controls styles -->
-    <link id="css-link" href="https://cdn.syncfusion.com/ej2/22.1.34/bootstrap5.css" rel="stylesheet" />
+    <link id="css-link" href="https://cdn.syncfusion.com/ej2/32.1.19/bootstrap5.css" rel="stylesheet" />
     ---
 </head>
 
@@ -269,7 +273,7 @@ let dropDownListObject: DropDownList = new DropDownList({
        let themeName = args.value as string;
        document.getElementsByTagName('body')[0].style.display = 'none';
        let styleLink: any = document.getElementById('css-link');
-       styleLink.href = 'https://cdn.syncfusion.com/ej2/22.1.34/' + themeName + '.css';
+       styleLink.href = 'https://cdn.syncfusion.com/ej2/32.1.19/' + themeName + '.css';
        setTimeout(function () { document.getElementsByTagName('body')[0].style.display = 'block'; }, 250);
     }
 });

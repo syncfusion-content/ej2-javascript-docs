@@ -11,9 +11,10 @@ domainurl: ##DomainURL##
 
 # License key registration in ##Platform_Name## Licensing control
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> license key should be registered, if your project using Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) packages reference. The generated license key is a string that needs to be registered after any [Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) reference](https://ej2.syncfusion.com/javascript/documentation/getting-started/compatible-with-essential-js1/).
+The Syncfusion<sup style="font-size:70%">&reg;</sup> license key must be registered in projects that reference Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) packages. The generated license key is a string that must be registered after including any [Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) script reference](https://ej2.syncfusion.com/javascript/documentation/getting-started/compatible-with-essential-js1).
 
->Note: Syncfusion<sup style="font-size:70%">&reg;</sup> license validation is done offline during application execution and does not require internet access. Apps registered with a Syncfusion<sup style="font-size:70%">&reg;</sup> license key can be deployed on any system that does not have an internet connection.
+> **Note:** Syncfusion<sup style="font-size:70%">&reg;</sup> license validation occurs offline during application execution and does not require an internet connection. Applications registered with a valid Syncfusion<sup style="font-size:70%">&reg;</sup> license key can be deployed on systems without internet access.
+
 
 The following code is used to register the license.
 
@@ -30,6 +31,8 @@ ej.base.registerLicense('Replace your generated license key here');
 
 >Note: Only from 2022 Vol 1 v20.1.0.47, license key registration required for Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 products.
 
-## See also
+## See Also
 
-* [Licensing FAQ](https://ej2.syncfusion.com/javascript/documentation/licensing/licensing-troubleshoot/)
+* [Generate Syncfusion License Key](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-generation)
+* [Licensing Overview](https://ej2.syncfusion.com/javascript/documentation/licensing/overview)
+* [Licensing FAQ](https://ej2.syncfusion.com/javascript/documentation/licensing/licensing-troubleshoot)

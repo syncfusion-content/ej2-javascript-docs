@@ -15,6 +15,13 @@ This section guides you through the steps to create a simple [Pivot Table](https
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/javascript/documentation/ai-coding-assistant/overview)
 
+## Prerequisites
+
+To get started, ensure the following software to be installed in the machine.
+
+* [Essential Studio® JavaScript (Essential® JS 2)](https://www.syncfusion.com/account/manage-trials/downloads)
+* [Visual Studio Code](https://code.visualstudio.com)
+
 ## Dependencies
 
 Understanding the dependency structure helps you identify the required packages for implementing the Pivot Table component effectively in your Javascript application. The Pivot Table component relies on a structured hierarchy of dependencies that provide essential functionality for data processing, user interface elements, and export capabilities.
@@ -36,11 +43,12 @@ The following dependency tree shows the required packages for the Javascript Piv
         |-- @syncfusion/ej2-svg-base
     |-- @syncfusion/ej2-inputs
     |-- @syncfusion/ej2-buttons
+    |-- @syncfusion/ej2-splitbuttons
     |-- @syncfusion/ej2-dropdowns
     |-- @syncfusion/ej2-lists
     |-- @syncfusion/ej2-popups
     |-- @syncfusion/ej2-navigations
-    |-- @syncfusion/ej2-grids  
+    |-- @syncfusion/ej2-grids
 ```
 
 ## Set up the local environment
@@ -64,11 +72,9 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 pivot table control can
 
 **1. Download Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2):** Obtain the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
-**2. Copy Files to Resources Folder:** After installing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 product build, you can copy the pivot table scripts and style file into the designated folders:
+**2. Copy Files to Resources Folder:** After installing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 product build, you can copy the pivot table scripts and style file into the designated folders.
 
-Scripts: Copy the scripts to the `resources/scripts` folder.
-
-Styles: Copy the styles to the `resources/styles` folder.
+> Inside the ~/my-app/resources folder, create the ej2-base/styles/, ej2-popups/styles/, ej2-grids/styles/ and scripts folders. Then, copy/paste the individual scripts and styles from the below installed location to the corresponding ~/my-app/resources location.
 
 **3. Locate Script and Style Files:** Refer to the code below to find the location of the pivot table's script and style file.
 
@@ -381,6 +387,8 @@ Users can also use the grouping bar to sort, filter, or remove fields quickly wi
 
 > The `GroupingBar` module must be injected for the grouping bar to render properly with the Pivot Table component. Without this module, the grouping bar will not be available.
 
+**Note:** For better code organization and maintainability, it is recommended to move the sample data array (pivotData) to a separate file named **es5-datasource.js**. Export the data from **es5-datasource.js** as shown in the subsequent examples.
+
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/pivot-table/pivot-table-cs157/index.js %}
@@ -491,4 +499,4 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Pivot Table control fea
 
 For more information and to access the quick start project, visit: [GitHub Repository](https://github.com/SyncfusionExamples/getting-started-with-the-javascript-pivot-table-component)
 
-> You can also explore our [JavaScript Pivot Table example](https://ej2.syncfusion.com/demos#/tailwind3/pivot-table/default) that shows how to rendering of the pivot table with drill-up and drill-down functionality bound to a relational report.
+> You can also explore our [JavaScript Pivot Table example](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/pivot-table/default.html) that shows how to rendering of the pivot table with drill-up and drill-down functionality bound to a relational report.

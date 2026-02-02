@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Excel export in ##Platform_Name## Gantt control
 
-Gantt supports client-side exporting, which allows you to export its data to the Excel and CSV formats. Use the [`excelExport`](../../api/gantt/#excelexport) and [`csvExport`](../../api/gantt/#csvexport) methods for exporting. To enable Excel export in the Gantt, set the [`allowExcelExport`](../../api/gantt/#allowexcelexport) to true.
+Gantt supports client-side exporting, which allows you to export its data to the Excel and CSV formats. Use the [excelExport](../../api/gantt#excelexport) and [csvExport](../../api/gantt#csvexport) methods for exporting. To enable Excel export in the Gantt, set the [allowExcelExport](../../api/gantt#allowexcelexport) to true.
 
 To export data to Excel and CSV, inject the `ExcelExport` module in Gantt.
 

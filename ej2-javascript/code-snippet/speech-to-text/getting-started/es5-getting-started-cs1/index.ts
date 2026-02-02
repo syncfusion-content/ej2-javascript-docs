@@ -5,12 +5,12 @@
                <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js"></script>
                <title>JavaScript (ES5)</title>
                <!-- JavaScript (ES5) SpeechToText's dependency style -->
-               <link href="https://cdn.syncfusion.com/ej2/21.2.3/ej2-base/styles/material.css" rel="stylesheet" type="text/css" />
-               <link href="https://cdn.syncfusion.com/ej2/21.2.3/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css" />
-               <link href="https://cdn.syncfusion.com/ej2/21.2.3/ej2-popups/styles/material.css" rel="stylesheet" type="text/css" />
+               <link href="https://cdn.syncfusion.com/ej2/21.2.3/ej2-base/styles/tailwind3.css" rel="stylesheet" type="text/css" />
+               <link href="https://cdn.syncfusion.com/ej2/21.2.3/ej2-buttons/styles/tailwind3.css" rel="stylesheet" type="text/css" />
+               <link href="https://cdn.syncfusion.com/ej2/21.2.3/ej2-popups/styles/tailwind3.css" rel="stylesheet" type="text/css" />
 
                <!-- JavaScript (ES5) SpeechToText's control style -->
-               <link href="https://cdn.syncfusion.com/ej2/21.2.3/ej2-inputs/styles/material.css" rel="stylesheet" type="text/css" />
+               <link href="https://cdn.syncfusion.com/ej2/21.2.3/ej2-inputs/styles/tailwind3.css" rel="stylesheet" type="text/css" />
 
                <!-- JavaScript (ES5) SpeechToText's dependency global script -->
                <script src="https://cdn.syncfusion.com/ej2/21.2.3/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>

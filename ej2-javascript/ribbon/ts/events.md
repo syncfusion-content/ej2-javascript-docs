@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Events in ##Platform_Name## Ribbon control
 
-This section describes the ribbon events that will be triggered when appropriate actions are performed. The following events are available in the ribbon control.
+The Ribbon control triggers a variety of events in response to user interactions, such as selecting a tab, clicking a button, or expanding the ribbon. This section provides detailed explanations and code examples for each available event.
 
 ## tabSelected
 
-The [tabSelected](../api/ribbon/ribbonModel/#tabselected) event is triggered after selecting the tab item.
+The [tabSelected](../api/ribbon/ribbonModel/#tabselected) event is triggered after a tab is successfully selected, allowing you to execute logic based on the newly active tab.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType, TabSelectedEventArgs } from "@syncfusion/ej2-ribbon";
@@ -64,7 +64,7 @@ ribbon.appendTo("#ribbon");
 
 ## tabSelecting
 
-The [`tabSelecting`](../api/ribbon/ribbonModel/#tabselecting) event is triggered before selecting the tab item.
+The [tabSelecting](../api/ribbon/ribbonModel/#tabselecting) event is triggered before a tab is selected. This event can be canceled to prevent the tab selection.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType, TabSelectingEventArgs } from "@syncfusion/ej2-ribbon";
@@ -113,7 +113,7 @@ ribbon.appendTo("#ribbon");
 
 ## ribbonCollapsing
 
-The [ribbonCollapsing](../api/ribbon/ribbonModel/#ribboncollapsing) event is triggered before collapsing the ribbon.
+The [ribbonCollapsing](../api/ribbon/ribbonModel/#ribboncollapsing) event is triggered before the ribbon is collapsed. This action can be canceled.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType, ExpandCollapseEventArgs } from "@syncfusion/ej2-ribbon";
@@ -146,7 +146,7 @@ ribbon.appendTo("#ribbon");
 
 ## ribbonExpanding
 
-The [ribbonExpanding](../api/ribbon/ribbonModel/#ribbonexpanding) event is triggered before expanding the ribbon.
+The [ribbonExpanding](../api/ribbon/ribbonModel/#ribbonexpanding) event is triggered before the ribbon is expanded. This action can be canceled.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType, ExpandCollapseEventArgs } from "@syncfusion/ej2-ribbon";
@@ -179,7 +179,7 @@ ribbon.appendTo("#ribbon");
 
 ## launcherIconClick
 
-The [launcherIconClick](../api/ribbon/ribbonModel/#launchericonclick) event is triggered when the launcher icon of the group is clicked.
+The [launcherIconClick](../api/ribbon/ribbonModel/#launchericonclick) event is triggered when the launcher icon of a group is clicked. This is useful for opening dialogs or performing group-specific actions.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType, LauncherClickEventArgs } from "@syncfusion/ej2-ribbon";
@@ -213,13 +213,13 @@ ribbon.appendTo("#ribbon");
 
 ## overflowPopupOpen
 
-The [overflowPopupOpen](../api/ribbon/ribbonModel/#overflowpopupopen) event is triggered while opening the overflow popup.
+The [overflowPopupOpen](../api/ribbon/ribbonModel/#overflowpopupopen) event is triggered while the overflow popup is opening.
 
 ## overflowPopupClose
 
-The [overflowPopupClose](../api/ribbon/ribbonModel/#overflowpopupclose) event is triggered while closing the overflow popup.
+The [overflowPopupClose](../api/ribbon/ribbonModel/#overflowpopupclose) event is triggered while the overflow popup is closing.
 
-The following code example demonstrates the ribbon rendered with `overflowPopupOpen` and `overflowPopupClose` events.
+The following code example demonstrates the ribbon with the `overflowPopupOpen` and `overflowPopupClose` events.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType, OverflowPopupEventArgs, RibbonLayout } from "@syncfusion/ej2-ribbon";
@@ -258,7 +258,7 @@ ribbon.appendTo('#ribbon');
 
 ### clicked
 
-The [clicked](../api/ribbon/ribbonButtonSettings/#clicked) event is triggered when the Button is clicked.
+The [clicked](../api/ribbon/ribbonButtonSettings/#clicked) event is triggered when a ribbon button is clicked.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType } from "@syncfusion/ej2-ribbon";
@@ -289,7 +289,7 @@ ribbon.appendTo("#ribbon");
 
 ### created
 
-The [created](../api/ribbon/ribbonButtonSettings/#created) event is triggered when the Button is created.
+The [created](../api/ribbon/ribbonButtonSettings/#created) event is triggered when a ribbon button is created.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType } from "@syncfusion/ej2-ribbon";
@@ -322,7 +322,7 @@ ribbon.appendTo("#ribbon");
 
 ### change
 
-The [change](../api/ribbon/ribbonCheckBoxSettings/#change) event is triggered when the Checkbox state is changed.
+The [change](../api/ribbon/ribbonCheckBoxSettings/#change) event is triggered when the state of the checkbox is changed.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType } from "@syncfusion/ej2-ribbon";
@@ -386,7 +386,7 @@ ribbon.appendTo("#ribbon");
 
 ### change
 
-The [change](../api/ribbon/ribbonColorPickerSettings/#change) event is triggered while changing the colors.
+The [change](../api/ribbon/ribbonColorPickerSettings/#change) event is triggered when changing the color value.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType, RibbonColorPicker } from "@syncfusion/ej2-ribbon";
@@ -451,7 +451,7 @@ ribbon.appendTo("#ribbon");
 
 ### open
 
-The [open](../api/ribbon/ribbonColorPickerSettings/#open) event is triggered while opening the ColorPicker popup.
+The [open](../api/ribbon/ribbonColorPickerSettings/#open) event is triggered while the ColorPicker popup is opening.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType, RibbonColorPicker } from "@syncfusion/ej2-ribbon";
@@ -484,7 +484,7 @@ ribbon.appendTo("#ribbon");
 
 ### select
 
-The [select](../api/ribbon/ribbonColorPickerSettings/#select) event is triggered while selecting the color in picker/palette, when showButtons property is enabled.
+The [select](../api/ribbon/ribbonColorPickerSettings/#select) event is triggered when selecting a color from the picker or palette, particularly when the `showButtons` property is enabled.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType, RibbonColorPicker } from "@syncfusion/ej2-ribbon";
@@ -517,7 +517,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeClose
 
-The [beforeClose](../api/ribbon/ribbonColorPickerSettings/#beforeclose) event is triggered before closing the ColorPicker popup.
+The [beforeClose](../api/ribbon/ribbonColorPickerSettings/#beforeclose) event is triggered before the ColorPicker popup closes.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType, RibbonColorPicker } from "@syncfusion/ej2-ribbon";
@@ -550,7 +550,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeOpen
 
-The [beforeOpen](../api/ribbon/ribbonColorPickerSettings/#beforeopen) event is triggered before opening the ColorPicker popup.
+The [beforeOpen](../api/ribbon/ribbonColorPickerSettings/#beforeopen) event is triggered before the ColorPicker popup opens.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType, RibbonColorPicker } from "@syncfusion/ej2-ribbon";
@@ -583,7 +583,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeTileRender
 
-The [beforeTileRender](../api/ribbon/ribbonColorPickerSettingsModel/#beforetilerender) event is triggered while rendering each palette tile.
+The [beforeTileRender](../api/ribbon/ribbonColorPickerSettingsModel/#beforetilerender) event is triggered while rendering each palette tile, allowing for customization.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType, RibbonColorPicker } from "@syncfusion/ej2-ribbon";
@@ -618,7 +618,7 @@ ribbon.appendTo("#ribbon");
 
 ### change
 
-The [change](../api/ribbon/ribbonComboBoxSettings/#change) event is triggered when an item in a popup is selected or when the model value is changed by the user.
+The [change](../api/ribbon/ribbonComboBoxSettings/#change) event is triggered when an item in a popup is selected or the model value is changed by the user.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType } from "@syncfusion/ej2-ribbon";
@@ -717,7 +717,7 @@ ribbon.appendTo("#ribbon");
 
 ### created
 
-The [created](../api/ribbon/ribbonComboBoxSettings/#created) event is triggered once the Combobox is created.
+The [created](../api/ribbon/ribbonComboBoxSettings/#created) event is triggered when the ComboBox is created.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType } from "@syncfusion/ej2-ribbon";
@@ -749,7 +749,7 @@ ribbon.appendTo("#ribbon");
 
 ### filtering
 
-The [filtering](../api/ribbon/ribbonComboBoxSettings/#filtering) event triggers on typing a character in the Combobox.
+The [filtering](../api/ribbon/ribbonComboBoxSettings/#filtering) event triggers when typing a character in the ComboBox.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType } from "@syncfusion/ej2-ribbon";
@@ -816,7 +816,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeOpen
 
-The [beforeOpen](../api/ribbon/ribbonComboBoxSettings/#beforeOpen) event triggers before opening the popup.
+The [beforeOpen](../api/ribbon/ribbonComboBoxSettings/#beforeOpen) event triggers before the popup opens.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType } from "@syncfusion/ej2-ribbon";
@@ -851,7 +851,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeClose
 
-The [beforeClose](../api/ribbon/ribbonDropDownSettings/#beforeclose) event is triggered before closing the DropdownButton popup.
+The [beforeClose](../api/ribbon/ribbonDropDownSettings/#beforeclose) event is triggered before the DropDownButton popup closes.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType } from "@syncfusion/ej2-ribbon";
@@ -884,7 +884,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeOpen
 
-The [beforeOpen](../api/ribbon/ribbonDropDownSettings/#beforeopen) event is triggered before opening the Dropdown button popup.
+The [beforeOpen](../api/ribbon/ribbonDropDownSettings/#beforeopen) event is triggered before the DropDownButton popup opens.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType } from "@syncfusion/ej2-ribbon";
@@ -917,7 +917,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeItemRender
 
-The [beforeItemRender](../api/ribbon/ribbonDropDownSettings/#beforeitemrender) event is triggered while rendering each popup item of the Dropdown button.
+The [beforeItemRender](../api/ribbon/ribbonDropDownSettings/#beforeitemrender) event is triggered while rendering each popup item of the DropDownButton.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType } from "@syncfusion/ej2-ribbon";
@@ -950,7 +950,7 @@ ribbon.appendTo("#ribbon");
 
 ### open
 
-The [open](../api/ribbon/ribbonDropDownSettings/#open) event is triggered while opening the Dropdown button popup.
+The [open](../api/ribbon/ribbonDropDownSettings/#open) event is triggered when the DropDownButton popup opens.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType } from "@syncfusion/ej2-ribbon";
@@ -983,7 +983,7 @@ ribbon.appendTo("#ribbon");
 
 ### close
 
-The [close](../api/ribbon/ribbonDropDownSettings/#close) event is triggered while closing the Dropdown button popup.
+The [close](../api/ribbon/ribbonDropDownSettings/#close) event is triggered when the DropDownButton popup closes.up.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType } from "@syncfusion/ej2-ribbon";
@@ -1016,7 +1016,7 @@ ribbon.appendTo("#ribbon");
 
 ### created
 
-The [created](../api/ribbon/ribbonDropDownSettings/#created) event is triggered when the DropDown is created.
+The [created](../api/ribbon/ribbonDropDownSettings/#created) event is triggered when the DropDownButton is created.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType } from "@syncfusion/ej2-ribbon";
@@ -1048,7 +1048,7 @@ ribbon.appendTo("#ribbon");
 
 ### select
 
-The [select](../api/ribbon/ribbonDropDownSettings/#select) event is triggered while selecting an action item in the Dropdown button popup.
+The [select](../api/ribbon/ribbonDropDownSettings/#select) event is triggered when an action item is selected in the DropDownButton popup.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType } from "@syncfusion/ej2-ribbon";
@@ -1083,7 +1083,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeClose
 
-The [beforeClose](../api/ribbon/ribbonSplitButtonSettings/#beforeclose) event is triggered before closing the SplitButton popup.
+The [beforeClose](../api/ribbon/ribbonSplitButtonSettings/#beforeclose) event is triggered before the SplitButton popup closes.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType } from "@syncfusion/ej2-ribbon";
@@ -1116,7 +1116,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeOpen
 
-The [beforeOpen](../api/ribbon/ribbonSplitButtonSettings/#beforeopen) event is triggered before opening the SplitButton popup.
+The [beforeOpen](../api/ribbon/ribbonSplitButtonSettings/#beforeopen) event is triggered before the SplitButton popup opens.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType } from "@syncfusion/ej2-ribbon";
@@ -1149,7 +1149,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeItemRender
 
-The [beforeItemRender](../api/ribbon/ribbonSplitButtonSettings/#beforeitemrender) event is triggered while rendering each popup item of SplitButton
+The [beforeItemRender](../api/ribbon/ribbonSplitButtonSettings/#beforeitemrender) event is triggered while rendering each popup item of the SplitButton.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType } from "@syncfusion/ej2-ribbon";
@@ -1182,7 +1182,7 @@ ribbon.appendTo("#ribbon");
 
 ### open
 
-The [open](../api/ribbon/ribbonSplitButtonSettings/#open) event is triggered while opening the SplitButton popup.
+The [open](../api/ribbon/ribbonSplitButtonSettings/#open) event is triggered when the SplitButton popup opens.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType } from "@syncfusion/ej2-ribbon";
@@ -1215,7 +1215,7 @@ ribbon.appendTo("#ribbon");
 
 ### close
 
-The [close](../api/ribbon/ribbonSplitButtonSettings/#close) event is triggered while closing the SplitButton popup.
+The [close](../api/ribbon/ribbonSplitButtonSettings/#close) event is triggered when the SplitButton popup closes.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType } from "@syncfusion/ej2-ribbon";
@@ -1280,7 +1280,7 @@ ribbon.appendTo("#ribbon");
 
 ### select
 
-The [select](../api/ribbon/ribbonSplitButtonSettings/#select) event is triggered while selecting an action item in the SplitButton popup.
+The [select](../api/ribbon/ribbonSplitButtonSettings/#select) event is triggered when an action item is selected in the SplitButton popup.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType } from "@syncfusion/ej2-ribbon";
@@ -1313,7 +1313,7 @@ ribbon.appendTo("#ribbon");
 
 ### click
 
-The [click](../api/ribbon/ribbonSplitButtonSettings/#click) event is triggered while clicking the primary button in the SplitButton.
+The [click](../api/ribbon/ribbonSplitButtonSettings/#click) event is triggered when clicking the primary button in the SplitButton.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType } from "@syncfusion/ej2-ribbon";
@@ -1348,7 +1348,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeClick
 
-The [beforeClick](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonGroupButtonItemModel/#beforeclick) event is triggered before selecting a button from the GroupButton items.
+The [beforeClick](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonGroupButtonItemModel/#beforeclick) event is triggered before a button is selected from the GroupButton items.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType, BeforeClickGroupButtonEventArgs } from "@syncfusion/ej2-ribbon";
@@ -1405,7 +1405,7 @@ ribbon.appendTo("#ribbon");
 
 ### click
 
-The [click](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonGroupButtonItemModel/#click) event is triggered when selecting a button from the GroupButton items.
+The [click](https://ej2.syncfusion.com/documentation/api/ribbon/ribbonGroupButtonItemModel/#click) event is triggered when a button is selected from the GroupButton items.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType, ClickGroupButtonEventArgs } from "@syncfusion/ej2-ribbon";
@@ -1465,7 +1465,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeClose
 
-The [beforeClose](../api/ribbon/fileMenuSettings/#beforeclose) event is triggered before closing the fileMenu popup.
+The [beforeClose](../api/ribbon/fileMenuSettings/#beforeclose) event is triggered before the File Menu popup closes.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType, RibbonFileMenu, FileMenuBeforeOpenCloseEventArgs } from "@syncfusion/ej2-ribbon";
@@ -1512,7 +1512,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeOpen
 
-The [beforeOpen](../api/ribbon/fileMenuSettings/#beforeopen) event is triggered before opening the fileMenu popup.
+The [beforeOpen](../api/ribbon/fileMenuSettings/#beforeopen) event is triggered before the File Menu popup opens.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType, RibbonFileMenu, FileMenuBeforeOpenCloseEventArgs } from "@syncfusion/ej2-ribbon";
@@ -1559,7 +1559,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeItemRender
 
-The [beforeItemRender](../api/ribbon/fileMenuSettings/#beforeitemrender) event is triggered while rendering each ribbon fileMenu item.
+The [beforeItemRender](../api/ribbon/fileMenuSettings/#beforeitemrender) event is triggered while rendering each ribbon File Menu item.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType, RibbonFileMenu, FileMenuEventArgs } from "@syncfusion/ej2-ribbon";
@@ -1606,7 +1606,7 @@ ribbon.appendTo("#ribbon");
 
 ### open
 
-The [open](../api/ribbon/fileMenuSettings/#open) event is triggered when the fileMenu popup is opened.
+The [open](../api/ribbon/fileMenuSettings/#open) event is triggered when the File Menu popup opens.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType, RibbonFileMenu, FileMenuOpenCloseEventArgs } from "@syncfusion/ej2-ribbon";
@@ -1653,7 +1653,7 @@ ribbon.appendTo("#ribbon");
 
 ### close
 
-The [close](../api/ribbon/fileMenuSettings/#close) event is triggered when the fileMenu popup is closed.
+The [close](../api/ribbon/fileMenuSettings/#close) event is triggered when the File Menu popup closes.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType, RibbonFileMenu, FileMenuOpenCloseEventArgs } from "@syncfusion/ej2-ribbon";
@@ -1700,7 +1700,7 @@ ribbon.appendTo("#ribbon");
 
 ### select
 
-The [select](../api/ribbon/fileMenuSettings/#select) event is triggered while selecting an item in the ribbon fileMenu.
+The [select](../api/ribbon/fileMenuSettings/#select) event is triggered when an item is selected in the ribbon File Menu.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType, RibbonFileMenu, FileMenuEventArgs } from "@syncfusion/ej2-ribbon";
@@ -1749,7 +1749,7 @@ ribbon.appendTo("#ribbon");
 
 ### backStageItemClick
 
-The [backStageItemClick](../api/ribbon/backstageItem/#backstageitemclick) event is triggered when backstage item is clicked.
+The [backStageItemClick](../api/ribbon/backstageItem/#backstageitemclick) event is triggered when a backstage item is selected.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType, RibbonBackstage, FileMenuBeforeOpenCloseEventArgs } from "@syncfusion/ej2-ribbon";
@@ -1907,7 +1907,7 @@ ribbon.appendTo("#ribbon");
 
 ### itemHover
 
-The [itemHover](../api/ribbon/ribbonGallerySettings/#itemhover) event is triggered when hover over the gallery item.
+The [itemHover](../api/ribbon/ribbonGallerySettings/#itemhover) event is triggered when hovering over a gallery item.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType, RibbonGallery, GalleryHoverEventArgs } from "@syncfusion/ej2-ribbon";
@@ -1961,7 +1961,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeItemRender
 
-The [beforeItemRender](../api/ribbon/ribbonGallerySettings/#beforeitemrender) event is triggered while rendering each gallery item.
+The [beforeItemRender](../api/ribbon/ribbonGallerySettings/#beforeitemrender) event is triggered before each gallery item is rendered.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType, RibbonGallery, GalleryItemEventArgs } from "@syncfusion/ej2-ribbon";
@@ -2015,7 +2015,7 @@ ribbon.appendTo("#ribbon");
 
 ### beforeSelect
 
-The [beforeSelect](../api/ribbon/ribbonGallerySettings/#beforeselect) event is triggered before selecting an item in the Ribbon gallery.
+The [beforeSelect](../api/ribbon/ribbonGallerySettings/#beforeselect) event is triggered before an item is selected in the Ribbon gallery.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType, RibbonGallery, GalleryBeforeSelectEventArgs } from "@syncfusion/ej2-ribbon";
@@ -2069,7 +2069,7 @@ ribbon.appendTo("#ribbon");
 
 ### select
 
-The [select](../api/ribbon/gallerySelectEventArgs/) event is triggered while selecting an item in the Ribbon Gallery.
+The [select](../api/ribbon/gallerySelectEventArgs/) event is triggered when an item is selected in the Ribbon Gallery.
 
 ```typescript
 import { Ribbon, RibbonTabModel, RibbonItemType, RibbonGallery, GallerySelectEventArgs } from "@syncfusion/ej2-ribbon";

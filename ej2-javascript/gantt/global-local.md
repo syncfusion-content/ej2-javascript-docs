@@ -13,8 +13,8 @@ domainurl: ##DomainURL##
 
 ## Localization
 
-The [`Localization`](../common/localization) library allows you to localize default text content of the Gantt. The Gantt component has static text on some features (like toolbar area text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the
-[`locale`](../api/gantt/#locale) value and translation object.
+The [Localization](../common/localization) library allows you to localize default text content of the Gantt. The Gantt component has static text on some features (like toolbar area text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the
+[locale](../api/gantt#locale) value and translation object.
 
 The following list of properties and its values are used in the Gantt.
 
@@ -119,7 +119,7 @@ SS | SS
 
 ### Loading translations
 
-To load translation object in an application use [`load`](https://ej2.syncfusion.com/documentation/api/base/l10n/#load) function of [`L10n`](https://ej2.syncfusion.com/documentation/api/base/l10n/) class.
+To load translation object in an application use [load](https://ej2.syncfusion.com/documentation/api/base/l10n#load) function of [L10n](https://ej2.syncfusion.com/documentation/api/base/l10n) class.
 
 The below example demonstrates the Gantt in **Deutsch** culture.
 
@@ -152,7 +152,7 @@ The below example demonstrates the Gantt in **Deutsch** culture.
 
 ## Internationalization
 
-The [`Internationalization`](../common/internationalization) library is used to globalize number, date, and time values in gantt component.
+The [Internationalization](../common/internationalization) library is used to globalize number, date, and time values in gantt component.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -182,11 +182,11 @@ The [`Internationalization`](../common/internationalization) library is used to 
 {% endif %}
 
 > * In the above sample, `Timeline` is formatted by `NumberFormatOptions` and `DateFormatOptions`.
-> * By default, [`locale`](../api/gantt/#locale) value is `en-US`. If you want to change `en-US` culture, then set the [`locale`](../api/gantt/#locale).
+> * By default, [locale](../api/gantt#locale) value is `en-US`. If you want to change `en-US` culture, then set the [locale](../api/gantt#locale).
 
 ## Right to left (RTL)
 
-RTL provides an option to switch the text direction and layout of the Gantt component from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Urdu, etc.). To enable RTL Gantt, set the [`enableRtl`](../api/gantt/#enablertl) to true.
+RTL provides an option to switch the text direction and layout of the Gantt component from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Urdu, etc.). To enable RTL Gantt, set the [enableRtl](../api/gantt#enablertl) to true.
 
 {% if page.publishingplatform == "typescript" %}
 

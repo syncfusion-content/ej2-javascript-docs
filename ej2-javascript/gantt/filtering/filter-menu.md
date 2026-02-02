@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Filter menu in ##Platform_Name## Gantt control
 
-The Gantt control provides the menu filtering support for each column. You can enable the filter menu by setting the [`allowFiltering`](../../api/gantt/#allowfiltering) to `true`. The filter menu UI will be rendered based on its column type, which allows you to filter data. You can filter the records with different operators.
+The Gantt control provides the menu filtering support for each column. You can enable the filter menu by setting the [allowFiltering](../../api/gantt#allowfiltering) to `true`. The filter menu UI will be rendered based on its column type, which allows you to filter data. You can filter the records with different operators.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -40,12 +40,12 @@ The Gantt control provides the menu filtering support for each column. You can e
 {% previewsample "page.domainurl/code-snippet/gantt/initialLoadFiltering-cs2" %}
 {% endif %}
 
->The [`allowFiltering`](../../api/gantt/#allowfiltering) property should be set to `true` to enable the filter menu.
->Setting the [`columns.allowFiltering`](../../api/gantt/column/#allowfiltering) property to `false` prevents rendering filter menu for a particular column.
+>The [allowFiltering](../../api/gantt#allowfiltering) property should be set to `true` to enable the filter menu.
+>Setting the [columns.allowFiltering](../../api/gantt/column#allowfiltering) property to `false` prevents rendering filter menu for a particular column.
 
 ## Custom component in filter menu
 
-The [`column.filter.ui`](../../api/gantt/column/#filter) is used to add custom filter components to a particular column.
+The [column.filter.ui](../../api/gantt/column#filter) is used to add custom filter components to a particular column.
 
 To implement custom filter ui, define the following functions:
 

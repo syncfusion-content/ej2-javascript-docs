@@ -23,9 +23,9 @@ Refer below link for more details.
 
 The task can be splitted dynamically, either by using the context menu or dialog.
 
-* `Dialog`: `Segments` tab is rendered in add/edit dialog, when the [`taskFields.segments`](../../api/gantt/taskFields/#segments) or [`taskFields.segmentId`](../../api/gantt/taskFields/#segmentId) property is mapped. Using this tab, we can split the task based on the original start and end date of a particular task.
+* `Dialog`: `Segments` tab is rendered in add/edit dialog, when the [taskFields.segments](../../api/gantt/taskFields#segments) or [taskFields.segmentId](../../api/gantt/taskFields#segmentId) property is mapped. Using this tab, we can split the task based on the original start and end date of a particular task.
 
-* `Context menu`: When the [`taskFields.segments`](../../api/gantt/taskFields/#segments) or [`taskFields.segmentId`](../../api/gantt/taskFields/#segmentId) property is mapped and the [`enableContextMenu`](../../api/gantt/#enablecontextmenu) property is enabled, `Split Task` item will be included in the context menu.
+* `Context menu`: When the [taskFields.segments](../../api/gantt/taskFields#segments) or [taskFields.segmentId](../../api/gantt/taskFields#segmentId) property is mapped and the [enableContextMenu](../../api/gantt#enablecontextmenu) property is enabled, `Split Task` item will be included in the context menu.
 
 {% if page.publishingplatform == "typescript" %}
 

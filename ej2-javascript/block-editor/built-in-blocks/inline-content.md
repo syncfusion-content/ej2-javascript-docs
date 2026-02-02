@@ -80,8 +80,7 @@ Link settings accepts the following options:
 
 ## Configure Label
 
-To render labels, set the [contentType](../../api/blockeditor/contentModel#contentType) property to `Label`. The `properties` property allows you to specify which label to display.
-
+To render labels, set the [contentType](../../api/blockeditor/contentModel#contentType) property to [Label](../../api/blockeditor/contentType). The `properties` property allows you to specify which label to display.
 ### Built-in items
 
 The Block Editor comes with offers different built-in options. These include:
@@ -218,7 +217,7 @@ The Block Editor allows you to apply rich formatting to block contents using the
 The `styles` property supports the following options:
 
 | Style Property                                     | Description                                | Default Value |
-| -------------------------------------------------  | ------------------------------------------ | ------------- |------------- |
+| -------------------------------------------------  | ------------------------------------------ | ------------- |
 | [bold](../../api/blockeditor/styleModel#bold)                         | Makes the text bold.                       | `false`       |
 | [italic](../../api/blockeditor/styleModel#italic)                     | Makes the text italicized.                 | `false`       |
 | [underline](../../api/blockeditor/styleModel#underline)               | Adds an underline to the text.             | `false`       |

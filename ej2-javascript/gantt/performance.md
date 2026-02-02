@@ -29,20 +29,20 @@ To enhance your application's efficiency, especially when dealing with substanti
 
 ## Optimizing performance with AutoCalculateDateScheduling
 
-In the Gantt chart component, by default it automatically calculates the start and end dates in [dataSource](https://ej2.syncfusion.com/documentation/api/gantt/#datasource) based on various factors such as working time, holidays, weekends, and predecessors. However, when rendering a large dataset, these calculations for data validation may result in performance issues. To avoid this, set the [autocalculatedatescheduling](https://ej2.syncfusion.com/documentation/api/gantt#autocalculatedatescheduling) property to **false**. 
+In the Gantt chart component, by default it automatically calculates the start and end dates in [dataSource](https://ej2.syncfusion.com/documentation/api/gantt#datasource) based on various factors such as working time, holidays, weekends, and predecessors. However, when rendering a large dataset, these calculations for data validation may result in performance issues. To avoid this, set the [autocalculatedatescheduling](https://ej2.syncfusion.com/documentation/api/gantt#autocalculatedatescheduling) property to **false**. 
 
 >When setting `autocalculatedatescheduling` property to **false**, you must provide the valid data source; otherwise, the Gantt chart will render with invalid dates.
 
 
 ## How to improve loading performance by binding large data by showing custom text or element
 
-When integrating image or template elements into a gantt column, it's recommended to utilize the [Column Template](../gantt/columns/column-template) feature instead of customizing data through the [rowDataBound](../api/gantt/#rowdatabound) or [queryCellInfo](../api/gantt/#querycellinfo) events. These events are triggered for each row and cell rendering, which can introduce delays in the component's rendering process. Moreover, rendering custom elements using these events may lead to the persistence of rendered elements, potentially causing longer rendering times over time. By opting for the column template feature, you can efficiently fulfill this requirement without experiencing rendering delays and ensure a more streamlined rendering process.
+When integrating image or template elements into a gantt column, it's recommended to utilize the [Column Template](../gantt/columns/column-template) feature instead of customizing data through the [rowDataBound](../api/gantt#rowdatabound) or [queryCellInfo](../api/gantt#querycellinfo) events. These events are triggered for each row and cell rendering, which can introduce delays in the component's rendering process. Moreover, rendering custom elements using these events may lead to the persistence of rendered elements, potentially causing longer rendering times over time. By opting for the column template feature, you can efficiently fulfill this requirement without experiencing rendering delays and ensure a more streamlined rendering process.
 
 ## How to improve loading performance by referring individual script and CSS
 
 To enhance the performance of the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt component during initial rendering and certain actions, it is recommended to download specific component scripts using CRG (Custom Resource Generator) for optimized project loading. By default, the ej2.min.js script file includes all Syncfusion<sup style="font-size:70%">&reg;</sup> component scripts, which may lead to longer load times. Using [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator), you can selectively choose the components and their modules that your project requires. Subsequently, you can download only the necessary scripts and CSS, thereby improving loading times and optimizing resource utilization according to your project's needs.
 
-[CRG website link](https://crg.syncfusion.com/) 
+[CRG website link](https://crg.syncfusion.com) 
 
 So to improve the performance of gantt during the initial rendering, suggested you to refer individual script and CSS.
 

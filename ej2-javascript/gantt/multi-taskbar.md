@@ -50,7 +50,7 @@ When a resource has multiple tasks scheduled on the same date, then the tasks wi
 
 ## Disable taskbar overlap
 
-In Gantt, you can disable taskbar overlap between resource tasks using the [`allowTaskbarOverlap`](../api/gantt/#allowtaskbaroverlap) property. This prevents the taskbars for different tasks from overlapping on the same row, making it easier to distinguish between the different tasks and manage resources effectively.
+In Gantt, you can disable taskbar overlap between resource tasks using the [allowTaskbarOverlap](../api/gantt#allowtaskbaroverlap) property. This prevents the taskbars for different tasks from overlapping on the same row, making it easier to distinguish between the different tasks and manage resources effectively.
 
 When `allowTaskbarOverlap` is set to false, the resources are displayed in a single row and the row height will be extended to occupy the tasks of the resource when it is in a collapsed state. This view allows you to easily identify any overallocation of tasks for a resource in a project.
 

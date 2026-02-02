@@ -114,7 +114,7 @@ In Gantt, the Excel export provides an option to export hidden columns by defini
 
 ### Show or hide columns on exported Excel
 
-In Gantt, while exporting, you can show a hidden column or hide a visible column using the [`toolbarClick`](../../api/gantt/#toolbarclick) and [`excelExportComplete`](../../api/gantt/#excelexportcomplete) events.
+In Gantt, while exporting, you can show a hidden column or hide a visible column using the [toolbarClick](../../api/gantt#toolbarclick) and [excelExportComplete](../../api/gantt#excelexportcomplete) events.
 
 In the `toolbarClick` event, using the `args.item.id` property, you can show or hide columns by setting the `column.visible` property to `true` or `false` respectively.
 
@@ -149,7 +149,7 @@ Similarly, in the `excelExportComplete` event, you can revert the columns visibi
 
 ### Cell formatting during export
 
-In Gantt, you can customize the TreeGrid cells in the exported document using the [`excelQueryCellInfo`](../../api/gantt/#excelquerycellinfo) event. In this event, you can format the TreeGrid cells of exported Excel and CSV documents based on the required condition.
+In Gantt, you can customize the TreeGrid cells in the exported document using the [excelQueryCellInfo](../../api/gantt#excelquerycellinfo) event. In this event, you can format the TreeGrid cells of exported Excel and CSV documents based on the required condition.
 
 In the following sample, the background color has been customized for `TaskID` column in the exported Excel using the `args.style` and `backColor` properties.
 

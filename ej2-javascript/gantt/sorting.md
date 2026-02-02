@@ -15,9 +15,9 @@ Sorting enables you to sort data in the ascending or descending order. To sort a
 
 To sort multiple columns, press and hold the CTRL key and click the column header. You can clear sorting of any one of the multi-sorted columns by pressing and holding the SHIFT key and clicking the specific column header.
 
-To enable sorting in the Gantt control, set the [`allowSorting`](../api/gantt/#allowsorting) property to true. Sorting options can be configured through the [`sortSettings`](../api/gantt/sortSettings/) property.
+To enable sorting in the Gantt control, set the [allowSorting](../api/gantt#allowsorting) property to true. Sorting options can be configured through the [sortSettings](../api/gantt/sortSettings) property.
 
-To sort, inject the [`Sort`](../api/gantt/#sortmodule) module into the Gantt control.
+To sort, inject the [Sort](../api/gantt#sortmodule) module into the Gantt control.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -47,11 +47,11 @@ To sort, inject the [`Sort`](../api/gantt/#sortmodule) module into the Gantt con
 {% endif %}
 
 > * Gantt columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
-> * To disable sorting for a particular column, set the [`columns.allowSorting`](../api/gantt/column/#allowsorting) property to false.
+> * To disable sorting for a particular column, set the [columns.allowSorting](../api/gantt/column#allowsorting) property to false.
 
 ## Sorting column on Gantt initialization
 
-The Gantt control can be rendered with sorted columns initially, and this can be achieved by using the [`sortSettings`](../api/gantt/sortSettings/) property. You can add columns that are sorted initially in the [`sortSettings.columns`](../api/gantt/sortSettings/#columns) collection defined with [`field`](../api/gantt/sortDescriptorModel/#field) and [`direction`](../api/gantt/sortDescriptorModel/#direction) properties. The following code example shows how to add the sorted column to Gantt initialization.
+The Gantt control can be rendered with sorted columns initially, and this can be achieved by using the [sortSettings](../api/gantt/sortSettings) property. You can add columns that are sorted initially in the [sortSettings.columns](../api/gantt/sortSettings#columns) collection defined with [field](../api/gantt/sortDescriptorModel#field) and [direction](../api/gantt/sortDescriptorModel#direction) properties. The following code example shows how to add the sorted column to Gantt initialization.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -82,7 +82,7 @@ The Gantt control can be rendered with sorted columns initially, and this can be
 
 ## Sorting column dynamically
 
-Columns in the Gantt control can be sorted dynamically using the [`sortColumn`](../api/gantt/#sortcolumn) method. The following code example demonstrates how to invoke the [`sortColumn`](../api/gantt/#sortcolumn) method by clicking the custom button.
+Columns in the Gantt control can be sorted dynamically using the [sortColumn](../api/gantt#sortcolumn) method. The following code example demonstrates how to invoke the [sortColumn](../api/gantt#sortcolumn) method by clicking the custom button.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -113,7 +113,7 @@ Columns in the Gantt control can be sorted dynamically using the [`sortColumn`](
 
 ## Clear all the sorted columns dynamically
 
-In the Gantt control, you can clear all the sorted columns and return to previous position using the [`clearSorting`](../api/gantt/#clearsorting) public method. The following code snippet shows how to clear all the sorted columns by clicking the custom button.
+In the Gantt control, you can clear all the sorted columns and return to previous position using the [clearSorting](../api/gantt#clearsorting) public method. The following code snippet shows how to clear all the sorted columns by clicking the custom button.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -144,7 +144,7 @@ In the Gantt control, you can clear all the sorted columns and return to previou
 
 ## Sorting events
 
-During the sort action, the Gantt control triggers two events. The [`actionBegin`](../api/gantt/#actionbegin) event triggers before the sort action starts, and the [`actionComplete`](../api/gantt/#actioncomplete) event triggers after the sort action is completed.
+During the sort action, the Gantt control triggers two events. The [actionBegin](../api/gantt#actionbegin) event triggers before the sort action starts, and the [actionComplete](../api/gantt#actioncomplete) event triggers after the sort action is completed.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -211,8 +211,8 @@ The following code snippets explains how to achieve this.
 
 ## Touch interaction
 
-To perform `tap` action on a column header, trigger [`sorting`](sorting/#sorting) operation to the selected column. A popup is displayed for multi-column sorting. To sort multiple columns, tap the popup, and then tap the desired column headers.
+To perform `tap` action on a column header, trigger [sorting](sorting#sorting) operation to the selected column. A popup is displayed for multi-column sorting. To sort multiple columns, tap the popup, and then tap the desired column headers.
 
 The following screenshot shows Gantt touch sorting,
 
-![Multiple Sorting](images/multiple-sorting.png)
+![Multiple Sorting](../images/multiple-sorting.png)

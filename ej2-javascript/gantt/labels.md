@@ -11,9 +11,7 @@ domainurl: ##DomainURL##
 
 # Task labels in ##Platform_Name## Gantt control
 
-## Task labels
-
-The Gantt control maps any data source fields to task labels using the [`labelSettings.leftLabel`](../api/gantt/labelSettings/#leftlabel), [`labelSettings.rightLabel`](../api/gantt/labelSettings/#rightlabel), and [`labelSettings.taskLabel`](../api/gantt/labelSettings/#tasklabel) properties. You can customize the task labels with templates.
+The Gantt control maps any data source fields to task labels using the [labelSettings.leftLabel](../api/gantt/labelSettings#leftlabel), [labelSettings.rightLabel](../api/gantt/labelSettings#rightlabel), and [labelSettings.taskLabel](../api/gantt/labelSettings#tasklabel) properties. You can customize the task labels with templates.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -11,15 +11,15 @@ domainurl: ##DomainURL##
 
 # Columns in ##Platform_Name## Gantt control
 
-The column displays information from a bound data source, and you can edit the values of column to update the task details through TreeGrid. The operations such as sorting, filtering, and searching can be performed based on column definitions. To display a Gantt column, the [`field`](../../api/gantt/column/#field) property should be mapped from the data source to the column.
+The column displays information from a bound data source, and you can edit the values of column to update the task details through TreeGrid. The operations such as sorting, filtering, and searching can be performed based on column definitions. To display a Gantt column, the [field](../../api/gantt/column#field) property should be mapped from the data source to the column.
 
-> If the column [`field`](../../api/gantt/column/#field) is not specified in the data source, the column values will be empty.
+> If the column [field](../../api/gantt/column#field) is not specified in the data source, the column values will be empty.
 
-The [`treeColumnIndex`](../../api/gantt/#treecolumnindex) property is used to define the expander column in the Gantt control to expand and collapse the child rows.
+The [treeColumnIndex](../../api/gantt#treecolumnindex) property is used to define the expander column in the Gantt control to expand and collapse the child rows.
 
 ## Defining columns
 
-Using the [`columns`](../../api/gantt/#columns) property, you can define the columns in Gantt. If the columns are not defined, then the default columns will be rendered based on the mapped data source fields in the [`taskFields`](../../api/gantt/taskFields/) property. Refer to the following code example for defining the columns in Gantt along with their widths.
+Using the [columns](../../api/gantt#columns) property, you can define the columns in Gantt. If the columns are not defined, then the default columns will be rendered based on the mapped data source fields in the [taskFields](../../api/gantt/taskFields) property. Refer to the following code example for defining the columns in Gantt along with their widths.
 
  {% if page.publishingplatform == "typescript" %}
 
@@ -50,7 +50,7 @@ Using the [`columns`](../../api/gantt/#columns) property, you can define the col
 
 ## Custom column header
 
-The column header text can be defined using the [`headerText`](../../api/gantt/column/#headertext) property, and you can customize the column headers using the [`headerTemplate`](../../api/gantt/column/#headertemplate) property.
+The column header text can be defined using the [headerText](../../api/gantt/column#headertext) property, and you can customize the column headers using the [headerTemplate](../../api/gantt/column#headertemplate) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -81,7 +81,7 @@ The column header text can be defined using the [`headerText`](../../api/gantt/c
 
 ## Format
 
-To format the cell values based on a specific culture, use the [`columns.format`](../../api/gantt/column/#format) property. The Gantt control uses the [`Internationalization`](../../common/internationalization/) library to format `number` and `date` values.
+To format the cell values based on a specific culture, use the [columns.format](../../api/gantt/column#format) property. The Gantt control uses the [Internationalization](../../common/internationalization) library to format `number` and `date` values.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -126,7 +126,7 @@ P | Denotes percentage type | The percentage format expects the input value to b
 
 You can format date values either using the built-in date format string or a custom format string.
 
-For the built-in date format, you can specify the [`columns.format`](../../api/gantt/column/#format) property as string (example: `yMd`).
+For the built-in date format, you can specify the [columns.format](../../api/gantt/column#format) property as string (example: `yMd`).
 
 You can also use the custom format string to format the date values. Some of the custom formats and the formatted date values are given in the following table.
 
@@ -167,7 +167,7 @@ Format | Formatted value
 
 ## Change tree/expander column
 
-The tree/expander column is a column in the Gantt control, that has icons to expand or collapse the parent records. You can define the tree column index in the Gantt control by using the [`treeColumnIndex`](../../api/gantt/#treecolumnindex) property and the default value of this property is `0`. The following code example shows how to use this property.
+The tree/expander column is a column in the Gantt control, that has icons to expand or collapse the parent records. You can define the tree column index in the Gantt control by using the [treeColumnIndex](../../api/gantt#treecolumnindex) property and the default value of this property is `0`. The following code example shows how to use this property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -198,7 +198,7 @@ The tree/expander column is a column in the Gantt control, that has icons to exp
 
 ## Show or Hide columns dynamically
 
-You can show or hide gantt columns dynamically using external buttons by invoking the [`showColumn`](../../api/gantt/#showcolumn) or [`hideColumn`](../../api/gantt/#hidecolumn) method.
+You can show or hide gantt columns dynamically using external buttons by invoking the [showColumn](../../api/gantt#showcolumn) or [hideColumn](../../api/gantt#hidecolumn) method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -229,7 +229,7 @@ You can show or hide gantt columns dynamically using external buttons by invokin
 
 ## Controlling Gantt column actions
 
-You can enable or disable gantt action for a particular column by setting the [`allowFiltering`](../../api/gantt/#allowfiltering), [`allowSorting`](../../api/gantt/#allowsorting), [`allowReordering`](../../api/gantt/#allowreordering), and [`allowEditing`](../../api/gantt/#editsettings) properties.
+You can enable or disable gantt action for a particular column by setting the [allowFiltering](../../api/gantt#allowfiltering), [allowSorting](../../api/gantt#allowsorting), [allowReordering](../../api/gantt#allowreordering), and [allowEditing](../../api/gantt#editsettings) properties.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -262,7 +262,7 @@ You can enable or disable gantt action for a particular column by setting the [`
 
 Column type can be specified using the `columns.type` property. It specifies the type of data the column binds.
 
-If the `format` is defined for a column, the column uses `type` to select the appropriate format option [number](../../common/internationalization/#number-formatting) or [date](../../common/internationalization/#manipulating-datetime).
+If the `format` is defined for a column, the column uses `type` to select the appropriate format option [number](../../common/internationalization#number-formatting) or [date](../../common/internationalization#manipulating-datetime).
 
 Gantt column supports the following types:
 * string
@@ -271,5 +271,5 @@ Gantt column supports the following types:
 * date
 * date time
 
-> If the `type` is not defined, it will be determined from the first record of the [`dataSource`](../../api/gantt/#datasource).
-> In case if the first record of the [`dataSource`](../../api/gantt/#datasource) is null/blank value for a column then it is necessary to define the `type` for that column.
+> If the `type` is not defined, it will be determined from the first record of the [dataSource](../../api/gantt#datasource).
+> In case if the first record of the [dataSource](../../api/gantt#datasource) is null/blank value for a column then it is necessary to define the `type` for that column.

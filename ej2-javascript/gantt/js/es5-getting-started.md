@@ -148,9 +148,9 @@ Refer to the Gantt's CDN links as follows.
 
 **Example:**
 
-> Script: [`http://cdn.syncfusion.com/ej2/32.1.19/ej2-gantt/dist/global/ej2-gantt.min.js`](http://cdn.syncfusion.com/ej2/ej2-gantt/dist/global/ej2-gantt.min.js)
+> Script: [http://cdn.syncfusion.com/ej2/32.1.19/ej2-gantt/dist/global/ej2-gantt.min.js](http://cdn.syncfusion.com/ej2/ej2-gantt/dist/global/ej2-gantt.min.js)
 >
-> Styles: [`http://cdn.syncfusion.com/ej2/32.1.19/ej2-gantt/styles/tailwind3.css`](http://cdn.syncfusion.com/ej2/ej2-gantt/styles/tailwind3.css)
+> Styles: [http://cdn.syncfusion.com/ej2/32.1.19/ej2-gantt/styles/tailwind3.css](http://cdn.syncfusion.com/ej2/ej2-gantt/styles/tailwind3.css)
 
 The below html code example shows the dependency of gantt.
 
@@ -283,7 +283,7 @@ ganttChart.appendTo('#Gantt');
 
 ## Binding Gantt with data
 
-Bind data with the Gantt control by using the [`dataSource`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/#datasource) property. It accepts an array of JavaScript object or the DataManager instance.
+Bind data with the Gantt control by using the [dataSource](https://ej2.syncfusion.com/javascript/documentation/api/gantt#datasource) property. It accepts an array of JavaScript object or the DataManager instance.
 
 ```html
 <!DOCTYPE html>
@@ -340,7 +340,7 @@ ganttChart.appendTo('#Gantt');
 
 ## Mapping task fields
 
-The data source fields that are required to render the tasks are mapped to the Gantt control using the [`taskFields`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/#taskfields) property.
+The data source fields that are required to render the tasks are mapped to the Gantt control using the [taskFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt#taskfields) property.
 
 ```javascript
 var ganttChart = new ej.gantt.Gantt({
@@ -388,15 +388,15 @@ ganttChart.appendTo('#Gantt');
 
 To create a Gantt with additional features, inject the required modules. The following modules are used to extend the Gantt's basic functionality:
 
-* [`Edit`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/#editmodule): Inject this module to use the editing feature.
-* [`Filter`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/#filtermodule): Inject this module to use the filtering feature.
-* [`Sort`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/#sortmodule): Inject this module to use the sorting feature.
+* [Edit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#editmodule): Inject this module to use the editing feature.
+* [Filter](https://ej2.syncfusion.com/javascript/documentation/api/gantt#filtermodule): Inject this module to use the filtering feature.
+* [Sort](https://ej2.syncfusion.com/javascript/documentation/api/gantt#sortmodule): Inject this module to use the sorting feature.
 
 These modules should be injected into the Gantt using the `ej.gantt.Gantt.Inject` method.
 
 ## Enable editing
 
-The editing feature enables you to edit the tasks in the Gantt control. It can be enabled by using the [`editSettings.allowEditing`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings/#allowediting) and [`editSettings.allowTaskbarEditing`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings/#allowtaskbarediting) properties.
+The editing feature enables you to edit the tasks in the Gantt control. It can be enabled by using the [editSettings.allowEditing](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings#allowediting) and [editSettings.allowTaskbarEditing](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings#allowtaskbarediting) properties.
 
 The following editing options are available to update the tasks in Gantt:
 
@@ -407,7 +407,7 @@ The following editing options are available to update the tasks in Gantt:
 
 ### Cell editing
 
-Modify the task details through cell editing by setting the edit [`mode`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings/#mode) to `Auto`. Inject the [`Edit`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/#editmodule) module as follows. If the [`Edit`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/#editmodule) module is not injected, you cannot edit the cell when a grid cell is clicked.
+Modify the task details through cell editing by setting the edit [mode](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings#mode) to `Auto`. Inject the [Edit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#editmodule) module as follows. If the [Edit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#editmodule) module is not injected, you cannot edit the cell when a grid cell is clicked.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -424,7 +424,7 @@ Modify the task details through cell editing by setting the edit [`mode`](https:
 
 ### Dialog editing
 
-Modify the task details through dialog by setting the edit [`mode`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings/#mode) to `Dialog`. Inject the [`Edit`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/#editmodule) module as follows. If the [`Edit`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/#editmodule) module is not injected, you cannot edit the task details through the edit dialog.
+Modify the task details through dialog by setting the edit [mode](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings#mode) to `Dialog`. Inject the [Edit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#editmodule) module as follows. If the [Edit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#editmodule) module is not injected, you cannot edit the task details through the edit dialog.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -441,7 +441,7 @@ Modify the task details through dialog by setting the edit [`mode`](https://ej2.
 
 ### Taskbar editing
 
-Modify the task details through user interaction such as resizing and dragging the taskbar by enabling the [`allowTaskbarEditing`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings/#allowtaskbarediting) property. Inject the [`Edit`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/#editmodule) module as follows. If the [`Edit`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/#editmodule) module is not injected, you cannot edit the task details while dragging the taskbar.
+Modify the task details through user interaction such as resizing and dragging the taskbar by enabling the [allowTaskbarEditing](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings#allowtaskbarediting) property. Inject the [Edit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#editmodule) module as follows. If the [Edit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#editmodule) module is not injected, you cannot edit the task details while dragging the taskbar.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -456,7 +456,7 @@ Modify the task details through user interaction such as resizing and dragging t
 
 ### Dependency editing
 
-Modify the task dependencies using mouse interactions by enabling the [`allowTaskbarEditing`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings/#allowtaskbarediting)  property along with mapping the task dependency data source field to the [`dependency`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields/#dependency) property.
+Modify the task dependencies using mouse interactions by enabling the [allowTaskbarEditing](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings#allowtaskbarediting)  property along with mapping the task dependency data source field to the [dependency](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#dependency) property.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -471,7 +471,7 @@ Modify the task dependencies using mouse interactions by enabling the [`allowTas
 
 ## Enable filtering
 
-The filtering feature enables you to view the reduced amount of records based on filter criteria. Gantt provides the menu filtering support for each column. It can be enabled by setting the [`allowFiltering`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/#allowfiltering) property to true along with injecting the [`Filter`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/#filtermodule) module as shown in the following code example. Filtering feature can also be customized using the [`filterSettings`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/filterSettings/) property.
+The filtering feature enables you to view the reduced amount of records based on filter criteria. Gantt provides the menu filtering support for each column. It can be enabled by setting the [allowFiltering](https://ej2.syncfusion.com/javascript/documentation/api/gantt#allowfiltering) property to true along with injecting the [Filter](https://ej2.syncfusion.com/javascript/documentation/api/gantt#filtermodule) module as shown in the following code example. Filtering feature can also be customized using the [filterSettings](https://ej2.syncfusion.com/javascript/documentation/api/gantt/filterSettings) property.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -486,7 +486,7 @@ The filtering feature enables you to view the reduced amount of records based on
 
 ## Enable sorting
 
-The sorting feature enables you to order the records. It can be enabled by setting the [`allowSorting`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/#allowsorting) property to `true`. Inject the [`Sort`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/#sortmodule) module as follows. If the [`Sort`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/#sortmodule) module is not injected, you cannot sort the records when a header is clicked. The sorting feature can be customized using the [`sortSettings`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/sortSettings/) property.
+The sorting feature enables you to order the records. It can be enabled by setting the [allowSorting](https://ej2.syncfusion.com/javascript/documentation/api/gantt#allowsorting) property to `true`. Inject the [Sort](https://ej2.syncfusion.com/javascript/documentation/api/gantt#sortmodule) module as follows. If the [Sort](https://ej2.syncfusion.com/javascript/documentation/api/gantt#sortmodule) module is not injected, you cannot sort the records when a header is clicked. The sorting feature can be customized using the [sortSettings](https://ej2.syncfusion.com/javascript/documentation/api/gantt/sortSettings) property.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -507,7 +507,7 @@ Predecessor or task dependency in the Gantt control is used to depict the relati
 * Start to Finish (SF): You cannot finish a task until the dependent task finishes.
 * Finish to Start (FS): You cannot start a task until the dependent task completes.
 * Finish to Finish (FF): You cannot finish a task until the dependent task completes.
-You can show the relationship in tasks by using the [`dependency`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields/#dependency) property as shown in the following code example.
+You can show the relationship in tasks by using the [dependency](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#dependency) property as shown in the following code example.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -522,7 +522,7 @@ You can show the relationship in tasks by using the [`dependency`](https://ej2.s
 
 ## Assigning resources
 
-You can display and assign the resource for each task in the Gantt control. Create a collection of JSON object, which contains id, name, unit and group of the resources and assign it to the [`resources`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/#resources) property. Map these fields to the Gantt control using the [`resourceFields`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/#resourceFields) property.
+You can display and assign the resource for each task in the Gantt control. Create a collection of JSON object, which contains id, name, unit and group of the resources and assign it to the [resources](https://ej2.syncfusion.com/javascript/documentation/api/gantt#resources) property. Map these fields to the Gantt control using the [resourceFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt#resourceFields) property.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -554,24 +554,24 @@ Output will be displayed as follows.
 
 ## Deploy the application
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Gantt control features are segregated into individual feature-wise modules. The [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build and `CDN` scripts contains code for all features used in Gantt and hence you should avoid to use them in production. You are strongly recommend to generate script files to use in production using the Syncfusion<sup style="font-size:70%">&reg;</sup> **Custom Resource Generator**[`(CRG)`](https://crg.syncfusion.com/) for Essential<sup style="font-size:70%">&reg;</sup> JS 2. CRG will allow you generate the bundled script for the currently enabled features in Gantt.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Gantt control features are segregated into individual feature-wise modules. The [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build and `CDN` scripts contains code for all features used in Gantt and hence you should avoid to use them in production. You are strongly recommend to generate script files to use in production using the Syncfusion<sup style="font-size:70%">&reg;</sup> **Custom Resource Generator**[(CRG)](https://crg.syncfusion.com) for Essential<sup style="font-size:70%">&reg;</sup> JS 2. CRG will allow you generate the bundled script for the currently enabled features in Gantt.
 
 ## Error handling
 
-Error handling is used to identify errors, display them and develop recovery strategies to handle errors from gantt. In Gantt, error handling is done by using the [actionFailure](https://ej2.syncfusion.com/javascript/documentation/api/gantt/#actionfailure) event. Some of the scenarios that this event handles are:
-* Invalid duration : The [duration](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields/#duration) field accepts only numerical values with an optional decimal point. Entering non-numerical values triggers the `actionFailure` event and displays issue information in the event argument.
-* Invalid dependency: The [dependency](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields/#dependency) field accepts only a number followed by a predecessor type (FS, FF, SS, SF).  Entering invalid values, such as special characters or incorrect predecessor types, triggers the `actionFailure` event and displays issue information in the event argument.
-* Invalid offset : The [offset](https://ej2.syncfusion.com/javascript/documentation/api/gantt/iPredecessor/#offset) accepts only numerical values or their word equivalents followed by a unit. Entering invalid values, such as special characters triggers `actionFailure` event and displays issue information in the event argument.
-* Failure to map task fields : The data source fields necessary for rendering tasks should be mapped to the Gantt control using the [taskFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields/) property. Failure to map `taskFields` in the sample triggers `actionFailure` event and displays issue information in the event argument.
-* Failure to map resource fields : To assign resources to a task, resource fields should be mapped to the Gantt control using the [resourceFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt/resourceFields/). Failure to map `resourceFields` in the sample triggers `actionFailure` event and displays issue information in the event argument.
-* Failure to map `isPrimaryKey` : [isPrimaryKey](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column/#isprimarykey) field is crucial for CRUD operations. Failure to map [id](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields/#id) column in gantt column collection or [isPrimaryKey](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column/#isprimarykey) field in one of the columns will trigger `actionFailure` event and display issue information in the event argument.
-* Invalid date format : [format](https://ej2.syncfusion.com/javascript/documentation/api/gantt/iTimelineFormatter/) property under `topTier` and `bottomTier` determines how the timelines are displayed in the top tier and bottom tier of the Gantt chart timeline. If the `format` does not contain a valid standard [date format](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date), it triggers the `actionFailure` event, displaying issue information in the event argument.
-* Failure to map `hasChildMapping` : [hasChildMapping](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields/#haschildmapping) property should configured for [load-on-demand](https://ej2.syncfusion.com/javascript/documentation/gantt/data-binding#load-child-on-demand). Ensure it properly configured in the [taskFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields/). Failure to map `hasChildMapping` in the `load-on-demand` sample triggers `actionFailure` event and displays issue information in the event argument.
-* Invalid day in event markers : [day](https://ej2.syncfusion.com/javascript/documentation/api/gantt/eventMarker/#day) should configured in [eventMarkers](https://ej2.syncfusion.com/javascript/documentation/api/gantt/eventMarker/) to render striplines in a particular day. Failure to configure the `day` in `eventMarkers` triggers `actionFailure` event and displays issue information in the event argument.
+Error handling is used to identify errors, display them and develop recovery strategies to handle errors from gantt. In Gantt, error handling is done by using the [actionFailure](https://ej2.syncfusion.com/javascript/documentation/api/gantt#actionfailure) event. Some of the scenarios that this event handles are:
+* Invalid duration : The [duration](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#duration) field accepts only numerical values with an optional decimal point. Entering non-numerical values triggers the `actionFailure` event and displays issue information in the event argument.
+* Invalid dependency: The [dependency](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#dependency) field accepts only a number followed by a predecessor type (FS, FF, SS, SF).  Entering invalid values, such as special characters or incorrect predecessor types, triggers the `actionFailure` event and displays issue information in the event argument.
+* Invalid offset : The [offset](https://ej2.syncfusion.com/javascript/documentation/api/gantt/iPredecessor#offset) accepts only numerical values or their word equivalents followed by a unit. Entering invalid values, such as special characters triggers `actionFailure` event and displays issue information in the event argument.
+* Failure to map task fields : The data source fields necessary for rendering tasks should be mapped to the Gantt control using the [taskFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields) property. Failure to map `taskFields` in the sample triggers `actionFailure` event and displays issue information in the event argument.
+* Failure to map resource fields : To assign resources to a task, resource fields should be mapped to the Gantt control using the [resourceFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt/resourceFields). Failure to map `resourceFields` in the sample triggers `actionFailure` event and displays issue information in the event argument.
+* Failure to map `isPrimaryKey` : [isPrimaryKey](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#isprimarykey) field is crucial for CRUD operations. Failure to map [id](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#id) column in gantt column collection or [isPrimaryKey](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#isprimarykey) field in one of the columns will trigger `actionFailure` event and display issue information in the event argument.
+* Invalid date format : [format](https://ej2.syncfusion.com/javascript/documentation/api/gantt/iTimelineFormatter) property under `topTier` and `bottomTier` determines how the timelines are displayed in the top tier and bottom tier of the Gantt chart timeline. If the `format` does not contain a valid standard [date format](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date), it triggers the `actionFailure` event, displaying issue information in the event argument.
+* Failure to map `hasChildMapping` : [hasChildMapping](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#haschildmapping) property should configured for [load-on-demand](https://ej2.syncfusion.com/javascript/documentation/gantt/data-binding#load-child-on-demand). Ensure it properly configured in the [taskFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields). Failure to map `hasChildMapping` in the `load-on-demand` sample triggers `actionFailure` event and displays issue information in the event argument.
+* Invalid day in event markers : [day](https://ej2.syncfusion.com/javascript/documentation/api/gantt/eventMarker#day) should configured in [eventMarkers](https://ej2.syncfusion.com/javascript/documentation/api/gantt/eventMarker) to render striplines in a particular day. Failure to configure the `day` in `eventMarkers` triggers `actionFailure` event and displays issue information in the event argument.
 
 >Additionally, TreeGrid side error handling information is also displayed from the Gantt `actionFailure` event. For more details on TreeGrid side error handling, refer [here](https://ej2.syncfusion.com/javascript/documentation/treegrid/getting-started#handling-errors).
 
-The following code example shows how to use the [actionFailure](https://ej2.syncfusion.com/javascript/documentation/api/gantt/#actionfailure) event in the Gantt control to display an exception when `isPrimaryKey` is not configured properly in the Gantt Chart column.
+The following code example shows how to use the [actionFailure](https://ej2.syncfusion.com/javascript/documentation/api/gantt#actionfailure) event in the Gantt control to display an exception when `isPrimaryKey` is not configured properly in the Gantt Chart column.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -586,4 +586,4 @@ The following code example shows how to use the [actionFailure](https://ej2.sync
 
 The following screenshot represents the Gantt Exception handling in `actionFailure` event.
 
-![Error Handling](images/error-handling.png)
+![Error Handling](../images/error-handling.png)

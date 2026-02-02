@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Zooming in ##Platform_Name## Gantt control
 
-The zooming support provides options to increase or decrease the width of timeline cells and also provides options to change the timeline units dynamically. This support enables you to view the tasks in a project clearly from minute to decade timespan. To enable the zooming features, define the `ZoomIn`, `ZoomOut`, and `ZoomToFit` items to toolbar items collections, and this action can be performed on external actions such as button click using the [`zoomIn`](../../api/gantt/#zoomin), [`zoomOut`](../../api/gantt/#zoomout), and [`fitToProject`](../../api/gantt/#fittoproject) built-in methods. The following zooming options are available to view the project:
+The zooming support provides options to increase or decrease the width of timeline cells and also provides options to change the timeline units dynamically. This support enables you to view the tasks in a project clearly from minute to decade timespan. To enable the zooming features, define the `ZoomIn`, `ZoomOut`, and `ZoomToFit` items to toolbar items collections, and this action can be performed on external actions such as button click using the [zoomIn](../../api/gantt#zoomin), [zoomOut](../../api/gantt#zoomout), and [fitToProject](../../api/gantt#fittoproject) built-in methods. The following zooming options are available to view the project:
 
 ## Zoom in
 
@@ -86,9 +86,9 @@ In Gantt, the zoom in and zoom out actions are performed based on the predefined
 ## Zoom action by methods
 
 You can perform the various zoom actions dynamically or on external click action using the following methods:
-* Zoom in - [`zoomIn`](../../api/gantt/#zoomin)
-* Zoom out - [`zoomOut`](../../api/gantt/#zoomout)
-* Fit to project - [`fitToProject`](../../api/gantt/#fittoproject)
+* Zoom in - [zoomIn](../../api/gantt#zoomin)
+* Zoom out - [zoomOut](../../api/gantt#zoomout)
+* Fit to project - [fitToProject](../../api/gantt#fittoproject)
 
 {% if page.publishingplatform == "typescript" %}
 

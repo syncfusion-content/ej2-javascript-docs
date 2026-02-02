@@ -69,10 +69,10 @@ To render SpeechToText control, need to import inputs and its dependent controls
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
 
-@import "../../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-buttons/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-popups/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-inputs/styles/material.css";
+@import "../../node_modules/@syncfusion/ej2-base/styles/tailwind3.css";
+@import "../../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css";
+@import "../../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css";
+@import "../../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css";
 
 {% endhighlight %}
 {% endtabs %}
@@ -157,7 +157,9 @@ The following example shows a basic SpeechToText control.
 
 ## Adding button content
 
-You can use the [content](../api/speech-to-text/buttonSettingsModel/#content) property to display the start listening text and [stopContent](../api/speech-to-text/buttonSettingsModel/#stopContent) to display the stop listening text by using the [buttonSettings](../api/speech-to-text#buttonSettings) property.
+The content of the SpeechToText button can be customized for its active and inactive states. Use the [content](../api/speech-to-text/buttonSettingsModel/#content) property to define the text for the start listening state and the [stopContent](../api/speech-to-text/buttonSettingsModel/#stopContent) property for the stop listening state. These properties are configured within the [buttonSettings](../api/speech-to-text#buttonSettings) property.
+
+The following example shows how to configure `buttonSettings` in the SpeechToText component.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

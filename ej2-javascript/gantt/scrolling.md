@@ -15,13 +15,13 @@ The scrollbar will be displayed in the gantt when content exceeds the element `w
 
 * The vertical scrollbar appears when the total height of rows present in the gantt exceeds its element height.
 * The horizontal scrollbar appears when the sum of columns width exceeds the grid pane size.
-* The [height](../api/gantt/#height) and [width](../api/gantt/#width) are used to set the gantt height and width, respectively.
+* The [height](../api/gantt#height) and [width](../api/gantt#width) are used to set the gantt height and width, respectively.
 
 > The default value for `height` and `width` is `auto`.
 
 ## Set width and height
 
-We can even set pixel values to width and height of gantt container using [width](../api/gantt/#width) and [height](../api/gantt/#height) properties.
+We can even set pixel values to width and height of gantt container using [width](../api/gantt#width) and [height](../api/gantt#height) properties.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -52,7 +52,7 @@ We can even set pixel values to width and height of gantt container using [width
 
 ## Responsive with the parent container
 
-Specify the [width](../api/gantt/#width) and [height](../api/gantt/#height) as `100%` to make the gantt element fill its parent container.
+Specify the [width](../api/gantt#width) and [height](../api/gantt#height) as `100%` to make the gantt element fill its parent container.
 Setting the `height` to `100%` requires the gantt parent element to have explicit height. Also, the component will be responsive when the parent container is resized.
 
 {% if page.publishingplatform == "typescript" %}
@@ -84,7 +84,7 @@ Setting the `height` to `100%` requires the gantt parent element to have explici
 
 ## Scroll To Date method
 
-In the Gantt control, When We use the [`scrollToDate`](https://ej2.syncfusion.com/documentation/api/gantt/#scrolltodate) method, it will scroll the timeline horizontally to the date that we specified in the method's argument.
+In the Gantt control, When We use the [scrollToDate](https://ej2.syncfusion.com/documentation/api/gantt#scrolltodate) method, it will scroll the timeline horizontally to the date that we specified in the method's argument.
 
 The following code examples show how the scroll To Date method works in Gantt:
 
@@ -117,7 +117,7 @@ The following code examples show how the scroll To Date method works in Gantt:
 
 ## Set the vertical scroll position
 
-In the Gantt control, you can set the vertical scroller position dynamically by clicking the custom button using the [`setScrollTop`](../../api/gantt/#setscrolltop) method.
+In the Gantt control, you can set the vertical scroller position dynamically by clicking the custom button using the [setScrollTop](../../api/gantt/index-default#setscrolltop) method.
 
 {% if page.publishingplatform == "typescript" %}
 

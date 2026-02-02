@@ -15,6 +15,14 @@ This section explains the steps to create a simple **Pivot Table** and demonstra
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/documentation/ai-coding-assistant/overview).
 
+## Prerequisites
+
+To get started with application, ensure the following software to be installed in the machine.
+
+* [git](https://git-scm.com/install)
+* [Node.js](https://nodejs.org/en)
+* [Visual Studio Code](https://code.visualstudio.com)
+
 ## Dependencies
 
 Understanding the dependency structure helps you identify the required packages for implementing the Pivot Table component effectively in your Typescript application. The Pivot Table component relies on a structured hierarchy of dependencies that provide essential functionality for data processing, user interface elements, and export capabilities.
@@ -31,13 +39,14 @@ The following dependency tree shows the required packages for the Typescript Piv
     |-- @syncfusion/ej2-pdf-export
         |-- @syncfusion/ej2-file-utils
         |-- @syncfusion/ej2-compression
-    |-- @syncfusion/ej2-grids
     |-- @syncfusion/ej2-inputs
     |-- @syncfusion/ej2-buttons
+    |-- @syncfusion/ej2-splitbuttons
     |-- @syncfusion/ej2-dropdowns
     |-- @syncfusion/ej2-lists
     |-- @syncfusion/ej2-popups
     |-- @syncfusion/ej2-navigations
+    |-- @syncfusion/ej2-grids
 ```
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started).
@@ -317,6 +326,8 @@ The grouping bar allows users to easily manage and modify the report settings of
 Users can also use the grouping bar to sort, filter, or remove fields quickly without needing to write any code. To enable the grouping bar, set the [`showGroupingBar`](https://ej2.syncfusion.com/documentation/api/pivotview/pivotViewModel#showgroupingbar) property to **true**, and make sure to inject the `GroupingBar` module in your application. For more details about using the grouping bar, see the [Grouping Bar documentation](./grouping-bar).
 
 > The `GroupingBar` module must be injected for the grouping bar to render properly with the Pivot Table component. Without this module, the grouping bar will not be available.
+
+**Note:** For better code organization and maintainability, it is recommended to move the sample data array (pivotData) to a separate file named **datasource.ts**. Export the data from **datasource.ts** and import it in **index.ts** as shown in the subsequent examples.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

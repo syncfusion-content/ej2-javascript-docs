@@ -15,7 +15,7 @@ In the Gantt control, While performing edit actions or dynamically change dataSo
 
 ## Maintain zoomToFit after edit actions
 
-We can maintain `zoomToFit` after editing actions(cell edit,dialog edit,taskbar edit) by using [`fitToProject`](../../api/gantt/#fittoproject) method in `actionComplete` and `taskbarEdited` event.
+We can maintain `zoomToFit` after editing actions(cell edit,dialog edit,taskbar edit) by using [fitToProject](../../api/gantt#fittoproject) method in `actionComplete` and `taskbarEdited` event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -46,7 +46,7 @@ We can maintain `zoomToFit` after editing actions(cell edit,dialog edit,taskbar 
 
 ## Maintain zoomToFit after change dataSource dynamically
 
-We can maintain `zoomToFit` after change dataSource dynamically, by calling [`fitToProject`](../../api/gantt/#fittoproject) method in dataBound event.
+We can maintain `zoomToFit` after change dataSource dynamically, by calling [fitToProject](../../api/gantt#fittoproject) method in dataBound event.
 
 {% if page.publishingplatform == "typescript" %}
 

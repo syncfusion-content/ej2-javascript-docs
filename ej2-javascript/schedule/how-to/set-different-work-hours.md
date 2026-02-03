@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Set different work hours in ##Platform_Name## Scheduler control | Syncfusion
+title: Different work hours in ##Platform_Name## Scheduler | Syncfusion
 description: Learn here all about Set different work hours in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Set different work hours 
+control: Scheduler
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,9 +11,14 @@ domainurl: ##DomainURL##
 
 # Set different work hours in ##Platform_Name## Scheduler control
 
-By default, the work hours of the Scheduler is highlighted based on the start and end values provided within the [`workHours`](https://ej2.syncfusion.com/documentation/api/schedule#workhours) property which remains same for all days. If you need to highlight different work hour ranges for specific days, you can use the [`setWorkHours`](https://ej2.syncfusion.com/documentation/api/schedule#setworkhours) method. You can pass date object/ multiple date objects collection as first argument and start and end time need to be added as work hours should be passed as second and third arguments respectively.
+By default, the work hours in the Scheduler are highlighted based on the start and end values defined within the [`workHours`](https://ej2.syncfusion.com/documentation/api/schedule#workhours) property, which applies uniformly to all days. If you need to highlight different work hour ranges for specific days, you can use the [`setWorkHours`](https://ej2.syncfusion.com/documentation/api/schedule#setworkhours) method.  
 
-In the following example, when you click the button, the work hours for February 15th and 17th will be set to 11:00 AM - 8:00 PM, while the other days maintain their default work hours.
+This method accepts:  
+- A single date object or a collection of date objects as the first argument.  
+- The start time as the second argument.  
+- The end time as the third argument.  
+
+In the following example, clicking the button sets the work hours for **February 15th and 17th** to **11:00 AM – 8:00 PM**, while other days continue to display their default work hours.
 
 {% if page.publishingplatform == "typescript" %}
 

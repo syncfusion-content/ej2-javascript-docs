@@ -206,7 +206,7 @@ The Inline Toolbar includes the following built-in formatting options:
 
 You can use the [inlineToolbarSettings](../api/blockeditor#inlinetoolbarsettings) property to customize the Inline Toolbar by adding or removing formatting options based on your application's needs.
 
-## Events
+### Events
 
 The following events are available for the Inline Toolbar:
 

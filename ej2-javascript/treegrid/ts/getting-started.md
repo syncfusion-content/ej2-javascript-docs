@@ -17,9 +17,7 @@ The TreeGrid component is essential for displaying hierarchical data in a tabula
 
 ## Dependencies
 
-The TreeGrid component requires several npm packages that work together to
-provide core functionality. Understanding these dependencies helps ensure that
-all required packages are installed.
+The TreeGrid component requires several npm packages that work together to provide core functionality. Understanding these dependencies helps ensure that all required packages are installed.
 
 Following is the list of minimum dependencies required to use the treegrid:
 
@@ -55,7 +53,7 @@ cd ej2-quickstart
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available in the public registry on [npmjs.com] (https://www.npmjs.com/~syncfusionorg).All Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls are available either as a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or as individual packages for each control.
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available in the public registry on [npmjs.com](https://www.npmjs.com/~syncfusionorg). All Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls are available either as a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or as individual packages for each control.
 
 The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
 
@@ -85,11 +83,7 @@ The quickstart application is preconfigured to use the `Material` theme in the `
 
 ## Adding TreeGrid component
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeGrid component can be added to the application.
-To get started, add the TreeGrid component in the `index.ts` and `index.html`
-files using the following code.
-
-Place the following TreeGrid code in the `index.ts`.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeGrid component can be added to the application. To get started, add the TreeGrid component in the `index.ts` and `index.html` files using the following code. Place the following TreeGrid code in the `index.ts`.
 
 The TreeGrid component requires two key configurations:
 1. [DataSource](https://ej2.syncfusion.com/documentation/api/treegrid/index-default#datasource): The hierarchical data to display (typically with parent-child relationships)
@@ -216,8 +210,7 @@ These modules should be injected into the tree grid using the `TreeGrid.Inject` 
 
 ## Enable paging
 
-The paging feature enables users to view the treegrid record in a paged view. It can be enabled by setting the  [`allowPaging`](../api/treegrid#allowpaging) property to true. Inject the [`Page`](../api/treegrid#pagermodule)
- module as follows. If the `Page` module is not injected, the pager will not be rendered in the grid. The pager can be customized using the [`pageSettings`](../api/treegrid#pagesettings) property.
+The paging feature enables users to view the treegrid record in a paged view. It can be enabled by setting the  [`allowPaging`](../api/treegrid#allowpaging) property to true. Inject the [`Page`](../api/treegrid#pagermodule) module as follows. If the `Page` module is not injected, the pager will not be rendered in the grid. The pager can be customized using the [`pageSettings`](../api/treegrid#pagesettings) property.
 
  In root-level paging mode, paging is based on the root-level rows only i.e., it ignores the child row count and it can be enabled by using the [`pageSettings.pageSizeMode`](../api/treegrid/pageSettingsModel#pagesizemode) property.
 
@@ -237,12 +230,7 @@ The paging feature enables users to view the treegrid record in a paged view. It
 
 ## Enable sorting
 
-The sorting feature enables record ordering. It can be enabled by setting the
-[`allowSorting`](../api/treegrid#allowsorting) property to true. Inject the
-[`Sort`](../api/treegrid#sortmodule) module as follows. If the
-[`Sort`](../api/treegrid#sortmodule) module is not injected, sorting is not
-available when a header is clicked. The sorting feature can be customized using
-the [`sortSettings`](../api/treegrid#sortsettings) property.
+The sorting feature enables record ordering. It can be enabled by setting the [`allowSorting`](../api/treegrid#allowsorting) property to true. Inject the[`Sort`](../api/treegrid#sortmodule) module as follows. If the [`Sort`](../api/treegrid#sortmodule) module is not injected, sorting is not available when a header is clicked. The sorting feature can be customized using the [`sortSettings`](../api/treegrid#sortsettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -260,17 +248,9 @@ the [`sortSettings`](../api/treegrid#sortsettings) property.
 
 ## Enable filtering
 
-The filtering feature enables viewing a reduced set of records based on filter
-criteria. It can be enabled by setting the [`allowFiltering`](../api/treegrid#allowfiltering)
-property to true. The `Filter` module must be injected as follows.
-If the `Filter` module is not injected, the filter bar is not rendered
-in the TreeGrid. The filtering feature can be customized using the
-[`filterSettings`](../api/treegrid#filtersettings) property.
+The filtering feature enables viewing a reduced set of records based on filter criteria. It can be enabled by setting the [`allowFiltering`](../api/treegrid#allowfiltering) property to true. The `Filter` module must be injected as follows. If the `Filter` module is not injected, the filter bar is not rendered in the TreeGrid. The filtering feature can be customized using the [`filterSettings`](../api/treegrid#filtersettings) property.
 
-By default, filtered records are displayed along with their parent records.
-This behavior can be modified using the
-[`filterSettings-hierarchyMode`](../api/treegrid/filterSettingsModel#hierarchymode)
-property.
+By default, filtered records are displayed along with their parent records. This behavior can be modified using the[`filterSettings-hierarchyMode`](../api/treegrid/filterSettingsModel#hierarchymode) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Set default value for event fields in ##Platform_Name## Scheduler control | Syncfusion
+title: Default Event Field Values ##Platform_Name## Scheduler | Syncfusion
 description: Learn here all about Set default value for event fields in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Set default value for event fields 
+control: Scheduler
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,7 +11,9 @@ domainurl: ##DomainURL##
 
 # Set default value for event fields in ##Platform_Name## Scheduler control
 
-You can customize the default field names (such as Title, Location, etc.) in the event window and set default values for these fields. For example, you can set a default value for the Subject field using the `default` property, which will be automatically applied when creating an appointment with an empty subject.
+The Scheduler control allows customization of default field names (such as **Title**, **Location**, etc.) in the event window. You can also assign default values to these fields so that they are automatically applied when creating new appointments.  
+
+For example, a default value can be set for the **Subject** field using the `default` property. This ensures that when an appointment is created without a subject, the predefined default value is automatically applied.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -13,9 +13,10 @@ domainurl: ##DomainURL##
 
 ## Custom color palette
 
-You can customize the default color of series or points by providing a custom color palette of your choice by using the [`palettes`](../api/chart/#palettes) property.
+Customize the default color of series or points by providing a custom color palette using the [`palettes`](../api/chart#palettes) property.
 
 ## Supported Color Formats
+
 You can specify colors in various CSS-supported formats:  
 
 - **Hex**: `"#E94649"`, `"#F6B53F"`  
@@ -57,7 +58,7 @@ The color of individual data point or data points within a range can be customiz
 
 ### Point color mapping
 
-You can bind the color for the points from [`dataSource`](../api/chart/series/#datasource) for the series using [`pointColorMapping`](../api/chart/series/#pointcolormapping) property.
+You can bind the color for the points from [`dataSource`](../api/chart/series#datasource) for the series using [`pointColorMapping`](../api/chart/series#pointcolormapping) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -88,7 +89,7 @@ You can bind the color for the points from [`dataSource`](../api/chart/series/#d
 
 ### Range color mapping
 
-You can differentiate data points based on their y values using [`rangeColorSettings`](../api/chart/rangeColorSetting/) in the chart.
+You can differentiate data points based on their y values using [`rangeColorSettings`](../api/chart/rangeColorSetting) in the chart.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -119,7 +120,7 @@ You can differentiate data points based on their y values using [`rangeColorSett
 
 ## Point level customization
 
-Marker, data label and fill color of each data point can be customized with [`pointRender`](../api/chart/#pointrender-emittypeipointrendereventargs) and [`textRender`](../api/chart/#textrender-emittypeitextrendereventargs) event.
+Marker, data label, and fill color of individual data points can be customized using the [`pointRender`](../api/chart#pointrender-emittypeipointrendereventargs) and [`textRender`](../api/chart#textrender-emittypeitextrendereventargs) events.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -156,7 +157,7 @@ Marker, data label and fill color of each data point can be customized with [`po
 
 **Customize the chart background**
 
-Using [`background`](../api/chart/#background-string) and [`border`](../api/chart/#border-bordermodel) properties, you can change the background color and border of the chart.
+Use the [`background`](../api/chart#background-string) and [`border`](../api/chart#border-bordermodel) properties on the chart to change its background color and border.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -187,7 +188,7 @@ Using [`background`](../api/chart/#background-string) and [`border`](../api/char
 
 **Chart margin**
 
-You can set margin for chart from its container through [`margin`](../api/chart/#margin-marginmodel) property.
+Set the chart margin relative to its container using the [`margin`](../api/chart#margin-marginmodel) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -218,7 +219,7 @@ You can set margin for chart from its container through [`margin`](../api/chart/
 
 **Chart area customization**
 
-Using [`background`](https://ej2.syncfusion.com/documentation/api/chart/chartAreaModel/#background) and [`border`](https://ej2.syncfusion.com/documentation/api/chart/chartAreaModel/#border) properties, you can change the background color and border of the chart area. Width for the chart area can be customized using [`width`](https://ej2.syncfusion.com/documentation/api/chart/chartAreaModel/#width) property.
+To customize the plotting region (chart area), use the `chartArea` properties: [`background`](https://ej2.syncfusion.com/documentation/api/chart/chartAreaModel#background) and [`border`](https://ej2.syncfusion.com/documentation/api/chart/chartAreaModel#border) change the chart area's appearance, and [`width`](https://ej2.syncfusion.com/documentation/api/chart/chartAreaModel#width) adjusts its size.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -249,7 +250,7 @@ Using [`background`](https://ej2.syncfusion.com/documentation/api/chart/chartAre
 
 **Chart area margin**
 
-You can customize the space between the chart area from its chart container through [`margin`](../api/chart/chartAreaModel/#margin) property.
+You can customize the space between the chart area from its chart container through [`margin`](../api/chart/chartAreaModel#margin) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -280,7 +281,7 @@ You can customize the space between the chart area from its chart container thro
 
 ## Animation
 
-You can customize animation for a particular series using [`animation`](../api/chart//animationModel/) property. You can enable or disable animation of the series using `enable` property, `duration` specifies the duration of an animation and `delay` allows us to start the animation at desire time.
+Customize animation for a series using the [`animation`](../api/chart//animationModel) property. Use `enable` to turn animation on or off; `duration` controls the animation length and `delay` sets when the animation starts.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -342,4 +343,4 @@ Fluid animation used to animate series with updated dataSource continues animati
 
 ## See also
 
-* [Customize the series points using patterns](../chart/how-to/points-customization/#customize-the-series-points-by-using-patterns)
+* [Customize the series points using patterns](../chart/how-to/points-customization#customize-the-series-points-by-using-patterns)

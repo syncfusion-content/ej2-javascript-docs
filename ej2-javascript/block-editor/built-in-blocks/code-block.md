@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Code Blocks in ##Platform_Name## Block Editor control
 
-The Syncfusion Block Editor allows you to render code snippets with syntax highlighting by setting the block's [blockType](../../api/blockeditor/blockModel#blockType) property to `Code`. You can customize the available programming languages and set a default language using the `properties` property.
+The Syncfusion Block Editor allows you to render code snippets with syntax highlighting by setting the block's [blockType](../../api/blockeditor/blockModel#blockType) property to [Code](../../api/blockeditor/blocktype). You can customize the available programming languages and set a default language using the [properties](../../api/blockeditor/blockmodel#properties) property.
 
 ## Global Code Settings
 

@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Templates in ##Platform_Name## AI AssistView control
 
-The AI AssistView provides several template options to customize the banner, prompt, response, suggestions and footer items.
+The AI AssistView control offers several template options to customize the banner, prompt items, response items, suggestions, and footer.
 
 ## Banner template
 
-You can use the [bannerTemplate](../api/ai-assistview#bannertemplate) property to display additional information, such as a welcome note, and more in the AI AssistView. This banner is positioned at the top of the prompt and response conversation area within the AI AssistView.
+The [bannerTemplate](../api/ai-assistview#bannertemplate) property allows for the display of custom content, such as a welcome note or introductory instructions, at the top of the AI AssistView's conversation area.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -46,7 +46,7 @@ You can use the [bannerTemplate](../api/ai-assistview#bannertemplate) property t
 
 ## Prompt item template
 
-You can use the [promptItemTemplate](../api/ai-assistview#promptitemtemplate) property to customize the prompt items in the AI AssistView. The template context includes `prompt`, `toolbarItems` and `index` items.
+To customize the appearance of prompt items, use the [promptItemTemplate](../api/ai-assistview#promptitemtemplate) with an `ng-template` directive. The template's context provides `prompt`, `toolbarItems`, and `index` items for tailored rendering.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -77,7 +77,7 @@ You can use the [promptItemTemplate](../api/ai-assistview#promptitemtemplate) pr
 
 ## Response item template
 
-You can use the [responseItemTemplate](../api/ai-assistview#responseitemtemplate) property to customize response items within the AI AssistView. The template context includes the `prompt`, `response`, `index`, `toolbarItems` and `output` items.
+The [responseItemTemplate](../api/ai-assistview#responseitemtemplate) can be utilized with an `ng-template` directive to modify the layout of response items. The available context includes `prompt`, `response`, `index`, `toolbarItems`, and `output`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -108,7 +108,7 @@ You can use the [responseItemTemplate](../api/ai-assistview#responseitemtemplate
 
 ## Prompt suggestion item template
 
-You can use the [promptSuggestionItemTemplate](../api/ai-assistview#promptsuggestionitemtemplate) property to customize the prompt suggestion items in the AI AssistView. The template context includes the `index` and `promptSuggestion`.
+For customizing the prompt suggestion items, the [promptSuggestionItemTemplate](../api/ai-assistview#promptsuggestionitemtemplate) can be implemented using an `ng-template` directive. The context for this template includes the `index` and `promptSuggestion` items.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -139,7 +139,7 @@ You can use the [promptSuggestionItemTemplate](../api/ai-assistview#promptsugges
 
 ## Footer template
 
-You can use the [footerTemplate](../api/ai-assistview#footertemplate) property to customize the default footer area and manage prompt request actions in the AI AssistView. This allows users to create unique footers that meet their specific needs.
+The [footerTemplate](../api/ai-assistview#footertemplate) property offers a way to replace the default footer and manage prompt request actions. This enables the creation of unique footers that can include custom functionalities, such as a character counter or a button to clear the conversation.
 
 {% if page.publishingplatform == "typescript" %}
 

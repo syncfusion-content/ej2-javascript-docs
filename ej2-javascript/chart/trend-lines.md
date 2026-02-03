@@ -12,15 +12,13 @@ domainurl: ##DomainURL##
 
 # Trend lines in ##Platform_Name## Chart control
 
-Trendlines are used to show the direction and speed of price.
+Trendlines help identify patterns, direction, and overall trends in numerical data. They project the general movement of data values and are widely used in analytics, forecasting, and financial charts. Trendlines can be added to Cartesian series types such as Line, Column, Scatter, Area, Candle, and Hilo (excluding bar series). Multiple trendlines can be added to a single series based on the analysis needs.
 
-Trendlines can be generated for Cartesian type series (Line, Column, Scatter, Area, Candle, Hilo etc.) except bar type series. You can add more than one trendline to a series.
-
-Chart supports 6 types of trendlines.
+Charts support six types of trendlines: **Linear**, **Exponential**, **Logarithmic**, **Polynomial**, **Power**, and **Moving Average**.
 
 ## Linear
 
-A linear trendline is a best fit straight line that is used with simpler data sets. To render a linear trendline, use trendline [`type`](../api/chart/trendlineModel/) as `Linear` and inject `Trendlines` module using `Chart.Inject(Trendlines)`.
+A linear trendline is a straight, best‑fit line used to describe data with a constant rate of increase or decrease. Set the trendline [`type`](../api/chart/trendlineModel) to `Linear` and inject the `Trendlines` module using `Chart.Inject(Trendlines)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -51,9 +49,9 @@ A linear trendline is a best fit straight line that is used with simpler data se
 
 ## Exponential
 
-An exponential trendline is a curved line that is most useful when data values rise or fall at increasingly higher rates. You cannot create an exponential trendline, if your data contains zero or negative values.
+An exponential trendline displays a curved pattern useful when data rises or falls at increasing rates. Exponential trendlines cannot be generated if the dataset includes zero or negative values.
 
-To render a exponential trendline, use trendline [`type`](../api/chart/trendlineModel/) as `Exponential` and inject `Trendlines` module using `Chart.Inject(Trendlines)`.
+Set the trendline [`type`](../api/chart/trendlineModel) to `Exponential` and inject the `Trendlines` module using `Chart.Inject(Trendlines)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -84,9 +82,9 @@ To render a exponential trendline, use trendline [`type`](../api/chart/trendline
 
 ## Logarithmic
 
-A logarithmic trendline is a best-fit curved line that is most useful when the rate of change in the data increases or decreases quickly and then levels out. A logarithmic trendline can use negative and/or positive values.
+A logarithmic trendline is a best‑fit curved line suitable when the data increases or decreases quickly and then stabilizes. It supports both positive and negative values.
 
-To render a logarithmic trendline, use trendline [`type`](../api/chart/trendlineModel/) as `Logarithmic` and inject `Trendlines` module using `Chart.Inject(Trendlines)`.
+Set [`type`](../api/chart/trendlineModel) to `Logarithmic` and inject the `Trendlines` module using `Chart.Inject(Trendlines)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -117,11 +115,9 @@ To render a logarithmic trendline, use trendline [`type`](../api/chart/trendline
 
 ## Polynomial
 
-A polynomial trendline is a curved line that is used when data fluctuates.
+A polynomial trendline is useful when data fluctuates. It uses a curved line that can model more complex datasets.
 
-To render a polynomial trendline, use trendline [`type`](../api/chart/trendlineModel/) as `Polynomial` and inject `Trendlines` module using `Chart.Inject(Trendlines)`.
-
-`polynomialOrder` used to define the polynomial value.
+Set [`type`](../api/chart/trendlineModel) to `Polynomial` and inject the `Trendlines` module using `Chart.Inject(Trendlines)` method. Use [`polynomialOrder`](../api/chart/trendlinemodel#polynomialorder) to define the degree of the polynomial.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -152,9 +148,9 @@ To render a polynomial trendline, use trendline [`type`](../api/chart/trendlineM
 
 ## Power
 
-A power trendline is a curved line that is best used with data sets that compare measurements that increase at a specific rate.
+A power trendline is ideal for datasets where measurements increase at a constant rate. It displays a curved line that best fits exponential growth or decay patterns.
 
-To render a power trendline, use trendline [`type`](../api/chart/trendlineModel/) as `Power` and inject `Trendlines` module using `Chart.Inject(Trendlines)`.
+Set [`type`](../api/chart/trendlineModel) to `Power` and inject the `Trendlines` module using `Chart.Inject(Trendlines)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -185,11 +181,9 @@ To render a power trendline, use trendline [`type`](../api/chart/trendlineModel/
 
 ## Moving average
 
-A moving average trendline smoothen out fluctuations in data to show a pattern or trend more clearly.
+A moving average trendline smooths fluctuations to reveal overall trends more clearly. The [`period`](../api/chart/trendlinemodel#period) property specifies the number of data points used to calculate each average.
 
-To render a moving average trendline, use trendline [`type`](../api/chart/trendlineModel/) as `MovingAverage` and inject `Trendlines` module using `Chart.Inject(Trendlines)`.
-
-`period` property defines the period to find the moving average.
+Set [`type`](../api/chart/trendlineModel) to `MovingAverage` and inject the `Trendlines` module using `Chart.Inject(Trendlines)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -220,7 +214,7 @@ To render a moving average trendline, use trendline [`type`](../api/chart/trendl
 
 **Customization of trendline**
 
-The [`fill`](../api/chart/trendlineModel/#fill-string) and [`width`](../api/chart/trendlineModel/#width-number) properties are used to customize the appearance of the trendline.
+Customize trendline appearance using the [`fill`](../api/chart/trendlineModel#fill-string) property for color and the [`width`](../api/chart/trendlineModel#width-number) property for line thickness.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -251,13 +245,11 @@ The [`fill`](../api/chart/trendlineModel/#fill-string) and [`width`](../api/char
 
 ## Forecasting
 
-Trendline forecasting is the prediction of future/past situations.
-
-Forward Forecasting and Backward Forecasting are the two types of forecasting.
+Trendline forecasting extends the existing trendline to estimate future and past values.
 
 **Forward forecasting**
 
-The value set for forwardForecast is used to determine the distance moving towards the future trend.
+Use the [`forwardForecast`](../api/chart/trendlinemodel#forwardforecast) property to extend the trendline into the future.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -288,7 +280,7 @@ The value set for forwardForecast is used to determine the distance moving towar
 
 **Backward forecasting**
 
-The value set for the backwardForecast is used to determine the past trends.
+Use the [`backwardForecast`](../api/chart/trendlinemodel#backwardforecast) property to extend the trendline into past data points.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -319,7 +311,7 @@ The value set for the backwardForecast is used to determine the past trends.
 
 ## Show or hide a trendline
 
-You can show or hide the trendline by setting trendline `visible` property.
+Control visibility using the [`visible`](../api/chart/trendlinemodel#visible) property of the trendline.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -42,9 +42,9 @@ The JavaScript (ES5) SpeechToText control can be initialized by using either of 
 >
 > Control Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
 >
-> Dependency Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\styles\material.css`
+> Dependency Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\styles\tailwind3.css`
 >
-> Control Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\material.css`
+> Control Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\tailwind3.css`
 
 **Example:**
 
@@ -52,15 +52,15 @@ The JavaScript (ES5) SpeechToText control can be initialized by using either of 
 >
 > Control Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-inputs\dist\global\ej2-inputs.min.js`
 >
-> Dependency Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-base\styles\material.css`
+> Dependency Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-base\styles\tailwind3.css`
 >
-> Control Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-inputs\styles\material.css`
+> Control Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-inputs\styles\tailwind3.css`
 
 The below located script and style file contains all Syncfusion JavaScript (ES5) UI control resources in a single file.
 
 > Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
 >
-> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\material.css`
+> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\tailwind3.css`
 
 The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script and styles for a set of specific controls. This web tool is useful to combine the required control scripts and styles in a single file.
 
@@ -74,12 +74,12 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
        <head>
           <title>JavaScript (ES5)</title>
           <!-- JavaScript (ES5) SpeechToText's dependency style -->
-          <link href="resources/base/material.css" rel="stylesheet" type="text/css"/>
-          <link href="resources/buttons/material.css" rel="stylesheet" type="text/css"/>
-          <link href="resources/popups/material.css" rel="stylesheet" type="text/css"/>
+          <link href="resources/base/tailwind3.css" rel="stylesheet" type="text/css"/>
+          <link href="resources/buttons/tailwind3.css" rel="stylesheet" type="text/css"/>
+          <link href="resources/popups/tailwind3.css" rel="stylesheet" type="text/css"/>
 
           <!-- JavaScript (ES5) SpeechToText's control style -->
-          <link href="resources/inputs/material.css" rel="stylesheet" type="text/css"/>
+          <link href="resources/inputs/tailwind3.css" rel="stylesheet" type="text/css"/>
 
           <!-- JavaScript (ES5) SpeechToText's dependency global script -->
           <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
@@ -105,12 +105,12 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
        <head>
           <title>JavaScript (ES5)</title>
           <!-- JavaScript (ES5) SpeechToText's dependency style -->
-          <link href="resources/base/material.css" rel="stylesheet" type="text/css"/>
-          <link href="resources/buttons/material.css" rel="stylesheet" type="text/css"/>
-          <link href="resources/popups/material.css" rel="stylesheet" type="text/css"/>
+          <link href="resources/base/tailwind3.css" rel="stylesheet" type="text/css"/>
+          <link href="resources/buttons/tailwind3.css" rel="stylesheet" type="text/css"/>
+          <link href="resources/popups/tailwind3.css" rel="stylesheet" type="text/css"/>
 
           <!-- JavaScript (ES5) SpeechToText's control style -->
-          <link href="resources/inputs/material.css" rel="stylesheet" type="text/css"/>
+          <link href="resources/inputs/tailwind3.css" rel="stylesheet" type="text/css"/>
 
           <!-- JavaScript (ES5) SpeechToText's dependency global script -->
           <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
@@ -150,14 +150,14 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 >
 > Control Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Dependency Styles: `https://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/styles/material.css`
+> Dependency Styles: `https://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/styles/tailwind3.css`
 >
-> Control Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material.css`
+> Control Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/tailwind3.css`
 
 **Example:**
 > Script: [`https://cdn.syncfusion.com/ej2/ej2-inputs/dist/global/ej2-inputs.min.js`](https://cdn.syncfusion.com/ej2/ej2-inputs/dist/global/ej2-inputs.min.js)
 >
-> Styles: [`https://cdn.syncfusion.com/ej2/ej2-inputs/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-inputs/styles/material.css)
+> Styles: [`https://cdn.syncfusion.com/ej2/ej2-inputs/styles/tailwind3.css`](http://cdn.syncfusion.com/ej2/ej2-inputs/styles/tailwind3.css)
 
 **Step 3:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the CDN link references. Now, add the `SpeechToText` element and initiate the `JavaScript (ES5) SpeechToText` control in the index.html by using following code.
 
@@ -175,7 +175,9 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 ## Adding button content
 
-You can use the [content](../api/speech-to-text/buttonSettingsModel/#content) property to display the start listening text and [stopContent](../api/speech-to-text/buttonSettingsModel/#stopContent) to display the stop listening text by using the [buttonSettings](../api/speech-to-text#buttonSettings) property.
+The content of the SpeechToText button can be customized for its active and inactive states. Use the [content](../api/speech-to-text/buttonSettingsModel#content) property to define the text for the start listening state and the [stopContent](../api/speech-to-text/buttonSettingsModel#stopContent) property for the stop listening state. These properties are configured within the [buttonSettings](../api/speech-to-text#buttonSettings) property.
+
+The following example shows how to configure `buttonSettings` in the SpeechToText component.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}

@@ -16,7 +16,7 @@ Error bars are graphical representations of the variability of data and are used
 
 To render error bars for the series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  
-* **Set visibility**: Set the [`visible`](../../api/chart/errorBarSettings/#visible) property to **true** for the error bars to be displayed.
+* **Set visibility**: Set the [`visible`](../../api/chart/errorBarSettings#visible) property to **true** for the error bars to be displayed.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -52,7 +52,7 @@ To render error bars for the series in your chart, you need to follow a few step
 
 ## Customizing error bar
 
-To customize the error bar type, set the error bar [`type`](../../api/chart/errorBarSettings/#type) to `Custom`, and then change the horizontal or vertical positive and negative error values for the error bar.
+To customize the error bar type, set the error bar [`type`](../../api/chart/errorBarSettings#type) to `Custom`, and then change the horizontal or vertical positive and negative error values for the error bar.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -86,7 +86,7 @@ To customize the error bar type, set the error bar [`type`](../../api/chart/erro
 
 ## Error bar mode
 
-The error bar mode is used to define whether the error bar line is drawn horizontally, vertically or on both sides. To change the error bar mode, use the [`mode`](../../api/chart/errorBarSettings/#mode) option.
+The error bar mode is used to define whether the error bar line is drawn horizontally, vertically or on both sides. To change the error bar mode, use the [`mode`](../../api/chart/errorBarSettings#mode) option.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -120,7 +120,7 @@ The error bar mode is used to define whether the error bar line is drawn horizon
 
 ## Error bar direction
 
-To change the direction of the error bars to plus, minus, or both sides, use the [`direction`](../../api/chart/errorBarSettings/#direction) property.
+To change the direction of the error bars to plus, minus, or both sides, use the [`direction`](../../api/chart/errorBarSettings#direction) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -154,7 +154,7 @@ To change the direction of the error bars to plus, minus, or both sides, use the
 
 ## Customizing error bar cap
 
-To customize the length, width, opacity, and fill color of the error bar caps, you can use the [`errorBarCap`](../../api/chart/errorBarSettings/#errorbarcap) property.
+To customize the length, width, opacity, and fill color of the error bar caps, you can use the [`errorBarCap`](../../api/chart/errorBarSettings#errorbarcap) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -188,7 +188,7 @@ To customize the length, width, opacity, and fill color of the error bar caps, y
 
 ## Customizing error bar color
 
-To customise the error bar color for individual errors, use the [`errorBarColorMapping`](../../api/chart/errorBarSettings/#errorbarcolormapping) property. You can also customize the vertical error, horizontal error, horizontal negative and positive error, and vertical negative and positive error for an individual point using the [`verticalError`](../../api/chart/errorBarSettings/#verticalerror), [`horizontalError`](../../api/chart/errorBarSettings/#horizontalerror), [`horizontalNegativeError`](../../api/chart/errorBarSettings/#horizontalnegativeerror), [`horizontalPositiveError`](../../api/chart/errorBarSettings/#horizontalpositiveerror), [`verticalNegativeError`](../../api/chart/errorBarSettings/#verticalnegativeerror), and [`verticalPositiveError`](../../api/chart/errorBarSettings/#verticalpositiveerror) properties.
+To customise the error bar color for individual errors, use the [`errorBarColorMapping`](../../api/chart/errorBarSettings#errorbarcolormapping) property. You can also customize the vertical error, horizontal error, horizontal negative and positive error, and vertical negative and positive error for an individual point using the [`verticalError`](../../api/chart/errorBarSettings#verticalerror), [`horizontalError`](../../api/chart/errorBarSettings#horizontalerror), [`horizontalNegativeError`](../../api/chart/errorBarSettings#horizontalnegativeerror), [`horizontalPositiveError`](../../api/chart/errorBarSettings#horizontalpositiveerror), [`verticalNegativeError`](../../api/chart/errorBarSettings#verticalnegativeerror), and [`verticalPositiveError`](../../api/chart/errorBarSettings#verticalpositiveerror) properties.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -224,7 +224,7 @@ To customise the error bar color for individual errors, use the [`errorBarColorM
 
 ### Series render
 
-The [`seriesRender`](../../api/chart#seriesrender) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](../../api/chart#seriesrender) event enables modification of series properties (for example, data, fill, or name) immediately before rendering. Use this event to adjust series appearance or to dynamically swap data sources.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -258,7 +258,7 @@ The [`seriesRender`](../../api/chart#seriesrender) event allows you to customize
 
 ### Point render
 
-The [`pointRender`](../../api/chart#pointrender) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](../../api/chart#pointrender) event provides a hook to customize each data point (for example, marker shape, border, or fill) before it is drawn. Use this to apply per-point styling rules or conditional formatting.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -292,5 +292,5 @@ The [`pointRender`](../../api/chart#pointrender) event allows you to customize e
 
 ## See also
 
-* [Data label](../data-labels/)
-* [Tooltip](../tool-tip/)
+* [Data label](../data-labels)
+* [Tooltip](../tool-tip)

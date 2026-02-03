@@ -15,15 +15,16 @@ The Block Editor supports the addition of embeds to help you organize and showca
 
 ## Adding an Image Block
 
-You can use the `Image` block to showcase an image content within your editor.
+You can use the [Image](../../api/blockeditor/blockType) block to showcase an image content within your editor.
+
 
 ### Configure Image Block
 
-You can render an `Image` block by setting the [blockType](../../api/blockeditor/blockModel#blockType) property to `Image` in the block model. The `properties` property allows you to configure the image source, allowed file types, display dimensions, and more.
+You can render an `Image` block by setting the [blockType](../../api/blockeditor/blockModel#blockType) property to `Image` in the block model. The [properties](../../api/blockeditor/blockModel#properties) property allows you to configure the image source, allowed file types, display dimensions, and more.
 
 #### Global Image Settings
 
-You can configure global settings for image blocks using the `imageBlockSettings` property in the Block Editor root configuration. This ensures consistent behavior for image uploads, resizing, and display.
+You can configure global settings for image blocks using the [imageBlockSettings](../../api/blockeditor/imageBlockSettings) property in the Block Editor root configuration. This ensures consistent behavior for image uploads, resizing, and display.
 
 The `imageBlockSettings` property supports the following options:
 

@@ -15,7 +15,7 @@ domainurl: ##DomainURL##
 
 To render a [line](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/line-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  
-* **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `Line` in your chart configuration. This indicates that the data should be represented as a line chart, which is ideal for visualizing trends over time or across categories.
+* **Set the series type**: Define the series [`type`](../../api/chart/series#type) as `Line` in your chart configuration. This indicates that the data should be represented as a line chart, which is ideal for visualizing trends over time or across categories.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -51,7 +51,7 @@ To render a [line](https://www.syncfusion.com/javascript-ui-controls/js-charts/c
 
 ## Binding data with series
 
-You can bind data to the chart using the [`dataSource`](../../api/chart/series/#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](../../api/chart/series/#xname) and [`yName`](../../api/chart/series/#yname) properties.
+You can bind data to the chart using the [`dataSource`](../../api/chart/series#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](../../api/chart/series#xname) and [`yName`](../../api/chart/series#yname) properties.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -89,7 +89,7 @@ The following properties can be used to customize the `line` series.
 
 **Fill**
 
-The [fill](../../api/chart/series/#fill) property determines the color applied to the series.
+The [fill](../../api/chart/series#fill) property determines the color applied to the series.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -121,7 +121,7 @@ The [fill](../../api/chart/series/#fill) property determines the color applied t
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs106" %}
 {% endif %}
 
-The [fill](../../api/chart/series/#fill) property can be used to apply a gradient color to the line series. By configuring this property with gradient values, you can create a visually appealing effect in which the color transitions smoothly from one shade to another.
+The [fill](../../api/chart/series#fill) property can be used to apply a gradient color to the line series. By configuring this property with gradient values, you can create a visually appealing effect in which the color transitions smoothly from one shade to another.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -155,7 +155,7 @@ The [fill](../../api/chart/series/#fill) property can be used to apply a gradien
 
 **Opacity**
 
-The [opacity](../../api/chart/series/#opacity) property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
+The [opacity](../../api/chart/series#opacity) property controls the transparency of the fill and affects how the series blends with background or overlapping series.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -189,7 +189,7 @@ The [opacity](../../api/chart/series/#opacity) property specifies the transparen
 
 **Dash array**
 
-The [dashArray](../../api/chart/series/#dasharray) property determines the pattern of dashes and gaps in the series.
+The [dashArray](../../api/chart/series#dasharray) property determines the pattern of dashes and gaps in the series.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -223,7 +223,7 @@ The [dashArray](../../api/chart/series/#dasharray) property determines the patte
 
 **Width**
 
-The [width](../../api/chart/series/#width) property specifies the stroke width applied to the series.
+The [width](../../api/chart/series#width) property specifies the stroke width applied to the series.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -259,7 +259,7 @@ The [width](../../api/chart/series/#width) property specifies the stroke width a
 
 To render a multicolored line series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
 
-* **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `MultiColoredLine` in your chart configuration. This specifies that the series should be rendered as a multicolored line chart, with different segments of the line having distinct colors.
+* **Set the series type**: Define the series [`type`](../../api/chart/series#type) as `MultiColoredLine` in your chart configuration. This specifies that the series should be rendered as a multicolored line chart, with different segments of the line having distinct colors.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -303,7 +303,7 @@ Data points with `null` or `undefined` values are considered empty. Empty data p
 
 **Mode**
 
-Use the [`mode`](../../api/chart/emptyPointSettings/#mode) property to define how empty or missing data points are handled in the series. The default mode for empty points is `Gap`.
+Use the [`mode`](../../api/chart/emptyPointSettings#mode) property to control handling of empty points. Available modes: `Gap`, `Drop`, `Zero`, `Average`. The default mode is `Gap`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -337,7 +337,7 @@ Use the [`mode`](../../api/chart/emptyPointSettings/#mode) property to define ho
 
 **Fill**
 
-Use the [`fill`](../../api/chart/emptyPointSettings/#fill) property to customize the fill color of empty points in the series.
+Use the [`fill`](../../api/chart/emptyPointSettings#fill) property to set the fill color for empty points.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -371,7 +371,7 @@ Use the [`fill`](../../api/chart/emptyPointSettings/#fill) property to customize
 
 **Border**
 
-Use the [`border`](../../api/chart/emptyPointSettings/#border) property to customize the width and color of the border for empty points.
+Use the [`border`](../../api/chart/emptyPointSettings#border) property to customize the border width and color for empty points.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -407,7 +407,7 @@ Use the [`border`](../../api/chart/emptyPointSettings/#border) property to custo
 
 ### Series render
 
-The [`seriesRender`](../../api/chart#seriesrender) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](../../api/chart#seriesrender) event enables modification of series properties (for example, data, fill, or name) immediately before rendering. Use this event to adjust series appearance or to dynamically swap data sources.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -441,7 +441,7 @@ The [`seriesRender`](../../api/chart#seriesrender) event allows you to customize
 
 ### Point render
 
-The [`pointRender`](../../api/chart#pointrender) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](../../api/chart#pointrender) event provides a hook to customize each data point (for example, marker shape, border, or fill) before it is drawn. Use this to apply per-point styling rules or conditional formatting.
 
 {% if page.publishingplatform == "typescript" %}
 

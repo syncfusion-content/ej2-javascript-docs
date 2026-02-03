@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # File Menu
 
-The Ribbon control provides a built-in file menu that allows you to add menu items for performing specific actions. The file menu can be enabled by setting the [fileMenu](https://ej2.syncfusion.com/documentation/api/ribbon#filemenu) property.
+The Syncfusion Javascript Ribbon control includes a built-in file menu that allows you to add menu items for performing specific actions like creating, opening, or saving documents. The file menu is highly configurable and can be enabled by defining the [fileMenu](https://ej2.syncfusion.com/documentation/api/ribbon#filemenu) property.
 
 ## Visibility 
 
-You can show the file menu by setting the [visible](https://ej2.syncfusion.com/documentation/api/ribbon/fileMenuSettingsModel/#visible) property to `true`. By default, the file menu is hidden.
+The visibility of the file menu can be controlled by setting the [visible](https://ej2.syncfusion.com/documentation/api/ribbon/fileMenuSettingsModel/#visible) property to `true`. By default, the file menu is hidden.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -30,8 +30,7 @@ You can show the file menu by setting the [visible](https://ej2.syncfusion.com/d
 
 ## Adding menu items
 
-The menu items can be added to the file menu using the [menuItems](https://ej2.syncfusion.com/documentation/api/ribbon/fileMenuSettingsModel/#menuitems) property as an array of [`MenuItemModel`](https://ej2.syncfusion.com/documentation/api/menu/menuItemModel/).
-
+Menu items are added to the file menu through the [menuItems](https://ej2.syncfusion.com/documentation/api/ribbon/fileMenuSettingsModel/#menuitems) property, which accepts an array of [MenuItemModel](https://ej2.syncfusion.com/documentation/api/menu/menuItemModel/).
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/ribbon/filemenu-cs1/index.ts %}
@@ -45,7 +44,7 @@ The menu items can be added to the file menu using the [menuItems](https://ej2.s
 
 ## Open submenu on click
 
-You can open the submenu on menu item click, by setting the [showItemOnClick](https://ej2.syncfusion.com/documentation/api/ribbon/fileMenuSettingsModel/#showitemonclick) property to `true`. By default, the submenu will open on mouse hover.
+By default, a submenu expands when the user hovers over its parent item. This behavior can be changed to expand on a click by setting the [showItemOnClick](https://ej2.syncfusion.com/documentation/api/ribbon/fileMenuSettingsModel/#showitemonclick) property to `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -60,7 +59,7 @@ You can open the submenu on menu item click, by setting the [showItemOnClick](ht
 
 ## Custom header text
 
-You can define the file menu header text content by using the [text](https://ej2.syncfusion.com/documentation/api/ribbon/fileMenuSettingsModel/#text) property.
+The header text can be customized by defining new content in the[text](https://ej2.syncfusion.com/documentation/api/ribbon/fileMenuSettingsModel/#text) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

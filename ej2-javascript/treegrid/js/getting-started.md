@@ -161,6 +161,7 @@ After copying the files, refer the TreeGrid's scripts and styles into the `index
 
 **Local setup example:**
 
+```html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -189,8 +190,7 @@ After copying the files, refer the TreeGrid's scripts and styles into the `index
 
 ## Adding TreeGrid control
 
-The TreeGrid control is now ready for addition in the application.
-Add a `div` element for TreeGrid in `index.html`, then refer the `index.js` file.
+The TreeGrid control is now ready for addition in the application. Add a `div` element for TreeGrid in `index.html`, then refer the `index.js` file.
 
 **Complete HTML and JavaScript setup:**
 
@@ -239,8 +239,7 @@ treeGridObj.appendTo('#TreeGrid');
 
 ## Defining Row Data
 
-Data in the TreeGrid is displayed through the `dataSource` property.
-This accepts either an array of JavaScript objects or a `DataManager` instance.
+Data in the TreeGrid is displayed through the `dataSource` property. This accepts either an array of JavaScript objects or a `DataManager` instance.
 
 The TreeGrid supports two ways to define hierarchical data:
 1. **Hierarchical binding** - Child records are nested inside parent records (using `childMapping` property)
@@ -382,8 +381,7 @@ These modules should be injected into the TreeGrid using the `ej.treegrid.TreeGr
 
 ## Enable paging
 
-The paging feature enables users to view the TreeGrid record in a paged view. It can be enabled by setting the  [`allowPaging`](../api/treegrid#allowpaging-boolean) property to true. Inject the [`Page`](../api/treegrid#pagermodule)
- module as follows. If the [`Page`](../api/treegrid#pagermodule) module is not injected, the pager will not be rendered in the TreeGrid. The pager can be customized using the [`pageSettings`](../api/treegrid#pagesettings) property.
+The paging feature enables users to view the TreeGrid record in a paged view. It can be enabled by setting the  [`allowPaging`](../api/treegrid#allowpaging-boolean) property to true. Inject the [`Page`](../api/treegrid#pagermodule) module as follows. If the [`Page`](../api/treegrid#pagermodule) module is not injected, the pager will not be rendered in the TreeGrid. The pager can be customized using the [`pageSettings`](../api/treegrid#pagesettings) property.
 
 In root-level paging mode, paging is based on the root-level rows only, i.e., it ignores the child row count and it can be enabled by using the [`pageSettings.pageSizeMode`](../api/treegrid/pageSettingsModel#pagesizemode) property.
 
@@ -402,12 +400,8 @@ In root-level paging mode, paging is based on the root-level rows only, i.e., it
 {% previewsample "page.domainurl/code-snippet/treegrid/tree-grid-cs1" %}
 
 ## Enable sorting
-The sorting feature enables record ordering. This feature is enabled by setting the
-../api/treegrid/#allowsorting property to true. The
-[`Sort`](../api/treegrid#sortmodule) module must be injected as follows. Without the
-[`Sort`](../api/treegrid#sortmodule) module, sorting does not occur when a header is
-clicked. Sorting behavior can be customized using the
-[`sortSettings`](../api/treegrid#sortsettings) property.
+
+The sorting feature enables record ordering. This feature is enabled by setting the [`allowSorting`](../api/treegrid#allowsorting) property to true. The[`Sort`](../api/treegrid#sortmodule) module must be injected as follows. Without the [`Sort`](../api/treegrid#sortmodule) module, sorting does not occur when a header is clicked. Sorting behavior can be customized using the [`sortSettings`](../api/treegrid#sortsettings) property.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -425,13 +419,7 @@ clicked. Sorting behavior can be customized using the
 
 ## Enable filtering
 
-The filtering feature enables viewing a reduced set of records based on filter
-criteria. It can be enabled by setting the
-[`allowFiltering`](../api/treegrid#allowfiltering) property to true. The
-[`Filter`](../api/treegrid#filtermodule) module must be injected as follows.
-If the [`Filter`](../api/treegrid#filtermodule) module is not injected, the
-filter bar is not rendered in the TreeGrid. The filtering feature can be
-customized using the [`filterSettings`](../api/treegrid#filtersettings) property.
+The filtering feature enables viewing a reduced set of records based on filter criteria. It can be enabled by setting the [`allowFiltering`](../api/treegrid#allowfiltering) property to true. The [`Filter`](../api/treegrid#filtermodule) module must be injected as follows. If the [`Filter`](../api/treegrid#filtermodule) module is not injected, the filter bar is not rendered in the TreeGrid. The filtering feature can be customized using the [`filterSettings`](../api/treegrid#filtersettings) property.
 
 By default, filtered records are shown along with its parent records. This behavior can be changed by using the [`filterSettings-hierarchyMode`](../api/treegrid/filterSettingsModel#hierarchymode) property.
 

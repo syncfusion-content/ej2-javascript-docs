@@ -98,7 +98,7 @@ on OSX/LINUX:
     import './main.html';
 
     // import Syncfusion Essential JS 2 styles from node_modules
-    import '../node_modules/@syncfusion/ej2/material.css';
+    import '../node_modules/@syncfusion/ej2/fluent2.css';
 
     import { Calendar } from '@syncfusion/ej2-calendars';
 

@@ -57,7 +57,7 @@ The table below lists the theme options. Ensure the version number in the CDN UR
 |    |  Light  |  Dark  |
 |-----------|---------|--------|
 |Package  | [Material 3 Light](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme) | [Material 3 Dark](https://www.npmjs.com/package/@syncfusion/ej2-material3-dark-theme) |
-| CDN  |  [Material 3 Light](https://cdn.syncfusion.com/ej2/24.2.8/material3.css)  |  [Material 3 Dark](https://cdn.syncfusion.com/ej2/24.2.8/material3-dark.css)  |
+| CDN  |  [Material 3 Light](https://cdn.syncfusion.com/ej2/32.1.19/material3.css)  |  [Material 3 Dark](https://cdn.syncfusion.com/ej2/32.1.19/material3-dark.css)  |
 
 ### Color Customization in Material 3
 

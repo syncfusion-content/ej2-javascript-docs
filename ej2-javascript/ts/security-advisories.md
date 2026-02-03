@@ -19,7 +19,7 @@ This page summarizes key security enhancements and fixes delivered in Syncfusion
 
 The following security updates are available for Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS2 controls and are listed based on the release version. 
 
-### 2023 Volume 2 (v22.1.34) - June 21, 2023
+### 2023 Volume 2 (v32.1.19) - June 21, 2023
 
 The Content Security Policy for Syncfusion<sup style="font-size:70%">&reg;</sup> controls has been enhanced by eliminating the usage of `unsafe-eval` directive. This ensures compliance with strict Content Security Policy (CSP) guidelines and improves the overall security of Syncfusion<sup style="font-size:70%">&reg;</sup> controls.
 
@@ -29,7 +29,7 @@ The `unsafe-eval` directive is a CSP directive that allows the use of `eval()`. 
 
 **Resolution:**
 
-Starting from the release (v22.1.34), Syncfusion<sup style="font-size:70%">&reg;</sup> has removed the usage of the `unsafe-eval` directive in the CSP meta tag by implementing a [function template](https://ej2.syncfusion.com/documentation/common/template#function-template) approach for template properties. This change will prevent the execution of code from strings and further improve the overall security of Syncfusion<sup style="font-size:70%">&reg;</sup> controls.
+Starting from the release (v32.1.19), Syncfusion<sup style="font-size:70%">&reg;</sup> has removed the usage of the `unsafe-eval` directive in the CSP meta tag by implementing a [function template](https://ej2.syncfusion.com/documentation/common/template#function-template) approach for template properties. This change will prevent the execution of code from strings and further improve the overall security of Syncfusion<sup style="font-size:70%">&reg;</sup> controls.
 
 For more information about the Content Security Policy, refer to this [documentation](https://ej2.syncfusion.com/documentation/common/troubleshoot/content-security-policy).
 

@@ -44,7 +44,7 @@ mkdir salesforceApp
 Navigate to the base directory you created in the previous step and generate a Salesforce DX project using the following CLI command.
 
 ```bash
-sfdx project:generate -n scheduler-salesforce-app 
+sf project:generate -n scheduler-salesforce-app 
 ```
 
 ![Salesforce App](../images/Salesforce-app.png)
@@ -56,7 +56,7 @@ Before proceeding further, you need to authorize your Salesforce project by foll
 Run the following command to authorize your Salesforce project with your Salesforce account in the browser.
 
 ```bash
-sfdx org:login:web -d 
+sf org:login:web -d 
 ```
 
 ![Salesforce Authorization](../images/Salesforce-authorization.png)
@@ -76,7 +76,7 @@ To facilitate development and testing, the creation of a scratch organization wi
 Run the following command to create a new scratch organization, which will provide a fresh Salesforce environment for development and testing with organization id and username as link below image.
 
 ```bash
-sfdx org:create:scratch -f config/project-scratch-def.json 
+sf org:create:scratch -f config/project-scratch-def.json 
 ```
 
 ![Salesforce create scratch organization](../images/Salesforce-create-scratch.png)
@@ -88,7 +88,7 @@ To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> scripts and st
 Use the following command to open the scratch project in the browser
 
 ```bash
-sfdx org:open -o <stratch org user name> 
+sf org:open -o <stratch org user name> 
 ```
 
 Replace <scratch org username> with the username of your scratch organization, which was generated during the scratch organization creation process.  
@@ -142,23 +142,23 @@ let's configure the fields and relationships for the `SchedulerEvent` object. To
 
 2. Provide a clear label for the `StartTime` field and click **Next** button. Once you've reviewed the settings, click **Save** & **New** button to proceed.
 
-![Salesforce New custom field](../images/Salesforce-custom-field.png)
+![Salesforce New custom field](../images/Salesforce-setting-starttime-field.png)
 
 3. Repeat the same steps as above to create the `EndTime` field, which will store the ending time of each appointment. Creating the `EndTime` Field. Once you've reviewed the settings, click **Save** & **New** button to proceed.
 
-![Salesforce setting allday field](../images/Salesforce-setting-allday-field.png)
+![Salesforce setting allday field](../images/Salesforce-setting-endtime-field.png)
 
 4. Choose Checkbox as the data type for the `IsAllDay` field. This field will be marked when an appointment is scheduled for the entire day. 
 
-![Salesforce New custom field](../images/Salesforce-custom-field.png)
+![Salesforce New custom field](../images/Salesforce-setting-isallday-field.png)
 
 5. Assign an appropriate label, such as `IsAllDay`, to the checkbox field. Click **Next** button to review the settings and then click **Save** & **New** button to proceed. 
 
-![Salesforce New custom field](../images/Salesforce-custom-field.png)
+![Salesforce New custom field](../images/Salesforce-setting-isallday-field.png)
 
 6. Choose Text as the data type for the `Location/Recurrence Rule/Recurrence Id /Recurrence Exception` field to store the location field and recurrence rule for each appointment as shown in the image respectively. Click **Next** to review the settings and then click **Save** button to proceed. 
 
-![Salesforce New custom field](../images/Salesforce-custom-field.png)
+![Salesforce New custom field](../images/Salesforce-setting-location-field.png)
 
 7. Based on your specific requirements, you can add more fields to the `SchedulerEvent` object by following the same steps outlined above.
 
@@ -171,7 +171,7 @@ To integrate the **JavaScript Scheduler** into your Salesforce project, we will 
 1. In your Salesforce project, run the following command to generate a Lightning web component named scheduler.
 
 ```bash
-sfdx lightning:generate:component --type lwc -n scheduler -d force-app/main/default/lwc 
+sf lightning:generate:component --type lwc -n scheduler -d force-app/main/default/lwc 
 ```
 
 ![Salesforce Creating Lightning web component](../images/Salesforce-creating-lightning-web.png)
@@ -328,7 +328,7 @@ Apex class that facilitates smooth interactions between your Lightning component
 Use the following command to create Apex class with the name `SchedulerData`. 
 
 ```bash
-sfdx apex:generate:class -n SchedulerData -d force-app/main/default/classes	 
+sf apex:generate:class -n SchedulerData -d force-app/main/default/classes	 
 ```
 
 ![Salesforce Creating Apex Class](../images/Salesforce-creating-apex.png)
@@ -356,7 +356,7 @@ public with sharing class SchedulerData {
 To retrieve the changes made in the scratch organization and sync them with your local Salesforce project, use the following command. 
 
 ```bash
-sfdx project:retrieve:start -o <scratch org use name> 
+sf project:retrieve:start -o <scratch org use name> 
 ```
 
 Replace <scratch org username> with the username of your scratch organization.
@@ -368,7 +368,7 @@ Replace <scratch org username> with the username of your scratch organization.
 To push the changes made in your local Salesforce project to the scratch organization, use the following command. 
 
 ```bash
-sfdx project:deploy:start -o <scratch org use name> 
+sf project:deploy:start -o <scratch org use name> 
 ```
 
 Replace <scratch org username> with the username of your scratch organization.

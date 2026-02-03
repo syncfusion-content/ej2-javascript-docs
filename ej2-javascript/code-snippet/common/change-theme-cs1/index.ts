@@ -31,7 +31,7 @@ let dropDownListObject: DropDownList = new DropDownList({
        let themeName = args.value as string;
        document.getElementsByTagName('body')[0].style.display = 'none';
        let styleLink: any = document.getElementById('css-link');
-       styleLink.href = 'https://cdn.syncfusion.com/ej2/20.4.38/' + themeName + '.css';
+       styleLink.href = 'https://cdn.syncfusion.com/ej2/32.1.19/' + themeName + '.css';
        setTimeout(function () { document.getElementsByTagName('body')[0].style.display = 'block'; }, 250);
     }
 });

@@ -69,23 +69,23 @@ You can access Syncfusion<sup style="font-size:70%">&reg;</sup> control resource
 
     >Dependency style:
     >
-    >`**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\styles\material.css`
+    >`**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\styles\bootstrap5.3.css`
     >
     >Control style:
     >
-    >`**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\material.css`
+    >`**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\bootstrap5.3.css`
     >
     >**Example:**
     >
     >Grid's control Style:
     >
-    >`C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\20.4.0.38\Web (Essential JS 2)\JavaScript\ej2-grids\styles\material.css`
+    >`C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\20.4.0.38\Web (Essential JS 2)\JavaScript\ej2-grids\styles\bootstrap5.3.css`
     >
     >Grid's dependency styles:
     >
-    >`C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\20.4.0.38\Web (Essential JS 2)\JavaScript\ej2-base\styles\material.css`
+    >`C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\20.4.0.38\Web (Essential JS 2)\JavaScript\ej2-base\styles\bootstrap5.3.css`
     >
-    >`C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\20.4.0.38\Web (Essential JS 2)\JavaScript\ej2-popups\styles\material.css`
+    >`C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\20.4.0.38\Web (Essential JS 2)\JavaScript\ej2-popups\styles\bootstrap5.3.css`
 
     You can also refer to a single script and style file that contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript control resources from the following location.
 
@@ -93,7 +93,7 @@ You can access Syncfusion<sup style="font-size:70%">&reg;</sup> control resource
 
     > Script reference for all controls: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
     >
-    > Style reference for all controls: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\material.css`
+    > Style reference for all controls: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\bootstrap5.3.css`
 
     > Since this file includes all Syncfusion<sup style="font-size:70%">&reg;</sup> controls, it may impact the website's loading time. To reduce the size of the single file, you can generate custom scripts and styles for a set of specific Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls using the [Custom Resource Generator (CRG)](https://crg.syncfusion.com) tool. This tool is useful for combining the required control scripts and styles into a single file. To know more about the CRG, refer to this [documentation](https://ej2.syncfusion.com/javascript/documentation/common/custom-resource-generator).
 
@@ -104,11 +104,11 @@ You can access Syncfusion<sup style="font-size:70%">&reg;</sup> control resource
     <html xmlns="http://www.w3.org/1999/xhtml">
         <head>
             <title>Syncfusion JavaScript (ES5) UI Control</title>
-            <!-- Essential JS 2 Grid's dependent material themes -->
-            <link href="resources/base/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/popups/styles/material.css" rel="stylesheet" type="text/css"/>
-            <!-- Essential JS 2 Grid's material theme -->
-            <link href="resources/grids/styles/material.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 Grid's dependent bootstrap5.3 themes -->
+            <link href="resources/base/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/popups/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 Grid's bootstrap5.3 theme -->
+            <link href="resources/grids/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential JS 2 Grid's dependent scripts -->
             <script src="resources/scripts/ej2-base.min.js" type="text/javascript"></script>
@@ -152,23 +152,23 @@ You can access Syncfusion<sup style="font-size:70%">&reg;</sup> control resource
 
     > Dependency styles:
     >
-    >`https://cdn.syncfusion.com/ej2/32.1.19/{DEPENDENCY_PACKAGE_NAME}/styles/material.css`
+    >`https://cdn.syncfusion.com/ej2/32.1.19/{DEPENDENCY_PACKAGE_NAME}/styles/bootstrap5.3.css`
     >
     > Control styles:
     >
-    >`https://cdn.syncfusion.com/ej2/32.1.19/{PACKAGE_NAME}/styles/material.css`
+    >`https://cdn.syncfusion.com/ej2/32.1.19/{PACKAGE_NAME}/styles/bootstrap5.3.css`
     >
     >**Example:**
     >
     >Grid's control style:
     >
-    >[https://cdn.syncfusion.com/ej2/32.1.19/ej2-grids/styles/material.css](https://cdn.syncfusion.com/ej2/32.1.19/ej2-grids/styles/material.css)
+    >[https://cdn.syncfusion.com/ej2/32.1.19/ej2-grids/styles/bootstrap5.3.css](https://cdn.syncfusion.com/ej2/32.1.19/ej2-grids/styles/bootstrap5.3.css)
     >
     >Grid's dependency styles:
     >
-    >[https://cdn.syncfusion.com/ej2/32.1.19/ej2-base/styles/material.css](https://cdn.syncfusion.com/ej2/32.1.19/ej2-base/styles/material.css)
+    >[https://cdn.syncfusion.com/ej2/32.1.19/ej2-base/styles/bootstrap5.3.css](https://cdn.syncfusion.com/ej2/32.1.19/ej2-base/styles/bootstrap5.3.css)
     > 
-    >[https://cdn.syncfusion.com/ej2/32.1.19/ej2-popups/styles/material.css](https://cdn.syncfusion.com/ej2/32.1.19/ej2-popups/styles/material.css)
+    >[https://cdn.syncfusion.com/ej2/32.1.19/ej2-popups/styles/bootstrap5.3.css](https://cdn.syncfusion.com/ej2/32.1.19/ej2-popups/styles/bootstrap5.3.css)
 
     You can also refer to a single script and style CDN link that contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript control resources as follows:
 
@@ -176,7 +176,7 @@ You can access Syncfusion<sup style="font-size:70%">&reg;</sup> control resource
 
     > Script reference for all controls: [https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js](https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js)
     >
-    > Style reference for all controls: [https://cdn.syncfusion.com/ej2/32.1.19/material.css](https://cdn.syncfusion.com/ej2/32.1.19/material.css)
+    > Style reference for all controls: [https://cdn.syncfusion.com/ej2/32.1.19/bootstrap5.3.css](https://cdn.syncfusion.com/ej2/32.1.19/bootstrap5.3.css)
 
     Note: The un-versioned CDN links that always reference the latest scripts were deprecated starting with 2022 Vol1 (20.1). These un-versioned links remain available with 19.4 to avoid breaking existing sites and apps that depend on them.
 
@@ -187,11 +187,11 @@ You can access Syncfusion<sup style="font-size:70%">&reg;</sup> control resource
     <html xmlns="http://www.w3.org/1999/xhtml">
         <head>
             <title>Syncfusion JavaScript (ES5) UI Control</title>
-            <!-- Essential JS 2 Grid's dependent material theme -->
-            <link href="https://cdn.syncfusion.com/ej2/32.1.19/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/32.1.19/ej2-popups/styles/material.css" rel="stylesheet" type="text/css"/>
-            <!-- Essential JS 2 Grid's material theme -->
-            <link href="https://cdn.syncfusion.com/ej2/32.1.19/ej2-grids/styles/material.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 Grid's dependent bootstrap5.3 theme -->
+            <link href="https://cdn.syncfusion.com/ej2/32.1.19/ej2-base/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/32.1.19/ej2-popups/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 Grid's bootstrap5.3 theme -->
+            <link href="https://cdn.syncfusion.com/ej2/32.1.19/ej2-grids/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential JS 2 Grid's dependent script -->
             <script src="https://cdn.syncfusion.com/ej2/32.1.19/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>

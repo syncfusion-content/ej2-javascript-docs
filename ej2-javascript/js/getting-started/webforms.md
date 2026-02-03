@@ -50,7 +50,7 @@ To get started with ASP.NET Web Forms application, ensure the following software
        ....
 
        @* Syncfusion Essential JS 2 Styles *@
-       <link href="Content/ej2/material.css" rel="stylesheet" />
+       <link href="Content/ej2/bootstrap5.3.css" rel="stylesheet" />
 
        @* Syncfusion Essential JS 2 Scripts *@
        <script src="Scripts/ej2/ej2.min.js"></script>

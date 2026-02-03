@@ -67,8 +67,8 @@ To work with the Essential<sup style="font-size:70%">&reg;</sup> JS 1 and the Es
     Replace the `style.css` file content with the below style references.
 
   ```
-     @import '../../node_modules/@syncfusion/ej2/styles/compatibility/material.css';
-     @import '../../node_modules/syncfusion-javascript/Content/ej/web/material/ej.web.all.compatibility.min';
+     @import '../../node_modules/@syncfusion/ej2/styles/compatibility/fluent2.css';
+     @import '../../node_modules/syncfusion-javascript/Content/ej/web/fluent2/ej.web.all.compatibility.min';
   ```
 
 4.Add the Essential<sup style="font-size:70%">&reg;</sup> JS 1 type reference to the `types` compiler options in `~/tsconfig.json` file.

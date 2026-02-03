@@ -68,18 +68,18 @@ After installing the Syncfusion<sup style="font-size:70%">&reg;</sup> control pa
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls comes with [built-in](https://ej2.syncfusion.com/documentation/appearance/theme/) themes, which are available in installed packages. It is easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls based on the application style by referring to any of the [built-in](https://ej2.syncfusion.com/documentation/appearance/theme/) themes. 
 
-Open the application in Visual Studio Code and import the `Material` theme for the Grid control and its dependencies to the `~/style.css` file as follows.
+Open the application in Visual Studio Code and import the `Fluent2` theme for the Grid control and its dependencies to the `~/style.css` file as follows.
 
 ```css
-  @import "node_modules/@syncfusion/ej2-base/styles/material.css";
-  @import "node_modules/@syncfusion/ej2-buttons/styles/material.css";
-  @import "node_modules/@syncfusion/ej2-calendars/styles/material.css";
-  @import "node_modules/@syncfusion/ej2-dropdowns/styles/material.css";
-  @import "node_modules/@syncfusion/ej2-inputs/styles/material.css";
-  @import "node_modules/@syncfusion/ej2-navigations/styles/material.css";
-  @import "node_modules/@syncfusion/ej2-popups/styles/material.css";
-  @import "node_modules/@syncfusion/ej2-splitbuttons/styles/material.css";
-  @import "node_modules/@syncfusion/ej2-grids/styles/material.css";
+  @import "node_modules/@syncfusion/ej2-base/styles/fluent2.css";
+  @import "node_modules/@syncfusion/ej2-buttons/styles/fluent2.css";
+  @import "node_modules/@syncfusion/ej2-calendars/styles/fluent2.css";
+  @import "node_modules/@syncfusion/ej2-dropdowns/styles/fluent2.css";
+  @import "node_modules/@syncfusion/ej2-inputs/styles/fluent2.css";
+  @import "node_modules/@syncfusion/ej2-navigations/styles/fluent2.css";
+  @import "node_modules/@syncfusion/ej2-popups/styles/fluent2.css";
+  @import "node_modules/@syncfusion/ej2-splitbuttons/styles/fluent2.css";
+  @import "node_modules/@syncfusion/ej2-grids/styles/fluent2.css";
 ```
 
 > Grid control have dependencies on other Syncfusion<sup style="font-size:70%">&reg;</sup> controls, so CSS references for the dependent control must be added in order to use all Grid functionalities. Check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme/) section to know more about built-in themes and combined CSS reference of all controls.

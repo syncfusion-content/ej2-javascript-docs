@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Embed Blocks in ##Platform_Name## Block Editor control | Syncfusion
-description: Checkout and learn about Embed Blocks with ##Platform_Name## Block Editor control of Syncfusion Essential JS 2 and more.
+title: Table Blocks in ##Platform_Name## Block Editor control | Syncfusion
+description: Checkout and learn about Table Blocks with ##Platform_Name## Block Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Block Editor
 publishingplatform: ##Platform_Name##

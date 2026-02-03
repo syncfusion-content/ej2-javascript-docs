@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Messages in ##Platform_Name## Chat UI control
 
-The Chat UI allows to add messages using the [messages](../api/chat-ui/#messages) property. The message collection stores all the messages being sent and received.
+The Chat UI allows to add messages using the [messages](../api/chat-ui#messages) property. The message collection stores all the messages being sent and received.
 
 ## Configure messages
 
-You can use the [text](../api/chat-ui/messageModel/#text) property to add message content for the user.  Each message can be configured with options such as [id](../api/chat-ui/messageModel/#id), [text](../api/chat-ui/messageModel/#text), [author](../api/chat-ui/messageModel/#author), [timestamp](../api/chat-ui/messageModel/#timestamp) and more.
+You can use the [text](../api/chat-ui/messageModel#text) property to add message content for the user.  Each message can be configured with options such as [id](../api/chat-ui/messageModel#id), [text](../api/chat-ui/messageModel#text), [author](../api/chat-ui/messageModel#author), [timestamp](../api/chat-ui/messageModel#timestamp) and more.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -46,7 +46,7 @@ You can use the [text](../api/chat-ui/messageModel/#text) property to add messag
 
 ### Setting pinned
 
-You can use the [isPinned](../api/chat-ui/message/#ispinned) property to highlight the important message in the chat. Once a message is pinned, you can access the options menu to continue the chat or unpin it.
+You can use the [isPinned](../api/chat-ui/message#ispinned) property to highlight the important message in the chat. Once a message is pinned, you can access the options menu to continue the chat or unpin it.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -77,7 +77,7 @@ You can use the [isPinned](../api/chat-ui/message/#ispinned) property to highlig
 
 ### Setting reply to
 
-You can use the [replyTo](../api/chat-ui/message/#replyto) property to respond to the original message preserving context and creating a threaded conversation.
+You can use the [replyTo](../api/chat-ui/message#replyto) property to respond to the original message preserving context and creating a threaded conversation.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -108,7 +108,7 @@ You can use the [replyTo](../api/chat-ui/message/#replyto) property to respond t
 
 ### Setting forward
 
-You can use the [isForwarded](../api/chat-ui/message/#isforwarded) property to specify the user when the message is forwarded.
+You can use the [isForwarded](../api/chat-ui/message#isforwarded) property to specify the user when the message is forwarded.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -170,9 +170,9 @@ You can use the `enableCompactMode` property to align all messages to the left i
 
 ### Define current user
 
-You can use the [author](../api/chat-ui/messageModel/#author) property to identify the current user of the chat. Each user can be configured with options such as [id](../api/chat-ui/userModel/#id), [user](../api/chat-ui/userModel/#user), [avatarUrl](../api/chat-ui/userModel/#avatarurl) and more.
+You can use the [author](../api/chat-ui/messageModel#author) property to identify the current user of the chat. Each user can be configured with options such as [id](../api/chat-ui/userModel#id), [user](../api/chat-ui/userModel#user), [avatarUrl](../api/chat-ui/userModel#avatarurl) and more.
 
-> You can use the [user](../api/chat-ui/userModel/#user) property to display the user name and [id](../api/chat-ui/userModel/#id) property is necessary to differentiate between the multiple users.
+> The [user](../api/chat-ui/userModel#user) property displays the user's name, while the [id](../api/chat-ui/userModel#id) property is necessary to differentiate between multiple users.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -203,7 +203,7 @@ You can use the [author](../api/chat-ui/messageModel/#author) property to identi
 
 #### Setting avatar URL
 
-You can use the [avatarUrl](../api/chat-ui/userModel/#avatarurl) property to define the image URL’s for the user avatar. If no URL is provided, fallback initials of the first and last name from the user’s name will be used.
+The [avatarUrl](../api/chat-ui/userModel#avatarurl) property defines the image URL for the user's avatar. If no URL is provided, the fallback initials from the user’s name will be displayed.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -234,7 +234,7 @@ You can use the [avatarUrl](../api/chat-ui/userModel/#avatarurl) property to def
 
 #### Setting avatar background color
 
-You can use the [avatarBgColor](../api/chat-ui/userModel/#avatarbgcolor) property to set a specific background color for user avatars using hexadecimal values. If no color is set, a custom background color is set based on specified theme.
+The [avatarBgColor](../api/chat-ui/userModel#avatarbgcolor) property sets a specific background color for user avatars using hexadecimal values. If no color is set, a default background color is applied based on the current theme.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -265,7 +265,7 @@ You can use the [avatarBgColor](../api/chat-ui/userModel/#avatarbgcolor) propert
 
 #### Setting CSS class 
 
-You can use the [cssClass](../api/chat-ui/userModel/#cssclass) property to customize the appearance of the chat user.
+The [cssClass](../api/chat-ui/userModel#cssclass) property allows for custom styling of a chat user's messages and avatar.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -302,16 +302,16 @@ You can use the [cssClass](../api/chat-ui/userModel/#cssclass) property to custo
 
 #### Setting status icon css
 
-You can use the [statusIconCss](../api/chat-ui/message/#statusiconcss) property to identify the user's presence, including `online`, `offline`, `busy`, and `away` status in the Chat UI.
+Use the [statusIconCss](../api/chat-ui/message#statusiconcss) property to indicate a user's presence status, such as `online`, `offline`, `busy`, or `away`.
 
-The following are the predefined status styles that can be defined using the `statusIconCss` property.
+The following predefined classes can be assigned to the `statusIconCss` property:
 
-| Status | Icon class |
-| ------------ | -------------- |
-| `Available` | `e-user-online` |
-| `Away` | `e-user-away` |
-| `Busy` | `e-user-busy` |
-| `Offline` | `e-user-offline` |
+| Status    | Icon Class     |
+|-----------|----------------|
+| `Available`| `e-user-online`|
+| `Away`    | `e-user-away`  |
+| `Busy`    | `e-user-busy`  |
+| `Offline` | `e-user-offline`|
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -348,7 +348,7 @@ The following are the predefined status styles that can be defined using the `st
 
 ### Define timestamp
 
-You can use the [timeStamp](../api/chat-ui/messageModel/#timestamp) property to indicate the date and time of each messages being sent. By default it is set to the current date and time when the message is sent.
+You can use the [timeStamp](../api/chat-ui/messageModel#timestamp) property to indicate the date and time of each message being sent. By default it is set to the current date and time when the message is sent.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -379,7 +379,7 @@ You can use the [timeStamp](../api/chat-ui/messageModel/#timestamp) property to 
 
 #### Setting timestamp format
 
-You can use the [timeStampFormat](../api/chat-ui/messageModel/#timestampformat) to display specific time format for the timestamp. The default format is `dd/MM/yyyy hh:mm a`, but this can be customized to meet different localization and display needs.
+The [timeStampFormat](../api/chat-ui/messageModel#timestampformat) property provides control over the timestamp's display format. The default format is `dd/MM/yyyy hh:mm a`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -410,11 +410,11 @@ You can use the [timeStampFormat](../api/chat-ui/messageModel/#timestampformat) 
 
 ### Define message status
 
-You can use the [status](../api/chat-ui/messageModel/#status) property to update the status for the message(e.g., sent, received, read). It helps in managing message delivery and read receipts within the chat interface.
+The [status](../api/chat-ui/messageModel#status) property tracks the delivery state of a message (e.g., sent, delivered, read) to manage delivery and read receipts.
 
-#### Setting icon CSS
+### Setting icon CSS
 
-You can use the [iconCss](../api/chat-ui/messageStatusModel/#iconcss) property to update the styling of status icons associated with messages, aiding visual differentiation between statuses.
+The [iconCss](../api/chat-ui/messageStatusModel#iconcss) property customizes the styling of status icons, which helps in visually differentiating between various message statuses.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -445,7 +445,7 @@ You can use the [iconCss](../api/chat-ui/messageStatusModel/#iconcss) property t
 
 #### Setting text
 
-You can use the [text](../api/chat-ui/messageStatusModel/#text) property to provide information about the messages through descriptive text, providing users with the context of the message.
+The [text](../api/chat-ui/messageStatusModel#text) property provides a descriptive text label for the message status, giving users clear context about the message's state.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -476,7 +476,7 @@ You can use the [text](../api/chat-ui/messageStatusModel/#text) property to prov
 
 #### Setting tooltip
 
-You can use the [tooltip](../api/chat-ui/messageStatusModel/#tooltip) property to provide information about the messages by tooltips while hovering the status icon, providing users with additional data upon hovering.
+The [tooltip](../api/chat-ui/messageStatusModel#tooltip) property provides additional details about a message's status when a user hovers over the status icon.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -507,8 +507,8 @@ You can use the [tooltip](../api/chat-ui/messageStatusModel/#tooltip) property t
 
 ### Setting auto scroll
 
-You can use the [autoScrollToBottom](../api/chat-ui/#autoscrolltobottom) property to automatically scroll the chats when a new message is received in a conversation. By default, the value is false, requires manual scrolling or the FAB button to quick access to the bottom of the view.
- 
+You can use the [autoScrollToBottom](../api/chat-ui#autoscrolltobottom) property to automatically scroll the chats when a new message is received in a conversation. By default, the value is false, requires manual scrolling or the FAB button to quick access to the bottom of the view.
+
 - By default, it scrolls to bottom for each message being sent or when the scroll is maintained at the bottom in the chat, in order to prevent the automatic scroll for different user messages you can use the `autoScrollToBottom` property.
 
 {% if page.publishingplatform == "typescript" %}
@@ -540,7 +540,7 @@ You can use the [autoScrollToBottom](../api/chat-ui/#autoscrolltobottom) propert
 
 ### Setting suggestions 
 
-You can use the [suggestions](../api/chat-ui/#suggestions) property, to add the suggestions in both initial and on-demand which help users to quick-reply options above the input field.
+You can use the [suggestions](../api/chat-ui#suggestions) property, to add the suggestions in both initial and on-demand which help users to quick-reply options above the input field.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -614,7 +614,7 @@ You can use the `width` property to set width of the message toolbar in the chat
 
 ### Setting items
 
-You can use the `items` property to specify the toolbar item in the message toolbar of the chat.
+The `items` property allows for specifying a custom set of toolbar items in the message toolbar.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -645,7 +645,7 @@ You can use the `items` property to specify the toolbar item in the message tool
 
 ### Setting itemClick
 
-You can use the `itemClicked` event when the toolbar item is clicked in the message toolbar of the chat.
+The `itemClicked` event is triggered when a user clicks an item in the message toolbar.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -676,9 +676,11 @@ You can use the `itemClicked` event when the toolbar item is clicked in the mess
 
 ## Displaying the markdown content
 
-The Syncfusion ChatUI supports `Markdown` formatting for messages, enabling rich text capabilities such as bold, italic, links, and more.
+The Chat UI control supports `Markdown` formatting for messages, enabling rich text capabilities such as bolding, italics, links, lists, and code blocks.
 
 ### Prerequisites
+
+To enable Markdown rendering, a third-party library that converts Markdown syntax to HTML is required.
 
 - Include the `marked` library:
 
@@ -698,21 +700,21 @@ The Syncfusion ChatUI supports `Markdown` formatting for messages, enabling rich
 
 ### Supported markdown formats
 
-The ChatUI supports the following Markdown formats via the `marked` library:
+The Chat UI supports standard Markdown formats available in the `marked` library:
 
-- **Bold**: ** text ** or __ text __ 
-- *Italic*: * text * or _ text _ 
-- [Links](url): [Link text] (url)
-- Lists: - Item or 1. item
-- Code: 'code' or code 
+-   **Bold**: `**text**` or `__text__`
+-   *Italic*: `*text*` or `_text_`
+-   [Links](url): `[Link text](url)`
+-   Lists: `- Item` or `1. Item`
+-   Code: `` `code` ``
 
-For full list refer to the  [marked documentation](https://marked.js.org/).
+For a full list of supported syntax, refer to the [marked documentation](https://marked.js.org/).
 
 ### Configuring Markdown
 
-By integrating the [marked](https://github.com/markedjs/marked) library, you can parse Markdown text to enhance the chat experience. The [text](../api/chat-ui/messageModel/#text) property of each message can accept HTML generated from Markdown, allowing for formatted text display.
+By integrating a library like [marked](https://github.com/markedjs/marked), you can parse Markdown content before passing it to the [text](../api/chat-ui/messageModel#text) property of a message object. This allows for richly formatted text to be displayed in the chat.
 
-> To prevent XSS attacks, sanitize Markdown output using `DOMPurify`.
+> To prevent cross-site scripting (XSS) attacks, always sanitize Markdown output using a library like `DOMPurify` before rendering it as HTML.
 
 {% if page.publishingplatform == "typescript" %}
 

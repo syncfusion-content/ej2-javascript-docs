@@ -1,17 +1,23 @@
 ---
 layout: post
-title: Add edit and remove events in ##Platform_Name## Scheduler control | Syncfusion
+title: Add edit and remove events in ##Platform_Name## Scheduler | Syncfusion
 description: Learn here all about Add edit and remove events in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Add edit and remove events 
+control: Scheduler
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add edit and remove events in ##Platform_Name## Scheduler control
+# Add, edit, and remove events in ##Platform_Name## Scheduler control
 
-You can manually perform CRUD (Create, Update, Delete) operations on appointments using the [`addEvent`](https://ej2.syncfusion.com/documentation/api/schedule#addevent), [`saveEvent`](https://ej2.syncfusion.com/documentation/api/schedule#saveevent), and [`deleteEvent`](https://ej2.syncfusion.com/documentation/api/schedule#deleteevent) methods as demonstrated below.
+You can manually perform CRUD (Create, Read, Update, Delete) operations on appointments in the Scheduler by using the following methods:
+
+- [`addEvent`](https://ej2.syncfusion.com/documentation/api/schedule#addevent) – to create new event(s)
+- [`saveEvent`](https://ej2.syncfusion.com/documentation/api/schedule#saveevent) – to update or create an event
+- [`deleteEvent`](https://ej2.syncfusion.com/documentation/api/schedule#deleteevent) – to remove event(s)
+
+These methods are especially useful when you want to programmatically manage appointments without using the built-in event editor.
 
 ## Normal event
 

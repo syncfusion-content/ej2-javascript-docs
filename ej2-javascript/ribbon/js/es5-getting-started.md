@@ -49,9 +49,9 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can
 >
 > Control Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
 >
-> Dependency Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\styles\material.css`
+> Dependency Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\styles\tailwind3.css`
 >
-> Control Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\material.css`
+> Control Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\tailwind3.css`
 
 **Example:**
 
@@ -59,15 +59,15 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can
 >
 > Control Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\21.1.35\Web (Essential JS 2)\JavaScript\ej2-navigations\dist\global\ej2-navigations.min.js`
 >
-> Dependency Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\21.1.35\Web (Essential JS 2)\JavaScript\ej2-base\styles\material.css`
+> Dependency Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\21.1.35\Web (Essential JS 2)\JavaScript\ej2-base\styles\tailwind3.css`
 >
-> Control Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\21.1.35\Web (Essential JS 2)\JavaScript\ej2-navigations\styles\material.css`
+> Control Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\21.1.35\Web (Essential JS 2)\JavaScript\ej2-navigations\styles\tailwind3.css`
 
 The below located script and style file contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file.
 
 > Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
 >
-> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\material.css`
+> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\tailwind3.css`
 
 The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script and styles for a set of specific controls. This web tool is useful to combine the required control scripts and styles in a single file.
 
@@ -81,16 +81,16 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
   <head>
     <title>Essential JS 2 - Ribbon</title>
     <!-- Essential JS 2 Ribbon's dependent material theme -->
-    <link href="resources/base/material.css" rel="stylesheet" type="text/css" />
-    <link href="resources/buttons/material.css" rel="stylesheet" type="text/css" />
-    <link href="resources/popups/material.css" rel="stylesheet" type="text/css" />
-    <link href="resources/splitbuttons/material.css" rel="stylesheet" type="text/css" />
-    <link href="resources/inputs/material.css" rel="stylesheet" type="text/css" />
-    <link href="resources/lists/material.css" rel="stylesheet" type="text/css" />
-    <link href="resources/dropdowns/material.css" rel="stylesheet" type="text/css" />
-    <link href="resources/navigations/material.css" rel="stylesheet" type="text/css" />
+    <link href="resources/base/tailwind3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/buttons/tailwind3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/popups/tailwind3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/splitbuttons/tailwind3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/inputs/tailwind3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/lists/tailwind3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/dropdowns/tailwind3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/navigations/tailwind3.css" rel="stylesheet" type="text/css" />
     <!-- Essential JS 2 Ribbon's control material theme -->
-    <link href="resources/ribbon/material.css" rel="stylesheet" type="text/css" />
+    <link href="resources/ribbon/tailwind3.css" rel="stylesheet" type="text/css" />
 
     <!-- Essential JS 2 Ribbon's dependent global script -->
     <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
@@ -243,15 +243,15 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 >
 > Control Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Dependency Styles: `https://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/styles/material.css`
+> Dependency Styles: `https://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/styles/tailwind3.css`
 >
-> Control Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material.css`
+> Control Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/tailwind3.css`
 
 **Example:**
 
 > Script: [`https://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js`](https://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js)
 >
-> Styles: [`https://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css`](https://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css)
+> Styles: [`https://cdn.syncfusion.com/ej2/ej2-navigations/styles/tailwind3.css`](https://cdn.syncfusion.com/ej2/ej2-navigations/styles/tailwind3.css)
 
 **Step 3:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the CDN link references. Now, add the `Ribbon` element and initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Ribbon** control in the `index.html` by using following code.
 

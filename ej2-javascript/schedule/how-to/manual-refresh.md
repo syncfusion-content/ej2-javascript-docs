@@ -3,15 +3,15 @@ layout: post
 title: Manual refresh in ##Platform_Name## Scheduler control | Syncfusion
 description: Learn here all about Manual refresh in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Manual refresh 
+control: Scheduler
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Manual refresh in ##Platform_Name## Scheduler control
+# Manually refresh layout in ##Platform_Name## Scheduler control
 
-In Scheduler, we can able to refresh the layout manually without re-render the DOM element by using the [`refreshLayout`](../../api/schedule/#refreshlayout) public method.  The following example code explains to know how to use the refreshLayout method.
+In Scheduler, we can able to refresh the layout manually without re-render the DOM element by using the [`refreshLayout`](../../api/schedule#refreshlayout) public method.  The following example code explains to know how to use the refreshLayout method.
 
 {% if page.publishingplatform == "typescript" %}
 

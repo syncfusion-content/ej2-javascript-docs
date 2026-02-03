@@ -141,7 +141,7 @@ By default, the [isChecked](../../api/blockeditor/blockModel#ischecked) property
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the [placeholder](../../api/blockeditor/blockModel#placeholder) property. This text appears when the block is empty. The default placeholder for check list is  `Todo`.
+The [placeholder](../../api/blockeditor/blockModel#placeholder) property sets the text that appears when the block is empty. The default placeholder for a checklist is `Todo`.
 
 ```typescript
 // Adding placeholder value 

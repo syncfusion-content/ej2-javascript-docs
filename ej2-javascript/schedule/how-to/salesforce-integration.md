@@ -3,7 +3,7 @@ layout: post
 title: Salesforce integration ##Platform_Name## Scheduler control | Syncfusion
 description: Learn here all about salesforce integration in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Salesforce Integration 
+control: Scheduler
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,27 +11,27 @@ domainurl: ##DomainURL##
 
 # Salesforce integration in ##Platform_Name## Scheduler control
 
-This topic provides you with a detailed step-by-step guide on how to seamlessly integrate the [**JavaScript Scheduler**](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) control into Salesforce. By integrating it into Salesforce, you can enhance your productivity and streamline your scheduling processes.
+This topic provides a detailed step-by-step guide on how to seamlessly integrate the [**JavaScript Scheduler**](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) control into Salesforce. By integrating it into Salesforce, you can enhance productivity and streamline scheduling processes.
 
 ## Prerequisites
 
-Before getting started, make sure you have the following prerequisites need to be installed
+Before getting started, ensure the following prerequisite is installed:
 
 * [Salesforce CLI](https://developer.salesforce.com/tools/salesforcecli)
 
-## Configuring salesforce 
+## Configuring Salesforce
 
-To begin the integration process, you need to configure Salesforce by following these steps.
+To begin the integration process, configure Salesforce by following these steps:
 
 [Sign up](https://www.salesforce.com/form/developer-signup/) with salesforce developer account, if you don’t have salesforce account, sign up for one to access the necessary tools and resources for integration.
 
 [Log in](https://login.salesforce.com/) with salesforce account. 
 
-After successful login, search for Dev Hub in the quick find search box and select Dev Hub. In the Dev Hub setup tab, ensure that the `Enable Dev Hub` option is enabled. If it's not enabled, enable it to proceed further.
+After login, search for **Dev Hub** in the quick find search box and select **Dev Hub**. In the Dev Hub setup tab, ensure that the `Enable Dev Hub` option is enabled.
 
 ![Enable Dev Hub](../images/Salesforce-enable-dev-hub.png)
 
-## Creating a salesforce project
+## Creating a Salesforce project
 
 Now you have have Salesforce configured, let's create a [Salesforce project](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm) for our integration. 
 
@@ -44,22 +44,23 @@ mkdir salesforceApp
 Navigate to the base directory you created in the previous step and generate a Salesforce DX project using the following CLI command.
 
 ```bash
-sfdx project:generate -n scheduler-salesforce-app 
+sf project:generate -n scheduler-salesforce-app 
 ```
 
 ![Salesforce App](../images/Salesforce-app.png)
 
-## Authorization of salesforce project 
+## Authorizing the Salesforce project
 
 Before proceeding further, you need to authorize your Salesforce project by following these steps
 
 Run the following command to authorize your Salesforce project with your Salesforce account in the browser.
 
 ```bash
-sfdx org:login:web -d 
+sf org:login:web -d 
 ```
 
 ![Salesforce Authorization](../images/Salesforce-authorization.png)
+
 
 Open the `sfdx-project.json` file located in `salesforceApp/scheduler-salesforce-app` and update the `sfdcLoginUrl` with the domain URL of your Salesforce account as shown in image (fig 2). You can obtain the domain URL from the `My Domain` setup tab in Salesforce as shown in image (fig 1). 
 
@@ -76,7 +77,7 @@ To facilitate development and testing, the creation of a scratch organization wi
 Run the following command to create a new scratch organization, which will provide a fresh Salesforce environment for development and testing with organization id and username as link below image.
 
 ```bash
-sfdx org:create:scratch -f config/project-scratch-def.json 
+sf org:create:scratch -f config/project-scratch-def.json 
 ```
 
 ![Salesforce create scratch organization](../images/Salesforce-create-scratch.png)
@@ -88,7 +89,7 @@ To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> scripts and st
 Use the following command to open the scratch project in the browser
 
 ```bash
-sfdx org:open -o <stratch org user name> 
+sf org:open -o <stratch org user name> 
 ```
 
 Replace <scratch org username> with the username of your scratch organization, which was generated during the scratch organization creation process.  
@@ -120,7 +121,7 @@ Enable the following options to bypass the CSP issues and Click Save button to a
 
 ![CSP trusted sites](../images/CSP-trusted-sites.png)
 
-## Creating data model for appointment 
+## Creating a data model for appointment 
 
 To begin, navigate to the Object Manager in Salesforce and select Create followed by `Custom Object`.
 
@@ -142,36 +143,36 @@ let's configure the fields and relationships for the `SchedulerEvent` object. To
 
 2. Provide a clear label for the `StartTime` field and click **Next** button. Once you've reviewed the settings, click **Save** & **New** button to proceed.
 
-![Salesforce New custom field](../images/Salesforce-custom-field.png)
+![Salesforce New custom field](../images/Salesforce-setting-starttime-field.png)
 
 3. Repeat the same steps as above to create the `EndTime` field, which will store the ending time of each appointment. Creating the `EndTime` Field. Once you've reviewed the settings, click **Save** & **New** button to proceed.
 
-![Salesforce setting allday field](../images/Salesforce-setting-allday-field.png)
+![Salesforce setting allday field](../images/Salesforce-setting-endtime-field.png)
 
 4. Choose Checkbox as the data type for the `IsAllDay` field. This field will be marked when an appointment is scheduled for the entire day. 
 
-![Salesforce New custom field](../images/Salesforce-custom-field.png)
+![Salesforce New custom field](../images/Salesforce-setting-isallday-field.png)
 
 5. Assign an appropriate label, such as `IsAllDay`, to the checkbox field. Click **Next** button to review the settings and then click **Save** & **New** button to proceed. 
 
-![Salesforce New custom field](../images/Salesforce-custom-field.png)
+![Salesforce New custom field](../images/Salesforce-setting-isallday-field.png)
 
 6. Choose Text as the data type for the `Location/Recurrence Rule/Recurrence Id /Recurrence Exception` field to store the location field and recurrence rule for each appointment as shown in the image respectively. Click **Next** to review the settings and then click **Save** button to proceed. 
 
-![Salesforce New custom field](../images/Salesforce-custom-field.png)
+![Salesforce New custom field](../images/Salesforce-setting-location-field.png)
 
 7. Based on your specific requirements, you can add more fields to the `SchedulerEvent` object by following the same steps outlined above.
 
 ![Salesforce New custom field](../images/Salesforce-custom-field.png)
 
-## Creating a lightning web component 
+## Creating a Lightning web component 
 
 To integrate the **JavaScript Scheduler** into your Salesforce project, we will create a [Lightning web component](https://developer.salesforce.com/docs/platform/lwc/guide/get-started-introduction.html).
 
 1. In your Salesforce project, run the following command to generate a Lightning web component named scheduler.
 
 ```bash
-sfdx lightning:generate:component --type lwc -n scheduler -d force-app/main/default/lwc 
+sf lightning:generate:component --type lwc -n scheduler -d force-app/main/default/lwc 
 ```
 
 ![Salesforce Creating Lightning web component](../images/Salesforce-creating-lightning-web.png)
@@ -328,7 +329,7 @@ Apex class that facilitates smooth interactions between your Lightning component
 Use the following command to create Apex class with the name `SchedulerData`. 
 
 ```bash
-sfdx apex:generate:class -n SchedulerData -d force-app/main/default/classes	 
+sf apex:generate:class -n SchedulerData -d force-app/main/default/classes	 
 ```
 
 ![Salesforce Creating Apex Class](../images/Salesforce-creating-apex.png)
@@ -356,7 +357,7 @@ public with sharing class SchedulerData {
 To retrieve the changes made in the scratch organization and sync them with your local Salesforce project, use the following command. 
 
 ```bash
-sfdx project:retrieve:start -o <scratch org use name> 
+sf project:retrieve:start -o <scratch org use name> 
 ```
 
 Replace <scratch org username> with the username of your scratch organization.
@@ -368,7 +369,7 @@ Replace <scratch org username> with the username of your scratch organization.
 To push the changes made in your local Salesforce project to the scratch organization, use the following command. 
 
 ```bash
-sfdx project:deploy:start -o <scratch org use name> 
+sf project:deploy:start -o <scratch org use name> 
 ```
 
 Replace <scratch org username> with the username of your scratch organization.

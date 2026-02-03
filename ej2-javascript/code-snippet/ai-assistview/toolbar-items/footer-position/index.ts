@@ -21,7 +21,7 @@ let aiAssistView: AIAssistView = new AIAssistView({
         }, 1000);
     },
     footerToolbarSettings: {
-        toolbarPosition: 'Bottom',
+        toolbarPosition: 'Bottom'
     }
 });
 

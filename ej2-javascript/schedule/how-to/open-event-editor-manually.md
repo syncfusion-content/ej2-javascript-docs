@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Open event editor manually in ##Platform_Name## Scheduler control | Syncfusion
+title: Manual event editor in ##Platform_Name## Scheduler | Syncfusion
 description: Learn here all about Open event editor manually in Syncfusion ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Open event editor manually 
+control: Scheduler
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,11 +11,14 @@ domainurl: ##DomainURL##
 
 # Open event editor manually in ##Platform_Name## Scheduler control
 
-The Scheduler control provides flexibility in how you interact with event creation and editing. While the default behavior opens the editor when double-clicking on cells or appointments, you can also trigger the editor programmatically. This guide demonstrates different approaches to manually open the event editor window in your Scheduler application.
+The Scheduler control provides flexibility for event creation and editing. By default, the editor opens when double-clicking on cells or appointments. However, you can also trigger the editor programmatically. This guide demonstrates different approaches to manually open the event editor window in your Scheduler application.
 
-## Open Editor Window externally
+## Open editor window externally
 
-The Scheduler allows the user to manually open the event editor on specific time or on certain events using [`openEditor`](https://ej2.syncfusion.com/documentation/api/schedule#openeditor) method. To open the editor on specific range of time, user need to pass the cell details as first argument and **Add** as second argument whereas to open it on event pass that event detail and **Save** as arguments. In the following code example, on clicking the respective button will open the respective editor window manually.
+The Scheduler allows users to manually open the event editor for a specific time range or event using the [`openEditor`](https://ej2.syncfusion.com/documentation/api/schedule#openeditor) method.  
+
+- To open the editor for a specific time range, pass the cell details as the first argument and **Add** as the second argument.  
+- To open the editor for an existing event, pass the event details as the first argument and **Save** as the second argument.  
 
 
 {% if page.publishingplatform == "typescript" %}
@@ -47,7 +50,9 @@ The Scheduler allows the user to manually open the event editor on specific time
 
 ## Open editor window on single click
 
-By default, Scheduler Editor window will open when double clicking the cells or appointments. You can also open the editor window with single click by using [`openEditor`](https://ej2.syncfusion.com/documentation/api/schedule#openeditor) method in [`eventClick`](https://ej2.syncfusion.com/documentation/api/schedule#eventclick) and [`cellClick`](https://ej2.syncfusion.com/documentation/api/schedule#cellclick) events of scheduler and setting false to [`showQuickInfo`](https://ej2.syncfusion.com/documentation/api/schedule#showquickinfo). The following example shows how to open editor window on single click of cells and appointments.
+By default, the Scheduler editor window opens when double-clicking cells or appointments. You can also configure it to open with a single click by using the [`openEditor`](https://ej2.syncfusion.com/documentation/api/schedule#openeditor) method within the [`eventClick`](https://ej2.syncfusion.com/documentation/api/schedule#eventclick) and [`cellClick`](https://ej2.syncfusion.com/documentation/api/schedule#cellclick) events of the Scheduler. Additionally, set [`showQuickInfo`](https://ej2.syncfusion.com/documentation/api/schedule#showquickinfo) to `false` to disable the default quick info popup.  
+
+The following example demonstrates how to open the editor window with a single click on cells and appointments.
 
 {% if page.publishingplatform == "typescript" %}
 

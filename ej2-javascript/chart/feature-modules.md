@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Module in ##Platform_Name## Chart control
 
-The following feature modules should be injected to extend chart's functionality.
+The following available modules should be injected to extend the Chart's functionality.
 
 The available chart modules are:
 
@@ -80,4 +80,4 @@ The available chart modules are:
 | [`Export`](https://ej2.syncfusion.com/documentation/api/chart/export)| Inject this module to use the export feature.|
 | [`MultiLevelLabel`](https://helpej2.syncfusion.com/documentation/api/chart/multiLevelLabels)| Inject this module to use the multi level label feature.|
 
-These modules should be injected into the chart using the `Chart.Inject` method.
+These modules should be injected into the chart using the `Chart.Inject` method or into a standalone component that requires the feature.

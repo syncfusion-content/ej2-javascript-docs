@@ -15,7 +15,7 @@ domainurl: ##DomainURL##
 
 To render a [histogram](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/histogram-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  
-* **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `Histogram` in your chart configuration. This indicates that the data should be represented as a histogram chart, providing a visual display of large amounts of data that are difficult to understand in a tabular or spreadsheet format.
+* **Set the series type**: Define the series [`type`](../../api/chart/series#type) as `Histogram` in your chart configuration. This indicates that the data should be represented as a histogram chart, providing a visual display of large amounts of data that are difficult to understand in a tabular or spreadsheet format.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -53,7 +53,7 @@ To render a [histogram](https://www.syncfusion.com/javascript-ui-controls/js-cha
 
 ### Series render
 
-The [`seriesRender`](../../api/chart#seriesrender) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](../../api/chart#seriesrender) event enables modification of series properties (for example, data, fill, or name) immediately before rendering. Use this event to adjust series appearance or to dynamically swap data sources.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -87,7 +87,7 @@ The [`seriesRender`](../../api/chart#seriesrender) event allows you to customize
 
 ### Point render
 
-The [`pointRender`](../../api/chart#pointrender) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](../../api/chart#pointrender) event provides a hook to customize each data point (for example, marker shape, border, or fill) before it is drawn. Use this to apply per-point styling rules or conditional formatting.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -121,5 +121,5 @@ The [`pointRender`](../../api/chart#pointrender) event allows you to customize e
 
 ## See also
 
-* [Data label](../data-labels/)
-* [Tooltip](../tool-tip/)
+* [Data label](../data-labels)
+* [Tooltip](../tool-tip)

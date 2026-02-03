@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Data labels in ##Platform_Name## Chart control
 
-Data label can be added to a chart series by enabling the [`visible`](../api/chart/dataLabelSettingsModel/#visible-boolean) option in the dataLabel. By default, the labels will arrange smartly without overlapping.
+Data labels display the values of data points directly on the chart, reducing the need to reference axes for exact values. Enable data labels by setting the [`visible`](../api/chart/dataLabelSettingsModel#visible-boolean) option to `true` in the `dataLabel` configuration. Labels automatically adjust to avoid overlapping and maintain readability.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -40,11 +40,11 @@ Data label can be added to a chart series by enabling the [`visible`](../api/ch
 {% previewsample "page.domainurl/code-snippet/chart/data-markers-cs1" %}
 {% endif %}
 
->Note: To use data label feature, we need to inject `DataLabel` using `Chart.Inject(DataLabel)` method.
+> Note: To use the data label feature, inject `DataLabel` using `Chart.Inject(DataLabel)` method.
 
 ## Position
 
-Using [`position`](../api/chart/dataLabelSettingsModel/#position-string) property, you can place the label either on `Top`, `Middle`,`Bottom` or `Outer` (outer is applicable for column and bar type series).
+Use the [`position`](../api/chart/dataLabelSettingsModel#position-string) property to place data labels at `Top`, `Middle`, `Bottom`, or `Outer` (applicable to column and bar series). Appropriate label positioning enhances clarity and preserves chart readability.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -73,11 +73,11 @@ Using [`position`](../api/chart/dataLabelSettingsModel/#position-string) propert
 {% previewsample "page.domainurl/code-snippet/chart/data-markers-cs2" %}
 {% endif %}
 
->Note: The position `Outer` is applicable for column and bar type series.
+> Note: The `Outer` position applies only to column and bar series types.
 
 ## Data Label Template
 
-Label content can be formatted by using the template option. Inside the template, you can add the placeholder text `${point.x}` and `${point.y}` to display corresponding data points x & y value. Using [`template`](../api/chart/dataLabelSettingsModel/#template-string) property, you can set data label template in chart.
+Customize label content using templates. Use placeholders such as `${point.x}` and `${point.y}` to display data point values. The [`template`](../api/chart/dataLabelSettingsModel#template-string) property enables fully customizable and visually rich labels.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -108,7 +108,7 @@ Label content can be formatted by using the template option. Inside the template
 
 ## Text Mapping
 
-Text from the data source can be mapped using `name` property.
+Display custom text using the `name` property, which maps label text from a specific field in the data source. This feature is useful for descriptive or category‑based labels.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -139,7 +139,11 @@ Text from the data source can be mapped using `name` property.
 
 ## Format
 
-Data label for the chart can be formatted using [`format`](../api/chart/dataLabelSettings/#format) property. You can use the global formatting options, such as 'n', 'p', and 'c'.
+Apply number or date formatting using the [`format`](../api/chart/dataLabelSettings#format) property. Global formatting symbols include:
+
+- `n` – number format  
+- `p` – percentage format  
+- `c` – currency format 
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -179,55 +183,55 @@ Data label for the chart can be formatted using [`format`](../api/chart/dataLabe
     <td>1000</td>
     <td>n1</td>
     <td>1000.0</td>
-    <td>The number is rounded to 1 decimal place.</td>
+    <td>Rounded to 1 decimal place.</td>
   </tr>
   <tr>
     <td>1000</td>
     <td>n2</td>
     <td>1000.00</td>
-    <td>The number is rounded to 2 decimal places.</td>
+    <td>Rounded to 2 decimal places.</td>
   </tr>
    <tr>
     <td>1000</td>
     <td>n3</td>
     <td>1000.000</td>
-    <td>The number is rounded to 3 decimal place.</td>
+    <td>Rounded to 3 decimal places.</td>
   </tr>
   <tr>
     <td>0.01</td>
     <td>p1</td>
     <td>1.0%</td>
-    <td>The number is converted to percentage with 1 decimal place.</td>
+    <td>Converted to percentage with 1 decimal place.</td>
   </tr>
   <tr>
     <td>0.01</td>
     <td>p2</td>
     <td>1.00%</td>
-    <td>The number is converted to percentage with 2 decimal place.</td>
+    <td>Converted to percentage with 2 decimal places.</td>
   </tr>
    <tr>
     <td>0.01</td>
     <td>p3</td>
     <td>1.000%</td>
-    <td>The number is converted to percentage with 3 decimal place.</td>
+    <td>Converted to percentage with 3 decimal places.</td>
   </tr>
   <tr>
     <td>1000</td>
     <td>c1</td>
     <td>$1000.0</td>
-    <td>The currency symbol is appended to number and number is rounded to 1 decimal place.</td>
+    <td>Currency with 1 decimal place.</td>
   </tr>
    <tr>
     <td>1000</td>
     <td>c2</td>
     <td>$1000.00</td>
-    <td>The currency symbol is appended to number and number is rounded to 2 decimal place.</td>
+    <td>Currency with 2 decimal places.</td>
   </tr>
 </table>
 
 ## Margin
 
-`margin` for data label can be applied to using `left`, `right`, `bottom` and `top` properties.
+Adjust spacing around labels using the `margin` property, which includes `left`, `right`, `bottom`, and `top` values. Margins help prevent labels from overlapping chart elements.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -258,7 +262,7 @@ Data label for the chart can be formatted using [`format`](../api/chart/dataLabe
 
 ## Customization
 
-`stroke` and `border` of data label can be customized using `fill` and `border` properties. Rounded corners can be customized using `rx` and `ry` properties.
+Enhance label appearance using properties such as `fill` (background), `border`, and corner radius (`rx`, `ry`). Refine text appearance using the `font` settings, which support `color`, `fontFamily`, `fontWeight`, and `size`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -287,11 +291,13 @@ Data label for the chart can be formatted using [`format`](../api/chart/dataLabe
 {% previewsample "page.domainurl/code-snippet/chart/data-markers-cs7" %}
 {% endif %}
 
->Note: `rx` and `ry` properties requires `border` values not to be null.
+> Note: The `rx` and `ry` properties require non‑null `border` values.
 
 ## Customizing Specific Point
 
-You can also customize the specific marker and label using [`pointRender`](../api/chart/#pointrender-emittypeipointrendereventargs) and [`textRender`](../api/chart/#textrender-emittypeitextrendereventargs)  event. `pointRender` event allows you to change the shape, color and border for a point, whereas the `textRender` event allows you to change the text for the point.
+Customize individual markers or labels using the [`pointRender`](../api/chart#pointrender-emittypeipointrendereventargs) and [`textRender`](../api/chart#textrender-emittypeitextrendereventargs) events.  
+- `pointRender` modifies shape, color, or border of a point.  
+- `textRender` customizes the label text for specific points.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -322,7 +328,9 @@ You can also customize the specific marker and label using [`pointRender`](../
 
 ## Show percentage based on each series points
 
-You can calculate the percentage value based on the sum for each series using the `seriesRender` and `textRender` events in the chart. In `seriesRender` calculate the sum of each series y values and In `textRender` calculate percentage value based on the sum value and modify the text.
+Calculate and display percentage values based on each series’ total using the `seriesRender` and `textRender` events.  
+- In `seriesRender`, compute the total of `y` values.  
+- In `textRender`, calculate the percentage for each point and update the label text.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -353,11 +361,11 @@ You can calculate the percentage value based on the sum for each series using th
 
 ## Last value label
 
-The `lastValueLabel` in a chart allows you to easily display the value of the last data point in a series. This feature provides an intuitive way to highlight the most recent or last data value in a series on your chart.
+The `lastValueLabel` feature highlights the final data point in a series, making the latest trend or value easy to identify.
 
 ### Enable last value label
 
-To show the last value label, make sure the `enable` property inside the `lastValueLabel` settings is set to `true` within the series configuration. 
+Enable the label by setting the `enable` property inside the `lastValueLabel` configuration. 
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -386,11 +394,11 @@ To show the last value label, make sure the `enable` property inside the `lastVa
 {% previewsample "page.domainurl/code-snippet/chart/last-value-label" %}
 {% endif %}
 
->Note: To use the last value label feature, we need to inject `LastValueLabel` module using Chart.Inject(LastValueLabel).
+> Note: To use the last value label feature, inject the `LastValueLabel` module using `Chart.Inject(LastValueLabel)` method.
 
 ### Customization
 
-The appearance of the last value label can be customized using style properties such as `font`, `background`, `border`, `dashArray`, `lineWidth`, `lineColor`, `rx`, and `ry` in the lastValueLabel property of the chart series. These settings allow you to tailor the label’s look to align with your desired visual presentation.
+Customize the appearance using properties such as `font`, `background`, `border`, `dashArray`, `lineWidth`, `lineColor`, `rx`, and `ry`.
 
 {% if page.publishingplatform == "typescript" %}
 

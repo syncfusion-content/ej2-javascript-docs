@@ -11,9 +11,11 @@ domainurl: ##DomainURL##
 
 # Appearance in ##Platform_Name## AI AssistView control
 
+The Syncfusion AI AssistView allows for customization of its dimensions and overall look and feel. This can be achieved by setting the control's width and height or by applying custom CSS styles.
+
 ## Setting width
 
-You can use the [width](../api/ai-assistview#width) property to set the width of the AI AssistView. The default value is `100%`.
+The [width](../api/ai-assistview#width) property allows you to define the width of the AI AssistView container. You can set this value as a string, using either pixels (e.g., `"500px"`) or a percentage (e.g., `"50%"`). By default, the width is set to `100%`, allowing it to fill its parent container.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,7 +46,7 @@ You can use the [width](../api/ai-assistview#width) property to set the width of
 
 ## Setting height
 
-You can use the [height](../api/ai-assistview#height) property to set the height of the AI AssistView. The default value is `100%`.
+The [height](../api/ai-assistview#height) property allows you to define the height of the AI AssistView container. This value can be a string, specified in pixels (e.g., `"600px"`) or as a percentage (e.g., `"100%"`). The default value is `100%`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -75,7 +77,7 @@ You can use the [height](../api/ai-assistview#height) property to set the height
 
 ## cssClass
 
-You can customize the appearance of the AI AssistView control by using the [cssClass](../api/ai-assistview#cssclass) property.
+For more advanced style customizations, you can use the [cssClass](../api/ai-assistview#cssclass) property to apply one or more custom CSS classes to the AI AssistView control's root element.
 
 {% if page.publishingplatform == "typescript" %}
 

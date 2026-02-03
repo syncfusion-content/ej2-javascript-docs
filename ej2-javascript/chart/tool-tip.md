@@ -13,11 +13,11 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD036 -->
 
-Chart will display details about the points through tooltip, when the mouse is moved over the point.
+The chart displays detailed information about a data point through a tooltip when the mouse pointer moves over the point.
 
 ## Default tooltip
 
-By default, tooltip is not visible. You can enable the tooltip by setting [`enable`](../api/chart/tooltipSettings/#enable) property to **true** and by injecting `Tooltip` module using `Chart.Inject(Tooltip)`.
+By default, the tooltip is not visible. You can enable the tooltip by setting the [`enable`](../api/chart/tooltipSettings#enable) property to **true** and by injecting `Tooltip` module using `Chart.Inject(Tooltip)`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -50,7 +50,7 @@ By default, tooltip is not visible. You can enable the tooltip by setting [`enab
 
 ## Fixed tooltip
 
-By default, tooltip track the mouse movement, but you can set a fixed position for the tooltip by using the [`location`](../api/chart/tooltipSettings/#location) property.
+By default, the tooltip tracks the mouse movement. You can render the tooltip at a fixed position by using the [`location`](../api/chart/tooltipSettings#location) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -83,7 +83,7 @@ By default, tooltip track the mouse movement, but you can set a fixed position f
 
 <!-- markdownlint-disable MD013 -->
 
-By default, tooltip shows information of x and y value in points. In addition to that, you can show more information in tooltip. For example the format `${series.name} ${point.x}` shows series name and point x value.
+By default, the tooltip displays the x- and y-values of a data point. Additional information can be shown by specifying a custom format. For example, the format `${series.name} ${point.x}` displays the series name along with the x-value of the data point.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -114,7 +114,7 @@ By default, tooltip shows information of x and y value in points. In addition to
 
 ## Tooltip template
 
-Any HTML elements can be displayed in the tooltip by using the [`template`](../api/chart/tooltipSettings/#template) property of the tooltip. You can use the ${x} and ${y} as place holders in the HTML element to display the x and y values of the corresponding data point.
+Custom HTML content can be rendered in the tooltip by using the [`template`](../api/chart/tooltipSettings#template) property. The `${x}` and `${y}` placeholders can be used within the template to display the x- and y-values of the corresponding data point.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -145,7 +145,7 @@ Any HTML elements can be displayed in the tooltip by using the [`template`](../a
 
 ## Enable highlight
 
-By setting the [`enableHighlight`](../api/chart/tooltipSettingsModel/#enablehighlight) property to **true**, you can highlight all points in the hovered series while dimming points in other series, enhancing focus and clarity.
+By setting the [`enableHighlight`](../api/chart/tooltipSettingsModel#enablehighlight) property to **true**, all points in the hovered series are highlighted while the remaining points are dimmed. This behavior improves focus and readability during data analysis.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -176,7 +176,12 @@ By setting the [`enableHighlight`](../api/chart/tooltipSettingsModel/#enablehigh
 
 ## Customize the appearance of tooltip
 
-The [`fill`](../api/chart/tooltipSettings/#fill) and [`border`](../api/chart/tooltipSettings/#border) properties are used to customize the background color and border of the tooltip respectively. The [`textStyle`](../api/chart/tooltipSettings/#textstyle) property in the tooltip is used to customize the font of the tooltip text. The [`highlightColor`](../api/chart#highlightcolor) property is used to customize the point color while hovering for tooltip.
+The appearance of the tooltip can be customized by using the following properties:
+- [`fill`](../api/chart/tooltipSettings#fill) to set the background color
+- [`border`](../api/chart/tooltipSettings#border) to configure the tooltip border
+- [`textStyle`](../api/chart/tooltipSettings#textstyle) to customize the tooltip text style
+
+The [`highlightColor`](../api/chart#highlightcolor) property is used to change the color of a data point when it is highlighted during tooltip interaction.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -207,7 +212,7 @@ The [`fill`](../api/chart/tooltipSettings/#fill) and [`border`](../api/chart/too
 
 ## Closest tooltip
 
-The [`showNearestTooltip`](../api/chart/tooltipSettings/#shownearesttooltip) property in the chart tooltip displays tooltips based on the data points closest to the cursor.
+The [`showNearestTooltip`](../api/chart/tooltipSettings#shownearesttooltip) property displays the tooltip for the data point nearest to the pointer, even when the pointer is not directly positioned over the point.
 
 {% if page.publishingplatform == "typescript" %}
 

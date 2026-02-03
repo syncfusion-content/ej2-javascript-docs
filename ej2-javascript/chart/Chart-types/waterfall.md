@@ -14,13 +14,13 @@ domainurl: ##DomainURL##
 
 To render a `waterfall` series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
  
-* **Set the series type**: Define the series [`type`](../../api/chart/series/#type) as `Waterfall` in your chart configuration. This indicates that the data should be represented as a waterfall chart, which helps illustrate the cumulative effect of sequentially introduced positive and negative values.
+* **Set the series type**: Define the series [`type`](../../api/chart/series#type) as `Waterfall` in your chart configuration. This indicates that the data should be represented as a waterfall chart, which helps illustrate the cumulative effect of sequentially introduced positive and negative values.
 
 {% if page.publishingplatform == "typescript" %}
 
 * **Inject the WaterfallSeries module**: Use the `Chart.Inject(WaterfallSeries)` method to inject the `WaterfallSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering waterfall series are available in your chart.
 
-* **Configure intermediate and cumulative sums**: Use the [`intermediateSumIndexes`](../../api/chart/series/#intermediatesumindexes) property property to represent intermediate sum values, and the [`sumIndexes`](../../api/chart/series/#sumindexes) property to represent cumulative sum values.
+* **Configure intermediate and cumulative sums**: Use the [`intermediateSumIndexes`](../../api/chart/series#intermediatesumindexes) property property to represent intermediate sum values, and the [`sumIndexes`](../../api/chart/series#sumindexes) property to represent cumulative sum values.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -38,7 +38,7 @@ To render a `waterfall` series in your chart, you need to follow a few steps to 
 
 {% elsif page.publishingplatform == "javascript" %}
 
-* **Configure intermediate and cumulative sums**: Use the [`intermediateSumIndexes`](../../api/chart/series/#intermediatesumindexes) property property to represent intermediate sum values, and the [`sumIndexes`](../../api/chart/series/#sumindexes) property to represent cumulative sum values.
+* **Configure intermediate and cumulative sums**: Use the [`intermediateSumIndexes`](../../api/chart/series#intermediatesumindexes) property property to represent intermediate sum values, and the [`sumIndexes`](../../api/chart/series#sumindexes) property to represent cumulative sum values.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -54,7 +54,7 @@ To render a `waterfall` series in your chart, you need to follow a few steps to 
 
 ## Binding data with series
 
-You can bind data to the chart using the [`dataSource`](../../api/chart/series/#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](../../api/chart/series/#xname) and [`yName`](../../api/chart/series/#yname) properties.
+You can bind data to the chart using the [`dataSource`](../../api/chart/series#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](../../api/chart/series#xname) and [`yName`](../../api/chart/series#yname) properties.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -88,7 +88,7 @@ You can bind data to the chart using the [`dataSource`](../../api/chart/series/#
 
 ## Series customization
 
-In waterfall charts, you can customize the appearance of different types of data changes using specific properties. The [`negativeFillColor`](../../api/chart/series/#negativefillcolor) property is used to specify the color for negative changes, which helps visually distinguish decreases in the data. Similarly, the [`summaryFillColor`](../../api/chart/series/#summaryfillcolor) property is used to define the color for summary changes. By default, the [`negativeFillColor`](../../api/chart/series/#negativefillcolor) is set to **green**, indicating decreases, while the [`summaryFillColor`](../../api/chart/series/#summaryfillcolor) is set to **black**, marking summary or total values.
+In waterfall charts, you can customize the appearance of different types of data changes using specific properties. The [`negativeFillColor`](../../api/chart/series#negativefillcolor) property is used to specify the color for negative changes, which helps visually distinguish decreases in the data. Similarly, the [`summaryFillColor`](../../api/chart/series#summaryfillcolor) property is used to define the color for summary changes. By default, the [`negativeFillColor`](../../api/chart/series#negativefillcolor) is set to **green**, indicating decreases, while the [`summaryFillColor`](../../api/chart/series#summaryfillcolor) is set to **black**, marking summary or total values.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -126,7 +126,7 @@ Data points with `null` or `undefined` values are considered empty. Empty data p
 
 **Mode**
 
-Use the [`mode`](../../api/chart/emptyPointSettings/#mode) property to define how empty or missing data points are handled in the series. The default mode for empty points is `Gap`.
+Use the [`mode`](../../api/chart/emptyPointSettings#mode) property to control handling of empty points. Available modes: `Gap`, `Drop`, `Zero`, `Average`. The default mode is `Gap`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -160,7 +160,7 @@ Use the [`mode`](../../api/chart/emptyPointSettings/#mode) property to define ho
 
 **Fill**
 
-Use the [`fill`](../../api/chart/emptyPointSettings/#fill) property to customize the fill color of empty points in the series.
+Use the [`fill`](../../api/chart/emptyPointSettings#fill) property to set the fill color for empty points.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -194,7 +194,7 @@ Use the [`fill`](../../api/chart/emptyPointSettings/#fill) property to customize
 
 **Border**
 
-Use the [`border`](../../api/chart/emptyPointSettings/#border) property to customize the width and color of the border for empty points.
+Use the [`border`](../../api/chart/emptyPointSettings#border) property to customize the border width and color for empty points.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -228,7 +228,7 @@ Use the [`border`](../../api/chart/emptyPointSettings/#border) property to custo
 
 ## Corner radius
 
-The [`cornerRadius`](../../api/chart/series/#cornerradius) property in the chart series is used to customize the corner radius for bar series. This allows you to create bars with rounded corners, giving your chart a more polished appearance. You can customize each corner of the bars using the topLeft, topRight, bottomLeft, and bottomRight properties.
+The [`cornerRadius`](../../api/chart/series#cornerradius) property in the chart series is used to customize the corner radius for bar series. This allows you to create bars with rounded corners, giving your chart a more polished appearance. You can customize each corner of the bars using the topLeft, topRight, bottomLeft, and bottomRight properties.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -262,7 +262,7 @@ The [`cornerRadius`](../../api/chart/series/#cornerradius) property in the chart
 
 ### Point corner radius
 
-We can customize the corner radius for individual points in the chart series using the [`pointRender`](../../api/chart/iPointRenderEventArgs/) event by setting the [`cornerRadius`](../../api/chart/iPointRenderEventArgs/#cornerradius) property in its event argument.
+You can customize the corner radius for individual points in the chart series using the [`pointRender`](../../api/chart/iPointRenderEventArgs) event by setting the [`cornerRadius`](../../api/chart/iPointRenderEventArgs#cornerradius) property in its event argument.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -298,7 +298,7 @@ We can customize the corner radius for individual points in the chart series usi
 
 ### Series render
 
-The [`seriesRender`](../../api/chart#seriesrender) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](../../api/chart#seriesrender) event enables modification of series properties (for example, data, fill, or name) immediately before rendering. Use this event to adjust series appearance or to dynamically swap data sources.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -332,7 +332,7 @@ The [`seriesRender`](../../api/chart#seriesrender) event allows you to customize
 
 ### Point render
 
-The [`pointRender`](../../api/chart#pointrender) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](../../api/chart#pointrender) event provides a hook to customize each data point (for example, marker shape, border, or fill) before it is drawn. Use this to apply per-point styling rules or conditional formatting.
 
 {% if page.publishingplatform == "typescript" %}
 

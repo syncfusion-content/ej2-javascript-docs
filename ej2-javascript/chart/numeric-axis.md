@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 # Numeric axis in ##Platform_Name## Chart control
 
-You can use [numeric axis](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-axis) to represent numeric values of data in chart. By default, the `valueType` of an axis is `Double`.
+The [numeric axis](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-axis) is used to represent numeric values in a chart. By default, the `valueType` of an axis is set to `Double`, which is suitable for displaying continuous numerical data.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -43,7 +43,7 @@ You can use [numeric axis](https://www.syncfusion.com/javascript-ui-controls/js-
 
 ## Range
 
-Range of an axis, will be calculated automatically based on the provided data, you can also customize the range of the axis using [`minimum`](../api/chart/axisModel/#minimum-object), [`maximum`](../api/chart/axisModel/#maximum-object) and [`interval`](../api/chart/axisModel/#interval-number) property of the axis.
+The range of the axis is calculated automatically based on the provided data. You can also customize the visible range by using the [`minimum`](../api/chart/axisModel#minimum-object), [`maximum`](../api/chart/axisModel#maximum-object), and [`interval`](../api/chart/axisModel#interval-number) properties of the axis.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -74,7 +74,7 @@ Range of an axis, will be calculated automatically based on the provided data, y
 
 ## Range Padding
 
-Padding can be applied to the minimum and maximum extremes of an axis range by using the [`rangePadding`](../api/chart/axisModel/#rangepadding-string) property. Numeric axis supports the following types of padding.
+Padding can be applied to the minimum and maximum values of the axis range by using the [`rangePadding`](../api/chart/axisModel#rangepadding-string) property. The numeric axis supports the following padding options:
 
 * None
 * Round
@@ -84,7 +84,7 @@ Padding can be applied to the minimum and maximum extremes of an axis range by u
 
 **Numeric - None**
 
-When the [`rangePadding`](../api/chart/axisModel/#rangepadding-string) is set to `None`, minimum and maximum of the axis is based on the data.
+When the [`rangePadding`](../api/chart/axisModel#rangepadding-string) property is set to `None`, the minimum and maximum values of the axis are derived directly from the data.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -115,7 +115,7 @@ When the [`rangePadding`](../api/chart/axisModel/#rangepadding-string) is set to
 
 **Numeric - Round**
 
-When the [`rangePadding`](../api/chart/axisModel/#rangepadding-string) is set to `Round`, minimum and maximum will be rounded to the nearest possible value, which is divisible by interval. For example, when the minimum is 3.5 and the interval is 1, then the minimum will be rounded to 3.
+When the [`rangePadding`](../api/chart/axisModel#rangepadding-string) property is set to `Round`, the minimum and maximum values are rounded to the nearest values divisible by the interval. For example, if the minimum value is 3.5 and the interval is 1, the minimum value is rounded to 3.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -146,7 +146,7 @@ When the [`rangePadding`](../api/chart/axisModel/#rangepadding-string) is set to
 
 **Numeric - Additional**
 
-When the [`rangePadding`](../api/chart/axisModel/#rangepadding-string) is set to `Additional`, interval of an axis will be added to the minimum and maximum of the axis.
+When the [`rangePadding`](../api/chart/axisModel#rangepadding-string) property is set to `Additional`, one interval is added to both the minimum and maximum values of the axis range.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -177,7 +177,7 @@ When the [`rangePadding`](../api/chart/axisModel/#rangepadding-string) is set to
 
 **Numeric - Normal**
 
-When the [`rangePadding`](../api/chart/axisModel/#rangepadding-string) is set to `Normal`, padding is applied to the axis based on default range calculation.
+When the [`rangePadding`](../api/chart/axisModel#rangepadding-string) property is set to `Normal`, padding is applied to the axis based on the default range calculation.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -208,7 +208,7 @@ When the [`rangePadding`](../api/chart/axisModel/#rangepadding-string) is set to
 
 **Numeric - Auto**
 
-When the [`rangePadding`](../api/chart/axisModel/#rangepadding-string) is set to `Auto`, horizontal numeric axis takes None as padding calculation, while the vertical numeric axis takes Normal as padding calculation.
+When the [`rangePadding`](../api/chart/axisModel#rangepadding-string) property is set to `Auto`, the horizontal numeric axis uses `None` as padding, while the vertical numeric axis uses `Normal` padding.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -241,7 +241,7 @@ When the [`rangePadding`](../api/chart/axisModel/#rangepadding-string) is set to
 
 **Numeric Label Format**
 
-Numeric labels can be formatted by using the [`labelFormat`](../api/chart/axisModel/#labelformat-string) property. Numeric labels supports all globalize format.
+Numeric axis labels can be formatted by using the [`labelFormat`](../api/chart/axisModel#labelformat-string) property. This property supports all Globalize numeric formats.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -270,69 +270,69 @@ Numeric labels can be formatted by using the [`labelFormat`](../api/chart/axisM
 {% previewsample "page.domainurl/code-snippet/chart/axis-cs89" %}
 {% endif %}
 
-The following table describes the result of applying some commonly used label formats on numeric values.
+The following table shows examples of commonly used numeric label formats and their corresponding outputs.
 
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>Label Value</b></td>
-<td><b>Label Format property value</b></td>
-<td><b>Result </b></td>
-<td><b>Description </b></td>
+<td><b>Label Format</b></td>
+<td><b>Result</b></td>
+<td><b>Description</b></td>
 </tr>
 <tr>
 <td>1000</td>
 <td>n1</td>
 <td>1000.0</td>
-<td>The Number is rounded to 1 decimal place</td>
+<td>Rounded to 1 decimal place</td>
 </tr>
 <tr>
 <td>1000</td>
 <td>n2</td>
 <td>1000.00</td>
-<td>The Number is rounded to 2 decimal place</td>
+<td>Rounded to 2 decimal places</td>
 </tr>
 <tr>
 <td>1000</td>
 <td>n3</td>
 <td>1000.000</td>
-<td>The Number is rounded to 3 decimal place</td>
+<td>Rounded to 3 decimal places</td>
 </tr>
 <tr>
 <td>0.01</td>
 <td>p1</td>
 <td>1.0%</td>
-<td>The Number is converted to percentage with 1 decimal place</td>
+<td>Converted to percentage with 1 decimal place</td>
 </tr>
 <tr>
 <td>0.01</td>
 <td>p2</td>
 <td>1.00%</td>
-<td>The Number is converted to percentage with 2 decimal place</td>
+<td>Converted to percentage with 2 decimal places</td>
 </tr>
 <tr>
 <td>0.01</td>
 <td>p3</td>
 <td>1.000%</td>
-<td>The Number is converted to percentage with 3 decimal place</td>
+<td>Converted to percentage with 3 decimal places</td>
 </tr>
 <tr>
 <td>1000</td>
 <td>c1</td>
 <td>$1000.0</td>
-<td>The Currency symbol is appended to number and number is rounded to 1 decimal place</td>
+<td>Currency format with 1 decimal place</td>
 </tr>
 <tr>
 <td>1000</td>
 <td>c2</td>
 <td>$1000.00</td>
-<td>The Currency symbol is appended to number and number is rounded to 2 decimal place</td>
+<td>Currency format with 2 decimal places</td>
 </tr>
 </table>
 
 ## GroupingSeparator
 
-To separate groups of thousands, use [`useGroupingSeparator`](../api/chart/chartModel/#useGroupingSeparator-boolean) property in chart.
+To separate groups of thousands in numeric labels, enable the [`useGroupingSeparator`](../api/chart/chartModel#useGroupingSeparator-boolean) property in the chart.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -363,7 +363,7 @@ To separate groups of thousands, use [`useGroupingSeparator`](../api/chart/chart
 
 ## Custom Label Format
 
-Axis also supports custom label format using placeholder like {value}°C, in which the value represent the axis label e.g 20°C.
+The numeric axis also supports custom label formats by using placeholders such as `{value}°C`, where `{value}` represents the numeric axis label. For example, the value `20` is displayed as `20°C`.
 
 {% if page.publishingplatform == "typescript" %}
 

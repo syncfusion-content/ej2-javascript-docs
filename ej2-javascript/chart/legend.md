@@ -14,11 +14,11 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD036 -->
 
-Legend provides information about the series rendered in the chart.
+The legend provides information about the series rendered in the chart and helps users identify each series by its color, shape, or style.
 
 ## Position and alignment
 
-By using the [`position`](../api/chart/legendSettings/#position-string) property, you can position the legend at left, right, top or bottom of the chart. The legend is positioned at the bottom of the chart, by default.
+By using the [`position`](../api/chart/legendSettings#position-string) property, the legend can be positioned at the left, right, top, or bottom of the chart. By default, the legend is positioned at the bottom of the chart.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -47,7 +47,7 @@ By using the [`position`](../api/chart/legendSettings/#position-string) proper
 {% previewsample "page.domainurl/code-snippet/chart/legend-cs2" %}
 {% endif %}
 
-Custom position helps you to position the legend anywhere in the chart using x, y coordinates.
+Custom positioning allows the legend to be placed anywhere in the chart using `x` and `y` coordinates.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -78,7 +78,7 @@ Custom position helps you to position the legend anywhere in the chart using x, 
 
 **Legend reverse**
 
-You can reverse the order of the legend items by using the [`reverse`](../api/chart/legendSettings/#reverse) property. By default, legend for the first series in the collection will be placed first.
+Use the [`reverse`](../api/chart/legendSettings#reverse) property to reverse the order of legend items. By default, the legend item for the first series is placed first.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -109,7 +109,7 @@ You can reverse the order of the legend items by using the [`reverse`](../api/ch
 
 **Legend alignment**
 
-You can align the legend as center, far or near to the chart using [`alignment`](../api/chart/legendSettings/#alignment-string) property.
+Align the legend to `center`, `far`, or `near` using the [`alignment`](../api/chart/legendSettings#alignment-string) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -140,7 +140,7 @@ You can align the legend as center, far or near to the chart using [`alignment`]
 
 ## Customization
 
-To change the legend icon shape, you can use [`legendShape`](../api/chart/series/#legendshape-string) property in the [`series`](../api/chart/series/). By default legend icon shape is `seriesType`.
+To change the legend icon shape, use the [`legendShape`](../api/chart/series#legendshape-string) property in the [`series`](../api/chart/series). By default, the legend icon shape is the `seriesType`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -171,7 +171,7 @@ To change the legend icon shape, you can use [`legendShape`](../api/chart/serie
 
 ### Legend size
 
-By default, legend takes 20% - 25% of the chart's height horizontally, when it is placed on top or bottom position and 20% - 25% of the width vertically, while placing on left or right position of the chart. You can change this default legend size by using the [`width`](../api/chart/legendSettings/#width-string) and [`height`](../api/chart/legendSettings/#height-string) property of the `legendSettings`.
+By default, the legend occupies approximately 20%–25% of the chart height when positioned at the top or bottom, and 20%–25% of the chart width when positioned at the left or right. Change the default size using the [`width`](../api/chart/legendSettings#width-string) and [`height`](../api/chart/legendSettings#height-string) properties of `legendSettings`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -202,7 +202,7 @@ By default, legend takes 20% - 25% of the chart's height horizontally, when it i
 
 ### Legend item size
 
-You can customize the size of the legend items by using the [`shapeHeight`](../api/chart/legendSettings/#shapeheight-number) and [`shapeWidth`](../api/chart/legendSettings/#shapewidth-number) property.
+Customize the size of legend items using the [`shapeHeight`](../api/chart/legendSettings#shapeheight-number) and [`shapeWidth`](../api/chart/legendSettings#shapewidth-number) properties.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -233,7 +233,7 @@ You can customize the size of the legend items by using the [`shapeHeight`](../a
 
 ### Paging for legend
 
-Paging will be enabled by default, when the legend items exceeds the legend bounds. You can view each legend items by navigating between the pages using navigation buttons.
+Paging is enabled automatically when legend items exceed the legend bounds. Navigate between pages using the provided navigation buttons.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -264,7 +264,7 @@ Paging will be enabled by default, when the legend items exceeds the legend boun
 
 ### Legend text wrap
 
-When the legend text exceeds the container, the text can be wrapped by using [`textWrap`](../api/chart/legendSettings/#textwrap) Property. End user can also wrap the legend text based on the [`maximumLabelWidth`](../api/chart/legendSettings/#maximumlabelwidth) property.
+When legend text exceeds the container, enable wrapping using the [`textWrap`](../api/chart/legendSettings#textwrap) property. Wrapping can also be controlled using the [`maximumLabelWidth`](../api/chart/legendSettings#maximumlabelwidth) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -295,7 +295,7 @@ When the legend text exceeds the container, the text can be wrapped by using [`t
 
 ### Set the label color based on series color
 
-You can set the legend label color based on series color by using chart's [loaded](../api/chart/#loaded) event.
+Set the legend label color based on the series color by using the chart’s [`loaded`](../api/chart#loaded) event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -326,7 +326,7 @@ You can set the legend label color based on series color by using chart's [loade
 
 ## Series selection on Legend
 
-By default, legend click enables you to collapse the series visibility.  On other hand, if you need to select a series through legend click, disable the [`toggleVisibility`](../api/chart/legendSettings/#togglevisibility-boolean).
+By default, clicking a legend item toggles the visibility of its series. To select a series through a legend click, disable [`toggleVisibility`](../api/chart/legendSettings#togglevisibility-boolean).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -357,7 +357,7 @@ By default, legend click enables you to collapse the series visibility.  On oth
 
 ## Collapsing legend item
 
-By default, series name will be displayed as legend. To skip the legend for a particular series, you can give empty string to the series name.
+By default, the series name is displayed as a legend item. To omit a legend item for a particular series, set the series name to an empty string.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -388,7 +388,7 @@ By default, series name will be displayed as legend. To skip the legend for a pa
 
 ## Legend title
 
-You can set title for legend using `title` property in `legendSettings`. You can also customize the `fontStyle`, `size`, `fontWeight`, `color`, `textAlignment`, `fontFamily`, `opacity` and `textOverflow` of legend title. `titlePosition` is used to set the legend position in `Top`, `Left` and `Right` position. `maximumTitleWidth` is used to set the width of the legend title. By default, it will be `100px`.
+Set a title for the legend using the `title` property in `legendSettings`. The title can be customized using `fontStyle`, `size`, `fontWeight`, `color`, `textAlignment`, `fontFamily`, `opacity`, and `textOverflow`. Use `titlePosition` to place the title at `Top`, `Left`, or `Right`. The `maximumTitleWidth` property sets the width of the legend title and defaults to `100px`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -419,7 +419,7 @@ You can set title for legend using `title` property in `legendSettings`. You can
 
 ## Arrow page navigation
 
-By default, the page number will be enabled while legend paging. Now, you can disable that page number and also you can get left and right arrows for page navigation. You have to set `false` value to `enablePages` to get this support.
+When legend paging is enabled, page numbers are shown by default. To display only left and right arrows for navigation, set `enablePages` to `false`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -450,7 +450,7 @@ By default, the page number will be enabled while legend paging. Now, you can di
 
 ## Legend item padding
 
-The [`itemPadding`](../api/chart/legendSettings/#itempadding) property can be used to adjust the space between the legend items.
+Use the [`itemPadding`](../api/chart/legendSettings#itempadding) property to adjust the spacing between legend items.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -481,7 +481,7 @@ The [`itemPadding`](../api/chart/legendSettings/#itempadding) property can be us
 
 ## Legend layout
 
-The [`layout`](../api/chart/legendSettingsModel/#layout) property in [`legendSettings`](../api/chart/#legendsettings) allows you to display the legend either horizontally or vertically. By default, the [`layout`](../api/chart/legendSettingsModel/#layout) is set to **Auto**. The [`maximumColumns`](../api/chart/legendSettingsModel/#maximumcolumns) property in [`legendSettings`](../api/chart/#legendsettings) defines the maximum number of columns that can be displayed within the available space when using the auto layout. Additionally, enabling the [`fixedWidth`](../api/chart/legendSettingsModel/#fixedwidth) property in [`legendSettings`](../api/chart/#legendsettings) ensures that all legend items are displayed with equal widths. The width of each item is determined by the maximum width among the legend items.
+The [`layout`](../api/chart/legendSettingsModel#layout) property in [`legendSettings`](../api/chart#legendsettings) displays the legend horizontally or vertically. By default, [`layout`](../api/chart/legendSettingsModel#layout) is set to **Auto**. The [`maximumColumns`](../api/chart/legendSettingsModel#maximumcolumns) property defines the maximum number of columns that can be displayed within the available space when using auto layout. Enabling the [`fixedWidth`](../api/chart/legendSettingsModel#fixedwidth) property ensures that all legend items have equal widths, determined by the maximum item width.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -510,10 +510,10 @@ The [`layout`](../api/chart/legendSettingsModel/#layout) property in [`legendSet
 {% previewsample "page.domainurl/code-snippet/chart/legend-cs18" %}
 {% endif %}
 
->Note: To use legend feature, we need to inject `Legend` using `Chart.Inject(Legend)`.
+> Note: To use legend features, inject the `Legend` using `Chart.Inject(Legend)` method.
 
 ## See also
 
-* [Customize each shape in legend](./how-to/#customize-each-shape-in-legend)
+* [Customize each shape in legend](./how-to#customize-each-shape-in-legend)
 * [Customize Legend Text](https://support.syncfusion.com/kb/article/20959/how-to-customize-legend-text-in-javascript-charts)
 * [Hide/Show Series by Clicking Single Legend](https://support.syncfusion.com/kb/article/21482/how-to-hideshow-series-by-clicking-single-legend-in-javascript-chart)

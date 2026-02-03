@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Accessibility customization in ##Platform_Name## Chart control
 
-The Syncfusion® ##Platform_Name## Chart control is structured to visualize data in a graphical manner. It provides robust customization options for accessibility, allowing you to enhance the user experience for those with disabilities. The main attributes of the ##Platform_Name## Chart control's accessibility customization are briefly explained in this section.
+The Syncfusion® ##Platform_Name## Chart control visualizes data graphically and provides accessibility customization options to improve usability for people with disabilities. The primary accessibility attributes are described in this section.
 
-The chart control has a number of characteristics that enable accessibility features to be customized, including:
+The chart control exposes attributes that enable accessibility customization, including:
 
 * [`accessibilityDescription`](../api/chart/accessibilityModel/#accessibilitydescription) - Provides a text description for the chart, improving support for screen readers.
 * [`accessibilityRole`](../api/chart/accessibilityModel/#accessibilityrole) - Specifies the role of the chart, helping screen readers to identify the element appropriately.

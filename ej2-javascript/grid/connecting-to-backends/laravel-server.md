@@ -574,7 +574,7 @@ private function applyWhere($query, array $where)
 }
 ```
 
-For the complete implementation, refer to the [applyWhere()](https://github.com/SyncfusionExamples/syncfusion-grid-component-in-laravel/blob/master/app/Http/Controllers/ServerController.php#L119) method.
+For the complete implementation, refer to the [applyWhere()](https://github.com/SyncfusionExamples/syncfusion-grid-component-in-php-laravel/blob/master/app/Http/Controllers/ServerController.php#L119) method.
 
 The "applyOperator()" method maps individual Grid filter operators to SQL operations, applying them to the database query and supporting all standard comparison types.
 
@@ -659,7 +659,7 @@ private function applyOperator($q, $method, $field, $operator, $value, $ignoreCa
 }
 ```
 
-For the complete implementation, refer to the [applyOperator()](https://github.com/SyncfusionExamples/syncfusion-grid-component-in-laravel/blob/master/app/Http/Controllers/ServerController.php#L151) method.
+For the complete implementation, refer to the [applyOperator()](https://github.com/SyncfusionExamples/syncfusion-grid-component-in-php-laravel/blob/master/app/Http/Controllers/ServerController.php#L151) method.
 
 ### Searching
 
@@ -966,7 +966,7 @@ The application is now accessible at `http://localhost:8000`. The Grid displays 
 
 For a complete working implementation of this example, refer to the GitHub repository:
 
-[Syncfusion DataGrid with Laravel Sample](https://github.com/SyncfusionExamples/syncfusion-grid-component-in-laravel)
+[Syncfusion DataGrid with Laravel Sample](https://github.com/SyncfusionExamples/syncfusion-grid-component-in-php-laravel)
 
 The repository contains the complete Laravel backend implementation with all ServerController methods, API routes, database models, and migrations.
 

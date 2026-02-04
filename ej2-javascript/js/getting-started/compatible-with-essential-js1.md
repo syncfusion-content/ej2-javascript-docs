@@ -35,14 +35,14 @@ To work with the Essential<sup style="font-size:70%">&reg;</sup> JS 1 and the Es
     Replace the style file in the `resources` folder from the below location.
 
     **Syntax:**
-    > Styles: `**(installed location)**\Syncfusion\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\styles\compatibility\material.css`
+    > Styles: `**(installed location)**\Syncfusion\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\styles\compatibility\bootstrap5.3.css`
 
     **Example:**
-    > Styles: `C:\Program Files (x86)\Syncfusion\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2\styles\compatibility\material.css`
+    > Styles: `C:\Program Files (x86)\Syncfusion\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2\styles\compatibility\bootstrap5.3.css`
 
     If the CDN link is used in the application, then replace it with below link.
 
-    > Styles: `https://cdn.syncfusion.com/ej2/styles/compatibility/material.css`
+    > Styles: `https://cdn.syncfusion.com/ej2/styles/compatibility/bootstrap5.3.css`
 
 2. Now, add the Essential<sup style="font-size:70%">&reg;</sup> JS 1 script and compatibility styles with its dependencies in the `resources/ej1` location. You can get the Essential<sup style="font-size:70%">&reg;</sup> JS 1 scripts and styles from the below installed location.
 
@@ -74,8 +74,8 @@ To work with the Essential<sup style="font-size:70%">&reg;</sup> JS 1 and the Es
 
             <!-- Essential JS 1 default theme -->
             <link href="resources/ej1/default-theme/ej.web.all.compatibility.min.css" rel="stylesheet" type="text/css" />
-            <!-- Essential JS 2 material theme -->
-            <link href="resources/material.css" rel="stylesheet" type="text/css" />
+            <!-- Essential JS 2 bootstrap5.3 theme -->
+            <link href="resources/bootstrap5.3.css" rel="stylesheet" type="text/css" />
 
             <!-- Essential JS 1 scripts -->
             <script src="https://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"></script>

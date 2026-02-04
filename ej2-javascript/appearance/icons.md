@@ -56,11 +56,11 @@ To use the icons from the CDN, refer to the icons by URLs in the application. Th
 ```
 // Bootstrap5
 <head>
-    <link href="https://cdn.syncfusion.com/ej2/22.1.34/ej2-icons/styles/bootstrap5.css" rel="stylesheet"/>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/ej2-icons/styles/bootstrap5.css" rel="stylesheet"/>
 </head>
 //Material
 <head>
-    <link href="https://cdn.syncfusion.com/ej2/22.1.34/ej2-icons/styles/material.css" rel="stylesheet"/>
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/ej2-icons/styles/material.css" rel="stylesheet"/>
 </head>
 ```
 
@@ -95,7 +95,7 @@ The following steps explain the direct rendering of the Syncfusion<sup style="fo
 4.Add the CDN link reference of icons library in the `~index.html` file.
 
  ```
-    <link href="https://cdn.syncfusion.com/ej2/22.1.34/ej2-icons/styles/bootstrap5.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/ej2-icons/styles/bootstrap5.css" rel="stylesheet" />
  ```
 
 

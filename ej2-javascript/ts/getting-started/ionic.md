@@ -114,7 +114,7 @@ on OSX / LINUX:
             ....
             ....
             <!-- Essential JS 2 styles -->
-            <link href="https://cdn.syncfusion.com/ej2/22.1.34/material.css" rel="stylesheet">
+            <link href="https://cdn.syncfusion.com/ej2/32.1.19/fluent2.css" rel="stylesheet">
         </head>
 
         <body>

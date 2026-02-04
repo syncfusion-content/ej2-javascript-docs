@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to create routes between markers in ##Platform_Name## Maps control | Syncfusion
-description: Learn here all about creating routes between markers in the Syncfusion ##Platform_Name## Maps control of Syncfusion Essential JS 2 and more.
+title: Create routes between markers in ##Platform_Name## Maps | Syncfusion
+description: Learn here all about creating routes between markers in the Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Maps 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Creating Routes Between Markers in the ##Platform_Name## Maps Control
+# Creating Routes Between Markers in the ##Platform_Name## Maps component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Maps control supports plotting routes between two locations (source and destination) using the navigation line feature. Markers can be placed at these locations to visually indicate the source and destination, making it easier to view the path between them on the map.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Maps component supports plotting routes between two locations (source and destination) using the navigation line feature. Markers can be placed at these locations to visually indicate the source and destination, making it easier to view the path between them on the map.
 
 The data for navigation routes must be retrieved from an external source, such as the Google Maps Directions API. Below are the outlined steps to create a route using the coordinates obtained from the Google Maps Directions API.
 
@@ -254,7 +254,7 @@ To generate and visualize the route, use the geographic coordinates obtained fro
 
 {% endif %}
 
-You can find a demonstration of integrating the Google Maps Directions API with the Syncfusion<sup style="font-size:70%">&reg;</sup> Maps control to render navigation routes below.
+You can find a demonstration of integrating the Google Maps Directions API with the Syncfusion<sup style="font-size:70%">&reg;</sup> Maps component to render navigation routes below.
 
 {% if page.publishingplatform == "typescript" %}
 

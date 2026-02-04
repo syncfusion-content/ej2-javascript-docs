@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Maps control | Syncfusion
-description: Learn here all about Localization in Syncfusion ##Platform_Name## Maps control of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## Maps component | Syncfusion
+description: Learn here all about Localization in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Localization 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in ##Platform_Name## Maps control
+# Localization in ##Platform_Name## Maps component
 
-The localization library allows localizing the default text content of the Maps control. The Maps control has the static text of some features such as tooltip of zoom toolbar, and that can be changed to any other culture(Arabic, Deutsch, French, etc) by defining the locale value and translation object.
+The localization library allows localizing the default text content of the Maps component. The Maps component has the static text of some features such as tooltip of zoom toolbar, and that can be changed to any other culture(Arabic, Deutsch, French, etc) by defining the locale value and translation object.
 
 <!-- markdownlint-disable MD033 -->
 

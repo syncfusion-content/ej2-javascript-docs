@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Layers in ##Platform_Name## Maps control | Syncfusion
-description: Learn here all about Layers in Syncfusion ##Platform_Name## Maps control of Syncfusion Essential JS 2 and more.
+title: Layers in ##Platform_Name## Maps component | Syncfusion
+description: Learn here all about Layers in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Layers 
 publishingplatform: ##Platform_Name##
@@ -9,19 +9,19 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Layers in ##Platform_Name## Maps control
+# Layers in ##Platform_Name## Maps component
 
-The Maps control is rendered through [`layers`](../api/maps/#layers) and any number of layers can be added to the Maps.
+Layers are the fundamental building blocks of the Maps component. Each layer can display shape data from GeoJSON files or map providers. The Maps component renders content through the [`layers`](../api/maps/layers) property, and multiple layers can be added to create rich, layered map visualizations.
 
 ## Multilayer
 
-The Multilayer support allows loading multiple shape files and map providers in a single container, enabling Maps to display more information. The shape layer or map providers are the main layers of the Maps. Multiple layers can be added as **SubLayer** over the main layers using the [`type`](../api/maps/layerSettingsModel/#type) property of [`layers`](../api/maps/#layers).
+The Multilayer support allows loading multiple shape files and map providers in a single container, enabling Maps to display more information. The shape layer or map providers are the main layers of the Maps. Multiple layers can be added as **SubLayer** over the main layers using the [`type`](../api/maps/layerSettingsModel/type) property of [`layers`](../api/maps/layers).
 
 ## Sublayer
 
-Sublayer is a type of shape file layer. It allows loading multiple shape files in a single map view. For example, a sublayer can be added over the main layer to view geographic features such as rivers, valleys and cities in a map of a country. Similar to the main layer, elements in the Maps such as markers, bubbles, color mapping and legends can be added to the sub-layer.
+A sublayer is an overlay layer that renders on top of the main layer. It allows displaying multiple shape files in a single map view. For example, a sublayer can highlight specific states, display rivers, valleys, or cities over a country map. Similar to the main layer, sublayers support markers, bubbles, color mapping, and legends.
 
-In this example, the United States map shape is used as shape data by utilizing **usa.ts** file, and **texas.ts** and **california.ts** files are used as sub-layers in the United States map.
+In the following example, the United States map shape from the **usa.ts** file serves as the main layer, while **texas.ts** and **california.ts** files are rendered as sublayers.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -50,9 +50,9 @@ In this example, the United States map shape is used as shape data by utilizing 
 {% previewsample "page.domainurl/code-snippet/maps/default-map-cs109" %}
 {% endif %}
 
-## Displaying different layer in the view
+## Displaying a different layer in the view
 
-Multiple shape files and map providers can be loaded simultaneously in Maps. The [`baseLayerIndex`](../api/maps/mapsModel/#baselayerindex) property is used to determine which layer on the user interface should be displayed. This property is used for the Maps drill-down feature, so when the [`baseLayerIndex`](../api/maps/mapsModel/#baselayerindex) value is changed, the corresponding shape is loaded. In this example, two layers can be loaded with the World map and the United States map. Based on the given [`baseLayerIndex`](../api/maps/mapsModel/#baselayerindex) value the corresponding shape will be loaded in the user interface. If the [`baseLayerIndex`](../api/maps/mapsModel/#baselayerindex) value is set to **0**, then the world map will be loaded.
+Multiple shape files and map providers can be loaded simultaneously in Maps. The [`baseLayerIndex`](../api/maps/mapsModel/baselayerindex) property is used to determine which layer on the user interface should be displayed. This property is used for the Maps drill-down feature, so when the [`baseLayerIndex`](../api/maps/mapsModel/baselayerindex) value is changed, the corresponding shape is loaded. In this example, two layers can be loaded with the World map and the United States map. Based on the given [`baseLayerIndex`](../api/maps/mapsModel/baselayerindex) value the corresponding shape will be loaded in the user interface. If the [`baseLayerIndex`](../api/maps/mapsModel/baselayerindex) value is set to **0**, then the world map will be loaded.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -83,13 +83,12 @@ Multiple shape files and map providers can be loaded simultaneously in Maps. The
 
 ## Rendering custom shapes
 
-Custom shapes (also known as custom maps) can be rendered in Maps to represent bus seat booking, cricket stadium, basic home plan/sketch, and so on. To accomplish this, a JSON file in GeoJSON format with proper geometries must be created manually or with the assistance of any online map vendor. The GeoJSON file created must be set to the [`shapeData`](../api/maps/layerSettingsModel/#shapedata) in the Maps layer, and the [`geometryType`](../api/maps/layerSettingsModel/#geometrytype) must be set as **Normal**.
+Custom shapes (also known as custom maps) can be rendered in the Maps component for non-geographic visualizations such as bus seat booking layouts, stadium seating arrangements, or floor plans. To render custom shapes, create a JSON file in GeoJSON format with the required geometries either manually or using an online map tool. Set the GeoJSON file to the [`shapeData`](../api/maps/layerSettingsModel/shapedata) property in the Maps layer and set the [`geometryType`](../api/maps/layerSettingsModel/geometrytype) to **Normal**.
 
 Please refer this [`link`](https://cdn.syncfusion.com/maps/map-data/seat.json) for an example GeoJSON file containing information about bus seat selection.
 
-Please refer this [`link`](https://ej2.syncfusion.com/demos/#/bootstrap5/maps/seat-selection.html) for more information and a live demonstration.
+Please refer this [`link`](https://ej2.syncfusion.com/demos//bootstrap5/maps/seat-selection.html) for more information and a live demonstration.
 
 ## See Also
 
-* [Adding multiple layers in map](../maps/how-to/multiple-layer)
 * [Custom path map](../maps/how-to/custom-path)

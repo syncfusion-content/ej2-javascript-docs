@@ -8,7 +8,7 @@ let map: Maps = new Maps({
    layers: [
         {
             titleSettings: {
-                text: 'USA Election Results - 2016'
+                text: 'USA Election Results'
             },
             shapeData: world_map,
             dataSource: [

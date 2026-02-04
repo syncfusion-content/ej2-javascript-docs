@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## Maps control | Syncfusion
-description: Learn here all about Customization in Syncfusion ##Platform_Name## Maps control of Syncfusion Essential JS 2 and more.
+title: Customization in ##Platform_Name## Maps component | Syncfusion
+description: Explore here all about Customization in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Customization 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in ##Platform_Name## Maps control
+# Customization in the ##Platform_Name## Maps component
+
+The Maps component provides various options to customize its appearance, including size, title, theme, container styling, shape properties, and projection type. This section explains how to configure these customization options.
 
 ## Setting the size for Maps
 
-The width and height of the Maps can be set using the [width](../api/maps/mapsModel/#width) and [height](../api/maps/mapsModel/#height) properties in the Maps control. Percentage or pixel values can be used for the height and width values.
+The width and height of the Maps can be set using the [width](../api/maps/mapsModel/width) and [height](../api/maps/mapsModel/height) properties in the Maps component. Percentage or pixel values can be used for the height and width values.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,13 +46,13 @@ The width and height of the Maps can be set using the [width](../api/maps/mapsMo
 
 ## Maps title
 
-The title for the Maps can be set using the [titleSettings](../api/maps/titleSettingsModel). It can be customized using the following properties.
+The [titleSettings](../api/maps/titleSettingsModel) property configures the title displayed on the Maps component. The title can be customized using the following properties:
 
-* [alignment](../api/maps/titleSettingsModel/#alignment) - To customize the alignment for the text in the title for the Maps. The possible values are **Center**, **Near** and **Far**.
-* [description](../api/maps/titleSettingsModel/#description) - To set the description of the title in Maps.
-* [text](../api/maps/titleSettingsModel/#text) - To set the text for the title in Maps.
-* [textStyle](../api/maps/titleSettingsModel/#textstyle) - To customize the text of the title in Maps.
-* [subtitleSettings](../api/maps/titleSettingsModel/#subtitlesettings) - To customize the subtitle for the Maps.
+* [alignment](../api/maps/titleSettingsModel/alignment) - To customize the alignment for the text in the title for the Maps. The possible values are **Center**, **Near** and **Far**.
+* [description](../api/maps/titleSettingsModel/description) - To set the description of the title in Maps.
+* [text](../api/maps/titleSettingsModel/text) - To set the text for the title in Maps.
+* [textStyle](../api/maps/titleSettingsModel/textstyle) - To customize the text of the title in Maps.
+* [subtitleSettings](../api/maps/titleSettingsModel/subtitlesettings) - To customize the subtitle for the Maps.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -81,7 +83,7 @@ The title for the Maps can be set using the [titleSettings](../api/maps/titleSet
 
 ## Setting theme
 
-The Maps control supports following themes.
+The Maps component supports the following themes:
 
 * Material
 * Fabric
@@ -94,7 +96,7 @@ The Maps control supports following themes.
 * HighContrastLight
 * Tailwind
 
-By default, the Maps are rendered by the **Material** theme. The theme of the Maps component is changed using the [theme](../api/maps/#theme) property.
+By default, the Maps are rendered by the **Material** theme. The theme of the Maps component is changed using the [theme](../api/maps/theme) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -127,9 +129,9 @@ By default, the Maps are rendered by the **Material** theme. The theme of the Ma
 
 The following properties are available to customize the container in the Maps.
 
-* [background](../api/maps/mapsModel/#background) - To apply the background color to the container in the Maps.
-* [border](../api/maps/mapsModel/#border) - To customize the color, width and opacity of the border of the Maps.
-* [margin](../api/maps/mapsModel/#margin) - To customize the margins of the Maps.
+* [background](../api/maps/mapsModel/background) - To apply the background color to the container in the Maps.
+* [border](../api/maps/mapsModel/border) - To customize the color, width and opacity of the border of the Maps.
+* [margin](../api/maps/mapsModel/margin) - To customize the margins of the Maps.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -160,7 +162,7 @@ The following properties are available to customize the container in the Maps.
 
 ## Customizing Maps area
 
-By default, the background color of the shape maps is set as **white**. To modify the background color of the Maps area, the [background](../api/maps/mapsAreaSettingsModel/#background) property in the [mapsArea](../api/maps/mapsAreaSettingsModel) is used. The border of the Maps area can be customized using the [border](../api/maps/mapsAreaSettingsModel/#border) property in the [mapsArea](../api/maps/mapsAreaSettingsModel).
+The Maps area has a default background color of **white**. To change the background color, use the [background](../api/maps/mapsAreaSettingsModel/background) property in [mapsArea](../api/maps/mapsAreaSettingsModel). The [border](../api/maps/mapsAreaSettingsModel/border) property in [mapsArea](../api/maps/mapsAreaSettingsModel) customizes the border around the Maps area.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -193,12 +195,12 @@ By default, the background color of the shape maps is set as **white**. To modif
 
 The following properties are available in [shapeSettings](../api/maps/shapeSettingsModel) to customize the shapes of the Maps.
 
-* [fill](../api/maps/shapeSettingsModel/#fill) - To apply the fill color to the all the shapes.
-* [autofill](../api/maps/shapeSettingsModel/#autofill) - To apply the palette colors to the shapes if it is set as true.
-* [palette](../api/maps/shapeSettingsModel/#palette) - To set the custom palette for the shapes.
-* [border](../api/maps/shapeSettingsModel/#border) - To customize the color, width and opacity of the border of the shapes.
-* [dashArray](../api/maps/shapeSettingsModel/#dasharray) - To define the pattern of dashes and gaps that is applied to the outline of the shapes.
-* [opacity](../api/maps/shapeSettingsModel/#opacity) - To customize the transparency for the shapes.
+* [fill](../api/maps/shapeSettingsModel/fill) - To apply the fill color to the all the shapes.
+* [autofill](../api/maps/shapeSettingsModel/autofill) - To apply the palette colors to the shapes if it is set as true.
+* [palette](../api/maps/shapeSettingsModel/palette) - To set the custom palette for the shapes.
+* [border](../api/maps/shapeSettingsModel/border) - To customize the color, width and opacity of the border of the shapes.
+* [dashArray](../api/maps/shapeSettingsModel/dasharray) - To define the pattern of dashes and gaps that is applied to the outline of the shapes.
+* [opacity](../api/maps/shapeSettingsModel/opacity) - To customize the transparency for the shapes.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -229,7 +231,7 @@ The following properties are available in [shapeSettings](../api/maps/shapeSetti
 
 ## Setting color to the shapes from the data source
 
-The color for each shape in the Maps can be set using the [colorValuePath](../api/maps/shapeSettingsModel/#colorvaluepath) property of [shapeSettings](../api/maps/shapeSettingsModel). The value for the [colorValuePath](../api/maps/shapeSettingsModel/#colorvaluepath) property is the field name from the data source of the [shapeSettings](../api/maps/shapeSettingsModel) which contains the color values.
+The color for each shape in the Maps can be set using the [colorValuePath](../api/maps/shapeSettingsModel/colorvaluepath) property of [shapeSettings](../api/maps/shapeSettingsModel). The value for the [colorValuePath](../api/maps/shapeSettingsModel/colorvaluepath) property is the field name from the data source of the [shapeSettings](../api/maps/shapeSettingsModel) which contains the color values.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -260,7 +262,7 @@ The color for each shape in the Maps can be set using the [colorValuePath](../ap
 
 ## Applying border to individual shapes
 
-The border of each shape in the Maps can be customized using the [borderColorValuePath](../api/maps/shapeSettingsModel/#bordercolorvaluepath) and [borderWidthValuePath](../api/maps/shapeSettingsModel/#borderwidthvaluepath) properties to modify the color and the width of the border respectively. The field name in the data source of the layer which contains the color and the width values must be set in the [borderColorValuePath](../api/maps/shapeSettingsModel/#bordercolorvaluepath) and [borderWidthValuePath](../api/maps/shapeSettingsModel/#borderwidthvaluepath) properties respectively. If the values of [borderWidthValuePath](../api/maps/shapeSettingsModel/#borderwidthvaluepath) and [borderColorValuePath](../api/maps/shapeSettingsModel/#bordercolorvaluepath) do not match with the field name from the data source, then the color and width of the border will be applied to the shapes using the [border](../api/maps/shapeSettingsModel/#border) property in the [shapeSettings](../api/maps/shapeSettingsModel).
+The border of each shape in the Maps can be customized using the [borderColorValuePath](../api/maps/shapeSettingsModel/bordercolorvaluepath) and [borderWidthValuePath](../api/maps/shapeSettingsModel/borderwidthvaluepath) properties to modify the color and the width of the border respectively. The field name in the data source of the layer which contains the color and the width values must be set in the [borderColorValuePath](../api/maps/shapeSettingsModel/bordercolorvaluepath) and [borderWidthValuePath](../api/maps/shapeSettingsModel/borderwidthvaluepath) properties respectively. If the values of [borderWidthValuePath](../api/maps/shapeSettingsModel/borderwidthvaluepath) and [borderColorValuePath](../api/maps/shapeSettingsModel/bordercolorvaluepath) do not match with the field name from the data source, then the color and width of the border will be applied to the shapes using the [border](../api/maps/shapeSettingsModel/border) property in the [shapeSettings](../api/maps/shapeSettingsModel).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -291,7 +293,7 @@ The border of each shape in the Maps can be customized using the [borderColorVal
 
 ## Projection type
 
-The Maps control supports the following projection types:
+The Maps component supports the following projection types:
 
 * Mercator
 * Equirectangular
@@ -302,7 +304,7 @@ The Maps control supports the following projection types:
 * Winkel3
 * AitOff
 
-By default, the Maps are rendered by the **Mercator** projection type in which the Maps are rendered based on the coordinates. So, the Maps is not stretched. To change the type of projection in the Maps, the [projectionType](../api/maps/projectionType/) property is used.
+The default projection is **Mercator**, which renders the map based on coordinates without stretching. Each projection type represents the Earth's surface differently, affecting how shapes and distances appear on the map. To change the projection, use the [projectionType](../api/maps/projectionType) property.
 
 {% if page.publishingplatform == "typescript" %}
 

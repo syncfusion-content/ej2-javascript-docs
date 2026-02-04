@@ -6,7 +6,7 @@ import { world_map } from './world-map.ts';
 Maps.Inject(Legend);
 let map: Maps = new Maps({
     titleSettings: {
-        text: 'USA Election Results - 2016'
+        text: 'USA Election Results'
     },
     layers: [
         {

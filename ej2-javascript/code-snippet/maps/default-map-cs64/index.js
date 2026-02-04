@@ -1,6 +1,6 @@
 var map = new ej.maps.Maps({
     titleSettings: {
-        text: 'USA Election Results - 2016'
+        text: 'USA Election Results'
     },
     layers: [
         {

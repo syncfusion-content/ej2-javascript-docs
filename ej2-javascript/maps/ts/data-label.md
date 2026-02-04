@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data label in ##Platform_Name## Maps control | Syncfusion
-description: Learn here all about Data label in Syncfusion ##Platform_Name## Maps control of Syncfusion Essential JS 2 and more.
+title: Data label in ##Platform_Name## Maps component | Syncfusion
+description: Learn here all about Data label in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Data label 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data label in ##Platform_Name## Maps control
+# Data label in ##Platform_Name## Maps component
 
-Data labels provide information to users about the shapes of the Maps control. It can be enabled by setting the [visible](../api/maps/dataLabelSettingsModel/#visible) property of the [dataLabelSettings](../api/maps/dataLabelSettingsModel/) to **true**. To display the data labels in Maps, **DataLabel** module must be injected into the Maps using **Maps.Inject(DataLabel)** method. Refer to the below code snippet to inject the **DataLabel** module into the Maps component.
+Data labels provide information to users about the shapes of the Maps component. It can be enabled by setting the [visible](../api/maps/dataLabelSettingsModel#visible) property of the [dataLabelSettings](../api/maps/dataLabelSettingsModel) to **true**. To display the data labels in Maps, **DataLabel** module must be injected into the Maps using **Maps.Inject(DataLabel)** method. Refer to the below code snippet to inject the **DataLabel** module into the Maps component.
 
 ```ts
 import { Maps, DataLabel } from '@syncfusion/ej2-maps';
@@ -21,9 +21,9 @@ let map: Maps = new Maps({ });
 
 ## Adding data labels
 
-To display the data labels in the Maps, set the field name containing the text to be displayed from the data source or shape data in the [labelPath](../api/maps/dataLabelSettingsModel/#labelpath) property of the `dataLabelSettings` property.
+To display data labels, specify the field name containing the label text in the [labelPath](../api/maps/dataLabelSettingsModel#labelpath) property of `dataLabelSettings`. The field can come from either the shape data or the layer data source.
 
-In the following example, the value of `labelPath` property is set from the field name in the shape data of the Maps layer.
+The following example sets `labelPath` from a field in the shape data.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -36,7 +36,7 @@ In the following example, the value of `labelPath` property is set from the fiel
           
 {% previewsample "page.domainurl/code-snippet/maps/default-map-cs164" %}
 
-In the following example, the value of `labelPath` property is set from the field name in the data source of the layer settings.
+The following example sets `labelPath` from a field in the layer data source.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -51,12 +51,12 @@ In the following example, the value of `labelPath` property is set from the fiel
 
 ## Customization
 
-The following properties are available in the `dataLabelSettings` to customize the data label of the Maps control.
+Customize data label appearance using the following properties in `dataLabelSettings`:  
 
-* [border](../api/maps/dataLabelSettingsModel/#border) - To customize the color, width and opacity for the border of the data labels in Maps.
-* [fill](../api/maps/dataLabelSettingsModel/#fill) - To apply the color of the data labels in Maps.
-* [opacity](../api/maps/dataLabelSettingsModel/#opacity) - To customize the transparency of the data labels in Maps.
-* [textStyle](../api/maps/dataLabelSettingsModel/#textstyle) - To customize the text style of the data labels in Maps.
+* [border](../api/maps/dataLabelSettingsModel#border) - To customize the color, width and opacity for the border of the data labels in Maps.
+* [fill](../api/maps/dataLabelSettingsModel#fill) - To apply the color of the data labels in Maps.
+* [opacity](../api/maps/dataLabelSettingsModel#opacity) - To customize the transparency of the data labels in Maps.
+* [textStyle](../api/maps/dataLabelSettingsModel#textstyle) - To customize the text style of the data labels in Maps.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -71,7 +71,7 @@ The following properties are available in the `dataLabelSettings` to customize t
 
 ## Label animation
 
-The data labels can be animated during the initial rendering of the Maps. This can be enabled by setting the [animationDuration](../api/maps/dataLabelSettingsModel/#animationduration) property in the `dataLabelSettings` of the Maps. The duration of the animation is specified in milliseconds.
+Animate data labels during initial rendering by setting the [animationDuration](../api/maps/dataLabelSettingsModel#animationduration) property in `dataLabelSettings`. Specify the duration in milliseconds.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -86,7 +86,7 @@ The data labels can be animated during the initial rendering of the Maps. This c
 
 ## Smart labels
 
-The Maps control provides an option to handle the labels when they intersect with the corresponding shape borders using the [smartLabelMode](../api/maps/dataLabelSettingsModel/#smartlabelmode) property. The following options are available in the `smartLabelMode` property.
+Control label behavior when labels exceed shape boundaries using the [smartLabelMode](../api/maps/dataLabelSettingsModel#smartlabelmode) property. The following modes are available:
 
 * **None** -  It specifies that no action is taken, when a label exceeds the shape's region.
 * **Hide** -  It specifies to hide the labels, when it exceeds the shape's region.
@@ -105,7 +105,7 @@ The Maps control provides an option to handle the labels when they intersect wit
 
 ## Intersect action
 
-The Maps component provides an option to handle the labels when a label intersects with another label using the [intersectionAction](../api/maps/dataLabelSettingsModel/#intersectionaction) property. The following options are available in the `intersectionAction` property.
+Control label behavior when labels overlap with other labels using the [intersectionAction](../api/maps/dataLabelSettingsModel#intersectionaction) property. The following options are available:
 
 * **None** -  It specifies that no action is taken, when the labels intersect.
 * **Hide** -  It specifies to hide the labels when they intersect.
@@ -124,9 +124,9 @@ The Maps component provides an option to handle the labels when a label intersec
 
 ## Adding data label as a template
 
-Any HTML elements can be added as a template in the data labels by using the [template](../api/maps/dataLabelSettingsModel/#template) property of `dataLabelSettings` in the Maps control.
+Add custom HTML elements as data label templates using the [template](../api/maps/dataLabelSettingsModel#template) property of `dataLabelSettings`.
 
->The properties of data label such as, `smartLabelMode` , `intersectionAction`, `animationDuration`, `border`, `fill`, `opacity` and `textStyle` properties are not applicable to `template` property. The styles can be applied to the label template using the CSS styles of the HTML element.
+>The `smartLabelMode`, `intersectionAction`, `animationDuration`, `border`, `fill`, `opacity`, and `textStyle` properties do not apply to templates. Apply styles to label templates using standard CSS for HTML elements.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

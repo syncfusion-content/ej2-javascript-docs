@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## 3D Chart control | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more details.
+title: ES5 getting started with ##Platform_Name## 3D Chart control | Syncfusion
+description:  Checkout and learn about ES5 getting started with ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Es5 getting started 
+control: ES5 getting started 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## 3D Chart control
+# ES5 getting started in ##Platform_Name## 3D Chart control
 
-This section explains you the steps required to create a simple 3D Chart and demonstrate the basic usage of the 3D Chart control.
+This section explains the steps required to create a simple 3D Chart and demonstrates the basic usage of the 3D Chart control.
 
 ## Dependencies
 
@@ -29,17 +29,17 @@ Below is the list of minimum dependencies required to use the 3D Chart.
 
 ## Setup for local environment
 
-Refer the following steps for setup your local environment.
+Follow these steps to set up your local environment.
 
 **Step 1:** Create a root folder **myapp** for your application.
 
 **Step 2:** Create **myapp/resources** folder to store local scripts and styles files.
 
-**Step 3:** Create **myapp/index.js** and **myapp/index.html** files for initializing Essential JS 2 3D Chart control.
+**Step 3:** Create **myapp/index.js** and **myapp/index.html** files for initializing the Syncfusion Essential JS 2 3D Chart control.
 
 ## Adding Syncfusion resources
 
-The Essential JS 2 3D Chart control can be initialized by using either of the following ways.
+The Syncfusion Essential JS 2 3D Chart control can be initialized in either of the following ways:
 
 * Using local script.
 * Using CDN link for script.
@@ -50,23 +50,23 @@ You can get the global scripts and styles from the [Essential Studio JavaScript 
 
 After installing the Essential JS 2 product build, you can copy the chart and its dependencies scripts and style file into the **resources/scripts** and **resources/styles** folder.
 
-Refer the below code to find location chart's script and style file.
+The following shows the path to the chart's script and style files.
 
 **Syntax:**
 
-> Dependency script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{DEPENDENCY_PACKAGE_NAME}/dist/global/{DEPENDENCY_PACKAGE_NAME}.min.js`
+> Dependency script: `**(installed location)**/Syncfusion/Essential Studio/JavaScript - EJ2/{RELEASE_VERSION}/Web (Essential JS 2)/JavaScript/{DEPENDENCY_PACKAGE_NAME}/dist/global/{DEPENDENCY_PACKAGE_NAME}.min.js`
 >
-> Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+> Script: `**(installed location)**/Syncfusion/Essential Studio/JavaScript - EJ2/{RELEASE_VERSION}/Web (Essential JS 2)/JavaScript/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
 
 **Example:**
 
-> Dependency script: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-base/dist/global/ej2-base.min.js`
+> Dependency script: `C:/Program Files (x86)/Syncfusion/Essential Studio/JavaScript - EJ2/32.1.19/Web (Essential JS 2)/JavaScript/ej2-base/dist/global/ej2-base.min.js`
 >
-> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-charts/dist/global/ej2-charts.min.js`
+> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/JavaScript - EJ2/32.1.19/Web (Essential JS 2)/JavaScript/ej2-charts/dist/global/ej2-charts.min.js`
 >
 
-After copying the files, then you can refer the chart's scripts into the `index.html` file.The below html code example shows the minimal dependency of chart.
+After copying the files, reference the chart scripts from `index.html`. The following HTML shows the minimal chart dependencies.
 
 ```
 
@@ -93,7 +93,7 @@ After copying the files, then you can refer the chart's scripts into the `index.
 
 Using CDN link, you can directly refer the chart control's script into the `index.html`.
 
-Refer the chart's CDN links as below
+Refer the chart's CDN links as below.
 
 **Syntax:**
 
@@ -103,7 +103,7 @@ Refer the chart's CDN links as below
 
 > Script: [`http://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js`](http://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js)
 
-The below html code example shows the minimal dependency of chart.
+The following HTML shows the minimal chart dependencies using CDN scripts.
 
 ```html
 <!DOCTYPE html>
@@ -123,7 +123,7 @@ The below html code example shows the minimal dependency of chart.
 
 Now, you can start adding 3D Chart control in the application. For getting started, add a **div** element for 3D Chart control in **index.html**. Then refer the **index.js** file into the **index.html** file.
 
-In this document context we are going to use **ej2.min.js** which includes all the Essential JS 2 components and its dependent scripts.
+This document uses `ej2.min.js`, which includes all Essential JS 2 components and dependencies.
 
 ```html
 <!DOCTYPE html>
@@ -142,7 +142,7 @@ In this document context we are going to use **ej2.min.js** which includes all t
 
 ```
 
-Place the following 3D Chart code in the **index.js**.
+Place the following 3D Chart initialization code in `index.js`.
 
 ```javascript
 
@@ -166,24 +166,24 @@ The below example shows a basic 3D Chart.
 
 ## Populate 3D Chart with data
 
-This section explains how to plot below JSON data to the 3D Chart.
+This section explains how to plot the following JSON data to the 3D Chart.
 
 ```javascript
 
 var chartData = [
-      { month: 'Jan', sales: 35 }, { month: 'Feb', sales: 28 },
-      { month: 'Mar', sales: 34 }, { month: 'Apr', sales: 32 },
-      { month: 'May', sales: 40 }, { month: 'Jun', sales: 32 },
-      { month: 'Jul', sales: 35 }, { month: 'Aug', sales: 55 },
-      { month: 'Sep', sales: 38 }, { month: 'Oct', sales: 30 },
-      { month: 'Nov', sales: 25 }, { month: 'Dec', sales: 32 }
+     { month: 'Jan', sales: 35 }, { month: 'Feb', sales: 28 },
+     { month: 'Mar', sales: 34 }, { month: 'Apr', sales: 32 },
+     { month: 'May', sales: 40 }, { month: 'Jun', sales: 32 },
+     { month: 'Jul', sales: 35 }, { month: 'Aug', sales: 55 },
+     { month: 'Sep', sales: 38 }, { month: 'Oct', sales: 30 },
+     { month: 'Nov', sales: 25 }, { month: 'Dec', sales: 32 }
 ];
 
 ```
 
-Add a series object to the 3D Chart by using [`series`](../api/chart3d/chart3dseriesmodel/) property. Now map the field names `month` and `sales` in the JSON data to the [`xName`](../api/chart3d/chart3dseriesmodel#xname) and [`yName`](../api/chart3d/chart3dseriesmodel#yname) properties of the series, then set the JSON data to [`dataSource`](../api/chart3d/chart3dseriesmodel#datasource) property.
+Add a series object to the 3D Chart by using the [`series`](../api/chart3d/chart3dseriesmodel) property. Map the JSON fields `month` and `sales` to the series [`xName`](../api/chart3d/chart3dseriesmodel#xname) and [`yName`](../api/chart3d/chart3dseriesmodel#yname) properties, and set the JSON array as the [`dataSource`](../api/chart3d/chart3dseriesmodel#datasource) property.
 
-Since the JSON contains category data, set the [`valueType`](../api/chart3d/chart3daxismodel#valuetype) for horizontal axis to Category. By default, the axis valueType is Numeric.
+Since the JSON contains category data, set the [`valueType`](../api/chart3d/chart3daxismodel#valuetype) for the horizontal axis (primaryXAxis) to `Category`. By default, the axis valueType is `Numeric`.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -211,7 +211,7 @@ The sales data are in thousands, so format the vertical axis label by adding `$`
 
 ## Add 3D Chart title
 
-You can add a title using [`title`](../api/chart3d/chart3DModel/#title) property to the 3D Chart to provide quick information to the user about the data plotted in the 3D Chart.
+You can add a title using the [`title`](../api/chart3d/chart3DModel#title) property to the 3D Chart to provide quick information to the user about the data plotted in the 3D Chart.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -226,7 +226,7 @@ You can add a title using [`title`](../api/chart3d/chart3DModel/#title) property
 
 ## Enable legend
 
-You can use legend for the 3D Chart by setting the [`visible`](../api/chart3d/chart3dlegendsettingsmodel#visible) property to true in [`legendSettings`](../api/chart3d/chart3DModel/#legendsettings) object.
+You can use legend for the 3D Chart by setting the [`visible`](../api/chart3d/chart3dlegendsettingsmodel#visible) property to `true` in [`legendSettings`](../api/chart3d/chart3DModel#legendsettings) object.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -241,7 +241,7 @@ You can use legend for the 3D Chart by setting the [`visible`](../api/chart3d/ch
 
 ## Add data label
 
-You can add data labels to improve the readability of the 3D Chart. This can be achieved by setting the [`visible`](../api/chart3d/chart3ddatalabelsettingsmodel#visible) property to true in the [`dataLabel`](../api/chart3d/chart3dseriesmodel#datalabel) object. Now, the data labels are arranged smartly based on series.
+You can add data labels to improve the readability of the 3D Chart. This can be achieved by setting the [`visible`](../api/chart3d/chart3ddatalabelsettingsmodel#visible) property to `true` in the [`dataLabel`](../api/chart3d/chart3dseriesmodel#datalabel) object. Now, the data labels are arranged smartly based on series.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -256,7 +256,7 @@ You can add data labels to improve the readability of the 3D Chart. This can be 
 
 ## Enable tooltip
 
-The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable tooltip by setting the [`enable`](../api/chart3d/chart3dtooltipsettingsmodel#enable) property as true in [`tooltip`](../api/chart3d/chart3DModel/#tooltip) object.
+The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable tooltip by setting the [`enable`](../api/chart3d/chart3dtooltipsettingsmodel#enable) property as `true` in [`tooltip`](../api/chart3d/chart3DModel#tooltip) object.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

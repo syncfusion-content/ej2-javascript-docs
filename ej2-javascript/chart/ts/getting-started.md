@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Chart control
 
-This section explains how to create a simple Chart and configure its available functionalities in TypeScript using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This document explains how to create a simple Chart and configure its features in TypeScript using the Essential JS 2 webpack [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack getting-started guide](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
@@ -31,12 +31,12 @@ Below is the list of minimum dependencies required to use the Chart.
 
 ## Set up development environment
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
+Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack).
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
 
-git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quickstart
 
 {% endhighlight %}
 {% endtabs %}
@@ -65,9 +65,9 @@ npm install
 {% endhighlight %}
 {% endtabs %}
 
-## Add Chart to the Project
+## Add chart to the project
 
-Open the application in Visual Studio Code and add the Syncfusion JavaScript UI controls.
+Open the project in Visual Studio Code and add the Chart to the application.
 
 Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.html` file to initialize the Chart.
 
@@ -98,7 +98,7 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 {% endhighlight %}
 {% endtabs %}
 
-Now import the Chart component into your `app.ts` to instantiate a chart and append the chart instance to the `#element` `[src/app/app.ts]`
+Import the Chart component into `[src/app/app.ts]` to instantiate and render the Chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -137,9 +137,9 @@ The below example shows a basic Chart.
           
 {% previewsample "page.domainurl/code-snippet/chart/getting-started-cs9" %}
 
-## Module Injection
+## Module injection
 
-Chart component are segregated into individual feature-wise modules. In order to use a particular feature, you need to inject its feature module using `Chart.Inject()` method. In the current application, we are going to modify the above basic chart to visualize sales data for a particular year. For this application we are going to use  line series, tooltip, data label, category axis and legend feature of the chart. Please find relevant feature module name and description as follows.
+Chart component are segregated into individual feature-wise modules. In order to use a particular feature, you need to inject its feature module using `Chart.Inject()` method. In the current application, we are going to modify the above basic chart to visualize sales data for a particular year. For this application we are going to use line series, tooltip, data label, category axis and legend feature of the chart. Please find relevant feature module name and description as follows.
 
 * LineSeries - Inject this provider to use line series.
 * Legend - Inject this provider to use legend feature.
@@ -147,40 +147,39 @@ Chart component are segregated into individual feature-wise modules. In order to
 * DataLabel - Inject this provider to use data label feature.
 * Category - Inject this provider to use category feature.
 
-Now import the above mentioned modules from chart package and inject it into the Chart component using
-`Chart.Inject`  method.
+Now import the above-mentioned modules from the chart package and inject them into the Chart component using `Chart.Inject` method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 
-import { Chart, LineSeries, Legend, Category, Tooltip } from '@syncfusion/ej2-charts';
-Chart.Inject(LineSeries, Legend, DataLabel, Tooltip, Category);
+import { Chart, LineSeries, Legend, DataLabel, Category, Tooltip } from '@syncfusion/ej2-charts';
+Chart.Inject(LineSeries, Legend, DataLabel, Category, Tooltip);
 
 {% endhighlight %}
 {% endtabs %}
 
-## Populate Chart With Data
+## Populate chart with data
 
-This section explains how to plot below JSON data to the chart.
+This section explains how to plot the following JSON data to the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 
-let chartData: any[] = [
-      { month: 'Jan', sales: 35 }, { month: 'Feb', sales: 28 },
-      { month: 'Mar', sales: 34 }, { month: 'Apr', sales: 32 },
-      { month: 'May', sales: 40 }, { month: 'Jun', sales: 32 },
-      { month: 'Jul', sales: 35 }, { month: 'Aug', sales: 55 },
-      { month: 'Sep', sales: 38 }, { month: 'Oct', sales: 30 },
-      { month: 'Nov', sales: 25 }, { month: 'Dec', sales: 32 }
+let chartData: Object[] = [
+    { month: 'Jan', sales: 35 }, { month: 'Feb', sales: 28 },
+    { month: 'Mar', sales: 34 }, { month: 'Apr', sales: 32 },
+    { month: 'May', sales: 40 }, { month: 'Jun', sales: 32 },
+    { month: 'Jul', sales: 35 }, { month: 'Aug', sales: 55 },
+    { month: 'Sep', sales: 38 }, { month: 'Oct', sales: 30 },
+    { month: 'Nov', sales: 25 }, { month: 'Dec', sales: 32 }
 ];
 
 {% endhighlight %}
 {% endtabs %}
 
-Add a series object to the chart by using [`series`](../api/chart/series/) property. Now map the field names `month` and `sales` in the JSON data to the [`xName`](../api/chart/series/#xname) and [`yName`](../api/chart/series/#yname) properties of the series, then set the JSON data to [`dataSource`](../api/chart/series/#datasource) property.
+Add a series object to the chart by using the [`series`](../api/chart/series) property. Map the JSON fields `month` and `sales` to the series [`xName`](../api/chart/series#xname) and [`yName`](../api/chart/series#yname) properties, and set the JSON array as the [`dataSource`](../api/chart/series#datasource) property.
 
-Since the JSON contains category data, set the [`valueType`](../api/chart/axisModel/#valuetype) for horizontal axis to Category. By default, the axis valueType is Numeric.
+Since the JSON contains category data, set the [`valueType`](../api/chart/axisModel#valuetype) for the horizontal axis (primaryXAxis) to `Category`. By default, the axis valueType is `Numeric`.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -193,7 +192,7 @@ Since the JSON contains category data, set the [`valueType`](../api/chart/axisMo
           
 {% previewsample "page.domainurl/code-snippet/chart/getting-started-cs10" %}
 
-The sales data are in thousands, so format the vertical axis label by adding `$` as a prefix and `K` as a suffix to each label. This can be achieved by setting the `${value}K` to the [`labelFormat`](../api/chart/axisModel/#labelformat) property of axis. Here, `{value}` act as a placeholder for each axis label.
+The sales data are in thousands, so format the vertical axis label by adding `$` as a prefix and `K` as a suffix to each label. This can be achieved by setting the `${value}K` to the [`labelFormat`](../api/chart/axisModel#labelformat) property of axis. Here, `{value}` act as a placeholder for each axis label.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -206,9 +205,9 @@ The sales data are in thousands, so format the vertical axis label by adding `$`
           
 {% previewsample "page.domainurl/code-snippet/chart/getting-started-cs11" %}
 
-## Add Chart Title
+## Add chart title
 
-You can add a title using [`title`](../api/chart/chartModel/#title) property to the chart to provide quick information to the user about the data plotted in the chart.
+You can add a title using the [`title`](../api/chart/chartModel#title) property to the chart to provide quick information to the user about the data plotted in the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -221,9 +220,9 @@ You can add a title using [`title`](../api/chart/chartModel/#title) property to 
           
 {% previewsample "page.domainurl/code-snippet/chart/getting-started-cs12" %}
 
-## Enable Legend
+## Enable legend
 
-You can use legend for the chart by setting the [`visible`](../api/chart/legendSettingsModel/#visible) property to true in [`legendSettings`](../api/chart/chartModel/#legendsettings) object and by injecting the `Legend` module using `Chart.Inject(Legend)` method.
+You can use legend for the chart by setting the [`visible`](../api/chart/legendSettingsModel#visible) property to `true` in [`legendSettings`](../api/chart/chartModel#legendsettings) object and by injecting the `Legend` module using `Chart.Inject(Legend)` method.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -236,9 +235,9 @@ You can use legend for the chart by setting the [`visible`](../api/chart/legendS
           
 {% previewsample "page.domainurl/code-snippet/chart/getting-started-cs13" %}
 
-## Add Data Label
+## Add data label
 
-You can add data labels to improve the readability of the chart. This can be achieved by setting the visible property to true in the dataLabel object and by injecting `DataLabel` module using `Chart.Inject(DataLabel)` method. Now, the data labels are arranged smartly based on series.
+You can add data labels to improve the readability of the chart. This can be achieved by setting the [`visible`](../api/chart/datalabelsettingsmodel#visible) property to `true` in the [`dataLabel`](../api/chart/markersettingsmodel#datalabel) object and by injecting `DataLabel` module using `Chart.Inject(DataLabel)` method. Now, the data labels are arranged smartly based on series.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -251,9 +250,9 @@ You can add data labels to improve the readability of the chart. This can be ach
           
 {% previewsample "page.domainurl/code-snippet/chart/getting-started-cs14" %}
 
-## Enable Tooltip
+## Enable tooltip
 
-The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable tooltip by setting the [`enable`](../api/chart/tooltipSettingsModel/#enable) property as true in [`tooltip`](../api/chart/chartModel/#tooltip) object and by injecting `Tooltip` module using `Chart.Inject(Tooltip)` method.
+The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable tooltip by setting the [`enable`](../api/chart/tooltipSettingsModel#enable) property as `true` in [`tooltip`](../api/chart/chartModel#tooltip) object and by injecting `Tooltip` module using `Chart.Inject(Tooltip)` method.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

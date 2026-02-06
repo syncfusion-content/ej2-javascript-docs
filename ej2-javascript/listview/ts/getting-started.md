@@ -3,7 +3,7 @@ layout: post
 title: Getting started with ##Platform_Name## ListView control | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: ListView 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -68,8 +68,8 @@ To render the ListView control, need to import lists and its dependent controlâ€
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
 
-@import "../../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-lists/styles/material.css";
+@import "../../node_modules/@syncfusion/ej2-base/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-lists/styles/fluent2.css";
 
 {% endhighlight %}
 {% endtabs %}

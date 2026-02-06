@@ -30,19 +30,19 @@ Use either of the following methods to reference the required scripts and styles
 **Syntax:**
 > Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
 >
-> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\tailwind3.css`
+> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\bootstrap5.3.css`
 
 **Example:**
 
 > Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-filemanager\dist\global\ej2-filemanager.min.js`
 >
-> Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-filemanager\styles\tailwind3.css`
+> Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-filemanager\styles\bootstrap5.3.css`
 
 The below located script and style file contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file.
 
 > Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
 >
-> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\styles\tailwind3.css`
+> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\styles\bootstrap5.3.css`
 
 **Step 3:** Create a folder `myapp/resources` and copy/paste the global scripts and styles from the above installed location to `myapp/resources` location.
 
@@ -54,15 +54,15 @@ The below located script and style file contains all Syncfusion<sup style="font-
        <head>
             <title>Essential JS 2 File Manager Control</title>
             <!-- File Manager and its dependent theme -->
-            <link href=" resources/ej2-base/styles/tailwind3.css" rel="stylesheet" />
-            <link href=" resources/ej2-inputs/styles/tailwind3.css" rel="stylesheet" />
-            <link href=" resources/ej2-popups/styles/tailwind3.css" rel="stylesheet" />
-            <link href=" resources/ej2-buttons/styles/tailwind3.css" rel="stylesheet" />
-            <link href=" resources/ej2-splitbuttons/styles/tailwind3.css" rel="stylesheet" />
-            <link href=" resources/ej2-layouts/styles/tailwind3.css" rel="stylesheet" />
-            <link href=" resources/ej2-navigations/styles/tailwind3.css" rel="stylesheet" />
-            <link href=" resources/ej2-grids/styles/tailwind3.css" rel="stylesheet" />
-            <link href=" resources/ej2-filemanager/styles/tailwind3.css" rel="stylesheet" />
+            <link href=" resources/ej2-base/styles/bootstrap5.3.css" rel="stylesheet" />
+            <link href=" resources/ej2-inputs/styles/bootstrap5.3.css" rel="stylesheet" />
+            <link href=" resources/ej2-popups/styles/bootstrap5.3.css" rel="stylesheet" />
+            <link href=" resources/ej2-buttons/styles/bootstrap5.3.css" rel="stylesheet" />
+            <link href=" resources/ej2-splitbuttons/styles/bootstrap5.3.css" rel="stylesheet" />
+            <link href=" resources/ej2-layouts/styles/bootstrap5.3.css" rel="stylesheet" />
+            <link href=" resources/ej2-navigations/styles/bootstrap5.3.css" rel="stylesheet" />
+            <link href=" resources/ej2-grids/styles/bootstrap5.3.css" rel="stylesheet" />
+            <link href=" resources/ej2-filemanager/styles/bootstrap5.3.css" rel="stylesheet" />
             <!-- Essential JS 2 File-Manager's global script -->
             <script src="resources/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
             <script src="resources/ej2-layouts/dist/global/ej2-layouts.min.js" type="text/javascript"></script>
@@ -82,7 +82,7 @@ The below located script and style file contains all Syncfusion<sup style="font-
   </html>
 ```
 
->Note: If you want to refer the combined control styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
+>Note: If you want to refer the combined control styles, please make use of our [`CRG`](https://crg.syncfusion.com) (Custom Resource Generator) in your application.
 
 **Step 5:** Add the `div` element and initialize the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 File Manager** component in the `index.html` using the following code
 
@@ -92,15 +92,15 @@ The below located script and style file contains all Syncfusion<sup style="font-
       <head>
             <title>Essential JS 2 File Manager Control</title>
             <!-- File Manager and its dependent theme -->
-            <link href=" resources/ej2-base/styles/tailwind3.css" rel="stylesheet" />
-            <link href=" resources/ej2-inputs/styles/tailwind3.css" rel="stylesheet" />
-            <link href=" resources/ej2-popups/styles/tailwind3.css" rel="stylesheet" />
-            <link href=" resources/ej2-buttons/styles/tailwind3.css" rel="stylesheet" />
-            <link href=" resources/ej2-splitbuttons/styles/tailwind3.css" rel="stylesheet" />
-            <link href=" resources/ej2-layouts/styles/tailwind3.css" rel="stylesheet" />
-            <link href=" resources/ej2-navigations/styles/tailwind3.css" rel="stylesheet" />
-            <link href=" resources/ej2-grids/styles/tailwind3.css" rel="stylesheet" />
-            <link href=" resources/ej2-filemanager/styles/tailwind3.css" rel="stylesheet" />
+            <link href=" resources/ej2-base/styles/bootstrap5.3.css" rel="stylesheet" />
+            <link href=" resources/ej2-inputs/styles/bootstrap5.3.css" rel="stylesheet" />
+            <link href=" resources/ej2-popups/styles/bootstrap5.3.css" rel="stylesheet" />
+            <link href=" resources/ej2-buttons/styles/bootstrap5.3.css" rel="stylesheet" />
+            <link href=" resources/ej2-splitbuttons/styles/bootstrap5.3.css" rel="stylesheet" />
+            <link href=" resources/ej2-layouts/styles/bootstrap5.3.css" rel="stylesheet" />
+            <link href=" resources/ej2-navigations/styles/bootstrap5.3.css" rel="stylesheet" />
+            <link href=" resources/ej2-grids/styles/bootstrap5.3.css" rel="stylesheet" />
+            <link href=" resources/ej2-filemanager/styles/bootstrap5.3.css" rel="stylesheet" />
             <!-- Essential JS 2 File-Manager's global script -->
             <script src="resources/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
             <script src="resources/ej2-layouts/dist/global/ej2-layouts.min.js" type="text/javascript"></script>
@@ -145,12 +145,12 @@ The below located script and style file contains all Syncfusion<sup style="font-
 **Syntax:**
 > Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Style: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/tailwind3.css`
+> Style: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/bootstrap5.3.css`
 
 **Example:**
 > Script: [`https://cdn.syncfusion.com/ej2/ej2-filemanager/dist/global/ej2-filemanager.min.js`](https://cdn.syncfusion.com/ej2/ej2-filemanager/dist/global/ej2-filemanager.min.js)
 >
-> Styles: [`https://cdn.syncfusion.com/ej2/ej2-filemanager/styles/tailwind3.css`](https://cdn.syncfusion.com/ej2/ej2-filemanager/styles/tailwind3.css)
+> Styles: [`https://cdn.syncfusion.com/ej2/ej2-filemanager/styles/bootstrap5.3.css`](https://cdn.syncfusion.com/ej2/ej2-filemanager/styles/bootstrap5.3.css)
 >
 
 **Step 2:** Add CDN global script and style references for the File Manager and its dependent packages in `myapp/index.html` as shown below.
@@ -161,15 +161,15 @@ The below located script and style file contains all Syncfusion<sup style="font-
       <head>
             <title>Essential JS 2 File Manager Control</title>
             <!-- File Manager and its dependent theme -->
-            <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-inputs/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-popups/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-buttons/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-splitbuttons/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-layouts/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-navigations/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-grids/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-filemanager/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-inputs/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-popups/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-buttons/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-splitbuttons/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-layouts/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-navigations/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-grids/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-filemanager/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
             <!-- Essential JS 2 File Manager's global script -->
             <script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
             <script src="https://cdn.syncfusion.com/ej2/ej2-layouts/dist/global/ej2-layouts.min.js" type="text/javascript"></script>

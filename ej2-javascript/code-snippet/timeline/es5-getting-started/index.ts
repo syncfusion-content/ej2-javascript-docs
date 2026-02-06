@@ -3,8 +3,8 @@
   <head>
     <title>Essential JS 2 - Timeline</title>
     <!-- Essential JS 2 Timeline's dependent material theme -->
-    <link href="resources/base/material.css" rel="stylesheet" type="text/css" />
-    <link href="resources/layouts/material.css" rel="stylesheet" type="text/css" />
+    <link href="resources/base/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/layouts/bootstrap5.3.css" rel="stylesheet" type="text/css" />
 
     <!-- Essential JS 2 Timeline's dependent global script -->
     <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>

@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 This section explains how to create the File Manager component and configure its features in TypeScript using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started).
 
 ## Dependencies
 
@@ -76,16 +76,16 @@ Import the File Manager and its dependent control styles in the `~/src/styles/st
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
 
-@import '../../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
-@import '../../node_modules/@syncfusion/ej2-icons/styles/tailwind3.css';
-@import '../../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
-@import '../../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
-@import '../../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-@import '../../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
-@import '../../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-@import '../../node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css';
-@import '../../node_modules/@syncfusion/ej2-grids/styles/tailwind3.css';
-@import '../../node_modules/@syncfusion/ej2-filemanager/styles/tailwind3.css';
+@import '../../node_modules/@syncfusion/ej2-base/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-icons/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-inputs/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-popups/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-buttons/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-splitbuttons/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-navigations/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-layouts/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-grids/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-filemanager/styles/fluent2.css';
 
 {% endhighlight %}
 {% endtabs %}

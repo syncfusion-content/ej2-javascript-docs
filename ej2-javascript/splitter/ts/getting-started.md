@@ -3,7 +3,7 @@ layout: post
 title: Getting started with ##Platform_Name## Splitter control | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Splitter control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: Splitter 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -68,8 +68,8 @@ The Splitter CSS files are available in the `ej2-layouts` package folder. This c
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
 
-@import '../../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-layouts/styles/material.css';
+@import '../../node_modules/@syncfusion/ej2-base/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-layouts/styles/fluent2.css';
 
 {% endhighlight %}
 {% endtabs %}

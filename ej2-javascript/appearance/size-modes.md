@@ -11,16 +11,16 @@ domainurl: ##DomainURL##
 
 # Size modes Size Mode for Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Controls
 
-An application that is designed to be accessed through a web browser on various devices, including desktop computers and mobile devices, may have a distinct layout or user interface on a mobile device compared to a desktop computer to better suit the smaller screen size.
+Applications accessed through web browsers on various devices, including desktop computers and mobile devices, benefit from distinct layouts or user interfaces optimized for different screen sizes. Mobile interfaces typically require larger touch targets and enhanced spacing to accommodate touch-based interactions.
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls support both touch (bigger) and normal size modes. Touch mode creates a responsive design for mobile devices by adding the `e-bigger` class, which enhances interactions, visibility, and the overall experience.
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls support both touch (bigger) and normal size modes. Touch mode creates a responsive design for mobile devices by applying the `e-bigger` class, which enhances touch interactions, improves visibility, and delivers a better overall user experience on touch-enabled devices.
 
 ## Size mode for application
 
 The user can enable touch mode (bigger) for the entire application by adding the `e-bigger` class to the `body` element in the `index.html` file as follows:
 
-  ```
-  <body className="e-bigger">
+  ```html
+  <body class="e-bigger">
     ...
   </body>
   ```
@@ -58,7 +58,7 @@ The user can enable touch mode (bigger) for a control by adding the `e-bigger` c
 
 ## Change size mode for application at runtime
 
-The user can change the size mode of the application between touch and normal (mouse) mode at runtime by adding and removing the `e-bigger` class. The following steps explain how to change the size mode of an application at runtime:
+The size mode of the application can be changed between touch and normal (mouse) mode at runtime by adding and removing the `e-bigger` class. The following example demonstrates how to change the size mode of an application at runtime:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -89,7 +89,7 @@ The user can change the size mode of the application between touch and normal (m
 
 ## Change size mode for a control at runtime
 
-The user can change the size mode of a control between touch and normal (mouse) mode at runtime by setting the `e-bigger` CSS class.
+The size mode of an individual control can be changed between touch and normal (mouse) mode at runtime by dynamically adding or removing the `e-bigger` CSS class.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -120,10 +120,10 @@ The user can change the size mode of a control between touch and normal (mouse) 
 
 ## See also
 
-* [Sidebar responsiveness](https://ej2.syncfusion.com/documentation/sidebar/auto-close/)
-* [DataGrid responsiveness](https://ej2.syncfusion.com/documentation/grid/columns/responsive-columns/)
+* [Sidebar responsiveness](https://ej2.syncfusion.com/documentation/sidebar/auto-close)
+* [DataGrid responsiveness](https://ej2.syncfusion.com/documentation/grid/columns/responsive-columns)
 * [TreeGrid responsiveness](https://ej2.syncfusion.com/documentation/treegrid/scrolling/#responsive-with-parent-container)
-* [Dashboard Layout responsiveness](https://ej2.syncfusion.com/documentation/dashboard-layout/responsive-adaptive/)
-* [Kanban responsiveness](https://ej2.syncfusion.com/documentation/kanban/responsive-mode/)
-* [Toolbar responsiveness](https://ej2.syncfusion.com/documentation/toolbar/responsive-mode/)
-* [Tab responsiveness](https://ej2.syncfusion.com/documentation/tab/adaptive/)
+* [Dashboard Layout responsiveness](https://ej2.syncfusion.com/documentation/dashboard-layout/responsive-adaptive)
+* [Kanban responsiveness](https://ej2.syncfusion.com/documentation/kanban/responsive-mode)
+* [Toolbar responsiveness](https://ej2.syncfusion.com/documentation/toolbar/responsive-mode)
+* [Tab responsiveness](https://ej2.syncfusion.com/documentation/tab/adaptive)

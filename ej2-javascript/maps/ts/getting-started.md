@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Maps control
 
-This section briefly explains how to create **Maps** component and configure its available functionalities in TypeScript using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section briefly explains how to create **Maps** control and configure its available functionalities in TypeScript using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 You can explore some useful features in the Maps control using the following video.
 
@@ -105,7 +105,7 @@ Import the Maps control in the `app.ts` to initialize a Maps and append the Maps
 
 import { Maps } from '@syncfusion/ej2-maps';
 
-// initialize Maps component
+// initialize Maps control
 let map: Maps = new Maps();
 
 // render initialized Map
@@ -124,12 +124,11 @@ npm start
 {% endhighlight %}
 {% endtabs %}
 
-As we didn't specify shapeData to the maps, no shape will be rendered and only an empty SVG element is appended to the maps container.
+Since no shapeData is specified for the Maps, no shapes will be rendered and only an empty SVG element is appended to the Maps container.
 
 ## Module Injection
 
-Maps component are segregated into individual feature-wise modules. In order to use a particular feature,
-you need to inject its feature module using `Maps.Inject()` method.  Find the modules available in maps and its description as follows.
+The Maps control is segregated into individual feature-wise modules. To use a particular feature, inject its feature module using the `Maps.Inject()` method. The following modules are available in Maps along with their descriptions.
 
 * Annotations - Inject this provider to use annotations feature.
 * Bubble - Inject this provider to use bubble feature.
@@ -141,12 +140,9 @@ you need to inject its feature module using `Maps.Inject()` method.  Find the mo
 * NavigationLine - Inject this provider to use navigation lines feature.
 * Selection - Inject this provider to use selection feature.
 * Zoom - Inject this provider to use zooming and panning feature.
+* Polygon - Inject this provider to use polygon feature.
 
-In the current application, we are going to modify the above basic maps to visualize 2016 USA president election results.
-
-For this application we are going to use tooltip, data label and legend features of the maps.
-
-Now import the MapsTooltip, DataLabel and Legend modules from maps package and inject it into the Maps component using `Maps.Inject` method.
+Now import the MapsTooltip, DataLabel and Legend modules from maps package and inject it into the Maps control using `Maps.Inject` method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -187,7 +183,7 @@ export let world_map: object =
 <!-- markdownlint-disable MD009 -->
 ``` 
 
-Elements in the maps will get rendered in the layers. So add a layer collection to the maps by using [`layers`](../api/maps/#layers) property. Now bind the GeoJSON data to the [`shapeData`](../api/maps/layerSettingsModel/#shapedata) property.
+Elements in the maps will get rendered in the layers. So add a layer collection to the maps by using [`layers`](../api/maps/layers) property. Now bind the GeoJSON data to the [`shapeData`](../api/maps/layerSettingsModel/shapedata) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -210,9 +206,9 @@ The following properties in layers are used for binding data source to map.
 * `shapeDataPath`
 * `shapePropertyPath`
 
-The [`dataSource`](../api/maps/layerSettingsModel/#datasource) property takes collection value as input. For example, the list of objects can be provided as input. This data is further used in tooltip, data label, bubble, legend and in color mapping.
+The [`dataSource`](../api/maps/layerSettingsModel/datasource) property takes a collection value as input. For example, a list of objects can be provided as input. This data is further used in tooltips, data labels, bubbles, legends, and color mapping.
 
-The [`shapeDataPath`](../api/maps/layerSettingsModel/#shapedatapath) property used to refer the data ID in dataSource. Where as, the [`shapePropertyPath`](../api/maps/layerSettingsModel/#shapepropertypath) property is used to refer the column name in shapeData to identify the shape. Both the properties are related to each other. When the values of the shapeDataPath property in the dataSource property and the value of shapePropertyPath in the shapeData property match, then the associated object from the dataSource is bound to the corresponding shape.
+The [`shapeDataPath`](../api/maps/layerSettingsModel/shapedatapath) property is used to refer to the data ID in the dataSource. The [`shapePropertyPath`](../api/maps/layerSettingsModel/shapepropertypath) property is used to refer to the column name in shapeData to identify the shape. Both properties are related to each other. When the values of the shapeDataPath property in the dataSource and the value of shapePropertyPath in the shapeData match, the associated object from the dataSource is bound to the corresponding shape.
 
 The JSON object "electionData" is used as data source below.
 
@@ -231,9 +227,9 @@ The JSON object "electionData" is used as data source below.
 
 ## Apply Color Mapping
 
-The Color Mapping feature supports customization of shape colors based on the underlying value of shape received from bounded data. Specify the field name from which the values have to be compared for the shapes in [`colorValuePath`](../api/maps/shapeSettingsModel/#colorvaluepath) property in [`shapeSettings`](../api/maps/shapeSettingsModel/).
+The Color Mapping feature supports customization of shape colors based on the underlying value of shape received from bounded data. Specify the field name from which the values have to be compared for the shapes in [`colorValuePath`](../api/maps/shapeSettingsModel/colorvaluepath) property in [`shapeSettings`](../api/maps/shapeSettingsModel/).
 
-Specify color and value in [`colorMapping`](../api/maps/shapeSettingsModel/#colormapping) property. Here '#D84444' is specified for 'Trump' and '#316DB5' is specified for 'Clinton'.
+Specify color and value in [`colorMapping`](../api/maps/shapeSettingsModel/colormapping) property. Here '#D84444' is specified for 'Trump' and '#316DB5' is specified for 'Clinton'.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -263,7 +259,7 @@ You can add a title using [`titleSettings`](../api/maps/titleSettingsModel/) pro
 
 ## Enable Legend
 
-You can show legend for the maps by setting true to the [`visible`](../api/maps/legendSettingsModel/#visible) property in [`legendSettings`](../api/maps/legendSettingsModel/) object and by injecting the `Legend` module using `Maps.Inject(Legend)` method.
+You can show legend for the maps by setting true to the [`visible`](../api/maps/legendSettingsModel/visible) property in [`legendSettings`](../api/maps/legendSettingsModel/) object and by injecting the `Legend` module using `Maps.Inject(Legend)` method.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -278,7 +274,7 @@ You can show legend for the maps by setting true to the [`visible`](../api/maps/
 
 ## Add Data Label
 
-You can add data labels to show additional information of the shapes in map. This can be achieved by setting [`visible`](../api/maps/dataLabelSettingsModel/#visible) property to true in the [`dataLabelSettings`](../api/maps/dataLabelSettingsModel/) object and by injecting `DataLabel` module using `Maps.Inject(DataLabel)` method.
+You can add data labels to show additional information of the shapes in map. This can be achieved by setting [`visible`](../api/maps/dataLabelSettingsModel/visible) property to true in the [`dataLabelSettings`](../api/maps/dataLabelSettingsModel/) object and by injecting `DataLabel` module using `Maps.Inject(DataLabel)` method.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -293,7 +289,7 @@ You can add data labels to show additional information of the shapes in map. Thi
 
 ## Enable Tooltip
 
-The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable tooltip by setting the [`visible`](../api/maps/tooltipSettingsModel/#visible) property as true in [`tooltipSettings`](../api/maps/tooltipSettingsModel/) object and by injecting `MapsTooltip` module using `Maps.Inject(MapsTooltip)` method.
+The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable tooltip by setting the [`visible`](../api/maps/tooltipSettingsModel/visible) property as true in [`tooltipSettings`](../api/maps/tooltipSettingsModel/) object and by injecting `MapsTooltip` module using `Maps.Inject(MapsTooltip)` method.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

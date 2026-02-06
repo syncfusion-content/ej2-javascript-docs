@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> releases new volumes once every three months, with exciting new features. There will be one Service Pack release for these volume releases. Service Pack releases are provided to address major bug fixes in the volume releases.
 
-You can upgrade to our latest version from any installed Syncfusion<sup style="font-size:70%">&reg;</sup> version.
+You can upgrade from any previous version — trial or licensed — to the latest release without uninstalling older versions.
 
 See our **"[Upgrade Guide](https://help.syncfusion.com/upgrade-guide/typescript)"** for JavaScript – EJ2 to learn more about the “Breaking Changes, Bug Fixes, Features and Knows Issues” between your current version and the latest version you are trying to upgrade.
 

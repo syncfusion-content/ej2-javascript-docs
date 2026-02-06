@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) library and Cordova
 
-This article provides a step-by-step introduction to configure Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) library and build it in the Cordova framework.
+This article provides a step-by-step guide to configure Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) in a Cordova application.
 
 ## Getting started with Cordova CLI
 

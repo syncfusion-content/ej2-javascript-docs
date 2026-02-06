@@ -1,3 +1,4 @@
+// initialize Rich Text Editor component
 var editor = new ej.richtexteditor.RichTextEditor({
     toolbarSettings: {
         items: ['Video']
@@ -9,6 +10,7 @@ var editor = new ej.richtexteditor.RichTextEditor({
     fileUploading: onFileUpload
 });
 
+// render initialized Rich Text Editor
 editor.appendTo('#editor');
 
 function onFileUpload (args) {

@@ -18,6 +18,7 @@ var editor1 = new ej.richtexteditor.RichTextEditor({
   },
 });
 
+// render initialized Rich Text Editor
 editor1.appendTo('#editor1');
 
 var editor2 = new ej.richtexteditor.RichTextEditor({
@@ -37,4 +38,5 @@ var editor2 = new ej.richtexteditor.RichTextEditor({
   </ul><div style="display: inline-block; width: 60%; vertical-align: top; cursor: auto;"></div> `,
 });
 
+// render initialized Rich Text Editor
 editor2.appendTo('#editor2');

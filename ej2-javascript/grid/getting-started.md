@@ -32,11 +32,7 @@ Following is the list of minimum dependencies required to use the grid.
 
 ## Setup for local development
 
-<<<<<<< HEAD
 Clone the Essential<sup style="font-size:70%">&reg;</sup> JS 2 quickstart application project from [GitHub](https://github.com/syncfusion/ej2-quickstart.git), and install the necessary npm packages using the following command line scripts.
-=======
-Clone the Essential JS 2 quickstart application project from [GitHub](https://github.com/syncfusion/ej2-quickstart), and install the necessary npm packages using the following command line scripts.
->>>>>>> dffb264cd8572d95b7b8d4750a807381c4a16357
 
 ```
 git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
@@ -92,7 +88,7 @@ Combined CSS files are available in the Essential<sup style="font-size:70%">&reg
 @import '../../node_modules/@syncfusion/ej2/material.css';
 ```
 
-> To know about individual component CSS, please refer to [Individual Component theme files](../appearance/theme/#referring-individual-control-theme) section.
+> To know about individual component CSS, please refer to [Individual Component theme files](../appearance/theme#referring-individual-control-theme) section.
 
 ## Adding Grid component
 
@@ -154,20 +150,20 @@ Now, add an HTML div element to act as the grid element in **index.html** using 
 
 To create grids with additional features, inject the required modules. The following modules are used to extend grid's basic functionality.
 
-* [`Page`](../api/grid/page/) - Inject this module to use paging feature.
-* [`Sort`](../api/grid/sort/) - Inject this module to use sorting feature.
-* [`Filter`](../api/grid/filter/) - Inject this module to use filtering feature.
-* [`Group`](../api/grid/group/) - Inject this module to use grouping feature.
+* [`Page`](../api/grid/page) - Inject this module to use paging feature.
+* [`Sort`](../api/grid/sort) - Inject this module to use sorting feature.
+* [`Filter`](../api/grid/filter) - Inject this module to use filtering feature.
+* [`Group`](../api/grid/group) - Inject this module to use grouping feature.
 * **ExcelExport** - Inject this module to use Excel export feature.
 * **PdfExport** - Inject this module to use PDF export feature.
 
 These modules should be injected into the grid using the **Grid.Inject** method.
 
-> Additional feature modules are available [`here`](../grid/module/).
+> Additional feature modules are available [`here`](../grid/module).
 
 ## Enable paging
 
-The paging feature enables users to view the grid record in a paged view. It can be enabled by setting the  [`allowPaging`](../api/grid/#allowpaging) property to true. Inject the [`Page`](../api/grid/page/) module as follows. If the [`Page`](../api/grid/page/) module is not injected, the pager will not be rendered in the grid. Pager can be customized using the [`pageSettings`](../api/grid/pageSettings/) property.
+The paging feature enables users to view the grid record in a paged view. It can be enabled by setting the  [`allowPaging`](../api/grid#allowpaging) property to true. Inject the [`Page`](../api/grid/page) module as follows. If the [`Page`](../api/grid/page) module is not injected, the pager will not be rendered in the grid. Pager can be customized using the [`pageSettings`](../api/grid/pageSettings) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -198,8 +194,8 @@ The paging feature enables users to view the grid record in a paged view. It can
 
 ## Enable sorting
 
-The sorting feature enables you to order the records. It can be enabled by setting the  [`allowSorting`](../api/grid/#allowsorting) property as true. Inject the [`Sort`](../api/grid/sort/)
-  module as follows. If [`Sort`](../api/grid/sort/) module is not injected, you cannot sort when a header is clicked. Sorting feature can be customized using the  [`sortSettings`](../api/grid/sortSettings/) property.
+The sorting feature enables you to order the records. It can be enabled by setting the  [`allowSorting`](../api/grid#allowsorting) property as true. Inject the [`Sort`](../api/grid/sort)
+  module as follows. If [`Sort`](../api/grid/sort) module is not injected, you cannot sort when a header is clicked. Sorting feature can be customized using the  [`sortSettings`](../api/grid/sortSettings) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -230,8 +226,8 @@ The sorting feature enables you to order the records. It can be enabled by setti
 
 ## Enable filtering
 
-The filtering feature enables you to view reduced amount of records based on filter criteria. It can be enabled by setting the [`allowFiltering`](../api/grid/#allowfiltering) property as true.  The [`Filter`](../api/grid/filter/) module has to be injected as follows.
- If [`Filter`](../api/grid/filter/) module is not injected,  filter bar will not be rendered in the grid. Filtering feature can be customized using the [`filterSettings`](../api/grid/filterSettings/) property.
+The filtering feature enables you to view reduced amount of records based on filter criteria. It can be enabled by setting the [`allowFiltering`](../api/grid#allowfiltering) property as true.  The [`Filter`](../api/grid/filter) module has to be injected as follows.
+ If [`Filter`](../api/grid/filter) module is not injected,  filter bar will not be rendered in the grid. Filtering feature can be customized using the [`filterSettings`](../api/grid/filterSettings) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -262,7 +258,7 @@ The filtering feature enables you to view reduced amount of records based on fil
 
 ## Enable grouping
 
-The grouping feature enables users to view the grid record in a grouped view. It can be enabled by setting the [`allowGrouping`](../api/grid/#allowgrouping) property to true. The [`Group`](../api/grid/group/) module has to be injected as follows. If [`Group`](../api/grid/group/) module is not injected, the group drop area will not be rendered in the grid. Grouping feature can be customized using the [`groupSettings`](../api/grid/groupSettings/) property.
+The grouping feature enables users to view the grid record in a grouped view. It can be enabled by setting the [`allowGrouping`](../api/grid#allowgrouping) property to true. The [`Group`](../api/grid/group) module has to be injected as follows. If [`Group`](../api/grid/group) module is not injected, the group drop area will not be rendered in the grid. Grouping feature can be customized using the [`groupSettings`](../api/grid/groupSettings) property.
 
 {% if page.publishingplatform == "typescript" %}
 

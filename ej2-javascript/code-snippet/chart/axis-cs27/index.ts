@@ -3,7 +3,7 @@
 
 import { Chart, AreaSeries } from '@syncfusion/ej2-charts';
 Chart.Inject(AreaSeries);
-let chartData: any[] = [
+let chartData: Object[] = [
     { x: 1, y: 7 }, { x: 2, y: 1 }, { x: 3, y: 1 },
     { x: 4, y: 14 }, { x: 5, y: 1 }, { x: 6, y: 10 },
     { x: 7, y: 8 }, { x: 8, y: 6 }, { x: 9, y: 10 },

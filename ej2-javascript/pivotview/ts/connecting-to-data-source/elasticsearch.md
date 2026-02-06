@@ -97,7 +97,7 @@ This section explains how to connect the Pivot Table component to an Elasticsear
 2. Ensure your Typescript project is configured with the necessary EJ2 Pivot Table dependencies.
 
 ### Step 2: Configure the Web API URL in the Pivot Table
-1. In the **App.tsx** or **App.jsx** file, map the Web API URL (`https://localhost:44323/Pivot`) to the Pivot Table using the [url](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings#url) property within the [dataSourceSettings](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings).
+1. In the **app.ts** file, map the Web API URL (`https://localhost:44323/Pivot`) to the Pivot Table using the [url](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings#url) property within the [dataSourceSettings](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings).
 2. Below is the sample code to configure the Pivot Table to fetch data from the Web API:
 
 ```ts
@@ -115,11 +115,11 @@ pivotObj.appendTo('#PivotView');
 ```
 
 ### Step 3: Define the Pivot Table Report
-1. Configure the Pivot Table report in the **App.tsx** or **App.jsx** file to structure the data retrieved from the Elasticsearch database.
+1. Configure the Pivot Table report in the **app.ts** file to structure the data retrieved from the Elasticsearch database.
 2. Add fields to the [rows](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings#rows), [columns](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings#columns), [values](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings#values), and [filters](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings#filters) properties of [dataSourceSettings](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings) to define the report structure, specifying how data fields are organized and aggregated in the Pivot Table.
 3. Enable the field list by setting the [showFieldList](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#showfieldlist) property to **true** and including the `FieldList` module in the services section. This allows users to dynamically add or rearrange fields across the columns, rows, and values axes using an interactive user interface.
 
-Here’s the updated sample code for **App.jsx** with the report configuration and field list support:
+Here’s the updated sample code for **app.ts** with the report configuration and field list support:
 
 ```ts
 import { PivotView, FieldList } from '@syncfusion/ej2-pivotview';

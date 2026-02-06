@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Export in ##Platform_Name## Diagram control
 
-Diagram provides support to export its content as image/svg files. The [`exportDiagram`](../api/diagram/index-default#exportdiagram) method of diagram helps to export the diagram. The following code illustrates how to export the diagram as image.
+Diagram provides support to export its content as image/svg files. The [`exportDiagram`](../api/diagram/#exportdiagram) method of diagram helps to export the diagram. The following code illustrates how to export the diagram as image.
 
 N> To Export diagram, you need to inject `PrintAndExport` in the diagram.
 
@@ -30,7 +30,7 @@ diagram.exportDiagram(options);
 
 ## Exporting options
 
-The diagram provides support to export the desired region of the diagram to various formats. The following table shows the list of [`exportOptions`](../api/diagram/iExportOptions) in diagram.
+The diagram provides support to export the desired region of the diagram to various formats. The following table shows the list of [`exportOptions`](../api/diagram/iExportOptions/) in diagram.
 
 | Name | Type | Description|
 |-------- | -------- | -------- |
@@ -48,7 +48,7 @@ The diagram provides support to export the desired region of the diagram to vari
 
 ### File Name
 
-[`FileName`](../api/diagram/iExportOptions#fileName) is the name of the file to be downloaded. By default, the file name is set to **Diagram**.
+[`FileName`](../api/diagram/iExportOptions#fileName-string) is the name of the file to be downloaded. By default, the file name is set to **Diagram**.
 
 ### Format
 
@@ -112,7 +112,7 @@ diagram.appendTo('#element');
 
 ### Region
 
-Exporting particular region of diagram is possible by using the [`region`](../api/diagram/iexportoptions#region) property of the [`exportOptions`](../api/diagram/iExportOptions). The available export regions are listed in the table below.
+Exporting particular region of diagram is possible by using the [`region`](../api/diagram/iExportOptions/#region) property of the [`exportOptions`](../api/diagram/iExportOptions/). The available export regions are listed in the table below.
 
 | Region | Description |
 |-------- | -------- |
@@ -133,11 +133,11 @@ The following example shows how to export diagram with different regions.
         
 {% previewsample "page.domainurl/code-snippet/diagram/export-cs-3" %}
 
-N> The [`bounds`](../api/diagram/iexportoptions#bounds) property of [`exportOptions`](../api/diagram/iExportOptions) should be defined to export the diagram with CustomBounds region.
+N> The [`bounds`](../api/diagram/iExportOptions/#bounds) property of [`exportOptions`](../api/diagram/iExportOptions/) should be defined to export the diagram with CustomBounds region.
 
 ### MultiplePage
 
-When the [`multiplePage`](../api/diagram/iexportoptions#multiplepage) option is set to false, the diagram is exported as a single image. When it set to true, the diagram is exported as multiple images based on its width and height.
+When the [`multiplePage`](../api/diagram/iExportOptions/#multiplepage) option is set to false, the diagram is exported as a single image. When it set to true, the diagram is exported as multiple images based on its width and height.
 
 The following code example demonstrates how to export the diagram as multiple images.
 
@@ -154,7 +154,7 @@ The following code example demonstrates how to export the diagram as multiple im
 
 ### Export image
 
-You can pass the base64 data of an image to the [`exportImage`](../api/diagram/index-default#exportimage) method to export it directly. The following example shows how to export base64 data using the `exportImage` method.
+You can pass the base64 data of an image to the [`exportImage`](../api/diagram/#exportimage) method to export it directly. The following example shows how to export base64 data using the `exportImage` method.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -169,7 +169,7 @@ You can pass the base64 data of an image to the [`exportImage`](../api/diagram/i
 
 ### Get diagram content
 
-To get the html diagram content, the [`getDiagramContent`](../api/diagram/index-default#getdiagramcontent) method is used. the following example shows how to get the diagram content at runtime.
+To get the html diagram content, the [`getDiagramContent`](../api/diagram/#getdiagramcontent) method is used. the following example shows how to get the diagram content at runtime.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -184,7 +184,7 @@ To get the html diagram content, the [`getDiagramContent`](../api/diagram/index-
 
 ### Export diagram with stretch option
 
-Diagram provides support to export the diagram as image for [`stretch`](../api/diagram/iexportoptions#stretch) option. The exported images will be clearer but larger in file size.
+Diagram provides support to export the diagram as image for [`stretch`](../api/diagram/iExportOptions/#stretch) option. The exported images will be clearer but larger in file size.
 
 The following code example illustrates how to export the region occupied by the diagram elements.
 

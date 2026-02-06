@@ -15,11 +15,10 @@ Syncfusion's<sup style="font-size:70%">&reg;</sup> icon library is a collection 
 
 ## Referring icons in JavaScript application
 
-Using the below approaches, the icons can be referenced in the JavaScript application.
+The icons can be referenced in a JavaScript application using the following approaches:
 
-* [npm package](#the-npm-package) - Use the npm package to access icons.
-
-* [CDN reference](#cdn-reference) - Use the static web asset to access icons.
+* [npm package](#the-npm-package) - Install and import icons locally via npm.
+* [CDN reference](#cdn-reference) - Load icons from the Syncfusion CDN as a static web asset.
 
 ### The npm package
 
@@ -47,18 +46,18 @@ Refer to the following syntax to use icons in a JavaScript application:
 
 ### CDN reference
 
-All Syncfusion<sup style="font-size:70%">&reg;</sup> theme icons are available on the CDN. Instead of using a local resource on the server, use a cloud CDN to refer to the icons.
+All Syncfusion<sup style="font-size:70%">&reg;</sup> theme icons are available on the CDN. Using the CDN avoids hosting local assets and ensures consistent delivery across environments.
 
 Make sure that the version of the icons in the URL matches the version of the Syncfusion<sup style="font-size:70%">&reg;</sup> React package. This will prevent compatibility issues and ensure that the correct version of the icons is loaded.
 
-To use the icons from the CDN, refer to the icons by URLs in the application. This can be done by linking the icons in the HTML file by adding a link tag to the head section.
+To use the icons from the CDN, add a link tag to the page head that references the desired theme CSS file. Example links shown below are for illustration only—update the version segment to match the project's installed Syncfusion packages.
 
 ```
 // Bootstrap5
 <head>
     <link href="https://cdn.syncfusion.com/ej2/32.1.19/ej2-icons/styles/bootstrap5.css" rel="stylesheet"/>
 </head>
-//Material
+// Material
 <head>
     <link href="https://cdn.syncfusion.com/ej2/32.1.19/ej2-icons/styles/material.css" rel="stylesheet"/>
 </head>
@@ -68,7 +67,7 @@ To use the icons from the CDN, refer to the icons by URLs in the application. Th
 
 Let's create a JavaScript application using the following command:
 
-For an introduction and configuration of the common specifications, see [getting started with the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript application](https://ej2.syncfusion.com/react/documentation/getting-started/quick-start/).
+For an introduction and configuration of the common specifications, see [getting started with the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript application](https://ej2.syncfusion.com/react/documentation/getting-started/quick-start).
 
 ### Using icons directly in HTML element
 
@@ -166,7 +165,7 @@ In the example below, the icon color is customized with custom color.
 
 ## Available icons
 
-The complete package of Essential<sup style="font-size:70%">&reg;</sup> JS 2 icons is listed below. The corresponding icon content can be referred in the content section.
+The complete package of Essential<sup style="font-size:70%">&reg;</sup> JS 2 icons is listed below. Each section contains an interactive demo of the available icon set.
 
 <!-- markdownlint-disable MD033 -->
 

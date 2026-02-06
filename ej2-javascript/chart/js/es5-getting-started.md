@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Chart control | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more details.
+title: ES5 getting started with ##Platform_Name## Chart control | Syncfusion
+description:  Checkout and learn about ES5 getting started with ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Es5 getting started 
+control: ES5 getting started 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Chart control
+# ES5 getting started in ##Platform_Name## Chart control
 
-This section explains you the steps required to create a simple chart and demonstrate the basic usage of the chart control.
+This section explains the steps required to create a simple chart and demonstrates the basic usage of the chart control.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/javascript/documentation/ai-coding-assistant/overview)
 
@@ -31,17 +31,17 @@ Below is the list of minimum dependencies required to use the Chart.
 
 ## Setup for local environment
 
-Refer the following steps for setup your local environment.
+Follow these steps to set up your local environment.
 
 **Step 1:** Create a root folder **myapp** for your application.
 
 **Step 2:** Create **myapp/resources** folder to store local scripts and styles files.
 
-**Step 3:** Create **myapp/index.js** and **myapp/index.html** files for initializing Essential JS 2 Chart control.
+**Step 3:** Create **myapp/index.js** and **myapp/index.html** files for initializing the Syncfusion Essential JS 2 Chart control.
 
 ## Adding Syncfusion resources
 
-The Essential JS 2 Chart control can be initialized by using either of the following ways.
+The Syncfusion Essential JS 2 Chart control can be initialized in either of the following ways:
 
 * Using local script.
 * Using CDN link for script.
@@ -52,23 +52,23 @@ You can get the global scripts and styles from the [Essential Studio JavaScript 
 
 After installing the Essential JS 2 product build, you can copy the chart and its dependencies scripts and style file into the **resources/scripts** and **resources/styles** folder.
 
-Refer the below code to find location chart's script and style file.
+The following shows the path to the chart's script and style files.
 
 **Syntax:**
 
-> Dependency script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{DEPENDENCY_PACKAGE_NAME}/dist/global/{DEPENDENCY_PACKAGE_NAME}.min.js`
+> Dependency script: `**(installed location)**/Syncfusion/Essential Studio/JavaScript - EJ2/{RELEASE_VERSION}/Web (Essential JS 2)/JavaScript/{DEPENDENCY_PACKAGE_NAME}/dist/global/{DEPENDENCY_PACKAGE_NAME}.min.js`
 >
-> Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+> Script: `**(installed location)**/Syncfusion/Essential Studio/JavaScript - EJ2/{RELEASE_VERSION}/Web (Essential JS 2)/JavaScript/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
 
 **Example:**
 
-> Dependency script: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-base/dist/global/ej2-base.min.js`
+> Dependency script: `C:/Program Files (x86)/Syncfusion/Essential Studio/JavaScript - EJ2/32.1.19/Web (Essential JS 2)/JavaScript/ej2-base/dist/global/ej2-base.min.js`
 >
-> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-charts/dist/global/ej2-charts.min.js`
+> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/JavaScript - EJ2/32.1.19/Web (Essential JS 2)/JavaScript/ej2-charts/dist/global/ej2-charts.min.js`
 >
 
-After copying the files, then you can refer the chart's scripts into the `index.html` file.The below html code example shows the minimal dependency of chart.
+After copying the files, reference the chart scripts from `index.html`. The following HTML shows the minimal chart dependencies.
 
 ```
 
@@ -95,7 +95,7 @@ After copying the files, then you can refer the chart's scripts into the `index.
 
 Using CDN link, you can directly refer the chart control's script into the `index.html`.
 
-Refer the chart's CDN links as below
+Refer the chart's CDN links as below.
 
 **Syntax:**
 
@@ -105,7 +105,7 @@ Refer the chart's CDN links as below
 
 > Script: [`http://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js`](http://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js)
 
-The below html code example shows the minimal dependency of chart.
+The following HTML shows the minimal chart dependencies using CDN scripts.
 
 ```html
 <!DOCTYPE html>
@@ -152,7 +152,7 @@ The below html code example shows the minimal dependency of chart.
 
 Now, you can start adding Chart control in the application. For getting started, add a **div** element for Chart control in **index.html**. Then refer the **index.js** file into the **index.html** file.
 
-In this document context we are going to use **ej2.min.js** which includes all the Essential JS 2 components and its dependent scripts.
+This document uses `ej2.min.js`, which includes all Essential JS 2 components and dependencies.
 
 ```html
 <!DOCTYPE html>
@@ -171,7 +171,7 @@ In this document context we are going to use **ej2.min.js** which includes all t
 
 ```
 
-Place the following chart code in the **index.js**.
+Place the following chart initialization code in `index.js`.
 
 ```javascript
 
@@ -193,27 +193,26 @@ The below example shows a basic Chart.
         
 {% previewsample "page.domainurl/code-snippet/chart/getting-started-cs2" %}
 
-## Populate Chart With Data
+## Populate chart with data
 
-This section explains how to plot below JSON data to the chart.
+This section explains how to plot the following JSON data to the chart.
 
 ```javascript
 
 var chartData = [
-      { month: 'Jan', sales: 35 }, { month: 'Feb', sales: 28 },
-      { month: 'Mar', sales: 34 }, { month: 'Apr', sales: 32 },
-      { month: 'May', sales: 40 }, { month: 'Jun', sales: 32 },
-      { month: 'Jul', sales: 35 }, { month: 'Aug', sales: 55 },
-      { month: 'Sep', sales: 38 }, { month: 'Oct', sales: 30 },
-      { month: 'Nov', sales: 25 }, { month: 'Dec', sales: 32 }
+    { month: 'Jan', sales: 35 }, { month: 'Feb', sales: 28 },
+    { month: 'Mar', sales: 34 }, { month: 'Apr', sales: 32 },
+    { month: 'May', sales: 40 }, { month: 'Jun', sales: 32 },
+    { month: 'Jul', sales: 35 }, { month: 'Aug', sales: 55 },
+    { month: 'Sep', sales: 38 }, { month: 'Oct', sales: 30 },
+    { month: 'Nov', sales: 25 }, { month: 'Dec', sales: 32 }
 ];
 
 ```
 
-Add a series object to the chart by using [`series`](../api/chart/series/) property. Now map the field names `month` and `sales` in the JSON data to the [`xName`](../api/chart/series/#xname) and [`yName`](../api/chart/series/#yname) properties of the series, then set the JSON data to
-[`dataSource`](../api/chart/series/#datasource) property.
+Add a series object to the chart by using the [`series`](../api/chart/series) property. Map the JSON fields `month` and `sales` to the series [`xName`](../api/chart/series#xname) and [`yName`](../api/chart/series#yname) properties, and set the JSON array as the [`dataSource`](../api/chart/series#datasource) property.
 
-Since the JSON contains category data, set the [`valueType`](../api/chart/axisModel/#valuetype) for horizontal axis to Category. By default, the axis valueType is Numeric.
+Since the JSON contains category data, set the [`valueType`](../api/chart/axisModel#valuetype) for the horizontal axis (primaryXAxis) to `Category`. By default, the axis valueType is `Numeric`.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -226,7 +225,7 @@ Since the JSON contains category data, set the [`valueType`](../api/chart/axisMo
         
 {% previewsample "page.domainurl/code-snippet/chart/getting-started-cs3" %}
 
-The sales data are in thousands, so format the vertical axis label by adding `$` as a prefix and `K` as a suffix to each label. This can be achieved by setting the `${value}K` to the [`labelFormat`](../api/chart/axisModel/#labelformat) property of axis. Here, `{value}` act as a placeholder for each axis label.
+The sales data are in thousands, so format the vertical axis label by adding `$` as a prefix and `K` as a suffix to each label. This can be achieved by setting the `${value}K` to the [`labelFormat`](../api/chart/axisModel#labelformat) property of axis. Here, `{value}` act as a placeholder for each axis label.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -239,9 +238,9 @@ The sales data are in thousands, so format the vertical axis label by adding `$`
         
 {% previewsample "page.domainurl/code-snippet/chart/getting-started-cs4" %}
 
-## Add Chart Title
+## Add chart title
 
-You can add a title using [`title`](../api/chart/chartModel/#title) property to the chart to provide quick information to the user about the data plotted in the chart.
+You can add a title using the [`title`](../api/chart/chartModel#title) property to the chart to provide quick information to the user about the data plotted in the chart.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -254,9 +253,9 @@ You can add a title using [`title`](../api/chart/chartModel/#title) property to 
         
 {% previewsample "page.domainurl/code-snippet/chart/getting-started-cs5" %}
 
-## Enable Legend
+## Enable legend
 
-You can use legend for the chart by setting the [`visible`](../api/chart/legendSettingsModel/#visible) property to true in [`legendSettings`](../api/chart/chartModel/#legendsettings) object.
+You can use legend for the chart by setting the [`visible`](../api/chart/legendSettingsModel#visible) property to `true` in [`legendSettings`](../api/chart/chartModel#legendsettings) object.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -269,9 +268,9 @@ You can use legend for the chart by setting the [`visible`](../api/chart/legendS
         
 {% previewsample "page.domainurl/code-snippet/chart/getting-started-cs6" %}
 
-## Add Data Label
+## Add data label
 
-You can add data labels to improve the readability of the chart. This can be achieved by setting the visible property to true in the dataLabel object. Now, the data labels are arranged smartly based on series.
+You can add data labels to improve the readability of the chart. This can be achieved by setting the [`visible`](../api/chart/datalabelsettingsmodel#visible) property to `true` in the [`dataLabel`](../api/chart/markersettingsmodel#datalabel) object. Now, the data labels are arranged smartly based on series.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -284,9 +283,9 @@ You can add data labels to improve the readability of the chart. This can be ach
         
 {% previewsample "page.domainurl/code-snippet/chart/getting-started-cs7" %}
 
-## Enable Tooltip
+## Enable tooltip
 
-The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable tooltip by setting the [`enable`](../api/chart/tooltipSettingsModel/#enable) property as true in [`tooltip`](../api/chart/chartModel/#tooltip) object.
+The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable tooltip by setting the [`enable`](../api/chart/tooltipSettingsModel#enable) property as `true` in [`tooltip`](../api/chart/chartModel#tooltip) object.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

@@ -11,11 +11,9 @@ domainurl: ##DomainURL##
 
 # Updating Syncfusion<sup style="font-size:70%">&reg;</sup> npm packages
 
-Keeping Syncfusion<sup style="font-size:70%">&reg;</sup> npm packages up to date is important to ensure that you have access to the latest features and bug fixes. The [`npm-check-updates`](https://www.npmjs.com/package/npm-check-updates) package is a helpful tool that can be used to update your Syncfusion<sup style="font-size:70%">&reg;</sup> packages to their latest versions.
+Keeping Syncfusion<sup style="font-size:70%">&reg;</sup> packages up to date ensures access to new features, bug fixes, performance improvements, and security patches.
 
-Updating All Syncfusion<sup style="font-size:70%">&reg;</sup> Packages
-
-To update all Syncfusion<sup style="font-size:70%">&reg;</sup> packages, you can install the `npm-check-updates` package globally by running the following command,
+The recommended tool for bulk updates is [`npm-check-updates`](https://www.npmjs.com/package/npm-check-updates) (`ncu`), which safely updates version ranges in `package.json`.
 
 ```bash
 npm install -g npm-check-updates

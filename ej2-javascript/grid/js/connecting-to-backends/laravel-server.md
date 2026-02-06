@@ -66,9 +66,11 @@ Error during command execution. The corresponding tool may not be installed or c
 
 Follow these steps to create a new Laravel application:
 
+Open the terminal in Visual Studio Code or Command Prompt before running the steps and commands below to create a new Laravel application.
+
 ### Step 1: Create a new PHP with Laravel project
 
-Open your terminal and run the following command to create a new Laravel project using Composer:
+Run the following command to create a new Laravel project using Composer:
 
 ```bash
 composer create-project laravel/laravel grid-demo
@@ -345,7 +347,7 @@ class DatabaseSeeder extends Seeder
 }
 ```
 
-Run the seeder with the following command:
+Run the seeder with the following command in the Visual Studio Code terminal or Command Prompt:
 
 ```bash
 php artisan migrate:fresh --seed
@@ -574,7 +576,7 @@ private function applyWhere($query, array $where)
 }
 ```
 
-For the complete implementation, refer to the [applyWhere()](https://github.com/SyncfusionExamples/syncfusion-grid-component-in-laravel/blob/master/app/Http/Controllers/ServerController.php#L119) method.
+For the complete implementation, refer to the [applyWhere()](https://github.com/SyncfusionExamples/syncfusion-grid-component-in-php-laravel/blob/master/app/Http/Controllers/ServerController.php#L119) method.
 
 The "applyOperator()" method maps individual Grid filter operators to SQL operations, applying them to the database query and supporting all standard comparison types.
 
@@ -659,7 +661,7 @@ private function applyOperator($q, $method, $field, $operator, $value, $ignoreCa
 }
 ```
 
-For the complete implementation, refer to the [applyOperator()](https://github.com/SyncfusionExamples/syncfusion-grid-component-in-laravel/blob/master/app/Http/Controllers/ServerController.php#L151) method.
+For the complete implementation, refer to the [applyOperator()](https://github.com/SyncfusionExamples/syncfusion-grid-component-in-php-laravel/blob/master/app/Http/Controllers/ServerController.php#L151) method.
 
 ### Searching
 
@@ -954,7 +956,7 @@ public function remove(Request $request)
 
 ## Running the application
 
-Start the Laravel development server using the following command:
+Start the Laravel development server by running the following command in the Visual Studio Code terminal or Command Prompt:
 
 ```bash
 php artisan serve
@@ -962,11 +964,9 @@ php artisan serve
 
 The application is now accessible at `http://localhost:8000`. The Grid displays student data from the database and enables filtering, searching, sorting, paging, and CRUD operations through the `UrlAdaptor` and Laravel API endpoints.
 
-## GitHub sample
+## Complete sample repository
 
-For a complete working implementation of this example, refer to the GitHub repository:
-
-[Syncfusion DataGrid with Laravel Sample](https://github.com/SyncfusionExamples/syncfusion-grid-component-in-laravel)
+A complete, working sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/syncfusion-grid-component-in-php-laravel).
 
 The repository contains the complete Laravel backend implementation with all ServerController methods, API routes, database models, and migrations.
 

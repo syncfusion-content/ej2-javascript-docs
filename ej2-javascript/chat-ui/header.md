@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Header in ##Platform_Name## Chat UI control
 
-## Header visibility
+## Show or hide header
 
-The `showHeader` property enables or disables the Chat header. When enabled, the header can display a title and an icon using the [headerText](../api/chat-ui#headertext) and [headerIconCss](../api/chat-ui#headericoncss) properties, respectively.
+You can use [showHeader](../api/chat-ui#showheader) property to enable or disable the chat header. It contains the following options [headerText](../api/chat-ui#headertext) and [headerIconCss](../api/chat-ui#headericoncss).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,7 +44,7 @@ The `showHeader` property enables or disables the Chat header. When enabled, the
 
 ### Setting header text
 
-The [headerText](../api/chat-ui#headertext) property sets the title displayed in the header, typically used for a username or group name to provide context for the conversation.
+You can use the [headerText](../api/chat-ui#headertext) property to display the text that appears in the header, which indicates the current username or the group name providing the context for the conversation.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -75,7 +75,7 @@ The [headerText](../api/chat-ui#headertext) property sets the title displayed in
 
 ### Setting header icon CSS
 
-The [headerIconCss](../api/chat-ui#headericoncss) property applies custom CSS classes to style the header icon.
+You can use the [headerIconCss](../api/chat-ui#headericoncss) property to customize the styling of the header icon.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -106,15 +106,15 @@ The [headerIconCss](../api/chat-ui#headericoncss) property applies custom CSS cl
 
 ## Toolbar
 
-The Chat toolbar can be configured by defining a collection of items in the [headerToolbar](../api/chat-ui#headertoolbar) property. Each item in the collection configures a specific toolbar element.
+The Chat UI control allows you to add header toolbar items by using the `items` property in the [headerToolbar](../api/chat-ui#headertoolbar).
 
-### Configuring toolbar items
+## Setting items
 
-Toolbar items can be configured with the following properties to control their appearance and behavior.
+Items can be constructed with the following built-in command types or item template.
 
-#### Icon
+#### Adding icon CSS
 
-The [iconCss](../api/chat-ui/toolbarItemModel#iconcss) property customizes a toolbar item by applying a specific icon class.
+You can customize the header toolbar icons by using the `iconCss` property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -143,11 +143,10 @@ The [iconCss](../api/chat-ui/toolbarItemModel#iconcss) property customizes a too
 {% previewsample "page.domainurl/code-snippet/chat-ui/header/iconCss" %}
 {% endif %}
 
-#### Item type
+#### Setting item type
 
 You can change the header toolbar item type by using the `type` property. The `type` supports three types of items such as `Button`, `Separator` and `Input`. By default, the type is `Button`.
-
-The [type](../api/chat-ui/toolbarItemModel#type) property defines the type of toolbar item. Supported values are `Button`, `Separator`, and `Input`, with `Button` being the default.
+In the following example, header toolbar item type is set as `Button`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -176,9 +175,9 @@ The [type](../api/chat-ui/toolbarItemModel#type) property defines the type of to
 {% previewsample "page.domainurl/code-snippet/chat-ui/header/itemType" %}
 {% endif %}
 
-#### Text
+#### Setting text
 
-The [text](../api/chat-ui/toolbarItemModel#text) property sets the display text for a toolbar item.
+You can use the `text` property to set the text for the header toolbar item.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -207,9 +206,9 @@ The [text](../api/chat-ui/toolbarItemModel#text) property sets the display text 
 {% previewsample "page.domainurl/code-snippet/chat-ui/header/text" %}
 {% endif %}
 
-#### Visibility
+#### Show or hide toolbar item
 
-The [visible](../api/chat-ui/toolbarItemModel#visible) property shows or hides a toolbar item. The default value is `true`.
+You can use the `visible` property to specify whether to show or hide the header toolbar item. By default, its value is `true`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -238,9 +237,9 @@ The [visible](../api/chat-ui/toolbarItemModel#visible) property shows or hides a
 {% previewsample "page.domainurl/code-snippet/chat-ui/header/visible" %}
 {% endif %}
 
-#### Disabled state
+#### Setting disabled
 
-The [disabled](../api/chat-ui/toolbarItemModel#disabled) property disables a toolbar item. The default value is `false`.
+You can use the `disabled` property to disable the header toolbar item. By default, its value is `false`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -269,9 +268,9 @@ The [disabled](../api/chat-ui/toolbarItemModel#disabled) property disables a too
 {% previewsample "page.domainurl/code-snippet/chat-ui/header/disable" %}
 {% endif %}
 
-#### Tooltip
+#### Setting tooltip text
 
-The [tooltip](../api/chat-ui/toolbarItemModel#tooltip) property sets the text that appears when a user hovers over a toolbar item.
+You can use the `tooltip` property to specify the tooltip text to be displayed on hovering the header toolbar item.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -300,9 +299,9 @@ The [tooltip](../api/chat-ui/toolbarItemModel#tooltip) property sets the text th
 {% previewsample "page.domainurl/code-snippet/chat-ui/header/tooltip" %}
 {% endif %}
 
-#### Custom CSS class
+#### Setting CSS Class
 
-The [cssClass](../api/chat-ui/toolbarItemModel#cssclass) property applies one or more custom CSS classes to a toolbar item for advanced styling.
+You can use the `cssClass` property to customize the header toolbar item.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -337,11 +336,11 @@ The [cssClass](../api/chat-ui/toolbarItemModel#cssclass) property applies one or
 {% previewsample "page.domainurl/code-snippet/chat-ui/header/cssClass" %}
 {% endif %}
 
-#### Alignment
+#### Setting alignment
 
-The [align](../api/chat-ui/toolbarItemModel#align) property positions a toolbar item. Supported values are `Left`, `Center`, and `Right`, with `Left` being the default.
+You can change the alignment of toolbar item by using the `align` property. It supports three types of alignments such as `Left`, `Center` and `Right`. By default, the value is `Left`.
 
-In the following example, the `align` property for the toolbar item is set to `Right`.
+In the following example, toolbar item type is set with `Right`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -372,8 +371,7 @@ In the following example, the `align` property for the toolbar item is set to `R
 
 #### Enabling tab key navigation in toolbar
 
-You can use the `tabIndex` property of a Toolbar item to enable tab key navigation for the item. By default, the user can switch between items using the arrow keys, but the `tabIndex` property allows you to switch between items using the `Tab` and `Shift+Tab` keys as well.
-
+You can use the `tabIndex` property of a header toolbar item to enable tab key navigation for the item. By default, the user can switch between items using the arrow keys, but the `tabIndex` property allows you to switch between items using the `Tab` and `Shift+Tab` keys as well.
 To use the `tabIndex` property, set it for each Toolbar item which you want to enable tab key navigation. The `tabIndex` property should be set to a positive integer value. A value of `0` or a negative value will disable tab key navigation for the item.
 
 For example, to enable tab key navigation for two Toolbar items you can use the following code:
@@ -412,7 +410,7 @@ In this case, the user can switch between the two Toolbar items using the Tab an
 
 #### Setting template
 
-You can use the [template](../api/chat-ui/toolbarItemModel#template) property to add custom toolbar item in the Chat UI control.
+You can use the `template` property to add custom toolbar item in the Chat UI.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -449,7 +447,7 @@ You can use the [template](../api/chat-ui/toolbarItemModel#template) property to
 
 ### Item clicked
 
-The [itemClick](../api/chat-ui/toolbarSettings#itemclicked) event, defined within the `toolbarSettings` property, triggers when a user clicks a toolbar item. It returns the item that was clicked.
+The `itemClicked` event is triggered when the header toolbar item is clicked.
 
 {% if page.publishingplatform == "typescript" %}
 

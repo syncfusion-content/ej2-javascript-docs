@@ -112,9 +112,9 @@ The following code snippet shows how to assign the resource for each task and ma
 
 By using cell/ dialog edit option, we can add/remove the multiple resources for a particular task. Resource Unit can be change for a each task on resource tab in the edit dialog by double click on the unit cell.
 
-![Cell Edit](./images/cellEdit-resource.png)
+![Cell Edit](../images/cellEdit-resource.png)
 
-![Dialog Edit](./images/dialogedit-resource.png)
+![Dialog Edit](../images/dialogedit-resource.png)
 
 ## Custom background colors for resource column and taskbar
 

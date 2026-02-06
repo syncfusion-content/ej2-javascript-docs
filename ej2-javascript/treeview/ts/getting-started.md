@@ -3,7 +3,7 @@ layout: post
 title: Getting started with ##Platform_Name## TreeView control | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: TreeView 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -72,10 +72,10 @@ Combined CSS files are available in the Essential<sup style="font-size:70%">&reg
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
 
-@import '../../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../../node_modules/@syncfusion/ej2-base/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-navigations/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-inputs/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-buttons/styles/fluent2.css';
 
 {% endhighlight %}
 {% endtabs %}

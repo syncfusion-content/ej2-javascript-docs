@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Browser support
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 components are supported only in modern browsers. This includes the following versions.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 components are fully supported in modern browsers. The following versions are officially supported:
 
 |    Chrome    |    Firefox    |    Opera     |    Edge    |    IE      |    Safari    |    IOS    |    Android    |    Windows   Mobile    |
 |--------------|---------------|--------------|------------|------------|--------------|-----------|---------------|------------------------|
@@ -19,14 +19,14 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-s
 
 ## Required polyfills
 
-The following polyfills are required to run Essential<sup style="font-size:70%">&reg;</sup> JS 2 components in each browser.
+Most modern browsers do not require any polyfills. The only exception is Internet Explorer 11, which requires an ES6 Promise polyfill.
 
 |    Browser                                             |    Polyfills      |
 |:--------------------------------------------------------:|:-------------------:|
 |    Chrome(latest), Firefox(latest), Opera(latest), Edge, Safari 9+    |    NONE           |
 |    IE 11                                               |    ES6 Promise    |
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 components are supported in IE 11 browser with ES6 Promise polyfill.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 components are compatible with Internet Explorer 11 when the ES6 Promise polyfill is included.
 
 ## Using CDN
 
@@ -62,4 +62,4 @@ var Promise = require('es6-promise').Promise;
 
 ```
 
-For further details, refer to the link [here](https://github.com/stefanpenner/es6-promise).
+For more details, refer to the link [here](https://github.com/stefanpenner/es6-promise).

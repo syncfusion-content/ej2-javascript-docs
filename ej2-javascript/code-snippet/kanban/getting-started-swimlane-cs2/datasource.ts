@@ -1,5 +1,5 @@
 
-export const kanbanData: Object[] = [
+export let kanbanData: Object[] = [
     {
         'Id': 1,
         'Status': 'Open',

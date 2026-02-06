@@ -11,7 +11,11 @@ domainurl: ##DomainURL##
 
 # State Persistence in Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls support persisting their state across page refreshes or navigation. To enable this feature, set the [`enablePersistence`](https://ej2.syncfusion.com/documentation/api/base/component/#enablepersistence) property to `true` for the desired control. This stores the control's state in the browser's `localStorage` object on the `unload` event of the page. For example, the [`enablePersistence`](https://ej2.syncfusion.com/documentation/api/base/component/#enablepersistence) property can be set for the Grid control, as shown in the following code snippet.
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls can persist their state across page refreshes and navigation. Enable this feature by setting the [`enablePersistence`](https://ej2.syncfusion.com/documentation/api/base/component/#enablepersistence) property to `true` on the desired control. When enabled, the control's state is serialized and stored in the browser's `localStorage` (typically on the page `unload` event), then restored when the control reinitializes.
+
+Note: `localStorage` has size limits and is scoped per origin. Avoid persisting large data structures (for example, full data sources); prefer persisting UI state such as paging, selection, sorting, and filter settings.
+
+The following example demonstrates enabling persistence for the Grid control.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -42,7 +46,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls support per
 
 ## State Persistence supported controls and properties
 
-The following table illustrates the list of Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls that are supported with state persistence and the properties that are stored in the `localStorage`.
+The table below lists Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls that support state persistence and the properties that are stored in `localStorage` when persistence is enabled.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -268,13 +272,13 @@ DateTimePicker, Slider, Dropdown Tree</td>
 
 <!-- markdownlint-enable MD033 -->
 
-Check out the following control's document to learn more about the state persistence.
+See the following control documentation to learn more about state persistence and control-specific behavior.
 
-* [Schedule](https://ej2.syncfusion.com/documentation/schedule/state-persistence/)
-* [TreeGrid](https://ej2.syncfusion.com/documentation/treegrid/state-persistence/state-persistence/)
-* [Pivot Table](https://ej2.syncfusion.com/documentation/pivotview/state-persistence/)
-* [Gantt](https://ej2.syncfusion.com/documentation/gantt/state-persistence/)
+* [Schedule](https://ej2.syncfusion.com/documentation/schedule/state-persistence)
+* [TreeGrid](https://ej2.syncfusion.com/documentation/treegrid/state-persistence/state-persistence)
+* [Pivot Table](https://ej2.syncfusion.com/documentation/pivotview/state-persistence)
+* [Gantt](https://ej2.syncfusion.com/documentation/gantt/state-persistence)
 * [Grid](https://ej2.syncfusion.com/documentation/grid/state-persistence/state-persistence)
-* [Kanban](https://ej2.syncfusion.com/documentation/kanban/persistence/)
-* [QueryBuilder](https://ej2.syncfusion.com/documentation/query-builder/how-to/state-persistence/)
-* [Tabs](https://ej2.syncfusion.com/documentation/tab/how-to/set-state-persistence-of-the-tab-component/)
+* [Kanban](https://ej2.syncfusion.com/documentation/kanban/persistence)
+* [QueryBuilder](https://ej2.syncfusion.com/documentation/query-builder/how-to/state-persistence)
+* [Tabs](https://ej2.syncfusion.com/documentation/tab/how-to/set-state-persistence-of-the-tab-component)

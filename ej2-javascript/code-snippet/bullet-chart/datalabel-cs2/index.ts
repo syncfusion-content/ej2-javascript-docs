@@ -3,7 +3,7 @@
 
 import { BulletChart, BulletTooltip } from '@syncfusion/ej2-charts';
 BulletChart.Inject(BulletTooltip);
-let localData: any[] = [
+let localData: Object[] = [
         {
             value: 5, comparativeMeasureValue: 7.5,
             category: '2001'

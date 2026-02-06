@@ -1,7 +1,7 @@
 ---
 layout: post
 title: User interface in ##Platform_Name## File Manager component | Syncfusion
-description: Learn about the File Manager component UI: toolbar, navigation pane, breadcrumb, views, context menu, and customization points.
+description: Learn about the File Manager component UI features including its toolbar, navigation pane, breadcrumb, views, context menu and customization options.
 platform: ej2-javascript
 control: File Manager
 publishingplatform: ##Platform_Name##

@@ -3,7 +3,7 @@ layout: post
 title: Getting started with ##Platform_Name## Accordion control | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: Accordion 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -68,8 +68,8 @@ The Accordion CSS files are available in the `ej2-navigations` package folder. T
 {% tabs %}
 {% highlight css tabtitle="styles.css" %}
 
-@import '../../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import '../../node_modules/@syncfusion/ej2-base/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-navigations/styles/fluent2.css';
   
 {% endhighlight %}
 {% endtabs %}
@@ -78,7 +78,7 @@ The Accordion CSS files are available in the `ej2-navigations` package folder. T
 
 Open the application in Visual Studio Code and add the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript UI controls.
 
-The Accordion can be rendered by defining an array of [`items`](../api/accordion/#items).
+The Accordion can be rendered by defining an array of [`items`](../api/accordion#items).
 
 * Add the HTML div tag with its `id` attribute as `element` in your `index.html` file to initialize the Accordion.
 

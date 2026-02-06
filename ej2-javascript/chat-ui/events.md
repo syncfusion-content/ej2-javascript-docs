@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Events in ##Platform_Name## Chat UI control
 
-This section describes the events that the Chat UI control triggers when specific actions are performed. The following events are available:
+This section describes the Chat UI events that will be triggered when appropriate actions are performed. The following events are available in the Chat UI control.
 
 ## Created
 
-The Chat UI control triggers the [created](../api/chat-ui#created) event after the control has been rendered. This event is useful for performing actions once the Chat UI is fully initialized and ready for interaction.
+The Chat UI control triggers the [created](../api/chat-ui#created) event when the control rendering is completed.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -43,7 +43,7 @@ The Chat UI control triggers the [created](../api/chat-ui#created) event after t
 
 ## Sending message
 
-The [messageSend](../api/chat-ui#messagesend) event is triggered before a message is sent from the Chat UI control.
+The [messageSend](../api/chat-ui#messagesend) event is triggered before sending a message in the Chat UI control.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -71,7 +71,7 @@ The [messageSend](../api/chat-ui#messagesend) event is triggered before a messag
 
 ## User typing
 
-The [userTyping](../api/chat-ui#usertyping) event is triggered as a user types a message in the Chat UI input field. This is useful for implementing features like typing indicators ("User is typing...").
+The [userTyping](../api/chat-ui#usertyping) event is triggered when the user is typing a message in the Chat UI control.
 
 {% if page.publishingplatform == "typescript" %}
 

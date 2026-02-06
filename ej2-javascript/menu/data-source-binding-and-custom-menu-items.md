@@ -184,4 +184,4 @@ To customize menu items in your application, set your customized template string
 
 ## See Also
 
-* [Render menu with items](./getting-started#getting-started)
+* [Render menu with items](https://ej2.syncfusion.com/documentation/menu/getting-started#getting-started)

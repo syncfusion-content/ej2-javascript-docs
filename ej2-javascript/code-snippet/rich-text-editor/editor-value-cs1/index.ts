@@ -25,11 +25,13 @@ const toolbarSettings: any = {
    ],
  };
  
-  let editor: RichTextEditor = new RichTextEditor({
+ // Initialize Rich Text Editor component
+ let editor: RichTextEditor = new RichTextEditor({
    toolbarSettings: toolbarSettings,
  });
  
-  editor.appendTo('#editor');
+ // Render initialized Rich Text Editor
+ editor.appendTo('#editor');
  
  // Set initial value
  editor.value = '<p>Welcome to Syncfusion RichTextEditor!</p>';

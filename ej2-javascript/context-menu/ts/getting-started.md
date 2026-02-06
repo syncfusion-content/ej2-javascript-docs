@@ -3,7 +3,7 @@ layout: post
 title: Getting started with ##Platform_Name## Context menu control | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Context menu control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: Context Menu 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -72,8 +72,8 @@ To render Checkbox component, need to import Button and its dependent components
 {% tabs %}
 {% highlight css tabtitle="styles.css" %}
 
-@import "../../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-buttons/styles/material.css";
+@import "../../node_modules/@syncfusion/ej2-base/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-buttons/styles/fluent2.css";
 
 {% endhighlight %}
 {% endtabs %}

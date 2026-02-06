@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in ##Platform_Name## AI AssistView control
 
-The AI AssistView control follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The AI AssistView control followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the AI AssistView control is outlined below.
 
@@ -41,7 +41,7 @@ The accessibility compliance for the AI AssistView control is outlined below.
 
 ## WAI-ARIA attributes
 
-The AI AssistView control uses the following WAI-ARIA attributes to support assistive technologies:
+The following ARIA attributes are used in the AI AssistView control:
 
 | Attributes | Purpose |
 | ------------ | ----------------------- |
@@ -54,23 +54,23 @@ The AI AssistView control uses the following WAI-ARIA attributes to support assi
 
 ## Keyboard interaction
 
-You can use the following keyboard shortcuts to interact with the AI AssistView control.
+The following keyboard shortcuts are supported by the AI AssistView control.
 
 | **Press** | **To do this** |
 | --- | --- |
-| <kbd>Enter</kbd> | Selects the focused item. |
+| <kbd>Enter</kbd> | Select the focused item. |
 | <kbd>Tab</kbd> | Moves focus forward through the interactive elements. |
-| <kbd>Shift</kbd> + <kbd>Tab</kbd> | Moves focus backward through the interactive elements. |
+| <kbd>Shift + Tab</kbd> | Moves focus backward through the interactive elements. |
 <b>AI AssistView Toolbars</b>||
-| <kbd>Left Arrow</kbd> | Within the toolbar, focuses the previous item. |
-| <kbd>Right Arrow</kbd> | Within the toolbar, focuses the next item. |
-| <kbd>Space</kbd> or <kbd>Enter</kbd> | Within the toolbar, activates the focused item. |
-| <kbd>Home</kbd> | Within the toolbar, moves focus to the first item. |
-| <kbd>End</kbd> | Within the toolbar, moves focus to the last item. |
+| <kbd>Left Arrow</kbd> | Focuses the previous toolbar element.  |
+| <kbd>Right Arrow</kbd> | Focuses the next toolbar element. |
+| <kbd>Enter / Space</kbd> | Select the focused item or activate the selected option. |
+| <kbd>Home</kbd> | Moves focus to the first toolbar element. |
+| <kbd>End</kbd> | Moves focus to the last toolbar element. |
 
 ## Ensuring accessibility
 
-The accessibility of the AI AssistView control is continuously verified using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The AI AssistView control's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
 ## See also
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Drilldown in ##Platform_Name## Maps control | Syncfusion
-description: Learn here all about Drilldown in Syncfusion ##Platform_Name## Maps control of Syncfusion Essential JS 2 and more.
+title: Drilldown in ##Platform_Name## Maps component | Syncfusion
+description: Learn here all about Drilldown in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Drilldown 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Drilldown in ##Platform_Name## Maps control
+# Drilldown in ##Platform_Name## Maps component
 
-By clicking a continent, all the countries available in that continent can be viewed using the drill-down feature. For example, the countries in the `Africa` continent have been showcased here. To showcase all the countries in `Africa` continent by clicking the [`shapeSelected`](../../api/maps/#shapeselected) event as mentioned in the following example.
+By clicking a continent, all the countries available in that continent can be viewed using the drill-down feature. For example, the countries in the `Africa` continent have been showcased here. To showcase all the countries in `Africa` continent by clicking the [`shapeSelected`](../../api/mapsModel#shapeselected) event as mentioned in the following example.
 
 <!-- markdownlint-disable MD031 -->
 {% if page.publishingplatform == "typescript" %}

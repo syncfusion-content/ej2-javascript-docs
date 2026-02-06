@@ -1,7 +1,7 @@
 import { DataLabel3D, Chart3D, Category3D, Legend3D, ColumnSeries3D, Tooltip3D, Highlight3D } from '@syncfusion/ej2-charts';
 Chart3D.Inject(ColumnSeries3D, Category3D, DataLabel3D, Legend3D, Tooltip3D, Highlight3D);
 
-let chartData: any[] = [
+let chartData: Object[] = [
     { country: "USA", gold: 50, silver: 70, bronze: 45 },
     { country: "China", gold: 40, silver: 60, bronze: 55 },
     { country: "Japan", gold: 70, silver: 60, bronze: 50 },

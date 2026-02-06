@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## Setting placeholder
 
-The [placeholder](../api/chat-ui#placeholder) property sets the hint text displayed in the message input field to guide users. The default value is `Type your message…`.
+You can use the [placeholder](../api/chat-ui#placeholder) property to display the placeholder text that appears in the message input field to guide users on what to type. The default is `Type your message…`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,7 +44,7 @@ The [placeholder](../api/chat-ui#placeholder) property sets the hint text displa
 
 ## Setting width
 
-The [width](../api/chat-ui#width) property allows you to define the width of the Chat control. The default value is `100%`.
+You can use the [width](../api/chat-ui#width) property to specify the dimensions of the Chat UI within the application layout. By default, the value is `100%`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -75,7 +75,7 @@ The [width](../api/chat-ui#width) property allows you to define the width of the
 
 ## Setting height
 
-The [height](../api/chat-ui#height) property allows you to define the height of the Chat control. The default value is `100%`.
+You can use the [height](../api/chat-ui#height) property to specify the dimensions of the Chat UI within the application layout. By default, the value is `100%`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -107,7 +107,7 @@ The [height](../api/chat-ui#height) property allows you to define the height of 
 
 ## Setting CSS class
 
-The [cssClass](../api/chat-ui#cssclass) property allows you to apply custom CSS styles to the Chat control for a unique appearance.
+You can use the [cssClass](../api/chat-ui#cssclass) property to customize the appearance of the chat UI control.
 
 {% if page.publishingplatform == "typescript" %}
 

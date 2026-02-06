@@ -3,7 +3,7 @@ layout: post
 title: Getting started with ##Platform_Name## Breadcrumb control | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Breadcrumb control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: Breadcrumb 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -72,12 +72,12 @@ To render Breadcrumb component, need to import navigations and its dependent com
 {% tabs %}
 {% highlight css tabtitle="styles.css" %}
 
-@import "../../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-buttons/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-popups/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-lists/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-inputs/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-navigations/styles/material.css";
+@import "../../node_modules/@syncfusion/ej2-base/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-buttons/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-popups/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-lists/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-inputs/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-navigations/styles/fluent2.css";
 
 {% endhighlight %}
 {% endtabs %}

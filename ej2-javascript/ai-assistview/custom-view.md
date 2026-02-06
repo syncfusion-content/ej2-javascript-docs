@@ -11,15 +11,13 @@ domainurl: ##DomainURL##
 
 # Custom views in ##Platform_Name## AI AssistView control
 
-The AI AssistView control supports multiple views that allow you to organize different types of content within the same control.
-
 ## Adding custom views
 
-The `views` property enables you to define a collection of different view models within the AI AssistView control. Each view can be independently customized with different appearances and content.
+By using the `views` property you can define the collection of different assist view models in the AI AssistView. You can customize the default and the custom views added.
 
 ### Setting view type
 
-You can specify the type of view using the [type](../api/ai-assistview/assistViewType) property within the `e-view` selector. It accepts two values such as `Assist`, and `Custom`.
+You can set the type of view by using the [type](../api/ai-assistview/assistViewType/) property. It accepts two values such as `Assist`, and `Custom`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -54,7 +52,7 @@ aiAssistView.appendTo('#aiAssistView');
 
 ### Setting name
 
-You can use the [name](../api/ai-assistview/assistViewModel#name) property to specifies the header name of the `Assist` or `Custom` views in the AI AssistView.
+You can use the [name](../api/ai-assistview/assistViewModel/#name) property to specifies the header name of the `Assist` or `Custom` views in the AI AssistView.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -89,7 +87,7 @@ aiAssistView.appendTo('#aiAssistView');
 
 ### Setting iconCss
 
-You can customize the view icons using the [iconCss](../api/ai-assistview/assistViewModel#iconcss) property. By default the `e-assistview-icon` class is added as built-in header icon for the AI AssistView.
+You can customize the view icons by using the [iconCss](../api/ai-assistview/assistViewModel/#iconcss) property. By default the `e-assistview-icon` class is added as built-in header icon for the AI AssistView.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -153,7 +151,7 @@ The following example illustrates how types, name, and iconCss are used in a AI 
 
 ### Setting view template 
 
-The [viewTemplate](../api/ai-assistview/assistViewModel#viewtemplate) property allows to define custom content for multiple views within the AI AssistView.
+You can use the [viewTemplate](../api/ai-assistview/assistViewModel/#viewtemplate) property to add the view content of the multiple views added in the AI AssistView.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -184,7 +182,7 @@ The [viewTemplate](../api/ai-assistview/assistViewModel#viewtemplate) property a
 
 ## Setting active view
 
-You can use the [activeView](../api/ai-assistview#activeview) property to specify which view should be displayed when the AI AssistView control initializes. By default, the first view (index 0) is set as active.
+You can use the [activeView](../api/ai-assistview#activeview) property to set the active view in the AI AssistView. By default, the value is `0`.
 
 {% if page.publishingplatform == "typescript" %}
 

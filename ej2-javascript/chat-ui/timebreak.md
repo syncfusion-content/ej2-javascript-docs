@@ -13,9 +13,7 @@ domainurl: ##DomainURL##
 
 ## Show or hide time breaks
 
-The Syncfusion Angular Chat UI control allows you to display date-wise separators between messages using the [showTimeBreak](../api/chat-ui#showtimebreak) property. This feature enhances readability and improves message organization. By default, this property is `false`.
-
-When enabled, the control automatically inserts a separator indicating a new date whenever the conversation crosses midnight.
+You can use the [showTimeBreak](../api/chat-ui#showtimebreak) property to display date-wise separations between all the messages which enhances the readability and message organizing. The default value is `false`, indicating time breaks are disabled unless it is enabled.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -46,4 +44,4 @@ When enabled, the control automatically inserts a separator indicating a new dat
 
 ## Time break template
 
-> For advanced customization, you can define a custom appearance for the separator using a time break template. Refer to the [Templates](./templates#time-break-template) documentation for implementation details.
+> Refer to the [Templates](./templates#time-break-template) section for more details about the time break template.

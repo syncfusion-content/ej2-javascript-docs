@@ -252,7 +252,7 @@ To create grids with additional features, inject the required modules. The follo
 
 These modules should be injected into the grid using the **Grid.Inject** method.
 
-> Additional feature modules are available [here](https://ej2.syncfusion.com/documentation/grid/module).
+> Additional feature modules are available [here](https://ej2.syncfusion.com/documentation/grid/module).
 
 ## Enable paging
 

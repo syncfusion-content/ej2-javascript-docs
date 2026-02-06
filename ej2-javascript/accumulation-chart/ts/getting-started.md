@@ -12,13 +12,13 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Accumulation chart control
 
-This article provides a step-by-step guide to configuring the Syncfusion JavaScript (Essential JS 2) library and building a simple JavaScript web application using the GitHub [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This document explains how to create a simple Accumulation Chart and configure its features in TypeScript using the Essential JS 2 webpack [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack getting-started guide](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
-The list of minimum dependencies required to use an accumulation chart are follows:
+Below is the list of minimum dependencies required to use the Accumulation Chart.
 
 ```javascript
 |-- @syncfusion/ej2-charts
@@ -32,12 +32,12 @@ The list of minimum dependencies required to use an accumulation chart are follo
 
 ## Set up development environment
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
+Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack).
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
 
-git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quickstart
 
 {% endhighlight %}
 {% endtabs %}
@@ -66,11 +66,11 @@ npm install
 {% endhighlight %}
 {% endtabs %}
 
-## Add Accumulation Chart to the Project
+## Add accumulation chart to the project
 
-Open the application in Visual Studio Code and add the Syncfusion JavaScript UI controls.
+Open the project in Visual Studio Code and add the Accumulation Chart to the application.
 
-Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.html` file to initialize the Accumulation chart.
+Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.html` file to initialize the Accumulation Chart.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -99,7 +99,7 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 {% endhighlight %}
 {% endtabs %}
 
-Now, import an accumulation chart component in your `app.ts` to instantiate the accumulation chart, and append the accumulation chart instance to the `#element` `[src/app/app.ts]`
+Import the Accumulation Chart component into `[src/app/app.ts]` to instantiate and render the Accumulation Chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -117,7 +117,7 @@ chart.appendTo('#element');
 
 **Pie Series**
 
-By default, the pie series will be rendered when assigning the JSON data to the series using the [`dataSource`](../api/accumulation-chart/accumulationSeries/#datasource) property. Map the field names in the JSON data to the [`xName`](../api/accumulation-chart/accumulationSeries/#xname) and [`yName`](../api/accumulation-chart/accumulationSeries/#yname) properties of the series.
+By default, a pie series is rendered when JSON data is assigned to the series [`dataSource`](../api/accumulation-chart/accumulationseries#datasource) property. Map JSON fields to the series [`xName`](../api/accumulation-chart/accumulationseries#xname) and [`yName`](../api/accumulation-chart/accumulationSeries/#yname) properties to bind data correctly.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -130,7 +130,7 @@ By default, the pie series will be rendered when assigning the JSON data to the 
           
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs72" %}
 
-Now, use the `npm run start` command to run the application in the browser.
+Now use the `npm run start` command to run the application in the browser.
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}

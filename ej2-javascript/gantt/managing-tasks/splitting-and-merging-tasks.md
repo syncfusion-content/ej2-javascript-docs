@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Splitting and merging tasks in ##Platform_Name## Gantt | Syncfusion
+title: Splitting and merging tasks in ##Platform_Name## Gantt control | Syncfusion
 description: Learn here all about Splitting and merging tasks in Syncfusion ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Splitting and merging tasks 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Splitting and merging tasks in ##Platform_Name## Gantt
+# Splitting and merging tasks in ##Platform_Name## Gantt control
 
 ## Splitting task at load time
 

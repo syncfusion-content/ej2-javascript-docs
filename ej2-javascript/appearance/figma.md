@@ -20,7 +20,7 @@ The kits contain reusable design controls with various possible states and varia
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Figma UI kit offers the following key advantages:
 - The UI kit includes detailed information about Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls, such as available control lists, their states, and variants. This facilitates a quick understanding of Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls.
-- Design controls are developed using the [atomic design methodology](https://atomicdesign.bradfrost.com/chapter-2/), making customization straightforward and efficient.
+- Design controls are developed using the [atomic design methodology](https://atomicdesign.bradfrost.com/chapter-2), making customization straightforward and efficient.
 - Developers can seamlessly match Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls with your design requirements, ensuring alignment and accuracy.
 - By using standardized controls and themes, the UI kit ensures consistency in your designs, maintaining a uniform look and feel across projects.
 
@@ -28,7 +28,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Figma UI kit offers the fol
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Figma UI kits are available in the [Figma community](https://www.figma.com/@syncfusion). You can download the Syncfusion<sup style="font-size:70%">&reg;</sup> theme-specific Figma UI kits from the following links:
 
-- [Material 3](https://www.figma.com/community/file/1385969023252455137)
+- [Material 3](https://www.figma.com/community/file/1454123774600129202)
 - [Fluent](https://www.figma.com/community/file/1385969120047188707)
 - [Tailwind](https://www.figma.com/community/file/1385969065626384098)
 - [Bootstrap 5](https://www.figma.com/community/file/1385968977953858272)
@@ -46,7 +46,7 @@ Syncfusion’s<sup style="font-size:70%">&reg;</sup> Figma UI kit is structured 
 
 ## Customizing the UI kits
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Figma UI kits are easily customizable to meet your specific needs, allowing you to create unique designs and adjust colors to match your brand guidelines. The [atomic design methodology](https://atomicdesign.bradfrost.com/chapter-2/) used in developing these controls, your customizations will be seamlessly reflected across multiple controls and their variants.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Figma UI kits are easily customizable to meet your specific needs, allowing you to create unique designs and adjust colors to match your brand guidelines. The [atomic design methodology](https://atomicdesign.bradfrost.com/chapter-2) used in developing these controls, your customizations will be seamlessly reflected across multiple controls and their variants.
 
 Here's how to customize the primary button color of the Material 3 theme within your layout:
 
@@ -100,5 +100,6 @@ To upgrade your UI kits, download the latest version from the provided links. Fo
 
 ## See also
 
-* [Available themes](https://ej2.syncfusion.com/documentation/appearance/theme)
-* [Customizing themes](https://ej2.syncfusion.com/documentation/appearance/theme-studio#customizing-theme-color-from-theme-studio)
+- [Available themes and appearance settings](https://ej2.syncfusion.com/documentation/appearance/theme)  
+- [Customizing themes with Theme Studio](https://ej2.syncfusion.com/documentation/appearance/theme-studio#customizing-theme-color-from-theme-studio)  
+- [Using CSS variables for modern themes](./css-variables)  

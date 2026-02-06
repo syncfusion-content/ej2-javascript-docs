@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Stock chart control
 
-This section explains how to create a simple Stock chart and configure its available functionalities in TypeScript using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This document explains how to create a simple Stock chart and configure its features in TypeScript using the Essential JS 2 webpack [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack getting-started guide](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
@@ -43,7 +43,7 @@ Open the command prompt from the required directory, and run the following comma
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
 
-git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quickstart
 
 {% endhighlight %}
 {% endtabs %}
@@ -74,7 +74,7 @@ npm install
 
 ## Add Stock Chart to the Project
 
-Open the application in Visual Studio Code and add the Syncfusion JavaScript UI controls.
+Open the project in Visual Studio Code and add the Stock Chart to the application.
 
 Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.html` file to initialize the Stock Chart.
 
@@ -105,7 +105,7 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 {% endhighlight %}
 {% endtabs %}
 
-Now import the Stock Chart component into your `app.ts` to instantiate a Stock Chart and append the Stock Chart instance to the `#element` `[src/app/app.ts]`
+Import the Stock Chart component into `[src/app/app.ts]` to instantiate and render the Stock Chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -140,8 +140,7 @@ Stock Chart component are segregated into individual feature-wise modules. In or
 * DataLabel - Inject this provider to use data label feature.
 * DateTime - Inject this provider to use DateTime feature.
 
-Now import the above mentioned modules from Stock Chart package and inject it into the  Stock Chart component using
-`StockChart.Inject`  method.
+Now import the above-mentioned modules from the chart package and inject them into the Stock Chart component using `StockChart.Inject` method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -159,7 +158,7 @@ This section explains how to plot below JSON data to the  Stock Chart.Please fin
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 
-let chartData: any[] = [{
+let chartData: Object[] = [{
     date : new Date('2012-04-02'),
     open : 85.9757,
     high : 90.6657,
@@ -221,7 +220,7 @@ Since the JSON contains DateTime data, set the [`valueType`](../api/stock-chart/
 
 ## Add Stock Chart Title
 
-You can add a title using [`title`](../api/stock-chart/stockChartModel/#title) property to the Stock Chart to provide quick information to the user about the data plotted in the Chart.
+You can add a title using the [`title`](../api/stock-chart/stockChartModel/#title) property to the Stock Chart to provide quick information to the user about the data plotted in the Chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -238,7 +237,7 @@ You can add a title using [`title`](../api/stock-chart/stockChartModel/#title) p
 
 Crosshair has a vertical and horizontal line to view the value of the axis at mouse or touch position.
 
-Crosshair lines can be enabled by using [`enable`](../api/chart/crosshairSettingsModel/#enable) property in the `crosshair`. Likewise tooltip label for an axis can be enabled by using [`enable`](../api/chart/crosshairTooltipModel/#enable) property of `crosshairTooltip` in the corresponding axis.
+Crosshair lines can be enabled by using the [`enable`](../api/chart/crosshairSettingsModel/#enable) property in the `crosshair`. Likewise tooltip label for an axis can be enabled by using [`enable`](../api/chart/crosshairTooltipModel/#enable) property of `crosshairTooltip` in the corresponding axis.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -256,8 +255,8 @@ Crosshair lines can be enabled by using [`enable`](../api/chart/crosshairSettin
 Trackball is used to track a data point closest to the mouse or touch position. Trackball marker indicates the closest point and trackball tooltip displays the information about the point. To use trackball feature, we need to inject `Crosshair` module and `Tooltip` module using
 `StockChart.Inject(Crosshair, Tooltip)`.
 
-Trackball can be enabled by setting the [`enable`](../api/chart/crosshairSettingsModel/#enable) property of the crosshair to true and
-[`shared`](../api/chart/tooltipSettings/#shared) property in `tooltip` to true in chart.
+Trackball can be enabled by setting the [`enable`](../api/chart/crosshairSettingsModel/#enable) property of the crosshair to `true` and
+[`shared`](../api/chart/tooltipSettings/#shared) property in `tooltip` to `true` in chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

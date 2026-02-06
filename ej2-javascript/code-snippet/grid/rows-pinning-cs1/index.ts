@@ -9,7 +9,7 @@ var grid : Grid = new Grid({
     }
     return false;
   },
-  height: 240,
+  height: 210,
   columns: [
     { field: 'TaskID', headerText: 'Task ID', width: 100, isPrimaryKey: true, textAlign: 'Right' },
     { field: 'Title', headerText: 'Title', width: 100 },

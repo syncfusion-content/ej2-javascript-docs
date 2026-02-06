@@ -4,7 +4,7 @@
 import { Chart, LineSeries, Tooltip } from '@syncfusion/ej2-charts';
 import { Legend, Category, DataLabel } from '@syncfusion/ej2-charts';
 Chart.Inject(LineSeries, Legend, Category, Tooltip, DataLabel);
-let chartData: any[] = [
+let chartData: Object[] = [
       { month: 'Jan', sales: 35 }, { month: 'Feb', sales: 28 },
       { month: 'Mar', sales: 34 }, { month: 'Apr', sales: 32 },
       { month: 'May', sales: 40 }, { month: 'Jun', sales: 32 },

@@ -11,15 +11,15 @@ domainurl: ##DomainURL##
 
 # Getting Started with Electron Framework in Typescript
 
-[Electron](https://www.electronjs.org/docs/latest/) is a framework that allows you to build cross-platform desktop applications using JavaScript, HTML, and CSS. It includes Chromium and Node.js within its binary, enabling you to write a single JavaScript codebase that can run on Windows, macOS, and Linux platforms.
+[Electron](https://www.electronjs.org/docs/latest/) is a framework for building cross-platform desktop applications using JavaScript, HTML, and CSS. It bundles Chromium and Node.js, allowing a single codebase to run on Windows, macOS, and Linux.
 
-This section provides a step-by-step guide to configuring the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) library and building a simple [electron](https://www.electronjs.org/docs/latest/) application.
+This guide walks you through setting up Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) in an Electron application using TypeScript and webpack.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+> The setup uses a custom `webpack.config.js` configuration with the latest webpack-cli. It requires **Node.js v18.0.0 or higher**. For more on webpack, see the [official webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Prerequisites
 
-To get started with application, ensure the following software to be installed in the machine.
+Ensure the following tools are installed:
 
 * [Node.js](https://nodejs.org/en/)
 * [Visual Studio Code](https://code.visualstudio.com/)
@@ -206,7 +206,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 ```
 
-> To know more about process model in the electron application, refer to the documentation [here](https://www.electronjs.org/docs/tutorial/process-model).
+> Learn more about the [Electron process model](https://www.electronjs.org/docs/tutorial/process-model).
 
 ## Configure webpack
 

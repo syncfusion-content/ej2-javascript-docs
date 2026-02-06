@@ -3,7 +3,7 @@
 
 import {Chart3D, DateTime3D, Legend3D, ColumnSeries3D, Tooltip3D, Highlight3D } from '@syncfusion/ej2-charts';
 Chart3D.Inject(ColumnSeries3D, DateTime3D, Legend3D, Tooltip3D, Highlight3D);
-let chartData: any[] = [
+let chartData: Object[] = [
     { x: new Date(2000, 6, 11), y: 10 },
     { x: new Date(2002, 3, 7), y: 30 },
     { x: new Date(2004, 3, 6), y: 15 },

@@ -61,7 +61,6 @@ sf org:login:web -d
 
 ![Salesforce Authorization](../images/Salesforce-authorization.png)
 
-
 Open the `sfdx-project.json` file located in `salesforceApp/scheduler-salesforce-app` and update the `sfdcLoginUrl` with the domain URL of your Salesforce account as shown in image (fig 2). You can obtain the domain URL from the `My Domain` setup tab in Salesforce as shown in image (fig 1). 
 
 fig 1

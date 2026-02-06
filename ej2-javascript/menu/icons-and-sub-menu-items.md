@@ -120,4 +120,4 @@ Property Name | Type | Description
 ## See Also
 
 * [Customize menu items](./how-to/customize-menu-items)
-* [Group menu items with separator](./getting-started#group-menu-items-with-separator)
+* [Group menu items with separator](https://ej2.syncfusion.com/documentation/menu/getting-started#getting-started#group-menu-items-with-separator)

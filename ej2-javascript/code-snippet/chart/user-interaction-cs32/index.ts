@@ -3,7 +3,7 @@
 
 import { Chart, ColumnSeries, Category, Legend, Selection } from '@syncfusion/ej2-charts';
 Chart.Inject(ColumnSeries, Category, Legend, Selection);
-let chartData: any[] = [
+let chartData: Object[] = [
       { country: "USA", gold: 50, silver: 70, bronze: 45 },
       { country: "China", gold: 40, silver: 60, bronze: 55 },
       { country: "Japan", gold: 70, silver: 60, bronze: 50 },

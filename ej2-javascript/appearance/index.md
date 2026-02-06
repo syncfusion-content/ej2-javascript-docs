@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Index 
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript library styles are developed under the SCSS environment with `base64` embed font icons. The list of key features are described in the below topics.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript library provides comprehensive styling and theming capabilities built using SCSS with embedded `base64` font icons. The list of key features is described in the following topics.
 
 ## Key Features
 

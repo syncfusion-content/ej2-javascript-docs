@@ -3,7 +3,7 @@ layout: post
 title: Es5 getting started with ##Platform_Name## Menu control | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## Menu control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Es5 getting started 
+control: Menu 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -45,24 +45,24 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can
 >
 > Control Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
 >
-> Dependency Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\styles\material.css`
+> Dependency Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\styles\bootstrap5.3.css`
 >
-> Control Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\material.css`
+> Control Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\bootstrap5.3.css`
 
 **Example:**
-> Dependency Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-base\dist\global\ej2-base.min.js`
+> Dependency Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\32.1.19\Web (Essential JS 2)\JavaScript\ej2-base\dist\global\ej2-base.min.js`
 >
-> Control Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-navigations\dist\global\ej2-navigations.min.js`
+> Control Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\32.1.19\Web (Essential JS 2)\JavaScript\ej2-navigations\dist\global\ej2-navigations.min.js`
 >
-> Dependency Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-base\styles\material.css`
+> Dependency Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\32.1.19\Web (Essential JS 2)\JavaScript\ej2-base\styles\bootstrap5.3.css`
 >
-> Control Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-navigations\styles\material.css`
+> Control Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\32.1.19\Web (Essential JS 2)\JavaScript\ej2-navigations\styles\bootstrap5.3.css`
 
 The below located script and style file contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file.
 
 > Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
 >
-> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\material.css`
+> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\bootstrap5.3.css`
 
 The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script and styles for a set of specific controls. This web tool is useful to combine the required control scripts and styles in a single file.
 
@@ -75,13 +75,13 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
           <title>Essential JS 2 - Menu</title>
-          <!-- Essential JS 2 Menu's dependent material theme -->
-          <link href="resources/base/material.css" rel="stylesheet" type="text/css"/>
-          <link href="resources/lists/material.css" rel="stylesheet" type="text/css"/>
-          <link href="resources/popups/material.css" rel="stylesheet" type="text/css"/>
+          <!-- Essential JS 2 Menu's dependent bootstrap5.3 theme -->
+          <link href="resources/base/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+          <link href="resources/lists/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+          <link href="resources/popups/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
 
-          <!-- Essential JS 2 Menu's control material theme -->
-          <link href="resources/navigations/material.css" rel="stylesheet" type="text/css"/>
+          <!-- Essential JS 2 Menu's control bootstrap5.3 theme -->
+          <link href="resources/navigations/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
 
           <!-- Essential JS 2 Menu's dependent global script -->
           <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
@@ -105,13 +105,13 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 <head>
     <title>Essential JS 2 - Menu</title>
-    <!-- Essential JS 2 Menu's dependent material theme -->
-    <link href="resources/base/material.css" rel="stylesheet" type="text/css"/>
-    <link href="resources/lists/material.css" rel="stylesheet" type="text/css"/>
-    <link href="resources/popups/material.css" rel="stylesheet" type="text/css"/>
+    <!-- Essential JS 2 Menu's dependent bootstrap5.3 theme -->
+    <link href="resources/base/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+    <link href="resources/lists/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+    <link href="resources/popups/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
 
-    <!-- Essential JS 2 Menu's control material theme -->
-    <link href="resources/navigations/material.css" rel="stylesheet" type="text/css"/>
+    <!-- Essential JS 2 Menu's control bootstrap5.3 theme -->
+    <link href="resources/navigations/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
 
     <!-- Essential JS 2 Menu's dependent global script -->
     <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
@@ -186,14 +186,14 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 >
 > Control Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Dependency Styles: `https://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/styles/material.css`
+> Dependency Styles: `https://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/styles/bootstrap5.3.css`
 >
-> Control Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material.css`
+> Control Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/bootstrap5.3.css`
 
 **Example:**
 > Script: [`https://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js`](https://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js)
 >
-> Styles: [`https://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css`](https://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css)
+> Styles: [`https://cdn.syncfusion.com/ej2/ej2-navigations/styles/bootstrap5.3.css`](https://cdn.syncfusion.com/ej2/ej2-navigations/styles/bootstrap5.3.css)
 
 **Step 3:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the CDN link references. Now, add the `Menu` element and initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Menu** control in the index.html by using following code.
 

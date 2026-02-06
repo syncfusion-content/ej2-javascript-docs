@@ -1,13 +1,13 @@
----
+----
 layout: post
-title: AI Assistant in ##Platform_Name## Rich Text Editor | Syncfusion
+title: AI Assistant in ##Platform_Name## Rich Text Editor component | Syncfusion
 description: Learn about the AI Assistant feature in the Syncfusion Essential JS 2 ##Platform_Name## Rich Text Editor control.
 platform: ej2-javascript
 control: Integrating the AI Assistant
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
----
+----
 
 # Integrating the AI Assistant
 

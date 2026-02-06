@@ -13,23 +13,23 @@ domainurl: ##DomainURL##
 
 ## Accessibility overview
 
-Accessibility in controls refers to the practice of designing and building user interface elements in a way that makes them accessible to users with disabilities. This can include a variety of things, such as making sure that text is high-contrast and easy to read, providing alternative text for images, and designing controls and interactions that can be used with a keyboard or assistive technology.
+Accessibility in controls refers to the practice of designing and building user interface elements in a way that makes them accessible to users with disabilities. This can include a variety of considerations, such as ensuring text is high-contrast and easy to read, providing alternative text for images, and designing controls and interactions that can be used with a keyboard or assistive technology.
 
 ## Accessibility standards
 
-The control is said to be accessible when it is constructed in accordance with certain standards that are required to make it accessible.
+A control is considered accessible when it is constructed in accordance with certain standards that are required to make it accessible.
 
-The accessibility of the controls consists of the following standards and aspects:
+The accessibility of controls consists of the following standards and aspects:
 
 * [ADA](https://www.ada.gov/) - A law to ensure that people with disabilities have the same opportunities and access as people without disabilities.
 
 * [WCAG 2.2](https://www.w3.org/WAI/standards-guidelines/wcag/) - The Web Content Accessibility Guidelines (WCAG) provide guidelines developed by the World Wide Web Consortium (W3C) to ensure web content is accessible to people with disabilities. `WCAG 2.2` establishes a framework of accessibility principles and their associated success criteria. The level of accessibility conformance achieved by a web application is determined by the extent to which it meets these success criteria, categorized into three levels: A, AA, and AAA.
 
-* [Section 508](https://www.section508.gov/) - It is a set of guidelines for making electronic and information technology (EIT) accessible to people with disabilities. These standards apply to federal agencies in the United States, and they are based on the Web Content Accessibility Guidelines (WCAG).
+* [Section 508](https://www.section508.gov/) - A set of guidelines for making electronic and information technology (EIT) accessible to people with disabilities. These standards apply to federal agencies in the United States and are based on the Web Content Accessibility Guidelines (WCAG).
 
-* [WAI-ARIA](https://www.w3.org/WAI/ARIA/) - WAI-ARIA stands for "Web Accessibility Initiative - Accessible Rich Internet Applications." It is a set of technical specifications and guidelines developed by the World Wide Web Consortium (W3C) as part of the Web Accessibility Initiative (WAI). WAI-ARIA is designed to enhance the accessibility of dynamic web content, particularly web applications and rich internet applications (RIAs), for people with disabilities. WAI-ARIA provides a set of roles, states, and properties that can be added to HTML elements to provide additional context and information about the purpose and behavior of those elements. This can help assistive technologies better understand and interpret web content and interact with web applications.
+* [WAI-ARIA](https://www.w3.org/WAI/ARIA/) - WAI-ARIA stands for "Web Accessibility Initiative - Accessible Rich Internet Applications." It is a set of technical specifications and guidelines developed by the World Wide Web Consortium (W3C) as part of the Web Accessibility Initiative (WAI). WAI-ARIA is designed to enhance the accessibility of dynamic web content, particularly web applications and rich internet applications (RIAs), for people with disabilities. WAI-ARIA provides a set of roles, states, and properties that can be added to HTML elements to provide additional context and information about the purpose and behavior of those elements. This helps assistive technologies better understand and interpret web content and interact with web applications.
 
-* [Keyboard navigation](https://www.w3.org/TR/WCAG22/#keyboard-accessible) - It refers to the ability to use a keyboard to interact with and navigate through a user interface. It is an important aspect of web accessibility, as it allows people who cannot use a mouse or other pointing device to access and use web content and applications.
+* [Keyboard navigation](https://www.w3.org/TR/WCAG22/#keyboard-accessible) - Refers to the ability to use a keyboard to interact with and navigate through a user interface. It is an important aspect of web accessibility, as it allows people who cannot use a mouse or other pointing device to access and use web content and applications.
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls adhere to these established standards.
 
@@ -37,9 +37,9 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls adhe
 
 The accessibility support provided by Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls is based on a collection of methodologies for adhering to and applying [recognized standards and technical specifications](#accessibility-standards) to ensure an intuitive experience for people with disabilities.
 
-There are several methodologies of accessibility validation that can be performed on the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls, such as:
+There are several methodologies of accessibility validation that can be performed on Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls, such as:
 
-* The [WAI-ARIA patterns](https://www.w3.org/WAI/ARIA/apg/patterns/) are followed by the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls to enable appreciable accessibility.
+* The [WAI-ARIA patterns](https://www.w3.org/WAI/ARIA/apg/patterns/) are followed by Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls to enable appreciable accessibility.
 
 * Each ##Platform_Name## control is subjected to manual testing with a screen reader and also automated test cases to ensure the control's required attributes.
 
@@ -53,7 +53,7 @@ A screen reader allows people who are blind or visually impaired to use a comput
 
 ### Right-To-Left support
 
-Right-to-Left (RTL) support allows applications to effectively communicate with users who use languages that are written from right to left, such as Arabic, Hebrew, etc. Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls support the Right-to-Left feature. Refer to the [Right-to-Left documentation](../common/right-to-left) to learn more about this support.
+Right-to-Left (RTL) support allows applications to effectively communicate with users who use languages that are written from right to left, such as Arabic and Hebrew. Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls support the Right-to-Left feature. Refer to the [Right-to-Left documentation](../common/right-to-left) to learn more about this support.
 
 ### Color contrast
 
@@ -61,11 +61,11 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls come
 
 ### Mobile device support
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls are more user-friendly and accessible to individuals using mobile devices, including those with disabilities. These are designed to be responsive, adaptable to various screen sizes and orientations, and touch-friendly.
+Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls are user-friendly and accessible to individuals using mobile devices, including those with disabilities. These controls are designed to be responsive, adaptable to various screen sizes and orientations, and touch-friendly.
 
 ### Keyboard navigation support
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls support keyboard navigation, allowing users who rely on alternate methods to effortlessly navigate and interact with the control.
+Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls support keyboard navigation, allowing users who rely on alternate input methods to effortlessly navigate and interact with the controls.
 
 ## Ensuring accessibility
 
@@ -75,7 +75,7 @@ Ensuring the accessibility of Syncfusion<sup style="font-size:70%">&reg;</sup> #
 
 * **Manual testing**: This type of testing involves manually evaluating the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls. During manual accessibility testing, testers will ensure accessibility using the screen readers such as [Narrator](https://support.microsoft.com/en-us/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1) for Windows and [Embedded VoiceOver](https://support.apple.com/en-in/guide/voiceover/vo2706/mac) for MAC.
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls will keep improving when there is anything required. It also involves client feedback to make the control more accessible.
+Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls will continue improving when additional requirements are identified. This also involves client feedback to make the controls more accessible.
 
 ## Voluntary Product Accessibility Template
 

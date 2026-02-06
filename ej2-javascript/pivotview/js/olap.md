@@ -191,7 +191,7 @@ Refer the pivot table's CDN links as below
 
 ```
 
-> In this illustration, we have referred **Tailwind3** theme. You can also refer other themes like bootstrap, fabric, high-contrast etc.,
+> In this illustration, we have referred **tailwind3** theme. You can also refer other themes like bootstrap, fabric, high-contrast etc.,
 
 ### Adding pivot table control
 

@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Stock chart control | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Stock chart control of Syncfusion Essential JS 2 and more details.
+title: ES5 getting started with ##Platform_Name## Stock chart control | Syncfusion
+description:  Checkout and learn about ES5 getting started with ##Platform_Name## Stock chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Es5 getting started 
+control: ES5 getting started 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Stock chart control
+# ES5 getting started in ##Platform_Name## Stock chart control
 
-This section explains you the steps required to create a simple Stock Chart and demonstrate the basic usage of the Stock Chart control.
+This section explains the steps required to create a simple Stock Chart and demonstrates the basic usage of the Stock Chart control.
 
 ## Dependencies
 
@@ -37,13 +37,13 @@ Below is the list of minimum dependencies required to use the Stock Chart.
 
 ## Setup for local environment
 
-Refer the following steps for setup your local environment.
+Follow these steps to set up your local environment.
 
 **Step 1:** Create a root folder **myapp** for your application.
 
 **Step 2:** Create **myapp/resources** folder to store local scripts and styles files.
 
-**Step 3:** Create **myapp/index.js** and **myapp/index.html** files for initializing Essential JS 2 Stock Chart control.
+**Step 3:** Create **myapp/index.js** and **myapp/index.html** files for initializing the Syncfusion Essential JS 2 Stock Chart control.
 
 ## Adding Syncfusion resources
 
@@ -58,25 +58,25 @@ You can get the global scripts and styles from the [Essential Studio JavaScript 
 
 After installing the Essential JS 2 product build, you can copy the chart and its dependencies scripts and style file into the **resources/scripts** and **resources/styles** folder.
 
-Refer the below code to find location stock chart's script and style file.
+The following shows the path to the stock chart's script and style files.
 
 **Syntax:**
 
-> Dependency script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{DEPENDENCY_PACKAGE_NAME}/dist/global/{DEPENDENCY_PACKAGE_NAME}.min.js`
+> Dependency script: `**(installed location)**/Syncfusion/Essential Studio/JavaScript - EJ2/{RELEASE_VERSION}/Web (Essential JS 2)/JavaScript/{DEPENDENCY_PACKAGE_NAME}/dist/global/{DEPENDENCY_PACKAGE_NAME}.min.js`
 >
-> Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+> Script: `**(installed location)**/Syncfusion/Essential Studio/JavaScript - EJ2/{RELEASE_VERSION}/Web (Essential JS 2)/JavaScript/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
 > Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/material.css`
 
 **Example:**
 
-> Dependency script: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-base/dist/global/ej2-base.min.js`
+> > Dependency script: `C:/Program Files (x86)/Syncfusion/Essential Studio/JavaScript - EJ2/32.1.19/Web (Essential JS 2)/JavaScript/ej2-base/dist/global/ej2-base.min.js`
 >
-> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-charts/dist/global/ej2-charts.min.js`
+> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/JavaScript - EJ2/32.1.19/Web (Essential JS 2)/JavaScript/ej2-charts/dist/global/ej2-charts.min.js`
 >
 > Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-charts/styles/material.css`
 
-After copying the files, then you can refer the stock chart's scripts and style into the `index.html` file. The below html code example shows the minimal dependency of chart.
+After copying the files, reference the chart scripts from `index.html`. The following HTML shows the minimal chart dependencies.
 
 ```
 
@@ -119,7 +119,7 @@ After copying the files, then you can refer the stock chart's scripts and style 
 
 Using CDN link, you can directly refer the stock chart control's script and style into the `index.html`.
 
-Refer the chart's CDN links as below
+Refer the chart's CDN links as below.
 
 **Syntax:**
 
@@ -155,7 +155,7 @@ The below html code example shows the minimal dependency of chart.
 
 Now, you can start adding stock chart control in the application. For getting started, add a **div** element for Chart control in **index.html**. Then refer the **index.js** file into the **index.html** file.
 
-In this document context we are going to use **ej2.min.js** which includes all the Essential JS 2 components and its dependent scripts.
+This document uses `ej2.min.js`, which includes all Essential JS 2 components and dependencies.
 
 ```html
 <!DOCTYPE html>
@@ -176,7 +176,7 @@ In this document context we are going to use **ej2.min.js** which includes all t
 
 ```
 
-Place the following chart code in the **index.js**.
+Place the following stock chart initialization code in `index.js`.
 
 ```javascript
 
@@ -187,7 +187,7 @@ stockChart.appendTo('#element');
 
 ## Populate Stock Chart With Data
 
-This section explains how to plot below JSON data to the  Stock Chart.
+This section explains how to plot the following JSON data to the  Stock Chart.
 
 ```javascript
 
@@ -251,7 +251,7 @@ Since the JSON contains DateTime data, set the [`valueType`](../api/stock-chart/
 
 ## Add Stock Chart Title
 
-You can add a title using [`title`](../api/stock-chart/stockChartModel/#title) property to the Stock Chart to provide quick information to the user about the data plotted in the Chart.
+You can add a title using the [`title`](../api/stock-chart/stockChartModel/#title) property to the Stock Chart to provide quick information to the user about the data plotted in the Chart.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -286,8 +286,8 @@ Crosshair lines can be enabled by using [`enable`](../api/chart/crosshairSettin
 Trackball is used to track a data point closest to the mouse or touch position. Trackball marker indicates the closest point and trackball tooltip displays the information about the point. To use trackball feature, we need to inject `Crosshair` module and `Tooltip` module using
 `StockChart.Inject(Crosshair, Tooltip)`.
 
-Trackball can be enabled by setting the [`enable`](../api/chart/crosshairSettings/#enable-boolean) property of the crosshair to true and
-[`shared`](../api/chart/tooltipSettings/#shared) property in `tooltip` to true in chart.
+Trackball can be enabled by setting the [`enable`](../api/chart/crosshairSettings/#enable-boolean) property of the crosshair to `true` and
+[`shared`](../api/chart/tooltipSettings/#shared) property in `tooltip` to `true` in chart.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

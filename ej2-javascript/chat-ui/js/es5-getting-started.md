@@ -45,9 +45,9 @@ The JavaScript (ES5) Chat UI control can be initialized by using either of the f
 >
 > Control Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
 >
-> Dependency Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\styles\tailwind3.css`
+> Dependency Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\styles\material.css`
 >
-> Control Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\tailwind3.css`
+> Control Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\material.css`
 
 **Example:**
 
@@ -55,15 +55,15 @@ The JavaScript (ES5) Chat UI control can be initialized by using either of the f
 >
 > Control Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-interactive-chat\dist\global\ej2-interactive-chat.min.js`
 >
-> Dependency Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-base\styles\tailwind3.css`
+> Dependency Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-base\styles\material.css`
 >
-> Control Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-interactive-chat\styles\tailwind3.css`
+> Control Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-interactive-chat\styles\material.css`
 
 The below located script and style file contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file.
 
 > Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
 >
-> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\tailwind3.css`
+> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\material.css`
 
 The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script and styles for a set of specific controls. This web tool is useful to combine the required control scripts and styles in a single file.
 
@@ -77,15 +77,15 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
        <head>
             <title>JavaScript (ES5)</title>
             <!-- JavaScript (ES5) Chat UI dependency style -->
-            <link href="resources/base/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/buttons/tailwind3.css" rel="stylesheet" type="text/css" />
-            <link href="resources/popups/tailwind3.css" rel="stylesheet" type="text/css" />
-            <link href="resources/inputs/tailwind3.css" rel="stylesheet" type="text/css" />
-            <link href="resources/navigations/tailwind3.css" rel="stylesheet" type="text/css" />
-            <link href="resources/dropdowns/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/base/material.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/buttons/material.css" rel="stylesheet" type="text/css" />
+            <link href="resources/popups/material.css" rel="stylesheet" type="text/css" />
+            <link href="resources/inputs/material.css" rel="stylesheet" type="text/css" />
+            <link href="resources/navigations/material.css" rel="stylesheet" type="text/css" />
+            <link href="resources/dropdowns/material.css" rel="stylesheet" type="text/css"/>
 
             <!-- JavaScript (ES5) Chat UI control style -->
-            <link href="resources/interactive-chat/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/interactive-chat/material.css" rel="stylesheet" type="text/css"/>
 
             <!-- JavaScript (ES5) Chat UI dependency global script -->
             <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
@@ -116,15 +116,15 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
        <head>
           <title>JavaScript (ES5)</title>
           <!-- JavaScript (ES5) Chat UI's dependency style -->
-          <link href="resources/base/tailwind3.css" rel="stylesheet" type="text/css"/>
-          <link href="resources/buttons/tailwind3.css" rel="stylesheet" type="text/css" />
-          <link href="resources/popups/tailwind3.css" rel="stylesheet" type="text/css" />
-          <link href="resources/inputs/tailwind3.css" rel="stylesheet" type="text/css" />
-          <link href="resources/navigations/tailwind3.css" rel="stylesheet" type="text/css" />
-          <link href="resources/dropdowns/tailwind3.css" rel="stylesheet" type="text/css"/>
+          <link href="resources/base/material.css" rel="stylesheet" type="text/css"/>
+          <link href="resources/buttons/material.css" rel="stylesheet" type="text/css" />
+          <link href="resources/popups/material.css" rel="stylesheet" type="text/css" />
+          <link href="resources/inputs/material.css" rel="stylesheet" type="text/css" />
+          <link href="resources/navigations/material.css" rel="stylesheet" type="text/css" />
+          <link href="resources/dropdowns/material.css" rel="stylesheet" type="text/css"/>
           
           <!-- JavaScript (ES5) Chat UI control style -->
-          <link href="resources/interactive-chat/tailwind3.css" rel="stylesheet" type="text/css"/>
+          <link href="resources/interactive-chat/material.css" rel="stylesheet" type="text/css"/>
 
           <!-- JavaScript (ES5) Chat UI's dependency global script -->
           <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
@@ -168,14 +168,14 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 >
 > Control Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Dependency Styles: `https://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/styles/tailwind3.css`
+> Dependency Styles: `https://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/styles/material.css`
 >
-> Control Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/tailwind3.css`
+> Control Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material.css`
 
 **Example:**
 > Script: [`https://cdn.syncfusion.com/ej2/ej2-interactive-chat/dist/global/ej2-interactive-chat.min.js`](https://cdn.syncfusion.com/ej2/ej2-interactive-chat/dist/global/ej2-interactive-chat.min.js)
 >
-> Styles: [`https://cdn.syncfusion.com/ej2/ej2-interactive-chat/styles/tailwind3.css`](http://cdn.syncfusion.com/ej2/ej2-interactive-chat/styles/tailwind3.css)
+> Styles: [`https://cdn.syncfusion.com/ej2/ej2-interactive-chat/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-interactive-chat/styles/material.css)
 
 **Step 3:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the CDN link references. Now, add the `Chat UI` element and initiate the `JavaScript (ES5) Chat UI` control in the index.html by using following code.
 
@@ -191,7 +191,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 ## Configure messages and user
 
-You can use the [messages](../api/chat-ui#messages) property to add messages and the [user](../api/chat-ui#user) property to configure the current user for the chat.
+You can use the [messages](../api/chat-ui/#messages) property to add messages and the [user](../api/chat-ui/#user) property to configure the current user for the chat.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

@@ -25,6 +25,7 @@ const toolbarSettings: any = {
    ],
  };
  
+// Initialize Rich Text Editor component
 let editor: RichTextEditor = new RichTextEditor({
   toolbarSettings: toolbarSettings,
   change: onChange,
@@ -32,6 +33,7 @@ let editor: RichTextEditor = new RichTextEditor({
 });
 
  
+// Render initialized Rich Text Editor
 editor.appendTo('#editor');
 
 function onChange(args: ChangeEventArgs) {

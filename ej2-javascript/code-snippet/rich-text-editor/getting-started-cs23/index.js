@@ -1,3 +1,4 @@
+// initialize Rich Text Editor component
 var editor = new ej.richtexteditor.RichTextEditor({
     //Define the quicktoolbar items for image
     quickToolbarSettings: {
@@ -17,5 +18,6 @@ var editor = new ej.richtexteditor.RichTextEditor({
         'SourceCode', 'FullScreen', '|', 'Undo', 'Redo']
     }
 });
+// render initialized Rich Text Editor
 editor.appendTo('#editor');
 

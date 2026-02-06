@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Maps control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Maps control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Maps component | Syncfusion
+description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Accessibility 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## Maps control
+# Accessibility in ##Platform_Name## Maps component
 
-The Maps control follows commonly used accessibility guidelines and standards, such as [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles).
+Accessibility enables users with disabilities to interact with the Maps component through assistive technologies such as screen readers and keyboard navigation. The Maps component is designed to comply with [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles).
 
-The accessibility compliance for the Maps control is outlined below.
+The following table summarizes the accessibility compliance of the Maps component.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -34,25 +34,25 @@ The accessibility compliance for the Maps control is outlined below.
     }
 </style>
 
-<div><img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> - All features of the control meet the requirement.</div>
+<div><img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> - All features of the component meet the requirement.</div>
 
-<div><img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> - Some features of the control do not meet the requirement.</div>
+<div><img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> - Some features of the component do not meet the requirement.</div>
 
-<div><img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> - The control does not meet the requirement.</div>
+<div><img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> - The component does not meet the requirement.</div>
 
 ## WAI-ARIA attributes
 
-To meet accessibility standards, the Maps control follows to the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns. In the Maps control, the following ARIA attributes are used:
+To meet accessibility standards, the Maps component follows to the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns. In the Maps component, the following ARIA attributes are used:
 
 | Attributes | Purpose |
 | --- | --- |
-| `role=region` | It specifies the Maps areas that do not support interactive functions like selection and highlight. |
+| `role=region` | It specifies the Maps areas that do not support interactive functions such as selection and highlight. |
 | `role=button` | It specifies the Maps areas where interactive functions such as selection and highlight are available. |
-| `aria-label` | Provides an accessible name for Maps elements such as geometric map shapes, title, subtitle, legend title, legend item labels, data labels, and so on. To learn more, see the next topic. |
+| `aria-label` | Provides an accessible name for Map elements such as geometric shapes, title, subtitle, legend title, legend item labels, and data labels. For more details, see the following section. |
 
 ## Screen reading in Maps
 
-Accessibility in the Maps control ensures that all users, regardless of ability or disability, can use screen reading. The following Map elements will be read aloud using screen reading software, such as Narrator for Windows.
+Accessibility in the Maps component ensures that all users, regardless of ability or disability, can use screen reading. The following Map elements will be read aloud using screen reading software, such as Narrator for Windows.
 
 | Elements | Description |
 | --- | --- |
@@ -67,9 +67,9 @@ Accessibility in the Maps control ensures that all users, regardless of ability 
 | Tooltip template | Reads the content provided in the tooltip template. |
 | Data label template | Reads the content provided in the data label template. |
 
-## Keyboard Navigation
+## Keyboard navigation
 
-All the Maps actions can be controlled via keyboard keys. The applicable key combinations and their relative functionalities are listed below for the appropriate UI features available in the control.
+The Maps component supports keyboard navigation to enable users to interact with the map without a mouse. The following table lists the supported key combinations and their corresponding actions.
 
 Interaction Keys |Description
 -----|-----
@@ -86,9 +86,9 @@ Interaction Keys |Description
 
 ## Ensuring accessibility
 
-The Maps control's accessibility levels are ensured using an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Maps component's accessibility levels are ensured using an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Maps control is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/maps.html) in a new window to evaluate the accessibility of the Maps control with accessibility tools.
+The accessibility compliance of the Maps component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/maps.html) in a new window to evaluate the accessibility of the Maps component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/maps.html" %}
 

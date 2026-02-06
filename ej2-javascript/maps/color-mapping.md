@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Color mapping in ##Platform_Name## Maps control | Syncfusion
-description: Learn here all about Color mapping in Syncfusion ##Platform_Name## Maps control of Syncfusion Essential JS 2 and more.
+title: Color mapping in ##Platform_Name## Maps component | Syncfusion
+description: Learn here all about Color mapping in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Color mapping 
 publishingplatform: ##Platform_Name##
@@ -9,21 +9,23 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Color mapping in ##Platform_Name## Maps control
+# Color mapping in ##Platform_Name## Maps component
 
-Color mapping is used to customize the shape colors based on the given values. It has three types.
+Color mapping enables dynamic coloring of map shapes based on data values, making it easier to visualize data patterns across geographical regions. The Maps component supports three types of color mapping:
 
 1. Range color mapping
 2. Equal color mapping
-3. Desaturation color mapping.
+3. Desaturation color mapping
 
-To add color mapping to the shapes of the Maps, bind the data source to the [`dataSource`](../api/maps/layerSettingsModel/#datasource) property of [`layerSettings`](../api/maps/layerSettingsModel) and set the field name which contains the color value in the data source to the [`colorValuePath`](../api/maps/shapeSettingsModel/#colorvaluepath) property.
+To apply color mapping to map shapes, bind the data source to the [`dataSource`](../api/maps/layerSettingsModel/datasource) property of [`layerSettings`](../api/maps/layerSettingsModel) and set the [`colorValuePath`](../api/maps/shapeSettingsModel/colorvaluepath) property to the field name that contains the color-determining values.
 
 ## Types of color mapping
 
+Each color mapping type serves different data visualization needs. Select the appropriate type based on the nature of the data being displayed.
+
 ### Range color mapping
 
-Range color mapping applies the color to the shapes of the Maps which matches the numeric values in the data source within the given color mapping ranges. The [`from`](../api/maps/colorMappingSettingsModel/#from) and [`to`](../api/maps/colorMappingSettingsModel/#to) properties in the [`colorMapping`](../api/maps/colorMappingSettingsModel/) are used to specify the color mapping ranges in the Maps.
+Range color mapping applies colors to map shapes when their numeric values fall within specified ranges. Use the [`from`](../api/maps/colorMappingSettingsModel/from) and [`to`](../api/maps/colorMappingSettingsModel/to) properties in the [`colorMapping`](../api/maps/colorMappingSettingsModel) to define the numeric ranges for color assignment.
 
 ```ts
 export let Population_Density = [
@@ -53,7 +55,7 @@ export let Population_Density = [
     ];
 ```
 
-Bind the **Population_Density** data to the [`dataSource`](../api/maps/layerSettingsModel/#datasource) property of [`layerSettings`](../api/maps/layerSettingsModel/) and set the [`colorValuePath`](../api/maps/shapeSettingsModel/#colorvaluepath) property of [`shapeSettings`](../api/maps/shapeSettingsModel/) as **density**. The range values can be set using the [`from`](../api/maps/colorMappingSettingsModel/#from) and [`to`](../api/maps/colorMappingSettingsModel/#to) properties of [`colorMapping`](../api/maps/colorMappingSettingsModel/).
+Bind the **Population_Density** data to the [`dataSource`](../api/maps/layerSettingsModel/datasource) property of [`layerSettings`](../api/maps/layerSettingsModel) and set the [`colorValuePath`](../api/maps/shapeSettingsModel/colorvaluepath) property of [`shapeSettings`](../api/maps/shapeSettingsModel) as **density**. The range values can be set using the [`from`](../api/maps/colorMappingSettingsModel/from) and [`to`](../api/maps/colorMappingSettingsModel/to) properties of [`colorMapping`](../api/maps/colorMappingSettingsModel).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -84,7 +86,7 @@ Bind the **Population_Density** data to the [`dataSource`](../api/maps/layerSett
 
 ### Equal color mapping
 
-Equal color mapping applies the color to the shapes of the Maps when the [`value`](../api/maps/colorMappingSettingsModel/#value) property of [`colorMapping`](../api/maps/colorMappingSettingsModel/) matches with the values provided in the data source. The following example shows how to apply equal color mapping to the shapes with the data source **unCountries** which illustrates the permanent and non-permanent countries in the UN security council.
+Equal color mapping applies colors to map shapes when their values exactly match the specified [`value`](../api/maps/colorMappingSettingsModel/value) property in [`colorMapping`](../api/maps/colorMappingSettingsModel). This type is ideal for categorical data. The following example demonstrates equal color mapping using the **unCountries** data source, which categorizes permanent and non-permanent countries in the UN Security Council.
 
 ```ts
 export let unCountries: object[] = [
@@ -106,7 +108,7 @@ export let unCountries: object[] = [
 ];
 ```
 
-Bind the **unCountries** data to the [`dataSource`](../api/maps/layerSettingsModel/#datasource) property of [`layerSettings`](../api/maps/layerSettingsModel/) and set the [`colorValuePath`](../api/maps/shapeSettingsModel/#colorvaluepath) property of [`shapeSettings`](../api/maps/shapeSettingsModel/) as **Membership**. Set the [`value`](../api/maps/colorMappingSettingsModel/#value) property in the [`colorMapping`](../api/maps/colorMappingSettingsModel/) to **Permanent** and **Non-Permanent** in the different set of color mapping properties. If the corresponding value of the [`colorValuePath`](../api/maps/shapeSettingsModel/#colorvaluepath) property matches with the corresponding field name in the data source, then the given color will be applied.
+Bind the **unCountries** data to the [`dataSource`](../api/maps/layerSettingsModel/datasource) property of [`layerSettings`](../api/maps/layerSettingsModel) and set the [`colorValuePath`](../api/maps/shapeSettingsModel/colorvaluepath) property of [`shapeSettings`](../api/maps/shapeSettingsModel) as **Membership**. Set the [`value`](../api/maps/colorMappingSettingsModel/value) property in the [`colorMapping`](../api/maps/colorMappingSettingsModel) to **Permanent** and **Non-Permanent** in the different set of color mapping properties. If the corresponding value of the [`colorValuePath`](../api/maps/shapeSettingsModel/colorvaluepath) property matches with the corresponding field name in the data source, then the given color will be applied.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -137,11 +139,11 @@ Bind the **unCountries** data to the [`dataSource`](../api/maps/layerSettingsMod
 
 ### Desaturation color mapping
 
-Desaturation color mapping applies the color to the shapes of the Maps, similar to the range color mapping. The opacity will be applied in this color mapping based on the [`minOpacity`](../api/maps/colorMappingSettingsModel/#minopacity) and [`maxOpacity`](../api/maps/colorMappingSettingsModel/#maxopacity) properties in the [`colorMapping`](../api/maps/colorMappingSettingsModel/).
+Desaturation color mapping works like range color mapping but also varies the opacity of shapes based on their data values. The [`minOpacity`](../api/maps/colorMappingSettingsModel/minopacity) and [`maxOpacity`](../api/maps/colorMappingSettingsModel/maxopacity) properties in [`colorMapping`](../api/maps/colorMappingSettingsModel) control the opacity range, creating a visual gradient effect that emphasizes data intensity.
 
 >The following example shows how to apply desaturation color mapping to the shapes with the data source  **Population_Density** that is available in the [Range color mapping](#range-color-mapping) section.
 
-Bind the **Population_Density** data to the [`dataSource`](../api/maps/layerSettingsModel/#datasource) property of [`layerSettings`](../api/maps/layerSettingsModel/) and set the [`colorValuePath`](../api/maps/shapeSettingsModel/#colorvaluepath) property of [`shapeSettings`](../api/maps/shapeSettingsModel/) as **density**. The range values can be set using the [`from`](../api/maps/colorMappingSettingsModel/#from) and [`to`](../api/maps/colorMappingSettingsModel/#to) properties of [`colorMapping`](../api/maps/colorMappingSettingsModel/).
+Bind the **Population_Density** data to the [`dataSource`](../api/maps/layerSettingsModel/datasource) property of [`layerSettings`](../api/maps/layerSettingsModel) and set the [`colorValuePath`](../api/maps/shapeSettingsModel/colorvaluepath) property of [`shapeSettings`](../api/maps/shapeSettingsModel) as **density**. The range values can be set using the [`from`](../api/maps/colorMappingSettingsModel/from) and [`to`](../api/maps/colorMappingSettingsModel/to) properties of [`colorMapping`](../api/maps/colorMappingSettingsModel).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -172,11 +174,11 @@ Bind the **Population_Density** data to the [`dataSource`](../api/maps/layerSett
 
 ## Multiple colors for a single shape
 
-Multiple colors can be added to the color mapping which can be used as gradient effect to a specific shape based on the ranges in the data source. By using the [`color`](../api/maps/colorMappingSettingsModel/#color) property of [`colorMapping`](../api/maps/colorMappingSettingsModel/), any number of colors can be set to the shapes as a gradient.
+Multiple colors can be specified in the color mapping to create a gradient effect on shapes. By providing an array of colors to the [`color`](../api/maps/colorMappingSettingsModel/color) property of [`colorMapping`](../api/maps/colorMappingSettingsModel), the shapes display a smooth color transition based on their data values.
 
 >The following example demonstrates how to use multiple colors in color mapping with the data source  **Population_Density** that is available in the [Range color mapping](#range-color-mapping) section.
 
-Bind the **Population_Density** data to the [`dataSource`](../api/maps/layerSettingsModel/#datasource) property of [`layerSettings`](../api/maps/layerSettingsModel/) and set the [`colorValuePath`](../api/maps/shapeSettingsModel/#colorvaluepath) property of [`shapeSettings`](../api/maps/shapeSettingsModel/) as **density**. The range values can be set using the [`from`](../api/maps/colorMappingSettingsModel/#from) and [`to`](../api/maps/colorMappingSettingsModel/#to) properties of [`colorMapping`](../api/maps/colorMappingSettingsModel/).
+Bind the **Population_Density** data to the [`dataSource`](../api/maps/layerSettingsModel/datasource) property of [`layerSettings`](../api/maps/layerSettingsModel) and set the [`colorValuePath`](../api/maps/shapeSettingsModel/colorvaluepath) property of [`shapeSettings`](../api/maps/shapeSettingsModel) as **density**. The range values can be set using the [`from`](../api/maps/colorMappingSettingsModel/from) and [`to`](../api/maps/colorMappingSettingsModel/to) properties of [`colorMapping`](../api/maps/colorMappingSettingsModel).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -207,11 +209,11 @@ Bind the **Population_Density** data to the [`dataSource`](../api/maps/layerSett
 
 ## Color for items excluded from color mapping
 
-Color mapping can be applied to the shapes in the Maps which does not match color mapping criteria such as range or equal values using the [`color`](../api/maps/colorMappingSettingsModel/#color) property of [`colorMapping`](../api/maps/colorMappingSettingsModel/).
+Color mapping can be applied to the shapes in the Maps which does not match color mapping criteria such as range or equal values using the [`color`](../api/maps/colorMappingSettingsModel/color) property of [`colorMapping`](../api/maps/colorMappingSettingsModel).
 
 >The following example shows how to set the color for items excluded from the color mapping with the data source **Population_Density** that is available in the [Range color mapping](#range-color-mapping) section.
 
-In the following example, color mapping is added for the ranges from 0 to 200. If there are any records in the data source that are outside of this range, the color mapping will not be applied. To apply the color for these excluded items, set the [`color`](../api/maps/colorMappingSettingsModel/#color) property alone in the [`colorMapping`](../api/maps/colorMappingSettingsModel/).
+In the following example, color mapping is added for the ranges from 0 to 200. If there are any records in the data source that are outside of this range, the color mapping will not be applied. To apply the color for these excluded items, set the [`color`](../api/maps/colorMappingSettingsModel/color) property alone in the [`colorMapping`](../api/maps/colorMappingSettingsModel).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -242,7 +244,7 @@ In the following example, color mapping is added for the ranges from 0 to 200. I
 
 ## Color mapping for bubbles
 
-The color mapping types such as range color mapping, equal color mapping and desaturation color mapping are applicable for bubbles in the Maps. To add color mapping for bubbles of the Maps, bind the data source to the [`dataSource`](../api/maps/bubbleSettingsModel/#datasource) property of [`bubbleSettings`](../api/maps/bubbleSettingsModel) and set the field name which contains the color value in the data source to the [`colorValuePath`](../api/maps/bubbleSettingsModel/#colorvaluepath) property. Multiple colors for a single set of bubbles and color for excluded items from [`colorMapping`](../api/maps/colorMappingSettingsModel/) are also applicable for bubbles.
+The color mapping types such as range color mapping, equal color mapping and desaturation color mapping are applicable for bubbles in the Maps. To add color mapping for bubbles of the Maps, bind the data source to the [`dataSource`](../api/maps/bubbleSettingsModel/datasource) property of [`bubbleSettings`](../api/maps/bubbleSettingsModel) and set the field name which contains the color value in the data source to the [`colorValuePath`](../api/maps/bubbleSettingsModel/colorvaluepath) property. Multiple colors for a single set of bubbles and color for excluded items from [`colorMapping`](../api/maps/colorMappingSettingsModel) are also applicable for bubbles.
 
 {% if page.publishingplatform == "typescript" %}
 

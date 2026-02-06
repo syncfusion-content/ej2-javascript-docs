@@ -1,3 +1,4 @@
+// initialize Rich Text Editor component
 var editor = new ej.richtexteditor.RichTextEditor({
     toolbarSettings: {
         items: ['aicommands', 'aiquery']
@@ -19,6 +20,7 @@ Company Name
     },
 });
 
+// render initialized Rich Text Editor
 editor.appendTo('#editor');
 
 document.getElementById('proofBtn').onclick = function (e) {

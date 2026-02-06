@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Licensing errors in ##Platform_Name## Licensing control
+# Licensing errors in ##Platform_Name## controls
 
-Licensing error popup is displayed with various messages under different circumstances. Here are some ways to resolve different issues.
+A licensing error popup appears when the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JS 2 controls are used without a valid license key or when the registered key does not match the application requirements. Below are the most common licensing errors and their solutions.
 
 ## Licensing errors
 
@@ -25,7 +25,7 @@ The following error message will be shown if a Syncfusion<sup style="font-size:7
 
 **Solution:**
 
-* If you use JavaScript(ES5) controls through syncfusion<sup style="font-size:70%">&reg;</sup> installer, you can choose from the options listed below
+Register a valid license key in your application. You can generate the key using one of the following methods:
 
 1. If you **have a valid Syncfusion<sup style="font-size:70%">&reg;</sup> license**, you can **generate a license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
 
@@ -39,7 +39,7 @@ The following error message will be shown if a Syncfusion<sup style="font-size:7
 
 5. Also, you can generate the license key from claim license key page by clicking the **"Claim your FREE account"** click from the licensing warning message. Refer to this [help topic](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-generation#Claim-License-Key) for more details.
 
-* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration/) for information on registering the license key.
+After generating the key, register it in your application. Refer to this [help topic](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration) for registration instructions (supports script tag, npm, npx, and license file methods).
 
 ### Invalid key
 
@@ -65,7 +65,7 @@ If the application is registered with an invalid key, another version of license
 
 5. Also, you can generate the license key from claim license key page by clicking the **"Claim your FREE account"** click from the licensing warning message. Refer to this [help topic](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-generation#Claim-License-Key) for more details.
 
-* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration/) for information on registering the license key.
+* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration) for information on registering the license key.
 
 ## Licensing errors from version 16.2.0* to 20.3.0*
 
@@ -91,7 +91,7 @@ The following error message will be shown if a Syncfusion<sup style="font-size:7
 
 4. If you **do not already have a Syncfusion<sup style="font-size:70%">&reg;</sup> account**, you can create one [here](https://www.syncfusion.com/account/register) and [purchase a license](https://www.syncfusion.com/sales/products) or start your 30-day free trial. Then you can **generate the trial license key for a specific version and platform** from [this page](https://www.syncfusion.com/account/manage-trials/start-trials).
 
-* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration/) for information on registering the license key.
+* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration) for information on registering the license key.
 
 ### Invalid key
 
@@ -169,7 +169,7 @@ If the application is registered with another version’s license key, the follo
 
 3. If you **have a Syncfusion<sup style="font-size:70%">&reg;</sup> account but no active trials**, [purchase a license](https://www.syncfusion.com/sales/products) or [start your 30-day free trial](https://www.syncfusion.com/account/manage-trials/start-trials). Then you can **generate the trial license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
 
-* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration/) for information on registering the license key.
+* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration) for information on registering the license key.
 
 ## License key validation errors using the npx command
 
@@ -193,7 +193,7 @@ If you are using `npx syncfusion-license activate` command with an invalid licen
 
 4. If you **do not already have a Syncfusion<sup style="font-size:70%">&reg;</sup> account**, you can create one here and [purchase a license](https://www.syncfusion.com/sales/products) or [start your 30-day free trial](https://www.syncfusion.com/account/manage-trials/start-trials). Then you can **generate the trial license key for a specific version and product** from [this page](https://www.syncfusion.com/account/manage-trials/downloads).
 
-* In your application, register the generated license key using the npx command. Please refer to this [help topic](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration/) for information on registering the license key.
+* In your application, register the generated license key using the npx command. Please refer to this [help topic](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration) for information on registering the license key.
 
 
 ### Version Mismatch
@@ -214,7 +214,7 @@ If the application is activated with a license key from another version, the fol
 
 3. If you **have a Syncfusion<sup style="font-size:70%">&reg;</sup> account but no active trials**, [purchase a license](https://www.syncfusion.com/sales/products) or [start your 30-day free trial](https://www.syncfusion.com/account/manage-trials/start-trials). Then you can **generate the trial license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
 
-* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration/) for information on registering the license key.
+* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration) for information on registering the license key.
 
 ### Platform Mismatch
 
@@ -234,7 +234,7 @@ If the application is activated with another platform’s license key, the follo
 
 3. If you **have a Syncfusion<sup style="font-size:70%">&reg;</sup> account but no active trials**, [purchase a license](https://www.syncfusion.com/sales/products) or [start your 30-day free trial](https://www.syncfusion.com/account/manage-trials/start-trials). Then you can **generate the trial license key for a specific version and platform** from [this page](https://www.syncfusion.com/account/downloads).
 
-* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration/) for information on registering the license key.
+* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/javascript/documentation/licensing/license-key-registration) for information on registering the license key.
 
 ### Trial Expired
 

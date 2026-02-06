@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Event markers in ##Platform_Name## Gantt control
 
-The event markers in the Gantt control is used to highlight the important events in a project. Event markers can be initialized by using the [eventMarkers](../api/gantt/eventmarker) property, and you can define date and label for the event markers using the [day](../api/gantt/eventmarker#day) and [label](../api/gantt/eventmarker#label) properties. You can also customize it using the [cssClass](../api/gantt/eventmarker#cssclass) properties. The following code example shows how to add event markers in the Gantt control.
+The event markers in the Gantt control is used to highlight the important events in a project. Event markers can be initialized by using the [eventMarkers](../api/gantt/eventMarker) property, and you can define date and label for the event markers using the [day](../api/gantt/eventMarker#day) and [label](../api/gantt/eventMarker#label) properties. You can also customize it using the [cssClass](../api/gantt/eventMarker#cssclass) properties. The following code example shows how to add event markers in the Gantt control.
 
 To highlight the days, inject the [DayMarkers](../api/gantt#daymarkersmodule) module into the Gantt control.
 
@@ -44,7 +44,7 @@ To highlight the days, inject the [DayMarkers](../api/gantt#daymarkersmodule) mo
 
 ## Displaying eventMarkers in stacked manner
 
-When [eventMarkers](../api/gantt/eventmarker) are given in consecutive dates and zoomToFit is performed, they may overlap. To avoid this, you can update the position of the eventMarkers in the [dataBound](../api/gantt#databound) and [actionComplete](../api/gantt#actioncomplete) events so that they are not overlapped and are visible to read.
+When [eventMarkers](../api/gantt/eventMarker) are given in consecutive dates and zoomToFit is performed, they may overlap. To avoid this, you can update the position of the eventMarkers in the [dataBound](../api/gantt#databound) and [actionComplete](../api/gantt#actioncomplete) events so that they are not overlapped and are visible to read.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -75,7 +75,7 @@ When [eventMarkers](../api/gantt/eventmarker) are given in consecutive dates and
 
 ## Managing event marker overlapping in ##Platform_Name## gantt control
 
-In the EJ2 Gantt control, it is possible to customize multiple [eventMarkers](../api/gantt/eventmarker) for the same date. However, by default, in such scenarios, these markers may overlap each other, resulting in visual clutter. To manage this, the following sample code demonstrates how to utilize the Gantt dataBound function to obtain label and arrow classes. It performs a loop action to fulfill the current requirement and to avoid overlapping. For further clarification, the code snippet below illustrates the flow of its implementation.
+In the EJ2 Gantt control, it is possible to customize multiple [eventMarkers](../api/gantt/eventMarker) for the same date. However, by default, in such scenarios, these markers may overlap each other, resulting in visual clutter. To manage this, the following sample code demonstrates how to utilize the Gantt dataBound function to obtain label and arrow classes. It performs a loop action to fulfill the current requirement and to avoid overlapping. For further clarification, the code snippet below illustrates the flow of its implementation.
 
 {% if page.publishingplatform == "typescript" %}
 

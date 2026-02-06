@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Maintaining data in server in ##Platform_Name## Gantt | Syncfusion
+title: Maintaining data in server in ##Platform_Name## Gantt control | Syncfusion
 description: Learn here all about Maintaining data in server in Syncfusion ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Maintaining data in server 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Maintaining data in server in ##Platform_Name## Gantt
+# Maintaining data in server in ##Platform_Name## Gantt control
 
 All the modified data in Gantt control can be maintained in the database using RESTful web services.
 

@@ -3,7 +3,7 @@
 
 import {Chart3D, Category3D, Legend3D, ColumnSeries3D, Tooltip3D, Highlight3D } from '@syncfusion/ej2-charts';
 Chart3D.Inject(ColumnSeries3D, Category3D, Legend3D, Tooltip3D, Highlight3D);
-let chartData: any[] = [
+let chartData: Object[] = [
     { x: 'WW', y: 12, y1: 22, y2: 38.3, y3: 50 },
     { x: 'EU', y: 9.9, y1: 26, y2: 45.2, y3: 63.6 },
     { x: 'APAC', y: 4.4, y1: 9.3, y2: 18.2, y3: 20.9 },

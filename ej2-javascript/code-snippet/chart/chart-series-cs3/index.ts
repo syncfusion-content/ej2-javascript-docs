@@ -8,7 +8,7 @@ Chart.Inject(LineSeries, DateTime,Category, ColumnSeries, Legend, Tooltip);
 /**
  * Sample for Line series
  */
-export let data: any[] = [
+export let data: Object[] = [
   {group: { x: 'Aaa', y: 10}, y: 20},
   {group: { x: 'Baa', y: 30}, y: 10}
 ];

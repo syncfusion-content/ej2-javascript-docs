@@ -30,14 +30,14 @@ grid.appendTo('#Grid');
 
 function detailExpand(args: DetailExpandCollapseArgs) {
     // Prevent expanding detail row.
-    if (args.data.FirstName === 'Nancy') {
+    if (args.rowData.FirstName === 'Nancy') {
         args.cancel = true;
     }
 }
 
 function detailCollapse(args: DetailExpandCollapseArgs) {
     // Prevent collapsing detail row.
-    if (args.data.FirstName === 'Andrew') {
+    if (args.rowData.FirstName === 'Andrew') {
         args.cancel = true;
     }
 }

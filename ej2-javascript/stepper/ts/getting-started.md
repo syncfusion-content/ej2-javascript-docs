@@ -68,9 +68,9 @@ To render Stepper control, need to import navigations and its dependent controls
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
 
-@import "../../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-popups/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-navigations/styles/material.css";
+@import "../../node_modules/@syncfusion/ej2-base/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-popups/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-navigations/styles/fluent2.css";
 
 {% endhighlight %}
 {% endtabs %}

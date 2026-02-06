@@ -1,3 +1,4 @@
+// initialize Rich Text Editor component
 var editor = new ej.richtexteditor.RichTextEditor({
         value: `<h3>Markdown Auto-Format</h3>
     <p>The Markdown Auto-Format feature automatically converts Markdown syntax into clean, semantic HTML within the Rich Text Editor. This capability streamlines content creation by allowing you to write using familiar Markdown patterns while ensuring consistent HTML output.</p>
@@ -5,4 +6,5 @@ var editor = new ej.richtexteditor.RichTextEditor({
     <p>It also supports <strong>checklists</strong> and <strong>to-do lists,</strong> allowing you to create interactive task lists using simple Markdown syntax.</p>`,
 });
 
+// render initialized Rich Text Editor
 editor.appendTo('#editor');

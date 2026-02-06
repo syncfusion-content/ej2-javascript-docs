@@ -11,15 +11,15 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Diagram control
 
-This guide shows how to create a basic Diagram component and configure key features in TypeScript using the Essential® JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section explains how to create a simple Diagram component and configure its available functionalities in TypeScript, using Essential® JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
-> This application is configured with `webpack.config.js` and the latest [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires Node `v14.15.0` or later. For more about webpack, see the [official documentation](https://webpack.js.org/guides/getting-started/).
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 <!-- markdownlint-disable MD033 -->
 
 ## Dependencies
 
-The following packages are required to use the `Diagram` component in your application.
+The following list of dependencies are required to use the `Diagram` component in your application.
 
 ```javascript
 |-- @syncfusion/ej2-diagrams
@@ -33,9 +33,9 @@ The following packages are required to use the `Diagram` component in your appli
     |-- @syncfusion/ej2-splitbuttons
 ```
 
-## Set up the development environment
+## Set up development environment
 
-Open a command prompt in your working directory and clone the Syncfusion® JavaScript (Essential® JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-):
+Open the command prompt from the required directory, and run the following command to clone the Syncfusion® JavaScript (Essential® JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -45,7 +45,7 @@ git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quic
 {% endhighlight %}
 {% endtabs %}
 
-After cloning, navigate to the `ej2-quickstart` folder:
+After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -59,7 +59,7 @@ cd ej2-quickstart
 
 Syncfusion® JavaScript (Essential® JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion® JavaScript (Essential® JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
 
-The quickstart is preconfigured with the [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) dependency in `~/package.json`. Install the npm packages:
+The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
@@ -69,74 +69,58 @@ npm install
 {% endhighlight %}
 {% endtabs %}
 
-## Import Syncfusion® CSS styles
+## Import the Syncfusion® CSS styles
 
-To render the Diagram component, import the Diagram and dependent component styles in `~/src/styles/styles.css`:
+To render the Diagram component, need to import diagram and its dependent component’s styles as given below in the `~/src/styles/styles.css` file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
 
-@import '../../node_modules/@syncfusion/ej2-diagrams/styles/tailwind3.css';
-@import "../../node_modules/@syncfusion/ej2-base/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css";
+@import '../../node_modules/@syncfusion/ej2-diagrams/styles/material.css';
+@import "../../node_modules/@syncfusion/ej2-base/styles/material.css";
+@import "../../node_modules/@syncfusion/ej2-popups/styles/material.css";
+@import "../../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css";
+@import "../../node_modules/@syncfusion/ej2-navigations/styles/material.css";
 
 {% endhighlight %}
 {% endtabs %}
 
 
-## Module injection
+## Module Injection
 
-The Diagram component is modular. Inject feature modules to enable specific capabilities. The following modules are commonly used:
+The diagram component is divided into individual feature-wise modules. In order to use a particular feature, inject the required module. The following list describes the module names and their description.
 
-* `BpmnDiagrams`: Adds built-in BPMN shapes.
-* `ConnectorBridging`: Draws bridges where connectors cross.
-* `ConnectorEditing`: Enables editing of connector segments.
-* `ComplexHierarchicalTree`: Renders complex hierarchical tree layouts.
-* `DataBinding`: Populates nodes from a data source.
-* `DiagramContextMenu`: Enables a context menu.
-* `HierarchicalTree`: Renders hierarchical tree layouts.
-* `LayoutAnimation`: Animates layout updates.
-* `MindMap`: Enables mind map layouts.
-* `PrintAndExport`: Prints or exports diagram objects.
-* `RadialTree`: Renders radial tree layouts.
-* `Snapping`: Snaps objects to alignment guides.
-* `SymmetricLayout`: Renders symmetric layouts.
-* `UndoRedo`: Reverts and restores changes.
-* `Ej1Serialization`: Loads EJ1 Diagram JSON into EJ2 Diagram.
+* `BpmnDiagrams`: Inject this provider to add built-in BPMN shapes to diagrams.
+* `ConnectorBridging`: Inject this provider to add bridges to connectors.
+* `ConnectorEditing`: Inject this provider to edit the segments for connector.
+* `ComplexHierarchicalTree`: Inject this provider to complex hierarchical tree like structure.
+* `DataBinding`: Inject this provider to populate nodes from given data source.
+* `DiagramContextMenu`: Inject this provider to manipulate context menu.
+* `HierarchicalTree`: Inject this provider to use hierarchical tree like structure.
+* `LayoutAnimation`: Inject this provider animation to layouts.
+* `MindMap`: Inject this provider to use mind map.
+* `PrintAndExport`: Inject this provider to print or export the objects.
+* `RadialTree`: Inject this provider to use radial tree like structure.
+* `Snapping`: Inject this provider to snap the objects.
+* `SymmetricLayout`: Inject this provider to render layout in symmetrical method.
+* `UndoRedo`: Inject this provider to revert and restore the changes.
+* `Ej1Serialization` - Inject this provider to load ej1 diagram json in ej2 diagram.
 
-Import and inject modules using `Diagram.Inject`:
+These modules should be imported and injected into the Diagram component using `Diagram.Inject` method as follows.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 
-import { Diagram, HierarchicalTree, MindMap, RadialTree, ComplexHierarchicalTree, DataBinding, Snapping, PrintAndExport, BpmnDiagrams, SymmetricLayout, ConnectorBridging, UndoRedo, LayoutAnimation, DiagramContextMenu, ConnectorEditing, Ej1Serialization } from '@syncfusion/ej2-diagrams';
+import { Diagram, HierarchicalTree, MindMap, RadialTree, ComplexHierarchicalTree, DataBinding, Snapping, PrintAndExport, BpmnDiagrams, SymmetricLayout, ConnectorBridging, UndoRedo, LayoutAnimation, DiagramContextMenu, ConnectorEditing,Ej1Serialization } from '@syncfusion/ej2-diagrams';
 
-Diagram.Inject(
-    BpmnDiagrams,
-    ConnectorBridging,
-    ConnectorEditing,
-    ComplexHierarchicalTree,
-    DataBinding,
-    DiagramContextMenu,
-    HierarchicalTree,
-    LayoutAnimation,
-    MindMap,
-    PrintAndExport,
-    RadialTree,
-    Snapping,
-    SymmetricLayout,
-    UndoRedo,
-    Ej1Serialization
-);
+Diagram.Inject(BpmnDiagrams, ConnectorBridging, ConnectorEditing, ComplexHierarchicalTree, DataBinding, DiagramContextMenu, HierarchicalTree, LayoutAnimation, MindMap, PrintAndExport, RadialTree, Snapping, SymmetricLayout, UndoRedo,Ej1Serialization);
 
 {% endhighlight %}
 {% endtabs %}
 
-## Add a diagram to the project
+## Add diagram to the project
 
-Add a container element for the Diagram to your `index.html`. [src/index.html](src/index.html)
+Add the HTML div element for the diagram into your `index.html`. `[src/index.html]`
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -155,7 +139,7 @@ Add a container element for the Diagram to your `index.html`. [src/index.html](s
 </head>
 
 <body>
-    <!-- Container that renders the Diagram -->
+    <!--container which is going to render the Diagram-->
     <div id='container'>
     </div>
 </body>
@@ -165,20 +149,20 @@ Add a container element for the Diagram to your `index.html`. [src/index.html](s
 {% endhighlight %}
 {% endtabs %}
 
-Now import the Diagram component in `app.ts`, create an instance, and append it to `#container`. [src/app/app.ts](src/app/app.ts)
+Now, import the diagram component into your `app.ts` to instantiate a diagram and append the diagram instance to the `#container`. `[src/app/app.ts]`
 
-The following example shows a basic Diagram:
+The following example shows a basic diagram.
 
 ```Typescript
  import { Diagram } from '@syncfusion/ej2-diagrams';
 let diagram: Diagram = new Diagram({
     width: '100%', height: '600px'
 });
-diagram.appendTo('#container');
+diagram.appendTo('#element');
 
 ```
 
-Run the application in the browser:
+Now, the `npm run start` command is used to run the application in the browser.
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
@@ -237,12 +221,12 @@ Create and add a `node` (JSON data) with specific position, size.
 {% endif %}
 
 
-### Apply shape and style to a node
+### Apply shape and style to node
 
 Syncfusion® diagram control provides support to render many built-in shapes in diagram.
-Please refer to [`Shapes`](../api/diagram/shapes) to know about built-in Shapes.
+Please refer to [`Shapes`](../api/diagram/shapes/) to know about built-in Shapes.
 
-* The appearance of a node can be customized by changing its [`fill`](../api/diagram/shapeStyleModel#fill) color, [`strokeColor`](../api/diagram/shapeStyleModel#strokecolor), [`strokeWidth`](../api/diagram/shapeStyleModel#strokewidth), [`borderColor`](../api/diagram/node#bordercolor), [`borderWidth`](../api/diagram/node#borderwidth), [`strokeDashArray`](../api/diagram/shapeStyleModel#strokedasharray),  [`opacity`](../api/diagram/shapeStyleModel#opacity), and [`shadow`](../api/diagram/shapeStyleModel#shadow).
+* The appearance of a node can be customized by changing its [`fill`](../api/diagram/shapeStyleModel/#fill) color, [`strokeColor`](../api/diagram/shapeStyleModel/#strokecolor), [`strokeWidth`](../api/diagram/shapeStyleModel/#strokewidth), [`borderColor`](../api/diagram/node/#bordercolor), [`borderWidth`](../api/diagram/node/#borderwidth), [`strokeDashArray`](../api/diagram/shapeStyleModel/#strokedasharray),  [`opacity`](../api/diagram/shapeStyleModel/#opacity), and [`shadow`](../api/diagram/shapeStyleModel/#shadow).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -272,9 +256,9 @@ Please refer to [`Shapes`](../api/diagram/shapes) to know about built-in Shapes.
 {% endif %}
 
 
-### Add additional flowchart nodes
+### Add other flowchart nodes to the diagram
 
-Add multiple nodes with different flowchart shapes to the diagram.
+You can add multiple nodes with different shapes into diagram.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -304,9 +288,9 @@ Add multiple nodes with different flowchart shapes to the diagram.
 {% endif %}
 
 
-### Connect flowchart nodes
+### Connect flow chart nodes
 
-Connect these nodes by adding a connector using the [`connectors`](../api/diagram/connectorModel) property of diagram and refer the source and target end by using the [`sourceID`](../api/diagram/connectorModel#sourceid) and [`targetID`](../api/diagram/connectorModel#targetid) properties.
+Connect these nodes by adding a connector using the [`connectors`](../api/diagram/connectorModel/) property of diagram and refer the source and target end by using the [`sourceID`](../api/diagram/connectorModel/#sourceid) and [`targetID`](../api/diagram/connectorModel/#targetid) properties.
 The required nodes and connectors can be added to form a complete flow diagram.
 
 
@@ -338,16 +322,16 @@ The required nodes and connectors can be added to form a complete flow diagram.
 {% endif %}
 
 
-Default values for all [`nodes`](../api/diagram/nodemodel) and [`connectors`](../api/diagram/connectorModel) can be set using [`getNodeDefaults`](../api/diagram#getnodedefaults) and [`getConnectorDefaults`](../api/diagram#getconnectordefaults). For example, if all nodes share the same width and height, move those properties into `getNodeDefaults`.
+Default values for all [`nodes`](../api/diagram/nodemodel/) and [`connectors`](../api/diagram/connectorModel/) can be set using the [`getNodeDefaults`](../api/diagram/#getnodedefaults) and [`getConnectorDefaults`](../api/diagram/#getconnectordefaults) properties, respectively. For example, if all nodes have the same width and height, such properties can be moved into `getNodeDefaults`.
 
 
-## Automatic organizational chart
+## Automatic organization chart
 
-The Flowchart section showed how to build a diagram manually. This section explains how to generate and position a diagram automatically.
+In the 'Flow Diagram' section, how to create a diagram manually was discussed. This section explains how to create and position the diagram automatically.
 
-### Create business data (employee information)
+### Create Business object (Employee information)
 
-Define employee information as JSON. In the data below, `Name` is the unique identifier and `ReportingPerson` specifies the manager the employee reports to.
+Define Employee Information as JSON data. The following code example shows an employee array whose, `Name` is used as an unique identifier and `ReportingPerson` is used to identify the person to whom an employee report to, in the organization.
 
 ```ts
 
@@ -363,9 +347,9 @@ let data: object[] = [{Name: "Elizabeth", Role: "Director" },
 
 ```
 
-### Map the data source to the diagram
+### Map data source to diagram
 
-Configure the employee data with the diagram so nodes and connectors are generated automatically using mapping properties. The example below shows how `dataSourceSettings` maps the ID and parent fields.
+You can configure the above "Employee Information" with diagram, so that the nodes and connectors are automatically generated using the mapping properties. The following code example show how `dataSourceSettings` is used to map ID and parent with property name identifiers for employee information.
 
 ```ts
 
@@ -391,9 +375,9 @@ let diagram: Diagram = new Diagram({
 
 ```
 
-### Render layout with a data source
+### Rendering layout with Datasource
 
-To create an organizational chart, set the layout [`type`](../api/diagram/layout) to `OrganizationalChart`. The example below shows how `DataManager` generates the layout based on the diagram `dataSourceSettings`.
+To create an organizational chart, the [`type`](../api/diagram/layout/) of layout should be set as an `OrganizationalChart`. The following code example shows how DataManager is used to generate Layout based on the DataSourceSettings of the Diagram.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -424,7 +408,7 @@ To create an organizational chart, set the layout [`type`](../api/diagram/layout
 
 ### Customize employee appearance
 
-The examples below show how to define the default appearance of nodes and connectors. Use [`setNodeTemplate`](../api/diagram#setnodetemplate) to update each node based on employee data.
+The following code examples indicate how to define the default appearance of nodes and connectors. The [`setNodeTemplate`](../api/diagram/#setnodetemplate) is used to update each node based on employee data.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -453,4 +437,4 @@ The examples below show how to define the default appearance of nodes and connec
 {% previewsample "page.domainurl/code-snippet/diagram/getting-started-cs5" %}
 {% endif %}
 
-N> See the [JavaScript Diagram](https://www.syncfusion.com/javascript-ui-controls/js-diagram) feature tour for highlights. Explore the [JavaScript Diagram examples](https://ej2.syncfusion.com/demos/#/bootstrap5/diagram/default-functionalities.html) to learn how to present and manipulate data.
+N> You can refer to our [JavaScript Diagram](https://www.syncfusion.com/javascript-ui-controls/js-diagram) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Diagram example](https://ej2.syncfusion.com/demos/#/bootstrap5/diagram/default-functionalities.html) to knows how to present and manipulate data.

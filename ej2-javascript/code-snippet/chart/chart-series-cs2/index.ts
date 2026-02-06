@@ -4,7 +4,7 @@
 import { Chart, StackingColumnSeries, LineSeries } from '@syncfusion/ej2-charts';
 import { ColumnSeries, Category } from '@syncfusion/ej2-charts';
 Chart.Inject(StackingColumnSeries, LineSeries, Category, ColumnSeries);
-let chartData: any[] = [
+let chartData: Object[] = [
     { x: '2005', y: 1.2, y1: 0.5, y2: 0.7, y3: -0.8, y4: 1.5 },
     { x: '2006', y: 1, y1: 0.5, y2: 1.4, y3: 0, y4: 2.3 },
     { x: '2007', y: 1, y1: 0.5, y2: 1.5, y3: -1, y4: 2 },

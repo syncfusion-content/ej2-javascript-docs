@@ -17,7 +17,7 @@ You can render the AI AssistView toolbar items by using the `items` property in 
 
 By default, the footer toolbar renders the `send`, if attachment is enabled the `attachment` item will also be rendered which allows users to send the prompt text or attach files as needed.
 
-In the following example, AI AssistView control rendered with footer toolbar items such as `send` and `attachment` icons.
+In the following example, AI AssistView component rendered with footer toolbar items such as `send` and `attachment` icons.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -710,4 +710,4 @@ You can use the [responseToolbarSettings](../api/ai-assistview#responsetoolbarse
 
 #### Item clicked
 
-The [itemClicked](../api/ai-assistview/promptToolbarSettingsModel#itemclicked) event is triggered when the custom toolbar item is clicked.
+The [itemClicked](../api/ai-assistview/promptToolbarSettingsModel#itemclicked) event is triggered when a custom toolbar item is clicked. This event applies to both prompt and response toolbar items. 

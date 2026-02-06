@@ -17,7 +17,7 @@ You can use the [addPromptResponse](../api/ai-assistview#addpromptresponse) publ
 
 ### Adding responses as string.
 
-You can add a response as a string by passing it as an argument to the `addPromptResponse('Response')` method. This will append the response to the last prompt added to the conversation.
+You can add string response, by passing it as argument for the `addPromptResponse('Response')` method which adds as the response of last added prompt.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -48,7 +48,7 @@ You can add a response as a string by passing it as an argument to the `addPromp
 
 ### Adding responses as object.
 
-You can add an object response by passing the prompt and response as a collection to the `addPromptResponse({prompt: 'Prompt text', response: 'Response text'})` method. This will add a new prompt and its corresponding response to the AI AssistView.
+You can add object response, by passing the prompt and response as a collection as argument for the `addPromptResponse({prompt: 'Prompt text', response: 'Response text'})` method which adds as a new prompt and response in the AI AssistView.
 
 {% if page.publishingplatform == "typescript" %}
 

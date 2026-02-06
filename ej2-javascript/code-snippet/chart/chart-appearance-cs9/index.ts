@@ -3,7 +3,7 @@
 
 import { Chart, ColumnSeries, Category, ISeriesRenderEventArgs, IPointRenderEventArgs } from '@syncfusion/ej2-charts';
 Chart.Inject(ColumnSeries, Category);
-let chartData: any[] = [
+let chartData: Object[] = [
     { country: "USA", gold: 50 },
     { country: "China", gold: 40 },
     { country: "Japan", gold: 70 },

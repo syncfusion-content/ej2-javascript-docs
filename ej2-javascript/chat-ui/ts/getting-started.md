@@ -72,13 +72,13 @@ To render Chat UI control, need to import interactive-chat and its dependent con
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
 
-@import "../../node_modules/@syncfusion/ej2-base/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css";
-@import '../../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css';
-@import "../../node_modules/@syncfusion/ej2-interactive-chat/styles/tailwind3.css";
+@import "../../node_modules/@syncfusion/ej2-base/styles/material.css";
+@import "../../node_modules/@syncfusion/ej2-inputs/styles/material.css";
+@import "../../node_modules/@syncfusion/ej2-buttons/styles/material.css";
+@import "../../node_modules/@syncfusion/ej2-navigations/styles/material.css";
+@import "../../node_modules/@syncfusion/ej2-popups/styles/material.css";
+@import '../../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
+@import "../../node_modules/@syncfusion/ej2-interactive-chat/styles/material.css";
 
 {% endhighlight %}
 {% endtabs %}
@@ -161,7 +161,7 @@ The following example shows a basic Chat UI control.
 
 ## Configure messages and user
 
-You can use the [messages](../api/chat-ui#messages) property to add messages and the [user](../api/chat-ui#user) property to configure the current user for the chat.
+You can use the [messages](../api/chat-ui/#messages) property to add messages and the [user](../api/chat-ui/#user) property to configure the current user for the chat.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

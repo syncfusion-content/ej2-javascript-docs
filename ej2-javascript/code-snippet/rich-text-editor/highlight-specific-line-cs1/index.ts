@@ -15,6 +15,7 @@ let editor: RichTextEditor = new RichTextEditor({
     value: `<p>The Rich Text Editor component is the WYSIWYG ('what you see is what you get') editor that provides the best user experience to create and update content. Users can format their content using standard toolbar commands.</p>`,
 });
 
+// Render initialized Rich Text Editor
 editor.appendTo('#editor');
 
 var nodeSelection: NodeSelection = new NodeSelection();

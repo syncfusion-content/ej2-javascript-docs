@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) library and Meteor Framework
 
-This article provides a step-by-step introduction to configure Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) library and build it in the Meteor framework.
+This article provides a step-by-step guide to configure and use Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JS 2 controls in a Meteor application.
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ This article provides a step-by-step introduction to configure Syncfusion<sup st
 
 1.Open the command prompt from **administrator** mode, and install the `Meteor` using the following command line.
 
-on Windows:
+On Windows (using Chocolatey – run command prompt as Administrator):
 
  ```
     choco install meteor
@@ -35,7 +35,7 @@ on OSX/LINUX:
     curl https://install.meteor.com/ | sh
  ```
 
-    > Refer to [this documentation](https://www.meteor.com/install) for more information about installing `Meteor`.
+    > For detailed installation instructions, see the official [Meteor installation guide](https://www.meteor.com/install).
 
 2.Run the following command line to create a new project under `ej2-meteor` folder after installing `Meteor`.
 

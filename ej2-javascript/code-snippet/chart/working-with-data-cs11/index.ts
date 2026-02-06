@@ -10,7 +10,7 @@ import { Button } from '@syncfusion/ej2-buttons';
 
 Chart.Inject(LineSeries, Category, Tooltip);
 
-    const chartData: any[] = [
+    const chartData: Object[] = [
         { Month: 'January', Value: 19173 },
         { Month: 'February', Value: 17726 },
         { Month: 'March', Value: 19874 },

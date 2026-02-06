@@ -126,12 +126,12 @@ In the **PivotController.cs** file, define a **Get** method that calls **GetMySQ
 
 This section explains how to connect the Pivot Table to a MySQL database by fetching data from the Web API service created above.
 
-### Step 1: Create a Pivot Table in React
+### Step 1: Create a Pivot Table in Javascript
 1. Set up a Javascript project with the Pivot Table by following the [Getting Started](../getting-started) documentation.
 2. Ensure all necessary Syncfusion EJ2 Pivot Table dependencies are installed in your Javascript project.
 
 ### Step 2: Configure the Web API URL in the Pivot Table
-1. In the **App.jsx** (or **App.tsx**) file, map the Web API URL (`https://localhost:7146/Pivot`) to the Pivot Table using the [url](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#url) property within the [dataSourceSettings](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings).
+1. In the **index.js** file, map the Web API URL (`https://localhost:7146/Pivot`) to the Pivot Table using the [url](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#url) property within the [dataSourceSettings](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings).
 2. Below is the sample code to configure the Pivot Table to fetch data from the Web API:
 
 ```Javascript
@@ -146,7 +146,7 @@ pivotObj.appendTo('#PivotView');
 ```
 
 ### Step 3: Define the Pivot Table Report
-1. Configure the Pivot Table report in the **App.jsx** (or **App.tsx**) file to structure the data retrieved from the MySQL database.
+1. Configure the Pivot Table report in the **index.js** file to structure the data retrieved from the MySQL database.
 2. Use the [rows](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#rows), [columns](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#columns), [values](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#values), and [filters](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#filters) properties of [dataSourceSettings](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings) to define how data fields are organized and aggregated.
 3. Enable the field list by setting the [showFieldList](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#showfieldlist) property to **true** and including the `FieldList` module in the services. This allows users to interactively modify the Pivot Table’s structure by adding or rearranging fields.
 

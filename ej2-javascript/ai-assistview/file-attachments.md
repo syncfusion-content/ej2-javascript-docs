@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Attachments in ##Platform_Name## AI AssistView control
 
-The AI AssistView control supports file attachments, allowing users to include files along with their prompts to provide additional context and enhance interactions. Users can upload documents, images, and other file types to supplement their queries. Enable this functionality using the `enableAttachments` property and customize the behavior through the `attachmentSettings` configuration.
+The `Attachment` support in AI AssistView specifies user to include file attachments along with their prompts in the AI AssistView. This enhances the interaction by allowing users to provide additional context through files. You can enable this feature using the `enableAttachments` property, and customize its behavior using the `attachmentSettings` configuration.
 
 ## Enable attachment
 
-Enable file attachment support by setting the [enableAttachments](https://ej2.syncfusion.com/documentation/api/ai-assistview#enableattachments) property to `true`. By default, it is disabled.
+You can enable the attachment by using the [enableAttachments](https://ej2.syncfusion.com/react/documentation/api/ai-assistview#enableattachments) property. By default, the value is `false`.
 
 {% if page.publishingplatform == "typescript" %}
 

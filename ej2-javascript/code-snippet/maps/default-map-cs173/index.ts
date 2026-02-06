@@ -5,7 +5,7 @@ import { Maps } from '@syncfusion/ej2-maps';
 import { world_map } from './world-map.ts';
 let map: Maps = new Maps({
             titleSettings: {
-                text: 'USA Election Results - 2016'
+                text: 'USA Election Results'
             },
    layers: [
         {

@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Bullet chart control
 
-This section explains how to create a simple Bullet chart and configure its available functionalities in TypeScript using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This document explains how to create a simple Bullet Chart and configure its features in TypeScript using the Essential JS 2 webpack [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack getting-started guide](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
@@ -36,7 +36,7 @@ Open the command prompt from the required directory, and run the following comma
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
 
-git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quickstart
 
 {% endhighlight %}
 {% endtabs %}
@@ -67,7 +67,7 @@ npm install
 
 ## Add Bullet Chart to the Project
 
-Open the application in Visual Studio Code and add the Syncfusion JavaScript UI controls.
+Open the project in Visual Studio Code and add the Bullet Chart to the application.
 
 Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.html` file to initialize the Bullet chart.
 
@@ -98,7 +98,7 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 {% endhighlight %}
 {% endtabs %}
 
-Now import the Bullet Chart component into your `app.ts` to instantiate a bullet chart and append the bullet chart instance to the `#element` `[src/app/app.ts]`
+Import the Bullet Chart component into `[src/app/app.ts]` to instantiate and render the Bullet Chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -143,7 +143,7 @@ Bullet Chart component are segregated into individual feature-wise modules. In o
 
 * `BulletTooltip` - Inject this provider to use tooltip feature.
 
-Now import the above mentioned modules from Bullet Chart package and inject it into the Bullet Chart component using `BulletChart.Inject`  method.
+Now import the above-mentioned modules from the chart package and inject them into the Bullet Chart component using `BulletChart.Inject` method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -156,17 +156,17 @@ BulletChart.Inject(BulletTooltip);
 
 ## BulletChart With Data
 
-This section explains how to plot local data to the Bullet Chart.
+This section explains how to plot the following JSON data to the Bullet Chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 
-let data: any[] = [
-       { value: 100, target: 80 },
-       { value: 200, target: 180 },
-       { value: 300, target: 280 },
-       { value: 400, target: 380 },
-       { value: 500, target: 480 },
+let data: Object[] = [
+    { value: 100, target: 80 },
+    { value: 200, target: 180 },
+    { value: 300, target: 280 },
+    { value: 400, target: 380 },
+    { value: 500, target: 480 },
 ];
 
 {% endhighlight %}
@@ -187,7 +187,7 @@ Now assign the local data to `dataSource` property. `value` and `target` values 
 
 ## Add Bullet Chart Title
 
-You can add a title using `title` property to the Bullet Chart to provide quick information to the user about the data plotted in the Bullet Chart.
+You can add a title using the `title` property to the Bullet Chart to provide quick information to the user about the data plotted in the Bullet Chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -202,7 +202,7 @@ You can add a title using `title` property to the Bullet Chart to provide quick 
 
 ## Ranges
 
-You can add a range using `ranges` property to the Bullet Chart.
+You can add a range using the `ranges` property to the Bullet Chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -217,7 +217,7 @@ You can add a range using `ranges` property to the Bullet Chart.
 
 ## Tooltip
 
-You can use tooltip for the Bullet Chart by setting the `enable` property to true in `tooltip` object and by injecting the `BulletTooltip` module using `BulletChart.Inject(BulletTooltip)` method.
+You can use tooltip for the Bullet Chart by setting the `enable` property to `true` in `tooltip` object and by injecting the `BulletTooltip` module using `BulletChart.Inject(BulletTooltip)` method.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Connecting Laravel data to Syncfusion Grid
 description: Connect Laravel with PHP Syncfusion Grid for CRUD, filtering, sorting, paging, and RESTful API integration.
@@ -72,7 +72,7 @@ Open the terminal in Visual Studio Code or Command Prompt before running the ste
 
 Run the following command to create a new Laravel project using Composer:
 
-```bash
+```bash 
 composer create-project laravel/laravel grid-demo
 cd grid-demo
 ```

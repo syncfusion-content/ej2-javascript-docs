@@ -3,9 +3,9 @@
   <head>
     <title>Essential JS 2 - Stepper</title>
     <!-- Essential JS 2 Stepper's dependent material theme -->
-    <link href="resources/base/material.css" rel="stylesheet" type="text/css" />
-    <link href="resources/popups/material.css" rel="stylesheet" type="text/css" />
-    <link href="resources/navigations/material.css" rel="stylesheet" type="text/css" />
+    <link href="resources/base/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/popups/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/navigations/bootstrap5.3.css" rel="stylesheet" type="text/css" />
 
     <!-- Essential JS 2 Stepper's dependent global script -->
     <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>

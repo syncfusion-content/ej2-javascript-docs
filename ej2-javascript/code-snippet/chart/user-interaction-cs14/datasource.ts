@@ -33,7 +33,7 @@ for (i = 1; i < 500; i++) {
     series1.push(point1);
 }
 
-export let selectionData: any[] = [
+export let selectionData: Object[] = [
       { country: "USA", gold: 50, silver: 70, bronze: 45 },
       { country: "China", gold: 40, silver: 60, bronze: 55 },
       { country: "Japan", gold: 70, silver: 60, bronze: 50 },

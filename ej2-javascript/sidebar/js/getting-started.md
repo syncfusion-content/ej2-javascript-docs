@@ -3,7 +3,7 @@ layout: post
 title: Getting started with JavaScript Sidebar control | Syncfusion
 description: Checkout and learn about Getting started with JavaScript Sidebar control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: Sidebar 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -31,19 +31,19 @@ Using either of the following way to refer the required script and styles.
 **Syntax:**
 > Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
 >
-> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\material.css`
+> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\bootstrap5.3.css`
 
 **Example:**
 
-> Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-navigations\dist\global\ej2-navigations.min.js`
+> Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\32.1.19\Web (Essential JS 2)\JavaScript\ej2-navigations\dist\global\ej2-navigations.min.js`
 >
-> Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-navigations\styles\material.css`
+> Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\32.1.19\Web (Essential JS 2)\JavaScript\ej2-navigations\styles\bootstrap5.3.css`
 
 The below located script and style file contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file.
 
 > Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
 >
-> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\material.css`
+> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\bootstrap5.3.css`
 
 **Step 3:** Create a folder `myapp/resources` and copy/paste the above mentioned packages from the above installed location to `myapp/resources` location.
 
@@ -54,8 +54,8 @@ The below located script and style file contains all Syncfusion<sup style="font-
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2</title>
-            <!-- Essential JS 2 material theme -->
-            <link href="resources/material.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 bootstrap5.3 theme -->
+            <link href="resources/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential JS 2 Sidebar's global and dependent script -->
             <script src="resources/ej2-base.min.js" type="text/javascript"></script>
@@ -74,8 +74,8 @@ The below located script and style file contains all Syncfusion<sup style="font-
 
 <head>
     <title>Essential JS 2</title>
-    <!-- Essential JS 2 material theme -->
-    <link href="resources/material.css" rel="stylesheet" type="text/css"/>
+    <!-- Essential JS 2 bootstrap5.3 theme -->
+    <link href="resources/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
 
     <!-- Essential JS 2 Sidebar's global and dependent script -->
     <script src="resources/ej2-base.min.js" type="text/javascript"></script>
@@ -116,12 +116,12 @@ The below located script and style file contains all Syncfusion<sup style="font-
 **Syntax:**
 > Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Style: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material.css`
+> Style: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/bootstrap5.3.css`
 
 **Example:**
 > Script: [`http://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js`](http://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js)
 >
-> Styles: [`http://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css)
+> Styles: [`http://cdn.syncfusion.com/ej2/ej2-navigations/styles/bootstrap5.3.css`](http://cdn.syncfusion.com/ej2/ej2-navigations/styles/bootstrap5.3.css)
 >
 
 **Step 2:** Have to add `CDN` global script and style for Sidebar and its dependent packages in `myapp/index.html` like below.
@@ -133,8 +133,8 @@ The below located script and style file contains all Syncfusion<sup style="font-
 <head>
     <title>Essential JS 2 Sidebar Control</title>
     <!-- Sidebar and its dependent theme -->
-    <link href="http://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="http://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css" rel="stylesheet" type="text/css" />
+    <link href="http://cdn.syncfusion.com/ej2/ej2-base/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="http://cdn.syncfusion.com/ej2/ej2-navigations/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
     <!-- Essential JS 2 all script -->
     <script src="http://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript">
 </head>
@@ -245,7 +245,7 @@ Expand or collapse the Sidebar while swiping in touch devices using [`enableGest
 
 ## See Also
 
-* [Sidebar with navigation menu](https://ej2.syncfusion.com/javascript/demos/#/material/sidebar/sidebar-menu.html)
-* [Sidebar responsive panel](https://ej2.syncfusion.com/javascript/demos/#/material/sidebar/responsive-panel.html)
+* [Sidebar with navigation menu](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5.3/sidebar/sidebar-menu.html)
+* [Sidebar responsive panel](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5.3/sidebar/responsive-panel.html)
 * [Sidebar with listView](./how-to/sidebar-with-list-view/)
 * [Use case sample](https://ej2.syncfusion.com/showcase/javascript/webmail/#/home)

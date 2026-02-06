@@ -4,7 +4,7 @@
 import {  Chart, Category, Trendlines, ScatterSeries, SplineSeries, LineSeries, Tooltip, TrendlineTypes} from '@syncfusion/ej2-charts';
 Chart.Inject(Chart, ScatterSeries, SplineSeries, LineSeries, Trendlines, Tooltip, Category);
 
-let powerData: any[] = [
+let powerData: Object[] = [
     { x: 1, y: 10 }, { x: 2, y: 50 },{ x: 3, y: 80 }, { x: 4, y: 110 },
     { x: 5, y: 180 }, { x: 6, y: 220 }, { x: 7, y: 300 }, { x: 8, y: 370 }, { x: 9, y: 490 }, { x: 10, y: 500 }
 ];

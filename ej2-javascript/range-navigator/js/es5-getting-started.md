@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Range navigator control | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Range navigator control of Syncfusion Essential JS 2 and more details.
+title: ES5 getting started with ##Platform_Name## Range navigator control | Syncfusion
+description:  Checkout and learn about ES5 getting started with ##Platform_Name## Range navigator control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Es5 getting started 
+control: ES5 getting started 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Range navigator control
+# ES5 getting started in ##Platform_Name## Range navigator control
 
-This section explains you the steps required to create a simple range navigator and demonstrate the basic usage of the range navigator control.
+This section explains the steps required to create a simple range navigator and demonstrates the basic usage of the range navigator control.
 
 ## Dependencies
 
@@ -31,17 +31,17 @@ This section explains you the steps required to create a simple range navigator 
 
 ## Setup for local environment
 
-Refer the following steps for setup your local environment.
+Follow these steps to set up your local environment.
 
 **Step 1:** Create a root folder **myapp** for your application.
 
 **Step 2:** Create **myapp/resources** folder to store local scripts and styles files.
 
-**Step 3:** Create **myapp/index.js** and **myapp/index.html** files for initializing Essential JS 2 Range Selector control.
+**Step 3:** Create **myapp/index.js** and **myapp/index.html** files for initializing the Syncfusion Essential JS 2 Range Selector control.
 
 ## Adding Syncfusion resources
 
-The Essential JS 2 range selector control can be initialized by using either of the following ways.
+The Syncfusion Essential JS 2 range selector control can be initialized in either of the following ways:
 
 * Using local script.
 * Using CDN link for script.
@@ -52,23 +52,22 @@ You can get the global scripts and styles from the [Essential Studio JavaScript 
 
 After installing the Essential JS 2 product build, you can copy the chart and its dependencies scripts and style file into the **resources/scripts** and **resources/styles** folder.
 
-Refer the below code to find location range selector's script and style file.
+The following shows the path to the range selector's script and style files.
 
 **Syntax:**
 
-> Dependency script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{DEPENDENCY_PACKAGE_NAME}/dist/global/{DEPENDENCY_PACKAGE_NAME}.min.js`
+> Dependency script: `**(installed location)**/Syncfusion/Essential Studio/JavaScript - EJ2/{RELEASE_VERSION}/Web (Essential JS 2)/JavaScript/{DEPENDENCY_PACKAGE_NAME}/dist/global/{DEPENDENCY_PACKAGE_NAME}.min.js`
 >
-> Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+> Script: `**(installed location)**/Syncfusion/Essential Studio/JavaScript - EJ2/{RELEASE_VERSION}/Web (Essential JS 2)/JavaScript/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
 
 **Example:**
 
-> Dependency script: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-base/dist/global/ej2-base.min.js`
->
-> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-charts/dist/global/ej2-charts.min.js`
+> Dependency script: `C:/Program Files (x86)/Syncfusion/Essential Studio/JavaScript - EJ2/32.1.19/Web (Essential JS 2)/JavaScript/ej2-base/dist/global/ej2-base.min.js`
+> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/JavaScript - EJ2/32.1.19/Web (Essential JS 2)/JavaScript/ej2-charts/dist/global/ej2-charts.min.js`
 >
 
-After copying the files, then you can refer the chart's scripts into the `index.html` file. The below html code example shows the minimal dependency of chart.
+After copying the files, reference the chart scripts from `index.html`. The following HTML shows the minimal chart dependencies.
 
 ```
 
@@ -95,7 +94,7 @@ After copying the files, then you can refer the chart's scripts into the `index.
 
 Using CDN link, you can directly refer the range selector control's script into the `index.html`.
 
-Refer the chart's CDN links as below
+Refer the chart's CDN links as below.
 
 **Syntax:**
 
@@ -105,7 +104,7 @@ Refer the chart's CDN links as below
 
 > Script: [`http://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js`](http://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js)
 
-The below html code example shows the minimal dependency of chart.
+The following HTML shows the minimal chart dependencies using CDN scripts.
 
 ```
 
@@ -126,7 +125,7 @@ The below html code example shows the minimal dependency of chart.
 
 Now, you can start adding range selector control in the application. For getting started, add a **div** element for Chart control in **index.html**. Then refer the **index.js** file into the **index.html** file.
 
-In this document context we are going to use **ej2.min.js** which includes all the Essential JS 2 components and its dependent scripts.
+This document uses `ej2.min.js`, which includes all Essential JS 2 components and dependencies.
 
 ```html
 <!DOCTYPE html>
@@ -145,7 +144,7 @@ In this document context we are going to use **ej2.min.js** which includes all t
 
 ```
 
-Place the following chart code in the **index.js**.
+Place the following chart initialization code in `index.js`.
 
 ```javascript
 
@@ -189,7 +188,7 @@ The sample should look like our [default](https://ej2.syncfusion.com/javascript/
 
 ## Enable Tooltip
 
-The tooltip is useful to show the selected data. You can enable tooltip by setting the enable property as true in `tooltip` object and by injecting `RangeTooltipService` module using `RangeNavigator.Inject(RangeTooltip)` method.
+The tooltip is useful to show the selected data. You can enable tooltip by setting the enable property as `true` in `tooltip` object and by injecting `RangeTooltipService` module using `RangeNavigator.Inject(RangeTooltip)` method.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

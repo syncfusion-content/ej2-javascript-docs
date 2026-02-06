@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## 3D Circular Chart control
 
-This section explains how to create a simple 3D Circular Chart and configure its available functionalities in TypeScript using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
+This document explains how to create a simple 3D Circular Chart and configure its features in TypeScript using the Essential JS 2 webpack [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack getting-started guide](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
@@ -36,7 +36,7 @@ Open the command prompt from the required directory, and run the following comma
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
 
-git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quickstart
 
 {% endhighlight %}
 {% endtabs %}
@@ -67,7 +67,7 @@ npm install
 
 ## Add 3D Circular Chart to the project
 
-Open the application in Visual Studio Code and add the Syncfusion JavaScript UI controls.
+Open the project in Visual Studio Code and add the 3D Circular Chart to the application.
 
 Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.html` file to initialize the 3D Circular Chart.
 
@@ -98,7 +98,7 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 {% endhighlight %}
 {% endtabs %}
 
-Now, import an 3D Circular Chart component in your `app.ts` to instantiate the 3D Circular Chart, and append the 3D Circular Chart instance to the `#element` `[src/app/app.ts]`
+Import an 3D Circular Chart component in  `[src/app/app.ts]` to instantiate and render the 3D Circular Chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

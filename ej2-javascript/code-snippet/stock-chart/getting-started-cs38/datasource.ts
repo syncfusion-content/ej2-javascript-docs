@@ -51,7 +51,7 @@ for (i = 0; i < 46; i++) {
 /**
  * Data for technical indicators
  */
-export let chartData: any[] = [
+export let chartData: Object[] = [
     {
         date: new Date( '2012-04-02' ),
         open : 85.9757,

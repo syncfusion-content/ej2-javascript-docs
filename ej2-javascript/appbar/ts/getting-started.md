@@ -3,7 +3,7 @@ layout: post
 title: Getting started with ##Platform_Name## Appbar control | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Appbar control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: AppBar 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -67,8 +67,8 @@ To render AppBar component, need to import navigations and its dependent compone
 {% tabs %}
 {% highlight css tabtitle="styles.css" %}
 
-@import "../../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-navigations/styles/material.css";
+@import "../../node_modules/@syncfusion/ej2-base/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-navigations/styles/fluent2.css";
 
 {% endhighlight %}
 {% endtabs %}

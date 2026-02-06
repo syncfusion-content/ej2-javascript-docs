@@ -68,11 +68,11 @@ To use local scripts and styles for Syncfusion<sup style="font-size:70%">&reg;</
 
 **Syntax:**
 >Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/material.css`
+>Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/bootstrap5.3.css`
 
 **Example:**
 >Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/25.1.35/Essential JS 2/ej2-grids/dist/global/ej2-grids.min.js`
->Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/25.1.35/Essential JS 2/ej2-grids/styles/material.css`
+>Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/25.1.35/Essential JS 2/ej2-grids/styles/bootstrap5.3.css`
 
 **4. Referencing in HTML File:** Once the files are copied, reference the grid's scripts and styles into the **index.html** file.
 
@@ -90,10 +90,10 @@ This setup includes only the necessary scripts and styles required to render the
 <head>
     <title>Essential JS 2 Grid</title>
 
-    <!-- Essential JS 2 Grid's dependent material theme -->
-    <link href="resources/base/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="resources/popups/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="resources/grids/styles/material.css" rel="stylesheet" type="text/css" />
+    <!-- Essential JS 2 Grid's dependent bootstrap5.3 theme -->
+    <link href="resources/base/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/popups/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/grids/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
     <!-- Essential JS 2 Grid's dependent scripts -->
     <script src="resources/scripts/ej2-base.min.js" type="text/javascript"></script>
     <script src="resources/scripts/ej2-data.min.js" type="text/javascript"></script>
@@ -120,18 +120,18 @@ This setup includes additional dependencies required for more advanced functiona
 <head>
     <title>Essential JS 2 Grid</title>
 
-    <!-- Essential JS 2 Grid's dependent material theme -->
-    <link href="resources/base/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="resources/popups/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="resources/grids/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="resources/buttons/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="resources/navigations/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="resources/dropdowns/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="resources/lists/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="resources/inputs/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="resources/calendars/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="resources/notifications/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="resources/splitbuttons/styles/material.css" rel="stylesheet" type="text/css" />
+    <!-- Essential JS 2 Grid's dependent bootstrap5.3 theme -->
+    <link href="resources/base/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/popups/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/grids/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/buttons/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/navigations/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/dropdowns/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/lists/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/inputs/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/calendars/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/notifications/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/splitbuttons/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
 
     <!-- Essential JS 2 Grid's dependent scripts -->
     <script src="resources/scripts/ej2-base.min.js" type="text/javascript"></script>
@@ -169,8 +169,8 @@ This setup includes all possible dependencies for Syncfusion<sup style="font-siz
 <head>
     <title>Essential JS 2 Grid</title>
 
-    <!-- Essential JS 2 material theme -->
-    <link href="resources/styles/material.css" rel="stylesheet" type="text/css" />
+    <!-- Essential JS 2 bootstrap5.3 theme -->
+    <link href="resources/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
     <!-- Essential JS 2 script -->
     <script src="resources/scripts/ej2.min.js" type="text/javascript"></script>
 </head>
@@ -189,13 +189,13 @@ Refer the grid's CDN links as below
 **Syntax:**
 
 > Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
-> Styles: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material.css`
+> Styles: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/bootstrap5.3.css`
 
 **Example:**
 
 > Script: [https://cdn.syncfusion.com/ej2/ej2-grids/dist/global/ej2-grids.min.js](http://cdn.syncfusion.com/ej2/ej2-grids/dist/global/ej2-grids.min.js)
 >
-> Styles: [https://cdn.syncfusion.com/ej2/ej2-grids/styles/material.css](http://cdn.syncfusion.com/ej2/ej2-grids/styles/material.css)
+> Styles: [https://cdn.syncfusion.com/ej2/ej2-grids/styles/bootstrap5.3.css](http://cdn.syncfusion.com/ej2/ej2-grids/styles/bootstrap5.3.css)
 
 Here's an example of referencing the grid's scripts and styles in an HTML file using CDN links:
 
@@ -209,10 +209,10 @@ This setup includes only the necessary scripts and styles required to render the
        <head>
           <title>Essential JS 2 Grid</title>
           
-          <!-- Essential JS 2 Grid's dependent material theme -->
-          <link href="http://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
-          <link href="http://cdn.syncfusion.com/ej2/ej2-popups/styles/material.css" rel="stylesheet" type="text/css"/>
-          <link href="https://cdn.syncfusion.com/ej2/ej2-grids/styles/material.css" rel="stylesheet" type="text/css"/>
+          <!-- Essential JS 2 Grid's dependent bootstrap5.3 theme -->
+          <link href="http://cdn.syncfusion.com/ej2/ej2-base/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+          <link href="http://cdn.syncfusion.com/ej2/ej2-popups/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+          <link href="https://cdn.syncfusion.com/ej2/ej2-grids/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
 
           <!-- Essential JS 2 Grid's dependent script -->
           <script src="http://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
@@ -237,18 +237,18 @@ This setup includes additional dependencies required for more advanced functiona
 
 <head>
     <title>Essential JS 2 Grid</title>
-    <!-- Essential JS 2 Grid's dependent material theme -->
-    <link href="http://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="http://cdn.syncfusion.com/ej2/ej2-popups/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="http://cdn.syncfusion.com/ej2/ej2-grids/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/ej2-dropdowns/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/ej2-lists/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/ej2-inputs/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/ej2-calendars/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/ej2-notifications/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/ej2-splitbuttons/styles/material.css" rel="stylesheet" type="text/css" />
+    <!-- Essential JS 2 Grid's dependent bootstrap5.3 theme -->
+    <link href="http://cdn.syncfusion.com/ej2/ej2-base/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="http://cdn.syncfusion.com/ej2/ej2-popups/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="http://cdn.syncfusion.com/ej2/ej2-grids/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/ej2-buttons/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/ej2-navigations/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/ej2-dropdowns/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/ej2-lists/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/ej2-inputs/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/ej2-calendars/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/ej2-notifications/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/ej2-splitbuttons/styles/bootstrap5.3.css" rel="stylesheet" type="text/css" />
 
     <!-- Essential JS 2 Grid's dependent scripts -->
     <script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
@@ -296,8 +296,8 @@ This setup includes all possible dependencies for Syncfusion<sup style="font-siz
 <head>
     <title>Essential JS 2 Grid</title>
 
-    <!-- Essential JS 2 material theme -->
-    <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet" type="text/css" />
+    <!-- Essential JS 2 bootstrap5.3 theme -->
+    <link href="https://cdn.syncfusion.com/ej2/bootstrap5.3.css" rel="stylesheet" type="text/css" />
     <!-- Essential JS 2 all script -->
     <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
 
@@ -309,7 +309,7 @@ This setup includes all possible dependencies for Syncfusion<sup style="font-siz
 </html>
 ```
 
-Based on your requirement, additional dependencies can be included as needed. In this documentation, the common **ej2.min.js** and **material.css** are used, which include all the Essential<sup style="font-size:70%">&reg;</sup> JS 2 components and their dependent scripts and theme files.
+Based on your requirement, additional dependencies can be included as needed. In this documentation, the common **ej2.min.js** and **bootstrap5.3.css** are used, which include all the Essential<sup style="font-size:70%">&reg;</sup> JS 2 components and their dependent scripts and theme files.
 
 ## Adding Grid control
 
@@ -322,8 +322,8 @@ Now, you can start adding Grid control in the application. For getting started, 
 <head>
     <title>Essential JS 2 Grid</title>
 
-    <!-- Essential JS 2 material theme -->
-    <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet" type="text/css" />
+    <!-- Essential JS 2 bootstrap5.3 theme -->
+    <link href="https://cdn.syncfusion.com/ej2/bootstrap5.3.css" rel="stylesheet" type="text/css" />
     <!-- Essential JS 2 all script -->
     <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
 
@@ -359,8 +359,8 @@ Data for the Grid control is bind by using [dataSource](https://ej2.syncfusion.c
 <head>
     <title>Essential JS 2 Grid</title>
 
-    <!-- Essential JS 2 material theme -->
-    <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet" type="text/css" />
+    <!-- Essential JS 2 bootstrap5.3 theme -->
+    <link href="https://cdn.syncfusion.com/ej2/bootstrap5.3.css" rel="stylesheet" type="text/css" />
     <!-- Essential JS 2 all script -->
     <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
 

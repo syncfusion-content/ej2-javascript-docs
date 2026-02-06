@@ -1,7 +1,7 @@
 import { Chart, StepLineSeries, DateTime, Legend, Tooltip } from '@syncfusion/ej2-charts';
 Chart.Inject(StepLineSeries, DateTime, Legend, Tooltip);
 
-let chartData: any[] = [
+let chartData: Object[] = [
     { x: new Date(1975, 0, 1), y: 16, y1: 10, y2: 4.5 },
     { x: new Date(1980, 0, 1), y: 12.5, y1: 7.5, y2: 5 },
     { x: new Date(1985, 0, 1), y: 19, y1: 11, y2: 6.5 },

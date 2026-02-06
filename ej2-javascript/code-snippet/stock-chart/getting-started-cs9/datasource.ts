@@ -30,7 +30,7 @@ export let trackData: Object[] = [
 /**
  * Data for technical indicators
  */
-export let chartData: any[] = [
+export let chartData: Object[] = [
     {
         date: new Date( '2012-04-02' ),
         open : 85.9757,

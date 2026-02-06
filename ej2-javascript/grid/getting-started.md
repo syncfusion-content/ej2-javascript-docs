@@ -85,7 +85,7 @@ System.import('app');
 Combined CSS files are available in the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package root folder. This can be referenced in your `[src/styles/styles.css]` using the following code.
 
 ```
-@import '../../node_modules/@syncfusion/ej2/material.css';
+@import '../../node_modules/@syncfusion/ej2/fluent2.css';
 ```
 
 > To know about individual component CSS, please refer to [Individual Component theme files](../appearance/theme#referring-individual-control-theme) section.

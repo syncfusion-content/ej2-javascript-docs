@@ -1,7 +1,7 @@
 import { Chart3D, DateTime3D, Legend3D, Logarithmic3D, ColumnSeries3D, Tooltip3D, Highlight3D } from '@syncfusion/ej2-charts';
 Chart3D.Inject(ColumnSeries3D, DateTime3D, Logarithmic3D,  Legend3D, Tooltip3D, Highlight3D);
 
-let chartData: any[] = [
+let chartData: Object[] = [
     { x: new Date(1995, 0, 1), y: 80 }, { x: new Date(1996, 0, 1), y: 200 },
     { x: new Date(1997, 0, 1), y: 400 }, { x: new Date(1998, 0, 1), y: 600 },
     { x: new Date(1999, 0, 1), y: 700 }, { x: new Date(2000, 0, 1), y: 1400 },

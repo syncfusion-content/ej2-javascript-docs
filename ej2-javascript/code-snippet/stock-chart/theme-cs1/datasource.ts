@@ -27,7 +27,7 @@ export let trackData: Object[] = [
     { x: new Date(2006, 2, 11), y: 24, y1: 60, y2: 79, y3: 85, y4: 40 }
 ];
 
-export let chartData: any[] = [
+export let chartData: Object[] = [
     {
         date: new Date( '2012-04-02' ),
         open : 85.9757,

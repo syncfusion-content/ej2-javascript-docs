@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Range navigator control
 
-This section explains how to create a simple Range navigator and configure its available functionalities in TypeScript using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This document explains how to create a simple Range Navigator and configure its features in TypeScript using the Essential JS 2 webpack [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack getting-started guide](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
@@ -37,7 +37,7 @@ Open the command prompt from the required directory, and run the following comma
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
 
-git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quickstart
 
 {% endhighlight %}
 {% endtabs %}
@@ -68,7 +68,7 @@ npm install
 
 ## Add Range Navigator to the Project
 
-Open the application in Visual Studio Code and add the Syncfusion JavaScript UI controls.
+Open the project in Visual Studio Code and add the Range navigator to the application.
 
 Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.html` file to initialize the Range Navigator.
 
@@ -99,7 +99,7 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 {% endhighlight %}
 {% endtabs %}
 
-Now import the RangeNavigator component into your `app.ts` to instantiate a RangeNavigator and append the range navigator instance to the `#element` [src/app/app.ts].
+Import the Range navigator component into `[src/app/app.ts]` to instantiate and render the Range Navigator.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -148,7 +148,7 @@ To create range navigator with additional features, inject the required modules.
 * `DateTimeService` - Inject this module to use date time axis.
 * `RangeTooltipService` - Inject this module to show the tooltip.
 
-Now import the above mentioned modules from chart package and inject it into the RangeNavigator component using `RangeNavigator.Inject` method.
+Now import the above-mentioned modules from the chart package and inject them into the Range navigator component using `RangeNavigator.Inject` method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -181,7 +181,7 @@ The sample should look like our [default](https://ej2.syncfusion.com/demos/#/mat
 
 ## Enable Tooltip
 
-The tooltip is useful to show the selected data. You can enable tooltip by setting the enable property as true in `tooltip` object and by injecting `RangeTooltipService` module using `RangeNavigator.Inject(RangeTooltip)` method.
+The tooltip is useful to show the selected data. You can enable tooltip by setting the enable property as `true` in `tooltip` object and by injecting `RangeTooltipService` module using `RangeNavigator.Inject(RangeTooltip)` method.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

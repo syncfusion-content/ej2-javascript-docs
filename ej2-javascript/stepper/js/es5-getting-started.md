@@ -42,9 +42,9 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can
 >
 > Control Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
 >
-> Dependency Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\styles\material.css`
+> Dependency Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\styles\bootstrap5.3.css`
 >
-> Control Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\material.css`
+> Control Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\bootstrap5.3.css`
 
 **Example:**
 
@@ -52,15 +52,15 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can
 >
 > Control Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\21.1.35\Web (Essential JS 2)\JavaScript\ej2-navigations\dist\global\ej2-navigations.min.js`
 >
-> Dependency Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\21.1.35\Web (Essential JS 2)\JavaScript\ej2-base\styles\material.css`
+> Dependency Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\21.1.35\Web (Essential JS 2)\JavaScript\ej2-base\styles\bootstrap5.3.css`
 >
-> Control Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\21.1.35\Web (Essential JS 2)\JavaScript\ej2-navigations\styles\material.css`
+> Control Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\21.1.35\Web (Essential JS 2)\JavaScript\ej2-navigations\styles\bootstrap5.3.css`
 
 The below located script and style file contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file.
 
 > Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
 >
-> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\material.css`
+> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\bootstrap5.3.css`
 
 The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script and styles for a set of specific controls. This web tool is useful to combine the required control scripts and styles in a single file.
 
@@ -73,10 +73,10 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>Essential JS 2 - Stepper</title>
-    <!-- Essential JS 2 Stepper's dependent material theme -->
-    <link href="resources/base/material.css" rel="stylesheet" type="text/css" />
-    <link href="resources/popups/material.css" rel="stylesheet" type="text/css" />
-    <link href="resources/navigations/material.css" rel="stylesheet" type="text/css" />
+    <!-- Essential JS 2 Stepper's dependent bootstrap5.3 theme -->
+    <link href="resources/base/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/popups/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="resources/navigations/bootstrap5.3.css" rel="stylesheet" type="text/css" />
 
     <!-- Essential JS 2 Stepper's dependent global script -->
     <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
@@ -126,15 +126,15 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 >
 > Control Script: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Dependency Styles: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{DEPENDENCY_PACKAGE_NAME}/styles/material.css`
+> Dependency Styles: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{DEPENDENCY_PACKAGE_NAME}/styles/bootstrap5.3.css`
 >
-> Control Styles: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/styles/material.css`
+> Control Styles: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/styles/bootstrap5.3.css`
 
 **Example:**
 
-> Script: [`https://cdn.syncfusion.com/ej2/22.1.34/ej2-navigations/dist/global/ej2-navigations.min.js`](https://cdn.syncfusion.com/ej2/22.1.34/ej2-navigations/dist/global/ej2-navigations.min.js)
+> Script: [`https://cdn.syncfusion.com/ej2/32.1.19/ej2-navigations/dist/global/ej2-navigations.min.js`](https://cdn.syncfusion.com/ej2/32.1.19/ej2-navigations/dist/global/ej2-navigations.min.js)
 >
-> Styles: [`https://cdn.syncfusion.com/ej2/22.1.34/ej2-navigations/styles/material.css`](https://cdn.syncfusion.com/ej2/22.1.34/ej2-navigations/styles/material.css)
+> Styles: [`https://cdn.syncfusion.com/ej2/32.1.19/ej2-navigations/styles/bootstrap5.3.css`](https://cdn.syncfusion.com/ej2/32.1.19/ej2-navigations/styles/bootstrap5.3.css)
 
 **Step 3:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the CDN link references. Now, add the `Stepper` element, define the steps using [steps](https://ej2.syncfusion.com/javascript/documentation/api/stepper/#steps) property and initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) Stepper**** control in the `index.html` by using following code.
 

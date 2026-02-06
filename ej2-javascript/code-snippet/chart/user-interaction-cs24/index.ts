@@ -4,7 +4,7 @@
 import { Chart, StepLineSeries, Legend, Tooltip } from '@syncfusion/ej2-charts';
 Chart.Inject(StepLineSeries, Legend, Tooltip);
 
-let chartData: any[] = [
+let chartData: Object[] = [
     { x: 1975, y: 16, y1: 10, y2: 4.5 },
     { x: 1980, y: 12.5, y1: 7.5, y2: 5 },
     { x: 1985, y: 19, y1: 11, y2: 6.5 },

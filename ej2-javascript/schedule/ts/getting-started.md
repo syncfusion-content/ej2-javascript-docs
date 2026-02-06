@@ -84,22 +84,22 @@ Scheduler CSS files are available in the ej2-schedule package folder and its sub
 `[src/styles/styles.css]`
 
 ```css
-@import '../../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-calendars/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-lists/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-schedule/styles/material.css';
+@import '../../node_modules/@syncfusion/ej2-base/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-buttons/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-calendars/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-dropdowns/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-inputs/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-splitbuttons/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-lists/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-navigations/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-popups/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-schedule/styles/fluent2.css';
 ```
 
 Alternatively, if you want to use the combined CSS file for all components, reference it from the root folder of the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package:
 
 ```css
-@import '../../node_modules/@syncfusion/ej2/material.css';
+@import '../../node_modules/@syncfusion/ej2/fluent2.css';
 ```
 
 ## Module injection

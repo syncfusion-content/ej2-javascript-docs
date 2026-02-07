@@ -3,7 +3,7 @@ layout: post
 title: Getting started with ##Platform_Name## ListView control | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: ListView 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -29,19 +29,19 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can
 **Syntax:**
 > Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
 >
-> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\material.css`
+> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\bootstrap5.3.css`
 
 **Example:**
 
-> Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-lists\dist\global\ej2-lists.min.js`
+> Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\32.1.19\Web (Essential JS 2)\JavaScript\ej2-lists\dist\global\ej2-lists.min.js`
 >
-> Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-lists\styles\material.css`
+> Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\32.1.19\Web (Essential JS 2)\JavaScript\ej2-lists\styles\bootstrap5.3.css`
 
 The below located script and style file contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file.
 
 > Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
 >
-> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\material.css`
+> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\bootstrap5.3.css`
 
 **Step 3:** Create a folder `myapp/resources` and copy/paste the global scripts and styles from the above installed location to `myapp/resources` location.
 
@@ -53,8 +53,8 @@ The below located script and style file contains all Syncfusion<sup style="font-
        <head>
             <title>Essential JS 2 ListView </title>
             <!-- Essential JS 2 material theme -->
-            <link href="resources/base/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/lists/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/base/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/lists/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential JS 2 List's global and dependent scripts -->
             <script src="resources/scripts/ej2-data.min.js" type="text/javascript"></script>
@@ -74,8 +74,8 @@ The below located script and style file contains all Syncfusion<sup style="font-
        <head>
             <title>Essential JS 2 ListView</title>
             <!-- Essential JS 2 material theme -->
-            <link href="resources/base/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/lists/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/base/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/lists/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential JS 2 List's global and dependent scripts -->
             <script src="resources/scripts/ej2-data.min.js" type="text/javascript"></script>
@@ -111,12 +111,12 @@ The below located script and style file contains all Syncfusion<sup style="font-
 **Syntax:**
 > Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material.css`
+> Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/bootstrap5.3.css`
 
 **Example:**
 > Script: [`https://cdn.syncfusion.com/ej2/ej2-lists/dist/global/ej2-lists.min.js`](https://cdn.syncfusion.com/ej2/ej2-lists/dist/global/ej2-lists.min.js)
 >
-> Styles: [`https://cdn.syncfusion.com/ej2/ej2-lists/styles/material.css`](https://cdn.syncfusion.com/ej2/ej2-lists/styles/material.css)
+> Styles: [`https://cdn.syncfusion.com/ej2/ej2-lists/styles/bootstrap5.3.css`](https://cdn.syncfusion.com/ej2/ej2-lists/styles/bootstrap5.3.css)
 
 **Step 3:** Create a HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `ListView` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 ListView** control in the index.html by using following code.
 

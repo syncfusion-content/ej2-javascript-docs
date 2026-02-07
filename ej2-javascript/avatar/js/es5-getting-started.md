@@ -3,7 +3,7 @@ layout: post
 title: Es5 getting started with ##Platform_Name## Avatar control | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## Avatar control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Es5 getting started 
+control: Avatar 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -29,19 +29,19 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components c
 **Syntax:**
 > Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
 >
-> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\material.css`
+> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\bootstrap5.3.css`
 
 **Example:**
 
-> Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-layouts\dist\global\ej2-layouts.min.js`
+> Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\32.1.19\Web (Essential JS 2)\JavaScript\ej2-layouts\dist\global\ej2-layouts.min.js`
 >
-> Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-layouts\styles\material.css`
+> Styles: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\32.1.19\Web (Essential JS 2)\JavaScript\ej2-layouts\styles\bootstrap5.3.css`
 
 The below located script and style file contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file.
 
 > Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
 >
-> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\material.css`
+> Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\bootstrap5.3.css`
 
 **Step 3:** Create a folder `myapp/resources`, and copy and paste the global scripts and styles from the above installed location to `myapp/resources` location.
 
@@ -52,8 +52,8 @@ The below located script and style file contains all Syncfusion<sup style="font-
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2</title>
-            <!-- Essential JS 2 material theme -->
-            <link href="resources/material.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 bootstrap5.3 theme -->
+            <link href="resources/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
        </head>
        <body>
        </body>
@@ -67,8 +67,8 @@ The below located script and style file contains all Syncfusion<sup style="font-
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2</title>
-            <!-- Essential JS 2 material theme -->
-            <link href="resources/material.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 bootstrap5.3 theme -->
+            <link href="resources/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
 
        </head>
        <body>
@@ -89,10 +89,10 @@ The below located script and style file contains all Syncfusion<sup style="font-
 **Syntax:**
 > Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material.css`
+> Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/bootstrap5.3.css`
 
 **Example:**
-> Styles: [`https://cdn.syncfusion.com/ej2/ej2-layouts/styles/material.css`](https://cdn.syncfusion.com/ej2/ej2-layouts/styles/material.css)
+> Styles: [`https://cdn.syncfusion.com/ej2/ej2-layouts/styles/bootstrap5.3.css`](https://cdn.syncfusion.com/ej2/ej2-layouts/styles/bootstrap5.3.css)
 
 **Step 3:** Create an HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `span` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Avatar** component in the index.html by using the following code.
 
@@ -110,4 +110,4 @@ The below located script and style file contains all Syncfusion<sup style="font-
 
 ## See Also
 
-[Types of Avatar](./types/)
+[Types of Avatar](./types)

@@ -3,7 +3,7 @@ layout: post
 title: Getting started with ##Platform_Name## Card control | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Card control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: Card 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -66,8 +66,8 @@ The Card CSS files are available in the `ej2-layouts` package folder. This can b
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
 
-@import '../../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-layouts/styles/material.css';
+@import '../../node_modules/@syncfusion/ej2-base/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-layouts/styles/fluent2.css';
 
 {% endhighlight %}
 {% endtabs %}
@@ -92,7 +92,7 @@ The Card CSS files are available in the `ej2-layouts` package folder. This can b
 
 You can create Card with a header in a specific structure. For adding header you need to create a `div` element with `e-card-header` class added.
 
-* You can include heading inside the Card header by adding a `div` element with `e-card-header-caption` class, and also content will be added by adding element with `e-card-content`. For detailed information, refer to the [Header and Content](./header-content/).
+* You can include heading inside the Card header by adding a `div` element with `e-card-header-caption` class, and also content will be added by adding element with `e-card-content`. For detailed information, refer to the [Header and Content](./header-content).
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}

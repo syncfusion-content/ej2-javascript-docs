@@ -3,7 +3,7 @@ layout: post
 title: Getting started with ##Platform_Name## Dashboard layout control | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Dashboard layout control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started
+control: Dashboard Layout
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -67,8 +67,8 @@ To render the Dashboard Layout control, import the Dashboard Layout and its depe
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
 
-@import "../../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-layouts/styles/material.css";
+@import "../../node_modules/@syncfusion/ej2-base/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-layouts/styles/fluent2.css";
 
 {% endhighlight %}
 {% endtabs %}

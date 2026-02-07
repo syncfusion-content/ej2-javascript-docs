@@ -3,7 +3,7 @@ layout: post
 title: Es5 Getting Started with ##Platform_Name## Card Control | Syncfusion
 description: Checkout and learn about Es5 getting started with ##Platform_Name## Card control, it's elements, and more.
 platform: ej2-javascript
-control: Es5 getting started 
+control: Card 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -29,13 +29,13 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components c
 **Syntax:**
 > Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/material.css`
+> Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/bootstrap5.3.css`
 
 **Example:**
 
-> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.17/Essential JS 2/ej2-lists/dist/global/ej2-lists.min.js`
+> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/32.1.19/Essential JS 2/ej2-lists/dist/global/ej2-lists.min.js`
 >
-> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.17/Essential JS 2/ej2-layouts/styles/material.css`
+> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/32.1.19/Essential JS 2/ej2-layouts/styles/bootstrap5.3.css`
 
 **Step 3:** Create a folder `myapp/resources`, and copy and paste the global scripts and styles from the above installed location to `myapp/resources` location.
 
@@ -46,8 +46,8 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components c
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2</title>
-            <!-- Essential JS 2 material theme -->
-            <link href="resources/material.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 bootstrap5.3 theme -->
+            <link href="resources/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
        </head>
        <body>
        </body>
@@ -61,8 +61,8 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components c
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2</title>
-            <!-- Essential JS 2 material theme -->
-            <link href="resources/material.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 bootstrap5.3 theme -->
+            <link href="resources/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
 
        </head>
        <body>
@@ -83,10 +83,10 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components c
 **Syntax:**
 > Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material.css`
+> Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/bootstrap5.3.css`
 
 **Example:**
-> Styles: [`https://cdn.syncfusion.com/ej2/ej2-layouts/styles/material.css`](https://cdn.syncfusion.com/ej2/ej2-layouts/styles/material.css)
+> Styles: [`https://cdn.syncfusion.com/ej2/ej2-layouts/styles/bootstrap5.3.css`](https://cdn.syncfusion.com/ej2/ej2-layouts/styles/bootstrap5.3.css)
 
 **Step 3:** Create an HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `span` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Card** component in the index.html by using the following code.
 
@@ -95,9 +95,9 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components c
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2</title>
-            <!-- Essential JS 2 material theme -->
-            <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-layouts/styles/material.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 bootstrap5.3 theme -->
+            <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-layouts/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
        </head>
        <body>
            <!-- Add the HTML <span> element  -->

@@ -62,13 +62,13 @@ Reference the Scheduler's script and style files from the following locations:
 
 > Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/material.css`
+> Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/bootstrap5.3.css`
 
 **Example:**
 
 > Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-schedule/dist/global/ej2-schedule.min.js`
 >
-> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-schedule/styles/material.css`
+> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-schedule/styles/bootstrap5.3.css`
 
 After copying the files, reference the Scheduler's scripts and styles in the `index.html` file.
 The following HTML code example shows the Scheduler's dependencies:
@@ -79,17 +79,17 @@ The following HTML code example shows the Scheduler's dependencies:
        <head>
             <title>Essential JS 2 Scheduler</title>
             <!-- Essential JS 2 Scheduler's dependent material theme -->
-            <link href="resources/base/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/buttons/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/calendars/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/dropdowns/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/inputs/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/splitbuttons/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/lists/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/popups/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/navigations/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/base/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/buttons/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/calendars/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/dropdowns/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/inputs/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/splitbuttons/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/lists/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/popups/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/navigations/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
             <!-- Essential JS 2 Scheduler's material theme -->
-            <link href="resources/schedule/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/schedule/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential JS 2 Scheduler's dependent scripts -->
             <script src="resources/scripts/ej2-base.min.js" type="text/javascript"></script>
@@ -123,13 +123,13 @@ Reference the Scheduler's CDN links as shown below:
 
 > Script: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Styles: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/styles/material.css`
+> Styles: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/styles/bootstrap5.3.css`
 
 **Example:**
 
 > Script: [`https://cdn.syncfusion.com/ej2/32.1.19/ej2-schedule/dist/global/ej2-schedule.min.js`](https://cdn.syncfusion.com/ej2/ej2-schedule/dist/global/ej2-schedule.min.js)
 >
-> Styles: [`https://cdn.syncfusion.com/ej2/32.1.19/ej2-schedule/styles/material.css`](https://cdn.syncfusion.com/ej2/ej2-schedule/styles/material.css)
+> Styles: [`https://cdn.syncfusion.com/ej2/32.1.19/ej2-schedule/styles/bootstrap5.3.css`](https://cdn.syncfusion.com/ej2/ej2-schedule/styles/bootstrap5.3.css)
 
 The following HTML code example shows the Scheduler dependencies using `ej2-schedule.min.js`:
 
@@ -139,17 +139,17 @@ The following HTML code example shows the Scheduler dependencies using `ej2-sche
        <head>
             <title>Essential JS 2 Scheduler</title>
             <!-- Essential JS 2 Scheduler's dependent material theme -->
-            <link href="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-calendars/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-dropdowns/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-inputs/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-splitbuttons/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-lists/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-popups/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-navigations/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-base/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-buttons/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-calendars/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-dropdowns/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-inputs/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-splitbuttons/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-lists/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-popups/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-navigations/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
             <!-- Essential JS 2 Scheduler's material theme -->
-            <link href="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-schedule/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-schedule/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential JS 2 Scheduler's dependent script -->
             <script src="https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
@@ -196,17 +196,17 @@ In this example, `ej2.min.js` is used, which includes all Essential<sup style="f
        <head>
             <title>Essential JS 2 Scheduler</title>
             <!-- Essential JS 2 Scheduler's dependent material theme -->
-            <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-calendars/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-dropdowns/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-inputs/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-splitbuttons/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-lists/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-popups/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-buttons/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-calendars/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-dropdowns/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-inputs/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-splitbuttons/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-lists/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-popups/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-navigations/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
             <!-- Essential JS 2 Scheduler's material theme -->
-            <link href="https://cdn.syncfusion.com/ej2/ej2-schedule/styles/material.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/ej2-schedule/styles/bootstrap5.3.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential JS 2 all script -->
             <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>

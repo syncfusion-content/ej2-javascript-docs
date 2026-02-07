@@ -45,7 +45,7 @@ Before proceeding, ensure that the following tools are installed and configured:
 
 ### Verifying Installation
 
-Open a terminal (for example, an integrated terminal in Visual Studio Code or Windows Command Prompt opened with <kbd>(Win+R)</kbd>, or macOS Terminal launched with <kbd>(Cmd+Space)</kbd>) and run the following command to verify installation:
+Open a terminal (for example, an integrated terminal in Visual Studio Code or Windows Command Prompt opened with <kbd>Win+R</kbd>, or macOS Terminal launched with <kbd>Cmd+Space</kbd>) and run the following command to verify installation:
 
 ```bash
 # Check PHP version
@@ -113,8 +113,8 @@ Generate a model with migration for managing student data:
 php artisan make:model Student -m
 ```
 This command creates two files:
-- **Model**: **app/Models/Student.php** — represents the students table and allows object‑oriented interaction with the database.
-- **Migration**: **database/migrations/xxxx_xx_xx_create_students_table.php** — a schema file used to define or modify database tables.
+- **Model**: (**app/Models/Student.php**) — represents the students table and allows object‑oriented interaction with the database.
+- **Migration**: (**database/migrations/xxxx_xx_xx_create_students_table.php**) — a schema file used to define or modify database tables.
 
 > The **xxxx_xx_xx** part is a timestamp automatically added by Laravel. It ensures migrations run in the correct order. Even though the name looks like a "version" this file is simply the first definition of the "students" table.
 
@@ -191,7 +191,8 @@ class Student extends Model
 }
 ```
 
-**Key Details:**  
+**Key Details:**
+
 - The "$fillable" array specifies which fields can be mass‑assigned using methods like "create()" or "fill()".  
 - The "$primaryKey" property tells Laravel that "StudentID" is the unique identifier for this model.  
 - The "$timestamps" property enables automatic tracking of the "created_at" and "updated_at" fields.  
@@ -207,7 +208,7 @@ Generate a controller by executing the following command. The controller will ha
 php artisan make:controller ServerController
 ```
 
-This command creates the **ServerController.php** file inside the **app/Http/Controllers** folder. It will manage data operations such as reading, inserting, updating, and deleting records.
+This command creates the **ServerController.php** file inside the (**app/Http/Controllers**) folder. It will manage data operations such as reading, inserting, updating, and deleting records.
 
 ```php
 <?php
@@ -248,7 +249,7 @@ class ServerController extends Controller
 
 ### Step 6: Define API routes
 
-After creating the "ServerController", API routes must be defined to connect client requests to its methods. Open the existing **routes/api.php** file and add the following routes:
+After creating the **ServerController**, API routes must be defined to connect client requests to its methods. Open the existing **routes/api.php** file and add the following routes:
 
 ```php
 <?php
@@ -267,11 +268,11 @@ Route::post('/update', [ServerController::class, 'update']);        // Update
 Route::post('/remove', [ServerController::class, 'remove']);        // Delete
 ```
 
-These routes map Grid actions to specific controller methods. Each route listens for a POST request (/read, /insert, /update, /remove) and directs it to the corresponding method in "ServerController".
+These routes map Grid actions to specific controller methods. Each route listens for a POST request (/read, /insert, /update, /remove) and directs it to the corresponding method in **ServerController**.
 
 ### Step 7: Configure the CORS
 
-Configure Cross-Origin Resource Sharing (CORS) in the **config/cors.php** file. CORS controls which external domains are permitted to access the API. Without CORS configuration, the frontend Grid will receive blocked requests and fail to load or update data.
+Configure Cross-Origin Resource Sharing (CORS) in the (**config/cors.php**) file. CORS controls which external domains are permitted to access the API. Without CORS configuration, the frontend Grid will receive blocked requests and fail to load or update data.
 
 ```php
 'allowed_origins' => ['*'],
@@ -286,7 +287,7 @@ Configure Cross-Origin Resource Sharing (CORS) in the **config/cors.php** file. 
 
 ### Step 8: Creating the database seeder
 
-Update the `database/seeders/DatabaseSeeder.php` file to populate the database with sample student data for testing.
+Update the **database/seeders/DatabaseSeeder.php** file to populate the database with sample student data for testing.
 
 > **Seeders:** Seeders are Laravel classes that automatically fill database tables with test data. They are useful during development and testing because they save time compared to entering records manually.
 
@@ -363,7 +364,7 @@ The following steps show how to integrate and connect the Syncfusion<sup style="
 
 Laravel uses **Blade** as its templating engine. Blade makes it easy to mix PHP with HTML using a simple and safe syntax. For example, variables can be displayed with "{{ $name }}", and control structures like **@if** or **@foreach** can be used without writing long PHP tags.
 
-Create a new Blade file at "resources/views/grid.blade.php". This file will serve as the main HTML page where the Syncfusion Grid will be rendered:
+Create a new **Blade** file at **resources/views/grid.blade.php**. This file will serve as the main HTML page where the Syncfusion Grid will be rendered:
 
 ```html
 <!DOCTYPE html>
@@ -427,7 +428,7 @@ const dataManager = new ej.data.DataManager({
 
 **API Interaction Flow**:
 
-This describes how the Syncfusion Grid communicates with the existing "ServerController"(ServerController.php) by sending requests through the DataManager and receiving processed responses for data operations.
+This describes how the Syncfusion Grid communicates with the existing **ServerController**(ServerController.php) by sending requests through the DataManager and receiving processed responses for data operations.
 
 1. **Read Request** - When Grid loads or performs data operations:
    - Client sends POST to "/api/read" with `DataManager` state (where, sorted, search, skip, take).
@@ -481,7 +482,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ### Step 5: Define web route
 
-In Laravel, routes are used to map incoming HTTP requests to specific views or controller actions. By default, all routes are defined inside the "routes/web.php" file for web‑based requests.
+In Laravel, routes are used to map incoming HTTP requests to specific views or controller actions. By default, all routes are defined inside the **routes/web.php** file for web‑based requests.
 
 Here, we define a simple route that loads the Grid view when a user visits the root URL (/) of the application:
 
@@ -497,7 +498,7 @@ Route::get('/', function () {
 
 ## Performing data operations
 
-The "ServerController" (ServerController.php) works with the `UrlAdaptor` to handle all Grid data operations. Actions such as filtering, searching, sorting, and paging are sent through the single /api/read endpoint. The "read" method in the controller receives these requests, applies the conditions to the database query, and returns the results back to the Grid.
+The **ServerController** (ServerController.php) works with the `UrlAdaptor` to handle all Grid data operations. Actions such as filtering, searching, sorting, and paging are sent through the single /api/read endpoint. The "read" method in the controller receives these requests, applies the conditions to the database query, and returns the results back to the Grid.
 
 For detailed DataManager request parameter documentation, refer to the [DataManager](https://ej2.syncfusion.com/javascript/documentation/data/overview) documentation.
 
@@ -509,7 +510,7 @@ When the Grid performs a filtering action, the `UrlAdaptor` sends filter conditi
 
 **Client-to-server communication:**
 - Grid sends POST to "/api/read" with `where` parameter containing filter predicates (field, operator, value).
-- The "ServerController" receives the request and calls "applyWhere()" method.
+- The **ServerController** receives the request and calls "applyWhere()" method.
 - "applyWhere()" processes predicates and applies WHERE clauses to the database query.
 - "applyOperator()" converts Grid operators to SQL operations.
 - Supported operators: equal, notequal, greaterthan, lessthan, contains, startswith, endswith, in, notin.
@@ -665,7 +666,7 @@ For the complete implementation, refer to the [applyOperator()](https://github.c
 
 ### Searching
 
-During the search action, `UrlAdaptor` sends the search text along with the target columns to the "/api/read" endpoint of the "ServerController" in a parameter named search.
+During the search action, `UrlAdaptor` sends the search text along with the target columns to the "/api/read" endpoint of the **ServerController** in a parameter named search.
 
 ![Searching](../images/grid-laravel-searching.png)
 
@@ -736,13 +737,13 @@ class ServerController extends Controller
 
 ### Sorting
 
-Sorting operations are handled in the "read" method based on the `sorted` parameter received from the client. `UrlAdaptor` sends the column name and sort direction (ascending or descending) to the "/api/read" endpoint of the "ServerController".
+Sorting operations are handled in the "read" method based on the `sorted` parameter received from the client. `UrlAdaptor` sends the column name and sort direction (ascending or descending) to the "/api/read" endpoint of the **ServerController**.
 
 ![Sorting](../images/grid-laravel-sorting.png)
 
 **Client-to-server communication:**
 - The Grid sends a POST request to "/api/read" with a sorted parameter that includes the column name and sort direction.
-- The "ServerController" receives this request and processes sorting in the read method.
+- The **ServerController** receives this request and processes sorting in the read method.
 - An `orderBy` clause is applied to sort results in ascending or descending order.
 - The sorted results are returned to the Grid in JSON format with the result records and the count of total available records.
 
@@ -785,13 +786,13 @@ class ServerController extends Controller
 
 Server-side pagination is implemented using the `skip` and `take` parameters received from the client in the "/api/read" endpoint. Instead of loading all records at once, the server retrieves only the current page data from the database.
 
-Server-side pagination is implemented using the `skip` and `take` parameters sent from the client to the "/api/read" endpoint in the "ServerController". Instead of loading all records at once, the server retrieves only the current page's data from the database, improving performance and efficiency.
+Server-side pagination is implemented using the `skip` and `take` parameters sent from the client to the "/api/read" endpoint in the **ServerController**. Instead of loading all records at once, the server retrieves only the current page's data from the database, improving performance and efficiency.
 
 ![Paging](../images/grid-laravel-paging.png)
 
 **Client-to-server communication:**
 - The Grid sends a POST request to "/api/read" with skip (offset) and take (limit) parameters.
-- The "ServerController" receives these parameters in the read method.
+- The **ServerController** receives these parameters in the read method.
 - The query applies skip() to offset records and take() to limit results based on the page size.
 - The total record count is calculated before paging to ensure correct pagination display.
 - Paginated results are returned to the Grid in JSON format with the result records and the count of total available records.
@@ -834,11 +835,11 @@ class ServerController extends Controller
 
 ## Performing CRUD operations
 
-The "ServerController" handles insert, update, and delete operations triggered by `UrlAdaptor` with each action routed through its corresponding API endpoint.
+The **ServerController** handles insert, update, and delete operations triggered by `UrlAdaptor` with each action routed through its corresponding API endpoint.
 
 ### Insert
 
-The "insert" method handles creating new student records. When the "Add" button is clicked and the form is submitted, `UrlAdaptor` sends the new record data to "/api/insert" endpoint of the "ServerController".
+The "insert" method handles creating new student records. When the "Add" button is clicked and the form is submitted, `UrlAdaptor` sends the new record data to "/api/insert" endpoint of the **ServerController**.
 
 ![Add Record](../images/grid-laravel-crud-add.png)
 
@@ -922,7 +923,7 @@ public function update(Request $request)
 
 ### Delete
 
-The "remove" method handles deleting student records from the database. When a record is selected and deleted, `UrlAdaptor` sends the primary key of that record to the "/api/remove" endpoint of the "ServerController".
+The "remove" method handles deleting student records from the database. When a record is selected and deleted, `UrlAdaptor` sends the primary key of that record to the "/api/remove" endpoint of the **ServerController**.
 
 ![Delete Record](../images/grid-laravel-crud-delete.png)
 
@@ -962,7 +963,7 @@ Start the Laravel development server by running the following command in the Vis
 php artisan serve
 ```
 
-The application is now accessible at `http://localhost:8000`. The Grid displays student data from the database and enables filtering, searching, sorting, paging, and CRUD operations through the `UrlAdaptor` and Laravel API endpoints.
+The application is now accessible at http://localhost:8000. The Grid displays student data from the database and enables filtering, searching, sorting, paging, and CRUD operations through the `UrlAdaptor` and Laravel API endpoints.
 
 ## Complete sample repository
 
@@ -974,13 +975,13 @@ The repository contains the complete Laravel backend implementation with all Ser
 
 This guide covers the following key areas:
 
-1. [Prerequisites](#prerequisites) - Tools, frameworks, and versions required to build the application.
-2. [Setting up the Laravel application](#setting-up-the-laravel-application) - Create a Laravel project, configure the database, and set up models with migrations.
-3. [Integrating Syncfusion Grid with Laravel API](#integrating-syncfusion-grid-with-laravel-api) - Create Blade templates and configure `UrlAdaptor` for seamless Grid integration.
-4. [Performing data operations](#performing-data-operations) - Handle server-side filtering, searching, sorting, and paging for efficient data processing.
-5. [Performing CRUD operations](#performing-crud-operations) - Enable insert, read, update, and delete operations from the Grid using `UrlAdaptor`.
-6. [Running the application](#running-the-application) - Run the Laravel development server and access the application locally.
-7. [GitHub sample](#github-sample) - Explore a complete working sample on GitHub.
+1. Tools, frameworks, and versions required to build the application [🔗](#prerequisites).
+2. Create a Laravel project, configure the database, and set up models with migrations. [🔗](#setting-up-the-laravel-application)
+3. Create Blade templates and configure `UrlAdaptor` for seamless Grid integration. [🔗](#integrating-syncfusion-grid-with-laravel-api)
+4. Handle server-side filtering, searching, sorting, and paging for efficient data processing. [🔗](#performing-data-operations)
+5. Enable insert, read, update, and delete operations from the Grid using `UrlAdaptor`. [🔗](#performing-crud-operations)
+6. Run the Laravel development server and access the application locally. [🔗](#running-the-application)
+7. Explore a complete working sample on GitHub. [🔗](#github-sample)
 
 The resulting application provides a reliable, scalable solution for managing student records with a robust Laravel REST API and Syncfusion Grid front end, including error handling, security measures, and performance optimizations.
 
@@ -1015,16 +1016,16 @@ The resulting application provides a reliable, scalable solution for managing st
   ```html
   {{ csrf_field() }}
   ```
-  This applies only to web routes in `routes/web.php`, not API routes.
+  This applies only to web routes in **routes/web.php**, not API routes.
 
 **Issue: "419 error or 'Page Expired' when Grid tries to read/insert/update/delete data"**
-- **Solution:** A CSRF token may have been accidentally added to API requests. API routes in `routes/api.php` are **automatically CSRF-exempt**. Do NOT add CSRF tokens to API calls. `UrlAdaptor` handles this correctly without tokens. If the error persists:
-  1. Verify that `routes/api.php` is used (not `routes/web.php`) for API endpoints
+- **Solution:** A CSRF token may have been accidentally added to API requests. API routes in **routes/api.php** are **automatically CSRF-exempt**. Do NOT add CSRF tokens to API calls. `UrlAdaptor` handles this correctly without tokens. If the error persists:
+  1. Verify that **routes/api.php** is used (not **routes/web.php**) for API endpoints
   2. Remove any CSRF token headers from `DataManager` configuration
   3. Ensure the API route is prefixed with `/api/` in the URL (e.g., `{{ url('/api/read') }}`)
 
 **Issue: "Grid shows data but filtering/sorting doesn't work"**
-- **Solution:** Ensure the Laravel API endpoints ("/api/read", "/api/insert", `/api/update`, `/api/remove`) are properly defined in `routes/api.php` and the ServerController methods are implemented.
+- **Solution:** Ensure the Laravel API endpoints ("/api/read", "/api/insert", `/api/update`, `/api/remove`) are properly defined in **routes/api.php** and the ServerController methods are implemented.
 
 **Issue: "Port 8000 is already in use"**
 - **Solution:** Another application is using port 8000. Run Laravel on a different port:

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Range Slider control | Syncfusion
+title: Getting started | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
@@ -67,7 +67,9 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-Combined CSS files are available in the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package root folder. This can be referenced in the `~/src/styles/styles.css` file, as shown below:
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -77,6 +79,8 @@ Combined CSS files are available in the Essential<sup style="font-size:70%">&reg
 
 {% endhighlight %}
 {% endtabs %}
+
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
 
 ## Adding Range Slider to the project
 
@@ -123,7 +127,8 @@ Add the div element with the id attribute `#slider` inside the body tag in your 
 {% endhighlight %}
 {% endtabs %}
 
-Import the  Range Slider control into your `app.ts` and append it to `#slider`
+Import the Range Slider control into your `app.ts` file and append it to the `#slider` element.
+
 `[src/app/app.ts]`
 
 {% tabs %}
@@ -142,7 +147,7 @@ slider.appendTo('#slider');
 
 ## Run the application
 
-The **Essential<sup style="font-size:70%">&reg;</sup> JS 2 quickstart** application project is configured to compile and run the application in browser. Use the following command to run the application.
+The **Essential<sup style="font-size:70%">&reg;</sup> JS 2 quickstart** application project is configured to compile and run the application in the browser. Use the following command to run the application.
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
@@ -168,12 +173,12 @@ npm start
 
 ## See Also
 
-[Slider Types](./types/)
+[Slider Types](./types)
 
-[Slider Formatting](./format/)
+[Slider Formatting](./format)
 
-[Orientation Slider](./orientation/)
+[Orientation Slider](./orientation)
 
-[Ticks in Slider](./ticks/)
+[Ticks in Slider](./ticks)
 
-[Tooltip in Slider](./tooltip/)
+[Tooltip in Slider](./tooltip)

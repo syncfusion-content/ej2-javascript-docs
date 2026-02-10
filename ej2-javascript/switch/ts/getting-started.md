@@ -24,7 +24,7 @@ The following list of dependencies are required to use the Switch component in y
     |-- @syncfusion/ej2-base
 ```
 
-## Set up development environment
+## Setup development environment
 
 Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
@@ -62,7 +62,9 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render DropDownButton component, need to import Button and its dependent components styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -72,6 +74,8 @@ To render DropDownButton component, need to import Button and its dependent comp
 
 {% endhighlight %}
 {% endtabs %}
+
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
 
 ## Add Switch to the project
 
@@ -156,7 +160,7 @@ The following example shows a basic Switch component.
 
 ## Set text on Switch
 
-This section explains how to set [`onLabel`](../api/switch/#onlabel) and [`offLabel`](../api/switch/#offlabel) texts on Switch. In the following example, `onLabel` is set as `ON` and `offLabel` is set as `OFF`.
+This section explains how to set [`onLabel`](../api/switch#onlabel) and [`offLabel`](../api/switch#offlabel) texts on Switch. In the following example, `onLabel` is set as `ON` and `offLabel` is set as `OFF`.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

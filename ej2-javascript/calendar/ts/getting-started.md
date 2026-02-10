@@ -67,7 +67,9 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render Calendar component, need to import Calendar and its dependent components styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -78,6 +80,8 @@ To render Calendar component, need to import Calendar and its dependent componen
 
 {% endhighlight %}
 {% endtabs %}
+
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
 
 ## Add Calendar to the application
 

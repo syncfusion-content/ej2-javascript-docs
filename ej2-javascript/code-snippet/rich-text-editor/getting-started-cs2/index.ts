@@ -12,5 +12,4 @@ let editor: RichTextEditor = new RichTextEditor({
     <li><p>Supports third-party library integration.</p></li>
     </ul>`
 });
-// render initialized Rich Text Editor
 editor.appendTo('#editor');

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Predefined dialogs control | Syncfusion
+title: Getting started | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Predefined dialogs control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
@@ -65,7 +65,9 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render Predefined Dialogs component, need to import Popups and its dependent components styles as given below in in the `~/src/styles/styles.css` file, as shown below: 
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -78,16 +80,18 @@ To render Predefined Dialogs component, need to import Popups and its dependent 
 {% endhighlight %}
 {% endtabs %}
 
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
+
 ## Render a dialog using utility functions
 
 The dialog component provides built-in utility functions to render the alert and confirm dialogs with the minimal code. The following options are used as an argument on calling the utility functions:
 
 | Options   | Description |
 |-----------|-------------|
-| title | Specifies the title of dialog like the [header](../api/dialog/#header) property.|
-| content | Specifies the value that can be displayed in dialog's content area like the [content](../api/dialog/#content) property. |
-| isModal | Specifies the Boolean value whether the dialog can be displayed as modal or non-modal. For more details, refer to the [isModal](../api/dialog/#ismodal) property.|
-| position | Specifies the value where the alert or confirm dialog is positioned within the document. For more details, refer to the [position](../api/dialog/#position) property { X: 'center', Y: 'center'}|
+| title | Specifies the title of dialog like the [header](https://ej2.syncfusion.com/documentation/api/dialog/index-default#header) property.|
+| content | Specifies the value that can be displayed in dialog's content area like the [content](https://ej2.syncfusion.com/documentation/api/dialog/index-default#content) property. |
+| isModal | Specifies the Boolean value whether the dialog can be displayed as modal or non-modal. For more details, refer to the [isModal](https://ej2.syncfusion.com/documentation/api/dialog/index-default#ismodal) property.|
+| position | Specifies the value where the alert or confirm dialog is positioned within the document. For more details, refer to the [position](https://ej2.syncfusion.com/documentation/api/dialog/index-default#position) property { X: 'center', Y: 'center'}|
 | okButton | Configures the `OK button` that contains button properties with the click events. `okButton:{ icon:'prefix icon to the button', cssClass:'custom class to the button', click: 'action for OK button click', text: 'Yes' // <-- Default value is 'OK'}`|
 | cancelButton | Configures the `Cancel button` that contains button properties with the click events. `cancelButton:{ icon:'prefix icon to the button', cssClass:'custom class to the button', click: 'action for ‘Cancel’ button click', text: 'No' // <-- Default value is 'Cancel'}`|
 | isDraggable |Specifies the value whether the alert or confirm dialog can be dragged by the user.|

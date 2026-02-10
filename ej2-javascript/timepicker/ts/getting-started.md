@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Timepicker control | Syncfusion
+title: Getting started | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Timepicker control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
@@ -69,7 +69,9 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render the TimePicker component, need to import TimePicker and its dependent component’s styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -82,6 +84,8 @@ To render the TimePicker component, need to import TimePicker and its dependent 
 
 {% endhighlight %}
 {% endtabs %}
+
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
 
 ## Add TimePicker to the application
 
@@ -166,7 +170,7 @@ The following example shows a basic TimePicker.
           
 {% previewsample "page.domainurl/code-snippet/timepicker/getting-started-cs5" %}
 
-Now, the TimePicker renders with  default culture as `American English`('en-US'). For a different culture, refer to the [`Globalization`](../timepicker/globalization/) section.
+Now, the TimePicker renders with  default culture as `American English`('en-US'). For a different culture, refer to the [`Globalization`](https://ej2.syncfusion.com/documentation/timepicker/globalization) section.
 
 ## Setting the value, min, and max time
 

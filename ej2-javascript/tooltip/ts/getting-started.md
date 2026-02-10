@@ -68,7 +68,9 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render Tooltip control, need to import Popups and its dependent controls styles as given below in in the `~/src/styles/styles.css` file, as shown below:
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -78,6 +80,8 @@ To render Tooltip control, need to import Popups and its dependent controls styl
 
 {% endhighlight %}
 {% endtabs %}
+
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
 
 ## Initialize the Tooltip on a single element
 
@@ -164,7 +168,7 @@ The output will be as follows:
 
 ## Initialize Tooltip within a container
 
-You can create Tooltips on multiple targets within a container. To do so, you have to define specific target elements to the [`target`](../api/tooltip/#target) property so that the Tooltip is initialized only on matched targets within a container. In this case, the Tooltip content is assigned from the `title` attribute of the target element.
+You can create Tooltips on multiple targets within a container. To do so, you have to define specific target elements to the [`target`](https://ej2.syncfusion.com/documentation/api/tooltip/index-default#target) property so that the Tooltip is initialized only on matched targets within a container. In this case, the Tooltip content is assigned from the `title` attribute of the target element.
 
 Refer to the following code example to create a Tooltip on multiple targets within a container.
 
@@ -186,8 +190,8 @@ Refer to the following code example to create a Tooltip on multiple targets with
 
 ## See Also
 
-[Positioning Tooltip](./position/)
+[Positioning Tooltip](./position)
 
-[Tooltip Open Mode](./open-mode/)
+[Tooltip Open Mode](./open-mode)
 
-[Customize the Tooltip](./customization/)
+[Customize the Tooltip](./customization)

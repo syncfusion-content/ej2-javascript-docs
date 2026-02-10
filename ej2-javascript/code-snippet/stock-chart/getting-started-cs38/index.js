@@ -1,4 +1,4 @@
-let datetimeCategoryData = [
+var datetimeCategoryData = [
   { x: new Date(2021, 1, 11) }, { x: new Date(2021, 1, 12) }, { x: new Date(2021, 1, 13) }, { x: new Date(2021, 1, 14) }, { x: new Date(2021, 1, 15) },
   { x: new Date(2021, 1, 19) }, { x: new Date(2021, 1, 20) }, { x: new Date(2021, 1, 21) }, { x: new Date(2021, 1, 22) }, { x: new Date(2021, 3, 1) },
   { x: new Date(2021, 3, 2) }, { x: new Date(2021, 4, 1) }, { x: new Date(2021, 4, 5) }, { x: new Date(2021, 4, 6) }, { x: new Date(2021, 4, 7) },
@@ -11,8 +11,8 @@ let datetimeCategoryData = [
   { x: new Date(2021, 6, 16) }, { x: new Date(2021, 6, 17) }, { x: new Date(2021, 6, 18) }, { x: new Date(2021, 6, 19) }, { x: new Date(2021, 6, 20) }
 ]
 
-let series2 = [];
-let point2;
+var series2 = [];
+var point2;
 for (var i = 0; i < 46; i++) {
   point2 = {
       x: datetimeCategoryData[i].x,

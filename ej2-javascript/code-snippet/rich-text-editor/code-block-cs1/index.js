@@ -1,4 +1,3 @@
-// initialize Rich Text Editor component
 var editor = new ej.richtexteditor.RichTextEditor({
         toolbarSettings: {
                 items: ['Undo', 'Redo', '|', 'CodeBlock', '|', 'Bold', 'Italic', 'Underline', 'StrikeThrough', 'InlineCode', '|', 'CreateLink', 'Image', 'CreateTable', 'Blockquote', '|', 'BulletFormatList', 'NumberFormatList', '|', 'Formats', 'Alignments', '|', 'Outdent', 'Indent', '|',

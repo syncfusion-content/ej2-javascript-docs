@@ -65,7 +65,9 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render TextArea Control, need to import inputs and its dependent components styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -76,9 +78,11 @@ To render TextArea Control, need to import inputs and its dependent components s
 {% endhighlight %}
 {% endtabs %}
 
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
+
 ## Adding TextArea to the application
 
-Add the HTML Textarea tag with the `id` attribute as `default` to your `index.html` file.
+Add an HTML textarea tag with the `id` attribute set to `default` in your `index.html` file.
 
 `[src/index.html]`
 
@@ -113,7 +117,7 @@ Add the HTML Textarea tag with the `id` attribute as `default` to your `index.ht
 {% endhighlight %}
 {% endtabs %}
 
-Then, import the TextArea Control in your `app.ts` file and initialize it with the `#default`.
+Then, import the TextArea control in your `app.ts` file and initialize it with the `#default` element.
 
 `[src/app/app.ts]`
 
@@ -162,7 +166,7 @@ The following example shows a basic TextArea control.
 
 ## Getting and setting values
 
-To set the initial value of the TextArea Control, you can utilize the [value](../api/textarea/#value) property. Here's how you can achieve it:
+To set the initial value of the TextArea Control, you can utilize the [value](https://ej2.syncfusion.com/documentation/api/textarea/index-default#value) property. Here's how you can achieve it:
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -241,7 +245,7 @@ document.getElementById('valuebtn').onclick = function () {
 {% endhighlight %}
 {% endtabs %}
 
-* You can retrieve the value of the TextArea by accessing it as an argument from the [change](../api/textarea/#change) event.
+* You can retrieve the value of the TextArea by accessing it as an argument from the [change](https://ej2.syncfusion.com/documentation/api/textarea/index-default#change) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

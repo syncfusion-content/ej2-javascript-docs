@@ -9,23 +9,32 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 Getting Started in ##Platform_Name## TextArea Control
+# Getting Started in ##Platform_Name## TextArea Control
 
-This section explains how to create a simple TextArea Control and configure its available functionalities, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 quickstart seed repository.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 TextArea and demonstrate the basic usage of the TextArea control in a JavaScript application.
 
 ## Dependencies
 
-The following list of dependencies are required to use the TextArea Control in your application.
+The list of dependencies required to use the TextArea component in your application is given below:
 
 ```js
 |-- @syncfusion/ej2-inputs
     |-- @syncfusion/ej2-base
-
 ```
+
+## Setup for local environment
+
+Refer to the following steps to set up your local environment.
+
+**Step 1:** Create a root folder named **my-app** for your application.
+
+**Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
+
+**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 TextArea control.
 
 ## Installation and configuration
 
-* Clone the Essential<sup style="font-size:70%">&reg;</sup> JS 2 quickstart application project from [GitHub](https://github.com/syncfusion/ej2-quickstart.git) and install necessary npm packages using the following command.
+* Clone the Essential<sup style="font-size:70%">&reg;</sup> JS 2 quickstart application project from [GitHub](https://github.com/syncfusion/ej2-quickstart.git) and install the necessary npm packages using the following command.
 
 ```
 git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
@@ -138,7 +147,7 @@ The following example shows a basic TextArea control.
 
 ## Getting and setting values
 
-To set the initial value of the TextArea Control, you can utilize the [value](../api/textarea/#value) property. Here's how you can achieve it:
+To set the initial value of the TextArea control, use the [value](https://ej2.syncfusion.com/javascript/documentation/api/textarea/index-default#value) property as shown below:
 
 ```js
 // initializes the TextArea Control
@@ -196,7 +205,7 @@ document.getElementById('valuebtn').onclick = function () {
 
 ```
 
-* You can retrieve the value of the TextArea by accessing it as an argument from the [change](../api/textarea/#change) event.
+* You can retrieve the value of the TextArea by accessing it as an argument from the [change](https://ej2.syncfusion.com/javascript/documentation/api/textarea/index-default#change) event.
 
 ```js
 // initializes the TextArea Control

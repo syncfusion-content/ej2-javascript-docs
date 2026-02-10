@@ -11,20 +11,20 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Check box control
 
-This section explains how to create a simple CheckBox, and configure its available functionalities in TypeScript, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section explains how to create a simple CheckBox control and configure its available functionalities in TypeScript, using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
-The following list of dependencies are required to use the CheckBox component in your application the.
+The following dependencies are required to use the CheckBox component in your application:
 
 ```js
 |-- @syncfusion/ej2-buttons
     |-- @syncfusion/ej2-base
 ```
 
-## Set up development environment
+## Setup development environment
 
 Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
@@ -60,9 +60,11 @@ npm install
 {% endhighlight %}
 {% endtabs %}
 
-## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
+## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS Styles
 
-To render Checkbox component, need to import Button and its dependent components styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -73,9 +75,11 @@ To render Checkbox component, need to import Button and its dependent components
 {% endhighlight %}
 {% endtabs %}
 
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
+
 ## Add CheckBox to the project
 
-Add the HTML input tag with id attribute as the `element` to your `index.html` file.
+Add the HTML input tag with an id attribute as the `element` to your `index.html` file.
 
 `[src/index.html]`
 
@@ -108,7 +112,7 @@ Add the HTML input tag with id attribute as the `element` to your `index.html` f
 {% endhighlight %}
 {% endtabs %}
 
-Import the CheckBox component in your `app.ts` file and initialize it to `#element` as shown in the following.
+Import the CheckBox component in your `app.ts` file and initialize it with the `#element` selector as shown below.
 
 `[src/app/app.ts]`
 
@@ -161,11 +165,11 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 CheckBox contains 3 dif
 * Unchecked
 * Indeterminate
 
-The CheckBox [`checked`](../api/check-box/#checked) property is used to handle the checked and unchecked state. In checked state a tick mark will be added to the visualization of CheckBox.
+The CheckBox [`checked`](https://ej2.syncfusion.com/documentation/api/check-box/index-default#checked) property manages the checked and unchecked states. When checked, a tick mark appears in the CheckBox visualization.
 
 ### Indeterminate
 
-The CheckBox indeterminate state can be set through [`indeterminate`](../api/check-box/#indeterminate) property. CheckBox indeterminate state masks the real value of CheckBox visually. The Checkbox cannot be changed to indeterminate state through the user interface, this state can be achieved only through the property.
+The CheckBox indeterminate state can be set through [`indeterminate`](https://ej2.syncfusion.com/documentation/api/check-box/index-default#indeterminate) property. CheckBox indeterminate state masks the real value of CheckBox visually. The Checkbox cannot be changed to indeterminate state through the user interface, this state can be achieved only through the property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

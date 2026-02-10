@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 This section explains how to create a `Mention`, and configure its available functionalities in TypeScript using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires Node.js v14.0 or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
@@ -23,16 +23,18 @@ The following list of dependencies are required to use the Mention control in yo
 
 |-- @syncfusion/ej2-dropdowns
     |-- @syncfusion/ej2-base
+    |-- @syncfusion/ej2-inputs
     |-- @syncfusion/ej2-data
     |-- @syncfusion/ej2-lists
+    |-- @syncfusion/ej2-navigations
+    |-- @syncfusion/ej2-notifications
     |-- @syncfusion/ej2-popups
         |-- @syncfusion/ej2-buttons
-
 ```
 
 ## Set up development environment
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
+Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack).
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -68,7 +70,9 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render Mention control, need to import dropdowns and its dependent controls styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -82,6 +86,8 @@ To render Mention control, need to import dropdowns and its dependent controls s
 
 {% endhighlight %}
 {% endtabs %}
+
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
 
 ## Adding the Mention control to the application
 
@@ -140,7 +146,7 @@ mentionObject.appendTo('#mentionElement');
 
 ## Binding the data source
 
-After initialization, populate the Mention with data using the [dataSource](../api/mention/#datasource) property. Here, an array of string values is passed to the Mention control.
+After initialization, populate the Mention with data using the [dataSource](https://ej2.syncfusion.com/documentation/api/mention/index-default#datasource) property. Here, an array of string values is passed to the Mention control.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -189,9 +195,9 @@ The following example, shows a basic Mention control.
 
 ## Display mention character
 
-By using the [showMentionChar](../api/mention/#showmentionchar) property, the text content can be displayed along with the mention character. You can customize the mention character by using the [mentionChar](../api/mention/#mentionchar) property in the Mention control.
+By using the [showMentionChar](https://ej2.syncfusion.com/documentation/api/mention/index-default#showmentionchar) property, the text content can be displayed along with the mention character. You can customize the mention character by using the [mentionChar](https://ej2.syncfusion.com/documentation/api/mention/index-default#mentionchar) property in the Mention control.
 
-> By default, the [mentionChar](../api/mention/#mentionchar) is `@` and the [showMentionChar](../api/mention/#showmentionchar) property is disabled.
+> By default, the [mentionChar](https://ej2.syncfusion.com/documentation/api/mention/index-default#mentionchar) is `@` and the [showMentionChar](https://ej2.syncfusion.com/documentation/api/mention/index-default#showmentionchar) property is disabled.
 
 The following example, displays the text content along with the mention character configured as `#`.
 

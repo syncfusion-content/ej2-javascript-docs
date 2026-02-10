@@ -1,13 +1,13 @@
-----
+---
 layout: post
 title: Customize AI Assistant in ##Platform_Name## Rich Text Editor | Syncfusion
-description: Learn about the customization options available for the AI Assistant feature in the Syncfusion Essential JS 2 ##Platform_Name Rich Text Editor control.
+description: Learn about the customization options available for the AI Assistant feature in the Syncfusion Essential JS 2 ##Platform_Name## Rich Text Editor control.
 platform: ej2-javascript
 control: Customization of AI Assistant
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
-----
+---
 
 # Customization of AI Assistant
 

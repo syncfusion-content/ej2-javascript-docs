@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Switch control | Syncfusion
+title: Getting started | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## Switch control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
@@ -9,16 +9,35 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Switch control
+# Getting started in ##Platform_Name## Switch control
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Switch  and demonstrate the basic usage of the Switch  control in a JavaScript application.
 
-## Control Initialization
+## Dependencies
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using either of the following ways.
+The list of dependencies required to use the Switch  component in your application is given below:
 
-* Using local script and style references in a HTML page.
-* Using CDN link for script and style reference.
+```js
+|-- @syncfusion/ej2-buttons
+    |-- @syncfusion/ej2-base
+```
+
+## Setup for local environment
+
+Refer to the following steps to set up your local environment.
+
+**Step 1:** Create a root folder named **my-app** for your application.
+
+**Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
+
+**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Switch  control.
+
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
+
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Switch  control can be initialized by using either of the following ways.
+
+* Using local script and style.
+* Using CDN link for script and style.
 
 ### Using local script and style references in a HTML page
 
@@ -142,7 +161,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 ## Set text on Switch
 
-This section explains how to set [`onLabel`](../api/switch/#onlabel) and [`offLabel`](../api/switch/#offlabel) texts on Switch. In the following example, `onLabel` is set as `ON` and `offLabel` is set as `OFF`.
+This section explains how to set [`onLabel`](../api/switch#onlabel) and [`offLabel`](../api/switch#offlabel) texts on Switch. In the following example, `onLabel` is set as `ON` and `offLabel` is set as `OFF`.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}

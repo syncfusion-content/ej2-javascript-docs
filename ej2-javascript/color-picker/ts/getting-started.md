@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Color picker control
 
-This section explains how to create a simple ComboBox component and configure its available functionalities in TypeScript, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section explains how to create a simple ColorPicker component and configure its available functionalities in TypeScript, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
@@ -27,7 +27,7 @@ The following list of dependencies are required to use the ColorPicker component
     |-- @syncfusion/ej2-splitbuttons
 ```
 
-## Set up development environment
+## Setup development environment
 
 Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
@@ -65,7 +65,9 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render Colorpicker component, need to import inputs and its dependent components styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below:  
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -78,6 +80,8 @@ To render Colorpicker component, need to import inputs and its dependent compone
 
 {% endhighlight %}
 {% endtabs %}
+
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
 
 ## Add ColorPicker to the project
 
@@ -114,7 +118,7 @@ Add the HTML input tag with ID attribute as the `element` to your `index.html` f
 {% endhighlight %}
 {% endtabs %}
 
-Then, import the ColorPicker component in your `app.ts` file, and initialize it with the `#element`.
+Then, import the ColorPicker component in your `app.ts` file and initialize it with the `#element`.
 
 `[src/app/app.ts]`
 
@@ -141,7 +145,7 @@ npm start
 {% endhighlight %}
 {% endtabs %}
 
-The following example shows a default ColorPicker component.
+The following example demonstrates a default ColorPicker component.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -159,9 +163,9 @@ The following example shows a default ColorPicker component.
 
 ## Inline type
 
-By default, the ColorPicker will be rendered using SplitButton and open the pop-up to access the ColorPicker. To render the ColorPicker container alone and to access it directly, render it as inline. It can be achieved by setting the [`inline`](../api/color-picker#inline) property to `true`.
+By default, the ColorPicker is rendered using SplitButton and opens a pop-up to access the color picker. To render the ColorPicker container alone and access it directly, set the [`inline`](../api/color-picker#inline) property to `true`.
 
-The following sample shows the inline type rendering of ColorPicker.
+The following example demonstrates inline type rendering of the ColorPicker.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

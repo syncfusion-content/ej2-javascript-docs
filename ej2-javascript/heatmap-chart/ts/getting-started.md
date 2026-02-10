@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Heatmap chart control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Heatmap chart control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## HeatMap | Syncfusion
+description:  Checkout and learn about Getting started with ##Platform_Name## HeatMap Chart Component of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,15 +9,23 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Heatmap chart control
+# Getting started with ##Platform_Name## HeatMap Chart Component
 
-This section explains the steps to create a simple HeatMap and demonstrates the basic usage of the gantt component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
+This section explains how to create a HeatMap component in a TypeScript project using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. The repository comes pre-configured with necessary dependencies and is integrated with webpack for bundling and development workflows.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+> The application uses `webpack.config.js` and the latest [webpack-cli](https://webpack.js.org/api/cli#commands). Node.js v14.15.0 or higher is required. Refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/) for more information about webpack features and configuration.
+
+## Prerequisites
+
+Before getting started, ensure the following requirements are met:
+
+- TypeScript knowledge and basic understanding of npm/webpack
+- Node.js v14.15.0 or higher installed
+- npm or yarn package manager available
 
 ## Dependencies
 
-For using heat map, the following minimum requirements are needed.
+The HeatMap component requires the following npm packages:
 
 ```javascript
 |-- @syncfusion/ej2-heatmap
@@ -62,9 +70,9 @@ npm install
 {% endhighlight %}
 {% endtabs %}
 
-## Adding heat map to the project
+## Add HeatMap to the project
 
-Add an HTML div element of heat map to your `index.html`. `[src/index.html]`
+Add an HTML container element to your `index.html` file.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -73,7 +81,7 @@ Add an HTML div element of heat map to your `index.html`. `[src/index.html]`
 <html lang="en">
 
 <head>
-    <title>EJ2 Heatmap</title>
+    <title>EJ2 HeatMap</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Typescript UI Controls" />
@@ -81,7 +89,7 @@ Add an HTML div element of heat map to your `index.html`. `[src/index.html]`
 </head>
 
 <body>
-    <!--container which is going to render the Heatmap-->
+    <!--container which is going to render the HeatMap-->
     <div id='element'>
     </div>
 </body>
@@ -91,14 +99,14 @@ Add an HTML div element of heat map to your `index.html`. `[src/index.html]`
 {% endhighlight %}
 {% endtabs %}
 
-Now, import the heat map control into your `app.ts` to instantiate the heat map and append the heat map instance to the `#container` `[src/app/app.ts]`
+Import the HeatMap component into your `app.ts` file and initialize it with the container element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 
 import { HeatMap } from '@syncfusion/ej2-heatmap';
 
-// initialize HeatMap control
+// initialize HeatMap component
 let heatmap: HeatMap = new HeatMap();
 
 // render initialized HeatMap
@@ -117,7 +125,7 @@ npm start
 {% endhighlight %}
 {% endtabs %}
 
-The below example shows a basic Heatmap.
+The below example shows a basic HeatMap.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -132,7 +140,9 @@ The below example shows a basic Heatmap.
 
 ## Module Injection
 
-The heat map controls are segregated into individual feature-wise modules. To use its feature, you need to inject its feature module using the `HeatMap.Inject()` method. In the current application, the basic heat map is modified to visualize sales revenue data for week, and  the tooltip and legend features of the heat map are used. Find the relevant feature modules and descriptions as follows.
+The HeatMap component is structured with modular features. To use optional features like Legend and Tooltip, inject the corresponding module using the `HeatMap.Inject()` method. This ensures only necessary modules are bundled, reducing application size.
+
+The following modules are available:
 
 * Legend - Provides the legend feature by injecting it.
 * Tooltip - Provides the tooltip feature by injecting it.
@@ -148,9 +158,9 @@ HeatMap.Inject(Legend, Tooltip);
 {% endhighlight %}
 {% endtabs %}
 
-## Populate heat map with data
+## Populate HeatMap with data
 
-This section explains how to populate the following two-dimensional array data to the heat map.
+The HeatMap requires a two-dimensional array where each element represents a data point with its corresponding value. Rows typically represent categories on the Y-axis, and columns represent categories on the X-axis. Values are color-encoded based on the palette settings.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -165,7 +175,7 @@ This section explains how to populate the following two-dimensional array data t
 
 ## Enable axis labels
 
-You can add axis labels to the heat map and format those labels using the [xAxis](../api/heatmap/#xaxis) and [yAxis](../api/heatmap/#yaxis) properties. Axis labels provide additional information about the data points populated in the heat map.
+You can add axis labels to the heat map and format those labels using the [xAxis](../api/heatmap#xaxis) and [yAxis](../api/heatmap#yaxis) properties. Axis labels provide additional information about the data points populated in the heat map.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -178,10 +188,9 @@ You can add axis labels to the heat map and format those labels using the [xAxis
           
 {% previewsample "page.domainurl/code-snippet/heatmap/getting-started-cs10" %}
 
-## Add heat map title
+## Add HeatMap title
 
-Add a title using the [titleSettings](../api/heatmap/#titlesettings) property to the heat map to provide quick information to the user
-about the data populated in the heat map.
+Display a title for the HeatMap using the [titleSettings](../api/heatmap#titlesettings) property to describe the data being visualized.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -196,7 +205,7 @@ about the data populated in the heat map.
 
 ## Enable legend
 
-Use a legend for the heat map in the [visible](../api/heatmap/legendSettings/#visible) object by setting the [legendSettings](../api/heatmap/#legendsettings) property to **true** and injecting the `Legend` module using the `HeatMap.Inject(Legend)` method.
+Display a legend for the HeatMap by setting the [visible](../api/heatmap/legendSettings#visible) property to **true** in the [legendSettings](../api/heatmap#legendsettings) object and injecting the `Legend` module using `HeatMap.Inject(Legend)`.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -209,9 +218,9 @@ Use a legend for the heat map in the [visible](../api/heatmap/legendSettings/#vi
           
 {% previewsample "page.domainurl/code-snippet/heatmap/getting-started-cs12" %}
 
-## Add data label
+## Add data labels
 
-Add data labels to improve the readability of the heat map. This can be achieved by setting the [showLabel](../api/heatmap/cellSettings/#showlabel) property to **true** in the [cellSettings](../api/heatmap/#cellsettings) object.
+Add data labels to improve the readability of the heat map. This can be achieved by setting the [showLabel](../api/heatmap/cellSettings#showlabel) property to **true** in the [cellSettings](../api/heatmap#cellsettings) object.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -226,9 +235,9 @@ Add data labels to improve the readability of the heat map. This can be achieved
 
 ## Add custom cell palette
 
-The default palette settings of the heat map cells can be customized by using the [paletteSettings](../api/heatmap/#palettesettings) property.
-Using the [palette](../api/heatmap/paletteSettings/#palette) property in `paletteSettings` object, you can change the color set for the cells.
-You can change the color mode of the cells to fixed or gradient mode using the [type](../api/heatmap/paletteSettings/#type) property.
+The default palette settings of the heat map cells can be customized by using the [paletteSettings](../api/heatmap#palettesettings) property.
+Using the [palette](../api/heatmap/paletteSettings#palette) property in `paletteSettings` object, you can change the color set for the cells.
+You can change the color mode of the cells to fixed or gradient mode using the [type](../api/heatmap/paletteSettings#type) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -243,7 +252,7 @@ You can change the color mode of the cells to fixed or gradient mode using the [
 
 ## Enable tooltip
 
-The tooltip is used when you cannot display information by using the data labels due to space constraints. You can enable the tooltip by setting the [showTooltip](../api/heatmap/#showtooltip) property to `true` and injecting the `Tooltip` module using the `HeatMap.Inject(Tooltip)` method.
+The tooltip is used when you cannot display information by using the data labels due to space constraints. You can enable the tooltip by setting the [showTooltip](../api/heatmap#showtooltip) property to `true` and injecting the `Tooltip` module using the `HeatMap.Inject(Tooltip)` method.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

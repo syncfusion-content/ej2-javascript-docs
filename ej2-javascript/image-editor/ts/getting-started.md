@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Image editor control
 
-This section explains how to create a simple Image Editor, and configure its available functionalities in TypeScript using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section explains how to create a basic Image Editor control and configure its available features in TypeScript using Essential<sup style="font-size:70%">&reg;</sup> JS 2 with the [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
@@ -23,6 +23,7 @@ The following list of dependencies are required to use the Image Editor control 
 |-- @syncfusion/ej2-image-editor
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-buttons
+    |-- @syncfusion/ej2-dropdowns
     |-- @syncfusion/ej2-inputs
     |-- @syncfusion/ej2-navigations
     |-- @syncfusion/ej2-popups
@@ -67,7 +68,9 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render Image Editor control, need to import image-editor and its dependent components styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -84,9 +87,11 @@ To render Image Editor control, need to import image-editor and its dependent co
 {% endhighlight %}
 {% endtabs %}
 
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
+
 ## Adding Image Editor control to the application
 
-Add the HTML DIV tag with the `id` attribute as `imageeditor` to your `index.html` file.
+Add the HTML DIV tag with the `id` attribute as `image-editor` to your `index.html` file.
 
 `[src/index.html]`
 
@@ -106,7 +111,7 @@ Add the HTML DIV tag with the `id` attribute as `imageeditor` to your `index.htm
 </head>
 
 <body>
-    <div id="imageeditor">
+    <div id="image-editor">
     </div>
 </body>
 </html>
@@ -114,7 +119,7 @@ Add the HTML DIV tag with the `id` attribute as `imageeditor` to your `index.htm
 {% endhighlight %}
 {% endtabs %}
 
-Import the Image Editor control in your `app.ts` file and initialize it with the `#imageeditor`.
+Import the Image Editor control in your `app.ts` file and initialize it with the `#image-editor`.
 
 `[src/app/app.ts]`
 
@@ -126,14 +131,14 @@ import { ImageEditor } from '@syncfusion/ej2-image-editor';
      new ImageEditor({
         width: '550px',
         height: '350px',
-    }, '#imageeditor');
+    }, '#image-editor');
 
 {% endhighlight %}
 {% endtabs %}
 
 ## Run the application
 
-Run the application in the browser using the following command:
+Execute the following command to build and run the application in the browser:
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}

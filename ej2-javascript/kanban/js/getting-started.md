@@ -36,11 +36,11 @@ The following list of dependencies are required to use the Kanban component in y
 
 Refer to the following steps to setup your local environment:
 
-**Step 1:** Create a root folder `myapp` for your application.
+**Step 1:** Create a root folder `my-app` for your application.
 
-**Step 2:** Create `myapp/resources` folder to store local scripts and styles files.
+**Step 2:** Create `my-app/resources` folder to store local scripts and styles files.
 
-**Step 3:** Create `myapp/index.js` and `myapp/index.html` files for initializing Essential<sup style="font-size:70%">&reg;</sup> JS 2 Kanban control.
+**Step 3:** Create `my-app/index.js` and `my-app/index.html` files for initializing Essential<sup style="font-size:70%">&reg;</sup> JS 2 Kanban control.
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
 
@@ -61,13 +61,13 @@ Refer to the following location from where the Kanban's script and styles can be
 
 > Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/material.css`
+> Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/tailwind3.css`
 
 **Example:**
 
 > Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/17.4.39/Essential JS 2/ej2-kanban/dist/global/ej2-kanban.min.js`
 >
-> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/17.4.39/Essential JS 2/ej2-kanban/styles/material.css`
+> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/17.4.39/Essential JS 2/ej2-kanban/styles/tailwind3.css`
 
 After copying the files, you can refer the Kanban's scripts and styles into the `index.html` file. The following HTML code example shows the dependency of Kanban.
 
@@ -77,16 +77,16 @@ After copying the files, you can refer the Kanban's scripts and styles into the 
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2 Kanban</title>
-            <!-- Essential JS 2 Kanban's dependent material theme -->
-            <link href="resources/base/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/buttons/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/dropdowns/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/inputs/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/layouts/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/popups/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/navigations/styles/material.css" rel="stylesheet" type="text/css"/>
-            <!-- Essential JS 2 Kanban's material theme -->
-            <link href="resources/kanban/styles/material.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 Kanban's dependent tailwind3 theme -->
+            <link href="resources/base/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/buttons/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/dropdowns/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/inputs/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/layouts/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/popups/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/navigations/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 Kanban's tailwind3 theme -->
+            <link href="resources/kanban/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential JS 2 Kanban's dependent scripts -->
             <script src="resources/scripts/ej2-base.min.js" type="text/javascript"></script>
@@ -118,13 +118,13 @@ Refer to the Kanban's CDN links given as follows.
 
 > Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Styles: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material.css`
+> Styles: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/tailwind3.css`
 
 **Example:**
 
 > Script: [`http://cdn.syncfusion.com/ej2/ej2-kanban/dist/global/ej2-kanban.min.js`](http://cdn.syncfusion.com/ej2/ej2-kanban/dist/global/ej2-kanban.min.js)
 >
-> Styles: [`http://cdn.syncfusion.com/ej2/ej2-kanban/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-kanban/styles/material.css)
+> Styles: [`http://cdn.syncfusion.com/ej2/ej2-kanban/styles/tailwind3.css`](http://cdn.syncfusion.com/ej2/ej2-kanban/styles/tailwind3.css)
 
 The following HTML code example shows the dependency of Kanban with `ej2-kanban.min.js`.
 
@@ -133,16 +133,16 @@ The following HTML code example shows the dependency of Kanban with `ej2-kanban.
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2 Kanban</title>
-            <!-- Essential JS 2 Kanban's dependent material theme -->
-            <link href="http://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-dropdowns/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-inputs/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-layouts/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-popups/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css" rel="stylesheet" type="text/css"/>
-            <!-- Essential JS 2 Kanban's material theme -->
-            <link href="http://cdn.syncfusion.com/ej2/ej2-kanban/styles/material.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 Kanban's dependent tailwind3 theme -->
+            <link href="http://cdn.syncfusion.com/ej2/ej2-base/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/ej2-buttons/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/ej2-dropdowns/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/ej2-inputs/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/ej2-layouts/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/ej2-popups/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/ej2-navigations/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 Kanban's tailwind3 theme -->
+            <link href="http://cdn.syncfusion.com/ej2/ej2-kanban/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential JS 2 Kanban's dependent script -->
             <script src="http://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
@@ -192,16 +192,16 @@ In this document context, we are going to use `ej2.min.js`, which includes all t
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2 Kanban</title>
-            <!-- Essential JS 2 Kanban's dependent material theme -->
-            <link href="http://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-dropdowns/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-inputs/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-layouts/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-popups/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css" rel="stylesheet" type="text/css"/>
-            <!-- Essential JS 2 Kanban's material theme -->
-            <link href="http://cdn.syncfusion.com/ej2/ej2-kanban/styles/material.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 Kanban's dependent tailwind3 theme -->
+            <link href="http://cdn.syncfusion.com/ej2/ej2-base/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/ej2-buttons/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/ej2-dropdowns/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/ej2-inputs/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/ej2-layouts/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/ej2-popups/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/ej2-navigations/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 Kanban's tailwind3 theme -->
+            <link href="http://cdn.syncfusion.com/ej2/ej2-kanban/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential JS 2 all script -->
             <script src="http://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>

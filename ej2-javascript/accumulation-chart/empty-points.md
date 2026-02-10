@@ -13,9 +13,24 @@ domainurl: ##DomainURL##
 
 The data points those uses the `null` or `undefined` as value are considered as empty points. The empty data points are ignored and not plotted in the chart. You can customize those points, using the `emptyPointSettings` property in series. The default mode of the empty point is `Gap`. Other supported modes are `Average` and `Zero`.
 
+{% if page.publishingplatform == "typescript" %}
+
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs16/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs16/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs16" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs16/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chart/chart-types-cs16/index.html %}
@@ -28,9 +43,24 @@ The data points those uses the `null` or `undefined` as value are considered as 
 
 Specific color for an empty point can be set by using the `fill` property in `emptyPointSettings` and the border for an empty point can be set by using the `border` property.
 
+{% if page.publishingplatform == "typescript" %}
+
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs17/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs17/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs17" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs17/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/chart/chart-types-cs17/index.html %}

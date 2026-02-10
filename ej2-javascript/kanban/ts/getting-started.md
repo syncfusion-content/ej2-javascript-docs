@@ -9,11 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Kanban control
+# Getting started with ##Platform_Name## Kanban control
 
-This section briefly explains how to create **Kanban** component and configure its available functionalities in TypeScript using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
-
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+This section explains how to create and configure the Kanban component in TypeScript using a Vite project with Essential® JS 2.
 
 ## Dependencies
 
@@ -36,78 +34,56 @@ The following list of dependencies are required to use the Kanban component in y
 
 ## Set up development environment
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
+Run the following commands to create a TypeScript Vite application and start the development server:
 
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
+```bash
+npm create vite@latest my-app
+```
+To set up a TypeScript application in a TypeScript environment, run the following command.
 
-git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
-
-{% endhighlight %}
-{% endtabs %}
-
-After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-
-cd ej2-quickstart
-
-{% endhighlight %}
-{% endtabs %}
+```bash
+npm create vite@latest my-app -- --template vanilla-ts
+cd my-app
+npm run dev
+```
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+All the available Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages are published in the Syncfusion npm registry.
+To install the Kanban component, use the following command
 
-The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
-
-{% tabs %}
-{% highlight bash tabtitle="NPM" %}
-
-npm install
-
-{% endhighlight %}
-{% endtabs %}
+```
+npm install @syncfusion/ej2-kanban
+```
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-Kanban CSS files are available in the ej2-kanban and its sub-component package folder. This can be referenced in your application using the following code.
+Kanban CSS files are available in the ej2-kanban and its sub-component package folder. This can be referenced in the application using the following code.
 
-The quickstart application is preconfigured to use the `Material` theme in the `~/src/styles/styles.css` file, as shown below: 
-
-{% tabs %}
-{% highlight css tabtitle="style.css" %}
-
-@import '../../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-layouts/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-kanban/styles/material.css';
-
-{% endhighlight %}
-{% endtabs %}
-
-In case, if you want to make use of the combined CSS files of entire components, then you can avail it from the root folder of Essential<sup style="font-size:70%">&reg;</sup> JS 2 package and reference it with the following code.
+In Vite project to use the `Tailwind3` theme in the `src/style.css` file follow the code as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
 
-@import '../../node_modules/@syncfusion/ej2/material.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-kanban/styles/tailwind3.css';
 
 {% endhighlight %}
 {% endtabs %}
 
-> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme/) section to know more about built-in themes and CSS reference for individual controls.
+Refer to the themes documentation for built-in themes and CSS references for individual controls: https://ej2.syncfusion.com/documentation/appearance/theme/
 
 ## Initialize the Kanban
 
-Add the HTML div tag defined with an `id` attribute to your `index.html` file, where the Kanban element is initialized.
+Add an HTML div element with an `id` attribute to `index.html`, which serves as the host element for the Kanban control.
 
-`[src/index.html]`
+`[index.html]`
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -132,16 +108,16 @@ Add the HTML div tag defined with an `id` attribute to your `index.html` file, w
 {% endhighlight %}
 {% endtabs %}
 
-Import the Kanban component to your `app.ts` file as follows and initialize it to the element defined with an id `Kanban` in the `index.html` file.
+Import the Kanban component to your `main.ts` file as follows and initialize it to the element defined with an id `Kanban` in the `index.html` file.
 
-`[src/app/app.ts]`
+`[src/main.ts]`
 
 {% tabs %}
-{% highlight ts tabtitle="app.ts" %}
+{% highlight ts tabtitle="main.ts" %}
 
 import { Kanban } from '@syncfusion/ej2-kanban';
 
-let kanbanObj: Kanban = new Kanban({
+const kanbanObj: Kanban = new Kanban({
     columns: [
         { headerText: 'Backlog', keyField: 'Open' },
         { headerText: 'In Progress', keyField: 'InProgress' },
@@ -159,7 +135,7 @@ Now, run the application in the browser using the following command.
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
 
-npm start
+npm run dev
 
 {% endhighlight %}
 {% endtabs %}
@@ -179,7 +155,7 @@ The output will display the empty Kanban.
 
 ## Populating cards
 
-To populate the empty Kanban with cards, define the local JSON data or remote data using the `dataSource` property. To define `dataSource`, the mandatory fields in JSON object should be relevant to `keyField`. In the following example, you can see the cards defined with default fields such as ID, Summary, and Status.
+To populate the empty Kanban with cards, define local JSON data or remote data using the `dataSource` property. The data items must include fields relevant to the configured `keyField`. The example below uses default fields such as ID, Summary, and Status.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -187,6 +163,9 @@ To populate the empty Kanban with cards, define the local JSON data or remote da
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/kanban/getting-started-key-field-cs3/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/kanban/getting-started-key-field-cs3/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
           
@@ -202,6 +181,9 @@ To populate the empty Kanban with cards, define the local JSON data or remote da
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/kanban/getting-started-swimlane-cs2/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/kanban/getting-started-swimlane-cs2/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
           

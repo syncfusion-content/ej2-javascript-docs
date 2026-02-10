@@ -26,7 +26,7 @@ The list of dependencies required to use the Rating control in your application 
     |-- @syncfusion/ej2-popups
 ```
 
-## Set up development environment
+## Setup development environment
 
 Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
@@ -64,7 +64,9 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render Rating control, need to import inputs and its dependent controls styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -76,7 +78,9 @@ To render Rating control, need to import inputs and its dependent controls style
 {% endhighlight %}
 {% endtabs %}
 
-## Adding Rating to the Application
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
+
+## Adding Rating to the application
 
 Add the HTML input tag with ID attribute as the `rating` to your `index.html` file.
 
@@ -111,7 +115,7 @@ Add the HTML input tag with ID attribute as the `rating` to your `index.html` fi
 {% endhighlight %}
 {% endtabs %}
 
-Then, import the Rating control in your `app.ts` file, and initialize it with the `#rating`.
+Then, import the Rating control in your `app.ts` file and initialize it with the `#rating` element.
 
 `[src/app/app.ts]`
 
@@ -159,7 +163,7 @@ The following example shows a basic Rating control.
 
 ## Value
 
-You can set the rating value by using the [`value`](../api/rating/#value) property.
+You can set the rating value by using the [`value`](https://ej2.syncfusion.com/documentation/api/rating/index-default#value) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

@@ -92,7 +92,7 @@ var chart = new ej.charts.Chart({
     chartArea: { border: { width: 0 } },
     axisLabelRender: (args) => {
         if (args.axis.name === 'secondary') {
-            let value = (args.text) / 1000000000;
+            var value = (args.text) / 1000000000;
             args.text = (value) + 'bn';
         }
     },

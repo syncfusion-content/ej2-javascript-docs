@@ -7,7 +7,7 @@ var chartData= [
     { x: new Date(2003, 0, 1), y: 6000 }, { x: new Date(2004, 0, 1), y: 8000 },
     { x: new Date(2005, 0, 1), y: 11000 }
 ];
-let chart= new ej.charts.Chart({
+var chart= new ej.charts.Chart({
     primaryXAxis: {
         valueType: 'DateTime',
         title: 'Years',

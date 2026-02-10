@@ -64,7 +64,9 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render Uploader component, need to import inputs and its dependent components styles as given below in the `~/src/styles/styles.css` file, as shown below:
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -77,9 +79,11 @@ To render Uploader component, need to import inputs and its dependent components
 {% endhighlight %}
 {% endtabs %}
 
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
+
 ## Initialize the uploader
 
-The uploader can be initialized through input tag. Add the HTML input element that needs to be initialized as a uploader in `index.html`.
+The uploader can be initialized through an input tag. Add an HTML input element to be initialized as an uploader in your `index.html` file.
 
 `[src/index.html]`
 
@@ -114,7 +118,7 @@ The uploader can be initialized through input tag. Add the HTML input element th
 > The [Custom Resource Generator (CRG)](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script and styles for a set of specific components.
 > This web tool is useful to combine the required component scripts and styles in a single file.
 
-Now, import the  uploader component to your `app.ts` and initialize it to the element `#fileupload` as follows.
+Now, import the uploader component in your `app.ts` file and initialize it with the `#uploader` element.
 
 `[src/app/app.ts]`
 
@@ -127,7 +131,7 @@ import { Uploader } from '@syncfusion/ej2-inputs';
 let uploadObject: Uploader = new Uploader();
 
 // render initialized Uploader
-uploadObject.appendTo('#fileupload');
+uploadObject.appendTo('#uploader');
 
 {% endhighlight %}
 {% endtabs %}
@@ -146,7 +150,7 @@ npm run start
 
 > From v16.2.41 version, the **Essential<sup style="font-size:70%">&reg;</sup> JS2 AJAX** library has been integrated for uploader server requests. Hence, use the third party `promise` library like blue-bird to use the uploader in Internet Explorer.
 
-The following example illustrates the output in your browser.
+The following example demonstrates the output in your browser.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -164,7 +168,7 @@ The following example illustrates the output in your browser.
 
 ## Adding drop area
 
-By default, the uploader component allows to upload files by drag the files from file explorer, and drop into the drop area.  You can configure any other external element as drop target using [dropArea](../api/uploader/#droparea) property.
+By default, the uploader component allows to upload files by drag the files from file explorer, and drop into the drop area.  You can configure any other external element as drop target using [dropArea](https://ej2.syncfusion.com/documentation/api/uploader/index-default#droparea) property.
 
 In the following sample, drop target is configured.
 
@@ -184,7 +188,7 @@ In the following sample, drop target is configured.
 
 ## Configure asynchronous settings
 
-The uploader component process the files to upload in Asynchronous mode by default. Define the properties [saveUrl](../api/uploader/asyncSettingsModel/#saveurl) and [removeUrl](../api/uploader/asyncSettingsModel/#removeurl) to handle the save and remove action as follows.
+The uploader component process the files to upload in Asynchronous mode by default. Define the properties [saveUrl](https://ej2.syncfusion.com/documentation/api/uploader/asyncsettingsmodel#saveurl) and [removeUrl](https://ej2.syncfusion.com/documentation/api/uploader/asyncsettingsmodel#removeurl) to handle the save and remove action as follows.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -202,7 +206,7 @@ The uploader component process the files to upload in Asynchronous mode by defau
 
 ## Handle success and failed upload
 
-You can handle the success and failure actions using the [success](../api/uploader/#success) and [failure](../api/uploader/#failure) &nbsp;events. To handle these event, define the function and assign it to corresponding event as follows.
+You can handle the success and failure actions using the [success](https://ej2.syncfusion.com/documentation/api/uploader/index-default#success) and [failure](https://ej2.syncfusion.com/documentation/api/uploader/index-default#failure) &nbsp;events. To handle these event, define the function and assign it to corresponding event as follows.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

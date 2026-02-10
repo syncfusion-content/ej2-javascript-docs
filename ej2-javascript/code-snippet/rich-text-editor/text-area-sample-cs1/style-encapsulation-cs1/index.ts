@@ -1,7 +1,6 @@
 import { RichTextEditor, Toolbar, Link, Image, HtmlEditor, QuickToolbar } from '@syncfusion/ej2-richtexteditor';
 RichTextEditor.Inject(Toolbar, Link, Image, HtmlEditor, QuickToolbar);
 
-// initialize Rich Text Editor component
 let editor1: RichTextEditor = new RichTextEditor({
     value: `<p>The Syncfusion <strong>Rich Text Editor</strong>, a WYSIWYG (what you see is what you get) editor, is a user interface that allows you to create, edit, and format rich text content. You can try out a demo of this editor here.</p><p><b>Key features:</b></p><ul>
     <li>
@@ -21,10 +20,8 @@ let editor1: RichTextEditor = new RichTextEditor({
       enable: true,
     },
 });
-// render initialized Rich Text Editor
 editor1.appendTo('#editor1');
 
-// initialize Rich Text Editor component
 let editor2: RichTextEditor = new RichTextEditor({
     value: `<p>The Syncfusion <strong>Rich Text Editor</strong>, a WYSIWYG (what you see is what you get) editor, is a user interface that allows you to create, edit, and format rich text content. You can try out a demo of this editor here.</p><p><b>Key features:</b></p><ul>
     <li>
@@ -41,5 +38,4 @@ let editor2: RichTextEditor = new RichTextEditor({
     </li>
   </ul><div style="display: inline-block; width: 60%; vertical-align: top; cursor: auto;"></div> `,
 });
-// render initialized Rich Text Editor
 editor2.appendTo('#editor2');

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Combo box control | Syncfusion
+title: Getting started | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Combo box control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 This section explains how to create a simple **ComboBox** component and configure its available functionalities in TypeScript, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires Node.js v14.0 or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
@@ -26,11 +26,12 @@ The following list of dependencies are required to use the `ComboBox` component 
     |-- @syncfusion/ej2-lists
     |-- @syncfusion/ej2-inputs
     |-- @syncfusion/ej2-navigations
+    |-- @syncfusion/ej2-notifications
     |-- @syncfusion/ej2-popups
         |-- @syncfusion/ej2-buttons
 ```
 
-## Set up development environment
+## Setup development environment
 
 Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack).
 
@@ -68,7 +69,9 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render ComboBox component, need to import dropdowns and its dependent components styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -82,6 +85,8 @@ To render ComboBox component, need to import dropdowns and its dependent compone
 
 {% endhighlight %}
 {% endtabs %}
+
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
 
 ## Initialize the ComboBox
 
@@ -119,7 +124,7 @@ Add the HTML input element that needs to be initialized as ComboBox in `index.ht
 {% endhighlight %}
 {% endtabs %}
 
-Now, import the  ComboBox component to your `app.ts` and initialize it to the element `#comboelement` as shown below.
+Now, import the  ComboBox component to your `app.ts` and initialize it to the element `#combo` as shown below.
 
 `[src/app/app.ts]`
 
@@ -132,14 +137,14 @@ import { ComboBox } from '@syncfusion/ej2-dropdowns';
 let comboBoxObject: ComboBox = new ComboBox();
 
 // render initialized ComboBox
-comboBoxObject.appendTo('#comboelement');
+comboBoxObject.appendTo('#combo');
 
 {% endhighlight %}
 {% endtabs %}
 
 ## Binding data source
 
-After initializing, populate the ComboBox with data using the [dataSource](https://ej2.syncfusion.com/documentation/api/combo-box/#datasource) property. Here, an array of string values is passed to the ComboBox component.
+After initialization, populate the ComboBox with data using the [dataSource](https://ej2.syncfusion.com/documentation/api/combo-box/index-default#datasource) property. Here, an array of string values is passed to the ComboBox component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -188,8 +193,7 @@ The following example illustrates the output in your browser.
 
 ## Custom values
 
-The ComboBox allows the user to give input as custom value which is not required to present in predefined set of values. By default, this support is enabled by [allowCustom](https://ej2.syncfusion.com/documentation/api/combo-box/#allowcustom) property. In this case, both text field and value field considered as same.
-The custom value will be sent to post back handler when a form is about to be submitted.
+The ComboBox allows users to enter custom values that are not in the predefined set. By default, this is enabled through the [allowCustom](https://ej2.syncfusion.com/documentation/api/combo-box/index-default#allowcustom) property. In this case, both text and value fields are treated as the same. Custom values are sent to the post-back handler when a form is submitted.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -204,9 +208,9 @@ The custom value will be sent to post back handler when a form is about to be su
 
 ## Configure the popup list
 
-By default, the width of the popup list automatically adjusts according to the ComboBox input element's width, and the height of the popup list has '300px'.
+By default, the width of the popup list automatically adjusts according to the ComboBox input element's width, and the height of the popup list is 300px.
 
-The height and width of the popup list can also be customized using the [popupHeight](https://ej2.syncfusion.com/documentation/api/combo-box/#popupheight) &nbsp;and [popupWidth](https://ej2.syncfusion.com/documentation/api/combo-box/#popupwidth) properties respectively.
+The height and width of the popup list can also be customized using the [popupHeight](https://ej2.syncfusion.com/documentation/api/combo-box/index-default#popupheight) and [popupWidth](https://ej2.syncfusion.com/documentation/api/combo-box/index-default#popupwidth) properties, respectively.
 
 In the following sample, popup list's width and height are configured.
 

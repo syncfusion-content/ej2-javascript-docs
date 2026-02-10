@@ -9,36 +9,40 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Uploader control
+# Getting started in ##Platform_Name## Uploader control
 
-This section explains how to create and configure the simple uploader component.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Uploader and demonstrate the basic usage of the Uploader control in a JavaScript application.
 
 ## Dependencies
 
-The following are the dependencies required to use the uploader component in your application:
+The list of dependencies required to use the Uploader component in your application is given below:
 
 ```js
 |-- @syncfusion/ej2-inputs
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-buttons
-
 ```
 
-## Set up of the development environment
+## Setup for local environment
 
-To get started with the uploader component, you have to clone the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [`quickstart`](https://github.com/syncfusion/ej2-quickstart.git) project and install the npm packages by using the following commands.
+Refer to the following steps to set up your local environment.
 
-```
-git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
-cd quickstart
-npm install
-```
+**Step 1:** Create a root folder named **my-app** for your application.
 
->The [project](https://github.com/syncfusion/ej2-quickstart.git) is preconfigured with common settings (`src/styles/styles.css`, `system.config.js` ) to start all the Essential<sup style="font-size:70%">&reg;</sup> JS 2 components.
+**Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
+
+**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Uploader control.
+
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
+
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Uploader control can be initialized by using either of the following ways.
+
+* Using local script and style.
+* Using CDN link for script and style.
 
 ## Initialize the uploader
 
-The uploader can be initialized through input tag. Add the HTML input element that needs to be initialized as a uploader in `index.html`.
+The uploader can be initialized through an input tag. Add an HTML input element to be initialized as an uploader in your `index.html` file.
 
 `[src/index.html]`
 
@@ -76,7 +80,7 @@ The uploader can be initialized through input tag. Add the HTML input element th
 > The [Custom Resource Generator (CRG)](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script and styles for a set of specific components.
 > This web tool is useful to combine the required component scripts and styles in a single file.
 
-Now, import the  uploader component to your `app.ts` and initialize it to the element `#fileupload` as follows.
+Now, import the uploader component in your `app.ts` file and initialize it with the `#uploader` element.
 
 `[src/app/app.ts]`
 
@@ -85,7 +89,7 @@ Now, import the  uploader component to your `app.ts` and initialize it to the el
 // initialize Uploader component
 var uploadObject = new ej.inputs.Uploader();
 // render initialized Uploader
-uploadObject.appendTo('#fileupload');
+uploadObject.appendTo('#uploader');
 
 ```
 
@@ -114,7 +118,7 @@ The following example illustrates the output in your browser.
 
 ## Adding drop area
 
-By default, the uploader component allows to upload files by drag the files from file explorer, and drop into the drop area.  You can configure any other external element as drop target using [dropArea](../api/uploader/#droparea) property.
+By default, the uploader component allows to upload files by drag the files from file explorer, and drop into the drop area.  You can configure any other external element as drop target using [dropArea](https://ej2.syncfusion.com/javascript/documentation/api/uploader/index-default#droparea) property.
 
 In the following sample, drop target is configured.
 
@@ -134,7 +138,7 @@ In the following sample, drop target is configured.
 
 ## Configure asynchronous settings
 
-The uploader component process the files to upload in Asynchronous mode by default. Define the properties [saveUrl](../api/uploader/asyncSettingsModel/#saveurl) and [removeUrl](../api/uploader/asyncSettingsModel/#removeurl) to handle the save and remove action as follows.
+The uploader component process the files to upload in Asynchronous mode by default. Define the properties [saveUrl](https://ej2.syncfusion.com/javascript/documentation/api/uploader/asyncsettingsmodel#saveurl) and [removeUrl](https://ej2.syncfusion.com/javascript/documentation/api/uploader/asyncsettingsmodel#removeurl) to handle the save and remove action as follows.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -152,7 +156,7 @@ The uploader component process the files to upload in Asynchronous mode by defau
 
 ## Handle success and failed upload
 
-You can handle the success and failure actions using the [success](../api/uploader/#success) and [failure](../api/uploader/#failure) &nbsp;events. To handle these event, define the function and assign it to corresponding event as follows.
+You can handle the success and failure actions using the [success](https://ej2.syncfusion.com/javascript/documentation/api/uploader/index-default#success) and [failure](https://ej2.syncfusion.com/javascript/documentation/api/uploader/index-default#failure) &nbsp;events. To handle these event, define the function and assign it to corresponding event as follows.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

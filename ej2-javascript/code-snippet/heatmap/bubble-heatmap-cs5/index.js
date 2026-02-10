@@ -1,10 +1,10 @@
-let heatmapData = [
+var heatmapData = [
     [0, 0, [4, 39]], [0, 1, [3, 8]], [0, 2, [1, 3]], [0, 3, [1, 10]], [0, 4, [4, 4]], [0, 5, [2, 15]],
     [1, 0, [4, 28]], [1, 1, [5, 92]], [1, 2, [5, 73]], [1, 3, [3, 1]], [1, 4, [3, 4]], [1, 5, [4, 126]],
     [2, 0, [4, 45]], [2, 1, [5, 152]], [2, 2, [0, 44]], [2, 3, [4, 54]], [2, 4, [5, 243]], [2, 5, [2, 45]]
 ];
 
-let heatmap = new ej.heatmap.HeatMap({
+var heatmap = new ej.heatmap.HeatMap({
     titleSettings: {
         text: 'Commercial Aviation Accidents and Fatalities by year 2012 - 2017',
         textStyle: {

@@ -6,7 +6,7 @@ var gauge = new ej.lineargauge.LinearGauge({
     }]
 }, '#element');
 
-document.getElementById('btn').onclick = () => {
+document.getElementById('btn').onclick = function() {
     gauge.refresh();
 };
 

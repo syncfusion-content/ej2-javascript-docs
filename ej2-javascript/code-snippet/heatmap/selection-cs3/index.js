@@ -46,7 +46,7 @@ var heatmap = new ej.heatmap.HeatMap({
 });
 heatmap.appendTo('#element');
 
-document.getElementById('selection').onclick = () => {
+document.getElementById('selection').onclick = function() {
     heatmap.clearSelection();
 };
 

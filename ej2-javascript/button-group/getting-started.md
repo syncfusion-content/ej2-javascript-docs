@@ -11,19 +11,19 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Button group control
 
-This section explains how to create a simple ButtonGroup, and configure its available functionalities by using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section explains how to create a simple Button Group and configure its available functionalities using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
-The following list of dependencies are required to use the ButtonGroup component in your application.
+The following dependencies are required to use the Button Group component in your application:
 
 ```js
 |-- @syncfusion/ej2-splitbuttons
 ```
 
-## Set up development environment
+## Setup development environment
 
 Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
@@ -61,7 +61,9 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-The ButtonGroup CSS files are available in the ej2-splitbuttons package folder. This can be referenced in the `~/src/styles/styles.css` file of your application by using the following code.
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -72,6 +74,8 @@ The ButtonGroup CSS files are available in the ej2-splitbuttons package folder. 
 
 {% endhighlight %}
 {% endtabs %}
+
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
 
 ## Add ButtonGroup to the project
 
@@ -115,7 +119,7 @@ Add the HTML div tag with class name as `e-btn-group` and the button elements th
 
 ## Run the application
 
-Run the application in the browser by using the following command.
+Run the application in the browser using the following command:
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}

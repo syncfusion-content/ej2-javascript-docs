@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Drop down list control | Syncfusion
+title: Getting started | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## Drop down list control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
@@ -24,6 +24,7 @@ The following list of dependencies are required to use the DropDownList componen
     |-- @syncfusion/ej2-inputs
     |-- @syncfusion/ej2-lists
     |-- @syncfusion/ej2-navigations
+    |-- @syncfusion/ej2-notifications
     |-- @syncfusion/ej2-popups
         |-- @syncfusion/ej2-buttons
 ```
@@ -128,7 +129,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components c
 
 **Step 1:** Create an app folder `my app` for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components.
 
-**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 component's global scripts and styles are already hosted in the below CDN link formats.
+**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 component's global scripts and styles are already hosted in the following CDN link formats.
 
 **Syntax:**
 > Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -154,7 +155,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components c
 
 ## Binding data source
 
-After initialization, populate the DropDownList with data using the [dataSource](../api/drop-down-list/#datasource) &nbsp;property. Here, an array of string values is passed to the DropDownList component.
+After initialization, populate the DropDownList with data using the [dataSource](../api/drop-down-list#datasource) &nbsp;property. Here, an array of string values is passed to the DropDownList component.
 
 ```html
 <!DOCTYPE html>
@@ -198,7 +199,7 @@ After initialization, populate the DropDownList with data using the [dataSource]
 
 By default, the width of the popup list automatically adjusts according to the DropDownList input element's width, and the height of the popup list has '300px'.
 
-The height and width of the popup list can also be customized using the [popupHeight](../api/drop-down-list/#popupheight) &nbsp;and [popupWidth](../api/drop-down-list/#popupwidth) properties respectively.
+The height and width of the popup list can also be customized using the [popupHeight](../api/drop-down-list#popupheight) &nbsp;and [popupWidth](../api/drop-down-list#popupwidth) properties respectively.
 
 In the following sample, popup list's width and height are configured.
 

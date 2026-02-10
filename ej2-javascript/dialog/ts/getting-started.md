@@ -63,7 +63,9 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render Dialog component, need to import Popups and its dependent components styles as given below in in the `~/src/styles/styles.css` file, as shown below: 
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -75,6 +77,8 @@ To render Dialog component, need to import Popups and its dependent components s
 
 {% endhighlight %}
 {% endtabs %}
+
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
 
 ## Adding Dialog to the project
 
@@ -142,8 +146,7 @@ dialog.appendTo('#dialog');
 
 ## Run the application
 
-The **Essential<sup style="font-size:70%">&reg;</sup> JS 2 quickstart** application project is configured to compile and run the application in browser.
-Use the following command to run the application.
+The **Essential<sup style="font-size:70%">&reg;</sup> JS 2 quickstart** application project is configured to compile and run the application in the browser. Use the following command to run the application:
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
@@ -164,7 +167,7 @@ npm start
           
 {% previewsample "page.domainurl/code-snippet/dialog/getting-started-cs2" %}
 
-> In the dialog control, If the dialog is rendered based on the body, then the dialog will get the height based on its body element height. If the height of the dialog is larger than the body height, then the dialog's height will not be set. For this scenario, we can set the CSS style for the html and body to get the dialog height.
+> If the dialog is rendered based on the body element, it gets the height based on the body's height. If the dialog height exceeds the body height, the dialog height will not be set. In this scenario, set the CSS height style for html and body elements:
 
 ```
 
@@ -176,9 +179,9 @@ html, body {
 
 ## Modal dialog
 
-A [modal](../api/dialog/#ismodal) shows an overlay behind the Dialog. So, the user should interact the Dialog compulsory before interacting with the remaining content in an application.
+A [modal](https://ej2.syncfusion.com/documentation/api/dialog/index-default#ismodal) dialog displays an overlay behind the dialog, requiring the user to interact with it before accessing other content in the application.
 
-While the user clicks the overlay, the action can be handled through the [`overlayClick`](../api/dialog/#overlayclick) event. In the below sample, the Dialog close action is performed while clicking on the overlay.
+When the user clicks the overlay, the action can be handled through the [`overlayClick`](https://ej2.syncfusion.com/documentation/api/dialog/index-default#overlayclick) event. In the sample below, the dialog closes when clicking the overlay.
 
 > When the modal dialog is opened, the Dialog's target scrolling will be disabled. The scrolling will be enabled again once close the Dialog.
 
@@ -195,7 +198,7 @@ While the user clicks the overlay, the action can be handled through the [`overl
 
 ## Enable header
 
-The Dialog header can be enabled by adding the header content as text or HTML content through the [`header`](../api/dialog/#header) property.
+The Dialog header can be enabled by adding the header content as text or HTML content through the [`header`](https://ej2.syncfusion.com/documentation/api/dialog/index-default#header) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -210,9 +213,9 @@ The Dialog header can be enabled by adding the header content as text or HTML co
 
 ## Configure action buttons
 
-The Dialog provides built-in support to render the action buttons on the footer (for ex: 'OK' or 'Cancel' buttons) by using [buttons](../api/dialog/#buttons) property. Each Dialog button allows the user to perform any action while clicking on it.
+The Dialog provides built-in support to render the action buttons on the footer (for ex: 'OK' or 'Cancel' buttons) by using [buttons](https://ej2.syncfusion.com/documentation/api/dialog/index-default#buttons) property. Each Dialog button allows the user to perform any action while clicking on it.
 
-The primary button will be focused automatically on open the Dialog, and add the [click](../api/dialog/buttonPropsModel/#click) event to handle the actions
+The primary button will be focused automatically on open the Dialog, and add the [click](https://ej2.syncfusion.com/documentation/api/dialog/buttonpropsmodel#click) event to handle the actions
 
 > When the Dialog initialize with more than one primary buttons, the first primary button gets focus on open the Dialog.
 
@@ -231,7 +234,7 @@ The below sample render with buttons and its action.
 
 ## Draggable
 
-The Dialog supports to [drag](../api/dialog/#allowdragging) within its target container by grabbing the Dialog header, which allows the user to reposition the Dialog dynamically.
+The Dialog supports to [drag](https://ej2.syncfusion.com/documentation/api/dialog/index-default#allowdragging) within its target container by grabbing the Dialog header, which allows the user to reposition the Dialog dynamically.
 
 > The Dialog can be draggable only when the Dialog header is enabled. From `16.2.x` version, enabled draggable support for modal dialog also.
 
@@ -248,7 +251,7 @@ The Dialog supports to [drag](../api/dialog/#allowdragging) within its target co
 
 ## Positioning
 
-The Dialog can be positioned using the [position](../api/dialog/#position) property by providing the X and Y co-ordinates. It can be positioned inside the target of the container or `<body>` of the element based on the given X and Y values.
+The Dialog can be positioned using the [position](https://ej2.syncfusion.com/documentation/api/dialog/index-default#position) property by providing the X and Y co-ordinates. It can be positioned inside the target of the container or `<body>` of the element based on the given X and Y values.
 
 for X is: left, center, right (or) any offset value
 for Y is: top, center, bottom (or) any offset value
@@ -272,4 +275,4 @@ The below example demonstrates the different Dialog positions.
 * [How to position the dialog on center of the page on scrolling](./how-to/position-the-dialog-on-center-of-the-page-on-scrolling)
 * [Prevent closing of modal dialog](./how-to/prevent-closing-of-modal-dialog)
 * [Close dialog while click on outside of dialog](./how-to/close-dialog-while-click-on-outside-of-dialog)
-* [How to make a reusable alert and confirm dialog](./dialog-utility/)
+* [How to make a reusable alert and confirm dialog](./dialog-utility)

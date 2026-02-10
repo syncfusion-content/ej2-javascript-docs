@@ -9,13 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Rating control
+# Getting started in ##Platform_Name## Rating control
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Rating and demonstrate the basic usage of the Rating control in a JavaScript application.
 
 ## Dependencies
 
-The list of dependencies required to use the Rating control in your application is given as follows:
+The list of dependencies required to use the Rating component in your application is given below:
 
 ```js
 |-- @syncfusion/ej2-inputs
@@ -23,12 +23,22 @@ The list of dependencies required to use the Rating control in your application 
     |-- @syncfusion/ej2-popups
 ```
 
-## Control Initialization
+## Setup for local environment
 
-The JavaScript (ES5) Rating control can be initialized by using either of the following ways.
+Refer to the following steps to set up your local environment.
 
-* Using local script and style references in a HTML page.
-* Using CDN link for script and style reference.
+**Step 1:** Create a root folder named **my-app** for your application.
+
+**Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
+
+**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Rating control.
+
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
+
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Rating control can be initialized by using either of the following ways.
+
+* Using local script and style.
+* Using CDN link for script and style.
 
 ### Using local script and style references in a HTML page
 
@@ -91,7 +101,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
   </html>
 ```
 
-**Step 5:** Now, add the `Rating` element and initiate the `JavaScript (ES5) Rating` control in the `index.html` by using following code
+**Step 5:** Now, add the `Rating` element and initialize the `JavaScript (ES5) Rating` control in the `index.html` as shown below
 
 `[src/index.html]`
 
@@ -162,11 +172,11 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
         
 {% previewsample "page.domainurl/code-snippet/rating/es5-getting-started-cs1" %}
 
-**Step 4:** Now, run the `index.html` in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Rating** control.
+**Step 4:** Run the `index.html` in a web browser to render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Rating** control.
 
 ## Value
 
-You can set the rating value by using the [`value`](../api/rating/#value) property.
+You can set the rating value by using the [`value`](https://ej2.syncfusion.com/javascript/documentation/api/rating/index-default#value) property.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

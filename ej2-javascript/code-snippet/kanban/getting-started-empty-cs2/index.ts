@@ -2,7 +2,7 @@
 
 import { Kanban } from '@syncfusion/ej2-kanban';
 
-let kanbanObj: Kanban = new Kanban({
+const kanbanObj: Kanban = new Kanban({
     columns: [
         { headerText: 'Backlog', keyField: 'Open' },
         { headerText: 'In Progress', keyField: 'InProgress' },

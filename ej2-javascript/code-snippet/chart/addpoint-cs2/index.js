@@ -21,7 +21,7 @@ var piechart = new ej.charts.AccumulationChart({
 }, '#element');
 
 document.getElementById('add').onclick = function () {
-  const newData = [
+  var newData = [
     { x: 'Jan', y: 3 },
     { x: 'Feb', y: 3.5 },
     { x: 'Mar', y: 7 },

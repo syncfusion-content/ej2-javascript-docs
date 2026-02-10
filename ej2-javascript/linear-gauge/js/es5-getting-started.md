@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Linear gauge control | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Linear gauge control of Syncfusion Essential JS 2 and more details.
+title: Es5 getting started with ##Platform_Name## Linear Gauge | Syncfusion
+description:  Checkout and learn about Es5 getting started with ##Platform_Name## Linear Gauge Component of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
 publishingplatform: ##Platform_Name##
@@ -9,22 +9,22 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Linear gauge control
+# Getting started with ##Platform_Name## Linear Gauge Component
 
-This section explains you the steps to create a simple Linear Gauge and demonstrates the basic usage of the Linear Gauge component.
+This section walks you through the steps to create a simple Linear Gauge and demonstrates the basic usage of the Linear Gauge component. By the end of this guide, you will have a functioning Linear Gauge with custom axes, pointers, and labels.
 
 ## Control Initialization
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using either of the following ways.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using either of the following approaches:
 
-* Using local script references in a HTML page.
-* Using CDN link for script reference.
+* Using local script references in an HTML page.
+* Using a CDN link for script reference.
 
-### Using local script references in a HTML page
+### Using local script references in an HTML page
 
-**Step 1:** Create an app folder **quickstart** for getting started.
+**Step 1:** Create an app folder named **quickstart** for your project.
 
-**Step 2:** You can get the global scripts from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+**Step 2:** Obtain the global scripts from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
 **Syntax:**
 > Dependency Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\dist\global\{DEPENDENCY_PACKAGE_NAME}.min.js`
@@ -32,19 +32,19 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can
 > Control Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
 
 **Example:**
-> Dependency Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\20.1.0.58\Web (Essential JS 2)\JavaScript\ej2-base\dist\global\ej2-base.min.js`
+> Dependency Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\32.1.19\Web (Essential JS 2)\JavaScript\ej2-base\dist\global\ej2-base.min.js`
 >
-> Control Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\20.1.0.58\Web (Essential JS 2)\JavaScript\ej2-lineargauge\dist\global\ej2-lineargauge.min.js`
+> Control Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\32.1.19\Web (Essential JS 2)\JavaScript\ej2-lineargauge\dist\global\ej2-lineargauge.min.js`
 
-The below located script file contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file.
+Alternatively, you can reference the comprehensive script file that contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file:
 
 > Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
 
-The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script for a set of specific controls. This web tool is used to combine the required control scripts in a single file.
+For optimized bundles containing only your required controls, use the [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/), an online web tool that generates custom scripts for specific Syncfusion controls.
 
-**Step 3:** Create a folder **~/quickstart/resources** and copy/paste the global scripts from the above installed location to **~/quickstart/resources/package** corresponding package location.
+**Step 3:** Create a folder **~/quickstart/resources** and copy the global scripts from the installed location into **~/quickstart/resources/package** directories that match their corresponding package names.
 
-**Step 4:** Create a HTML page (index.html) in **~/quickstart/index.html** and add the Essential<sup style="font-size:70%">&reg;</sup> JS 2 script references.
+**Step 4:** Create an HTML page (**index.html**) in **~/quickstart/index.html** and add the Essential<sup style="font-size:70%">&reg;</sup> JS 2 script references.
 
 ```html
 <!DOCTYPE html>
@@ -62,7 +62,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 </html>
 ```
 
-**Step 5:** Initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) LinearGauge** component in the **~/quickstart/index.html** by using the following code.
+**Step 5:** Initialize the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) LinearGauge** component in the **~/quickstart/index.html** file using the following code.
 
 ```html
 <!DOCTYPE html>
@@ -88,19 +88,19 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 </html>
 ```
 
-**Step 6:** Run the **index.html** in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Lineargauge** control.
+**Step 6:** Run the **index.html** file in a web browser. The page will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Linear Gauge** control.
 
 ### Using CDN link for script reference
 
-**Step 1:** Create an app folder **quickstart** for getting started.
+**Step 1:** Create an app folder named **quickstart** for your project.
 
-**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls' global scripts are already hosted in the below CDN link formats.
+**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls' global scripts are already hosted in the CDN. You can reference them using either a common bundled script or individual control scripts.
 
 **Common Control Script:**
 > Syntax: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/dist/ej2.min.js`
 
 **Example:**
-> Script: [`https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js)
+> Script: [`https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js`](https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js)
 
 **or**
 
@@ -110,17 +110,17 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 >`http://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 
 **Example:**
-> Linear Gauge Script: [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-lineargauge/dist/global/ej2-lineargauge.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-lineargauge/dist/global/ej2-lineargauge.min.js)
+> Linear Gauge Script: [`https://cdn.syncfusion.com/ej2/32.1.19/ej2-lineargauge/dist/global/ej2-lineargauge.min.js`](https://cdn.syncfusion.com/ej2/32.1.19/ej2-lineargauge/dist/global/ej2-lineargauge.min.js)
 >
 >Dependency Scripts
 >
-> [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/dist/global/ej2-base.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/dist/global/ej2-base.min.js)
+> [`https://cdn.syncfusion.com/ej2/32.1.19/ej2-base/dist/global/ej2-base.min.js`](https://cdn.syncfusion.com/ej2/32.1.19/ej2-base/dist/global/ej2-base.min.js)
 >
-> [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-svg-base/dist/global/ej2-svg-base.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-svg-base/dist/global/ej2-svg-base.min.js)
+> [`https://cdn.syncfusion.com/ej2/32.1.19/ej2-svg-base/dist/global/ej2-svg-base.min.js`](https://cdn.syncfusion.com/ej2/32.1.19/ej2-svg-base/dist/global/ej2-svg-base.min.js)
 >
-> [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-pdf-export/dist/global/ej2-pdf-export.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-pdf-export/dist/global/ej2-pdf-export.min.js)
+> [`https://cdn.syncfusion.com/ej2/32.1.19/ej2-pdf-export/dist/global/ej2-pdf-export.min.js`](https://cdn.syncfusion.com/ej2/32.1.19/ej2-pdf-export/dist/global/ej2-pdf-export.min.js)
 
-Create a HTML page *(**index.html**) in **~/quickstart** location and add the CDN link references. Now, initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) Linear Gauge** control in the **index.html** by using following code.
+Create an HTML page (**index.html**) in the **~/quickstart** location and add the CDN link references. Then, initialize the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) Linear Gauge** control in the **index.html** file using the following code.
 
 ```html
 <!DOCTYPE html>
@@ -145,11 +145,11 @@ Create a HTML page *(**index.html**) in **~/quickstart** location and add the CD
 </html>
 ```
 
-> Please replace {RELEASE_VERSION} with the latest version number in the script file referred to in the sample.
+> Replace {RELEASE_VERSION} with the latest version number in the script file references.
 
-**Step 3:** Now, run the **index.html** in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Linear Gauge** control.
+**Step 3:** Open the **index.html** file in a web browser. The page will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Linear Gauge** control.
 
-The below example shows a basic Linear Gauge control.
+The following example demonstrates a basic Linear Gauge Component.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -164,7 +164,7 @@ The below example shows a basic Linear Gauge control.
 
 ## Adding the Linear Gauge Title
 
-The title can be added to the Linear Gauge component using the [`title`](../api/linear-gauge/linearGaugeModel/#title) property in the Linear Gauge.
+Add a title to the Linear Gauge component using the [`title`](../api/linear-gauge/linearGaugeModel#title) property.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -179,7 +179,7 @@ The title can be added to the Linear Gauge component using the [`title`](../api/
 
 ## Setting the start and end of the axis line
 
-The range of the axis can be set using the [`minimum`](../api/linear-gauge/axis/#minimum) and [`maximum`](../api/linear-gauge/axis/#maximum) properties in the Linear Gauge.
+Define the range of the axis using the [`minimum`](../api/linear-gauge/axis#minimum) and [`maximum`](../api/linear-gauge/axis#maximum) properties.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -192,9 +192,7 @@ The range of the axis can be set using the [`minimum`](../api/linear-gauge/axis/
         
 {% previewsample "page.domainurl/code-snippet/linear-gauge/es5-getting-started-cs3" %}
 
-To denote the axis values with temperature units, add the °C as suffix to each label. This can be achieved by setting the **{value}°C** to the [`format`](../api/linear-gauge/labelModel/#format) property in the [`labelStyle`](../api/linear-gauge/axis/#labelstyle) object of the axis. Here, **{value}** acts as a placeholder for each axis label.
-
-To change the pointer value from the default value of the gauge, set the [`value`](../api/linear-gauge/pointer/#value) property in [`pointers`](../api/linear-gauge/pointerModel/) object of the axis.
+To add units like °C to axis labels, set the [`format`](../api/linear-gauge/labelModel#format) property in the [`labelStyle`](../api/linear-gauge/axis#labelstyle) object of the axis to **{value}°C**. The **{value}** placeholder is replaced with each axis label. To customize the pointer position, set the [`value`](../api/linear-gauge/pointer#value) property in the [`pointers`](../api/linear-gauge/pointerModel) array of the axis.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -209,7 +207,7 @@ To change the pointer value from the default value of the gauge, set the [`value
 
 ## Setting the value of the pointer
 
-The pointer value is changed in the below sample using the [`value`](../api/linear-gauge/pointer/#value) property in [`pointers`](../api/linear-gauge/pointer) object of the axis.
+Modify the pointer value using the [`value`](../api/linear-gauge/pointer#value) property in the [`pointers`](../api/linear-gauge/pointer) array of the axis.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Markdown Editor control | Syncfusion
+title: Getting started with ##Platform_Name## Markdown Editor | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Markdown Editor control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
@@ -56,13 +56,13 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 **Syntax:**
 > Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/material.css`
+> Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/tailwind3.css`
 
 **Example:**
 
 > Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-richtexteditor/dist/global/ej2-richtexteditor.min.js`
 >
-> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-richtexteditor/styles/material.css`
+> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-richtexteditor/styles/tailwind3.css`
 
 **3. Copy Files to Resources Folder:** Create a folder `my-app/resources` and copy/paste the global scripts and styles from the above installed location to `my-app/resources` location.
 
@@ -79,17 +79,17 @@ This setup includes only the necessary scripts and styles required to render the
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2 Markdown Editor</title>
-            <!-- Essential JS 2 Markdown Editor's dependent material theme -->
-            <link href="resources/base/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/buttons/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/inputs/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/lists/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/navigations/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/popups/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/splitbuttons/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="resources/filemanager/styles/material.css" rel="stylesheet" />
-            <!-- Essential JS 2 Markdown Editor's material theme -->
-            <link href="resources/richtexteditor/material.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 Markdown Editor's dependent tailwind3 theme -->
+            <link href="resources/base/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/buttons/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/inputs/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/lists/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/navigations/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/popups/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/splitbuttons/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="resources/filemanager/styles/tailwind3.css" rel="stylesheet" />
+            <!-- Essential JS 2 Markdown Editor's tailwind3 theme -->
+            <link href="resources/richtexteditor/tailwind3.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential JS 2 Markdown Editor's dependent script -->
             <script src="resources/ej2-base.min.js" type="text/javascript"></script>
@@ -117,8 +117,8 @@ This setup includes all possible dependencies for Syncfusion controls in a singl
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2 Markdown Editor</title>
-            <!-- Essential JS 2 material theme -->
-            <link href="resources/material.css" rel="stylesheet" type="text/css" />
+            <!-- Essential JS 2 tailwind3 theme -->
+            <link href="resources/tailwind3.css" rel="stylesheet" type="text/css" />
             <!-- Essential JS 2 script -->
             <script src="resources/ej2.min.js" type="text/javascript"></script>
        </head>
@@ -136,12 +136,12 @@ Refer the Rich Text Editor’s CDN links as belows.
 **Syntax:**
 > Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Styles: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material.css`
+> Styles: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/tailwind3.css`
 
 **Example:**
 > Script: [`http://cdn.syncfusion.com/ej2/ej2-richtexteditor/dist/global/ej2-richtexteditor.min.js`](http://cdn.syncfusion.com/ej2/ej2-richtexteditor/dist/global/ej2-richtexteditor.min.js)
 >
-> Styles: [`http://cdn.syncfusion.com/ej2/ej2-richtexteditor/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-richtexteditor/styles/material.css)
+> Styles: [`http://cdn.syncfusion.com/ej2/ej2-richtexteditor/styles/tailwind3.css`](http://cdn.syncfusion.com/ej2/ej2-richtexteditor/styles/tailwind3.css)
 
 Here’s an example of referencing the Rich Text Editor’s scripts and styles in an HTML file using CDN links:
 
@@ -154,17 +154,17 @@ This setup includes only the necessary scripts and styles required to render the
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2 Markdown Editor</title>
-            <!-- Essential JS 2 Rich Text Editor's dependent material theme -->
-            <link href="http://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-inputs/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-lists/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-popups/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-splitbuttons/styles/material.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-filemanager/styles/material.css" rel="stylesheet" type="text/css" />
-            <!-- Essential JS 2 Rich Text Editor's global material theme -->
-            <link href="http://cdn.syncfusion.com/ej2/ej2-richtexteditor/styles/material.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 Rich Text Editor's dependent tailwind3 theme -->
+            <link href="http://cdn.syncfusion.com/ej2/ej2-base/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/ej2-buttons/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/ej2-inputs/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/ej2-lists/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/ej2-navigations/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/ej2-popups/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/ej2-splitbuttons/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="http://cdn.syncfusion.com/ej2/ej2-filemanager/styles/tailwind3.css" rel="stylesheet" type="text/css" />
+            <!-- Essential JS 2 Rich Text Editor's global tailwind3 theme -->
+            <link href="http://cdn.syncfusion.com/ej2/ej2-richtexteditor/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential JS 2 Rich Text Editor's dependent script -->
             <script src="http://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
@@ -193,8 +193,8 @@ This setup includes all possible dependencies for Syncfusion controls in a singl
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2 Markdown Editor</title>
-            <!-- Essential JS 2 material theme -->
-            <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet" type="text/css" />
+            <!-- Essential JS 2 tailwind3 theme -->
+            <link href="https://cdn.syncfusion.com/ej2/tailwind3.css" rel="stylesheet" type="text/css" />
             <!-- Essential JS 2 all script -->
             <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
        </head>
@@ -217,8 +217,8 @@ Markdown Editor can be initialized on div element as shown below:
 <html lang="en">
 <head>
     <title>Essential JS 2 Markdown Editor</title>
-      <!-- Essential JS 2 material theme -->
-      <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet" type="text/css" />
+      <!-- Essential JS 2 tailwind3 theme -->
+      <link href="https://cdn.syncfusion.com/ej2/tailwind3.css" rel="stylesheet" type="text/css" />
       <!-- Essential JS 2 all script -->
       <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
 </head>
@@ -239,7 +239,6 @@ Place the following Markdown Editor code in the `index.js` file.
 // initialize Markdown Editor control
 var editor = new ej.richtexteditor.RichTextEditor({
      editorMode: 'Markdown',
-     value: 'In Rich Text Editor, you click the toolbar buttons to format the words and the changes are visible immediately. Markdown is not like that. When you format the word in Markdown format, you need to add Markdown syntax to the word to indicate which words and phrases should look different from each other. Rich Text Editor supports markdown editing when the editorMode set as **markdown** and using both *keyboard interaction* and *toolbar action*, you can apply the formatting to text. You can add our own custom formation syntax for the Markdown formation, [sample link](https://ej2.syncfusion.com/home/). The third-party library <b>Marked</b> is used in this sample to convert markdown into HTML content.'
 });
 
 // render initialized Markdown Editor
@@ -262,16 +261,23 @@ Output will be displayed as follows
 
 ## Configure the Toolbar
 
-Configure the toolbar with the tools using items field of the [toolbarSettings](../api/rich-text-editor/toolbarSettings/#toolbarsettings) property as your application requires.
+Configure the toolbar with the tools using items field of the [toolbarSettings](../api/rich-text-editor/toolbarSettings#toolbarsettings) property as your application requires.
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/markdown-editor/getting-started-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/markdown-editor/getting-started-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
+`[src/index.js]`
+
+```javascript
+var editor = new ej.richtexteditor.RichTextEditor({
+    editorMode: 'Markdown',
+    toolbarSettings: {
+        items: ['Bold', 'Italic', 'StrikeThrough', 'InlineCode', 'SuperScript', 'SubScript', '|', 
+            'Formats', 'Blockquote', '|', 'OrderedList', 'UnorderedList', 'CreateLink', 'Image', 'CreateTable', '|', 
+            'Undo', 'Redo']
+    },
+    value: 'In Rich Text Editor, you click the toolbar buttons to format the words and the changes are visible immediately. Markdown is not like that. When you format the word in Markdown format, you need to add Markdown syntax to the word to indicate which words and phrases should look different from each other. Rich Text Editor supports markdown editing when the editorMode set as **markdown** and using both *keyboard interaction* and *toolbar action*, you can apply the formatting to text. You can add our own custom formation syntax for the Markdown formation. The third-party library <b>Marked</b> is used in this sample to convert markdown into HTML content.'
+});
+
+editor.appendTo("#editor");
+```
 
 > `|` and `-` can insert a vertical and horizontal separator lines in the toolbar.
 
@@ -299,8 +305,8 @@ Output will be displayed as follows.
 * [How to change the editor type](./editor-modes)
 * [How to render the iframe](./iframe)
 * [How to render the toolbar in inline mode](./inline-mode)
-* [How to insert Emoticons](https://ej2.syncfusion.com/javascript/demos/#/material/rich-text-editor/insert-emoticons)
-* [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/javascript/demos/#/material/rich-text-editor/blog-posting)
+* [How to insert Emoticons](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/rich-text-editor/insert-emoticons)
+* [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/rich-text-editor/blog-posting)
 * [Accessibility in Rich text editor](https://ej2.syncfusion.com/javascript/documentation/rich-text-editor/accessibility)
 * [Keyboard support in Rich text editor](https://ej2.syncfusion.com/javascript/documentation/rich-text-editor/keyboard-support)
 * [Globalization in Rich text editor](https://ej2.syncfusion.com/javascript/documentation/rich-text-editor/globalization)

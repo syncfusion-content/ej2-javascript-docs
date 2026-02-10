@@ -15,6 +15,8 @@ domainurl: ##DomainURL##
 
 Stock Events visualizes stock events in stock chart. 'SplineSeries' is used to represent selected data value. You can customize the specific data value using `stockEvents` event.
 
+{% if page.publishingplatform == "typescript" %}
+
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/stock-chart/getting-started-cs25/index.ts %}
@@ -26,9 +28,25 @@ Stock Events visualizes stock events in stock chart. 'SplineSeries' is used to r
           
 {% previewsample "page.domainurl/code-snippet/stock-chart/getting-started-cs25" %}
 
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.js" %}
+{% include code-snippet/stock-chart/getting-started-cs25/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/stock-chart/getting-started-cs25/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/stock-chart/getting-started-cs25" %}
+
+
 **Stock Events for individual series**
 
 By default, stock events will be showed for all series. Now, you can set the stock events for particular series using `seriesIndexes` property.
+
+{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -39,6 +57,19 @@ By default, stock events will be showed for all series. Now, you can set the sto
 {% endhighlight %}
 {% endtabs %}
           
+{% previewsample "page.domainurl/code-snippet/stock-chart/getting-started-cs26" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.js" %}
+{% include code-snippet/stock-chart/getting-started-cs26/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/stock-chart/getting-started-cs26/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
 {% previewsample "page.domainurl/code-snippet/stock-chart/getting-started-cs26" %}
 
 ## See Also

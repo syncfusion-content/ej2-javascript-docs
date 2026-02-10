@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Maskedtextbox control
+# Getting started in ##Platform_Name## MaskedTextBox control
 
 This section explains how to create a simple MaskedTextBox component and configure its available functionalities in TypeScript, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
@@ -63,7 +63,9 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render MaskedTextBox component, need to import inputs and its dependent components styles as given below in the `~/src/styles/styles.css` file, as shown below:  
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -76,6 +78,8 @@ To render MaskedTextBox component, need to import inputs and its dependent compo
 
 {% endhighlight %}
 {% endtabs %}
+
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
 
 ## Add MaskedTextBox to the project
 
@@ -112,7 +116,7 @@ Add the HTML input element that needs to be rendered as MaskedTextBox in the `in
 {% endhighlight %}
 {% endtabs %}
 
-Import the MaskedTextBox component into your `app.ts` and append it to the element `#mask` as shown in the following.
+Import the MaskedTextBox component into your `app.ts` file and append it to the `#mask` element as shown in the following.
 
 `[src/app/app.ts]`
 
@@ -131,9 +135,9 @@ mask.appendTo('#mask');
 
 ## Set the mask
 
-You can set the mask to the MaskedTextBox to validate the user input by using the [`mask`](../api/maskedtextbox/#mask) property. To know more about the usage of mask and configuration, refer to this [link](./mask-configuration/).
+You can set the mask to the MaskedTextBox to validate the user input by using the [`mask`](https://ej2.syncfusion.com/documentation/api/maskedtextbox/index-default#mask) property. To know more about the usage of mask and configuration, refer to this [link](https://ej2.syncfusion.com/documentation/maskedtextbox/mask-configuration).
 
-The following example demonstrates the usage of mask element `0` that allows any single digit from `0` to `9`.
+The following example demonstrates the usage of mask element `0`, which allows any single digit from `0` to `9`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -153,7 +157,7 @@ mask.appendTo('#mask');
 
 ## Run the application
 
-Use the `npm run start` command to run the application in the browser.
+Use the following command to run the application in the browser.
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
@@ -163,7 +167,7 @@ npm run start
 {% endhighlight %}
 {% endtabs %}
 
-The following example shows the MaskedTextBox with the mask element `0`.
+The following example demonstrates the MaskedTextBox with the mask element `0`.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -181,7 +185,7 @@ The following example shows the MaskedTextBox with the mask element `0`.
 
 ## See Also
 
-* [How to perform custom validation using FormValidator](./how-to/perform-custom-validation-using-form-validator/)
-* [How to customize the UI appearance of the control](./how-to/customize-the-ui-appearance-of-the-control/)
-* [How to set cursor position while focus on the input textbox](./how-to/set-cursor-position-while-focus-on-the-input-textbox/)
-* [How to display numeric keypad when focus on mobile devices](./how-to/display-numeric-keypad-when-focus-on-mobile-devices/)
+* [How to perform custom validation using FormValidator](https://ej2.syncfusion.com/documentation/maskedtextbox/how-to/perform-custom-validation-using-form-validator)
+* [How to customize the UI appearance of the control](https://ej2.syncfusion.com/documentation/maskedtextbox/how-to/customize-the-ui-appearance-of-the-control)
+* [How to set cursor position while focus on the input textbox](https://ej2.syncfusion.com/documentation/maskedtextbox/how-to/set-cursor-position-while-focus-on-the-input-textbox)
+* [How to display numeric keypad when focus on mobile devices](https://ej2.syncfusion.com/documentation/maskedtextbox/how-to/display-numeric-keypad-when-focus-on-mobile-devices)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Numerictextbox control | Syncfusion
+title: Getting started | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## Numerictextbox control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
@@ -9,34 +9,32 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Numerictextbox control
+# Getting started in ##Platform_Name## NumericTextBox control
 
-The following section explains the required steps to build the NumericTextBox component with its basic usage in step by step procedure.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Numeric textbox and demonstrate the basic usage of the Numeric textbox control in a JavaScript application.
 
 ## Dependencies
 
-The following list of dependencies are required to use the NumericTextBox component in your application.
+The list of dependencies required to use the Numeric textbox component in your application is given below:
 
-```javascript
+```js
 |-- @syncfusion/ej2-inputs
     |-- @syncfusion/ej2-base
 ```
 
-## Set up your development environment
+## Setup for local environment
 
-To get you started with the NumericTextBox component, you can clone the [Essential<sup style="font-size:70%">&reg;</sup> JS 2 QuickStart](https://github.com/syncfusion/ej2-quickstart.git) project and install the packages by using the following commands.
+Refer to the following steps to set up your local environment.
 
-```
-git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
-cd quickstart
-npm install
-```
+**Step 1:** Create a root folder named **my-app** for your application.
 
-> The [project](https://github.com/syncfusion/ej2-quickstart.git) is preconfigured with common settings (`src/styles/styles.css`, `system.config.js` ) to start with all Essential<sup style="font-size:70%">&reg;</sup> JS 2 components.
+**Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
+
+**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Numeric textbox control.
 
 ## Add NumericTextBox to the project
 
-Add the HTML input element for the NumericTextBox into your `index.html`.
+Add an HTML input element for the NumericTextBox in your `index.html` file.
 
 `[src/index.html]`
 
@@ -88,7 +86,7 @@ Now use the `npm run start` command to run the application in the browser.
 npm run start
 ```
 
-The below example shows the NumericTextBox.
+The following example demonstrates the NumericTextBox.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -100,11 +98,11 @@ The below example shows the NumericTextBox.
 
 ## Range validation
 
-You can set the minimum and maximum range of values in the NumericTextBox using the [`min`](../api/numerictextbox/#min) and [`max`](../api/numerictextbox/#max) properties, so the numeric value should be in the min and max range.
+You can set the minimum and maximum range of values in the NumericTextBox using the [`min`](https://ej2.syncfusion.com/javascript/documentation/api/numerictextbox/index-default#min) and [`max`](https://ej2.syncfusion.com/javascript/documentation/api/numerictextbox/index-default#max) properties. The numeric value must fall within the specified range.
 
-The validation behavior depends on the [`strictMode`](../api/numerictextbox/#strictmode) property.
+The validation behavior depends on the [`strictMode`](https://ej2.syncfusion.com/javascript/documentation/api/numerictextbox/index-default#strictmode) property.
 
-The below example demonstrates range validation.
+The following example demonstrates range validation.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -116,9 +114,9 @@ The below example demonstrates range validation.
 
 ## Formatting the value
 
-User can set the format of the NumericTextBox component using [`format`](../api/numerictextbox/#format) property. The value will be displayed in the specified format, when the component is in focused out state. For more information about formatting the value, refer to this [link](./formats/).
+User can set the format of the NumericTextBox component using [`format`](https://ej2.syncfusion.com/javascript/documentation/api/numerictextbox/index-default#format) property. The value will be displayed in the specified format, when the component is in focused out state. For more information about formatting the value, refer to this [link](https://ej2.syncfusion.com/javascript/documentation/numerictextbox/formats).
 
-The below example demonstrates format the value by using currency format value `c2`.
+The following example demonstrates formatting the value using currency format `c2`.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -130,7 +128,7 @@ The below example demonstrates format the value by using currency format value `
 
 ## Precision of numbers
 
-You can restrict the number of decimals to be entered in the NumericTextBox by using the [`decimals`](../api/numerictextbox/#decimals) and [`validateDecimalOnType`](../api/numerictextbox/#validatedecimalontype) properties. So, you can't enter the number whose precision is greater than the mentioned decimals.
+You can restrict the number of decimals to be entered in the NumericTextBox using the [`decimals`](https://ej2.syncfusion.com/javascript/documentation/api/numerictextbox/index-default#decimals) and [`validateDecimalOnType`](https://ej2.syncfusion.com/javascript/documentation/api/numerictextbox/index-default#validatedecimalontype) properties. You cannot enter numbers with precision greater than the specified decimal places.
 
 * If `validateDecimalOnType` is false, number of decimals will not be restricted. Else, number of decimals will be restricted while typing in the NumericTextBox.
 
@@ -144,9 +142,9 @@ You can restrict the number of decimals to be entered in the NumericTextBox by u
 
 ## See Also
 
-* [How to perform custom validation using FormValidator](./how-to/perform-custom-validation-using-form-validator/)
-* [How to customize the UI appearance of the control](./how-to/customize-the-ui-appearance-of-the-control/)
-* [How to customize the spin button’s up and down arrow](./how-to/customize-the-spin-buttons-up-and-down-arrow/)
-* [How to customize the step value and hide spin buttons](./how-to/customize-the-step-value-and-hide-spin-buttons/)
-* [How to prevent nullable input in NumericTextBox](./how-to/prevent-nullable-input-in-numerictextbox/)
-* [How to maintain trailing zeros in NumericTextBox](./how-to/maintain-trailing-zeros-in-numerictextbox/)
+* [How to perform custom validation using FormValidator](https://ej2.syncfusion.com/javascript/documentation/numerictextbox/how-to/perform-custom-validation-using-form-validator)
+* [How to customize the UI appearance of the control](https://ej2.syncfusion.com/javascript/documentation/numerictextbox/how-to/customize-the-ui-appearance-of-the-control)
+* [How to customize the spin button’s up and down arrow](https://ej2.syncfusion.com/javascript/documentation/numerictextbox/how-to/customize-the-spin-buttons-up-and-down-arrow)
+* [How to customize the step value and hide spin buttons](https://ej2.syncfusion.com/javascript/documentation/numerictextbox/how-to/customize-the-step-value-and-hide-spin-buttons)
+* [How to prevent nullable input in NumericTextBox](https://ej2.syncfusion.com/javascript/documentation/numerictextbox/how-to/prevent-nullable-input-in-numerictextbox)
+* [How to maintain trailing zeros in NumericTextBox](https://ej2.syncfusion.com/javascript/documentation/numerictextbox/how-to/maintain-trailing-zeros-in-numerictextbox)

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Barcode control | Syncfusion®
-description:  Checkout and learn about Getting started with ##Platform_Name## Barcode control of Syncfusion Essential® JS 2 and more details.
+title: Getting started with ##Platform_Name## Barcode Control | Syncfusion®
+description:  Checkout and learn about Getting started with ##Platform_Name## Barcode Control of Syncfusion Essential® JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Barcode control
+# Getting started in ##Platform_Name## Barcode Control
 
 This section explains the steps used to create a simple Barcode and demonstrates the basic usage of the barcode component using Essential® JS 2
 [quickstart](https://github.com/syncfusion/ej2-quickstart.git) seed repository. This seed repository is pre-configured with the Essential® JS 2 package.
@@ -79,7 +79,7 @@ Combined CSS files are available in the Essential® JS 2 package root folder. Th
 @import '../../node_modules/@syncfusion/ej2/material.css';
 ```
 
-> To know about individual component CSS, please refer to [Individual Component theme files](https://ej2.syncfusion.com/javascript/documentation/appearance/theme-studio/#filtering-a-specific-list-of-controls) section.
+> To know about individual component CSS, please refer to [Individual Component theme files](https://ej2.syncfusion.com/javascript/documentation/appearance/theme-studio#filtering-a-specific-list-of-controls) section.
 
 ## Adding Barcode Generator control
 

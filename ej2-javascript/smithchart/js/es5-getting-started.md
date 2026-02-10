@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Smithchart control | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Smithchart control of Syncfusion Essential JS 2 and more details.
+title: ES5 getting started with ##Platform_Name## Smith Chart | Syncfusion
+description:  Checkout and learn about ES5 getting started with ##Platform_Name## Smithchart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Es5 getting started 
+control: ES5 getting started 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Smithchart control
+# ES5 getting started in ##Platform_Name## Smithchart control
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5-formatted pure JavaScript framework that runs directly in modern web browsers.
 
 ## Dependencies
 
@@ -27,11 +27,11 @@ Below is the list of minimum dependencies required to use the Smith Chart.
     |-- @syncfusion/ej2-file-utils
 ```
 
-## Control Initialization
+## Control initialization
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using either of the following ways.
+The Syncfusion Essential<sup style="font-size:70%">&reg;</sup> JS 2 Smith Chart control can be initialized in either of the following ways:
 
-* Using local script references in a HTML page.
+* Using local script.
 * Using CDN link for script.
 
 ### Using local script references in a HTML page
@@ -41,14 +41,18 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can
 **Step 2:** You can get the global scripts from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
 **Syntax:**
-> Dependency Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\dist\global\{DEPENDENCY_PACKAGE_NAME}.min.js`
+
+> Dependency script: `**(installed location)**/Syncfusion/Essential Studio/JavaScript - EJ2/{RELEASE_VERSION}/Web (Essential JS 2)/JavaScript/{DEPENDENCY_PACKAGE_NAME}/dist/global/{DEPENDENCY_PACKAGE_NAME}.min.js`
 >
-> Control Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
+> Script: `**(installed location)**/Syncfusion/Essential Studio/JavaScript - EJ2/{RELEASE_VERSION}/Web (Essential JS 2)/JavaScript/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+>
 
 **Example:**
-> Dependency Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-base\dist\global\ej2-base.min.js`
+
+> Dependency script: `C:/Program Files (x86)/Syncfusion/Essential Studio/JavaScript - EJ2/32.1.19/Web (Essential JS 2)/JavaScript/ej2-base/dist/global/ej2-base.min.js`
 >
-> Control Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\16.3.0.17\Web (Essential JS 2)\JavaScript\ej2-charts\dist\global\ej2-charts.min.js`
+> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/JavaScript - EJ2/32.1.19/Web (Essential JS 2)/JavaScript/ej2-charts/dist/global/ej2-charts.min.js`
+>
 
 The below located script and style file contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file.
 
@@ -56,9 +60,9 @@ The below located script and style file contains all Syncfusion<sup style="font-
 
 The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script for a set of specific controls. This web tool is useful to combine the required control scripts in a single file.
 
-**Step 3:** Create a folder `~/quickstart/resources` and copy/paste the global scripts from the above installed location to `~/quickstart/resources/package` corresponding package location.
+**Step 3:** Create a folder `~/quickstart/resources` and copy/paste the global scripts from the above installed location to `~/quickstart/resources/package` in the corresponding package locations.
 
-**Step 4:** Create a HTML page (index.html) in `~/quickstart/index.html` and add the Essential<sup style="font-size:70%">&reg;</sup> JS 2 script references.
+**Step 4:** Create an HTML page (index.html) in `~/quickstart/index.html` and add the Essential<sup style="font-size:70%">&reg;</sup> JS 2 script references.
 
 ```html
 <!DOCTYPE html>
@@ -76,7 +80,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 </html>
 ```
 
-**Step 5:** Now, add the `Smithchart` element and initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) Smithchart** control in the `~/quickstart/index.html` by using following code.
+**Step 5:** Add the `Smithchart` element and initialize the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) Smithchart** control in `~/quickstart/index.html` using the following code.
 
 ```html
 <!DOCTYPE html>
@@ -104,7 +108,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 </html>
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Smithchart** control.
+**Step 6:** Open `index.html` in a web browser to render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Smithchart** control.
 
 ### Using CDN link for script reference
 
@@ -120,7 +124,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 **Example:**
 > Script: [`https://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js`](https://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js)
 
-**Step 3:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the CDN link references. Now, add the `Smithchart` element and initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) Smithchart** control in the index.html by using following code.
+**Step 3:** Create an HTML page (index.html) in `~/quickstart/index.html` location and add the CDN link references. Now, add the `Smithchart` element and initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) Smithchart** control in the index.html by using following code.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -133,17 +137,19 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
         
 {% previewsample "page.domainurl/code-snippet/smithchart/smithchart-axis-cs1" %}
 
-**Step 4:** Now, run the `index.html` in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Smithchart** control.
+**Step 4:** Open `index.html` in a web browser to render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Smithchart** control.
 
-## Add Series to Smithchart
+## Add series to smithchart
 
 Smithchart had two type of specification for adding series.
-* dataSource - Using this, Data object can bind directly by specifying the resistance and reactance values, series add to smithchart.
-* points - Using this, collection of resistance and reactance values can bind directly to render series.
+
+* dataSource — Bind a data object directly by specifying resistance and reactance values; the series renders from the provided dataSource.
+* points — Provide a collection of resistance and reactance value points for the series.
 
 Below sample demonstrate adding two series to smithchart both ways.
-* First series Transmission1 shows dataSource bound series.
-* Second series Transmission2 shows points bound series.
+
+* First series `Transmission1` shows dataSource bound series.
+* Second series `Transmission2` shows points bound series.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -156,10 +162,9 @@ Below sample demonstrate adding two series to smithchart both ways.
         
 {% previewsample "page.domainurl/code-snippet/smithchart/smithchart-axis-cs2" %}
 
-## Add title to SmithChart
+## Add title to smithChart
 
-smithchart `title` API used to add title for smithchart. In that `text` API used to set text of the title.
-API `visible` used to toggle the title.
+You can add a title using the [`title`](../api/chart/chartModel#title) property to the Smith Chart to provide quick information to the user about the data plotted in the Smith Chart.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -172,9 +177,9 @@ API `visible` used to toggle the title.
         
 {% previewsample "page.domainurl/code-snippet/smithchart/smithchart-axis-cs3" %}
 
-## Enable Marker to Smithchart
+## Enable marker to smithchart
 
-To use series marker and it's customization in smithchart, use series `marker`. To display marker for particular series, need to specify  `marker visible` as true. Below sample marker enabled for first series only.
+You can add and customize the markers in the smith chart. This can be achieved by setting the [`visible`](../api/smithchart/seriesmarkermodel#visible) property to `true` in the [`marker`](../api/smithchart/smithchartseriesmodel#marker) object. The sample below enables markers for the first series.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -187,9 +192,9 @@ To use series marker and it's customization in smithchart, use series `marker`. 
         
 {% previewsample "page.domainurl/code-snippet/smithchart/smithchart-axis-cs4" %}
 
-## Enable DataLabel to Smithchart Marker
+## Enable dataLabel to smithchart marker
 
-To use marker dataLabel and it's customization in smithchart, use marker `dataLabel`. To display dataLabel for particular series marker, need to specify  `dataLabel visible` as true in that series `marker`. Below sample dataLabel enabled for first series.
+You can add data labels to improve the readability of the smith chart. This can be achieved by setting the [`visible`](../api/smithchart/seriesmarkerdatalabelmodel#visible) property to `true` in the [`dataLabel`](../api/smithchart/seriesmarkermodel#datalabel) object. Now, the data labels are arranged smartly based on series. The sample below enables data labels for the first series.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -202,9 +207,9 @@ To use marker dataLabel and it's customization in smithchart, use marker `dataLa
         
 {% previewsample "page.domainurl/code-snippet/smithchart/smithchart-axis-cs5" %}
 
-## Enable Legend for Smithchart
+## Enable legend for smithchart
 
-Smithchart had a legend feature, which is used to denote the correspond series. To enable the legend, need to inject `SmithchartLegend` module using `Smithchart.Inject(SmithchartLegend)` method and smithchart `legendSettings` `visible` as true. Following example sample shows enabling legend for smithchart. Series name can customize using series `name`.
+You can use legend for the Smith Chart by setting the [`visible`](../api/smithchart/smithchartlegendsettingsmodel#visible) property to `true` in [`legendSettings`](../api/smithchart/smithchartmodel#legendsettings) object. Following example sample shows enabling legend for smithchart. Series name can customize using series `name`.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -217,9 +222,9 @@ Smithchart had a legend feature, which is used to denote the correspond series. 
         
 {% previewsample "page.domainurl/code-snippet/smithchart/smithchart-axis-cs6" %}
 
-## Enable Tooltip for Smithchart Series
+## Enable tooltip for smithchart series
 
-Smithchart had a tooltip feature, which is used to show the current point's values. To enable the tooltip, need to inject `TooltipRender` module using `Smithchart.Inject(TooltipRender)` method and smithchart series `tooltip` `visible` as true. Following example sample shows enabling tooltip for smithchart series collection.
+The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable tooltip by setting the [`visible`](../api/smithchart/seriestooltipmodel#visible) property as `true` in [`tooltip`](../api/smithchart/smithchartseries#tooltip) object.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

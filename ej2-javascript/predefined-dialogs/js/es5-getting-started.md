@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Predefined dialogs control | Syncfusion
+title: Getting started | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## Predefined dialogs control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
@@ -9,13 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Predefined dialogs control
+# Getting started in ##Platform_Name## Predefined dialogs control
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Button and demonstrate the basic usage of the Button control in a JavaScript application.
 
 ## Dependencies
 
-The following list of dependencies are required to use Predefined dialogs in your application.
+The list of dependencies required to use the Button component in your application is given below:
 
 ```javascript
 |-- @syncfusion/ej2-popups
@@ -23,12 +23,22 @@ The following list of dependencies are required to use Predefined dialogs in you
     |-- @syncfusion/ej2-buttons
 ```
 
-## Control Initialization
+## Setup for local environment
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using either of the following ways.
+Refer to the following steps to set up your local environment.
 
-* Using local script and style references in a HTML page.
-* Using CDN link for script and style reference.
+**Step 1:** Create a root folder named **my-app** for your application.
+
+**Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
+
+**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Button control.
+
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
+
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Button control can be initialized by using either of the following ways.
+
+* Using local script and style.
+* Using CDN link for script and style.
 
 ### Using local script and style references in a HTML page
 
@@ -151,10 +161,10 @@ The following options are used as an argument on calling the utility functions:
 
 | Options   | Description |
 |-----------|-------------|
-| title | Specifies the title of dialog like the [header](../api/dialog/#header) property.|
-| content | Specifies the value that can be displayed in dialog's content area like the [content](../api/dialog/#content) property. |
-| isModal | Specifies the Boolean value whether the dialog can be displayed as modal or non-modal. For more details, refer to the [isModal](../api/dialog/#ismodal) property.|
-| position | Specifies the value where the alert or confirm dialog is positioned within the document. For more details, refer to the [position](../api/dialog/#position) property { X: 'center', Y: 'center'}|
+| title | Specifies the title of dialog like the [header](../api/dialog#header) property.|
+| content | Specifies the value that can be displayed in dialog's content area like the [content](../api/dialog#content) property. |
+| isModal | Specifies the Boolean value whether the dialog can be displayed as modal or non-modal. For more details, refer to the [isModal](../api/dialog#ismodal) property.|
+| position | Specifies the value where the alert or confirm dialog is positioned within the document. For more details, refer to the [position](../api/dialog#position) property { X: 'center', Y: 'center'}|
 | okButton | Configures the `OK button` that contains button properties with the click events. `okButton:{ icon:'prefix icon to the button', cssClass:'custom class to the button', click: 'action for OK button click', text: 'Yes' // <-- Default value is 'OK'}`|
 | cancelButton | Configures the `Cancel button` that contains button properties with the click events. `cancelButton:{ icon:'prefix icon to the button', cssClass:'custom class to the button', click: 'action for ‘Cancel’ button click', text: 'No' // <-- Default value is 'Cancel'}`|
 | isDraggable |Specifies the value whether the alert or confirm dialog can be dragged by the user.|

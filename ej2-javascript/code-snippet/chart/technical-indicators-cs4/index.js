@@ -57,7 +57,7 @@ var chartData = [
     {x: new Date('2013-11-11'), open: 74.2843, high: 75.6114, low: 73.4871,close: 74.9987,volume: 306711021},
     {x: new Date('2013-11-18'), open: 74.9985, high: 75.3128, low: 73.3814,close: 74.2571,volume: 282778778},
 ];
-let chart = new ej.charts.Chart({
+var chart = new ej.charts.Chart({
     primaryXAxis: {
         title: 'Months',
         valueType: 'DateTime',

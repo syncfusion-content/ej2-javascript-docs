@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Query builder control | Syncfusion
+title: Getting started | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Query builder control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
@@ -23,9 +23,10 @@ The list of dependencies required to use the Query Builder component in your app
     |-- @syncfusion/ej2-buttons
     |-- @syncfusion/ej2-datamanager
     |-- @syncfusion/ej2-dropdowns
-    |-- @syncfusion/ej2-calenders
+    |-- @syncfusion/ej2-calendars
     |-- @syncfusion/ej2-inputs
     |-- @syncfusion/ej2-popups
+    |-- @syncfusion/ej2-splitbuttons
 ```
 
 ## Set up development environment
@@ -66,7 +67,9 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render Query Builder component, need to import Button and its dependent components styles as given below in in the `~/src/styles/styles.css` file, as shown below: 
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -83,6 +86,8 @@ To render Query Builder component, need to import Button and its dependent compo
 
 {% endhighlight %}
 {% endtabs %}
+
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
 
 ## Add Query Builder to the project
 
@@ -160,7 +165,7 @@ npm start
 {% endhighlight %}
 {% endtabs %}
 
-The following example shows a basic QueryBuilder component.
+The following example shows a basic Query Builder component.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

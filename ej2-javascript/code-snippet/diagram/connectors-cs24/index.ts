@@ -91,13 +91,5 @@ let diagram: Diagram = new Diagram({
   width: '100%',
   height: 900,
   connectors: connectors,
-  created: function () {
-    diagram.zoomTo({
-      type: 'ZoomIn',
-      zoomFactor: 2,
-      focusPoint: { x: 0, y: 0.5 },
-    });
-    diagram.fitToPage();
-  },
 });
 diagram.appendTo('#element');

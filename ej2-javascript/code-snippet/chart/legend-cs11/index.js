@@ -34,8 +34,8 @@ var chart = new ej.charts.Chart({
   }],
   title: 'Olympic Medals',
   loaded: (args) => {
-      let chart = document.querySelector('.e-chart');;
-      let legendTextCol = chart.querySelectorAll('[id*="chart_legend_text_"]');
+      var chart = document.querySelector('.e-chart');;
+      var legendTextCol = chart.querySelectorAll('[id*="chart_legend_text_"]');
       for (let i = 0; i < legendTextCol.length; i++) {
           //set the color to legend label
           legendTextCol[i].setAttribute('fill', colors[i]);

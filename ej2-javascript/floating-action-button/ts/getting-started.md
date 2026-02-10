@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Floating action button control | Syncfusion
+title: Getting started | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Floating action button control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Floating action button control
+# Getting started in ##Platform_Name## Floating Action Button control
 
-This section explains how to create a simple Floating action button, and configure its available functionalities in TypeScript, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section explains how to create a simple Floating Action Button control and configure its available functionalities in TypeScript, using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
@@ -24,7 +24,7 @@ The list of dependencies required to use the Floating Action Button control in y
     |-- @syncfusion/ej2-base
 ```
 
-## Set up development environment
+## Setup development environment
 
 Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
@@ -62,7 +62,9 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render Floating Action Button control, need to import Button and its dependent components styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below:  
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -73,9 +75,11 @@ To render Floating Action Button control, need to import Button and its dependen
 {% endhighlight %}
 {% endtabs %}
 
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
+
 ## Adding Floating Action Button to the Application
 
-Add the HTML Button tag with ID attribute as the `fab` to your `index.html` file.
+Add the HTML Button tag with ID attribute as the `button` to your `index.html` file.
 
 `[src/index.html]`
 
@@ -98,7 +102,7 @@ Add the HTML Button tag with ID attribute as the `fab` to your `index.html` file
 <body>
     <div>
         <!--Element to render the Floating Action Button control-->
-        <button id="fab"></button>
+        <button id="button"></button>
     </div>
 
 </body>
@@ -108,7 +112,7 @@ Add the HTML Button tag with ID attribute as the `fab` to your `index.html` file
 {% endhighlight %}
 {% endtabs %}
 
-Then, import the Floating Action Button control in your `app.ts` file, and initialize it with the `#fab`.
+Then, import the Floating Action Button control in your `app.ts` file and initialize it with the `#button` selector.
 
 `[src/app/app.ts]`
 
@@ -141,7 +145,7 @@ npm start
 {% endhighlight %}
 {% endtabs %}
 
-The following example shows a basic Floating Action Button control.
+The following example shows a basic Floating Action Button control:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -159,7 +163,7 @@ The following example shows a basic Floating Action Button control.
 
 ## Click event
 
-The floating action button control triggers the `onclick` event when you click on the floating action button. You can use this event to perform the required action.
+The Floating Action Button control triggers the `onclick` event when clicked. You can use this event to perform the required action:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

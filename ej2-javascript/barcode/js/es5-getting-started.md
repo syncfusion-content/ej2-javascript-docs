@@ -9,45 +9,54 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Barcode control
+# ES5 getting Started in ##Platform_Name## Barcode Control
 
-The Essential® JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+The Essential® JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework that works directly in all modern web browsers without requiring any build tools or trans pilers. This makes it ideal for quick prototyping and simple web applications.
+
+## Dependencies
+
+The Following list of dependencies required to use the barcode component in your application..
+
+```javascript
+|-- @syncfusion/ej2-barcode-generator
+    |-- @syncfusion/ej2-base
+    |-- @syncfusion/ej2-data
+```
 
 ## Component Initialization
 
-The Essential® JS 2 JavaScript components can be initialized by using either of the following ways.
+There are two ways to set up the Barcode Generator component in your project. Choose the method that best fits your needs:
 
-* Using local script and style references in a HTML page.
-* Using CDN link for script and style reference.
+* **Local Setup**: Download files locally and reference them in your HTML page
+* **CDN Setup**: Use hosted files directly from the cloud (faster, no downloads needed)
 
-### Using local script and style references in a HTML page
+### Using local script references in a HTML page
 
 **Step 1:** Create an app folder `myapp` for Essential® JS 2 JavaScript components.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio® JavaScript (Essential® JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+**Step 2:** You can get the global scripts  from the [Essential Studio® JavaScript (Essential® JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
 **Syntax:**
-> Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-> Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/material.css`
+> Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Web(Essential JS 2)/javascript/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+
 
 **Example:**
 
-> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-barcode-generator/dist/global/ej2-barcode-generator.min.js`
->
-> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-barcode-generator/styles/material.css`
+> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/32.1.19/Web(Essential JS 2)/javascript/ej2-barcode-generator/dist/global/ej2-barcode-generator.min.js`
 
-**Step 3:** Create a folder `myapp/resources` and copy/paste the global scripts and styles from the above installed location to `myapp/resources` location.
 
-**Step 4:** Create a HTML page (index.html) in `myapp` location and add the Essentials® JS 2 script and style references.
+**Step 3:** Inside your `myapp` folder, create a subfolder named `resources` and copy the script file into it.
+
+**Step 4:** Create a HTML page (index.html) in `myapp` location and add the Essentials® JS 2 script  references.
 
 ```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
-            <title>Essential® JS 2</title>
-            <!-- Essential® JS 2 material theme -->
-            <link href="resources/material.css" rel="stylesheet" type="text/css"/>
+            <title>Barcode Generator Example</title>
+
+            <!-- Essential JS 2 Barcode's dependent scripts -->
+             <script src="resources/ej2-base.min.js" type="text/javascript"></script>
 
             <!-- Essential® JS 2 Barcode's global script -->
             <script src="resources/ej2-barcode-generator.min.js" type="text/javascript"></script>
@@ -57,95 +66,94 @@ The Essential® JS 2 JavaScript components can be initialized by using either of
   </html>
 ```
 
-**Step 5:** Now, add the `Barcode` element and initiate the `Essential® JS 2 barcode-generator` component in the `index.html` by using following code
+**Step 5:** Now, update your `index.html` with the Barcode element and component code:
 
 ```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
-            <title>Essential® JS 2</title>
-            <!-- Essential® JS 2 material theme -->
-            <ink href="resources/material.css" rel="stylesheet" type="text/css"/>
+            <title>Barcode Generator Example</title>
+
+            <!-- Essential JS 2 Barcode's dependent scripts -->
+             <script src="resources/ej2-base.min.js" type="text/javascript"></script>
 
             <!-- Essential® JS 2 Barcode's global script -->
             <script src="resources/ej2-barcode-generator.min.js" type="text/javascript"></script>
        </head>
        <body>
-            <!-- Add the HTML <div> element  -->
-             <div id="element">Barcode</div>
+            <!-- Container div where the barcode will be rendered -->
+            <div id="element">Barcode</div>
             <script>
-                // initialize barcode component
+                // Create and initialize the barcode component
                 var barcode = new ej.barcodegenerator.BarcodeGenerator({
-                              width: '200px',
-                              height: '150px',
-                              mode: 'SVG',
-                              type: 'Codabar',
-                              value: '123456789',
-                              });
-                              barcode.appendTo('#element');
+                    width: '200px',
+                    height: '150px',
+                    mode: 'SVG',
+                    type: 'Codabar',
+                    value: '123456789',
+                });
+                // Mount the barcode component to the HTML element with id 'element'
+                barcode.appendTo('#element');
             </script>
        </body>
   </html>
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Essential® JS 2 BarcodeGenerator** component.
+**Step 6:** Open the `index.html` file in your web browser. The Barcode Generator component should now display a barcode with the value "123456789".
 
-### Using CDN link for script and style reference
+### Using CDN Link for Script  Reference
 
-**Step 1:** Create an app folder `myapp` for the Essential® JS 2 JavaScript components.
+This is the quickest way to get started. No downloads or local files needed—just add links to your HTML file.
 
-**Step 2:** The Essential® JS 2 component's global scripts and styles are already hosted in the below CDN link formats.
+**Step 1:** Create a project folder named `myapp` for your Barcode application.
+
+**Step 2:** The Essential® JS 2 component's global scripts are already hosted in the below CDN link formats.
 
 **Syntax:**
-> Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-> Styles: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material.css`
+> Script: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/dist/ej2.min.js`
 
 **Example:**
-> Script: [`http://cdn.syncfusion.com/ej2/ej2-barcode-generator/dist/global/ej2-barcode-generator.min.js`](http://cdn.syncfusion.com/ej2/ej2-barcode-generator/dist/global/ej2-barcode-generator.min.js)
->
-> Styles: [`http://cdn.syncfusion.com/ej2/ej2-barcode-generator/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-barcode-generator/styles/material.css)
+> Script: [`https://cdn.syncfusion.com/ej2/32.1.19/dist/min.js`](https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js)
 
-**Step 3:** Create a HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `Barcode` element and initiate the `Essential® JS 2 BarcodeGenerator` component in the index.html by using following code.
+
+**Step 3:** Create an HTML file named `index.html` in your `myapp` folder with the following code. This example uses the CDN links and creates a barcode:
 
 ```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
-            <title>Essential® JS 2</title>
-            <!-- Essential® JS 2 material theme -->
-            <link href="http://cdn.syncfusion.com/ej2/ej2-barcode-generator/styles/material.css" rel="stylesheet" type="text/css"/>
+            <title>Barcode Generator Example</title>
 
-            <!-- Essential® JS 2 barcode's global script -->
-            <script src="http://cdn.syncfusion.com/ej2/ej2-barcode-generator/dist/global/ej2-barcode-generator.min.js" type="text/javascript"></script>
+            <!-- Essential® JS 2 Barcode's global script from CDN -->
+            <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
        </head>
        <body>
-           <!-- Add the HTML <div> element  -->
-             <div id="element">Barcode</div>
+            <!-- Container div where the barcode will be rendered -->
+            <div id="element">Barcode</div>
             <script>
-                // initialize barcode component
-                  var barcode = new ej.barcodegenerator.BarcodeGenerator({
-                                  width: '200px',
-                                  height: '150px',
-                                  mode: 'SVG',
-                                  type: 'Codabar',
-                                  value: '123456789',
-                                  });
-                                barcode.appendTo('#element');
-            </script>
+                // Create and initialize the barcode component with configuration
+                var barcode = new ej.barcodegenerator.BarcodeGenerator({
+                    width: '200px',
+                    height: '150px',
+                    mode: 'SVG',
+                    type: 'Codabar',
+                    value: '123456789',
+                });
+                // Attach the barcode component to the HTML div element
+                barcode.appendTo('#element');
             </script>
        </body>
   </html>
-
 ```
 
-**Step 4:** Now, run the `index.html` in web browser, it will render the `Essential® JS 2 BarcodeGenerator` component.
+**Step 4:** Open the `index.html` file in your web browser. The Barcode Generator component should display immediately since all files are loaded from the CDN.
+
 
 ## Adding Barcode Generator control
 
-You can start adding Essential® JS 2 barcode-generator component to the application. To get started, add the barcode component in `app.ts` and `index.html` files using the following code.
+You can start adding Essential® JS 2 barcode-generator component to the application. To get started, add the barcode component in `app.js` and `index.html` files using the following code.
 
-Place the following barcode-generator  code in the `app.ts`.
+Place the following barcode-generator  code in the `app.js`.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

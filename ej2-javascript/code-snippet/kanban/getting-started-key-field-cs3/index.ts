@@ -3,7 +3,7 @@
 import { Kanban } from '@syncfusion/ej2-kanban';
 import { kanbanData } from './datasource.ts';
 
-let kanbanObj: Kanban = new Kanban({
+const kanbanObj: Kanban = new Kanban({
     dataSource: kanbanData,
     keyField: 'Status',
     columns: [

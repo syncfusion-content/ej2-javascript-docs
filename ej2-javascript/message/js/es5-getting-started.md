@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Message control | Syncfusion
+title: Getting started with ##Platform_Name## Message control | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## Message control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
@@ -9,13 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Message control
+# Getting started in ##Platform_Name## Message control
 
-This section explains the steps required to create a simple JavaScript (ES5) Message control and configure its available functionalities in the TypeScript using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/syncfusion/ej2-quickstart) seed repository. This seed repository is pre-configured with all the Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Message and demonstrate the basic usage of the Message control in a JavaScript application.
 
 ## Dependencies
 
-The following list of dependencies are required to use the Message control in the application.
+The list of dependencies required to use the Message component in your application is given below:
 
 ```javascript
 |-- @syncfusion/ej2-notifications
@@ -24,15 +24,22 @@ The following list of dependencies are required to use the Message control in th
   |-- @syncfusion/ej2-popups
 ```
 
-## Setup for local development
+## Setup for local environment
 
-To get started with the Message control, clone the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [`quickstart`](https://github.com/syncfusion/ej2-quickstart) project, and install the necessary npm packages by using the following command line scripts.
+Refer to the following steps to set up your local environment.
 
-```
-git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
-cd quickstart
-npm install
-```
+**Step 1:** Create a root folder named **my-app** for your application.
+
+**Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
+
+**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Message control.
+
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
+
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Message control can be initialized by using either of the following ways.
+
+* Using local script and style.
+* Using CDN link for script and style.
 
 ## Adding CSS reference
 
@@ -44,11 +51,11 @@ The combined CSS files are available in the Essential<sup style="font-size:70%">
 
 ```
 
-> To add the individual control CSS, refer to the [individual control theme](../appearance/theme/#referring-individual-control-theme) section. To use the combined control styles, make use of Syncfusion<sup style="font-size:70%">&reg;</sup> [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in the application.
+> To add the individual control CSS, refer to the [individual control theme](../appearance/theme#referring-individual-control-theme) section. To use the combined control styles, make use of Syncfusion<sup style="font-size:70%">&reg;</sup> [`CRG`](https://crg.syncfusion.com) (Custom Resource Generator) in the application.
 
 ## Add Message control
 
-Now, start adding the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Message control to the application. To get started, add the HTML `<div>` element to the `index.html` file.
+Now, start adding the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Message control to the application. To get started, add an HTML `<div>` element to the `index.html` file.
 
 ```html
 

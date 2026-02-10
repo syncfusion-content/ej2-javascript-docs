@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Auto complete control | Syncfusion
+title: Getting started | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Auto complete control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Auto complete control
 
-This section explains how to create a simple **AutoComplete** component and configure its available functionalities in TypeScript, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
+This section explains how to create a simple **AutoComplete** component and configure its available functionalities in TypeScript, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires Node.js v14.0 or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
@@ -26,6 +26,7 @@ The following list of dependencies are required to use the AutoComplete componen
     |-- @syncfusion/ej2-inputs
     |-- @syncfusion/ej2-lists
     |-- @syncfusion/ej2-navigations
+    |-- @syncfusion/ej2-notifications
     |-- @syncfusion/ej2-popups
         |-- @syncfusion/ej2-buttons
 ```
@@ -68,7 +69,9 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render AutoComplete component, need to import dropdowns and its dependent components styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -82,6 +85,8 @@ To render AutoComplete component, need to import dropdowns and its dependent com
 
 {% endhighlight %}
 {% endtabs %}
+
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
 
 ## Initialize the AutoComplete
 
@@ -121,8 +126,7 @@ Add the HTML input element which needs to be initialized as AutoComplete in `in
 {% endhighlight %}
 {% endtabs %}
 
-Now import the AutoComplete component to your `app.ts` and initialize it to the element `#atcelement` as
-shown below.
+Now import the AutoComplete component in your `app.ts` and initialize it to the element `#auto`, as shown below.
 
 `[src/app/app.ts]`
 
@@ -135,7 +139,7 @@ import { AutoComplete } from '@syncfusion/ej2-dropdowns';
 let atcObject: AutoComplete = new AutoComplete();
 
 // render initialized AutoComplete
-atcObject.appendTo('#atcelement');
+atcObject.appendTo('#auto');
 
 {% endhighlight %}
 {% endtabs %}
@@ -209,7 +213,7 @@ is about to be submitted.
 
 By default, suggestion list width automatically adjusts according to the AutoComplete input element's width, and the height of the suggestion list has '300px'.
 
-The height and width of the popup list can also be customized using the [`popupHeight`](https://ej2.syncfusion.com/documentation/api/auto-complete/#popupheight) and [`popupWidth`](https://ej2.syncfusion.com/documentation/api/auto-complete/#popupwidth) property respectively.
+The height and width of the popup list can also be customized using the [`popupHeight`](https://ej2.syncfusion.com/documentation/api/auto-complete/index-default#popupheight) and [`popupWidth`](https://ej2.syncfusion.com/documentation/api/auto-complete/index-default#popupwidth) property respectively.
 
 In the following sample, suggestion list's width and height are configured.
 

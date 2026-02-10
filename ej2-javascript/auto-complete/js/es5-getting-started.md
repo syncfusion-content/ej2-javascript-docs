@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Auto complete control | Syncfusion
+title: Getting started | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## Auto complete control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
@@ -9,13 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Auto complete control
+# Getting started in ##Platform_Name## Autocomplete control
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Autocomplete and demonstrate the basic usage of the Autocomplete control in a JavaScript application.
 
 ## Dependencies
 
-The following list of dependencies are required to use the AutoComplete component in your application.
+The list of dependencies required to use the Autocomplete component in your application is given below:
 
 ```javascript
 |-- @syncfusion/ej2-dropdowns
@@ -24,16 +24,27 @@ The following list of dependencies are required to use the AutoComplete componen
     |-- @syncfusion/ej2-inputs
     |-- @syncfusion/ej2-lists
     |-- @syncfusion/ej2-navigations
+    |-- @syncfusion/ej2-notifications
     |-- @syncfusion/ej2-popups
         |-- @syncfusion/ej2-buttons
 ```
 
-## Component Initialization
+## Setup for local environment
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components can be initialized by using either of the following ways.
+Refer to the following steps to set up your local environment.
 
-* Using local script and style references in a HTML page.
-* Using CDN link for script and style reference.
+**Step 1:** Create a root folder named **my-app** for your application.
+
+**Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
+
+**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Autocomplete control.
+
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
+
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Autocomplete control can be initialized by using either of the following ways.
+
+* Using local script and style.
+* Using CDN link for script and style.
 
 ### Using local script and style references in a HTML page
 
@@ -130,7 +141,7 @@ The below html code example shows the dependency of autoComplete.
 
 **Step 1:** Create an app folder `myapp` for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components.
 
-**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 component's global scripts and styles are already hosted in the below CDN link formats.
+**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 component's global scripts and styles are already hosted in the following CDN link formats.
 
 **Syntax:**
 > Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -156,9 +167,7 @@ The below html code example shows the dependency of autoComplete.
 
 ## Binding data source
 
-After initialization, populate the AutoComplete with data using the
-[`dataSource`](../api/auto-complete/#datasource) property.
-Here, an array of string values is passed to the AutoComplete component.
+After initialization, populate the AutoComplete with data by using the [`dataSource`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#datasource) property. Here, an array of string values is passed to the AutoComplete component.
 
 ```html
 <!DOCTYPE html>
@@ -201,11 +210,7 @@ Here, an array of string values is passed to the AutoComplete component.
 
 ## Custom values
 
-The AutoComplete allows the user to give input as custom value which is not required to present in
-predefined set of values. By default, this support is enabled by
-[`allowCustom`](../api/auto-complete/#allowcustom) property.
-The custom value will be sent to post back handler when a form
-is about to be submitted.
+The AutoComplete allows users to enter custom values that are not in the predefined set. By default, this is enabled through the [`allowCustom`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#allowcustom) property. Custom values are sent to the post-back handler when a form is submitted.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -217,11 +222,9 @@ is about to be submitted.
 
 ## Configure the suggestion list
 
-By default, suggestion list width automatically adjusts according to the AutoComplete input element's width, and the height of the suggestion list has '300px'.
+By default, the suggestion list width automatically adjusts to the AutoComplete input element's width, and the suggestion list height is 300px.
 
-The height and width of the popup list can also be customized using the
-[`popupHeight`](../api/auto-complete/#popupheight) and
-[`popupWidth`](../api/auto-complete/#popupwidth) property respectively.
+The height and width of the popup list can also be customized using the [`popupHeight`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#popupheight) and [`popupWidth`](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/index-default#popupwidth) properties, respectively.
 
 In the following sample, suggestion list's width and height are configured.
 

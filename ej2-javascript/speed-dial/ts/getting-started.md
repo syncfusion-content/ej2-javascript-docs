@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Speed dial control | Syncfusion
+title: Getting started | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Speed dial control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
@@ -24,7 +24,7 @@ The list of dependencies required to use the SpeedDial control in your applicati
     |-- @syncfusion/ej2-base
 ```
 
-## Set up development environment
+## Setup development environment
 
 Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
@@ -62,7 +62,9 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render SpeedDial control, need to import Button and its dependent controls styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -73,9 +75,11 @@ To render SpeedDial control, need to import Button and its dependent controls st
 {% endhighlight %}
 {% endtabs %}
 
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
+
 ## Adding SpeedDial to the Application
 
-Add the HTML Button tag with ID attribute as the `speeddial` to your `index.html` file.
+Add the HTML Button tag with ID attribute as the `speedDial` to your `index.html` file.
 
 `[src/index.html]`
 
@@ -98,7 +102,7 @@ Add the HTML Button tag with ID attribute as the `speeddial` to your `index.html
 <body>
     <div>
         <!--Element to render the SpeedDial control-->
-        <button id="speeddial"></button>
+        <button id="speedDial"></button>
     </div>
 
 </body>
@@ -108,7 +112,7 @@ Add the HTML Button tag with ID attribute as the `speeddial` to your `index.html
 {% endhighlight %}
 {% endtabs %}
 
-Then, import the SpeedDial control in your `app.ts` file, define the action items using [`items`](../api/speed-dial/#items) property and initialize it with the `#speeddial`.
+Then, import the SpeedDial control in your `app.ts` file, define the action items using [`items`](../api/speed-dial#items) property and initialize it with the `#speedDial`.
 
 `[src/app/app.ts]`
 

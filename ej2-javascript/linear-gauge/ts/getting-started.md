@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Linear gauge control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Linear gauge control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Linear Gauge | Syncfusion
+description:  Checkout and learn about Getting started with ##Platform_Name## Linear Gauge Component of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,15 +9,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Linear gauge control
+# Getting started with ##Platform_Name## Linear Gauge Component
 
-This section briefly explains how to create **Linear Gauge** component and configure its available functionalities in TypeScript using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section walks you through creating a **Linear Gauge** component and configuring its available functionalities in TypeScript using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. By the end of this guide, you will have a fully functional Linear Gauge integrated into a webpack-based TypeScript project.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+> This application uses the `webpack.config.js` configuration and the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires Node.js `v14.15.0` or higher. For more information about webpack and its features, see the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
-Following is the list of minimum dependencies required to use the Linear Gauge.
+The following lists the minimum dependencies required to use the Linear Gauge:
 
 ```javascript
 |-- @syncfusion/ej2-lineargauge
@@ -62,7 +62,7 @@ npm install
 {% endhighlight %}
 {% endtabs %}
 
-## Adding Linear Gauge component to the Project
+## Adding Linear Gauge component to the project
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS2 Linear Gauge component can be added to the application. To get started, add the Linear Gauge component to the **app.ts** and **index.html** files using the following code.
 
@@ -111,7 +111,7 @@ gauge.appendTo('#container');
 
 ## Run the application
 
-The quickstart project is configured to compile and run the application in the browser. Use the following command to run the application.
+The quickstart project is configured to compile and run the application in the browser.
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
@@ -121,7 +121,7 @@ npm start
 {% endhighlight %}
 {% endtabs %}
 
-The below example shows a basic Linear Gauge component.
+The following example demonstrates a basic Linear Gauge component.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -136,12 +136,14 @@ The below example shows a basic Linear Gauge component.
 
 ## Module Injection
 
-Linear Gauge component is segregated into individual feature-wise modules. In order to use a particular feature, inject its corresponding feature module using **LinearGauge.Inject()** method. Please find the feature module name and description as follows.
+The Linear Gauge component uses modular architecture to optimize bundle size. Features are provided as individual modules that must be explicitly injected to enable them. This approach allows you to include only the features your application requires.
+
+**Available Feature Modules:**
 
   * Annotation -  Inject this module to use the annotation features.
   * GaugeTooltip - Inject this module to use the tooltip features.
 
-Now import the above mentioned modules from the Linear Gauge package and inject it into the LinearGauge component using **LinearGauge.Inject** method.
+Import the required feature modules from the Linear Gauge package and inject them using **LinearGauge.Inject()**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -154,7 +156,7 @@ LinearGauge.Inject(Annotations, GaugeTooltip);
 
 ## Adding the Linear Gauge Title
 
-The title can be added to the Linear Gauge component using the [`title`](../api/linear-gauge/linearGaugeModel/#title) property in the Linear Gauge.
+Add a title to the Linear Gauge component using the [`title`](../api/linear-gauge/linearGaugeModel#title) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -169,7 +171,7 @@ The title can be added to the Linear Gauge component using the [`title`](../api/
 
 ## Axis Range
 
-The range of the axis can be set using the [`minimum`](../api/linear-gauge/axis/#minimum) and [`maximum`](../api/linear-gauge/axis/#maximum) properties in the Linear Gauge.
+Configure the axis range using the [`minimum`](../api/linear-gauge/axis#minimum) and [`maximum`](../api/linear-gauge/axis#maximum) properties to define the scale of your Linear Gauge.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -182,9 +184,7 @@ The range of the axis can be set using the [`minimum`](../api/linear-gauge/axis/
           
 {% previewsample "page.domainurl/code-snippet/linear-gauge/getting-started-cs4" %}
 
-To denote the axis values with temperature units, add the °C as suffix to each label. This can be achieved by setting the **{value}°C** to the [`format`](../api/linear-gauge/labelModel/#format) property in the [`labelStyle`](../api/linear-gauge/axis/#labelstyle) object of the axis. Here, **{value}** acts as a placeholder for each axis label.
-
-To change the pointer value from the default value of the gauge, set the [`value`](../api/linear-gauge/pointer/#value) property in [`pointers`](../api/linear-gauge/pointerModel/) object of the axis.
+To add units like °C to axis labels, set the [`format`](../api/linear-gauge/labelModel#format) property in the [`labelStyle`](../api/linear-gauge/axis#labelstyle) object of the axis to **{value}°C**. The **{value}** placeholder is replaced with each axis label. To customize the pointer position, set the [`value`](../api/linear-gauge/pointer#value) property in the [`pointers`](../api/linear-gauge/pointerModel) array of the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -199,7 +199,7 @@ To change the pointer value from the default value of the gauge, set the [`value
 
 ## Setting the value of the pointer
 
-The pointer value is changed in the below sample using the [`value`](../api/linear-gauge/pointer/#value) property in [`pointers`](../api/linear-gauge/pointer) object of the axis.
+Modify the pointer value using the [`value`](../api/linear-gauge/pointer#value) property in the [`pointers`](../api/linear-gauge/pointer) array of the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

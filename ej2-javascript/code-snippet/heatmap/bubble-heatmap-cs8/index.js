@@ -1,4 +1,4 @@
-let jsonCellBubbleData = [
+var jsonCellBubbleData = [
     { Year: '2017', Months: 'Jan-Feb', Accidents: 4, Fatalities: 39 },
     { Year: '2017', Months: 'Mar-Apr', Accidents: 3, Fatalities: 8 },
     { Year: '2017', Months: 'May-Jun', Accidents: 1, Fatalities: 3 },
@@ -19,7 +19,7 @@ let jsonCellBubbleData = [
     { Year: '2015', Months: 'Nov-Dec', Accidents: 2, Fatalities: 45 }
 ];
 
-let heatmap = new ej.heatmap.HeatMap({
+var heatmap = new ej.heatmap.HeatMap({
     titleSettings: {
         text: 'Commercial Aviation Accidents and Fatalities by year 2012 - 2017',
         textStyle: {

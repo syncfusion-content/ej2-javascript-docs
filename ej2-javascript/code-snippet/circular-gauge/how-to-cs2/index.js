@@ -17,7 +17,7 @@ document.getElementById("addRange").onclick = function () {
     if (end > circulargauge.axes[0].maximum) {
         circulargauge.axes[0].maximum = end;
      }
-     let range = { start: start, end: end };
+     var range = { start: start, end: end };
      circulargauge.axes[0].ranges.push(new ej.circulargauge.Range((circulargauge.axes[0].ranges[0]), 'ranges', range));
      circulargauge.refresh();
 }

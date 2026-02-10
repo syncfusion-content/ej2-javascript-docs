@@ -9,25 +9,35 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## OTP Input control
+# Getting started in ##Platform_Name## OTP Input control
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 OTP input and demonstrate the basic usage of the OTP input control in a JavaScript application.
 
 ## Dependencies
 
-The list of dependencies required to use the OTP Input control in your application is given as follows:
+The list of dependencies required to use the OTP input component in your application is given below:
 
 ```js
 |-- @syncfusion/ej2-inputs
     |-- @syncfusion/ej2-base
 ```
 
-## Control Initialization
+## Setup for local environment
 
-The JavaScript (ES5) OTP Input control can be initialized by using either of the following ways.
+Refer to the following steps to set up your local environment.
 
-* Using local script and style references in a HTML page.
-* Using CDN link for script and style reference.
+**Step 1:** Create a root folder named **my-app** for your application.
+
+**Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
+
+**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 OTP input control.
+
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
+
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 OTP input control can be initialized by using either of the following ways.
+
+* Using local script and style.
+* Using CDN link for script and style.
 
 ### Using local script and style references in a HTML page
 
@@ -88,7 +98,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
   </html>
 ```
 
-**Step 5:** Now, add the `OTP Input` element and initiate the `JavaScript (ES5) OTP Input` control in the `index.html` by using following code
+**Step 5:** Now, add the `OTP Input` element and initialize the `JavaScript (ES5) OTP Input` control in the `index.html` file by using the following code
 
 `[src/index.html]`
 
@@ -125,7 +135,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
   </html>
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) OTP Input** control.
+**Step 6:** Now, run the `index.html` in a web browser. It will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) OTP Input** control.
 
 ## Using CDN link for script and style reference
 

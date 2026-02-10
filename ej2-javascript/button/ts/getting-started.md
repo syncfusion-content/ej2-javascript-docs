@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Button control
 
-This section explains the steps required to create the Button control using TypeScript and configure its properties using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section explains the steps required to create the Button control using TypeScript and configure its properties using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
@@ -24,7 +24,7 @@ The list of dependencies required to use the Button component in your applicatio
     |-- @syncfusion/ej2-base
 ```
 
-## Set up development environment
+## Setup development environment
 
 Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
@@ -60,9 +60,13 @@ npm install
 {% endhighlight %}
 {% endtabs %}
 
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
+
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render Button component, need to import Button and its dependent components styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -73,7 +77,7 @@ To render Button component, need to import Button and its dependent components s
 {% endhighlight %}
 {% endtabs %}
 
-## Add Button to the project
+## Adding Button component
 
 Add the HTML Button tag with id attribute as the `element` to your `index.html` file.
 
@@ -108,7 +112,7 @@ Add the HTML Button tag with id attribute as the `element` to your `index.html` 
 {% endhighlight %}
 {% endtabs %}
 
-Then, import the Button component in your `app.ts` file, and initialize it with the `#element`.
+Then, import the Button component in your `app.ts` file and initialize it with the `#element` selector.
 
 `[src/app/app.ts]`
 
@@ -138,7 +142,7 @@ npm start
 {% endhighlight %}
 {% endtabs %}
 
-The following example shows a basic Button component.
+The following example shows a basic Button component:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -156,7 +160,7 @@ The following example shows a basic Button component.
 
 ## Change Button type
 
-To change the default Button to flat Button, set the [`cssClass`](https://ej2.syncfusion.com/documentation/api/button/#cssclass) property to `e-flat` and text content of the Button is set using [`content`](https://ej2.syncfusion.com/documentation/api/button/#content) property.
+To change the default Button to flat Button, set the [`cssClass`](https://ej2.syncfusion.com/documentation/api/button/index-default#cssclass) property to `e-flat` and text content of the Button is set using [`content`](https://ej2.syncfusion.com/documentation/api/button/index-default#content) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

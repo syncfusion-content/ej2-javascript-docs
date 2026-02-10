@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Mention control | Syncfusion
+title: Getting started | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## Mention control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
@@ -9,29 +9,42 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Mention control
+# Getting started in ##Platform_Name## Mention control
 
-This section explains how to create a `Mention` control, and configure its available functionalities by using the ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Mention and demonstrate the basic usage of the Mention control in a JavaScript application.
 
 ## Dependencies
 
-The following list of dependencies are required to use the Mention control in your application.
+The list of dependencies required to use the Mention component in your application is given below:
 
 ```javascript
 |-- @syncfusion/ej2-dropdowns
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-data
+    |-- @syncfusion/ej2-inputs
     |-- @syncfusion/ej2-lists
+    |-- @syncfusion/ej2-navigations
+    |-- @syncfusion/ej2-notifications
     |-- @syncfusion/ej2-popups
         |-- @syncfusion/ej2-buttons
 ```
 
-## Component Initialization
+## Setup for local environment
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using either of the following ways.
+Refer to the following steps to set up your local environment.
 
-* Using local script and style references in a HTML page.
-* Using CDN link for script and style reference.
+**Step 1:** Create a root folder named **my-app** for your application.
+
+**Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
+
+**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Mention control.
+
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
+
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Mention control can be initialized by using either of the following ways.
+
+* Using local script and style.
+* Using CDN link for script and style.
 
 ### Using local script and style references in a HTML page
 
@@ -126,7 +139,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can
 
 **Step 1:** Create an app folder `quickstart` for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
 
-**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 control's global scripts and styles are already hosted in the below CDN link formats.
+**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 control's global scripts and styles are already hosted in the following CDN link formats.
 
 **Syntax:**
 > Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -182,7 +195,7 @@ Add the HTML div tag with the `id` attribute as `mentionElement` to your `index.
 
 ## Binding data source
 
-After initialization, populate the Mention with data using the [dataSource](../api/mention/#datasource) property. Here, an array of string values is passed to the Mention control.
+After initialization, populate the Mention with data using the [dataSource](https://ej2.syncfusion.com/javascript/documentation/api/mention/index-default#datasource) property. Here, an array of string values is passed to the Mention control.
 
 ```
 
@@ -236,9 +249,9 @@ After initialization, populate the Mention with data using the [dataSource](../a
 
 ## Display mention character
 
-By using the [showMentionChar](../api/mention/#showmentionchar) property, the text content can be displayed along with the mention character. You can customize the mention character by using the [mentionChar](../api/mention/#mentionchar) property in the Mention control.
+By using the [showMentionChar](https://ej2.syncfusion.com/javascript/documentation/api/mention/index-default#showmentionchar) property, the text content can be displayed along with the mention character. You can customize the mention character by using the [mentionChar](https://ej2.syncfusion.com/javascript/documentation/api/mention/index-default#mentionchar) property in the Mention control.
 
-> By default, the [mentionChar](../api/mention/#mentionchar) is `@` and the [showMentionChar](../api/mention/#showmentionchar) property is disabled.
+> By default, the [mentionChar](https://ej2.syncfusion.com/javascript/documentation/api/mention/index-default#mentionchar) is `@` and the [showMentionChar](https://ej2.syncfusion.com/javascript/documentation/api/mention/index-default#showmentionchar) property is disabled.
 
 The following example, displays the text content along with the mention character configured as `#`.
 

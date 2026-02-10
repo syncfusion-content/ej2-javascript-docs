@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
-## control Initialization
+## Control Initialization
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using either of the following ways.
 
@@ -22,7 +22,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can
 
 ### Using local script and style references in a HTML page
 
-**Step 1:** Create an app folder `myapp` for Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
+**Step 1:** Create an app folder `my-app` for Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
 
 **Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
@@ -37,9 +37,9 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can
 >
 > Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.17/Essential JS 2/ej2-popups/styles/material.css`
 
-**Step 3:** Create a folder `myapp/resources` and copy/paste the global scripts and styles from the above installed location to `myapp/resources` location.
+**Step 3:** Create a folder `my-app/resources` and copy/paste the global scripts and styles from the above installed location to `my-app/resources` location.
 
-**Step 4:** Create a HTML page (index.html) in `myapp` location and add the Essentials JS 2 script and style references.
+**Step 4:** Create a HTML page (index.html) in `my-app` location and add the Essentials JS 2 script and style references.
 
 ```html
 <!DOCTYPE html>
@@ -94,7 +94,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can
 
 ### Using CDN link for script and style reference
 
-**Step 1:** Create an app folder `myapp` for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
+**Step 1:** Create an app folder `my-app` for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
 
 **Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 control's global scripts and styles are already hosted in the below CDN link formats.
 
@@ -110,7 +110,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can
 >
 > We can also use [CRG](https://crg.syncfusion.com/) to generate combined control styles.
 
-**Step 3:** Create a HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `Tooltip` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Tooltip** control in the index.html by using following code.
+**Step 3:** Create a HTML page (index.html) in `my-app` location and add the CDN link references. Now, add the `Tooltip` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Tooltip** control in the index.html by using following code.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -124,8 +124,8 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can
 
 ## See Also
 
-[Positioning Tooltip](./position/)
+[Positioning Tooltip](./position)
 
-[Tooltip Open Mode](./open-mode/)
+[Tooltip Open Mode](./open-mode)
 
-[Customize the Tooltip](./customization/)
+[Customize the Tooltip](./customization)

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Heatmap chart control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Heatmap chart control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## HeatMap | Syncfusion
+description:  Checkout and learn about Getting started with ##Platform_Name## HeatMap Chart Component of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,16 +9,16 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Heatmap chart control
+# Getting started with ##Platform_Name## HeatMap Chart Component
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+The HeatMap component visualizes two-dimensional data with color-coded cells, making it ideal for displaying large datasets, correlation patterns, and performance metrics. Syncfusion's Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script)  framework provides a pure JavaScript implementation that runs in modern web browsers without dependencies.
 
-## control Initialization
+## HeatMap Component Initialization
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using either of the following ways.
+Initialize the HeatMap component using either of the following approaches:
 
-* Using local script and style references in a HTML page.
-* Using CDN link for script and style reference.
+* **Local setup**: Reference scripts and styles hosted locally on your machine
+* **CDN approach**: Reference scripts and styles from a Content Delivery Network (faster for most use cases)
 
 ### Using local script and style references in a HTML page
 
@@ -52,7 +52,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can
   </html>
 ```
 
-**Step 5:** Now, add the `div` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Heatmap** control in the **index.html** by using following code
+**Step 5:** Now, add the `div` element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 HeatMap** component in the **index.html** by using following code
 
 ```html
 <!DOCTYPE html>
@@ -78,9 +78,9 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can
   </html>
 ```
 
-**Step 6:** Now, run the **index.html** in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 HeatMap** control.
+**Step 6:** Now, run the **index.html** in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 HeatMap** component.
 
-### Using CDN link for script and style reference
+### Using CDN links for script and style reference
 
 **Step 1:** Create an app folder `quickstart` for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls.
 
@@ -90,7 +90,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can
 > Syntax: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/dist/ej2.min.js`
 
 **Example:**
-> Script: [`https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js)
+> Script: [`https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js`](https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js)
 
 **or**
 
@@ -100,17 +100,17 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can
 >`http://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 
 **Example:**
-> HeatMap Script: [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-heatmap/dist/global/ej2-heatmap.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-heatmap/dist/global/ej2-heatmap.min.js)
+> HeatMap Script: [`https://cdn.syncfusion.com/ej2/32.1.19/ej2-heatmap/dist/global/ej2-heatmap.min.js`](https://cdn.syncfusion.com/ej2/32.1.19/ej2-heatmap/dist/global/ej2-heatmap.min.js)
 >
 >Dependency Scripts
 >
-> [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/dist/global/ej2-base.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/dist/global/ej2-base.min.js)
+> [`https://cdn.syncfusion.com/ej2/32.1.19/ej2-base/dist/global/ej2-base.min.js`](https://cdn.syncfusion.com/ej2/32.1.19/ej2-base/dist/global/ej2-base.min.js)
 >
-> [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-data/dist/global/ej2-data.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-data/dist/global/ej2-data.min.js)
+> [`https://cdn.syncfusion.com/ej2/32.1.19/ej2-data/dist/global/ej2-data.min.js`](https://cdn.syncfusion.com/ej2/32.1.19/ej2-data/dist/global/ej2-data.min.js)
 >
-> [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-svg-base/dist/global/ej2-svg-base.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-svg-base/dist/global/ej2-svg-base.min.js)
+> [`https://cdn.syncfusion.com/ej2/32.1.19/ej2-svg-base/dist/global/ej2-svg-base.min.js`](https://cdn.syncfusion.com/ej2/32.1.19/ej2-svg-base/dist/global/ej2-svg-base.min.js)
 
-Create a HTML page (**index.html**) in **~/quickstart** location and add the CDN link references. Now, add the **div** element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Heatmap** control in the **index.html** by using following code.
+Create a HTML page (**index.html**) in **~/quickstart** location and add the CDN link references. Now, add the **div** element and initiate the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 HeatMap** component in the **index.html** by using following code.
 
 ```
 <!DOCTYPE html>
@@ -138,9 +138,9 @@ Create a HTML page (**index.html**) in **~/quickstart** location and add the CDN
 
 > Please replace {RELEASE_VERSION} with the latest version number in the script file referred to in the sample.
 
-**Step 3:** Now, run the **index.html** in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 HeatMap** control.
+**Step 3:** Now, run the **index.html** in web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 HeatMap** component.
 
-The below example shows a basic HeatMap control.
+The following example demonstrates a basic HeatMap component initialized with default settings.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -152,7 +152,7 @@ The below example shows a basic HeatMap control.
 
 ## Populate HeatMap with data
 
-This section explains how to populate the following two-dimensional array data to the HeatMap.
+The HeatMap requires a two-dimensional array where each element represents a data point with its corresponding value. Rows typically represent categories on the Y-axis, and columns represent categories on the X-axis. Values are color-encoded based on the palette settings.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -167,7 +167,7 @@ This section explains how to populate the following two-dimensional array data t
 
 ## Enable axis labels
 
-You can add axis labels to the HeatMap and format those labels using the [xAxis](../api/heatmap/#xaxis) and [yAxis](../api/heatmap/#yaxis) properties. Axis labels provide additional information about the data points populated in the HeatMap.
+You can add axis labels to the HeatMap and format those labels using the [xAxis](../api/heatmap#xaxis) and [yAxis](../api/heatmap#yaxis) properties. Axis labels provide additional information about the data points populated in the HeatMap.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -182,7 +182,7 @@ You can add axis labels to the HeatMap and format those labels using the [xAxis]
 
 ## Add HeatMap title
 
-Add a title using the [titleSettings](../api/heatmap/#titlesettings) property to the HeatMap to provide quick information to the user about the data populated in the HeatMap.
+Add a title using the [titleSettings](../api/heatmap#titlesettings) property to the HeatMap to provide quick information to the user about the data populated in the HeatMap.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -197,7 +197,7 @@ Add a title using the [titleSettings](../api/heatmap/#titlesettings) property to
 
 ## Enable legend
 
-Use a legend for the HeatMap in the [legendSettings](../api/heatmap/#legendsettings) object by setting the [visible](../api/heatmap/legendSettings/#visible) property to **true** and injecting the `Legend` module using the `HeatMap.Inject(Legend)` method.
+Use a legend for the HeatMap in the [legendSettings](../api/heatmap#legendsettings) object by setting the [visible](../api/heatmap/legendSettings#visible) property to **true** and injecting the `Legend` module using the `HeatMap.Inject(Legend)` method.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -212,7 +212,7 @@ Use a legend for the HeatMap in the [legendSettings](../api/heatmap/#legendsetti
 
 ## Add data label
 
-Add data labels to improve the readability of the HeatMap. This can be achieved by setting the  [showLabel](../api/heatmap/cellSettings/#showlabel) property to **true** in the [cellSettings](../api/heatmap/#cellsettings) object.
+Add data labels to improve the readability of the HeatMap. This can be achieved by setting the  [showLabel](../api/heatmap/cellSettings#showlabel) property to **true** in the [cellSettings](../api/heatmap#cellsettings) object.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -227,9 +227,9 @@ Add data labels to improve the readability of the HeatMap. This can be achieved 
 
 ## Add custom cell palette
 
-The default palette settings of the HeatMap cells can be customized by using the [paletteSettings](../api/heatmap/#palettesettings) property.
-Using the [palette](../api/heatmap/paletteSettings/#palette) property in `paletteSettings` object, you can change the color set for the cells.
-You can change the color mode of the cells to fixed or gradient mode using the [type](../api/heatmap/paletteSettings/#type) property.
+The default palette settings of the HeatMap cells can be customized by using the [paletteSettings](../api/heatmap#palettesettings) property.
+Using the [palette](../api/heatmap/paletteSettings#palette) property in `paletteSettings` object, you can change the color set for the cells.
+You can change the color mode of the cells to fixed or gradient mode using the [type](../api/heatmap/paletteSettings#type) property.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -244,7 +244,7 @@ You can change the color mode of the cells to fixed or gradient mode using the [
 
 ## Enable tooltip
 
-The tooltip is used when you cannot display information by using the data labels due to space constraints. You can enable the tooltip by setting the [showTooltip](../api/heatmap/#showtooltip) property to **true** and injecting the `Tooltip` module using the `HeatMap.Inject(Tooltip)` method.
+The tooltip is used when you cannot display information by using the data labels due to space constraints. You can enable the tooltip by setting the [showTooltip](../api/heatmap#showtooltip) property to **true** and injecting the `Tooltip` module using the `HeatMap.Inject(Tooltip)` method.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

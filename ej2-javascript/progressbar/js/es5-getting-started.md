@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Progressbar control | Syncfusion
+title: Getting started | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## Progressbar control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Progressbar control
+# Getting started in ##Platform_Name## Progressbar control
 
 This section explains you the steps required to create a simple ProgressBar and demonstrate the basic usage of the ProgressBar control.
 
@@ -20,7 +20,7 @@ The following list of dependencies are required to use the ProgressBar control i
 ```javascript
 |-- @syncfusion/ej2-progressbar
     |-- @syncfusion/ej2-base
-    |-- @syncfusion/ej2-data: "*"
+    |-- @syncfusion/ej2-data
     |-- @syncfusion/ej2-svg-base
 ```
 

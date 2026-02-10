@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Toast control
 
-This section explains the steps required to create the toast control using TypeScript and configure its properties using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section explains the steps required to create the Toast control using TypeScript and configure its properties using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
@@ -21,6 +21,7 @@ The following list of dependencies are required to use the toast control in your
 
 ```js
 |-- @syncfusion/ej2-notifications
+    |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-popups
     |-- @syncfusion/ej2-buttons
 ```
@@ -63,7 +64,9 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-The toast CSS files are available in the `ej2-notifications` package folder. This can be referenced in the `~/src/styles/styles.css` file of your application using the following code.
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -73,7 +76,9 @@ The toast CSS files are available in the `ej2-notifications` package folder. Thi
 {% endhighlight %}
 {% endtabs %}
 
-## Add toast to the Application
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
+
+## Add Toast to the Application
 
 The toast message can be rendered by defining an `title` or `content`.
 

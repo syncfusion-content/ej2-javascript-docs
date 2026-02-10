@@ -65,7 +65,9 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render TextBox component, need to import inputs and its dependent components styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -76,9 +78,11 @@ To render TextBox component, need to import inputs and its dependent components 
 {% endhighlight %}
 {% endtabs %}
 
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
+
 ## Adding TextBox to the application
 
-Add the HTML Input element with `e-input` class into your `index.html`.
+Add an HTML input element with the `e-input` class to your `index.html` file.
 
 `[src/index.html]`
 
@@ -186,7 +190,7 @@ Output will be as follows:
 
 The floating label TextBox floats the label above the TextBox after focusing, or filled with value in the TextBox.
 
-You can create the floating label TextBox by using the [floatLabelType](../api/textbox/#floatlabeltype) API.
+You can create the floating label TextBox by using the [floatLabelType](https://ej2.syncfusion.com/documentation/api/textbox/index-default#floatlabeltype) API.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## List box control | Syncfusion
+title: Getting started | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## List box control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
@@ -13,6 +13,8 @@ domainurl: ##DomainURL##
 
 This section explains how to create a simple **ListBox** component and configure its available functionalities in TypeScript using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [`quickstart`](https://github.com/syncfusion/ej2-quickstart.git) seed repository.
 
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires Node.js v14.0 or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+
 ## Dependencies
 
 The following list of dependencies are required to use the ListBox component in your application.
@@ -20,17 +22,18 @@ The following list of dependencies are required to use the ListBox component in 
 ```javascript
 |-- @syncfusion/ej2-dropdowns
     |-- @syncfusion/ej2-base
-    |-- @syncfusion/ej2-data
     |-- @syncfusion/ej2-inputs
+    |-- @syncfusion/ej2-data
     |-- @syncfusion/ej2-lists
     |-- @syncfusion/ej2-navigations
+    |-- @syncfusion/ej2-notifications
     |-- @syncfusion/ej2-popups
         |-- @syncfusion/ej2-buttons
 ```
 
-## Set up of the development environment
+## Set up the development environment
 
-To get started with the ListBox component, you have to clone the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [`quickstart`](https://github.com/syncfusion/ej2-quickstart.git) project and install the npm packages by using the following commands.
+To get started with the ListBox component, clone the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [`quickstart`](https://github.com/syncfusion/ej2-quickstart.git) project and install the npm packages by using the following commands.
 
 ```
 git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
@@ -128,7 +131,7 @@ listObj.appendTo('#listbox');
 
 ## Binding data source
 
-After initialization, populate the ListBox with data using the [`dataSource`](../api/list-box/#datasource) property. Here, an array of object is passed to the ListBox component.
+After initialization, populate the ListBox with data using the [`dataSource`](https://ej2.syncfusion.com/documentation/api/list-box/index-default#datasource) property. Here, an array of object is passed to the ListBox component.
 
 ```ts
 
@@ -193,5 +196,5 @@ The following example illustrates the output in your browser.
 
 ## See Also
 
-* [How to reorder the items in the list box](./dual-list-box/#dual-list-box)
-* [How to form submit to the list box](./how-to/form-submit/#form-submit-to-the-list-box)
+* [How to reorder the items in the list box](https://ej2.syncfusion.com/documentation/list-box/dual-list-box#dual-list-box)
+* [How to form submit to the list box](https://ej2.syncfusion.com/documentation/list-box/how-to/form-submit#form-submit-to-the-list-box)

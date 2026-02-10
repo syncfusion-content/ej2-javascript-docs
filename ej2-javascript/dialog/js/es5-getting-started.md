@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Dialog control | Syncfusion
+title: Getting started with ##Platform_Name## Dialog control | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## Dialog control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
@@ -9,16 +9,36 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Dialog control
+# Getting started in ##Platform_Name## Dialog control
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Button and demonstrate the basic usage of the Button control in a JavaScript application.
 
-## Control Initialization
+## Dependencies
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using either of the following ways.
+The list of dependencies required to use the Button component in your application is given below:
 
-* Using local script and style references in a HTML page.
-* Using CDN link for script and style reference.
+```javascript
+|-- @syncfusion/ej2-popups
+    |-- @syncfusion/ej2-base
+    |-- @syncfusion/ej2-buttons
+```
+
+## Setup for local environment
+
+Refer to the following steps to set up your local environment.
+
+**Step 1:** Create a root folder named **my-app** for your application.
+
+**Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
+
+**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Button control.
+
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
+
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Button control can be initialized by using either of the following ways.
+
+* Using local script and style.
+* Using CDN link for script and style.
 
 ### Using local script and style references in a HTML page
 
@@ -143,9 +163,9 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can
 
 ## Modal dialog
 
-A [modal](../api/dialog/#ismodal) shows an overlay behind the Dialog. So, the user should interact the Dialog compulsory before interacting with the remaining content in an application.
+A [modal](https://ej2.syncfusion.com/javascript/documentation/api/dialog/index-default#ismodal) dialog displays an overlay behind the dialog, requiring the user to interact with it before accessing other content in the application.
 
-While the user clicks the overlay, the action can be handled through the [`overlayClick`](../api/dialog/#overlayclick) event. In the below sample, the Dialog close action is performed while clicking on the overlay.
+When the user clicks the overlay, the action can be handled through the [`overlayClick`](https://ej2.syncfusion.com/javascript/documentation/api/dialog/index-default#overlayclick) event. In the sample below, the dialog closes when clicking the overlay.
 
 > When the modal dialog is opened, the Dialog's target scrolling will be disabled. The scrolling will be enabled again once close the Dialog.
 
@@ -162,7 +182,7 @@ While the user clicks the overlay, the action can be handled through the [`overl
 
 ## Enable header
 
-The Dialog header can be enabled by adding the header content as text or HTML content through the [`header`](../api/dialog/#header) property.
+The Dialog header can be enabled by adding the header content as text or HTML content through the [`header`](https://ej2.syncfusion.com/javascript/documentation/api/dialog/index-default#header) property.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -177,13 +197,13 @@ The Dialog header can be enabled by adding the header content as text or HTML co
 
 ## Configure action buttons
 
-The Dialog provides built-in support to render the action buttons on the footer (for ex: 'OK' or 'Cancel' buttons) by using [buttons](../api/dialog/#buttons) property. Each Dialog button allows the user to perform any action while clicking on it.
+The dialog provides built-in support to render action buttons on the footer (for example: 'OK' or 'Cancel' buttons) using the [buttons](https://ej2.syncfusion.com/javascript/documentation/api/dialog/index-default#buttons) property. Each dialog button allows users to perform actions when clicked.
 
-The primary button will be focused automatically on open the Dialog, and add the [click](../api/dialog/buttonPropsModel/#click) event to handle the actions
+The primary button receives focus automatically when the dialog opens. Add the [click](https://ej2.syncfusion.com/javascript/documentation/api/dialog/buttonpropsmodel#click) event to handle button actions.
 
-> When the Dialog initialize with more than one primary buttons, the first primary button gets focus on open the Dialog.
+> When the dialog is initialized with multiple primary buttons, the first primary button receives focus when the dialog opens.
 
-The below sample render with buttons and its action.
+The sample below demonstrates buttons and their actions:
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -198,7 +218,7 @@ The below sample render with buttons and its action.
 
 ## Draggable
 
-The Dialog supports to [drag](../api/dialog/#allowdragging) within its target container by grabbing the Dialog header, which allows the user to reposition the Dialog dynamically.
+The Dialog supports to [drag](https://ej2.syncfusion.com/javascript/documentation/api/dialog/index-default#allowdragging) within its target container by grabbing the Dialog header, which allows the user to reposition the Dialog dynamically.
 
 > The Dialog can be draggable only when the Dialog header is enabled. From `16.2.x` version, enabled draggable support for modal dialog also.
 
@@ -215,7 +235,7 @@ The Dialog supports to [drag](../api/dialog/#allowdragging) within its target co
 
 ## Positioning
 
-The Dialog can be positioned using the [position](../api/dialog/#position) property by providing the X and Y co-ordinates. It can be positioned inside the target of the container or `<body>` of the element based on the given X and Y values.
+The Dialog can be positioned using the [position](https://ej2.syncfusion.com/javascript/documentation/api/dialog/index-default#position) property by providing the X and Y co-ordinates. It can be positioned inside the target of the container or `<body>` of the element based on the given X and Y values.
 
 for X is: left, center, right (or) any offset value
 for Y is: top, center, bottom (or) any offset value
@@ -239,4 +259,4 @@ The below example demonstrates the different Dialog positions.
 * [How to position the dialog on center of the page on scrolling](./how-to/position-the-dialog-on-center-of-the-page-on-scrolling)
 * [Prevent closing of modal dialog](./how-to/prevent-closing-of-modal-dialog)
 * [Close dialog while click on outside of dialog](./how-to/close-dialog-while-click-on-outside-of-dialog)
-* [How to make a reusable alert and confirm dialog](./dialog-utility/)
+* [How to make a reusable alert and confirm dialog](./dialog-utility)

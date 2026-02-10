@@ -9,19 +9,28 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Textbox control
+# Getting started in ##Platform_Name## Textbox control
 
-This section briefly explains about how to create a simple TextBox through CSS classes using Essential<sup style="font-size:70%">&reg;</sup> JS 2 quickstart seed repository.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Textbox and demonstrate the basic usage of the Textbox control in a JavaScript application.
 
 ## Dependencies
 
-The following list of dependencies are required to use the TextBox component in your application.
+The list of dependencies required to use the Textbox component in your application is given below:
 
 ```js
 |-- @syncfusion/ej2-inputs
     |-- @syncfusion/ej2-base
-
 ```
+
+## Setup for local environment
+
+Refer to the following steps to set up your local environment.
+
+**Step 1:** Create a root folder named **my-app** for your application.
+
+**Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
+
+**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Textbox control.
 
 ## Installation and configuration
 
@@ -69,12 +78,11 @@ System.import('app');
 @import '../../node_modules/@syncfusion/ej2-inputs/styles/material.css';
 ```
 
-> The [Custom Resource Generator (CRG)](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script and styles for a set of specific components.
-> This web tool is useful to combine the required component scripts and styles in a single file.
+> The [Custom Resource Generator (CRG)](https://crg.syncfusion.com/) is an online web tool that generates custom scripts and styles for specific components. This tool combines required component scripts and styles into a single file.
 
 ## Adding TextBox to the application
 
-Add the HTML Input element with `e-input` class into your `index.html`.
+Add an HTML input element with the `e-input` class to your `index.html` file.
 
 `[src/index.html]`
 
@@ -165,7 +173,7 @@ Output will be as follows:
 
 The floating label TextBox floats the label above the TextBox after focusing, or filled with value in the TextBox.
 
-You can create the floating label TextBox by using the [floatLabelType](../api/textbox/#floatLabelType) API.
+You can create the floating label TextBox by using the [floatLabelType](https://ej2.syncfusion.com/javascript/documentation/api/textbox/index-default#floatLabelType) API.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

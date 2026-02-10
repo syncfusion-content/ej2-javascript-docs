@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Image editor control | Syncfusion
+title: Getting started with ##Platform_Name## Image editor control | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## Image editor control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
@@ -9,30 +9,41 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Image editor control
+# ES5 getting started in ##Platform_Name## Image Editor control
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Image Editor and demonstrate the basic usage of the Image Editor control in a JavaScript application.
 
 ## Dependencies
 
-The following list of dependencies are required to use the Image Editor control in your application.
+The list of dependencies required to use the Image Editor component in your application is given below:
 
 ```js
 |-- @syncfusion/ej2-image-editor
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-buttons
+    |-- @syncfusion/ej2-dropdowns
     |-- @syncfusion/ej2-inputs
     |-- @syncfusion/ej2-navigations
     |-- @syncfusion/ej2-popups
     |-- @syncfusion/ej2-splitbuttons
 ```
 
-## Control Initialization
+## Setup for local environment
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using either of the following ways.
+Refer to the following steps to set up your local environment.
 
-* Using local script and style references in a HTML page.
-* Using CDN link for script and style reference.
+**Step 1:** Create a root folder named **my-app** for your application.
+
+**Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
+
+**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Image Editor control.
+
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
+
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Image Editor control can be initialized by using either of the following ways.
+
+* Using local script and style.
+* Using CDN link for script and style.
 
 ### Using local script and style references in a HTML page
 
@@ -177,9 +188,9 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 **Step 4:** Now, run the `index.html` in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Image Editor** control.
 
-## Adding Image Editor control to the application
+## Add the Image Editor control to the application
 
-Add the HTML DIV tag with the `id` attribute as `imageeditor` to your `index.html` file.
+Add an HTML DIV element with the `id` attribute set to `image editor` in your `index.html` file:
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}

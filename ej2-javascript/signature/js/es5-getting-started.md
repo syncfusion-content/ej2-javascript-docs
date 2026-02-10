@@ -9,24 +9,35 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Signature control
+# Getting started in ##Platform_Name## Signature control
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Signature and demonstrate the basic usage of the Signature control in a JavaScript application.
 
 ## Dependencies
 
-The following list of dependencies are required to use the Signature control in your application.
+The list of dependencies required to use the Signature component in your application is given below:
 
 ```js
-|-- @syncfusion/ej2-base
+|-- @syncfusion/ej2-inputs
+    |-- @syncfusion/ej2-base
 ```
 
-## Control Initialization
+## Setup for local environment
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using either of the following ways.
+Refer to the following steps to set up your local environment.
 
-* Using local script and style references in a HTML page.
-* Using CDN link for script and style reference.
+**Step 1:** Create a root folder named **my-app** for your application.
+
+**Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
+
+**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Signature control.
+
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
+
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Signature control can be initialized by using either of the following ways.
+
+* Using local script and style.
+* Using CDN link for script and style.
 
 ### Using local script and style references in a HTML page
 
@@ -86,7 +97,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
   </html>
 ```
 
-**Step 5:** Now, add the `Signature` element and initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Signature** control in the `index.html` by using following code
+**Step 5:** Now, add the `Signature` element and initialize the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Signature** control in the `index.html` as shown below
 
 ```html
 <!DOCTYPE html>

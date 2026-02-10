@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Color picker control | Syncfusion
+title: Getting started | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## Color picker control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
@@ -9,16 +9,35 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Color picker control
+# Getting started in ##Platform_Name## Color picker control
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Color picker and demonstrate the basic usage of the Color picker control in a JavaScript application.
 
-## Control Initialization
+## Dependencies
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using either of the following ways.
+The list of dependencies required to use the Color picker component in your application is given below:
 
-* Using local script and style references in a HTML page.
-* Using CDN link for script and style reference.
+```js
+|-- @syncfusion/ej2-inputs
+    |-- @syncfusion/ej2-base
+```
+
+## Setup for local environment
+
+Refer to the following steps to set up your local environment.
+
+**Step 1:** Create a root folder named **my-app** for your application.
+
+**Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
+
+**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Color picker control.
+
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
+
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Color picker control can be initialized by using either of the following ways.
+
+* Using local script and style.
+* Using CDN link for script and style.
 
 ### Using local script and style references in a HTML page
 
@@ -123,13 +142,13 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
   </html>
 ```
 
-**Step 6:** Now, run the `index.html` in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript ColorPicker** control.
+**Step 6:** Now, run the `index.html` in a web browser. It will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript ColorPicker** control.
 
 ## Inline type
 
 By default, the ColorPicker will be rendered using SplitButton and open the pop-up to access the ColorPicker. To render the ColorPicker container alone and to access it directly, render it as inline. It can be achieved by setting the [`inline`](../api/color-picker#inline) property to `true`.
 
-The following sample shows the inline type rendering of ColorPicker.
+The following example demonstrates inline type rendering of the ColorPicker.
 
 `[src/index.html]`
 
@@ -244,9 +263,9 @@ Output will be as follows:
 
 ## Using CDN link for script and style reference for inline type
 
-By default, the ColorPicker will be rendered using SplitButton and open the pop-up to access the ColorPicker. To render the ColorPicker container alone and to access it directly, render it as inline. It can be achieved by setting the [`inline`](../api/color-picker/#inline) property to `true`.
+By default, the ColorPicker is rendered using SplitButton and opens a pop-up to access the color picker. To render the ColorPicker container alone and access it directly, set the [`inline`](https://ej2.syncfusion.com/javascript/documentation/api/color-picker/index-default#inline) property to `true`.
 
-The following sample shows the inline type rendering of ColorPicker.
+The following example demonstrates inline type rendering of the ColorPicker.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}

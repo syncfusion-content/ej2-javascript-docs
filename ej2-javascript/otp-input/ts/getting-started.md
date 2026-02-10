@@ -62,7 +62,9 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render OTP Input control, need to import inputs and its dependent controls styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -72,6 +74,8 @@ To render OTP Input control, need to import inputs and its dependent controls st
 
 {% endhighlight %}
 {% endtabs %}
+
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
 
 ## Adding OTP Input to the Application
 
@@ -106,7 +110,7 @@ Add the HTML input tag with ID attribute as the `element` to your `index.html` f
 {% endhighlight %}
 {% endtabs %}
 
-Then, import the OTP Input control in your `app.ts` file, and initialize it with the `#element`.
+Then, import the OTP Input control in your `app.ts` file and initialize it with the `#element`.
 
 `[src/app/app.ts]`
 
@@ -136,7 +140,7 @@ npm start
 {% endhighlight %}
 {% endtabs %}
 
-The following example shows a basic OTP Input control.
+The following example demonstrates a basic OTP Input control.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

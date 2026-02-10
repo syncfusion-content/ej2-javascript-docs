@@ -22,7 +22,7 @@ The following list of dependencies are required to use the ProgressBar control i
 ```javascript
 |-- @syncfusion/ej2-progressbar
     |-- @syncfusion/ej2-base
-    |-- @syncfusion/ej2-data: "*"
+    |-- @syncfusion/ej2-data
     |-- @syncfusion/ej2-svg-base
 ```
 
@@ -61,6 +61,25 @@ npm install
 
 {% endhighlight %}
 {% endtabs %}
+
+## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
+
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
+
+{% tabs %}
+{% highlight css tabtitle="style.css" %}
+
+@import '../../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../../node_modules/@syncfusion/ej2-notifications/styles/material.css';
+
+{% endhighlight %}
+{% endtabs %}
+
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
+
+> To use the combined control styles, make use of Syncfusion<sup style="font-size:70%">&reg;</sup> [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in the application.
 
 ## Add Progress Bar to the Application
 

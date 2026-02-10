@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Datepicker control | Syncfusion
+title: Getting started with ##Platform_Name## Datepicker control | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## Datepicker control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
@@ -9,18 +9,41 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Datepicker control
+# Getting started in ##Platform_Name## Datepicker control
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Datepicker and demonstrate the basic usage of the Datepicker control in a JavaScript application.
 
-## Component Initialization
+## Dependencies
 
-Create an app folder `myapp` in local machine to initialize Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components.
+The list of dependencies required to use the Datepicker component in your application is given below:
 
-Using either of the following way to refer the required script and styles.
+```javascript
+|-- @syncfusion/ej2-calendars
+  |-- @syncfusion/ej2-base
+  |-- @syncfusion/ej2-data
+  |-- @syncfusion/ej2-inputs
+    |-- @syncfusion/ej2-splitbuttons
+  |-- @syncfusion/ej2-lists
+  |-- @syncfusion/ej2-popups
+    |-- @syncfusion/ej2-buttons
+```
 
-* Using local script and style references in a HTML page.
-* Using CDN link for script and style reference.
+## Setup for local environment
+
+Refer to the following steps to set up your local environment.
+
+**Step 1:** Create a root folder named **my-app** for your application.
+
+**Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
+
+**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Datepicker control.
+
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
+
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Datepicker control can be initialized by using either of the following ways.
+
+* Using local script and style.
+* Using CDN link for script and style.
 
 ### Using local script and style references in a HTML page
 
@@ -146,7 +169,7 @@ Using either of the following way to refer the required script and styles.
 >
 > Styles: [`http://cdn.syncfusion.com/ej2/ej2-calendars/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-calendars/styles/material.css)
 
-**Step 2:** Have to add `CDN` global script and style for calender and its dependent packages in `myapp/index.html` like below.
+**Step 2:** Add the `CDN` global script and styles for calendar and its dependent packages in `myapp/index.html` as shown below.
 
 ```html
 <!DOCTYPE html>

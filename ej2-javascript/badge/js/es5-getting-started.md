@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Badge control | Syncfusion
+title: Getting started with ##Platform_Name## Badge control | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## Badge control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started
@@ -9,16 +9,34 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Badge control
+# Getting started in ##Platform_Name## Badge control
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework that can be directly used in the latest web browsers.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Badge and demonstrate the basic usage of the Badge control in a JavaScript application.
 
-## Control Initialization
+## Dependencies
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using any of the following two methods:
+The list of dependencies required to use the Badge component in your application is given below:
 
-* Using local script and style references in an HTML page.
-* Using CDN link for script and style reference.
+```javascript
+|-- @syncfusion/ej2-notifications
+```
+
+## Setup for local environment
+
+Refer to the following steps to set up your local environment.
+
+**Step 1:** Create a root folder named **my-app** for your application.
+
+**Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
+
+**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Badge control.
+
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
+
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Badge control can be initialized by using either of the following ways.
+
+* Using local script and style.
+* Using CDN link for script and style.
 
 ### Using local script and style references in an HTML page
 
@@ -106,8 +124,8 @@ The below located script and style file contains all Syncfusion<sup style="font-
 
 {% previewsample "page.domainurl/code-snippet/badge/es5-getting-started-cs1" %}
 
-**Step 4:** Now, run the `index.html` in the web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Badge** control.
+**Step 4:** Now, run the `index.html` in the web browser to display the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Badge** control.
 
 ## See Also
 
-[Types of Badge](./types/)
+[Types of Badge](./types)

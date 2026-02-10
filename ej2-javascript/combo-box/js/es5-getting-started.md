@@ -11,29 +11,40 @@ domainurl: ##DomainURL##
 
 # Es5 getting started in ##Platform_Name## Combo box control
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 ComboBox and demonstrate the basic usage of the ComboBox control in a JavaScript application.
 
 ## Dependencies
 
-The following list of dependencies are required to use the `ComboBox` component in your application.
+The list of dependencies required to use the ComboBox component in your application is given below:
 
 ```javascript
 |-- @syncfusion/ej2-dropdowns
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-data
-    |-- @syncfusion/ej2-lists
     |-- @syncfusion/ej2-inputs
+    |-- @syncfusion/ej2-lists
     |-- @syncfusion/ej2-navigations
+    |-- @syncfusion/ej2-notifications
     |-- @syncfusion/ej2-popups
         |-- @syncfusion/ej2-buttons
 ```
 
-## Component Initialization
+## Setup for local environment
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components can be initialized by using either of the following ways.
+Refer to the following steps to set up your local environment.
 
-* Using local script and style references in a HTML page.
-* Using CDN link for script and style reference.
+**Step 1:** Create a root folder named **my-app** for your application.
+
+**Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
+
+**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 ComboBox control.
+
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
+
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 ComboBox control can be initialized by using either of the following ways.
+
+* Using local script and style.
+* Using CDN link for script and style.
 
 ### Using local script and style references in a HTML page
 
@@ -128,7 +139,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components c
 
 **Step 1:** Create an app folder `myapp` for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components.
 
-**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 component's global scripts and styles are already hosted in the below CDN link formats.
+**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 component's global scripts and styles are already hosted in the following CDN link formats.
 
 **Syntax:**
 > Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -154,7 +165,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components c
 
 ## Binding data source
 
-After initializing, populate the ComboBox with data using the [dataSource](../api/combo-box/#datasource) property. Here, an array of string values is passed to the ComboBox component.
+After initialization, populate the ComboBox with data by using the [dataSource](https://ej2.syncfusion.com/javascript/documentation/api/combo-box/index-default#datasource) property. Here, an array of string values is passed to the ComboBox component.
 
 ```html
 <!DOCTYPE html>
@@ -196,8 +207,7 @@ After initializing, populate the ComboBox with data using the [dataSource](../ap
 
 ## Custom values
 
-The ComboBox allows the user to give input as custom value which is not required to present in predefined set of values. By default, this support is enabled by [allowCustom](../api/combo-box/#allowcustom) property. In this case, both text field and value field considered as same.
-The custom value will be sent to post back handler when a form is about to be submitted.
+The ComboBox allows users to enter custom values that are not in the predefined set. By default, this is enabled through the [allowCustom](https://ej2.syncfusion.com/javascript/documentation/api/combo-box/index-default#allowcustom) property. In this case, both text and value fields are treated as the same. Custom values are sent to the post-back handler when a form is submitted.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -209,9 +219,9 @@ The custom value will be sent to post back handler when a form is about to be su
 
 ## Configure the popup list
 
-By default, the width of the popup list automatically adjusts according to the ComboBox input element's width, and the height of the popup list has '300px'.
+By default, the width of the popup list automatically adjusts according to the ComboBox input element's width, and the height of the popup list is 300px.
 
-The height and width of the popup list can also be customized using the [popupHeight](../api/combo-box/#popupheight) &nbsp;and [popupWidth](../api/combo-box/#popupwidth) properties respectively.
+The height and width of the popup list can also be customized using the [popupHeight](https://ej2.syncfusion.com/javascript/documentation/api/combo-box/index-default#popupheight) and [popupWidth](https://ej2.syncfusion.com/javascript/documentation/api/combo-box/index-default#popupwidth) properties, respectively.
 
 In the following sample, popup list's width and height are configured.
 

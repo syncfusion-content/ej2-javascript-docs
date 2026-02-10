@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Drop down list control | Syncfusion
+title: Getting started | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Drop down list control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
@@ -13,6 +13,8 @@ domainurl: ##DomainURL##
 
 This section explains how to create a simple **DropDownList** component and configure its available functionalities in TypeScript using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/syncfusion/ej2-quickstart.git) seed repository.
 
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires Node.js v14.0 or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+
 ## Dependencies
 
 The following list of dependencies are required to use the DropDownList component in your application.
@@ -24,13 +26,14 @@ The following list of dependencies are required to use the DropDownList componen
     |-- @syncfusion/ej2-inputs
     |-- @syncfusion/ej2-lists
     |-- @syncfusion/ej2-navigations
+    |-- @syncfusion/ej2-notifications
     |-- @syncfusion/ej2-popups
         |-- @syncfusion/ej2-buttons
 ```
 
-## Set up of the development environment
+## Setup the development environment
 
-To get started with the DropDownList component, you have to clone the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [`quickstart`](https://github.com/syncfusion/ej2-quickstart.git) project and install the npm packages by using the following commands.
+Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack).
 
 ```
 git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
@@ -42,7 +45,7 @@ npm install
 
 ## Initialize the DropDownList
 
-The DropDownList can be initialized through three different tags as described in the [Initialize Tags](../tags).
+The DropDownList can be initialized through input, select, or textarea tags as described in the [Initialize Tags](../tags).
 
 Add the HTML input element that needs to be initialized as a DropDownList in `index.html`.
 
@@ -79,7 +82,7 @@ Add the HTML input element that needs to be initialized as a DropDownList in `in
 </html>
 ```
 
-Now, import the  DropDownList component to your `app.ts` and initialize it to the element `#ddlelement` as shown below.
+Now, import the  DropDownList component to your `app.ts` and initialize it to the element `#dropDown` as shown below.
 
 `[src/app/app.ts]`
 
@@ -91,13 +94,13 @@ import { DropDownList } from '@syncfusion/ej2-dropdowns';
 let dropDownListObject: DropDownList = new DropDownList();
 
 // render initialized DropDownList
-dropDownListObject.appendTo('#ddlelement');
+dropDownListObject.appendTo('#dropDown');
 
 ```
 
 ## Binding data source
 
-After initialization, populate the DropDownList with data using the [dataSource](https://ej2.syncfusion.com/documentation/api/drop-down-list#datasource) &nbsp;property. Here, an array of string values is passed to the DropDownList component.
+After initialization, populate the DropDownList with data using the [dataSource](https://ej2.syncfusion.com/documentation/api/drop-down-list#datasource) property. Here, an array of string values is passed to the DropDownList component.
 
 ```ts
 import { DropDownList } from '@syncfusion/ej2-dropdowns';
@@ -138,9 +141,9 @@ The following example illustrates the output in your browser.
 
 ## Configure the popup list
 
-By default, the width of the popup list automatically adjusts according to the DropDownList input element's width, and the height of the popup list has '300px'.
+By default, the width of the popup list automatically adjusts according to the DropDownList input element's width, and the height of the popup list is 300px.
 
-The height and width of the popup list can also be customized using the [popupHeight](https://ej2.syncfusion.com/documentation/api/drop-down-list#popupheight) &nbsp;and [popupWidth](https://ej2.syncfusion.com/documentation/api/drop-down-list#popupwidth) properties respectively.
+The height and width of the popup list can also be customized using the [popupHeight](https://ej2.syncfusion.com/documentation/api/drop-down-list#popupheight) and [popupWidth](https://ej2.syncfusion.com/documentation/api/drop-down-list#popupwidth) properties, respectively.
 
 In the following sample, popup list's width and height are configured.
 

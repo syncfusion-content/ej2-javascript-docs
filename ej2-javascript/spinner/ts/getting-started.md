@@ -15,6 +15,17 @@ This section explains how to create a simple Spinner component and configure its
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
+## Dependencies
+
+The following list of dependencies are required to use spinner in your application.
+
+```javascript
+
+|-- @syncfusion/ej2-popups
+    |-- @syncfusion/ej2-base
+
+```
+
 ## Set up development environment
 
 Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
@@ -53,7 +64,9 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render Spinner component, need to import Popups and its dependent components styles as given below in in the `~/src/styles/styles.css` file, as shown below: 
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -63,11 +76,11 @@ To render Spinner component, need to import Popups and its dependent components 
 {% endhighlight %}
 {% endtabs %}
 
-Initialize the Spinner using `createSpinner` method and show/hide the spinner using `showSpinner` and `hideSpinner` methods accordingly. Set the target to the spinner to render it based on specific target.
+Initialize the Spinner using the `createSpinner` method and show/hide the spinner using the `showSpinner` and `hideSpinner` methods. Set the target to render the spinner based on a specific element.
 
-The following steps explains you on how to create and how to show/hide your Spinner.
+The following steps explain how to create and show/hide the Spinner:
 
-* Import the `createSpinner` method from `ej2-popups` library into your file as shown in below.
+* Import the `createSpinner` method from the `ej2-popups` library as shown below:
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -77,7 +90,7 @@ import { createSpinner } from '@syncfusion/ej2-popups';
 {% endhighlight %}
 {% endtabs %}
 
-* Show and hide this spinner by using `showSpinner` and `hideSpinner` methods for loading in your page and import them in your file as shown in below.
+* Show and hide the spinner by using the `showSpinner` and `hideSpinner` methods for loading in your page. Import them in your file as shown below:
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -86,6 +99,8 @@ import { showSpinner, hideSpinner } from '@syncfusion/ej2-popups';
 
 {% endhighlight %}
 {% endtabs %}
+
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
 
 ## Create the Spinner globally
 

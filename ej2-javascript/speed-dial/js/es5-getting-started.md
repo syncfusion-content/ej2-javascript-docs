@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Speed dial control | Syncfusion
+title: Getting started | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## Speed dial control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
@@ -9,25 +9,35 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Speed dial control
+# Getting started in ##Platform_Name## Speed dial control
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Speed dial and demonstrate the basic usage of the Speed dial control in a JavaScript application.
 
 ## Dependencies
 
-The list of dependencies required to use the Speed Dial control in your application is given as follows:
+The list of dependencies required to use the Speed dial component in your application is given below:
 
 ```js
 |-- @syncfusion/ej2-buttons
     |-- @syncfusion/ej2-base
 ```
 
-## Control Initialization
+## Setup for local environment
 
-The JavaScript (ES5) Speed Dial control can be initialized by using either of the following ways.
+Refer to the following steps to set up your local environment.
 
-* Using local script and style references in a HTML page.
-* Using CDN link for script and style reference.
+**Step 1:** Create a root folder named **my-app** for your application.
+
+**Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
+
+**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Speed dial control.
+
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
+
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Speed dial control can be initialized by using either of the following ways.
+
+* Using local script and style.
+* Using CDN link for script and style.
 
 ### Using local script and style references in a HTML page
 
@@ -60,7 +70,7 @@ The below located script and style file contains all Syncfusion<sup style="font-
 >
 > Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\material.css`
 
-The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script and styles for a set of specific controls. This web tool is useful to combine the required control scripts and styles in a single file.
+The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com) is an online web tool, which can be used to generate the custom script and styles for a set of specific controls. This web tool is useful to combine the required control scripts and styles in a single file.
 
 **Step 3:** Create a folder `~/quickstart/resources` and copy/paste the global scripts and styles from the above installed location to `~/quickstart/resources/package` corresponding package location.
 
@@ -91,7 +101,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 </html>
 ```
 
-**Step 5:** Now, add the `SpeedDial` element, define the action items using [`items`](../api/speed-dial/#items) property and initiate the `JavaScript (ES5) SpeedDial` control in the `index.html` by using following code
+**Step 5:** Now, add the `SpeedDial` element, define the action items using [`items`](../api/speed-dial#items) property and initiate the `JavaScript (ES5) SpeedDial` control in the `index.html` by using following code
 
 ```html
 <!DOCTYPE html>
@@ -157,7 +167,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 > Styles: [`https://cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css`](http://cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css)
 
 **Step 3:** Create a HTML page (index.html) in `~/quickstart/index.html` location and add the CDN link references. Now, add the
-`SpeedDial` element, define the action items using [`items`](../api/speed-dial/#items) property and initiate the `JavaScript (ES5) SpeedDial` control in the index.html by using following code.
+`SpeedDial` element, define the action items using [`items`](../api/speed-dial#items) property and initiate the `JavaScript (ES5) SpeedDial` control in the index.html by using following code.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}

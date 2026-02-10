@@ -61,7 +61,9 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-The badge CSS files are available in the `ej2-notifications` package folder. This can be referenced in the `~/src/styles/styles.css` file of your application using the following code.
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -72,7 +74,7 @@ The badge CSS files are available in the `ej2-notifications` package folder. Thi
 {% endhighlight %}
 {% endtabs %}
 
-> We can also use [CRG](https://crg.syncfusion.com/) to generate combined control styles.
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
 
 ## Add badge into application
 

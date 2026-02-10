@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Multi select control | Syncfusion
+title: Getting started | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## Multi select control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
@@ -9,13 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Multi select control
+# Getting started in ##Platform_Name## Multi select control
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Multiselect and demonstrate the basic usage of the Multiselect control in a JavaScript application.
 
 ## Dependencies
 
-The following list of dependencies are required to use the MultiSelect component in your application.
+The list of dependencies required to use the Multiselect component in your application is given below:
 
 ```javascript
 |-- @syncfusion/ej2-dropdowns
@@ -24,16 +24,27 @@ The following list of dependencies are required to use the MultiSelect component
     |-- @syncfusion/ej2-inputs
     |-- @syncfusion/ej2-lists
     |-- @syncfusion/ej2-navigations
+    |-- @syncfusion/ej2-notifications
     |-- @syncfusion/ej2-popups
         |-- @syncfusion/ej2-buttons
 ```
 
-## Component Initialization
+## Setup for local environment
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components can be initialized by using either of the following ways.
+Refer to the following steps to set up your local environment.
 
-* Using local script and style references in a HTML page.
-* Using CDN link for script and style reference.
+**Step 1:** Create a root folder named **my-app** for your application.
+
+**Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
+
+**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Multiselect control.
+
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
+
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Multiselect control can be initialized by using either of the following ways.
+
+* Using local script and style.
+* Using CDN link for script and style.
 
 ### Using local script and style references in a HTML page
 
@@ -128,7 +139,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components c
 
 **Step 1:** Create an app folder `myapp` for the Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components.
 
-**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 component's global scripts and styles are already hosted in the below CDN link formats.
+**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 component's global scripts and styles are already hosted in the following CDN link formats.
 
 **Syntax:**
 > Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -154,7 +165,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components c
 
 ## Binding data source
 
-After initialization, populate the MultiSelect with data using the [dataSource](../api/multi-select/#datasource) &nbsp;property. Here, an array of string values is passed to the MultiSelect component.
+After initialization, populate the MultiSelect with data using the [dataSource](https://ej2.syncfusion.com/javascript/documentation/api/multi-select/index-default#datasource) &nbsp;property. Here, an array of string values is passed to the MultiSelect component.
 
 ```html
 <!DOCTYPE html>
@@ -197,7 +208,7 @@ After initialization, populate the MultiSelect with data using the [dataSource](
 
 By default, the width of the popup list automatically adjusts according to the MultiSelect input element's width, and the height auto adjust's according to the height of the popup list items.
 
-The height and width of the popup list can also be customized using the [popupHeight](../api/multi-select/#popupheight) &nbsp;and [popupWidth](../api/multi-select/#popupwidth) properties respectively.
+The height and width of the popup list can also be customized using the [popupHeight](https://ej2.syncfusion.com/javascript/documentation/api/multi-select/index-default#popupheight) &nbsp;and [popupWidth](https://ej2.syncfusion.com/javascript/documentation/api/multi-select/index-default#popupwidth) properties respectively.
 
 In the following sample, popup list's width and height are configured.
 

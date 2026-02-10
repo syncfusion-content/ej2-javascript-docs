@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Message control
 
-This section explains the steps required to create a simple [JavaScript Message](https://www.syncfusion.com/javascript-ui-controls/js-message) control and configure its available functionalities in the TypeScript using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with all the Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages.
+This section explains the steps required to create a simple [JavaScript Message](https://www.syncfusion.com/javascript-ui-controls/js-message) control and configure its available functionalities using TypeScript and the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with all the Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
@@ -64,7 +64,9 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-The combined CSS files are available in the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package root folder. This can be referenced in the `~/src/styles/styles.css` file of your application using the following code. 
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -76,11 +78,12 @@ The combined CSS files are available in the Essential<sup style="font-size:70%">
 {% endtabs %}
 
 > You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
+
 > To use the combined control styles, make use of Syncfusion<sup style="font-size:70%">&reg;</sup> [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in the application.
 
 ## Add Message control
 
-Now, start adding the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Message control to the application. To get started, add the HTML `<div>` element to the `index.html` file.
+Now, start adding the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Message control to the application. To get started, add an HTML `<div>` element to the `index.html` file.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}

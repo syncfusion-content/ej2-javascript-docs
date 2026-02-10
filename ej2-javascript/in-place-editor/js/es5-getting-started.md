@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## In place editor control | Syncfusion
+title: Getting started | Syncfusion
 description:  Checkout and learn about Es5 getting started with ##Platform_Name## In place editor control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
@@ -9,16 +9,42 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## In place editor control
+# ES5 getting started in ##Platform_Name## In-place editor control
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in the latest web browsers.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 In-Place editor and demonstrate the basic usage of the In-Place editor control in a JavaScript application.
 
-## Control Initialization
+## Dependencies
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using either of the following ways.
+The list of dependencies required to use the In-Place editor component in your application is given below:
 
-* Using local script and style references in a HTML page.
-* Using CDN link for the script and style reference.
+```js
+|-- @syncfusion/ej2-inplace-editor
+    |-- @syncfusion/ej2-base
+    |-- @syncfusion/ej2-data
+    |-- @syncfusion/ej2-inputs
+    |-- @syncfusion/ej2-popups
+    |-- @syncfusion/ej2-buttons
+    |-- @syncfusion/ej2-dropdowns
+    |-- @syncfusion/ej2-calendars
+    |-- @syncfusion/ej2-richtexteditor
+```
+
+## Setup for local environment
+
+Refer to the following steps to set up your local environment.
+
+**Step 1:** Create a root folder named **my-app** for your application.
+
+**Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
+
+**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 In-Place editor control.
+
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
+
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 In-Place editor control can be initialized by using either of the following ways.
+
+* Using local script and style.
+* Using CDN link for script and style.
 
 ### Using local script and style references in an HTML page
 
@@ -112,9 +138,9 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can
 
 ## Configuring DropDownList
 
-You can render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 DropDownList by changing the [`type`](../api/inplace-editor/inputType/) property as [`DropDownList`](../api/drop-down-list) and configure its properties and methods using the `model` property.
+You can render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 DropDownList by changing the [`type`](https://ej2.syncfusion.com/javascript/documentation/api/inplace-editor/inputtype) property as [`DropDownList`](../api/drop-down-list) and configure its properties and methods using the `model` property.
 
-In the following sample, [`type`](../api/inplace-editor/inputType/) and model values are configured to render the [`DropDownList`](../api/drop-down-list) control.
+In the following sample, [`type`](https://ej2.syncfusion.com/javascript/documentation/api/inplace-editor/inputtype) and model values are configured to render the [`DropDownList`](../api/drop-down-list) control.
 
 `[index.html]`
 
@@ -187,9 +213,9 @@ In the following sample, [`type`](../api/inplace-editor/inputType/) and model
 
 ## Integrate DatePicker
 
-You can render the Essential<sup style="font-size:70%">&reg;</sup> JS2 [DatePicker](../api/datepicker) by changing the [`type`](../api/inplace-editor/inputType/) property as [`Date`](../api/inplace-editor/inputType/)  and also configure its properties and methods using the [`model`](../api/inplace-editor/#model) property.
+You can render the Essential<sup style="font-size:70%">&reg;</sup> JS2 [DatePicker](https://ej2.syncfusion.com/javascript/documentation/api/datepicker/index-default) by changing the [`type`](https://ej2.syncfusion.com/javascript/documentation/api/inplace-editor/inputtype) property as [`Date`](https://ej2.syncfusion.com/javascript/documentation/api/inplace-editor/inputtype)  and also configure its properties and methods using the [`model`](https://ej2.syncfusion.com/javascript/documentation/api/inplace-editor/index-default#model) property.
 
-In the following sample, [`type`](../api/inplace-editor/inputType/) and [`model`](../api/inplace-editor/#model) values are configured to render the [DatePicker](../api/datepicker) control.
+In the following sample, [`type`](https://ej2.syncfusion.com/javascript/documentation/api/inplace-editor/inputtype) and [`model`](https://ej2.syncfusion.com/javascript/documentation/api/inplace-editor/index-default#model) values are configured to render the [DatePicker](https://ej2.syncfusion.com/javascript/documentation/api/datepicker/index-default) control.
 
 `[index.html]`
 
@@ -272,7 +298,7 @@ In the following sample, [`type`](../api/inplace-editor/inputType/) and [`mod
 
 ## Submitting data to the server (save)
 
-You can submit editor value to the server by configuring the [`url`](../api/inplace-editor/#url), [`adaptor`](../api/inplace-editor/adaptorType/) and [`primaryKey`](../api/inplace-editor/#primarykey) property.
+You can submit editor value to the server by configuring the [`url`](https://ej2.syncfusion.com/javascript/documentation/api/inplace-editor/index-default#url), [`adaptor`](https://ej2.syncfusion.com/javascript/documentation/api/inplace-editor/adaptortype) and [`primaryKey`](https://ej2.syncfusion.com/javascript/documentation/api/inplace-editor/index-default#primarykey) property.
 
 | Property   | Usage                                           |
 |------------|---------------------------------------------------------|
@@ -280,11 +306,11 @@ You can submit editor value to the server by configuring the [`url`](../api/inpl
 | **`adaptor`**    | Specifies the adaptor type that is used by DataManager to communicate with DataSource.                |
 | **`primaryKey`** | Defines the unique primary key of editable field which can be used for saving data in the data-base.|
 
-> The [`primaryKey`](../api/inplace-editor/#primarykey) property is mandatory. If it's not set, edited data are not sent to the server.
+> The [`primaryKey`](https://ej2.syncfusion.com/javascript/documentation/api/inplace-editor/index-default#primarykey) property is mandatory. If it's not set, edited data are not sent to the server.
 
 ## Refresh In-place Editor with modified value
 
-The edited data is submitted to the server and you can see the new values getting reflected in the In-place Editor.
+The edited data is submitted to the server and the updated values are reflected in the in-place editor.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

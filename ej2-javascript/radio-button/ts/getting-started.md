@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Radio button control | Syncfusion
+title: Getting started | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Radio button control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
@@ -24,7 +24,7 @@ The following list of dependencies are required to use the RadioButton component
     |-- @syncfusion/ej2-base
 ```
 
-## Set up development environment
+## Setup development environment
 
 Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
@@ -62,7 +62,9 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render RadioButton component, need to import Button and its dependent components styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -73,9 +75,11 @@ To render RadioButton component, need to import Button and its dependent compone
 {% endhighlight %}
 {% endtabs %}
 
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
+
 ## Add RadioButton to the project
 
-Add the HTML input tag with id attribute as the `element` to your `index.html` file.
+Add the HTML input tag with an id attribute as the `element` to your `index.html` file.
 
 `[src/index.html]`
 
@@ -108,7 +112,7 @@ Add the HTML input tag with id attribute as the `element` to your `index.html` f
 {% endhighlight %}
 {% endtabs %}
 
-Import the RadioButton component in your `app.ts` file and initialize it with the `#element` as shown in the following.
+Import the RadioButton component in your `app.ts` file and initialize it with the `#element` selector as shown below.
 
 `[src/app/app.ts]`
 
@@ -128,7 +132,7 @@ radiobutton.appendTo('#element');
 
 ## Run the application
 
-Run the application in the browser by using the following command:
+Run the application in the browser using the following command:
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
@@ -138,7 +142,7 @@ npm start
 {% endhighlight %}
 {% endtabs %}
 
-The following example shows a basic RadioButton component.
+The following example shows a basic RadioButton component:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Circular gauge control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Circular gauge control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Circular Gauge Component | Syncfusion
+description:  Checkout and learn about Getting started with ##Platform_Name## Circular Gauge Component of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -10,15 +10,30 @@ domainurl: ##DomainURL##
 ---
 
 
-# Getting started in ##Platform_Name## Circular gauge control
+# Getting started in ##Platform_Name## Circular Gauge Component
 
-This section briefly explains how to create a simple **Circular gauge** component, and configure its available functionalities in TypeScript using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This guide demonstrates how to create and configure a **Circular gauge** component in TypeScript using Syncfusion Essential<sup style="font-size:70%">&reg;</sup> JS 2. The Circular gauge is a data visualization control that displays values on a circular scale, useful for dashboards, monitoring systems, and data presentation applications.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+By the end of this guide, you will:
+- Set up a TypeScript development environment for Syncfusion components
+- Create your first Circular gauge instance
+- Configure basic properties like pointer values and axes
+- Run the application in your browser
+
+> This guide uses the Syncfusion quickstart repository, preconfigured with webpack for TypeScript compilation. The application requires Node.js `v14.15.0` or higher and leverages the [webpack-cli](https://webpack.js.org/api/cli/#commands) for bundling. Learn more about [webpack configuration and features](https://webpack.js.org/guides/getting-started/).
+
+## Prerequisites
+
+Before getting started, ensure your development environment meets these requirements:
+
+- **Node.js**: Version 14.15.0 or higher (verify with `node --version` in your terminal)
+- **npm**: Version 6.0 or higher (included with Node.js)
+- **TypeScript**: Basic familiarity with TypeScript syntax
+- **Code Editor**: Visual Studio Code or any preferred IDE with TypeScript support
 
 ## Dependencies
 
-Below is the list of minimum dependencies required to use the circular gauge.
+The Circular gauge requires the following minimum Syncfusion packages:
 
 ```javascript
 |-- @syncfusion/ej2-circulargauge
@@ -27,7 +42,11 @@ Below is the list of minimum dependencies required to use the circular gauge.
     |-- @syncfusion/ej2-pdf-export
 ```
 
-## Set up development environment
+These dependencies are automatically installed when you use the quickstart repository.
+
+## Set up the development environment
+
+### Step 1: Clone the quickstart project
 
 Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
@@ -40,6 +59,10 @@ git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quic
 {% endtabs %}
 
 After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
+
+### Step 2: Navigate to the project folder
+
+Change to the newly created project directory:
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -63,11 +86,13 @@ npm install
 {% endhighlight %}
 {% endtabs %}
 
-## Add Circular Gauge control to the Project
+This command downloads and installs all packages specified in `package.json`, including the Circular gauge and its dependencies.
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS2 Circular Gauge control can be added to the application. To get started, add the Circular Gauge control to the **app.ts** and **index.html** files using the following code.
+## Create your first Circular gauge
 
-Add an HTML div element to act as the Circular Gauge element in the **index.html** file using the following code.
+### Step 1: Define the HTML container
+
+Add a container `<div>` element in the **index.html** file where the Circular gauge will render:
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -94,7 +119,9 @@ Add an HTML div element to act as the Circular Gauge element in the **index.html
 {% endhighlight %}
 {% endtabs %}
 
-Import the Circular Gauge control in the **app.ts** to initialize the Circular Gauge and append the Circular Gauge instance to the `#container`.
+### Step 2: Initialize the Circular gauge in TypeScript
+
+In your **app.ts** file, import the Circular gauge component and initialize it:
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -110,9 +137,11 @@ gauge.appendTo('#container');
 {% endhighlight %}
 {% endtabs %}
 
-## Run the application
+The `appendTo()` method attaches the Circular gauge instance to the DOM element with the ID `container`.
 
-The quickstart project is configured to compile and run the application in the browser. Use the following command to run the application.
+## Build and run the application
+
+The quickstart project uses webpack to compile TypeScript and bundle your application. To start the development server and run the application in your browser:
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
@@ -122,7 +151,11 @@ npm start
 {% endhighlight %}
 {% endtabs %}
 
-The below example shows a basic Circular Gauge control.
+The build process will compile your TypeScript code and launch the application at `http://localhost:8080/` (or another port if 8080 is busy). Your browser will automatically open to display your Circular gauge.
+
+### View a complete example
+
+The example below demonstrates a basic Circular gauge with default configuration:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -137,7 +170,7 @@ The below example shows a basic Circular Gauge control.
 
 ## Set Pointer Value
 
-You can change the pointer value in the above sample using [`value`](../api/circular-gauge/pointer/#value-number) property in [`pointers`](../api/circular-gauge/pointer).
+You can change the pointer value in the above sample using [`value`](../api/circular-gauge/pointer#value-number) property in [`pointers`](../api/circular-gauge/pointer).
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

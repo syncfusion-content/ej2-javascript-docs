@@ -11,17 +11,20 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Signature control
 
-This section explains how to create a simple Signature, and configure its available functionalities in TypeScript using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section explains how to create a simple Signature component and configure its available functionalities in TypeScript, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
 The following list of dependencies are required to use the Signature component in your application.
 
-```js
-|-- @syncfusion/ej2-base
+```javascript
+|-- @syncfusion/ej2-inputs
+    |-- @syncfusion/ej2-base
 ```
 
-## Set up development environment
+## Setup development environment
 
 Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
@@ -59,7 +62,9 @@ npm install
 
 ## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-To render Signature component, need to import inputs and its dependent components styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -68,6 +73,8 @@ To render Signature component, need to import inputs and its dependent component
 
 {% endhighlight %}
 {% endtabs %}
+
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
 
 ## Adding Signature component to the application
 
@@ -100,7 +107,7 @@ Add the HTML Canvas tag with the `id` attribute as `signature` to your `index.ht
 {% endhighlight %}
 {% endtabs %}
 
-Import the Signature component in your `app.ts` file and initialize it with the `#signature`.
+Import the Signature component in your `app.ts` file and initialize it with the `#signature` element.
 
 `[src/app/app.ts]`
 
@@ -109,7 +116,7 @@ Import the Signature component in your `app.ts` file and initialize it with the 
 
 import { Signature } from '@syncfusion/ej2-inputs';
 
-// Initializes the ColorPicker component
+// Initialize the Signature component
 let signature: Signature = new Signature({}, '#signature');
 
 {% endhighlight %}

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Maps control | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Maps control of Syncfusion Essential JS 2 and more details.
+title: Es5 getting started with ##Platform_Name## Maps component | Syncfusion
+description:  Checkout and learn about Es5 getting started with ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Maps control
+# Es5 getting started with ##Platform_Name## Maps component
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 
@@ -28,43 +28,58 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can
 * Using local script and style references in a HTML page.
 * Using CDN link for script and style reference.
 
-### Using local script and style references in a HTML page
+### Local Setup: Using Script and Style References
 
-**Step 1:** Create a folder `quickstart` for getting started application.
+**Step 1:** Create a folder named `quickstart` for your application.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+**Step 2:** Download the global scripts and styles from the [Essential Studio® JavaScript (Essential® JS 2)](https://www.syncfusion.com/downloads/essential-js2) installation location.
 
-**Syntax:**
+**File Path Syntax:**
 > Dependency Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\dist\global\{DEPENDENCY_PACKAGE_NAME}.min.js`
 >
 > Control Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\dist\global\{PACKAGE_NAME}.min.js`
 >
 > Control Styles: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{PACKAGE_NAME}\styles\material.css`
 
-**Example:**
-> Dependency Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\20.1.0.58\Web (Essential JS 2)\JavaScript\ej2-base\dist\global\ej2-base.min.js`
+**Example Paths:**
+> Dependency Scripts:
 >
->`C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\20.1.0.58\Web (Essential JS 2)\JavaScript\ej2-data\dist\global\ej2-data.min.js`
+> `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\32.1.19\Web (Essential JS 2)\JavaScript\ej2-base\dist\global\ej2-base.min.js`
 >
->`C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\20.1.0.58\Web (Essential JS 2)\JavaScript\ej2-svg-base\dist\global\ej2-svg-base.min.js`
+> `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\32.1.19\Web (Essential JS 2)\JavaScript\ej2-data\dist\global\ej2-data.min.js`
 >
-> Control Script: `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\20.1.0.58\Web (Essential JS 2)\JavaScript\ej2-maps\dist\global\ej2-maps.min.js`
+> `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\32.1.19\Web (Essential JS 2)\JavaScript\ej2-svg-base\dist\global\ej2-svg-base.min.js`
+>
+> Control Script:
+>
+> `C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript - EJ2\32.1.19\Web (Essential JS 2)\JavaScript\ej2-maps\dist\global\ej2-maps.min.js`
 
-The below located script file contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources.
+Alternatively, use the combined script file:
 
-> Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
+> `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
 
-The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script and styles for a set of specific controls. This web tool is useful to combine the required control scripts and styles in a single file.
+This file contains all Syncfusion® JavaScript (ES5) UI control resources.
 
-**Step 3:** Create a folder `~/quickstart/resources` and copy/paste the global scripts and styles from the above installed location to `~/quickstart/resources/scripts` for script files and `~/quickstart/resources/styles` for styles.
+**Alternative Approach:** Use the [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com) online tool to generate custom scripts and styles for specific controls, combining multiple resources into a single optimized file.
 
-**Step 4:** Create a HTML page (index.html) in `~/quickstart/index.html` and add the Essential<sup style="font-size:70%">&reg;</sup> JS 2 script and style references.
+**Step 3:** Create a resources folder structure:
+
+```
+~/quickstart/
+├── resources/
+│   ├── scripts/    (copy dependency and control scripts here)
+│   └── styles/     (copy control stylesheets here)
+├── index.html
+└── index.js
+```
+
+**Step 4:** Create an HTML file at `~/quickstart/index.html` and add the Essential® JS 2 script and style references.
 
 ```html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>Essential JS 2</title>
+        <title>Essential JS 2 Maps</title>
         <!-- Essential JS 2 Base's global script (Dependency Script) -->
         <script src="resources/scripts/ej2-base.min.js" type="text/javascript"></script>
         <script src="resources/scripts/ej2-data.min.js" type="text/javascript"></script>
@@ -77,7 +92,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 </html>
 ```
 
-**Step 5:** Now, add a div element to initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) Maps** control in the `~/quickstart/index.html` by using following code
+**Step 5:** Add a container div element to initialize the Maps component. Update `~/quickstart/index.html` with the following code:
 
 ```html
 <!DOCTYPE html>
@@ -98,9 +113,9 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 </html>
 ```
 
-**Step 6:** Add the Maps control to the div element with **id** attribute as "**element**" using the below code. The below code can be added in a separate script file (index.js) in `~/quickstart/index.js` and refer it in the **script** tag within the **body** tag.
+**Step 6:** Add the Maps component to the div element with **id** attribute as "**element**" using the below code. The below code can be added in a separate script file (index.js) in `~/quickstart/index.js` and refer it in the **script** tag within the **body** tag.
 
-```
+```javascript
 var map = new ej.maps.Maps({
    layers: [
         {
@@ -138,13 +153,13 @@ map.appendTo('#element');
 </html>
 ```
 
->Note: Refer the data values for [`world_map`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/world_map1557035892) here. These data must be referred as script file in the HTML code.
+> **Note:** The world_map data is required to render the map. Download the data from [this location](https://www.syncfusion.com/downloads/support/directtrac/general/ze/world_map1557035892) and include it as a script file in your HTML page.
 
 **Step 8:** Now, run the `index.html` in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript maps** control.
 
 ### Using CDN link for script and style reference
 
-**Step 1:** Create a folder `quickstart` for getting started application.
+**Step 1:** Create a folder named `quickstart` for your application.
 
 **Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls' global scripts are already hosted in the below CDN link formats.
 
@@ -203,9 +218,9 @@ map.appendTo('#element');
 </html>
 ```
 
-**Step 5:** Add the Maps control to the div element with `id` attribute as "**element**" using the below code. The below code can be added as separate script file (index.js) in `~/quickstart/index.js` and refer it in the **script** tag within the **body** tag.
+**Step 5:** Add the Maps component to the div element with `id` attribute as "**element**" using the below code. The below code can be added as separate script file (index.js) in `~/quickstart/index.js` and refer it in the **script** tag within the **body** tag.
 
-```
+```javascript
 var map = new ej.maps.Maps({
    layers: [
         {
@@ -270,9 +285,9 @@ The following properties in layers are used for binding data source to map.
 * `shapeDataPath`
 * `shapePropertyPath`
 
-The [`dataSource`](../api/maps/layerSettingsModel/#datasource) property takes collection value as input. For example, the list of objects can be provided as input. This data is further used in tooltip, data label, bubble, legend and in color mapping.
+The [`dataSource`](../api/maps/layerSettingsModel#datasource) property takes collection value as input. For example, the list of objects can be provided as input. This data is further used in tooltip, data label, bubble, legend and in color mapping.
 
-The [`shapeDataPath`](../api/maps/layerSettingsModel/#shapedatapath) property used to refer the data ID in dataSource. Where as, the [`shapePropertyPath`](../api/maps/layerSettingsModel/#shapepropertypath) property is used to refer the column name in shapeData to identify the shape. Both the properties are related to each other. When the values of the shapeDataPath property in the dataSource property and the value of shapePropertyPath in the shapeData property match, then the associated object from the dataSource is bound to the corresponding shape.
+The [`shapeDataPath`](../api/maps/layerSettingsModel#shapedatapath) property used to refer the data ID in dataSource. Where as, the [`shapePropertyPath`](../api/maps/layerSettingsModel#shapepropertypath) property is used to refer the column name in shapeData to identify the shape. Both the properties are related to each other. When the values of the shapeDataPath property in the dataSource property and the value of shapePropertyPath in the shapeData property match, then the associated object from the dataSource is bound to the corresponding shape.
 
 The JSON object "UnCountries" is used as data source below.
 
@@ -291,7 +306,7 @@ The JSON object "UnCountries" is used as data source below.
 
 ## Apply Color Mapping
 
-The Color Mapping feature supports customization of shape colors based on the underlying value of shape received from bounded data. Specify the field name from which the values have to be compared for the shapes in [`colorValuePath`](../api/maps/shapeSettingsModel/#colorvaluepath) property in [`shapeSettings`](../api/maps/shapeSettingsModel/).
+The Color Mapping feature supports customization of shape colors based on the underlying value of shape received from bounded data. Specify the field name from which the values have to be compared for the shapes in [`colorValuePath`](../api/maps/shapeSettingsModel#colorvaluepath) property in [`shapeSettings`](../api/maps/shapeSettingsModel).
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -306,7 +321,7 @@ The Color Mapping feature supports customization of shape colors based on the un
 
 ## Add Title for Maps
 
-You can add a title using [`titleSettings`](../api/maps/titleSettingsModel/) property to the map to provide quick information to the user about the shapes rendered in the map.
+Use the [`titleSettings`](../api/maps/titleSettingsModel) property to add a title to the map. A title provides context and quick information about the shapes and data displayed in the map.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -321,7 +336,7 @@ You can add a title using [`titleSettings`](../api/maps/titleSettingsModel/) pro
 
 ## Enable Legend
 
-You can show legend for the maps by setting true to the [`visible`](../api/maps/legendSettingsModel/#visible) property in [`legendSettings`](../api/maps/legendSettingsModel/) object.
+Display a legend for the map by setting the [`visible`](../api/maps/legendSettingsModel#visible) property to `true` in the [`legendSettings`](../api/maps/legendSettingsModel) object. The legend helps users understand the meaning of colors and symbols used in the map.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -336,7 +351,7 @@ You can show legend for the maps by setting true to the [`visible`](../api/maps/
 
 ## Add Data Label
 
-You can add data labels to show additional information of the shapes in map. This can be achieved by setting [`visible`](../api/maps/dataLabelSettingsModel/#visible) property to true in the [`dataLabelSettings`](../api/maps/dataLabelSettingsModel/) object.
+Add data labels to display additional information about shapes in the map. Set the [`visible`](../api/maps/dataLabelSettingsModel#visible) property to `true` in the [`dataLabelSettings`](../api/maps/dataLabelSettingsModel) object.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -351,7 +366,7 @@ You can add data labels to show additional information of the shapes in map. Thi
 
 ## Enable Tooltip
 
-The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable tooltip by setting the [`visible`](../api/maps/tooltipSettingsModel/#visible) property as true in [`tooltipSettings`](../api/maps/tooltipSettingsModel/) object.
+The tooltip displays additional information when space constraints prevent using data labels. Enable tooltips by setting the [`visible`](../api/maps/tooltipSettingsModel#visible) property to `true` in the [`tooltipSettings`](../api/maps/tooltipSettingsModel) object.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

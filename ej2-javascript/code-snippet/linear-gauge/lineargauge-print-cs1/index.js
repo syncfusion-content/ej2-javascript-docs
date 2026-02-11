@@ -4,7 +4,7 @@ var gauge = new ej.lineargauge.LinearGauge({
 	}
 }, '#element');
 
-document.getElementById('print').onclick = () => {
+document.getElementById('print').onclick = function() {
         gauge.print();
 };
 

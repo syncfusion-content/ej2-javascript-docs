@@ -26,7 +26,7 @@ Globalization is the process of designing and developing a component that works 
 
 In the following code example, tooltip is globalized to Deutsch culture.
 
-```ts
+```javascript
 
 import { TreeMap, TreeMapTooltip } from '@syncfusion/ej2-treemap';
 import { NumericTextBox} from '@syncfusion/ej2-inputs';

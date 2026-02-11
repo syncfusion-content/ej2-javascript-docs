@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Maps control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Maps control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Maps component | Syncfusion
+description:  Checkout and learn about Getting started with ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,19 +9,26 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Maps control
+# Getting started with ##Platform_Name## Maps component
 
-This section briefly explains how to create **Maps** control and configure its available functionalities in TypeScript using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section explains how to create a Maps component and configure its available functionalities in TypeScript using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started).
 
-You can explore some useful features in the Maps control using the following video.
+You can explore some useful features in the Maps component using the following video.
 
 {% youtube "https://www.youtube.com/watch?v=kwE6ikF7QYQ" %}
 
+## Prerequisites
+
+Before getting started, ensure you have:
+- Node.js `v14.15.0` or higher installed
+- Basic knowledge of TypeScript and webpack
+- A code editor (Visual Studio Code recommended)
+
 ## Dependencies
 
-Below is the list of minimum dependencies required to use the Maps.
+The Maps component requires the following minimum dependencies:
 
 ```javascript
 |-- @syncfusion/ej2-maps
@@ -67,9 +74,9 @@ npm install
 {% endhighlight %}
 {% endtabs %}
 
-## Add Map control to the Project
+## Add Maps component to the project
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS2 Maps control can be added to the application. To get started, add the Maps control to the **app.ts** and **index.html** files using the following code.
+The Essential<sup style="font-size:70%">&reg;</sup> JS2 Maps component can be added to the application. To get started, add the Maps component to the **app.ts** and **index.html** files using the following code.
 
 Add an HTML div element to act as the Maps element in the **index.html** file using the following code.
 
@@ -98,14 +105,14 @@ Add an HTML div element to act as the Maps element in the **index.html** file us
 {% endhighlight %}
 {% endtabs %}
 
-Import the Maps control in the `app.ts` to initialize a Maps and append the Maps instance to the `#container`.
+Import the Maps component in the `app.ts` to initialize a Maps and append the Maps instance to the `#container`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 
 import { Maps } from '@syncfusion/ej2-maps';
 
-// initialize Maps control
+// initialize Maps component
 let map: Maps = new Maps();
 
 // render initialized Map
@@ -124,11 +131,11 @@ npm start
 {% endhighlight %}
 {% endtabs %}
 
-Since no shapeData is specified for the Maps, no shapes will be rendered and only an empty SVG element is appended to the Maps container.
+Since no shape data is specified, the Maps displays as an empty SVG element. The next sections demonstrate how to add geographic data and customize the map.
 
 ## Module Injection
 
-The Maps control is segregated into individual feature-wise modules. To use a particular feature, inject its feature module using the `Maps.Inject()` method. The following modules are available in Maps along with their descriptions.
+The Maps component is segregated into individual feature-wise modules. To use a particular feature, inject its feature module using the `Maps.Inject()` method. The following modules are available in Maps along with their descriptions.
 
 * Annotations - Inject this provider to use annotations feature.
 * Bubble - Inject this provider to use bubble feature.
@@ -142,7 +149,7 @@ The Maps control is segregated into individual feature-wise modules. To use a pa
 * Zoom - Inject this provider to use zooming and panning feature.
 * Polygon - Inject this provider to use polygon feature.
 
-Now import the MapsTooltip, DataLabel and Legend modules from maps package and inject it into the Maps control using `Maps.Inject` method.
+Now import the MapsTooltip, DataLabel and Legend modules from maps package and inject it into the Maps component using `Maps.Inject` method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -227,7 +234,7 @@ The JSON object "electionData" is used as data source below.
 
 ## Apply Color Mapping
 
-The Color Mapping feature supports customization of shape colors based on the underlying value of shape received from bounded data. Specify the field name from which the values have to be compared for the shapes in [`colorValuePath`](../api/maps/shapeSettingsModel/colorvaluepath) property in [`shapeSettings`](../api/maps/shapeSettingsModel/).
+Color mapping customizes shape colors based on data values. Specify the data field to evaluate using the [`colorValuePath`](../api/maps/shapeSettingsModel/colorvaluepath) property in [`shapeSettings`](../api/maps/shapeSettingsModel). Then define color assignments in the [`colorMapping`](../api/maps/shapeSettingsModel/colormapping) property.
 
 Specify color and value in [`colorMapping`](../api/maps/shapeSettingsModel/colormapping) property. Here '#D84444' is specified for 'Trump' and '#316DB5' is specified for 'Clinton'.
 
@@ -244,7 +251,7 @@ Specify color and value in [`colorMapping`](../api/maps/shapeSettingsModel/color
 
 ## Add Title for Maps
 
-You can add a title using [`titleSettings`](../api/maps/titleSettingsModel/) property to the map to provide quick information to the user about the shapes rendered in the map.
+Titles provide context about the map content. Use the [`titleSettings`](../api/maps/titleSettingsModel) property to add a descriptive title:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -259,7 +266,7 @@ You can add a title using [`titleSettings`](../api/maps/titleSettingsModel/) pro
 
 ## Enable Legend
 
-You can show legend for the maps by setting true to the [`visible`](../api/maps/legendSettingsModel/visible) property in [`legendSettings`](../api/maps/legendSettingsModel/) object and by injecting the `Legend` module using `Maps.Inject(Legend)` method.
+Legends identify shape categories and colors. Enable the legend by setting the [`visible`](../api/maps/legendSettingsModel/visible) property to `true` in the [`legendSettings`](../api/maps/legendSettingsModel) object, and inject the `Legend` module:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -274,7 +281,7 @@ You can show legend for the maps by setting true to the [`visible`](../api/maps/
 
 ## Add Data Label
 
-You can add data labels to show additional information of the shapes in map. This can be achieved by setting [`visible`](../api/maps/dataLabelSettingsModel/visible) property to true in the [`dataLabelSettings`](../api/maps/dataLabelSettingsModel/) object and by injecting `DataLabel` module using `Maps.Inject(DataLabel)` method.
+Data labels display additional information directly on shapes. Enable data labels by setting the [`visible`](../api/maps/dataLabelSettingsModel/visible) property to `true` in the [`dataLabelSettings`](../api/maps/dataLabelSettingsModel) object, and inject the `DataLabel` module:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -289,7 +296,7 @@ You can add data labels to show additional information of the shapes in map. Thi
 
 ## Enable Tooltip
 
-The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable tooltip by setting the [`visible`](../api/maps/tooltipSettingsModel/visible) property as true in [`tooltipSettings`](../api/maps/tooltipSettingsModel/) object and by injecting `MapsTooltip` module using `Maps.Inject(MapsTooltip)` method.
+Tooltips display information on hover, useful when space constraints prevent using data labels. Enable tooltips by setting the [`visible`](../api/maps/tooltipSettingsModel/visible) property to `true` in the [`tooltipSettings`](../api/maps/tooltipSettingsModel) object, and inject the `MapsTooltip` module:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

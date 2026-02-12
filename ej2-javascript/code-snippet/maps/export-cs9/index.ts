@@ -2,7 +2,7 @@
 
 
 import { Maps, MapsTooltip, DataLabel, PdfExport} from '@syncfusion/ej2-maps';
-import { usa_map } from '../default-map-cs1/usa.ts';
+import { usa_map } from './usa.ts';
 Maps.Inject(MapsTooltip, DataLabel, PdfExport);
 
     let maps: Maps = new Maps({

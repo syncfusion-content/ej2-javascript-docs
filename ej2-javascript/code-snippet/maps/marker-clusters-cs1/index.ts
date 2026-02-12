@@ -1,6 +1,6 @@
-import { Maps, Markers, Zoom, MapsTooltip } from '@syncfusion/ej2-maps';
+import { Maps, Marker, Zoom, MapsTooltip } from '@syncfusion/ej2-maps';
 import { world_map } from './world-map.ts';
-Maps.Inject(Markers, Zoom, MapsTooltip);
+Maps.Inject(Marker, Zoom, MapsTooltip);
 let map: Maps = new Maps({
     zoomSettings: {
         enable: true
@@ -28,7 +28,7 @@ let map: Maps = new Maps({
                     },
                     shape: 'Image',
                     height: 40, width: 40,
-                    imageUrl: './cluster-france.svg'
+                    imageUrl: './images/cluster-france.svg'
                 },
                 visible: true,
                 dataSource: [
@@ -63,7 +63,7 @@ let map: Maps = new Maps({
                         color: 'white',
                         size: '10px'
                     },
-                    imageUrl: './cluster-usa.svg'
+                    imageUrl: './images/cluster-usa.svg'
                 },
                 visible: true,
                 shape: 'Circle',
@@ -99,7 +99,7 @@ let map: Maps = new Maps({
                         size: '10px',
                         color: 'white'
                     },
-                    imageUrl: './cluster-india.svg'
+                    imageUrl: './images/cluster-india.svg'
                 },
                 dataSource: [
                     { latitude: 26.985901, longitude: 75.850700, name: 'Amber Fort, Amer', state: 'Rajastan', country: 'India' },

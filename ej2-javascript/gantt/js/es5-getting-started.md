@@ -1,23 +1,30 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Gantt control | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Gantt Chart control | Syncfusion
+description:  Checkout and learn about Getting started with ##Platform_Name## Gantt Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Es5 getting started 
+control: Getting started 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Gantt control
+# Getting started in ##Platform_Name## Gantt Chart control
 
-This section explains you the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Gantt chart in a JavaScript application and demonstrates its basic features.
+This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Gantt Chart and demonstrate the basic usage of the Gantt Chart control in a JavaScript application.
 
-> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/javascript/documentation/ai-coding-assistant/overview)
+## Prerequisites
+
+To get started, ensure the following software is installed on the machine.
+
+* [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2)
+
+* [Visual Studio Code](https://code.visualstudio.com)
+> Check out the [download and installation](https://ej2.syncfusion.com/javascript/documentation/installation-and-upgrade/download) section of **Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript**. If you are using Syncfusion<sup style="font-size:70%">&reg;</sup> CDN resources to build your web application, you can skip the Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript prerequisite.
 
 ## Dependencies
 
-Following is the list of dependencies to use the Gantt with all features:
+A list of dependencies to use the Gantt Chart with all features.
 
 ```javascript
 |-- @syncfusion/ej2-gantt
@@ -43,43 +50,48 @@ Following is the list of dependencies to use the Gantt with all features:
 
 ## Setup for local environment
 
-Refer to the following steps to setup your local environment:
+Refer to the following steps to set up your local environment.
 
-**Step 1:** Create a root folder `myapp` for your application.
+**Step 1:** Create a root folder named **my-app** for your application.
 
-**Step 2:** Create `myapp/resources` folder to store local scripts and styles files.
+**Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
 
-**Step 3:** Create `myapp/index.js` and `myapp/index.html` files for initializing Essential<sup style="font-size:70%">&reg;</sup> JS 2 Gantt control.
+**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files to initialize the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Gantt Chart control.
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> resources
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Gantt control can be initialized by using either of the following ways:
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Gantt Chart control can be initialized by using either of the following ways.
 
-* Using local script and style.
-* Using CDN link for script and style.
+* [Using local scripts and styles](#using-local-scripts-and-styles)
 
-### Using local script and style
+* [Using CDN link for scripts and styles](#using-cdn-link-for-scripts-and-styles)
 
-You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+### Using local scripts and styles
 
-After installing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 product build, you can copy the Gantt and its dependencies scripts and style file into the `resources/scripts` and `resources/styles` folder.
+To use local scripts and styles for Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt, you can follow these steps:
 
-Refer to the following code to find the location of Gantt script and style file.
+**1. Download Essential<sup style="font-size:70%">&reg;</sup> Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2):** Obtain the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installation location.
+
+**2. Copy Files to Resources Folder:** After installing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 product build, copy the Gantt Chart's scripts, and dependencies scripts and style file into the designated folders:
+
+* **Scripts:** Copy the scripts to the **resources/scripts** folder.
+* **Styles:** Copy the styles to the **resources/styles** folder.
+
+**3. Locate Script and Style Files:** Identify the location of the Gantt Chart's script and style files. The syntax for the file paths are as follows:
 
 **Syntax:**
+> * Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+> * Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/tailwind3.css`
 
-> Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-> Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/tailwind3.css`
 
 **Example:**
 
-> Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/32.1.19/Essential JS 2/ej2-gantt/dist/global/ej2-gantt.min.js`
->
-> Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/32.1.19/Essential JS 2/ej2-gantt/styles/tailwind3.css`
+> * Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/32.1.19/Essential JS 2/ej2-gantt/dist/global/ej2-gantt.min.js`
+> * Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/32.1.19/Essential JS 2/ej2-gantt/styles/tailwind3.css`
 
-After copying the files, then you can refer the gantt's scripts and styles into the `index.html` file.
-The below html code example shows the minimal dependency for Gantt.
+**4. Referencing in HTML File:** Once the files are copied, reference the Gantt's scripts and styles into the **index.html** file.
+
+Here's an example of referencing the Gantt's scripts and styles in an HTML file:
 
 ```html
 <!DOCTYPE html>
@@ -134,25 +146,23 @@ The below html code example shows the minimal dependency for Gantt.
   </html>
 ```
 
-### Using CDN link for script and style
+### Using CDN link for scripts and styles
 
-Using CDN link, you can directly refer to the Gantt control's script and style in the `index.html`.
+Using CDN links, you can directly refer the Gantt Chart control's script and style into the `index.html`.
 
-Refer to the Gantt's CDN links as follows.
+Refer the Gantt Chart's CDN links as below
 
 **Syntax:**
 
-> Script: `http://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
->
-> Styles: `http://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/styles/tailwind3.css`
+> * Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+> * Styles: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material.css`
 
 **Example:**
 
-> Script: [http://cdn.syncfusion.com/ej2/32.1.19/ej2-gantt/dist/global/ej2-gantt.min.js](http://cdn.syncfusion.com/ej2/ej2-gantt/dist/global/ej2-gantt.min.js)
->
-> Styles: [http://cdn.syncfusion.com/ej2/32.1.19/ej2-gantt/styles/tailwind3.css](http://cdn.syncfusion.com/ej2/ej2-gantt/styles/tailwind3.css)
+> * Script: [https://cdn.syncfusion.com/ej2/ej2-gantt/dist/global/ej2-gantt.min.js](http://cdn.syncfusion.com/ej2/ej2-gantt/dist/global/ej2-gantt.min.js)
+> * Styles: [https://cdn.syncfusion.com/ej2/ej2-gantt/styles/material.css](http://cdn.syncfusion.com/ej2/ej2-gantt/styles/material.css)
 
-The below html code example shows the dependency of gantt.
+Here's an example of referencing the Gantt Chart's scripts and styles in an HTML file using CDN links:
 
 ```html
 <!DOCTYPE html>
@@ -207,13 +217,14 @@ The below html code example shows the dependency of gantt.
   </html>
 ```
 
-The following located script and style file contains all the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file.
+**Single script and style CDN reference for all controls:**
 
-> Scripts: **(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js
->
-> Styles: **(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\tailwind3.css
+You can also refer to a single script and style CDN link that contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript control resources as follows:
 
-## Adding Gantt control
+> * Script reference for all controls: [https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js](https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js)
+> * Style reference for all controls: [https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css](https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css)
+
+## Adding Gantt Chart control
 
 Now, you can add the Gantt control to the application. For getting started, add a `div` element to the Gantt control in `index.html`. Then, refer to the `index.js` file in the `index.html` file.
 
@@ -281,9 +292,9 @@ ganttChart.appendTo('#Gantt');
 
 ```
 
-## Binding Gantt with data
+## Binding Gantt Chart with data
 
-Bind data with the Gantt control by using the [dataSource](https://ej2.syncfusion.com/javascript/documentation/api/gantt#datasource) property. It accepts an array of JavaScript object or the DataManager instance.
+Bind data with the Gantt Chart control by using the [dataSource](https://ej2.syncfusion.com/javascript/documentation/api/gantt#datasource) property. It accepts an array of JavaScript object or the DataManager instance.
 
 ```html
 <!DOCTYPE html>
@@ -362,12 +373,12 @@ ganttChart.appendTo('#GanttChart');
 
 ## Defining columns
 
-Gantt has an option to define columns as an array. You can customize the Gantt columns using the following properties:
+The Gantt Chart has an option to define columns as array. Each column in this array supports various properties that allow customization. Let’s check the properties used here:
 
-* `field`: Maps the data source fields to the columns.
-* `headerText`: Changes the title of columns.
-* `textAlign`: Changes the alignment of columns. By default, columns will be left aligned. To change the columns to right align, set `textAlign` to right.
-* `format`: Formats the number and date values to standard or custom formats. Here, it is defined for the conversion of numeric values to currency.
+* The [field](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#field) property is used to map the column to a corresponding property name in the array of JavaScript objects.
+* The [headerText](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#headertext) property is used to specify a custom title for the column.
+* The [textAlign](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#textalign) property controls the horizontal alignment of content in the column. By default, columns are left-aligned. To align content to the right, set [textAlign](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#textalign) to **Right**.
+* The [format](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#format) property is applied to format numeric and date values. In this case, it is used to convert numeric values into a standard currency format.
 
 ```javascript
 var ganttChart = new ej.gantt.Gantt({
@@ -394,6 +405,8 @@ To create a Gantt with additional features, inject the required modules. The fol
 
 These modules should be injected into the Gantt using the `ej.gantt.Gantt.Inject` method.
 
+> Additional feature modules are available [here](https://ej2.syncfusion.com/javascript/documentation/api/gantt/overview).
+
 ## Enable editing
 
 The editing feature enables you to edit the tasks in the Gantt control. It can be enabled by using the [editSettings.allowEditing](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings#allowediting) and [editSettings.allowTaskbarEditing](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings#allowtaskbarediting) properties.
@@ -407,7 +420,7 @@ The following editing options are available to update the tasks in Gantt:
 
 ### Cell editing
 
-Modify the task details through cell editing by setting the edit [mode](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings#mode) to `Auto`. Inject the [Edit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#editmodule) module as follows. If the [Edit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#editmodule) module is not injected, you cannot edit the cell when a grid cell is clicked.
+Modify the task details through cell editing by setting the edit [mode](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings#mode) to `Auto`. Inject the [Edit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#editmodule) module as follows. If the [Edit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#editmodule) module is not injected, you cannot edit the cell when a treegrid cell is clicked.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -503,10 +516,11 @@ The sorting feature enables you to order the records. It can be enabled by setti
 
 Predecessor or task dependency in the Gantt control is used to depict the relationship between the tasks.
 
-* Start to Start (SS): You cannot start a task until the dependent task starts.
-* Start to Finish (SF): You cannot finish a task until the dependent task finishes.
-* Finish to Start (FS): You cannot start a task until the dependent task completes.
-* Finish to Finish (FF): You cannot finish a task until the dependent task completes.
+- **Finish-to-Start (FS)**: The successor task starts after the predecessor finishes.
+- **Start-to-Start (SS)**: The successor task starts when the predecessor starts.
+- **Finish-to-Finish (FF)**: The successor task finishes when the predecessor finishes.
+- **Start-to-Finish (SF)**: The successor task finishes when the predecessor starts.
+
 You can show the relationship in tasks by using the [dependency](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#dependency) property as shown in the following code example.
 
 {% tabs %}

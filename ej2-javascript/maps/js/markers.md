@@ -180,7 +180,7 @@ The size of the markers in a marker group can be customized using the `widthValu
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/maps/default-map-cs82marker-size-customization-cs1" %}
+{% previewsample "page.domainurl/code-snippet/maps/marker-size-customization-cs1" %}
 
 ## Repositioning the marker using drag and drop
 

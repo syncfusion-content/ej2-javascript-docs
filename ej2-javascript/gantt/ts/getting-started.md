@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Gantt control | Syncfusion
+title: Getting Started with ##Platform_Name## Gantt Chart Control | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
@@ -9,26 +9,39 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Gantt control
+# Getting Started in ##Platform_Name## Gantt Chart Control
 
 This section explains the steps to create a simple Gantt and demonstrates the basic usage of the gantt component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 
-> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/documentation/ai-coding-assistants/overview).
+> This application is integrated with the **webpack.config.js** configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli#commands). It requires node **v14.15.0** or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started).
 
 ## Dependencies
 
-Following is the list of minimum dependencies required to use the gantt:
+A list of dependencies to use the Gantt Chart with all features.
 
-```javascript
+```ts
 |-- @syncfusion/ej2-gantt
-    |-- @syncfusion/ej2-treegrid
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-data
+    |-- @syncfusion/ej2-buttons
     |-- @syncfusion/ej2-popups
+    |-- @syncfusion/ej2-navigations
+    |-- @syncfusion/ej2-lists
+    |-- @syncfusion/ej2-dropdowns
+    |-- @syncfusion/ej2-inputs
+    |-- @syncfusion/ej2-calendars
+    |-- @syncfusion/ej2-layouts
+    |-- @syncfusion/ej2-richtexteditor
     |-- @syncfusion/ej2-grids
+    |-- @syncfusion/ej2-treegrid
+    |-- @syncfusion/ej2-excel-export
+    |-- @syncfusion/ej2-file-utils
+    |-- @syncfusion/ej2-compression
+    |-- @syncfusion/ej2-pdf-export
+    |-- @syncfusion/ej2-splitbuttons
 ```
 
-## Set up development environment
+## Setup development environment
 
 Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
@@ -68,7 +81,7 @@ npm install
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
 
-The quickstart application is preconfigured to use the `Material` theme in the `~/src/styles/styles.css` file, as shown below: 
+The quickstart application is preconfigured to use the **Tailwind3** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
@@ -78,13 +91,13 @@ The quickstart application is preconfigured to use the `Material` theme in the `
 {% endhighlight %}
 {% endtabs %}
 
-> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls. 
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
 
-## Adding Gantt component
+## Adding Gantt Chart Control
 
-You can start adding Essential<sup style="font-size:70%">&reg;</sup> JS 2 Gantt component to the application. To get started, add the Gantt component in `app.ts` and `index.html` files using the following code.
+You can start adding Essential<sup style="font-size:70%">&reg;</sup> JS 2 Gantt Chart component to the application. To get started, add the Gantt Chart component in **app.ts** and **index.html** files using the following code.
 
-Place the following gantt code in the `app.ts`.
+Place the following Gantt Chart code in the **app.ts**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -133,7 +146,7 @@ let gantt: Gantt = new Gantt({
 {% endhighlight %}
 {% endtabs %}
 
-Now, add an HTML div element to act as the gantt element in `index.html` using the following code.
+Now, add an HTML div element with its `ID` attribute set to `Gantt` in your **index.html** using the following code.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -160,8 +173,6 @@ Now, add an HTML div element to act as the gantt element in `index.html` using t
 
 {% endhighlight %}
 {% endtabs %}
-
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started).
 
 ## Binding Gantt with data
 
@@ -264,12 +275,12 @@ gantt.appendTo('#Gantt');
 
 ## Defining columns
 
-Gantt has an option to define columns as an array. You can customize the Gantt columns using the following properties:
+The Gantt Chart has an option to define columns as array. Each column in this array supports various properties that allow customization. Let’s check the properties used here:
 
-* `field`: Maps the data source fields to the columns.
-* `headerText`: Changes the title of columns.
-* `textAlign`: Changes the alignment of columns. By default, columns will be left aligned. To change the columns to right align, set `textAlign` to right.
-* `format`: Formats the number and date values to standard or custom formats. Here, it is defined for the conversion of numeric values to currency.
+* The [field](https://ej2.syncfusion.com/documentation/api/gantt/column#field) property is used to map the column to a corresponding property name in the array of JavaScript objects.
+* The [headerText](https://ej2.syncfusion.com/documentation/api/gantt/column#headertext) property is used to specify a custom title for the column.
+* The [textAlign](https://ej2.syncfusion.com/documentation/api/gantt/column#textalign) property controls the horizontal alignment of content in the column. By default, columns are left-aligned. To align content to the right, set [textAlign](https://ej2.syncfusion.com/documentation/api/gantt/column#textalign) to **Right**.
+* The [format](https://ej2.syncfusion.com/documentation/api/gantt/column#format) property is applied to format numeric and date values. In this case, it is used to convert numeric values into a standard currency format.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -301,6 +312,8 @@ To create a Gantt with additional features, inject the required modules. The fol
 * [Sort](https://ej2.syncfusion.com/documentation/api/gantt#sortmodule): Inject this module to use the sorting feature.
 
 These modules should be injected into the Gantt using the `Gantt.Inject` method.
+
+> Additional feature modules are available [here](https://ej2.syncfusion.com/documentation/api/gantt/overview).
 
 ## Enable editing
 
@@ -411,10 +424,10 @@ The sorting feature enables you to order the records. It can be enabled by setti
 
 Predecessor or task dependency in the Gantt control is used to depict the relationship between the tasks.
 
-* Start to Start (SS): You cannot start a task until the dependent task starts.
-* Start to Finish (SF): You cannot finish a task until the dependent task finishes.
-* Finish to Start (FS): You cannot start a task until the dependent task completes.
-* Finish to Finish (FF): You cannot finish a task until the dependent task completes.
+- **Finish-to-Start (FS)**: The successor task starts after the predecessor finishes.
+- **Start-to-Start (SS)**: The successor task starts when the predecessor starts.
+- **Finish-to-Finish (FF)**: The successor task finishes when the predecessor finishes.
+- **Start-to-Finish (SF)**: The successor task finishes when the predecessor starts.
 You can show the relationship in tasks by using the [dependency](https://ej2.syncfusion.com/documentation/api/gantt/taskFields#dependency) property as shown in the following code example.
 
 {% tabs %}

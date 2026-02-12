@@ -1,6 +1,6 @@
 
 
-import { world_map } from '../default-map-cs1/world-map.ts';
+import { world_map } from './world-map.ts';
 import { Maps, Selection } from '@syncfusion/ej2-maps';
 Maps.Inject(Selection);
 let map: Maps = new Maps({

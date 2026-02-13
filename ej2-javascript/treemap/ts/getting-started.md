@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## TreeMap control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## TreeMap control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## TreeMap Component | Syncfusion
+description:  Checkout and learn about Getting started with ##Platform_Name## TreeMap Component of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -10,15 +10,15 @@ domainurl: ##DomainURL##
 ---
 
 
-# Getting started in ##Platform_Name## TreeMap control
+# Getting started in ##Platform_Name## TreeMap Component
 
-This section explains the steps to create a simple TreeGrid and demonstrates the basic usage of the TreeGrid component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
+This section explains the steps to create a simple TreeMap and demonstrates the basic usage of the TreeMap component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
-The following list of minimum dependencies are required to use the TreeMap control:
+The following list of minimum dependencies are required to use the TreeMap Component:
 
 ```javascript
 |-- @syncfusion/ej2-treemap
@@ -64,9 +64,9 @@ npm install
 {% endhighlight %}
 {% endtabs %}
 
-## Add TreeMap control to the project
+## Add TreeMap Component to the project
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS2 TreeMap control can be added to the application. To get started, add the TreeMap control to the **app.ts** and **index.html** files using the following code.
+The Essential<sup style="font-size:70%">&reg;</sup> JS2 TreeMap Component can be added to the application. To get started, add the TreeMap Component to the **app.ts** and **index.html** files using the following code.
 
 Add an HTML div element to act as the TreeMap element in the **index.html** file using the following code.
 
@@ -95,13 +95,15 @@ Add an HTML div element to act as the TreeMap element in the **index.html** file
 {% endhighlight %}
 {% endtabs %}
 
-Import the TreeMap control in the `app.ts` to initialize the TreeMap.
-`dataSource`: The data source for the TreeMap is set to the data array.
-`weightValuePath`: It specifies the data property ("Sales") that determines the size of the TreeMap items.
-`leafItemSettings`: This section defines the appearance and label settings for the leaf items (car companies), including the label path, border, and label style.
-`levels`: The TreeMap is configured with grouping levels. In this case, it groups data by "Continent" and specifies the border settings.
-`palette`: A custom color palette is defined to colorize the TreeMap items.
-The TreeMap is rendered using treemap.appendTo('#container'). The TreeMap is displayed within an HTML element with the ID "container.
+Import the TreeMap Component in the `app.ts` to initialize the TreeMap. The following properties are used in this example:
+
+* [`dataSource`](https://ej2.syncfusion.com/documentation/api/treemap/index-default#datasource): Binds the data array containing hierarchical information about companies and sales.
+* [`weightValuePath`](https://ej2.syncfusion.com/documentation/api/treemap/index-default#weightvaluepath): Specifies which data property ("Sales") determines the size of each item in the TreeMap.
+* [`leafItemSettings`](https://ej2.syncfusion.com/documentation/api/treemap/index-default#leafitemsettings): Configures the appearance of leaf items (car companies), including label path, border color, and font styling.
+* [`levels`](https://ej2.syncfusion.com/documentation/api/treemap/index-default#levels): Defines hierarchical grouping levels. This example groups data by "Continent" and applies border settings.
+* [`palette`](https://ej2.syncfusion.com/documentation/api/treemap/index-default#palette): Sets a custom color palette to visualize the items based on their hierarchical position.
+
+The TreeMap is rendered using `treemap.appendTo('#container')`, which displays the control within the HTML element with the ID "container".
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -165,7 +167,7 @@ treemap.appendTo('#container');
 {% endhighlight %}
 {% endtabs %}
 
-Since data source has not been bound to the tree map control, no items will be rendered. Only an empty SVG element is appended to the tree map container.
+This example renders a hierarchical TreeMap with the provided data source. The items are sized proportionally based on their sales values and grouped by continent.
 
 ## Run the application
 
@@ -181,7 +183,7 @@ npm start
 
 ## Module injection
 
-The tree map control is segregated into individual feature-wise modules. To use a particular feature, inject its feature module using the `TreeMap.Inject()` method. Find the modules available in tree map and their descriptions are as follows:
+The TreeMap Component is segregated into individual feature-wise modules. To enable additional functionality beyond basic rendering, inject the required feature modules using the `TreeMap.Inject()` method. The following modules are available:
 
 * TreeMapHighlight - Inject this provider to use highlight feature.
 * TreeMapSelection - Inject this provider to use selection feature.
@@ -194,7 +196,7 @@ In this demo, the tree map is rendered with labels only. So, you need not to imp
 
 ## Render tree map
 
-This section explains how to render the tree map control with data source.
+This section demonstrates how to render a TreeMap with a bound data source.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -207,11 +209,11 @@ This section explains how to render the tree map control with data source.
           
 {% previewsample "page.domainurl/code-snippet/treemap/getting-started-cs6" %}
 
-Here, the tree map control is created with data source and set with the weightValuePath as count. You can customize the leaf level tree map items using the leafItemSettings. The properties such as fill, border, and labelPosition can be changed using the leafItemSettings.
+In this example, the TreeMap is bound to a data source with [`weightValuePath`](https://ej2.syncfusion.com/documentation/api/treemap/index-default#weightvaluepath) set to the count property, which determines item sizes. Customize the appearance of leaf-level items using [`leafItemSettings`](https://ej2.syncfusion.com/documentation/api/treemap/index-default#leafitemsettings), where you can modify properties such as [`fill`](https://ej2.syncfusion.com/documentation/api/treemap/leafitemsettingsmodel#fill) (color), [`border`](https://ej2.syncfusion.com/documentation/api/treemap/leafitemsettingsmodel#border), and [`labelPosition`](https://ej2.syncfusion.com/documentation/api/treemap/leafitemsettingsmodel#labelposition).
 
 ## Apply color mapping
 
-The color mapping feature supports customization of item colors based on the underlying value of item received from bound data source. Specify the field name from values that have to be compared for the item in the equalColorValuePath or rangeColorValuePath property.
+The color mapping feature enables customization of item colors based on values from the bound data source. Specify the data field to evaluate using either [`equalColorValuePath`](https://ej2.syncfusion.com/documentation/api/treemap/index-default#equalcolorvaluepath) (for discrete values) or [`rangeColorValuePath`](https://ej2.syncfusion.com/documentation/api/treemap/index-default#rangecolorvaluepath) (for continuous ranges). Choose the appropriate property based on whether your data requires exact value matching or range-based color gradients.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -226,7 +228,7 @@ The color mapping feature supports customization of item colors based on the und
 
 ## Enable legend
 
-Legend is enabled for the tree map control by setting the visible property to true in legendSettings object and injecting the `TreeMapLegend` module using the `TreeMap.Inject(TreeMapLegend)`.
+Enable the legend feature by setting the [`visible`](https://ej2.syncfusion.com/documentation/api/treemap/legendsettingsmodel#visible) property to `true` in the [`legendSettings`](https://ej2.syncfusion.com/documentation/api/treemap/legendsettingsmodel) object and injecting the `TreeMapLegend` module using `TreeMap.Inject(TreeMapLegend)`.
 
 
 {% tabs %}
@@ -242,7 +244,7 @@ Legend is enabled for the tree map control by setting the visible property to tr
 
 ## Add labels
 
-Labels are added to show additional information of the items in tree map. By default, the visibility of the label is set to true. This can be customized using the showLabels property in leafItemSettings.
+Labels display additional information within TreeMap items and are visible by default. Control label visibility using the [`showLabels`](https://ej2.syncfusion.com/documentation/api/treemap/leafitemsettingsmodel#showlabels) property in [`leafItemSettings`](https://ej2.syncfusion.com/documentation/api/treemap/leafitemsettingsmodel).
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -257,7 +259,7 @@ Labels are added to show additional information of the items in tree map. By def
 
 ## Enable tooltip
 
-Tooltips are used when labels cannot display information due to space constraints. Tooltips can be enabled by setting the visible property to true in tooltipSettings object and injecting the `TreeMapTooltip` module using the `TreeMap.Inject(TreeMapTooltip)`.
+Tooltips provide an alternative way to display information when space constraints prevent labels from showing all details. Enable tooltips by setting the [`visible`](https://ej2.syncfusion.com/documentation/api/treemap/tooltipsettingsmodel#visible) property to `true` in the [`tooltipSettings`](https://ej2.syncfusion.com/documentation/api/treemap/tooltipsettingsmodel) object and injecting the `TreeMapTooltip` module using `TreeMap.Inject(TreeMapTooltip)`.
 
 
 {% tabs %}

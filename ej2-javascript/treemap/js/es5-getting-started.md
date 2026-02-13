@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## TreeMap control | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## TreeMap control of Syncfusion Essential JS 2 and more details.
+title: Es5 getting started with ##Platform_Name## TreeMap Component | Syncfusion
+description:  Checkout and learn about Es5 getting started with ##Platform_Name## TreeMap Component of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
 publishingplatform: ##Platform_Name##
@@ -9,22 +9,22 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## TreeMap control
+# Getting started in ##Platform_Name## TreeMap Component
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeMap component is a hierarchical data visualization control that displays data as nested rectangular blocks, with sizes proportional to their values. The ES5 version uses global script references, enabling you to integrate the TreeMap directly into HTML pages without a build process.
 
 ## Control Initialization
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can be initialized by using either of the following ways.
+You can initialize the TreeMap component using one of the following methods: 
 
-* Using local script references in a HTML page.
-* Using CDN link for script reference.
+* Using local script references in an HTML page
+* Using CDN links for script references
 
-### Using local script references in a HTML page
+### Using local script references in an HTML page
 
-**Step 1:** Create an app folder `quickstart` for getting started.
+**Step 1:** Create an app folder `quickstart` to organize your project files.
 
-**Step 2:** You can get the global scripts from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+**Step 2:** Obtain the global scripts from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) installation directory on your machine.
 
 **Syntax:**
 > Dependency Script: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\{DEPENDENCY_PACKAGE_NAME}\dist\global\{DEPENDENCY_PACKAGE_NAME}.min.js`
@@ -43,11 +43,10 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can
 The below located script file contains all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) UI control resources in a single file.
 
 > Scripts: `**(installed location)**\Syncfusion\Essential Studio\JavaScript - EJ2\{RELEASE_VERSION}\Web (Essential JS 2)\JavaScript\ej2\dist\ej2.min.js`
->
 
-The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script and styles for a set of specific controls. This web tool is useful to combine the required control scripts and styles in a single file.
+For advanced customization, use the [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/), an online tool that generates custom scripts and styles for selected controls, combining them into a single optimized file.
 
-**Step 3:** Create a folder `~/quickstart/resources` and copy/paste the global scripts from the above installed location to `~/quickstart/resources/package` corresponding package location.
+**Step 3:** Create a folder structure `~/quickstart/resources` with subdirectories for each dependency package (e.g., `~/quickstart/resources/base`, `~/quickstart/resources/data`, `~/quickstart/resources/svg-base`, `~/quickstart/resources/treemap`). Copy the corresponding script files from the installed location to these folders.
 
 **Step 4:** Create a HTML page (index.html) in `~/quickstart/index.html` and add the Essential<sup style="font-size:70%">&reg;</sup> JS 2 script references.
 
@@ -68,7 +67,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 </html>
 ```
 
-**Step 5:** Now, initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) TreeMap** control in the `~/quickstart/index.html` by using following code
+**Step 5:** Initialize the TreeMap component by adding the following code to `~/quickstart/index.html`. This example displays hierarchical data representing international airports across South American countries
 
 ```html
 <!DOCTYPE html>
@@ -117,35 +116,35 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 ### Using CDN link for script reference
 
-**Step 1:** Create an app folder `quickstart` for getting started.
+**Step 1:** Create an app folder `quickstart` to organize your project files.
 
-**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls's common script is already hosted in the below CDN link format.
+**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 scripts are hosted on a CDN. You can reference them using the following link formats.
 
 **Common Control Scripts:**
 > Syntax: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/dist/ej2.min.js`
 
 **Example:**
-> Script: [`https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js)
+> Script: [`https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js`](https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js)
 
 **or**
 
 **Individual Control Scripts:**
 
 **Syntax**
->`http://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+>`https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 
 **Example:**
-> TreeMap Script: [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-treemap/dist/global/ej2-treemap.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-treemap/dist/global/ej2-treemap.min.js)
+> TreeMap Script: [`https://cdn.syncfusion.com/ej2/32.1.19/ej2-treemap/dist/global/ej2-treemap.min.js`](https://cdn.syncfusion.com/ej2/32.1.19/ej2-treemap/dist/global/ej2-treemap.min.js)
 >
 > Dependency Scripts
 >
-> [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/dist/global/ej2-base.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/dist/global/ej2-base.min.js)
+> [`https://cdn.syncfusion.com/ej2/32.1.19/ej2-base/dist/global/ej2-base.min.js`](https://cdn.syncfusion.com/ej2/32.1.19/ej2-base/dist/global/ej2-base.min.js)
 >
-> [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-data/dist/global/ej2-data.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-data/dist/global/ej2-data.min.js)
+> [`https://cdn.syncfusion.com/ej2/32.1.19/ej2-data/dist/global/ej2-data.min.js`](https://cdn.syncfusion.com/ej2/32.1.19/ej2-data/dist/global/ej2-data.min.js)
 >
-> [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-svg-base/dist/global/ej2-svg-base.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-svg-base/dist/global/ej2-svg-base.min.js)
+> [`https://cdn.syncfusion.com/ej2/32.1.19/ej2-svg-base/dist/global/ej2-svg-base.min.js`](https://cdn.syncfusion.com/ej2/32.1.19/ej2-svg-base/dist/global/ej2-svg-base.min.js)
 >
-> [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-pdf-export/dist/global/ej2-pdf-export.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-pdf-export/dist/global/ej2-pdf-export.min.js)
+> [`https://cdn.syncfusion.com/ej2/32.1.19/ej2-pdf-export/dist/global/ej2-pdf-export.min.js`](https://cdn.syncfusion.com/ej2/32.1.19/ej2-pdf-export/dist/global/ej2-pdf-export.min.js)
 
 Create a HTML page (**index.html**) in **~/quickstart** location and add the following CDN link references. Now, initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) TreeMap** control in the **index.html** by using following code.
 
@@ -191,9 +190,9 @@ Create a HTML page (**index.html**) in **~/quickstart** location and add the fol
 ```
 > Please replace {RELEASE_VERSION} with the latest version number in the script file referred to in the sample.
 
-**Step 3:**  Now, run the index.html in web browser, it will render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeMap control.
+**Step 3:**  Now, run the index.html in web browser, it will render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeMap Component.
 
-The below example shows a basic TreeMap control.
+The below example shows a basic TreeMap Component.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -209,7 +208,7 @@ The below example shows a basic TreeMap control.
 
 ## Apply color mapping
 
-The color mapping feature supports customization of item colors based on the underlying value of item received from bound data source. Specify the field name from values that have to be compared for the item in the equalColorValuePath or rangeColorValuePath property.
+Use color mapping to visually represent data values with different colors. The TreeMap automatically assigns colors based on the values in your data source. Specify the field to evaluate using the [`equalColorValuePath`](https://ej2.syncfusion.com/javascript/documentation/api/treemap/index-default#equalcolorvaluepath) property for discrete colors or [`rangeColorValuePath`](https://ej2.syncfusion.com/javascript/documentation/api/treemap/index-default#rangecolorvaluepath) for gradient-based color ranges.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -224,7 +223,7 @@ The color mapping feature supports customization of item colors based on the und
 
 ## Enable legend
 
-Legend is enabled for the tree map control by setting the visible property to true in legendSettings object.
+A legend helps viewers interpret the data represented in the TreeMap. Enable the legend by setting the [`visible`](https://ej2.syncfusion.com/javascript/documentation/api/treemap/legendsettingsmodel#visible) property to `true` in the [`legendSettings`](https://ej2.syncfusion.com/javascript/documentation/api/treemap/legendsettingsmodel)  object to display a visual guide for data categories or color ranges.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -239,7 +238,7 @@ Legend is enabled for the tree map control by setting the visible property to tr
 
 ## Add labels
 
-Labels are added to show additional information of the items in tree map. By default, the visibility of the label is set to true. This can be customized using the showLabels property in leafItemSettings.
+Labels display descriptive text directly on TreeMap items, providing immediate context without requiring a legend lookup. Labels are shown by default, but you can customize their visibility and appearance using the [`showLabels`](https://ej2.syncfusion.com/javascript/documentation/api/treemap/leafitemsettingsmodel#showlabels) property in the [`leafItemSettings`](https://ej2.syncfusion.com/javascript/documentation/api/treemap/leafitemsettingsmodel) object.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -254,7 +253,7 @@ Labels are added to show additional information of the items in tree map. By def
 
 ## Enable tooltip
 
-Tooltips are used when labels cannot display information due to space constraints. Tooltips can be enabled by setting the visible property to true in tooltipSettings object.
+Tooltips provide additional information on demand when users hover over TreeMap items, making them ideal for displaying details that don't fit directly on items. Enable tooltips by setting the [`visible`](https://ej2.syncfusion.com/javascript/documentation/api/treemap/tooltipsettingsmodel#visible) property to `true` in the [`tooltipSettings`](https://ej2.syncfusion.com/javascript/documentation/api/treemap/tooltipsettingsmodel) object.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

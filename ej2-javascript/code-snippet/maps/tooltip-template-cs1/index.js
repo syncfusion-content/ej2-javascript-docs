@@ -13,7 +13,7 @@ var map = new ej.maps.Maps({
         width: '10'
     },
     layers: [{
-        shapeData: world_map,
+        shapeData: new ej.maps.MapAjax('//ej2.syncfusion.com/javascript/demos/src/maps/map-data/world-map.json'),
         shapePropertyPath: 'name',
         shapeDataPath: 'name',
         dataSource: tooltipData,

@@ -5,7 +5,7 @@ var map = new ej.maps.Maps({
     },
     layers: [
         {
-            shapeData: world_map,
+            shapeData: new ej.maps.MapAjax('//ej2.syncfusion.com/javascript/demos/src/maps/map-data/world-map.json'),
             dataSource: default_data,            
             shapePropertyPath: 'continent',
             shapeDataPath: 'continent',

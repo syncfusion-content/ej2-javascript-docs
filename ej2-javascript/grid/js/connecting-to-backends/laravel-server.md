@@ -268,7 +268,7 @@ Route::post('/update', [ServerController::class, 'update']);        // Update
 Route::post('/remove', [ServerController::class, 'remove']);        // Delete
 ```
 
-These routes map Grid actions to specific controller methods. Each route listens for a POST request (/read, /insert, /update, /remove) and directs it to the corresponding method in **ServerController**.
+These routes map Grid actions to specific controller methods. Each route listens for a `POST` request (/read, /insert, /update, /remove) and directs it to the corresponding method in **ServerController**.
 
 ### Step 7: Configure the CORS
 
@@ -407,7 +407,7 @@ In this example, the "Material 3" theme is applied. Other themes can be chosen o
 
 The Syncfusion [DataManager](https://ej2.syncfusion.com/javascript/documentation/data/overview) acts as the data layer and serves as a bridge between the Syncfusion Grid and the backend. Every action performed in the Grid such as fetching records, sorting, filtering, searching, paging, or performing CRUD (Create, Read, Update, Delete) operations is routed through the DataManager. It standardizes communication with remote services and ensures that queries are properly serialized before reaching the server.
 
-The [UrlAdaptor](https://ej2.syncfusion.com/javascript/documentation/data/adaptors#url-adaptor) is a built‑in adaptor specifically designed for custom RESTful APIs like Laravel. It defines the format of requests and the processing of responses. The UrlAdaptor converts Grid actions into HTTP POST requests and manages the JSON responses returned by the server, enabling the Grid to display and handle data seamlessly.
+The [UrlAdaptor](https://ej2.syncfusion.com/javascript/documentation/data/adaptors#url-adaptor) is a built‑in adaptor specifically designed for custom RESTful APIs like Laravel. It defines the format of requests and the processing of responses. The UrlAdaptor converts Grid actions into HTTP `POST` requests and manages the JSON responses returned by the server, enabling the Grid to display and handle data seamlessly.
 
 If the `UrlAdaptor` does not meet the requirements of a project, other adaptors can be used. For example, the `WebApiAdaptor` is available for scenarios where APIs follow different conventions.
 
@@ -431,19 +431,19 @@ const dataManager = new ej.data.DataManager({
 This section describes the communication between the Syncfusion Grid and the existing **ServerController**(ServerController.php), where requests are sent through the `DataManager` and processed responses are returned for data operations.
 
 1. **Read Request** - When Grid loads or performs data operations:
-   - Client sends POST to `/api/read` with `DataManager` state (where, sorted, search, skip, take).
+   - Client sends `POST` to `/api/read` with `DataManager` state (where, sorted, search, skip, take).
    - ServerController processes and returns: `{ result: [...], count: total }`.
 
 2. **Insert Request** - When adding a new record:
-   - Client sends POST to `/api/insert` with new record in `value` property.
+   - Client sends `POST` to `/api/insert` with new record in `value` property.
    - ServerController inserts the record and returns the saved record.
 
 3. **Update Request** - When updating a record:
-   - Client sends POST to `/api/update` with modified record in `value` property.
+   - Client sends `POST` to `/api/update` with modified record in `value` property.
    - ServerController updates and returns the updated record.
 
 4. **Remove Request** - When deleting a record:
-   - Client sends POST to `/api/remove` with primary key.
+   - Client sends `POST` to `/api/remove` with primary key.
    - ServerController deletes and returns confirmation.
 
 ### Step 4: Initialize Grid with UrlAdaptor
@@ -509,7 +509,7 @@ When the Grid performs a filtering action, the `UrlAdaptor` sends filter conditi
 ![Filtering](../../images/grid-laravel-filtering.png)
 
 **Client-to-server communication:**
-- Grid sends POST to `/api/read` with `where` parameter containing filter predicates (field, operator, value).
+- Grid sends `POST` to `/api/read` with `where` parameter containing filter predicates (field, operator, value).
 - The **ServerController** receives the request and calls "applyWhere()" method.
 - "applyWhere()" processes predicates and applies WHERE clauses to the database query.
 - "applyOperator()" converts Grid operators to SQL operations.
@@ -671,7 +671,7 @@ During the search action, `UrlAdaptor` sends the search text along with the targ
 ![Searching](../../images/grid-laravel-searching.png)
 
 **Client-to-server communication:**
-- The Grid sends a POST request to `/api/read` with a "search" parameter that includes the search term and target fields.
+- The Grid sends a `POST` request to `/api/read` with a "search" parameter that includes the search term and target fields.
 - Both case‑insensitive and case‑sensitive searches are supported.
 - The matching results are returned to the Grid in JSON format containing the "result" records and the "count" of total available records.
 
@@ -742,7 +742,7 @@ Sorting operations are handled in the "read" method based on the `sorted` parame
 ![Sorting](../../images/grid-laravel-sorting.png)
 
 **Client-to-server communication:**
-- The Grid sends a POST request to `/api/read` with a sorted parameter that includes the column name and sort direction.
+- The Grid sends a `POST` request to `/api/read` with a sorted parameter that includes the column name and sort direction.
 - The **ServerController** receives this request and processes sorting in the read method.
 - An `orderBy` clause is applied to sort results in ascending or descending order.
 - The sorted results are returned to the Grid in JSON format with the result records and the count of total available records.
@@ -791,7 +791,7 @@ Server-side pagination is implemented using the `skip` and `take` parameters sen
 ![Paging](../../images/grid-laravel-paging.png)
 
 **Client-to-server communication:**
-- The Grid sends a POST request to `/api/read` with skip (offset) and take (limit) parameters.
+- The Grid sends a `POST` request to `/api/read` with skip (offset) and take (limit) parameters.
 - The **ServerController** receives these parameters in the read method.
 - The query applies `skip()` to offset records and `take()` to limit results based on the page size.
 - The total record count is calculated before paging to ensure correct pagination display.
@@ -845,7 +845,7 @@ The "insert" method handles creating new student records. When the "Add" button 
 
 **Client-to-server communication:**
 
-- The Grid sends a POST request to `/api/insert` with new record data in the value property.
+- The Grid sends a `POST` request to `/api/insert` with new record data in the value property.
 - The ServerController’s insert method receives and validates the data.
 - Required fields are checked (for example, "FirstName" is mandatory).
 - A new student record is created using Eloquent ORM.
@@ -883,7 +883,7 @@ The "update" method handles modifying existing student records. When a record is
 
 **Client-to-server communication:**
 
-- The Grid sends a POST request to `/api/update` with modified record data in the value property.
+- The Grid sends a `POST` request to `/api/update` with modified record data in the value property.
 - The ServerController’s update method receives the request.
 - The "StudentID" is extracted as the primary key to identify the record.
 - The record is located using Eloquent’s "where()" method.
@@ -928,7 +928,7 @@ The "remove" method handles deleting student records from the database. When a r
 ![Delete Record](../../images/grid-laravel-crud-delete.png)
 
 **Client-to-server communication:**
-- The Grid sends a POST request to `/api/remove` with the primary key (StudentID).
+- The Grid sends a `POST` request to `/api/remove` with the primary key (StudentID).
 - The ServerController’s remove method receives the request.
 - The "StudentID" is extracted from the request parameters.
 - The corresponding record is located and deleted from the database.

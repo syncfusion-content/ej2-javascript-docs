@@ -38,13 +38,14 @@ The following minimum dependencies are required to use the Rich Text Editor.
 Run the following commands to set up a Typescript application:
 
 ```bash
-npm create vite@latest my-app
+npm create vite@7 my-app
 ```
 To set-up a Typescript application in TypeScript environment, run the following command.
 
 ```bash
-npm create vite@latest my-app -- --template vanilla-ts
+npm create vite@7 my-app -- --template vanilla-ts
 cd my-app
+npm install
 npm run dev
 ```
 
@@ -71,7 +72,7 @@ Add the following imports inside the `~/src/styles.css` file to include the `tai
 @import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
 @import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
 @import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css';;
+@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css';
 
 {% endhighlight %}
 {% endtabs %}
@@ -140,6 +141,18 @@ Output will be displayed as follows
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/rich-text-editor/text-area-sample-cs3/index.ts %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+
+@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-lists/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css';
+
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rich-text-editor/text-area-sample-cs3/index.html %}
@@ -219,6 +232,18 @@ Output will be displayed as follows
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/rich-text-editor/getting-started-cs22/index.ts %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+
+@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-lists/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css';
+
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rich-text-editor/getting-started-cs22/index.html %}

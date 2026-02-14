@@ -16,7 +16,7 @@ var map = new ej.maps.Maps({
     {
       shapeDataPath: 'name',
       shapePropertyPath: 'name',
-      shapeData: world_map,
+      shapeData: new ej.maps.MapAjax('//ej2.syncfusion.com/javascript/demos/src/maps/map-data/world-map.json'),
       shapeSettings: {
         fill: '#E5E5E5'
       },

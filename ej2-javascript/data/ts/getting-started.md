@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Getting started in Syncfusion ##Platform_Name## DataManager
 
-The Syncfusion ##Platform_Name## DataManager enables efficient data management in ##Platform_Name## applications. It seamlessly interacts with various datasources (remote or local) and provides functionalities like sorting, filtering, paging, and CRUD (Create, Read, Update, and Delete) operations, enhancing the data presentation capabilities of your ##Platform_Name## application.
+The Syncfusion ##Platform_Name## DataManager enables efficient data management in ##Platform_Name## applications. It seamlessly interacts with various datasources (remote or local) and provides functionalities like sorting, filtering, paging, and CRUD (Create, Read, Update, and Delete) operations, enhancing the data presentation capabilities of ##Platform_Name## applications.
 
-This section provides a quick overview of how to set up a ##Platform_Name## project and integrate the Syncfusion ##Platform_Name## DataManager. It includes instructions for installation, basic configuration, and integration with both local and remote datasources, along with support for data operations like sorting, filtering, and paging.
+This section provides a quick overview of setting up a ##Platform_Name## project and integrating the Syncfusion ##Platform_Name## DataManager. It includes instructions for installation, basic configuration, and integration with both local and remote datasources, along with support for data operations like sorting, filtering, and paging.
 
 ## Dependencies
 
@@ -106,7 +106,7 @@ This can be done in one of two ways:
 
 Follow these steps to bind the JSON data:
 
-**1.** Create a file named **src/datasource.ts** and export your JSON data:
+**1.** Create a file named **src/datasource.ts** and export the JSON data:
 
 ```ts
 
@@ -131,10 +131,10 @@ export let data: Object[] = [
 
 ```
 
-**2.** In your **src/index.ts** file, import the data and bind it using `DataManager`.
+**2.** In the **src/index.ts** file, import the data and bind it using `DataManager`.
 
 
-**3.** Add the following CSS inside the <head> tag of your **index.html** file to style the table:
+**3.** Add the following CSS inside the <head> tag of the **index.html** file to style the table:
 
 ```css
 
@@ -163,7 +163,7 @@ export let data: Object[] = [
 
 ```
 
-The following example demonstrates how to bind JSON data using the [executeLocal](../api/data/dataManager/#executelocal) method of [DataManager](../../documentation/api/data/datamanager/):
+The following example demonstrates how to bind JSON data using the [executeLocal](../api/data/dataManager#executelocal) method of [DataManager](../../documentation/api/data/datamanager):
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -181,11 +181,11 @@ The following example demonstrates how to bind JSON data using the [executeLocal
 
 ### Binding to ODataV4
 
-OData (Open Data Protocol) is a standardized protocol for querying and updating data using RESTful Web API. It is widely adopted in enterprise applications for enabling structured, scalable access to remote data services. It support for interacting with OData v3 and v4 services, allowing seamless integration with external datasources.
+OData (Open Data Protocol) is a standardized protocol for querying and updating data using RESTful Web API. It is widely adopted in enterprise applications for enabling structured, scalable access to remote data services. DataManager supports interacting with OData v3 and v4 services, allowing seamless integration with external datasources.
 
-You can bind a remote OData service to the DataManager by setting its `url` property to the service endpoint URL. This configuration enables the DataManager to automatically perform server-side operations such as sorting, filtering, paging, and CRUD by sending appropriate requests to the specified endpoint.
+Bind a remote OData service to the DataManager by setting its `url` property to the service endpoint URL. This configuration enables the DataManager to automatically perform server-side operations such as sorting, filtering, paging, and CRUD by sending appropriate requests to the specified endpoint.
 
-The following sample demonstrates how to bind the remote ODataV4 service using the [executeQuery](../api/data/dataManager/#executequery) method of [DataManager](../api/data/datamanager/):
+The following sample demonstrates how to bind the remote ODataV4 service using the [executeQuery](../api/data/dataManager#executequery) method of [DataManager](../api/data/datamanager):
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -200,9 +200,9 @@ The following sample demonstrates how to bind the remote ODataV4 service using t
 
 ## Filter
 
-Data filtering lets you show only the data that matches specific conditions. It helps simplify large datasets, making it easier for users to find the information they need quickly and efficiently.
+Data filtering lets applications show only the data that matches specific conditions. It helps simplify large datasets, making it easier to find the information needed quickly and efficiently.
 
-You can easily construct filter expressions using the [where](../api/data/query/#where) method of the [Query](../api/data/query/) class. This method allows you to specify filter criteria based on various conditions.
+Construct filter expressions using the [where](../api/data/query#where) method of the [Query](../api/data/query) class. This method allows specification of filter criteria based on various conditions.
 
 The following example demonstrates how to filter data based on the **EmployeeID** field equal to **4** using the `where` method: 
 
@@ -222,9 +222,9 @@ The following example demonstrates how to filter data based on the **EmployeeID*
 
 ## Sort
 
-Sorting allows you to arrange data in a specific order, making it easier to read, analyze, and locate information quickly.
+Sorting allows arranging data in a specific order, making it easier to read, analyze, and locate information quickly.
 
-You can sort the data either in ascending or descending order using the [sortBy](../api/data/query/#sortby) method of the [Query](../api/data/query/) class. This method specifies the field by which the data should be sorted.
+Sort the data either in ascending or descending order using the [sortBy](../api/data/query#sortby) method of the [Query](../api/data/query) class. This method specifies the field by which the data should be sorted.
 
 The following example demonstrates how to sort data based on the **EmployeeID** field in **ascending** order using the `sortBy` method:
 
@@ -246,7 +246,7 @@ The following example demonstrates how to sort data based on the **EmployeeID** 
 
 Paging allows data to be displayed in segmented pages, making it easier to navigate large datasets. It is especially helpful in client-side applications, where only a limited number of records are shown per page to enhance readability and improve performance.
 
-You can use the [page](../api/data/query/#page) method of the [Query](../api/data/query/) class to retrieve a specific range of data based on the page index and page size.
+Use the [page](../api/data/query#page) method of the [Query](../api/data/query) class to retrieve a specific range of data based on the page index and page size.
 
 The following example demonstrates how to apply paging to the data using the `page` method to get the first page containing 8 records:
 

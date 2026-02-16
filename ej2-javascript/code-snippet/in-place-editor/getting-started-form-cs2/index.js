@@ -10,16 +10,16 @@ var editObj = new ej.inplaceeditor.InPlaceEditor({
 });
 editObj.appendTo('#dateofbirth');
 
-var editObj = new ej.inplaceeditor.InPlaceEditor({
+var editObj1 = new ej.inplaceeditor.InPlaceEditor({
     value: 'Andrew',
     mode: 'Inline',
     model: {
         placeholder: 'Enter your name'
     }
 });
-editObj.appendTo('#element');
+editObj1.appendTo('#element');
 
-var editObj = new ej.inplaceeditor.InPlaceEditor({
+var editObj2 = new ej.inplaceeditor.InPlaceEditor({
     type: 'DropDownList',
     value: 'Male',
     mode: 'Inline',
@@ -28,5 +28,5 @@ var editObj = new ej.inplaceeditor.InPlaceEditor({
         placeholder: 'Select gender'
     }
 });
-editObj.appendTo('#gender');
+editObj2.appendTo('#gender');
 

@@ -13,15 +13,15 @@ let editObj: InPlaceEditor = new InPlaceEditor({
     }
 });
 editObj.appendTo('#dateofbirth');
-let editObj: InPlaceEditor = new InPlaceEditor({
+let editObj1: InPlaceEditor = new InPlaceEditor({
     value: 'Andrew',
     mode: 'Inline',
     model: {
         placeholder: 'Enter your name'
     }
 });
-editObj.appendTo('#element');
-let editObj: InPlaceEditor = new InPlaceEditor({
+editObj1.appendTo('#element');
+let editObj2: InPlaceEditor = new InPlaceEditor({
     type: 'DropDownList',
     value: 'Male',
     mode: 'Inline',
@@ -30,7 +30,7 @@ let editObj: InPlaceEditor = new InPlaceEditor({
         placeholder: 'Select gender'
     }
 });
-editObj.appendTo('#gender');
+editObj2.appendTo('#gender');
 
 
 

@@ -9,7 +9,7 @@ let sportsData: string[] = ['Badminton', 'Basketball', 'Cricket', 'Football', 'G
 // initialize AutoComplete component
 let atcObject: AutoComplete = new AutoComplete({
     //set the data to dataSource property
-    dataSource: sportsData
+    dataSource: sportsData,
     //set width to suggestion list
     popupWidth: '250px',
     // set placeholder to AutoComplete input element

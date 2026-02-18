@@ -1,4 +1,4 @@
-let blocksData = [
+var blocksData = [
     {
         blockType: 'Paragraph',
         properties: { placeholder: 'Start typing your notes or press "/" for commands...'},

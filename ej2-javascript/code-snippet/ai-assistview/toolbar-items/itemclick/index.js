@@ -4,7 +4,7 @@ ej.base.enableRipple(true);
 var aiAssistView = new ej.interactivechat.AIAssistView({
     toolbarSettings: {
         items: [ { type: 'Button', iconCss: 'e-icons e-refresh', align: 'Right' } ],
-        itemClicked: (args) => {
+        itemClicked: function (args) {
             // Your required action here
         }
     },

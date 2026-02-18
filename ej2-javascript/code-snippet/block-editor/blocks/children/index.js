@@ -1,4 +1,4 @@
-let blocksData = [
+var blocksData = [
     {
         id: 'security-callout',
         blockType: 'Callout',

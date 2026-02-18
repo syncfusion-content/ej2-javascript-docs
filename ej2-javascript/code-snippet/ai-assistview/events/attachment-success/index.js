@@ -2,7 +2,7 @@ ej.base.enableRipple(true);
 
 // Initializes the AI Assist control
 var aiAssistView = new ej.interactivechat.AIAssistView({
-    attachmentUploadSuccess: ()=> {
+    attachmentUploadSuccess: function () {
         // Your required action here
     },
     promptRequest: function () {

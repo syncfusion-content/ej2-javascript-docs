@@ -20,7 +20,7 @@ ej.base.L10n.load({
 // Initializes the SpeechToText control
 var speechToText = new ej.inputs.SpeechToText({
     locale: 'de',
-    transcriptChanged: (args) => {
+    transcriptChanged: function (args) {
         textareaObj.value = args.transcript;
     }
 });

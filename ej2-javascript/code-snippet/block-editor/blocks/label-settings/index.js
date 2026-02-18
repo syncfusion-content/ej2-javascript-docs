@@ -1,4 +1,4 @@
-let labelSettings = {
+var labelSettings = {
     triggerChar: '#',
     items: [
         { id: 'bug', text: 'Bug', labelColor: '#ff5252', groupBy: 'Status' },
@@ -13,7 +13,7 @@ let labelSettings = {
     ]
 };
 
-let blocksData = [
+var blocksData = [
     {
         blockType: 'Heading',
         properties: { level: 1},

@@ -37,26 +37,26 @@ var blockEditor = new ej.blockeditor.BlockEditor({
 blockEditor.appendTo('#blockeditor');
 
 // Apply Bold Formatting
-document.getElementById('applyBoldBtn').addEventListener('click', () => {
+document.getElementById('applyBoldBtn').addEventListener('click', function() {
     blockEditor.executeToolbarAction(ej.blockeditor.CommandName.Bold);
     displayOutput('Bold formatting applied to selected text');
 });
 
 // Apply Color Formatting
-document.getElementById('applyColorBtn').addEventListener('click', () => {
+document.getElementById('applyColorBtn').addEventListener('click', function() {
     blockEditor.executeToolbarAction(ej.blockeditor.CommandName.Color, '#ff6b35');
     displayOutput('Orange color (#ff6b35) applied to selected text');
 });
 
 // Enable Toolbar Items
-document.getElementById('enableToolbarBtn').addEventListener('click', () => {
+document.getElementById('enableToolbarBtn').addEventListener('click', function() {
     // Enable specific toolbar items
     blockEditor.enableToolbarItems(['bold', 'italic', 'underline']);
     displayOutput('Toolbar items (bold, italic, underline) have been enabled');
 });
 
 // Disable Toolbar Items
-document.getElementById('disableToolbarBtn').addEventListener('click', () => {
+document.getElementById('disableToolbarBtn').addEventListener('click', function() {
     // Disable specific toolbar items
     blockEditor.disableToolbarItems(['bold', 'italic']);
     displayOutput('Toolbar items (bold, italic) have been disabled');

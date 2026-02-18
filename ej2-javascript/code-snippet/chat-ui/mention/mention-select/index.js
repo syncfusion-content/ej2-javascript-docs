@@ -1,17 +1,17 @@
 ej.base.enableRipple(true);
 
-let currentUserModel = {
+var currentUserModel = {
     id: "user1",
     user: "Albert"
 };
-let michaleUserModel = {
+var michaleUserModel = {
     id: "user2",
     user: "Michale Suyama"
 };
 // Initializes the Chat UI control
-let chatUI = new ej.interactivechat.ChatUI({
+var chatUI = new ej.interactivechat.ChatUI({
     mentionUsers: [ currentUserModel, michaleUserModel ],
-    mentionSelect: (args) => {
+    mentionSelect: function (args) {
         // Your required action here
     }
 });

@@ -15,9 +15,9 @@ var aiAssistView = new ej.interactivechat.AIAssistView({
         }
     ],
     activeView: 1,
-    promptRequest: () => {
-        setTimeout(() => {
-            let defaultResponse = 'For real-time prompt processing, connect the AIAssistView component to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
+    promptRequest: function () {
+        setTimeout(function () {
+            var defaultResponse = 'For real-time prompt processing, connect the AIAssistView component to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
             aiAssistView.addPromptResponse(defaultResponse);
         }, 1000);
     }

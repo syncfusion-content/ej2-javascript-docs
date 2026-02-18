@@ -1,17 +1,17 @@
 ej.base.enableRipple(true);
 
-let currentUserModel = {
+var currentUserModel = {
     id: "user1",
     user: "Albert"
 };
 
-let michaleUserModel = {
+var michaleUserModel = {
     id: "user2",
     user: "Michale Suyama",
     avatarUrl: 'https://ej2.syncfusion.com/demos/src/avatar/images/pic03.png'
 };
 
-let chatMessages = [
+var chatMessages = [
     {
         author: currentUserModel,
         text: "Hi Michale, are we on track for the deadline?"

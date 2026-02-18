@@ -19,7 +19,7 @@ var tabs = [
                     { text: 'Convert Table' },
                     { text: 'Excel SpreadSheet' },
                   ],
-                  beforeItemRender:(args) => {
+                  beforeItemRender: function (args) {
                     if (args.item.text === 'Insert Table') {
                       args.element.classList.add("e-custom-class");
                    }

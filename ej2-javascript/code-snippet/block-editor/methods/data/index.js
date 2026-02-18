@@ -81,33 +81,33 @@ var blockEditor = new ej.blockeditor.BlockEditor({
 blockEditor.appendTo('#blockeditor');
 
 // Get All Data as JSON
-(document.getElementById('getJsonAllBtn')).addEventListener('click', () => {
+(document.getElementById('getJsonAllBtn')).addEventListener('click', function() {
     var jsonData = blockEditor.getDataAsJson();
     var formattedJson = JSON.stringify(jsonData, null, 2);
-    displayOutput(`All blocks as JSON:\n\n${formattedJson}`);
+    displayOutput('All blocks as JSON:\n\n' + formattedJson);
 });
 
 // Get Specific Block Data as JSON
-(document.getElementById('getJsonBlockBtn')).addEventListener('click', () => {
+(document.getElementById('getJsonBlockBtn')).addEventListener('click', function() {
     var blockData = blockEditor.getDataAsJson('title-block');
     var formattedJson = JSON.stringify(blockData, null, 2);
-    displayOutput(`Block "title-block" as JSON:\n\n${formattedJson}`);
+    displayOutput('Block "title-block" as JSON:\n\n' + formattedJson);
 });
 
 // Get All Data as HTML
-(document.getElementById('getHtmlAllBtn')).addEventListener('click', () => {
+(document.getElementById('getHtmlAllBtn')).addEventListener('click', function() {
     var htmlData = blockEditor.getDataAsHtml();
-    displayOutput(`All blocks as HTML:\n\n${htmlData}`);
+    displayOutput('All blocks as HTML:\n\n' + htmlData);
 });
 
 // Get Specific Block Data as HTML
-(document.getElementById('getHtmlBlockBtn')).addEventListener('click', () => {
+(document.getElementById('getHtmlBlockBtn')).addEventListener('click', function() {
     var blockHtml = blockEditor.getDataAsHtml('intro-paragraph');
-    displayOutput(`Block "intro-paragraph" as HTML:\n\n${blockHtml}`);
+    displayOutput('Block "intro-paragraph" as HTML:\n\n' + blockHtml);
 });
 
 // Print Editor Content
-(document.getElementById('printContentBtn')).addEventListener('click', () => {
+(document.getElementById('printContentBtn')).addEventListener('click', function() {
     blockEditor.print();
     displayOutput('Print dialog opened. Check for a new browser window/tab with the printable content.');
 });

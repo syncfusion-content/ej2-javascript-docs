@@ -1,18 +1,18 @@
 ej.base.enableRipple(true);
 
-let currentUserModel = {
+var currentUserModel = {
     id: "user1",
     user: "Albert",
     statusIconCss: 'e-icons e-user-online'
 };
 
-let michaleUserModel = {
+var michaleUserModel = {
     id: "user2",
     user: "Michale Suyama",
     statusIconCss: 'e-icons e-user-away'
 };
 
-let chatMessages = [
+var chatMessages = [
     {
         author: currentUserModel,
         text: "Hi Michale, are we on track for the deadline?"

@@ -1,5 +1,5 @@
 // Initialize BlockEditor with custom block action configuration
-const blockEditor = new ej.blockeditor.BlockEditor({
+var blockEditor = new ej.blockeditor.BlockEditor({
     blocks: [
         {
             blockType: 'Heading',
@@ -48,13 +48,13 @@ const blockEditor = new ej.blockeditor.BlockEditor({
                 tooltip: 'Show block information'
             }
         ],
-        open: (args) => {
+        open: function(args) {
             // Your actions here
         },
-        close: (args) => {
+        close: function(args) {
             // Your actions here
         },
-        itemClick: (args) => {
+        itemClick: function(args) {
             // Handle custom block actions
         }
     }

@@ -1,10 +1,10 @@
 
 // Initializes the SpeechToText control
 var speechToText = new ej.inputs.SpeechToText({
-    onStop: (args) => {
+    onStop: function (args) {
         updateListeningState(args.listeningState);
     },
-    onStart: (args) => {
+    onStart: function (args) {
         updateListeningState(args.listeningState);
     },
     listeningState: ej.inputs.SpeechToTextState.Inactive

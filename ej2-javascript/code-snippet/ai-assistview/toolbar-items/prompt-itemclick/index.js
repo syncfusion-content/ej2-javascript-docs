@@ -1,6 +1,6 @@
 ej.base.enableRipple(true);
 
-let promptsData = [
+var promptsData = [
     {
         prompt: "What is AI?",
         response: `<div>AI stands for Artificial Intelligence, enabling machines to mimic human intelligence for tasks such as learning, problem-solving, and decision-making.</div>`
@@ -11,7 +11,7 @@ let promptsData = [
 var aiAssistView = new ej.interactivechat.AIAssistView({
     prompts: promptsData,
     promptToolbarSettings: {
-        itemClicked: (args) => {
+        itemClicked: function(args) {
             // Your required action here
         }
     },

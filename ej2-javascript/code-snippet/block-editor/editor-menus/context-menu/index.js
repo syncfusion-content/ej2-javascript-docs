@@ -78,13 +78,13 @@ var blockEditor = new ej.blockeditor.BlockEditor({
         enable: true,
         showItemOnClick: true,
         items: customContextMenuItems,
-        opening: (args) => {
+        opening: function(args) {
             // Your actions here
         },
-        closing: (args) => {
+        closing: function(args) {
             // Your actions here
         },
-        itemSelect: (args) => {
+        itemSelect: function(args) {
             // Handle custom actions here
         }
     }

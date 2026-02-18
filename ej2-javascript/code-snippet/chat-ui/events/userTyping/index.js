@@ -1,13 +1,13 @@
 ej.base.enableRipple(true);
 
-let currentUserModel = {
+var currentUserModel = {
     id: "user1",
     user: "Albert"
 };
 // Initializes the Chat UI control
-let chatUI = new ej.interactivechat.ChatUI({
+var chatUI = new ej.interactivechat.ChatUI({
     user: currentUserModel,
-    userTyping: () => {
+    userTyping: function () {
         // Your required action here
     }
 });

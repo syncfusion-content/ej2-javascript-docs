@@ -1,4 +1,4 @@
-let blocksData = [
+var blocksData = [
     {
         blockType: 'Heading',
         properties: { level: 1 },

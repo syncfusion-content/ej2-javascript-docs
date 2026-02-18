@@ -1,18 +1,18 @@
-const { DirectLine } = require('directline-js');
-const axios = require('axios');
+var DirectLine = require('directline-js').DirectLine;
+var axios = require('axios');
 
-const currentUserModel = {
+var currentUserModel = {
     id: "user1",
     user: "You"
 };
-const botUserModel = {
+var botUserModel = {
     id: "bot",
     user: "Bot",
     avatarUrl:'https://ej2.syncfusion.com/demos/src/chat-ui/images/bot.png'
 };
 
-let chat;
-let directLine;
+var chat;
+var directLine;
 
 // Function to initialize the chat and Direct Line connection
 async function initialize() {

@@ -2,7 +2,7 @@
 // Initializes the SpeechToText control
 var speechToText = new ej.inputs.SpeechToText({
     disabled: true,
-    transcriptChanged: (args) => {
+    transcriptChanged: function (args) {
         textareaObj.value = args.transcript;
     }
 });

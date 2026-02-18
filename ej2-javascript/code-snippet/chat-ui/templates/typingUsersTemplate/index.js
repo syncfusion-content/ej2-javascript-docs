@@ -1,20 +1,20 @@
 ej.base.enableRipple(true);
 
-let currentUserModel = {
+var currentUserModel = {
     id: "user1",
     user: "Albert"
 };
 
-let michaleUserModel = {
+var michaleUserModel = {
     id: "user2",
     user: "Michale Suyama"
 };
-let reenaUserModel = {
+var reenaUserModel = {
     id: "user3",
     user: "Reena"
 };
-let typingUsers = [michaleUserModel, reenaUserModel];
-let chatMessages = [
+var typingUsers = [michaleUserModel, reenaUserModel];
+var chatMessages = [
     {
         author: currentUserModel,
         text: "Hi Michale, are we on track for the deadline?"
@@ -29,7 +29,7 @@ let chatMessages = [
     }
 ];
 // Initializes the Chat UI control
-let chatUI = new ej.interactivechat.ChatUI({
+var chatUI = new ej.interactivechat.ChatUI({
     messages: chatMessages,
     user: currentUserModel,
     typingUsers: typingUsers,
@@ -44,8 +44,8 @@ function typingUsersTemplate(context) {
         return '';
     }
 
-    let usersList = context.users.map((user, i) => {
-        let isLastUser = i === context.users.length - 1;
+    var usersList = context.users.map(function (user, i) {
+        var isLastUser = i === context.users.length - 1;
         return `${isLastUser && i > 0 ? 'and ' : ''}<span class="typing-user">${user.user}</span>`;
     }).join(' ');
 

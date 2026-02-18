@@ -27,7 +27,7 @@ var blockEditor = new ej.blockeditor.BlockEditor({
         popupWidth: '100px',
         enable: true,
         items: customToolbarItems,
-        itemClick: (args) => {
+        itemClick: function(args) {
             // Handle custom actions here
         }
     }

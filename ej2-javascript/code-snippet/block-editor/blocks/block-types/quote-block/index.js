@@ -1,4 +1,4 @@
-let blocksData = [
+var blocksData = [
     {
         blockType: 'Quote',
         content: [

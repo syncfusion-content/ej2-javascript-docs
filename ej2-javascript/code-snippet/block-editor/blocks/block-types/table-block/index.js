@@ -1,4 +1,4 @@
-let blocksData = [
+var blocksData = [
     {
         blockType: ej.blockeditor.BlockType.Table,
         properties: {

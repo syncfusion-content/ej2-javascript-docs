@@ -6,7 +6,7 @@ var speechToText = new ej.inputs.SpeechToText({
         stopContent: 'Stop Listening'
     },
     enableRtl: true,
-    transcriptChanged: (args) => {
+    transcriptChanged: function (args) {
         textareaObj.value = args.transcript;
     }
 });

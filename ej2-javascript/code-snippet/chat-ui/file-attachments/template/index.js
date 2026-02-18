@@ -1,6 +1,6 @@
 ej.base.enableRipple(true);
 
-let currentUserModel = {
+var currentUserModel = {
     id: "user1",
     user: "Albert"
 };
@@ -9,15 +9,15 @@ function getMime(file){
 }
 
 function getType(file){
-    const t = getMime(file);
+    var t = getMime(file);
     if (!t) return '';
-    const parts = t.split('/');
+    var parts = t.split('/');
     return parts.length > 1 ? parts[1].toUpperCase() : t.toUpperCase();
 }
 
 function getExt(file){
-    const name = file?.name || '';
-    const parts = name.split('.');
+    var name = file?.name || '';
+    var parts = name.split('.');
     return parts.length > 1 ? parts.pop()?.toUpperCase() || '' : '';
 }
 
@@ -30,7 +30,7 @@ function isVideo(file) {
 }
 
 function getHumanSize(file){
-    const sizeBytes = file?.size || 0;
+    var sizeBytes = file?.size || 0;
     if (sizeBytes < 1024) return sizeBytes + ' B';
     if (sizeBytes < 1024 * 1024) return (sizeBytes / 1024).toFixed(1) + ' KB';
     return (sizeBytes / (1024 * 1024)).toFixed(1) + ' MB';
@@ -39,18 +39,18 @@ function getHumanSize(file){
 // FIX: Template functions must accept context/data parameter correctly
 function attachmentTemplate(context) {
     // The file data comes in context.file or directly as context
-    const file = context?.selectedFile || context;
-    const isImg = isImage(file);
-    const isVid = isVideo(file);
+    var file = context?.selectedFile || context;
+    var isImg = isImage(file);
+    var isVid = isVideo(file);
     
     // FIX: Use proper quote escaping in template strings
-    const iconHtml = isImg
+    var iconHtml = isImg
         ? `<img class="c-attach-img" src="${file.fileSource || ''}" alt="${file.name || ''}">`
         : isVid
         ? '<span class="e-icons e-video"></span>'
         : '<span class="e-icons e-chat-file-icon"></span>';
     
-    const typeText = file?.type || file?.rawFile?.type || '';
+    var typeText = file?.type || file?.rawFile?.type || '';
 
     return `
         <div class="c-attach">
@@ -65,11 +65,11 @@ function attachmentTemplate(context) {
 
 function previewTemplate(context) {
     // The file data comes in context.file or directly as context
-    const file = context.selectedFile || context;
-    const badge = getExt(file) || getType(file) || 'FILE';
-    const size = getHumanSize(file);
+    var file = context.selectedFile || context;
+    var badge = getExt(file) || getType(file) || 'FILE';
+    var size = getHumanSize(file);
     
-    const mediaHtml = isImage(file)
+    var mediaHtml = isImage(file)
         ? `<img class="c-media-img" src="${file.fileSource || ''}" alt="${file.name || ''}">`
         : isVideo(file)
         ? `<video class="c-media-video" controls disablePictureInPicture playsInline preload="metadata" title="${file.name || ''}">
@@ -96,7 +96,7 @@ function previewTemplate(context) {
     `;
 }
 // Initializes the Chat UI control
-let chatUI = new ej.interactivechat.ChatUI({
+var chatUI = new ej.interactivechat.ChatUI({
     user: currentUserModel,
     cssClass: 'chat-attachment-template',
     enableAttachments: true,

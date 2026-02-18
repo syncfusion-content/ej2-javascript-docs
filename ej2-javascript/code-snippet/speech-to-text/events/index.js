@@ -1,19 +1,19 @@
 
 // Initializes the SpeechToText control
 var speechToText = new ej.inputs.SpeechToText({
-    created: ()=>{
+    created: function (){
         //your required action here
     },
-    onStop: (args) => {
+    onStop: function (args) {
         //your required action here
     },
-    onStart: (args) => {
+    onStart: function (args) {
         //your required action here
     },
-    onError: (event) => {
+    onError: function (event) {
         //your required action here
     },
-    transcriptChanged: (args) => {
+    transcriptChanged: function (args) {
         //your required action here
     }
 });

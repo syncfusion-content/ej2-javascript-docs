@@ -6,7 +6,7 @@ var speechToText = new ej.inputs.SpeechToText({
         content: 'Click the button to start recognition',
         stopContent: 'Click the button to stop recognition'
     },
-    transcriptChanged: (args) => {
+    transcriptChanged: function (args) {
         textareaObj.value = args.transcript;
     }
 });

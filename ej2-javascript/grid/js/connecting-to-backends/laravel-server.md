@@ -43,6 +43,17 @@ Before proceeding, ensure that the following tools are installed and configured:
 - Postman or Insomnia for API testing.
 - MySQL Workbench or phpMyAdmin for database management.
 
+## Key topics
+
+| # | Topics | Link |
+|---|---------|-------|
+| 1 | Create a Laravel project, configure the database, and set up models with migrations | [View](#setting-up-the-laravel-application) |
+| 2 | Create Blade templates and configure `UrlAdaptor` for seamless Grid integration | [View](#integrating-syncfusion-grid-with-laravel-api) |
+| 3 | Handle server-side filtering, searching, sorting, and paging for efficient data processing | [View](#performing-data-operations) |
+| 4 | Enable insert, read, update, and delete operations from the Grid using `UrlAdaptor` | [View](#performing-crud-operations) |
+| 5 | Run the Laravel development server and access the application locally | [View](#running-the-application) |
+| 6 | Explore a complete working sample on GitHub | [View](#github-sample) |
+
 ### Verifying Installation
 
 Open a terminal (for example, an integrated terminal in Visual Studio Code or Windows Command Prompt opened with <kbd>Win+R</kbd>, or macOS Terminal launched with <kbd>Cmd+Space</kbd>) and run the following command to verify installation:
@@ -970,20 +981,6 @@ The application is now accessible at `http://localhost:8000`. The Grid displays 
 A complete, working sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/syncfusion-grid-component-in-php-laravel).
 
 The repository contains the complete Laravel backend implementation with all ServerController methods, API routes, database models, and migrations.
-
-## Summary
-
-This guide covers the following key areas:
-
-1. Tools, frameworks, and versions required to build the application [🔗](#prerequisites).
-2. Create a Laravel project, configure the database, and set up models with migrations. [🔗](#step-8-creating-the-database-seeder)
-3. Create Blade templates and configure `UrlAdaptor` for seamless Grid integration. [🔗](#integrating-syncfusion-grid-with-php-and-laravel-api)
-4. Handle server-side filtering, searching, sorting, and paging for efficient data processing. [🔗](#performing-data-operations)
-5. Enable insert, read, update, and delete operations from the Grid using `UrlAdaptor`. [🔗](#performing-crud-operations)
-6. Run the Laravel development server and access the application locally. [🔗](#running-the-application)
-7. Explore a complete working sample on GitHub. [🔗](#complete-sample-repository)
-
-The resulting application provides a reliable, scalable solution for managing student records with a robust Laravel REST API and Syncfusion Grid front end, including error handling, security measures, and performance optimizations.
 
 ## Troubleshooting
 

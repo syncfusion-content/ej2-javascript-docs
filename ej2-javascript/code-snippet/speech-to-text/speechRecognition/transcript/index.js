@@ -4,7 +4,7 @@ var transcript = 'Hi, hello! How are you?';
 // Initializes the SpeechToText control
 var speechToText = new ej.inputs.SpeechToText({
     transcript: transcript,
-    transcriptChanged: (args) => {
+    transcriptChanged: function (args) {
         textareaObj.value = speechToText.transcript;
     }
 });

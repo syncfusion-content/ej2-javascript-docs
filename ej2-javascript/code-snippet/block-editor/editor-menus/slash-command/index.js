@@ -31,10 +31,10 @@ var blockEditor = new ej.blockeditor.BlockEditor({
                 iconCss: 'e-icons e-schedule',
             }
         ],
-        itemSelect: (args) => {
+        itemSelect: function(args) {
             // Handle custom command actions
         },
-        filtering: (args) => {
+        filtering: function(args) {
             // Your actions here
         }
     }

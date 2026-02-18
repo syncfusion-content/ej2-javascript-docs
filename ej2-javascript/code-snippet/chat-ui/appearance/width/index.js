@@ -10,7 +10,7 @@ let michaleUserModel = {
     user: "Michale Suyama"
 };
 
-let chatMessages = [
+var chatMessages = [
     {
         author: currentUserModel,
         text: "Hi Michale, are we on track for the deadline?"

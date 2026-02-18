@@ -1,17 +1,17 @@
 ej.base.enableRipple(true);
 
-let currentUserModel = {
+var currentUserModel = {
     id: "user1",
     user: "Albert"
 };
 
-let michaleUserModel = {
+var michaleUserModel = {
     id: "user2",
     user: "Michale Suyama"
 };
-let suggestions = [ "Okay will check it", "Sounds good!"];
+var suggestions = [ "Okay will check it", "Sounds good!"];
 
-let chatMessages = [
+var chatMessages = [
     {
         author: currentUserModel,
         text: "Hi Michale, are we on track for the deadline?"
@@ -22,7 +22,7 @@ let chatMessages = [
     }
 ];
 // Initializes the Chat UI control
-let chatUI = new ej.interactivechat.ChatUI({
+var chatUI = new ej.interactivechat.ChatUI({
     messages: chatMessages,
     user: currentUserModel,
     suggestions: suggestions,

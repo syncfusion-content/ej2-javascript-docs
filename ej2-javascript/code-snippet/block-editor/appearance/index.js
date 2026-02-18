@@ -56,8 +56,8 @@ var blockEditor = new ej.blockeditor.BlockEditor({
 blockEditor.appendTo('#blockeditor');
 
 // Track current state
-let isReadonly = false;
-let currentTheme = 'default';
+var isReadonly = false;
+var currentTheme = 'default';
 
 // Toggle Readonly Mode
 (document.getElementById('toggleReadonlyBtn')).addEventListener('click', () => {
@@ -87,11 +87,11 @@ let currentTheme = 'default';
 });
 
 // Add event listeners for editor interactions
-blockEditor.focus = () => {
+blockEditor.focus = function() {
     displayOutput('Editor focused. You can now type or edit content.');
 };
 
-blockEditor.blur = () => {
+blockEditor.blur = function() {
     displayOutput('Editor lost focus.');
 };
 

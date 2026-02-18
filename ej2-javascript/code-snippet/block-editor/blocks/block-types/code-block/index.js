@@ -1,4 +1,4 @@
-let blocksData = [
+var blocksData = [
     {
         blockType: 'Code',
         content: [
@@ -10,7 +10,7 @@ let blocksData = [
     }
 ];
 
-const codeBlockData = {
+var codeBlockData = {
     defaultLanguage: 'javascript',
     languages: [
         { language: 'javascript', label: 'JavaScript' },

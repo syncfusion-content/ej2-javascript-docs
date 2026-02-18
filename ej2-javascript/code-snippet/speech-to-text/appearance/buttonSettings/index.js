@@ -9,7 +9,7 @@ var speechToText = new ej.inputs.SpeechToText({
         iconPosition: 'Right',
         isPrimary: true
     },
-    transcriptChanged: (args) => {
+    transcriptChanged: function (args) {
         textareaObj.value = args.transcript;
     }
 });

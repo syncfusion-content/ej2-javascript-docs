@@ -40,7 +40,7 @@ var blockEditor = new ej.blockeditor.BlockEditor({
 blockEditor.appendTo('#blockeditor');
 
 // Add Block Method
-(document.getElementById('addBlockBtn')).addEventListener('click', () => {
+(document.getElementById('addBlockBtn')).addEventListener('click', function() {
     var newBlock = {
         id: 'new-block',
         blockType: 'Paragraph',
@@ -51,35 +51,35 @@ blockEditor.appendTo('#blockeditor');
             }
         ]
     };
-    
+
     blockEditor.addBlock(newBlock, 'block-2', true);
-    displayOutput(`Block added successfully with ID: ${newBlock.id}`);
+    displayOutput('Block added successfully with ID: ' + newBlock.id);
 });
 
 // Remove Block Method
-(document.getElementById('removeBlockBtn')).addEventListener('click', () => {
+(document.getElementById('removeBlockBtn')).addEventListener('click', function() {
     blockEditor.removeBlock('block-3');
     displayOutput('Block with ID "block-3" removed successfully');
 });
 
 // Get Block Method
-(document.getElementById('getBlockBtn')).addEventListener('click', () => {
+(document.getElementById('getBlockBtn')).addEventListener('click', function() {
     var block = blockEditor.getBlock('block-1');
     if (block && block.content) {
-        displayOutput(`Block found:\nID: ${block.id}\nType: ${block.blockType}\nContent: ${block.content[0].content}`);
+        displayOutput('Block found:\nID: ' + block.id + '\nType: ' + block.blockType + '\nContent: ' + block.content[0].content);
     } else {
         displayOutput('Block with ID "block-1" not found');
     }
 });
 
 // Move Block Method
-(document.getElementById('moveBlockBtn')).addEventListener('click', () => {
+(document.getElementById('moveBlockBtn')).addEventListener('click', function() {
     blockEditor.moveBlock('block-2', 'block-1');
     displayOutput('Block "block-2" moved successfully');
 });
 
 // Update Block Method
-(document.getElementById('updateBlockBtn')).addEventListener('click', () => {
+(document.getElementById('updateBlockBtn')).addEventListener('click', function() {
     var success = blockEditor.updateBlock('block-2', {
         indent: 1,
         content: [
@@ -88,19 +88,19 @@ blockEditor.appendTo('#blockeditor');
             }
         ]
     });
-    
+
     var updatedBlock = blockEditor.getBlock('block-2');
     if (success && updatedBlock && updatedBlock.content) {
-        displayOutput(`Block ${updatedBlock.id} updated successfully\nNew content: "${updatedBlock.content[0].content} \nNew indent: ${updatedBlock.indent}"`);
+        displayOutput('Block ' + updatedBlock.id + ' updated successfully\nNew content: "' + updatedBlock.content[0].content + ' \nNew indent: ' + updatedBlock.indent + '"');
     } else {
         displayOutput('Failed to update block');
     }
 });
 
 // Get Block Count Method
-(document.getElementById('getBlockCountBtn')).addEventListener('click', () => {
+(document.getElementById('getBlockCountBtn')).addEventListener('click', function() {
     var count = blockEditor.getBlockCount();
-    displayOutput(`Total number of blocks: ${count}`);
+    displayOutput('Total number of blocks: ' + count);
 });
 
 // Output helper function

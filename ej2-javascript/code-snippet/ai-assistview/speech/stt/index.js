@@ -1,7 +1,7 @@
-const azureOpenAIApiKey = 'Your_AzureOpenAIApiKey'; // replace your key
-const azureOpenAIEndpoint = 'Your_AzureOpenAIEndpoint'; // replace your endpoint
-const azureOpenAIApiVersion = 'Your_AzureOpenAIApiVersion'; // replace to match your resource
-const azureDeploymentName = 'Your_AzureDeploymentName'; // your Azure OpenAI deployment name
+var azureOpenAIApiKey = 'Your_AzureOpenAIApiKey'; // replace your key
+var azureOpenAIEndpoint = 'Your_AzureOpenAIEndpoint'; // replace your endpoint
+var azureOpenAIApiVersion = 'Your_AzureOpenAIApiVersion'; // replace to match your resource
+var azureDeploymentName = 'Your_AzureDeploymentName'; // your Azure OpenAI deployment name
 var stopStreaming = false;
 loadExternalFile();
 var aiAssistView = new ej.interactivechat.AIAssistView({
@@ -10,9 +10,9 @@ var aiAssistView = new ej.interactivechat.AIAssistView({
         itemClicked: toolbarItemClicked,
     },
     promptToolbarSettings: {
-        itemClicked: (args) => {
+        itemClicked: function (args) {
             if (args.item.iconCss === "e-icons e-assist-edit") {
-                const assistviewFooter = document.querySelector('#assistview-footer');
+                var assistviewFooter = document.querySelector('#assistview-footer');
                 assistviewFooter.innerHTML = aiAssistView.prompts[args.dataIndex].prompt;
                 toggleButtons();
             }

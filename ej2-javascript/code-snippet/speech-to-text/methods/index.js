@@ -1,7 +1,7 @@
 
 // Initializes the SpeechToText control
 var speechToText = new ej.inputs.SpeechToText({
-    transcriptChanged: (args) => {
+    transcriptChanged: function (args) {
         textareaObj.value = args.transcript;
     }
 });
@@ -18,18 +18,18 @@ var textareaObj = new ej.inputs.TextArea({
 });
 textareaObj.appendTo('#textareaInst');
 
-let startButton = new ej.buttons.Button({
+var startButton = new ej.buttons.Button({
     content: 'Start Listening',
 });
 startButton.appendTo('#startListening');
-startButton.element.onclick = () => {
+startButton.element.onclick = function () {
     speechToText.startListening();
 };
 
-let stopButton = new ej.buttons.Button({
+var stopButton = new ej.buttons.Button({
     content: 'Stop Listening',
 });
 stopButton.appendTo('#stopListening');
-stopButton.element.onclick = () => {
+stopButton.element.onclick = function () {
     speechToText.stopListening();
 };

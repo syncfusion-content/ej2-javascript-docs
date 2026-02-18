@@ -1,7 +1,7 @@
-const azureOpenAIApiKey = 'Your_AzureOpenAIApiKey'; // replace your key
-const azureOpenAIEndpoint = 'Your_AzureOpenAIEndpoint'; // replace your endpoint
-const azureOpenAIApiVersion = 'Your_AzureOpenAIApiVersion'; // replace to match your resource
-const azureDeploymentName = 'Your_AzureDeploymentName'; // your Azure OpenAI deployment name
+var azureOpenAIApiKey = 'Your_AzureOpenAIApiKey'; // replace your key
+var azureOpenAIEndpoint = 'Your_AzureOpenAIEndpoint'; // replace your endpoint
+var azureOpenAIApiVersion = 'Your_AzureOpenAIApiVersion'; // replace to match your resource
+var azureDeploymentName = 'Your_AzureDeploymentName'; // your Azure OpenAI deployment name
 var stopStreaming = false;
 var currentUtterance;
 loadExternalFile();
@@ -34,11 +34,11 @@ function toolbarItemClicked(args) {
 
 // Handles clicks on response toolbar items, such as copying, reading aloud, liking, or disliking the response
 function onResponseToolbarItemClicked(args) {
-    const responseHtml = aiAssistView.prompts[args.dataIndex].response;
+    var responseHtml = aiAssistView.prompts[args.dataIndex].response;
     if (responseHtml) {
-        const tempDiv = document.createElement('div');
+        var tempDiv = document.createElement('div');
         tempDiv.innerHTML = responseHtml;
-        const text = (tempDiv.textContent || tempDiv.innerText || '').trim();
+        var text = (tempDiv.textContent || tempDiv.innerText || '').trim();
         if (args.item.iconCss === 'e-icons e-audio' || args.item.iconCss === 'e-icons e-assist-stop') {
             if (currentUtterance) {
                 speechSynthesis.cancel();
@@ -46,8 +46,8 @@ function onResponseToolbarItemClicked(args) {
                 aiAssistView.responseToolbarSettings.items[1].iconCss = 'e-icons e-audio';
                 aiAssistView.responseToolbarSettings.items[1].tooltip = 'Read Aloud';
             } else {
-                const utterance = new SpeechSynthesisUtterance(text);
-                utterance.onend = () => {
+                var utterance = new SpeechSynthesisUtterance(text);
+                utterance.onend = function () {
                     currentUtterance = null;
                     aiAssistView.responseToolbarSettings.items[1].iconCss = 'e-icons e-audio';
                     aiAssistView.responseToolbarSettings.items[1].tooltip = 'Read Aloud';

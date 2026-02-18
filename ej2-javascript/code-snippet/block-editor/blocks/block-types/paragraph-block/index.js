@@ -1,4 +1,4 @@
-let paragraphBlock = [
+var paragraphBlock = [
     {
         blockType: 'Paragraph',
         content: [

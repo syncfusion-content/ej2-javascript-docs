@@ -1,6 +1,6 @@
 ej.base.enableRipple(true);
 
-let promptsData = [
+var promptsData = [
     {
         prompt: "What is AI?",
         response: `<div>AI stands for Artificial Intelligence, enabling machines to mimic human intelligence for tasks such as learning, problem-solving, and decision-making.</div>`
@@ -25,7 +25,7 @@ var aiAssistView = new ej.interactivechat.AIAssistView({
 // Render initialized AI Assist.
 aiAssistView.appendTo('#prompts');
 
-document.getElementById("toolbarBtn")?.addEventListener("click", () => {
+document.getElementById("toolbarBtn")?.addEventListener("click", function() {
   // Toggle the toolbar position
   aiAssistView.footerToolbarSettings.toolbarPosition =
     aiAssistView.footerToolbarSettings.toolbarPosition === "Inline"

@@ -34,7 +34,7 @@ ej.base.L10n.load({
     }
 })
 
-let blocksData = [
+var blocksData = [
     {
         blockType: 'Heading',
         properties: { level: 1},

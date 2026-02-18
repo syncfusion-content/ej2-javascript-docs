@@ -18,10 +18,10 @@ function footerContent() {
 
 document.addEventListener('click', function (event) {
     if (event.target && event.target.id === 'sendPrompt') {
-        const textArea = document.getElementById('promptTextArea');
+        var textArea = document.getElementById('promptTextArea');
         if (textArea) {
             textArea.value = '';
-            let defaultResponse = 'For real-time prompt processing, connect the AIAssistView component to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
+            var defaultResponse = 'For real-time prompt processing, connect the AIAssistView component to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
             aiAssistView.addPromptResponse(defaultResponse);
         }
     }

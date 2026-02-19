@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Getting started with ##Platform_Name## Sparkline control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Sparkline control of Syncfusion Essential JS 2 and more details.
+description:  Check out and learn about Getting started with ##Platform_Name## Sparkline control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: Sparkline
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Sparkline control
+# Getting started with ##Platform_Name## Sparkline control
 
-This document explains the steps to create a simple Sparkline and demonstrates the basic usage of the TreeGrid component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
+This document explains the steps to create a simple Sparkline and demonstrates the basic usage of the Sparkline component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
@@ -19,7 +19,7 @@ This document explains the steps to create a simple Sparkline and demonstrates t
 
 The following list of minimum dependencies are required to use the sparkline:
 
-```javascript
+```
 |-- @syncfusion/ej2-charts
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-data
@@ -28,7 +28,7 @@ The following list of minimum dependencies are required to use the sparkline:
 
 ## Set up development environment
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
+Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack).
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -64,7 +64,7 @@ npm install
 
 ## Add sparkline to project
 
-Add an HTML div element for map into your `index.html`. `[src/index.html]`
+Add an HTML div element for the sparkline into your `index.html`. `[src/index.html]`
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -91,7 +91,7 @@ Add an HTML div element for map into your `index.html`. `[src/index.html]`
 {% endhighlight %}
 {% endtabs %}
 
-Next, import the sparkline control into `index.ts`, create a sparkline instance, and append it to the `#container`.
+Next, import the sparkline control into `app.ts`, create a sparkline instance, and append it to `#element`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -107,7 +107,7 @@ sparkline.appendTo('#element');
 {% endhighlight %}
 {% endtabs %}
 
-Now, use the `npm run start` command to run the application in browser.
+Now, use the `npm run start` command to run the application in a browser.
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
@@ -135,7 +135,7 @@ Since the data source has not been specified to the sparkline, no shapes will be
 
 The sparkline component is segregated into individual feature-wise modules. To use a particular feature, inject its feature module using the `Sparkline.Inject()` method. The module available in sparkline and its description is as follows.
 
-* SparklineTooltip - Inject this provider to use tooltip series.
+* SparklineTooltip - Inject this module to enable tooltips.
 
 In this application, the basic sparkline is modified to demonstrate various sparkline types.
 
@@ -182,7 +182,7 @@ The sparkline type can be configured using the `type` property, which supports `
 
 ## Enable tooltip for sparkline
 
-The sparkline provides additional information through a tooltip that appears when the mouse pointer hovers over the chart. You can enable tooltip by setting the [`visible`] property to true in [`tooltipSettings`] and injecting `SparklineTooltip` module using the `Sparkline.Inject(SparklineTooltip )` method.
+The sparkline provides additional information through a tooltip that appears when the mouse pointer hovers over the chart. You can enable the tooltip by setting the `visible` property to `true` in `tooltipSettings` and injecting the `SparklineTooltip` module using `Sparkline.Inject(SparklineTooltip)`.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

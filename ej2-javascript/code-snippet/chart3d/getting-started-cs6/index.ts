@@ -1,7 +1,6 @@
 
 
-import { Chart3D, ColumnSeries3D, Category3D } from '@syncfusion/ej2-charts';
-import { DataLabel3D, Legend3D } from '@syncfusion/ej2-charts';
+import { Chart3D, ColumnSeries3D, DataLabel3D, Category3D, Legend3D } from '@syncfusion/ej2-charts';
 Chart3D.Inject(ColumnSeries3D, DataLabel3D, Category3D, Legend3D);
 let chartData: Object[] = [
       { month: 'Jan', sales: 35 }, { month: 'Feb', sales: 28 },

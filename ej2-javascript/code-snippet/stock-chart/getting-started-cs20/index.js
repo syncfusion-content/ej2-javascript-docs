@@ -5,19 +5,19 @@ var stockChart = new ej.charts.StockChart({
         series: [
             {
                 dataSource: chartData, yName: 'open',
-                 type: 'Line', width: 2,
+                 type: 'Line', width: 2, name: 'Open'
             },
             {
                 dataSource: chartData, yName: 'close',
-                type: 'Line', width: 2,
+                type: 'Line', width: 2, name: 'Close'
             },
             {
                 dataSource: chartData, yName: 'high',
-                type: 'Line', width: 2,
+                type: 'Line', width: 2, name: 'High'
             },
             {
                 dataSource: chartData, yName: 'low',
-                type: 'Line', width: 2,
+                type: 'Line', width: 2, name: 'Low'
             }
         ],
         // trackball for chart

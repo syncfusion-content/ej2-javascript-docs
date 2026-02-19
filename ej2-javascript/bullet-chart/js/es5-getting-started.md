@@ -1,15 +1,15 @@
 ---
 layout: post
-title: ES5 getting started with ##Platform_Name## Bullet chart control | Syncfusion
-description:  Checkout and learn about ES5 getting started with ##Platform_Name## Bullet chart control of Syncfusion Essential JS 2 and more details.
+title: ES5 getting started with ##Platform_Name## Bullet Chart control | Syncfusion
+description:  Check out and learn about ES5 getting started with ##Platform_Name## Bullet chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: ES5 getting started 
+control: Bullet Chart 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# ES5 getting started in ##Platform_Name## Bullet chart control
+# ES5 getting started with ##Platform_Name## Bullet Chart control
 
 This section explains the steps required to create a simple Bullet Chart and demonstrates the basic usage of the Bullet Chart control.
 
@@ -17,7 +17,7 @@ This section explains the steps required to create a simple Bullet Chart and dem
 
 Below is the list of minimum dependencies required to use the Bullet Chart.
 
-```javascript
+```
 |-- @syncfusion/ej2-charts
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-data
@@ -33,24 +33,24 @@ Follow these steps to set up your local environment.
 
 **Step 1:** Create a root folder **myapp** for your application.
 
-**Step 2:** Create **myapp/resources** folder to store local scripts and styles files.
+**Step 2:** Create **myapp/resources** folder to store local scripts and styles.
 
-**Step 3:** Create **myapp/index.js** and **myapp/index.html** files for initializing the Syncfusion Essential 2 Bullet Chart control.
+**Step 3:** Create **myapp/index.js** and **myapp/index.html** files for initializing the Syncfusion Essential JS 2 Bullet Chart control.
 
 ## Adding Syncfusion resources
 
-The Essential JS 2 Bullet Chart control can be initialized by using either of the following ways.
+The Essential JS 2 Bullet Chart control can be initialized in either of the following ways.
 
 * Using local script.
-* Using CDN link for script.
+* Using CDN links for scripts.
 
 ### Using local script
 
 You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
 
-After installing the Essential JS 2 product build, you can copy the Bullet Chart and its dependencies scripts and style file into the **resources/scripts** and **resources/styles** folder.
+After installing the Essential JS 2 product build, you can copy the Bullet Chart and its dependency scripts and style files into the **resources/scripts** and **resources/styles** folder.
 
-The following shows the path to the bullet chart's script and style file.
+The following shows the path to the Bullet Chart's script and style files.
 
 **Syntax:**
 
@@ -71,7 +71,7 @@ After copying the files, reference the chart scripts from `index.html`. The foll
 ```
 
 <!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
+  <html xmlns="https://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2 Bullet Chart</title>
 
@@ -88,29 +88,29 @@ After copying the files, reference the chart scripts from `index.html`. The foll
 
 ```
 
-### Using CDN link for script
+### Using CDN links for scripts
 
-Using CDN link, you can directly refer the bullet chart control's script into the `index.html`.
+Using CDN links, you can reference the Bullet Chart control's script in the `index.html`.
 
-Refer the Bullet Chart's CDN links as below.
+Refer the Bullet Chart's CDN links as follows.
 
 **Syntax:**
 
-> Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+> Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 
 **Example:**
 
-> Script: [`http://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js`](http://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js)
+> Script: [`https://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js`](https://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js)
 
 The following HTML shows the minimal bullet chart dependencies using CDN scripts.
 
 ```html
 <!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
+  <html xmlns="https://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2 Bullet Chart</title>
             <!-- Essential JS 2 Bullet Chart's global script -->
-            <script src="http://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js" type="text/javascript"></script>
        </head>
        <body>
        </body>
@@ -120,20 +120,20 @@ The following HTML shows the minimal bullet chart dependencies using CDN scripts
 
 ## Adding Bullet Chart control
 
-Now, you can start adding Bullet Chart control in the application. For getting started, add a **div** element for Bullet Chart control in **index.html**. Then refer the **index.js** file into the **index.html** file.
+Now you can add the Bullet Chart control to the application. To get started, add a **div** element for the Bullet Chart in **index.html**. Then reference the **index.js** file in **index.html**.
 
 This document uses `ej2.min.js`, which includes all Essential JS 2 components and dependencies.
 
 ```html
 <!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
+  <html xmlns="https://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2 Bullet Chart</title>
             <!-- Essential JS 2 all script -->
-            <script src="http://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
        </head>
        <body>
-           <!-- Add the HTML <div> element for bullet chart  -->
+           <!-- Add the HTML <div> element for Bullet Chart  -->
              <div id="element"></div>
              <script src="index.js" type="text/javascript"></script>
        </body>
@@ -150,7 +150,7 @@ bulletChart.appendTo('#element');
 
 ```
 
-The below example shows a basic Bullet Chart.
+The following example shows a basic Bullet Chart.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -163,7 +163,7 @@ The below example shows a basic Bullet Chart.
         
 {% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started-cs1" %}
 
-## BulletChart With Data
+## Bullet Chart With Data
 
 This section explains how to plot local data to the Bullet Chart.
 
@@ -178,7 +178,7 @@ var data = [
 ];
 ```
 
-Now assign the local data to `dataSource` property. `value` and `target` values should be mapped with `valueField` and `targetField` respectively.
+Now assign the local data to the `dataSource` property. The `value` and `target` fields should be mapped to `valueField` and `targetField`, respectively.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -223,7 +223,7 @@ You can add a range using the `ranges` property to the Bullet Chart.
 
 ## Tooltip
 
-You can use tooltip for the Bullet Chart by setting the `enable` property to true in `tooltip` object and by injecting the `BulletTooltip` module using `BulletChart.Inject(BulletTooltip)` method.
+You can use the tooltip for the Bullet Chart by setting the `enable` property to `true` in the `tooltip` object.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

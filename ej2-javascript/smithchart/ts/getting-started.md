@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Getting started with ##Platform_Name## Smith Chart control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Smith Chart control of Syncfusion Essential JS 2 and more details.
+description:  Check out and learn about Getting started with ##Platform_Name## Smith Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: Smith Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Smith Chart control
+# Getting started with ##Platform_Name## Smith Chart control
 
 This document explains how to create a simple Smith Chart and configure its features in TypeScript using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
@@ -19,7 +19,7 @@ This document explains how to create a simple Smith Chart and configure its feat
 
 Below is the list of minimum dependencies required to use the Smith Chart.
 
-```javascript
+```
 |-- @syncfusion/ej2-charts
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-data
@@ -69,7 +69,7 @@ npm install
 
 Open the project in Visual Studio Code and add the Smith Chart to the application.
 
-Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.html` file to initialize the Smith Chart.
+Add the HTML div tag with its `id` attribute as `container` in your `~/src/index.html` file to initialize the Smith Chart.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -78,7 +78,7 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 <html lang="en">
 
 <head>
-    <title>EJ2 Animation</title>
+    <title>EJ2 Smith Chart</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Typescript UI Controls" />
@@ -96,7 +96,7 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 {% endhighlight %}
 {% endtabs %}
 
-Import the Smith Chart component into `[src/app/app.ts]` to instantiate and render the Smith Chart.
+Import the Smith Chart component into `src/app/app.ts` to instantiate and render the Smith Chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -137,10 +137,10 @@ The below example shows a basic Smithchart.
 
 ## Module Injection
 
-Smithchart component are segregated into individual feature-wise modules. In order to use a particular feature,you need to inject its feature module using `Smithchart.Inject()` method. In the current application, we are going to modify the above basic smithchart to visualize transmission lines. For this application we are going to use  tooltip and legend feature of the smithchart. Please find relevant feature module name and description as follows.
+The Smithchart component is segregated into individual feature-wise modules. To use a particular feature, you need to inject its module using the `Smithchart.Inject()` method. In the current application, we modify the basic Smithchart to visualize transmission lines using the tooltip and legend features. The relevant feature modules are:
 
-* SmithchartLegend - Inject this provider to use legend feature.
-* TooltipRender - Inject this provider to use tooltip feature.
+* SmithchartLegend — Inject to use the legend feature.
+* TooltipRender — Inject to use the tooltip feature.
 
 Now import the above-mentioned modules from smithchart package and inject it into the Smithchart component using
 `Smithchart.Inject` method.
@@ -156,12 +156,12 @@ Smithchart.Inject(SmithchartLegend, TooltipRender);
 
 ## Add Series to Smithchart
 
-Smithchart had two type of specification for adding series.
+The Smithchart has two ways to add series:
 
-* dataSource — Bind a data object directly by specifying resistance and reactance values; the series renders from the provided dataSource.
+* dataSource — Bind a data object by specifying resistance and reactance values; the series renders from the provided dataSource.
 * points — Provide a collection of resistance and reactance value points for the series.
 
-Below sample demonstrate adding two series to smithchart both ways.
+The sample below demonstrates adding two series to the Smithchart in both ways.
 
 * First series `Transmission1` shows dataSource bound series.
 * Second series `Transmission2` shows points bound series.
@@ -177,9 +177,9 @@ Below sample demonstrate adding two series to smithchart both ways.
           
 {% previewsample "page.domainurl/code-snippet/smithchart/getting-started-cs9" %}
 
-## Add title to smithChart
+## Add title to Smith Chart
 
-You can add a title using the [`title`](../api/chart/chartModel#title) property to the Smith Chart to provide quick information to the user about the data plotted in the Smith Chart.
+You can add a title using the [`title`](../api/smithchart/smithchartmodel#title) property to the Smith Chart to provide quick information to the user about the data plotted in the Smith Chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -192,9 +192,9 @@ You can add a title using the [`title`](../api/chart/chartModel#title) property 
           
 {% previewsample "page.domainurl/code-snippet/smithchart/getting-started-cs10" %}
 
-## Enable marker to smithchart
+## Enable markers in the Smithchart
 
-You can add and customize the markers in the smith chart. This can be achieved by setting the [`visible`](../api/smithchart/seriesmarkermodel#visible) property to `true` in the [`marker`](../api/smithchart/smithchartseriesmodel#marker) object. The sample below enables markers for the first series.
+You can add and customize markers in the Smith Chart. This can be achieved by setting the [`visible`](../api/smithchart/seriesmarkermodel#visible) property to `true` in the [`marker`](../api/smithchart/smithchartseriesmodel#marker) object. The sample below enables markers for the first series.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -207,9 +207,9 @@ You can add and customize the markers in the smith chart. This can be achieved b
           
 {% previewsample "page.domainurl/code-snippet/smithchart/getting-started-cs11" %}
 
-## Enable dataLabel to smithchart marker
+## Enable data labels for Smithchart markers
 
-You can add data labels to improve the readability of the smith chart. This can be achieved by setting the [`visible`](../api/smithchart/seriesmarkerdatalabelmodel#visible) property to `true` in the [`dataLabel`](../api/smithchart/seriesmarkermodel#datalabel) object. Now, the data labels are arranged smartly based on series. The sample below enables data labels for the first series.
+You can add data labels to improve the readability of the Smith Chart. This can be achieved by setting the [`visible`](../api/smithchart/seriesmarkerdatalabelmodel#visible) property to `true` in the [`dataLabel`](../api/smithchart/seriesmarkermodel#datalabel) object. The sample below enables data labels for the first series.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -222,9 +222,9 @@ You can add data labels to improve the readability of the smith chart. This can 
           
 {% previewsample "page.domainurl/code-snippet/smithchart/getting-started-cs12" %}
 
-## Enable legend for smithchart
+## Enable legend for Smithchart
 
-You can use legend for the Smith Chart by setting the [`visible`](../api/smithchart/smithchartlegendsettingsmodel#visible) property to `true` in [`legendSettings`](../api/smithchart/smithchartmodel#legendsettings) object and by injecting `SmithchartLegend` module using `Smithchart.Inject(SmithchartLegend)` method. Following example sample shows enabling legend for smithchart. Series name can customize using series `name`.
+You can use a legend for the Smith Chart by setting the [`visible`](../api/smithchart/smithchartlegendsettingsmodel#visible) property to `true` in the [`legendSettings`](../api/smithchart/smithchartmodel#legendsettings) object and by injecting the `SmithchartLegend` module using `Smithchart.Inject(SmithchartLegend)`. The following example shows enabling the legend for the Smithchart. The series name can be customized using the series `name`.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -237,9 +237,9 @@ You can use legend for the Smith Chart by setting the [`visible`](../api/smithch
           
 {% previewsample "page.domainurl/code-snippet/smithchart/getting-started-cs13" %}
 
-## Enable tooltip for smithchart series
+## Enable tooltip for Smithchart series
 
-The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable tooltip by setting the [`visible`](../api/smithchart/seriestooltipmodel#visible) property as `true` in [`tooltip`](../api/smithchart/smithchartseries#tooltip) object and by injecting `TooltipRender` module using `Smithchart.Inject(TooltipRender)` method.
+The tooltip is useful when you cannot display information by using data labels due to space constraints. You can enable the tooltip by setting the [`visible`](../api/smithchart/seriestooltipmodel#visible) property to `true` in the [`tooltip`](../api/smithchart/smithchartseriesmodel#tooltip) object and by injecting `TooltipRender` using `Smithchart.Inject(TooltipRender)`.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

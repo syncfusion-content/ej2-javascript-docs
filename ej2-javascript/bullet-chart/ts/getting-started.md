@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Bullet chart control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Bullet chart control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Bullet Chart control | Syncfusion
+description:  Check out and learn about Getting started with ##Platform_Name## Bullet chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: Bullet Chart 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Bullet chart control
+# Getting started with ##Platform_Name## Bullet chart control
 
 This document explains how to create a simple Bullet Chart and configure its features in TypeScript using the Essential JS 2 webpack [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
@@ -19,7 +19,7 @@ This document explains how to create a simple Bullet Chart and configure its fea
 
 Below is the list of minimum dependencies required to use the Bullet Chart.
 
-```javascript
+```
 |-- @syncfusion/ej2-charts
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-data
@@ -31,7 +31,7 @@ Below is the list of minimum dependencies required to use the Bullet Chart.
 
 ## Set up development environment
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
+Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack).
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -81,7 +81,7 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
     <title>EJ2 Bullet Chart</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript UI Controls" />
+    <meta name="description" content="TypeScript UI Controls" />
     <meta name="author" content="Syncfusion" />
     ....
     ....
@@ -98,7 +98,7 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 {% endhighlight %}
 {% endtabs %}
 
-Import the Bullet Chart component into `[src/app/app.ts]` to instantiate and render the Bullet Chart.
+Import the Bullet Chart component into `src/app/app.ts` to instantiate and render the Bullet Chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -124,7 +124,8 @@ npm run start
 {% endhighlight %}
 {% endtabs %}
 
-The below example shows a basic Chart.
+The following example shows a basic Bullet Chart.
+
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -139,14 +140,14 @@ The below example shows a basic Chart.
 
 ## Module Injection
 
-Bullet Chart component are segregated into individual feature-wise modules. In order to use a particular feature, you need to inject its feature module using `BulletChart.Inject()` method. In the current application,we are going to use tooltip feature of the chart.
+The Bullet Chart component is segregated into individual feature-wise modules. In order to use a particular feature, you need to inject its feature module using the `BulletChart.Inject()` method. In this application, we use the tooltip feature of the Bullet Chart.
 
-* `BulletTooltip` - Inject this provider to use tooltip feature.
+* `BulletTooltip` - Inject this module to use the tooltip feature.
 
 Now import the above-mentioned modules from the chart package and inject them into the Bullet Chart component using `BulletChart.Inject` method.
 
 {% tabs %}
-{% highlight ts tabtitle="app.ts" %}
+{% highlight ts tabtitle="index.ts" %}
 
 import { BulletChart, BulletTooltip } from '@syncfusion/ej2-charts';
 BulletChart.Inject(BulletTooltip);
@@ -172,7 +173,7 @@ let data: Object[] = [
 {% endhighlight %}
 {% endtabs %}
 
-Now assign the local data to `dataSource` property. `value` and `target` values should be mapped with `valueField` and `targetField` respectively.
+Now assign the local data to the `dataSource` property. The `value` and `target` fields should be mapped to `valueField` and `targetField`, respectively.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -217,7 +218,7 @@ You can add a range using the `ranges` property to the Bullet Chart.
 
 ## Tooltip
 
-You can use tooltip for the Bullet Chart by setting the `enable` property to `true` in `tooltip` object and by injecting the `BulletTooltip` module using `BulletChart.Inject(BulletTooltip)` method.
+You can use the tooltip for the Bullet Chart by setting the `enable` property to `true` in the `tooltip` object and by injecting the `BulletTooltip` module using the `BulletChart.Inject(BulletTooltip)` method.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

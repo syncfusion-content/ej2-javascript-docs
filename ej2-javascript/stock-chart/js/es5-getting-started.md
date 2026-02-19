@@ -1,15 +1,15 @@
 ---
 layout: post
-title: ES5 getting started with ##Platform_Name## Stock chart control | Syncfusion
-description:  Checkout and learn about ES5 getting started with ##Platform_Name## Stock chart control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Stock Chart control | Syncfusion
+description:  Check out and learn about Getting started with ##Platform_Name## Stock Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: ES5 getting started 
+control: Stock Chart 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# ES5 getting started in ##Platform_Name## Stock chart control
+# Getting started with ##Platform_Name## Stock Chart control
 
 This section explains the steps required to create a simple Stock Chart and demonstrates the basic usage of the Stock Chart control.
 
@@ -17,7 +17,7 @@ This section explains the steps required to create a simple Stock Chart and demo
 
 Below is the list of minimum dependencies required to use the Stock Chart.
 
-```javascript
+```
 |-- @syncfusion/ej2-charts
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-data
@@ -81,7 +81,7 @@ After copying the files, reference the chart scripts from `index.html`. The foll
 ```
 
 <!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
+  <html xmlns="https://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2 Stock Chart</title>
 
@@ -123,27 +123,27 @@ Refer the chart's CDN links as below.
 
 **Syntax:**
 
-> Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+> Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Styles: `http://cdn.syncfusion.com/ej2/material.css`
+> Styles: `https://cdn.syncfusion.com/ej2/material.css`
 
 **Example:**
 
-> Script: [`http://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js`](http://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js)
+> Script: [`https://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js`](https://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js)
 >
-> Styles: [`http://cdn.syncfusion.com/ej2/material.css`](http://cdn.syncfusion.com/ej2/material.css)
+> Styles: [`https://cdn.syncfusion.com/ej2/material.css`](https://cdn.syncfusion.com/ej2/material.css)
 
 The below html code example shows the minimal dependency of chart.
 
 ```html
 <!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
+  <html xmlns="https://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2 Stock Chart</title>
             <!-- Essential JS 2 Stock Chart's global script -->
-            <script src="http://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js" type="text/javascript"></script>
             <!-- Essential JS 2 material theme -->
-            <link href="http://cdn.syncfusion.com/ej2/material.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet" type="text/css"/>
        </head>
        <body>
        </body>
@@ -159,13 +159,13 @@ This document uses `ej2.min.js`, which includes all Essential JS 2 components an
 
 ```html
 <!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
+  <html xmlns="https://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2 Stock Chart</title>
             <!-- Essential JS 2 material theme -->
-            <link href="http://cdn.syncfusion.com/ej2/material.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet" type="text/css"/>
             <!-- Essential JS 2 all script -->
-            <script src="http://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
        </head>
        <body>
            <!-- Add the HTML <div> element for stock chart  -->
@@ -283,8 +283,7 @@ Crosshair lines can be enabled by using [`enable`](../api/chart/crosshairSettin
 
 ## Add Trackball
 
-Trackball is used to track a data point closest to the mouse or touch position. Trackball marker indicates the closest point and trackball tooltip displays the information about the point. To use trackball feature, we need to inject `Crosshair` module and `Tooltip` module using
-`StockChart.Inject(Crosshair, Tooltip)`.
+Trackball is used to track a data point closest to the mouse or touch position. Trackball marker indicates the closest point and trackball tooltip displays the information about the point.
 
 Trackball can be enabled by setting the [`enable`](../api/chart/crosshairSettings/#enable-boolean) property of the crosshair to `true` and
 [`shared`](../api/chart/tooltipSettings/#shared) property in `tooltip` to `true` in chart.

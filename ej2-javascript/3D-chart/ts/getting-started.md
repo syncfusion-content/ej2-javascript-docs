@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Getting started with ##Platform_Name## 3D Chart control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more details.
+description:  Check out and learn about Getting started with ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: 3D Chart 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## 3D Chart control
+# Getting started with ##Platform_Name## 3D Chart control
 
 This document explains how to create a simple 3D Chart and configure its features in TypeScript using the Essential JS 2 webpack [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
@@ -19,7 +19,7 @@ This document explains how to create a simple 3D Chart and configure its feature
 
 Below is the list of minimum dependencies required to use the 3D Chart.
 
-```javascript
+```
 |-- @syncfusion/ej2-charts
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-data
@@ -78,7 +78,7 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 <html lang="en">
 
 <head>
-    <title>EJ2 Animation</title>
+    <title>EJ2 3D Chart</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Typescript UI Controls" />
@@ -98,7 +98,7 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 {% endhighlight %}
 {% endtabs %}
 
-Import the 3D Chart component into `[src/app/app.ts]` to instantiate and render the 3D Chart.
+Import the 3D Chart component in `src/app/app.ts` to instantiate and render the 3D Chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -139,13 +139,13 @@ The below example shows a basic 3D Chart.
 
 ## Module injection
 
-3D Chart component are segregated into individual feature-wise modules. In order to use a particular feature, you need to inject its feature module using `Chart3D.Inject()` method. In the current application, we are going to modify the above basic 3D Chart to visualize sales data for a particular year. For this application we are going to use column series, tooltip, data label, category axis and legend feature of the 3D Chart. Please find relevant feature module name and description as follows.
+The 3D Chart component is segregated into individual feature modules. In order to use a particular feature, you need to inject its feature module using the `Chart3D.Inject()` method. The relevant feature modules are:
 
-* ColumnSeries3D - Inject this provider to use column series.
-* Legend3D - Inject this provider to use legend feature.
-* Tooltip3D - Inject this provider to use tooltip feature.
-* DataLabel3D - Inject this provider to use data label feature.
-* Category3D - Inject this provider to use category feature.
+* ColumnSeries3D - Inject this module to use column series.
+* Legend3D - Inject this module to use the legend.
+* Tooltip3D - Inject this module to use the tooltip.
+* DataLabel3D - Inject this module to use data labels.
+* Category3D - Inject this module to use the category axis.
 
 Now import the above-mentioned modules from the chart package and inject them into the Chart3D component using `Chart3D.Inject` method.
 
@@ -192,7 +192,7 @@ Since the JSON contains category data, set the [`valueType`](../api/chart3d/char
           
 {% previewsample "page.domainurl/code-snippet/chart3d/getting-started-cs2" %}
 
-The sales data are in thousands, so format the vertical axis label by adding `$` as a prefix and `K` as a suffix to each label. This can be achieved by setting the `${value}K` to the [`labelFormat`](../api/chart3d/chart3daxismodel#labelformat) property of axis. Here, `{value}` act as a placeholder for each axis label.
+The sales values are in thousands, so format the vertical axis label by adding `$` as a prefix and `K` as a suffix to each label. This can be achieved by setting `${value}K` to the [`labelFormat`](../api/chart3d/chart3daxismodel#labelformat) property of the axis. Here, `{value}` acts as a placeholder for each axis label.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -222,7 +222,7 @@ You can add a title using the [`title`](../api/chart3d/chart3DModel#title) prope
 
 ## Enable legend
 
-You can use legend for the 3D Chart by setting the [`visible`](../api/chart3d/chart3dlegendsettingsmodel#visible) property to `true` in [`legendSettings`](../api/chart3d/chart3DModel#legendsettings) object and by injecting the `Legend3D` module using `Chart3D.Inject(Legend3D)` method.
+You can enable the legend for the 3D Chart by setting the [`visible`](../api/chart3d/chart3dlegendsettingsmodel#visible) property to `true` in the [`legendSettings`](../api/chart3d/chart3DModel#legendsettings) object and by injecting the `Legend3D` module using `Chart3D.Inject(Legend3D)`.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -237,7 +237,7 @@ You can use legend for the 3D Chart by setting the [`visible`](../api/chart3d/ch
 
 ## Add data label
 
-You can add data labels to improve the readability of the 3D Chart. This can be achieved by setting the [`visible`](../api/chart3d/chart3ddatalabelsettingsmodel#visible) property to `true` in the [`dataLabel`](../api/chart3d/chart3dseriesmodel#datalabel) object and by injecting `DataLabel3D` module using `Chart3D.Inject(DataLabel3D)` method. Now, the data labels are arranged smartly based on series.
+You can add data labels to improve the readability of the 3D Chart. This can be achieved by setting the [`visible`](../api/chart3d/chart3ddatalabelsettingsmodel#visible) property to `true` in the [`dataLabel`](../api/chart3d/chart3dseriesmodel#datalabel) object and by injecting the `DataLabel3D` module using `Chart3D.Inject(DataLabel3D)`. Now, the data labels are arranged smartly based on the series.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -252,7 +252,7 @@ You can add data labels to improve the readability of the 3D Chart. This can be 
 
 ## Enable tooltip
 
-The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable tooltip by setting the [`enable`](../api/chart3d/chart3dtooltipsettingsmodel#enable) property as `true` in [`tooltip`](../api/chart3d/chart3DModel#tooltip) object and by injecting `Tooltip3D` module using `Chart3D.Inject(Tooltip3D)` method.
+The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable the tooltip by setting the [`enable`](../api/chart3d/chart3dtooltipsettingsmodel#enable) property to `true` in the [`tooltip`](../api/chart3d/chart3DModel#tooltip) object and by injecting the `Tooltip3D` module using `Chart3D.Inject(Tooltip3D)`.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

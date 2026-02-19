@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Getting started with ##Platform_Name## Chart control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more details.
+description:  Check out and learn about Getting started with ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Chart control
+# Getting started with ##Platform_Name## Chart control
 
 This document explains how to create a simple Chart and configure its features in TypeScript using the Essential JS 2 webpack [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
@@ -19,7 +19,7 @@ This document explains how to create a simple Chart and configure its features i
 
 Below is the list of minimum dependencies required to use the Chart.
 
-```javascript
+```
 |-- @syncfusion/ej2-charts
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-data
@@ -28,6 +28,7 @@ Below is the list of minimum dependencies required to use the Chart.
     |-- @syncfusion/ej2-compression
     |-- @syncfusion/ej2-svg-base
 ```
+Note: @syncfusion/ej2-pdf-export, @syncfusion/ej2-file-utils, and @syncfusion/ej2-compression are optional—required only for PDF export features. Omit if not using exports.
 
 ## Set up development environment
 
@@ -67,6 +68,8 @@ npm install
 
 ## Add chart to the project
 
+> Note: Code snippets here use webpack for local development. For online demos or StackBlitz, SystemJS may be used—ignore loader/helper scripts in rendered previews.
+
 Open the project in Visual Studio Code and add the Chart to the application.
 
 Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.html` file to initialize the Chart.
@@ -78,7 +81,7 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 <html lang="en">
 
 <head>
-    <title>EJ2 Animation</title>
+    <title>Essential JS 2 Chart</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Typescript UI Controls" />
@@ -98,7 +101,7 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 {% endhighlight %}
 {% endtabs %}
 
-Import the Chart component into `[src/app/app.ts]` to instantiate and render the Chart.
+Import the Chart component into `src/app/app.ts` to instantiate and render the Chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -124,7 +127,7 @@ npm run start
 {% endhighlight %}
 {% endtabs %}
 
-The below example shows a basic Chart.
+The following example shows a basic Chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -139,15 +142,15 @@ The below example shows a basic Chart.
 
 ## Module injection
 
-Chart component are segregated into individual feature-wise modules. In order to use a particular feature, you need to inject its feature module using `Chart.Inject()` method. In the current application, we are going to modify the above basic chart to visualize sales data for a particular year. For this application we are going to use line series, tooltip, data label, category axis and legend feature of the chart. Please find relevant feature module name and description as follows.
+The Chart component is segregated into individual feature-wise modules. In order to use a particular feature, you need to inject its feature module using the `Chart.Inject()` method. In this application, we modify the basic chart to visualize sales data for a particular year. For this, we use the line series, tooltip, data labels, category axis, and legend features of the chart. The relevant feature modules are:
 
-* LineSeries - Inject this provider to use line series.
-* Legend - Inject this provider to use legend feature.
-* Tooltip - Inject this provider to use tooltip feature.
-* DataLabel - Inject this provider to use data label feature.
-* Category - Inject this provider to use category feature.
+* LineSeries - Inject this module to use the line series.
+* Legend - Inject this module to use the legend.
+* Tooltip - Inject this module to use the tooltip.
+* DataLabel - Inject this module to use data labels.
+* Category - Inject this module to use the category axis.
 
-Now import the above-mentioned modules from the chart package and inject them into the Chart component using `Chart.Inject` method.
+Now import the above-mentioned modules from the chart package and inject them into the Chart component using the `Chart.Inject` method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -192,7 +195,7 @@ Since the JSON contains category data, set the [`valueType`](../api/chart/axisMo
           
 {% previewsample "page.domainurl/code-snippet/chart/getting-started-cs10" %}
 
-The sales data are in thousands, so format the vertical axis label by adding `$` as a prefix and `K` as a suffix to each label. This can be achieved by setting the `${value}K` to the [`labelFormat`](../api/chart/axisModel#labelformat) property of axis. Here, `{value}` act as a placeholder for each axis label.
+The sales values are in thousands, so format the vertical axis label by adding `$` as a prefix and `K` as a suffix to each label. This can be achieved by setting `${value}K` to the [`labelFormat`](../api/chart/axisModel#labelformat) property of the axis. Here, `{value}` acts as a placeholder for each axis label.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -222,7 +225,7 @@ You can add a title using the [`title`](../api/chart/chartModel#title) property 
 
 ## Enable legend
 
-You can use legend for the chart by setting the [`visible`](../api/chart/legendSettingsModel#visible) property to `true` in [`legendSettings`](../api/chart/chartModel#legendsettings) object and by injecting the `Legend` module using `Chart.Inject(Legend)` method.
+You can enable the legend for the chart by setting the [`visible`](../api/chart/legendSettingsModel#visible) property to `true` in the [`legendSettings`](../api/chart/chartModel#legendsettings) object and by injecting the `Legend` module using the `Chart.Inject(Legend)` method.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -237,7 +240,7 @@ You can use legend for the chart by setting the [`visible`](../api/chart/legendS
 
 ## Add data label
 
-You can add data labels to improve the readability of the chart. This can be achieved by setting the [`visible`](../api/chart/datalabelsettingsmodel#visible) property to `true` in the [`dataLabel`](../api/chart/markersettingsmodel#datalabel) object and by injecting `DataLabel` module using `Chart.Inject(DataLabel)` method. Now, the data labels are arranged smartly based on series.
+You can add data labels to improve the readability of the chart. This can be achieved by setting the [`visible`](../api/chart/datalabelsettingsmodel#visible) property to `true` in the [`dataLabel`](../api/chart/markersettingsmodel#datalabel) object and by injecting the `DataLabel` module using the `Chart.Inject(DataLabel)` method. Now, the data labels are arranged smartly based on the series.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -252,7 +255,7 @@ You can add data labels to improve the readability of the chart. This can be ach
 
 ## Enable tooltip
 
-The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable tooltip by setting the [`enable`](../api/chart/tooltipSettingsModel#enable) property as `true` in [`tooltip`](../api/chart/chartModel#tooltip) object and by injecting `Tooltip` module using `Chart.Inject(Tooltip)` method.
+The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable the tooltip by setting the [`enable`](../api/chart/tooltipSettingsModel#enable) property to `true` in the [`tooltip`](../api/chart/chartModel#tooltip) object and by injecting the `Tooltip` module using the `Chart.Inject(Tooltip)` method.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

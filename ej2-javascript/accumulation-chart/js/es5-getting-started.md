@@ -1,16 +1,16 @@
 ---
 layout: post
-title: ES5 getting started with ##Platform_Name## Accumulation chart control | Syncfusion
-description:  Checkout and learn about ES5 getting started with ##Platform_Name## Accumulation chart control of Syncfusion Essential JS 2 and more details.
+title: ES5 getting started with ##Platform_Name## Accumulation Chart control | Syncfusion
+description:  Checkout and learn about ES5 getting started with ##Platform_Name## Accumulation Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: ES5 getting started 
+control: Accumulation Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 <!-- markdownlint-disable MD036 -->
 
-# ES5 getting started in ##Platform_Name## Accumulation chart control
+# ES5 getting started with ##Platform_Name## Accumulation Chart control
 
 The Essential JS 2 accumulation chart is provided as a separate control to simplify rendering by excluding axis-related logic. The accumulation chart uses the same core dependencies as the chart control; additional packages are required only for specific features (for example, export and compression features).
 
@@ -18,7 +18,7 @@ The Essential JS 2 accumulation chart is provided as a separate control to simpl
 
 Below is the list of minimum dependencies required to use the accumulation chart.
 
-```javascript
+```
 |-- @syncfusion/ej2-charts
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-data
@@ -34,7 +34,7 @@ Follow these steps to set up your local environment.
 
 **Step 1:** Create a root folder **myapp** for your application.
 
-**Step 2:** Create **myapp/resources** folder to store local scripts and styles files.
+**Step 2:** Create **myapp/resources** folder to store local scripts and styles.
 
 **Step 3:** Create **myapp/index.js** and **myapp/index.html** files for initializing the Syncfusion Essential JS 2 Accumulation Chart control.
 
@@ -72,7 +72,7 @@ After copying the files, reference the chart scripts from `index.html`. The foll
 ```
 
 <!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
+  <html xmlns="https://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2 Accumulation Chart</title>
 
@@ -90,29 +90,29 @@ After copying the files, reference the chart scripts from `index.html`. The foll
 
 ```
 
-### Using CDN link for script
+### Using CDN links for scripts
 
-Using CDN link, you can directly refer the chart control's script into the `index.html`.
+Using CDN links, you can reference the chart control's script in the `index.html`.
 
-Refer the chart's CDN links as below.
+Refer the chart's CDN links as follows.
 
 **Syntax:**
 
-> Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+> Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 
 **Example:**
 
-> Script: [`http://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js`](http://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js)
+> Script: [`https://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js`](https://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js)
 
 The following HTML shows the minimal chart dependencies using CDN scripts.
 
 ```html
 <!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
+  <html xmlns="https://www.w3.org/1999/xhtml">
        <head>
-            <title>Essential JS 2 Chart</title>
+            <title>Essential JS 2 Accumulation Chart</title>
             <!-- Essential JS 2 Chart's global script -->
-            <script src="http://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js" type="text/javascript"></script>
        </head>
        <body>
        </body>
@@ -122,17 +122,17 @@ The following HTML shows the minimal chart dependencies using CDN scripts.
 
 ## Adding Accumulation Chart control
 
-Now, you can start adding accumulation chart control in the application. For getting started, add a **div** element for accumulation chart control in **index.html**. Then refer the **index.js** file into the **index.html** file.
+Now you can add the Accumulation Chart control to the application. To get started, add a **div** element for the Accumulation Chart in **index.html**. Then reference the **index.js** file in **index.html**.
 
 This document uses `ej2.min.js`, which includes all Essential JS 2 components and dependencies.
 
 ```html
 <!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
+  <html xmlns="https://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2 Chart</title>
             <!-- Essential JS 2 all script -->
-            <script src="http://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
        </head>
        <body>
            <!-- Add the HTML <div> element for chart  -->

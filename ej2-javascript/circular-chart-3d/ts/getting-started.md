@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Getting started with ##Platform_Name## 3D Circular Chart control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## 3D Circular Chart control of Syncfusion Essential JS 2 and more details.
+description:  Check out and learn about Getting started with ##Platform_Name## 3D Circular Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: 3D Circular Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## 3D Circular Chart control
+# Getting started with ##Platform_Name## 3D Circular Chart control
 
 This document explains how to create a simple 3D Circular Chart and configure its features in TypeScript using the Essential JS 2 webpack [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
@@ -19,7 +19,7 @@ This document explains how to create a simple 3D Circular Chart and configure it
 
 Below is the list of minimum dependencies required to use the 3D Circular Chart.
 
-```javascript
+```
 |-- @syncfusion/ej2-charts
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-data
@@ -78,10 +78,10 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 <html lang="en">
 
 <head>
-    <title>EJ2 Animation</title>
+    <title>EJ2 3D Circular Chart</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript UI Controls" />
+    <meta name="description" content="TypeScript UI Controls" />
     <meta name="author" content="Syncfusion" />
     ....
     ....
@@ -98,7 +98,7 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 {% endhighlight %}
 {% endtabs %}
 
-Import an 3D Circular Chart component in  `[src/app/app.ts]` to instantiate and render the 3D Circular Chart.
+Import a 3D Circular Chart component in `src/app/app.ts` to instantiate and render the 3D Circular Chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

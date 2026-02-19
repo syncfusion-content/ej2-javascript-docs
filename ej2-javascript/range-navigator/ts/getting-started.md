@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Range navigator control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Range navigator control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Range Navigator control | Syncfusion
+description:  Check out and learn about Getting started with ##Platform_Name## Range Navigator control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: Range Navigator
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Range navigator control
+# Getting started with ##Platform_Name## Range Navigator control
 
 This document explains how to create a simple Range Navigator and configure its features in TypeScript using the Essential JS 2 webpack [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
@@ -17,9 +17,9 @@ This document explains how to create a simple Range Navigator and configure its 
 
 ## Dependencies
 
- The list of minimum dependencies required to use a range navigator are follows:
+ The list of minimum dependencies required to use a Range Navigator is as follows:
 
-```javascript
+```
 |-- @syncfusion/ej2-charts
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-data
@@ -32,7 +32,7 @@ This document explains how to create a simple Range Navigator and configure its 
 
 ## Set up development environment
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
+Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack).
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -79,10 +79,10 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 <html lang="en">
 
 <head>
-    <title>EJ2 Animation</title>
+    <title>EJ2 Range Navigator</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript UI Controls" />
+    <meta name="description" content="TypeScript UI Controls" />
     <meta name="author" content="Syncfusion" />
     ....
     ....
@@ -99,7 +99,7 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 {% endhighlight %}
 {% endtabs %}
 
-Import the Range navigator component into `[src/app/app.ts]` to instantiate and render the Range Navigator.
+Import the Range navigator component into `src/app/app.ts` to instantiate and render the Range Navigator.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -127,7 +127,7 @@ npm start
 {% endhighlight %}
 {% endtabs %}
 
-The below example shows a basic Range Navigator.
+The following example shows a basic Range Navigator.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -142,11 +142,11 @@ The below example shows a basic Range Navigator.
 
 ## Module Injection
 
-To create range navigator with additional features, inject the required modules. The following modules are used to extend rangenavigator’s basic functionality.
+To create range navigator with additional features, inject the required modules. The following modules are used to extend Range Navigator’s basic functionality.
 
-* `AreaSeriesService` - Inject this module to use area series.
-* `DateTimeService` - Inject this module to use date time axis.
-* `RangeTooltipService` - Inject this module to show the tooltip.
+* `AreaSeries` - Inject this module to use area series.
+* `DateTime` - Inject this module to use date time axis.
+* `RangeTooltip` - Inject this module to show the tooltip.
 
 Now import the above-mentioned modules from the chart package and inject them into the Range navigator component using `RangeNavigator.Inject` method.
 
@@ -162,7 +162,7 @@ RangeNavigator.Inject(AreaSeries, DateTime, RangeTooltip);
 ## Populate Range Navigator with Data
 
 Now, we are going to provide data to the range navigator. Add a series object to the range navigator  by using `series` property. Now map the field names x and y in the JSON data to the `xName` and `yName` properties of the series, then set the JSON data to dataSource property.
-Since the JSON contains Datetime data, set the `valueType` as `DateTime`. By default, the axis valueType is Numeric.
+Since the JSON contains DateTime data, set the `valueType` as `DateTime`. By default, the axis valueType is Numeric.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -177,11 +177,11 @@ Since the JSON contains Datetime data, set the `valueType` as `DateTime`. By def
 
 >Note: Get data from [here](https://ej2.syncfusion.com/demos/src/range-navigator/data-source/default-data.json).
 
-The sample should look like our [default](https://ej2.syncfusion.com/demos/#/material/range-navigator/default.html), don’t worry about the gradient color, let it takes the default color.
+The sample should look like our [default](https://ej2.syncfusion.com/demos/#/material/range-navigator/default.html), don’t worry about the gradient color, let it take the default color.
 
 ## Enable Tooltip
 
-The tooltip is useful to show the selected data. You can enable tooltip by setting the enable property as `true` in `tooltip` object and by injecting `RangeTooltipService` module using `RangeNavigator.Inject(RangeTooltip)` method.
+The tooltip is useful to show the selected data. You can enable tooltip by setting the enable property to `true` in `tooltip` object and by injecting `RangeTooltipService` module using `RangeNavigator.Inject(RangeTooltip)` method.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

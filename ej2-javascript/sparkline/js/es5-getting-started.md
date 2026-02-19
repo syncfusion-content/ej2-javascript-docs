@@ -1,15 +1,15 @@
 ---
 layout: post
 title: ES5 getting started with ##Platform_Name## Sparkline control | Syncfusion
-description:  Checkout and learn about ES5 getting started with ##Platform_Name## Sparkline control of Syncfusion Essential JS 2 and more details.
+description:  Check out and learn about ES5 getting started with ##Platform_Name## Sparkline control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: ES5 getting started 
+control: Sparkline
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# ES5 getting started in ##Platform_Name## Sparkline control
+# ES5 getting started with ##Platform_Name## Sparkline control
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is a pure ES5-based JavaScript framework that can be used directly in the latest web browsers.
 
@@ -17,7 +17,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global 
 
 The following list of minimum dependencies are required to use the sparkline:
 
-```javascript
+```
 |-- @syncfusion/ej2-charts
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-data
@@ -59,7 +59,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 ```html
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="https://www.w3.org/1999/xhtml">
     <head>
         <title>Essential JS 2</title>
 
@@ -79,22 +79,25 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 </html>
 ```
 
-**Step 5:** Now, add the `Charts` element and initiate the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) Charts** control in the `~/quickstart/index.html` by using following code.
+**Step 5:** Now, add a container element and initialize the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) Sparkline** control in `~/quickstart/index.html` using the following code.
 
 ```html
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="https://www.w3.org/1999/xhtml">
     <head>
         <title>Essential JS 2</title>
 
         <!-- Essential JS 2 Base's global script (Dependency Script) -->
         <script src="resources/base/ej2-base.min.js" type="text/javascript"></script>
-        <!-- Essential JS 2 sparkline's global script (Control Script) -->
+        <script src="resources/data/ej2-data.min.js" type="text/javascript"></script>
+        <script src="resources/svg-base/ej2-svg-base.min.js" type="text/javascript"></script>
+
+        <!-- Essential JS 2 charts's global script (Control Script) -->
         <script src="resources/charts/ej2-charts.min.js" type="text/javascript"></script>
     </head>
     <body>
-        <!-- Add the HTML <sparkline> element  -->
-        <sparkline id="element">Sparkline</sparkline>
+        <!-- Add the HTML container element -->
+        <div id="element"></div>
         <script>
             // initialize sparkline control
             var sparkline = new ej.charts.Sparkline();
@@ -139,7 +142,7 @@ The sparkline type can be configured using the `type` property, which supports `
 
 ## Enable tooltip for sparkline
 
-The sparkline provides additional information through a tooltip that appears when the mouse pointer hovers over the chart. You can enable tooltip by setting the [`visible`] property to true in [`tooltipSettings`] and injecting `SparklineTooltip` module using the `Sparkline.Inject(SparklineTooltip )` method.
+The sparkline provides additional information through a tooltip that appears when the mouse pointer hovers over the chart. You can enable the tooltip by setting the `visible` property to `true` in `tooltipSettings`.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

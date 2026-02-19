@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Stock chart control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Stock chart control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Stock Chart control | Syncfusion
+description:  Check out and learn about Getting started with ##Platform_Name## Stock Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: Stock Chart 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Stock chart control
+# Getting started with ##Platform_Name## Stock Chart control
 
-This document explains how to create a simple Stock chart and configure its features in TypeScript using the Essential JS 2 webpack [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This document explains how to create a simple Stock Chart and configure its features in TypeScript using the Essential JS 2 webpack [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack getting-started guide](https://webpack.js.org/guides/getting-started/).
 
@@ -19,7 +19,7 @@ This document explains how to create a simple Stock chart and configure its feat
 
 Below is the list of minimum dependencies required to use the Stock Chart.
 
-```javascript
+```
 |-- @syncfusion/ej2-charts
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-data
@@ -38,7 +38,7 @@ Below is the list of minimum dependencies required to use the Stock Chart.
 
 ## Set up development environment
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
+Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack).
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -88,7 +88,7 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
     <title>EJ2 Stock Chart</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript UI Controls" />
+    <meta name="description" content="TypeScript UI Controls" />
     <meta name="author" content="Syncfusion" />
     ....
     ....
@@ -105,12 +105,12 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 {% endhighlight %}
 {% endtabs %}
 
-Import the Stock Chart component into `[src/app/app.ts]` to instantiate and render the Stock Chart.
+Import the Stock Chart component into `src/app/app.ts` to instantiate and render the Stock Chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 
-import { StockChart, DateTime  } from '@syncfusion/ej2-charts';
+import { StockChart, DateTime } from '@syncfusion/ej2-charts';
 StockChart.Inject(DateTime);
 // initialize  Stock Chart component
 let stockChart: StockChart = new StockChart();
@@ -133,27 +133,27 @@ npm run start
 
 ## Module Injection
 
-Stock Chart component are segregated into individual feature-wise modules. In order to use a particular feature, you need to inject its feature module using `StockChart.Inject()` method. In the current application, we are going to modify the above basic Stock Chart to visualize stock value of a company. For this application we are going to use  candle series, tooltip, data label and datetime axis feature of the stock chart. Please find relevant feature module name and description as follows.
+The Stock Chart component is segregated into individual feature-wise modules. To use a particular feature, inject its feature module using the `StockChart.Inject()` method. In this application, we modify the basic Stock Chart to visualize the stock value of a company. For this, we use the candle series, tooltip, data label, and DateTime axis features of the Stock Chart. The relevant feature modules are:
 
-* CandleSeries - Inject this provider to use candle series.
-* Tooltip - Inject this provider to use tooltip feature.
-* DataLabel - Inject this provider to use data label feature.
-* DateTime - Inject this provider to use DateTime feature.
+* CandleSeries - Inject this module to use the candle series.
+* Tooltip - Inject this module to use the tooltip feature.
+* DataLabel - Inject this module to use the data label feature.
+* DateTime - Inject this module to use the DateTime feature.
 
-Now import the above-mentioned modules from the chart package and inject them into the Stock Chart component using `StockChart.Inject` method.
+Now import the above-mentioned modules from the charts package and inject them into the Stock Chart component using the `StockChart.Inject` method.
 
 {% tabs %}
-{% highlight ts tabtitle="app.ts" %}
+{% highlight ts tabtitle="index.ts" %}
 
-import { StockChart, CandleSeries, DateTime, Tooltip } from '@syncfusion/ej2-charts';
+import { StockChart, CandleSeries, DataLabel, DateTime, Tooltip } from '@syncfusion/ej2-charts';
 StockChart.Inject(CandleSeries, DataLabel, Tooltip, DateTime);
 
 {% endhighlight %}
 {% endtabs %}
 
-## Populate Stock Chart With Data
+## Populate Stock Chart with Data
 
-This section explains how to plot below JSON data to the  Stock Chart.Please find the below imported datasource.
+This section explains how to plot the following JSON data in the Stock Chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -205,7 +205,7 @@ let chartData: Object[] = [{
 
 Add a series object to the chart by using [`series`](../api/stock-chart/stockSeries/) property and then set the JSON data to [`dataSource`](../api/stock-chart/stockSeries/#datasource) property.
 
-Since the JSON contains DateTime data, set the [`valueType`](../api/stock-chart/stockChartAxisModel/#valuetype) for horizontal axis to DateTime. By default, the axis valueType is Numeric.
+Since the JSON contains DateTime data, set the [`valueType`](../api/stock-chart/stockChartAxisModel/#valuetype) for the horizontal axis to DateTime. By default, the axis `valueType` is `Numeric`.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -235,9 +235,9 @@ You can add a title using the [`title`](../api/stock-chart/stockChartModel/#titl
 
 ## Add Crosshair
 
-Crosshair has a vertical and horizontal line to view the value of the axis at mouse or touch position.
+Crosshair has a vertical and horizontal line to view the value of the axis at the mouse or touch position.
 
-Crosshair lines can be enabled by using the [`enable`](../api/chart/crosshairSettingsModel/#enable) property in the `crosshair`. Likewise tooltip label for an axis can be enabled by using [`enable`](../api/chart/crosshairTooltipModel/#enable) property of `crosshairTooltip` in the corresponding axis.
+Crosshair lines can be enabled by using the [`enable`](../api/chart/crosshairSettingsModel/#enable) property in `crosshair`. Likewise, the tooltip label for an axis can be enabled by using the [`enable`](../api/chart/crosshairTooltipModel/#enable) property of `crosshairTooltip` on the corresponding axis.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -252,11 +252,9 @@ Crosshair lines can be enabled by using the [`enable`](../api/chart/crosshairSe
 
 ## Add Trackball
 
-Trackball is used to track a data point closest to the mouse or touch position. Trackball marker indicates the closest point and trackball tooltip displays the information about the point. To use trackball feature, we need to inject `Crosshair` module and `Tooltip` module using
-`StockChart.Inject(Crosshair, Tooltip)`.
+Trackball is used to track a data point closest to the mouse or touch position. The trackball marker indicates the closest point and the trackball tooltip displays information about the point. To use the trackball feature, inject the `Crosshair` and `Tooltip` modules using `StockChart.Inject(Crosshair, Tooltip)`.
 
-Trackball can be enabled by setting the [`enable`](../api/chart/crosshairSettingsModel/#enable) property of the crosshair to `true` and
-[`shared`](../api/chart/tooltipSettings/#shared) property in `tooltip` to `true` in chart.
+Trackball can be enabled by setting the [`enable`](../api/chart/crosshairSettingsModel/#enable) property of the crosshair to `true` and the [`shared`](../api/chart/tooltipSettings/#shared) property in `tooltip` to `true` in the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

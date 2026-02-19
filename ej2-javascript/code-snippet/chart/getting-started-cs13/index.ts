@@ -1,8 +1,7 @@
 
 
 
-import { Chart, LineSeries, Category } from '@syncfusion/ej2-charts';
-import { Legend } from '@syncfusion/ej2-charts';
+import { Chart, LineSeries, Category, Legend } from '@syncfusion/ej2-charts';
 Chart.Inject(LineSeries, Legend, Category);
 let chartData: Object[] = [
       { month: 'Jan', sales: 35 }, { month: 'Feb', sales: 28 },

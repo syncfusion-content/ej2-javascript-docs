@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Accumulation chart control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Accumulation chart control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## Accumulation Chart control | Syncfusion
+description:  Check out and learn about Getting started with ##Platform_Name## Accumulation Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: Accumulation Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 <!-- markdownlint-disable MD036 -->
 
-# Getting started in ##Platform_Name## Accumulation chart control
+# Getting started with ##Platform_Name## Accumulation Chart control
 
 This document explains how to create a simple Accumulation Chart and configure its features in TypeScript using the Essential JS 2 webpack [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
@@ -20,7 +20,7 @@ This document explains how to create a simple Accumulation Chart and configure i
 
 Below is the list of minimum dependencies required to use the Accumulation Chart.
 
-```javascript
+```
 |-- @syncfusion/ej2-charts
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-data
@@ -79,10 +79,10 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 <html lang="en">
 
 <head>
-    <title>EJ2 Animation</title>
+    <title>Essential JS 2 Accumulation Chart</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript UI Controls" />
+    <meta name="description" content="TypeScript UI Controls" />
     <meta name="author" content="Syncfusion" />
     ....
     ....
@@ -99,7 +99,7 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 {% endhighlight %}
 {% endtabs %}
 
-Import the Accumulation Chart component into `[src/app/app.ts]` to instantiate and render the Accumulation Chart.
+Import the Accumulation Chart component into `src/app/app.ts` to instantiate and render the Accumulation Chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -117,7 +117,7 @@ chart.appendTo('#element');
 
 **Pie Series**
 
-By default, a pie series is rendered when JSON data is assigned to the series [`dataSource`](../api/accumulation-chart/accumulationseries#datasource) property. Map JSON fields to the series [`xName`](../api/accumulation-chart/accumulationseries#xname) and [`yName`](../api/accumulation-chart/accumulationSeries/#yname) properties to bind data correctly.
+By default, a pie series is rendered when JSON data is assigned to the series [`dataSource`](../api/accumulation-chart/accumulationseries#datasource) property. Map JSON fields to the series [`xName`](../api/accumulation-chart/accumulationseries#xname) and [`yName`](../api/accumulation-chart/accumulationseries#yname) properties to bind data correctly.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

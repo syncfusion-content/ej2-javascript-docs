@@ -1,32 +1,32 @@
 ---
 layout: post
-title: Getting started | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Progressbar control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## ProgressBar | Syncfusion
+description:  Check out and learn about ES5 getting started with ##Platform_Name## ProgressBar control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Es5 getting started 
+control: ProgressBar  
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Progressbar control
+# Getting started with ##Platform_Name## ProgressBar control
 
-This section explains you the steps required to create a simple ProgressBar and demonstrate the basic usage of the ProgressBar control.
+This section explains the steps required to create a simple ProgressBar and demonstrate the basic usage of the ProgressBar control.
 
 ## Dependencies
 
 The following list of dependencies are required to use the ProgressBar control in your application:
 
-```javascript
+```
 |-- @syncfusion/ej2-progressbar
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-data
     |-- @syncfusion/ej2-svg-base
 ```
 
-## Setup for local environment
+## Set up for local environment
 
-Refer the following steps for setup your local environment.
+Refer to the following steps to set up your local environment.
 
 **Step 1:** Create a root folder **myapp** for your application.
 
@@ -43,11 +43,11 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Progress Bar control ca
 
 ### Using local script
 
-You can get the global scripts and styles from the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+You can get the global scripts and styles from the installed location of [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2).
 
-After installing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 product build, you can copy the ProgressBar and its dependencies scripts and style file into the **resources/scripts** and **resources/styles** folder.
+After installing the product, copy the ProgressBar and its dependency scripts and style files into the **resources/scripts** and **resources/styles** folders.
 
-Refer the below code to find location ProgressBar script and style file.
+Refer to the following paths to locate the ProgressBar script and style files.
 
 **Syntax:**
 
@@ -63,26 +63,23 @@ Refer the below code to find location ProgressBar script and style file.
 > Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-progressbar/dist/global/ej2-progressbar.min.js`
 >
 
-After copying the files, then you can refer the ProgressBar scripts into the `index.html` file.
-The below html code example shows the minimal dependency of ProgressBar.
+After copying the files, reference the ProgressBar scripts in the `index.html` file. The HTML below shows a minimal setup using the bundled script:
 
 ```html
 
 <!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
-  <body>
-
-       <head>
-            <title>Essential JS 2 ProgressBar</title>
-
-             <!-- Essential JS 2 ProgressBar's dependent scripts -->
-            <script src="resources/scripts/ej2-svg-base.min.js" type="text/javascript"></script>
-
-            <!-- Essential JS 2 ProgressBar's global script -->
-            <script src="resources/scripts/ej2.min.js" type="text/javascript"></script>
-       </head>
-
-       </body>
+  <html xmlns="https://www.w3.org/1999/xhtml">
+     <head>
+       <title>Essential JS 2 ProgressBar</title>
+       <!-- Essential JS 2 ProgressBar's dependent scripts -->
+       <script src="resources/scripts/ej2-base.min.js" type="text/javascript"></script>
+       <script src="resources/scripts/ej2-data.min.js" type="text/javascript"></script>
+       <script src="resources/scripts/ej2-svg-base.min.js" type="text/javascript"></script>
+       <!-- Essential JS 2 ProgressBar's global script -->
+       <script src="resources/scripts/ej2-progressbar.min.js" type="text/javascript"></script>
+     </head>
+     <body>
+     </body>
   </html>
 
 ```
@@ -95,21 +92,25 @@ Refer the ProgressBar's CDN links as below
 
 **Syntax:**
 
-> Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+> Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 
 **Example:**
 
-> Script: [`http://cdn.syncfusion.com/ej2/ej2-progressbar/dist/global/ej2-progressbar.min.js`](http://cdn.syncfusion.com/ej2/ej2-progressbar/dist/global/ej2-progressbar.min.js)
+> Script: [`https://cdn.syncfusion.com/ej2/ej2-progressbar/dist/global/ej2-progressbar.min.js`](https://cdn.syncfusion.com/ej2/ej2-progressbar/dist/global/ej2-progressbar.min.js)
 
 The below html code example shows the minimal dependency of ProgressBar.
 
 ```html
 <!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
+  <html xmlns="https://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2 ProgressBar</title>
+            <!-- Essential JS 2 ProgressBar's dependent global scripts -->
+            <script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/ej2-svg-base/dist/global/ej2-svg-base.min.js" type="text/javascript"></script>
             <!-- Essential JS 2 ProgressBar global script -->
-            <script src="http://cdn.syncfusion.com/ej2/ej2-progressbar/dist/global/ej2-progressbar.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/ej2-progressbar/dist/global/ej2-progressbar.min.js" type="text/javascript"></script>
        </head>
        <body>
        </body>
@@ -117,19 +118,19 @@ The below html code example shows the minimal dependency of ProgressBar.
 
 ```
 
-## Adding Progress Bar control
+## Adding ProgressBar control
 
-Now, you can start adding Progress Bar control in the application. For getting started, add a **div** element for Progress Bar control in **index.html**. Then refer the **index.js** file into the **index.html** file.
+Now, you can start adding the ProgressBar control in the application. For getting started, add a **div** element for the ProgressBar control in **index.html**. Then reference the **index.js** file in the **index.html** file.
 
 In this document context we are going to use **ej2.min.js** which includes all the Essential<sup style="font-size:70%">&reg;</sup> JS 2 components and its dependent scripts.
 
 ```html
 <!DOCTYPE html>
-  <html xmlns="http://www.w3.org/1999/xhtml">
+  <html xmlns="https://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2 ProgressBar</title>
             <!-- Essential JS 2 all script -->
-            <script src="http://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
        </head>
        <body>
            <!-- Add the HTML <div> element for ProgressBar  -->

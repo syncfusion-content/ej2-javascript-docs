@@ -1,15 +1,15 @@
 ---
 layout: post
 title: ES5 getting started with ##Platform_Name## Smith Chart | Syncfusion
-description:  Checkout and learn about ES5 getting started with ##Platform_Name## Smithchart control of Syncfusion Essential JS 2 and more details.
+description:  Check out and learn about ES5 getting started with ##Platform_Name## Smith Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: ES5 getting started 
+control: Smith Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# ES5 getting started in ##Platform_Name## Smithchart control
+# ES5 getting started with ##Platform_Name## Smith Chart control
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global script) is an ES5-formatted pure JavaScript framework that runs directly in modern web browsers.
 
@@ -17,7 +17,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 for JavaScript (global 
 
 Below is the list of minimum dependencies required to use the Smith Chart.
 
-```javascript
+```
 |-- @syncfusion/ej2-charts
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-data
@@ -60,13 +60,13 @@ The below located script and style file contains all Syncfusion<sup style="font-
 
 The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script for a set of specific controls. This web tool is useful to combine the required control scripts in a single file.
 
-**Step 3:** Create a folder `~/quickstart/resources` and copy/paste the global scripts from the above installed location to `~/quickstart/resources/package` in the corresponding package locations.
+**Step 3:** Create a folder `~/quickstart/resources` and copy the global scripts from the above installed location into `~/quickstart/resources/<package>` in the corresponding package locations (for example, `base`, `svg-base`, `charts`).
 
 **Step 4:** Create an HTML page (index.html) in `~/quickstart/index.html` and add the Essential<sup style="font-size:70%">&reg;</sup> JS 2 script references.
 
 ```html
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="https://www.w3.org/1999/xhtml">
     <head>
         <title>Essential JS 2</title>
 
@@ -80,11 +80,11 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 </html>
 ```
 
-**Step 5:** Add the `Smithchart` element and initialize the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) Smithchart** control in `~/quickstart/index.html` using the following code.
+**Step 5:** Add a container `div` and initialize the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) Smith Chart** control in `~/quickstart/index.html` using the following code.
 
 ```html
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="https://www.w3.org/1999/xhtml">
     <head>
         <title>Essential JS 2</title>
 
@@ -114,7 +114,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 **Step 1:** Create an app folder `quickstart` for getting started.
 
-**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls's global scripts is already hosted in the below CDN link formats.
+**Step 2:** The Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls' global scripts are already hosted in the below CDN link formats.
 
 **Syntax:**
 > Dependency Script: `https://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -139,14 +139,14 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 **Step 4:** Open `index.html` in a web browser to render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Smithchart** control.
 
-## Add series to smithchart
+## Add series to Smithchart
 
-Smithchart had two type of specification for adding series.
+The Smithchart has two ways to add series:
 
-* dataSource — Bind a data object directly by specifying resistance and reactance values; the series renders from the provided dataSource.
+* dataSource — Bind a data object by specifying resistance and reactance values; the series renders from the provided dataSource.
 * points — Provide a collection of resistance and reactance value points for the series.
 
-Below sample demonstrate adding two series to smithchart both ways.
+The sample below demonstrates adding two series to the Smithchart in both ways.
 
 * First series `Transmission1` shows dataSource bound series.
 * Second series `Transmission2` shows points bound series.
@@ -162,9 +162,9 @@ Below sample demonstrate adding two series to smithchart both ways.
         
 {% previewsample "page.domainurl/code-snippet/smithchart/smithchart-axis-cs2" %}
 
-## Add title to smithChart
+## Add title to Smith Chart
 
-You can add a title using the [`title`](../api/chart/chartModel#title) property to the Smith Chart to provide quick information to the user about the data plotted in the Smith Chart.
+You can add a title using the [`title`](../api/smithchart/smithchartmodel#title) property to the Smith Chart to provide quick information to the user about the data plotted in the Smith Chart.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -177,9 +177,9 @@ You can add a title using the [`title`](../api/chart/chartModel#title) property 
         
 {% previewsample "page.domainurl/code-snippet/smithchart/smithchart-axis-cs3" %}
 
-## Enable marker to smithchart
+## Enable markers in the Smithchart
 
-You can add and customize the markers in the smith chart. This can be achieved by setting the [`visible`](../api/smithchart/seriesmarkermodel#visible) property to `true` in the [`marker`](../api/smithchart/smithchartseriesmodel#marker) object. The sample below enables markers for the first series.
+You can add and customize markers in the Smith Chart. This can be achieved by setting the [`visible`](../api/smithchart/seriesmarkermodel#visible) property to `true` in the [`marker`](../api/smithchart/smithchartseriesmodel#marker) object. The sample below enables markers for the first series.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -192,9 +192,9 @@ You can add and customize the markers in the smith chart. This can be achieved b
         
 {% previewsample "page.domainurl/code-snippet/smithchart/smithchart-axis-cs4" %}
 
-## Enable dataLabel to smithchart marker
+## Enable data labels for Smithchart markers
 
-You can add data labels to improve the readability of the smith chart. This can be achieved by setting the [`visible`](../api/smithchart/seriesmarkerdatalabelmodel#visible) property to `true` in the [`dataLabel`](../api/smithchart/seriesmarkermodel#datalabel) object. Now, the data labels are arranged smartly based on series. The sample below enables data labels for the first series.
+You can add data labels to improve the readability of the Smith Chart. This can be achieved by setting the [`visible`](../api/smithchart/seriesmarkerdatalabelmodel#visible) property to `true` in the [`dataLabel`](../api/smithchart/seriesmarkermodel#datalabel) object. The sample below enables data labels for the first series.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -207,9 +207,9 @@ You can add data labels to improve the readability of the smith chart. This can 
         
 {% previewsample "page.domainurl/code-snippet/smithchart/smithchart-axis-cs5" %}
 
-## Enable legend for smithchart
+## Enable legend for Smithchart
 
-You can use legend for the Smith Chart by setting the [`visible`](../api/smithchart/smithchartlegendsettingsmodel#visible) property to `true` in [`legendSettings`](../api/smithchart/smithchartmodel#legendsettings) object. Following example sample shows enabling legend for smithchart. Series name can customize using series `name`.
+You can use a legend for the Smith Chart by setting the [`visible`](../api/smithchart/smithchartlegendsettingsmodel#visible) property to `true` in the [`legendSettings`](../api/smithchart/smithchartmodel#legendsettings) object. The following example shows enabling the legend for the Smithchart. The series name can be customized using the series `name`.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

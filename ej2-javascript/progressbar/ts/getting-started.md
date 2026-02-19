@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Progressbar control | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Progressbar control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## ProgressBar control | Syncfusion
+description:  Check out and learn about Getting started with ##Platform_Name## ProgressBar control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: ProgressBar  
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Progressbar control
+# Getting started with ##Platform_Name## ProgressBar control
 
-This section explains the steps required to create the ProgressBar control using TypeScript and configure its properties using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+This section explains the steps required to create the ProgressBar control using TypeScript and configure its properties using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
@@ -19,7 +19,7 @@ This section explains the steps required to create the ProgressBar control using
 
 The following list of dependencies are required to use the ProgressBar control in your application:
 
-```javascript
+```
 |-- @syncfusion/ej2-progressbar
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-data
@@ -28,12 +28,12 @@ The following list of dependencies are required to use the ProgressBar control i
 
 ## Set up development environment
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
+Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack).
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
 
-git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack ej2-quickstart
 
 {% endhighlight %}
 {% endtabs %}
@@ -113,7 +113,7 @@ The quickstart application is preconfigured to use the **Material** theme in the
 {% endhighlight %}
 {% endtabs %}
 
-* Import the Progress Bar control to your `app.ts` file to instantiate a Progress Bar and append the  instance to the `#element` as shown.
+* Import the ProgressBar control to your `app.ts` file to instantiate a ProgressBar and append the instance to the `#element` as shown.
 
 `[src/app/app.ts]`
 

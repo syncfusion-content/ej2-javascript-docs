@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name##  Markdown Editor control | Syncfusion
+title: Getting started with ##Platform_Name##  Markdown Editor | Syncfusion
 description:  Checkout and learn about Getting started with ##Platform_Name## Markdown Editor control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Markdown Editor control
 
-This section explains the steps to create a simple Markdown Editor and demonstrates the basic usage of the Markdown Editor control using the Essential JS 2  [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository. This seed repository is pre-configured with the Essential JS 2 package.
+This section explains the steps to create a simple Markdown Editor and demonstrates the basic usage of the Markdown Editor control using a Vite-based TypeScript project scaffolded with Vite 7.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+> This guide uses Vite for bundling and development. Scaffold the project with `npm create vite@7` and choose the `vanilla` framework with the `typescript` variant. It requires Node `24.13.0` or higher. For more information about Vite and its features, refer to the [Vite documentation](https://vitejs.dev/).
 
 ## Dependencies
 
@@ -35,57 +35,43 @@ The following minimum dependencies are required to use the Markdown Editor.
 
 ## Set up development environment
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
+Run the following commands to set up a Typescript application:
 
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
+```bash
+npm create vite@7 my-app
+```
+To set-up a Typescript application in TypeScript environment, run the following command.
 
-git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
-
-{% endhighlight %}
-{% endtabs %}
-
-After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-
-cd ej2-quickstart
-
-{% endhighlight %}
-{% endtabs %}
+```bash
+npm create vite@7 my-app -- --template vanilla-ts
+cd my-app
+npm run dev
+```
 
 ## Add Syncfusion JavaScript packages
 
-Syncfusion JavaScript (Essential JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion JavaScript (Essential JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+All the available Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages are published in [`npmjs.com`](https://www.npmjs.com/~syncfusionorg) public registry.
+To install Markdown Editor component, use the following command
 
-The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
-
-{% tabs %}
-{% highlight bash tabtitle="NPM" %}
-
-npm install
-
-{% endhighlight %}
-{% endtabs %}
+```
+npm install @syncfusion/ej2-richtexteditor
+```
 
 ## Import the Syncfusion CSS styles
 
-Syncfusion JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion JavaScript controls to match the style of your application by referring to one of the built-in themes.
-
-The quickstart application is preconfigured to use the `Material` theme in the `~/src/styles/styles.css` file, as shown below: 
+Add the following imports inside the `~/src/styles.css` file to include the `tailwind3` theme styles:
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
 
-@import '../../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-lists/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-richtexteditor/styles/material.css';;
+@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-lists/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css';;
 
 {% endhighlight %}
 {% endtabs %}
@@ -103,7 +89,7 @@ To create Markdown Editor with additional features, inject the required modules.
 
 These modules should be injected into the Markdown Editor using the `RichTextEditor.Inject` method.
 
-> Additional feature modules are available [here](https://ej2.syncfusion.com/documentation/rich-text-editor/getting-started)
+> Additional feature modules are available [here](https://ej2.syncfusion.com/documentation/rich-text-editor/getting-started)
 
 ## Adding Markdown Editor control
 
@@ -117,7 +103,9 @@ Place the following Markdown Editor code in the `app.ts` file.
 import { RichTextEditor, Toolbar, Link, Image, MarkdownEditor } from '@syncfusion/ej2-richtexteditor';
 RichTextEditor.Inject(Toolbar, Link, Image, MarkdownEditor);
 
-let editor: RichTextEditor = new RichTextEditor({ });
+let editor: RichTextEditor = new RichTextEditor({ 
+    editorMode: 'Markdown'
+});
 editor.appendTo('#editor');
 
 {% endhighlight %}
@@ -134,7 +122,7 @@ Markdown Editor can be initialized on div element as shown below
 <html lang="en">
 
 <head>
-    <title>Essential JS 2 Rich Text Editor</title>
+    <title>Essential JS 2 Markdown Editor</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <meta name="description" content="Essential JS 2" />
@@ -166,8 +154,7 @@ RichTextEditor.Inject(Toolbar, Link, Image, MarkdownEditor);
 // initialize Markdown control
 let editor: RichTextEditor = new RichTextEditor({
     editorMode: 'Markdown',
-    value: 'In Rich Text Editor, you click the toolbar buttons to format the words and the changes are visible immediately. Markdown is not like that. When you format the word in Markdown format, you need to add Markdown syntax to the word to indicate which words and phrases should look different from each other. Rich Text Editor supports markdown editing when the editorMode set as **markdown** and using both *keyboard interaction* and *toolbar action*, you can apply the formatting to text. You can add our own custom formation syntax for the Markdown formation, [sample link](https://ej2.syncfusion.com/home/). The third-party library <b>Marked</b> is used in this sample to convert markdown into HTML content.'
- });
+});
 // render initialized Markdown Editor
 editor.appendTo('#editor');
 
@@ -189,7 +176,43 @@ Output will be displayed as follows
 
 ## Configure the Toolbar
 
-Configure the toolbar with the tools using items field of the [toolbarSettings](../api/rich-text-editor/toolbarSettings/#toolbarsettings) property as your application requires.
+Configure the toolbar with the tools using items field of the [toolbarSettings](../api/rich-text-editor/toolbarSettings#toolbarsettings) property as your application requires.
+
+{% tabs %}
+{% highlight ts tabtitle="main.ts" %}
+
+var editor = new ej.richtexteditor.RichTextEditor({
+    editorMode: 'Markdown',
+    toolbarSettings: {
+        items: ['Bold', 'Italic', 'StrikeThrough', 'InlineCode', 'SuperScript', 'SubScript', '|', 
+            'Formats', 'Blockquote', '|', 'OrderedList', 'UnorderedList', 'CreateLink', 'Image', 'CreateTable', '|', 
+            'Undo', 'Redo']
+    }
+});
+
+editor.appendTo("#editor");
+
+{% endhighlight %}
+{% endtabs %}
+
+> `|` and `-` can insert a vertical and horizontal separator lines in the toolbar.
+
+## Run the application
+
+The quickstart project is configured to compile and run the application in the browser. Use the following command to run the application.
+
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
+npm run dev
+
+{% endhighlight %}
+{% endtabs %}
+
+Replace the contents of `main.ts` with the code below to initialize the Rich Text Editor with default content.
+This adds default content to the editor so you can verify its rendering and basic functionality.
+
+Output will be displayed as follows
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -202,20 +225,6 @@ Configure the toolbar with the tools using items field of the [toolbarSettings](
           
 {% previewsample "page.domainurl/code-snippet/markdown-editor/getting-started-cs2" %}
 
-> `|` and `-` can insert a vertical and horizontal separator lines in the toolbar.
-
-## Run the application
-
-The quickstart project is configured to compile and run the application in the browser. Use the following command to run the application.
-
-{% tabs %}
-{% highlight bash tabtitle="NPM" %}
-
-npm start
-
-{% endhighlight %}
-{% endtabs %}
-
 > You can refer to our [TypeScript Rich Text Editor](https://www.syncfusion.com/javascript-ui-controls/js-wysiwyg-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [TypeScript Markdown Editor example](https://ej2.syncfusion.com/demos/#/bootstrap5/mark-down-editor/overview.html) that shows how to render the Markdown Editor.
 
 ## See Also
@@ -223,9 +232,9 @@ npm start
 * [How to change the editor type](./editor-modes)
 * [How to render the iframe](./iframe)
 * [How to render the toolbar in inline mode](./inline-mode)
-* [How to insert Emoticons](https://ej2.syncfusion.com/javascript/demos/#/material/rich-text-editor/insert-emoticons)
-* [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/javascript/demos/#/material/rich-text-editor/blog-posting)
-* [Reactive Form with Rich Text Editor](https://ej2.syncfusion.com/javascript/demos/#/material/rich-text-editor/reactive-form)
+* [How to insert Emoticons](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/rich-text-editor/insert-emoticons)
+* [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/rich-text-editor/blog-posting)
+* [Reactive Form with Rich Text Editor](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/rich-text-editor/reactive-form)
 * [Accessibility in Rich text editor](https://ej2.syncfusion.com/documentation/rich-text-editor/accessibility)
 * [Keyboard support in Rich text editor](https://ej2.syncfusion.com/documentation/rich-text-editor/keyboard-support)
 * [Globalization in Rich text editor](https://ej2.syncfusion.com/documentation/rich-text-editor/globalization)

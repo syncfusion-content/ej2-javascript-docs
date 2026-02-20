@@ -43,17 +43,6 @@ Before proceeding, ensure that the following tools are installed and configured:
 - Postman or Insomnia for API testing.
 - MySQL Workbench or phpMyAdmin for database management.
 
-## Key topics
-
-| # | Topics | Link |
-|---|---------|-------|
-| 1 | Create a Laravel project, configure the database, and set up models with migrations | [View](#setting-up-the-laravel-application) |
-| 2 | Create Blade templates and configure `UrlAdaptor` for seamless Grid integration | [View](#integrating-syncfusion-grid-with-laravel-api) |
-| 3 | Handle server-side filtering, searching, sorting, and paging for efficient data processing | [View](#performing-data-operations) |
-| 4 | Enable insert, read, update, and delete operations from the Grid using `UrlAdaptor` | [View](#performing-crud-operations) |
-| 5 | Run the Laravel development server and access the application locally | [View](#running-the-application) |
-| 6 | Explore a complete working sample on GitHub | [View](#github-sample) |
-
 ### Verifying Installation
 
 Open a terminal (for example, an integrated terminal in Visual Studio Code or Windows Command Prompt opened with <kbd>Win+R</kbd>, or macOS Terminal launched with <kbd>Cmd+Space</kbd>) and run the following command to verify installation:
@@ -72,6 +61,17 @@ node --version
 mysql --version
 ```
 Error during command execution. The corresponding tool may not be installed or configured correctly. See the [troubleshooting](#troubleshooting) section at the end of this guide for installation help.
+
+## Key topics
+
+| # | Topics | Link |
+|---|---------|-------|
+| 1 | Create a Laravel project, configure the database, and set up models with migrations | [View](#building-the-laravel-application) |
+| 2 | Create Blade templates and configure `UrlAdaptor` for seamless Grid integration | [View](#integrating-syncfusion-grid-with-php-and-laravel-api) |
+| 3 | Handle server-side filtering, searching, sorting, and paging for efficient data processing | [View](#performing-data-operations) |
+| 4 | Enable insert, read, update, and delete operations from the Grid using `UrlAdaptor` | [View](#performing-crud-operations) |
+| 5 | Run the Laravel development server and access the application locally | [View](#running-the-application) |
+| 6 | Explore a complete working sample on GitHub | [View](#complete-sample-repository) |
 
 ## Building the Laravel application
 
@@ -517,7 +517,7 @@ For detailed `DataManager` request parameter documentation, refer to the [DataMa
 
 When the Grid performs a filtering action, the `UrlAdaptor` sends filter conditions to the `/api/read` endpoint in a `where` parameter. The "applyWhere()" and "applyOperator()" methods handle these conditions and build the database filter query.
 
-![Filtering](../../images/grid-laravel-filtering.png)
+![Filtering](../images/grid-laravel-filtering.png)
 
 **Client-to-server communication:**
 - Grid sends `POST` to `/api/read` with `where` parameter containing filter predicates (field, operator, value).
@@ -679,7 +679,7 @@ For the complete implementation, refer to the [applyOperator()](https://github.c
 
 During the search action, `UrlAdaptor` sends the search text along with the target columns to the `/api/read` endpoint of the **ServerController** in a parameter named search.
 
-![Searching](../../images/grid-laravel-searching.png)
+![Searching](../images/grid-laravel-searching.png)
 
 **Client-to-server communication:**
 - The Grid sends a `POST` request to `/api/read` with a "search" parameter that includes the search term and target fields.
@@ -750,7 +750,7 @@ class ServerController extends Controller
 
 Sorting operations are handled in the "read" method based on the `sorted` parameter received from the client. `UrlAdaptor` sends the column name and sort direction (ascending or descending) to the `/api/read` endpoint of the **ServerController**.
 
-![Sorting](../../images/grid-laravel-sorting.png)
+![Sorting](../images/grid-laravel-sorting.png)
 
 **Client-to-server communication:**
 - The Grid sends a `POST` request to `/api/read` with a sorted parameter that includes the column name and sort direction.
@@ -799,7 +799,7 @@ Server-side pagination is implemented using the `skip` and `take` parameters rec
 
 Server-side pagination is implemented using the `skip` and `take` parameters sent from the client to the `/api/read` endpoint in the **ServerController**. Instead of loading all records at once, the server retrieves only the current page's data from the database, improving performance and efficiency.
 
-![Paging](../../images/grid-laravel-paging.png)
+![Paging](../images/grid-laravel-paging.png)
 
 **Client-to-server communication:**
 - The Grid sends a `POST` request to `/api/read` with skip (offset) and take (limit) parameters.
@@ -852,7 +852,7 @@ The **ServerController** handles insert, update, and delete operations triggered
 
 The "insert" method handles creating new student records. When the "Add" button is clicked and the form is submitted, `UrlAdaptor` sends the new record data to `/api/insert` endpoint of the **ServerController**.
 
-![Add Record](../../images/grid-laravel-crud-add.png)
+![Add Record](../images/grid-laravel-crud-add.png)
 
 **Client-to-server communication:**
 
@@ -890,7 +890,7 @@ public function insert(Request $request)
 
 The "update" method handles modifying existing student records. When a record is edited and submitted, the `UrlAdaptor` sends the updated data to the `/api/update` endpoint of the ServerController.
 
-![Edit Record](../../images/grid-laravel-crud-edit.png)
+![Edit Record](../images/grid-laravel-crud-edit.png)
 
 **Client-to-server communication:**
 
@@ -936,7 +936,7 @@ public function update(Request $request)
 
 The "remove" method handles deleting student records from the database. When a record is selected and deleted, `UrlAdaptor` sends the primary key of that record to the `/api/remove` endpoint of the **ServerController**.
 
-![Delete Record](../../images/grid-laravel-crud-delete.png)
+![Delete Record](../images/grid-laravel-crud-delete.png)
 
 **Client-to-server communication:**
 - The Grid sends a `POST` request to `/api/remove` with the primary key (StudentID).
@@ -974,7 +974,7 @@ Start the Laravel development server by running the following command in the Vis
 php artisan serve
 ```
 
-The application is now accessible at `http://localhost:8000`. The Grid displays student data from the database and enables filtering, searching, sorting, paging, and CRUD operations through the `UrlAdaptor` and Laravel API endpoints.
+The application is now accessible at **http://localhost:8000**. The Grid displays student data from the database and enables filtering, searching, sorting, paging, and CRUD operations through the `UrlAdaptor` and Laravel API endpoints.
 
 ## Complete sample repository
 
@@ -984,88 +984,26 @@ The repository contains the complete Laravel backend implementation with all Ser
 
 ## Troubleshooting
 
-**Issue: "Command not found: php"**
-- **Solution:** PHP is not installed or not added to the system PATH. Visit [php.net](https://php.net) to download and install PHP. After installation, restart the terminal.
+| Issue | Resolution |
+|-------|------------|
+| **Command not found: php** | PHP is not installed or not added to PATH. Download from [php.net](https://php.net) and install. Restart terminal after installation. |
+| **Command not found: composer** | Composer is not installed. Download from [getcomposer.org](https://getcomposer.org) and follow installation steps. |
+| **SQLSTATE[HY000]: General error: 1030 Got error...** | Database connection failed. Verify `DB_HOST`, `DB_USERNAME`, and `DB_PASSWORD` in `.env`. Ensure MySQL is running. |
+| **Class 'App\Models\Student' not found** | Run: <br>`php artisan make:model Student -m`<br> to create the Student model. |
+| **The migration file was not found** | Run migrations again: <br>`php artisan migrate`. |
+| **GridDataManager is not defined / Grid not displaying data** | Ensure Syncfusion CDN links are added correctly in HTML and URLs are accessible. |
+| **403 Forbidden error when submitting form** | CSRF token missing. Add `{{ csrf_field() }}` in forms under (**routes/web.php** )(not API routes). |
+| **419 error or 'Page Expired' when Grid performs CRUD** | Do not add CSRF tokens to API routes. Verify API endpoints are in **routes/api.php**, remove CSRF headers from `DataManager`, and ensure `/api/` prefix is used. |
+| **Grid shows data but filtering/sorting doesn’t work** | Confirm API endpoints (`/api/read`, `/api/insert`, `/api/update`, `/api/remove`) exist in **routes/api.php** and ServerController methods are implemented. |
+| **Port 8000 is already in use** | Run Laravel on another port: <br>`php artisan serve --port=8001`. |
+| **CORS error: No 'Access-Control-Allow-Origin' header** | Install `fruitcake/laravel-cors`, register `HandleCors` middleware in `app/Http/Kernel.php`, and configure `config/cors.php` with allowed origins. |
+| **Mass assignment exception** | Add missing fields to `$fillable` in Student model: `protected $fillable = ['FirstName','LastName','Email','Course','Status','Campus'];`. |
+| **Edit/Delete buttons don’t work; 'Editing failed'** | Ensure StudentID consistency: migration uses `$table->id('StudentID')`, Grid column defines `{ field: 'StudentID', isPrimaryKey: true }`, seeder doesn’t set StudentID manually, and controller methods use `where('StudentID', $studentId)`. |
+| **Grid loads but 404 error on CRUD** | Verify **routes/api.php** contains:<br> `Route::post('/read', ...); Route::post('/insert', ...); Route::post('/update', ...); Route::post('/remove', ...);`. |
+| **Filtering/Sorting/Paging shows no results or 500 error** | Return response with both `result` array and `count` property: <br> `return response()->json(['result' => $records, 'count' => $total]);`|
 
-**Issue: "Command not found: composer"**
-- **Solution:** Composer is not installed. Download it from [getcomposer.org](https://getcomposer.org) and follow the installation steps.
+## See also
 
-**Issue: "SQLSTATE[HY000]: General error: 1030 Got error..."**
-- **Solution:** The database connection has failed. Confirm that `DB_HOST`, `DB_USERNAME`, and `DB_PASSWORD` in the `.env` file are configured correctly, and ensure MySQL is running.
-
-**Issue: "Class 'App\Models\Student' not found"**
-- **Solution:** The Student model wasn't created properly. Run:
-  ```bash
-  php artisan make:model Student -m
-  ```
-
-**Issue: "The migration file was not found"**
-- **Solution:** Run migrations again:
-  ```bash
-  php artisan migrate
-  ```
-
-**Issue: "GridDataManager is not defined" or "Grid not displaying data"**
-- **Solution:** Ensure Syncfusion CDN links are properly added to the HTML file. Check that the URLs are correct and accessible from the browser.
-
-**Issue: "403 Forbidden error when submitting form"**
-- **Solution:** CSRF token may be missing. Ensure the form includes:
-  ```html
-  {{ csrf_field() }}
-  ```
-  This applies only to web routes in (**routes/web.php**), not API routes.
-
-**Issue: "419 error or 'Page Expired' when Grid tries to read/insert/update/delete data"**
-- **Solution:** A CSRF token may have been accidentally added to API requests. API routes in (**routes/api.php**) are **automatically CSRF-exempt**. Do NOT add CSRF tokens to API calls. `UrlAdaptor` handles this correctly without tokens. If the error persists:
-  1. Verify that (**routes/api.php**) is used (not (**routes/web.php**)) for API endpoints
-  2. Remove any CSRF token headers from `DataManager` configuration
-  3. Ensure the API route is prefixed with `/api/` in the URL (e.g., `{{ url('/api/read') }}`)
-
-**Issue: "Grid shows data but filtering/sorting doesn't work"**
-- **Solution:** Ensure the Laravel API endpoints (`/api/read`, `/api/insert`, `/api/update`, `/api/remove`) are properly defined in (**routes/api.php**) and the ServerController methods are implemented.
-
-**Issue: "Port 8000 is already in use"**
-- **Solution:** Another application is using port 8000. Run Laravel on a different port:
-  ```bash
-  php artisan serve --port=8001
-  ```
-
-**Issue: "CORS error: No 'Access-Control-Allow-Origin' header"**
-- **Solution:** CORS is not properly configured. Ensure:
-  1. The `fruitcake/laravel-cors` package is installed (`composer require fruitcake/laravel-cors`)
-  2. `HandleCors` middleware is registered in `app/Http/Kernel.php` under the `$middleware` array
-  3. `config/cors.php` is properly configured for the specified domain.
-  ```php
-  'allowed_origins' => ['http://localhost:8000', 'http://localhost:3000'],
-  ```
-
-**Issue: "Mass assignment exception when inserting/updating records"**
-- **Solution:** A field being inserted is not in the model's `$fillable` array. Add the field to the Student model:
-  ```php
-  protected $fillable = ['FirstName', 'LastName', 'Email', 'Course', 'Status', 'Campus'];
-  ```
-
-**Issue: "Edit/Delete buttons don't work; Grid shows 'Editing failed'"**
-- **Solution:** Verify StudentID type consistency:
-  1. Check migration: `$table->id('StudentID')` creates auto-increment integer
-  2. Check Grid column: `{ field: 'StudentID', isPrimaryKey: true }`
-  3. Ensure seeder does NOT manually set StudentID (remove `'StudentID' => ...` line)
-  4. Verify Controller update/remove methods use: `where('StudentID', $studentId)`
-
-**Issue: "Grid loads but 404 error on read/insert/update/delete"**
-- **Solution:** API routes are not registered. Verify (**routes/api.php**) contains:
-  ```php
-  Route::post('/read', [ServerController::class, 'read']);
-  Route::post('/insert', [ServerController::class, 'insert']);
-  Route::post('/update', [ServerController::class, 'update']);
-  Route::post('/remove', [ServerController::class, 'remove']);
-  ```
-
-**Issue: "Filtering/Sorting/Paging shows no results or 500 error"**
-- **Solution:** Ensure the "read()" method handles all `DataManager` parameters:
-  1. Check that "applyWhere()", and sorting logic are implemented
-  2. Verify `skip()` and `take()` parameters are processed correctly
-  3. Return response with both `result` array and `count` property:
-     ```php
-     return response()->json(['result' => $records, 'count' => $total]);
-     ```
+- [Types of Edit](https://ej2.syncfusion.com/javascript/documentation/grid/editing/edit-types)
+- [Customizable Grid cells with text, images, icons, and UI templates.](https://ej2.syncfusion.com/javascript/documentation/grid/columns/column-template)
+- [Boosts speed by rendering visible rows and columns](https://ej2.syncfusion.com/javascript/documentation/grid/scrolling/virtual-scrolling)

@@ -1,5 +1,5 @@
 window.getImage = function (bird) {
-    return `https://ej2.syncfusion.com/products/images/carousel/${bird}.png`;
+    return 'https://ej2.syncfusion.com/products/images/carousel/' + bird + '.png';
 };
 
 var productItems = [

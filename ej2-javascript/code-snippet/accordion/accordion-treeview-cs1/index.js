@@ -60,14 +60,14 @@ ej.base.enableRipple(true);
 
     function expand(e) {
   if (e.name === 'expanding' && [].indexOf.call(this.items, e.item) === 0 && e.element.querySelector('#treeDoc').childElementCount === 0) {
-        let treeObj = new ej.navigations.TreeView({
+        var treeObj = new ej.navigations.TreeView({
         fields: { dataSource: DocDB, id: 'nodeId', text: 'nodeText', child: 'nodeChild', iconCss: 'icon', imageUrl: 'image' },
         sortOrder: 'Ascending'
     });
     treeObj.appendTo('#treeDoc');
   }
     if (e.name === 'expanding' && [].indexOf.call(this.items, e.item) === 1 && e.element.querySelector('#treeDownload').childElementCount === 0) {
-        let treeObj = new ej.navigations.TreeView({
+        var treeObj = new ej.navigations.TreeView({
         fields: { dataSource: DownloadDB, id: 'nodeId', text: 'nodeText', child: 'nodeChild', iconCss: 'icon', imageUrl: 'image' },
         sortOrder: 'Ascending'
     });
@@ -75,7 +75,7 @@ ej.base.enableRipple(true);
   }
   
       if (e.name === 'expanding' && [].indexOf.call(this.items, e.item) === 2 && e.element.querySelector('#treePic').childElementCount === 0) {
-        let treeObj = new ej.navigations.TreeView({
+        var treeObj = new ej.navigations.TreeView({
         fields: { dataSource: PicDB, id: 'nodeId', text: 'nodeText', child: 'nodeChild', iconCss: 'icon', imageUrl: 'image' },
         sortOrder: 'Ascending'
     });

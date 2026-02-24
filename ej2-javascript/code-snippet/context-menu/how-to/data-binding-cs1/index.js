@@ -37,7 +37,7 @@ for (var i = 0; i < data.length; i++) {
 var menuOptions = {
     target: '#target',
     items: menuItems,
-    beforeItemRender: (args) => {
+    beforeItemRender: function (args) {
         if (!args.item.text) {
             args.element.classList.add('e-separator');
         }

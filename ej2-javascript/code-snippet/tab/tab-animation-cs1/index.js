@@ -39,7 +39,7 @@ var listObjPrevious = new ej.dropdowns.DropDownList({
     index: 0,
     placeholder: 'Select a animate type',
     popupHeight: '150px',
-    change: () => { valueChange();  }
+    change: function () { valueChange(); }
 });
 listObjPrevious.appendTo('#previousAnimation');
 
@@ -47,7 +47,7 @@ var listObjNext = new ej.dropdowns.DropDownList({
     index: 1,
     placeholder: 'Select a animate type',
     popupHeight: '150px',
-    change: () => { valueChange1();  }
+    change: function () { valueChange1(); }
 });
 listObjNext.appendTo('#nextAnimation');
 

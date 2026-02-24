@@ -1,7 +1,7 @@
 
 var stepper = new ej.navigations.Stepper({
   steps: [{}, {}, {}, {}],
-  beforeStepRender: (args) =>{
+  beforeStepRender: function (args) {
     //Your required action here
   }
 });

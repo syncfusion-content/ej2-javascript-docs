@@ -22,19 +22,19 @@ var toolbar = new ej.navigations.Toolbar({
 toolbar.appendTo('#element');
 
 function create() {
-    zoomBtn = new ej.buttons.Button({ cssClass: `e-flat`, iconCss: 'e-icons e-zoomin-icon', isToggle: true });
+    zoomBtn = new ej.buttons.Button({ cssClass: 'e-flat', iconCss: 'e-icons e-zoomin-icon', isToggle: true });
     zoomBtn.appendTo('#zoom_btn');
 
-    mediaBtn = new ej.buttons.Button({ cssClass: `e-flat`, iconCss: 'e-icons e-play-icon', isToggle: true });
+    mediaBtn = new ej.buttons.Button({ cssClass: 'e-flat', iconCss: 'e-icons e-play-icon', isToggle: true });
     mediaBtn.appendTo('#media_btn');
 
-    undoBtn = new ej.buttons.Button({ cssClass: `e-flat`, iconCss: 'e-icons e-undo-icon', isToggle: true });
+    undoBtn = new ej.buttons.Button({ cssClass: 'e-flat', iconCss: 'e-icons e-undo-icon', isToggle: true });
     undoBtn.appendTo('#undo_btn');
 
-    filterBtn = new ej.buttons.Button({ cssClass: `e-flat`, iconCss: 'e-icons e-filter-icon', isToggle: true });
+    filterBtn = new ej.buttons.Button({ cssClass: 'e-flat', iconCss: 'e-icons e-filter-icon', isToggle: true });
     filterBtn.appendTo('#filter_btn');
 
-    visibleBtn = new ej.buttons.Button({ cssClass: `e-flat`, iconCss: 'e-icons e-hide-icon', isToggle: true, content:'Hide'});
+    visibleBtn = new ej.buttons.Button({ cssClass: 'e-flat', iconCss: 'e-icons e-hide-icon', isToggle: true, content:'Hide'});
     visibleBtn.appendTo('#visible_btn');
 
     //Toggle button click event handlers

@@ -43,7 +43,7 @@ tooltip.appendTo('#Tooltip');
 
 function onBeforeRender(args) {
   if (args.target) {
-      this.content = `<div>` + args.target.innerText + `</div>`;
+      this.content = '<div>' + args.target.innerText + '</div>';
   }
 }
 

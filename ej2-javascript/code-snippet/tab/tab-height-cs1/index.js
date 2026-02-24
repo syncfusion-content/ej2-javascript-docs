@@ -37,7 +37,7 @@ tabObj.appendTo('#element');
 
 var heightValues = new ej.dropdowns.DropDownList({
     width: '90%',
-    change:()=>{ changeHeightValue();}
+    change: function () { changeHeightValue(); }
 });
 heightValues.appendTo('#contentHeight');
 

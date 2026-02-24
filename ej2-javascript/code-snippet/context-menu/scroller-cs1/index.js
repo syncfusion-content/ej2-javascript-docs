@@ -43,7 +43,7 @@ var menuObj = new ej.navigations.ContextMenu({
     target: '#target',
     items: menuItems,
     enableScrolling: true,
-    beforeOpen: (args) => {
+    beforeOpen: function (args) {
         args.element.parentElement.style.height = '150px';
     }
 }, '#contextmenu');

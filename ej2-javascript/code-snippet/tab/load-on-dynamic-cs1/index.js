@@ -24,19 +24,19 @@ var userNameObj = new ej.inputs.TextBox({
 
 userNameObj.appendTo('#username');
 
-let passWordObj = new ej.inputs.TextBox({
+var passWordObj = new ej.inputs.TextBox({
     placeholder: 'Password',
     floatLabelType: 'Auto'
 });
 passWordObj.appendTo('#password');
 
-let buttonObj  = new ej.buttons.Button({
+var buttonObj  = new ej.buttons.Button({
     content: 'Log in',
     isPrimary: true,
 });
 buttonObj.appendTo('#normalbtn');
 
-let grid = new ej.grids.Grid({
+var grid = new ej.grids.Grid({
     dataSource: [
         { OrderID: 10248, CustomerID: 'ALFKI', OrderDate: '2024-12-01', Freight: 32.38 },
         { OrderID: 10249, CustomerID: 'ANATR', OrderDate: '2024-12-02', Freight: 11.61 },
@@ -51,11 +51,11 @@ let grid = new ej.grids.Grid({
         { field: 'Freight', headerText: 'Freight', width: 120, format: 'C2', textAlign: 'Right' }
     ]
 });
-grid.appendTo('#grid')
+grid.appendTo('#grid');
 
-buttonObj.element.onclick = () => {
-    let userName = userNameObj.value;
-    let password = passWordObj.value;
+buttonObj.element.onclick = function () {
+    var userName = userNameObj.value;
+    var password = passWordObj.value;
     if (!userName && !password) {
         window.alert('Enter both username and password');
     } else if (!userName) {

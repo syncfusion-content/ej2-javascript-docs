@@ -73,8 +73,9 @@ var tree1 = new ej.navigations.TreeView({
 tree1.appendTo('#tree');
 
 // Triggers on mouse hover/keydown event
-['mouseover', 'keydown'].forEach(evt =>
-    document.getElementById("tree").addEventListener(evt, (event) => { setHeight(event.target); }));
+['mouseover', 'keydown'].forEach(function (evt) {
+    document.getElementById("tree").addEventListener(evt, function (event) { setHeight(event.target); });
+});
 
 // Triggers on node selection
 function onselect(arg) {

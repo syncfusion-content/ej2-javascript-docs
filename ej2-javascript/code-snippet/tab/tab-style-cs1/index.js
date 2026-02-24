@@ -38,7 +38,7 @@ tabObj.appendTo('#element');
 
 var headerStyles = new ej.dropdowns.DropDownList({ 
     width: '90%',
-    change:()=>{ changeHeaderStyle();}
+    change: function () { changeHeaderStyle(); }
     });
 headerStyles.appendTo('#headerStyles');
 

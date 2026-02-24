@@ -103,7 +103,7 @@ var listObj = new ej.lists.ListView({
 //Render initialized ListView component
 listObj.appendTo('#listview');
 
-document.getElementById('hamburger').onclick = () => {
+document.getElementById('hamburger').onclick = function () {
     var animation = new ej.base.Animation({ duration: 500 });
     animation.animate(listObj.element, {
         name: 'SlideDown' ,
@@ -115,7 +115,7 @@ document.getElementById('hamburger').onclick = () => {
 };
 
 // Close the ListView
-document.getElementById('close').onclick = () => {
+document.getElementById('close').onclick = function () {
     listObj.element.style.display = 'none';
     document.getElementById('close').style.display = 'none';
 };

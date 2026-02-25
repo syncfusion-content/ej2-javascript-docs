@@ -26,8 +26,8 @@ function onExpanding(args) {
 }
 
 var toggleIcons = document.querySelectorAll('.e-toggle-icon');
-toggleIcons.forEach((toggleIcon) => {
-  toggleIcon.addEventListener('click', () => {
+for (var i = 0; i < toggleIcons.length; i++) {
+  toggleIcons[i].addEventListener('click', function () {
     istoggleIconClicked = true;
   });
-});
+}

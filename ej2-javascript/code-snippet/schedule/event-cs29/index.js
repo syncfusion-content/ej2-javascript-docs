@@ -16,7 +16,7 @@ var scheduleObj = new ej.schedule.Schedule({
     eventSettings: { dataSource: data },
     eventRendered: function (args) {
         var cellHeight = (scheduleObj.element.querySelector('.e-work-cells')).offsetHeight;
-        let appHeight = (args.data.EndTime.getTime() - args.data.StartTime.getTime()) / (60 * 1000) * (cellHeight * scheduleObj.timeScale.slotCount) / scheduleObj.timeScale.interval;
+        var appHeight = (args.data.EndTime.getTime() - args.data.StartTime.getTime()) / (60 * 1000) * (cellHeight * scheduleObj.timeScale.slotCount) / scheduleObj.timeScale.interval;
         args.element.style.height = appHeight + 'px';
     }
 });

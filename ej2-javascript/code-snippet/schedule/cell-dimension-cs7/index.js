@@ -1,4 +1,4 @@
-let scheduleObj = new ej.schedule.Schedule({
+var scheduleObj = new ej.schedule.Schedule({
   width: "100%",
   height: "550px",
   views: ["Day", "Week", "Month", "Agenda", "Year"],

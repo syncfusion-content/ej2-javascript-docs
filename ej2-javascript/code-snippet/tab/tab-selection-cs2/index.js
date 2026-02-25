@@ -44,7 +44,7 @@ var tabObj = new ej.navigations.Tab({
 tabObj.appendTo('#element');
 
 function getInteractionDetail(interact) {
-    let eventlog = interact ? 'Tab Item selected by user interaction'
+    var eventlog = interact ? 'Tab Item selected by user interaction'
       : 'Tab Item selected by programmatically';
     document.getElementById('EventLog').innerHTML = document.getElementById('EventLog').innerHTML = '<b>' + eventlog + '</b></span>';
 }
@@ -58,15 +58,15 @@ var dropdownData = [
   { text: 'Germany', value: 5 },
   { text: 'France', value: 6 },
 ];
-let selctItemObj = new ej.dropdowns.DropDownList({
+var selctItemObj = new ej.dropdowns.DropDownList({
   index: 0,
   dataSource: dropdownData,
   placeholder: 'Select Tab Item using dropdown',
   floatLabelType:"Always",
   popupHeight: '150px',
-  change: (args) => {
+  change: function (args) {
     tabObj.select(args.itemData.value);
-  },
+  }
 });
 selctItemObj.appendTo('#selectTab');
 

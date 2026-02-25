@@ -54,7 +54,7 @@ var button = new ej.buttons.Button();
 // Render initialized button.
 button.appendTo('#btn');
 
-document.getElementById('btn').addEventListener('click', (e) => {
+document.getElementById('btn').addEventListener('click', function(e) {
   var value = document.getElementById('name').value;
   document.getElementById('List').ej2_instances[0].addItem([{ text: "Amenda", contact: value, id: "2", avatar: "A", pic: "", chat: "receiver" }]);
   document.getElementById('name').value = "";

@@ -1,8 +1,8 @@
-let instance = new ej.base.Internationalization();
-window.getDate = date => {
+var instance = new ej.base.Internationalization();
+window.getDate = function (date) {
   return instance.formatDate(date, { skeleton: "Ed" });
 };
-let scheduleObj = new ej.schedule.Schedule({
+var scheduleObj = new ej.schedule.Schedule({
   width: "100%",
   height: "550px",
   views: ["Month"],

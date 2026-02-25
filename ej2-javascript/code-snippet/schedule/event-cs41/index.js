@@ -67,14 +67,14 @@ var nonOverlapEvent = {
 
 var overlapButton = document.getElementById('AddOverlapEvent');
 if (overlapButton) {
-    overlapButton.addEventListener('click', () => {
+    overlapButton.addEventListener('click', function () {
         scheduleObj.addEvent(overlapEvent);
     });
 }
 
 var nonOverlapButton = document.getElementById('AddNonOverlapEvent');
 if (nonOverlapButton) {
-    nonOverlapButton.addEventListener('click', () => {
+    nonOverlapButton.addEventListener('click', function () {
         scheduleObj.addEvent(nonOverlapEvent);
     });
 }

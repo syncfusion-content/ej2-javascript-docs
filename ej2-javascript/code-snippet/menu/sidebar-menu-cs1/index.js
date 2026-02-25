@@ -8,11 +8,11 @@ var defaultSidebar = new ej.navigations.Sidebar({
 }, '#default-sidebar');
 
 // Close the Sidebar
-document.getElementById('close').onclick = () => {
+document.getElementById('close').onclick = function () {
     defaultSidebar.hide();
 };
 
-document.getElementById('hamburger').onclick = () => {
+document.getElementById('hamburger').onclick = function () {
     defaultSidebar.show();
     acrdnObj.refresh();
 };

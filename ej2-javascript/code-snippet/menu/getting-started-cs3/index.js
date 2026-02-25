@@ -17,7 +17,7 @@ new ej.data.Query().from('Employees').take(5).hierarchy(
         return [1,2,3,4,5]
     }
 ))
-.then((e) => {
+.then(function (e) {
     new ej.navigations.Menu({ items: e.result, fields: menuFields  }, '#menu');
 });
 

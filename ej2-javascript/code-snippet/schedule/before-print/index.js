@@ -4,9 +4,9 @@ var scheduleObj = new ej.schedule.Schedule({
   selectedDate: new Date(),
   eventSettings: { dataSource: dataManager },
   views: ['Day', 'Week', 'WorkWeek', 'Month'],
-  actionBegin: (args) => {
+  actionBegin: function (args) {
     if (args.requestType === 'toolbarItemRendering') {
-      let printItem = {
+      var printItem = {
         align: 'Right', showTextOn: 'Both', prefixIcon: 'e-icon-schedule-print',
         text: 'Print', cssClass: 'e-schedule-print', click: onPrintIconClick
       };

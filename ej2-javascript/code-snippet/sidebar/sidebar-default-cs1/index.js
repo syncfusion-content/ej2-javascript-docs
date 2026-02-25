@@ -16,9 +16,9 @@ defaultSidebar.appendTo('#default');
 //end of Sidebar initialization
 
 // Open the Sidebar
-document.querySelector('#open').addEventListener('click', () => {
+document.querySelector('#open').addEventListener('click', function () {
     defaultSidebar.show();
-})
+});
 
 // Toggle(Open/Close) the Sidebar
 document.getElementById('toggle').onclick = function() {

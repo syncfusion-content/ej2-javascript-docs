@@ -20,7 +20,7 @@ var listViewInstance = new ej.lists.ListView({
 listViewInstance.appendTo('#element');
 
 function renderHeaderButtons() {
-    ['search', 'sort', 'add'].forEach((item) => {
+    ['search', 'sort', 'add'].forEach(function (item) {
         new ej.buttons.Button({ iconCss: `e-icons e-${item}-icon`, cssClass: 'e-small e-round', isPrimary: true }, `#${item}`)
     });
 }

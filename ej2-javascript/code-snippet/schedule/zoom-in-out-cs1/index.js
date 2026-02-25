@@ -19,8 +19,8 @@ var scheduleObj = new ej.schedule.Schedule({
 scheduleObj.appendTo("#Schedule");
 
 var schObj = document.querySelector('.e-schedule').ej2_instances[0];
-window.addEventListener("wheel", event => {
-  const delta = Math.sign(event.deltaY);
+window.addEventListener("wheel", function (event) {
+  var delta = Math.sign(event.deltaY);
   if (schObj.currentView === "TimelineMonth") {
     var len = schObj.headerRows.length;
     if (delta < 0) {

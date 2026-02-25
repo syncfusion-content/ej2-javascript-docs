@@ -1,6 +1,6 @@
 var stepper = new ej.navigations.Stepper({
   steps: [{}, {}, {}, {}],
-  created: () => {
+  created: function () {
     //Your required action here
   }
 });

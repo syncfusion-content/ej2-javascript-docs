@@ -7,10 +7,10 @@ var scheduleObj = new ej.schedule.Schedule({
     },
     allowClipboard: true,
     showQuickInfo: false,
-    beforePaste: (args) => {
+    beforePaste: function (args) {
         if (typeof args.data === 'string') {
-            const dataArray = args.data.split('\t');
-            const result = {
+            var dataArray = args.data.split('\t');
+            var result = {
                 Id: dataArray[0],
                 Subject: dataArray[1],
                 StartTime: new Date(dataArray[4]).toISOString(),
@@ -24,7 +24,7 @@ var scheduleObj = new ej.schedule.Schedule({
 });
 scheduleObj.appendTo('#Schedule');
 
-const gridData = [
+var gridData = [
     {
         OrderID: 10248, CustomerID: 'VINET', Role: 'Admin', EmployeeID: 5,
         ShipName: 'Vins et alcools Chevalier', ShipCity: 'Reims', ShipAddress: '59 rue de l Abbaye',
@@ -69,7 +69,7 @@ const gridData = [
     }
 ];
 
-const gridObj = new Grid({
+var gridObj = new Grid({
     dataSource: gridData,
     allowSelection: true,
     height: 400,

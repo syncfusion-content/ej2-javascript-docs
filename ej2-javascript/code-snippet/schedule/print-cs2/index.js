@@ -3,9 +3,9 @@ var scheduleObj = new ej.schedule.Schedule({
   height: '520px',
   selectedDate: new Date(2018, 1, 15),
   eventSettings: { dataSource: scheduleData },
-  actionBegin: (args) => {
+  actionBegin: function (args) {
     if (args.requestType === 'toolbarItemRendering') {
-      let printItem = {
+      var printItem = {
         align: 'Right', showTextOn: 'Both', prefixIcon: 'e-icon-schedule-print',
         text: 'Print', cssClass: 'e-schedule-print', click: onPrintIconClick
       };
@@ -16,7 +16,7 @@ var scheduleObj = new ej.schedule.Schedule({
 scheduleObj.appendTo('#Schedule');
 
 function onPrintIconClick() {
-  let printModel = {
+  var printModel = {
     agendaDaysCount: 14,
     cssClass: 'e-print-schedule',
     currentView: scheduleObj.currentView,

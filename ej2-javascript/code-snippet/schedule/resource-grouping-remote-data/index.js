@@ -1,4 +1,4 @@
-let resource = new ej.data.DataManager({
+var resource = new ej.data.DataManager({
     url: 'Home/GetResourceData',
     adaptor: new ej.data.UrlAdaptor,
     crossDomain: true

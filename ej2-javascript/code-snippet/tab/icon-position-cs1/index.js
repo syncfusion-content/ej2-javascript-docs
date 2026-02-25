@@ -36,13 +36,13 @@ tabObj.appendTo('#element');
 
 var iconPosition = new ej.dropdowns.DropDownList({
     width: '90%',
-    change:()=>{ changeHeaderStyle();}
+    change: function () { changeHeaderStyle(); }
 });
 iconPosition.appendTo('#iconPosition');
 
 function changeHeaderStyle(e) {
     var items = tabObj.items;
-    for(let i = 0; i < items.length; i++) {
+    for (var i = 0; i < items.length; i++) {
         tabObj.items[i].header.iconPosition = iconPosition.value;
     }
 }

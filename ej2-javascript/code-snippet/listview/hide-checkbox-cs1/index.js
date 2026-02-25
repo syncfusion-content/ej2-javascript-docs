@@ -364,7 +364,7 @@ function onSelect(args) {
 
     // Looping through all the selected element and removing e-active class
     // to avoid behaviour interference  with getSelectedItems method
-    normalElements.forEach((element) => {
+    normalElements.forEach(function (element) {
         element.classList.remove('e-active');
     });
 

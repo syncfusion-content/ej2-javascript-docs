@@ -10,7 +10,7 @@ scheduleObj.appendTo('#Schedule');
 var btn = new ej.buttons.Button();
 btn.appendTo('#clear');
 
-document.getElementById('clear').onclick = () => {
+document.getElementById('clear').onclick = function () {
     document.getElementById('EventLog').innerHTML = '';
 };
 

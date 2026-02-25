@@ -4,7 +4,7 @@ var scheduleObj = new ej.schedule.Schedule({
   selectedDate: new Date(2018, 1, 15),
   currentView: 'Month',
   views: ['Day', 'Week', 'WorkWeek', 'Month'],
-  moreEventsClick: (args) => {
+  moreEventsClick: function (args) {
     args.isPopupOpen = false;
   },
   eventSettings: { dataSource: scheduleData }

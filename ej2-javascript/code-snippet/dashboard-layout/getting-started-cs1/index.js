@@ -1,5 +1,5 @@
 // initialize Dashboard Layout control
-let dashboard = new ej.layouts.DashboardLayout({
+var dashboard = new ej.layouts.DashboardLayout({
     cellSpacing: [20, 20],
     columns: 3,
     panels: [

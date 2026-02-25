@@ -1,5 +1,5 @@
 // initialize DropDownList component
-let dropDownListObject = new ej.dropdowns.DropDownList({
+var dropDownListObject = new ej.dropdowns.DropDownList({
     placeholder:"Select Position",
     change: changed,
 });

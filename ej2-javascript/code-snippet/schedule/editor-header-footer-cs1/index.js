@@ -1,5 +1,5 @@
-const today = new Date();
-const data = [{
+var today = new Date();
+var data = [{
     Id: 1,
     Subject: 'Surgery - Andrew',
     StartTime: new Date(today.getFullYear(), today.getMonth(), today.getDate(), 9, 0),

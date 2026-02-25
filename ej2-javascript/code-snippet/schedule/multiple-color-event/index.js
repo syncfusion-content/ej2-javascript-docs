@@ -1,12 +1,15 @@
 function eventTemplate(data) {
-    return `
-      <div class='template-wrap'>
-        ${data.SubCount.map((item) => `
-          <div style='background:${item.background}; height:${item.height}'>
-            <div class="subject">${data.Subject}</div>
-          </div>
-        `).join('')}
-      </div>`;
+    return [
+      "<div class='template-wrap'>",
+        data.SubCount.map(function(item) {
+          return [
+            "<div style='background:" + item.background + "; height:" + item.height + "'>",
+              "<div class=\"subject\">" + data.Subject + "</div>",
+            "</div>"
+          ].join('');
+        }).join(''),
+      "</div>"
+    ].join('');
 }
 
 var data = [{

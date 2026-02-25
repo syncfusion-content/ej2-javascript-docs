@@ -15,7 +15,7 @@ var scheduleObj = new ej.schedule.Schedule({
             }
             var recurElement = args.element.querySelector('#RecurrenceEditor');
             if (!recurElement.classList.contains('e-recurrenceeditor')) {
-                let recurrObject = new ej.schedule.RecurrenceEditor({});
+                var recurrObject = new ej.schedule.RecurrenceEditor({});
                 recurrObject.appendTo(recurElement);
                 scheduleObj.eventWindow.recurrenceEditor = recurrObject;
             }

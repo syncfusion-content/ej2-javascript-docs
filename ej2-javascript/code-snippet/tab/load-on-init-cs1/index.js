@@ -30,7 +30,7 @@ var passWordObj = new ej.inputs.TextBox({
     floatLabelType: 'Auto',
 });
 passWordObj.appendTo('#password');
-let signButton = new ej.buttons.Button({
+var signButton = new ej.buttons.Button({
     content: 'Sign in',
     isPrimary: true,
 });
@@ -65,12 +65,11 @@ var submit = new ej.buttons.Button({
     isPrimary: true,
 });
 submit.appendTo('#submit');
-
-signButton.element.onclick = () => {
-    let userName = userNameObj.value;
-    let password = passWordObj.value;
+signButton.element.onclick = function () {
+    var userName = userNameObj.value;
+    var password = passWordObj.value;
     if (signInName) {
-        signInName.value = userName
+        signInName.value = userName;
     }
     if (!userName && !password) {
         window.alert('Enter both username and password');
@@ -83,10 +82,10 @@ signButton.element.onclick = () => {
     }
     tabObj.select(1);
 };
-skipButton.element.onclick = () => {
+skipButton.element.onclick = function () {
     tabObj.select(1);
 };
-submit.element.onclick = () => {
+submit.element.onclick = function () {
     userNameObj.value = passWordObj.value = signInName.value = '';
     tabObj.select(0);
-}
+};

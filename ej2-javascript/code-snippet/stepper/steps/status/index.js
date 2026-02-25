@@ -6,9 +6,9 @@ var iconWithLabel = [
 
 var stepper = new ej.navigations.Stepper({
   steps: iconWithLabel,
-  stepChanged: () => {
-    var status = stepper.steps[1].status
-    updateStatus(status)
+  stepChanged: function () {
+    var status = stepper.steps[1].status;
+    updateStatus(status);
   }
 });
 stepper.appendTo('#stepperStatus');
@@ -22,7 +22,8 @@ function updateStatus(stepStatus) {
 
   var currentStatus = document.getElementById("paymentStatus");
   if (currentStatus) {
-      var { text, color } = statusMap[stepStatus];
+      var text = statusMap[stepStatus].text;
+      var color = statusMap[stepStatus].color;
       currentStatus.innerText = text;
       currentStatus.style.backgroundColor = color;
   }

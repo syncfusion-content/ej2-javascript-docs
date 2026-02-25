@@ -22,7 +22,7 @@ function OnRecurrenceChange(args) {
     outputElement.innerText = 'Select Rule';
   } else {
     outputElement.innerHTML = '';
-    let dates = recObject.getRecurrenceDates(new Date(), args.value);
+    var dates = recObject.getRecurrenceDates(new Date(), args.value);
     for (var index = 0; index < dates.length; index++) {
       outputElement.appendChild(
         new ej.base.createElement('div', {

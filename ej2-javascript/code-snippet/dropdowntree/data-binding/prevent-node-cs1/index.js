@@ -1,6 +1,6 @@
 ej.base.enableRipple(true);
 
-let localData = [
+var localData = [
     { id: 1, name: 'Discover Music', hasChild: true, expanded: true, selectable: false },
     { id: 2, pid: 1, name: 'Hot Singles' },
     { id: 3, pid: 1, name: 'Rising Artists' },

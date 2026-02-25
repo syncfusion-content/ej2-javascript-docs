@@ -23,7 +23,7 @@ scheduleObj.appendTo('#Schedule');
 var edit = new ej.buttons.Button();
 edit.appendTo('#edit');
 edit.element.onclick = function () {
-    let data = {
+    var data = {
         Id: 1,
         Subject: 'Edited',
         StartTime: new Date(2018, 1, 11, 10, 0),

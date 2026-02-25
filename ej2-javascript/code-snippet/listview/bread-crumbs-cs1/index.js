@@ -277,8 +277,8 @@ backBtn.addEventListener("click", function () {
 // Calculate level for each header element
 function calculateLevelForElements() {
     var elements = document.querySelectorAll(".nested-header .header-content span");
-    let index = 0;
-    for (let i = elements.length - 1; i >= 0; i--) {
+    var index = 0;
+    for (var i = elements.length - 1; i >= 0; i--) {
         elements[index].level = i;
         index++;
     }
@@ -287,7 +287,7 @@ function calculateLevelForElements() {
 // Navigate back event handler based on element's level
 function navigateBack(event) {
     if (event.target && event.target.level) {
-        for (let i = 0; i <= event.target.level; i++) {
+        for (var i = 0; i <= event.target.level; i++) {
             backBtn.click();
         }
     }

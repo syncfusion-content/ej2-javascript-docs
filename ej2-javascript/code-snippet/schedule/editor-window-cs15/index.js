@@ -5,15 +5,15 @@ var scheduleObj = new ej.schedule.Schedule({
   currentView: 'Month',
   views: ['Day', 'Week', 'WorkWeek', 'Month'],
   eventSettings: { dataSource: scheduleData },
-  popupOpen: (args) => {
+  popupOpen: function (args) {
     if (args.type === 'Editor') {
       if (!args.element.querySelector('#closeEditor')) {
-        let btnElement = ej.base.createElement("BUTTON", { id: 'closeEditor', className: 'e-custom-close' });
+        var btnElement = ej.base.createElement("BUTTON", { id: 'closeEditor', className: 'e-custom-close' });
         args.element.querySelector('.e-footer-content').appendChild(btnElement)
-        let btnObj = new ej.buttons.Button();
+        var btnObj = new ej.buttons.Button();
         btnElement.textContent = "Close Editor";
         btnObj.appendTo('#closeEditor');
-        btnObj.element.onclick = () => {
+        btnObj.element.onclick = function () {
           scheduleObj.closeEditor();
         }
       }

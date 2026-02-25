@@ -1,5 +1,5 @@
 // initialize Dashboard Layout control
-let dashboard = new ej.layouts.DashboardLayout({
+var dashboard = new ej.layouts.DashboardLayout({
     cellSpacing: [10, 10],
     columns: 6,
     panels: [{ 'id': 'Panel1', 'sizeX': 3, 'sizeY': 2, 'row': 0, 'col': 0, header: '<div class="header"> Product usage ratio </div>', content: '<div id="pie"><div>' },
@@ -11,7 +11,7 @@ let dashboard = new ej.layouts.DashboardLayout({
 // render initialized Dashboard Layout
 dashboard.appendTo('#dashboard_default');
 
-let chartData = [
+var chartData = [
     { month: 'Jan', sales: 35 }, { month: 'Feb', sales: 28 },
     { month: 'Mar', sales: 34 }, { month: 'Apr', sales: 32 },
     { month: 'May', sales: 40 }, { month: 'Jun', sales: 32 },
@@ -19,7 +19,7 @@ let chartData = [
     { month: 'Sep', sales: 38 }, { month: 'Oct', sales: 30 },
     { month: 'Nov', sales: 25 }, { month: 'Dec', sales: 32 }
 ];
-let chart = new ej.charts.Chart({
+var chart = new ej.charts.Chart({
     primaryXAxis: {
         valueType: 'Category'
     },
@@ -32,11 +32,11 @@ let chart = new ej.charts.Chart({
     height: "162px"
 }, '#column');
 
-let lineData = [
+var lineData = [
     { x: 2013, y: 28 }, { x: 2014, y: 25 }, { x: 2015, y: 26 }, { x: 2016, y: 27 },
     { x: 2017, y: 32 }, { x: 2018, y: 35 },
 ];
-let linechart = new ej.charts.Chart({
+var linechart = new ej.charts.Chart({
     series: [{
         dataSource: lineData,
         xName: 'x', yName: 'y',
@@ -46,7 +46,7 @@ let linechart = new ej.charts.Chart({
     height: "162px"
 }, '#line');
 
-let accChart = new ej.charts.AccumulationChart({
+var accChart = new ej.charts.AccumulationChart({
     series: [
         {
             dataSource: [{ x: 'TypeScript', y: 13, text: 'TS 13%' }, { x: 'React', y: 12.5, text: 'Reat 12.5%' }, { x: 'MVC', y: 12, text: 'MVC 12%' }, { x: 'Core', y: 12.5, text: 'Core 12.5%' }, { x: 'Vue', y: 10, text: 'Vue 10%' }, { x: 'Angular', y: 40, text: 'Angular 40%' }],
@@ -58,7 +58,7 @@ let accChart = new ej.charts.AccumulationChart({
     height: "162px"
 }, '#pie');
 
-let piechart = new ej.charts.AccumulationChart({
+var piechart = new ej.charts.AccumulationChart({
     // Initialize the chart series
     series: [
         {

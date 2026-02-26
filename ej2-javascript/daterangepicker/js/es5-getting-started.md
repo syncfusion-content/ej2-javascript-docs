@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Es5 getting started with ##Platform_Name## Daterangepicker control | Syncfusion
-description:  Checkout and learn about Es5 getting started with ##Platform_Name## Daterangepicker control of Syncfusion Essential JS 2 and more details.
+title: Es5 getting started with JavaScript Date Range Picker | Syncfusion
+description: Checkout and learn about Es5 getting started with JavaScript Date Range Picker control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Es5 getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Es5 getting started in ##Platform_Name## Daterangepicker control
+# Es5 getting started in JavaScript Date Range Picker Control
 
 The Essential JS 2 for JavaScript (global script) is an ES5 formatted pure JavaScript framework which can be directly used in latest web browsers.
 

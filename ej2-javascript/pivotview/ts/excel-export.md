@@ -166,25 +166,6 @@ Row headers can be excluded from the exported Excel file when only values and co
 
 {% previewsample "page.domainurl/code-snippet/pivot-table/excel-export-cs34" %}
 
-## Exclude hidden columns during export
-
-By default, all columns in the Pivot Table, including hidden ones, are exported. To exclude hidden columns, set the `includeHiddenColumn` property to **false** in `excelExportProperties`.
-
-To hide a column, use the [`columnRender`](https://ej2.syncfusion.com/documentation/api/pivotview/gridSettingsModel#columnrender) event in [`gridSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#gridsettings) to set the `visible` property of the target column to **false**. For more information, see the [Hide Specific Columns in Pivot Table](https://ej2.syncfusion.com/documentation/pivotview/how-to/hide-specific-columns-in-pivot-table) documentation.
-
-After hiding the columns, set `includeHiddenColumn` to **false** in `excelExportProperties` to exclude them from the exported file. The exported file will then match the column structure shown in the Pivot Table UI.
-
-{% tabs %}
-{% highlight ts tabtitle="index.js" %}
-{% include code-snippet/pivot-table/excel-export-cs35/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/excel-export-cs35/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/pivot-table/excel-export-cs35" %}
-
 ## Rotate cell text during export
 
 The style of each cell in the exported file can be customized, including rotating text, changing background colors, and applying other visual modifications. This approach is useful for creating visually distinct Pivot Table and for fitting text within limited space.

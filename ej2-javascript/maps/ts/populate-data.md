@@ -29,7 +29,7 @@ GeoJSON data contains geometry objects with properties such as geometry types an
 
 ## Shape data
 
-The shape data collection describes geographical shape information that can be obtained from [GEOJSON format shapes](http://files2.syncfusion.com/dtsupport/uploads/user/uploads/Maps_GeoJSON.zip). The Map shapes are rendered with this data. The custom shapes such as seat selection in bus, seat selection in a cricket stadium and more useful information can be also added to the geographical data.
+The shape data collection describes geographical shape information that can be obtained from [GEOJSON format shapes](https://files2.syncfusion.com/dtsupport/uploads/user/uploads/Maps_GeoJSON.zip). The Map shapes are rendered with this data. The custom shapes such as seat selection in bus, seat selection in a cricket stadium and more useful information can be also added to the geographical data.
 
 ```ts
 export let usMap = //Paste all the content copied from the JSON file.

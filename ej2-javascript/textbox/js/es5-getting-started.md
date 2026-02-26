@@ -25,7 +25,7 @@ The following list of dependencies are required to use the TextBox component in 
 
 ## Installation and configuration
 
-* Clone the Essential JS 2 quickstart application project from [GitHub](https://github.com/syncfusion/ej2-quickstart.git) and install necessary npm packages using the following command.
+* Clone the Essential JS 2 quickstart application project from [GitHub](https://github.com/syncfusion/ej2-quickstart) and install necessary npm packages using the following command.
 
 ```
 git clone https://github.com/syncfusion/ej2-quickstart.git quickstart

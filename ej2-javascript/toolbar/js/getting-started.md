@@ -24,7 +24,7 @@ The Essential JS 2 JavaScript components can be initialized by using either of t
 
 **Step 1:** Create an app folder `myapp` for Essential JS 2 JavaScript components.
 
-**Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build installed location.
+**Step 2:** You can get the global scripts and styles from the [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/account/manage-trials/downloads) build installed location.
 
 **Syntax:**
 > Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
@@ -69,7 +69,7 @@ The Essential JS 2 JavaScript components can be initialized by using either of t
 
 ## Initialize the Toolbar with commands
 
-The Toolbar can be rendered by defining an array of [`items`](../api/toolbar#items). An item is rendered with text by defining the default item type as a `Button`. For more information about item configuration, refer to the [Item Configuration](./item-configuration/) section.
+The Toolbar can be rendered by defining an array of [`items`](../api/toolbar#items). An item is rendered with text by defining the default item type as a `Button`. For more information about item configuration, refer to the [Item Configuration](https://ej2.syncfusion.com/documentation/toolbar/item-configuration) section.
 
 ```html
 <!DOCTYPE html>

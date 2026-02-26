@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Disabled the datepicker component in ##Platform_Name## Datepicker control
 
-To disable the DatePicker, use its [`enable`](../../api/datepicker#enabled) property.
+To disable the DatePicker, use its [`enable`](../../api/datepicker/#enabled) property.
 
 The following example demonstrates the DatePicker in a disabled state.
 

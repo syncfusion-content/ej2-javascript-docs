@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Globalization in ##Platform_Name## Timepicker control
 
-Globalization is the combination of internalization and localization. You can adapt the component to various languages by parsing and formatting the date or number [`internationalization`](../common/internationalization/), and also add culture specific customization and translation to the text [`localization`](../common/localization/).
+Globalization is the combination of internalization and localization. You can adapt the component to various languages by parsing and formatting the date or number [`internationalization`](../common/internationalization), and also add culture specific customization and translation to the text [`localization`](../common/localization).
 
-By default, the time format and meridian names are specific to the `American English` culture. It utilizes the [`Essential JavaScript 2 Internationalization`](../common/internationalization/) package to parse and format the date object based on the culture by using the official [`UNICODE CLDR`](http://cldr.unicode.org/) JSON data. It provides the `loadCldr` method to load culture specific CLDR JSON data. To use a different culture other than `English`, follow the steps below:
+By default, the time format and meridian names are specific to the `American English` culture. It utilizes the [`Essential JavaScript 2 Internationalization`](../common/internationalization) package to parse and format the date object based on the culture by using the official [`UNICODE CLDR`](https://cldr.unicode.org/) JSON data. It provides the `loadCldr` method to load culture specific CLDR JSON data. To use a different culture other than `English`, follow the steps below:
 
 * Install the `CLDR-Data` package by using the following command (installs all the CLDR JSON data). To know more about CLDR-Data refer to the [`CLDR-Data`](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings) link.
 
@@ -103,7 +103,7 @@ L10n.load({
 
  ```
 
-* Set the culture by using the [`locale`](../api/timepicker#locale) property. In the following code example, the TimePicker component is initialized in `German` culture with corresponding localized text.
+* Set the culture by using the [`locale`](../api/timepicker/#locale) property. In the following code example, the TimePicker component is initialized in `German` culture with corresponding localized text.
 
 ```ts
 
@@ -170,9 +170,9 @@ The following example demonstrates the TimePicker in `German` culture.
 
 ## Right-To-Left
 
-The TimePicker supports RTL (right-to-left) functionality for languages like Arabic and Hebrew to displays the text in the right-to-left direction. Use [`enableRtl`](../api/timepicker#enablertl) property to set the RTL direction.
+The TimePicker supports RTL (right-to-left) functionality for languages like Arabic and Hebrew to displays the text in the right-to-left direction. Use [`enableRtl`](../api/timepicker/#enablertl) property to set the RTL direction.
 
-The code example demonstrates the TimePicker component in `Arabic` culture. It also explains how to set localized text to the placeholder using [`L10n.load`](../api/base/l10n#load) method.
+The code example demonstrates the TimePicker component in `Arabic` culture. It also explains how to set localized text to the placeholder using [`L10n.load`](../api/base/l10n/#load) method.
 
  ```ts
 

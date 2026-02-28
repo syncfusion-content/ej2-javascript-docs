@@ -19,7 +19,7 @@ This section walks you through creating a **Linear Gauge** component and configu
 
 The following lists the minimum dependencies required to use the Linear Gauge:
 
-```javascript
+```
 |-- @syncfusion/ej2-lineargauge
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-pdf-export

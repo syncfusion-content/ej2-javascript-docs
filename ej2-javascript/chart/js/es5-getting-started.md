@@ -273,7 +273,7 @@ You can enable the legend for the chart by setting the [`visible`](../api/chart/
 
 ## Add data label
 
-You can add data labels to improve the readability of the chart. This can be achieved by setting the [`visible`](../api/chart/datalabelsettingsmodel#visible) property to `true` in the [`dataLabel`](../api/chart/markersetingsmodel#datalabel) object. Now, the data labels are arranged smartly based on the series.
+You can add data labels to improve the readability of the chart. This can be achieved by setting the [`visible`](../api/chart/datalabelsettingsmodel#visible) property to `true` in the [`dataLabel`](../api/chart/markersettingsmodel#datalabel) object. Now, the data labels are arranged smartly based on the series.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

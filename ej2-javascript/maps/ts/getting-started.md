@@ -226,8 +226,8 @@ export let world_map: object = {
 
 The Maps component renders geographic features through **layers**. Each layer can display different geographic data. To render shapes:
 
-1. Add a layer to the [`layers`](../api/maps/layers) collection
-2. Bind your GeoJSON data to the [`shapeData`](../api/maps/layerSettingsModel/shapedata) property
+1. Add a layer to the [`layers`](../api/maps/index-default#layers) collection
+2. Bind your GeoJSON data to the [`shapeData`](../api/maps/layersettingsmodel#shapedata) property
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -250,9 +250,9 @@ The following properties in layers are used for binding a data source to the map
 * `shapeDataPath`
 * `shapePropertyPath`
 
-The [`dataSource`](../api/maps/layerSettingsModel/datasource) property takes a collection value as input. For example, a list of objects can be provided as input. This data is further used in tooltips, data labels, bubbles, legends, and color mapping.
+The [`dataSource`](../api/maps/layersettingsmodel#datasource) property takes a collection value as input. For example, a list of objects can be provided as input. This data is further used in tooltips, data labels, bubbles, legends, and color mapping.
 
-The [`shapeDataPath`](../api/maps/layerSettingsModel/shapedatapath) property is used to refer to the data ID in the dataSource. The [`shapePropertyPath`](../api/maps/layerSettingsModel/shapepropertypath) property is used to refer to the column name in shapeData to identify the shape. Both properties are related to each other. When the values of the shapeDataPath property in the dataSource and the value of shapePropertyPath in the shapeData match, the associated object from the dataSource is bound to the corresponding shape.
+The [`shapeDataPath`](../api/maps/layersettingsmodel#shapedatapath) property is used to refer to the data ID in the dataSource. The [`shapePropertyPath`](../api/maps/layerSettingsModel#shapepropertypath) property is used to refer to the column name in shapeData to identify the shape. Both properties are related to each other. When the values of the shapeDataPath property in the dataSource and the value of shapePropertyPath in the shapeData match, the associated object from the dataSource is bound to the corresponding shape.
 
 The JSON object "electionData" is used as a data source below.
 
@@ -271,9 +271,9 @@ The JSON object "electionData" is used as a data source below.
 
 ## Apply Color Mapping
 
-Color mapping customizes shape colors based on data values. Specify the data field to evaluate using the [`colorValuePath`](../api/maps/shapeSettingsModel/colorvaluepath) property in [`shapeSettings`](../api/maps/shapeSettingsModel). Then define color assignments in the [`colorMapping`](../api/maps/shapeSettingsModel/colormapping) property.
+Color mapping customizes shape colors based on data values. Specify the data field to evaluate using the [`colorValuePath`](../api/maps/shapeSettingsModel#colorvaluepath) property in [`shapeSettings`](../api/maps#shapeSettingsModel). Then define color assignments in the [`colorMapping`](../api/maps/shapeSettingsModel#colormapping) property.
 
-Specify the color and value in the [`colorMapping`](../api/maps/shapeSettingsModel/colormapping) property. Here, '#D84444' is specified for 'Trump' and '#316DB5' is specified for 'Clinton'.
+Specify the color and value in the [`colorMapping`](../api/maps/shapeSettingsModel#colormapping) property. Here, '#D84444' is specified for 'Trump' and '#316DB5' is specified for 'Clinton'.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -313,7 +313,7 @@ Titles provide context about the map content. Use the [`titleSettings`](../api/m
 
 ## Enable Legend
 
-Legends identify shape categories and colors. Enable the legend by setting the [`visible`](../api/maps/legendSettingsModel/visible) property to `true` in the [`legendSettings`](../api/maps/legendSettingsModel) object, and inject the `Legend` module:
+Legends identify shape categories and colors. Enable the legend by setting the [`visible`](../api/maps/legendSettingsModel#visible) property to `true` in the [`legendSettings`](../api/maps/legendSettingsModel) object, and inject the `Legend` module:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -328,7 +328,7 @@ Legends identify shape categories and colors. Enable the legend by setting the [
 
 ## Add Data Label
 
-Data labels display additional information directly on shapes. Enable data labels by setting the [`visible`](../api/maps/dataLabelSettingsModel/visible) property to `true` in the [`dataLabelSettings`](../api/maps/dataLabelSettingsModel) object, and inject the `DataLabel` module:
+Data labels display additional information directly on shapes. Enable data labels by setting the [`visible`](../api/maps/dataLabelSettingsModel#visible) property to `true` in the [`dataLabelSettings`](../api/maps/dataLabelSettingsModel) object, and inject the `DataLabel` module:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -343,7 +343,7 @@ Data labels display additional information directly on shapes. Enable data label
 
 ## Enable Tooltip
 
-Tooltips display information on hover and are useful when space constraints prevent using data labels. Enable tooltips by setting the [`visible`](../api/maps/tooltipSettingsModel/visible) property to `true` in the [`tooltipSettings`](../api/maps/tooltipSettingsModel) object, and inject the `MapsTooltip` module:
+Tooltips display information on hover and are useful when space constraints prevent using data labels. Enable tooltips by setting the [`visible`](../api/maps/tooltipSettingsModel#visible) property to `true` in the [`tooltipSettings`](../api/maps/tooltipSettingsModel) object, and inject the `MapsTooltip` module:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

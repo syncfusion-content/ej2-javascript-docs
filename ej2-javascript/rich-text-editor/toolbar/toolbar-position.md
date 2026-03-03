@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Toolbar position in ##Platform_Name## Rich text editor control | Syncfusion
+title: Toolbar position in ##Platform_Name## Rich text editor | Syncfusion
 description: Learn here all about Toolbar position in Syncfusion ##Platform_Name## Rich text editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Toolbar position
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Toolbar position in ##Platform_Name## Rich Text Editor control
 
-The Rich Text Editor allows you to configure the toolbar's position using the [position](../api/rich-text-editor/toolbarPosition/#toolbarposition) field in the [toolbarSettings](../api/rich-text-editor/toolbarSettings/#toolbarsettings) property. The available positions are:
+The Rich Text Editor allows you to configure the toolbar's position using the [position](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarPosition#toolbarposition) field in the [toolbarSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarSettings#toolbarsettings) property. The available positions are:
 
 1. Top 
 2. Bottom
@@ -22,7 +22,7 @@ The Rich Text Editor allows you to position the toolbar at the top or bottom of 
 
 By default, the toolbar is displayed at the top of the editor, making all formatting and editing tools immediately accessible above the content.
 
-To position the toolbar at the bottom, use the [position](../api/rich-text-editor/toolbarPosition/#toolbarposition) property in the [`toolbarSettings`](../api/rich-text-editor/toolbarPosition/#toolbarposition) configuration and set its value to `Bottom`. This places the toolbar below the content area, which can help maintain a cleaner top layout and improve accessibility in certain use cases.
+To position the toolbar at the bottom, use the [position](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarPosition#toolbarposition) property in the [`toolbarSettings`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarPosition#toolbarposition) configuration and set its value to `Bottom`. This places the toolbar below the content area, which can help maintain a cleaner top layout and improve accessibility in certain use cases.
 
 {% if page.publishingplatform == "typescript" %}
 

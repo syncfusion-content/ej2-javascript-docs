@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard support in ##Platform_Name## Rich text editor control | Syncfusion
+title: Keyboard support in ##Platform_Name## Rich text editor | Syncfusion
 description: Learn here all about Keyboard support in Syncfusion ##Platform_Name## Rich text editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Keyboard support 
@@ -15,7 +15,7 @@ The editor has full keyboard accessibility that includes shortcuts to open and o
 
 ## HTML editor shortcut keys
 
-You can use the following keyboard shortcuts when the Rich Text Editor is set to [editorMode](https://ej2.syncfusion.com/documentation/api/rich-text-editor/#editormode) as `HTML`.
+You can use the following keyboard shortcuts when the Rich Text Editor is set to [editorMode](https://ej2.syncfusion.com/documentation/api/rich-text-editor#editormode) as `HTML`.
 
 ### Toolbar
 
@@ -46,7 +46,7 @@ These keyboard shortcuts allow for quick access to content editing features like
 | Copy format painter | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd> | <kbd>⌥</kbd> + <kbd>⌘</kbd> + <kbd>C</kbd> |
 | Paste format painter | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd> |  <kbd>⌥</kbd> + <kbd>⌘</kbd> + <kbd>V</kbd> |
 | Clear the copy format painter | <kbd>Esc</kbd> | <kbd>Esc</kbd> |
-| Insert tab space (when [enableTabKey](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#enabletabkey) is enabled) | <kbd>Tab</kbd> | <kbd>Tab</kbd> |
+| Insert tab space (when [enableTabKey](https://helpej2.syncfusion.com/documentation/api/rich-text-editor#enabletabkey) is enabled) | <kbd>Tab</kbd> | <kbd>Tab</kbd> |
 
 ### Inserting
 
@@ -163,7 +163,7 @@ These miscellaneous shortcuts help with actions like toggling fullscreen, cleari
 
 ## Custom key config
 
-Customize the key config for the keyboard interaction of Rich Text Editor, using the [`keyConfig`](../api/rich-text-editor/#keyconfig) property.
+Customize the key config for the keyboard interaction of Rich Text Editor, using the [`keyConfig`](https://ej2.syncfusion.com/documentation/api/rich-text-editor#keyconfig) property.
 
 In the below sample, you have customize the bold, italic, underline toolbar action with `ctrl+alt+b`, `ctrl+alt+i` and `ctrl+alt+u` respectively.
 

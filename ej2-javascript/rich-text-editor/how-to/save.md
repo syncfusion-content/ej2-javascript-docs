@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Save in ##Platform_Name## Rich text editor control | Syncfusion
+title: Save in ##Platform_Name## Rich text editor | Syncfusion
 description: Learn here all about Save in Syncfusion ##Platform_Name## Rich text editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Save 
@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 # Save in ##Platform_Name## Rich text editor control
 
 To achieve this, we need to bind the `keydown` event to the Rich Text Editor content and capture the `ctrl + s` key press using its keyCode.
-In the `keydown` event handler, the `updateValue` method is called to update the [`value`](../../api/rich-text-editor/#value) property and then we can save the content in the required database using the same.
+In the `keydown` event handler, the `updateValue` method is called to update the [`value`](https://ej2.syncfusion.com/documentation/api/rich-text-editor#value) property and then we can save the content in the required database using the same.
 
 {% if page.publishingplatform == "typescript" %}
 

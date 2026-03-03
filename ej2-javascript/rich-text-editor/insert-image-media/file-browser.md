@@ -48,7 +48,7 @@ Map the above packages style and script reference in sample as like below
 The following example explains about how to configure the file browser within the Rich Text Editor component.
 
 * Configure the `FileManager` toolbar item in the `toolbarSettings` API `items` property.
-* Set [`enable`](../api/rich-text-editor/fileManagerSettings/#enable) property as `true` on [`fileManagerSettings`](../api/rich-text-editor/#fileManagerSettings) property to make the file browser in the Rich Text Editor to appear on the `FileManager` toolbar click action.
+* Set [`enable`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/fileManagerSettings#enable) property as `true` on [`fileManagerSettings`](https://ej2.syncfusion.com/documentation/api/rich-text-editor#fileManagerSettings) property to make the file browser in the Rich Text Editor to appear on the `FileManager` toolbar click action.
 
 {% if page.publishingplatform == "typescript" %}
 

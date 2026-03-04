@@ -13,9 +13,9 @@ domainurl: ##DomainURL##
 
 The Syncfusion ##Platform_Name## Rich Text Editor provides a powerful toolbar that enables users to format, style, and edit content efficiently. The toolbar includes essential editing tools such as bold, italic, underline, alignment, and lists, along with customization options to suit different use cases.
 
-> To create Rich Text Editor with Toolbar feature, inject the [Toolbar](../api/rich-text-editor/toolbarSettings/) module to the Rich Text Editor using the `RichTextEditor.Inject(Toolbar)` method.
+> To create Rich Text Editor with Toolbar feature, inject the [Toolbar](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarSettings) module to the Rich Text Editor using the `RichTextEditor.Inject(Toolbar)` method.
 
-The Rich Text Editor allows you to configure different types of toolbar using [type](../api/rich-text-editor/toolbarType/#toolbartype) field in [toolbarSettings](../api/rich-text-editor/toolbarSettings/#toolbarsettings) property. The types of toolbar are:
+The Rich Text Editor allows you to configure different types of toolbar using [type](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarType#toolbartype) field in [toolbarSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarSettings#toolbarsettings) property. The types of toolbar are:
 
 1. Expand 
 2. MultiRow
@@ -24,7 +24,7 @@ The Rich Text Editor allows you to configure different types of toolbar using [t
 
 ## Expanding the toolbar
 
-The default mode of the toolbar is `Expand`, configured through [`toolbarSettings`](../api/rich-text-editor/toolbarType/#toolbartype) with `type: 'Expand'`. This mode hides any overflowing toolbar items in the next row, which can viewed by clicking the expand arrow.
+The default mode of the toolbar is `Expand`, configured through [`toolbarSettings`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarType#toolbartype) with `type: 'Expand'`. This mode hides any overflowing toolbar items in the next row, which can viewed by clicking the expand arrow.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -55,7 +55,7 @@ The default mode of the toolbar is `Expand`, configured through [`toolbarSetting
 
 ## Configuring a multi-row toolbar
 
-Setting the `type` as `MultiRow` in [toolbarSettings](../api/rich-text-editor/toolbarSettings/#toolbarsettings) will arrange the toolbar items across multiple rows, displaying all configured toolbar items.
+Setting the `type` as `MultiRow` in [toolbarSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarSettings#toolbarsettings) will arrange the toolbar items across multiple rows, displaying all configured toolbar items.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -86,7 +86,7 @@ Setting the `type` as `MultiRow` in [toolbarSettings](../api/rich-text-editor/to
 
 ## Implementing a scrollable toolbar
 
-Setting the `type` to `Scrollable` in [toolbarSettings](../api/rich-text-editor/toolbarSettings/#toolbarsettings) will display the toolbar items in a single line, enabling horizontal scrolling in the toolbar.
+Setting the `type` to `Scrollable` in [toolbarSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarSettings#toolbarsettings) will display the toolbar items in a single line, enabling horizontal scrolling in the toolbar.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -117,7 +117,7 @@ Setting the `type` to `Scrollable` in [toolbarSettings](../api/rich-text-editor/
 
 ## Configuring a popup toolbar
 
-Setting the `type` to `Popup` in [toolbarSettings](../api/rich-text-editor/toolbarSettings/#toolbarsettings) will display overflowing toolbar items into a popup container, optimizing the toolbar layout for limited space and smaller screens.
+Setting the `type` to `Popup` in [toolbarSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarSettings#toolbarsettings) will display overflowing toolbar items into a popup container, optimizing the toolbar layout for limited space and smaller screens.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -148,9 +148,9 @@ Setting the `type` to `Popup` in [toolbarSettings](../api/rich-text-editor/toolb
 
 ## Creating a sticky toolbar
 
-By default, the toolbar remains fixed at the top of the Rich Text Editor when scrolling. You can customize the position of this sticky toolbar by setting the [floatingToolbarOffset](../api/rich-text-editor/#floatingtoolbaroffset) to adjust its offset from the top of the document.
+By default, the toolbar remains fixed at the top of the Rich Text Editor when scrolling. You can customize the position of this sticky toolbar by setting the [floatingToolbarOffset](https://ej2.syncfusion.com/documentation/api/rich-text-editor#floatingtoolbaroffset) to adjust its offset from the top of the document.
 
-Additionally, you can enable or disable the floating toolbar using the [enableFloating](../api/rich-text-editor/toolbarSettings/#enablefloating) property.
+Additionally, you can enable or disable the floating toolbar using the [enableFloating](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarSettings#enablefloating) property.
 
 {% if page.publishingplatform == "typescript" %}
 

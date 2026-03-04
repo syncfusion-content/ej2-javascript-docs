@@ -20,9 +20,9 @@ The Rich Text Editor component used to create, edit and return the content in va
 
 Rich Text Editor is a WYSIWYG editing control for formatting the word content as HTML.
 
-The HTML editing mode is the default mode of Rich Text Editor. Which is used for format the content through the available toolbar items and returns the valid HTML markup. Set the [editorMode](./api/rich-text-editor/#editormode) property as `HTML`.
+The HTML editing mode is the default mode of Rich Text Editor. Which is used for format the content through the available toolbar items and returns the valid HTML markup. Set the [editorMode](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#editormode) property as `HTML`.
 
-> To create Rich Text Editor with HTML editing feature, inject the [htmleditor](../api/rich-text-editor/#htmleditor) module to the Rich Text Editor using the `RichTextEditor.Inject(HtmlEditor)` method.
+> To create Rich Text Editor with HTML editing feature, inject the `HtmlEditor` module to the Rich Text Editor using the `RichTextEditor.Inject(HtmlEditor)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -59,7 +59,7 @@ For more details, refer to the [Iframe Editor](./iframe) documentation.
 
 ## Markdown editor
 
-Set the [editorMode](../api/rich-text-editor/#editormode) property value as `Markdown` to create or edit the content and apply formatting to view markdown formatted content.
+Set the [editorMode](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#editormode) property value as `Markdown` to create or edit the content and apply formatting to view markdown formatted content.
 
 The third-party library such as `Marked` or any other library is used to convert markdown into HTML content.
 
@@ -67,7 +67,7 @@ The third-party library such as `Marked` or any other library is used to convert
 * The Supported Selection Tags are `Bold`, `Italic`, `StrikeThrough`, `InlineCode`, `SubScript`, `SuperScript`, `UpperCase`, `LowerCase`.
 * The supported insert commands are `Image`, `Link` and `Table`.
 
-> To create Rich Text Editor with Markdown editing feature, inject the [MarkdownEditor](../api/rich-text-editor/#markdowneditor) module to the Rich Text Editor using the `RichTextEditor.Inject(MarkdownEditor)` method.
+> To create Rich Text Editor with Markdown editing feature, inject the `MarkdownEditor` module to the Rich Text Editor using the `RichTextEditor.Inject(MarkdownEditor)` method.
 
 {% if page.publishingplatform == "typescript" %}
 

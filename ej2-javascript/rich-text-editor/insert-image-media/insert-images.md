@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Images in ##Platform_Name## Rich text editor control
 
-Rich Text Editor allows to insert images in your content from online sources as well as local computer. For inserting an image to the Rich Text Editor, the following list of options have been provided in the [insertImageSettings](../api/rich-text-editor/imageSettings#imagesettings)
+Rich Text Editor allows to insert images in your content from online sources as well as local computer. For inserting an image to the Rich Text Editor, the following list of options have been provided in the [insertImageSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/imageSettings#imagesettings)
 
 ## Configuring image tool in the toolbar
 

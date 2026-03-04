@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Format code block in ##Platform_Name## Rich text editor control | Syncfusion
+title: Format code block in ##Platform_Name## Rich text editor | Syncfusion
 description: Learn here all about Format code block in Syncfusion ##Platform_Name## Rich text editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Format code block 
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Format code block in ##Platform_Name## Rich text editor control
 
-You can configure code block formatting as a separate toolbar button by adding the **InsertCode** keyword within the [toolbarSettings](./../../api/rich-text-editor/toolbarSettings/#toolbarsettings) items property.
+You can configure code block formatting as a separate toolbar button by adding the **InsertCode** keyword within the [toolbarSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarSettings#toolbarsettings) items property.
 
 The InsertCode button has a toggle state to apply code block formatting to the editor and remove code block formatting from the editor.
 

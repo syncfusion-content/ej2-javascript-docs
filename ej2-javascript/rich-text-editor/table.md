@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Table in ##Platform_Name## Rich Text Editor control
 
-Rich Text Editor allows to insert table of content in edit panel and provides an options to add, edit and remove the table as well as perform other table related action. For inserting the table to the Rich Text Editor, the following list of options have been provided in the [tableSettings](../api/rich-text-editor/tableSettings/#tablesettings)
+Rich Text Editor allows to insert table of content in edit panel and provides an options to add, edit and remove the table as well as perform other table related action. For inserting the table to the Rich Text Editor, the following list of options have been provided in the [tableSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/tableSettings#tablesettings)
 
 ## Configuring the table tool in toolbar
 
-You can add an `CreateTable` tool in the Rich Text Editor toolbar using the `toolbarSettings` [items](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/toolbarSettingsModel/#items) property.
+You can add an `CreateTable` tool in the Rich Text Editor toolbar using the `toolbarSettings` [items](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/toolbarSettingsModel#items) property.
 
 Select the number of rows and columns on the table grid to insert the table.
 
@@ -165,7 +165,7 @@ By Default, provides Dashed border and Alternate rows.
 
 ## Setting table and cell dimensions
 
-Sets the default width of the table when it is inserted in the Rich Text Editor using the width of [tableSettings](../api/rich-text-editor/tableSettings/#tablesettings).
+Sets the default width of the table when it is inserted in the Rich Text Editor using the width of [tableSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/tableSettings#tablesettings).
 
 Users can modify the table width, cell padding, cell spacing, background color, border color, border style, and border width through the `TableEditProperties` option in the quick toolbar. By default, the border style is double and the border width is 1px. When users change these values in the dialog, the updates are instantly reflected in the editor as a live preview.
 
@@ -247,7 +247,7 @@ Users can select multiple table cells by dragging the mouse or by holding the <k
 
 The Rich Text Editor allows users to modify table appearance by merging or splitting cells.
 
-Configure the `TableCell` item in the Table [quickToolbarSettings](../api/rich-text-editor/quickToolbarSettings/#table) property to display merge/split icons when selecting table cells.
+Configure the `TableCell` item in the Table [quickToolbarSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/quickToolbarSettings#table) property to display merge/split icons when selecting table cells.
 
 ### Merging table cells
 

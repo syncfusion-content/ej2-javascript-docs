@@ -1,6 +1,6 @@
 ---
 layout: post
-title: IFrame Editing Mode  in ##Platform_Name## Rich text editor control | Syncfusion
+title: IFrame Editing Mode  in ##Platform_Name## Rich text editor | Syncfusion
 description: Learn here all about IFrame Editing Mode  in Syncfusion ##Platform_Name## Rich text editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: IFrame Editing Mode  
@@ -15,7 +15,7 @@ The iframe editor in the Rich Text Editor control provides an isolated environme
 
 ## Configuring the Iframe editor
 
-To enable the iframe editor, you can use the [iframeSettings](../api/rich-text-editor/#iframesettings) property. When this option is enabled, the Rich Text Editor creates an iframe element as the content area during initialization.
+To enable the iframe editor, you can use the [iframeSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#iframesettings) property. When this option is enabled, the Rich Text Editor creates an iframe element as the content area during initialization.
 
 Here's an example of how to enable the iframe editor:
 
@@ -48,7 +48,7 @@ Here's an example of how to enable the iframe editor:
 
 ## Customizing IFrame attributes
 
-You can add custom attributes to the body tag of the iframe using the attributes field of the [iframeSettings](../api/rich-text-editor/#iframesettings) property. This property accepts name/value pairs in string format, enabling you to override the default appearance of the content area.
+You can add custom attributes to the body tag of the iframe using the attributes field of the [iframeSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#iframesettings) property. This property accepts name/value pairs in string format, enabling you to override the default appearance of the content area.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -79,9 +79,9 @@ You can add custom attributes to the body tag of the iframe using the attributes
 
 ## Integrating external CSS and scripts
 
-The Rich Text Editor allows you to apply an external CSS file to style the iframe element. This can be done using the [styles](../api/rich-text-editor/resources/#styles) field in the iframeSettings property. By including an external CSS file, you can easily change the appearance of the editor’s content to meet your specific requirements.
+The Rich Text Editor allows you to apply an external CSS file to style the iframe element. This can be done using the [styles](https://ej2.syncfusion.com/documentation/api/rich-text-editor/resources#styles) field in the iframeSettings property. By including an external CSS file, you can easily change the appearance of the editor’s content to meet your specific requirements.
 
-Likewise, add the external script file to the `< iframe >` element using the [scripts](../api/rich-text-editor/resources/#scripts) field of iframeSettings to provide the additional functionalities to the RichTextEditor.
+Likewise, add the external script file to the `< iframe >` element using the [scripts](https://ej2.syncfusion.com/documentation/api/rich-text-editor/resources#scripts) field of iframeSettings to provide the additional functionalities to the RichTextEditor.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -110,11 +110,11 @@ Likewise, add the external script file to the `< iframe >` element using the [sc
 {% previewsample "page.domainurl/code-snippet/rich-text-editor/iframe-cs3" %}
 {% endif %}
 
-> You can also explore our [iframe in Javascript Rich Text Editor example](https://ej2.syncfusion.com/demos/#/bootstrap5/rich-text-editor/iframe.html) that shows how to render the iframe in Javascript Rich Text Editor.
+> You can also explore our [iframe in JavaScript Rich Text Editor example](https://ej2.syncfusion.com/demos/#/bootstrap5/rich-text-editor/iframe.html) that shows how to render the iframe in JavaScript Rich Text Editor.
 
 ## Integrating Mention with Iframe
 
-Rich Text Editor supports advanced features such as Mention control, even when it is rendered inside an iframe. To enable mention functionality within the iframe-mode Rich Text Editor, you need to correctly set the [target](https://ej2.syncfusion.com/documentation/api/mention/#target) of the Mention control.
+Rich Text Editor supports advanced features such as Mention control, even when it is rendered inside an iframe. To enable mention functionality within the iframe-mode Rich Text Editor, you need to correctly set the [target](https://ej2.syncfusion.com/documentation/api/mention#target) of the Mention control.
 
 Specifically, assign the `inputElement` of the Rich Text Editor to the target property of the Mention control. This ensures that the Mention popup is triggered correctly when the user types a designated character (such as @) inside the Rich Text Editor's editable area.
 

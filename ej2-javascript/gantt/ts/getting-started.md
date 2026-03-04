@@ -511,4 +511,4 @@ The following code example shows how to use the [actionFailure](https://ej2.sync
 
 The following screenshot represents the Gantt Exception handling in `actionFailure` event.
 
-![Error Handling](../images/error-handling.png)
+![Error Handling](./images/error-handling.png)

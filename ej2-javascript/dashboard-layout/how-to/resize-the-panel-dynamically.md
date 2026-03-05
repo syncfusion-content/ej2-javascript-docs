@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resize the panel dynamically in ##Platform_Name## Dashboard Layout control | Syncfusion
+title: Resize panel in ##Platform_Name## Dashboard Layout | Syncfusion
 description: Learn here all about Resize the panel dynamically in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Resize the panel dynamically
@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Resize the panel dynamically in ##Platform_Name## Dashboard Layout control
 
-In Dashboard Layout, the height of a panel is based on its width. While resizing the panel, both the height and width should be adjusted.
+In Dashboard Layout, the height of a panel is based on its width. When resizing the panel, both the height and width should be adjusted.
 
-To resize the height of a panel alone, use the [`resizePanel`](../../api/dashboard-layout/#resizepanel) method. In this case, the [`cellAspectRatio`](../../api/dashboard-layout/#cellaspectratio) property configures the height of the cells based on the cell width-to-height ratio (cell width/cell height ratio) when the height will not be completely adjusted to the [`sizeY`](../../api/dashboard-layout/panelModel/#sizey) value.
+To resize the height of a panel alone, use the [`resizePanel`](../../api/dashboard-layout#resizepanel) method. In this case, the [`cellAspectRatio`](../../api/dashboard-layout#cellaspectratio) property configures the height of the cells based on the cell width-to-height ratio (cell width/cell height ratio) when the height will not be completely adjusted to the [`sizeY`](../../api/dashboard-layout/panelModel#sizey) value.
 
 Refer to the following code snippet to determine the height of a panel.
 
@@ -49,4 +49,12 @@ Refer to the following code snippet to determine the height of a panel.
 {% previewsample "page.domainurl/code-snippet/dashboard-layout/dynamic-resize-cs1" %}
 {% endif %}
 
-> You can refer to our [JavaScript Dashboard Layout](https://www.syncfusion.com/javascript-ui-controls/js-dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Dashboard Layout example](https://ej2.syncfusion.com/demos/#/material/dashboard-layout/default.html) to knows how to present and manipulate data.
+{% if page.publishingplatform == "typescript" %}
+
+> Refer to the [TypeScript Dashboard Layout](https://www.syncfusion.com/javascript-ui-controls/js-dashboard-layout) feature tour page for its groundbreaking feature representations. Also explore our [TypeScript Dashboard Layout example](https://ej2.syncfusion.com/demos/#/fluent2/dashboard-layout/default.html) to knows how to present and manipulate data.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+> Refer to the [JavaScript Dashboard Layout](https://www.syncfusion.com/javascript-ui-controls/js-dashboard-layout) feature tour page for its groundbreaking feature representations. Also explore our [JavaScript Dashboard Layout example](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/dashboard-layout/default.html) to knows how to present and manipulate data.
+
+{% endif %}

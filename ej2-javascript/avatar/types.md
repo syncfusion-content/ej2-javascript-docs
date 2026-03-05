@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Types in ##Platform_Name## Avatar control
 
-This section explains different types of avatar.
+This section explains the different types of Avatar control.
 
 ## Avatar size
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Avatar control has the following predefined sizes that can be used with the `.e-avatar` class to change the appearance of the avatar:
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 The Avatar control provides the following predefined size classes that can be used with the `.e-avatar` class to change the appearance of the avatar:
 
 | Class Name         | Description
 | :-------------     |:-------------
@@ -61,7 +61,7 @@ The types of Essential<sup style="font-size:70%">&reg;</sup> JS 2 Avatar control
 
 ### Default
 
-The default style of the avatar is a rectangular shape with rounded corners. It can be applied by adding the modifier class `.e-avatar` to the target element.
+The default shape of the avatar is rectangular with rounded corners. It can be applied by adding the modifier class `.e-avatar` to the target element.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -92,7 +92,7 @@ The default style of the avatar is a rectangular shape with rounded corners. It 
 
 ### Circle
 
-The circle avatar style can be applied by adding the modifier class `.e-avatar-circle` along with the default avatar modifier class `.e-avatar` to the target element.
+The circle avatar shape can be applied by adding the modifier class `.e-avatar-circle` along with the base `.e-avatar` class to the target element.
 
 {% if page.publishingplatform == "typescript" %}
 

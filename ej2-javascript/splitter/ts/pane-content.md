@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Pane content in ##Platform_Name## Splitter control
 
-This section explains how to provide plain text content or HTML markup or integrate other JavaScript UI controls as content of splitter.
+This section explains how to provide plain text, HTML markup, or other JavaScript UI controls as content for the Splitter.
 
 ## HTML Markup
 
-Splitter is a layout based container control. You can render the pane contents from existing HTML markups. Converting HTML markup as splitter pane is easy way to add the panes content dynamically.
+The Splitter is a layout-based container control. Render pane content from existing HTML markup. Converting HTML markup into splitter panes provides an easy way to add pane content dynamically.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -28,7 +28,7 @@ Splitter is a layout based container control. You can render the pane contents f
           
 {% previewsample "page.domainurl/code-snippet/splitter/htmlmarkup-cs3" %}
 
-Also, you can provide the pane content inner HTML.
+Also, provide pane content using inner HTML.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -43,13 +43,13 @@ Also, you can provide the pane content inner HTML.
 
 ## JavaScript UI controls
 
-You can render any JavaScript UI controls along with their native and control events within splitter as pane content.
+Render any JavaScript UI controls and their native/control events inside a splitter pane.
 
-You can refer [Accordion within splitter](https://ej2.syncfusion.com/demos/#/material/splitter/accordion-navigation-menu.html) and [Listview within splitter](https://ej2.syncfusion.com/demos/#/material/splitter/details-view.html) examples.
+You can refer [Accordion within splitter](https://ej2.syncfusion.com/demos/#/fluent2/splitter/accordion-navigation-menu.html) and [Listview within splitter](https://ej2.syncfusion.com/demos/#/fluent2/splitter/details-view.html) examples.
 
 ## Plain content
 
-You can add the plain text as a pane contents using either inner HTML or [`content`](../api/splitter/panePropertiesModel/#content) API
+Add plain text as pane content using either innerHTML or [`content`](../api/splitter/panePropertiesModel#content) API.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -64,9 +64,9 @@ You can add the plain text as a pane contents using either inner HTML or [`conte
 
 ## Pane content using selector
 
-You can set HTML element as pane [`content`](../api/splitter/panePropertiesModel/#content) using the query selectors such as ID or CSS class selectors.
+Set an HTML element as pane [`content`](../api/splitter/panePropertiesModel#content) using query selectors such as ID or CSS class selectors.
 
-The following code demonstrates how to fetch an element from the document and load it to pane using its ID.
+The following code demonstrates fetching an element from the document and loading it into a pane by its ID.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

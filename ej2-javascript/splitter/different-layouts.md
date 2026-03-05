@@ -11,12 +11,12 @@ domainurl: ##DomainURL##
 
 # Different layouts in ##Platform_Name## Splitter control
 
-By using splitter control, you can create the different layouts with multiple and nested panes.
+The Splitter control supports creating layouts with multiple and nested panes.
 
 ## Code editor style layout
 
 **Step 1**:
-Create the element with two child to render the outer splitter.
+Create the element with two child elements to render the outer splitter.
 
 ```
  <div id="VerticalSplitter">
@@ -49,7 +49,7 @@ Create the element with two child to render the outer splitter.
 
 **Step 2** :
 
-Render the first pane of vertical splitter as a horizontal splitter.
+Render the first pane of the vertical splitter as a horizontal splitter.
 
 ```
  <div id="VerticalSplitter">
@@ -133,14 +133,21 @@ Render the first pane of vertical splitter as a horizontal splitter.
     }
 
 ```
+{% if page.publishingplatform == "typescript" %}
 
-Once the above configurations has been completed, you will get the output like [this](https://ej2.syncfusion.com/demos/#/material/splitter/code-editor-layout.html)
+After completing the configurations, the output appears as shown in the[demo](https://ej2.syncfusion.com/demos/#/fluent2/splitter/code-editor-layout.html):
+
+{% elsif page.publishingplatform == "javascript" %}
+
+After completing the configurations, the output appears as shown in the[demo](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/splitter/code-editor-layout.html):
+
+{% endif %}
 
 ## Outlook style layout
 
 **Step 1**:
 
-Create the element with three panes and place the elements within the pane to render `treeview`, `listview` and `RTE`.
+Create the element with three panes and place the elements within the panes to render `treeview`, `listview` and `RTE`.
 
 ```
 
@@ -319,9 +326,17 @@ Render the listed controls one by one.
     }
 </style>
 ```
+{% if page.publishingplatform == "typescript" %}
 
-Once the above configurations has been completed, you will get the output like [this](https://ej2.syncfusion.com/demos/#/material/splitter/outlook-style-layout.html).
+After completing the configurations, the output appears as like [this](https://ej2.syncfusion.com/demos/#/fluent2/splitter/outlook-style-layout.html).
+
+{% elsif page.publishingplatform == "javascript" %}
+
+After completing the configurations, the output appears as like [this](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/splitter/outlook-style-layout.html).
+
+{% endif %}
+
 
 ## See Also
 
-* [Multiple panes in Splitter](./split-panes/)
+* [Multiple panes in Splitter](./split-panes)

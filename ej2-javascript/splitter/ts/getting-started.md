@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 This section explains how to create a simple **Splitter** component and configure its available functionalities, using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started).
 
 ## Dependencies
 
@@ -74,7 +74,7 @@ The Splitter CSS files are available in the `ej2-layouts` package folder. This c
 {% endhighlight %}
 {% endtabs %}
 
-> The [Custom Resource Generator (CRG)](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script and styles for a set of specific controls.
+> The [Custom Resource Generator (CRG)](https://crg.syncfusion.com) is an online web tool, which can be used to generate the custom script and styles for a set of specific controls.
 > This web tool is useful to combine the required control scripts and styles in a single file.
 
 ## Adding splitter to the project
@@ -139,7 +139,7 @@ splitObject.appendTo('#splitter');
 
 ## Load content to the pane
 
-You can load the pane contents in either HTML element or string types using [content](../api/splitter/panePropertiesModel/#content) property.
+You can load the pane contents in either HTML element or string types using [content](../api/splitter/panePropertiesModel#content) property.
 
 For detailed information, refer to the [pane content](./pane-content) section.
 

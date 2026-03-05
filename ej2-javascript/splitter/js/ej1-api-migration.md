@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in ##Platform_Name## Splitter control
+# Ej1 API migration in ##Platform_Name## Splitter control
 
 This article describes the API migration process of Splitter component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
@@ -34,7 +34,7 @@ This article describes the API migration process of Splitter component from Esse
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
-| Keyboard Navigation | **Property:** *allowKeyboardNavigation* <br /><br /> $(“#splitter”).ejSplitter({ <br /> allowKeyboardNavigation: true <br /> }); <br /> &nbsp; | No separate property for enable/disable keyboard navigation.  Its enabled by default. |
+| Keyboard Navigation | **Property:** *allowKeyboardNavigation* <br /><br /> $(“#splitter”).ejSplitter({ <br /> allowKeyboardNavigation: true <br /> }); <br /> &nbsp; | Keyboard navigation is enabled by default; no separate property is required. |
 | Right to Left | **Property:** *enableRTL* <br /><br /> $(“#splitter”).ejSplitter({ <br /> enableRTL: false <br /> }); <br />&nbsp; | **Property:** *enableRtl*<br /><br /> var obj = new <br /> ej.layouts.Splitter({ <br /> enableRtl: false <br /> }) <br /> obj.appendTo(“#ej2_splitter”) |
 
 ## Control State

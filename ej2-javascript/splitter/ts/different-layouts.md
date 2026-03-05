@@ -11,12 +11,12 @@ domainurl: ##DomainURL##
 
 # Different layouts in ##Platform_Name## Splitter control
 
-By using splitter control, you can create the different layouts with multiple and nested panes.
+The Splitter control enables creation of layouts with multiple, nested resizable panes.
 
 ## Code editor style layout
 
 **Step 1**:
-Create the element with two child to render the outer splitter.
+Create the container element with two child elements to render the outer Splitter.
 
 ```
  <div id="VerticalSplitter">
@@ -49,7 +49,7 @@ Create the element with two child to render the outer splitter.
 
 **Step 2** :
 
-Render the first pane of vertical splitter as a horizontal splitter.
+Render the first pane of the vertical Splitter as a horizontal Splitter.
 
 ```
  <div id="VerticalSplitter">
@@ -134,7 +134,7 @@ Render the first pane of vertical splitter as a horizontal splitter.
 
 ```
 
-Once the above configurations has been completed, you will get the output like [this](https://ej2.syncfusion.com/demos/#/material/splitter/code-editor-layout.html)
+After completing the above configuration, the output appears as shown: [this](https://ej2.syncfusion.com/demos/#/fluent2/splitter/code-editor-layout.html)
 
 ## Outlook style layout
 
@@ -190,7 +190,7 @@ Create the element with three panes and place the elements within the pane to re
 
 **Step 2** :
 
-Place the template script to render the treeview.
+Add a script template to render the TreeView nodes.
 
 ```javascript
 <script id="treeTemplate" type="text/x-template">
@@ -212,7 +212,7 @@ Place the template script to render the treeview.
 
 **Step 3** :
 
-Render the listed controls one by one.
+Initialize and render the listed controls one by one.
 
 ```javascript
     let splitObj1: Splitter = new Splitter({
@@ -319,9 +319,8 @@ Render the listed controls one by one.
     }
 </style>
 ```
-
-Once the above configurations has been completed, you will get the output like [this](https://ej2.syncfusion.com/demos/#/material/splitter/outlook-style-layout.html).
+After completing the above configuration, the output appears as shown: [this](https://ej2.syncfusion.com/demos/#/fluent2/splitter/outlook-style-layout.html).
 
 ## See Also
 
-* [Multiple panes in Splitter](./split-panes/)
+* [Multiple panes in Splitter](./split-panes)

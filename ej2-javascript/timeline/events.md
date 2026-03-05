@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Events in ##Platform_Name## Timeline control
 
-This section describes the Timeline events that will be triggered when an appropriate actions are performed. The following events are available in the Timeline control.
+This section describes Timeline events triggered by relevant actions. The following events are available in the Timeline control.
 
 ## Created
 
-The Timeline control triggers the [`created`](../api/timeline#created) event when the control rendering is completed.
+The Timeline control triggers the [`created`](../api/timeline#created) event when control rendering is completed.
 
 {% if page.publishingplatform == "typescript" %}
 

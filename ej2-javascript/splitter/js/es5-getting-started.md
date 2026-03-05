@@ -108,9 +108,9 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript controls can
 
 ## Load content to the pane
 
-You can load the pane contents in either HTML element or string types using [content](../api/splitter/paneProperties/#content) property.
+You can load the pane contents in either HTML element or string types using [content](../api/splitter/paneProperties#content) property.
 
-For detailed information, refer to the [Pane Content](./pane-content/) section.
+For detailed information, refer to the [Pane Content](./pane-content) section.
 
 ```html
 <!DOCTYPE html>
@@ -171,6 +171,6 @@ For detailed information, refer to the [Pane Content](./pane-content/) section.
 
 ## See Also
 
-* [Resizable split panes](./resizing/)
-* [Collapsible panes](./expand-and-collapse/)
-* [Construct different layouts using Splitter](./es5-different-layouts/)
+* [Resizable split panes](./resizing)
+* [Collapsible panes](./expand-and-collapse)
+* [Construct different layouts using Splitter](./es5-different-layouts)

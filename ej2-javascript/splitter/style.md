@@ -15,7 +15,7 @@ The following content provides the exact CSS structure that can be used to modif
 
 ## Customizing the split bar
 
-Use the following CSS to customize the split bar properties.
+Use the CSS below to customize the split bar properties.
 
 ### Horizontal split bar
 
@@ -49,7 +49,7 @@ Use the following CSS to customize the split bar properties.
 
 ## Customizing the split bar resize handle
 
-Use the following CSS to customize the split bar resize handle.
+Use the CSS below to customize the split bar resize handle.
 
 ### Horizontal split bar resize handle
 

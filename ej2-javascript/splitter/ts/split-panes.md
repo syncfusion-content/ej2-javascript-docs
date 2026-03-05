@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Split panes in ##Platform_Name## Splitter control
 
-This section explain about split panes behaviours.
+This section explains split pane behaviors.
 
 ## Horizontal layout
 
-By default, splitter will render in horizontal orientation. Splitter container will be splitted as panes in horizontal flow direction with vertical seperator.
+By default, the Splitter renders in horizontal orientation. The Splitter container is split into panes in a horizontal flow, with a vertical separator.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -30,7 +30,7 @@ By default, splitter will render in horizontal orientation. Splitter container w
 
 ## Vertical layout
 
-By setting [orientation](../api/splitter/#orientation) API as `Vertical`, splitter will render in vertical orientation. Splitter container will be splitted as panes in vertical flow direction with horizontal seperator.
+Set the [orientation](../api/splitter#orientation) API to `Vertical`, splitter will render in vertical orientation.The Splitter container is split into panes in a vertical with a horizontal separator.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -45,7 +45,7 @@ By setting [orientation](../api/splitter/#orientation) API as `Vertical`, splitt
 
 ## Multiple panes
 
-You can render the multiple panes with both `Horizontal/Vertical` orientations.
+Multiple panes can be rendered with either `Horizontal` or `Vertical` orientation.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -60,10 +60,10 @@ You can render the multiple panes with both `Horizontal/Vertical` orientations.
 
 ## Separator
 
-By default, pane separator will be render with `1px` width/height. You can customize the separator size by using [separatorSize](../api/splitter/#separatorsize) API.
+By default, the pane separator is rendered at `1px` width/height. Customize the separator size using the [separatorSize](../api/splitter#separatorsize) API.
 
-> For horizontal orientation, it will be considered as separator width.
-> For vertical orientation, it will be considered as separator height.
+> For horizontal orientation, separatorSize is applied as separator width.
+> For vertical orientation, separatorSize is applied as separator height.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -78,9 +78,9 @@ By default, pane separator will be render with `1px` width/height. You can custo
 
 ## Nested Splitter
 
-Splitter provides support to render the nested pane to achieve the complex layouts. You can use the same `<div>` element for splitter pane and nested splitter.
+Splitter supports nested panes for creating complex layouts. The same `<div>` element can serve as a Splitter pane and as a nested Splitter.
 
-> Also you can render the nested splitter using direct child of the splitter pane. For this, nested splitter should have `100%` width and height to match with the parent pane dimensions.
+> Nested Splitter can be rendered as a direct child of a Splitter pane. In that case, set the nested Splitter to `100%` width and height so it matches the parent pane's dimensions.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -95,11 +95,11 @@ Splitter provides support to render the nested pane to achieve the complex layou
 
 ## Add or remove pane
 
-You can add the panes programmatic but it will makes you complex. For this, you can use the addPane/removePane methods to add and remove the panes dynamically in the splitter.
+Panes can be added or removed programmatically using the `addPane` and `removePane` methods. These APIs enable dynamic modification of panes at runtime.
 
 ### Add pane
 
-You can add the panes dynamically in the splitter by passing [paneProperties](../api/splitter/panePropertiesModel) along with index to the [addPane](../api/splitter/#addpane) method
+Add panes dynamically by passing a [paneProperties](../api/splitter/panePropertiesModel) along with index to the [addPane](../api/splitter#addpane) method.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -114,7 +114,7 @@ You can add the panes dynamically in the splitter by passing [paneProperties](..
 
 ### Remove pane
 
-You can remove the split panes dynamically by passing the pane index to [removePane](../api/splitter/#removepane) method.
+Remove panes dynamically by passing the pane index to the [removePane](../api/splitter#removepane) method.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -129,7 +129,7 @@ You can remove the split panes dynamically by passing the pane index to [removeP
 
 ## See Also
 
-* [Resizable split panes](./resizing/)
-* [Collapsible panes](./expand-and-collapse/)
-* [Define size to a panes](./pane-sizing/)
-* [Specify content to a panes](./pane-content/)
+* [Resizable split panes](./resizing)
+* [Collapsible panes](./expand-and-collapse)
+* [Define size to a panes](./pane-sizing)
+* [Specify content to a panes](./pane-content)

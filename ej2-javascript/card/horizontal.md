@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Horizontal in ##Platform_Name## Card control
 
-By default, all the card elements are aligned vertically one after the other as in the DOM. You can achieve the element to align horizontally as well by adding the class `e-card-horizontal` in the root card element.
+By default, all card elements are aligned vertically one after the other in the order they appear in the DOM. To align card elements horizontally, add the `e-card-horizontal` class to the root card element.
 
 ## Stacked cards
 
-* An horizontally aligned card can push a specific column to align vertical using `e-card-stacked` class. This will align the stacked section vertically aligned differentiating from horizontal layout.
+* A horizontally aligned card can push a specific column to align vertically using the `e-card-stacked` class. This aligns the stacked section vertically within the horizontal layout, differentiating it from the horizontal arrangement.
 
 Class   | Description
 ------------ | -------------

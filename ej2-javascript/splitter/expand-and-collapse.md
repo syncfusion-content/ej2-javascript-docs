@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## Collapsible panes
 
-The Splitter panes can be configured with built-in expand and collapse functionalities. By default, the collapsible behavior is disabled. Enable the [collapsible](../api/splitter/paneProperties/#collapsible) behavior in the paneSettings property to show or hide the expand or collapse icons in the panes. You can dynamically expand and collapse the panes by the corresponding icons.
+Splitter panes support built-in expand and collapse functionality. By default, collapsible behavior is disabled. Enable the [collapsible](../api/splitter/paneProperties#collapsible) behavior in the paneSettings property to show or hide the expand or collapse icons in the panes. Users can dynamically expand and collapse panes by using those icons.
 
 The following code shows how to enable collapsible behavior.
 
@@ -46,7 +46,7 @@ The following code shows how to enable collapsible behavior.
 
 ## Programmatically control the expand and collapse action
 
-The Splitter provides public method to control the expand and collapse behavior programmatically using the [expand](../api/splitter/#expand) and [collapse](../api/splitter/#collapse) methods. Refer to the following code example.
+The Splitter provides public methods to control expand and collapse behavior programmatically using the [expand](../api/splitter#expand) and [collapse](../api/splitter#collapse) methods. Refer to the following code example.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -77,7 +77,7 @@ The Splitter provides public method to control the expand and collapse behavior 
 
 ## Specify initial state to panes
 
-You can render specific panes with collapsed state on page load. Specify a Boolean value to the [collapsed](../api/splitter/#collapsed) property to control this behavior. The following code explains how to collapse panes on rendering (the second panes renders with collapsed state).
+A specific panes can rendered in a collapsed state on page load. Specify a Boolean value for the [collapsed](../api/splitter#collapsed) property to control this behavior. The following code shows how to collapse panes on render (the second pane renders with collapsed state).
 
 {% if page.publishingplatform == "typescript" %}
 

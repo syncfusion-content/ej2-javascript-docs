@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Es5 different layouts in ##Platform_Name## Splitter control
 
-By using splitter control, you can create the different layouts with multiple and nested panes.
+By using splitter control, different layouts can be created with multiple and nested panes.
 
 ## Code editor style layout
 
@@ -139,7 +139,7 @@ Render the first pane of vertical splitter as a horizontal splitter.
 
 ```
 
-You can check the result [here](https://ej2.syncfusion.com/javascript/demos/#/material/splitter/code-editor-layout.html)
+Check the result [here](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/splitter/code-editor-layout.html)
 
 ## Outlook style layout
 
@@ -317,8 +317,8 @@ Render the listed controls one by one.
 </style>
 ```
 
-Once the above configurations has been completed, you will get the output like [this](https://ej2.syncfusion.com/javascript/demos/#/material/splitter/outlook-style-layout.html).
+Once the above configurations has been completed, the output appears like [this](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/splitter/outlook-style-layout.html).
 
 ## See Also
 
-* [Multiple panes in Splitter](./split-panes/)
+* [Multiple panes in Splitter](./split-panes)

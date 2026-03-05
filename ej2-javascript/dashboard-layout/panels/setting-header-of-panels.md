@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting header of panels in ##Platform_Name## Dashboard Layout control | Syncfusion
+title: Set header panels in ##Platform_Name## Dashboard Layout | Syncfusion
 description: Learn here all about Setting header of panels in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Setting header of panels
@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Setting header of panels in ##Platform_Name## Dashboard Layout control
 
-The Dashboard Layout control is mostly used to represent data for monitoring or managing a process. These data or any HTML template can be placed as the content of a panel using the [`content`](../../api/dashboard-layout/panelModel/#content)  property. Additionally, a word or phrase summarizing the panel’s content can be added as the header on the top of each panel using the [`header`](../../api/dashboard-layout/panelModel/#header)  property of the panel.
+The Dashboard Layout control is primarily used to represent data for monitoring or managing processes. Data or any HTML template can be placed as the panel content of a panel using the [`content`](../../api/dashboard-layout/panelModel#content)  property. A word or phrase summarizing the panel's content can be added as the header on the top of each panel using the [`header`](../../api/dashboard-layout/panelModel#header)  property of the panel.
 
-The following sample demonstrates how to add content for each panel using the header and content properties of the panels.
+The following sample shown how to add content for each panel using the header and content properties of the panels.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,9 +44,9 @@ The following sample demonstrates how to add content for each panel using the he
 
 ## Placing controls as content of panels
 
-In a dashboard, controls like charts, grids, maps, gauges, etc. can be used to present complex data. Any such controls can be placed as panel content by assigning the corresponding control element as the [`content`](../../api/dashboard-layout/panelModel/#content) of the panel.
+Controls such as charts, grids, maps, and gauges can present complex data in a dashboard. These controls can be used as panel content by assigning the corresponding control element to the [`content`](../../api/dashboard-layout/panelModel#content)property of the panel.
 
-The following sample demonstrates how to add EJ2 Chart controls as the [`content`](../../api/dashboard-layout/panelModel/#content) for each panel in the Dashboard Layout control.
+The following sample demonstrates how to add EJ2 Chart controls as the [`content`](../../api/dashboard-layout/panelModel#content) for panels in the Dashboard Layout control.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -75,4 +75,12 @@ The following sample demonstrates how to add EJ2 Chart controls as the [`content
 {% previewsample "page.domainurl/code-snippet/dashboard-layout/content-1-cs1" %}
 {% endif %}
 
-> You can refer to our [JavaScript Dashboard Layout](https://www.syncfusion.com/javascript-ui-controls/js-dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Dashboard Layout example](https://ej2.syncfusion.com/demos/#/material/dashboard-layout/default.html) to know how to present and manipulate data.
+{% if page.publishingplatform == "typescript" %}
+
+> Refer to the [TypeScript Dashboard Layout](https://www.syncfusion.com/javascript-ui-controls/js-dashboard-layout) feature tour page for its groundbreaking feature representations. Also explore our [TypeScript Dashboard Layout example](https://ej2.syncfusion.com/demos/#/fluent2/dashboard-layout/default.html) to knows how to present and manipulate data.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+> Refer to the [JavaScript Dashboard Layout](https://www.syncfusion.com/javascript-ui-controls/js-dashboard-layout) feature tour page for its groundbreaking feature representations. Also explore our [JavaScript Dashboard Layout example](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/dashboard-layout/default.html) to knows how to present and manipulate data.
+
+{% endif %}

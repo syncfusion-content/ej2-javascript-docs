@@ -108,7 +108,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 JavaScript components c
 
 **Step 4:** Now, open the `index.html` in the web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 Card** component.
 
-> Need to refer dependency component styles and scripts as like above example. We can also use [CRG](https://crg.syncfusion.com/) to generate combined component styles.
+> Need to refer dependency component styles and scripts as like above example. We can also use [CRG](https://crg.syncfusion.com) to generate combined component styles.
 
 ## Adding a header and content
 

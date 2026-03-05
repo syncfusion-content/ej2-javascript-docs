@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Orientations in  ##Platform_Name## Timeline control | Syncfusion
-description:  Checkout and learn about Orientations with ##Platform_Name## Timeline control of Syncfusion Essential JS 2 and more.
+description:  Checkout and learn about Orientations with ##Platform_Name## Timeline control of Syncfusion Essential JS 2 and more. 
 platform: ej2-javascript
 control: Timeline
 publishingplatform: ##Platform_Name##
@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Orientations in ##Platform_Name## Timeline control
 
-The Timeline control supports displaying items in both horizontal and vertical directions using the [`orientation`](../api/timeline/#orientation) property.
+The Timeline control supports displaying items in both horizontal and vertical directions using the [`orientation`](../api/timeline#orientation) property.
 
 ## Vertical Orientation
 
-You can display items vertically, one below the other, by setting the [`orientation`](../api/timeline/#orientation) property to `Vertical`. By default, the items are displayed in vertical orientation.
+Set the [`orientation`](../api/timeline#orientation) property to `Vertical` to display items stacked vertically (one below another). Vertical is the default orientation.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -52,7 +52,7 @@ You can display items vertically, one below the other, by setting the [`orientat
 
 ## Horizontal Orientation
 
-In horizontal orientation, items are displayed side-by-side by setting the [`orientation`](../api/timeline/#orientation) property to `Horizontal`.
+In horizontal orientation, items are displayed side-by-side by setting the [`orientation`](../api/timeline#orientation) property to `Horizontal`.
 
 {% if page.publishingplatform == "typescript" %}
 

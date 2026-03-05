@@ -11,20 +11,20 @@ domainurl: ##DomainURL##
 
 # Moving panels in ##Platform_Name## Dashboard Layout control
 
-Aside from drag and drop, it is possible to move the panels in Dashboard Layout programmatically. This can be achieved using [`movePanel`](../../api/dashboard-layout/#movepanel) method. The method is invoked as follows:
+Panels can be moved programmatically in the Dashboard Layout in addition to drag-and-drop. Use the DashboardLayout instance method [`movePanel`](../../api/dashboard-layout#movepanel) as shown below:
 
   ```js
    movePanel(id, row, col)
   ```
 
 Where,
-* [`id`](../../api/dashboard-layout/panelModel/#id) - ID of the panel which needs to be moved.
-* [`row`](../../api/dashboard-layout/panelModel/#row) - New row position for moving the panel.
-* [`col`](../../api/dashboard-layout/panelModel/#col) - New column position for moving the panel.
+* [`id`](../../api/dashboard-layout/panelModel#id) - ID of the panel which needs to be moved.
+* [`row`](../../api/dashboard-layout/panelModel#row) - New row position for moving the panel.
+* [`col`](../../api/dashboard-layout/panelModel#col) - New column position for moving the panel.
 
-Each time a panel's position is changed(Programatically or through UI interaction), the Dashboard Layout's [`change`](../../api/dashboard-layout/#change) event will be triggered.
+Each time a panel's position is changed(programmatically or through UI interaction), the Dashboard Layout's [`change`](../../api/dashboard-layout#change) event is triggered.
 
-The following sample demonstrates moving a panel programatically to a new position in the Dashboard Layout's [`created`](../../api/dashboard-layout/#created) event.
+The following sample demonstrates moving a panel programmatically to a new position in the Dashboard Layout's [`created`](../../api/dashboard-layout#created) event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -53,4 +53,12 @@ The following sample demonstrates moving a panel programatically to a new positi
 {% previewsample "page.domainurl/code-snippet/dashboard-layout/moving-cs1" %}
 {% endif %}
 
-> You can refer to our [JavaScript Dashboard Layout](https://www.syncfusion.com/javascript-ui-controls/js-dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Dashboard Layout example](https://ej2.syncfusion.com/demos/#/material/dashboard-layout/default.html) to knows how to present and manipulate data.
+{% if page.publishingplatform == "typescript" %}
+
+> Refer to the [TypeScript Dashboard Layout](https://www.syncfusion.com/javascript-ui-controls/js-dashboard-layout) feature tour page for its groundbreaking feature representations. Also explore our [TypeScript Dashboard Layout example](https://ej2.syncfusion.com/demos/#/fluent2/dashboard-layout/default.html) to knows how to present and manipulate data.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+> Refer to the [JavaScript Dashboard Layout](https://www.syncfusion.com/javascript-ui-controls/js-dashboard-layout) feature tour page for its groundbreaking feature representations. Also explore our [JavaScript Dashboard Layout example](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/dashboard-layout/default.html) to knows how to present and manipulate data.
+
+{% endif %}

@@ -106,7 +106,7 @@ The below located script and style file contains all Syncfusion<sup style="font-
 
 **Step 4:** Now, run the `index.html` in the web browser, it will render the **Essential<sup style="font-size:70%">&reg;</sup> JS 2 avatar** component.
 
-> Need to refer dependency component styles and scripts as like above example. We can also use [CRG](https://crg.syncfusion.com/) to generate combined component styles.
+> Need to refer dependency component styles and scripts as like above example. We can also use [CRG](https://crg.syncfusion.com) to generate combined component styles.
 
 ## See Also
 

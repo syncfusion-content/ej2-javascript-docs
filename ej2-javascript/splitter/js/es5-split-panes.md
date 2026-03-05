@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Es5 split panes in ##Platform_Name## Splitter control
 
-This section explain about split panes behaviours.
+This section explains Splitter pane behaviors.
 
 ## Horizontal layout
 
-By default, splitter will render in horizontal orientation. Splitter container will be splitted as panes in horizontal flow direction with vertical seperator.
+By default, the Splitter renders in horizontal orientation. Splitter container will be splitted as panes in horizontal flow direction with vertical seperator.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -30,7 +30,7 @@ By default, splitter will render in horizontal orientation. Splitter container w
 
 ## Vertical layout
 
-By setting [orientation](../api/splitter/#orientation) API as `Vertical`, splitter will render in vertical orientation. Splitter container will be splitted as panes in vertical flow direction with horizontal seperator.
+Set the [orientation](../api/splitter#orientation) property to `Vertical` to render the Splitter in vertical orientation. Splitter container will be splitted as panes in vertical flow direction with horizontal seperator.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -45,7 +45,7 @@ By setting [orientation](../api/splitter/#orientation) API as `Vertical`, splitt
 
 ## Multiple panes
 
-You can render the multiple panes with both `Horizontal/Vertical` orientations.
+Multiple panes can be rendered with either `Horizontal` or `Vertical` orientation.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -60,7 +60,7 @@ You can render the multiple panes with both `Horizontal/Vertical` orientations.
 
 ## Separator
 
-By default, pane separator will be render with `1px` width/height. You can customize the separator size by using [separatorSize](../api/splitter/#separatorsize) API.
+By default, separators are 1px thick. Use the  [separatorSize](../api/splitter#separatorsize) property to customize the separator thickness.
 
 > For horizontal orientation, it will be considered as separator width.
 > For vertical orientation, it will be considered as separator height.
@@ -78,9 +78,9 @@ By default, pane separator will be render with `1px` width/height. You can custo
 
 ## Nested Splitter
 
-Splitter provides support to render the nested pane to achieve the complex layouts. You can use the same `<div>` element for splitter pane and nested splitter.
+The Splitter supports nested panes to achieve complex layouts. A nested Splitter can be placed inside a pane using the same `<div>` element for the pane and the nested Splitter.
 
-> Also you can render the nested splitter using direct child of the splitter pane. For this, nested splitter should have `100%` width and height to match with the parent pane dimensions.
+> Alternatively, render the nested Splitter as a direct child of the pane. For this, nested splitter should have `100%` width and height to match with the parent pane dimensions.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -95,11 +95,11 @@ Splitter provides support to render the nested pane to achieve the complex layou
 
 ## Add or remove pane
 
-You can add the panes programmatic but it will makes you complex. For this, you can use the addPane/removePane methods to add and remove the panes dynamically in the splitter.
+Panes can be managed programmatically using the addPane and removePane methods to add and remove the panes dynamically in the splitter.
 
 ### Add pane
 
-You can add the panes dynamically in the splitter by passing [paneProperties](../api/splitter/panePropertiesModel) along with index to the [addPane](../api/splitter/#addpane) method
+Use the panes dynamically in the splitter by passing [paneProperties](../api/splitter/panePropertiesModel) along with index to the [addPane](../api/splitter#addpane) method
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -114,7 +114,7 @@ You can add the panes dynamically in the splitter by passing [paneProperties](..
 
 ### Remove pane
 
-You can remove the split panes dynamically by passing the pane index to [removePane](../api/splitter/#removepane) method.
+Remove panes dynamically by passing the pane index to the [removePane](../api/splitter#removepane) method.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -129,7 +129,7 @@ You can remove the split panes dynamically by passing the pane index to [removeP
 
 ## See Also
 
-* [Resizable split panes](./resizing/)
-* [Collapsible panes](./expand-and-collapse/)
-* [Define size to a panes](./pane-sizing/)
-* [Specify content to a panes](./es5-pane-content/)
+* [Resizable split panes](./resizing)
+* [Collapsible panes](./expand-and-collapse)
+* [Define size to a panes](./pane-sizing)
+* [Specify content to a panes](./es5-pane-content)

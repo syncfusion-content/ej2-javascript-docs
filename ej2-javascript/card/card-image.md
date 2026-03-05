@@ -13,9 +13,9 @@ domainurl: ##DomainURL##
 
 ## Images
 
-The Card supports to include images within the elements, you can add image as direct element anywhere inside card root by adding the `e-card-image` class to `div` element. Using the class defined, you can write CSS styles to load images to that element.
+The Card supports including images within its elements. Add an image as a direct element anywhere inside the card root by adding the `e-card-image` class to a `div` element. Using the class defined, you can write CSS styles to load images to that element.
 
-> By default, card images occupies full width of its parent element.
+> By default, card images occupy the full width of their parent element.
 
 ```
     <div class = "e-card">
@@ -26,7 +26,7 @@ The Card supports to include images within the elements, you can add image as di
 
 ### Title
 
-Card image is supported to include a title or caption for the image. By default, Title is placed over the image on left-bottom position with overlay.
+Card images support including a title or caption for the image. By default, the title is placed over the image in the left-bottom position with an overlay.
 
 ```
     <div class = "e-card">
@@ -59,9 +59,9 @@ Card image is supported to include a title or caption for the image. By default,
 
 ## Divider
 
-Divider used to separate the elements inside the card. You can add divider inside the card elements to separate it.
+Dividers are used to separate elements inside the card. Add a divider inside the card elements to visually distinguish different sections or content areas.
 
-* Place the `div` element with `e-card-separator` class inside the card element for adding a divider.
+* Place a `div` element with the `e-card-separator` class inside the card element to add a divider.
 
 {% if page.publishingplatform == "typescript" %}
 

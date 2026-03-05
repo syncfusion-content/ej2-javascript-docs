@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # Customization in ##Platform_Name## Timeline control
 
-You can customize the Timeline items by adjusting dot size, connectors, dot borders, dot outer spacing, and more to personalize its appearance. This section explains the various ways to style the items.
+Customize the Timeline items by adjusting dot size, connectors, dot borders, dot outer spacing, and more to personalize its appearance. This section explains the available styling options.
 
 ## Connector styling
 
 ### Common styling
 
-You can apply styles universally to all Timeline item connectors.
+Apply styles universally to all Timeline item connectors.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -54,7 +54,7 @@ You can apply styles universally to all Timeline item connectors.
 
 ### Individual styling
 
-You can apply unique styles to individual connectors to differentiate specific items within the Timeline.
+Apply unique styles to individual connectors to differentiate specific items within the Timeline.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -93,8 +93,7 @@ You can apply unique styles to individual connectors to differentiate specific i
 ## Dot styling
 
 ### Dot color
-
-You can modify the color of the dots to highlight specific Timeline items.
+Modify dot colors to highlight specific Timeline items.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -132,7 +131,7 @@ You can modify the color of the dots to highlight specific Timeline items.
 
 ### Dot size
 
-You can adjust the size of the dot, making it larger or smaller, by using the `--dot-size` variable.
+Adjust the dot size using the `--dot-size` CSS variable to make dots larger or smaller.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -169,7 +168,7 @@ You can adjust the size of the dot, making it larger or smaller, by using the `-
 
 ### Dot shadow
 
-You can add shadow effects to the Timeline dots to provide a visually engaging appearance by using the `--dot-outer-space` and `--dot-border` variables.
+Add shadow effects to Timeline dots to provide a visually engaging appearance by using the `--dot-outer-space` and `--dot-border` variables.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -206,7 +205,7 @@ You can add shadow effects to the Timeline dots to provide a visually engaging a
 
 ### Dot variant
 
-You can achieve the desired dot variant by customizing the border, outline and background colors of the Timeline dots.
+Achieve the desired dot variant by customizing the border, outline and background colors of the Timeline dots.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -243,7 +242,7 @@ You can achieve the desired dot variant by customizing the border, outline and b
 
 ### Dot outline
 
-Add an `e-outline` class to the Timeline [`cssClass`](../api/timeline/#cssclass) property to enable the dots to have an outline state.
+Add the `e-outline` class to the Timeline [`cssClass`](../api/timeline#cssclass) property to enable the dots to have an outline state.
 
 {% if page.publishingplatform == "typescript" %}
 

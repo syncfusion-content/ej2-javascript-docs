@@ -40,9 +40,14 @@ const renderCustomColumnChooser = (targetElement: HTMLElement, columns: Column[]
         };
     });
 
-    const uniquePids = [...new Set(treeData.map(item => item.pid))];
-    const filteredParents = parentNodes.filter(parent => uniquePids.includes(parent.id));
-    treeData.push(...filteredParents);
+    var uniquePids: any = [];
+    treeData.forEach(function (item: any) {
+        if (uniquePids.indexOf(item.pid) === -1) {
+            uniquePids.push(item.pid);
+        }
+    });
+    const filteredParents = parentNodes.filter(function (parent) { return uniquePids.indexOf(parent.id) !== -1 });
+    treeData = treeData.concat(filteredParents);
 
     treeObj = new TreeView({
         fields: { dataSource: treeData, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild' },
@@ -95,10 +100,16 @@ function onCreated() {
     new Button().appendTo('#submitButton');
     new Button().appendTo('#abortButton');
 
-    document.getElementById('submitButton')!.onclick = () => columnChooserSubmit();
-    document.getElementById('abortButton')!.onclick = () => {
-        (treeGridObj.grid.columnChooserModule as any).hideDialog();
+      if (document.getElementById('submitButton')) {
+        (document.getElementById('submitButton'))!.onclick = () => {
+            columnChooserSubmit();
+        }
     };
+        if (document.getElementById('abortButton')) {
+            (document.getElementById('abortButton'))!.onclick = function () {
+                (treeGridObj.grid.columnChooserModule as any).hideDialog();
+            };
+        }    
 }
 
 let treeGridObj: TreeGrid = new TreeGrid({

@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in ##Platform_Name## Splitter control
 
-The Splitter component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Splitter component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the Splitter component is outlined below.
 
@@ -41,16 +41,16 @@ The accessibility compliance for the Splitter component is outlined below.
 
 ## Keyboard interaction
 
-You can use the following key shortcuts to access the splitter without interruptions:
+Use the following key shortcuts to access the splitter without interruptions:
 
 | **Keyboard shortcuts** | **Actions** |
 | --- | --- |
-| <kbd>Tab</kbd> | Helps in focusing the splitter on the page and switching between the consecutive splitter bars. |
-| <kbd>Shift</kbd> + <kbd>Tab</kbd> | Helps in focusing the previous splitter bar element on the splitter. |
-| <kbd>Right arrow</kbd> | Helps in moving the active `horizontal` orientated splitter bar to its `Right` side. |
-| <kbd>Left arrow</kbd> | Helps in moving the active `horizontal` orientated splitter bar to its `Left` side. |
-| <kbd>Up arrow</kbd> | Helps in moving the active `vertical` orientated splitter bar to its `Up` side. |
-| <kbd>Down arrow</kbd> | Helps in moving the active `vertical` orientated splitter bar to its `Down` side. |
+| <kbd>Tab</kbd> | Focuses the splitter on the page and switching between the consecutive splitter bars. |
+| <kbd>Shift</kbd> + <kbd>Tab</kbd> | Moves focus to the previous splitter bar element on the splitter. |
+| <kbd>Right arrow</kbd> | Moves the active `horizontal` orientated splitter bar to its `Right` side. |
+| <kbd>Left arrow</kbd> | Moves the active `horizontal` orientated splitter bar to its `Left` side. |
+| <kbd>Up arrow</kbd> | Moves the active `vertical` orientated splitter bar to its `Up` side. |
+| <kbd>Down arrow</kbd> | Moves the active `vertical` orientated splitter bar to its `Down` side. |
 | <kbd>Enter</kbd> | Helps to toggle between `expand` and `collapse` actions of the splitter bar when it is active. |
 
 ## Ensuring accessibility

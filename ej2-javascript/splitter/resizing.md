@@ -11,16 +11,16 @@ domainurl: ##DomainURL##
 
 # Resizing in ##Platform_Name## Splitter control
 
-By default, resizing will be enable for split panes. Resizing gripper element will be add to the separator to makes the resize easy.
+Resizing is enabled by default for Splitter panes. A resize gripper is added to separators to simplify resizing.
 
-> Horizontal splitter will allows to resize in horizontal directions.
-> Vertical splitter will allows to resize in vertical directions.
+> A horizontal Splitter allows resizing horizontally.  
+> A vertical Splitter allows resizing vertically.
 
-While resizing, previous and next panes will be adjust its dimensions automatically.
+During resizing, previous and next panes are adjusted automatically.
 
 ## Min and Max validation
 
-Splitter allows you to set the [minimum](../api/splitter/paneProperties/#min) and [maximum](../api/splitter/paneProperties/#max) sizes for each pane. Resizing will not be occur over the minimum and maximum values.
+Splitter allows setting the [minimum](../api/splitter/paneProperties#min) and [maximum](../api/splitter/paneProperties#max) sizes for each pane properties. Resizing will not exceed the configured minimum or maximum values.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -51,7 +51,7 @@ Splitter allows you to set the [minimum](../api/splitter/paneProperties/#min) an
 
 ## Prevent resizing
 
-You can disable the resizing for the pane by setting `false` to the [`resizable`](../api/splitter/panePropertiesModel/#resizable) API within [paneSettings](../api/splitter/paneProperties/#paneproperties).
+Disable resizing for a pane by setting `false` to the [`resizable`](../api/splitter/panePropertiesModel#resizable) API within [paneSettings](../api/splitter/paneProperties#paneproperties).
 
 > Splitter resizing will be enabled only when the target of the adjacent pane's `resizable` api should also be in `true` state.
 
@@ -84,11 +84,11 @@ You can disable the resizing for the pane by setting `false` to the [`resizable`
 
 ## Refresh content on resizing
 
-While resizing the panes, you can refresh the pane contents by using either [`resizeStart`](../api/splitter/#resizestart), [`resizing`](../api/splitter/#resizestart) or [`resizeStop`](../api/splitter/#resizestart) events.
+During pane resizing, refresh pane content using the [`resizeStart`](../api/splitter#resizestart), [`resizing`](../api/splitter#resizestart) or [`resizeStop`](../api/splitter#resizestart) events.
 
 ## Customize the resize grip and cursor
 
-You can customize the resize gripper icon and cursor in css level.
+Customize the resize gripper icon and cursor using CSS.
 
 {% if page.publishingplatform == "typescript" %}
 

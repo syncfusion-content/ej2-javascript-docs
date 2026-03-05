@@ -34,7 +34,7 @@ This article describes the API migration process of Splitter component from Esse
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
-| Keyboard Navigation | **Property:** *allowKeyboardNavigation* <br /><br /> var splitter = new <br /> ej.Splitter($("#splitter"), { <br /> allowKeyboardNavigation: true <br /> }); <br /> &nbsp; | No separate property for enable/disable keyboard navigation.  Its enabled by default. |
+| Keyboard Navigation | **Property:** *allowKeyboardNavigation* <br /><br /> var splitter = new <br /> ej.Splitter($("#splitter"), { <br /> allowKeyboardNavigation: true <br /> }); <br /> &nbsp; | No separate property required keyboard navigation.  Its enabled by default. |
 | Right to Left | **Property:** *enableRTL* <br /><br /> var splitter = new <br /> ej.Splitter($("#splitter"), { <br /> enableRTL: false <br /> }); <br />&nbsp; | **Property:** *enableRtl*<br /><br /> Let obj: Splitter = new <br /> Splitter({ <br /> enableRtl: false <br /> }) <br /> obj.appendTo(“#ej2_splitter”) |
 
 ## Control State

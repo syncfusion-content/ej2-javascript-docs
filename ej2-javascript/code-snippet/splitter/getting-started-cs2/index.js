@@ -1,5 +1,5 @@
 // Initialize splitter control
-var splitObj = new ej2_layouts_1.Splitter({
+var splitObj = new ej.layouts.Splitter({
     paneSettings: [
         // Content for Pane 1
         { content: 'Left Pane' },

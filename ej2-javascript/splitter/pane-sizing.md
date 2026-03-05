@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Pane sizing in ##Platform_Name## Splitter control
 
-Splitter allows you to provide pane sizes either in `pixel` or `percentage` formats.
+Splitter allows providing pane sizes in either `pixel` or `percentage` formats.
 
 ## Auto size panes
 
-The splitter's panes are adjusted automatically during resizing if the size is not specified externally to panes, because the panes are designed based on flex layout by default. When add/remove or show/hide the panes, the panes are auto aligned within its container.
+The splitter's panes are adjusted automatically during resizing if the size is not specified externally to panes, because the panes are designed based on flex layout by default. When panes are added, removed, shown, or hidden, they are automatically realigned within the container.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -46,7 +46,7 @@ The splitter's panes are adjusted automatically during resizing if the size is n
 
 ## Fixed pane
 
-You can render the split panes with fixed size in both `horizontal` and `vertical` mode. Even if you provide fixed sizes to all the panes, the last pane is considered as a flexible pane.
+Render split panes with fixed size in both `horizontal` and `vertical` mode. If fixed sizes are provided for all panes, the last pane is treated as a flexible pane.
 
 {% if page.publishingplatform == "typescript" %}
 

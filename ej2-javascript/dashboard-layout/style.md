@@ -15,7 +15,7 @@ The following content provides the exact CSS structure that can be used to modif
 
 ## Customizing the Dashboard Layout panel header
 
-Use the following CSS to customize the Dashboard Layout panel header.
+Apply the CSS below to customize the Dashboard Layout panel header.
 
 ```
 .e-dashboardlayout.e-control .e-panel .e-panel-container .e-panel-header {
@@ -27,7 +27,7 @@ Use the following CSS to customize the Dashboard Layout panel header.
 
 ## Customizing the Dashboard Layout panel content
 
-Use the following CSS to customize the Dashboard Layout panel content.
+Apply the CSS below to customize the Dashboard Layout panel content.
 
 ```
 .e-dashboardlayout.e-control .e-panel .e-panel-container .e-panel-content {
@@ -38,7 +38,7 @@ Use the following CSS to customize the Dashboard Layout panel content.
 
 ## Customizing the Dashboard Layout panel resize icon
 
-Use the following CSS to customize the Dashboard Layout resize icon.
+Apply the CSS below to customize the Dashboard Layout resize icon.
 
 ```
 .e-dashboardlayout.e-control .e-panel .e-panel-container .e-resize.e-double{
@@ -51,7 +51,7 @@ Use the following CSS to customize the Dashboard Layout resize icon.
 
 ## Customizing the Dashboard Layout panel background
 
-Use the following CSS to customize the Dashboard Layout panel background.
+Apply the CSS below to customize the Dashboard Layout panel background.
 
 ```
 .e-dashboardlayout.e-control.e-responsive {
@@ -59,4 +59,12 @@ Use the following CSS to customize the Dashboard Layout panel background.
 }
 ```
 
-> You can refer to our [JavaScript Dashboard Layout](https://www.syncfusion.com/javascript-ui-controls/js-dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Dashboard Layout example](https://ej2.syncfusion.com/demos/#/material/dashboard-layout/default.html) to knows how to present and manipulate data.
+{% if page.publishingplatform == "typescript" %}
+
+> Refer to the [TypeScript Dashboard Layout](https://www.syncfusion.com/javascript-ui-controls/js-dashboard-layout) feature tour page for its groundbreaking feature representations. Also explore our [TypeScript Dashboard Layout example](https://ej2.syncfusion.com/demos/#/fluent2/dashboard-layout/default.html) to knows how to present and manipulate data.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+> Refer to the [JavaScript Dashboard Layout](https://www.syncfusion.com/javascript-ui-controls/js-dashboard-layout) feature tour page for its groundbreaking feature representations. Also explore our [JavaScript Dashboard Layout example](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/dashboard-layout/default.html) to knows how to present and manipulate data.
+
+{% endif %}

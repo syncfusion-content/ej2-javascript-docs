@@ -13,9 +13,9 @@ domainurl: ##DomainURL##
 
 ## RTL
 
-Specifies the direction of the Splitter component using the enableRtl property. For writing systems that require it like Arabic, Hebrew, etc., the direction can be switched to right-to-left.
+Specifies the component's text direction using the enableRtl property. Set enableRtl to true to switch the Splitter to a right-to-left (RTL) layout for languages such as Arabic or Hebrew. The default value is false.
 
-The following code shows how to enable RTL behavior.
+The following example shows how to enable RTL.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Style in ##Platform_Name## Card control
 
-The following content provides the exact CSS structure that can be used to modify the control’s appearance based on user preference.
+The following content provides the CSS structure that can be used to customize the Card control's appearance based on user preference.
 
 ## Customizing the card
 
-Use the following CSS to customize the card properties.
+Use the following CSS to customize the card element properties such as background, padding, and spacing.
 
 ```
 .e-card {
@@ -27,7 +27,7 @@ Use the following CSS to customize the card properties.
 
 ## Customizing the Header element
 
-Use the following CSS to customize the Header element properties.
+Use the following CSS to customize the card header element properties including typography and styling.
 
 ```
 .e-card .e-card-header {
@@ -38,7 +38,7 @@ Use the following CSS to customize the Header element properties.
 
 ## Customizing the card content
 
-Use the following CSS to customize the card content properties.
+Use the following CSS to customize the card content properties including font size, color, and spacing.
 
 ```
 .e-card .e-card-content {
@@ -51,7 +51,7 @@ Use the following CSS to customize the card content properties.
 
 ## Divider used to separate the elements inside the card
 
-Use the following CSS to customize the Divider used to separate the elements inside the card properties.
+Use the following CSS to customize the divider element used to separate sections inside the card.
 
 ```
 .e-card .e-card-separator {
@@ -128,7 +128,7 @@ Use the following CSS to Include action buttons or anchor tags.
 
 ## To align card elements horizontally
 
-Use the following CSS to align card elements horizontally.
+Use the following CSS to customize the horizontal alignment of card elements.
 
 ```
 .e-card .e-card-horizontal  {
@@ -139,7 +139,7 @@ Use the following CSS to align card elements horizontally.
 
 ## To align elements vertically within the horizontal layout
 
-Use the following CSS to align elements vertically within the horizontal layout.
+Use the following CSS to customize vertically aligned elements within a horizontal card layout.
 
 ```
 .e-card .e-card-horizontal .e-card-stacked  {

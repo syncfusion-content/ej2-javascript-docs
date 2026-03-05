@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## Color customization
 
-The avatar control comes with a default background color (Grey). This can be easily customized to a desired color by adding a custom class or directly selecting the avatar class from the CSS.
+The Avatar control provides a default background color (gray). This background can be customized by adding a custom CSS class or by directly selecting the avatar class from the CSS.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,7 +44,7 @@ The avatar control comes with a default background color (Grey). This can be eas
 
 ## Customize avatar sizes
 
-Even though the avatar control comes with five predefined sizes, sometimes it's not enough. The avatar is designed such that its width and height are relative to its font-size. By changing the `font-size` of the avatar element, you can automatically change the width and height.
+The Avatar control provides five predefined sizes. To create custom sizes, change the font-size of the avatar element — the avatar's width and height are relative to its font-size, so adjusting font-size scales the avatar accordingly.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -75,7 +75,7 @@ Even though the avatar control comes with five predefined sizes, sometimes it's 
 
 ## Use various media in avatar
 
-Avatars can be used with a wide variety of media formats like SVG, font icons, images, letters, words, etc. Some examples are given below.
+Avatars support multiple media types such as SVG, font icons, images, letters, and words. Examples demonstrating these formats are shown below.
 
 {% if page.publishingplatform == "typescript" %}
 

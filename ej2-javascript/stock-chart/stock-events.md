@@ -27,6 +27,7 @@ Stock Events visualizes stock events in stock chart. 'SplineSeries' is used to r
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/stock-chart/getting-started-cs25" %}
+{% endif %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -58,6 +59,7 @@ By default, stock events will be showed for all series. Now, you can set the sto
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/stock-chart/getting-started-cs26" %}
+{% endif %}
 
 {% elsif page.publishingplatform == "javascript" %}
 

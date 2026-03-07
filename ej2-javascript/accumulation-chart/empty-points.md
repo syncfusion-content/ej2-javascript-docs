@@ -38,6 +38,7 @@ The data points those uses the `null` or `undefined` as value are considered as 
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs16" %}
+{% endif %}
 
 ## Customization
 
@@ -68,6 +69,7 @@ Specific color for an empty point can be set by using the `fill` property in `em
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs17" %}
+{% endif %}
 
 ## Handling No Data
 

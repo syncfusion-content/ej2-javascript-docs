@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 This document provides information about the changes and new features included in each version of the [@syncfusion/javascript-assistant](https://www.npmjs.com/package/@syncfusion/javascript-assistant) MCP server package.
 
-## (v2.0.0) – March 06, 2026
+## (v2.0.0) – March 09, 2026
 
 ### Features
 

@@ -263,4 +263,37 @@ The title for legend can be set using [`title`](../api/stock-chart/legendSetting
 {% previewsample "page.domainurl/code-snippet/stock-chart/legend-cs8" %}
 {% endif %}
 
+## Legend Template
+
+Legend templates allow you to replace default legend icons and text with custom HTML.This enables branded styles, richer content (icons, multi-line text, badges), improved readability, and localization.The rendered content becomes the legend item and can be styled with CSS.
+
+You can customize the legend items by using the [`template`](https://ej2.syncfusion.com/documentation/api/stock-chart/legendSettingsModel) property of [`legendSettings`](https://ej2.syncfusion.com/documentation/api/stock-chart/legendSettingsModel). Legend interactions (click to toggle series) remain unless [`ToggleVisibility`] (https://ej2.syncfusion.com/documentation/api/stock-chart/legendsettings#togglevisibility) is set to false. Templates work with all legend positions, alignments, and paging.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/stock-chart/legend-cs8/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/stock-chart/legend-cs8/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/stock-chart/legend-cs8" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/stock-chart/legend-cs8/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/stock-chart/legend-cs8/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/stock-chart/legend-cs8" %}
+{% endif %}
+
 >Note: To use legend feature, we need to inject `StockLegend` using `StockChart.Inject(StockLegend)`.

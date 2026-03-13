@@ -183,6 +183,8 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 
 **Step 4:** Now, run the `index.html` in web browser, it will render the **Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript AI AssistView** control.
 
+> **Note:** Starting from version 33.1x, when a user submits a prompt to the AI AssistView, the control automatically scrolls and focuses on the latest prompt and response. This behavior eliminates the need for users to manually scroll down to see the new response, ensuring they always view the most recent AI response without interruption. Prior to version 33.1x, the previous responses remained visible when new responses were added.
+
 ## Configure suggestions and responses
 
 You can use the [promptSuggestions](../api/ai-assistview/#promptsuggestions) property to add prompt suggestions and the [promptRequest](../api/ai-assistview/#promptrequest) event to add responses when the prompt matches the specified prompts data otherwise, the default response will be displayed.

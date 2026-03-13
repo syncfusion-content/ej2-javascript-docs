@@ -106,6 +106,39 @@ You can use the [prompts](../api/ai-assistview#prompts) property to initialize t
 {% previewsample "page.domainurl/code-snippet/ai-assistview/assist-view/prompts" %}
 {% endif %}
 
+### Update response as markdown
+
+The AI AssistView supports rendering responses as **Markdown** content, which is automatically converted to HTML using the built-in [Markdown Converter](https://ej2.syncfusion.com/javascript/documentation/markdown-converter/convert-markdown-to-html). When you pass markdown-formatted text in the response, it will be displayed as formatted HTML in the AI AssistView. The streaming of markdown content happens seamlessly with built-in support for dynamic rendering.
+
+You can use markdown syntax like **bold**, *italic*, headings, lists, code blocks, and links to format your responses:
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/ai-assistview/assist-view/markdown-prompt/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/ai-assistview/assist-view/markdown-prompt/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/ai-assistview/assist-view/markdown-prompt" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/ai-assistview/assist-view/markdown-prompt/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/ai-assistview/assist-view/markdown-prompt/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/ai-assistview/assist-view/markdown-prompt" %}
+{% endif %}
+
 ## Adding prompt suggestions
 
 You can use the [promptSuggestions](../api/ai-assistview#promptsuggestions) property, to add the suggestions in both initial and on-demand which help users to refine their prompts. Additionally, custom header can be set for suggestions further enhancing the user experience.
@@ -259,4 +292,35 @@ You can use the [showClearButton](../api/ai-assistview#showclearbutton) property
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/ai-assistview/assist-view/clearbutton" %}
+{% endif %}
+
+## Enable scroll to bottom icon
+
+You can use the [enableScrollToBottom](../api/ai-assistview#enablescrolltobottom) property to show or hide the scroll-to-bottom indicator. By default, this property is `true`. When enabled, a floating icon/button appears when the user scrolls away from the bottom of the conversation. Clicking this icon smoothly scrolls the view to the bottom to display the latest response.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/ai-assistview/assist-view/scroll-to-bottom/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/ai-assistview/assist-view/scroll-to-bottom/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/ai-assistview/assist-view/scroll-to-bottom" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/ai-assistview/assist-view/scroll-to-bottom/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/ai-assistview/assist-view/scroll-to-bottom/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/ai-assistview/assist-view/scroll-to-bottom" %}
 {% endif %}

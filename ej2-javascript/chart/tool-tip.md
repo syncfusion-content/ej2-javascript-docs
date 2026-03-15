@@ -241,6 +241,126 @@ The [`showNearestTooltip`](../api/chart/tooltipSettings#shownearesttooltip) prop
 {% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs55" %}
 {% endif %}
 
+## Split tooltip
+
+The split tooltip displays a separate tooltip for each series at the same data point, making it easier to compare values across multiple series.
+
+Enable this feature by setting the [`split`](../api/chart/tooltipSettingsModel#split) property to **true**:
+
+```jsx
+tooltip: { 
+	enable: true, 
+	split: true 
+}
+```
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/tooltip-split/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/tooltip-split/js/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/tooltip-split" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/tooltip-split/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/tooltip-split/js/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/tooltip-split" %}
+{% endif %}
+
+## Follow pointer
+
+The follow pointer feature enables the tooltip to follow the mouse cursor or touch pointer as users interact with the chart, keeping the tooltip near the point of interaction.
+
+Enable this feature by setting the [`followPointer`](../api/chart/tooltipSettingsModel#followpointer) property to **true**:
+
+```jsx
+tooltip: { 
+	enable: true, 
+	followPointer: true 
+}
+```
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/tooltip-followPointer/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/tooltip-followPointer/js/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/tooltip-followPointer" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/tooltip-followPointer/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/tooltip-followPointer/js/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/tooltip-followPointer" %}
+{% endif %}
+
+## Tooltip distance
+
+The tooltip distance property controls the spacing between the tooltip and the mouse pointer or target data point. This prevents the tooltip from overlapping with the cursor or nearby chart elements, improving readability.
+
+Set the [`distance`](../api/chart/tooltipSettingsModel#distance) property to specify the gap in pixels:
+
+```jsx
+tooltip: { 
+	enable: true, 
+	distance: 25 
+}
+```
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/tooltip-distance/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/tooltip-distance/js/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/tooltip-distance" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/tooltip-distance/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/tooltip-distance/js/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/tooltip-distance" %}
+{% endif %}
+
 ## See also
 
 * [Format the tooltip value](./how-to/tool-tip-format.md)

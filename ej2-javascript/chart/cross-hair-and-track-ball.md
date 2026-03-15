@@ -206,3 +206,50 @@ The crosshair line color can be customized using the [`color`](../api/chart/bord
 
 {% previewsample "page.domainurl/code-snippet/chart/user-interaction-cs54" %}
 {% endif %}
+
+## Crosshair label customization
+
+The [`crosshairLabelRender`](../api/chart/chartModel#crosshairlabelrender) event fires before each crosshair axis label is rendered, allowing you to customize the label's appearance or content, or to prevent it from being displayed.
+
+Event arguments:
+
+* `text` – The label text that can be modified.
+* `value` – The data value at the crosshair position.
+* `axisName` – The axis identifier (e.g., `primaryXAxis`).
+* `axisOrientation` – Either `Horizontal` or `Vertical`.
+* `textStyle` – Font properties for customization.
+* `fill` – Background color of the label.
+* `cancel` – Set to **true** to skip rendering the label.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/crosshair-label-render/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/crosshair-label-render/js/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/crosshair-label-render/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/crosshair-label-render" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/crosshair-label-render/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/crosshair-label-render/js/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="datasource.js" %}
+{% include code-snippet/chart/crosshair-label-render/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/crosshair-label-render" %}
+{% endif %}

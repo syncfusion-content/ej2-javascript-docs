@@ -88,44 +88,11 @@ npm install
 
 This command downloads and installs all packages specified in `package.json`, including the Circular gauge and its dependencies.
 
-## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
+## Create your first Circular gauge
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+### Step 1: Define the HTML container
 
-The quickstart application is preconfigured to use the **Material** theme in the `~/src/styles/styles.css` file, as shown below:
-
-{% tabs %}
-{% highlight css tabtitle="style.css" %}
-
-@import '../../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-circulargauge/styles/material.css';
-
-{% endhighlight %}
-{% endtabs %}
-
-> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
-
-## Adding Circular Gauge component
-
-You can start adding Essential<sup style="font-size:70%">&reg;</sup> JS 2 Circular Gauge component to the application. To get started, add the Circular Gauge component in **app.ts** and **index.html** files using the following code.
-
-Place the following Circular Gauge code in the **app.ts**.
-
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
-
-import { CircularGauge } from '@syncfusion/ej2-circulargauge';
-
-// Initialize CircularGauge component
-let gauge: CircularGauge = new CircularGauge();
-
-// Render initialized CircularGauge
-gauge.appendTo('#container');
-
-{% endhighlight %}
-{% endtabs %}
-
-Now, add an HTML div element with its `ID` attribute set to `container` in your **index.html** using the following code.
+Add a container `<div>` element in the **index.html** file where the Circular gauge will render:
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -134,7 +101,7 @@ Now, add an HTML div element with its `ID` attribute set to `container` in your 
 <html lang="en">
 
 <head>
-    <title>Essential JS 2</title>
+  <title>EJ2 Circular Gauge</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Typescript UI Controls" />
@@ -142,10 +109,9 @@ Now, add an HTML div element with its `ID` attribute set to `container` in your 
 </head>
 
 <body>
-    <div>
-        <!--HTML circular gauge element, which is going to render as Essential JS 2 Circular Gauge-->
-        <div id='container'></div>
-    </div>
+  <!--container which is going to render the Circular gauge-->
+  <div id='container'>
+  </div>
 </body>
 
 </html>
@@ -153,9 +119,29 @@ Now, add an HTML div element with its `ID` attribute set to `container` in your 
 {% endhighlight %}
 {% endtabs %}
 
-## Run the application
+### Step 2: Initialize the Circular gauge in TypeScript
 
-The quickstart project is configured to compile and run the application in the browser. Use the following command to run the application.
+In your **app.ts** file, import the Circular gauge component and initialize it:
+
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
+import { CircularGauge } from '@syncfusion/ej2-circulargauge';
+
+// initialize CircularGauge component
+let gauge: CircularGauge = new CircularGauge();
+
+// render initialized CircularGauge
+gauge.appendTo('#container');
+
+{% endhighlight %}
+{% endtabs %}
+
+The `appendTo()` method attaches the Circular gauge instance to the DOM element with the ID `container`.
+
+## Build and run the application
+
+The quickstart project uses webpack to compile TypeScript and bundle your application. To start the development server and run the application in your browser:
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
@@ -165,7 +151,11 @@ npm start
 {% endhighlight %}
 {% endtabs %}
 
-Output will be displayed as follows.
+The build process will compile your TypeScript code and launch the application at `http://localhost:8080/` (or another port if 8080 is busy). Your browser will automatically open to display your Circular gauge.
+
+### View a complete example
+
+The example below demonstrates a basic Circular gauge with default configuration:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -178,7 +168,7 @@ Output will be displayed as follows.
           
 {% previewsample "page.domainurl/code-snippet/circular-gauge/getting-started-cs1" %}
 
-## Set pointer value
+## Set Pointer Value
 
 You can change the pointer value in the above sample using [`value`](../api/circular-gauge/pointer#value-number) property in [`pointers`](../api/circular-gauge/pointer).
 
@@ -192,9 +182,3 @@ You can change the pointer value in the above sample using [`value`](../api/circ
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/circular-gauge/getting-started-cs2" %}
-
-## See also
-
-* [How to customize the appearance of circular gauge](../circular-gauge/gauge-appearance)
-* [How to work with pointers in circular gauge](../circular-gauge/gauge-pointers)
-* [How to work with ranges in circular gauge](../circular-gauge/gauge-ranges)

@@ -3,7 +3,7 @@ layout: post
 title: Legend in ##Platform_Name## Accumulation chart control | Syncfusion
 description: Learn here all about Legend in Syncfusion ##Platform_Name## Accumulation chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Legend 
+control: Legend
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -23,7 +23,7 @@ As like a chart, the legend is also available for accumulation charts, which giv
 {% include code-snippet/chart/chart-types-cs30/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs30" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -40,12 +40,12 @@ As like a chart, the legend is also available for accumulation charts, which giv
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs30" %}
 {% endif %}
 
->Note: To use the legends feature, inject the `AccumulationLegend` using the `Chart.Inject(AccumulationLegend)` method.
+> Note: To use the legends feature, inject the `AccumulationLegend` using the `Chart.Inject(AccumulationLegend)` method.
 
 ## Position and alignment
 
 By using the position property, you can position the legend at the `left`, `right`, `top` or `bottom` of the chart. You can also align the legend to `center`, `far` or `near` of the chart using the alignment property.
- 
+
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
@@ -56,7 +56,7 @@ By using the position property, you can position the legend at the `left`, `
 {% include code-snippet/chart/chart-types-cs31/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs31" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -87,7 +87,7 @@ You can reverse the order of the legend items by using the [`reverse`](https://e
 {% include code-snippet/chart/chart-types-cs32/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs32" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -118,7 +118,7 @@ To change the legend icon shape, use the `legendShape` property in the `series
 {% include code-snippet/chart/chart-types-cs33/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs33" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -149,7 +149,7 @@ The legend size can be changed by using the `width` and `height` properties of t
 {% include code-snippet/chart/chart-types-cs34/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs34" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -180,7 +180,7 @@ You can customize the size of the legend items by using the `shapeHeight` and `s
 {% include code-snippet/chart/chart-types-cs35/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs35" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -211,7 +211,7 @@ Paging will be enabled by default, when the legend items exceeds the legend boun
 {% include code-snippet/chart/chart-types-cs36/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs36" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -242,7 +242,7 @@ When the legend text exceeds the container, the text can be wrapped by using `te
 {% include code-snippet/chart/chart-types-cs37/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs37" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -273,7 +273,7 @@ You can set title for legend using `title` property in `legendSettings`. You can
 {% include code-snippet/chart/chart-types-cs38/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs38" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -304,7 +304,7 @@ By default, the page number will be enabled while legend paging. Now, you can di
 {% include code-snippet/chart/chart-types-cs39/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs39" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -335,7 +335,7 @@ The [`itemPadding`](../api/accumulation-chart/legendSettings/#itempadding) prope
 {% include code-snippet/chart/chart-types-cs40/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs40" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -366,7 +366,7 @@ The [`layout`](../api/accumulation-chart/legendSettingsModel/#layout) property i
 {% include code-snippet/chart/chart-types-cs473/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs473" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -381,4 +381,37 @@ The [`layout`](../api/accumulation-chart/legendSettingsModel/#layout) property i
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs473" %}
+{% endif %}
+
+## Legend template
+
+Legend templates allow you to replace default legend icons and text with custom HTML for each series. This enables branded styles, richer content (icons, multi-line text, badges), improved readability, and localization.
+
+You can customize the legend items by using the [`template`](https://ej2.syncfusion.com/documentation/api/accumulation-chart/legendSettingsModel) property of [`legendSettings`](https://ej2.syncfusion.com/documentation/api/accumulation-chart/legendSettingsModel). Legend interactions (click to toggle series) remain unless [`ToggleVisibility`] (https://ej2.syncfusion.com/documentation/api/accumulation-chart/legendsettings#togglevisibility) is set to false. Templates work with all legend positions, alignments, and paging.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs474/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs474/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs474" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs474/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs474/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs474" %}
 {% endif %}

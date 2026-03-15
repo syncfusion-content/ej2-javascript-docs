@@ -19,6 +19,7 @@ var chart3D = new ej.charts.Chart3D({
         type: 'Column'
     }],
     title: 'Olympic Medals',
+    enableExport: true,
     wallColor: 'transparent',
     enableRotation: true,
     rotation: 7,

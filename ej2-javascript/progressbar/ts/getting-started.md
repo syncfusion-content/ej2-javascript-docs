@@ -1,28 +1,28 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Progress Bar | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Progress Bar component of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## ProgressBar control | Syncfusion
+description:  Check out and learn about Getting started with ##Platform_Name## ProgressBar control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
-control: Getting started 
+control: ProgressBar  
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## Progress Bar Component
+# Getting started with ##Platform_Name## ProgressBar control
 
-This section explains the steps required to create a Progress Bar component using TypeScript and configure its properties with Essential<sup style="font-size:70%">&reg;</sup> JS 2. A Progress Bar visually represents the completion status of a task or process, making it useful for tracking file uploads, data processing, installations, and other long-running operations. This guide uses the [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
+This section explains the steps required to create the ProgressBar control using TypeScript and configure its properties using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
-The following list of dependencies are required to use the Progress Bar component in your application:
+The following list of dependencies are required to use the ProgressBar control in your application:
 
-```javascript
+```
 |-- @syncfusion/ej2-progressbar
     |-- @syncfusion/ej2-base
-    |-- @syncfusion/ej2-data: "*"
+    |-- @syncfusion/ej2-data
     |-- @syncfusion/ej2-svg-base
 ```
 
@@ -50,7 +50,7 @@ cd ej2-quickstart
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each component.
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
 
 The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
 
@@ -62,9 +62,28 @@ npm install
 {% endhighlight %}
 {% endtabs %}
 
+## Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
+
+Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
+
+{% tabs %}
+{% highlight css tabtitle="style.css" %}
+
+@import '../../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../../node_modules/@syncfusion/ej2-notifications/styles/material.css';
+
+{% endhighlight %}
+{% endtabs %}
+
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes and CSS reference for individual controls.
+
+> To use the combined control styles, make use of Syncfusion<sup style="font-size:70%">&reg;</sup> [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in the application.
+
 ## Add Progress Bar to the Application
 
-* Add an HTML div tag with its id attribute as `element` in your `index.html` file to initialize the Progress Bar component.
+* Add an HTML div tag with its id attribute as `element` in your `index.html` file to initialize the ProgressBar control.
 
 `[src/index.html]`
 
@@ -75,7 +94,7 @@ npm install
 <html lang="en">
 
 <head>
-<title>Essential JS 2 Progress Bar</title>
+<title>Essential JS 2 ProgressBar</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 <meta name="description" content="Essential JS 2" />
@@ -94,7 +113,7 @@ npm install
 {% endhighlight %}
 {% endtabs %}
 
-* Import the Progress Bar component to your `app.ts` file to instantiate a Progress Bar and append the instance to the `#element` container as shown.
+* Import the ProgressBar control to your `app.ts` file to instantiate a ProgressBar and append the instance to the `#element` as shown.
 
 `[src/app/app.ts]`
 
@@ -103,12 +122,12 @@ npm install
 
 import { ProgressBar } from '@syncfusion/ej2-progressbar';
 
-// Initialize Progress Bar component
+// Initialize ProgressBar component
 let progressBar: ProgressBar = new ProgressBar({
       value: 40
 });
 
-// Render initialized Progress Bar
+// Render initialized ProgressBar
 progressBar.appendTo('#element');
 
 {% endhighlight %}
@@ -116,7 +135,7 @@ progressBar.appendTo('#element');
 
 ## Run the application
 
-* Run the application using the following command. This starts the webpack development server and opens the application in your default browser.
+* Run the application in the browser using the following command.
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}

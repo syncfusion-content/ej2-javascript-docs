@@ -12,7 +12,7 @@ var numeric = new ej.inputs.NumericTextBox({
 
     numeric.appendTo('#strict');
 
-var numeric = new ej.inputs.NumericTextBox({
+var numeric1 = new ej.inputs.NumericTextBox({
         // sets number of decimal places to be allowed by the NumericTextBox
         decimals: 3,
         // sets number with 3 numbers of decimal places format
@@ -22,5 +22,5 @@ var numeric = new ej.inputs.NumericTextBox({
         floatLabelType: 'Auto'
     });
 
-    numeric.appendTo('#allow');
+    numeric1.appendTo('#allow');
 

@@ -348,9 +348,9 @@ Image caption and alternative text can be specified for the inserted image in th
 * Image Caption
 * Alternative Text.
 
-Through the Alternative Text option, set the alternative text for the image, when the image is not upload successfully into the Rich Text Editor.
+Selecting `Image Caption` wraps the image in a caption container where you can enter caption text directly within the editor. When the caption option is toggled, any caption text you have added is preserved so you can continue editing without losing content.
 
-By clicking the Image Caption, the image will get wrapped in an image element with a caption. Then, you can type caption content inside the Rich Text Editor.
+The `Alternative Text` option lets you provide descriptive text that appears when an image cannot be displayed in the Rich Text Editor.
 
 ## Configuring image display position
 
@@ -366,6 +366,68 @@ let defaultRTE: RichTextEditor = new RichTextEditor({
 defaultRTE.appendTo('#defaultRTE');
 
 ```
+
+## Configuring image alignment
+
+Images in the Rich Text Editor can be aligned using the alignment options in the image quick toolbar. To enable alignment, the `Align` item needs to be added to the image `quickToolbarSettings`. When an alignment option is applied, the editor sets the image's `display` style to `block`. This allows the image to behave as a block-level element within the content layout and align based on the selected option (`left`, `center`, or `right`).
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/rich-text-editor/image-alignment-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor/image-alignment-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/image-alignment-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/rich-text-editor/image-alignment-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor/image-alignment-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/image-alignment-cs1" %}
+{% endif %}
+
+## Text wrapping around images
+
+The Rich Text Editor provides control over how text flows around images using the `WrapText` options available in the image quick toolbar. To enable these options, the `WrapText` item needs to be added to the image `quickToolbarSettings`. The `WrapText` item provides options to float an image to the `left` or `right`, letting adjacent text flow alongside the image for more compact and flexible layouts.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/rich-text-editor/wrap-text-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor/wrap-text-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/wrap-text-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/rich-text-editor/wrap-text-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor/wrap-text-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/wrap-text-cs1" %}
+{% endif %}
 
 ## Hyperlinking images
 
@@ -390,6 +452,10 @@ You can allow the specific images alone to be uploaded using the the allowedType
     }
 
 ```
+
+## Paste images into the editor
+
+The Rich Text Editor supports pasting images directly into the editor content. You can paste single or multiple images from your file system directly into the editor.
 
 ## Drag and drop image insertion
 
@@ -440,7 +506,7 @@ You can prevent drag-and-drop action by setting the actionBegin argument cancel 
 
 ## Customizing the Image Quick Toolbar
 
-The Rich Text Editor allows you to customize the image quick toolbar, providing Essential tools such as 'Replace', 'Align', 'Caption', 'Remove', 'InsertLink', 'Display', 'AltText', and 'Dimension'.
+The Rich Text Editor allows you to customize the image quick toolbar, providing Essential tools such as 'Replace', 'Align', 'WrapText', 'Caption', 'Remove', 'InsertLink', 'Display', 'AltText', and 'Dimension'.
 
 By configuring these options in the [quickToolbarSettings](https://helpej2.syncfusion.com/documentation/api/rich-text-editor#quicktoolbarsettings) property, you can enhance the editor's functionality, enabling seamless image management and editing directly within your content. This customization ensures a user-friendly experience for efficiently manipulating image elements.
 

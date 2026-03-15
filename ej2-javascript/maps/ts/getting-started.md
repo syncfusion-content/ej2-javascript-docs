@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with ##Platform_Name## Maps component | Syncfusion
-description:  Check out and learn about Getting started with ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more details.
+description:  Checkout and learn about Getting started with ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -30,7 +30,7 @@ Before getting started, ensure you have:
 
 The Maps component requires the following minimum dependencies:
 
-```
+```javascript
 |-- @syncfusion/ej2-maps
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-data
@@ -38,7 +38,7 @@ The Maps component requires the following minimum dependencies:
     |-- @syncfusion/ej2-svg-base
 ```
 
-## Setup development environment
+## Set up development environment
 
 Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
@@ -50,7 +50,7 @@ git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quic
 {% endhighlight %}
 {% endtabs %}
 
-After cloning the application in the `ej2-quickstart` folder, run the following command to navigate to the `ej2-quickstart` folder.
+After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -78,9 +78,7 @@ npm install
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS2 Maps component can be added to the application. To get started, add the Maps component to the **app.ts** and **index.html** files using the following code.
 
-### Step 1: Add HTML Container
-
-Add an HTML div element to act as the Maps container in the **index.html** file using the following code.
+Add an HTML div element to act as the Maps element in the **index.html** file using the following code.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -94,7 +92,6 @@ Add an HTML div element to act as the Maps container in the **index.html** file 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Typescript UI Controls" />
     <meta name="author" content="Syncfusion" />
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2_version }}/material.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -107,10 +104,6 @@ Add an HTML div element to act as the Maps container in the **index.html** file 
 
 {% endhighlight %}
 {% endtabs %}
-
-> **Note:** It's recommended to set a height for the container element. If no height is specified, the Maps may not render properly.
-
-### Step 2: Initialize Maps Component
 
 Import the Maps component in the `app.ts` to initialize a Maps and append the Maps instance to the `#container`.
 
@@ -128,8 +121,6 @@ map.appendTo('#container');
 {% endhighlight %}
 {% endtabs %}
 
-### Step 3: Run the Application
-
 The quickstart project is configured to compile and run the application in the browser. Use the following command to run the application.
 
 {% tabs %}
@@ -140,25 +131,25 @@ npm start
 {% endhighlight %}
 {% endtabs %}
 
-Since no shape data is specified, the Maps component displays as an empty SVG element. The next sections demonstrate how to add geographic data and customize the map.
+Since no shape data is specified, the Maps displays as an empty SVG element. The next sections demonstrate how to add geographic data and customize the map.
 
 ## Module Injection
 
 The Maps component is segregated into individual feature-wise modules. To use a particular feature, inject its feature module using the `Maps.Inject()` method. The following modules are available in Maps along with their descriptions.
 
-* Annotations - Inject this provider to use the annotations feature.
-* Bubble - Inject this provider to use the bubble feature.
-* DataLabel - Inject this provider to use the data label feature.
-* Highlight - Inject this provider to use the highlight feature.
-* Legend - Inject this provider to use the legend feature.
-* Marker - Inject this provider to use the marker feature.
-* MapsTooltip - Inject this provider to use the tooltip feature.
-* NavigationLine - Inject this provider to use the navigation lines feature.
-* Selection - Inject this provider to use the selection feature.
-* Zoom - Inject this provider to use the zooming and panning feature.
-* Polygon - Inject this provider to use the polygon feature.
+* Annotations - Inject this provider to use annotations feature.
+* Bubble - Inject this provider to use bubble feature.
+* DataLabel - Inject this provider to use data label feature.
+* Highlight - Inject this provider to use highlight feature.
+* Legend - Inject this provider to use legend feature.
+* Marker - Inject this provider to use marker feature.
+* MapsTooltip - Inject this provider to use tooltip series.
+* NavigationLine - Inject this provider to use navigation lines feature.
+* Selection - Inject this provider to use selection feature.
+* Zoom - Inject this provider to use zooming and panning feature.
+* Polygon - Inject this provider to use polygon feature.
 
-Now import the MapsTooltip, DataLabel, and Legend modules from the maps package and inject them into the Maps component using the `Maps.Inject` method.
+Now import the MapsTooltip, DataLabel and Legend modules from maps package and inject it into the Maps component using `Maps.Inject` method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -169,65 +160,37 @@ Maps.Inject(Legend, DataLabel, MapsTooltip);
 {% endhighlight %}
 {% endtabs %}
 
-> **Important:** Always inject modules before using their associated features. If you try to enable a feature without injecting its module, it will not work.
-
 ## Render shapes from GeoJSON data
 
-Maps use the GeoJSON format to represent geographic features. GeoJSON is a standard format for encoding geographic data structures using JSON. This section explains how to bind GeoJSON data to render shapes on your map.
-
-### Understanding GeoJSON Structure
-
-GeoJSON data contains geographic features with geometry and properties. Here's a simplified example:
+This section explains how to bind GeoJSON data to the map.
 
 ```javascript
-let usMap: Object = {
+
+let usMap: Object =
+{
     "type": "FeatureCollection",
     "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
     "features": [
-        { 
-            "type": "Feature", 
-            "properties": { 
-                "iso_3166_2": "MA", 
-                "name": "Massachusetts", 
-                "admin": "United States of America" 
-            }, 
-            "geometry": { 
-                "type": "MultiPolygon", 
-                "coordinates": [ [ [ [ -70.801756294617277, 41.248076234530558 ] ] ] ] 
-            }
+        { "type": "Feature", "properties": { "iso_3166_2": "MA", "name": "Massachusetts", "admin": "United States of America" }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -70.801756294617277, 41.248076234530558 ]] ] ] }
         }
-        // ... more features
     ]
+    //..
 };
-```
 
-For a complete world map, you can use the following structure:
+```
 
 ```javascript
-export let world_map: object = {
-    "type": "FeatureCollection",
-    "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-    "features": [
-        { 
-            "type": "Feature", 
-            "properties": { 
-                "admin": "Afghanistan", 
-                "name": "Afghanistan", 
-                "continent": "Asia" 
-            }, 
-            // ... geometry data
-        }
-        // ... more countries
-    ]
-};
-```
 
-### Binding GeoJSON to Maps
+export let world_map: object =
+{
+     "type": "FeatureCollection",
+     "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+     "features": [{ "type": "Feature", "properties": { "admin": "Afghanistan", "name": "Afghanistan", "continent": "Asia" }, ...
+     };
+<!-- markdownlint-disable MD009 -->
+``` 
 
-The Maps component renders geographic features through **layers**. Each layer can display different geographic data. To render shapes:
-
-1. Add a layer to the [`layers`](../api/maps/index-default#layers) collection
-2. Bind your GeoJSON data to the [`shapeData`](../api/maps/layersettingsmodel#shapedata) property
+Elements in the maps will get rendered in the layers. So add a layer collection to the maps by using [`layers`](../api/maps/layers) property. Now bind the GeoJSON data to the [`shapeData`](../api/maps/layerSettingsModel/shapedata) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -240,21 +203,21 @@ The Maps component renders geographic features through **layers**. Each layer ca
           
 {% previewsample "page.domainurl/code-snippet/maps/default-map-cs170" %}
 
-> **Note:** Refer to the data values for [`world_map`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/world_map-710289613) here.
+>Note: Refer the data values for [`world_map`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/world_map-710289613) here.
 
 ## Bind data source to map
 
-The following properties in layers are used for binding a data source to the map.
+The following properties in layers are used for binding data source to map.
 
 * `dataSource`
 * `shapeDataPath`
 * `shapePropertyPath`
 
-The [`dataSource`](../api/maps/layersettingsmodel#datasource) property takes a collection value as input. For example, a list of objects can be provided as input. This data is further used in tooltips, data labels, bubbles, legends, and color mapping.
+The [`dataSource`](../api/maps/layerSettingsModel/datasource) property takes a collection value as input. For example, a list of objects can be provided as input. This data is further used in tooltips, data labels, bubbles, legends, and color mapping.
 
-The [`shapeDataPath`](../api/maps/layersettingsmodel#shapedatapath) property is used to refer to the data ID in the dataSource. The [`shapePropertyPath`](../api/maps/layerSettingsModel#shapepropertypath) property is used to refer to the column name in shapeData to identify the shape. Both properties are related to each other. When the values of the shapeDataPath property in the dataSource and the value of shapePropertyPath in the shapeData match, the associated object from the dataSource is bound to the corresponding shape.
+The [`shapeDataPath`](../api/maps/layerSettingsModel/shapedatapath) property is used to refer to the data ID in the dataSource. The [`shapePropertyPath`](../api/maps/layerSettingsModel/shapepropertypath) property is used to refer to the column name in shapeData to identify the shape. Both properties are related to each other. When the values of the shapeDataPath property in the dataSource and the value of shapePropertyPath in the shapeData match, the associated object from the dataSource is bound to the corresponding shape.
 
-The JSON object "electionData" is used as a data source below.
+The JSON object "electionData" is used as data source below.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -267,13 +230,13 @@ The JSON object "electionData" is used as a data source below.
           
 {% previewsample "page.domainurl/code-snippet/maps/default-map-cs171" %}
 
-> **Note:** Refer to the data values for [`world_map`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/world_map-710289613) here.
+> Note: Refer the data values for [`world_map`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/world_map-710289613) here.
 
 ## Apply Color Mapping
 
-Color mapping customizes shape colors based on data values. Specify the data field to evaluate using the [`colorValuePath`](../api/maps/shapeSettingsModel#colorvaluepath) property in [`shapeSettings`](../api/maps#shapeSettingsModel). Then define color assignments in the [`colorMapping`](../api/maps/shapeSettingsModel#colormapping) property.
+Color mapping customizes shape colors based on data values. Specify the data field to evaluate using the [`colorValuePath`](../api/maps/shapeSettingsModel/colorvaluepath) property in [`shapeSettings`](../api/maps/shapeSettingsModel). Then define color assignments in the [`colorMapping`](../api/maps/shapeSettingsModel/colormapping) property.
 
-Specify the color and value in the [`colorMapping`](../api/maps/shapeSettingsModel#colormapping) property. Here, '#D84444' is specified for 'Trump' and '#316DB5' is specified for 'Clinton'.
+Specify color and value in [`colorMapping`](../api/maps/shapeSettingsModel/colormapping) property. Here '#D84444' is specified for 'Trump' and '#316DB5' is specified for 'Clinton'.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -285,16 +248,6 @@ Specify the color and value in the [`colorMapping`](../api/maps/shapeSettingsMod
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/maps/default-map-cs172" %}
-
-### Color Mapping Types
-
-The Maps component supports multiple color mapping types:
-
-- **Equal Color Mapping**: Assign specific colors to specific values (shown above)
-- **Range Color Mapping**: Apply colors based on value ranges (e.g., 0-100, 100-500, 500+)
-- **Desaturation Color Mapping**: Use a single color with varying opacity based on values
-
-> **Tip**: Always use contrasting colors for better accessibility and readability. Consider color-blind friendly palettes for wider audience reach.
 
 ## Add Title for Maps
 
@@ -313,7 +266,7 @@ Titles provide context about the map content. Use the [`titleSettings`](../api/m
 
 ## Enable Legend
 
-Legends identify shape categories and colors. Enable the legend by setting the [`visible`](../api/maps/legendSettingsModel#visible) property to `true` in the [`legendSettings`](../api/maps/legendSettingsModel) object, and inject the `Legend` module:
+Legends identify shape categories and colors. Enable the legend by setting the [`visible`](../api/maps/legendSettingsModel/visible) property to `true` in the [`legendSettings`](../api/maps/legendSettingsModel) object, and inject the `Legend` module:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -328,7 +281,7 @@ Legends identify shape categories and colors. Enable the legend by setting the [
 
 ## Add Data Label
 
-Data labels display additional information directly on shapes. Enable data labels by setting the [`visible`](../api/maps/dataLabelSettingsModel#visible) property to `true` in the [`dataLabelSettings`](../api/maps/dataLabelSettingsModel) object, and inject the `DataLabel` module:
+Data labels display additional information directly on shapes. Enable data labels by setting the [`visible`](../api/maps/dataLabelSettingsModel/visible) property to `true` in the [`dataLabelSettings`](../api/maps/dataLabelSettingsModel) object, and inject the `DataLabel` module:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -343,7 +296,7 @@ Data labels display additional information directly on shapes. Enable data label
 
 ## Enable Tooltip
 
-Tooltips display information on hover and are useful when space constraints prevent using data labels. Enable tooltips by setting the [`visible`](../api/maps/tooltipSettingsModel#visible) property to `true` in the [`tooltipSettings`](../api/maps/tooltipSettingsModel) object, and inject the `MapsTooltip` module:
+Tooltips display information on hover, useful when space constraints prevent using data labels. Enable tooltips by setting the [`visible`](../api/maps/tooltipSettingsModel/visible) property to `true` in the [`tooltipSettings`](../api/maps/tooltipSettingsModel) object, and inject the `MapsTooltip` module:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -355,10 +308,3 @@ Tooltips display information on hover and are useful when space constraints prev
 {% endtabs %}
           
 {% previewsample "page.domainurl/code-snippet/maps/default-map-cs176" %}
-
-## See also
-
-* [How to add multiple layers in Maps](./layers#sublayer)
-* [How to add markers in Maps](./markers)
-* [How to add bubbles in Maps](./bubble)
-* [How to add navigation lines in Maps](./navigation-line)

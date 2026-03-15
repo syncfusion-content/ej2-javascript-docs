@@ -258,3 +258,43 @@ By setting the [`enableHighlight`](../api/accumulation-chart/tooltipSettingsMode
 
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs476" %}
 {% endif %}
+
+## Follow pointer
+
+The follow pointer feature enables the tooltip to follow the mouse cursor or touch pointer as users interact with the accumulation chart. This provides a more dynamic and intuitive experience by keeping the tooltip close to the user's point of interaction.
+
+Enable this feature by setting the [`followPointer`](../api/accumulation-chart/tooltipSettingsModel#followpointer) property to **true**:
+
+```jsx
+tooltip: { 
+	enable: true, 
+	followPointer: true 
+}
+```
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/tooltip-followPointer-Acc/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/tooltip-followPointer-Acc/js/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/tooltip-followPointer-Acc" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/tooltip-followPointer-Acc/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/tooltip-followPointer-Acc/js/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/tooltip-followPointer-Acc" %}
+{% endif %}

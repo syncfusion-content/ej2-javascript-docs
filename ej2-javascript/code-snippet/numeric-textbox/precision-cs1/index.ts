@@ -17,7 +17,7 @@ import {NumericTextBox} from '@syncfusion/ej2-inputs';
 
     numeric.appendTo('#strict');
 
-let numeric: NumericTextBox = new NumericTextBox({
+let numeric1: NumericTextBox = new NumericTextBox({
         // sets number of decimal places to be allowed by the NumericTextBox
         decimals: 3,
         // sets number with 3 numbers of decimal places format
@@ -27,7 +27,7 @@ let numeric: NumericTextBox = new NumericTextBox({
         floatLabelType: 'Auto'
     });
 
-    numeric.appendTo('#allow');
+    numeric1.appendTo('#allow');
 
 
 

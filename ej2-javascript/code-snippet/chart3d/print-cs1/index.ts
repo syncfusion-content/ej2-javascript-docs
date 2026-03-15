@@ -22,7 +22,8 @@ let chart: Chart3D = new Chart3D({
         xName: 'country', yName: 'gold',
         name: 'Gold', type: 'Column'
     }],
-    title: 'Olympic Medals',        
+    title: 'Olympic Medals',
+    enableExport: true,        
     wallColor: 'transparent',
     enableRotation: true,
     rotation: 7,

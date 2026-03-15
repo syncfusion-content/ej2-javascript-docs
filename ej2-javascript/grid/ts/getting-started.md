@@ -73,21 +73,21 @@ npm install
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls to match the style of your application by referring to one of the built-in themes.
 
-The quickstart application is preconfigured to use the **Material** theme in the **~/src/styles/styles.css** file, as shown below: 
+The quickstart application is preconfigured to use the **Fluent2** theme in the **~/src/styles/styles.css** file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
 
-@import '../../node_modules/@syncfusion/ej2-base/styles/material.css';  
-@import '../../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
-@import '../../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
-@import '../../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
-@import '../../node_modules/@syncfusion/ej2-inputs/styles/material.css';  
-@import '../../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-notifications/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
+@import '../../node_modules/@syncfusion/ej2-base/styles/fluent2.css';  
+@import '../../node_modules/@syncfusion/ej2-buttons/styles/fluent2.css';  
+@import '../../node_modules/@syncfusion/ej2-calendars/styles/fluent2.css';  
+@import '../../node_modules/@syncfusion/ej2-dropdowns/styles/fluent2.css';  
+@import '../../node_modules/@syncfusion/ej2-inputs/styles/fluent2.css';  
+@import '../../node_modules/@syncfusion/ej2-navigations/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-popups/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-splitbuttons/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-notifications/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-angular-grids/styles/fluent2.css';
 
 {% endhighlight %}
 {% endtabs %}

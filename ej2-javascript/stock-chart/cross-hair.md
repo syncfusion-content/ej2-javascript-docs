@@ -136,3 +136,44 @@ Enabling the [`snapToData`](../api/chart/crosshairSettingsModel/#snaptodata) pro
 {% endif %}
 
 >Note: To use crosshair feature, we need to inject `Crosshair` module `StockChart.Inject(Crosshair)` method.
+
+## Crosshair label customization
+
+The [`crosshairLabelRender`](../api/stock-chart/stockChartModel#crosshairlabelrender) event is triggered before each crosshair axis label is rendered in the stock chart. This event provides the ability to customize the appearance and content of crosshair labels, or to conditionally prevent specific labels from being displayed.
+
+The event arguments include:
+
+* `text` – The default text for the crosshair label. You can modify this value to display custom content.
+* `value` – The actual data value at the crosshair position.
+* `axisName` – The name of the axis associated with the label.
+* `axisOrientation` – The orientation of the axis, either `Horizontal` or `Vertical`.
+* `textStyle` – Font properties for the label text, allowing customization of font family, size, weight, and color.
+* `fill` – The background color of the crosshair label.
+* `cancel` – Set this to **true** to prevent the label from being rendered.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/stock-chart/crosshair-label-render/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/stock-chart/crosshair-label-render/js/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/stock-chart/crosshair-label-render" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/stock-chart/crosshair-label-render/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/stock-chart/crosshair-label-render/js/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/stock-chart/crosshair-label-render" %}
+{% endif %}

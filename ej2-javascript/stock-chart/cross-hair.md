@@ -158,7 +158,7 @@ The event arguments include:
 {% include code-snippet/stock-chart/crosshair-label-render/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/stock-chart/crosshair-label-render/js/index.html %}
+{% include code-snippet/stock-chart/crosshair-label-render/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -171,7 +171,7 @@ The event arguments include:
 {% include code-snippet/stock-chart/crosshair-label-render/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/stock-chart/crosshair-label-render/js/index.html %}
+{% include code-snippet/stock-chart/crosshair-label-render/index.html %}
 {% endhighlight %}
 {% endtabs %}
 

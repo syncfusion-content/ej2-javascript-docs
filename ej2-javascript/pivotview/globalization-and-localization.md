@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Globalization and localization in ##Platform_Name## Pivotview control
 
-Globalization is the combination of Internationalization and localization. You can adapt the component to various languages by parsing and formatting the date or number [`Internationalization`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript) & adding culture specific customization and translation to the text [`Localization`](https://ej2.syncfusion.com/documentation/common/localization.html?lang=typescript).
+Globalization is the combination of Internationalization and localization. You can adapt the component to various languages by parsing and formatting the date or number [`Internationalization`](https://ej2.syncfusion.com/documentation/common/internationalization) & adding culture specific customization and translation to the text [`Localization`](https://ej2.syncfusion.com/documentation/common/localization.html?lang=typescript).
 
 ## Internationalization
 
@@ -119,9 +119,9 @@ The Internationalization library is used to globalize number, date, and time val
 {% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs48" %}
 {% endif %}
 
-> * In the above sample, `Amount` field is formatted by [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-numbers). For date formats, the value strings are formatted by [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-datetime).
+> * In the above sample, `Amount` field is formatted by [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/common/internationalization#manipulating-numbers). For date formats, the value strings are formatted by [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/common/internationalization#manipulating-datetime).
 > * By default, `locale` value is `en-US`. If you want to change the `en-US` culture to a different culture, you have to change  the `locale` accordingly.
-> * Also, you will find more details about support format string for number formats and data formats [`here`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#supported-format-string).
+> * Also, you will find more details about support format string for number formats and data formats [`here`](https://ej2.syncfusion.com/documentation/common/internationalization#supported-format-string-1).
 
 ### Decimal separators
 

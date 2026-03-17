@@ -70,7 +70,7 @@ Add a `div` element for the Sankey in `index.html` and initialize it from `index
 {% include code-snippet/sankey/getting-started/initialize-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/sankey/getting-started/initialize-cs1/js/index.html %}
+{% include code-snippet/sankey/getting-started/initialize-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -85,7 +85,7 @@ Provide nodes and links to the Sankey component via the data configuration. See 
 {% include code-snippet/sankey/getting-started/data-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/sankey/getting-started/data-cs1/js/index.html %}
+{% include code-snippet/sankey/getting-started/data-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -100,7 +100,7 @@ Enable tooltip and legend by injecting required modules when using modular impor
 {% include code-snippet/sankey/getting-started/tooltip-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/sankey/getting-started/tooltip-cs1/js/index.html %}
+{% include code-snippet/sankey/getting-started/tooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 

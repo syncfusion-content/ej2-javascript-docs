@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Controlling Editor Access in ##Platform_Name## Block Editor control
 
-The Syncfusion Angular Block Editor provides read-only modes to control user interaction with the editor. This allows users to view formatted content without editing. This features are useful for displaying content without modifications or temporarily restricting input.
+The Syncfusion Block Editor provides read-only modes to control user interaction with the editor. This allows users to view formatted content without editing. This features are useful for displaying content without modifications or temporarily restricting input.
 
 ## Read-only mode
 

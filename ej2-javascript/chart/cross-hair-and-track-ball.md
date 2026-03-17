@@ -228,7 +228,7 @@ Event arguments:
 {% include code-snippet/chart/crosshair-label-render/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/crosshair-label-render/js/index.html %}
+{% include code-snippet/chart/crosshair-label-render/index.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
 {% include code-snippet/chart/crosshair-label-render/datasource.ts %}
@@ -244,7 +244,7 @@ Event arguments:
 {% include code-snippet/chart/crosshair-label-render/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/crosshair-label-render/js/index.html %}
+{% include code-snippet/chart/crosshair-label-render/index.html %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.js" %}
 {% include code-snippet/chart/crosshair-label-render/datasource.ts %}

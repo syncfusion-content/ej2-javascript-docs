@@ -127,4 +127,4 @@ let chart = new ej.charts.Chart({
         split: true
     },
 });
-chart.appendTo('#container');
+chart.appendTo('#element');

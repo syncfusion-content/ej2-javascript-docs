@@ -178,7 +178,7 @@ You can use the `relateTo` property to position the Inline AI Assist relative to
 
 ## Configure target property
 
-You can use the `target` property to position the Inline AI Assist relative to a specific DOM element. It accepts either a CSS selector string (e.g., '.container' or '#id') or an HTMLElement.
+The `target` property specifies the element or CSS selector where the Inline AI Assist will be appended. It accepts either a CSS selector string (e.g., '.container' or '#id') or an HTMLElement.
 
 {% tabs %}
 {% highlight js tabtitle="index.ts" %}

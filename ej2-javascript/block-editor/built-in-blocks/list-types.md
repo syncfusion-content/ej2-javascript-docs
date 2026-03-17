@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Lists in ##Platform_Name## Block Editor control
 
-The Syncfusion Angular Block Editor control uses list blocks to organize content into structured lists. To render a specific list type, set the [blockType](../../api/blockeditor/blockModel#blockType) property of the `BlockModel` to `BulletList`, `NumberedList`, or `Checklist`. Bullet lists are ideal for unordered items, numbered lists for ordered items, and checklists for interactive to-do lists.
+The Syncfusion Block Editor control uses list blocks to organize content into structured lists. To render a specific list type, set the [blockType](../../api/blockeditor/blockModel#blockType) property of the `BlockModel` to `BulletList`, `NumberedList`, or `Checklist`. Bullet lists are ideal for unordered items, numbered lists for ordered items, and checklists for interactive to-do lists.
 
 ## Configuring the Bullet List
 

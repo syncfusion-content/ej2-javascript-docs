@@ -271,7 +271,6 @@ tooltip: {
 	followPointer: true 
 }
 ```
-
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
@@ -279,7 +278,7 @@ tooltip: {
 {% include code-snippet/chart/tooltip-followPointer-Acc/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/tooltip-followPointer-Acc/js/index.html %}
+{% include code-snippet/chart/tooltip-followPointer-Acc/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -292,7 +291,7 @@ tooltip: {
 {% include code-snippet/chart/tooltip-followPointer-Acc/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/tooltip-followPointer-Acc/js/index.html %}
+{% include code-snippet/chart/tooltip-followPointer-Acc/index.html %}
 {% endhighlight %}
 {% endtabs %}
 

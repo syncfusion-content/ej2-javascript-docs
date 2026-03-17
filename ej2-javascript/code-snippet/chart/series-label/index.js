@@ -128,4 +128,4 @@ let chart = new ej.charts.Chart({
         }
     ]
 });
-chart.appendTo('#container');
+chart.appendTo('#element');

@@ -32,4 +32,4 @@ let chart: Chart = new Chart({
     ],
     crosshair: {enable: true}
 });
-chart.appendTo('#container');
+chart.appendTo('#element');

@@ -15,16 +15,21 @@ const blockEditor: BlockEditor = new BlockEditor({
         },
         {
             blockType: 'Quote',
-            content: [
-                {
-                    contentType: ContentType.Text,
-                    content: 'Select any text in the editor to open the Inline Toolbar'
-                }
-            ]
+            properties:{
+                children:[{
+                    blockType: 'Paragraph',
+                    content: [
+                        {
+                            contentType: ContentType.Text,
+                            content: 'Select any text in the editor to open the Inline Toolbar'
+                        }
+                    ]
+                }]
+            }
         }
     ],
     inlineToolbarSettings: {
-        popupWidth: '100px',
+        popupWidth: 'auto',
         enable: true,
         items: [ 'Transform', 'Bold', 'InlineCode', 'Link' ],
         itemClick: (args: ToolbarItemClickEventArgs) => {

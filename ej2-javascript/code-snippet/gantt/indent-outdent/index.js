@@ -1,9 +1,9 @@
-ej.gantt.Gantt.Inject(ej.gantt.Edit,ej.gantt.Toolbar,ej.gantt.Selection);
+ej.gantt.Gantt.Inject(ej.gantt.Edit, ej.gantt.Toolbar, ej.gantt.Selection);
 
-var ganttChart = new Gantt({
+var ganttChart = new ej.gantt.Gantt({
     dataSource: ganttData,
     height: '420px',
-    treeColumnIndex:1,
+    treeColumnIndex: 1,
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
@@ -27,7 +27,7 @@ var ganttChart = new Gantt({
         allowDeleting: true
     },
     splitterSettings: {
-      position: '75%'
+        position: '75%'
     }
 });
 ganttChart.appendTo('#Gantt');

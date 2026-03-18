@@ -66,12 +66,17 @@ var blockEditor = new ej.blockeditor.BlockEditor({
         },
         {
             blockType: 'Quote',
-            content: [
-                {
-                    contentType: ej.blockeditor.ContentType.Text,
-                    content: 'Right-click anywhere in this editor to open the custom context menu. Try different areas and blocks.'
-                }
-            ]
+            properties:{
+                children:[{
+                    blockType: 'Paragraph',
+                    content: [
+                        {
+                            contentType: ej.blockeditor.ContentType.Text,
+                            content: 'Right-click anywhere in this editor to open the custom context menu. Try different areas and blocks.'
+                        }
+                    ]
+                }]
+            }
         }
     ],
     contextMenuSettings: {

@@ -1,5 +1,4 @@
 import { Chart, ColumnSeries, Category, StackingColumnSeries, DataLabel, Legend, Tooltip } from '@syncfusion/ej2-charts';
-import '../../../../node_modules/es6-promise/dist/es6-promise';
 Chart.Inject(ColumnSeries, Category, StackingColumnSeries, DataLabel, Legend, Tooltip);
 
 const SalesData = [

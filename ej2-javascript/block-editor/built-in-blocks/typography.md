@@ -113,7 +113,7 @@ Heading blocks create document titles and section headers. These blocks help str
 
 By using the [properties](../../api/blockeditor/blockModel#properties), you can set the heading level using the `level` property, with `1` being the highest level (title) and `4` being the lowest (subsection).
 
-### BlockType & Properties
+### Block type & properties
 
 ```typescript
 // Adding heading block
@@ -178,7 +178,7 @@ You can configure placeholder text for block using the [placeholder](../../api/b
 
 A Divider block inserts a horizontal line to separate content. Render it by setting the [blockType](../../api/blockeditor/blockModel#blockType) to `Divider`.
 
-### BlockType & Properties
+### Block type & properties
 
 ```typescript
 // Adding divider block

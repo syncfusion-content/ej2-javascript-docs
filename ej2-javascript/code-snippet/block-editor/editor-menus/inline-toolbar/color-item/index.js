@@ -15,16 +15,21 @@ var blockEditor = new ej.blockeditor.BlockEditor({
         },
         {
             blockType: 'Quote',
-            content: [
-                {
-                    contentType: ej.blockeditor.ContentType.Text,
-                    content: 'Select any text in the editor to open the Inline Toolbar'
-                }
-            ]
+            properties:{
+                children:[{
+                    blockType: 'Paragraph',
+                    content: [
+                        {
+                            contentType: ej.blockeditor.ContentType.Text,
+                            content: 'Select any text in the editor to open the Inline Toolbar'
+                        }
+                    ]
+                }]
+            }
         }
     ],
     inlineToolbarSettings: {
-        popupWidth: '100px',
+        popupWidth: 'auto',
         enable: true,
         items: customToolbarItems,
         itemClick: function(args) {

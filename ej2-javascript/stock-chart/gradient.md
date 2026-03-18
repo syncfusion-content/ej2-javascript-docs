@@ -166,25 +166,25 @@ Apply a radial gradient to a technical indicator by adding `radialGradient` insi
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/stock-chart/chart-gradient-cs3/index.ts %}
+{% include code-snippet/stock-chart/chart-gradient-cs5/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/stock-chart/chart-gradient-cs3/index.html %}
+{% include code-snippet/stock-chart/chart-gradient-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/stock-chart/chart-gradient-cs3" %}
+{% previewsample "page.domainurl/code-snippet/stock-chart/chart-gradient-cs5" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/stock-chart/chart-gradient-cs3/index.js %}
+{% include code-snippet/stock-chart/chart-gradient-cs5/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/stock-chart/chart-gradient-cs3/index.html %}
+{% include code-snippet/stock-chart/chart-gradient-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/stock-chart/chart-gradient-cs3" %}
+{% previewsample "page.domainurl/code-snippet/stock-chart/chart-gradient-cs5" %}
 {% endif %}

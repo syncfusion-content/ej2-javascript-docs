@@ -24,7 +24,7 @@ Enable series labels using the [`labelSettings`](../api/chart/seriesModel#labels
 {% include code-snippet/chart/series-label/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/series-label/js/index.html %}
+{% include code-snippet/chart/series-label/index.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
 {% include code-snippet/chart/series-label/datasource.ts %}
@@ -40,7 +40,7 @@ Enable series labels using the [`labelSettings`](../api/chart/seriesModel#labels
 {% include code-snippet/chart/series-label/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/series-label/js/index.html %}
+{% include code-snippet/chart/series-label/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -67,7 +67,7 @@ Customize the appearance of series labels using the following properties:
 {% include code-snippet/chart/series-label-customization/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/series-label-customization/js/index.html %}
+{% include code-snippet/chart/series-label-customization/index.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
 {% include code-snippet/chart/series-label-customization/datasource.ts %}
@@ -83,7 +83,7 @@ Customize the appearance of series labels using the following properties:
 {% include code-snippet/chart/series-label-customization/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/series-label-customization/js/index.html %}
+{% include code-snippet/chart/series-label-customization/index.html %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -99,6 +99,24 @@ A diagonal linear gradient can be applied per data point using the pointRender e
 
 ## Radial gradient
 
+A radial gradient blends colors outward from a central point, creating a circular or elliptical color progression. Configure it by adding `radialGradient` inside the target element and define one or more color stops to control how colors transition from the center to the outer edge. Set the gradient’s center, optional focal point, and radius using `radialGradient` properties. The color stop values such as `offset`, `color`, `opacity`, `lighten`, and `brighten` are set using the `gradientColorStop` property.
+
+In the `radialGradient`:
+
+- `cx` - Sets the normalized horizontal center of the gradient (0 to 1).
+- `cy` - Sets the normalized vertical center of the gradient (0 to 1).
+- `fx` - Sets the normalized horizontal focal point from which the gradient appears to originate (0 to 1).
+- `fy` - Sets the normalized vertical focal point (0 to 1).
+- `r` - Sets the normalized radius of the gradient circle (0 to 1).
+
+In the `gradientColorStop`:
+
+- `offset` - Specifies the position of the color stop along the gradient (0 to 100).
+- `color` - Sets the color at the stop.
+- `opacity` - Defines the transparency of the stop (0 to 1).
+- `lighten` - Adjusts lightness at the stop. Positive values lighten the color. Range: 0 to 1.
+- `brighten` - Adjusts brightness at the stop. Positive values increase brightness; negative values decrease it. Ranges: -1 to 1.
+
 ### Apply a radial gradient to the entire series
 
 A radial gradient can be applied directly at the series level. The same gradient is applied uniformly to all data points, legend symbols and tooltip markers.

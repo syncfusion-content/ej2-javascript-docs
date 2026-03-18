@@ -13,14 +13,20 @@ var blockEditor = new ej.blockeditor.BlockEditor({
         },
         {
             blockType: 'Quote',
-            content: [
-                {
-                    contentType: ej.blockeditor.ContentType.Text,
-                    content: 'Hover over any block and click the drag handle icon to see custom actions.'
-                }
-            ]
+            properties:{
+                children:[{
+                    blockType: 'Paragraph',
+                    content: [
+                        {
+                            contentType: ej.blockeditor.ContentType.Text,
+                            content: 'Hover over any block and click the drag handle icon to see custom actions.'
+                        }
+                    ]
+                }]
+            }
         }
     ],
+    
 
     // Block Action Menu Configuration
     blockActionMenuSettings: {

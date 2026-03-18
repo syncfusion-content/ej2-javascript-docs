@@ -261,7 +261,7 @@ tooltip: {
 {% include code-snippet/chart/tooltip-split/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/tooltip-split/js/index.html %}
+{% include code-snippet/chart/tooltip-split/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -274,7 +274,7 @@ tooltip: {
 {% include code-snippet/chart/tooltip-split/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/tooltip-split/js/index.html %}
+{% include code-snippet/chart/tooltip-split/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -301,7 +301,7 @@ tooltip: {
 {% include code-snippet/chart/tooltip-followPointer/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/tooltip-followPointer/js/index.html %}
+{% include code-snippet/chart/tooltip-followPointer/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -314,7 +314,7 @@ tooltip: {
 {% include code-snippet/chart/tooltip-followPointer/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/tooltip-followPointer/js/index.html %}
+{% include code-snippet/chart/tooltip-followPointer/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -341,7 +341,7 @@ tooltip: {
 {% include code-snippet/chart/tooltip-distance/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/tooltip-distance/js/index.html %}
+{% include code-snippet/chart/tooltip-distance/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -354,7 +354,7 @@ tooltip: {
 {% include code-snippet/chart/tooltip-distance/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/tooltip-distance/js/index.html %}
+{% include code-snippet/chart/tooltip-distance/index.html %}
 {% endhighlight %}
 {% endtabs %}
 

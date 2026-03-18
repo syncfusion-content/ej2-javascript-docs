@@ -72,4 +72,4 @@ let chart: Chart = new Chart({
         }
     ]
 });
-chart.appendTo('#container');
+chart.appendTo('#element');

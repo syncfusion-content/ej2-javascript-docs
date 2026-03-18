@@ -44,4 +44,4 @@ let chart = new ej.charts.StockChart({
         dataSource: stockData1, xName: 'x', yName: 'high', type: 'SplineArea', opacity: 0.5
     }]
 });
-chart.appendTo('#container');
+chart.appendTo('#element');

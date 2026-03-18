@@ -196,11 +196,111 @@ The Inline Toolbar appears when a text is selected in the editor, providing quic
 
 The Inline Toolbar includes the following built-in formatting options:
 
--   **Text Styles**: Bold, Italic, Underline, and Strikethrough.
+-  **Text Styles**: Bold, Italic, Underline, and Strikethrough.
 -   **Superscript/Subscript**: For mathematical or scientific notations.
 -   **Case Conversion**: Change text to uppercase or lowercase.
 -   **Text Color**: Change the color of the selected text.
 -   **Background Color**: Change the background color of the selected text.
+
+### Optional items
+
+The inline toolbar can handle custom items like `Transform`, `InlineCode`, `Link` by passing array of string values in `items` property in [inlineToolbarSettings](../api/blockeditor#inlinetoolbarsettings).
+
+#### Transform block options
+
+The inline toolbar now includes `transform` options to quickly convert blocks between different types. You can use the [transformSettings](../api/blockeditor#transformSettings) property to handle customization of the transform menu in the inline toolbar. This allows you to configure available block transformations, define custom menu items with text and icons, and control their behavior.
+
+#### Built-in default transform block options
+
+Below are the built-in transform block options available:
+
+| Built-in transform Block Types          |
+|-----------------------------------------|
+| Paragraph                               |
+| Heading1 to Heading4                    |
+| Checklist                               |
+| BulletList                              |
+| NumberedList                            |
+
+> For blocks such as `code`, `callout`, `quote`, `divider`, `image`, `table` and `collapsible` transform options not available. Instead they will be added as a new block.
+
+#### Events
+
+The following events are available for the transform toolbar item menu:
+
+|Name|Args|Description|
+|---|---|---|
+|[itemSelect](../api/blockeditor/transformSettingsModel#itemselect)|TransformItemSelectEventArgs|Triggers when a command item is clicked.|
+
+#### Inline code support
+
+Added inline code formatting in the toolbar, with light syntax highlighting and seamless integration with other text formatting options.
+
+#### Inline link support
+
+Added inline link formatting in the toolbar, by link item click, link dialog opens and with proper value updation, link can be inserted on text.
+
+The following example demonstrates how to customize the transform, inline code, link items.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/block-editor/editor-menus/inline-toolbar/transform-item/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/block-editor/editor-menus/inline-toolbar/transform-item/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/editor-menus/inline-toolbar/transform-item" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/block-editor/editor-menus/inline-toolbar/transform-item/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/block-editor/editor-menus/inline-toolbar/transform-item/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/editor-menus/inline-toolbar/transform-item" %}
+{% endif %}
+
+#### Font and background color support
+
+Enhanced font and background color options in the inline toolbar with integrated ColorPicker. You can use the [fontColorSettings](../api/blockeditor#fontColorSettings), [backgroundColorSettings](../api/blockeditor#backgroundColorSettings) properties to handle for text customization, highlighting, predefined palettes, custom inputs, and quick previews.
+
+The following example demonstrates how to customize the font and background color toolbar items.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/block-editor/editor-menus/inline-toolbar/color-item/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/block-editor/editor-menus/inline-toolbar/color-item/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/editor-menus/inline-toolbar/color-item" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/block-editor/editor-menus/inline-toolbar/color-item/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/block-editor/editor-menus/inline-toolbar/color-item/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/block-editor/editor-menus/inline-toolbar/color-item" %}
+{% endif %}
 
 ### Customize Inline Toolbar
 

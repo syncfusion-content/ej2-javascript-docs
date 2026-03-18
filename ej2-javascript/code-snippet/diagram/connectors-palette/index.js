@@ -57,7 +57,7 @@ var palette = new ej.diagrams.SymbolPalette({
     },
   ],
   width: '100%',
-  height: '150px',
+  height: '471px',
 });
 palette.appendTo('#palette');
 

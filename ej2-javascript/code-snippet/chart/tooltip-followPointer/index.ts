@@ -50,4 +50,4 @@ let chart: Chart = new Chart({
         followPointer: true
     },
 });
-chart.appendTo('#container');
+chart.appendTo('#element');

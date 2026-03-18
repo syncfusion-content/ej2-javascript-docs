@@ -57,19 +57,19 @@ The following example establishes dependencies. This code renders connector line
 Task relationships are categorized into four types based on start and finish dates:
 - Start to Start (SS): Successor starts with predecessor.
 
-    ![Start to Start dependency](../images/ss.png)
+    ![Start to Start dependency](./images/ss.png)
 
 - Start to Finish (SF): Successor finishes when predecessor starts.
 
-    ![Start to Finish dependency](../images/sf.png)
+    ![Start to Finish dependency](./images/sf.png)
 
 - Finish to Start (FS): Successor starts after predecessor finishes (default).
 
-    ![Finish to Start dependency](../images/fs.png)
+    ![Finish to Start dependency](./images/fs.png)
 
 - Finish to Finish (FF): Successor finishes with predecessor.
 
-    ![Finish to Finish dependency](../images/ff.png)
+    ![Finish to Finish dependency](./images/ff.png)
 
 Specify types in the data source (e.g., '2SS+1h') for hour-based offsets.
 
@@ -104,6 +104,41 @@ The following example uses duration units. This code applies offsets such as '2F
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/gantt/predecessor-cs2" %}
+{% endif %}
+
+## Predecessor offset synchronization on initial load
+
+The [autoUpdatePredecessorOffset](../api/gantt#autoupdatepredecessoroffset) property specifies whether the Gantt Chart automatically adjusts and synchronizes the predecessor offset values (e.g., "+2", "-1d") in the predecessor column display and the underlying data during initial data load/binding, so they match the actually rendered taskbar positions and dependency lines.
+
+- When **enabled**: During the initial data binding/load, the Gantt recalculates the offset portions of predecessor strings based on the final rendered dates after applying calendar rules, weekends, holidays, and working times. The predecessor column in the grid and the corresponding data field values are updated to reflect these accurate offsets - preventing visual or data mismatch between what is displayed and what was actually used for rendering dependency lines - without affecting task dates, durations, or triggering any scheduling/validation logic.
+
+- When **disabled**: The predecessor column displays exactly the offset values provided in the original data source, even if they no longer match the rendered dependency lines due to calendar adjustments. This can result in visual inconsistencies where the grid shows one offset (e.g., "5FS+0") while the drawn arrow connects tasks with a different effective offset (e.g., equivalent to +2 due to non-working days). No automatic correction occurs during load.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/predecessor-cs7/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/predecessor-cs7/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/predecessor-cs7" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/predecessor-cs7/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/predecessor-cs7/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/predecessor-cs7" %}
 {% endif %}
 
 ## Disable automatic dependency offset updates

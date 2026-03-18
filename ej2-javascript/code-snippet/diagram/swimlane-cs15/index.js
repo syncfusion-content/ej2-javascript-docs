@@ -96,13 +96,13 @@ var swimlaneShapes = [
     },
   ];
   function setPaletteNodeDefaults(node) {
-    node.width = 70;
-    node.height = 70;
+    node.width = 100;
+    node.height = 100;
     node.style.strokeColor = '#3A3A3A';
   }
   var palette = new ej.diagrams.SymbolPalette({
     expandMode: 'Multiple',
-    width:'30%',
+    width:'20%',
     palettes: [
       {
         id: 'swimlane',
@@ -138,7 +138,7 @@ var swimlaneShapes = [
   
   let diagram = new ej.diagrams.Diagram(
     {
-      width: '70%',
+      width: '80%',
       height: 900,
     },
     '#element'

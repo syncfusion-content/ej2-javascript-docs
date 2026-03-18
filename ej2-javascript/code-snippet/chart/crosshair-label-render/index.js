@@ -37,4 +37,4 @@ let chart = new ej.charts.Chart({
     ],
     crosshair: {enable: true}
 });
-chart.appendTo('#container');
+chart.appendTo('#element');

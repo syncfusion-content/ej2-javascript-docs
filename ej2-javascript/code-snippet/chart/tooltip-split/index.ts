@@ -71,4 +71,4 @@ let chart: Chart = new Chart({
         split: true
     },
 });
-chart.appendTo('#container');
+chart.appendTo('#element');

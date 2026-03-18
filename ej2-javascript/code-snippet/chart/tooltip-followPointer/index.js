@@ -106,4 +106,4 @@ let chart = new ej.charts.Chart({
         followPointer: true
     },
 });
-chart.appendTo('#container');
+chart.appendTo('#element');

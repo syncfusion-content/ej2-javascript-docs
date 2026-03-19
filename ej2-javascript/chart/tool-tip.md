@@ -247,7 +247,7 @@ The split tooltip displays a separate tooltip for each series at the same data p
 
 Enable this feature by setting the [`split`](../api/chart/tooltipSettingsModel#split) property to **true**:
 
-```jsx
+```js
 tooltip: { 
 	enable: true, 
 	split: true 
@@ -287,7 +287,7 @@ The follow pointer feature enables the tooltip to follow the mouse cursor or tou
 
 Enable this feature by setting the [`followPointer`](../api/chart/tooltipSettingsModel#followpointer) property to **true**:
 
-```jsx
+```js
 tooltip: { 
 	enable: true, 
 	followPointer: true 
@@ -327,7 +327,7 @@ The tooltip distance property controls the spacing between the tooltip and the m
 
 Set the [`distance`](../api/chart/tooltipSettingsModel#distance) property to specify the gap in pixels:
 
-```jsx
+```js
 tooltip: { 
 	enable: true, 
 	distance: 25 

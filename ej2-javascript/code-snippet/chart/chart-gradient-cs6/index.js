@@ -10,7 +10,7 @@ var CategoryData = [
     { Category: "Other", Share: 3.5, DataLabel: "Other: 3.5%" }
 ];
 var baseColors = ["#0072B2", "#E69F00", "#009E73", "#D55E00", "#CC79A7", "#56B4E9", "#F0E442", "#999999", "#7F3C8D"];
-var chart = new index_1.AccumulationChart({
+var chart = new ej.charts.AccumulationChart({
     series: [{
         type: 'Pie',
         dataSource: CategoryData,

@@ -9,7 +9,7 @@ var CategoryData = [
     { Category: "Groceries", Share: 6.0, DataLabel: "Groceries: 6.0%" },
     { Category: "Other", Share: 3.5, DataLabel: "Other: 3.5%" }
 ];
-var chart = new index_1.AccumulationChart({
+var chart = new ej.charts.AccumulationChart({
     series: [{
         type: 'Pie',
         innerRadius: '50%',

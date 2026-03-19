@@ -514,7 +514,7 @@ The [`layout`](../api/chart/legendSettingsModel#layout) property in [`legendSett
 
 Legend templates allow you to replace default legend icons and text with custom HTML for each series. This enables branded styles, richer content (icons, multi-line text, badges), improved readability, and localization.
 
-You can customize the legend items by using the [`template`](https://ej2.syncfusion.com/documentation/api/chart/legendSettingsModel) property of [`legendSettings`](https://ej2.syncfusion.com/documentation/api/chart/legendSettingsModel). Legend interactions (click to toggle series) remain unless [`ToggleVisibility`] (https://ej2.syncfusion.com/documentation/api/chart/legendsettings#togglevisibility) is set to false. Templates work with all legend positions, alignments, and paging.
+You can customize the legend items by using the [`template`](https://ej2.syncfusion.com/documentation/api/chart/legendSettingsModel) property of [`legendSettings`](https://ej2.syncfusion.com/documentation/api/chart/legendSettingsModel). Legend interactions (click to toggle series) remain unless  [`ToggleVisibility`](https://ej2.syncfusion.com/documentation/api/chart/legendsettings#togglevisibility) is set to false. Templates work with all legend positions, alignments, and paging.
 
 {% if page.publishingplatform == "typescript" %}
 

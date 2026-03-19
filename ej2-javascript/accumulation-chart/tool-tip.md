@@ -265,12 +265,14 @@ The follow pointer feature enables the tooltip to follow the mouse cursor or tou
 
 Enable this feature by setting the [`followPointer`](../api/accumulation-chart/tooltipSettingsModel#followpointer) property to **true**:
 
-```jsx
+
+```javascript
 tooltip: { 
-	enable: true, 
-	followPointer: true 
+    enable: true, 
+    split: true 
 }
-```
+``
+
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}

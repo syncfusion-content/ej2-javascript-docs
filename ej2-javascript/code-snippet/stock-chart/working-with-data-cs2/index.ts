@@ -59,3 +59,4 @@ let stockChart: StockChart = new StockChart({
     }
 });
 stockChart.appendTo("#element");
+

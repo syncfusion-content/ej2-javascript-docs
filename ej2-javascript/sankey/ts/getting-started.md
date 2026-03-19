@@ -50,7 +50,7 @@ Add a container in `~/src/index.html` and initialize the Sankey in `src/app/app.
 {% include code-snippet/sankey/getting-started/initialize-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/sankey/getting-started/initialize-cs1/ts/index.html %}
+{% include code-snippet/sankey/getting-started/initialize-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -71,7 +71,7 @@ Provide nodes and links to the Sankey component via the data configuration. See 
 {% include code-snippet/sankey/getting-started/data-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/sankey/getting-started/data-cs1/ts/index.html %}
+{% include code-snippet/sankey/getting-started/data-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -86,7 +86,7 @@ Inject Sankey modules to enable the tooltip and legend features when using modul
 {% include code-snippet/sankey/getting-started/tooltip-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/sankey/getting-started/tooltip-cs1/ts/index.html %}
+{% include code-snippet/sankey/getting-started/tooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 

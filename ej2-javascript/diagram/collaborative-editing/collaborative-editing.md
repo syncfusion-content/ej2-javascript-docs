@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Collaborative Editing in ##Platform_Name## Diagram | Syncfusion
+title: Diagram Collaboration in ##Platform_Name## | Syncfusion
 description: Checkout and learn to set up real-time collaborative editing in ##Platform_Name## Diagram using SignalR.
 platform: ej2-javascript
 control: Diagram
@@ -40,4 +40,4 @@ Collaboration will work when [DiagramCollaboration](https://ej2.syncfusion.com/d
 
 ## Sample code
 
-A complete working example is available in the [##Platform_Name## Diagram Collaborative Editing GitHub repository]()
+A complete working example is available in the [##Platform_Name## Diagram Collaborative Editing GitHub repository](https://github.com/SyncfusionExamples/ej2-web-diagram-examples/tree/master/CollaborativeEditing)

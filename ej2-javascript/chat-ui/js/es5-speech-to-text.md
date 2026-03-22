@@ -17,16 +17,16 @@ The Syncfusion JavaScript Chat UI control integrates `Speech-to-Text` functional
 
 To enable Speech-to-Text functionality in the JavaScript Chat UI control, update the `index.js` file to incorporate the Web Speech API.
 
-The [SpeechToText](https://ej2.syncfusion.com/javascript/documentation/speech-to-text/es5-getting-started) control listens to audio input from the device’s microphone, transcribes spoken words into text, and updates the Chat UI’s editable footer using the [footerTemplate](https://ej2.syncfusion.com/javascript/documentation/api/chat-ui/#footertemplate) property to display the transcribed text. Once the transcription appears in the footer, users can send it as a message to others.
+The [SpeechToText](https://ej2.syncfusion.com/javascript/documentation/speech-to-text/es5-getting-started) control listens to audio input from the device’s microphone, transcribes spoken words into text, and updates the Chat UI’s editable footer using the [footerTemplate](https://ej2.syncfusion.com/javascript/documentation/api/chat-ui#footertemplate) property to display the transcribed text. Once the transcription appears in the footer, users can send it as a message to others.
 
 ### Configuration Options
 
-* **[`lang`](https://ej2.syncfusion.com/javascript/documentation/api/speech-to-text/#lang)**: Specifies the language for speech recognition. For example:
+* **[`lang`](https://ej2.syncfusion.com/javascript/documentation/api/speech-to-text#lang)**: Specifies the language for speech recognition. For example:
 
     * `en-US` for American English
     * `fr-FR` for French
 
-* **[`allowInterimResults`](https://ej2.syncfusion.com/javascript/documentation/api/speech-to-text/#allowinterimresults)**: Set to `true` to receive real-time (interim) recognition results, or `false` to receive only final results.
+* **[`allowInterimResults`](https://ej2.syncfusion.com/javascript/documentation/api/speech-to-text#allowinterimresults)**: Set to `true` to receive real-time (interim) recognition results, or `false` to receive only final results.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

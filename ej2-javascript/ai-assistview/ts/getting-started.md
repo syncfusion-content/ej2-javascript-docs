@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 This section explains how to create a simple AI AssistView control and configure its available functionalities in TypeScript, using Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
@@ -159,7 +159,7 @@ The following example shows a basic AI AssistView control.
 
 ## Configure suggestions and responses
 
-You can use the [promptSuggestions](../api/ai-assistview/#promptsuggestions) property to add prompt suggestions and the [promptRequest](../api/ai-assistview/#promptrequest) event to add responses when the prompt matches the specified prompts data otherwise, the default response will be displayed.
+You can use the [promptSuggestions](../api/ai-assistview#promptsuggestions) property to add prompt suggestions and the [promptRequest](../api/ai-assistview#promptrequest) event to add responses when the prompt matches the specified prompts data otherwise, the default response will be displayed.
 
 {% tabs %}
 {% highlight js tabtitle="index.ts" %}

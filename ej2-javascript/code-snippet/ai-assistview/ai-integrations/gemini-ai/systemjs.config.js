@@ -26,6 +26,7 @@ System.config({
         "@syncfusion/ej2-dropdowns": "syncfusion:ej2-dropdowns/dist/ej2-dropdowns.umd.min.js",
         "@syncfusion/ej2-navigations": "syncfusion:ej2-navigations/dist/ej2-navigations.umd.min.js",
         "@syncfusion/ej2-notifications": "syncfusion:ej2-notifications/dist/ej2-notifications.umd.min.js",
+        "@syncfusion/ej2-markdown-converter": "syncfusion:ej2-markdown-converter/dist/ej2-markdown-converter.umd.min.js",
         "@google/generative-ai": "https://cdn.jsdelivr.net/npm/@google/generative-ai@0.24.1/dist/index.min.js",
         "marked": "https://cdn.jsdelivr.net/npm/marked/marked.min.js"
     }

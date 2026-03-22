@@ -28,7 +28,7 @@ Before starting, ensure you have the following:
 
 ## Set Up the Environment
 
-Follow the [Getting Started](../getting-started) guide to configure and render the Chat UI control in your application.
+Follow the [Getting Started](../ts/getting-started.md) guide to configure and render the Chat UI control in your application.
 
 ## Install Dependency
 
@@ -120,7 +120,7 @@ app.listen(5000, () => console.log('Backend running on http://localhost:5000'));
 
 ## Configure message send 
 
-Use the Chat UI [messageSend](../api/chat-ui/#messagesend) event to exchanges message. Each time a user sends a message, this event will be invoked with details of the sent message.
+Use the Chat UI [messageSend](../api/chat-ui#messagesend) event to exchanges message. Each time a user sends a message, this event will be invoked with details of the sent message.
 
 ### Forward Message to backend:
 

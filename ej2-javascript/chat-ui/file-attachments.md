@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # File Attachments in ##Platform_Name## Chat UI control
 
-The Chat UI control supports message attachments, enabling users to upload and send files (images, documents, and more) alongside messages for richer, more contextual conversations. Enable this functionality using the [enableAttachments](../api/chat-ui#enableAttachments) property and customize the behavior through the [attachmentSettings](../api/chat-ui#attachmentSettings) configuration.
+The Chat UI control supports message attachments, enabling users to upload and send files (images, documents, and more) alongside messages for richer, more contextual conversations. Enable this functionality using the [enableAttachments](../api/chat-ui#enableattachments) property and customize the behavior through the [attachmentSettings](../api/chat-ui#attachmentsettings) configuration.
 
 ## Enable file attachments
 
-Enable file attachment support by setting the [enableAttachments](../api/chat-ui#enableAttachments) property to `true`. By default, it is `false`.
+Enable file attachment support by setting the [enableAttachments](../api/chat-ui#enableattachments) property to `true`. By default, it is `false`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -46,7 +46,7 @@ Enable file attachment support by setting the [enableAttachments](../api/chat-ui
 
 ## Configure attachment settings
 
-Use the [attachmentSettings](../api/chat-ui#attachmentSettings) property to customize file attachment behavior, including upload endpoints, file type restrictions, and size limits.
+Use the [attachmentSettings](../api/chat-ui#attachmentsettings) property to customize file attachment behavior, including upload endpoints, file type restrictions, and size limits.
 
 ### Setting saveUrl and removeUrl
 

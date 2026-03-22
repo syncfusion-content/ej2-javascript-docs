@@ -17,7 +17,7 @@ By using the `views` property you can define the collection of different assist 
 
 ### Setting view type
 
-You can set the type of view by using the [type](../api/ai-assistview/assistViewType/) property. It accepts two values such as `Assist`, and `Custom`.
+You can set the type of view by using the [type](../api/ai-assistview/assistViewType) property. It accepts two values such as `Assist`, and `Custom`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -52,7 +52,7 @@ aiAssistView.appendTo('#aiAssistView');
 
 ### Setting name
 
-You can use the [name](../api/ai-assistview/assistViewModel/#name) property to specifies the header name of the `Assist` or `Custom` views in the AI AssistView.
+You can use the [name](../api/ai-assistview/assistViewModel#name) property to specifies the header name of the `Assist` or `Custom` views in the AI AssistView.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -87,7 +87,7 @@ aiAssistView.appendTo('#aiAssistView');
 
 ### Setting iconCss
 
-You can customize the view icons by using the [iconCss](../api/ai-assistview/assistViewModel/#iconcss) property. By default the `e-assistview-icon` class is added as built-in header icon for the AI AssistView.
+You can customize the view icons by using the [iconCss](../api/ai-assistview/assistViewModel#iconcss) property. By default the `e-assistview-icon` class is added as built-in header icon for the AI AssistView.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -151,7 +151,7 @@ The following example illustrates how types, name, and iconCss are used in a AI 
 
 ### Setting view template 
 
-You can use the [viewTemplate](../api/ai-assistview/assistViewModel/#viewtemplate) property to add the view content of the multiple views added in the AI AssistView.
+You can use the [viewTemplate](../api/ai-assistview/assistViewModel#viewtemplate) property to add the view content of the multiple views added in the AI AssistView.
 
 {% if page.publishingplatform == "typescript" %}
 

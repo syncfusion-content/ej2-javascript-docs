@@ -1,4 +1,4 @@
-export let data =
+var data =
     [
         { 'x': 'Coal', y: 34.4, text: 'Coal: 34.4%' },
         { 'x': 'Natural Gas', y: 22.1, text: 'Natural Gas: 22.1%' },
@@ -7,7 +7,7 @@ export let data =
         { 'x': 'Wind', y: 8.1, text: 'Wind: 8.1%' },
         { 'x': 'Others', y: 12.0, text: 'Others: 12.0%' }
     ];
-let accChart = new ej.charts.AccumulationChart({
+var accChart = new ej.charts.AccumulationChart({
     series: [
         {
             dataSource: data, name: 'Browser', xName: 'x', yName: 'y', borderRadius: 3

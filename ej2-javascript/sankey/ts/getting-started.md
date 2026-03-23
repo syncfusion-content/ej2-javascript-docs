@@ -92,8 +92,5 @@ Inject Sankey modules to enable the tooltip and legend features when using modul
 
 {% previewsample "page.domainurl/code-snippet/sankey/getting-started/tooltip-cs1" %}
 
-## Further reading
-
-Refer to the Sankey API docs for configuration options and advanced topics.
-{% endhighlight %}
+> You can refer to our [JavaScript Sankey](https://www.syncfusion.com/javascript-ui-controls/js-sankey) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Sankey example](https://ej2.syncfusion.com/demos/#/tailwind3/sankey/default.html) that shows various chart types and how to represent time-dependent data, showing trends in data at equal intervals.
 

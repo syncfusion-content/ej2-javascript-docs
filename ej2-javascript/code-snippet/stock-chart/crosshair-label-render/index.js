@@ -1,4 +1,4 @@
-export let stockData1 = [
+var stockData1 = [
   { x: new Date('2012-04-02'), open: 320.705719, high: 324.074066, low: 317.737732, close: 323.783783, volume: 45638000 },
   { x: new Date('2012-04-03'), open: 323.028015, high: 324.299286, low: 319.639648, close: 321.631622, volume: 40857000 },
   { x: new Date('2012-04-04'), open: 319.544556, high: 319.819824, low: 315.865875, close: 317.892883, volume: 32519000 },
@@ -20,7 +20,7 @@ export let stockData1 = [
   { x: new Date('2012-04-27'), open: 307.81781, high: 308.67868, low: 305.605591, close: 307.797791, volume: 32695000 },
   { x: new Date('2012-04-30'), open: 306.801788, high: 308.348358, low: 300.605591, close: 302.727722, volume: 48097000 },
 ];
-const crosshairLabelRender = (args) => {
+var crosshairLabelRender = (args) => {
         if (args.axisName === 'primaryXAxis') {
             const date = args.value instanceof Date ? args.value : new Date(args.text);
             args.text = date.toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric' });
@@ -35,7 +35,7 @@ const crosshairLabelRender = (args) => {
         }
 };
 
-let chart = new ej.charts.StockChart({
+var chart = new ej.charts.StockChart({
     primaryXAxis: { valueType: 'DateTime', majorGridLines: { width: 0 }, crosshairTooltip: { enable: true } },
     primaryYAxis: { lineStyle: { color: 'transparent' }, majorTickLines: { color: 'transparent', height: 0 }, crosshairTooltip: { enable: true } },
     seriesType: [], indicatorType: [], chartArea: { border: { width: 0 } }, crosshair: { enable: true, lineType: 'Both' },

@@ -1,4 +1,4 @@
-export const data = [
+var data = [
   { x: 'January', y: 1200 },
   { x: 'February', y: 900 },
   { x: 'March', y: 1500 },
@@ -7,7 +7,7 @@ export const data = [
   { x: 'June', y: 300 },
 ];
 
-const crosshairLabelRender = (args) => {
+var crosshairLabelRender = (args) => {
     if (args.axisName === 'primaryYAxis' && typeof args.value === 'number') {
         if (args.value > 1000) {
             args.text = (args.value / 1000).toFixed(1) + 'K';
@@ -26,7 +26,7 @@ const crosshairLabelRender = (args) => {
     }
 };
 
-let chart = new ej.charts.Chart({
+var chart = new ej.charts.Chart({
     primaryXAxis: { valueType: 'Category', crosshairTooltip: { enable: true } },
     primaryYAxis: { crosshairTooltip: { enable: true } },
     crosshairLabelRender: crosshairLabelRender,

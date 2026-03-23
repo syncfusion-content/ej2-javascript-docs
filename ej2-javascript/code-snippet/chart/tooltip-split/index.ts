@@ -1,5 +1,5 @@
 import { Chart, LineSeries, Double, Legend, Tooltip, Highlight, Category } from '@syncfusion/ej2-charts';
-import { franceData, indonesiaData, mexicoData, polandData, vietnamData } from './datasource';
+import { franceData, indonesiaData, mexicoData, polandData, vietnamData } from './datasource.ts';
 Chart.Inject(LineSeries, Double, Legend, Tooltip, Highlight, Category);
 
 let chart: Chart = new Chart({

@@ -1,5 +1,5 @@
 import { StockChart, DateTime, SplineAreaSeries, RangeTooltip, Crosshair, LineSeries, SplineSeries, CandleSeries, HiloOpenCloseSeries, HiloSeries, RangeAreaSeries, Trendlines, EmaIndicator, RsiIndicator, BollingerBands, TmaIndicator, MomentumIndicator, SmaIndicator, AtrIndicator, Export, AccumulationDistributionIndicator, MacdIndicator, StochasticIndicator, ICrosshairLabelRenderEventArgs } from '@syncfusion/ej2-charts'
-import { stockData1 } from './datasource';
+import { stockData1 } from './datasource.ts';
 StockChart.Inject(DateTime, SplineAreaSeries, RangeTooltip, Crosshair, LineSeries, SplineSeries, CandleSeries, HiloOpenCloseSeries, HiloSeries, RangeAreaSeries, Trendlines, EmaIndicator, RsiIndicator, BollingerBands, TmaIndicator, MomentumIndicator, SmaIndicator, AtrIndicator, Export, AccumulationDistributionIndicator, MacdIndicator, StochasticIndicator);
 
 const crosshairLabelRender: (args: ICrosshairLabelRenderEventArgs) => void = (args: ICrosshairLabelRenderEventArgs) => {

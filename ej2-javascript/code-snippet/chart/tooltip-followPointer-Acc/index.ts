@@ -1,5 +1,5 @@
 import { AccumulationChart, AccumulationTooltip } from '@syncfusion/ej2-charts';
-import { data } from './datasource';
+import { data } from './datasource.ts';
 AccumulationChart.Inject(AccumulationTooltip);
 let accChart: AccumulationChart = new AccumulationChart({
     series: [

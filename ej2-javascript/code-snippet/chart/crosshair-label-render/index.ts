@@ -1,5 +1,5 @@
 import { Chart, LineSeries, Category, Crosshair, Double, Legend, Tooltip, Highlight, ICrosshairLabelRenderEventArgs } from '@syncfusion/ej2-charts';
-import { data } from './datasource';
+import { data } from './datasource.ts';
 Chart.Inject(LineSeries, Category, Crosshair, Double, Legend, Tooltip, Highlight);
 
 const crosshairLabelRender: (args: ICrosshairLabelRenderEventArgs) => void = (args: ICrosshairLabelRenderEventArgs) => {

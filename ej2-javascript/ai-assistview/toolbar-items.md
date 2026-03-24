@@ -48,7 +48,7 @@ In the following example, AI AssistView component rendered with footer toolbar i
 
 ### Toolbar positioning
 
-You can use the [toolbarPosition](../api/ai-assistview/footerToolbarSettingsModel#toolbarPosition) property to customize footer toolbar position. It has two modes such as `Inline`, and `Bottom`. By default, the toolbarPosition is `Inline`.
+You can use the [toolbarPosition](../api/ai-assistview/footerToolbarSettingsModel#toolbarposition) property to customize footer toolbar position. It has two modes such as `Inline`, and `Bottom`. By default, the toolbarPosition is `Inline`.
 
 By settings toolbarPosition as `Bottom`, footer items will be rendered at the bottom with a dedicated footer area.
 

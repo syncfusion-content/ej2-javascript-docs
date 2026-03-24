@@ -211,7 +211,7 @@ The [attachmentRemoved](../api/ai-assistview#attachmentremoved) event is trigger
 
 ## attachmentClick
 
-The [attachmentClick](../api/ai-assistview#attachmentclick) event is triggered when an attached file is clicked in the AI AssistView.
+The [attachmentClick](../api/ai-assistview/attachmentsettings#attachmentclick) event is triggered when an attached file is clicked in the AI AssistView.
 
 {% if page.publishingplatform == "typescript" %}
 

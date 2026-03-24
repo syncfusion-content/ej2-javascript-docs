@@ -46,7 +46,7 @@ You can enable the attachment by using the [enableAttachments](https://ej2.syncf
 
 ## Configure attachment settings
 
-Use the [attachmentSettings](../api/ai-assistview/attachmentSettings) property to customize file attachment behavior, including upload endpoints, file type restrictions, and size limits.
+Use the [attachmentSettings](../api/ai-assistview/attachmentsettings) property to customize file attachment behavior, including upload endpoints, file type restrictions, and size limits.
 
 ### Setting saveUrl and removeUrl
 

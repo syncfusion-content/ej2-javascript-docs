@@ -18,14 +18,14 @@ The Syncfusion JavaScript AI AssistView control integrates `Text-to-Speech` (TTS
 Before integrating `Text-to-Speech`, ensure the following:
 
 1. The Syncfusion AI AssistView control is properly set up in your JavaScript application.
-    - [JavaScript Getting Started Guide](../js/es5-getting-started)
+    - [JavaScript Getting Started Guide](../js/es5-getting-started.md)
 
-2. The AI AssistView control is integrated with [Azure OpenAI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai).
+2. The AI AssistView control is integrated with [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-foundry/models/openai).
     - [Integration of Azure OpenAI With JavaScript AI AssistView control](../ai-integrations/es5-openai-integration)
 
 ## Configure Text-to-Speech
 
-To enable Text-to-Speech functionality, modify the `index.js` file to incorporate the Web Speech API. A custom `Read Aloud` button is added to the response toolbar using the [responseToolbarSettings](https://ej2.syncfusion.com/javascript/documentation/api/ai-assistview/#responsetoolbarsettings) property. When clicked, the [itemClicked](https://ej2.syncfusion.com/javascript/documentation/api/ai-assistview/responsetoolbarsettingsmodel/#itemclicked) event extracts plain text from the generated AI response and use the browser SpeechSynthesis API to read it aloud.
+To enable Text-to-Speech functionality, modify the `index.js` file to incorporate the Web Speech API. A custom `Read Aloud` button is added to the response toolbar using the [responseToolbarSettings](https://ej2.syncfusion.com/javascript/documentation/api/ai-assistview#responsetoolbarsettings) property. When clicked, the [itemClicked](https://ej2.syncfusion.com/javascript/documentation/api/ai-assistview/responsetoolbarsettingsmodel#itemclicked) event extracts plain text from the generated AI response and use the browser SpeechSynthesis API to read it aloud.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

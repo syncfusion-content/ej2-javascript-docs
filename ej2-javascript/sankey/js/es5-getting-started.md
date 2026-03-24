@@ -105,7 +105,4 @@ Enable tooltip and legend by injecting required modules when using modular impor
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/sankey/getting-started/tooltip-cs1" %}
-		{% highlight js tabtitle="index.js" %}
-
-		{% include code-snippet/sankey/getting-started/data-cs1/index.js %}
 

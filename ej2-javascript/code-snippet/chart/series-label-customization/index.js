@@ -1,4 +1,4 @@
-export let vietnamData = [
+let vietnamData = [
   { x: 2016, y: 7.8 },
   { x: 2017, y: 10.3 },
   { x: 2018, y: 15.5 },
@@ -10,7 +10,7 @@ export let vietnamData = [
   { x: 2024, y: 22.1 }
 ];
 
-export let indonesiaData = [
+let indonesiaData = [
   { x: 2016, y: 4.8 },
   { x: 2017, y: 5.2 },
   { x: 2018, y: 6.2 },
@@ -22,7 +22,7 @@ export let indonesiaData = [
   { x: 2024, y: 17.0 }
 ];
 
-export let franceData = [
+let franceData = [
   { x: 2016, y: 14.6 },
   { x: 2017, y: 15.5 },
   { x: 2018, y: 15.4 },
@@ -34,7 +34,7 @@ export let franceData = [
   { x: 2024, y: 10.8 }
 ];
 
-export let polandData = [
+let polandData = [
   { x: 2016, y: 8.9 },
   { x: 2017, y: 10.3 },
   { x: 2018, y: 10.8 },
@@ -46,7 +46,7 @@ export let polandData = [
   { x: 2024, y: 7.1 }
 ];
 
-export let mexicoData = [
+let mexicoData = [
   { x: 2016, y: 19.0 },
   { x: 2017, y: 20.0 },
   { x: 2018, y: 20.2 },

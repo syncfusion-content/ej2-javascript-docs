@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Integrate Azure OpenAI With TypeScript AI AssistView control 
 
-The AI AssistView control integrates with [Azure OpenAI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai) to enable advanced conversational AI features in your applications. The control acts as a user interface, where user prompts are sent to the Azure OpenAI service via API calls, providing natural language understanding and context-aware responses
+The AI AssistView control integrates with [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-foundry/models/openai) to enable advanced conversational AI features in your applications. The control acts as a user interface, where user prompts are sent to the Azure OpenAI service via API calls, providing natural language understanding and context-aware responses
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ Before starting, ensure you have the following:
 
 ## Set Up the Environment
 
-Follow the [Getting Started](../getting-started) guide to configure and render the AI AssistView control in your  application.
+Follow the [Getting Started](../ts/getting-started.md) guide to configure and render the AI AssistView control in your  application.
 
 ## Install Dependency
 
@@ -35,7 +35,7 @@ To install the marked library, run `npm install marked --save` in your project d
 
 ## Generate Azure API Key
 
-1. Log in to the [Azure Portal](https://portal.azure.com/#home) and navigate to your Azure OpenAI resource. 
+1. Log in to the [Azure Portal](https://portal.azure.com#home) and navigate to your Azure OpenAI resource. 
 
 2. Under resource Management, select keys and endpoint to retrieve your API key and endpoint URL.  
 

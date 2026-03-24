@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Response actions in ##Platform_Name## Inline AI Assist control | Syncfusion
+title: Response actions in ##Platform_Name## Inline AI Assist | Syncfusion
 description: Checkout and learn about response items with ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Inline AI Assist 
@@ -120,27 +120,27 @@ You can use the `disabled` property to disable an item, preventing it from being
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/inline-ai-assist/response-setting/disabled/index.ts %}
+{% include code-snippet/inline-ai-assist/response-settings/disabled/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/inline-ai-assist/response-setting/disabled/index.html %}
+{% include code-snippet/inline-ai-assist/response-settings/disabled/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/inline-ai-assist/response-setting/disabled" %}
+{% previewsample "page.domainurl/code-snippet/inline-ai-assist/response-settings/disabled" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/inline-ai-assist/response-setting/disabled/index.js %}
+{% include code-snippet/inline-ai-assist/response-settings/disabled/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/inline-ai-assist/response-setting/disabled/index.html %}
+{% include code-snippet/inline-ai-assist/response-settings/disabled/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/inline-ai-assist/response-setting/disabled" %}
+{% previewsample "page.domainurl/code-snippet/inline-ai-assist/response-settings/disabled" %}
 {% endif %}
 
 ### Setting label

@@ -49,11 +49,11 @@ In the following example:
 * The response is parsed as **Markdown** using the `marked` library and displayed in the AI AssistView control.
 
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
+{% highlight js tabtitle="index.js" %}
 {% include code-snippet/ai-assistview/ai-integrations/lite-llm/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/ai-assistview/ai-integrations/lite-llm/js/index.html %}
+{% include code-snippet/ai-assistview/ai-integrations/lite-llm/index.html %}
 {% endhighlight %}
 {% highlight yaml tabtitle="config.yaml" %}
 {% include code-snippet/ai-assistview/ai-integrations/lite-llm/config.yaml %}

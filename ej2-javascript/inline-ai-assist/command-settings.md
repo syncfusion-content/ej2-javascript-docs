@@ -17,6 +17,33 @@ You can render and use the command action popup by using the `commands` property
 
 You can use the [commandSettings](../api/inline-ai-assist#commandsettings) property to add commands that populate the command popup. Each command item can perform a quick request based on the configured `prompt`.
 
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/inline-ai-assist/command-settings/commands/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/inline-ai-assist/command-settings/commands/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/inline-ai-assist/command-settings/commands" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/inline-ai-assist/command-settings/commands/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/inline-ai-assist/command-settings/commands/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/inline-ai-assist/command-settings/commands" %}
+{% endif %}
+
 ### Setting id
 
 You can use the `id` property to assign a unique identifier to each command item; detect the selected command and perform the corresponding action.
@@ -25,34 +52,277 @@ You can use the `id` property to assign a unique identifier to each command item
 
 Include icons by using `iconCss` property on a command item to show an icon alongside the label.
 
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/inline-ai-assist/command-settings/iconCss/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/inline-ai-assist/command-settings/iconCss/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/inline-ai-assist/command-settings/iconCss" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/inline-ai-assist/command-settings/iconCss/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/inline-ai-assist/command-settings/iconCss/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/inline-ai-assist/command-settings/iconCss" %}
+{% endif %}
+
 ### Setting disabled
 
 You can use the `disabled` property to disable a command, preventing it from being selected. By default, its value is `false`.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/inline-ai-assist/command-settings/disabled/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/inline-ai-assist/command-settings/disabled/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/inline-ai-assist/command-settings/disabled" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/inline-ai-assist/command-settings/disabled/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/inline-ai-assist/command-settings/disabled/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/inline-ai-assist/command-settings/disabled" %}
+{% endif %}
 
 ### Configure prompt
 
 You can use the `prompt` property to execute a prompt when the command is selected in the command action popup.
 
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/inline-ai-assist/command-settings/commands/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/inline-ai-assist/command-settings/commands/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/inline-ai-assist/command-settings/commands" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/inline-ai-assist/command-settings/commands/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/inline-ai-assist/command-settings/commands/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/inline-ai-assist/command-settings/commands" %}
+{% endif %}
+
 ### Setting label
 
 You can use the `label` property to specify the visible text for a command; this text appears in the command popup and describes the action that will be performed when selected.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/inline-ai-assist/command-settings/commands/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/inline-ai-assist/command-settings/commands/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/inline-ai-assist/command-settings/commands" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/inline-ai-assist/command-settings/commands/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/inline-ai-assist/command-settings/commands/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/inline-ai-assist/command-settings/commands" %}
+{% endif %}
 
 ### Configure groupBy
 
 To visually group commands, use the `groupBy` property on command items. The popup will group items by the `groupBy` value and render group headers.
 
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/inline-ai-assist/command-settings/groupby/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/inline-ai-assist/command-settings/groupby/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/inline-ai-assist/command-settings/groupby" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/inline-ai-assist/command-settings/groupby/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/inline-ai-assist/command-settings/groupby/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/inline-ai-assist/command-settings/groupby" %}
+{% endif %}
+
 ### Setting tooltip text
 
 You can use the `tooltip` property to specify the tooltip text to be displayed on hovering the command item in the popup.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/inline-ai-assist/command-settings/tooltip/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/inline-ai-assist/command-settings/tooltip/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/inline-ai-assist/command-settings/tooltip" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/inline-ai-assist/command-settings/tooltip/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/inline-ai-assist/command-settings/tooltip/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/inline-ai-assist/command-settings/tooltip" %}
+{% endif %}
 
 ## Setting popup width
 
 Control the popup width with `popupWidth` property in the commandSettings. Accepts CSS values or number (px).
 
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/inline-ai-assist/command-settings/popup-width/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/inline-ai-assist/command-settings/popup-width/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/inline-ai-assist/command-settings/popup-width" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/inline-ai-assist/command-settings/popup-width/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/inline-ai-assist/command-settings/popup-width/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/inline-ai-assist/command-settings/popup-width" %}
+{% endif %}
+
 ## Setting popup height
 
 Control the popup height with `popupHeight` property in the commandSettings. Use this to enable scrollable lists when many commands exist.
 
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/inline-ai-assist/command-settings/popup-height/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/inline-ai-assist/command-settings/popup-height/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/inline-ai-assist/command-settings/popup-height" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/inline-ai-assist/command-settings/popup-height/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/inline-ai-assist/command-settings/popup-height/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/inline-ai-assist/command-settings/popup-height" %}
+{% endif %}
+
 ## Configure item select
 
 The [itemSelect](../api/inline-ai-assist/commandSettingsModel#itemselect) event is triggered when a command item is selected from the command popup in the Inline AI Assist control.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/inline-ai-assist/command-settings/item-select/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/inline-ai-assist/command-settings/item-select/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/inline-ai-assist/command-settings/item-select" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/inline-ai-assist/command-settings/item-select/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/inline-ai-assist/command-settings/item-select/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/inline-ai-assist/command-settings/item-select" %}
+{% endif %}

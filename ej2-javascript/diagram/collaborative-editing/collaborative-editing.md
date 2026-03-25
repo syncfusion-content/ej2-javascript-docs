@@ -22,8 +22,8 @@ Collaborative editing in diagram control allows multiple users to edit and revie
 * Use **SignalR** for real-time communication between the ##Platform_Name## app and server.
 * Use **Redis** as a temporary data store to manage updates and version state.
 * Basic setup:
-    * Configure an ASP.NET Core SignalR hub. [Refer link](./collaborative-editing-hub.md).
-    * Connect the ##Platform_Name## app to the hub. [Refer link](./ej2-collaborative-editing.md).
+    * Configure an ASP.NET Core SignalR hub. [Refer link](./collaborative-editing-hub).
+    * Connect the ##Platform_Name## app to the hub. [Refer link](./ej2-collaborative-editing).
 
 ## Limitations
 
@@ -32,7 +32,7 @@ Collaborative editing in diagram control allows multiple users to edit and revie
 * View-only interactions
     * Zoom and pan are local to each user and are not synchronized, so collaborators may view different areas of the diagram.
 * Unsupported synchronized settings
-    * Changes to [pageSettings](../page-settings.md), [contextMenuSettings](../context-menu.md), [snapSettings](../grid-lines#snapping), [rulerSettings](../ruler.md), [layout](https://ej2.syncfusion.com/documentation/diagram/automatic-layout/automatic-layout), and [scrollSettings](../scroll-settings.md) are not propagated to other users and apply only locally.
+    * Changes to [pageSettings](../page-settings), [contextMenuSettings](../context-menu), [snapSettings](../grid-lines#snapping), [rulerSettings](../ruler), [layout](https://ej2.syncfusion.com/documentation/diagram/automatic-layout/automatic-layout), and [scrollSettings](../scroll-settings) are not propagated to other users and apply only locally.
 
 >**Note:** 
 Collaboration will work when [DiagramCollaboration](https://ej2.syncfusion.com/documentation/diagram/getting-started#module-injection) and [UndoRedo](https://ej2.syncfusion.com/documentation/diagram/getting-started#module-injection) modules are enabled. Collaboration applies to actions that raise the [historyChange](../../api/diagram/index-default#historychange) event.

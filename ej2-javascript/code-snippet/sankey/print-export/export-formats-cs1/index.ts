@@ -39,9 +39,9 @@ const links: SankeyLinkModel[] = [
   { sourceId: 'Bio-conversion', targetId: 'Heat', value: 60.845 }
 ];
 
-document.getElementById('export-png')?.addEventListener('click', handleExportPNG);
-document.getElementById('export-pdf')?.addEventListener('click', handleExportPDF);
-document.getElementById('export-svg')?.addEventListener('click', handleExportSVG);
+(document.getElementById('export-png') as HTMLElement).addEventListener('click', handleExportPNG);
+(document.getElementById('export-pdf')  as HTMLElement).addEventListener('click', handleExportPDF);
+(document.getElementById('export-svg')  as HTMLElement).addEventListener('click', handleExportSVG);
 
 const sankey: Sankey = new Sankey(
   {

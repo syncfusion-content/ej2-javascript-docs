@@ -27,7 +27,7 @@ const links = [
   { sourceId: 'Bio-conversion', targetId: 'Heat', value: 60.845 }
 ];
 
-document.getElementById('export-btn')?.addEventListener('click', handleExport);
+document.getElementById('export-btn').addEventListener('click', handleExport);
 
 const sankey = new ej.charts.Sankey(
   {

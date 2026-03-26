@@ -27,7 +27,7 @@ const links: SankeyLinkModel[] = [
   { sourceId: 'Bio-conversion', targetId: 'Heat', value: 60.845 }
 ];
 
-document.getElementById('export-btn')?.addEventListener('click', handleCustomExport);
+(document.getElementById('export-btn') as HTMLElement).addEventListener('click', handleCustomExport);
 
 const sankey: Sankey = new Sankey(
   {

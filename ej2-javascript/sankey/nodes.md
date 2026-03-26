@@ -194,12 +194,12 @@ Use the `nodeRendering` event to customize node appearance dynamically before re
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/chart/chart-appearance-cs6/index.js %}
+{% include code-snippet/sankey/nodes/rendering-event-cs/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/chart-appearance-cs6/index.html %}
+{% include code-snippet/sankey/nodes/rendering-event-cs/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs6" %}
+{% previewsample "page.domainurl/code-snippet/sankey/nodes/rendering-event-cs" %}
 {% endif %}

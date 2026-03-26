@@ -171,25 +171,25 @@ Use the `labelRendering` event to customize label text, styling, and appearance 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/chart/chart-appearance-cs6/index.ts %}
+{% include code-snippet/sankey/labels/rendering-event-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/chart-appearance-cs6/index.html %}
+{% include code-snippet/sankey/labels/rendering-event-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs6" %}
+{% previewsample "page.domainurl/code-snippet/sankey/labels/rendering-event-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/chart/chart-appearance-cs6/index.js %}
+{% include code-snippet/sankey/labels/rendering-event-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/chart-appearance-cs6/index.html %}
+{% include code-snippet/sankey/labels/rendering-event-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs6" %}
+{% previewsample "page.domainurl/ccode-snippet/sankey/labels/rendering-event-cs1" %}
 {% endif %}

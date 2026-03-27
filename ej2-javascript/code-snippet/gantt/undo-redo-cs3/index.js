@@ -1,4 +1,4 @@
-ej.gantt.Gantt.Inject(ej.gantt.Edit,ej.gantt.Toolbar, ej.gantt.Selection, ej.gantt.Filter,ej.gantt.Sort,ej.gantt.RowDD,ej.gantt.ColumnMenu,ej.gantt.Reorder,ej.gantt.Resize,ej.gantt.UndoRedo);
+ej.gantt.Gantt.Inject(ej.gantt.Edit, ej.gantt.Toolbar, ej.gantt.Selection, ej.gantt.Filter, ej.gantt.Sort, ej.gantt.RowDD, ej.gantt.ColumnMenu, ej.gantt.Reorder, ej.gantt.Resize, ej.gantt.UndoRedo);
 
 var ganttChart = new ej.gantt.Gantt({
     dataSource: GanttData,
@@ -10,8 +10,8 @@ var ganttChart = new ej.gantt.Gantt({
     allowResizing: true,
     allowReordering: true,
     allowRowDragAndDrop: true,
-    undoRedoActions: ['Add', 'Edit', 'Delete', 'Search','Sorting','Filtering', 'ZoomIn', 'ZoomOut', 'ZoomToFit','Indent','Outdent', 
-    'PreviousTimeSpan', 'NextTimeSpan','ColumnState'],
+    undoRedoActions: ['Add', 'Edit', 'Delete', 'Search', 'Sorting', 'Filtering', 'ZoomIn', 'ZoomOut', 'ZoomToFit', 'Indent', 'Outdent',
+        'PreviousTimeSpan', 'NextTimeSpan', 'ColumnState'],
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
@@ -20,8 +20,8 @@ var ganttChart = new ej.gantt.Gantt({
         progress: 'Progress',
         parentID: 'ParentID'
     },
-    toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Search', 'ZoomIn', 'ZoomOut', 'ZoomToFit','Indent','Outdent', 
-    'PrevTimeSpan', 'NextTimeSpan'],
+    toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Search', 'ZoomIn', 'ZoomOut', 'ZoomToFit', 'Indent', 'Outdent',
+        'PrevTimeSpan', 'NextTimeSpan'],
     editSettings: {
         allowEditing: true,
         allowAdding: true,
@@ -29,12 +29,10 @@ var ganttChart = new ej.gantt.Gantt({
         allowTaskbarEditing: true,
         showDeleteConfirmDialog: true
     }
-     });
+});
 ganttChart.appendTo('#Gantt');
 
-milestone
-
 document.getElementById('redo').addEventListener('click', () => {
-    var ganttObj= document.getElementById('Gantt').ej2_instances[0];
+    var ganttObj = document.getElementById('Gantt').ej2_instances[0];
     ganttObj.redo();
 });

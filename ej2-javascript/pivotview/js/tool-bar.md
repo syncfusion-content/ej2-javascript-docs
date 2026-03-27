@@ -993,6 +993,6 @@ The [`actionFailure`](https://ej2.syncfusion.com/javascript/documentation/api/pi
 
 ## See Also
 
-* [Toolbar Component](../../toolbar/getting-started/)
+* [Toolbar Component](https://ej2.syncfusion.com/javascript/documentation/toolbar/getting-started)
 * [Excel Exporting](./excel-export)
 * [PDF Exporting](./pdf-export)

@@ -28,7 +28,7 @@ Before starting, ensure you have the following:
 
 ## Set Up the Environment
 
-Follow the [Getting Started](../ts/getting-started.md) guide to configure and render the Chat UI control in your application.
+Follow the [Getting Started](https://ej2.syncfusion.com/documentation/chat-ui/getting-started) guide to configure and render the Chat UI control in your application.
 
 ## Install Dependency
 

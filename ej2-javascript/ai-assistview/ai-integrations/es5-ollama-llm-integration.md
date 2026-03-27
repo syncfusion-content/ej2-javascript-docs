@@ -27,7 +27,7 @@ Before starting, ensure you have the following:
 
 ## Set Up the Environment
 
-Follow the [Getting Started](../js/es5-getting-started.md) guide to configure and render the AI AssistView control in your application.
+Follow the [Getting Started](https://ej2.syncfusion.com/javascript/documentation/ai-assistview/es5-getting-started) guide to configure and render the AI AssistView control in your application.
 
 ## Install Dependency
 

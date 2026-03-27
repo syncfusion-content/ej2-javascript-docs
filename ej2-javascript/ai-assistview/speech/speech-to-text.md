@@ -18,7 +18,7 @@ The Syncfusion TypeScript AI AssistView control integrates `Speech-to-Text` func
 Before integrating `Speech-to-Text`, ensure the following:
 
 1. The Syncfusion AI AssistView control is properly set up in your TypeScript application.
-    - [TypeScript Getting Started Guide](../ts/getting-started.md)
+    - [TypeScript Getting Started Guide](https://ej2.syncfusion.com/documentation/ai-assistview/getting-started)
 
 2. The AI AssistView control is integrated with [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-foundry/models/openai).
     - [Integration of Azure OpenAI With TypeScript AI AssistView control](../ai-integrations/openai-integration)

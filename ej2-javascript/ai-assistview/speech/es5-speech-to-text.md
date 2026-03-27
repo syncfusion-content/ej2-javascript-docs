@@ -18,7 +18,7 @@ The Syncfusion JavaScript AI AssistView control integrates `Speech-to-Text` func
 Before integrating `Speech-to-Text`, ensure the following:
 
 1. The Syncfusion AI AssistView control is properly set up in your JavaScript application.
-    - [JavaScript Getting Started Guide](../js/es5-getting-started.md)
+    - [JavaScript Getting Started Guide](https://ej2.syncfusion.com/javascript/documentation/ai-assistview/es5-getting-started)
 
 2. The AI AssistView control is integrated with [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-foundry/models/openai).
     - [Integration of Azure OpenAI With JavaScript AI AssistView control](../ai-integrations/es5-openai-integration)

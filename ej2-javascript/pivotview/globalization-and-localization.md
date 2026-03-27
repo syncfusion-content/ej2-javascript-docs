@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Globalization and localization in ##Platform_Name## Pivotview control | Syncfusion
+title: Globalization & Localization in ##Platform_Name## PivotView| Syncfusion
 description: Learn here all about Globalization and localization in Syncfusion ##Platform_Name## Pivotview control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Globalization and localization 
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Globalization and localization in ##Platform_Name## Pivotview control
 
-Globalization is the combination of Internationalization and localization. You can adapt the component to various languages by parsing and formatting the date or number [`Internationalization`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript) & adding culture specific customization and translation to the text [`Localization`](https://ej2.syncfusion.com/documentation/common/localization.html?lang=typescript).
+Globalization is the combination of Internationalization and localization. You can adapt the component to various languages by parsing and formatting the date or number [`Internationalization`](https://ej2.syncfusion.com/documentation/common/internationalization) & adding culture specific customization and translation to the text [`Localization`](https://ej2.syncfusion.com/documentation/common/localization.html?lang=typescript).
 
 ## Internationalization
 
@@ -119,15 +119,15 @@ The Internationalization library is used to globalize number, date, and time val
 {% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs48" %}
 {% endif %}
 
-> * In the above sample, `Amount` field is formatted by [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-numbers). For date formats, the value strings are formatted by [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-datetime).
+> * In the above sample, `Amount` field is formatted by [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/common/internationalization#manipulating-numbers). For date formats, the value strings are formatted by [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/common/internationalization#manipulating-datetime).
 > * By default, `locale` value is `en-US`. If you want to change the `en-US` culture to a different culture, you have to change  the `locale` accordingly.
-> * Also, you will find more details about support format string for number formats and data formats [`here`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#supported-format-string).
+> * Also, you will find more details about support format string for number formats and data formats [`here`](https://ej2.syncfusion.com/documentation/common/internationalization#supported-format-string-1).
 
 ### Decimal separators
 
 <!-- markdownlint-disable MD009 -->
 
-The decimal separators of pivot table values varies based on the culture applied to the component. The culture can be set by calling the method [`setCulture`](https://ej2.syncfusion.com/documentation/common/internationalization/#setting-global-culture) with appropriate culture string as its parameter. 
+The decimal separators of pivot table values varies based on the culture applied to the component. The culture can be set by calling the method [`setCulture`](https://ej2.syncfusion.com/documentation/common/internationalization#setting-global-culture) with appropriate culture string as its parameter. 
 
 The following example demonstrates the decimal separators in `Deutsch` culture.
 
@@ -160,7 +160,7 @@ The following example demonstrates the decimal separators in `Deutsch` culture.
 
 ## Localization
 
-The [`Localization`](https://ej2.syncfusion.com/documentation/api/base/l10n/) library allows you to localize default text content of the pivot table. The pivot table component has static text on some features (like drop area text, pivot field list title, etc...) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the
+The [`Localization`](https://ej2.syncfusion.com/documentation/api/base/l10n) library allows you to localize default text content of the pivot table. The pivot table component has static text on some features (like drop area text, pivot field list title, etc...) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the
 `locale` value and translation object.
 
 The following list of properties and its values are used in the pivot table.
@@ -609,7 +609,7 @@ N> To find the latest localization keywords of pivotview and pivotfieldlist for 
 
 ### Loading Translations
 
-To load translation object in an application, use [`load`](https://ej2.syncfusion.com/documentation/api/base/l10n/#load) function of the [`L10n`](https://ej2.syncfusion.com/documentation/api/base/l10n/) class.
+To load translation object in an application, use [`load`](https://ej2.syncfusion.com/documentation/api/base/l10n#load) function of the [`L10n`](https://ej2.syncfusion.com/documentation/api/base/l10n) class.
 
 The following example demonstrates the pivot table in `Deutsch` culture.
 

@@ -1004,6 +1004,6 @@ The [`actionFailure`](https://ej2.syncfusion.com/documentation/api/pivotview/ind
 
 ## See Also
 
-* [Toolbar Component](../../toolbar/getting-started)
+* [Toolbar Component](https://ej2.syncfusion.com/documentation/toolbar/getting-started)
 * [Excel Exporting](./excel-export)
 * [PDF Exporting](./pdf-export)

@@ -91,10 +91,10 @@ To enable real-time collaboration, configure SignalR `HubConnection` in your ##P
 ## Sending and applying real-time diagram changes
 
 * The ##Platform_Name## Diagram component triggers the [historyChange](../../api/diagram/index-default#historychange) event whenever the diagram is modified, such as when nodes or connectors are added, deleted, moved, resized, or edited.
-* Use the `getDiagramUpdates` method to generate a compact set of incremental updates (JSON-formatted changes) that represent only the changes, rather than the entire diagram.
+* Use the [getDiagramUpdates](../../api/diagram/index-default#getdiagramupdates) method to generate a compact set of incremental updates (JSON-formatted changes) that represent only the changes, rather than the entire diagram.
 * Send these changes to the hub method `BroadcastToOtherUsers`, which relays them to all users joined to the same SignalR group (room).
-* Each remote user listens for the `ReceiveData` and applies the incoming changes with `setDiagramUpdates`, keeping their view synchronized without reloading the full diagram.
-* Enable the `enableCollaborativeEditing` property on the diagram to treat multi-step edits (like drag/resize sequences or batch changes) as a single operation. This property works in conjunction with the [DiagramCollaboration](https://ej2.syncfusion.com/documentation/diagram/getting-started#module-injection) and [UndoRedo](https://ej2.syncfusion.com/documentation/diagram/getting-started#module-injection) module to batch related changes efficiently. 
+* Each remote user listens for the `ReceiveData` and applies the incoming changes with [setDiagramUpdates](../../api/diagram/index-default#setdiagramupdates), keeping their view synchronized without reloading the full diagram.
+* Enable the [enableCollaborativeEditing](../../api/diagram/index-default#enablecollaborativeediting) property on the diagram to treat multi-step edits (like drag/resize sequences or batch changes) as a single operation. This property works in conjunction with the [DiagramCollaboration](https://ej2.syncfusion.com/documentation/diagram/getting-started#module-injection) and [UndoRedo](https://ej2.syncfusion.com/documentation/diagram/getting-started#module-injection) module to batch related changes efficiently. 
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -122,7 +122,7 @@ To enable real-time collaboration, configure SignalR `HubConnection` in your ##P
 
 ## Conflict policy (optimistic concurrency) in ##Platform_Name## application
 
-To maintain consistency during collaborative editing, each user applies incoming changes using `setDiagramUpdates`. The ##Platform_Name## application tracks a `userVersion` that is synchronized with the `serverVersion` through version-tracking events. This version-based approach ensures conflicts are resolved without locking, allowing real-time responsiveness while preserving data integrity.
+To maintain consistency during collaborative editing, each user applies incoming changes using [setDiagramUpdates](../../api/diagram/index-default#setdiagramupdates). The ##Platform_Name## application tracks a `userVersion` that is synchronized with the `serverVersion` through version-tracking events. This version-based approach ensures conflicts are resolved without locking, allowing real-time responsiveness while preserving data integrity.
 
 Add the following code in your ##Platform_Name## application:
 

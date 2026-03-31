@@ -11,9 +11,9 @@ let atcObject: AutoComplete = new AutoComplete({
     //set the data to dataSource property
     dataSource: sportsData,
     // set placeholder to AutoComplete input element
-    placeholder: "Find a game"
+    placeholder: "Find a game" ,
 
-    floatLabelType: "auto"
+    floatLabelType: "Auto"
 });
 
 // render initialized AutoComplete

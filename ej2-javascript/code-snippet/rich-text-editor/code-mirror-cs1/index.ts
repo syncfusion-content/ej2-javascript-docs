@@ -35,6 +35,7 @@ import {
       rteContainer.classList.remove('e-rte-code-mirror-enabled');
       editor.focusIn();
     } else {
+      const sourceContentContainer = rteContainer.querySelector('.e-source-content') as HTMLElement;
       rteContainer.classList.add('e-rte-code-mirror-enabled');
       rteContainer.classList.remove('e-source-code-enabled');
       if (!mirrorView) {
@@ -43,7 +44,7 @@ import {
           id: id,
           styles: 'display: none;',
         });
-        rteContainer.appendChild(mirrorView);
+        sourceContentContainer!.appendChild(mirrorView);
         renderCodeMirror(
           mirrorView,
           editor.value === null ? '' : editor.value

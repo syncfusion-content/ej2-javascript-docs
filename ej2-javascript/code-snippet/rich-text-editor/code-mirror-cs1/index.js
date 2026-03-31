@@ -18,6 +18,7 @@ var editor = new ej.richtexteditor.RichTextEditor({
       rteContainer.classList.remove('e-rte-code-mirror-enabled');
       editor.focusIn();
     } else {
+      var sourceContentContainer = rteContainer.querySelector('.e-source-content');
       rteContainer.classList.add('e-rte-code-mirror-enabled');
       rteContainer.classList.remove('e-source-code-enabled');
       if (!mirrorView) {
@@ -26,7 +27,7 @@ var editor = new ej.richtexteditor.RichTextEditor({
           id: id,
           styles: 'display: none;',
         });
-        rteContainer.appendChild(mirrorView);
+        sourceContentContainer.appendChild(mirrorView);
         renderCodeMirror(
           mirrorView,
           editor.value === null ? '' : editor.value

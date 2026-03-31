@@ -1,10 +1,28 @@
 const nodes = [
-  { id: 'Agricultural Waste' },
-  { id: 'Biomass Residues' },
-  { id: 'Bio-conversion' },
-  { id: 'Liquid Biofuel' },
-  { id: 'Electricity' },
-  { id: 'Heat' }
+  {
+    id: 'Agricultural Waste',
+    color: '#f41212'
+  },
+  {
+    id: 'Biomass Residues',
+    color: '#aed62c'
+  },
+  {
+    id: 'Bio-conversion',
+    color: '#259bc3'
+  },
+  {
+    id: 'Liquid Biofuel',
+    color: '#0e11af'
+  },
+  {
+    id: 'Electricity',
+    color: '#7a0e92'
+  },
+  {
+    id: 'Heat',
+    color: '#c5b9bb'
+  }
 ];
 
 const links = [

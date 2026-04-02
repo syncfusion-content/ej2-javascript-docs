@@ -3,12 +3,30 @@ import { Sankey, SankeyNodeModel, SankeyLinkModel, SankeyTooltip, SankeyLegend }
 Sankey.Inject(SankeyTooltip, SankeyLegend);
 
 const nodes: SankeyNodeModel[] = [
-  { id: 'Agricultural Waste', color: '#FF6B6B' },
-  { id: 'Biomass Residues' },
-  { id: 'Bio-conversion', color: '#4ECDC4' },
-  { id: 'Liquid Biofuel', color: '#45B7D1' },
-  { id: 'Electricity', color: '#FFA07A' },
-  { id: 'Heat', color: '#98D8C8' }
+  {
+    id: 'Agricultural Waste',
+    color: '#f41212'
+  },
+  {
+    id: 'Biomass Residues',
+    color: '#aed62c'
+  },
+  {
+    id: 'Bio-conversion',
+    color: '#259bc3'
+  },
+  {
+    id: 'Liquid Biofuel',
+    color: '#0e11af'
+  },
+  {
+    id: 'Electricity',
+    color: '#7a0e92'
+  },
+  {
+    id: 'Heat',
+    color: '#c5b9bb'
+  }
 ];
 
 const links: SankeyLinkModel[] = [

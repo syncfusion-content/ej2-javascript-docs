@@ -77,94 +77,42 @@ You can use the [executePrompt](../api/inline-ai-assist#executeprompt) method to
 
 You can use [showPopup](../api/inline-ai-assist#showPopup) method to open the Inline AI Assist popup and optionally position it at specified coordinates.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/inline-ai-assist/methods/show-popup/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/inline-ai-assist/methods/show-popup/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/inline-ai-assist/methods/show-popup" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/inline-ai-assist/methods/show-popup/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/inline-ai-assist/methods/show-popup/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/inline-ai-assist/methods/show-popup" %}
-{% endif %}
-
 ## Hiding popup
 
 You can use [hidePopup](../api/inline-ai-assist#hidePopup) method to close the Inline AI Assist popup.
 
+Below sample demonstrates the usage of show and hide popup in Inline Assist component
+
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/inline-ai-assist/methods/hide-popup/index.ts %}
+{% include code-snippet/inline-ai-assist/methods/show-hide-componentpopup/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/inline-ai-assist/methods/hide-popup/index.html %}
+{% include code-snippet/inline-ai-assist/methods/show-hide-componentpopup/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/inline-ai-assist/methods/hide-popup" %}
+{% previewsample "page.domainurl/code-snippet/inline-ai-assist/methods/show-hide-componentpopup" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/inline-ai-assist/methods/hide-popup/index.js %}
+{% include code-snippet/inline-ai-assist/methods/show-hide-componentpopup/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/inline-ai-assist/methods/hide-popup/index.html %}
+{% include code-snippet/inline-ai-assist/methods/show-hide-componentpopup/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/inline-ai-assist/methods/hide-popup" %}
+{% previewsample "page.domainurl/code-snippet/inline-ai-assist/methods/show-hide-componentpopup" %}
 {% endif %}
 
 ## Showing command popup
 
 Use [showCommandPopup](../api/inline-ai-assist#showCommandPopup) to open the command action popup; it only opens when the Inline AI Assist popup is already opened.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/inline-ai-assist/methods/show-command-popup/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/inline-ai-assist/methods/show-command-popup/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/inline-ai-assist/methods/show-command-popup" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/inline-ai-assist/methods/show-command-popup/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/inline-ai-assist/methods/show-command-popup/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/inline-ai-assist/methods/show-command-popup" %}
-{% endif %}
 
 ## Hiding command popup
 
@@ -174,25 +122,25 @@ You can use [hideCommandPopup](../api/inline-ai-assist#hideCommandPopup) to clos
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/inline-ai-assist/methods/hide-command-popup/index.ts %}
+{% include code-snippet/inline-ai-assist/methods/show-hide-commandpopup/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/inline-ai-assist/methods/hide-command-popup/index.html %}
+{% include code-snippet/inline-ai-assist/methods/show-hide-commandpopup/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/inline-ai-assist/methods/hide-command-popup" %}
+{% previewsample "page.domainurl/code-snippet/inline-ai-assist/methods/show-hide-commandpopup" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/inline-ai-assist/methods/hide-command-popup/index.js %}
+{% include code-snippet/inline-ai-assist/methods/show-hide-commandpopup/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/inline-ai-assist/methods/hide-command-popup/index.html %}
+{% include code-snippet/inline-ai-assist/methods/show-hide-commandpopup/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/inline-ai-assist/methods/hide-command-popup" %}
+{% previewsample "page.domainurl/code-snippet/inline-ai-assist/methods/show-hide-commandpopup" %}
 {% endif %}

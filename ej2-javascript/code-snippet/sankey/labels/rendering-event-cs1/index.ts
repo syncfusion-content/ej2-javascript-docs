@@ -3,12 +3,30 @@ import { Sankey, SankeyNodeModel, SankeyLinkModel, SankeyTooltip, SankeyLegend, 
 Sankey.Inject(SankeyTooltip, SankeyLegend);
 
 const nodes: SankeyNodeModel[] = [
-  { id: 'Agricultural Waste' },
-  { id: 'Biomass Residues' },
-  { id: 'Bio-conversion' },
-  { id: 'Liquid Biofuel' },
-  { id: 'Electricity' },
-  { id: 'Heat' }
+  {
+    id: 'Agricultural Waste',
+    color: '#f41212'
+  },
+  {
+    id: 'Biomass Residues',
+    color: '#aed62c'
+  },
+  {
+    id: 'Bio-conversion',
+    color: '#259bc3'
+  },
+  {
+    id: 'Liquid Biofuel',
+    color: '#0e11af'
+  },
+  {
+    id: 'Electricity',
+    color: '#7a0e92'
+  },
+  {
+    id: 'Heat',
+    color: '#c5b9bb'
+  }
 ];
 
 const links: SankeyLinkModel[] = [
@@ -20,7 +38,7 @@ const links: SankeyLinkModel[] = [
 ];
 
 const onLabelRendering = (args: SankeyLabelRenderEventArgs) => {
-  if (args.text === 'Agricultural Waste') {
+  if (args.text === 'Agricultural Waste 84.152') {
     args.labelStyle = { fontWeight: 'bold', color: '#FF6B6B', fontSize: '14px', fontFamily: 'Arial', fontStyle: 'normal' };
   }
 };

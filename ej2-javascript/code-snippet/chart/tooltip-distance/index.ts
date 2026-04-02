@@ -42,4 +42,4 @@ let chart: Chart = new Chart({
         distance: 20
     },
 });
-chart.appendTo('#container');
+chart.appendTo('#element');

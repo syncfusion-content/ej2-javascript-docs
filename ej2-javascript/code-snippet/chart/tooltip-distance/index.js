@@ -98,4 +98,4 @@ var chart = new ej.charts.Chart({
         distance: 20
     },
 });
-chart.appendTo('#container');
+chart.appendTo('#element');

@@ -18,8 +18,8 @@ const links = [
 const sankey = new ej.charts.Sankey(
   {
     width: '90%',
-    height: Browser.isDevice ? '600px' : '450px',
-    margin: { left: Browser.isDevice ? 10 : 40, right: Browser.isDevice ? 10 : 40, top: 20, bottom: 20 },
+    height: ej.base.Browser.isDevice ? '600px' : '450px',
+    margin: { left: ej.base.Browser.isDevice ? 10 : 40, right: ej.base.Browser.isDevice ? 10 : 40, top: 20, bottom: 20 },
     nodes: nodes,
     links: links,
     tooltip: { enable: true },

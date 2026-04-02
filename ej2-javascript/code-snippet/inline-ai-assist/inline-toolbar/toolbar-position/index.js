@@ -1,11 +1,15 @@
 ej.base.enableRipple(true);
 
-// Initializes the Inline AI Assist control
+// Merged sample demonstrating toolbarPosition and toolbarText
 var inlineAIAssist = new ej.interactivechat.InlineAIAssist({
     relateTo: '#summarizeBtn',
+    inlineToolbarSettings: {
+        toolbarPosition: 'Bottom',
+        items: [ { text: 'Welcome User !', align: 'Right' } ]
+    },
     promptRequest: function () {
         setTimeout(function () {
-            var defaultResponse = 'For real-time prompt processing, connect the Inline AI Assist component to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
+            var defaultResponse = 'Merged sample showing toolbar-position and toolbar-text.';
             inlineAIAssist.addResponse(defaultResponse);
         }, 1000);
     },
@@ -22,9 +26,6 @@ var inlineAIAssist = new ej.interactivechat.InlineAIAssist({
                 inlineAIAssist.hidePopup();
             }
         }
-    },
-    inlineToolbarSettings: {
-        toolbarPosition: 'Bottom'
     }
 });
 
@@ -37,10 +38,11 @@ if (summarizeBtn) {
     });
 }
 
-document.getElementById("toolbarBtn")?.addEventListener("click", function() {
-  // Toggle the toolbar position
-  inlineAIAssist.inlineToolbarSettings.toolbarPosition =
-    inlineAIAssist.inlineToolbarSettings.toolbarPosition === "Inline"
-      ? "Bottom"
-      : "Inline";
-});
+// Optional toggle button (keeps behavior from original sample)
+var toolbarBtn = document.getElementById('toolbarBtn');
+if (toolbarBtn) {
+    toolbarBtn.addEventListener('click', function () {
+        inlineAIAssist.inlineToolbarSettings.toolbarPosition =
+            inlineAIAssist.inlineToolbarSettings.toolbarPosition === 'Inline' ? 'Bottom' : 'Inline';
+    });
+}

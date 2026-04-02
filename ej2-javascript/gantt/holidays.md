@@ -24,7 +24,7 @@ The following code example shows how to display the non-working days in the Gant
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/holidays-cs1/index.ts %}
 {% endhighlight %}

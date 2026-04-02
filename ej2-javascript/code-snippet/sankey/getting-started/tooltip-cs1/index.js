@@ -55,11 +55,11 @@ const links = [
 const sankey = new ej.charts.Sankey(
   {
      width:  '90%',
-    height: Browser.isDevice ? '600px' : '450px',
+    height: ej.base.Browser.isDevice ? '600px' : '450px',
     title: 'California Energy Consumption in 2023',
     subTitle: 'Source: Lawrence Livermore National Laboratory',
     linkStyle: { opacity: 0.6, curvature: 0.55, colorType: 'Source' },
-    labelSettings: { visible: Browser.isDevice ? false : true },
+    labelSettings: { visible: ej.base.Browser.isDevice ? false : true },
     tooltip: { enable: true },
     legendSettings: { visible: true, position: 'Bottom', itemPadding: 8 },
     loaded: onLoaded,

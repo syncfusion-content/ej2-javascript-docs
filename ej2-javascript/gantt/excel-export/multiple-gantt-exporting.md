@@ -19,7 +19,7 @@ The Excel export provides support to export multiple Gantt data in the same shee
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/excel-multiple-export-cs1/index.ts %}
 {% endhighlight %}
@@ -52,7 +52,7 @@ The Excel exporting provides support to export multiple Gantt in new sheet. To e
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/excel-multiple-export-cs2/index.ts %}
 {% endhighlight %}
@@ -87,7 +87,7 @@ In Gantt, the Excel export provides an option to export hidden columns by defini
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/excel-export-cs3/index.ts %}
 {% endhighlight %}
@@ -122,7 +122,7 @@ Similarly, in the `excelExportComplete` event, you can revert the columns visibi
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/excel-export-cs4/index.ts %}
 {% endhighlight %}
@@ -155,7 +155,7 @@ In the following sample, the background color has been customized for `TaskID` c
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/excel-export-cs5/index.ts %}
 {% endhighlight %}
@@ -188,7 +188,7 @@ To apply theme in exported Excel, define the `theme` in `ExcelExportProperties`.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/excel-export-cs6/index.ts %}
 {% endhighlight %}
@@ -221,7 +221,7 @@ The Excel export also allows users to include header and footer contents to the 
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/excel-export-cs7/index.ts %}
 {% endhighlight %}
@@ -252,7 +252,7 @@ You can set the required file name for the exported document by defining the `fi
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/excel-export-cs8/index.ts %}
 {% endhighlight %}

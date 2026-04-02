@@ -15,7 +15,7 @@ You can enable Excel like filter by defining [filterSettings.type](https://ej2.s
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/initialLoadFiltering-cs1/index.ts %}
 {% endhighlight %}

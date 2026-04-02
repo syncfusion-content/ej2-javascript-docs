@@ -27,7 +27,7 @@ This support is used to view all the tasks available in a project within availab
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/zooming-cs1/index.ts %}
 {% endhighlight %}
@@ -58,7 +58,7 @@ In Gantt, the zoom in and zoom out actions are performed based on the predefined
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/zooming-cs2/index.ts %}
 {% endhighlight %}

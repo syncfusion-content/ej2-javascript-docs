@@ -17,7 +17,7 @@ In the following sample, the Shimmer indicator is displayed while the gantt is s
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/loading-animation-cs1/index.ts %}
 {% endhighlight %}

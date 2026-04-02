@@ -23,7 +23,7 @@ Using the [columns](../../api/gantt#columns) property, you can define the column
 
  {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/columns-cs5/index.ts %}
 {% endhighlight %}
@@ -54,7 +54,7 @@ The column header text can be defined using the [headerText](../../api/gantt/col
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/headerTemplate-cs1/index.ts %}
 {% endhighlight %}
@@ -85,7 +85,7 @@ To format the cell values based on a specific culture, use the [columns.format](
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/columns-cs6/index.ts %}
 {% endhighlight %}
@@ -116,11 +116,11 @@ To format the cell values based on a specific culture, use the [columns.format](
 
 The number or integer values can be formatted using the following format strings.
 
-Format |Description |Remarks
------|-----
-N | Denotes numeric type. | The numeric format is followed by an integer value like N2 or N3, which denotes the number of precisions to be allowed.
-C | Denotes currency type. | The currency format is followed by an integer value like C2 or C3, which denotes the number of precisions to be allowed.
-P | Denotes percentage type | The percentage format expects the input value to be in the range of 0 to 100. For example, the cell value `0.2` is formatted as `20%`. The percentage format is followed by an integer value like P2, P3, which denotes the number of precisions to be allowed.
+| Format | Description             | Remarks                                                                                                                                                                                                                                                         |
+| ------ | ----------------------- |
+| N      | Denotes numeric type.   | The numeric format is followed by an integer value like N2 or N3, which denotes the number of precisions to be allowed.                                                                                                                                         |
+| C      | Denotes currency type.  | The currency format is followed by an integer value like C2 or C3, which denotes the number of precisions to be allowed.                                                                                                                                        |
+| P      | Denotes percentage type | The percentage format expects the input value to be in the range of 0 to 100. For example, the cell value `0.2` is formatted as `20%`. The percentage format is followed by an integer value like P2, P3, which denotes the number of precisions to be allowed. |
 
 ### Date formatting
 
@@ -130,17 +130,17 @@ For the built-in date format, you can specify the [columns.format](../../api/gan
 
 You can also use the custom format string to format the date values. Some of the custom formats and the formatted date values are given in the following table.
 
-Format | Formatted value
------|-----
-{ type:'date', format:'dd/MM/yyyy' } | 04/07/2019
-{ type:'date', format:'dd.MM.yyyy' } | 04.07.2019
-{ type:'date', skeleton:'short' } | 7/4/19
-{ type: 'dateTime', format: 'dd/MM/yyyy hh:mm a' } | 04/07/2019 12:00 AM
-{ type: 'dateTime', format: 'MM/dd/yyyy hh:mm:ss a' } | 07/04/2019 12:00:00 AM
+| Format                                                | Formatted value        |
+| ----------------------------------------------------- | ---------------------- |
+| { type:'date', format:'dd/MM/yyyy' }                  | 04/07/2019             |
+| { type:'date', format:'dd.MM.yyyy' }                  | 04.07.2019             |
+| { type:'date', skeleton:'short' }                     | 7/4/19                 |
+| { type: 'dateTime', format: 'dd/MM/yyyy hh:mm a' }    | 04/07/2019 12:00 AM    |
+| { type: 'dateTime', format: 'MM/dd/yyyy hh:mm:ss a' } | 07/04/2019 12:00:00 AM |
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/columns-cs7/index.ts %}
 {% endhighlight %}
@@ -171,7 +171,7 @@ The tree/expander column is a column in the Gantt control, that has icons to exp
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/columns-cs9/index.ts %}
 {% endhighlight %}
@@ -202,7 +202,7 @@ You can show or hide gantt columns dynamically using external buttons by invokin
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/show-hide-cs1/index.ts %}
 {% endhighlight %}
@@ -233,7 +233,7 @@ You can enable or disable gantt action for a particular column by setting the [a
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/Grid-actions-cs1/index.ts %}
 {% endhighlight %}

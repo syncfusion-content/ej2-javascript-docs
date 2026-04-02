@@ -17,7 +17,7 @@ To export data to Excel and CSV, inject the `ExcelExport` module in Gantt.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/excel-export-cs2/index.ts %}
 {% endhighlight %}

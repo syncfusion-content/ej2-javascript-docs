@@ -15,7 +15,7 @@ The excel export provides an option to define datasource dynamically before expo
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/excel-export-cs1/index.ts %}
 {% endhighlight %}

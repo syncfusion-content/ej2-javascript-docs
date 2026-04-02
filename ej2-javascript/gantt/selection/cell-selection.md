@@ -17,7 +17,7 @@ Find the code example below to enable the cell selection in Gantt.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/selection-cs1/index.ts %}
 {% endhighlight %}
@@ -48,7 +48,7 @@ You can select multiple cells by setting the [selectionSettings.type](../../api/
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/selection-cs2/index.ts %}
 {% endhighlight %}
@@ -79,7 +79,7 @@ You can select a cell dynamically using the [selectCell](../../api/gantt/selecti
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/selectCell-cs1/index.ts %}
 {% endhighlight %}
@@ -110,7 +110,7 @@ While selecting a cell in Gantt, the [cellSelecting](../../api/gantt#cellselecti
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/selection-cs3/index.ts %}
 {% endhighlight %}

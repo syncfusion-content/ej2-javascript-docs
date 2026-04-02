@@ -33,7 +33,7 @@ The rendering of the parent taskbar in auto-scheduling mode also takes into acco
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/task-schedule-cs1/index.ts %}
 {% endhighlight %}
@@ -64,7 +64,7 @@ When the [taskMode](../api/gantt#taskmode) property is set as `Manual`, the star
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/task-schedule-cs2/index.ts %}
 {% endhighlight %}
@@ -95,7 +95,7 @@ When the [taskMode](../api/gantt#taskmode) property is set as `Custom`, the sche
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/task-schedule-cs3/index.ts %}
 {% endhighlight %}
@@ -124,12 +124,12 @@ When the [taskMode](../api/gantt#taskmode) property is set as `Custom`, the sche
 
 Unscheduled tasks are planned for a project without any definite schedule dates. The Gantt control supports rendering the unscheduled tasks. You can create or update the tasks with anyone of start date, end date, and duration values or none. You can enable or disable the unscheduled tasks by using the [allowUnscheduledTasks](../api/gantt#allowunscheduledtasks) property. The following images represent the various types of unscheduled tasks in Gantt.
 
-Taskbar state |Auto |Manual
------|-----|-----
-`Start Date Only` | ![Alt text](../images/startDate-only.png) | ![Alt text](../images/startDate-manual.png)
-`End Date Only` | ![Alt text](../images/endDate-only.png) | ![Alt text](../images/endDate-manual.png)
-`Duration Only` | ![Alt text](../images/duration-only.png) | ![Alt text](../images/duration-manual.png)
-`Milestone`| ![Alt text](../images/milestone.png) | ![Alt text](../images/milestone.png)
+| Taskbar state     | Auto                                      | Manual                                      |
+| ----------------- | ----------------------------------------- | ------------------------------------------- |
+| `Start Date Only` | ![Alt text](../images/startDate-only.png) | ![Alt text](../images/startDate-manual.png) |
+| `End Date Only`   | ![Alt text](../images/endDate-only.png)   | ![Alt text](../images/endDate-manual.png)   |
+| `Duration Only`   | ![Alt text](../images/duration-only.png)  | ![Alt text](../images/duration-manual.png)  |
+| `Milestone`       | ![Alt text](../images/milestone.png)      | ![Alt text](../images/milestone.png)        |
 
 >Note: A milestone is a task that has no start and end dates, but it has a duration value of zero
 
@@ -139,7 +139,7 @@ You can define the various types of unscheduled tasks in the data source as foll
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/unscheduledTasks-cs2/index.ts %}
 {% endhighlight %}
@@ -175,7 +175,7 @@ The following code snippet explains how to define the working time range for the
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/workingtimerange-cs2/index.ts %}
 {% endhighlight %}
@@ -214,7 +214,7 @@ The following code snippet explains how to define the week working time range fo
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/week-workingtime-cs1/index.ts %}
 {% endhighlight %}
@@ -251,7 +251,7 @@ Non-working days/weekend are used to represent the non-productive days in a proj
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/how-to-changeworkweek-cs2/index.ts %}
 {% endhighlight %}
@@ -298,7 +298,7 @@ The below code snippet explains the mapping of duration unit data source field t
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/durationUnits-cs1/index.ts %}
 {% endhighlight %}
@@ -332,7 +332,7 @@ Duration units for the tasks can also be defined along with the duration values,
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/durationUnits-cs2/index.ts %}
 {% endhighlight %}

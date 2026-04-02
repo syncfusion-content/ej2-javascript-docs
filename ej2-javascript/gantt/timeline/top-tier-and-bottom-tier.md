@@ -15,7 +15,7 @@ Gantt control contains two tier layout in timeline, we can customize the top tie
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/timeline-cs8/index.ts %}
 {% endhighlight %}
@@ -46,7 +46,7 @@ In Gantt, timeline cells in top tier and bottom tier can be combined with number
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/timeline-cs9/index.ts %}
 {% endhighlight %}
@@ -108,7 +108,7 @@ In the Gantt control, you can define the width value of timeline cell using the 
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/timeline-cs11/index.ts %}
 {% endhighlight %}

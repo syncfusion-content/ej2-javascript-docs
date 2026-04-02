@@ -17,7 +17,7 @@ To highlight the days, inject the [DayMarkers](../api/gantt#daymarkersmodule) mo
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/event-markers-cs1/index.ts %}
 {% endhighlight %}
@@ -48,7 +48,7 @@ When [eventMarkers](../api/gantt/eventMarker) are given in consecutive dates and
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/event-markers-cs2/index.ts %}
 {% endhighlight %}
@@ -79,7 +79,7 @@ In the EJ2 Gantt control, it is possible to customize multiple [eventMarkers](..
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/eventmarkeroverlap-cs1/index.ts %}
 {% endhighlight %}

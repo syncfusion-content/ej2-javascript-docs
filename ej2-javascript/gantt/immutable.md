@@ -19,7 +19,7 @@ To enable this feature, you have to set the [enableImmutableMode](../api/gantt#e
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/immutable-cs1/index.ts %}
 {% endhighlight %}

@@ -15,17 +15,17 @@ The column menu has options to integrate features like sorting, filtering, and a
 
 The default items are displayed in the following table:
 
-| Item | Description |
-|-----|-----|
-| `SortAscending` | Sort the current column in ascending order. |
-| `SortDescending` | Sort the current column in descending order. |
-| `AutoFit` | Auto fit the current column. |
-| `AutoFitAll` | Auto fit all columns. |
-| `Filter` | Show the filter option as given in the `filterSettings.type` property. |
+| Item             | Description                                                            |
+| ---------------- | ---------------------------------------------------------------------- |
+| `SortAscending`  | Sort the current column in ascending order.                            |
+| `SortDescending` | Sort the current column in descending order.                           |
+| `AutoFit`        | Auto fit the current column.                                           |
+| `AutoFitAll`     | Auto fit all columns.                                                  |
+| `Filter`         | Show the filter option as given in the `filterSettings.type` property. |
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/columns-cs1/index.ts %}
 {% endhighlight %}
@@ -61,7 +61,7 @@ During the resizing action, the gantt component triggers the below two events.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/columnMenu-events-cs1/index.ts %}
 {% endhighlight %}
@@ -92,7 +92,7 @@ Custom column menu items can be added by defining the [columnMenuItems](../../ap
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/columnMenu-custom-item-cs1/index.ts %}
 {% endhighlight %}
@@ -125,7 +125,7 @@ The following sample, **Filter** item was hidden in column menu when opens for t
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/colMenu-customAction-cs1/index.ts %}
 {% endhighlight %}

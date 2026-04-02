@@ -17,7 +17,7 @@ To search records, inject the `Filter` module into the Gantt control.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/searching-cs1/index.ts %}
 {% endhighlight %}
@@ -48,7 +48,7 @@ In the Gantt control, you can load a task with some search criteria and this can
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/searching-cs2/index.ts %}
 {% endhighlight %}
@@ -81,13 +81,13 @@ The search operator can be defined in the [searchSettings.operator](../../api/ga
 
 The following operators are supported in searching:
 
-Operator |Description
------|-----
-startsWith |Checks whether a value begins with the specified value.
-endsWith |Checks whether a value ends with the specified value.
-contains |Checks whether a value contains the specified value.
-equal |Checks whether a value is equal to the specified value.
-notEqual |Checks for the values that are not equal to the specified value.
+| Operator   | Description                                                      |
+| ---------- | ---------------------------------------------------------------- |
+| startsWith | Checks whether a value begins with the specified value.          |
+| endsWith   | Checks whether a value ends with the specified value.            |
+| contains   | Checks whether a value contains the specified value.             |
+| equal      | Checks whether a value is equal to the specified value.          |
+| notEqual   | Checks for the values that are not equal to the specified value. |
 
 > By default, the [searchSettings.operator](../../api/gantt/searchSettings#operator) value is `contains`.
 
@@ -97,7 +97,7 @@ To search the Gantt records from an external button, invoke the [search](../../a
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/externalSearch-cs1/index.ts %}
 {% endhighlight %}
@@ -130,7 +130,7 @@ By default, the Gantt control searches all the columns. You can search specific 
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/searching-cs3/index.ts %}
 {% endhighlight %}
@@ -163,7 +163,7 @@ You can set [searchSettings.key](../../api/gantt/searchSettings#key) property as
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/clear-search-cs1/index.ts %}
 {% endhighlight %}

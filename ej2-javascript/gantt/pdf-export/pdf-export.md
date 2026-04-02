@@ -19,7 +19,7 @@ To export data to PDF document, inject the `PdfExport` module in Gantt.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/pdf-export-cs14/index.ts %}
 {% endhighlight %}
@@ -51,7 +51,7 @@ These indicators, represented by images,can be effortlessly defined using the  [
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/pdf-export-cs16/index.ts %}
 {% endhighlight %}
@@ -88,7 +88,7 @@ step 2: Then , `pdfExpComplete` return as blob object.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/exporting-blob-data-cs1/index.ts %}
 {% endhighlight %}
@@ -121,7 +121,7 @@ Also, we can customize the chart width and grid width in exported file using [ch
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/single-page/index.ts %}
 {% endhighlight %}
@@ -152,7 +152,7 @@ PDF export provides an option for exporting multiple Gantt to same file. In this
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/pdf-multiple-export-cs1/index.ts %}
 {% endhighlight %}
@@ -189,7 +189,7 @@ The available themes are:
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/pdf-export-cs12/index.ts %}
 {% endhighlight %}

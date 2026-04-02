@@ -15,7 +15,7 @@ The Gantt control provides the menu filtering support for each column. You can e
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/initialLoadFiltering-cs2/index.ts %}
 {% endhighlight %}
@@ -57,7 +57,7 @@ In the following sample, dropdown is used  as custom component in the TaskName c
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/initialLoadFiltering-cs3/index.ts %}
 {% endhighlight %}

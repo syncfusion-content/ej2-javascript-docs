@@ -19,20 +19,20 @@ Built-in toolbar items allow you to perform standard operations directly from th
 
 The following table shows built-in toolbar items and its actions.
 
-| Built-in Toolbar Items | Actions |
-|------------------------|---------|
-| ExpandAll | Expands all the rows.|
-| CollapseAll | Collapses all the rows.|
-| Add | Adds a new record.|
-| Edit | Edits the selected record.|
-| Indent | Indent the selected record to one level.|
-| Outdent | Outdents the selected record to one level.|
-| Update | Updates the edited record.|
-| Delete | Deletes the selected record.|
-| Cancel | Cancels the edit state.|
-| Search | Searches the records by the given key.|
-| PrevTimeSpan | Navigate the Gantt timeline to previous time span.|
-| NextTimeSpan | Navigate the Gantt timeline to Next time span.|
+| Built-in Toolbar Items | Actions                                            |
+| ---------------------- | -------------------------------------------------- |
+| ExpandAll              | Expands all the rows.                              |
+| CollapseAll            | Collapses all the rows.                            |
+| Add                    | Adds a new record.                                 |
+| Edit                   | Edits the selected record.                         |
+| Indent                 | Indent the selected record to one level.           |
+| Outdent                | Outdents the selected record to one level.         |
+| Update                 | Updates the edited record.                         |
+| Delete                 | Deletes the selected record.                       |
+| Cancel                 | Cancels the edit state.                            |
+| Search                 | Searches the records by the given key.             |
+| PrevTimeSpan           | Navigate the Gantt timeline to previous time span. |
+| NextTimeSpan           | Navigate the Gantt timeline to Next time span.     |
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -302,11 +302,11 @@ You can control toolbar items dynamically using the [enableItems](../api/gantt#e
 
 You can enhance the Gantt toolbar component by adding editor elements such as numeric text boxes, drop-down lists, and date pickers. These input controls improve user interaction by enabling filtering, searching, and other dynamic actions.
 
-The following example demonstrates how to integrate an [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started) compoenent into the toolbar.
+The following example demonstrates how to integrate an [AutoComplete](../../auto-complete/getting-started) compoenent into the toolbar.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/customToolbarItems-cs1/index.ts %}
 {% endhighlight %}

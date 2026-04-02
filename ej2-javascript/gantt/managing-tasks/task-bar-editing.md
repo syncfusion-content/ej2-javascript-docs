@@ -17,7 +17,7 @@ Modify the task details through user interaction such as resizing and dragging t
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/getting-started-cs13/index.ts %}
 {% endhighlight %}
@@ -48,7 +48,7 @@ On taskbar edit action, the [taskbarEditing](../../api/gantt#taskbarediting) eve
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/editing-cs5/index.ts %}
 {% endhighlight %}

@@ -17,7 +17,7 @@ In the following demo, **Work 1**  cells have been spanned.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/column-span-cs1/index.ts %}
 {% endhighlight %}

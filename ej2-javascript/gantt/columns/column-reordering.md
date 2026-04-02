@@ -18,7 +18,7 @@ To use the column reordering feature, inject the `Reorder` module to the Gantt c
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/columns-cs2/index.ts %}
 {% endhighlight %}
@@ -51,7 +51,7 @@ Multiple columns can be reordered at a time by using the [reorderColumns](../../
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/multipleReorder-cs1/index.ts %}
 {% endhighlight %}
@@ -86,7 +86,7 @@ During the reorder action, the gantt component triggers the below three events.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/reorder-events-cs1/index.ts %}
 {% endhighlight %}

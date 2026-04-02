@@ -19,7 +19,7 @@ The work is the total hours required to complete a task. Work can be mapped from
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/work-cs1/index.ts %}
 {% endhighlight %}
@@ -54,7 +54,7 @@ The work, duration and resource unit fields of a task depends upon each other an
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/work-cs2/index.ts %}
 {% endhighlight %}
@@ -81,10 +81,10 @@ The work, duration and resource unit fields of a task depends upon each other an
 
 Following table explains how the work, duration and resource unit fields will gets updated on changing any of the fields
 
-Task Type | Changes in Duration | Changes in work | Changes in Resource Units
------|-----|-----|-----
-Fixed Duration | Work field updates | Resource unit updates| Work field updates
-Fixed Work | Resource unit updates.Note: For manually scheduled task work will update.| Duration field updates. Note: For manually scheduled task resource unit updates. |Duration will update. Note: For manually scheduled task work field updates.
-Fixed Unit | Work field updates | Duration field updates. Note: For manually scheduled task resource unit updates.| Duration will update. Note: For manually scheduled task work field updates.
+| Task Type      | Changes in Duration                                                       | Changes in work                                                                  | Changes in Resource Units                                                   |
+| -------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| Fixed Duration | Work field updates                                                        | Resource unit updates                                                            | Work field updates                                                          |
+| Fixed Work     | Resource unit updates.Note: For manually scheduled task work will update. | Duration field updates. Note: For manually scheduled task resource unit updates. | Duration will update. Note: For manually scheduled task work field updates. |
+| Fixed Unit     | Work field updates                                                        | Duration field updates. Note: For manually scheduled task resource unit updates. | Duration will update. Note: For manually scheduled task work field updates. |
 
 >Note: 1. Fixed Unit is the default taskType in Gantt. 2. The above calculations are not applicable for Milestones.

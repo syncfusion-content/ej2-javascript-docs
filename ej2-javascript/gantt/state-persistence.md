@@ -42,7 +42,7 @@ The following example demonstrates how to prevent Gantt columns from persisting.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/column-prevent-cs1/index.ts %}
 {% endhighlight %}
@@ -75,7 +75,7 @@ If you wish to restore all these column properties, then you can achieve it by c
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/column-persist-cs1/index.ts %}
 {% endhighlight %}

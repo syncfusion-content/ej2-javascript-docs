@@ -29,7 +29,7 @@ The Gantt supports a set of filtering modes with the [filterSettings.hierarchyMo
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/filtering-cs1/index.ts %}
 {% endhighlight %}
@@ -60,7 +60,7 @@ To apply the filter at initial rendering, set the filter to `predicate` object i
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/initialLoadFiltering-cs4/index.ts %}
 {% endhighlight %}
@@ -91,17 +91,17 @@ The filter operator for a column can be defined in the `filterSettings.columns.o
 
 The available operators and its supported data types are:
 
-Operator |Description |Supported Types
------|-----|-----
-startswith |Checks whether the value begins with the specified value. |String
-endswith |Checks whether the value ends with the specified value. |String
-contains |Checks whether the value contains the specified value. |String
-equal |Checks whether the value is equal to the specified value. |String &#124; Number &#124; Boolean &#124; Date
-notequal |Checks for the values that are not equal to the specified value. |String &#124; Number &#124; Boolean &#124; Date
-greaterthan |Checks whether the value is greater than the specified value. |Number &#124; Date
-greaterthanorequal|Checks whether the value is greater than or equal to the specified value. |Number &#124; Date
-lessthan |Checks whether the value is less than the specified value. |Number &#124; Date
-lessthanorequal |Checks whether the value is less than or equal to the specified value. |Number &#124; Date
+| Operator           | Description                                                               | Supported Types                                 |
+| ------------------ | ------------------------------------------------------------------------- | ----------------------------------------------- |
+| startswith         | Checks whether the value begins with the specified value.                 | String                                          |
+| endswith           | Checks whether the value ends with the specified value.                   | String                                          |
+| contains           | Checks whether the value contains the specified value.                    | String                                          |
+| equal              | Checks whether the value is equal to the specified value.                 | String &#124; Number &#124; Boolean &#124; Date |
+| notequal           | Checks for the values that are not equal to the specified value.          | String &#124; Number &#124; Boolean &#124; Date |
+| greaterthan        | Checks whether the value is greater than the specified value.             | Number &#124; Date                              |
+| greaterthanorequal | Checks whether the value is greater than or equal to the specified value. | Number &#124; Date                              |
+| lessthan           | Checks whether the value is less than the specified value.                | Number &#124; Date                              |
+| lessthanorequal    | Checks whether the value is less than or equal to the specified value.    | Number &#124; Date                              |
 
 > By default, the `filterSettings.columns.operator` value is `equal`
 
@@ -113,7 +113,7 @@ In the following sample, type **Perform** in the **TaskName** column to filter d
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/diacriticsFilter-cs1/index.ts %}
 {% endhighlight %}
@@ -144,7 +144,7 @@ You can filter the columns dynamically by using the [filterByColumn](../../api/g
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/filterByColumn-cs1/index.ts %}
 {% endhighlight %}
@@ -176,7 +176,7 @@ The following code snippet explains the above behavior.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/clearFilter-cs1/index.ts %}
 {% endhighlight %}

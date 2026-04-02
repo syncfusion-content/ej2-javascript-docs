@@ -147,7 +147,7 @@ The below code illustrates the pdf export customization.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/pdf-export-customization-cs1/index.ts %}
 {% endhighlight %}
@@ -178,7 +178,7 @@ By default, the exported PDF file includes a footer. The footer can be disabled 
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/pdf-export-cs5/index.ts %}
 {% endhighlight %}

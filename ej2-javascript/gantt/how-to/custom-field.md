@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Custom field in ##Platform_Name## Gantt control | Syncfusion
-description: Learn here all about Custom field in Syncfusion ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more.
+title: Configure Custom Fields in ##Platform_Name##  Gantt Chart Control | Syncfusion
+description: Learn how to configure custom fields in the Syncfusion ##Platform_Name##  Gantt Chart control's add/edit dialogs for enhanced task data management.
 platform: ej2-javascript
-control: Custom field 
+control: Custom fields
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Custom field in ##Platform_Name## Gantt control
+# Configure custom fields in ##Platform_Name## Gantt Chart Control
 
-Generally in Gantt, Custom fields are displayed in the Custom Tab of the Add/Edit dialogs. However, they can be included in the General Tab of Add/Edit Dialog Box using `actionBegin` and `actionComplete` events. These events are used to append the custom field to the dialog box. The following code snippets demonstrate the solution.
+The ##Platform_Name## Gantt Chart control allows you to enhance task data management by adding custom fields to the add/edit dialogs, seamlessly integrating them into the General tab using the [actionBegin](../../api/gantt#actionbegin) and [actionComplete](../../api/gantt#actioncomplete) events. For example, adding a priority dropdown to the General tab enables users to assign task priorities during creation or editing. Inject `Edit` and enable `editSettings.allowAdding` and `editSettings.allowEditing` to support dialog modifications. Configure valid [taskFields](../../api/gantt#taskfields) mappings or custom data properties (e.g., priority) to persist custom field values in the data source. Use `actionBegin` to define custom field properties (e.g., textbox, dropdown) before the dialog opens, and `actionComplete` to handle field data after user input. This feature supports various field types, such as dropdowns or numerics, and integrates with task scheduling, dependencies, and critical path, ensuring custom fields align with project workflows. Ensure the dialog module is configured to render custom fields accurately, enhancing flexibility in task management.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/customfield-cs1/index.ts %}
 {% endhighlight %}
@@ -39,3 +39,8 @@ Generally in Gantt, Custom fields are displayed in the Custom Tab of the Add/Edi
 
 {% previewsample "page.domainurl/code-snippet/gantt/customfield-cs1" %}
 {% endif %}
+
+## See also
+- [How to configure add/edit dialogs?](../../gantt/managing-tasks/managing-tasks#customize-control-in-addedit-dialog)
+- [How to manage task dependencies?](../../gantt/task-dependency)
+- [How to configure critical path?](../../gantt/critical-path)

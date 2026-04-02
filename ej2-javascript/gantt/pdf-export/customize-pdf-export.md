@@ -20,7 +20,7 @@ The file name of the exported PDF document can be specified using the [fileName]
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/pdf-export-cs1/index.ts %}
 {% endhighlight %}
@@ -52,7 +52,7 @@ The page orientation of the exported PDF document can be customized using the [p
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/pdf-export-cs2/index.ts %}
 {% endhighlight %}
@@ -112,7 +112,7 @@ Page size can be customized for the exported document using the  [pageSize](../.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/pdf-export-cs3/index.ts %}
 {% endhighlight %}
@@ -143,7 +143,7 @@ PDF export provides an option to export the current view data into PDF. To expor
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/pdf-export-cs4/index.ts %}
 {% endhighlight %}
@@ -174,7 +174,7 @@ PDF export provides an option to export hidden columns of Gantt by defining the 
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/pdf-export-cs6/index.ts %}
 {% endhighlight %}
@@ -205,7 +205,7 @@ The visibility of predecessor lines in the exported PDF document can be controll
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/pdf-export-cs7/index.ts %}
 {% endhighlight %}
@@ -240,7 +240,7 @@ In the following example, the `Duration` column is initially hidden in the Gantt
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/pdf-export-cs8/index.ts %}
 {% endhighlight %}
@@ -273,7 +273,7 @@ In the following sample, the background color is set for `Progress` column in th
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/pdf-export-cs9/index.ts %}
 {% endhighlight %}
@@ -306,7 +306,7 @@ In the following sample, the header background color is set for timeline cells i
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/pdf-export-cs10/index.ts %}
 {% endhighlight %}
@@ -339,7 +339,7 @@ In the following sample, the taskbar background color is customized in the chart
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/pdf-export-cs11/index.ts %}
 {% endhighlight %}
@@ -370,7 +370,7 @@ PDF export allows to customize the Gantt chart's appearance in the exported PDF 
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/pdf-export-cs13/index.ts %}
 {% endhighlight %}
@@ -404,7 +404,7 @@ property contains a collection of style properties for task segments. By specify
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/pdf-export-cs17/index.ts %}
 {% endhighlight %}
@@ -442,7 +442,7 @@ In the following sample, the hyperlinks and images are exported to PDF using [hy
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/pdf-export-column-template-cs1/index.ts %}
 {% endhighlight %}

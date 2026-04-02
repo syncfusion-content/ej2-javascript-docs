@@ -21,7 +21,7 @@ A task assigned to one or more resources are termed as resource task and it is a
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/resource-view-cs1/index.ts %}
 {% endhighlight %}
@@ -58,7 +58,7 @@ The range of overallocation dates can be highlighted by a square bracket. It can
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/resource-view-cs2/index.ts %}
 {% endhighlight %}
@@ -93,7 +93,7 @@ In Gantt, you can enable taskbar drag and drop between resources by using the [a
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/resource-view-taskbardragdrop-cs1/index.ts %}
 {% endhighlight %}

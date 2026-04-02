@@ -15,7 +15,7 @@ To render boolean values as checkbox in columns, you need to set [displayAsCheck
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/checkbox-cs1/index.ts %}
 {% endhighlight %}

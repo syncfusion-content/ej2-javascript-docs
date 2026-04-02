@@ -1,84 +1,65 @@
-var clickHandler = function(args){
-	if(args.item.id === 'Add'){
-    var contextMenuObj = document.getElementById("contextmenu").ej2_instances[0];
-        contextMenuObj.open(60, 20);
-	}
-};
-ej.gantt.Gantt.Inject(ej.gantt.Toolbar);
-var menuItems = [
-    {
-        text: 'Bottom'
-    },
-    {
-        text: 'Above'
-    },
-    {
-        text: 'Below'
-    },
-    {
-        text: 'Child'
-    },
-    {
-        text: 'Top'
-    }];
-var menuOptions = {
-        items: menuItems,
-        select: select
-    };
-
-var menuObj = new ej.navigations.ContextMenu(menuOptions, '#contextmenu');
-
-function select(args) {
-  let gantt = (document.getElementsByClassName('e-gantt')[0]).ej2_instances[0];
-  if (args.item.text === "Bottom") {
-    gantt.editSettings.newRowPosition = "Bottom";
-    gantt.openAddDialog();
-  } else if (args.item.text === "Above") {
-    if (gantt.selectedRowIndex == -1) {
-      alert("Please select any row");
-    } else {
-      gantt.editSettings.newRowPosition = "Above";
-      gantt.openAddDialog();
+var menuObj = new ej.navigations.ContextMenu({
+  items: [
+    { text: 'Bottom' },
+    { text: 'Above' },
+    { text: 'Below' },
+    { text: 'Child' },
+    { text: 'Top' }
+  ],
+  select: function (args) {
+    if (args.item.text === "Bottom") {
+      ganttChart.editSettings.newRowPosition = "Bottom";
+      ganttChart.openAddDialog();
+    } else if (args.item.text === "Above") {
+      if (ganttChart.selectedRowIndex === -1) {
+        alert("Please select any row");
+      } else {
+        ganttChart.editSettings.newRowPosition = "Above";
+        ganttChart.openAddDialog();
+      }
+    } else if (args.item.text === "Below") {
+      if (ganttChart.selectedRowIndex === -1) {
+        alert("Please select any row");
+      } else {
+        ganttChart.editSettings.newRowPosition = "Below";
+        ganttChart.openAddDialog();
+      }
+    } else if (args.item.text === "Child") {
+      if (ganttChart.selectedRowIndex === -1) {
+        alert("Please select any row");
+      } else {
+        ganttChart.editSettings.newRowPosition = "Child";
+        ganttChart.openAddDialog();
+      }
+    } else if (args.item.text === "Top") {
+      ganttChart.editSettings.newRowPosition = "Top";
+      ganttChart.openAddDialog();
     }
-  } else if (args.item.text === "Below") {
-    if (gantt.selectedRowIndex == -1) {
-      alert("Please select any row");
-    } else {
-      gantt.editSettings.newRowPosition = "Below";
-      gantt.openAddDialog();
-    }
-
-  } else if (args.item.text === "Child") {
-    if (gantt.selectedRowIndex == -1) {
-      alert("Please select any row");
-    } else {
-      gantt.editSettings.newRowPosition = "Child";
-      gantt.openAddDialog();
-    }
-  } else if (args.item.text === "Top") {
-    gantt.editSettings.newRowPosition = "Top";
-    gantt.openAddDialog();
   }
-}
+});
+menuObj.appendTo('#contextmenu');
 
 var ganttChart = new ej.gantt.Gantt({
-    dataSource: GanttData,
-		height:'450px',
-		allowSelection: true,
-		taskFields: {
-        id: 'TaskID',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        parentID: 'ParentID'
-      },
-		editSettings:{
-			allowAdding: true,
-      allowEditing: true
-		},
-    toolbar: ['Edit', { text: 'Add', tooltipText: 'Add', id: 'Add' }],
-    toolbarClick: clickHandler,
-
+  dataSource: GanttData,
+  height: '430px',
+  taskFields: {
+    id: 'TaskID',
+    name: 'TaskName',
+    startDate: 'StartDate',
+    duration: 'Duration',
+    progress: 'Progress',
+    parentID: 'ParentID'
+  },
+  editSettings: {
+    allowEditing: true,
+    allowAdding: true,
+    allowDeleting: true
+  },
+  toolbar: ['Edit', { text: 'Add', tooltipText: 'Add', id: 'Add' }],
+  toolbarClick: function (args) {
+    if (args.item.id === 'Add') {
+      menuObj.open(40, 20);
+    }
+  }
 });
 ganttChart.appendTo('#Gantt');

@@ -15,7 +15,7 @@ A column template is used to customize the column’s look. The following code e
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/columnTemplate-cs1/index.ts %}
 {% endhighlight %}

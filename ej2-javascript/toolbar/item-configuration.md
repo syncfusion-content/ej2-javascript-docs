@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Item configuration in ##Platform_Name## Toolbar control
 
-The Toolbar can be rendered by defining an array of [`items`](../api/toolbar/#items). Items can be constructed using the following built-in command types or item templates.
+The Toolbar can be rendered by defining an array of [`items`](../api/toolbar#items). Items can be constructed using the following built-in command types or item templates.
 
 ## Button
 
@@ -148,44 +148,57 @@ E.g.: The following code explains how to add `NumericTextBox`,`DropDownList`,`Ra
 
 ### Enabling tab key navigation in Toolbar
 
-The [`tabIndex`](../api/toolbar/item/#tabindex) property of a Toolbar item is used to enable tab key navigation for the item. By default, the user can switch between items using the arrow keys, but the [`tabIndex`](../api/toolbar/item/#tabindex) property allows you to switch between items using the Tab and Shift+Tab keys as well.
+The [`tabIndex`](../api/toolbar/item#tabindex) property of a Toolbar item is used to enable tab key navigation for the item. By default, the user can switch between items using the arrow keys, but the [`tabIndex`](../api/toolbar/item#tabindex) property allows you to switch between items using the Tab and Shift+Tab keys as well.
 
-To use the [`tabIndex`](../api/toolbar/item/#tabindex) property, you need to set it for each Toolbar item that you want to enable tab key navigation. The [`tabIndex`](../api/toolbar/item/#tabindex) property should be set to a positive integer value. A value of 0 or a negative value will disable tab key navigation for the item.
+To use the [`tabIndex`](../api/toolbar/item#tabindex) property, you need to set it for each Toolbar item that you want to enable tab key navigation. The [`tabIndex`](../api/toolbar/item#tabindex) property should be set to a positive integer value. A value of 0 or a negative value will disable tab key navigation for the item.
 
 For example, to enable tab key navigation for two Toolbar items, you can use the following code:
 
-```ts
-import {Toolbar} from '@syncfusion/ej2-navigations';
+{% if page.publishingplatform == "typescript" %}
 
-let toolbar: Toolbar = new Toolbar({
-  items: [
-    { text: "Item 1", tabIndex: 1 },
-    { text: "Item 2", tabIndex: 2 }
-  ]
-});
-```
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/toolbar/enable-tab-key-navigation/index.ts %}
+{% endhighlight %}
+{% endtabs %}
 
-With the above code, the user can switch between the two Toolbar items using the Tab and Shift+Tab keys, in addition to using the arrow keys. The items will be navigated in the order specified by the [`tabIndex`](../api/toolbar/item/#tabindex) values.
+{% elsif page.publishingplatform == "javascript" %}
 
-If you set the [`tabIndex`](../api/toolbar/item/#tabindex) value to 0 for all Toolbar items, tab key navigation will be based on the element order rather than the [`tabIndex`](../api/toolbar/item/#tabindex) values. For example:
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/toolbar/enable-tab-key-navigation/index.js %}
+{% endhighlight %}
+{% endtabs %}
 
-```ts
-import {Toolbar} from '@syncfusion/ej2-navigations';
+{% endif %}
 
-let toolbar: Toolbar = new Toolbar({
-  items: [
-    { text: "Item 1", tabIndex: 0 },
-    { text: "Item 2", tabIndex: 0 }
-  ]
-});
+With the above code, the user can switch between the two Toolbar items using the Tab and Shift+Tab keys, in addition to using the arrow keys. The items will be navigated in the order specified by the [`tabIndex`](../api/toolbar/item#tabindex) values.
 
-```
+If you set the [`tabIndex`](../api/toolbar/item#tabindex) value to 0 for all Toolbar items, tab key navigation will be based on the element order rather than the [`tabIndex`](../api/toolbar/item#tabindex) values. For example:
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/toolbar/enable-tab-key-navigation-snippet/index.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/toolbar/enable-tab-key-navigation-snippet/index.js %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
 
 In this case, the user can switch between the two Toolbar items using the Tab and Shift+Tab keys, and the items will be navigated in the order in which they appear in the DOM.
 
 Example:
 
-Here is an example of how you can use the [`tabIndex`](../api/toolbar/item/#tabindex) property to enable tab key navigation for a Toolbar component:
+Here is an example of how you can use the [`tabIndex`](../api/toolbar/item#tabindex) property to enable tab key navigation for a Toolbar component:
 
 {% if page.publishingplatform == "typescript" %}
 

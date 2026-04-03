@@ -13,20 +13,23 @@ domainurl: ##DomainURL##
 
 You can add tabs dynamically to the Tab control by passing an array of items and an index value to the [`addTab`](../../api/tab#addtab) method. Here's how you can do it:
 
-```ts
-// Fetch new tab title and content from input elements
-let tabTitle: string = document.getElementById('tab-title').value;
-let content: string = document.getElementById('tab-content').value;
+{% if page.publishingplatform == "typescript" %}
 
-// Create a tab item object using the input values
-let item: Object = { 
-    header: { text: tabTitle }, 
-    content: createElement('pre', { innerHTML: content.replace(/\n/g, '<br>\n') }).outerHTML 
-};
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/tab/dynamic-tab-snippet/index.ts %}
+{% endhighlight %}
+{% endtabs %}
 
-// Add the new tab at the specified index
-tabObj.addTab([item], index);
-```
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/tab/dynamic-tab-snippet/index.js %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
 
 In the following example, we'll demonstrate how to add tabs dynamically:
 

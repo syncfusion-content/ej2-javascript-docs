@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering in ##Platform_Name## Gantt control | Syncfusion
-description: Learn here all about Filtering in Syncfusion ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more.
+title: Filtering in ##Platform_Name## Gantt Chart Control | Syncfusion
+description: Learn here all about filtering in Syncfusion ##Platform_Name## Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Filtering 
 publishingplatform: ##Platform_Name##
@@ -9,55 +9,22 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filtering in ##Platform_Name## Gantt control
+# Filtering in ##Platform_Name## Gantt Chart Control
 
-Filtering allows you to view specific or related records based on filter criteria. This can be done in the Gantt control by using the filter menu support and toolbar search support. To enable filtering in the Gantt control, set the [allowFiltering](../../api/gantt#allowfiltering) to true. Menu filtering support can be configured using the [filterSettings](../../api/gantt/filterSettings) property and toolbar searching can be configured using the [searchSettings](../../api/gantt/searchSettings) property.
+Filtering allows you to view specific or related records based on defined criteria. The Gantt Chart control supports options like filter menu, Excel-like filtering, and toolbar search to narrow down visible data.
 
-To use filter, inject the [Filter](../../api/gantt#filtermodule) module into the Gantt control.
+To enable filtering, set [allowFiltering](../../api/gantt#allowfiltering) to **true** in the Gantt configuration. You can define filter options using [filterSettings](../../api/gantt/filterSettings) and configure toolbar search using [searchSettings](../../api/gantt/searchSettings) property.
 
-## Filter hierarchy modes
+To activate filtering functionality, inject the `Filter` service into the control.
 
-The Gantt supports a set of filtering modes with the [filterSettings.hierarchyMode](../../api/gantt/filterSettings#hierarchymode) property. The following are the types of filter hierarchy modes available in the Gantt control:
+> * The filtering UI is rendered based on the column type, allowing data to be filtered using appropriate operators.
+> * The filter menu is enabled by default. To disable the filtering option for a specific column, set the `allowFiltering` property of the `column` to **false**.
 
-* `Parent`: This is the default filter hierarchy mode in Gantt. The filtered records are displayed with its parent records. If the filtered records do not have any parent record, then only the filtered records will be displayed.
+## Apply initial filter on load
 
-* `Child`: Displays the filtered records with its child record. If the filtered records do not have any child record, then only the filtered records will be displayed.
+To apply filtering during the initial render of the Syncfusion<sup style="font-size:70%">&reg;</sup> React Gantt Chart control, define the filter conditions using a **predicate** object within the [filterSettings.columns](../../api/gantt/filterSettings#columns) property.
 
-* `Both`: Displays the filtered records with its both parent and child records. If the filtered records do not have any parent and child records, then only the filtered records will be displayed.
-
-* `None`: Displays only the filtered records.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt/filtering-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/filtering-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/gantt/filtering-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt/filtering-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/filtering-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/gantt/filtering-cs1" %}
-{% endif %}
-
-## Initial filter
-
-To apply the filter at initial rendering, set the filter to `predicate` object in the [filterSettings.columns](../../api/gantt/filterSettings#columns) property.
-
+The following sample demonstrates how to apply an initial filter where **TaskName** starts with **Identify** and **TaskID** equals **2**, using a `Predicate` condition set to **and**.
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
@@ -68,7 +35,7 @@ To apply the filter at initial rendering, set the filter to `predicate` object i
 {% include code-snippet/gantt/initialLoadFiltering-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/initialLoadFiltering-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -85,31 +52,70 @@ To apply the filter at initial rendering, set the filter to `predicate` object i
 {% previewsample "page.domainurl/code-snippet/gantt/initialLoadFiltering-cs4" %}
 {% endif %}
 
-## Filter operators
+## Supported filter operators
 
-The filter operator for a column can be defined in the `filterSettings.columns.operator` property.
+Filter operators can be set using the `filterSettings.columns.operator` property to define the comparison logic for each column.
 
-The available operators and its supported data types are:
+The available operators and their supported data types are:
 
-| Operator           | Description                                                               | Supported Types                                 |
-| ------------------ | ------------------------------------------------------------------------- | ----------------------------------------------- |
-| startswith         | Checks whether the value begins with the specified value.                 | String                                          |
-| endswith           | Checks whether the value ends with the specified value.                   | String                                          |
-| contains           | Checks whether the value contains the specified value.                    | String                                          |
-| equal              | Checks whether the value is equal to the specified value.                 | String &#124; Number &#124; Boolean &#124; Date |
-| notequal           | Checks for the values that are not equal to the specified value.          | String &#124; Number &#124; Boolean &#124; Date |
-| greaterthan        | Checks whether the value is greater than the specified value.             | Number &#124; Date                              |
-| greaterthanorequal | Checks whether the value is greater than or equal to the specified value. | Number &#124; Date                              |
-| lessthan           | Checks whether the value is less than the specified value.                | Number &#124; Date                              |
-| lessthanorequal    | Checks whether the value is less than or equal to the specified value.    | Number &#124; Date                              |
+| Operator           | Description                                          | Supported Types               |
+| ------------------ | ---------------------------------------------------- | ----------------------------- |
+| startswith         | Matches values beginning with the specified value.   | String                        |
+| endswith           | Matches values ending with the specified value.      | String                        |
+| contains           | Matches values that include the specified value.     | String                        |
+| equal              | Matches values exactly equal to the specified value. | String, Number, Boolean, Date |
+| notequal           | Matches values not equal to the specified value.     | String, Number, Boolean, Date |
+| greaterthan        | Matches values greater than the specified value.     | Number, Date                  |
+| greaterthanorequal | Matches values greater than or equal to the value.   | Number, Date                  |
+| lessthan           | Matches values less than the specified value.        | Number, Date                  |
+| lessthanorequal    | Matches values less than or equal to the value.      | Number, Date                  |
 
 > By default, the `filterSettings.columns.operator` value is `equal`
 
-## Diacritics
+## Hierarchy-based filtering modes
 
-By default, the Gantt control ignores the diacritic characters while filtering. To include diacritic characters, set the [filterSettings.ignoreAccent](../../api/gantt/filterSettings#ignoreaccent) to true.
+The ##Platform_Name## Gantt Chart control supports multiple filtering modes, which can be configured using the [filterSettings.hierarchyMode](https://ej2.syncfusion.com/react/documentation/api/gantt/filterSettings#hierarchymode) property. The available modes are:
 
-In the following sample, type **Perform** in the **TaskName** column to filter diacritic characters.
+- **Parent**: This is the default mode. Filtered records are displayed along with their parent records. If no parent exists, only the filtered records are shown.
+
+- **Child**: Displays filtered records along with their child records. If no child exists, only the filtered records are shown.
+
+- **Both**: Displays filtered records along with both parent and child records. If neither exists, only the filtered records are shown.
+
+- **None**: Displays only the filtered records without any parent or child context.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/filtering-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/filtering-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/filtering-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/filtering-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/filtering-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/filtering-cs1" %}
+{% endif %}
+
+## Enable diacritic-sensitive filtering
+
+By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> React Gantt Chart control ignores diacritic characters during filtering. To enable filtering with diacritic sensitivity, set the [filterSettings.ignoreAccent](../../api/gantt/filterSettings#ignoreaccent) property to **true**.
+
+The following sample demonstrates this behavior: when filtering the **TaskName** column, entries containing diacritic characters (e.g., “Próject”, “Projéct”) will be matched if you enter the base text **Project**.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -121,7 +127,7 @@ In the following sample, type **Perform** in the **TaskName** column to filter d
 {% include code-snippet/gantt/diacriticsFilter-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/diacriticsFilter-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -138,9 +144,11 @@ In the following sample, type **Perform** in the **TaskName** column to filter d
 {% previewsample "page.domainurl/code-snippet/gantt/diacriticsFilter-cs1" %}
 {% endif %}
 
-## Filtering a specific column by method
+## Programmatic filtering using method
 
-You can filter the columns dynamically by using the [filterByColumn](../../api/gantt#filterbycolumn) method.
+You can apply dynamic filtering in the Syncfusion<sup style="font-size:70%">&reg;</sup> React Gantt by using the [filterByColumn](../../api/gantt#filterbycolumn) method. This enables programmatic filtering without relying on UI interactions.
+
+The following sample demonstrates how to filter the **TaskName** and **TaskID** columns using single and multiple values. The filtering is triggered through an external button click by calling the `filterByColumn` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -152,7 +160,7 @@ You can filter the columns dynamically by using the [filterByColumn](../../api/g
 {% include code-snippet/gantt/filterByColumn-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/filterByColumn-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -169,10 +177,9 @@ You can filter the columns dynamically by using the [filterByColumn](../../api/g
 {% previewsample "page.domainurl/code-snippet/gantt/filterByColumn-cs1" %}
 {% endif %}
 
-## Clear filtered columns
+## Clear all applied filters
 
-You can clear all the filtering condition done in the Gantt control by using the [clearFiltering](../../api/gantt#clearfiltering) method.
-The following code snippet explains the above behavior.
+You can clear all the filtering conditions applied in the Gantt Chart contol by using the [clearFiltering](../../api/gantt#clearfiltering) method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -184,7 +191,7 @@ The following code snippet explains the above behavior.
 {% include code-snippet/gantt/clearFilter-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/clearFilter-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -199,4 +206,72 @@ The following code snippet explains the above behavior.
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/gantt/clearFilter-cs1" %}
+{% endif %}
+
+## Set different filter types per column
+
+You can enable different filter types for individual columns in the Gantt Chart control by setting the `column.filter.type` property.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/filtering-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/filtering-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/filtering-cs2" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/filtering-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/filtering-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/filtering-cs2" %}
+{% endif %}
+
+## Customize filtering behavior using events
+
+You can customize the filtering behavior in the  Syncfusion<sup style="font-size:70%">&reg;</sup> React Gantt using the [actionBegin](../../documentation/gantt/events#actionbegin) and [actionComplete](https://ej2.syncfusion.com/react/documentation/gantt/events#actioncomplete) events. These events allow you to inject custom logic at different stages of the filtering workflow.
+
+The following sample demonstrates how to handle different filtering stages using `args.requestType`:
+  
+- For **filterBeforeOpen**, customize filter operators based on `args.columnType` (number or string).  
+- For **filtering**, cancel the action if `args.currentFilteringColumn` is **StartDate**.  
+- For **filterAfterOpen**, apply background styling to the filter dialog content and footer.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/filter-events-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/filter-events-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/filter-events-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/filter-events-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/filter-events-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/filter-events-cs1" %}
 {% endif %}

@@ -1,4 +1,4 @@
-export let GanttData: Object[] = [
+export let data: Object[] = [
     {
         TaskID: 1,
         TaskName: 'Project Initiation',

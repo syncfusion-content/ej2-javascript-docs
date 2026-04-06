@@ -1,54 +1,65 @@
-import { Gantt, Filter } from '@syncfusion/ej2-gantt';
-import { GanttData } from 'datasource.ts';
-import { DataManager } from '@syncfusion/ej2-data';
+import { Gantt, Filter, TaskFieldsModel, SplitterSettingsModel } from '@syncfusion/ej2-gantt';
 import { DropDownList } from '@syncfusion/ej2-dropdowns';
+import { DataManager } from '@syncfusion/ej2-data';
 import { createElement } from '@syncfusion/ej2-base';
+import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Filter);
 
-let gantt: Gantt = new Gantt({
+let gantt: Gantt;
+let dropInstance: DropDownList;
+
+let taskFields: TaskFieldsModel = {
+    id: 'TaskID',
+    name: 'TaskName',
+    startDate: 'StartDate',
+    duration: 'Duration',
+    progress: 'Progress',
+    parentID: 'ParentID'
+};
+
+let splitterSettings: SplitterSettingsModel = {
+    columnIndex: 2
+};
+
+let filter = {
+    ui: {
+        create: (args: any) => {
+            let input: HTMLElement = createElement('input', { className: 'flm-input' });
+            args.target.appendChild(input);
+            dropInstance = new DropDownList({
+                dataSource: new DataManager(GanttData),
+                fields: { text: 'TaskName', value: 'TaskName' },
+                placeholder: 'Select a value',
+                popupHeight: '200px'
+            });
+            dropInstance.appendTo(input);
+        },
+        write: (args: any) => {
+            dropInstance.value = args.filteredValue;
+        },
+        read: (args: any) => {
+            args.fltrObj.filterByColumn(
+                args.column.field,
+                args.operator,
+                dropInstance.value
+            );
+        }
+    }
+};
+
+gantt = new Gantt({
     dataSource: GanttData,
-    height: '450px',
-    taskFields: {
-        id: 'TaskID',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        parentID: 'ParentID'
-    },
-     columns: [
-            { field: 'TaskID' },
-            { field: 'TaskName', filter: {
-                ui: {
-                    create: (args: { target: Element, column: Object }) => {
-                        let db: Object = new DataManager(gantt.treeGrid.grid.dataSource);
-                        let flValInput: HTMLElement = createElement('input', { className: 'flm-input' });
-                        args.target.appendChild(flValInput);
-                        this.dropInstance = new DropDownList({
-                            dataSource: new DataManager(gantt.treeGrid.grid.dataSource),
-                            fields: { text: 'TaskName', value: 'TaskName' },
-                            placeholder: 'Select a value',
-                            popupHeight: '200px'
-                        });
-                        this.dropInstance.appendTo(flValInput);
-                    },
-                    write: (args: {
-                        column: Object, target: Element, parent: any,
-                        filteredValue: number | string
-                    }) => {
-                        this.dropInstance.value = args.filteredValue;
-                    },
-                    read: (args: { target: Element, column: any, operator: string, fltrObj: Filter }) => {
-                        args.fltrObj.filterByColumn(args.column.field, args.operator, this.dropInstance.value);
-                    }
-                }
-                }
-            },
-            { field: 'StartDate' },
-            { field: 'Duration' }
-        ],
-    allowFiltering: true
+    height: '370px',
+    allowFiltering: true,
+    taskFields: taskFields,
+    splitterSettings: splitterSettings,
+    columns: [
+        { field: 'TaskID', headerText: 'Task ID', width: 120 },
+        { field: 'TaskName', headerText: 'Task Name', width: 250, filter: filter },
+        { field: 'StartDate', headerText: 'Start Date', width: 150 },
+        { field: 'Progress', headerText: 'Progress', width: 150 }
+    ]
 });
 
 gantt.appendTo('#Gantt');

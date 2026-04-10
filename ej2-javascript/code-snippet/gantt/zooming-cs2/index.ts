@@ -1,6 +1,3 @@
-
-
-
 import { Gantt, Toolbar, ZoomTimelineSettings } from '@syncfusion/ej2-gantt';
 import { GanttData } from './datasource.ts';
 
@@ -55,9 +52,6 @@ let gantt: Gantt = new Gantt({
         parentID: 'parentID'
     },
     toolbar: ['ZoomIn', 'ZoomOut', 'ZoomToFit'],
-    labelSettings: {
-        leftLabel: 'TaskName'
-    },
     dataBound: function () {
         gantt.zoomingLevels = customZoomingLevels;
     },

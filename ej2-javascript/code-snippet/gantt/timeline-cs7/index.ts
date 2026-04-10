@@ -1,5 +1,3 @@
-
-
 import { Gantt, Edit } from '@syncfusion/ej2-gantt';
 import { GanttData } from './datasource.ts';
 

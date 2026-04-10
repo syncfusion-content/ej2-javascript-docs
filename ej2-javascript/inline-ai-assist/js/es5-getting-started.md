@@ -94,6 +94,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
             <script src="resources/inputs/ej2-inputs.min.js" type="text/javascript"></script>
             <script src="resources/dropdowns/ej2-dropdowns.min.js" type="text/javascript"></script>
             <script src="resources/navigations/ej2-navigations.min.js" type="text/javascript"></script>
+            <script src="resources/markdown-converter/ej2-markdown-converter.min.js" type="text/javascript"></script>
             <!-- JavaScript (ES5) Inline AI Assist control global script -->
             <script src="resources/ej2-interactive-chat/ej2-interactive-chat.min.js" type="text/javascript"></script>
        </head>
@@ -129,6 +130,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
             <script src="resources/inputs/ej2-inputs.min.js" type="text/javascript"></script>
             <script src="resources/dropdowns/ej2-dropdowns.min.js" type="text/javascript"></script>
             <script src="resources/navigations/ej2-navigations.min.js" type="text/javascript"></script>
+            <script src="resources/markdown-converter/ej2-markdown-converter.min.js" type="text/javascript"></script>
 
           <!-- JavaScript (ES5) Inline AI Assist control global script -->
           <script src="resources/ej2-interactive-chat/ej2-interactive-chat.min.js" type="text/javascript"></script>

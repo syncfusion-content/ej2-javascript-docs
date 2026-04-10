@@ -1,9 +1,5 @@
-
-
-import { Gantt, Edit } from '@syncfusion/ej2-gantt';
+import { Gantt } from '@syncfusion/ej2-gantt';
 import { GanttData } from './datasource.ts';
-
-Gantt.Inject(Edit);
 
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
@@ -19,9 +15,5 @@ let gantt: Gantt = new Gantt({
     timelineSettings: {
         showWeekend: false
     },
-    editSettings: {
-        allowEditing: true,
-        allowTaskbarEditing: true
-    }
 });
 gantt.appendTo('#Gantt');

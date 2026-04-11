@@ -123,7 +123,7 @@ In accumulation charts, you can use the drill down and drill up options to explo
           
 {% previewsample "page.domainurl/code-snippet/pivot-table/accumulation-chart-cs11" %}
 
-![output](images/expand_collapse.png)
+![output](images/expand_collapse.webp)
 
 ### Column Headers and Delimiters
 

@@ -84,14 +84,14 @@ It can be configured using `type` option for each value fields through code-behi
 Aggregation types can be changed easily through UI at runtime. The value fields bound to grouping bar and field list appears with a dropdown icon which helps to select an appropriate aggregation type for the respective value field. On selection, the values in the pivot table will be changed dynamically.
 
 <!-- markdownlint-disable MD012 -->
-![output](images/aggregation_fl_menu.png "List of pre-defined aggregation types to be changed via Field List")
+![List of pre-defined aggregation types to be changed via Field List](images/aggregation_fl_menu.webp)
 <br/>
 <br/>
-![output](images/aggregation_gb_menu.png "List of pre-defined aggregation types to be changed via Grouping Bar")
+![List of pre-defined aggregation types to be changed via Grouping Bar](images/aggregation_gb_menu.webp)
 
 ## Hiding aggregation type from button text
 
-By default, in value axis each field would be displayed by its name and aggregation type together. To hide aggregation type and display field name alone, set the property [`showAggregationOnValueField`](https://help.syncfusion.com/cr/cref_files/blazor/Syncfusion.EJ2.Blazor~Syncfusion.EJ2.Blazor.PivotView.DataSourceSettingsModel%601~ShowAggregationOnValueField.html)  in [`dataSourceSettings`](https://help.syncfusion.com/cr/blazor/Syncfusion.EJ2.Blazor~Syncfusion.EJ2.Blazor.PivotView.DataSourceSettingsModel%601.html) to **false**.
+By default, in value axis each field would be displayed by its name and aggregation type together. To hide aggregation type and display field name alone, set the property [`showAggregationOnValueField`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/index-default)  in [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings) to **false**.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -122,7 +122,7 @@ By default, in value axis each field would be displayed by its name and aggregat
 
 ## Hiding aggregation type icon from UI
 
-By default, the icon to set aggregation type is enabled in the grouping bar. To disable this icon, set the property [`showValueTypeIcon`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/groupingBarSettingsModel/#showvaluetypeicon) in [`groupingBarSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/groupingBarSettingsModel/#showvaluetypeicon) to **false**.
+By default, the icon to set aggregation type is enabled in the grouping bar. To disable this icon, set the property [`showValueTypeIcon`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/groupingbarsettingsmodel#showvaluetypeicon) in [`groupingBarSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/groupingbarsettingsmodel#showvaluetypeicon) to **false**.
 
 > Icon to change the aggregation type can be hidden only in Grouping Bar but not in Field List at the moment.
 

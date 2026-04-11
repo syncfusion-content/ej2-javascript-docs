@@ -15,9 +15,9 @@ domainurl: ##DomainURL##
 
 Allows to order field members in rows and columns either in ascending or descending order. By default, field members in rows and columns are in ascending order.
 
-Member sorting can be enabled by setting the [`enableSorting`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#enablesorting) property in [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/) to **true**. After enabling this API, click the sort icon besides each field in row or column axis, available in field list or grouping bar UI for re-arranging members either in ascending or descending order.
+Member sorting can be enabled by setting the [`enableSorting`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#enablesorting) property in [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings) to **true**. After enabling this API, click the sort icon besides each field in row or column axis, available in field list or grouping bar UI for re-arranging members either in ascending or descending order.
 
-> By default the [`enableSorting`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#enablesorting) property in [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/) set as **true**. If we set it as **false**, then the field members arrange in pivot table as its data source order. And, the sort icons in grouping bar and field list buttons will be removed.
+> By default the [`enableSorting`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#enablesorting) property in [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings) set as **true**. If we set it as **false**, then the field members arrange in pivot table as its data source order. And, the sort icons in grouping bar and field list buttons will be removed.
 
 Member sorting can also be configured using the [`sortSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/sort/) through code behind, during initial rendering. The settings required to sort are:
 

@@ -20,7 +20,7 @@ The field list can be displayed in two different formats to interact with pivot 
 
 ## In-built Field List (Popup)
 
-To enable the field list in pivot table UI, set the [`showFieldList`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#showfieldlist) property in pivot table to **true**. A small icon will appear on the top left corner of the pivot table and clicking on this icon, field list dialog will appear.
+To enable the field list in pivot table UI, set the [`showFieldList`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#showfieldlist) property in pivot table to **true**. A small icon will appear on the top left corner of the pivot table and clicking on this icon, field list dialog will appear.
 
 > The field list icon will be displayed at the top right corner of the pivot table, when grouping bar is enabled.
 
@@ -55,9 +55,9 @@ To use field list, you need to inject the `FieldList` module in pivot table.
 
 ## Stand-alone Field List (Fixed)
 
-The field list can be rendered in a static position, anywhere in web page layout, like a separate component. To do so, you need to set [`renderMode`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/#rendermode) property to **Fixed** in [`pivotFieldList`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/).
+The field list can be rendered in a static position, anywhere in web page layout, like a separate component. To do so, you need to set [`renderMode`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/index-default#rendermode) property to **Fixed** in [`pivotFieldList`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/index-default).
 
-> To make field list interact with pivot table, you need to use the [**updateView**](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/#updateview) and [**update**](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/#update) methods for data source update in both field list and pivot table simultaneously.
+> To make field list interact with pivot table, you need to use the [**updateView**](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/index-default#updateview) and [**update**](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/index-default#update) methods for data source update in both field list and pivot table simultaneously.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -90,11 +90,11 @@ The field list can be rendered in a static position, anywhere in web page layout
 
 Using check box besides each field, end user can select or unselect to add or remove fields respectively from the report at runtime.
 
-![output](images/fieldlist_treeview.png)
+![output](images/fieldlist_treeview.webp)
 
 ## Remove specific field(s) from displaying
 
-When a data source is bound to the component, fields will be automatically populated inside the Field List. In such case, user can also restrict specific field(s) from displaying. To do so, set the appropriate field name(s) in [`excludeFields`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#excludefields) property belonging to [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/).
+When a data source is bound to the component, fields will be automatically populated inside the Field List. In such case, user can also restrict specific field(s) from displaying. To do so, set the appropriate field name(s) in [`excludeFields`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings#excludefields) property belonging to [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -127,56 +127,56 @@ When a data source is bound to the component, fields will be automatically popul
 
 In-order to re-arrange, drag any field from the field list and drop it into the column, row, value, or filter axis using the drag-and-drop holder. It helps end user to alter the report at runtime.
 
-![output](images/fieldlist_axes.png)
+![output](images/fieldlist_axes.webp)
 
 ## Filtering members
 
 Using the filter icon besides each field in row, column and filter axes, members can be either included or excluded at runtime. To know more about member filtering, [`refer`](./filtering) here.
 
-![output](images/fieldlist_filtericon.png "Filter icon besides each field")
+![Filter icon besides each field](images/fieldlist_filtericon.webp)
 <br/>
-![output](images/fieldlist_editor.png "Filter dialog to either include or exclude members")
+![Filter dialog to either include or exclude members](images/fieldlist_editor.webp)
 <br/>
-![output](images/fieldlist_filteringgrid.png "Resultant pivot table on filtering members")
+![Resultant pivot table on filtering members](images/fieldlist_filteringgrid.webp)
 
 ## Sorting members
 
 Using the sort icon besides each field in row and column axes, members can be arranged either in ascending or descending order at runtime. To know more about member sorting, [`refer`](./sorting) here.
 
-![output](images/fieldlist_sorticon.png "Sort icon besides each field")
+![Sort icon besides each field](images/fieldlist_sorticon.webp)
 <br/>
-![output](images/fieldlist_sortgrid.png "Resultant pivot table showing countries in descending order")
+![Resultant pivot table showing countries in descending order](images/fieldlist_sortgrid.webp)
 
 ## Calculated fields
 
-The calculated field support allows end user to add a new calculated field based on the available fields from the bound data source using basic arithmetic operators. To enable this support in Field List UI, set the [`allowCalculatedField`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#allowcalculatedfield) property to **true** in pivot table. Now a button will be seen automatically inside the field list UI which will invoke the calculated field dialog on click. To know more about calculated field, [`refer`](./calculated-field) here.
+The calculated field support allows end user to add a new calculated field based on the available fields from the bound data source using basic arithmetic operators. To enable this support in Field List UI, set the [`allowCalculatedField`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#allowcalculatedfield) property to **true** in pivot table. Now a button will be seen automatically inside the field list UI which will invoke the calculated field dialog on click. To know more about calculated field, [`refer`](./calculated-field) here.
 
-![output](images/gs_calc_button.png "Enabling calculated field in field list UI")
+![Enabling calculated field in field list UI](images/gs_calc_button.webp)
 <br/>
-![output](images/gs_calc_dialog.png "Creating new calculated field")
+![Creating new calculated field](images/gs_calc_dialog.webp)
 <br/>
-![output](images/gs_calc_grid.png "New calculated field 'Total Amount' added in pivot table")
+![New calculated field Total Amount added in pivot table](images/gs_calc_grid.webp)
 
 ## Changing aggregation type of value fields at runtime
 
 End user can perform calculations over a group of values using the aggregation option. The value fields bound to the field list, appears with a dropdown icon, helps to select an appropriate aggregation type at runtime. On selection, the values in the Pivot Table will be changed dynamically. To know more about aggregation, [`refer`](./aggregation) here.
 
-![output](images/aggregation_fl_icon.png "Icon to change aggregation type")
+![Icon to change aggregation type](images/aggregation_fl_icon.webp)
 <br/>
 <br/>
-![output](images/fieldlist_aggregation_avg.png "List of pre-defined aggregation types")
+![List of pre-defined aggregation types](images/fieldlist_aggregation_avg.webp)
 <br/>
-![output](images/fieldlist_aggregation_grid.png "Resultant pivot table showing average aggregation type applied in 'Unit Sold' value field")
+![Resultant pivot table showing average aggregation type applied in Unit Sold value field](images/fieldlist_aggregation_grid.webp)
 
 ## Defer layout update
 
-Defer layout update support to update the pivot table only on demand and not during every user action. To enable this support in Field List UI, set the [`allowDeferLayoutUpdate`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#allowdeferlayoutupdate) property to **true** in pivot table. Now a check box inside Field List UI will be seen in checked state, allowing pivot table to update only on demand. To know more about defer layout, [`refer`](./defer-update) here.
+Defer layout update support to update the pivot table only on demand and not during every user action. To enable this support in Field List UI, set the [`allowDeferLayoutUpdate`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#allowdeferlayoutupdate) property to **true** in pivot table. Now a check box inside Field List UI will be seen in checked state, allowing pivot table to update only on demand. To know more about defer layout, [`refer`](./defer-update) here.
 
-![output](images/fieldlist_deferupdate.png)
+![output](images/fieldlist_deferupdate.webp)
 
 ## Show field list using toolbar
 
-It can also be viewed in toolbar by setting [`showFieldList`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#allowdeferlayoutupdate) and [`showToolbar`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#allowdeferlayoutupdate) properties in pivot table to **true**. Also, include the item **FieldList** within the [`toolbar`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#allowdeferlayoutupdate) property in pivot table. When toolbar is enabled, field list icon will be automatically added into the toolbar and the icon won't appear on top left corner in the pivot table component.
+It can also be viewed in toolbar by setting [`showFieldList`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#allowdeferlayoutupdate) and [`showToolbar`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#allowdeferlayoutupdate) properties in pivot table to **true**. Also, include the item **FieldList** within the [`toolbar`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#allowdeferlayoutupdate) property in pivot table. When toolbar is enabled, field list icon will be automatically added into the toolbar and the icon won't appear on top left corner in the pivot table component.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -243,7 +243,7 @@ The below sample code illustrates the field list dialog invoked on an external b
 
 ## Set caption to fields which isn’t bound to the report
 
-One can set the caption to all fields from the data source even if it is not bound to the actual report. It can be achieved using the [`enginePopulated`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/#enginepopulated) event. On doing so, caption of the respective field will be displayed in both grouping bar and field list.
+One can set the caption to all fields from the data source even if it is not bound to the actual report. It can be achieved using the [`enginePopulated`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/index-default#enginepopulated) event. On doing so, caption of the respective field will be displayed in both grouping bar and field list.
 
 In the sample, we have set caption to the fields `Year` and `Quarter` dynamically.
 
@@ -278,13 +278,13 @@ In the sample, we have set caption to the fields `Year` and `Quarter` dynamicall
 
 ### EnginePopulated
 
-The [`EnginePopulated`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/#enginepopulated) event is available in both Pivot Table and Field List.
+The [`EnginePopulated`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/index-default#enginepopulated) event is available in both Pivot Table and Field List.
 
-* The event [`EnginePopulated`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/#enginepopulated) is triggered in field list whenever the report gets modified. The updated report is passed to the pivot table via [`UpdateView`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/#updateview) method written within this event to refresh the same.
+* The event [`EnginePopulated`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/index-default#enginepopulated) is triggered in field list whenever the report gets modified. The updated report is passed to the pivot table via [`UpdateView`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/index-default#updateview) method written within this event to refresh the same.
 
-* Likewise, [`EnginePopulated`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#enginepopulated) event is triggered in pivot table whenever the report gets modified. The updated report is passed to the field list via [`Update`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/#update) method written within this event to refresh the same.
+* Likewise, [`EnginePopulated`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#enginepopulated) event is triggered in pivot table whenever the report gets modified. The updated report is passed to the field list via [`Update`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/index-default#update) method written within this event to refresh the same.
 
-The event [`EnginePopulated`](https://help.syncfusion.com/cr/cref_files/blazor/Syncfusion.EJ2.Blazor~Syncfusion.EJ2.Blazor.PivotView.PivotFieldListEvents%601~EnginePopulated.html) is triggered after engine is populated. It has following parameters - `dataSourceSettings`, `pivotFieldList` and `pivotValues`.
+The event [`EnginePopulated`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/index-default#enginepopulated) is triggered after engine is populated. It has following parameters - `dataSourceSettings`, `pivotFieldList` and `pivotValues`.
 
 >Note: This event is not required for Popup field list since it is a in built one.
 
@@ -317,9 +317,9 @@ The event [`EnginePopulated`](https://help.syncfusion.com/cr/cref_files/blazor/S
 
 ### FieldListRefreshed
 
-The event [`FieldListRefreshed`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#fieldlistrefreshed) is triggered whenever there is any change done in the field list UI. It has following parameter - `dataSourceSettings` and `pivotValues`. It allows user to identify each field list update. This event is applicable only for static field list.
+The event [`FieldListRefreshed`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#fieldlistrefreshed) is triggered whenever there is any change done in the field list UI. It has following parameter - `dataSourceSettings` and `pivotValues`. It allows user to identify each field list update. This event is applicable only for static field list.
 
-For example, if we perform a sort operation within the field list, the field list will be refreshed. The [`fieldListRefreshed`](https://ej2.syncfusion.com/documentation/api/pivotview/#fieldlistrefreshed) event will be triggered at that time and the user can perform custom operation inside that event.
+For example, if we perform a sort operation within the field list, the field list will be refreshed. The [`fieldListRefreshed`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#fieldlistrefreshed) event will be triggered at that time and the user can perform custom operation inside that event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -350,7 +350,7 @@ For example, if we perform a sort operation within the field list, the field lis
 
 ### FieldDropped
 
-The event [`onFieldDropped`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/#onfielddropped) fires whenever a field is dropped in an axis. It has following parameters - `droppedAxis`, `DroppedField` and `DataSourceSettings`. In this illustration, we have modified the `DroppedField` caption through this event at runtime.
+The event [`onFieldDropped`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/index-default#onfielddropped) fires whenever a field is dropped in an axis. It has following parameters - `droppedAxis`, `DroppedField` and `DataSourceSettings`. In this illustration, we have modified the `DroppedField` caption through this event at runtime.
 
 {% if page.publishingplatform == "typescript" %}
 

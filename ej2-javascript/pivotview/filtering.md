@@ -25,21 +25,21 @@ The following are the three different types of filtering:
 
 ## Member filtering
 
-Allows to view the pivot table with selective records based on included and excluded members in each field. By default, member filter option is enabled by the [`allowMemberFilter`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#allowmemberfilter) boolean property in [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/). This UI option helps end user to filter members by clicking the filter icon besides any field in the row, column and filter axes available in the field list or grouping bar UI at runtime.
+Allows to view the pivot table with selective records based on included and excluded members in each field. By default, member filter option is enabled by the [`allowMemberFilter`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings#allowmemberfilter) boolean property in [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings). This UI option helps end user to filter members by clicking the filter icon besides any field in the row, column and filter axes available in the field list or grouping bar UI at runtime.
 
-![output](images/fieldlist_filtericon.png "Member filter icon in field list")
+![Member filter icon in field list](images/fieldlist_filtericon.webp)
 <br/>
-![output](images/filter_icon_gb.png "Member filter icon in grouping bar")
+![Member filter icon in grouping bar](images/filter_icon_gb.webp)
 <br/>
-![output](images/filter_dialog_gb.png "Member filter dialog with checked and unchecked members")
+![Member filter dialog with checked and unchecked members](images/filter_dialog_gb.webp)
 <br/>
-![output](images/filter_grid_gb.png "Resultant pivot table on member filter")
+![Resultant pivot table on member filter](images/filter_grid_gb.webp)
 
-Meanwhile filtering can also be configured at code behind using the [`filterSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter/) while initial rendering of the component. The basic settings required to add filter criteria are:
+Meanwhile filtering can also be configured at code behind using the [`filterSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter) while initial rendering of the component. The basic settings required to add filter criteria are:
 
-* [`name`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter/#name): It allows to set the appropriate field name.
-* [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter/#type): It allows to set the filter type as **Include** or **Exclude** to include or exclude field members respectively.
-* [`items`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter/#items): It allows to set the members which needs to be either included or excluded from display.
+* [`name`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter#name): It allows to set the appropriate field name.
+* [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter#type): It allows to set the filter type as **Include** or **Exclude** to include or exclude field members respectively.
+* [`items`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter#items): It allows to set the members which needs to be either included or excluded from display.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -72,17 +72,17 @@ Meanwhile filtering can also be configured at code behind using the [`filterSett
 
 The member filter dialog comes with an option "All", which on checked selects all members and on unchecked deselects all members. The option "All" would appear in intermediate state mentioning that both selected and unselected child members are available.
 
-![output](images/editor_inter.png)
+![output](images/editor_inter.webp)
 
 When all members are deselected, the "Ok" button in member filter dialog would be disabled, meaning, at least one member should be selected and bound to the pivot table component.
 
-![output](images/editor_alluncheck.png)
+![output](images/editor_alluncheck.webp)
 
 ### Provision to search specific member(s)
 
 By default, search option is available to quickly navigate to the desired members. It can be done by entering the starting character(s) of the actual members.
 
-![output](images/search.png)
+![output](images/search.webp)
 
 ### Performance Tips
 
@@ -118,7 +118,7 @@ The data limit can be set using the [`maxNodeLimitInMemberEditor`](https://ej2.s
 {% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs43" %}
 {% endif %}
 
-Meanwhile, end user can utilize the search option to refine the members from the exceeded limit. For example, consider that there are 5000 members in the name "Node 1", "Node 2", "Node 3", and so on... and user has set the property [`maxNodeLimitInMemberEditor`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#maxnodelimitinmembereditor) to **500**. In this case, only the initial 500 members will be displayed by default leaving a message "4500 more items. Search to refine further.". To get the member(s) between 501 to 5000, enter the starting character(s) in search option to bring the desired member(s) from the exceeded limit to the UI. Now, end user can either check or uncheck to continue with the filtering process.
+Meanwhile, end user can utilize the search option to refine the members from the exceeded limit. For example, consider that there are 5000 members in the name "Node 1", "Node 2", "Node 3", and so on... and user has set the property [`maxNodeLimitInMemberEditor`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#maxnodelimitinmembereditor) to **500**. In this case, only the initial 500 members will be displayed by default leaving a message "4500 more items. Search to refine further.". To get the member(s) between 501 to 5000, enter the starting character(s) in search option to bring the desired member(s) from the exceeded limit to the UI. Now, end user can either check or uncheck to continue with the filtering process.
 
 ## Label filtering
 
@@ -128,17 +128,17 @@ The label filtering helps to view the pivot table with selective header text in 
 * Filtering number data type
 * Filtering date data type
 
-The label filtering dialog can be enabled by setting the [`allowLabelFilter`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#allowlabelfilter) property in [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/) to **true**. After enabling this API, click the filter icon besides any field in row or column axis available in field list or grouping bar UI. Now a filtering dialog will appear and navigate to "Label" tab to perform label filtering operations.
+The label filtering dialog can be enabled by setting the [`allowLabelFilter`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings#allowlabelfilter) property in [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings) to **true**. After enabling this API, click the filter icon besides any field in row or column axis available in field list or grouping bar UI. Now a filtering dialog will appear and navigate to "Label" tab to perform label filtering operations.
 
 ### Filtering string data type through code
 
-This type of filtering is exclusively applicable for fields with members in string data type. The filtering can be configured using the [`filterSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter/) through code-behind. The properties required for label filter are:
+This type of filtering is exclusively applicable for fields with members in string data type. The filtering can be configured using the [`filterSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter)through code-behind. The properties required for label filter are:
 
-* [`name`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter/#name): Sets the field name.
-* [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter/#type): Sets the filter type as **Label** to the field.
-* [`condition`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter/#condition): Sets the operator type such as equals, greater than, less than, etc.
-* [`value1`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter/#value1): Sets the start value.
-* [`value2`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter/#value2): Sets the end value. It is applicable only for the operator such as 'Between' and 'NotBetween'.
+* [`name`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter#name): Sets the field name.
+* [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter#type): Sets the filter type as **Label** to the field.
+* [`condition`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter#condition): Sets the operator type such as equals, greater than, less than, etc.
+* [`value1`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter#value1): Sets the start value.
+* [`value2`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter#value2): Sets the end value. It is applicable only for the operator such as 'Between' and 'NotBetween'.
 
 Operators that can be used in label filtering are:
 
@@ -188,9 +188,9 @@ Operators that can be used in label filtering are:
 
 ### Filtering number data type through code
 
-This type of filtering is exclusively applicable for fields with members in number data type. The filtering can be configured in a similar way explained in the previous section - "Filtering string data type through code", except the [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter/#type) property setting. For number data type, set the [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter/#type) property to **Number**.
+This type of filtering is exclusively applicable for fields with members in number data type. The filtering can be configured in a similar way explained in the previous section - "Filtering string data type through code", except the [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter#type) property setting. For number data type, set the [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter#type) property to **Number**.
 
-For example, to show only the groups less than the value 40000, set [`Value1`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter/#value1) to **40000** with filter operator **LessThan** on the amount field.
+For example, to show only the groups less than the value 40000, set [`Value1`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter#value1) to **40000** with filter operator **LessThan** on the amount field.
 
 Operators that can be used in number filtering are:
 
@@ -236,9 +236,9 @@ Operators that can be used in number filtering are:
 
 ### Filtering date data type through code
 
-This type of filtering is exclusively applicable for fields with members in date data type. The filtering can be configured in a similar way explained in the prior section - "Filtering string data type through code", except the [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter/#type) property setting. For date data type, set the [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter/#type) property to **Date**.
+This type of filtering is exclusively applicable for fields with members in date data type. The filtering can be configured in a similar way explained in the prior section - "Filtering string data type through code", except the [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter#type) property setting. For date data type, set the [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter#type) property to **Date**.
 
-For example, in a "Date" field, to show the records before the year 2016, then set [`Value1`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter/#value1) as **2016** and [`condition`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter/#condition) to **Equals** for desired output in pivot table.
+For example, in a "Date" field, to show the records before the year 2016, then set [`Value1`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter#value1) as **2016** and [`condition`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter#condition) to **Equals** for desired output in pivot table.
 
 Date filtering can be configured using the `filterSettings` option through code-behind. The settings required to filter at initial rendering are:
 
@@ -294,22 +294,22 @@ Operators that can be used in date filtering are:
 
 End user can clear the applied label filter by simply click the "Clear" option at the bottom of the filter dialog under "Label" tab.
 
-![output](images/clearfilter.png)
+![output](images/clearfilter.webp)
 
 ## Value Filtering
 
 The value filtering helps to perform filter operation based only on value fields and its resultant aggregated values over other fields defined in row and column axes.
 
-The value filtering dialog can be enabled by setting the [`allowValueFilter`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#allowlabelfilter) property in [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/) to **true**. After enabling this API, click the filter icon besides any field in row or column axis available in field list or grouping bar UI. Now a filtering dialog will appear and navigate to "Value" tab to perform value filtering operations.
+The value filtering dialog can be enabled by setting the [`allowValueFilter`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings#allowlabelfilter) property in [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings) to **true**. After enabling this API, click the filter icon besides any field in row or column axis available in field list or grouping bar UI. Now a filtering dialog will appear and navigate to "Value" tab to perform value filtering operations.
 
 Value filtering can be configured using the `filterSettings` option through the code-behind. The settings required to filter at initial rendering are:
 
-* [`name`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter/#name): Sets the normal field name.
-* [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter/#type): Sets the filter type as **Value** to the field.
-* [`measure`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter/#measure): Sets the value field name.
-* [`condition`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter/#condition): Sets the operator type such as equals, greater than, less than, etc.
-* [`value1`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter/#value1): Sets the start value.
-* [`value2`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter/#value2): Sets the end value. It is applicable only for the operator such as 'Between' and 'NotBetween'.
+* [`name`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter#name): Sets the normal field name.
+* [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter#type): Sets the filter type as **Value** to the field.
+* [`measure`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter#measure): Sets the value field name.
+* [`condition`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter#condition): Sets the operator type such as equals, greater than, less than, etc.
+* [`value1`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter#value1): Sets the start value.
+* [`value2`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter#value2): Sets the end value. It is applicable only for the operator such as 'Between' and 'NotBetween'.
 
 Operators that can be used in value filtering are:
 
@@ -355,4 +355,4 @@ Operators that can be used in value filtering are:
 
 End user can clear the applied value filter by simply click the "Clear" option at the bottom of the filter dialog under "Value" tab.
 
-![output](images/clearvaluefilter.png)
+![output](images/clearvaluefilter.webp)

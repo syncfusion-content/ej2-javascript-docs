@@ -11,14 +11,14 @@ domainurl: ##DomainURL##
 
 # Data binding in ##Platform_Name## Pivotview control
 
-The pivot table uses `DataManager`, which supports both RESTful JSON data service binding and local JavaScript object array binding. The [`dataSource`](https://help.syncfusion.com/cr/cref_files/blazor/Syncfusion.EJ2.Blazor~Syncfusion.EJ2.Blazor.PivotView.PivotViewDataSourceSettings%601~DataSource.html) property can be assigned either with the instance of `DataManager` or list of objects. It supports two kinds of data binding method:
+The pivot table uses `DataManager`, which supports both RESTful JSON data service binding and local JavaScript object array binding. The [`dataSource`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings#datasource) property can be assigned either with the instance of `DataManager` or list of objects. It supports two kinds of data binding method:
 
 * Local data
 * Remote data
 
 ## Local Data
 
-To bind local data to the pivot table, user can assign a JavaScript object array to the [`dataSource`](https://help.syncfusion.com/cr/cref_files/blazor/Syncfusion.EJ2.Blazor~Syncfusion.EJ2.Blazor.PivotView.PivotViewDataSourceSettings%601~DataSource.html) property under [`dataSourceSettings`](https://help.syncfusion.com/cr/blazor/Syncfusion.EJ2.Blazor~Syncfusion.EJ2.Blazor.PivotView.DataSourceSettingsModel%601.html). The local data source can also be provided as an instance of the `DataManager`.
+To bind local data to the pivot table, user can assign a JavaScript object array to the [`dataSource`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings#datasource) property under [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings). The local data source can also be provided as an instance of the `DataManager`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -51,7 +51,7 @@ To bind local data to the pivot table, user can assign a JavaScript object array
 
 ## Remote Data
 
-To interact with remote data source, provide the endpoint `url` within [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) along with appropriate [`adaptor`](https://ej2.syncfusion.com/documentation/data/adaptors.html?lang=typescript). By default, [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) uses [`ODataAdaptor`](https://ej2.syncfusion.com/documentation/data/adaptors/#odata-adaptor) for remote data-binding.
+To interact with remote data source, provide the endpoint `url` within [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager) along with appropriate [`adaptor`](https://ej2.syncfusion.com/documentation/data/adaptors). By default, [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager) uses [`ODataAdaptor`](https://ej2.syncfusion.com/documentation/data/adaptors#odata-adaptor) for remote data-binding.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -82,7 +82,7 @@ To interact with remote data source, provide the endpoint `url` within [`DataMan
 
 ### Binding with OData services
 
-OData is a standardized protocol for creating and consuming data. User can retrieve data from OData service using the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/). Refer to the following code example for remote data binding using OData service.
+OData is a standardized protocol for creating and consuming data. User can retrieve data from OData service using the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager). Refer to the following code example for remote data binding using OData service.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -113,7 +113,7 @@ OData is a standardized protocol for creating and consuming data. User can retri
 
 ### Binding with OData V4 services
 
-The OData V4 is an improved version of OData protocols, and the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) can be used to retrieve and consume OData V4 services. For more details on OData V4 services, refer to the [OData documentation](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData V4 service, use the [`ODataV4Adaptor`](https://ej2.syncfusion.com/documentation/data/adaptors/#odatav4-adaptor).
+The OData V4 is an improved version of OData protocols, and the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager) can be used to retrieve and consume OData V4 services. For more details on OData V4 services, refer to the [OData documentation](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData V4 service, use the [`ODataV4Adaptor`](https://ej2.syncfusion.com/documentation/data/adaptors#odatav4-adaptor).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -144,7 +144,7 @@ The OData V4 is an improved version of OData protocols, and the [`DataManager`](
 
 ### Web API
 
-User can use [`WebApiAdaptor`](https://ej2.syncfusion.com/documentation/data/adaptors/#web-api-adaptor) to bind pivot table with Web API created using OData endpoint.
+User can use [`WebApiAdaptor`](https://ej2.syncfusion.com/documentation/data/adaptors#web-api-adaptor) to bind pivot table with Web API created using OData endpoint.
 
 ```ts
 import { PivotView, IDataSet } from '@syncfusion/ej2-pivotview';
@@ -174,7 +174,7 @@ pivotTableObj.appendTo('#PivotTable');
 
 ## Values in row axis
 
-By default, the value fields are plotted in column axis. To plot those fields in row axis, use the [`valueAxis`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#valueaxis) property by setting its value as **row**. By default, it holds the value **column**.
+By default, the value fields are plotted in column axis. To plot those fields in row axis, use the [`valueAxis`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings#valueaxis) property by setting its value as **row**. By default, it holds the value **column**.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -205,7 +205,7 @@ By default, the value fields are plotted in column axis. To plot those fields in
 
 ## Show 'no data' items
 
-By default, the pivot table only shows the field item if it has data in its row or column combination. To show all items that do not have data in row and column combination in the pivot table, use the [`showNoDataItems`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/fieldOptions/#shownodataitems) property by settings its value to true for the desired fields. In the following code sample, rows of the "County" and "State" fields do not have data in all combination with "Date" column field.
+By default, the pivot table only shows the field item if it has data in its row or column combination. To show all items that do not have data in row and column combination in the pivot table, use the [`showNoDataItems`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/fieldoptions#shownodataitems) property by settings its value to true for the desired fields. In the following code sample, rows of the "County" and "State" fields do not have data in all combination with "Date" column field.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -236,7 +236,7 @@ By default, the pivot table only shows the field item if it has data in its row 
 
 ## Always shows the value headers
 
-To show the value header always in pivot table, even if it holds a single value, use the [`alwaysShowValueHeader`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#alwaysshowvalueheader) property by settings its value as **true**.
+To show the value header always in pivot table, even if it holds a single value, use the [`alwaysShowValueHeader`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings#alwaysshowvalueheader) property by settings its value as **true**.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -267,7 +267,7 @@ To show the value header always in pivot table, even if it holds a single value,
 
 ## Customize empty value cells
 
-User can show custom string in empty value cells using the [`emptyCellsTextContent`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#emptycellstextcontent) property in [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/) of the pivot table. Since the property is of string data type, user can fill empty value cells with any value like "0", "-", "*", "(blank)", etc. Its common for all value fields and can be configured through code behind.
+User can show custom string in empty value cells using the [`emptyCellsTextContent`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings#emptycellstextcontent) property in [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings) of the pivot table. Since the property is of string data type, user can fill empty value cells with any value like "0", "-", "*", "(blank)", etc. Its common for all value fields and can be configured through code behind.
 
 {% if page.publishingplatform == "typescript" %}
 

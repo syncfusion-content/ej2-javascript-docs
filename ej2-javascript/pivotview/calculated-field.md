@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Calculated field in ##Platform_Name## Pivotview control
 
-Allows end user to create a new calculated field in the pivot table, based on available fields from the bound data source or using simple formula with basic arithmetic operators. It can be added at runtime through the built-in dialog, invoked from Field List UI. To do so, set the [`allowCalculatedField`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/pivotViewModel/#allowcalculatedfield) property to **true** in the pivot table. End user can now see a "CALCULATED FIELD" button enabled in Field List UI automatically, which on clicking will invoke the calculated field dialog and perform necessary operation.
+Allows end user to create a new calculated field in the pivot table, based on available fields from the bound data source or using simple formula with basic arithmetic operators. It can be added at runtime through the built-in dialog, invoked from Field List UI. To do so, set the [`allowCalculatedField`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/pivotviewmodel#allowcalculatedfield) property to **true** in the pivot table. End user can now see a "CALCULATED FIELD" button enabled in Field List UI automatically, which on clicking will invoke the calculated field dialog and perform necessary operation.
 
-Calculated field can also be included in the pivot table through code behind using the [`calculatedFieldsSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/calculatedFieldSettings/). The required properties to create a new calculate field are:
-* [`name`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/calculatedFieldSettings/#name): It allows to indicate the calculated field with a unique name.
-* [`formula`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/calculatedFieldSettings/#formula): It allows to set the formula.
+Calculated field can also be included in the pivot table through code behind using the [`calculatedFieldsSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/calculatedfieldsettings). The required properties to create a new calculate field are:
+* [`name`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/calculatedfieldsettings#name): It allows to indicate the calculated field with a unique name.
+* [`formula`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/calculatedfieldsettings#formula): It allows to set the formula.
 
 To use calculated field option, you need to inject the `CalculatedField` module in pivot table.
 
@@ -48,7 +48,7 @@ To use calculated field option, you need to inject the `CalculatedField` module 
 {% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs4" %}
 {% endif %}
 
-Meanwhile, user can also view calculated field dialog in UI by invoking [`createCalculatedFieldDialog`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#createcalculatedfielddialog) method on an external button click which is shown in the below code sample.
+Meanwhile, user can also view calculated field dialog in UI by invoking [`createCalculatedFieldDialog`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#createcalculatedfielddialog) method on an external button click which is shown in the below code sample.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -82,31 +82,31 @@ Meanwhile, user can also view calculated field dialog in UI by invoking [`create
 Existing calculated field can be renamed only through the UI at runtime. To do so, open the calculated field dialog, select the target field and click "Edit" icon. User can now see the existing name getting displayed in the text box at the top of the dialog. Now, change the name based on user requirement and click "OK".
 
 <!-- markdownlint-disable MD012 -->
-![output](images/before-edit.png "Editing the calculated field")
+![Editing the calculated field](images/before-edit.webp)
 <br/>
 <br/>
-![output](images/after-edit.png "Renaming the calculated field")
+![Renaming the calculated field](images/after-edit.webp)
 
 ## Editing the existing calculated field formula
 
 Existing calculated field formula can be edited only through the UI at runtime. To do so, open the calculated field dialog, select the target field and click "Edit" icon. User can now see the existing formula getting displayed in a multiline text box at the bottom of the dialog. Now, change the formula based on user requirement and click "OK".
 
-![output](images/before-edit.png "Editing the calculated field")
+![oEditing the calculated fieldt](images/before-edit.webp)
 <br/>
 <br/>
-![output](images/after-change.png "Editing the calculated field formula")
+![Editing the calculated field formula](images/after-change.webp)
 
 ## Reusing the existing formula in a new calculate field
 
 While creating a new calculated field, if user wants to the add the formula of an existing calculated field, it can be done easily. To do so, simply drag-and-drop the existing calculated field to the "Formula" section.
 
-![output](images/before-drag.png "Dragging the existing calculated field")
+![Dragging the existing calculated field](images/before-drag.webp)
 <br/>
 <br/>
-![output](images/while-drag.png "Drag field to formula")
+![Drag field to formula](images/while-drag.webp)
 <br/>
 <br/>
-![output](images/after-drag.png "Reusing the existing calculated field formula")
+![Reusing the existing calculated field formula](images/after-drag.webp)
 
 ## Supported operators and functions for the calculated field formula
 

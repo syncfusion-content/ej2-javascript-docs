@@ -7,11 +7,11 @@ let template: string = '<tr><td>${OrderID}</td><td>${CustomerID}</td><td>${Emplo
 
 let compiledFunction: Function = compile(template);
 
-const SERVICE_URI: string =  'https://services.odata.org/V4/Northwind/Northwind.svc/Orders/?$top=7';
+const SERVICE_URL: string =  'https://services.odata.org/V4/Northwind/Northwind.svc/Orders/?$top=7';
 
 let table: HTMLElement = (<HTMLElement>document.getElementById('datatable'));
 
-let dm: DataManager = new DataManager({ url: SERVICE_URI, adaptor: new ODataV4Adaptor, offline: true });
+let dm: DataManager = new DataManager({ url: SERVICE_URL, adaptor: new ODataV4Adaptor(), offline: true });
 
 dm.ready.then((e: ReturnOption) => {
         (<Object[]>e.result).forEach((data: Object) => {

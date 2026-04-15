@@ -5,10 +5,10 @@ let template: string = '<tr><td>${OrderID}</td><td>${CustomerID}</td><td>${Emplo
 
 let compiledFunction: Function = compile(template);
 
-const SERVICE_URI: string = 'https://services.odata.org/V4/Northwind/Northwind.svc/';
+const SERVICE_URL: string = 'https://services.odata.org/V4/Northwind/Northwind.svc/';
 
 let dataManager = new DataManager({
-    url: SERVICE_URI,
+    url: SERVICE_URL,
     adaptor: new ODataV4Adaptor()
 });
 

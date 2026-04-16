@@ -1,10 +1,10 @@
-var clickHandler = function(args){
-   if (args.item.id === 'GanttExport_pdfexport') {
+var clickHandler = function (args) {
+    if (args.item.id === 'GanttExport_pdfexport') {
         var exportProperties = {
-           fileName:"new.pdf"
+            fileName: "new.pdf"
         };
         ganttChart.pdfExport(exportProperties);
-   }
+    }
 };
 
 var ganttChart = new ej.gantt.Gantt({

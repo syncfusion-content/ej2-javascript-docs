@@ -19,7 +19,7 @@ The [treeColumnIndex](../../api/gantt#treecolumnindex) property is used to defin
 
 ## Defining columns
 
-Using the [columns](../../api/gantt#columns) property, you can define the columns in Gantt. If the columns are not defined, then the default columns will be rendered based on the mapped data source fields in the [taskFields](../../api/gantt/taskFields) property. Refer to the following code example for defining the columns in Gantt along with their widths.
+Using the [columns](../../api/gantt#columns) property, you can define the columns in Gantt. If the columns are not defined, then the default columns will be rendered based on the mapped data source fields in the [taskFields](../../api/gantt/taskfields) property. Refer to the following code example for defining the columns in Gantt along with their widths.
 
  {% if page.publishingplatform == "typescript" %}
 

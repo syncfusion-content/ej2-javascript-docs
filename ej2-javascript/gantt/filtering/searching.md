@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Searching in ##Platform_Name## Gantt Chart Control
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> React Gantt Chart control allows quick filtering of records based on search input, improving access to relevant data in large datasets.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control allows quick filtering of records based on search input, improving access to relevant data in large datasets.
 
 To enable search functionality, include the **Search** item in the [toolbar](../../api/gantt#toolbar) configuration and inject both `Filter` service and `Toolbar` service into the control's `providers` array.
 
@@ -44,7 +44,7 @@ To enable search functionality, include the **Search** item in the [toolbar](../
 
 ## Initial search
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> React Gantt control allows applying search criteria during initial load using the [searchSettings](../../api/gantt/searchSettings) property.  
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt control allows applying search criteria during initial load using the [searchSettings](../../api/gantt/searchsettings) property.  
 
 To configure this feature, define the following properties:
 
@@ -56,7 +56,7 @@ To configure this feature, define the following properties:
 | `ignoreCase`   | Determines if the search should be case-insensitive.          |
 | `ignoreAccent` | Ignores diacritic characters or accents during the search.    |
 
-The following sample demonstrates an initial search where `fields` is set to **TaskName**, `operator` is **contains**, `key` is **Pröduct**, with `ignoreCase` set to **true** and `ignoreAccent` set to **true** (e.g., typing "product" will match "Pröduct").
+The following sample demonstrates an initial search where `fields` is set to **TaskName**, `operator` is **contains**, `key` is **Prï¿½duct**, with `ignoreCase` set to **true** and `ignoreAccent` set to **true** (e.g., typing "product" will match "Prï¿½duct").
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -171,7 +171,7 @@ This following sample demonstrates searching only within the **TaskName** and **
 
 ## Clear search by external button
 
-To clear the search results in the Syncfusion<sup style="font-size:70%">&reg;</sup> React Gantt from an external button, set the [searchSettings.key](../../api/gantt/searchSettings#key) property to an empty string. 
+To clear the search results in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt from an external button, set the [searchSettings.key](../../api/gantt/searchSettings#key) property to an empty string. 
  
 Alternatively, you can invoke the [search](../../api/gantt#search) method with an empty string to reset the search.
 
@@ -204,7 +204,7 @@ Alternatively, you can invoke the [search](../../api/gantt#search) method with a
 
 ## Search on each key stroke
 
-You can enable instant filtering in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control by calling the [search](../../api/gantt#search) method on each `keyup` event.  This can be configured within the component’s [created](../../gantt/events#created) event.
+You can enable instant filtering in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control by calling the [search](../../api/gantt#search) method on each `keyup` event.  This can be configured within the componentï¿½s [created](../../gantt/events#created) event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -236,7 +236,7 @@ You can enable instant filtering in the Syncfusion<sup style="font-size:70%">&re
 
 ## Highlight the search text
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> React Gantt Chart control supports highlighting matched search text within grid cells to improve visibility of search results. 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control supports highlighting matched search text within grid cells to improve visibility of search results. 
 
 This can be achieved using the [queryCellInfo](../../api/gantt#querycellinfo) event, which is triggered during cell rendering. Within this event, check if the cell belongs to the target column, retrieve the cell value and search keyword, and use the `includes` method to detect matches. If a match is found, wrap the matched text in a `<span>` with a custom CSS class for styling.
 

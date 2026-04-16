@@ -1,23 +1,13 @@
-import { Gantt, Toolbar, PdfExport, Selection, PdfQueryTimelineCellInfoEventArgs } from '@syncfusion/ej2-gantt';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
+import { Gantt, Toolbar, PdfExport, Selection, TaskFieldsModel, ToolbarClickEventArgs, PdfQueryTimelineCellInfoEventArgs } from '@syncfusion/ej2-gantt';
 import { PdfColor } from '@syncfusion/ej2-pdf-export';
 import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Toolbar, PdfExport, Selection);
 
-let clickHandler: EmitType<ClickEventArgs> = (args: ClickEventArgs) => {
-    if (args.item.id === 'GanttExport_pdfexport') {
-        gantt.pdfExport();
-    }
-};
-
-let pdfQueryTimelineCellInfo: EmitType<PdfQueryTimelineCellInfoEventArgs> = (args: PdfQueryTimelineCellInfoEventArgs) => {
-    args.timelineCell.backgroundColor= new PdfColor(240, 248, 255);
-};
-
 let gantt: Gantt = new Gantt({
+    id: 'ganttDefault',
+    height: '430px',
     dataSource: GanttData,
-    height: '450px',
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
@@ -25,10 +15,25 @@ let gantt: Gantt = new Gantt({
         duration: 'Duration',
         progress: 'Progress',
         parentID: 'ParentID'
-    },
+    } as TaskFieldsModel,
+    treeColumnIndex: 1,
     allowPdfExport: true,
     toolbar: ['PdfExport'],
-    toolbarClick: clickHandler,
-    pdfQueryTimelineCellInfo: pdfQueryTimelineCellInfo
+    toolbarClick: (args: ToolbarClickEventArgs) => {
+        if (args.item.id === 'GanttExport_pdfexport') {
+            gantt.pdfExport();
+        }
+    },
+    pdfQueryTimelineCellInfo: (args: PdfQueryTimelineCellInfoEventArgs) => {
+        args.timelineCell.backgroundColor = new PdfColor(240, 248, 255);
+    },
+    columns: [
+        { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: 100 },
+        { field: 'TaskName', headerText: 'Task Name', width: 150, visible: false },
+        { field: 'StartDate', headerText: 'StartDate', width: 150 },
+        { field: 'Duration', headerText: 'Duration', width: 150 },
+        { field: 'Progress', headerText: 'Progress', width: 150 }
+    ]
 });
+
 gantt.appendTo('#GanttExport');

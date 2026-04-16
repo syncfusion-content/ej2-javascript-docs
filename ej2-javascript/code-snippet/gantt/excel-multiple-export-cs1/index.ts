@@ -1,7 +1,4 @@
-
-
-
-import { Gantt, Toolbar,ExcelExport, Selection } from '@syncfusion/ej2-gantt';
+import { Gantt, Toolbar, ExcelExport, Selection } from '@syncfusion/ej2-gantt';
 import { ExcelExportProperties } from '@syncfusion/ej2-grids'
 import { firstGanttData, secondGanttData } from './datasource.ts';
 
@@ -27,7 +24,7 @@ let firstGantt: Gantt = new Gantt({
 firstGantt.appendTo('#GanttExport1');
 
 let secondGantt: Gantt = new Gantt({
-    dataSource: secondGanttData,  
+    dataSource: secondGanttData,
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
@@ -42,7 +39,7 @@ let secondGantt: Gantt = new Gantt({
 });
 secondGantt.appendTo('#GanttExport2');
 
-firstGantt.toolbarClick = (args: Object) => {
+firstGantt.toolbarClick = (args: any) => {
     if (args.item.id === 'GanttExport1_excelexport') {
         let appendExcelExportProperties: ExcelExportProperties = {
             multipleExport: { type: 'AppendToSheet', blankRows: 2 }

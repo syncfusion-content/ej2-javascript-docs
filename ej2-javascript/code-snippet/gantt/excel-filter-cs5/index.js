@@ -40,7 +40,6 @@ var ganttChart = new ej.gantt.Gantt({
     },
     actionBegin: function (args) {
         if (args.requestType === 'filterBeforeOpen') {
-            debugger;
             var hostUrl = 'https://ej2services.syncfusion.com/angular/development/api/GanttWebApiRemoteData';
             args.filterModel.options.dataSource.json = new ej.data.DataManager({
                 url: hostUrl,

@@ -5,7 +5,7 @@ import { GanttData } from './datasource.ts';
 Gantt.Inject(Toolbar, PdfExport, Selection);
 
 let clickHandler = (args: ClickEventArgs) => {
-    if (args.item.id === 'GanttExport_pdfexport') {    
+    if (args.item.id === 'GanttExport_pdfexport') {
         gantt.pdfExport();
     }
 };
@@ -25,14 +25,14 @@ let gantt: Gantt = new Gantt({
         duration: 'Duration',
         progress: 'Progress',
         dependency: 'Predecessor',
-        parentID:'ParentID',
+        parentID: 'ParentID',
     },
     columns: [
-        { field: 'TaskID'},
-        { field: 'TaskName'},
-        { field: 'StartDate'},
-        { field: 'Duration', visible: false},
-        { field: 'Progress'}
+        { field: 'TaskID' },
+        { field: 'TaskName' },
+        { field: 'StartDate' },
+        { field: 'Duration', visible: false },
+        { field: 'Progress' }
     ],
     allowPdfExport: true,
     toolbar: ['PdfExport'],

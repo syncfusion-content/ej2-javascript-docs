@@ -1,49 +1,53 @@
-import { Gantt, Toolbar, ExcelExport, Selection } from '@syncfusion/ej2-gantt';
+import { Gantt, Toolbar, ExcelExport, Selection, ClickEventArgs, TaskFieldsModel } from '@syncfusion/ej2-gantt';
 import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Toolbar, ExcelExport, Selection);
 
-var clickHandler = function(args){
-    let columns: Column[] = gantt.treeGrid.grid.columns;
-    if (args.item.id === 'GanttExport_excelexport') {
-        columns[0].visible = true;
-        columns[3].visible = false;
-        gantt.excelExport();
-    }
-    else if (args.item.id === 'GanttExport_csvexport') {
-        columns[0].visible = true;
-        columns[3].visible = false;
-        gantt.csvExport();
-    }
-};
-var exportComplete = function(args){
-        let columns: Column[] = gantt.treeGrid.grid.columns;
-        columns[0].visible = false;
-        columns[3].visible = true;
+let gantt: Gantt;
+
+const taskFields: TaskFieldsModel = {
+    id: 'TaskID',
+    name: 'TaskName',
+    startDate: 'StartDate',
+    duration: 'Duration',
+    progress: 'Progress',
+    parentID: 'ParentID'
 };
 
-let gantt: Gantt = new Gantt({
+gantt = new Gantt({
+    id: 'GanttExport',
     dataSource: GanttData,
-    height: '450px',
-    taskFields: {
-        id: 'TaskID',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        parentID: 'ParentID'
-    },
+    height: '400px',
+    taskFields: taskFields,
     treeColumnIndex: 1,
-    allowExcelExport: true,
+    toolbar: ['ExcelExport', 'CsvExport'],
     columns: [
-        { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: '100',visible:false  },
-        { field: 'TaskName', headerText: 'Task Name', width: '150' },
-        { field: 'StartDate', headerText: 'Start Date', width: '150' },
-        { field: 'Duration', headerText: 'Duration', width: '150' },
-        { field: 'Progress', headerText: 'Progress', width: '150' },
+        { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: 100 },
+        { field: 'TaskName', headerText: 'Task Name', width: 150 },
+        { field: 'StartDate', headerText: 'StartDate', width: 150, visible: false },
+        { field: 'Duration', headerText: 'Duration', width: 150 },
+        { field: 'Progress', headerText: 'Progress', width: 150 }
     ],
-    toolbar: ['ExcelExport','CsvExport'],
-    toolbarClick: clickHandler,
-    excelExportComplete: exportComplete
+    allowExcelExport: true,
+    toolbarClick: (args: ClickEventArgs) => {
+        if (args.item.id === 'GanttExport_excelexport') {
+            gantt.treeGrid.grid.columns[0].visible = true;
+            gantt.treeGrid.grid.columns[3].visible = false;
+            gantt.excelExport();
+        } else if (args.item.id === 'GanttExport_csvexport') {
+            gantt.treeGrid.grid.columns[0].visible = true;
+            gantt.treeGrid.grid.columns[3].visible = false;
+            gantt.csvExport();
+        }
+    },
+    excelExportComplete: () => {
+        gantt.treeGrid.grid.columns[0].visible = false;
+        gantt.treeGrid.grid.columns[3].visible = true;
+    },
+    csvExportComplete: () => {
+        gantt.treeGrid.grid.columns[0].visible = false;
+        gantt.treeGrid.grid.columns[3].visible = true;
+    }
 });
+
 gantt.appendTo('#GanttExport');

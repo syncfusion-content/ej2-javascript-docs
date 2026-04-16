@@ -1,78 +1,61 @@
-import { Gantt, Toolbar, PdfExport, Selection, PdfExportProperties } from '@syncfusion/ej2-gantt';
-import { GanttData,editingResources } from './datasource.ts';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
+import {
+    Gantt,
+    Toolbar,
+    PdfExport,
+    Selection,
+    PdfQueryTaskbarInfoEventArgs,
+    PdfExportProperties
+} from '@syncfusion/ej2-gantt';
+import { base64Data, editingResources } from './datasource.ts';
 
 Gantt.Inject(Toolbar, PdfExport, Selection);
 
-let clickHandler: EmitType<ClickEventArgs> = (args: ClickEventArgs) => {
-    if (args.item.id === 'GanttExport_pdfexport') {
-        let exportProperties: PdfExportProperties = {
-            enableFooter: false
-        };
-        gantt.pdfExport(exportProperties);
-    }
-};
-let pdfQueryTaskbarInfo: EmitType<Object> = (args: Object) => {
-    if(!args.data.hasChildRecords){
-        console.log(args.data.ganttProperties.resourceNames);
-        if (args.data.ganttProperties.resourceNames) {
-            debugger;
-            args.taskbarTemplate.image = [{
-                width: 20, base64: (args as any).data.taskData.ResourcesImage, height: 20
-            }]
-        }
-        args.taskbarTemplate.value =  args.data.TaskName;
-    }
-    if(args.data.hasChildRecords){
-        if (args.data.ganttProperties.resourceNames) {
-            args.taskbarTemplate.image = [{
-                width: 20, base64: (args as any).data.taskData.ResourcesImage, height: 20
-            }]
-        }
-        args.taskbarTemplate.value= args.data.TaskName;
-    }
-    if(args.data.ganttProperties.duration === 0){
-        if (args.data.ganttProperties.resourceNames) {
-            args.taskbarTemplate.image = [{
-                width: 20, base64: (args as any).data.taskData.ResourcesImage, height: 20,
-            }]
-        }
-        args.taskbarTemplate.value = args.data.TaskName
-    }
-}
-
 let gantt: Gantt = new Gantt({
-    dataSource: GanttData,
+    id: 'Gantt',
+    dataSource: base64Data,
     height: '450px',
-    rowHeight: 55,
-    taskbarHeight: 45,
+    rowHeight: 45,
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
         startDate: 'StartDate',
-        endDate: 'EndDate',
         duration: 'Duration',
-        resourceInfo: 'Resources',
-        dependency: 'Predecessor',
-        parentID: 'ParentID',
+        child: 'subtasks',
+        resourceInfo: 'resources'
     },
-    columns: [
-        { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left' },
-        { field: 'TaskName', headerText: 'Task Name', width: '250' },
-    ],
-    pdfQueryTaskbarInfo: pdfQueryTaskbarInfo,
-    milestoneTemplate: '#MilestoneTemplate',
-    parentTaskbarTemplate: '#ParentTaskbarTemplate',
-    taskbarTemplate: '#TaskbarTemplate',
-    allowPdfExport: true,
-    toolbar: ['PdfExport'],
-    toolbarClick: clickHandler,
     resources: editingResources,
     resourceFields: {
-        id: 'ResourceId',
-        name: 'ResourceName'
+        id: 'resourceId',
+        name: 'resourceName'
     },
-    projectStartDate: new Date('03/24/2019'),
-    projectEndDate: new Date('04/30/2019'),
+    splitterSettings: {
+        columnIndex: 2
+    },
+    toolbar: ['PdfExport'],
+    allowPdfExport: true,
+    columns: [
+        { field: 'TaskID' },
+        { field: 'TaskName' }
+    ],
+    toolbarClick: (args: any) => {
+        if (args.item.text === 'PDF export') {
+            const exportProps: PdfExportProperties = {
+                enableFooter: false
+            };
+            gantt.pdfExport(exportProps);
+        }
+    },
+    pdfQueryTaskbarInfo: (args: PdfQueryTaskbarInfoEventArgs) => {
+        const data: any = args.data;
+        if (data.ganttProperties.resourceNames) {
+            args.taskbarTemplate.image = [{
+                width: 20,
+                height: 20,
+                base64: data.taskData.resourcesImage
+            }];
+            args.taskbarTemplate.value = data.TaskName;
+        }
+    }
 });
+
 gantt.appendTo('#GanttExport');

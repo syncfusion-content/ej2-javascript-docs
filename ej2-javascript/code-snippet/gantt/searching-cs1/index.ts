@@ -1,6 +1,5 @@
 import { Gantt, Filter, Toolbar } from '@syncfusion/ej2-gantt';
 import { GanttData } from './datasource.ts';
-
 Gantt.Inject(Filter, Toolbar);
 
 let gantt: Gantt = new Gantt({
@@ -13,6 +12,9 @@ let gantt: Gantt = new Gantt({
         duration: 'Duration',
         progress: 'Progress',
         parentID: 'ParentID'
+    },
+    splitterSettings: {
+        columnIndex: 3
     },
     toolbar: ['Search']
 });

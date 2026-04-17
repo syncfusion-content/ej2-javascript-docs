@@ -72,13 +72,13 @@ To render Chat UI control, need to import interactive-chat and its dependent con
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
 
-@import "../../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-inputs/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-buttons/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-navigations/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-popups/styles/material.css";
-@import '../../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
-@import "../../node_modules/@syncfusion/ej2-interactive-chat/styles/material.css";
+@import "../../node_modules/@syncfusion/ej2-base/styles/tailwind3.css";
+@import "../../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css";
+@import "../../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css";
+@import "../../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css";
+@import "../../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css";
+@import '../../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css';
+@import "../../node_modules/@syncfusion/ej2-interactive-chat/styles/tailwind3.css";
 
 {% endhighlight %}
 {% endtabs %}
@@ -123,13 +123,26 @@ Then, import the Chat UI control in your `app.ts` file, and initialize it with t
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 
+<<<<<<< HEAD
+import { ChatUI, UserModel } from "@syncfusion/ej2-interactive-chat";
+=======
 import { ChatUI,UserModel } from "@syncfusion/ej2-interactive-chat";
+>>>>>>> a475736541c1931072a7aa7a11369f14a9f147a4
 
 let currentUserModel: UserModel = {
     id: "user1",
     user: "Albert"
 };
 // Initializes the Chat UI control
+<<<<<<< HEAD
+
+let currentUserModel: UserModel = {
+    id: "user1",
+    user: "Albert"
+};
+// Initializes the Chat UI control
+=======
+>>>>>>> a475736541c1931072a7aa7a11369f14a9f147a4
 let chatUI: ChatUI = new ChatUI({
     user: currentUserModel
 });

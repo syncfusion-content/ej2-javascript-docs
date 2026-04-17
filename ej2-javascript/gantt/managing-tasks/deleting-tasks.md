@@ -15,7 +15,7 @@ A task delete option in the Gantt control can be enabled by enabling the [ediSet
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/deleteRecord-cs1/index.ts %}
 {% endhighlight %}
@@ -51,7 +51,7 @@ The following code snippet explains how to enable the delete confirmation messag
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/editing-cs1/index.ts %}
 {% endhighlight %}

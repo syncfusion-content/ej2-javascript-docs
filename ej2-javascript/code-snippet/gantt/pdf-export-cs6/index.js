@@ -1,15 +1,7 @@
-var clickHandler = function(args){
-   if (args.item.id === 'GanttExport_pdfexport') {
-        var exportProperties = {
-            includeHiddenColumn: true
-        };
-        ganttChart.pdfExport(exportProperties);
-   }
-};
-
 var ganttChart = new ej.gantt.Gantt({
     dataSource: GanttData,
-    height: '450px',
+    height: '430px',
+    treeColumnIndex: 1,
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
@@ -19,14 +11,21 @@ var ganttChart = new ej.gantt.Gantt({
         parentID: 'ParentID'
     },
     columns: [
-        { field: 'TaskID'},
-        { field: 'TaskName', visible: false},
-        { field: 'StartDate'},
-        { field: 'Duration'},
-        { field: 'Progress'}
+        { field: 'TaskID', headerText: 'Task ID', width: 100 },
+        { field: 'TaskName', headerText: 'Task Name', width: 150, visible: false },
+        { field: 'StartDate', headerText: 'Start Date', width: 150 },
+        { field: 'Duration', headerText: 'Duration', width: 150 },
+        { field: 'Progress', headerText: 'Progress', width: 150 }
     ],
-    allowPdfExport: true,
     toolbar: ['PdfExport'],
-    toolbarClick: clickHandler
+    allowPdfExport: true,
+    toolbarClick: function (args) {
+        if (args.item.id === 'Gantt_pdfexport') {
+            ganttChart.pdfExport({
+                includeHiddenColumn: true
+            });
+        }
+    }
 });
-ganttChart.appendTo('#GanttExport');
+
+ganttChart.appendTo('#Gantt');

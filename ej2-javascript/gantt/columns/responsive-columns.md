@@ -15,7 +15,7 @@ You can toggle the column visibility based on media queries, which are defined i
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/columns-cs8/index.ts %}
 {% endhighlight %}

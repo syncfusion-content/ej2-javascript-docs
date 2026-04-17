@@ -17,24 +17,24 @@ To use the context menu, inject the [ContextMenu](../api/gantt#contextmodule) mo
 
 The default items are listed in the following table.
 
-Items| Description
-----|----
-`AutoFit`|  Auto-fits the current column.
-`AutoFitAll` | Auto-fits all columns.
-`SortAscending` | Sorts the current column in ascending order.
-`SortDescending` | Sorts the current column in descending order.
-`TaskInformation`|  Edits the current task.
-`Add` | Adds a new row to the Gantt.
-`Indent` | Indent the selected record to one level.
-`Outdent` | Outdent the selected record to one level.
-`DeleteTask` | Deletes the current task.
-`Save` | Saves the edited task.
-`Cancel` | Cancels the edited task.
-`DeleteDependency` | Deletes the current dependency task link.
-`Convert` | Converts current task to milestone or vice-versa.
+| Items              | Description                                       |
+| ------------------ | ------------------------------------------------- |
+| `AutoFit`          | Auto-fits the current column.                     |
+| `AutoFitAll`       | Auto-fits all columns.                            |
+| `SortAscending`    | Sorts the current column in ascending order.      |
+| `SortDescending`   | Sorts the current column in descending order.     |
+| `TaskInformation`  | Edits the current task.                           |
+| `Add`              | Adds a new row to the Gantt.                      |
+| `Indent`           | Indent the selected record to one level.          |
+| `Outdent`          | Outdent the selected record to one level.         |
+| `DeleteTask`       | Deletes the current task.                         |
+| `Save`             | Saves the edited task.                            |
+| `Cancel`           | Cancels the edited task.                          |
+| `DeleteDependency` | Deletes the current dependency task link.         |
+| `Convert`          | Converts current task to milestone or vice-versa. |
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/contextMenu-cs1/index.ts %}
 {% endhighlight %}
@@ -69,7 +69,7 @@ The following sample shows context menu item for parent rows to expand or collap
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/customContextMenu-cs1/index.ts %}
 {% endhighlight %}

@@ -18,7 +18,7 @@ Gantt uses [Form Validator](https://ej2.syncfusion.com/documentation/form-valida
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/getting-started-cs24/index.ts %}
 {% endhighlight %}
@@ -51,7 +51,7 @@ In the below demo, custom validation applied for `TaskName` column.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/getting-started-cs25/index.ts %}
 {% endhighlight %}
@@ -83,7 +83,7 @@ Within the actionBegin event, validationRules can be configured for columns in t
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/getting-started-cs26/index.ts %}
 {% endhighlight %}

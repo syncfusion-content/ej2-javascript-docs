@@ -17,7 +17,7 @@ To resize the column, inject the `Resize` module into the Gantt control.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/columns-cs3/index.ts %}
 {% endhighlight %}
@@ -52,7 +52,7 @@ In the following example, the minimum and maximum widths are defined for the `Du
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/columns-cs4/index.ts %}
 {% endhighlight %}

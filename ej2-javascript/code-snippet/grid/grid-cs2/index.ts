@@ -7,7 +7,7 @@ let grid: Grid = new Grid({
     dataSource: data,
     enableAutoFill: true,
     allowSelection: true,
-    toolbar: ['Add', 'Update', 'Cancel'],
+    toolbar: ['Add', 'Delete', 'Update', 'Cancel'],
     selectionSettings: { type: 'Multiple', mode: 'Cell', cellSelectionMode: 'Box' },
     editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Batch' },
     columns: [

@@ -91,7 +91,11 @@ Existing calculated field can be renamed only through the UI at runtime. To do s
 
 Existing calculated field formula can be edited only through the UI at runtime. To do so, open the calculated field dialog, select the target field and click "Edit" icon. User can now see the existing formula getting displayed in a multiline text box at the bottom of the dialog. Now, change the formula based on user requirement and click "OK".
 
+<<<<<<< HEAD
+![oEditing the calculated fieldt](images/before-edit.webp)
+=======
 ![Editing the calculated field](images/before-edit.webp)
+>>>>>>> a475736541c1931072a7aa7a11369f14a9f147a4
 <br/>
 <br/>
 ![Editing the calculated field formula](images/after-change.webp)

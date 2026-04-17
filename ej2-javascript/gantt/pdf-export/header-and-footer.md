@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Header and footer of PDF export in ##Platform_Name## Gantt control | Syncfusion
-description: Learn here all about header and footer of PDF exporting in Syncfusion ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more.
+title: PDF Headers and Footers in ##Platform_Name## Gantt Chart | Syncfusion
+description: Learn how to customize headers and footers in PDF exports of the Syncfusion ##Platform_Name## Gantt Chart control with text, lines, page numbers, and images.
 platform: ej2-javascript
 control: Header and Footer of PDF export 
 publishingplatform: ##Platform_Name##
@@ -11,18 +11,18 @@ domainurl: ##DomainURL##
 
 # Customizing header and footer of PDF export in ##Platform_Name## Gantt control
 
-PDF export provides an option to specify and customize text, page number, line and image in header and footer of exported PDF document by using [pdfExportProperties](https://helpej2.syncfusion.com/documentation/api/gantt/pdfExportProperties).
+PDF export provides an option to specify and customize text, page number, line and image in header and footer of exported PDF document by using [pdfExportProperties](../../api/gantt/pdfexportproperties).
 
 ## Write a text in header and footer
 
-This functionality helps to customize the text that appears in the header or footer sections of a PDF document. Text can be added to [header](https://helpej2.syncfusion.com/documentation/api/gantt/pdfHeader) or [footer](https://helpej2.syncfusion.com/documentation/api/gantt/pdfFooter) of exported PDF document by using [pdfExportProperties](https://helpej2.syncfusion.com/documentation/api/gantt/pdfExportProperties).
+This functionality helps to customize the text that appears in the header or footer sections of a PDF document. Text can be added to [header](../../api/gantt/pdfHeader) or [footer](../../api/gantt/pdfFooter) of exported PDF document by using [pdfExportProperties](../../api/gantt/pdfexportproperties).
 
 * `type` property in the content array indicates the content type, such as 'Text'.
 * `Value` property determines the text. 
 * `Position` property determines the horizontal and vertical positions of the text element.
 * `style` property define the visual styling properties for the text element
 
-```ts
+{% if page.publishingplatform == "typescript" %}
 
 let exportProperties: PdfExportProperties = {
     header: {
@@ -33,17 +33,34 @@ let exportProperties: PdfExportProperties = {
                 type: 'Text',
                 value: 'INVOICE',
                 position: { x: 380, y: 0 },
-                style: { textBrushColor: '#C25050', fontSize: 25 },
-            },
-
+                style: { textBrushColor: '#C25050', fontSize: 25 }
+            }
         ]
     }
+};
 
-```
+{% elsif page.publishingplatform == "javascript" %}
+
+let exportProperties = {
+    header: {
+        fromTop: 0,
+        height: 130,
+        contents: [
+            {
+                type: 'Text',
+                value: 'INVOICE',
+                position: { x: 380, y: 0 },
+                style: { textBrushColor: '#C25050', fontSize: 25 }
+            }
+        ]
+    }
+};
+
+{% endif %}
 
 ## Draw a line in header and footer
 
-This functionality helps to customize the line that appears in the header or footer sections of the PDF document. A line can be added to [header](https://helpej2.syncfusion.com/documentation/api/gantt/pdfHeader) or [footer](https://helpej2.syncfusion.com/documentation/api/gantt/pdfFooter) of the exported PDF document by using [pdfExportProperties](https://helpej2.syncfusion.com/documentation/api/gantt/pdfExportProperties).
+This functionality helps to customize the line that appears in the header or footer sections of the PDF document. A line can be added to [header](../../api/gantt/pdfHeader) or [footer](../../api/gantt/pdfFooter) of the exported PDF document by using [pdfExportProperties](../../api/gantt/pdfexportproperties).
 
 * `type` determines content type, such as 'Line'.
 * `style` is used to set properties like the color (penColor), size (penSize), and style (dashStyle) of the line.
@@ -56,7 +73,7 @@ Supported line styles:
 * dashdotdot
 * solid
 
-```ts
+{% if page.publishingplatform == "typescript" %}
 
 let exportProperties: PdfExportProperties = {
     header: {
@@ -70,13 +87,29 @@ let exportProperties: PdfExportProperties = {
             }
         ]
     }
-}
+};
 
-```
+{% elsif page.publishingplatform == "javascript" %}
+
+let exportProperties = {
+    header: {
+        fromTop: 0,
+        height: 130,
+        contents: [
+            {
+                type: 'Line',
+                style: { penColor: '#000080', penSize: 2, dashStyle: 'Solid' },
+                points: { x1: 0, y1: 4, x2: 685, y2: 4 }
+            }
+        ]
+    }
+};
+
+{% endif %}
 
 ## Add page number in header and footer
 
-This feature allows to customize the page number that appears in the header or footer sections of the PDF document. Page numbers can be added in [header](https://helpej2.syncfusion.com/documentation/api/gantt/pdfHeader) or [footer](https://helpej2.syncfusion.com/documentation/api/gantt/pdfFooter) of the exported PDF document by using [pdfExportProperties](https://helpej2.syncfusion.com/documentation/api/gantt/pdfExportProperties).
+This feature allows to customize the page number that appears in the header or footer sections of the PDF document. Page numbers can be added in [header](../../api/gantt/pdfHeader) or [footer](../../api/gantt/pdfFooter) of the exported PDF document by using [pdfExportProperties](../../api/gantt/pdfexportproperties).
 
 * `type` indicates that the content is a page number.
 * `pageNumberType` specifies the type of numbering to be used.
@@ -91,9 +124,9 @@ Supported page number types:
 * UpperRoman - I, II, III,
 * Number - 1,2,3.
 
-```ts
+{% if page.publishingplatform == "typescript" %}
 
- let exportProperties: PdfExportProperties = {
+let exportProperties: PdfExportProperties = {
     header: {
         fromTop: 0,
         height: 130,
@@ -101,19 +134,37 @@ Supported page number types:
             {
                 type: 'PageNumber',
                 pageNumberType: 'Arabic',
-                format: 'Page {$current} of {$total}', //optional
+                format: 'Page {$current} of {$total}',
                 position: { x: 0, y: 25 },
                 style: { textBrushColor: '#ffff80', fontSize: 15, hAlign: 'Center' }
             }
         ]
     }
-}
+};
 
-```
+{% elsif page.publishingplatform == "javascript" %}
+
+let exportProperties = {
+    header: {
+        fromTop: 0,
+        height: 130,
+        contents: [
+            {
+                type: 'PageNumber',
+                pageNumberType: 'Arabic',
+                format: 'Page {$current} of {$total}',
+                position: { x: 0, y: 25 },
+                style: { textBrushColor: '#ffff80', fontSize: 15, hAlign: 'Center' }
+            }
+        ]
+    }
+};
+
+{% endif %}
 
 ## Insert an image in header and footer
 
-This feature allows to customize the image that appears in the header or footer sections of the PDF document. Image (Base64 string) can be added in the exported document in [header](https://helpej2.syncfusion.com/documentation/api/gantt/pdfHeader) or [footer](https://helpej2.syncfusion.com/documentation/api/gantt/pdfFooter) of the exported PDF document by using [pdfExportProperties](https://helpej2.syncfusion.com/documentation/api/gantt/pdfExportProperties).
+This feature allows to customize the image that appears in the header or footer sections of the PDF document. Image (Base64 string) can be added in the exported document in [header](../../api/gantt/pdfHeader) or [footer](../../api/gantt/pdfFooter) of the exported PDF document by using [pdfExportProperties](../../api/gantt/pdfexportproperties).
 
 * `type` indicates that the content is an image.
 * `src` specifies the source of the image, which should be Base64 string. 
@@ -122,9 +173,10 @@ This feature allows to customize the image that appears in the header or footer 
 
 >Note: PDF Export supports base64 string to export the images.
 
-```ts
+{% if page.publishingplatform == "typescript" %}
+
 // Replace it with a valid Base64-encoded image.
-let image: string = "/9j/4AAQSkZJRgABAQEAeAB4AAD..." 
+let image: string = "/9j/4AAQSkZJRgABAQEAeAB4AAD...";
 
 let exportProperties: PdfExportProperties = {
     header: {
@@ -135,19 +187,39 @@ let exportProperties: PdfExportProperties = {
                 type: 'Image',
                 src: image,
                 position: { x: 40, y: 10 },
-                size: { height: 100, width: 250 },
+                size: { height: 100, width: 250 }
             }
         ]
     }
-}
+};
 
-```
+{% elsif page.publishingplatform == "javascript" %}
+
+// Replace it with a valid Base64-encoded image.
+let image = "/9j/4AAQSkZJRgABAQEAeAB4AAD...";
+
+let exportProperties = {
+    header: {
+        fromTop: 0,
+        height: 130,
+        contents: [
+            {
+                type: 'Image',
+                src: image,
+                position: { x: 40, y: 10 },
+                size: { height: 100, width: 250 }
+            }
+        ]
+    }
+};
+
+{% endif %}
 
 The below code illustrates the pdf export customization.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/pdf-export-customization-cs1/index.ts %}
 {% endhighlight %}
@@ -174,11 +246,11 @@ The below code illustrates the pdf export customization.
 
 ## Disable footer
 
-By default, the exported PDF file includes a footer. The footer can be disabled by setting the [enableFooter](../../api/gantt/pdfExportProperties#enablefooter) property to `false`.
+By default, the exported PDF file includes a footer. The footer can be disabled by setting the [enableFooter](../../api/gantt/pdfexportproperties#enablefooter) property to `false`.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/pdf-export-cs5/index.ts %}
 {% endhighlight %}
@@ -202,3 +274,8 @@ By default, the exported PDF file includes a footer. The footer can be disabled 
 
 {% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs5" %}
 {% endif %}
+
+## See also
+- [How to export to PDF?](../../pdf-export/pdf-export)
+- [How to customize PDF export?](../../pdf-export/customize-pdf-export)
+- [How to manage task dependencies?](../../task-dependency)

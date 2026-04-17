@@ -2,12 +2,12 @@ var template = '<tr><td>${OrderID}</td><td>${CustomerID}</td><td>${EmployeeID}</
 
 var compiledFunction = ej.base.compile(template);
 
-const SERVICE_URI = 'https://services.odata.org/V4/Northwind/Northwind.svc/';
+const SERVICE_URL = 'https://services.odata.org/V4/Northwind/Northwind.svc/';
 
 var table = (document.getElementById('datatable'));
 
 let dataManager = new ej.data.DataManager({
-    url: SERVICE_URI,
+    url: SERVICE_URL,
     adaptor: new ej.data.ODataV4Adaptor()
 });
 

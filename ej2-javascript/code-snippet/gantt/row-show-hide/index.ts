@@ -40,7 +40,7 @@ let hiddenRowIndexes: number[] = [];
 let checkbox: CheckBox = new CheckBox({ label: 'Small', cssClass: 'e-small', change: onCheckBoxChange });
 checkbox.appendTo('#toggleRows');
 
-function onCheckBoxChange(args: CheckBoxChangeEventArgs): void {debugger
+function onCheckBoxChange(args: CheckBoxChangeEventArgs): void {
   if (!gantt || !gantt.treeGrid || !gantt.treeGrid.grid) return;
 
   const rowsObj = gantt.treeGrid.grid.getRowsObject();

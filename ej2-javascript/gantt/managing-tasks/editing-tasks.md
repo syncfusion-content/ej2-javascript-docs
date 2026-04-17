@@ -29,7 +29,7 @@ The following code example shows you how to enable the cell editing in Gantt con
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/getting-started-cs10/index.ts %}
 {% endhighlight %}
@@ -62,7 +62,7 @@ Modify the task details through the edit dialog by setting the edit [mode](../..
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/getting-started-cs11/index.ts %}
 {% endhighlight %}
@@ -95,7 +95,7 @@ In the Gantt dialog, you can define the required tabs or editing sections using 
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/editing-cs2/index.ts %}
 {% endhighlight %}
@@ -128,7 +128,7 @@ In the Gantt dialog, you can make only specific data source fields visible for e
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/editing-cs3/index.ts %}
 {% endhighlight %}
@@ -167,7 +167,7 @@ The following code example demonstrates how to enable task dependency editing in
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/editing-cs6/index.ts %}
 {% endhighlight %}

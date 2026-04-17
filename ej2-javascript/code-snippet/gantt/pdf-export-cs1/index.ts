@@ -1,13 +1,13 @@
 import { Gantt, Toolbar, PdfExport, Selection, PdfExportProperties } from '@syncfusion/ej2-gantt';
 import { GanttData } from './datasource.ts';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
+import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 
 Gantt.Inject(Toolbar, PdfExport, Selection);
 
 let clickHandler: EmitType<ClickEventArgs> = (args: ClickEventArgs) => {
     if (args.item.id === 'GanttExport_pdfexport') {
         let exportProperties: PdfExportProperties = {
-           fileName:"new.pdf"
+            fileName: "new.pdf"
         };
         gantt.pdfExport(exportProperties);
     }

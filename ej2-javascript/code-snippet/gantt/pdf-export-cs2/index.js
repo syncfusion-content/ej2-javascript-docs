@@ -1,15 +1,7 @@
-var clickHandler = function(args){
-   if (args.item.id === 'GanttExport_pdfexport') {
-        var exportProperties = {
-           pageOrientation: 'Portrait'
-        };
-        ganttChart.pdfExport(exportProperties);
-   }
-};
-
-var ganttChart = new ej.gantt.Gantt({
+var gantt = new ej.gantt.Gantt({
     dataSource: GanttData,
-    height: '450px',
+    height: '430px',
+    id: 'ganttDefault',
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
@@ -18,8 +10,23 @@ var ganttChart = new ej.gantt.Gantt({
         progress: 'Progress',
         parentID: 'ParentID'
     },
-    allowPdfExport: true,
     toolbar: ['PdfExport'],
-    toolbarClick: clickHandler
+    allowPdfExport: true,
+    treeColumnIndex: 1,
+    columns: [
+        { field: 'TaskID', headerText: 'ID', width: 100, textAlign: 'Left' },
+        { field: 'TaskName', headerText: 'Task Name', width: 250 },
+        { field: 'StartDate', headerText: 'Start Date', width: 150 },
+        { field: 'Duration', headerText: 'Duration', width: 150 },
+        { field: 'Progress', headerText: 'Progress', width: 150 }
+    ],
+    toolbarClick: function (args) {
+        if (args.item.id === 'GanttExport_pdfexport') {
+            gantt.pdfExport({
+                pageOrientation: 'Portrait'
+            });
+        }
+    }
 });
-ganttChart.appendTo('#GanttExport');
+
+gantt.appendTo('#GanttExport');

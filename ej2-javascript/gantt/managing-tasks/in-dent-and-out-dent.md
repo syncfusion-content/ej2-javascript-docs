@@ -19,7 +19,7 @@ Indent and Outdent of a task are used to update the level of task in the hierarc
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/indent-cs1/index.ts %}
 {% endhighlight %}

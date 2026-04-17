@@ -1,27 +1,7 @@
-var clickHandler = function(args){
-    let columns = ganttChart.treeGrid.grid.columns;
-	 if (args.item.id === 'GanttExport_excelexport') {
-        columns[0].visible = true;
-        columns[3].visible = false;
-        ganttChart.excelExport();
-    }
-	else if (args.item.id === 'GanttExport_csvexport') {
-        columns[0].visible = true;
-        columns[3].visible = false;
-        ganttChart.csvExport();
-    }
-};
-var exportComplete = function(args){
-    let columns = ganttChart.treeGrid.grid.columns;	
-    columns[0].visible = false;
-    columns[3].visible = true;
-};
-
-ej.gantt.Gantt.Inject(ej.gantt.ExcelExport,ej.gantt.Toolbar);
-
-var ganttChart = new ej.gantt.Gantt({
+var gantt = new ej.gantt.Gantt({
+    id: 'GanttExport',
     dataSource: GanttData,
-    height: '450px',
+    height: '400px',
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
@@ -31,16 +11,34 @@ var ganttChart = new ej.gantt.Gantt({
         parentID: 'ParentID'
     },
     treeColumnIndex: 1,
-    allowExcelExport: true,
-	columns: [
-        { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: '100',visible: false },
-        { field: 'TaskName', headerText: 'Task Name', width: '150' },        
-        { field: 'StartDate', headerText: 'Start Date', width: '150' },
-        { field: 'Duration', headerText: 'Duration', width: '150' },
-        { field: 'Progress', headerText: 'Progress', width: '150' },
-    ],
     toolbar: ['ExcelExport', 'CsvExport'],
-	toolbarClick: clickHandler,
-	excelExportComplete: exportComplete
+    columns: [
+        { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: 100 },
+        { field: 'TaskName', headerText: 'Task Name', width: 150 },
+        { field: 'StartDate', headerText: 'StartDate', width: 150, visible: false },
+        { field: 'Duration', headerText: 'Duration', width: 150 },
+        { field: 'Progress', headerText: 'Progress', width: 150 }
+    ],
+    allowExcelExport: true,
+    toolbarClick: function (args) {
+        if (args.item.id === 'GanttExport_excelexport') {
+            gantt.treeGrid.grid.columns[0].visible = true;
+            gantt.treeGrid.grid.columns[3].visible = false;
+            gantt.excelExport();
+        } else if (args.item.id === 'GanttExport_csvexport') {
+            gantt.treeGrid.grid.columns[0].visible = true;
+            gantt.treeGrid.grid.columns[3].visible = false;
+            gantt.csvExport();
+        }
+    },
+    excelExportComplete: function () {
+        gantt.treeGrid.grid.columns[0].visible = false;
+        gantt.treeGrid.grid.columns[3].visible = true;
+    },
+    csvExportComplete: function () {
+        gantt.treeGrid.grid.columns[0].visible = false;
+        gantt.treeGrid.grid.columns[3].visible = true;
+    }
 });
-ganttChart.appendTo('#GanttExport');
+
+gantt.appendTo('#GanttExport');

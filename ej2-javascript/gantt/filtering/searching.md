@@ -9,15 +9,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Searching in ##Platform_Name## Gantt control
+# Searching in ##Platform_Name## Gantt Chart Control
 
-You can search records in the Gantt control by using the [search](../../api/gantt#search) method with search key as a parameter. The Gantt control provides an option to integrate the search text box in the toolbar by adding the search item to the [toolbar](../../api/gantt#toolbar) property.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control allows quick filtering of records based on search input, improving access to relevant data in large datasets.
 
-To search records, inject the `Filter` module into the Gantt control.
+To enable search functionality, include the **Search** item in the [toolbar](../../api/gantt#toolbar) configuration and inject both `Filter` service and `Toolbar` service into the control's `providers` array.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/searching-cs1/index.ts %}
 {% endhighlight %}
@@ -44,11 +44,23 @@ To search records, inject the `Filter` module into the Gantt control.
 
 ## Initial search
 
-In the Gantt control, you can load a task with some search criteria and this can be done by using the [searchSettings](../../api/gantt/searchSettings) property. To apply search at initial rendering, set the value for [fields](../../api/gantt/searchSettings#fields), [operator](../../api/gantt/searchSettings#operator), [key](../../api/gantt/searchSettings#key), and [ignoreCase](../../api/gantt/searchSettings#ignorecase) in the [searchSettings](../../api/gantt/searchSettings) property.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt control allows applying search criteria during initial load using the [searchSettings](../../api/gantt/searchsettings) property.  
+
+To configure this feature, define the following properties:
+
+| Property       | Description                                                   |
+| -------------- | ------------------------------------------------------------- |
+| `fields`       | Defines the fields where the search should be applied.        |
+| `operator`     | Sets the condition for matching (e.g., `contains`, `equals`). |
+| `key`          | Specifies the value to search for.                            |
+| `ignoreCase`   | Determines if the search should be case-insensitive.          |
+| `ignoreAccent` | Ignores diacritic characters or accents during the search.    |
+
+The following sample demonstrates an initial search where `fields` is set to **TaskName**, `operator` is **contains**, `key` is **Pr�duct**, with `ignoreCase` set to **true** and `ignoreAccent` set to **true** (e.g., typing "product" will match "Pr�duct").
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/searching-cs2/index.ts %}
 {% endhighlight %}
@@ -77,19 +89,19 @@ In the Gantt control, you can load a task with some search criteria and this can
 
 ## Search operators
 
-The search operator can be defined in the [searchSettings.operator](../../api/gantt/searchSettings#operator) property to configure specific searching.
+Search operators specify the type of comparison used during a search. These are configured through the [searchSettings.operator](../../api/gantt/searchSettings#operator) property.
 
 The following operators are supported in searching:
 
-Operator |Description
------|-----
-startsWith |Checks whether a value begins with the specified value.
-endsWith |Checks whether a value ends with the specified value.
-contains |Checks whether a value contains the specified value.
-equal |Checks whether a value is equal to the specified value.
-notEqual |Checks for the values that are not equal to the specified value.
+| Operator   | Description                                           |
+| ---------- | ----------------------------------------------------- |
+| startsWith | Matches values that begin with the specified text.    |
+| endsWith   | Matches values that end with the specified text.      |
+| contains   | Matches values that include the specified text.       |
+| equal      | Matches values that exactly match the specified text. |
+| notEqual   | Matches values that do not match the specified text.  |
 
-> By default, the [searchSettings.operator](../../api/gantt/searchSettings#operator) value is `contains`.
+> The default value for `searchSettings.operator` is `contains`.
 
 ## Search by external button
 
@@ -97,7 +109,7 @@ To search the Gantt records from an external button, invoke the [search](../../a
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/externalSearch-cs1/index.ts %}
 {% endhighlight %}
@@ -122,15 +134,17 @@ To search the Gantt records from an external button, invoke the [search](../../a
 {% previewsample "page.domainurl/code-snippet/gantt/externalSearch-cs1" %}
 {% endif %}
 
->Note: You should set the [allowFiltering](../../api/gantt#allowfiltering) property to `true` for searching the content externally.
+> You should set the [allowFiltering](../../api/gantt#allowfiltering) property to **true** for searching the content externally.
 
 ## Search specific columns
 
-By default, the Gantt control searches all the columns. You can search specific columns by defining the specific column's field names in the [searchSettings.fields](../../api/gantt/searchSettings#fields) property.
+To search specific columns in the Gantt Chart control, use the [searchSettings.fields](../../api/gantt/searchSettings#fields) property. This allows you to define which column fields should be included in the search, instead of searching across all columns by default.
+
+This following sample demonstrates searching only within the **TaskName** and **Duration** columns.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/searching-cs3/index.ts %}
 {% endhighlight %}
@@ -155,15 +169,15 @@ By default, the Gantt control searches all the columns. You can search specific 
 {% previewsample "page.domainurl/code-snippet/gantt/searching-cs3" %}
 {% endif %}
 
-> In above sample, you can search only **TaskName** and **Duration** column values.
-
 ## Clear search by external button
 
-You can set [searchSettings.key](../../api/gantt/searchSettings#key) property as `empty` string, to clear the searched Gantt records from external button.
+To clear the search results in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt from an external button, set the [searchSettings.key](../../api/gantt/searchSettings#key) property to an empty string. 
+ 
+Alternatively, you can invoke the [search](../../api/gantt#search) method with an empty string to reset the search.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/clear-search-cs1/index.ts %}
 {% endhighlight %}
@@ -186,4 +200,69 @@ You can set [searchSettings.key](../../api/gantt/searchSettings#key) property as
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/gantt/clear-search-cs1" %}
+{% endif %}
+
+## Search on each key stroke
+
+You can enable instant filtering in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control by calling the [search](../../api/gantt#search) method on each `keyup` event.  This can be configured within the component�s [created](../../gantt/events#created) event.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/searching-cs4/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/searching-cs4/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/searching-cs4" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/searching-cs4/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/searching-cs4/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/searching-cs4" %}
+
+{% endif %}
+
+## Highlight the search text
+
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control supports highlighting matched search text within grid cells to improve visibility of search results. 
+
+This can be achieved using the [queryCellInfo](../../api/gantt#querycellinfo) event, which is triggered during cell rendering. Within this event, check if the cell belongs to the target column, retrieve the cell value and search keyword, and use the `includes` method to detect matches. If a match is found, wrap the matched text in a `<span>` with a custom CSS class for styling.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/searching-cs5/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/searching-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/searching-cs5" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/searching-cs5/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/searching-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/searching-cs5" %}
 {% endif %}

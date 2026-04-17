@@ -1,8 +1,5 @@
-
-
-
 import { ContextMenu, MenuItemModel, ContextMenuModel } from '@syncfusion/ej2-navigations';
-import { Gantt, Toolbar, Filter, Edit, Selection} from '@syncfusion/ej2-gantt';
+import { Gantt, Toolbar, Filter, Edit, Selection } from '@syncfusion/ej2-gantt';
 import { EmitType } from '@syncfusion/ej2-base';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { GanttData } from './datasource.ts';
@@ -13,33 +10,33 @@ Gantt.Inject(Toolbar, Selection, Filter, Edit);
 enableRipple(true);
 
 let menuItems: MenuItemModel[] = [
-    {
-        text: 'Top'
-    },
-    {
-        text: 'Bottom'
-    },
-    {
-        text: 'Above'
-    },
-    {
-        text: 'Below'
-    },
-    {
-        text: 'Child'
-    },];
+  {
+    text: 'Top'
+  },
+  {
+    text: 'Bottom'
+  },
+  {
+    text: 'Above'
+  },
+  {
+    text: 'Below'
+  },
+  {
+    text: 'Child'
+  }];
 
 let menuOptions: ContextMenuModel = {
-    items: menuItems,
-    select: select
+  items: menuItems,
+  select: select
 };
 
 let menuObj: ContextMenu = new ContextMenu(menuOptions, '#contextmenu');
 
 let clickHandler: EmitType<ClickEventArgs> = (args: ClickEventArgs) => {
-    if (args.item.text === 'Add') {
-        menuObj.open(60, 20);
-    }
+  if (args.item.text === 'Add') {
+    menuObj.open(60, 20);
+  }
 };
 
 function select(args: any) {
@@ -76,24 +73,24 @@ function select(args: any) {
 }
 
 let gantt: Gantt = new Gantt({
-    dataSource: GanttData,
-    height: '450px',
-    allowSelection: true,
-    taskFields: {
-        id: 'TaskID',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        parentID: 'ParentID'
-    },
-    editSettings: {
-        allowEditing: true,
-        allowAdding: true,
-        allowDeleting: true
-    },
-    toolbarClick: clickHandler,
-    toolbar: [ 'Edit', { text: 'Add', tooltipText: 'Add', id: 'Add' }],
-    });
+  dataSource: GanttData,
+  height: '450px',
+  allowSelection: true,
+  taskFields: {
+    id: 'TaskID',
+    name: 'TaskName',
+    startDate: 'StartDate',
+    duration: 'Duration',
+    progress: 'Progress',
+    parentID: 'ParentID'
+  },
+  editSettings: {
+    allowEditing: true,
+    allowAdding: true,
+    allowDeleting: true
+  },
+  toolbarClick: clickHandler,
+  toolbar: ['Edit', { text: 'Add', tooltipText: 'Add', id: 'Add' }],
+});
 
 gantt.appendTo('#Gantt');

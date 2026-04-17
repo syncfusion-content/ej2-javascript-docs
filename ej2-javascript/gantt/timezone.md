@@ -23,7 +23,7 @@ Setting `timezone` to UTC for Gantt will display the same time as in the databas
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/timezone-cs1/index.ts %}
 {% endhighlight %}
@@ -53,7 +53,7 @@ Setting `timezone` to UTC for Gantt will display the same time as in the databas
 CRUD operations can be performed with timezone and the Gantt is rendered based on the timezone specified in the load time. All the editing actions will be done based on the user timezone, but on database save action, we have reversed this conversion to local time and provided data to client-side events for better understanding. Refer to the following code example.
  {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/timezone-cs2/index.ts %}
 {% endhighlight %}
@@ -84,10 +84,10 @@ CRUD operations can be performed with timezone and the Gantt is rendered based o
 
 This method is used to calculate the difference between the passed UTC date and timezone.
 
-| Parameters | Type | Description |
-|------------|------|-------------|
-| Date | Date | UTC time as date object.|
-| Timezone | String | Timezone.|
+| Parameters | Type   | Description              |
+| ---------- | ------ | ------------------------ |
+| Date       | Date   | UTC time as date object. |
+| Timezone   | String | Timezone.                |
 
 Returns `number`
 
@@ -103,11 +103,11 @@ Returns `number`
 
 This method is used to convert the passed date from one timezone to another.
 
-| Parameters | Type | Description |
-|------------|------|-------------|
-| Date | Date | UTC time as date object.|
-| fromOffset | number/string | Timezone from which date needs to be converted.|
-| toOffset | number/string | Timezone to which date needs to be converted.|
+| Parameters | Type          | Description                                     |
+| ---------- | ------------- | ----------------------------------------------- |
+| Date       | Date          | UTC time as date object.                        |
+| fromOffset | number/string | Timezone from which date needs to be converted. |
+| toOffset   | number/string | Timezone to which date needs to be converted.   |
 
 Returns `Date`
 
@@ -125,10 +125,10 @@ Returns `Date`
 
 This method is used to remove the time difference between passed UTC date and timezone.
 
-| Parameters | Type | Description |
-|------------|------|-------------|
-| Date | Date | UTC as date object.|
-| Timezone | String | Timezone.|
+| Parameters | Type   | Description         |
+| ---------- | ------ | ------------------- |
+| Date       | Date   | UTC as date object. |
+| Timezone   | String | Timezone.           |
 
 Returns `Date`
 

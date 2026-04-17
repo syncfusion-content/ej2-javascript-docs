@@ -1,16 +1,18 @@
-ej.gantt.Gantt.Inject(ej.gantt.Filter, ej.gantt.Toolbar);
+var gantt = new ej.gantt.Gantt({
+    dataSource: GanttData,
+    height: '370px',
+    taskFields: {
+        id: 'TaskID',
+        name: 'TaskName',
+        startDate: 'StartDate',
+        duration: 'Duration',
+        progress: 'Progress',
+        parentID: 'ParentID'
+    },
+    splitterSettings: {
+        columnIndex: 3
+    },
+    toolbar: ['Search']
+});
 
-var ganttChart = new ej.gantt.Gantt({
-         dataSource: GanttData,
-		 height:'450px',
-		 taskFields: {
-            id: 'TaskID',
-            name: 'TaskName',
-            startDate: 'StartDate',
-            duration: 'Duration',
-            progress: 'Progress',
-            parentID: 'ParentID'
-        },
-		toolbar: ['Search']
-    });
-ganttChart.appendTo('#Gantt');
+gantt.appendTo('#Gantt');

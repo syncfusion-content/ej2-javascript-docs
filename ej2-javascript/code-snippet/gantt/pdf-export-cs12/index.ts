@@ -7,7 +7,7 @@ Gantt.Inject(Toolbar, PdfExport, Selection);
 let clickHandler: EmitType<ClickEventArgs> = (args: ClickEventArgs) => {
     if (args.item.id === 'GanttExport_pdfexport') {
         let exportProperties: PdfExportProperties = {
-           theme:"Fabric"
+            theme: "Fabric"
         };
         gantt.pdfExport(exportProperties);
     }

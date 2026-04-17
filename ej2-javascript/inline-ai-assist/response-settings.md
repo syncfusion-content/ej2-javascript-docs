@@ -71,8 +71,11 @@ Below sample demonstrates the usage of response settings in Inline Assist compon
 
 ## See Also
 
+<<<<<<< HEAD
+=======
 - [API Reference: ResponseSettings](../api/inline-ai-assist#responsesettings)
 - [Inline AI Assist Getting Started](./ts/getting-started.md)
+>>>>>>> a475736541c1931072a7aa7a11369f14a9f147a4
 - [Command Settings](./command-settings.md)
 - [Inline Toolbar](./inline-toolbar.md)
 - [Events Documentation](./events.md)

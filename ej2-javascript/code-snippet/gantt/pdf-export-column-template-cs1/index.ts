@@ -1,63 +1,50 @@
-import { Gantt, Toolbar, PdfExport, Selection, PdfExportProperties,PdfQueryCellInfoEventArgs } from '@syncfusion/ej2-gantt';
-import { GanttData,editingResources } from './datasource.ts';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
+import { Gantt, Toolbar, PdfExport, Selection, PdfQueryCellInfoEventArgs, ColumnModel, PdfExportProperties } from '@syncfusion/ej2-gantt';
+import { data, resources } from './datasource.ts';
 
 Gantt.Inject(Toolbar, PdfExport, Selection);
 
-let clickHandler: EmitType<ClickEventArgs> = (args: ClickEventArgs) => {
-    if (args.item.id === 'GanttExport_pdfexport') {
-        let exportProperties: PdfExportProperties = {
-            enableFooter: false
-        };
-        gantt.pdfExport(exportProperties);
-    }
-};
-function pdfQueryCellInfo(args: PdfQueryCellInfoEventArgs): any {
-    if (args.column.headerText === 'Resources') {
-        {
-            args.image = { height:40,width:40, base64: (args as any).data.taskData.ResourcesImage };
-        }
-    }
-    console.log(args.column.headerText);
-    if (args.column.headerText === 'Email ID') {
-        console.log(args.data.taskData);
-        args.hyperLink = {
-            target: 'mailto:' + (args as any).data.taskData.EmailID,
-            displayText: (args as any).data.taskData.EmailID
-        };
-    }
-}
-
 let gantt: Gantt = new Gantt({
-    dataSource: GanttData,
-    height: '450px',
+    id: 'ganttDefault',
+    dataSource: data,
+    height: '430px',
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
+        resourceInfo: 'resources',
         startDate: 'StartDate',
-        endDate: 'EndDate',
         duration: 'Duration',
         progress: 'Progress',
-        resourceInfo: 'Resources',
-        dependency: 'Predecessor',
-        parentID: 'ParentID',
+        parentID: 'ParentID'
     },
-    columns: [
-        { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left' },
-        { field: 'TaskName', headerText: 'Task Name', width: '250' },
-        { field: 'Resources', headerText: 'Resources', width: '250', template: '#columnTemplate' },
-        {field: 'EmailID', headerText: 'Email ID', template: '#template2', width: 180 },
-    ],
-    pdfQueryCellInfo: pdfQueryCellInfo,
-    allowPdfExport: true,
     toolbar: ['PdfExport'],
-    toolbarClick: clickHandler,
-    resources: editingResources,
-    resourceFields: {
-        id: 'ResourceId',
-        name: 'ResourceName'
+    allowPdfExport: true,
+    allowResizing: true,
+    splitterSettings: { columnIndex: 4 },
+    resources: resources,
+    resourceFields: { id: 'resourceId', name: 'resourceName' },
+    columns: [
+        { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: 100 },
+        { field: 'TaskName', headerText: 'Task Name', width: 150 },
+        { field: 'resources', headerText: 'Resources', width: 250 },
+        { field: 'EmailId', headerText: 'Email ID', width: 150 }
+    ],
+    toolbarClick: (args: any) => {
+        if (args.item.id === 'GanttExport_pdfexport') {
+            const exportProps: PdfExportProperties = { fileName: 'new.pdf' };
+            gantt.pdfExport(exportProps);
+        }
     },
-    projectStartDate: new Date('03/24/2019'),
-    projectEndDate: new Date('07/06/2019')
+    pdfQueryCellInfo: (args: PdfQueryCellInfoEventArgs) => {
+        const col = args.column as ColumnModel;
+        if (col && col.headerText === 'Resources') {
+            const base64: string = (args.data as any).taskData.resourcesImage;
+            (args as any).image = { height: 40, width: 40, base64: base64 };
+        }
+        if (col && col.headerText === 'Email ID') {
+            const email: string = (args.data as any).taskData.EmailId;
+            (args as any).hyperLink = { target: 'mailto:' + email, displayText: email };
+        }
+    }
 });
+
 gantt.appendTo('#GanttExport');

@@ -21,7 +21,7 @@ To sort, inject the [Sort](../api/gantt#sortmodule) module into the Gantt contro
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/getting-started-cs14/index.ts %}
 {% endhighlight %}
@@ -55,7 +55,7 @@ The Gantt control can be rendered with sorted columns initially, and this can be
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/sorting-cs1/index.ts %}
 {% endhighlight %}
@@ -86,7 +86,7 @@ Columns in the Gantt control can be sorted dynamically using the [sortColumn](..
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/sortingColumns-cs1/index.ts %}
 {% endhighlight %}
@@ -117,7 +117,7 @@ In the Gantt control, you can clear all the sorted columns and return to previou
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/clearSorting-cs1/index.ts %}
 {% endhighlight %}
@@ -148,7 +148,7 @@ During the sort action, the Gantt control triggers two events. The [actionBegin]
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/sorting-cs2/index.ts %}
 {% endhighlight %}
@@ -184,7 +184,7 @@ The following code snippets explains how to achieve this.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/sortingCustomColumns-cs1/index.ts %}
 {% endhighlight %}

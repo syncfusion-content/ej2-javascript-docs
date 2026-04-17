@@ -15,7 +15,7 @@ The row selection in the Gantt control can be enabled or disabled using the [all
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/selection-cs4/index.ts %}
 {% endhighlight %}
@@ -48,7 +48,7 @@ You can select a row at the time of loading by setting the index of the row to t
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/selection-cs5/index.ts %}
 {% endhighlight %}
@@ -79,7 +79,7 @@ You can also select a row dynamically using the [selectRow](../../api/gantt/sele
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/selectRow-cs1/index.ts %}
 {% endhighlight %}
@@ -110,7 +110,7 @@ You can select multiple rows by setting the [selectionSettings.type](../../api/g
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/selection-cs6/index.ts %}
 {% endhighlight %}
@@ -141,7 +141,7 @@ While selecting a row in Gantt, the [rowSelecting](../../api/gantt#rowselecting)
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/selection-cs7/index.ts %}
 {% endhighlight %}

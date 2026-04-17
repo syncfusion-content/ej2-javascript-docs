@@ -1,26 +1,13 @@
-import { Gantt, Toolbar, PdfExport, Selection } from '@syncfusion/ej2-gantt';
+import { Gantt, Toolbar, PdfExport, Selection, ToolbarClickEventArgs, PdfQueryTaskbarInfoEventArgs } from '@syncfusion/ej2-gantt';
 import { PdfColor } from '@syncfusion/ej2-pdf-export';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
 import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Toolbar, PdfExport, Selection);
 
-let clickHandler: EmitType<ClickEventArgs> = (args: ClickEventArgs) => {
-    if (args.item.id === 'GanttExport_pdfexport') {
-        gantt.pdfExport();
-    }
-};
-
-let pdfQueryTaskbarInfo: EmitType<Object> = (args: Object) => {
-    if(args.data.Progress < 50 && !args.data.hasChildRecords) {
-        args.taskbar.progressColor = new PdfColor(205, 92, 92);
-        args.taskbar.taskColor =  args.taskbar.taskBorderColor = new PdfColor(240, 128, 128);
-    }
-};
-
 let gantt: Gantt = new Gantt({
+    id: 'ganttDefault',
     dataSource: GanttData,
-    height: '450px',
+    height: '430px',
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
@@ -29,16 +16,29 @@ let gantt: Gantt = new Gantt({
         progress: 'Progress',
         parentID: 'ParentID'
     },
-    columns: [
-        { field: 'TaskID'},
-        { field: 'TaskName', visible: false},
-        { field: 'StartDate'},
-        { field: 'Duration'},
-        { field: 'Progress'}
-    ],
+    treeColumnIndex: 1,
     allowPdfExport: true,
     toolbar: ['PdfExport'],
-    toolbarClick: clickHandler,
-    pdfQueryTaskbarInfo: pdfQueryTaskbarInfo
+    toolbarClick: (args: ToolbarClickEventArgs) => {
+        if (args.item.id === 'GanttExport_pdfexport') {
+            gantt.pdfExport();
+        }
+    },
+    pdfQueryTaskbarInfo: (args: PdfQueryTaskbarInfoEventArgs) => {
+        const d: any = args.data;
+        if (d.Progress < 50 && !d.hasChildRecords) {
+            const bar = args.taskbar;
+            bar.progressColor = new PdfColor(205, 92, 92);
+            bar.taskColor = bar.taskBorderColor = new PdfColor(240, 128, 128);
+        }
+    },
+    columns: [
+        { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: 100 },
+        { field: 'TaskName', headerText: 'Task Name', width: 150, visible: false },
+        { field: 'StartDate', headerText: 'StartDate', width: 150 },
+        { field: 'Duration', headerText: 'Duration', width: 150 },
+        { field: 'Progress', headerText: 'Progress', width: 150 }
+    ]
 });
+
 gantt.appendTo('#GanttExport');

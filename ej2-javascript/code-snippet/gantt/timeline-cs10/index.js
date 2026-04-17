@@ -1,54 +1,42 @@
 var ganttChart = new ej.gantt.Gantt({
-        dataSource: GanttData,
-		height:'450px',
-		taskFields: {
-            id: 'TaskID',
-            name: 'TaskName',
-            startDate: 'StartDate',
-			duration: 'Duration',
-            progress: 'Progress',
-			parentID: 'parentID'
-        },
-		timelineSettings: {
-			topTier: {
+    height: '430px',
+    dataSource: GanttData,
+    taskFields: {
+        id: 'TaskID',
+        name: 'TaskName',
+        startDate: 'StartDate',
+        endDate: 'EndDate',
+        duration: 'Duration',
+        progress: 'Progress',
+        parentID: 'ParentID'
+    },
+    timelineSettings: {
+        topTier: {
             unit: 'Month',
             count: 3,
-            formatter: (date) => {
-                var month = date.getMonth();
-                if (month >= 0 && month <=2) {
-                return 'Q1';
-                } else if(month >= 3 && month <=5) {
-                    return 'Q2';
-                } else if(month >= 6 && month <=8) {
-                    return 'Q3';
-                } else {
-                    return 'Q4';
-                }
+            formatter: function (date, format, tier, mode) {
+                var quarter = 'Q' + (Math.floor(date.getMonth() / 3) + 1);
+                var prefix = tier === 'topTier' ? 'T-' : 'B-';
+                var suffix = mode === 'Month' ? '-M' : '';
+                console.log(format);
+                return '' + prefix + quarter + suffix;
             }
-	    },
-	    bottomTier: {
+        },
+        bottomTier: {
             unit: 'Month',
             format: 'MMM'
-          }
-		},
-		projectStartDate:new Date('01/04/2019'),
-		projectEndDate:new Date('12/30/2019')
+        }
+    },
+    splitterSettings: { position: '50%' },
+    projectStartDate: new Date('01/04/2019'),
+    projectEndDate: new Date('12/30/2019'),
+    columns: [
+        { field: 'TaskID', headerText: 'Task ID', width: '100' },
+        { field: 'TaskName', headerText: 'Task Name', width: '150' },
+        { field: 'StartDate', headerText: 'Start Date', width: '150' },
+        { field: 'Duration', headerText: 'Duration', width: '150' },
+        { field: 'Progress', headerText: 'Progress', width: '150' }
+    ]
 });
+
 ganttChart.appendTo('#Gantt');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

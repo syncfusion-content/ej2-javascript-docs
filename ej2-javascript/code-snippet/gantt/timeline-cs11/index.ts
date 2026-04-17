@@ -1,6 +1,3 @@
-
-
-
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { GanttData } from './datasource.ts';
 
@@ -16,7 +13,7 @@ let gantt: Gantt = new Gantt({
         parentID: 'parentID'
     },
     timelineSettings: {
-        timelineUnitSize:200
+        timelineUnitSize: 200
     }
 });
 gantt.appendTo('#Gantt');

@@ -17,7 +17,7 @@ You can design your own taskbars to view the tasks in Gantt by using [taskbarTem
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/customizations-cs1/index.ts %}
 {% endhighlight %}
@@ -50,7 +50,7 @@ Height of child taskbars and parent taskbars can be customized by using [taskbar
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/appearanceandstyling-cs1/index.ts %}
 {% endhighlight %}
@@ -84,7 +84,7 @@ The default taskbar UI can be replaced with custom templates using the [queryTas
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/appearanceandstyling-cs2/index.ts %}
 {% endhighlight %}
@@ -115,7 +115,7 @@ You can change the gripper icon in the taskbar by applying styles to their respe
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/change-gripper-icon-cs1/index.ts %}
 {% endhighlight %}
@@ -181,7 +181,7 @@ The width and background color of connector lines in Gantt can be customized usi
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/appearanceandstyling-cs3/index.ts %}
 {% endhighlight %}
@@ -217,7 +217,7 @@ In the Gantt control, you can enable or disable the mouse hover tooltip for the 
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/gantt-tooltip-cs1/index.ts %}
 {% endhighlight %}
@@ -252,7 +252,7 @@ The default tooltip in the Gantt control can be customized using the [tooltipSet
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/taskbarTooltip-cs1/index.ts %}
 {% endhighlight %}
@@ -283,7 +283,7 @@ The default connector line tooltip in the Gantt control can be customized using 
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/connectorLineTooltip-cs1/index.ts %}
 {% endhighlight %}
@@ -314,7 +314,7 @@ A baseline tooltip can be customized using the [tooltipSettings.baseline](../api
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/baselineTooltip-cs1/index.ts %}
 {% endhighlight %}
@@ -345,7 +345,7 @@ A timeline tooltip can be customized using the [tooltipSettings.timeline](../api
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/timelineTooltip-cs1/index.ts %}
 {% endhighlight %}

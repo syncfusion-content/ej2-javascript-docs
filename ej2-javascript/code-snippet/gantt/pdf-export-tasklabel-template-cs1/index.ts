@@ -1,78 +1,74 @@
-import { Gantt, Toolbar, PdfExport, Selection, PdfExportProperties } from '@syncfusion/ej2-gantt';
-import { GanttData,editingResources } from './datasource.ts';
-import { PdfColor } from '@syncfusion/ej2-pdf-export';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
+import {
+    Gantt,
+    Toolbar,
+    PdfExport,
+    Selection,
+    PdfExportProperties,
+    PdfQueryTaskbarInfoEventArgs
+} from '@syncfusion/ej2-gantt';
+import { base64Data, editingResources } from './datasource.ts';
 
 Gantt.Inject(Toolbar, PdfExport, Selection);
 
-let clickHandler: EmitType<ClickEventArgs> = (args: ClickEventArgs) => {
-    if (args.item.id === 'GanttExport_pdfexport') {
-        let exportProperties: PdfExportProperties = {
-            enableFooter: false
-        };
-        gantt.pdfExport(exportProperties);
-    }
-};
-let pdfQueryTaskbarInfo: EmitType<Object> = (args: Object) => {
-    args.labelSettings.leftLabel.value = args.data.ganttProperties.taskName + '[' + args.data.ganttProperties.progress + ']';
-        if (args.data.ganttProperties.resourceNames) {
-            args.labelSettings.rightLabel.value = args.data.ganttProperties.resourceNames;
-            args.labelSettings.rightLabel.image = [{
-                    base64: args.data.taskData.ResourcesImage, width: 20, height: 20
-                }];
-        }
-        args.labelSettings.taskLabel.value = args.data.ganttProperties.progress + '%';
-}
-(<{ getResourceElements?: Function }>window).getResourceElements = (value: any) => {
-    let out: string = '';
-    let img: HTMLImageElement = document.createElement('img');
-    img.height = 20;
-    let span: HTMLElement = document.createElement('span');
-    span.style.marginLeft = '5px';
-    span.style.marginRight = '5px';
-    for (let index: number = 0; index < value.length; index++) {
-        img.src = 'https://ej2.syncfusion.com/demos/src/gantt/images/' + value[index].ResourceName + '.png';
-        span.innerHTML = value[index].ResourceName;
-        out = out + img.outerHTML + span.outerHTML;
-    }
-    return out;
-};
-
 let gantt: Gantt = new Gantt({
-    dataSource: GanttData,
+    id: 'Gantt',
+    dataSource: base64Data,
     height: '450px',
-    rowHeight: 55,
-    taskbarHeight: 45,
+    rowHeight: 60,
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
         startDate: 'StartDate',
-        endDate: 'EndDate',
-        progress: 'Progress',
         duration: 'Duration',
-        resourceInfo: 'Resources',
-        dependency: 'Predecessor',
-        parentID: 'ParentID',
+        progress: 'Progress',
+        child: 'subtasks',
+        resourceInfo: 'resources'
     },
-    columns: [
-        { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left' },
-        { field: 'TaskName', headerText: 'Task Name', width: '250' },
-    ],
-    pdfQueryTaskbarInfo: pdfQueryTaskbarInfo,
-    allowPdfExport: true,
-    toolbar: ['PdfExport'],
-    labelSettings: {
-        leftLabel: '#leftLabel',
-        rightLabel: '#rightLabel',
-        taskLabel: '${Progress}%'
-    },
-    toolbarClick: clickHandler,
     resources: editingResources,
     resourceFields: {
-        id: 'ResourceId',
-        name: 'ResourceName'
+        id: 'resourceId',
+        name: 'resourceName'
     },
     projectStartDate: new Date('03/24/2019'),
     projectEndDate: new Date('04/30/2019'),
+    splitterSettings: {
+        columnIndex: 2
+    },
+    labelSettings: {
+        leftLabel: '${TaskName} [ ${Progress}% ]',
+        rightLabel: '${resourceNames}',
+        taskLabel: '${Progress}%'
+    },
+    toolbar: ['PdfExport'],
+    allowPdfExport: true,
+    columns: [
+        { field: 'TaskID' },
+        { field: 'TaskName' }
+    ],
+    toolbarClick: (args: any) => {
+        if (args.item.id === 'GanttExport_pdfexport') {
+            const exportProps: PdfExportProperties = { enableFooter: false };
+            gantt.pdfExport(exportProps);
+        }
+    },
+    pdfQueryTaskbarInfo: (args: PdfQueryTaskbarInfoEventArgs) => {
+        const gp: any = (args.data as any).ganttProperties;
+
+        if (args.labelSettings && gp) {
+            args.labelSettings.leftLabel.value = `${gp.taskName}[${gp.progress}]`;
+
+            if (gp.resourceNames) {
+                args.labelSettings.rightLabel.value = gp.resourceNames;
+                args.labelSettings.rightLabel.image = [{
+                    base64: (args.data as any).taskData.resourcesImage,
+                    width: 20,
+                    height: 20
+                }];
+            }
+
+            args.labelSettings.taskLabel.value = `${gp.progress}%`;
+        }
+    }
 });
+
 gantt.appendTo('#GanttExport');

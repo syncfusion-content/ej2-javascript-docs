@@ -1,4 +1,4 @@
-var GanttData = [
+var data = [
     {
         TaskID: 1,
         TaskName: 'Project Initiation',

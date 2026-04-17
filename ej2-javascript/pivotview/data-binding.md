@@ -51,7 +51,11 @@ To bind local data to the pivot table, user can assign a JavaScript object array
 
 ## Remote Data
 
+<<<<<<< HEAD
+To interact with remote data source, provide the endpoint `url` within [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager)along with appropriate [`adaptor`](https://ej2.syncfusion.com/documentation/data/adaptors). By default, [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager)uses [`ODataAdaptor`](https://ej2.syncfusion.com/documentation/data/adaptors#odata-adaptor) for remote data-binding.
+=======
 To interact with remote data source, provide the endpoint `url` within [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager) along with appropriate [`adaptor`](https://ej2.syncfusion.com/documentation/data/adaptors). By default, [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager) uses [`ODataAdaptor`](https://ej2.syncfusion.com/documentation/data/adaptors#odata-adaptor) for remote data-binding.
+>>>>>>> a475736541c1931072a7aa7a11369f14a9f147a4
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -113,7 +117,11 @@ OData is a standardized protocol for creating and consuming data. User can retri
 
 ### Binding with OData V4 services
 
+<<<<<<< HEAD
+The OData V4 is an improved version of OData protocols, and the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager)can be used to retrieve and consume OData V4 services. For more details on OData V4 services, refer to the [OData documentation](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData V4 service, use the [`ODataV4Adaptor`](https://ej2.syncfusion.com/documentation/data/adaptors#odatav4-adaptor).
+=======
 The OData V4 is an improved version of OData protocols, and the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager) can be used to retrieve and consume OData V4 services. For more details on OData V4 services, refer to the [OData documentation](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData V4 service, use the [`ODataV4Adaptor`](https://ej2.syncfusion.com/documentation/data/adaptors#odatav4-adaptor).
+>>>>>>> a475736541c1931072a7aa7a11369f14a9f147a4
 
 {% if page.publishingplatform == "typescript" %}
 

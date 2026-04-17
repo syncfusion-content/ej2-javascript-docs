@@ -17,7 +17,7 @@ To use CRUD, inject the [Edit](../../api/gantt#editmodule) module into the Gantt
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/getting-started-cs12/index.ts %}
 {% endhighlight %}
@@ -63,17 +63,17 @@ Also, you can customize the behavior of the editor component through the [column
 
 The following table describes cell edit type component and their corresponding edit params of the column.
 
-Edit Type |Component |Example
------|-----|-----
-`numericedit` | [NumericTextBox](https://ej2.syncfusion.com/javascript/documentation/numerictextbox) | params: { decimals: 2, value: 5 }
-`dropdownedit` | [DropDownList](https://ej2.syncfusion.com/javascript/documentation/drop-down-list) | params: { value: 'Germany' }
-`booleanedit` | [Checkbox](https://ej2.syncfusion.com/javascript/documentation/check-box) | params: { checked: true}
-`datepickeredit` | [DatePicker](https://ej2.syncfusion.com/javascript/documentation/datepicker) | params: { format:'dd.MM.yyyy' }
-`datetimepickeredit` | [DateTimePicker](https://ej2.syncfusion.com/javascript/documentation/datetimepicker) | params: { value: new Date() }
+| Edit Type            | Component                                                                            | Example                           |
+| -------------------- | ------------------------------------------------------------------------------------ | --------------------------------- |
+| `numericedit`        | [NumericTextBox](https://ej2.syncfusion.com/javascript/documentation/numerictextbox) | params: { decimals: 2, value: 5 } |
+| `dropdownedit`       | [DropDownList](https://ej2.syncfusion.com/javascript/documentation/drop-down-list)   | params: { value: 'Germany' }      |
+| `booleanedit`        | [Checkbox](https://ej2.syncfusion.com/javascript/documentation/check-box)            | params: { checked: true}          |
+| `datepickeredit`     | [DatePicker](https://ej2.syncfusion.com/javascript/documentation/datepicker)         | params: { format:'dd.MM.yyyy' }   |
+| `datetimepickeredit` | [DateTimePicker](https://ej2.syncfusion.com/javascript/documentation/datetimepicker) | params: { value: new Date() }     |
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/managingTasks-cs2/index.ts %}
 {% endhighlight %}
@@ -112,7 +112,7 @@ The cell edit template is used to create a custom component for a particular col
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/managingTasks-cs3/index.ts %}
 {% endhighlight %}
@@ -145,7 +145,7 @@ In the following demo, editing is disabled for the `TaskName` column.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/managingTasks-cs4/index.ts %}
 {% endhighlight %}
@@ -176,7 +176,7 @@ In Gantt, all create, update, delete operations can be disabled by set `readOnly
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/editing-cs4/index.ts %}
 {% endhighlight %}
@@ -211,7 +211,7 @@ You can set default values when new task dialog opens using [actionBegin](../../
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/rows-cs2/index.ts %}
 {% endhighlight %}
@@ -250,7 +250,7 @@ In the below sample, `General` tab is customized using the `fields` property. Th
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/rows-cs14/index.ts %}
 {% endhighlight %}
@@ -351,11 +351,11 @@ The Gantt control editing actions can be achieved using the double tap and tap a
 
 The following table describes different types of editing modes available in Gantt.
 
-Action |Description
------|-----
-[Cell editing](managing-tasks#cell-editing) | To perform `double tap` on a specific cell, initiate the cell to be in edit state.
-[Dialog editing](managing-tasks#dialog-editing) | To perform `double tap` on a specific row, initiate the edit dialog to be opened.
-[Taskbar editing](managing-tasks#taskbar-editing) | Taskbar editing action is initiated using the `tap` action on the taskbar. <br> **Parent taskbar** : Once you tap on the parent taskbar, it will be changed to editing state. Perform only dragging action on parent taskbar editing. <br> 
+| Action                                            | Description                                                                                                                                                                                                                                |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Cell editing](managing-tasks#cell-editing)       | To perform `double tap` on a specific cell, initiate the cell to be in edit state.                                                                                                                                                         |
+| [Dialog editing](managing-tasks#dialog-editing)   | To perform `double tap` on a specific row, initiate the edit dialog to be opened.                                                                                                                                                          |
+| [Taskbar editing](managing-tasks#taskbar-editing) | Taskbar editing action is initiated using the `tap` action on the taskbar. <br> **Parent taskbar** : Once you tap on the parent taskbar, it will be changed to editing state. Perform only dragging action on parent taskbar editing. <br> |
 ![Alt text](../images/editing-parent.PNG) <br> **Child taskbar** : Once you tap the child taskbar, it will be changed to editing state. <br>
 ![Alt text](../images/editing-state.PNG) <br> **Dragging taskbar** : To drag a taskbar to the left or right in editing state. <br> <br> **Resizing taskbar** : To resize a taskbar, drag the left/right resize icon. <br> <br> **Progress resizing** : To change the progress, drag the progress resize icon to the left or right direction.
 
@@ -367,16 +367,16 @@ The following table explains the taskbar state in dependency edit mode.
 
 ![Taskbar states](../images/taskbar-states.png)
 
-Taskbar state |Description
------|-----
-`Parent taskbar` | You cannot create dependency relationship to parent tasks. <br> ![Parent taskbar](../images/parent-taskbar.PNG)
-`Taskbar without dependency` |  If you tap a valid child taskbar, it will create `FS` type dependency line between tasks, otherwise exits from task dependency edit mode. <br> ![Valid taskbar](../images/valid-taskbar.PNG)
-`Taskbar with dependency` | If you tap the second taskbar, which has already been directly connected, it will ask to remove it. <br> ![Invalid taskbar](../images/invalid-taskbar.PNG)
-`Removing dependency` | Once you tap the taskbar with direct dependency, then confirmation dialog will be shown for removing dependency. <br> ![Confirm dialog](../images/confirm-dialog.PNG)
+| Taskbar state                | Description                                                                                                                                                                                  |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Parent taskbar`             | You cannot create dependency relationship to parent tasks. <br> ![Parent taskbar](../images/parent-taskbar.PNG)                                                                              |
+| `Taskbar without dependency` | If you tap a valid child taskbar, it will create `FS` type dependency line between tasks, otherwise exits from task dependency edit mode. <br> ![Valid taskbar](../images/valid-taskbar.PNG) |
+| `Taskbar with dependency`    | If you tap the second taskbar, which has already been directly connected, it will ask to remove it. <br> ![Invalid taskbar](../images/invalid-taskbar.PNG)                                   |
+| `Removing dependency`        | Once you tap the taskbar with direct dependency, then confirmation dialog will be shown for removing dependency. <br> ![Confirm dialog](../images/confirm-dialog.PNG)                        |
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/touch-cs1/index.ts %}
 {% endhighlight %}
@@ -409,7 +409,7 @@ The taskbar editing tooltip can be customized using the [tooltipSettings.editing
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/editingTooltip-cs1/index.ts %}
 {% endhighlight %}

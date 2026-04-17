@@ -174,7 +174,56 @@ In Hour mode, the top tier shows hours and the bottom tier minutes, perfect for 
 {% previewsample "page.domainurl/code-snippet/gantt/timeline-cs5" %}
 {% endif %}
 
+<<<<<<< HEAD
 ### Minutes timeline mode
+=======
+## Timeline view dates
+
+The Gantt Chart control supports rendering a fixed timeline range using the [viewStartDate](../../api/gantt/timelineSettings#viewStartDate) and [viewEndDate](../../api/gantt/timelineSettings#viewEndDate) properties. These properties allow the visible portion of the timeline to be explicitly defined and locked within the Gantt chart UI, independent of the project's overall scheduling boundaries defined by [projectStartDate](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#projectstartdate) and [projectEndDate](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#projectenddate). The `projectStartDate` and `projectEndDate` values represent the full scheduling window for the project and are used for baseline processing, critical-path calculations, and project-level reporting. By default, both `viewStartDate` and `viewEndDate` are set to **auto**. The following example demonstrates how to configure a custom timeline view range.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/timeline-cs12/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/timeline-cs12/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/timeline-cs12" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/timeline-cs12/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/timeline-cs12/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/timeline-cs12" %}
+{% endif %}
+	
+**Key behaviors**
+
+When `viewStartDate` and `viewEndDate` are set to concrete Date values, the timeline rendering is restricted to the inclusive range [viewStartDate, viewEndDate].
+
+* When `viewStartDate` is set to **auto**:
+  * If `projectStartDate` is defined, the timeline begins at `projectStartDate`.
+  * If `projectStartDate` is not defined, the earliest task start date is used as the beginning of the visible range.
+
+* When `viewEndDate` is set to **auto**: 
+  * If `projectEndDate` is defined, the timeline ends at `projectEndDate`.
+  * If `projectEndDate` is not defined, the maximum task end date is used. If this end date leaves visible white-space in the timeline area, the end date is automatically extended to fill the chart width.
+
+> Note: The `ZoomToFit` feature uses `projectStartDate` and `projectEndDate` to fit the entire project within the available timeline viewport.
+
+## Week start day customization
+>>>>>>> a475736541c1931072a7aa7a11369f14a9f147a4
 
 In Minutes timeline mode, the tier displays minute-level intervals, ideal for tracking short-duration tasks with high precision.
 

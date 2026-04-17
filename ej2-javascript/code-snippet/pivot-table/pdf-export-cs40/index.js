@@ -12,11 +12,13 @@ var pivotTableObj = new ej.pivotview.PivotView({
     allowPdfExport: true,
     enableVirtualization: true,
     height: 320,
-    onPdfCellRender: function (args) {
-        if (args.pivotCell && args.pivotCell.valueSort && args.pivotCell.valueSort.levelName === 'France.Mountain Bikes') {
-            args.cell.height = 30
+    gridSettings: {
+        pdfQueryCellInfo: function (args) {
+            if (args.data && args.data.rowHeaders === 'France.Mountain Bikes' && args.cell && args.cell.gridRow) {
+                args.cell.gridRow.height = 100;
+            }
         }
-    },
+    }
 });
 pivotTableObj.appendTo('#PivotTable');
 
@@ -24,6 +26,6 @@ var exportBtn = new ej.buttons.Button({ isPrimary: true });
 exportBtn.appendTo('#pdf');
 
 document.getElementById('pdf').onclick = function () {
-    pivotTableObj.pdfExport({}, false, null, false, true);
+    pivotTableObj.pdfExport();
 };
 

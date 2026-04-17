@@ -132,7 +132,11 @@ The label filtering dialog can be enabled by setting the [`allowLabelFilter`](ht
 
 ### Filtering string data type through code
 
+<<<<<<< HEAD
 This type of filtering is exclusively applicable for fields with members in string data type. The filtering can be configured using the [`filterSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter) through code-behind. The properties required for label filter are:
+=======
+This type of filtering is exclusively applicable for fields with members in string data type. The filtering can be configured using the [`filterSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter)through code-behind. The properties required for label filter are:
+>>>>>>> a475736541c1931072a7aa7a11369f14a9f147a4
 
 * [`name`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter#name): Sets the field name.
 * [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter#type): Sets the filter type as **Label** to the field.

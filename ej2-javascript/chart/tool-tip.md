@@ -247,10 +247,14 @@ The split tooltip displays a separate tooltip for each series at the same data p
 
 Enable this feature by setting the [`split`](../api/chart/tooltipSettingsModel#split) property to **true**:
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> a475736541c1931072a7aa7a11369f14a9f147a4
 ```js
 tooltip: { 
-	enable: true, 
-	split: true 
+    enable: true, 
+    split: true 
 }
 ```
 

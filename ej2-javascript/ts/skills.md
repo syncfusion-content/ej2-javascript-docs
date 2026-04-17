@@ -89,6 +89,10 @@ The terminal will display a list of available skills. Use the arrow keys to navi
 {% endtabs %}
 
 Next, select which AI agent you're using and where to store the skills. In Syncfusion Code Studio, the `.agents/skills` directory is used as a skills storage location and you can refer this [link](https://github.com/vercel-labs/skills?tab=readme-ov-file#supported-agents) for more details on supported agents and skill paths.
+<<<<<<< HEAD
+=======
+
+>>>>>>> a475736541c1931072a7aa7a11369f14a9f147a4
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
 

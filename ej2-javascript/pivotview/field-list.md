@@ -133,7 +133,11 @@ In-order to re-arrange, drag any field from the field list and drop it into the 
 
 Using the filter icon besides each field in row, column and filter axes, members can be either included or excluded at runtime. To know more about member filtering, [`refer`](./filtering) here.
 
+<<<<<<< HEAD
 ![oFilter icon besides each fieldt](images/fieldlist_filtericon.webp)
+=======
+![Filter icon besides each field](images/fieldlist_filtericon.webp)
+>>>>>>> a475736541c1931072a7aa7a11369f14a9f147a4
 <br/>
 ![Filter dialog to either include or exclude members](images/fieldlist_editor.webp)
 <br/>
@@ -284,7 +288,11 @@ The [`EnginePopulated`](https://ej2.syncfusion.com/javascript/documentation/api/
 
 * Likewise, [`EnginePopulated`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#enginepopulated) event is triggered in pivot table whenever the report gets modified. The updated report is passed to the field list via [`Update`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/index-default#update) method written within this event to refresh the same.
 
+<<<<<<< HEAD
 The event [`EnginePopulated`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#enginepopulated) is triggered after engine is populated. It has following parameters - `dataSourceSettings`, `pivotFieldList` and `pivotValues`.
+=======
+The event [`EnginePopulated`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/index-default#enginepopulated) is triggered after engine is populated. It has following parameters - `dataSourceSettings`, `pivotFieldList` and `pivotValues`.
+>>>>>>> a475736541c1931072a7aa7a11369f14a9f147a4
 
 >Note: This event is not required for Popup field list since it is a in built one.
 

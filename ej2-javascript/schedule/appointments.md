@@ -182,7 +182,7 @@ The following example demonstrates how to create a recurring event in the Schedu
 
 Specific dates can be excluded from a recurrence series by adding them to the [`recurrenceException`](../api/schedule/field#recurrenceexception) field. Exception dates must be provided in ISO date-time format without hyphens (-) separating date elements.
 
-> For example, February 22, 2018, should be represented as "20180222". The time component in UTC format requires a "Z" suffix without spaces. For instance, "07:30:00 UTC" becomes "073000Z".
+> For example, February 22, 2026, should be represented as "20260222". The time component in UTC format requires a "Z" suffix without spaces. For instance, "07:30:00 UTC" becomes "073000Z".
 
 {% if page.publishingplatform == "typescript" %}
 

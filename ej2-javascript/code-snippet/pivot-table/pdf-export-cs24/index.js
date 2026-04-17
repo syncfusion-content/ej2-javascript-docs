@@ -8,7 +8,7 @@ var pivotTableObj = new ej.pivotview.PivotView({
         formatSettings: [{ name: 'Amount', format: 'C0' }],
         filters: []
     },
-     height: 320,
+    height: 320,
     allowPdfExport: true
 });
 pivotTableObj.appendTo('#PivotTable');

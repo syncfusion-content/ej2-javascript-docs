@@ -91,7 +91,11 @@ Aggregation types can be changed easily through UI at runtime. The value fields 
 
 ## Hiding aggregation type from button text
 
+<<<<<<< HEAD
 By default, in value axis each field would be displayed by its name and aggregation type together. To hide aggregation type and display field name alone, set the property [`showAggregationOnValueField`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings#showaggregationonvaluefield)  in [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings) to **false**.
+=======
+By default, in value axis each field would be displayed by its name and aggregation type together. To hide aggregation type and display field name alone, set the property [`showAggregationOnValueField`](https://ej2.syncfusion.com/javascript/documentation/api/pivotfieldlist/index-default)  in [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings) to **false**.
+>>>>>>> e37f115121f915d649ead0f12c6aac170faa1144
 
 {% if page.publishingplatform == "typescript" %}
 

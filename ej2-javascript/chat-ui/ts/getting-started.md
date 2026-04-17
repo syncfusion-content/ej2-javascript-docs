@@ -123,15 +123,26 @@ Then, import the Chat UI control in your `app.ts` file, and initialize it with t
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 
+<<<<<<< HEAD
 import { ChatUI, UserModel } from "@syncfusion/ej2-interactive-chat";
-
-// Initializes the Chat UI control
+=======
+import { ChatUI,UserModel } from "@syncfusion/ej2-interactive-chat";
+>>>>>>> e37f115121f915d649ead0f12c6aac170faa1144
 
 let currentUserModel: UserModel = {
     id: "user1",
     user: "Albert"
 };
 // Initializes the Chat UI control
+<<<<<<< HEAD
+
+let currentUserModel: UserModel = {
+    id: "user1",
+    user: "Albert"
+};
+// Initializes the Chat UI control
+=======
+>>>>>>> e37f115121f915d649ead0f12c6aac170faa1144
 let chatUI: ChatUI = new ChatUI({
     user: currentUserModel
 });

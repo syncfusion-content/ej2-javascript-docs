@@ -95,6 +95,7 @@ The diagram component is divided into individual feature-wise modules. In order 
 * `ConnectorEditing`: Inject this provider to edit the segments for connector.
 * `ComplexHierarchicalTree`: Inject this provider to complex hierarchical tree like structure.
 * `DataBinding`: Inject this provider to populate nodes from given data source.
+* `DiagramCollaboration`: Inject this provider to enable real-time collaborative editing in diagrams.
 * `DiagramContextMenu`: Inject this provider to manipulate context menu.
 * `HierarchicalTree`: Inject this provider to use hierarchical tree like structure.
 * `LayoutAnimation`: Inject this provider animation to layouts.
@@ -111,9 +112,9 @@ These modules should be imported and injected into the Diagram component using `
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 
-import { Diagram, HierarchicalTree, MindMap, RadialTree, ComplexHierarchicalTree, DataBinding, Snapping, PrintAndExport, BpmnDiagrams, SymmetricLayout, ConnectorBridging, UndoRedo, LayoutAnimation, DiagramContextMenu, ConnectorEditing,Ej1Serialization } from '@syncfusion/ej2-diagrams';
+import { Diagram, HierarchicalTree, MindMap, RadialTree, ComplexHierarchicalTree, DataBinding, Snapping, PrintAndExport, BpmnDiagrams, SymmetricLayout, ConnectorBridging, UndoRedo, LayoutAnimation, DiagramCollaboration, DiagramContextMenu, ConnectorEditing,Ej1Serialization } from '@syncfusion/ej2-diagrams';
 
-Diagram.Inject(BpmnDiagrams, ConnectorBridging, ConnectorEditing, ComplexHierarchicalTree, DataBinding, DiagramContextMenu, HierarchicalTree, LayoutAnimation, MindMap, PrintAndExport, RadialTree, Snapping, SymmetricLayout, UndoRedo,Ej1Serialization);
+Diagram.Inject(BpmnDiagrams, ConnectorBridging, ConnectorEditing, ComplexHierarchicalTree, DataBinding, DiagramCollaboration, DiagramContextMenu, HierarchicalTree, LayoutAnimation, MindMap, PrintAndExport, RadialTree, Snapping, SymmetricLayout, UndoRedo,Ej1Serialization);
 
 {% endhighlight %}
 {% endtabs %}
@@ -224,9 +225,9 @@ Create and add a `node` (JSON data) with specific position, size.
 ### Apply shape and style to node
 
 Syncfusion® diagram control provides support to render many built-in shapes in diagram.
-Please refer to [`Shapes`](../api/diagram/shapes/) to know about built-in Shapes.
+Please refer to [`Shapes`](../api/diagram/shapes) to know about built-in Shapes.
 
-* The appearance of a node can be customized by changing its [`fill`](../api/diagram/shapeStyleModel/#fill) color, [`strokeColor`](../api/diagram/shapeStyleModel/#strokecolor), [`strokeWidth`](../api/diagram/shapeStyleModel/#strokewidth), [`borderColor`](../api/diagram/node/#bordercolor), [`borderWidth`](../api/diagram/node/#borderwidth), [`strokeDashArray`](../api/diagram/shapeStyleModel/#strokedasharray),  [`opacity`](../api/diagram/shapeStyleModel/#opacity), and [`shadow`](../api/diagram/shapeStyleModel/#shadow).
+* The appearance of a node can be customized by changing its [`fill`](../api/diagram/shapeStyleModel#fill) color, [`strokeColor`](../api/diagram/shapeStyleModel#strokecolor), [`strokeWidth`](../api/diagram/shapeStyleModel#strokewidth), [`borderColor`](../api/diagram/node#bordercolor), [`borderWidth`](../api/diagram/node#borderwidth), [`strokeDashArray`](../api/diagram/shapeStyleModel#strokedasharray),  [`opacity`](../api/diagram/shapeStyleModel#opacity), and [`shadow`](../api/diagram/shapeStyleModel#shadow).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -290,7 +291,7 @@ You can add multiple nodes with different shapes into diagram.
 
 ### Connect flow chart nodes
 
-Connect these nodes by adding a connector using the [`connectors`](../api/diagram/connectorModel/) property of diagram and refer the source and target end by using the [`sourceID`](../api/diagram/connectorModel/#sourceid) and [`targetID`](../api/diagram/connectorModel/#targetid) properties.
+Connect these nodes by adding a connector using the [`connectors`](../api/diagram/connectorModel) property of diagram and refer the source and target end by using the [`sourceID`](../api/diagram/connectorModel#sourceid) and [`targetID`](../api/diagram/connectorModel#targetid) properties.
 The required nodes and connectors can be added to form a complete flow diagram.
 
 
@@ -322,7 +323,7 @@ The required nodes and connectors can be added to form a complete flow diagram.
 {% endif %}
 
 
-Default values for all [`nodes`](../api/diagram/nodemodel/) and [`connectors`](../api/diagram/connectorModel/) can be set using the [`getNodeDefaults`](../api/diagram/#getnodedefaults) and [`getConnectorDefaults`](../api/diagram/#getconnectordefaults) properties, respectively. For example, if all nodes have the same width and height, such properties can be moved into `getNodeDefaults`.
+Default values for all [`nodes`](../api/diagram/nodemodel) and [`connectors`](../api/diagram/connectorModel) can be set using the [`getNodeDefaults`](../api/diagram/index-default#getnodedefaults) and [`getConnectorDefaults`](../api/diagram/index-default#getconnectordefaults) properties, respectively. For example, if all nodes have the same width and height, such properties can be moved into `getNodeDefaults`.
 
 
 ## Automatic organization chart
@@ -377,7 +378,7 @@ let diagram: Diagram = new Diagram({
 
 ### Rendering layout with Datasource
 
-To create an organizational chart, the [`type`](../api/diagram/layout/) of layout should be set as an `OrganizationalChart`. The following code example shows how DataManager is used to generate Layout based on the DataSourceSettings of the Diagram.
+To create an organizational chart, the [`type`](../api/diagram/layout) of layout should be set as an `OrganizationalChart`. The following code example shows how DataManager is used to generate Layout based on the DataSourceSettings of the Diagram.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -408,7 +409,7 @@ To create an organizational chart, the [`type`](../api/diagram/layout/) of layou
 
 ### Customize employee appearance
 
-The following code examples indicate how to define the default appearance of nodes and connectors. The [`setNodeTemplate`](../api/diagram/#setnodetemplate) is used to update each node based on employee data.
+The following code examples indicate how to define the default appearance of nodes and connectors. The [`setNodeTemplate`](../api/diagram/index-default#setnodetemplate) is used to update each node based on employee data.
 
 {% if page.publishingplatform == "typescript" %}
 

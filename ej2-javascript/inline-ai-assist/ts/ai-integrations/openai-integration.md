@@ -11,7 +11,11 @@ domainurl: ##DomainURL##
 
 # Integrate Azure OpenAI With TypeScript Inline AI Assist control 
 
+<<<<<<< HEAD
 The Inline AI Assist control integrates with [Azure OpenAI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai) to enable advanced conversational AI features in your applications. The control acts as a user interface, where user prompts are sent to the Azure OpenAI service via API calls, providing natural language understanding and context-aware responses
+=======
+The Inline AI Assist control integrates with [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-foundry/models/openai) to enable advanced conversational AI features in your applications. The control acts as a user interface, where user prompts are sent to the Azure OpenAI service via API calls, providing natural language understanding and context-aware responses
+>>>>>>> e37f115121f915d649ead0f12c6aac170faa1144
 
 ## Prerequisites
 

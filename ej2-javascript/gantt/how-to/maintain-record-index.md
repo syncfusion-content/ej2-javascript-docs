@@ -1,20 +1,19 @@
 ---
 layout: post
-title: Maintain record index in ##Platform_Name## Gantt control | Syncfusion
-description: Learn here all about Maintain record index in Syncfusion ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more.
+title: Maintain Record Index Position in ##Platform_Name## Gantt Chart Control | Syncfusion
+description: Learn how to maintain record index positions in the Syncfusion ##Platform_Name## Gantt Chart control using row drag-and-drop for efficient task reordering.
 platform: ej2-javascript
-control: Maintain record index 
+control: Copy paste records 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Maintain record index in ##Platform_Name## Gantt control
+# Maintain Record Index Position in ##Platform_Name## Gantt Chart Control
 
-Row dropped record's index position can be maintained in the Gantt chart by changing the database table index position using the `rowDrop` event. In this event, the `fromIndex` and `dropIndex` values can be passed to the server side using Ajax request. On the server side, the `insert` and `insertAtTop` methods are used to update the row index position. The following code snippets explain the solution.
+The ##Platform_Name## Gantt Chart control enables seamless task reordering by maintaining record index positions through the [rowDrop](../../api/gantt#rowdrop) event, which updates the task order in the data source when a row is dragged and dropped. For example, dragging a task from row 5 to row 2 updates the data source to reflect the new position, preserving project structure. Inject `RowDD` and enable `allowRowDragAndDrop` to activate this feature. Use the `rowDrop` event to capture `fromIndex` (source row), `dropIndex` (target row), and `dropPosition` and send them to the server via an Ajax request using `DataManager` with `UrlAdaptor`. On the server side, update the data source (e.g., database) with custom methods like `Insert` or `InsertAtTop`, ensuring hierarchical records with parent-child relationships are correctly handled by updating `parentID` in the task data. Configure valid [taskFields](../../api/gantt#taskfields) mappings (e.g., id, child) to support hierarchical tasks. This feature integrates with task dependencies, critical path, and virtual scrolling, ensuring reordered tasks align with the project timeline for efficient schedule management.
 
 ```ts
-
 import { Gantt, Selection, Edit, RowDD, IGanttData } from '../src/index';
 import { Ajax } from '@syncfusion/ej2-base';
 Gantt.Inject(Selection, Edit, RowDD );
@@ -59,11 +58,9 @@ let gantt: Gantt = new Gantt({
 });
 
 gantt.appendTo('#ganttContainer');
-
 ```
 
 ```ts
-
 public IActionResult RowDropMethod([FromBody]DragDropData value)
         {
             var data = new CRUDModel();
@@ -126,5 +123,9 @@ public IActionResult RowDropMethod([FromBody]DragDropData value)
             copyRecord = false;
             return Json(new { updatedRecords = value.record });
         }
-
 ```
+
+## See also
+- [How to configure row drag and drop?](../../gantt/rows/drag-and-drop)
+- [How to manage task dependencies?](../../gantt/taskdependency)
+- [How to configure critical path?](../../gantt/critical-path)

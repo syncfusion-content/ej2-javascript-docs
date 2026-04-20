@@ -26,7 +26,7 @@ The following code example demonstrates how to implement data markers in the Gan
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/data-markers-cs1/index.ts %}
 {% endhighlight %}

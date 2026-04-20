@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/tslint/config */
 import {
     AccumulationChart, AccumulationDataLabel, AccumulationLegend,
     AccumulationTooltip, PieSeries, IAccLegendRenderEventArgs
@@ -6,7 +7,7 @@ import {
 AccumulationChart.Inject(AccumulationDataLabel, AccumulationLegend, AccumulationTooltip, PieSeries);
 
 
-const StatisticsDetails= [
+const StatisticsDetails:any = [
     { Browser: 'Chrome', Users: 37, Color: '#a16ee5' },
     { Browser: 'UC Browser', Users: 17, Color: '#f7ce69' },
     { Browser: 'iPhone', Users: 19, Color: '#55a5c2' },
@@ -50,10 +51,8 @@ const chart = new AccumulationChart({
     }],
 
     legendRender: (args: IAccLegendRenderEventArgs) => {
-        const points = (chart.series[0]).points;
-        const pt = points.find(
-            (p: { x: string | number | Date; y: number }) => p.x === args.text
-        );
+        const points = (chart.series[0] as any).points;
+        const pt = points.find((p: any) => p.x === args.text);
 
         args.template = args.template
 

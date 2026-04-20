@@ -17,12 +17,12 @@ In Gantt, the resources are represented by staff, equipment and materials etc. I
 
 The resource collection contains details about resources that are used in the project. Resources are JSON object that contains id, name, unit and group of the resources and this collection is mapped to the Gantt control using the [resources](../api/gantt#resources) property. These resource fields are mapped to the Gantt control using the [resourceFields](../api/gantt#resourceFields) property.
 
-Resource fields | Description
------|-----
-[id](../api/gantt/resourceFields#id) | This field is used to assign resources to the tasks.
-[name](../api/gantt/resourceFields#name) | This field is used to map the resource names. These names are displayed as one of Gantt columns and also can display as labels using the [labelSettings](../api/gantt/labelSettings) property.
-[unit](../api/gantt/resourceFields#unit) | It indicates the amount of work that can be done by a resource for the task in a day.
-[group](../api/gantt/resourceFields#group) | This field is used to group the resources and the tasks assigned to that particular resource into category.
+| Resource fields                            | Description                                                                                                                                                                                    |
+| ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [id](../api/gantt/resourceFields#id)       | This field is used to assign resources to the tasks.                                                                                                                                           |
+| [name](../api/gantt/resourceFields#name)   | This field is used to map the resource names. These names are displayed as one of Gantt columns and also can display as labels using the [labelSettings](../api/gantt/labelSettings) property. |
+| [unit](../api/gantt/resourceFields#unit)   | It indicates the amount of work that can be done by a resource for the task in a day.                                                                                                          |
+| [group](../api/gantt/resourceFields#group) | This field is used to group the resources and the tasks assigned to that particular resource into category.                                                                                    |
 
 The following code snippets shows resource collection and how it assigned to Gantt control.
 
@@ -83,7 +83,7 @@ The following code snippet shows how to assign the resource for each task and ma
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/resources-cs1/index.ts %}
 {% endhighlight %}

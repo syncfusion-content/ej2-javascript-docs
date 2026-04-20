@@ -29,7 +29,7 @@ The task can be splitted dynamically, either by using the context menu or dialog
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/split-task-cs5/index.ts %}
 {% endhighlight %}

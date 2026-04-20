@@ -34,7 +34,7 @@ The following code example shows how to bind the hierarchical local data into th
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/databinding-cs1/index.ts %}
 {% endhighlight %}
@@ -68,7 +68,7 @@ The Gantt control can be bound with self-referential data by mapping the data so
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/databinding-cs2/index.ts %}
 {% endhighlight %}
@@ -99,7 +99,7 @@ To bind remote data to the Gantt component, assign service data as an instance o
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/databinding-cs3/index.ts %}
 {% endhighlight %}
@@ -644,7 +644,7 @@ The argument passed to the `actionFailure` event contains the error details retu
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/actionfailure-cs1/index.ts %}
 {% endhighlight %}
@@ -675,7 +675,7 @@ You can use Gantt [dataSource](../api/gantt#datasource) property to bind the dat
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/bindajax-cs1/index.ts %}
 {% endhighlight %}
@@ -726,7 +726,7 @@ To split a task at load time in hierarchical way, we need to define the segment 
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/split-task-cs1/index.ts %}
 {% endhighlight %}
@@ -771,7 +771,7 @@ We can also define segment details as a flat data and this collection can be map
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/split-task-cs2/index.ts %}
 {% endhighlight %}

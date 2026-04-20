@@ -1,33 +1,46 @@
-ej.gantt.Gantt.Inject(ej.gantt.Edit);
-
-var ganttChart = new ej.gantt.Gantt({
-        dataSource: GanttData,
-		height:'450px',
-		taskFields: {
-            id: 'TaskID',
-            name: 'TaskName',
-            startDate: 'StartDate',
-			duration: 'Duration',
-            progress: 'Progress',
-			parentID: 'ParentID'
-        },
-		editSettings: {
-		   allowEditing:true,
-           allowAdding: true
-         }
+var gantt = new ej.gantt.Gantt({
+    dataSource: editingData,
+    height: '430px',
+    taskFields: {
+        id: 'TaskID',
+        name: 'TaskName',
+        startDate: 'StartDate',
+        endDate: 'EndDate',
+        duration: 'Duration',
+        progress: 'Progress',
+        dependency: 'Predecessor',
+        parentID: 'ParentID',
+        notes: 'info',
+        resourceInfo: 'resources'
+    },
+    editDialogFields: [
+        { type: 'General', headerText: 'General' },
+        { type: 'Dependency' },
+        { type: 'Resources' },
+        { type: 'Notes' }
+    ],
+    resourceNameMapping: 'resourceName',
+    resourceIDMapping: 'resourceId',
+    resources: editingResources,
+    editSettings: {
+        allowAdding: true,
+        allowEditing: true,
+        allowTaskbarEditing: true
+    }
 });
-ganttChart.appendTo('#Gantt');
 
-var editBtn= new ej.buttons.Button();
+gantt.appendTo('#Gantt');
+
+var editBtn = new ej.buttons.Button();
 editBtn.appendTo('#editDialog');
 
-var addBtn= new ej.buttons.Button();
-addBtn.appendTo('#addDialog');
-
-document.getElementById('editDialog').addEventListener('click', () => {
-    ganttChart.editModule.dialogModule.openEditDialog();
+document.getElementById('editDialog').addEventListener('click', function () {
+    gantt.editModule.dialogModule.openEditDialog(gantt.selectedRowIndex + 1);
 });
 
-document.getElementById('addDialog').addEventListener('click', () => {
-    ganttChart.editModule.dialogModule.openAddDialog();
+var addBtn = new ej.buttons.Button();
+addBtn.appendTo('#addDialog');
+
+document.getElementById('addDialog').addEventListener('click', function () {
+    gantt.editModule.dialogModule.openAddDialog();
 });

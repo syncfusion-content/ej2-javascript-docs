@@ -1,131 +1,322 @@
 ---
 layout: post
-title: Global local in ##Platform_Name## Gantt control | Syncfusion
-description: Learn here all about Global local in Syncfusion ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more.
+title: Globalization and Localization in ##Platform_Name## Gantt Chart Component | Syncfusion
+description: Learn here all about globalization and localization in Syncfusion ##Platform_Name## Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Global local 
+control: Globalization and Localization 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Global local in ##Platform_Name## Gantt control
+# Globalization and Localization in ##Platform_Name## Gantt Chart Control
 
-## Localization
+The ##Platform_Name## Gantt Chart control supports globalization to adapt project management interfaces to diverse languages, cultures, and regional preferences without code changes. Globalization encompasses localization for translating text elements like column headers and dialog titles, internationalization for formatting dates, numbers, and times in timelines and task fields, and Right-to-Left (RTL) support for languages like Arabic and Hebrew. These features ensure that task names, toolbar actions, and timeline displays align with users’ linguistic and cultural expectations, enhancing accessibility and usability in project management workflows for global users.
 
-The [Localization](../common/localization) library allows you to localize default text content of the Gantt. The Gantt component has static text on some features (like toolbar area text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the
-[locale](../api/gantt#locale) value and translation object.
+## Key globalization features
 
-The following list of properties and its values are used in the Gantt.
+Globalization encompasses several critical components:
 
-Locale key words |Text
------|-----
-emptyRecord |No records to display
-id |ID
-name |Name
-startDate |Start Date
-endDate |End Date
-duration |Duration
-progress |Progress
-dependency |Dependency
-notes |Notes
-baselineStartDate| Baseline Start Date
-baselineEndDate| Baseline End Date
-type| Type
-offset | Offset
-resourceName | Resources
-resourceID | Resource ID
-day | day
-hour | hour
-minute | minute
-days | days
-hours | hours
-minutes | minutes
-generalTab | General
-customTab | Custom Columns
-writeNotes | Write Notes
-addDialogTitle | New Task
-editDialogTitle | Task Information
-add | Add
-edit | Edit
-update | Update
-delete | Delete
-cancel | Cancel
-search | Search
-task | task
-tasks | tasks
-zoomIn | Zoom in
-zoomOut | Zoom out
-zoomToFit | Zoom to fit
-expandAll | Expand all
-collapseAll | Collapse all
-nextTimeSpan | Next timespan
-prevTimeSpan | Previous timespan
-saveButton | Save
-taskBeforePredecessor_FS | You moved "{0}" to start before "{1}" finishes and the two tasks are linked. As the result, the links cannot be honored. Select one action below to perform
-taskAfterPredecessor_FS | You moved "{0}" away from "{1}" and the two tasks are linked. As the result, the links cannot be honored. Select one action below to perform
-taskBeforePredecessor_SS | You moved "{0}" to start before "{1}" starts and the two tasks are linked. As the result, the links cannot be honored. Select one action below to perform
-taskAfterPredecessor_SS | You moved "{0}" to start after "{1}" starts and the two tasks are linked. As the result, the links cannot be honored. Select one action below to perform
-taskBeforePredecessor_FF | You moved "{0}" to finish before "{1}" finishes and the two tasks are linked. As the result, the links cannot be honored. Select one action below to perform
-taskAfterPredecessor_FF | You moved "{0}" to finish after "{1}" finishes and the two tasks are linked. As the result, the links cannot be honored. Select one action below to perform
-taskBeforePredecessor_SF | You moved "{0}" away from "{1}" to starts and the two tasks are linked. As the result, the links cannot be honored. Select one action below to perform
-taskAfterPredecessor_SF | You moved "{0}" to finish after "{1}" starts and the two tasks are linked. As the result, the links cannot be honored. Select one action below to perform
-okText | Ok
-confirmDelete | Are you sure you want to Delete Record?
-from | From
-to | To
-taskLink | Task Link
-lag | Lag
-start | Start
-finish | Finish
-enterValue | Enter the value
-taskInformation | Task Information
-deleteTask | Delete Task
-deleteDependency | Delete Dependency
-convert | Convert
-save | Save
-above | Above
-below | Below
-child | Child
-milestone | Milestone
-toTask | To Task
-toMilestone | To Milestone
-eventMarkers | Event markers
-leftTaskLabel | Left task label
-rightTaskLabel | Right task label
-timelineCell | Timeline cell
-confirmPredecessorDelete | Are you sure you want to remove dependency link?
-taskMode | Task Mode
-changeScheduleMode | Change Schedule Mode
-subTasksStartDate | SubTasks Start Date
-subTasksEndDate | SubTasks End Date
-scheduleStartDate | Schedule Start Date
-scheduleEndDate | Schedule End Date
-auto | Auto
-manual | Manual
-zoomToFit | Zoom to fit
-excelExport | Excel export
-csvExport | CSV export
-pdfExport | Pdf export
-unit | Unit
-work | Work
-taskType | Task Type
-unassignedTask | Unassigned Task
-group | Group
-FF | FF
-FS | FS
-SF | SF
-SS | SS
+- **Localization (L10N)**: Translating text content and adapting UI elements for specific cultures and languages
+- **Internationalization (I18N)**: Formatting dates, numbers, currencies, and other culture-specific data according to regional conventions
+- **Right-to-Left (RTL) Support**: Adapting layout and text direction for RTL languages like Arabic, Hebrew, and Urdu
 
-### Loading translations
+Implement globalization when targeting multilingual users, complying with regional standards, or expanding to international markets.
 
-To load translation object in an application use [load](https://ej2.syncfusion.com/documentation/api/base/l10n#load) function of [L10n](https://ej2.syncfusion.com/documentation/api/base/l10n) class.
+## Localization implementation
 
-The below example demonstrates the Gantt in **Deutsch** culture.
+The [Localization](../common/localization) library allows you to localize default text content of the Gantt Chart control. Static text elements such as column headers, dialog titles, tooltips, toolbar items, and system messages can be translated to different languages by defining the [locale](../../api/gantt#locale) value and providing translation objects.
+
+1. **Import required libraries**:
+    {% if page.publishingplatform == "typescript" %}
+    ```typescript
+    import { L10n, setCulture } from '@syncfusion/ej2-base';
+    ```
+    {% elsif page.publishingplatform == "javascript" %}
+
+        ```js
+        ej.base.L10n.load({
+            'de-DE': {
+                'gantt': {
+                    "id": "Kennung",
+                    "name": "Name",
+                    "startDate": "Anfangsdatum",
+                    "duration": "Dauer",
+                    "progress": "Fortschritt"
+                }
+            }
+        });
+        ```
+    {% endif %}
+
+1. **Define translation objects** for your target languages with complete locale coverage
+
+2. **Load translations** using the `L10n.load()` method before component initialization
+
+3. **Set the locale property** on the Gantt Chart control to match your target culture
+
+4. **Configure culture settings** using `setCulture()` for number and date formatting
+
+### Localization keys
+
+The following tables organize all available locale keys by functional category:
+
+**Core task properties:**
+
+| Locale Key   | Default Text |
+| ------------ | ------------ |
+| id           | ID           |
+| name         | Name         |
+| startDate    | Start Date   |
+| endDate      | End Date     |
+| duration     | Duration     |
+| progress     | Progress     |
+| dependency   | Dependency   |
+| notes        | Notes        |
+| resourceName | Resources    |
+| resourceID   | Resource ID  |
+
+**Data rendering**
+
+| Locale Key           | Default Text                                                                                                       |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| EmptyRecord          | No records to display                                                                                              |
+| EmptyDataSourceError | DataSource must not be empty at initial load since columns are generated from dataSource in auto-generated columns |
+
+**Columns**
+
+| Locale Key    | Default Text     |
+| ------------- | ---------------- |
+| True          | true             |
+| False         | false            |
+| ColumnHeader  | column header    |
+| TemplateCell  | is template cell |
+| ClipBoard     | clipboard        |
+| CheckBoxLabel | checkbox         |
+
+**Filtering:**
+
+| Locale Key                  | Default Text                       |
+| --------------------------- | ---------------------------------- |
+| InvalidFilterMessage        | Invalid Filter Data                |
+| FilterbarTitle              | \s filter bar cell                 |
+| Matchs                      | No Matches Found                   |
+| FilterButton                | Filter                             |
+| ClearButton                 | Clear                              |
+| StartsWith                  | Starts With                        |
+| EndsWith                    | Ends With                          |
+| Contains                    | Contains                           |
+| Equal                       | Equal                              |
+| NotEqual                    | Not Equal                          |
+| LessThan                    | Less Than                          |
+| LessThanOrEqual             | Less Than Or Equal                 |
+| GreaterThan                 | Greater Than                       |
+| GreaterThanOrEqual          | Greater Than Or Equal              |
+| ChooseDate                  | Choose a Date                      |
+| SelectAll                   | Select All                         |
+| FilterTrue                  | True                               |
+| FilterFalse                 | False                              |
+| NoResult                    | No Matches Found                   |
+| ClearFilter                 | Clear Filter                       |
+| NumberFilter                | Number Filters                     |
+| TextFilter                  | Text Filters                       |
+| DateFilter                  | Date Filters                       |
+| DateTimeFilter              | DateTime Filters                   |
+| MatchCase                   | Match Case                         |
+| Between                     | Between                            |
+| CustomFilter                | Custom Filter                      |
+| CustomFilterPlaceHolder     | Enter the value                    |
+| CustomFilterDatePlaceHolder | Choose a date                      |
+| AND                         | AND                                |
+| OR                          | OR                                 |
+| NotStartsWith               | Does Not Start With                |
+| NotEndsWith                 | Does Not End With                  |
+| NotContains                 | Does Not Contain                   |
+| IsNull                      | Null                               |
+| NotNull                     | Not Null                           |
+| IsEmpty                     | Empty                              |
+| IsNotEmpty                  | Not Empty                          |
+| FilterDescription           | Press Alt Down to open filter Menu |
+
+**Sorting**
+
+| Locale Key      | Default Text        |
+| --------------- | ------------------- |
+| SortDescription | Press Enter to sort |
+
+**ColumnMenu:**
+
+| Locale Key            | Default Text                       |
+| --------------------- | ---------------------------------- |
+| FilterMenu            | Filter                             |
+| AutoFitAll            | Autofit all columns                |
+| AutoFit               | Autofit this column                |
+| ColumnMenuDialogARIA  | Column menu dialog                 |
+| ColumnMenuDescription | Press Alt Down to open Column Menu |
+
+**Baseline and planning:**
+
+| Locale Key        | Default Text        |
+| ----------------- | ------------------- |
+| baselineStartDate | Baseline Start Date |
+| baselineEndDate   | Baseline End Date   |
+| type              | Type                |
+| offset            | Offset              |
+| taskMode          | Task Mode           |
+| auto              | Auto                |
+| manual            | Manual              |
+
+**Time units and measurements:**
+
+| Locale Key | Default Text |
+| ---------- | ------------ |
+| day        | day          |
+| hour       | hour         |
+| minute     | minute       |
+| days       | days         |
+| hours      | hours        |
+| minutes    | minutes      |
+| unit       | Unit         |
+| work       | Work         |
+
+**Dialog and form elements:**
+
+| Locale Key      | Default Text     |
+| --------------- | ---------------- |
+| addDialogTitle  | New Task         |
+| editDialogTitle | Task Information |
+| taskInformation | Task Information |
+| generalTab      | General          |
+| customTab       | Custom Columns   |
+| writeNotes      | Write Notes      |
+
+**Action buttons and operations:**
+
+| Locale Key | Default Text |
+| ---------- | ------------ |
+| add        | Add          |
+| edit       | Edit         |
+| update     | Update       |
+| delete     | Delete       |
+| cancel     | Cancel       |
+| save       | Save         |
+| saveButton | Save         |
+| okText     | OK           |
+| search     | Search       |
+
+**Toolbar and navigation:**
+
+| Locale Key   | Default Text      |
+| ------------ | ----------------- |
+| zoomIn       | Zoom in           |
+| zoomOut      | Zoom out          |
+| zoomToFit    | Zoom to fit       |
+| expandAll    | Expand all        |
+| collapseAll  | Collapse all      |
+| nextTimeSpan | Next timespan     |
+| prevTimeSpan | Previous timespan |
+
+**Context menu operations:**
+
+| Locale Key       | Default Text         |
+| ---------------- | -------------------- |
+| deleteTask       | Delete Task          |
+| deleteDependency | Delete Dependency    |
+| convert          | Convert              |
+| above            | Above                |
+| below            | Below                |
+| child            | Child                |
+| milestone        | Milestone            |
+| toTask           | To Task              |
+| toMilestone      | To Milestone         |
+| autoFitAll       | Auto Fit all columns |
+| autoFit          | Auto Fit this column |
+| SortAscending    | Sort Ascending       |
+| SortDescending   | Sort Descending      |
+
+**Export and data operations:**
+
+| Locale Key  | Default Text |
+| ----------- | ------------ |
+| excelExport | Excel export |
+| csvExport   | CSV export   |
+| pdfExport   | PDF export   |
+
+**System messages and feedback:**
+
+| Locale Key               | Default Text                                     |
+| ------------------------ | ------------------------------------------------ |
+| emptyRecord              | No records to display                            |
+| confirmDelete            | Are you sure you want to Delete Record?          |
+| confirmPredecessorDelete | Are you sure you want to remove dependency link? |
+| enterValue               | Enter the value                                  |
+
+**Task relationships and dependencies:**
+
+| Locale Key | Default Text |
+| ---------- | ------------ |
+| taskLink   | Task Link    |
+| lag        | Lag          |
+| start      | Start        |
+| finish     | Finish       |
+| from       | From         |
+| to         | To           |
+| FF         | FF           |
+| FS         | FS           |
+| SF         | SF           |
+| SS         | SS           |
+
+**Specialized features:**
+
+| Locale Key     | Default Text     |
+| -------------- | ---------------- |
+| eventMarkers   | Event markers    |
+| leftTaskLabel  | Left task label  |
+| rightTaskLabel | Right task label |
+| timelineCell   | Timeline cell    |
+| taskType       | Task Type        |
+| unassignedTask | Unassigned Task  |
+| group          | Group            |
+
+**Task count and status:**
+
+| Locale Key | Default Text |
+| ---------- | ------------ |
+| task       | task         |
+| tasks      | tasks        |
+
+**Schedule mode and planning:**
+
+| Locale Key         | Default Text         |
+| ------------------ | -------------------- |
+| changeScheduleMode | Change Schedule Mode |
+| subTasksStartDate  | SubTasks Start Date  |
+| subTasksEndDate    | SubTasks End Date    |
+| scheduleStartDate  | Schedule Start Date  |
+| scheduleEndDate    | Schedule End Date    |
+
+**Advanced dependency relationship messages:**
+
+The Gantt Chart control includes specialized messages for dependency conflicts:
+
+| Locale Key               | Purpose                                                              |
+| ------------------------ | -------------------------------------------------------------------- |
+| taskBeforePredecessor_FS | Finish-to-Start conflict when task moves before predecessor finishes |
+| taskAfterPredecessor_FS  | Finish-to-Start conflict when task moves away from predecessor       |
+| taskBeforePredecessor_SS | Start-to-Start conflict when task starts before predecessor          |
+| taskAfterPredecessor_SS  | Start-to-Start conflict when task starts after predecessor           |
+| taskBeforePredecessor_FF | Finish-to-Finish conflict when task finishes before predecessor      |
+| taskAfterPredecessor_FF  | Finish-to-Finish conflict when task finishes after predecessor       |
+| taskBeforePredecessor_SF | Start-to-Finish conflict messages                                    |
+| taskAfterPredecessor_SF  | Start-to-Finish conflict messages                                    |
+
+### Loading translations for de culture
+
+The following example demonstrates comprehensive German (Deutsch) localization:
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/global-cs1/index.ts %}
 {% endhighlight %}
@@ -150,13 +341,22 @@ The below example demonstrates the Gantt in **Deutsch** culture.
 {% previewsample "page.domainurl/code-snippet/gantt/global-cs1" %}
 {% endif %}
 
-## Internationalization
+## Internationalization (I18N)
 
-The [Internationalization](../common/internationalization) library is used to globalize number, date, and time values in gantt component.
+The [Internationalization](../common/internationalization) library globalizes number, date, and time values in the Gantt Chart control. This ensures that dates, numbers, and currencies display according to the user's cultural preferences and regional conventions.
+
+Internationalization affects multiple aspects of the Gantt Chart control:
+
+- **Date formatting**: Timeline headers, task dates, date pickers, and calendar displays
+- **Number formatting**: Duration values, progress percentages, and numeric inputs
+- **Time formatting**: Time-based calculations, working hours, and time displays  
+- **Currency formatting**: Cost-related fields and budget calculations
+- **Calendar systems**: Support for different calendar systems (Gregorian, Islamic, etc.)
+- **Week numbering**: ISO week numbers, fiscal year calendars
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/global-cs2/index.ts %}
 {% endhighlight %}
@@ -181,16 +381,24 @@ The [Internationalization](../common/internationalization) library is used to gl
 {% previewsample "page.domainurl/code-snippet/gantt/global-cs2" %}
 {% endif %}
 
-> * In the above sample, `Timeline` is formatted by `NumberFormatOptions` and `DateFormatOptions`.
-> * By default, [locale](../api/gantt#locale) value is `en-US`. If you want to change `en-US` culture, then set the [locale](../api/gantt#locale).
+> **Note**: In the above sample, timeline headers and numeric values are formatted using `NumberFormatOptions` and `DateFormatOptions`. The [locale](../../api/gantt#locale) property defaults to **en-US**. Change this property to your desired locale for proper cultural formatting.
 
-## Right to left (RTL)
+## Right-to-Left (RTL) support
 
-RTL provides an option to switch the text direction and layout of the Gantt component from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Urdu, etc.). To enable RTL Gantt, set the [enableRtl](../api/gantt#enablertl) to true.
+RTL support enables the Gantt Chart control to adapt its text direction and layout for languages that read from right to left, such as Arabic (العربية), Hebrew (עברית), and Urdu (اردو). This provides an authentic user experience for RTL language users.
+
+RTL layout affects multiple aspects of the user interface:
+
+- **Reading direction**: Content flows from right to left
+- **UI mirroring**: Interface elements mirror horizontally
+- **Icon orientation**: Directional icons need appropriate orientation
+- **Data presentation**: Maintains logical data relationships while adapting visual presentation
+
+To enable RTL support, set the [enableRtl](../../api/gantt#enablertl) property to **true**:
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/global-cs3/index.ts %}
 {% endhighlight %}
@@ -215,7 +423,30 @@ RTL provides an option to switch the text direction and layout of the Gantt comp
 {% previewsample "page.domainurl/code-snippet/gantt/global-cs3" %}
 {% endif %}
 
-## See Also
+The code sets `enableRtl` to **true** and `locale` to **ar**, mirroring the Gantt interface. Test RTL layouts with native speakers to ensure usability, especially for taskbar interactions and dialog navigation. Review custom CSS for RTL compatibility and verify directional icons (e.g., arrows) render correctly.
 
-* [Internationalization](../common/internationalization)
-* [Localization](../common/localization)
+## Troubleshooting globalization issues
+
+1. **Missing or incomplete translations:**
+**Issue**: Some UI elements display in default language despite locale configuration
+**Solutions**:
+- Verify all locale keys are included in translation objects
+- Check that `L10n.load()` is called before component initialization
+- Ensure locale property matches loaded translation keys
+- Validate translation object structure and syntax
+
+2. **Encoding and character display issues:**
+**Issue**: Special characters or non-Latin scripts don't display correctly
+**Solutions**:
+- Verify proper UTF-8 encoding in translation files
+- Check font support for target languages
+- Ensure HTML document declares correct charset
+- Test with appropriate fonts for target scripts
+
+3. **Date and number formatting problems:**
+**Issue**: Dates or numbers don't format according to locale
+**Solutions**:
+- Load appropriate CLDR data for target cultures
+- Call `setCulture()` before component initialization
+- Verify date format patterns match locale expectations
+- Check timezone and calendar system configuration

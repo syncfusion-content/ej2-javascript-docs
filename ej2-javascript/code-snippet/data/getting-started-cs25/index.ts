@@ -6,13 +6,13 @@ import { compile } from '@syncfusion/ej2-base';
 let template: string = '<tr><td>${OrderID}</td><td>${CustomerID}</td><td>${EmployeeID}</td></tr>';
 
 let compiledFunction: Function = compile(template);
-let footerFn: Function = compile('<tr><td></td><td></td><td>Minimum: ${min}</td></tr>');
+let footerFn: Function = compile('<tr><td></td><td></td><td>Min: ${min}</td></tr>');
 
-const SERVICE_URI: string =  'https://services.odata.org/V4/Northwind/Northwind.svc/Orders/';
+const SERVICE_URL: string =  'https://services.odata.org/V4/Northwind/Northwind.svc/Orders/';
 
 let table: HTMLElement = (<HTMLElement>document.getElementById('datatable'));
 
-new DataManager({ url: SERVICE_URI, adaptor: new ODataV4Adaptor })
+new DataManager({ url: SERVICE_URL, adaptor: new ODataV4Adaptor() })
     .executeQuery(new Query().take(5).requiresCount().aggregate('min', 'EmployeeID'))
     .then((e: ReturnOption) => {
         (<Object[]>e.result).forEach((data: Object) => {

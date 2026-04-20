@@ -21,7 +21,7 @@ The following example sets a percentage-based splitter position. This configurat
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/how-to-splitter-cs1/index.ts %}
 {% endhighlight %}
@@ -59,7 +59,7 @@ The following example configures the Grid view mode. This configuration prioriti
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/splitter-view/index.ts %}
 {% endhighlight %}
@@ -92,7 +92,7 @@ The following example adjusts the splitter dynamically:
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/changeSplitterDynamically-cs1/index.ts %}
 {% endhighlight %}
@@ -125,7 +125,7 @@ The following example customizes the splitter’s background and hides the resiz
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/splitter-events/index.ts %}
 {% endhighlight %}

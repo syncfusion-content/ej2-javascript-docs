@@ -1,51 +1,15 @@
-import { Gantt, Toolbar, PdfExport, Selection,ExcelExport, PdfExportProperties,ExcelExportCompleteArgs,ExcelExportCompleteArgs } from '@syncfusion/ej2-gantt';
+import {
+    Gantt, Toolbar, PdfExport, ExcelExport, Selection,
+    PdfExportProperties, ExcelExportProperties
+} from '@syncfusion/ej2-gantt';
 import { GanttData } from './datasource.ts';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
 
-Gantt.Inject(Toolbar, PdfExport, Selection,ExcelExport);
-/**
- * Exporting Blob data
- */
-
-let excelExpComplete: EmitType<ExcelExportCompleteArgs> = (args: ExcelExportCompleteArgs) => {
-        //This event will be triggered when excel exporting.
-            args.promise.then((e: { blobData: Blob }) => {
-        //In this `then` function, we can get blob data through the arguments after promise resolved.
-                exportBlob(e.blobData);
-    });
-};
-let pdfExpComplete: EmitType<ExcelExportCompleteArgs> = (args: PdfExportCompleteArgs) => {
-    //This event will be triggered when pdf exporting.
-        args.promise.then((e: { blobData: Blob }) => {
-        //In this `then` function, we can get blob data through the arguments after promise resolved.
-        exportBlob(e.blobData);
-    });
-};
-
-
-let exportBlob: Function = (blob: Blob) => {
-    let a: HTMLAnchorElement = document.createElement('a');
-    document.body.appendChild(a);
-    a.style.display = 'none';
-    let url: string = window.URL.createObjectURL(blob);
-    a.href = url;
-    a.download = 'Export';
-    a.click();
-    window.URL.revokeObjectURL(url);
-    document.body.removeChild(a);
-}
-let clickHandler: EmitType<ClickEventArgs> = (args: ClickEventArgs) => {
-    if (args.item.id === 'GanttExport_pdfexport') {
-        gantt.pdfExport(null,null,null,true);
-    }
-       if (args.item.id === 'GanttExport_excelexport') {
-        gantt.excelExport(null, null, null, true);
-    }
-};
+Gantt.Inject(Toolbar, PdfExport, ExcelExport, Selection);
 
 let gantt: Gantt = new Gantt({
+    id: 'ganttDefault',
     dataSource: GanttData,
-    height: '450px',
+    height: '430px',
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
@@ -54,18 +18,47 @@ let gantt: Gantt = new Gantt({
         progress: 'Progress',
         parentID: 'ParentID'
     },
-    columns: [
-        { field: 'TaskID'},
-        { field: 'TaskName'},
-        { field: 'StartDate'},
-        { field: 'Duration'},
-        { field: 'Progress'}
-    ],
+    treeColumnIndex: 1,
+    toolbar: ['PdfExport', 'ExcelExport'],
     allowPdfExport: true,
     allowExcelExport: true,
-       excelExportComplete: excelExpComplete,
-        pdfExportComplete: pdfExpComplete,
-        toolbar: ['PdfExport','ExcelExport'],
-    toolbarClick: clickHandler
+    columns: [
+        { field: 'TaskID' },
+        { field: 'TaskName' },
+        { field: 'StartDate' },
+        { field: 'Duration' },
+        { field: 'Progress' }
+    ],
+    toolbarClick: (args: any) => {
+        if (args.item.id === 'GanttExport_pdfexport') {
+            gantt.pdfExport(undefined as unknown as PdfExportProperties, undefined, undefined, true);
+        }
+        if (args.item.id === 'GanttExport_excelexport') {
+            gantt.excelExport(undefined as unknown as ExcelExportProperties, undefined, undefined, true);
+        }
+    },
+    excelExportComplete: (args: any) => {
+        args.promise.then((e: { blobData: Blob }) => {
+            exportBlob(e.blobData);
+        });
+    },
+    pdfExportComplete: (args: any) => {
+        args.promise.then((e: { blobData: Blob }) => {
+            exportBlob(e.blobData);
+        });
+    }
 });
+
 gantt.appendTo('#GanttExport');
+
+function exportBlob(blob: Blob): void {
+    const a: HTMLAnchorElement = document.createElement('a');
+    document.body.appendChild(a);
+    a.style.display = 'none';
+    const url: string = window.URL.createObjectURL(blob);
+    a.href = url;
+    a.download = 'Export';
+    a.click();
+    window.URL.revokeObjectURL(url);
+    document.body.removeChild(a);
+}

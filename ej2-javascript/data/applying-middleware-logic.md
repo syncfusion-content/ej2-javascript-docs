@@ -1,288 +1,165 @@
 ---
 layout: post
-title: Applying Middleware logic in ##Platform_Name## DataManager | Syncfusion
-description: Learn here all about Applying Middleware logic in Syncfusion ##Platform_Name## DataManager of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## DataManager - Applying Middleware logic | Syncfusion
+description: Use middleware logic in Syncfusion ##Platform_Name## DataManager to add authentication, validate requests, or transform responses.
 platform: ej2-javascript
-control: Api 
+control: Applying Middleware logic 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Middleware & request customization
+# Applying Middleware logic in ##Platform_Name## DataManager
 
-The Syncfusion ##Platform_Name## DataManager supports middleware functionality, allowing you to intercept, inspect, and manipulate data requests and responses as they flow between the client and server. This feature offers a flexible way to implement cross-cutting concerns such as authentication, input validation, request logging, header customization, data transformation, and more.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> DataManager supports applying middleware logic to modify requests and responses during data processing. This capability is useful for handling tasks such as authentication, validation, logging, and transforming response data. Middleware can be applied through two methods: `applyPreRequestMiddlewares` and `applyPostRequestMiddlewares`, each serving a specific stage in the data handling workflow.
 
-## Authorization handling
+**Pre-Request Middleware**
 
-Authorization handling is one of the most essential and common use cases for middleware in Syncfusion ##Platform_Name## DataManager. It ensures that your application securely communicates with protected APIs by injecting authentication credentials such as Bearer tokens, API keys, or session identifiers into outgoing HTTP requests.
+The `applyPreRequestMiddlewares` method executes before a request is sent to the server. It enables modification of request headers, query parameters, or payloads. This is commonly used for adding authentication tokens, restructuring requests, or performing validations. The following code snippet demonstrates how to add an authorization token:
 
-**Use of middleware for authorization:**
+```ts
 
-Implementing authorization through middleware centralizes the logic for token management and request protection, making your codebase more secure, scalable, and maintainable. With Pre-Request middleware, you can ensure that every request to the server includes the required credentials without modifying each request manually.
+dataManager.applyPreRequestMiddlewares([
+   async (context) => {
+      context.request.headers['Authorization'] = 'Bearer your-access-token';
+   }
+]);
 
-**Middleware types:**
+```
 
-Middleware in DataManager can be applied at two stages:
+**Post-Request Middleware**
 
-   * Pre-Request middleware.
+The `applyPostRequestMiddlewares` method runs after a response is received from the server but before the data is bound to a component. It allows filtering, formatting, or restructuring the response to meet application requirements. The following code snippet demonstrates how to format response data:
 
-   * Post-Request middleware.
+```ts
 
-## Pre-Request middleware
+dataManager.applyPostRequestMiddlewares([
+   async (context) => {
+    context.response.result = context.response.result.map(item => ({
+      id: item.Id,
+      name: item.Name.toUpperCase(),
+      date: new Date(item.Timestamp).toLocaleDateString()
+    }));
+  }
+]);
 
-The [applyPreRequestMiddlewares](../api/data/dataManager/#applyprerequestmiddlewares) method enables you to intercept and customize HTTP requests before they are sent to the server. This is particularly useful for adding authorization headers (e.g., bearer token), appending custom query parameters, or modifying request payloads to meet backend expectations. It ensures secure and dynamic request configuration, especially when integrating with authenticated or complex APIs.
+```
 
-For example, you can programmatically inject an authentication token or enrich headers based on user context.
+**Supported data adaptors**
 
-If you're building a SaaS admin dashboard where users log in and fetch their own data from a secured RESTful Web APIs. Each user is issued a JWT (JSON Web Token) after authentication. Every request sent by the Syncfusion DataManager must include this token to validate the user’s identity.
+Middleware functions are supported across multiple DataManager adaptors, including the [WebApiAdaptor](./adaptors/webapi-adaptor), [ODataAdaptor](./adaptors/odatav4-adaptor), and [CustomAdaptor](./adaptors/custom-adaptor), and can be applied to both local and remote data operations. This enhances flexibility, security, and overall control of data processing.
 
-By using `applyPreRequestMiddlewares`, you can automatically inject the JWT into the request headers as an authorization field. This avoids manual token handling and ensures every DataManager request remains authenticated.
+The example demonstrates using the [UrlAdaptor](./adaptors/url-adaptor) with middleware to adjust requests and responses. Before sending a request, `applyPreRequestMiddlewares` fetches an authentication token from an external server and adds it to the request headers. If the token retrieval fails, the DataManager failure event handles the error. Likewise, `applyPostRequestMiddlewares` processes the server response before it is bound to the UI, enabling any required transformations or filtering.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/data/PreRequestMiddlewares-cs1/index.ts %}
+{% tabs %} 
+{% highlight ts tabtitle="index.ts" %} 
+{% raw %}
+
+import { DataManager, Query, UrlAdaptor, ReturnOption } from '@syncfusion/ej2-data';
+import { compile } from '@syncfusion/ej2-base';
+
+const template = '<tr><td>${OrderID}</td><td>${CustomerID}</td><td>${EmployeeID}</td></tr>';
+const compiledFunction = compile(template);
+const table = document.getElementById('datatable') as HTMLElement;
+
+const data = new DataManager({
+  url: 'https://services.syncfusion.com/js/production/api/UrlDataSource',
+  adaptor: new UrlAdaptor(),
+}).executeQuery(new Query()).then((e: ReturnOption) => {
+  (e.result as Object[]).forEach((data: Object) => {
+    table.appendChild(compiledFunction(data)[0]);
+  });
+});
+
+// Method to apply middleware before sending a request to the server.
+data.applyPreRequestMiddlewares = async (request: string | Object): Promise<object> => {
+  // Fetch authentication token from an external service.
+  const response = await fetch('https://example.com/api/token', { // Replace with your actual endpoint. This URL is just for example purposes.
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  });
+
+  if (!response.ok) {
+  throw new Error(`HTTP error! Status: ${response.status}`);
+  }
+  
+  // Return the authentication token.
+  return { token: "your_token_value" };
+};
+
+data.dataManagerFailure = (e: Error) => {
+  //Handle DataManager failure event.
+}
+
+// Method to apply middleware after receiving a response from the server
+data.applyPostRequestMiddlewares = async (response: string | Object): Promise<Object> => {
+  return response;
+};
+
+{% endraw %}
 {% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/data/PreRequestMiddlewares-cs1/index.html %}
-{% endhighlight %}
+
+{% highlight html tabtitle="index.html" %} 
+{% include code-snippet/data/supported-adaptors/index.html %} 
+{% endhighlight %} 
 {% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/data/PreRequestMiddlewares-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/data/PreRequestMiddlewares-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/data/PreRequestMiddlewares-cs1/index.html %}
-{% endhighlight %}
+{% tabs %} 
+{% highlight js tabtitle="index.js" %} 
+{% raw %}
+
+var template =
+'<tr><td>${OrderID}</td><td>${CustomerID}</td><td>${EmployeeID}</td></tr>';
+var compiledFunction = ej.base.compile(template);
+var table = document.getElementById('datatable');
+
+const data = new ej.data.DataManager({
+   url: 'https://services.syncfusion.com/js/production/api/UrlDataSource',
+   adaptor: new ej.data.UrlAdaptor(),
+   }).executeQuery(new ej.data.Query()).then(function (e) {
+   e.result.forEach(function (data) {
+      table.appendChild(compiledFunction(data)[0]);
+   });
+});
+
+// Method to apply middleware before sending a request to the server.
+data.applyPreRequestMiddlewares = async function(request) {
+   // Fetch authentication token from an external service.
+   const response = await fetch('https://example.com/api/token', { // Replace with your actual endpoint. This URL is just for example purposes.
+      method: 'POST',
+      headers: {
+         'Content-Type': 'application/json'
+      }
+   });
+
+   if (!response.ok) {
+   throw new Error(`HTTP error! Status: ${response.status}`);
+   }
+   // Return the authentication token.
+   return { token: "your_token_value" };
+};
+
+data.dataManagerFailure = (e) => {
+   // Handle DataManager failure event.
+}
+
+// Method to apply middleware after receiving a response from the server.
+data.applyPostRequestMiddlewares = async function(response) {
+   return response;
+};
+
+{% endraw %}
+{% endhighlight %} 
+
+{% highlight html tabtitle="index.html" %} 
+{% include code-snippet/data/supported-adaptors/index.html %} 
+{% endhighlight %} 
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/data/PreRequestMiddlewares-cs1" %}
 {% endif %}
-
-In this example, the middleware intercepts the request object, adds an Authorization header, and then forwards the modified request to the server.
-
-![PreRequestMiddlewares](./image/pre-request-middleware.png)
-
-## Post-Request middleware
-
-The [applyPostRequestMiddlewares](../api/data/dataManager/#applypostrequestmiddlewares) method allows you to intercept and manipulate the response after it’s received from the server but before it’s bound to the UI component. This is ideal for transforming API response formats, filtering unnecessary fields, renaming keys, or applying custom formatting to match the structure expected by your application.
-
-If your API returns a nested object, but your component expects a flat array. Using `applyPostRequestMiddlewares`, you can flatten and restructure the response seamlessly.
-
-For example, in a sales dashboard, the API may return product data with inconsistent formats such as uppercase product names, UNIX timestamps, and field names so you can use the middleware to convert names to title case, format timestamps into readable dates, and rename keys (e.g., prod_id to ProductID) before displaying the data.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/data/PostRequestMiddlewares-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/data/PostRequestMiddlewares-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/data/PostRequestMiddlewares-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/data/PostRequestMiddlewares-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/data/PostRequestMiddlewares-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/data/PostRequestMiddlewares-cs1" %}
-{% endif %}
-
-**Original data:**
-![PostRequestMiddlewares-before](./image/post-request-before-data.png)
-**Transformed data:**
-![PostRequestMiddlewares-after](./image/post-request-middleware.png)
-
-## Supported data adaptors
-
-Middleware functions are compatible with various DataManager adaptors, including [WebApiAdaptor](./adaptors#web-api-adaptor), [ODataAdaptor](./adaptors#odata-adaptor), and [CustomAdaptor](./adaptors#customadaptor). They support both local and remote data processing. By leveraging middleware, you can improve the flexibility, security, and efficiency of data handling within your application.
-
-The following code example demonstrates how to use Syncfusion's `WebApiAdaptor` while applying middleware logic to modify requests and responses. Before sending a request to the backend, the [applyPreRequestMiddlewares](../api/data/dataManager/#applyprerequestmiddlewares) method retrieves an authentication token from an external middleware server and adds it to the request headers. If the middleware server fails to return a valid token, the `dataManagerFailure` event is triggered to handle the error.
-
-The [applyPostRequestMiddlewares](../api/data/dataManager/#applypostrequestmiddlewares) method processes the server response before updating the component. This allows for any necessary transformations, such as filtering or reformatting, to be applied before the data is bound to the UI. These middleware methods enhance request lifecycle management, improve security, and offer greater control over data manipulation in applications.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/data/supported-adaptors/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/data/supported-adaptors/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/data/supported-adaptors" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/data/supported-adaptors/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/data/supported-adaptors/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/data/supported-adaptors" %}
-{% endif %}  
-
-**Pre middlewares request response:**
-![Pre-Middlewares-Request](./image/pre-request-adaptors.png)
-**Post middlewares request response:**
-![Post-Middlewares-Request](./image/Post-request-adaptors.png)
-
-## Custom headers
-
-The Syncfusion ##Platform_Name## DataManager allows you to add custom HTTP headers to each request, enabling advanced scenarios such as:
-
-* **Authentication** – for example, adding a JWT token to verify the user.
-
-* **Multi-tenant access** – such as including a tenant ID to identify which tenant the request belongs to.
-
-* **Feature control or localization** – like enabling specific features or setting language preferences.
-
-* **Content negotiation or routing** – to handle different content types or direct requests based on custom logic
-
-When making cross-origin requests with custom headers, browsers will automatically issue a `preflight (options)` request to verify server permissions.
-
-**Ways to add custom headers:**
-
-* Static headers during DataManager initialization.
-
-* Dynamic headers via [applyPreRequestMiddlewares](../api/data/dataManager/#applyprerequestmiddlewares).
-
-* Custom adaptor-level injection for advanced control.
-
-### Using the headers property
-
-You can assign custom headers directly during the initialization of the DataManager by using the `headers` property. This approach is ideal when you have static or pre-defined headers such as authorization tokens or tenant IDs.
-
-This method ensures that all requests made by the DataManager automatically include these headers without the need for additional logic or middleware handling. This is useful for sending static API keys, including content-type headers, applying application-level custom identifiers.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/data/custom-header/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/data/custom-header/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/data/custom-header" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/data/custom-header/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/data/custom-header/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/data/custom-header" %}
-{% endif %}
-
-![Custom-header](./image/custom-headers.png)
-
-### Using beforeSend
-
-The `beforeSend` callback allows you to dynamically modify request headers just before the request is dispatched. This is useful when headers depend on runtime information, such as freshly fetched tokens or user specific data.
-
-**Parameters:**
-
-It accepts an three arguments:
-
-* **DataManager (dm):** Provides the datasource and adaptor value.
-
-* **Request (request):** Used to send custom headers, such as setting the Authorization header.
-
-* **Settings (settings)**: An optional argument that allows additional configurations.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/data/custom-header-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/data/custom-header-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/data/custom-header-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/data/custom-header-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/data/custom-header-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/data/custom-header-cs2" %}
-{% endif %}
-
-![custom-header-beforeSend](./image/beforesend-headers.png)
-
-## Sending additional parameters to server
-
-When working with remote data sources, it is often necessary to send additional parameters to the server, such as filtering values, paging limits, or culture settings. The DataManager supports this by allowing custom parameters to be appended to the query string of the request using the [addParams](../api/data/query/#addparams) method.
-
-The `addParams` method of the [Query](../api/data/query/) class is used to append custom query string parameters to the request sent by the DataManager. These parameters are useful when you want to pass additional data required by the server to process the request.
-
-The following example demonstrates how to send an additional parameter `($top)` to limit the number of records retrieved from the server:
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/data/additional-parameter-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/data/additional-parameter-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/data/additional-parameter-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/data/additional-parameter-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/data/additional-parameter-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/data/additional-parameter-cs1" %}
-{% endif %}
-
-![Additional-parameter](./image/additional-parameter.png)

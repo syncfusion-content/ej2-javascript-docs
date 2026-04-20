@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Holidays in ##Platform_Name## Gantt control | Syncfusion
+title: Holidays in ##Platform_Name## Gantt Control | Syncfusion
 description: Learn here all about Holidays in Syncfusion ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Holidays 
@@ -9,22 +9,37 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Holidays in ##Platform_Name## Gantt control
+# Holidays in ##Platform_Name## Gantt Control
 
-Non-working days in a project can be displayed in the Gantt control using the [holidays](../api/gantt#holidays) property. Each holiday can be defined with the following properties:
+The ##Platform_Name## Gantt Chart control supports holidays to define non-working days, such as national holidays or company closures, that impact task scheduling and project timelines. Holidays override regular working time settings like [workWeek](../../api/gantt#workweek) or [includeWeekend](../../api/gantt#includeweekend), ensuring tasks do not progress during these periods. In the timeline, holidays appear as highlighted backgrounds with descriptive labels, creating visible gaps in taskbars to reflect scheduling adjustments. Custom CSS classes allow distinct styling for different holiday types (e.g., national vs. company holidays), enhancing visual clarity. Properly configured holidays ensure accurate duration calculations, dependency adjustments, and critical path analysis, aligning project timelines with resource availability and regional requirements.
 
-* [from](../api/gantt/holiday#from): Defines start date of the holiday(s).
-* [to](../api/gantt/holiday#to): Defines end date of the holiday(s).
-* [label](../api/gantt/holiday#label): Defines the description or label for the holiday.
-* [cssClass](../api/gantt/holiday#cssclass): Formats the holidays label in the Gantt chart.
+## Understanding holiday effects on tasks
 
-To highlight the holidays, inject the [DayMarkers](../api/gantt#daymarkersmodule) module into the Gantt control.
+Holidays adjust task scheduling to reflect non-working periods:
 
-The following code example shows how to display the non-working days in the Gantt control.
+- **Duration adjustments**: Task durations exclude holidays, extending end dates. For example, a task starting December 20, 2024, skips a December 25-26 holiday, adjusting its completion to account for these days.
+- **Dependency management**: Successor tasks shift to maintain relationships (e.g., FS), ensuring no work occurs during holidays.
+- **Critical path integration**: Holidays impact slack calculations when using [enableCriticalPath](../../api/gantt#enablecriticalpath), as tasks delayed by holidays may become critical.
+- **Resource allocation**: Holidays reduce resource availability, pausing task progress during these periods.
+
+The [projectStartDate](../../api/gantt#projectstartdate) and [projectEndDate](../../api/gantt#projectenddate) properties provide context for scheduling, ensuring holidays align with the project timeline.
+
+## Configure holidays
+
+Holidays are defined using the [holidays](../../api/gantt#holidays) property, which accepts an array of holiday objects specifying dates, labels, and styling. The `DayMarkersService` must be injected to render holidays as visual markers in the timeline and adjust task scheduling calculations. Holidays take precedence over settings like `workWeek` or `includeWeekend`, ensuring tasks do not progress during these periods.
+
+**Holiday configuration properties**
+
+- `from`: Sets the start date of the holiday (e.g., `new Date('2024-12-25')`).
+- `to`: Defines the end date for multi-day holidays (optional for single-day holidays).
+- `label`: Provides a descriptive name (e.g., “Christmas Day”) displayed in the timeline.
+- `cssClass`: Applies custom CSS classes for styling holiday appearances.
+
+The following example configures single and multi-day holidays:
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/holidays-cs1/index.ts %}
 {% endhighlight %}
@@ -48,3 +63,61 @@ The following code example shows how to display the non-working days in the Gant
 
 {% previewsample "page.domainurl/code-snippet/gantt/holidays-cs1" %}
 {% endif %}
+
+The code defines holidays like Christmas (December 25) and a multi-day New Year break, rendering them as highlighted periods in the timeline.
+
+## Customize holiday appearance
+
+Customize holiday visuals using the `cssClass` property to apply distinct styles for different holiday types, such as national or company-specific closures:
+
+```css
+.national-holiday {
+    background-color: #ffebee;
+    border-left: 3px solid #f44336;
+}
+.national-holiday .e-gantt-holiday-label {
+    color: #d32f2f;
+    font-weight: bold;
+    background-color: #ffcdd2;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.company-holiday {
+    background-color: #e3f2fd;
+    border-left: 3px solid #2196f3;
+}
+.company-holiday .e-gantt-holiday-label {
+    color: #1976d2;
+    font-style: italic;
+    background-color: #bbdefb;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+```
+
+For multi-day holidays, specify both `from` and `to` dates:
+
+```typescript
+holidays: [
+    {
+        from: new Date('2024-12-24'),
+        to: new Date('2024-12-26'),
+        label: 'Christmas Break',
+        cssClass: 'national-holiday'
+    },
+    {
+        from: new Date('2024-01-01'),
+        to: new Date('2024-01-02'),
+        label: 'New Year Holiday',
+        cssClass: 'company-holiday'
+    }
+]
+```
+
+This code styles holidays with distinct colors and labels, enhancing timeline readability.
+
+## See Also
+- [How to configure event markers?](../../gantt/event-markers)
+- [How to manage task dependencies?](../../gantt/task-dependency)
+- [How to enable critical path analysis?](../../gantt/critical-path)

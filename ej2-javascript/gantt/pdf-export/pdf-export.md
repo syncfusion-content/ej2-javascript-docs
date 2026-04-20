@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pdf export in ##Platform_Name## Gantt Control | Syncfusion
-description: Learn here all about Pdf export in Syncfusion Essential ##Platform_Name## Gantt control, its elements and more.
+title: PDF Export in ##Platform_Name## Gantt Chart Control | Syncfusion
+description: Learn how to export Gantt to PDF in Syncfusion ##Platform_Name## Gantt Chart control with indicators, blob objects, single-page, and theme options.
 platform: ej2-javascript
 control: Pdf export 
 publishingplatform: ##Platform_Name##
@@ -9,17 +9,17 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Pdf export in ##Platform_Name## Gantt Control
+# PDF Export in ##Platform_Name## Gantt Chart Control
 
-## PDF Export
+PDF export in the ##Platform_Name## Gantt Chart control enables exporting project data to PDF documents for sharing or archiving, using the [pdfExport](../../api/gantt#pdfexport) method with [allowPdfExport](../../api/gantt#allowpdfexport) set to **true** and `PdfExport` module injected. This feature supports exporting timelines, tasks, and dependencies, with options for indicators via `base64` images, blob objects for previews, single-page layouts, multiple Gantt instances in one file, and themes like Tailwind3 or Bootstrap. Focus on auto-scheduled tasks for accurate export, as manual scheduling is not currently supported.
 
-PDF export allows exporting Gantt data to PDF document. You need to use the [pdfExport](../../api/gantt#pdfexport) method for exporting. To enable PDF export in the Gantt, set the [allowPdfExport](../../api/gantt#allowpdfexport) to true.
+## Export basic Gantt data
 
-To export data to PDF document, inject the `PdfExport` module in Gantt.
+Export Gantt data to PDF by setting [allowPdfExport](../../api/gantt#allowpdfexport) to **true** and calling [pdfExport](../../api/gantt#pdfexport), which generates a document with the chart and tree-grid data.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/pdf-export-cs14/index.ts %}
 {% endhighlight %}
@@ -44,14 +44,13 @@ To export data to PDF document, inject the `PdfExport` module in Gantt.
 {% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs14" %}
 {% endif %}
  
-## Indicators in PDF exporting 
+## Include indicators in PDF export
 
-The PDF export functionality allows users to export Gantt charts enriched with dynamic indicators and accompanying images.
-These indicators, represented by images,can be effortlessly defined using the  [base64](../api/gantt/iIndicator#base64) encoding value in the data object of datasource.This data object field should be mapped to indiactor property of [task fields](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#indicators).
+Include dynamic indicators and images in PDF export by defining them with `base64` encoding in the data source, mapped to the [taskFields.indicators](../../api/gantt/taskFields#indicators) property, enhancing visual representation of task status.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/pdf-export-cs16/index.ts %}
 {% endhighlight %}
@@ -76,19 +75,13 @@ These indicators, represented by images,can be effortlessly defined using the  [
 {% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs16" %}
 {% endif %}
 
-## Exporting Gantt data as a blob object
+## Export Gantt data as blob object
 
-In Gantt, you can export the Gantt chart data as a blob object, which allows you to preview or modify the data before exporting it.
-
-To export the Gantt chart data as a blob object, follow these steps:
-
-step 1: pdfExport fourth argument set as `true`.
-
-step 2: Then , `pdfExpComplete` return as blob object.
+Export Gantt data as a blob object for previews or modifications by setting the fourth argument of [pdfExport](../../api/gantt#pdfexport) to **true**, with the blob returned in the [pdfExportComplete](../../gantt/events#pdfexportcomplete) event.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/exporting-blob-data-cs1/index.ts %}
 {% endhighlight %}
@@ -113,15 +106,13 @@ step 2: Then , `pdfExpComplete` return as blob object.
 {% previewsample "page.domainurl/code-snippet/gantt/exporting-blob-data-cs1" %}
 {% endif %}
 
-## Single page exporting in gantt
+## Single page exporting in Gantt
 
-In Gantt, we have provided support to export the Gantt component where each rows are auto-fit to the PDF document page width by setting [isFitToWidth](https://ej2.syncfusion.com/documentation/api/gantt/pdfExportProperties/fitToWidthSettings#isFitToWidth) as true in <code>fitToWidthSettings</code> of <code>PdfExportProperties</code>.
-
-Also, we can customize the chart width and grid width in exported file using [chartWidth](https://ej2.syncfusion.com/documentation/api/gantt/pdfExportProperties/fitToWidthSettings/isFitToWidth#chartWidth) and [gridWidth](https://ej2.syncfusion.com/documentation/api/gantt/pdfExportProperties/fitToWidthSettings/isFitToWidth#gridWidth) by defining it as percentage in string. 
+Export Gantt rows to a single PDF page by setting [fitToWidthSettings.isFitToWidth](../../api/gantt/fittowidthsettings#isfittowidth) to **true** in `PdfExportProperties`. Customize chart and grid widths using [chartWidth](../../api/gantt/fittowidthsettings#chartwidth) and [gridWidth](../../api/gantt/fittowidthsettings#gridwidth) as percentages.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/single-page/index.ts %}
 {% endhighlight %}
@@ -146,13 +137,13 @@ Also, we can customize the chart width and grid width in exported file using [ch
 {% previewsample "page.domainurl/code-snippet/gantt/single-page" %}
 {% endif %}
 
-## Multiple gantt exporting in ##Platform_Name## Gantt control
+## Multiple Gantt exporting
 
-PDF export provides an option for exporting multiple Gantt to same file. In this exported document, each Gantt will be exported to a new page of the document in same file.
+Export multiple Gantt instances to a single PDF file by calling [pdfExport](../../api/gantt#pdfexport) on each, with each Gantt exported to a new page in the same document.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/pdf-multiple-export-cs1/index.ts %}
 {% endhighlight %}
@@ -177,19 +168,13 @@ PDF export provides an option for exporting multiple Gantt to same file. In this
 {% previewsample "page.domainurl/code-snippet/gantt/pdf-multiple-export-cs1" %}
 {% endif %}
 
-## Applying Themes in PDF Export
+## Apply themes in PDF export
 
-PDF export provides an option to include theme for the exported PDF document. To apply theme in exported PDF, define the [theme](../../api/gantt/pdfExportProperties#theme) in [pdfExportProperties](../../api/gantt/pdfExportProperties). 
-The available themes are:
-
-* Material
-* Fabric
-* Bootstrap
-* Bootstrap 4
+Apply themes to exported PDF documents by setting the [theme](../../api/gantt/pdfexportproperties#theme) property in `PdfExportProperties` to values like Tailwind3, Fabric, Bootstrap, or Bootstrap4, customizing the appearance.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/pdf-export-cs12/index.ts %}
 {% endhighlight %}
@@ -213,3 +198,8 @@ The available themes are:
 
 {% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs12" %}
 {% endif %}
+
+## See also
+- [How to export to Excel?](../../gantt/excel-export)
+- [How to customize PDF export?](../../gantt/pdf-export/customize-pdf-export)
+- [How to manage task dependencies?](../../gantt/task-dependency)

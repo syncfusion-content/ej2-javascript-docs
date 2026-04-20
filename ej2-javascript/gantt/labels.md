@@ -15,7 +15,7 @@ The Gantt control maps any data source fields to task labels using the [labelSet
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/tasklabels-cs1/index.ts %}
 {% endhighlight %}

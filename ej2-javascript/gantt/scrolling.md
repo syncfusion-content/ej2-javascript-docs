@@ -25,7 +25,7 @@ We can even set pixel values to width and height of gantt container using [width
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/scrolling-cs1/index.ts %}
 {% endhighlight %}
@@ -57,7 +57,7 @@ Setting the `height` to `100%` requires the gantt parent element to have explici
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/responsive-scrolling-cs1/index.ts %}
 {% endhighlight %}
@@ -90,7 +90,7 @@ The following code examples show how the scroll To Date method works in Gantt:
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/how-to-scrollToDate-cs1/index.ts %}
 {% endhighlight %}
@@ -121,7 +121,7 @@ In the Gantt control, you can set the vertical scroller position dynamically by 
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/how-to-setscrolltop-cs1/index.ts %}
 {% endhighlight %}

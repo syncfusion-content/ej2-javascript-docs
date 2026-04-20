@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Timeline in ##Platform_Name## Gantt Control | Syncfusion
-description: Learn here all about timeline in Syncfusion Essential ##Platform_Name## Gantt control, its elements and more.
+title: Timeline in ##Platform_Name## Gantt Chart control | Syncfusion
+description: Learn how to configure timelines in the Syncfusion ##Platform_Name## Gantt Chart control with view modes, zooming, weekend highlighting, and templates.
 platform: ej2-javascript
 control: Timeline 
 publishingplatform: ##Platform_Name##
@@ -9,25 +9,19 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Timeline in ##Platform_Name## Gantt Control
+# Timeline in ##Platform_Name## Gantt Chart Control
 
-In the Gantt control, timeline is used to represent the project duration as individual cells with defined unit and formats.
+The timeline in the ##Platform_Name## Gantt Chart control represents project durations as cells with defined units and formats, supporting in-built view modes like Hour-Minute, Day-Hour, Week-Day, Month-Week, Year-Month, and Minutes for flexible visualization. Configure modes using the [timelineViewMode](../../api/gantt/timelineViewMode) property, with top and bottom tiers customized via [topTier.unit](../../api/gantt/timelineTierSettings#unit) and [bottomTier.unit](../../api/gantt/timelineTierSettings#unit) in [timelineSettings](../../api/gantt/timelineSettings). This enables detailed views, such as weekly overviews with daily breakdowns for projects, ensuring accurate timeline representation.
 
-## Timeline view modes
+## Configure timeline view modes
 
-Gantt contains the following in-built timeline view modes:
+Set the timeline view mode using the [timelineViewMode](../../api/gantt/timelineViewMode) property. This property allows you to switch the timeline between different units such as **Day**, **Week**, **Month**, and **Year**, where the top tier displays a broader unit and the bottom tier displays a finer one.
 
-* Hour
-* Day
-* Week
-* Month
-* Year
-
-Timescale mode in Gantt can be defined by using [timelineViewMode](../../api/gantt/timelineViewMode) property and also we can define timescale mode of top tier and bottom tier by using [topTier.unit](../../api/gantt/timelineTierSettingsModel#unit) and [bottomTier.unit](../../api/gantt/timelineTierSettingsModel#unit) properties.
+When both the `topTier` and `bottomTier` settings are defined, they take precedence over the `timelineViewMode` property. In this case, the `timelineViewMode` value will be ignored. To apply the `timelineViewMode` setting, ensure that `topTier` and `bottomTier` are assigned a null value or not configured.
 
 ### Week timeline mode
 
-In the `Week` timeline mode, the upper part of the schedule header displays the weeks, whereas the bottom half of the header displays the days. Refer to the following code example.
+In Week mode, the top tier shows weeks and the bottom tier days, suitable for short-term project tracking.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -58,7 +52,7 @@ In the `Week` timeline mode, the upper part of the schedule header displays the 
 
 ### Month timeline mode
 
-In the `Month` timeline mode, the upper part of the schedule header displays the months, whereas the bottom header of the schedule displays its corresponding weeks. Refer to the following code example.
+In Month mode, the top tier shows months and the bottom tier weeks, ideal for medium-term planning.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -89,7 +83,7 @@ In the `Month` timeline mode, the upper part of the schedule header displays the
 
 ### Year timeline mode
 
-In the `Year` timeline mode, the upper schedule header displays the years whereas, the bottom header displays its corresponding months. Refer to the following code example.
+In Year mode, the top tier shows years and the bottom tier months, suitable for long-term projects.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -120,7 +114,7 @@ In the `Year` timeline mode, the upper schedule header displays the years wherea
 
 ### Day timeline mode
 
-In the `Day` timeline mode, the upper part of the header displays the days whereas, the bottom schedule header displays its corresponding hours. Refer to the following code example.
+In Day mode, the top tier shows days and the bottom tier hours, ideal for detailed daily scheduling.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -151,7 +145,7 @@ In the `Day` timeline mode, the upper part of the header displays the days where
 
 ### Hour timeline mode
 
-An `Hour` timeline mode tracks the tasks in minutes scale. In this mode, the upper schedule header displays hour scale and the lower schedule header displays its corresponding minutes.
+In Hour mode, the top tier shows hours and the bottom tier minutes, perfect for minute-level task tracking.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -180,9 +174,40 @@ An `Hour` timeline mode tracks the tasks in minutes scale. In this mode, the upp
 {% previewsample "page.domainurl/code-snippet/gantt/timeline-cs5" %}
 {% endif %}
 
+### Minutes timeline mode
+
+In Minutes timeline mode, the tier displays minute-level intervals, ideal for tracking short-duration tasks with high precision.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/timeline-cs13/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/timeline-cs13/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/timeline-cs13" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/timeline-cs13/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/timeline-cs13/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/timeline-cs13" %}
+{% endif %}
+
 ## Timeline view dates
 
-The Gantt Chart control supports rendering a fixed timeline range using the [viewStartDate](../../api/gantt/timelineSettings#viewStartDate) and [viewEndDate](../../api/gantt/timelineSettings#viewEndDate) properties. These properties allow the visible portion of the timeline to be explicitly defined and locked within the Gantt chart UI, independent of the project's overall scheduling boundaries defined by [projectStartDate](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#projectstartdate) and [projectEndDate](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#projectenddate). The `projectStartDate` and `projectEndDate` values represent the full scheduling window for the project and are used for baseline processing, critical-path calculations, and project-level reporting. By default, both `viewStartDate` and `viewEndDate` are set to **auto**. The following example demonstrates how to configure a custom timeline view range.
+The Gantt Chart control supports rendering a fixed timeline range using the [viewStartDate](../../api/gantt/timelineSettings#viewStartDate) and [viewEndDate](../../api/gantt/timelineSettings#viewEndDate) properties. These properties allow the visible portion of the timeline to be explicitly defined and locked within the Gantt chart UI, independent of the project's overall scheduling boundaries defined by [projectStartDate](../../api/gantt/index-default#projectstartdate) and [projectEndDate](../../api/gantt/index-default#projectenddate). The `projectStartDate` and `projectEndDate` values represent the full scheduling window for the project and are used for baseline processing, critical-path calculations, and project-level reporting. By default, both `viewStartDate` and `viewEndDate` are set to **auto**. The following example demonstrates how to configure a custom timeline view range.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -225,9 +250,11 @@ When `viewStartDate` and `viewEndDate` are set to concrete Date values, the time
 
 > Note: The `ZoomToFit` feature uses `projectStartDate` and `projectEndDate` to fit the entire project within the available timeline viewport.
 
-## Week start day customization
+## Customize week start day
 
-In the Gantt control, you can customize the week start day using the [weekStartDay](../../api/gantt/timelineSettings#weekstartday) property. By default, the [weekStartDay](../../api/gantt/timelineSettings#weekstartday) is set to 0, which specifies the Sunday as a start day of the week. But, you can customize the week start day by using the following code example.
+In the Gantt Chart control, you can customize the starting day of the week using the [weekStartDay](../../api/gantt/timelineSettings#weekstartday) property. By default, the `weekStartDay` value is set to **0**, which specifies **Sunday** as the first day of the week. You can change this value to any number from **0 to 6** to set a different start day.
+
+The `weekStartDay` property will take effect only when the timeline displays weeks. To enable this, set the [timelineViewMode](../../api/gantt/timelineviewmode) to **Week**, or configure `topTier.unit` as **Week** and `bottomTier.unit` as **Day**.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -258,7 +285,7 @@ In the Gantt control, you can customize the week start day using the [weekStartD
 
 ## Customize automatic timescale update action
 
-In the Gantt control, the schedule timeline will be automatically updated when the tasks date values are updated beyond the project start date and end date ranges. This can be enabled or disabled using the [updateTimescaleView](../../api/gantt/timelineSettings#updatetimescaleview) property.
+In the Gantt Chart control, the schedule timeline will be automatically updated when the tasks date values are updated beyond the project start date and end date ranges. This can be enabled or disabled using the [updateTimescaleView](../../api/gantt/timelineSettings#updatetimescaleview) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -287,9 +314,40 @@ In the Gantt control, the schedule timeline will be automatically updated when t
 {% previewsample "page.domainurl/code-snippet/gantt/timeline-cs7" %}
 {% endif %}
 
+## Dynamically change timeline mode
+
+You can dynamically change the timeline mode in the Gantt Chart by updating the [timelineSettings.timelineViewMode](../../api/gantt/timelineViewMode) property using the [change](../../api/combo-box/index-default#change) event of the [ComboBox](../../combo-box/getting-started) control.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/timeline-cs14/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/timeline-cs14/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/timeline-cs14" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/timeline-cs14/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/timeline-cs14/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/timeline-cs14" %}
+{% endif %}
+
 ## Timeline cells tooltip
 
-In the Gantt control, you can enable or disable the mouse hover tooltip of timeline cells using the [timelineSettings.showTooltip](../api/gantt/timelinesettings#showtooltip) property. The default value of this property is true. The following code example shows how to enable the timeline cells tooltip in Gantt.
+In the Gantt Chart control, you can enable or disable the mouse hover tooltip of timeline cells using the [timelineSettings.showTooltip](../../api/gantt/timelineSettings#showtooltip) property. The default value of this property is **true**.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -318,11 +376,9 @@ In the Gantt control, you can enable or disable the mouse hover tooltip of timel
 {% previewsample "page.domainurl/code-snippet/gantt/gantt-tooltip-cs2" %}
 {% endif %}
 
-## Show/hide weekends
+## Highlight weekends
 
-The [timelineSettings.showWeekend](../../api/gantt/timelineSettings#showWeekend) property is used to customize the timeline in the Gantt component by controlling the visibility of weekends. To exclude weekends from the timeline, set the `showWeekend` property to `false` in the `timelineSettings` configuration. This feature is particularly useful for focusing the timeline on working days, enhancing project management efficiency by hiding weekends from the view.
-
->Note: To customize non-working or weekend days in the Gantt chart, refer to the [workWeek](../../gantt/task-scheduling#weekendnon-working-days) documentation for detailed information.
+Highlight weekends by setting [showWeekend](../../api/gantt/timelineSettings#showweekend) to **true** and [workWeek](../../api/gantt#workweek) to define weekdays, aiding in identifying non-working days in a project schedule.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -351,15 +407,50 @@ The [timelineSettings.showWeekend](../../api/gantt/timelineSettings#showWeekend)
 {% previewsample "page.domainurl/code-snippet/gantt/timeline-showweekend-cs1" %}
 {% endif %}
 
-> Limitations
->* The `showWeekend` feature does not support baselines.
->* The `showWeekend` is not compatible with the manual task mode.
->* Non-working hours cannot be excluded when `showWeekend` is set to false.
->* Holidays are not excluded from the timeline if `showWeekend` is set to false.
+**Limitations:**
+
+* The `showWeekend` feature does not support baselines and not compatible with the manual task mode.
+* Non-working hours cannot be excluded when `showWeekend` is set to **false**.
+* Holidays are not excluded from the timeline if `showWeekend` is set to **false**.
+
+## Navigating Gantt Chart Timeline
+
+You can adjust the Gantt Chart view by shifting the timeline forward or backward by one unit using the following methods:
+
+- [previousTimeSpan](../../api/gantt/index-default#previoustimespan): Moves the timeline backward by one unit from the current start point.
+
+- [nextTimeSpan](../../api/gantt/index-default#nexttimespan): Moves the timeline forward by one unit from the current end point.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/timeline-cs15/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/timeline-cs15/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/timeline-cs15" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/timeline-cs15/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/timeline-cs15/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/timeline-cs15" %}
+{% endif %}
 
 ## Timeline template
 
-In the Gantt component, you can customize timeline cells using the [timelineTemplate](../../api/gantt#timelineTemplate) property, allowing for the customization of HTML content within timeline cells. This feature enhances the visual appeal and enables personalized functionality.
+In the Gantt Chart control, you can customize timeline cells using the [timelineTemplate](../../api/gantt#timelineTemplate) property, allowing for the customization of HTML content within timeline cells. This feature enhances the visual appeal and enables personalized functionality.
 
 When designing the timeline cells, you can utilize the following context properties within the template:
 
@@ -395,3 +486,8 @@ The following code example how to customize the top tier to display the week's w
 
 {% previewsample "page.domainurl/code-snippet/gantt/gantt-tooltip-cs4" %}
 {% endif %}
+
+## See also
+- [How to configure taskbars?](../../gantt/taskbar)
+- [How to zoom the timeline?](../../gantt/timeline/zooming)
+- [How to configure non-working days?](../../gantt/scheduling-tasks#weekendnon-working-days)

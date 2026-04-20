@@ -1,4 +1,4 @@
-import { Gantt, Toolbar,PdfExport, Selection } from '@syncfusion/ej2-gantt';
+import { Gantt, Toolbar, PdfExport, Selection } from '@syncfusion/ej2-gantt';
 import { FirstGanttData, SecondGanttData } from './datasource.ts';
 
 Gantt.Inject(Toolbar, PdfExport, Selection);
@@ -23,7 +23,7 @@ let firstGantt: Gantt = new Gantt({
 firstGantt.appendTo('#GanttExport1');
 
 let secondGantt: Gantt = new Gantt({
-    dataSource: SecondGanttData,  
+    dataSource: SecondGanttData,
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
@@ -41,7 +41,7 @@ secondGantt.appendTo('#GanttExport2');
 firstGantt.toolbarClick = (args: Object) => {
     if (args.item.id === 'GanttExport1_pdfexport') {
         let firstGanttPdfExport: Promise<Object> = firstGantt.pdfExport({}, true);
-        firstGanttPdfExport.then(function(pdfData){
+        firstGanttPdfExport.then(function (pdfData) {
             secondGantt.pdfExport({}, false, pdfData);
         });
     }

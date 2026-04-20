@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Excel export in ##Platform_Name## Gantt control | Syncfusion
-description: Learn here all about Excel export in Syncfusion ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more.
+title: Excel Export Options in ##Platform_Name## Gantt Chart Control | Syncfusion
+description: Learn here all about Excel export in Syncfusion ##Platform_Name## Gantt Chart control of Syncfusion Essential JS 2 and more.
+platform: ej2-react
 platform: ej2-javascript
 control: Excel export 
 publishingplatform: ##Platform_Name##
@@ -9,15 +10,17 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Excel export in ##Platform_Name## Gantt control
+# Excel Export in ##Platform_Name## Gantt Chart Control
 
-Gantt supports client-side exporting, which allows you to export its data to the Excel and CSV formats. Use the [excelExport](../../api/gantt#excelexport) and [csvExport](../../api/gantt#csvexport) methods for exporting. To enable Excel export in the Gantt, set the [allowExcelExport](../../api/gantt#allowexcelexport) to true.
+The Syncfusion ##Platform_Name## Gantt Chart control supports exporting project data to Excel and CSV formats, enabling seamless sharing, reporting, and offline analysis.
 
-To export data to Excel and CSV, inject the `ExcelExport` module in Gantt.
+To enable Excel or CSV export functionality, set the [allowExcelExport](../../api/gantt#allowexcelexport) property to **true** and inject the `ExcelExport` service into the control's `providers` array.
+
+You can trigger export operations using the [excelExport](../../api/gantt#excelexport) or [csvExport](../../api/gantt#csvexport) methods, typically within the [toolbarClick](../../gantt/events#toolbarclick) event.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/excel-export-cs2/index.ts %}
 {% endhighlight %}
@@ -25,7 +28,7 @@ To export data to Excel and CSV, inject the `ExcelExport` module in Gantt.
 {% include code-snippet/gantt/excel-export-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/gantt/excel-export-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -40,4 +43,227 @@ To export data to Excel and CSV, inject the `ExcelExport` module in Gantt.
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/gantt/excel-export-cs2" %}
+{% endif %}
+
+## Binding custom data source while exporting
+
+You can bind a custom data source for Excel or CSV export in the ##Platform_Name## Gantt Chart control by assigning it dynamically before the export begins. To achieve this, set the required data to the [dataSource](../../api/grid/excelExportProperties#datasource) property within the [ExcelExportProperties](../../api/grid/excelExportProperties) configuration.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/excel-export-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/excel-export-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/excel-export-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/excel-export-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/excel-export-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/excel-export-cs1" %}
+{% endif %}
+
+## Exporting with cell and row spanning
+
+To export merged cells and rows in Excel or CSV files using the ##Platform_Name## Gantt Chart control, handle the [excelQueryCellInfo](../../gantt/events#excelquerycellinfo) event and apply `rowSpan` and `colSpan` during the export process. The [queryCellInfo](../../gantt/events#querycellinfo) event can be used to customize cell rendering within the Gantt view.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/excel-export-cs9/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/excel-export-cs9/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/excel-export-cs9" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/excel-export-cs9/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/excel-export-cs9/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/excel-export-cs9" %}
+{% endif %}
+
+## Show spinner while exporting
+
+To indicate progress during the export operation in the ##Platform_Name## Gantt Chart control, use the [showSpinner](../../api/gantt#showspinner) method within the [toolbarClick](../../gantt/events#toolbarclick) event when initiating Excel or CSV export. After the export process completes, hide the spinner by calling the [hideSpinner](../../api/gantt#hidespinner) method inside the [excelExportComplete](../../gantt/events#excelexportcomplete) event.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/excel-export-cs10/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/excel-export-cs10/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/excel-export-cs10" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/excel-export-cs10/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/excel-export-cs10/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/excel-export-cs10" %}
+{% endif %}
+
+## Exporting with custom date format
+
+To apply a custom date format to columns during Excel or CSV export in the ##Platform_Name## Gantt Chart control, define the desired format using the [format](../../api/gantt/column#format) property in the column configuration.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/excel-export-cs11/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/excel-export-cs11/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/excel-export-cs11" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/excel-export-cs11/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/excel-export-cs11/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/excel-export-cs11" %}
+{% endif %}
+
+## Exporting multiple Gantt charts
+
+The ##Platform_Name## Gantt Chart control supports exporting multiple Gantt Charts either into a single worksheet or across separate sheets when generating Excel or CSV files.
+
+### Same sheet
+
+To export multiple datasets into a single worksheet, set [multipleExport.type](../../api/grid/excelExportProperties#multipleexport) to **AppendToSheet** within the [ExcelExportProperties](../../api/grid/excelExportProperties) configuration. To add spacing between datasets, define the number of blank rows using the [multipleExport.blankRows](../../api/grid/multipleExport#blankrows) property.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/excel-multiple-export-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/excel-multiple-export-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/excel-multiple-export-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/excel-multiple-export-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/excel-multiple-export-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/excel-multiple-export-cs1" %}
+{% endif %}
+
+>By default, `multipleExport.blankRows` value is 5.
+
+### New sheet
+
+To export each Gantt to a separate worksheet, set [multipleExport.type](../../api/grid/excelExportProperties#multipleexport) to **NewSheet** in the [ExcelExportProperties](../../api/grid/excelExportProperties) configuration. This ensures each dataset is placed on its own sheet.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/excel-multiple-export-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/excel-multiple-export-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/excel-multiple-export-cs2" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/excel-multiple-export-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/excel-multiple-export-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/excel-multiple-export-cs2" %}
+{% endif %}
+
+## Export Gantt data as a Blob
+
+To export Gantt data as a Blob object for advanced processing or custom download workflows, set the `isBlob` parameter to **true** in the [excelExport](../../api/gantt#excelexport) or [csvExport](../../api/gantt#csvexport) method. Use the [excelExportComplete](../../gantt/events#excelexportcomplete) event to access the Blob and implement custom logic.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/excel-export-cs12/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/excel-export-cs12/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/excel-export-cs12" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/excel-export-cs12/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/excel-export-cs12/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/excel-export-cs11" %}
 {% endif %}

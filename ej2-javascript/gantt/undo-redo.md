@@ -34,32 +34,32 @@ The [undoRedoStepsCount](../api/gantt#undoredostepscount) property sets the acti
 
 By default, all the gantt features listed in the below table will be restored for undo and redo actions. However, you have the option to specify only the required actions to be restored using [undoRedoActions](../api/gantt#undoredoactions) property.
 
-| Built-in Undo Redo Items | Actions |
-|------------------------|---------|
-| Edit | Undo redo actions can be performed for edited record.|
-| Delete | Undo redo actions can be performed for deleted record.|
-| Add | Undo redo actions can be performed for newly added record.|
-| ColumnReorder | Undo redo actions can be performed for reordered column.|
-| Indent | Undo redo actions can be performed for indented record.|
-| Outdent | Undo redo actions can be performed for outdented record.|
-| ColumnResize | Undo redo actions can be performed for resized column.|
-| Sorting | Undo redo actions can be performed for sorted column.|
-| Filtering | Undo redo actions can be performed for filtered record.|
-| Search | Undo redo actions can be performed for searched value.|
-| ZoomIn | Undo redo actions can be performed for zoomIn action.|
-| ZoomOut | Undo redo actions can be performed for zoomOut action.|
-| ZoomToFit | Undo redo actions can be performed for zoomToFit action.|
-| ColumnState | Undo redo actions can be performed for hided or shown columns.|
-| RowDragAndDrop | Undo redo actions can be performed for row drag and drop.|
-| TaskbarDragAndDrop |  Undo redo actions can be performed for taskbar drag and drop.|
-| PreviousTimeSpan | Undo redo actions can be performed for previous time span acton.|
-| NextTimeSpan | Undo redo actions can be performed for next time span action.|
+| Built-in Undo Redo Items | Actions                                                          |
+| ------------------------ | ---------------------------------------------------------------- |
+| Edit                     | Undo redo actions can be performed for edited record.            |
+| Delete                   | Undo redo actions can be performed for deleted record.           |
+| Add                      | Undo redo actions can be performed for newly added record.       |
+| ColumnReorder            | Undo redo actions can be performed for reordered column.         |
+| Indent                   | Undo redo actions can be performed for indented record.          |
+| Outdent                  | Undo redo actions can be performed for outdented record.         |
+| ColumnResize             | Undo redo actions can be performed for resized column.           |
+| Sorting                  | Undo redo actions can be performed for sorted column.            |
+| Filtering                | Undo redo actions can be performed for filtered record.          |
+| Search                   | Undo redo actions can be performed for searched value.           |
+| ZoomIn                   | Undo redo actions can be performed for zoomIn action.            |
+| ZoomOut                  | Undo redo actions can be performed for zoomOut action.           |
+| ZoomToFit                | Undo redo actions can be performed for zoomToFit action.         |
+| ColumnState              | Undo redo actions can be performed for hided or shown columns.   |
+| RowDragAndDrop           | Undo redo actions can be performed for row drag and drop.        |
+| TaskbarDragAndDrop       | Undo redo actions can be performed for taskbar drag and drop.    |
+| PreviousTimeSpan         | Undo redo actions can be performed for previous time span acton. |
+| NextTimeSpan             | Undo redo actions can be performed for next time span action.    |
 
 In the following code example, **Edit** and **Delete** actions are specified in `undoRedoActions` property.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/undo-redo-cs1/index.ts %}
 {% endhighlight %}

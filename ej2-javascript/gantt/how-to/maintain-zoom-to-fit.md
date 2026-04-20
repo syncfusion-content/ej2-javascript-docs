@@ -1,25 +1,22 @@
 ---
 layout: post
-title: Maintain zoom to fit in ##Platform_Name## Gantt control | Syncfusion
-description: Learn here all about Maintain zoom to fit in Syncfusion ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more.
+title: Maintain Zoom-to-fit in ##Platform_Name## Gantt Chart Control | Syncfusion
+description: Learn how to maintain zoom-to-fit functionality in the Syncfusion ##Platform_Name## Gantt Chart control during editing and dynamic data source changes.
 platform: ej2-javascript
-control: Maintain zoom to fit 
-publishingplatform: ##Platform_Name##
+control: Zoom to fit
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Maintain zoom to fit in ##Platform_Name## Gantt control
+# Maintain Zoom-to-fit in ##Platform_Name## Gantt Chart Control
 
-In the Gantt control, While performing edit actions or dynamically change dataSource, the timeline gets refreshed. When zoomToFit toolbar item is clicked and perform editing actions or dynamically change dataSource, the timeline gets refreshed. So that, the timeline will not fit to the project any more.
+The zoom-to-fit functionality in the ##Platform_Name## Gantt Chart control ensures the entire project timeline fits within the viewport, providing an optimal view of all tasks. When using the `zoomToFit` toolbar item, editing actions (e.g., cell edit, dialog edit, taskbar edit) or dynamic `dataSource` changes can cause the timeline to refresh, potentially losing the zoomed view. By leveraging the [fitToProject](../../api/gantt#fittoproject) method, you can maintain the zoom-to-fit state seamlessly. For editing actions, call `fitToProject` in the [actionComplete](../../gantt/events#actioncomplete) and [taskbarEdited](../../gantt/events#taskbaredited) events to reapply zoom-to-fit after modifications like updating task durations or dependencies. For dynamic `dataSource` changes, such as adding or removing tasks, invoke `fitToProject` in the [dataBound](../../gantt/events#databound) event to adjust the timeline automatically. Ensure `Toolbar` is injected and `toolbar` includes `zoomToFit` to enable this feature, with valid [timelineSettings](../../api/gantt#timelinesettings) configured for accurate rendering. This approach maintains a consistent project overview, integrating with task scheduling, dependencies, and critical path for efficient project management.
 
-## Maintain zoomToFit after edit actions
-
-We can maintain `zoomToFit` after editing actions(cell edit,dialog edit,taskbar edit) by using [fitToProject](../../api/gantt#fittoproject) method in `actionComplete` and `taskbarEdited` event.
+The following example demonstrates how to use `fitToProject` after performing edit actions:
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/how-to-maintainzoomtofit-cs1/index.ts %}
 {% endhighlight %}
@@ -44,13 +41,11 @@ We can maintain `zoomToFit` after editing actions(cell edit,dialog edit,taskbar 
 {% previewsample "page.domainurl/code-snippet/gantt/how-to-maintainzoomtofit-cs1" %}
 {% endif %}
 
-## Maintain zoomToFit after change dataSource dynamically
-
-We can maintain `zoomToFit` after change dataSource dynamically, by calling [fitToProject](../../api/gantt#fittoproject) method in dataBound event.
+The following example demonstrates how to use `fitToProject` after dynamically changing the data source:
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/how-to-maintainzoomtofitdatasource-cs1/index.ts %}
 {% endhighlight %}
@@ -74,3 +69,8 @@ We can maintain `zoomToFit` after change dataSource dynamically, by calling [fit
 
 {% previewsample "page.domainurl/code-snippet/gantt/how-to-maintainzoomtofitdatasource-cs1" %}
 {% endif %}
+
+## See also
+- [How to configure timeline settings?](../../gantt/timeline)
+- [How to configure toolbar?](../../gantt/toolbar)
+- [How to manage task editing?](../../gantt/managing-tasks/editing-tasks)

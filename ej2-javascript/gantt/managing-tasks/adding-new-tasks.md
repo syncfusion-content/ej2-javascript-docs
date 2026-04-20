@@ -19,7 +19,7 @@ A row can be added to the Gantt component from the toolbar while the [editSettin
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/rows-cs1/index.ts %}
 {% endhighlight %}
@@ -89,7 +89,7 @@ You can add rows to the Gantt control dynamically using the [addRecord](../../ap
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/addRow-cs1/index.ts %}
 {% endhighlight %}

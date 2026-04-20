@@ -1,21 +1,12 @@
-import { Gantt, Toolbar, PdfExport, Selection, PdfExportProperties } from '@syncfusion/ej2-gantt';
+import { Gantt, Toolbar, PdfExport, Selection, PdfExportProperties, ClickEventArgs } from '@syncfusion/ej2-gantt';
 import { GanttData } from './datasource.ts';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
 
 Gantt.Inject(Toolbar, PdfExport, Selection);
 
-let clickHandler: EmitType<ClickEventArgs> = (args: ClickEventArgs) => {
-    if (args.item.id === 'GanttExport_pdfexport') {
-        let exportProperties: PdfExportProperties = {
-            includeHiddenColumn: true
-        };
-        gantt.pdfExport(exportProperties);
-    }
-};
-
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
-    height: '450px',
+    height: '430px',
+    treeColumnIndex: 1,
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
@@ -25,14 +16,22 @@ let gantt: Gantt = new Gantt({
         parentID: 'ParentID'
     },
     columns: [
-        { field: 'TaskID'},
-        { field: 'TaskName', visible: false},
-        { field: 'StartDate'},
-        { field: 'Duration'},
-        { field: 'Progress'}
+        { field: 'TaskID', headerText: 'Task ID', width: 100 },
+        { field: 'TaskName', headerText: 'Task Name', width: 150, visible: false },
+        { field: 'StartDate', headerText: 'Start Date', width: 150 },
+        { field: 'Duration', headerText: 'Duration', width: 150 },
+        { field: 'Progress', headerText: 'Progress', width: 150 }
     ],
-    allowPdfExport: true,
     toolbar: ['PdfExport'],
-    toolbarClick: clickHandler
+    allowPdfExport: true,
+    toolbarClick: (args: ClickEventArgs): void => {
+        if (args.item.id === 'Gantt_pdfexport') {
+            let exportProps: PdfExportProperties = {
+                includeHiddenColumn: true
+            };
+            gantt.pdfExport(exportProps);
+        }
+    }
 });
-gantt.appendTo('#GanttExport');
+
+gantt.appendTo('#Gantt');

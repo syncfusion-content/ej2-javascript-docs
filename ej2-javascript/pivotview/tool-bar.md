@@ -161,6 +161,6 @@ For example, you can add the header and footer for the pdf document by setting t
 
 ## See Also
 
-* [Toolbar Component](./toolbar/getting-started)
+* [Toolbar Component](https://ej2.syncfusion.com/documentation/toolbar/getting-started)
 * [Excel Exporting](./excel-export)
 * [PDF Exporting](./pdf-export)

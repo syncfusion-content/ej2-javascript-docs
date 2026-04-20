@@ -7,9 +7,9 @@ Gantt.Inject(Toolbar, PdfExport, Selection);
 let clickHandler: EmitType<ClickEventArgs> = (args: ClickEventArgs) => {
     if (args.item.id === 'GanttExport_pdfexport') {
         let exportProperties: PdfExportProperties = {
-            fitToWidthSettings: {       
-                isFitToWidth: true,       
-            }       
+            fitToWidthSettings: {
+                isFitToWidth: true,
+            }
         };
         gantt.pdfExport(exportProperties);
     }

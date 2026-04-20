@@ -23,7 +23,7 @@ When a resource has multiple tasks scheduled on the same date, then the tasks wi
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/resource-view-cs3/index.ts %}
 {% endhighlight %}
@@ -58,7 +58,7 @@ It's important to note that when `allowTaskbarOverlap` is disabled, task depende
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/resource-view-taskbaroverlap-cs1/index.ts %}
 {% endhighlight %}

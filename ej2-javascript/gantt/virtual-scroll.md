@@ -23,7 +23,7 @@ This mode can be enable by setting the `enableVirtualization` property to `true`
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/virtual-scroll-cs3/index.ts %}
 {% endhighlight %}

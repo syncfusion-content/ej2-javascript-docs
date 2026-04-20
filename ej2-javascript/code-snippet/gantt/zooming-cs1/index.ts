@@ -1,8 +1,5 @@
-
-
-
 import { Gantt, Toolbar } from '@syncfusion/ej2-gantt';
-import { GanttData } from 'datasource.ts';
+import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Toolbar);
 
@@ -19,13 +16,7 @@ let gantt: Gantt = new Gantt({
         parentID: 'parentID'
     },
     toolbar: ['ZoomIn', 'ZoomOut', 'ZoomToFit'],
-    labelSettings: {
-        leftLabel: 'TaskName'
-    },
     projectStartDate: new Date('03/24/2019'),
     projectEndDate: new Date('04/28/2019')
 });
 gantt.appendTo('#Gantt');
-
-
-

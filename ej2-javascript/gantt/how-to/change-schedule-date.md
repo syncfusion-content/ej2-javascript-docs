@@ -1,21 +1,21 @@
 ---
 layout: post
 title: Change schedule date in ##Platform_Name## Gantt control | Syncfusion
-description: Learn here all about Change schedule date in Syncfusion ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more.
+description: Learn how to programmatically update project schedule dates in the Syncfusion ##Platform_Name## Gantt Chart control to adjust timelines and task schedules efficiently.
 platform: ej2-javascript
-control: Change schedule date 
+control: Schedule dates
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Change schedule date in ##Platform_Name## Gantt control
+# Update Project Schedule Dates in ##Platform_Name## Gantt Chart Control
 
-In the Gantt control, you can change the schedule start and end dates by clicking the custom button programmatically using the [updateProjectDates](../../api/gantt#updateprojectdates) method. You can pass the start and end dates as method arguments to the [updateProjectDates](../../api/gantt#updateprojectdates) method. You can also pass the Boolean value as an additional parameter, which is used to round-off the schedule start and end dates displayed in Gantt timeline.
+The [updateProjectDates](../../api/gantt#updateprojectdates) method in the ##Platform_Name## Gantt Chart control enables programmatic adjustment of the project's start and end dates, seamlessly updating the timeline and task positions for efficient schedule management. By passing valid `Date` objects for the start and end dates, you can shift the entire project timeline, such as moving a project forward by a month to accommodate delays. An optional Boolean `roundOff` parameter, when set to **true**, aligns dates to the timeline's unit (e.g., days or weeks), ensuring a clean and consistent display. Ensure the Gantt has a defined `dataSource` and [timelineSettings](../../api/gantt#timelinesettings) to render the updated schedule accurately. Use valid date formats and leverage the `roundOff` option to optimize timeline rendering for clarity.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/how-to-changescheduledates-cs1/index.ts %}
 {% endhighlight %}

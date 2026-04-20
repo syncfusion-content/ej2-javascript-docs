@@ -1,17 +1,13 @@
-
-
-
-import { Gantt, Edit, Toolbar } from '@syncfusion/ej2-gantt';
-import { CheckBox } from "@syncfusion/ej2-buttons";
-import { TextBox, NumericTextBox, MaskedTextBox } from "@syncfusion/ej2-inputs";
-import { DatePicker, DateTimePicker } from "@syncfusion/ej2-calendars";
-import { DropDownList } from "@syncfusion/ej2-dropdowns";
+import { Gantt, Edit, Selection, Toolbar, ActionBeginArgs, ActionCompleteArgs } from '@syncfusion/ej2-gantt';
+import { CheckBox } from '@syncfusion/ej2-buttons';
+import { TextBox, NumericTextBox, MaskedTextBox } from '@syncfusion/ej2-inputs';
+import { DatePicker, DateTimePicker } from '@syncfusion/ej2-calendars';
+import { DropDownList } from '@syncfusion/ej2-dropdowns';
 import { GanttData } from './datasource.ts';
 
-Gantt.Inject(Edit, Toolbar);
+Gantt.Inject(Edit, Selection, Toolbar);
 
-var divElement;
-var inputs = {
+let inputs: { [key: string]: any } = {
   booleanedit: CheckBox,
   dropdownedit: DropDownList,
   datepickeredit: DatePicker,
@@ -21,78 +17,81 @@ var inputs = {
   stringedit: TextBox
 };
 
+let divElement: HTMLElement;
+
 let gantt: Gantt = new Gantt({
-     dataSource: GanttData,
-        height:'450px',
-        taskFields: {
-            id: 'TaskID',
-            name: 'TaskName',
-            startDate: 'StartDate',
-            duration: 'Duration',
-            progress: 'Progress',
-            parentID: 'ParentID',
-        },
-        editSettings: {
-        allowAdding: true,
-        allowEditing: true,
-        allowDeleting: true,
-        mode: "Auto"
-    },
-    columns: [
-        { field: 'TaskID', width: '150' },
-        { field: 'TaskName', width: '250' },
-        { field: 'StartDate', width: '250' },
-        { field: 'Duration', width: '250' },
-        { field: 'Progress', width: '250' },
-        { field: 'CustomField', width: '250' }
-    ],
-    toolbar: ['Add', 'Cancel', 'CollapseAll', 'Delete', 'Edit', 'ExpandAll', 'Update'],
-    editDialogFields: [
-        { type: 'General', headerText: 'General' },
-        { type: 'Dependency' },
-        { type: 'Resources' },
-        { type: 'Notes' }
-    ],
-    addDialogFields: [
-        { type: 'General', headerText: 'General' },
-        { type: 'Dependency' },
-        { type: 'Resources' },
-        { type: 'Notes' }
-    ],
-    actionBegin: function(args) {
-        if (args.requestType === "beforeOpenEditDialog" || args.requestType === "beforeOpenAddDialog" ) {
-          var column = this.columnByField["CustomField"];
-          divElement = this.createElement("div", {
-            className: "e-edit-form-column"
-          });
-          var inputElement;
-          inputElement = this.createElement("input", {
-            attrs: {
-              type: "text",
-              id: this.controlId + "" + column.field,
-              name: column.field,
-              title: column.field
-            }
-          });
-          divElement.appendChild(inputElement);
-          var input = {
-            enabled: true,
-            floatLabelType: "Auto",
-            placeholder: "CustomField",
-            value: args.rowData.CustomField
-          };
-          var inputObj = new inputs[column.editType](input);
-          inputObj.appendTo(inputElement);
-        }
-    },
-      actionComplete: function(args) {
-        if (args.requestType === "openEditDialog" || args.requestType === "openAddDialog") {
-          var generalTab = document.getElementById(
-            this.controlId + "GeneralTabContainer"
-          );
-          generalTab.appendChild(divElement);
-        }
-      }
+  dataSource: GanttData,
+  height: '430px',
+  taskFields: {
+    id: 'TaskID',
+    name: 'TaskName',
+    startDate: 'StartDate',
+    endDate: 'EndDate',
+    duration: 'Duration',
+    progress: 'Progress',
+    parentID: 'ParentID'
+  },
+  editSettings: {
+    allowEditing: true,
+    allowAdding: true,
+    allowDeleting: true,
+    mode: 'Dialog'
+  },
+  editDialogFields: [
+    { type: 'General', headerText: 'General' },
+    { type: 'Dependency' },
+    { type: 'Resources' },
+    { type: 'Notes' }
+  ],
+  addDialogFields: [
+    { type: 'General', headerText: 'General' },
+    { type: 'Dependency' },
+    { type: 'Resources' },
+    { type: 'Notes' }
+  ],
+  columns: [
+    { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: '100' },
+    { field: 'TaskName', headerText: 'Task Name', width: '250' },
+    { field: 'StartDate', headerText: 'Start Date', width: '150' },
+    { field: 'EndDate', headerText: 'End Date', width: '150' },
+    { field: 'Duration', headerText: 'Duration', width: '150' },
+    { field: 'Progress', headerText: 'Progress', width: '150' },
+    { field: 'CustomField', headerText: 'CustomField', width: '150' }
+  ],
+  toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel', 'ExpandAll', 'CollapseAll'],
+  actionBegin: actionBegin,
+  actionComplete: actionComplete
 });
 
 gantt.appendTo('#Gantt');
+
+function actionBegin(args: ActionBeginArgs): void {
+  if (args.requestType === 'beforeOpenEditDialog' || args.requestType === 'beforeOpenAddDialog') {
+    let column: any = (gantt as any).columnByField['CustomField'];
+    divElement = gantt.createElement('div', { className: 'e-edit-form-column' }) as HTMLElement;
+    let inputElement = gantt.createElement('input', {
+      attrs: {
+        type: 'text',
+        id: gantt.controlId + column.field,
+        name: column.field,
+        title: column.field
+      }
+    }) as HTMLInputElement;
+    divElement.appendChild(inputElement);
+    let input: any = {
+      enabled: true,
+      floatLabelType: 'Auto',
+      placeholder: 'CustomField',
+      value: (args.rowData as any).CustomField
+    };
+    let inputObj = new (inputs as any)[column.editType](input);
+    inputObj.appendTo(inputElement);
+  }
+}
+
+function actionComplete(args: ActionCompleteArgs): void {
+  if (args.requestType === 'openEditDialog' || args.requestType === 'openAddDialog') {
+    let generalTab = document.getElementById(gantt.controlId + 'GeneralTabContainer') as HTMLElement;
+    generalTab.appendChild(divElement);
+  }
+}

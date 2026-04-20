@@ -2,12 +2,12 @@ var template = '<tr><td>${field} - ${key}</td><td></td><td></td></tr>${for(item 
 
 var compiledFunction = ej.base.compile(template);
 
-const SERVICE_URI =  'https://services.odata.org/V4/Northwind/Northwind.svc/Orders/';
+const SERVICE_URL =  'https://services.odata.org/V4/Northwind/Northwind.svc/Orders/';
 
 var table = (document.getElementById('datatable'));
 
-new ej.data.DataManager({ url: SERVICE_URI, adaptor: new ej.data.ODataV4Adaptor })
-    .executeQuery(new ej.data.Query().group('CustomerID').take(8))
+new ej.data.DataManager({ url: SERVICE_URL, adaptor: new ej.data.ODataV4Adaptor() })
+    .executeQuery(new ej.data.Query().group('CustomerID').take(12))
     .then((e) => {
         (e.result).forEach((data) => {
             table.appendChild(compiledFunction(data)[0]);

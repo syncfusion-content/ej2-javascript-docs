@@ -19,7 +19,7 @@ Gantt.Inject(Selection, Toolbar, DayMarkers, Edit, Filter);
 };
 (<{ imagedate?: Function }>window).imagedate = () => {
     const getImage = Math.floor(Math.random() * 5) + 1;
-    return  getImage + ".svg";
+    return getImage + ".svg";
 
 }
 (<{ holidayValue?: Function }>window).holidayValue = (value: string, date: string): string => {

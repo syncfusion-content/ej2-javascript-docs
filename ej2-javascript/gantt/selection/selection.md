@@ -30,7 +30,7 @@ The Gantt control supports three types of selection modes that can be set by usi
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/selection-cs8/index.ts %}
 {% endhighlight %}
@@ -61,7 +61,7 @@ The toggle selection allows you to select and deselect a specific row or cell. T
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/toggleselection-cs1/index.ts %}
 {% endhighlight %}
@@ -125,7 +125,7 @@ You can clear the selected cells and selected rows by using a method called [cle
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/clearselection-cs1/index.ts %}
 {% endhighlight %}
@@ -156,7 +156,7 @@ You can get the selected row indexes by using the [getSelectedRowIndexes](../../
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/selection-cs9/index.ts %}
 {% endhighlight %}
@@ -189,7 +189,7 @@ In the following code, the rows which contains `TaskId` value as 3 and 4 are sel
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/selection-cs10/index.ts %}
 {% endhighlight %}

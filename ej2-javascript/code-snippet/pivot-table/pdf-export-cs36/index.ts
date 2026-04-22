@@ -10,14 +10,15 @@ PivotView.Inject(PDFExport);
 let pivotTableObj: PivotView = new PivotView({
     dataSourceSettings: {
         dataSource: pivotData as IDataSet[],
-        expandAll: true,
-        columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Products' }],
-        values: [{ name: 'Sold', caption: 'Units Sold' }],
-        rows: [{ name: 'Country' }],
+        expandAll: false,
+        drilledMembers: [{ name: 'Country', items: ['France'] }],
+        columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
+        values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
+        rows: [{ name: 'Country' }, { name: 'Products' }],
         formatSettings: [{ name: 'Amount', format: 'C0' }],
         filters: []
     },
-    beforeExport: function (args: BeforeExportEventArgs) {
+    beforeExport: function(args: BeforeExportEventArgs) {
         args.allowRepeatHeader = false;
     },
     allowPdfExport: true,

@@ -1,12 +1,11 @@
 
 
 
-import { PivotView, IDataSet, PDFExport } from '@syncfusion/ej2-pivotview';
+import { PivotView, IDataSet, PDFExport, PdfCellRenderArgs, VirtualScroll} from '@syncfusion/ej2-pivotview';
 import { Button } from '@syncfusion/ej2-buttons';
 import { pivotData } from './datasource.ts';
-import { PdfQueryCellInfoEventArgs } from '@syncfusion/ej2-grids';
 
-PivotView.Inject(PDFExport);
+PivotView.Inject(PDFExport, VirtualScroll);
 let pivotTableObj: PivotView = new PivotView({
     dataSourceSettings: {
         dataSource: pivotData as IDataSet[],
@@ -19,14 +18,13 @@ let pivotTableObj: PivotView = new PivotView({
         filters: []
     },
     allowPdfExport: true,
+    enableVirtualization: true,
     height: 320,
-    gridSettings: {
-        pdfQueryCellInfo: function (args: PdfQueryCellInfoEventArgs) {
-            if (args.data && args.data.rowHeaders === 'France.Mountain Bikes' && args.cell && args.cell.gridRow) {
-                args.cell.gridRow.height = 100;
-            }
+    onPdfCellRender: (args: PdfCellRenderArgs) => {
+        if (args.pivotCell && args.pivotCell.valueSort && args.pivotCell.valueSort.levelName === 'France.Mountain Bikes') {
+            args.cell.height = 30
         }
-    }
+    },
 });
 pivotTableObj.appendTo('#PivotTable');
 
@@ -34,5 +32,8 @@ let exportBtn: Button = new Button({ isPrimary: true });
 exportBtn.appendTo('#pdf');
 
 document.getElementById('pdf').onclick = function () {
-    pivotTableObj.pdfExport();
+    pivotTableObj.pdfExport({}, false, null, false, true);
 };
+
+
+

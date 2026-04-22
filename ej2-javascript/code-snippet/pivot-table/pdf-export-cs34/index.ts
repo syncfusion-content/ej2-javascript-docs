@@ -1,12 +1,11 @@
 
 
-import { PivotView, IDataSet, PDFExport } from '@syncfusion/ej2-pivotview';
+import { PivotView, IDataSet } from '@syncfusion/ej2-pivotview';
 import { PdfExportProperties } from '@syncfusion/ej2-grids';
 import { Button } from '@syncfusion/ej2-buttons';
 import { pivotData, base64AlgeriaFont } from './datasource.ts';
 import { PdfTrueTypeFont } from '@syncfusion/ej2-pdf-export';
 
-PivotView.Inject(PDFExport);
 let pivotTableObj: PivotView = new PivotView({
     dataSourceSettings: {
         dataSource: pivotData as IDataSet[],
@@ -28,11 +27,11 @@ exportBtn.appendTo('#pdf');
 
 document.getElementById('pdf').onclick = function () {
     let pdfExportProperties: PdfExportProperties = {
-        theme: {
-            header: { font: new PdfTrueTypeFont(base64AlgeriaFont, 11) },
-            caption: { font: new PdfTrueTypeFont(base64AlgeriaFont, 9) },
-            record: { font: new PdfTrueTypeFont(base64AlgeriaFont, 10) }
-        }
+         theme: { 
+                header: {font:  new PdfTrueTypeFont(base64AlgeriaFont, 11) }, 
+                caption: { font: new PdfTrueTypeFont(base64AlgeriaFont, 9) }, 
+                record: { font: new PdfTrueTypeFont(base64AlgeriaFont, 10) } 
+            } 
     };
     pivotTableObj.pdfExport(pdfExportProperties);
 };

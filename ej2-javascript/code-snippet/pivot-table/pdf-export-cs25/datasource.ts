@@ -156,12 +156,3 @@ export let pivotData: Object[] = [
     { 'Sold': 76, 'Amount': 121258, 'Country': 'United States', 'Products': 'Touring Bikes', 'Year': 'FY 2017', 'Quarter': 'Q4' },
     { 'Sold': 45, 'Amount': 71797.5, 'Country': 'United Kingdom', 'Products': 'Touring Bikes', 'Year': 'FY 2018', 'Quarter': 'Q1' },
     { 'Sold': 80, 'Amount': 127640, 'Country': 'United States', 'Products': 'Touring Bikes', 'Year': 'FY 2018', 'Quarter': 'Q1' }];
-
-export let salesData: { [key: string]: Object }[] = [
-  { Region: 'Asia-Pacific', Product: 'Laptop', Quarter: 'Q4', Sales: 1450000, Units: 2900, ProfitMargin: 19 },
-  { Region: 'Asia-Pacific', Product: 'Smartphone', Quarter: 'Q4', Sales: 1200000, Units: 6000, ProfitMargin: 21 },
-  { Region: 'Europe', Product: 'Laptop', Quarter: 'Q4', Sales: 890000, Units: 1780, ProfitMargin: 16 },
-  { Region: 'Europe', Product: 'Smartphone', Quarter: 'Q4', Sales: 720000, Units: 3600, ProfitMargin: 20 },
-  { Region: 'North America', Product: 'Laptop', Quarter: 'Q4', Sales: 1250000, Units: 2500, ProfitMargin: 18 },
-  { Region: 'North America', Product: 'Smartphone', Quarter: 'Q4', Sales: 980000, Units: 4900, ProfitMargin: -22 }
-];

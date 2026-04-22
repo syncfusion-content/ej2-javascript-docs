@@ -12,15 +12,11 @@ var pivotTableObj = new ej.pivotview.PivotView({
     allowPdfExport: true,
     enableVirtualization: true,
     height: 320,
-    gridSettings: {
-        pdfHeaderQueryCellInfo: function (args) {
-            if (args.gridCell && args.gridCell.valueSort && args.gridCell.valueSort.levelName === 'FY 2015.Units Sold'
-                && args.cell && args.cell.row && args.cell.row.pdfGrid && args.cell.row.pdfGrid.gridColumns
-                && args.cell.row.pdfGrid.gridColumns.columns[args.gridCell.colIndex]) {
-                args.cell.row.pdfGrid.gridColumns.columns[args.gridCell.colIndex].width = 250;
-            }
+    onPdfCellRender: function (args) {
+        if (args.pivotCell && args.pivotCell.valueSort && args.pivotCell.valueSort.levelName === 'FY 2015.Units Sold') {
+            args.column.width = 60
         }
-    }
+    },
 });
 pivotTableObj.appendTo('#PivotTable');
 
@@ -28,6 +24,6 @@ var exportBtn = new ej.buttons.Button({ isPrimary: true });
 exportBtn.appendTo('#pdf');
 
 document.getElementById('pdf').onclick = function () {
-    pivotTableObj.pdfExport();
+    pivotTableObj.pdfExport({}, false, null, false, true);
 };
 

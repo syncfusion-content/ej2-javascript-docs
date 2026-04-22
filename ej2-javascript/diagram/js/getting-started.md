@@ -129,7 +129,6 @@ The diagram component is divided into individual feature-wise modules. In order 
 * `ConnectorEditing`: Inject this provider to edit the segments for connector.
 * `ComplexHierarchicalTree`: Inject this provider to complex hierarchical tree like structure.
 * `DataBinding`: Inject this provider to populate nodes from given data source.
-* `DiagramCollaboration`: Inject this provider to enable real-time collaborative editing in diagrams.
 * `DiagramContextMenu`: Inject this provider to manipulate context menu.
 * `HierarchicalTree`: Inject this provider to use hierarchical tree like structure.
 * `LayoutAnimation`: Inject this provider animation to layouts.
@@ -151,7 +150,6 @@ ej.diagrams.Diagram.Inject(
   ej.diagrams.ConnectorEditing,
   ej.diagrams.ComplexHierarchicalTree,
   ej.diagrams.DataBinding,
-  ej.diagrams.DiagramCollaboration,
   ej.diagrams.DiagramContextMenu,
   ej.diagrams.HierarchicalTree,
   ej.diagrams.LayoutAnimation,
@@ -207,8 +205,8 @@ Create and add a `node` (JSON data) with specific position, size.
 
 ### Apply shape and style to node
 
-Syncfusion® diagram control provides support to render many built-in shapes in diagram.
-Please refer to [`Shapes`](../api/diagram/shapes) to know about built-in Shapes.
+Syncfusion® diagram control provides support to render many build-in shapes in diagram.
+Please refer to [`Shapes`](../api/diagram/shapes/) to know about built-in Shapes.
 
 * The appearance of a node can be customized by changing its [`fill`](../api/diagram/shapeStyleModel#fill-string) color, [`strokeColor`](../api/diagram/shapeStyleModel#strokecolor-string), [`strokeWidth`](../api/diagram/shapeStyleModel#strokewidth-number), [`borderColor`](../api/diagram/node#borderColor-string), [`borderWidth`](../api/diagram/node#borderWidth-number), [`strokeDashArray`](../api/diagram/shapeStyleModel#strokeDashArray-number),  [`opacity`](../api/diagram/shapeStyleModel#opacity-number), and [`shadow`](../api/diagram/shapeStyleModel#shadow-number).
 
@@ -243,7 +241,7 @@ You can add multiple nodes with different shapes into diagram.
 
 ### Connect flow chart nodes
 
-Connect these nodes by adding a connector using the [`connectors`](../api/diagram/connectorModel) property of diagram and refer the source and target end by using the [`sourceID`](../api/diagram/connectorModel#sourceid) and [`targetID`](../api/diagram/connectorModel#targetid) properties.
+Connect these nodes by adding a connector using the [`connectors`](../api/diagram/connectorModel/) property of diagram and refer the source and target end by using the [`sourceID`](../api/diagram/connectorModel/#sourceid) and [`targetID`](../api/diagram/connectorModel/#targetid) properties.
 The required nodes and connectors can be added to form a complete flow diagram.
 
 
@@ -259,7 +257,7 @@ The required nodes and connectors can be added to form a complete flow diagram.
 {% previewsample "page.domainurl/code-snippet/diagram/getting-started-cs4" %}
 
 
-Default values for all [`nodes`](../api/diagram/nodemodel) and [`connectors`](../api/diagram/connectorModel) can be set using the [`getNodeDefaults`](../api/diagram/index-default#getnodedefaults) and [`getConnectorDefaults`](../api/diagram/index-default#getconnectordefaults) properties, respectively. For example, if all nodes have the same width and height, such properties can be moved into `getNodeDefaults`.
+Default values for all [`nodes`](../api/diagram/nodemodel/) and [`connectors`](../api/diagram/connectorModel/) can be set using the [`getNodeDefaults`](../api/diagram/#getnodedefaults) and [`getConnectorDefaults`](../api/diagram/#getconnectordefaults) properties, respectively. For example, if all nodes have the same width and height, such properties can be moved into `getNodeDefaults`.
 
 
 ## Automatic organization chart
@@ -330,7 +328,7 @@ To create an organizational chart, the [`type`](../api/diagram/layout) of layout
 
 ### Customize employee appearance
 
-The following code examples indicate how to define the default appearance of nodes and connectors. The [`setNodeTemplate`](../api/diagram/index-default#setnodetemplate) is used to update each node based on employee data.
+The following code examples indicate how to define the default appearance of nodes and connectors. The [`setNodeTemplate`](../api/diagram/#setnodetemplate) is used to update each node based on employee data.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

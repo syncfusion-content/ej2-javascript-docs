@@ -1,10 +1,10 @@
 
 
-import { PivotView, IDataSet, VirtualScroll, PDFExport } from '@syncfusion/ej2-pivotview';
+import { PivotView, IDataSet, VirtualScroll } from '@syncfusion/ej2-pivotview';
 import { Button } from '@syncfusion/ej2-buttons';
 import { pivotData } from './datasource.ts';
 
-PivotView.Inject(VirtualScroll, PDFExport);
+PivotView.Inject(VirtualScroll);
 let pivotTableObj: PivotView = new PivotView({
     dataSourceSettings: {
         dataSource: pivotData as IDataSet[],

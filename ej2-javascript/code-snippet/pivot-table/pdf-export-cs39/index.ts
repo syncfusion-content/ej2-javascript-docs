@@ -1,9 +1,10 @@
 
 
 
-import { PivotView, IDataSet, PDFExport, PdfCellRenderArgs, VirtualScroll} from '@syncfusion/ej2-pivotview';
+import { PivotView, IDataSet, PDFExport, VirtualScroll } from '@syncfusion/ej2-pivotview';
 import { Button } from '@syncfusion/ej2-buttons';
 import { pivotData } from './datasource.ts';
+import { PdfHeaderQueryCellInfoEventArgs } from '@syncfusion/ej2-grids';
 
 PivotView.Inject(PDFExport, VirtualScroll);
 let pivotTableObj: PivotView = new PivotView({
@@ -20,11 +21,15 @@ let pivotTableObj: PivotView = new PivotView({
     allowPdfExport: true,
     enableVirtualization: true,
     height: 320,
-    onPdfCellRender: (args: PdfCellRenderArgs) => {
-        if (args.pivotCell && args.pivotCell.valueSort && args.pivotCell.valueSort.levelName === 'FY 2015.Units Sold') {
-            args.column.width = 60
+    gridSettings: {
+        pdfHeaderQueryCellInfo: function (args: PdfHeaderQueryCellInfoEventArgs) {
+            if (args.gridCell && args.gridCell.valueSort && args.gridCell.valueSort.levelName === 'FY 2015.Units Sold'
+                && args.cell && args.cell.row && args.cell.row.pdfGrid && args.cell.row.pdfGrid.gridColumns
+                && args.cell.row.pdfGrid.gridColumns.columns[args.gridCell.colIndex]) {
+                args.cell.row.pdfGrid.gridColumns.columns[args.gridCell.colIndex].width = 250;
+            }
         }
-    },
+    }
 });
 pivotTableObj.appendTo('#PivotTable');
 
@@ -32,8 +37,5 @@ let exportBtn: Button = new Button({ isPrimary: true });
 exportBtn.appendTo('#pdf');
 
 document.getElementById('pdf').onclick = function () {
-    pivotTableObj.pdfExport({}, false, null, false, true);
+    pivotTableObj.pdfExport();
 };
-
-
-

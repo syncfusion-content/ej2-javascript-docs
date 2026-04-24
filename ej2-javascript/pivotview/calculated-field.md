@@ -82,31 +82,31 @@ Meanwhile, user can also view calculated field dialog in UI by invoking [`create
 Existing calculated field can be renamed only through the UI at runtime. To do so, open the calculated field dialog, select the target field and click "Edit" icon. User can now see the existing name getting displayed in the text box at the top of the dialog. Now, change the name based on user requirement and click "OK".
 
 <!-- markdownlint-disable MD012 -->
-![Editing the calculated field](images/before-edit.webp)
+![Editing the calculated field](images/before-edit.png)
 <br/>
 <br/>
-![Renaming the calculated field](images/after-edit.webp)
+![Renaming the calculated field](images/after-edit.png)
 
 ## Editing the existing calculated field formula
 
 Existing calculated field formula can be edited only through the UI at runtime. To do so, open the calculated field dialog, select the target field and click "Edit" icon. User can now see the existing formula getting displayed in a multiline text box at the bottom of the dialog. Now, change the formula based on user requirement and click "OK".
 
-![oEditing the calculated fieldt](images/before-edit.webp)
+![oEditing the calculated fieldt](images/before-edit.png)
 <br/>
 <br/>
-![Editing the calculated field formula](images/after-change.webp)
+![Editing the calculated field formula](images/after-change.png)
 
 ## Reusing the existing formula in a new calculate field
 
 While creating a new calculated field, if user wants to the add the formula of an existing calculated field, it can be done easily. To do so, simply drag-and-drop the existing calculated field to the "Formula" section.
 
-![Dragging the existing calculated field](images/before-drag.webp)
+![Dragging the existing calculated field](images/before-drag.png)
 <br/>
 <br/>
-![Drag field to formula](images/while-drag.webp)
+![Drag field to formula](images/while-drag.png)
 <br/>
 <br/>
-![Reusing the existing calculated field formula](images/after-drag.webp)
+![Reusing the existing calculated field formula](images/after-drag.png)
 
 ## Supported operators and functions for the calculated field formula
 

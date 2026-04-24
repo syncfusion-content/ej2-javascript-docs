@@ -90,7 +90,7 @@ The field list can be rendered in a static position, anywhere in web page layout
 
 Using check box besides each field, end user can select or unselect to add or remove fields respectively from the report at runtime.
 
-![output](images/fieldlist_treeview.webp)
+![output](images/fieldlist_treeview.png)
 
 ## Remove specific field(s) from displaying
 
@@ -127,52 +127,52 @@ When a data source is bound to the component, fields will be automatically popul
 
 In-order to re-arrange, drag any field from the field list and drop it into the column, row, value, or filter axis using the drag-and-drop holder. It helps end user to alter the report at runtime.
 
-![output](images/fieldlist_axes.webp)
+![output](images/fieldlist_axes.png)
 
 ## Filtering members
 
 Using the filter icon besides each field in row, column and filter axes, members can be either included or excluded at runtime. To know more about member filtering, [`refer`](./filtering) here.
 
-![oFilter icon besides each fieldt](images/fieldlist_filtericon.webp)
+![oFilter icon besides each fieldt](images/fieldlist_filtericon.png)
 <br/>
-![Filter dialog to either include or exclude members](images/fieldlist_editor.webp)
+![Filter dialog to either include or exclude members](images/fieldlist_editor.png)
 <br/>
-![Resultant pivot table on filtering members](images/fieldlist_filteringgrid.webp)
+![Resultant pivot table on filtering members](images/fieldlist_filteringgrid.png)
 
 ## Sorting members
 
 Using the sort icon besides each field in row and column axes, members can be arranged either in ascending or descending order at runtime. To know more about member sorting, [`refer`](./sorting) here.
 
-![Sort icon besides each field](images/fieldlist_sorticon.webp)
+![Sort icon besides each field](images/fieldlist_sorticon.png)
 <br/>
-![Resultant pivot table showing countries in descending order](images/fieldlist_sortgrid.webp)
+![Resultant pivot table showing countries in descending order](images/fieldlist_sortgrid.png)
 
 ## Calculated fields
 
 The calculated field support allows end user to add a new calculated field based on the available fields from the bound data source using basic arithmetic operators. To enable this support in Field List UI, set the [`allowCalculatedField`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#allowcalculatedfield) property to **true** in pivot table. Now a button will be seen automatically inside the field list UI which will invoke the calculated field dialog on click. To know more about calculated field, [`refer`](./calculated-field) here.
 
-![Enabling calculated field in field list UI](images/gs_calc_button.webp)
+![Enabling calculated field in field list UI](images/gs_calc_button.png)
 <br/>
-![Creating new calculated field](images/gs_calc_dialog.webp)
+![Creating new calculated field](images/gs_calc_dialog.png)
 <br/>
-![New calculated field Total Amount added in pivot table](images/gs_calc_grid.webp)
+![New calculated field Total Amount added in pivot table](images/gs_calc_grid.png)
 
 ## Changing aggregation type of value fields at runtime
 
 End user can perform calculations over a group of values using the aggregation option. The value fields bound to the field list, appears with a dropdown icon, helps to select an appropriate aggregation type at runtime. On selection, the values in the Pivot Table will be changed dynamically. To know more about aggregation, [`refer`](./aggregation) here.
 
-![Icon to change aggregation type](images/aggregation_fl_icon.webp)
+![Icon to change aggregation type](images/aggregation_fl_icon.png)
 <br/>
 <br/>
-![List of pre-defined aggregation types](images/fieldlist_aggregation_avg.webp)
+![List of pre-defined aggregation types](images/fieldlist_aggregation_avg.png)
 <br/>
-![Resultant pivot table showing average aggregation type applied in Unit Sold value field](images/fieldlist_aggregation_grid.webp)
+![Resultant pivot table showing average aggregation type applied in Unit Sold value field](images/fieldlist_aggregation_grid.png)
 
 ## Defer layout update
 
 Defer layout update support to update the pivot table only on demand and not during every user action. To enable this support in Field List UI, set the [`allowDeferLayoutUpdate`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#allowdeferlayoutupdate) property to **true** in pivot table. Now a check box inside Field List UI will be seen in checked state, allowing pivot table to update only on demand. To know more about defer layout, [`refer`](./defer-update) here.
 
-![output](images/fieldlist_deferupdate.webp)
+![output](images/fieldlist_deferupdate.png)
 
 ## Show field list using toolbar
 

@@ -105,7 +105,7 @@ pivotTableObj.appendTo('#PivotTable');
 
 ```
 
-![output](images/maxrows.webp)
+![output](images/maxrows.png)
 
 ## Events
 

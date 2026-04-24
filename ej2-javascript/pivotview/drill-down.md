@@ -15,7 +15,7 @@ domainurl: ##DomainURL##
 
 The drill down and drill up action helps to view the bound data in detailed and abstract view respectively. By default, if member(s) has children, then expand and collapse icon will be displayed in the respective row/column header. On clicking the icon, expand or collapse action will be performed automatically through built-in source code. Meanwhile, leaf member(s) does not contain expand and collapse icon.
 
-![output](images/drill.webp)
+![output](images/drill.png)
 
 ## Drill position
 
@@ -23,7 +23,7 @@ Allows to drill only the current position of the selected member and exclude the
 
 > This feature is built-in and occurs every time when expand or collapse action is done for better performance.
 
-![output](images/drill_position.webp)
+![output](images/drill_position.png)
 
 ## Expand all
 

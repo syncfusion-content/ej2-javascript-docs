@@ -27,13 +27,13 @@ The following are the three different types of filtering:
 
 Allows to view the pivot table with selective records based on included and excluded members in each field. By default, member filter option is enabled by the [`allowMemberFilter`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings#allowmemberfilter) boolean property in [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings). This UI option helps end user to filter members by clicking the filter icon besides any field in the row, column and filter axes available in the field list or grouping bar UI at runtime.
 
-![Member filter icon in field list](images/fieldlist_filtericon.webp)
+![Member filter icon in field list](images/fieldlist_filtericon.png)
 <br/>
-![Member filter icon in grouping bar](images/filter_icon_gb.webp)
+![Member filter icon in grouping bar](images/filter_icon_gb.png)
 <br/>
-![Member filter dialog with checked and unchecked members](images/filter_dialog_gb.webp)
+![Member filter dialog with checked and unchecked members](images/filter_dialog_gb.png)
 <br/>
-![Resultant pivot table on member filter](images/filter_grid_gb.webp)
+![Resultant pivot table on member filter](images/filter_grid_gb.png)
 
 Meanwhile filtering can also be configured at code behind using the [`filterSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/filter) while initial rendering of the component. The basic settings required to add filter criteria are:
 
@@ -72,17 +72,17 @@ Meanwhile filtering can also be configured at code behind using the [`filterSett
 
 The member filter dialog comes with an option "All", which on checked selects all members and on unchecked deselects all members. The option "All" would appear in intermediate state mentioning that both selected and unselected child members are available.
 
-![output](images/editor_inter.webp)
+![output](images/editor_inter.png)
 
 When all members are deselected, the "Ok" button in member filter dialog would be disabled, meaning, at least one member should be selected and bound to the pivot table component.
 
-![output](images/editor_alluncheck.webp)
+![output](images/editor_alluncheck.png)
 
 ### Provision to search specific member(s)
 
 By default, search option is available to quickly navigate to the desired members. It can be done by entering the starting character(s) of the actual members.
 
-![output](images/search.webp)
+![output](images/search.png)
 
 ### Performance Tips
 
@@ -294,7 +294,7 @@ Operators that can be used in date filtering are:
 
 End user can clear the applied label filter by simply click the "Clear" option at the bottom of the filter dialog under "Label" tab.
 
-![output](images/clearfilter.webp)
+![output](images/clearfilter.png)
 
 ## Value Filtering
 
@@ -355,4 +355,4 @@ Operators that can be used in value filtering are:
 
 End user can clear the applied value filter by simply click the "Clear" option at the bottom of the filter dialog under "Value" tab.
 
-![output](images/clearvaluefilter.webp)
+![output](images/clearvaluefilter.png)

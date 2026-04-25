@@ -1,10 +1,11 @@
 
 
-import { PivotView, IDataSet } from '@syncfusion/ej2-pivotview';
+import { PivotView, IDataSet, PDFExport } from '@syncfusion/ej2-pivotview';
 import { PdfExportProperties } from '@syncfusion/ej2-grids';
 import { Button } from '@syncfusion/ej2-buttons';
 import { pivotData } from './datasource.ts';
 
+PivotView.Inject(PDFExport);
 let pivotTableObj: PivotView = new PivotView({
     dataSourceSettings: {
         dataSource: pivotData as IDataSet[],
@@ -34,7 +35,7 @@ document.getElementById('pdf').onclick = function () {
                     type: 'Text',
                     value: "Pivot Table",
                     position: { x: 0, y: 50 },
-                    style: { textBrushColor: '#000000', fontSize: 13, dashStyle:'Solid',hAlign:'Center' }
+                    style: { textBrushColor: '#000000', fontSize: 13, dashStyle: 'Solid', hAlign: 'Center' }
                 }
             ]
         },

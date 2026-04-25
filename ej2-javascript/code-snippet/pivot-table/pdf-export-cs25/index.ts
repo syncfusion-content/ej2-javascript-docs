@@ -1,47 +1,63 @@
-
-
-import { PivotView, IDataSet } from '@syncfusion/ej2-pivotview';
+import { PivotView, IDataSet, PdfExportProperties, FieldList, PDFExport } from '@syncfusion/ej2-pivotview';
 import { Button } from '@syncfusion/ej2-buttons';
-import { pivotData } from './datasource.ts';
+import { salesData } from './datasource.ts';
+
+PivotView.Inject(FieldList, PDFExport);
 
 let pivotTableObj: PivotView = new PivotView({
     dataSourceSettings: {
-        dataSource: pivotData as IDataSet[],
+        dataSource: salesData as IDataSet[],
         expandAll: false,
-        columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
-        values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
-        rows: [{ name: 'Country' }, { name: 'Products' }],
-        formatSettings: [{ name: 'Amount', format: 'C0' }],
-        filters: []
+        rows: [{ name: 'Region', caption: 'Region' }],
+        columns: [{ name: 'Product', caption: 'Product' }],
+        values: [
+            { name: 'Sales', caption: 'Q4 Sales' },
+            { name: 'ProfitMargin', caption: 'Profit Margin' }
+        ],
+        formatSettings: [
+            { name: 'Sales', format: 'C0' },
+            { name: 'ProfitMargin', format: '0\'%\'' }
+        ],
+        filterSettings: [{ name: 'Product', items: ['Laptop'], type: 'Include' }]
     },
+    width: '100%',
+    height: 300,
     allowPdfExport: true,
-    height: 320
+    showFieldList: true
 });
+pivotTableObj.appendTo('#PivotTable1');
+
 let pivotTableObj2: PivotView = new PivotView({
     dataSourceSettings: {
-        dataSource: pivotData as IDataSet[],
+        dataSource: salesData as IDataSet[],
         expandAll: false,
-        rows: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
-        values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
-        columns: [{ name: 'Country' }, { name: 'Products' }],
-        formatSettings: [{ name: 'Amount', format: 'C0' }],
-        filters: []
+        rows: [{ name: 'Region', caption: 'Region' }],
+        columns: [{ name: 'Product', caption: 'Product' }],
+        values: [
+            { name: 'Units', caption: 'Units Sold' },
+            { name: 'Sales', caption: 'Q4 Sales' }
+        ],
+        formatSettings: [
+            { name: 'ProfitMargin', format: '0\'%\'' },
+            { name: 'Sales', format: 'C0' }
+        ],
+        filterSettings: [{ name: 'Product', items: ['Smartphone'], type: 'Include' }]
     },
+    width: '100%',
+    height: 300,
     allowPdfExport: true,
-    height: 280
+    showFieldList: true
 });
-pivotTableObj.appendTo('#PivotTable');
 pivotTableObj2.appendTo('#PivotTable2');
 
 let exportBtn: Button = new Button({ isPrimary: true });
 exportBtn.appendTo('#pdf');
 
-document.getElementById('pdf').onclick = function () {
-    let firstGridPdfExport: Promise<Object> = pivotTableObj.grid.pdfExport({}, true);
-    firstGridPdfExport.then((pdfData: Object) => {
-        pivotTableObj2.pdfExport({}, false, pdfData);
-    });
+const pdfExportProperties: PdfExportProperties = {
+    multipleExport: { type: 'AppendToPage', blankSpace: 100 },
+    pivotTableIds: ['PivotTable1', 'PivotTable2']
 };
 
-
-
+document.getElementById('pdf').onclick = function () {
+    pivotTableObj.pdfExport(pdfExportProperties, true);
+};

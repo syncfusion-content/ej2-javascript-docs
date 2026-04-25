@@ -84,10 +84,10 @@ It can be configured using `type` option for each value fields through code-behi
 Aggregation types can be changed easily through UI at runtime. The value fields bound to grouping bar and field list appears with a dropdown icon which helps to select an appropriate aggregation type for the respective value field. On selection, the values in the pivot table will be changed dynamically.
 
 <!-- markdownlint-disable MD012 -->
-![List of pre-defined aggregation types to be changed via Field List](images/aggregation_fl_menu.webp)
+![List of pre-defined aggregation types to be changed via Field List](images/aggregation_fl_menu.png)
 <br/>
 <br/>
-![List of pre-defined aggregation types to be changed via Grouping Bar](images/aggregation_gb_menu.webp)
+![List of pre-defined aggregation types to be changed via Grouping Bar](images/aggregation_gb_menu.png)
 
 ## Hiding aggregation type from button text
 

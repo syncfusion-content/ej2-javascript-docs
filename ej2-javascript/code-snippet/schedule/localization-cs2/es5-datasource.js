@@ -1,4 +1,4 @@
-var scheduleData = [
+window.scheduleData = [
     {
         Id: 1,
         Subject: 'Explosion of Betelgeuse Star',

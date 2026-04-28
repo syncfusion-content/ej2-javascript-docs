@@ -19,20 +19,30 @@ var grid = new ej.grids.Grid({
     },
     detailCollapse: detailCollapse,
     detailExpand: detailExpand,
+    detailCollapsed: detailCollapsed,
+    detailExpanded: detailExpanded,
     height: 345
 });
 grid.appendTo('#Grid');
 
 function detailExpand(args) {
     // Prevent expanding detail row.
-    if (args.data.FirstName === 'Nancy') {
+    if (args.rowData.FirstName === 'Nancy') {
         args.cancel = true;
     }
 }
 
+function detailExpanded(args) {
+    console.log(args);
+}
+
 function detailCollapse(args) {
     // Prevent collapsing detail row.
-    if (args.data.FirstName === 'Andrew') {
+    if (args.rowData.FirstName === 'Andrew') {
         args.cancel = true;
     }
+}
+
+function detailCollapsed(args) {
+    console.log(args);
 }

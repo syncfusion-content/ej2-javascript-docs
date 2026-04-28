@@ -23,6 +23,8 @@ let grid: Grid = new Grid({
     },
     detailCollapse: detailCollapse,
     detailExpand: detailExpand,
+    detailCollapsed: detailCollapsed,
+    detailExpanded: detailExpanded,
     height: 345
 });
 grid.appendTo('#Grid');
@@ -35,9 +37,17 @@ function detailExpand(args: DetailExpandCollapseArgs) {
     }
 }
 
+function detailExpanded(args: DetailExpandCollapseArgs) {
+    console.log(args);
+}
+
 function detailCollapse(args: DetailExpandCollapseArgs) {
     // Prevent collapsing detail row.
     if (args.rowData.FirstName === 'Andrew') {
         args.cancel = true;
     }
+}
+
+function detailCollapsed(args: DetailExpandCollapseArgs) {
+    console.log(args);
 }

@@ -215,4 +215,4 @@ To perform `tap` action on a column header, trigger [sorting](sorting#sorting) o
 
 The following screenshot shows Gantt touch sorting,
 
-![Multiple Sorting](../images/multiple-sorting.png)
+![Multiple Sorting](./images/multiple-sorting.png)

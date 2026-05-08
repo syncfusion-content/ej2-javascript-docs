@@ -83,4 +83,4 @@ When the right edge of the column header cell is `tapped`, a floating handler wi
 
 The following screenshot represents the Gantt column resizing in touch device.
 
-![Column resize](../images/column-resize.png)
+![Column resize](./images/column-resize.png)

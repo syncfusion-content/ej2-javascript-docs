@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Getting Started with Agentic UI Builder | Syncfusion
-description: Set up and use the Syncfusion TypeScript UI Builder MCP Server for AI-powered assistance in building TypeScript applications.
-control: Getting started with Syncfusion TypeScript UI Builder MCP Server
+title: Getting Started with the TypeScript AI Coding Assistant | Syncfusion
+description: Learn how to configure and use AI Coding Assistant for intelligent code generation, documentation, and troubleshooting in TypeScript apps.
+control: Getting Started with the AI Coding Assistant
 platform: ej2-javascript
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Agentic UI Builder
+# Getting Started with the TypeScript AI Coding Assistant
 
-The **Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript UI Builder** uses AI to help you build TypeScript applications with natural language commands. Simply describe what you want to create, and it generates complete UI implementations with Syncfusion controls.
+The **Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant** is designed to streamline the development workflow for TypeScript applications that use Syncfusion<sup style="font-size:70%">&reg;</sup> controls. It leverages contextual knowledge of the Syncfusion control library to generate code snippets, configuration examples, and guided explanations—reducing documentation lookups and increasing productivity.
 
 ## Prerequisites
 
@@ -141,52 +141,28 @@ Create a configuration file in your project folder to install the server for you
 
 ## Usage
 
-Once installed, open your AI assistant in the IDE and describe what you want to build with the `#sf_typescript_ui_builder` command:
+Activate the AI Coding Assistant in your IDE by using the `#sf_typescript_assistant` command followed by your query:
 
 ```
-#sf_typescript_ui_builder Create a dashboard with a sales data grid and monthly trend chart.
+#sf_typescript_assistant How do I enable paging and sorting in the Syncfusion TypeScript Grid?
 ```
 
-The UI Builder generates complete implementations including controls and styling.
+### Common Use Cases
 
-> Note: Using the `#sf_typescript_ui_builder` tool ensures the Agentic UI Builder is invoked directly. Alternatively, you can use natural language without the tool—just make sure to include the "Syncfusion" keyword in your prompt so the AI model can automatically recognize and call the appropriate generator.
+| Use Case | Description | Example Query |
+|----------|-------------|---------------|
+| **Control Generation** | Generate complete control implementations with configurations | `#sf_typescript_assistant Create a data grid with inline editing, paging, and toolbar options for CRUD operations` |
+| **Feature Implementation** | Get specific feature implementations for existing controls | `#sf_typescript_assistant Add export to Excel functionality in my existing Grid control` |
+| **Troubleshooting** | Resolve issues by describing the problem | `#sf_typescript_assistant Scheduler is not displaying events properly. What could be wrong with the data binding?` |
+| **API Reference** | Quickly access API information | `#sf_typescript_assistant What are the available event arguments for the Grid's actionComplete event?` |
 
-## Individual Tools
+### Best Practices
 
-For targeted assistance, you can call individual tools directly using their specific tool names. This is useful when you need specialized help from a particular tool.
-
-### Control Tool (`#sf_typescript_control`)
-
-Provides quick reference guidelines for Syncfusion TypeScript controls, including properties, event handlers, methods, and usage examples.
-
-**When to use:** To get basic control API information and structure details for implementing specific controls correctly.
-
-**Example:**
-```
-#sf_typescript_control How do I integrate a data table?
-```
-
-### Style Tool (`#sf_typescript_style`)
-
-Provides theme configuration, styling setup, and icon integration for Syncfusion TypeScript controls. Supports multiple themes (Tailwind3 CSS, Bootstrap 5.3, Material 3, Fluent 2), light/dark mode implementation, and icon patterns for consistent UI styling.
-
-**When to use:** To apply themes, customize colors, modify the visual design of controls, or integrate icons into your UI.
-
-**Example:**
-```
-#sf_typescript_style How do I apply the Syncfusion Tailwind 3 dark theme and add a communication icon inside a button?
-```
-
-## Best Practices
-
-To maximize the effectiveness of the Agentic UI Builder and achieve optimal results:
-
-- **Minimize active tools:** Limit the number of active MCP tools in your IDE to prevent tool-selection ambiguity and improve response accuracy.
-- **Start simple:** Begin with straightforward prompts and progressively add complexity as needed.
-- **Be specific:** Provide clear, specific descriptions of your control behavior and design preferences.
-- **Reference patterns:** Mention existing design systems, control libraries, or specific patterns you want to replicate.
-- **Stay consistent:** Maintain consistent file organization, naming conventions, and coding standards throughout your TypeScript project.
-- **Use advanced AI models:** For best results, use **Claude Sonnet 4.5 or higher** models. Other compatible models include **GPT-5 and Gemini 3 Pro**. Higher-capability models produce better code quality and more accurate control implementations.
+1. **Be Specific**: Include platform and control (e.g., "Create a Syncfusion TypeScript Grid with paging and filtering").  
+2. **Provide Context**: Share versions, desired behavior, and constraints.  
+3. **Use Descriptive Queries**: Avoid vague questions.
+4. **Troubleshooting**: Use AI suggestions for common issues; consult official [documentation](https://ej2.syncfusion.com/documentation) or [support](https://support.syncfusion.com/support/tickets/create) for complex problems.
+5. **Start Fresh**: Begin a new chat for new topics to maintain clean context.
 
 > Always review AI-generated code before using it in production.
 
@@ -205,8 +181,8 @@ If you encounter issues during installation or while using the MCP server, refer
 
 ## What's Next
 
-Now that you've set up the Agentic UI Builder, explore these resources:
+Now that you've set up the AI Coding Assistant, explore these resources:
 
 * **[Prompt Library](./prompt-library)** - Ready-to-use prompts for common scenarios
-* **[Showcase Sample Projects](https://www.syncfusion.com/showcase-apps/javascript)** - Full application examples
 * **[Control Examples](https://ej2.syncfusion.com/demos/#/tailwind3/grid/overview)** - Interactive demos of all Syncfusion TypeScript controls
+* **[API Documentation](https://ej2.syncfusion.com/documentation/api)** - Complete API reference

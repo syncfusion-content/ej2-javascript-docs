@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Getting Started with JavaScript UI Builder Skill | Syncfusion®
-description: Install Syncfusion® JavaScript UI Builder to generate production-ready JavaScript controls from natural-language prompts.
+title: Getting Started with JavaScript UI Composer Skill | Syncfusion®
+description: Install Syncfusion® JavaScript UI Composer to generate production-ready JavaScript controls from natural-language prompts.
 control: Skills
 platform: ej2-javascript
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion® JavaScript UI Builder Skill for AI Assistants
+# Syncfusion® JavaScript UI Composer Skill for AI Assistants
 
-**Syncfusion® JavaScript UI Builder** is an AI-powered skill and companion agent that accelerates JavaScript application development by transforming natural-language UI requirements into production-ready code using Syncfusion® JavaScript UI libraries. 
+**Syncfusion® JavaScript UI Composer** is an AI-powered skill and companion agent that accelerates JavaScript application development by transforming natural-language UI requirements into production-ready code using Syncfusion® JavaScript UI libraries. 
 
 Integrated with your AI-powered IDE, it leverages deep knowledge of **Syncfusion® controls** to deliver accurate and ready-to-use code.
-By combining intelligent code generation with best practices, accessibility standards, and design-system consistency, JavaScript UI Builder helps you rapidly build scalable dashboards and user interfaces without leaving your development workflow.
+By combining intelligent code generation with best practices, accessibility standards, and design-system consistency, JavaScript UI Composer helps you rapidly build scalable dashboards and user interfaces without leaving your development workflow.
 
 ## Prerequisites
 
-Before installing JavaScript UI Builder, ensure the following:
+Before installing JavaScript UI Composer, ensure the following:
 
 - Install [APM (Agent Package Manager)](https://microsoft.github.io/apm/getting-started/installation/#quick-install-recommended)
 - Required [Node.js](https://nodejs.org/en) version ≥ 18
@@ -56,7 +56,7 @@ Before installing JavaScript UI Builder, ensure the following:
 
 ## Installation
 
-Before installing JavaScript UI Builder, ensure that APM (Agent Package Manager) is installed and available in your environment.
+Before installing JavaScript UI Composer, ensure that APM (Agent Package Manager) is installed and available in your environment.
 
 ### Verify APM Installation
 
@@ -66,22 +66,22 @@ Run the following command to confirm APM is installed:
 apm --version
 ```
 
-### Install the Syncfusion® JavaScript UI Builder package using APM
+### Install the Syncfusion® JavaScript UI Composer package using APM
 
-Use the APM CLI to install the JavaScript UI Builder skill for your preferred environment:
+Use the APM CLI to install the JavaScript UI Composer skill for your preferred environment:
 
 {% tabs %}
 {% highlight bash tabtitle="Copilot" %}
 
 // By default, it installs to the GitHub Copilot target
 
-apm install Syncfusion/javascript-ui-builder
+apm install Syncfusion/javascript-ui-composer
 
 {% endhighlight  %}
 
 {% highlight bash tabtitle="Cursor" %}
 
-apm install Syncfusion/javascript-ui-builder -t cursor
+apm install Syncfusion/javascript-ui-composer -t cursor
 
 {% endhighlight  %}
 
@@ -89,13 +89,13 @@ apm install Syncfusion/javascript-ui-builder -t cursor
 
 // For Code Studio, refer the note below to configure the agent location explicitly to use it in the chat.
 
-apm install Syncfusion/javascript-ui-builder
+apm install Syncfusion/javascript-ui-composer
 
 {% endhighlight  %}
 
 {% highlight bash tabtitle="Claude" %}
 
-apm install Syncfusion/javascript-ui-builder -t claude
+apm install Syncfusion/javascript-ui-composer -t claude
 
 {% endhighlight  %}
 
@@ -110,7 +110,7 @@ For details on supported deployment targets, refer to the [documentation](https:
 
 > For Syncfusion® Code Studio, users must explicitly configure the agent location to use it in the chat. Refer to the [documentation](https://help.syncfusion.com/code-studio/reference/configure-properties/usersettings#agent-file-locations).
 
-## How the Syncfusion® JavaScript UI Builder Skill Works
+## How the Syncfusion® JavaScript UI Composer Skill Works
 
 1. **Intent Analysis** — Parse the user's prompt to identify component types and high-level layout intent.
 2. **Project Detection** — Automatically detects project framework, package manager, and existing themes.
@@ -136,17 +136,17 @@ Key enforcement points:
 
 ## Using the AI Assistant
 
-After installing JavaScript UI Builder with APM, the relevant agent and skill files are added to your project under:
+After installing JavaScript UI Composer with APM, the relevant agent and skill files are added to your project under:
 
 - `.agent/skills/` (skill files)
-- `.github/agents/` (JavaScript UI builder agent configuration, based on the selected target)
+- `.github/agents/` (JavaScript UI composer agent configuration, based on the selected target)
 
 To start using the skill:
 
 1. Open your supported IDE.
-2. In the chat panel, select the `javascript-ui-builder` agent from the **Agent dropdown**.
+2. In the chat panel, select the `syncfusion-javascript-ui-composer` agent from the **Agent dropdown**.
 
-![Set Agent](images/UI-Builder-Agent.png)
+![Set Agent](images/UI-Composer-Agent.png)
 
 3. Start prompting the agent with a clear description of your UI requirements.
 

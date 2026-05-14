@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with the AI Coding Assistant | Syncfusion
+title: Getting Started with the TypeScript AI Coding Assistant | Syncfusion
 description: Learn how to configure and use AI Coding Assistant for intelligent code generation, documentation, and troubleshooting in TypeScript apps.
 control: Getting Started with the AI Coding Assistant
 platform: ej2-javascript
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with the AI Coding Assistant
+# Getting Started with the TypeScript AI Coding Assistant
 
 The **Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant** is designed to streamline the development workflow for TypeScript applications that use Syncfusion<sup style="font-size:70%">&reg;</sup> controls. It leverages contextual knowledge of the Syncfusion control library to generate code snippets, configuration examples, and guided explanations—reducing documentation lookups and increasing productivity.
 

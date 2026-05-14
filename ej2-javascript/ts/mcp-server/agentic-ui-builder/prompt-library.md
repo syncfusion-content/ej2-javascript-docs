@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Agentic UI Builder Prompt Library | Syncfusion
+title: TypeScript Agentic UI Builder Prompt Library | Syncfusion
 description: Explore the Agentic UI Builder Prompt Library to enhance TypeScript productivity with layout blocks, control guidance, styling, and icons.
 control: Syncfusion Agentic UI Builder Prompt Library
 platform: ej2-javascript
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Prompt Library - Agentic UI Builder
+# Prompt Library - TypeScript Agentic UI Builder
 
 Speed up TypeScript development with ready-made prompts for common scenarios. Use them to generate complete applications, controls, and custom styling.
 

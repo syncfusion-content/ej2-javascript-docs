@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion MCP Server Overview
+# Syncfusion TypeScript MCP Server Overview
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> MCP Server accelerate TypeScript application development by providing deep knowledge directly in your AI-powered IDE. Through Model Context Protocol (MCP) integration, you get instant access to control APIs, pre-built UI blocks, styling configurations, icon libraries, and code generation - all without leaving your development environment.
 

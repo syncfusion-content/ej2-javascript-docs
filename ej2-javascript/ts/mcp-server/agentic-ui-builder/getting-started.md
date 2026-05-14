@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Agentic UI Builder | Syncfusion
+title: Getting Started with TypeScript Agentic UI Builder | Syncfusion
 description: Set up and use the Syncfusion TypeScript UI Builder MCP Server for AI-powered assistance in building TypeScript applications.
 control: Getting started with Syncfusion TypeScript UI Builder MCP Server
 platform: ej2-javascript
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Agentic UI Builder
+# Getting Started with TypeScript Agentic UI Builder
 
 The **Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript UI Builder** uses AI to help you build TypeScript applications with natural language commands. Simply describe what you want to create, and it generates complete UI implementations with Syncfusion controls.
 

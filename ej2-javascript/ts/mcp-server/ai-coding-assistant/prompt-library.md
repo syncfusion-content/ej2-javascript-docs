@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion AI Coding Assistant Prompt Library | Syncfusion
+title: Syncfusion TypeScript AI Coding Assistant Prompt Library | Syncfusion
 description: Explore ready-made prompts for Syncfusion TypeScript controls to boost productivity with code generation, configuration, and troubleshooting.
 control: Syncfusion AI Coding Assistant Prompt Library
 platform: ej2-javascript
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Prompt Library - AI Coding Assistant
+# Prompt Library - TypeScript AI Coding Assistant
 
 Speed up TypeScript development using these ready-made prompts for popular Syncfusion controls. Each prompt is short, easy to understand, and focused on real tasks—like quick setups, tweaks, and fixes.
 

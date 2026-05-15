@@ -1,8 +1,7 @@
 ---
 layout: post
-title: Excel Export Options in ##Platform_Name## Gantt Chart Control | Syncfusion
+title: Excel Export in ##Platform_Name## Gantt Chart Control | Syncfusion
 description: Learn here all about Excel export in Syncfusion ##Platform_Name## Gantt Chart control of Syncfusion Essential JS 2 and more.
-platform: ej2-react
 platform: ej2-javascript
 control: Excel export 
 publishingplatform: ##Platform_Name##

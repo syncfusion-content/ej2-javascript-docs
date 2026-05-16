@@ -91,6 +91,8 @@ To hide the default filter icon from the UI when filtering is performed programm
 
 You can perform filtering programmatically by checking if `args.currentTarget.id` equals **performFilter**, and then calling [filterByColumn](../../api/gantt#filterbycolumn) method. If the condition is not met, use [clearFiltering](../../api/gantt#clearfiltering) to reset filters via a button click.
 
+{% if page.publishingplatform == "typescript" %}
+
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/filter-menu-cs2/index.ts %}
@@ -132,6 +134,8 @@ You can refer to the table below for supported column types, their default compo
 
 The following sample demonstrates how to disable the autofill feature by setting the `autofill` property to **false** for the **TaskName** column, and how to disable the spin button by setting `showSpinButton` to **false** for the **TaskID** column.
 
+{% if page.publishingplatform == "typescript" %}
+
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/filter-menu-cs1/index.ts %}
@@ -167,6 +171,8 @@ You can configure operators for different types using the following options:
 - **numberOperator** – Custom operators for number columns.  
 - **dateOperator** – Custom operators for date columns.  
 - **booleanOperator** – Custom operators for boolean columns.
+
+{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

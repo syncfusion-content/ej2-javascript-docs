@@ -15,6 +15,8 @@ The Excel-like filter in Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt 
 
 To enable this feature, configure [filterSettings.type](../../api/gantt/filtersettings#type) as **Excel** and set [allowFiltering](../../api/gantt#allowfiltering) to **true**.
 
+{% if page.publishingplatform == "typescript" %}
+
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/excel-filter-cs1/index.ts %}
@@ -43,6 +45,8 @@ To enable this feature, configure [filterSettings.type](../../api/gantt/filterse
 ## Show customized text in checkbox list data
 
 To customize the text displayed in a checkbox list, use `filterItemTemplate` and assign it to the desired column. This allows rendering custom content for each item in the filter list.
+
+{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -90,6 +94,8 @@ If you want to hide only the built-in sorting options (ascending, descending, an
 
 ```
 
+{% if page.publishingplatform == "typescript" %}
+
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/excel-filter-cs3/index.ts %}
@@ -121,6 +127,8 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control display
 
 To customize this behavior, the `filterChoiceCount` property can be adjusted to increase or decrease the number of distinct values displayed, depending on the dataset size and filtering requirements.
 
+{% if page.publishingplatform == "typescript" %}
+
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/excel-filter-cs4/index.ts %}
@@ -149,6 +157,8 @@ To customize this behavior, the `filterChoiceCount` property can be adjusted to 
 ## Bind custom remote data source for Excel-like filtering
 
 You can dynamically bind a custom remote data source to the Excel filter in the Gantt Chart control by using a [DataManager](../../data/getting-started) with [WebApiAdaptor](../../data/adaptors#web-api-adaptor). This can be done by assigning the data source directly or storing fetched data in a global variable. Then, bind it to the filter module's `dataSource` within the [actionBegin](../../gantt/events#actionbegin) event when `requestType` is **filterBeforeOpen**.
+
+{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

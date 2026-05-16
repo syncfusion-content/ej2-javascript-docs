@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Excel Export Options in ##Platform_Name## Gantt Chart Control | Syncfusion
+title: Excel Export Options in ##Platform_Name## Gantt Control | Syncfusion
 description: Learn here all about Excel export in Syncfusion ##Platform_Name## Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Excel Export Options
@@ -176,19 +176,32 @@ To specify a custom name for the exported Excel or CSV file in the Gantt Chart c
 
 The Gantt Chart control supports customizing column settings during Excel or CSV export by configuring the [ExcelExportProperties.columns](../../api/grid/excelExportProperties#columns) property. You can specify attributes such as `field`, `headerText`, and `textAlign` to define the structure and formatting of each column in the exported file, aligning the exported content with specific layout and styling preferences.
 
+{% if page.publishingplatform == "typescript" %}
+
 {% tabs %}
-{% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt/excel-export-cs13/app/index.jsx %}
-{% endhighlight %}
-{% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt/excel-export-cs13/app/index.tsx %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/excel-export-cs16/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/excel-export-cs13/index.html %}
+{% include code-snippet/gantt/excel-export-cs16/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/gantt/excel-export-cs13" %}
+{% previewsample "page.domainurl/code-snippet/gantt/excel-export-cs16" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/excel-export-cs16/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/excel-export-cs16/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/excel-export-cs16" %}
+{% endif %}
 
 ## Add header and footer to export
 

@@ -25,6 +25,7 @@ To activate filtering functionality, inject the `Filter` service into the contro
 To apply filtering during the initial render of the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control, define the filter conditions using a **predicate** object within the [filterSettings.columns](../../api/gantt/filterSettings#columns) property.
 
 The following sample demonstrates how to apply an initial filter where **TaskName** starts with **Identify** and **TaskID** equals **2**, using a `Predicate` condition set to **and**.
+
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
